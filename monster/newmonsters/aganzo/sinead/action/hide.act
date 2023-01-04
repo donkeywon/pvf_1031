@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Hide.ani`
+	[SUB ANI]
+		`../animation/weapon/Stay_wp.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`PICKPOCKET_AMB_02`	0
+		`CAMOUFLAGE_DISAPPEAR`	0
+	[/SOUND]
+	[SPEECH]
+		`找不到我的~`	0	90
+		`找不到我的~`	0	10
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`shadowStay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`shadowMove.act`
+[/BEHAVIOR]

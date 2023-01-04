@@ -1,0 +1,96 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/dummy.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PLAYER]
+	[CHECKUP]
+		[CHECK SYMBOL]
+			1	1
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			63054
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		0	
+		[equipment physical attack]
+		[%]
+			-10.0
+		[equipment physical defense]
+		[%]
+			-10.0
+		[equipment magical attack]
+		[%]
+			-10.0
+		[equipment magical defense]
+		[%]
+			-10.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PLAYER]
+	[CHECKUP]
+		[CHECK SYMBOL]
+			0	1
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			59031
+		[LEVEL]
+			80
+		[POS]
+			0	0	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]

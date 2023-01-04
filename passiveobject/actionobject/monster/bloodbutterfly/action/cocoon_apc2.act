@@ -1,0 +1,79 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Cocoon_apc.ani`
+	[SUB ANI]
+		`../Animation/Cocoon_eff_apc.ani`	0	0
+		`../Animation/Cocoon_start_apc2_body.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[ON DAMAGE]
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			8000
+	[/CHECKUP]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[<=]
+			80
+		[%]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		48	48
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON APC]
+		[INDEX]
+			20424
+		[LEVEL]
+			66
+		[POS]
+			5	0	0
+		[NO EFFECT]
+		[TEAM]
+			0
+		[FOLLOW SUMMONER]
+	[/SUMMON APC]
+	[PARTICLE]
+		`../particle/cocoon.ptl`	0	0	50
+	[DESTROY]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON APC]
+		[INDEX]
+			20425
+		[LEVEL]
+			66
+		[POS]
+			5	0	0
+		[NO EFFECT]
+		[TEAM]
+			100
+	[/SUMMON APC]
+	[PARTICLE]
+		`../particle/cocoon.ptl`	0	0	50
+	[DESTROY]
+[/BEHAVIOR]

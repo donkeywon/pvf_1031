@@ -1,0 +1,143 @@
+#PVF_File
+
+[name]
+	`狂徒战斧 [网吧]`
+
+[name2]
+	`找不到代码name2_36319`
+
+[basic explain]
+	`攻击时， 有10%%的几率，使自身增加20点力量和3%%的物理暴击率， 效果持续30秒。
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。`
+
+[grade]
+	34
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	30
+
+[physical attack]
+	25
+
+[attack speed]
+	-80
+
+[stuck]
+	-2
+
+[price]
+	61200
+
+[repair price]
+	48960
+
+[value]
+	48960
+
+[equipment physical attack]
+	408	360
+
+[equipment magical attack]
+	289	255
+
+[separate attack]
+	196	130
+
+[skill levelup]
+	`[priest]`	49	1
+	`[priest]`	41	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/axe.img`	22
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	2	6
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		10
+	[stat]
+		`physical attack`
+		`+`	20
+	[stat]
+		`physical critical hit rate`
+		`+`	3
+[/then]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

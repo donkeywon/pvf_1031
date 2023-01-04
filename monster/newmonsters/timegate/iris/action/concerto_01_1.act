@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_6.ani`
+	[SUB ANI]
+		`../animation/effect_hamony/PartyBlast.ani`	0	-2
+		`../animation/effect_hamony/PersonalCast3.ani`	0	-1
+		`../animation/effect_hamony/PersonalCast4.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`火焰马车！`	0	100
+	[/SPEECH]
+	[SOUND]
+		`R_IRISM_SKILL_05`	0
+		`IRISM_SPIN`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE AI]
+	[NORMAL]
+		1
+		`DestinationSelect2.ai`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`dash.act`
+[/BEHAVIOR]

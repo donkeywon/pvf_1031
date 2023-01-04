@@ -1,0 +1,40 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/XYZ.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[CHECK TIME]
+		100
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			56768
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			60
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Y AXIS]
+			0
+		[Z AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]

@@ -1,0 +1,26 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack4.ani`
+	[SUB ANI]
+		`../animation/weapon/attack4_wp.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`SWING_SHORT`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		2
+	[END]
+[/BEHAVIOR]

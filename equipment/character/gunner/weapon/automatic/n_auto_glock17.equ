@@ -1,0 +1,156 @@
+#PVF_File
+
+[name]
+	`格洛克 - G17`
+
+[name2]
+	`Glock 17`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入束缚状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入束缚状态6秒。 (若敌人高于Lv40， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	44
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	40
+
+[magical attack]
+	31
+
+[stuck]
+	-1
+
+[price]
+	70400
+
+[repair price]
+	56320
+
+[value]
+	56320
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	275	232
+
+[equipment magical attack]
+	404	340
+
+[separate attack]
+	245	164
+
+[skill levelup]
+	`[gunner]`	29	2
+	`[at gunner]`	29	2
+	`[gunner]`	28	2
+	`[at gunner]`	28	2
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/automatic.img`	24
+
+[field image]
+	`Item/field_weapon.img`	2
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	2	4
+
+[layer variation]
+	2790
+	`autoc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`autob`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	2	4
+
+[layer variation]
+	2790
+	`at_autoc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_autob`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	1500
+
+[item group name]
+	`automatic`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		10500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		6000
+	[reduce duration to human armor at pvp module]
+		75
+	[probability]
+		2
+	[active status]
+		`hold`	40
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

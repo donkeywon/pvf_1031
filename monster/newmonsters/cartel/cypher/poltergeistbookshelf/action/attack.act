@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack.ani`
+	[SUB ANI]
+		`../Animation/Attack_aura.ani`	1	0
+	[/SUB ANI]
+	[SOUND]
+		`GOLEM_ATK`	4
+		`R_BOOKCASE_MOVE`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8700
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			80	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

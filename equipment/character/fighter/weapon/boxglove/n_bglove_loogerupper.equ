@@ -1,0 +1,179 @@
+#PVF_File
+
+[name]
+	`(旧) 鲁格的玄冰拳套`
+
+[name2]
+	`Looger's Chilling Upper Glove`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入冰冻状态。
+攻击冰冻状态的敌人时， 附加25%%的伤害。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入冰冻状态7秒。 (若敌人高于Lv45， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击冰冻状态的敌人时， 附加25%%伤害。`
+
+[flavor text]
+	`我会用刺拳冻住敌人， 然后用直拳把他击碎。`
+
+[grade]
+	50
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	45
+
+[physical attack]
+	35
+
+[attack speed]
+	100
+
+[price]
+	90000
+
+[repair price]
+	72000
+
+[value]
+	72000
+
+[equipment physical attack]
+	500	449
+
+[equipment magical attack]
+	452	407
+
+[separate attack]
+	285	189
+
+[skill levelup]
+	`[fighter]`	5	2
+	`[at fighter]`	5	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/bglove.img`	24
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	0	11
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	0	11
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[if]
+	[cooltime]
+		10500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[probability]
+		3
+	[active status]
+		`freeze`	45
+[/then]
+
+[if]
+	[target active status]
+		`freeze`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	25
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

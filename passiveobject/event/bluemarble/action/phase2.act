@@ -1,0 +1,120 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Body.ani`
+	[SUB ANI]
+		`../Animation/5Cannon.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[DIM]
+		`timeEnd`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[ON]
+	[TRIGGER]
+		2
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			7000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	3
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			62768
+		[LEVEL]
+			60
+		[POS]
+			0	0	80
+		[JUMP OUT]
+			250	0	100
+		[RIGHT]
+		[UP]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`timeEnd`	
+		[+]
+			15000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			62766
+		[LEVEL]
+			60
+		[POS]
+			0	0	80
+		[JUMP OUT]
+			250
+		[RANDOM]
+			-100	100	100
+		[RIGHT]
+		[UP]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]

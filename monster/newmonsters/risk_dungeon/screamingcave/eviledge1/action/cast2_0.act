@@ -1,0 +1,124 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Cast2_0.ani`
+	[SUB ANI]
+		`../Animation/Effect/Cast2_0.ani`	0	0
+		`../Animation/Aura_0.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`KALA_THROW`	0
+		`R_DEVILSWORD_VOICE`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			600
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-1200
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		3	3
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[=<]
+			0
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30064
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			10
+		[POS]
+			0	2	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+	[IS INDEX]
+		35075
+	[/IS INDEX]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30064
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[SUMMON MONSTER]
+		[INDEX]
+			1
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`成为我的仆人吧！`
+[/BEHAVIOR]

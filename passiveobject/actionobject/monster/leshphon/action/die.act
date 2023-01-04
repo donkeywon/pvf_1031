@@ -1,0 +1,102 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/die.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			62127
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		5	5
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			62129
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+			0	0	0
+		[USE MY BASEPOS]
+		[MOVE TARGET]
+	[/TELEPORT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			62127
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=<]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		3
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		6	6
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			62129
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET HP]
+		0
+[/BEHAVIOR]

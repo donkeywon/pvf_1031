@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack_ShootingStar.ani`
+	[SPEECH]
+		`无法逃避的痛苦！`	2	100
+	[/SPEECH]
+	[SOUND]
+		`MATEO_FLY`	0
+		`HM_LAUGH`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[MONSTER]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[poison]
+		100	70	10000	600
+[/BEHAVIOR]

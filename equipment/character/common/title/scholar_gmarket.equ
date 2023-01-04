@@ -1,0 +1,109 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	`Scholar of Gmarket`
+
+[explain]
+	`攻击时以1%%的机率30秒内力量增加45。施展时以2%%的机率30秒内智能增加45。`
+
+[flavor text]
+	`<活动> 与G Market同在的地城和勇士！`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	158
+
+[equipment type]
+	`[title name]`	1
+
+[custom animation]
+	`TitleAnimation/scholar_gmarket.ani`
+[/custom animation]
+
+[physical attack]
+	23
+
+[magical attack]
+	23
+
+[MP regen speed]
+	9
+
+[move speed]
+	30
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	45
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`magical attack`
+		`+`	45
+[/then]
+
+[skill levelup]
+	`[common]`	176	2
+	`[common]`	180	1
+[/skill levelup]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

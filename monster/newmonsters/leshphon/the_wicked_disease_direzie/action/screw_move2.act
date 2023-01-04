@@ -1,0 +1,225 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/screw_ready_big.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		7
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+	[APPENDAGE]
+		1000	
+		[move speed]
+		[%]
+			-30.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		11
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9346
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		3
+	[OFF]
+	[TRIGGER]
+		4
+	[ON]
+	[TRIGGER]
+		6
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`time_aura`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time_aura`	
+		[+]
+			2000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9346
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`time_aura`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CHANGE DIRECTION BY TARGET]
+		0
+	[SET DIRECTION]
+	[RIGHT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		9
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		3
+	[ON]
+	[TRIGGER]
+		4
+	[OFF]
+	[TRIGGER]
+		6
+	[OFF]
+	[DIM]
+		`time_aura2`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[SET ACTION]
+	[ATTACK]
+		11
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time_aura2`	
+		[+]
+			8000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		10
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time_aura2`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		12
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		12
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]

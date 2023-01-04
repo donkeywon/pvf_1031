@@ -1,0 +1,160 @@
+#PVF_File
+
+[name]
+	`(旧) 凯诺的骨爪`
+
+[name2]
+	`Hand Bone of Kinol`
+
+[basic explain]
+	`攻击时， 有5%%的几率使敌人进入感电状态。`
+
+[detail explain]
+	`攻击时， 有5%%的几率使敌人进入感电状态15秒； 若攻击感电状态的敌人， 则每次攻击都会附加69点伤害。 (若敌人高于Lv19， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[grade]
+	21
+
+[rarity]
+	2
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	19
+
+[physical attack]
+	15
+
+[magical attack]
+	7
+
+[price]
+	29400
+
+[repair price]
+	23520
+
+[value]
+	23520
+
+[equipment physical attack]
+	204	188
+
+[equipment magical attack]
+	204	188
+
+[separate attack]
+	104	67
+
+[physical critical hit]
+	3
+
+[light resistance]
+	10
+
+[icon]
+	`Item/weapon/fighter/claw.img`	9
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	0	7
+
+[layer variation]
+	2790
+	`boneclawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`boneclawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	0	7
+
+[layer variation]
+	2150
+	`at_boneclawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_boneclawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_boneclawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[cooltime]
+		24000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		15000
+	[probability]
+		5
+	[active status]
+		`lightning`	19	69
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

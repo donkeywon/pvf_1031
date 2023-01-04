@@ -1,0 +1,106 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/jump2.ani`
+	[SUB ANI]
+		`../Animation/shdow_jump.ani`	0	-1
+	[/SUB ANI]
+	[SPEECH]
+		`嘿嘿，要来正经的了！`	1	20
+	[/SPEECH]
+	[SOUND]
+		`MAX_JUMP`	1
+		`MAX_LANDING`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[RIGHT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			500
+		[Y AXIS]
+			-300
+		[Z AXIS]
+			150
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+			371	-50	20
+		[USE MAP POS]
+		[MOVE ME]
+	[/TELEPORT]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Y AXIS]
+			0
+		[Z AXIS]
+			-150
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		3
+	[NOW]
+[/BEHAVIOR]

@@ -1,0 +1,106 @@
+#PVF_File
+
+[name]
+	`(旧) 死神的邀请 (魂)`
+
+[name2]
+	`Invitation of Drapyus ( Soul )`
+
+[explain]
+	`攻击时， 有1%%的几率使自身增加6%%的魔法暴击率， 效果持续30秒。
+被攻击时， 有2%%的几率召唤一名APC--死神狄瑞安协助召唤者攻击敌人， 死神狄瑞安存在30秒。 (无法在决斗场、 死亡之塔召唤APC)`
+
+[flavor text]
+	`冒险家啊， 你在死亡之塔中展现的英勇让我对你有了新的期待， 我现在正式邀请你到‘绝望之塔’并跟你约定 : 只要你来绝望之塔， 我就会把美丽的‘绝望’奖励给你， 哼哼哼。  --死神德莱弗斯`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	55
+
+[icon]
+	`Item/Title/title.img`	84
+
+[custom animation]
+	`TitleAnimation/invitation_drapyussoul.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[MP MAX]
+	300
+
+[magical attack]
+	23
+
+[magical defense]
+	15
+
+[stuck resistance]
+	20
+
+[move speed]
+	30
+
+[cast speed]
+	30
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`magical critical hit`
+		`+`	6
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[disable pvp]
+		1
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[summon apc]
+		20405	55	1
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

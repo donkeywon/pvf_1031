@@ -1,0 +1,82 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[my hp down]
+			`%`	70
+		[true]
+	
+		[think]
+			[skill cooltime correction]
+				22	0.5
+			[true]
+			[return]
+				-1
+		[/think]
+	[false]
+	[think]
+		[my hp down]
+			`%`	45
+		[true]
+	
+		[think]
+			[skill cooltime correction]
+				22	0.2
+			[true]
+			[return]
+				-1
+		[/think]
+	[false]
+	[think]
+		[attack success]
+			1
+	
+		[think]
+			[my attack]
+				46
+			[true]
+		
+			[think]
+				[check use skill]
+					20
+				[true]
+				[return str]
+					`earth`
+				[false]
+				[return]
+					-1
+			[/think]
+	[false]
+	[think]
+		[my attack]
+			20
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	150.0	150.0	32.0	32.0
+			[true]
+		
+			[think]
+				[check use skill]
+					46
+				[true]
+				[return str]
+					`upper`
+				[false]
+				[return]
+					-1
+			[/think]
+	[false]
+	[import ai]
+		`fire.ai`
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

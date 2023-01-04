@@ -1,0 +1,154 @@
+#PVF_File
+
+[name]
+	`真 · 混沌之战斧`
+
+[name2]
+	`Shin : Confund O Axe`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入混乱状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入混乱状态5秒； 但在决斗场中， 只能持续2.5秒。 (若敌人高于Lv62， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	64
+
+[rarity]
+	2
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	62
+
+[physical attack]
+	41
+
+[attack speed]
+	-80
+
+[stuck]
+	-2
+
+[price]
+	102400
+
+[repair price]
+	86016
+
+[value]
+	81920
+
+[equipment physical attack]
+	677	653
+
+[equipment magical attack]
+	479	462
+
+[separate attack]
+	280	188
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[priest]`	49	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/weapon/priest/axe.img`	46
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	11	9
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	50
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	30
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[cooltime]
+		7500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`confuse`	62	1
+[/then]
+
+[special monster drop]
+	1
+
+[difficulty for extra drop]
+	`[hero]`
+[/difficulty for extra drop]
+
+[dungeon type for extra drop]
+	`[all]`
+[/dungeon type for extra drop]
+
+[possible kiri protect]

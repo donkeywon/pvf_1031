@@ -1,0 +1,59 @@
+#PVF_File
+
+[window]
+	[type]
+		`popup`
+	[horizontal alignment]
+		`left`
+	[vertical alignment]
+		`top`
+	[horizontal distance]
+		122
+	[vertical distance]
+		120
+	[tile type]
+		5
+	[size]
+		22	28
+	[title accesorry type]
+		9
+	[controls]
+		[ui controls]
+			`[tab group]`
+			`999`	0	18	3
+			`角色`
+			`时装/宠物`
+			`熟练度`	5	40	2	45	75	55
+		[/ui controls]
+		[ui controls]
+			`[control]`
+			`1000`	0	-18	0	0	
+			[parent tab]
+				`999`	0
+		[/ui controls]
+		[ui controls]
+			`[control]`
+			`1001`	0	-18	0	0	
+			[parent tab]
+				`999`	1
+		[/ui controls]
+		[ui controls]
+			`[control]`
+			`1004`	-2	23	0	0	
+			[parent tab]
+				`999`	2
+		[/ui controls]
+		[ui path]
+			`UI/CharacterInfoWindow/CharacterInfo.ui`
+			`1000`
+		[/ui path]
+		[ui path]
+			`UI/CharacterInfoWindow/AvatarCreatureInfo.ui`
+			`1001`
+		[/ui path]
+		[ui path]
+			`UI/CharacterInfoWindow/MakingItemInfo.ui`
+			`1004`
+		[/ui path]
+	[/controls]
+[/window]

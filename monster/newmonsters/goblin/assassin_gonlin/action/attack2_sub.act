@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack2_sub.ani`
+	[SUB ANI]
+		`../Animation/ac1/Attack2_ac1_sub.ani`	0	1
+		`../Animation/face/Attack2_face_sub.ani`	0	2
+		`../Animation/hair/Attack2_hair_sub.ani`	0	2
+		`../Animation/skin/Attack2_skin_sub.ani`	0	3
+		`../Animation/pants/Attack2_pants_sub.ani`	0	4
+		`../Animation/shoes/Attack2_shoes_sub.ani`	0	8
+		`../Animation/hat/Attack2_hat_sub.ani`	0	10
+		`../Animation/weapon/Attack2_wp_sub.ani`	0	15
+	[/SUB ANI]
+	[SPEECH]
+		`目标进入范围！射！`	0	99
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			61408
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND MESSAGE]
+	[ETC_COMMAND]
+		5	1	3000
+[/BEHAVIOR]

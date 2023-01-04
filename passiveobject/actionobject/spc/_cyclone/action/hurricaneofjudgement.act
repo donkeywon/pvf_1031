@@ -1,0 +1,63 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/HurricaneOfJudgement.ani`
+	[SOUND]
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			10000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		5
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		6
+[/BEHAVIOR]

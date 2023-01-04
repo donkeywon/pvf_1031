@@ -1,0 +1,157 @@
+#PVF_File
+
+[name]
+	`霸权之艾佛尔剑[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`施放[绝命瞬狱杀]、 [剑刃风暴]时， 有50%%的几率发动提升Lv5的该技能。
+
+无法进行合成和分解。`
+
+[grade]
+	61
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	41
+
+[attack speed]
+	-80
+
+[move speed]
+	20
+
+[price]
+	109800
+
+[repair price]
+	92232
+
+[value]
+	87840
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	567	526
+
+[equipment magical attack]
+	445	413
+
+[separate attack]
+	341	230
+
+[physical critical hit]
+	5
+
+[icon]
+	`Item/weapon/thief/twinswd.img`	41
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[thief]`
+
+[variation]
+	4	3
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[if]
+	[event use skill]
+		`thief`	47
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`thief`	47	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`thief`	31
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`thief`	31	5
+	[/skill levelup]
+[/then]
+
+[not amplify]
+	1
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

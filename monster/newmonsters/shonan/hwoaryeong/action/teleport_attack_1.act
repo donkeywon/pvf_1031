@@ -1,0 +1,65 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/teleport_Attack_1.ani`
+	[SUB ANI]
+		`../animation/effect/kick1_e.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`R_NENKWON_ATK_03`	0
+		`R_NENKWON_ATK_03`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			600
+		[Z AXIS]
+			100
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+	[CHANGE ATTACKINFO]
+		`../AttackInfo/teleport_Attack1_1.atk`
+[/BEHAVIOR]

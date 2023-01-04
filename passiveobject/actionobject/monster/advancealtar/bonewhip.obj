@@ -1,0 +1,53 @@
+#PVF_File
+
+[width]
+	10	5
+
+[floating height]
+	1
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	0
+
+[basic action]
+	`Action/BoneWhip.act`
+
+[attack info]
+	`AttackInfo/BoneWhip.atk`
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[ENEMY]`
+	[homing velocity]
+		350	0
+	[homing check gap]
+		100
+	[sync animation rotation]
+		1
+	[max rotation]
+		120
+	[diff rotation]
+		90
+[/homing]
+
+[name]
+	`迪桑的骨鞭`
+
+[sound category]
+	1
+	`[after object create]`
+	`DESHANG_SKILL_02`	-1
+[/sound category]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[on end of animation]`
+[/object destroy condition]

@@ -1,0 +1,58 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Stay1.ani`
+	[SUB ANI]
+		`../Animation/Stay1_100.ani`	0	100
+	[/SUB ANI]
+	[SPEECH]
+		`呜哇哇！！我来啦~~`	0	100
+	[/SPEECH]
+	[SOUND]
+		`GOBLIN_SCARED`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[COLOR CHANGE EFFECT]
+		[EFFECT RED END]
+			255
+		[EFFECT ALPHA END]
+			255
+		[CHANGE TIME]
+			500
+		[LIFE TIME]
+			2000
+	[/COLOR CHANGE EFFECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8351
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[DESTROY]
+[/BEHAVIOR]

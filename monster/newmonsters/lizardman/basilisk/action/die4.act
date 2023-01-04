@@ -1,0 +1,46 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/die4.ani`
+	[SUB ANI]
+		`../Animation/die4_1.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`对不起……梅吉利亚……这是我唯一能为你做的……`	1	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			8593
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET HP]
+		0
+[/BEHAVIOR]

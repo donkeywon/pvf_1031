@@ -1,0 +1,172 @@
+#PVF_File
+
+[name]
+	`嗜血之死灵`
+
+[name2]
+	`Bloodthirsty Soul`
+
+[basic explain]
+	`攻击时， 有5%%的几率使敌人进入出血状态。
+攻击出血状态的敌人时， 有30%%的几率使自身增加10%%的攻击速度、 施放速度和30点智力， 效果持续10秒。`
+
+[detail explain]
+	`攻击时， 有5%%的几率使敌人进入出血状态6秒， 出血状态下的敌人， 每0.5秒受到180点伤害。 (若敌人高于Lv55， 则减少进入异常状态的几率； 反之， 则增加几率)
+攻击出血状态的敌人时， 有30%%的几率使自身增加10%%的攻击速度、 施放速度和30点智力， 效果持续10秒。`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[magical attack]
+	42
+
+[attack speed]
+	-100
+
+[HP MAX]
+	420
+
+[HP regen speed]
+	60
+
+[price]
+	99200
+
+[repair price]
+	83328
+
+[value]
+	79360
+
+[equipment physical attack]
+	462	423
+
+[equipment magical attack]
+	658	603
+
+[separate attack]
+	360	243
+
+[magical critical hit]
+	5
+
+[icon]
+	`Item/weapon/thief/wand.img`	45
+
+[field image]
+	`Item/field_weapon.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	6	0
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2300
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		9000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		6000
+	[probability]
+		5
+	[active status]
+		`bleeding`	55	2850
+[/then]
+
+[if]
+	[cooltime]
+		15000
+	[target active status]
+		`bleeding`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[probability]
+		30
+	[stat]
+		`attack speed`
+		`%`	10
+	[stat]
+		`cast speed`
+		`%`	10
+	[stat]
+		`magical attack`
+		`+`	30
+[/then]
+
+[routing priority]
+	`thief`	2
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/ShootNipper.ani`
+	[SUB ANI]
+	[/SUB ANI]
+	[SPEECH]
+		`吃钳子~`	0	100
+	[/SPEECH]
+	[SOUND]
+		`THROWER_CATCH_GARBAGE`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8003
+		[PARTICLE FILENAME]
+			`../particle/JunkNipper.ptl`
+		[LEVEL]
+			40
+		[POS]
+			63	0	89
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

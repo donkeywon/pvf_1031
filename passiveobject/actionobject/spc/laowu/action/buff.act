@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/buff_normal_front.ani`
+	[SUB ANI]
+		`../Animation/buff_front.ani`	0	0
+	[/SUB ANI]
+	[SUB ANI WITH XYZ]
+		`../Animation/buff_back.ani`	0	-5	0	-10	0
+		`../Animation/buff_normal_back.ani`	0	-5	0	-10	0
+	[/SUB ANI WITH XYZ]
+[/MOTION]
+
+[TRIGGER]
+	[CHECK TIME]
+		500
+	[WHICH]
+	[AI CHARACTER]
+	[CHECKUP]
+		[IS INDEX]
+			21401
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<=]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

@@ -1,0 +1,104 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/order.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time1217`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[OFF]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			10287
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		2
+	[ON]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10287
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			100	250	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time1217`	
+		[+]
+			10000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time1217`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		2
+	[OFF]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]

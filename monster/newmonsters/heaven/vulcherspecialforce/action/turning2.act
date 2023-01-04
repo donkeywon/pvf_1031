@@ -1,0 +1,49 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/MotorCycle/Turning.ani`
+	[SUB ANI]
+		`../Animation/Effect/TurningBack.ani`	0	-10
+		`../Animation/Turning.ani`	0	0
+		`../Animation/Effect/Turning.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			50
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+	[SET DIRECTION]
+	[TO TARGET]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]

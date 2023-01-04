@@ -1,0 +1,54 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`get random()`	0.0	100.0
+	
+		[think]
+			[last result]
+				`<=`	33
+			[true]
+			[import ai]
+				`buff.ai`
+			[false]
+		
+			[think]
+				[last result]
+					`<=`	66
+				[true]
+			
+				[think]
+					[void]
+						`is target in attack area()`	200.0	50.0	30.0	30.0
+					[true]
+				
+					[think]
+						[check key cooltime]
+							`combo5`
+						[true]
+						[return]
+							-1
+						[false]
+						[return str]
+							`combo5`
+					[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	99
+		[true]
+		[import ai]
+			`heal.ai`
+		[false]
+		[return]
+			-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

@@ -1,0 +1,132 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Buffalo_Detect.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`timecome1`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[ON]
+	[TRIGGER]
+		2
+	[ON]
+	[SAY SPEECH]
+		`我们现在是富翁了！！！`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[ENABLE]
+	[OFF]
+	[IF]
+		`timecome1`	
+		[+]
+			3000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11049
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			60	20	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11050
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			60	20	40
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11051
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			60	21	0
+	[/CREATE PASSIVEOBJECT]
+	[FLASH SCREEN]
+		3000	1000	1000	150	250	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[ENABLE]
+	[OFF]
+	[IF]
+		`timecome1`	
+		[+]
+			6000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			11052	11046	11053
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[NOW]
+[/BEHAVIOR]

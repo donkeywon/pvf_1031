@@ -1,0 +1,177 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/variation.ani`
+	[SOUND]
+		`R_OZMA_SKILL_01`	0
+		`R_MINERALSWDA`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_01.ptl`	0	0	0
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_02.ptl`	0	0	0
+	[PARTICLE]
+		`../particle/effect_dark.ptl`	0	0	0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_01.ptl`	0	0	0
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_02.ptl`	0	0	0
+	[PARTICLE]
+		`../particle/effect_dark.ptl`	0	0	0
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_skill.ptl`	0	0	0
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_skill.ptl`	0	0	0
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_skill.ptl`	0	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[PARTY TARGET]
+		[INDEX]
+			0
+	[/PARTY TARGET]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[PARTY TARGET]
+		[INDEX]
+			1
+	[/PARTY TARGET]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[PARTY TARGET]
+		[INDEX]
+			2
+	[/PARTY TARGET]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[PARTY TARGET]
+		[INDEX]
+			3
+	[/PARTY TARGET]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE DISGUISER]
+		62143	20000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[CHARACTER]
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		7
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9490
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

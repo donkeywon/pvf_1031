@@ -1,0 +1,96 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	``
+
+[explain]
+	`猛击时以7%%的机率30秒内移动速度增加7%%，攻击速度增加7%%。`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	126
+
+[custom animation]
+	`TitleAnimation/dreamfighter_blood.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[usable period]
+	7
+
+[HP MAX]
+	200
+
+[physical attack]
+	30
+
+[physical defense]
+	20
+
+[MP regen speed]
+	15
+
+[move speed]
+	30
+
+[attack speed]
+	30
+
+[cast speed]
+	20
+
+[if]
+	[cooltime]
+		50000
+	[set my state]
+		1
+	[my state]
+		`dash`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		4
+	[stat]
+		`move speed`
+		`+`	70
+	[stat]
+		`attack speed`
+		`+`	70
+[/then]
+
+[physical critical hit]
+	2
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

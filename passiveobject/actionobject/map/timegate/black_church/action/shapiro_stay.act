@@ -1,0 +1,59 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Shapiro_start.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[AI CHARACTER]
+	[CHECKUP]
+		[IS INDEX]
+			20440	20441	20442	20443
+		[/IS INDEX]
+		[DISTANCE]
+		[>=]
+			1
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[AI CHARACTER]
+	[CHECKUP]
+		[IS INDEX]
+			20440	20441	20442	20443
+		[/IS INDEX]
+		[DISTANCE]
+		[>=]
+			1
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

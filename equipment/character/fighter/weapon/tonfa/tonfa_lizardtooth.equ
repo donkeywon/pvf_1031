@@ -1,0 +1,187 @@
+#PVF_File
+
+[name]
+	`敏捷之蜥蜴獠牙`
+
+[name2]
+	`Quick Lizardtooth`
+
+[basic explain]
+	`HP降到40%%以下时， 攻击速度 +3%%、 施放速度 +5%%、 移动速度 +4%% (效果不重叠)
+攻击速度 +5%%`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	42
+
+[magical attack]
+	64
+
+[attack speed]
+	100
+
+[cast speed]
+	30
+
+[move speed]
+	20
+
+[stuck]
+	-2
+
+[stuck resistance]
+	30
+
+[need material]
+	3285	1200
+
+[repair price]
+	83328
+
+[value]
+	79360
+
+[equipment physical attack]
+	543	498
+
+[equipment magical attack]
+	572	524
+
+[equipment physical defense]
+	620	610
+
+[separate attack]
+	360	243
+
+[skill levelup]
+	`[fighter]`	38	1
+	`[fighter]`	50	1
+	`[at fighter]`	38	1
+	`[at fighter]`	50	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/tonfa.img`	58
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	4	2
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	4	2
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`<`
+		`%`	40
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[stat by condition]
+		`cast speed`
+		`+`	50
+	[stat by condition]
+		`attack speed`
+		`+`	30
+	[stat by condition]
+		`move speed`
+		`+`	40
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

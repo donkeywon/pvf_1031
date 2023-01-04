@@ -1,0 +1,191 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/deserter/Bomb.ani`
+	[SOUND]
+		`PISTON_ROTATE`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			5
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[>=]
+			28
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			8
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[>=]
+			15
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9110
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			60
+		[POS]
+			0	0	0
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+	[DESTROY]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+		[RANDOM SELECT]
+			0	15	20	35	-10	-35	-20	0
+		[/RANDOM SELECT]
+		[Y AXIS]
+		[RANDOM SELECT]
+			15	20	40	-12	-40	-35	0
+		[/RANDOM SELECT]
+		[Z AXIS]
+			-320
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		2
+	[OFF]
+	[TRIGGER]
+		3
+	[ON]
+	[SET SPEED]
+		[X AXIS]
+		[RANDOM SELECT]
+			0	11	17	28	-10	-28	-20	0
+		[/RANDOM SELECT]
+		[Y AXIS]
+		[RANDOM SELECT]
+			10	15	23	-10	-15	-25	0
+		[/RANDOM SELECT]
+		[Z AXIS]
+			160
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		3
+	[OFF]
+	[TRIGGER]
+		4
+	[ON]
+	[SET SPEED]
+		[Z AXIS]
+			-120
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		4
+	[OFF]
+	[TRIGGER]
+		5
+	[ON]
+	[SET SPEED]
+		[X AXIS]
+		[RANDOM SELECT]
+			0	11	17	28	-10	-28	-20	0
+		[/RANDOM SELECT]
+		[Y AXIS]
+		[RANDOM SELECT]
+			10	15	23	-10	-15	-25	0
+		[/RANDOM SELECT]
+		[Z AXIS]
+			100
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		5
+	[OFF]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Y AXIS]
+			0
+		[Z AXIS]
+			-100
+	[/SET SPEED]
+[/BEHAVIOR]

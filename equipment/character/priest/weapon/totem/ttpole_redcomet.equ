@@ -1,0 +1,129 @@
+#PVF_File
+
+[name]
+	`落星图腾`
+
+[name2]
+	`Red Comet`
+
+[basic explain]
+	`被攻击时， 有2%%的几率出现陨石。`
+
+[grade]
+	42
+
+[rarity]
+	2
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	40
+
+[physical attack]
+	41
+
+[stuck]
+	-1
+
+[price]
+	58800
+
+[repair price]
+	47040
+
+[value]
+	47040
+
+[equipment physical attack]
+	391	374
+
+[equipment magical attack]
+	335	320
+
+[separate attack]
+	183	122
+
+[skill levelup]
+	`[priest]`	58	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/priest/totem.img`	17
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[priest]`
+
+[variation]
+	0	10
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[fire element]`
+
+[if]
+	[cooltime]
+		1000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[passive object]
+		48057	0	0	0	40	1	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

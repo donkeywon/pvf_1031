@@ -1,0 +1,121 @@
+#PVF_File
+
+[name]
+	`鸣风之舞指环`
+
+[basic explain]
+	`装备后， 每25秒可以使自身增加3%%的攻击速度和移动速度、 5%%的施放速度、 5%%的物理暴击率和魔法暴击率， 以及10%%的背击伤害， 效果持续15秒。`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	52
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[move speed]
+	20
+
+[price]
+	89000
+
+[value]
+	71200
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	3072	2912
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	112
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[magical attack]
+	52
+
+[if]
+	[time]
+		25000	1	500
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		15000
+	[probability]
+		100
+	[stat]
+		`attack speed`
+		`+`	30
+	[stat]
+		`move speed`
+		`+`	30
+	[stat]
+		`cast speed`
+		`+`	50
+	[stat]
+		`physical critical hit rate`
+		`+`	5
+	[stat]
+		`magical critical hit rate`
+		`+`	5
+	[appendage]
+		56
+[/then]
+
+[if]
+	[my appendage]
+		56
+	[attack condition]
+		`back attack`
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	10
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,118 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/d_down.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		16
+	[FRAME]
+		15	15
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			62119
+		[LEVEL]
+			71
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[<=]
+			1
+		[%]
+	[/CHECKUP]
+	[IS FIRE DAMAGE]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			62120
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			1
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9350
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			60
+		[POS]
+			0	0	1
+	[/CREATE PASSIVEOBJECT]
+	[DESTROY]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		6
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		17	17
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			62120
+		[LEVEL]
+			67
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[TEAM]
+			100
+		[SUMMON TIME]
+			16500
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

@@ -1,0 +1,62 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Move4.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+	[SET SPEED]
+		[X AXIS]
+			700
+		[Z AXIS]
+			100
+	[/SET SPEED]
+	[TRIGGER]
+		1
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		4
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		1
+	[SET SPEED]
+		[Z AXIS]
+			100
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		4
+	[NOW]
+[/BEHAVIOR]

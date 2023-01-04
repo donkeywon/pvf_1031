@@ -1,0 +1,67 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack2.ani`
+	[SUB ANI]
+		`../Animation/EyeEffect/Attack.ani`	0	0
+		`../Animation/__StoneBody_Effect2.ani`	0	0
+		`../Animation/__StoneBody_Effect3.ani`	0	0
+		`../Animation/__StoneBody_Effect4.ani`	0	0
+		`../Animation/__StoneBody_Effect5.ani`	0	0
+		`../Animation/__StoneBody_Effect.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`R_BASILRISK_ATK`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8597
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			40	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]

@@ -1,0 +1,144 @@
+#PVF_File
+
+[name]
+	`神赐十字架`
+
+[name2]
+	`Segenkreuz`
+
+[basic explain]
+	`施放技能时， 有2%%的几率使自身进入祝福状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使自身进入祝福状态20秒； 祝福状态下， 增加42点力量、 体力、 智力和精神。`
+
+[grade]
+	47
+
+[rarity]
+	2
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	45
+
+[physical defense]
+	38
+
+[magical attack]
+	30
+
+[magical defense]
+	38
+
+[cast speed]
+	20
+
+[price]
+	65800
+
+[repair price]
+	55272
+
+[value]
+	52640
+
+[equipment physical attack]
+	412	396
+
+[equipment magical attack]
+	391	376
+
+[equipment physical defense]
+	470	470
+
+[equipment magical defense]
+	470	470
+
+[separate attack]
+	202	135
+
+[skill levelup]
+	`[priest]`	23	1
+	`[priest]`	24	1
+	`[priest]`	123	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/priest/cross.img`	22
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[priest]`
+
+[variation]
+	2	7
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		20000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[active status]
+		`bless`	45	42	42	42	42
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

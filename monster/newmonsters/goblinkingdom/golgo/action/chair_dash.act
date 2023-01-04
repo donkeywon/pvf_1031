@@ -1,0 +1,105 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Server/chair_server2_dash.ani`
+	[SUB ANI]
+		`../Animation/Server/chair_server1_dash.ani`	0	1
+		`../Animation/Server/chair_server3_dash.ani`	0	2
+		`../Animation/Wagon_Back/Wagon_Back_dash.ani`	0	3
+		`../Animation/chair_dash.ani`	0	4
+		`../Animation/Stick/Stick_chair_dash.ani`	0	5
+		`../Animation/Server/chair_server4_dash.ani`	0	6
+		`../Animation/Server/chair_server5_dash.ani`	0	7
+		`../Animation/Server/chair_server6_dash.ani`	0	8
+		`../Animation/Wagon_Front/Wagon_Front_dash.ani`	0	9
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`dashtime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[SET SPEED]
+		[X AXIS]
+			600
+		[Y AXIS]
+		[RANDOM]
+			-100	100
+	[/SET SPEED]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`dashtime`	
+		[+]
+			3000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+	[/SET SPEED]
+	[TRIGGER]
+		1
+	[OFF]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON MOVE COLLISION]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		3	100
+	[SET SPEED]
+		[X AXIS]
+			0
+	[/SET SPEED]
+	[TRIGGER]
+		1
+	[OFF]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]

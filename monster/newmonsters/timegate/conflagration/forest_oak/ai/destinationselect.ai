@@ -1,0 +1,30 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	3000	3000	1000	1000
+			`all`
+			`passive object`	11198
+	
+		[think]
+			[last result]
+				`>=`	1
+			[true]
+		
+			[think]
+				[set friend object]
+					11198
+				[true]
+				[return]
+					36
+				[false]
+				[return]
+					0
+			[/think]
+	[false]
+	[return]
+		0
+	[/think]
+	[/think]
+[/ai pattern]

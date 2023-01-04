@@ -1,0 +1,115 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	80.0	80.0	15.0	15.0
+		[true]
+	
+		[think]
+			[void]
+				`get random()`	0.0	100.0
+		
+			[think]
+				[last result]
+					`<=`	30
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`combo1`
+					[true]
+				
+					[think]
+						[check key cooltime]
+							`1`
+						[true]
+						[return]
+							-1
+						[false]
+						[return str]
+							`1`
+					[/think]
+	[false]
+	[return str]
+		`combo1`
+	[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	60
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`combo2`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`1`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`1`
+			[/think]
+	[false]
+	[return str]
+		`combo2`
+	[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	100
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`combo3`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`1`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`1`
+			[/think]
+	[false]
+	[return str]
+		`combo3`
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	580.0	0.0	40.0	40.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`1`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`1`
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+[/ai pattern]

@@ -1,0 +1,156 @@
+#PVF_File
+
+[name]
+	`强化 - 格档`
+
+[name2]
+	`Guard Upgrade`
+
+[explain]
+	`吸收来自前方的攻击伤害。
+按住技能键可以持续[格挡]动作，且MP只在[格挡]开始时消耗一次。`
+
+[basic explain]
+	`降低来自前方施展的攻击的损伤。`
+
+[basic explain ex]
+	`物理、魔法、损伤吸收率与冲击波发动有限时间增加。`
+
+[explain ex]
+	`物理,魔法伤害吸收率与冲击波限制发动时间增加。
+技能每增加Lv1时物理吸收伤害值增加量 : 5%%
+技能每增加Lv1时魔法 吸收伤害值增加量 : 10%%
+技能每增加Lv1时冲击波限制发动时间增加量 : 10%%`
+
+[feature skill type]
+	1
+
+[special purchase cost]
+	2
+[/special purchase cost]
+
+[required level]
+	50
+
+[required level range]
+	5
+
+[pre required skill]
+	1	5
+[/pre required skill]
+
+[type]
+	`[passive]`
+
+[skill class]
+	1
+
+[maximum level]
+	3
+
+[growtype maximum level]
+	3	1	1	1	1	1
+
+[skill fitness growtype]
+	1	2	3	4
+[/skill fitness growtype]
+
+[icon]
+	`Character/Swordman/Effect/SkillIcon.img`	284
+	`Character/Swordman/Effect/SkillIcon.img`	285
+
+[command]
+	{6=`(DOWN)`}
+	{8=`,`}
+	{6=`(DOWN)`}
+	{8=`,`}
+	{6=`(ATTACK)`}
+[/command]
+
+[dungeon]
+	[static data]
+		500	400	100	400	3000
+	[/static data]
+	[level info]
+		5
+		200	200	40	15	10
+		250	180	50	20	20
+		300	160	60	25	30
+		350	140	70	30	40
+		400	120	80	35	50
+		450	100	83	40	60
+		500	80	85	45	70
+		550	60	88	50	80
+		600	40	90	55	90
+		650	20	93	60	100
+		700	0	94	62	100
+		700	0	94	63	100
+		700	0	94	64	100
+		700	0	94	65	100
+		700	0	95	66	100
+		700	0	95	67	100
+		700	0	95	68	100
+		700	0	95	69	100
+		700	0	95	70	100
+		700	0	95	71	100
+		700	0	96	72	100
+		700	0	96	73	100
+		700	0	96	74	100
+		700	0	96	75	100
+		700	0	96	76	100
+		700	0	96	77	100
+		700	0	96	78	100
+		700	0	97	79	100
+		700	0	97	80	100
+		700	0	97	81	100
+		700	0	97	81	100
+		700	0	97	82	100
+		700	0	97	83	100
+		700	0	98	84	100
+		700	0	98	85	100
+		700	0	98	86	100
+		700	0	98	87	100
+		700	0	98	88	100
+		700	0	98	89	100
+		700	0	98	90	100
+		700	0	99	91	100
+		700	0	99	92	100
+		700	0	99	93	100
+		700	0	99	94	100
+		700	0	99	95	100
+		700	0	99	96	100
+		700	0	100	97	100
+		700	0	100	98	100
+		700	0	100	99	100
+		700	0	100	100	100
+	[/level info]
+	[special level up]
+		1	1
+		`%`	25	-1	3
+		`+`	25
+	[/special level up]
+[/dungeon]
+
+[pvp]
+	[special level up]
+		-1	0
+		`%`	0	-1	3
+		`+`	0
+	[/special level up]
+[/pvp]
+
+[death tower]
+[/death tower]
+
+[warroom]
+[/warroom]
+
+[level property]
+	1	99
+	`物理损伤吸收 : <int>%%
+魔法吸收伤害 : <int>%%
+被击退的时间 : <float2>秒`
+	-1	2	1.0
+	-1	3	1.0
+	-1	1	0.001
+[/level property]

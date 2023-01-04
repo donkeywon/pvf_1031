@@ -1,0 +1,213 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Counter2_Howling_Ready.ani`
+	[SUB ANI]
+		`../Animation/EyeEffect/Counter2_Howling_Ready.ani`	0	0
+		`../Animation/Effect/Aura2.ani`	0	0
+		`../Animation/Effect/Breath1.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`BUFF_CONGESTION`	0
+		`BASILRISK_SKILL_02`	6
+		`ELBON_WIND`	7
+		`ELBON_WIND`	10
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			8577
+		[/IS INDEX]
+		[CHECKED NO]
+		[=]
+			0
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		-1
+	[%]
+	[TRIGGER]
+		3
+	[OFF]
+	[TRIGGER]
+		0
+	[ON]
+	[SET ACTION]
+	[ATTACK]
+		8
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../../../../../PassiveObject/ActionObject/Monster/LizardMan/particle/Smoke2.ptl`	0	0	30
+	[PARTICLE]
+		`../../../../../PassiveObject/ActionObject/Monster/LizardMan/particle/Smoke2.ptl`	200	0	60
+	[PARTICLE]
+		`../../../../../PassiveObject/ActionObject/Monster/LizardMan/particle/Smoke2.ptl`	-200	0	40
+	[PARTICLE]
+		`../../../../../PassiveObject/ActionObject/Monster/LizardMan/particle/Smoke2.ptl`	0	-100	40
+	[PARTICLE]
+		`../../../../../PassiveObject/ActionObject/Monster/LizardMan/particle/Smoke2.ptl`	0	100	40
+	[PARTICLE]
+		`../../../../../PassiveObject/ActionObject/Monster/LizardMan/particle/Smoke2.ptl`	400	0	40
+	[PARTICLE]
+		`../../../../../PassiveObject/ActionObject/Monster/LizardMan/particle/Smoke2.ptl`	-400	0	40
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`time1`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		0
+	[OFF]
+	[TRIGGER]
+		3
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time1`	
+		[+]
+			30000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		-3
+	[%]
+	[TRIGGER]
+		3
+	[OFF]
+	[TRIGGER]
+		4
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			8577
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		4
+	[OFF]
+	[TRIGGER]
+		0
+	[ON]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		2000	9
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		7
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		8
+	[NOW]
+[/BEHAVIOR]

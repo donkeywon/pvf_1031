@@ -1,0 +1,96 @@
+#PVF_File
+
+[name]
+	`风之女神`
+
+[name2]
+	`A Necklace of Scamper`
+
+[basic explain]
+	`地下城内移动速度 +10%%`
+
+[grade]
+	72
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	68
+
+[magical attack]
+	29
+
+[magical defense]
+	72
+
+[attack speed]
+	30
+
+[price]
+	72000
+
+[repair price]
+	57600
+
+[value]
+	57600
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	6320	5920
+
+[icon]
+	`Item/common/necklace.img`	40
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`move speed`
+		`+`	100
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

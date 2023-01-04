@@ -1,0 +1,157 @@
+#PVF_File
+
+[name]
+	`灵风之爪`
+
+[name2]
+	`Skillful Fighter Claw`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入减速状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入减速状态20秒； 减速状态下， 减少10%%的移动速度和攻击速度。 (若敌人高于Lv25， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	27
+
+[rarity]
+	2
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	25
+
+[physical attack]
+	18
+
+[magical attack]
+	9
+
+[price]
+	300000
+
+[repair price]
+	30000
+
+[value]
+	30000
+
+[equipment physical attack]
+	252	236
+
+[equipment magical attack]
+	252	236
+
+[separate attack]
+	126	82
+
+[physical critical hit]
+	3
+
+[icon]
+	`Item/weapon/fighter/claw.img`	27
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	20
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	0	0
+
+[layer variation]
+	2790
+	`boneclawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`boneclawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	0	0
+
+[layer variation]
+	2150
+	`at_boneclawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_boneclawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_boneclawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[medal]
+	1000
+
+[if]
+	[cooltime]
+		32000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[active status]
+		`slow`	25	10	10
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

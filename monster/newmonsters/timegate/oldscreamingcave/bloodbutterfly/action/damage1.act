@@ -1,0 +1,31 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Damage1.ani`
+	[SPEECH]
+		`哈啊……`	0	10
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE FLOATING HEIGHT]
+		0
+	[TRIGGER]
+	[ATTACK]
+		1	0
+	[ON]
+	[SET SPEED]
+		[Z AXIS]
+			-300
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

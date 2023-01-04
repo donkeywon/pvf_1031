@@ -1,0 +1,186 @@
+#PVF_File
+
+[name]
+	`黑色瘟疫之暗牙腰带`
+
+[basic explain]
+	`破招攻击力 +10%%`
+
+[detail explain]
+	`破招攻击力 +10%% (在决斗场中 +7%%)`
+
+[grade]
+	75
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	71
+
+[physical attack]
+	20
+
+[magical attack]
+	21
+
+[physical defense]
+	19
+
+[inventory limit]
+	3000
+
+[need material]
+	4438	75
+
+[repair price]
+	50400
+
+[value]
+	48000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	1312	1232
+
+[icon]
+	`Item/common/belt.img`	220
+
+[field image]
+	`Item/field_equip.img`	13
+
+[equipment type]
+	`[waist]`	18
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	26
+
+[weight]
+	1400
+
+[item group name]
+	`ha waist`
+
+[cool time]
+	10000
+
+[set name]
+	`黑色瘟疫之暗牙重甲  套装`
+
+[set item]
+	11344	13343	15334	17328	19335
+[/set item]
+
+[if]
+	[attack condition]
+		`counter`
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	10
+[/then]
+
+[pvp]
+	[if]
+		[attack condition]
+			`counter`
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase damage]
+			`%`	7
+	[/then]
+[/pvp]
+
+[piece set ability]
+	3	
+	[if]
+		[cooltime]
+			60000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			30000
+		[probability]
+			3
+		[reduce probability to human armor at pvp module]
+			100
+		[stat]
+			`equipment physical defense`
+			`%`	100
+	[/then]
+	[parameter basic explain]
+		`感染上黑色瘟疫气息的防具， 属性已被释放 : 攻击时， 有3%%的几率使物防增加2倍， 效果持续30秒。 (在决斗场中无效)`
+[/piece set ability]
+
+[piece set ability]
+	5	
+	[physical attack]
+		60
+	[physical defense]
+		60
+	[magical attack]
+		60
+	[magical defense]
+		60
+	[if]
+		[cooltime]
+			50000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			30000
+		[probability]
+			5
+		[stat]
+			`physical attack`
+			`+`	85
+		[stat]
+			`magical attack`
+			`+`	85
+		[stat]
+			`physical defense`
+			`+`	85
+		[stat]
+			`magical defense`
+			`+`	85
+	[/then]
+	[parameter basic explain]
+		`2次感染黑色瘟疫气息的防具， 潜能开始爆发 : 攻击时， 有5%%的几率增加85点的力量、 智力、 体力和精神， 效果持续30秒。`
+[/piece set ability]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

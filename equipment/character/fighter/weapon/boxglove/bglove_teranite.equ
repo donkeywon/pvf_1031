@@ -1,0 +1,200 @@
+#PVF_File
+
+[name]
+	`泰拉石拳套`
+
+[name2]
+	`Teranite Glove`
+
+[basic explain]
+	`攻击时， 有1%%的几率使自身增加10%%的移动速度、 攻击速度和施放速度； 但同时会减少自身10%%的装备防御力， 效果持续30秒。
+攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态2秒； 但在决斗场中， 只能持续1秒。 (若敌人高于Lv50， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击时， 有1%%的几率使自身增加10%%的移动速度、 攻击速度和施放速度； 并减少自身10%%的装备防御力， 效果持续30秒。`
+
+[flavor text]
+	`异变现象的产物， 由泰拉石炼制而成的武器， 含有强大的能量！`
+
+[grade]
+	65
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	58
+
+[physical attack]
+	47
+
+[attack speed]
+	100
+
+[move speed]
+	20
+
+[MP MAX]
+	50
+
+[price]
+	117000
+
+[repair price]
+	98280
+
+[value]
+	93600
+
+[equipment physical attack]
+	645	592
+
+[equipment magical attack]
+	583	536
+
+[separate attack]
+	365	246
+
+[icon]
+	`Item/weapon/fighter/bglove.img`	27
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	3
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	1	3
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`stun`	50
+[/then]
+
+[if]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`cast speed`
+		`+`	100
+	[stat]
+		`attack speed`
+		`+`	100
+	[stat]
+		`move speed`
+		`+`	100
+	[stat]
+		`equipment physical defense`
+		`%`	-10
+	[stat]
+		`equipment magical defense`
+		`%`	-10
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

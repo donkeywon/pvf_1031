@@ -1,0 +1,158 @@
+#PVF_File
+
+[name]
+	`(旧) 无轩之湮魄`
+
+[name2]
+	`Bowgun of U-Yo Stem`
+
+[basic explain]
+	`攻击时， 有3%%的几率使所有队员进入伪装状态。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使所有队员进入伪装状态， 效果持续20秒。 (消耗10个无色小晶块)`
+
+[flavor text]
+	`没无色怎么行呢， 换武器也得准备啊~  --凯丽`
+
+[grade]
+	45
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	40
+
+[physical attack]
+	32
+
+[magical attack]
+	16
+
+[attack speed]
+	20
+
+[stuck]
+	-1
+
+[price]
+	72000
+
+[repair price]
+	57600
+
+[value]
+	57600
+
+[equipment physical attack]
+	343	284
+
+[equipment magical attack]
+	381	316
+
+[separate attack]
+	259	173
+
+[physical critical hit]
+	3
+
+[icon]
+	`item/weapon/gunner/bowgun.img`	35
+
+[field image]
+	`Item/field_weapon.img`	5
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	3	0
+
+[layer variation]
+	2790
+	`bowgunc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`bowgunb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	3	0
+
+[layer variation]
+	2790
+	`at_bowgunc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_bowgunb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BOWGUN_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`bowgun`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		35000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	10
+	[target]
+		`party`	-1
+	[duration]
+		20000
+	[probability]
+		3
+	[buff]
+		`camoflage`
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

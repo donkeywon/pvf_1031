@@ -1,0 +1,153 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/FastJump.ani`
+	[SOUND]
+		`MALAGA_DMG`	0
+		`GLASS_CRASH`	3
+		`ICETIGER_JUMP`	1
+	[/SOUND]
+	[SUB ANI]
+		`../Animation/FastSPGatePillar1.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`生气了！`	3	33
+		`好痛！`	3	33
+		`别撒野了！`	3	33
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+	[SET SPEED]
+		[X AXIS]
+		[RANDOM]
+			100	400
+		[Z AXIS]
+			1000
+		[Y AXIS]
+		[RANDOM SELECT]
+			-300	300
+		[/RANDOM SELECT]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-1000
+	[/SET SPEED]
+	[CHANGE ATTACKINFO]
+		`../AttackInfo/JumpDown.atk`
+	[ATTACKRECT]
+	[RESET]
+	[TRIGGER]
+		3
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		3	500
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			24001
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			50
+		[POS]
+			40	0	0
+	[/CREATE PASSIVEOBJECT]
+	[PARTICLE]
+		`../Particle/IceColumnDestroy.ptl`	40	0	40
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		2	2
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[=<]
+			30
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Z AXIS]
+			0
+		[Y AXIS]
+			0
+	[/SET SPEED]
+	[SET FRAME]
+		3
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ATTACKINFO]
+		`../AttackInfo/JumpParticle.atk`
+	[ATTACKRECT]
+	[RESET]
+	[SET ACTION]
+	[ATTACK]
+		6
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]

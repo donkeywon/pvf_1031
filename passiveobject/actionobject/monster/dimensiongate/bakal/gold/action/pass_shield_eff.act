@@ -1,0 +1,58 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/pass_shield_eff.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			56448
+		[/IS INDEX]
+		[HP]
+		[<=]
+			30
+		[%]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9146
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			50
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		20
+	[%]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

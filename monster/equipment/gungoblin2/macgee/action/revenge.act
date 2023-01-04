@@ -1,0 +1,37 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/revenge.ani`
+	[SUB ANI]
+		`../animation/countershoot.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`复仇反击！`	0	100
+	[/SPEECH]
+	[SOUND]
+		`R_DIFFUSION_GUNA`	1
+		`MACKI_SKILL_02`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8005
+		[PARTICLE FILENAME]
+			`../particle/bullet.ptl`
+		[LEVEL]
+			40
+		[POS]
+			63	0	40
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,329 @@
+#PVF_File
+
+[name]
+	`黑色瘟疫之青丝护腿`
+
+[basic explain]
+	`施放[受身蹲伏]时， 有30%%的几率出现冲击波。
+攻击时， 有5%%的几率使300px范围内的所有敌人减少5点所有属性抗性。
+被攻击时， 有10%%的几率使自身增加2%%的力量、 智力、 体力和精神， 效果持续20秒。`
+
+[detail explain]
+	`施放[受身蹲伏]时， 有30%%的几率出现冲击波。 (在决斗场中几率为1.5%%)
+攻击时， 有5%%的几率使300px范围内的所有敌人减少5点所有属性抗性。
+被攻击时， 有10%%的几率使自身增加2%%的力量、 智力、 体力和精神， 效果持续20秒。 (效果最多可重叠2次； 冷却时间为10秒)`
+
+[grade]
+	75
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	71
+
+[magical attack]
+	37
+
+[magical defense]
+	37
+
+[move speed]
+	20
+
+[need material]
+	4438	75
+
+[repair price]
+	44100
+
+[value]
+	42000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	820	770
+
+[icon]
+	`Item/common/pants.img`	235
+
+[field image]
+	`Item/field_equip.img`	1
+
+[equipment type]
+	`[pants]`	17
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	24
+
+[weight]
+	1100
+
+[item group name]
+	`cl pants`
+
+[cool time]
+	10000
+
+[set name]
+	`黑色瘟疫之青丝战袍  套装`
+
+[set item]
+	10190	12187	14171	16163	18171
+[/set item]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	300
+	[duration]
+		5000
+	[stat]
+		`all elemental resistance`
+		`+`	-5
+[/then]
+
+[if]
+	[cooltime]
+		10000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		10
+	[appendage]
+		29
+[/then]
+
+[if]
+	[event use skill]
+		`priest`	190
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		30
+	[reduce probability to human armor at pvp module]
+		95
+	[passive object]
+		9374	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[event use skill]
+		`at gunner`	190
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		30
+	[reduce probability to human armor at pvp module]
+		95
+	[passive object]
+		9374	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[event use skill]
+		`fighter`	190
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		30
+	[reduce probability to human armor at pvp module]
+		95
+	[passive object]
+		9374	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[event use skill]
+		`swordman`	190
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		30
+	[reduce probability to human armor at pvp module]
+		95
+	[passive object]
+		9374	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[event use skill]
+		`gunner`	190
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		30
+	[reduce probability to human armor at pvp module]
+		95
+	[passive object]
+		9374	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[event use skill]
+		`mage`	190
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		30
+	[reduce probability to human armor at pvp module]
+		95
+	[passive object]
+		9374	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[event use skill]
+		`at mage`	190
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		30
+	[reduce probability to human armor at pvp module]
+		95
+	[passive object]
+		9374	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[event use skill]
+		`thief`	190
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		30
+	[reduce probability to human armor at pvp module]
+		95
+	[passive object]
+		9374	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[piece set ability]
+	3	
+	[if]
+		[cooltime]
+			60000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			30000
+		[probability]
+			3
+		[reduce probability to human armor at pvp module]
+			100
+		[stat]
+			`equipment physical defense`
+			`%`	100
+	[/then]
+	[parameter basic explain]
+		`感染上黑色瘟疫气息的防具， 属性已被释放 : 攻击时， 有3%%的几率使物防增加2倍， 效果持续30秒。 (在决斗场中无效)`
+[/piece set ability]
+
+[piece set ability]
+	5	
+	[physical attack]
+		60
+	[physical defense]
+		60
+	[magical attack]
+		60
+	[magical defense]
+		60
+	[if]
+		[cooltime]
+			50000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			30000
+		[probability]
+			5
+		[stat]
+			`physical attack`
+			`+`	85
+		[stat]
+			`magical attack`
+			`+`	85
+		[stat]
+			`physical defense`
+			`+`	85
+		[stat]
+			`magical defense`
+			`+`	85
+	[/then]
+	[parameter basic explain]
+		`2次感染黑色瘟疫气息的防具， 潜能开始爆发 : 攻击时， 有5%%的几率增加85点的力量、 智力、 体力和精神， 效果持续30秒。`
+[/piece set ability]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

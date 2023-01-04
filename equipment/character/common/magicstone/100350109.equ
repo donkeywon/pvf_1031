@@ -1,0 +1,95 @@
+#PVF_File
+
+[name]
+	`暗精灵的融合心脏`
+
+[basic explain]
+	`HP降到10%%以下后， 被攻击时， 将消耗剩余的所有MP， 并以此恢复自身的HP值。 (恢复量取决于所剩MP量)`
+
+[detail explain]
+	`HP降到10%%以下后， 被攻击时， 将消耗剩余的所有MP， 并以此恢复自身的HP值。 (恢复量取决于所剩MP量； 冷却时间为20秒)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	51
+
+[physical defense]
+	51
+
+[magical defense]
+	51
+
+[HP MAX]
+	500
+
+[price]
+	89000
+
+[value]
+	71200
+
+[creation rate]
+	0
+
+[icon]
+	`Item/new_equipment/11_magicstone/magicstone.img`	85
+
+[field image]
+	`Item/field_equip.img`	23
+
+[equipment type]
+	`[magic stone]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`magic stone`
+
+[cool time]
+	10000
+
+[magical attack]
+	51
+
+[if]
+	[cooltime]
+		20000
+	[stat change]
+		`hp`
+		`<=`
+		`%`	10
+	[/stat change]
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[swap stat]
+		`mp`
+		`+`	-1
+		`hp`	100.0
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

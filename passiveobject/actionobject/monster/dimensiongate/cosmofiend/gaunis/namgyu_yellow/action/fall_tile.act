@@ -1,0 +1,66 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/dimension_cut.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		0	0
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			85
+		[ZPOS]
+		[<=]
+			10
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[STRAIGHT MOVE]
+		[AXIS]
+		[Z]
+		[MOVING MOTION]
+		[DOWN]
+		[TIME]
+			4000
+		[DAMAGE HP]
+			50
+		[RETURN XPOS]
+			1225
+		[RETURN YPOS]
+			325
+		[RETURN ZPOS]
+			0
+		[ACCELERATE]
+			0
+	[/STRAIGHT MOVE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9800
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

@@ -1,0 +1,233 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/gun.ani`
+	[SUB ANI]
+		`../animation/gun_eff.ani`	0	1
+		`../animation/shotgun/gun_shotgun.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`就是现在！ 出来吧！`	0	100
+		`哈哈哈！ 烟火秀要开始了！`	5	50
+	[/SPEECH]
+	[SOUND]
+		`PLATIN_SKILL_01`	2
+		`PLATIN_RELOAD_01`	3
+		`PLATIN_SHOT_01`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9295
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			0	0	0
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9926
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			1115	345	0
+		[FIX DIRECTION]
+		[LEFT]
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		2
+	[OFF]
+	[TRIGGER]
+		3
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9295
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			0	0	0
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9926
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			8	260	0
+		[FIX DIRECTION]
+		[RIGHT]
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			-400
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			-120
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[TRIGGER CHECK]
+		[ATTACK]
+			3	1
+		[OFF]
+		[TRIGGER CHECK]
+		[ATTACK]
+			3	2
+		[OFF]
+		[TRIGGER CHECK]
+		[ATTACK]
+			3	3
+		[OFF]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		12
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		5
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[ON]
+	[TRIGGER]
+		2
+	[ON]
+	[TRIGGER]
+		3
+	[OFF]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		3
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[REVERSE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		2
+	[OFF]
+	[TRIGGER]
+		3
+	[ON]
+[/BEHAVIOR]

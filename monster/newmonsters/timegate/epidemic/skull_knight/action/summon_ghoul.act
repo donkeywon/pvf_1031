@@ -1,0 +1,128 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/summon_ghoul.ani`
+	[SUB ANI]
+		`../animation/effect/summon_ghoul_e3.ani`	0	1
+		`../animation/effect/summon_ghoul_e2.ani`	0	2
+		`../animation/effect/summon_ghoul_e1.ani`	0	3
+	[/SUB ANI]
+	[SPEECH]
+		`醒来吧~暗黑战士们……`	0	20
+	[/SPEECH]
+	[SOUND]
+		`SKULLKNIGHT_SKILL_01`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		800	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DELAY DO BEHAVIOR]
+	[ME]
+		2	500
+	[DELAY DO BEHAVIOR]
+	[ME]
+		3	1000
+	[DELAY DO BEHAVIOR]
+	[ME]
+		4	1500
+	[DELAY DO BEHAVIOR]
+	[ME]
+		5	2000
+	[DELAY DO BEHAVIOR]
+	[ME]
+		6	2500
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			63032
+		[LEVEL]
+			0
+		[POS]
+			20	0	0
+		[NO EFFECT]
+		[USE MY DIRECTION]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			63032
+		[LEVEL]
+			0
+		[POS]
+			120	0	0
+		[NO EFFECT]
+		[USE MY DIRECTION]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			63032
+		[LEVEL]
+			0
+		[POS]
+			20	20	0
+		[NO EFFECT]
+		[USE MY DIRECTION]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			63032
+		[LEVEL]
+			0
+		[POS]
+			20	60	0
+		[NO EFFECT]
+		[USE MY DIRECTION]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			63032
+		[LEVEL]
+			0
+		[POS]
+			120	-60	0
+		[NO EFFECT]
+		[USE MY DIRECTION]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

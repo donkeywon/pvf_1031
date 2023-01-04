@@ -1,0 +1,151 @@
+#PVF_File
+
+[name]
+	`传承 : 生命女神的钛合金胸甲`
+
+[name2]
+	`Legacy : Coat of Cubeley`
+
+[grade]
+	37
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	35
+
+[physical attack]
+	20
+
+[physical defense]
+	17
+
+[magical attack]
+	28
+
+[stuck resistance]
+	15
+
+[MP MAX]
+	150
+
+[price]
+	44400
+
+[repair price]
+	35520
+
+[value]
+	35520
+
+[equipment physical defense]
+	2400	2280
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/IconArmor.img`	109
+
+[field image]
+	`Item/field_equip.img`	15
+
+[equipment type]
+	`[coat]`	21
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	60
+
+[weight]
+	5000
+
+[item group name]
+	`mt coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 生命女神的钛合金板甲  套装`
+
+[set item]
+	11652	13651	19651
+[/set item]
+
+[item overpower part]
+
+[set ability]
+	[HP MAX]
+		200
+	[MP MAX]
+		200
+	[physical attack]
+		53
+	[magical attack]
+		53
+	[inventory limit]
+		5000
+	[move speed]
+		20
+	[attack speed]
+		20
+	[cast speed]
+		20
+	[if]
+		[cooltime]
+			30000
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			20000
+		[probability]
+			2
+		[stat]
+			`stuck resistance`
+			`+`	70
+	[/then]
+	[fullset basic explain]
+		`被攻击时， 有2%%的几率使自身增加7%%的回避率， 效果持续20秒。
+进入地下城时， 因传承的祝福可以使自身增加5%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	50
+	[/then]
+[/set ability]
+
+[possible kiri protect]

@@ -1,0 +1,93 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Grow.ani`
+	[SUB ANI]
+		`../animation/Count.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`哥布林很好吃~`	0	50
+		`咯呃咯呃~`	0	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			150
+		[IS INDEX]
+			62768	62766	62767	62770	62771	62772
+		[/IS INDEX]
+		[ZPOS]
+		[<=]
+			70
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND MESSAGE]
+	[DIE_COMMAND]
+		0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		2
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			11000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		3
+	[NOW]
+[/BEHAVIOR]

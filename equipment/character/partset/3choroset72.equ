@@ -1,0 +1,76 @@
+#PVF_File
+
+[set name]
+	`冰剑怒击  套装`
+
+[piece set ability]
+	3	
+	[skill data up]
+		`[at mage]`	16	`[dungeon type]`	`[level]`	0	`%`	30
+		`[at mage]`	16	`[dungeon type]`	`[level]`	1	`%`	30
+		`[at mage]`	16	`[dungeon type]`	`[static]`	3	`%`	20
+		`[at mage]`	16	`[dungeon type]`	`[static]`	4	`%`	20
+		`[at mage]`	16	`[dungeon type]`	`[static]`	5	`%`	20
+	[/skill data up]
+	[parameter basic explain]
+		`[冰魄之弓]攻击范围 +20%%
+[冰魄之弓]攻击力 +30%%`
+[/piece set ability]
+
+[piece set ability]
+	6	
+	[skill data up]
+		`[at mage]`	16	`[dungeon type]`	`[static]`	1	`%`	-100
+		`[at mage]`	16	`[dungeon type]`	`[level]`	0	`%`	30
+		`[at mage]`	16	`[dungeon type]`	`[level]`	1	`%`	30
+		`[at mage]`	16	`[dungeon type]`	`[cooltime]`	0	`%`	-65
+		`[at mage]`	16	`[dungeon type]`	`[static]`	3	`%`	50
+		`[at mage]`	16	`[dungeon type]`	`[static]`	4	`%`	50
+		`[at mage]`	16	`[dungeon type]`	`[static]`	5	`%`	50
+		`[at mage]`	23	`[dungeon type]`	`[cooltime]`	0	`%`	-30
+		`[at mage]`	23	`[dungeon type]`	`[static]`	3	`+`	1
+	[/skill data up]
+	[parameter basic explain]
+		`[冰魄之弓]无法施放最后一击
+[冰魄之弓]攻击力 +30%%
+[冰魄之弓]冷却时间 -65%%
+[冰魄之弓]攻击范围 +50%%
+[冰魄旋枪]冷却时间 -30%%
+[冰魄旋枪]长枪投掷数量 +1`
+[/piece set ability]
+
+[piece set ability]
+	9	
+	[if]
+		[module]
+			`[dungeon type]`
+		[/module]
+		[skill]
+			`at mage`	16
+		[/skill]
+		[cooltime]
+			100
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			100
+		[passive object]
+			20132	0	0	0	0	0	``
+		[/passive object]
+	[/then]
+	[skill data up]
+		`[at mage]`	23	`[dungeon type]`	`[cooltime]`	0	`%`	-30
+		`[at mage]`	10	`[dungeon type]`	`[static]`	2	`+`	3
+		`[at mage]`	10	`[dungeon type]`	`[static]`	3	`+`	3
+		`[at mage]`	10	`[dungeon type]`	`[static]`	5	`%`	100
+	[/skill data up]
+	[parameter basic explain]
+		`[冰魄之弓]攻击时， 给敌人施放寒冰爆炸
+[冰魄旋枪]冷却时间 -30%%
+[破冰飞刃]冰碎片数量 +3
+[破冰飞刃]攻击范围 +100%%`
+[/piece set ability]

@@ -1,0 +1,257 @@
+#PVF_File
+
+[name]
+	`赤练蛇 - 火影`
+
+[name2]
+	``
+
+[basic explain]
+	`施放[RX-78追击者]时， 有15%%的几率多召唤1个追击者。
+施放[RX-78追击者]和[Ez-8自爆者]时， 可以使自身进入霸体状态。
+
+神枪手(男)
+施放[盖波加之拳]时， 可以使自身增加100点智力， 效果持续30秒。
+
+神枪手(女)
+施放[改装 : G-0战争领主]时， 可以使自身增加100点智力， 效果持续30秒。`
+
+[routing priority]
+	`gunner`	3
+	`at gunner`	3
+[/routing priority]
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[magical attack]
+	56
+
+[stuck]
+	1
+
+[price]
+	136000
+
+[repair price]
+	114240
+
+[value]
+	108800
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	540	488
+
+[equipment magical attack]
+	793	716
+
+[separate attack]
+	504	343
+
+[skill levelup]
+	`[gunner]`	27	1
+	`[gunner]`	28	1
+	`[gunner]`	67	2
+	`[at gunner]`	27	1
+	`[at gunner]`	28	1
+	`[at gunner]`	96	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/automatic/automatic.img`	90
+
+[field image]
+	`Item/field_weapon.img`	2
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	23	1
+
+[layer variation]
+	2790
+	`autoc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`autob`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	23	1
+
+[layer variation]
+	2790
+	`at_autoc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_autob`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	1500
+
+[item group name]
+	`automatic`
+
+[cool time]
+	10000
+
+[if]
+	[use skill]
+		`gunner`	27
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`gunner`	27
+[/then]
+
+[if]
+	[use skill]
+		`gunner`	28
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`gunner`	28
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	27
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`at gunner`	27
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	28
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`at gunner`	28
+[/then]
+
+[if]
+	[use skill]
+		`gunner`	67
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[stat]
+		`magical attack`
+		`+`	100
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	96
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[stat]
+		`magical attack`
+		`+`	100
+[/then]
+
+[if]
+	[use skill]
+		`gunner`	27
+	[/use skill]
+[/if]
+
+[then]
+	[probability]
+		15
+	[add skill summon]
+		27	1	-1
+	[/add skill summon]
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	27
+	[/use skill]
+[/if]
+
+[then]
+	[probability]
+		15
+	[add skill summon]
+		27	1	-1
+	[/add skill summon]
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	68

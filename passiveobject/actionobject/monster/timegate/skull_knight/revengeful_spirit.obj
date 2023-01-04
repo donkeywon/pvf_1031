@@ -1,0 +1,47 @@
+#PVF_File
+
+[floating height]
+	1
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	1000
+
+[basic action]
+	`Action/revengeful_spirit.act`
+
+[attack info]
+	`attackinfo/revengeful_spirit.atk`
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[ENEMY]`
+	[homing velocity]
+		70	0
+	[homing check gap]
+		1000
+	[max rotation]
+		0
+	[init rotation]
+		0
+	[diff rotation]
+		100
+	[homing time]
+		0
+	[sync target move]
+[/homing]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	18000
+	`[destroy action]`
+	`[object create after destroy]`
+	`[add object index]`	1	11169
+[/object destroy condition]

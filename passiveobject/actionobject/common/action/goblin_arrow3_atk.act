@@ -1,0 +1,61 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Goblin_arrow2.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			61407
+		[/IS INDEX]
+	[/CHECKUP]
+	[SAVE TARGET OBJECT]
+	[TARGET]
+		10
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[LOAD TARGET]
+		10	0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8479
+		[PARTICLE FILENAME]
+			`../Particle/Arrow_down.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	380
+		[WARNING MARK]
+			105	0	100	1
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

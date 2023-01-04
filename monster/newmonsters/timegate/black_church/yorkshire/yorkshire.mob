@@ -1,0 +1,162 @@
+#PVF_File
+
+[name]
+	`敏捷的伪装者`
+
+[width]
+	64	14
+
+[category]
+	`[human]`
+[/category]
+
+[ambient sound]
+	`R_YOKSHER_AMB`
+
+[appear sound]
+	`R_YOKSHER_MEET`
+
+[damage sound]
+	`R_YOKSHER_DMG`
+
+[die sound]
+	`YOKSHER_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	90
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	90
+	`[HP MAX]`	`*`	150
+[/ability category]
+
+[level]
+	76	76
+
+[fire resistance]
+	40	40
+
+[water resistance]
+	-20	-20
+
+[HP regen speed]
+	200	200
+
+[move speed]
+	500	500
+
+[attack speed]
+	800	800
+
+[cast speed]
+	800	800
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	70000	70000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[warlike]
+	60
+
+[die effect]
+	0	6	0
+
+[face image]
+	`Monster/MonsterFace.img`	657
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/move.act`
+
+[sit action]
+	`Action/sit.act`
+
+[damage action 1]
+	`Action/damage1.act`
+
+[damage action 2]
+	`Action/damage2.act`
+
+[down action]
+	`Action/down.act`
+
+[overturn action]
+	`Action/overturn.act`
+
+[jump action]
+	`Action/Attack.act`
+
+[attack action]
+	`Action/jump_Attack.act`
+	`Action/Dash.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Yorkshire_telepo_Attack.atk`
+	``
+[/attack info]
+
+[cooltime]
+	6000	2500
+[/cooltime]
+
+[think term]
+	400
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	200
+
+[keep range distance with target]
+	360	-20	100	350
+
+[intelligence]
+	70	50	3000
+
+[vision]
+	800
+
+[lie frame]
+	1	2	3	3	4

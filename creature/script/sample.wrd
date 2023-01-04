@@ -1,0 +1,51 @@
+#PVF_File
+
+[ambient]
+	[module]
+		[condition]
+			`渠饵 1`
+			`渠饵 2`
+		[/condition]
+	[/module]
+[/ambient]
+
+[trigger]
+	[module]
+		[condition]
+			`渠饵 3`
+			`渠饵 4`
+		[/condition]
+	[/module]
+[/trigger]
+
+[ambient]
+	[main game]
+		[fill point under]
+			20
+			`渠饵 1`
+			`渠饵 2`
+		[/fill point under]
+		[enemies destroyed]
+			[rank over]
+				`C`	
+				[pop random]
+					30
+					`渠饵 3`
+					`渠饵 4`
+				[/pop random]
+			[/rank over]
+		[/enemies destroyed]
+	[/main game]
+[/ambient]
+
+[trigger]
+
+[room list]
+
+[equip]
+	[pop random]
+		30
+		`主人，从今天开始我就是你的宠物了，你一定要爱护我哦！`
+		`我会和你一起加油的！`
+	[/pop random]
+[/equip]

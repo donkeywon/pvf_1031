@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/brokenStay.ani`
+	[SUB ANI]
+		`../Animation/Cylinder.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`哎呀，不好了！`	0	30
+		`外面的情况怎么样？`	0	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`brokenStay.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`brokenDamage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`brokenDamage2.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`brokenAttack1.act`
+[/BEHAVIOR]

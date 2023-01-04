@@ -1,0 +1,145 @@
+#PVF_File
+
+[name]
+	`慈悲之斧`
+
+[name2]
+	`Axe of Mercy`
+
+[basic explain]
+	`被攻击时， 有100%%的几率增加3%%的武器物理攻击力， 效果持续20秒。 (效果最多叠加10次)`
+
+[detail explain]
+	`被攻击时， 有100%%的几率使武器增加3%%的物理攻击力， 效果持续20秒。 (效果最多叠加10次； 在决斗场中物攻减少为1%%)`
+
+[grade]
+	64
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	60
+
+[physical attack]
+	43
+
+[attack speed]
+	-80
+
+[stuck]
+	-2
+
+[price]
+	115200
+
+[repair price]
+	96768
+
+[value]
+	92160
+
+[equipment physical attack]
+	725	665
+
+[equipment magical attack]
+	513	471
+
+[separate attack]
+	360	242
+
+[skill levelup]
+	`[priest]`	47	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/axe.img`	58
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	9	5
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		500
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[appendage]
+		5
+[/then]
+
+[pvp]
+	[if]
+		[cooltime]
+			500
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			20000
+		[appendage]
+			6
+	[/then]
+[/pvp]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

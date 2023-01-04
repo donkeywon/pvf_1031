@@ -1,0 +1,170 @@
+#PVF_File
+
+[floating height]
+	0
+
+[width]
+	40	10
+
+[name]
+	`塔`
+
+[face image]
+	`Monster/MonsterFace.img`	0
+
+[die effect]
+	0	3	2
+
+[ability table]
+	0
+
+[summon skill status up rate]
+	1.0	2.0	3.0	4.0	5.0	6.0	7.0	8.0	9.0	10.0
+
+[common champion elemental property]
+	`[fire element]`
+	`[water element]`
+	`[dark element]`
+	`[light element]`
+	`[no element]`
+[/common champion elemental property]
+
+[ability category]
+	`[HP MAX]`	`[PHYSICAL_ATTACK]`	`[PHYSICAL_DEFENSE]`
+	`[MAGICAL_ATTACK]`	`[MAGICAL_DEFENSE]`	`[EQUIPMENT_PHYSICAL_ATTACK]`
+	`+`	10	`[EQUIPMENT_PHYSICAL_DEFENSE]`
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`[EQUIPMENT_MAGICAL_DEFENSE]`
+[/ability category]
+
+[category]
+	`[stay]`
+[/category]
+
+[level]
+	30	50
+
+[HP MAX]
+	1000	3000
+
+[MP MAX]
+	2000	3000
+
+[HP regen speed]
+	30	40
+
+[MP regen speed]
+	30	40
+
+[move speed]
+	0	0
+
+[attack speed]
+	1020	1050
+
+[cast speed]
+	1000	1100
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	10000	10000
+
+[keep distance with target]
+	0
+
+[vision]
+	200
+
+[stuckbonus on damage]
+	5	20	0	5
+
+[item]
+[/item]
+
+[common champion drop item]
+[/common champion drop item]
+
+[specific gen rate item]
+[/specific gen rate item]
+
+[death tower item]
+[/death tower item]
+
+[waiting action]
+	`action/stay.act`
+
+[damage action 1]
+	`action/damage1.act`
+
+[damage action 2]
+	`Action/stay.act`
+
+[move action]
+	`Action/stay.act`
+
+[sit action]
+	`Action/stay.act`
+
+[down action]
+	`Action/stay.act`
+
+[overturn action]
+	`Action/stay.act`
+
+[action list]
+	`Attack1.act`
+[/action list]
+
+[cooltime]
+	500
+[/cooltime]
+
+[attack info]
+	`AttackInfo/Attack1.atk`
+[/attack info]
+
+[etc action]
+[/etc action]
+
+[lie frame]
+	2	2	2	3	4
+
+[think term]
+	500
+
+[destination change term]
+	1000000
+
+[ai pattern]
+	[easy]
+		`Monster/Goblin/ai/Event.ai`
+		`Monster/Goblin/ai/DestinationSelect.ai`
+		`Monster/Goblin/ai/Action.ai`
+		`Monster/Goblin/ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`Monster/Goblin/ai/Event.ai`
+		`Monster/Goblin/ai/DestinationSelect.ai`
+		`Monster/Goblin/ai/Action.ai`
+		`Monster/Goblin/ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`Monster/Goblin/ai/Event.ai`
+		`Monster/Goblin/ai/DestinationSelect.ai`
+		`Monster/Goblin/ai/Action.ai`
+		`Monster/Goblin/ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`Monster/Goblin/ai/Event.ai`
+		`Monster/Goblin/ai/DestinationSelect.ai`
+		`Monster/Goblin/ai/Action.ai`
+		`Monster/Goblin/ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`Monster/Goblin/ai/Event.ai`
+		`Monster/Goblin/ai/DestinationSelect.ai`
+		`Monster/Goblin/ai/Action.ai`
+		`Monster/Goblin/ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

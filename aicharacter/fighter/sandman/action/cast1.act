@@ -1,0 +1,58 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Buff.ani`
+	[SUB ANI]
+		`../animation/start_eff.ani`	0	0
+		`../animation/start_face.ani`	0	0
+		`../animation/start.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`哈~~嘿！ 出来吧， 流沙王库茨！`	0	100
+	[/SPEECH]
+	[SOUND]
+		`DIRE_HURRICANE_END`	4
+	[/SOUND]
+[/MOTION]
+
+[HOLD POSITION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9282	9283
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			56455
+		[LEVEL]
+			0
+		[POS]
+			32	0	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

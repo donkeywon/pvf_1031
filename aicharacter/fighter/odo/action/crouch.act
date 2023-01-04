@@ -1,0 +1,55 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Crouch.ani`
+[/MOTION]
+
+[TRIGGER]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			100
+		[Y AXIS]
+			0
+		[Z AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[TARGET]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			100
+	[/CHECKUP]
+	[CHECKED NO]
+	[=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Y AXIS]
+			0
+		[Z AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+	[SET ACTION]
+	[SIT]
+	[END]
+[/BEHAVIOR]

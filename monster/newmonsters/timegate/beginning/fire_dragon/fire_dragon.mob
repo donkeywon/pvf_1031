@@ -1,0 +1,161 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`火龙艾斯库尔`
+
+[face image]
+	`Monster/MonsterFace.img`	680
+
+[attack sound]
+	``
+
+[damage sound]
+	`R_ASHCORE_DMG`
+
+[die sound]
+	`DRAGONMAN_DIE`
+
+[ambient sound]
+	``
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	150
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	120
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	120
+[/ability category]
+
+[fire resistance]
+	10	10
+
+[water resistance]
+	-10	-10
+
+[category]
+	`[dragon]`
+[/category]
+
+[hp regen rate]
+	0.0	0.0
+
+[MP regen speed]
+	0	0
+
+[level]
+	70	70
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	150000	150000
+
+[lie frame]
+	3	3	4	4	5
+
+[waiting action]
+	`Action/_stay.act`
+
+[move action]
+	`Action/_move.act`
+
+[sit action]
+	`Action/sit.act`
+
+[damage action 1]
+	`Action/_damage1.act`
+
+[damage action 2]
+	`Action/_damage2.act`
+
+[down action]
+	`Action/down.act`
+
+[proc action]
+	`Action/proc.act`
+
+[attack action]
+	`Action/slash1.act`
+	`Action/slash2.act`
+	`Action/shout.act`
+[/attack action]
+
+[attack info]
+	`attackinfo/attack.atk`
+	`attackinfo/attack2.atk`
+	``
+[/attack info]
+
+[cooltime]
+	8000	5000	5000
+[/cooltime]
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	1000
+
+[warlike]
+	100
+
+[think term]
+	500
+
+[destination change term]
+	1000
+
+[keep distance with target]
+	250
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[intelligence]
+	100	50	5000

@@ -1,0 +1,80 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/SuperJump.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			0
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			300
+		[Z AXIS]
+			500
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[CHECKUP]
+		[ZPOS]
+		[>]
+			0
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			0
+	[/SET SPEED]
+	[TRIGGER]
+		2
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[CHECKUP]
+		[ZSPEED]
+		[<]
+			0
+		[ZPOS]
+		[<=]
+			0
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+	[/SET SPEED]
+	[TRIGGER]
+		2
+	[OFF]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

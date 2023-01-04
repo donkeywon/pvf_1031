@@ -1,0 +1,122 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	1000
+[/dungeon]
+
+[type]
+	`[normal]`
+
+[greed]
+	`II II`
+
+[tile]
+	`Tile/ForestUnderOver.til`
+	`Tile/ForestOver.til`
+	`Tile/ForestOver.til`
+	`Tile/ForestOverUnder.til`
+	`Tile/ForestUnder.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/far0.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/mid0.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`../CommonAnimation/DarkCurtain.ani`
+		[layer]
+			`[close]`
+		[order]
+			`[upper]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	16	216	1106	249	259	141	852	347
+
+[sound]
+	`M_SUNDERLAND`
+	`AMB_FOREST_02`
+[/sound]
+
+[animation]
+	`Animation/DeadTree0.ani`	`[close]`	590	420	0
+	`Animation/Flower2.ani`	`[close]`	626	371	0
+	`Animation/Flower0.ani`	`[close]`	317	370	0
+	`Animation/BurntTree5.ani`	`[close]`	378	388	0
+	`Animation/Tree3.ani`	`[closeback]`	1279	153	0
+	`Animation/BurntTree0.ani`	`[closeback]`	563	116	0
+	`Animation/BurntTree3.ani`	`[closeback]`	679	123	0
+	`Animation/StoneTower2.ani`	`[closeback]`	522	129	0
+	`Animation/BurntTree2.ani`	`[closeback]`	783	133	0
+	`Animation/BurntTree3.ani`	`[closeback]`	892	145	0
+	`Animation/BurntTree0.ani`	`[closeback]`	984	147	0
+[/animation]
+
+[monster]
+	50004	1	0	516	197	0	1	1	`[fixed]`	`[normal]`
+	210	1	0	398	252	0	1	1	`[fixed]`	`[normal]`
+	50000	1	0	652	259	0	1	1	`[fixed]`	`[normal]`
+	211	1	0	268	285	0	1	1	`[fixed]`	`[champion]`	0
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[special passive object]
+	221	713	165	0	2
+	`[trap]`	48003	4	2	3	-1
+	`[trap]`	2410	1	2	3	-1
+	228	883	179	0	1
+	`[item]`	0	1	-1	-1	-1
+	221	239	231	0	1
+	`[item]`	3	-1	1	-1	-1
+	221	472	295	0	2
+	`[trap]`	48022	15	2	3	-1
+	`[trap]`	2010	1	2	3	-1	
+[/special passive object]
+
+[event monster position]
+	453	180	0
+	581	221	0
+	400	306	0
+	333	242	0
+[/event monster position]
+
+[map name]
+	`PVP 无名`

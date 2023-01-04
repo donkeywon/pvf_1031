@@ -1,0 +1,46 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack1_end.ani`
+	[SOUND]
+		`DCAPTAIN_DISAPPEAR`	0
+	[/SOUND]
+	[SPEECH]
+		`嘿嘿嘿~~`	0	10
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`Hide_move.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`Hide_move.act`
+	[CHANGE ACTION FILE]
+	[MOVEBACK]
+		`Hide_move.act`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]

@@ -1,0 +1,130 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/proc.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[FRAME]
+		1	1
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			64005
+		[/IS INDEX]
+		[IS IN AREA]
+			[POS]
+				0	0	0
+			[RANGE]
+				200	200	200
+			[COORDINATE]
+				`RELATIVE`
+		[/IS IN AREA]
+		[CHECKED NO]
+		[>=]
+			3
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		0	
+		[equipment physical defense]
+		[%]
+			500.0
+		[equipment magical defense]
+		[%]
+			500.0
+	[/APPENDAGE]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[COLOR CHANGE EFFECT]
+		[EFFECT BLUE START]
+			100
+		[EFFECT RED END]
+			200
+		[EFFECT ALPHA END]
+			100
+		[CHANGE SIZE START]
+			100
+		[CHANGE SIZE END]
+			100
+		[CHANGE TIME]
+			1000
+		[LIFE TIME]
+			0
+	[/COLOR CHANGE EFFECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		1	1
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			64005
+		[/IS INDEX]
+		[IS IN AREA]
+			[POS]
+				0	0	0
+			[RANGE]
+				200	200	200
+			[COORDINATE]
+				`RELATIVE`
+		[/IS IN AREA]
+		[CHECKED NO]
+		[<=]
+			2
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DELETE APPENDAGE]
+		0	
+		[equipment physical defense]
+		[%]
+			500.0
+		[equipment magical defense]
+		[%]
+			500.0
+	[/DELETE APPENDAGE]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[COLOR CHANGE EFFECT]
+		[EFFECT BLUE START]
+			0
+		[EFFECT RED END]
+			0
+		[EFFECT ALPHA END]
+			0
+		[CHANGE SIZE START]
+			100
+		[CHANGE SIZE END]
+			100
+		[CHANGE TIME]
+			1000
+		[LIFE TIME]
+			0
+	[/COLOR CHANGE EFFECT]
+[/BEHAVIOR]

@@ -1,0 +1,197 @@
+#PVF_File
+
+[name]
+	`落日鹰眼`
+
+[name2]
+	`Hawk Eye`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态。
+破招时， 有30%%的几率使敌人进入眩晕状态。
+破招攻击力 +20%%`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态2秒； 但在决斗场中， 只能持续1秒。 (若敌人高于Lv40， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+破招时， 有30%%的几率使敌人进入眩晕状态7秒； 但在决斗场中， 只能持续1.5秒。 (若敌人高于Lv40， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+破招攻击力 +20%%`
+
+[grade]
+	44
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	40
+
+[physical attack]
+	31
+
+[attack speed]
+	100
+
+[price]
+	79200
+
+[repair price]
+	63360
+
+[value]
+	63360
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	441	399
+
+[equipment magical attack]
+	399	361
+
+[separate attack]
+	245	164
+
+[skill levelup]
+	`[fighter]`	39	1
+	`[fighter]`	19	1
+	`[at fighter]`	39	1
+	`[at fighter]`	19	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/bglove.img`	13
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	3
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	1	3
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`stun`	40
+[/then]
+
+[if]
+	[cooltime]
+		10500
+	[attack condition]
+		`counter`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[probability]
+		30
+	[reduce probability to human armor at pvp module]
+		83
+	[active status]
+		`stun`	40
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

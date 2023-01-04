@@ -1,0 +1,224 @@
+#PVF_File
+
+[name]
+	`诺丝克尔`
+
+[floating height]
+	30
+
+[category]
+	`[insect]`
+	`[melee combat]`
+	`[close-tough]`
+[/category]
+
+[ambient sound]
+	`RUCY_AMB`
+
+[appear sound]
+	`MOSSQUEEN_MEET`
+
+[damage sound]
+	`R_MOSSQUEEN_DMG`
+
+[die sound]
+	`MOSSQUEEN_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	130
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	130
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	130
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	130
+	`[HP MAX]`	`*`	645
+[/ability category]
+
+[level]
+	70	70
+
+[slow resistance]
+	50	50
+
+[freeze resistance]
+	50	50
+
+[poison resistance]
+	10	10
+
+[stun resistance]
+	50	50
+
+[curse resistance]
+	50	50
+
+[blind resistance]
+	50	50
+
+[stone resistance]
+	50	50
+
+[sleep resistance]
+	50	50
+
+[confuse resistance]
+	50	50
+
+[hold resistance]
+	50	50
+
+[HP regen speed]
+	200	200
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1300	1300
+
+[weight]
+	60000	60000
+
+[warlike]
+	90
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[item]
+	3279	8000
+[/item]
+
+[common champion drop item]
+[/common champion drop item]
+
+[face image]
+	`Monster/MonsterFace.img`	470
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[attack action]
+	`Action/Attack.act`
+	`Action/Grap.act`
+	`Action/Attack2.act`
+	`Action/Attack3.act`
+	`Action/Attack4.act`
+	`Action/Attack1.act`
+	`Action/Grap2.act`
+	`Action/summon.act`
+	`Action/ankleAttack.act`
+	`Action/superguard.act`
+[/attack action]
+
+[last action]
+	`Action/Lastaction.act`
+
+[attack info]
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Grap.atk`
+	`AttackInfo/Attack2.atk`
+	`AttackInfo/Attack3.atk`
+	`AttackInfo/Attack4.atk`
+	`AttackInfo/Attack1.atk`
+	`AttackInfo/Grap2.atk`
+	``
+	`AttackInfo/Attack_.atk`
+	``
+[/attack info]
+
+[event super on scr]
+	`[on hp]`	20	8000	1
+	`[unbreakable]`	-1	-1	-1	-1
+[/event super on scr]
+
+[cooltime]
+	4000	3000	7000	7000	6000	15000	10000	30000	2000	33000
+[/cooltime]
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/HeroAction.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	300
+
+[keep range distance with target]
+	60	120	150	200
+
+[vision]
+	800
+
+[reflection object]
+	0	0	1	0	2	0	3	0	4	0	5	0	6	0	7	0	8	0	9	100
+[/reflection object]
+
+[lie frame]
+	1	2	3	3	4
+
+[level of difficulty]
+	[easy]
+		-40	2000
+	[medium]
+		-20	1000
+	[hard]
+		0	0
+	[ultimate]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]

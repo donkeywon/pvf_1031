@@ -1,0 +1,32 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Hisss.ani`
+	[SUB ANI]
+		`../Animation/HisssEffect.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`MEGAIRA_ATK_01`	0
+		`MEGAIRA_SKILL_03`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		0	
+		[hp regen rate]
+		[%]
+			300.0
+	[/APPENDAGE]
+[/BEHAVIOR]

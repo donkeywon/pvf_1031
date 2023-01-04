@@ -1,0 +1,178 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Khazan11.ani`
+	[SUB ANI]
+		`../Animation/Khazan21.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			35172
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<=]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35172
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	3
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			240
+	[/CHECKUP]
+	[IF]
+		`time`	
+		[+]
+			1500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		10000	
+		[physical attack]
+		[%]
+			20.0
+		[magical attack]
+		[%]
+			20.0
+	[/APPENDAGE]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[>]
+			240
+	[/CHECKUP]
+	[IF]
+		`time`	
+		[+]
+			1500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DELETE APPENDAGE]
+		10000	
+		[physical attack]
+		[%]
+			20.0
+		[magical attack]
+		[%]
+			20.0
+	[/DELETE APPENDAGE]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[DIM]
+		`damage`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`damage`	
+		[=]
+			`damage`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[IF]
+		`damage`	
+		[>=]
+			7
+	[/IF]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

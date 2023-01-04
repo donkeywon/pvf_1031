@@ -1,0 +1,49 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`check random()`	50	100
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`sha`
+			[true]
+		
+			[think]
+				[void]
+					`check random()`	50	100
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`sha_ex`
+					[true]
+					[return]
+						-1
+					[false]
+					[return str]
+						`sha_ex`
+				[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[false]
+	[return str]
+		`sha`
+	[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`ras`
+		[true]
+		[return]
+			-1
+		[false]
+		[return str]
+			`ras`
+	[/think]
+	[/think]
+[/ai pattern]

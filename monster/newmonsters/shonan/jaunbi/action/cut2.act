@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/cut.ani`
+	[SUB ANI]
+		`../animation/weapon/cut.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`你的气息很紊乱！`	0	20
+		`再小心也没用！`	0	20
+	[/SPEECH]
+	[SOUND]
+		`R_WEAPONM_ATK_03`	3
+		`DGUARDIAN_ATK_1`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10497
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			180	0	70
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

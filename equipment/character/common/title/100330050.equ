@@ -1,0 +1,208 @@
+#PVF_File
+
+[name]
+	`生命之神的荣耀[白金]`
+
+[name2]
+	``
+
+[explain]
+	`攻击时， 有1%%的几率使自身增加30点力量、 20点体力、 5%%的攻击速度和移动速度， 效果持续30秒。 (消耗1个无色小晶块)
+施放技能时， 有1%%的几率使自身增加30点力量、 20点体力、 5%%的攻击速度和移动速度， 效果持续30秒； 但在决斗场中， 只能持续15秒。 (消耗1个无色小晶块； 冷却时间为60秒)`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[physical attack]
+	30
+
+[physical defense]
+	20
+
+[attack speed]
+	30
+
+[cast speed]
+	10
+
+[move speed]
+	30
+
+[HP MAX]
+	200
+
+[MP regen speed]
+	15
+
+[physical critical hit]
+	3
+
+[dark attack]
+	3
+
+[fire attack]
+	3
+
+[light attack]
+	3
+
+[water attack]
+	3
+
+[icon]
+	`Item/Title/title.img`	185
+
+[equipment type]
+	`[title name]`	1
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/empire_redplatinum.ani`
+[/custom animation]
+
+[if]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	1
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	20
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[if]
+	[cooltime]
+		45000
+	[casting]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	1
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	20
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	1
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	20
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	1
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	20
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[room list move speed rate]
+	0.15
+
+[icon mark]
+	`Item/IconMark.img`	64

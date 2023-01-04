@@ -1,0 +1,146 @@
+#PVF_File
+
+[name]
+	`巫师的诅咒`
+
+[name2]
+	`A Curse Wand Of The Shaman`
+
+[basic explain]
+	`暗属性攻击时， 有3%%的几率使敌人进入失明状态。`
+
+[detail explain]
+	`暗属性攻击时， 有3%%的几率使敌人进入失明状态3秒； 失明状态下的敌人， 将减少90%%视野和20%%命中率。 (若敌人高于Lv72， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	75
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	71
+
+[magical attack]
+	50
+
+[attack speed]
+	-100
+
+[price]
+	120000
+
+[repair price]
+	100800
+
+[value]
+	96000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	577	536
+
+[equipment magical attack]
+	821	764
+
+[separate attack]
+	425	288
+
+[magical critical hit]
+	5
+
+[skill levelup]
+	`[thief]`	37	2
+	`[thief]`	40	2
+[/skill levelup]
+
+[dark attack]
+	12
+
+[icon]
+	`Item/weapon/thief/wand.img`	78
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	13	3
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2100
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		3000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`blind`	72	90	20
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

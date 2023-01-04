@@ -1,0 +1,52 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/DamageCH.ani`
+	[SUB ANI]
+		`../Animation/Propeller/Damage1.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`SPINNER_ON`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`机器恢复正常了……`
+	[REMOVE LAYER]
+		0
+	[REMOVE LAYER]
+		1
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`DropABomb.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		1
+		`ShootUp.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		2
+		`ShootUp_Stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`Move.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`Damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`Damage2.act`
+[/BEHAVIOR]

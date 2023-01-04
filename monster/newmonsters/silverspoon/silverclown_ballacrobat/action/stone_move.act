@@ -1,0 +1,55 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Ball/Stone_Move.ani`
+	[SUB ANI]
+		`../Animation/Ball/Move_RollingBall.ani`	0	-1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	0	1	1	1	1	0	0	0	0	1
+	[/RANDOM SELECT]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	1	1	1	1	1	1	2	1	2
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ADD CATEGORY]
+	[FIXTURE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[REMOVE CATEGORY]
+	[FIXTURE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+		[RANDOM SELECT]
+			10	0	-10	25	-25	0
+		[/RANDOM SELECT]
+		[Y AXIS]
+		[RANDOM SELECT]
+			-20	-5	0	5	10	0	-20	15
+		[/RANDOM SELECT]
+	[/SET SPEED]
+[/BEHAVIOR]

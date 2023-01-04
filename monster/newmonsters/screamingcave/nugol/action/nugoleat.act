@@ -1,0 +1,119 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/NugolEat.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS INDEX]
+			61147
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`eat`	
+		[>=]
+			10
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[COLOR CHANGE EFFECT]
+		[CHANGE SIZE START]
+			100
+		[CHANGE SIZE END]
+			150
+		[CHANGE TIME]
+			1000
+		[LIFE TIME]
+			0
+	[/COLOR CHANGE EFFECT]
+	[APPENDAGE]
+		0	
+		[equipment physical attack]
+		[%]
+			20.0
+		[equipment physical defense]
+		[%]
+			20.0
+		[hp max]
+		[%]
+			100.0
+		[equipment magical attack]
+		[%]
+			20.0
+		[equipment magical defense]
+		[%]
+			20.0
+	[/APPENDAGE]
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		10
+		`LaserSpit2.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		12
+		`LaserSpit.act`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`eat`	
+		[=]
+			`eat`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		10
+	[%]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`eat`	
+		[=]
+			0
+	[/DIM]
+	[TRIGGER]
+		2
+	[ON]
+[/BEHAVIOR]

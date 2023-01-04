@@ -1,0 +1,57 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/explodefloor.ani`
+	[SUB ANI]
+		`../Animation/explodefloor_l.ani`	0	1
+		`../Animation/explodeEX.ani`	0	1
+		`../Animation/explodefloor_l2.ani`	0	1
+		`../Animation/explodefloor_d.ani`	0	1
+		`../Animation/explodeB.ani`	0	11
+	[/SUB ANI]
+	[SOUND]
+		`BERIAS_LAND_CRACK`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		5	300
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16007
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			76
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

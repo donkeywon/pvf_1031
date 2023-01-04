@@ -1,0 +1,95 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`enemy number of in attack area()`	200	0	400	-100
+		[true]
+	
+		[think]
+			[last result]
+				`>=`	3.0
+			[true]
+			[return]
+				2
+			[false]
+		
+			[think]
+				[void]
+					`enemy number of in attack area()`	200	0	100	100
+				[true]
+			
+				[think]
+					[last result]
+						`>=`	3.0
+					[true]
+					[return]
+						1
+					[false]
+				
+					[think]
+						[void]
+							`enemy number of in attack area()`	200	0	-100	400
+						[true]
+					
+						[think]
+							[last result]
+								`>=`	3.0
+							[true]
+							[return]
+								0
+							[false]
+						
+							[think]
+								[void]
+									`enemy number of in attack area()`	500	-200	400	-100
+								[true]
+							
+								[think]
+									[last result]
+										`>=`	3.0
+									[true]
+									[return]
+										5
+									[false]
+								
+									[think]
+										[void]
+											`enemy number of in attack area()`	500	-200	100	100
+										[true]
+									
+										[think]
+											[last result]
+												`>=`	3.0
+											[true]
+											[return]
+												4
+											[false]
+										
+											[think]
+												[void]
+													`enemy number of in attack area()`	500	-200	400	-100
+												[true]
+											
+												[think]
+													[last result]
+														`>=`	3.0
+													[true]
+													[return]
+														3
+													[false]
+													[import ai]
+														`normal.ai`
+												[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

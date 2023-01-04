@@ -1,0 +1,215 @@
+#PVF_File
+
+[name]
+	`阎王的气息[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时以 3%% 的机率让敌人陷入诅咒状态
+诅咒状态的敌人攻击时力量增加72，物理暴击增加7%% 
+
+无法进行交易，合成和分解，可以强化。`
+
+[detail explain]
+	`攻击时以3%%的机率在8秒内让敌人陷入诅咒状态，力量减少72，体力减少72，智能减少72，精神力减少72。 (高于Lv69的对象得到的机率减少，低于Lv69的对象则会增加。)
+诅咒状态的敌人攻击时10秒内力量增加 72，物理暴击增加7%%
+
+无法进行交易，合成和分解，可以强化。`
+
+[flavor text]
+	`死人的气息..`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	65
+
+[physical attack]
+	46
+
+[attack speed]
+	100
+
+[price]
+	124200
+
+[repair price]
+	104328
+
+[value]
+	99360
+
+[equipment physical attack]
+	687	634
+
+[equipment magical attack]
+	621	574
+
+[separate attack]
+	389	264
+
+[icon]
+	`Item/weapon/fighter/bglove.img`	53
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	9	5
+
+[layer variation]
+	2791
+	`bglovec1`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	2792
+	`bglovec2`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	651
+	`bgloveb1`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	652
+	`bgloveb2`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	9	5
+
+[layer variation]
+	2151
+	`at_bglovea1`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	651
+	`at_bgloveb1`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2791
+	`at_bglovec1`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	202
+	`at_bgloved2`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[if]
+	[cooltime]
+		12000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[duration]
+		8000
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`curse`	70	72	72	72	72
+[/then]
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		1
+	[target active status]
+		`curse`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[probability]
+		20
+	[stat]
+		`physical attack`
+		`+`	72
+	[stat]
+		`physical critical hit rate`
+		`+`	7
+[/then]
+
+[impossible contents]
+	`disjoint`
+	`gift`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

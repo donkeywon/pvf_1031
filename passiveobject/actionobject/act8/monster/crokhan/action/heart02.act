@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/heartbreak02.ani`
+	[SOUND]
+		`NANOO_HEART_DMG`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/heartdust.ptl`	0	0	20
+	[PARTICLE]
+		`../particle/heartdust.ptl`	20	0	0
+	[PARTICLE]
+		`../particle/heartdust.ptl`	-20	0	0
+[/BEHAVIOR]

@@ -1,0 +1,114 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Rage.ani`
+	[SUB ANI]
+		`../Animation/Rage_aura.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		4
+	[FRAME]
+		2	2
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[RESET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			400
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			50
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Z AXIS]
+			-800
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			800
+	[/SET SPEED]
+[/BEHAVIOR]

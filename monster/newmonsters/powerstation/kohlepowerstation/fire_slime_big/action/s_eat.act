@@ -1,0 +1,99 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/S_Eat.ani`
+	[SUB ANI]
+		`../Animation/S_Eat_High.ani`	0	-2
+		`../Animation/S_Eat_Bone.ani`	0	-1
+	[/SUB ANI]
+	[SPEECH]
+		`火团将吞噬一切！`	17	30
+	[/SPEECH]
+	[SOUND]
+		`B_FIRESLIME_FLOOD`	5
+		`B_FIRESLIME_SKILL_02`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			400
+		[Z AXIS]
+			500
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			100
+		[Z AXIS]
+			-100
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	500
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Z AXIS]
+			-800
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]

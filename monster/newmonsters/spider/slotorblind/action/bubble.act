@@ -1,0 +1,60 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Bubble.ani`
+	[SOUND]
+		`FLASK_USE`	7
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			48014
+		[PARTICLE FILENAME]
+			`../particle/bubble.ptl`
+		[LEVEL]
+			41
+		[POS]
+		[RANDOM]
+			20	128
+		[RANDOM]
+			-40	40
+		[RANDOM]
+			30	90
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

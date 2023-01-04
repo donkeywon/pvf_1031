@@ -1,0 +1,104 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack1.ani`
+	[SUB ANI]
+		`../animation/effect/jin_charge_spear.ani`	0	0
+		`../animation/weapon/Attack1.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`岳家枪法 - 龙武枪！`	2	30
+	[/SPEECH]
+	[SOUND]
+		`R_WEAPONM_ATK_05`	2
+		`R_WEAPONM_ATK_05`	4
+		`R_WEAPONM_ATK_05`	6
+		`HWIGO_SPEAR_01`	2
+		`HWIGO_SPEAR_01`	4
+		`HWIGO_SPEAR_01`	6
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			200
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CHANGE ATTACKINFO]
+		`../AttackInfo/Attack1_1.atk`
+[/BEHAVIOR]

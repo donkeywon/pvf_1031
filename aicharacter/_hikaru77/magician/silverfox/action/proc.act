@@ -1,0 +1,37 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/proc.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		1	1
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61264
+		[LEVEL]
+			0
+		[POS]
+			80	80	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61264
+		[LEVEL]
+			0
+		[POS]
+			-80	-80	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

@@ -1,0 +1,25 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/damage2.ani`
+	[SUB ANI]
+		`../Animation/Damage2_Glow.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`R_HIT_WOOD`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/damage.ptl`	0	0	50
+[/BEHAVIOR]

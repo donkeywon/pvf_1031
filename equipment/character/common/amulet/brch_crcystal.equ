@@ -1,0 +1,103 @@
+#PVF_File
+
+[name]
+	`(旧) 碎裂的水晶胸坠`
+
+[name2]
+	`Cracked Crystal Brooch`
+
+[grade]
+	33
+
+[rarity]
+	0
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[free]`
+
+[minimum level]
+	33
+
+[price]
+	19800
+
+[repair price]
+	15568
+
+[value]
+	14011
+
+[equipment magical defense]
+	2560	2560
+
+[icon]
+	`Item/IconAcc.img`	30
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	16
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[possible kiri protect]
+
+[if]
+	[cooltime]
+		40000
+	[stat change]
+		`hp`
+		`<=`
+		`%`	20
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[restore]
+		`hp`
+		`%`	10	0
+	[appendage]
+		58
+[/then]
+
+[if]
+	[cooltime]
+		500
+	[my appendage]
+		58
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		2
+	[restore]
+		`hp`
+		`%`	1	0
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	62

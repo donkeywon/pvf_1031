@@ -1,0 +1,79 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/IsadoraSun.ani`
+	[SUB ANI]
+		`../Animation/IsadoraSun2.ani`	0	0
+		`../Animation/IsadoraSun_Sub.ani`	0	0
+		`../Animation/IsadoraSun_Sub2.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`BURN_VINE`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		3
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			10
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			39010
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	5
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+	[Z AXIS]
+		-50
+	[SET SPEED]
+	[X AXIS]
+		50
+[/BEHAVIOR]

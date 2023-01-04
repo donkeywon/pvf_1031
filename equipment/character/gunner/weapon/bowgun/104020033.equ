@@ -1,0 +1,228 @@
+#PVF_File
+
+[name]
+	`星芒珠之魂`
+
+[basic explain]
+	`前冲攻击时， 可以增加100%%的移动速度， 效果持续0.5秒。 (在决斗场中无效)
+攻击时， 有2%%的几率召唤出3个蓝色灵魂球， 但需要消耗2个无色小晶块。 (在决斗场中无效)
+无法进行分解。`
+
+[detail explain]
+	`前冲攻击时， 可以增加100%%的移动速度， 效果持续0.5秒。 (冷却时间7秒；决斗场内增加10%%的移动速度)
+攻击时， 有2%%的几率消耗2个无色小晶块， 召唤出3个蓝色灵魂球。 (冷却时间30秒)
+无法进行分解。`
+
+[grade]
+	74
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[physical attack]
+	49
+
+[magical attack]
+	25
+
+[attack speed]
+	20
+
+[move speed]
+	30
+
+[stuck]
+	-1
+
+[need material]
+	3338	670
+
+[repair price]
+	99456
+
+[value]
+	94720
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	554	506
+
+[equipment magical attack]
+	616	562
+
+[separate attack]
+	420	284
+
+[physical critical hit]
+	3
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/bowgun/bowgun.img`	84
+
+[field image]
+	`Item/field_weapon.img`	5
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	24	0
+
+[layer variation]
+	2790
+	`bowgunc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`bowgunb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	24	0
+
+[layer variation]
+	2790
+	`at_bowgunc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_bowgunb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BOWGUN_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`bowgun`
+
+[cool time]
+	10000
+
+[routing priority]
+	`gunner`	4
+	`at gunner`	4
+[/routing priority]
+
+[if]
+	[module]
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[dead tower]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		7000
+	[set my state]
+		1
+	[my state]
+		`dash attack`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		500
+	[probability]
+		100
+	[stat]
+		`move speed`
+		`+`	1000
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		7000
+	[set my state]
+		1
+	[my state]
+		`dash attack`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		500
+	[probability]
+		100
+	[stat]
+		`move speed`
+		`+`	100
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[consume item]
+		3037	2
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[passive object]
+		11179	30	0	0	99	0	``
+		11179	0	50	0	99	0	``
+		11179	0	-50	0	99	0	``
+	[/passive object]
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[icon mark]
+	`Item/IconMark.img`	66

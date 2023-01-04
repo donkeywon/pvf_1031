@@ -1,0 +1,37 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/mukuobj.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[ZPOS]
+		[<]
+			50
+		[DISTANCE]
+		[<=]
+			500
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[MUCU LIMIT CONTROL]
+		50000
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SYMBOL]
+		3
+[/BEHAVIOR]

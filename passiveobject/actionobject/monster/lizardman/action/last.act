@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/dummy.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[ON SET ACTION]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61128
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		100
+	[%]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+	[SET ACTION]
+	[ATTACK]
+		10
+	[NOW]
+[/BEHAVIOR]

@@ -1,0 +1,45 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Super_Fire.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1000	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		8
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8399
+		[PARTICLE FILENAME]
+			`../Particle/Oblique_Missile.ptl`
+		[LEVEL]
+			60
+		[POS]
+			110	0	77
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

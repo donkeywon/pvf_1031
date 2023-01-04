@@ -1,0 +1,69 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack1.ani`
+	[SUB ANI]
+		`../animation/attack1_w.ani`	0	1
+		`../animation/attack1_w1.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`你只会这样跑来跑去吗？`	2	8
+		`哼……简直像个菜鸟！`	2	8
+	[/SPEECH]
+	[SOUND]
+		`ENJO_SWISH_01`	0
+		`R_ENJO_ATK_02`	3
+		`ENJO_SWISH_02`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw2`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw2`	
+		[=]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[IF]
+		`throw2`	
+		[>=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		5
+	[END]
+[/BEHAVIOR]

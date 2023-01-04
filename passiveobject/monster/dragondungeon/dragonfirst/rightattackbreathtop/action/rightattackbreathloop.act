@@ -1,0 +1,166 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Loop/BreathHP_17_neck.ani`
+	[SUB ANI]
+		`../Animation/Loop/BreathHP_16_neck.ani`	0	1
+		`../Animation/Loop/BreathHP_15_neck.ani`	0	2
+		`../Animation/Loop/BreathHP_14_neck.ani`	0	3
+		`../Animation/Loop/BreathHP_13_neck.ani`	0	4
+		`../Animation/Loop/BreathHP_06_head.ani`	0	5
+		`../Animation/Loop/BreathHP_05_head.ani`	0	6
+		`../Animation/Loop/BreathHP_04_head.ani`	0	7
+		`../Animation/Loop/BreathHP_03_headhorn.ani`	0	8
+		`../Animation/Loop/BreathHP_Effect_0_Breath.ani`	0	9
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		4	2000
+	[SET SPEED]
+		[X AXIS]
+			-700
+		[Y AXIS]
+			-100
+	[/SET SPEED]
+	[DIM]
+		`Reset`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[DIM]
+		`BottomCreateTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SHAKING]
+		4	2000
+	[SET SPEED]
+		[X AXIS]
+			-700
+	[/SET SPEED]
+	[DIM]
+		`Reset`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[DIM]
+		`BottomCreateTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[IS END MAP]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`BottomCreateTime`	
+		[+]
+			200
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54013
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-80	0	0
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`BottomCreateTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`Reset`	
+		[+]
+			200
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+	[DIM]
+		`Reset`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[PASSIVE OBJECT]
+		[/IS OBJECT TYPE]
+		[IS INDEX]
+			54091
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[NOW]
+[/BEHAVIOR]

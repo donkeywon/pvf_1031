@@ -1,0 +1,33 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/5Bbatta_Ready.ani`
+	[SPEECH]
+		`受死吧`	10	100
+	[/SPEECH]
+	[SUB ANI]
+		`../Animation/Effect/5Bbatta_Ready_Ef.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`SPIRE_UP`	7
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`嗯. 成功了。`
+	[SHAKING]
+		3	300
+	[SET ACTION]
+	[ATTACK]
+		1
+	[END]
+[/BEHAVIOR]

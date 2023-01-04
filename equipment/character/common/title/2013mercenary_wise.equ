@@ -1,0 +1,100 @@
+#PVF_File
+
+[name]
+	`贤明的佣兵`
+
+[explain]
+	`攻击时有3%机率30秒之间智能、精神+20，施放速度、移动速度+2%。`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[equipment magical attack]
+	10	7
+
+[separate attack]
+	15	10
+
+[magical attack]
+	20
+
+[magical defense]
+	20
+
+[cast speed]
+	20
+
+[move speed]
+	20
+
+[stuck]
+	-2
+
+[HP MAX]
+	200
+
+[MP MAX]
+	200
+
+[magical critical hit]
+	2
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`magical attack`
+		`+`	20
+	[stat]
+		`magical defense`
+		`+`	20
+	[stat]
+		`cast speed`
+		`+`	20
+	[stat]
+		`move speed`
+		`+`	20
+[/then]
+
+[icon]
+	`Item/Title/title_tw.img`	22
+
+[custom animation]
+	`TitleAnimation/mercenary_wise.ani`
+[/custom animation]
+
+[icon mark]
+	`Item/IconMark.img`	64

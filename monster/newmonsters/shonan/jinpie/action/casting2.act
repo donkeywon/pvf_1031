@@ -1,0 +1,101 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Casting2.ani`
+	[SUB ANI]
+		`../animation/skill_eff/Shoot_kick2.ani`	0	1
+		`../animation/skill_eff/Shoot_kick.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`赫！`	1	10
+		`咿呀！`	1	10
+	[/SPEECH]
+	[SOUND]
+		`NENKWON_ATK_02_2`	3
+		`SKASA_ICEWIND_02`	5
+		`SKASA_ICEWIND_02`	8
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			-80
+		[Y AXIS]
+		[RANDOM SELECT]
+			-50	50
+		[/RANDOM SELECT]
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9928
+		[PARTICLE FILENAME]
+			`../Particle/throw.ptl`
+		[LEVEL]
+			38
+		[POS]
+			80	0	80
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9928
+		[PARTICLE FILENAME]
+			`../Particle/throw.ptl`
+		[LEVEL]
+			38
+		[POS]
+			70	0	100
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Y AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

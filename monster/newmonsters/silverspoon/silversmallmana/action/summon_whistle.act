@@ -1,0 +1,71 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Summon_Whistle.ani`
+	[SOUND]
+		`WHISTLE`	2
+		`DWARFSILVER_SKILL_04`	6
+	[/SOUND]
+	[SPEECH]
+		`发现紧急情况！`	0	10
+		`哔~~~~~哔！！`	3	100
+	[/SPEECH]
+	[SUB ANI]
+		`../Animation/Whistle_eff.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61462
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			3000
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		12
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9016	9017
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			3000
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND DO BEHAVIOR]
+	[ME]
+		0
+[/BEHAVIOR]

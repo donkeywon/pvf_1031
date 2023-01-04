@@ -1,0 +1,27 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Dash.ani`
+	[SUB ANI]
+		`../Animation/weapon1/Dash.ani`	0	0
+		`../Animation/ware/Dash.ani`	0	0
+		`../Animation/weapon2/Dash.ani`	0	-1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			500
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

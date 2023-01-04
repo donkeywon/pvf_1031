@@ -1,0 +1,157 @@
+#PVF_File
+
+[ambient]
+	[room list]
+		`我这是在对牛弹琴呀~~`
+		`大眼瞪小眼中……`
+		`主人发呆的样子还挺迷人哟~`	
+		[in elven gard]
+			`好像闻到了新鲜青草的味道哦！`
+		[/in elven gard]
+		[in alfhlyra]
+			`这儿真是个伸手不见脚趾的地方啊~~`
+		[/in alfhlyra]
+		[in stom pass]
+			`哎哟~鼻涕都冻成冰条啦~~`
+		[/in stom pass]
+	[/room list]
+	[main game]
+		[fill point under]
+			20
+			`好饿啊~~牛蹄都抬不起来了~~`
+			`好饿啊~~牛蹄都抬不起来了~~`
+			`好饿啊~~牛蹄都抬不起来了~~`
+		[/fill point under]
+		[enemies alive]
+			[hits over]
+				20
+				`看在眼里，疼在心里啊~~`
+				`主人疼不疼~我来给你揉揉~~`
+			[/hits over]
+			[hits under]
+				21
+				`有我小牛在，好运自然来！`
+				`哇，主人今天的状态很不错哦~`
+			[/hits under]
+		[/enemies alive]
+		[enemies destroyed]
+		[rank over]
+			`b`
+			`啦啦~奖励主人一个飞吻！~~`
+			`牛的主人也是很牛滴！~~`
+		[/rank over]
+		[rank under]
+			`b`
+			`下次要取得更好的成绩~`
+			`别灰心~~下回再接再厉！~~`
+		[/rank under]
+	[/main game]
+[/ambient]
+
+[trigger]
+	[room list]
+		[renamed]
+			`憨憨想换个更萌的名字！`
+		[/renamed]
+		[pop random]
+			40	
+			[call the name]
+				`哞！~哞！~`
+			[/call the name]
+		[/pop random]
+		[pop random]
+			30	
+			[equip]
+				`超萌小牛牛闪亮现身！~`
+				`我来为主人出力~~`
+			[/equip]
+		[/pop random]
+		[pop random]
+			50	
+			[level up]
+				`我才不憨呢，我这么萌！~`
+				`我是不是很给力呀~`
+			[/level up]
+		[/pop random]
+		[pop random]
+			50	
+			[character level up]
+				`哦耶！主人好棒！`
+			[/character level up]
+		[/pop random]
+		[evolution]
+			`小牛正在茁壮成长！`
+		[/evolution]
+		[eat feed]
+			`好好吃！~嘴里都快塞不下了~~`
+		[/eat feed]
+	[/room list]
+	[main game]
+		[eat feed]
+			`吧唧~~吧唧~~吧唧~~`
+			`大草原的美味气息~~~`
+		[/eat feed]
+		[none feed]
+			`饿得我肚皮贴背心啦~~`
+		[/none feed]
+		[end buff]
+			`减肥什么的~~最讨厌了啦！~~`
+		[/end buff]
+		[dying]
+			`有吃的再喊我出来啊，主人……`
+		[/dying]
+		[using overskill]
+			``
+			`我发起狠来~连我自己都感到害怕！`
+		[/using overskill]
+		[pop random]
+			40	
+			[skill gauge full]
+				`锋利的牛角已经准备好了！`
+				`我已经准备好了~~主人~~`
+			[/skill gauge full]
+		[/pop random]
+		[pop random]
+			40	
+			[over skill gauge full]
+				`憋大招~~~憋得我都快爆掉了~`
+				``
+			[/over skill gauge full]
+		[/pop random]
+		[over skill waiting]
+			`我要耐心等待时机……`
+			`我的眼神可是很有杀气的……`
+		[/over skill waiting]
+		[call the name]
+			`哞！~哞！~`
+		[/call the name]
+		[pop random]
+			40	
+			[equip]
+				`超萌小牛牛闪亮现身！~`
+				`我来为主人出力~~`
+			[/equip]
+		[/pop random]
+		[pop random]
+			50	
+			[level up]
+				`我才不憨呢，我这么萌！~`
+				`我是不是很给力呀~`
+			[/level up]
+		[/pop random]
+		[pop random]
+			50	
+			[character level up]
+				`哦耶！主人好棒！`
+			[/character level up]
+		[/pop random]
+		[evolution]
+			`小牛正在茁壮成长！`
+		[/evolution]
+	[/main game]
+	[pvp]
+		[press creature button]
+			``
+		[/press creature button]
+	[/pvp]
+[/trigger]

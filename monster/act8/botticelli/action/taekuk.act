@@ -1,0 +1,129 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Taekuk.ani`
+	[SUB ANI]
+		`../Animation/Dust3.ani`	0	0
+		`../Animation/Dust4.ani`	0	0
+		`../Animation/Fire/Taekuk.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`嘿，躲不开了吧！`	6	60
+	[/SPEECH]
+	[SOUND]
+		`VOTI_SKILL_02`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			400
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[IF]
+		`throw2`	
+		[=]
+			0
+	[/IF]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw2`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`throw2`	
+		[=]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			-1
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			500
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+	[TRIGGER]
+		2
+	[RESET]
+	[SET ACTION]
+	[ATTACK]
+		20
+	[NOW]
+[/BEHAVIOR]

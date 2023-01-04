@@ -1,0 +1,59 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Summon.ani`
+	[SUB ANI]
+		`../Animation/Summon_High.ani`	0	-4
+		`../Animation/Summon_e2.ani`	0	-3
+		`../Animation/Summon_e1.ani`	0	-2
+		`../Animation/Summon_Bone.ani`	0	-1
+	[/SUB ANI]
+	[SPEECH]
+		`颤抖吧！`	4	30
+	[/SPEECH]
+	[SOUND]
+		`B_FIRESLIME_FLOOD`	5
+		`R_B_FIRESLIME_SKILL_01`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			63048
+		[LEVEL]
+			0
+		[POS]
+			150	10	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			63048
+		[LEVEL]
+			0
+		[POS]
+			200	-5	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

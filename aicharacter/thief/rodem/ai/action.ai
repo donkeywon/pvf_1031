@@ -1,0 +1,55 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check key cooltime]
+			`atk1`
+		[true]
+		[import ai]
+			`Action_main.ai`
+		[false]
+	
+		[think]
+			[void]
+				`number of in attack area()`	4000.0	4000.0	800.0	800.0
+				`all`
+				`summon`	61540
+		
+			[think]
+				[last result]
+					`<`	1.0
+				[true]
+			
+				[think]
+					[void]
+						`number of in attack area()`	4000.0	4000.0	800.0	800.0
+						`all`
+						`passive object`	9249
+				
+					[think]
+						[last result]
+							`<`	1.0
+						[true]
+					
+						[think]
+							[hp]
+								`%>`	70
+							[true]
+							[import ai]
+								`Action_main.ai`
+							[false]
+							[return]
+								0
+						[/think]
+	[false]
+	[import ai]
+		`Action_main.ai`
+	[/think]
+	[/think]
+	[false]
+	[import ai]
+		`Action_main.ai`
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

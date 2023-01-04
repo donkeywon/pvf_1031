@@ -1,0 +1,160 @@
+#PVF_File
+
+[name]
+	`戮蛊的哀鸣炮`
+
+[name2]
+	`Nugol Muzzle`
+
+[basic explain]
+	`[爆头一击]、 [激光炮]、 [散弹枪]攻击力 +25%%
+[爆头一击]、 [激光炮]、 [散弹枪]攻击时， 有30%%的几率使敌人进入石化状态。`
+
+[detail explain]
+	`[爆头一击]、 [激光炮]、 [散弹枪]攻击力 +25%%
+[爆头一击]、 [激光炮]、 [散弹枪]攻击时， 有30%%的几率使敌人进入石化状态3秒； 石化状态解除时， 使敌人受到1000点伤害。 (若敌人高于Lv61， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	65
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	61
+
+[physical attack]
+	65
+
+[price]
+	117000
+
+[repair price]
+	98280
+
+[value]
+	93600
+
+[equipment physical attack]
+	671	611
+
+[equipment magical attack]
+	403	366
+
+[separate attack]
+	365	246
+
+[icon]
+	`item/weapon/gunner/hcannon.img`	38
+
+[field image]
+	`Item/field_weapon.img`	4
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	4	1
+
+[layer variation]
+	2790
+	`hcanc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`hcanb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	4	1
+
+[layer variation]
+	2790
+	`at_hcanc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_hcanb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2800
+
+[item group name]
+	`hcannon`
+
+[cool time]
+	10000
+
+[if]
+	[skill]
+		`gunner`	5
+		`gunner`	39
+		`gunner`	48
+		`at gunner`	5
+		`at gunner`	39
+		`at gunner`	48
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[probability]
+		30
+	[active status]
+		`stone`	61	1300
+[/then]
+
+[skill data up]
+	`[gunner]`	5	`[all]`	`[level]`	0	`%`	25
+	`[gunner]`	39	`[all]`	`[level]`	0	`%`	25
+	`[gunner]`	39	`[all]`	`[level]`	1	`%`	25
+	`[gunner]`	48	`[all]`	`[level]`	0	`%`	25
+	`[at gunner]`	5	`[all]`	`[level]`	0	`%`	25
+	`[at gunner]`	39	`[all]`	`[level]`	0	`%`	25
+	`[at gunner]`	39	`[all]`	`[level]`	1	`%`	25
+	`[at gunner]`	48	`[all]`	`[level]`	0	`%`	25
+[/skill data up]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

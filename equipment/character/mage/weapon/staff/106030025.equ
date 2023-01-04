@@ -1,0 +1,196 @@
+#PVF_File
+
+[name]
+	`魔力汲取者[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`施放技能时， 有5%%的几率使自身恢复2%%的MP。
+施放技能时， 有5%%的几率使自身增加75点智力， 效果持续20秒。
+
+无法进行合成和分解。`
+
+[grade]
+	64
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[magical attack]
+	43
+
+[attack speed]
+	-100
+
+[MP MAX]
+	450
+
+[price]
+	102400
+
+[repair price]
+	86016
+
+[value]
+	81920
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	574	526
+
+[equipment magical attack]
+	725	665
+
+[separate attack]
+	360	242
+
+[icon]
+	`Item/weapon/mage/staff.img`	68
+
+[field image]
+	`Item/field_weapon.img`	9
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	11	4
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	11	4
+
+[layer variation]
+	2150
+	`at_staffa`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_staffd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	11	4
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`STAFF_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2400
+
+[item group name]
+	`staff`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		1000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[restore]
+		`mp`
+		`%`	2	0
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		5
+	[stat]
+		`magical attack`
+		`+`	75
+[/then]
+
+[not amplify]
+	1
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

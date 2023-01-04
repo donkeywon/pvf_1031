@@ -1,0 +1,237 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`圣者米歇尔`
+
+[face image]
+	`Monster/MonsterFace.img`	546
+
+[attack sound]
+	``
+
+[appear sound]
+	`MICA_MEET`
+
+[damage sound]
+	`R_NMAUG_DMG`
+
+[die sound]
+	`MICA_DIE`
+
+[ambient sound]
+	``
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	1500
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	200
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	150
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	200
+[/ability category]
+
+[fire resistance]
+	20	20
+
+[water resistance]
+	20	20
+
+[dark resistance]
+	20	20
+
+[light resistance]
+	50	50
+
+[freeze resistance]
+	1000	1000
+
+[stone resistance]
+	1000	1000
+
+[stun resistance]
+	100	100
+
+[blind resistance]
+	100	100
+
+[sleep resistance]
+	100	100
+
+[hold resistance]
+	100	100
+
+[slow resistance]
+	100	100
+
+[curse resistance]
+	100	100
+
+[confuse resistance]
+	100	100
+
+[targeting bonus]
+	90	75	50	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	`[stand]`
+	`[dash]`	0	0	0
+
+[category]
+	`[angel]`
+	`[melee combat]`
+	`[close-tough]`
+[/category]
+
+[set damage check]
+	3000
+
+[hp regen rate]
+	0.0	0.0
+
+[level]
+	70	70
+
+[move speed]
+	1200	1200
+
+[attack speed]
+	1100	1100
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1300	1300
+
+[weight]
+	150000	150000
+
+[lie frame]
+	1	2	3	3	4
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[come in action]
+	`Action/comein.act`	300	300
+
+[last action]
+	`Action/die.act`
+
+[attack action]
+	`action/one.act`
+	`action/two.act`
+	`action/up.act`
+	`action/ducking.act`
+	`action/ducking1.act`
+	`action/swei.act`
+	`action/drive.act`
+	`action/shield.act`
+	`action/spear.act`
+	`action/hammer.act`
+	`action/angel.act`
+	`action/angel_s.act`
+	`action/angel_a.act`
+	`action/angel_st.act`
+	`action/angel_en.act`
+	`action/one1.act`
+	`action/two1.act`
+	`action/up1.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/one.atk`
+	`AttackInfo/two.atk`
+	`AttackInfo/up.atk`
+	``
+	``
+	``
+	`AttackInfo/drive.atk`
+	``
+	``
+	`AttackInfo/hammer.atk`
+	``
+	``
+	``
+	``
+	``
+	`AttackInfo/one.atk`
+	`AttackInfo/two.atk`
+	`AttackInfo/up.atk`
+[/attack info]
+
+[cooltime]
+	3000	3000	5000	5000	5000	5000	100000000	20000	10000	12000	60000	5000	5000	5000	5000	3000	3000	3000
+[/cooltime]
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	1000
+
+[warlike]
+	100
+
+[think term]
+	500
+
+[destination change term]
+	1000
+
+[keep distance with target]
+	150
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

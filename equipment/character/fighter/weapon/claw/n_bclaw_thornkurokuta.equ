@@ -1,0 +1,165 @@
+#PVF_File
+
+[name]
+	`克洛库的利爪`
+
+[name2]
+	`Thorn of Kurokuta`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入随机异常状态。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入随机异常状态， 效果持续7秒。 (若敌人高于Lv35， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	37
+
+[rarity]
+	2
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	35
+
+[physical attack]
+	24
+
+[magical attack]
+	12
+
+[price]
+	51800
+
+[repair price]
+	41440
+
+[value]
+	41440
+
+[equipment physical attack]
+	332	316
+
+[equipment magical attack]
+	332	316
+
+[separate attack]
+	164	109
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[fighter]`	75	1
+	`[at fighter]`	75	1
+[/skill levelup]
+
+[all activestatus resistance]
+	10
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/fighter/claw.img`	17
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	0	1
+
+[layer variation]
+	2790
+	`boneclawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`boneclawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	0	1
+
+[layer variation]
+	2150
+	`at_boneclawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_boneclawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_boneclawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		12600
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[probability]
+		3
+	[active status]
+		`any`	35
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

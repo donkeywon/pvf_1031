@@ -1,0 +1,219 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Grap.ani`
+	[SUB ANI]
+		`../animation/Grap_eff.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`FLU_BITE`	3
+		`FLU_SKILL_02_1`	4
+		`FLU_CATCH`	10
+		`FLU_TEAR`	13
+		`FLU_SKILL_02_2`	13
+	[/SOUND]
+	[SPEECH]
+		`卡！`	4	100
+		`呃~~哦！！`	14	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS GRABABLE]
+			1
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		3
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			`throw`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			140
+		[Y START]
+			-1
+		[Z START]
+			5
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[IF]
+		`throw`	
+		[=]
+			0
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		6
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		7
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		8
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		9
+	[DO BEHAVIOR]
+	[ME]
+		10
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			120
+		[Y START]
+			-1
+		[Z START]
+			80
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[DOWN]
+	[DEFAULT]
+		1
+	[FORCE]
+		10	10
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[bleeding]
+		100	70	10000	8000
+	[RESTORE]
+	[HP]
+		-25
+	[%]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		50	50	50	255	255	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		18	18
+	[DO BEHAVIOR]
+	[ME]
+		11
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[ATTACK]
+		9	0
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		20	20
+	[DO BEHAVIOR]
+	[ME]
+		12
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		9
+	[NOW]
+[/BEHAVIOR]

@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Casting.ani`
+	[SUB ANI]
+		`../Animation/BackEffect/D_Casting.ani`	0	-2
+	[/SUB ANI]
+	[SOUND]
+		`AKARES_SKILL_02`	0
+		` AKARES_SKILL_03`	15
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8721
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[SET SPEED]
+		[X AXIS]
+			-100
+	[/SET SPEED]
+[/BEHAVIOR]

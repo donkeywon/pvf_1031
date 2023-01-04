@@ -1,0 +1,45 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Damage21.ani`
+	[SUB ANI]
+		`../Animation/weapon/Damage21_weapon.ani`	0	10
+		`../Animation/Spirit/Spirit2_damage.ani`	0	5
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[CHARACTER]
+	[GET TARGET]
+		2
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+	[RANDOM SELECT]
+		0	1	2
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10119
+		[PARTICLE FILENAME]
+			`../Particle/Thunder.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]

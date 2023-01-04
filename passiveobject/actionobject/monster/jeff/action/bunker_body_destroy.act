@@ -1,0 +1,44 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Bunker_Body_Destroy.ani`
+	[SUB ANI]
+		`../Animation/Bunker_Bottom2.ani`	0	-1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8238
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			60
+		[POS]
+			0	0	0
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET PASSTYPE]
+	[pass all]
+[/BEHAVIOR]

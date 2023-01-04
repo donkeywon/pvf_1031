@@ -1,0 +1,32 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[hit]
+			1
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`reset`
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	3
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					2
+			[/think]
+	[false]
+	[return]
+		1
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+[/ai pattern]

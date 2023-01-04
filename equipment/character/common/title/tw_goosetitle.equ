@@ -1,0 +1,93 @@
+#PVF_File
+
+[name]
+	`跟鹅一起度过夏天`
+
+[name2]
+	`goose title`
+
+[flavor text]
+	`早安！黄金鹅！活动`
+
+[basic explain]
+	`受攻击时2%%机率发动3秒内移动速度增加100%%`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/title/title_tw.img`	15
+
+[custom animation]
+	`titleanimation/tw_130725_GooseTitle.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[physical attack]
+	15
+
+[physical defense]
+	15
+
+[magical attack]
+	15
+
+[magical defense]
+	15
+
+[anti evil]
+	3
+
+[move speed]
+	40
+
+[jump power]
+	25
+
+[if]
+	[cooltime]
+		40000
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+	[/module]
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		5000
+	[probability]
+		5
+	[stat]
+		`move speed`
+		`+`	1000
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

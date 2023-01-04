@@ -1,0 +1,29 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack1.ani`
+	[SUB ANI]
+		`../Animation/back/Attack1.ani`	0	-8
+		`../Animation/shoes/Attack1.ani`	0	1
+		`../Animation/shirts/Attack1.ani`	0	1
+		`../Animation/pant/Attack1.ani`	0	1
+		`../Animation/hat/Attack1.ani`	0	1
+		`../Animation/back/Attack1-1.ani`	0	2
+		`../animation/Weapon/Attack1.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		2
+	[END]
+[/BEHAVIOR]

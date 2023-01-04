@@ -1,0 +1,28 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Stay1.ani`
+	[SOUND]
+		`R_EMILDIR_SUMMON`	0
+	[/SOUND]
+	[SPEECH]
+		`全部进攻!!`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL OUR TEAM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND MESSAGE]
+	[ETC_COMMAND]
+		1	1	5000
+[/BEHAVIOR]

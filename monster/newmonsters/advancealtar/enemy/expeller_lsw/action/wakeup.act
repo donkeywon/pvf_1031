@@ -1,0 +1,51 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/WakeUp.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[REMOVE CATEGORY]
+	[FIXTURE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`Move.act`
+	[CHANGE ACTION FILE]
+	[STAY]
+		`Stay.act`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		2
+	[END]
+[/BEHAVIOR]

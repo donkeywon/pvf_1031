@@ -1,0 +1,83 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/aura.ani`
+	[SUB ANI]
+		`../animation/reclaim/Aura.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`咳……呃！你敢！！`	1	100
+	[/SPEECH]
+	[SOUND]
+		`BERIAS_SKILL_04`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9171
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			0	0	0
+		[USE OBJECT ZPOS]
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`3stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`3move.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`3damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`3damage2.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`3sit.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`3Attack.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		1
+		`3Attack2.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		2
+		`3casting.act`
+[/BEHAVIOR]

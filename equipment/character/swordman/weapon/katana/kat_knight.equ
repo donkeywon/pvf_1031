@@ -1,0 +1,159 @@
+#PVF_File
+
+[name]
+	`武士战刀`
+
+[name2]
+	`Knight Katana`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入减速状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入减速状态20秒； 减速状态下， 减少10%%的移动速度和攻击速度。 (若敌人高于Lv25， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	27
+
+[rarity]
+	2
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	25
+
+[physical attack]
+	18
+
+[magical attack]
+	27
+
+[attack speed]
+	80
+
+[cast speed]
+	40
+
+[stuck]
+	1
+
+[price]
+	300000
+
+[repair price]
+	30000
+
+[value]
+	30000
+
+[equipment physical attack]
+	239	224
+
+[equipment magical attack]
+	265	248
+
+[separate attack]
+	126	82
+
+[physical critical hit]
+	2
+
+[icon]
+	`Item/weapon/swordman/katana.img`	26
+
+[field image]
+	`Item/FieldImage.img`	11
+
+[equipment type]
+	`[weapon]`	20
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	4	0
+
+[layer variation]
+	2790
+	`katanac`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`katanab`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	4	0
+
+[layer variation]
+	2790
+	`katanac`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`katanab`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`KATANA_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`katana`
+
+[cool time]
+	10000
+
+[medal]
+	1000
+
+[if]
+	[cooltime]
+		32000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[active status]
+		`slow`	25	10	10
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

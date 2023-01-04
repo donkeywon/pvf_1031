@@ -1,0 +1,103 @@
+#PVF_File
+
+[name]
+	`.`
+
+[face image]
+	`Monster/MonsterFace.img`	507
+
+[die effect]
+	0	5	0
+
+[attack sound]
+	`HYUNGTEO_SKILL_02`
+
+[damage sound]
+	`R_SCAVENGER_DMG`
+
+[die sound]
+	`R_SCAVENGER_DIE`
+
+[ambient sound]
+	`SCAVENGER_AMB`
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	1250
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	150
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	200
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	150
+[/ability category]
+
+[category]
+	`[human]`
+	`[beast]`
+	`[close-carefully]`
+[/category]
+
+[level]
+	70	70
+
+[move speed]
+	900	900
+
+[attack speed]
+	1300	1300
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1400	1400
+
+[weight]
+	150000	150000
+
+[lie frame]
+	1	2	3	3	4
+
+[common champion drop item]
+[/common champion drop item]
+
+[waiting action]
+	`Action/buffcheck2.act`
+
+[move action]
+	`Action/buffcheck.act`
+
+[attack action]
+[/attack action]
+
+[cooltime]
+	1500
+[/cooltime]
+
+[attack info]
+[/attack info]
+
+[etc action]
+[/etc action]
+
+[vision]
+	1000
+
+[think term]
+	500
+
+[destination change term]
+	400
+
+[keep distance with target]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+[/ai pattern]

@@ -1,0 +1,43 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Casting.ani`
+	[SUB ANI]
+		`../animation/skill_eff/FullCharge.ani`	0	1
+		`../animation/skill_eff/Shoot.ani`	0	2
+		`../animation/skill_eff/Charge.ani`	0	3
+		`../animation/skill_eff/Cast.ani`	0	4
+	[/SUB ANI]
+	[SPEECH]
+		`来！ 开打了！`	1	10
+		`赫！`	1	10
+	[/SPEECH]
+	[SOUND]
+		`SIZZLE_CREATE`	0
+		`NENKWON_ATK_01_1`	2
+		`SKASA_ICEWIND_02`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9928
+		[PARTICLE FILENAME]
+			`../Particle/throw.ptl`
+		[LEVEL]
+			38
+		[POS]
+			80	0	50
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

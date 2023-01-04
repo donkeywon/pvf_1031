@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/down.ani`
+	[SUB ANI]
+		`../animation/weapon/down_wp.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`我……不想死……`	4	5
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[>=]
+			2
+		[%]
+		[ZPOS]
+		[>=]
+			3
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			-360
+	[/SET SPEED]
+[/BEHAVIOR]

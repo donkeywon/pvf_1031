@@ -1,0 +1,126 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/special_attack.ani`
+	[SPEECH]
+		`呃??……我真的生气了！！`	1	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		4	1000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[LEFT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11153
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[FIX DIRECTION]
+		[RIGHT]
+	[/CREATE PASSIVEOBJECT]
+	[TELEPORT]
+		[POS]
+			1850	265	0
+		[USE MAP POS]
+		[MOVE ME]
+	[/TELEPORT]
+	[NAME HIDE ON]
+	[SET VISIBLITY]
+		0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[NAME HIDE OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			500
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DIRECT DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		5
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			26480
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		5
+	[OFF]
+	[SET VISIBLITY]
+		1
+	[SET FRAME]
+		4
+[/BEHAVIOR]

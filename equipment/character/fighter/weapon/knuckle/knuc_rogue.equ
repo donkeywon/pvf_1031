@@ -1,0 +1,175 @@
+#PVF_File
+
+[name]
+	`(旧) 游荡恶魔`
+
+[name2]
+	`Rogue`
+
+[basic explain]
+	`攻击时， 有2%%的几率使自身增加30%%的物理伤害， 效果持续30秒。
+被攻击时， 有5%%的几率使自身进入混乱状态5秒。`
+
+[grade]
+	37
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	33
+
+[magical attack]
+	27
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[price]
+	59200
+
+[repair price]
+	47360
+
+[value]
+	47360
+
+[equipment physical attack]
+	346	308
+
+[equipment magical attack]
+	419	373
+
+[separate attack]
+	211	140
+
+[icon]
+	`Item/weapon/fighter/knuckle.img`	21
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	7
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	1	7
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		1000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		5000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		5
+	[reduce probability at pvp module]
+		100
+	[active status]
+		`confuse`	33	0
+[/then]
+
+[if]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`equipment physical attack`
+		`%`	30
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

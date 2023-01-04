@@ -1,0 +1,89 @@
+#PVF_File
+
+[name]
+	`终极无色流`
+
+[name2]
+	`Generous Investment`
+
+[explain]
+	`攻击时， 有5%%的几率使自身增加30点力量和智力， 但需要消耗2个无色小晶块。`
+
+[flavor text]
+	`为了未来做投资！ 马上联系我~  --卡妮娜`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	288
+
+[custom animation]
+	`TitleAnimation/generous_investment.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	10
+
+[magical attack]
+	10
+
+[attack speed]
+	10
+
+[cast speed]
+	20
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	2
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`magical attack`
+		`+`	30
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

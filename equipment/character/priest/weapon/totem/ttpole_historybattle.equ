@@ -1,0 +1,139 @@
+#PVF_File
+
+[name]
+	`远古逆袭之天兔图腾`
+
+[name2]
+	`Arneb Bolk TotemPole of Historical Battle`
+
+[basic explain]
+	`攻击时， 有2%%的几率使自身增加30点力量， 效果持续30秒。
+攻击速度 +1%%`
+
+[flavor text]
+	`蕴含远古战争英雄之灵魂的稀贵武器。`
+
+[grade]
+	59
+
+[rarity]
+	2
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[physical attack]
+	67
+
+[attack speed]
+	10
+
+[cast speed]
+	10
+
+[move speed]
+	10
+
+[stuck]
+	-1
+
+[price]
+	82600
+
+[repair price]
+	69384
+
+[value]
+	66080
+
+[equipment physical attack]
+	533	517
+
+[equipment magical attack]
+	457	443
+
+[separate attack]
+	256	173
+
+[skill levelup]
+	`[priest]`	16	1
+	`[priest]`	4	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/totem.img`	40
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[priest]`
+
+[variation]
+	8	0
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	22
+
+[if]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`physical attack`
+		`+`	30
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,32 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[cube item number]
+			`>=`	1
+		[true]
+	
+		[think]
+			[second type]
+				`==`	0
+			[true]
+			[return str]
+				`burn`
+			[false]
+		
+			[think]
+				[void]
+					`check random()`	20	100
+				[true]
+				[return str]
+					`burn`
+				[false]
+				[import ai]
+					`event2.ai`
+			[/think]
+	[/think]
+	[false]
+	[import ai]
+		`event2.ai`
+	[/think]
+[/ai pattern]

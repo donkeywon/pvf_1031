@@ -1,0 +1,82 @@
+#PVF_File
+
+[name]
+	`雷鸣之帕米斯 卡片`
+
+[flavor text]
+	`打雷了， 下雨了， 快收衣服！！`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[free]`
+
+[minimum level]
+	1
+
+[weight]
+	1
+
+[price]
+	10
+
+[icon]
+	`Item/stackable/MonsterCard_icon.img`	177
+
+[field image]
+	`Item/field_material.img`	30
+
+[stackable type]
+	`[material expert job]`	1
+
+[move wav]
+	`PAPER_TOUCH`
+
+[sub type]
+	1
+
+[string data]
+	`Interface/MonsterCard/MonsterCard_image.img`
+	`[pants]`
+[/string data]
+
+[int data]
+	177	58007
+[/int data]
+
+[enchant]
+	[if]
+		[cooltime]
+			90000
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			5000
+		[probability]
+			3
+		[buff]
+			`camoflage`
+	[/then]
+[/enchant]
+
+[stat desc]
+	`被攻击时， 有3%%的几率使自身进入伪装状态， 效果持续5秒。 (冷却时间为90秒)`
+
+[item category]
+	`monster card`
+[/item category]
+
+[icon mark]
+	`Item/IconMark.img`	64

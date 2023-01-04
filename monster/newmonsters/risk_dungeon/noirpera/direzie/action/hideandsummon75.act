@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/HideAndSummon.ani`
+	[SUB ANI]
+		`../Animation/Effect/normal/HideAndSummon.ani`	0	-1
+		`../Animation/Effect/dodge/HideAndSummon.ani`	0	-2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61749
+		[LEVEL]
+			0
+		[POS]
+			100	0	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+	[TELEPORT]
+		[POS]
+			-100	0	0
+		[MOVE ME]
+	[/TELEPORT]
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]

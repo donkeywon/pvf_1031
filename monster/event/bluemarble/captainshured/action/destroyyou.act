@@ -1,0 +1,97 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/MotorCycle/DestroyYou.ani`
+	[SUB ANI]
+		`../Animation/DestroyYou.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`根特那些家伙知道怎么使用机械吗?`	5	30
+	[/SPEECH]
+	[SOUND]
+		`SHURED_SKILL_03`	0
+		`SHURED_ATK`	6
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			60002
+		[LEVEL]
+			0
+		[POS]
+			20	0	0
+		[NO EFFECT]
+		[JUMP OUT]
+			60	0	140
+		[LEFT]
+		[UP]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			60002
+		[LEVEL]
+			0
+		[POS]
+			-20	0	0
+		[NO EFFECT]
+		[JUMP OUT]
+			-40	0	150
+		[LEFT]
+		[UP]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			60002
+		[LEVEL]
+			0
+		[POS]
+			20	30	0
+		[NO EFFECT]
+		[JUMP OUT]
+			40	0	120
+		[LEFT]
+		[UP]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS TEAM]
+			[MONSTER TEAM]
+		[/IS TEAM]
+		[IS INDEX]
+			60002
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		48000	
+		[hp max]
+		[%]
+			500.0
+	[/APPENDAGE]
+	[RESTORE]
+	[HP]
+		500
+	[%]
+[/BEHAVIOR]

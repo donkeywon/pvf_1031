@@ -1,0 +1,66 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/_AutoTile_Destroy_Stay.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[OFF]
+	[TRIGGER]
+	[CUSTOM]
+		12	0
+	[OFF]
+	[TRIGGER]
+	[CUSTOM]
+		13	0
+	[OFF]
+	[TRIGGER]
+	[CUSTOM]
+		14	0
+	[OFF]
+	[TRIGGER]
+	[CUSTOM]
+		15	0
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[CHECK TIME]
+		300
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			90
+		[ZPOS]
+		[<=]
+			5
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[NOW]
+[/BEHAVIOR]

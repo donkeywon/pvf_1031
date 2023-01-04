@@ -1,0 +1,164 @@
+#PVF_File
+
+[window]
+	[type]
+		`popup`
+	[horizontal alignment]
+		`left`
+	[vertical alignment]
+		`middle`
+	[horizontal distance]
+		110
+	[vertical distance]
+		0
+	[size]
+		20	19
+	[title string]
+		`突破黑暗的成长活动`
+	[controls]
+		[ui controls]
+			`[text button]`
+			`0`	96	226	2
+			`Interface/WindowCommon.img`
+			`确认`	4	12	13	14	15
+		[/ui controls]
+		[ui controls]
+			`[board image]`
+			`1`	-3	3	1
+			`Interface/WindowCommon.img`	11	246	222	213	214	215	216	217	218	219	220	221
+		[/ui controls]
+		[ui controls]
+			`[text]`
+			`2`	6	6	1
+			`1. 请试着养育在寄送到邮筒里的%s。
+2. 使用疲劳度时，如使用获得的%s，%s的经验值将会提升。`	9	-1	240	0	0	0	0	230	200	155	
+			[parent]
+				`1`
+		[/ui controls]
+		[ui controls]
+			`[text]`
+			`3`	6	84	1
+			`3. 如%s达到20级，将可以交换成无限制宠物。
+4. 无限制宠物的交换依照宠物的种类，每个帐号只能进行1次，交换时要多加注意。`	9	-1	240	0	0	0	0	230	200	155	
+			[parent]
+				`1`
+		[/ui controls]
+		[ui controls]
+			`[image]`
+			`4`	40	46	1
+			`Interface2/event/GiveGrowCreature/Event_newcharacter.img`	1	4	
+			[parent]
+				`1`
+		[/ui controls]
+		[ui controls]
+			`[image]`
+			`5`	7	164	1
+			`Interface2/event/GiveGrowCreature/Event_newcharacter.img`	1	5	
+			[parent]
+				`1`
+		[/ui controls]
+		[ui controls]
+			`[image]`
+			`6`	2	2	1
+			`Interface2/event/GiveGrowCreature/Event_newcharacter.img`	1	10	
+			[parent]
+				`5`
+		[/ui controls]
+		[ui controls]
+			`[image]`
+			`7`	2	2	1
+			`Interface2/event/GiveGrowCreature/Event_newcharacter.img`	1	11	
+			[parent]
+				`5`
+		[/ui controls]
+		[ui controls]
+			`[image]`
+			`8`	0	0	1
+			`Interface2/event/GiveGrowCreature/Event_newcharacter.img`	1	6	
+			[parent]
+				`5`
+		[/ui controls]
+		[ui controls]
+			`[gauge]`
+			`9`	40	13	1
+			`Interface2/event/GiveGrowCreature/Event_newcharacter.img`	3	-1	7	7	
+			[parent]
+				`5`
+		[/ui controls]
+		[ui controls]
+			`[text button]`
+			`10`	170	7	2
+			`Interface/WindowCommon.img`
+			`交换`	4	12	13	14	15	
+			[parent]
+				`5`
+		[/ui controls]
+		[ui controls]
+			`[animation]`
+			`11`	35	8	1
+			`UI/Event/GiveGrowCreatureWindow/lvmax_eff.ani`	0	
+			[parent]
+				`5`
+		[/ui controls]
+		[ui controls]
+			`[tooltips]`
+			`12`	-50	0	2
+			`10`
+			`%s 20级以上可以交换。`	4	1	180	0	0	
+			[parent]
+				`10`
+		[/ui controls]
+		[ui controls]
+			`[image]`
+			`13`	3	3	1
+			`Interface/WindowCommon.img`	1	57	
+			[parent]
+				`4`
+		[/ui controls]
+		[ui controls]
+			`[text]`
+			`14`	54	7	1
+			`%s 形成时可参加这次的活动。`	9	-1	150	1	0	0	0	255	50	50	
+			[parent]
+				`5`
+		[/ui controls]
+		[ui controls]
+			`[text]`
+			`15`	56	7	1
+			`交易完成。
+参加角色： %s`	9	-1	150	1	0	0	0	65	255	78	
+			[parent]
+				`5`
+		[/ui controls]
+		[ui controls]
+			`[text]`
+			`16`	54	7	1
+			`请开启邮箱/仓库的 %s包。`	9	-1	150	1	0	0	0	65	255	78	
+			[parent]
+				`5`
+		[/ui controls]
+		[ui controls]
+			`[text]`
+			`17`	6	138	1
+			`5. 在达到20级时，必须要点按交换按钮，才可以交换无限制宠物。`	9	-1	240	0	0	0	0	65	255	78	
+			[parent]
+				`1`
+		[/ui controls]
+		[ui controls]
+			`[hyperlinklabel]`
+			`100`	170	206	0	7	100	20	230	200	155	0	0	
+			[parent]
+				`1`
+			[user option]
+				`url link`
+				``	255	240	0
+				``
+			[/user option]
+		[/ui controls]
+		[ui controls]
+			`[image]`
+			`101`	152	208	1
+			`Interface2/UI/EventList/Event_window.img`	1	2
+		[/ui controls]
+	[/controls]
+[/window]

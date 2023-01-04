@@ -1,0 +1,155 @@
+#PVF_File
+
+[name]
+	`痛苦之钉`
+
+[name2]
+	`Nail of Pain`
+
+[basic explain]
+	`攻击时， 有15%%的几率使敌人减少2500点防御力， 效果持续10秒。 `
+
+[grade]
+	68
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	64
+
+[physical attack]
+	45
+
+[magical attack]
+	23
+
+[price]
+	108800
+
+[repair price]
+	91392
+
+[value]
+	87040
+
+[equipment physical attack]
+	644	594
+
+[equipment magical attack]
+	644	594
+
+[separate attack]
+	384	260
+
+[physical critical hit]
+	3
+
+[icon]
+	`Item/weapon/fighter/claw.img`	46
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	5	1
+
+[layer variation]
+	2790
+	`clawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	5	1
+
+[layer variation]
+	2150
+	`at_clawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_clawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_clawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		5000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[probability]
+		15
+	[stat]
+		`equipment physical defense`
+		`+`	-2500
+	[stat]
+		`equipment magical defense`
+		`+`	-2500
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

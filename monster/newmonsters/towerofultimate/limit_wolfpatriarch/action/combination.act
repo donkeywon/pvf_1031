@@ -1,0 +1,123 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/OneTwoOne.ani`
+	[SOUND]
+		`BASHI_ATK2_01`	0
+		`PUNCH12_01`	1
+		`BASHI_ATK2_02`	3
+		`PUNCH12_02`	6
+		`BASHI_ATK2_01`	11
+		`PUNCH12_01`	11
+	[/SOUND]
+	[SPEECH]
+		`哈哈！`	2	100
+		`去死吧！`	6	100
+		`去死吧！`	11	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		13	13
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			200
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			350
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CHANGE ATTACKINFO]
+		`../AttackInfo/SpecialAttack.atk`
+	[SET SPEED]
+		[X AXIS]
+			1000
+	[/SET SPEED]
+[/BEHAVIOR]

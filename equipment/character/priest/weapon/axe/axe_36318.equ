@@ -1,0 +1,142 @@
+#PVF_File
+
+[name]
+	`无锋战斧 [网吧]`
+
+[name2]
+	`找不到代码name2_36318`
+
+[basic explain]
+	`攻击时， 有10%%的几率使自身增加30点力量， 效果持续20秒。
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。`
+
+[grade]
+	24
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	20
+
+[physical attack]
+	19
+
+[attack speed]
+	-80
+
+[stuck]
+	-2
+
+[price]
+	43200
+
+[repair price]
+	34560
+
+[value]
+	34560
+
+[equipment physical attack]
+	312	264
+
+[equipment magical attack]
+	221	187
+
+[separate attack]
+	148	96
+
+[skill levelup]
+	`[priest]`	85	2
+[/skill levelup]
+
+[fire attack]
+	4
+
+[icon]
+	`Item/weapon/priest/axe.img`	15
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	0	8
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[duration]
+		20000
+	[stat]
+		`physical attack`
+		`+`	30
+[/then]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

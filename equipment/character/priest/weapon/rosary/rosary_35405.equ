@@ -1,0 +1,180 @@
+#PVF_File
+
+[name]
+	`玄天诛`
+
+[name2]
+	`Mysterious beads`
+
+[basic explain]
+	`光属性攻击时， 有2%%的几率使队员增加15点光属性强化， 效果持续20秒。
+暗属性攻击时， 有2%%的几率使队员增加15点暗属性强化， 效果持续20秒。
+光属性攻击时， 有10%的几率对敌人附加1200点伤害。`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[magical attack]
+	64
+
+[attack speed]
+	-50
+
+[cast speed]
+	50
+
+[need material]
+	3285	1200
+
+[price]
+	0
+
+[repair price]
+	83328
+
+[value]
+	79360
+
+[equipment physical attack]
+	515	472
+
+[equipment magical attack]
+	658	603
+
+[separate attack]
+	360	243
+
+[magical critical hit]
+	2
+
+[dark attack]
+	10
+
+[light attack]
+	10
+
+[icon]
+	`Item/weapon/priest/rosary.img`	68
+
+[field image]
+	`Item/field_weapon.img`	12
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	4	2
+
+[layer variation]
+	200
+	`rosaryd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`rosaryc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`ROSARY_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`rosary`
+
+[cool time]
+	10000
+
+[if]
+	[element]
+		`light`
+	[attack success]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[appendage]
+		120
+[/then]
+
+[if]
+	[element]
+		`dark`
+	[attack success]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[appendage]
+		119
+[/then]
+
+[if]
+	[element]
+		`light`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		10
+	[add absolute damage]
+		`all`
+		`+`	1200
+[/then]
+
+[routing priority]
+	`priest`	3
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

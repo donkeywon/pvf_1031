@@ -1,0 +1,107 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Change1_1.ani`
+	[SUB ANI]
+		`../Animation/Spirit/Spirit1_change_1.ani`	0	-10
+		`../Animation/weapon/Change1_weapon_1.ani`	0	10
+	[/SUB ANI]
+	[SPEECH]
+		`我真的生气了，后果很严重！！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`Stay2.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`Damage21.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`Damage22.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		`Down2.act`
+	[CHANGE ACTION FILE]
+	[OVERTURN]
+		`Overturn2.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`Sit2.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`Move2.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`Attack2_1.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		1
+		`Pierce2_1.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		2
+		`Summon2_1.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		3
+		`Attack2_1.act`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		11
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		0	
+		[attack speed]
+		[%]
+			60.0
+		[equipment physical attack]
+		[%]
+			60.0
+		[equipment physical defense]
+		[%]
+			60.0
+		[hit recovery]
+		[%]
+			60.0
+		[move speed]
+		[%]
+			40.0
+	[/APPENDAGE]
+[/BEHAVIOR]

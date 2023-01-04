@@ -1,0 +1,67 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/jail.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			300
+		[CHECKED NO]
+		[>]
+			0
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time`	
+		[+]
+			10000
+		[<]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			1022
+		[LEVEL]
+			50
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+	[DESTROY]
+[/BEHAVIOR]

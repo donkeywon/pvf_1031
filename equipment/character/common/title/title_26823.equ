@@ -1,0 +1,126 @@
+#PVF_File
+
+[name]
+	`时间支配者`
+
+[name2]
+	``
+
+[explain]
+	`效果适用与时空之门 - 镇魂曲
+队员的力量 +200
+队员的智力 +200
+队员的HP最大值 +5000
+
+攻击时， 附加10%%的伤害。`
+
+[flavor text]
+	`激活时空之门 - 镇魂曲的勇士的称号。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	3
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	459
+
+[custom animation]
+	`TitleAnimation/timeruler.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[if]
+	[dungeon check]
+		200	201	202	203	204	205	206
+	[/dungeon check]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	200
+	[stat by condition]
+		`magical attack`
+		`+`	200
+	[stat by condition]
+		`hp max`
+		`+`	5000
+[/then]
+
+[if]
+	[dungeon check]
+		200	201	202	203	204	205	206
+	[/dungeon check]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[physical attack]
+	20
+
+[physical defense]
+	20
+
+[magical attack]
+	20
+
+[magical defense]
+	20
+
+[physical critical hit]
+	4
+
+[magical critical hit]
+	4
+
+[move speed]
+	40
+
+[attack speed]
+	40
+
+[cast speed]
+	40
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[icon mark]
+	`Item/IconMark.img`	66

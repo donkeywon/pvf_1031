@@ -1,0 +1,255 @@
+#PVF_File
+
+[name]
+	`牛头怪的起源`
+
+[name2]
+	`Tau's origin soak Scythe`
+
+[basic explain]
+	`攻击野兽型敌人时， 附加30%%的伤害。
+攻击时， 有5%%的几率随机召唤出1只牛头怪协助自身战斗， 牛头怪存在40秒。
+攻击时， 可以使自身增加6%%的力量， 效果持续60秒。
+施放[黑暗之触]时， 可以使自身增加60智力， 效果持续10秒。`
+
+[detail explain]
+	`攻击野兽型敌人时， 附加30%%的伤害。
+攻击时， 有5%%的几率随机召唤出1只Lv65的牛头怪协助自身战斗， 牛头怪存在40秒。 (召唤的怪物只能同时存在1只， 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失)
+攻击时， 可以使自身增加6%%的力量， 效果持续60秒。
+施放[黑暗之触]时， 可以使自身增加60智力， 效果持续10秒。`
+
+[flavor text]
+	`啊哈， 用牛头族长的骨头制成的镰刀？ 这可是好东西， 嘿嘿……  --夏洛克`
+
+[grade]
+	70
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	65
+
+[physical attack]
+	47
+
+[magical attack]
+	47
+
+[attack speed]
+	80
+
+[stuck]
+	1
+
+[price]
+	112000
+
+[repair price]
+	94080
+
+[value]
+	89600
+
+[equipment physical attack]
+	640	583
+
+[equipment magical attack]
+	674	614
+
+[separate attack]
+	411	278
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	131	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/scythe.img`	57
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	13	0
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[if]
+	[target type]
+		`beast`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	30
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[event attack success]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			40000
+		[probability]
+			5
+		[summon monster]
+			50071	65	1
+		[then probability]
+			10.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			40000
+		[probability]
+			5
+		[summon monster]
+			16	65	1
+		[then probability]
+			30.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			40000
+		[probability]
+			5
+		[summon monster]
+			15	65	1
+		[then probability]
+			15.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			40000
+		[probability]
+			5
+		[summon monster]
+			14	65	1
+		[then probability]
+			30.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			40000
+		[probability]
+			5
+		[summon monster]
+			12	65	1
+		[then probability]
+			25.0
+	[/then]
+[/multiple then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		40000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		60000
+	[stat]
+		`physical attack`
+		`%`	6
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[event use skill]
+		`priest`	117
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[stat]
+		`magical attack`
+		`+`	60
+[/then]
+
+[routing priority]
+	`priest`	2
+	`priest`	3
+	`priest`	4
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

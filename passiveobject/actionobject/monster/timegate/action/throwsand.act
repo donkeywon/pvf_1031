@@ -1,0 +1,178 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/throw_sand.ani`
+	[SUB ANI]
+		`../Animation/throwsand2.ani`	0	1
+		`../Animation/throwsand1.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		20	20
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10523
+		[PARTICLE FILENAME]
+			`../Particle/sand.ptl`
+		[LEVEL]
+			70
+		[POS]
+			0
+		[RANDOM]
+			10	-10
+		[RANDOM]
+			20	35
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10523
+		[PARTICLE FILENAME]
+			`../Particle/sand.ptl`
+		[LEVEL]
+			70
+		[POS]
+			0
+		[RANDOM]
+			10	-10
+		[RANDOM]
+			10	35
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10524
+		[PARTICLE FILENAME]
+			`../Particle/sand.ptl`
+		[LEVEL]
+			70
+		[POS]
+			0
+		[RANDOM]
+			10	-10
+		[RANDOM]
+			20	35
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10523
+		[PARTICLE FILENAME]
+			`../Particle/sand.ptl`
+		[LEVEL]
+			70
+		[POS]
+			0
+		[RANDOM]
+			10	-10
+		[RANDOM]
+			10	35
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10523
+		[PARTICLE FILENAME]
+			`../Particle/sand1.ptl`
+		[LEVEL]
+			70
+		[POS]
+			0
+		[RANDOM]
+			10	-10
+		[RANDOM]
+			20	35
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10523
+		[PARTICLE FILENAME]
+			`../Particle/sand.ptl`
+		[LEVEL]
+			70
+		[POS]
+			0
+		[RANDOM]
+			10	-10
+		[RANDOM]
+			10	35
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10523
+		[PARTICLE FILENAME]
+			`../Particle/sand.ptl`
+		[LEVEL]
+			70
+		[POS]
+			0
+		[RANDOM]
+			10	-10
+		[RANDOM]
+			20	35
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

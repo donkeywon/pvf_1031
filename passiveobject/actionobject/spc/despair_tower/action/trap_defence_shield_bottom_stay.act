@@ -1,0 +1,51 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Trap_defence_shield_losttail_stay.ani`
+	[SUB ANI]
+		`../Animation/Trap_defence_shield_lostmagic_stay.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[AI CHARACTER]
+	[CHECKUP]
+		[IS INDEX]
+			20429
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			5000
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9263
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			25
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

@@ -1,0 +1,99 @@
+#PVF_File
+
+[name]
+	`极光之舞手镯`
+
+[basic explain]
+	`攻击时， 有2%%的几率施放闪电。`
+
+[detail explain]
+	`攻击时， 有2%%的几率施放闪电； 被闪电命中的敌人， 有20%%的几率进入感电状态； 攻击感电状态下的敌人， 可附加1000点的伤害。`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	35
+
+[physical defense]
+	87
+
+[price]
+	89000
+
+[value]
+	71200
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	4608	4368
+
+[light attack]
+	4
+
+[light resistance]
+	20
+
+[lightning resistance]
+	20
+
+[stun resistance]
+	20
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	84
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	20
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		2000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		90
+	[passive object]
+		48526	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

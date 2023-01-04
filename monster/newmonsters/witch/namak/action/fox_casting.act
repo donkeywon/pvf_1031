@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Fox_Casting.ani`
+	[SOUND]
+		`NAMACK_DIE_02`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9010
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			65
+		[POS]
+			0	0	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

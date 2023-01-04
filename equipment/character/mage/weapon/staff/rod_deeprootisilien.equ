@@ -1,0 +1,182 @@
+#PVF_File
+
+[name]
+	`伊西利恩的触手`
+
+[name2]
+	`Deep Roots of Isilien`
+
+[basic explain]
+	`施放技能时， 有5%%的几率在300px范围内最近的敌人脚下生成树魔的树根针刺。`
+
+[flavor text]
+	`为了前进十步， 有时需要先退一步， 这种说法听说过吧？ 如果我开始向后退， 那你要小心了。  --艾丽丝`
+
+[grade]
+	57
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[magical attack]
+	39
+
+[attack speed]
+	-100
+
+[need material]
+	3260	900
+
+[repair price]
+	73920
+
+[value]
+	70400
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	505	460
+
+[equipment magical attack]
+	638	581
+
+[separate attack]
+	328	220
+
+[magical critical hit]
+	5
+
+[skill levelup]
+	`[mage]`	17	3
+	`[mage]`	18	3
+	`[at mage]`	26	3
+	`[at mage]`	9	3
+[/skill levelup]
+
+[icon]
+	`Item/weapon/mage/staff.img`	46
+
+[field image]
+	`Item/field_weapon.img`	9
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	6	0
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	6	0
+
+[layer variation]
+	2150
+	`at_staffa`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_staffd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	6	0
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`STAFF_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2400
+
+[item group name]
+	`staff`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		1000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy near`	300
+	[probability]
+		5
+	[passive object]
+		30039	0	0	0	30	0	``
+	[/passive object]
+[/then]
+
+[routing priority]
+	`mage`	1
+	`at mage`	1
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

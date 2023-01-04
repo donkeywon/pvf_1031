@@ -1,0 +1,119 @@
+#PVF_File
+
+[name]
+	`影魔护肩`
+
+[name2]
+	`Shaten Shoulder`
+
+[basic explain]
+	`被攻击时， 有10%%的几率使敌人进入诅咒状态。`
+
+[detail explain]
+	`被攻击时， 有10%%的几率使敌人进入诅咒状态20秒； 诅咒状态下的敌人， 将减少51点力量、 体力、 智力和精神。 (若敌人高于Lv50， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[flavor text]
+	`蕴含暗精灵力量的神秘护肩。`
+
+[grade]
+	56
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	50
+
+[magical attack]
+	23
+
+[magical defense]
+	23
+
+[HP MAX]
+	270
+
+[price]
+	39200
+
+[repair price]
+	34574
+
+[value]
+	31360
+
+[creation rate]
+	500
+
+[equipment physical defense]
+	504	464
+
+[skill levelup]
+	`[fighter]`	13	2
+	`[at fighter]`	13	2
+[/skill levelup]
+
+[dark resistance]
+	15
+
+[stun resistance]
+	5
+
+[icon]
+	`Item/common/shoulder.img`	0
+
+[field image]
+	`Item/field_equip.img`	2
+
+[equipment type]
+	`[shoulder]`	17
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	21
+
+[weight]
+	800
+
+[item group name]
+	`cl shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		1000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		20000
+	[probability]
+		10
+	[reduce probability to human armor at pvp module]
+		78
+	[active status]
+		`curse`	50	51	51	51	51
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

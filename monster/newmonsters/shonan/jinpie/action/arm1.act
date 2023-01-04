@@ -1,0 +1,89 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/arm1.ani`
+	[SUB ANI]
+		`../animation/skill_eff/DashPunchDust.ani`	0	0
+		`../animation/skill_eff/DashPunch2.ani`	0	0
+		`../animation/skill_eff/DashPunch.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			700
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		9
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		4
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		4
+	[OFF]
+[/BEHAVIOR]

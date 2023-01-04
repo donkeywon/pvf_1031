@@ -1,0 +1,33 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack2.ani`
+	[SUB ANI]
+		`../Animation/Attack2_e.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`SWIND_02`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9328
+		[PARTICLE FILENAME]
+			`../particle/shoot.ptl`
+		[LEVEL]
+			0
+		[POS]
+			110	1	80
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

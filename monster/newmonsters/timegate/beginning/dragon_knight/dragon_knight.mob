@@ -1,0 +1,161 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`战龙骑士`
+
+[face image]
+	`Monster/MonsterFace.img`	683
+
+[appear sound]
+	`FIRESOUL_ATK_2_READY`
+
+[damage sound]
+	`DRAGONMAN_DMG`
+
+[die sound]
+	`DRAGONMAN_DIE`
+
+[ambient sound]
+	`DRAGONKNIGHT_AMB`
+
+[ability category]
+	`[HP MAX]`	`*`	300
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	130
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	130
+[/ability category]
+
+[category]
+	`[dragon]`
+[/category]
+
+[level]
+	70	70
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1800	1800
+
+[weight]
+	200000	200000
+
+[lie frame]
+	1	2	3	3	4
+
+[waiting action]
+	`action/Stay.act`
+
+[move action]
+	`action/Move.act`
+
+[sit action]
+	`action/Sit.act`
+
+[down action]
+	`action/Down.act`
+
+[damage action 1]
+	`action/Damage1.act`
+
+[damage action 2]
+	`action/Damage2.act`
+
+[proc action]
+	`action/proc.act`
+
+[attack action]
+	`Action/Jump.act`
+	`Action/Sky.act`
+	`Action/Attack01.act`
+	`Action/Tornado.act`
+	`Action/Guard00.act`
+	`Action/Dash.act`
+	`Action/Attack00.act`
+	`Action/Attack02.act`
+	`Action/change_flingmode.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Dash.atk`
+	`AttackInfo/Attack.atk`
+	`AttackInfo/LongAttack.atk`
+	``
+[/attack info]
+
+[cooltime]
+	12000	8000	8000	0	10000	10000	3000	8000	10005000
+[/cooltime]
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	600
+
+[warlike]
+	100
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[keep distance with target]
+	270
+
+[keep range distance with target]
+	250	10	15	15
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[intelligence]
+	100	50	5000

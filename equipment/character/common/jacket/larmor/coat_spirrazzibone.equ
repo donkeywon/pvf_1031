@@ -1,0 +1,117 @@
+#PVF_File
+
+[name]
+	`邪龙的脊骨胸甲`
+
+[name2]
+	`Spirrazzi's BoneArmor Coat`
+
+[basic explain]
+	`被攻击时， 有2%%的几率使敌人进入中毒状态。`
+
+[detail explain]
+	`被攻击时， 有2%%的几率使敌人进入中毒状态7秒； 中毒状态下的敌人， 每0.5秒受到128点伤害。 (若敌人高于Lv55， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[flavor text]
+	`邪龙的骨头也有剧毒， 别乱摸！  --林纳斯对充满好奇心的旅行者说`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	32
+
+[magical attack]
+	21
+
+[price]
+	74400
+
+[repair price]
+	65620
+
+[value]
+	59520
+
+[equipment physical defense]
+	2520	2304
+
+[icon]
+	`Item/common/coat.img`	106
+
+[field image]
+	`Item/field_equip.img`	5
+
+[equipment type]
+	`[coat]`	21
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3100
+
+[item group name]
+	`la coat`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		1000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		70
+	[active status]
+		`poison`	55	1800
+[/then]
+
+[set name]
+	`邪龙的脊骨轻甲  套装`
+
+[set item]
+	10918	12913	14908	16903	18911
+[/set item]
+
+[set ability]
+	[fullset basic explain]
+		`被攻击时， 有3%%的几率向敌人发出邪龙的龙息。 (未实现)`
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

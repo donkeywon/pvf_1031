@@ -1,0 +1,50 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack.ani`
+	[SUB ANI]
+		`../animation/Attack_dodge.ani`	0	5
+		`../animation/Attack_shock.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`MINERAL_GOLEM_ATK`	0
+		`MINERAL_GOLEM_PUT`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54051
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			105	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		3
+	[NOW]
+[/BEHAVIOR]

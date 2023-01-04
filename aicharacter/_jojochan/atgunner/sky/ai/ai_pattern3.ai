@@ -1,0 +1,80 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check key cooltime]
+			`sarand`
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`skyrobot`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`exby`
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`rnad`
+					[true]
+					[return]
+						-1
+					[false]
+					[return str]
+						`rand`
+				[/think]
+	[false]
+	[think]
+		[void]
+			`get random()`	0.0	100.0
+	
+		[think]
+			[last result]
+				`<=`	50.0
+			[true]
+			[return str]
+				`exby`
+			[false]
+			[return]
+				-1
+		[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`get random()`	0.0	100.0
+	
+		[think]
+			[last result]
+				`<=`	50.0
+			[true]
+			[return str]
+				`skyrobot`
+			[false]
+			[return]
+				-1
+		[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`get random()`	0.0	100.0
+	
+		[think]
+			[last result]
+				`<=`	60.0
+			[true]
+			[return str]
+				`sarand`
+			[false]
+			[return]
+				-1
+		[/think]
+	[/think]
+	[/think]
+[/ai pattern]

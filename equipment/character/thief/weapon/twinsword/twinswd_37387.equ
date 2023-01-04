@@ -1,0 +1,155 @@
+#PVF_File
+
+[name]
+	`民兵队长的血影剑`
+
+[name2]
+	`Blood  Twinsword of Militia Captain`
+
+[basic explain]
+	`攻击时， 有3%%的几率消耗自身5%%的HP， 从而召唤出3个民兵队员协助自身进行战斗， 民兵队员存在7秒； 同时增加自身20%%的物攻和物防。
+(在决斗场中无效)`
+
+[flavor text]
+	`我在战场上从不恐惧， 因为我的身边有一群可靠的战友。  --民兵队长`
+
+[grade]
+	68
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	64
+
+[physical attack]
+	45
+
+[attack speed]
+	-80
+
+[price]
+	122400
+
+[repair price]
+	102816
+
+[value]
+	97920
+
+[equipment physical attack]
+	657	606
+
+[equipment magical attack]
+	515	475
+
+[separate attack]
+	384	260
+
+[physical critical hit]
+	5
+
+[icon]
+	`Item/weapon/thief/twinswd.img`	79
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[thief]`
+
+[variation]
+	8	6
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		10000
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[stat change]
+		`hp`
+		`>`
+		`%`	5
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		7000
+	[probability]
+		3
+	[summon monster]
+		65011	55	1
+	[summon monster]
+		65011	55	1
+	[summon monster]
+		65011	55	1
+	[restore]
+		`hp`
+		`%`	-5	7000
+	[stat]
+		`equipment physical attack`
+		`%`	20
+	[stat]
+		`equipment physical defense`
+		`%`	20
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

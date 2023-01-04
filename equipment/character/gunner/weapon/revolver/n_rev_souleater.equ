@@ -1,0 +1,143 @@
+#PVF_File
+
+[name]
+	`(旧) 邪灵猎魔者`
+
+[name2]
+	`Soul Eater`
+
+[basic explain]
+	`攻击时， 有2%%的几率出现魔力爆炸。 (在决斗场中无效)`
+
+[flavor text]
+	`灵魂吃着吃着就会撑， 一旦撑了就会吐出来， 这就是所谓的魔力爆炸。`
+
+[grade]
+	20
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	15
+
+[physical attack]
+	17
+
+[price]
+	32000
+
+[repair price]
+	25600
+
+[value]
+	25600
+
+[equipment physical attack]
+	220	164
+
+[equipment magical attack]
+	185	138
+
+[separate attack]
+	133	86
+
+[physical critical hit]
+	2
+
+[icon]
+	`item/weapon/gunner/revolver.img`	27
+
+[field image]
+	`Item/field_weapon.img`	1
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	1	3
+
+[layer variation]
+	2790
+	`revc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`revb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	1	3
+
+[layer variation]
+	2790
+	`at_revc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_revb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2000
+
+[item group name]
+	`revolver`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		3000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[passive object]
+		30381	0	0	0	15	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,141 @@
+#PVF_File
+
+[name]
+	`美人鱼战士`
+
+[category]
+	`[human]`
+	`[oneside move]`
+	`[close-manace]`
+[/category]
+
+[overhead gauge type]
+	1
+
+[fix direction]
+	`[right]`
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`+`	2500000
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[damage sound]
+	`R_MERMAIDA_DMG`
+
+[die sound]
+	`MERMAIDA_DIE`
+
+[level]
+	1	60
+
+[move speed]
+	900	900
+
+[attack speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	75000	75000
+
+[die effect]
+	0	24	1
+
+[face image]
+	`Monster/MonsterFace.img`	450
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[proc action]
+	`Action/Proc.act`
+
+[attack action]
+	`Action/Slash.act`
+[/attack action]
+
+[attack info]
+	`attackinfo/Slash_Lv1.atk`
+[/attack info]
+
+[cooltime]
+	1000
+[/cooltime]
+
+[think term]
+	250
+
+[destination change term]
+	300
+
+[keep distance with target]
+	80
+
+[ai pattern]
+	[normal]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/normal]
+	[expert]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/expert]
+	[master]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/master]
+	[king]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/king]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[vision]
+	600
+
+[lie frame]
+	2	3	2	3	4
+
+[base table]
+	`NewMonsters/AdvanceAltar/table/AdvanceAltarMonsterBaseParameter.tbl`

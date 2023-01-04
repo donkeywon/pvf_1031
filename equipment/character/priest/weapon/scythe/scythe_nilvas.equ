@@ -1,0 +1,158 @@
+#PVF_File
+
+[name]
+	`尼尔巴斯的黑暗战镰`
+
+[name2]
+	`Black Sythe of Nilvas`
+
+[basic explain]
+	`攻击时， 有3%%的几率消减敌人20%%的HP。 (攻击精英怪物时效果缩减为原来的1/3、 对领主和深渊怪物的效果则缩减为1/6； 在决斗场中无效)`
+
+[detail explain]
+	`攻击时， 有3%%的几率消减敌人20%%的HP。 (攻击精英怪物时效果缩减为原来的1/3、 对领主和深渊怪物的效果则缩减为1/6； 在决斗场中无效)`
+
+[flavor text]
+	`对阿斯特罗斯(奥兹玛手下的三黑骑士之一)怀有强烈报复心的尼尔巴斯的黑镰刀。`
+
+[grade]
+	57
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	39
+
+[magical attack]
+	39
+
+[attack speed]
+	80
+
+[stuck]
+	1
+
+[price]
+	91200
+
+[repair price]
+	76608
+
+[value]
+	72960
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	505	460
+
+[equipment magical attack]
+	532	484
+
+[separate attack]
+	328	220
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[icon]
+	`Item/weapon/priest/scythe.img`	35
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	4	2
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[weakness]
+		20
+[/then]
+
+[pvp]
+	[if]
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			3
+		[weakness]
+			10
+	[/then]
+[/pvp]
+
+[routing priority]
+	`priest`	3
+	`priest`	2
+	`priest`	4
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

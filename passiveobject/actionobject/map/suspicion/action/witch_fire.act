@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/witch_fire.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[PASSIVE OBJECT]
+		[/IS OBJECT TYPE]
+		[IS INDEX]
+			9019
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			30
+		[CHECKED NO]
+		[<]
+			1
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

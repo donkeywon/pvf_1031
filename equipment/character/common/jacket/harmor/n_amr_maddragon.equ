@@ -1,0 +1,171 @@
+#PVF_File
+
+[name]
+	`(旧) 狂龙赫斯的龙骨胸甲`
+
+[name2]
+	`Mad Dragon's Backbone Breast`
+
+[basic explain]
+	`被攻击时， 有5%%的几率使自身进入出血状态。
+自身处于出血状态时给予敌人的伤害 +50%%`
+
+[detail explain]
+	`被攻击时， 有5%%的几率使敌人进入出血状态10秒； 出血状态下的敌人， 每0.5秒受到58点伤害。 (若敌人高于Lv50， 则减少进入异常状态的几率； 反之， 则增加几率)
+自身处于出血状态时给予敌人的伤害 +50%%`
+
+[flavor text]
+	`嗯， 狂龙身上的每个部位都有想不到的作用， 包括它的龙息……`
+
+[grade]
+	55
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	26
+
+[physical defense]
+	24
+
+[magical attack]
+	19
+
+[price]
+	77000
+
+[repair price]
+	61600
+
+[value]
+	61600
+
+[equipment physical defense]
+	3024	2736
+
+[icon]
+	`Item/common/coat.img`	124
+
+[field image]
+	`Item/field_equip.img`	10
+
+[equipment type]
+	`[coat]`	22
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	3600
+
+[item group name]
+	`ha coat`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		1000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[probability]
+		5
+	[reduce probability to human armor at pvp module]
+		76
+	[active status]
+		`bleeding`	50	1500
+[/then]
+
+[if]
+	[my active status]
+		`bleeding`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	50
+[/then]
+
+[set name]
+	`狂龙赫斯的龙骨重甲  套装`
+
+[set item]
+	11291	13291
+[/set item]
+
+[set ability]
+	[if]
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`all enemy`	-1
+		[probability]
+			3
+		[thorn]
+			100
+	[/then]
+	[if]
+		[cooltime]
+			10500
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`all enemy`	-1
+		[duration]
+			7000
+		[reduce duration to human armor at pvp module]
+			50
+		[probability]
+			5
+		[active status]
+			`confuse`	50	1
+	[/then]
+	[fullset basic explain]
+		`被攻击时， 有3%%的几率向敌人返还100%%的伤害。
+攻击时， 有5%%的几率使所有敌人进入混乱状态。`
+	[fullset detail explain]
+		`被攻击时， 有3%%的几率向敌人返还100%%的伤害。
+攻击时， 有5%%的几率使所有敌人进入混乱状态7秒。 (若敌人高于Lv50， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

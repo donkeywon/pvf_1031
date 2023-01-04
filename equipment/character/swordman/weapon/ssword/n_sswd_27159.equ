@@ -1,0 +1,106 @@
+#PVF_File
+
+[name]
+	`精致的素喃订制短剑`
+
+[name2]
+	`找不到代码name2_27159`
+
+[basic explain]
+	`暴击伤害 +10%%`
+
+[grade]
+	52
+
+[attach type]
+	`[trade]`
+
+[item group name]
+	`ssword`
+
+[rarity]
+	3
+
+[weight]
+	3100
+
+[usable job]
+	`[swordman]`
+[/usable job]
+
+[minimum level]
+	48
+
+[icon]
+	`Item/weapon/swordman/sswd.img`	83
+
+[field image]
+	`Item/FieldImage.img`	9
+
+[equipment type]
+	`[weapon]`	23
+
+[sub type]
+	0
+
+[durability]
+	35
+
+[value]
+	66560
+
+[cool time]
+	10000
+
+[magical attack]
+	36
+
+[equipment physical attack]
+	460	422
+
+[equipment magical attack]
+	557	511
+
+[separate attack]
+	287	192
+
+[cast speed]
+	90
+
+[magical critical hit]
+	2
+
+[variation]
+	1	6
+
+[layer variation]
+	2790
+	`bswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`bswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[move wav]
+	`MINERALSWD_TOUCH`
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	10
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

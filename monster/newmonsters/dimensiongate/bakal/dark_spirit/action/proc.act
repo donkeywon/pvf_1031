@@ -1,0 +1,113 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/dummy.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			3000
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+	[DO PROC BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			20000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[CHARACTER]
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESOLATEPAIN APPENDAGE]
+		6000	6000	11000	100	40	15	5	10054
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON DESTROY OBJECT]
+	[WHICH]
+	[DESTROY OBJECT]
+	[CHECKUP]
+		[IS INDEX]
+			56721
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET HP]
+		0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			56721
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=<]
+		0
+	[DO PROC BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]

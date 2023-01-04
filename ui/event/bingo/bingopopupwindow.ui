@@ -1,0 +1,162 @@
+#PVF_File
+
+[window]
+	[type]
+		`popup`
+	[horizontal alignment]
+		`left`
+	[vertical alignment]
+		`middle`
+	[horizontal distance]
+		110
+	[vertical distance]
+		0
+	[size]
+		22	30
+	[title string]
+		`BINGO！BINGO！宾果连连看！`
+	[controls]
+		[ui controls]
+			`[text button]`
+			`0`	100	372	2
+			`Interface/WindowCommon.img`
+			`确认`	4	12	13	14	15
+		[/ui controls]
+		[ui controls]
+			`[control]`
+			`1`	19	12	0	2	200	100
+		[/ui controls]
+		[ui controls]
+			`[button]`
+			`2`	94	91	1
+			`Interface2/event/Bingo/Event_bingo.img`	4	1	1	1	1	
+			[int option]
+				`button down image offset`	1	1
+			[/int option]
+			[parent]
+				`1`
+		[/ui controls]
+		[ui controls]
+			`[button]`
+			`3`	15	221	1
+			`Interface2/event/Bingo/Event_bingo.img`	4	9	9	9	9	
+			[int option]
+				`button down image offset`	1	1
+			[/int option]
+			[parent]
+				`1`
+		[/ui controls]
+		[ui controls]
+			`[button]`
+			`4`	55	221	1
+			`Interface2/event/Bingo/Event_bingo.img`	4	9	9	9	9	
+			[int option]
+				`button down image offset`	1	1
+			[/int option]
+			[parent]
+				`1`
+		[/ui controls]
+		[ui controls]
+			`[button]`
+			`5`	95	221	1
+			`Interface2/event/Bingo/Event_bingo.img`	4	9	9	9	9	
+			[int option]
+				`button down image offset`	1	1
+			[/int option]
+			[parent]
+				`1`
+		[/ui controls]
+		[ui controls]
+			`[button]`
+			`6`	135	221	1
+			`Interface2/event/Bingo/Event_bingo.img`	4	9	9	9	9	
+			[int option]
+				`button down image offset`	1	1
+			[/int option]
+			[parent]
+				`1`
+		[/ui controls]
+		[ui controls]
+			`[button]`
+			`7`	175	221	1
+			`Interface2/event/Bingo/Event_bingo.img`	4	9	9	9	9	
+			[int option]
+				`button down image offset`	1	1
+			[/int option]
+			[parent]
+				`1`
+		[/ui controls]
+		[ui controls]
+			`[image]`
+			`8`	15	221	1
+			`Interface2/event/Bingo/Event_bingo.img`	1	12	
+			[parent]
+				`1`
+		[/ui controls]
+		[ui controls]
+			`[text button]`
+			`9`	70	8	2
+			`Interface/WindowCommon.img`
+			`领取礼物`	4	12	13	14	15	
+			[parent]
+				`8`
+		[/ui controls]
+		[ui controls]
+			`[text]`
+			`10`	10	12	1
+			`- 今日活动参加完毕。 -`	9	-1	242	0	0	0	0	65	255	78	
+			[parent]
+				`8`
+		[/ui controls]
+		[ui controls]
+			`[board image]`
+			`11`	-3	279	1
+			`Interface/WindowCommon.img`	11	271	93	213	214	215	216	217	218	219	220	221
+		[/ui controls]
+		[ui controls]
+			`[text]`
+			`12`	6	6	1
+			`1. 收集在地下城中掉落的宾果数字宝箱，以填满宾果列(5格)。
+2. 请点按宾果盘正中央的宾果格，以解开密码。
+3. 宾果列如果填满3行，将可以获得特别的礼物。
+4. 宾果盘和今日密码每天都会变更初始化。`	9	-1	250	0	0	0	0	230	200	155	
+			[parent]
+				`11`
+		[/ui controls]
+		[ui controls]
+			`[animation]`
+			`13`	0	0	1
+			`UI/Event/Bingo/animation/clickbutton_02.ani`	0	
+			[parent]
+				`2`
+		[/ui controls]
+		[ui controls]
+			`[animation]`
+			`14`	0	86	1
+			`UI/Event/Bingo/animation/bingo_eff00.ani`	0	
+			[parent]
+				`1`
+		[/ui controls]
+		[ui controls]
+			`[animation]`
+			`15`	15	221	1
+			`UI/Event/Bingo/animation/number_error.ani`	0	
+			[parent]
+				`1`
+		[/ui controls]
+		[ui controls]
+			`[animation]`
+			`16`	15	221	1
+			`UI/Event/Bingo/animation/number_off.ani`	0	
+			[parent]
+				`1`
+		[/ui controls]
+		[ui controls]
+			`[animation]`
+			`17`	15	221	1
+			`UI/Event/Bingo/animation/number_result_back.ani`	0	
+			[parent]
+				`1`
+		[/ui controls]
+	[/controls]
+[/window]

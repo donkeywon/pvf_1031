@@ -1,0 +1,180 @@
+#PVF_File
+
+[name]
+	`苍穹之尖啸`
+
+[name2]
+	`Fist cutting through Blue Sky`
+
+[basic explain]
+	`攻击时， 有5%%的几率使自身增加5%%的攻击速度、 移动速度和施放速度， 效果持续20秒。`
+
+[grade]
+	65
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[magical attack]
+	44
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[stuck]
+	-2
+
+[price]
+	104000
+
+[repair price]
+	87360
+
+[value]
+	83200
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	593	536
+
+[equipment magical attack]
+	718	649
+
+[separate attack]
+	378	255
+
+[magical critical hit]
+	3
+
+[skill levelup]
+	`[fighter]`	79	3
+	`[at fighter]`	79	3
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/knuckle.img`	62
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	8	5
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	8	5
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		5
+	[stat]
+		`cast speed`
+		`+`	50
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[routing priority]
+	`fighter`	1
+	`at fighter`	1
+[/routing priority]
+
+[possible kiri protect]
+
+[need material]
+	2749095	169
+
+[icon mark]
+	`Item/IconMark.img`	68

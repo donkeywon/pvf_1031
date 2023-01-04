@@ -1,0 +1,208 @@
+#PVF_File
+
+[name]
+	`布鲁的怨灵手炮`
+
+[basic explain]
+	`攻击时， 有4%%的几率出现布鲁之怨灵。
+被攻击时， 有20%%的几率出现布鲁之怨灵。`
+
+[detail explain]
+	`攻击时， 有4%%的几率出现布鲁之怨灵。 (冷却时间为20秒，决斗场内几率为1%%)
+被攻击时， 有20%%的几率出现布鲁之怨灵。 (冷却时间为20秒，决斗场内几率为2%%)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	87
+
+[price]
+	160200
+
+[repair price]
+	134568
+
+[value]
+	128160
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	933	855
+
+[equipment magical attack]
+	560	513
+
+[separate attack]
+	510	347
+
+[skill levelup]
+	`[gunner]`	62	1
+	`[at gunner]`	62	1
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/hcannon/hcannon.img`	90
+
+[field image]
+	`Item/field_weapon.img`	4
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	27	0
+
+[layer variation]
+	2790
+	`hcanc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`hcanb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	27	0
+
+[layer variation]
+	2790
+	`at_hcanc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_hcanb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2800
+
+[item group name]
+	`hcannon`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+	[/module]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		4
+	[passive object]
+		9104	0	0	0	70	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[module]
+		`[pvp type]`
+	[/module]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		1
+	[passive object]
+		48109	0	0	0	70	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+	[/module]
+	[cooltime]
+		20000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		20
+	[passive object]
+		9104	0	0	0	70	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[module]
+		`[pvp type]`
+	[/module]
+	[cooltime]
+		20000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		2
+	[passive object]
+		48109	0	0	0	70	0	``
+	[/passive object]
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

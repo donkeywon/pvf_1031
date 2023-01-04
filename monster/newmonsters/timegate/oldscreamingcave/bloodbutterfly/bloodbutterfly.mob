@@ -1,0 +1,147 @@
+#PVF_File
+
+[name]
+	`悲鸣飞蛾`
+
+[floating height]
+	40
+
+[category]
+	`[insect]`
+[/category]
+
+[ambient sound]
+	`RUCY_AMB`
+
+[damage sound]
+	`R_BBUTTERFLY_DMG`
+
+[die sound]
+	`BBUTTERFLY_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+	`[HP MAX]`	`*`	150
+[/ability category]
+
+[level]
+	70	70
+
+[move speed]
+	600	600
+
+[attack speed]
+	800	800
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	90000	90000
+
+[warlike]
+	80
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[face image]
+	`Monster/MonsterFace.img`	674
+
+[waiting action]
+	`action/Stay.act`
+
+[move action]
+	`action/Move.act`
+
+[sit action]
+	`action/Sit.act`
+
+[damage action 1]
+	`action/Damage1.act`
+
+[damage action 2]
+	`action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`action/Overturn.act`
+
+[attack action]
+	`Action/Attack_Move.act`
+	`Action/Attack_Move_Up.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack1.atk`
+	``
+[/attack info]
+
+[cooltime]
+	3000	3000
+[/cooltime]
+
+[think term]
+	800
+
+[destination change term]
+	700
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	300
+
+[keep range distance with target]
+	400	0	20	100
+
+[warlike]
+	80
+
+[intelligence]
+	80	80	800
+
+[vision]
+	800
+
+[lie frame]
+	1	2	3	3	4

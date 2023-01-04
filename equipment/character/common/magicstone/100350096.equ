@@ -1,0 +1,108 @@
+#PVF_File
+
+[name]
+	`堕落的天使之心`
+
+[basic explain]
+	`被攻击时， 有20%%的几率消耗1个无色小晶块并使武器属性变成暗属性； 每20点暗属性抗性将增加10点的暗属性强化值， 效果持续10秒。
+无法进行分解。`
+
+[grade]
+	79
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[physical attack]
+	46
+
+[physical defense]
+	46
+
+[magical attack]
+	46
+
+[magical defense]
+	46
+
+[need material]
+	3338	630
+
+[value]
+	63200
+
+[creation rate]
+	0
+
+[dark resistance]
+	20
+
+[icon]
+	`Item/new_equipment/11_magicstone/magicstone.img`	76
+
+[field image]
+	`Item/field_equip.img`	23
+
+[equipment type]
+	`[magic stone]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`magic stone`
+
+[cool time]
+	10000
+
+[routing priority]
+[/routing priority]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[if]
+	[cooltime]
+		50000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[consume item]
+		3037	1
+	[probability]
+		20
+	[reduce probability to human armor at pvp module]
+		90
+	[stat change by stat]
+		`myself`	-1
+		`dark resistance`	20
+		`dark attack`
+		`+`	10	0
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[icon mark]
+	`Item/IconMark.img`	66

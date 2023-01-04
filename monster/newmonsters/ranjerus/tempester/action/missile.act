@@ -1,0 +1,59 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/BodyMissile.ani`
+	[SUB ANI]
+		`../Animation/EffectBoostStay.ani`	0	0
+		`../Animation/EffectMissile2.ani`	0	1
+		`../Animation/EffectMissile4.ani`	0	1
+		`../Animation/EffectMissile3.ani`	0	2
+		`../Animation/EffectMissile1.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`TEMPESTER_MISSILE`	0
+		`TEMPESTER_MISSILE`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8388
+		[PARTICLE FILENAME]
+			`../Particle/TempesterMissile.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-23	0	58
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8388
+		[PARTICLE FILENAME]
+			`../Particle/TempesterMissile.ptl`
+		[LEVEL]
+			0
+		[POS]
+			25	0	58
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

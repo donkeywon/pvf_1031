@@ -1,0 +1,190 @@
+#PVF_File
+
+[name]
+	`死神的调戏`
+
+[name2]
+	`The Game Of Death`
+
+[basic explain]
+	`攻击时， 有1%%的几率使敌人进入诅咒状态。
+被攻击时， 有1%%的几率出现驱散效果。`
+
+[detail explain]
+	`攻击时， 有1%%的几率使敌人进入诅咒状态8秒； 诅咒状态下的敌人， 将减少72点力量、 体力、 智力和精神。 (若敌人高于Lv60， 则减少进入异常状态的几率； 反之， 则增加几率)
+攻击时， 有1%%的几率出现驱散效果。`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[magical attack]
+	42
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[HP MAX]
+	150
+
+[need material]
+	3285	1200
+
+[repair price]
+	83328
+
+[value]
+	79360
+
+[equipment physical attack]
+	543	498
+
+[equipment magical attack]
+	658	603
+
+[separate attack]
+	360	243
+
+[skill levelup]
+	`[fighter]`	15	2
+	`[fighter]`	79	3
+	`[at fighter]`	15	2
+	`[at fighter]`	79	3
+[/skill levelup]
+
+[light attack]
+	8
+
+[icon]
+	`Item/weapon/fighter/knuckle.img`	64
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	0	3
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	0	3
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[cooltime]
+		12000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		8000
+	[probability]
+		1
+	[active status]
+		`curse`	60	72	72	72	72
+[/then]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		1
+	[disenchant]
+		1
+[/then]
+
+[routing priority]
+	`fighter`	1
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

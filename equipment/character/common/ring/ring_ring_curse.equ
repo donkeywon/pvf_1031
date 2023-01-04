@@ -1,0 +1,148 @@
+#PVF_File
+
+[name]
+	`黑色双子戒指 - 咒`
+
+[name2]
+	`Ring of Black Mold - Curse`
+
+[basic explain]
+	`攻击诅咒状态的敌人时， 有15%%的几率消耗1个无色小晶块并使敌人减少10%%的HP。 (对精英怪物的效果为1/3、 对深渊怪物的效果为1/6、 不适用于领主和决斗场； 冷却时间为2秒)`
+
+[grade]
+	75
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	71
+
+[physical attack]
+	45
+
+[magical attack]
+	45
+
+[move speed]
+	30
+
+[hit recovery]
+	100
+
+[price]
+	75000
+
+[repair price]
+	60000
+
+[value]
+	60000
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	2624	2464
+
+[icon]
+	`Item/common/ring.img`	56
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[target active status]
+		`curse`
+	[event attack success]
+		1
+	[target grade]
+		`common`
+	[cooltime]
+		2000
+[/if]
+
+[then]
+	[consume item]
+		3037	1
+	[target]
+		`enemy`	-1
+	[probability]
+		15
+	[weakness]
+		10
+[/then]
+
+[if]
+	[target active status]
+		`curse`
+	[event attack success]
+		1
+	[target grade]
+		`champion`
+	[cooltime]
+		2000
+[/if]
+
+[then]
+	[consume item]
+		3037	1
+	[target]
+		`enemy`	-1
+	[probability]
+		15
+	[weakness]
+		10
+[/then]
+
+[if]
+	[target active status]
+		`curse`
+	[event attack success]
+		1
+	[target grade]
+		`named`
+	[cooltime]
+		2000
+[/if]
+
+[then]
+	[consume item]
+		3037	1
+	[target]
+		`enemy`	-1
+	[probability]
+		15
+	[weakness]
+		10
+[/then]
+
+[pvp]
+[/pvp]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

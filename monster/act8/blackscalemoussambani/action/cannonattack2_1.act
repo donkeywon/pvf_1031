@@ -1,0 +1,53 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/CannonAttack_up.ani`
+	[SUB ANI]
+		`../animation/Shoot_smoke.ani`	0	-1
+		`../animation/Shoot_fire.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`MOOSAM_SKILL_03`	0
+		`BL_SHOTCUN`	1
+	[/SOUND]
+	[SPEECH]
+		`呜哈哈！！会有些刺眼哦！！！`	2	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9337
+		[PARTICLE FILENAME]
+			`../particle/ill.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	1000
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		17
+	[END]
+[/BEHAVIOR]

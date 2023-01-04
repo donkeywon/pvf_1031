@@ -1,0 +1,52 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/timestop.ani`
+	[SUB ANI]
+		`../animation/aura_timestop.ani`	0	0
+		`../Animation/CypherTimeStopBase.ani`	0	0
+		`../Animation/CypherTimeStop.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`MONAHUN_SKILL_07`	0
+		`MONAHUN_LOCK`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			350
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		7000	
+		[move speed]
+		[%]
+			-70.0
+	[/APPENDAGE]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8028
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

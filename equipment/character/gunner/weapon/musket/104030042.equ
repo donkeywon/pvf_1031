@@ -1,0 +1,207 @@
+#PVF_File
+
+[name]
+	`卡勒特的游击长枪`
+
+[basic explain]
+	`攻击速度 +5%%
+跳跃状态下， 攻击速度 +20%%
+跳跃攻击时， 附加10%%的伤害。
+[空中射击]冷却时间 -10秒`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[physical attack]
+	55
+
+[magical attack]
+	83
+
+[attack speed]
+	50
+
+[price]
+	151200
+
+[repair price]
+	127008
+
+[value]
+	120960
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	808	739
+
+[equipment magical attack]
+	703	643
+
+[separate attack]
+	481	327
+
+[skill levelup]
+	`[gunner]`	175	2
+	`[gunner]`	33	3
+	`[at gunner]`	175	2
+	`[at gunner]`	33	3
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/musket/musket.img`	91
+
+[field image]
+	`Item/field_weapon.img`	3
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	29	1
+
+[layer variation]
+	2790
+	`musketc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`musketb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	29	1
+
+[layer variation]
+	2790
+	`at_musketc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_musketb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	2100
+
+[item group name]
+	`musket`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[gunner]`	33	`[all]`	`[cooltime]`	0	`+`	-10000
+	`[at gunner]`	33	`[all]`	`[cooltime]`	0	`+`	-10000
+[/skill data up]
+
+[if]
+	[my state]
+		`jump`
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		0
+	[appendage unique]
+		212
+[/then]
+
+[if]
+	[my state]
+		`jump attack`
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		0
+	[appendage unique]
+		212
+[/then]
+
+[if]
+	[my state]
+		`jump`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[if]
+	[my state]
+		`jump attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,175 @@
+#PVF_File
+
+[name]
+	`灼魂之魔刹胸甲`
+
+[basic explain]
+	`被击时所受伤害 -5%%
+
+每增加1名队员， 可以增加40点体力。
+无法进行分解。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	35
+
+[physical defense]
+	38
+
+[magical attack]
+	35
+
+[need material]
+	3339	630
+
+[repair price]
+	98784
+
+[value]
+	94080
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	5460	5160
+
+[icon]
+	`item/new_equipment/06_plate/coat/plate_coat.img`	15
+
+[field image]
+	`Item/field_equip.img`	15
+
+[equipment type]
+	`[coat]`	22
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	60
+
+[weight]
+	5000
+
+[item group name]
+	`mt coat`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[if]
+	[party count]
+		`=`	1
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical defense`
+		`+`	40
+[/then]
+
+[if]
+	[party count]
+		`=`	2
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical defense`
+		`+`	40
+[/then]
+
+[if]
+	[party count]
+		`=`	3
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical defense`
+		`+`	40
+[/then]
+
+[if]
+	[party count]
+		`=`	4
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical defense`
+		`+`	40
+[/then]
+
+[if]
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	5
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	66

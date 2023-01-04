@@ -1,0 +1,32 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Nentan2_str.ani`
+	[SUB ANI]
+		`../Animation/Nentan1_Effect.ani`	0	0
+		`../Animation/Nentan1_Effect2.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8485
+		[PARTICLE FILENAME]
+			`../Particle/BigNantan.ptl`
+		[LEVEL]
+			0
+		[POS]
+			70	0	40
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

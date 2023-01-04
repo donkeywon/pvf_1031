@@ -1,0 +1,52 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/singasong.ani`
+	[SUB ANI]
+		`../animation/Effect/singeffect.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`KONG_SKILL_05`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[GET TARGET]
+		2
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[MIND CONTROL APPENDAGE]
+		60	500	10000
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8757
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	100
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

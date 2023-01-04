@@ -1,0 +1,160 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`泽忒斯`
+
+[face image]
+	`Monster/MonsterFace.img`	413
+
+[ability table]
+	0
+
+[damage sound]
+	`AMOR_HIT`
+
+[ability category]
+	`[HP MAX]`	`*`	6000
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[overhead gauge type]
+	1
+
+[category]
+	`[oneside move]`
+	`[hybrid]`
+	`[melee combat]`
+	`[close-carefully]`
+[/category]
+
+[fix direction]
+	`[left]`
+
+[initial target]
+	[MONSTER]
+		64597
+	[initial target Permanent]
+		0
+[/initial target]
+
+[HP regen speed]
+	0	0
+
+[MP regen speed]
+	0	0
+
+[level]
+	60	60
+
+[move speed]
+	600	600
+
+[attack speed]
+	700	700
+
+[cast speed]
+	500	500
+
+[hit recovery]
+	800	800
+
+[weight]
+	120000	120000
+
+[lie frame]
+	1	2	2	3	5
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[sit action]
+	`action/Sit.act`
+
+[overturn action]
+	`action/Overturn.act`
+
+[proc action]
+	`Action/Proc.act`
+
+[attack action]
+	`Action/Boomerang.act`
+	`Action/Shoot.act`
+[/attack action]
+
+[attack info]
+	``
+	`AttackInfo/Attack.atk`
+[/attack info]
+
+[cooltime]
+	5000	5000
+[/cooltime]
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	1000
+
+[think term]
+	300
+
+[destination change term]
+	300
+
+[keep distance with target]
+	130
+
+[ai pattern]
+	[normal]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/normal]
+	[expert]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/expert]
+	[master]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/master]
+	[king]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/king]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[base table]
+	`NewMonsters/AdvanceAltar/Enemy/DarkElf_Sprit_Hunter/table/AdvanceAltarMonsterBaseParameter.tbl`

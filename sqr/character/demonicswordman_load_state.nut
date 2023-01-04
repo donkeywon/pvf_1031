@@ -1,0 +1,1 @@
+IRDSQRCharacter.pushScriptFiles("Character/Demonicswordman/demonicswordman_common.nut");

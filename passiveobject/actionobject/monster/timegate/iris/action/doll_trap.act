@@ -1,0 +1,76 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/doll_trap.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		1
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	3
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			62506
+		[LEVEL]
+			80
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			62507
+		[LEVEL]
+			80
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			62508
+		[LEVEL]
+			80
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		3
+[/BEHAVIOR]

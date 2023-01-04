@@ -1,0 +1,77 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Jump.ani`
+	[SOUND]
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+	[SET SPEED]
+		[X AXIS]
+			800
+		[Z AXIS]
+			550
+		[Y AXIS]
+		[RANDOM SELECT]
+			100	0	-100
+		[/RANDOM SELECT]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Z AXIS]
+			0
+		[Y AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	7
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			100
+		[CHECKED NO]
+		[>]
+			0
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		1
+	[NOW]
+[/BEHAVIOR]

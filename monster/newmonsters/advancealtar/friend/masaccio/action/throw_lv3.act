@@ -1,0 +1,55 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Throw.ani`
+	[SUB ANI]
+		`../Animation/Weapon/Throw.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`标枪分解！`	0	70
+	[/SPEECH]
+	[SOUND]
+		`MASA_SKILL_03`	1
+		`WIND_SPIN`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12650
+		[PARTICLE FILENAME]
+			`../Particle/Arrow1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			120	0	90
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		700	2
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		1
+[/BEHAVIOR]

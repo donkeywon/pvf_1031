@@ -1,0 +1,66 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Sleep3.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CAMOUFLAGE]
+		1	7700
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[LIMIT]
+		1
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`呃~被发现了？`
+	[CAMOUFLAGE]
+		1	100
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			56136
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-300	300
+		[RANDOM]
+			-100	100	0
+		[NO EFFECT]
+		[SUMMON TIME]
+			20000
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

@@ -1,0 +1,112 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Kick.ani`
+	[SUB ANI]
+		`../animation/effect/Move.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			150
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`kick`	
+		[=]
+			`kick`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[IF]
+		`kick`	
+		[=>]
+			3
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`superKick.act`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[IF]
+		`kick`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`再不躲开，就准备挨踢吧！`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[IF]
+		`kick`	
+		[=]
+			2
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`赶紧逃走……`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]

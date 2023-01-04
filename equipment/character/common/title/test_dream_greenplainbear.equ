@@ -1,0 +1,88 @@
+#PVF_File
+
+[name]
+	`草原之幻想  (棕熊)`
+
+[name2]
+	`Green Plain's Dream (bear)`
+
+[explain]
+	`攻击敌人时， 有2%%的几率使自身增加10点力量， 效果持续20秒。`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	50
+
+[custom animation]
+	`TitleAnimation/dream_greenplainbear.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	150
+
+[physical attack]
+	15
+
+[physical defense]
+	15
+
+[HP regen speed]
+	30
+
+[move speed]
+	10
+
+[attack speed]
+	10
+
+[hit recovery]
+	100
+
+[if]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[stat]
+		`physical attack`
+		`+`	20
+[/then]
+
+[stuck]
+	-2
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

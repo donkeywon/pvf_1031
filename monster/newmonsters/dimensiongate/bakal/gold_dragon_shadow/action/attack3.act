@@ -1,0 +1,125 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/80Attack.ani`
+	[SUB ANI]
+		`../Animation/80Attack_eff.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`NMAUG_SKILL_03`	1
+		`NMAUG_SKILL_03`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`position`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[CHARACTER]
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9142
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0
+		[RANDOM SELECT]
+			10	1	-10	-15	15
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			50	90	70
+		[/RANDOM SELECT]
+		[FIX DIRECTION]
+		[RANDOM]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[WHICH]
+	[CHARACTER]
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9142
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0
+		[RANDOM SELECT]
+			10	1	-10	-15	15
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			50	90	70
+		[/RANDOM SELECT]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`position`	
+		[=]
+			`position`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[IF]
+		`position`	
+		[<]
+			2
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		1
+[/BEHAVIOR]

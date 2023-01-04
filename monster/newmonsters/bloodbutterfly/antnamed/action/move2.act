@@ -1,0 +1,95 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Trap_ex.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+	[DIM]
+		`throw`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	300
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8926
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			64
+		[POS]
+			0	0	5
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`throw`	
+		[=]
+			`throw`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[IF]
+		`throw`	
+		[=>]
+			15
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		3
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[CHECK DISTANCE]
+			90	50
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		6
+	[NOW]
+[/BEHAVIOR]

@@ -1,0 +1,154 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Move.ani`
+	[SUB ANI]
+		`../Animation/Equip/Move.ani`	0	0
+		`../Animation/Eye/Move.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[OFF]
+	[TRIGGER]
+		1
+	[ON]
+	[DIM]
+		`time3`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[SUMMON MONSTER]
+		[INDEX]
+			61148
+		[LEVEL]
+			0
+		[POS]
+			100	0	0
+		[NO EFFECT]
+		[SUMMON TIME]
+			10000
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61148
+		[LEVEL]
+			0
+		[POS]
+			-100	0	0
+		[NO EFFECT]
+		[SUMMON TIME]
+			10000
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61148
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[SUMMON TIME]
+			10000
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61148
+		[LEVEL]
+			0
+		[POS]
+			100	50	0
+		[NO EFFECT]
+		[SUMMON TIME]
+			10000
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61148
+		[LEVEL]
+			0
+		[POS]
+			100	-50	0
+		[NO EFFECT]
+		[SUMMON TIME]
+			10000
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61148
+		[LEVEL]
+			0
+		[POS]
+			-100	50	0
+		[NO EFFECT]
+		[SUMMON TIME]
+			10000
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61148
+		[LEVEL]
+			0
+		[POS]
+			-100	-50	0
+		[NO EFFECT]
+		[SUMMON TIME]
+			10000
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61148
+		[LEVEL]
+			0
+		[POS]
+			0	50	0
+		[NO EFFECT]
+		[SUMMON TIME]
+			10000
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61148
+		[LEVEL]
+			0
+		[POS]
+			0	-50	0
+		[NO EFFECT]
+		[SUMMON TIME]
+			10000
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time3`	
+		[+]
+			13000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO PROC BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		0
+	[ON]
+[/BEHAVIOR]

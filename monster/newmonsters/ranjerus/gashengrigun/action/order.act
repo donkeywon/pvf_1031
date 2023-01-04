@@ -1,0 +1,51 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Order.ani`
+	[SUB ANI]
+		`../animation/wp/Order.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`GRIGUN_SKILL_03`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8581
+		[PARTICLE FILENAME]
+			`../Particle/Summon.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	300
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`是精英追击者！`
+	[TRIGGER]
+		1
+	[RESET]
+[/BEHAVIOR]

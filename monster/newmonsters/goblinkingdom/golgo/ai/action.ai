@@ -1,0 +1,31 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[hp]
+			`%>=`	60
+		[true]
+	
+		[think]
+			[void]
+				`is attack action enable()`	7	0
+			[true]
+			[import ai]
+				`OnTheWagon.ai`
+			[false]
+			[import ai]
+				`OnTheGround.ai`
+		[/think]
+	[false]
+	[think]
+		[void]
+			`is attack action enable()`	7	0
+		[true]
+		[return]
+			7
+		[false]
+		[import ai]
+			`OnTheGround.ai`
+	[/think]
+	[/think]
+[/ai pattern]

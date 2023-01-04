@@ -1,0 +1,102 @@
+#PVF_File
+
+[name]
+	`伟大的救援队`
+
+[name2]
+	``
+
+[explain]
+	`攻击[特伦斯发电站]地下城的领主——闪电之帕特里斯时， 可以消耗2个无色小晶块召唤出格兰迪站长安德斯、 特伦斯站长维特斯或者能源中心负责人拉斯特中的一个， 该救援者存在20秒。 (冷却时间60秒)`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	456
+
+[custom animation]
+	`TitleAnimation/lifesaving.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[separate attack]
+	50	50
+
+[if]
+	[target check]
+		`monster`	64020
+	[/target check]
+	[attack success]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			20000
+		[consume item]
+			3037	2
+		[summon apc]
+			10417	-1	1
+		[then probability]
+			33.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			20000
+		[consume item]
+			3037	2
+		[summon apc]
+			10418	-1	1
+		[then probability]
+			33.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			20000
+		[consume item]
+			3037	2
+		[summon apc]
+			25410	-1	1
+		[then probability]
+			34.0
+	[/then]
+[/multiple then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[icon mark]
+	`Item/IconMark.img`	64

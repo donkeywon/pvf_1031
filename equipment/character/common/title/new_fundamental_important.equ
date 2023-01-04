@@ -1,0 +1,119 @@
+#PVF_File
+
+[name]
+	`基础精通者`
+
+[name2]
+	`The Fundamental is important.`
+
+[explain]
+	`攻击时， 有1%%的几率使自身增加15点力量和10点体力， 效果持续20秒。
+施放技能时， 有2%%的几率使自身增加15点智力和10点精神， 效果持续20秒。`
+
+[flavor text]
+	`吃饭时， 筷子用的不好， 有可能好吃的被别人夹走~所以任何事情， 基础很重要！  --风振`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	97
+
+[custom animation]
+	`TitleAnimation/fundamental_important.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	8
+
+[physical defense]
+	5
+
+[magical attack]
+	8
+
+[magical defense]
+	5
+
+[move speed]
+	10
+
+[attack speed]
+	10
+
+[cast speed]
+	10
+
+[if]
+	[cooltime]
+		40000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	15
+	[stat]
+		`physical defense`
+		`+`	10
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[stat]
+		`magical attack`
+		`+`	15
+	[stat]
+		`magical defense`
+		`+`	10
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[icon mark]
+	`Item/IconMark.img`	64

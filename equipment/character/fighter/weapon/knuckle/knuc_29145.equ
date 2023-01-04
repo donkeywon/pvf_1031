@@ -1,0 +1,177 @@
+#PVF_File
+
+[name]
+	`邪恶终结者`
+
+[name2]
+	`Sirabro Caris`
+
+[basic explain]
+	`攻击不死族敌人时， 附加20%%的伤害。
+攻击恶魔族敌人时， 附加20%%的伤害。`
+
+[flavor text]
+	`在你身上， 我能明显感觉到一股与众不同的神秘气息。  --歌兰蒂斯`
+
+[grade]
+	70
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	65
+
+[magical attack]
+	47
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[price]
+	112000
+
+[repair price]
+	94080
+
+[value]
+	89600
+
+[equipment physical attack]
+	640	583
+
+[equipment magical attack]
+	775	706
+
+[separate attack]
+	411	278
+
+[skill levelup]
+	`[fighter]`	30	2
+	`[at fighter]`	112	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/knuckle.img`	68
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	10	4
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	10	4
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[if]
+	[target type]
+		`undead`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	20
+[/then]
+
+[if]
+	[target type]
+		`devil`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	20
+[/then]
+
+[routing priority]
+	`fighter`	1
+	`at fighter`	1
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

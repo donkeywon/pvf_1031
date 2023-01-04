@@ -1,0 +1,43 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/dash_grab_dummy.ani`
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<]
+			10
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		4	1000
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11158
+		[PARTICLE FILENAME]
+			`../Particle/dash_grab_shockwave.ptl`
+		[LEVEL]
+			1
+		[POS]
+			0	0	0
+		[USE MY BASEPOS]
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

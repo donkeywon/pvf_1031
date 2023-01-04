@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Sit_Casting.ani`
+	[SUB ANI]
+		`../Animation/Effect/Sit_Casting.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`咳咳……呃……`
+	[CASTING]
+		5000	1
+	[APPENDAGE]
+		5000	
+		[physical defense]
+		[%]
+			-100.0
+		[magical defense]
+		[%]
+			-100.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		2
+[/BEHAVIOR]

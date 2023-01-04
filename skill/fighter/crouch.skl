@@ -1,0 +1,110 @@
+#PVF_File
+
+[name2]
+	`Crouch`
+
+[purchase cost]
+	50
+[/purchase cost]
+
+[required level]
+	10
+
+[required level range]
+	1
+
+[type]
+	`[active]`
+
+[skill class]
+	2
+
+[maximum level]
+	10
+
+[growtype maximum level]
+	1	1	1	1	1	1
+
+[skill fitness growtype]
+	0	1	2	3	4
+[/skill fitness growtype]
+
+[durability decrease rate]
+	0
+
+[weapon effect type]
+	`[physical]`
+
+[icon]
+	`Character/Fighter/Effect/SkillIcon.img`	20
+	`Character/Fighter/Effect/SkillIcon.img`	21
+
+[command]
+	{6=`(DOWN)`}
+	{8=`,`}
+	{6=`(DOWN)`}
+	{8=`,`}
+	{6=`(JUMP)`}
+[/command]
+
+[dungeon]
+	[consume MP]
+		3	4
+	[cool time]
+		3000	3000
+	[static data]
+		500
+	[/static data]
+	[level info]
+		3
+		2000	-500	200
+		2100	-467	211
+		2200	-433	222
+		2300	-400	233
+		2400	-367	244
+		2500	-333	256
+		2600	-300	267
+		2700	-267	278
+		2800	-233	289
+		2900	-200	300
+	[/level info]
+[/dungeon]
+
+[pvp]
+	[cool time]
+		6000	6000
+	[static data]
+		0
+	[/static data]
+[/pvp]
+
+[death tower]
+[/death tower]
+
+[warroom]
+[/warroom]
+
+[name]
+	`蹲伏`
+
+[explain]
+	`蹲下并避开敌人的上段判定式攻击。
+若[蹲伏]中按攻击键， 则可以用肩尖攻击敌人； 经过一定时间或按跳跃键可以中断蹲伏状态。
+若在前冲中使用此技能， 则可以边向前滑行边蹲下； Lv越高滑行的距离越远。`
+
+[basic explain]
+	`蹲下并避开敌人的上段判定式攻击。`
+
+[command key explain]
+	`操作指令 : ↓↓ + C`
+
+[level property]
+	1	99
+	`蹲下时间上限 : <float1>秒
+物理攻击力 : <int>%%`
+	-1	0	0.001
+	-1	2	1.0
+[/level property]
+
+[feature skill index]
+	143

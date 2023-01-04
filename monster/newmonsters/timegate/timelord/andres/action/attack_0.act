@@ -1,0 +1,52 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack_0_0.ani`
+	[SUB ANI]
+		`../Animation/Attack_0_3.ani`	0	-1
+		`../Animation/eye_eff0.ani`	0	1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			15058
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			18	1	122
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			15058
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			35	1	122
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

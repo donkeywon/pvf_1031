@@ -1,0 +1,40 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/cry.ani`
+	[SOUND]
+		`HUNTER_SCREAM`	3
+	[/SOUND]
+	[SPEECH]
+		`女神……女神的保护~`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1600	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11120
+		[PARTICLE FILENAME]
+			`../Particle/dummy.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[USE MY BASEPOS]
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

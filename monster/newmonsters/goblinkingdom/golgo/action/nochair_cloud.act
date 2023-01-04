@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/nochair_cloud.ani`
+	[SUB ANI]
+		`../Animation/Stick/Stick_nochair_cloud.ani`	0	10
+	[/SUB ANI]
+	[SPEECH]
+		`别玩了，还是过来服侍朕吧！`	2	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8248
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	180
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,175 @@
+#PVF_File
+
+[name]
+	`蛮龙魔杖`
+
+[basic explain]
+	`攻击时， 有2%%的几率使自身进入祝福状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使自身进入祝福状态20秒； 祝福状态下， 增加30点力量、 体力、 智力和精神。`
+
+[grade]
+	72
+
+[rarity]
+	2
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	70
+
+[magical attack]
+	68
+
+[attack speed]
+	100
+
+[cast speed]
+	50
+
+[price]
+	100800
+
+[repair price]
+	84672
+
+[value]
+	80640
+
+[equipment physical attack]
+	580	562
+
+[equipment magical attack]
+	708	686
+
+[separate attack]
+	318	215
+
+[skill levelup]
+	`[mage]`	48	1
+	`[mage]`	76	1
+	`[at mage]`	23	1
+	`[at mage]`	31	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/weapon/mage/rod.img`	88
+
+[field image]
+	`Item/field_weapon.img`	7
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[mage]`
+
+[variation]
+	19	1
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	19	1
+
+[layer variation]
+	2150
+	`at_roda`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_rodd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	19	1
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`ROD_TOUCH`
+
+[durability]
+	24
+
+[weight]
+	2200
+
+[item group name]
+	`rod`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[active status]
+		`bless`	72	30	30	30	30
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,72 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Coalmine_gate.ani`
+	[SUB ANI]
+		`../Animation/Coalmine_GateCar.ani`	0	-3
+		`../Animation/Coalmine_gate_body.ani`	0	-3
+		`../Animation/Coalmine_gate_buttum.ani`	0	-3
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Coalmine_gate.ptl`	0	5	30
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Coalmine_gate_Buttum.ptl`	0	0	1
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8921
+		[PARTICLE FILENAME]
+			`../Particle/Coalmine_Down.ptl`
+		[LEVEL]
+			65
+		[POS]
+			58	20	5
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

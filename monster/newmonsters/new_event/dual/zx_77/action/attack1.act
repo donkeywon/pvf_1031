@@ -1,0 +1,43 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack.ani`
+	[SPEECH]
+		`消灭敌人吧`	1	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[RIGHT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16157
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			1
+		[POS]
+			15	0	1
+		[USE OBJECT ZPOS]
+		[COLLISION GROUP]
+			2	0	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

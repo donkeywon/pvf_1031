@@ -1,0 +1,139 @@
+#PVF_File
+
+[name]
+	`强化 - 暴力抓取`
+
+[name2]
+	`Definite Grab UpGrade`
+
+[explain]
+	`一定时间内，施展膝盖顶击、抛投、旋转冲刺时，会变成牵引周围所有敌人的范围捕捉，膝盖顶击、抛投、快速射击、双脚夹击、激猛攻级、旋转冲刺、裂石破天，这就是我的攻击节奏！ 使用技能时，从尝试捕捉的动作中变成霸体，捕捉的命中率变成100%%，攻击力增加。`
+
+[explain ex]
+	`抓取范围内可抓取的敌人数量增加。
+技能每增加Lv1时抓取的敌人数量增加量 : 1个体`
+
+[basic explain]
+	`一定时间内，施展膝盖顶击、抛投、旋转冲刺时，会变成牵引周围所有敌人的范围捕捉，膝盖顶击、抛投、快速射击、双脚夹击、激猛攻级、旋转冲刺、裂石破天，这就是我的攻击节奏！ 使用技能时，从尝试捕捉的动作中变成霸体，捕捉的命中率变成100%%，攻击力增加。`
+
+[basic explain ex]
+	`范围捕捉的敌人数目增加。`
+
+[executable states]
+	8
+[/executable states]
+
+[feature skill type]
+	1
+
+[special purchase cost]
+	2
+[/special purchase cost]
+
+[required level]
+	65
+
+[required level range]
+	5
+
+[pre required skill]
+	50	10
+[/pre required skill]
+
+[type]
+	`[passive]`
+
+[skill class]
+	0
+
+[maximum level]
+	10
+
+[growtype maximum level]
+	0	0	0	0	5	0
+
+[skill fitness growtype]
+	4
+[/skill fitness growtype]
+
+[icon]
+	`Character/Fighter/Effect/ATSkillIcon.img`	202
+	`Character/Fighter/Effect/ATSkillIcon.img`	203
+
+[dungeon]
+	[static data]
+		-1000
+	[/static data]
+	[level info]
+		4
+		18000	2	4	100
+		21000	4	4	100
+		24000	5	4	100
+		27000	7	4	100
+		30000	8	4	100
+		33000	10	4	100
+		36000	11	4	100
+		39000	13	4	100
+		42000	14	4	100
+		45000	16	4	100
+		48000	18	4	100
+		51000	19	4	100
+		54000	21	4	100
+		57000	22	4	100
+		60000	24	4	100
+		63000	25	4	100
+		66000	27	4	100
+		69000	28	4	100
+		72000	30	4	100
+		75000	32	4	100
+	[/level info]
+	[special level up]
+		-1	2
+		`+`	1
+	[/special level up]
+[/dungeon]
+
+[pvp]
+	[static data]
+		-120
+	[/static data]
+	[level info]
+		4
+		5000	2	2	70
+		6000	4	2	70
+		6480	5	2	70
+		7290	7	2	70
+		8100	8	2	70
+		8910	10	2	70
+		10000	11	2	70
+		10530	13	2	70
+		11340	14	2	70
+		12150	16	2	70
+		12960	18	2	70
+		13770	19	2	70
+		14580	21	2	70
+		15390	22	2	70
+		16200	24	2	70
+		17010	25	2	70
+		17820	27	2	70
+		18630	28	2	70
+		19440	30	2	70
+		20250	32	2	70
+	[/level info]
+[/pvp]
+
+[death tower]
+[/death tower]
+
+[warroom]
+[/warroom]
+
+[level property]
+	1	99
+	`有效时间 : <float1>秒
+抓取攻击力增加率 : <float1>%%
+可同时抓取的敌人数量上限 : <int>`
+	-1	0	0.001
+	-1	1	1.0
+	-1	2	1.0
+[/level property]

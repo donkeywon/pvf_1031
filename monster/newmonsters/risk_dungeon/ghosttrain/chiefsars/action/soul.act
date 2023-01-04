@@ -1,0 +1,44 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/soul.ani`
+	[SUB ANI]
+		`../Animation/foot/soul.ani`	0	0
+		`../Animation/hand/soul.ani`	0	0
+		`../animation/ef/soul.ani`	0	10
+		`../animation/ef/soul.ani`	0	10
+	[/SUB ANI]
+	[SPEECH]
+		`听，这是亡者们的呐喊~`	0	100
+	[/SPEECH]
+	[SOUND]
+		`SAS_SKILL_02_1`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[OFF]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35314
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			30	1	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

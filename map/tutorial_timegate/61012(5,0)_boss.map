@@ -1,0 +1,110 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	10001
+[/dungeon]
+
+[type]
+	`[boss]`
+
+[greed]
+	`EE EE`
+
+[tile]
+	`Tile/ForestOver.til`
+	`Tile/ForestOver.til`
+	`Tile/ForestOverUnder.til`
+	`Tile/ForestUnder.til`
+	`Tile/ForestUnder.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/far1.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/mid1.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	16	216	1082	841	1001	902	1149	613
+
+[sound]
+	`AMB_FOREST_01`
+	`M_FOREST_02`
+[/sound]
+
+[animation]
+	`Animation/BurntTree4.ani`	`[close]`	484	429	0
+	`Animation/Flower1.ani`	`[normal]`	480	130	0
+	`Animation/Flower0.ani`	`[normal]`	915	180	0
+	`Animation/Flower2.ani`	`[normal]`	1213	147	0
+	`Animation/Flower2.ani`	`[normal]`	1188	155	0
+	`Animation/Flower0.ani`	`[normal]`	159	156	0
+	`Animation/Flower2.ani`	`[normal]`	1129	174	0
+	`Animation/Flower1.ani`	`[normal]`	463	189	0
+	`Animation/Flower0.ani`	`[normal]`	366	221	0
+	`Animation/Grass2.ani`	`[bottom]`	944	278	0
+	`Animation/Grass2.ani`	`[bottom]`	545	276	0
+	`Animation/Tree0.ani`	`[closeback]`	355	131	0
+	`Animation/BurntTree5.ani`	`[closeback]`	231	137	0
+	`Animation/Tree3.ani`	`[closeback]`	1301	142	0
+	`Animation/smallTree1.ani`	`[closeback]`	592	152	0
+	`Animation/BurntTree2.ani`	`[closeback]`	1029	160	0
+[/animation]
+
+[passive object]
+	5	150	150	0
+	6	330	230	500
+	5	650	190	0
+	6	830	270	500
+	5	1150	170	0
+	6	1330	250	500
+[/passive object]
+
+[monster]
+	19	0	1	650	209	0	1	1	`[fixed]`	`[normal]`
+	19	0	1	463	236	0	2	1	`[fixed]`	`[boss]`
+	19	0	1	574	314	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[NPC]
+	63	`[left]`	760	256	0
+[/NPC]
+
+[map name]
+	`PVP 无名`

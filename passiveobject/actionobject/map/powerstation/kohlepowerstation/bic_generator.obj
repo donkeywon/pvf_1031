@@ -1,0 +1,56 @@
+#PVF_File
+
+[name]
+	`青铜石巨人的子弹`
+
+[layer]
+	`[closeback]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	1000
+
+[basic action]
+	`Action/Bic_generator.act`
+
+[etc action]
+	`Action/Bic_generator_destroy.act`
+	`Action/Bic_generator_destroy2.act`
+	`Action/Bic_generator_destroy3.act`
+	`Action/Bic_generator_damage.act`
+	`Action/Bic_generator.act`
+[/etc action]
+
+[team]
+	100
+
+[destroy particle]
+	`Particle/Bic_generator_destroy.ptl`
+
+[add particles]
+	[particle]
+		[file]
+			`Particle/Bic_generator_destroy.ptl`
+	[/particle]
+[/add particles]
+
+[hp gage]
+	1
+
+[is hp by difficulty]
+	1
+
+[hp max]
+	5000000
+
+[hp destroy]
+	1
+
+[warning]
+	[min distance]
+		0	0	0
+	[max distance]
+		0	0	0
+[/warning]

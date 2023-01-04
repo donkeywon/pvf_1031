@@ -1,0 +1,194 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/SpinCore.ani`
+	[SUB ANI]
+		`../Animation/Spin32.ani`	0	0
+		`../Animation/Spin11.ani`	0	0
+		`../Animation/Spin12.ani`	0	0
+		`../Animation/Spin21.ani`	0	0
+		`../Animation/Spin22.ani`	0	0
+		`../Animation/Spin31.ani`	0	0
+		`../Animation/Spin32.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET USE HOMING]
+		0
+	[SET SPEED]
+		[X AXIS]
+			-180
+		[Y AXIS]
+			-200
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		0
+	[CHECKUP]
+		[IS END MAP VERTICALLY]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[BOUNCE FROM THE WALL]
+		0	60
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		0
+	[CHECKUP]
+		[IS END MAP]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[BOUNCE FROM THE WALL]
+		1	60
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			120
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TAKE IT]
+		60036	0	0	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			8000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[OFF]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		2
+	[OFF]
+	[TRIGGER]
+		3
+	[OFF]
+	[TRIGGER]
+		4
+	[OFF]
+	[TRIGGER]
+		5
+	[ON]
+	[TRIGGER]
+		6
+	[ON]
+	[SET USE HOMING]
+		1
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[ENABLE]
+	[OFF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Y AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[THROW ITS OWN]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		4
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]

@@ -1,0 +1,53 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/fire_roundwood_particle1.ani`
+	[SUB ANI]
+		`../Animation/fire_roundwood_particle2.ani`	0	0
+		`../Animation/fire_roundwood_particle3.ani`	0	0
+		`../Animation/fire_roundwood_particle4.ani`	0	0
+		`../Animation/fire_roundwood_particle5.ani`	0	0
+		`../Animation/fire_roundwood_particle6.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DIRECT DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			1700
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[DESTROY]
+[/BEHAVIOR]

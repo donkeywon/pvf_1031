@@ -1,0 +1,145 @@
+#PVF_File
+
+[name]
+	`弗里斯匕首`
+
+[name2]
+	`Vries Dagger`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入冰冻状态。
+攻击速度 +2%%`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入冰冻状态4秒； 但在决斗场中， 只能持续2秒。 (若敌人高于Lv60， 则减少进入异常状态的几率； 反之， 则增加几率)
+攻击速度 +2%%`
+
+[grade]
+	62
+
+[rarity]
+	2
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	60
+
+[physical attack]
+	39
+
+[attack speed]
+	120
+
+[stuck]
+	1
+
+[price]
+	86800
+
+[repair price]
+	72912
+
+[value]
+	69440
+
+[equipment physical attack]
+	462	445
+
+[equipment magical attack]
+	490	472
+
+[separate attack]
+	270	182
+
+[physical critical hit]
+	13
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/weapon/thief/dagger.img`	66
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[thief]`
+
+[variation]
+	11	2
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		6000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		4000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`freeze`	60
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

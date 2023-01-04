@@ -1,0 +1,29 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[hp]
+			`%<=`	99
+		[true]
+	
+		[think]
+			[my state]
+				0.0
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	2
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					2
+			[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+[/ai pattern]

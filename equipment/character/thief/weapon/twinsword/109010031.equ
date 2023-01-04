@@ -1,0 +1,169 @@
+#PVF_File
+
+[name]
+	`千月之魅`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 有2%%的几率使500px范围内的所有敌人进入失明状态。
+对失明状态下敌人的多段攻击次数 +2`
+
+[detail explain]
+	`攻击时， 有2%%的几率使500px范围内的所有敌人进入失明状态3秒； 失明状态下的敌人， 会减少90%%的视野和20%%的命中率。 (若敌人高于Lv85， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+对失明状态下敌人的多段攻击次数 +2
+每次多段攻击附加7%%的伤害 (在决斗场中 +4%%)`
+
+[routing priority]
+	`thief`	1
+[/routing priority]
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	56
+
+[attack speed]
+	-80
+
+[price]
+	136000
+
+[repair price]
+	114240
+
+[value]
+	108800
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	840	779
+
+[equipment magical attack]
+	659	611
+
+[separate attack]
+	504	343
+
+[physical critical hit]
+	5
+
+[dark attack]
+	13
+
+[icon]
+	`item/new_equipment/01_weapon/thief/twinswd/twinswd.img`	105
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	24	1
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[duration]
+		3000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[active status]
+		`blind`	85	90	20
+[/then]
+
+[if]
+	[target active status]
+		`blind`
+	[attacker]
+		`character`	-1
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	7
+	[add absolute damage]
+		`all`
+		`%`	7
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	68

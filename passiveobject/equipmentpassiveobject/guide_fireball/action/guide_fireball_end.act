@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/guide_fireball_end01.ani`
+	[SUB ANI]
+		`../Animation/guide_fireball_end02.ani`	0	1
+		`../animation/guide_fireball_end03.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`FITZ_FLAMEBALL_EXP`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET USE HOMING]
+		0
+[/BEHAVIOR]

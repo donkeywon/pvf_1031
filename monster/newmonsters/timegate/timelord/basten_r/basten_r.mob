@@ -1,0 +1,189 @@
+#PVF_File
+
+[name]
+	`巴斯顿的左臂`
+
+[face image]
+	`Monster/MonsterFace.img`	708
+
+[category]
+	`[spirit]`
+[/category]
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	120
+	`[HP MAX]`	`*`	700
+[/ability category]
+
+[level]
+	70	70
+
+[slow resistance]
+	100	100
+
+[freeze resistance]
+	100	100
+
+[poison resistance]
+	30	30
+
+[stun resistance]
+	100	100
+
+[curse resistance]
+	100	100
+
+[blind resistance]
+	100	100
+
+[lightning resistance]
+	30	30
+
+[stone resistance]
+	100	100
+
+[sleep resistance]
+	100	100
+
+[bleeding resistance]
+	30	30
+
+[piercing resistance]
+	50	50
+
+[confuse resistance]
+	100	100
+
+[hold resistance]
+	100	100
+
+[move speed]
+	700	700
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	100000	100000
+
+[warlike]
+	0
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[attack motion]
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+[/attack motion]
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage0.act`
+
+[damage action 2]
+	`Action/Damage1.act`
+
+[attack action]
+	``
+	``
+	`Action/Attack_2.act`
+	``
+	`Action/Attack_4.act`
+	``
+	``
+	`Action/Attack_7.act`
+	`Action/Attack_8.act`
+[/attack action]
+
+[last action]
+	`Action/Last.act`
+
+[proc action]
+	`Action/Proc.act`
+
+[attack info]
+	``
+	``
+	`AttackInfo/Attack_0.atk`
+	``
+	`AttackInfo/Attack_0.atk`
+	``
+	``
+	`AttackInfo/Attack_0.atk`
+	`AttackInfo/Attack_0.atk`
+[/attack info]
+
+[cooltime]
+	0	0	1000	0	4000	0	0	0	0
+[/cooltime]
+
+[think term]
+	300
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	0
+
+[keep range distance with target]
+	50	-20	1	1
+
+[vision]
+	500

@@ -1,0 +1,269 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ACTIVE ATTACKSUCCESS]
+	[CHECKUP]
+		[IS GRABABLE]
+			1
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[IF]
+		`throw`	
+		[=]
+			0
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		61
+	[FRAME]
+		11	11
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		8
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		9
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			15
+		[Y START]
+			-1
+		[Z START]
+			55
+		[MOVE ME]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		6
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			100
+		[Z AXIS]
+			400
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Z AXIS]
+			0
+	[/SET SPEED]
+	[SET FRAME]
+		5
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		9
+	[RESET]
+[/BEHAVIOR]

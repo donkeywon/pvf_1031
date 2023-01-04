@@ -1,0 +1,82 @@
+#PVF_File
+
+[name]
+	`不死之身`
+
+[name2]
+	`Immortality`
+
+[explain]
+	`角色死亡后带着少量HP原地复活， 并且进入自动恢复HP模式。
+自动恢复HP模式下， 角色的HP值可以在一定时间内自动恢复至100%%， 但无法借用任何道具或其它途径恢复HP， 且所受到的伤害还会加剧。
+若在复原模式下死亡， 则无法再次通过该技能复活。`
+
+[basic explain]
+	`角色死亡后带着少量HP原地复活， 并且进入自动恢复HP模式。
+自动恢复HP模式下， 角色的HP值可以在一定时间内自动恢复至100%%， 但无法借用任何道具或其它途径恢复HP， 且所受到的伤害还会加剧。
+若在复原模式下死亡， 则无法再次通过该技能复活。`
+
+[purchase cost]
+	0
+[/purchase cost]
+
+[type]
+	`[passive]`
+
+[skill class]
+	0
+
+[maximum level]
+	1
+
+[growtype maximum level]
+	1	1	1	0	0	0
+
+[skill fitness growtype]
+	0	1	2	3	4
+[/skill fitness growtype]
+
+[required level]
+	1
+
+[required level range]
+	3
+
+[icon]
+	`Character/Mage/Effect/ATSkillIcon.img`	86
+	`Character/Mage/Effect/ATSkillIcon.img`	87
+
+[static data]
+	50	10	15000	60000	60000	60000	60000
+[/static data]
+
+[executable states]
+[/executable states]
+
+[pvp]
+	[static data]
+		50	10	120000	60000	60000	60000
+	[/static data]
+[/pvp]
+
+[death tower]
+[/death tower]
+
+[warroom]
+[/warroom]
+
+[level property]
+	1	99
+	`复原模式下所受伤害增加率 : <int>%%
+复活时立即恢复的HP量 : <int>%%
+复原模式持续时间(普通地下城) : <float2>秒
+复原模式持续时间(远古/异界地下城) : <float2>秒
+复原模式持续时间(亡者峡谷) : <float2>秒
+复原模式持续时间(战场) : <float2>秒`
+	0	0	1.0
+	1	1	1.0
+	2	2	0.001
+	3	3	0.001
+	4	4	0.001
+	5	5	0.001
+[/level property]

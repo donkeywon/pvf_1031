@@ -1,0 +1,42 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/iris_open.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`开启吧...次元的缝隙啊！`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10596
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			200	0	100
+		[FIX DIRECTION]
+		[RIGHT]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

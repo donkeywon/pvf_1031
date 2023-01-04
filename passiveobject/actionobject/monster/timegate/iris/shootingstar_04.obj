@@ -1,0 +1,49 @@
+#PVF_File
+
+[floating height]
+	1
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	1000
+
+[basic action]
+	`Action/shoot.act`
+
+[attack info]
+	`AttackInfo/ShootingStar.atk`
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[MONSTER]`	56147
+	[homing velocity]
+		100	0
+	[homing check gap]
+		1200
+	[max rotation]
+		0
+	[init rotation]
+		0
+	[diff rotation]
+		100
+	[homing time]
+		0
+[/homing]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	25000
+	`[destroy action]`
+	`[object create after destroy]`
+	`[add object index]`	1	40005
+[/object destroy condition]
+
+[name]
+	`流星石`

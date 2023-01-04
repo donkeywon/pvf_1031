@@ -1,0 +1,150 @@
+#PVF_File
+
+[name]
+	`尼尔巴斯的饮血镰[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`破招时， 附加8%%的伤害。
+攻击速度 +2%%
+
+无法进行合成和分解。`
+
+[grade]
+	56
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	38
+
+[magical attack]
+	38
+
+[attack speed]
+	100
+
+[stuck]
+	1
+
+[price]
+	89600
+
+[repair price]
+	75264
+
+[value]
+	71680
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	490	452
+
+[equipment magical attack]
+	516	476
+
+[separate attack]
+	311	208
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[common]`	186	1
+	`[priest]`	37	2
+	`[priest]`	49	2
+	`[priest]`	7	1
+	`[priest]`	115	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/scythe.img`	29
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	2	8
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[if]
+	[attack condition]
+		`counter`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	8
+[/then]
+
+[not amplify]
+	1
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,129 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/proc.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+	[DO PROC BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+	[TRIGGER]
+		0
+	[OFF]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`time3`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time3`	
+		[+]
+			20000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO PROC BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		3
+	[ON]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			62154
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		3
+	[DO PROC BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		10
+	[%]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		-2
+	[%]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time3`	
+		[+]
+			40000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO PROC BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		3
+	[OFF]
+	[SET ACTION]
+	[CUSTOM]
+		4
+	[NOW]
+[/BEHAVIOR]

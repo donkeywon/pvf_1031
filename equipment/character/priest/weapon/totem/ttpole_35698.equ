@@ -1,0 +1,154 @@
+#PVF_File
+
+[name]
+	`暗影图腾`
+
+[name2]
+	`Shadow Totem`
+
+[basic explain]
+	`施放[幻影化身]时， 减少自身的移动速度， 并增加武器物理攻击力。
+[幻影化身]持续时间 +4秒`
+
+[detail explain]
+	`施放[幻影化身]时， 使自身减少7%%的移动速度， 并增加20%%的武器物理攻击力， 效果持续24秒。 (在决斗场中， 武器攻击力 +10%%)
+[幻影化身]持续时间 +4秒`
+
+[flavor text]
+	`又是被这么多人欺负的画面！ 让我早点醒来吧， 求你了。`
+
+[grade]
+	70
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	65
+
+[physical attack]
+	71
+
+[stuck]
+	-1
+
+[price]
+	112000
+
+[repair price]
+	94080
+
+[value]
+	89600
+
+[equipment physical attack]
+	708	645
+
+[equipment magical attack]
+	607	553
+
+[separate attack]
+	411	278
+
+[icon]
+	`Item/weapon/priest/totem.img`	60
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	11	8
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[fire element]`
+
+[skill data up]
+	`[priest]`	35	`[all]`	`[level]`	0	`+`	4000
+[/skill data up]
+
+[if]
+	[cooltime]
+		5000
+	[event use skill]
+		`priest`	35
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		24000
+	[appendage]
+		103
+[/then]
+
+[pvp]
+	[if]
+		[cooltime]
+			5000
+		[event use skill]
+			`priest`	35
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			24000
+		[appendage]
+			104
+	[/then]
+[/pvp]
+
+[routing priority]
+	`priest`	2
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

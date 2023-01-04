@@ -1,0 +1,190 @@
+#PVF_File
+
+[name]
+	`千足蜈蚣爪 [网吧]`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击速度 +2%%
+攻击中毒状态的敌人时， 附加10%%的伤害。
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。`
+
+[detail explain]
+	`攻击速度 +2%%
+攻击中毒状态的敌人时， 附加10%%的伤害。 (在决斗场中 +5%%)
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。`
+
+[grade]
+	64
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	60
+
+[physical attack]
+	43
+
+[magical attack]
+	22
+
+[attack speed]
+	20
+
+[price]
+	102400
+
+[repair price]
+	86016
+
+[value]
+	81920
+
+[equipment physical attack]
+	604	554
+
+[equipment magical attack]
+	604	554
+
+[separate attack]
+	360	242
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[fighter]`	38	3
+	`[at fighter]`	38	3
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/claw.img`	58
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	9	6
+
+[layer variation]
+	2790
+	`clawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	9	6
+
+[layer variation]
+	2150
+	`at_clawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_clawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_clawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[if]
+	[target active status]
+		`poison`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[pvp]
+	[if]
+		[target active status]
+			`poison`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	5
+	[/then]
+[/pvp]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

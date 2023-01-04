@@ -1,0 +1,190 @@
+#PVF_File
+
+[name]
+	`精良的疯狂的空战者`
+
+[name2]
+	`Mad Air Rider`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入减速状态。
+跳跃攻击时， 附加10%%的伤害。
+
+无法进行分解、 封装和合成。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入减速状态12秒； 减速状态下的敌人， 将减少15%%的移动速度和攻击速度。 (若敌人高于Lv62， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+跳跃攻击时， 附加10%%的伤害 (在决斗场中 +5%%)
+
+无法进行分解、 封装和合成。`
+
+[grade]
+	65
+
+[rarity]
+	5
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	62
+
+[physical attack]
+	46
+
+[attack speed]
+	-80
+
+[anti evil]
+	8
+
+[price]
+	0
+
+[repair price]
+	84672
+
+[value]
+	0
+
+[equipment physical attack]
+	583	559
+
+[equipment magical attack]
+	458	438
+
+[separate attack]
+	324	219
+
+[physical critical hit]
+	5
+
+[icon]
+	`Item/weapon/thief/twinswd.img`	60
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	7	0
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		18000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		12000
+	[probability]
+		2
+	[active status]
+		`slow`	62	15	15
+[/then]
+
+[if]
+	[my state]
+		`jump attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[pvp]
+	[if]
+		[cooltime]
+			18000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			12000
+		[probability]
+			2
+		[active status]
+			`slow`	62	15	15
+	[/then]
+	[if]
+		[my state]
+			`jump attack`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	5
+	[/then]
+[/pvp]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]

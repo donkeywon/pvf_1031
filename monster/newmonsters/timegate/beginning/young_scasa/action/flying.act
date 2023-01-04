@@ -1,0 +1,80 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack_4.ani`
+	[SUB ANI]
+		`../animation/body_effect/attack_4.ani`	0	1
+	[/SUB ANI]
+	[SOUND]
+		`YOUNGSKASA_WING`	0
+		`YOUNGSKASA_WING`	6
+		`YOUNGSKASA_WING`	12
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10311
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CHANGE FLOATING HEIGHT]
+		50
+[/BEHAVIOR]
+
+[TRIGGER]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE FLOATING HEIGHT]
+		100
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		16	16
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE FLOATING HEIGHT]
+		100
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`flying_move.act`
+	[CHANGE ACTION FILE]
+	[STAY]
+		`flying_stay.act`
+	[CHANGE AI]
+	[NORMAL]
+		2
+		`flyaction.ai`
+	[CHANGE AI]
+	[NORMAL]
+		1
+		`DestinationSelect2.ai`
+	[REMOVE CATEGORY]
+	[FIXTURE]
+[/BEHAVIOR]
+
+[TRIGGER]
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]

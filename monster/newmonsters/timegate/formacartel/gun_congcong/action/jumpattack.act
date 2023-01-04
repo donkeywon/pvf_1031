@@ -1,0 +1,143 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/JumpAttack.ani`
+	[SUB ANI]
+		`../animation/Effect/JumpKnockSmall1.ani`	0	1
+		`../animation/Effect/JumpKnockSmall2.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`??~~~呯！！`	0	30
+	[/SPEECH]
+	[SOUND]
+		`GUNKONG_SKILL_05`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			600
+		[Z AXIS]
+			600
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			200
+		[Z AXIS]
+			300
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			100
+		[Z AXIS]
+			-50
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			200
+		[Z AXIS]
+			-400
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Z AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8753
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			120	0	5
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			15025
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			100	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

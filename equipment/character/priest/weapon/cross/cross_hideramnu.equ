@@ -1,0 +1,151 @@
+#PVF_File
+
+[name]
+	`兰诺的祝福`
+
+[name2]
+	`Cross which Hide Ramnu `
+
+[basic explain]
+	`施放[荣誉祝福]时， 有30%%的几率发动提升Lv2或Lv3的该技能。`
+
+[grade]
+	72
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	68
+
+[physical defense]
+	60
+
+[magical attack]
+	48
+
+[magical defense]
+	60
+
+[cast speed]
+	20
+
+[price]
+	115200
+
+[repair price]
+	96768
+
+[value]
+	92160
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	684	634
+
+[equipment magical attack]
+	650	602
+
+[equipment physical defense]
+	720	720
+
+[equipment magical defense]
+	720	720
+
+[separate attack]
+	408	275
+
+[skill levelup]
+	`[priest]`	45	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/cross.img`	57
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	12	5
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[if]
+	[event use skill]
+		`priest`	45
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`party`	-1
+		[probability]
+			30
+		[skill levelup]
+			`priest`	45	2
+		[/skill levelup]
+		[then probability]
+			60.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			30
+		[skill levelup]
+			`priest`	45	3
+		[/skill levelup]
+		[then probability]
+			40.0
+	[/then]
+[/multiple then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

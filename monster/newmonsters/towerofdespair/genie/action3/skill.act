@@ -1,0 +1,42 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation3/over_skill.ani`
+	[SUB ANI]
+		`../animation3/over_skill_dodge_over.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			21096
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			1
+		[POS]
+			60	0	130
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			40008
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			1
+		[POS]
+			60	0	130
+	[/CREATE PASSIVEOBJECT]
+	[SAY SPEECH]
+		`再见了！……还不闭眼？`
+[/BEHAVIOR]

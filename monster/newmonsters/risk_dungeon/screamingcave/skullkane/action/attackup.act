@@ -1,0 +1,50 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AttackUp.ani`
+	[SUB ANI]
+		`../Animation/Clothes/AttackUp.ani`	0	0
+		`../Animation/Equip_a/AttackUp.ani`	0	0
+		`../Animation/EquipEffect_a/AttackUp.ani`	0	0
+		`../Animation/Equip_b/AttackUp.ani`	0	0
+		`../Animation/EquipEffect_b/AttackUp.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`SKEL_ATK_01`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11056
+		[PARTICLE FILENAME]
+			`../Particle/Wave.ptl`
+		[LEVEL]
+			60
+		[POS]
+			100	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+[/BEHAVIOR]

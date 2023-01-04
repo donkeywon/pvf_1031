@@ -1,0 +1,49 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Cast.ani`
+	[SOUND]
+		`GHOST_BREMEN`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		2
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		2
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	1000
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		0	
+		[attack speed]
+		[%]
+			80.0
+		[move speed]
+		[%]
+			80.0
+		[hit recovery]
+		[%]
+			10000.0
+	[/APPENDAGE]
+[/BEHAVIOR]

@@ -1,0 +1,134 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/dodge.ani`
+[/MOTION]
+
+[TRIGGER]
+	[CHECK TIME]
+		100
+	[WHICH]
+	[PARTY TARGET]
+		[INDEX]
+			1
+	[/PARTY TARGET]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			60
+		[ZPOS]
+		[<=]
+			10
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9600
+		[/IS INDEX]
+		[CHECKED NO]
+		[<]
+			8
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[CHECK TIME]
+		100
+	[WHICH]
+	[PARTY TARGET]
+		[INDEX]
+			1
+	[/PARTY TARGET]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			60
+		[ZPOS]
+		[<=]
+			10
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9600
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	50
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9596
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	-5	1
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9616
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	-5	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		2
+	[%]
+[/BEHAVIOR]

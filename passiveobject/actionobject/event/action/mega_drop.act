@@ -1,0 +1,45 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/mega_drop.ani`
+	[SUB ANI]
+		`../Animation/mega_drop_effect.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`R_DROP`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			5
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			600
+	[/SET SPEED]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			19506
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		1	200
+	[DESTROY]
+[/BEHAVIOR]

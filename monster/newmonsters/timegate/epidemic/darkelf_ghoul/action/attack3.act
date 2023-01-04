@@ -1,0 +1,45 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack3.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		700	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		2
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8207
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			150	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,45 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack2.ani`
+	[SPEECH]
+		`次元斩！`	4	50
+	[/SPEECH]
+	[SOUND]
+		`R_SQUARESWDA`	3
+		`WHITESWORD_01`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35033
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			100	0	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

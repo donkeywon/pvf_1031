@@ -1,0 +1,75 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/GuardOn/Body.ani`
+	[SUB ANI]
+		`../Animation/GuardOn/Jaw.ani`	0	1
+		`../Animation/GuardOn/Head.ani`	0	2
+		`../Animation/GuardOn/Eye_Dodge.ani`	10	3
+		`../Animation/GuardOn/Start_Back_Dodge.ani`	10	4
+		`../Animation/GuardOn/Start_Core_Dodge.ani`	10	5
+		`../Animation/GuardOn/Start_Floor_Dodge.ani`	10	6
+		`../Animation/GuardOn/Start_Head_Dodge.ani`	10	7
+		`../Animation/GuardOn/Core_Stone.ani`	3	8
+		`../Animation/GuardOn/Core_Charge.ani`	0	9
+		`../Animation/GuardOn/Core_Start_Dodge.ani`	8	10
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	700
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DAMAGE BOX]
+	[OFF]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54032
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			191	1	0
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`DefenceStay.act`
+	[CHANGE AI]
+	[NORMAL]
+		2
+		`DefenceAction.ai`
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]

@@ -1,0 +1,129 @@
+#PVF_File
+
+[name]
+	`黑檀木胸甲`
+
+[name2]
+	`Darkwood Coat`
+
+[basic explain]
+	`装备防御力随角色Lv的增加而增加。 (每提升Lv1， 增加19点物防)`
+
+[flavor text]
+	`第一次看到这么坚固的轻甲， 我绝不会把它卖给别人。  --开始往铁匠之路走的辛达`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	32
+
+[magical attack]
+	21
+
+[price]
+	74400
+
+[repair price]
+	65620
+
+[value]
+	59520
+
+[equipment physical defense]
+	2520	2304
+
+[icon]
+	`Item/common/coat.img`	118
+
+[field image]
+	`Item/field_equip.img`	5
+
+[equipment type]
+	`[coat]`	21
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	2100
+
+[item group name]
+	`la coat`
+
+[cool time]
+	10000
+
+[set name]
+	`黑檀木轻型战甲  套装`
+
+[set item]
+	10915	12911	14905	16901	18908
+[/set item]
+
+[set ability]
+	[stuck resistance]
+		30
+	[if]
+		[cooltime]
+			45000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`party`	-1
+		[duration]
+			30000
+		[probability]
+			1
+		[buff]
+			`camoflage`
+	[/then]
+	[if]
+		[cooltime]
+			30000
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`party`	-1
+		[duration]
+			30000
+		[probability]
+			2
+		[buff]
+			`camoflage`
+	[/then]
+	[fullset basic explain]
+		`攻击时， 有1%%的几率使所有队员进入伪装状态30秒。
+被攻击时， 有2%%的几率使所有队员进入伪装状态30秒。`
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

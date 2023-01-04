@@ -1,0 +1,23 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Damage2.ani`
+	[SUB ANI]
+		`../Animation/Damage2_High.ani`	0	-2
+		`../Animation/Damage2_Bone.ani`	0	-1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Damage.ptl`	0	-5	20
+[/BEHAVIOR]

@@ -1,0 +1,215 @@
+#PVF_File
+
+[name]
+	`冰河殒雪拳套`
+
+[basic explain]
+	`攻击时， 有2%%几率使敌人进入眩晕状态， 效果持续2秒。
+攻击时， 有3%%的几率使敌人进入冰冻状态， 效果持续2秒。
+攻击时， 有30%%的几率附加20%%的冰属性伤害。
+无法进行分解。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态， 效果持续2秒。 (若敌人高于Lv79， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击时， 有3%%的几率使敌人进入冰冻状态， 效果持续2秒。 (若敌人高于Lv79， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击时， 有30%%的几率附加20%%的冰属性伤害。
+无法进行分解。`
+
+[grade]
+	79
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[physical attack]
+	52
+
+[attack speed]
+	100
+
+[need material]
+	3338	840
+
+[repair price]
+	119448
+
+[value]
+	113760
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	792	739
+
+[equipment magical attack]
+	716	669
+
+[separate attack]
+	450	305
+
+[icon]
+	`Item/new_equipment/01_weapon/fighter/bglove/bglove.img`	79
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	21	0
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	22	0
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[routing priority]
+	`fighter`	2
+	`at fighter`	2
+[/routing priority]
+
+[required skill]
+	34
+
+[elemental property]
+	`[water element]`
+
+[if]
+	[cooltime]
+		3000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`freeze`	79
+[/then]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		30
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`water`
+		`%`	20
+[/then]
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`stun`	79
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[icon mark]
+	`Item/IconMark.img`	66

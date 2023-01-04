@@ -1,0 +1,149 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	150.0	20.0	50.0	50.0
+		[true]
+	
+		[think]
+			[void]
+				`number of in attack area()`	210.0	210.0	110.0	110.0
+				`friend`
+				`passive object`	24020
+		
+			[think]
+				[last result]
+					`<`	1.0
+				[true]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	70
+					[true]
+					[return]
+						-1
+					[false]
+					[return]
+						2
+				[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`combo3`
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`s`
+			[true]
+		
+			[think]
+				[void]
+					`check random()`	60.0	100.0
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`a`
+					[true]
+					[return]
+						-1
+					[false]
+					[return str]
+						`a`
+				[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`g`
+		[true]
+		[return]
+			-1
+		[false]
+		[return str]
+			`g`
+	[/think]
+	[/think]
+	[false]
+	[return str]
+		`s`
+	[/think]
+	[false]
+	[return str]
+		`combo3`
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	400.0	0.0	60.0	60.0
+		[true]
+	
+		[think]
+			[void]
+				`number of in attack area()`	210.0	210.0	110.0	110.0
+				`friend`
+				`passive object`	24020
+		
+			[think]
+				[last result]
+					`<`	1.0
+				[true]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	70
+					[true]
+					[return]
+						-1
+					[false]
+					[return]
+						2
+				[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`s`
+		[true]
+	
+		[think]
+			[void]
+				`check random()`	60.0	100.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`a`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`a`
+			[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`g`
+		[true]
+		[return]
+			-1
+		[false]
+		[return str]
+			`g`
+	[/think]
+	[/think]
+	[false]
+	[return str]
+		`s`
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[import ai]
+		`main.ai`
+	[/think]
+	[/think]
+[/ai pattern]

@@ -1,0 +1,134 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Move1.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time2`	
+		[+]
+			4500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Bug-move-stone1.ptl`	0	0	0
+	[PARTICLE]
+		`../particle/Bug-move-stone2.ptl`	0	0	0
+	[PARTICLE]
+		`../particle/Bug-move-kemuri.ptl`	0	0	0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[REMOVE CATEGORY]
+	[FIXTURE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+	[SET SPEED]
+		[X AXIS]
+		[RANDOM]
+			150	170
+		[Y AXIS]
+		[RANDOM]
+			-30	30
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`time2`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		0
+	[OFF]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[ON]
+	[TRIGGER]
+		1
+	[OFF]
+	[SET ACTION]
+	[ATTACK]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[TARGET]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			140
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[ON]
+	[TRIGGER]
+		1
+	[OFF]
+	[SET ACTION]
+	[ATTACK]
+		3
+	[NOW]
+[/BEHAVIOR]

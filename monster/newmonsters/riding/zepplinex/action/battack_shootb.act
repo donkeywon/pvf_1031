@@ -1,0 +1,92 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Fire2.ani`
+	[SUB ANI]
+		`../Animation/FireEffectB2.ani`	0	-1
+		`../Animation/CannonFireF2.ani`	0	-1
+		`../Animation/CannonFireB2.ani`	0	0
+		`../Animation/FireEffectF2.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9106
+		[PARTICLE FILENAME]
+			`../Particle/Bullet2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			62	10	-40
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9106
+		[PARTICLE FILENAME]
+			`../Particle/Bullet2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			62	-10	-45
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9135
+		[PARTICLE FILENAME]
+			`../Particle/Bullet2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			72	8	10
+		[USE MY DIRECTION]
+		[FIX DIRECTION]
+		[NEUTRAL]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9135
+		[PARTICLE FILENAME]
+			`../Particle/Bullet2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			75	-8	0
+		[USE MY DIRECTION]
+		[FIX DIRECTION]
+		[NEUTRAL]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,42 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/TELEPORT.ani`
+	[SPEECH]
+		`位置变更`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+			357	450	90
+		[USE MAP POS]
+		[MOVE ME]
+		[USE EFFECT]
+	[/TELEPORT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		2
+		`TELEPORT.act`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+[/TRIGGER]

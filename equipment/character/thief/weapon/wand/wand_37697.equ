@@ -1,0 +1,149 @@
+#PVF_File
+
+[name]
+	`精良的凶残的汲魂之手`
+
+[name2]
+	`Hands of Ferocious Absorbing Spirits`
+
+[basic explain]
+	`施放技能时， 有3%%的几率使特定的敌人进入诅咒状态。
+
+无法进行分解、 封装和合成。`
+
+[detail explain]
+	`施放技能时， 有3%%的几率使300px范围内最近的敌人进入诅咒状态12秒； 诅咒状态下的敌人， 将减少45点力量、 体力、 智力和精神， 效果持续12秒。 (若敌人高于Lv62， 则减少进入异常状态的几率； 反之， 则增加几率)
+
+无法进行分解、 封装和合成。`
+
+[grade]
+	65
+
+[rarity]
+	5
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	62
+
+[magical attack]
+	46
+
+[attack speed]
+	-100
+
+[anti evil]
+	8
+
+[price]
+	0
+
+[repair price]
+	74088
+
+[value]
+	0
+
+[equipment physical attack]
+	462	443
+
+[equipment magical attack]
+	658	630
+
+[separate attack]
+	324	219
+
+[magical critical hit]
+	5
+
+[icon]
+	`Item/weapon/thief/wand.img`	60
+
+[field image]
+	`Item/field_weapon.img`	18
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[thief]`
+
+[variation]
+	7	4
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2300
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		18000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy near`	300
+	[duration]
+		12000
+	[probability]
+		3
+	[active status]
+		`curse`	62	45	45	45	45
+	[target]
+		`myself`	-1
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`cast speed`
+		`+`	50
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]

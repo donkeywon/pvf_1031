@@ -1,0 +1,115 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/NugolEat.ani`
+	[SUB ANI]
+		`../Animation/StayStones_b.ani`	0	0
+		`../Animation/StayStones_f.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ACTIVE ATTACKSUCCESS]
+	[CHECKUP]
+		[IS INDEX]
+			61149
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`eat`	
+		[>=]
+			15
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		0	
+		[equipment physical attack]
+		[%]
+			20.0
+		[equipment physical defense]
+		[%]
+			20.0
+		[hp max]
+		[%]
+			100.0
+		[equipment magical attack]
+		[%]
+			20.0
+		[equipment magical defense]
+		[%]
+			20.0
+	[/APPENDAGE]
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		10
+		`LaserSpit2.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		12
+		`NugolEat2.act`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`eat`	
+		[=]
+			`eat`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		5
+	[%]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`eat`	
+		[=]
+			0
+	[/DIM]
+	[TRIGGER]
+		2
+	[ON]
+[/BEHAVIOR]

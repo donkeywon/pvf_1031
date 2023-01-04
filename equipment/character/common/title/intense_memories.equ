@@ -1,0 +1,84 @@
+#PVF_File
+
+[name]
+	`别样痕迹秀`
+
+[name2]
+	`Intense Memories`
+
+[explain]
+	`攻击时， 有3%%的几率使自身增加4%%的施放速度， 效果持续20秒。`
+
+[flavor text]
+	`这强烈的痕迹上有着悲伤的传说……`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	334
+
+[custom animation]
+	`TitleAnimation/intense_memories.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move speed]
+	10
+
+[attack speed]
+	10
+
+[cast speed]
+	20
+
+[hit recovery]
+	100
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[cooltime]
+		35000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[duration]
+		20000
+	[probability]
+		3
+	[target]
+		`myself`	-1
+	[stat]
+		`cast speed`
+		`+`	40
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

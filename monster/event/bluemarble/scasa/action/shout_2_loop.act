@@ -1,0 +1,141 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/ShoulderB/ShoulderB_Shout_2_RLoop.ani`
+	[SUB ANI]
+		`../Animation/ArmB/ArmB_Shout_2_Loop.ani`	0	2
+		`../Animation/FingerB/FingerB_Shout_2_Loop.ani`	0	3
+		`../Animation/Neck4/Neck4_Shout_2_Loop.ani`	0	4
+		`../Animation/Neck3/Neck3_Shout_2_Loop.ani`	0	5
+		`../Animation/Neck2/Neck2_Shout_2_Loop.ani`	0	6
+		`../Animation/Neck1/Neck1_Shout_2_Loop.ani`	0	7
+		`../Animation/Jaw/Jaw_Shout_2_Loop.ani`	0	8
+		`../Animation/Head/Head_Shout_2_Loop.ani`	0	9
+		`../Animation/Shoulder/Shoulder_Shout_2_Loop.ani`	0	10
+		`../Animation/Arm/Arm_Shout_2_Loop.ani`	0	11
+		`../Animation/Finger/Finger_Shout_2_Loop.ani`	0	12
+	[/SUB ANI]
+	[SUB ANI WITH XY]
+		`../Animation/ScasaShout1-1.ani`	0	13	390	-160
+		`../Animation/ScasaShout1-2.ani`	0	13	390	-160
+		`../Animation/ScasaShout2-1.ani`	0	13	390	-160
+		`../Animation/ScasaShout2-2.ani`	0	13	390	-160
+	[/SUB ANI WITH XY]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DIRECT DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[DIM]
+		`attacksuccess`	
+		[=]
+			0
+	[/DIM]
+	[TRIGGER]
+		1
+	[ON]
+	[TRIGGER]
+		2
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			2000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[IF]
+		`attacksuccess`	
+		[=]
+			0
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			2000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[IF]
+		`attacksuccess`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		8
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`attacksuccess`	
+		[=]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		20
+	[NOW]
+[/BEHAVIOR]

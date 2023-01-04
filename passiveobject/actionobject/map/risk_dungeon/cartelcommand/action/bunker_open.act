@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/bunker_open.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			62207
+		[LEVEL]
+			100
+		[POS]
+			0	0	0
+		[JUMP OUT]
+		[RANDOM]
+			200	-200
+		[RANDOM]
+			100	-100	80
+		[LEFT]
+		[UP]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

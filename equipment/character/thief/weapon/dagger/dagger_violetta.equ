@@ -1,0 +1,142 @@
+#PVF_File
+
+[name]
+	`维奥莱塔的毒匕首`
+
+[name2]
+	`Violetta`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入中毒状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入中毒状态10秒； 中毒状态下的敌人， 每0.5秒受到77点伤害。 (若敌人高于Lv45， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[grade]
+	47
+
+[rarity]
+	2
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	45
+
+[physical attack]
+	30
+
+[attack speed]
+	100
+
+[stuck]
+	1
+
+[price]
+	65800
+
+[repair price]
+	55272
+
+[value]
+	52640
+
+[equipment physical attack]
+	350	337
+
+[equipment magical attack]
+	371	356
+
+[separate attack]
+	202	135
+
+[physical critical hit]
+	10
+
+[poison resistance]
+	10
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/thief/dagger.img`	29
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[thief]`
+
+[variation]
+	1	3
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		15000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[probability]
+		2
+	[active status]
+		`poison`	45	1550
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

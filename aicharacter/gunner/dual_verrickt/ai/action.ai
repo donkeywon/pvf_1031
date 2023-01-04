@@ -1,0 +1,71 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	120	120	30	30
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	6
+			[false]
+			[return]
+				`jack`
+			[true]
+		
+			[think]
+				[target state]
+					4
+				[true]
+				[return]
+					-1
+				[false]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	7
+					[false]
+					[return]
+						`kick`
+					[true]
+					[return]
+						-1
+				[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	550	0	30	30
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	5
+			[false]
+			[return]
+				`headshot`
+			[true]
+			[return]
+				-1
+		[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	0	550	30	30
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	20
+			[false]
+			[return]
+				`western`
+			[true]
+			[return]
+				-1
+		[/think]
+	[/think]
+	[/think]
+[/ai pattern]

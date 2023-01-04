@@ -1,0 +1,31 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack2.ani`
+	[SOUND]
+		`R_DREAMMANS1_ATK`	2
+		`MINERALSWDC_03`	3
+	[/SOUND]
+	[SPEECH]
+		`呜~~哈`	1	20
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		2000	
+		[attack speed]
+		[%]
+			-50.0
+	[/APPENDAGE]
+[/BEHAVIOR]

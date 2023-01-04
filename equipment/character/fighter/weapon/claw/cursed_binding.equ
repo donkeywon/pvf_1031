@@ -1,0 +1,164 @@
+#PVF_File
+
+[name]
+	`缚咒之爪`
+
+[name2]
+	`Cursed Binding`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入束缚状态。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入束缚状态7秒； 但在决斗场中， 只能持续1.8秒。 (若敌人高于Lv45， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	47
+
+[rarity]
+	2
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	45
+
+[physical attack]
+	30
+
+[magical attack]
+	15
+
+[price]
+	65800
+
+[repair price]
+	55272
+
+[value]
+	52640
+
+[equipment physical attack]
+	412	396
+
+[equipment magical attack]
+	412	396
+
+[separate attack]
+	202	135
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[fighter]`	52	1
+	`[at fighter]`	52	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/fighter/claw.img`	24
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	6
+
+[layer variation]
+	2790
+	`clawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	1	6
+
+[layer variation]
+	2150
+	`at_clawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_clawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_clawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		12600
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[reduce duration to human armor at pvp module]
+		75
+	[probability]
+		3
+	[active status]
+		`hold`	45
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

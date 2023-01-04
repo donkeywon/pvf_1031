@@ -1,0 +1,154 @@
+#PVF_File
+
+[name]
+	`传承 : 战争女神的墨钢链甲`
+
+[name2]
+	`Legacy : Coat of Ishtar`
+
+[grade]
+	47
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	45
+
+[physical attack]
+	26
+
+[physical defense]
+	26
+
+[magical attack]
+	15
+
+[MP regen speed]
+	10
+
+[price]
+	47000
+
+[repair price]
+	41454
+
+[value]
+	37600
+
+[equipment physical defense]
+	2400	2304
+
+[skill levelup]
+	`[swordman]`	24	1
+	`[fighter]`	60	1
+	`[at fighter]`	60	1
+	`[gunner]`	36	1
+	`[at gunner]`	36	1
+	`[priest]`	50	1
+	`[priest]`	116	1
+	`[demonic swordman]`	24	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/IconArmor.img`	304
+
+[field image]
+	`Item/field_equip.img`	10
+
+[equipment type]
+	`[coat]`	20
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	3600
+
+[item group name]
+	`ha coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 战争女神的墨钢重甲  套装`
+
+[set item]
+	11285	13285	15276	19281	17276
+[/set item]
+
+[item overpower part]
+
+[set ability]
+	[HP MAX]
+		350
+	[MP MAX]
+		170
+	[physical attack]
+		60
+	[physical defense]
+		60
+	[magical attack]
+		48
+	[fire resistance]
+		10
+	[stuck resistance]
+		20
+	[HP regen speed]
+		15
+	[move speed]
+		20
+	[attack speed]
+		20
+	[skill levelup]
+		`[swordman]`	76	1
+		`[fighter]`	52	1
+		`[at fighter]`	52	1
+		`[gunner]`	45	1
+		`[at gunner]`	45	1
+		`[priest]`	49	1
+		`[priest]`	115	1
+	[/skill levelup]
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福可以使自身增加7%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	70
+	[/then]
+[/set ability]
+
+[possible kiri protect]

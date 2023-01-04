@@ -1,0 +1,236 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Move2.ani`
+	[SUB ANI]
+		`../Animation/DustWind2.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Y AXIS]
+			190
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Y AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Y AXIS]
+			100
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		5
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		5
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../Particle/Dust.ptl`	0	-1	-15
+	[PARTICLE]
+		`../Particle/Dust.ptl`	10	-1	-15
+	[PARTICLE]
+		`../Particle/Dust.ptl`	20	-1	-15
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../Particle/Dust.ptl`	20	-1	-15
+	[PARTICLE]
+		`../Particle/Dust.ptl`	-40	-1	-15
+	[PARTICLE]
+		`../Particle/Dust.ptl`	60	-1	-15
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../Particle/Dust.ptl`	-20	-1	-15
+	[PARTICLE]
+		`../Particle/Dust.ptl`	-40	-1	-15
+	[PARTICLE]
+		`../Particle/Dust.ptl`	-60	-1	-15
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	100
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8692
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	-1	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		9
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		13
+	[ON]
+	[SET ACTION]
+	[ATTACK]
+		17
+	[END]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`不好~赶紧让时间倒流！！`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		10
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		25
+		`Summon_Sparky.act`
+[/BEHAVIOR]

@@ -1,0 +1,1 @@
+IRDSQRCharacter.pushScriptFiles("Character/Thief/thief_common.nut");

@@ -1,0 +1,23 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Cage.ani`
+	[SUB ANI WITH XYZ]
+		`../Animation/CageBack.ani`	0	0	0	-10	0
+	[/SUB ANI WITH XYZ]
+[/MOTION]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[CHECKUP]
+		[IS OURTEAMATTACKED]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

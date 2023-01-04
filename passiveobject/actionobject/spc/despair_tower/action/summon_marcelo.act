@@ -1,0 +1,99 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Summon_marcelo.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[WHICH]
+	[PLAYER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			8000
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[WHICH]
+	[AI CHARACTER]
+	[CHECKUP]
+		[IS INDEX]
+			20435
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			8000
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON APC]
+		[INDEX]
+			20435
+		[LEVEL]
+			70
+		[POS]
+			0	0	20
+		[NO EFFECT]
+		[USE MY DIRECTION]
+		[TEAM]
+			0
+		[USE OBJECT ZPOS]
+	[/SUMMON APC]
+	[TRIGGER]
+		0
+	[OFF]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[PLAYER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			8000
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[WHICH]
+	[AI CHARACTER]
+	[CHECKUP]
+		[IS INDEX]
+			20435
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			8000
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[ON]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]

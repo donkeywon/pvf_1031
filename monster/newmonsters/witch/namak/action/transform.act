@@ -1,0 +1,57 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Transform.ani`
+	[SOUND]
+		`NAMACK_SKILL_01`	1
+		`NAMACK_CHANGE`	6
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		13	13
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`Fox_Move.act`
+	[CHANGE ACTION FILE]
+	[STAY]
+		`Fox_Stay.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`Fox_Damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`Fox_Damage2.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		``
+	[CHANGE ACTION FILE]
+	[SIT]
+		``
+	[THORNS APPENDAGE]
+		3000	0	6	4000	99	4	1000000
+[/BEHAVIOR]

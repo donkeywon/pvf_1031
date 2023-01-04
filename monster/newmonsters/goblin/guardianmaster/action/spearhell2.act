@@ -1,0 +1,238 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Throw2.ani`
+	[SUB ANI]
+		`../Animation/back/Throw2_400.ani`	0	-2
+		`../Animation/pants/Throw2_300.ani`	0	0
+		`../Animation/shoes/Throw2_600.ani`	0	0
+		`../Animation/skin/Throw2_700.ani`	0	0
+		`../Animation/ac/Throw2_200.ani`	0	0
+		`../Animation/hat/Throw2_500.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`R_GOLI_ATK`	0
+		`SPEAR_02`	3
+		`SPEAR_02`	6
+		`SPEAR_02`	9
+		`SPEAR_02`	12
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8571
+		[PARTICLE FILENAME]
+			`../Particle/ThrowSpear.ptl`
+		[LEVEL]
+			60
+		[POS]
+			-50	0	50
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8571
+		[PARTICLE FILENAME]
+			`../Particle/ThrowSpear.ptl`
+		[LEVEL]
+			60
+		[POS]
+			-30	0	60
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8571
+		[PARTICLE FILENAME]
+			`../Particle/ThrowSpear.ptl`
+		[LEVEL]
+			60
+		[POS]
+			-25	0	70
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8571
+		[PARTICLE FILENAME]
+			`../Particle/ThrowSpear.ptl`
+		[LEVEL]
+			60
+		[POS]
+			30	0	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8571
+		[PARTICLE FILENAME]
+			`../Particle/ThrowSpear.ptl`
+		[LEVEL]
+			60
+		[POS]
+			42	3	65
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8571
+		[PARTICLE FILENAME]
+			`../Particle/ThrowSpear.ptl`
+		[LEVEL]
+			60
+		[POS]
+			-58	0	80
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8571
+		[PARTICLE FILENAME]
+			`../Particle/ThrowSpear.ptl`
+		[LEVEL]
+			60
+		[POS]
+			-60	0	80
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8571
+		[PARTICLE FILENAME]
+			`../Particle/ThrowSpear.ptl`
+		[LEVEL]
+			60
+		[POS]
+			20	3	60
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8571
+		[PARTICLE FILENAME]
+			`../Particle/ThrowSpear.ptl`
+		[LEVEL]
+			60
+		[POS]
+			-20	-2	50
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8571
+		[PARTICLE FILENAME]
+			`../Particle/ThrowSpear.ptl`
+		[LEVEL]
+			60
+		[POS]
+			-60	1	55
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8571
+		[PARTICLE FILENAME]
+			`../Particle/ThrowSpear.ptl`
+		[LEVEL]
+			60
+		[POS]
+			-70	1	30
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8571
+		[PARTICLE FILENAME]
+			`../Particle/ThrowSpear.ptl`
+		[LEVEL]
+			60
+		[POS]
+			-80	1	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8571
+		[PARTICLE FILENAME]
+			`../Particle/ThrowSpear.ptl`
+		[LEVEL]
+			60
+		[POS]
+			60	-1	40
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8571
+		[PARTICLE FILENAME]
+			`../Particle/ThrowSpear.ptl`
+		[LEVEL]
+			60
+		[POS]
+			20	-1	50
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8571
+		[PARTICLE FILENAME]
+			`../Particle/ThrowSpear.ptl`
+		[LEVEL]
+			60
+		[POS]
+			13	11	50
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8571
+		[PARTICLE FILENAME]
+			`../Particle/ThrowSpear.ptl`
+		[LEVEL]
+			60
+		[POS]
+			-20	-2	60
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`别在我面前耍花样！`
+[/BEHAVIOR]

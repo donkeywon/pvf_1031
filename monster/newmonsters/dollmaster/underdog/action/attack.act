@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack.ani`
+	[SOUND]
+		`DOLL_COMMAND`	0
+	[/SOUND]
+	[SPEECH]
+		`蚀！`	12	50
+		`骨！`	12	25
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[TARGET]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	300
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8080
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			60
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

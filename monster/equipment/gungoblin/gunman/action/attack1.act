@@ -1,0 +1,56 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack1.ani`
+	[SPEECH]
+		`竟敢在这里撒野！`	2	20
+		`敢挑战我？！`	2	20
+	[/SPEECH]
+	[SOUND]
+		`HAS_SHOT_01`	3
+		`HAS_SHOT_01`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			48823
+		[PARTICLE FILENAME]
+			`../Particle/bullet.ptl`
+		[LEVEL]
+			0
+		[POS]
+			35	0	80
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			48823
+		[PARTICLE FILENAME]
+			`../Particle/bullet.ptl`
+		[LEVEL]
+			0
+		[POS]
+			50	0	85
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

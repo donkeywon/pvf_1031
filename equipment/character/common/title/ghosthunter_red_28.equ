@@ -1,0 +1,106 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	``
+
+[explain]
+	`攻击时， 有5%%的几率增加7%%的攻击速度和移动速度， 持续时间30秒。`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	229
+
+[custom animation]
+	`TitleAnimation/ghosthunter_red.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	200
+
+[MP MAX]
+	200
+
+[physical attack]
+	30
+
+[physical defense]
+	20
+
+[stuck resistance]
+	20
+
+[move speed]
+	30
+
+[attack speed]
+	30
+
+[physical critical hit]
+	3
+
+[stuck]
+	-2
+
+[if]
+	[cooltime]
+		50000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`move speed`
+		`+`	70
+	[stat]
+		`attack speed`
+		`+`	70
+[/then]
+
+[set name]
+	``
+
+[set item]
+	26425
+[/set item]
+
+[set ability]
+	[all elemental resistance]
+		5
+[/set ability]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

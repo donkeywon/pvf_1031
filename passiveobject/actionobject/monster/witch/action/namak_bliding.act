@@ -1,0 +1,168 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/namak_Bliding.ani`
+	[SUB ANI]
+		`../animation/namak_bliding3.ani`	0	0
+		`../animation/namak_bliding2.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[DIM]
+		`damage`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		5
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			0
+		[Y START]
+			0
+		[Z START]
+			60
+		[MOVE ME]
+	[/SET POS FORCE]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		2
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			0
+		[Y START]
+			0
+		[Z START]
+			60
+		[MOVE ME]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[ON DAMAGE]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`damage`	
+		[=]
+			`damage`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`damage`	
+		[>=]
+			5
+	[/IF]
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			30
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[GET TARGET]
+		1
+	[DISTANCE]
+	[LOW]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		5
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		-10
+	[%]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`damage`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			100000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

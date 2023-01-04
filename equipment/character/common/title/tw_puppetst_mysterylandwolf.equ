@@ -1,0 +1,107 @@
+#PVF_File
+
+[name]
+	`神秘王国的人偶剧 (狼)`
+
+[name2]
+	``
+
+[explain]
+	`攻击时以1%%的机率30秒内力量增加30。施展时以2%%机率30秒内物理爆击增加5%%。`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	93
+
+[custom animation]
+	`TitleAnimation/puppet_stage.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	20
+
+[physical defense]
+	20
+
+[stuck resistance]
+	20
+
+[inventory limit]
+	10000
+
+[move speed]
+	20
+
+[attack speed]
+	30
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	30
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`physical critical hit`
+		`+`	5
+[/then]
+
+[physical critical hit]
+	2
+
+[stuck]
+	-1
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

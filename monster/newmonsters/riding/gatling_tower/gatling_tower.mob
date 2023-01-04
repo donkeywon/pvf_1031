@@ -1,0 +1,161 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`加特林机枪炮塔`
+
+[face image]
+	`Monster/MonsterFace.img`	520
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	110
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	110
+[/ability category]
+
+[category]
+	`[machine]`
+	`[fort armor]`
+	`[range combat]`
+	`[close-carefully]`
+[/category]
+
+[level]
+	60	60
+
+[move speed]
+	0	0
+
+[attack speed]
+	1000	1000
+
+[hit recovery]
+	800	800
+
+[weight]
+	80000	80000
+
+[vision]
+	1900
+
+[stuckbonus on damage]
+	15	25	35	35
+
+[waiting action]
+	`Action/Stay.act`
+
+[proc action]
+	`Action/Proc.act`
+
+[attack action]
+	`Action/Attack1.act`
+	``
+	`Action/Shot.act`
+	``
+	``
+	``
+	``
+	``
+	`Action/reload.act`
+	`Action/Shot_Loop.act`
+	`Action/Shot_End.act`
+[/attack action]
+
+[ridableskill definition]
+	[pattern]
+		0
+	[image path]
+		`Sprite/Monster/riding/at_5t/Transport_Skill.img`
+	[skill]
+		0	-1
+		`normal`	0	-1	-1
+		`normal`	0	2	-1
+		`normal`	0	-1	-1
+		`normal`	0	-1	-1
+		`normal`	0	-1	-1
+		`normal`	0	-1	-1
+		`normal`	0	-1	-1
+		`normal`	0
+[/ridableskill definition]
+
+[ridableskill explanation]
+	[pattern]
+		0
+	[title]
+		`弓箭连射`
+	[category]
+		`[连击技能]`
+	[detail]
+		`在原地连续发射格林机枪的技能`
+[/ridableskill explanation]
+
+[attack info]
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+[/attack info]
+
+[cooltime]
+	0	0	3000	0	0	0	0	0	0	6000	6000
+[/cooltime]
+
+[int data]
+	5	10000	1000	0	230	0	1	60	0	320
+[/int data]
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[keep distance with target]
+	1000
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

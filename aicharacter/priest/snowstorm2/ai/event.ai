@@ -1,0 +1,23 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[attack success]
+			1
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`attacksnowstorm`
+			[false]
+			[return str]
+				`attacksnowstorm`
+			[true]
+			[return]
+				-1
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+[/ai pattern]

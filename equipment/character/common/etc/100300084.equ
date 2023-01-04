@@ -1,0 +1,48 @@
+#PVF_File
+
+[name]
+	`黑色小晶块效果`
+
+[name2]
+	`Black Small Cube`
+
+[explain]
+	`使武器附加暗属性， 效果持续30秒。`
+
+[grade]
+	0
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[icon]
+	`Item/IconMaterial.img`	9
+
+[equipment type]
+	`[coat]`	14
+
+[cool time]
+	30000
+
+[if]
+	[time]
+		30000	1	1000
+	[module]
+		`[dungeon type]`
+	[/module]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[consume item]
+		3033	1
+	[duration]
+		30000
+	[elemental weapon]
+		`dark`
+[/then]

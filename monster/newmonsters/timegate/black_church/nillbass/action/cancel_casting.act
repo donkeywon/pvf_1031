@@ -1,0 +1,120 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/cancel_casting.ani`
+	[SUB ANI]
+		`../Animation/cancel_casting/01_dust_normal_down.ani`	0	1
+		`../Animation/cancel_casting/02_1_dust2_normal.ani`	0	2
+		`../Animation/cancel_casting/02_dust2_normal.ani`	0	3
+		`../Animation/cancel_casting/03_inside-energy_normal_down.ani`	0	4
+		`../Animation/cancel_casting/04_inside-energy_dodge_up.ani`	0	5
+		`../Animation/cancel_casting/12b_burst1-back_normal.ani`	0	6
+		`../Animation/cancel_casting/13_red_dodge.ani`	0	7
+		`../Animation/cancel_casting/23_outside-energy_normal.ani`	0	8
+		`../Animation/cancel_casting/25_dust_normal_up.ani`	0	9
+		`../Animation/cancel_casting/30p_1_burst1-pung_normal_down.ani`	0	10
+		`../Animation/cancel_casting/30p_2_burst1-pung_normal_down.ani`	0	11
+		`../Animation/cancel_casting/30p_3_burst1-pung_normal_down.ani`	0	12
+		`../Animation/cancel_casting/30p_4_burst1-pung_normal_down.ani`	0	13
+		`../Animation/cancel_casting/30p_5_burst1-pung_normal_down.ani`	0	14
+		`../Animation/cancel_casting/30p_burst1-pung_normal_down.ani`	0	15
+		`../Animation/cancel_casting/31p_1_burst1-pung_dodge_up.ani`	0	16
+		`../Animation/cancel_casting/31p_2_burst1-pung_dodge_up.ani`	0	17
+		`../Animation/cancel_casting/31p_3_burst1-pung_dodge_up.ani`	0	18
+		`../Animation/cancel_casting/31p_4_burst1-pung_dodge_up.ani`	0	19
+		`../Animation/cancel_casting/31p_5_burst1-pung_dodge_up.ani`	0	20
+		`../Animation/cancel_casting/31p_burst1-pung_dodge_up.ani`	0	21
+		`../Animation/cancel_casting/32p_1_burst1_dodge.ani`	0	22
+		`../Animation/cancel_casting/32p_burst1_dodge.ani`	0	23
+	[/SUB ANI]
+	[SOUND]
+		`NGRASIA_DMG_03`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9980
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`stay.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`damage2.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`move.act`
+	[DELETE APPENDAGE]
+		0	
+		[attack speed]
+		[%]
+			50.0
+		[move speed]
+		[%]
+			50.0
+		[equipment physical attack]
+		[%]
+			20.0
+		[equipment physical defense]
+		[%]
+			900.0
+		[equipment magical defense]
+		[%]
+			900.0
+		[all active status resistance]
+		[%]
+			1000.0
+		[all element]
+		[%]
+			50.0
+	[/DELETE APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		-8
+	[%]
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]

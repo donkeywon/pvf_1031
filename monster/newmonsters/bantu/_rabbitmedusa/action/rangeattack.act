@@ -1,0 +1,48 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/RangeAttack.ani`
+	[SOUND]
+		`MEDUSA_SKILL_04`	0
+		`R_NUNA`	1
+	[/SOUND]
+	[SPEECH]
+		`蛇毒喷射！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8061
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			45
+		[POS]
+			200	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

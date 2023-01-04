@@ -1,0 +1,60 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/punch.ani`
+	[SPEECH]
+		`达鲁……三……击……`	0	100
+	[/SPEECH]
+	[SOUND]
+		`DARU_SWISH`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			550
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1000	3
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]

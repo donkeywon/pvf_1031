@@ -1,0 +1,72 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Stop_Action.ani`
+	[SUB ANI]
+		`../Animation/effect/shock_eff2.ani`	0	1
+		`../Animation/effect/shock_eff.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`滋滋！滋滋！`	1	100
+		`发现敌人！警备模式启动！`	4	100
+	[/SPEECH]
+	[SOUND]
+		`DU1_SIGNAL`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[MOVE]
+		0
+	[ON]
+	[TRIGGER]
+	[MOVE]
+		1
+	[ON]
+	[TRIGGER]
+	[STAY]
+		0
+	[ON]
+	[TRIGGER]
+	[STAY]
+		1
+	[ON]
+	[TRIGGER]
+	[ATTACK]
+		11	0
+	[ON]
+	[TRIGGER]
+	[ATTACK]
+		12	0
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[COLOR CHANGE EFFECT]
+		[EFFECT BLUE END]
+			0
+		[EFFECT RED END]
+			0
+		[EFFECT GREEN END]
+			0
+		[EFFECT ALPHA END]
+			0
+		[CHANGE TIME]
+			500
+		[LIFE TIME]
+			0
+	[/COLOR CHANGE EFFECT]
+[/BEHAVIOR]

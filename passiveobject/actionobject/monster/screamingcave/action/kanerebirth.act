@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Comein/Animation/KaneRebirth.ani`
+	[SUB ANI]
+		`../Comein/Animation/AppearStones_b.ani`	0	0
+		`../Comein/Animation/AppearStones_f.ani`	0	0
+		`../Comein/Animation/AttackSide2.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`SKEL_MEET`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8640
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[DESTROY]
+[/BEHAVIOR]

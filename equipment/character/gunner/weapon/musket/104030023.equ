@@ -1,0 +1,175 @@
+#PVF_File
+
+[name]
+	`天界猎杀者[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态。
+攻击速度 +2%%
+
+无法进行合成和分解。`
+
+[detail explain]
+	`攻击速度 +2%%
+
+攻击时， 有2%%的几率使敌人进入眩晕状态5秒。 (若敌人高于Lv40， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+无法进行合成和分解。`
+
+[grade]
+	44
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	40
+
+[physical attack]
+	31
+
+[magical attack]
+	47
+
+[attack speed]
+	20
+
+[move speed]
+	10
+
+[price]
+	79200
+
+[repair price]
+	63360
+
+[value]
+	63360
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	422	356
+
+[equipment magical attack]
+	367	310
+
+[separate attack]
+	245	164
+
+[skill levelup]
+	`[gunner]`	26	2
+	`[at gunner]`	26	2
+	`[gunner]`	31	2
+	`[at gunner]`	31	2
+	`[gunner]`	49	1
+	`[at gunner]`	49	1
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/musket.img`	17
+
+[field image]
+	`Item/field_weapon.img`	3
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	2	1
+
+[layer variation]
+	2790
+	`musketc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`musketb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	2	1
+
+[layer variation]
+	2790
+	`at_musketc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_musketb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	2100
+
+[item group name]
+	`musket`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		7500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		2
+	[active status]
+		`stun`	40
+[/then]
+
+[not amplify]
+	1
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

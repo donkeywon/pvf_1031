@@ -1,0 +1,134 @@
+#PVF_File
+
+[name]
+	`毒虫术士帕伊`
+
+[category]
+	`[beast]`
+[/category]
+
+[damage sound]
+	`R_PAI_DMG`
+
+[die sound]
+	`PAI_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+	`[HP MAX]`	`*`	600
+[/ability category]
+
+[level]
+	70	70
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	800	800
+
+[weight]
+	100000	100000
+
+[warlike]
+	0
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[die effect]
+	0	21	4
+
+[face image]
+	`Monster/MonsterFace.img`	678
+
+[waiting action]
+	`Action/stay.act`
+
+[move action]
+	`Action/move.act`
+
+[sit action]
+	`Action/sit.act`
+
+[damage action 1]
+	`Action/damage1.act`
+
+[damage action 2]
+	`Action/damage2.act`
+
+[down action]
+	`Action/down.act`
+
+[attack action]
+	`Action/attack_0.act`
+	`Action/attack_1.act`
+	`Action/attack_2.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack0.atk`
+	`AttackInfo/Attack1.atk`
+	`AttackInfo/Attack2.atk`
+[/attack info]
+
+[cooltime]
+	5000	20000	20000
+[/cooltime]
+
+[think term]
+	300
+
+[destination change term]
+	700
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	0
+
+[vision]
+	1000
+
+[lie frame]
+	2	3	2	3	4

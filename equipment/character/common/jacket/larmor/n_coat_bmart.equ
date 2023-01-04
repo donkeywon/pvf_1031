@@ -1,0 +1,118 @@
+#PVF_File
+
+[name]
+	`玄武岩胸甲`
+
+[name2]
+	`Basalt Mark Coat`
+
+[flavor text]
+	`哇！ 喝！ 哈！ 接我愤怒的一击吧！`
+
+[grade]
+	32
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	30
+
+[physical attack]
+	16
+
+[magical attack]
+	11
+
+[price]
+	28800
+
+[repair price]
+	23040
+
+[value]
+	23040
+
+[equipment physical defense]
+	1260	1188
+
+[fire resistance]
+	5
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/common/coat.img`	20
+
+[field image]
+	`Item/field_equip.img`	5
+
+[equipment type]
+	`[coat]`	19
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3100
+
+[item group name]
+	`la coat`
+
+[cool time]
+	10000
+
+[set name]
+	`玄武岩轻甲  套装`
+
+[set item]
+	10856	12856	14853	18854	16853
+[/set item]
+
+[set ability]
+	[fire resistance]
+		10
+	[if]
+		[cooltime]
+			1000
+		[element]
+			`fire`
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			20000
+		[probability]
+			5
+		[reduce probability to human armor at pvp module]
+			76
+		[active status]
+			`curse`	30	18	18	18	18
+	[/then]
+	[fullset basic explain]
+		`被火属性攻击时， 有5%%的几率使敌人进入诅咒状态。`
+	[fullset detail explain]
+		`被火属性攻击时， 有5%%的几率使敌人进入诅咒状态20秒； 诅咒状态下， 减少18点力量、 体力、 智力和精神。 (若敌人高于Lv30， 则减少进入异常状态的几率； 反之， 则增加几率)`
+[/set ability]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

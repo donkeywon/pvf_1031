@@ -1,0 +1,141 @@
+#PVF_File
+
+[name]
+	`敏者的荣誉护肩`
+
+[name2]
+	`Heavy Honor Shoulder of Shrewd Person`
+
+[grade]
+	58
+
+[rarity]
+	5
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	26
+
+[magical attack]
+	26
+
+[magical defense]
+	22
+
+[hit recovery]
+	17
+
+[anti evil]
+	4
+
+[need material]
+	3228	38
+
+[repair price]
+	30694
+
+[value]
+	27840
+
+[equipment physical defense]
+	1008	960
+
+[icon]
+	`Item/common/shoulder.img`	31
+
+[field image]
+	`Item/FieldImage.img`	2
+
+[equipment type]
+	`[shoulder]`	16
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	25
+
+[weight]
+	1100
+
+[item group name]
+	`lt shoulder`
+
+[cool time]
+	10000
+
+[set name]
+	`敏者的荣誉  套装`
+
+[set item]
+	20121	22116	24126	10505	12503	14493	18500	16492
+[/set item]
+
+[piece set ability]
+	3	
+	[MP MAX]
+		200
+	[physical critical hit]
+		2
+	[magical critical hit]
+		2
+[/piece set ability]
+
+[piece set ability]
+	5	
+	[MP regen speed]
+		9
+	[move speed]
+		20
+	[cast speed]
+		30
+[/piece set ability]
+
+[piece set ability]
+	8	
+	[attack speed]
+		20
+	[if]
+		[target type]
+			`human`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[if]
+		[target type]
+			`undead`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[parameter basic explain]
+		`对人型怪敌人的伤害 +10%%
+对不死族敌人的伤害 +10%%`
+[/piece set ability]
+
+[possible kiri protect]

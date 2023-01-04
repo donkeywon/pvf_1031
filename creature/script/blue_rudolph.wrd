@@ -1,0 +1,157 @@
+#PVF_File
+
+[ambient]
+	[room list]
+		`我的时间应该献给音乐，而不是等待……`
+		`我是音乐人，不是街边卖唱的~`
+		`百无聊赖中总是最容易产生创作灵感！`	
+		[in elven gard]
+			`幽静的村子，容易让人懈怠……`
+		[/in elven gard]
+		[in alfhlyra]
+			`音乐可以为他们抚平战争后的创伤！`
+		[/in alfhlyra]
+		[in stom pass]
+			`每次来这，都会让我想起从前乘雪橇的时光~`
+		[/in stom pass]
+	[/room list]
+	[main game]
+		[fill point under]
+			20
+			`饿得眼冒金星，什么灵感都没了！`
+			`饿得眼冒金星，什么灵感都没了！`
+			`饿得眼冒金星，什么灵感都没了！`
+		[/fill point under]
+		[enemies alive]
+			[hits over]
+				20
+				`我们不能老挨打啊，要懂得反击！`
+				`创作时要低调，打架时可要发飙！！`
+			[/hits over]
+			[hits under]
+				21
+				`让他们看看我们真正的实力！！！`
+				`别人受伤总比自己受伤来得快乐~`
+			[/hits under]
+		[/enemies alive]
+		[enemies destroyed]
+		[rank over]
+			`b`
+			`我要为你创作一首英雄的歌曲！前进前进~~`
+			`这一刻，我甘愿当你的小粉丝~~`
+		[/rank over]
+		[rank under]
+			`b`
+			`回去给我闭门思过！`
+			`我的耳边响起了无数悲歌……`
+		[/rank under]
+	[/main game]
+[/ambient]
+
+[trigger]
+	[room list]
+		[renamed]
+			`名字只是代号，我的身份永远是音乐人！`
+		[/renamed]
+		[pop random]
+			40	
+			[call the name]
+				`有事快说，没事不要打扰我创作！`
+			[/call the name]
+		[/pop random]
+		[pop random]
+			40	
+			[equip]
+				`铛铛铛铛~~音乐人出场要低调！`
+				`比起出门，我更喜欢窝在家里搞创作！`
+			[/equip]
+		[/pop random]
+		[pop random]
+			50	
+			[level up]
+				`即使是升级，我们一样要保持低调！`
+				`升级了！我们可以低调地庆祝下，Yeah!!`
+			[/level up]
+		[/pop random]
+		[pop random]
+			50	
+			[character level up]
+				`我升级时很低调，你升级时却乐得疯掉~`
+			[/character level up]
+		[/pop random]
+		[evolution]
+			``
+		[/evolution]
+		[eat feed]
+			`绞尽脑汁创作，不如喝完果汁吃水果！`
+		[/eat feed]
+	[/room list]
+	[main game]
+		[eat feed]
+			`创作源于生活，源于今天吃什么？`
+			`戴着墨镜都看不清楚吃的是什么？`
+		[/eat feed]
+		[none feed]
+			`音乐人成名前都要这么落魄吗？`
+		[/none feed]
+		[end buff]
+			`嘴里没东西之后，忽然觉得特别空虚……`
+		[/end buff]
+		[dying]
+			`我还是回去找圣诞老人吧！`
+		[/dying]
+		[using overskill]
+			``
+			`让你们见识下贝斯的低音魔力！`
+		[/using overskill]
+		[pop random]
+			40	
+			[skill gauge full]
+				`准备好了，我们开始吧！`
+				`音乐的激情就要爆发！！`
+			[/skill gauge full]
+		[/pop random]
+		[pop random]
+			40	
+			[over skill gauge full]
+				``
+				``
+			[/over skill gauge full]
+		[/pop random]
+		[over skill waiting]
+			`我的双手充满了神奇的能量……`
+			`歌迷们已经准备好了，为什么还不开始？`
+		[/over skill waiting]
+		[call the name]
+			`有事快说，没事不要打扰我创作！`
+		[/call the name]
+		[pop random]
+			40	
+			[equip]
+				`铛铛铛铛~~音乐人出场要低调！`
+				`比起出门，我更喜欢窝在家里搞创作！`
+			[/equip]
+		[/pop random]
+		[pop random]
+			50	
+			[level up]
+				`即使是升级，我们一样要保持低调！`
+				`升级了！我们可以低调地庆祝下，Yeah!!`
+			[/level up]
+		[/pop random]
+		[pop random]
+			50	
+			[character level up]
+				`我升级时很低调，你升级时却乐得疯掉~`
+			[/character level up]
+		[/pop random]
+		[evolution]
+			``
+		[/evolution]
+	[/main game]
+	[pvp]
+		[press creature button]
+			``
+		[/press creature button]
+	[/pvp]
+[/trigger]

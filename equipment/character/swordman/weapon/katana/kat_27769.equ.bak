@@ -1,0 +1,146 @@
+#PVF_File
+
+[name]
+	`明光追影刀`
+
+[name2]
+	``
+
+[basic explain]
+	`光属性攻击时， 附加10%%的伤害。`
+
+[detail explain]
+	`找不到代码detail_explain_27769`
+
+[grade]
+	75
+
+[attach type]
+	`[trade]`
+
+[item group name]
+	`katana`
+
+[rarity]
+	4
+
+[weight]
+	2800
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[minimum level]
+	70
+
+[icon]
+	`Item/weapon/swordman/katana.img`	99
+
+[field image]
+	`Item/FieldImage.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[sub type]
+	1
+
+[durability]
+	35
+
+[price]
+	120000
+
+[repair price]
+	100800
+
+[value]
+	96000
+
+[cool time]
+	10000
+
+[physical attack]
+	50
+
+[magical attack]
+	75
+
+[equipment physical attack]
+	688	631
+
+[equipment magical attack]
+	760	697
+
+[separate attack]
+	441	299
+
+[light resistance]
+	6
+
+[attack speed]
+	80
+
+[cast speed]
+	40
+
+[elemental property]
+	`[light element]`
+
+[physical critical hit]
+	2
+
+[stuck]
+	1
+
+[skill levelup]
+	`[swordman]`	13	1
+[/skill levelup]
+
+[variation]
+	17	0
+
+[layer variation]
+	2790
+	`katanac`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`katanab`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[move wav]
+	`KATANA_TOUCH`
+
+[light attack]
+	6
+
+[if]
+	[element]
+		`light`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[routing priority]
+	`swordman`	2
+	`swordman`	3
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,37 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/lv2_DropABomb.ani`
+	[SUB ANI]
+		`../Animation/Propeller/DropABomb.ani`	0	0
+		`../Animation/PropellerEffect/Effect01.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`BOMB_DROP`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12674
+		[PARTICLE FILENAME]
+			`../Particle/Bomb2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	-40
+		[USE MY DIRECTION]
+		[FIX DIRECTION]
+		[NEUTRAL]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

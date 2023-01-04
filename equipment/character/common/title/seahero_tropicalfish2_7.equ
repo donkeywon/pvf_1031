@@ -1,0 +1,87 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	``
+
+[explain]
+	`攻击时以1%%的机率20秒内攻击速度和移动速度增加10%%。`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	59
+
+[custom animation]
+	`TitleAnimation/seahero.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[usable period]
+	7
+
+[physical attack]
+	15
+
+[magical attack]
+	15
+
+[all elemental resistance]
+	8
+
+[all activestatus resistance]
+	8
+
+[stuck resistance]
+	20
+
+[move speed]
+	30
+
+[attack speed]
+	20
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		1
+	[active status]
+		`haste`	1	10	10
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

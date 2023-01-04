@@ -1,0 +1,41 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check key cooltime]
+			`buff`
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`antigravity`
+			[true]
+		
+			[think]
+				[void]
+					`is target in attack area()`	70.0	10.0	30.0	30.0
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`flycut`
+					[true]
+					[return]
+						-1
+					[false]
+					[return str]
+						`flycut`
+				[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[false]
+	[return str]
+		`antigravity`
+	[/think]
+	[false]
+	[return str]
+		`buff`
+	[/think]
+[/ai pattern]

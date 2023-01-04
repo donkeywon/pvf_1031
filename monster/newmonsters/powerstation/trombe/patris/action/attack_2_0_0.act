@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_2_2_0.ani`
+	[SUB ANI]
+		`../Animation/attack_2_0_0_2.ani`	0	-1
+		`../Animation/attack_2_0_0_3.ani`	0	1
+		`../Animation/attack_2_0_0_1.ani`	0	2
+		`../Animation/attack_2_0_0_0.ani`	0	3
+		`../Animation/attack_2_1_0_0.ani`	0	4
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			15121	15123
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<=]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		6
+	[NOW]
+[/BEHAVIOR]

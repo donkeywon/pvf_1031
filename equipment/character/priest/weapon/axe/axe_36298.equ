@@ -1,0 +1,197 @@
+#PVF_File
+
+[name]
+	`古树终结者`
+
+[name2]
+	`Gray Axe of Lumberjack`
+
+[basic explain]
+	`攻击时， 有8%%的几率增加近距离武器攻击力和物理暴击率。
+攻击速度 +3%%`
+
+[detail explain]
+	`攻击时， 有8%%的几率增加30%%的近距离武器攻击力和物理暴击率， 效果持续20秒。 (在决斗场中 +15%%)
+攻击速度 +3%%`
+
+[flavor text]
+	`斧头上闪烁着奇异的光， 似乎有股力量在不断增强。 如此强大的气息， 连树木都跟着颤抖……`
+
+[grade]
+	70
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	65
+
+[physical attack]
+	47
+
+[attack speed]
+	-50
+
+[stuck]
+	-2
+
+[price]
+	126000
+
+[repair price]
+	105840
+
+[value]
+	100800
+
+[equipment physical attack]
+	809	737
+
+[equipment magical attack]
+	573	522
+
+[separate attack]
+	411	278
+
+[icon]
+	`Item/weapon/priest/axe.img`	61
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	10	3
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[if]
+	[event attack success]
+		1
+	[cooltime]
+		35000
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			8
+		[duration]
+			20000
+		[appendage]
+			105
+		[appendage]
+			107
+		[then probability]
+			40.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			8
+		[duration]
+			20000
+		[stat]
+			`physical critical hit rate`
+			`+`	30
+		[appendage]
+			106
+		[then probability]
+			60.0
+	[/then]
+[/multiple then]
+
+[pvp]
+	[if]
+		[event attack success]
+			1
+		[cooltime]
+			35000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`enemy`	-1
+			[probability]
+				8
+			[duration]
+				20000
+			[appendage]
+				105
+			[appendage]
+				108
+			[then probability]
+				40.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				8
+			[duration]
+				20000
+			[stat]
+				`physical critical hit rate`
+				`+`	15
+			[appendage]
+				106
+			[then probability]
+				60.0
+		[/then]
+	[/multiple then]
+[/pvp]
+
+[routing priority]
+	`priest`	2
+	`priest`	3
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

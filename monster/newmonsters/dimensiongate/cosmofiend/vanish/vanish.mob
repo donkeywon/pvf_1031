@@ -1,0 +1,221 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`烟雾之贝尼斯`
+
+[face image]
+	`Monster/MonsterFace.img`	541
+
+[die effect]
+	0	2	0
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	2300
+	`[PHYSICAL_ATTACK]`	`*`	120
+	`[PHYSICAL_DEFENSE]`	`*`	150
+	`[MAGICAL_ATTACK]`	`*`	100
+	`[MAGICAL_DEFENSE]`	`*`	150
+[/ability category]
+
+[appear sound]
+	`R_VENITH_MEET`
+
+[damage sound]
+	`R_VENITH_DMG`
+
+[die sound]
+	`VENITH_DIE`
+
+[category]
+	`[human]`
+[/category]
+
+[fire resistance]
+	-30	-30
+
+[water resistance]
+	30	30
+
+[dark resistance]
+	0	0
+
+[light resistance]
+	0	0
+
+[freeze resistance]
+	30	30
+
+[stun resistance]
+	0	0
+
+[blind resistance]
+	0	0
+
+[stone resistance]
+	0	0
+
+[sleep resistance]
+	-10	-10
+
+[hold resistance]
+	0	0
+
+[slow resistance]
+	0	0
+
+[curse resistance]
+	0	0
+
+[confuse resistance]
+	0	0
+
+[lightning resistance]
+	-10	-10
+
+[bleeding resistance]
+	0	0
+
+[poison resistance]
+	0	0
+
+[burn resistance]
+	-30	-30
+
+[level]
+	60	60
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1200	1200
+
+[weight]
+	95000	95000
+
+[hp regen rate]
+	0.0	0.0
+
+[think term]
+	300
+
+[destination change term]
+	400
+
+[keep distance with target]
+	200
+
+[intelligence]
+	100	100	10000
+
+[vision]
+	2000
+
+[set damage check]
+	3000
+
+[lie frame]
+	1	2	3	3	4
+
+[event super on scr]
+	`[on hp]`	15	100	1
+	`[unbreakable]`	-1	-1	-1	-1
+[/event super on scr]
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[come in action]
+	`Action/ComeIn.act`	120	600
+
+[proc action]
+	`Action/Proc.act`
+
+[attack action]
+	`Action/Attack.act`
+	`Action/Attack2.act`
+	`Action/jump.act`
+	`Action/jump_stay.act`
+	`Action/jump_last.act`
+	`Action/buff.act`
+	`Action/Stand_Attack.act`
+	`Action/jump2.act`
+[/attack action]
+
+[attack info]
+	`attackinfo/Attack.atk`
+	`attackinfo/Attack1.atk`
+	`attackinfo/Attack2.atk`
+	`attackinfo/Attack2.atk`
+	`attackinfo/Attack2.atk`
+	``
+	`attackinfo/Attack.atk`
+	``
+[/attack info]
+
+[cooltime]
+	3000	5000	14000	5000	5000	30000	5000	30000
+[/cooltime]
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

@@ -1,0 +1,243 @@
+#PVF_File
+
+[damage sound]
+	`R_MEDUSA_DMG`
+
+[die sound]
+	`R_MEDUSA_DIE`
+
+[ambient sound]
+	`R_MEDUSA_AMB`
+
+[appear sound]
+	`MEDUSA_MEET`
+
+[name]
+	`美杜斯 莎莎`
+
+[face image]
+	`Monster/MonsterFace.img`	309
+
+[die effect]
+	0	24	1
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	345
+	`[PHYSICAL_ATTACK]`	`*`	100
+	`[PHYSICAL_DEFENSE]`	`*`	100
+	`[MAGICAL_ATTACK]`	`*`	100
+	`[MAGICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	130
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	130
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	130
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	150
+	`[HP MAX BOSS]`	`*`	325
+[/ability category]
+
+[category]
+	`[human]`
+	`[range combat]`
+	`[close-carefully]`
+[/category]
+
+[intelligence]
+	90	90	3000
+
+[HP regen speed]
+	20	20
+
+[MP regen speed]
+	0	0
+
+[level]
+	30	50
+
+[fire resistance]
+	-30	-30
+
+[water resistance]
+	40	40
+
+[dark resistance]
+	0	0
+
+[light resistance]
+	0	0
+
+[slow resistance]
+	60	60
+
+[freeze resistance]
+	80	80
+
+[poison resistance]
+	50	50
+
+[stun resistance]
+	30	30
+
+[curse resistance]
+	0	0
+
+[blind resistance]
+	30	30
+
+[sleep resistance]
+	0	0
+
+[lightning resistance]
+	0	0
+
+[stone resistance]
+	70	70
+
+[bleeding resistance]
+	0	0
+
+[confuse resistance]
+	30	30
+
+[hold resistance]
+	30	30
+
+[burn resistance]
+	0	0
+
+[move speed]
+	950	950
+
+[attack speed]
+	800	800
+
+[cast speed]
+	700	700
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	45000	45000
+
+[lie frame]
+	1	2	1	2	2
+
+[item]
+	3227	800
+[/item]
+
+[common champion drop item]
+[/common champion drop item]
+
+[waiting motion]
+	`Animation/Stay.ani`
+
+[move motion]
+	`Animation/move.ani`
+
+[sit motion]
+	`Animation/Sit.ani`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage motion 2]
+	`Animation/Damage2.ani`
+
+[down motion]
+	`Animation/Down.ani`
+
+[overturn motion]
+	`Animation/Overturn.ani`
+
+[attack action]
+	`Action/Summon.act`
+	`Action/OrderAttack.act`
+	`Action/OrderCover.act`
+	`Action/Attack.act`
+	`Action/NoMotionOrderAttack.act`
+	`Action/FastMove.act`
+	`Action/Cast.act`
+	`Action/RangeAttack.act`
+[/attack action]
+
+[attack info]
+	``
+	``
+	``
+	`attackinfo/attack.atk`
+	``
+	``
+	``
+	`attackinfo/RangeAttack.atk`
+[/attack info]
+
+[cooltime]
+	3000	3000	3000	1000	5000	3000	1000000	18000
+[/cooltime]
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	500
+
+[warlike]
+	80
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[keep distance with target]
+	300
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[level of difficulty]
+	[easy]
+		-50	3000
+	[medium]
+		-30	2000
+	[hard]
+		0	0
+	[ultimate]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]

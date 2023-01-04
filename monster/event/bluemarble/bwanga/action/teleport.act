@@ -1,0 +1,52 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Teleport.ani`
+	[SUB ANI]
+		`../Animation/Effect/Chakra_Back.ani`	0	-1
+		`../Animation/Effect/Chakra_Front.ani`	0	1
+		`../Animation/Effect/Flash.ani`	18	2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		17	17
+	[DO BEHAVIOR]
+	[TARGET]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+
+[TELEPORT]
+	[POS]
+		-250	0	0
+	[MOVE ME]
+[/TELEPORT]
+
+[BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		18	18
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+
+[SET DIRECTION]
+
+[TO TARGET]
+
+[SET ACTION]
+
+[ATTACK]
+	10
+
+[END]
+
+[BEHAVIOR]

@@ -1,0 +1,74 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/casting.ani`
+	[SUB ANI]
+		`../Animation/Weapon/casting_wp.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`准备攻击！`	0	100
+		`炎猫妖，咬他们！`	3	100
+	[/SPEECH]
+	[SOUND]
+		`TEYMER_SKILL`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			61116
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			61116
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND MESSAGE]
+	[ATTACK_COMMAND]
+		1
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]

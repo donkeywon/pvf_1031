@@ -1,0 +1,74 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Missile3.ani`
+	[SUB ANI]
+		`../Animation/MissileFire3.ani`	0	0
+		`../Animation/MissileSmoke.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../../particle/DropBombFireDestroy3.ptl`	0	0	-40
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+		[RANDOM]
+			-100	-200
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8686
+		[PARTICLE FILENAME]
+			`../Particle/missile.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	-10
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8686
+		[PARTICLE FILENAME]
+			`../Particle/missile.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	-10
+	[/CREATE PASSIVEOBJECT]
+	[DESTROY]
+[/BEHAVIOR]

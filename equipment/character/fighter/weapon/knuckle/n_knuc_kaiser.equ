@@ -1,0 +1,172 @@
+#PVF_File
+
+[name]
+	`独裁者指虎`
+
+[name2]
+	`Kaiser Knuckle`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态3秒。 (若敌人高于Lv40， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	44
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	40
+
+[magical attack]
+	31
+
+[attack speed]
+	120
+
+[cast speed]
+	20
+
+[stuck]
+	-2
+
+[price]
+	70400
+
+[repair price]
+	56320
+
+[value]
+	56320
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	399	361
+
+[equipment magical attack]
+	483	437
+
+[separate attack]
+	245	164
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[fighter]`	5	2
+	`[fighter]`	31	1
+	`[fighter]`	16	1
+	`[at fighter]`	5	2
+	`[at fighter]`	31	1
+	`[at fighter]`	16	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/knuckle.img`	22
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	9
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	1	9
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[probability]
+		2
+	[active status]
+		`stun`	40
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

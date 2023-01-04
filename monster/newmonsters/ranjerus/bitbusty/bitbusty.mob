@@ -1,0 +1,216 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`比特·伯斯提`
+
+[face image]
+	`Monster/MonsterFace.img`	360
+
+[die effect]
+	0	10	0
+
+[ability table]
+	0
+
+[common champion elemental property]
+	`[fire element]`
+	`[water element]`
+	`[dark element]`
+	`[light element]`
+	`[no element]`
+[/common champion elemental property]
+
+[ability category]
+	`[HP MAX]`	`*`	10000
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	6000
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	6000
+[/ability category]
+
+[category]
+	`[human]`
+	`[range combat]`
+	`[close-carefully]`
+[/category]
+
+[attack sound]
+	`R_VERSTI_ATK`
+
+[damage sound]
+	`R_VERSTI_DMG`
+
+[die sound]
+	`R_VERSTI_DIE`
+
+[ambient sound]
+	`R_VERSTI_AMB`
+
+[attack info]
+	`AttackInfo/base.atk`
+	`AttackInfo/base.atk`
+[/attack info]
+
+[level]
+	62	67
+
+[fire resistance]
+	100	100
+
+[water resistance]
+	100	100
+
+[dark resistance]
+	100	100
+
+[light resistance]
+	100	100
+
+[freeze resistance]
+	100	100
+
+[stun resistance]
+	100	100
+
+[blind resistance]
+	100	100
+
+[stone resistance]
+	100	100
+
+[sleep resistance]
+	100	100
+
+[hold resistance]
+	100	100
+
+[slow resistance]
+	100	100
+
+[curse resistance]
+	100	100
+
+[confuse resistance]
+	100	100
+
+[move speed]
+	1200	1200
+
+[attack speed]
+	800	800
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	75000	75000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[warlike]
+	100
+
+[keep distance with target]
+	100
+
+[no change target]
+	0
+
+[set damage check]
+	2000
+
+[item]
+	3227	2885
+[/item]
+
+[common champion drop item]
+[/common champion drop item]
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[lie frame]
+	2	3	2	3	4
+
+[action list]
+	`Action/Shoot.act`
+	`Action/Attack.act`
+	`Action/Attack2.act`
+	`Action/Order.act`
+	`Action/ChangeTarget.act`
+	`Action/Summon.act`
+[/action list]
+
+[attack info]
+	`AttackInfo/attack.atk`
+	`AttackInfo/attack.atk`
+	`AttackInfo/attack.atk`
+	``
+	``
+	``
+[/attack info]
+
+[cooltime]
+	5000	2000	3000	10000	10000000	5000
+[/cooltime]
+
+[think term]
+	200
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

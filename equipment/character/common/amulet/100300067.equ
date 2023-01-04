@@ -1,0 +1,98 @@
+#PVF_File
+
+[name]
+	`兄之愿`
+
+[basic explain]
+	`施放技能时， 有5%%的几率使队员的武器属性变成光属性， 效果持续20秒。
+无法进行分解。`
+
+[flavor text]
+	`尼尔巴斯为妹妹歌兰蒂斯亲手制作的项链； 虽然很简单， 却透露着兄长浓浓的关爱。`
+
+[grade]
+	79
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[magical attack]
+	32
+
+[magical defense]
+	148
+
+[need material]
+	3338	440
+
+[value]
+	63200
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	6880	6480
+
+[icon]
+	`item/new_equipment/08_necklace/necklace.img`	80
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	20
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[routing priority]
+[/routing priority]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[if]
+	[cooltime]
+		20000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[probability]
+		5
+	[duration]
+		20000
+	[elemental weapon]
+		`light`
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[icon mark]
+	`Item/IconMark.img`	66

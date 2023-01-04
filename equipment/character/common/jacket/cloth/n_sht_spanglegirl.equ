@@ -1,0 +1,116 @@
+#PVF_File
+
+[name]
+	`(旧) 银月少女T恤衫`
+
+[name2]
+	`Spangle Girl T-Shirts`
+
+[basic explain]
+	`装备防御力随角色Lv的增加而增加。 (每提升Lv1， 增加6点物防)`
+
+[flavor text]
+	`男人要是穿了这个， 就会被人看成是心理变态。`
+
+[grade]
+	15
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	10
+
+[magical attack]
+	11
+
+[magical defense]
+	11
+
+[price]
+	13500
+
+[repair price]
+	10800
+
+[value]
+	10800
+
+[equipment physical defense]
+	276	204
+
+[icon]
+	`Item/common/coat.img`	115
+
+[field image]
+	`Item/field_equip.img`	0
+
+[equipment type]
+	`[coat]`	19
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	1400
+
+[item group name]
+	`cl coat`
+
+[cool time]
+	10000
+
+[set name]
+	`银月少女的时尚装束  套装`
+
+[set item]
+	10114	12112	14102	18093	16088
+[/set item]
+
+[set ability]
+	[all activestatus resistance]
+		10
+	[if]
+		[cooltime]
+			100000
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			100000
+		[reduce duration at pvp module]
+			75
+		[probability]
+			2
+		[summon monster]
+			60104	30	1
+	[/then]
+	[fullset basic explain]
+		`被攻击时， 有2%%的几率召唤出1只克拉赫。`
+	[fullset detail explain]
+		`被攻击时， 有2%%的几率召唤出1只Lv30的克拉赫协助召唤者攻击敌人， 克拉赫存在100秒。 (召唤的怪物只能同时存在1只， 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失)`
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

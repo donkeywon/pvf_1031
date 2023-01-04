@@ -1,0 +1,53 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Lighting_Effect_L_Lightning.ani`
+	[SUB ANI]
+		`../Animation/Lighting_Effect_L_DustNormal2.ani`	1	-8
+		`../Animation/Lighting_Effect_L_DustNormal1.ani`	1	-7
+		`../Animation/Lighting_Effect_L_hitnormal.ani`	1	-6
+		`../Animation/Lighting_Effect_L_BlueHit02_1.ani`	1	-5
+		`../Animation/Lighting_Effect_L_BlueHit02_2.ani`	1	-4
+		`../Animation/Lighting_Effect_L_BlueHit01.ani`	1	-3
+		`../Animation/Lighting_Effect_L_Yellowhit1.ani`	1	-2
+		`../Animation/Lighting_Effect_L_Yellowhit.ani`	1	-1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		3	700
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54116
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		20	30	20	255	255	255	255
+[/BEHAVIOR]

@@ -1,0 +1,205 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack.ani`
+	[SOUND]
+		`FCRAFT_FROST_ATK_01`	2
+		`BRICK_BREAK`	6
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[TRIGGER CHECK]
+		[ATTACK]
+			2	0
+		[ON]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			370
+		[Z AXIS]
+			1850
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[TARGET]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			80
+		[X END]
+			10
+		[Z START]
+			1250
+		[MOVE ME]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			50
+		[Z AXIS]
+			-2850
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			30
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		3	1000
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9031
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Z AXIS]
+			250
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Z AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		7
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		7
+	[OFF]
+	[ACTIVE STATUS]
+	[stun]
+		100	70	5000
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`Move.act`
+	[CHANGE ACTION FILE]
+	[STAY]
+		`Stay.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`Damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`Damage2.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		`Down.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`Sit.act`
+[/BEHAVIOR]

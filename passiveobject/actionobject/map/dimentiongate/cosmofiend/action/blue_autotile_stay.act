@@ -1,0 +1,47 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Blue_AutoTile_Stay.ani`
+[/MOTION]
+
+[TRIGGER]
+	[CHECK TIME]
+		300
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			85
+		[ZPOS]
+		[<=]
+			5
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14115
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			85
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

@@ -1,0 +1,113 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/show/Dimension_Wind_upF.ani`
+	[SUB ANI]
+		`../Animation/show/Dimension_Wind_downF.ani`	0	1
+		`../Animation/show/Dimension_Wind_downF1.ani`	0	2
+		`../Animation/show/Dimension_Wind_upF1.ani`	0	3
+	[/SUB ANI]
+	[SOUND]
+		`INHALE_WIND_LOOP`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		3	4
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[CHECK TIME]
+		500
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			400
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[CHECK TIME]
+		500
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			400
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[WIND APPENDAGE]
+		1.0	0.0	2	0	600
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Wind_stone.ptl`	220	0	100
+	[PARTICLE]
+		`../particle/Wind_stone.ptl`	220	0	400
+	[WIND APPENDAGE]
+		3.5	0.0	2	0	600
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Dust.ptl`	200	0	10
+	[PARTICLE]
+		`../particle/Dust.ptl`	200	-100	10
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Dust.ptl`	200	100	10
+	[PARTICLE]
+		`../particle/Dust.ptl`	200	-100	10
+[/BEHAVIOR]

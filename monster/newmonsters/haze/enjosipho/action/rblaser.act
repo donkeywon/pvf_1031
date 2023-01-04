@@ -1,0 +1,57 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/robot/rblaser.ani`
+	[SUB ANI]
+		`../animation/robot/rblaser_w.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`开始搜索目标！`	3	10
+		`小型火箭填装完毕！`	3	10
+	[/SPEECH]
+	[SOUND]
+		`ENJO_ROBOT_ARM`	2
+		`R_ENJO_SKILL_05`	3
+		`ENJO_ROBOT_SHOT`	7
+		`ENJO_ROBOT_SHOT`	8
+		`ENJO_ROBOT_SHOT`	9
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10474
+		[PARTICLE FILENAME]
+			`../Particle/missile1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			80	0	115
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

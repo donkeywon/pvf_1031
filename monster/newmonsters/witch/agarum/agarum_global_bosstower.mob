@@ -1,0 +1,256 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`魔女阿嘉璐`
+
+[face image]
+	`Monster/MonsterFace.img`	483
+
+[ability table]
+	0
+
+[appear sound]
+	`AGARUM_MEET`
+
+[damage sound]
+	`R_AGARUM_DMG`
+
+[ability category]
+	`[HP MAX]`	`*`	2400
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	240
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	480
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	240
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	525
+[/ability category]
+
+[category]
+	`[devil]`
+	`[close-tough]`
+[/category]
+
+[lie frame]
+	1	2	3	3	4
+
+[hp regen rate]
+	0.0	0.0
+
+[fire resistance]
+	30	30
+
+[water resistance]
+	30	30
+
+[dark resistance]
+	30	30
+
+[light resistance]
+	30	30
+
+[slow resistance]
+	75	75
+
+[freeze resistance]
+	75	75
+
+[poison resistance]
+	75	75
+
+[stun resistance]
+	75	75
+
+[curse resistance]
+	75	75
+
+[blind resistance]
+	75	75
+
+[lightning resistance]
+	75	75
+
+[stone resistance]
+	75	75
+
+[sleep resistance]
+	75	75
+
+[burn resistance]
+	75	75
+
+[weapon break resistance]
+	75	75
+
+[bleeding resistance]
+	75	75
+
+[piercing resistance]
+	75	75
+
+[stuck resistance]
+	75	75
+
+[confuse resistance]
+	75	75
+
+[hold resistance]
+	75	75
+
+[armor break resistance]
+	75	75
+
+[level]
+	71	72
+
+[move speed]
+	1500	1500
+
+[cast speed]
+	1400	1400
+
+[attack speed]
+	1400	1400
+
+[hit recovery]
+	1440	1440
+
+[weight]
+	185000	185000
+
+[keep distance with target]
+	300
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[vision]
+	1000
+
+[set damage check]
+	3000
+
+[item]
+[/item]
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[last action]
+	`Action/last.act`
+
+[add gravity in aerial]
+	1	10.0	-300.0
+
+[event super on scr]
+	`[on hp]`	10	10000	1
+	`[unbreakable]`	-1	-1	-1	-1
+[/event super on scr]
+
+[action list]
+	`Action/Attack_01.act`
+	`Action/Attack_d.act`
+	`Action/Metamorphosis.act`
+	`Action/Summon_ready.act`
+	`Action/Summon_loop.act`
+	`Action/GBoss_Bite_green.act`
+	`Action/GBoss_Bite_blue.act`
+	`Action/GBoss_Bite_red.act`
+	`Action/Bite_soul.act`
+	`Action/GBoss_heroBite_green.act`
+	`Action/GBoss_heroBite_blue.act`
+	`Action/GBoss_heroBite_red.act`
+	`Action/leafattack.act`
+	`Action/leafattack2.act`
+	`Action/iceattack.act`
+	`Action/victimsummon.act`
+[/action list]
+
+[cooltime]
+	5000	5000	80000000	25000	5000	80000000	80000000	80000000	80000000	3000000	3000000	3000000	20000	15000	20000	25000
+[/cooltime]
+
+[attack info]
+	`attackinfo/attack_1.atk`
+	`attackinfo/attack_d.atk`
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+[/attack info]
+
+[ai pattern]
+	[normal]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/normal]
+	[master]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/master]
+	[expert]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/expert]
+	[king]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/king]
+	[hero]
+		`ai/heroEvent.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[level of difficulty]
+	[normal]
+		0	0
+	[ex]
+		0	0
+	[master]
+		0	0
+	[king]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]

@@ -1,0 +1,104 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/ChainRariat.ani`
+	[SUB ANI]
+		`../Animation/ChainRariat_Effect.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`六圈，莱里特！`	7	100
+	[/SPEECH]
+	[SOUND]
+		`R_SKASA_ICEWIND`	1
+		`RARI_SIX`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Y AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[RESET]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Y AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			300
+		[Y AXIS]
+			150
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8043
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			55
+		[POS]
+		[RANDOM]
+			50	-50
+		[RANDOM]
+			50	-50	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

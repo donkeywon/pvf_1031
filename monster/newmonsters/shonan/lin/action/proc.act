@@ -1,0 +1,25 @@
+#PVF_File
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[<=]
+			50
+		[%]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET WHOLE DAMAGETYPE]
+		1
+[/BEHAVIOR]

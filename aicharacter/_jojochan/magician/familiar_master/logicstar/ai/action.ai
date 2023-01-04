@@ -1,0 +1,32 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check key cooltime]
+			`buff`
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`magma`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`jack`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`jack`
+			[/think]
+	[false]
+	[return str]
+		`magma`
+	[/think]
+	[false]
+	[return str]
+		`buff`
+	[/think]
+[/ai pattern]

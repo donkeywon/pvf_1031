@@ -1,0 +1,141 @@
+#PVF_File
+
+[width]
+	60	20
+
+[floating height]
+	40
+
+[face image]
+	`Monster/MonsterFace.img`	69
+
+[ability category]
+	`[HP MAX]`	`*`	900
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	150
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	150
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	150
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	150
+[/ability category]
+
+[category]
+	`[spirit]`
+	`[melee combat]`
+	`[close-carefully]`
+	`[fixture]`
+[/category]
+
+[level]
+	1	70
+
+[dark resistance]
+	-50	-50
+
+[light resistance]
+	30	30
+
+[lightning resistance]
+	1000	1000
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	30000	30000
+
+[sight]
+	1500
+
+[vision]
+	1500
+
+[warlike]
+	100
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[keep distance with target]
+	200
+
+[atk super on scr]
+	0
+	`[breakable]`	35	10	120	90
+[/atk super on scr]
+
+[lie frame]
+	1	2	3	3	4
+
+[waiting action]
+	`action/Stay.act`
+
+[move action]
+	`action/Move.act`
+
+[sit action]
+	`action/Sit.act`
+
+[damage action 1]
+	`action/Damage1.act`
+
+[damage action 2]
+	`action/Damage2.act`
+
+[attack action]
+	`Action/CastStart.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack.atk`
+[/attack info]
+
+[cooltime]
+	10000
+[/cooltime]
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[name]
+	`猛毒之维斯普`

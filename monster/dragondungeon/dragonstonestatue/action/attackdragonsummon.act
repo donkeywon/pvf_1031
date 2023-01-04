@@ -1,0 +1,134 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AttackDragonSummon/Body.ani`
+	[SUB ANI]
+		`../Animation/AttackDragonSummon/Jaw.ani`	0	1
+		`../Animation/AttackDragonSummon/Head.ani`	0	2
+		`../Animation/AttackDragonSummon/Eye_Dodge.ani`	0	3
+		`../Animation/AttackDragonSummon/Start_Back_Dodge.ani`	0	4
+		`../Animation/AttackDragonSummon/Start_Core_Dodge.ani`	0	5
+		`../Animation/AttackDragonSummon/Start_Floor_Dodge.ani`	0	6
+		`../Animation/AttackDragonSummon/Start_Head_Dodge.ani`	0	7
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			100011	100012
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	3	4	5
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54031
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-700	60	0
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54031
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-700	-60	0
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54031
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-500	0	0
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54031
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-300	60	0
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54031
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-300	-60	0
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]

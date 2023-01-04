@@ -1,0 +1,146 @@
+#PVF_File
+
+[name]
+	`残忍的慈悲`
+
+[name2]
+	`Kidney Dagger of Mercy`
+
+[basic explain]
+	`暴击伤害 +20%%`
+
+[detail explain]
+	`暴击伤害 +20%% (在决斗场中 +10%%)`
+
+[grade]
+	54
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	50
+
+[physical attack]
+	37
+
+[attack speed]
+	100
+
+[stuck]
+	1
+
+[price]
+	86400
+
+[repair price]
+	72576
+
+[value]
+	69120
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	425	391
+
+[equipment magical attack]
+	450	414
+
+[separate attack]
+	299	200
+
+[physical critical hit]
+	10
+
+[icon]
+	`Item/weapon/thief/dagger.img`	40
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	9	6
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	20
+[/then]
+
+[pvp]
+	[if]
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase critical damage]
+			`%`	10
+	[/then]
+[/pvp]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

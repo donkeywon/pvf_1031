@@ -1,0 +1,101 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check key cooltime]
+			`drop`
+		[false]
+		[return str]
+			`drop`
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`buff`
+			[false]
+			[return str]
+				`buff`
+			[true]
+		
+			[think]
+				[target state]
+					4
+				[true]
+			
+				[think]
+					[void]
+						`is target in attack area()`	230.0	0.0	20.0	20.0
+					[true]
+				
+					[think]
+						[check key cooltime]
+							`air_combo`
+						[true]
+						[return]
+							-1
+						[false]
+						[return str]
+							`air_combo`
+					[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	50.0	50.0	20.0	20.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`nansa`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`wind`
+				[true]
+				[return str]
+					`combo1`
+				[false]
+				[return str]
+					`wind`
+			[/think]
+	[false]
+	[return str]
+		`nansa`
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	280.0	280.0	20.0	20.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`mine`
+			[true]
+			[return str]
+				`combo1`
+			[false]
+			[return str]
+				`mine`
+		[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`shoota`
+		[true]
+		[return]
+			-1
+		[false]
+		[return str]
+			`shoota`
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

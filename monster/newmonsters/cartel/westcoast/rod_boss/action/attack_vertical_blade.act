@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack_vertical_blade.ani`
+	[SUB ANI]
+		`../animation/weapon/attack_vertical_blade_wp.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`AUPPER_SWING`	1
+		`R_SICHEF_ATK`	0
+	[/SOUND]
+	[SPEECH]
+		`二段斩！`	0	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		0
+	[FRAME]
+		5	5
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		3
+	[NOW]
+[/BEHAVIOR]

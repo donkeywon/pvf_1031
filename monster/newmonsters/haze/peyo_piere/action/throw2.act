@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/throw2.ani`
+	[SPEECH]
+		`看不到吧？ 哈哈~`	2	30
+		`我的飞刀绝对百发百中！`	2	30
+	[/SPEECH]
+	[SOUND]
+		`POENA_KNIFE_02`	2
+		`R_PIERE_SKILL_01`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10391
+		[PARTICLE FILENAME]
+			`../Particle/throw.ptl`
+		[LEVEL]
+			0
+		[POS]
+			100	0	60
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

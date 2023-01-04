@@ -1,0 +1,61 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Combo1_Landing.ani`
+	[SPEECH]
+		`呀哈！`	2	15
+		`啪！`	2	15
+		`啊哈！`	2	15
+	[/SPEECH]
+	[SOUND]
+		`AIRSHIP_DOWN`	1
+		`R_DRAGONM_ATK`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			60031
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			60
+		[POS]
+			50	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

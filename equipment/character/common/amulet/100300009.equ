@@ -1,0 +1,133 @@
+#PVF_File
+
+[name]
+	`落影追魂项链`
+
+[name2]
+	``
+
+[basic explain]
+	`远距离攻击时， 有2%%的几率使自身增加50点力量、 智力、 体力和精神， 效果持续20秒。 (效果最多可重叠3次)`
+
+[flavor text]
+	`卡勒特之所以会没落， 也许是因为安祖那家伙过于执着的缘故。 他太渴望自由， 才会被权力蒙蔽！  --沙影贝利特`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[magical attack]
+	33
+
+[magical defense]
+	83
+
+[need material]
+	4794	75
+
+[repair price]
+	67200
+
+[value]
+	67200
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	7280	6880
+
+[Force Result Item Rule]
+	1	0
+
+[icon]
+	`Item/new_equipment/08_necklace/necklace.img`	82
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[distance]
+		`far`
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	0
+	[probability]
+		2
+	[equipment duration]
+		20000
+	[appendage]
+		168
+[/then]
+
+[set name]
+	`落影追魂  首饰`
+
+[fullset basic explain]
+	`远距离攻击时， 有2%%的几率增加15%%的物理暴击率和魔法暴击率， 效果持续20秒。`
+
+[set item]
+	100300009	100310009	100320011
+[/set item]
+
+[set ability]
+	[if]
+		[distance]
+			`far`
+		[event attack success]
+			1
+		[cooltime]
+			20000
+	[/if]
+	[then]
+		[target]
+			`myself`	0
+		[probability]
+			2
+		[duration]
+			20000
+		[stat]
+			`physical critical hit rate`
+			`+`	15
+		[stat]
+			`magical critical hit rate`
+			`+`	15
+	[/then]
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	66

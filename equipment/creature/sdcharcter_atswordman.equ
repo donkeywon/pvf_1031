@@ -1,0 +1,101 @@
+#PVF_File
+
+[name]
+	`SD 女鬼剑士宠物`
+
+[name2]
+	``
+
+[explain]
+	`暴击伤害 +10%% (决斗场内 +5%%)
+
+2012梦幻勇士2宠物`
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`item/creature/creature.img`	107
+
+[field image]
+	`item/fieldimage.img`	30
+
+[equipment type]
+	`[creature]`	0
+
+[sub type]
+	0
+
+[creature species]
+	177
+
+[cool time]
+	10000
+
+[physical attack]
+	20
+
+[magical attack]
+	20
+
+[physical defense]
+	20
+
+[magical defense]
+	20
+
+[move speed]
+	30
+
+[cast speed]
+	25
+
+[attack speed]
+	25
+
+[MP MAX rate]
+	10.0
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	10
+[/then]
+
+[pvp]
+	[if]
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase critical damage]
+			`%`	5
+	[/then]
+[/pvp]
+
+[move wav]
+	`CREATURE_EQUIP_TOUCH`
+
+[set item master]
+	-1
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,127 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/MJ_Moonwaking.ani`
+	[SUB ANI]
+		`../Animation/search_light1.ani`	0	0
+		`../Animation/search_light.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`She's NOT my Lover……`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		2
+	[ON]
+	[TRIGGER]
+		4
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[AI CHARACTER]
+	[CHECKUP]
+		[IS INDEX]
+			10627
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		600	2000	600	150	10	10	10
+	[SEND MESSAGE]
+	[ETC_COMMAND]
+		7	1	15000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			15000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[AI CHARACTER]
+	[CHECKUP]
+		[IS INDEX]
+			10627
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND MESSAGE]
+	[ETC_COMMAND]
+		0	1	60000
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		2
+	[OFF]
+	[TRIGGER]
+		4
+	[OFF]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	7
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+	[SET SPEED]
+		[X AXIS]
+			50
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			15000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]

@@ -1,0 +1,115 @@
+#PVF_File
+
+[name]
+	`素喃订制巨剑`
+
+[name2]
+	`找不到代码name2_27354`
+
+[basic explain]
+	`攻击速度 +3%%
+暴击伤害+ 7%%
+无法进行分解。`
+
+[grade]
+	52
+
+[attach type]
+	`[trade]`
+
+[item group name]
+	`lswd`
+
+[rarity]
+	3
+
+[weight]
+	4000
+
+[usable job]
+	`[swordman]`
+[/usable job]
+
+[minimum level]
+	48
+
+[icon]
+	`Item/weapon/swordman/lswd.img`	90
+
+[icon mark]
+	`Item/IconMark.img`	52
+
+[field image]
+	`Item/FieldImage.img`	13
+
+[equipment type]
+	`[weapon]`	24
+
+[sub type]
+	3
+
+[durability]
+	35
+
+[need material]
+	3323	40
+
+[value]
+	74880
+
+[cool time]
+	10000
+
+[physical attack]
+	36
+
+[equipment physical attack]
+	581	533
+
+[equipment magical attack]
+	436	400
+
+[separate attack]
+	287	192
+
+[attack speed]
+	-60
+
+[cast speed]
+	-20
+
+[variation]
+	2	6
+
+[layer variation]
+	2790
+	`lswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`lswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[move wav]
+	`SQUARESWD_TOUCH`
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	7
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]

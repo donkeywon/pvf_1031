@@ -1,0 +1,78 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AttackShock/AttackShock_02_Body.ani`
+	[SUB ANI]
+		`../Animation/AttackShock/AttackShock_03_BodyFire_02.ani`	0	-2
+		`../Animation/AttackShock/AttackShock_03_BodyFire_01.ani`	0	-1
+		`../Animation/AttackShock/AttackShock_02_body_dodge.ani`	0	1
+		`../Animation/AttackShock/AttackShock_01_headt_dodge.ani`	0	2
+		`../Animation/AttackShock/AttackShock_00_headt.ani`	0	3
+		`../Animation/AttackShock/AttackShock_00_Fire_dodge.ani`	0	4
+		`../Animation/AttackShock/AttackShock_00_headb.ani`	0	5
+		`../Animation/AttackShock/AttackShock_00_headb_dodge.ani`	0	6
+	[/SUB ANI]
+	[SOUND]
+		`R_BLAZE_GOLEM_ATK`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[SUMMON OBJECT]
+	[CHECKUP]
+		[IS INDEX]
+			54071
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[SUMMON OBJECT]
+	[CHECKUP]
+		[IS INDEX]
+			54072
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		4
+	[NOW]
+[/BEHAVIOR]

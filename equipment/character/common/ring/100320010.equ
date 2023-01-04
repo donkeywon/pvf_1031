@@ -1,0 +1,94 @@
+#PVF_File
+
+[name]
+	`冥炎逐日指环`
+
+[name2]
+	``
+
+[basic explain]
+	`近距离武器攻击力 +9%%`
+
+[flavor text]
+	`别以为我老了， 我的热情可永远不会输给年轻人！  --沙影贝利特`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	50
+
+[magical attack]
+	50
+
+[need material]
+	4794	75
+
+[value]
+	67200
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	2912	2752
+
+[Force Result Item Rule]
+	1	0
+
+[icon]
+	`Item/new_equipment/07_ring/ring.img`	97
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[attacker]
+		`character`	-1
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	9
+[/then]
+
+[set item master]
+	100300008
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	66

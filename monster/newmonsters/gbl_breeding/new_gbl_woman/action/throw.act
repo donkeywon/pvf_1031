@@ -1,0 +1,33 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Throw.ani`
+	[SPEECH]
+		`去死吧！`	0	5
+	[/SPEECH]
+	[SOUND]
+		`R_THIEF_THROW`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9298
+		[PARTICLE FILENAME]
+			`../../../../../PassiveObject/ActionObject/Common/Particle/stone.ptl`
+		[LEVEL]
+			35
+		[POS]
+			60	0	60
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

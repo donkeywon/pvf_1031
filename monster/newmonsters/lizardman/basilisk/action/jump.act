@@ -1,0 +1,88 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/JumpingBreath.ani`
+	[SUB ANI]
+		`../Animation/Effect/JumpBreath1.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			8575
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			1200
+		[X AXIS]
+			50
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			400
+		[X AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`去死吧！卑微的家伙！`
+	[PARTICLE]
+		`../../../../../PassiveObject/ActionObject/Monster/LizardMan/particle/Smoke2.ptl`	0	0	-60
+	[PARTICLE]
+		`../../../../../PassiveObject/ActionObject/Monster/LizardMan/particle/Smoke2.ptl`	-400	0	-60
+	[PARTICLE]
+		`../../../../../PassiveObject/ActionObject/Monster/LizardMan/particle/Smoke2.ptl`	400	0	-60
+	[PARTICLE]
+		`../../../../../PassiveObject/ActionObject/Monster/LizardMan/particle/Smoke2.ptl`	200	0	-60
+	[PARTICLE]
+		`../../../../../PassiveObject/ActionObject/Monster/LizardMan/particle/Smoke2.ptl`	200	0	-60
+	[PARTICLE]
+		`../../../../../PassiveObject/ActionObject/Monster/LizardMan/particle/Smoke2.ptl`	0	-200	-60
+	[PARTICLE]
+		`../../../../../PassiveObject/ActionObject/Monster/LizardMan/particle/Smoke2.ptl`	0	200	-60
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

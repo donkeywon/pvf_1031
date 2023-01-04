@@ -1,0 +1,42 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/potghost.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		10000	
+		[physical attack]
+		[+]
+			100.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		10000	
+		[magical attack]
+		[%]
+			100.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		10000	
+		[physical defense]
+		[%]
+			100.0
+	[/APPENDAGE]
+[/BEHAVIOR]

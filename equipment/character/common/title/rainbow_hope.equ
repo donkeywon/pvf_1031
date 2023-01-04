@@ -1,0 +1,103 @@
+#PVF_File
+
+[name]
+	`彩虹色希望`
+
+[name2]
+	`Rainbow Hope`
+
+[explain]
+	`被攻击时， 有5%%的几率增加100跳跃力， 效果持续30秒。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	19
+
+[custom animation]
+	`TitleAnimation/rainbow_hope.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[usable period]
+	30
+
+[HP MAX]
+	55
+
+[MP MAX]
+	55
+
+[physical attack]
+	8
+
+[physical defense]
+	5
+
+[magical attack]
+	8
+
+[magical defense]
+	5
+
+[all elemental resistance]
+	5
+
+[all activestatus resistance]
+	5
+
+[inventory limit]
+	5500
+
+[MP regen speed]
+	15
+
+[move speed]
+	30
+
+[jump power]
+	20
+
+[if]
+	[cooltime]
+		30000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`jump power`
+		`+`	100
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

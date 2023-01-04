@@ -1,0 +1,25 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Three.ani`
+	[SOUND]
+		`SWING_LONG`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+	[RANDOM SELECT]
+		0	7
+	[/RANDOM SELECT]
+	[END]
+[/BEHAVIOR]

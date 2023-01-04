@@ -1,0 +1,215 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check key cooltime]
+			`d`
+		[true]
+	
+		[think]
+			[hp]
+				`%>=`	70
+			[true]
+		
+			[think]
+				[void]
+					`is target in attack area()`	50.0	50.0	20.0	20.0
+				[true]
+			
+				[think]
+					[target state]
+						4
+					[true]
+				
+					[think]
+						[my state]
+							11.0
+						[true]
+						[return]
+							4
+						[false]
+						[return]
+							4
+					[/think]
+	[false]
+	[think]
+		[void]
+			`is the skill in cooltime()`	4
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	7
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				5
+		[/think]
+	[false]
+	[return]
+		6
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	110.0	110.0	25.0	25.0
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	7
+			[true]
+		
+			[think]
+				[target state]
+					4
+				[true]
+			
+				[think]
+					[my state]
+						11.0
+					[true]
+					[return]
+						3
+					[false]
+					[return]
+						4
+				[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[false]
+	[return]
+		5
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	200.0	200.0	150.0	150.0
+		[true]
+		[return]
+			-1
+		[false]
+	
+		[think]
+			[check key cooltime]
+				`a`
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				0
+		[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	50.0	50.0	20.0	20.0
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	4
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	7
+				[true]
+			
+				[think]
+					[my state]
+						11.0
+					[true]
+					[return]
+						4
+					[false]
+					[return]
+						4
+				[/think]
+	[false]
+	[return]
+		5
+	[/think]
+	[false]
+	[return]
+		6
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	100.0	100.0	25.0	25.0
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	7
+			[true]
+		
+			[think]
+				[target state]
+					4
+				[true]
+			
+				[think]
+					[my state]
+						11.0
+					[true]
+					[return]
+						3
+					[false]
+					[return]
+						4
+				[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[false]
+	[return]
+		5
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	200.0	200.0	150.0	150.0
+		[true]
+		[return]
+			-1
+		[false]
+	
+		[think]
+			[check key cooltime]
+				`a`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`s`
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					1
+			[/think]
+	[false]
+	[return]
+		0
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return]
+		2
+	[/think]
+[/ai pattern]

@@ -1,0 +1,58 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_1_2_1.ani`
+	[SUB ANI]
+		`../Animation/attack_1_1_0_1.ani`	0	1
+		`../Animation/attack_1_0_0_1.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`利珀啊……帮帮我……`	0	100
+	[/SPEECH]
+	[SOUND]
+		`PARIS_SKILL_03`	0
+		`PARIS_TELEPORT`	2
+		`RIVER_ELECTRIC_CHARGE`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			64018
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<=]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			64018
+		[LEVEL]
+			0
+		[POS]
+			0	5	0
+		[MAGIC CIRCLE]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		6
+	[END]
+[/BEHAVIOR]

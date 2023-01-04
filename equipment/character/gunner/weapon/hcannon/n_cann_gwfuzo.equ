@@ -1,0 +1,150 @@
+#PVF_File
+
+[name]
+	`啮齿N3 - 棘蛇`
+
+[name2]
+	`Gearwork N3 "Fuzo"`
+
+[basic explain]
+	`攻击时， 有3%%的几率出现火焰爆炸。`
+
+[grade]
+	34
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	30
+
+[physical attack]
+	38
+
+[price]
+	61200
+
+[repair price]
+	48960
+
+[value]
+	48960
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	371	306
+
+[equipment magical attack]
+	223	183
+
+[separate attack]
+	196	130
+
+[skill levelup]
+	`[gunner]`	13	2
+	`[at gunner]`	13	2
+	`[gunner]`	36	1
+	`[at gunner]`	36	1
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/hcannon.img`	10
+
+[field image]
+	`Item/field_weapon.img`	4
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	1	1
+
+[layer variation]
+	2790
+	`hcanc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`hcanb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	1	1
+
+[layer variation]
+	2790
+	`at_hcanc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_hcanb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2800
+
+[item group name]
+	`hcannon`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[fire element]`
+
+[if]
+	[cooltime]
+		1000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[passive object]
+		48084	0	0	0	30	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

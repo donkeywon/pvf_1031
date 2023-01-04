@@ -1,0 +1,87 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Throw.ani`
+	[SPEECH]
+		`哈哈哈~~`	1	50
+		`嘿嘿嘿~~`	1	50
+		`去死吧~！`	1	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	0	1	0	1
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9075
+		[PARTICLE FILENAME]
+			`../Particle/ShootingStarPath.ptl`
+		[LEVEL]
+			0
+		[POS]
+			50	0	50
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9075
+		[PARTICLE FILENAME]
+			`../Particle/ShootingStarPath1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			50	10	50
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9075
+		[PARTICLE FILENAME]
+			`../Particle/ShootingStarPath2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			50	-10	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30041
+		[PARTICLE FILENAME]
+			`../Particle/ShootingStarPath.ptl`
+		[LEVEL]
+			0
+		[POS]
+			50	0	50
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30041
+		[PARTICLE FILENAME]
+			`../Particle/ShootingStarPath1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			50	10	50
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30041
+		[PARTICLE FILENAME]
+			`../Particle/ShootingStarPath2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			50	-10	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

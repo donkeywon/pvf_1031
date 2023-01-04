@@ -1,0 +1,109 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/casting.ani`
+	[SUB ANI]
+		`../animation/GrandWaveOnCharge2.ani`	0	0
+		`../animation/GrandWaveOnCharge1.ani`	0	0
+		`../animation/GrandWaveFullCharge1.ani`	0	0
+		`../animation/GrandWaveFullCharge2.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`绝望的开始！！`	0	100
+	[/SPEECH]
+	[SOUND]
+		`TIAMAT_SKILL_01`	0
+		`CASILLAS_FLASH`	3
+		`CASILLAS_DOOR_OPEN`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			5000
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESPAIR APPENDAGE]
+		1000000	20000	9180	0	110
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		700	19000	700	80	240	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			-250
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CAMOUFLAGE]
+		1	19500
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DAMAGE BOX]
+	[OFF]
+	[SET SPEED]
+		[X AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DAMAGE BOX]
+	[ON]
+[/BEHAVIOR]

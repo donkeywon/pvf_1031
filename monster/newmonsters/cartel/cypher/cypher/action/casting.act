@@ -1,0 +1,33 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/casting.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			700
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		5000	
+		[move speed]
+		[%]
+			-70.0
+	[/APPENDAGE]
+[/BEHAVIOR]

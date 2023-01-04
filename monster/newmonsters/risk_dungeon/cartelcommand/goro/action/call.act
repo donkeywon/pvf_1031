@@ -1,0 +1,44 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/call.ani`
+	[SUB ANI]
+		`../Animation/call_1.ani`	0	1
+		`../Animation/call_2.ani`	0	2
+		`../Animation/call_3.ani`	0	3
+		`../Animation/call_4.ani`	0	4
+		`../Animation/call_5.ani`	0	5
+	[/SUB ANI]
+	[SPEECH]
+		`咕噜~噗~~~`	5	50
+	[/SPEECH]
+	[SOUND]
+		`GORO_SKILL_03`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[IS DAMAGE ENABLE]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[GET TARGET]
+		4
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[MIND CONTROL APPENDAGE]
+		80	500	3000
+[/BEHAVIOR]

@@ -1,0 +1,180 @@
+#PVF_File
+
+[name]
+	`死灵之咒`
+
+[basic explain]
+	`攻击时， 有2%%的几率使500px范围内的所有敌人产生驱散效果。
+带有驱散效果的敌人还将进入出血状态， 效果持续5秒。
+攻击出血状态的敌人时， 有30%%的几率附加20%%的伤害。
+无法进行分解。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使500px范围内的所有敌人产生驱散效果并进入出血状态； 出血状态下的敌人， 每0.5秒会受到1000点伤害， 效果持续5秒。 (若敌人高于Lv79， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击出血状态的敌人时， 有30%%的几率附加20%%的额外伤害。
+无法进行分解。`
+
+[grade]
+	79
+
+[rarity]
+	3
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[magical attack]
+	52
+
+[cast speed]
+	20
+
+[need material]
+	3338	840
+
+[repair price]
+	106176
+
+[value]
+	101120
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	716	669
+
+[equipment magical attack]
+	867	810
+
+[separate attack]
+	450	305
+
+[magical critical hit]
+	2
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/sswd/sswd.img`	94
+
+[field image]
+	`Item/FieldImage.img`	9
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	23	0
+
+[layer variation]
+	2790
+	`sswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`sswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	23	0
+
+[layer variation]
+	2790
+	`sswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`sswdb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`MINERALSWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`ssword`
+
+[cool time]
+	10000
+
+[routing priority]
+	`swordman`	4
+	`demonic swordman`	0
+[/routing priority]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[probability]
+		2
+	[disenchant]
+		1
+	[duration]
+		5000
+	[active status]
+		`bleeding`	79	10000
+[/then]
+
+[if]
+	[target active status]
+		`bleeding`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		30
+	[add absolute damage]
+		`all`
+		`%`	20
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[icon mark]
+	`Item/IconMark.img`	66

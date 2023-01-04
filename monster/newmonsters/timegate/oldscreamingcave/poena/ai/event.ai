@@ -1,0 +1,58 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[cube item number]
+			`>=`	1
+		[true]
+	
+		[think]
+			[second type]
+				`==`	0
+			[true]
+		
+			[think]
+				[void]
+					`is target in attack area()`	1500.0	1500.0	30.0	30.0
+				[true]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	7
+					[true]
+					[return]
+						-1
+					[false]
+					[return]
+						7
+				[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	1500.0	1500.0	30.0	30.0
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	7
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				7
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+[/ai pattern]

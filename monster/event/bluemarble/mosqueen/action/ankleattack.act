@@ -1,0 +1,47 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack.ani`
+	[SUB ANI]
+		`../Animation/Attack-e.ani`	0	3
+	[/SUB ANI]
+	[SOUND]
+		`CLAWB_02`	2
+		`MOSSQUEEN_SKILL_03`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			300
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		10000	
+		[jump power]
+		[%]
+			-100.0
+		[move speed]
+		[%]
+			-50.0
+	[/APPENDAGE]
+[/BEHAVIOR]

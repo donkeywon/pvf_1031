@@ -1,0 +1,90 @@
+#PVF_File
+
+[name]
+	`猫女的魅惑`
+
+[name2]
+	`Tower of Despair 33 Floor`
+
+[explain]
+	`被攻击时， 有4%%的几率使自身增加20点力量和智力， 效果持续10秒， 并恢复HP最大值的5%%。`
+
+[flavor text]
+	`我要在这里等博士……喵喵~他什么时候才回来呀？ 喵？`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	371
+
+[custom animation]
+	`TitleAnimation/apc_tower_of_despair_33.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	60
+
+[MP MAX]
+	120
+
+[physical attack]
+	6
+
+[magical attack]
+	9
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[cooltime]
+		15000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[probability]
+		4
+	[stat]
+		`physical attack`
+		`+`	20
+	[stat]
+		`magical attack`
+		`+`	20
+	[restore]
+		`HP`
+		`%`	5	10000
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

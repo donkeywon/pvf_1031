@@ -1,0 +1,168 @@
+#PVF_File
+
+[name]
+	`风暴`
+
+[width]
+	40	10
+
+[floating height]
+	90
+
+[ability category]
+	`[HP MAX]`	`*`	25000
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	200
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	200
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[category]
+	`[fort armor]`
+	`[machine]`
+	`[melee combat]`
+	`[close-carefully]`
+[/category]
+
+[level]
+	1	99
+
+[move speed]
+	200	200
+
+[attack speed]
+	750	750
+
+[cast speed]
+	700	790
+
+[hit recovery]
+	500	1500
+
+[weight]
+	45000	45000
+
+[category]
+	`[oneside move]`
+	`[melee combat]`
+	`[close-carefully]`
+[/category]
+
+[fix direction]
+	`[left]`
+
+[initial target]
+	[MONSTER]
+		64597
+	[initial target Permanent]
+		0
+[/initial target]
+
+[sight]
+	600
+
+[warlike]
+	100
+
+[attack delay]
+	1500
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[keep distance with target]
+	50
+
+[out of targetting]
+	1
+
+[face image]
+	`Monster/MonsterFace.img`	147
+
+[attack sound]
+	`R_TEMPESTER_ATK`
+
+[appear sound]
+	`TEMPESTER_APPEAR`
+
+[damage sound]
+	`R_TEMPESTER_DMG`
+
+[die sound]
+	`TEMPESTER_DIE`
+
+[ambient sound]
+	`TEMPESTER_FLOATING_LOOP`
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[action list]
+	`action/Missile.act`
+
+[/attack motion]
+
+[attack info]
+	``
+[/attack info]
+
+[cooltime]
+	10000
+[/cooltime]
+
+[think term]
+	200
+
+[destination change term]
+	500
+
+[ai pattern]
+	[normal]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/normal]
+	[master]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/master]
+	[expert]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/expert]
+	[king]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/king]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[base table]
+	`NewMonsters/AdvanceAltar/Enemy/MecaTau_Summon_Robot/table/AdvanceAltarMonsterBaseParameter.tbl`

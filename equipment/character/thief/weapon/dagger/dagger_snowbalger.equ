@@ -1,0 +1,143 @@
+#PVF_File
+
+[name]
+	`雪之灾难`
+
+[name2]
+	`Snowbalger`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入冰冻状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入冰冻状态6秒。 (若敌人高于Lv10， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	14
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	10
+
+[physical attack]
+	13
+
+[attack speed]
+	100
+
+[stuck]
+	1
+
+[price]
+	22400
+
+[repair price]
+	17920
+
+[value]
+	17920
+
+[equipment physical attack]
+	153	119
+
+[equipment magical attack]
+	162	126
+
+[separate attack]
+	99	63
+
+[physical critical hit]
+	10
+
+[skill levelup]
+	`[thief]`	2	2
+[/skill levelup]
+
+[freeze resistance]
+	10
+
+[icon]
+	`Item/weapon/thief/dagger.img`	36
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	4	1
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		9000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		6000
+	[probability]
+		2
+	[active status]
+		`freeze`	10
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

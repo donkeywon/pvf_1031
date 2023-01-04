@@ -1,0 +1,252 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`真龙利特雷诺`
+
+[face image]
+	`Monster/MonsterFace.img`	527
+
+[die effect]
+	0	3	1
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	2500
+	`[PHYSICAL_ATTACK]`	`*`	250
+	`[PHYSICAL_DEFENSE]`	`*`	300
+	`[MAGICAL_ATTACK]`	`*`	250
+	`[MAGICAL_DEFENSE]`	`*`	300
+[/ability category]
+
+[category]
+	`[dragon]`
+	`[close-carefully]`
+	`[human]`
+	`[fixture]`
+[/category]
+
+[set damage check]
+	2000
+
+[targeting bonus]
+	0	0	0	0	35	0	0	20	0	0	0	20	0	35	0	0	0	0	0	0	0
+	`[stand]`
+	`[dash]`	0	0	0
+
+[fire resistance]
+	50	50
+
+[water resistance]
+	50	50
+
+[dark resistance]
+	50	50
+
+[light resistance]
+	50	50
+
+[freeze resistance]
+	1000	1000
+
+[stun resistance]
+	1000	1000
+
+[blind resistance]
+	60	60
+
+[stone resistance]
+	1000	1000
+
+[sleep resistance]
+	60	60
+
+[hold resistance]
+	60	60
+
+[slow resistance]
+	60	60
+
+[curse resistance]
+	1000	1000
+
+[confuse resistance]
+	60	60
+
+[lightning resistance]
+	1000	1000
+
+[bleeding resistance]
+	1000	1000
+
+[poison resistance]
+	60	60
+
+[burn resistance]
+	60	60
+
+[hp regen rate]
+	0.0	0.0
+
+[HP regen speed]
+	100	100
+
+[MP regen speed]
+	100	100
+
+[level]
+	1	70
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1400	1400
+
+[weight]
+	65000	65000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	1600
+
+[warlike]
+	800
+
+[think term]
+	350
+
+[destination change term]
+	350
+
+[lie frame]
+	2	3	2	3	4
+
+[event super on scr]
+	`[on hp]`	15	100	1
+	`[unbreakable]`	-1	-1	-1	-1
+	`[with blast]`
+[/event super on scr]
+
+[appear sound]
+	`ITRENOG_MEET`
+
+[damage sound]
+	`R_ITRENOG_DMG`
+
+[die sound]
+	`ITRENOG_DIE`
+
+[common champion drop item]
+[/common champion drop item]
+
+[waiting action]
+	`Action/Phase_1.act`
+
+[move action]
+	`Action/Phase_1.act`
+
+[moveback action]
+	`Action/Phase_1.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[last action]
+	`Action/Die.act`
+
+[attack action]
+	`Action/Attack.act`
+	`Action/Casting.act`
+	`Action/Attack_jump.act`
+	`Action/Attack_tale.act`
+	`Action/Attack_breath.act`
+	`Action/Jump.act`
+	`Action/Jump_Down.act`
+	`Action/Phase_1.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/attack.atk`
+	``
+	`AttackInfo/attack_jump.atk`
+	`AttackInfo/attack_tale.atk`
+	`AttackInfo/attack_breath.atk`
+	`AttackInfo/attack.atk`
+	``
+	``
+[/attack info]
+
+[cooltime]
+	2500	1	7000	14000	5000	25000	1	1
+[/cooltime]
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[level of difficulty]
+	[easy]
+		-50	3000
+	[medium]
+		-30	2000
+	[hard]
+		0	0
+	[ultimate]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]

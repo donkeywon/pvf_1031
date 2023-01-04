@@ -1,0 +1,32 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack1_2.ani`
+	[SUB ANI]
+		`../Animation/Effect/double_swing2_dodge.ani`	0	0
+		`../Animation/weapon/Attack1.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`R_SE_ATK1`	0
+		`R_STAFF`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`Attack2_2.act`
+	[CHANGE ATTACKINFO]
+		`../AttackInfo/SwingEx.atk`
+[/BEHAVIOR]

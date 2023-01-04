@@ -1,0 +1,157 @@
+#PVF_File
+
+[ambient]
+	[room list]
+		`强大的对手你在哪？无敌的神宠虔诚的呼唤你，你快出来吧！`
+		`想来点刺激的吗？去和那人聊聊吧……嘿嘿！`
+		`hi~我在这，在这！往下看……>_<！`	
+		[in elven gard]
+			`记忆越来越差，如果哪天我忘记你了，你不要生气。`
+		[/in elven gard]
+		[in alfhlyra]
+			`阴暗的地方让我有种冲动……`
+		[/in alfhlyra]
+		[in stom pass]
+			`好冷啊，先来暖暖身吧！`
+		[/in stom pass]
+	[/room list]
+	[main game]
+		[fill point under]
+			20
+			`肚子又饿了，怎么办，怎么办呀？`
+			`肚子又饿了，怎么办，怎么办呀？`
+			`肚子又饿了，怎么办，怎么办呀？`
+		[/fill point under]
+		[enemies alive]
+			[hits over]
+				20
+				`别硬扛，打不过就逃吧，命还是很值钱的！`
+				`其实，最好的防守就是攻击，你再加把劲吧！`
+			[/hits over]
+			[hits under]
+				21
+				`还算有点潜力，不白教你！继续努力吧！`
+				`干得好！趁其不备，再来一招！`
+			[/hits under]
+		[/enemies alive]
+		[enemies destroyed]
+		[rank over]
+			`b`
+			`精力充沛~~嗯，是个好兆头！`
+			`嗯，很好！下次继续用这招！`
+		[/rank over]
+		[rank under]
+			`b`
+			`奇怪，难道是我完美的能力出现缺陷了？`
+			`在阿-拉德，只有高等级的王者，低等级的弱者！`
+		[/rank under]
+	[/main game]
+[/ambient]
+
+[trigger]
+	[room list]
+		[renamed]
+			`新名字吗？噢，那我得记住了。`
+		[/renamed]
+		[pop random]
+			30	
+			[call the name]
+				`我？很好啊！如果你再努力点，我会更好的……@-@……`
+			[/call the name]
+		[/pop random]
+		[pop random]
+			20	
+			[equip]
+				`别压抑自己了，快和我一起狂飙吧！`
+				`哇哈~~开始我们俩人的惊险之旅吧！`
+			[/equip]
+		[/pop random]
+		[pop random]
+			20	
+			[level up]
+				`看到没？看到没！我升级了！`
+				`我又变强了！想看吗？那就先排队慢慢等吧！嘿嘿……`
+			[/level up]
+		[/pop random]
+		[pop random]
+			30	
+			[character level up]
+				`啊哈~和我在一起，进步就是神速呀……`
+			[/character level up]
+		[/pop random]
+		[evolution]
+			``
+		[/evolution]
+		[eat feed]
+			`嗯嗯，好吃，别瞪了！不吃饱，哪有力气减肥啊！`
+		[/eat feed]
+	[/room list]
+	[main game]
+		[eat feed]
+			`好吃~好吃！肚子饿的时候，什么都好吃！`
+			`哇，吃饱了，力气回来了~`
+		[/eat feed]
+		[none feed]
+			`郁闷~食物没了，看来又得饿着肚子打怪了！`
+		[/none feed]
+		[end buff]
+			`好饿啊，没力气了，再给我一点吃的吧……`
+		[/end buff]
+		[dying]
+			`饿得没力气了……让我休息一下……`
+		[/dying]
+		[using overskill]
+			`你有力气了吗？没有就再休息一会……`
+			`你想要我的力量啊？那就别老忘记给我喂食物！`
+		[/using overskill]
+		[pop random]
+			30	
+			[skill gauge full]
+				`嘿嘿，先给它们扔颗闪光弹吧~~`
+				`准备完毕……快点发射啊！`
+			[/skill gauge full]
+		[/pop random]
+		[pop random]
+			30	
+			[over skill gauge full]
+				`激发潜力！准备完毕！`
+				`我准备好了！就等你发话了！`
+			[/over skill gauge full]
+		[/pop random]
+		[over skill waiting]
+			`你不需要我的力量了？好吧，随便你~~`
+			`我等你都快5万年了，不用我的技能好歹也吱一声啊！`
+		[/over skill waiting]
+		[call the name]
+			`我？很好啊！如果你再努力点，我会更好的……@-@……`
+		[/call the name]
+		[pop random]
+			20	
+			[equip]
+				`别压抑自己了，快和我一起狂飙吧！`
+				`哇哈~~开始我们俩人的惊险之旅吧！`
+			[/equip]
+		[/pop random]
+		[pop random]
+			20	
+			[level up]
+				`看到没？看到没！我升级了！`
+				`我又变强了！想看吗？那就先排队慢慢等吧！嘿嘿……`
+			[/level up]
+		[/pop random]
+		[pop random]
+			30	
+			[character level up]
+				`啊哈~和我在一起，进步就是神速呀……`
+			[/character level up]
+		[/pop random]
+		[evolution]
+			``
+		[/evolution]
+	[/main game]
+	[pvp]
+		[press creature button]
+			`我的力量无法使用，被限制了……T_T……`
+		[/press creature button]
+	[/pvp]
+[/trigger]

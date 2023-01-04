@@ -1,0 +1,192 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/BodyGun6.ani`
+	[SUB ANI]
+		`../Animation/EffectGunShoot6.ani`	0	0
+		`../Animation/EffectBoostAttack.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`TEMPESTER_GATLING`	1
+		`TEMPESTER_GATLING`	2
+		`TEMPESTER_GATLING`	3
+		`TEMPESTER_GATLING`	4
+		`TEMPESTER_GATLING`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[WHICH]
+	[TARGET]
+	[CHECKUP]
+		[ZPOS]
+		[>=]
+			50
+		[CHECKED NO]
+		[=>]
+			1
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		3
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[TARGET]
+	[CHECKUP]
+		[ZPOS]
+		[>=]
+			130
+		[CHECKED NO]
+		[=>]
+			1
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		2
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[TARGET]
+	[CHECKUP]
+		[ZPOS]
+		[>=]
+			170
+		[CHECKED NO]
+		[=>]
+			1
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8382
+		[PARTICLE FILENAME]
+			`../Particle/TempesterGun6.ptl`
+		[LEVEL]
+			0
+		[POS]
+			33	0	19
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8382
+		[PARTICLE FILENAME]
+			`../Particle/TempesterGun6.ptl`
+		[LEVEL]
+			0
+		[POS]
+			33	0	19
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8382
+		[PARTICLE FILENAME]
+			`../Particle/TempesterGun6.ptl`
+		[LEVEL]
+			0
+		[POS]
+			33	0	19
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8382
+		[PARTICLE FILENAME]
+			`../Particle/TempesterGun6.ptl`
+		[LEVEL]
+			0
+		[POS]
+			33	0	19
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8382
+		[PARTICLE FILENAME]
+			`../Particle/TempesterGun6.ptl`
+		[LEVEL]
+			0
+		[POS]
+			33	0	19
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

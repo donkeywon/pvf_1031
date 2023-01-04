@@ -1,0 +1,99 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	60
+[/dungeon]
+
+[type]
+	`[boss]`
+
+[greed]
+	`EE EE`
+
+[tile]
+	`Tile/OdesaWide.til`
+	`Tile/OdesaWide.til`
+	`Tile/OdesaWide.til`
+	`Tile/OdesaWide.til`
+[/tile]
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/Far.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/MidSub.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	9	248	886	246	303	5	505	365
+
+[sound]
+	`M_ODESA_BOSS`
+	`AMB_TOWN_02`
+[/sound]
+
+[animation]
+	`Animation/obj01.ani`	`[normal]`	760	128	0
+	`Animation/obj00.ani`	`[normal]`	559	100	0
+	`Animation/obj01.ani`	`[normal]`	372	69	0
+	`Animation/obj00.ani`	`[normal]`	307	53	0
+	`Animation/obj01.ani`	`[normal]`	592	8	0
+	`Animation/HighWall0.ani`	`[closeback]`	139	219	0
+	`Animation/HighWall0.ani`	`[closeback]`	587	219	0
+	`Animation/HighWall0.ani`	`[closeback]`	811	219	0
+	`Animation/HighWall0.ani`	`[closeback]`	363	219	0
+	`Animation/Light.ani`	`[middleback]`	795	149	0
+	`Animation/Light.ani`	`[middleback]`	530	142	0
+	`Animation/Light.ani`	`[middleback]`	269	141	0
+	`Animation/Light.ani`	`[middleback]`	8	143	0
+[/animation]
+
+[monster]
+	61306	1	0	459	202	0	1	1	`[fixed]`	`[normal]`
+	61300	1	0	314	260	0	1	1	`[fixed]`	`[normal]`
+	61708	1	3	684	260	0	2	1	`[fixed]`	`[boss]`
+	61301	1	0	234	263	0	1	1	`[fixed]`	`[normal]`
+	61300	1	0	250	322	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[NPC]
+	1000	`[left]`	0	0	0
+[/NPC]
+
+[event monster position]
+	318	310	0
+	392	226	0
+	724	319	0
+	545	253	0
+[/event monster position]
+
+[map name]
+	`PVP 无名`

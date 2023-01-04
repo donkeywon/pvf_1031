@@ -1,0 +1,84 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/gun.ani`
+	[SOUND]
+		`LANZELUCE_SKILL_01`	3
+		`LANZELUCE_MACHINEGUN`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35192
+		[PARTICLE FILENAME]
+			`../Particle/bow.ptl`
+		[LEVEL]
+			0
+		[POS]
+			85	0	80
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35192
+		[PARTICLE FILENAME]
+			`../Particle/bow.ptl`
+		[LEVEL]
+			0
+		[POS]
+			85	0	90
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

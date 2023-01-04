@@ -1,0 +1,178 @@
+#PVF_File
+
+[name]
+	`改良的范弗拉丁步枪`
+
+[name2]
+	`找不到代码name2_32040`
+
+[basic explain]
+	`施放[散弹枪]时， 有50%%的几率发动提升Lv5的该技能。
+无法进行分解。`
+
+[grade]
+	74
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[physical attack]
+	49
+
+[magical attack]
+	74
+
+[need material]
+	3337	670
+
+[repair price]
+	111888
+
+[value]
+	106560
+
+[equipment physical attack]
+	708	646
+
+[equipment magical attack]
+	616	562
+
+[separate attack]
+	420	284
+
+[physical critical hit]
+	5
+
+[magical critical hit]
+	5
+
+[skill levelup]
+	`[gunner]`	78	2
+	`[at gunner]`	78	2
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/musket.img`	75
+
+[field image]
+	`Item/field_weapon.img`	3
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	24	0
+
+[layer variation]
+	2790
+	`musketc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`musketb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	24	0
+
+[layer variation]
+	2790
+	`at_musketc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_musketb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	2100
+
+[item group name]
+	`musket`
+
+[cool time]
+	10000
+
+[if]
+	[event use skill]
+		`gunner`	48
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`gunner`	48	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`at gunner`	48
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`at gunner`	48	5
+	[/skill levelup]
+[/then]
+
+[routing priority]
+	`gunner`	4
+	`at gunner`	4
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

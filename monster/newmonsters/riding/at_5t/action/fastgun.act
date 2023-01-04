@@ -1,0 +1,129 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/fastgun.ani`
+	[SUB ANI WITH XYZ]
+		`../animation/fastgun1.ani`	0	-10	0	-12	0
+	[/SUB ANI WITH XYZ]
+	[SUB ANI]
+		`../animation/shootsmoke1.ani`	0	9
+		`../animation/fastgun_ef1.ani`	0	10
+		`../animation/fastgun_ef.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`G_MUSKETA`	1
+		`G_MUSKETB`	3
+		`G_MUSKETA`	5
+		`G_MUSKETB`	7
+		`G_MUSKETB`	9
+		`G_MUSKETA`	11
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10261
+		[PARTICLE FILENAME]
+			`../Particle/Bullet.ptl`
+		[LEVEL]
+			0
+		[POS]
+			145	0	80
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10261
+		[PARTICLE FILENAME]
+			`../Particle/Bullet.ptl`
+		[LEVEL]
+			0
+		[POS]
+			170	0	65
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8173
+		[PARTICLE FILENAME]
+			`../Particle/Bullet.ptl`
+		[LEVEL]
+			0
+		[POS]
+			145	0	70
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10261
+		[PARTICLE FILENAME]
+			`../Particle/Bullet.ptl`
+		[LEVEL]
+			0
+		[POS]
+			180	0	65
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10261
+		[PARTICLE FILENAME]
+			`../Particle/Bullet.ptl`
+		[LEVEL]
+			0
+		[POS]
+			110	0	70
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

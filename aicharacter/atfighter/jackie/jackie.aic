@@ -1,0 +1,191 @@
+#PVF_File
+
+[doll special dungeon]
+	1507
+[/doll special dungeon]
+
+[minimum info]
+	`后巷的杰克成`	7	4	0	0	80	0	0	1	0	0	0
+	`no creature`	0	0	0
+
+[additional character status]
+	0	0	0	100	0	100	0	0	0	0	30	30	0	0	0	0	10	10	10	10	30	50	30	50	30	30	60	30	30	30	30	30	30	0	30	30	30
+[/additional character status]
+
+[character status rate]
+	100	100	1	1	1	1	1	5	1	5	1	1	1	1.2	1.4	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+[/character status rate]
+
+[character status rate special]
+	70	30	1	1	3	5	10	45	7	45	1	90	5	1.2	1.5	2	2	1	1	1	1	1	1	1	1500	1500	1500	1500	1500	1500	1500	1500	1500	1500	1500	1500	1	0.3	1500	1500	1500
+[/character status rate special]
+
+[attack damage rate]
+	2.3
+
+[armor subtype]
+	4
+
+[party member]
+	1	0	2	600
+[/party member]
+
+[quick skill]
+	49	21
+	18	13
+	9	28
+	81	18
+	88	8
+	89	30
+[/quick skill]
+
+[skill]
+	52	11
+	105	30
+	16	11
+	54	18
+	62	16
+	121	1
+	63	11
+	42	20
+	108	1
+	20	15
+	22	10
+	55	1
+	92	1
+	27	1
+	10	1
+	7	17
+	87	16
+	51	10
+	28	1
+	53	1
+	96	1
+	86	23
+	95	1
+	12	1
+	13	1
+	23	1
+	46	1
+	17	1
+	181	3
+	182	3
+	184	1
+	172	1
+	179	7
+	170	1
+	174	60
+	57	1
+	169	1
+	5	10
+	50	10
+[/skill]
+
+[skill correction]
+	9	0.6	81	0.8	20	0.05	42	0.01	50	0.05	121	0.4	89	0.5	105	0.2
+[/skill correction]
+
+[quick item]
+	7292	500
+[/quick item]
+
+[equipment]
+	30017	2	0
+	10948	1	13
+	14937	0	13
+	12942	4	13
+	18940	1	13
+	16931	2	13
+	20155	1	13
+	22148	1	13
+	24163	0	13
+	1970009	2	0
+	2000008	2	0
+	2010062	2	0
+	2030062	2	0
+[/equipment]
+
+[think term]
+	200
+
+[destination change term]
+	300
+
+[keep distance with target]
+	50
+
+[warlike]
+	0
+
+[vision]
+	5000
+
+[targeting bonus]
+	0	50	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	`[stand]`
+	`[dash]`	0	0
+	`[slow]`
+	`[confuse]`	0
+
+[ai pattern]
+	`Event.ai`
+	`DestinationSelect.ai`
+	`Action.ai`
+	`MoveMethod.ai`
+[/ai pattern]
+
+[key stream]
+	`skill20`
+	`skill20.key`
+	`skill50`
+	`skill50.key`
+	`skill88`
+	`skill88.key`
+	`combo`
+	`combo.key`
+	`skill81`
+	`skill81.key`
+	`skill42`
+	`skill42.key`
+	`skill108`
+	`skill108.key`
+	`skill121`
+	`skill121.key`
+	`skill9`
+	`skill9.key`
+	`skill87`
+	`skill87.key`
+	`skill5`
+	`skill5.key`
+	`exit`
+	`exit.key`
+	`remi`
+	`remi.key`
+	`skill16`
+	`skill16.key`
+	`skill89`
+	`skill89.key`
+	`skill105`
+	`skill105.key`
+[/key stream]
+
+[proc action]
+	`action/proc.act`
+
+[key cooltime]
+	`combo`	2000
+	`skill81`	8000
+	`remi`	200
+	`skill42`	4000
+[/key cooltime]
+
+[speech on situation]
+	[on appear]
+		`很高兴见到你~！`	100
+	[on attack]
+		`躲在我背后`	100	0
+	[on attack]
+		`喀喀，除掉吧~？`	50	4
+	[on attack]
+		`躲在我背后`	30	5
+[/speech on situation]

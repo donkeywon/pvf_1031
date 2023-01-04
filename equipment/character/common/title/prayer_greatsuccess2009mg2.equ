@@ -1,0 +1,100 @@
+#PVF_File
+
+[name]
+	`2009祈祷成功-魔法师(智力)`
+
+[name2]
+	`Prayer For Great Success 2009[Azure]`
+
+[explain]
+	`施展时以2%%的机率10秒内呈现超级盔甲状态。(决斗场内持续3秒)`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	145
+
+[custom animation]
+	`TitleAnimation/prayer_greatsuccess2009azure.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	100
+
+[MP MAX]
+	100
+
+[magical attack]
+	27
+
+[magical defense]
+	18
+
+[stuck resistance]
+	20
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	30
+
+[if]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[probability]
+		2
+	[reduce duration at pvp module]
+		70
+	[buff]
+		`superarmor`
+[/then]
+
+[magical critical hit]
+	3
+
+[skill levelup]
+	`[mage]`	19	1
+	`[mage]`	48	1
+	`[mage]`	35	1
+	`[mage]`	36	1
+	`[mage]`	97	1
+[/skill levelup]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,52 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Cast.ani`
+	[SOUND]
+		`DOLL_CAST`	0
+	[/SOUND]
+	[SPEECH]
+		`混乱了吧！看不清了吧！哈哈哈……`	0	25
+		`脑袋开花了吧！`	0	75
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8085
+		[PARTICLE FILENAME]
+			`../particle/right.ptl`
+		[LEVEL]
+			60
+		[POS]
+			0	0	90
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8085
+		[PARTICLE FILENAME]
+			`../particle/left.ptl`
+		[LEVEL]
+			60
+		[POS]
+			0	0	90
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

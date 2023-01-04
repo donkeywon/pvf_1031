@@ -1,0 +1,33 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/oder.ani`
+	[SOUND]
+		`INCANTATION`	0
+	[/SOUND]
+	[SPEECH]
+		`勇士们！安徒恩的力量！`	0	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			61510	61400
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND MESSAGE]
+	[ATTACK_COMMAND]
+		5
+[/BEHAVIOR]

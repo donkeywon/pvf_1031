@@ -1,0 +1,49 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/casting01.ani`
+	[SUB ANI]
+		`../Animation/effect/casting01_e2.ani`	0	-1
+		`../Animation/effect/casting01_e.ani`	0	1
+		`../Animation/effect/base_effect.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`呃啊~！啊啊啊！！`	3	100
+	[/SPEECH]
+	[SOUND]
+		`R_FITZ_SKILL_03`	0
+		`FITZ_CAST_01`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		16	16
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		6
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1140	2
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]

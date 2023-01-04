@@ -1,0 +1,30 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/dash_move1.ani`
+	[SUB ANI]
+		`../Animation/light/dash_move1.ani`	0	0
+		`../Animation/wp/dash_move1.ani`	0	0
+		`../Animation/dash_move1_effect.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[DEFAULT ATTACKINFO]
+	`../AttackInfo/runAttack.atk`
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		500	
+		[move speed]
+		[%]
+			150.0
+	[/APPENDAGE]
+[/BEHAVIOR]

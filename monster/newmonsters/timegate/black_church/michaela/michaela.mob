@@ -1,0 +1,182 @@
+#PVF_File
+
+[name]
+	`圣者米歇尔`
+
+[category]
+	`[angel]`
+	`[melee combat]`
+	`[close-tough]`
+[/category]
+
+[appear sound]
+	`MICA_MEET`
+
+[damage sound]
+	`R_NMAUG_DMG`
+
+[die sound]
+	`MICA_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	1000
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	150
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	1000
+	`[HP MAX]`	`*`	5500
+[/ability category]
+
+[level]
+	76	76
+
+[fire resistance]
+	100	100
+
+[water resistance]
+	100	100
+
+[dark resistance]
+	100	100
+
+[light resistance]
+	100	100
+
+[slow resistance]
+	100	100
+
+[freeze resistance]
+	1000	1000
+
+[stun resistance]
+	100	100
+
+[curse resistance]
+	100	100
+
+[blind resistance]
+	100	100
+
+[stone resistance]
+	1000	1000
+
+[sleep resistance]
+	100	100
+
+[confuse resistance]
+	100	100
+
+[hold resistance]
+	100	100
+
+[move speed]
+	1200	1200
+
+[attack speed]
+	1100	1100
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1300	1300
+
+[weight]
+	150000	150000
+
+[warlike]
+	100
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[face image]
+	`Monster/MonsterFace.img`	546
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[attack action]
+	`action/casting.act`
+	`action/shield.act`
+[/attack action]
+
+[last action]
+	`Action/die.act`
+
+[attack info]
+	``
+	``
+[/attack info]
+
+[cooltime]
+	20000	5000
+[/cooltime]
+
+[think term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[targeting bonus]
+	90	75	50	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	`[stand]`
+	`[dash]`	0	0	0
+[/targeting bonus]
+
+[keep distance with target]
+	150
+
+[vision]
+	1000
+
+[set damage check]
+	3000
+
+[hp regen rate]
+	0.0	0.0
+
+[lie frame]
+	1	2	3	3	4

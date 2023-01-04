@@ -1,0 +1,61 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/OneKick.ani`
+	[SUB ANI]
+		`../Animation/OneKick_e_0.ani`
+		`../Animation/Fire/OneKick.ani`
+	[/SUB ANI]
+	[SOUND]
+		`VOTI_SKILL_01`	0
+		`SWING_UPPER`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[MONSTER]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[LAST ATTACKSUCCESSES]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[MONSTER]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+		[ZPOS]
+		[=>]
+			30
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		21
+	[END]
+[/BEHAVIOR]

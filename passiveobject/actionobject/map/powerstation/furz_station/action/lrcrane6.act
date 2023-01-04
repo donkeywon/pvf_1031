@@ -1,0 +1,115 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/LRcrane1.ani`
+	[SUB ANI]
+		`../Animation/LRcrane0.ani`	0	1
+	[/SUB ANI]
+	[SOUND]
+		`CRANE_MOVE`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PLAYER]
+	[CHECKUP]
+		[CHECK SYMBOL]
+			1	1
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PLAYER]
+	[CHECKUP]
+		[CHECK SYMBOL]
+			1	11
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PLAYER]
+	[CHECKUP]
+		[CHECK SYMBOL]
+			1	111
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PLAYER]
+	[CHECKUP]
+		[CHECK SYMBOL]
+			1	101
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		3	700
+	[SET ACTION]
+	[CUSTOM]
+		24
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[LEFT]
+	[SET SPEED]
+		[X AXIS]
+			28
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+	[SET ACTION]
+	[CUSTOM]
+		10
+	[NOW]
+[/BEHAVIOR]

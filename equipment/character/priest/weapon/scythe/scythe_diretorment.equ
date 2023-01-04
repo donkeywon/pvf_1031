@@ -1,0 +1,165 @@
+#PVF_File
+
+[name]
+	`镇魂钩镰`
+
+[name2]
+	`Dire Torment`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入出血状态。
+攻击出血状态的敌人时， 有50%%的几率使自身增加20点力量， 效果持续30秒。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入出血状态10秒； 出血状态下的敌人， 每0.5秒受到28点伤害。 (若敌人高于Lv20， 则减少进入异常状态的几率； 反之， 则增加几率)
+攻击出血状态的敌人时， 有50%%的几率使自身增加20点力量， 效果持续30秒。 (冷却时间为40秒)`
+
+[grade]
+	22
+
+[rarity]
+	2
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	20
+
+[physical attack]
+	15
+
+[magical attack]
+	15
+
+[attack speed]
+	80
+
+[stuck]
+	1
+
+[price]
+	30800
+
+[repair price]
+	24640
+
+[value]
+	24640
+
+[equipment physical attack]
+	201	186
+
+[equipment magical attack]
+	212	196
+
+[separate attack]
+	108	70
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	1	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/priest/scythe.img`	15
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[priest]`
+
+[variation]
+	0	8
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		18000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[probability]
+		2
+	[active status]
+		`bleeding`	20	740
+[/then]
+
+[if]
+	[cooltime]
+		45000
+	[target active status]
+		`bleeding`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		50
+	[stat]
+		`physical attack`
+		`+`	30
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

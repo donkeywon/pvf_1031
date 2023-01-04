@@ -1,0 +1,54 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/2GFog.ani`
+	[SUB ANI]
+		`../Animation/2GFog_bottom2.ani`	0	-21
+		`../Animation/2GFog_bottom1.ani`	0	0
+		`../animation/2GFog2.ani`	0	0
+		`../animation/2GFog3.ani`	0	0
+		`../animation/2GFog1.ani`	0	6
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../Particle/poi.ptl`	0	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9043	9054
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			500
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

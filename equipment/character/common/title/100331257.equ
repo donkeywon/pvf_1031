@@ -1,0 +1,108 @@
+#PVF_File
+
+[name]
+	`型男辣妹`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical attack]
+	40
+
+[physical defense]
+	40
+
+[magical attack]
+	40
+
+[magical defense]
+	40
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[move speed]
+	30
+
+[stuck]
+	-3
+
+[HP MAX]
+	200
+
+[MP MAX]
+	200
+
+[physical critical hit]
+	3
+
+[magical critical hit]
+	3
+
+[icon]
+	`Item/Title/title.img`	541
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[basic explain]
+	`攻击时，伤害增加 10%%
+(决斗场中增加伤害 5%%)`
+
+[detail explain]
+	`攻击时，伤害增加 10%%
+(决斗场中增加伤害 5%%)(增加伤害相关的部分，只套用相关属性中最高的值。暴击伤害增加除外。)`
+
+[custom animation]
+	`TitleAnimation/handsome_couple.ani`
+[/custom animation]
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	10
+[/then]
+
+[pvp]
+	[if]
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase damage]
+			`%`	5
+	[/then]
+[/pvp]
+
+[icon mark]
+	`Item/IconMark.img`	64

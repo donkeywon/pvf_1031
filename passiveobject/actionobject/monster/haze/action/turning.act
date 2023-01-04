@@ -1,0 +1,67 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Turning.ani`
+	[SUB ANI]
+		`../Animation/TurningBack.ani`	0	1
+		`../Animation/Turning_eff.ani`	0	2
+		`../Animation/Turning_body.ani`	0	3
+	[/SUB ANI]
+	[SOUND]
+		`BIKER_TURN`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ATTACKINFO]
+		`../AttackInfo/DashAttack.atk`
+	[SET SPEED]
+		[X AXIS]
+			250
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+	[SUMMON MONSTER]
+		[INDEX]
+			61263
+		[LEVEL]
+			70
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[TEAM]
+			100
+		[USE OBJECT ZPOS]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

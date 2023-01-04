@@ -1,0 +1,40 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Throw.ani`
+	[SUB ANI]
+		`../Animation/ac/Throw_200.ani`	0	0
+		`../Animation/hair/Throw_300.ani`	0	0
+		`../Animation/hat/Throw_400.ani`	0	0
+		`../Animation/pants/Throw_500.ani`	0	0
+		`../Animation/shirts/Throw_800.ani`	0	0
+		`../Animation/shoes/Throw_600.ani`	0	0
+		`../Animation/skin/Throw_700.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`GOBLIN_COMMAND`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8569
+		[PARTICLE FILENAME]
+			`../Particle/ThrowSpear.ptl`
+		[LEVEL]
+			30
+		[POS]
+			50	0	60
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

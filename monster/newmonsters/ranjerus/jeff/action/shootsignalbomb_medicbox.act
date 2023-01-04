@@ -1,0 +1,30 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/ShootOblique_Signal.ani`
+	[SUB ANI]
+		`../Animation/Weapon/ShootOblique.ani`	0	10
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8231
+		[PARTICLE FILENAME]
+			`../Particle/Signal_Missile.ptl`
+		[LEVEL]
+			0
+		[POS]
+			55	0	165
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

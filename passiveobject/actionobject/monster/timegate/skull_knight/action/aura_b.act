@@ -1,0 +1,171 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/aura_b.ani`
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			400
+	[/CHECKUP]
+	[IF]
+		`time`	
+		[+]
+			300
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		1000	
+		[attack speed]
+		[%]
+			-10.0
+		[move speed]
+		[%]
+			-3.0
+		[dark element]
+		[-]
+			-10.0
+	[/APPENDAGE]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[DISTANCE]
+		[>]
+			400
+	[/CHECKUP]
+	[IF]
+		`time2`	
+		[+]
+			100
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DELETE APPENDAGE]
+		1000	
+		[attack speed]
+		[%]
+			-10.0
+		[move speed]
+		[%]
+			-3.0
+		[dark element]
+		[-]
+			-10.0
+	[/DELETE APPENDAGE]
+	[DIM]
+		`time2`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			63031
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<=]
+		0
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			8000
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DELETE APPENDAGE]
+		10000	
+		[attack speed]
+		[%]
+			-10.0
+		[move speed]
+		[%]
+			-3.0
+		[dark element]
+		[-]
+			-10.0
+	[/DELETE APPENDAGE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			63031
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<=]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			63031
+		[/IS INDEX]
+		[HP]
+		[>]
+			60
+		[%]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]

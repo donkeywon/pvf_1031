@@ -1,0 +1,95 @@
+#PVF_File
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			62126
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=<]
+		2
+	[DO PROC BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		2	2	2	2	2	2	2	0	2	2	2	2	2	2	2	2	2	2	2	2
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11099
+		[PARTICLE FILENAME]
+			`../particle/mucus.ptl`
+		[LEVEL]
+			0
+		[POS]
+			50	0	40
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[CHECK TIME]
+		100
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[<=]
+			80
+		[%]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[WHICH]
+	[PLAYER]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO PROC BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[CHECK TIME]
+		100
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[<=]
+			40
+		[%]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[WHICH]
+	[PLAYER]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO PROC BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		800	4000	800	200	0	0	0
+	[MOVE APPENDAGE]
+		600	600	8	25000	-1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]

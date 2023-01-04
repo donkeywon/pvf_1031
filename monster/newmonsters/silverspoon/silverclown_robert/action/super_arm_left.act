@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/super_arm_left.ani`
+	[SUB ANI]
+		`../Animation/Effect2.ani`	0	0
+		`../Animation/arm_right_Aura.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`NORMALSILVER_ATK_02`	1
+		`THUNDERC_ATK_1`	1
+	[/SOUND]
+	[SPEECH]
+		`嘿！哈！ `	4	10
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8884
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			32	0	70
+		[NO EFFECT]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

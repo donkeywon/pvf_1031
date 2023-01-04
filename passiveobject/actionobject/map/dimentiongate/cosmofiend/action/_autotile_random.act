@@ -1,0 +1,157 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/_AutoTile_Random.ani`
+	[SUB ANI]
+		`../Animation/AutoTile_Random_SubFront.ani`	0	-10
+		`../Animation/AutoTile_Random_SubBack.ani`	0	-10
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2	3	4
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		2
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		3
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		4
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		5
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		6
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		5
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2	3	4
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		5
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2	3	4
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		5
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2	3	4
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		5
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2	3	4
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		5
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2	3	4
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		5	6	7	8
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		12
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		13
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		14
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		15
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		9
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[CUSTOM]
+		2	0
+	[ON]
+[/BEHAVIOR]

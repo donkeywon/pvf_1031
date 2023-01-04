@@ -1,0 +1,152 @@
+#PVF_File
+
+[name]
+	`传承 : 控魂女神的狼皮长袍`
+
+[name2]
+	`Legacy : Suede Tunic of Keres`
+
+[grade]
+	59
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[physical attack]
+	37
+
+[magical attack]
+	24
+
+[magical defense]
+	12
+
+[price]
+	47200
+
+[repair price]
+	41630
+
+[value]
+	37760
+
+[equipment physical defense]
+	1488	1440
+
+[skill levelup]
+	`[gunner]`	22	1
+	`[gunner]`	49	1
+	`[at gunner]`	22	1
+	`[at gunner]`	49	1
+	`[mage]`	35	1
+	`[mage]`	36	1
+	`[mage]`	97	1
+	`[at mage]`	7	1
+	`[thief]`	34	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/common/coat.img`	53
+
+[field image]
+	`Item/FieldImage.img`	0
+
+[equipment type]
+	`[coat]`	18
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	33
+
+[weight]
+	1900
+
+[item group name]
+	`lt coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 控魂女神的狼皮战甲  套装`
+
+[set item]
+	10509	12507	14497	18504	16496
+[/set item]
+
+[set ability]
+	[HP MAX]
+		205
+	[MP MAX]
+		205
+	[physical attack]
+		75
+	[magical attack]
+		75
+	[equipment physical defense]
+		350	350
+	[dark resistance]
+		8
+	[HP regen speed]
+		30
+	[MP regen speed]
+		8
+	[move speed]
+		10
+	[attack speed]
+		40
+	[skill levelup]
+		`[gunner]`	51	1
+		`[gunner]`	78	1
+		`[at gunner]`	51	1
+		`[at gunner]`	78	1
+		`[mage]`	69	1
+		`[mage]`	105	1
+		`[mage]`	104	1
+		`[at mage]`	13	1
+		`[thief]`	47	1
+	[/skill levelup]
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福可以使自身增加7%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	70
+	[/then]
+[/set ability]
+
+[possible kiri protect]

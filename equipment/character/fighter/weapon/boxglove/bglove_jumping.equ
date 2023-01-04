@@ -1,0 +1,181 @@
+#PVF_File
+
+[name]
+	`古老的圣痕拳套`
+
+[name2]
+	`Low-Cost Victory Road`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态。
+无法进行强化、 增幅、 分解和赠送。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态2秒。 (若敌人高于Lv40， 则减少进入异常状态的几率； 反之， 则增加几率)
+无法进行强化、 增幅、 分解和赠送。`
+
+[grade]
+	42
+
+[rarity]
+	2
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	40
+
+[physical attack]
+	29
+
+[physical defense]
+	3
+
+[magical attack]
+	3
+
+[magical defense]
+	3
+
+[attack speed]
+	100
+
+[price]
+	0
+
+[repair price]
+	53760
+
+[value]
+	0
+
+[equipment physical attack]
+	391	374
+
+[equipment magical attack]
+	353	338
+
+[separate attack]
+	183	122
+
+[skill levelup]
+	`[fighter]`	19	1
+	`[at fighter]`	19	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/bglove.img`	11
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	1
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	1	1
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`stun`	40
+[/then]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

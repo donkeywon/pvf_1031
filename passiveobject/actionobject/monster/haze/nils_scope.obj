@@ -1,0 +1,52 @@
+#PVF_File
+
+[floating height]
+	50
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	1000
+
+[basic action]
+	`Action/nils_scope.act`
+
+[attack info]
+	`AttackInfo/nils_scope.atk`
+
+[sound category]
+	`[after object create]`
+	`SNIPING_START`	-1
+[/sound category]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[on end of animation]`
+[/object destroy condition]
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[ENEMY]`
+	[homing velocity]
+		300	0
+	[homing check gap]
+		100
+	[max rotation]
+		0
+	[init rotation]
+		0
+	[diff rotation]
+		100
+	[homing time]
+		0
+	[sync target move]
+[/homing]
+
+[name]
+	`尼尔斯狙击观测器`

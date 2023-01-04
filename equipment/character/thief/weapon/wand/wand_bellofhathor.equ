@@ -1,0 +1,153 @@
+#PVF_File
+
+[name]
+	`哈索尔的铃铛`
+
+[name2]
+	`Bell of Hathor`
+
+[basic explain]
+	`暴击伤害 +20%%`
+
+[detail explain]
+	`暴击伤害 +20%% (在决斗场中 +10%%)`
+
+[grade]
+	65
+
+[rarity]
+	4
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[magical attack]
+	44
+
+[attack speed]
+	-100
+
+[price]
+	104000
+
+[repair price]
+	87360
+
+[value]
+	83200
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	504	455
+
+[equipment magical attack]
+	718	649
+
+[separate attack]
+	378	255
+
+[magical critical hit]
+	8
+
+[dark attack]
+	10
+
+[icon]
+	`Item/weapon/thief/wand.img`	74
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	10	4
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2100
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	20
+[/then]
+
+[pvp]
+	[if]
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase critical damage]
+			`%`	10
+	[/then]
+[/pvp]
+
+[routing priority]
+	`thief`	2
+[/routing priority]
+
+[possible kiri protect]
+
+[need material]
+	2749095	169
+
+[icon mark]
+	`Item/IconMark.img`	68

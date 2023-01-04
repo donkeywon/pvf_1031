@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack.ani`
+	[SUB ANI]
+		`../Animation/bomb/Attack.ani`	0	-8
+		`../Animation/coat/Attack.ani`	0	-6
+		`../Animation/pants/Attack.ani`	0	0
+		`../Animation/face/Attack.ani`	0	4
+		`../Animation/hat/Attack.ani`	0	6
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8206
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[DESTROY]
+[/BEHAVIOR]

@@ -1,0 +1,46 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/DashAttack.ani`
+	[SOUND]
+		`ICETIGER_DASH`	0
+	[/SOUND]
+[/MOTION]
+
+[DEFAULT ATTACKINFO]
+	`../AttackInfo/Dash.atk`
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			700
+		[Z AXIS]
+			300
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

@@ -1,0 +1,59 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/earthquake_m.ani`
+	[SUB ANI]
+		`../animation/effect/earthquake_charge2.ani`	0	1
+	[/SUB ANI]
+	[SOUND]
+		`UMTARA_HAMMER_02`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9374
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			150	0	0
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		2	500
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		13
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		14
+	[NOW]
+[/BEHAVIOR]

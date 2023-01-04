@@ -1,0 +1,162 @@
+#PVF_File
+
+[name]
+	`冥魂之暴袭`
+
+[name2]
+	`找不到代码name2_37397`
+
+[basic explain]
+	`攻击时， 有8%%的几率增加5%%的命中率和物理暴击率， 效果持续20秒。
+以额外杀伤攻击敌人时， 增加4点暗属性强化， 效果持续60秒。 (效果最多可重叠4次)`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	42
+
+[attack speed]
+	-80
+
+[need material]
+	3285	1200
+
+[repair price]
+	93744
+
+[value]
+	89280
+
+[equipment physical attack]
+	583	534
+
+[equipment magical attack]
+	458	419
+
+[separate attack]
+	360	243
+
+[physical critical hit]
+	5
+
+[skill levelup]
+	`[thief]`	9	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/thief/twinswd.img`	89
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[thief]`
+
+[variation]
+	8	4
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[event attack success]
+		1
+	[cooltime]
+		35000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		8
+	[stat]
+		`physical critical hit rate`
+		`+`	5
+	[stat]
+		`stuck`
+		`+`	-5
+[/then]
+
+[if]
+	[cooltime]
+		500
+	[attack success]
+		1
+	[overkill]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[appendage]
+		118
+[/then]
+
+[routing priority]
+	`thief`	1
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

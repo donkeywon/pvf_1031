@@ -1,0 +1,213 @@
+#PVF_File
+
+[name]
+	`凯恩`
+
+[category]
+	`[undead]`
+[/category]
+
+[appear sound]
+	`KANE_MEET`
+
+[damage sound]
+	`R_KANE_DMG`
+
+[die sound]
+	`KANE_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+	`[HP MAX]`	`*`	900
+[/ability category]
+
+[level]
+	85	85
+
+[dark resistance]
+	30	30
+
+[light resistance]
+	-10	-10
+
+[slow resistance]
+	50	50
+
+[freeze resistance]
+	50	50
+
+[poison resistance]
+	20	20
+
+[stun resistance]
+	50	50
+
+[curse resistance]
+	50	50
+
+[blind resistance]
+	50	50
+
+[lightning resistance]
+	30	30
+
+[stone resistance]
+	50	50
+
+[sleep resistance]
+	50	50
+
+[bleeding resistance]
+	20	20
+
+[piercing resistance]
+	50	50
+
+[confuse resistance]
+	50	50
+
+[hold resistance]
+	50	50
+
+[move speed]
+	1200	1200
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1100	1100
+
+[weight]
+	100000	100000
+
+[warlike]
+	0
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[face image]
+	`Monster/MonsterFace.img`	679
+
+[waiting action]
+	`Action/stay.act`
+
+[move action]
+	`Action/move.act`
+
+[sit action]
+	`Action/sit.act`
+
+[damage action 1]
+	`Action/damage1.act`
+
+[damage action 2]
+	`Action/damage2.act`
+
+[down action]
+	`Action/down.act`
+
+[overturn action]
+	`Action/overturn.act`
+
+[attack action]
+	`Action/attack_0.act`
+	`Action/attack_0_Stay.act`
+	`Action/attack_1.act`
+	`Action/attack_1_2.act`
+	`Action/attack_1_3.act`
+	`Action/attack_2.act`
+	`Action/attack_3.act`
+	`Action/attack_4.act`
+	`Action/casting.act`
+	`Action/lethal.act`
+	`Action/lethal1.act`
+	`Action/lethal2.act`
+	`Action/lethal3.act`
+	`Action/lethal4.act`
+	`Action/lethal5.act`
+	`Action/lethal6.act`
+	`Action/lethal1_1.act`
+	`Action/casting2.act`
+	`Action/finish.act`
+	`Action/attack_2_2.act`
+[/attack action]
+
+[attack info]
+	`Attackinfo/Attack.atk`
+	``
+	`Attackinfo/Attack.atk`
+	`Attackinfo/Attack1.atk`
+	`Attackinfo/Attack2.atk`
+	`Attackinfo/Attack2_1.atk`
+	``
+	`Attackinfo/Attack2_2.atk`
+	``
+	``
+	`Attackinfo/Attack4.atk`
+	`Attackinfo/Attack4.atk`
+	`Attackinfo/Attack4.atk`
+	`Attackinfo/Attack4.atk`
+	`Attackinfo/Attack_lethal.atk`
+	`Attackinfo/Attack_lethal_last.atk`
+	`Attackinfo/Attack1.atk`
+	``
+	`Attackinfo/Finish_lethal.atk`
+	`Attackinfo/Attack2_2.atk`
+[/attack info]
+
+[cooltime]
+	2000	2000	2000	2000	2000	2000	10000	2000	8000	30000	2000	2000	2000	2000	2000	2000	2000	15000	4000	2000
+[/cooltime]
+
+[think term]
+	200
+
+[destination change term]
+	300
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	0
+
+[lie frame]
+	2	3	2	3	4

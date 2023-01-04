@@ -1,0 +1,27 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Move2.ani`
+	[SPEECH]
+		`烫死了……`	0	5
+		`一起走吧…….`	0	5
+		`来~感受下火的热情吧~`	0	5
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[burn]
+		1000	100	200000	0	2000	1	900
+[/BEHAVIOR]

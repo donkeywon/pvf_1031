@@ -1,0 +1,79 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack2.ani`
+	[SUB ANI]
+		`../Animation/Effect/spin_bg2.ani`	0	-10
+		`../Animation/Body_Effect/redbody_Attack2.ani`	0	0
+		`../Animation/Effect/spin_bg1.ani`	0	5
+		`../Animation/Effect/Windball_overload.ani`	0	10
+		`../Animation/Effect/Windball2_overload.ani`	0	10
+		`../Animation/Effect/Windball_overload.ani`	0	10
+		`../Animation/Effect/Windball2_overload.ani`	0	10
+		`../Animation/Effect/Chargewind_1s.ani`	0	10
+		`../Animation/Effect/Chargewind_2s.ani`	0	10
+		`../Animation/Effect/Chargewind_3s.ani`	0	10
+		`../Animation/Effect/Chargewind_4s.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`COWCANNON_SHOOT`	2
+		`COWCANNON_READY`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14069
+		[PARTICLE FILENAME]
+			`../Particle/xmove.ptl`
+		[LEVEL]
+			50
+		[POS]
+			65	0	40
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		1	150
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+	[CASTING]
+		1000	1
+	[TRIGGER]
+		2
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		2
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		1
+[/BEHAVIOR]

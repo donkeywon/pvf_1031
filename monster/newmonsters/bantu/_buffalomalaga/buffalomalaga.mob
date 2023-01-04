@@ -1,0 +1,252 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`冰王马拉加`
+
+[face image]
+	`Monster/MonsterFace.img`	306
+
+[die effect]
+	0	12	1
+
+[appear sound]
+	`R_MALAGA_MEET`
+
+[damage sound]
+	`R_BISONMAN_DMG`
+
+[die sound]
+	`BISONMAN_DIE_03`
+
+[ambient sound]
+	`MALAGA_AMB`
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	365
+	`[PHYSICAL_ATTACK]`	`*`	100
+	`[PHYSICAL_DEFENSE]`	`*`	100
+	`[MAGICAL_ATTACK]`	`*`	100
+	`[MAGICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	130
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	150
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	130
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	120
+	`[HP MAX BOSS]`	`*`	345
+[/ability category]
+
+[category]
+	`[human]`
+	`[melee combat]`
+	`[close-tough]`
+[/category]
+
+[intelligence]
+	90	90	3000
+
+[HP regen speed]
+	20	20
+
+[MP regen speed]
+	0	0
+
+[level]
+	30	50
+
+[fire resistance]
+	-30	-30
+
+[water resistance]
+	40	40
+
+[dark resistance]
+	0	0
+
+[light resistance]
+	0	0
+
+[slow resistance]
+	30	30
+
+[freeze resistance]
+	80	80
+
+[poison resistance]
+	0	0
+
+[stun resistance]
+	60	60
+
+[curse resistance]
+	0	0
+
+[blind resistance]
+	30	30
+
+[sleep resistance]
+	0	0
+
+[lightning resistance]
+	0	0
+
+[stone resistance]
+	30	30
+
+[bleeding resistance]
+	50	50
+
+[confuse resistance]
+	30	30
+
+[hold resistance]
+	30	30
+
+[burn resistance]
+	0	0
+
+[weapon break resistance]
+	100	100
+
+[move speed]
+	900	900
+
+[attack speed]
+	800	800
+
+[cast speed]
+	500	500
+
+[hit recovery]
+	1150	1150
+
+[weight]
+	115000	115000
+
+[lie frame]
+	1	2	3	3	4
+
+[item]
+	3227	800
+[/item]
+
+[waiting motion]
+	`Animation/Stay.ani`
+
+[move action]
+	`Action/move.act`
+
+[sit motion]
+	`Animation/Sit.ani`
+
+[damage motion 1]
+	`Animation/Damage1.ani`
+
+[damage motion 2]
+	`Animation/Damage2.ani`
+
+[down action]
+	`Action/Down.act`
+
+[overturn motion]
+	`Animation/Overturn.ani`
+
+[attack action]
+	`Action/IceField.act`
+	`Action/One.act`
+	`Action/Dash.act`
+	`Action/Jump.act`
+	`Action/1000.act`
+	`Action/FastJump.act`
+	`Action/FastJump1.act`
+	`Action/FastJump2.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/IceField.atk`
+	`AttackInfo/One.atk`
+	``
+	`AttackInfo/JumpUp.atk`
+	``
+	`AttackInfo/JumpUp.atk`
+	`AttackInfo/JumpUp.atk`
+	`AttackInfo/JumpUp.atk`
+[/attack info]
+
+[cooltime]
+	7000	1000	10000	10000	15000	10000	0	0
+[/cooltime]
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	500
+
+[warlike]
+	90
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[keep distance with target]
+	330
+
+[set damage check]
+	3000
+
+[keep range distance with target]
+	30	0	20	10
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[level of difficulty]
+	[easy]
+		-50	3000
+	[medium]
+		-30	2000
+	[hard]
+		0	0
+	[ultimate]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]

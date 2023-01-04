@@ -1,0 +1,44 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/damage1.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	0	0	0	0	0	1	2
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8592
+		[PARTICLE FILENAME]
+			`../Particle/Bomb.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	100
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8201
+		[PARTICLE FILENAME]
+			`../Particle/Granade.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	30
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

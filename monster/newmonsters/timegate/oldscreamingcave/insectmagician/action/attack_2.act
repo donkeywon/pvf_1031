@@ -1,0 +1,71 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_2.ani`
+	[SPEECH]
+		`唛哩唛哩吼！`	0	20
+	[/SPEECH]
+	[SOUND]
+		`GBLTRAINER_CAST`	0
+		`PAI_SKILL_02`	1
+		`GBLTRAINER_SUMMON`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1000	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61630
+		[LEVEL]
+			0
+		[POS]
+			100	0	0
+		[MAGIC CIRCLE]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			15000
+		[PARTICLE FILENAME]
+			`../Particle/aura.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			15001
+		[PARTICLE FILENAME]
+			`../Particle/aura2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			1	-6	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

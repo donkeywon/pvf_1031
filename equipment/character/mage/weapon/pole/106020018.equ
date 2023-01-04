@@ -1,0 +1,182 @@
+#PVF_File
+
+[name]
+	`盘龙法棍`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击速度+5%%
+攻击时， 有8%%的几率使自身增加6%%的攻击速度， 效果持续40秒。`
+
+[grade]
+	74
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	70
+
+[physical attack]
+	49
+
+[magical attack]
+	49
+
+[attack speed]
+	100
+
+[stuck]
+	-1
+
+[price]
+	118400
+
+[repair price]
+	99456
+
+[value]
+	94720
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	760	706
+
+[equipment magical attack]
+	634	589
+
+[separate attack]
+	420	284
+
+[skill levelup]
+	`[mage]`	8	2
+	`[mage]`	10	2
+	`[mage]`	40	1
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/mage/pole/pole.img`	87
+
+[field image]
+	`Item/field_weapon.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	28	0
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	28	0
+
+[layer variation]
+	2150
+	`at_polea`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_poled`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	28	0
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`POLE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2400
+
+[item group name]
+	`pole`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		8
+	[duration]
+		40000
+	[stat]
+		`attack speed`
+		`+`	60
+[/then]
+
+[skill data up]
+	`[mage]`	8	`[dungeon type]`	`[level]`	0	`+`	10000
+	`[mage]`	8	`[dungeon type]`	`[level]`	5	`+`	10000
+[/skill data up]
+
+[icon mark]
+	`Item/IconMark.img`	66

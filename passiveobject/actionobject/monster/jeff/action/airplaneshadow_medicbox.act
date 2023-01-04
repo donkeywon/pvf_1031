@@ -1,0 +1,212 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AirPlaneShadow.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[IS DIRECTION TO MOVE]
+		1
+	[SET SPEED]
+		[X AXIS]
+			600
+	[/SET SPEED]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			3000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8237
+		[PARTICLE FILENAME]
+			`../Particle/MedicBox.ptl`
+		[LEVEL]
+			60
+		[POS]
+		[RANDOM]
+			150	300
+		[RANDOM]
+			220	290
+		[RANDOM]
+			500	700
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0
+		[RANDOM]
+			80	110	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8237
+		[PARTICLE FILENAME]
+			`../Particle/MedicBox.ptl`
+		[LEVEL]
+			60
+		[POS]
+		[RANDOM]
+			330	510
+		[RANDOM]
+			220	290
+		[RANDOM]
+			500	700
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0
+		[RANDOM]
+			80	110	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8237
+		[PARTICLE FILENAME]
+			`../Particle/MedicBox.ptl`
+		[LEVEL]
+			60
+		[POS]
+		[RANDOM]
+			830	1130
+		[RANDOM]
+			220	290
+		[RANDOM]
+			500	700
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0
+		[RANDOM]
+			80	110	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8237
+		[PARTICLE FILENAME]
+			`../Particle/MedicBox.ptl`
+		[LEVEL]
+			60
+		[POS]
+		[RANDOM]
+			300	460
+		[RANDOM]
+			310	380
+		[RANDOM]
+			500	700
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0
+		[RANDOM]
+			80	110	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8237
+		[PARTICLE FILENAME]
+			`../Particle/MedicBox.ptl`
+		[LEVEL]
+			60
+		[POS]
+		[RANDOM]
+			900	1050
+		[RANDOM]
+			310	380
+		[RANDOM]
+			500	700
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0
+		[RANDOM]
+			80	110	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8237
+		[PARTICLE FILENAME]
+			`../Particle/MedicBox.ptl`
+		[LEVEL]
+			60
+		[POS]
+		[RANDOM]
+			200	350
+		[RANDOM]
+			400	470
+		[RANDOM]
+			500	700
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0
+		[RANDOM]
+			80	110	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8237
+		[PARTICLE FILENAME]
+			`../Particle/MedicBox.ptl`
+		[LEVEL]
+			60
+		[POS]
+		[RANDOM]
+			380	560
+		[RANDOM]
+			400	470
+		[RANDOM]
+			500	700
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0
+		[RANDOM]
+			80	110	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8237
+		[PARTICLE FILENAME]
+			`../Particle/MedicBox.ptl`
+		[LEVEL]
+			60
+		[POS]
+		[RANDOM]
+			880	1180
+		[RANDOM]
+			400	470
+		[RANDOM]
+			500	700
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0
+		[RANDOM]
+			80	110	1
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		1
+	[OFF]
+	[DESTROY]
+[/BEHAVIOR]

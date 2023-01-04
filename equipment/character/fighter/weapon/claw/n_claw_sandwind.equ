@@ -1,0 +1,164 @@
+#PVF_File
+
+[name]
+	`沙暴之影`
+
+[name2]
+	`Sand Wind`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入失明状态。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入失明状态8秒； 失明状态下， 减少90%%视野和20%%命中率。 (若敌人高于Lv30， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	32
+
+[rarity]
+	2
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	30
+
+[physical attack]
+	21
+
+[magical attack]
+	11
+
+[price]
+	44800
+
+[repair price]
+	35840
+
+[value]
+	35840
+
+[equipment physical attack]
+	292	276
+
+[equipment magical attack]
+	292	276
+
+[separate attack]
+	145	96
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[fighter]`	13	1
+	`[at fighter]`	13	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/fighter/claw.img`	13
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	0	4
+
+[layer variation]
+	2790
+	`clawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	0	4
+
+[layer variation]
+	2150
+	`at_clawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_clawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_clawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		14400
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		8000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		3
+	[active status]
+		`blind`	30	90	20
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

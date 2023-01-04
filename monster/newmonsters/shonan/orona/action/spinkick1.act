@@ -1,0 +1,124 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/spinkick.ani`
+	[SUB ANI]
+		`../animation/shawl/1spinkick.ani`	0	1
+		`../animation/shawl/2spinkick.ani`	0	2
+		`../animation/shawl/spinkick.ani`	0	3
+	[/SUB ANI]
+	[SOUND]
+		`ORONA_CAST`	0
+		`R_NENKWON_ATK_03`	4
+		`MKICK123_01`	4
+		`MKICK123_01`	7
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[GET TARGET]
+			1
+		[RANDOM]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+			100	0	0
+		[MOVE ME]
+	[/TELEPORT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CAMOUFLAGE]
+		1	300
+	[SET DIRECTION]
+	[TO TARGET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			500
+		[Z AXIS]
+			350
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Z AXIS]
+			-350
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+	[SET ACTION]
+	[ATTACK]
+		6
+	[END]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]

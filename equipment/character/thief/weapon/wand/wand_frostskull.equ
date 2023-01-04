@@ -1,0 +1,166 @@
+#PVF_File
+
+[name]
+	`冰霜之骷髅杖`
+
+[name2]
+	`Frost Skull Wand`
+
+[basic explain]
+	`穿戴道具时， 每3分钟召唤出1只盗尸者骨狱息。 (在决斗场中无效)
+施放[后跳]时， 有10%%的几率向敌人投掷盗尸者的骸骨炸弹。`
+
+[detail explain]
+	`穿戴道具时， 每3分钟可召唤出1只Lv50的盗尸者骨狱息协助召唤者攻击敌人， 盗尸者骨狱息存在60秒。 (消耗2个无色小晶块； 召唤的怪物只能同时存在1只， 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失)
+施放[后跳]时， 有10%%的几率向敌人投掷盗尸者的骸骨炸弹`
+
+[grade]
+	57
+
+[rarity]
+	4
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[magical attack]
+	50
+
+[attack speed]
+	-100
+
+[MP MAX]
+	300
+
+[price]
+	91200
+
+[repair price]
+	76608
+
+[value]
+	72960
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	430	391
+
+[equipment magical attack]
+	612	557
+
+[separate attack]
+	328	220
+
+[magical critical hit]
+	5
+
+[icon]
+	`Item/weapon/thief/wand.img`	43
+
+[field image]
+	`Item/field_weapon.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	4	2
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2300
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[water element]`
+
+[if]
+	[cooltime]
+		1000
+	[use skill]
+		`thief`	169
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[passive object]
+		48089	70	0	70	30	0	`Redrock.ptl`
+	[/passive object]
+[/then]
+
+[if]
+	[time]
+		180000	1	5000
+	[my state]
+		`stand`
+[/if]
+
+[then]
+	[consume item]
+		3037	2
+	[target]
+		`myself`	-1
+	[duration]
+		60000
+	[summon monster]
+		65002	50	1
+[/then]
+
+[routing priority]
+	`thief`	2
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

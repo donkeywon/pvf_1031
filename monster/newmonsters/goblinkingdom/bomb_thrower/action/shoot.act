@@ -1,0 +1,31 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack.ani`
+	[SPEECH]
+		`吃垃圾~`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+		[RANDOM]
+			8000	8005
+		[PARTICLE FILENAME]
+			`../particle/junk.ptl`
+		[LEVEL]
+			40
+		[POS]
+			63	0	89
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

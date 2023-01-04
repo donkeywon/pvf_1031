@@ -1,0 +1,90 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Move.ani`
+	[SUB ANI]
+		`../Animation/Stay_Fire3.ani`	0	-3
+		`../Animation/Stay_Fire2.ani`	0	-2
+		`../Animation/Stay_Fire1.ani`	0	-1
+	[/SUB ANI]
+	[SOUND]
+		`R_BELAY_SKILL_01`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2	3
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE GRAVITY]
+		0
+	[SET SPEED]
+		[X AXIS]
+			300
+		[Z AXIS]
+			200
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CHANGE GRAVITY]
+		0
+	[SET SPEED]
+		[X AXIS]
+			-200
+		[Z AXIS]
+			250
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CHANGE GRAVITY]
+		0
+	[SET SPEED]
+		[X AXIS]
+			180
+		[Z AXIS]
+			-200
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CHANGE GRAVITY]
+		0
+	[SET SPEED]
+		[X AXIS]
+			-330
+		[Z AXIS]
+			-300
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Z AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

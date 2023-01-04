@@ -1,0 +1,192 @@
+#PVF_File
+
+[name]
+	`怒叱狂龙臂铠`
+
+[name2]
+	`Angry guntlet`
+
+[basic explain]
+	`施放[暴力抓取]时， 有65%%的几率使自身增加1%%的攻击速度， 并对敌人附加25%%的伤害， 效果持续30秒。`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	64
+
+[attack speed]
+	-80
+
+[stuck]
+	-1
+
+[need material]
+	3285	1200
+
+[repair price]
+	93744
+
+[value]
+	89280
+
+[equipment physical attack]
+	686	629
+
+[equipment magical attack]
+	515	472
+
+[separate attack]
+	360	243
+
+[skill levelup]
+	`[fighter]`	50	1
+	`[at fighter]`	50	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/gauntlet.img`	77
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	2	4
+
+[layer variation]
+	2790
+	`gauntletc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gauntletb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	2	4
+
+[layer variation]
+	2150
+	`at_gauntleta`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_gauntletc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_gauntletx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[if]
+	[use skill]
+		`fighter`	50
+	[/use skill]
+[/if]
+
+[then]
+	[probability]
+		65
+	[target]
+		`myself`	-1
+	[appendage]
+		116
+	[duration]
+		30000
+[/then]
+
+[if]
+	[use skill]
+		`at fighter`	50
+	[/use skill]
+[/if]
+
+[then]
+	[probability]
+		65
+	[target]
+		`myself`	-1
+	[appendage]
+		116
+	[duration]
+		30000
+[/then]
+
+[if]
+	[my appendage]
+		116
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	25
+[/then]
+
+[routing priority]
+	`fighter`	4
+	`at fighter`	4
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

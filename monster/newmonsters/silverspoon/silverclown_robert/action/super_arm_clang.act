@@ -1,0 +1,78 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/super_arm_clang.ani`
+	[SUB ANI]
+		`../Animation/arm_clang_Aura.ani`	0	0
+		`../Animation/combo_Effect1.ani`	0	1
+	[/SUB ANI]
+	[SOUND]
+		`R_NORMALSILVER_ATK_02`	0
+		`THUNDERC_ATK_1`	2
+		`THUNDERC_ATK_1`	5
+	[/SOUND]
+	[SPEECH]
+		`嘿！哈！ `	4	10
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		4
+	[END]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8884
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			32	0	70
+		[NO EFFECT]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

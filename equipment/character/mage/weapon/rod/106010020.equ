@@ -1,0 +1,187 @@
+#PVF_File
+
+[name]
+	`月之水晶`
+
+[name2]
+	``
+
+[basic explain]
+	`[冰晶之浴]范围 +10%%
+[冰晶之浴]冰柱数量 +4
+
+施放技能时， 有10%%的几率使队员增加11点冰属性强化值， 效果持续20秒。`
+
+[grade]
+	74
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	70
+
+[magical attack]
+	74
+
+[attack speed]
+	100
+
+[cast speed]
+	50
+
+[stuck]
+	1
+
+[price]
+	118400
+
+[repair price]
+	99456
+
+[value]
+	94720
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	634	589
+
+[equipment magical attack]
+	774	719
+
+[separate attack]
+	420	284
+
+[skill levelup]
+	`[mage]`	47	2
+	`[mage]`	78	2
+	`[at mage]`	3	2
+	`[at mage]`	10	2
+	`[at mage]`	32	2
+	`[at mage]`	14	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/mage/rod/rod.img`	89
+
+[field image]
+	`Item/field_weapon.img`	7
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	28	0
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	28	0
+
+[layer variation]
+	2150
+	`at_roda`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_rodd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	28	0
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`ROD_TOUCH`
+
+[durability]
+	24
+
+[weight]
+	2200
+
+[item group name]
+	`rod`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[at mage]`	14	`[all]`	`[static]`	0	`%`	10
+	`[at mage]`	14	`[all]`	`[level]`	2	`+`	4
+[/skill data up]
+
+[if]
+	[casting]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[probability]
+		10
+	[duration]
+		20000
+	[target]
+		`party`	-1
+	[stat]
+		`water attack`
+		`+`	11
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

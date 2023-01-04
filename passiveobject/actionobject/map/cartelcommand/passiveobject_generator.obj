@@ -1,0 +1,124 @@
+#PVF_File
+
+[width]
+	200	200
+
+[floating height]
+	0
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[basic action]
+	`Action/passiveobject_generator.act`
+
+[hp max]
+	100000
+
+[hp destroy]
+	1
+
+[vanish on move collision]
+	0
+
+[objects]
+	[object]
+		[index]
+			9974
+		[probability]
+			1
+		[warning]
+			`danger`
+	[/object]
+	[object]
+		[index]
+			11034
+		[probability]
+			0
+		[warning]
+			`recovery`
+	[/object]
+[/objects]
+
+[patterns]
+	[pattern]
+		[name]
+			`S`
+		[interval]
+			400
+		[columns]
+			3
+		[data]
+			0	0	0
+		[/data]
+	[/pattern]
+	[pattern]
+		[name]
+			`A`
+		[interval]
+			380
+		[columns]
+			3
+		[data]
+			0	1	1	1	1	0	0	1	1	1	1	0	0	1	1	1	1	0
+		[/data]
+	[/pattern]
+	[pattern]
+		[name]
+			`B`
+		[interval]
+			380
+		[columns]
+			3
+		[data]
+			0	1	1	1	1	0	2	1	1	1	1	0	0	1	1	1	1	2
+		[/data]
+	[/pattern]
+	[pattern]
+		[name]
+			`R1`
+		[interval]
+			400
+		[columns]
+			3
+	[/pattern]
+	[pattern]
+		[name]
+			`R2`
+		[interval]
+			350
+		[columns]
+			3
+	[/pattern]
+[/patterns]
+
+[sequences]
+	[pattern]
+		`S`	2500
+	[/pattern]
+	[pattern]
+		`R1`	3000
+	[/pattern]
+	[pattern]
+		`A`	3000
+	[/pattern]
+	[pattern]
+		`R2`	9000
+	[/pattern]
+	[pattern]
+		`B`	3000
+	[/pattern]
+	[pattern]
+		`S`	3000
+	[/pattern]
+[/sequences]
+
+[warning]
+	[min distance]
+		0	0	500
+	[max distance]
+		0	0	1500
+[/warning]

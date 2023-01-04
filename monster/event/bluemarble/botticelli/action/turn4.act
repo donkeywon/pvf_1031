@@ -1,0 +1,193 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Turn.ani`
+	[SUB ANI]
+		`../Animation/Fire/Turn.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`TURTLE_SPIN`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+		[DISTANCE]
+		[<=]
+			1000
+	[/CHECKUP]
+	[GET TARGET]
+		3
+	[DISTANCE]
+	[LOW]
+	[GET TARGET]
+		1
+	[LAST ATTACKSUCCESS]
+	[LOW]
+	[SAVE TARGET OBJECT]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			50
+		[CHECKED NO]
+		[>]
+			0
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time326`	
+		[+]
+			2000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`term326`	
+		[+]
+			200
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[OFF]
+	[SET SAVED TARGET]
+		0
+	[MOVE TO TARGET]
+		500
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[ON]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[RESET]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		6
+	[OFF]
+	[DIM]
+		`term326`	
+		[=]
+			0
+	[/DIM]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`time326`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		4
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		4
+	[OFF]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[RESET]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`term326`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		6
+	[ON]
+[/BEHAVIOR]

@@ -1,0 +1,134 @@
+#PVF_File
+
+[name]
+	`恶鬼斩斧`
+
+[name2]
+	`Evil cut ax`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入诅咒状态， 并使自身增加力量和物理暴击率。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入诅咒状态12秒， 诅咒状态下的敌人减少30点的力量、 体力、 智力和精神； 同时还会使自身增加15点力量和10%%的物理暴击率， 效果持续12秒。 (若敌人高于Lv60， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[grade]
+	63
+
+[rarity]
+	5
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	46
+
+[attack speed]
+	-80
+
+[stuck]
+	-2
+
+[anti evil]
+	8
+
+[need material]
+	3228	60
+
+[repair price]
+	84672
+
+[value]
+	80640
+
+[equipment physical attack]
+	667	638
+
+[equipment magical attack]
+	473	452
+
+[separate attack]
+	314	212
+
+[icon]
+	`Item/weapon/priest/axe.img`	38
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	6	0
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		18000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		12000
+	[probability]
+		3
+	[active status]
+		`curse`	60	45	45	45	45
+	[target]
+		`myself`	-1
+	[stat]
+		`physical attack`
+		`+`	15
+	[stat]
+		`physical critical hit rate`
+		`+`	10
+[/then]
+
+[possible kiri protect]

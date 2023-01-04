@@ -1,0 +1,52 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Stay_Action.ani`
+	[SPEECH]
+		`发现敌人！警备模式启动！`	4	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`1_Stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`1_Move.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`Damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`Damage2.act`
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[REMOVE CATEGORY]
+	[FIXTURE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[FRAME]
+		1	1
+[/TRIGGER]

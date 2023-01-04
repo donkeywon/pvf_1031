@@ -1,0 +1,32 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack2_continuity.ani`
+	[SUB ANI]
+		`../Animation/weapon/Attack2_continuity_wp_eff.ani`	0	0
+		`../animation/weapon/Attack2_continuity_wp.ani`	0	1
+	[/SUB ANI]
+	[SOUND PROBABILITY]
+		`R_GSEEKERMAN_ATK`	0	20
+		`STICKB_01`	2	30
+	[/SOUND PROBABILITY]
+	[SPEECH]
+		`呀哈！`	2	5
+		`?！`	3	1
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		1
+	[NOW]
+[/BEHAVIOR]

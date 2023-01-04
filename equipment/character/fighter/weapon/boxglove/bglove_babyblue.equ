@@ -1,0 +1,162 @@
+#PVF_File
+
+[name]
+	`(旧) 浅蓝幻像`
+
+[name2]
+	`Baby Blue`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态。
+破招伤害 +20%%`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态2秒。 (若敌人高于Lv26， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	30
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	26
+
+[physical attack]
+	23
+
+[attack speed]
+	100
+
+[price]
+	54000
+
+[repair price]
+	43200
+
+[value]
+	43200
+
+[equipment physical attack]
+	323	281
+
+[equipment magical attack]
+	293	255
+
+[separate attack]
+	177	117
+
+[skill levelup]
+	`[fighter]`	37	1
+	`[fighter]`	1	1
+	`[at fighter]`	37	1
+	`[at fighter]`	1	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/bglove.img`	2
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	0	6
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	0	6
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	49
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		2
+	[active status]
+		`stun`	26
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,168 @@
+#PVF_File
+
+[name]
+	`灼魂之魔刹手炮`
+
+[basic explain]
+	`神枪手 (男)
+施放[反坦克炮]时， 有23%%的几率使爆炸次数增加1次。
+
+神枪手 (女)
+施放[反坦克炮]时， 有23%%的几率使爆炸次数增加3次。
+无法进行分解。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	83
+
+[need material]
+	3339	1000
+
+[repair price]
+	127008
+
+[value]
+	120960
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	879	804
+
+[equipment magical attack]
+	527	482
+
+[separate attack]
+	481	327
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/hcannon/hcannon.img`	83
+
+[field image]
+	`Item/field_weapon.img`	4
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	23	0
+
+[layer variation]
+	2790
+	`hcanc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`hcanb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	23	0
+
+[layer variation]
+	2790
+	`at_hcanc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_hcanb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2800
+
+[item group name]
+	`hcannon`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[routing priority]
+	`gunner`	2
+	`at gunner`	2
+[/routing priority]
+
+[if]
+	[event use skill]
+		`gunner`	40
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		23
+	[skill data up]
+		`[gunner]`	40	`[all]`	`[static]`	6	`+`	1
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`at gunner`	40
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		23
+	[skill data up]
+		`[at gunner]`	40	`[all]`	`[static]`	6	`+`	3
+	[/skill data up]
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

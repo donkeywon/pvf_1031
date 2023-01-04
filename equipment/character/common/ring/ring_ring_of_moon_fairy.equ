@@ -1,0 +1,117 @@
+#PVF_File
+
+[name]
+	`月光精灵`
+
+[name2]
+	`Ring of Moon Fairy`
+
+[basic explain]
+	`攻击时， 有10%%的几率使敌人进入失明状态。`
+
+[detail explain]
+	`攻击时， 有10%%的几率使敌人进入失明状态3秒； 失明状态下， 减少90%%的视野和20%%的命中率。 (在决斗场中失明几率为1%%； 若敌人高于Lv69， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	72
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	68
+
+[physical attack]
+	43
+
+[magical attack]
+	43
+
+[price]
+	72000
+
+[repair price]
+	57600
+
+[value]
+	57600
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	2528	2368
+
+[skill levelup]
+	`[swordman]`	30	1
+[/skill levelup]
+
+[icon]
+	`Item/common/ring.img`	45
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		3000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[probability]
+		10
+	[active status]
+		`blind`	69	90	20
+[/then]
+
+[pvp]
+	[if]
+		[cooltime]
+			10000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			3000
+		[probability]
+			1
+		[active status]
+			`blind`	69	90	20
+	[/then]
+[/pvp]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

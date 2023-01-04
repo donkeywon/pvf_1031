@@ -1,0 +1,217 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`AT-5T 步行者`
+
+[face image]
+	`Monster/MonsterFace.img`	519
+
+[ability table]
+	1
+
+[ability category]
+	`[HP MAX]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	300
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	300
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[category]
+	`[machine]`
+[/category]
+
+[level]
+	60	60
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[normal dash speed]
+	450	150
+
+[slant dash speed]
+	476	228
+
+[hit recovery]
+	800	800
+
+[weight]
+	80000	80000
+
+[vision]
+	1900
+
+[stuckbonus on damage]
+	15	25	35	35
+
+[int data]
+	5	10000	1000	0	200	0	1	60	40	100
+[/int data]
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[last action]
+	`Action/lastaction.act`
+
+[sit action]
+	`Action/sit.act`
+
+[dash action]
+	`Action/dash.act`
+
+[attack action]
+	`Action/shoot.act`
+	``
+	`Action/fastgun.act`
+	`Action/dashattack.act`
+	`Action/fire.act`
+	`Action/rocket.act`
+	`Action/special.act`
+	``
+	``
+[/attack action]
+
+[ridableskill definition]
+	[pattern]
+		0
+	[image path]
+		`Sprite/Monster/riding/at_5t/Transport_Skill.img`
+	[skill]
+		0	-1
+		`normal`	0	-1	-1
+		`normal`	0	2	-1
+		`normal`	0	3	-1
+		`normal`	0	4	-1
+		`normal`	0	5	-1
+		`normal`	0	6	-1
+		`super`	0	-1	-1
+		`normal`	0
+[/ridableskill definition]
+
+[ridableskill explanation]
+	[pattern]
+		0
+	[title]
+		`格林机炮`
+	[category]
+		`[普通]`
+	[detail]
+		`多段发射多个子弹和小型火箭`
+[/ridableskill explanation]
+
+[ridableskill explanation]
+	[pattern]
+		0
+	[title]
+		`勇猛突击`
+	[category]
+		`[普通]`
+	[detail]
+		`利用推动力强力撞击`
+[/ridableskill explanation]
+
+[ridableskill explanation]
+	[pattern]
+		0
+	[title]
+		`火焰喷射`
+	[category]
+		`[普通]`
+	[detail]
+		`向前方发射火焰`
+[/ridableskill explanation]
+
+[ridableskill explanation]
+	[pattern]
+		0
+	[title]
+		`德尔塔火箭`
+	[category]
+		`[普通]`
+	[detail]
+		`中距离火箭， 分离为3个发射`
+[/ridableskill explanation]
+
+[ridableskill explanation]
+	[pattern]
+		0
+	[title]
+		`地毯式轰炸`
+	[category]
+		`[必杀技]`
+	[detail]
+		`给轰炸机传达信号,把炸弹投掷到大范围的地区.`
+[/ridableskill explanation]
+
+[attack info]
+	``
+	``
+	``
+	`AttackInfo/dashattack.atk`
+	``
+	``
+	``
+	``
+	``
+[/attack info]
+
+[cooltime]
+	50	0	3000	5000	6000	10000	15000	6000
+[/cooltime]
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[keep distance with target]
+	1000
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[physical attack besed on diff]
+	61	0.4	0.6	0.8	1.0	1.0
+[/physical attack besed on diff]

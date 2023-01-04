@@ -1,0 +1,108 @@
+#PVF_File
+
+[name]
+	`杰诺的诅咒头盔`
+
+[name2]
+	`Real Head of Jeno`
+
+[basic explain]
+	`生成不死族强化光环。
+每2分钟召唤出1只骷髅。`
+
+[detail explain]
+	`生成不死族强化光环。
+每2分钟消耗10个黑色小晶块， 并召唤出1只Lv50的骷髅协助召唤者攻击敌人， 骷髅存在60秒。 (召唤的怪物只能同时存在1只， 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失)`
+
+[flavor text]
+	`什么都不懂的菜鸟才会穿戴这样重的装备。  --辛达给新手冒险家的助言`
+
+[grade]
+	25
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	20
+
+[physical attack]
+	12
+
+[magical attack]
+	8
+
+[price]
+	22500
+
+[repair price]
+	18000
+
+[value]
+	18000
+
+[equipment physical defense]
+	792	648
+
+[icon]
+	`Item/common/shoulder.img`	106
+
+[field image]
+	`Item/field_equip.img`	7
+
+[equipment type]
+	`[shoulder]`	19
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	1900
+
+[item group name]
+	`la shoulder`
+
+[cool time]
+	10000
+
+[set item master]
+	10890
+
+[if]
+	[time]
+		120000	1	1000
+	[my state]
+		`stand`
+[/if]
+
+[then]
+	[consume item]
+		3033	10
+	[target]
+		`myself`	-1
+	[duration]
+		60000
+	[summon monster]
+		1000	50	1
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

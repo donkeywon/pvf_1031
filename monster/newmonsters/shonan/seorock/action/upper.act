@@ -1,0 +1,48 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/upper.ani`
+	[SUB ANI]
+		`../animation/eff/RoarStunEx.ani`	0	1
+		`../animation/upper_super.ani`	0	2
+		`../animation/eff/upper.ani`	0	3
+	[/SUB ANI]
+	[SPEECH]
+		`金刚石化！`	2	50
+	[/SPEECH]
+	[SOUND]
+		`GGANG_ATK_02_1`	0
+		`DCRASH_CRASH`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		3	700
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9930
+		[PARTICLE FILENAME]
+			`../Particle/dummy.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

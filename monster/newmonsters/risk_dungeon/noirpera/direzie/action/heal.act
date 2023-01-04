@@ -1,0 +1,27 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Heal.ani`
+	[SUB ANI]
+		`../Animation/Effect/normal/Heal.ani`	0	-1
+		`../Animation/Effect/dodge/Heal.ani`	0	-2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[SUMMON MASTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		2
+	[%]
+[/BEHAVIOR]

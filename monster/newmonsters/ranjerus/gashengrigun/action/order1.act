@@ -1,0 +1,115 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Order2.ani`
+	[SUB ANI]
+		`../animation/wp/Order2.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`GRIGUN_SKILL_01`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS TEAM]
+			[MONSTER TEAM]
+		[/IS TEAM]
+		[IS INDEX]
+			60002
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+	[APPENDAGE]
+		8000	
+		[physical defense]
+		[%]
+			100.0
+		[magical defense]
+		[%]
+			100.0
+		[move speed]
+		[%]
+			-10.0
+		[hp max]
+		[%]
+			3000.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+	[SAY SPEECH]
+		`分队！立正！！`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			60002
+		[/IS INDEX]
+		[IS TEAM]
+			[MONSTER TEAM]
+		[/IS TEAM]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			60002
+		[/IS INDEX]
+		[IS TEAM]
+			[MONSTER TEAM]
+		[/IS TEAM]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`向前~~走！`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`Yes, Sir！！！`
+[/BEHAVIOR]

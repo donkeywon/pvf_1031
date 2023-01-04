@@ -1,0 +1,108 @@
+#PVF_File
+
+[name]
+	`塔拉库沓的证明`
+
+[name2]
+	`Terakota Proof`
+
+[basic explain]
+	`增加50点的魔法武器攻击力， 效果持续30秒。 (需消耗1个无色小晶块， 冷却时间为60秒)`
+
+[flavor text]
+	`把四种元素的图像形象化后制成的项链。`
+
+[grade]
+	46
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	45
+
+[magical attack]
+	18
+
+[magical defense]
+	45
+
+[price]
+	46000
+
+[repair price]
+	36800
+
+[value]
+	36800
+
+[equipment magical defense]
+	3920	3760
+
+[icon]
+	`Item/common/necklace.img`	16
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		60000	1	1000
+[/if]
+
+[then]
+	[consume item]
+		3037	1
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[stat]
+		`equipment magical attack`
+		`+`	50
+[/then]
+
+[pvp]
+	[if]
+		[time]
+			60000	1	30000
+	[/if]
+	[then]
+		[consume item]
+			3037	1
+		[target]
+			`myself`	-1
+		[duration]
+			30000
+		[stat]
+			`equipment magical attack`
+			`+`	50
+	[/then]
+[/pvp]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

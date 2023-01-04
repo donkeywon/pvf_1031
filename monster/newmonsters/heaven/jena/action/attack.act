@@ -1,0 +1,53 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack.ani`
+	[SOUND]
+		`R_THIEF_THROW`	2
+	[/SOUND]
+	[SPEECH]
+		`接招吧，咿呀啊！`	1	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8401
+		[PARTICLE FILENAME]
+			`../Particle/jump_Dagger.ptl`
+		[LEVEL]
+			60
+		[POS]
+			120	0	20
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8401
+		[PARTICLE FILENAME]
+			`../Particle/jump_Dagger.ptl`
+		[LEVEL]
+			60
+		[POS]
+			110	0	40
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8401
+		[PARTICLE FILENAME]
+			`../Particle/jump_Dagger.ptl`
+		[LEVEL]
+			60
+		[POS]
+			100	0	60
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

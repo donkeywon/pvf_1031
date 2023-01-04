@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/stay.ani`
+	[SUB ANI]
+		`../Animation/dust2.ani`	0	-1
+		`../Animation/stones3.ani`	0	-2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[LAST ATTACKER]
+	[CHECKUP]
+		[IS TEAM]
+			[CHARCTER TEAM]
+		[/IS TEAM]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

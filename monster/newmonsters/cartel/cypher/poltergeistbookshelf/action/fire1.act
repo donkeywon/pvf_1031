@@ -1,0 +1,206 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/throw_Fire.ani`
+	[SUB ANI]
+		`../Animation/throw_Fire_aura.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`BOOKCASE_SKILL_01`	0
+		`BOOKCASE_SKILL_01`	3
+		`BOOKCASE_SKILL_01`	6
+		`BOOKCASE_SKILL_01`	9
+		`BOOKCASE_SKILL_01`	12
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[ON]
+	[TRIGGER]
+		2
+	[ON]
+	[TRIGGER]
+		3
+	[ON]
+	[TRIGGER]
+		4
+	[ON]
+	[TRIGGER]
+		5
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			100
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			350
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			600
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			850
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			1100
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8416
+		[PARTICLE FILENAME]
+			`../Particle/x_move.ptl`
+		[LEVEL]
+			10
+		[POS]
+			10	60	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8417
+		[PARTICLE FILENAME]
+			`../Particle/x_move.ptl`
+		[LEVEL]
+			0
+		[POS]
+			10	40	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		2
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8416
+		[PARTICLE FILENAME]
+			`../Particle/x_move.ptl`
+		[LEVEL]
+			0
+		[POS]
+			10	20	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		3
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8417
+		[PARTICLE FILENAME]
+			`../Particle/x_move.ptl`
+		[LEVEL]
+			0
+		[POS]
+			10	0	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		4
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8416
+		[PARTICLE FILENAME]
+			`../Particle/x_move.ptl`
+		[LEVEL]
+			0
+		[POS]
+			10	-23	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		5
+	[OFF]
+[/BEHAVIOR]

@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/casting.ani`
+	[SUB ANI]
+		`../animation/weapon/casting_wp.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`COOLTIME_ITEM_END`	5
+		`R_SICHEF_ATK`	0
+	[/SOUND]
+	[SPEECH]
+		`哼，会点技能就了不起吗？`	0	30
+		`这就叫会用技能？`	0	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30401
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			40
+		[POS]
+			50	0	60
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

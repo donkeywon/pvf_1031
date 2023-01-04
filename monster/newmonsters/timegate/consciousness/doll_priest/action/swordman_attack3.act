@@ -1,0 +1,207 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Swordman_Attack3.ani`
+	[SUB ANI]
+		`../Animation/ball/Swordman_Attack3.ani`	0	0
+		`../Animation/ball_eff/Swordman_Attack3.ani`	0	0
+		`../Animation/Skill_eff/Grab1.ani`	0	0
+		`../Animation/Skill_eff/Grab2.ani`	0	0
+		`../Animation/Skill_eff/Grab3.ani`	0	0
+		`../Animation/Skill_eff/Grab4.ani`	0	0
+		`../Animation/Skill_eff/Grab5.ani`	0	0
+		`../Animation/ball_eff/Swordman_Attack3.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`R_CROSS`	4
+		`STAR_THROW_MON`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9043
+		[/IS INDEX]
+		[FRONTSIDE]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS GRABABLE]
+			1
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		2
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		4
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9043
+		[/IS INDEX]
+		[FRONTSIDE]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS GRABABLE]
+			1
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		3
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		4
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			`throw`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[RIGHT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[LEFT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			200
+		[Y START]
+			-5
+		[Z START]
+			5
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[IF]
+		`throw`	
+		[=]
+			0
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		7
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[DOWN]
+	[DEFAULT]
+		1
+	[FORCE]
+		-50	1230
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		5
+	[END]
+[/BEHAVIOR]

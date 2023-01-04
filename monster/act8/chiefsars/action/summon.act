@@ -1,0 +1,113 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/summon.ani`
+	[SUB ANI]
+		`../Animation/foot/summon.ani`	0	0
+		`../Animation/hand/summon.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10238
+		[PARTICLE FILENAME]
+			`../Particle/crow.ptl`
+		[LEVEL]
+			0
+		[POS]
+			20	0	30
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10238
+		[PARTICLE FILENAME]
+			`../Particle/crow1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			10	0	60
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10238
+		[PARTICLE FILENAME]
+			`../Particle/crow2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	0	50
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10238
+		[PARTICLE FILENAME]
+			`../Particle/crow3.ptl`
+		[LEVEL]
+			0
+		[POS]
+			10	0	80
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10238
+		[PARTICLE FILENAME]
+			`../Particle/crow.ptl`
+		[LEVEL]
+			0
+		[POS]
+			20	0	30
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10238
+		[PARTICLE FILENAME]
+			`../Particle/crow1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	80
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10238
+		[PARTICLE FILENAME]
+			`../Particle/crow2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	0	70
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

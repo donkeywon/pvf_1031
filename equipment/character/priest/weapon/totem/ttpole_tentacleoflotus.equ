@@ -1,0 +1,189 @@
+#PVF_File
+
+[name]
+	`(旧) 罗特斯的触须`
+
+[name2]
+	`Tentacle of Lotus`
+
+[basic explain]
+	`攻击时， 有1%%的几率使敌人进入混乱状态。
+攻击时， 有1%%的几率使敌人进入睡眠状态。
+攻击时， 有1%%的几率使敌人进入眩晕状态。
+攻击时， 有2%%的几率召唤出罗特斯的触手协助召唤者攻击敌人。`
+
+[detail explain]
+	`攻击时， 有1%%的几率使敌人进入混乱状态5秒。
+攻击时， 有1%%的几率使敌人进入睡眠状态8秒。
+攻击时， 有1%%的几率使敌人进入眩晕状态5秒。
+攻击时， 有2%%的几率召唤出罗特斯的触手协助召唤者攻击敌人。`
+
+[flavor text]
+	`用使徒罗特斯的触手制成的图腾， 有很强的韧性。`
+
+[grade]
+	30
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	25
+
+[physical attack]
+	35
+
+[stuck]
+	-1
+
+[price]
+	48000
+
+[repair price]
+	38400
+
+[value]
+	38400
+
+[equipment physical attack]
+	332	281
+
+[equipment magical attack]
+	284	241
+
+[separate attack]
+	184	121
+
+[icon]
+	`Item/weapon/priest/totem.img`	32
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	3	1
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		7500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		1
+	[active status]
+		`confuse`	25	1
+[/then]
+
+[if]
+	[cooltime]
+		12000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		8000
+	[reduce duration to human armor at pvp module]
+		75
+	[probability]
+		1
+	[active status]
+		`sleep`	25
+[/then]
+
+[if]
+	[cooltime]
+		7500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		1
+	[active status]
+		`stun`	25
+[/then]
+
+[if]
+	[cooltime]
+		3000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[passive object]
+		30029	0	0	0	25	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

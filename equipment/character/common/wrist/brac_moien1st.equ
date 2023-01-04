@@ -1,0 +1,102 @@
+#PVF_File
+
+[name]
+	`(旧) 摩恩之珠 - 等活地狱`
+
+[name2]
+	`Moien's Rosary - 1st Hell`
+
+[basic explain]
+	`被攻击时， 有10%%的几率使自身进入诅咒状态， 并出现火焰爆炸。`
+
+[detail explain]
+	`被攻击时， 有10%%的几率出现火焰爆炸， 并使自身进入诅咒状态20秒； 诅咒状态下， 自身将减少15点力量、 体力、 智力和精神， 效果持续20秒。 (若高于Lv38， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[grade]
+	42
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	38
+
+[physical attack]
+	18
+
+[physical defense]
+	45
+
+[price]
+	50400
+
+[repair price]
+	40320
+
+[value]
+	40320
+
+[equipment magical defense]
+	2352	2112
+
+[fire resistance]
+	10
+
+[bleeding resistance]
+	20
+
+[icon]
+	`Item/IconAcc.img`	13
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	21
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		20000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		10
+	[passive object]
+		48060	0	0	70	33	0	``
+	[/passive object]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[active status]
+		`curse`	38	22	22	22	22
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

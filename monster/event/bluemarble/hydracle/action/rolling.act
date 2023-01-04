@@ -1,0 +1,340 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/JumpAttackRolling.ani`
+	[SOUND]
+		`HYDRACLE_SPIN_L`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[=<]
+			100
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[IS OBJECT TYPE]
+		[CHARACTER]
+	[/IS OBJECT TYPE]
+	[IF]
+		`time`	
+		[+]
+			1000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[IS OBJECT TYPE]
+		[CHARACTER]
+	[/IS OBJECT TYPE]
+	[IF]
+		`time`	
+		[+]
+			2000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[IS OBJECT TYPE]
+		[CHARACTER]
+	[/IS OBJECT TYPE]
+	[IF]
+		`time`	
+		[+]
+			2800
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[IS OBJECT TYPE]
+		[CHARACTER]
+	[/IS OBJECT TYPE]
+	[IF]
+		`time`	
+		[+]
+			3500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[IS OBJECT TYPE]
+		[CHARACTER]
+	[/IS OBJECT TYPE]
+	[IF]
+		`time`	
+		[+]
+			4100
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[IS OBJECT TYPE]
+		[CHARACTER]
+	[/IS OBJECT TYPE]
+	[IF]
+		`time`	
+		[+]
+			4500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[IS OBJECT TYPE]
+		[CHARACTER]
+	[/IS OBJECT TYPE]
+	[IF]
+		`time`	
+		[+]
+			5000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[IS OBJECT TYPE]
+		[CHARACTER]
+	[/IS OBJECT TYPE]
+	[IF]
+		`time`	
+		[+]
+			5500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[=<]
+			50
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			5800
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8541
+		[PARTICLE FILENAME]
+			`../Particle/Tentacle.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[WARNING MARK]
+			0	0	300	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		3
+	[RESET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		2
+	[ON]
+	[TRIGGER]
+		3
+	[ON]
+	[TRIGGER]
+		4
+	[ON]
+	[TRIGGER]
+		5
+	[ON]
+	[TRIGGER]
+		6
+	[ON]
+	[TRIGGER]
+		7
+	[ON]
+	[TRIGGER]
+		8
+	[ON]
+	[TRIGGER]
+		9
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		2
+	[RESET]
+	[TRIGGER]
+		3
+	[RESET]
+	[TRIGGER]
+		4
+	[RESET]
+	[TRIGGER]
+		5
+	[RESET]
+	[TRIGGER]
+		6
+	[RESET]
+	[TRIGGER]
+		7
+	[RESET]
+	[TRIGGER]
+		8
+	[RESET]
+	[TRIGGER]
+		9
+	[RESET]
+	[TRIGGER]
+		2
+	[OFF]
+	[TRIGGER]
+		3
+	[OFF]
+	[TRIGGER]
+		4
+	[OFF]
+	[TRIGGER]
+		5
+	[OFF]
+	[TRIGGER]
+		6
+	[OFF]
+	[TRIGGER]
+		7
+	[OFF]
+	[TRIGGER]
+		8
+	[OFF]
+	[TRIGGER]
+		9
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]

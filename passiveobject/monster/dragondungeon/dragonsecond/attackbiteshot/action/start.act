@@ -1,0 +1,90 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Start/BiteShot_Effect_Bit_M_Normal.ani`
+	[SUB ANI]
+		`../Animation/Start/BiteShot_AttackMineralShoot_Effect_M_Floor_energy01.ani`	2	-8
+		`../Animation/Start/BiteShot_AttackMineralShoot_Effect_M_Floor_energy00.ani`	2	-7
+		`../Animation/Start/BiteShot_Effect_L_floor_shock00.ani`	0	-6
+		`../Animation/Start/BiteShot_AttackMineralShoot_Effect_EXP.ani`	0	-5
+		`../Animation/Start/BiteShot_AttackMineralShoot_Effect_HandSwing_HitFloor.ani`	0	-4
+		`../Animation/Start/BiteShot_AttackMineralShoot_Effect_M_Lightning.ani`	2	-3
+		`../Animation/Start/BiteShot_AttackMineralShoot_Effect_HandSwing_HitDust2.ani`	1	-2
+		`../Animation/Start/BiteShot_AttackMineralShoot_Effect_HandSwing_HitDust.ani`	1	-1
+		`../Animation/Start/BiteShot_Effect_Bit_M_Dodge.ani`	0	1
+		`../Animation/Start/BiteShot_Effect_Bite_up_Lightning1.ani`	4	2
+		`../Animation/Start/BiteShot_Effect_Bite_up_Lightning.ani`	5	3
+		`../Animation/Start/BiteShot_Effect_Bite_up_Dust.ani`	1	4
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+		[ZPOS]
+		[>]
+			400
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET POSITION HP GAUGE]
+		0	0	-150
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET PASSTYPE]
+	[do not pass]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+	[SET DIRECTION]
+	[RIGHT]
+	[SET POS FORCE]
+		[X START]
+			0
+		[Y START]
+			0
+		[Z START]
+			0
+		[USE MY BASEPOS]
+	[/SET POS FORCE]
+[/BEHAVIOR]

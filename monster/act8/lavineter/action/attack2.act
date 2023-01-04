@@ -1,0 +1,53 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack2.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61492
+		[/IS INDEX]
+		[TRIGGER CHECK]
+		[ATTACK]
+			0	4
+		[OFF]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<=]
+		0
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[ATTACK]
+		0	0
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		2000	
+		[attack speed]
+		[%]
+			-50.0
+	[/APPENDAGE]
+[/BEHAVIOR]

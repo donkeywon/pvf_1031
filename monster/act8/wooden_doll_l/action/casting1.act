@@ -1,0 +1,122 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Casting.ani`
+	[SUB ANI]
+		`../Animation/weapon/Casting.ani`	0	0
+		`../Animation/ball/Casting.ani`	0	0
+		`../Animation/ball_eff/Casting.ani`	0	0
+		`../Animation/ball_eff/Casting.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`CSPEAR`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61490
+		[LEVEL]
+			67
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[JUMP OUT]
+			100	200	5
+		[LEFT]
+		[DOWN]
+		[USE MY DIRECTION]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61490
+		[LEVEL]
+			67
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[JUMP OUT]
+			100	200	5
+		[RIGHT]
+		[DOWN]
+		[USE MY DIRECTION]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61490
+		[LEVEL]
+			67
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[JUMP OUT]
+			200	0	5
+		[RIGHT]
+		[NEUTRAL]
+		[USE MY DIRECTION]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61490
+		[LEVEL]
+			67
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[JUMP OUT]
+			200	0	5
+		[LEFT]
+		[NEUTRAL]
+		[USE MY DIRECTION]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61490
+		[LEVEL]
+			67
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[JUMP OUT]
+			100	200	5
+		[LEFT]
+		[UP]
+		[USE MY DIRECTION]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61490
+		[LEVEL]
+			67
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[JUMP OUT]
+			100	200	5
+		[RIGHT]
+		[UP]
+		[USE MY DIRECTION]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

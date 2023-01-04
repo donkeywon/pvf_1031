@@ -1,0 +1,172 @@
+#PVF_File
+
+[name]
+	`落炎魔杖`
+
+[name2]
+	`Ogri Togri`
+
+[basic explain]
+	`普通攻击时， 发射炎星。
+攻击速度 +1%%`
+
+[flavor text]
+	`抛弃魔法师不能物理攻击的偏见吧。  --尼巫向派伊说`
+
+[grade]
+	57
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[magical attack]
+	59
+
+[attack speed]
+	110
+
+[cast speed]
+	80
+
+[stuck]
+	1
+
+[price]
+	91200
+
+[repair price]
+	76608
+
+[value]
+	72960
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	479	436
+
+[equipment magical attack]
+	585	532
+
+[separate attack]
+	328	220
+
+[icon]
+	`Item/weapon/mage/rod.img`	40
+
+[field image]
+	`Item/field_weapon.img`	7
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	2	4
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	2	4
+
+[layer variation]
+	2150
+	`at_roda`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_rodd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	2	4
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`ROD_TOUCH`
+
+[durability]
+	24
+
+[weight]
+	2200
+
+[item group name]
+	`rod`
+
+[cool time]
+	10000
+
+[if]
+	[my state]
+		`attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		30065	70	0	70	30	0	`Redrock.ptl`
+	[/passive object]
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

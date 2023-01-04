@@ -1,0 +1,170 @@
+#PVF_File
+
+[name]
+	`僧侣的戒律棒`
+
+[name2]
+	`Chartreuse`
+
+[basic explain]
+	`耐久度 +7
+攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`耐久度 +7
+攻击时， 有2%%的几率使敌人进入眩晕状态2秒； 但在决斗场中， 只能持续1秒。 (若敌人高于Lv24， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`请用你的力量保护我！  --莱尔伦`
+
+[grade]
+	24
+
+[rarity]
+	3
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	20
+
+[physical attack]
+	29
+
+[attack speed]
+	-30
+
+[stuck]
+	-3
+
+[price]
+	38400
+
+[repair price]
+	30720
+
+[value]
+	30720
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	286	242
+
+[equipment magical attack]
+	247	209
+
+[separate attack]
+	148	96
+
+[physical critical hit]
+	2
+
+[skill levelup]
+	`[swordman]`	15	2
+	`[common]`	186	2
+	`[swordman]`	65	1
+	`[demonic swordman]`	65	1
+	`[demonic swordman]`	15	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/swordman/club.img`	10
+
+[field image]
+	`Item/FieldImage.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	1	0
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	1	0
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`STICK_TOUCH`
+
+[durability]
+	42
+
+[weight]
+	3400
+
+[item group name]
+	`club`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[reduce duration to human armor at pvp module]
+		50
+	[duration]
+		2000
+	[reduce probability to human armor at pvp module]
+		80
+	[probability]
+		2
+	[active status]
+		`stun`	24
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

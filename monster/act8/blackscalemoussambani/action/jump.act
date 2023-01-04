@@ -1,0 +1,43 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/jump.ani`
+	[SUB ANI]
+		`../animation/jump_sub.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`MOOSAM_SKILL_07_1`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8736
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			125	-1	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			48027
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			125	-1	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

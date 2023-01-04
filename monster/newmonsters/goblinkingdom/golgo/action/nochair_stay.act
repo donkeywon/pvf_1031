@@ -1,0 +1,26 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/nochair_stay.ani`
+	[SUB ANI]
+		`../Animation/Stick/Stick_nochair_stay.ani`	0	10
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET OUTLINE]
+		0	100	100	255	3
+	[SET DAMAGE CHECK]
+		1	3000
+[/BEHAVIOR]

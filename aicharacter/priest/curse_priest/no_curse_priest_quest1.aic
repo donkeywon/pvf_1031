@@ -1,0 +1,137 @@
+#PVF_File
+
+[minimum info]
+	`圣职者`	4	0	0	0	85	0	0	1	0	0	0
+	`no creature`	0	0	0
+
+[additional character status]
+	0	0	0	0	0	0	0	0	0	0	50	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+[/additional character status]
+
+[character status rate]
+	0.1	0.1	1	1	1	1	1	1	1	1	1	1	1	0.7	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+[/character status rate]
+
+[quick skill]
+	61	3
+	1	10
+	8	3
+	64	10
+	51	5
+	7	2
+[/quick skill]
+
+[skill]
+	52	1
+	63	1
+	181	1
+	182	1
+	184	1
+	179	5
+	173	1
+	169	1
+	170	1
+	175	1
+[/skill]
+
+[skill correction]
+	1	3	64	3
+[/skill correction]
+
+[quick item]
+[/quick item]
+
+[equipment]
+	740028	4	0
+	11684	4	0
+	15681	3	0
+	13682	2	0
+	19684	4	0
+	17676	1	0
+	20147	1	0
+	22139	4	0
+	24153	0	0
+	56624	2	0
+	57034	2	0
+	58245	2	0
+[/equipment]
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[keep distance with target]
+	100
+
+[warlike]
+	0
+
+[vision]
+	500
+
+[attack damage rate]
+	0.5
+
+[targeting bonus]
+	100	50	0	0	0	0	0	0	0	0	0	0	0	0	100	0	0	0	0	0	0
+	`[stand]`
+	`[dash]`	0	0
+	`[slow]`
+	`[confuse]`	0
+
+[ai pattern]
+	`Event.ai`
+	`DestinationSelect.ai`
+	`Action.ai`
+	`MoveMethod.ai`
+[/ai pattern]
+
+[key stream]
+	`combo`
+	`combo.key`
+	``
+	`attack1.key`
+	``
+	`attack64.key`
+	`casting`
+	`casting.key`
+	`summon`
+	`summon.key`
+	`Eummey`
+	`Eummey.key`
+[/key stream]
+
+[key cooltime]
+	`combo`	7000
+	`casting`	3000
+	`summon`	50000
+	`Eummey`	1000
+[/key cooltime]
+
+[proc action]
+	`Action/proc.act`
+
+[etc action]
+	`action/casting.act`
+	`action/casting_start.act`
+	`action/summon_casting.act`
+	`action/summon_start.act`
+	`action/Eummey.act`
+[/etc action]
+
+[speech on situation]
+	[on damage]
+		`你是谁？`	10
+	[on damage]
+		`从哪里出现的？`	10
+	[on damage]
+		`有什么事吗？`	10
+	[on attack]
+		`你是谁？`	10	3
+	[on attack]
+		`从哪里出现的？`	10	6
+	[on attack]
+		`有什么事吗？`	10	7
+[/speech on situation]

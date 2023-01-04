@@ -1,0 +1,150 @@
+#PVF_File
+
+[name]
+	`戮蛊幼虫`
+
+[face image]
+	`Monster/MonsterFace.img`	179
+
+[die effect]
+	0	23	1
+
+[category]
+	`[insect]`
+	`[fort armor]`
+	`[melee combat]`
+	`[close-carefully]`
+[/category]
+
+[ambient sound]
+	``
+
+[attack sound]
+	``
+
+[appear sound]
+	``
+
+[damage sound]
+	`R_LARVA_DMG`
+
+[die sound]
+	`R_LARVA_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	170
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	120
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	170
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	120
+	`[HP MAX]`	`*`	168
+[/ability category]
+
+[level]
+	100	100
+
+[fire resistance]
+	-20	-20
+
+[water resistance]
+	-20	-20
+
+[sleep resistance]
+	100	100
+
+[move speed]
+	200	200
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1500	1500
+
+[weight]
+	100000	100000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[waiting action]
+	`../BabyNugol/Action/Stay.act`
+
+[move action]
+	`../BabyNugol/Action/Move.act`
+
+[damage action 1]
+	`../BabyNugol/Action/Damage.act`
+
+[down action]
+	`../BabyNugol/Action/Down.act`
+
+[overturn action]
+	`../BabyNugol/Action/Overturn.act`
+
+[attack action]
+	`Action/Attack_2.act`
+	`../BabyNugol/Action/Sucking.act`
+	`../BabyNugol/Action/Sucking2.act`
+	`../BabyNugol/Action/Metamotphosis.act`
+	`../BabyNugol/Action/SuckingReady.act`
+[/attack action]
+
+[attack info]
+	`../BabyNugol/AttackInfo/BloodSuck.atk`
+	`../BabyNugol/AttackInfo/BloodSuck.atk`
+	`../BabyNugol/AttackInfo/BloodSuck.atk`
+	`../BabyNugol/AttackInfo/BloodSuck.atk`
+	`../BabyNugol/AttackInfo/Suck.atk`
+[/attack info]
+
+[cooltime]
+	10000	0	0	0	10000
+[/cooltime]
+
+[think term]
+	500
+
+[ai pattern]
+	[easy]
+		`../BabyNugol/ai/Event.ai`
+		`../BabyNugol/ai/DestinationSelect.ai`
+		`../BabyNugol/ai/Action2.ai`
+		`../BabyNugol/ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`../BabyNugol/ai/Event.ai`
+		`../BabyNugol/ai/DestinationSelect.ai`
+		`../BabyNugol/ai/Action2.ai`
+		`../BabyNugol/ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`../BabyNugol/ai/Event.ai`
+		`../BabyNugol/ai/DestinationSelect.ai`
+		`../BabyNugol/ai/Action2.ai`
+		`../BabyNugol/ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`../BabyNugol/ai/Event.ai`
+		`../BabyNugol/ai/DestinationSelect.ai`
+		`../BabyNugol/ai/Action2.ai`
+		`../BabyNugol/ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`../BabyNugol/ai/Event.ai`
+		`../BabyNugol/ai/DestinationSelect.ai`
+		`../BabyNugol/ai/Action2.ai`
+		`../BabyNugol/ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	250
+
+[vision]
+	300
+
+[lie frame]
+	2	3	2	3	4

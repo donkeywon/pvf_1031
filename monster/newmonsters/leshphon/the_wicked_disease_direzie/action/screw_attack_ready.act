@@ -1,0 +1,60 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/screw_ready_e.ani`
+	[SOUND]
+		`DIRE_HURRICANE_START`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`screw_move.act`
+	[CHANGE ACTION FILE]
+	[STAY]
+		`screw_stay.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		``
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		``
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		``
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9363
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	-1	100
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+	[ATTACK]
+		12	0
+	[ON]
+[/BEHAVIOR]

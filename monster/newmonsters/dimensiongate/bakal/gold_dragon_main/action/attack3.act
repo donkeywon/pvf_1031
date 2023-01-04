@@ -1,0 +1,102 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/bow.ani`
+	[SUB ANI]
+		`../Animation/Ack_eff4.ani`	0	0
+		`../Animation/bow_suff.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`来较量一下吧！`	0	100
+	[/SPEECH]
+	[SOUND]
+		`NMAUG_SKILL_01`	2
+		`MONAHUN_SHIELD`	9
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			56447
+		[LEVEL]
+			0
+		[POS]
+			531	279	0
+		[MAGIC CIRCLE]
+		[USE MAP POS]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			56447
+		[LEVEL]
+			0
+		[POS]
+			781	278	0
+		[MAGIC CIRCLE]
+		[USE MAP POS]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			56447
+		[LEVEL]
+			0
+		[POS]
+			293	275	0
+		[MAGIC CIRCLE]
+		[USE MAP POS]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

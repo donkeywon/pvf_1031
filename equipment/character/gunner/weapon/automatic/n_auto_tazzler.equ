@@ -1,0 +1,158 @@
+#PVF_File
+
+[name]
+	`(旧) 绝杀 - 蝮蛇`
+
+[name2]
+	`Tazzler Gun`
+
+[basic explain]
+	`使用枪身打击敌人时， 附加50%%伤害。`
+
+[detail explain]
+	`使用枪身打击敌人时， 附加50%%伤害。 (在决斗场中 +25%%)`
+
+[flavor text]
+	`为喜欢近战的神枪手特别设计制作的枪。`
+
+[grade]
+	20
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	15
+
+[magical attack]
+	17
+
+[stuck]
+	1
+
+[price]
+	32000
+
+[repair price]
+	25600
+
+[value]
+	25600
+
+[equipment physical attack]
+	155	115
+
+[equipment magical attack]
+	227	169
+
+[separate attack]
+	133	86
+
+[icon]
+	`item/weapon/gunner/automatic.img`	39
+
+[field image]
+	`Item/field_weapon.img`	2
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	3	0
+
+[layer variation]
+	2790
+	`autoc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`autob`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	3	0
+
+[layer variation]
+	2790
+	`at_autoc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_autob`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	1500
+
+[item group name]
+	`automatic`
+
+[cool time]
+	10000
+
+[if]
+	[attacker]
+		`character`	-1
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	50
+[/then]
+
+[pvp]
+	[if]
+		[attacker]
+			`character`	-1
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase damage]
+			`%`	25
+	[/then]
+[/pvp]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

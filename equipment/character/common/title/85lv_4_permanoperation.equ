@@ -1,0 +1,104 @@
+#PVF_File
+
+[name]
+	`弗曼的克星`
+
+[name2]
+	``
+
+[explain]
+	`攻击时， 有10%%的几率使自身恢复1%%的MP。 (冷却时间10秒)
+施放技能时， 有20%%的几率使自身恢复1%%的MP。 (冷却时间10秒)
+被攻击时， 可以使自身恢复200点MP。 (冷却时间10秒)`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	452
+
+[custom animation]
+	`TitleAnimation/operations.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[all elemental attack]
+	10
+
+[if]
+	[casting]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		20
+	[restore]
+		`mp`
+		`%`	1	1000
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[restore]
+		`mp`
+		`%`	1	1000
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`mp`
+		`+`	200	1000
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[icon mark]
+	`Item/IconMark.img`	64

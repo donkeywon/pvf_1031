@@ -1,0 +1,51 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Bite2.ani`
+	[SOUND]
+		`R_ANTMON_BITE`	0
+	[/SOUND]
+	[SPEECH]
+		`啊喀喀！！！！！！！！！！！！！`	1	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		900	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		1
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8788
+		[PARTICLE FILENAME]
+			`../Particle/denture.ptl`
+		[LEVEL]
+			0
+		[POS]
+			90	0	80
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

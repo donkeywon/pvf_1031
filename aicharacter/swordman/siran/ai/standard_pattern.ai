@@ -1,0 +1,93 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	40.0	40.0	20.0	20.0
+		[true]
+	
+		[think]
+			[void]
+				`get random()`	0.0	100.0
+		
+			[think]
+				[last result]
+					`<=`	20
+				[true]
+				[return]
+					`grab`
+				[false]
+				[return]
+					`backstepcutter`
+			[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	70.0	70.0	20.0	20.0
+		[true]
+	
+		[think]
+			[void]
+				`get random()`	0.0	100.0
+		
+			[think]
+				[last result]
+					`<=`	70
+				[true]
+			
+				[think]
+					[check use skill]
+						46
+					[true]
+					[return]
+						`upperslash`
+					[false]
+					[return]
+						-1
+				[/think]
+	[false]
+	[return]
+		`basic_combination`
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	150.0	150.0	20.0	20.0
+		[true]
+	
+		[think]
+			[check use skill]
+				68
+			[true]
+			[return]
+				`chargecrash`
+			[false]
+			[return]
+				-1
+		[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	220.0	220.0	20.0	20.0
+		[true]
+	
+		[think]
+			[check use skill]
+				8
+			[true]
+			[return]
+				`tripleslash`
+			[false]
+			[return]
+				-1
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

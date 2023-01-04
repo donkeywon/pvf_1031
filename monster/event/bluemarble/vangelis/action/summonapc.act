@@ -1,0 +1,63 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Suicide2.ani`
+	[SPEECH]
+		`破坏王修顿……为GBL苏醒吧！`	3	100
+	[/SPEECH]
+	[SUB ANI]
+		`../Animation/Count2.ani`	0	0
+		`../Animation/BossSummon_Effect.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`MAP_COUNTDOWN`	7
+		`MAP_COUNTDOWN`	8
+		`MAP_COUNTDOWN`	9
+		`MAP_COUNTDOWN`	10
+		`MAP_COUNTDOWN`	11
+		`MAP_COUNTDOWN`	12
+		`MAP_COUNTDOWN`	13
+		`MAP_COUNTDOWN`	14
+		`MAP_COUNTDOWN`	15
+		`MAP_COUNTDOWN`	16
+		`VANGELIS_SKILL_02`	18
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET GRABABLE]
+		0
+	[SET DIRECTION]
+	[RIGHT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		3	3
+	[WHICH]
+	[PASSIVE]
+	[IS INDEX]
+	[/IS INDEX]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND DO BEHAVIOR]
+	[ME]
+		0
+[/BEHAVIOR]

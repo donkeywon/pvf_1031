@@ -1,0 +1,175 @@
+#PVF_File
+
+[name]
+	`死亡舞步[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入减速状态。
+攻击速度 +2%%
+
+无法进行合成和分解。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入减速状态5秒； 减速状态下， 减少15%%的移动速度和攻击速度。(若敌人高于Lv50， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击速度 +2%%
+
+无法进行合成和分解。`
+
+[grade]
+	56
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	38
+
+[attack speed]
+	20
+
+[stuck]
+	-2
+
+[price]
+	89600
+
+[repair price]
+	75264
+
+[value]
+	71680
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	483	415
+
+[equipment magical attack]
+	406	349
+
+[separate attack]
+	311	208
+
+[physical critical hit]
+	4
+
+[skill levelup]
+	`[gunner]`	15	1
+	`[at gunner]`	15	1
+	`[gunner]`	9	1
+	`[at gunner]`	9	1
+	`[gunner]`	51	1
+	`[at gunner]`	51	1
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/revolver.img`	21
+
+[field image]
+	`Item/field_weapon.img`	1
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	2	4
+
+[layer variation]
+	2790
+	`revc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`revb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	2	4
+
+[layer variation]
+	2790
+	`at_revc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_revb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2000
+
+[item group name]
+	`revolver`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		75000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		2
+	[active status]
+		`slow`	50	15	15
+[/then]
+
+[not amplify]
+	1
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

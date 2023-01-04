@@ -1,0 +1,42 @@
+#PVF_File
+
+[width]
+	0	0
+
+[floating height]
+	50
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	1000
+
+[basic action]
+	`Action/body.act`
+
+[attack info]
+	`AttackInfo/attack.atk`
+
+[team]
+	100
+
+[add particles]
+	[particle]
+		[file]
+			`Particle/belzebuite_overskill_dark.ptl`
+	[/particle]
+[/add particles]
+
+[sound category]
+	`[after object create]`
+	`SPIRE_CRASH`	-1
+[/sound category]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	5000
+[/object destroy condition]

@@ -1,0 +1,107 @@
+#PVF_File
+
+[name]
+	`2007地下城与勇士嘉年华`
+
+[name2]
+	`DnF Festival`
+
+[explain]
+	`攻击时， 有1%%的几率使自身增加30点力量， 效果持续20秒。`
+
+[flavor text]
+	`<活动>  2007地下城与勇士嘉年华纪念称号`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	75
+
+[custom animation]
+	`TitleAnimation/dnf_festival.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	150
+
+[MP MAX]
+	150
+
+[physical attack]
+	10
+
+[physical defense]
+	7
+
+[magical attack]
+	10
+
+[magical defense]
+	7
+
+[inventory limit]
+	10000
+
+[HP regen speed]
+	38
+
+[MP regen speed]
+	8
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	45
+[/then]
+
+[skill levelup]
+	`[mage]`	2	2
+[/skill levelup]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

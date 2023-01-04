@@ -1,0 +1,67 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Throw2.ani`
+	[SUB ANI]
+		`../Animation/ac/Throw2_200.ani`	0	0
+		`../Animation/hat/Throw2_500.ani`	0	0
+		`../Animation/pants/Throw2_300.ani`	0	0
+		`../Animation/shoes/Throw2_600.ani`	0	0
+		`../Animation/skin/Throw2_700.ani`	0	0
+		`../Animation/back/Throw2_400.ani`	0	1
+		`../Animation/Throw2_100.ani`	0	100
+	[/SUB ANI]
+	[SOUND]
+		`R_GOLI_ATK`	0
+		`GOBLIN_THROW`	3
+		`GOBLIN_THROW`	6
+		`GOBLIN_THROW`	9
+		`GOBLIN_THROW`	12
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[stun]
+		100	60	5000
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8589
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			60
+		[POS]
+			-10	1	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`谁让你用高级技能的？`
+[/BEHAVIOR]

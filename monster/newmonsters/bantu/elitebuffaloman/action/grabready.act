@@ -1,0 +1,169 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/GrabReady.ani`
+	[SOUND]
+		`SMASHER_CATCH`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[IF]
+		`throw`	
+		[=]
+			0
+	[/IF]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			58
+		[Y START]
+			-1
+		[Z START]
+			0
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			0
+		[Y START]
+			-1
+		[Z START]
+			100
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/SET POS FORCE]
+	[SET OVERTURN]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			-100
+		[Y START]
+			0
+		[Z START]
+			0
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		7
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[DOWN]
+	[DEFAULT]
+		1
+	[FORCE]
+		0	200
+	[NOW]
+[/BEHAVIOR]

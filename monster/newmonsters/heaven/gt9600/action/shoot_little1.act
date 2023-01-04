@@ -1,0 +1,137 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Shoot_Little1.ani`
+	[SUB ANI]
+		`../Animation/Attack_Effect.ani`	0	0
+		`../Animation/Attack_Effect1.ani`	0	0
+		`../Animation/Attack_Effect2.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`BOMB_READY`	0
+		`R_MACHINEGUNA`	10
+		`R_MACHINEGUNA`	11
+		`R_MACHINEGUNA`	12
+		`R_MACHINEGUNA`	13
+		`R_MACHINEGUNA`	14
+		`R_MACHINEGUNA`	15
+		`R_MACHINEGUNA`	16
+		`R_MACHINEGUNA`	17
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		28	28
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		29	29
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		30	30
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		31	31
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		32	32
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		33	33
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		34	34
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		35	35
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8177
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-170	170
+		[RANDOM]
+			-100	100
+		[RANDOM]
+			0	100
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8177
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-170	170
+		[RANDOM]
+			-100	100
+		[RANDOM]
+			0	100
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1900	2
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		28
+[/BEHAVIOR]

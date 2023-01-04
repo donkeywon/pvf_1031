@@ -1,0 +1,131 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Cast1.ani`
+	[SUB ANI]
+		`../Animation/weapon1/Cast1.ani`	0	0
+		`../Animation/ware/Cast1.ani`	0	0
+		`../Animation/weapon2/Cast1.ani`	0	-1
+		`../Animation/castingS.ani`	0	0
+		`../Animation/casting1S.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`大家手脚麻利点`	1	30
+	[/SPEECH]
+	[SOUND]
+		`WTHIEF_MEET_04`	0
+		`TUTORIAL`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		4	4
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+		[IS NOT INDEX]
+			63008
+		[/IS NOT INDEX]
+		[DISTANCE]
+		[<=]
+			3000
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9116
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	150
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		5000	
+		[attack speed]
+		[%]
+			200.0
+		[move speed]
+		[%]
+			150.0
+		[cast speed]
+		[%]
+			200.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[RESET]
+	[TRIGGER]
+		2
+	[RESET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9115
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			49	1	100
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		100	4500	1000	100	255	255	255
+[/BEHAVIOR]

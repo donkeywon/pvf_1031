@@ -1,0 +1,30 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/custom_1_2.ani`
+	[SUB ANI]
+		`../Animation/custom_1_3.ani`	0	1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			64010
+		[LEVEL]
+			100
+		[POS]
+			0	0	0
+		[MAGIC CIRCLE]
+	[/SUMMON MONSTER]
+	[DESTROY]
+[/BEHAVIOR]

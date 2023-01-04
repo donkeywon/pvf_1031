@@ -1,0 +1,94 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Shoot_0.ani`
+	[SOUND]
+		`R_KINFANTRY_ATK`	2
+		`R_WREVOLVERA`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`position`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8200
+		[PARTICLE FILENAME]
+			`../Particle/Bullet_0.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	82
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`position`	
+		[=]
+			`position`
+		[+]
+			1
+	[/DIM]
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`position`	
+		[=>]
+			6
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		0
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		900	4
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		2
+[/BEHAVIOR]

@@ -1,0 +1,85 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Bigboom1.ani`
+	[SUB ANI]
+		`../Animation/Bigboom2.ani`	0	0
+		`../Animation/Bigboom3.ani`	0	0
+		`../Animation/AntiairUpperQuake.ani`	0	0
+		`../Animation/AntiairUpperQuake2.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`FIRE_EXPLOSION_CREATE`	0
+		`R_BOMB`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[CHECK PARTYMEMBERS STATE]
+	[EVEN ONE DEATH]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[LOCK QUEST UNTIL]
+	[CHANGE MODULE]
+		6560
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		5	5
+	[CHECK PARTYMEMBERS STATE]
+	[ALL DEATH]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER QUESTEVENT]
+		6560
+	[SEND DO BEHAVIOR]
+	[ME]
+		5
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

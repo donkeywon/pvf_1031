@@ -1,0 +1,69 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Start4_return4.ani`
+	[SUB ANI]
+		`../Animation/Start1.ani`	0	0
+		`../Animation/Start2_return.ani`	0	0
+		`../Animation/Start1.ani`	0	0
+		`../Animation/Start2.ani`	0	0
+		`../Animation/Start2.ani`	0	0
+		`../Animation/Start1_return.ani`	0	0
+		`../Animation/Start4_return3.ani`	0	0
+		`../Animation/Start4_return1.ani`	0	0
+		`../Animation/Start4_return2.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		100	300	100	250	255	255	255
+	[FLASH SCREEN]
+		100	300	100	250	255	255	255
+	[FLASH SCREEN]
+		100	300	100	250	255	255	255
+	[FLASH SCREEN]
+		100	300	100	250	255	255	255
+	[FLASH SCREEN]
+		100	300	100	250	255	255	255
+	[FLASH SCREEN]
+		100	300	100	250	255	255	255
+	[FLASH SCREEN]
+		100	300	100	250	255	255	255
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPEND HIT]
+		0	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

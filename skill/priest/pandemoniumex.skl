@@ -1,0 +1,217 @@
+#PVF_File
+
+[name]
+	`地狱之门`
+
+[name2]
+	`Hellgate`
+
+[explain]
+	`利用恶魔的力量打开地狱之门，从中释放出大量的恶魔气息攻击敌人。 在[魔化 : 末日审判者]状态下，技能攻击力会大幅提升。`
+
+[basic explain]
+	`利用恶魔的力量打开地狱之门，从中释放出大量的恶魔气息攻击敌人。 在[魔化 : 末日审判者]状态下，技能攻击力会大幅提升。`
+
+[executable states]
+	8
+[/executable states]
+
+[purchase cost]
+	60
+[/purchase cost]
+
+[type]
+	`[active]`
+
+[skill class]
+	3
+
+[maximum level]
+	50
+
+[growtype maximum level]
+	0	0	0	0	0	0
+
+[second growtype maximum level]
+	0	0	0	0	0	0	0	0	30	0	0	0
+
+[skill fitness growtype]
+[/skill fitness growtype]
+
+[skill fitness second growtype]
+	1
+[/skill fitness second growtype]
+
+[required level]
+	60
+
+[required level range]
+	2
+
+[consume MP]
+	400	1120
+
+[cool time]
+	30000	30000
+
+[durability decrease rate]
+	50
+
+[command]
+	{6=`(RIGHT)`}
+	{8=`,`}
+	{6=`(LEFT)`}
+	{8=`,`}
+	{6=`(DOWN)`}
+	{8=`,`}
+	{6=`(RIGHT)`}
+	{8=`,`}
+	{6=`(SKILL)`}
+[/command]
+
+[command key explain]
+	`操作指令 : →←↓→ + Z`
+
+[skill command advantage]
+	50	50
+
+[consume item]
+	3037	1	1
+[/consume item]
+
+[executable states]
+	0	14
+[/executable states]
+
+[icon]
+	`Character/Priest/Effect/SkillIcon.img`	332
+	`Character/Priest/Effect/SkillIcon.img`	333
+
+[static data]
+	20	8	1200	60	800
+[/static data]
+
+[level info]
+	1
+	375
+	454
+	533
+	612
+	691
+	770
+	849
+	928
+	1007
+	1086
+	1165
+	1243
+	1322
+	1401
+	1480
+	1559
+	1638
+	1717
+	1796
+	1875
+	1954
+	2033
+	2112
+	2191
+	2270
+	2349
+	2428
+	2507
+	2586
+	2665
+	2743
+	2822
+	2901
+	2980
+	3059
+	3138
+	3217
+	3296
+	3375
+	3454
+	3533
+	3612
+	3691
+	3770
+	3849
+	3928
+	4007
+	4086
+	4165
+	4243
+[/level info]
+
+[pvp]
+	[start cool time]
+		600000	600000
+	[level info]
+		1
+		71
+		86
+		101
+		116
+		131
+		146
+		161
+		176
+		191
+		206
+		221
+		236
+		251
+		266
+		281
+		296
+		311
+		326
+		341
+		356
+		371
+		386
+		401
+		416
+		431
+		446
+		461
+		476
+		491
+		506
+		521
+		536
+		551
+		566
+		581
+		596
+		611
+		626
+		641
+		656
+		671
+		686
+		701
+		716
+		731
+		746
+		761
+		776
+		791
+		806
+	[/level info]
+[/pvp]
+
+[level property]
+	1	99
+	`恶魔气息攻击力 : <int>%%
+多段攻击次数上限 : <int>次
+[魔化 : 末日审判者]状态下，攻击力增加率 : <int>%%`
+	-1	0	1.0
+	1	1	1.0
+	0	0	1.0
+[/level property]
+
+[skill preloading image]
+[/skill preloading image]

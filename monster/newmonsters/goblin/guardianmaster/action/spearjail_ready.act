@@ -1,0 +1,53 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/SpearJail_Ready.ani`
+	[SUB ANI]
+		`../Animation/back/SpearJail_Ready_400.ani`	0	-2
+		`../Animation/pants/SpearJail_Ready_300.ani`	0	0
+		`../Animation/shoes/SpearJail_Ready_600.ani`	0	0
+		`../Animation/skin/SpearJail_Ready_700.ani`	0	0
+		`../Animation/ac/SpearJail_Ready_200.ani`	0	0
+		`../Animation/hat/SpearJail_Ready_500.ani`	0	0
+		`../Animation/Effect/SpearJail_Effect1.ani`	0	0
+		`../Animation/Effect/SpearJail_Effect2.ani`	0	0
+		`../Animation/Effect/SpearJail_Effect3.ani`	0	0
+		`../Animation/Effect/SpearJail_Effect4.ani`	0	0
+		`../Animation/SpearJail_Ready_100.ani`	0	100
+	[/SUB ANI]
+	[SOUND]
+		`R_GOLI_ATK`	0
+		`OLI_INVISIBLE`	1
+		`CAMOUFLAGE_APPEAR`	2
+		`R_GOLI_ATK`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`呃啊啊！！接招！`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		8
+	[NOW]
+[/BEHAVIOR]

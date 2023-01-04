@@ -1,0 +1,43 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack_9_0.ani`
+	[SUB ANI]
+		`../Animation/Attack_9_3.ani`	0	-1
+		`../Animation/Attack_9_1.ani`	0	1
+		`../Animation/Attack_9_6.ani`	0	2
+		`../Animation/Attack_9_4.ani`	0	3
+		`../Animation/Attack_9_2.ani`	0	4
+		`../Animation/Attack_9_5.ani`	0	5
+	[/SUB ANI]
+	[SPEECH]
+		`呜噢噢噢！`	0	30
+	[/SPEECH]
+	[SOUND]
+		`DOWWA_SWING`	0
+		`DOWWA_SWING`	4
+		`DOWWA_SWING`	8
+		`DOWWA_SWING`	12
+		`DOWWA_FIRE_02`	12
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1200	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		6
+[/BEHAVIOR]

@@ -1,0 +1,88 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/ShoulderB/ShoulderB_Summon_2_Loop.ani`
+	[SUB ANI]
+		`../Animation/ArmB/ArmB_Shout_2_Loop.ani`	0	2
+		`../Animation/FingerB/FingerB_Shout_2_Loop.ani`	0	3
+		`../Animation/Neck4/Neck4_Shout_2_Loop.ani`	0	4
+		`../Animation/Neck3/Neck3_Shout_2_Loop.ani`	0	5
+		`../Animation/Neck2/Neck2_Shout_2_Loop.ani`	0	6
+		`../Animation/Neck1/Neck1_Shout_2_Loop.ani`	0	7
+		`../Animation/Jaw/Jaw_Shout_2_Loop.ani`	0	8
+		`../Animation/Head/Head_Shout_2_Loop.ani`	0	9
+		`../Animation/Shoulder/Shoulder_Shout_2_Loop.ani`	0	10
+		`../Animation/Arm/Arm_Shout_2_Loop.ani`	0	11
+		`../Animation/Finger/Finger_Shout_2_Loop.ani`	0	12
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DIRECT DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			8000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8142
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			800	-100	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		2
+	[ON]
+	[TRIGGER]
+		1
+	[RESET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[RESET]
+	[SET ACTION]
+	[ATTACK]
+		10
+	[NOW]
+[/BEHAVIOR]

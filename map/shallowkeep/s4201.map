@@ -1,0 +1,122 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	31
+[/dungeon]
+
+[type]
+	`[normal]`
+
+[greed]
+	`CC CC`
+
+[tile]
+	`Tile/overnoblankmid.til`
+	`Tile/overnoblankdown.til`
+	`Tile/overnoblankup.til`
+	`Tile/overnoblankdown.til`
+	`Tile/overnoblankmid.til`
+	`Tile/overnoblankmid.til`
+	`Tile/overnoblankdown.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/skfar.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/skmid.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	13	237	1552	198	1144	137	691	284
+
+[dungeon start area]
+	226	172	117	160
+
+[sound]
+	`R_AMB_CAVE`
+	`M_UNDERFOOT`
+[/sound]
+
+[animation]
+	`Animation/skfarstreamani.ani`	`[distantback]`	0	-120	0
+	`Animation/skfarstreamani.ani`	`[distantback]`	640	-120	0
+	`Animation/skfarstreamani.ani`	`[distantback]`	1280	-120	0
+	`Animation/skfarstreamani.ani`	`[distantback]`	1920	-120	0
+[/animation]
+
+[passive object]
+	810	426	140	0
+	805	979	168	0
+	805	673	178	0
+	814	818	190	0
+	812	593	198	0
+	814	1036	200	0
+	814	349	201	0
+	813	944	241	0
+	805	1244	251	0
+[/passive object]
+
+[monster]
+	400	0	39	1071	175	0	1	1	`[fixed]`	`[normal]`
+	400	0	39	824	179	0	1	1	`[fixed]`	`[normal]`
+	400	0	39	715	204	0	1	1	`[fixed]`	`[normal]`
+	400	0	39	1170	229	0	1	1	`[fixed]`	`[normal]`
+	400	0	39	837	247	0	1	1	`[fixed]`	`[normal]`
+	400	0	39	1294	251	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[special passive object]
+	815	1046	248	0	1
+	`[monster]`	403	39	1	5	-1
+	815	600	261	0	1
+	`[trap]`	2600	1	1	5	-1	
+[/special passive object]
+
+[event monster position]
+	887	151	0
+	1142	269	0
+	1221	172	0
+	1351	193	0
+[/event monster position]
+
+[map name]
+	`PVP 无名`

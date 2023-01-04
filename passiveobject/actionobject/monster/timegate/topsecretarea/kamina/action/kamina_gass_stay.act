@@ -1,0 +1,45 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/kamina_gass_stay.ani`
+	[SUB ANI]
+		`../Animation/kamina_gass_stay_eff.ani`	0	1
+	[/SUB ANI]
+	[SOUND]
+		`VERRICKTM_SANDSTORM`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16049
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			75
+		[POS]
+			0	0	30
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

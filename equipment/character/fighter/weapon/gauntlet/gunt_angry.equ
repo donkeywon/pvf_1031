@@ -1,0 +1,169 @@
+#PVF_File
+
+[name]
+	`离火之愤怒臂铠`
+
+[name2]
+	`Angry guntlet`
+
+[basic explain]
+	`以额外杀伤攻击敌人时， 有10%%的几率出现火焰爆炸。`
+
+[detail explain]
+	`敌人HP降到30%%以下时， 有10%%几率出现火焰爆炸。`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	64
+
+[attack speed]
+	-80
+
+[stuck]
+	-1
+
+[need material]
+	3285	1200
+
+[repair price]
+	93744
+
+[value]
+	89280
+
+[equipment physical attack]
+	686	629
+
+[equipment magical attack]
+	515	472
+
+[separate attack]
+	360	243
+
+[skill levelup]
+	`[fighter]`	18	2
+	`[fighter]`	19	2
+	`[at fighter]`	18	2
+	`[at fighter]`	19	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/gauntlet.img`	57
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	2	0
+
+[layer variation]
+	2790
+	`gauntletc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gauntletb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	2	0
+
+[layer variation]
+	2150
+	`at_gauntleta`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_gauntletc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_gauntletx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		2000
+	[attack success]
+		1
+	[overkill]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		10
+	[passive object]
+		48094	0	0	0	55	0	``
+	[/passive object]
+[/then]
+
+[routing priority]
+	`fighter`	4
+	`at fighter`	4
+	`fighter`	2
+	`at fighter`	2
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

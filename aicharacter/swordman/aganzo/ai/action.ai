@@ -1,0 +1,39 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	750.0	750.0	500.0	500.0
+			`all`
+			`character`	-1
+	
+		[think]
+			[last result]
+				`<=`	1.0
+			[true]
+			[import ai]
+				`Action2.ai`
+			[false]
+		
+			[think]
+				[last result]
+					`<=`	2.0
+				[true]
+				[import ai]
+					`Action3.ai`
+				[false]
+			
+				[think]
+					[last result]
+						`<=`	3.0
+					[true]
+					[import ai]
+						`Action3.ai`
+					[false]
+					[import ai]
+						`Action4.ai`
+				[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

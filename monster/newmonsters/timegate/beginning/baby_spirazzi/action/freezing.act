@@ -1,0 +1,57 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack1.ani`
+	[SUB ANI]
+		`../Animation/Attack2_wp.ani`	0	1
+		`../Animation/effect/10_ice_start_dodge.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`FLYDRAGON_FLAP`	0
+		`R_SKASABABY_ATK`	8
+		`HELLTER`	9
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1000	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		5
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[WHICH]
+	[PLAYER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			13027
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[USE NEUTRAL TEAM]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

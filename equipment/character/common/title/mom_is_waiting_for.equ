@@ -1,0 +1,86 @@
+#PVF_File
+
+[name]
+	`沉迷的羔羊`
+
+[name2]
+	`Mom is Waiting for`
+
+[flavor text]
+	`(网吧里)
+甲 : 你妈打电话给我， 说喊你回家吃饭~
+乙 : 疲劳值还没刷完呢！ 说我在做作业~
+甲 : ~你妈说今晚的菜是你最爱吃的竹笋炒肉丝……`
+
+[explain]
+	`被攻击时， 有2%%的几率使自身进入伪装状态7秒。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	344
+
+[custom animation]
+	`TitleAnimation/mom_is_waiting_for.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	30
+
+[physical defense]
+	-10
+
+[magical attack]
+	30
+
+[magical defense]
+	-10
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[cooltime]
+		30000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		7000
+	[probability]
+		2
+	[buff]
+		`camoflage`
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

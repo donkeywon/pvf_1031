@@ -1,0 +1,70 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/ColumnAttack.ani`
+	[SUB ANI]
+		`../animation/Column.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`MOOSAM_SKILL_07_2`	1
+		`ARM_UNDERLAND`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8736
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			125	-1	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			48027
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			125	-1	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`heroMove.act`
+[/BEHAVIOR]

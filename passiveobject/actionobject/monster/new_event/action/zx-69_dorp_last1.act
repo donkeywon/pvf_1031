@@ -1,0 +1,40 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Zx-69-Body_Open.ani`
+	[SUB ANI]
+		`../animation/G_Last_s.ani`	0	1
+		`../animation/Zx-69_Open.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		28	28
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61656
+		[LEVEL]
+			70
+		[POS]
+			0	1	0
+		[NO EFFECT]
+		[USE OBJECT ZPOS]
+		[COLLISION GROUP]
+			2	0	1
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

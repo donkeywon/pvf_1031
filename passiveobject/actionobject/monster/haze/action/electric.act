@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/eletric.ani`
+	[SUB ANI]
+		`../animation/eletric_e.ani`	0	10
+		`../animation/eletric_ball_start.ani`	0	11
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10466
+		[PARTICLE FILENAME]
+			`../Particle/electric.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	70
+	[/CREATE PASSIVEOBJECT]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

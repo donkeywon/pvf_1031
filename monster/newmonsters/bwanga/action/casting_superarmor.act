@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Casting_superarmor.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`小心，这次是认真的了！`
+	[CASTING]
+		600	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		21000	
+		[move speed]
+		[%]
+			117.0
+	[/APPENDAGE]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`Stay2.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`Move2.act`
+[/BEHAVIOR]

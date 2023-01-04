@@ -1,0 +1,135 @@
+#PVF_File
+
+[name]
+	`血暴之镰`
+
+[name2]
+	`Blood Storm`
+
+[basic explain]
+	`攻击时， 有50%%的几率使敌人进入出血状态。`
+
+[detail explain]
+	`攻击时， 有50%%的几率使敌人进入出血状态10秒； 出血状态下的敌人， 每0.5秒受到65点伤害。 (若敌人高于Lv55， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[grade]
+	54
+
+[rarity]
+	2
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	35
+
+[magical attack]
+	35
+
+[attack speed]
+	80
+
+[stuck]
+	1
+
+[price]
+	75600
+
+[repair price]
+	63504
+
+[value]
+	60480
+
+[equipment physical attack]
+	445	429
+
+[equipment magical attack]
+	468	452
+
+[separate attack]
+	233	156
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[icon]
+	`Item/weapon/priest/scythe.img`	25
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[priest]`
+
+[variation]
+	2	6
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		15000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[probability]
+		50
+	[active status]
+		`bleeding`	55	1300
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,51 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/flyattack.ani`
+	[SUB ANI]
+		`../animation/ani/flyattack.ani`	0	9
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10320
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-500	0	350
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+	[SET VISIBLITY]
+		0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10328
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-500	0	350
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+	[SET VISIBLITY]
+		0
+[/BEHAVIOR]

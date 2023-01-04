@@ -1,0 +1,121 @@
+#PVF_File
+
+[name]
+	`魔幻之境`
+
+[name2]
+	`Tower of Despair 59 Floor`
+
+[explain]
+	`攻击时， 有3%%的几率使自身增加30点力量和3%%的物理暴击率， 效果持续10秒。
+施放技能时， 有3%%的几率使自身增加30点智力和3%%的魔法暴击率， 效果持续10秒。
+被攻击时， 有3%%的几率使自身增加3%%的移动速度， 效果持续20秒。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	383
+
+[custom animation]
+	`TitleAnimation/apc_tower_of_despair_59.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical defense]
+	20
+
+[magical defense]
+	20
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[cooltime]
+		15000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[probability]
+		3
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`physical critical hit rate`
+		`+`	3
+[/then]
+
+[if]
+	[cooltime]
+		15000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[probability]
+		3
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`magical critical hit rate`
+		`+`	3
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		3
+	[stat]
+		`move speed`
+		`+`	30
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

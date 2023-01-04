@@ -1,0 +1,114 @@
+#PVF_File
+
+[name]
+	`大门看守人`
+
+[name2]
+	``
+
+[explain]
+	`攻击时以1%%的机率8秒内呈现霸体护甲状态。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	182
+
+[custom animation]
+	`TitleAnimation/gatekeeper.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	23
+
+[physical defense]
+	15
+
+[magical attack]
+	23
+
+[magical defense]
+	15
+
+[all elemental resistance]
+	5
+
+[inventory limit]
+	10000
+
+[HP regen speed]
+	30
+
+[MP regen speed]
+	6
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[if]
+	[cooltime]
+		8000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		8000
+	[probability]
+		1
+	[buff]
+		`superarmor`
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		3000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		3000
+	[probability]
+		1
+	[buff]
+		`superarmor`
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

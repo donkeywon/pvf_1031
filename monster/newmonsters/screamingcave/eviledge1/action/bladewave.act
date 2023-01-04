@@ -1,0 +1,33 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AttackDown.ani`
+	[SUB ANI]
+		`../Animation/Effect/AttackDown.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`KATANAA_03`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8636
+		[PARTICLE FILENAME]
+			`../Particle/Wave.ptl`
+		[LEVEL]
+			60
+		[POS]
+			100	0	-150
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

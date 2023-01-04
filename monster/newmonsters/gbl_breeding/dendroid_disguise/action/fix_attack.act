@@ -1,0 +1,63 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/RootAttack.ani`
+	[SUB ANI]
+		`../Animation/RootAttack_B.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[PLAYER]
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	500
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9906
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			35
+		[POS]
+			20	-1	1
+		[WARNING MARK]
+			0	0	120	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9906
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			35
+		[POS]
+			-30	-1	1
+		[WARNING MARK]
+			0	0	160	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9906
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			35
+		[POS]
+			-80	-1	1
+		[WARNING MARK]
+			0	0	200	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

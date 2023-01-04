@@ -1,0 +1,164 @@
+#PVF_File
+
+[name]
+	`战栗粉碎者`
+
+[name2]
+	`Pulverizer of Shudder`
+
+[basic explain]
+	`攻击时， 有1%%的几率使敌人进入眩晕状态。
+跳跃攻击力 +10%%`
+
+[detail explain]
+	`攻击时， 有1%%的几率使敌人进入眩晕状态5秒。 (若敌人高于Lv60， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+跳跃攻击力 +10%%`
+
+[grade]
+	63
+
+[rarity]
+	5
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	69
+
+[attack speed]
+	-30
+
+[stuck]
+	-1
+
+[anti evil]
+	8
+
+[need material]
+	3228	60
+
+[repair price]
+	74088
+
+[value]
+	70560
+
+[equipment physical attack]
+	612	585
+
+[equipment magical attack]
+	528	505
+
+[separate attack]
+	314	212
+
+[icon]
+	`Item/weapon/swordman/club.img`	43
+
+[field image]
+	`Item/FieldImage.img`	8
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	7	0
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	7	0
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`STICK_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3400
+
+[item group name]
+	`club`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		7500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		2
+	[active status]
+		`stun`	60
+[/then]
+
+[if]
+	[my state]
+		`jump attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[possible kiri protect]

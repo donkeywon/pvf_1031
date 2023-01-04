@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack.ani`
+	[SOUND]
+		`DOLL_CAST`	0
+		`CLOCK_MON`	1
+	[/SOUND]
+	[SPEECH]
+		`别想躲开音波攻击~叮！`	0	100
+	[/SPEECH]
+	[SUB ANI]
+		`../Animation/streng_eff2.ani`	0	-1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[TARGET]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8017
+		[PARTICLE FILENAME]
+			`../Particle/spawn.ptl`
+		[LEVEL]
+			50
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

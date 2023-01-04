@@ -1,0 +1,139 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	2
+[/dungeon]
+
+[type]
+	`[normal]`
+
+[greed]
+	`NN EE`
+
+[tile]
+	`Tile/ForestOverUnder.til`
+	`Tile/ForestUnder.til`
+	`Tile/ForestUnder.til`
+	`Tile/ForestUnderOver.til`
+	`Tile/ForestOverUnder.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/far1.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/mid1.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	16	216	1104	216	533	157	560	348
+
+[sound]
+	`AMB_FOREST_01`
+	`M_FOREST_01_NEW`
+[/sound]
+
+[animation]
+	`Animation/smallTree0.ani`	`[close]`	886	488	0
+	`Animation/DeadTree0.ani`	`[close]`	268	483	0
+	`Animation/DeadTree1.ani`	`[close]`	467	563	0
+	`Animation/Flower1.ani`	`[normal]`	562	228	0
+	`Animation/Flower2.ani`	`[normal]`	402	179	0
+	`Animation/Stone1.ani`	`[normal]`	275	172	0
+	`Animation/Stone1.ani`	`[normal]`	726	158	0
+	`Animation/Stone1.ani`	`[bottom]`	512	188	0
+	`Animation/Grass1.ani`	`[bottom]`	800	200	0
+	`Animation/Grass2.ani`	`[bottom]`	525	234	0
+	`Animation/smallTree1.ani`	`[closeback]`	899	122	0
+	`Animation/smallTree1.ani`	`[closeback]`	433	150	0
+	`Animation/Tree0.ani`	`[closeback]`	619	141	0
+[/animation]
+
+[passive object]
+	5	150	150	0
+	6	330	230	500
+	5	650	190	0
+	6	830	270	500
+	5	1150	170	0
+	6	1330	250	500
+	244	631	187	0
+	243	661	190	0
+	243	297	215	0
+	221	324	216	0
+	244	342	221	0
+	244	712	225	0
+	244	636	226	0
+	244	371	239	0
+	243	316	247	0
+	243	394	248	0
+	244	585	255	0
+	243	256	258	0
+	243	310	283	0
+	244	464	287	0
+	243	230	289	0
+	221	274	294	0
+	244	374	303	0
+	244	307	329	0
+	244	474	343	0
+	221	303	344	0
+[/passive object]
+
+[monster]
+	2	1	0	526	219	0	1	1	`[fixed]`	`[normal]`
+	1	1	0	734	230	0	1	1	`[fixed]`	`[normal]`
+	2	1	0	352	281	0	1	1	`[fixed]`	`[normal]`
+	1	1	0	644	296	0	1	1	`[fixed]`	`[normal]`
+	1	1	0	789	312	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[special passive object]
+	221	292	247	0	1
+	`[monster]`	10	2	2	6	-1	
+[/special passive object]
+
+[event monster position]
+	425	203	0
+	459	268	0
+	545	268	0
+	651	207	0
+[/event monster position]
+
+[map name]
+	`PVP 无名`

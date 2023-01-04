@@ -1,0 +1,33 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/horn1.ani`
+	[SUB ANI]
+		`../animation/horn1_e.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`WATER_CREAT`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10212
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			50	0	120
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

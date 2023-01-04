@@ -1,0 +1,161 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`魔雷者麦瑟·莫纳亨`
+
+[face image]
+	`Monster/MonsterFace.img`	274
+
+[die effect]
+	0	1	1
+
+[ability table]
+	1
+
+[ability category]
+	`[HP MAX]`	`*`	430
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	150
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	150
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	150
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	150
+[/ability category]
+
+[category]
+	`[human]`
+	`[range combat]`
+	`[close-carefully]`
+[/category]
+
+[level]
+	30	60
+
+[slow resistance]
+	30	30
+
+[freeze resistance]
+	30	30
+
+[stun resistance]
+	30	30
+
+[curse resistance]
+	0	0
+
+[blind resistance]
+	30	30
+
+[stone resistance]
+	30	30
+
+[bleeding resistance]
+	0	0
+
+[confuse resistance]
+	30	30
+
+[hold resistance]
+	30	30
+
+[burn resistance]
+	0	0
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	800	800
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	80000	80000
+
+[warlike]
+	50
+
+[vision]
+	600
+
+[stuckbonus on damage]
+	3	3	3	3
+
+[hp regen rate]
+	0.0	0.0
+
+[lie frame]
+	2	2	3	3	4
+
+[appear sound]
+	`MONAHUN_MEET`
+
+[damage sound]
+	`R_MONAHUN_DMG`
+
+[die sound]
+	`MONAHUN_DIE`
+
+[ambient sound]
+	`MONAHUN_AMB`
+
+[waiting action]
+	`action/Stay.act`
+
+[move action]
+	`action/move.act`
+
+[sit action]
+	`action/Sit.act`
+
+[damage action 1]
+	`action/Damage1.act`
+
+[damage action 2]
+	`action/Damage2.act`
+
+[down action]
+	`action/Down.act`
+
+[overturn action]
+	`action/Overturn.act`
+
+[attack action]
+	`Action/throw.act`
+	`Action/shock.act`
+	`Action/timestop.act`
+	`Action/airwalk.act`
+	`Action/bal.act`
+	`Action/comein.act`
+[/attack action]
+
+[attack info]
+	`attackinfo/throw.atk`
+	``
+	``
+	``
+	`attackinfo/bal.atk`
+	``
+[/attack info]
+
+[cooltime]
+	1000	20000	15000	5000	1500	10000000
+[/cooltime]
+
+[think term]
+	300
+
+[destination change term]
+	400
+
+[keep distance with target]
+	250
+
+[ai pattern]
+	`ai/Event.ai`
+	`ai/DestinationSelectFriend.ai`
+	`ai/ActionFriend.ai`
+	`ai/MoveMethod.ai`
+[/ai pattern]

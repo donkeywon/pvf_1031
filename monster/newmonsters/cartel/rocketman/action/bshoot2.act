@@ -1,0 +1,82 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/BShoot2.ani`
+	[SUB ANI]
+		`../Animation/BShoot2_Fire3_1.ani`	0	-11
+		`../Animation/BShoot2_Fire2_1.ani`	0	-5
+		`../Animation/BShoot2_Fire1_1.ani`	0	-5
+		`../Animation/BShoot2_Floor.ani`	0	0
+		`../Animation/BShoot2_Fire3_2.ani`	0	8
+		`../Animation/BShoot2_Fire2_2.ani`	0	15
+		`../Animation/BShoot2_Fire1_2.ani`	0	17
+	[/SUB ANI]
+	[SOUND]
+		`R_MISSILEA`	3
+		`R_MISSILEA`	4
+		`R_MISSILEA`	5
+		`R_MISSILEA`	6
+		`ROCKETMAN_SKILL_03`	1
+	[/SOUND]
+	[SPEECH]
+		`地毯式轰炸！！`	1	0
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8171
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	90
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

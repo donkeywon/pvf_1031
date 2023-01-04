@@ -1,0 +1,121 @@
+#PVF_File
+
+[name]
+	`(旧) 血灵暗咒胸甲`
+
+[name2]
+	`Beinen Fluch Coat`
+
+[flavor text]
+	`那些含冤死去的动物， 有时会喷出诅咒之血。`
+
+[grade]
+	20
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	18
+
+[physical attack]
+	11
+
+[magical attack]
+	7
+
+[HP MAX]
+	140
+
+[MP MAX]
+	50
+
+[price]
+	18000
+
+[repair price]
+	14400
+
+[value]
+	14400
+
+[equipment physical defense]
+	828	756
+
+[dark resistance]
+	5
+
+[icon]
+	`Item/common/coat.img`	22
+
+[field image]
+	`Item/field_equip.img`	5
+
+[equipment type]
+	`[coat]`	19
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3100
+
+[item group name]
+	`la coat`
+
+[cool time]
+	10000
+
+[set name]
+	`血灵暗咒轻甲  套装`
+
+[set item]
+	10816	12816	14814	16813	18813
+[/set item]
+
+[set ability]
+	[dark resistance]
+		10
+	[curse resistance]
+		-20
+	[if]
+		[cooltime]
+			1000
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			20000
+		[probability]
+			5
+		[reduce probability to human armor at pvp module]
+			76
+		[active status]
+			`curse`	18	12	12	12	12
+	[/then]
+	[fullset basic explain]
+		`被攻击时， 有5%%的几率使敌人进入诅咒状态。`
+	[fullset detail explain]
+		`被攻击时， 有5%%的几率使敌人进入诅咒状态20秒； 诅咒状态下的敌人， 将减少12点力量、 体力、 智力和精神。 (若敌人高于Lv18， 则减少进入异常状态的几率； 反之， 则增加几率)`
+[/set ability]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,148 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/MakeHand/MakeHand_02_Body.ani`
+	[SUB ANI]
+		`../Animation/MakeHand/MakeHand_03_BodyFire_02.ani`	0	-2
+		`../Animation/MakeHand/MakeHand_03_BodyFire_01.ani`	0	-1
+		`../Animation/MakeHand/MakeHand_02_body_dodge.ani`	0	1
+		`../Animation/MakeHand/MakeHand_00_headt.ani`	0	2
+		`../Animation/MakeHand/MakeHand_01_headt_dodge.ani`	0	3
+		`../Animation/MakeHand/MakeHand_00_Fire_dodge.ani`	0	4
+		`../Animation/MakeHand/MakeHand_00_headb.ani`	0	5
+		`../Animation/MakeHand/MakeHand_00_headb_dodge.ani`	0	6
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			54071
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			54072
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`Stay.act`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CHANGE AI]
+	[EASY]
+		2
+		`Action.ai`
+	[CHANGE AI]
+	[MEDIUM]
+		2
+		`Action.ai`
+	[CHANGE AI]
+	[HARD]
+		2
+		`Action.ai`
+	[CHANGE AI]
+	[ULTIMATE]
+		2
+		`Action.ai`
+	[CHANGE AI]
+	[HERO]
+		2
+		`Action.ai`
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54071
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			130	75	0
+		[USE MY BASEPOS]
+		[FIX DIRECTION]
+		[RIGHT]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		2
+	[OFF]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54072
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-130	75	0
+		[USE MY BASEPOS]
+		[FIX DIRECTION]
+		[RIGHT]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

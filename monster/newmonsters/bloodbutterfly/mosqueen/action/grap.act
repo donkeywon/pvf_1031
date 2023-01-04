@@ -1,0 +1,118 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Grap.ani`
+	[SPEECH]
+		`成为我的奴隶吧~`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		0
+	[WHICH]
+	[LAST ACTIVE ATTACKSUCCESS]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			300
+		[HP]
+		[>]
+			0
+		[POINT]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[ON]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Y AXIS]
+			0
+		[Z AXIS]
+			0
+		[NOT USE DIRECTION]
+	[/SET SPEED]
+	[SET POS FORCE]
+		[X START]
+			10
+		[X END]
+			10
+		[Y START]
+			-5
+		[Y END]
+			-5
+		[USE MY DIRECTION]
+		[USE MY BASEPOS]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		6	12
+	[WHICH]
+	[LAST ACTIVE ATTACKSUCCESS]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			400
+		[HP]
+		[>]
+			0
+		[POINT]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[SET POS FORCE]
+		[X START]
+			10
+		[X END]
+			10
+		[Y START]
+			-5
+		[Y END]
+			-5
+		[USE MY DIRECTION]
+		[USE MAP POS]
+	[/SET POS FORCE]
+	[SET POS FORCE]
+		[Z START]
+			0
+		[Z END]
+			0
+		[USE MY DIRECTION]
+		[USE MAP POS]
+	[/SET POS FORCE]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10052
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			40
+		[POS]
+			0	-5	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

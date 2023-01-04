@@ -1,0 +1,49 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/hammerkick.ani`
+	[SUB ANI]
+		`../animation/hammerkick_e1.ani`	0	1
+		`../animation/hammerkick_e.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`流星坠地！`	1	10
+	[/SPEECH]
+	[SOUND]
+		`R_NENKWON_ATK_04`	0
+		`CHASERP_CRASH`	8
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[GET TARGET]
+			1
+		[RANDOM]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	500
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10487
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[WARNING MARK]
+			0	0	180	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

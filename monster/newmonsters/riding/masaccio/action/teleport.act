@@ -1,0 +1,84 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Teleport.ani`
+	[SUB ANI]
+		`../Animation/Weapon/Teleport.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`GROUNDKICK_READY`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS TEAM]
+			[MONSTER TEAM]
+		[/IS TEAM]
+	[/CHECKUP]
+	[GET TARGET]
+		1
+	[DISTANCE]
+	[HIGH]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+			0	0	350
+		[MOVE ME]
+	[/TELEPORT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS TEAM]
+			[MONSTER TEAM]
+		[/IS TEAM]
+		[DISTANCE]
+		[=>]
+			25
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS TEAM]
+			[MONSTER TEAM]
+		[/IS TEAM]
+		[DISTANCE]
+		[<]
+			25
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		9
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		8
+	[NOW]
+[/BEHAVIOR]

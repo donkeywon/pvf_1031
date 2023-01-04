@@ -1,0 +1,49 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Order3.ani`
+	[SUB ANI]
+		`../animation/wp/Order3.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`GRIGUN_SKILL_05`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`G - 探测器！！封锁敌人路线！`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61134
+		[LEVEL]
+			0
+		[POS]
+			0	0	100
+		[NO EFFECT]
+		[TEAM]
+			100
+		[SUMMON TIME]
+			15000
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

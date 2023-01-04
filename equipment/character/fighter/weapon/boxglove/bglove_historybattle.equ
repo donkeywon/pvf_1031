@@ -1,0 +1,197 @@
+#PVF_File
+
+[name]
+	`远古逆袭之卡其布拳套`
+
+[name2]
+	`Hearns of Historical Battle`
+
+[basic explain]
+	`攻击速度 +1%%
+攻击时， 有2%%的几率使敌人进入眩晕状态。
+攻击时， 有2%%的几率使自身增加30点力量， 效果持续30秒。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态2秒； 但在决斗场中， 只能持续1秒。 (若敌人高于Lv55， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击时， 有2%%的几率使自身增加20点力量， 效果持续30秒。
+攻击速度 +1%%`
+
+[flavor text]
+	`蕴含远古战争英雄之灵魂的稀有武器。`
+
+[grade]
+	59
+
+[rarity]
+	2
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[physical attack]
+	44
+
+[attack speed]
+	110
+
+[cast speed]
+	10
+
+[move speed]
+	10
+
+[price]
+	94400
+
+[repair price]
+	79296
+
+[value]
+	75520
+
+[equipment physical attack]
+	533	517
+
+[equipment magical attack]
+	483	467
+
+[separate attack]
+	256	173
+
+[skill levelup]
+	`[fighter]`	37	1
+	`[fighter]`	82	1
+	`[at fighter]`	37	1
+	`[at fighter]`	82	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/bglove.img`	32
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	4	0
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	4	0
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[icon mark]
+	`Item/IconMark.img`	22
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`stun`	55
+[/then]
+
+[if]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`physical attack`
+		`+`	30
+[/then]
+
+[possible kiri protect]

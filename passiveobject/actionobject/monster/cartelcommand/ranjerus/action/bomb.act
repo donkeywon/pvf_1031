@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/bomb.ani`
+	[SUB ANI]
+		`../animation/bomb1.ani`	0	-1
+		`../animation/bomb2.ani`	0	-2
+		`../animation/bomb3.ani`	0	-3
+		`../animation/bomb4.ani`	0	-4
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ATTACKINFO]
+		`../AttackInfo/JeffMissileEXP2.atk`
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

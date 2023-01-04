@@ -1,0 +1,49 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/2samuel_magma4.ani`
+	[SUB ANI]
+		`../animation/2samuel_magma3.ani`	0	1
+		`../animation/2samuel_magma2.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			8000
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DELETE APPENDAGE]
+		2000	
+		[move speed]
+		[%]
+			-50.0
+	[/DELETE APPENDAGE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

@@ -1,0 +1,30 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Reload_2.ani`
+	[SPEECH]
+		`准备填装手雷！！`	0	100
+	[/SPEECH]
+	[SOUND]
+		`SUBWEAPON_RELOAD`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[ATTACK]
+		0	0
+	[ON]
+	[TRIGGER]
+	[ATTACK]
+		0	1
+	[ON]
+[/BEHAVIOR]

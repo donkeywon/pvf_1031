@@ -1,0 +1,139 @@
+#PVF_File
+
+[name]
+	`莫贝尼的黑鳞图腾`
+
+[name2]
+	`找不到代码name2_35703`
+
+[basic explain]
+	`施放[意念驱动]时， 使350px范围内的所有敌人受到火焰爆炸伤害。
+施放[落凤锤]时， 会出现火焰爆炸。
+无法进行分解。`
+
+[detail explain]
+	`施放[意念驱动]时， 使350px范围内的所有敌人受到火焰爆炸伤害。 (在决斗场中几率为5%%)
+施放[落凤锤]时， 会出现火焰爆炸。 (在决斗场中几率为5%%)
+无法进行分解。`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	65
+
+[physical attack]
+	69
+
+[stuck]
+	-1
+
+[need material]
+	3337	420
+
+[repair price]
+	92736
+
+[value]
+	88320
+
+[equipment physical attack]
+	687	634
+
+[equipment magical attack]
+	589	544
+
+[separate attack]
+	389	264
+
+[icon]
+	`Item/weapon/priest/totem.img`	69
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	21	0
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[if]
+	[event use skill]
+		`priest`	13
+[/if]
+
+[then]
+	[target]
+		`all enemy`	350
+	[probability]
+		100
+	[reduce probability to human armor at pvp module]
+		95
+	[passive object]
+		48146	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[routing priority]
+	`priest`	2
+	`priest`	3
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

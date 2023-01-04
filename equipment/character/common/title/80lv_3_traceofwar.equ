@@ -1,0 +1,71 @@
+#PVF_File
+
+[name]
+	`暗黑圣战`
+
+[name2]
+	``
+
+[explain]
+	`攻击恶魔族敌人时， 附加300点伤害。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	440
+
+[custom animation]
+	`TitleAnimation/traceofwar.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move speed]
+	10
+
+[attack speed]
+	30
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[target type]
+		`devil`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`+`	300
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

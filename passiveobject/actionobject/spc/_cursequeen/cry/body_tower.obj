@@ -1,0 +1,64 @@
+#PVF_File
+
+[width]
+	0	0
+
+[floating height]
+	50
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	1000
+
+[basic action]
+	`Action/body_Tower.act`
+
+[attack info]
+	`AttackInfo/attack.atk`
+
+[add particles]
+	[particle]
+		[file]
+			`Particle/belzebuite_overskill_part.ptl`
+		[create delay]
+			200
+	[/particle]
+	[particle]
+		[file]
+			`Particle/belzebuite_overskill_inazuma.ptl`
+		[create delay]
+			200
+	[/particle]
+	[particle]
+		[file]
+			`Particle/belzebuite_overskill_exp.ptl`
+		[create delay]
+			1200
+		[create sound]
+			`BELZEBUITE_SKILL_CRASH`
+	[/particle]
+	[particle]
+		[file]
+			`Particle/belzebuite_overskill_dark.ptl`
+		[create delay]
+			200
+	[/particle]
+[/add particles]
+
+[team]
+	100
+
+[sound category]
+	`[after object create]`
+	`FT_AVATAR_HORROR_03`	-1
+[/sound category]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	4500
+[/object destroy condition]

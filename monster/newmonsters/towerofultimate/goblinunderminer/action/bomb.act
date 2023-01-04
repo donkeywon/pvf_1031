@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Sit2.ani`
+	[SPEECH]
+		`看我的超级爆弹！！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		2000	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10034
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			60
+		[POS]
+			30	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

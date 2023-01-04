@@ -1,0 +1,134 @@
+#PVF_File
+
+[name]
+	`贤者的智慧护肩`
+
+[name2]
+	`Hiding Wisdom Shoulder of Wise Person`
+
+[grade]
+	58
+
+[rarity]
+	5
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[magical attack]
+	29
+
+[magical defense]
+	24
+
+[hit recovery]
+	8
+
+[anti evil]
+	4
+
+[need material]
+	3228	38
+
+[repair price]
+	25578
+
+[value]
+	23200
+
+[equipment physical defense]
+	504	480
+
+[icon]
+	`Item/common/shoulder.img`	30
+
+[field image]
+	`Item/field_equip.img`	2
+
+[equipment type]
+	`[shoulder]`	15
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	21
+
+[weight]
+	800
+
+[item group name]
+	`cl shoulder`
+
+[cool time]
+	10000
+
+[set name]
+	`贤者的智慧  套装`
+
+[set item]
+	20120	22115	24125	10134	12131	14118	18115	16108
+[/set item]
+
+[piece set ability]
+	3	
+	[MP MAX]
+		500
+	[magical critical hit]
+		3
+[/piece set ability]
+
+[piece set ability]
+	5	
+	[MP regen speed]
+		14
+	[attack speed]
+		20
+[/piece set ability]
+
+[piece set ability]
+	8	
+	[cast speed]
+		50
+	[if]
+		[target type]
+			`human`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[if]
+		[target type]
+			`undead`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[parameter basic explain]
+		`对人型怪敌人的伤害 +10%%
+对不死族敌人的伤害 +10%%`
+[/piece set ability]
+
+[possible kiri protect]

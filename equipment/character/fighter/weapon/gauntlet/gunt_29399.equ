@@ -1,0 +1,170 @@
+#PVF_File
+
+[name]
+	`精良的猎食者的咆哮`
+
+[name2]
+	`Screaming Eater`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入出血状态， 并增加自身的力量和物理暴击率。
+
+无法进行分解、 封装和合成。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入出血状态12秒， 出血状态下的敌人， 每0.5秒受到40点伤害； 并且还会使自身增加15点力量和10%%的物理暴击率， 效果持续12秒。 (若敌人高于Lv62， 则减少进入异常状态的几率； 反之， 则增加几率)
+
+无法进行分解、 封装和合成。`
+
+[grade]
+	65
+
+[rarity]
+	5
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	62
+
+[physical attack]
+	69
+
+[attack speed]
+	-80
+
+[stuck]
+	-1
+
+[anti evil]
+	8
+
+[price]
+	0
+
+[repair price]
+	84672
+
+[value]
+	0
+
+[equipment physical attack]
+	686	658
+
+[equipment magical attack]
+	515	493
+
+[separate attack]
+	324	219
+
+[icon]
+	`Item/weapon/fighter/gauntlet.img`	38
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	4	0
+
+[layer variation]
+	2790
+	`gauntletc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gauntletb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	4	0
+
+[layer variation]
+	2150
+	`at_gauntleta`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_gauntletc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_gauntletx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		18000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		12000
+	[probability]
+		2
+	[active status]
+		`bleeding`	62	1250
+	[target]
+		`myself`	-1
+	[stat]
+		`physical attack`
+		`+`	15
+	[stat]
+		`physical critical hit rate`
+		`+`	10
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]

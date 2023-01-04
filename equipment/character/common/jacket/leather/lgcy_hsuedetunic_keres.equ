@@ -1,0 +1,161 @@
+#PVF_File
+
+[name]
+	`传承 : 神圣的控魂女神狼皮长袍`
+
+[name2]
+	`Legacy : Holy Suede Tunic of Keres`
+
+[grade]
+	62
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	60
+
+[physical attack]
+	40
+
+[magical attack]
+	25
+
+[magical defense]
+	14
+
+[price]
+	49600
+
+[repair price]
+	43747
+
+[value]
+	39680
+
+[equipment physical defense]
+	1560	1512
+
+[skill levelup]
+	`[gunner]`	9	1
+	`[gunner]`	53	1
+	`[at gunner]`	9	1
+	`[at gunner]`	53	1
+	`[mage]`	10	1
+	`[mage]`	105	1
+	`[at mage]`	32	1
+	`[thief]`	34	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/common/coat.img`	228
+
+[field image]
+	`Item/FieldImage.img`	0
+
+[equipment type]
+	`[coat]`	18
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	33
+
+[weight]
+	1900
+
+[item group name]
+	`lt coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 神圣的控魂女神的狼皮战甲  套装`
+
+[set item]
+	10536	12533	14523	16522	18532
+[/set item]
+
+[set ability]
+	[HP MAX]
+		220
+	[MP MAX]
+		220
+	[physical attack]
+		90
+	[magical attack]
+		90
+	[equipment physical defense]
+		400	400
+	[water resistance]
+		10
+	[HP regen speed]
+		35
+	[MP regen speed]
+		7
+	[move speed]
+		15
+	[attack speed]
+		35
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福增加自身7%%的攻击速度和施放速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`attack speed`
+			`+`	70
+		[stat by condition]
+			`cast speed`
+			`+`	70
+	[/then]
+	[skill levelup]
+		`[gunner]`	5	2
+		`[gunner]`	60	1
+		`[at gunner]`	5	2
+		`[at gunner]`	60	1
+		`[gunner]`	1	2
+		`[gunner]`	57	1
+		`[at gunner]`	1	2
+		`[at gunner]`	57	1
+		`[mage]`	9	2
+		`[mage]`	68	1
+		`[mage]`	99	2
+		`[mage]`	106	1
+		`[at mage]`	21	2
+		`[at mage]`	12	1
+		`[thief]`	31	2
+		`[thief]`	9	1
+	[/skill levelup]
+[/set ability]
+
+[possible kiri protect]

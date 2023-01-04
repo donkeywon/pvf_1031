@@ -1,0 +1,203 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/WallLoop/MineralWall_Effect_0_W_Wall0_0.ani`
+	[SUB ANI]
+		`../Animation/WallLoop/MineralWall_Floor_magiccircle4.ani`	0	-7
+		`../Animation/WallLoop/MineralWall_Floor_magiccircle3.ani`	0	-6
+		`../Animation/WallLoop/MineralWall_Floor_magiccircle6.ani`	0	-5
+		`../Animation/WallLoop/MineralWall_Floor_magiccircle5.ani`	0	-4
+		`../Animation/WallLoop/MineralWall_Floor_magiccircle1.ani`	0	-3
+		`../Animation/WallLoop/MineralWall_Floor_magiccircle0.ani`	0	-2
+		`../Animation/WallLoop/MineralWall_C_M_Circle.ani`	0	-1
+		`../Animation/WallLoop/MineralWall_Effect_0_W_Wall0_1.ani`	0	1
+		`../Animation/WallLoop/MineralWall_Effect_0_W_Wall0_2.ani`	0	2
+		`../Animation/WallLoop/MineralWall_Effect_0_W_Wall0_3.ani`	0	3
+		`../Animation/WallLoop/MineralWall_Effect_0_W_Wall0_4.ani`	0	4
+		`../Animation/WallLoop/MineralWall_Effect_0_W_Wall0_5.ani`	0	5
+		`../Animation/WallLoop/MineralWall_Effect_0_W_Wall0_6.ani`	0	6
+		`../Animation/WallLoop/MineralWall_Effect_0_W_Wall0_7.ani`	0	7
+		`../Animation/WallLoop/MineralWall_Effect_0_W_Wall0_8.ani`	0	8
+		`../Animation/WallLoop/MineralWall_Effect_0_W_Wall0_9.ani`	0	9
+		`../Animation/WallLoop/MineralWall_Effect_0_W_Wall0_10.ani`	0	10
+		`../Animation/WallLoop/MineralWall_Effect_0_W_Wall1_0.ani`	0	11
+		`../Animation/WallLoop/MineralWall_Effect_0_W_Wall1_1.ani`	0	12
+		`../Animation/WallLoop/MineralWall_Effect_0_W_Wall1_2.ani`	0	13
+		`../Animation/WallLoop/MineralWall_Effect_0_W_Wall1_3.ani`	0	14
+		`../Animation/WallLoop/MineralWall_Effect_0_W_Wall1_4.ani`	0	15
+		`../Animation/WallLoop/MineralWall_Effect_0_W_Wall1_5.ani`	0	16
+		`../Animation/WallLoop/MineralWall_Effect_0_W_Wall1_6.ani`	0	17
+		`../Animation/WallLoop/MineralWall_Effect_0_W_Wall1_7.ani`	0	18
+		`../Animation/WallLoop/MineralWall_Effect_0_W_Wall1_8.ani`	0	19
+		`../Animation/WallLoop/MineralWall_Effect_0_W_Wall1_9.ani`	0	20
+		`../Animation/WallLoop/MineralWall_Effect_0_W_Wall1_10.ani`	0	21
+		`../Animation/WallLoop/MineralWall_glow.ani`	0	22
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[=<]
+			70
+		[%]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54089
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	1	0
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54090
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	1	0
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		0
+	[OFF]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[=<]
+			30
+		[%]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		2
+	[ON]
+	[TRIGGER]
+		3
+	[ON]
+	[TRIGGER]
+		4
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			54089
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+	[TRIGGER]
+		2
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			54090
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+	[TRIGGER]
+		3
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[=<]
+			0
+		[%]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		20	30	20	255	255	255	255
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET POSITION HP GAUGE]
+		0	-200	-100
+	[TRIGGER]
+		5
+	[OFF]
+[/BEHAVIOR]

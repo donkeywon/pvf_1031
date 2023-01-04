@@ -1,0 +1,252 @@
+#PVF_File
+
+[name]
+	`旋风腿`
+
+[name2]
+	`Cyclone Spin`
+
+[explain]
+	`在原地快速旋转身体并用连续的扫腿攻击周围的敌人； 可以在地面或空中使用， 对命中的敌人有吸附效果。
+施放后不能移动， 可以按跳跃键中断技能。`
+
+[basic explain]
+	`在原地快速旋转身体并用连续的扫腿攻击周围的敌人。`
+
+[executable states]
+	8
+[/executable states]
+
+[purchase cost]
+	30
+[/purchase cost]
+
+[required level]
+	30
+
+[required level range]
+	2
+
+[type]
+	`[active]`
+
+[skill class]
+	3
+
+[maximum level]
+	70
+
+[growtype maximum level]
+	50	50	50	50	50	50
+
+[skill fitness growtype]
+	0	1	2	3	4
+[/skill fitness growtype]
+
+[durability decrease rate]
+	30
+
+[weapon effect type]
+	`[physical]`
+
+[icon]
+	`Character/Fighter/Effect/SkillIcon.img`	128
+	`Character/Fighter/Effect/SkillIcon.img`	129
+
+[shake screen]
+	2	200
+
+[command]
+	{6=`(LEFT)`}
+	{8=`,`}
+	{6=`(DOWN)`}
+	{8=`,`}
+	{6=`(RIGHT)`}
+	{8=`,`}
+	{6=`(JUMP)`}
+[/command]
+
+[command key explain]
+	`操作指令 : ←↓→ + C`
+
+[dungeon]
+	[consume MP]
+		50	420
+	[cool time]
+		8000	8000
+	[static data]
+		0	0
+	[/static data]
+	[level info]
+		2
+		226	4
+		249	4
+		274	4
+		297	4
+		320	4
+		343	4
+		367	4
+		390	4
+		414	4
+		437	4
+		461	5
+		484	5
+		507	5
+		531	5
+		554	5
+		578	5
+		601	5
+		624	5
+		648	5
+		672	5
+		695	6
+		718	6
+		741	6
+		765	6
+		789	6
+		812	6
+		835	6
+		859	6
+		882	6
+		906	6
+		929	7
+		952	7
+		976	7
+		999	7
+		1023	7
+		1046	7
+		1070	7
+		1093	7
+		1116	7
+		1139	7
+		1164	8
+		1187	8
+		1210	8
+		1233	8
+		1256	8
+		1281	8
+		1304	8
+		1327	8
+		1350	8
+		1374	8
+		1397	9
+		1421	9
+		1444	9
+		1468	9
+		1491	9
+		1514	9
+		1538	9
+		1561	9
+		1585	9
+		1608	9
+		1632	10
+		1655	10
+		1678	10
+		1702	10
+		1725	10
+		1749	10
+		1772	10
+		1795	10
+		1819	10
+		1842	10
+	[/level info]
+[/dungeon]
+
+[pvp]
+	[cool time]
+		10000	10000
+	[level info]
+		2
+		40	4
+		45	4
+		49	4
+		53	4
+		57	4
+		61	4
+		65	4
+		70	4
+		74	4
+		78	4
+		82	5
+		86	5
+		90	5
+		95	5
+		99	5
+		103	5
+		107	5
+		111	5
+		115	5
+		120	5
+		124	6
+		128	6
+		132	6
+		136	6
+		141	6
+		145	6
+		149	6
+		153	6
+		157	6
+		161	6
+		166	7
+		170	7
+		174	7
+		178	7
+		182	7
+		186	7
+		191	7
+		195	7
+		199	7
+		203	7
+		207	8
+		211	8
+		216	8
+		220	8
+		224	8
+		228	8
+		232	8
+		237	8
+		241	8
+		245	8
+		249	8
+		253	9
+		257	9
+		262	9
+		266	9
+		270	9
+		274	9
+		278	9
+		282	9
+		287	9
+		291	9
+		295	10
+		299	10
+		303	10
+		307	10
+		312	10
+		316	10
+		320	10
+		324	10
+		328	10
+	[/level info]
+[/pvp]
+
+[death tower]
+[/death tower]
+
+[warroom]
+[/warroom]
+
+[level property]
+	1	99
+	`物理攻击力 : <int>%%
+攻击次数 : <int>次`
+	-1	0	1.0
+	-1	1	1.0
+[/level property]
+
+[skill preloading image]
+	`Character/Fighter/Effect/WhirlWindKick.img`
+[/skill preloading image]
+
+[feature skill index]
+	129

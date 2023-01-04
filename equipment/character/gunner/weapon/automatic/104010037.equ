@@ -1,0 +1,160 @@
+#PVF_File
+
+[name]
+	`夜之独行者`
+
+[basic explain]
+	`攻击时， 有6%%的几率在前方发动帕特里斯的闪电。 (在决斗场中无效)
+无法进行分解。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[magical attack]
+	55
+
+[stuck]
+	1
+
+[MP MAX]
+	300
+
+[need material]
+	3339	1000
+
+[repair price]
+	112896
+
+[value]
+	107520
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	527	482
+
+[equipment magical attack]
+	773	707
+
+[separate attack]
+	481	327
+
+[light attack]
+	18
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/automatic/automatic.img`	93
+
+[field image]
+	`Item/field_weapon.img`	2
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	22	0
+
+[layer variation]
+	2790
+	`autoc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`autob`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	22	0
+
+[layer variation]
+	2790
+	`at_autoc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_autob`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	1500
+
+[item group name]
+	`automatic`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[routing priority]
+	`gunner`	3
+	`at gunner`	3
+	`gunner`	4
+	`at gunner`	4
+[/routing priority]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		6
+	[passive object]
+		48230	0	0	0	84	0	``
+	[/passive object]
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

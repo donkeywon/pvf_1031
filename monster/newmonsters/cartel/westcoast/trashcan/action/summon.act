@@ -1,0 +1,57 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Summon.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		10	12
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`bStay.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`bDamage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`bDamage2.act`
+	[CHANGE ACTION FILE]
+	[OVERTURN]
+		`bOverTurn.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		`bDown.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`bSit.act`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			1
+		[LEVEL]
+			0
+		[POS]
+			0	0	80
+		[JUMP OUT]
+		[RANDOM]
+			-200	200
+		[RANDOM]
+			-50	50
+		[RANDOM]
+			30	31
+		[LEFT]
+		[UP]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

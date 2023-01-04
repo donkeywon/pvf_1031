@@ -1,0 +1,117 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/floor02.ani`
+	[SUB ANI]
+		`../Animation/floor02_effect05.ani`	0	0
+		`../Animation/floor02_Lsword01.ani`	0	0
+		`../Animation/floor02_effect02.ani`	0	0
+		`../Animation/floor02_Lsword00.ani`	0	0
+		`../Animation/floor02_effect01.ani`	0	0
+		`../Animation/floor02_effect03.ani`	0	0
+		`../Animation/floor02_effect00.ani`	0	0
+		`../Animation/floor02_effect04.ani`	0	0
+		`../Animation/floor02_effect06.ani`	0	0
+		`../Animation/floor02_effect07.ani`	0	0
+		`../Animation/floor02_effect08.ani`	0	0
+		`../Animation/floor02_effect09.ani`	0	0
+		`../Animation/floor02_effect10.ani`	0	0
+		`../Animation/floor02_effect11.ani`	0	0
+		`../Animation/floor02_effect12.ani`	0	0
+		`../Animation/floor02_effect13.ani`	0	0
+		`../Animation/floor02_effect14.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+	[CHANGE ATTACKINFO]
+		`../AttackInfo/floor_AirSword1.atk`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			11018
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			11019
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			11020
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		100	100	0	150	0	0	0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		0	200	100	200	255	255	255
+	[SHAKING]
+		2	1000
+[/BEHAVIOR]

@@ -1,0 +1,57 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AttackNormal.ani`
+	[SUB ANI]
+		`../Animation/equipment/AttackNormal.ani`	0	0
+		`../Animation/Eye/AttackNormal.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`挖掘！！`	5	60
+	[/SPEECH]
+	[SOUND]
+		`B_ROBBER_ATK_02`	1
+		`R_ROBBER_HOE`	2
+		`ROBBER_HOE_STUCK`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8630
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			60	0	0
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+	[RANDOM SELECT]
+		5	1	1
+	[/RANDOM SELECT]
+	[END]
+[/BEHAVIOR]

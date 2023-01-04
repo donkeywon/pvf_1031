@@ -1,0 +1,56 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Cube_1.ani`
+	[SUB ANI]
+		`../Animation/Cube_2.ani`	0	-10
+		`../Animation/CubeB_2_Effect.ani`	0	-9
+		`../Animation/Cube_ball1_1.ani`	0	-5
+		`../Animation/CubeB_Ball_Effect.ani`	0	-4
+		`../Animation/CubeB_Ball_Effect1.ani`	0	-3
+		`../Animation/CubeB_1_Effect.ani`	0	0
+		`../Animation/CubeB_1_Effect.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[FRAME]
+		0	0
+	[ON DAMAGE]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14114	14115	14116	14117
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			95
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		2
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			95
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

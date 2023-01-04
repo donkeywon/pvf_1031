@@ -1,0 +1,45 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AttackChangeTeam/Body.ani`
+	[SUB ANI]
+		`../Animation/AttackChangeTeam/Jaw.ani`	0	1
+		`../Animation/AttackChangeTeam/Head.ani`	0	2
+		`../Animation/AttackChangeTeam/Eye_Dodge.ani`	0	3
+		`../Animation/AttackChangeTeam/Start_Back_Dodge.ani`	0	4
+		`../Animation/AttackChangeTeam/Start_Core_Dodge.ani`	0	5
+		`../Animation/AttackChangeTeam/Start_Floor_Dodge.ani`	0	6
+		`../Animation/AttackChangeTeam/Start_Head_Dodge.ani`	0	7
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[GET TARGET]
+			1
+		[RANDOM]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54042
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[USE MY BASEPOS]
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

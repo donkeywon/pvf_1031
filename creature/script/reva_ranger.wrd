@@ -1,0 +1,19 @@
+#PVF_File
+
+[ambient]
+	[all]
+		`Creature/Reva/Ranger/talk_stand1.ani`
+		`Creature/Reva/Ranger/talk_stand2.ani`
+	[/all]
+[/ambient]
+
+[trigger]
+	[all]
+		[using skill]
+			`Creature/Reva/Ranger/talk_skill.ani`
+		[/using skill]
+		[state special]
+			`Creature/Reva/Ranger/talk_random.ani`
+		[/state special]
+	[/all]
+[/trigger]

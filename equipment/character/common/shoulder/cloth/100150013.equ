@@ -1,0 +1,172 @@
+#PVF_File
+
+[name]
+	`卡勒特的火炮师绒布护肩`
+
+[basic explain]
+	`跳跃状态下， 每秒增加20点力量和智力， 效果持续5秒。 (最多重叠5次)
+跳跃时， 增加100%的移动速度， 效果持续0.5秒。 (冷却时间10秒)
+施放[跃翔]时， 增加5%%的武器物理/魔法攻击力， 该效果的持续时间与[跃翔]技能的持续时间相同。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[magical attack]
+	33
+
+[magical defense]
+	33
+
+[move speed]
+	20
+
+[price]
+	50400
+
+[repair price]
+	42336
+
+[value]
+	40320
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	728	688
+
+[icon]
+	`Item/new_equipment/02_cloth/neck/cloth_neck.img`	11
+
+[field image]
+	`Item/field_equip.img`	2
+
+[equipment type]
+	`[shoulder]`	16
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	21
+
+[weight]
+	800
+
+[item group name]
+	`cl shoulder`
+
+[cool time]
+	10000
+
+[jump power]
+	30
+
+[if]
+	[my state]
+		`jump`
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		5000
+	[appendage]
+		210
+[/then]
+
+[if]
+	[my state]
+		`jump`
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		500
+	[stat]
+		`move speed`
+		`%`	100
+[/then]
+
+[if]
+	[event use skill]
+		`common`	175
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill duration]
+		175
+		`[cooltime]`	0
+	[appendage]
+		211
+[/then]
+
+[if]
+	[my state]
+		`jump`
+	[my appendage]
+		211
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	5
+[/then]
+
+[if]
+	[my state]
+		`jump attack`
+	[my appendage]
+		211
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	5
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

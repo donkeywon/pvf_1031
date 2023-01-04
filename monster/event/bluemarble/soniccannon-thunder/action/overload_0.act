@@ -1,0 +1,47 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Overload_0.ani`
+	[SOUND]
+		`P_SJH`	0
+	[/SOUND]
+	[SUB ANI]
+		`../Animation/Body_Effect/redbody_Overload_0.ani`	0	0
+		`../Animation/Effect/OverHeat_0.ani`	0	0
+		`../Animation/Effect/OverHeat2_0.ani`	0	0
+		`../Animation/Effect/OverHeat3_0.ani`	0	0
+		`../Animation/Effect/OverHeat4_0.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`overload_stay_0.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`overload_Move_0.act`
+	[CHANGE ACTION FILE]
+	[MOVEBACK]
+		`overload_Move_Back_0.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		`overload_damage_0.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		`overload_damage_0.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		`overload_Attack_0.act`
+[/BEHAVIOR]

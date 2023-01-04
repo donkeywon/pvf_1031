@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack1.ani`
+	[SUB ANI]
+		`../Animation/wp/attack1_700.ani`	0	0
+		`../Animation/light/Attack1.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`TAU_AXE_SWING`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9374
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			180	20	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

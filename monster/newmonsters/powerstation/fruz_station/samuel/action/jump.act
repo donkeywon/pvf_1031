@@ -1,0 +1,47 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/jump.ani`
+	[SUB ANI]
+		`../Animation/jump_1.ani`	0	1
+		`../Animation/samuel_blow_circle.ani`	0	2
+		`../Animation/samuel_blow_boom.ani`	0	3
+	[/SUB ANI]
+	[SPEECH]
+		`呃啊啊！全都去死吧！`	2	100
+	[/SPEECH]
+	[SOUND]
+		`SAMUEL_SKILL_05`	2
+		`SAMUEL_PUNCH`	4
+	[/SOUND]
+[/MOTION]
+
+[DEFAULT ATTACKINFO]
+	`../AttackInfo/attack.atk`
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/effect.ptl`	0	0	440
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	800
+[/BEHAVIOR]

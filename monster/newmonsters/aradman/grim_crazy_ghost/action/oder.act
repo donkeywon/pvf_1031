@@ -1,0 +1,30 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/oder.ani`
+	[SUB ANI]
+		`../animation/weapon/oder_wp.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`GSEEKERMANB_SKILL`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		0
+	[FRAME]
+		5	5
+	[WHICH]
+	[MONSTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND MESSAGE]
+	[ETC_COMMAND]
+		1	1	5000
+[/BEHAVIOR]

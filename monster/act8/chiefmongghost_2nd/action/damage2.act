@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Damage1.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`move.act`
+	[CHANGE ACTION FILE]
+	[MOVEBACK]
+		`back.act`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[ATTACK]
+		2	1
+	[ON]
+[/BEHAVIOR]

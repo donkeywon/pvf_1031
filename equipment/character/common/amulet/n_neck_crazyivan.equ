@@ -1,0 +1,101 @@
+#PVF_File
+
+[name]
+	`(旧) 疯狂伊凡的召唤`
+
+[name2]
+	`Krazy Ivan's Order`
+
+[basic explain]
+	`HP降到10%%以下时， 被攻击后会召唤出1只疯狂伊凡。`
+
+[detail explain]
+	`HP降到10%%以下时， 被攻击后会召唤出1只Lv50的疯狂伊凡协助召唤者攻击敌人， 疯狂伊凡存在100秒。 (召唤的怪物只能同时存在1只， 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失， 召唤冷却时间为300秒)`
+
+[flavor text]
+	`疯狂伊凡， 为我战斗吧！`
+
+[grade]
+	55
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[magical attack]
+	23
+
+[magical defense]
+	58
+
+[price]
+	66000
+
+[repair price]
+	52800
+
+[value]
+	52800
+
+[equipment magical defense]
+	5040	4560
+
+[icon]
+	`Item/common/necklace.img`	13
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		300000
+	[hit]
+		1
+	[stat change]
+		`hp`
+		`<`
+		`%`	10
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		100000
+	[reduce duration at pvp module]
+		75
+	[summon monster]
+		60101	50	1
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

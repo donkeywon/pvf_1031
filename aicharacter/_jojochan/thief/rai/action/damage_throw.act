@@ -1,0 +1,58 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Throw2.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			700
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+	[SET SPEED]
+		[X AXIS]
+			0
+	[/SET SPEED]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			25001
+		[PARTICLE FILENAME]
+			`../Particle/1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	100
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			25001
+		[PARTICLE FILENAME]
+			`../Particle/2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	100
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,146 @@
+#PVF_File
+
+[name]
+	`莱亚诺瓦之咒`
+
+[name2]
+	`Laia Nova`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入诅咒状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入诅咒状态20秒； 诅咒状态下的敌人， 将减少28点力量、 体力、 智力和精神。 (若敌人高于Lv20， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[grade]
+	24
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	20
+
+[physical attack]
+	27
+
+[attack speed]
+	100
+
+[stuck]
+	-1
+
+[price]
+	38400
+
+[repair price]
+	30720
+
+[value]
+	30720
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	221	187
+
+[equipment magical attack]
+	234	198
+
+[separate attack]
+	148	96
+
+[physical critical hit]
+	10
+
+[skill levelup]
+	`[thief]`	3	2
+[/skill levelup]
+
+[curse resistance]
+	15
+
+[icon]
+	`Item/weapon/thief/dagger.img`	37
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	1	3
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[active status]
+		`curse`	20	28	28	28	28
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

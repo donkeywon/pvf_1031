@@ -1,0 +1,55 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Heal.ani`
+	[SUB ANI]
+		`../Animation/Heal_e2.ani`	0	-10
+		`../Animation/Heal_e.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`热乎乎的鱼汤~`	2	100
+	[/SPEECH]
+	[SOUND]
+		`MERMAN_FISH`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61186	61187	61188	61189	61190	61218	61219	61220	61221	61222	61191	62106
+		[/IS INDEX]
+	[/CHECKUP]
+	[GET TARGET]
+		2
+	[HP]
+	[LOW]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10167
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[HP APPENDAGE]
+		5000	300	
+		[MY TEAM]
+		[+]
+		[HP]
+			2000	500
+	[/HP APPENDAGE]
+[/BEHAVIOR]

@@ -1,0 +1,148 @@
+#PVF_File
+
+[name]
+	`分身`
+
+[name2]
+	``
+
+[explain]
+	`生成分身扰乱敌人的攻击或阻挡子弹， 经过一定时间或受一定伤害后， 生成的分身就会消失。`
+
+[basic explain]
+	`生成分身扰乱敌人的攻击或阻挡子弹。`
+
+[executable states]
+	8
+[/executable states]
+
+[feature skill index]
+	152
+
+[purchase cost]
+	20
+[/purchase cost]
+
+[required level]
+	5
+
+[required level range]
+	3
+
+[type]
+	`[active]`
+
+[skill class]
+	1
+
+[maximum level]
+	20
+
+[growtype maximum level]
+	10	10	10	10	10	10
+
+[skill fitness growtype]
+	0	1	2	3	4
+[/skill fitness growtype]
+
+[durability decrease rate]
+	20
+
+[skill under cooltime effect]
+	69
+[/skill under cooltime effect]
+
+[icon]
+	`Character/Fighter/Effect/SkillIcon.img`	12
+	`Character/Fighter/Effect/SkillIcon.img`	13
+
+[command]
+	{6=`(RIGHT)`}
+	{8=`,`}
+	{6=`(BUFF)`}
+[/command]
+
+[command key explain]
+	`操作指令 : → + Space`
+
+[dungeon]
+	[consume MP]
+		6	84
+	[casting time]
+		200	200
+	[cool time]
+		15000	15000
+	[static data]
+		500
+	[/static data]
+	[level info]
+		3
+		1	7000	75
+		2	7000	80
+		3	7000	85
+		4	7000	90
+		5	7000	95
+		6	7000	100
+		7	7000	105
+		8	7000	110
+		9	7000	115
+		10	7000	120
+		11	7000	125
+		12	7000	130
+		13	7000	135
+		14	7000	140
+		15	7000	145
+		16	7000	150
+		17	7000	155
+		18	7000	160
+		19	7000	165
+		20	7000	170
+	[/level info]
+[/dungeon]
+
+[pvp]
+	[level info]
+		3
+		1	5000	75
+		2	5000	80
+		3	5000	85
+		4	5000	90
+		5	5000	95
+		6	5000	100
+		7	5000	105
+		8	5000	110
+		9	5000	115
+		10	5000	120
+		11	5000	125
+		12	5000	130
+		13	5000	135
+		14	5000	140
+		15	5000	145
+		16	5000	150
+		17	5000	155
+		18	5000	160
+		19	5000	165
+		20	5000	170
+	[/level info]
+[/pvp]
+
+[death tower]
+[/death tower]
+
+[warroom]
+[/warroom]
+
+[level property]
+	1	99
+	`持续时间 : <float1>秒
+分身数量 : <int>个`
+	-1	1	0.001
+	-1	0	1.0
+[/level property]
+
+[skill preloading image]
+	`Character/Fighter/Effect/Illusion1.img`
+	`Character/Fighter/Effect/Illusion2.img`
+	`Character/Fighter/Effect/Illusion3.img`
+	`Character/Fighter/Effect/Illusion4.img`
+[/skill preloading image]

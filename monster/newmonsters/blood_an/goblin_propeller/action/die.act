@@ -1,0 +1,96 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Die2.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8198
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	180
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../Particle/Destroy1.ptl`	0	0	0
+	[PARTICLE]
+		`../Particle/Destroy2.ptl`	0	0	0
+	[PARTICLE]
+		`../Particle/Destroy3.ptl`	0	0	0
+	[PARTICLE]
+		`../Particle/Destroy4.ptl`	0	0	0
+	[PARTICLE]
+		`../Particle/Destroy5.ptl`	0	0	0
+	[PARTICLE]
+		`../Particle/Destroy11.ptl`	0	0	0
+	[PARTICLE]
+		`../Particle/Destroy22.ptl`	0	0	0
+	[PARTICLE]
+		`../Particle/Destroy33.ptl`	0	0	0
+	[PARTICLE]
+		`../Particle/Destroy44.ptl`	0	0	0
+	[PARTICLE]
+		`../Particle/Destroy55.ptl`	0	0	0
+	[PARTICLE]
+		`../Particle/Destroy555.ptl`	0	0	0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			200
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61160
+		[LEVEL]
+			0
+		[POS]
+			0	0	180
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

@@ -1,0 +1,50 @@
+#PVF_File
+
+[width]
+	1	1
+
+[floating height]
+	0
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	1000
+
+[basic motion]
+	`Ani/RatTowerStart.ani`
+
+[attack info]
+	`AttackInfo/RatTower.atk`
+
+[int data]
+	1	1	1	0	0	30	2500	5
+[/int data]
+
+[string data]
+	``
+	``
+	`Particle/RatTop.ptl`
+	``
+	`WOOD_HIT`
+	`WOOD_CRASH`
+[/string data]
+
+[name]
+	`冰息`
+
+[add object effect]
+	`Ani/RatTower_Nornal.ani`	-100
+	`Ani/RatTower_Dodge.ani`	-200
+[/add object effect]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	30000
+	`[destroy action]`
+	`[only destroy]`
+[/object destroy condition]

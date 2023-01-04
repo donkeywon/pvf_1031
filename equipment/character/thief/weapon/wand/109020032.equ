@@ -1,0 +1,181 @@
+#PVF_File
+
+[name]
+	`地狱犬之杖`
+
+[basic explain]
+	`施放[死亡之爪]时， 有50%%的几率使敌人进入出血状态， 效果持续5秒。
+施放[巴拉克的野心]时， 可对出血状态下的敌人附加25%%的伤害。
+角色500px范围内， 每存在1个出血状态的敌人， 可增加自身10点智力。
+无法进行分解。`
+
+[detail explain]
+	`施放[死亡之爪]时， 有50%%的几率使敌人进入出血状态， 效果持续5秒。
+施放[巴拉克的野心]时， 可对出血状态下的敌人附加25%%的伤害。
+角色500px范围内， 每存在1个出血状态的敌人， 可增加自身10点智力。 (最多可重叠10次)
+无法进行分解。`
+
+[grade]
+	79
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[magical attack]
+	52
+
+[attack speed]
+	-100
+
+[need material]
+	3338	840
+
+[repair price]
+	106176
+
+[value]
+	101120
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	609	568
+
+[equipment magical attack]
+	867	810
+
+[separate attack]
+	450	305
+
+[magical critical hit]
+	5
+
+[skill levelup]
+	`[thief]`	35	2
+	`[thief]`	39	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/thief/wand/wand.img`	107
+
+[field image]
+	`Item/field_weapon.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	27	0
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2300
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[routing priority]
+	`thief`	2
+[/routing priority]
+
+[if]
+	[skill]
+		`thief`	35
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		50
+	[active status]
+		`bleeding`	79	250
+[/then]
+
+[if]
+	[target active status]
+		`bleeding`
+	[skill]
+		`thief`	39
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	25
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[variable stat]
+	`magical attack`
+	`+`	10
+	`object number`
+	`enemy`	500
+	`bleeding`	10
+[/variable stat]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,64 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Lsword03.ani`
+	[SUB ANI]
+		`../Animation/Lsword02.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[PLAYER]
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11024
+		[PARTICLE FILENAME]
+			`../Particle/AirSword04.ptl`
+		[LEVEL]
+			70
+		[POS]
+			0	0	400
+		[WARNING MARK]
+			0	0	100	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			2000
+	[/SET SPEED]
+[/BEHAVIOR]

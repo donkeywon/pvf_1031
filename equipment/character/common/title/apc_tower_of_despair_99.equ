@@ -1,0 +1,77 @@
+#PVF_File
+
+[name]
+	`神剑之巅`
+
+[name2]
+	`Tower of Despair 99 Floor`
+
+[flavor text]
+	`来了？ 出招吧！`
+
+[explain]
+	`装备后， 每隔100秒可以使自身增加100点的力量、 智力、 体力和精神， 效果持续50秒。 (装备50秒后生效)`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	399
+
+[custom animation]
+	`TitleAnimation/apc_tower_of_despair_99.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[if]
+	[time]
+		100000	1	50000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		50000
+	[stat]
+		`physical attack`
+		`+`	100
+	[stat]
+		`magical attack`
+		`+`	100
+	[stat]
+		`physical defense`
+		`+`	100
+	[stat]
+		`magical defense`
+		`+`	100
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[icon mark]
+	`Item/IconMark.img`	64

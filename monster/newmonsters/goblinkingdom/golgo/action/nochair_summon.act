@@ -1,0 +1,80 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/nochair_summon.ani`
+	[SUB ANI]
+		`../Animation/Stick/Stick_nochair_summon.ani`	0	10
+	[/SUB ANI]
+	[SPEECH]
+		`召唤之舞！近卫队~攻击！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		2
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61810
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			-150	-80	80	150
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			-80	-40	40	80
+		[/RANDOM SELECT]
+	0	
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			1800
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		2
+	[OFF]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]

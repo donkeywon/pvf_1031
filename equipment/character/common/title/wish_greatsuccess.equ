@@ -1,0 +1,118 @@
+#PVF_File
+
+[name]
+	`恭喜发财`
+
+[name2]
+	`Wish of Great Success`
+
+[explain]
+	`攻击时， 有7%%的几率使自身增加7点力量、 体力、 智力和精神， 效果持续7秒。`
+
+[flavor text]
+	`<活动>  DNF祝愿应考生得高分！ 若HP MAX、 MP MAX、 力量、 体力、 智力、 精神、 所有属性抗性、 所有异常状态抗性的数值超过了7， 那么您一定是榜上有名！`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	32
+
+[custom animation]
+	`TitleAnimation/wish_greatsuccess.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[usable period]
+	30
+
+[HP MAX]
+	77
+
+[MP MAX]
+	77
+
+[physical attack]
+	17
+
+[physical defense]
+	7
+
+[magical attack]
+	17
+
+[magical defense]
+	7
+
+[all elemental resistance]
+	7
+
+[all activestatus resistance]
+	7
+
+[inventory limit]
+	7700
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[if]
+	[cooltime]
+		12000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		7000
+	[probability]
+		7
+	[stat]
+		`physical attack`
+		`+`	7
+	[stat]
+		`physical defense`
+		`+`	7
+	[stat]
+		`magical attack`
+		`+`	7
+	[stat]
+		`magical defense`
+		`+`	7
+[/then]
+
+[stuck]
+	-3
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

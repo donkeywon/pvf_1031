@@ -1,0 +1,100 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/chang.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`80Stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`80Move.act`
+	[CHANGE ACTION FILE]
+	[MOVEBACK]
+		`80Move_b.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`80Attack.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		1
+		`80Attack2.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		2
+		`80Attack3.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		3
+		`80Defen1.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		4
+		`80Attack_start.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		5
+		`80Power_down.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		6
+		`80Attack_stay.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		7
+		`80Attack_stay2.act`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9148
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9143
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0
+		[RANDOM SELECT]
+			20	50	30	80
+		[/RANDOM SELECT]
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

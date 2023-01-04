@@ -1,0 +1,37 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Tongbae.ani`
+	[SUB ANI]
+		`../Animation/TyphoonDust1.ani`	0	-10
+		`../Animation/Fire/Tongbae.ani`	0	2
+		`../Animation/Fire/attack_speed_up_back.ani`	0	1
+		`../Animation/Fire/attack_speed_up_front.ani`	0	2
+		`../Animation/Fire/move_speed_up.ani`	0	3
+	[/SUB ANI]
+	[SOUND]
+		`VOTI_SKILL_06_1`	0
+		`VOTI_TONGBAE_GET`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		200	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		26
+	[NOW]
+[/BEHAVIOR]

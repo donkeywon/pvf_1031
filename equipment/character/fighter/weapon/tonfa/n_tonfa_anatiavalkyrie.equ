@@ -1,0 +1,179 @@
+#PVF_File
+
+[name]
+	`(旧) 武神断魔棍`
+
+[name2]
+	`Anatia Valkyrie`
+
+[basic explain]
+	`使用[旋风腿]时， 有10%%的几率使自身进入祝福状态。`
+
+[detail explain]
+	`使用[旋风腿]时， 有10%%的几率使自身进入祝福状态20秒； 祝福状态下， 增加94点力量、 体力、 智力、 精神。`
+
+[flavor text]
+	`获得战争女武神的祝福， 并蕴含有神秘力量的东方棍。`
+
+[grade]
+	57
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	39
+
+[magical attack]
+	59
+
+[attack speed]
+	50
+
+[stuck]
+	-2
+
+[stuck resistance]
+	30
+
+[price]
+	91200
+
+[repair price]
+	72960
+
+[value]
+	72960
+
+[equipment physical attack]
+	505	460
+
+[equipment magical attack]
+	532	484
+
+[equipment physical defense]
+	570	560
+
+[separate attack]
+	328	220
+
+[skill levelup]
+	`[fighter]`	17	2
+	`[at fighter]`	17	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/tonfa.img`	32
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	3	1
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	3	1
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		1000
+	[use skill]
+		`fighter`	58
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		10
+	[active status]
+		`bless`	50	94	94	94	94
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

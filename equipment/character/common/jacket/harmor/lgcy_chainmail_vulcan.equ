@@ -1,0 +1,156 @@
+#PVF_File
+
+[name]
+	`传承 : 摩羯守护神的铂金链甲`
+
+[name2]
+	`Legacy : Chain Mail of Vulcan`
+
+[grade]
+	67
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	65
+
+[physical attack]
+	37
+
+[physical defense]
+	37
+
+[magical attack]
+	21
+
+[price]
+	67000
+
+[repair price]
+	59094
+
+[value]
+	53600
+
+[equipment physical defense]
+	3360	3264
+
+[skill levelup]
+	`[swordman]`	64	2
+	`[fighter]`	13	2
+	`[at fighter]`	13	2
+	`[gunner]`	40	2
+	`[at gunner]`	40	2
+	`[priest]`	64	2
+	`[demonic swordman]`	64	2
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/common/coat.img`	233
+
+[field image]
+	`Item/field_equip.img`	10
+
+[equipment type]
+	`[coat]`	20
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	3600
+
+[item group name]
+	`ha coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 摩羯守护神的铂金重甲  套装`
+
+[set item]
+	11329	13328	15318	17313	19320
+[/set item]
+
+[set ability]
+	[HP MAX]
+		450
+	[MP MAX]
+		220
+	[physical attack]
+		105
+	[physical defense]
+		90
+	[magical attack]
+		72
+	[fire resistance]
+		15
+	[stuck resistance]
+		30
+	[HP regen speed]
+		40
+	[MP regen speed]
+		10
+	[move speed]
+		45
+	[attack speed]
+		45
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福可以使自身增加7%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	70
+	[/then]
+	[skill levelup]
+		`[gunner]`	36	1
+		`[gunner]`	71	2
+		`[at gunner]`	36	1
+		`[at gunner]`	71	2
+		`[swordman]`	76	1
+		`[swordman]`	81	2
+		`[fighter]`	52	1
+		`[fighter]`	77	2
+		`[at fighter]`	52	1
+		`[at fighter]`	77	2
+		`[priest]`	116	1
+		`[priest]`	125	2
+		`[demonic swordman]`	81	2
+	[/skill levelup]
+[/set ability]
+
+[possible kiri protect]

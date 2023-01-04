@@ -1,0 +1,164 @@
+#PVF_File
+
+[name]
+	`千足臂铠`
+
+[name2]
+	`Centipe`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入减速状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入减速状态6秒； 减速状态下， 减少20%%视野和20%%命中率。 但在决斗场中， 只能持续3秒。 (若敌人高于Lv60， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	62
+
+[rarity]
+	2
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	60
+
+[physical attack]
+	59
+
+[attack speed]
+	-80
+
+[stuck]
+	-1
+
+[price]
+	99200
+
+[repair price]
+	83328
+
+[value]
+	79360
+
+[equipment physical attack]
+	653	629
+
+[equipment magical attack]
+	490	472
+
+[separate attack]
+	270	182
+
+[physical critical hit]
+	3
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/weapon/fighter/gauntlet.img`	46
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	8	0
+
+[layer variation]
+	2790
+	`gauntletc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gauntletb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	8	0
+
+[layer variation]
+	2150
+	`at_gauntleta`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_gauntletc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_gauntletx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		9000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		6000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`slow`	60	20	20
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

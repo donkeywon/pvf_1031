@@ -1,0 +1,73 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/guard_f.ani`
+	[SUB ANI]
+		`../Animation/guard1_f.ani`	0	0
+		`../Animation/guard2_f.ani`	0	0
+		`../Animation/guard3_f.ani`	0	0
+		`../Animation/guard4_f.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`MNENGUARD`	0
+		`MNENGUARD_DISA`	6
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[CHECK TIME]
+		100
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			200
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DAMAGE BOX]
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[CHECK TIME]
+		100
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[>]
+			200
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DAMAGE BOX]
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

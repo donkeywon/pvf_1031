@@ -1,0 +1,206 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`骷髅凯恩`
+
+[die effect]
+	0	28	0
+
+[face image]
+	`Monster/MonsterFace.img`	178
+
+[lie frame]
+	2	3	2	3	4
+
+[attack sound]
+	``
+
+[appear sound]
+	``
+
+[damage sound]
+	`R_SKEL_DMG`
+
+[die sound]
+	`R_SKEL_DIE`
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	18500
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[set damage check]
+	3000
+
+[overhead gauge type]
+	1
+
+[category]
+	`[oneside move]`
+	`[undead]`
+[/category]
+
+[fix direction]
+	`[left]`
+
+[HP regen speed]
+	0	0
+
+[MP regen speed]
+	0	0
+
+[level]
+	1	60
+
+[move speed]
+	200	200
+
+[attack speed]
+	500	500
+
+[cast speed]
+	500	500
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	300000	300000
+
+[freeze resistance]
+	100	100
+
+[stun resistance]
+	100	100
+
+[blind resistance]
+	100	100
+
+[stone resistance]
+	100	100
+
+[sleep resistance]
+	100	100
+
+[hold resistance]
+	100	100
+
+[slow resistance]
+	100	100
+
+[curse resistance]
+	100	100
+
+[confuse resistance]
+	100	100
+
+[lie frame]
+	2	3	2	3	4
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[proc action]
+	`Action/Proc.act`
+
+[attack action]
+	`Action/AttackUp.act`
+	`Action/Wave.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/AttackUp.atk`
+	`AttackInfo/AttackUp.atk`
+[/attack info]
+
+[cooltime]
+	8000	30000
+[/cooltime]
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	800
+
+[warlike]
+	100
+
+[think term]
+	1000
+
+[destination change term]
+	300
+
+[keep distance with target]
+	130
+
+[initial target]
+	[MONSTER]
+		64597
+	[initial target Permanent]
+		0
+[/initial target]
+
+[ai pattern]
+	[normal]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/normal]
+	[expert]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/expert]
+	[master]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/master]
+	[king]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/king]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[base table]
+	`NewMonsters/AdvanceAltar/Enemy/SkullKane/table/AdvanceAltarMonsterBaseParameter.tbl`

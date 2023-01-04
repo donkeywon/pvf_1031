@@ -1,0 +1,43 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AppearStones_f.ani`
+	[SUB ANI]
+		`../Animation/AppearStones_b.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11072
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			100
+		[POS]
+			0	-5	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../../../Screamingcave/Particle/Bug-move-stone1.ptl`	0	0	10
+[/BEHAVIOR]

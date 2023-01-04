@@ -1,0 +1,225 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/evileye.ani`
+	[SUB ANI]
+		`../animation/evileye/IngB.ani`	0	-1
+		`../animation/evileye/IngNormalB.ani`	0	-1
+		`../animation/evileye/Ing.ani`	0	0
+		`../animation/evileye/IngF.ani`	0	0
+		`../animation/evileye/IngNormalF.ani`	0	0
+		`../animation/evileye/_Dark_Aura.ani`	0	0
+		`../animation/evileye/_Dark_Aura_Cover.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`ASTAROTH_SKILL_04_3`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		15000	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		3
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9464
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9467
+		[PARTICLE FILENAME]
+			`../particle/wave.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-5	5	0
+		[RANDOM]
+			120	150
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9467
+		[PARTICLE FILENAME]
+			`../particle/wave.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-50	-35	0
+		[RANDOM]
+			120	150
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9467
+		[PARTICLE FILENAME]
+			`../particle/wave.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-50	-35	0
+		[RANDOM]
+			120	150
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9467
+		[PARTICLE FILENAME]
+			`../particle/wave.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			15	25	0
+		[RANDOM]
+			120	150
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9467
+		[PARTICLE FILENAME]
+			`../particle/wave.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-50	-35	0
+		[RANDOM]
+			120	150
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9467
+		[PARTICLE FILENAME]
+			`../particle/wave.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-50	-35	0
+		[RANDOM]
+			120	150
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9467
+		[PARTICLE FILENAME]
+			`../particle/wave.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			35	50	0
+		[RANDOM]
+			120	150
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9467
+		[PARTICLE FILENAME]
+			`../particle/wave.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-50	-35	0
+		[RANDOM]
+			120	150
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

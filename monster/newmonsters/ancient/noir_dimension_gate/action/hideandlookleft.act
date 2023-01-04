@@ -1,0 +1,61 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Hide_Dimension_Gate00.ani`
+	[SUB ANI]
+		`../Animation/Hide_Dimension_Gate01.ani`	0	-10
+		`../Animation/Hide_Dimension_Gate00_1.ani`	0	0
+		`../Animation/Hide_Dimension_Gate02.ani`	0	0
+		`../Animation/Hide_Dimension_Gate03.ani`	0	0
+		`../Animation/Hide_Dimension_Gate03_1.ani`	0	0
+		`../Animation/Hide_Effect1.ani`	0	10
+		`../Animation/Hide_Effect2.ani`	0	10
+		`../Animation/Hide_Effect3.ani`	0	10
+		`../Animation/Hide_Effect4.ani`	0	10
+		`../Animation/Hide_Dust.ani`	0	20
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		80	80	80	150	255	255	255
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		15	15
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[REMOVE CATEGORY]
+	[FIXTURE]
+	[TELEPORT]
+		[POS]
+			944	237	0
+		[USE MAP POS]
+		[MOVE ME]
+	[/TELEPORT]
+	[TRIGGER]
+		1
+	[OFF]
+	[SET DIRECTION]
+	[LEFT]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

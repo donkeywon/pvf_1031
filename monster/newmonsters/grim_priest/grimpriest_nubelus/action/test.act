@@ -1,0 +1,85 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/casting.ani`
+	[SUB ANI]
+		`../animation/boss-aura.ani`	3	-5
+		`../animation/aura-blood.ani`	3	10
+		`../animation/aura-ball(dodge).ani`	3	20
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	6
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+	[SET SPEED]
+		[X AXIS]
+			-5
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		5000	
+		[hp regen rate]
+		[%]
+			500.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		8000	
+		[move speed]
+		[%]
+			-60.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CASTING]
+		8000	1
+[/BEHAVIOR]

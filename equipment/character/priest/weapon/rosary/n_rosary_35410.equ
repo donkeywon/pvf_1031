@@ -1,0 +1,109 @@
+#PVF_File
+
+[name]
+	`精致的素喃订制念珠`
+
+[name2]
+	`找不到代码name2_35410`
+
+[basic explain]
+	`暴击伤害 +10%%`
+
+[grade]
+	52
+
+[attach type]
+	`[trade]`
+
+[item group name]
+	`rosary`
+
+[rarity]
+	3
+
+[weight]
+	2500
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[minimum level]
+	48
+
+[icon]
+	`Item/weapon/priest/rosary.img`	71
+
+[field image]
+	`Item/field_weapon.img`	12
+
+[equipment type]
+	`[weapon]`	23
+
+[sub type]
+	1
+
+[durability]
+	35
+
+[value]
+	66560
+
+[cool time]
+	10000
+
+[magical attack]
+	54
+
+[equipment physical attack]
+	436	400
+
+[equipment magical attack]
+	557	511
+
+[separate attack]
+	287	192
+
+[attack speed]
+	-50
+
+[cast speed]
+	120
+
+[magical critical hit]
+	2
+
+[variation]
+	2	8
+
+[layer variation]
+	200
+	`rosaryd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`rosaryc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[move wav]
+	`ROSARY_TOUCH`
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	10
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

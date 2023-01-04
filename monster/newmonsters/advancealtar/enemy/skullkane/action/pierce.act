@@ -1,0 +1,43 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Pierce.ani`
+	[SUB ANI]
+		`../Animation/Clothes/Pierce.ani`	0	0
+		`../Animation/Equip_a/Pierce.ani`	0	0
+		`../Animation/Equip_b/Pierce.ani`	0	0
+		`../Animation/EquipEffect_a/Pierce.ani`	0	0
+		`../Animation/EquipEffect_b/Pierce.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			200
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]

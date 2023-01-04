@@ -1,0 +1,64 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Detect.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[CHECK DISTANCE]
+			150	100
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`我一定要挖到真正的宝物！`
+	[TRIGGER]
+		1
+	[ON]
+	[DIM]
+		`timecome1`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`timecome1`	
+		[+]
+			2000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			56718
+		[LEVEL]
+			67
+		[POS]
+			0	0	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+	[DESTROY]
+[/BEHAVIOR]

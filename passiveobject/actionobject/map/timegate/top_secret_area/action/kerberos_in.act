@@ -1,0 +1,51 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Kerberos_in0.ani`
+	[SUB ANI]
+		`../Animation/Kerberos_in1.ani`	0	-2
+		`../Animation/Kerberos_in9.ani`	0	-1
+		`../Animation/Kerberos_in3.ani`	0	1
+		`../Animation/Kerberos_in4.ani`	0	2
+		`../Animation/Kerberos_in5.ani`	0	3
+		`../Animation/Kerberos_in6.ani`	0	4
+		`../Animation/Kerberos_in2.ani`	0	5
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-100
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			8
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

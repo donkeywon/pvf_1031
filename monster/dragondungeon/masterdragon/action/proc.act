@@ -1,0 +1,53 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/proc.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON DESTROY OBJECT]
+	[WHICH]
+	[DESTROY OBJECT]
+	[CHECKUP]
+		[IS INDEX]
+			100001	100009
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			800
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[IS TARGET STATE]
+			0
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		4
+	[NOW]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]

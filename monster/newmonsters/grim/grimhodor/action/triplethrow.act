@@ -1,0 +1,85 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/TripleThrow.ani`
+	[SUB ANI]
+		`../Animation/weapon/TripleThrow_wp.ani`	0	0
+		`../Animation/acc1/TripleThrow_acc1.ani`	0	0
+		`../Animation/acc2/TripleThrow_acc2.ani`	0	0
+		`../Animation/acc3/TripleThrow_acc3.ani`	0	0
+		`../Animation/acc4/TripleThrow_acc4.ani`	0	0
+		`../Animation/acc5/TripleThrow_acc5.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`GOBLIN_THROW`	2
+		`GOBLIN_THROW`	6
+		`GOBLIN_THROW`	10
+	[/SOUND]
+	[SPEECH]
+		`接招吧！`	0	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30372
+		[PARTICLE FILENAME]
+			`../Particle/FastThrowStone.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30372
+		[PARTICLE FILENAME]
+			`../Particle/FastThrowStone.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30372
+		[PARTICLE FILENAME]
+			`../Particle/FastThrowStone.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Gate_dodge_b1.ani`
+	[SUB ANI]
+		`../Animation/Gate_dodge_1.ani`	0	0
+		`../Animation/Gate_dodge_2.ani`	0	0
+		`../Animation/Gate_dodge_3.ani`	0	0
+		`../Animation/Gate_damage_dodge1.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[<=]
+			15
+		[%]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[NOW]
+[/BEHAVIOR]

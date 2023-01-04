@@ -1,0 +1,143 @@
+#PVF_File
+
+[name]
+	`镇魂之封灵匕首`
+
+[basic explain]
+	`攻击速度 +1%%
+
+攻击时， 附加8%%的伤害。`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	68
+
+[attack speed]
+	110
+
+[cast speed]
+	15
+
+[move speed]
+	10
+
+[stuck]
+	1
+
+[HP MAX]
+	200
+
+[MP MAX]
+	200
+
+[need material]
+	10000204	100
+
+[repair price]
+	119616
+
+[value]
+	113920
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	726	683
+
+[equipment magical attack]
+	769	724
+
+[separate attack]
+	510	347
+
+[physical critical hit]
+	13
+
+[magical critical hit]
+	3
+
+[icon]
+	`item/new_equipment/01_weapon/thief/dagger/dagger.img`	114
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	27	0
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	8
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

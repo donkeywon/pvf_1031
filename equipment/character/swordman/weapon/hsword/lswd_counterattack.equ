@@ -1,0 +1,175 @@
+#PVF_File
+
+[name]
+	`反击之首`
+
+[name2]
+	`First step For Counterattack`
+
+[basic explain]
+	`破招攻击时， 有30%%的几率使自身增加20%%的暴击率和10%%的暴击伤害。`
+
+[detail explain]
+	`破招攻击时， 有30%%的几率使自身增加20%%的暴击率和10%%的暴击伤害。 (在决斗场中暴击伤害 +5%%)`
+
+[grade]
+	64
+
+[rarity]
+	3
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	60
+
+[physical attack]
+	43
+
+[attack speed]
+	-90
+
+[cast speed]
+	-20
+
+[price]
+	115200
+
+[repair price]
+	96768
+
+[value]
+	92160
+
+[equipment physical attack]
+	725	665
+
+[equipment magical attack]
+	544	499
+
+[separate attack]
+	360	242
+
+[icon]
+	`Item/weapon/swordman/lswd.img`	72
+
+[field image]
+	`Item/FieldImage.img`	13
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	10	1
+
+[layer variation]
+	2790
+	`lswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`lswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	10	1
+
+[layer variation]
+	2790
+	`lswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`lswdb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SQUARESWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`lswd`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		20000
+	[attack condition]
+		`counter`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		30
+	[stat]
+		`physical critical hit rate`
+		`+`	20
+[/then]
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	10
+[/then]
+
+[pvp]
+	[if]
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase critical damage]
+			`%`	5
+	[/then]
+[/pvp]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

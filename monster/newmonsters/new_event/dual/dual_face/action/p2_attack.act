@@ -1,0 +1,96 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack.ani`
+	[SUB ANI]
+		`../Animation/eff/Ball_eff.ani`	0	1
+	[/SUB ANI]
+	[SOUND]
+		`AGENT_A_MOUTH_ENERGY`	1
+		`MONAHUN_NENTAN`	3
+		`MONAHUN_NENTAN`	4
+		`MONAHUN_NENTAN`	5
+		`MONAHUN_NENTAN`	7
+		`MONAHUN_NENTAN`	8
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16068
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			1
+		[POS]
+		[RANDOM]
+			70	20
+		[RANDOM]
+			30	-30	100
+		[COLLISION GROUP]
+			2	0	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]

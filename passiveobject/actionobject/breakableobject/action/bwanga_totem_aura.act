@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Totem_AreaAppear1.ani`
+	[SUB ANI]
+		`../animation/Totem_AreaAppear2.ani`	0	-10
+		`../animation/Totem_AreaDisappear.ani`	0	-10
+		`../animation/Totem_AreaStay.ani`	0	-10
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON DESTROY OBJECT]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			8440
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			50
+	[/CHECKUP]
+	[CHECKED NO]
+	[<=]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

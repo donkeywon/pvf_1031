@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/fire.ani`
+	[SUB ANI WITH XYZ]
+		`../animation/fire1.ani`	0	-10	0	-12	0
+	[/SUB ANI WITH XYZ]
+	[SOUND]
+		`AT5T_FIREATK`	1
+	[/SOUND]
+	[SUB ANI]
+		`../animation/fire_ef.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			-8
+		[USE MY DIRECTION]
+	[/SET SPEED]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10259
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			112	0	40
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,152 @@
+#PVF_File
+
+[name]
+	`泰拉石双剑`
+
+[name2]
+	`Teranite Philif`
+
+[basic explain]
+	`攻击时， 有1%%的几率使自身增加10%%的移动速度、 攻击速度和施放速度； 并减少自身10%%的装备防御力， 效果持续30秒。`
+
+[flavor text]
+	`异变现象的产物， 由泰拉石炼制而成的武器， 含有强大的能量！`
+
+[grade]
+	65
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	58
+
+[physical attack]
+	47
+
+[attack speed]
+	-80
+
+[move speed]
+	20
+
+[MP MAX]
+	50
+
+[price]
+	117000
+
+[repair price]
+	98280
+
+[value]
+	93600
+
+[equipment physical attack]
+	626	575
+
+[equipment magical attack]
+	491	451
+
+[separate attack]
+	365	246
+
+[physical critical hit]
+	5
+
+[icon]
+	`Item/weapon/thief/twinswd.img`	59
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[thief]`
+
+[variation]
+	6	2
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`cast speed`
+		`+`	100
+	[stat]
+		`attack speed`
+		`+`	100
+	[stat]
+		`move speed`
+		`+`	100
+	[stat]
+		`equipment physical defense`
+		`%`	-10
+	[stat]
+		`equipment magical defense`
+		`%`	-10
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

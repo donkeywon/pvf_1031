@@ -1,0 +1,63 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack.ani`
+	[SUB ANI]
+		`../Animation/EyeEffect/Attack.ani`	0	0
+		`../Animation/__StoneBody_Effect2.ani`	0	0
+		`../Animation/__StoneBody_Effect3.ani`	0	0
+		`../Animation/__StoneBody_Effect4.ani`	0	0
+		`../Animation/__StoneBody_Effect5.ani`	0	0
+		`../Animation/__StoneBody_Effect.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`R_BASILRISK_ATK`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Break.ptl`	70	0	10
+	[PARTICLE]
+		`../particle/Break.ptl`	70	0	20
+	[PARTICLE]
+		`../particle/Break.ptl`	70	0	30
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Break2.ptl`	70	0	200
+	[PARTICLE]
+		`../particle/Break2.ptl`	70	0	120
+	[PARTICLE]
+		`../particle/Break2.ptl`	70	0	50
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[RIGHT]
+[/BEHAVIOR]

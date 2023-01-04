@@ -1,0 +1,161 @@
+#PVF_File
+
+[name]
+	`传承 : 战争女神的狼皮胸甲`
+
+[name2]
+	`Legacy : Coat of Ishtar`
+
+[basic explain]
+	`[改良魔法星弹]大成功率 +1.5%%`
+
+[grade]
+	47
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	45
+
+[physical attack]
+	30
+
+[magical attack]
+	19
+
+[MP regen speed]
+	11
+
+[price]
+	37600
+
+[repair price]
+	33163
+
+[value]
+	30080
+
+[equipment physical defense]
+	1200	1152
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/IconArmor.img`	255
+
+[field image]
+	`Item/FieldImage.img`	0
+
+[equipment type]
+	`[coat]`	18
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	33
+
+[weight]
+	1900
+
+[item group name]
+	`lt coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[skill data up]
+	`[mage]`	100	`[all]`	`[static]`	0	`+`	-15
+	`[mage]`	100	`[all]`	`[static]`	2	`+`	15
+[/skill data up]
+
+[set name]
+	`传承 : 战争女神的狼皮战甲  套装`
+
+[set item]
+	10488	12488	14479	18483	16478
+[/set item]
+
+[item overpower part]
+
+[set ability]
+	[HP MAX]
+		175
+	[MP MAX]
+		175
+	[physical attack]
+		60
+	[magical attack]
+		60
+	[equipment physical defense]
+		250	250
+	[fire resistance]
+		8
+	[HP regen speed]
+		20
+	[MP regen speed]
+		6
+	[attack speed]
+		20
+	[skill levelup]
+		`[gunner]`	9	1
+		`[gunner]`	53	1
+		`[at gunner]`	9	1
+		`[at gunner]`	53	1
+		`[mage]`	13	1
+		`[mage]`	98	1
+		`[at mage]`	15	1
+		`[thief]`	31	1
+	[/skill levelup]
+	[fullset basic explain]
+		`[暴炎加热炉]大成功率 +3%%
+[电鳗碰撞机]大成功率 +3%%
+[改良魔法星弹]大成功率 +2%%
+[改良舒露露]大成功率 +2%%
+进入地下城时， 因传承的祝福可以使自身增加7%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	70
+	[/then]
+	[skill data up]
+		`[mage]`	106	`[all]`	`[static]`	0	`+`	-30
+		`[mage]`	106	`[all]`	`[static]`	2	`+`	30
+		`[mage]`	105	`[all]`	`[static]`	0	`+`	-30
+		`[mage]`	105	`[all]`	`[static]`	2	`+`	30
+		`[mage]`	100	`[all]`	`[static]`	0	`+`	-20
+		`[mage]`	100	`[all]`	`[static]`	2	`+`	20
+		`[mage]`	93	`[all]`	`[static]`	0	`+`	-20
+		`[mage]`	93	`[all]`	`[static]`	2	`+`	20
+	[/skill data up]
+[/set ability]
+
+[possible kiri protect]

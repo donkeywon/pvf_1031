@@ -1,0 +1,40 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/arrow.ani`
+	[SUB ANI]
+		`../Animation/effect/arrow_e3.ani`	0	1
+		`../Animation/effect/arrow_e2.ani`	0	2
+		`../Animation/effect/arrow_e.ani`	0	3
+	[/SUB ANI]
+	[SPEECH]
+		`在你身上射一千个窟窿！`	6	30
+	[/SPEECH]
+	[SOUND]
+		`FITZ_ARCHER_SHOOT`	6
+		`FITZ_ARCHER_SKILL`	6
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11212
+		[PARTICLE FILENAME]
+			`../Particle/fire_arrow.ptl`
+		[LEVEL]
+			0
+		[POS]
+			100	0	90
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

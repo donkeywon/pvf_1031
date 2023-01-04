@@ -1,0 +1,289 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/steam_hill.ani`
+	[SUB ANI]
+		`../Animation/steam_hill_1.ani`	0	1
+		`../Animation/samuel_steam1.ani`	0	2
+		`../Animation/samuel_steam2.ani`	0	3
+		`../Animation/samuel_steam3.ani`	0	4
+	[/SUB ANI]
+	[SPEECH]
+		`无敌！无敌！`	1	50
+		`真是美味~`	1	50
+		`呵呵……粘稠度刚刚好~`	1	50
+	[/SPEECH]
+	[SOUND]
+		`SAMUEL_ABSOLB`	2
+		`R_SAMUEL_SKILL_03`	16
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			16124
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			16124
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			16124
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			16124
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			16124
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			16123
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			125
+	[/CHECKUP]
+	[GET TARGET]
+		1
+	[DISTANCE]
+	[LOW]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			16123
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			125
+	[/CHECKUP]
+	[GET TARGET]
+		1
+	[DISTANCE]
+	[LOW]
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		18	18
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			16123
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			125
+	[/CHECKUP]
+	[GET TARGET]
+		1
+	[DISTANCE]
+	[LOW]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		3
+	[%]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16124
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			1
+		[POS]
+			0	0	200
+		[FIX DIRECTION]
+		[LEFT]
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16124
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			1
+		[POS]
+			30	0	180
+		[FIX DIRECTION]
+		[LEFT]
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16124
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			1
+		[POS]
+			-30	0	180
+		[FIX DIRECTION]
+		[LEFT]
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16124
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			1
+		[POS]
+			50	0	160
+		[FIX DIRECTION]
+		[LEFT]
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16124
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			1
+		[POS]
+			-50	0	160
+		[FIX DIRECTION]
+		[LEFT]
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		15000	
+		[equipment physical defense]
+		[%]
+			150.0
+		[equipment magical defense]
+		[%]
+			150.0
+	[/APPENDAGE]
+[/BEHAVIOR]

@@ -1,0 +1,163 @@
+#PVF_File
+
+[name]
+	`泰拉石手枪`
+
+[name2]
+	`Teranite Autogun`
+
+[basic explain]
+	`攻击时， 有1%%的几率使自身增加10%%的移动速度、 攻击速度和施放速度； 并减少自身10%%的装备防御力， 效果持续30秒。`
+
+[flavor text]
+	`异变现象的产物， 由泰拉石炼制而成的武器， 含有强大的能量！`
+
+[grade]
+	65
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	58
+
+[magical attack]
+	47
+
+[move speed]
+	20
+
+[stuck]
+	1
+
+[MP MAX]
+	50
+
+[price]
+	104000
+
+[repair price]
+	87360
+
+[value]
+	83200
+
+[equipment physical attack]
+	403	366
+
+[equipment magical attack]
+	590	537
+
+[separate attack]
+	365	246
+
+[icon]
+	`item/weapon/gunner/automatic.img`	43
+
+[field image]
+	`Item/field_weapon.img`	2
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	4	2
+
+[layer variation]
+	2790
+	`autoc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`autob`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	4	2
+
+[layer variation]
+	2790
+	`at_autoc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_autob`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	1500
+
+[item group name]
+	`automatic`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`cast speed`
+		`+`	100
+	[stat]
+		`attack speed`
+		`+`	100
+	[stat]
+		`move speed`
+		`+`	100
+	[stat]
+		`equipment physical defense`
+		`%`	-10
+	[stat]
+		`equipment magical defense`
+		`%`	-10
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

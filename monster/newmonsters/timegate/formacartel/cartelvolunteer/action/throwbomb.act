@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/ThrowBomb.ani`
+	[SPEECH]
+		`爆炸吧~`	4	50
+		`嘻嘻嘻！`	4	50
+	[/SPEECH]
+	[SOUND]
+		`R_KINFANTRY_ATK`	0
+		`SG_GUN_OVER_01`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9293
+		[PARTICLE FILENAME]
+			`../Particle/Bullet.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	0	122
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

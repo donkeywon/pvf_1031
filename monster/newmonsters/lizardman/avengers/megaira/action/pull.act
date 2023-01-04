@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Pull.ani`
+	[SUB ANI]
+		`../Animation/wp/Pull.ani`	0	0
+		`../Animation/Hollow/Stay2.ani`	0	0
+		`../Animation/Hollow/Stay3.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`MEGAIRA_SKILL_01`	2
+		`NIGHTH_IN`	2
+	[/SOUND]
+	[SPEECH]
+		`吸干他们！`	0	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PULL APPENDAGE]
+		9.0	9.0	2500
+[/BEHAVIOR]

@@ -1,0 +1,56 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Move.ani`
+	[SUB ANI]
+		`../Animation/acc1/move_300.ani`	0	0
+		`../Animation/hcc1/move_200.ani`	0	0
+		`../Animation/bcc9/move_100.ani`	0	1
+		`../Animation/weapon03/move_100.ani`	0	3
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			220
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		10000	
+		[move speed]
+		[%]
+			70.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[>]
+			220
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DELETE APPENDAGE]
+		10000	
+		[move speed]
+		[%]
+			70.0
+	[/DELETE APPENDAGE]
+[/BEHAVIOR]

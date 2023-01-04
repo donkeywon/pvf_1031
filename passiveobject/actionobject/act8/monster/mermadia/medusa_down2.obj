@@ -1,0 +1,52 @@
+#PVF_File
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[team]
+	100
+
+[basic action]
+	`Action/medusa_down2.act`
+
+[piercing power]
+	1000
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	10000
+[/object destroy condition]
+
+[destroy particle]
+	`particle/bubble.ptl`
+
+[etc action]
+	`Action/medusa_attack.act`
+[/etc action]
+
+[attack info]
+	`Attackinfo/medusa2.atk`
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[ENEMY]`
+	[homing velocity]
+		80	40
+	[homing check gap]
+		1000
+	[sync animation rotation]
+		0
+	[max rotation]
+		200
+	[init rotation]
+		180
+	[diff rotation]
+		200
+	[homing time]
+		10000
+[/homing]

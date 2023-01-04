@@ -1,0 +1,167 @@
+#PVF_File
+
+[name]
+	`精良的大地的咆哮`
+
+[name2]
+	`Roar of Ground`
+
+[basic explain]
+	`攻击速度 +2%%
+攻击时， 有2%%的几率使敌人进入诅咒状态， 并增加自身的智力和攻击速度。
+
+无法进行分解、 封装和合成。`
+
+[detail explain]
+	`攻击速度 +2%%
+攻击时， 有2%%的几率使敌人进入诅咒状态12秒； 诅咒状态下的敌人， 减少30点力量、 体力、 智力和精神； 并且还会使自身增加15点智力和5%%的攻击速度， 效果持续12秒； 但在决斗场中， 只能持续6秒。 (若敌人高于Lv62， 则减少进入异常状态的几率； 反之， 则增加几率)
+
+无法进行分解、 封装和合成。`
+
+[grade]
+	65
+
+[rarity]
+	5
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	62
+
+[physical attack]
+	46
+
+[magical attack]
+	69
+
+[attack speed]
+	20
+
+[anti evil]
+	8
+
+[price]
+	0
+
+[repair price]
+	84672
+
+[value]
+	0
+
+[equipment physical attack]
+	575	513
+
+[equipment magical attack]
+	500	446
+
+[separate attack]
+	324	219
+
+[icon]
+	`item/weapon/gunner/musket.img`	37
+
+[field image]
+	`Item/field_weapon.img`	3
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	5	0
+
+[layer variation]
+	2790
+	`musketc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`musketb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	5	0
+
+[layer variation]
+	2790
+	`at_musketc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_musketb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	2100
+
+[item group name]
+	`musket`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		18000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		12000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[active status]
+		`curse`	62	30	30	30	30
+	[target]
+		`myself`	-1
+	[stat]
+		`magical attack`
+		`+`	15
+	[stat]
+		`attack speed`
+		`+`	50
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]

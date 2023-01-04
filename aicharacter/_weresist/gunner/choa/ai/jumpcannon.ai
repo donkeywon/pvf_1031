@@ -1,0 +1,23 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check key cooltime]
+			`jumpcannon`
+		[false]
+	
+		[think]
+			[check skill on]
+				33
+			[true]
+			[return str]
+				`airjumpcannon`
+			[false]
+			[return str]
+				`jumpcannon`
+		[/think]
+	[true]
+	[return str]
+		`sliding`
+	[/think]
+[/ai pattern]

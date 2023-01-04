@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Fighter_Attack1.ani`
+	[SUB ANI]
+		`../Animation/ball/Fighter_Attack1.ani`	0	0
+		`../Animation/ball_eff/Fighter_Attack1.ani`	0	0
+		`../Animation/ball_eff/Fighter_Attack1.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`AJUMP`	0
+		`VERTICAL_CRASH`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9033
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	50
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

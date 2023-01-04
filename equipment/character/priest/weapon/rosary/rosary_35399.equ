@@ -1,0 +1,148 @@
+#PVF_File
+
+[name]
+	`邪龙的怨魂念珠`
+
+[name2]
+	`找不到代码name2_35399`
+
+[basic explain]
+	`施放技能时， 有5%%的几率对500px范围内最近的敌人施放邪龙的怨魂爆炸。
+无法进行分解。`
+
+[detail explain]
+	`施放技能时， 有5%%的几率对500px范围内最近的敌人施放邪龙的怨魂爆炸。 (在决斗场中几率为1%%)
+无法进行分解`
+
+[grade]
+	44
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	40
+
+[magical attack]
+	47
+
+[attack speed]
+	-50
+
+[cast speed]
+	50
+
+[price]
+	70400
+
+[repair price]
+	56320
+
+[value]
+	56320
+
+[equipment physical attack]
+	378	342
+
+[equipment magical attack]
+	483	437
+
+[separate attack]
+	245	164
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	38	3
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/rosary.img`	65
+
+[field image]
+	`Item/field_weapon.img`	12
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	18	0
+
+[layer variation]
+	200
+	`rosaryd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`rosaryc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`ROSARY_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`rosary`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		500
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy near`	500
+	[probability]
+		5
+	[reduce probability to human armor at pvp module]
+		80
+	[passive object]
+		48154	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[routing priority]
+	`priest`	3
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

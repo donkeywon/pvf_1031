@@ -1,0 +1,62 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/BodyAttack.ani`
+	[SUB ANI]
+		`../Animation/Fire/BodyAttack.ani`	0	1
+		`../Animation/Dust1.ani`	0	2
+		`../Animation/Fire/attack_speed_up_back.ani`	0	1
+		`../Animation/Fire/attack_speed_up_front.ani`	0	2
+		`../Animation/Fire/move_speed_up.ani`	0	3
+	[/SUB ANI]
+	[SOUND]
+		`VOTI_SKILL_02`	0
+	[/SOUND]
+[/MOTION]
+
+[DEFAULT ATTACKINFO]
+	`../AttackInfo/Dashattack.atk`
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET MOVEVELS]
+		[X NORMAL]
+			200
+	[/SET MOVEVELS]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	100
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET MOVEVELS]
+		[X NORMAL]
+			-5
+	[/SET MOVEVELS]
+[/BEHAVIOR]

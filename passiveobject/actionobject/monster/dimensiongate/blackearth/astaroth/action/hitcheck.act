@@ -1,0 +1,371 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/dummy_hitcheck.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`count`	
+		[=]
+			100
+	[/IF]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			56151
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`count`	
+		[>]
+			100
+	[/IF]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			56151
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`count`	
+		[<]
+			100
+	[/IF]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			56151
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`count`	
+		[>]
+			110
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`count`	
+		[>]
+			120
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`count`	
+		[>]
+			130
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`count`	
+		[>]
+			140
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`count`	
+		[>]
+			150
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`count`	
+		[>]
+			160
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`count`	
+		[>]
+			170
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`count`	
+		[>]
+			180
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`count`	
+		[>]
+			190
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`count`	
+		[<]
+			90
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`count`	
+		[<]
+			80
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`count`	
+		[<]
+			70
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`count`	
+		[<]
+			60
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`count`	
+		[<]
+			50
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`count`	
+		[<]
+			40
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`count`	
+		[<]
+			30
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`count`	
+		[<]
+			20
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`count`	
+		[<]
+			10
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`count`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`count`	
+		[=]
+			`count`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		8
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			56152
+		[LEVEL]
+			70
+		[POS]
+		[RANDOM]
+			-200	200
+		[RANDOM]
+			-100	100	0
+		[NO EFFECT]
+		[SUMMON TIME]
+			30000
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

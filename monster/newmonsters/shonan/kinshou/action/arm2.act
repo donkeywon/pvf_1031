@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/arm2.ani`
+	[SOUND]
+		`R_GGANG_ATK_02`	1
+		`BUNKER_HIT_02`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			21068
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			120	0	0
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		1	1000
+[/BEHAVIOR]

@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/punch02.ani`
+	[SUB ANI]
+		`../Animation/effect/punch02_e.ani`	0	1
+		`../Animation/effect/punch02_spear_e.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`燃烧吧！`	11	100
+	[/SPEECH]
+	[SOUND]
+		`B_FITZ_FLAMEBALL_SWING`	11
+		`B_FITZ_SKILL_02`	11
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			11213
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[NOW]
+[/BEHAVIOR]

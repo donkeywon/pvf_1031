@@ -1,0 +1,179 @@
+#PVF_File
+
+[name]
+	`巡察队长贝拉`
+
+[face image]
+	`Monster/MonsterFace.img`	618
+
+[floating height]
+	150
+
+[category]
+	`[human]`
+	`[range combat]`
+	`[close-carefully]`
+[/category]
+
+[ambient sound]
+	``
+
+[attack sound]
+	``
+
+[appear sound]
+	``
+
+[damage sound]
+	`R_ROCKETMAN_HIT`
+
+[die sound]
+	`BELAY_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	157
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	130
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	133
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	90
+	`[HP MAX]`	`*`	397
+[/ability category]
+
+[level]
+	100	100
+
+[slow resistance]
+	30	30
+
+[freeze resistance]
+	30	30
+
+[stun resistance]
+	30	30
+
+[blind resistance]
+	30	30
+
+[stone resistance]
+	30	30
+
+[confuse resistance]
+	30	30
+
+[hold resistance]
+	30	30
+
+[move speed]
+	700	700
+
+[attack speed]
+	500	500
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	100000	100000
+
+[stuckbonus on damage]
+	3	3	3	3
+
+[waiting action]
+	`../bilai/Action/Stay.act`
+
+[attack action]
+	`../bilai/Action/shoot1.act`
+	`../bilai/Action/fastmove.act`
+	`../bilai/Action/shoot.act`
+[/attack action]
+
+[last action]
+	`../bilai/Action/die.act`
+
+[proc action]
+	`../bilai/Action/proc.act`
+
+[attack info]
+	``
+	``
+	``
+[/attack info]
+
+[cooltime]
+	25000	10000	25000
+[/cooltime]
+
+[think term]
+	200
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`../bilai/ai/Event.ai`
+		`../bilai/ai/DestinationSelect.ai`
+		`../bilai/ai/Action.ai`
+		`../bilai/ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`../bilai/ai/Event.ai`
+		`../bilai/ai/DestinationSelect.ai`
+		`../bilai/ai/Action.ai`
+		`../bilai/ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`../bilai/ai/Event.ai`
+		`../bilai/ai/DestinationSelect.ai`
+		`../bilai/ai/Action.ai`
+		`../bilai/ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`../bilai/ai/Event.ai`
+		`../bilai/ai/DestinationSelect.ai`
+		`../bilai/ai/Action.ai`
+		`../bilai/ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`../bilai/ai/Event.ai`
+		`../bilai/ai/DestinationSelect.ai`
+		`../bilai/ai/Action.ai`
+		`../bilai/ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	210
+
+[warlike]
+	50
+
+[vision]
+	600
+
+[is direction to move]
+	1
+
+[lie frame]
+	1	2	3	3	4
+
+[No Combo Rate Monster]
+
+[flying mark]
+	1
+
+[level of difficulty]
+	[easy]
+		-40	2000
+	[medium]
+		-20	1000
+	[hard]
+		0	0
+	[ultimate]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]
+
+[can beat index]
+	61772	61776	61777	61779
+[/can beat index]

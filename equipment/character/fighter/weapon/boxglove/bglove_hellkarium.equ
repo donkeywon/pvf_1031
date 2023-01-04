@@ -1,0 +1,171 @@
+#PVF_File
+
+[name]
+	`狱岩石拳套`
+
+[name2]
+	`Hellkarium Leonard`
+
+[basic explain]
+	`攻击速度 +1%%
+攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态2秒； 但在决斗场中， 只能持续1秒。 (若敌人高于Lv50， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击速度 +1%%`
+
+[flavor text]
+	`用建造死亡之塔的地狱矿石--狱岩石制作的武器， 据说含有能让使用者潜力爆发的神秘力量。`
+
+[grade]
+	54
+
+[rarity]
+	2
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	38
+
+[attack speed]
+	110
+
+[cast speed]
+	10
+
+[price]
+	86400
+
+[repair price]
+	72576
+
+[value]
+	69120
+
+[equipment physical attack]
+	491	475
+
+[equipment magical attack]
+	445	429
+
+[separate attack]
+	233	156
+
+[skill levelup]
+	`[fighter]`	71	1
+	`[at fighter]`	41	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/bglove.img`	29
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	10
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	1	10
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`stun`	50
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

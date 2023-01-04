@@ -1,0 +1,184 @@
+#PVF_File
+
+[name]
+	`霸权之贤者`
+
+[name2]
+	`Imperial Wisdom`
+
+[basic explain]
+	`攻击时， 若MP在70%%以上， 则可以使自身增加40点力量和60点智力， 效果持续30秒。
+攻击时， 有3%%的几率每分钟恢复60MP， 效果持续15秒。`
+
+[flavor text]
+	`皇都流出来的东西就是不同啊， 这么强大的威力， 还是头一次看见……`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	65
+
+[physical attack]
+	46
+
+[magical attack]
+	23
+
+[attack speed]
+	20
+
+[stuck]
+	-1
+
+[price]
+	110400
+
+[repair price]
+	92736
+
+[value]
+	88320
+
+[equipment physical attack]
+	515	469
+
+[equipment magical attack]
+	572	521
+
+[separate attack]
+	389	264
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[gunner]`	33	2
+	`[at gunner]`	33	2
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/bowgun.img`	59
+
+[field image]
+	`Item/field_weapon.img`	5
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	12	2
+
+[layer variation]
+	2790
+	`bowgunc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`bowgunb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	12	2
+
+[layer variation]
+	2790
+	`at_bowgunc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_bowgunb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BOWGUN_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`bowgun`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[probability]
+		3
+	[stat]
+		`mp regen rate`
+		`+`	20
+[/then]
+
+[if]
+	[cooltime]
+		45000
+	[attack success]
+		1
+	[stat change]
+		`mp`
+		`>`
+		`%`	70
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[stat]
+		`physical attack`
+		`+`	40
+	[stat]
+		`magical attack`
+		`+`	60
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

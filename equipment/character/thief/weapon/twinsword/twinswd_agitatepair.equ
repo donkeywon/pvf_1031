@@ -1,0 +1,170 @@
+#PVF_File
+
+[name]
+	`琉璃无双绝`
+
+[name2]
+	`Agitate Pair`
+
+[basic explain]
+	`施放[绝命瞬狱杀]时， 可以发动提升Lv2或Lv5的该技能。
+施放[雷光刃影]时， 有50%%的几率发动提升Lv5的该技能。`
+
+[grade]
+	65
+
+[rarity]
+	4
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	44
+
+[attack speed]
+	-80
+
+[move speed]
+	30
+
+[stuck]
+	-3
+
+[price]
+	117000
+
+[repair price]
+	98280
+
+[value]
+	93600
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	636	575
+
+[equipment magical attack]
+	499	451
+
+[separate attack]
+	378	255
+
+[physical critical hit]
+	8
+
+[icon]
+	`Item/weapon/thief/twinswd.img`	73
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[thief]`
+
+[variation]
+	9	0
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[if]
+	[event use skill]
+		`thief`	45
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`thief`	45	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`thief`	47
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[skill levelup]
+			`thief`	47	2
+		[/skill levelup]
+		[then probability]
+			70.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[skill levelup]
+			`thief`	47	5
+		[/skill levelup]
+		[then probability]
+			30.0
+	[/then]
+[/multiple then]
+
+[routing priority]
+	`thief`	1
+[/routing priority]
+
+[possible kiri protect]
+
+[need material]
+	2749095	169
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,155 @@
+#PVF_File
+
+[name]
+	`永恒的誓言`
+
+[name2]
+	`Ever lasting Crux`
+
+[grade]
+	65
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical defense]
+	55
+
+[magical attack]
+	44
+
+[magical defense]
+	80
+
+[cast speed]
+	50
+
+[price]
+	104000
+
+[repair price]
+	87360
+
+[value]
+	83200
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	624	564
+
+[equipment magical attack]
+	593	536
+
+[equipment physical defense]
+	650	640
+
+[equipment magical defense]
+	650	640
+
+[separate attack]
+	378	255
+
+[skill levelup]
+	`[priest]`	45	2
+	`[priest]`	24	2
+	`[priest]`	116	2
+	`[priest]`	121	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/cross.img`	53
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	10	4
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[if]
+	[event use skill]
+		`priest`	26
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[skill levelup]
+			`priest`	26	2
+		[/skill levelup]
+		[then probability]
+			80.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[skill levelup]
+			`priest`	26	5
+		[/skill levelup]
+		[then probability]
+			20.0
+	[/then]
+[/multiple then]
+
+[routing priority]
+	`priest`	1
+	`priest`	4
+[/routing priority]
+
+[possible kiri protect]
+
+[need material]
+	2749095	169
+
+[icon mark]
+	`Item/IconMark.img`	68

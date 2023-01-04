@@ -1,0 +1,146 @@
+#PVF_File
+
+[name]
+	`素喃订制臂铠`
+
+[name2]
+	`找不到代码name2_29403`
+
+[basic explain]
+	`攻击速度 +3%%
+暴击伤害 +7%%
+无法进行分解。`
+
+[grade]
+	52
+
+[attach type]
+	`[trade]`
+
+[item group name]
+	`gauntlet`
+
+[rarity]
+	3
+
+[weight]
+	2900
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[minimum level]
+	48
+
+[icon]
+	`Item/weapon/fighter/gauntlet.img`	80
+
+[icon mark]
+	`Item/IconMark.img`	52
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	24
+
+[sub type]
+	1
+
+[durability]
+	39
+
+[need material]
+	3323	40
+
+[value]
+	74880
+
+[cool time]
+	10000
+
+[physical attack]
+	54
+
+[equipment physical attack]
+	581	533
+
+[equipment magical attack]
+	436	400
+
+[separate attack]
+	287	192
+
+[attack speed]
+	-50
+
+[stuck]
+	-1
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	2
+
+[layer variation]
+	2790
+	`gauntletc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gauntletb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	1	2
+
+[layer variation]
+	2150
+	`at_gauntleta`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_gauntletc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_gauntletx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	7
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]

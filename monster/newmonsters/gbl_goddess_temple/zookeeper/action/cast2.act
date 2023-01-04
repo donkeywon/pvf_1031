@@ -1,0 +1,45 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/cast.ani`
+	[SUB ANI]
+		`../animation/CastEffect.ani`	0	100
+		`../animation/CastEffectGlow.ani`	0	100
+	[/SUB ANI]
+	[SOUND]
+		`GBLTRAINER_CAST`	0
+		`R_RESERCHER_AMB`	0
+	[/SOUND]
+	[SPEECH]
+		`再给力点！`	0	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		2200	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11115
+		[PARTICLE FILENAME]
+			`../Particle/dummy.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[USE MY BASEPOS]
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

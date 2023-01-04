@@ -1,0 +1,182 @@
+#PVF_File
+
+[name]
+	`GT-9600机械自动枪`
+
+[name2]
+	`找不到代码name2_31440`
+
+[basic explain]
+	`基本填装数 +1
+普通攻击时， 有10%%的几率出现GT-9600的子弹乱射。
+无法进行分解。`
+
+[detail explain]
+	`基本填装数 +1
+普通攻击时， 有10%%的几率出现GT-9600的子弹乱射。 (在决斗场中几率为1%%)
+无法进行分解。`
+
+[grade]
+	64
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[magical attack]
+	43
+
+[attack speed]
+	50
+
+[stuck]
+	1
+
+[need material]
+	3336	370
+
+[repair price]
+	86016
+
+[value]
+	81920
+
+[equipment physical attack]
+	396	360
+
+[equipment magical attack]
+	581	529
+
+[separate attack]
+	360	242
+
+[skill levelup]
+	`[gunner]`	46	1
+	`[at gunner]`	46	1
+	`[gunner]`	12	3
+	`[at gunner]`	12	3
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/automatic.img`	75
+
+[field image]
+	`Item/field_weapon.img`	2
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	19	0
+
+[layer variation]
+	2790
+	`autoc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`autob`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	19	0
+
+[layer variation]
+	2790
+	`at_autoc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_autob`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	1500
+
+[item group name]
+	`automatic`
+
+[cool time]
+	10000
+
+[int data]
+	7	-1	-1	-1	-1	-1	-1	-1	-1	-1
+[/int data]
+
+[if]
+	[cooltime]
+		1500
+	[set my state]
+		1
+	[my state]
+		`attack`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[reduce probability to human armor at pvp module]
+		90
+	[passive object]
+		48191	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[routing priority]
+	`gunner`	2
+	`at gunner`	2
+	`gunner`	3
+	`at gunner`	3
+	`gunner`	4
+	`at gunner`	4
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

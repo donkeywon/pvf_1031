@@ -1,0 +1,128 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	``
+
+[explain]
+	`攻击时以1%%的机率恢复全体HP的2%%。施展时以2%%的机率恢复全体MP的2%%。`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	92
+
+[custom animation]
+	`TitleAnimation/puppet_stage.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[usable period]
+	7
+
+[HP MAX]
+	150
+
+[MP MAX]
+	150
+
+[physical attack]
+	13
+
+[physical defense]
+	9
+
+[magical attack]
+	13
+
+[magical defense]
+	9
+
+[stuck resistance]
+	10
+
+[inventory limit]
+	5000
+
+[HP regen speed]
+	60
+
+[MP regen speed]
+	12
+
+[move speed]
+	20
+
+[attack speed]
+	10
+
+[cast speed]
+	10
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[restore]
+		`hp`
+		`%`	2	1000
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[restore]
+		`mp`
+		`%`	2	1000
+[/then]
+
+[stuck]
+	-1
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

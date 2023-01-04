@@ -1,0 +1,116 @@
+#PVF_File
+
+[name]
+	`阿拉德骑士`
+
+[explain]
+	`特殊选项：
+所有属性强化+5
+物理暴击+4%%
+魔法暴击+4%%
+前冲时以 5%% 的机率20秒内移动速度增加7%%
+
+特殊选项2012年 11月 8日定期检查后消失。`
+
+[flavor text]
+	``
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	469
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/kart_vari.ani`
+[/custom animation]
+
+[physical attack]
+	20
+
+[physical defense]
+	20
+
+[magical attack]
+	20
+
+[magical defense]
+	20
+
+[move speed]
+	40
+
+[attack speed]
+	10
+
+[cast speed]
+	10
+
+[room list move speed rate]
+	0.15
+
+[need material]
+	10000374	150
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[equipment duration]
+		1000
+	[target]
+		`myself`	-1
+	[appendage]
+		217
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[set my state]
+		1
+	[my state]
+		`dash`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		5
+	[stat]
+		`move speed`
+		`+`	70
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,54 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack.ani`
+	[SUB ANI]
+		`../Animation/Effect/BallLight_Attack.ani`	0	0
+		`../Animation/Effect/RedLight_c.ani`	0	10
+		`../Animation/Effect/RedLight.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`DOG_MEET`	0
+		`DOG_MISSILE_01`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1000	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		3
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14066
+		[PARTICLE FILENAME]
+			`../Particle/xmove.ptl`
+		[LEVEL]
+			50
+		[POS]
+			40	0	40
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

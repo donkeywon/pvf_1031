@@ -1,0 +1,158 @@
+#PVF_File
+
+[width]
+	30	10
+
+[die effect]
+	0	9	0
+
+[face image]
+	`Monster/MonsterFace.img`	15
+
+[ability category]
+	`[HP MAX]`	`+`	550
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[overhead gauge type]
+	1
+
+[category]
+	`[oneside move]`
+	`[beast]`
+	`[tau]`
+	`[melee combat]`
+[/category]
+
+[fix direction]
+	`[left]`
+
+[lie frame]
+	2	3	2	3	4
+
+[initial target]
+	[MONSTER]
+		64597
+	[initial target Permanent]
+		0
+[/initial target]
+
+[level]
+	1	60
+
+[curse resistance]
+	100	100
+
+[move speed]
+	400	400
+
+[attack speed]
+	500	500
+
+[hit recovery]
+	800	800
+
+[weight]
+	80000	80000
+
+[targeting high level]
+	1
+
+[warlike]
+	100
+
+[attack delay]
+	2000
+
+[hp regen rate]
+	0.0	0.0
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[proc action]
+	`Action/Proc.act`
+
+[attack action]
+	`Action/Attack.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack.atk`
+[/attack info]
+
+[cooltime]
+	2000
+[/cooltime]
+
+[vision]
+	500
+
+[think term]
+	500
+
+[destination change term]
+	300
+
+[keep distance with target]
+	100
+
+[ai pattern]
+	[normal]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/normal]
+	[expert]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/expert]
+	[master]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/master]
+	[king]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/king]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[name]
+	`牛头兵`
+
+[base table]
+	`NewMonsters/AdvanceAltar/Enemy/TauArmy/table/AdvanceAltarMonsterBaseParameter.tbl`

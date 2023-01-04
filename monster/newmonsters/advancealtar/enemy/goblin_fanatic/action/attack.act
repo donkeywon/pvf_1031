@@ -1,0 +1,53 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack.ani`
+	[SUB ANI]
+		`../Animation/bomb/Attack.ani`	0	-8
+		`../Animation/coat/Attack.ani`	0	-6
+		`../Animation/pants/Attack.ani`	0	0
+		`../Animation/face/Attack.ani`	0	4
+		`../Animation/hat/Attack.ani`	0	6
+		`../Animation/weapon/Attack.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[COLOR CHANGE EFFECT]
+		[EFFECT RED END]
+			205
+		[EFFECT ALPHA END]
+			255
+		[CHANGE TIME]
+			4000
+		[LIFE TIME]
+			15000
+	[/COLOR CHANGE EFFECT]
+	[APPENDAGE]
+		0	
+		[move speed]
+		[%]
+			50.0
+	[/APPENDAGE]
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`Change.act`
+	[CHANGE ACTION FILE]
+	[STAY]
+		`Stay2.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`Move2.act`
+[/BEHAVIOR]

@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/cast.ani`
+	[SPEECH POS]
+		`GT700！快来支援！`	8	100	0	0
+	[/SPEECH POS]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61279
+		[/IS INDEX]
+		[CHECKED NO]
+		[<]
+			1
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61279
+		[LEVEL]
+			10
+		[POS]
+			1100	240	0
+		[USE MAP POS]
+		[FIX DIRECTION]
+		[RIGHT]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

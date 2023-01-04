@@ -1,0 +1,156 @@
+#PVF_File
+
+[name]
+	`(旧) 定神棒`
+
+[name2]
+	`Spirit Cudgel`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态3秒。 (若敌人高于Lv18， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`集中精神就可以与你的武器合成一体。  --钝器达人杰斯`
+
+[grade]
+	20
+
+[rarity]
+	2
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	18
+
+[physical attack]
+	21
+
+[attack speed]
+	-30
+
+[stuck]
+	-1
+
+[price]
+	28000
+
+[repair price]
+	22400
+
+[value]
+	22400
+
+[equipment physical attack]
+	216	198
+
+[equipment magical attack]
+	186	171
+
+[separate attack]
+	100	65
+
+[confuse resistance]
+	10
+
+[icon]
+	`Item/weapon/swordman/club.img`	9
+
+[field image]
+	`Item/FieldImage.img`	8
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	0	3
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	0	3
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`STICK_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3400
+
+[item group name]
+	`club`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[cooltime]
+		6000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[probability]
+		3
+	[active status]
+		`stun`	18
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

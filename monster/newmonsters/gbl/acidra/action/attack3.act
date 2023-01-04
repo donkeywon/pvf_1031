@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack3.ani`
+	[SUB ANI]
+		`../Animation/soul/Attack3.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`WATER_CREAT`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		800	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8547
+		[PARTICLE FILENAME]
+			`../Particle/Bubble2.ptl`
+		[LEVEL]
+			50
+		[POS]
+			0	0	80
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,199 @@
+#PVF_File
+
+[name]
+	`气绝刃 - 托斯纳罗根`
+
+[name2]
+	`Tosna Rogen`
+
+[basic explain]
+	`背击攻击时， 有10%%的几率使敌人进入眩晕状态。
+攻击眩晕状态的敌人时， 附加15%%的伤害。
+攻击速度 +1%%`
+
+[detail explain]
+	`背击攻击时， 有10%%的几率使敌人进入眩晕状态2秒。 (若敌人高于Lv45， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击眩晕状态的敌人时， 附加15%%的伤害。 (在决斗场中 +8%%)
+攻击速度 +1%%`
+
+[grade]
+	50
+
+[rarity]
+	4
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	45
+
+[physical attack]
+	35
+
+[attack speed]
+	110
+
+[stuck]
+	1
+
+[need material]
+	3260	750
+
+[repair price]
+	67200
+
+[value]
+	64000
+
+[equipment physical attack]
+	405	364
+
+[equipment magical attack]
+	428	385
+
+[separate attack]
+	285	189
+
+[physical critical hit]
+	10
+
+[skill levelup]
+	`[thief]`	29	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/thief/dagger.img`	43
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	9	0
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		3000
+	[attack condition]
+		`back attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		10
+	[active status]
+		`stun`	45
+[/then]
+
+[if]
+	[target active status]
+		`stun`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	15
+[/then]
+
+[pvp]
+	[if]
+		[cooltime]
+			3000
+		[attack condition]
+			`back attack`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			2000
+		[probability]
+			10
+		[active status]
+			`stun`	45
+	[/then]
+	[if]
+		[target active status]
+			`stun`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	8
+	[/then]
+[/pvp]
+
+[routing priority]
+	`thief`	1
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

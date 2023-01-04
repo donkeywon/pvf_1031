@@ -1,0 +1,65 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Boom.ani`
+	[SOUND]
+		`ROBOT_EX_READY`	0
+		`ROBOT_EX_01`	6
+	[/SOUND]
+	[SPEECH]
+		`哔哔哔！ 自毁程序已启动！`	0	80
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Break2.ptl`	0	0	0
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16162
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			80
+		[POS]
+			50	0	5
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			100
+		[Z AXIS]
+			50
+	[/SET SPEED]
+[/BEHAVIOR]

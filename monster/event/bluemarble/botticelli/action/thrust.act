@@ -1,0 +1,116 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Thrust.ani`
+	[SUB ANI]
+		`../Animation/Dust3.ani`	0	0
+		`../Animation/Dust4.ani`	0	0
+		`../Animation/Fire/Thrust.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`VOTI_SKILL_01`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			400
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`throw1`	
+		[>=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+	[RANDOM SELECT]
+		4	5
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw1`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`throw1`	
+		[=]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			-1
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		5
+	[END]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		14
+	[END]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			-1
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

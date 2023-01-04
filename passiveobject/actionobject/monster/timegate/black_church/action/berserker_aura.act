@@ -1,0 +1,115 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/berserker/stay_aura.ani`
+	[SUB ANI]
+		`../Animation/berserker/13_red_dodge.ani`	0	-3
+		`../Animation/berserker/stay_aura4.ani`	0	-2
+		`../Animation/berserker/13_red_dodge.ani`	0	-1
+		`../Animation/berserker/stay_aura1.ani`	0	1
+		`../Animation/berserker/stay_aura2.ani`	0	2
+		`../Animation/berserker/stay_aura3.ani`	0	3
+		`../Animation/berserker/stay_aura1.ani`	0	4
+		`../Animation/berserker/stay_aura2.ani`	0	5
+		`../Animation/berserker/stay_aura3.ani`	0	6
+		`../Animation/berserker/stay_aura4.ani`	0	7
+	[/SUB ANI]
+	[SOUND]
+		`NGRASIA_DARK_LOOP`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			61615
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			61625	61626
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		2
+	[ON]
+	[TRIGGER]
+		3
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		2
+	[OFF]
+	[TRIGGER]
+		3
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			61615
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			61625	61626
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

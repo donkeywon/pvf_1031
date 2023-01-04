@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_2.ani`
+	[SUB ANI]
+		`../Animation/under/15_1_1_press_shockwave_dodge.ani`	0	1
+		`../Animation/under/15_1_2_press_shockwave_dodge.ani`	0	2
+		`../Animation/under/15_press_shockwave_dodge.ani`	0	3
+		`../Animation/light_attack_dodge.ani`	0	4
+	[/SUB ANI]
+	[SPEECH]
+		`咳啊啊！！`	2	20
+	[/SPEECH]
+	[SOUND]
+		`EBUSTER_CAST_01`	0
+		`NGRASIA_SKILL_01`	1
+		`EARTHQUAKE_START`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9976
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			200	-2	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

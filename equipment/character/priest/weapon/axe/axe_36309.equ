@@ -1,0 +1,143 @@
+#PVF_File
+
+[name]
+	`霜天鹤唳`
+
+[name2]
+	`找不到代码name2_36309`
+
+[basic explain]
+	`[无双击]范围 +15%%
+HP高于90%%时， 可以使自身增加8%%的攻击速度和10%%的物理暴击率。`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	42
+
+[attack speed]
+	-80
+
+[stuck]
+	-2
+
+[need material]
+	3285	1200
+
+[price]
+	0
+
+[repair price]
+	93744
+
+[value]
+	89280
+
+[equipment physical attack]
+	686	629
+
+[equipment magical attack]
+	486	445
+
+[separate attack]
+	360	243
+
+[water attack]
+	10
+
+[icon]
+	`Item/weapon/priest/axe.img`	72
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	4	3
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[water element]`
+
+[skill data up]
+	`[priest]`	88	`[all]`	`[static]`	0	`%`	15
+	`[priest]`	88	`[all]`	`[static]`	1	`%`	15
+[/skill data up]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	90
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`attack speed`
+		`+`	80
+	[stat by condition]
+		`physical critical hit rate`
+		`+`	10
+[/then]
+
+[routing priority]
+	`priest`	3
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

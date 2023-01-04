@@ -1,0 +1,77 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is attack action enable()`	1	0
+		[true]
+	
+		[think]
+			[cube item number]
+				`>=`	1
+			[true]
+		
+			[think]
+				[second type]
+					`==`	0
+				[true]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	1
+					[true]
+					[return]
+						-1
+					[false]
+				
+					[think]
+						[void]
+							`get random()`	0.0	100.0
+					
+						[think]
+							[last result]
+								`<=`	40.0
+							[true]
+							[return]
+								1
+							[false]
+							[return]
+								-1
+						[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is the skill in cooltime()`	1
+		[true]
+		[return]
+			-1
+		[false]
+	
+		[think]
+			[void]
+				`get random()`	0.0	100.0
+		
+			[think]
+				[last result]
+					`<=`	40.0
+				[true]
+				[return]
+					1
+				[false]
+				[return]
+					-1
+			[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+[/ai pattern]

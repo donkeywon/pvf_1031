@@ -1,0 +1,153 @@
+#PVF_File
+
+[name]
+	`(旧) 邪能幽灵`
+
+[name2]
+	`Thunder Ghost Slash Musket`
+
+[basic explain]
+	`攻击时， 有1%%的几率使敌人进入感电状态。
+攻击时， 有1%%的几率出现闪电。
+对不死族敌人的攻击力 +20%%`
+
+[detail explain]
+	`攻击时， 有1%%的几率使敌人进入感电状态15秒； 若攻击感电状态的敌人， 则每次攻击都会附加175点伤害。 (若敌人高于Lv38， 则减少进入异常状态的几率； 反之， 则增加几率)
+攻击时， 有1%%的几率出现闪电。
+对不死族敌人的攻击力 +20%%`
+
+[grade]
+	42
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	38
+
+[physical attack]
+	30
+
+[magical attack]
+	45
+
+[price]
+	75600
+
+[repair price]
+	60480
+
+[value]
+	60480
+
+[equipment physical attack]
+	406	341
+
+[equipment magical attack]
+	353	297
+
+[separate attack]
+	235	157
+
+[skill levelup]
+	`[gunner]`	39	1
+	`[at gunner]`	39	1
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/musket.img`	18
+
+[field image]
+	`Item/field_weapon.img`	3
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	2	0
+
+[layer variation]
+	2790
+	`musketc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`musketb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	2	0
+
+[layer variation]
+	2790
+	`at_musketc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_musketb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	2100
+
+[item group name]
+	`musket`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		22500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		15000
+	[probability]
+		1
+	[active status]
+		`lightning`	38	175
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

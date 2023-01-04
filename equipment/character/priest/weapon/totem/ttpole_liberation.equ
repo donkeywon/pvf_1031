@@ -1,0 +1,171 @@
+#PVF_File
+
+[name]
+	`怒放的生命图腾`
+
+[name2]
+	`Totem of Liberation`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人受到2次相同的伤害。
+攻击不死族敌人时， 附加10%%的伤害。
+攻击时， 有2%%的几率使敌人减少9点暗属性抗性， 效果持续5秒。`
+
+[grade]
+	72
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	68
+
+[physical attack]
+	72
+
+[stuck]
+	-1
+
+[HP MAX]
+	300
+
+[MP MAX]
+	200
+
+[price]
+	115200
+
+[repair price]
+	96768
+
+[value]
+	92160
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	718	666
+
+[equipment magical attack]
+	616	571
+
+[separate attack]
+	408	275
+
+[dark attack]
+	9
+
+[dark resistance]
+	9
+
+[icon]
+	`Item/weapon/priest/totem.img`	58
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	11	5
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		2500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[add absolute damage]
+		`all`
+		`%`	100
+[/then]
+
+[if]
+	[target type]
+		`undead`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[if]
+	[cooltime]
+		5000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		2
+	[appendage]
+		12
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

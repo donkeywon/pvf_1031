@@ -1,0 +1,86 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Move/Move_00_hand.ani`
+	[SUB ANI]
+		`../Animation/Move/Move_19_arm.ani`	0	-20
+		`../Animation/Move/Move_Dust2.ani`	0	-19
+		`../Animation/Move/Move_18_body.ani`	0	-18
+		`../Animation/Move/Move_17_neck.ani`	0	-17
+		`../Animation/Move/Move_16_neck.ani`	0	-16
+		`../Animation/Move/Move_15_neck.ani`	0	-15
+		`../Animation/Move/Move_14_neck.ani`	0	-14
+		`../Animation/Move/Move_13_neck.ani`	0	-13
+		`../Animation/Move/Move_12_back.ani`	0	-12
+		`../Animation/Move/Move_11_back.ani`	0	-11
+		`../Animation/Move/Move_10_back.ani`	0	-10
+		`../Animation/Move/Move_09_back.ani`	0	-9
+		`../Animation/Move/Move_08_back.ani`	0	-8
+		`../Animation/Move/Move_07_back.ani`	0	-7
+		`../Animation/Move/Move_06_head.ani`	0	-6
+		`../Animation/Move/Move_05_head.ani`	0	-5
+		`../Animation/Move/Move_04_head.ani`	0	-4
+		`../Animation/Move/Move_03_headhorn.ani`	0	-3
+		`../Animation/Move/Move_02_shoulder.ani`	0	-2
+		`../Animation/Move/Move_01_arm.ani`	0	-1
+		`../Animation/Move/Move_Effect_00_CLaw_Swing_DUST2.ani`	0	1
+		`../Animation/Move/Move_Dust.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[REMOVE CATEGORY]
+	[FIXTURE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Y AXIS]
+			-350
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Y AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ADD CATEGORY]
+	[FIXTURE]
+[/BEHAVIOR]

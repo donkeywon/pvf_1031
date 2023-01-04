@@ -1,0 +1,107 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/move.ani`
+	[SUB ANI]
+		`../animation/wp/move.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[CHECK BUFF]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		2	3
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DEBUFF]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9372
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	1	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[CHECK GHOST]
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		4	5
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DEBUFF GHOST]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`这Buff的效果还不错……哈哈哈~~`
+	[SET ACTION]
+	[ATTACK]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`buff让我变得更加强大……呵呵呵~`
+	[SET ACTION]
+	[ATTACK]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`我可以吸食所有的Buff……呵呵呵~`
+	[SET ACTION]
+	[ATTACK]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`这Buff味道好极了！！`
+	[SET ACTION]
+	[ATTACK]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[RESET]
+[/BEHAVIOR]

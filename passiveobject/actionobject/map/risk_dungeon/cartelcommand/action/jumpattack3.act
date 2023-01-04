@@ -1,0 +1,238 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/jumpattack.ani`
+	[SUB ANI]
+		`../Animation/shdow.ani`	0	-1
+		`../Animation/jumpattack_arm_eff.ani`	0	2
+		`../Animation/jumpattack_arm.ani`	0	3
+	[/SUB ANI]
+	[SPEECH]
+		`别躲呀~`	0	30
+		`嘿嘿，瞧你那狼狈的样子~`	0	30
+	[/SPEECH]
+	[SOUND]
+		`R_MAX_SKILL_03`	0
+		`MAX_JUMP`	1
+		`MAX_FIREBLINDLY`	6
+		`MAX_FIREBLINDLY`	10
+		`MAX_LANDING`	14
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[LEFT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			3000
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-150
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		9
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		13	13
+	[DO BEHAVIOR]
+	[ME]
+		10
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		13	13
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[=>]
+			20
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		5
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		14	14
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		11
+	[END]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35412
+		[PARTICLE FILENAME]
+			`../Particle/Arrow_down.ptl`
+		[LEVEL]
+			1
+		[POS]
+			110	270	280
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35412
+		[PARTICLE FILENAME]
+			`../Particle/Arrow_down2.ptl`
+		[LEVEL]
+			1
+		[POS]
+			110	270	280
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35412
+		[PARTICLE FILENAME]
+			`../Particle/Arrow_down3.ptl`
+		[LEVEL]
+			1
+		[POS]
+			110	270	280
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35413
+		[PARTICLE FILENAME]
+			`../Particle/Arrow_down4.ptl`
+		[LEVEL]
+			1
+		[POS]
+			80	270	260
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35413
+		[PARTICLE FILENAME]
+			`../Particle/Arrow_down5.ptl`
+		[LEVEL]
+			1
+		[POS]
+			80	270	260
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35413
+		[PARTICLE FILENAME]
+			`../Particle/Arrow_down6.ptl`
+		[LEVEL]
+			1
+		[POS]
+			80	270	260
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,30 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Throw.ani`
+	[SOUND]
+		`AKARES_ATK_02`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9075
+		[PARTICLE FILENAME]
+			`../Particle/ShootingStarPath.ptl`
+		[LEVEL]
+			0
+		[POS]
+			50	0	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,184 @@
+#PVF_File
+
+[name]
+	`七煞星 - 狂袭`
+
+[name2]
+	``
+
+[basic explain]
+	`穿刺力 +20
+
+攻击时， 有2%%的几率对敌人召唤出审判之闪电。 (在决斗场中无效)
+敌人死亡时， 有10%%的几率召唤出更强烈的审判之闪电。 (在决斗场中无效)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	56
+
+[magical attack]
+	28
+
+[attack speed]
+	20
+
+[stuck]
+	-1
+
+[price]
+	136000
+
+[repair price]
+	114240
+
+[value]
+	108800
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	648	586
+
+[equipment magical attack]
+	721	651
+
+[separate attack]
+	504	343
+
+[physical critical hit]
+	3
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/bowgun/bowgun.img`	83
+
+[field image]
+	`Item/field_weapon.img`	5
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	23	1
+
+[layer variation]
+	2790
+	`bowgunc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`bowgunb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	23	1
+
+[layer variation]
+	2790
+	`at_bowgunc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_bowgunb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BOWGUN_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`bowgun`
+
+[cool time]
+	10000
+
+[routing priority]
+	`gunner`	4
+	`at gunner`	4
+[/routing priority]
+
+[int data]
+	7	-1	-1	-1	-1	-1	-1	-1	35	-1
+[/int data]
+
+[elemental property]
+	`light`
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		2333
+[/if]
+
+[then]
+	[probability]
+		2
+	[target]
+		`enemy`	-1
+	[passive object]
+		48513	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[attack success]
+		1
+	[target death]
+		1
+	[cooltime]
+		2333
+[/if]
+
+[then]
+	[probability]
+		10
+	[target]
+		`enemy`	-1
+	[passive object]
+		48515	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	68

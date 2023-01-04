@@ -1,0 +1,86 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/jumpkick.ani`
+	[SPEECH]
+		`疾影脚！`	8	100
+	[/SPEECH]
+	[SOUND]
+		`R_NENKWON_ATK_01`	2
+		`ICETIGER_JUMP`	3
+		`R_MKICK123`	7
+		`R_NENKWON_ATK_02`	8
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[CHARACTER]
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+			-50	0	200
+		[USE MY DIRECTION]
+		[MOVE ME]
+	[/TELEPORT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1000	2
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	10
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			0
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	500
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8207
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			100	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

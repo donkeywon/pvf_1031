@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack.ani`
+	[SOUND]
+		`MIMIC_ATK`	0
+		`MIMIC_ATK2`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[LEFT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16155
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			1
+		[POS]
+			5	0	0
+		[COLLISION GROUP]
+			2	0	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

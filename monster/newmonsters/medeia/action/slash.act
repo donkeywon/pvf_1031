@@ -1,0 +1,54 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Slash.ani`
+	[SUB ANI]
+		`../animation/Sword/swSlash.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`S_MEDUSA_ATK_01`	3
+		`R_KATANAA`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10210
+		[PARTICLE FILENAME]
+			`../Particle/throw.ptl`
+		[LEVEL]
+			0
+		[POS]
+			100	0	70
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH WITH POSITION]
+		`你不躲的话，就没意思了，知道吗？`	0	20
+	[CASTING]
+		1000	2
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		3
+[/BEHAVIOR]

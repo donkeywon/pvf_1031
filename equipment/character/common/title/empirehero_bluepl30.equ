@@ -1,0 +1,214 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	``
+
+[explain]
+	`攻击时以 1%%的机率消耗1个无色小晶块，30秒内30秒内智力增加30，精神增加20，施放速度增加5%%，移动速度增加 5%%。
+施展时以1%%的机率消耗1个无色小晶块，30秒内智力增加30，精神增加20，施放速度增加5%%，移动速度增加 5%%。(决斗场内持续时间适用15秒,冷却时间适用60秒。)`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	186
+
+[custom animation]
+	`TitleAnimation/empire_blueplatinum.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[usable period]
+	30
+
+[HP MAX]
+	200
+
+[magical attack]
+	30
+
+[magical defense]
+	20
+
+[MP regen speed]
+	15
+
+[move speed]
+	30
+
+[attack speed]
+	10
+
+[cast speed]
+	30
+
+[fire attack]
+	3
+
+[water attack]
+	3
+
+[light attack]
+	3
+
+[dark attack]
+	3
+
+[if]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	1
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`magical defense`
+		`+`	20
+	[stat]
+		`cast speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[if]
+	[cooltime]
+		45000
+	[casting]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	1
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`magical defense`
+		`+`	20
+	[stat]
+		`cast speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	1
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[probability]
+		1
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`magical defense`
+		`+`	20
+	[stat]
+		`cast speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	1
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[probability]
+		1
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`magical defense`
+		`+`	20
+	[stat]
+		`cast speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[magical critical hit]
+	3
+
+[room list move speed rate]
+	0.15
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

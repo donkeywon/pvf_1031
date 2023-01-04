@@ -1,0 +1,19 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`get random()`	0.0	100.0
+	
+		[think]
+			[last result]
+				`<=`	49.0
+			[true]
+			[import ai]
+				`ai_pattern1.ai`
+			[false]
+			[import ai]
+				`ai_pattern2.ai`
+		[/think]
+	[/think]
+[/ai pattern]

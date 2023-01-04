@@ -1,0 +1,54 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/StoneBody.ani`
+	[SUB ANI]
+		`../Animation/StoneBody_Effect.ani`	0	0
+		`../Animation/StoneBody_Effect2.ani`	0	0
+		`../Animation/StoneBody_Effect3.ani`	0	0
+		`../Animation/StoneBody_Effect4.ani`	0	0
+		`../Animation/StoneBody_Effect5.ani`	0	0
+		`../Animation/EyeEffect/StoneBody.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`BORROW_DOWN`	0
+		`BORROW_DOWN`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8575
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			60
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		4
+	[NOW]
+[/BEHAVIOR]

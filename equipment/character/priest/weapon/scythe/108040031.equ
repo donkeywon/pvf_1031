@@ -1,0 +1,172 @@
+#PVF_File
+
+[name]
+	`毒伯爵之镰`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击速度 +2%%
+攻击时， 有2%%的几率使敌人进入中毒状态7秒。
+施放[堕落之魂]时， 可以使500px范围内的所有敌人进入中毒状态， 效果持续7秒。
+攻击中毒状态的敌人时， 附加10%%的伤害。`
+
+[detail explain]
+	`攻击速度 +2%%
+攻击时， 有2%%的几率使敌人进入中毒状态7秒。
+施放[堕落之魂]时， 可以使500px范围内的所有敌人进入中毒状态， 效果持续7秒； 中毒状态下的敌人， 每0.5秒会受到71点伤害。 (若敌人高于Lv84， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击中毒状态的敌人时， 附加10%%的伤害。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[physical attack]
+	55
+
+[magical attack]
+	55
+
+[attack speed]
+	100
+
+[stuck]
+	1
+
+[price]
+	151200
+
+[repair price]
+	127008
+
+[value]
+	120960
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	764	716
+
+[equipment magical attack]
+	804	754
+
+[separate attack]
+	481	327
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[icon]
+	`item/new_equipment/01_weapon/priest/scythe/scythe.img`	84
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	27	1
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		7000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[probability]
+		2
+	[active status]
+		`poison`	84	1000
+[/then]
+
+[if]
+	[use skill]
+		`priest`	131
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[duration]
+		7000
+	[active status]
+		`poison`	84	1000
+[/then]
+
+[if]
+	[target active status]
+		`poison`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

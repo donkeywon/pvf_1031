@@ -1,0 +1,60 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Mage_Attack.ani`
+	[SUB ANI]
+		`../Animation/ball_eff/Mage_Attack.ani`	0	0
+		`../Animation/weapon/Mage_Attack.ani`	0	0
+		`../Animation/ball/Mage_Attack.ani`	0	0
+		`../Animation/ball_eff/Mage_Attack.ani`	0	0
+		`../Animation/Skill_eff/Mage_Attack.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`TEYMER_WHIP`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9048
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			60	-50	30
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9048
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			60	50	30
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

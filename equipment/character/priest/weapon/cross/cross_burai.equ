@@ -1,0 +1,152 @@
+#PVF_File
+
+[name]
+	`(旧) 堕落骑士十字架`
+
+[name2]
+	`Burai : Cross of Fallen Fellow`
+
+[basic explain]
+	`施放技能时， 有4%%的几率向所有敌人发动火焰爆炸。
+施放技能时， 有4%%的几率向所有敌人发动暗之闪电。`
+
+[flavor text]
+	`传说它是斩杀恶魔的堕落骑士的十字架。`
+
+[grade]
+	30
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	25
+
+[physical defense]
+	29
+
+[magical attack]
+	23
+
+[magical defense]
+	29
+
+[cast speed]
+	20
+
+[price]
+	48000
+
+[repair price]
+	38400
+
+[value]
+	38400
+
+[equipment physical attack]
+	316	268
+
+[equipment magical attack]
+	300	255
+
+[equipment physical defense]
+	300	290
+
+[equipment magical defense]
+	300	290
+
+[separate attack]
+	184	121
+
+[skill levelup]
+	`[priest]`	28	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/cross.img`	32
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	4	1
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[if]
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[probability]
+		4
+	[passive object]
+		23016	0	0	70	25	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[probability]
+		4
+	[passive object]
+		44002	0	0	0	25	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

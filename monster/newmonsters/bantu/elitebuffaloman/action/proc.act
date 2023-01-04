@@ -1,0 +1,64 @@
+#PVF_File
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[ON DAMAGE]
+	[WHICH]
+	[LAST ATTACKER]
+	[CHECKUP]
+		[ZPOS]
+		[>=]
+			130
+	[/CHECKUP]
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			1500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO PROC BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`疾风！！！`
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8617
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			50
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		0
+	[RESET]
+[/BEHAVIOR]

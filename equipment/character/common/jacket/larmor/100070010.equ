@@ -1,0 +1,123 @@
+#PVF_File
+
+[name]
+	`战争之王的锆英胸甲`
+
+[name2]
+	``
+
+[grade]
+	59
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	45
+
+[magical attack]
+	35
+
+[stuck]
+	-2
+
+[price]
+	59000
+
+[repair price]
+	49560
+
+[value]
+	47200
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	2376	2196
+
+[skill levelup]
+	`[swordman]`	73	2
+	`[fighter]`	82	2
+	`[at fighter]`	82	2
+	`[fighter]`	88	2
+	`[at fighter]`	88	2
+	`[priest]`	35	2
+	`[thief]`	40	2
+	`[demonic swordman]`	73	2
+[/skill levelup]
+
+[Force Result Item Rule]
+	1	0
+
+[icon]
+	`Item/new_equipment/04_larmor/coat/larmor_coat.img`	11
+
+[field image]
+	`Item/field_equip.img`	5
+
+[equipment type]
+	`[coat]`	20
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3100
+
+[item group name]
+	`la coat`
+
+[cool time]
+	10000
+
+[set name]
+	`战争之王的传承套装`
+
+[set item]
+	100070010	100120010
+[/set item]
+
+[set ability]
+	[fullset basic explain]
+		`攻击时， 有2%%的几率使自身增加30点力量和智力， 效果持续20秒。`
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			20000
+	[/if]
+	[then]
+		[target]
+			`myself`	0
+		[probability]
+			2
+		[equipment duration]
+			20000
+		[stat]
+			`physical attack`
+			`+`	30
+		[stat]
+			`magical attack`
+			`+`	30
+	[/then]
+[/set ability]
+
+[icon mark]
+	`Item/IconMark.img`	66

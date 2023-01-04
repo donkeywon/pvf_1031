@@ -1,0 +1,155 @@
+#PVF_File
+
+[name]
+	`古代遗迹守护者胸甲`
+
+[name2]
+	`Ancient Ruins Guardian Armor`
+
+[basic explain]
+	`被攻击时物理伤害 -7%%`
+
+[flavor text]
+	`古代遗迹的守护者也有等级之分， 风、 冰、 火、 光……还有一个是谁来着？`
+
+[grade]
+	65
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	28
+
+[physical defense]
+	30
+
+[magical attack]
+	28
+
+[move speed]
+	20
+
+[price]
+	91000
+
+[repair price]
+	80262
+
+[value]
+	72800
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	4380	4020
+
+[icon]
+	`Item/common/coat.img`	250
+
+[field image]
+	`Item/field_equip.img`	15
+
+[equipment type]
+	`[coat]`	22
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	60
+
+[weight]
+	5000
+
+[item group name]
+	`mt coat`
+
+[cool time]
+	10000
+
+[set name]
+	`古代遗迹守护者板甲  套装`
+
+[set item]
+	11701	13700	19701
+[/set item]
+
+[if]
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	7
+[/then]
+
+[set ability]
+	[cast speed]
+		80
+	[fullset basic explain]
+		`被攻击时， 可以使自身增加4000点的物理防御力和8000点的魔法防御力， 效果持续10秒。
+攻击时， 有7%%的几率在自身周围生成冲击波。 (在决斗场中无效)`
+	[inventory limit]
+		10000
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			30000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			7
+		[reduce probability to human armor at pvp module]
+			100
+		[passive object]
+			48051	0	0	0	1	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[hit]
+			1
+		[cooltime]
+			15000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			10000
+		[stat]
+			`equipment physical defense`
+			`+`	4000
+		[stat]
+			`equipment magical defense`
+			`+`	8000
+	[/then]
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,165 @@
+#PVF_File
+
+[name]
+	`(旧) 恶魔臂铠`
+
+[name2]
+	`Demonic Gauntlet`
+
+[basic explain]
+	`攻击时， 有2%%的几率附加100点暗属性伤害， 但会使自身进入诅咒状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率附加100点暗属性伤害， 并使自身进入诅咒状态20秒； 诅咒状态下， 减少5点力量、 体力、 智力和精神。 (若敌人高于Lv25， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[flavor text]
+	`含有邪恶诅咒力量的臂铠。`
+
+[grade]
+	26
+
+[rarity]
+	2
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	25
+
+[physical attack]
+	27
+
+[attack speed]
+	-80
+
+[stuck]
+	-1
+
+[price]
+	41600
+
+[repair price]
+	33280
+
+[value]
+	33280
+
+[equipment physical attack]
+	293	274
+
+[equipment magical attack]
+	220	205
+
+[separate attack]
+	123	80
+
+[icon]
+	`Item/weapon/fighter/gauntlet.img`	10
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	4
+
+[layer variation]
+	2790
+	`gauntletc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gauntletb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	1	4
+
+[layer variation]
+	2150
+	`at_gauntleta`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_gauntletc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_gauntletx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[cooltime]
+		32000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[add absolute damage]
+		`all`
+		`+`	100
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[active status]
+		`curse`	25	7	7	7	7
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,53 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/stay.ani`
+	[SUB ANI]
+		`../Animation/stay_1.ani`	0	1
+		`../Animation/stay_2.ani`	0	2
+		`../Animation/stay_3.ani`	0	3
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			35664	35666	35668
+		[/IS INDEX]
+		[CHECKED NO]
+		[>]
+			12
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE AI]
+	[NORMAL]
+		2
+		`Action2.ai`
+	[CHANGE AI]
+	[EXPERT]
+		2
+		`Action2.ai`
+	[CHANGE AI]
+	[MASTER]
+		2
+		`Action2.ai`
+	[CHANGE AI]
+	[KING]
+		2
+		`Action2.ai`
+	[CHANGE AI]
+	[HERO]
+		2
+		`Action2.ai`
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]

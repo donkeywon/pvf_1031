@@ -1,0 +1,51 @@
+#PVF_File
+
+[floating height]
+	1
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	1000
+
+[basic action]
+	`action/Missile.act`
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[ENEMY]`
+	[homing velocity]
+		550	200
+	[homing check gap]
+		9000
+	[sync animation rotation]
+		0
+	[max rotation]
+		0
+	[init rotation]
+		0
+	[diff rotation]
+		0
+[/homing]
+
+[attack info]
+	`AttackInfo/BossMissile.atk`
+
+[name]
+	`领主导弹`
+
+[sound category]
+	`[after object create]`
+	`TEMPESTER_MISSILE`	-1
+[/sound category]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[on end of animation]`
+[/object destroy condition]

@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Swordman_Attack3_Final_end.ani`
+	[SUB ANI]
+		`../Animation/ball/Swordman_Attack3_Final_end.ani`	0	0
+		`../Animation/ball_eff/Swordman_Attack3_Final_end.ani`	0	0
+		`../Animation/ball_eff/Swordman_Attack3_Final_end.ani`	0	0
+		`../Animation/Skill_eff/Dust3.ani`	0	0
+		`../Animation/Skill_eff/Front_Final.ani`	0	0
+		`../Animation/Skill_eff/Back_Final.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9032
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

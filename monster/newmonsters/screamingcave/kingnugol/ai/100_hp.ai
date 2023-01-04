@@ -1,0 +1,109 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	140.0	140.0	80.0	80.0
+			`all`
+			`summon`	61149
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[void]
+					`get random()`	0.0	100.0
+			
+				[think]
+					[last result]
+						`<=`	50
+					[true]
+					[return]
+						12
+					[false]
+				
+					[think]
+						[last result]
+							`<=`	90
+						[true]
+					
+						[think]
+							[void]
+								`is the skill in cooltime()`	0
+							[true]
+							[return]
+								-1
+							[false]
+							[return]
+								0
+						[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	100
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	11
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				11
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`get random()`	0.0	100.0
+	
+		[think]
+			[last result]
+				`<=`	80
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	0
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					0
+			[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	100
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	11
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				11
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

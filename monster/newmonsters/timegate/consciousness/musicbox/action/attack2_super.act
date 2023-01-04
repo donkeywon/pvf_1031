@@ -1,0 +1,32 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack2_super.ani`
+	[SOUND]
+		`MIMIC_ATK2`	2
+	[/SOUND]
+	[SPEECH]
+		`????`	2	20
+		`??~`	2	10
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	1	1	2	2	2	2	2	2
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		3
+	[END]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]

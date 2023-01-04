@@ -1,0 +1,126 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	50.0	50.0	30.0	30.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`itm3`
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				3
+		[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	160.0	130.0	110.0	110.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`itm2`
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				2
+		[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	190.0	140.0	125.0	125.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`itm2`
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				2
+		[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	280.0	280.0	150.0	150.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`itm4`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`itm6`
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					6
+			[/think]
+	[false]
+	[return]
+		4
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	250.0	250.0	200.0	200.0
+		[true]
+		[return]
+			-1
+		[false]
+	
+		[think]
+			[void]
+				`is target in attack area()`	450.0	300.0	270.0	270.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`itm5`
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`itm6`
+					[true]
+					[return]
+						-1
+					[false]
+					[return]
+						6
+				[/think]
+	[false]
+	[return]
+		5
+	[/think]
+	[false]
+	[think]
+		[check item slot cooltime]
+			3
+		[true]
+		[return]
+			-1
+		[false]
+		[return]
+			3
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

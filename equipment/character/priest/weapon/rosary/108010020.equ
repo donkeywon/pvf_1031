@@ -1,0 +1,148 @@
+#PVF_File
+
+[name]
+	`卡露亚的教导 - 玄武[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 有2%%的几率使自身进入祝福状态。
+
+无法进行合成和分解。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使自身进入祝福状态20秒； 祝福状态下， 增加37点力量、 体力、 智力和精神。
+
+无法进行合成和分解。`
+
+[grade]
+	44
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	40
+
+[magical attack]
+	47
+
+[attack speed]
+	-50
+
+[cast speed]
+	50
+
+[price]
+	70400
+
+[repair price]
+	56320
+
+[value]
+	56320
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	378	342
+
+[equipment magical attack]
+	483	437
+
+[separate attack]
+	245	164
+
+[magical critical hit]
+	4
+
+[skill levelup]
+	`[priest]`	48	2
+	`[priest]`	28	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/rosary.img`	27
+
+[field image]
+	`Item/field_weapon.img`	12
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	1	9
+
+[layer variation]
+	200
+	`rosaryd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`rosaryc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`ROSARY_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`rosary`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[active status]
+		`bless`	40	37	37	37	37
+[/then]
+
+[not amplify]
+	1
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

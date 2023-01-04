@@ -1,0 +1,112 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack1.ani`
+	[SOUND]
+		`HAS_SHOT_01`	2
+		`HAS_SKILL_01`	0
+	[/SOUND]
+	[SPEECH]
+		`我吃过的盐比你吃过的米还多！`	2	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			11112
+		[/IS INDEX]
+		[CHECKED NO]
+		[>=]
+			1
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			11113
+		[/IS INDEX]
+		[CHECKED NO]
+		[>=]
+			1
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			11112	11113
+		[/IS INDEX]
+		[CHECKED NO]
+		[<]
+			1
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11110
+		[PARTICLE FILENAME]
+			`../Particle/bullet.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	0	60
+		[USE MY DIRECTION]
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11111
+		[PARTICLE FILENAME]
+			`../Particle/bullet.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	0	60
+		[USE MY DIRECTION]
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11109
+		[PARTICLE FILENAME]
+			`../Particle/bullet.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	0	60
+		[USE MY DIRECTION]
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

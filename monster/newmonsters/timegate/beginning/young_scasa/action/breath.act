@@ -1,0 +1,146 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack_2.ani`
+	[SUB ANI]
+		`../animation/effect/Scasa_Breath_Ready.ani`	0	1
+		`../animation/effect/Scasa_Breath_Effect.ani`	0	2
+		`../animation/effect/Scasa_Breath_EffectPTL.ani`	0	3
+		`../animation/body_effect/attack_2.ani`	0	4
+	[/SUB ANI]
+	[SOUND]
+		`YOUNGSKASA_SKILL_01`	0
+		`YOUNGSKASA_SKILL_02`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			13006
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			100	0	100
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		1	1000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			13007
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-10	0	200
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[WHICH]
+	[PLAYER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[WHICH]
+	[PLAYER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[WHICH]
+	[PLAYER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[WHICH]
+	[PLAYER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[WHICH]
+	[PLAYER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			13054
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[WARNING MARK]
+			0	0	150	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

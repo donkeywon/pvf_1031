@@ -1,0 +1,31 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/FastMove.ani`
+	[SOUND]
+		`MEDUSA_SKILL_01`	0
+		`WIZ_DASH`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+	[SET SPEED]
+		[X AXIS]
+			400
+		[Y AXIS]
+		[RANDOM SELECT]
+			-150	150
+		[/RANDOM SELECT]
+	[/SET SPEED]
+[/BEHAVIOR]

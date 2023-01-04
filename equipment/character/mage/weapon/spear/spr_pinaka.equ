@@ -1,0 +1,198 @@
+#PVF_File
+
+[name]
+	`红莲落神`
+
+[name2]
+	`Pinaka`
+
+[basic explain]
+	`施放[流星闪影击]、 [碎霸]时， 有50%%的几率发动提升Lv5的该技能。 (无法超出该技能的Lv上限)`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	64
+
+[attack speed]
+	-50
+
+[stuck]
+	-1
+
+[need material]
+	3285	1200
+
+[price]
+	0
+
+[repair price]
+	83328
+
+[value]
+	79360
+
+[equipment physical attack]
+	686	629
+
+[equipment magical attack]
+	486	445
+
+[separate attack]
+	360	243
+
+[physical critical hit]
+	2
+
+[skill levelup]
+	`[mage]`	40	1
+	`[mage]`	9	3
+[/skill levelup]
+
+[light attack]
+	8
+
+[icon]
+	`Item/weapon/mage/spear.img`	70
+
+[field image]
+	`Item/field_weapon.img`	6
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	2	8
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	2	8
+
+[layer variation]
+	2150
+	`at_speara`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_speard`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	2	8
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`SPEAR_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3200
+
+[item group name]
+	`spear`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[event use skill]
+		`mage`	67
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`mage`	67	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`mage`	13
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`mage`	13	5
+	[/skill levelup]
+[/then]
+
+[routing priority]
+	`mage`	3
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

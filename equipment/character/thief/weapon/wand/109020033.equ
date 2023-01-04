@@ -1,0 +1,142 @@
+#PVF_File
+
+[name]
+	`艾丽丝之影 - 手杖`
+
+[basic explain]
+	`施放[降临 : 尼古拉斯]时， 可通过消耗2个无色小晶块召唤出尼古拉斯的分身， 效果持续60秒。
+无法进行分解。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[magical attack]
+	55
+
+[attack speed]
+	-100
+
+[need material]
+	3338	1000
+
+[repair price]
+	112896
+
+[value]
+	107520
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	649	609
+
+[equipment magical attack]
+	925	867
+
+[separate attack]
+	481	327
+
+[magical critical hit]
+	5
+
+[skill levelup]
+	`[thief]`	51	2
+	`[thief]`	37	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/thief/wand/wand.img`	108
+
+[field image]
+	`Item/field_weapon.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	28	0
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2300
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[routing priority]
+	`thief`	2
+[/routing priority]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[if]
+	[use skill]
+		`thief`	51
+	[/use skill]
+[/if]
+
+[then]
+	[consume item]
+		3037	2
+	[add skill summon]
+		51	1	60000
+	[/add skill summon]
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

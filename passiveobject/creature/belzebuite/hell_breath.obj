@@ -1,0 +1,53 @@
+#PVF_File
+
+[width]
+	1	1
+
+[floating height]
+	40
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	100
+
+[basic motion]
+	`Animation/belzebuite_skill_circle_of_magic.ani`
+
+[attack info]
+	`AttackInfo/hell_breath.atk`
+
+[string data]
+	`Particle/belzebuite_skill_breath_4.ptl`
+	`Particle/belzebuite_skill_breath_2.ptl`
+	`Particle/belzebuite_skill_breath_3.ptl`
+[/string data]
+
+[add particles]
+	[particle]
+		[file]
+			`Particle/belzebuite_skill_breath_1.ptl`
+		[create delay]
+			200
+		[create sound]
+			`BELZEBUITE_SKILL_022`
+	[/particle]
+[/add particles]
+
+[sound category]
+	`[after object create]`
+	`BELZEBUITE_SKILL_021`	-1
+[/sound category]
+
+[int data]
+	600	300	60026	3	200
+[/int data]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[on end of animation]`
+[/object destroy condition]

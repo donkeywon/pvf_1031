@@ -1,0 +1,64 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/FireExplosion.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/FireExplosionParticle1.ptl`	0	0	50
+	[PARTICLE]
+		`../particle/FireExplosionParticle2.ptl`	0	0	50
+	[PARTICLE]
+		`../particle/FireExplosionParticle3.ptl`	0	0	50
+	[PARTICLE]
+		`../particle/FireExplosionParticle4.ptl`	0	0	50
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/FireExplosionParticle1.ptl`	30	0	60
+	[PARTICLE]
+		`../particle/FireExplosionParticle2.ptl`	30	0	60
+	[PARTICLE]
+		`../particle/FireExplosionParticle3.ptl`	30	0	60
+	[PARTICLE]
+		`../particle/FireExplosionParticle4.ptl`	30	0	60
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/FireExplosionParticle1.ptl`	-10	0	40
+	[PARTICLE]
+		`../particle/FireExplosionParticle2.ptl`	-10	0	40
+	[PARTICLE]
+		`../particle/FireExplosionParticle3.ptl`	-10	0	40
+	[PARTICLE]
+		`../particle/FireExplosionParticle4.ptl`	-10	0	40
+	[DESTROY]
+[/BEHAVIOR]

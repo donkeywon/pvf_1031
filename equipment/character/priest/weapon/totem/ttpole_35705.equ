@@ -1,0 +1,164 @@
+#PVF_File
+
+[name]
+	`高科技图卢斯族星宿图腾`
+
+[name2]
+	`Chaos Totem of Eternity`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入混乱状态。
+攻击混乱状态下的敌人时， 有50%%的几率使自身增加50点力量， 效果持续30秒。
+
+无法进行分解、 封装和合成。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入混乱状态5秒。 (若敌人高于Lv42， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击混乱状态下的敌人时， 有50%%的几率使自身增加50点力量， 效果持续30秒。 (冷却时间为40秒)
+
+无法进行分解、 封装和合成。`
+
+[grade]
+	46
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	42
+
+[physical attack]
+	24
+
+[magical attack]
+	16
+
+[stuck]
+	-1
+
+[price]
+	0
+
+[repair price]
+	61824
+
+[value]
+	0
+
+[equipment physical attack]
+	458	416
+
+[equipment magical attack]
+	392	356
+
+[separate attack]
+	256	171
+
+[skill levelup]
+	`[priest]`	16	2
+	`[priest]`	58	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/totem.img`	27
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	1	8
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		7500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		3
+	[active status]
+		`confuse`	42	1
+[/then]
+
+[if]
+	[cooltime]
+		45000
+	[target active status]
+		`confuse`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		50
+	[stat]
+		`physical attack`
+		`+`	50
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

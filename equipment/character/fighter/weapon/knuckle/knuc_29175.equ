@@ -1,0 +1,163 @@
+#PVF_File
+
+[name]
+	`飞龙翼`
+
+[name2]
+	``
+
+[basic explain]
+	`被击时， 有10%%的几率进入霸体状态， 效果持续10秒。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[magical attack]
+	56
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[price]
+	136000
+
+[repair price]
+	114240
+
+[value]
+	108800
+
+[equipment physical attack]
+	783	726
+
+[equipment magical attack]
+	948	879
+
+[separate attack]
+	504	343
+
+[skill levelup]
+	`[fighter]`	7	3
+	`[fighter]`	16	4
+	`[at fighter]`	7	3
+	`[at fighter]`	16	4
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/knuckle/knuckle.img`	103
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	19	8
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	20	8
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[item aura]
+	`equipment physical defense`
+	`+`	1000	500
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[buff]
+		`superarmor`
+[/then]
+
+[routing priority]
+	`fighter`	1
+	`at fighter`	1
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

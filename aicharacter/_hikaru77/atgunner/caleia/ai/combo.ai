@@ -1,0 +1,79 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`get random()`	0.0	100.0
+	
+		[think]
+			[last result]
+				`<=`	50
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`combo1`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`combo1`
+			[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	70
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`combo2`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`combo2`
+		[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	85
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`combo3`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`combo3`
+		[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	99
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`combo4`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`combo4`
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

@@ -1,0 +1,52 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/TFire2.ani`
+	[SUB ANI]
+		`../Animation/TCannonFireF2.ani`	0	-1
+		`../Animation/TFireEffectB2.ani`	0	-1
+		`../Animation/TCannonFireB2.ani`	0	0
+		`../Animation/TFireEffectF2.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`GUN_HIT_01`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9135
+		[PARTICLE FILENAME]
+			`../Particle/Bullet2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			72	8	10
+		[USE MY DIRECTION]
+		[FIX DIRECTION]
+		[NEUTRAL]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9135
+		[PARTICLE FILENAME]
+			`../Particle/Bullet2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			75	-8	0
+		[USE MY DIRECTION]
+		[FIX DIRECTION]
+		[NEUTRAL]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

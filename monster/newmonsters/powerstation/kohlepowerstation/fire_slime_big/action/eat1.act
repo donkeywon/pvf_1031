@@ -1,0 +1,200 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Eat.ani`
+	[SUB ANI]
+		`../Animation/Eat_High.ani`	0	-2
+		`../Animation/Eat_Bone.ani`	0	-1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		500	2500	100	100	0	0	0
+	[PULL APPENDAGE]
+		12.0	12.0	1000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`grabsuccess`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+		[IS GRABABLE]
+			1
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[SAVE TARGET OBJECT]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`grabsuccess`	
+		[=]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`grabsuccess`	
+		[=]
+			0
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[IF]
+		`grabsuccess`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[LOAD TARGET]
+		0	4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+	[SET DIRECTION]
+	[MY OPPOSITE DIRECTION]
+	[SET POS FORCE]
+		[X START]
+			20
+		[Y START]
+			-2
+		[Z START]
+			0
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[IF]
+		`grabsuccess`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[LOAD TARGET]
+		0	5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[MY OPPOSITE DIRECTION]
+	[SET POS FORCE]
+		[X START]
+			20
+		[Y START]
+			-2
+		[Z START]
+			0
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[IF]
+		`grabsuccess`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[LOAD TARGET]
+		0	6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[MY OPPOSITE DIRECTION]
+	[SET POS FORCE]
+		[X START]
+			20
+		[Y START]
+			-2
+		[Z START]
+			0
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[IF]
+		`grabsuccess`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[LOAD TARGET]
+		0	7
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[DOWN]
+	[DEFAULT]
+		0
+	[FORCE]
+		400	700
+	[NOW]
+[/BEHAVIOR]

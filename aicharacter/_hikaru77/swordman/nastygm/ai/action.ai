@@ -1,0 +1,49 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	130.0	50.0	50.0	50.0
+		[true]
+		[import ai]
+			`combo.ai`
+		[false]
+	
+		[think]
+			[void]
+				`is target in attack area()`	200.0	200.0	100.0	100.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`combo3`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`combo3`
+			[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	500.0	50.0	180.0	180.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`combo4`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`combo4`
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

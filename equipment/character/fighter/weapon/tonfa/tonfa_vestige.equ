@@ -1,0 +1,191 @@
+#PVF_File
+
+[name]
+	`暗影之痕`
+
+[name2]
+	`Shadow Vestige`
+
+[basic explain]
+	`被攻击时， 有20%%的几率使自身增加50%%的回避率， 效果持续5秒。`
+
+[detail explain]
+	`被攻击时， 有20%%的几率使自身增加50%%的回避率， 效果持续5秒。 (在决斗场中无效)`
+
+[grade]
+	64
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	60
+
+[physical attack]
+	73
+
+[magical attack]
+	65
+
+[attack speed]
+	50
+
+[stuck resistance]
+	50
+
+[price]
+	102400
+
+[repair price]
+	86016
+
+[value]
+	81920
+
+[equipment physical attack]
+	574	526
+
+[equipment magical attack]
+	604	554
+
+[equipment physical defense]
+	640	90
+
+[separate attack]
+	360	242
+
+[physical critical hit]
+	10
+
+[icon]
+	`Item/weapon/fighter/tonfa.img`	59
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	9	4
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	9	4
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		10000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		5000
+	[probability]
+		20
+	[stat]
+		`stuck resistance`
+		`+`	500
+[/then]
+
+[pvp]
+	[if]
+		[cooltime]
+			10000
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			5000
+		[probability]
+			2
+		[stat]
+			`stuck resistance`
+			`+`	0
+	[/then]
+[/pvp]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

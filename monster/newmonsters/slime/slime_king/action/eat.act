@@ -1,0 +1,27 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Eat.ani`
+	[SUB ANI]
+		`../Animation/Eat_High.ani`	0	-2
+		`../Animation/Eat_Bone.ani`	0	-1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		500	2500	100	100	0	0	0
+	[PULL APPENDAGE]
+		12.0	12.0	1000
+[/BEHAVIOR]

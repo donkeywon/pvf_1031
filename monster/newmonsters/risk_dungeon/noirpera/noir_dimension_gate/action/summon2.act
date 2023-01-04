@@ -1,0 +1,52 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Summon_Dimension_Gate00.ani`
+	[SUB ANI]
+		`../Animation/Summon_Dimension_Gate01.ani`	0	-10
+		`../Animation/Summon_Dimension_Gate00_1.ani`	0	0
+		`../Animation/Summon_Dimension_Gate02.ani`	0	0
+		`../Animation/Summon_Dimension_Gate03.ani`	0	0
+		`../Animation/Summon_Dimension_Gate03_1.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61754
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			300	500	700	900
+		[/RANDOM SELECT]
+		[RANDOM]
+			200	240	0
+		[NO EFFECT]
+		[USE MAP POS]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61754
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			300	500	700	900
+		[/RANDOM SELECT]
+		[RANDOM]
+			200	240	0
+		[NO EFFECT]
+		[USE MAP POS]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

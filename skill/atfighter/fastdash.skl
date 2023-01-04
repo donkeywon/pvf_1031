@@ -1,0 +1,96 @@
+#PVF_File
+
+[name]
+	`瞬步`
+
+[name2]
+	`Fast dash`
+
+[explain]
+	`向前方快速移动一定距离。`
+
+[basic explain]
+	`向前方快速移动一定距离。`
+
+[executable states]
+	8
+[/executable states]
+
+[purchase cost]
+	25
+[/purchase cost]
+
+[required level]
+	10
+
+[required level range]
+	2
+
+[type]
+	`[active]`
+
+[skill class]
+	3
+
+[maximum level]
+	1
+
+[growtype maximum level]
+	1	1	1	1	1	1
+
+[skill fitness growtype]
+	0	1	2	3	4
+[/skill fitness growtype]
+
+[durability decrease rate]
+	70
+
+[icon]
+	`Character/Fighter/Effect/ATSkillIcon.img`	2
+	`Character/Fighter/Effect/ATSkillIcon.img`	3
+
+[command]
+	{6=`(UP)`}
+	{8=`,`}
+	{6=`(RIGHT)`}
+	{8=`,`}
+	{6=`(BUFF)`}
+[/command]
+
+[command key explain]
+	`操作指令 : ↑→ + Space`
+
+[dungeon]
+	[consume MP]
+		10	14
+	[cool time]
+		5000	5000
+	[static data]
+		50	15	1000
+	[/static data]
+	[level info]
+		1
+		200
+	[/level info]
+[/dungeon]
+
+[pvp]
+	[cool time]
+		10000	10000
+	[level info]
+		1
+		150
+	[/level info]
+[/pvp]
+
+[death tower]
+[/death tower]
+
+[warroom]
+[/warroom]
+
+[level property]
+	1	99
+	`移动距离 : <int>px`
+	-1	0	1
+[/level property]

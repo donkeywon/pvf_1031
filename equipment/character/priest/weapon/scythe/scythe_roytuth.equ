@@ -1,0 +1,160 @@
+#PVF_File
+
+[name]
+	`圣光战镰`
+
+[name2]
+	`Holy Light Scythe Roytuth`
+
+[basic explain]
+	`攻击时， 有4%%的几率使敌人进入感电状态。`
+
+[detail explain]
+	`攻击时， 有4%%的几率使敌人进入感电状态5秒； 若攻击感电状态的敌人， 则每次攻击都会附加130点伤害。 (若敌人高于Lv61， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[grade]
+	61
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[physical attack]
+	41
+
+[magical attack]
+	41
+
+[attack speed]
+	80
+
+[stuck]
+	1
+
+[price]
+	97600
+
+[repair price]
+	81984
+
+[value]
+	78080
+
+[equipment physical attack]
+	528	490
+
+[equipment magical attack]
+	556	516
+
+[separate attack]
+	341	230
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	7	2
+	`[priest]`	115	1
+	`[priest]`	117	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/scythe.img`	40
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	8	0
+
+[layer variation]
+	2791
+	`holyscythec1`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2792
+	`holyscythec2`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	201
+	`holyscythed1`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	202
+	`holyscythed2`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		4
+	[reduce probability to human armor at pvp module]
+		60
+	[active status]
+		`lightning`	61	130
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

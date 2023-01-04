@@ -1,0 +1,66 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/shield.ani`
+	[SPEECH POS]
+		`防御准备！`	0	100	0	0
+	[/SPEECH POS]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			10541	10542
+		[/IS INDEX]
+		[CHECKED NO]
+		[<]
+			1
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10542
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	70
+		[USE OBJECT ZPOS]
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10543
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[APPENDAGE]
+		40000	
+		[move speed]
+		[%]
+			50.0
+	[/APPENDAGE]
+	[CHANGE AI]
+	[NORMAL]
+		2
+		`Action3.ai`
+	[CHANGE AI]
+	[NORMAL]
+		1
+		`DestinationSelect1.ai`
+[/BEHAVIOR]

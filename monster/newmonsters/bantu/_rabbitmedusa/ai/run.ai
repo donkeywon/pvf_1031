@@ -1,0 +1,23 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is the skill in cooltime()`	5
+		[false]
+	
+		[think]
+			[void]
+				`check random()`	50	100
+			[true]
+			[return]
+				5
+			[false]
+			[import ai]
+				`summon.ai`
+		[/think]
+	[true]
+	[import ai]
+		`summon.ai`
+	[/think]
+[/ai pattern]

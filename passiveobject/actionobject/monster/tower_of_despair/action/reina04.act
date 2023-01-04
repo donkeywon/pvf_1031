@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Bullet.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		5000	
+		[physical attack]
+		[-]
+			2000.0
+		[magical attack]
+		[-]
+			2000.0
+		[equipment physical attack]
+		[-]
+			2000.0
+		[equipment magical attack]
+		[-]
+			2000.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]

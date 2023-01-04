@@ -1,0 +1,77 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Chariot/Tell.ani`
+	[SUB ANI]
+		`../Animation/Goblin_c/Move_3.ani`	0	-12
+		`../Animation/Chariot/Back_R.ani`	0	-11
+		`../Animation/Goblin_a/Back/Attack_b.ani`	0	-10
+		`../Animation/Goblin_b/Move_2.ani`	0	-9
+		`../Animation/Goblin_b/Hat/Move_h2.ani`	0	-8
+		`../Animation/Goblin_b/Wp/Move_w.ani`	0	-7
+		`../Animation/Goblin_a/Attack.ani`	0	-6
+		`../Animation/Goblin_c/Hat/Move_h3.ani`	0	-5
+		`../Animation/Goblin_a/Hat/Attack_h.ani`	0	-3
+		`../Animation/Goblin_a/Wp/Attack_w.ani`	0	-3
+		`../Animation/Goblin_c/Wp/Move_w3.ani`	0	-2
+		`../Animation/Goblin_b/pants/Move_w.ani`	0	-7
+		`../Animation/Goblin_a/pants/Attack.ani`	0	-3
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8571
+		[PARTICLE FILENAME]
+			`../Particle/ThrowSpear.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	100
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		3
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		1
+	[END]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			150
+		[Y AXIS]
+			-10
+	[/SET SPEED]
+[/BEHAVIOR]

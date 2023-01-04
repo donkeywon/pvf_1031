@@ -1,0 +1,221 @@
+#PVF_File
+
+[name]
+	`烈焰盾波迪尔的魔杖`
+
+[basic explain]
+	`施放[烈焰冲击]时， 有30%%的几率增加50%%的范围。
+召唤火焰赫瑞克时， 无需牺牲亚德炎。
+施放[旋炎破]时， 有50%%的几率使火环大小增加25%%。
+无法进行分解。`
+
+[detail explain]
+	`施放[烈焰冲击]时，有30%%的几率增加50%%的范围。 (在决斗场中几率为1.5%%)
+召唤火焰赫瑞克时， 无需牺牲亚德炎。
+施放[旋炎破]时， 有50%%的几率使火环大小增加25%%。 (在决斗场中几率为1.5%%)
+无法进行分解。`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	65
+
+[magical attack]
+	69
+
+[attack speed]
+	100
+
+[cast speed]
+	50
+
+[stuck]
+	1
+
+[need material]
+	3337	420
+
+[repair price]
+	92736
+
+[value]
+	88320
+
+[equipment physical attack]
+	589	544
+
+[equipment magical attack]
+	719	664
+
+[separate attack]
+	346	234
+
+[skill levelup]
+	`[mage]`	61	1
+	`[mage]`	15	1
+	`[mage]`	57	1
+	`[mage]`	27	1
+	`[mage]`	21	2
+	`[mage]`	79	2
+	`[at mage]`	27	1
+	`[at mage]`	6	1
+	`[at mage]`	11	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/mage/rod.img`	80
+
+[field image]
+	`Item/field_weapon.img`	7
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	26	0
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	26	0
+
+[layer variation]
+	2150
+	`at_roda`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_rodd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	26	0
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`ROD_TOUCH`
+
+[durability]
+	24
+
+[weight]
+	2200
+
+[item group name]
+	`rod`
+
+[cool time]
+	10000
+
+[if]
+	[event use skill]
+		`mage`	57
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		30
+	[reduce probability to human armor at pvp module]
+		95
+	[skill data up]
+		`[mage]`	57	`[all]`	`[level]`	1	`%`	50
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`at mage`	11
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		50
+	[reduce probability to human armor at pvp module]
+		95
+	[skill data up]
+		`[at mage]`	11	`[all]`	`[static]`	0	`%`	25
+	[/skill data up]
+[/then]
+
+[skill data up]
+	`[mage]`	79	`[all]`	`[static]`	7	`%`	-100
+[/skill data up]
+
+[routing priority]
+	`mage`	1
+	`mage`	2
+	`at mage`	1
+	`at mage`	2
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

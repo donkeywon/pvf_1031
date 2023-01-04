@@ -1,0 +1,29 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Move.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DELETE APPENDAGE]
+		0	
+		[equipment physical defense]
+		[%]
+			5000.0
+		[equipment magical defense]
+		[%]
+			5000.0
+		[stuck]
+		[%]
+			30.0
+	[/DELETE APPENDAGE]
+[/BEHAVIOR]

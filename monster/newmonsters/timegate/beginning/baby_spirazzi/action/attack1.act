@@ -1,0 +1,89 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack1.ani`
+	[SOUND]
+		`BABYSKASA_SKILL_01`	0
+		`BABYSPEALAZZI_SKULL`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1000	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		5
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30090
+		[PARTICLE FILENAME]
+			`../Particle/ThrowStone.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	0	30
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30090
+		[PARTICLE FILENAME]
+			`../Particle/ThrowStone2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	0	30
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30090
+		[PARTICLE FILENAME]
+			`../Particle/ThrowStone3.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	0	30
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30090
+		[PARTICLE FILENAME]
+			`../Particle/ThrowStone.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	15	20
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30090
+		[PARTICLE FILENAME]
+			`../Particle/ThrowStone.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	30	10
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

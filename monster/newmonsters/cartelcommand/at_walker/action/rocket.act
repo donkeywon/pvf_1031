@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/rocket.ani`
+	[SUB ANI]
+		`../animation/rocket1.ani`	0	-10
+	[/SUB ANI]
+	[SPEECH]
+		`遵命！`	0	50
+		`兰蒂卢斯大人！`	0	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10551
+		[PARTICLE FILENAME]
+			`../Particle/rocket.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-107	0	124
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

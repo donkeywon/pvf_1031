@@ -1,0 +1,138 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack_5.ani`
+	[SUB ANI]
+		`../animation/body_effect/attack_5.ani`	0	1
+	[/SUB ANI]
+	[SOUND]
+		`YOUNGSKASA_ATK_01`	0
+		`YOUNGSKASA_SMASH`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			-500
+		[Z AXIS]
+			500
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			1000
+		[Z AXIS]
+			-1000
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE FLOATING HEIGHT]
+		0
+	[ADD CATEGORY]
+	[FIXTURE]
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`move.act`
+	[CHANGE ACTION FILE]
+	[STAY]
+		`stay.act`
+	[CHANGE AI]
+	[NORMAL]
+		2
+		`Action.ai`
+	[CHANGE AI]
+	[NORMAL]
+		1
+		`DestinationSelect.ai`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			13008
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			13014
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	20	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8700
+		[PARTICLE FILENAME]
+			`../particle/SlaveofSirocoManShockWave.ptl`
+		[LEVEL]
+			0
+		[POS]
+			100	20	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			13043
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			100	20	0
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		3	1500
+[/BEHAVIOR]

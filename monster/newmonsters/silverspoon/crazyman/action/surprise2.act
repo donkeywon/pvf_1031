@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Surprise2.ani`
+	[SUB ANI]
+		`../Animation/Effect/Shoot.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`有那么严重吗？`	0	50
+	[/SPEECH]
+	[SOUND]
+		`BOMB_02`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../../../EventBak/particle/pop2.ptl`	0	0	70
+	[PARTICLE]
+		`../../../EventBak/particle/pop2.ptl`	20	0	70
+	[PARTICLE]
+		`../../../EventBak/particle/pop2.ptl`	10	0	70
+	[PARTICLE]
+		`../../../EventBak/particle/pop2.ptl`	15	0	77
+	[PARTICLE]
+		`../../../EventBak/particle/pop2.ptl`	25	0	80
+	[PARTICLE]
+		`../../../EventBak/particle/pop2.ptl`	15	0	85
+[/BEHAVIOR]

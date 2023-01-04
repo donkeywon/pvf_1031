@@ -1,0 +1,44 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/araara.ani`
+	[SUB ANI]
+		`../animation/Effect/wparaara.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			100
+	[/SET SPEED]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8745
+		[PARTICLE FILENAME]
+			`../particle/eel.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	30
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8744
+		[PARTICLE FILENAME]
+			`../particle/wave.ptl`
+		[LEVEL]
+			0
+		[POS]
+			200	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,104 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/bubble.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[SUMMON MASTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[WHICH]
+	[SUMMON MASTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		600	
+		[equipment magical defense]
+		[%]
+			1500.0
+		[equipment physical defense]
+		[%]
+			1500.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			0
+		[Y START]
+			0
+		[Z START]
+			0
+		[MOVE ME]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[TRIGGER]
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		3	5
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Damage.ptl`	0	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[SUMMON MASTER]
+	[CHECKUP]
+		[HP]
+		[<=]
+			0
+		[%]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		3	5
+	[/RANDOM SELECT]
+[/TRIGGER]

@@ -1,0 +1,170 @@
+#PVF_File
+
+[name]
+	`冰龙斯卡萨的蚀骨爪`
+
+[name2]
+	`找不到代码name2_29747`
+
+[basic explain]
+	`攻击时， 有15%%的几率附加10%%的冰属性伤害。
+无法进行分解。`
+
+[grade]
+	64
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	43
+
+[magical attack]
+	22
+
+[need material]
+	3336	370
+
+[repair price]
+	86016
+
+[value]
+	81920
+
+[equipment physical attack]
+	604	554
+
+[equipment magical attack]
+	604	554
+
+[separate attack]
+	360	242
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[fighter]`	45	2
+	`[at fighter]`	45	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/claw.img`	76
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	21	0
+
+[layer variation]
+	2790
+	`clawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	22	0
+
+[layer variation]
+	2150
+	`at_clawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_clawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_clawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[water element]`
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		15
+	[add absolute damage]
+		`water`
+		`%`	10
+[/then]
+
+[routing priority]
+	`fighter`	3
+	`at fighter`	3
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

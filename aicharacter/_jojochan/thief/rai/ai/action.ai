@@ -1,0 +1,134 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	100.0	100.0	15.0	15.0
+		[true]
+	
+		[think]
+			[void]
+				`get random()`	0.0	100.0
+		
+			[think]
+				[last result]
+					`<=`	90
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`d`
+					[true]
+					[return]
+						-1
+					[false]
+					[return str]
+						`d`
+				[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	100
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`grap_throw`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`grap_throw`
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	1000.0	1000.0	15.0	15.0
+		[true]
+	
+		[think]
+			[void]
+				`get random()`	0.0	100.0
+		
+			[think]
+				[last result]
+					`<=`	50
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`s`
+					[true]
+					[return]
+						-1
+					[false]
+					[return str]
+						`s`
+				[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	75
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`super_throw1`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`s`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`s`
+			[/think]
+	[false]
+	[return str]
+		`super_throw1`
+	[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	100
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`super_throw2`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`s`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`s`
+			[/think]
+	[false]
+	[return str]
+		`super_throw2`
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

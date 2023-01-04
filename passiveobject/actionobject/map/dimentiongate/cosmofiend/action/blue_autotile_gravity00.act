@@ -1,0 +1,53 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Blue_AutoTile_Stay.ani`
+	[SUB ANI]
+		`../Animation/Red_AutoTile_Gravity00.ani`	0	0
+		`../Animation/Red_AutoTile_Gravity01.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[CHECK TIME]
+		300
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[CHECK SPECIFIC BUFF]
+		[CHANGE GRAVITY]
+		[DISTANCE]
+		[<=]
+			85
+		[ZPOS]
+		[<=]
+			5
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14115
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			85
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		13
+	[NOW]
+[/BEHAVIOR]

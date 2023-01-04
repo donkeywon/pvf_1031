@@ -1,0 +1,240 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Server/chair_server2_destroy.ani`
+	[SUB ANI]
+		`../Animation/Server/chair_server1_destroy.ani`	0	1
+		`../Animation/Server/chair_server3_destroy.ani`	0	2
+		`../Animation/Wagon_Back/Wagon_Back_Destroy.ani`	0	3
+		`../Animation/WagonDestroy.ani`	0	4
+		`../Animation/Stick/Stick_WagonDestroy.ani`	0	5
+		`../Animation/Server/chair_server4_destroy.ani`	0	6
+		`../Animation/Server/chair_server5_destroy.ani`	0	7
+		`../Animation/Server/chair_server6_destroy.ani`	0	8
+		`../Animation/Wagon_Front/Wagon_Front_Destroy.ani`	0	9
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		18	18
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+		[RANDOM SELECT]
+			-100	100
+		[/RANDOM SELECT]
+	[/SET SPEED]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8213
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-80	80	0
+		[RANDOM]
+			30	150
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8213
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-80	80	0
+		[RANDOM]
+			30	150
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		24	24
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+	[/SET SPEED]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8222
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-96	20	0
+		[FIX DIRECTION]
+		[RANDOM]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8222
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-33	20	0
+		[FIX DIRECTION]
+		[RANDOM]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8222
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			28	20	0
+		[FIX DIRECTION]
+		[RANDOM]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8222
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-63	-14	0
+		[FIX DIRECTION]
+		[RANDOM]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8222
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	-14	0
+		[FIX DIRECTION]
+		[RANDOM]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8222
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			69	-14	0
+		[FIX DIRECTION]
+		[RANDOM]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		25	25
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/WagonDistroy.ptl`	0	0	0
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8213
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-80	80	0
+		[RANDOM]
+			30	150
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8213
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-80	80	0
+		[RANDOM]
+			30	150
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8213
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-80	80	0
+		[RANDOM]
+			30	150
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8213
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-80	80	0
+		[RANDOM]
+			30	150
+	[/CREATE PASSIVEOBJECT]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]

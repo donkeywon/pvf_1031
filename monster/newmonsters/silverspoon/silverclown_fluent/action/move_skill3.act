@@ -1,0 +1,95 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Move_skill_test4.ani`
+	[SOUND]
+		`NORMALSILVER_SKILL_02_1`	0
+		`THUNDERC_ATK`	1
+	[/SOUND]
+	[SPEECH]
+		`叮当~`	4	5
+		`有本事就来抓我啊！`	4	20
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	3	0	0	0
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[ZPOS]
+	[<=]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+		[RANDOM SELECT]
+			300	350
+		[/RANDOM SELECT]
+		[Y AXIS]
+		[RANDOM SELECT]
+			70	120	-120	-70
+		[/RANDOM SELECT]
+		[Z AXIS]
+			620
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			330
+		[Z AXIS]
+			-480
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Y AXIS]
+			0
+		[Z AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[REVERSE]
+	[SET SPEED]
+		[X AXIS]
+		[RANDOM SELECT]
+			300	350
+		[/RANDOM SELECT]
+		[Y AXIS]
+		[RANDOM SELECT]
+			70	120	-120	-70
+		[/RANDOM SELECT]
+		[Z AXIS]
+			620
+	[/SET SPEED]
+[/BEHAVIOR]

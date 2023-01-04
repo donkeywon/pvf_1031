@@ -1,0 +1,57 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/shield.ani`
+	[SUB ANI]
+		`../animation/CureCast2.ani`	0	1
+		`../animation/CureCast1.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`MICA_SKILL_03`	10
+		`CURE_SEND`	11
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKED NO]
+	[>=]
+		1
+	[GET TARGET]
+		1
+	[DISTANCE]
+	[LOW]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9989
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	5
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+	[APPENDAGE]
+		0	
+		[attack speed]
+		[%]
+			-20.0
+		[move speed]
+		[%]
+			-20.0
+		[physical defense]
+		[%]
+			-30.0
+	[/APPENDAGE]
+[/BEHAVIOR]

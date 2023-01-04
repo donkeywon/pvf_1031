@@ -1,0 +1,147 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	15
+[/dungeon]
+
+[type]
+	`[normal]`
+
+[tile]
+	`Tile/SkyCastleNOPoll.til`
+	`Tile/SkyCastleDCPoll.til`
+	`Tile/SkyCastleNPoll.til`
+	`Tile/SkyCastleLCPoll.til`
+	`Tile/SkyCastleLCPoll.til`
+	`Tile/SkyCastleNPoll.til`
+	`Tile/SkyCastlePCPoll.til`
+	`Tile/SkyCastleNPoll.til`
+	`Tile/SkyCastleNOPoll.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/far0.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`../../PassiveObject/MapObject/ParticleFactory/Animation/OceanGradationTop.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`../../PassiveObject/MapObject/ParticleFactory/Animation/OceanGradationBottom.ani`
+		[layer]
+			`[close]`
+		[order]
+			`[upper]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	12	250	2002	256	1443	207	308	321
+
+[sound]
+	`M_OCEAN`
+	`R_ABYSMAL`
+[/sound]
+
+[animation]
+	`Animation/wshadow.ani`	`[bottom]`	387	319	0
+	`Animation/wshadow.ani`	`[bottom]`	1231	309	0
+	`Animation/wshadow.ani`	`[bottom]`	1629	316	0
+[/animation]
+
+[passive object]
+	13	150	0	140
+	13	650	0	160
+	13	1150	0	140
+	13	1750	0	145
+	13	2250	0	150
+	14	200	0	0
+	14	300	0	150
+	14	600	0	30
+	14	900	0	-100
+	14	1200	0	-40
+	14	1400	0	0
+	14	1850	0	-50
+	14	2200	0	-80
+	18	200	0	10
+	15	350	0	230
+	16	490	0	-20
+	17	650	0	60
+	15	720	0	-50
+	16	800	0	150
+	18	1100	0	-200
+	17	1210	0	30
+	17	1500	0	0
+	18	1800	0	10
+	16	2020	0	-225
+	1021	1085	226	0
+	1021	830	322	0
+	312	476	325	0
+	312	625	325	0
+	312	577	327	0
+	312	528	328	0
+[/passive object]
+
+[monster]
+	35	0	25	740	229	0	1	1	`[fixed]`	`[normal]`
+	50007	1	0	1532	244	0	1	1	`[fixed]`	`[normal]`
+	50008	1	0	1428	248	0	1	1	`[fixed]`	`[normal]`
+	70	0	25	913	249	0	1	1	`[fixed]`	`[normal]`
+	221	0	25	688	254	0	1	1	`[fixed]`	`[normal]`
+	34	0	25	1211	257	0	1	1	`[fixed]`	`[normal]`
+	220	0	25	450	269	0	1	1	`[fixed]`	`[normal]`
+	221	0	25	566	273	0	1	1	`[fixed]`	`[normal]`
+	70	0	25	1676	285	0	1	1	`[fixed]`	`[normal]`
+	34	0	25	1029	302	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[special passive object]
+	235	410	213	0	1
+	`[monster]`	220	25	3	10	-1
+	1021	603	217	0	1
+	`[item]`	3	1	-1	-1	-1
+	235	376	263	0	1
+	`[monster]`	220	25	4	10	-1
+	235	413	316	0	1
+	`[monster]`	220	25	3	10	-1
+	235	1600	318	0	1
+	`[trap]`	2211	1	1	10	-1
+	1021	1354	319	0	1
+	`[item]`	3	1	-1	-1	-1
+	235	911	319	0	1
+	`[trap]`	2001	1	1	10	-1	
+[/special passive object]
+
+[greed]
+	`FF EE`
+
+[map name]
+	`PVP 无名`

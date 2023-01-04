@@ -1,0 +1,40 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/fireball02.ani`
+	[SUB ANI]
+		`../Animation/effect/fireball02_e.ani`	0	1
+		`../Animation/effect/fireball02_spear_e.ani`	0	2
+		`../Animation/effect/fireball02_e2.ani`	0	3
+	[/SUB ANI]
+	[SPEECH]
+		`烧死你~！`	4	30
+	[/SPEECH]
+	[SOUND]
+		`R_FITZ_ATK`	12
+		`B_FITZ_SPEAR_THROW`	12
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11214
+		[PARTICLE FILENAME]
+			`../Particle/fireball.ptl`
+		[LEVEL]
+			0
+		[POS]
+			100	0	65
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

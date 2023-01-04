@@ -1,0 +1,67 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check key cooltime]
+			`tem`
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`by`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`rnad1`
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`rnad2`
+					[true]
+					[return]
+						-1
+					[false]
+					[return str]
+						`rand2`
+				[/think]
+	[false]
+	[return str]
+		`rand1`
+	[/think]
+	[false]
+	[think]
+		[void]
+			`get random()`	0.0	100.0
+	
+		[think]
+			[last result]
+				`<=`	50.0
+			[true]
+			[return str]
+				`by`
+			[false]
+			[return]
+				-1
+		[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`get random()`	0.0	100.0
+	
+		[think]
+			[last result]
+				`<=`	50.0
+			[true]
+			[return str]
+				`tem`
+			[false]
+			[return]
+				-1
+		[/think]
+	[/think]
+	[/think]
+[/ai pattern]

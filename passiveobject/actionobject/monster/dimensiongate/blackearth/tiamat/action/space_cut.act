@@ -1,0 +1,45 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Slash1.ani`
+	[SUB ANI]
+		`../animation/space_cut_deg.ani`	0	-1
+		`../animation/space_cut_hrry.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`TIAMAT_SPACE_OPEN`	0
+		`TIAMAT_SPACE_LOOP`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[CHECK TIME]
+		800
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[IS NOT TARGET STATE]
+			9
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PULL APPENDAGE]
+		3.1	3.1	800
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

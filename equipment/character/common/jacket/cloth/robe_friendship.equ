@@ -1,0 +1,115 @@
+#PVF_File
+
+[name]
+	`自然亲和长袍`
+
+[name2]
+	`Vital Frienship Robe`
+
+[grade]
+	42
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	40
+
+[magical attack]
+	21
+
+[magical defense]
+	21
+
+[price]
+	29400
+
+[repair price]
+	23520
+
+[value]
+	23520
+
+[equipment physical defense]
+	540	516
+
+[skill levelup]
+	`[mage]`	49	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/common/coat.img`	97
+
+[field image]
+	`Item/field_equip.img`	0
+
+[equipment type]
+	`[coat]`	17
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	1400
+
+[item group name]
+	`cl coat`
+
+[cool time]
+	10000
+
+[set name]
+	`自然亲和战袍  套装`
+
+[set item]
+	10101	12099	14097	18084	16083
+[/set item]
+
+[set ability]
+	[HP regen speed]
+		30
+	[if]
+		[cooltime]
+			20000
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			20000
+		[probability]
+			2
+		[stat]
+			`magical attack`
+			`+`	15
+	[/then]
+	[skill levelup]
+		`[mage]`	45	1
+		`[mage]`	46	1
+	[/skill levelup]
+	[fullset basic explain]
+		`被攻击时， 有2%%的几率使自身增加15点智力， 效果持续20秒。`
+[/set ability]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

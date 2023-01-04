@@ -1,0 +1,55 @@
+#PVF_File
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[<=]
+			40
+		[%]
+	[/CHECKUP]
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[<=]
+			60
+		[%]
+	[/CHECKUP]
+	[DO PROC BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[ATTACK]
+		2	0
+	[ON]
+	[TRIGGER]
+	[ATTACK]
+		2	3
+	[RESET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[ATTACK]
+		1	0
+	[ON]
+	[TRIGGER]
+	[ATTACK]
+		1	3
+	[RESET]
+[/BEHAVIOR]

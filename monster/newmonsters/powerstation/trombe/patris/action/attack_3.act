@@ -1,0 +1,71 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_3.ani`
+	[SUB ANI]
+		`../Animation/attack_3_1.ani`	0	1
+		`../Animation/attack_3_0.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`感受下电击的威力吧！！！`	0	50
+	[/SPEECH]
+	[SOUND]
+		`R_PATRIS_SKILL_03`	0
+		`PATRIS_BOW`	6
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			15085
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			60	0	85
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		13	13
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[GET TARGET]
+			1
+		[RANDOM]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+			-300	0	0
+		[MOVE ME]
+	[/TELEPORT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		7
+	[END]
+[/BEHAVIOR]

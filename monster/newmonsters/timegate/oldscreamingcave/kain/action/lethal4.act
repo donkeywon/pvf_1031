@@ -1,0 +1,90 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/lethal3.ani`
+	[SUB ANI]
+		`../Animation/effect/attack2_down_eff.ani`	0	1
+		`../Animation/effect/attack2_down_dust.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`KANE_SKILL_02`	1
+		`KANE_PHANTOM_02`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			1600
+		[Y AXIS]
+			400
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[TARGET]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Y AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+			-220	0	0
+		[NOT USE OBJECT ZPOS]
+		[MOVE ME]
+	[/TELEPORT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		14
+	[END]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[ATTACK]
+		20	0
+	[ON]
+[/BEHAVIOR]

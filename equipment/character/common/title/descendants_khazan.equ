@@ -1,0 +1,103 @@
+#PVF_File
+
+[name]
+	`卡赞的后裔`
+
+[name2]
+	`Descendants of Khazan`
+
+[explain]
+	`攻击时以1%%的机率，施展时以2%%的机率施展Lv10卡赞。`
+
+[flavor text]
+	`西斯玛，真正让你沉睡的不是我的斧头，而是这里的天才魔法师奥兹玛。-朝着卡赞、狂龙西斯玛尸体`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	55
+
+[icon]
+	`Item/Title/title.img`	180
+
+[equipment type]
+	`[title name]`	1
+
+[custom animation]
+	`TitleAnimation/descendants_khazan.ani`
+[/custom animation]
+
+[user power war point]
+	3000
+
+[HP MAX]
+	200
+
+[physical attack]
+	30
+
+[physical defense]
+	20
+
+[move speed]
+	30
+
+[attack speed]
+	40
+
+[cast speed]
+	20
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		1
+	[passive object]
+		20011	0	0	0	10	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		2
+	[passive object]
+		20011	0	0	0	10	0	``
+	[/passive object]
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

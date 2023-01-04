@@ -1,0 +1,173 @@
+#PVF_File
+
+[name]
+	`乱斩之袭`
+
+[name2]
+	`Slash Storm`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入出血状态。
+攻击时， 有5%%的几率发动阿特拉斯的[天罗地网]。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入出血状态10秒； 出血状态下的敌人， 每0.5秒受到183点伤害。 (若敌人高于Lv60， 则减少进入异常状态的几率； 反之， 则增加几率)
+攻击时， 有5%%的几率发动阿特拉斯的[天罗地网]。`
+
+[grade]
+	61
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[physical attack]
+	41
+
+[magical attack]
+	21
+
+[price]
+	97600
+
+[repair price]
+	81984
+
+[value]
+	78080
+
+[equipment physical attack]
+	556	516
+
+[equipment magical attack]
+	556	516
+
+[separate attack]
+	341	230
+
+[physical critical hit]
+	3
+
+[icon]
+	`Item/weapon/fighter/claw.img`	41
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	5	0
+
+[layer variation]
+	2790
+	`clawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	5	0
+
+[layer variation]
+	2150
+	`at_clawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_clawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_clawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		1000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[passive object]
+		48076	120	0	60	25	0	`DragonHeadEnergyBall.ptl`
+	[/passive object]
+[/then]
+
+[if]
+	[cooltime]
+		3000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[probability]
+		3
+	[active status]
+		`bleeding`	60	1100
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

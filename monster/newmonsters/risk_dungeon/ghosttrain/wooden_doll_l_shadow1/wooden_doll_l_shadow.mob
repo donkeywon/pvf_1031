@@ -1,0 +1,158 @@
+#PVF_File
+
+[name]
+	`芝诺的分身`
+
+[face image]
+	`Monster/MonsterFace.img`	498
+
+[die effect]
+	0	3	1
+
+[category]
+	`[human]`
+	`[melee combat]`
+	`[close-tough]`
+[/category]
+
+[ambient sound]
+	``
+
+[attack sound]
+	``
+
+[appear sound]
+	``
+
+[damage sound]
+	``
+
+[die sound]
+	``
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	143
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	2000
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	143
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	2000
+	`[HP MAX]`	`*`	188
+[/ability category]
+
+[level]
+	100	100
+
+[slow resistance]
+	20	20
+
+[freeze resistance]
+	20	20
+
+[stun resistance]
+	20	20
+
+[blind resistance]
+	20	20
+
+[stone resistance]
+	20	20
+
+[confuse resistance]
+	20	20
+
+[hold resistance]
+	20	20
+
+[HP regen speed]
+	20	20
+
+[move speed]
+	700	700
+
+[attack speed]
+	700	700
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	500	500
+
+[weight]
+	100000	100000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[waiting action]
+	`Action/Shadow_Stay.act`
+
+[move action]
+	`Action/Shadow_Move.act`
+
+[attack action]
+	`Action/Shadow_Fighter_Attack1.act`
+	`Action/Shadow_Fighter_Attack1_Start.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack1.atk`
+	``
+[/attack info]
+
+[cooltime]
+	5000	5000
+[/cooltime]
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`../Wooden_doll_L1/ai/Event.ai`
+		`ai/Shadow_DestinationSelect.ai`
+		`ai/Shadow_Action.ai`
+		`../Wooden_doll_L1/ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`../Wooden_doll_L1/ai/Event.ai`
+		`ai/Shadow_DestinationSelect.ai`
+		`ai/Shadow_Action.ai`
+		`../Wooden_doll_L1/ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`../Wooden_doll_L1/ai/Event.ai`
+		`ai/Shadow_DestinationSelect.ai`
+		`ai/Shadow_Action.ai`
+		`../Wooden_doll_L1/ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`../Wooden_doll_L1/ai/Event.ai`
+		`ai/Shadow_DestinationSelect.ai`
+		`ai/Shadow_Action.ai`
+		`../Wooden_doll_L1/ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`../Wooden_doll_L1/ai/Event.ai`
+		`ai/Shadow_DestinationSelect.ai`
+		`ai/Shadow_Action.ai`
+		`../Wooden_doll_L1/ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	220
+
+[warlike]
+	90
+
+[intelligence]
+	90	90	3000
+
+[vision]
+	600
+
+[lie frame]
+	1	2	4	3	4

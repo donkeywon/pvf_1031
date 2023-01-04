@@ -1,0 +1,55 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/dispair_start.ani`
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			10
+		[HP]
+		[>=]
+			1
+		[%]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			56453
+		[/IS INDEX]
+		[TRIGGER CHECK]
+		[ATTACK]
+			2	0
+		[ON]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

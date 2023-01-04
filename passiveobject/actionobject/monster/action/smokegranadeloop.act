@@ -1,0 +1,33 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/SmokeGranadeLoop.ani`
+	[SUB ANI]
+		`../Animation/SmokeGranadeSmokeLoopStill.ani`	0	0
+		`../Animation/SmokeGranadeGas.ani`	0	0
+		`../Animation/SmokeGranadeSmokeLoop.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`SMOKESHELL_LOOP`	0
+		`SMOKESHELL_LOOP`	1
+		`SMOKESHELL_LOOP`	2
+		`SMOKESHELL_LOOP`	3
+		`SMOKESHELL_LOOP`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[NOW]
+[/BEHAVIOR]

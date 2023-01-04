@@ -1,0 +1,157 @@
+#PVF_File
+
+[name]
+	`尼尔巴斯的复仇十字`
+
+[basic explain]
+	`[武器祝福]、 [天使祝福]、 [荣誉祝福]持续时间 +20%%
+
+施放普通攻击的最后一击时， 可消耗2个无色小晶块施放Lv8的[双子沁盾]。
+无法进行分解。`
+
+[detail explain]
+	`[武器祝福]、 [天使祝福]、 [荣誉祝福]持续时间 +20%%
+
+施放普通攻击的最后一击时， 可消耗2个无色小晶块施放Lv8的[双子沁盾]。 (冷却时间为60秒)
+无法进行分解。`
+
+[grade]
+	79
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[physical defense]
+	65
+
+[magical attack]
+	52
+
+[magical defense]
+	65
+
+[cast speed]
+	20
+
+[need material]
+	3338	840
+
+[repair price]
+	106176
+
+[value]
+	101120
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	754	704
+
+[equipment magical attack]
+	716	669
+
+[equipment physical defense]
+	790	790
+
+[equipment magical defense]
+	790	790
+
+[separate attack]
+	450	305
+
+[icon]
+	`item/new_equipment/01_weapon/priest/cross/cross.img`	85
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	25	0
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[routing priority]
+	`priest`	1
+[/routing priority]
+
+[skill data up]
+	`[priest]`	7	`[all]`	`[level]`	0	`%`	20
+	`[priest]`	53	`[all]`	`[level]`	0	`%`	20
+	`[priest]`	45	`[all]]`	`[level]`	0	`%`	20
+[/skill data up]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+	[my state]
+		`final attack`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[consume item]
+		3037	2
+	[perform skill]
+		`priest`	109	1	0
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

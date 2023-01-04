@@ -1,0 +1,49 @@
+#PVF_File
+
+[type]
+	`change status`
+
+[duration]
+	0
+
+[effect animation]
+	``
+
+[buff]
+	1
+
+[icon image]
+	``	0
+
+[max overlap]
+	0
+
+[string data]
+	`attack speed`
+	`move speed`
+	`cast speed`
+	`magical critical hit rate`
+	`physical critical hit rate`
+[/string data]
+
+[int data]
+	1	1	1	1	1
+[/int data]
+
+[float data]
+	3.0	3.0	5.0	5.0	5.0
+[/float data]
+
+[if]
+	[attack condition]
+		`back attack`
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	10
+[/then]

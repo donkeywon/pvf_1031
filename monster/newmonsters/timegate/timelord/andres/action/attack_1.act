@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack_1_0.ani`
+	[SUB ANI]
+		`../Animation/Attack_1_3.ani`	0	-1
+		`../Animation/Attack_1_5.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`时间之链！`	2	50
+	[/SPEECH]
+	[SOUND]
+		`BASTEN_SCREAM`	0
+		`ANDRES_TIMECHAIN_FIRE`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16075
+		[PARTICLE FILENAME]
+			`../Particle/Arrow_down2.ptl`
+		[LEVEL]
+			1
+		[POS]
+			30	1	120
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

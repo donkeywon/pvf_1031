@@ -1,0 +1,146 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`哥布林精锐队员`
+
+[face image]
+	`Monster/MonsterFace.img`	335
+
+[die effect]
+	0	10	0
+
+[overhead gauge type]
+	1
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`+`	650
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[category]
+	`[oneside move]`
+	`[goblin]`
+[/category]
+
+[fix direction]
+	`[right]`
+
+[HP regen speed]
+	0	0
+
+[MP regen speed]
+	0	0
+
+[level]
+	1	50
+
+[move speed]
+	720	720
+
+[attack speed]
+	500	500
+
+[cast speed]
+	500	500
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	40000	40000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[lie frame]
+	2	3	2	3	4
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[proc action]
+	`Action/Proc.act`
+
+[attack action]
+	`Action/Attack.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack.atk`
+[/attack info]
+
+[cooltime]
+	1000
+[/cooltime]
+
+[vision]
+	640
+
+[think term]
+	500
+
+[destination change term]
+	300
+
+[keep distance with target]
+	300
+
+[ai pattern]
+	[normal]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/normal]
+	[expert]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/expert]
+	[master]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/master]
+	[king]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/king]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

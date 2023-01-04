@@ -1,0 +1,37 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Casting.ani`
+	[SPEECH]
+		`来了好多人！嘿嘿！`	2	50
+		`加速！！`	2	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61286
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			150
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		5000	
+		[move speed]
+		[%]
+			80.0
+	[/APPENDAGE]
+[/BEHAVIOR]

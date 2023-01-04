@@ -1,0 +1,212 @@
+#PVF_File
+
+[name]
+	`机械臂捷克`
+
+[face image]
+	`Monster/MonsterFace.img`	513
+
+[category]
+	`[human]`
+	`[close-manace]`
+[/category]
+
+[ambient sound]
+	``
+
+[attack sound]
+	``
+
+[appear sound]
+	``
+
+[damage sound]
+	`R_WARJACK_DMG`
+
+[die sound]
+	`WARJACK_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	157
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	110
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	172
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	110
+	`[HP MAX]`	`*`	500
+[/ability category]
+
+[level]
+	100	100
+
+[dark resistance]
+	-30	-30
+
+[light resistance]
+	30	30
+
+[slow resistance]
+	30	30
+
+[freeze resistance]
+	30	30
+
+[poison resistance]
+	10	10
+
+[stun resistance]
+	30	30
+
+[curse resistance]
+	-10	-10
+
+[blind resistance]
+	-10	-10
+
+[lightning resistance]
+	100	100
+
+[stone resistance]
+	30	30
+
+[sleep resistance]
+	30	30
+
+[burn resistance]
+	10	10
+
+[piercing resistance]
+	20	20
+
+[confuse resistance]
+	30	30
+
+[hold resistance]
+	30	30
+
+[move speed]
+	650	650
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1400	1400
+
+[weight]
+	150000	150000
+
+[stuckbonus on damage]
+	10	10	10	10
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[attack action]
+	`Action/ball.act`
+	`Action/laser.act`
+	`Action/boid.act`
+	`Action/punch.act`
+	`Action/hold.act`
+	`Action/punch1.act`
+	`Action/punch2.act`
+[/attack action]
+
+[attack info]
+	``
+	`attackinfo/laser.atk`
+	``
+	`attackinfo/punch.atk`
+	`attackinfo/hold.atk`
+	`attackinfo/punch.atk`
+	`attackinfo/punch.atk`
+[/attack info]
+
+[event super on scr]
+	`[on hp]`	60	5000	1
+	`[unbreakable]`	-1	-1	-1	-1
+[/event super on scr]
+
+[cooltime]
+	4000	10000	6000	3000	8000	4000	4000
+[/cooltime]
+
+[think term]
+	200
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[warlike]
+	70
+
+[vision]
+	1000
+
+[lie frame]
+	1	2	3	3	4
+
+[level of difficulty]
+	[easy]
+		-40	2000
+	[medium]
+		-20	1000
+	[hard]
+		0	600
+	[ultimate]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]
+
+[add gravity in aerial]
+	1	10.0	-300.0

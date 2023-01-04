@@ -1,0 +1,87 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/bomb1.ani`
+	[SUB ANI]
+		`../Animation/bomb1_1.ani`	0	1
+		`../Animation/bomb1_2.ani`	0	2
+		`../Animation/bomb1_3.ani`	0	3
+	[/SUB ANI]
+	[SPEECH]
+		`咕噜~能量增加~！！！`	6	100
+	[/SPEECH]
+	[SOUND]
+		`GORO_BOMB`	4
+		`GORO_SKILL_04`	5
+		`GORO_BOMB`	13
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE FLOATING HEIGHT]
+		200
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10531
+		[PARTICLE FILENAME]
+			`../Particle/bomb.ptl`
+		[LEVEL]
+			0
+		[POS]
+			60	0	20
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		14	14
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10531
+		[PARTICLE FILENAME]
+			`../Particle/bomb1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			60	0	20
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		15	15
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE FLOATING HEIGHT]
+		80
+[/BEHAVIOR]

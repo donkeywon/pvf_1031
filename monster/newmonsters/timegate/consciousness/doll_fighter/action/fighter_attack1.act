@@ -1,0 +1,90 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Fighter_Attack1.ani`
+	[SUB ANI]
+		`../Animation/ball/Fighter_Attack1.ani`	0	0
+		`../Animation/ball_eff/Fighter_Attack1.ani`	0	0
+		`../Animation/ball_eff/Fighter_Attack1.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`VERTICAL_CRASH`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			10
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			350
+		[Z AXIS]
+			-1900
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Z AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			21031
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			50	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			21032
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			40	0	3
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		1	1000
+[/BEHAVIOR]

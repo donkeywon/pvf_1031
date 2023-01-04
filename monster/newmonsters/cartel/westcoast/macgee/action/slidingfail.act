@@ -1,0 +1,59 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/sliding.ani`
+	[SPEECH]
+		`利刃滑铲！`	0	50
+		`哎呦！我的腰……`	2	100
+	[/SPEECH]
+	[SUB ANI]
+		`../../../../../../Character/Gunner/Effect/Animation/DashAttackDust1.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`MACKI_SKILL_01`	0
+		`SLIDING`	1
+		`R_MACKI_DMG`	2
+		`BONE_CRUSHER_HIT`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			0
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			500
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/DustMove.ptl`	0	0	0
+	[SET ACTION]
+	[DOWN]
+	[DEFAULT]
+		1
+	[FORCE]
+		200	400
+	[NOW]
+[/BEHAVIOR]

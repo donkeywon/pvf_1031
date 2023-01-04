@@ -1,0 +1,180 @@
+#PVF_File
+
+[name]
+	`绝灭之手`
+
+[name2]
+	`Hands of Extinction`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入失明状态， 并使自身增加物理暴击率。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入失明状态9秒， 失明状态下的敌人减少90%%的视野和20%%的命中率； 同时还会使自身增加25%%的物理暴击率， 效果持续9秒； 但在决斗场中， 只能持续4.5秒。 (若敌人高于Lv60， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	63
+
+[rarity]
+	5
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	46
+
+[magical attack]
+	46
+
+[attack speed]
+	50
+
+[stuck]
+	-1
+
+[anti evil]
+	8
+
+[need material]
+	3228	60
+
+[repair price]
+	74088
+
+[value]
+	70560
+
+[equipment physical attack]
+	600	575
+
+[equipment magical attack]
+	500	479
+
+[separate attack]
+	314	212
+
+[icon]
+	`Item/weapon/mage/pole.img`	49
+
+[field image]
+	`Item/field_weapon.img`	8
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[mage]`
+
+[variation]
+	10	0
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	10	0
+
+[layer variation]
+	2150
+	`at_polea`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_poled`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	10	0
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`POLE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2400
+
+[item group name]
+	`pole`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		13500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		9000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		70
+	[active status]
+		`blind`	60	90	20
+	[target]
+		`myself`	-1
+	[stat]
+		`physical critical hit rate`
+		`+`	25
+[/then]
+
+[possible kiri protect]

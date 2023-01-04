@@ -1,0 +1,32 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	400.0	0.0	400.0	0.0
+		[true]
+	
+		[think]
+			[check use skill]
+				56
+			[true]
+			[return str]
+				`wallofice`
+			[false]
+		
+			[think]
+				[check use skill]
+					57
+				[true]
+				[return]
+					0
+				[false]
+				[return]
+					-1
+			[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+[/ai pattern]

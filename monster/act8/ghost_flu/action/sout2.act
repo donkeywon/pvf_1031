@@ -1,0 +1,233 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Sout.ani`
+	[SUB ANI]
+		`../animation/Sout_eff.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`FLU_WAVE_GET`	1
+		`FLU_SKILL_03`	2
+		`FLU_WAVE_SHOT`	3
+	[/SOUND]
+	[SPEECH]
+		`呜~~~~啊啊！`	2	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		9
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		3	3200
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[IF]
+		`throw`	
+		[<]
+			2
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		7
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9053
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			122	175	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9074
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			356	275	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9074
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			548	275	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9074
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			745	275	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9074
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			904	275	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9074
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			1154	275	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9053
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			1374	296	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			`throw`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		500	1000	200	180	0	0	0
+[/BEHAVIOR]

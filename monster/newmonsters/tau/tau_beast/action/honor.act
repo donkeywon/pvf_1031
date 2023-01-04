@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/TackleReady.ani`
+	[SUB ANI]
+		`../Animation/wrap/tackleready_100.ani`	0	0
+		`../Animation/acc01/tackleready_500.ani`	0	10
+		`../Animation/horn/tackleready_500.ani`	0	10
+		`../Animation/weapon/tackleready_700.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`TAU_COMMAND`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`就是现在！！以战斗民族牛头怪的名誉突击！！！！`
+	[APPENDAGE]
+		7000	
+		[move speed]
+		[%]
+			120.0
+	[/APPENDAGE]
+[/BEHAVIOR]

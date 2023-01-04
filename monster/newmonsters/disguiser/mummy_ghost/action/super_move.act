@@ -1,0 +1,169 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/super/move.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61422
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		8
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			56408
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61422
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		12
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			56408
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61422
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		20
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			56408
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			61422
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<=]
+		8
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			56408
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		0	
+		[move speed]
+		[%]
+			70.0
+	[/APPENDAGE]
+	[DELETE APPENDAGE]
+		0	
+		[equipment physical attack]
+		[%]
+			100.0
+		[hit recovery]
+		[%]
+			1200.0
+	[/DELETE APPENDAGE]
+	[SAY SPEECH]
+		`身体……变轻了……`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		0	
+		[equipment physical attack]
+		[%]
+			100.0
+	[/APPENDAGE]
+	[DELETE APPENDAGE]
+		0	
+		[hit recovery]
+		[%]
+			1200.0
+	[/DELETE APPENDAGE]
+	[SAY SPEECH]
+		`充满愤怒的攻击!`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		0	
+		[hit recovery]
+		[%]
+			1200.0
+	[/APPENDAGE]
+	[SAY SPEECH]
+		`不会因为你的攻击而萎缩的！`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DELETE APPENDAGE]
+		0	
+		[move speed]
+		[%]
+			70.0
+		[equipment physical attack]
+		[%]
+			100.0
+		[hit recovery]
+		[%]
+			1200.0
+	[/DELETE APPENDAGE]
+[/BEHAVIOR]

@@ -1,0 +1,149 @@
+#PVF_File
+
+[name]
+	`审判者之魂匕首`
+
+[name2]
+	`找不到代码name2_37102`
+
+[basic explain]
+	`攻击人型怪敌人时， 附加10%%的伤害。
+无法进行分解。`
+
+[grade]
+	39
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	35
+
+[physical attack]
+	28
+
+[attack speed]
+	100
+
+[move speed]
+	20
+
+[stuck]
+	1
+
+[MP MAX]
+	120
+
+[price]
+	62400
+
+[repair price]
+	49920
+
+[value]
+	49920
+
+[equipment physical attack]
+	323	289
+
+[equipment magical attack]
+	342	306
+
+[separate attack]
+	221	146
+
+[physical critical hit]
+	10
+
+[icon]
+	`Item/weapon/thief/dagger.img`	91
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	19	2
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[if]
+	[target type]
+		`human`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[routing priority]
+	`thief`	1
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

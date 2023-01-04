@@ -1,0 +1,48 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Throwloop.ani`
+	[SUB ANI]
+		`../Animation/back/Throwloop_back.ani`	0	-1
+		`../Animation/weapon/Throwloop_wp.ani`	0	0
+		`../Animation/pants/Throwloop_pants.ani`	0	1
+		`../Animation/shirts/Throwloop_shirts.ani`	0	1
+		`../Animation/shoes/Throwloop_shoes.ani`	0	1
+		`../Animation/hat/Throwloop_hat.ani`	0	2
+	[/SUB ANI]
+	[SOUND PROBABILITY]
+		`R_GARCHER_SKILL_01`	2	30
+		`JACO_BOWATK`	4	100
+	[/SOUND PROBABILITY]
+	[SPEECH]
+		`咿呀呀呀呀！！！`	0	30
+	[/SPEECH]
+	[SOUND]
+		`TRANS_GBL_SHOT`	2
+	[/SOUND]
+[/MOTION]
+
+[AUTOEND]
+	0
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10049
+		[PARTICLE FILENAME]
+			`../Particle/FastThrowStone.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

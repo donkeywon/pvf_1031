@@ -1,0 +1,109 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/GuardOff/Body.ani`
+	[SUB ANI]
+		`../Animation/GuardOff/Jaw.ani`	0	1
+		`../Animation/GuardOff/Head.ani`	0	2
+		`../Animation/GuardOff/Eye_Dodge.ani`	0	3
+		`../Animation/GuardOff/Start_Back_Dodge.ani`	0	4
+		`../Animation/GuardOff/Start_Core_Dodge.ani`	0	5
+		`../Animation/GuardOff/Start_Floor_Dodge.ani`	0	6
+		`../Animation/GuardOff/Start_Head_Dodge.ani`	0	7
+		`../Animation/GuardOff/Core_Particle.ani`	0	8
+		`../Animation/GuardOff/Core_Shock.ani`	0	9
+		`../Animation/GuardOff/Fast_Wind_1.ani`	0	10
+		`../Animation/GuardOff/Floor_Dust.ani`	0	11
+		`../Animation/GuardOff/Fast_Wind_2.ani`	0	12
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			54032
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		20	30	20	255	255	255	255
+	[SHAKING]
+		5	400
+	[SET DAMAGE BOX]
+	[ON]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54039
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			146	0	100
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54040
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			191	0	0
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		14	14
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`ReleaseStay.act`
+	[CHANGE AI]
+	[NORMAL]
+		2
+		`ReleaseAction.ai`
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]

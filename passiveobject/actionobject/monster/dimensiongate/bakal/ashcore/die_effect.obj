@@ -1,0 +1,46 @@
+#PVF_File
+
+[hp max]
+	1000000
+
+[hp destroy]
+	1
+
+[floating height]
+	0
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	1000
+
+[basic motion]
+	`Animation/dummy.ani`
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	10000
+[/object destroy condition]
+
+[add particles]
+	[particle]
+		[file]
+			`../../../../Common/Particle/die.ptl`
+		[create sound]
+			`ASHCORE_FIRE_LOOP`
+		[create delay]
+			10
+	[/particle]
+	[particle]
+		[file]
+			`particle/die.ptl`
+		[create sound]
+			`ASHCORE_FIRE_LOOP`
+		[create delay]
+			700
+	[/particle]
+[/add particles]

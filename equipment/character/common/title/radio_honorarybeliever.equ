@@ -1,0 +1,122 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	`★Honorary Believer of Radio★`
+
+[explain]
+	`攻击时以1%%的机率30秒内发动力量+45光环。施展时以2%%的机率30秒内发动智能+45光环。在聊天视窗输入收音机、DNF收音机、收音机名誉信徒时会输出DNF收音机音效`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	130
+
+[custom animation]
+	`TitleAnimation/radio_honorarybeliever.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[usable period]
+	30
+
+[physical attack]
+	27
+
+[magical attack]
+	27
+
+[inventory limit]
+	10000
+
+[HP regen speed]
+	52
+
+[MP regen speed]
+	10
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[aura active]
+		`physical attack`
+		`+`	45	300
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[aura active]
+		`magical attack`
+		`+`	45	300
+[/then]
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[move wav]
+	`NAME_TOUCH`
+
+[special ability]
+	1
+
+[chat emoticon index]
+	30
+
+[icon mark]
+	`Item/IconMark.img`	64

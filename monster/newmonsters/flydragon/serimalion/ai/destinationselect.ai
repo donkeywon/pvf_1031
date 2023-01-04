@@ -1,0 +1,53 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[target state]
+			4.0
+		[true]
+		[return]
+			11
+		[false]
+	
+		[think]
+			[void]
+				`is target in attack area()`	100.0	80.0	85.0	85.0
+			[true]
+			[return]
+				1
+			[false]
+		
+			[think]
+				[void]
+					`number of in attack area()`	110.0	110.0	50.0	50.0
+					`friend`
+					`monster`	61125
+			
+				[think]
+					[last result]
+						`<=`	1.0
+					[true]
+				
+					[think]
+						[void]
+							`get random()`	0.0	100.0
+					
+						[think]
+							[last result]
+								`<=`	30.0
+							[true]
+							[return]
+								11
+							[false]
+							[return]
+								11
+						[/think]
+	[/think]
+	[false]
+	[return]
+		1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

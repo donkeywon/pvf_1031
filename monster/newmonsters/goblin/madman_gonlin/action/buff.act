@@ -1,0 +1,46 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/super/buff.ani`
+	[SUB ANI]
+		`../Animation/hat/buff_hat.ani`	0	0
+		`../Animation/pants/buff_pants.ani`	0	0
+		`../Animation/shirts/buff_shirts.ani`	0	0
+		`../Animation/Top/buff_top.ani`	0	0
+		`../Animation/weapon/buff_wp.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`MADGBL_SKILL`	1
+	[/SOUND]
+	[SPEECH]
+		`呃啊啊啊啊！！`	1	99
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		0	
+		[attack speed]
+		[%]
+			20.0
+		[move speed]
+		[%]
+			20.0
+		[hp max]
+		[%]
+			30.0
+	[/APPENDAGE]
+	[RESTORE]
+	[HP]
+		100
+	[%]
+[/BEHAVIOR]

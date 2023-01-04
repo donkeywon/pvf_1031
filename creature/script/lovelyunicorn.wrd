@@ -1,0 +1,157 @@
+#PVF_File
+
+[ambient]
+	[room list]
+		`主人又在发呆了~再这么下去，我们会变成阿呆的！`
+		`原地飞行好累的~我快支援不住了！！！`
+		``	
+		[in elven gard]
+			``
+		[/in elven gard]
+		[in alfhlyra]
+			``
+		[/in alfhlyra]
+		[in stom pass]
+			``
+		[/in stom pass]
+	[/room list]
+	[main game]
+		[fill point under]
+			20
+			`主人，神兽也是兽，神兽也会饿！`
+			`主人，神兽也是兽，神兽也会饿！`
+			`主人，神兽也是兽，神兽也会饿！`
+		[/fill point under]
+		[enemies alive]
+			[hits over]
+				20
+				`我可是神兽、神兽哦！再欺负我，我就发怒了！！！`
+				`啊~救命！我不想变成无角兽！`
+			[/hits over]
+			[hits under]
+				21
+				`主人，我看好你哦！`
+				`哎，这些怪物什么时候才能像我们一样时刻追求进步呀！`
+			[/hits under]
+		[/enemies alive]
+		[enemies destroyed]
+		[rank over]
+			`b`
+			`哇，主人好厉害呀，我也要加油了！`
+			`想找我家主人签名的，来找我排队吧！`
+		[/rank over]
+		[rank under]
+			`b`
+			`主人别伤心，要不然我也要难过了！`
+			`主人，下次我们一起努力！`
+		[/rank under]
+	[/main game]
+[/ambient]
+
+[trigger]
+	[room list]
+		[renamed]
+			`主人，一定要帮我取个好听的名字哦！`
+		[/renamed]
+		[pop random]
+			40	
+			[call the name]
+				`主人喊我的名字的时候~有种幸福的感觉！`
+			[/call the name]
+		[/pop random]
+		[pop random]
+			40	
+			[equip]
+				`主人，我能一直呆在你身边吗？`
+				`外面的世界真美好！`
+			[/equip]
+		[/pop random]
+		[pop random]
+			50	
+			[level up]
+				`祝我升级快乐！祝我升级快乐！`
+				`为了实现主人的梦想，我要快快成长！`
+			[/level up]
+		[/pop random]
+		[pop random]
+			50	
+			[character level up]
+				`恭喜主人，快对着我的角许愿吧！`
+			[/character level up]
+		[/pop random]
+		[evolution]
+			``
+		[/evolution]
+		[eat feed]
+			`什么诱惑都比不上美食的诱惑！`
+		[/eat feed]
+	[/room list]
+	[main game]
+		[eat feed]
+			`主人，不要老看着我吃嘛！人家会害羞的~`
+			`我现在正是长身体的时候，一定要多吃！`
+		[/eat feed]
+		[none feed]
+			`主人，好饿啊！我快飞不动了~`
+		[/none feed]
+		[end buff]
+			`食物太少啦~~`
+		[/end buff]
+		[dying]
+			`我好舍不得主人啊！……`
+		[/dying]
+		[using overskill]
+			``
+			``
+		[/using overskill]
+		[pop random]
+			40	
+			[skill gauge full]
+				``
+				``
+			[/skill gauge full]
+		[/pop random]
+		[pop random]
+			40	
+			[over skill gauge full]
+				``
+				``
+			[/over skill gauge full]
+		[/pop random]
+		[over skill waiting]
+			``
+			``
+		[/over skill waiting]
+		[call the name]
+			`主人喊我的名字的时候~有种幸福的感觉！`
+		[/call the name]
+		[pop random]
+			40	
+			[equip]
+				`主人，我能一直呆在你身边吗？`
+				`外面的世界真美好！`
+			[/equip]
+		[/pop random]
+		[pop random]
+			50	
+			[level up]
+				`祝我升级快乐！祝我升级快乐！`
+				`为了实现主人的梦想，我要快快成长！`
+			[/level up]
+		[/pop random]
+		[pop random]
+			50	
+			[character level up]
+				`恭喜主人，快对着我的角许愿吧！`
+			[/character level up]
+		[/pop random]
+		[evolution]
+			``
+		[/evolution]
+	[/main game]
+	[pvp]
+		[press creature button]
+			``
+		[/press creature button]
+	[/pvp]
+[/trigger]

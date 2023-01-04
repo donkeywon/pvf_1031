@@ -1,0 +1,30 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/CastingStay.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`斯帕克~袭击！！`
+	[SUMMON MONSTER]
+		[INDEX]
+		[RANDOM SELECT]
+			56132	56133
+		[/RANDOM SELECT]
+		[LEVEL]
+			0
+		[POS]
+			80	0	60
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

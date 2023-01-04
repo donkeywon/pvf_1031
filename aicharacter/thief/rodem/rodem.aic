@@ -1,0 +1,161 @@
+#PVF_File
+
+[minimum info]
+	`黑豹罗奇`	6	1	1	1	70	0	0	0	0	0	0
+	`no creature`	0	0	0
+
+[additional character status]
+	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	10	10	10	100	100	100	100	100	100	100	100	100	100	100	100	100	0	100	100	100
+[/additional character status]
+
+[character status rate]
+	450	1000	1	1	1	1	1	6	1	6	1	1	100	1.15	1.15	1.2	3	1	4	1	1	1	1	1	100	100	10	100	1	1	1	1	1	1	1	1	1	1	100	100	1
+[/character status rate]
+
+[attack damage rate]
+	0.06
+
+[add equipment status from level]
+	1
+
+[armor subtype]
+	4
+
+[custom skill level]
+[/custom skill level]
+
+[quick skill]
+	49	12
+	24	15
+	23	10
+	5	15
+	21	15
+[/quick skill]
+
+[skill]
+	10	1
+	1	5
+	11	1
+	19	1
+	20	1
+	44	1
+	65	1
+	43	1
+	9	1
+	14	1
+	15	1
+	181	2
+	182	2
+	184	1
+	179	8
+	170	1
+	60	1
+	174	60
+	61	1
+	169	1
+	190	1
+[/skill]
+
+[skill correction]
+	5	0.3	23	0.8	21	0.8
+[/skill correction]
+
+[quick item]
+[/quick item]
+
+[equipment]
+	26566	2	0
+	37074	1	0
+	10951	3	0
+	14940	1	0
+	12945	0	0
+	18943	0	0
+	16934	1	0
+	20155	3	0
+	22148	1	0
+	24163	0	0
+	1760085	2	0
+[/equipment]
+
+[think term]
+	100
+
+[destination change term]
+	200
+
+[keep distance with target]
+	400
+
+[warlike]
+	20
+
+[vision]
+	2000
+
+[keep range distance with target]
+	280	0	60	200
+
+[limit passiveobject]
+[/limit passiveobject]
+
+[targeting bonus]
+	100	0	100	0	0	0	100	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	`[stand]`
+	`[dash]`	0	0
+	`[slow]`
+	`[confuse]`	0
+
+[ai pattern]
+	`Event.ai`
+	`DestinationSelect.ai`
+	`Action.ai`
+	`MoveMethod.ai`
+[/ai pattern]
+
+[key stream]
+	`atk1`
+	`attack1.key`
+	`reset`
+	`reset.key`
+	`atk21`
+	`attack21.key`
+	`atk23`
+	`attack23.key`
+	`atk49`
+	`attack49.key`
+	`combo`
+	`combo.key`
+	`combo1`
+	`combo1.key`
+	`eixt`
+	`exit.key`
+[/key stream]
+
+[key cooltime]
+	`atk1`	5000
+	`combo`	2000
+	`combo1`	4000
+	`reset`	100
+[/key cooltime]
+
+[etc action]
+	`action/Shadow_start.act`
+	`action/Shadow.act`
+	`action/Shadow_end.act`
+[/etc action]
+
+[proc action]
+	`action/proc.act`
+
+[speech on situation]
+	[on appear]
+		`你是谁？`	50
+	[on appear]
+		`你不会是赏金猎人吧？！`	50
+	[on die]
+		`呃……我决不会……背叛我的同类……唔！！！`	100
+	[on attack]
+		`在还我清白之前， 我是不会这么轻易死掉的！`	70	3
+	[on attack]
+		`别怪我……再见了！`	70	6
+[/speech on situation]

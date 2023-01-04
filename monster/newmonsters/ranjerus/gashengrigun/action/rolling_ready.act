@@ -1,0 +1,28 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Rolling_ready.ani`
+	[SUB ANI]
+		`../Animation/wp/Rolling_ready.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		4
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+	[RANDOM SELECT]
+		0	1	2	3	4	5	6	7	8	9	10	11
+	[/RANDOM SELECT]
+	[NOW]
+[/BEHAVIOR]

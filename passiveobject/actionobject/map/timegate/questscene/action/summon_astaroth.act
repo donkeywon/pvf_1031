@@ -1,0 +1,68 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Die.ani`
+	[SUB ANI]
+		`../animation/show/Hide_Dimension_Gate01.ani`	0	-16
+		`../animation/show/Appear_Dimension_Gate00.ani`	0	-15
+		`../animation/show/Summon_Dimension_Gate00.ani`	0	-14
+		`../animation/show/Summon_Dimension_Gate00_1.ani`	0	-13
+		`../animation/show/Summon_Dimension_Gate01.ani`	0	-12
+		`../animation/show/Summon_Dimension_Gate02.ani`	0	-11
+		`../animation/show/Summon_Dimension_Gate03.ani`	0	-10
+		`../animation/show/Summon_Dimension_Gate03_1.ani`	0	-9
+		`../animation/show/Appear_Dimension_Gate00_1.ani`	0	-8
+		`../animation/show/Appear_Dimension_Gate01.ani`	0	-7
+		`../animation/show/Appear_Dimension_Gate02.ani`	0	-6
+		`../animation/show/Appear_Dimension_Gate03.ani`	0	-5
+		`../animation/show/Appear_Dimension_Gate03_1.ani`	0	-4
+		`../animation/show/Appear_Effect4.ani`	0	-3
+		`../animation/show/Hide_Dimension_Gate00.ani`	0	-2
+		`../animation/show/Hide_Dimension_Gate00_1.ani`	0	-1
+		`../animation/show/Hide_Dimension_Gate02.ani`	0	1
+		`../animation/show/Hide_Dimension_Gate03.ani`	0	2
+		`../animation/show/Hide_Dust.ani`	0	3
+		`../animation/show/Hide_Dimension_Gate03_1.ani`	0	4
+		`../animation/show/Hide_Effect1.ani`	0	5
+		`../animation/show/Hide_Effect2.ani`	0	6
+		`../animation/show/Hide_Effect3.ani`	0	7
+		`../animation/show/Hide_Effect4.ani`	0	8
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[REVERSE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		35	35
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61292
+		[LEVEL]
+			60
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[TEAM]
+			0
+	[/SUMMON MONSTER]
+	[DESTROY]
+[/BEHAVIOR]

@@ -1,0 +1,54 @@
+#PVF_File
+
+[width]
+	3	3
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	1000
+
+[basic action]
+	`action/LightingLoop.act`
+
+[last action]
+	`action/LightingEnd.act`
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[ENEMY]`
+	[homing velocity]
+		180	20
+	[homing check gap]
+		100
+	[sync animation rotation]
+		0
+	[max rotation]
+		200
+	[init rotation]
+		0
+	[diff rotation]
+		180
+[/homing]
+
+[attack info]
+	`AttackInfo/DisguiserLighting.atk`
+
+[name]
+	`领主导弹`
+
+[sound category]
+	`[after object create]`
+	`MUMMY_LIGHTNING_LOOP`	-2
+[/sound category]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	7000
+[/object destroy condition]

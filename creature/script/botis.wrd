@@ -1,0 +1,157 @@
+#PVF_File
+
+[ambient]
+	[room list]
+		`老大，他们为什么老盯着我！`
+		`喂，那边那位，你看啥呢，不累呀？`
+		`这是哪儿呀？`	
+		[in elven gard]
+			`我讨厌森林！`
+		[/in elven gard]
+		[in alfhlyra]
+			`这地方，勉强算有趣吧……- -……`
+		[/in alfhlyra]
+		[in stom pass]
+			`我好冷！！老大，抱抱我吧！`
+		[/in stom pass]
+	[/room list]
+	[main game]
+		[fill point under]
+			20
+			`饿饿饿……我感觉呼吸困难了……老大，救我！`
+			`饿饿饿……我感觉呼吸困难了……老大，救我！`
+			`饿饿饿……我感觉呼吸困难了……老大，救我！`
+		[/fill point under]
+		[enemies alive]
+			[hits over]
+				20
+				`这些怪物挺厉害的，老大，先下手为强！`
+				`老大，你天天杀怪，技术还这么菜，太丢脸了！`
+			[/hits over]
+			[hits under]
+				21
+				`呃，胳膊好酸痛啊……不许你用我的技能！`
+				`呃，至少你看起来比怪物聪明……`
+			[/hits under]
+		[/enemies alive]
+		[enemies destroyed]
+		[rank over]
+			`b`
+			`无聊啊……平静的生活太无聊了……`
+			`嘿嘿，老大，我们直接去单挑BOSS吧！`
+		[/rank over]
+		[rank under]
+			`b`
+			`评分~好低！老大，说你菜你还不相信，这次有证据了~~`
+			`我想去城里逛逛……老大，你不想吗？`
+		[/rank under]
+	[/main game]
+[/ambient]
+
+[trigger]
+	[room list]
+		[renamed]
+			`这都什么名字呀，老大，你的品味要提高一点才行！`
+		[/renamed]
+		[pop random]
+			30	
+			[call the name]
+				`老大，用你的王霸之气吓唬吓唬他！`
+			[/call the name]
+		[/pop random]
+		[pop random]
+			20	
+			[equip]
+				`哈罗？往这边看，这边！哈哈！`
+				`啊！好烦！`
+			[/equip]
+		[/pop random]
+		[pop random]
+			20	
+			[level up]
+				`噢！我升级了耶！老大快祝贺我吧！`
+				`光环的力量越来越强了，哇！`
+			[/level up]
+		[/pop random]
+		[pop random]
+			30	
+			[character level up]
+				`恭喜~恭喜~~`
+			[/character level up]
+		[/pop random]
+		[evolution]
+			``
+		[/evolution]
+		[eat feed]
+			`老大，老吃一种食物，神宠也会营养不良的！`
+		[/eat feed]
+	[/room list]
+	[main game]
+		[eat feed]
+			`我最讨厌没有味道的食物，不过肚子饿了也没办法了……`
+			`啧啧`
+		[/eat feed]
+		[none feed]
+			`老大，看在我跟了你这么久的份上，给我点吃的吧！`
+		[/none feed]
+		[end buff]
+			`咦？药效下降了！老大，怎么办怎么办！`
+		[/end buff]
+		[dying]
+			`连饭都不给我吃！！！老大，你是个坏蛋！！`
+		[/dying]
+		[using overskill]
+			`疾风光环！！！`
+			`速度~用风一样的速度！`
+		[/using overskill]
+		[pop random]
+			30	
+			[skill gauge full]
+				`胳膊酸了……唉~还是帮你扔吧！`
+				`啊，好烦！！老大，我都说了好几遍了，拜托你给点反应吧！`
+			[/skill gauge full]
+		[/pop random]
+		[pop random]
+			30	
+			[over skill gauge full]
+				`人们、妖们！注意啦！疾风光环准备完毕！`
+				`风！请赐给我老大力量吧！`
+			[/over skill gauge full]
+		[/pop random]
+		[over skill waiting]
+			`老大，你怎么不用疾风光环？`
+			`老大，你不需要我的力量了？`
+		[/over skill waiting]
+		[call the name]
+			`老大，用你的王霸之气吓唬吓唬他！`
+		[/call the name]
+		[pop random]
+			20	
+			[equip]
+				`哈罗？往这边看，这边！哈哈！`
+				`啊！好烦！`
+			[/equip]
+		[/pop random]
+		[pop random]
+			20	
+			[level up]
+				`噢！我升级了耶！老大快祝贺我吧！`
+				`光环的力量越来越强了，哇！`
+			[/level up]
+		[/pop random]
+		[pop random]
+			30	
+			[character level up]
+				`恭喜~恭喜~~`
+			[/character level up]
+		[/pop random]
+		[evolution]
+			``
+		[/evolution]
+	[/main game]
+	[pvp]
+		[press creature button]
+			`老大，已经是最快的速度了！再快就飞天了……`
+		[/press creature button]
+	[/pvp]
+[/trigger]

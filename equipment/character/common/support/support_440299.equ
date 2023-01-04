@@ -1,0 +1,116 @@
+#PVF_File
+
+[name]
+	`地狱使者的披风`
+
+[name2]
+	`A Cloak of Ghost`
+
+[basic explain]
+	`使用复活币复活时， 可以使自身进入霸体状态并对队员施放多种Buff， 效果持续15秒。`
+
+[detail explain]
+	`使用复活币复活时， 可以使自身进入霸体状态并使队员进入祝福状态15秒； 祝福状态下， 会增加50点力量、 体力、 智力、 精神， 并增加10%%的攻击速度、 移动速度和施放速度。`
+
+[grade]
+	72
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	68
+
+[physical attack]
+	28
+
+[physical defense]
+	28
+
+[magical attack]
+	28
+
+[magical defense]
+	28
+
+[price]
+	72000
+
+[repair price]
+	57600
+
+[value]
+	57600
+
+[creation rate]
+	0
+
+[icon]
+	`Item/common/support.img`	39
+
+[field image]
+	`Item/field_equip.img`	22
+
+[equipment type]
+	`[support]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	700
+
+[item group name]
+	`support`
+
+[cool time]
+	10000
+
+[if]
+	[revive]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[buff]
+		`superarmor`
+[/then]
+
+[if]
+	[revive]
+		1
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[duration]
+		40000
+	[active status]
+		`bless`	69	50	50	50	50
+	[stat]
+		`attack speed`
+		`+`	100
+	[stat]
+		`move speed`
+		`+`	100
+	[stat]
+		`cast speed`
+		`+`	100
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

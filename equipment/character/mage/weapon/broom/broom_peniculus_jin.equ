@@ -1,0 +1,203 @@
+#PVF_File
+
+[name]
+	`真 · 千丝扫把`
+
+[name2]
+	`Shin : Peniculus`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入混乱状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入混乱状态6秒； 但在决斗场中， 只能持续3秒。 (若敌人高于Lv62， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	64
+
+[rarity]
+	2
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	62
+
+[magical attack]
+	41
+
+[attack speed]
+	60
+
+[move speed]
+	30
+
+[stuck]
+	-1
+
+[price]
+	102400
+
+[repair price]
+	86016
+
+[value]
+	81920
+
+[equipment physical attack]
+	564	544
+
+[equipment magical attack]
+	620	598
+
+[separate attack]
+	280	188
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[mage]`	105	1
+	`[creator mage]`	252	2
+[/skill levelup]
+
+[confuse resistance]
+	15
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/weapon/mage/broom.img`	38
+
+[field image]
+	`Item/field_weapon.img`	10
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	13	8
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	13	8
+
+[layer variation]
+	2150
+	`at_brooma`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_broomd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	13	8
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BROOM_TOUCH`
+
+[durability]
+	50
+
+[weight]
+	2500
+
+[item group name]
+	`broom`
+
+[cool time]
+	10000
+
+[required skill]
+	91
+
+[icon mark]
+	`Item/IconMark.img`	30
+
+[if]
+	[cooltime]
+		9000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		6000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`confuse`	62	1
+[/then]
+
+[special monster drop]
+	1
+
+[difficulty for extra drop]
+	`[hero]`
+[/difficulty for extra drop]
+
+[dungeon type for extra drop]
+	`[all]`
+[/dungeon type for extra drop]
+
+[possible kiri protect]

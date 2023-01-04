@@ -1,0 +1,142 @@
+#PVF_File
+
+[name]
+	`守护者的意志之靴`
+
+[name2]
+	`Steady Will Shoe of Defending Person`
+
+[grade]
+	58
+
+[rarity]
+	5
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	23
+
+[physical defense]
+	7
+
+[magical attack]
+	12
+
+[move speed]
+	40
+
+[hit recovery]
+	17
+
+[anti evil]
+	4
+
+[need material]
+	3228	36
+
+[repair price]
+	35809
+
+[value]
+	32480
+
+[equipment physical defense]
+	1512	1440
+
+[icon]
+	`Item/common/shoes.img`	42
+
+[field image]
+	`Item/field_equip.img`	14
+
+[equipment type]
+	`[shoes]`	17
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	26
+
+[weight]
+	1600
+
+[item group name]
+	`ha shoes`
+
+[cool time]
+	10000
+
+[set name]
+	`守护者的意志  套装`
+
+[set item]
+	20123	22118	24128	11307	13306	15296	19300	17294
+[/set item]
+
+[piece set ability]
+	3	
+	[HP MAX]
+		500
+	[physical critical hit]
+		3
+[/piece set ability]
+
+[piece set ability]
+	5	
+	[MP regen speed]
+		4
+	[move speed]
+		20
+	[stuck]
+		-2
+[/piece set ability]
+
+[piece set ability]
+	8	
+	[attack speed]
+		20
+	[if]
+		[target type]
+			`human`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[if]
+		[target type]
+			`undead`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[parameter basic explain]
+		`对人型怪敌人的伤害 +10%%
+对不死族敌人的伤害 +10%%`
+[/piece set ability]
+
+[possible kiri protect]

@@ -1,0 +1,160 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Tsunami2.ani`
+	[SUB ANI]
+		`../animation/Tsunami4.ani`	0	-2
+		`../animation/Tsunami3.ani`	0	-1
+		`../animation/Tsunami.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`KONG_WAVE`	0
+		`KONG_WAVE`	6
+		`KONG_WAVE`	11
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		15	15
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8746
+		[PARTICLE FILENAME]
+			`../particle/marlin.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	10
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8746
+		[PARTICLE FILENAME]
+			`../particle/marlin.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	10
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8749
+		[PARTICLE FILENAME]
+			`../particle/shirimp2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	10
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8746
+		[PARTICLE FILENAME]
+			`../particle/marlin.ptl`
+		[LEVEL]
+			0
+		[POS]
+			100	0	10
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8746
+		[PARTICLE FILENAME]
+			`../particle/marlin2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			110	0	16
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8749
+		[PARTICLE FILENAME]
+			`../particle/shirimp.ptl`
+		[LEVEL]
+			0
+		[POS]
+			110	0	10
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8746
+		[PARTICLE FILENAME]
+			`../particle/marlin.ptl`
+		[LEVEL]
+			0
+		[POS]
+			200	0	10
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8746
+		[PARTICLE FILENAME]
+			`../particle/marlin2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			210	0	15
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8749
+		[PARTICLE FILENAME]
+			`../particle/shirimp2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			210	0	10
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8749
+		[PARTICLE FILENAME]
+			`../particle/shirimp.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-130	0	10
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

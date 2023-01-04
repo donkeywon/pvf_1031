@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/bal.ani`
+	[SUB ANI]
+		`../animation/aura_bal.ani`	0	0
+		`../Animation/WhipToMonsterSwing.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`MONAHUN_SKILL_01`	3
+		`ELECTRIC_HIT`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8036
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			45
+		[POS]
+			0	0	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

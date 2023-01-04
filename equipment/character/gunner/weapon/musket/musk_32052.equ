@@ -1,0 +1,170 @@
+#PVF_File
+
+[name]
+	`暗夜潜行者 [网吧]`
+
+[name2]
+	``
+
+[basic explain]
+	`基本装弹数 +1
+攻击时， 有2%%的几率使敌人进入眩晕状态。
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。`
+
+[detail explain]
+	`基本装弹数 +1\攻击时， 有2%%的几率使敌人进入眩晕状态6秒。 (若敌人高于Lv50， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。`
+
+[grade]
+	56
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	50
+
+[physical attack]
+	38
+
+[magical attack]
+	57
+
+[price]
+	100800
+
+[repair price]
+	84672
+
+[value]
+	80640
+
+[equipment physical attack]
+	519	446
+
+[equipment magical attack]
+	451	388
+
+[separate attack]
+	311	208
+
+[skill levelup]
+	`[gunner]`	78	1
+	`[at gunner]`	78	1
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/musket.img`	23
+
+[field image]
+	`Item/field_weapon.img`	3
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	2	6
+
+[layer variation]
+	2790
+	`musketc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`musketb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	2	6
+
+[layer variation]
+	2790
+	`at_musketc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_musketb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	2100
+
+[item group name]
+	`musket`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[cooltime]
+		9000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		6000
+	[probability]
+		2
+	[active status]
+		`stun`	50
+[/then]
+
+[int data]
+	4	-1	-1	-1	-1	-1	-1	-1	-1	-1
+[/int data]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

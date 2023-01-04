@@ -1,0 +1,43 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/boid.ani`
+	[SUB ANI]
+		`../animation/boid_e.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`唔哈哈哈哈！！`	2	100
+	[/SPEECH]
+	[SOUND]
+		`WARJACK_SKILL_02_1`	0
+		`WARJACK_VOID`	2
+		`WARJACK_SKILL_02_2`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35197
+		[PARTICLE FILENAME]
+			`../Particle/boid.ptl`
+		[LEVEL]
+			0
+		[POS]
+			138	0	85
+	[/CREATE PASSIVEOBJECT]
+	[SET SPEED]
+		[X AXIS]
+			-15
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

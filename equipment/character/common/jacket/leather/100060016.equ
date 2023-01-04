@@ -1,0 +1,188 @@
+#PVF_File
+
+[name]
+	`游龙之魂战袍`
+
+[name2]
+	``
+
+[basic explain]
+	`使用物理攻击进行背击时， 可以使敌人减少1000点物理防御力， 效果持续10秒。 (效果最多可重叠5次)
+使用魔法攻击进行背击时， 可以使敌人减少1000点魔法防御力， 效果持续10秒。 (效果最多可重叠5次)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	35
+
+[magical attack]
+	35
+
+[magical defense]
+	39
+
+[price]
+	85000
+
+[repair price]
+	71400
+
+[value]
+	68000
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	2232	2088
+
+[physical critical hit]
+	3
+
+[magical critical hit]
+	3
+
+[icon]
+	`item/new_equipment/03_leather/coat/leather_coat.img`	10
+
+[field image]
+	`Item/FieldImage.img`	0
+
+[equipment type]
+	`[coat]`	20
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	33
+
+[weight]
+	1900
+
+[item group name]
+	`lt coat`
+
+[cool time]
+	10000
+
+[set name]
+	`游龙之魂  套装`
+
+[set item]
+	100060016	100110011	100160011	100210012	100260013
+[/set item]
+
+[if]
+	[attack type]
+		`magical`
+	[attack condition]
+		`back attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[appendage]
+		171
+[/then]
+
+[if]
+	[attack type]
+		`physical`
+	[attack condition]
+		`back attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[appendage]
+		170
+[/then]
+
+[set ability]
+	[fullset basic explain]
+		`攻击时， 有5%%的几率使队员进入伪装状态； 伪装状态下， 会增加70点的力量、 体力、 智力和精神， 以及9%%的物理暴击率和10%%的魔法暴击率。
+伪装状态下攻击敌人时， 附加20%%的伤害。`
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			40000
+	[/if]
+	[then]
+		[target]
+			`party`	-1
+		[probability]
+			5
+		[duration]
+			20000
+		[stat]
+			`physical attack`
+			`+`	70
+		[stat]
+			`magical attack`
+			`+`	70
+		[stat]
+			`physical defense`
+			`+`	70
+		[stat]
+			`magical defense`
+			`+`	70
+		[stat]
+			`physical critical hit rate`
+			`+`	9
+		[stat]
+			`magical critical hit rate`
+			`+`	10
+		[buff]
+			`camoflage`
+		[appendage]
+			173
+	[/then]
+	[if]
+		[my appendage]
+			173
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	20
+	[/then]
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,95 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Rolling.ani`
+	[SUB ANI]
+		`../Animation/Rolling_e.ani`	0	0
+		`../Animation/Rolling_ee.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`呜！！！ 呜啊呜呜啊呜啊！`	0	50
+		`呼呜啊啊啊呼啊呜啊！`	0	50
+	[/SPEECH]
+	[SOUND]
+		`FRANKEN_ROLLING`	2
+		`FRANKEN_ROLLING`	24
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		3	1500
+	[SET SPEED]
+		[X AXIS]
+			-100
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8933
+		[PARTICLE FILENAME]
+			`../particle/Wave.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8932
+		[PARTICLE FILENAME]
+			`../particle/Wave.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9326
+		[PARTICLE FILENAME]
+			`../particle/Wave.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

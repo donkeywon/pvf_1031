@@ -1,0 +1,49 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/onemore_Attack.ani`
+	[SOUND]
+		`MIMIC_ATK`	0
+		`MIMIC_ATK2`	2
+	[/SOUND]
+	[SPEECH]
+		`咳咳~ `	0	20
+		`?~`	0	10
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			30
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	1	1	2	2	2	2	2	2
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		3
+	[END]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]

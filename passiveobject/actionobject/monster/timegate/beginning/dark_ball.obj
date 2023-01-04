@@ -1,0 +1,63 @@
+#PVF_File
+
+[hp max]
+	1000000
+
+[hp destroy]
+	1
+
+[floating height]
+	0
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[basic action]
+	`Action/darkball.act`
+
+[attack info]
+	`AttackInfo/dark.atk`
+
+[piercing power]
+	10000
+
+[hp destroy]
+	0
+
+[vanish on move collision]
+	0
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[ENEMY]`
+	[homing velocity]
+		200	10
+	[homing check gap]
+		100
+	[sync animation rotation]
+		1
+	[max rotation]
+		40
+	[init rotation]
+		0
+	[diff rotation]
+		50
+	[homing time]
+		1500
+[/homing]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	2000
+	`[destroy action]`
+	`[object create after destroy]`
+	`[add object index]`	1	13033
+[/object destroy condition]
+
+[name]
+	`天谴飓风 2`

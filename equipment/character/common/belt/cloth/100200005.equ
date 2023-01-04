@@ -1,0 +1,107 @@
+#PVF_File
+
+[name]
+	`神咒之丝绸腰带`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 有1%%的几率使自身进入霸体状态5秒。 (在决斗场中无效)`
+
+[grade]
+	75
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[magical attack]
+	23
+
+[magical defense]
+	23
+
+[cast speed]
+	20
+
+[inventory limit]
+	3000
+
+[price]
+	45000
+
+[repair price]
+	37800
+
+[value]
+	36000
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	332	308
+
+[icon]
+	`item/new_equipment/02_cloth/belt/cloth_belt.img`	8
+
+[field image]
+	`Item/field_equip.img`	3
+
+[equipment type]
+	`[waist]`	16
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	18
+
+[weight]
+	550
+
+[item group name]
+	`cl waist`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		15000
+[/if]
+
+[then]
+	[probability]
+		1
+	[duration]
+		5000
+	[target]
+		`myself`	-1
+	[buff]
+		`superarmor`
+[/then]
+
+[set item master]
+	100050019
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

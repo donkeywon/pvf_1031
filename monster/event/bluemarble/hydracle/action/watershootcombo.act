@@ -1,0 +1,83 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/watershootcombo.ani`
+	[SOUND]
+		`HYDRACLE_CANNON`	1
+		`HYDRACLE_CANNON`	3
+		`HYDRACLE_CANNON`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8513
+		[PARTICLE FILENAME]
+			`../Particle/InkWater.ptl`
+		[LEVEL]
+			0
+		[POS]
+			49	0	70
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8513
+		[PARTICLE FILENAME]
+			`../Particle/InkWater.ptl`
+		[LEVEL]
+			0
+		[POS]
+			49	0	70
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8513
+		[PARTICLE FILENAME]
+			`../Particle/InkWater.ptl`
+		[LEVEL]
+			0
+		[POS]
+			49	0	70
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,115 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	32
+[/dungeon]
+
+[type]
+	`[normal]`
+
+[greed]
+	`BB BB`
+
+[tile]
+	`Tile/highovernoblankmid.til`
+	`Tile/highovernoblankdown.til`
+	`Tile/highovernoblankmid.til`
+	`Tile/highovernoblankdown.til`
+	`Tile/highovernoblankup.til`
+	`Tile/highovernoblankdown.til`
+	`Tile/highovernoblankmid.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/mlfar.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/mlmid.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	12	170	1556	166	762	123	766	230
+
+[dungeon start area]
+	253	157	100	152
+
+[sound]
+	`R_AMB_CAVE`
+	`M_SPIDER`
+[/sound]
+
+[animation]
+	`Animation/mlfarstreamani.ani`	`[distantback]`	0	-120	0
+	`Animation/mlfarstreamani.ani`	`[distantback]`	640	-120	0
+	`Animation/mlfarstreamani.ani`	`[distantback]`	1280	-120	0
+	`Animation/mlfarstreamani.ani`	`[distantback]`	1920	-120	0
+[/animation]
+
+[passive object]
+	805	709	141	0
+	805	1159	149	0
+[/passive object]
+
+[monster]
+	600	0	41	986	141	0	1	1	`[fixed]`	`[normal]`
+	400	0	41	814	145	0	1	1	`[fixed]`	`[normal]`
+	400	0	41	1220	147	0	1	1	`[fixed]`	`[normal]`
+	600	0	41	1056	189	0	1	1	`[fixed]`	`[normal]`
+	400	0	41	802	191	0	1	1	`[fixed]`	`[normal]`
+	400	0	41	1236	199	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[special passive object]
+	815	613	158	0	1
+	`[monster]`	403	41	1	5	-1
+	815	607	206	0	1
+	`[item]`	2	-1	1	-1	-1	
+[/special passive object]
+
+[event monster position]
+	1092	145	0
+	1138	180	0
+	1277	131	0
+	1319	169	0
+[/event monster position]
+
+[map name]
+	`PVP 无名`

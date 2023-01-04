@@ -1,0 +1,123 @@
+#PVF_File
+
+[name]
+	`DNF PRIDE`
+
+[name2]
+	`D&F PRIDE`
+
+[explain]
+	`攻击时， 有2%%的几率使自身增加10%%的攻击速度， 效果持续15秒。
+施放技能时， 有5%%的几率使自身增加10%%的施放速度， 效果持续15秒。`
+
+[flavor text]
+	`祝贺您光荣成为DNF国家的代表。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	3
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	87
+
+[custom animation]
+	`TitleAnimation/dnf_pride.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	300
+
+[MP MAX]
+	300
+
+[physical attack]
+	27
+
+[physical defense]
+	18
+
+[magical attack]
+	27
+
+[magical defense]
+	18
+
+[stuck resistance]
+	20
+
+[inventory limit]
+	10000
+
+[move speed]
+	30
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[probability]
+		2
+	[stat]
+		`attack speed`
+		`+`	100
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[probability]
+		5
+	[stat]
+		`cast speed`
+		`+`	100
+[/then]
+
+[stuck]
+	-2
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	66

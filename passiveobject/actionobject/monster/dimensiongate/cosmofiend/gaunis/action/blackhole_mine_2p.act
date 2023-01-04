@@ -1,0 +1,92 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Blackhole_mine1.ani`
+	[SUB ANI]
+		`../Animation/Blackhole_mine2.ani`	0	0
+		`../Animation/Blackhole_mine3.ani`	0	0
+		`../Animation/Blackhole_mine4.ani`	0	0
+		`../Animation/Blackhole_mine_Floor.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PARTY TARGET]
+		[INDEX]
+			1
+	[/PARTY TARGET]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE MY TARGET]
+	[PULL APPENDAGE]
+		1.0	1.0	700
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET USE HOMING]
+		1
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[PARTY TARGET]
+		[INDEX]
+			1
+	[/PARTY TARGET]
+	[CHECKUP]
+		[DISTANCE]
+		[<]
+			60
+		[ZPOS]
+		[<]
+			20
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET USE HOMING]
+		0
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[STRAIGHT MOVE]
+		[AXIS]
+		[Z]
+		[MOVING MOTION]
+		[JUMP]
+		[TIME]
+			3000
+		[DAMAGE HP]
+			40
+		[RETURN XPOS]
+			1295
+		[RETURN YPOS]
+			385
+		[RETURN ZPOS]
+			0
+	[/STRAIGHT MOVE]
+[/BEHAVIOR]

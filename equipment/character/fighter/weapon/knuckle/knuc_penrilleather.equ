@@ -1,0 +1,167 @@
+#PVF_File
+
+[name]
+	`(旧) 潘利尔的皮手套`
+
+[name2]
+	`Leather Glove of Penril`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入中毒状态
+被攻击时， 有10%%的几率喷射毒气。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入中毒状态7秒； 出血状态下的敌人， 每0.5秒受到75点伤害。 (若敌人高于Lv22， 则减少进入异常状态的几率； 反之， 则增加几率)
+被攻击时， 有10%%的几率喷射毒气。 `
+
+[flavor text]
+	`用毒猫王的毛皮制成的手套， 蕴含的猛烈毒气可以腐蚀钢铁。`
+
+[grade]
+	24
+
+[rarity]
+	2
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	22
+
+[magical attack]
+	17
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[price]
+	33600
+
+[repair price]
+	26880
+
+[value]
+	26880
+
+[equipment physical attack]
+	217	201
+
+[equipment magical attack]
+	262	244
+
+[separate attack]
+	115	75
+
+[skill levelup]
+	`[fighter]`	86	1
+	`[at fighter]`	86	1
+[/skill levelup]
+
+[poison resistance]
+	20
+
+[icon]
+	`Item/weapon/fighter/knuckle.img`	13
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	0	4
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	0	4
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		12600
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[probability]
+		3
+	[active status]
+		`poison`	22	1050
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

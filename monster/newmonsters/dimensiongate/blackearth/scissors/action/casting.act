@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/casting.ani`
+	[SUB ANI]
+		`../Animation/super1.ani`	0	-1
+		`../Animation/super2.ani`	0	-1
+		`../Animation/super3.ani`	0	0
+		`../Animation/super4.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`解除失明！`	0	100
+	[/SPEECH]
+	[SOUND]
+		`SUPERARMOR`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DEFAULT SIGHT]
+	[REMOVE ACTIVE STATUS]
+	[blind]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`终于能看见了……`
+[/BEHAVIOR]

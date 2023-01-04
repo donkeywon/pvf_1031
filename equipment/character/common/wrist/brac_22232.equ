@@ -1,0 +1,135 @@
+#PVF_File
+
+[name]
+	`冰心少年的玩具手镯`
+
+[name2]
+	`找不到代码name2_22232`
+
+[basic explain]
+	`攻击时， 有1%%的几率召唤出1名查理的玩具士兵。
+无法进行分解。`
+
+[detail explain]
+	`攻击时， 有1%%的几率召唤出1名Lv49的玩具士兵协助召唤者攻击敌人， 玩具士兵存在100秒。 (召唤的怪物只能同时存在1只， 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失； 在决斗场中无效)
+无法进行分解。`
+
+[grade]
+	49
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	45
+
+[physical attack]
+	28
+
+[physical defense]
+	59
+
+[price]
+	58800
+
+[repair price]
+	49392
+
+[value]
+	47040
+
+[equipment magical defense]
+	2688	2448
+
+[icon]
+	`Item/common/bracelet.img`	55
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	21
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		100000
+	[attack success]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			100000
+		[probability]
+			1
+		[summon monster]
+			1031	49	1
+		[then probability]
+			25.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			100000
+		[probability]
+			1
+		[summon monster]
+			1032	49	1
+		[then probability]
+			25.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			100000
+		[probability]
+			1
+		[summon monster]
+			1033	49	1
+		[then probability]
+			25.0
+	[/then]
+[/multiple then]
+
+[pvp]
+[/pvp]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[routing priority]
+[/routing priority]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

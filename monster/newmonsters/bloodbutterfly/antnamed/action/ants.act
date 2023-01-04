@@ -1,0 +1,84 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Ants.ani`
+	[SUB ANI]
+		`../Animation/Ants_e.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`让我的孩子来对付你`	0	50
+		`保护我`	0	50
+	[/SPEECH]
+	[SOUND]
+		`MOUSE_RUSH`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	100
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8928
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			64
+		[POS]
+			0	40	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8928
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			64
+		[POS]
+			40	80	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8928
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			64
+		[POS]
+			0	-40	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8928
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			64
+		[POS]
+			40	-80	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		31	31
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		4
+	[END]
+[/BEHAVIOR]

@@ -1,0 +1,147 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	200.0	200.0	200.0	200.0
+			`friend`
+			`summon`	-1
+	
+		[think]
+			[last result]
+				`>=`	5.0
+			[true]
+		
+			[think]
+				[void]
+					`check random()`	90	100
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`sec`
+					[true]
+				
+					[think]
+						[check key cooltime]
+							`summon6`
+						[true]
+						[return]
+							-1
+						[false]
+						[return str]
+							`summon6`
+					[/think]
+	[false]
+	[return str]
+		`sec`
+	[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`summon5`
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`summon6`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`summon6`
+		[/think]
+	[false]
+	[return str]
+		`summon5`
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`cas`
+		[true]
+	
+		[think]
+			[void]
+				`get random()`	0.0	100.0
+		
+			[think]
+				[last result]
+					`<=`	25
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`summon`
+					[true]
+					[import ai]
+						`cool.ai`
+					[false]
+					[return str]
+						`summon`
+				[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	50
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`summon2`
+			[true]
+			[import ai]
+				`cool.ai`
+			[false]
+			[return str]
+				`summon2`
+		[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	75
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`summon3`
+			[true]
+			[import ai]
+				`cool.ai`
+			[false]
+			[return str]
+				`summon3`
+		[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	50
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`summon4`
+			[true]
+			[import ai]
+				`cool.ai`
+			[false]
+			[return str]
+				`summon4`
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return str]
+		`cas`
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

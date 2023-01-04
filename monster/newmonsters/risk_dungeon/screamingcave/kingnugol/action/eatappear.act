@@ -1,0 +1,63 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/EatAppear.ani`
+	[SUB ANI]
+		`../Animation/AppearStones_f.ani`	0	1
+		`../Animation/AppearStones_b.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`IMAGO_UNDERLAND`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+	[REMOVE CATEGORY]
+	[FIXTURE]
+	[TELEPORT]
+		[POS]
+		[RANDOM]
+			-300	300
+		[RANDOM]
+			-100	100	0
+	[/TELEPORT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35022
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			60
+		[POS]
+			0	10	0
+	[/CREATE PASSIVEOBJECT]
+	[SET ACTION]
+	[ATTACK]
+		7
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+[/TRIGGER]

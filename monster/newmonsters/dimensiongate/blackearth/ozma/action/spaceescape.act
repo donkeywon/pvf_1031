@@ -1,0 +1,153 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/betrayal.ani`
+	[SUB ANI]
+		`../animation/spaceescape_effect/line_b_dodge.ani`	0	-1
+		`../animation/spaceescape_effect/spaceescape.ani`	0	0
+		`../animation/spaceescape_effect/se_f_dodge.ani`	0	0
+		`../animation/spaceescape_effect/line_f_dodge.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`OZMA_SKILL_04`	0
+		`CANNONBALL_READY`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_01.ptl`	0	0	0
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_02.ptl`	0	0	0
+	[PARTICLE]
+		`../particle/effect_dark.ptl`	0	0	0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_01.ptl`	0	0	0
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_02.ptl`	0	0	0
+	[PARTICLE]
+		`../particle/effect_dark.ptl`	0	0	0
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_skill.ptl`	0	0	50
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_skill.ptl`	0	0	50
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_skill.ptl`	0	0	50
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9471
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[PARTY TARGET]
+		[INDEX]
+			1
+	[/PARTY TARGET]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE DISGUISER]
+		63499	20000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CENTER MSG]
+		`脱离空间！！`	15000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[CHARACTER]
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9490
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

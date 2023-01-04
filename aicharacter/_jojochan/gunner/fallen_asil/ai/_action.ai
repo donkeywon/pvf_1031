@@ -1,0 +1,32 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	100.0	0.0	10.0	10.0
+		[true]
+		[import ai]
+			`hard_combo.ai`
+		[false]
+	
+		[think]
+			[void]
+				`is target in attack area()`	1000.0	0.0	5.0	5.0
+			[true]
+			[import ai]
+				`shoota.ai`
+			[false]
+		
+			[think]
+				[void]
+					`is target in attack area()`	1000.0	1000.0	500.0	500.0
+				[true]
+				[import ai]
+					`s_b.ai`
+				[false]
+				[return]
+					-1
+			[/think]
+	[/think]
+	[/think]
+[/ai pattern]

@@ -1,0 +1,23 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[command]
+			`==`	0
+		[true]
+		[import ai]
+			`gather_pattern.ai`
+		[false]
+	
+		[think]
+			[command]
+				`==`	7
+			[true]
+			[import ai]
+				`spread_pattern.ai`
+			[false]
+			[import ai]
+				`gather_pattern.ai`
+		[/think]
+	[/think]
+[/ai pattern]

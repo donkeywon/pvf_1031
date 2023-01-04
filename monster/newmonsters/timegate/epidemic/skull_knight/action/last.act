@@ -1,0 +1,137 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/last.ani`
+	[SUB ANI]
+		`../animation/effect/last_e1.ani`	0	1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[IS DIRECTION LEFT]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11185
+		[PARTICLE FILENAME]
+			`../particle/seal_rock.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11186
+		[PARTICLE FILENAME]
+			`../particle/seal_rock.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	500
+		[FIX DIRECTION]
+		[RIGHT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11182
+		[PARTICLE FILENAME]
+			`../particle/seal_rock.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-150	0	500
+		[FIX DIRECTION]
+		[RIGHT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11181
+		[PARTICLE FILENAME]
+			`../particle/seal_rock.ptl`
+		[LEVEL]
+			0
+		[POS]
+			150	0	500
+		[FIX DIRECTION]
+		[RIGHT]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[IS DIRECTION RIGHT]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11185
+		[PARTICLE FILENAME]
+			`../particle/seal_rock.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11186
+		[PARTICLE FILENAME]
+			`../particle/seal_rock.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	500
+		[FIX DIRECTION]
+		[RIGHT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11182
+		[PARTICLE FILENAME]
+			`../particle/seal_rock.ptl`
+		[LEVEL]
+			0
+		[POS]
+			150	0	500
+		[FIX DIRECTION]
+		[RIGHT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11181
+		[PARTICLE FILENAME]
+			`../particle/seal_rock.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-150	0	500
+		[FIX DIRECTION]
+		[RIGHT]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

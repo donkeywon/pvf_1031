@@ -1,0 +1,100 @@
+#PVF_File
+
+[floating height]
+	70
+
+[name]
+	`牙签鸟`
+
+[face image]
+	`Monster/MonsterFace.img`	473
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	60
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	50
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	50
+[/ability category]
+
+[category]
+	`[beast]`
+[/category]
+
+[level]
+	60	60
+
+[move speed]
+	600	600
+
+[attack speed]
+	1000	1000
+
+[hit recovery]
+	600	600
+
+[weight]
+	75000	75000
+
+[stuckbonus on damage]
+	10	10	10	10
+
+[warlike]
+	-50
+
+[think term]
+	200
+
+[destination change term]
+	500
+
+[intelligence]
+	80	80	2000
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[action list]
+	`Action/attack.act`
+[/action list]
+
+[cooltime]
+	10000
+[/cooltime]
+
+[attack info]
+	`attackinfo/Attack.atk`
+[/attack info]
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+[/ai pattern]

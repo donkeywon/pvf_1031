@@ -1,0 +1,43 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Hit_Damege.ani`
+	[SUB ANI]
+		`../Animation/stay_eff.ani`	0	0
+		`../Animation/exp_eff/exp_circle2_R.ani`	0	0
+		`../Animation/exp_eff/exp_circle2_L.ani`	0	0
+		`../Animation/exp_eff/exp_circle0_L.ani`	0	0
+		`../Animation/exp_eff/exp_circle0_R.ani`	0	0
+		`../Animation/exp_eff/exp_circle1_L1.ani`	0	0
+		`../Animation/exp_eff/exp_circle1_L.ani`	0	0
+		`../Animation/exp_eff/exp_circle1_R1.ani`	0	0
+		`../Animation/exp_eff/exp_circle1_R.ani`	0	0
+		`../Animation/exp_eff/exp_shine_R.ani`	0	0
+		`../Animation/exp_eff/exp_shine_L.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`啊……`	0	30
+		`哈哈！`	0	30
+		`嘿哈……`	0	30
+	[/SPEECH]
+	[SOUND]
+		`ASTORM_EXP_WATER`	0
+		`NMAUG_SKILL_04_FAIL`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		-26
+	[%]
+[/BEHAVIOR]

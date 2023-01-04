@@ -1,0 +1,167 @@
+#PVF_File
+
+[name]
+	`(旧) 圣光斗士臂铠`
+
+[name2]
+	`Virtue Fighter`
+
+[basic explain]
+	`被攻击时， 有10%%的几率使自身进入祝福状态。`
+
+[detail explain]
+	`被攻击时， 有10%%的几率使自身进入祝福状态20秒； 祝福状态下， 增加24点力量、 体力、 智力和精神。`
+
+[flavor text]
+	`贝尔玛尔王室赐给有美德的格斗家的臂铠。`
+
+[grade]
+	31
+
+[rarity]
+	2
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	31
+
+[physical attack]
+	31
+
+[attack speed]
+	-80
+
+[stuck]
+	-1
+
+[price]
+	49600
+
+[repair price]
+	39680
+
+[value]
+	39680
+
+[equipment physical attack]
+	341	322
+
+[equipment magical attack]
+	256	241
+
+[separate attack]
+	142	93
+
+[skill levelup]
+	`[fighter]`	54	1
+	`[at fighter]`	54	1
+[/skill levelup]
+
+[light resistance]
+	10
+
+[icon]
+	`Item/weapon/fighter/gauntlet.img`	16
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	2
+
+[layer variation]
+	2790
+	`gauntletc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gauntletb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	1	2
+
+[layer variation]
+	2150
+	`at_gauntleta`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_gauntletc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_gauntletx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		1000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		10
+	[reduce probability to human armor at pvp module]
+		78
+	[active status]
+		`bless`	31	24	24	24	24
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

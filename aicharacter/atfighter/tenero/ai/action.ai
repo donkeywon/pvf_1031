@@ -1,0 +1,41 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[my state]
+			4
+		[true]
+		[return]
+			-1
+		[false]
+	
+		[think]
+			[check key cooltime]
+				`super`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`gang`
+				[true]
+			
+				[think]
+					[hp]
+						`%<=`	50.0
+					[true]
+					[import ai]
+						`ai_pattern2.ai`
+					[false]
+					[import ai]
+						`ai_pattern1.ai`
+				[/think]
+	[false]
+	[return str]
+		`gang`
+	[/think]
+	[false]
+	[return str]
+		`super`
+	[/think]
+	[/think]
+[/ai pattern]

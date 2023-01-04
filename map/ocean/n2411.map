@@ -1,0 +1,138 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	15
+[/dungeon]
+
+[type]
+	`[normal]`
+
+[tile]
+	`Tile/SkyCastleNPoll.til`
+	`Tile/SkyCastleDCPoll.til`
+	`Tile/SkyCastlePCPoll.til`
+	`Tile/SkyCastleDCPoll.til`
+	`Tile/SkyCastlePCPoll.til`
+	`Tile/SkyCastlePCPoll.til`
+	`Tile/SkyCastleNPoll.til`
+	`Tile/SkyCastleNPoll.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/far0.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`../../PassiveObject/MapObject/ParticleFactory/Animation/OceanGradationTop.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`../../PassiveObject/MapObject/ParticleFactory/Animation/OceanGradationBottom.ani`
+		[layer]
+			`[close]`
+		[order]
+			`[upper]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	12	250	1777	260	981	208	707	337
+
+[sound]
+	`M_OCEAN`
+	`R_ABYSMAL`
+[/sound]
+
+[passive object]
+	13	150	0	140
+	13	650	0	160
+	13	1150	0	140
+	13	1750	0	145
+	13	2250	0	150
+	14	200	0	0
+	14	300	0	150
+	14	600	0	30
+	14	900	0	-100
+	14	1200	0	-40
+	14	1400	0	0
+	14	1850	0	-50
+	14	2200	0	-80
+	18	200	0	10
+	15	350	0	230
+	16	490	0	-20
+	17	650	0	60
+	15	720	0	-50
+	16	800	0	150
+	18	1100	0	-200
+	17	1210	0	30
+	17	1500	0	0
+	18	1800	0	10
+	16	2020	0	-225
+	268	1371	247	160
+	268	1191	260	160
+	268	931	231	160
+	268	720	235	160
+	235	792	223	0
+	235	857	319	0
+	311	405	214	0
+	311	912	308	0
+	311	458	215	0
+	311	964	307	0
+	235	1303	308	0
+	809	477	285	0
+	809	521	315	0
+	809	559	344	0
+[/passive object]
+
+[monster]
+	60	0	24	720	235	0	1	1	`[fixed]`	`[normal]`
+	60	0	24	1371	247	0	1	1	`[fixed]`	`[normal]`
+	61	0	24	1191	260	0	1	1	`[fixed]`	`[normal]`
+	220	0	25	636	282	0	1	1	`[fixed]`	`[normal]`
+	34	0	25	1496	286	0	1	1	`[fixed]`	`[normal]`
+	701	1	0	915	336	0	1	1	`[fixed]`	`[normal]`
+	701	1	0	974	337	0	1	1	`[fixed]`	`[normal]`
+	701	1	0	1035	337	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[special passive object]
+	235	1273	266	0	1
+	`[item]`	4	1	-1	-1	-1
+	235	423	267	0	1
+	`[monster]`	220	25	3	10	-1
+	235	826	270	0	1
+	`[trap]`	2011	1	1	10	-1	
+[/special passive object]
+
+[greed]
+	`PP EE`
+
+[map name]
+	`PVP 无名`

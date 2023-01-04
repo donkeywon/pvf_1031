@@ -1,0 +1,108 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_8.ani`
+	[SUB ANI]
+		`../animation/m_0.ani`	0	1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2
+	[/RANDOM SELECT]
+	[NOW]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`请让我为您演奏……灵魂协奏曲~`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		25
+		`ready_casting_fly1.act`
+	[CHANGE AI]
+	[NORMAL]
+		2
+		`concerto.ai`
+	[SET ACTION]
+	[ATTACK]
+		12
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`百花之奏……`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		25
+		`ready_casting_fly2.act`
+	[CHANGE AI]
+	[NORMAL]
+		2
+		`fire.ai`
+	[SET ACTION]
+	[ATTACK]
+		14
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`雷鸣之奏……`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		25
+		`ready_casting_fly3.act`
+	[CHANGE AI]
+	[NORMAL]
+		2
+		`light.ai`
+	[SET ACTION]
+	[ATTACK]
+		16
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`冰龙之奏……`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		25
+		`ready_casting_fly4.act`
+	[CHANGE AI]
+	[NORMAL]
+		2
+		`water.ai`
+	[SET ACTION]
+	[ATTACK]
+		29
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			62510	62511	62512
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET HP]
+		0
+[/BEHAVIOR]

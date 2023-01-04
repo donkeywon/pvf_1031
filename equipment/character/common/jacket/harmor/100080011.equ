@@ -1,0 +1,125 @@
+#PVF_File
+
+[name]
+	`冰龙怒麟战甲`
+
+[basic explain]
+	`无法进行分解。`
+
+[grade]
+	79
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[physical attack]
+	36
+
+[physical defense]
+	33
+
+[magical attack]
+	26
+
+[attack speed]
+	20
+
+[HP MAX]
+	200
+
+[need material]
+	3338	525
+
+[repair price]
+	79632
+
+[value]
+	75840
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	4128	3888
+
+[water resistance]
+	12
+
+[freeze resistance]
+	12
+
+[icon]
+	`Item/new_equipment/05_harmor/coat/harmor_coat.img`	12
+
+[field image]
+	`Item/field_equip.img`	10
+
+[equipment type]
+	`[coat]`	21
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	3600
+
+[item group name]
+	`ha coat`
+
+[cool time]
+	10000
+
+[routing priority]
+[/routing priority]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[set name]
+	`冰龙怒麟套装`
+
+[set item]
+	100080011	100130011
+[/set item]
+
+[set ability]
+	[fullset basic explain]
+		`攻击龙型敌人时， 附加10%%的伤害。`
+	[if]
+		[attack success]
+			1
+		[target type]
+			`dragon`
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+[/set ability]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[icon mark]
+	`Item/IconMark.img`	66

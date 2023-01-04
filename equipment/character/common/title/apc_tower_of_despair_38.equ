@@ -1,0 +1,98 @@
+#PVF_File
+
+[name]
+	`堕落的陨石`
+
+[name2]
+	`Tower of Despair 38 Floor`
+
+[explain]
+	`攻击时， 有4%%的几率使敌人进入感电状态6秒， 但在决斗场中， 只能持续3秒。`
+
+[flavor text]
+	`听到了吗？ 听到我的声音了吗？ 唔……还是没有她的消息。 但她派来的强者， 却不断地找来。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	375
+
+[custom animation]
+	`TitleAnimation/apc_tower_of_despair_38.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[attack speed]
+	10
+
+[cast speed]
+	10
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		6000
+	[probability]
+		4
+	[active status]
+		`lightning`	-1	5
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[probability]
+		4
+	[active status]
+		`lightning`	-1	5
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,52 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack1.ani`
+	[SOUND]
+		`R_CAMINA_ATK`	3
+		`POENA_READY`	3
+		`WPLANT_THORN`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16047
+		[PARTICLE FILENAME]
+			`../Particle/spawnFlask.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	40
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16047
+		[PARTICLE FILENAME]
+			`../Particle/spawnFlask_1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	40
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16047
+		[PARTICLE FILENAME]
+			`../Particle/spawnFlask_2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	40
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

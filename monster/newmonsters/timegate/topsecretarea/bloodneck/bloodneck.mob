@@ -1,0 +1,134 @@
+#PVF_File
+
+[name]
+	`鬼面猫妖`
+
+[category]
+	`[beast]`
+[/category]
+
+[damage sound]
+	`R_POX_DMG`
+
+[die sound]
+	`POX_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+	`[HP MAX]`	`*`	130
+[/ability category]
+
+[level]
+	1	1
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	900	900
+
+[weight]
+	100000	100000
+
+[warlike]
+	80
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[die effect]
+	0	21	4
+
+[face image]
+	`Monster/MonsterFace.img`	660
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/damage1.act`
+
+[damage action 2]
+	`Action/damage2.act`
+
+[down action]
+	`Action/down.act`
+
+[overturn action]
+	`Action/overturn.act`
+
+[attack action]
+	`Action/attack01.act`
+	`Action/attack02.act`
+	`Action/attack03.act`
+[/attack action]
+
+[proc action]
+	`action/proc.act`
+
+[attack info]
+	`AttackInfo/Attack01.atk`
+	`AttackInfo/attack02.atk`
+	`AttackInfo/attack02.atk`
+[/attack info]
+
+[cooltime]
+	5000	7000	7000
+[/cooltime]
+
+[think term]
+	300
+
+[destination change term]
+	700
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	200
+
+[vision]
+	600
+
+[lie frame]
+	2	3	2	3	4

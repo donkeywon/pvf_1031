@@ -1,0 +1,47 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/LaserSpit.ani`
+	[SUB ANI]
+		`../Animation/StayStones_f.ani`	0	0
+		`../Animation/StayStones_b.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`R_IMAGO_ATK`	8
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11098
+		[PARTICLE FILENAME]
+			`../Particle/NugolBall.ptl`
+		[LEVEL]
+			60
+		[POS]
+			120	0	100
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+[/BEHAVIOR]

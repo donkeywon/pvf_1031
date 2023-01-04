@@ -1,0 +1,184 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Casting.ani`
+	[SUB ANI]
+		`../Animation/Casting_eff3.ani`	0	0
+		`../Animation/Casting_eff4.ani`	0	0
+		`../Animation/Casting_eff.ani`	0	1
+		`../Animation/Casting_eff1.ani`	0	2
+		`../Animation/Casting_eff2.ani`	0	3
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[ON]
+	[TRIGGER]
+		2
+	[ON]
+	[TRIGGER]
+		3
+	[ON]
+	[TRIGGER]
+		4
+	[ON]
+	[TRIGGER]
+		5
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		6	6
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[CHECK DISTANCE]
+			110	40
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		8	8
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[CHECK DISTANCE]
+			110	40
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		10	10
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[CHECK DISTANCE]
+			110	40
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		12	12
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[CHECK DISTANCE]
+			110	40
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		14	14
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[CHECK DISTANCE]
+			110	40
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		3000	
+		[move speed]
+		[%]
+			-50.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPEND HIT]
+		0	0	0
+	[ACTIVE STATUS]
+	[confuse]
+		100	60	3000	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		2
+	[OFF]
+	[TRIGGER]
+		3
+	[OFF]
+	[TRIGGER]
+		4
+	[OFF]
+	[TRIGGER]
+		5
+	[OFF]
+[/BEHAVIOR]

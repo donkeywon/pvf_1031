@@ -1,0 +1,100 @@
+#PVF_File
+
+[name]
+	`2009祈祷成功-圣职者(智力)`
+
+[name2]
+	``
+
+[explain]
+	`穿戴时， 每隔40秒会发动卡妮娜的坚韧Buff， 该Buff可以使自身增加45点力量、 30点体力， 效果持续20秒。 (穿戴40秒后生效)
+HP为15%%以下时， 被攻击后有5%%的几率恢复自身HP最大值的5%%。 (在决斗场中无效)`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[magical attack]
+	27
+
+[magical defense]
+	18
+
+[attack speed]
+	20
+
+[cast speed]
+	30
+
+[move speed]
+	20
+
+[stuck resistance]
+	20
+
+[HP MAX]
+	100
+
+[MP MAX]
+	100
+
+[magical critical hit]
+	3
+
+[skill levelup]
+	`[priest]`	45	1
+	`[priest]`	33	1
+	`[priest]`	47	1
+	`[priest]`	48	1
+[/skill levelup]
+
+[icon]
+	`Item/Title/title.img`	146
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/prayer_greatsuccess2009azure.ani`
+[/custom animation]
+
+[if]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[probability]
+		2
+	[reduce duration at pvp module]
+		70
+	[buff]
+		`superarmor`
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

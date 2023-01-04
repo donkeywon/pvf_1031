@@ -1,0 +1,116 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	`Fightholic`
+
+[explain]
+	`攻击时以1%%的机率30秒内移动速度增加10%%。施展时以 2%%的机率30秒内移动速度增加 10%%。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	131
+
+[custom animation]
+	`TitleAnimation/fightholic.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	100
+
+[MP MAX]
+	100
+
+[physical attack]
+	23
+
+[physical defense]
+	10
+
+[magical attack]
+	23
+
+[magical defense]
+	10
+
+[stuck resistance]
+	20
+
+[move speed]
+	30
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[if]
+	[cooltime]
+		40000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`move speed`
+		`+`	100
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`move speed`
+		`+`	100
+[/then]
+
+[stuck]
+	-1
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

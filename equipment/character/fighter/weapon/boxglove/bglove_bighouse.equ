@@ -1,0 +1,127 @@
+#PVF_File
+
+[name]
+	`极皇拳套`
+
+[name2]
+	`Rocke the Champion`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态。
+[强拳]敌人的僵直比率 +10%%
+[武神步]效果持续时间 +50%%`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态2秒； 但在决斗场中， 只能持续1秒。 (若敌人高于Lv55， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+[强拳]敌人的僵直比率 +10%%
+[武神步]效果持续时间 +50%%`
+
+[flavor text]
+	`拉奇？ 你是说那个只会逃命的猥琐家伙？ 甭提了， 我最鄙视的就是他了。  --极皇挑战者比哈斯`
+
+[grade]
+	60
+
+[attach type]
+	`[trade]`
+
+[creation rate]
+	500
+
+[rarity]
+	4
+
+[weight]
+	2100
+
+[usable job]
+	`[fighter]`
+[/usable job]
+
+[minimum level]
+	55
+
+[required skill]
+	34
+
+[icon]
+	`Item/weapon/fighter/bglove.img`	25
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[sub type]
+	3
+
+[durability]
+	39
+
+[price]
+	108000
+
+[value]
+	86400
+
+[cool time]
+	10000
+
+[physical attack]
+	17
+
+[equipment physical attack]
+	575	508
+
+[equipment magical attack]
+	521	460
+
+[attack speed]
+	100
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		2
+	[active status]
+		`stun`	50
+[/then]
+
+[skill data up]
+	`[fighter]`	37	`[all]`	`[level]`	0	`+`	5
+	`[fighter]`	70	`[all]`	`[static]`	1	`%`	50
+[/skill data up]
+
+[variation]
+	1	7
+
+[layer variation]
+	2600
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	68

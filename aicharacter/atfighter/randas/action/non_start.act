@@ -1,0 +1,30 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Throw.ani`
+	[SUB ANI]
+		`../animation/ThrowStone2.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9226
+		[PARTICLE FILENAME]
+			`../key/shout_2.ptl`
+		[LEVEL]
+			70
+		[POS]
+			80	0	90
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

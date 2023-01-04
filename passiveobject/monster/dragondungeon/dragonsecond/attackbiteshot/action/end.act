@@ -1,0 +1,49 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/End/BiteShot_Effect_Bit_M_Normal.ani`
+	[SUB ANI]
+		`../Animation/End/BiteShot_AttackMineralShoot_Effect_M_Floor_energy01.ani`	0	-3
+		`../Animation/End/BiteShot_AttackMineralShoot_Effect_M_Floor_energy00.ani`	0	-2
+		`../Animation/End/BiteShot_Effect_L_floor_shock00.ani`	7	-1
+		`../Animation/End/BiteShot_Effect_Bit_M_Dodge.ani`	0	1
+		`../Animation/End/BiteShot_Effect_Bite_Light.ani`	0	2
+		`../Animation/End/BiteShot_Effect_M_end_Normal.ani`	7	3
+		`../Animation/End/BiteShot_Effect_M_end_dodge.ani`	7	4
+		`../Animation/End/BiteShot_Effect_M_EXx_Dodge.ani`	7	5
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+		[DISTANCE]
+		[<=]
+			0
+		[HP]
+		[>]
+			0
+		[POINT]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[DOWN]
+	[DEFAULT]
+		1
+	[FORCE]
+		1	1
+	[NOW]
+[/BEHAVIOR]

@@ -1,0 +1,47 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Summon2.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET HP]
+		0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			62160
+		[LEVEL]
+			70
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[USE MY BASEPOS]
+		[SUMMON MARK]
+			1
+	[/SUMMON MONSTER]
+	[SET SPEED]
+		[Z AXIS]
+			50000
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack_s.ani`
+	[SUB ANI]
+		`../animation/super2.ani`	0	-1
+		`../animation/super1.ani`	0	-1
+		`../animation/super3.ani`	0	0
+		`../animation/super4.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`DBBLOW`	0
+		`R_ANTMON_BITE`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS INDEX]
+			62141
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		8
+	[NOW]
+[/BEHAVIOR]

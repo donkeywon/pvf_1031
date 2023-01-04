@@ -1,0 +1,83 @@
+#PVF_File
+
+[name]
+	`头号危险人物`
+
+[name2]
+	`Toe Control`
+
+[explain]
+	`被攻击时， 有6%%的几率使自身增加3%%的回避率， 效果持续20秒。`
+
+[flavor text]
+	`你的念气罩~
+不用念气罩
+呕 ?！`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	309
+
+[custom animation]
+	`TitleAnimation/toe_control.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	200
+
+[MP MAX]
+	200
+
+[stuck resistance]
+	20
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[probability]
+		7
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[stat]
+		`stuck resistance`
+		`+`	30
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,43 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Zx-69_Attack.ani`
+	[SUB ANI]
+		`../Animation/Zx-69_Attack_eff.ani`	0	1
+		`../Animation/effect/shock_eff2.ani`	0	1
+		`../Animation/G_main_s_1.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ABS CASTING]
+		2000	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61647
+		[LEVEL]
+			1
+		[POS]
+			10	1	30
+		[NO EFFECT]
+		[JUMP OUT]
+			550	0	-10
+		[NEUTRAL]
+		[NEUTRAL]
+		[USE OBJECT ZPOS]
+		[COLLISION GROUP]
+			2	0	1
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

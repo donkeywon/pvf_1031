@@ -1,0 +1,174 @@
+#PVF_File
+
+[name]
+	`(旧) 天界机械臂铠`
+
+[name2]
+	`Made in Heaven`
+
+[basic explain]
+	`被攻击时， 有10%%的几率使所有队员进入加速状态。`
+
+[detail explain]
+	`被攻击时， 有10%%的几率使自身进入加速状态20秒； 加速状态下， 增加11%%的移动速度和攻击速度。`
+
+[flavor text]
+	`传说是天族机械师科萨制作的机械臂。`
+
+[grade]
+	31
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	27
+
+[physical attack]
+	35
+
+[attack speed]
+	-80
+
+[stuck]
+	-1
+
+[price]
+	55800
+
+[repair price]
+	44640
+
+[value]
+	44640
+
+[equipment physical attack]
+	379	331
+
+[equipment magical attack]
+	284	248
+
+[separate attack]
+	183	119
+
+[skill levelup]
+	`[fighter]`	36	1
+	`[at fighter]`	36	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/gauntlet.img`	13
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	0	2
+
+[layer variation]
+	2790
+	`armc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`armb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	0	2
+
+[layer variation]
+	2150
+	`at_arma`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_armb`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_armc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_armx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[jump power]
+	30
+
+[if]
+	[cooltime]
+		1000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[duration]
+		20000
+	[probability]
+		10
+	[reduce probability to human armor at pvp module]
+		78
+	[active status]
+		`haste`	27	11	11
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

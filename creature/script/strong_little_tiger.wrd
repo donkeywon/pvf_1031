@@ -1,0 +1,157 @@
+#PVF_File
+
+[ambient]
+	[room list]
+		`主人不陪我玩……嗷呜……`
+		`主人快看，有一头小老虎从天上飞过去啦~`
+		`一二三四五六七……哎呀，天上的星星究竟有几颗啊？`	
+		[in elven gard]
+			`这儿和我的故乡一样啊~嗷~~`
+		[/in elven gard]
+		[in alfhlyra]
+			`我讨厌这黑暗，主人我们回家吧~`
+		[/in alfhlyra]
+		[in stom pass]
+			`好冷啊~主人你不冷吗？`
+		[/in stom pass]
+	[/room list]
+	[main game]
+		[fill point under]
+			20
+			`呜呜……我没力气了……`
+			`呜呜……我没力气了……`
+			`呜呜……我没力气了……`
+		[/fill point under]
+		[enemies alive]
+			[hits over]
+				20
+				`可恶……好痛……我不会被你打败的！`
+				`危险！主人别怕，我来保护你~`
+			[/hits over]
+			[hits under]
+				21
+				`主人~快干掉他们！`
+				`干得漂亮~不愧是我的主人~~`
+			[/hits under]
+		[/enemies alive]
+		[enemies destroyed]
+		[rank over]
+			`b`
+			`评分有你的一份，也有我的一份……`
+			`主人威武~~！`
+		[/rank over]
+		[rank under]
+			`b`
+			`主人身体不舒服吗~？`
+			`主人，我们一起变强吧！`
+		[/rank under]
+	[/main game]
+[/ambient]
+
+[trigger]
+	[room list]
+		[renamed]
+			`好吧……如果这是主人的决定……`
+		[/renamed]
+		[pop random]
+			40	
+			[call the name]
+				`我会一直在主人身边……嗷~`
+			[/call the name]
+		[/pop random]
+		[pop random]
+			30	
+			[equip]
+				`主人我来啦~！嗷~~！`
+				`主人，你想我了吗？`
+			[/equip]
+		[/pop random]
+		[pop random]
+			50	
+			[level up]
+				`主人主人~我会成为你的骄傲吗？`
+				`呼呼~升级啦！嗷~！`
+			[/level up]
+		[/pop random]
+		[pop random]
+			50	
+			[character level up]
+				`不愧是我的主人啊~嗷~~`
+			[/character level up]
+		[/pop random]
+		[evolution]
+			``
+		[/evolution]
+		[eat feed]
+			`虎生最幸福的事就是吃饭啦！主人不觉得吗？`
+		[/eat feed]
+	[/room list]
+	[main game]
+		[eat feed]
+			`主人给的食物最好吃了~嗷~`
+			`开饭啦开饭啦！咦？主人你不吃吗？`
+		[/eat feed]
+		[none feed]
+			`主人~还有吃的吗？`
+		[/none feed]
+		[end buff]
+			`Buff消失了……主人别怕，我还有力量~`
+		[/end buff]
+		[dying]
+			`我会想念主人的，主人会想我吗？`
+		[/dying]
+		[using overskill]
+			``
+			`看我七十二变！变……变？`
+		[/using overskill]
+		[pop random]
+			40	
+			[skill gauge full]
+				`为了主人，准备出击！`
+				`主人，我都准备好了~`
+			[/skill gauge full]
+		[/pop random]
+		[pop random]
+			40	
+			[over skill gauge full]
+				`再不让我出手的话，我就要睡着了……`
+				``
+			[/over skill gauge full]
+		[/pop random]
+		[over skill waiting]
+			`我时刻为主人准备着~`
+			`快呼唤我吧，主人~！`
+		[/over skill waiting]
+		[call the name]
+			`我会一直在主人身边……嗷~`
+		[/call the name]
+		[pop random]
+			40	
+			[equip]
+				`主人我来啦~！嗷~~！`
+				`主人，你想我了吗？`
+			[/equip]
+		[/pop random]
+		[pop random]
+			50	
+			[level up]
+				`主人主人~我会成为你的骄傲吗？`
+				`呼呼~升级啦！嗷~！`
+			[/level up]
+		[/pop random]
+		[pop random]
+			50	
+			[character level up]
+				`不愧是我的主人啊~嗷~~`
+			[/character level up]
+		[/pop random]
+		[evolution]
+			``
+		[/evolution]
+	[/main game]
+	[pvp]
+		[press creature button]
+			``
+		[/press creature button]
+	[/pvp]
+[/trigger]

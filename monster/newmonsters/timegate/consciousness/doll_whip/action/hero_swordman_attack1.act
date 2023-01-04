@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Hero_Swordman_Attack1.ani`
+	[SUB ANI]
+		`../Animation/ball/Hero_Swordman_Attack1.ani`	0	0
+		`../Animation/ball_eff/Hero_Swordman_Attack1.ani`	0	0
+		`../Animation/Skill_eff/Hero_Swordman_Attack1.ani`	0	0
+		`../Animation/ball_eff/Hero_Swordman_Attack1.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8889
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	50
+		[FIX DIRECTION]
+		[NEUTRAL]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

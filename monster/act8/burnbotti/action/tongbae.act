@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Tongbae.ani`
+	[SUB ANI]
+		`../Animation/TyphoonDust1.ani`	0	-10
+		`../Animation/TyphoonDust3.ani`	0	0
+		`../Animation/TyphoonDust2.ani`	0	0
+		`../Animation/Fire/Tongbae.ani`	0	10
+	[/SUB ANI]
+	[SPEECH]
+		`烈焰族秘技！！`	1	100
+	[/SPEECH]
+	[SOUND]
+		`VOTI_SKILL_06_1`	0
+		`VOTI_TONGBAE_GET`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1330	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		17
+	[NOW]
+[/BEHAVIOR]

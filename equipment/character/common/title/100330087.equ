@@ -1,0 +1,139 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	``
+
+[explain]
+	`敌人攻击时以 5%%的机率30秒内力量增加 25，体力增加 25，智力增加25，精神增加25，攻击速度，施放速度，移动速度增加2%%。
+
+敌人攻击时5%%的附加伤害.`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical attack]
+	30
+
+[physical defense]
+	30
+
+[magical attack]
+	30
+
+[magical defense]
+	30
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[move speed]
+	30
+
+[stuck]
+	-2
+
+[HP MAX]
+	300
+
+[MP MAX]
+	300
+
+[physical critical hit]
+	3
+
+[magical critical hit]
+	3
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	5
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`physical attack`
+		`+`	25
+	[stat]
+		`physical defense`
+		`+`	25
+	[stat]
+		`magical attack`
+		`+`	25
+	[stat]
+		`magical defense`
+		`+`	25
+	[stat]
+		`attack speed`
+		`+`	20
+	[stat]
+		`cast speed`
+		`+`	20
+	[stat]
+		`move speed`
+		`+`	20
+[/then]
+
+[icon]
+	`Item/Title/title.img`	467
+
+[custom animation]
+	`TitleAnimation/2012_dreamfighter-green.ani`
+[/custom animation]
+
+[light attack]
+	10
+
+[room list move speed rate]
+	0.15
+
+[icon mark]
+	`Item/IconMark.img`	64

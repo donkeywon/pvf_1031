@@ -1,0 +1,65 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/_Dimension_Gate00.ani`
+	[SUB ANI]
+		`../Animation/_Dimension_Gate01.ani`	0	1
+		`../Animation/_Dimension_Gate00_.ani`	0	2
+		`../Animation/Dimension_D_B_dodge.ani`	0	3
+		`../Animation/Dimension_Gate_D_dodge1.ani`	0	4
+		`../Animation/Dimension_Gate_D_dodge2.ani`	0	5
+		`../Animation/Dimension_Gate_D_dodge3.ani`	0	6
+	[/SUB ANI]
+	[SOUND]
+		`QUEST_GATE_01`	0
+		`QUEST_GATE_02`	9
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[LEFT]
+	[FLASH SCREEN]
+		100	300	200	255	255	255	255
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8601
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	50
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8601
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[DESTROY]
+[/BEHAVIOR]

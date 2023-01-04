@@ -1,0 +1,188 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/sing_eff2.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+	[RANDOM SELECT]
+		1	1	1	1
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			0
+		[Y START]
+			1
+		[Z START]
+			130
+		[MOVE ME]
+	[/SET POS FORCE]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		2
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			0
+		[Y START]
+			1
+		[Z START]
+			130
+		[MOVE ME]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`time`	
+		[+]
+			3000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`time`	
+		[+]
+			6000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`time`	
+		[+]
+			9000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`time`	
+		[+]
+			12000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`time`	
+		[+]
+			15000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[IF]
+		`time`	
+		[+]
+			18000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[confuse]
+		100	60	3000	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		3000	
+		[move speed]
+		[%]
+			-50.0
+	[/APPENDAGE]
+[/BEHAVIOR]

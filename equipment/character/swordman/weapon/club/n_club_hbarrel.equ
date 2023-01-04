@@ -1,0 +1,165 @@
+#PVF_File
+
+[name]
+	`炙焰巨棒`
+
+[name2]
+	`Heavy Barrel`
+
+[basic explain]
+	`攻击时， 有2%%的几率出现火焰爆炸。
+攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率出现火焰爆炸。
+攻击时， 有2%%的几率使敌人进入眩晕状态2秒； 但在决斗场中， 只能持续1秒。 (若敌人高于Lv40， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`竟然出现……火焰爆炸？ 果然……厉害！  --索德罗斯`
+
+[grade]
+	42
+
+[rarity]
+	2
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	40
+
+[physical attack]
+	41
+
+[attack speed]
+	-30
+
+[stuck]
+	-1
+
+[price]
+	58800
+
+[repair price]
+	47040
+
+[value]
+	47040
+
+[equipment physical attack]
+	409	392
+
+[equipment magical attack]
+	353	338
+
+[separate attack]
+	183	122
+
+[skill levelup]
+	`[swordman]`	22	1
+	`[swordman]`	9	1
+	`[demonic swordman]`	9	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/swordman/club.img`	19
+
+[field image]
+	`Item/FieldImage.img`	8
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	2	2
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	2	2
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`STICK_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3400
+
+[item group name]
+	`club`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[reduce duration to human armor at pvp module]
+		50
+	[duration]
+		2000
+	[reduce probability to human armor at pvp module]
+		80
+	[probability]
+		2
+	[active status]
+		`stun`	40
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

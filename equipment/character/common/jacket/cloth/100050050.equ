@@ -1,0 +1,217 @@
+#PVF_File
+
+[name]
+	`幽魂魅影长袍`
+
+[name2]
+	``
+
+[basic explain]
+	`每12点暗属性抗性增加1点暗属性强化值。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[magical attack]
+	42
+
+[magical defense]
+	42
+
+[HP MAX]
+	100
+
+[MP MAX]
+	200
+
+[price]
+	76500
+
+[repair price]
+	64260
+
+[value]
+	61200
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	1116	1044
+
+[skill levelup]
+	`[gunner]`	106	1
+	`[at gunner]`	106	1
+	`[mage]`	113	1
+	`[mage]`	118	1
+	`[at mage]`	62	1
+	`[priest]`	105	1
+	`[swordman]`	95	1
+	`[fighter]`	100	1
+	`[at fighter]`	120	1
+[/skill levelup]
+
+[dark resistance]
+	12
+
+[light resistance]
+	-6
+
+[icon]
+	`item/new_equipment/02_cloth/coat/cloth_coat.img`	10
+
+[field image]
+	`Item/field_equip.img`	0
+
+[equipment type]
+	`[coat]`	19
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	1400
+
+[item group name]
+	`cl coat`
+
+[cool time]
+	10000
+
+[set name]
+	`幽魂魅影  套装`
+
+[set item]
+	100050050	100100012	100150012	100200013	100250013
+[/set item]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`dark resistance`	12
+		`dark attack`
+		`+`	1	0
+[/then]
+
+[set ability]
+	[fullset basic explain]
+		`攻击时， 可以赋予队员暗属性， 效果持续20秒。
+暗属性抗性高于50 : 攻击敌人时， 有3%%的几率发动暗属性爆炸。
+暗属性抗性高于75 : 施放技能时， 有5%%的几率对全部敌人发动暗属性爆炸。
+暗属性抗性高于100 : 可以增加20%%的暗属性抗性； 并且自身的每15点暗属性抗性值可以使500px范围内的敌人减少3点暗属性抗性。`
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			35000
+	[/if]
+	[then]
+		[duration]
+			20000
+		[target]
+			`party`	-1
+		[elemental weapon]
+			`dark`
+	[/then]
+	[if]
+		[is stat]
+			`myself`	-1
+			`dark resistance`
+			`=>`	50
+		[cooltime]
+			1000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			3
+		[passive object]
+			48313	0	0	0	84	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[is stat]
+			`myself`	-1
+			`dark resistance`
+			`=>`	75
+		[cooltime]
+			1000
+		[casting]
+			1
+	[/if]
+	[then]
+		[target]
+			`all enemy`	-1
+		[probability]
+			5
+		[passive object]
+			48313	0	0	0	84	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[is stat]
+			`myself`	-1
+			`dark resistance`
+			`=>`	100
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[add stat at once]
+			`dark resistance`
+			`%`	20
+	[/then]
+	[if]
+		[is stat]
+			`myself`	-1
+			`dark resistance`
+			`=>`	100
+	[/if]
+	[then]
+		[target]
+			`all enemy`	500
+		[stat change by stat]
+			`myself`	-1
+			`dark resistance`	15
+			`dark resistance`
+			`+`	-3	0
+	[/then]
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

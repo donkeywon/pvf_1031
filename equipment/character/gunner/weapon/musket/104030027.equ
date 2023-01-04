@@ -1,0 +1,225 @@
+#PVF_File
+
+[name]
+	`黎明之眼[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`施放[银弹]、 [冰冻弹]、 [爆炎弹]时， 有50%%的几率发动提升Lv5的该技能。 (无法超出该技能的Lv上限)
+
+无法进行合成和分解。`
+
+[grade]
+	61
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	41
+
+[magical attack]
+	62
+
+[price]
+	109800
+
+[repair price]
+	92232
+
+[value]
+	87840
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	559	483
+
+[equipment magical attack]
+	486	420
+
+[separate attack]
+	341	230
+
+[icon]
+	`item/weapon/gunner/musket.img`	35
+
+[field image]
+	`Item/field_weapon.img`	3
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	4	0
+
+[layer variation]
+	2790
+	`musketc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`musketb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	4	0
+
+[layer variation]
+	2790
+	`at_musketc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_musketb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	2100
+
+[item group name]
+	`musket`
+
+[cool time]
+	10000
+
+[if]
+	[event use skill]
+		`gunner`	30
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`gunner`	30	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`gunner`	2
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`gunner`	2	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`gunner`	1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`gunner`	1	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`at gunner`	30
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`at gunner`	30	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`at gunner`	2
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`at gunner`	2	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`at gunner`	1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`at gunner`	1	5
+	[/skill levelup]
+[/then]
+
+[not amplify]
+	1
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

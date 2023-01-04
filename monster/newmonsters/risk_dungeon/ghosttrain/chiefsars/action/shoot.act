@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/shoot.ani`
+	[SUB ANI]
+		`../Animation/foot/shoot.ani`	0	0
+		`../Animation/hand/shoot.ani`	0	0
+		`../animation/ef/punch1.ani`	0	0
+		`../animation/ef/punch2.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`DARKSOUL_SHOT`	6
+	[/SOUND]
+	[SPEECH]
+		`哈~~`	0	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35312
+		[PARTICLE FILENAME]
+			`../Particle/shoot.ptl`
+		[LEVEL]
+			0
+		[POS]
+			120	0	90
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

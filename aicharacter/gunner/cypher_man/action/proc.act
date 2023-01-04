@@ -1,0 +1,33 @@
+#PVF_File
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[<=]
+			80
+		[%]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9202
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-70	0	10
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

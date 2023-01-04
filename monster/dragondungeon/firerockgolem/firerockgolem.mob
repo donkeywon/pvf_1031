@@ -1,0 +1,246 @@
+#PVF_File
+
+[name]
+	`巨型烈焰傀儡弗拉斯`
+
+[face image]
+	`Monster/ch_Monsterface.img`	19
+
+[width]
+	80	80
+
+[floating height]
+	0
+
+[die effect]
+	0	3	1
+
+[attack sound]
+	`GOLEM_ATK`
+
+[damage sound]
+	`GOLEM_DMG`
+
+[die sound]
+	`GOLEM_DIE`
+
+[ambient sound]
+	`R_STORMGL_AMB`
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	2500
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	490
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	720
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	350
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	660
+[/ability category]
+
+[category]
+	`[hybrid]`
+	`[fort armor]`
+	`[fixture]`
+[/category]
+
+[fire resistance]
+	220	220
+
+[water resistance]
+	150	150
+
+[dark resistance]
+	220	220
+
+[light resistance]
+	220	220
+
+[freeze resistance]
+	1000	1000
+
+[stun resistance]
+	1000	1000
+
+[blind resistance]
+	1000	1000
+
+[stone resistance]
+	1000	1000
+
+[sleep resistance]
+	1000	1000
+
+[hold resistance]
+	1000	1000
+
+[slow resistance]
+	1000	1000
+
+[curse resistance]
+	1000	1000
+
+[confuse resistance]
+	1000	1000
+
+[lightning resistance]
+	1000	1000
+
+[bleeding resistance]
+	1000	1000
+
+[poison resistance]
+	1000	1000
+
+[burn resistance]
+	1000	1000
+
+[piercing resistance]
+	0	0
+
+[weapon break resistance]
+	400	400
+
+[HP regen speed]
+	1300	1300
+
+[MP regen speed]
+	1300	1300
+
+[hp regen rate]
+	0.0	0.0
+
+[level]
+	82	82
+
+[move speed]
+	300	300
+
+[attack speed]
+	700	700
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	300000	300000
+
+[lie frame]
+	2	3	2	3	4
+
+[item]
+[/item]
+
+[common champion drop item]
+[/common champion drop item]
+
+[waiting action]
+	`Action/StayStart.act`
+
+[last action]
+	`Action/Death.Act`
+
+[proc action]
+	`Action/proc.act`
+
+[attack action]
+	`Action/AttackSummonRock.act`
+	`Action/AttackSummonGolem.act`
+	`Action/AttackSummonFireHole.act`
+	`Action/AttackStoneWall.act`
+	`Action/AttackShock.act`
+	`Action/AttackPoisonFog.act`
+	`Action/AttackGrab.act`
+	`Action/AttackExplosion.act`
+	`Action/AttackExplosionWallReady.act`
+	`Action/AttackExplosionWall.act`
+[/attack action]
+
+[etc action]
+	`Action/MakeHand.act`
+	`Action/Birth.act`
+	`Action/AttackGrabing.act`
+	`Action/AttackGrabOff.act`
+	`Action/Sleep.Act`
+[/etc action]
+
+[attack info]
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+[/attack info]
+
+[cooltime]
+	6500	8000	15000	35000	18000	26000	34000	26000	38000	0
+[/cooltime]
+
+[vision]
+	3000
+
+[warlike]
+	100
+
+[think term]
+	3200
+
+[destination change term]
+	700
+
+[keep distance with target]
+	300
+
+[level of difficulty]
+	[easy]
+		50	5000
+	[medium]
+		60	3000
+	[hard]
+		70	0
+	[ultimate]
+		70	0
+	[hero]
+		0	0
+[/level of difficulty]
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

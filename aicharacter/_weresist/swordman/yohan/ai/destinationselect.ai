@@ -1,0 +1,43 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	500	500	500	500
+			`friend`
+			`apc`	10612
+		[true]
+	
+		[think]
+			[last result]
+				`>`	0
+			[true]
+		
+			[think]
+				[set friend character]
+					10612
+				[true]
+			
+				[think]
+					[set bound]
+						300	300	300	300
+					[true]
+					[return]
+						7
+					[false]
+					[return]
+						10
+				[/think]
+	[false]
+	[return]
+		10
+	[/think]
+	[false]
+	[return]
+		10
+	[/think]
+	[false]
+	[return]
+		10
+	[/think]
+[/ai pattern]

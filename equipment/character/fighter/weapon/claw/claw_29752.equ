@@ -1,0 +1,204 @@
+#PVF_File
+
+[name]
+	`迷殇之毒龙`
+
+[name2]
+	`找不到代码name2_29752`
+
+[basic explain]
+	`[投掷强化]毒瓶中毒范围 +10%%
+攻击中毒状态下的敌人时， 可以使自身增加5%%的攻击速度， 效果持续20秒。`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	42
+
+[magical attack]
+	21
+
+[need material]
+	3285	1200
+
+[repair price]
+	83328
+
+[value]
+	79360
+
+[equipment physical attack]
+	572	524
+
+[equipment magical attack]
+	572	524
+
+[separate attack]
+	360	243
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[fighter]`	76	2
+	`[at fighter]`	76	2
+	`[fighter]`	77	3
+	`[at fighter]`	77	3
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/claw.img`	77
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	4	2
+
+[layer variation]
+	2150
+	`clawa1`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	2160
+	`clawa2`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb1`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	660
+	`clawb2`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	4	2
+
+[layer variation]
+	2151
+	`at_clawa1`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	651
+	`at_clawb1`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2791
+	`at_clawc1`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2152
+	`at_clawa2`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	652
+	`at_clawb2`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2792
+	`at_clawc2`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[at fighter]`	38	`[all]`	`[level]`	7	`%`	10
+[/skill data up]
+
+[if]
+	[target active status]
+		`poison`
+	[attack success]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[stat]
+		`attack speed`
+		`+`	50
+[/then]
+
+[routing priority]
+	`fighter`	3
+	`at fighter`	3
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

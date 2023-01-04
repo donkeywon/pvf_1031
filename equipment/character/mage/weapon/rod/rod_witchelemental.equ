@@ -1,0 +1,256 @@
+#PVF_File
+
+[name]
+	`精灵之号角`
+
+[name2]
+	`The Shaman And 108 Spirit`
+
+[basic explain]
+	`施放[精灵召唤 : 极光格雷林]、 [精灵召唤 : 冰影阿奎利斯]、 [精灵召唤 : 火焰赫瑞克]、 [精灵召唤 : 亡魂默克尔]时， 召唤出的每只精灵都会增加27点智力， 效果持续40秒。
+施放[冰龙旋舞]时， 可以使自身增加10点冰属性强化， 效果持续25秒。`
+
+[grade]
+	75
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	71
+
+[magical attack]
+	74
+
+[attack speed]
+	100
+
+[cast speed]
+	50
+
+[stuck]
+	1
+
+[HP MAX]
+	108
+
+[MP MAX]
+	108
+
+[price]
+	120000
+
+[repair price]
+	100800
+
+[value]
+	96000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	643	598
+
+[equipment magical attack]
+	785	730
+
+[separate attack]
+	425	288
+
+[skill levelup]
+	`[mage]`	77	1
+	`[mage]`	78	1
+	`[mage]`	79	1
+	`[mage]`	76	1
+	`[mage]`	47	2
+	`[at mage]`	31	2
+	`[at mage]`	10	1
+	`[at mage]`	16	1
+	`[at mage]`	32	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/mage/rod.img`	69
+
+[field image]
+	`Item/field_weapon.img`	7
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	15	0
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	15	0
+
+[layer variation]
+	2150
+	`at_roda`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_rodd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	15	0
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`ROD_TOUCH`
+
+[durability]
+	24
+
+[weight]
+	2200
+
+[item group name]
+	`rod`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		10000
+	[event use skill]
+		`mage`	77
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		40000
+	[stat]
+		`magical attack`
+		`+`	27
+[/then]
+
+[if]
+	[cooltime]
+		10000
+	[event use skill]
+		`mage`	78
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		40000
+	[stat]
+		`magical attack`
+		`+`	27
+[/then]
+
+[if]
+	[cooltime]
+		10000
+	[event use skill]
+		`mage`	79
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		40000
+	[stat]
+		`magical attack`
+		`+`	27
+[/then]
+
+[if]
+	[cooltime]
+		10000
+	[event use skill]
+		`mage`	76
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		40000
+	[stat]
+		`magical attack`
+		`+`	27
+[/then]
+
+[if]
+	[cooltime]
+		25000
+	[event use skill]
+		`at mage`	13
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		25000
+	[appendage]
+		121
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

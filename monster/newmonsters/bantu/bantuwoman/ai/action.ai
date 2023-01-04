@@ -1,0 +1,152 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[command]
+			`==`	1
+		[true]
+	
+		[think]
+			[my state]
+				0.0
+			[true]
+		
+			[think]
+				[void]
+					`is target in attack area()`	200.0	200.0	50.0	50.0
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	4
+					[true]
+					[return]
+						-1
+					[false]
+					[return]
+						4
+				[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	80.0	80.0	50.0	50.0
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	0
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	1
+				[true]
+				[return]
+					-1
+				[false]
+			
+				[think]
+					[void]
+						`get random()`	0.0	100.0
+				
+					[think]
+						[last result]
+							`<=`	10
+						[true]
+						[return]
+							1
+						[false]
+						[return]
+							-1
+					[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`get random()`	0.0	100.0
+	
+		[think]
+			[last result]
+				`<=`	30
+			[true]
+			[return]
+				0
+			[false]
+			[return]
+				-1
+		[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	100.0	100.0	50.0	50.0
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	2
+			[true]
+			[return]
+				-1
+			[false]
+		
+			[think]
+				[void]
+					`get random()`	0.0	100.0
+			
+				[think]
+					[last result]
+						`<=`	20
+					[true]
+					[return]
+						2
+					[false]
+					[return]
+						-1
+				[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	150.0	150.0	60.0	60.0
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	3
+			[true]
+			[return]
+				-1
+			[false]
+		
+			[think]
+				[void]
+					`get random()`	0.0	100.0
+			
+				[think]
+					[last result]
+						`<=`	20
+					[true]
+					[return]
+						3
+					[false]
+					[return]
+						-1
+				[/think]
+	[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

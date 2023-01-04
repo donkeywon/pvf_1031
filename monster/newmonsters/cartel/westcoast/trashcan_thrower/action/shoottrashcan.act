@@ -1,0 +1,37 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/ShootTrashcan.ani`
+	[SUB ANI]
+		`../animation/Whisker/ShootTrashcan.ani`	0	0
+		`../animation/Top/ShootTrashcan.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`快把垃圾弄干净！`	0	100
+	[/SPEECH]
+	[SOUND]
+		`R_BROOM`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8007
+		[PARTICLE FILENAME]
+			`../particle/JunkTrashcan.ptl`
+		[LEVEL]
+			40
+		[POS]
+			63	0	89
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

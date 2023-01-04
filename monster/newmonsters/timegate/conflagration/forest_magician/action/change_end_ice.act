@@ -1,0 +1,146 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/change_end_ice.ani`
+	[SPEECH]
+		`我讨厌炙热~`	4	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DELETE APPENDAGE]
+		0	
+		[water element]
+		[+]
+			-1000.0
+	[/DELETE APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		0	
+		[fire element]
+		[+]
+			-1000.0
+		[equipment physical defense]
+		[%]
+			300.0
+		[equipment magical defense]
+		[%]
+			300.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`stay_ice.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`move_ice.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`damage1_ice.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`damage2_ice.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		`down_ice.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`sit_ice.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`move_ice.act`
+	[CHANGE ACTION FILE]
+	[MOVEBACK]
+		`backmove_ice.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`windstrike_ice.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		1
+		`entangle_ice.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		2
+		`slowball_ice.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		3
+		`change_ready_ice.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		4
+		`change_end_ice.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		5
+		`backmove_ice.act`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11149
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			11148
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`我的身体最喜欢寒冷`
+[/BEHAVIOR]

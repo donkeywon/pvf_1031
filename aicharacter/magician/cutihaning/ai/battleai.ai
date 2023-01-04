@@ -1,0 +1,94 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`enemy number of in attack area()`	150.0	150.0	100.0	100.0
+	
+		[think]
+			[last result]
+				`>=`	4
+			[true]
+		
+			[think]
+				[check use skill]
+					92
+				[true]
+				[return]
+					1
+				[false]
+				[return]
+					-1
+			[/think]
+	[false]
+	[think]
+		[void]
+			`enemy number of in attack area()`	250.0	250.0	150.0	150.0
+	
+		[think]
+			[last result]
+				`>=`	3
+			[true]
+		
+			[think]
+				[check use skill]
+					98
+				[true]
+				[return]
+					5
+				[false]
+				[return]
+					-1
+			[/think]
+	[false]
+	[think]
+		[void]
+			`enemy number of in attack area()`	400.0	400.0	200.0	200.0
+	
+		[think]
+			[last result]
+				`>=`	3
+			[true]
+		
+			[think]
+				[void]
+					`get random()`	0.0	100.0
+			
+				[think]
+					[last result]
+						`<=`	50.0
+					[true]
+				
+					[think]
+						[check use skill]
+							101
+						[true]
+						[return]
+							2
+						[false]
+						[return]
+							-1
+					[/think]
+	[false]
+	[think]
+		[check use skill]
+			106
+		[true]
+		[return]
+			4
+		[false]
+		[return]
+			-1
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

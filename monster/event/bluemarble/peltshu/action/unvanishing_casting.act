@@ -1,0 +1,32 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Uncasting.ani`
+	[SOUND]
+		`OLI_INVISIBLE`	1
+	[/SOUND]
+	[SPEECH]
+		`铛铛！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`Move.act`
+	[CHANGE ACTION FILE]
+	[STAY]
+		`stay.act`
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]

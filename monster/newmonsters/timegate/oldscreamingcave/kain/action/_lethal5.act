@@ -1,0 +1,77 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/lethal5.ani`
+	[SUB ANI]
+		`../Animation/effect/rotation_sword_eff.ani`	0	1
+		`../Animation/effect/rotation_eff.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[LEFT]
+	[TELEPORT]
+		[POS]
+			824	341	0
+		[USE MY DIRECTION]
+		[USE MAP POS]
+		[MOVE ME]
+	[/TELEPORT]
+	[SET SPEED]
+		[X AXIS]
+			2500
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		15
+	[END]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[ATTACK]
+		20	0
+	[ON]
+[/BEHAVIOR]

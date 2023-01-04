@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack1.ani`
+	[SUB ANI]
+		`../Animation/hat/Attack1_hat.ani`	0	0
+		`../Animation/pants/Attack1_pants.ani`	0	0
+		`../Animation/shirts/Attack1_shirts.ani`	0	0
+		`../Animation/Top/Attack1_top.ani`	0	0
+		`../Animation/weapon/Attack1_wp.ani`	0	10
+	[/SUB ANI]
+	[SOUND PROBABILITY]
+		`R_MADGBL_ATK`	2	30
+		`R_MINERALSWDC`	2	100
+	[/SOUND PROBABILITY]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		0
+	[END]
+[/BEHAVIOR]

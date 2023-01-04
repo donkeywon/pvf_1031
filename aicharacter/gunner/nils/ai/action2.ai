@@ -1,0 +1,50 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check key cooltime]
+			`snipe`
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	800.0	800.0	30.0	30.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`supershoota`
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`lunch`
+					[true]
+				
+					[think]
+						[check key cooltime]
+							`shoota`
+						[true]
+						[return]
+							-1
+						[false]
+						[return str]
+							`shoota`
+					[/think]
+	[false]
+	[return str]
+		`lunch`
+	[/think]
+	[false]
+	[return str]
+		`supershoota`
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[false]
+	[return str]
+		`snipe`
+	[/think]
+[/ai pattern]

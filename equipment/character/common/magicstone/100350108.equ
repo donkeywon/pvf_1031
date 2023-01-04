@@ -1,0 +1,128 @@
+#PVF_File
+
+[name]
+	`阿波菲斯之眼`
+
+[basic explain]
+	`每3秒HP值 -1%%
+
+攻击时， 有2%%的几率恢复自身1%%的HP。
+装备时， 可以使500px范围内的所有敌人减少10%%的防御力。`
+
+[detail explain]
+	`每3秒HP值 -1%%
+
+攻击时， 有2%%的几率恢复自身1%%的HP。 (冷却时间为1秒)
+装备时， 可以使500px范围内的所有敌人减少10%%的防御力。 (装备30秒后生效)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	51
+
+[physical defense]
+	51
+
+[magical defense]
+	51
+
+[price]
+	89000
+
+[value]
+	71200
+
+[creation rate]
+	0
+
+[icon]
+	`Item/new_equipment/11_magicstone/magicstone.img`	84
+
+[field image]
+	`Item/field_equip.img`	23
+
+[equipment type]
+	`[magic stone]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`magic stone`
+
+[cool time]
+	10000
+
+[magical attack]
+	51
+
+[if]
+	[time]
+		3000	1	500
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`hp`
+		`%`	-1	0
+[/then]
+
+[if]
+	[cooltime]
+		1000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		2
+	[restore]
+		`hp`
+		`%`	1	0
+[/then]
+
+[if]
+	[start cooltime]
+		30000
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[stat by condition]
+		`equipment physical defense`
+		`%`	-10
+	[stat by condition]
+		`equipment magical defense`
+		`%`	-10
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

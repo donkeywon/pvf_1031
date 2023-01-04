@@ -1,0 +1,150 @@
+#PVF_File
+
+[name]
+	`飓风粉碎者`
+
+[name2]
+	`Hurricane Smasher`
+
+[basic explain]
+	`攻击时， 有1%%的几率消耗自身1%%的HP， 并使自身增加40点力量、 8%%的攻击速度和移动速度， 效果持续30秒。
+[狂乱锤击]眩晕Lv +3`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	42
+
+[attack speed]
+	-80
+
+[stuck]
+	-2
+
+[need material]
+	3285	1200
+
+[price]
+	0
+
+[repair price]
+	93744
+
+[value]
+	89280
+
+[equipment physical attack]
+	686	629
+
+[equipment magical attack]
+	486	445
+
+[separate attack]
+	360	243
+
+[skill levelup]
+	`[priest]`	47	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/axe.img`	57
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	3	3
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`attack speed`
+		`+`	80
+	[stat]
+		`move speed`
+		`+`	80
+	[stat]
+		`physical attack`
+		`+`	40
+	[restore]
+		`hp`
+		`%`	-1	0
+[/then]
+
+[skill data up]
+	`[priest]`	49	`[all]`	`[level]`	7	`+`	3
+[/skill data up]
+
+[routing priority]
+	`priest`	3
+	`priest`	2
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

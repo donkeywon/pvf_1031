@@ -1,0 +1,186 @@
+#PVF_File
+
+[name]
+	`毒菌棒棒糖`
+
+[name2]
+	`Alkaloid Lollipop`
+
+[basic explain]
+	`施放技能时， 有3%%的几率使特定的敌人进入中毒状态。`
+
+[detail explain]
+	`施放技能时， 有3%%的几率使300px范围内最近的敌人进入中毒状态5秒； 中毒状态下的敌人， 每0.5秒受到260点伤害。 (若敌人高于Lv65， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[grade]
+	67
+
+[rarity]
+	2
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	65
+
+[magical attack]
+	64
+
+[attack speed]
+	100
+
+[cast speed]
+	50
+
+[stuck]
+	1
+
+[price]
+	93800
+
+[repair price]
+	78792
+
+[value]
+	75040
+
+[equipment physical attack]
+	535	517
+
+[equipment magical attack]
+	653	631
+
+[separate attack]
+	293	199
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[mage]`	79	1
+	`[mage]`	77	1
+	`[at mage]`	16	1
+	`[at mage]`	31	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/weapon/mage/rod.img`	61
+
+[field image]
+	`Item/field_weapon.img`	7
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[mage]`
+
+[variation]
+	16	9
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	16	9
+
+[layer variation]
+	2150
+	`at_roda`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_rodd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	16	9
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`ROD_TOUCH`
+
+[durability]
+	24
+
+[weight]
+	2200
+
+[item group name]
+	`rod`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		7500
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy near`	300
+	[duration]
+		5000
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`poison`	65	2600
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

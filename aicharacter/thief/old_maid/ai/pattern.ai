@@ -1,0 +1,57 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is the skill in cooltime()`	21
+		[false]
+		[return]
+			`darksoul`
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	200	200	60	60
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	5
+				[false]
+				[return]
+					`flamecut`
+				[true]
+				[return]
+					-1
+			[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	300	300	150	150
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	35
+			[false]
+			[return]
+				`nail`
+			[true]
+			[return]
+				-1
+		[/think]
+	[false]
+	[think]
+		[void]
+			`is the skill in cooltime()`	23
+		[false]
+		[return]
+			`spear`
+		[true]
+		[return]
+			-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

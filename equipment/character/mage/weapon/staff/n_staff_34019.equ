@@ -1,0 +1,115 @@
+#PVF_File
+
+[name]
+	`素喃订制法杖`
+
+[name2]
+	`找不到代码name2_34019`
+
+[basic explain]
+	`暴击伤害 +7%%
+无法进行分解。`
+
+[grade]
+	52
+
+[attach type]
+	`[trade]`
+
+[item group name]
+	`staff`
+
+[rarity]
+	3
+
+[weight]
+	2400
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+[/usable job]
+
+[minimum level]
+	48
+
+[icon]
+	`Item/weapon/mage/staff.img`	92
+
+[icon mark]
+	`Item/IconMark.img`	52
+
+[field image]
+	`Item/field_weapon.img`	9
+
+[equipment type]
+	`[weapon]`	23
+
+[sub type]
+	3
+
+[durability]
+	28
+
+[need material]
+	3323	40
+
+[value]
+	66560
+
+[cool time]
+	10000
+
+[magical attack]
+	36
+
+[equipment physical attack]
+	460	422
+
+[equipment magical attack]
+	581	533
+
+[separate attack]
+	287	192
+
+[attack speed]
+	-100
+
+[cast speed]
+	50
+
+[variation]
+	4	3
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[move wav]
+	`STAFF_TOUCH`
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	7
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]

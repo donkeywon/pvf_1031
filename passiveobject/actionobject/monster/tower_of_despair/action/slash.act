@@ -1,0 +1,46 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Dodge.ani`
+	[SUB ANI]
+		`../animation/Normal1.ani`	0	0
+		`../animation/Normal2.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Appear.ptl`	0	0	90
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			56153
+		[LEVEL]
+			80
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[USE OBJECT ZPOS]
+		[SUMMON TIME]
+			60000
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

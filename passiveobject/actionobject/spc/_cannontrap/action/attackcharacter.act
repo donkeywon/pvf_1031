@@ -1,0 +1,99 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack.ani`
+	[SUB ANI]
+		`../Animation/dust2.ani`	0	-1
+		`../Animation/stones3.ani`	0	-2
+		`../Animation/CannonSmoke.ani`	0	100
+	[/SUB ANI]
+	[SOUND]
+		`COWCANNON_SHOOT`	1
+		`COWCANNON_READY`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[LAST ATTACKER]
+	[CHECKUP]
+		[IS TEAM]
+			[MONSTER TEAM]
+		[/IS TEAM]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[LAST ATTACKER]
+	[CHECKUP]
+		[IS TEAM]
+			[CHARCTER TEAM]
+		[/IS TEAM]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET TEAM]
+		0
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8044
+		[PARTICLE FILENAME]
+			`../Particle/xmove.ptl`
+		[LEVEL]
+			50
+		[POS]
+			65	0	40
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET TEAM]
+		50
+[/BEHAVIOR]

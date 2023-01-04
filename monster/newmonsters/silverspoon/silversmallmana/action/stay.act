@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Stay.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		4
+	[NOW]
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[MOVE]
+		1
+	[OFF]
+[/BEHAVIOR]

@@ -1,0 +1,63 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	90.0	90.0	30.0	30.0
+		[true]
+	
+		[think]
+			[void]
+				`get random()`	0.0	100.0
+		
+			[think]
+				[last result]
+					`<=`	50.0
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`ilbal`
+					[true]
+					[return str]
+						`combo1`
+					[false]
+					[return str]
+						`ilbal`
+				[/think]
+	[false]
+	[return str]
+		`combo1`
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	430.0	150.0	10.0	10.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`venom`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`net_up`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`net_up`
+			[/think]
+	[false]
+	[return str]
+		`venom`
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+[/ai pattern]

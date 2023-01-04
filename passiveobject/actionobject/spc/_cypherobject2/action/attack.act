@@ -1,0 +1,65 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack.ani`
+	[SUB ANI]
+		`../Animation/Attack_glow.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET OUTLINE]
+		1	255	255	255	2
+	[SET SPEED]
+		[X AXIS]
+		[RANDOM SELECT]
+			100	-100
+		[/RANDOM SELECT]
+		[Y AXIS]
+		[RANDOM SELECT]
+			15	-15
+		[/RANDOM SELECT]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8036
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			45
+		[POS]
+			-5	0	86
+	[/CREATE PASSIVEOBJECT]
+	[SET OUTLINE]
+		0	255	255	255	2
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Y AXIS]
+			0
+	[/SET SPEED]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]

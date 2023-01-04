@@ -1,0 +1,102 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/jump.ani`
+	[SUB ANI]
+		`../Animation/shdow_jump3.ani`	0	-1
+	[/SUB ANI]
+	[SOUND]
+		`MAX_JUMP`	1
+		`MAX_LANDING`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[RIGHT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Y AXIS]
+			350
+		[Z AXIS]
+			800
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+		[RANDOM]
+			550	800	272	600
+		[USE MAP POS]
+		[MOVE ME]
+	[/TELEPORT]
+	[SET SPEED]
+		[Y AXIS]
+			0
+		[Z AXIS]
+			-1200
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Y AXIS]
+			0
+		[Z AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		13
+	[NOW]
+[/BEHAVIOR]

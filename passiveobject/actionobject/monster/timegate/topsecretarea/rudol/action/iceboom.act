@@ -1,0 +1,28 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/ice_arrow.ani`
+	[SUB ANI]
+		`../animation/ice_creat_1.ani`	0	1
+		`../animation/ice_creat_2.ani`	0	2
+		`../animation/ice_arrow_effect.ani`	0	3
+		`../animation/ice_creat_effect.ani`	0	4
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			1500
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

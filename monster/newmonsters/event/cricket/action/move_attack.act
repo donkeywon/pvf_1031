@@ -1,0 +1,87 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Move.ani`
+	[SUB ANI]
+		`../Animation/Move_eff.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`GGOB_JUMP`	2
+	[/SOUND]
+	[SPEECH]
+		`咪~咪~咪~咪~~~`	0	50
+		`咪~咪咪咪~咪咪咪咪~`	2	50
+		`咪~咪咪咪~咪咪咪咪~`	2	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+		[RANDOM SELECT]
+			300	250	220	150
+		[/RANDOM SELECT]
+		[Y AXIS]
+		[RANDOM SELECT]
+			50	40	30	20	10	0	-10	-20	-30	-40	-50
+		[/RANDOM SELECT]
+		[Z AXIS]
+			500
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Y AXIS]
+			0
+		[Z AXIS]
+			-700
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-200
+	[/SET SPEED]
+[/BEHAVIOR]

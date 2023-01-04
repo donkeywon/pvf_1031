@@ -1,0 +1,32 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[my hp down]
+			`%`	90
+		[true]
+		[return str]
+			`summon`
+		[false]
+	
+		[think]
+			[my hp down]
+				`%`	60
+			[true]
+			[return str]
+				`summon`
+			[false]
+		
+			[think]
+				[my hp down]
+					`%`	30
+				[true]
+				[return str]
+					`summon`
+				[false]
+				[return]
+					-1
+			[/think]
+	[/think]
+	[/think]
+[/ai pattern]

@@ -1,0 +1,174 @@
+#PVF_File
+
+[name]
+	`死亡主宰者`
+
+[name2]
+	``
+
+[basic explain]
+	`↑↓+[宠物技能键]输入时， 将消耗2%%的HP使自身增加45点力量， 并附加15%%的伤害， 效果持续10秒。`
+
+[detail explain]
+	`↑↓+[宠物技能键]输入时， 将消耗2%%的HP使自身增加45点力量， 并附加15%%的伤害， 效果持续10秒。 (解除装备后效果消失)`
+
+[grade]
+	75
+
+[rarity]
+	4
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[physical attack]
+	50
+
+[attack speed]
+	100
+
+[stuck]
+	1
+
+[need material]
+	3285	1800
+
+[repair price]
+	100800
+
+[value]
+	96000
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	615	564
+
+[equipment magical attack]
+	652	598
+
+[separate attack]
+	441	298
+
+[physical critical hit]
+	10
+
+[dark attack]
+	15
+
+[icon]
+	`item/new_equipment/01_weapon/thief/dagger/dagger.img`	103
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	23	1
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[routing priority]
+	`thief`	1
+[/routing priority]
+
+[elemental property]
+	`[dark element]`
+
+[command]
+	{6=`(UP)`}
+	{8=`,`}
+	{6=`(DOWN)`}
+	{8=`,`}
+	{6=`(CREATURE)`}
+[/command]
+
+[if]
+	[use command]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[restore]
+		`hp`
+		`%`	-20	10000
+	[stat]
+		`physical attack`
+		`+`	45
+	[appendage]
+		147
+[/then]
+
+[if]
+	[attack success]
+		1
+	[my appendage]
+		147
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	15
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,51 @@
+#PVF_File
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[team]
+	100
+
+[basic action]
+	`Action/mind_control_octo.act`
+
+[piercing power]
+	1000
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	10000
+[/object destroy condition]
+
+[hp max]
+	40000
+
+[hp destroy]
+	1
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[MONSTER]`	61194
+	[homing velocity]
+		100	1
+	[homing check gap]
+		1000
+	[sync animation rotation]
+		0
+	[max rotation]
+		100
+	[init rotation]
+		180
+	[diff rotation]
+		200
+	[homing time]
+		0
+[/homing]
+
+[last action]
+	`Action/last_octo.act`

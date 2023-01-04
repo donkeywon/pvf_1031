@@ -1,0 +1,43 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Die_EMP_Attack.ani`
+	[SUB ANI]
+		`../Animation/effect/Whip_Boom4.ani`	0	1
+		`../Animation/effect/Whip_Boom2.ani`	0	2
+		`../Animation/effect/Whip_Boom3.ani`	0	3
+		`../Animation/effect/Whip_Boom1.ani`	0	4
+		`../Animation/effect/shock_eff2.ani`	0	5
+		`../Animation/effect/Die_EMP_effect2.ani`	0	6
+	[/SUB ANI]
+	[SPEECH]
+		`呃啊！傲慢的家伙！`	6	100
+		`不……不行！！`	12	100
+	[/SPEECH]
+	[SOUND]
+		`KURJEEP_DIE_01`	1
+		`KURJEEP_DIE_02`	16
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		17	17
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9951
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			80
+		[POS]
+			-20	0	80
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

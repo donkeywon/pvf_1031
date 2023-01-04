@@ -1,0 +1,39 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	800.0	800.0	32.0	32.0
+		[true]
+		[return]
+			10
+		[false]
+	
+		[think]
+			[set friend monster]
+				61192
+			[true]
+		
+			[think]
+				[void]
+					`number of in attack area()`	10.0	10.0	10.0	10.0
+					`friend`
+					`monster`	61192
+			
+				[think]
+					[last result]
+						`>=`	1.0
+					[true]
+					[return]
+						-1
+					[false]
+					[return]
+						13
+				[/think]
+	[/think]
+	[false]
+	[return]
+		0
+	[/think]
+	[/think]
+[/ai pattern]

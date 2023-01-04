@@ -1,0 +1,49 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Jump_Attack.ani`
+	[SUB ANI]
+		`../Animation/Jump_Attack_eff.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`R_YOKSHER_SKILL_01_1`	0
+		`CLAWC_02`	0
+	[/SOUND]
+	[SPEECH]
+		`在这里！！`	2	2
+		`嘻嘻~愚蠢的家伙！`	2	3
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			150
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Z AXIS]
+			-150
+	[/SET SPEED]
+[/BEHAVIOR]

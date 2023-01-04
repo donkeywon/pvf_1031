@@ -1,0 +1,119 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/SuperHyperLuckyAttack.ani`
+	[SUB ANI]
+		`../animation/Effect/KnockSmall.ani`	0	0
+		`../animation/Effect/KnockSmall2.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`KONG_ACCIDENT_01`	0
+		`KONG_ACCIDENT_01`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			200
+		[X AXIS]
+			300
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-100
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			50
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8753
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			70	0	5
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+	[/SET SPEED]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8754
+		[PARTICLE FILENAME]
+			`../particle/fairy.ptl`
+		[LEVEL]
+			0
+		[POS]
+			70	0	5
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		10
+	[%]
+	[SAY SPEECH]
+		`精灵？什么时候蹦出来的？`
+[/BEHAVIOR]

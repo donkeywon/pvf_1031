@@ -1,0 +1,91 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/bat_cave.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+		[DISTANCE]
+		[<=]
+			300
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time323`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		2
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time323`	
+		[+]
+			30000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[RESET]
+	[TRIGGER]
+	[CUSTOM]
+		0	0
+	[RESET]
+	[TRIGGER]
+	[CUSTOM]
+		0	1
+	[RESET]
+	[TRIGGER]
+	[CUSTOM]
+		0	2
+	[RESET]
+	[TRIGGER]
+		2
+	[OFF]
+	[DIM]
+		`time323`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]

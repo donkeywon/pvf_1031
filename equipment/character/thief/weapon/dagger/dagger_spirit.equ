@@ -1,0 +1,130 @@
+#PVF_File
+
+[name]
+	`精魂匕首`
+
+[name2]
+	`Elishark of Spirit`
+
+[basic explain]
+	`攻击精灵族敌人时， 附加50点伤害。`
+
+[grade]
+	33
+
+[rarity]
+	2
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	32
+
+[physical attack]
+	22
+
+[attack speed]
+	100
+
+[stuck]
+	1
+
+[price]
+	46200
+
+[repair price]
+	36960
+
+[value]
+	36960
+
+[equipment physical attack]
+	262	241
+
+[equipment magical attack]
+	277	256
+
+[separate attack]
+	150	98
+
+[physical critical hit]
+	10
+
+[icon]
+	`Item/weapon/thief/dagger.img`	19
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[thief]`
+
+[variation]
+	1	2
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[if]
+	[target type]
+		`spirit`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`+`	50
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,162 @@
+#PVF_File
+
+[name]
+	`传承 : 神圣的守夜女神蟒皮胸甲`
+
+[name2]
+	`Legacy : Holy Coat of Latri`
+
+[basic explain]
+	`[变异苍蝇拍]大成功率 +1%%`
+
+[grade]
+	32
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	30
+
+[physical attack]
+	23
+
+[magical attack]
+	14
+
+[magical defense]
+	6
+
+[HP MAX]
+	60
+
+[price]
+	25600
+
+[repair price]
+	20480
+
+[value]
+	20480
+
+[equipment physical defense]
+	840	792
+
+[skill levelup]
+	`[gunner]`	5	1
+	`[gunner]`	48	1
+	`[at gunner]`	5	1
+	`[at gunner]`	48	1
+	`[mage]`	9	2
+	`[mage]`	95	1
+	`[at mage]`	21	1
+	`[thief]`	4	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/common/coat.img`	60
+
+[field image]
+	`Item/FieldImage.img`	0
+
+[equipment type]
+	`[coat]`	18
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	33
+
+[weight]
+	1900
+
+[item group name]
+	`lt coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[skill data up]
+	`[mage]`	95	`[all]`	`[static]`	0	`+`	-10
+	`[mage]`	95	`[all]`	`[static]`	2	`+`	10
+[/skill data up]
+
+[set name]
+	`传承 : 神圣的守夜女神蟒皮战甲  套装`
+
+[set item]
+	10485	12485	18480
+[/set item]
+
+[item overpower part]
+
+[set ability]
+	[MP MAX]
+		250
+	[physical attack]
+		45
+	[magical attack]
+		45
+	[light resistance]
+		8
+	[MP regen speed]
+		4
+	[move speed]
+		20
+	[physical critical hit]
+		3
+	[skill levelup]
+		`[gunner]`	60	1
+		`[gunner]`	1	1
+		`[at gunner]`	60	1
+		`[at gunner]`	1	1
+		`[mage]`	40	1
+		`[mage]`	101	1
+		`[at mage]`	31	1
+		`[thief]`	9	1
+	[/skill levelup]
+	[fullset basic explain]
+		`[改良舒露露]大成功率 +1.5%%
+[变异苍蝇拍]大成功率 +1.5%%
+进入地下城时， 因传承的祝福增加自身5%%的攻击速度和施放速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`attack speed`
+			`+`	50
+		[stat by condition]
+			`cast speed`
+			`+`	50
+	[/then]
+[/set ability]
+
+[possible kiri protect]

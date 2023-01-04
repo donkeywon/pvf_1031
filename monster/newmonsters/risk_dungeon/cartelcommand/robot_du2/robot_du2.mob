@@ -1,0 +1,217 @@
+#PVF_File
+
+[name]
+	`Du-1 2号机`
+
+[face image]
+	`Monster/MonsterFace.img`	619
+
+[die effect]
+	0	21	1
+
+[category]
+	`[machine]`
+[/category]
+
+[ambient sound]
+	``
+
+[attack sound]
+	``
+
+[appear sound]
+	``
+
+[damage sound]
+	`R_GARCHER_DMG`
+
+[die sound]
+	`R_GARCHER_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	181
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	150
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	199
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	150
+	`[HP MAX]`	`*`	783
+[/ability category]
+
+[level]
+	100	100
+
+[fire resistance]
+	100	100
+
+[water resistance]
+	100	100
+
+[dark resistance]
+	100	100
+
+[light resistance]
+	100	100
+
+[slow resistance]
+	1000	1000
+
+[freeze resistance]
+	1000	1000
+
+[poison resistance]
+	1000	1000
+
+[stun resistance]
+	1000	1000
+
+[curse resistance]
+	1000	1000
+
+[blind resistance]
+	1000	1000
+
+[lightning resistance]
+	1000	1000
+
+[stone resistance]
+	1000	1000
+
+[sleep resistance]
+	1000	1000
+
+[burn resistance]
+	1000	1000
+
+[bleeding resistance]
+	1000	1000
+
+[piercing resistance]
+	20	20
+
+[confuse resistance]
+	1000	1000
+
+[hold resistance]
+	1000	1000
+
+[HP regen speed]
+	20	20
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	60000	60000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[waiting action]
+	`../robot_du1/action/Stay_start.act`
+
+[move action]
+	`../robot_du1/action/move_start.act`
+
+[damage action 1]
+	`../robot_du1/action/Damage1_start.act`
+
+[damage action 2]
+	`../robot_du1/action/Damage2_start.act`
+
+[attack action]
+	`action/2_Chang_Action.act`
+	`../robot_du1/action/Attack1.act`
+	`action/E_Attack_Move.act`
+	`../robot_du1/action/Attack2.act`
+	`action/E_Attack_Move2.act`
+	`../robot_du1/action/Attack3.act`
+	`action/E_Attack_Move3.act`
+	`../robot_du1/action/Attack4.act`
+	`action/E_Attack_Move4.act`
+	`../robot_du1/action/F_Attack.act`
+	`../robot_du1/action/Stop_Action.act`
+	`../robot_du1/action/Warning.act`
+	`../robot_du1/action/Warning2.act`
+[/attack action]
+
+[proc action]
+	`../robot_du1/Action/Proc.act`
+
+[attack info]
+	``
+	`../robot_du1/Attackinfo/Attack.atk`
+	`../robot_du1/Attackinfo/Attack.atk`
+	`../robot_du1/Attackinfo/Attack.atk`
+	`../robot_du1/Attackinfo/Attack.atk`
+	`../robot_du1/Attackinfo/Attack.atk`
+	`../robot_du1/Attackinfo/Attack.atk`
+	`../robot_du1/Attackinfo/Attack.atk`
+	`../robot_du1/Attackinfo/Attack.atk`
+	`../robot_du1/Attackinfo/Attack.atk`
+	``
+	``
+	``
+[/attack info]
+
+[cooltime]
+	1000	1000	1000	20000	2000	2000	2000	2000	2000	2000	2000	2000	2000
+[/cooltime]
+
+[think term]
+	200
+
+[destination change term]
+	200
+
+[ai pattern]
+	[easy]
+		`../robot_du1/ai/Event.ai`
+		`ai/2DestinationSelect.ai`
+		`../robot_du1/ai/Action_L.ai`
+		`../robot_du1/ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`../robot_du1/ai/Event.ai`
+		`ai/2DestinationSelect.ai`
+		`../robot_du1/ai/Action_L.ai`
+		`../robot_du1/ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`../robot_du1/ai/Event.ai`
+		`ai/2DestinationSelect.ai`
+		`../robot_du1/ai/Action_L.ai`
+		`../robot_du1/ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`../robot_du1/ai/Event.ai`
+		`ai/2DestinationSelect.ai`
+		`../robot_du1/ai/Action_L.ai`
+		`../robot_du1/ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`../robot_du1/ai/Event.ai`
+		`ai/2DestinationSelect.ai`
+		`../robot_du1/ai/Action_L.ai`
+		`../robot_du1/ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	400
+
+[keep range distance with target]
+	-20	30	30	20
+
+[vision]
+	1000
+
+[lie frame]
+	1	2	3	3	4

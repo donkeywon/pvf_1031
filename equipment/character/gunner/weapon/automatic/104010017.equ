@@ -1,0 +1,162 @@
+#PVF_File
+
+[name]
+	`毒蜘蛛 - PP19`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 有3%%的几率向200px范围内的敌人施放毒柱。
+[Ez-8自爆者]冷却时间 -1.5秒`
+
+[detail explain]
+	`攻击时， 有3%%的几率向200px范围内的敌人施放毒柱。(在决斗场内几率为1.5%%)
+Ez-8 自爆者冷却时间减少1.5秒`
+
+[grade]
+	74
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	70
+
+[magical attack]
+	49
+
+[stuck]
+	1
+
+[price]
+	118400
+
+[repair price]
+	99456
+
+[value]
+	94720
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	462	421
+
+[equipment magical attack]
+	677	618
+
+[separate attack]
+	420	284
+
+[skill levelup]
+	`[gunner]`	79	2
+	`[gunner]`	59	1
+	`[gunner]`	28	1
+	`[at gunner]`	79	2
+	`[at gunner]`	59	1
+	`[at gunner]`	28	1
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/automatic/automatic.img`	84
+
+[field image]
+	`Item/field_weapon.img`	2
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	21	0
+
+[layer variation]
+	2790
+	`autoc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`autob`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	21	0
+
+[layer variation]
+	2790
+	`at_autoc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_autob`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	1500
+
+[item group name]
+	`automatic`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		5000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy near`	200
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		50
+	[passive object]
+		48091	0	0	0	74	0	``
+	[/passive object]
+[/then]
+
+[skill data up]
+	`[gunner]`	28	`[all]`	`[cooltime]`	0	`+`	-1500
+	`[at gunner]`	28	`[all]`	`[cooltime]`	0	`+`	-1500
+[/skill data up]
+
+[icon mark]
+	`Item/IconMark.img`	66

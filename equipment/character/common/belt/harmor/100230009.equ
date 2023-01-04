@@ -1,0 +1,110 @@
+#PVF_File
+
+[name]
+	`星云迷踪腰带`
+
+[name2]
+	``
+
+[basic explain]
+	`被击时， 有20%%的几率施放Lv15的[湮灭黑洞]。`
+
+[detail explain]
+	`被击时， 有20%%的几率施放Lv15的[湮灭黑洞]。 (决斗场中几率为2%%)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	23
+
+[physical defense]
+	21
+
+[magical attack]
+	17
+
+[inventory limit]
+	3000
+
+[price]
+	76500
+
+[repair price]
+	64260
+
+[value]
+	61200
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	1488	1392
+
+[icon]
+	`item/new_equipment/05_harmor/belt/harmor_belt.img`	10
+
+[field image]
+	`Item/field_equip.img`	13
+
+[equipment type]
+	`[waist]`	19
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	26
+
+[weight]
+	1400
+
+[item group name]
+	`ha waist`
+
+[cool time]
+	10000
+
+[set item master]
+	100080009
+
+[routing priority]
+[/routing priority]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		20
+	[reduce probability to human armor at pvp module]
+		90
+	[perform skill]
+		`mage`	58	15	0
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,57 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/casting00.ani`
+	[SUB ANI]
+		`../Animation/casting1_ring01.ani`	0	-1
+		`../Animation/casting1_ring04.ani`	0	-1
+		`../Animation/casting1_ring03.ani`	0	0
+		`../Animation/casting1_effect00.ani`	0	0
+		`../Animation/casting1_ring00.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`黑暗之火会把你们烧为灰烬！`	1	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		3	5000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[WHICH]
+	[CHARACTER]
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10056
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[WARNING MARK]
+			0	0	100	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

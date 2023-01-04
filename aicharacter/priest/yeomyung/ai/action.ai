@@ -1,0 +1,88 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	5000.0	5000.0	2000.0	2000.0
+			`friend`
+			`passive object`	9266
+	
+		[think]
+			[last result]
+				`<`	1.0
+			[true]
+		
+			[think]
+				[hp]
+					`%>=`	80
+				[true]
+				[import ai]
+					`Action_main.ai`
+				[false]
+			
+				[think]
+					[hp]
+						`%>=`	40
+					[true]
+				
+					[think]
+						[void]
+							`number of in attack area()`	5000.0	5000.0	2000.0	2000.0
+							`friend`
+							`passive object`	9267
+					
+						[think]
+							[last result]
+								`<`	1.0
+							[true]
+						
+							[think]
+								[check key cooltime]
+									`attack70_1`
+								[true]
+								[return]
+									-1
+								[false]
+								[return]
+									6
+							[/think]
+	[false]
+	[import ai]
+		`Action_main.ai`
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	5000.0	5000.0	2000.0	2000.0
+			`friend`
+			`passive object`	9267
+	
+		[think]
+			[last result]
+				`==`	1.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`attack70_1`
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					6
+			[/think]
+	[false]
+	[import ai]
+		`Action_main.ai`
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[import ai]
+		`Action_main.ai`
+	[/think]
+	[/think]
+[/ai pattern]

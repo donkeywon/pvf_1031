@@ -1,0 +1,191 @@
+#PVF_File
+
+[name]
+	`天界机械臂铠 [网吧]`
+
+[name2]
+	``
+
+[basic explain]
+	`被攻击时， 有1%%的几率使所有队员进入加速状态。
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。`
+
+[detail explain]
+	`攻击时， 有1%%的几率使所有队员进入加速状态20秒； 加速状态下， 增加5%%的移动速度和攻击速度。
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。`
+
+[flavor text]
+	`传说是天族机械师科萨制作的机械臂。`
+
+[grade]
+	34
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	30
+
+[physical attack]
+	38
+
+[attack speed]
+	-80
+
+[stuck]
+	-1
+
+[HP regen speed]
+	55
+
+[price]
+	61200
+
+[repair price]
+	48960
+
+[value]
+	48960
+
+[equipment physical attack]
+	408	360
+
+[equipment magical attack]
+	306	270
+
+[separate attack]
+	196	130
+
+[skill levelup]
+	`[fighter]`	36	1
+	`[fighter]`	62	2
+	`[at fighter]`	62	2
+	`[at fighter]`	36	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/gauntlet.img`	13
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	0	2
+
+[layer variation]
+	2790
+	`armc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`armb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	0	2
+
+[layer variation]
+	2150
+	`at_arma`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_armb`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_armc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_armx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[jump power]
+	30
+
+[if]
+	[cooltime]
+		1000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[duration]
+		20000
+	[probability]
+		1
+	[reduce probability to human armor at pvp module]
+		78
+	[active status]
+		`haste`	27	5	5
+[/then]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

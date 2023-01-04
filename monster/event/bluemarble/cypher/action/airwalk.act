@@ -1,0 +1,50 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/airwalk.ani`
+	[SUB ANI]
+		`../animation/aura_airwalk.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`MONAHUN_FASTMOVE`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+		[RANDOM SELECT]
+			350	-350
+		[/RANDOM SELECT]
+		[Y AXIS]
+		[RANDOM SELECT]
+			150	-150
+		[/RANDOM SELECT]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Y AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]

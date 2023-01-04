@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack_2_0.ani`
+	[SUB ANI]
+		`../Animation/Attack_2_1.ani`	0	-1
+		`../Animation/Attack_2_2.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`战斗中不能退缩！！`	0	15
+		`我一定会阻止你！！`	0	15
+	[/SPEECH]
+	[SOUND]
+		`TOMA_SKILL_02`	0
+		`TOMA_SAND`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			15034
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			20	-10	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

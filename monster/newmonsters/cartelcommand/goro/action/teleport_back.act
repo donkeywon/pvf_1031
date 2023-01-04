@@ -1,0 +1,162 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/teleport1.ani`
+	[SUB ANI]
+		`../Animation/attack1_1.ani`	0	1
+		`../Animation/attack1_2.ani`	0	2
+		`../Animation/attack1_3.ani`	0	3
+	[/SUB ANI]
+	[SPEECH]
+		`急须爆炸！请求支援！`	5	50
+		`咕噜~请求支援！`	5	50
+	[/SPEECH]
+	[SOUND]
+		`GORO_SKILL_05`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10549
+		[PARTICLE FILENAME]
+			`../Particle/launcher.ptl`
+		[LEVEL]
+			0
+		[POS]
+			184	130	600
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	100	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10549
+		[PARTICLE FILENAME]
+			`../Particle/launcher.ptl`
+		[LEVEL]
+			0
+		[POS]
+			384	180	600
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	100	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10549
+		[PARTICLE FILENAME]
+			`../Particle/launcher.ptl`
+		[LEVEL]
+			0
+		[POS]
+			584	130	600
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	100	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10549
+		[PARTICLE FILENAME]
+			`../Particle/launcher.ptl`
+		[LEVEL]
+			0
+		[POS]
+			784	180	600
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	100	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10549
+		[PARTICLE FILENAME]
+			`../Particle/launcher.ptl`
+		[LEVEL]
+			0
+		[POS]
+			984	130	600
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	100	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10549
+		[PARTICLE FILENAME]
+			`../Particle/launcher.ptl`
+		[LEVEL]
+			0
+		[POS]
+			1184	180	600
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	100	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

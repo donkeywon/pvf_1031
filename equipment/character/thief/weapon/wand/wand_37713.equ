@@ -1,0 +1,169 @@
+#PVF_File
+
+[name]
+	`巫师的残骸 [网吧]`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人减少4000点魔防。
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人减少4000点魔防。 (在决斗场中 -800)
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	65
+
+[magical attack]
+	46
+
+[attack speed]
+	-100
+
+[price]
+	110400
+
+[repair price]
+	92736
+
+[value]
+	88320
+
+[equipment physical attack]
+	528	488
+
+[equipment magical attack]
+	752	695
+
+[separate attack]
+	389	264
+
+[magical critical hit]
+	5
+
+[icon]
+	`Item/weapon/thief/wand.img`	79
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	13	0
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2100
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		5000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		80
+	[stat]
+		`equipment magical defense`
+		`+`	-4000
+[/then]
+
+[pvp]
+	[if]
+		[cooltime]
+			2000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			5000
+		[probability]
+			10
+		[stat]
+			`equipment magical defense`
+			`+`	-800
+	[/then]
+[/pvp]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

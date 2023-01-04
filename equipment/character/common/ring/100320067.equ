@@ -1,0 +1,112 @@
+#PVF_File
+
+[name]
+	`瘟疫净化之戒`
+
+[basic explain]
+	`攻击特定怪物时， 有5%%的几率将目标烧为灰烬， 但需要消耗5个无色小晶块。
+无法进行分解。`
+
+[detail explain]
+	`攻击特定怪物时， 有5%%的几率将目标烧成灰烬， 但需要消耗5个无色小晶块。 (冷却时间10秒)
+特定怪物有 : 疾病之源、 轻度感染者、 中度感染者、 溶解骷髅、 瘟疫溶解怪、 嗜血盗尸者、 黑色德鲁。
+无法进行分解。`
+
+[grade]
+	74
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[physical attack]
+	44
+
+[HP MAX]
+	300
+
+[need material]
+	3338	350
+
+[value]
+	59200
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	2592	2432
+
+[icon]
+	`Item/new_equipment/07_ring/ring.img`	95
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[routing priority]
+[/routing priority]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[if]
+	[cooltime]
+		10000
+	[target check]
+		`monster`	62121
+		`monster`	62122
+		`monster`	62516
+		`monster`	62123
+		`monster`	62124
+		`monster`	62513
+		`monster`	62515
+	[/target check]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[consume item]
+		3037	5
+	[weakness]
+		100
+	[passive object]
+		9350	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[icon mark]
+	`Item/IconMark.img`	66

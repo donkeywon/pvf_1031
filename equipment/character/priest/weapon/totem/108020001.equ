@@ -1,0 +1,141 @@
+#PVF_File
+
+[name]
+	`天下将军[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`耐久度增加20 
+
+攻击时力量，物理暴击机率增加
+
+不能交换，不可合成，无法进行分解。，可强化`
+
+[detail explain]
+	`耐久度增加20 
+
+攻击时30秒内力量增加80，物理暴击机率增加15%%
+
+无法进行交易，合成和分解，可以强化。`
+
+[flavor text]
+	`像人的形象的守护神`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	65
+
+[physical attack]
+	69
+
+[stuck]
+	-1
+
+[price]
+	110400
+
+[repair price]
+	92736
+
+[value]
+	88320
+
+[equipment physical attack]
+	687	634
+
+[equipment magical attack]
+	589	544
+
+[separate attack]
+	389	264
+
+[icon]
+	`Item/weapon/priest/totem.img`	59
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	11	0
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	58
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[stat]
+		`physical attack`
+		`+`	80
+	[stat]
+		`physical critical hit rate`
+		`+`	15
+[/then]
+
+[impossible contents]
+	`disjoint`
+	`gift`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

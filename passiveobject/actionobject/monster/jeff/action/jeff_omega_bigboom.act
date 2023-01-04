@@ -1,0 +1,43 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Bigboom1.ani`
+	[SUB ANI]
+		`../Animation/Bigboom2.ani`	0	0
+		`../Animation/Bigboom3.ani`	0	0
+		`../Animation/AntiairUpperQuake.ani`	0	0
+		`../Animation/AntiairUpperQuake2.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`FIRE_EXPLOSION_CREATE`	0
+		`R_BOMB`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		4	600
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	800
+	[DESTROY]
+[/BEHAVIOR]

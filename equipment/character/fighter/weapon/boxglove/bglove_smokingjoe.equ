@@ -1,0 +1,250 @@
+#PVF_File
+
+[name]
+	`乔的云烟铁拳`
+
+[name2]
+	`Smoking Joe`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态。
+施放[寸拳]、 [近身踢]、 [闪电之舞]、 [纷影连环踢]、 [瞬影连环踢]时， 有50%%的几率发动提升Lv5的该技能。 (无法超出该技能的Lv上限)`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态。
+施放[寸拳]、 [近身踢]、 [闪电之舞]、 [纷影连环踢]、 [瞬影连环踢]时， 有50%%的几率发动提升Lv5的该技能。 (无法超出该技能的Lv上限)`
+
+[grade]
+	61
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[physical attack]
+	41
+
+[attack speed]
+	100
+
+[price]
+	109800
+
+[repair price]
+	92232
+
+[value]
+	87840
+
+[equipment physical attack]
+	584	542
+
+[equipment magical attack]
+	528	490
+
+[separate attack]
+	341	230
+
+[icon]
+	`Item/weapon/fighter/bglove.img`	28
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	2	0
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	2	0
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`stun`	55
+[/then]
+
+[if]
+	[event use skill]
+		`fighter`	19
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`fighter`	19	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`fighter`	68
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`fighter`	68	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`fighter`	82
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`fighter`	82	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`at fighter`	19
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`at fighter`	19	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`at fighter`	68
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`at fighter`	68	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`at fighter`	82
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`at fighter`	82	5
+	[/skill levelup]
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

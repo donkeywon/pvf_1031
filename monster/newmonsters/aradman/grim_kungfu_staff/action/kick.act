@@ -1,0 +1,80 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/kick.ani`
+	[SUB ANI]
+		`../Animation/kick_eff.ani`	0	0
+		`../Animation/kick_eff2.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`R_KUNGFUMAN_KICK`	2
+		`R_KUNGFUMANN_ATK`	2
+		`R_KUNGFUMAN_KICK`	3
+		`R_KUNGFUMANN_ATK`	3
+		`R_KUNGFUMAN_KICK`	4
+		`R_KUNGFUMANN_ATK`	4
+	[/SOUND]
+	[SPEECH]
+		`嘿呀！！`	2	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			150
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]

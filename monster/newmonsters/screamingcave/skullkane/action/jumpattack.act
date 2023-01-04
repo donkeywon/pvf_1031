@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/JumpAttack.ani`
+	[SUB ANI]
+		`../Animation/Clothes/JumpAttack.ani`	0	0
+		`../Animation/Equip_a/JumpAttack.ani`	0	0
+		`../Animation/Equip_b/JumpAttack.ani`	0	0
+		`../Animation/EquipEffect_a/JumpAttack.ani`	0	0
+		`../Animation/EquipEffect_b/JumpAttack.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`SLESSSWDA_02`	2
+		`SKEL_ATK_02`	5
+		`KATANAA_02`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			500
+		[Z AXIS]
+			500
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

@@ -1,0 +1,36 @@
+#PVF_File
+
+[ai pattern]
+	`[think]`
+	`[target state]`	4.0
+	`[true]`
+	`[return]`	1
+	`[false]`
+	`[think]`
+	`[hp]`
+	`%>=`	20.0
+	`[true]`
+	`[return]`	0
+	`[false]`
+	`[think]`
+	`[void]`
+	`get random()`	0.0	100.0
+	`[think]`
+	`[last result]`
+	`>=`	30.0
+	`[true]`
+	`[return]`	1
+	`[false]`
+	`[think]`
+	`[last result]`
+	`>=`	5.0
+	`[true]`
+	`[return]`	0
+	`[false]`
+	`[return]`	2	
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

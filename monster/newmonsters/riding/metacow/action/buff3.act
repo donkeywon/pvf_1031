@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/FireBreath1.ani`
+	[SUB ANI]
+		`../Animation/light/FireBreath1.ani`	0	0
+		`../Animation/wp/Crying1.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`唔啊啊啊！！`	0	20
+	[/SPEECH]
+	[SOUND]
+		`HYPER_TAU_ATK_01`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			500
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		3	2000
+	[ACTIVE STATUS]
+	[stun]
+		100	100	3000
+[/BEHAVIOR]

@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack.ani`
+	[SUB ANI]
+		`../animation/attack_e1.ani`	0	5
+		`../animation/attack_e.ani`	0	10
+	[/SUB ANI]
+	[SPEECH]
+		`要不要买一个人偶啊？？`	1	30
+		`不要破坏我的人偶啊！`	1	30
+		`这些人偶很贵的……`	1	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[CHARACTER]
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[confuse]
+		100	70	7000	1
+[/BEHAVIOR]

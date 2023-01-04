@@ -1,0 +1,181 @@
+#PVF_File
+
+[name]
+	`炎狱凤翼棍`
+
+[name2]
+	`Hellfire of Pheonix`
+
+[basic explain]
+	`攻击时， 有5%%的几率使敌人进入混乱状态。`
+
+[detail explain]
+	`攻击时， 有5%%的几率使敌人进入混乱状态5秒。 (若敌人高于Lv40， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	42
+
+[rarity]
+	2
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	40
+
+[physical attack]
+	27
+
+[magical attack]
+	41
+
+[attack speed]
+	50
+
+[stuck]
+	-2
+
+[stuck resistance]
+	30
+
+[price]
+	58800
+
+[repair price]
+	47040
+
+[value]
+	47040
+
+[equipment physical attack]
+	353	338
+
+[equipment magical attack]
+	372	356
+
+[equipment physical defense]
+	420	420
+
+[separate attack]
+	183	122
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/fighter/tonfa.img`	19
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	3
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	1	3
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		5
+	[active status]
+		`confuse`	40	1
+[/then]
+
+[push aside]
+	20
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,162 @@
+#PVF_File
+
+[name]
+	`传承 : 摩羯守护神的薄纱长袍`
+
+[name2]
+	`Legacy : Silky Yarn Robe of Vulcan`
+
+[grade]
+	67
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	65
+
+[magical attack]
+	32
+
+[magical defense]
+	32
+
+[price]
+	46900
+
+[repair price]
+	41365
+
+[value]
+	37520
+
+[equipment physical defense]
+	840	816
+
+[skill levelup]
+	`[swordman]`	5	2
+	`[fighter]`	12	2
+	`[at fighter]`	12	2
+	`[gunner]`	27	2
+	`[at gunner]`	27	2
+	`[mage]`	15	1
+	`[mage]`	16	1
+	`[mage]`	17	1
+	`[mage]`	18	1
+	`[mage]`	30	2
+	`[at mage]`	27	2
+	`[priest]`	38	2
+	`[demonic swordman]`	5	2
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/common/coat.img`	227
+
+[field image]
+	`Item/field_equip.img`	0
+
+[equipment type]
+	`[coat]`	17
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	1400
+
+[item group name]
+	`cl coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 摩羯守护神的薄纱战袍  套装`
+
+[set item]
+	10165	12162	14146	18146	16138
+[/set item]
+
+[set ability]
+	[physical attack]
+		105
+	[magical attack]
+		105
+	[magical defense]
+		23
+	[fire resistance]
+		15
+	[MP regen speed]
+		16
+	[move speed]
+		45
+	[attack speed]
+		20
+	[cast speed]
+		80
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福可以使自身增加7%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	70
+	[/then]
+	[skill levelup]
+		`[gunner]`	63	1
+		`[at gunner]`	63	1
+		`[gunner]`	83	2
+		`[at gunner]`	83	2
+		`[fighter]`	15	1
+		`[fighter]`	90	2
+		`[at fighter]`	15	1
+		`[at fighter]`	90	2
+		`[swordman]`	44	1
+		`[swordman]`	82	2
+		`[mage]`	27	2
+		`[mage]`	59	2
+		`[mage]`	58	2
+		`[mage]`	55	2
+		`[mage]`	46	1
+		`[mage]`	81	2
+		`[at mage]`	14	1
+		`[at mage]`	30	2
+		`[priest]`	69	1
+		`[priest]`	101	2
+		`[demonic swordman]`	44	1
+		`[demonic swordman]`	82	2
+	[/skill levelup]
+[/set ability]
+
+[possible kiri protect]

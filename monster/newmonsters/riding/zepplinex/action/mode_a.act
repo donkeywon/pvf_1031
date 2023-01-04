@@ -1,0 +1,78 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Mode_A.ani`
+	[SUB ANI]
+		`../Animation/Mode_CannonA2.ani`	0	-1
+		`../Animation/Mode_CannonA1.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`ROBOT_BUTTING_ACT`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`BMove.act`
+	[CHANGE ACTION FILE]
+	[STAY]
+		`BStay.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`BDamage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`BDamage2.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`BAttack_shootB1.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		1
+		`Mode_B.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		2
+		`BChangeheight_Attack.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		3
+		`BAttack_Oil.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		4
+		`BAttack_Fire.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		5
+		`BChangeheight1.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		6
+		`BSuper_Attack_Oil.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		7
+		`BChangeheight2.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		8
+		`BAttack_Press.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		9
+		`BAttack_Press_Plus.act`
+[/BEHAVIOR]

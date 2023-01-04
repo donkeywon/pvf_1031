@@ -1,0 +1,66 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Fire.ani`
+	[SPEECH]
+		`试试这个吧！`	1	100
+	[/SPEECH]
+	[SOUND]
+		`DARKSOUL_SHOT`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	1	2	1	2
+	[/RANDOM SELECT]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2	0	1	2
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9007
+		[PARTICLE FILENAME]
+			`../Particle/bomb_up.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	0	70
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9007
+		[PARTICLE FILENAME]
+			`../Particle/bomb.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	0	70
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9007
+		[PARTICLE FILENAME]
+			`../Particle/bomb_down.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	0	70
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

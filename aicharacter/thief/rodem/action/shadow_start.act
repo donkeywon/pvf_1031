@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Sit_1.ani`
+	[SUB ANI]
+		`../animation/change.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[NAME HIDE ON]
+	[SUMMON MONSTER]
+		[INDEX]
+			61540
+		[LEVEL]
+			0
+		[POS]
+			0	-1	0
+		[NO EFFECT]
+		[USE MY BASEPOS]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[END]
+[/BEHAVIOR]

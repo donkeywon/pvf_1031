@@ -1,0 +1,86 @@
+#PVF_File
+
+[name]
+	`婚礼庆典`
+
+[name2]
+	`Wedding FanFare`
+
+[explain]
+	`2009年儿童节活动角色`
+
+[grade]
+	2
+
+[part set index]
+	2
+
+[usable job]
+	`[gunner]`
+[/usable job]
+
+[attach type]
+	`[free]`
+
+[minimum level]
+	1
+
+[icon]
+	`item/weapon/gunner/musket.img`	43
+
+[equipment type]
+	`[waist avatar]`	0
+
+[avatar type select]
+	7	0	0	1100	0
+	30	0	0	2200	0
+	0	0	0	4400	0
+	0	0	0	4840	2
+	`[D socket]`	`[D socket]`
+[/avatar type select]
+
+[avatar select ability]
+	`[ELEMENT_TOLERANCE_FIRE]`	`+`	25
+	`[ELEMENT_TOLERANCE_WATER]`	`+`	25
+	`[ELEMENT_TOLERANCE_DARK]`	`+`	25
+	`[ELEMENT_TOLERANCE_LIGHT]`	`+`	25
+	`[ACTIVESTATUS_TOLERANCE_STUCK]`	`+`	40
+	`[INVENTORY_MAX_WEIGHT]`	`+`	9000
+[/avatar select ability]
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[attack speed]
+	10
+
+[cast speed]
+	10
+
+[expand ani]
+	10	1	0	1	
+	[variation]
+		8	0
+	[layer variation]
+		2600
+		`musketc`
+	[equipment ani script]
+		`equipment/character/gunner.lay`
+	[layer variation]
+		650
+		`musketb`
+	[equipment ani script]
+		`equipment/character/gunner.lay`
+	[sub type]
+		2
+	[expand path]
+		`equipment/character/gunner/weapon/musket/`
+[/expand ani]
+
+[int data]
+	654321	3	1	110	0	90	1	110	0	90	1	110	0	90	2	110	0	20	0	55	0	70
+[/int data]
+
+[string data]
+	`Common/Particle/09childrenday_gg_gn.ptl`
+[/string data]

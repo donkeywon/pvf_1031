@@ -1,0 +1,151 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Casting4.ani`
+	[SUB ANI]
+		`../animation/skill_eff/start_Casting3.ani`	0	1
+		`../animation/skill_eff/start_Casting2.ani`	0	2
+		`../animation/skill_eff/start_Casting.ani`	0	3
+	[/SUB ANI]
+	[SPEECH]
+		`再！ 近！ 点！`	0	5
+		`别过来！！ 啊~~啊！！`	5	5
+	[/SPEECH]
+	[SOUND]
+		`NENKWON_ATK_04_2`	2
+		`NHWAN_LIGHTNING`	2
+		`MFIRE_CHANGE`	11
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		11	11
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[RESET]
+	[TRIGGER]
+		2
+	[RESET]
+	[TRIGGER]
+		3
+	[RESET]
+	[TRIGGER]
+		4
+	[RESET]
+	[TRIGGER]
+		5
+	[RESET]
+	[TRIGGER]
+		6
+	[RESET]
+	[TRIGGER]
+		7
+	[RESET]
+	[TRIGGER]
+		8
+	[RESET]
+[/BEHAVIOR]

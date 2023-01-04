@@ -1,0 +1,141 @@
+#PVF_File
+
+[name]
+	`双龙影`
+
+[name2]
+	`Twin Dragon`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态4秒。 (若敌人高于Lv45， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	47
+
+[rarity]
+	2
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	45
+
+[physical attack]
+	30
+
+[attack speed]
+	-80
+
+[price]
+	75200
+
+[repair price]
+	63168
+
+[value]
+	60160
+
+[equipment physical attack]
+	420	404
+
+[equipment magical attack]
+	330	317
+
+[separate attack]
+	202	135
+
+[physical critical hit]
+	5
+
+[skill levelup]
+	`[thief]`	27	1
+	`[thief]`	45	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/thief/twinswd.img`	28
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	3	6
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		6000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		4000
+	[probability]
+		2
+	[active status]
+		`stun`	45
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

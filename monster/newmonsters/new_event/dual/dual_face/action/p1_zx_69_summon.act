@@ -1,0 +1,114 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/LandRunner_Summon.ani`
+	[SUB ANI]
+		`../Animation/LandRunner_Summon_eff.ani`	0	1
+		`../Animation/eff/Eye_eff.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`AGENT_B_LIGHT`	2
+	[/SOUND]
+	[SPEECH]
+		`搜查周遭机器人！强制招唤。`	1	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16161
+		[PARTICLE FILENAME]
+			`../particle/Down.ptl`
+		[LEVEL]
+			1
+		[POS]
+		[RANDOM]
+			960	1420
+		[RANDOM]
+			205	300	400
+		[WARNING MARK]
+			10	0	200	1
+		[USE MAP POS]
+		[COLLISION GROUP]
+			2	0	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16161
+		[PARTICLE FILENAME]
+			`../particle/Down.ptl`
+		[LEVEL]
+			1
+		[POS]
+		[RANDOM]
+			960	1420
+		[RANDOM]
+			560	700	400
+		[WARNING MARK]
+			10	0	200	1
+		[USE MAP POS]
+		[COLLISION GROUP]
+			2	0	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16161
+		[PARTICLE FILENAME]
+			`../particle/Down.ptl`
+		[LEVEL]
+			1
+		[POS]
+		[RANDOM]
+			1301	1540
+		[RANDOM]
+			301	560	400
+		[WARNING MARK]
+			10	0	200	1
+		[USE MAP POS]
+		[COLLISION GROUP]
+			2	0	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]

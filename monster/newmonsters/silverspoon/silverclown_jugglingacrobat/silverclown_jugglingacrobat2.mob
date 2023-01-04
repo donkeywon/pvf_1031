@@ -1,0 +1,142 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`吉格罗`
+
+[face image]
+	`Monster/MonsterFace.img`	427
+
+[ability table]
+	0
+
+[common champion elemental property]
+	`[fire element]`
+	`[water element]`
+	`[dark element]`
+	`[light element]`
+	`[no element]`
+[/common champion elemental property]
+
+[ability category]
+	`[HP MAX]`	`*`	1
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	120
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	80
+[/ability category]
+
+[damage sound]
+	`R_NORMALSILVER_DMG`
+
+[die sound]
+	`NORMALSILVER_DIE`
+
+[category]
+	`[human]`
+	`[fixture]`
+[/category]
+
+[level]
+	60	64
+
+[move speed]
+	100	100
+
+[attack speed]
+	500	500
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	60000	60000
+
+[common champion drop item]
+[/common champion drop item]
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/juggling_Stay.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[last action]
+	`action/die.act`
+
+[lie frame]
+	1	1	1	1	1
+
+[destroy count]
+	1
+
+[destroy count damage]
+	1
+
+[action list]
+[/action list]
+
+[attack info]
+[/attack info]
+
+[cooltime]
+[/cooltime]
+
+[vision]
+	2000
+
+[think term]
+	200
+
+[destination change term]
+	500
+
+[keep distance with target]
+	1000
+
+[keep range distance with target]
+	2000	0	500	500
+
+[intelligence]
+	100	100	3000
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/Jungling_DestinationSelect.ai`
+		`ai/Jungling_Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/Jungling_DestinationSelect.ai`
+		`ai/Jungling_Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/Jungling_DestinationSelect.ai`
+		`ai/Jungling_Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/Jungling_DestinationSelect.ai`
+		`ai/Jungling_Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

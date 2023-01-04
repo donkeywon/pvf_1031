@@ -1,0 +1,55 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/chain/chain_sphere_loop.ani`
+	[SUB ANI]
+		`../Animation/Chain/chain_effect_loop.ani`	0	1
+		`../Animation/Chain/chain_loop.ani`	0	2
+		`../Animation/Chain/chain_loop_bottom.ani`	0	3
+	[/SUB ANI]
+	[SOUND]
+		`ANDRES_TIMECHAIN_LOOP`	0
+	[/SOUND]
+[/MOTION]
+
+[DEFAULT ATTACKINFO]
+	`../AttackInfo/Chain_stay.atk`
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			64013
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]

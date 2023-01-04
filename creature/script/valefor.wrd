@@ -1,0 +1,157 @@
+#PVF_File
+
+[ambient]
+	[room list]
+		`主人，我会用我的强大保护您！`
+		`前路漫漫，主人请注意身体……`
+		`我存在的意义，就是为了压制邪恶！`	
+		[in elven gard]
+			`很安静的地方……`
+		[/in elven gard]
+		[in alfhlyra]
+			`黑暗是我兄弟，怕什么……`
+		[/in alfhlyra]
+		[in stom pass]
+			`主人，您感觉到春天的气息了吗？`
+		[/in stom pass]
+	[/room list]
+	[main game]
+		[fill point under]
+			20
+			`嗯……`
+			`嗯……`
+			`嗯……`
+		[/fill point under]
+		[enemies alive]
+			[hits over]
+				20
+				`坚固的防守可以以一敌十！`
+				`主人……`
+			[/hits over]
+			[hits under]
+				21
+				`如果您想立于不败之地，还需要加强训练！`
+				`主人，您的悟性和我预估的有点偏差！`
+			[/hits under]
+		[/enemies alive]
+		[enemies destroyed]
+		[rank over]
+			`b`
+			`当没有人比你强的时候，你要战胜的敌人是自己！`
+			`看着主人日渐强大，我很高兴！`
+		[/rank over]
+		[rank under]
+			`b`
+			`如果主人撑不下去了，可以选择放弃……`
+			`作为冰鸟的主人，您应该更强大才对！`
+		[/rank under]
+	[/main game]
+[/ambient]
+
+[trigger]
+	[room list]
+		[renamed]
+			`主人，专心点，闲事少管！`
+		[/renamed]
+		[pop random]
+			30	
+			[call the name]
+				`……>_<……！`
+			[/call the name]
+		[/pop random]
+		[pop random]
+			20	
+			[equip]
+				`主人，是您召唤我吗？`
+				`主人，为了您的安全，您一定要谨慎使用我的力量！`
+			[/equip]
+		[/pop random]
+		[pop random]
+			20	
+			[level up]
+				`胜者为王、败者为寇！不想惨死，只有变强！`
+				`要对付强大的敌人，这种力量远远不够！`
+			[/level up]
+		[/pop random]
+		[pop random]
+			30	
+			[character level up]
+				`力量让我更加倡狂~~~`
+			[/character level up]
+		[/pop random]
+		[evolution]
+			`解开封印的瞬间，我看到死神在微笑！`
+		[/evolution]
+		[eat feed]
+			`需要我的力量吗~?`
+		[/eat feed]
+	[/room list]
+	[main game]
+		[eat feed]
+			`我对主人还不太满意，主人要继续努力！`
+			`努力一定会有回报的，主人要珍惜机会。`
+		[/eat feed]
+		[none feed]
+			`这……`
+		[/none feed]
+		[end buff]
+			`嗯？！`
+		[/end buff]
+		[dying]
+			`您真的确定要停止吗？`
+		[/dying]
+		[using overskill]
+			`冰冻！！`
+			`冰封之翼！！`
+		[/using overskill]
+		[pop random]
+			30	
+			[skill gauge full]
+				`给您一点点的力量帮助……`
+				`我再想想其他办法……`
+			[/skill gauge full]
+		[/pop random]
+		[pop random]
+			30	
+			[over skill gauge full]
+				`我的实力不是吹的，是靠这……！`
+				`寒冷的气息让人颤抖……`
+			[/over skill gauge full]
+		[/pop random]
+		[over skill waiting]
+			`主人，您在静待时机吗？`
+			`需要我的力量就说吧，我不会拒绝您的。`
+		[/over skill waiting]
+		[call the name]
+			`……>_<……！`
+		[/call the name]
+		[pop random]
+			20	
+			[equip]
+				`主人，是您召唤我吗？`
+				`主人，为了您的安全，您一定要谨慎使用我的力量！`
+			[/equip]
+		[/pop random]
+		[pop random]
+			20	
+			[level up]
+				`胜者为王、败者为寇！不想惨死，只有变强！`
+				`要对付强大的敌人，这种力量远远不够！`
+			[/level up]
+		[/pop random]
+		[pop random]
+			30	
+			[character level up]
+				`力量让我更加倡狂~~~`
+			[/character level up]
+		[/pop random]
+		[evolution]
+			`解开封印的瞬间，我看到死神在微笑！`
+		[/evolution]
+	[/main game]
+	[pvp]
+		[press creature button]
+			`主人，我会为您加持寒冰护体，请留意！`
+		[/press creature button]
+	[/pvp]
+[/trigger]

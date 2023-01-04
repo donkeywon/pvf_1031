@@ -1,0 +1,169 @@
+#PVF_File
+
+[name]
+	`双刃左轮 - 艾娜兹玛`
+
+[name2]
+	`Twinblade Inazma`
+
+[basic explain]
+	`近距离武器攻击力 +25%%`
+
+[detail explain]
+	`近距离武器攻击力 +25%% (在决斗场中 +13%%)`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	42
+
+[price]
+	99200
+
+[repair price]
+	83328
+
+[value]
+	79360
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	535	456
+
+[equipment magical attack]
+	450	384
+
+[separate attack]
+	360	243
+
+[physical critical hit]
+	2
+
+[skill levelup]
+	`[at gunner]`	100	1
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/revolver.img`	39
+
+[field image]
+	`Item/field_weapon.img`	1
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	4	3
+
+[layer variation]
+	2790
+	`revc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`revb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	4	3
+
+[layer variation]
+	2790
+	`at_revc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_revb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2000
+
+[item group name]
+	`revolver`
+
+[cool time]
+	10000
+
+[if]
+	[attacker]
+		`character`	-1
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	25
+[/then]
+
+[pvp]
+	[if]
+		[attacker]
+			`character`	-1
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase damage]
+			`%`	13
+	[/then]
+[/pvp]
+
+[routing priority]
+	`at gunner`	1
+[/routing priority]
+
+[possible kiri protect]
+
+[need material]
+	2749095	129
+
+[icon mark]
+	`Item/IconMark.img`	68

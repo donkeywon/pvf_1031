@@ -1,0 +1,127 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Jump_Attack.ani`
+	[SOUND]
+		`R_WREVOLVERA`	1
+		`R_WREVOLVERA`	2
+		`KINFANTRY_DMG_02`	2
+		`PUNISHER_SWING`	2
+		`PUNISHER_SWING`	3
+		`PUNISHER_SWING`	4
+	[/SOUND]
+	[SPEECH]
+		`让你尝尝死亡的滋味！！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		3
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			150
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			400
+		[Z AXIS]
+			800
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9109
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8200
+		[PARTICLE FILENAME]
+			`../Particle/Bullet_Speed.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	72
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+	[PARTICLE]
+		`../particle/shell.ptl`	35	0	72
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		1
+	[RESET]
+[/BEHAVIOR]

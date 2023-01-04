@@ -1,0 +1,212 @@
+#PVF_File
+
+[name]
+	`文英`
+
+[category]
+	`[human]`
+[/category]
+
+[damage sound]
+	`R_NENKWON_DMG_02`
+
+[die sound]
+	`R_NENKWON_DIE_02`
+
+[etc sound]
+	`NENKWON_MEET_06`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	150
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	150
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	150
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	150
+	`[HP MAX]`	`*`	1200
+[/ability category]
+
+[level]
+	1	70
+
+[slow resistance]
+	30	30
+
+[freeze resistance]
+	30	30
+
+[poison resistance]
+	10	10
+
+[stun resistance]
+	30	30
+
+[curse resistance]
+	30	30
+
+[blind resistance]
+	50	50
+
+[lightning resistance]
+	10	10
+
+[stone resistance]
+	30	30
+
+[sleep resistance]
+	30	30
+
+[burn resistance]
+	30	30
+
+[bleeding resistance]
+	10	10
+
+[piercing resistance]
+	30	30
+
+[confuse resistance]
+	30	30
+
+[hold resistance]
+	30	30
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1200	1200
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	900	1000
+
+[weight]
+	100000	120000
+
+[warlike]
+	80
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[face image]
+	`Monster/MonsterFace.img`	593
+
+[waiting action]
+	`Action/stay.act`
+
+[move action]
+	`Action/move.act`
+
+[sit action]
+	`Action/sit.act`
+
+[damage action 1]
+	`Action/damage1.act`
+
+[damage action 2]
+	`Action/damage2.act`
+
+[down action]
+	`Action/down.act`
+
+[overturn action]
+	`Action/overturn.act`
+
+[attack action]
+	`Action/arm3_1.act`
+	`Action/arm3_2.act`
+	`Action/arm3_3.act`
+	`Action/casting2.act`
+	`Action/illusion_Attack.act`
+	`Action/teleport_Attack_appear.act`
+	`Action/teleport_Attack_1.act`
+	`Action/teleport_Attack_2.act`
+	`Action/teleport_Attack_3.act`
+	`Action/heelblade.act`
+	`Action/casting3.act`
+[/attack action]
+
+[attack info]
+	``
+	``
+	``
+	`AttackInfo/casting2.atk`
+	`AttackInfo/illusion_Attack.atk`
+	``
+	`AttackInfo/teleport_Attack1.atk`
+	`AttackInfo/teleport_Attack2.atk`
+	`AttackInfo/teleport_Attack3.atk`
+	`AttackInfo/teleport_Attack3.atk`
+	``
+[/attack info]
+
+[event super on scr]
+	`[on hp]`	35	3000	1
+	`[unbreakable]`	-1	-1	-1	-1
+[/event super on scr]
+
+[event super on scr]
+	`[on hp]`	50	3000	1
+	`[unbreakable]`	-1	-1	-1	-1
+[/event super on scr]
+
+[event super on scr]
+	`[on hp]`	65	3000	1
+	`[unbreakable]`	-1	-1	-1	-1
+[/event super on scr]
+
+[event super on scr]
+	`[on hp]`	85	3000	1
+	`[unbreakable]`	-1	-1	-1	-1
+[/event super on scr]
+
+[cooltime]
+	5000	5000	5000	5000	5000	7000	7000	7000	7000	7000	18000
+[/cooltime]
+
+[think term]
+	200
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	300
+
+[vision]
+	5000
+
+[lie frame]
+	1	2	3	3	4

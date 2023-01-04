@@ -1,0 +1,175 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`蜥蜴之魂`
+
+[face image]
+	`Monster/MonsterFace.img`	352
+
+[damage sound]
+	`R_RIZARD_DMG`
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	1000
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	150
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	150
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	150
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	150
+[/ability category]
+
+[category]
+	`[dragon]`
+[/category]
+
+[HP regen speed]
+	20	20
+
+[MP regen speed]
+	0	0
+
+[level]
+	35	50
+
+[fire resistance]
+	30	30
+
+[water resistance]
+	-30	-30
+
+[move speed]
+	700	700
+
+[attack speed]
+	800	800
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	90000	90000
+
+[lie frame]
+	1	2	3	3	4
+
+[come in action]
+	`action/comin.act`	350	800
+
+[waiting action]
+	`action/Stay.act`
+
+[move action]
+	`action/Move_down.act`
+
+[sit action]
+	`action/Sit.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`action/Overturn.act`
+
+[damage action 1]
+	`action/Damage1.act`
+
+[damage action 2]
+	`action/Damage2.act`
+
+[last action]
+	`action/die.act`
+
+[attack action]
+	`Action/Breath.act`
+	`Action/cauda_atk.act`
+	`Action/Scratching.act`
+	`Action/Change_Team.act`
+	`Action/upper_1.act`
+	`Action/jump_attack.act`
+	`Action/doble_jump.act`
+	`Action/doble_jump.act`
+	`Action/Field_out.act`
+	`Action/Change_Team.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/CryingAttack.atk`
+	`AttackInfo/AttackHodor.atk`
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Attack.atk`
+	`AttackInfo/ShockWave.atk`
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Attack.atk`
+	``
+	``
+	``
+[/attack info]
+
+[cooltime]
+	4000	4000	3000	3000	3000	7000	7000	7000	700	700
+[/cooltime]
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	640
+
+[warlike]
+	50
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[keep distance with target]
+	200
+
+[keep range distance with target]
+	1	1	250	250
+
+[intelligence]
+	70	30	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

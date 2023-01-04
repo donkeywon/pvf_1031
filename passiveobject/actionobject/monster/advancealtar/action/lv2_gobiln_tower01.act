@@ -1,0 +1,47 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/tower/tower00_1.ani`
+	[SUB ANI]
+		`../Animation/tower/tower_lv2_goblinA.ani`	0	1
+		`../Animation/tower/tower01.ani`	0	2
+		`../Animation/tower/tower02.ani`	0	3
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12630
+		[PARTICLE FILENAME]
+			`../Particle/ThrowStoneDown2.ptl`
+		[LEVEL]
+			1
+		[POS]
+			50	60	132
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]

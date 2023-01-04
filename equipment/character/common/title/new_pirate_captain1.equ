@@ -1,0 +1,98 @@
+#PVF_File
+
+[name]
+	`铁鳞海贼团 (船长)`
+
+[name2]
+	`Steel Scale Pirates Corps (Captain)`
+
+[explain]
+	`装备后， 每隔40秒可以使自身增加4%%的移动速度、 物理和魔法暴击率， 效果持续20秒； 装备40秒后生效。 (在决斗场中无效)
+在地下城中获得金币时， 可以增加3%%的金币获得量。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	60
+
+[icon]
+	`Item/Title/title.img`	189
+
+[custom animation]
+	`TitleAnimation/pirate_captain1.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	120
+
+[physical attack]
+	13
+
+[physical defense]
+	18
+
+[magical attack]
+	13
+
+[magical defense]
+	13
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[if]
+	[time]
+		40000	1	40000
+	[disable pvp]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[stat]
+		`move speed`
+		`+`	40
+	[stat]
+		`physical critical hit`
+		`+`	4
+	[stat]
+		`magical critical hit`
+		`+`	4
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,82 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Combo4_hardattack.ani`
+	[SUB ANI]
+		`../Animation/Effect/5Bbatta_Ready_Ef.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`SPIRE_UP`	10
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[WHICH]
+	[TARGET]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			70
+		[CHECKED NO]
+		[=>]
+			1
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		10
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	100
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	500
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8207
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			180	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

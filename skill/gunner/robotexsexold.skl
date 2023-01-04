@@ -1,0 +1,139 @@
+#PVF_File
+
+[name]
+	`Ex-S Zero毒蛇炮`
+
+[name2]
+	`RobotEx-S Viper Zero`
+
+[explain]
+	`召唤出火力支援机器人Ex-S毒蛇炮， 向敌人发射子弹和激光。 经过一段时间后， Ex-S毒蛇炮会自爆并给予周围敌人火属性魔法伤害； 同时还会向空中发射追击者， 追击者落地后会爆炸并使周围敌人受到火属性魔法伤害。`
+
+[basic explain]
+	`召唤出火力支援机器人Ex-S毒蛇炮， 向敌人发射子弹和激光。 经过一段时间后， Ex-S毒蛇炮会自爆并给予周围敌人火属性魔法伤害； 同时还会向空中发射追击者， 追击者落地后会爆炸并使周围敌人受到火属性魔法伤害。`
+
+[purchase cost]
+	120
+[/purchase cost]
+
+[required level]
+	70
+
+[required level range]
+	5
+
+[pre required skill]
+	29	5
+[/pre required skill]
+
+[type]
+	`[active]`
+
+[skill class]
+	1
+
+[maximum level]
+	3
+
+[growtype maximum level]
+	0	0	0	0	0	0
+
+[second growtype maximum level]
+	0	0	0	0	0	0	1	0	0	0	0	0
+
+[skill fitness growtype]
+[/skill fitness growtype]
+
+[skill fitness second growtype]
+	1
+[/skill fitness second growtype]
+
+[consume MP]
+	800	1680
+
+[casting time]
+	700	700
+
+[cool time]
+	50000	50000
+
+[skill under cooltime effect each]
+[/skill under cooltime effect each]
+
+[durability decrease rate]
+	100
+
+[consume item]
+	3037	3	3
+[/consume item]
+
+[weapon effect type]
+	`[magical]`
+
+[icon]
+	`Character/Gunner/Effect/SkillIcon.img`	274
+	`Character/Gunner/Effect/SkillIcon.img`	275
+
+[command]
+	{6=`(RIGHT)`}
+	{8=`,`}
+	{6=`(LEFT)`}
+	{8=`,`}
+	{6=`(UP)`}
+	{8=`,`}
+	{6=`(RIGHT)`}
+	{8=`,`}
+	{6=`(SKILL)`}
+[/command]
+
+[command key explain]
+	`操作指令 : →←↑→ + Z`
+
+[skill command advantage]
+	50	50
+
+[static data]
+	150	5	0	20	0	3	150	30
+[/static data]
+
+[level info]
+	6
+	70	180	720	6000	900	70
+	75	225	900	6000	1125	75
+	80	270	1080	6000	1350	80
+[/level info]
+
+[pvp]
+	[start cool time]
+		600000	600000
+	[consume MP]
+		240	504
+	[level info]
+		6
+		70	45	180	6000	225	70
+		75	56	225	6000	281	75
+		80	68	270	6000	338	80
+	[/level info]
+[/pvp]
+
+[level property]
+	1	99
+	`Ex-S毒蛇炮Lv : Lv<int>
+持续时间 : <float1>秒
+子弹魔法攻击力 : <int>%%
+激光魔法攻击力 : <int>%%
+爆炸魔法攻击力 : <int>%%
+每秒发射子弹数 : <int>发
+发射子弹后休息时间 : <float1>秒
+穿刺机率 : <int>%%`
+	-1	0	1.0
+	-1	3	0.001
+	-1	1	1.0
+	-1	4	1.0
+	-1	2	1.0
+	1	1	1.0
+	2	2	0.001
+[/level property]
+
+[skill preloading image]
+[/skill preloading image]

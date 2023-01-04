@@ -1,0 +1,187 @@
+#PVF_File
+
+[name]
+	`苍穹绝音手炮`
+
+[name2]
+	``
+
+[basic explain]
+	`[反坦克炮]爆炸范围 +15%%
+
+攻击时， 有4%%的几率使武器耐久度减少1， 并增加90点力量， 效果持续50秒。`
+
+[grade]
+	74
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	70
+
+[physical attack]
+	74
+
+[price]
+	133200
+
+[repair price]
+	111888
+
+[value]
+	106560
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	769	702
+
+[equipment magical attack]
+	462	421
+
+[separate attack]
+	420	284
+
+[skill levelup]
+	`[gunner]`	40	1
+	`[at gunner]`	40	1
+[/skill levelup]
+
+[fire attack]
+	12
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/hcannon/hcannon.img`	81
+
+[field image]
+	`Item/field_weapon.img`	4
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	22	0
+
+[layer variation]
+	2790
+	`hcanc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`hcanb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	22	0
+
+[layer variation]
+	2790
+	`at_hcanc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_hcanb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2800
+
+[item group name]
+	`hcannon`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[war room]`
+		`[dungeon]`
+		`[assault]`
+		`[dead tower]`
+		`[blood system]`
+		`[assault]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[probability]
+		4
+	[target]
+		`myself`	-1
+	[duration]
+		60000
+	[reduction]
+		`weapon`	1
+	[stat]
+		`physical attack`
+		`+`	90
+[/then]
+
+[if]
+	[module]
+		`[tournament dungeon]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[probability]
+		4
+	[target]
+		`myself`	-1
+	[duration]
+		60000
+	[stat]
+		`physical attack`
+		`+`	90
+[/then]
+
+[skill data up]
+	`[gunner]`	40	`[all]`	`[level]`	5	`%`	15
+	`[at gunner]`	40	`[all]`	`[level]`	5	`%`	15
+[/skill data up]
+
+[icon mark]
+	`Item/IconMark.img`	66

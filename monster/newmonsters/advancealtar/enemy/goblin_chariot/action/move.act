@@ -1,0 +1,74 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Chariot/Move.ani`
+	[SUB ANI]
+		`../Animation/Chariot/F_Eye2.ani`	0	1
+		`../Animation/Chariot/S_Eye2.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			64597
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			700
+	[/CHECKUP]
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[<=]
+			10
+		[%]
+	[/CHECKUP]
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			64615
+		[LEVEL]
+			0
+		[POS]
+			-70	-30	60
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			64615
+		[LEVEL]
+			0
+		[POS]
+			-70	-10	40
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			64620
+		[LEVEL]
+			1
+		[POS]
+			10	30	40
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+	[SET HP]
+		0
+[/BEHAVIOR]

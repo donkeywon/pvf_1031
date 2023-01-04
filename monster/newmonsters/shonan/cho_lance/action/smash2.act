@@ -1,0 +1,110 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/smash2.ani`
+	[SUB ANI]
+		`../animation/weapon/smash2.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`破！`	0	100
+		`回旋击！`	4	100
+	[/SPEECH]
+	[SOUND]
+		`WEAPONM_ATK_06_2`	1
+		`MJUMP`	1
+		`WEAPONM_ATK_05_3`	5
+		`KAIGEN_SPEAR_02`	5
+		`EARTHQUAKE_ROCKWAVE`	7
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	500
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9934
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			80	10	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9937
+		[PARTICLE FILENAME]
+			`../Particle/3skill_sarin1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			50	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9936
+		[PARTICLE FILENAME]
+			`../Particle/3skill_sarin2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			50	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9934
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			80	10	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9936
+		[PARTICLE FILENAME]
+			`../Particle/3skill_sarin3.ptl`
+		[LEVEL]
+			0
+		[POS]
+			50	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9937
+		[PARTICLE FILENAME]
+			`../Particle/3skill_sarin4.ptl`
+		[LEVEL]
+			0
+		[POS]
+			50	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

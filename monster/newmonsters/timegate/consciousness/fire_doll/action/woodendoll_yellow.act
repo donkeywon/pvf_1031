@@ -1,0 +1,32 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/WoodenDoll_Stay.ani`
+	[SUB ANI]
+		`../animation/04_fire_normal_1_2.ani`	0	1
+		`../animation/05_fire_dodge_1_2.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`PUPPET_FIRECAST`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[REMOVE CATEGORY]
+	[FIXTURE]
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`Move.act`
+	[CHANGE ACTION FILE]
+	[STAY]
+		`Stay.act`
+[/BEHAVIOR]

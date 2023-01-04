@@ -1,0 +1,86 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/change.ani`
+	[SUB ANI]
+		`../animation/gun/change_gun.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`嗯？ 这么快？`	0	50
+	[/SPEECH]
+	[SOUND]
+		`R_PLATIN_SKILL_07`	0
+		`PLATIN_DROP`	0
+		`PLATIN_NEW`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`2stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`2move.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`2damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`2damage2.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		`2down.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`2sit.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`2change.act`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[ATTACK]
+		3	0
+	[ON]
+	[TRIGGER]
+	[ATTACK]
+		4	0
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		8
+	[NOW]
+[/BEHAVIOR]

@@ -1,0 +1,139 @@
+#PVF_File
+
+[name]
+	`素喃订制步枪`
+
+[name2]
+	`找不到代码name2_32043`
+
+[basic explain]
+	`攻击速度 +3%%
+暴击伤害 +7%%
+无法进行分解。`
+
+[grade]
+	52
+
+[attach type]
+	`[trade]`
+
+[item group name]
+	`musket`
+
+[rarity]
+	3
+
+[weight]
+	2100
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[minimum level]
+	48
+
+[icon]
+	`item/weapon/gunner/musket.img`	78
+
+[icon mark]
+	`Item/IconMark.img`	52
+
+[field image]
+	`Item/field_weapon.img`	3
+
+[equipment type]
+	`[weapon]`	24
+
+[sub type]
+	2
+
+[durability]
+	30
+
+[need material]
+	3323	40
+
+[value]
+	74880
+
+[cool time]
+	10000
+
+[physical attack]
+	36
+
+[magical attack]
+	54
+
+[equipment physical attack]
+	486	416
+
+[equipment magical attack]
+	423	362
+
+[separate attack]
+	287	192
+
+[attack speed]
+	30
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	2	2
+
+[layer variation]
+	2790
+	`musketc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`musketb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	2	2
+
+[layer variation]
+	2790
+	`at_musketc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_musketb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	7
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]

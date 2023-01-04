@@ -1,0 +1,135 @@
+#PVF_File
+
+[name]
+	`狮王之心`
+
+[name2]
+	`LionHeart`
+
+[basic explain]
+	`近距离武器攻击时， 有3%%的几率增加30%%的攻击速度， 效果持续15秒。 (消耗10个无色小晶块)
+攻击速度 +10%%`
+
+[flavor text]
+	`你们把我关进监狱， 总有一天会感到惭愧的。`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	42
+
+[attack speed]
+	20
+
+[stuck]
+	-2
+
+[price]
+	111600
+
+[repair price]
+	93744
+
+[value]
+	89280
+
+[equipment physical attack]
+	686	629
+
+[equipment magical attack]
+	486	445
+
+[separate attack]
+	360	243
+
+[icon]
+	`Item/weapon/priest/axe.img`	42
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	3	2
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[if]
+	[attacker]
+		`character`	-1
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	10
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[probability]
+		3
+	[stat]
+		`attack speed`
+		`+`	300
+[/then]
+
+[routing priority]
+	`priest`	3
+	`priest`	2
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

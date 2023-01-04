@@ -1,0 +1,64 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Roket_Attack.ani`
+	[SUB ANI]
+		`../Animation/effect/ShootEffect1.ani`	0	1
+		`../Animation/effect/ShootEffect2.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`能量装载！！`	3	20
+		`发射！！`	3	20
+	[/SPEECH]
+	[SOUND]
+		`KURJEEP_SKILL_01`	2
+		`KURZEEP_BAZOOKA_READY`	2
+		`KURJEEP_SKILL_02`	4
+		`KURZEEP_BAZOOKA_BURST`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35574
+		[PARTICLE FILENAME]
+			`../Particle/roket2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			57	15	155
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35574
+		[PARTICLE FILENAME]
+			`../Particle/roket3.ptl`
+		[LEVEL]
+			0
+		[POS]
+			70	-25	158
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	100
+[/BEHAVIOR]

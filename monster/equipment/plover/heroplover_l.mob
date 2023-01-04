@@ -1,0 +1,127 @@
+#PVF_File
+
+[floating height]
+	170
+
+[name]
+	`牙签鸟`
+
+[face image]
+	`Monster/MonsterFace.img`	472
+
+[ability table]
+	0
+
+[appear sound]
+	`BIRD_03`
+
+[ambient sound]
+	`MOOSAM_BIRD`
+
+[ability category]
+	`[HP MAX]`	`*`	500
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	130
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	130
+[/ability category]
+
+[category]
+	`[beast]`
+[/category]
+
+[level]
+	60	60
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	75000	75000
+
+[stuckbonus on damage]
+	10	10	10	10
+
+[warlike]
+	80
+
+[keep distance with target]
+	150
+
+[think term]
+	200
+
+[destination change term]
+	500
+
+[intelligence]
+	80	80	2000
+
+[waiting action]
+	`Action/L_Stay.act`
+
+[move action]
+	`Action/L_Move.act`
+
+[damage action 1]
+	`Action/L_Damage1.act`
+
+[damage action 2]
+	`Action/L_Damage2.act`
+
+[proc action]
+	`Action/proc.act`
+
+[down action]
+	`Action/L_Die.act`
+
+[action list]
+	`Action/L_DashAttack.act`
+[/action list]
+
+[cooltime]
+	10000
+[/cooltime]
+
+[attack info]
+	`attackinfo/Attack.atk`
+[/attack info]
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/L_DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/L_DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/L_DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/L_DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/L_DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

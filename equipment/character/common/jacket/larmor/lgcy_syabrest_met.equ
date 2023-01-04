@@ -1,0 +1,117 @@
+#PVF_File
+
+[name]
+	`传承 : 智慧女神的莳芽胸甲`
+
+[name2]
+	`Legacy : Coat of Metis`
+
+[grade]
+	7
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	5
+
+[physical attack]
+	10
+
+[magical attack]
+	3
+
+[HP MAX]
+	35
+
+[price]
+	6300
+
+[repair price]
+	5040
+
+[value]
+	5040
+
+[equipment physical defense]
+	360	288
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/IconArmor.img`	7
+
+[field image]
+	`Item/field_equip.img`	5
+
+[equipment type]
+	`[coat]`	19
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3100
+
+[item group name]
+	`la coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 智慧女神的莳芽轻甲  套装`
+
+[set item]
+	10877	12877
+[/set item]
+
+[item overpower part]
+
+[set ability]
+	[HP MAX]
+		75
+	[physical attack]
+		8
+	[physical defense]
+		8
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福可以使自身增加3%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	30
+	[/then]
+[/set ability]
+
+[possible kiri protect]

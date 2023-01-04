@@ -1,0 +1,72 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/DashAttack.ani`
+	[SUB ANI]
+		`../Animation/Cast4.ani`	0	0
+		`../Animation/Move2.ani`	0	0
+		`../Animation/Weapon/DashAttack.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`KEIGA_ATK`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8706
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			60	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+			350	0	0
+		[MOVE ME]
+	[/TELEPORT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET MOVEVELS]
+		[X NORMAL]
+			0
+		[Y NORMAL]
+			0
+		[X SLANT]
+			0
+		[Y SLANT]
+			0
+	[/SET MOVEVELS]
+[/BEHAVIOR]

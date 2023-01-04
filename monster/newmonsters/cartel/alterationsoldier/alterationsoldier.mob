@@ -1,0 +1,152 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`卡勒特改造士兵`
+
+[face image]
+	`Monster/MonsterFace.img`	437
+
+[die effect]
+	0	9	0
+
+[ability table]
+	0
+
+[common champion elemental property]
+	`[fire element]`
+	`[water element]`
+	`[dark element]`
+	`[light element]`
+	`[no element]`
+[/common champion elemental property]
+
+[ability category]
+	`[HP MAX]`	`*`	160
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	90
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	110
+[/ability category]
+
+[category]
+	`[human]`
+	`[range combat]`
+	`[close-carefully]`
+[/category]
+
+[level]
+	40	60
+
+[move speed]
+	700	700
+
+[attack speed]
+	500	500
+
+[hit recovery]
+	600	600
+
+[weight]
+	40000	40000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[warlike]
+	30
+
+[keep distance with target]
+	300
+
+[item]
+	3273	5000
+[/item]
+
+[common champion drop item]
+[/common champion drop item]
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[lie frame]
+	0	1	4	3	4
+
+[action list]
+	`Action/Attack1.act`
+	`Action/Attack2.act`
+[/action list]
+
+[attack info]
+	`AttackInfo/Attack1.atk`
+	`AttackInfo/Attack2.atk`
+[/attack info]
+
+[cooltime]
+	2000	30000
+[/cooltime]
+
+[think term]
+	500
+
+[destination change term]
+	700
+
+[keep range distance with target]
+	320	3	10	20
+
+[vision]
+	350
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

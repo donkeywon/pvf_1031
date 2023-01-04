@@ -1,0 +1,145 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/aimingmark_small1.ani`
+	[SUB ANI]
+		`../animation/aimingmark_small2.ani`	0	1
+		`../animation/aimingmark_small3.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			56052
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DAMAGE BOX]
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[CHECK PLAYER NUM]
+			[COUNT]
+				1
+			[INCLUDE DEAD]
+				0
+		[/CHECK PLAYER NUM]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[CHECK PLAYER NUM]
+			[COUNT]
+				2
+			[INCLUDE DEAD]
+				0
+		[/CHECK PLAYER NUM]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[CHECK PLAYER NUM]
+			[COUNT]
+				3
+			[INCLUDE DEAD]
+				0
+		[/CHECK PLAYER NUM]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[CHECK PLAYER NUM]
+			[COUNT]
+				4
+			[INCLUDE DEAD]
+				0
+		[/CHECK PLAYER NUM]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		3
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			56052
+		[/IS INDEX]
+		[IS TARGET STATE]
+			5
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

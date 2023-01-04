@@ -1,0 +1,50 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/MotorCycle/Dash_Go.ani`
+	[SUB ANI]
+		`../Animation/Dash_Go.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`甩啊甩啊~~！`	3	50
+		`让开， 不要挡道！！`	3	50
+	[/SPEECH]
+	[SOUND]
+		`BIKER_CHAIN`	0
+		`R_BIKER_SKILL_02`	1
+		`BIKER_CHAIN_THROW`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			500
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

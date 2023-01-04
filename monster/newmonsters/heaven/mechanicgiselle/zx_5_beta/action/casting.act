@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Casting.ani`
+	[SUB ANI]
+		`../Animation/CastingEffect.ani`	0	11
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61150
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		4000	
+		[equipment physical defense]
+		[%]
+			2000.0
+		[equipment magical defense]
+		[%]
+			2000.0
+	[/APPENDAGE]
+[/BEHAVIOR]

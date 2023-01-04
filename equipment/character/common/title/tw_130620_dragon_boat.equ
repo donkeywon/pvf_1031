@@ -1,0 +1,112 @@
+#PVF_File
+
+[name]
+	`龙舟`
+
+[name2]
+	`5月天鼓声无垠，每个河岸都挤满了观赏龙舟竞赛的人们。`
+
+[explain]
+	`被击时以3%%的机率20秒内体力增加45，恢复全体HP的10%%。`
+
+[grade]
+	2
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title_tw.img`	13
+
+[custom animation]
+	`TitleAnimation/tw_130620_Dragon_Boat.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	25
+
+[physical defense]
+	25
+
+[magical attack]
+	25
+
+[magical defense]
+	25
+
+[HP MAX]
+	500
+
+[HP regen speed]
+	60
+
+[stuck resistance]
+	20
+
+[inventory limit]
+	10000
+
+[move speed]
+	30
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[hit recovery]
+	200
+
+[physical critical hit]
+	3
+
+[magical critical hit]
+	3
+
+[stuck]
+	-3
+
+[if]
+	[cooltime]
+		20000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		3
+	[stat]
+		`physical defense`
+		`+`	45
+	[restore]
+		`HP`
+		`%`	10	20000
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

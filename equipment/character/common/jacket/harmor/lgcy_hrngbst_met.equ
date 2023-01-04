@@ -1,0 +1,125 @@
+#PVF_File
+
+[name]
+	`传承 : 神圣的智慧女神青铜锁甲`
+
+[name2]
+	`Legacy : Holy Coat of Metis`
+
+[grade]
+	12
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	10
+
+[physical attack]
+	12
+
+[physical defense]
+	12
+
+[magical attack]
+	5
+
+[HP MAX]
+	60
+
+[price]
+	12000
+
+[repair price]
+	9600
+
+[value]
+	9600
+
+[equipment physical defense]
+	720	624
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/IconArmor.img`	298
+
+[field image]
+	`Item/field_equip.img`	10
+
+[equipment type]
+	`[coat]`	20
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	3600
+
+[item group name]
+	`ha coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 神圣的智慧女神青铜重甲  套装`
+
+[set item]
+	11278	13278
+[/set item]
+
+[item overpower part]
+
+[set ability]
+	[HP MAX]
+		150
+	[physical attack]
+		15
+	[physical defense]
+		15
+	[magical attack]
+		12
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福可以使自身增加3%%的攻击速度和施放速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`attack speed`
+			`+`	30
+		[stat by condition]
+			`cast speed`
+			`+`	30
+	[/then]
+[/set ability]
+
+[possible kiri protect]

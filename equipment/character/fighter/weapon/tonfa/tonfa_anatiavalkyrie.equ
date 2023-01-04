@@ -1,0 +1,204 @@
+#PVF_File
+
+[name]
+	`武神断魔棍`
+
+[name2]
+	`Anatia Valkyrie`
+
+[basic explain]
+	`使用[旋风腿]时， 有30%%的几率使自身进入祝福状态。`
+
+[detail explain]
+	`使用[旋风腿]时， 有30%%的几率使自身进入祝福状态20秒； 祝福状态下， 可以增加109点力量、 体力、 智力、 精神。`
+
+[flavor text]
+	`获得战争女武神的祝福， 并蕴含有神秘力量的东方棍。`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	42
+
+[magical attack]
+	64
+
+[attack speed]
+	50
+
+[stuck]
+	-2
+
+[stuck resistance]
+	30
+
+[price]
+	99200
+
+[repair price]
+	83328
+
+[value]
+	79360
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	543	498
+
+[equipment magical attack]
+	572	524
+
+[equipment physical defense]
+	620	610
+
+[separate attack]
+	360	243
+
+[skill levelup]
+	`[fighter]`	17	3
+	`[at fighter]`	17	3
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/tonfa.img`	32
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	3	1
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	3	1
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		1000
+	[use skill]
+		`fighter`	58
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		30
+	[active status]
+		`bless`	50	109	109	109	109
+[/then]
+
+[if]
+	[cooltime]
+		1000
+	[use skill]
+		`at fighter`	58
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		30
+	[active status]
+		`bless`	50	109	109	109	109
+[/then]
+
+[possible kiri protect]
+
+[need material]
+	2749095	129
+
+[icon mark]
+	`Item/IconMark.img`	68

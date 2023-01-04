@@ -1,0 +1,38 @@
+#PVF_File
+
+[floating height]
+	0
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	1000
+
+[basic action]
+	`Action/boss_end.act`
+
+[team]
+	100
+
+[name]
+	`里昂的斧头`
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	50000
+[/object destroy condition]
+
+[add particles]
+	[particle]
+		[file]
+			`particle/boss_end.ptl`
+		[create delay]
+			100
+		[follow parent]
+			0	-50	0
+	[/particle]
+[/add particles]

@@ -1,0 +1,103 @@
+#PVF_File
+
+[name]
+	`雪之荣誉`
+
+[name2]
+	`Recompense of Snow Mountains`
+
+[basic explain]
+	`攻击龙族敌人时， 附加10%%的伤害。`
+
+[flavor text]
+	`朋友， 只要你佩戴了此物， 大陆各地的班图族都会舍命助你的。 不过我相信， 能够得到此物的人也不是泛泛之辈。  --班图族族长奥尔卡对冒险家说`
+
+[grade]
+	54
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	21
+
+[physical defense]
+	52
+
+[HP MAX]
+	80
+
+[MP MAX]
+	80
+
+[price]
+	54000
+
+[repair price]
+	43200
+
+[value]
+	43200
+
+[equipment physical defense]
+	150	130
+
+[equipment magical defense]
+	2736	2640
+
+[water resistance]
+	8
+
+[freeze resistance]
+	8
+
+[icon]
+	`Item/IconAcc.img`	11
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	20
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[target type]
+		`dragon`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,30 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/TackleReady.ani`
+	[SUB ANI]
+		`../Animation/wrap/tackleready_100.ani`	0	0
+		`../Animation/acc01/tackleready_500.ani`	0	10
+		`../Animation/horn/tackleready_500.ani`	0	10
+		`../Animation/weapon/tackleready_700.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`TAU_COMMAND`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		3
+	[END]
+[/BEHAVIOR]

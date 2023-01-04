@@ -1,0 +1,237 @@
+#PVF_File
+
+[name]
+	`机械之导航者`
+
+[name2]
+	`Mechanism`
+
+[basic explain]
+	`施放[RX-78追击者]、 [Ez-8自爆者]和[拦截机工厂]时， 有50%%的几率发动提升Lv5的该技能。 (无法超出该技能的Lv上限)
+[RX-78追击者]爆炸大小 +20%%`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[magical attack]
+	42
+
+[cast speed]
+	50
+
+[stuck]
+	1
+
+[need material]
+	3285	1200
+
+[price]
+	0
+
+[repair price]
+	83328
+
+[value]
+	79360
+
+[equipment physical attack]
+	375	320
+
+[equipment magical attack]
+	550	469
+
+[separate attack]
+	360	243
+
+[skill levelup]
+	`[gunner]`	176	2
+	`[at gunner]`	176	2
+	`[gunner]`	46	3
+	`[at gunner]`	46	3
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/automatic.img`	64
+
+[field image]
+	`Item/field_weapon.img`	2
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	4	1
+
+[layer variation]
+	2790
+	`autoc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`autob`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	4	1
+
+[layer variation]
+	2790
+	`at_autoc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_autob`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	1500
+
+[item group name]
+	`automatic`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[gunner]`	27	`[all]`	`[static]`	1	`+`	15
+	`[at gunner]`	27	`[all]`	`[static]`	1	`+`	15
+[/skill data up]
+
+[if]
+	[event use skill]
+		`gunner`	83
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`gunner`	83	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`gunner`	27
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`gunner`	27	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`gunner`	28
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`gunner`	28	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`at gunner`	83
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`at gunner`	83	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`at gunner`	27
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`at gunner`	27	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`at gunner`	28
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`at gunner`	28	5
+	[/skill levelup]
+[/then]
+
+[routing priority]
+	`gunner`	3
+	`at gunner`	3
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

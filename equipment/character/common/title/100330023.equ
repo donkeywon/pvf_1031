@@ -1,0 +1,126 @@
+#PVF_File
+
+[name]
+	`来自魔界的TCG`
+
+[name2]
+	``
+
+[explain]
+	`攻击时， 有1%%的几率使自身增加45点力量和7%%的攻击速度， 效果持续30秒。
+施放技能时， 有2%%的几率使自身增加45点智力和7%%施放速度， 效果持续30秒。`
+
+[flavor text]
+	`< 活动 > DNF TCG`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[physical attack]
+	18
+
+[physical defense]
+	5
+
+[magical attack]
+	18
+
+[magical defense]
+	5
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[move speed]
+	40
+
+[HP MAX]
+	150
+
+[MP MAX]
+	150
+
+[all elemental resistance]
+	5
+
+[all activestatus resistance]
+	5
+
+[icon]
+	`Item/Title/title.img`	122
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/man_devildom.ani`
+[/custom animation]
+
+[if]
+	[cooltime]
+		40000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	45
+	[stat]
+		`attack speed`
+		`+`	70
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`magical attack`
+		`+`	45
+	[stat]
+		`cast speed`
+		`+`	70
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,164 @@
+#PVF_File
+
+[name]
+	`汲血爪`
+
+[name2]
+	`Blutlache`
+
+[basic explain]
+	`被攻击时， 有20%%的几率使敌人进入出血状态。`
+
+[detail explain]
+	`被攻击时， 有20%%的几率使敌人进入出血状态10秒； 出血状态下的敌人， 每0.5秒受到52点伤害。 (若敌人高于Lv25， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[grade]
+	27
+
+[rarity]
+	2
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	25
+
+[physical attack]
+	18
+
+[magical attack]
+	9
+
+[price]
+	37800
+
+[repair price]
+	30240
+
+[value]
+	30240
+
+[equipment physical attack]
+	252	236
+
+[equipment magical attack]
+	252	236
+
+[separate attack]
+	126	82
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[fighter]`	3	1
+	`[at fighter]`	3	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/fighter/claw.img`	11
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	0	5
+
+[layer variation]
+	2790
+	`clawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	0	5
+
+[layer variation]
+	2150
+	`at_clawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_clawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_clawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		1000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[probability]
+		20
+	[reduce probability to human armor at pvp module]
+		79
+	[active status]
+		`bleeding`	25	1050
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

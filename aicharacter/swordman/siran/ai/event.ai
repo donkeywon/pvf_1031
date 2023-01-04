@@ -1,0 +1,23 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[my hp down]
+			`%`	70
+		[true]
+		[return]
+			`weapon_change`
+		[false]
+	
+		[think]
+			[attack success]
+				1
+			[true]
+			[import ai]
+				`combination.ai`
+			[false]
+			[return]
+				-1
+		[/think]
+	[/think]
+[/ai pattern]

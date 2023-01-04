@@ -1,0 +1,55 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/cloud_body.ani`
+	[SUB ANI]
+		`../Animation/cloud_body_dodge.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`你们该好好冷静一下……`	4	50
+		`在冰雪里安息吧……`	4	50
+	[/SPEECH]
+	[SOUND]
+		`FIRESPIRIT_CLOUD`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1000	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		2
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10573
+		[PARTICLE FILENAME]
+			`../Particle/cloud.ptl`
+		[LEVEL]
+			0
+		[POS]
+			60	0	40
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

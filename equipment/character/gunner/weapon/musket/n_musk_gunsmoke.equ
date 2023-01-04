@@ -1,0 +1,154 @@
+#PVF_File
+
+[name]
+	`烟雾突击步枪`
+
+[name2]
+	`Gun Smoke`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入失明状态。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入失明状态9秒； 失明状态下， 减少90%%视野和20%%命中率。 (若敌人高于Lv35， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	37
+
+[rarity]
+	2
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	35
+
+[physical attack]
+	24
+
+[magical attack]
+	37
+
+[price]
+	59200
+
+[repair price]
+	47360
+
+[value]
+	47360
+
+[equipment physical attack]
+	334	296
+
+[equipment magical attack]
+	290	258
+
+[separate attack]
+	164	109
+
+[skill levelup]
+	`[gunner]`	2	1
+	`[at gunner]`	2	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`item/weapon/gunner/musket.img`	13
+
+[field image]
+	`Item/field_weapon.img`	3
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	1	1
+
+[layer variation]
+	2790
+	`musketc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`musketb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	1	1
+
+[layer variation]
+	2790
+	`at_musketc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_musketb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	2100
+
+[item group name]
+	`musket`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		16200
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		9000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		3
+	[active status]
+		`blind`	35	90	20
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

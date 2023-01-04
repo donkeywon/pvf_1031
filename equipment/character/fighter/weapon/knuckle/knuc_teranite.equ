@@ -1,0 +1,173 @@
+#PVF_File
+
+[name]
+	`泰拉石指虎`
+
+[name2]
+	`Teranite Knuckle`
+
+[basic explain]
+	`攻击时， 有1%%的几率使自身增加10%%的移动速度、 攻击速度和施放速度； 但同时会减少自身10%%的装备防御力， 效果持续30秒。`
+
+[flavor text]
+	`异变现象的产物， 由泰拉石炼制而成的武器， 含有强大的能量！`
+
+[grade]
+	65
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	58
+
+[magical attack]
+	47
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[move speed]
+	20
+
+[MP MAX]
+	50
+
+[price]
+	104000
+
+[repair price]
+	87360
+
+[value]
+	83200
+
+[equipment physical attack]
+	583	536
+
+[equipment magical attack]
+	706	649
+
+[separate attack]
+	365	246
+
+[icon]
+	`Item/weapon/fighter/knuckle.img`	44
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	2	3
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	2	3
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`cast speed`
+		`+`	100
+	[stat]
+		`attack speed`
+		`+`	100
+	[stat]
+		`move speed`
+		`+`	100
+	[stat]
+		`equipment physical defense`
+		`%`	-10
+	[stat]
+		`equipment magical defense`
+		`%`	-10
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

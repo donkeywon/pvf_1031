@@ -1,0 +1,51 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/robot/attack.ani`
+	[SUB ANI]
+		`../animation/attack_w2.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`正在启动应急系统！`	2	15
+	[/SPEECH]
+	[SOUND]
+		`R_ENJO_ATK_03`	1
+		`ENJO_SWISH_02`	2
+	[/SOUND]
+[/MOTION]
+
+[DEFAULT ATTACKINFO]
+	`../AttackInfo/attack3.atk`
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			400
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

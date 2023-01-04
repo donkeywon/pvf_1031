@@ -1,0 +1,169 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	3011
+[/dungeon]
+
+[type]
+	`[boss]`
+
+[greed]
+	`AA AA`
+
+[tile]
+	`../../ShallowKeep/Tile/overnoblankmid.til`
+	`../../ShallowKeep/Tile/overnoblankmid.til`
+	`../../ShallowKeep/Tile/overnoblankdown.til`
+	`../../ShallowKeep/Tile/overnoblankup.til`
+	`../../ShallowKeep/Tile/overnoblankdown.til`
+	`../../ShallowKeep/Tile/overnoblankmid.til`
+	`../../ShallowKeep/Tile/overnoblankdown.til`
+	`../../ShallowKeep/Tile/overnoblankup.til`
+	`../../ShallowKeep/Tile/overrighthighblank.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`../../ShallowKeep/Animation/skfar.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`../../ShallowKeep/Animation/skmid.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	14	223	1998	231	1008	150	1013	295
+
+[dungeon start area]
+	1748	305	48	52
+
+[sound]
+	`R_AMB_CAVE`
+	`RM_SHALLOWKEEP_BOSS`
+[/sound]
+
+[animation]
+	`../../ShallowKeep/Animation/skshortwpollwall1.ani`	`[bottom]`	339	182	0
+	`../../ShallowKeep/Animation/skshortwpollwall2.ani`	`[bottom]`	563	182	0
+	`../../ShallowKeep/Animation/skshortwpollwall1.ani`	`[bottom]`	787	182	0
+	`../../ShallowKeep/Animation/skshortwpollwall1.ani`	`[bottom]`	1235	182	0
+	`../../ShallowKeep/Animation/skshortwpollwall2.ani`	`[bottom]`	1459	182	0
+	`../../ShallowKeep/Animation/skshortwpollwall2.ani`	`[bottom]`	115	182	0
+	`../../ShallowKeep/Animation/skshortwpollwall2.ani`	`[bottom]`	1011	182	0
+	`../../ShallowKeep/Animation/skshortwpollwall2.ani`	`[bottom]`	1683	182	0
+	`../../ShallowKeep/Animation/skshortrightwall.ani`	`[bottom]`	1794	177	0
+	`../../ShallowKeep/Animation/skfarstreamani.ani`	`[distantback]`	0	-120	0
+	`../../ShallowKeep/Animation/skfarstreamani.ani`	`[distantback]`	640	-120	0
+	`../../ShallowKeep/Animation/skfarstreamani.ani`	`[distantback]`	1280	-120	0
+	`../../ShallowKeep/Animation/skfarstreamani.ani`	`[distantback]`	1920	-120	0
+	`../../ShallowKeep/Animation/skfarstreamani.ani`	`[distantback]`	2560	-120	0
+[/animation]
+
+[passive object]
+	812	392	134	0
+	812	395	281	0
+	813	843	146	0
+	813	898	177	0
+	813	1536	137	0
+	813	1624	263	0
+	804	823	218	0
+	804	591	253	0
+[/passive object]
+
+[monster]
+	62648	1	0	597	172	0	1	1	`[fixed]`	`[normal]`
+	62649	1	0	468	173	0	1	1	`[fixed]`	`[normal]`
+	62648	1	0	722	176	0	1	1	`[fixed]`	`[normal]`
+	62650	1	1	1435	179	0	1	1	`[fixed]`	`[normal]`
+	62649	1	0	534	197	0	1	1	`[fixed]`	`[normal]`
+	62651	1	2	323	202	0	2	1	`[fixed]`	`[boss]`
+	62649	1	0	467	233	0	1	1	`[fixed]`	`[normal]`
+	62648	1	0	636	234	0	1	1	`[fixed]`	`[normal]`
+	62648	1	0	762	239	0	1	1	`[fixed]`	`[normal]`
+	62650	1	1	1378	251	0	1	1	`[fixed]`	`[normal]`
+	62649	1	0	519	260	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[special passive object]
+	802	1311	138	0	1
+	`[item]`	1	1	-1	-1	-1
+	803	318	148	0	2
+	`[trap]`	2010	1	1	5	-1
+	`[trap]`	2011	1	1	10	-1
+	815	1156	161	0	2
+	`[monster]`	403	40	1	5	-1
+	`[item]`	2	-1	1	-1	-1
+	815	1581	198	0	2
+	`[trap]`	48023	25	1	3	-1
+	`[trap]`	48022	25	1	3	-1
+	815	1142	222	0	2
+	`[monster]`	404	40	1	5	-1
+	`[item]`	2	-1	1	-1	-1
+	816	938	229	0	1
+	`[item]`	0	2	-1	-1	-1
+	802	1518	266	0	1
+	`[item]`	1	1	-1	-1	-1
+	803	319	269	0	2
+	`[trap]`	2110	1	1	5	-1
+	`[trap]`	2111	1	1	10	-1
+	816	979	284	0	1
+	`[item]`	0	2	-1	-1	-1
+	815	1126	289	0	2
+	`[monster]`	403	40	1	5	-1
+	`[item]`	2	-1	1	-1	-1	
+[/special passive object]
+
+[NPC]
+	1000	`[left]`	0	0	0
+[/NPC]
+
+[event monster position]
+	231	159	0
+	236	235	0
+	853	255	0
+	689	200	0
+[/event monster position]
+
+[map name]
+	`PVP 无名`

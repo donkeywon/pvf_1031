@@ -1,0 +1,122 @@
+#PVF_File
+
+[appear sound]
+	`FT_AVATAR_HORROR_02`
+
+[damage sound]
+	`R_MACHINE_HIT`
+
+[die sound]
+	`SAFE_CRASH`
+
+[name]
+	`地狱哥布林直升机`
+
+[face image]
+	`Monster/MonsterFace.img`	403
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	150
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	10
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	10
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	10
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	10
+[/ability category]
+
+[category]
+	`[human]`
+	`[goblin]`
+[/category]
+
+[level]
+	60	60
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[hit recovery]
+	800	800
+
+[weight]
+	80000	80000
+
+[vision]
+	1900
+
+[stuckbonus on damage]
+	5	15	25	35
+
+[lie frame]
+	2	3	2	3	4
+
+[waiting action]
+	`Action/SelfDie.act`
+
+[move action]
+	`Action/SelfDie.act`
+
+[last action]
+	`Action/__Die.act`
+
+[down action]
+	`Action/_Die.act`
+
+[action list]
+	`Action/SelfDie.act`
+[/action list]
+
+[attack info]
+	``
+[/attack info]
+
+[cooltime]
+	0
+[/cooltime]
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[keep distance with target]
+	1000
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action_1.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action_1.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action_1.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action_1.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

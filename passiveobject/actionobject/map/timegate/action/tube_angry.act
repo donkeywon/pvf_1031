@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/tube.ani`
+	[SUB ANI]
+		`../animation/tube_angry.ani`	0	1
+		`../animation/tube_e.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`FLASK_BUBBLE_LOOP`	0
+		`FLASK_BUBBLE_LOOP`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[<=]
+			10
+		[%]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

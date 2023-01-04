@@ -1,0 +1,202 @@
+#PVF_File
+
+[name]
+	`精·妖精女王`
+
+[name2]
+	``
+
+[explain]
+	`攻击或施放技能时， 有3%%的几率使自身增加30点的力量、 体力、 智力和精神。
+前冲时， 有5%%的几率使自身增加5%%的攻击速度、 施放速度和移动速度。
+被攻击时， 有3%%的几率使自身增加1000点的物理防御力和魔法防御力。
+(在决斗场中， 提升所有属性强化值)`
+
+[flavor text]
+	`<妖精的尾巴宠物礼包>`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[physical attack]
+	35
+
+[physical defense]
+	35
+
+[magical attack]
+	35
+
+[magical defense]
+	35
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[move speed]
+	30
+
+[magical critical hit]
+	5
+
+[physical critical hit]
+	5
+
+[all elemental attack]
+	15
+
+[pvp]
+	[all elemental attack]
+		20
+[/pvp]
+
+[anti evil]
+	15
+
+[all elemental resistance]
+	10
+
+[stuck resistance]
+	30
+
+[hit recovery]
+	100
+
+[stuck]
+	-3
+
+[icon mark]
+	`Item/IconMark.img`	64
+
+[icon]
+	`Item/Title/title_cn.img`	210
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	30
+	[stat]
+		`magical defense`
+		`+`	30
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	30
+	[stat]
+		`magical defense`
+		`+`	30
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[set my state]
+		1
+	[my state]
+		`dash`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+	[stat]
+		`cast speed`
+		`+`	50
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`equipment physical defense`
+		`+`	1000
+	[stat]
+		`equipment magical defense`
+		`+`	1000
+[/then]

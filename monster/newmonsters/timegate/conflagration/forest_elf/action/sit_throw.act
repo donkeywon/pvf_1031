@@ -1,0 +1,47 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/sit_throw.ani`
+	[SUB ANI]
+		`../animation/weapon/sit_throw_wp.ani`	0	1
+	[/SUB ANI]
+	[SOUND]
+		`R_FORESTELF_ATK`	2
+		`FORESTELF_THROW`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11192
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			20	0	250
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

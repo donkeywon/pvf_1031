@@ -1,0 +1,59 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Run.ani`
+	[SPEECH]
+		`天才是不会轻易死去的~何况是在这里！！`	3	5
+		`向机械吉赛尔附近撤退！！`	3	5
+		`必须赶紧坐上机械吉赛尔！！`	3	5
+		`死在最华丽的机器之下，你应该感到非常荣幸！`	3	5
+		`嘻嘻嘻……`	3	5
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`timeCAMO`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		0
+	[OFF]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[ME]
+	[IF]
+		`timeCAMO`	
+		[+]
+			20000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET HP]
+		0
+[/BEHAVIOR]

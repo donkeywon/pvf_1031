@@ -1,0 +1,85 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/arm1.ani`
+	[SPEECH]
+		`动作~`	2	10
+		`迅速~`	2	5
+		`简洁！`	2	5
+	[/SPEECH]
+	[SOUND]
+		`NENKWON_ATK_03_2`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			300
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10485
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			110	10	55
+	[/CREATE PASSIVEOBJECT]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9929
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			110	0	55
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

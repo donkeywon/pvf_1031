@@ -1,0 +1,86 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/change1.ani`
+	[SUB ANI]
+		`../animation/shotgun/change_gun.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`可恶！ 该死的！`	0	100
+	[/SPEECH]
+	[SOUND]
+		`PLATIN_DROP`	0
+		`R_PLATIN_SKILL_07`	0
+		`PLATIN_NEW`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`move.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`damage2.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		`down.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`sit.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`change.act`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[ATTACK]
+		3	0
+	[OFF]
+	[TRIGGER]
+	[ATTACK]
+		4	0
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		6
+	[NOW]
+[/BEHAVIOR]

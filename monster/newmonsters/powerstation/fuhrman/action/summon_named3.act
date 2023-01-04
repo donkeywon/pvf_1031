@@ -1,0 +1,112 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/summon1.ani`
+	[SUB ANI]
+		`../animation/summon1_e.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`好厉害的家伙……`	5	100
+	[/SPEECH]
+	[SOUND]
+		`FUHRMAN_SKILL_05_4`	4
+		`FUHRMAN_SMACK`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	500
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61634
+		[LEVEL]
+			0
+		[POS]
+			465	246	0
+		[NO EFFECT]
+		[USE MAP POS]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61634
+		[LEVEL]
+			0
+		[POS]
+			551	309	0
+		[NO EFFECT]
+		[USE MAP POS]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61634
+		[LEVEL]
+			0
+		[POS]
+			526	368	0
+		[NO EFFECT]
+		[USE MAP POS]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61634
+		[LEVEL]
+			0
+		[POS]
+			905	230	0
+		[NO EFFECT]
+		[USE MAP POS]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61634
+		[LEVEL]
+			0
+		[POS]
+			941	383	0
+		[NO EFFECT]
+		[USE MAP POS]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

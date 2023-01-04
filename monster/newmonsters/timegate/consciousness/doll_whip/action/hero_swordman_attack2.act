@@ -1,0 +1,114 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Hero_Swordman_Attack2.ani`
+	[SUB ANI]
+		`../Animation/ball/Hero_Swordman_Attack2.ani`	0	0
+		`../Animation/ball_eff/Hero_Swordman_Attack2.ani`	0	0
+		`../Animation/Skill_eff/Hero_Swordman_Attack2.ani`	0	0
+		`../Animation/ball_eff/Hero_Swordman_Attack2.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`TEYMER_WHIP`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9034
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			90	-10	100
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9035
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			140	10	90
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9035
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			190	-10	80
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9034
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			240	10	80
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9034
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			290	-10	80
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9035
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			340	10	70
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

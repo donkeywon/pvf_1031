@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Throw.ani`
+	[SUB ANI]
+		`../animation/EF_FireSlug.ani`	0	10
+	[/SUB ANI]
+	[SPEECH]
+		`你，站在那不许动`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[WHICH]
+	[TARGET]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8141
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[USE MY TEAM]
+		[WARNING MARK]
+			0	0	100	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

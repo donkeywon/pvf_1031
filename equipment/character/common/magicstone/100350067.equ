@@ -1,0 +1,144 @@
+#PVF_File
+
+[name]
+	`灵石玉髓 - 重炮掌控者`
+
+[name2]
+	``
+
+[grade]
+	80
+
+[rarity]
+	4
+
+[usable job]
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[physical attack]
+	47
+
+[physical defense]
+	47
+
+[magical attack]
+	47
+
+[magical defense]
+	47
+
+[price]
+	96000
+
+[repair price]
+	76800
+
+[value]
+	76800
+
+[creation rate]
+	30
+
+[skill levelup]
+	`[at gunner]`	107	1
+	`[at gunner]`	108	1
+[/skill levelup]
+
+[icon]
+	`Item/new_equipment/11_magicstone/magicstone.img`	66
+
+[field image]
+	`Item/field_equip.img`	23
+
+[equipment type]
+	`[magic stone]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`magic stone`
+
+[cool time]
+	10000
+
+[basic explain]
+	`[寒冰喷射器]攻击时， 有50%%的几率发动提升Lv2或Lv4的该技能。
+施放[FM-92 mk2 SW榴弹]时， 有50%%的几率发动提升Lv2或Lv4的该技能。`
+
+[routing priority]
+	`at gunner`	2
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	27
+
+[if]
+	[event use skill]
+		`at gunner`	107
+[/if]
+
+[multiple then]
+	[then]
+		[probability]
+			50
+		[target]
+			`myself`	-1
+		[skill levelup]
+			`at gunner`	107	2
+		[/skill levelup]
+		[then probability]
+			60.0
+	[/then]
+	[then]
+		[probability]
+			50
+		[target]
+			`myself`	-1
+		[skill levelup]
+			`at gunner`	107	4
+		[/skill levelup]
+		[then probability]
+			40.0
+	[/then]
+[/multiple then]
+
+[if]
+	[event use skill]
+		`at gunner`	108
+[/if]
+
+[multiple then]
+	[then]
+		[probability]
+			50
+		[target]
+			`myself`	-1
+		[skill levelup]
+			`at gunner`	108	2
+		[/skill levelup]
+		[then probability]
+			60.0
+	[/then]
+	[then]
+		[probability]
+			50
+		[target]
+			`myself`	-1
+		[skill levelup]
+			`at gunner`	108	4
+		[/skill levelup]
+		[then probability]
+			40.0
+	[/then]
+[/multiple then]

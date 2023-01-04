@@ -1,0 +1,53 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Totem2_ak.ani`
+	[SUB ANI]
+		`../Animation/Totem2_etc.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30416
+		[PARTICLE FILENAME]
+			`../Particle/Totem_Down.ptl`
+		[LEVEL]
+			40
+		[POS]
+			10	0	30
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30416
+		[PARTICLE FILENAME]
+			`../Particle/Totem.ptl`
+		[LEVEL]
+			40
+		[POS]
+			10	0	30
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30416
+		[PARTICLE FILENAME]
+			`../Particle/Totem_Up.ptl`
+		[LEVEL]
+			40
+		[POS]
+			10	0	30
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,148 @@
+#PVF_File
+
+[name]
+	`达人之金刚碎魄`
+
+[name2]
+	`The Art of Master's Deva King`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态
+攻击时， 有1%%的几率附加300点伤害`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态1秒。 (若敌人高于Lv40， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击时， 有1%%的几率附加300点伤害。`
+
+[grade]
+	44
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	40
+
+[physical attack]
+	14
+
+[attack speed]
+	100
+
+[stuck]
+	-1
+
+[price]
+	79200
+
+[repair price]
+	63360
+
+[value]
+	63360
+
+[equipment physical attack]
+	433	374
+
+[equipment magical attack]
+	391	338
+
+[skill levelup]
+	`[fighter]`	37	1
+	`[fighter]`	19	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/bglove.img`	23
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	4
+
+[layer variation]
+	2600
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	25
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		1000
+	[probability]
+		2
+	[active status]
+		`stun`	40
+[/then]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		1
+	[add absolute damage]
+		`all`
+		`+`	300
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,125 @@
+#PVF_File
+
+[name]
+	`变异的十字架`
+
+[category]
+	`[devil]`
+[/category]
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	110
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	110
+	`[HP MAX]`	`*`	180
+[/ability category]
+
+[level]
+	76	76
+
+[dark resistance]
+	10	10
+
+[poison resistance]
+	1000	1000
+
+[move speed]
+	700	700
+
+[attack speed]
+	800	800
+
+[hit recovery]
+	1200	1200
+
+[weight]
+	250000	250000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[die effect]
+	0	24	1
+
+[face image]
+	`Monster/MonsterFace.img`	656
+
+[waiting action]
+	`action/Stay.act`
+
+[move action]
+	`action/Move.act`
+
+[damage action 1]
+	`action/Damage1.act`
+
+[damage action 2]
+	`action/Damage2.act`
+
+[attack action]
+	`Action/_casting.act`
+	`Action/attack2.act`
+[/attack action]
+
+[attack info]
+	``
+	`AttackInfo/Attack.atk`
+[/attack info]
+
+[cooltime]
+	50000	6000
+[/cooltime]
+
+[think term]
+	200
+
+[destination change term]
+	400
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[targeting bonus]
+	0	0	0	0	0	0	100	0	0	0	0	0	0	100	0	0	0	0	0	0	0
+	`[down]`	0	10	0
+[/targeting bonus]
+
+[intelligence]
+	80	50	4000
+
+[keep distance with target]
+	200
+
+[vision]
+	1000

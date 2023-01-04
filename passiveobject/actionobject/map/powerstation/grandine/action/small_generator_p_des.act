@@ -1,0 +1,75 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/small_generator_P_des.ani`
+	[SUB ANI]
+		`../animation/small_generator_P_des1.ani`	0	1
+		`../animation/small_generator_P_des3.ani`	0	2
+		`../animation/small_generator_P_des2.ani`	0	3
+	[/SUB ANI]
+	[SOUND]
+		`GENERATOR_S_OFF`	0
+		`BOTULA_SKILL_02`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			56055	56057	56058	56059	56060	56061
+		[/IS INDEX]
+		[CHECKED NO]
+		[=>]
+			1
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[END]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			56055	56057	56058	56059	56060	56061
+		[/IS INDEX]
+		[CHECKED NO]
+		[<]
+			1
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[END]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`这……能量消失了……`
+	[SET DAMAGE BOX]
+	[ON]
+[/BEHAVIOR]

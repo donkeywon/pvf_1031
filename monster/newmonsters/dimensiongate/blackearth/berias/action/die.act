@@ -1,0 +1,33 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/die.ani`
+	[SUB ANI]
+		`../animation/effect/Blood_eff.ani`	0	-1
+		`../animation/die_eff.ani`	0	0
+		`../animation/effect/Counter2_Howling_Ready_eff.ani`	0	0
+		`../animation/effect/Counter2_Howling_Ready.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		4	1000
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH WITH POSITION]
+		`咳……啊……啊！`	0	150
+[/BEHAVIOR]

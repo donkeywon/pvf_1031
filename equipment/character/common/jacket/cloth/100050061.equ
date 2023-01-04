@@ -1,0 +1,175 @@
+#PVF_File
+
+[name]
+	`传承 : 神圣的摩羯守护神薄纱长袍`
+
+[grade]
+	72
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	70
+
+[magical attack]
+	34
+
+[magical defense]
+	34
+
+[price]
+	50400
+
+[repair price]
+	42336
+
+[value]
+	40320
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	900	876
+
+[skill levelup]
+	`[swordman]`	36	1
+	`[swordman]`	60	1
+	`[fighter]`	40	1
+	`[fighter]`	16	1
+	`[at fighter]`	40	1
+	`[at fighter]`	16	1
+	`[gunner]`	63	1
+	`[gunner]`	59	1
+	`[at gunner]`	63	1
+	`[at gunner]`	59	1
+	`[mage]`	55	1
+	`[mage]`	58	1
+	`[at mage]`	2	1
+	`[at mage]`	29	1
+	`[mage]`	46	1
+	`[mage]`	47	1
+	`[priest]`	40	1
+	`[priest]`	69	1
+	`[demonic swordman]`	60	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`item/new_equipment/02_cloth/coat/cloth_coat.img`	14
+
+[field image]
+	`Item/field_equip.img`	0
+
+[equipment type]
+	`[coat]`	17
+
+[sub type]
+	0
+
+[durability]
+	28
+
+[weight]
+	1400
+
+[item group name]
+	`cl coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 神圣的摩羯守护神薄纱套装`
+
+[set item]
+	100050061	100100021	100150020	100200020	100250020
+[/set item]
+
+[set ability]
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福增加自身7%%的攻击速度和施放速度。`
+	[physical attack]
+		125
+	[magical attack]
+		125
+	[magical defense]
+		30
+	[light resistance]
+		12
+	[MP regen speed]
+		16
+	[move speed]
+		55
+	[attack speed]
+		30
+	[cast speed]
+		90
+	[stuck]
+		-2
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`attack speed`
+			`+`	70
+		[stat by condition]
+			`cast speed`
+			`+`	70
+	[/then]
+	[skill levelup]
+		`[swordman]`	87	1
+		`[swordman]`	89	1
+		`[fighter]`	67	1
+		`[fighter]`	72	1
+		`[at fighter]`	67	1
+		`[at fighter]`	114	1
+		`[gunner]`	67	1
+		`[gunner]`	68	1
+		`[at gunner]`	96	1
+		`[at gunner]`	95	1
+		`[mage]`	74	1
+		`[mage]`	73	1
+		`[at mage]`	49	1
+		`[at mage]`	51	1
+		`[mage]`	82	1
+		`[mage]`	75	1
+		`[priest]`	93	1
+		`[priest]`	89	1
+		`[swordman]`	41	1
+		`[fighter]`	40	2
+		`[at fighter]`	40	2
+		`[mage]`	19	1
+		`[at mage]`	28	2
+		`[mage]`	48	1
+		`[gunner]`	46	1
+		`[at gunner]`	46	1
+		`[priest]`	48	2
+	[/skill levelup]
+[/set ability]
+
+[item overpower part]

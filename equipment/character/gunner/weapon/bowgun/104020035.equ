@@ -1,0 +1,178 @@
+#PVF_File
+
+[name]
+	`突击队长的机械奇美拉I : 手弩`
+
+[basic explain]
+	`攻击速度 +5%%
+暴击伤害 +22%%
+穿刺力 +20%%`
+
+[detail explain]
+	`攻击速度 +5%%
+暴击伤害 +22%%(在决斗场 +11%%)
+穿刺力 +20%%`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[physical attack]
+	55
+
+[magical attack]
+	28
+
+[attack speed]
+	70
+
+[stuck]
+	-1
+
+[price]
+	134400
+
+[repair price]
+	112896
+
+[value]
+	107520
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	700	656
+
+[equipment magical attack]
+	589	552
+
+[separate attack]
+	481	327
+
+[physical critical hit]
+	7
+
+[magical critical hit]
+	4
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/bowgun/bowgun.img`	85
+
+[field image]
+	`Item/field_weapon.img`	5
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	23	0
+
+[layer variation]
+	2790
+	`bowgunc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`bowgunb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	23	0
+
+[layer variation]
+	2790
+	`at_bowgunc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_bowgunb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BOWGUN_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`bowgun`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[dead tower]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	22
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	11
+[/then]
+
+[int data]
+	7	-1	-1	-1	-1	-1	-1	-1	35	-1
+[/int data]
+
+[icon mark]
+	`Item/IconMark.img`	66

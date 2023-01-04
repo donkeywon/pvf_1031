@@ -1,0 +1,77 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	200.0	200.0	70.0	70.0
+		[false]
+		[return str]
+			`camo`
+		[true]
+	
+		[think]
+			[void]
+				`number of in attack area()`	200.0	-100.0	30.0	30.0
+				`enemy`
+				`all`	-1
+			[true]
+		
+			[think]
+				[last result]
+					`>=`	2.0
+				[true]
+			
+				[think]
+					[check use skill]
+						59
+					[true]
+					[return str]
+						`drop`
+					[false]
+				
+					[think]
+						[void]
+							`check random()`	5	100
+						[true]
+						[return str]
+							`combo`
+						[false]
+						[return]
+							-1
+					[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`check random()`	10	100
+		[true]
+		[return str]
+			`combo`
+		[false]
+		[return]
+			-1
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	100.0	100.0	30.0	30.0
+		[true]
+	
+		[think]
+			[void]
+				`check random()`	10	100
+			[true]
+			[return str]
+				`combo`
+			[false]
+			[return]
+				-1
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

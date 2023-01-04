@@ -1,0 +1,33 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/rocket.ani`
+	[SUB ANI WITH XYZ]
+		`../animation/rocket1.ani`	0	-10	0	-12	0
+	[/SUB ANI WITH XYZ]
+	[SOUND]
+		`MZIZEL_MISSILE`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10262
+		[PARTICLE FILENAME]
+			`../Particle/rocket.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-107	0	124
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

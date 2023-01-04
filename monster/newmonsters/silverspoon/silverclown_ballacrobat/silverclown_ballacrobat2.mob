@@ -1,0 +1,135 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`波洛洛`
+
+[face image]
+	`Monster/MonsterFace.img`	426
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	120
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	120
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	80
+[/ability category]
+
+[damage sound]
+	`R_NORMALSILVER_DMG`
+
+[die sound]
+	`NORMALSILVER_DIE`
+
+[category]
+	`[human]`
+[/category]
+
+[level]
+	40	50
+
+[move speed]
+	500	500
+
+[attack speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	60000	60000
+
+[waiting action]
+	`Action/Stone_Stay2.act`
+
+[move action]
+	`Action/start_Stay.act`
+
+[sit action]
+	`Action/Stone_Sit.act`
+
+[damage action 1]
+	`Action/Stone_Damage1.act`
+
+[damage action 2]
+	`Action/Stone_Damage2.act`
+
+[down action]
+	`Action/Stone_Down.act`
+
+[overturn action]
+	`Action/Stone_Overturn.act`
+
+[lie frame]
+	1	2	3	3	4
+
+[action list]
+	`Action/Summersalt_2.act`
+	`Action/stay_sit.act`
+[/action list]
+
+[attack info]
+	`Attackinfo/kick.atk`
+	``
+[/attack info]
+
+[cooltime]
+	300	300
+[/cooltime]
+
+[vision]
+	1500
+
+[think term]
+	200
+
+[destination change term]
+	500
+
+[keep distance with target]
+	100
+
+[keep range distance with target]
+	40	0	5	5
+
+[intelligence]
+	70	70	3000
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/ball_DestinationSelect.ai`
+		`ai/ball_Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/ball_DestinationSelect.ai`
+		`ai/ball_Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/ball_DestinationSelect.ai`
+		`ai/ball_Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/ball_DestinationSelect.ai`
+		`ai/ball_Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

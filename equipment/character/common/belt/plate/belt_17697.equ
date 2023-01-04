@@ -1,0 +1,122 @@
+#PVF_File
+
+[name]
+	`歌利亚的合金腰带`
+
+[name2]
+	`找不到代码name2_17697`
+
+[basic explain]
+	`HP降到20%%以下时， 召唤出1只亚德炎。
+无法进行分解。`
+
+[detail explain]
+	`HP降到20%%以下时， 召唤出1只Lv49的亚德炎协助召唤者攻击敌人， 亚德炎存在100秒。 (召唤的怪物只能同时存在1只， 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失)
+无法进行分解。`
+
+[grade]
+	49
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	45
+
+[physical attack]
+	23
+
+[physical defense]
+	14
+
+[magical attack]
+	23
+
+[inventory limit]
+	3000
+
+[price]
+	39200
+
+[repair price]
+	31360
+
+[value]
+	31360
+
+[equipment physical defense]
+	1120	1020
+
+[icon]
+	`Item/common/belt.img`	271
+
+[field image]
+	`Item/field_equip.img`	18
+
+[equipment type]
+	`[waist]`	18
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	2000
+
+[item group name]
+	`mt waist`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		1000	1	1000
+	[stat change]
+		`hp`
+		`<`
+		`%`	20
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		100000
+	[reduce duration at pvp module]
+		75
+	[probability]
+		100
+	[summon monster]
+		60112	49	1
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

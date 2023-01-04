@@ -1,0 +1,126 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Cast.ani`
+	[SUB ANI]
+		`../Animation/weapon2/Cast.ani`	0	-1
+		`../Animation/weapon1/Cast.ani`	0	0
+		`../Animation/ware/Cast.ani`	0	0
+		`../Animation/casting.ani`	0	0
+		`../Animation/casting1.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`停止吧,时间!`	1	30
+		`开启吧,时空!`	1	30
+		`人都会慢慢老去~`	1	30
+	[/SPEECH]
+	[SOUND]
+		`WTHIEF_MEET_04`	0
+		`TUTORIAL`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		4	4
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS TEAM]
+		[MONSTER TEAM]
+		[/TEAM]
+		[DISTANCE]
+		[<=]
+			3000
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9114
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	100
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		5000	
+		[attack speed]
+		[%]
+			-200.0
+		[move speed]
+		[%]
+			-200.0
+		[cast speed]
+		[%]
+			-200.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[RESET]
+	[TRIGGER]
+		2
+	[RESET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9113
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			49	1	100
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		100	4500	1000	150	0	0	0
+[/BEHAVIOR]

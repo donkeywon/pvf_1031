@@ -1,0 +1,23 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	200	200	100	100
+		[true]
+	
+		[think]
+			[void]
+				`check random()`	70.0	100.0
+			[true]
+			[return str]
+				`combo`
+			[false]
+			[import ai]
+				`fight2.ai`
+		[/think]
+	[false]
+	[import ai]
+		`fight2.ai`
+	[/think]
+[/ai pattern]

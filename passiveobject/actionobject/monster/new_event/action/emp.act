@@ -1,0 +1,78 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/EMP/spin_left_back_dodge.ani`
+	[SUB ANI]
+		`../animation/EMP/emp_nova3.ani`	0	-1
+		`../animation/EMP/dis_light_back_dodge.ani`	0	1
+		`../animation/EMP/light_normal.ani`	0	2
+		`../animation/EMP/line_dodge2.ani`	0	3
+		`../animation/EMP/light_dodge.ani`	0	4
+		`../animation/EMP/spin_right_back_dodge.ani`	0	5
+		`../animation/EMP/emp_nova4.ani`	0	6
+		`../animation/EMP/_emp_nova3.ani`	0	7
+		`../animation/EMP/_emp_nova4.ani`	0	8
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			1000
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			1000
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[lightning]
+		100	80	5000	1
+	[SET ACTION]
+	[DOWN]
+	[MY DIRECTION]
+		1
+	[FORCE]
+		100	80
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		23	23
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

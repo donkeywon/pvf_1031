@@ -1,0 +1,47 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/casting3.ani`
+	[SUB ANI]
+		`../Animation/casting1_ring01.ani`	0	-1
+		`../Animation/casting1_ring04.ani`	0	-1
+		`../Animation/casting1_ring03.ani`	0	0
+		`../Animation/casting1_effect00.ani`	0	0
+		`../Animation/casting1_ring00.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`毁灭之短剑`	1	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10055
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			90	80	105
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10055
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			90	-80	105
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/super/scream.ani`
+	[SUB ANI]
+		`../Animation/Scream_effect1.ani`	0	-2
+		`../Animation/Scream_effect2.ani`	0	-3
+		`../Animation/Scream_effect.ani`	0	-1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61422
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			300
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND MESSAGE]
+	[ATTACK_COMMAND]
+		0
+[/BEHAVIOR]

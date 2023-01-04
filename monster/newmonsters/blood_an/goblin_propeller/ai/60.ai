@@ -1,0 +1,23 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	400.0	80.0	100.0	100.0
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	3
+			[true]
+			[import ai]
+				`Dash.ai`
+			[false]
+			[return]
+				3
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+[/ai pattern]

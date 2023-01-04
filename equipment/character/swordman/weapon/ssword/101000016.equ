@@ -1,0 +1,188 @@
+#PVF_File
+
+[name]
+	`御龙决`
+
+[name2]
+	``
+
+[basic explain]
+	`[冰霜之萨亚]、 [冰刃 · 波动剑]、 [极冰 · 裂波剑]的冰冻Lv +6
+攻击冰冻状态的敌人时， 附加7%%的伤害。
+当HP低于20%以下且被击时， 可以使500px范围内的所有敌人进入冰冻状态2秒。`
+
+[detail explain]
+	`[冰霜之萨亚]、 [冰刃 · 波动剑]、 [极冰 · 裂波剑]的冰冻Lv +6
+攻击冰冻状态的敌人时， 附加7%%的伤害。
+当HP低于20%以下且被击时， 可以使500px范围内的所有敌人进入冰冻状态2秒。 (若敌人高于Lv84， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[magical attack]
+	55
+
+[cast speed]
+	20
+
+[price]
+	134400
+
+[repair price]
+	112896
+
+[value]
+	107520
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	764	716
+
+[equipment magical attack]
+	925	867
+
+[separate attack]
+	481	327
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[swordman]`	21	1
+	`[swordman]`	100	1
+	`[swordman]`	96	1
+	`[swordman]`	36	1
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/sswd/sswd.img`	92
+
+[field image]
+	`Item/FieldImage.img`	9
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	22	0
+
+[layer variation]
+	2790
+	`sswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`sswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	22	0
+
+[layer variation]
+	2790
+	`sswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`sswdb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`MINERALSWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`ssword`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[water element]`
+
+[if]
+	[target active status]
+		`freeze`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	7
+[/then]
+
+[if]
+	[hit]
+		1
+	[stat change]
+		`hp`
+		`<`
+		`%`	20
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[duration]
+		2000
+	[probability]
+		100
+	[active status]
+		`freeze`	84
+[/then]
+
+[skill data up]
+	`[swordman]`	21	`[dungeon type]`	`[level]`	5	`+`	6
+	`[swordman]`	100	`[dungeon type]`	`[level]`	5	`+`	6
+	`[swordman]`	96	`[dungeon type]`	`[level]`	3	`+`	6
+	`[swordman]`	36	`[dungeon type]`	`[level]`	3	`+`	6
+[/skill data up]
+
+[icon mark]
+	`Item/IconMark.img`	66

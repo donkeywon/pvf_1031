@@ -1,0 +1,107 @@
+#PVF_File
+
+[name]
+	`牛头统帅的图腾柱`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入减速状态。
+装备时， 每30秒增加自身属性， 效果持续90秒。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入减速状态7秒； 减速状态下的敌人， 会减少15%%的移动速度和攻击速度。 (若敌人高于Lv89， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+装备时， 每30秒会使自身增加15点的力量、 智力、 体力和精神、 1%%的移动速度和攻击速度、 1.5%%的施放速度， 以及1%%的物理暴击和魔法暴击； 该效果叠加以90秒为界， 之后重新计算。`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	54
+
+[physical defense]
+	54
+
+[magical defense]
+	54
+
+[price]
+	89000
+
+[value]
+	71200
+
+[creation rate]
+	0
+
+[icon]
+	`Item/new_equipment/10_support/support.img`	104
+
+[field image]
+	`Item/field_equip.img`	22
+
+[equipment type]
+	`[support]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	700
+
+[item group name]
+	`support`
+
+[cool time]
+	10000
+
+[magical attack]
+	54
+
+[if]
+	[cooltime]
+		7000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`slow`	89	15	15
+[/then]
+
+[if]
+	[time]
+		30000	1	500
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		90000
+	[appendage]
+		57
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

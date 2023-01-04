@@ -1,0 +1,41 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[hp]
+			`%<=`	20
+		[true]
+	
+		[think]
+			[void]
+				`get random()`	0.0	100.0
+		
+			[think]
+				[last result]
+					`<=`	20
+				[true]
+				[return]
+					2
+				[false]
+				[return]
+					10
+			[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`get random()`	0.0	100.0
+	
+		[think]
+			[last result]
+				`<=`	70
+			[true]
+			[return]
+				10
+			[false]
+			[return]
+				0
+		[/think]
+	[/think]
+	[/think]
+[/ai pattern]

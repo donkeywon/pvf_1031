@@ -1,0 +1,56 @@
+#PVF_File
+
+[floating height]
+	1
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	1000
+
+[basic action]
+	`Action/Priest_ball2_start.act`
+
+[etc action]
+	`Action/Priest_ball2_loop.act`
+	`Action/Priest_ball2_end.act`
+[/etc action]
+
+[attack info]
+	`AttackInfo/Priest_ball.atk`
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[MONSTER]`	56751
+	[homing velocity]
+		100	0
+	[homing check gap]
+		200
+	[sync animation rotation]
+		0
+	[homing time]
+		0
+[/homing]
+
+[sound category]
+	1
+	`[after object create]`
+	`NEX_VOID_LOOP`	-1
+[/sound category]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	10000
+[/object destroy condition]
+
+[team]
+	100
+
+[name]
+	`发射型杰克爆弹`

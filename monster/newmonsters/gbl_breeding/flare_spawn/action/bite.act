@@ -1,0 +1,37 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Bite.ani`
+	[SUB ANI]
+		`../Animation/Bite_bomb.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`咳呃！`	0	5
+	[/SPEECH]
+	[SOUND]
+		`FSPAWN_ATK`	3
+		`FSPAWN_VOMIT`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9902
+		[PARTICLE FILENAME]
+			`../Particle/down.ptl`
+		[LEVEL]
+			35
+		[POS]
+			120	5	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

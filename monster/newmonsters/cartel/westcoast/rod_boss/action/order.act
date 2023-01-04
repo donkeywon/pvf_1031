@@ -1,0 +1,64 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/order.ani`
+	[SUB ANI]
+		`../animation/weapon/order_wp.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`锁定那个家伙！我们集中攻击他！`	0	100
+	[/SPEECH]
+	[SOUND]
+		`SICHEF_SKILL_01`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61300
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61300
+		[/INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND MESSAGE]
+	[ETC_COMMAND]
+		1	1	5000
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

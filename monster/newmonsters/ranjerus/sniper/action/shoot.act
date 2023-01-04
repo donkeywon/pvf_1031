@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Shoot.ani`
+	[SPEECH]
+		`瞄准!`	0	100
+	[/SPEECH]
+	[SOUND]
+		`KMACHINEGUN_INSTALL`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[TARGET]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8081
+		[PARTICLE FILENAME]
+			`../particle/scope.ptl`
+		[LEVEL]
+			40
+		[POS]
+		[RANDOM SELECT]
+			200	-200
+		[/RANDOM SELECT]
+	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

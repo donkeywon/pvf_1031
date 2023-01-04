@@ -1,0 +1,52 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/bloodlink.ani`
+	[SUB ANI]
+		`../animation/berserkeffect.ani`	0	0
+		`../animation/berserkeffectglow.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`啊！好烫好烫！不要过来！`	2	30
+		`闪开！要不然我烧死你！`	2	30
+	[/SPEECH]
+	[SOUND]
+		`RESERCHER_ATK_01`	0
+		`FIRE_PILLAR_UP`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1500	1
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8094
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			45	0	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

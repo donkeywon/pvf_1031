@@ -1,0 +1,129 @@
+#PVF_File
+
+[name]
+	`战争之王的狼皮长袍`
+
+[name2]
+	``
+
+[grade]
+	59
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	40
+
+[magical attack]
+	40
+
+[magical defense]
+	28
+
+[attack speed]
+	10
+
+[cast speed]
+	10
+
+[price]
+	53100
+
+[repair price]
+	44604
+
+[value]
+	42480
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	1584	1464
+
+[skill levelup]
+	`[gunner]`	51	2
+	`[gunner]`	78	2
+	`[at gunner]`	51	2
+	`[at gunner]`	78	2
+	`[mage]`	69	2
+	`[mage]`	104	2
+	`[at mage]`	13	2
+	`[thief]`	47	2
+[/skill levelup]
+
+[Force Result Item Rule]
+	1	0
+
+[icon]
+	`Item/new_equipment/03_leather/coat/leather_coat.img`	12
+
+[field image]
+	`Item/FieldImage.img`	0
+
+[equipment type]
+	`[coat]`	19
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	33
+
+[weight]
+	1900
+
+[item group name]
+	`lt coat`
+
+[cool time]
+	10000
+
+[set name]
+	`战争之王的传承套装`
+
+[set item]
+	100060012	100110010
+[/set item]
+
+[set ability]
+	[fullset basic explain]
+		`攻击时， 有2%%的几率使自身增加30点力量和智力， 效果持续20秒。`
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			20000
+	[/if]
+	[then]
+		[target]
+			`myself`	0
+		[probability]
+			2
+		[equipment duration]
+			20000
+		[stat]
+			`physical attack`
+			`+`	30
+		[stat]
+			`magical attack`
+			`+`	30
+	[/then]
+[/set ability]
+
+[icon mark]
+	`Item/IconMark.img`	66

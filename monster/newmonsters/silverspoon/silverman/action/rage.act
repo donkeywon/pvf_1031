@@ -1,0 +1,30 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/rage.ani`
+	[SPEECH]
+		`不能就这么死去！！`	0	30
+		`快放开我……`	0	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		2
+		`A_rara.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`Move.act`
+[/BEHAVIOR]

@@ -1,0 +1,140 @@
+#PVF_File
+
+[name]
+	`卡露亚的教导 - 压制[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`破招时， 附加15%%的伤害。
+
+无法进行合成和分解。`
+
+[grade]
+	44
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	40
+
+[physical attack]
+	31
+
+[attack speed]
+	-80
+
+[stuck]
+	-2
+
+[price]
+	79200
+
+[repair price]
+	63360
+
+[value]
+	63360
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	504	456
+
+[equipment magical attack]
+	357	323
+
+[separate attack]
+	245	164
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[priest]`	30	2
+	`[priest]`	49	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/axe.img`	27
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	1	7
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[if]
+	[attack condition]
+		`counter`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	15
+[/then]
+
+[not amplify]
+	1
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

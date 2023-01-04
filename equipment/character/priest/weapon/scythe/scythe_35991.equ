@@ -1,0 +1,174 @@
+#PVF_File
+
+[name]
+	`汲血之镰`
+
+[name2]
+	`Blood Smasher`
+
+[basic explain]
+	``
+
+[detail explain]
+	`施放[虎袭]时， 可以使自身增加3%%的攻击速度和移动速度、 5%%的施放速度， 效果持续4秒。
+攻击时， 有10%%的几率使敌人进入出血状态5秒； 出血状态下的敌人， 每0.5秒会受到200点伤害。 (若敌人高于Lv69， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+[黑暗权能]冷却时间 -3秒`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	65
+
+[physical attack]
+	46
+
+[magical attack]
+	46
+
+[attack speed]
+	80
+
+[stuck]
+	1
+
+[price]
+	110400
+
+[repair price]
+	92736
+
+[value]
+	88320
+
+[equipment physical attack]
+	621	574
+
+[equipment magical attack]
+	654	604
+
+[separate attack]
+	389	264
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	125	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/scythe.img`	56
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	13	1
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[item aura]
+	`physical attack`
+	`+`	30	200
+
+[if]
+	[cooltime]
+		7500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		10
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`bleeding`	69	2000
+[/then]
+
+[skill data up]
+	`[priest]`	125	`[all]`	`[cooltime]`	0	`+`	-3000
+[/skill data up]
+
+[if]
+	[cooltime]
+		4000
+	[event use skill]
+		`priest`	8
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		4000
+	[stat]
+		`attack speed`
+		`+`	30
+	[stat]
+		`move speed`
+		`+`	30
+	[stat]
+		`cast speed`
+		`+`	50
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

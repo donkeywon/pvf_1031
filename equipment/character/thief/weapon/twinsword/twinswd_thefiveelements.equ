@@ -1,0 +1,189 @@
+#PVF_File
+
+[name]
+	`五行双剑`
+
+[name2]
+	`The Five Elements Twin sword`
+
+[basic explain]
+	`攻击时， 有2%%的几率使武器附加属性， 效果持续30秒。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使武器附加光、 火、 暗、 冰四种属性中的一种。`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	42
+
+[attack speed]
+	-80
+
+[need material]
+	3285	1200
+
+[repair price]
+	93744
+
+[value]
+	89280
+
+[equipment physical attack]
+	583	534
+
+[equipment magical attack]
+	458	419
+
+[separate attack]
+	360	243
+
+[physical critical hit]
+	5
+
+[dark attack]
+	8
+
+[fire attack]
+	8
+
+[light attack]
+	8
+
+[water attack]
+	8
+
+[icon]
+	`Item/weapon/thief/twinswd.img`	75
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[thief]`
+
+[variation]
+	8	1
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		15000
+	[attack success]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			2
+		[duration]
+			30000
+		[elemental weapon]
+			`light`
+		[then probability]
+			25.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			2
+		[duration]
+			30000
+		[elemental weapon]
+			`dark`
+		[then probability]
+			25.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			2
+		[duration]
+			30000
+		[elemental weapon]
+			`water`
+		[then probability]
+			25.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			2
+		[duration]
+			30000
+		[elemental weapon]
+			`fire`
+		[then probability]
+			25.0
+	[/then]
+[/multiple then]
+
+[routing priority]
+	`thief`	1
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

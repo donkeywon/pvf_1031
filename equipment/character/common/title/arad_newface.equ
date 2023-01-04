@@ -1,0 +1,96 @@
+#PVF_File
+
+[name]
+	`阿拉德的新面孔(15天)`
+
+[name2]
+	``
+
+[explain]
+	`攻击时以100%%的机率给敌人300点附加伤害`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	450
+
+[custom animation]
+	`TitleAnimation/arad_newface.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	15
+
+[physical defense]
+	15
+
+[magical attack]
+	15
+
+[magical defense]
+	15
+
+[HP MAX]
+	200
+
+[MP MAX]
+	200
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[room list move speed rate]
+	0.1
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`+`	300
+[/then]
+
+[usable period]
+	15
+
+[icon mark]
+	`Item/IconMark.img`	64

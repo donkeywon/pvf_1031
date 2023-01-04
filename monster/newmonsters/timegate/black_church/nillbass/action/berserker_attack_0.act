@@ -1,0 +1,61 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/berseker_attack_0.ani`
+	[SUB ANI]
+		`../Animation/eff/attack_0_back.ani`	0	-1
+		`../Animation/eff/attack_0.ani`	0	1
+		`../Animation/eff/attack_0_dust.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`咳啊啊！！`	2	20
+		`呜！！！啊！！！`	2	20
+	[/SPEECH]
+	[SOUND]
+		`NGRASIA_ATK_01`	2
+		`DGUARDIAN_ATK_1`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		8
+	[END]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			800
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

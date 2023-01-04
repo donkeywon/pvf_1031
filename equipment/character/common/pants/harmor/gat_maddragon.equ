@@ -1,0 +1,113 @@
+#PVF_File
+
+[name]
+	`狂龙赫斯的龙骨胫甲`
+
+[name2]
+	`Mad Dragon's Backbone Leggings`
+
+[basic explain]
+	`攻击时， 有2%%的几率使所有队员进入加速状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使所有队员进入加速状态20秒； 加速状态下， 将增加15%%的移动速度和攻击速度。`
+
+[flavor text]
+	`疾走， 狂乱， 是我最喜欢的词语！  --范弗拉丁被问起喜欢的词语时说`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	29
+
+[physical defense]
+	27
+
+[magical attack]
+	21
+
+[price]
+	74400
+
+[repair price]
+	65620
+
+[value]
+	59520
+
+[equipment physical defense]
+	2800	2560
+
+[icon]
+	`Item/common/pants.img`	119
+
+[field image]
+	`Item/field_equip.img`	11
+
+[equipment type]
+	`[pants]`	21
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	34
+
+[weight]
+	2900
+
+[item group name]
+	`ha pants`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		35000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[stat]
+		`attack speed`
+		`+`	150
+	[stat]
+		`move speed`
+		`+`	150
+[/then]
+
+[set item master]
+	11317
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

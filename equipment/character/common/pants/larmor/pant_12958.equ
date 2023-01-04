@@ -1,0 +1,108 @@
+#PVF_File
+
+[name]
+	`克罗姆的生命护腿`
+
+[name2]
+	`Crom's Soak Mana Pants`
+
+[basic explain]
+	`攻击时， 有7%%的几率使自身和队员恢复1700点MP。`
+
+[flavor text]
+	`澎湃的魔力几乎要从体内溢出……看来只好将部分魔力转移到这里了……  --克罗姆`
+
+[grade]
+	65
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	33
+
+[physical defense]
+	15
+
+[magical attack]
+	62
+
+[need material]
+	3285	1500
+
+[repair price]
+	57330
+
+[value]
+	52000
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	2190	2010
+
+[icon]
+	`Item/common/pants.img`	242
+
+[field image]
+	`Item/field_equip.img`	6
+
+[equipment type]
+	`[pants]`	20
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	32
+
+[weight]
+	2500
+
+[item group name]
+	`la pants`
+
+[cool time]
+	10000
+
+[set item master]
+	10964
+
+[if]
+	[cooltime]
+		8000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[probability]
+		7
+	[restore]
+		`mp`
+		`+`	1700	0
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,182 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Finish.ani`
+	[SUB ANI]
+		`../Animation/effect/F_ShootEffect2.ani`	0	1
+		`../Animation/effect/F_ShootEffect1.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`你们这群混蛋！站住！`	3	100
+		`把你们打得屁滚尿流！`	10	50
+	[/SPEECH]
+	[SOUND]
+		`KURZEEP_DASH`	2
+		`KURJEEP_SKILL_03`	0
+		`KURZEEP_BAZOOKA_READY`	12
+		`KURJEEP_SKILL_02`	14
+		`KURZEEP_BAZOOKA_BURST`	14
+		`KURZEEP_BAZOOKA_BURST`	18
+		`KURZEEP_BAZOOKA_BURST`	22
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		6	7
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		14	14
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35574
+		[PARTICLE FILENAME]
+			`../Particle/roket2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			57	15	155
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35574
+		[PARTICLE FILENAME]
+			`../Particle/roket3.ptl`
+		[LEVEL]
+			0
+		[POS]
+			70	-25	158
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		18	18
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35574
+		[PARTICLE FILENAME]
+			`../Particle/roket1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			57	15	155
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35574
+		[PARTICLE FILENAME]
+			`../Particle/roket1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			70	-25	158
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		22	22
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35574
+		[PARTICLE FILENAME]
+			`../Particle/roket4.ptl`
+		[LEVEL]
+			0
+		[POS]
+			57	15	155
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35574
+		[PARTICLE FILENAME]
+			`../Particle/roket4.ptl`
+		[LEVEL]
+			0
+		[POS]
+			70	-25	158
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	100
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			-1000
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[LEFT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[RIGHT]
+[/BEHAVIOR]

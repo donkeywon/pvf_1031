@@ -1,0 +1,126 @@
+#PVF_File
+
+[name]
+	`强化 - 净化`
+
+[name2]
+	`Cure Upgrade`
+
+[basic explain]
+	`使一定范围内的所有队员消除异常状态。`
+
+[explain]
+	`使一定范围内的所有队员消除异常状态。
+ 技能Lv越高，可消除Lv越高的异常状态。`
+
+[basic explain ex]
+	`治愈队员后，增加一定范围内所有队员的异常状态抗性。`
+
+[explain ex]
+	`治愈队员后，增加一定范围内所有队员的异常状态抗性。
+每增加Lv1该技能时，异常状态抗性增加 : 5%%`
+
+[feature skill type]
+	1
+
+[special purchase cost]
+	1
+[/special purchase cost]
+
+[type]
+	`[passive]`
+
+[skill class]
+	0
+
+[maximum level]
+	10
+
+[growtype maximum level]
+	5	5	5	5	5	5
+
+[skill fitness growtype]
+	0	1	2	3	4
+[/skill fitness growtype]
+
+[required level]
+	50
+
+[required level range]
+	5
+
+[pre required skill]
+	52	5
+[/pre required skill]
+
+[icon]
+	`Character/Priest/Effect/SkillIcon.img`	266
+	`Character/Priest/Effect/SkillIcon.img`	267
+
+[static data]
+	900	400	13	4	0	6	5	11	2	9	15	8	16	7	1	3
+[/static data]
+
+[level info]
+	4
+	1	19	2000	5
+	1	29	4000	5
+	2	39	6000	5
+	2	49	8000	5
+	3	59	10000	5
+	3	69	12000	5
+	4	79	14000	5
+	4	89	16000	5
+	5	99	18000	5
+	5	109	20000	5
+	5	119	22000	5
+	6	129	24000	5
+	6	139	26000	5
+	7	149	28000	5
+	7	159	30000	5
+[/level info]
+
+[special level up]
+	-1	3
+	`+`	5
+[/special level up]
+
+[pvp]
+	[level info]
+		4
+		1	19	2000	0
+		1	29	4000	0
+		2	39	6000	0
+		2	49	8000	0
+		3	59	10000	0
+		3	69	12000	0
+		4	79	14000	0
+		4	89	16000	0
+		5	99	18000	0
+		5	109	20000	0
+		5	119	22000	0
+		6	129	24000	0
+		6	139	26000	0
+		7	149	28000	0
+		7	159	30000	0
+	[/level info]
+	[special level up]
+		-1	3
+		`+`	0
+	[/special level up]
+[/pvp]
+
+[level property]
+	1	99
+	`有效范围 : <int>px
+消除数量 : <int>个
+状态变化限制Lv : Lv<int>`
+	0	0	1.0
+	-1	0	1.0
+	-1	1	1.0
+[/level property]
+
+[skill preloading image]
+	`common/commoneffect/cure.img`
+	`common/commoneffect/curecast.img`
+[/skill preloading image]

@@ -1,0 +1,174 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	4
+[/dungeon]
+
+[type]
+	`[normal]`
+
+[greed]
+	`HH EE`
+
+[tile]
+	`Tile/ForestOver.til`
+	`Tile/ForestOver.til`
+	`Tile/ForestOver.til`
+	`Tile/ForestOver.til`
+	`Tile/ForestOver.til`
+	`Tile/ForestOver.til`
+	`Tile/ForestOver.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/far0.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/mid1.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	13	241	1553	239	1084	146	784	348
+
+[sound]
+	`M_MIRKWOOD`
+	`AMB_RAIN_01`
+[/sound]
+
+[animation]
+	`Animation/StoneHead.ani`	`[close]`	1119	412	0
+	`Animation/smallTree1.ani`	`[close]`	1029	508	0
+	`Animation/smallTree1.ani`	`[close]`	1282	464	0
+	`Animation/smallTree0.ani`	`[close]`	1466	455	0
+	`Animation/smallTree0.ani`	`[close]`	1540	496	0
+	`Animation/smallTree1.ani`	`[close]`	1394	482	0
+	`Animation/smallTree0.ani`	`[close]`	1228	452	0
+	`Animation/smallTree0.ani`	`[close]`	928	500	0
+	`Animation/Stone0.ani`	`[normal]`	973	273	0
+	`Animation/Stone1.ani`	`[normal]`	927	252	0
+	`Animation/Stone0.ani`	`[normal]`	1366	161	0
+	`Animation/Stone0.ani`	`[normal]`	1272	157	0
+	`Animation/Stone0.ani`	`[normal]`	1288	152	0
+	`Animation/Stone1.ani`	`[normal]`	1249	151	0
+	`Animation/Tree4.ani`	`[closeback]`	1434	134	0
+	`Animation/Tree1.ani`	`[closeback]`	1506	134	0
+	`Animation/Tree2.ani`	`[closeback]`	694	134	0
+	`Animation/Tree3.ani`	`[closeback]`	872	134	0
+	`Animation/Tree1.ani`	`[closeback]`	1289	134	0
+	`Animation/Tree1.ani`	`[closeback]`	464	134	0
+	`Animation/Tree0.ani`	`[closeback]`	272	134	0
+	`Animation/smallTree0.ani`	`[closeback]`	1298	143	0
+	`Animation/smallTree0.ani`	`[closeback]`	170	125	0
+	`Animation/smallTree0.ani`	`[closeback]`	284	129	0
+	`Animation/smallTree0.ani`	`[closeback]`	348	121	0
+	`Animation/smallTree0.ani`	`[closeback]`	229	121	0
+	`Animation/smallTree0.ani`	`[closeback]`	403	121	0
+	`Animation/smallTree1.ani`	`[closeback]`	103	140	0
+	`Animation/smallTree0.ani`	`[closeback]`	573	123	0
+	`Animation/smallTree1.ani`	`[closeback]`	480	135	0
+	`Animation/smallTree0.ani`	`[closeback]`	624	129	0
+	`Animation/smallTree0.ani`	`[closeback]`	751	124	0
+	`Animation/smallTree0.ani`	`[closeback]`	804	125	0
+	`Animation/smallTree1.ani`	`[closeback]`	930	143	0
+	`Animation/smallTree0.ani`	`[closeback]`	1390	138	0
+	`Animation/smallTree1.ani`	`[closeback]`	1344	158	0
+[/animation]
+
+[passive object]
+	3	200	260	400
+	4	200	260	0
+	221	822	292	0
+	221	525	340	0
+[/passive object]
+
+[monster]
+	3	0	6	580	207	0	1	1	`[fixed]`	`[normal]`
+	5	0	6	1285	220	0	1	1	`[fixed]`	`[normal]`
+	6	0	6	673	222	0	1	1	`[fixed]`	`[normal]`
+	2	0	5	1204	243	0	1	1	`[fixed]`	`[normal]`
+	5	0	6	379	245	0	1	1	`[fixed]`	`[normal]`
+	6	0	6	715	281	0	1	1	`[fixed]`	`[normal]`
+	2	0	5	1289	293	0	1	1	`[fixed]`	`[normal]`
+	3	0	6	603	326	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[special passive object]
+	221	495	182	0	1
+	`[monster]`	4	6	2	10	-1
+	221	849	207	0	1
+	`[monster]`	4	6	2	10	-1
+	1015	1038	216	0	3
+	`[monster]`	3	6	2	2	-1
+	`[monster]`	6	6	2	3	-1
+	`[monster]`	4	6	2	2	-1
+	221	480	223	0	2
+	`[monster]`	3	6	2	10	-1
+	`[item]`	3	-1	1	-1	-1
+	221	834	243	0	1
+	`[monster]`	4	6	2	10	-1
+	221	490	272	0	2
+	`[monster]`	3	5	2	10	-1
+	`[trap]`	2510	1	2	3	-1
+	1015	1053	314	0	3
+	`[monster]`	3	6	2	2	-1
+	`[monster]`	4	6	2	2	-1
+	`[monster]`	6	6	2	5	-1
+	221	508	316	0	1
+	`[monster]`	4	5	2	10	-1
+	221	853	329	0	2
+	`[monster]`	3	5	2	10	-1
+	`[trap]`	2210	1	1	4	-1
+	221	898	340	0	2
+	`[monster]`	3	6	2	10	-1
+	`[item]`	3	-1	1	-1	-1	
+[/special passive object]
+
+[event monster position]
+	402	285	0
+	574	254	0
+	661	254	0
+	757	183	0
+[/event monster position]
+
+[map name]
+	`PVP 无名`

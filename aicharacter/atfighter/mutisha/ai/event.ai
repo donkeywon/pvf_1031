@@ -1,0 +1,54 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[attack success]
+			1
+		[true]
+	
+		[think]
+			[my attack]
+				6
+			[true]
+		
+			[think]
+				[void]
+					`get random()`	0.0	100.0
+			
+				[think]
+					[last result]
+						`<=`	50.0
+					[true]
+				
+					[think]
+						[void]
+							`is the skill in cooltime()`	4
+						[true]
+						[import ai]
+							`chul.ai`
+						[false]
+						[import ai]
+							`bone.ai`
+					[/think]
+	[false]
+	[think]
+		[void]
+			`is the skill in cooltime()`	1
+		[true]
+		[import ai]
+			`bone.ai`
+		[false]
+		[import ai]
+			`chul.ai`
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+[/ai pattern]

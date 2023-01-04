@@ -1,0 +1,187 @@
+#PVF_File
+
+[width]
+	60	20
+
+[appear sound]
+	`R_TAU_TALK`
+
+[damage sound]
+	`R_TAU_DMG`
+
+[die sound]
+	`TAU_DIE`
+
+[ability category]
+	`[HP MAX]`	`*`	75000
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	170
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	170
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[category]
+	`[oneside move]`
+	`[tau]`
+[/category]
+
+[level]
+	15	19
+
+[move speed]
+	100	100
+
+[attack speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	180000	180000
+
+[freeze resistance]
+	100	100
+
+[stun resistance]
+	100	100
+
+[blind resistance]
+	100	100
+
+[stone resistance]
+	100	100
+
+[sleep resistance]
+	100	100
+
+[hold resistance]
+	100	100
+
+[slow resistance]
+	100	100
+
+[curse resistance]
+	100	100
+
+[confuse resistance]
+	100	100
+
+[fix direction]
+	`[left]`
+
+[initial target]
+	[MONSTER]
+		64597
+	[initial target Permanent]
+		0
+[/initial target]
+
+[sight]
+	800
+
+[targeting time term]
+	300
+
+[attack delay]
+	1000
+
+[superarmor on attack]
+	1	50
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[keep distance with target]
+	150
+
+[hp regen rate]
+	0.0	0.0
+
+[die effect]
+	0	10	0
+
+[face image]
+	`Monster/MonsterFace.img`	19
+
+[name]
+	`变异牛头巨兽`
+
+[lie frame]
+	2	3	2	3	4
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[proc action]
+	`Action/Proc.act`
+
+[attack action]
+	`Action/Attack2.act`
+	`Action/TackleReady.act`
+	`Action/TackleRun.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack2.atk`
+	``
+	`AttackInfo/Tackle2.atk`
+[/attack info]
+
+[cooltime]
+	9000	15000	15000
+[/cooltime]
+
+[ai pattern]
+	[normal]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/normal]
+	[expert]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/expert]
+	[master]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/master]
+	[king]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/king]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[base table]
+	`NewMonsters/AdvanceAltar/Enemy/Shauta/table/AdvanceAltarMonsterBaseParameter.tbl`

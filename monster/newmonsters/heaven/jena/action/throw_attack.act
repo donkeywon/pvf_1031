@@ -1,0 +1,118 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Throw_Attack.ani`
+	[SOUND]
+		`R_THIEF_THROW`	2
+		`R_THIEF_THROW`	6
+		`R_THIEF_THROW`	10
+		`R_THIEF_THROW`	14
+		`R_THIEF_THROW`	18
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		15	15
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		19	19
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8401
+		[PARTICLE FILENAME]
+			`../Particle/Dagger.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	25
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8401
+		[PARTICLE FILENAME]
+			`../Particle/DaggerDown.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	25
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8401
+		[PARTICLE FILENAME]
+			`../Particle/DaggerUp.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	25
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8401
+		[PARTICLE FILENAME]
+			`../Particle/DaggerDown2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	25
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8401
+		[PARTICLE FILENAME]
+			`../Particle/DaggerUp2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	25
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,128 @@
+#PVF_File
+
+[name]
+	`热血街行动队员`
+
+[category]
+	`[human]`
+	`[melee combat]`
+	`[close-carefully]`
+[/category]
+
+[ambient sound]
+	`VOLMIR_AMB`
+
+[appear sound]
+	`R_VOLMIR_MEET`
+
+[damage sound]
+	`R_VOLMIR_DMG`
+
+[die sound]
+	`R_VOLMIR_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+	`[HP MAX]`	`*`	120
+[/ability category]
+
+[level]
+	50	50
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	800	800
+
+[cast speed]
+	700	700
+
+[hit recovery]
+	700	700
+
+[weight]
+	75000	75000
+
+[warlike]
+	80
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[die effect]
+	0	16	0
+
+[face image]
+	`Monster/MonsterFace.img`	267
+
+[waiting action]
+	`action/Stay.act`
+
+[move action]
+	`action/move.act`
+
+[sit action]
+	`action/Sit.act`
+
+[damage action 1]
+	`action/Damage1.act`
+
+[damage action 2]
+	`action/Damage2.act`
+
+[down action]
+	`action/Down.act`
+
+[overturn action]
+	`action/Overturn.act`
+
+[attack action]
+	`action/attack2.act`
+	`action/JumpAttack.act`
+[/attack action]
+
+[last action]
+	`action/last.act`
+
+[attack info]
+	`attackinfo/Attack2.atk`
+	`attackinfo/JumpAttack.atk`
+[/attack info]
+
+[cooltime]
+	1500	5000
+[/cooltime]
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+[/ai pattern]
+
+[keep distance with target]
+	300
+
+[warlike]
+	70
+
+[intelligence]
+	70	70	3000
+
+[vision]
+	400
+
+[lie frame]
+	0	1	2	3	4

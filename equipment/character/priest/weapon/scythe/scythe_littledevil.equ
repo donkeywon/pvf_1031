@@ -1,0 +1,197 @@
+#PVF_File
+
+[name]
+	`小恶魔的狡诈战镰`
+
+[name2]
+	`Scissors of Little Devil`
+
+[basic explain]
+	``
+
+[detail explain]
+	`攻击时， 有4%%的几率使敌人进入失明状态3秒； 失明状态下， 减少90%%的视野和20%%的命中率。 (若敌人高于Lv60， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击失明状态下的敌人时， 可以增加5%%的攻击速度和移动速度， 效果持续20秒。
+攻击眩晕状态下的敌人时， 有100%%的几率使自身进入祝福状态20秒； 祝福状态下， 增加50点力量、 体力、 智力和精神。
+[回旋飞镰]投掷距离 -20%%
+[回旋飞镰]冷却时间 -1秒`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	42
+
+[magical attack]
+	42
+
+[attack speed]
+	80
+
+[stuck]
+	1
+
+[need material]
+	3285	1200
+
+[price]
+	0
+
+[repair price]
+	83328
+
+[value]
+	79360
+
+[equipment physical attack]
+	543	498
+
+[equipment magical attack]
+	572	524
+
+[separate attack]
+	360	243
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	113	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/scythe.img`	54
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	2	6
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		10000
+	[target active status]
+		`blind`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[if]
+	[cooltime]
+		10000
+	[target active status]
+		`stun`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[active status]
+		`bless`	60	50	50	50	50
+[/then]
+
+[skill data up]
+	`[priest]`	113	`[all]`	`[static]`	0	`%`	-20
+	`[priest]`	113	`[all]`	`[cooltime]`	0	`+`	-1000
+[/skill data up]
+
+[if]
+	[cooltime]
+		5000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[probability]
+		4
+	[active status]
+		`blind`	60	90	20
+[/then]
+
+[routing priority]
+	`priest`	3
+	`priest`	2
+	`priest`	4
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

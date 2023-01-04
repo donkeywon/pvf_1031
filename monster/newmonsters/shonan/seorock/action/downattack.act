@@ -1,0 +1,53 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/downattack.ani`
+	[SUB ANI]
+		`../animation/eff/SwingStart.ani`	0	1
+		`../animation/eff/Charge.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`呼~~~~~~~~~哈！！！`	2	30
+	[/SPEECH]
+	[SOUND]
+		`DGUARDIAN_BACK_1`	1
+		`GGANG_ATK_02_2`	3
+		`NENSU_CRASH`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		500	1500	500	220	0	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9939
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			100	10	0
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

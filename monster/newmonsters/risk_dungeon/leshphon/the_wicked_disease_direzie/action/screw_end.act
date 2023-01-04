@@ -1,0 +1,64 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/screw_stay.ani`
+	[SOUND]
+		`DIRE_HURRICANE_END`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time_aura2`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+	[ATTACK]
+		12	0
+	[OFF]
+	[TRIGGER]
+	[MOVE]
+		0
+	[RESET]
+	[TRIGGER]
+	[MOVE]
+		3
+	[ON]
+	[TRIGGER]
+	[MOVE]
+		4
+	[OFF]
+	[TRIGGER]
+	[MOVE]
+		6
+	[OFF]
+	[CHANGE DIRECTION BY TARGET]
+		1
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`move.act`
+	[CHANGE ACTION FILE]
+	[STAY]
+		`stay.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		`down.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`damage2.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`damage1.act`
+[/BEHAVIOR]

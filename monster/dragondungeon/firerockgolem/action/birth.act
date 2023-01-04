@@ -1,0 +1,94 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Birth/Birth_00_Fire_dodge.ani`
+	[SUB ANI]
+		`../Animation/Birth/Birth_03_BodyFire_02.ani`	0	-11
+		`../Animation/Birth/Birth_03_BodyFire_01.ani`	0	-10
+		`../Animation/Birth/Birth_Effect_boom_smoke3.ani`	0	-9
+		`../Animation/Birth/Birth_Effect_boom_smoke2.ani`	0	-8
+		`../Animation/Birth/Birth_Effect_boom_smoke1.ani`	0	-7
+		`../Animation/Birth/Birth_02_Body_OFF.ani`	0	-6
+		`../Animation/Birth/Birth_02_Body.ani`	0	-5
+		`../Animation/Birth/Birth_02_body_dodge.ani`	0	-4
+		`../Animation/Birth/Birth_00_headt_OFF.ani`	0	-3
+		`../Animation/Birth/Birth_00_headt.ani`	0	-2
+		`../Animation/Birth/Birth_01_headt_dodge.ani`	0	-1
+		`../Animation/Birth/Birth_00_headb_OFF.ani`	0	1
+		`../Animation/Birth/Birth_00_headb_ani.ani`	0	2
+		`../Animation/Birth/Birth_00_headb_dodge.ani`	0	3
+		`../Animation/Birth/Birth_Effect_head_birth.ani`	0	4
+		`../Animation/Birth/Birth_Effect_Shock_Dust1.ani`	0	5
+		`../Animation/Birth/Birth_Effect_Shock_Dust.ani`	0	6
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		13	13
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`Stay.act`
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54071
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			130	75	0
+		[USE MY BASEPOS]
+		[FIX DIRECTION]
+		[RIGHT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54072
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-130	75	0
+		[USE MY BASEPOS]
+		[FIX DIRECTION]
+		[RIGHT]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		3	1500
+	[FLASH SCREEN]
+		250	800	250	180	0	0	0
+[/BEHAVIOR]

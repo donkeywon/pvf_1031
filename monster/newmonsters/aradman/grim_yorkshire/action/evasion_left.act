@@ -1,0 +1,32 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/evasion.ani`
+	[SOUND]
+		`NUVIL_MOVE`	0
+		`R_YOKSHER_DMG`	0
+	[/SOUND]
+	[SPEECH]
+		`咳！`	0	5
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+		[RANDOM]
+			200	500
+		[RANDOM]
+			160	300	0
+		[USE MAP POS]
+	[/TELEPORT]
+[/BEHAVIOR]

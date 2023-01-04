@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Throw.ani`
+	[SUB ANI]
+		`../animation/dimension_cut.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`冲击一切！！`	1	30
+		`破坏一切！！`	1	30
+	[/SPEECH]
+	[SOUND]
+		`R_EXPENTOY_ATK`	3
+		`DARKSHOT_04`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10570
+		[PARTICLE FILENAME]
+			`../Particle/throw.ptl`
+		[LEVEL]
+			0
+		[POS]
+			160	0	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

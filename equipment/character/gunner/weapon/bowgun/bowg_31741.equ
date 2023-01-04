@@ -1,0 +1,210 @@
+#PVF_File
+
+[name]
+	`精良的苍穹袭击者`
+
+[name2]
+	`Assault of Blue Sky`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态。
+跳跃攻击时， 附加10%%的伤害。
+
+无法进行分解、 封装和合成。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态5秒； 但在决斗场中， 只能持续2.5秒。 (若敌人高于Lv62， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+跳跃攻击时， 附加10%%的伤害。 (在决斗场中 +5%%)
+
+无法进行分解、 封装和合成。`
+
+[grade]
+	65
+
+[rarity]
+	5
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	62
+
+[physical attack]
+	46
+
+[magical attack]
+	23
+
+[attack speed]
+	20
+
+[stuck]
+	-1
+
+[anti evil]
+	8
+
+[price]
+	0
+
+[repair price]
+	74088
+
+[value]
+	0
+
+[equipment physical attack]
+	450	401
+
+[equipment magical attack]
+	500	446
+
+[separate attack]
+	324	219
+
+[physical critical hit]
+	3
+
+[icon]
+	`item/weapon/gunner/bowgun.img`	39
+
+[field image]
+	`Item/field_weapon.img`	5
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	6	0
+
+[layer variation]
+	2790
+	`bowgunc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`bowgunb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	6	0
+
+[layer variation]
+	2790
+	`at_bowgunc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_bowgunb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BOWGUN_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`bowgun`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		7500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		2
+	[active status]
+		`stun`	62
+[/then]
+
+[if]
+	[my state]
+		`jump attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[pvp]
+	[if]
+		[cooltime]
+			7500
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			5000
+		[probability]
+			2
+		[active status]
+			`stun`	62
+	[/then]
+	[if]
+		[my state]
+			`jump attack`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	5
+	[/then]
+[/pvp]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]

@@ -1,0 +1,125 @@
+#PVF_File
+
+[name]
+	`幽魂魅影长裤`
+
+[name2]
+	``
+
+[basic explain]
+	`每12点暗属性抗性增加1点暗属性强化值。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[magical attack]
+	42
+
+[magical defense]
+	42
+
+[HP MAX]
+	100
+
+[MP MAX]
+	200
+
+[price]
+	68000
+
+[repair price]
+	57120
+
+[value]
+	54400
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	930	870
+
+[skill levelup]
+	`[gunner]`	105	1
+	`[at gunner]`	105	1
+	`[mage]`	111	1
+	`[mage]`	121	1
+	`[at mage]`	61	1
+	`[priest]`	110	1
+	`[swordman]`	96	1
+	`[fighter]`	98	1
+	`[at fighter]`	117	1
+[/skill levelup]
+
+[dark resistance]
+	12
+
+[light resistance]
+	-6
+
+[icon]
+	`Item/new_equipment/02_cloth/pants/cloth_pants.img`	10
+
+[field image]
+	`Item/field_equip.img`	1
+
+[equipment type]
+	`[pants]`	18
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	24
+
+[weight]
+	1100
+
+[item group name]
+	`cl pants`
+
+[cool time]
+	10000
+
+[set item master]
+	100050050
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`dark resistance`	12
+		`dark attack`
+		`+`	1	0
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

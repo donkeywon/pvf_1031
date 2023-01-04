@@ -1,0 +1,168 @@
+#PVF_File
+
+[name]
+	`(旧) 遗忘男爵`
+
+[name2]
+	`Jilt Jolt`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态。
+攻击时， 有2%%的几率使敌人进入灼伤状态。
+对领主的攻击力 +10%%
+对建筑型护甲的攻击力 +30%%`
+
+[detail explain]
+	`攻击时， 有2%%几率使敌人进入眩晕状态3秒。 (若敌人高于Lv40， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击时， 有2%%的几率使敌人进入灼伤状态7秒； 灼伤状态下的敌人， 每0.5秒受到59点伤害， 同时其周围的敌人每3秒受到178点伤害。 (若敌人高于Lv40， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+对领主的攻击力 +10%%
+对建筑型护甲的攻击力 +30%%`
+
+[flavor text]
+	`只要有了这个手炮， 什么样的敌人也不足为惧了， 哪怕是最强的深渊领主。`
+
+[grade]
+	45
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	40
+
+[physical attack]
+	48
+
+[price]
+	81000
+
+[repair price]
+	64800
+
+[value]
+	64800
+
+[equipment physical attack]
+	476	395
+
+[equipment magical attack]
+	286	237
+
+[separate attack]
+	259	173
+
+[icon]
+	`item/weapon/gunner/hcannon.img`	28
+
+[field image]
+	`Item/field_weapon.img`	4
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	2	6
+
+[layer variation]
+	2790
+	`hcanc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`hcanb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	2	6
+
+[layer variation]
+	2790
+	`at_hcanc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_hcanb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2800
+
+[item group name]
+	`hcannon`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		5000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[probability]
+		2
+	[active status]
+		`stun`	40
+[/then]
+
+[if]
+	[cooltime]
+		10500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[probability]
+		2
+	[active status]
+		`burn`	40	835	415	1	3000
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

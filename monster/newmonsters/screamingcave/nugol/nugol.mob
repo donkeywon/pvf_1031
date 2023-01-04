@@ -1,0 +1,211 @@
+#PVF_File
+
+[floating height]
+	0
+
+[width]
+	40	20
+
+[name]
+	`戮蛊成虫`
+
+[face image]
+	`Monster/MonsterFace.img`	180
+
+[die effect]
+	0	0	0
+
+[ambient sound]
+	`R_IMAGO`
+
+[attack sound]
+	``
+
+[appear sound]
+	``
+
+[damage sound]
+	`R_IMAGO_DMG`
+
+[die sound]
+	`IMAGO_DIE`
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	500
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	130
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	130
+[/ability category]
+
+[category]
+	`[insect]`
+	`[fort armor]`
+	`[melee combat]`
+	`[fixture]`
+[/category]
+
+[level]
+	54	58
+
+[fire resistance]
+	-20	-20
+
+[water resistance]
+	-20	-20
+
+[dark resistance]
+	0	0
+
+[light resistance]
+	0	0
+
+[slow resistance]
+	10	10
+
+[poison resistance]
+	10	10
+
+[stun resistance]
+	10	10
+
+[curse resistance]
+	10	10
+
+[move speed]
+	0	0
+
+[attack speed]
+	1500	1500
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	9600000	9600000
+
+[weight]
+	9500000	9500000
+
+[sight]
+	600
+
+[warlike]
+	400
+
+[think term]
+	900
+
+[vision]
+	1500
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[destination change term]
+	1000
+
+[keep distance with target]
+	250
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[lie frame]
+	2	3	2	3	4
+
+[item]
+[/item]
+
+[move action]
+	`Action/Move1.act`
+
+[waiting action]
+	`Action/Stay.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[last action]
+	`Action/Die.act`
+
+[attack action]
+	`Action/Disappear.act`
+	`Action/Appear.act`
+	`Action/Move1.act`
+	`Action/Appear2.act`
+	`Action/SpineOut.act`
+	`Action/SpineSpin.act`
+	`Action/Disappear2.act`
+	``
+	``
+	``
+	`Action/LaserSpit.act`
+	``
+	``
+	`Action/Stay.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Spine.atk`
+	`AttackInfo/Spine.atk`
+	`AttackInfo/Spine.atk`
+	`AttackInfo/Spine.atk`
+	`AttackInfo/Spine.atk`
+	`AttackInfo/Spine.atk`
+	`AttackInfo/Spine.atk`
+	`AttackInfo/Spine.atk`
+	`AttackInfo/Eat.atk`
+	`AttackInfo/Eat.atk`
+	`AttackInfo/Spine.atk`
+	`AttackInfo/Spine.atk`
+	`AttackInfo/Eat.atk`
+	``
+[/attack info]
+
+[cooltime]
+	7000	5000	5000	5000	5000	5000	5000	5000	5000	5000	5000	5000	5000	0
+[/cooltime]
+
+[reflection object]
+	0	0	1	0	2	0	3	0	4	0	5	100	6	0	7	0	8	0	9	0	10	0	11	0	12	0	13	0
+[/reflection object]
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

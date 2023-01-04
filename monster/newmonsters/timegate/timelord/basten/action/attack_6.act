@@ -1,0 +1,52 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack_6_0.ani`
+	[SUB ANI]
+		`../Animation/Attack_6_3.ani`	0	1
+		`../Animation/Attack_6_4.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`BASTEN_SKILL_06_1`	0
+		`BASTEN_HOURGLASS`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			15002
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<=]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			15002
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+		[RANDOM]
+			-100	100	50	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

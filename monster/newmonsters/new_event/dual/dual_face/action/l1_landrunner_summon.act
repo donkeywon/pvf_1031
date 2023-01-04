@@ -1,0 +1,54 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/L1_LandRunner_Summon.ani`
+	[SUB ANI]
+		`../Animation/L1_LandRunner_Summon_eff.ani`	0	1
+		`../Animation/eff/Eye_eff1.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`AGENT_B_LIGHT`	2
+	[/SOUND]
+	[SPEECH]
+		`危险！危险！招唤搭做机体的机器人！`	1	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61642
+		[LEVEL]
+			1
+		[POS]
+			55	-1	20
+		[NO EFFECT]
+		[JUMP OUT]
+			650	0	50
+		[RIGHT]
+		[RANDOM]
+		[USE OBJECT ZPOS]
+		[COLLISION GROUP]
+			2	0	1
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

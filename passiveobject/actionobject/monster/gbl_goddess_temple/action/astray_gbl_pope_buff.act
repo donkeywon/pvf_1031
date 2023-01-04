@@ -1,0 +1,150 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/astray_GBL_pope_buff.ani`
+	[SUB ANI]
+		`../animation/astray_GBL_pope_buff_effect.ani`	0	-10
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			63022
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			800
+	[/CHECKUP]
+	[IF]
+		`time`	
+		[+]
+			1500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			63022
+		[/IS INDEX]
+		[DISTANCE]
+		[>]
+			800
+	[/CHECKUP]
+	[IF]
+		`time`	
+		[+]
+			1500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			59019
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<=]
+		0
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			63022
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			8000
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			59019
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<=]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		14000	
+		[hp max]
+		[%]
+			350.0
+		[physical defense]
+		[%]
+			350.0
+		[equipment physical defense]
+		[%]
+			350.0
+		[hit recovery]
+		[%]
+			100.0
+	[/APPENDAGE]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DELETE APPENDAGE]
+		14000	
+		[hp max]
+		[%]
+			350.0
+		[physical defense]
+		[%]
+			350.0
+		[equipment physical defense]
+		[%]
+			350.0
+		[hit recovery]
+		[%]
+			100.0
+	[/DELETE APPENDAGE]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

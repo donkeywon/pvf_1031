@@ -1,0 +1,142 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Server/chair_server2_dance.ani`
+	[SUB ANI]
+		`../Animation/Server/chair_server1_dance.ani`	0	1
+		`../Animation/Server/chair_server3_dance.ani`	0	2
+		`../Animation/Wagon_Back/Wagon_Back_dance.ani`	0	3
+		`../Animation/chair_dance.ani`	0	4
+		`../Animation/Stick/Stick_chair_dance.ani`	0	5
+		`../Animation/Server/chair_server4_dance.ani`	0	6
+		`../Animation/Server/chair_server5_dance.ani`	0	7
+		`../Animation/Server/chair_server6_dance.ani`	0	8
+		`../Animation/Wagon_Front/Wagon_Front_dance.ani`	0	9
+	[/SUB ANI]
+	[SPEECH]
+		`治疗之舞！护驾~我的仆人！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`summontime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[SET GRABABLE]
+		0
+	[TRIGGER]
+		2
+	[ON]
+	[TRIGGER]
+		3
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61810
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-200	200
+		[RANDOM]
+			-80	80	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`summontime`	
+		[+]
+			20000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[CHECKUP]
+		[TRIGGER CHECK]
+		[ATTACK]
+			7	0
+		[ON]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		25
+	[%]
+	[TRIGGER]
+		2
+	[OFF]
+	[TRIGGER]
+		3
+	[OFF]
+	[SET GRABABLE]
+		1
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`summontime`	
+		[+]
+			10000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[CHECKUP]
+		[TRIGGER CHECK]
+		[ATTACK]
+			7	0
+		[OFF]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		2
+	[OFF]
+	[TRIGGER]
+		3
+	[OFF]
+	[SET GRABABLE]
+		1
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]

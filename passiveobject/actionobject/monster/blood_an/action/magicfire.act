@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/MagicFire.ani`
+	[SUB ANI]
+		`../Animation/BackEffect/D_MagicFire.ani`	0	-2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8717
+		[PARTICLE FILENAME]
+			`../Particle/ShootingStarPath.ptl`
+		[LEVEL]
+			0
+		[POS]
+			150	0	100
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

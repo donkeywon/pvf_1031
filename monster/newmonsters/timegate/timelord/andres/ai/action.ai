@@ -1,0 +1,87 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	8000.0	8000.0	5000.0	5000.0
+			`all`
+			`passive object`	16080
+	
+		[think]
+			[last result]
+				`<=`	14.0
+			[true]
+		
+			[think]
+				[void]
+					`number of in attack area()`	8000.0	8000.0	5000.0	5000.0
+					`friend`
+					`apc`	-1
+			
+				[think]
+					[last result]
+						`>=`	1.0
+					[true]
+				
+					[think]
+						[void]
+							`is the skill in cooltime()`	6
+						[true]
+					
+						[think]
+							[void]
+								`is the skill in cooltime()`	1
+							[true]
+							[return]
+								-1
+							[false]
+							[return]
+								1
+						[/think]
+	[false]
+	[return]
+		6
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is the skill in cooltime()`	1
+		[true]
+		[return]
+			-1
+		[false]
+		[return]
+			1
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	8000.0	8000.0	5000.0	5000.0
+			`friend`
+			`apc`	-1
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	6
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					6
+			[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

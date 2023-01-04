@@ -1,0 +1,89 @@
+#PVF_File
+
+[set name]
+	`冽风之痕  套装`
+
+[piece set ability]
+	3	
+	[if]
+		[module]
+			`[dungeon type]`
+		[/module]
+		[use skill]
+			`swordman`	38
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			30000
+		[stat]
+			`move speed`
+			`+`	50
+		[stat]
+			`attack speed`
+			`+`	50
+		[stat]
+			`cast speed`
+			`+`	50
+	[/then]
+	[skill data up]
+		`[swordman]`	8	`[dungeon type]`	`[static]`	0	`%`	30
+		`[swordman]`	8	`[dungeon type]`	`[cooltime]`	0	`%`	-25
+	[/skill data up]
+	[parameter basic explain]
+		`[三段斩]冷却时间 -25%%
+[三段斩]移动距离 +30%%
+
+施放[破极兵刃]时， 可以使自身增加5%%的攻击速度、 移动速度和施放速度， 效果持续30秒。`
+[/piece set ability]
+
+[piece set ability]
+	6	
+	[skill data up]
+		`[swordman]`	68	`[dungeon type]`	`[static]`	0	`%`	30
+		`[swordman]`	68	`[dungeon type]`	`[static]`	2	`%`	-40
+		`[swordman]`	68	`[dungeon type]`	`[cooltime]`	0	`%`	-20
+		`[swordman]`	72	`[dungeon type]`	`[static]`	1	`+`	1
+		`[swordman]`	72	`[dungeon type]`	`[static]`	2	`%`	20
+		`[swordman]`	72	`[dungeon type]`	`[static]`	4	`%`	20
+	[/skill data up]
+	[parameter basic explain]
+		`[破军升龙击]多段攻击间隔 -40%%
+[破军升龙击]移动距离 +30%%
+[破军升龙击]冷却时间 -20%%
+[猛龙断空斩]多段攻击次数 +1
+[猛龙断空斩]移动距离 +20%%`
+[/piece set ability]
+
+[piece set ability]
+	9	
+	[skill data up]
+		`[swordman]`	73	`[dungeon type]`	`[static]`	1	`+`	10
+		`[swordman]`	73	`[dungeon type]`	`[static]`	2	`+`	10
+		`[swordman]`	73	`[dungeon type]`	`[static]`	3	`+`	10
+		`[swordman]`	73	`[dungeon type]`	`[static]`	4	`+`	10
+		`[swordman]`	73	`[dungeon type]`	`[static]`	5	`+`	10
+		`[swordman]`	73	`[dungeon type]`	`[static]`	6	`+`	10
+		`[swordman]`	73	`[dungeon type]`	`[static]`	7	`+`	10
+		`[swordman]`	73	`[dungeon type]`	`[static]`	8	`+`	10
+		`[swordman]`	73	`[dungeon type]`	`[static]`	11	`+`	10
+		`[swordman]`	73	`[dungeon type]`	`[static]`	12	`+`	10
+		`[swordman]`	73	`[dungeon type]`	`[static]`	13	`%`	20
+		`[swordman]`	73	`[dungeon type]`	`[static]`	14	`%`	20
+		`[swordman]`	73	`[dungeon type]`	`[static]`	16	`+`	2
+		`[swordman]`	73	`[dungeon type]`	`[static]`	17	`+`	2
+		`[swordman]`	73	`[dungeon type]`	`[level]`	1	`%`	50
+		`[swordman]`	73	`[dungeon type]`	`[level]`	2	`%`	50
+		`[swordman]`	73	`[dungeon type]`	`[skill consume item]`	0	`+`	1
+		`[swordman]`	15	`[dungeon type]`	`[level]`	11	`%`	50
+		`[swordman]`	73	`[dungeon type]`	`[static]`	25	`+`	20
+		`[swordman]`	73	`[dungeon type]`	`[static]`	26	`+`	20
+		`[swordman]`	73	`[dungeon type]`	`[static]`	27	`+`	20
+		`[swordman]`	73	`[dungeon type]`	`[static]`	28	`+`	20
+	[/skill data up]
+	[parameter basic explain]
+		`[幻影剑舞]基本攻击次数 +10
+若[太刀精通]或[光剑精通]达到Lv7以上， [幻影剑舞]基本攻击次数 +20； 剑气多段攻击次数 +2； 剑气攻击力 +50%%； 剑气攻击范围 +20%%； 无色小晶块消耗量 +1
+若[钝器精通]达到Lv7以上， [幻影剑舞]冲击波攻击力 +50%%`
+[/piece set ability]

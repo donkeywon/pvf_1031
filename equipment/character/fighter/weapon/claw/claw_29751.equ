@@ -1,0 +1,167 @@
+#PVF_File
+
+[name]
+	`精良的太攀蛇毒牙`
+
+[name2]
+	`Poison Fang of Taipan`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入中毒状态， 并增加自身的物理暴击率。
+
+无法进行分解、 封装和合成。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入中毒状态12秒， 中毒状态下的敌人， 每0.5秒受到40点伤害； 并且还会使自身增加20%%的物理暴击率， 效果持续12秒。 (若敌人高于Lv62， 则减少进入异常状态的几率； 反之， 则增加几率)
+
+无法进行分解、 封装和合成。`
+
+[grade]
+	65
+
+[rarity]
+	5
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	62
+
+[physical attack]
+	46
+
+[magical attack]
+	23
+
+[anti evil]
+	8
+
+[price]
+	0
+
+[repair price]
+	74088
+
+[value]
+	0
+
+[equipment physical attack]
+	572	548
+
+[equipment magical attack]
+	572	548
+
+[separate attack]
+	324	219
+
+[physical critical hit]
+	3
+
+[icon]
+	`Item/weapon/fighter/claw.img`	43
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	6	0
+
+[layer variation]
+	2790
+	`clawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	6	0
+
+[layer variation]
+	2150
+	`at_clawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_clawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_clawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		18000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		12000
+	[probability]
+		2
+	[active status]
+		`poison`	62	1250
+	[target]
+		`myself`	-1
+	[stat]
+		`physical critical hit rate`
+		`+`	20
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]

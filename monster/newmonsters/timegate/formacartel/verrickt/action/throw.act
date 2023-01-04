@@ -1,0 +1,37 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/throw.ani`
+	[SUB ANI]
+		`../animation/throw_w2.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`失败对我来说就是耻辱！`	2	100
+	[/SPEECH]
+	[SOUND]
+		`VERRICKTM_SKILL_05`	1
+		`VERRICKTM_SAND`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10522
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			90	0	70
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

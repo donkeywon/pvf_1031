@@ -1,0 +1,67 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[command]
+			`==`	1
+		[true]
+		[return]
+			2
+		[false]
+	
+		[think]
+			[void]
+				`is target in attack area()`	300.0	300.0	30.0	30.0
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	0
+				[true]
+			
+				[think]
+					[void]
+						`is target in attack area()`	100.0	100.0	30.0	30.0
+					[true]
+				
+					[think]
+						[void]
+							`is the skill in cooltime()`	4
+						[true]
+						[return]
+							-1
+						[false]
+					
+						[think]
+							[void]
+								`check random()`	30	100
+							[true]
+							[return]
+								4
+							[false]
+							[return]
+								-1
+						[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[false]
+	[think]
+		[void]
+			`check random()`	30	100
+		[true]
+		[return]
+			0
+		[false]
+		[return]
+			-1
+	[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+[/ai pattern]

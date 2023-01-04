@@ -1,0 +1,116 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`enemy number of in attack area()`	8000.0	8000.0	2000.0	2000.0
+	
+		[think]
+			[last result]
+				`>`	1.0
+			[true]
+		
+			[think]
+				[void]
+					`number of in attack area()`	350.0	0.0	40.0	40.0
+					`all`
+					`passive object`	16109
+			
+				[think]
+					[last result]
+						`>=`	1.0
+					[true]
+				
+					[think]
+						[check key cooltime]
+							`bomb_C`
+						[true]
+						[return]
+							-1
+						[false]
+						[return]
+							1
+					[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	350.0	0.0	40.0	40.0
+			`all`
+			`passive object`	16110
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`bomb_C`
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					1
+			[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	350.0	0.0	40.0	40.0
+			`all`
+			`passive object`	16109
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`bomb_C`
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					1
+			[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	350.0	0.0	40.0	40.0
+			`all`
+			`passive object`	16110
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`bomb_C`
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					1
+			[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

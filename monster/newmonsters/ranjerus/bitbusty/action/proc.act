@@ -1,0 +1,25 @@
+#PVF_File
+
+[TRIGGER]
+	[ON CREATE OBJECT]
+	[WHICH]
+	[CREATE OBJECT]
+	[CHECKUP]
+		[IS INDEX]
+			8374
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		-20
+	[%]
+[/BEHAVIOR]

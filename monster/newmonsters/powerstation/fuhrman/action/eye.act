@@ -1,0 +1,76 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/eye.ani`
+	[SUB ANI]
+		`../animation/eye_e.ani`	0	1
+		`../animation/eye_e1.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`哈哈~每一块碎片都是我！`	9	50
+		`把你也打成碎片！`	9	50
+	[/SPEECH]
+	[SOUND]
+		`R_FUHRMAN_SKILL_02_1`	1
+		`FUHRMAN_EYES`	5
+		`R_FUHRMAN_SKILL_02_2`	8
+		`FUHRMAN_EYES_EXP`	9
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		3000	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		3
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[FRONTSIDE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[stun]
+		100	70	3000
+	[RESTORE]
+	[HP]
+		-20
+	[%]
+	[CHARACTER COOLTIME RESET]
+		0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[TARGET]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		100	100	100	255	255	255	255
+[/BEHAVIOR]

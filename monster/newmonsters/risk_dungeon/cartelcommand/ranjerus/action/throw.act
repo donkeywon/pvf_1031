@@ -1,0 +1,51 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/throw.ani`
+	[SOUND]
+		`R_LANZELUCE_SKILL_04`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35187
+		[PARTICLE FILENAME]
+			`../Particle/bow.ptl`
+		[LEVEL]
+			0
+		[POS]
+			140	0	60
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35187
+		[PARTICLE FILENAME]
+			`../Particle/bow.ptl`
+		[LEVEL]
+			0
+		[POS]
+			140	0	100
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

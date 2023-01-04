@@ -1,0 +1,40 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Mimic_Box.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	0	0	0	0	1	0	1
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61479
+		[LEVEL]
+			67
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[USE TARGET TEAM]
+		[DIRECTION]
+		[NEUTRAL]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+	[DESTROY]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

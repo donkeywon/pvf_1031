@@ -1,0 +1,196 @@
+#PVF_File
+
+[name]
+	`帝国智慧[租借活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时MP 70%% 以上时，30秒内自己的力量增加40、智力增加60 
+攻击时以 3%% 机率的15秒内MP每分钟恢复60 
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。
+只能在异界地下城使用。`
+
+[flavor text]
+	`真奇怪.. 神力充分时反而变强`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	65
+
+[physical attack]
+	46
+
+[magical attack]
+	23
+
+[attack speed]
+	20
+
+[stuck]
+	-1
+
+[price]
+	110400
+
+[repair price]
+	92736
+
+[value]
+	88320
+
+[equipment physical attack]
+	515	469
+
+[equipment magical attack]
+	572	521
+
+[separate attack]
+	389	264
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[gunner]`	33	2
+	`[at gunner]`	33	2
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/bowgun.img`	59
+
+[field image]
+	`Item/field_weapon.img`	5
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	12	2
+
+[layer variation]
+	2790
+	`bowgunc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`bowgunb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	12	2
+
+[layer variation]
+	2790
+	`at_bowgunc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_bowgunb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BOWGUN_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`bowgun`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[probability]
+		3
+	[stat]
+		`mp regen rate`
+		`+`	20
+[/then]
+
+[if]
+	[cooltime]
+		45000
+	[attack success]
+		1
+	[stat change]
+		`mp`
+		`>`
+		`%`	70
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[stat]
+		`physical attack`
+		`+`	40
+	[stat]
+		`magical attack`
+		`+`	60
+[/then]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

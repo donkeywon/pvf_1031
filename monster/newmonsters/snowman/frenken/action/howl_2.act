@@ -1,0 +1,76 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Howl2.ani`
+	[SPEECH]
+		`电源恢复！！！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		30000	
+		[physical attack]
+		[+]
+			30.0
+		[physical defense]
+		[%]
+			30.0
+		[attack speed]
+		[%]
+			30.0
+		[move speed]
+		[%]
+			30.0
+		[hit recovery]
+		[%]
+			30.0
+	[/APPENDAGE]
+	[SHAKING]
+		4	1500
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		3000	0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[COLOR CHANGE EFFECT]
+		[EFFECT RED START]
+			0
+		[EFFECT RED END]
+			255
+		[CHANGE SIZE START]
+			100
+		[CHANGE SIZE END]
+			150
+		[CHANGE TIME]
+			3000
+		[LIFE TIME]
+			30000
+	[/COLOR CHANGE EFFECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]

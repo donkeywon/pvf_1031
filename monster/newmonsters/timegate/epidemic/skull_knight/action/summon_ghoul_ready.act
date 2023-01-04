@@ -1,0 +1,57 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/summon_ghoul_ready.ani`
+	[SUB ANI]
+		`../animation/effect/summon_ghoul_ready_e3.ani`	0	1
+		`../animation/effect/summon_ghoul_ready_e2.ani`	0	2
+		`../animation/effect/summon_ghoul_ready_e1.ani`	0	3
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			63032
+		[/IS INDEX]
+		[CHECKED NO]
+		[>=]
+			4
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			63032
+		[/IS INDEX]
+		[CHECKED NO]
+		[<]
+			4
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		10
+	[NOW]
+[/BEHAVIOR]

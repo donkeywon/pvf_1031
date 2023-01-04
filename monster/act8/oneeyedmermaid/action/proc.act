@@ -1,0 +1,25 @@
+#PVF_File
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			8768
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			1000
+	[/CHECKUP]
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		10
+	[%]
+[/BEHAVIOR]

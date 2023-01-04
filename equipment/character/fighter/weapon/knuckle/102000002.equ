@@ -1,0 +1,191 @@
+#PVF_File
+
+[name]
+	`明亮克雷伊斯[租借活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`施展念兽：龙虎啸时30秒内智力增加30
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。
+只能在异界地下城使用。`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	65
+
+[magical attack]
+	46
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[price]
+	110400
+
+[repair price]
+	92736
+
+[value]
+	88320
+
+[equipment physical attack]
+	621	574
+
+[equipment magical attack]
+	752	695
+
+[separate attack]
+	389	264
+
+[skill levelup]
+	`[fighter]`	15	1
+	`[fighter]`	16	1
+	`[fighter]`	79	1
+	`[fighter]`	90	1
+	`[at fighter]`	15	1
+	`[at fighter]`	16	1
+	`[at fighter]`	79	1
+	`[at fighter]`	90	1
+[/skill levelup]
+
+[light attack]
+	8
+
+[icon]
+	`Item/weapon/fighter/knuckle.img`	69
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	10	2
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	10	2
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[if]
+	[use skill]
+		`fighter`	79
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[stat]
+		`magical attack`
+		`+`	30
+[/then]
+
+[if]
+	[use skill]
+		`at fighter`	79
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[stat]
+		`magical attack`
+		`+`	30
+[/then]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

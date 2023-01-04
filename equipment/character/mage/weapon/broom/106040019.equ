@@ -1,0 +1,156 @@
+#PVF_File
+
+[name]
+	`哥布林之须`
+
+[name2]
+	``
+
+[basic explain]
+	`穿戴后， 每30秒使自身恢复800点HP。`
+
+[grade]
+	74
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	70
+
+[magical attack]
+	49
+
+[attack speed]
+	60
+
+[cast speed]
+	60
+
+[move speed]
+	30
+
+[price]
+	133200
+
+[repair price]
+	111888
+
+[value]
+	106560
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	704	654
+
+[equipment magical attack]
+	774	719
+
+[separate attack]
+	420	284
+
+[skill levelup]
+	`[mage]`	95	2
+	`[mage]`	103	2
+	`[mage]`	85	2
+	`[creator mage]`	133	2
+	`[creator mage]`	136	2
+	`[creator mage]`	249	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/mage/broom/broom.img`	72
+
+[field image]
+	`Item/field_weapon.img`	10
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[mage]`
+
+[variation]
+	25	0
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	25	0
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BROOM_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`broom`
+
+[cool time]
+	10000
+
+[required skill]
+	91
+
+[if]
+	[time]
+		30000	1	30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`hp`
+		`+`	800	0
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

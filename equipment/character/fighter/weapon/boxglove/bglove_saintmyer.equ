@@ -1,0 +1,161 @@
+#PVF_File
+
+[name]
+	`(旧) 贤者拳套`
+
+[name2]
+	`Saint Myer`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态2秒。 (若敌人高于Lv34， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	36
+
+[rarity]
+	2
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	34
+
+[physical attack]
+	24
+
+[attack speed]
+	100
+
+[price]
+	57600
+
+[repair price]
+	46080
+
+[value]
+	46080
+
+[equipment physical attack]
+	340	323
+
+[equipment magical attack]
+	308	293
+
+[separate attack]
+	161	107
+
+[skill levelup]
+	`[fighter]`	6	2
+	`[fighter]`	4	1
+	`[at fighter]`	6	2
+	`[at fighter]`	4	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/bglove.img`	8
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	0	8
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	0	8
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		2
+	[active status]
+		`stun`	34
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/cut_turn.ani`
+	[SUB ANI]
+		`../animation/weapon/cut_turn.ani`	0	1
+		`../animation/weapon/under2_1.ani`	0	2
+		`../animation/weapon/upper1_1.ani`	0	3
+	[/SUB ANI]
+	[SPEECH]
+		`响彻大地！`	1	50
+	[/SPEECH]
+	[SOUND]
+		`WEAPONM_ATK_05_1`	1
+		`KAIGEN_SPEAR_02`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]

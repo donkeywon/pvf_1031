@@ -1,0 +1,79 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	8000.0	8000.0	2000.0	2000.0
+			`all`
+			`summon`	56455
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+			[import ai]
+				`Action_main2.ai`
+			[false]
+		
+			[think]
+				[void]
+					`number of in attack area()`	8000.0	8000.0	2000.0	2000.0
+					`all`
+					`passive object`	9282
+			
+				[think]
+					[last result]
+						`>=`	26.0
+					[true]
+				
+					[think]
+						[check key cooltime]
+							`atk1`
+						[true]
+						[import ai]
+							`Action_main.ai`
+						[false]
+					
+						[think]
+							[my state]
+								4
+							[true]
+							[return]
+								-1
+							[false]
+							[return]
+								1
+						[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	8000.0	8000.0	2000.0	2000.0
+			`all`
+			`passive object`	9282
+	
+		[think]
+			[last result]
+				`>=`	13.0
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	86
+				[true]
+				[import ai]
+					`Action_main.ai`
+				[false]
+				[return]
+					2
+			[/think]
+	[false]
+	[import ai]
+		`Action_main.ai`
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

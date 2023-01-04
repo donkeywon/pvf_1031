@@ -1,0 +1,60 @@
+#PVF_File
+
+[ui controls]
+	`[board image]`
+	`500`	1	1	1
+	`Interface/WindowCommon.img`	11	230	105	213	214	215	216	217	218	219	220	221
+[/ui controls]
+
+[ui controls]
+	`[text]`
+	`505`	4	4	1
+	`1. 一天最多可领取四次。
+2. 领取后未使用之前,无法再领取同项物品
+3. 在地下城中无法领取。
+4. 每日上午六点重置。`	9	-1	220	0	0	0	0	230	200	155	
+	[parent]
+		`500`
+[/ui controls]
+
+[ui controls]
+	`[text]`
+	`501`	140	4	1
+	`1. 在GCA网吧登入时可租用网吧连线期间可使用的强力神器武器！
+2. 租用的武器不可交易/提炼/强化/增幅/分解，下线时消失。
+3. 在网吧登录的期间，随时可以再次领取武器。`	9	-1	220	0	0	0	0	230	200	155	
+	[parent]
+		`500`
+[/ui controls]
+
+[ui controls]
+	`[text]`
+	`510`	0	75	1
+	`目前无法利用。`	9	-1	220	1	0	0	0	230	200	155	
+	[parent]
+		`500`
+[/ui controls]
+
+[ui controls]
+	`[image]`
+	`503`	-1	70	1
+	`Interface2/event/RentalService/Event_pc.img`	1	2	
+	[parent]
+		`500`
+[/ui controls]
+
+[ui controls]
+	`[control]`
+	`502`	17	4	0	2	0	0	
+	[parent]
+		`503`
+[/ui controls]
+
+[ui controls]
+	`[text button]`
+	`504`	175	9	2
+	`Interface/WindowCommon.img`
+	`决定`	4	12	13	14	15	
+	[parent]
+		`503`
+[/ui controls]

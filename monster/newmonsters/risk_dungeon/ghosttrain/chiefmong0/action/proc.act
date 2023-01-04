@@ -1,0 +1,44 @@
+#PVF_File
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[<=]
+			50
+		[%]
+	[/CHECKUP]
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[ATTACK]
+		1	1
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[CHECK TIME]
+		3000
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[>=]
+			100
+	[/CHECKUP]
+	[DO PROC BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE FLOATING HEIGHT]
+		20
+[/BEHAVIOR]

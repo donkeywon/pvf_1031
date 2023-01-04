@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/pirate_ship_fire.ani`
+	[SOUND]
+		`BOMB_01`	0
+		`BOMB_DROP`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[WHICH]
+	[CHARACTER]
+	[GET TARGET]
+		1
+	[DISTANCE]
+	[LOW]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8755
+		[PARTICLE FILENAME]
+			`../particle/bomb.ptl`
+		[LEVEL]
+			60
+		[POS]
+			0	0	400
+		[WARNING MARK]
+			0	0	80	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

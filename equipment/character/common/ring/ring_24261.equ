@@ -1,0 +1,108 @@
+#PVF_File
+
+[name]
+	`罪恶之灵 - 右眼`
+
+[name2]
+	`找不到代码name2_24261`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入石化状态。
+无法进行分解。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入石化状态5秒， 但在决斗场中， 只能持续2秒； 石化状态解除时， 可以使敌人受到950点伤害。 (若敌人高于Lv29， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+无法进行分解。`
+
+[grade]
+	29
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	25
+
+[physical attack]
+	25
+
+[magical attack]
+	20
+
+[price]
+	34800
+
+[repair price]
+	29232
+
+[value]
+	27840
+
+[equipment magical defense]
+	1152	992
+
+[icon]
+	`Item/common/ring.img`	74
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	21
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		7500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[reduce duration to human armor at pvp module]
+		60
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`stone`	29	950
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[routing priority]
+[/routing priority]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,320 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Grap.ani`
+	[SOUND]
+		`ZKFATMAN_SKILL`	2
+		`SMASHER_CATCH`	3
+	[/SOUND]
+	[SPEECH]
+		`去死吧~~~`	0	30
+		`不自量力~`	6	10
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		11
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ACTIVE ATTACKSUCCESS]
+	[CHECKUP]
+		[IS NOT TARGET STATE]
+			9
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ACTIVE ATTACKSUCCESS]
+	[CHECKUP]
+		[IS NOT TARGET STATE]
+			9
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		12
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			`throw`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+	[SET POS FORCE]
+		[X START]
+			110
+		[Y START]
+			0
+		[Z START]
+			2
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+		[MOVE UNIFORM]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[IF]
+		`throw`	
+		[=]
+			0
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			35309
+		[/IS INDEX]
+		[FRONTSIDE]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		5
+	[DO BEHAVIOR]
+	[ME]
+		8
+	[DO BEHAVIOR]
+	[LAST ACTIVE ATTACKSUCCESS]
+		6
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			35309
+		[/IS INDEX]
+		[FRONTSIDE]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		5
+	[DO BEHAVIOR]
+	[ME]
+		7
+	[DO BEHAVIOR]
+	[LAST ACTIVE ATTACKSUCCESS]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			`throw`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			85
+		[Y START]
+			0
+		[Z START]
+			100
+		[USE MY DIRECTION]
+		[USE MY BASEPOS]
+		[MOVE UNIFORM]
+	[/SET POS FORCE]
+	[SET OVERTURN]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[RIGHT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[LEFT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[IF]
+		`throw`	
+		[>=]
+			2
+	[/IF]
+	[DO BEHAVIOR]
+	[LAST ACTIVE ATTACKSUCCESS]
+		9
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[DOWN]
+	[RIGHT]
+		1
+	[FORCE]
+		800	400
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[IF]
+		`throw`	
+		[>=]
+			2
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		10
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		2
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			100
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[IF]
+		`throw`	
+		[>=]
+			2
+	[/IF]
+	[WHICH]
+	[LAST ACTIVE ATTACKSUCCESS]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[LAST ACTIVE ATTACKSUCCESS]
+		13
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]

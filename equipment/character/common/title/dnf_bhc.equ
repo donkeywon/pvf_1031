@@ -1,0 +1,86 @@
+#PVF_File
+
+[name]
+	`DNF BHC`
+
+[name2]
+	`DnF BHC`
+
+[explain]
+	`被攻击时， 有2%%的几率使自身恢复5%%的HP最大值。`
+
+[flavor text]
+	`<活动>  BHC， 与DNF一起吧！`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	88
+
+[custom animation]
+	`TitleAnimation/dnf_bhc.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	100
+
+[physical attack]
+	8
+
+[physical defense]
+	5
+
+[magical attack]
+	8
+
+[magical defense]
+	5
+
+[HP regen speed]
+	45
+
+[move speed]
+	20
+
+[if]
+	[cooltime]
+		20000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		2
+	[restore]
+		`HP`
+		`%`	5	5000
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

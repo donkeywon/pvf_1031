@@ -1,0 +1,32 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/throw.ani`
+	[SUB ANI]
+		`../animation/weapon/stone_wp.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		0
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8404
+		[PARTICLE FILENAME]
+			`../../../../../PassiveObject/ActionObject/Common/Particle/stone.ptl`
+		[LEVEL]
+			30
+		[POS]
+			63	0	89
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

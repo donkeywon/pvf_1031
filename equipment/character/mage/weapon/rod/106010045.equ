@@ -1,0 +1,191 @@
+#PVF_File
+
+[name]
+	`暗月魔杖[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`施展雷旋，冰魄剑时以3%% 的机率30秒内智力增加75 
+
+无法进行合成和分解。`
+
+[grade]
+	24
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	20
+
+[attack speed]
+	100
+
+[cast speed]
+	50
+
+[stuck]
+	1
+
+[MP MAX]
+	80
+
+[price]
+	0
+
+[repair price]
+	30720
+
+[value]
+	0
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	234	198
+
+[equipment magical attack]
+	286	242
+
+[separate attack]
+	148	96
+
+[skill levelup]
+	`[mage]`	31	1
+	`[mage]`	24	2
+	`[mage]`	77	2
+	`[at mage]`	8	1
+	`[at mage]`	21	2
+	`[at mage]`	27	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/mage/rod.img`	23
+
+[field image]
+	`Item/field_weapon.img`	7
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	4	3
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	4	3
+
+[layer variation]
+	2150
+	`at_roda`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_rodd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	4	3
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`ROD_TOUCH`
+
+[durability]
+	24
+
+[weight]
+	2200
+
+[item group name]
+	`rod`
+
+[cool time]
+	10000
+
+[magical attack]
+	30
+
+[if]
+	[event use skill]
+		`at mage`	8
+	[/event use skill]
+	[cooltime]
+		45000
+[/if]
+
+[then]
+	[probability]
+		3
+	[duration]
+		30000
+	[target]
+		`myself`	-1
+	[stat]
+		`magical attack`
+		`+`	75
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

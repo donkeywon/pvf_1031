@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/vomit.ani`
+	[SUB ANI]
+		`../animation/bire_bone.ani`	0	0
+		`../animation/skull/vomit.ani`	0	0
+		`../animation/skullglow/vomit.ani`	0	10
+	[/SUB ANI]
+	[SPEECH]
+		`呜啊……`	4	100
+	[/SPEECH]
+	[SOUND]
+		`VILLAGEWOMAN1_SKILL_01`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10208
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			50	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

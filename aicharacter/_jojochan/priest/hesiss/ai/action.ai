@@ -1,0 +1,98 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	2200.0	2200.0	2200.0	2200.0
+			`all`
+			`passive object`	9875
+	
+		[think]
+			[last result]
+				`<=`	0.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`dtouch`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`dtouch`
+			[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	100.0	20.0	25.0	25.0
+		[true]
+	
+		[think]
+			[void]
+				`check random()`	60.0	100.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`a`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`a`
+			[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`f`
+		[true]
+		[return]
+			-1
+		[false]
+		[return str]
+			`f`
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	250.0	0.0	30.0	30.0
+		[true]
+	
+		[think]
+			[void]
+				`check random()`	60.0	100.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`s`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`s`
+			[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`d`
+		[true]
+		[return]
+			-1
+		[false]
+		[return str]
+			`d`
+	[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

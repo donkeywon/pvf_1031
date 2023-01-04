@@ -1,0 +1,185 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	5
+[/dungeon]
+
+[type]
+	`[boss]`
+
+[greed]
+	`CC CC`
+
+[tile]
+	`Tile/ForestUnderOver.til`
+	`Tile/ForestOverUnder.til`
+	`Tile/ForestUnderOver.til`
+	`Tile/ForestOver.til`
+	`Tile/ForestOverUnder.til`
+	`Tile/ForestUnderOver.til`
+	`Tile/ForestOverUnder.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/far0.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/mid0.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`../CommonAnimation/fog.ani`
+		[layer]
+			`[close]`
+		[order]
+			`[upper]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	16	247	1555	247	1225	152	758	347
+
+[sound]
+	`M_SUNDERLAND_BOSS`
+	`AMB_FOREST_02`
+[/sound]
+
+[animation]
+	`Animation/StonePillar1.ani`	`[close]`	441	403	0
+	`Animation/smallTree0.ani`	`[close]`	1920	407	0
+	`Animation/StonePillar1.ani`	`[close]`	304	426	0
+	`Animation/StonePillar0.ani`	`[close]`	626	392	0
+	`Animation/StonePillar1.ani`	`[close]`	1010	402	0
+	`Animation/StonePillar1.ani`	`[close]`	1092	431	0
+	`Animation/StonePillar1.ani`	`[close]`	1286	403	0
+	`Animation/StonePillar0.ani`	`[close]`	1232	373	0
+	`Animation/StonePillar0.ani`	`[normal]`	1186	411	0
+	`Animation/smallTree1.ani`	`[closeback]`	898	123	0
+	`Animation/smallTree1.ani`	`[closeback]`	983	135	0
+	`Animation/Tree0.ani`	`[closeback]`	231	136	0
+	`Animation/smallTree0.ani`	`[closeback]`	726	137	0
+	`Animation/Tree0.ani`	`[closeback]`	618	140	0
+	`Animation/StonePillar0.ani`	`[closeback]`	1322	142	0
+	`Animation/StonePillar1.ani`	`[closeback]`	331	146	0
+	`Animation/StonePillar0.ani`	`[closeback]`	1003	156	0
+	`Animation/smallTree0.ani`	`[closeback]`	66	149	0
+	`Animation/StonePillar0.ani`	`[closeback]`	218	149	0
+	`Animation/Tree3.ani`	`[closeback]`	1392	140	0
+	`Animation/StonePillar0.ani`	`[closeback]`	684	150	0
+	`Animation/StonePillar0.ani`	`[closeback]`	1067	157	0
+	`Animation/StonePillar0.ani`	`[closeback]`	411	160	0
+	`Animation/StonePillar1.ani`	`[closeback]`	568	162	0
+	`Animation/Tree4.ani`	`[closeback]`	1750	163	0
+	`Animation/smallTree1.ani`	`[closeback]`	455	163	0
+[/animation]
+
+[passive object]
+	291	874	160	0
+	1009	1025	211	0
+	256	969	215	0
+	256	969	215	0
+	256	969	215	0
+	256	969	215	0
+	256	1085	223	0
+	256	1085	223	0
+	256	1085	223	0
+	256	1085	223	0
+	254	1128	230	0
+	254	1128	230	0
+	254	1128	230	0
+	254	1128	230	0
+	254	940	231	0
+	256	1029	246	0
+	1010	969	248	0
+	251	370	248	0
+	1009	1107	250	0
+	257	289	254	0
+	251	480	258	0
+	254	969	262	0
+	257	405	262	0
+	1008	350	263	0
+	254	1104	268	0
+	251	236	269	0
+	251	441	275	0
+	257	443	291	0
+	251	332	299	0
+	251	404	299	0
+	285	1637	304	0
+	291	539	347	0
+[/passive object]
+
+[monster]
+	13	1	0	259	215	0	1	1	`[fixed]`	`[normal]`
+	5001	1	0	873	228	0	1	1	`[fixed]`	`[normal]`
+	5003	1	0	423	237	0	1	1	`[fixed]`	`[normal]`
+	9	1	0	328	260	0	2	1	`[fixed]`	`[boss]`
+	13	1	0	581	263	0	1	1	`[fixed]`	`[normal]`
+	5001	1	0	874	289	0	1	1	`[fixed]`	`[normal]`
+	5001	1	0	774	318	0	1	1	`[fixed]`	`[normal]`
+	5001	1	0	1040	322	0	1	1	`[fixed]`	`[normal]`
+	13	1	0	260	333	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[special passive object]
+	228	728	227	0	1
+	`[item]`	2	1	-1	-1	-1
+	221	1344	319	0	1
+	`[trap]`	2210	1	2	3	-1
+	221	690	342	0	2
+	`[trap]`	2500	1	2	3	-1
+	`[trap]`	2402	1	1	10	-1	
+[/special passive object]
+
+[event monster position]
+	487	202	0
+	386	296	0
+	367	195	0
+	664	243	0
+[/event monster position]
+
+[NPC]
+	1000	`[left]`	0	0	0
+[/NPC]
+
+[map name]
+	`PVP 无名`

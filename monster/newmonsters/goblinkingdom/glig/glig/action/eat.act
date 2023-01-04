@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Eat.ani`
+	[SPEECH]
+		`喀吱喀吱！`	9	100
+		`又抓了一个！`	3	100
+	[/SPEECH]
+	[SOUND]
+		`GLIC_OPEN`	0
+		`GLIC_CATCH_GBN`	3
+		`R_GOBLIN_DIE`	4
+		`GLIC_CLOSE`	6
+		`R_GGLIC_SKILL_01`	3
+	[/SOUND]
+	[SUB ANI]
+		`../animation/globin/damage1.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[NOW]
+[/BEHAVIOR]

@@ -1,0 +1,97 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	`Liar Hunter`
+
+[explain]
+	`攻击时， 有1%%的几率召唤出与召唤者同等Lv的1只夜叉协助自身攻击敌人。 (在决斗场中无效)`
+
+[flavor text]
+	``
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	247
+
+[equipment type]
+	`[title name]`	1
+
+[custom animation]
+	`TitleAnimation/liar_hunter.ani`
+[/custom animation]
+
+[HP MAX]
+	100
+
+[MP MAX]
+	100
+
+[physical attack]
+	20
+
+[magical attack]
+	20
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[stuck]
+	-2
+
+[if]
+	[cooltime]
+		90000
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		60000
+	[probability]
+		1
+	[summon apc]
+		426	-1	1
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,100 @@
+#PVF_File
+
+[name]
+	`德鲁`
+
+[face image]
+	`Monster/MonsterFace.img`	484
+
+[die effect]
+	0	14	0
+
+[category]
+	`[stay]`
+[/category]
+
+[ambient sound]
+	``
+
+[attack sound]
+	``
+
+[appear sound]
+	``
+
+[damage sound]
+	``
+
+[die sound]
+	``
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	200
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+	`[HP MAX]`	`*`	800
+[/ability category]
+
+[level]
+	100	100
+
+[attack speed]
+	1300	1300
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	500	500
+
+[weight]
+	250000	250000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[waiting action]
+	`Action/Stay1.act`
+
+[cooltime]
+[/cooltime]
+
+[destination change term]
+	400
+
+[ai pattern]
+	[easy]
+		`../divol1/ai/Event.ai`
+		`../divol1/ai/DestinationSelect.ai`
+		`ai/Action1.ai`
+		`../divol1/ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`../divol1/ai/Event.ai`
+		`../divol1/ai/DestinationSelect.ai`
+		`ai/Action1.ai`
+		`../divol1/ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`../divol1/ai/Event.ai`
+		`../divol1/ai/DestinationSelect.ai`
+		`ai/Action1.ai`
+		`../divol1/ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`../divol1/ai/Event.ai`
+		`../divol1/ai/DestinationSelect.ai`
+		`ai/Action1.ai`
+		`../divol1/ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`../divol1/ai/Event.ai`
+		`../divol1/ai/DestinationSelect.ai`
+		`ai/Action1.ai`
+		`../divol1/ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[vision]
+	1000

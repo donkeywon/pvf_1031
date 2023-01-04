@@ -1,0 +1,299 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		`[void]`
+		`is the skill in cooltime()`	37	
+		[false]
+		[return]
+			5
+		[true]
+	
+		[think]
+			[hp]
+				`%>`	99.0
+			[true]
+		
+			[think]
+				[void]
+					`enemy number of in attack area()`	150.0	150.0	70.0	70.0
+			
+				[think]
+					[last result]
+						`>=`	1.0
+					[true]
+				
+					[think]
+						[void]
+							`enemy number of in attack area()`	70.0	70.0	20.0	20.0
+					
+						[think]
+							[last result]
+								`>=`	1.0
+							[true]
+						
+							[think]
+								`[void]`
+								`is the skill in cooltime()`	1	
+								[false]
+								[return]
+									1
+								[true]
+								[return]
+									-1
+							[/think]
+	[false]
+	[think]
+		`[void]`
+		`is the skill in cooltime()`	11	
+		[false]
+		[return]
+			4
+		[true]
+		[return]
+			-1
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`get random()`	0.0	100.0
+	
+		[think]
+			[last result]
+				`<=`	5.0
+			[true]
+			[return]
+				16
+			[false]
+		
+			[think]
+				[last result]
+					`<=`	10.0
+				[true]
+				[return]
+					17
+				[false]
+				[return]
+					-1
+			[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		`[void]`
+		`is the skill in cooltime()`	4	
+		[false]
+	
+		[think]
+			[void]
+				`enemy number of in attack area()`	100.0	100.0	50.0	50.0
+		
+			[think]
+				[last result]
+					`>=`	1.0
+				[true]
+				[return]
+					6
+				[false]
+			
+				[think]
+					[void]
+						`enemy number of in attack area()`	120.0	10.0	40.0	40.0
+				
+					[think]
+						[last result]
+							`>=`	1.0
+						[true]
+					
+						[think]
+							[void]
+								`get random()`	0.0	100.0
+						
+							[think]
+								[last result]
+									`>=`	70.0
+								[true]
+								[return]
+									21
+								[false]
+							
+								[think]
+									[last result]
+										`>=`	50.0
+									[true]
+									[return]
+										22
+									[false]
+								
+									[think]
+										[last result]
+											`>=`	40.0
+										[true]
+										[return]
+											23
+										[false]
+									
+										[think]
+											[last result]
+												`>=`	35.0
+											[true]
+											[return]
+												25
+											[false]
+										
+											[think]
+												[last result]
+													`>=`	30.0
+												[true]
+												[return]
+													26
+												[false]
+											
+												[think]
+													[last result]
+														`>=`	25.0
+													[true]
+													[return]
+														27
+													[false]
+												
+													[think]
+														[last result]
+															`>=`	20.0
+														[true]
+														[return]
+															29
+														[false]
+													
+														[think]
+															[last result]
+																`>=`	10.0
+															[true]
+															[return]
+																30
+															[false]
+														
+															[think]
+																[last result]
+																	`>=`	0.0
+																[true]
+																[return]
+																	31
+															[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[true]
+	[think]
+		[void]
+			`enemy number of in attack area()`	120.0	10.0	40.0	40.0
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[void]
+					`get random()`	0.0	100.0
+			
+				[think]
+					[last result]
+						`>=`	70.0
+					[true]
+					[return]
+						21
+					[false]
+				
+					[think]
+						[last result]
+							`>=`	50.0
+						[true]
+						[return]
+							22
+						[false]
+					
+						[think]
+							[last result]
+								`>=`	40.0
+							[true]
+							[return]
+								23
+							[false]
+						
+							[think]
+								[last result]
+									`>=`	35.0
+								[true]
+								[return]
+									25
+								[false]
+							
+								[think]
+									[last result]
+										`>=`	30.0
+									[true]
+									[return]
+										26
+									[false]
+								
+									[think]
+										[last result]
+											`>=`	25.0
+										[true]
+										[return]
+											27
+										[false]
+									
+										[think]
+											[last result]
+												`>=`	20.0
+											[true]
+											[return]
+												29
+											[false]
+										
+											[think]
+												[last result]
+													`>=`	10.0
+												[true]
+												[return]
+													30
+												[false]
+											
+												[think]
+													[last result]
+														`>=`	0.0
+													[true]
+													[return]
+														31
+												[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

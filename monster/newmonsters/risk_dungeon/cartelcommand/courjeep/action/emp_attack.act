@@ -1,0 +1,111 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/EMP_Attack.ani`
+	[SUB ANI]
+		`../Animation/effect/EMP_effect2.ani`	0	1
+		`../Animation/effect/EMP_effect.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`就这几招？都看腻了~`	7	100
+	[/SPEECH]
+	[SOUND]
+		`KURZEEP_EMP_ON`	2
+		`KURZEEP_EMP_CHARGE`	6
+		`KURJEEP_SKILL_04`	10
+		`KURZEEP_BAZOOKA_BURST`	11
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		16	16
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		16	16
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			62238	62239	62242	62243	62240	62241
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		16	16
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			35571
+		[/IS INDEX]
+		[DISTANCE]
+		[>=]
+			1
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		2
+	[DO PROC BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		10
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35577
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			80
+		[POS]
+			20	0	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

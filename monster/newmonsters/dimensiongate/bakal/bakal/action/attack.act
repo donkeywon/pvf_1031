@@ -1,0 +1,64 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack.ani`
+	[SUB ANI]
+		`../animation/ani/attack.ani`	0	9
+		`../animation/attack_e.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`R_BAKAL_ATK`	2
+		`BECK_FIREBALL`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	1000
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10317
+		[PARTICLE FILENAME]
+			`../Particle/dropstone.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			100	10
+		[RANDOM]
+			60	-60	400
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10312
+		[PARTICLE FILENAME]
+			`../Particle/dropstone1.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-10	-100
+		[RANDOM]
+			60	-60	400
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

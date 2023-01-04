@@ -1,0 +1,64 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/casting2.ani`
+	[SOUND]
+		`NAZALOH_SKILL`	0
+	[/SOUND]
+	[SPEECH]
+		`病情更严重了呢~呵呵`	0	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`move_.act`
+	[CHANGE ACTION FILE]
+	[STAY]
+		`move_.act`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			62121
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		15000	
+		[hp max]
+		[%]
+			200.0
+		[equipment physical defense]
+		[%]
+			150.0
+		[equipment magical defense]
+		[%]
+			150.0
+		[hit recovery]
+		[%]
+			100.0
+		[move speed]
+		[%]
+			100.0
+	[/APPENDAGE]
+[/BEHAVIOR]

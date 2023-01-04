@@ -1,0 +1,56 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/cloud_body.ani`
+	[SUB ANI]
+		`../Animation/cloud_body_dodge.ani`	0	1
+		`../Animation/cloud_body_light.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`烈焰将填饱我的肚子……`	4	50
+		`火舌将吞没一切……`	4	50
+	[/SPEECH]
+	[SOUND]
+		`FIRESPIRIT_CLOUD`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1000	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		2
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10572
+		[PARTICLE FILENAME]
+			`../Particle/cloud.ptl`
+		[LEVEL]
+			0
+		[POS]
+			60	0	40
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,128 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/WallEnd/MineralWall_Effect_0_W_Wall0_0.ani`
+	[SUB ANI]
+		`../Animation/WallEnd/MineralWall_Floor_magiccircle4.ani`	0	-7
+		`../Animation/WallEnd/MineralWall_Floor_magiccircle3.ani`	0	-6
+		`../Animation/WallEnd/MineralWall_Floor_magiccircle6.ani`	0	-5
+		`../Animation/WallEnd/MineralWall_Floor_magiccircle5.ani`	0	-4
+		`../Animation/WallEnd/MineralWall_Floor_magiccircle1.ani`	0	-3
+		`../Animation/WallEnd/MineralWall_Floor_magiccircle0.ani`	0	-2
+		`../Animation/WallEnd/MineralWall_C_M_Circle.ani`	0	-1
+		`../Animation/WallEnd/MineralWall_Effect_0_W_Glass_PP2.ani`	0	1
+		`../Animation/WallEnd/MineralWall_Effect_0_W_Glass_PP1.ani`	0	2
+		`../Animation/WallEnd/MineralWall_Effect_0_W_Glass_PP0.ani`	0	3
+		`../Animation/WallEnd/MineralWall_Effect_0_W_Glass_PP9.ani`	0	4
+		`../Animation/WallEnd/MineralWall_Effect_0_W_Glass_PP8.ani`	0	5
+		`../Animation/WallEnd/MineralWall_Effect_0_W_Glass_PP7.ani`	0	6
+		`../Animation/WallEnd/MineralWall_Effect_0_W_Glass_PP6.ani`	0	7
+		`../Animation/WallEnd/MineralWall_Effect_0_W_Glass_PP5.ani`	0	8
+		`../Animation/WallEnd/MineralWall_Effect_0_W_Glass_PP4.ani`	0	9
+		`../Animation/WallEnd/MineralWall_Effect_0_W_Glass_PP3.ani`	0	10
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			54089
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			54090
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		-30
+	[%]
+	[SET HOLD DOWNANI]
+	[SET ACTION]
+	[DOWN]
+	[DEFAULT]
+		1
+	[FORCE]
+		100	300
+	[NOW]
+[/BEHAVIOR]

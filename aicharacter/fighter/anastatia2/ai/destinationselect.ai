@@ -1,0 +1,63 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	300	300	300	300
+			`friend`
+			`summon`	50074
+		[true]
+	
+		[think]
+			[last result]
+				`>`	0
+			[true]
+		
+			[think]
+				[set target monster]
+					50074
+					`friend`
+				[true]
+			
+				[think]
+					[set bound]
+						200	200	100	100
+					[true]
+					[return]
+						6
+				[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	200	200	100	100
+			`friend`
+			`passive object`	21010
+		[true]
+	
+		[think]
+			[set friend object]
+				21010
+			[true]
+		
+			[think]
+				[last result]
+					`>`	0
+				[true]
+			
+				[think]
+					[set bound]
+						100	100	70	70
+					[true]
+					[return]
+						8
+				[/think]
+	[false]
+	[return]
+		10
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

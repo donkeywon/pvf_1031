@@ -1,0 +1,100 @@
+#PVF_File
+
+[name]
+	`避祸之诀`
+
+[basic explain]
+	`在[克雷发电站]地下城进行攻击时， 可以使所有敌人减少1400的物理防御力， 效果持续10秒。
+无法进行分解。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	50
+
+[magical attack]
+	50
+
+[need material]
+	3339	525
+
+[value]
+	67200
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	2912	2752
+
+[fire resistance]
+	18
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	106
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[if]
+	[cooltime]
+		10000
+	[dungeon check]
+		101
+	[/dungeon check]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[duration]
+		10000
+	[stat]
+		`equipment physical defense`
+		`+`	-1400
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	66

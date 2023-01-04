@@ -1,0 +1,40 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/throw.ani`
+	[SUB ANI]
+		`../Animation/Boomerang.ani`	0	0
+		`../Animation/Boomerang1.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`哼~过来啊！`	1	80
+		`怎么？怕了吗？`	1	30
+		`嘿~来吧！`	1	50
+	[/SPEECH]
+	[SOUND]
+		`GSEEKERMOM_ATK_01`	0
+		`THIEF_THROW_01`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8401
+		[PARTICLE FILENAME]
+			`../Particle/DaggerDown.ptl`
+		[LEVEL]
+			40
+		[POS]
+			20	0	60
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

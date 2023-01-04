@@ -1,0 +1,29 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/LaserFire.ani`
+	[SUB ANI]
+		`../animation/LaserSub1.ani`	3	1
+		`../animation/LaserSub2.ani`	3	2
+		`../animation/LaserSub3.ani`	3	3
+		`../Animation/LaserSub4.ani`	3	4
+		`../Animation/LaserSub5.ani`	3	5
+		`../animation/LaserEnd.ani`	3	6
+	[/SUB ANI]
+	[SOUND]
+		`PATROL_DRAGON_LASER`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]

@@ -1,0 +1,155 @@
+#PVF_File
+
+[name]
+	`怨灵 - 22`
+
+[name2]
+	`Stirling 22`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入诅咒状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入诅咒状态20秒； 并减少敌人24点的力量、 体力、 智力和精神。 (若敌人高于Lv30， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[grade]
+	32
+
+[rarity]
+	2
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	30
+
+[magical attack]
+	21
+
+[stuck]
+	1
+
+[price]
+	44800
+
+[repair price]
+	35840
+
+[value]
+	35840
+
+[equipment physical attack]
+	191	169
+
+[equipment magical attack]
+	281	248
+
+[separate attack]
+	145	96
+
+[skill levelup]
+	`[gunner]`	28	1
+	`[at gunner]`	28	1
+[/skill levelup]
+
+[dark resistance]
+	15
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`item/weapon/gunner/automatic.img`	15
+
+[field image]
+	`Item/field_weapon.img`	2
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	1	3
+
+[layer variation]
+	2790
+	`autoc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`autob`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	1	3
+
+[layer variation]
+	2790
+	`at_autoc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_autob`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	1500
+
+[item group name]
+	`automatic`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		32000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[active status]
+		`curse`	30	24	24	24	24
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

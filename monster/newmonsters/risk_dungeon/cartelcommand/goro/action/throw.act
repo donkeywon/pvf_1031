@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/throw.ani`
+	[SUB ANI]
+		`../Animation/throw_1.ani`	0	1
+		`../Animation/throw_2.ani`	0	2
+		`../Animation/throw_3.ani`	0	3
+	[/SUB ANI]
+	[SPEECH]
+		`咕噜~糟糕~！！`	3	20
+	[/SPEECH]
+	[SOUND]
+		`GORO_ATK_02`	2
+		`GORO_THROW`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35680
+		[PARTICLE FILENAME]
+			`../Particle/throw.ptl`
+		[LEVEL]
+			0
+		[POS]
+			70	0	20
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

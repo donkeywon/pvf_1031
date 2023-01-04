@@ -1,0 +1,162 @@
+#PVF_File
+
+[name]
+	`不朽之战士[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`被攻击时， 若HP降到10%%以下， 则可以使自身增加100点力量， 效果持续30秒。
+
+无法进行合成和分解。`
+
+[grade]
+	64
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	43
+
+[magical attack]
+	65
+
+[stuck]
+	-3
+
+[price]
+	115200
+
+[repair price]
+	96768
+
+[value]
+	92160
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	607	553
+
+[equipment magical attack]
+	528	481
+
+[separate attack]
+	360	242
+
+[magical critical hit]
+	4
+
+[icon]
+	`item/weapon/gunner/musket.img`	55
+
+[field image]
+	`Item/field_weapon.img`	3
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	9	2
+
+[layer variation]
+	2790
+	`musketc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`musketb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	9	2
+
+[layer variation]
+	2790
+	`at_musketc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_musketb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	2100
+
+[item group name]
+	`musket`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		45000
+	[hit]
+		1
+	[stat change]
+		`hp`
+		`<`
+		`%`	30
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[stat]
+		`physical attack`
+		`+`	100
+[/then]
+
+[not amplify]
+	1
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

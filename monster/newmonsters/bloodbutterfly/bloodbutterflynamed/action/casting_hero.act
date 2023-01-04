@@ -1,0 +1,190 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Casting_hero.ani`
+	[SUB ANI]
+		`../Animation/Casting_hero_eff3.ani`	0	0
+		`../Animation/Casting_hero_eff4.ani`	0	0
+		`../Animation/Aura_eff.ani`	0	0
+		`../Animation/Casting_hero_eff.ani`	0	1
+		`../Animation/Casting_hero_eff1.ani`	0	2
+		`../Animation/Casting_hero_eff2.ani`	0	3
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		13	13
+	[DO BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		14	14
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9002
+		[PARTICLE FILENAME]
+			`../Particle/sing_eff.ptl`
+		[LEVEL]
+			1
+		[POS]
+			40	0	75
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9002
+		[PARTICLE FILENAME]
+			`../Particle/sing_eff_Down.ptl`
+		[LEVEL]
+			1
+		[POS]
+			40	5	75
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9002
+		[PARTICLE FILENAME]
+			`../Particle/sing_eff_Down2.ptl`
+		[LEVEL]
+			1
+		[POS]
+			45	-5	75
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9002
+		[PARTICLE FILENAME]
+			`../Particle/sing_eff_up.ptl`
+		[LEVEL]
+			1
+		[POS]
+			40	-10	75
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9002
+		[PARTICLE FILENAME]
+			`../Particle/sing_eff_up2.ptl`
+		[LEVEL]
+			1
+		[POS]
+			45	10	75
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9002
+		[PARTICLE FILENAME]
+			`../Particle/sing_eff_Down3.ptl`
+		[LEVEL]
+			1
+		[POS]
+			45	10	75
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9002
+		[PARTICLE FILENAME]
+			`../Particle/sing_eff_up3.ptl`
+		[LEVEL]
+			1
+		[POS]
+			45	10	75
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9002
+		[PARTICLE FILENAME]
+			`../Particle/sing_eff_B.ptl`
+		[LEVEL]
+			1
+		[POS]
+			45	10	75
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

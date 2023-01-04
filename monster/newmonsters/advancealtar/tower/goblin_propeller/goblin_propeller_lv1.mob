@@ -1,0 +1,141 @@
+#PVF_File
+
+[damage sound]
+	`R_GOBLIN_DMG`
+
+[die sound]
+	`R_GOBLIN_DIE`
+
+[ambient sound]
+	`GBLHELICOPTER_LOOP`
+
+[floating height]
+	150
+
+[name]
+	`地狱哥布林直升机`
+
+[face image]
+	`Monster/MonsterFace.img`	403
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	750
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	150
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	150
+[/ability category]
+
+[category]
+	`[hybrid]`
+	`[fort armor]`
+	`[range combat]`
+	`[close-carefully]`
+[/category]
+
+[level]
+	60	60
+
+[non targeted]
+	1
+
+[move speed]
+	1500	1500
+
+[attack speed]
+	1000	1000
+
+[hit recovery]
+	800	800
+
+[weight]
+	80000	80000
+
+[vision]
+	1900
+
+[stuckbonus on damage]
+	15	25	35	35
+
+[waiting action]
+	`Action/lv1_Stay.act`
+
+[move action]
+	`Action/lv1_Move.act`
+
+[damage action 1]
+	`Action/lv1_Damage1.act`
+
+[damage action 2]
+	`Action/lv1_Damage2.act`
+
+[last action]
+	`Action/lv1_Die.act`
+
+[etc motion]
+	`Animation/EffectFire.ani`
+	`Animation/EffectSmoke.ani`
+	`Animation/EffectFireAttack.ani`
+	`Animation/EffectSmokeAttack.ani`
+[/etc motion]
+
+[action list]
+	`Action/lv1_ShootUp_Stay.act`
+	`Action/lv1_DropABomb.act`
+	`Action/lv1_Dash_DropABomb.act`
+[/action list]
+
+[attack info]
+	``
+	``
+	``
+[/attack info]
+
+[cooltime]
+	10000	6000	10000
+[/cooltime]
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[keep distance with target]
+	20
+
+[ai pattern]
+	[normal]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/normal]
+	[master]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/master]
+	[expert]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/expert]
+	[king]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/king]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

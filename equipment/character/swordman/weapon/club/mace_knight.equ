@@ -1,0 +1,150 @@
+#PVF_File
+
+[name]
+	`武士钉头棒`
+
+[name2]
+	`Knight Mace`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入减速状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入减速状态20秒； 减速状态下， 减少10%%的移动速度和攻击速度。 (若敌人高于Lv25， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	27
+
+[rarity]
+	2
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	25
+
+[physical attack]
+	28
+
+[attack speed]
+	-30
+
+[stuck]
+	-1
+
+[price]
+	300000
+
+[repair price]
+	30000
+
+[value]
+	30000
+
+[equipment physical attack]
+	277	260
+
+[equipment magical attack]
+	239	224
+
+[separate attack]
+	126	82
+
+[icon]
+	`Item/weapon/swordman/club.img`	28
+
+[field image]
+	`Item/FieldImage.img`	8
+
+[equipment type]
+	`[weapon]`	20
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	0	0
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	0	0
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`STICK_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3400
+
+[item group name]
+	`club`
+
+[cool time]
+	10000
+
+[medal]
+	1000
+
+[if]
+	[cooltime]
+		32000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[active status]
+		`slow`	25	10	10
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

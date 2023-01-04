@@ -1,0 +1,110 @@
+#PVF_File
+
+[name]
+	`幽魂魅影短靴`
+
+[name2]
+	``
+
+[basic explain]
+	`每15点暗属性抗性增加1点暗属性强化值。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[magical attack]
+	25
+
+[magical defense]
+	25
+
+[move speed]
+	60
+
+[price]
+	51000
+
+[repair price]
+	42840
+
+[value]
+	40800
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	558	522
+
+[dark resistance]
+	10
+
+[light resistance]
+	-5
+
+[icon]
+	`Item/new_equipment/02_cloth/shoes/cloth_shoes.img`	10
+
+[field image]
+	`Item/field_equip.img`	4
+
+[equipment type]
+	`[shoes]`	16
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	18
+
+[weight]
+	600
+
+[item group name]
+	`cl shoes`
+
+[cool time]
+	10000
+
+[set item master]
+	100050050
+
+[routing priority]
+[/routing priority]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`dark resistance`	15
+		`dark attack`
+		`+`	1	0
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,162 @@
+#PVF_File
+
+[name]
+	`潜龙渊`
+
+[name2]
+	``
+
+[basic explain]
+	`[螺旋穿刺]攻击敌人时， 有5%%的几率使该技能当前的冷却时间减少10%%。
+[剑刃风暴]攻击敌人时， 有3%%的几率使该技能当前的冷却时间减少10%%。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	56
+
+[attack speed]
+	100
+
+[stuck]
+	1
+
+[price]
+	136000
+
+[repair price]
+	114240
+
+[value]
+	108800
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	700	649
+
+[equipment magical attack]
+	742	688
+
+[separate attack]
+	504	343
+
+[physical critical hit]
+	10
+
+[skill levelup]
+	`[thief]`	31	2
+	`[thief]`	33	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/thief/dagger/dagger.img`	108
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	25	1
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[routing priority]
+	`thief`	1
+[/routing priority]
+
+[if]
+	[skill]
+		`thief`	31
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[probability]
+		5
+	[target]
+		`myself`	-1
+	[skill cooltime reset]
+		31
+		`%`	-10
+[/then]
+
+[if]
+	[skill]
+		`thief`	33
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[probability]
+		3
+	[target]
+		`myself`	-1
+	[skill cooltime reset]
+		33
+		`%`	-10
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	68

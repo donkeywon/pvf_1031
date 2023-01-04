@@ -1,0 +1,94 @@
+#PVF_File
+
+[name]
+	`海之勇者 (海龟)`
+
+[name2]
+	`Hero of Sea (turtle)`
+
+[explain]
+	`被攻击时， 有3%%的机率使自身增加30点体力， 效果持续20秒， 并恢复HP最大值的10%%。 (冷却时间60秒； 在决斗场中恢复HP最大值的3%%)`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	62
+
+[custom animation]
+	`TitleAnimation/seahero.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	200
+
+[physical attack]
+	18
+
+[physical defense]
+	20
+
+[stuck resistance]
+	20
+
+[inventory limit]
+	10000
+
+[HP regen speed]
+	68
+
+[move speed]
+	10
+
+[attack speed]
+	10
+
+[hit recovery]
+	100
+
+[if]
+	[cooltime]
+		20000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		3
+	[stat]
+		`physical defense`
+		`+`	45
+	[restore]
+		`HP`
+		`%`	10	20000
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

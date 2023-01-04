@@ -1,0 +1,168 @@
+#PVF_File
+
+[name]
+	`镰刀[活动]`
+
+[basic explain]
+	`人类型的敌人攻击时15秒内移动速度增加3%% 
+攻击时以 3%% 的机率让敌人进入感电状态
+
+无法进行合成和分解。`
+
+[grade]
+	24
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	20
+
+[physical attack]
+	19
+
+[attack speed]
+	80
+
+[stuck]
+	1
+
+[price]
+	0
+
+[repair price]
+	30720
+
+[value]
+	0
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	247	209
+
+[equipment magical attack]
+	260	220
+
+[separate attack]
+	148	96
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	124	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/scythe.img`	19
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	2	4
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[magical attack]
+	19
+
+[detail explain]
+	`攻击人形敌人时， 移动速度增加3%%， 效果持续15秒。(冷却时间25秒)
+攻击时， 有3%%的几率使敌人进入感电状态3秒。(冷却时间20秒)
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。`
+
+[if]
+	[target type]
+		`human`
+	[attack success]
+		1
+	[cooltime]
+		25000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[stat]
+		`move speed`
+		`+`	30
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		3
+	[active status]
+		`lightning`	30	500
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

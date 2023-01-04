@@ -1,0 +1,148 @@
+#PVF_File
+
+[name]
+	`传承 : 控魂女神的绢丝长袍`
+
+[name2]
+	`Legacy : Silky Yarn Robe of Keres`
+
+[grade]
+	59
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[magical attack]
+	28
+
+[magical defense]
+	28
+
+[price]
+	41300
+
+[repair price]
+	36426
+
+[value]
+	33040
+
+[equipment physical defense]
+	744	720
+
+[skill levelup]
+	`[swordman]`	36	1
+	`[fighter]`	31	1
+	`[at fighter]`	31	1
+	`[gunner]`	46	1
+	`[at gunner]`	46	1
+	`[mage]`	19	1
+	`[mage]`	48	1
+	`[at mage]`	5	1
+	`[priest]`	48	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/common/coat.img`	56
+
+[field image]
+	`Item/field_equip.img`	0
+
+[equipment type]
+	`[coat]`	17
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	1400
+
+[item group name]
+	`cl coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 控魂女神的绢丝战袍  套装`
+
+[set item]
+	10135	12132	14119	18116	16109
+[/set item]
+
+[set ability]
+	[physical attack]
+		75
+	[magical attack]
+		75
+	[magical defense]
+		23
+	[dark resistance]
+		10
+	[MP regen speed]
+		12
+	[move speed]
+		35
+	[attack speed]
+		10
+	[cast speed]
+		60
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福可以使自身增加7%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	70
+	[/then]
+	[skill levelup]
+		`[swordman]`	82	1
+		`[fighter]`	90	1
+		`[at fighter]`	90	1
+		`[gunner]`	83	1
+		`[at gunner]`	83	1
+		`[mage]`	59	1
+		`[mage]`	58	1
+		`[mage]`	81	1
+		`[at mage]`	14	1
+		`[at mage]`	30	1
+		`[priest]`	101	1
+		`[demonic swordman]`	82	1
+	[/skill levelup]
+[/set ability]
+
+[possible kiri protect]

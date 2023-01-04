@@ -1,0 +1,43 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Cylinder.ani`
+	[SUB ANI]
+	[/SUB ANI]
+	[SOUND]
+		`COWCANNON_SHOOT`	1
+		`COWCANNON_READY`	3
+		`R_BUNKER_ATK`	0
+	[/SOUND]
+	[SPEECH]
+		`好好瞄准~`	0	5
+		`在干什么呢？炮兵！`	0	10
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[TARGET]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8031
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			44
+		[POS]
+		[RANDOM]
+			-50	50
+		[RANDOM]
+			-50	50	40
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

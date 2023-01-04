@@ -1,0 +1,32 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_0.ani`
+	[SOUND]
+		`R_GRANITE_ATK`	1
+		`GRANITE_T_THROW_READY`	3
+		`GRANITE_T_THROW`	7
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16088
+		[PARTICLE FILENAME]
+			`../Particle/stone1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			70	0	60
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

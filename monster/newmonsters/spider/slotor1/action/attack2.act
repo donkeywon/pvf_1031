@@ -1,0 +1,32 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack2.ani`
+	[SOUND]
+		`PUNCH12_01`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		0
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30100
+		[PARTICLE FILENAME]
+			`../Particle/Spider.ptl`
+		[LEVEL]
+			30
+		[POS]
+			75	0	48
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

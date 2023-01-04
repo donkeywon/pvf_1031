@@ -1,0 +1,127 @@
+#PVF_File
+
+[name]
+	`(旧) 班图族的五行图腾`
+
+[name2]
+	`Heritage of Bantu`
+
+[basic explain]
+	`攻击时， 有2%%的几率附加450点伤害。`
+
+[flavor text]
+	`自古就存在于班图族中的神秘图腾。`
+
+[grade]
+	40
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	35
+
+[physical attack]
+	44
+
+[stuck]
+	-1
+
+[price]
+	64000
+
+[repair price]
+	51200
+
+[value]
+	51200
+
+[equipment physical attack]
+	416	365
+
+[equipment magical attack]
+	356	313
+
+[separate attack]
+	234	156
+
+[skill levelup]
+	`[priest]`	56	1
+	`[priest]`	57	1
+	`[priest]`	58	1
+	`[priest]`	31	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/totem.img`	33
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	3	2
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[add absolute damage]
+		`all`
+		`+`	450
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

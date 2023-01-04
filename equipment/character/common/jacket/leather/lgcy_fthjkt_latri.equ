@@ -1,0 +1,160 @@
+#PVF_File
+
+[name]
+	`传承 : 守夜女神的蟒皮胸甲`
+
+[name2]
+	`Legacy : Coat of Latri`
+
+[basic explain]
+	`[改良魔法星弹]大成功率 +0.5%%`
+
+[grade]
+	27
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	25
+
+[physical attack]
+	20
+
+[magical attack]
+	12
+
+[magical defense]
+	5
+
+[price]
+	21600
+
+[repair price]
+	17280
+
+[value]
+	17280
+
+[equipment physical defense]
+	720	672
+
+[skill levelup]
+	`[gunner]`	11	1
+	`[gunner]`	57	1
+	`[at gunner]`	11	1
+	`[at gunner]`	57	1
+	`[mage]`	9	1
+	`[mage]`	100	1
+	`[at mage]`	23	1
+	`[thief]`	2	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/IconArmor.img`	252
+
+[field image]
+	`Item/FieldImage.img`	0
+
+[equipment type]
+	`[coat]`	18
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	33
+
+[weight]
+	1900
+
+[item group name]
+	`lt coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[skill data up]
+	`[mage]`	100	`[all]`	`[static]`	0	`+`	-5
+	`[mage]`	100	`[all]`	`[static]`	2	`+`	5
+[/skill data up]
+
+[set name]
+	`传承 : 守夜女神的蟒皮战甲  套装`
+
+[set item]
+	10484	12484	18479
+[/set item]
+
+[item overpower part]
+
+[set ability]
+	[MP MAX]
+		200
+	[physical attack]
+		38
+	[magical attack]
+		38
+	[light resistance]
+		5
+	[MP regen speed]
+		3
+	[move speed]
+		20
+	[physical critical hit]
+		2
+	[skill data up]
+		`[mage]`	100	`[all]`	`[static]`	0	`+`	-15
+		`[mage]`	100	`[all]`	`[static]`	2	`+`	15
+	[/skill data up]
+	[skill levelup]
+		`[gunner]`	5	1
+		`[gunner]`	48	1
+		`[at gunner]`	5	1
+		`[at gunner]`	48	1
+		`[mage]`	40	1
+		`[mage]`	89	1
+		`[mage]`	90	1
+		`[at mage]`	22	1
+		`[thief]`	16	1
+	[/skill levelup]
+	[fullset basic explain]
+		`[改良魔法星弹]大成功率 +1.5%%
+进入地下城时， 因传承的祝福可以使自身增加5%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	50
+	[/then]
+[/set ability]
+
+[possible kiri protect]

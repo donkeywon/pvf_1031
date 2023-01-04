@@ -1,0 +1,53 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Casting.ani`
+	[SUB ANI]
+		`../Animation/Effect/Casting.ani`	0	0
+		`../Animation/Direction/Casting.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`GAU_SKILL_02`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING EX]
+		75000	1	
+		[NORMAL]
+		[DISPLAY ME]
+		[DISPLAY SCREEN]
+		[DO ME]
+	[/CASTING EX]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		3
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		10
+	[NOW]
+[/BEHAVIOR]

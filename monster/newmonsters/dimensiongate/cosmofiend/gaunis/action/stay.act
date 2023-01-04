@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Stay.ani`
+	[SUB ANI]
+		`../Animation/Effect/Stay.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[CHECK TIME]
+		500
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14105	14106	14107	14108	14109
+		[/IS INDEX]
+		[DISTANCE]
+		[=<]
+			90
+		[TRIGGER CHECK]
+		[CUSTOM]
+			20	0
+		[OFF]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		12
+	[NOW]
+[/BEHAVIOR]

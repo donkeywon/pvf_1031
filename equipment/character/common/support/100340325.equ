@@ -1,0 +1,100 @@
+#PVF_File
+
+[name]
+	`狂暴之心`
+
+[basic explain]
+	`攻击领主时， 暴击伤害 +5%%。
+无法进行分解。`
+
+[grade]
+	79
+
+[rarity]
+	3
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[physical attack]
+	46
+
+[physical defense]
+	46
+
+[magical attack]
+	46
+
+[magical defense]
+	46
+
+[need material]
+	3338	585
+
+[value]
+	63200
+
+[creation rate]
+	0
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[icon]
+	`Item/new_equipment/10_support/support.img`	98
+
+[field image]
+	`Item/field_equip.img`	22
+
+[equipment type]
+	`[support]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	700
+
+[item group name]
+	`support`
+
+[cool time]
+	10000
+
+[routing priority]
+[/routing priority]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[if]
+	[event attack success]
+		1
+	[target grade]
+		`boss`
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	5
+[/then]
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[icon mark]
+	`Item/IconMark.img`	66

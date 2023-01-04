@@ -1,0 +1,162 @@
+#PVF_File
+
+[name]
+	`瘟疫之干坤珠`
+
+[name2]
+	`Pollution the Eight Trigrams for divination Rosary`
+
+[basic explain]
+	`攻击时， 有5%%的几率使敌人感染病毒。
+[压制符]范围 +20%%`
+
+[detail explain]
+	`攻击时， 有5%%的几率使敌人感染病毒。 (在决斗场中无效)
+[压制符]范围 +20%%`
+
+[flavor text]
+	`失去了阴阳相制的力量……真是可惜！  --式神先生·广云`
+
+[grade]
+	70
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	65
+
+[magical attack]
+	71
+
+[attack speed]
+	-50
+
+[cast speed]
+	50
+
+[price]
+	112000
+
+[repair price]
+	94080
+
+[value]
+	89600
+
+[equipment physical attack]
+	607	553
+
+[equipment magical attack]
+	775	706
+
+[separate attack]
+	411	278
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	39	2
+	`[priest]`	48	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/rosary.img`	57
+
+[field image]
+	`Item/field_weapon.img`	12
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	13	3
+
+[layer variation]
+	201
+	`rosaryd1`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	202
+	`rosaryd2`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2791
+	`rosaryc1`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2792
+	`rosaryc2`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`ROSARY_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`rosary`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[priest]`	39	`[all]`	`[static]`	1	`%`	20
+[/skill data up]
+
+[if]
+	[cooltime]
+		15000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[reduce probability to human armor at pvp module]
+		100
+	[passive object]
+		48204	0	0	0	1	0	``
+	[/passive object]
+[/then]
+
+[routing priority]
+	`priest`	3
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

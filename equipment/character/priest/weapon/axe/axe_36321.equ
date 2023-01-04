@@ -1,0 +1,145 @@
+#PVF_File
+
+[name]
+	`泰坦的黄金战斧 [网吧]`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 有3%%的几率出现飓风。
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。`
+
+[grade]
+	56
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	50
+
+[physical attack]
+	38
+
+[attack speed]
+	-80
+
+[stuck]
+	-4
+
+[price]
+	100800
+
+[repair price]
+	84672
+
+[value]
+	80640
+
+[equipment physical attack]
+	619	571
+
+[equipment magical attack]
+	439	405
+
+[separate attack]
+	311	208
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[priest]`	5	2
+	`[priest]`	88	1
+	`[common]`	186	1
+[/skill levelup]
+
+[curse resistance]
+	15
+
+[icon]
+	`Item/weapon/priest/axe.img`	29
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	2	10
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		80
+	[passive object]
+		48097	0	0	0	40	0	``
+	[/passive object]
+[/then]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

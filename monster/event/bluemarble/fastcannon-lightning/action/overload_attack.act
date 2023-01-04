@@ -1,0 +1,103 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack2.ani`
+	[SUB ANI]
+		`../Animation/Effect/Spark.ani`	0	-10
+		`../Animation/Body_Effect/redbody_Attack2.ani`	0	0
+		`../Animation/Effect/ChargingEffect_R_Over.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`LASERCANNON_SHOOT`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14076
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			95	0	70
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		2	150
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14077
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			95	0	70
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		2	150
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14078
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			95	0	70
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		2	150
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1000	1
+	[TRIGGER]
+		2
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		3
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		1
+[/BEHAVIOR]

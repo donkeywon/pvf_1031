@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack_Rosi.ani`
+	[SUB ANI]
+		`../animation/Stay_chair.ani`	0	-10
+	[/SUB ANI]
+	[SOUND]
+		`B_ROSHI_SUMMON`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		2	2
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			8137
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND DO BEHAVIOR]
+	[ME]
+		0
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]

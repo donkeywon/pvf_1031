@@ -1,0 +1,32 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/claris_s.ani`
+	[SUB ANI]
+		`../animation/magic_t.ani`	0	-2
+		`../animation/magic_b.ani`	0	1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		100	1000	100	255	255	255	255
+	[SUMMON MONSTER]
+		[INDEX]
+			56154
+		[LEVEL]
+			80
+		[POS]
+			0	0	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

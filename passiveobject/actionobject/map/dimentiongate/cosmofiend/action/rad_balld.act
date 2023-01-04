@@ -1,0 +1,127 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/ball.ani`
+[/MOTION]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`count1`	
+		[=]
+			0
+	[/DIM]
+	[DIM]
+		`count2`	
+		[=]
+			0
+	[/DIM]
+	[DIM]
+		`count3`	
+		[=]
+			0
+	[/DIM]
+	[DIM]
+		`count4`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`totel`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[FRAME]
+		0	0
+	[ON DAMAGE]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14114
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			80
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			80
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		2
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		0	0
+	[ON DAMAGE]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14117	14115	14116
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			80
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			80
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]

@@ -1,0 +1,131 @@
+#PVF_File
+
+[name]
+	`贤者的智慧项链`
+
+[name2]
+	`Hiding Wisdom Necklace of Wise Person`
+
+[grade]
+	63
+
+[rarity]
+	5
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	5
+
+[magical attack]
+	31
+
+[magical defense]
+	57
+
+[anti evil]
+	3
+
+[need material]
+	3228	33
+
+[repair price]
+	50400
+
+[value]
+	50400
+
+[equipment magical defense]
+	5440	5200
+
+[all elemental resistance]
+	3
+
+[icon]
+	`Item/IconAcc.img`	50
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[set name]
+	`贤者的智慧  套装`
+
+[set item]
+	20120	22115	24125	10134	12131	14118	18115	16108
+[/set item]
+
+[piece set ability]
+	3	
+	[MP MAX]
+		500
+	[magical critical hit]
+		3
+[/piece set ability]
+
+[piece set ability]
+	5	
+	[MP regen speed]
+		14
+	[attack speed]
+		20
+[/piece set ability]
+
+[piece set ability]
+	8	
+	[cast speed]
+		50
+	[if]
+		[target type]
+			`human`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[if]
+		[target type]
+			`undead`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[parameter basic explain]
+		`对人型怪敌人的伤害 +10%%
+对不死族敌人的伤害 +10%%`
+[/piece set ability]
+
+[possible kiri protect]

@@ -1,0 +1,187 @@
+#PVF_File
+
+[name]
+	`天帷巨兽之神域东方棍`
+
+[name2]
+	`找不到代码name2_30042`
+
+[basic explain]
+	`攻击龙族敌人时， 附加10%%的伤害。
+无法进行分解。`
+
+[grade]
+	39
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	35
+
+[physical attack]
+	28
+
+[magical attack]
+	42
+
+[attack speed]
+	50
+
+[stuck]
+	-2
+
+[stuck resistance]
+	30
+
+[price]
+	62400
+
+[repair price]
+	49920
+
+[value]
+	49920
+
+[equipment physical attack]
+	361	323
+
+[equipment magical attack]
+	380	340
+
+[equipment physical defense]
+	390	380
+
+[separate attack]
+	221	146
+
+[all activestatus resistance]
+	10
+
+[icon]
+	`Item/weapon/fighter/tonfa.img`	71
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	19	0
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	20	0
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[if]
+	[target type]
+		`beast`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[routing priority]
+	`fighter`	1
+	`at fighter`	1
+	`fighter`	2
+	`at fighter`	2
+	`fighter`	3
+	`at fighter`	3
+	`fighter`	4
+	`at fighter`	4
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,69 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	80	80	25	25
+			`friend`
+			`monster`	61807
+	
+		[think]
+			[last result]
+				`>=`	3.0
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	3
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					3
+			[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	300.0	0.0	25.0	25.0
+		[true]
+	
+		[think]
+			[void]
+				`get random()`	0.0	100.0
+		
+			[think]
+				[last result]
+					`<=`	70.0
+				[true]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	1
+					[true]
+					[return]
+						-1
+					[false]
+					[return]
+						1
+				[/think]
+	[false]
+	[think]
+		[void]
+			`is the skill in cooltime()`	2
+		[true]
+		[return]
+			-1
+		[false]
+		[return]
+			2
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

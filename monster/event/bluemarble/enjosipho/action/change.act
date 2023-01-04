@@ -1,0 +1,199 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/change.ani`
+	[SUB ANI]
+		`../animation/change_w.ani`	0	1
+		`../animation/change_w1.ani`	0	2
+		`../animation/change_e.ani`	0	3
+	[/SUB ANI]
+	[SPEECH]
+		`啊啊！ 这……记忆……是？？`	2	100
+	[/SPEECH]
+	[SOUND]
+		`ENJO_ROBOT_CAST`	0
+		`ENJO_SKILL_03`	4
+		`ENJO_ROBOT`	5
+		`ENJO_ROBOT`	7
+		`ENJO_ROBOT`	8
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		300	2000	1000	200	0	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30045
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-15	0	100
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30045
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			10	0	70
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30045
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	130
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30045
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			40	0	110
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30045
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-30	0	90
+	[/CREATE PASSIVEOBJECT]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`rbstay.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`rbdamage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`rbdamage2.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		`rbdown.act`
+	[CHANGE ACTION FILE]
+	[OVERTURN]
+		`rboverturn.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`rbsit.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`rbmove.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`rbattack.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		1
+		`rbattack1.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		3
+		`rbshoot1.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		5
+		`rbbigshoot.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		6
+		`rbspeedmove.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		7
+		`rbspeedmove_up.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		8
+		`rbspeedmove_front.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		9
+		`rbspeedmove_down.act`
+	[SAY SPEECH]
+		`危险， 启动应急系统！`
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]

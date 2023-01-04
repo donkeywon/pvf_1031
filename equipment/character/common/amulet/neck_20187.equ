@@ -1,0 +1,557 @@
+#PVF_File
+
+[name]
+	`战神的天袭项链`
+
+[name2]
+	`God of War Necklace`
+
+[grade]
+	65
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[magical attack]
+	47
+
+[magical defense]
+	87
+
+[price]
+	78000
+
+[repair price]
+	65520
+
+[value]
+	62400
+
+[creation rate]
+	250
+
+[equipment magical defense]
+	5840	5360
+
+[icon]
+	`Item/common/necklace.img`	43
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[set name]
+	`战神的天袭首饰`
+
+[set item]
+	20187	22179	24208
+[/set item]
+
+[set ability]
+	[fullset basic explain]
+		`连击达到50次时， 增加10%%的攻击速度、 移动速度和施放速度。
+连击达到100次时， 增加10%%的力量和智力。
+胜点附加伤害
+胜点10001~15000时， 附加伤害 +1%%~5%%
+胜点15001~25000时， 附加伤害 +6%%~10%%
+胜点25001~50000时， 附加伤害 +11%%~15%%
+胜点50001~90000时， 附加伤害 +16%%~19%%
+胜点90001以上时， 附加伤害 +20%%
+(在决斗场中胜点附加伤害无效)`
+	[if]
+		[stat change]
+			`vp`
+			`>`
+			`+`	10000
+		[stat change]
+			`vp`
+			`<`
+			`+`	11001
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	1
+	[/then]
+	[if]
+		[stat change]
+			`vp`
+			`>`
+			`+`	11000
+		[stat change]
+			`vp`
+			`<`
+			`+`	12001
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	2
+	[/then]
+	[if]
+		[stat change]
+			`vp`
+			`>`
+			`+`	12000
+		[stat change]
+			`vp`
+			`<`
+			`+`	13001
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	3
+	[/then]
+	[if]
+		[stat change]
+			`vp`
+			`>`
+			`+`	13000
+		[stat change]
+			`vp`
+			`<`
+			`+`	14001
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	4
+	[/then]
+	[if]
+		[stat change]
+			`vp`
+			`>`
+			`+`	14000
+		[stat change]
+			`vp`
+			`<`
+			`+`	15001
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	5
+	[/then]
+	[if]
+		[stat change]
+			`vp`
+			`>`
+			`+`	15000
+		[stat change]
+			`vp`
+			`<`
+			`+`	17001
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	6
+	[/then]
+	[if]
+		[stat change]
+			`vp`
+			`>`
+			`+`	17000
+		[stat change]
+			`vp`
+			`<`
+			`+`	19001
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	7
+	[/then]
+	[if]
+		[stat change]
+			`vp`
+			`>`
+			`+`	19000
+		[stat change]
+			`vp`
+			`<`
+			`+`	21001
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	8
+	[/then]
+	[if]
+		[stat change]
+			`vp`
+			`>`
+			`+`	21000
+		[stat change]
+			`vp`
+			`<`
+			`+`	23001
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	9
+	[/then]
+	[if]
+		[stat change]
+			`vp`
+			`>`
+			`+`	23000
+		[stat change]
+			`vp`
+			`<`
+			`+`	25001
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[if]
+		[stat change]
+			`vp`
+			`>`
+			`+`	25000
+		[stat change]
+			`vp`
+			`<`
+			`+`	30001
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	11
+	[/then]
+	[if]
+		[stat change]
+			`vp`
+			`>`
+			`+`	30000
+		[stat change]
+			`vp`
+			`<`
+			`+`	35001
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	12
+	[/then]
+	[if]
+		[stat change]
+			`vp`
+			`>`
+			`+`	35000
+		[stat change]
+			`vp`
+			`<`
+			`+`	40001
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	13
+	[/then]
+	[if]
+		[stat change]
+			`vp`
+			`>`
+			`+`	40000
+		[stat change]
+			`vp`
+			`<`
+			`+`	45001
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	14
+	[/then]
+	[if]
+		[stat change]
+			`vp`
+			`>`
+			`+`	45000
+		[stat change]
+			`vp`
+			`<`
+			`+`	50001
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	15
+	[/then]
+	[if]
+		[stat change]
+			`vp`
+			`>`
+			`+`	50000
+		[stat change]
+			`vp`
+			`<`
+			`+`	60001
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	16
+	[/then]
+	[if]
+		[stat change]
+			`vp`
+			`>`
+			`+`	60000
+		[stat change]
+			`vp`
+			`<`
+			`+`	70001
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	17
+	[/then]
+	[if]
+		[stat change]
+			`vp`
+			`>`
+			`+`	70000
+		[stat change]
+			`vp`
+			`<`
+			`+`	80001
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	18
+	[/then]
+	[if]
+		[stat change]
+			`vp`
+			`>`
+			`+`	80000
+		[stat change]
+			`vp`
+			`<`
+			`+`	90001
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	19
+	[/then]
+	[if]
+		[stat change]
+			`vp`
+			`>`
+			`+`	90000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	20
+	[/then]
+	[if]
+		[cooltime]
+			20000
+		[after attack]
+			1
+		[combo]
+			50
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			20000
+		[stat]
+			`attack speed`
+			`+`	100
+		[stat]
+			`move speed`
+			`+`	100
+		[stat]
+			`cast speed`
+			`+`	100
+	[/then]
+	[if]
+		[cooltime]
+			20000
+		[after attack]
+			1
+		[combo]
+			100
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			20000
+		[stat]
+			`physical attack`
+			`%`	10
+		[stat]
+			`magical attack`
+			`%`	10
+	[/then]
+	[pvp]
+		[if]
+			[cooltime]
+				20000
+			[after attack]
+				1
+			[combo]
+				50
+		[/if]
+		[then]
+			[target]
+				`myself`	-1
+			[duration]
+				20000
+			[stat]
+				`attack speed`
+				`+`	100
+			[stat]
+				`move speed`
+				`+`	100
+			[stat]
+				`cast speed`
+				`+`	100
+		[/then]
+		[if]
+			[cooltime]
+				20000
+			[after attack]
+				1
+			[combo]
+				100
+		[/if]
+		[then]
+			[target]
+				`myself`	-1
+			[duration]
+				20000
+			[stat]
+				`physical attack`
+				`%`	10
+			[stat]
+				`magical attack`
+				`%`	10
+		[/then]
+	[/pvp]
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

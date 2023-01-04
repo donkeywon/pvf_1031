@@ -1,0 +1,116 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/dash.ani`
+	[SUB ANI]
+		`../Animation/LightningDanceMove.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`休想逃离我！`	2	50
+	[/SPEECH]
+	[SOUND]
+		`LACIF_SKILL_02`	0
+		`POENA_SOONBO`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			70
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11108
+		[PARTICLE FILENAME]
+			`../Particle/dashdust.ptl`
+		[LEVEL]
+			70
+		[POS]
+			0	0	10
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+		[RANDOM]
+			100	120
+		[RANDOM SELECT]
+			-40	-70	-100
+		[/RANDOM SELECT]
+	0	
+		[NOT USE OBJECT ZPOS]
+		[MOVE ME]
+	[/TELEPORT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+		[RANDOM]
+			2000	2300
+		[Y AXIS]
+		[RANDOM]
+			600	1400
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Y AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Action.ani`
+	[SUB ANI]
+		`../Animation/effect/shock_eff2.ani`	0	1
+		`../Animation/G_main_s_start.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`_Stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`_Move.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`_Damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`_Damage2.act`
+	[TRIGGER]
+	[ATTACK]
+		4	0
+	[ON]
+[/BEHAVIOR]

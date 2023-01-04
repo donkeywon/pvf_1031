@@ -1,0 +1,32 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[my state]
+			4
+		[true]
+		[return]
+			-1
+		[false]
+	
+		[think]
+			[check key cooltime]
+				`kamo`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`robot`
+				[true]
+				[import ai]
+					`ai_pattern1.ai`
+				[false]
+				[return str]
+					`robot`
+			[/think]
+	[false]
+	[return str]
+		`kamo`
+	[/think]
+	[/think]
+[/ai pattern]

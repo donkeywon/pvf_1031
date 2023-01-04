@@ -1,0 +1,157 @@
+#PVF_File
+
+[name]
+	`武斗之爪`
+
+[name2]
+	`Martial Artist Claw`
+
+[basic explain]
+	`攻击时， 有1%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`攻击时， 有1%%的几率使敌人进入眩晕状态4秒。 (若敌人高于Lv35， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	37
+
+[rarity]
+	2
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	35
+
+[physical attack]
+	24
+
+[magical attack]
+	12
+
+[price]
+	800000
+
+[repair price]
+	50000
+
+[value]
+	50000
+
+[equipment physical attack]
+	332	316
+
+[equipment magical attack]
+	332	316
+
+[separate attack]
+	164	109
+
+[physical critical hit]
+	5
+
+[icon]
+	`Item/weapon/fighter/claw.img`	28
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	20
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	0
+
+[layer variation]
+	2790
+	`clawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	1	0
+
+[layer variation]
+	2150
+	`at_clawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_clawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_clawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[medal]
+	2500
+
+[if]
+	[cooltime]
+		8000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		4000
+	[probability]
+		1
+	[active status]
+		`stun`	35
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,94 @@
+#PVF_File
+
+[name]
+	`海之勇者(海龟)`
+
+[name2]
+	``
+
+[explain]
+	`被攻击时， 有3%%的机率使自身增加45点体力， 效果持续20秒， 并恢复HP最大值的10%%。`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[physical attack]
+	18
+
+[physical defense]
+	20
+
+[attack speed]
+	10
+
+[move speed]
+	10
+
+[stuck resistance]
+	20
+
+[HP MAX]
+	200
+
+[HP regen speed]
+	68
+
+[hit recovery]
+	100
+
+[inventory limit]
+	10000
+
+[icon]
+	`Item/Title/title.img`	62
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/seahero.ani`
+[/custom animation]
+
+[if]
+	[cooltime]
+		20000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		3
+	[stat]
+		`physical defense`
+		`+`	45
+	[restore]
+		`HP`
+		`%`	10	20000
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,194 @@
+#PVF_File
+
+[name]
+	`天骄战矛`
+
+[name2]
+	``
+
+[basic explain]
+	`[强袭流星打]冷却时间 -2秒
+[强袭流星打]蓄气时间上限 -50%%
+攻击速度 +4%%
+
+[落花掌]命中敌人时， 可以使敌人进入灼伤状态4秒。`
+
+[detail explain]
+	`[强袭流星打]冷却时间 -2秒
+[强袭流星打]蓄气时间上限 -50%%
+攻击速度 +4%%
+
+[落花掌]命中敌人时， 可以使敌人进入灼伤状态4秒； 灼伤状态下的敌人， 每0.5秒受到1000点伤害， 但其周围的敌人不会受到伤害。 (若敌人高于Lv75， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[grade]
+	75
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[physical attack]
+	75
+
+[attack speed]
+	-10
+
+[need material]
+	3285	1800
+
+[repair price]
+	100800
+
+[value]
+	96000
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	869	797
+
+[equipment magical attack]
+	615	564
+
+[separate attack]
+	441	298
+
+[physical critical hit]
+	2
+
+[skill levelup]
+	`[mage]`	9	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/mage/spear/spear.img`	99
+
+[field image]
+	`Item/field_weapon.img`	6
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	29	1
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	30	1
+
+[layer variation]
+	2150
+	`at_speara`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_speard`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	29	1
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`SPEAR_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3200
+
+[item group name]
+	`spear`
+
+[cool time]
+	10000
+
+[routing priority]
+	`mage`	3
+[/routing priority]
+
+[if]
+	[skill]
+		`mage`	14
+	[/skill]
+	[cooltime]
+		1000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		4000
+	[active status]
+		`burn`	75	8000	0	0	10000
+[/then]
+
+[elemental property]
+	`[light element]`
+
+[skill data up]
+	`[mage]`	68	`[all]`	`[cooltime]`	0	`+`	-2000
+	`[mage]`	68	`[all]`	`[static]`	2	`%`	-50
+[/skill data up]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,98 @@
+#PVF_File
+
+[name]
+	`无名战士之甲`
+
+[name2]
+	`Nameless Warrior Armor`
+
+[basic explain]
+	`攻击时， 有5%%的几率增加力量。`
+
+[detail explain]
+	`攻击时， 有5%%的几率使400px范围内的所有队员增加30点力量， 效果持续20秒。`
+
+[grade]
+	68
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	64
+
+[physical attack]
+	73
+
+[magical attack]
+	23
+
+[price]
+	81600
+
+[repair price]
+	71971
+
+[value]
+	65280
+
+[equipment physical defense]
+	2700	2520
+
+[icon]
+	`Item/common/coat.img`	152
+
+[field image]
+	`Item/field_equip.img`	5
+
+[equipment type]
+	`[coat]`	21
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3100
+
+[item group name]
+	`la coat`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		5
+	[aura active]
+		`physical attack`
+		`+`	30	400
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

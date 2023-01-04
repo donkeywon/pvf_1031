@@ -1,0 +1,152 @@
+#PVF_File
+
+[name]
+	`(旧) 冰焰 - P226`
+
+[name2]
+	`Siegsauer P226`
+
+[basic explain]
+	`攻击时， 有1%%的几率使敌人进入冰冻状态。`
+
+[detail explain]
+	`攻击时， 有1%%的几率使敌人进入冰冻状态5秒。 (若敌人高于Lv30， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	32
+
+[rarity]
+	2
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	30
+
+[magical attack]
+	21
+
+[stuck]
+	1
+
+[price]
+	44800
+
+[repair price]
+	35840
+
+[value]
+	35840
+
+[equipment physical attack]
+	191	169
+
+[equipment magical attack]
+	281	248
+
+[separate attack]
+	145	96
+
+[skill levelup]
+	`[gunner]`	80	1
+	`[at gunner]`	80	1
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/automatic.img`	19
+
+[field image]
+	`Item/field_weapon.img`	2
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	1	6
+
+[layer variation]
+	2790
+	`autoc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`autob`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	1	6
+
+[layer variation]
+	2790
+	`at_autoc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_autob`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	1500
+
+[item group name]
+	`automatic`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[water element]`
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		1
+	[active status]
+		`freeze`	30
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

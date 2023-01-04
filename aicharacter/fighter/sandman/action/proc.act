@@ -1,0 +1,171 @@
+#PVF_File
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[OFF]
+	[DIM]
+		`Dcount`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[DO PROC BEHAVIOR]
+	[ME]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9281
+		[PARTICLE FILENAME]
+			`../key/shout.ptl`
+		[LEVEL]
+			70
+		[POS]
+			0	3	50
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`Dcount`	
+		[=]
+			`Dcount`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`Dcount`	
+		[=>]
+			3
+	[/IF]
+	[DIRECT DO BEHAVIOR]
+	[ME]
+		3
+	[DO PROC BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		4	5
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9282
+		[PARTICLE FILENAME]
+			`../key/shout.ptl`
+		[LEVEL]
+			70
+		[POS]
+			0	3	20
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`Dcount`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9282
+		[PARTICLE FILENAME]
+			`../key/shout.ptl`
+		[LEVEL]
+			70
+		[POS]
+			0	3	50
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9282
+		[PARTICLE FILENAME]
+			`../key/shout.ptl`
+		[LEVEL]
+			70
+		[POS]
+			0	3	80
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			56455
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			100
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DAMAGE BOX]
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			56455
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			100
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DAMAGE BOX]
+	[ON]
+[/BEHAVIOR]

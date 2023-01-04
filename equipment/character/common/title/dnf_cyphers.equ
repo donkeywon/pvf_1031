@@ -1,0 +1,98 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	`Plays Neople`
+
+[explain]
+	`攻击时以7%%的机率9秒内攻击速度上升7%%。施展时以7%%机率9秒内施展速度上升7%%。`
+
+[flavor text]
+	`<活动>和突变者一起进行的Dungeon & Fighter！`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	428
+
+[custom animation]
+	`TitleAnimation/dnf_cyphers.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	7
+
+[physical defense]
+	9
+
+[magical attack]
+	7
+
+[magical defense]
+	9
+
+[if]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		9000
+	[probability]
+		7
+	[stat]
+		`attack speed`
+		`+`	70
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		9000
+	[probability]
+		7
+	[stat]
+		`cast speed`
+		`+`	70
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

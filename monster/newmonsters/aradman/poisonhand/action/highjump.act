@@ -1,0 +1,161 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/HighJump.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+	[SET SPEED]
+		[X AXIS]
+			200
+		[Z AXIS]
+			2000
+		[Y AXIS]
+		[RANDOM SELECT]
+			200	0	-200
+		[/RANDOM SELECT]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[CHECKUP]
+		[ZPOS]
+		[>]
+			1200
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		2
+	[SET DIRECTION]
+	[TO TARGET]
+	[SET SPEED]
+		[X AXIS]
+			200
+		[Z AXIS]
+			-500
+	[/SET SPEED]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		3
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[CHECKUP]
+		[ZPOS]
+		[=]
+			0
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Z AXIS]
+			0
+		[Y AXIS]
+			0
+	[/SET SPEED]
+	[SHAKING]
+		3	1000
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			21031
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			21032
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		3
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			200
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8066
+		[PARTICLE FILENAME]
+			`../particle/mist.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-100	100
+		[RANDOM]
+			-100	100	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8066
+		[PARTICLE FILENAME]
+			`../particle/mist.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-100	100
+		[RANDOM]
+			-100	100	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

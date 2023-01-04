@@ -1,0 +1,266 @@
+#PVF_File
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[VIRTUALHP APPENDAGE]
+		99999	999999999	2	10
+	[DIM]
+		`throw`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`throw`	
+		[>=]
+			61
+	[/IF]
+	[DO PROC BEHAVIOR]
+	[ME]
+		4
+	[DO PROC BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9171
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			5000
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			`throw`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[IF]
+		`throw`	
+		[>=]
+			30
+	[/IF]
+	[DO PROC BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/drop_cap.ptl`	10	0	170
+	[CHANGE ACTION FILE]
+	[STAY]
+		`1stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`1move.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`1damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`1damage2.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`1sit.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`1Attack.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		1
+		`1Attack2.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		2
+		`1casting.act`
+	[TRIGGER]
+		3
+	[OFF]
+	[TRIGGER]
+		4
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`throw`	
+		[>=]
+			60
+	[/IF]
+	[DO PROC BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/drop_arm.ptl`	10	0	140
+	[PARTICLE]
+		`../particle/drop_arm1.ptl`	5	0	140
+	[PARTICLE]
+		`../particle/drop_arm2.ptl`	5	0	140
+	[CHANGE ACTION FILE]
+	[STAY]
+		`stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`move.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`damage2.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`sit.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`Attack.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		1
+		`Attack2.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		2
+		`casting.act`
+	[TRIGGER]
+		4
+	[OFF]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		3
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		3
+	[ON]
+	[DIM]
+		`throw`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9171
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			5000
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61500
+		[/IS INDEX]
+		[TRIGGER CHECK]
+		[ATTACK]
+			0	0
+		[OFF]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		4
+	[DO PROC BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[TRIGGER]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9171
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			5000
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61500
+		[/IS INDEX]
+		[TRIGGER CHECK]
+		[ATTACK]
+			0	0
+		[OFF]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=<]
+		3
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[REMOVE VIRTUALHP]
+[/BEHAVIOR]

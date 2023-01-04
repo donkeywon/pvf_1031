@@ -1,0 +1,23 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	50.0	50.0	30.0	30.0
+		[true]
+	
+		[think]
+			[check use skill]
+				49
+			[true]
+			[return str]
+				`rople`
+			[false]
+			[import ai]
+				`fight.ai`
+		[/think]
+	[false]
+	[import ai]
+		`fight.ai`
+	[/think]
+[/ai pattern]

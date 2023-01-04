@@ -1,0 +1,33 @@
+#PVF_File
+
+[hp max]
+	1000000
+
+[hp destroy]
+	1
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	1000
+
+[basic motion]
+	`Animation/star_dust.ani`
+
+[add particles]
+	[particle]
+		[file]
+			`particle/star_dust.ptl`
+		[create delay]
+			500
+	[/particle]
+[/add particles]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	1000
+[/object destroy condition]

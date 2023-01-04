@@ -1,0 +1,243 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/h_t_n.ani`
+	[SUB ANI]
+		`../animation/h_t_ld.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9451	9457	9458	9459
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			120
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		2
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9451	9457	9458	9459
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND DO BEHAVIOR]
+	[ME]
+		0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			56149
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			56149
+		[LEVEL]
+			70
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			62140
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=]
+		1
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			56149
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		3
+	[OFF]
+	[TRIGGER]
+		4
+	[ON]
+	[TRIGGER]
+		5
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		3	3
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			56149
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=]
+		0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+	[IS INDEX]
+		9458
+	[/IS INDEX]
+	[CHECKED NO]
+	[=]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		3	3
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			56149
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=]
+		0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+	[IS INDEX]
+		9458
+	[/IS INDEX]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		3
+	[ON]
+	[TRIGGER]
+		4
+	[OFF]
+	[TRIGGER]
+		5
+	[OFF]
+	[SUMMON MONSTER]
+		[INDEX]
+			56149
+		[LEVEL]
+			70
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		3
+	[ON]
+	[TRIGGER]
+		4
+	[OFF]
+	[TRIGGER]
+		5
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		3
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		3
+	[ON]
+[/BEHAVIOR]

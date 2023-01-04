@@ -1,0 +1,187 @@
+#PVF_File
+
+[name]
+	`堕天使之手[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`背击攻击时， 附加10%%的伤害。
+
+无法进行合成和分解。`
+
+[detail explain]
+	`背击攻击时， 附加10%%的伤害。 (在决斗场中伤害为+5%%)
+无法进行合成和分解。`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	65
+
+[physical attack]
+	69
+
+[attack speed]
+	-80
+
+[stuck]
+	-1
+
+[price]
+	124200
+
+[repair price]
+	104328
+
+[value]
+	99360
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	785	725
+
+[equipment magical attack]
+	589	544
+
+[separate attack]
+	389	264
+
+[skill levelup]
+	`[fighter]`	22	1
+	`[fighter]`	50	1
+	`[at fighter]`	22	1
+	`[at fighter]`	50	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/gauntlet.img`	60
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	11	0
+
+[layer variation]
+	2790
+	`gauntletc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gauntletb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	11	0
+
+[layer variation]
+	2150
+	`at_gauntleta`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_gauntletc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_gauntletx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[if]
+	[attack condition]
+		`back attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[pvp]
+	[if]
+		[attack condition]
+			`back attack`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	5
+	[/then]
+[/pvp]
+
+[not amplify]
+	1
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,179 @@
+#PVF_File
+
+[name]
+	`混沌法杖`
+
+[name2]
+	`Chaos Staff`
+
+[basic explain]
+	`施放技能时， 有3%%的几率使特定的敌人进入混乱状态。`
+
+[detail explain]
+	`施法技能时， 有3%%的几率使300px范围内最近的敌人进入混乱状态6秒。 (若敌人高于Lv50， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	54
+
+[rarity]
+	2
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	50
+
+[magical attack]
+	35
+
+[attack speed]
+	-100
+
+[price]
+	75600
+
+[repair price]
+	63504
+
+[value]
+	60480
+
+[equipment physical attack]
+	445	429
+
+[equipment magical attack]
+	562	542
+
+[separate attack]
+	233	156
+
+[skill levelup]
+	`[mage]`	47	1
+	`[mage]`	43	1
+	`[mage]`	58	1
+	`[at mage]`	32	1
+	`[at mage]`	9	1
+	`[at mage]`	24	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/mage/staff.img`	31
+
+[field image]
+	`Item/field_weapon.img`	9
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[mage]`
+
+[variation]
+	4	2
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	4	2
+
+[layer variation]
+	2150
+	`at_staffa`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_staffd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	4	2
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`STAFF_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2400
+
+[item group name]
+	`staff`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		6000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy near`	300
+	[duration]
+		6000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		3
+	[active status]
+		`confuse`	50	1
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

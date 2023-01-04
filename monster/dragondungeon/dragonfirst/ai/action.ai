@@ -1,0 +1,21 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	8500.0	8500.0	2000.0	2000.0
+			`all`
+			`passive object`	54086
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+			[return]
+				-1
+			[false]
+			[import ai]
+				`StartAction.ai`
+		[/think]
+	[/think]
+[/ai pattern]

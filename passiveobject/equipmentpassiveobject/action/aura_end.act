@@ -1,0 +1,27 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/aura_end.ani`
+	[SOUND]
+		`UMTARA_ANGER_EXP`	3
+	[/SOUND]
+[/MOTION]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[SUMMON MASTER]
+	[CHECKUP]
+		[HP]
+		[<=]
+			0
+		[%]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]

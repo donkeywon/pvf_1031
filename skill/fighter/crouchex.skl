@@ -1,0 +1,121 @@
+#PVF_File
+
+[name]
+	`强化 - 蹲伏`
+
+[name2]
+	`Crouch Upgrade`
+
+[basic explain]
+	`蹲下并避开敌人的上段判定式攻击; 蹲下的同时，自身将进入无敌状态，效果持续一定时间。`
+
+[explain]
+	`蹲下并避开敌人的上段判定式攻击; 蹲下的同时，自身将进入无敌状态，效果持续一定时间。
+ 若[蹲伏]中按攻击键，则可以用肩尖攻击敌人; 经过一定时间或按跳跃键可以中断蹲伏状态。
+ 若在前冲中使用此技能，则可以边向前滑行边蹲下; Lv越高滑行的距离越远。`
+
+[basic explain ex]
+	`施放[蹲伏]时，附加使角色在一定时间内进入无敌状态的效果。`
+
+[explain ex]
+	`施放[蹲伏]时，附加使角色在一定时间内进入无敌状态的效果。
+技能每增加Lv1时，无敌时间增加量 : 0.2秒`
+
+[feature skill type]
+	1
+
+[special purchase cost]
+	1
+[/special purchase cost]
+
+[required level]
+	50
+
+[required level range]
+	5
+
+[pre required skill]
+	2	1
+[/pre required skill]
+
+[type]
+	`[passive]`
+
+[skill class]
+	2
+
+[maximum level]
+	5
+
+[growtype maximum level]
+	3	3	3	3	3	3
+
+[skill fitness growtype]
+	0	1	2	3	4
+[/skill fitness growtype]
+
+[icon]
+	`Character/Fighter/Effect/SkillIcon.img`	244
+	`Character/Fighter/Effect/SkillIcon.img`	245
+
+[dungeon]
+	[static data]
+		100
+	[/static data]
+	[level info]
+		4
+		2000	-500	200	0
+		2100	-467	211	0
+		2200	-433	222	0
+		2300	-400	233	0
+		2400	-367	244	0
+		2500	-333	256	0
+		2600	-300	267	0
+		2700	-267	278	0
+		2800	-233	289	0
+		2900	-200	300	0
+	[/level info]
+	[special level up]
+		-1	3
+		`+`	200
+	[/special level up]
+[/dungeon]
+
+[pvp]
+	[static data]
+		0
+	[/static data]
+	[level info]
+		4
+		2000	-500	200	0
+		2100	-467	211	0
+		2200	-433	222	0
+		2300	-400	233	0
+		2400	-367	244	0
+		2500	-333	256	0
+		2600	-300	267	0
+		2700	-267	278	0
+		2800	-233	289	0
+		2900	-200	300	0
+	[/level info]
+	[special level up]
+		-1	3
+		`+`	0
+	[/special level up]
+[/pvp]
+
+[death tower]
+[/death tower]
+
+[warroom]
+[/warroom]
+
+[level property]
+	1	99
+	`蹲下时间上限 : <float1>秒
+物理攻击力 : <int>%%
+无敌状态持续时间 : <float2>秒`
+	-1	0	0.001
+	-1	2	1.0
+	-1	3	0.001
+[/level property]

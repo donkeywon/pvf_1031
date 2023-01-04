@@ -1,0 +1,50 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/great_fire.ani`
+	[SUB ANI]
+		`../Animation/great_fire1.ani`	0	1
+		`../Animation/great_fire2.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PULL APPENDAGE EX]
+		[SPEED]
+			1.8	0
+		[VALIDTIME]
+			5000
+		[USE TARGET]
+			0
+		[OFFSET POS]
+			20	0
+		[MIN DISTANCE]
+			10
+	[/PULL APPENDAGE EX]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]

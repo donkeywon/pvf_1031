@@ -1,0 +1,64 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack_breath.ani`
+	[SUB ANI]
+		`../Animation/Effect/Chargewind_3s.ani`	0	1
+		`../Animation/Effect/Chargewind_2s.ani`	0	2
+		`../Animation/Effect/Chargewind_1s.ani`	0	3
+	[/SUB ANI]
+	[SOUND]
+		`ITRENOG_SHOUT_READY`	0
+		`ITRENOG_SKILL_03_2`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	1000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			13050
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			75	0	75
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

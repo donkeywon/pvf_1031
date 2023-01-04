@@ -1,0 +1,151 @@
+#PVF_File
+
+[name]
+	`马杰洛的祈祷[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`施放技能时， 有10%%的几率使自身增加10%%的施放速度、 40点的体力和精神， 效果持续20秒。
+
+无法进行合成和分解。`
+
+[grade]
+	61
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical defense]
+	52
+
+[magical attack]
+	41
+
+[magical defense]
+	52
+
+[cast speed]
+	20
+
+[price]
+	97600
+
+[repair price]
+	81984
+
+[value]
+	78080
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	556	516
+
+[equipment magical attack]
+	528	490
+
+[equipment physical defense]
+	610	600
+
+[equipment magical defense]
+	610	600
+
+[separate attack]
+	341	230
+
+[icon]
+	`Item/weapon/priest/cross.img`	36
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	5	0
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		10000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		10
+	[stat]
+		`cast speed`
+		`+`	100
+	[stat]
+		`physical defense`
+		`+`	40
+	[stat]
+		`magical defense`
+		`+`	40
+[/then]
+
+[not amplify]
+	1
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

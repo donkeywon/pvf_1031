@@ -1,0 +1,48 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/intension_ghoul_cast.ani`
+	[SUB ANI]
+		`../animation/effect/intension_ghoul_cast_e3.ani`	0	1
+		`../animation/effect/intension_ghoul_cast_e2.ani`	0	2
+		`../animation/effect/intension_ghoul_cast_e1.ani`	0	3
+	[/SUB ANI]
+	[SPEECH]
+		`感受下更强烈的黑暗气息吧！`	0	20
+	[/SPEECH]
+	[SOUND]
+		`B_HEADLESS_LANCE`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		21	21
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		8
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		20	20
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[blind]
+		100	70	3000	5	5
+[/BEHAVIOR]

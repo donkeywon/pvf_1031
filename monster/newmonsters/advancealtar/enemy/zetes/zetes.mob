@@ -1,0 +1,188 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`泽忒斯`
+
+[face image]
+	`Monster/MonsterFace.img`	413
+
+[ability table]
+	0
+
+[damage sound]
+	`AMOR_HIT`
+
+[ability category]
+	`[HP MAX]`	`*`	50000
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[freeze resistance]
+	100	100
+
+[stun resistance]
+	100	100
+
+[blind resistance]
+	100	100
+
+[stone resistance]
+	100	100
+
+[sleep resistance]
+	100	100
+
+[hold resistance]
+	100	100
+
+[slow resistance]
+	100	100
+
+[curse resistance]
+	100	100
+
+[confuse resistance]
+	100	100
+
+[category]
+	`[oneside move]`
+[/category]
+
+[fix direction]
+	`[left]`
+
+[initial target]
+	[MONSTER]
+		64597
+	[initial target Permanent]
+		0
+[/initial target]
+
+[HP regen speed]
+	0	0
+
+[MP regen speed]
+	0	0
+
+[level]
+	60	60
+
+[move speed]
+	350	350
+
+[attack speed]
+	700	700
+
+[cast speed]
+	500	500
+
+[hit recovery]
+	800	800
+
+[weight]
+	120000	120000
+
+[lie frame]
+	1	2	2	3	5
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[sit action]
+	`action/Sit.act`
+
+[overturn action]
+	`action/Overturn.act`
+
+[proc action]
+	`action/Proc.act`
+
+[attack action]
+	`Action/Summon.act`
+	`Action/Change.act`
+	`Action/Pierce1_1.act`
+	`Action/Pierce1_2.act`
+[/attack action]
+
+[attack info]
+	``
+	`AttackInfo/Attack.atk`
+	``
+	`AttackInfo/Pierce.atk`
+[/attack info]
+
+[cooltime]
+	1000000000	1000000000	5000	5000
+[/cooltime]
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	1000
+
+[warlike]
+	80
+
+[think term]
+	500
+
+[destination change term]
+	300
+
+[keep distance with target]
+	120
+
+[ai pattern]
+	[normal]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/normal]
+	[expert]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/expert]
+	[master]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/master]
+	[king]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/king]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[base table]
+	`NewMonsters/AdvanceAltar/Enemy/Zetes/table/AdvanceAltarMonsterBaseParameter.tbl`

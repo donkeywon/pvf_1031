@@ -1,0 +1,130 @@
+#PVF_File
+
+[name]
+	`传承 : 神圣的大地女神熊皮胸甲`
+
+[name2]
+	`Legacy : Holy Coat of Sironen`
+
+[grade]
+	22
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	20
+
+[physical attack]
+	17
+
+[magical attack]
+	10
+
+[magical defense]
+	4
+
+[HP MAX]
+	90
+
+[MP MAX]
+	55
+
+[price]
+	17600
+
+[repair price]
+	14080
+
+[value]
+	14080
+
+[equipment physical defense]
+	600	552
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/common/coat.img`	13
+
+[field image]
+	`Item/FieldImage.img`	0
+
+[equipment type]
+	`[coat]`	18
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	33
+
+[weight]
+	1900
+
+[item group name]
+	`lt coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 神圣的大地女神熊皮战甲  套装`
+
+[set item]
+	10483	12483
+[/set item]
+
+[item overpower part]
+
+[set ability]
+	[HP MAX]
+		200
+	[MP MAX]
+		200
+	[physical attack]
+		30
+	[magical attack]
+		30
+	[fire resistance]
+		15
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福可以使自身增加3%%的攻击速度和施放速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`attack speed`
+			`+`	30
+		[stat by condition]
+			`cast speed`
+			`+`	30
+	[/then]
+[/set ability]
+
+[possible kiri protect]

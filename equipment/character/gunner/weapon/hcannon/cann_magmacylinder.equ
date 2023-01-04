@@ -1,0 +1,210 @@
+#PVF_File
+
+[name]
+	`岩浆之拥抱`
+
+[name2]
+	`Magma Cylinder`
+
+[basic explain]
+	`暴击伤害 +10%%
+攻击时， 会出现熔岩地带。
+[聚焦喷火器]增加移动速度。`
+
+[detail explain]
+	`暴击伤害 +10%% (在决斗场中 +5%%)
+攻击时， 有100%%的几率出现熔岩地带； 冷却时间为15秒。 (在决斗场中冷却时间为40秒)
+施放[聚焦喷火器]时， 可以增加移动速度。`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	64
+
+[need material]
+	3285	1200
+
+[price]
+	0
+
+[repair price]
+	93744
+
+[value]
+	89280
+
+[equipment physical attack]
+	625	533
+
+[equipment magical attack]
+	375	320
+
+[separate attack]
+	360	243
+
+[skill levelup]
+	`[gunner]`	45	3
+	`[at gunner]`	45	3
+	`[gunner]`	186	5
+	`[at gunner]`	186	5
+[/skill levelup]
+
+[fire attack]
+	8
+
+[icon]
+	`item/weapon/gunner/hcannon.img`	54
+
+[field image]
+	`Item/field_weapon.img`	4
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	10	4
+
+[layer variation]
+	2790
+	`hcanc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`hcanb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	6	3
+
+[layer variation]
+	2790
+	`at_hcanc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_hcanb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2800
+
+[item group name]
+	`hcannon`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[fire element]`
+
+[skill data up]
+	`[gunner]`	36	`[all]`	`[level]`	3	`%`	30
+	`[at gunner]`	36	`[all]`	`[level]`	3	`%`	30
+[/skill data up]
+
+[if]
+	[cooltime]
+		15000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		48090	0	0	0	50	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	10
+[/then]
+
+[pvp]
+	[if]
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase critical damage]
+			`%`	5
+	[/then]
+	[if]
+		[cooltime]
+			40000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[passive object]
+			48090	0	0	0	50	0	``
+		[/passive object]
+	[/then]
+	[skill data up]
+		`[gunner]`	36	`[all]`	`[level]`	3	`%`	15
+		`[at gunner]`	36	`[all]`	`[level]`	3	`%`	15
+	[/skill data up]
+[/pvp]
+
+[routing priority]
+	`gunner`	2
+	`at gunner`	2
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

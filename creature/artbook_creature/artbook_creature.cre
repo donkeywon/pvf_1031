@@ -1,0 +1,121 @@
+#PVF_File
+
+[name]
+	`黑暗艺术家`
+
+[width]
+	10	10
+
+[floating height]
+	0
+
+[character span]
+	-50
+
+[layer]
+	`[normal]`
+
+[direction correct]
+	1
+
+[move speed]
+	286	238	114	95	70
+
+[gravity]
+	1500
+
+[start level]
+	1
+
+[permission level]
+	1
+
+[max level]
+	50
+
+[parent max level]
+	50
+
+[artifact slot]
+	`red`
+	`blue`
+	`green`
+[/artifact slot]
+
+[piercing]
+	0	0	1000	0
+[/piercing]
+
+[basic motion]
+	`Animation/stand_body.ani`
+
+[walk motion]
+	`Animation/move_body.ani`
+
+[run motion]
+	`Animation/move_body.ani`
+
+[response motion]
+	`Animation/call_body.ani`
+
+[equip motion]
+	`Animation/equip_body.ani`
+
+[revision x]
+	0
+
+[revision y]
+	30
+
+[skill list]
+	[skill node]
+		0	
+		[skill type]
+			`general skill`
+		[skill name]
+			`暗黑之触`
+		[skill explain]
+			`可以为角色的武器附加暗属性， 效果持续20秒。(冷却时间为30秒)`
+		[skill recovery time]
+			28000
+		[learn skill level]
+			1
+		[skill mp]
+			0
+		[skill motion]
+			`Animation/skill_body.ani`
+		[skill under effect]
+			``
+		[skill over effect]
+			``
+		[skill info]
+			`skill/skill.skl`
+		[attack info]
+			``
+	[/skill node]
+	[skill node]
+		0	
+		[skill type]
+			`over skill`
+		[skill name]
+			`虚无之球`
+		[skill explain]
+			`使用虚无之球攻击敌人， 并使其被击退一段距离。`
+		[skill recovery time]
+			40000
+		[learn skill level]
+			30
+		[skill mp]
+			180
+		[skill motion]
+			`Animation/overskill_body.ani`
+		[skill under effect]
+			``
+		[skill over effect]
+			``
+		[skill info]
+			`skill/overskill.skl`
+		[attack info]
+			`AttackInfo/overskill.atk`
+	[/skill node]
+[/skill list]

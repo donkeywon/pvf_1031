@@ -1,0 +1,149 @@
+#PVF_File
+
+[name]
+	`布鲁的怨灵图腾`
+
+[basic explain]
+	`攻击时， 有4%%的几率出现布鲁之怨灵。`
+
+[detail explain]
+	`攻击时， 有4%%的几率出现布鲁之怨灵。 (冷却时间为20秒； 在决斗场中几率为1%%)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	87
+
+[stuck]
+	-1
+
+[price]
+	142400
+
+[repair price]
+	119616
+
+[value]
+	113920
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	897	844
+
+[equipment magical attack]
+	769	724
+
+[separate attack]
+	510	347
+
+[dark attack]
+	12
+
+[dark resistance]
+	12
+
+[icon]
+	`item/new_equipment/01_weapon/priest/totem/totem.img`	92
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	24	8
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+	[/module]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		4
+	[passive object]
+		9104	0	0	0	70	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[module]
+		`[pvp type]`
+	[/module]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		1
+	[passive object]
+		48109	0	0	0	70	0	``
+	[/passive object]
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

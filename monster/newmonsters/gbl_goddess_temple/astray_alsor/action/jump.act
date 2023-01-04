@@ -1,0 +1,58 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/JumpAttack.ani`
+	[SOUND]
+		`HUNT_JUMP`	0
+	[/SOUND]
+	[SPEECH]
+		`这里……就是你的葬身之地！`	0	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11119
+		[PARTICLE FILENAME]
+			`../Particle/bone_spear.ptl`
+		[LEVEL]
+			0
+		[POS]
+			150	0	50
+		[USE MY DIRECTION]
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SHAKING]
+		5	500
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8207
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

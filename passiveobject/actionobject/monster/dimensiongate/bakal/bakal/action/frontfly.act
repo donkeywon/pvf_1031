@@ -1,0 +1,211 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/frontfly.ani`
+	[SUB ANI]
+		`../animation/frontfly_wing.ani`	0	-10
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-150
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time7`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		4
+	[OFF]
+	[TRIGGER]
+		5
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time7`	
+		[+]
+			6000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		3	4	5	6
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10328
+		[PARTICLE FILENAME]
+			`../Particle/bigstone.ptl`
+		[LEVEL]
+			0
+		[POS]
+			450	240	500
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		4
+	[ON]
+	[TRIGGER]
+		5
+	[RESET]
+	[TRIGGER]
+		5
+	[OFF]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10330
+		[PARTICLE FILENAME]
+			`../Particle/bigstone.ptl`
+		[LEVEL]
+			0
+		[POS]
+			623	240	500
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		4
+	[ON]
+	[TRIGGER]
+		5
+	[RESET]
+	[TRIGGER]
+		5
+	[OFF]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10331
+		[PARTICLE FILENAME]
+			`../Particle/bigstone.ptl`
+		[LEVEL]
+			0
+		[POS]
+			770	240	500
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		4
+	[ON]
+	[TRIGGER]
+		5
+	[RESET]
+	[TRIGGER]
+		5
+	[OFF]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10332
+		[PARTICLE FILENAME]
+			`../Particle/bigstone.ptl`
+		[LEVEL]
+			0
+		[POS]
+			912	240	500
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		4
+	[ON]
+	[TRIGGER]
+		5
+	[RESET]
+	[TRIGGER]
+		5
+	[OFF]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

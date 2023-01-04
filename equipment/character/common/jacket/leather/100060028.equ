@@ -1,0 +1,168 @@
+#PVF_File
+
+[name]
+	`传承 : 生命女神的狼皮夹克[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`熔岩药瓶大成功率 +0.5%%`
+
+[grade]
+	37
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	35
+
+[physical attack]
+	25
+
+[magical defense]
+	7
+
+[MP MAX]
+	100
+
+[price]
+	0
+
+[repair price]
+	23680
+
+[value]
+	0
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	960	912
+
+[physical critical hit]
+	1
+
+[icon]
+	`Item/common/coat.img`	14
+
+[field image]
+	`Item/FieldImage.img`	0
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[equipment type]
+	`[coat]`	18
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	33
+
+[weight]
+	1900
+
+[item group name]
+	`lt coat`
+
+[cool time]
+	10000
+
+[magical attack]
+	15
+
+[skill data up]
+	`[mage]`	101	`[all]`	`[static]`	0	`+`	-5
+	`[mage]`	101	`[all]`	`[static]`	2	`+`	5
+[/skill data up]
+
+[set name]
+	`传承 : 生命女神的狼皮战甲  套装`
+
+[set item]
+	100060027	100110016	100260017
+[/set item]
+
+[item overpower part]
+
+[set ability]
+	[HP MAX]
+		210
+	[MP MAX]
+		180
+	[physical attack]
+		53
+	[magical attack]
+		53
+	[attack speed]
+		20
+	[cast speed]
+		20
+	[if]
+		[cooltime]
+			30000
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			20000
+		[probability]
+			2
+		[stat]
+			`stuck resistance`
+			`+`	70
+	[/then]
+	[stuck]
+		-2
+	[skill data up]
+		`[mage]`	101	`[all]`	`[static]`	0	`+`	-25
+		`[mage]`	101	`[all]`	`[static]`	2	`+`	15
+		`[mage]`	101	`[all]`	`[static]`	1	`+`	10
+	[/skill data up]
+	[fullset basic explain]
+		`被攻击时， 有2%%的几率使自身增加7%%的回避率， 效果持续20秒。
+[熔岩药瓶]大成功率 +1.5%%
+[熔岩药瓶]成功率 +1%%
+进入地下城时， 因传承的祝福可以使自身增加5%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	50
+	[/then]
+[/set ability]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]

@@ -1,0 +1,53 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/stop.ani`
+	[SUB ANI]
+		`../Animation/effect/shock_eff.ani`	0	1
+		`../Animation/G_main_s_dest.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`Stop_Stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`Stop_Move.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`Stop_Damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`Stop_Damage2.act`
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		4
+[/BEHAVIOR]

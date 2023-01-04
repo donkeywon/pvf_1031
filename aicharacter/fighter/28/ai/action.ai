@@ -1,0 +1,72 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	100.0	100.0	50.0	50.0
+		[true]
+	
+		[think]
+			[void]
+				`get random()`	0.0	100.0
+		
+			[think]
+				[last result]
+					`<=`	50.0
+				[true]
+				[return]
+					6
+				[false]
+				[return]
+					7
+			[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`enemy number of in attack area()`	150.0	150.0	100.0	100.0
+	
+		[think]
+			[last result]
+				`>=`	2.0
+			[true]
+			[import ai]
+				`BattleAI.ai`
+			[false]
+		
+			[think]
+				[check use skill]
+					40
+				[true]
+				[return]
+					1
+				[false]
+			
+				[think]
+					[set party member]
+						1
+				
+					[think]
+						[party member alive]
+						[true]
+					
+						[think]
+							[check use skill]
+								31
+							[true]
+							[return]
+								2
+							[false]
+							[return]
+								-1
+						[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

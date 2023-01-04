@@ -1,0 +1,141 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	``
+
+[explain]
+	`攻击时以1%%机率30秒内物理防御力增加600。施展时以2%%机率30秒内魔法防御力增加600。被击时以5%%机率30秒内物理防御力增加600，魔法防御力增加600。`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	91
+
+[custom animation]
+	`TitleAnimation/puppet_stage.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[usable period]
+	30
+
+[HP MAX]
+	300
+
+[physical defense]
+	27
+
+[magical defense]
+	18
+
+[all elemental resistance]
+	5
+
+[all activestatus resistance]
+	5
+
+[stuck resistance]
+	30
+
+[inventory limit]
+	5000
+
+[move speed]
+	20
+
+[attack speed]
+	10
+
+[cast speed]
+	10
+
+[hit recovery]
+	100
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`equipment physical defense`
+		`+`	600
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`equipment magical defense`
+		`+`	600
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`equipment physical defense`
+		`+`	600
+	[stat]
+		`equipment magical defense`
+		`+`	600
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

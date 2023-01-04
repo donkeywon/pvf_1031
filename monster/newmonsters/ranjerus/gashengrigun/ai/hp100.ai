@@ -1,0 +1,23 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`damage check()`	40000
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	9
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				9
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+[/ai pattern]

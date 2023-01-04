@@ -1,0 +1,150 @@
+#PVF_File
+
+[name]
+	`传承 : 神圣的战争女神黑陶胸甲`
+
+[name2]
+	`Legacy : Holy Coat of Ishtar`
+
+[grade]
+	54
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	50
+
+[physical attack]
+	30
+
+[magical attack]
+	17
+
+[HP MAX]
+	250
+
+[MP MAX]
+	95
+
+[price]
+	48600
+
+[repair price]
+	42865
+
+[value]
+	38880
+
+[equipment physical defense]
+	2052	1980
+
+[skill levelup]
+	`[swordman]`	68	1
+	`[fighter]`	19	1
+	`[fighter]`	18	1
+	`[at fighter]`	19	1
+	`[at fighter]`	18	1
+	`[priest]`	35	1
+	`[thief]`	53	1
+	`[demonic swordman]`	68	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/IconArmor.img`	284
+
+[field image]
+	`Item/field_equip.img`	5
+
+[equipment type]
+	`[coat]`	19
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3100
+
+[item group name]
+	`la coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 神圣的战争女神黑陶轻甲  套装`
+
+[set item]
+	10886	12886	14877	18882	16877
+[/set item]
+
+[set ability]
+	[HP MAX]
+		200
+	[MP MAX]
+		200
+	[physical attack]
+		60
+	[physical defense]
+		60
+	[move speed]
+		30
+	[attack speed]
+		30
+	[stuck]
+		-2
+	[skill levelup]
+		`[swordman]`	72	1
+		`[fighter]`	68	1
+		`[fighter]`	89	1
+		`[at fighter]`	68	1
+		`[at fighter]`	89	1
+		`[priest]`	30	1
+		`[thief]`	55	1
+		`[demonic swordman]`	72	1
+	[/skill levelup]
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福增加自身7%%的攻击速度和施放速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`attack speed`
+			`+`	70
+		[stat by condition]
+			`cast speed`
+			`+`	70
+	[/then]
+[/set ability]
+
+[possible kiri protect]

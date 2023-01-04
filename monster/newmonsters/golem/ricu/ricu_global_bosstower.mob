@@ -1,0 +1,260 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`寒冰巨人利库`
+
+[face image]
+	`Monster/MonsterFace.img`	224
+
+[die effect]
+	0	3	1
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	1380
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	390
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	300
+[/ability category]
+
+[speech on situation]
+	`[on die]`	`你......高兴得太早了......`	0
+[/speech on situation]
+
+[category]
+	`[hybrid]`
+[/category]
+
+[fire resistance]
+	-5	-5
+
+[water resistance]
+	50	50
+
+[dark resistance]
+	20	20
+
+[light resistance]
+	20	20
+
+[slow resistance]
+	100	100
+
+[freeze resistance]
+	100	100
+
+[poison resistance]
+	100	100
+
+[stun resistance]
+	100	100
+
+[curse resistance]
+	100	100
+
+[blind resistance]
+	100	100
+
+[lightning resistance]
+	100	100
+
+[stone resistance]
+	100	100
+
+[sleep resistance]
+	100	100
+
+[weapon break resistance]
+	100	100
+
+[bleeding resistance]
+	100	100
+
+[piercing resistance]
+	100	100
+
+[stuck resistance]
+	100	100
+
+[confuse resistance]
+	100	100
+
+[hold resistance]
+	100	100
+
+[armor break resistance]
+	100	100
+
+[HP regen speed]
+	10	10
+
+[MP regen speed]
+	0	0
+
+[level]
+	65	65
+
+[move speed]
+	1100	1100
+
+[attack speed]
+	1470	1470
+
+[cast speed]
+	2000	2000
+
+[hit recovery]
+	1320	1320
+
+[weight]
+	170000	170000
+
+[lie frame]
+	2	2	2	2	2
+
+[common champion drop item]
+[/common champion drop item]
+
+[item]
+[/item]
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/move.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[action list]
+	`Action/Attack1.act`
+	`Action/Attack2.act`
+	`Action/IceWave1.act`
+	`Action/IceWave2.act`
+	`Action/IceWave3.act`
+	`Action/Command1.act`
+	`Action/Command2.act`
+	`Action/Command3.act`
+	`Action/Summon.act`
+
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack1.atk`
+	`AttackInfo/Attack2.atk`
+	`AttackInfo/IceWave1.atk`
+	`AttackInfo/IceWave2.atk`
+	`AttackInfo/IceWave3.atk`
+	`AttackInfo/Command1.atk`
+	`AttackInfo/Command2.atk`
+	`AttackInfo/Command3.atk`
+	`AttackInfo/Summon.atk`
+[/attack info]
+
+[cooltime]
+	5000	7000	7000	7000	7000	7000	7000	7000	12000
+[/cooltime]
+
+[atk super on scr]
+	0
+	`[unbreakable]`	-1	-1	-1	-1
+[/atk super on scr]
+
+[atk super on scr]
+	1
+	`[unbreakable]`	-1	-1	-1	-1
+[/atk super on scr]
+
+[atk super on scr]
+	8
+	`[unbreakable]`	-1	-1	-1	-1
+[/atk super on scr]
+
+[attack sound]
+	`R_RIKU_ATK`
+
+[appear sound]
+	`RIKU_MEET`
+
+[damage sound]
+	`R_RIKU_DMG`
+
+[die sound]
+	`RIKU_DIE`
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	1000
+
+[warlike]
+	100
+
+[think term]
+	200
+
+[destination change term]
+	1000
+
+[keep distance with target]
+	250
+
+[keep range distance with target]
+	50	30	80	80
+
+[ai pattern]
+	[normal]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/normal]
+	[expert]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/expert]
+	[master]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/master]
+	[king]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/king]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[level of difficulty]
+	[normal]
+		-40	2000
+	[ex]
+		-20	1000
+	[master]
+		0	0
+	[king]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]

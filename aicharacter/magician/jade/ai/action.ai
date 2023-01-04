@@ -1,0 +1,52 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[map index]
+			`==`	16409
+		[false]
+	
+		[think]
+			[map index]
+				`==`	16420
+			[false]
+			[return]
+				-1
+			[true]
+		
+			[think]
+				[check team]
+					1
+				[true]
+			
+				[think]
+					[set team]
+						-1
+					[true]
+					[import ai]
+						`BetrayAction.ai`
+				[/think]
+	[false]
+	[import ai]
+		`BetrayAction.ai`
+	[/think]
+	[/think]
+	[true]
+	[think]
+		[check team]
+			1
+		[true]
+	
+		[think]
+			[set team]
+				-1
+			[true]
+			[import ai]
+				`BetrayAction.ai`
+		[/think]
+	[false]
+	[import ai]
+		`BetrayAction.ai`
+	[/think]
+	[/think]
+[/ai pattern]

@@ -1,0 +1,156 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack2.ani`
+	[SUB ANI]
+		`../animation/effect/Berias_sword_eff.ani`	0	-2
+		`../animation/effect/Berias_sword_effd.ani`	0	-1
+		`../animation/cap/Attack2.ani`	0	1
+		`../animation/shield/Attack2.ani`	0	2
+		`../animation/effect/Berias_body_eff.ani`	0	3
+		`../animation/effect/Berias_bodylight_eff.ani`	0	4
+		`../animation/effect/sword_eff.ani`	0	5
+		`../animation/effect/swordhit_eff.ani`	0	6
+		`../animation/effect/swordaura_eff.ani`	0	7
+		`../animation/effect/handaura_eff.ani`	0	8
+		`../animation/effect/handaura_eff2.ani`	0	9
+	[/SUB ANI]
+	[SPEECH]
+		`破裂吧！大地！`	2	100
+	[/SPEECH]
+	[SOUND]
+		`BERIAS_SKILL_02`	0
+		`BERIAS_SWORD_PUT`	3
+		`BERIAS_ENERGY_GET`	5
+		`BERIAS_ENERGY_GET`	6
+		`BERIAS_ENERGY_GET`	7
+		`BERIAS_ENERGY_GET`	8
+		`BERIAS_ENERGY_GET`	9
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		3	500
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			5000
+	[/CHECKUP]
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			5000
+	[/CHECKUP]
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			5000
+	[/CHECKUP]
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			5000
+	[/CHECKUP]
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9983
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ADD CATEGORY]
+	[FIXTURE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[REMOVE CATEGORY]
+	[FIXTURE]
+[/BEHAVIOR]

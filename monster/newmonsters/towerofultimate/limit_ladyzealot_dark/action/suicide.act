@@ -1,0 +1,120 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Suicide.ani`
+	[SUB ANI]
+		`../Animation/BerserkEffect.ani`	0	0
+		`../Animation/BerserkEffectGlow.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`沉默的力量是可怕的！`	2	30
+		`好好享受下沉默的滋味吧！`	2	30
+	[/SPEECH]
+	[SOUND]
+		`AKARES_ATK_02`	0
+		`HS_HIT`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`Dcount`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			2000
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[MUCU LIMIT CONTROL]
+		10000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[IF]
+		`Dcount`	
+		[>=]
+			37
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[IF]
+		`Dcount`	
+		[<=]
+			37
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		39
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		4
+	[RESET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`Dcount`	
+		[=]
+			`Dcount`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		3
+[/BEHAVIOR]

@@ -1,0 +1,37 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/ShootTree.ani`
+	[SUB ANI]
+		`../animation/Whisker/ShootTree.ani`	0	0
+		`../animation/Top/ShootTree.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`走开！别妨碍我种~树~`	0	50
+	[/SPEECH]
+	[SOUND]
+		`R_AXE`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8004
+		[PARTICLE FILENAME]
+			`../particle/JunkTreeDown.ptl`
+		[LEVEL]
+			40
+		[POS]
+			63	0	89
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

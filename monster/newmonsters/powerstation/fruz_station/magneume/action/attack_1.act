@@ -1,0 +1,40 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_1.ani`
+	[SUB ANI]
+		`../Animation/eff/attack_1.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`哈~~~~~啊！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+	[CASTING]
+		700	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16086
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			190	0	85
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

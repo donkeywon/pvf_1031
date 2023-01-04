@@ -1,0 +1,188 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	8
+[/dungeon]
+
+[type]
+	`[boss]`
+
+[greed]
+	`JJ BB`
+
+[tile]
+	`Tile/ForestOver.til`
+	`Tile/ForestOver.til`
+	`Tile/ForestOverUnder.til`
+	`Tile/ForestUnder.til`
+	`Tile/ForestUnder.til`
+	`Tile/ForestUnderOver.til`
+	`Tile/ForestOver.til`
+	`Tile/ForestOver.til`
+	`Tile/ForestOver.til`
+	`Tile/ForestOver.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/far0.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/mid0.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`../CommonAnimation/FireCurtain.ani`
+		[layer]
+			`[close]`
+		[order]
+			`[upper]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	13	242	2227	242	1120	144	278	347
+
+[sound]
+	`M_GRAKKARAK_BOSS`
+	`AMB_FOREST_03`
+[/sound]
+
+[animation]
+	`Animation/BurntTree4.ani`	`[close]`	709	426	0
+	`Animation/DeadTree1.ani`	`[close]`	1009	497	0
+	`Animation/DeadTree1.ani`	`[close]`	1531	502	0
+	`Animation/BurntTree4.ani`	`[close]`	1920	421	0
+	`Animation/Stone0.ani`	`[normal]`	429	232	0
+	`Animation/Stone1.ani`	`[normal]`	1905	231	0
+	`Animation/Stone1.ani`	`[bottom]`	702	295	0
+	`Animation/Stone0.ani`	`[bottom]`	1176	216	0
+	`Animation/Stone0.ani`	`[bottom]`	1587	290	0
+	`Animation/StonePillar1.ani`	`[closeback]`	577	145	0
+	`Animation/DeadTree0.ani`	`[closeback]`	336	131	0
+	`Animation/DeadTree1.ani`	`[closeback]`	833	160	0
+	`Animation/StonePillar1.ani`	`[closeback]`	1097	160	0
+	`Animation/DeadTree1.ani`	`[closeback]`	1417	128	0
+	`Animation/DeadTree1.ani`	`[closeback]`	2050	145	0
+[/animation]
+
+[passive object]
+	7	200	260	540
+	231	1590	148	0
+	222	1749	160	0
+	222	1670	161	0
+	222	365	163	0
+	231	1146	163	0
+	222	281	165	0
+	221	2035	170	0
+	222	773	190	0
+	222	857	191	0
+	231	626	200	0
+	221	1647	208	0
+	221	1674	235	0
+	264	1126	259	0
+	306	442	278	0
+	303	1321	285	0
+	221	1718	295	0
+	221	1394	329	0
+	303	1594	335	0
+	222	1241	341	0
+	222	1168	343	0
+	306	789	347	0
+[/passive object]
+
+[monster]
+	7	0	16	1243	160	0	1	1	`[fixed]`	`[normal]`
+	11	0	7	1354	177	0	1	1	`[fixed]`	`[normal]`
+	5002	0	16	492	217	0	1	1	`[fixed]`	`[normal]`
+	13	0	14	949	226	0	1	1	`[fixed]`	`[normal]`
+	14	0	17	803	260	0	1	1	`[fixed]`	`[normal]`
+	22	1	0	290	270	0	2	1	`[fixed]`	`[boss]`
+	5003	0	16	607	285	0	1	1	`[fixed]`	`[normal]`
+	12	0	14	921	310	0	1	1	`[fixed]`	`[normal]`
+	11	0	7	1468	328	0	1	1	`[fixed]`	`[normal]`
+	7	0	16	1310	340	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[special passive object]
+	231	542	154	0	1
+	`[item]`	0	1	-1	-1	-1
+	222	450	161	0	1
+	`[item]`	1	-1	2	-1	-1
+	231	585	175	0	1
+	`[item]`	0	1	-1	-1	-1
+	231	1618	177	0	1
+	`[item]`	0	1	-1	-1	-1
+	221	2088	182	0	1
+	`[trap]`	2610	1	3	5	-1
+	221	1983	187	0	1
+	`[trap]`	2410	1	3	10	-1
+	222	688	191	0	1
+	`[item]`	1	-1	3	-1	-1
+	221	681	244	0	1
+	`[trap]`	2212	1	3	10	-1
+	221	1699	266	0	1
+	`[trap]`	2510	1	3	5	-1
+	221	683	304	0	1
+	`[trap]`	2311	1	3	10	-1
+	221	1756	326	0	1
+	`[monster]`	4	6	5	10	-1
+	222	1112	340	0	1
+	`[trap]`	40002	160	3	10	-1
+	221	1368	356	0	1
+	`[monster]`	4	6	5	10	-1	
+[/special passive object]
+
+[NPC]
+	1000	`[left]`	0	0	0
+[/NPC]
+
+[event monster position]
+	1237	191	0
+	1241	265	0
+	1390	205	0
+	153	167	0
+[/event monster position]
+
+[map name]
+	`PVP 无名`

@@ -1,0 +1,63 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/solo/floor02.ani`
+	[SUB ANI]
+		`../Animation/solo/floor02_effect05.ani`	0	0
+		`../Animation/solo/floor02_Lsword01.ani`	0	0
+		`../Animation/solo/floor02_effect10.ani`	0	0
+		`../Animation/solo/floor02_Lsword00.ani`	0	0
+		`../Animation/solo/floor02_effect01.ani`	0	0
+		`../Animation/solo/floor02_effect03.ani`	0	0
+		`../Animation/solo/floor02_effect14.ani`	0	0
+		`../Animation/solo/floor02_effect04.ani`	0	0
+		`../Animation/solo/floor02_effect06.ani`	0	0
+		`../Animation/solo/floor02_effect07.ani`	0	0
+		`../Animation/solo/floor02_effect08.ani`	0	0
+		`../Animation/solo/floor02_effect09.ani`	0	0
+		`../Animation/solo/floor02_effect02.ani`	0	0
+		`../Animation/solo/floor02_effect11.ani`	0	0
+		`../Animation/solo/floor02_effect12.ani`	0	0
+		`../Animation/solo/floor02_effect13.ani`	0	0
+		`../Animation/solo/floor02_effect00.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	1000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

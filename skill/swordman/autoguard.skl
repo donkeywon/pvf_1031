@@ -1,0 +1,139 @@
+#PVF_File
+
+[name]
+	`自动格挡`
+
+[name2]
+	`Auto Guard`
+
+[basic explain]
+	`在自身被击中的前一秒以剑士的本能进行格挡， 效果持续一定时间。`
+
+[explain]
+	`在自身被击中的前一秒以剑士的本能进行格挡， 且施放自身已学的[格挡]技能， 效果持续一定时间。`
+
+[purchase cost]
+	20
+[/purchase cost]
+
+[pre required skill]
+	1	1
+[/pre required skill]
+
+[type]
+	`[active]`
+
+[skill class]
+	1
+
+[maximum level]
+	20
+
+[growtype maximum level]
+	0	10	0	0	0	10
+
+[skill fitness growtype]
+	1
+[/skill fitness growtype]
+
+[required level]
+	25
+
+[required level range]
+	3
+
+[auto cooltime apply]
+	1
+
+[icon]
+	`Character/Swordman/Effect/SkillIcon.img`	28
+	`Character/Swordman/Effect/SkillIcon.img`	29
+
+[command]
+	{6=`(DOWN)`}
+	{8=`,`}
+	{6=`(UP)`}
+	{8=`,`}
+	{6=`(BUFF)`}
+[/command]
+
+[command key explain]
+	`操作指令 : ↓↑ + Space`
+
+[dungeon]
+	[consume MP]
+		60	420
+	[casting time]
+		700	700
+	[cool time]
+		30000	30000
+	[level info]
+		2
+		5	120000
+		10	120000
+		15	120000
+		20	120000
+		25	120000
+		30	120000
+		35	120000
+		40	120000
+		45	120000
+		50	120000
+		55	120000
+		60	120000
+		65	120000
+		70	120000
+		75	120000
+		80	120000
+		85	120000
+		90	120000
+		95	120000
+		100	120000
+	[/level info]
+[/dungeon]
+
+[pvp]
+	[static data]
+		500
+	[/static data]
+	[level info]
+		2
+		2	20000
+		4	20000
+		6	20000
+		8	20000
+		10	20000
+		12	20000
+		14	20000
+		16	20000
+		18	20000
+		20	20000
+		22	20000
+		24	20000
+		26	20000
+		28	20000
+		30	20000
+		32	20000
+		34	20000
+		36	20000
+		38	20000
+		40	20000
+	[/level info]
+[/pvp]
+
+[death tower]
+[/death tower]
+
+[warroom]
+[/warroom]
+
+[level property]
+	1	99
+	`施放机率 : <int>%%
+持续时间 : <float1>秒`
+	-1	0	1.0
+	-1	1	0.001
+[/level property]
+
+[feature skill index]
+	145

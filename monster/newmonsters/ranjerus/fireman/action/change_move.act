@@ -1,0 +1,67 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Move.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[<=]
+			45
+		[%]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Y AXIS]
+			0
+	[/SET SPEED]
+	[SET ACTION]
+	[ATTACK]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`Change_Stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`Change_Move.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		`Change_Down.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`Change_Damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`Change_Damage2.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`Change_Sit.act`
+	[CHANGE ACTION FILE]
+	[OVERTURN]
+		`Change_Overturn.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`Change_Shoot_end.act`
+	[CHANGE DIRECTION BY TARGET]
+		1
+[/BEHAVIOR]

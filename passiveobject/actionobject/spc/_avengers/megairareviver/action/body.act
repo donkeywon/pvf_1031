@@ -1,0 +1,59 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Body.ani`
+	[SUB ANI]
+		`../Animation/Count.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`MEGAIRA_DMG_02`	1
+		`MEGAIRA_DMG_02`	2
+		`MEGAIRA_DMG_02`	3
+		`MEGAIRA_DMG_02`	4
+		`MEGAIRA_DMG_02`	5
+		`MEGAIRA_DMG_02`	6
+		`MEGAIRA_DMG_02`	7
+		`MEGAIRA_DMG_02`	8
+		`MEGAIRA_DMG_02`	9
+		`MEGAIRA_SKILL_01`	10
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		10	10
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61349
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61349
+		[LEVEL]
+			60
+		[POS]
+			0	0	0
+		[TEAM]
+			100
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+	[LOCK QUEST UNTIL]
+	[CHANGE MODULE]
+		6559
+	[DESTROY]
+[/BEHAVIOR]

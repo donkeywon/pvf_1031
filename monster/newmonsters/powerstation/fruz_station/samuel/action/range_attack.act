@@ -1,0 +1,53 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/range_attack.ani`
+	[SUB ANI]
+		`../Animation/range_samuel_blow_circle.ani`	0	1
+		`../Animation/range_samuel_blow_boom.ani`	0	2
+		`../Animation/range_attack_1.ani`	0	3
+		`../Animation/range_samuel_blow_charge.ani`	0	4
+	[/SUB ANI]
+	[SPEECH]
+		`我要把你碾碎！`	2	50
+	[/SPEECH]
+	[SOUND]
+		`SAMUEL_SKILL_04`	1
+		`SAMUEL_SMACK`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			300
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	800
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

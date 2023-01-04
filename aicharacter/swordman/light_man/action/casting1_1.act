@@ -1,0 +1,32 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/WaveEyeCast.ani`
+[/MOTION]
+
+[HOLD POSITION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		300	700	300	150	0	0	0
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16058
+		[PARTICLE FILENAME]
+			`../key/shout.ptl`
+		[LEVEL]
+			87
+		[POS]
+			0	10	0
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

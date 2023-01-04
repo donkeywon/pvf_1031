@@ -1,0 +1,217 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AttackSilenceMissile/SilenceMissile_Dummy.ani`
+	[SUB ANI]
+		`../Animation/AttackSilenceMissile/SilenceMissile_19_arm.ani`	0	1
+		`../Animation/AttackSilenceMissile/SilenceMissile_18_body.ani`	0	2
+		`../Animation/AttackSilenceMissile/SilenceMissile_17_neck.ani`	0	3
+		`../Animation/AttackSilenceMissile/SilenceMissile_16_neck.ani`	0	4
+		`../Animation/AttackSilenceMissile/SilenceMissile_15_neck.ani`	0	5
+		`../Animation/AttackSilenceMissile/SilenceMissile_14_neck.ani`	0	6
+		`../Animation/AttackSilenceMissile/SilenceMissile_13_neck.ani`	0	7
+		`../Animation/AttackSilenceMissile/SilenceMissile_12_back.ani`	0	8
+		`../Animation/AttackSilenceMissile/SilenceMissile_11_back.ani`	0	9
+		`../Animation/AttackSilenceMissile/SilenceMissile_10_back.ani`	0	10
+		`../Animation/AttackSilenceMissile/SilenceMissile_09_back.ani`	0	11
+		`../Animation/AttackSilenceMissile/SilenceMissile_08_back.ani`	0	12
+		`../Animation/AttackSilenceMissile/SilenceMissile_07_back.ani`	0	13
+		`../Animation/AttackSilenceMissile/SilenceMissile_06_head.ani`	0	14
+		`../Animation/AttackSilenceMissile/SilenceMissile_05_head.ani`	0	15
+		`../Animation/AttackSilenceMissile/SilenceMissile_04_head.ani`	0	16
+		`../Animation/AttackSilenceMissile/SilenceMissile_03_headhorn.ani`	0	17
+		`../Animation/AttackSilenceMissile/SilenceMissile_02_shoulder.ani`	0	18
+		`../Animation/AttackSilenceMissile/SilenceMissile_01_arm.ani`	0	19
+		`../Animation/AttackSilenceMissile/SilenceMissile_00_hand.ani`	0	20
+		`../Animation/AttackSilenceMissile/SilenceMissile_Effect_S_HornDodge.ani`	0	21
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		17	17
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		23	23
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		28	28
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54104
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			-400	-350	-300	-250	-200
+		[/RANDOM SELECT]
+	1	
+		[RANDOM SELECT]
+			500	450	400	350	300
+		[/RANDOM SELECT]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54104
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			-400	-350	-300	-250	-200
+		[/RANDOM SELECT]
+	-1	
+		[RANDOM SELECT]
+			500	450	400	350	300
+		[/RANDOM SELECT]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54104
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			-400	-350	-300	-250	-200
+		[/RANDOM SELECT]
+	1	
+		[RANDOM SELECT]
+			500	450	400	350	300
+		[/RANDOM SELECT]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54104
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			-400	-350	-300	-250	-200
+		[/RANDOM SELECT]
+	-1	
+		[RANDOM SELECT]
+			500	450	400	350	300
+		[/RANDOM SELECT]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54104
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			-400	-350	-300	-250	-200
+		[/RANDOM SELECT]
+	1	
+		[RANDOM SELECT]
+			500	450	400	350	300
+		[/RANDOM SELECT]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54104
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			-400	-350	-300	-250	-200
+		[/RANDOM SELECT]
+	-1	
+		[RANDOM SELECT]
+			500	450	400	350	300
+		[/RANDOM SELECT]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54104
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			-400	-350	-300	-250	-200
+		[/RANDOM SELECT]
+	1	
+		[RANDOM SELECT]
+			500	450	400	350	300
+		[/RANDOM SELECT]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

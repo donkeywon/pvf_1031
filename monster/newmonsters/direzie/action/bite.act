@@ -1,0 +1,27 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Bite.ani`
+	[SUB ANI]
+		`../Animation/Effect/normal/Bite.ani`	0	-1
+		`../Animation/Effect/dodge/Bite.ani`	0	-2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		500	2500	100	100	0	0	0
+	[PULL APPENDAGE]
+		5.0	10.0	3000
+[/BEHAVIOR]

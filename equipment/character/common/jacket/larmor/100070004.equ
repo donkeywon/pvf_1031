@@ -1,0 +1,151 @@
+#PVF_File
+
+[name]
+	`阿法利亚之息胸甲`
+
+[name2]
+	``
+
+[grade]
+	75
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[physical attack]
+	38
+
+[magical attack]
+	25
+
+[move speed]
+	10
+
+[HP MAX]
+	300
+
+[price]
+	90000
+
+[repair price]
+	75600
+
+[value]
+	72000
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	2988	2772
+
+[icon]
+	`item/new_equipment/04_larmor/coat/larmor_coat.img`	8
+
+[field image]
+	`Item/field_equip.img`	5
+
+[equipment type]
+	`[coat]`	21
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3100
+
+[item group name]
+	`la coat`
+
+[cool time]
+	10000
+
+[set name]
+	`阿拉德之息套装`
+
+[set item]
+	100070004	100120004	100170004	100220004	100270004
+[/set item]
+
+[set ability]
+	[fullset basic explain]
+		`前冲攻击力 +15%%
+被暴击时自身伤害 -20%%
+攻击时， 附加5%%的伤害。`
+	[if]
+		[attack success]
+			1
+		[my state]
+			`dash attack`
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	15
+	[/then]
+	[if]
+		[attack condition]
+			`critical`
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[add absolute defense percent]
+			`all`	20
+	[/then]
+	[skill levelup]
+		`[swordman]`	68	3
+		`[fighter]`	19	3
+		`[fighter]`	18	3
+		`[at fighter]`	19	3
+		`[at fighter]`	18	3
+		`[priest]`	78	3
+		`[thief]`	52	3
+		`[demonic swordman]`	68	3
+	[/skill levelup]
+	[if]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	5
+	[/then]
+	[attack speed]
+		40
+	[physical critical hit]
+		8
+	[magical critical hit]
+		8
+	[cast speed]
+		80
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

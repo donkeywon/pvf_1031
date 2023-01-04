@@ -1,0 +1,108 @@
+#PVF_File
+
+[name]
+	`罪恶之灵 - 左眼`
+
+[name2]
+	`找不到代码name2_24262`
+
+[basic explain]
+	`施放技能时， 有3%%的几率使300px范围内最近的敌人进入石化状态5秒。
+无法进行分解。`
+
+[detail explain]
+	`施法技能时， 有3%%的几率使300px范围内最近的敌人进入石化状态5秒。 (若敌人高于Lv29， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+无法进行分解。`
+
+[grade]
+	29
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	25
+
+[physical attack]
+	20
+
+[magical attack]
+	25
+
+[price]
+	34800
+
+[repair price]
+	29232
+
+[value]
+	27840
+
+[equipment magical defense]
+	1152	992
+
+[icon]
+	`Item/common/ring.img`	75
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	21
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		7500
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy near`	300
+	[duration]
+		5000
+	[reduce duration to human armor at pvp module]
+		60
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`stone`	29	950
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[routing priority]
+[/routing priority]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

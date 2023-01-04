@@ -1,0 +1,270 @@
+#PVF_File
+
+[name]
+	`帕特里斯的避雷针`
+
+[basic explain]
+	`施放[精灵献祭]、 [精灵召唤 : 雷沃斯]、 [精灵召唤 : 极光格雷林]时， 有10%%的几率增加40点智力， 效果持续40秒。
+施放[天雷]、 [雷光链]时， 有30%%的几率增加40点智力， 效果持续40秒。
+施放[冰龙旋舞]时， 可在300px范围内发动雷电之怒。
+无法进行分解。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[magical attack]
+	83
+
+[attack speed]
+	100
+
+[cast speed]
+	50
+
+[stuck]
+	1
+
+[need material]
+	3339	1000
+
+[repair price]
+	112896
+
+[value]
+	107520
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	724	679
+
+[equipment magical attack]
+	884	829
+
+[separate attack]
+	481	327
+
+[light attack]
+	8
+
+[icon]
+	`item/new_equipment/01_weapon/mage/rod/rod.img`	97
+
+[field image]
+	`Item/field_weapon.img`	7
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	31	0
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	31	0
+
+[layer variation]
+	2150
+	`at_roda`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_rodd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`ROD_TOUCH`
+
+[durability]
+	24
+
+[weight]
+	2200
+
+[item group name]
+	`rod`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[routing priority]
+	`mage`	2
+	`at mage`	1
+	`at mage`	2
+[/routing priority]
+
+[if]
+	[event use skill]
+		`mage`	24
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		40000
+	[probability]
+		10
+	[stat]
+		`magical attack`
+		`+`	40
+[/then]
+
+[if]
+	[event use skill]
+		`mage`	77
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		40000
+	[probability]
+		10
+	[stat]
+		`magical attack`
+		`+`	40
+[/then]
+
+[if]
+	[event use skill]
+		`mage`	49
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		40000
+	[probability]
+		10
+	[stat]
+		`magical attack`
+		`+`	40
+[/then]
+
+[if]
+	[event use skill]
+		`mage`	55
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		40000
+	[probability]
+		30
+	[stat]
+		`magical attack`
+		`+`	40
+[/then]
+
+[if]
+	[event use skill]
+		`at mage`	2
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		40000
+	[probability]
+		30
+	[stat]
+		`magical attack`
+		`+`	40
+[/then]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		4
+	[duration]
+		3000
+	[active status]
+		`lightning`	84	600
+[/then]
+
+[if]
+	[cooltime]
+		2000
+	[event use skill]
+		`at mage`	13
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		48232	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

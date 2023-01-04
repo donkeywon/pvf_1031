@@ -1,0 +1,48 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AttackSide.ani`
+	[SUB ANI]
+		`../Animation/Effect/AttackSide.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`KALA_ATK_12`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[DOWN]
+		0
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11054
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			80	0	-50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

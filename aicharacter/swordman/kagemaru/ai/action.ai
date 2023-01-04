@@ -1,0 +1,105 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	350.0	350.0	100.0	100.0
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	30.0	30.0	15.0	15.0
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	5
+				[true]
+			
+				[think]
+					[void]
+						`get random()`	0.0	100.0
+				
+					[think]
+						[last result]
+							`>=`	50.0
+						[true]
+						[return str]
+							`normal combo`
+						[false]
+						[return str]
+							`upper slash`
+					[/think]
+	[/think]
+	[false]
+	[return str]
+		`onigiri`
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	100.0	100.0	30.0	30.0
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	77
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	5
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`ghost slash`
+			[/think]
+	[false]
+	[return str]
+		`moon slash`
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	300.0	300.0	30.0	30.0
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	8
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`triple attack`
+		[/think]
+	[false]
+	[think]
+		[void]
+			`is the skill in cooltime()`	18
+		[true]
+		[return]
+			-1
+		[false]
+		[return str]
+			`ghost dash`
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is the skill in cooltime()`	18
+		[true]
+		[return]
+			-1
+		[false]
+		[return str]
+			`ghost dash`
+	[/think]
+	[/think]
+[/ai pattern]

@@ -1,0 +1,762 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Legion.ani`
+	[SUB ANI]
+		`../Animation/ScytheVortex.ani`	0	-1
+	[/SUB ANI]
+	[SOUND]
+		`DEATHSCYTHE`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PULL APPENDAGE]
+		3.0	2.0	10000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[SAVE TARGET OBJECT]
+	[TARGET]
+		0
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[SAVE TARGET OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[stun]
+		100	60	10000
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`time3`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		2
+	[ON]
+	[TRIGGER]
+		3
+	[ON]
+	[TRIGGER]
+		4
+	[ON]
+	[TRIGGER]
+		5
+	[ON]
+	[TRIGGER]
+		6
+	[ON]
+	[TRIGGER]
+		7
+	[ON]
+	[TRIGGER]
+		8
+	[ON]
+	[TRIGGER]
+		9
+	[ON]
+	[TRIGGER]
+		10
+	[ON]
+	[TRIGGER]
+		11
+	[ON]
+	[TRIGGER]
+		12
+	[ON]
+	[TRIGGER]
+		13
+	[ON]
+	[TRIGGER]
+		14
+	[ON]
+	[TRIGGER]
+		15
+	[ON]
+	[TRIGGER]
+		16
+	[ON]
+	[TRIGGER]
+		17
+	[ON]
+	[TRIGGER]
+		18
+	[ON]
+	[TRIGGER]
+		19
+	[ON]
+	[TRIGGER]
+		20
+	[ON]
+	[TRIGGER]
+		21
+	[ON]
+	[TRIGGER]
+		22
+	[ON]
+	[TRIGGER]
+		23
+	[ON]
+	[TRIGGER]
+		24
+	[ON]
+	[TRIGGER]
+		25
+	[ON]
+	[TRIGGER]
+		26
+	[ON]
+	[TRIGGER]
+		27
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			100
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			200
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			300
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			400
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			600
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			700
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			800
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			900
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			1000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			1100
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			1200
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			1300
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			1400
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			1500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			1600
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			1700
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			1800
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			1900
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			2000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			2100
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			2200
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			2300
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			2400
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			2500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time3`	
+		[+]
+			2600
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[REVERSE]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8728
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	1	20
+	[/CREATE PASSIVEOBJECT]
+	[ACTIVE STATUS]
+	[stun]
+		100	60	10000
+	[SET HOLD DOWNANI]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+			0	0	1000
+	[/TELEPORT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time133`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		29
+	[ON]
+	[TRIGGER]
+		30
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time133`	
+		[+]
+			2700
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time133`	
+		[+]
+			2600
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ATTACKINFO]
+		`../AttackInfo/Legion2.atk`
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]

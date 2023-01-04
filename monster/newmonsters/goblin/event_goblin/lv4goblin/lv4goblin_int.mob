@@ -1,0 +1,170 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`精灵之哥布林大族长`
+
+[face image]
+	`Monster/MonsterFace.img`	271
+
+[die effect]
+	0	6	0
+
+[ability table]
+	1
+
+[ability category]
+	`[HP MAX]`	`*`	300
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	170
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	170
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[category]
+	`[goblin]`
+	`[human]`
+[/category]
+
+[targeting bonus]
+	0	20	20	0	80	0	0	0	0	0	0	0	0	0	0	0	80	0	0	0	0
+	`[stand]`
+	`[dash]`	0	0	0
+
+[HP regen speed]
+	0	0
+
+[MP regen speed]
+	0	0
+
+[level]
+	40	50
+
+[move speed]
+	1100	1100
+
+[attack speed]
+	700	700
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	40000	40000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[lie frame]
+	1	2	3	3	4
+
+[attack sound]
+	`R_GOBLIN_TALK`
+
+[appear sound]
+	`THROWER_MEET_02`
+
+[damage sound]
+	`R_THROWER_DMG`
+
+[die sound]
+	`R_THROWER_DIE`
+
+[ambient sound]
+	`THROWER_AMB_02`
+
+[common champion drop item]
+[/common champion drop item]
+
+[waiting action]
+	`Action/Stay_int.act`
+
+[move action]
+	`Action/Move_int.act`
+
+[sit action]
+	`Action/Sit_int.act`
+
+[damage action 1]
+	`Action/Damage1_int.act`
+
+[damage action 2]
+	`Action/Damage2_int.act`
+
+[down action]
+	`Action/Down_int.act`
+
+[overturn action]
+	`Action/Overturn_int.act`
+
+[attack action]
+	`Action/Nentan1_int.act`
+	`Action/Nentan2_int.act`
+	`Action/Nentan3_int.act`
+	`Action/Crazy_int.act`
+	`Action/bomb_int.act`
+	`Action/Earth_int.act`
+[/attack action]
+
+[attack info]
+	``
+	``
+	``
+	``
+	``
+	`AttackInfo/Attack2.atk`
+[/attack info]
+
+[cooltime]
+	2000	2000	2000	10000000	1000	5000
+[/cooltime]
+
+[vision]
+	1000
+
+[think term]
+	500
+
+[destination change term]
+	300
+
+[keep distance with target]
+	250
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

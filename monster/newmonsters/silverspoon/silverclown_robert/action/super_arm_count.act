@@ -1,0 +1,108 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/super_arm_count.ani`
+	[SUB ANI]
+		`../Animation/arm_count_Aura.ani`	0	0
+		`../Animation/combo1_Effect1.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`NORMALSILVER_ATK_02`	1
+		`THUNDERC_ATK_1`	2
+		`NORMALSILVER_ATK_02`	4
+		`THUNDERC_ATK_1`	5
+		`NORMALSILVER_ATK_02`	11
+		`THUNDERC_ATK_1`	11
+		`NORMALSILVER_ATK_02`	14
+		`THUNDERC_ATK_1`	14
+		`NORMALSILVER_ATK_02`	20
+		`THUNDERC_ATK_1`	20
+		`THUNDERC_ATK_1`	23
+	[/SOUND]
+	[SPEECH]
+		`一击必杀！`	0	5
+		`嘿！哈！ `	4	10
+		`呜啊~打你！`	13	10
+		`咳啊啊啊！`	20	10
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		18	18
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		22	22
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8884
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			32	0	70
+		[NO EFFECT]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		1
+	[END]
+[/BEHAVIOR]

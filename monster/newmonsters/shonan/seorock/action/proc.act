@@ -1,0 +1,137 @@
+#PVF_File
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[ON CREATE OBJECT]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9930
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+	[DO PROC BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[ABS CASTING]
+		10000	2
+	[CHANGE ACTION FILE]
+	[STAY]
+		`super_stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`super_move.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		`super_down.act`
+	[CHANGE ACTION FILE]
+	[OVERTURN]
+		`super_overturn.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`super_damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`super_damage2.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`super_sit.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`super_downattack.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		2
+		`super_arm1.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		3
+		`super_swing.act`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9930
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[ON]
+	[TRIGGER]
+		1
+	[OFF]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`move.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		`down.act`
+	[CHANGE ACTION FILE]
+	[OVERTURN]
+		`overturn.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`damage2.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`sit.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`downattack.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		2
+		`arm1.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		3
+		`swing.act`
+[/BEHAVIOR]

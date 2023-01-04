@@ -1,0 +1,42 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/sit.ani`
+	[SUB ANI]
+		`../animation/sit_effect.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[HOLD POSITION]
+
+[TRIGGER]
+	[CHECK TIME]
+		100
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	1000
+	[SUMMON MONSTER]
+		[INDEX]
+			61505
+		[LEVEL]
+			0
+		[POS]
+			10	-10	0
+		[NO EFFECT]
+		[USE MY BASEPOS]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

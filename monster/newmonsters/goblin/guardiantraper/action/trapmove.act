@@ -1,0 +1,133 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/TrapCreat.ani`
+	[SUB ANI]
+		`../Animation/ac/TrapCreat_200.ani`	0	0
+		`../Animation/hair/TrapCreat_300.ani`	0	0
+		`../Animation/hat/TrapCreat_400.ani`	0	0
+		`../Animation/pants/TrapCreat_500.ani`	0	0
+		`../Animation/shirts/TrapCreat_800.ani`	0	0
+		`../Animation/shoes/TrapCreat_600.ani`	0	0
+		`../Animation/skin/TrapCreat_700.ani`	0	0
+		`../Animation/Rope1.ani`	0	0
+		`../Animation/Rope3.ani`	0	0
+		`../Animation/Rope2.ani`	0	0
+		`../Animation/MonsterTrap.ani`	0	0
+		`../Animation/Rope4.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`GRASS_HASH`	1
+		`GRASS_HASH`	3
+		`GRASS_HASH`	5
+		`R_GOBLIN_TALK`	7
+		`GRASS_HASH`	7
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../Particle/MonsterTrap.ptl`	0	0	240
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8562
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			60	0	170
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,55 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Thrust.ani`
+	[SUB ANI]
+		`../Animation/Fire/Thrust_xattack.ani`	0	0
+		`../Animation/Dust3.ani`	0	1
+		`../Animation/Fire/attack_speed_up_back.ani`	0	1
+		`../Animation/Fire/attack_speed_up_front.ani`	0	2
+		`../Animation/Fire/move_speed_up.ani`	0	3
+	[/SUB ANI]
+	[SOUND]
+		`VOTI_SKILL_01`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS GRABABLE]
+			1
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[START KEYSTROKE MODE]
+		18	32	0	0	2	
+		[DEPENDENT ACTION]
+			18	31
+	[/START KEYSTROKE MODE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	80
+[/BEHAVIOR]

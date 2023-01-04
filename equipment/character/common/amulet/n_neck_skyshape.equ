@@ -1,0 +1,98 @@
+#PVF_File
+
+[name]
+	`(旧) 苍穹之影`
+
+[name2]
+	`SkyShape`
+
+[basic explain]
+	`跳跃攻击伤害 +15%%`
+
+[flavor text]
+	`有它就能称霸空中！  --科恩`
+
+[grade]
+	35
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	30
+
+[magical attack]
+	18
+
+[magical defense]
+	44
+
+[price]
+	42000
+
+[repair price]
+	33600
+
+[value]
+	33600
+
+[equipment magical defense]
+	3440	2960
+
+[skill levelup]
+	`[fighter]`	17	2
+[/skill levelup]
+
+[icon]
+	`Item/common/necklace.img`	9
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[jump power]
+	30
+
+[if]
+	[my state]
+		`jump attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	15
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

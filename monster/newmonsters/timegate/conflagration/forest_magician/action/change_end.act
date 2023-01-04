@@ -1,0 +1,105 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/change_end.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DELETE APPENDAGE]
+		0	
+		[water element]
+		[+]
+			-1000.0
+		[fire element]
+		[+]
+			-1000.0
+		[equipment physical defense]
+		[%]
+			300.0
+		[equipment magical defense]
+		[%]
+			300.0
+	[/DELETE APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`move.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`damage2.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		`down.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`sit.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`move.act`
+	[CHANGE ACTION FILE]
+	[MOVEBACK]
+		`backmove.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`windstrike.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		1
+		`entangle.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		2
+		`slowball.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		3
+		`change_ready.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		4
+		`change_end.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		5
+		`backmove.act`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			11148	11149
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

@@ -1,0 +1,282 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/TryGrab.ani`
+	[SUB ANI WITH XYZ]
+		`../animation/TryGrab_B.ani`	0	-5	0	-5	0
+	[/SUB ANI WITH XYZ]
+	[SOUND]
+		`OLDDENT_SKILL_01`	3
+		`PUNISHER_SWING`	4
+		`PUNISHER_SWING`	10
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS GRABABLE]
+			1
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		2
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		9
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS GRABABLE]
+			1
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		2
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			`throw`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			390
+		[Y START]
+			-1
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[IF]
+		`throw`	
+		[<=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		13
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[IF]
+		`throw`	
+		[=]
+			2
+	[/IF]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			419
+		[Y START]
+			-1
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[IF]
+		`throw`	
+		[=]
+			2
+	[/IF]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			410
+		[Y START]
+			-1
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[IF]
+		`throw`	
+		[=]
+			2
+	[/IF]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		7
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			300
+		[Y START]
+			-1
+		[Z START]
+			310
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[IF]
+		`throw`	
+		[=]
+			2
+	[/IF]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		8
+	[DO BEHAVIOR]
+	[ME]
+		9
+	[DO BEHAVIOR]
+	[ME]
+		10
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			310
+		[Y START]
+			-1
+		[Z START]
+			280
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CHANGE ATTACKINFO]
+		`../AttackInfo/Bounce.atk`
+	[SHAKING]
+		2	500
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[IF]
+		`throw`	
+		[=]
+			2
+	[/IF]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		11
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			380
+		[Y START]
+			-1
+		[Z START]
+			0
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/SET POS FORCE]
+	[SET HOLD DOWNANI]
+	[SET ACTION]
+	[DOWN]
+	[DEFAULT]
+		1
+	[FORCE]
+		100	300
+	[NOW]
+[/BEHAVIOR]

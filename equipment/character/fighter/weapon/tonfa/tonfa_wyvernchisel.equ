@@ -1,0 +1,180 @@
+#PVF_File
+
+[name]
+	`飞龙幻影棍`
+
+[name2]
+	`Chisel of Wyvern`
+
+[basic explain]
+	`以额外杀伤杀死敌人时， 可以召唤出1只翼龙。
+攻击速度 +2%%`
+
+[detail explain]
+	`以额外杀伤杀死敌人时， 可以召唤出1只Lv50的翼龙协助召唤者攻击敌人， 翼龙存在100秒。 (召唤的怪物只能同时存在1只， 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失)
+攻击速度 +2%%`
+
+[flavor text]
+	`除掉横行大陆的飞龙后， 用它们的牙齿制成的武器。`
+
+[grade]
+	50
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	45
+
+[physical attack]
+	55
+
+[magical attack]
+	53
+
+[attack speed]
+	70
+
+[stuck]
+	-2
+
+[stuck resistance]
+	30
+
+[need material]
+	3260	750
+
+[repair price]
+	67200
+
+[value]
+	64000
+
+[equipment physical attack]
+	452	407
+
+[equipment magical attack]
+	476	428
+
+[equipment physical defense]
+	500	490
+
+[separate attack]
+	285	189
+
+[physical critical hit]
+	5
+
+[icon]
+	`Item/weapon/fighter/tonfa.img`	35
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	4	0
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	4	0
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		100000
+	[attack success]
+		1
+	[overkill]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		100000
+	[reduce duration at pvp module]
+		75
+	[summon monster]
+		60110	50	1
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

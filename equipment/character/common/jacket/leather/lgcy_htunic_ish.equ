@@ -1,0 +1,175 @@
+#PVF_File
+
+[name]
+	`传承 : 神圣的战争女神狼皮胸甲`
+
+[name2]
+	`Legacy : Holy Coat of Ishtar`
+
+[basic explain]
+	`[变异苍蝇拍]大成功率 +1.5%%`
+
+[grade]
+	54
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	50
+
+[physical attack]
+	34
+
+[magical attack]
+	22
+
+[magical defense]
+	10
+
+[price]
+	43200
+
+[repair price]
+	38102
+
+[value]
+	34560
+
+[equipment physical defense]
+	1368	1320
+
+[skill levelup]
+	`[gunner]`	9	1
+	`[gunner]`	53	1
+	`[at gunner]`	9	1
+	`[at gunner]`	53	1
+	`[mage]`	13	1
+	`[mage]`	99	1
+	`[at mage]`	12	1
+	`[thief]`	41	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/IconArmor.img`	260
+
+[field image]
+	`Item/FieldImage.img`	0
+
+[equipment type]
+	`[coat]`	18
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	33
+
+[weight]
+	1900
+
+[item group name]
+	`lt coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[skill data up]
+	`[mage]`	95	`[all]`	`[static]`	0	`+`	-15
+	`[mage]`	95	`[all]`	`[static]`	2	`+`	15
+[/skill data up]
+
+[set name]
+	`传承 : 神圣的战争女神狼皮战甲  套装`
+
+[set item]
+	10489	12489	14480	18484	16479
+[/set item]
+
+[set ability]
+	[HP MAX]
+		190
+	[MP MAX]
+		190
+	[physical attack]
+		60
+	[magical attack]
+		60
+	[equipment physical defense]
+		300	300
+	[water resistance]
+		8
+	[HP regen speed]
+		25
+	[MP regen speed]
+		7
+	[attack speed]
+		30
+	[skill levelup]
+		`[gunner]`	9	1
+		`[gunner]`	53	1
+		`[at gunner]`	9	1
+		`[at gunner]`	53	1
+		`[mage]`	13	1
+		`[mage]`	106	1
+		`[mage]`	103	1
+		`[at mage]`	32	1
+		`[thief]`	33	1
+	[/skill levelup]
+	[fullset basic explain]
+		`[冰霜钻孔车]大成功率 +2.5%%
+[冰霜钻孔车]成功率 +1%%
+[反重力装置]大成功率 +2.5%%
+[反重力装置]成功率 +1%%
+[变异苍蝇拍]大成功率 +2%%
+进入地下城时， 因传承的祝福增加自身7%%的攻击速度和施放速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`attack speed`
+			`+`	70
+		[stat by condition]
+			`cast speed`
+			`+`	70
+	[/then]
+	[skill data up]
+		`[mage]`	104	`[all]`	`[static]`	0	`+`	-35
+		`[mage]`	104	`[all]`	`[static]`	2	`+`	25
+		`[mage]`	104	`[all]`	`[static]`	1	`+`	10
+		`[mage]`	103	`[all]`	`[static]`	0	`+`	-35
+		`[mage]`	103	`[all]`	`[static]`	2	`+`	25
+		`[mage]`	103	`[all]`	`[static]`	1	`+`	10
+		`[mage]`	95	`[all]`	`[static]`	0	`+`	-20
+		`[mage]`	95	`[all]`	`[static]`	2	`+`	20
+	[/skill data up]
+[/set ability]
+
+[possible kiri protect]

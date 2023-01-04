@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/slash.ani`
+	[SUB ANI]
+		`../animation/effect/slash1.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`ASHCORE_SKILL_02`	0
+		`FAGARU_FIREATK`	1
+	[/SOUND]
+	[SPEECH]
+		`嘿呀！`	0	50
+		`在我的怒火中燃烧吧！`	0	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9447
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

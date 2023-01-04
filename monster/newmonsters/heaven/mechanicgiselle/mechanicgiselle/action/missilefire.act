@@ -1,0 +1,120 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/MissileFire.ani`
+	[SOUND]
+		`MZIZEL_MISSILE`	1
+		`MZIZEL_MISSILE`	3
+		`MZIZEL_MISSILE`	5
+		`MZIZEL_MISSILE`	7
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8685
+		[PARTICLE FILENAME]
+			`../Particle/missile.Ptl`
+		[LEVEL]
+			0
+		[POS]
+			-70	-3	190
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8685
+		[PARTICLE FILENAME]
+			`../Particle/missile.Ptl`
+		[LEVEL]
+			0
+		[POS]
+			-75	-3	210
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8685
+		[PARTICLE FILENAME]
+			`../Particle/missile.Ptl`
+		[LEVEL]
+			0
+		[POS]
+			-65	-3	210
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8685
+		[PARTICLE FILENAME]
+			`../Particle/missile.Ptl`
+		[LEVEL]
+			0
+		[POS]
+			-70	-3	210
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

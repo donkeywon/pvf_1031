@@ -1,0 +1,172 @@
+#PVF_File
+
+[name]
+	`琳恩的第二个法杖`
+
+[name2]
+	`Lene's Second Staff`
+
+[basic explain]
+	`施放技能时， 有4%%的几率召唤出琳恩， 并使其施放湮灭黑洞。 (在决斗场中无效)`
+
+[flavor text]
+	`湮灭黑洞~！ 啊？ 好像不对劲……`
+
+[grade]
+	65
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	61
+
+[magical attack]
+	44
+
+[attack speed]
+	-100
+
+[price]
+	104000
+
+[repair price]
+	87360
+
+[value]
+	83200
+
+[equipment physical attack]
+	583	536
+
+[equipment magical attack]
+	737	677
+
+[separate attack]
+	365	246
+
+[icon]
+	`Item/weapon/mage/staff.img`	75
+
+[field image]
+	`Item/field_weapon.img`	9
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	6	3
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	6	3
+
+[layer variation]
+	2150
+	`at_staffa`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_staffd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	6	3
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`STAFF_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2400
+
+[item group name]
+	`staff`
+
+[cool time]
+	10000
+
+[item aura]
+	`magical attack`
+	`+`	30	300
+
+[if]
+	[cooltime]
+		15000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		5000
+	[probability]
+		4
+	[reduce probability to human armor at pvp module]
+		80
+	[passive object]
+		48207	0	0	0	55	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

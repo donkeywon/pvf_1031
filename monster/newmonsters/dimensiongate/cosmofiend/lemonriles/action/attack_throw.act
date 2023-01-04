@@ -1,0 +1,49 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack_Throw.ani`
+	[SUB ANI]
+		`../Animation/Spear/Attack_Throw.ani`	0	0
+		`../Animation/Effect/Attack_Throw.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`SUCCUBUS_HIT_01`	0
+		`WIND_THROW`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`来啊来啊！`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14103
+		[PARTICLE FILENAME]
+			`../Particle/Spear.ptl`
+		[LEVEL]
+			70
+		[POS]
+			60	0	50
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

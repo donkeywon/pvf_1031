@@ -1,0 +1,52 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Stardust.ani`
+	[SOUND]
+		`BUY_ITEM`	0
+		`BUY_ITEM`	0
+		`BUY_ITEM`	0
+	[/SOUND]
+	[SPEECH]
+		`星~尘！！`	0	25
+		`星尘！`	0	25
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8072
+		[PARTICLE FILENAME]
+			`../particle/stardust.ptl`
+		[LEVEL]
+			60
+		[POS]
+		[RANDOM]
+			-50	50
+		[RANDOM]
+			-50	50	150
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

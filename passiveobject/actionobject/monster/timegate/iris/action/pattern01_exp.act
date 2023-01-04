@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/pattern01_0.ani`
+	[SUB ANI]
+		`../animation/pattern01_exp.ani`	0	1
+		`../animation/pattern01_normal_0_0.ani`	0	2
+		`../animation/pattern01_dodge_0.ani`	0	3
+		`../animation/pattern01_dodge_0_0.ani`	0	4
+		`../animation/pattern01_exp_dodge.ani`	0	5
+	[/SUB ANI]
+	[SOUND]
+		`IRISM_DARKSPELL_CAST`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			13047
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

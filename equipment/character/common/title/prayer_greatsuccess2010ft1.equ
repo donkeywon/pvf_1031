@@ -1,0 +1,138 @@
+#PVF_File
+
+[name]
+	`2010成功起源 (力量)`
+
+[name2]
+	``
+
+[explain]
+	`攻击时以1%%的机率，施展时以2%%的机率30秒内力量增加+15,体力增加+20。`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	201
+
+[custom animation]
+	`TitleAnimation/prayer_greatsuccess2010yellow.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	120
+
+[MP MAX]
+	120
+
+[physical attack]
+	25
+
+[physical defense]
+	20
+
+[all elemental resistance]
+	4
+
+[MP regen speed]
+	8
+
+[move speed]
+	30
+
+[attack speed]
+	30
+
+[cast speed]
+	10
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	15
+	[stat]
+		`physical defense`
+		`+`	20
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`physical attack`
+		`+`	15
+	[stat]
+		`physical defense`
+		`+`	20
+[/then]
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[fighter]`	42	1
+	`[fighter]`	80	1
+	`[fighter]`	60	1
+	`[fighter]`	49	1
+	`[fighter]`	16	1
+	`[fighter]`	68	1
+	`[fighter]`	52	1
+	`[fighter]`	89	1
+	`[at fighter]`	42	1
+	`[at fighter]`	80	1
+	`[at fighter]`	60	1
+	`[at fighter]`	49	1
+	`[at fighter]`	16	1
+	`[at fighter]`	68	1
+	`[at fighter]`	52	1
+	`[at fighter]`	89	1
+[/skill levelup]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

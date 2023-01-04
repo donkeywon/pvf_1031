@@ -1,0 +1,33 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_0.ani`
+	[SUB ANI]
+		`../animation/comein_effect.ani`	0	1
+		`../animation/comein_effect2.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`R_IRISM_MEET`	0
+		`IRISM_BURN`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE AI]
+	[NORMAL]
+		2
+		`concerto.ai`
+	[SET ACTION]
+	[ATTACK]
+		11
+	[NOW]
+[/BEHAVIOR]

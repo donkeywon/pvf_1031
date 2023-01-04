@@ -1,0 +1,129 @@
+#PVF_File
+
+[name]
+	`精魂十字架`
+
+[name2]
+	`Cross of Spirit`
+
+[basic explain]
+	`攻击精灵族敌人时， 附加50点伤害。`
+
+[grade]
+	34
+
+[rarity]
+	2
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	32
+
+[physical defense]
+	28
+
+[magical attack]
+	23
+
+[magical defense]
+	28
+
+[cast speed]
+	20
+
+[price]
+	47600
+
+[repair price]
+	38080
+
+[value]
+	38080
+
+[equipment physical attack]
+	308	292
+
+[equipment magical attack]
+	293	277
+
+[equipment physical defense]
+	340	340
+
+[equipment magical defense]
+	340	340
+
+[separate attack]
+	153	101
+
+[icon]
+	`Item/weapon/priest/cross.img`	14
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[priest]`
+
+[variation]
+	0	7
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[if]
+	[target type]
+		`spirit`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`+`	50
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,88 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	110.0	110.0	80.0	80.0
+		[true]
+	
+		[think]
+			[check use skill]
+				1
+			[true]
+			[return]
+				`f`
+			[false]
+		
+			[think]
+				[check use skill]
+					43
+				[true]
+				[return]
+					`s`
+				[false]
+				[return]
+					-1
+			[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	210.0	112.0	95.0	95.0
+		[true]
+	
+		[think]
+			[void]
+				`get random()`	0.0	100.0
+		
+			[think]
+				[last result]
+					`<=`	30.0
+				[true]
+			
+				[think]
+					[check use skill]
+						43
+					[true]
+					[return]
+						`s`
+					[false]
+					[return]
+						-1
+				[/think]
+	[false]
+	[think]
+		[check item slot cooltime]
+			4
+		[true]
+		[return]
+			-1
+		[false]
+		[return]
+			`4`
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	275.0	120.0	130.0	130.0
+		[true]
+	
+		[think]
+			[check item slot cooltime]
+				3
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				`3`
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

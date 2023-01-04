@@ -1,0 +1,208 @@
+#PVF_File
+
+[name]
+	`喵喵魔杖`
+
+[name2]
+	`Neco Neco`
+
+[basic explain]
+	`施放[召唤兽强化]时， 有5%%的几率发动提升Lv4的该技能。
+施放[寒冰之境]时， 有30%%的几率发动提升Lv3的该技能。`
+
+[detail explain]
+	`施放技能时， 有5%%的几率发动提升Lv4的[召唤兽强化]， 效果持续20秒。
+施放[寒冰之境]时， 有30%%的几率发动提升Lv3的该技能。`
+
+[grade]
+	65
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[magical attack]
+	66
+
+[attack speed]
+	100
+
+[cast speed]
+	90
+
+[stuck]
+	1
+
+[price]
+	104000
+
+[repair price]
+	87360
+
+[value]
+	83200
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	562	508
+
+[equipment magical attack]
+	686	620
+
+[separate attack]
+	378	255
+
+[skill levelup]
+	`[mage]`	47	2
+	`[at mage]`	32	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/mage/rod.img`	65
+
+[field image]
+	`Item/field_weapon.img`	7
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	13	4
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	13	4
+
+[layer variation]
+	2150
+	`at_roda`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_rodd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	13	4
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`ROD_TOUCH`
+
+[durability]
+	24
+
+[weight]
+	2200
+
+[item group name]
+	`rod`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		5
+	[skill levelup]
+		`mage`	48	4
+	[/skill levelup]
+[/then]
+
+[if]
+	[use skill]
+		`at mage`	31
+	[/use skill]
+[/if]
+
+[then]
+	[probability]
+		30
+	[duration]
+		10000
+	[target]
+		`myself`	-1
+	[skill levelup]
+		`at mage`	31	3
+	[/skill levelup]
+[/then]
+
+[routing priority]
+	`mage`	2
+	`at mage`	2
+[/routing priority]
+
+[possible kiri protect]
+
+[need material]
+	2749095	169
+
+[icon mark]
+	`Item/IconMark.img`	68

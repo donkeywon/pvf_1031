@@ -1,0 +1,186 @@
+#PVF_File
+
+[name]
+	`双龙棍`
+
+[name2]
+	`Double Dragon`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入感电状态。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入感电状态15秒； 若攻击感电状态的敌人， 则每次攻击都会附加105点伤害。 (若敌人高于Lv30， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[grade]
+	34
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	30
+
+[physical attack]
+	25
+
+[magical attack]
+	38
+
+[attack speed]
+	50
+
+[stuck]
+	-2
+
+[stuck resistance]
+	30
+
+[HP MAX]
+	110
+
+[MP MAX]
+	100
+
+[price]
+	54400
+
+[repair price]
+	43520
+
+[value]
+	43520
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	323	285
+
+[equipment magical attack]
+	340	300
+
+[equipment physical defense]
+	340	330
+
+[separate attack]
+	196	130
+
+[skill levelup]
+	`[fighter]`	20	1
+	`[fighter]`	7	2
+	`[at fighter]`	20	1
+	`[at fighter]`	7	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/tonfa.img`	14
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	2	5
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	2	5
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		22500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		15000
+	[probability]
+		3
+	[active status]
+		`lightning`	30	105
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

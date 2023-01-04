@@ -1,0 +1,65 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack_a3.ani`
+	[SUB ANI WITH XYZ]
+		`../Animation/attack_b.ani`	0	-10	0	-10	0
+	[/SUB ANI WITH XYZ]
+	[SOUND]
+		`G_DIFFUSION_GUNA`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14084
+		[PARTICLE FILENAME]
+			`../particle/Bullet.ptl`
+		[LEVEL]
+			70
+		[POS]
+			160	0
+		[RANDOM SELECT]
+			65	70
+		[/RANDOM SELECT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14086
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			165	0	67
+	[/CREATE PASSIVEOBJECT]
+	[PARTICLE]
+		`../particle/shell.ptl`	0	0	80
+	[SHAKING]
+		2	200
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`Attack1.act`
+[/BEHAVIOR]

@@ -1,0 +1,42 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Buff.ani`
+	[SUB ANI]
+		`../animation/CureCast1.ani`	0	0
+		`../animation/CureCast2.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`混沌啊~继续沉睡吧！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[HOLD POSITION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		4500	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9278
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			0	0	2
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

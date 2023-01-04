@@ -1,0 +1,45 @@
+#PVF_File
+
+[floating height]
+	50
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[team]
+	100
+
+[basic action]
+	`Action/TreeFire3.act`
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[CHARACTER]`	0
+	[homing velocity]
+		300	10
+	[homing check gap]
+		1000
+	[sync animation rotation]
+		0
+	[max rotation]
+		360
+	[init rotation]
+		360
+	[diff rotation]
+		360
+	[homing time]
+		8000
+[/homing]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	4000
+	`[destroy action]`
+	`[object create after destroy]`
+	`[add object index]`	1	10162
+[/object destroy condition]

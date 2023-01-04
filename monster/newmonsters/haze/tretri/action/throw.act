@@ -1,0 +1,33 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/throw.ani`
+	[SPEECH]
+		`给你看看我的宝贝?`	2	20
+	[/SPEECH]
+	[SOUND]
+		`R_TRETRI_SKILL_04`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10469
+		[PARTICLE FILENAME]
+			`../Particle/throw.ptl`
+		[LEVEL]
+			0
+		[POS]
+			130	0	90
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,198 @@
+#PVF_File
+
+[name]
+	`寐语者 - 残云`
+
+[name2]
+	``
+
+[basic explain]
+	`神枪手 (男)
+[乱射]发射数上限 +80%%
+[乱射]攻击力 -25%%
+
+[乱射]攻击时， 可对武器进行加热， 并使被击的敌人附加10%%的火属性伤害， 效果持续10秒。
+
+神枪手 (女)
+[多重爆头]发射数上限 +80%%
+[多重爆头]攻击力 -25%%
+穿刺力 +15%%
+
+[多重爆头]攻击时， 可对武器进行加热， 并使被击的敌人附加10%%的火属性伤害， 效果持续10秒。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	56
+
+[price]
+	136000
+
+[repair price]
+	114240
+
+[value]
+	108800
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	771	697
+
+[equipment magical attack]
+	648	586
+
+[separate attack]
+	504	343
+
+[physical critical hit]
+	2
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/revolver/revolver.img`	84
+
+[field image]
+	`Item/field_weapon.img`	1
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	25	1
+
+[layer variation]
+	2790
+	`revc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`revb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	25	1
+
+[layer variation]
+	2790
+	`at_revc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_revb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2000
+
+[item group name]
+	`revolver`
+
+[cool time]
+	10000
+
+[routing priority]
+	`gunner`	1
+	`at gunner`	1
+[/routing priority]
+
+[int data]
+	-1	-1	-1	-1	-1	-1	-1	-1	40	-1
+[/int data]
+
+[skill data up]
+	`[gunner]`	9	`[all]`	`[level]`	2	`%`	80
+	`[gunner]`	9	`[all]`	`[level]`	0	`%`	-25
+	`[at gunner]`	72	`[all]`	`[level]`	2	`%`	80
+	`[at gunner]`	72	`[all]`	`[level]`	0	`%`	-25
+	`[at gunner]`	72	`[all]`	`[level]`	3	`%`	-25
+	`[at gunner]`	72	`[all]`	`[level]`	7	`%`	-25
+[/skill data up]
+
+[if]
+	[use skill]
+		`gunner`	9
+	[/use skill]
+[/if]
+
+[then]
+	[duration]
+		10000
+	[target]
+		`myself`	-1
+	[appendage]
+		200
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	72
+	[/use skill]
+[/if]
+
+[then]
+	[duration]
+		10000
+	[target]
+		`myself`	-1
+	[appendage]
+		200
+[/then]
+
+[if]
+	[attack success]
+		1
+	[my appendage]
+		200
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`fire`
+		`%`	10
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	68

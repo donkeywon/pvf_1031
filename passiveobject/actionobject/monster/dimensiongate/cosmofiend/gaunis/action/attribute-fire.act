@@ -1,0 +1,60 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/_Aura_dumy.ani`
+	[SUB ANI WITH XYZ]
+		`../Animation/_Fire_Aura.ani`	0	0	0	-100	0
+		`../Animation/_Fire_Aura_Cover.ani`	0	0	0	-100	0
+		`../Animation/_Fire_Aura_Cover.ani`	0	0	0	-100	0
+	[/SUB ANI WITH XYZ]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14115	14116	14117
+		[/IS INDEX]
+		[DISTANCE]
+		[<]
+			2
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[CHECK TIME]
+		300
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14140
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[NOW]
+[/BEHAVIOR]

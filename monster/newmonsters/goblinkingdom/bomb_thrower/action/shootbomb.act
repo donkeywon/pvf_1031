@@ -1,0 +1,100 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/ShootBomb.ani`
+	[SUB ANI]
+		`../animation/Face/ShootBomb.ani`	0	0
+		`../animation/Hair/ShootBomb.ani`	0	0
+		`../animation/Belt/ShootBomb.ani`	0	0
+		`../animation/Pants/ShootBomb.ani`	0	0
+		`../animation/Wrist/ShootBomb.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`THROWER_CATCH_REARCAR`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8339
+		[PARTICLE FILENAME]
+			`../particle/JunkBrick.ptl`
+		[LEVEL]
+			0
+		[POS]
+			63	0	89
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8341
+		[PARTICLE FILENAME]
+			`../particle/JunkBrick.ptl`
+		[LEVEL]
+			0
+		[POS]
+			63	0	89
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8343
+		[PARTICLE FILENAME]
+			`../particle/JunkBrick.ptl`
+		[LEVEL]
+			0
+		[POS]
+			63	0	89
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		16	16
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8345
+		[PARTICLE FILENAME]
+			`../particle/JunkBrick.ptl`
+		[LEVEL]
+			0
+		[POS]
+			63	0	89
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

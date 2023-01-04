@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack.ani`
+	[SUB ANI]
+		`../animation/attack_w.ani`	0	1
+		`../animation/attack_w1.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`振作起来！`	2	8
+		`放马过来吧！`	2	8
+	[/SPEECH]
+	[SOUND]
+		`ENJO_SWISH_01`	0
+		`R_VERRICKTM_ATK`	3
+		`ENJO_SWISH_02`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		9
+	[NOW]
+[/BEHAVIOR]

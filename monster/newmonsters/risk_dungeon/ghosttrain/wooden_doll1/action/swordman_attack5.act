@@ -1,0 +1,46 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Swordman_Attack5.ani`
+	[SUB ANI]
+		`../Animation/weapon/Swordman_Attack5.ani`	0	0
+		`../Animation/ball/Swordman_Attack5.ani`	0	0
+		`../Animation/ball_eff/Swordman_Attack5.ani`	0	0
+		`../Animation/Skill_eff/wave-down.ani`	0	0
+		`../Animation/Skill_eff/wave-up.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`GHOST_DRIVE_HIT`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			2800
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]

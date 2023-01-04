@@ -1,0 +1,100 @@
+#PVF_File
+
+[name]
+	`冒险家的指南书综合版`
+
+[name2]
+	``
+
+[explain]
+	`攻击时以1%%的机率20秒内力量增加+30,智能增加+30增加。`
+
+[flavor text]
+	`<活动>给予地城和勇士综合版指南购买者的称号`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	214
+
+[custom animation]
+	`TitleAnimation/dnf_guidebook_all.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	17
+
+[magical attack]
+	17
+
+[inventory limit]
+	6000
+
+[HP regen speed]
+	35
+
+[MP regen speed]
+	7
+
+[move speed]
+	20
+
+[attack speed]
+	10
+
+[cast speed]
+	10
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`magical attack`
+		`+`	30
+[/then]
+
+[physical critical hit]
+	1
+
+[magical critical hit]
+	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

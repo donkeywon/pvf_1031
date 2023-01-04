@@ -1,0 +1,53 @@
+#PVF_File
+
+[width]
+	0	0
+
+[floating height]
+	50
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	0
+
+[basic action]
+	`Action/body.act`
+
+[attack info]
+	`AttackInfo/attack.atk`
+
+[last action]
+	`Action/Destroy.act`
+
+[team]
+	100
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[ENEMY]`
+	[homing velocity]
+		250	250
+	[homing check gap]
+		600
+	[sync animation rotation]
+		0
+	[max rotation]
+		180
+[/homing]
+
+[sound category]
+	`[after object create]`
+	`MATEO_FLY`	-1
+[/sound category]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[on end of animation]`
+[/object destroy condition]

@@ -1,0 +1,43 @@
+#PVF_File
+
+[width]
+	0	0
+
+[floating height]
+	50
+
+[pass type]
+	`[do not pass]`
+
+[piercing power]
+	50000
+
+[basic action]
+	`Action/slowball.act`
+
+[team]
+	100
+
+[attack info]
+	`AttackInfo//slowball.atk`
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	8000
+[/object destroy condition]
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[ENEMY]`
+	[homing velocity]
+		800.0	0.0
+	[homing check gap]
+		8000
+	[diff rotation]
+		100.0
+	[homing direction]
+		-1
+	[sync target move]
+[/homing]

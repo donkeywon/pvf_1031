@@ -1,0 +1,242 @@
+#PVF_File
+
+[name]
+	`巨型黑章鱼的魔眼法杖`
+
+[basic explain]
+	`装备时， 可以使300px范围内的野兽型敌人减少1200点的物理和魔法防御力。
+施放技能时， 有5%%的几率召唤出章鱼怪、 蓝章鱼和小八爪中的一个协助自身攻击敌人。
+无法进行分解。`
+
+[detail explain]
+	`装备时， 可以使300px范围内的野兽型敌人减少1200点物理和魔法防御力。
+施放技能时， 有5%%的几率召唤出章鱼怪、 蓝章鱼和小八爪中的一个协助召唤者攻击敌人， 召唤兽存在60秒。 (召唤的怪物只能同时存在1只， 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失； 在决斗场中无效)
+无法进行分解。`
+
+[grade]
+	39
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	35
+
+[magical attack]
+	42
+
+[attack speed]
+	100
+
+[cast speed]
+	50
+
+[stuck]
+	1
+
+[price]
+	62400
+
+[repair price]
+	49920
+
+[value]
+	49920
+
+[equipment physical attack]
+	342	306
+
+[equipment magical attack]
+	418	374
+
+[separate attack]
+	196	130
+
+[skill levelup]
+	`[mage]`	20	3
+[/skill levelup]
+
+[icon]
+	`Item/weapon/mage/rod.img`	78
+
+[field image]
+	`Item/field_weapon.img`	7
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	24	0
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	24	0
+
+[layer variation]
+	2150
+	`at_roda`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_rodd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	24	0
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`ROD_TOUCH`
+
+[durability]
+	24
+
+[weight]
+	2200
+
+[item group name]
+	`rod`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		1000	1	0
+	[target type]
+		`beast`
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		1000
+	[probability]
+		100
+	[stat]
+		`equipment physical defense`
+		`+`	-1200
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			60000
+		[probability]
+			5
+		[reduce probability to human armor at pvp module]
+			80
+		[summon monster]
+			250	39	1
+		[then probability]
+			33.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			60000
+		[probability]
+			5
+		[reduce probability to human armor at pvp module]
+			80
+		[summon monster]
+			252	39	1
+		[then probability]
+			33.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			60000
+		[probability]
+			5
+		[reduce probability to human armor at pvp module]
+			80
+		[summon monster]
+			253	39	1
+		[then probability]
+			34.0
+	[/then]
+[/multiple then]
+
+[routing priority]
+	`mage`	1
+	`at mage`	2
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

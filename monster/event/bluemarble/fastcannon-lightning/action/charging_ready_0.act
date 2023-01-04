@@ -1,0 +1,81 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Charging_Stay_0.ani`
+	[SUB ANI]
+		`../Animation/Effect/Spark_0.ani`	0	-10
+		`../Animation/Body_Effect/Charging_Stay_0.ani`	0	0
+		`../Animation/Body_Effect/Charging_Stay_effect_0.ani`	0	0
+		`../Animation/Effect/Charging_Spark1_0.ani`	0	0
+		`../Animation/Effect/Charging_Spark2_0.ani`	0	0
+		`../Animation/Effect/Charging_Spark3_0.ani`	0	0
+		`../Animation/Effect/Charging_Spark4_0.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14079
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`re_time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		2
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`re_time`	
+		[+]
+			5000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		2
+	[OFF]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]

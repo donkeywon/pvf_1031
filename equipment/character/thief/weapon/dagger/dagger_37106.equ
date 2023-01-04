@@ -1,0 +1,151 @@
+#PVF_File
+
+[name]
+	`御蛇之残 (活动)`
+
+[name2]
+	`Innovation of Dagger of Snake Charmer`
+
+[basic explain]
+	`攻击时， 有2%%的几率召唤出1只冰蛇。
+
+无法进行分解、 封装和合成。`
+
+[detail explain]
+	`攻击时， 有2%%的几率召唤出1只Lv50的冰蛇协助召唤者攻击敌人， 冰蛇存在60秒。 (召唤的怪物只能同时存在1只， 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失)
+
+无法进行分解、 封装和合成。`
+
+[grade]
+	56
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	26
+
+[attack speed]
+	100
+
+[stuck]
+	-1
+
+[price]
+	0
+
+[repair price]
+	75264
+
+[value]
+	0
+
+[equipment physical attack]
+	439	405
+
+[equipment magical attack]
+	464	428
+
+[separate attack]
+	311	208
+
+[physical critical hit]
+	10
+
+[skill levelup]
+	`[thief]`	9	2
+[/skill levelup]
+
+[poison resistance]
+	10
+
+[icon]
+	`Item/weapon/thief/dagger.img`	41
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	5	2
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		180000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		60000
+	[probability]
+		2
+	[summon monster]
+		65000	50	1
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

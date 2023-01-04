@@ -1,0 +1,107 @@
+#PVF_File
+
+[name]
+	`暴戾祭祀项链`
+
+[basic explain]
+	`力量 +5%%
+
+普通攻击时， 可以施放祭司之球。`
+
+[detail explain]
+	`力量 +5%%
+
+普通攻击时， 可以施放祭司之球。 (冷却时间为25秒)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical defense]
+	87
+
+[price]
+	89000
+
+[value]
+	71200
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	7680	7280
+
+[icon]
+	`Item/new_equipment/08_necklace/necklace.img`	94
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[magical attack]
+	35
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`%`	5
+[/then]
+
+[if]
+	[cooltime]
+		25000
+	[set my state]
+		1
+	[my state]
+		`attack`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[passive object]
+		48530	0	0	60	0	0	`PristBall.ptl`
+	[/passive object]
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

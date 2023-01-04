@@ -1,0 +1,90 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check skill on]
+			37
+		[false]
+		[return str]
+			`aura`
+		[true]
+	
+		[think]
+			[check skill on]
+				90
+			[false]
+			[return str]
+				`powder`
+			[true]
+		
+			[think]
+				[void]
+					`is target in attack area()`	70.0	10.0	10.0	10.0
+				[true]
+			
+				[think]
+					[void]
+						`check random()`	50	100
+					[true]
+				
+					[think]
+						[check key cooltime]
+							`dt`
+						[true]
+						[return]
+							-1
+						[false]
+						[return str]
+							`dt`
+					[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`combo2`
+		[true]
+		[return]
+			-1
+		[false]
+		[return str]
+			`combo2`
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	170.0	110.0	20.0	20.0
+		[true]
+	
+		[think]
+			[void]
+				`check random()`	50	100
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`chpr`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`chpr`
+			[/think]
+	[false]
+	[false]
+	[think]
+		[check key cooltime]
+			`combo3`
+		[true]
+		[return]
+			-1
+		[false]
+		[return str]
+			`combo3`
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

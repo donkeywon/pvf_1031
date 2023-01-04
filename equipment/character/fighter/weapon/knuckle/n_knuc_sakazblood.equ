@@ -1,0 +1,206 @@
+#PVF_File
+
+[name]
+	`(旧) 血祭手套`
+
+[name2]
+	`Sakaz Bloodrunner`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入出血状态。
+攻击出血状态的敌人时，附加30%%的伤害。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入出血状态10秒； 出血状态下的敌人， 每0.5秒受到89点伤害。 (若敌人高于Lv30， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击出血状态的敌人时，附加30%%的伤害。 (在决斗场中 +15%%)`
+
+[flavor text]
+	`若看见对方受伤了而且很痛苦， 应该立即杀了他。 绝不是因为残忍， 而是这样能使他减轻痛苦。  --米斯特的暗杀者`
+
+[grade]
+	35
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	30
+
+[magical attack]
+	26
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[price]
+	56000
+
+[repair price]
+	44800
+
+[value]
+	44800
+
+[equipment physical attack]
+	338	293
+
+[equipment magical attack]
+	409	354
+
+[separate attack]
+	209	138
+
+[icon]
+	`Item/weapon/fighter/knuckle.img`	42
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	10
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	1	10
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		15000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[probability]
+		2
+	[active status]
+		`bleeding`	30	2350
+[/then]
+
+[if]
+	[target active status]
+		`bleeding`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	30
+[/then]
+
+[pvp]
+	[if]
+		[cooltime]
+			15000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			10000
+		[probability]
+			2
+		[active status]
+			`bleeding`	30	2350
+	[/then]
+	[if]
+		[target active status]
+			`bleeding`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	15
+	[/then]
+[/pvp]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

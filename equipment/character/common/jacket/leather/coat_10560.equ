@@ -1,0 +1,164 @@
+#PVF_File
+
+[name]
+	`千年玄铁兽胸甲`
+
+[name2]
+	`Darksteel  Lorica Coat`
+
+[flavor text]
+	`这件用千年玄铁兽之皮制成的护甲超乎寻常的坚固， 以人类目前掌握的技术来看， 根本无法完成……`
+
+[grade]
+	65
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	28
+
+[magical attack]
+	28
+
+[magical defense]
+	30
+
+[attack speed]
+	30
+
+[MP MAX]
+	300
+
+[price]
+	65000
+
+[repair price]
+	57330
+
+[value]
+	52000
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	1752	1608
+
+[poison resistance]
+	15
+
+[icon]
+	`Item/common/coat.img`	247
+
+[field image]
+	`Item/FieldImage.img`	0
+
+[equipment type]
+	`[coat]`	20
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	33
+
+[weight]
+	1900
+
+[item group name]
+	`lt coat`
+
+[cool time]
+	10000
+
+[set name]
+	`千年玄铁兽战甲  套装`
+
+[set item]
+	10560	12557	16546
+[/set item]
+
+[set ability]
+	[physical attack]
+		70
+	[magical attack]
+		70
+	[fullset basic explain]
+		`攻击时， 有30%%的几率使武器附加暗属性， 效果持续60秒。
+攻击时， 有30%%的几率使自身增加6%%的攻击速度， 效果持续30秒。
+攻击时， 有30%%的几率使自身增加5%%的移动速度， 效果持续30秒。`
+	[dark attack]
+		8
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			45000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			30
+		[duration]
+			30000
+		[stat]
+			`attack speed`
+			`+`	60
+	[/then]
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			45000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			30
+		[duration]
+			30000
+		[stat]
+			`move speed`
+			`+`	50
+	[/then]
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			60000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			30
+		[duration]
+			60000
+		[elemental weapon]
+			`dark`
+	[/then]
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

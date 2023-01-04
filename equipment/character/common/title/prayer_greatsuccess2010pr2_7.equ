@@ -1,0 +1,133 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	`Prayer For Great Success 2010[White Tiger]`
+
+[explain]
+	`攻击时以1%%的机率，施展时以2%%的机率30秒内智能增加+15，精神力增加+20。`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	210
+
+[custom animation]
+	`TitleAnimation/prayer_greatsuccess2010white.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	120
+
+[MP MAX]
+	120
+
+[magical attack]
+	25
+
+[magical defense]
+	20
+
+[all elemental resistance]
+	4
+
+[MP regen speed]
+	8
+
+[move speed]
+	30
+
+[attack speed]
+	10
+
+[cast speed]
+	30
+
+[if]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`magical attack`
+		`+`	15
+	[stat]
+		`magical defense`
+		`+`	20
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`magical attack`
+		`+`	15
+	[stat]
+		`magical defense`
+		`+`	20
+[/then]
+
+[magical critical hit]
+	3
+
+[skill levelup]
+	`[priest]`	23	1
+	`[priest]`	57	1
+	`[priest]`	47	1
+	`[priest]`	48	1
+	`[priest]`	45	1
+	`[priest]`	35	1
+	`[priest]`	5	1
+	`[priest]`	40	1
+[/skill levelup]
+
+[move wav]
+	`NAME_TOUCH`
+
+[usable period]
+	7
+
+[icon mark]
+	`Item/IconMark.img`	64

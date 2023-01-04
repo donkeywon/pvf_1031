@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack_Launcher.ani`
+	[SUB ANI]
+		`../Animation/Smoke.ani`	0	1
+		`../Animation/HeadAttack.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`R_RLAUNCHER_ATK`	0
+		`TEMPESTER_MISSILE`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12586
+		[PARTICLE FILENAME]
+			`../Particle/ATStingerSub.ptl`
+		[LEVEL]
+			1
+		[POS]
+			60	45	220
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

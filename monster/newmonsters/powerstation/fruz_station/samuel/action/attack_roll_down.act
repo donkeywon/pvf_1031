@@ -1,0 +1,73 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_2.ani`
+	[SUB ANI]
+		`../Animation/attack_2_1.ani`	0	-1
+	[/SUB ANI]
+	[SPEECH]
+		`就这点本事吗？`	1	70
+	[/SPEECH]
+	[SOUND]
+		`SAMUEL_PUNCH_JUMP`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			500
+		[X AXIS]
+		[RANDOM]
+			200	250
+		[Y AXIS]
+		[RANDOM SELECT]
+			200	220
+		[/RANDOM SELECT]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-300
+		[X AXIS]
+			300
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		3	100
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Y AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]

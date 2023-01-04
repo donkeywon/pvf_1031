@@ -1,0 +1,33 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/sit.ani`
+	[SUB ANI]
+		`../animation/weapon/sit_wp.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`明白！`	0	100
+	[/SPEECH]
+	[SOUND]
+		`ODESA_SKILL_01`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		0
+	[FRAME]
+		0	0
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[haste]
+		100	50	5000	100	0
+[/BEHAVIOR]

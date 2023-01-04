@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/ball1_attack.ani`
+	[SUB ANI]
+		`../animation/ball1_attack_e.ani`	0	1
+		`../animation/Ball1_attack_e1.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`TRETRI_ROBOT_ELEC`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[END]
+[/BEHAVIOR]

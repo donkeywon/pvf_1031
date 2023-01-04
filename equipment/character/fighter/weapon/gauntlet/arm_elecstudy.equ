@@ -1,0 +1,169 @@
+#PVF_File
+
+[name]
+	`(旧) 雷电臂铠`
+
+[name2]
+	`Elecstuner`
+
+[basic explain]
+	`攻击时， 有2%%的几率附加50点光属性伤害， 并使敌人进入眩晕状态4秒。`
+
+[detail explain]
+	`攻击时， 有2%%的几率附加50点光属性伤害， 并使敌人进入眩晕状态4秒。 (若敌人高于Lv34， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	36
+
+[rarity]
+	2
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	34
+
+[physical attack]
+	36
+
+[attack speed]
+	-80
+
+[stuck]
+	-1
+
+[price]
+	57600
+
+[repair price]
+	46080
+
+[value]
+	46080
+
+[equipment physical attack]
+	389	370
+
+[equipment magical attack]
+	292	277
+
+[separate attack]
+	161	107
+
+[icon]
+	`Item/weapon/fighter/gauntlet.img`	17
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	0	1
+
+[layer variation]
+	2790
+	`armc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`armb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	0	1
+
+[layer variation]
+	2150
+	`at_arma`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_armb`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_armc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_armx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[cooltime]
+		8000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[add absolute damage]
+		`all`
+		`+`	50
+	[target]
+		`enemy`	-1
+	[duration]
+		4000
+	[active status]
+		`stun`	34
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

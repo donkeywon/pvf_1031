@@ -1,0 +1,45 @@
+#PVF_File
+
+[width]
+	1	1
+
+[floating height]
+	0
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[team]
+	100
+
+[basic action]
+	`Action/fire_roundwood.act`
+
+[etc action]
+	`Action/fire_branch1.act`
+	`Action/fire_branch2.act`
+[/etc action]
+
+[attack info]
+	`AttackInfo/fire_roundwood.atk`
+
+[name]
+	`烧焦的木柱`
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	5500
+[/object destroy condition]
+
+[destroy particle]
+	`Particle/fire_roundwood.ptl`
+
+[sound category]
+	`[after object create]`
+	`UMTARA_WOOD_SWISH`	-1
+	`[on destroyobject]`
+	`UMTARA_WOOD_BRAKE`	-1
+[/sound category]

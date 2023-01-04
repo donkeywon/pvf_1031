@@ -1,0 +1,81 @@
+#PVF_File
+
+[name]
+	`芝诺的毁灭之戒`
+
+[basic explain]
+	`HP在25%%以下时， 可以使自身增加100点力量。`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	152
+
+[price]
+	89000
+
+[value]
+	71200
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	3072	2912
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	115
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[magical attack]
+	52
+
+[if]
+	[change status]
+		`hp`
+		`<=`
+		`%`	25
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	100
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

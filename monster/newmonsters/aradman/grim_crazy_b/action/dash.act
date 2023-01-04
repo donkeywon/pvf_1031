@@ -1,0 +1,26 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/dash.ani`
+	[SUB ANI]
+		`../animation/weapon/dash_wp.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+	[SET SPEED]
+		[X AXIS]
+			200
+	[/SET SPEED]
+[/BEHAVIOR]

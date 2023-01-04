@@ -1,0 +1,146 @@
+#PVF_File
+
+[name]
+	`传承 : 生命女神的软陶胸甲`
+
+[name2]
+	`Legacy : Coat of Cubeley`
+
+[grade]
+	37
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	35
+
+[physical attack]
+	23
+
+[magical attack]
+	12
+
+[HP MAX]
+	150
+
+[price]
+	33300
+
+[repair price]
+	26640
+
+[value]
+	26640
+
+[equipment physical defense]
+	1440	1368
+
+[physical critical hit]
+	1
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/IconArmor.img`	289
+
+[field image]
+	`Item/field_equip.img`	5
+
+[equipment type]
+	`[coat]`	19
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3100
+
+[item group name]
+	`la coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 生命女神的软陶轻甲  套装`
+
+[set item]
+	10883	12883	18879
+[/set item]
+
+[item overpower part]
+
+[set ability]
+	[HP MAX]
+		200
+	[MP MAX]
+		200
+	[physical attack]
+		53
+	[physical defense]
+		53
+	[move speed]
+		20
+	[attack speed]
+		20
+	[if]
+		[cooltime]
+			30000
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			20000
+		[probability]
+			2
+		[stat]
+			`stuck resistance`
+			`+`	70
+	[/then]
+	[stuck]
+		-1
+	[fullset basic explain]
+		`被攻击时， 有2%%的几率使自身增加7%%的回避率， 效果持续20秒。
+进入地下城时， 因传承的祝福可以使自身增加5%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	50
+	[/then]
+[/set ability]
+
+[possible kiri protect]

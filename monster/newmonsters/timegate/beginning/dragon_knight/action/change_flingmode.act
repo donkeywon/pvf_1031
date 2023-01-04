@@ -1,0 +1,29 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Sit.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`fly_move.act`
+	[CHANGE ACTION FILE]
+	[STAY]
+		`fly_move.act`
+	[CHANGE FLOATING HEIGHT]
+		100
+	[CHANGE AI]
+	[NORMAL]
+		2
+		`Action_1.ai`
+[/BEHAVIOR]

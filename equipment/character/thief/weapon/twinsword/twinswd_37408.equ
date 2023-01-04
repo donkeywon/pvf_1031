@@ -1,0 +1,169 @@
+#PVF_File
+
+[name]
+	`冰刃剑 - 克里希卡 [网吧]`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入冰冻状态。
+攻击冰冻状态下的敌人时，附加80的伤害。
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入冰冻状态5秒。 (若敌人高于Lv30， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击冰冻状态下的敌人时，附加80的伤害。
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。`
+
+[grade]
+	34
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	30
+
+[physical attack]
+	25
+
+[attack speed]
+	-80
+
+[price]
+	61200
+
+[repair price]
+	48960
+
+[value]
+	48960
+
+[equipment physical attack]
+	347	306
+
+[equipment magical attack]
+	272	240
+
+[separate attack]
+	196	130
+
+[physical critical hit]
+	5
+
+[skill levelup]
+	`[thief]`	30	1
+[/skill levelup]
+
+[freeze resistance]
+	5
+
+[icon]
+	`Item/weapon/thief/twinswd.img`	37
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[thief]`
+
+[variation]
+	2	9
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		7500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		3
+	[active status]
+		`freeze`	30
+[/then]
+
+[if]
+	[target active status]
+		`freeze`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`+`	80
+[/then]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

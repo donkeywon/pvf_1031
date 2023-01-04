@@ -1,0 +1,173 @@
+#PVF_File
+
+[name]
+	`无头骑士`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+	`[HP MAX]`	`*`	90000
+[/ability category]
+
+[level]
+	1	70
+
+[move speed]
+	230	230
+
+[attack speed]
+	500	500
+
+[cast speed]
+	500	500
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	300000	300000
+
+[freeze resistance]
+	100	100
+
+[stun resistance]
+	100	100
+
+[blind resistance]
+	100	100
+
+[stone resistance]
+	100	100
+
+[sleep resistance]
+	100	100
+
+[hold resistance]
+	100	100
+
+[slow resistance]
+	100	100
+
+[curse resistance]
+	100	100
+
+[confuse resistance]
+	100	100
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[lie frame]
+	2	3	2	3	4
+
+[damage sound]
+	`DOLL_DMG`
+
+[die sound]
+	`DOLL_DIE`
+
+[ambient sound]
+	`DOLL_FLOAT_LOOP`
+
+[category]
+	`[oneside move]`
+	`[undead]`
+[/category]
+
+[fix direction]
+	`[left]`
+
+[initial target]
+	[MONSTER]
+		64597
+	[initial target Permanent]
+		0
+[/initial target]
+
+[waiting action]
+	`Action/Comein_Stay.act`
+
+[move action]
+	`Action/Comein_Move.act`
+
+[damage action 1]
+	`Action/Damage0.act`
+
+[damage action 2]
+	`Action/Damage1.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[proc action]
+	`Action/Proc.act`
+
+[attack action]
+	`Action/attack_0.act`
+	`Action/attack_1.act`
+	`Action/attack_2.act`
+	`Action/attack_3.act`
+	`Action/ComeIn_End.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack.atk`
+	`AttackInfo/KickAttack.atk`
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Attack.atk`
+	``
+[/attack info]
+
+[cooltime]
+	4000	5000	20000	60000	9000000
+[/cooltime]
+
+[vision]
+	700
+
+[think term]
+	500
+
+[destination change term]
+	300
+
+[keep distance with target]
+	100
+
+[ai pattern]
+	[normal]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/normal]
+	[expert]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/expert]
+	[master]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/master]
+	[king]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/king]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[base table]
+	`NewMonsters/AdvanceAltar/Enemy/HeadrlessKnight/table/AdvanceAltarMonsterBaseParameter.tbl`

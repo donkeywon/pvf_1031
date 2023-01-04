@@ -1,0 +1,27 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Hide.ani`
+	[SOUND]
+		`PICKPOCKET_ATK_02`	0
+		`CAMOUFLAGE_DISAPPEAR`	0
+	[/SOUND]
+	[SPEECH]
+		`潜入群众……`	0	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`shadowMove.act`
+[/BEHAVIOR]

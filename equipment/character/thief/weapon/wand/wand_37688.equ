@@ -1,0 +1,159 @@
+#PVF_File
+
+[name]
+	`布鲁之怨灵手杖`
+
+[name2]
+	`Grudge Having Wand Of Flu`
+
+[basic explain]
+	`攻击时， 有4%%的几率出现布鲁之怨灵。`
+
+[flavor text]
+	`从遗骸中能够感受到强大的怨气， 而且似乎还充满着某种神秘的力量……我一定要征服它~`
+
+[grade]
+	70
+
+[rarity]
+	4
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	65
+
+[magical attack]
+	47
+
+[attack speed]
+	-80
+
+[price]
+	112000
+
+[repair price]
+	94080
+
+[value]
+	89600
+
+[equipment physical attack]
+	544	496
+
+[equipment magical attack]
+	775	706
+
+[separate attack]
+	411	278
+
+[magical critical hit]
+	5
+
+[icon]
+	`Item/weapon/thief/wand.img`	80
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	13	5
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2100
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+	[/module]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		4
+	[passive object]
+		9104	0	0	0	70	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[module]
+		`[pvp type]`
+	[/module]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		1
+	[passive object]
+		48109	0	0	0	70	0	``
+	[/passive object]
+[/then]
+
+[routing priority]
+	`thief`	2
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

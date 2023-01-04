@@ -1,0 +1,62 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Server/chair_server2_stay.ani`
+	[SUB ANI]
+		`../Animation/Server/chair_server1_stay.ani`	0	1
+		`../Animation/Server/chair_server3_stay.ani`	0	2
+		`../Animation/Wagon_Back/Wagon_Back_stay.ani`	0	3
+		`../Animation/chair_stay.ani`	0	4
+		`../Animation/Stick/Stick_chair_stay.ani`	0	5
+		`../Animation/Server/chair_server4_stay.ani`	0	6
+		`../Animation/Server/chair_server5_stay.ani`	0	7
+		`../Animation/Server/chair_server6_stay.ani`	0	8
+		`../Animation/Wagon_Front/Wagon_Front_stay.ani`	0	9
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`summoncooltime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`summoncooltime`	
+		[+]
+			20000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+	[ATTACK]
+		6	0
+	[ON]
+[/BEHAVIOR]

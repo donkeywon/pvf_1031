@@ -1,0 +1,27 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/TurnReady.ani`
+	[SUB ANI]
+		`../Animation/Fire/TurnReady.ani`	0	1
+		`../Animation/Fire/attack_speed_up_back.ani`	0	1
+		`../Animation/Fire/attack_speed_up_front.ani`	0	2
+		`../Animation/Fire/move_speed_up.ani`	0	3
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		8
+	[NOW]
+[/BEHAVIOR]

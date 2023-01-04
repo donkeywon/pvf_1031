@@ -1,0 +1,188 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`远古人偶师鱿鱼`
+
+[face image]
+	`Monster/MonsterFace.img`	342
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	15000
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[overhead gauge type]
+	1
+
+[freeze resistance]
+	100	100
+
+[stun resistance]
+	100	100
+
+[blind resistance]
+	100	100
+
+[stone resistance]
+	100	100
+
+[sleep resistance]
+	100	100
+
+[hold resistance]
+	100	100
+
+[slow resistance]
+	100	100
+
+[curse resistance]
+	100	100
+
+[confuse resistance]
+	100	100
+
+[category]
+	`[oneside move]`
+	`[undead]`
+[/category]
+
+[fix direction]
+	`[left]`
+
+[initial target]
+	[MONSTER]
+		64597
+	[initial target Permanent]
+		0
+[/initial target]
+
+[HP regen speed]
+	0	0
+
+[MP regen speed]
+	0	0
+
+[level]
+	1	60
+
+[move speed]
+	550	550
+
+[attack speed]
+	500	500
+
+[cast speed]
+	500	500
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	300000	300000
+
+[lie frame]
+	2	3	2	3	4
+
+[damage sound]
+	`DOLL_DMG`
+
+[die sound]
+	`DOLL_DIE`
+
+[ambient sound]
+	`DOLL_FLOAT_LOOP`
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[proc action]
+	`Action/Proc.act`
+
+[attack action]
+	`Action/DownAttack.act`
+	`Action/UpperAttack.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/DownAttack.atk`
+	`AttackInfo/UpperAttack.atk`
+[/attack info]
+
+[cooltime]
+	13000	26000
+[/cooltime]
+
+[vision]
+	500
+
+[think term]
+	500
+
+[destination change term]
+	300
+
+[keep distance with target]
+	150
+
+[ai pattern]
+	[normal]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/normal]
+	[expert]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/expert]
+	[master]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/master]
+	[king]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/king]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[base table]
+	`NewMonsters/AdvanceAltar/Enemy/Goliath/table/AdvanceAltarMonsterBaseParameter.tbl`

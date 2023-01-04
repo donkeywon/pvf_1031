@@ -1,0 +1,42 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/hammer.ani`
+	[SUB ANI]
+		`../animation/hammer_p.ani`	0	-20
+		`../animation/hammer_n1.ani`	0	10
+		`../animation/hammer_n.ani`	0	10
+		`../animation/hammer_s.ani`	0	10
+		`../animation/hammer_c1.ani`	0	20
+		`../animation/hammer_c.ani`	0	20
+	[/SUB ANI]
+	[SOUND]
+		`PHAMMER_CREATE`	1
+		`PHAMMER_SWING`	2
+		`R_MICA_SKILL_04`	3
+		`PHAMMER_CRASH`	6
+		`PHAMMER_DISAP`	8
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10367
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			300	20	80
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

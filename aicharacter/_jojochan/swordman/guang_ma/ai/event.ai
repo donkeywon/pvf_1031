@@ -1,0 +1,76 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[attack success]
+			1
+		[true]
+	
+		[think]
+			[my attack]
+				58
+			[true]
+			[return]
+				`ice_wave`
+			[false]
+		
+			[think]
+				[my attack]
+					46
+				[true]
+				[return]
+					`cancel_wave_combo`
+				[false]
+			
+				[think]
+					[my attack]
+						21
+					[true]
+					[import ai]
+						`ice_wave_combo.ai`
+					[false]
+				
+					[think]
+						[my attack]
+							32
+						[true]
+						[return]
+							`ice_wave`
+						[false]
+					
+						[think]
+							[my attack]
+								20
+							[true]
+						
+							[think]
+								[check use skill]
+									22
+								[true]
+								[return]
+									`flame_wave`
+								[false]
+								[return]
+									-1
+							[/think]
+	[false]
+	[think]
+		[my attack]
+			22
+		[true]
+		[return]
+			`ice_wave`
+		[false]
+		[return]
+			-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+[/ai pattern]

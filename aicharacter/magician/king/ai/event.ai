@@ -1,0 +1,50 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[my hp down]
+			`%`	80
+		[true]
+		[import ai]
+			`4.ai`
+		[false]
+	
+		[think]
+			[my hp down]
+				`%`	60
+			[true]
+			[import ai]
+				`3.ai`
+			[false]
+		
+			[think]
+				[my hp down]
+					`%`	40
+				[true]
+				[import ai]
+					`1.ai`
+				[false]
+			
+				[think]
+					[my hp down]
+						`%`	20
+					[true]
+					[import ai]
+						`2.ai`
+					[false]
+				
+					[think]
+						[my hp down]
+							`%`	10
+						[true]
+						[import ai]
+							`2.ai`
+						[false]
+						[return]
+							-1
+					[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

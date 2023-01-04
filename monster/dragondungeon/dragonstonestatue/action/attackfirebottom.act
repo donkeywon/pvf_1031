@@ -1,0 +1,183 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AttackFireBottom/Body.ani`
+	[SUB ANI]
+		`../Animation/AttackFireBottom/Jaw.ani`	0	1
+		`../Animation/AttackFireBottom/Head.ani`	0	2
+		`../Animation/AttackFireBottom/Eye_Dodge.ani`	0	3
+		`../Animation/AttackFireBottom/Start_Back_Dodge.ani`	0	4
+		`../Animation/AttackFireBottom/Start_Core_Dodge.ani`	0	5
+		`../Animation/AttackFireBottom/Start_Floor_Dodge.ani`	0	6
+		`../Animation/AttackFireBottom/Start_Head_Dodge.ani`	0	7
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`createTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[DIM]
+		`targetCreateTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[DIM]
+		`endTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[SHAKING]
+		2	8000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`createTime`	
+		[+]
+			1000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54036
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			-800	-650	-500	-450	-300
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			-70	-35	0	35	70
+		[/RANDOM SELECT]
+	0	
+		[USE MY BASEPOS]
+		[WARNING MARK]
+			0	0	110	2
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54036
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			-800	-650	-500	-450	-300
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			-70	-35	0	35	70
+		[/RANDOM SELECT]
+	0	
+		[USE MY BASEPOS]
+		[WARNING MARK]
+			0	0	110	2
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54036
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			-800	-650	-500	-450	-300
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			-70	-35	0	35	70
+		[/RANDOM SELECT]
+	0	
+		[USE MY BASEPOS]
+		[WARNING MARK]
+			0	0	110	2
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`createTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`endTime`	
+		[+]
+			8000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`targetCreateTime`	
+		[+]
+			1000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+		[GET TARGET]
+			2
+		[RANDOM]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54036
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[USE MY BASEPOS]
+		[WARNING MARK]
+			0	0	110	2
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`targetCreateTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]

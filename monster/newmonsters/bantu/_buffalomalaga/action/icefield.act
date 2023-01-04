@@ -1,0 +1,42 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/IceField.ani`
+	[SOUND]
+		`BUTTON_01`	4
+		`MALAGA_SKILL_01`	1
+		`SPIRE_UP`	1
+	[/SOUND]
+	[SUB ANI]
+		`../Animation/IceFieldEffect.ani`	0	0
+		`../Animation/Smash.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`我的成名绝技`	2	20
+		`被逮到就死定了`	2	20
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		4	250
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8038
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			55
+		[POS]
+			180	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

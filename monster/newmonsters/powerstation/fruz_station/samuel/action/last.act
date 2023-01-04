@@ -1,0 +1,123 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Last.ani`
+	[SUB ANI]
+		`../Animation/1samuel_steam1.ani`	0	1
+		`../Animation/1samuel_steam2.ani`	0	2
+		`../Animation/1samuel_steam3.ani`	0	3
+		`../Animation/samuel_steam1.ani`	0	4
+	[/SUB ANI]
+	[SPEECH]
+		`安徒恩大人……抱歉了……咳咳……`	1	100
+	[/SPEECH]
+	[SOUND]
+		`SAMUEL_ABSOLB`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16141
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			1
+		[POS]
+			10	45	5
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16141
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			1
+		[POS]
+			-10	-25	5
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16141
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			1
+		[POS]
+			-60	5	5
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16141
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			1
+		[POS]
+			60	-5	5
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16141
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			1
+		[POS]
+			60	15	5
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16141
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			1
+		[POS]
+			-60	25	5
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

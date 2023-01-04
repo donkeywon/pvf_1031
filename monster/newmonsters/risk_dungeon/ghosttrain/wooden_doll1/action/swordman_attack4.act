@@ -1,0 +1,30 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Swordman_Attack4.ani`
+	[SUB ANI]
+		`../Animation/weapon/Swordman_Attack4.ani`	0	0
+		`../Animation/ball/Swordman_Attack4.ani`	0	0
+		`../Animation/ball_eff/Swordman_Attack4.ani`	0	0
+		`../Animation/Skill_eff/HardAttack1.ani`	0	0
+		`../Animation/Skill_eff/HardAttack2.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`GHOST_DRIVE_SAYA`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		6
+	[END]
+[/BEHAVIOR]

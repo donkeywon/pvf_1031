@@ -1,0 +1,108 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/StoneBody2.ani`
+	[SUB ANI]
+		`../Animation/_StoneBody_Effect.ani`	0	0
+		`../Animation/_StoneBody_Effect2.ani`	0	0
+		`../Animation/_StoneBody_Effect3.ani`	0	0
+		`../Animation/_StoneBody_Effect4.ani`	0	0
+		`../Animation/_StoneBody_Effect5.ani`	0	0
+		`../Animation/EyeEffect/StoneBody2.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`BORROW_DOWN`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time1`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		0
+	[OFF]
+	[TRIGGER]
+		1
+	[ON]
+	[TRIGGER]
+		2
+	[ON]
+	[SAY SPEECH]
+		`尽情呼吸吧，等会你就要下地狱了~`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`time1`	
+		[+]
+			15000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[SET ACTION]
+	[ATTACK]
+		14
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time1`	
+		[+]
+			14000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[OFF]
+	[TRIGGER]
+		2
+	[OFF]
+	[SAY SPEECH]
+		`时间到！`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[ON]
+[/BEHAVIOR]

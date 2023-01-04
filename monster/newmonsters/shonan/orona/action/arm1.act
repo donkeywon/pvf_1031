@@ -1,0 +1,87 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/arm1.ani`
+	[SUB ANI]
+		`../animation/shawl/1arm1.ani`	0	1
+		`../animation/shawl/arm1.ani`	0	2
+		`../animation/shawl/2arm1.ani`	0	3
+		`../animation/arm1_e.ani`	0	4
+		`../animation/arm1_e1.ani`	0	5
+	[/SUB ANI]
+	[SPEECH]
+		`再来继续吧~`	1	30
+	[/SPEECH]
+	[SOUND]
+		`R_NENKWON_ATK_04`	1
+		`TYPHOON_FIN_DOWN`	2
+		`AQUARESS_ATK_01`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			800
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[MONSTER]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		2	3	4
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		1
+	[END]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		2
+	[END]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]

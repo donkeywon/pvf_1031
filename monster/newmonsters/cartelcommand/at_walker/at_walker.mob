@@ -1,0 +1,112 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`GT-700`
+
+[face image]
+	`Monster/MonsterFace.img`	519
+
+[ability table]
+	1
+
+[ability category]
+	`[HP MAX]`	`*`	800
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	200
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	200
+[/ability category]
+
+[category]
+	`[machine]`
+[/category]
+
+[level]
+	60	60
+
+[move speed]
+	700	700
+
+[attack speed]
+	1000	1000
+
+[hit recovery]
+	800	800
+
+[weight]
+	80000	80000
+
+[vision]
+	1900
+
+[stuckbonus on damage]
+	15	25	35	35
+
+[keep distance with target]
+	200
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[last action]
+	`Action/lastaction.act`
+
+[sit action]
+	`Action/sit.act`
+
+[attack action]
+	`Action/fire.act`
+[/attack action]
+
+[attack info]
+	``
+[/attack info]
+
+[cooltime]
+	8000
+[/cooltime]
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

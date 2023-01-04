@@ -1,0 +1,115 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	3013
+[/dungeon]
+
+[type]
+	`[boss]`
+
+[greed]
+	`AA AA`
+
+[tile]
+	`../../DarkelfCemetary/Tile/overnoblankmid.til`
+	`../../DarkelfCemetary/Tile/overnoblankmid.til`
+	`../../DarkelfCemetary/Tile/overnoblankmid.til`
+	`../../DarkelfCemetary/Tile/overnoblankmid.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`../../DarkelfCemetary/Animation/dcfar.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`../../DarkelfCemetary/Animation/dcmid.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	12	196	882	208	558	126	264	284
+
+[dungeon start area]
+	417	267	51	42
+
+[sound]
+	`R_AMB_CAVE`
+	`M_DARKELF_BOSS`
+[/sound]
+
+[animation]
+	`../../DarkelfCemetary/Animation/dcfarstreamani.ani`	`[distantback]`	0	-120	0
+	`../../DarkelfCemetary/Animation/dcfarstreamani.ani`	`[distantback]`	640	-120	0
+	`../../DarkelfCemetary/Animation/dcfarstreamani.ani`	`[distantback]`	1280	-120	0
+	`../../DarkelfCemetary/Animation/dcfarstreamani.ani`	`[distantback]`	1920	-120	0
+[/animation]
+
+[monster]
+	62660	1	0	250	152	0	1	1	`[fixed]`	`[normal]`
+	62660	1	0	649	159	0	1	1	`[fixed]`	`[normal]`
+	62661	1	2	887	202	0	2	1	`[fixed]`	`[boss]`
+	62662	1	0	257	222	0	1	1	`[fixed]`	`[normal]`
+	62662	1	0	635	231	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[special passive object]
+	816	437	133	0	1
+	`[item]`	0	2	-1	-1	-1
+	803	39	149	0	3
+	`[item]`	3	-1	4	-1	-1
+	`[trap]`	2010	1	1	2	-1
+	`[trap]`	2110	1	1	2	-1
+	816	168	276	0	1
+	`[item]`	4	1	-1	-1	-1
+	816	448	277	0	1
+	`[item]`	0	2	-1	-1	-1	
+[/special passive object]
+
+[NPC]
+	1000	`[left]`	0	0	0
+[/NPC]
+
+[event monster position]
+	329	154	0
+	302	204	0
+	195	172	0
+	461	191	0
+[/event monster position]
+
+[map name]
+	`PVP 无名`

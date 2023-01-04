@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/EarthQuake.ani`
+	[SUB ANI]
+		`../Animation/FullCharge2.ani`	0	1
+		`../Animation/Charge1.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12608
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			1
+		[POS]
+			400	20	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

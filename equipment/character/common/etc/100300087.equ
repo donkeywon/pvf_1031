@@ -1,0 +1,48 @@
+#PVF_File
+
+[name]
+	`白色小晶块效果`
+
+[name2]
+	`White Small Cube`
+
+[explain]
+	`使武器附加光属性， 效果持续30秒。`
+
+[grade]
+	0
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[icon]
+	`Item/IconMaterial.img`	10
+
+[equipment type]
+	`[coat]`	14
+
+[cool time]
+	30000
+
+[if]
+	[time]
+		30000	1	1000
+	[module]
+		`[dungeon type]`
+	[/module]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[consume item]
+		3034	1
+	[duration]
+		30000
+	[elemental weapon]
+		`light`
+[/then]

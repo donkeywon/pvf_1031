@@ -1,0 +1,199 @@
+#PVF_File
+
+[name]
+	`盗墓王`
+
+[face image]
+	`Monster/MonsterFace.img`	386
+
+[die effect]
+	0	6	0
+
+[category]
+	`[undead]`
+	`[melee combat]`
+[/category]
+
+[ambient sound]
+	``
+
+[attack sound]
+	``
+
+[appear sound]
+	``
+
+[damage sound]
+	`R_B_ROBBER_DMG`
+
+[die sound]
+	`R_B_ROBBER_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	180
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	150
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	180
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	150
+	`[HP MAX]`	`*`	1440
+[/ability category]
+
+[level]
+	100	100
+
+[fire resistance]
+	-20	-20
+
+[water resistance]
+	20	20
+
+[dark resistance]
+	50	50
+
+[light resistance]
+	-30	-30
+
+[slow resistance]
+	10	10
+
+[freeze resistance]
+	50	50
+
+[poison resistance]
+	30	30
+
+[stun resistance]
+	50	50
+
+[curse resistance]
+	20	20
+
+[blind resistance]
+	20	20
+
+[lightning resistance]
+	-10	-10
+
+[stone resistance]
+	30	30
+
+[sleep resistance]
+	10	10
+
+[burn resistance]
+	-10	-10
+
+[bleeding resistance]
+	1000	1000
+
+[confuse resistance]
+	20	20
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1500	1500
+
+[weight]
+	200000	200000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[waiting action]
+	`Action/StayLong.act`
+
+[move action]
+	`Action/Move.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[attack action]
+	`Action/AttackNormal.act`
+	`Action/Excavation_Ready.act`
+	`Action/Excavation1.act`
+	`Action/Excavation2.act`
+	`Action/Excavation3.act`
+	`Action/Stay.act`
+	`Action/DashReady.act`
+	`Action/DashAttack.act`
+[/attack action]
+
+[proc action]
+	`Action/Proc.act`
+
+[attack info]
+	`AttackInfo/DashAttack.atk`
+	`AttackInfo/DashAttack.atk`
+	`AttackInfo/DashAttack.atk`
+	`AttackInfo/DashAttack.atk`
+	`AttackInfo/DashAttack.atk`
+	`AttackInfo/DashAttack.atk`
+	`AttackInfo/DashAttack.atk`
+	`AttackInfo/DashAttack.atk`
+[/attack info]
+
+[cooltime]
+	5000	0	0	0	0	1000	10000	5000
+[/cooltime]
+
+[think term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	250
+
+[vision]
+	1000
+
+[lie frame]
+	2	3	2	3	4

@@ -1,0 +1,63 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Tentacle/SpeedUp.ani`
+	[SUB ANI]
+		`../Animation/SpeedUp.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`再跑快一点！`	0	40
+		`要用鞭子抽才能跑得快吗？`	0	40
+		`被骗了！GBL教不是哥布林教！！`	0	1
+		`哈哈~~太过瘾啦！！`	5	50
+	[/SPEECH]
+	[SOUND]
+		`GOBLIN_COMMAND`	1
+		`STICKA_01`	3
+		`GBOMB_SKILL_01`	4
+		`STAR_ATK`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		4000	
+		[move speed]
+		[%]
+			20.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			300
+		[USE MY DIRECTION]
+	[/SET SPEED]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8209
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			45
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

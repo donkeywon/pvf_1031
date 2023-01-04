@@ -1,0 +1,59 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_6.ani`
+	[SUB ANI]
+		`../animation/effect_hamony/PartyBlast.ani`	0	-2
+		`../animation/effect_hamony/PersonalCast3.ani`	0	-1
+		`../animation/effect_hamony/PersonalCast4.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`灵魂协奏曲 第一乐章?`	0	100
+	[/SPEECH]
+	[SOUND]
+		`IRISM_SKILL_02`	0
+		`IRISM_SPIN`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9895
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9895
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`复活?`
+[/BEHAVIOR]

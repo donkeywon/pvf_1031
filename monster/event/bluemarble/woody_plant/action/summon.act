@@ -1,0 +1,94 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/summon.ani`
+	[SUB ANI]
+		`../Animation/fire/summon.ani`	0	1
+		`../Animation/wepon/summon.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`WPLANT_SKILL_01`	1
+		`WPLANT_SPAWN`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9904
+		[PARTICLE FILENAME]
+			`../Particle/down.ptl`
+		[LEVEL]
+			38
+		[POS]
+		[RANDOM]
+			30	50
+		[RANDOM]
+			0	10	100
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9904
+		[PARTICLE FILENAME]
+			`../Particle/down.ptl`
+		[LEVEL]
+			38
+		[POS]
+			40
+		[RANDOM]
+			5	-5	120
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9904
+		[PARTICLE FILENAME]
+			`../Particle/down.ptl`
+		[LEVEL]
+			38
+		[POS]
+			70
+		[RANDOM]
+			-10	10	120
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9904
+		[PARTICLE FILENAME]
+			`../Particle/down.ptl`
+		[LEVEL]
+			38
+		[POS]
+			40
+		[RANDOM]
+			5	-5	120
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

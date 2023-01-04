@@ -1,0 +1,149 @@
+#PVF_File
+
+[name]
+	`传承 : 控魂女神的纹钢胸甲`
+
+[name2]
+	`Legacy : Chain Mail of Keres`
+
+[grade]
+	59
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[physical attack]
+	31
+
+[physical defense]
+	31
+
+[magical attack]
+	19
+
+[price]
+	59000
+
+[repair price]
+	52038
+
+[value]
+	47200
+
+[equipment physical defense]
+	2976	2880
+
+[skill levelup]
+	`[swordman]`	40	1
+	`[fighter]`	45	1
+	`[at fighter]`	45	1
+	`[gunner]`	62	1
+	`[at gunner]`	62	1
+	`[priest]`	47	1
+	`[priest]`	121	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/common/coat.img`	26
+
+[field image]
+	`Item/field_equip.img`	10
+
+[equipment type]
+	`[coat]`	20
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	3600
+
+[item group name]
+	`ha coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 控魂女神的纹钢重甲  套装`
+
+[set item]
+	11308	13307	15297	19301	17295
+[/set item]
+
+[set ability]
+	[HP MAX]
+		300
+	[physical attack]
+		75
+	[physical defense]
+		75
+	[magical attack]
+		60
+	[dark resistance]
+		10
+	[stuck resistance]
+		30
+	[HP regen speed]
+		30
+	[MP regen speed]
+		8
+	[move speed]
+		35
+	[attack speed]
+		35
+	[skill levelup]
+		`[swordman]`	81	1
+		`[fighter]`	77	1
+		`[at fighter]`	77	1
+		`[gunner]`	71	1
+		`[at gunner]`	71	1
+		`[priest]`	5	1
+		`[priest]`	125	1
+		`[demonic swordman]`	81	1
+	[/skill levelup]
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福可以使自身增加7%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	70
+	[/then]
+[/set ability]
+
+[possible kiri protect]

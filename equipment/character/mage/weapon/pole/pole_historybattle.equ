@@ -1,0 +1,184 @@
+#PVF_File
+
+[name]
+	`远古逆袭之厄特尔长棍`
+
+[name2]
+	`Ertel Stick of Historical Battle`
+
+[basic explain]
+	`攻击时， 有2%%的几率使自身增加30点力量， 效果持续30秒
+攻击速度 +1%%`
+
+[flavor text]
+	`蕴含远古战争英雄之灵魂的稀贵武器。`
+
+[grade]
+	59
+
+[rarity]
+	2
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[physical attack]
+	44
+
+[magical attack]
+	44
+
+[attack speed]
+	60
+
+[cast speed]
+	10
+
+[move speed]
+	10
+
+[stuck]
+	-1
+
+[price]
+	82600
+
+[repair price]
+	69384
+
+[value]
+	66080
+
+[equipment physical attack]
+	549	531
+
+[equipment magical attack]
+	457	443
+
+[separate attack]
+	256	173
+
+[skill levelup]
+	`[mage]`	36	1
+	`[mage]`	69	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/mage/pole.img`	50
+
+[field image]
+	`Item/field_weapon.img`	8
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[mage]`
+
+[variation]
+	11	0
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	11	0
+
+[layer variation]
+	2150
+	`at_polea`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_poled`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	11	0
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`POLE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2400
+
+[item group name]
+	`pole`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	22
+
+[if]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`physical attack`
+		`+`	30
+[/then]
+
+[possible kiri protect]

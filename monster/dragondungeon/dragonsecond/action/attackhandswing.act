@@ -1,0 +1,148 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AttackHandSwing/HandSwing_Dummy.ani`
+	[SUB ANI]
+		`../Animation/AttackHandSwing/HandSwing_newLayer.ani`	0	1
+		`../Animation/AttackHandSwing/HandSwing_19_arm.ani`	0	2
+		`../Animation/AttackHandSwing/HandSwing_18_body.ani`	0	3
+		`../Animation/AttackHandSwing/HandSwing_17_neck.ani`	0	4
+		`../Animation/AttackHandSwing/HandSwing_16_neck.ani`	0	5
+		`../Animation/AttackHandSwing/HandSwing_15_neck.ani`	0	6
+		`../Animation/AttackHandSwing/HandSwing_14_neck.ani`	0	7
+		`../Animation/AttackHandSwing/HandSwing_13_neck.ani`	0	8
+		`../Animation/AttackHandSwing/HandSwing_12_back.ani`	0	9
+		`../Animation/AttackHandSwing/HandSwing_11_back.ani`	0	10
+		`../Animation/AttackHandSwing/HandSwing_10_back.ani`	0	11
+		`../Animation/AttackHandSwing/HandSwing_09_back.ani`	0	12
+		`../Animation/AttackHandSwing/HandSwing_08_back.ani`	0	13
+		`../Animation/AttackHandSwing/HandSwing_07_back.ani`	0	14
+		`../Animation/AttackHandSwing/HandSwing_06_head.ani`	0	15
+		`../Animation/AttackHandSwing/HandSwing_05_head.ani`	0	16
+		`../Animation/AttackHandSwing/HandSwing_04_head.ani`	0	17
+		`../Animation/AttackHandSwing/HandSwing_03_headhorn.ani`	0	18
+		`../Animation/AttackHandSwing/HandSwing_02_shoulder.ani`	0	19
+		`../Animation/AttackHandSwing/HandSwing_01_arm.ani`	0	20
+		`../Animation/AttackHandSwing/HandSwing_00_hand.ani`	0	21
+		`../Animation/AttackHandSwing/HandSwing_Effect_HandSwing_Wind.ani`	0	22
+		`../Animation/AttackHandSwing/HandSwing_Effect_HandSwing_Swing.ani`	0	23
+		`../Animation/AttackHandSwing/HandSwing_Effect_HandSwing_HitFloor.ani`	0	24
+		`../Animation/AttackHandSwing/HandSwing_Explosion_Dodge2.ani`	0	25
+		`../Animation/AttackHandSwing/HandSwing_Explosion_Dodge.ani`	0	26
+		`../Animation/AttackHandSwing/HandSwing_Effect_HandSwing_HitDust.ani`	0	27
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PULL APPENDAGE EX]
+		[SPEED]
+			6	4
+		[VALIDTIME]
+			640
+		[USE TARGET]
+			0
+		[OFFSET POS]
+			-102	-15
+		[MIN DISTANCE]
+			15
+	[/PULL APPENDAGE EX]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DELAY DO BEHAVIOR]
+	[ME]
+		4	100
+	[DELAY DO BEHAVIOR]
+	[ME]
+		4	200
+	[DELAY DO BEHAVIOR]
+	[ME]
+		4	300
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		5	600
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+		[GET TARGET]
+			2
+		[RANDOM]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54099
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[WARNING MARK]
+			0	0	100	2
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54099
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			90	190	290	390	490	590	630
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			170	240	320	390	430
+		[/RANDOM SELECT]
+	0	
+		[WARNING MARK]
+			0	0	100	2
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

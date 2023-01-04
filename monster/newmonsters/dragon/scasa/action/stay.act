@@ -1,0 +1,95 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/ShoulderB/ShoulderB_Stay.ani`
+	[SUB ANI]
+		`../Animation/ArmB/ArmB_Stay.ani`	0	2
+		`../Animation/FingerB/FingerB_Stay.ani`	0	3
+		`../Animation/Neck4/Neck4_Stay.ani`	0	4
+		`../Animation/Neck3/Neck3_Stay.ani`	0	5
+		`../Animation/Neck2/Neck2_Stay.ani`	0	6
+		`../Animation/Neck1/Neck1_Stay.ani`	0	7
+		`../Animation/Jaw/Jaw_Stay.ani`	0	8
+		`../Animation/Head/Head_Stay.ani`	0	9
+		`../Animation/Shoulder/Shoulder_Stay.ani`	0	10
+		`../Animation/Arm/Arm_Stay.ani`	0	11
+		`../Animation/Finger/Finger_Stay.ani`	0	12
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DIRECT DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`Dcount`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`Dcount`	
+		[=]
+			`Dcount`
+		[+]
+			1
+	[/DIM]
+	[PARTICLE]
+		`../particle/SnowRockDebris.ptl`	0	0	80
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`Dcount`	
+		[=>]
+			20
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+	[RANDOM SELECT]
+		13	14	15
+	[/RANDOM SELECT]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[ON SET ACTION]
+	[DIRECT DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61457
+		[LEVEL]
+			0
+		[POS]
+			209	292	0
+		[NO EFFECT]
+		[USE MAP POS]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

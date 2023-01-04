@@ -1,0 +1,165 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Run.ani`
+	[SUB ANI]
+		`../animation/wp/Run.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`MINSTALL_01`	2
+		`MINSTALL_01`	4
+		`MINSTALL_01`	6
+		`MINSTALL_01`	8
+		`MINSTALL_01`	11
+		`MINSTALL_01`	15
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8595
+		[PARTICLE FILENAME]
+			`../Particle/Run1.ptl`
+		[LEVEL]
+			60
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8595
+		[PARTICLE FILENAME]
+			`../Particle/Run2.ptl`
+		[LEVEL]
+			60
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8595
+		[PARTICLE FILENAME]
+			`../Particle/Run3.ptl`
+		[LEVEL]
+			60
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8595
+		[PARTICLE FILENAME]
+			`../Particle/Run4.ptl`
+		[LEVEL]
+			60
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8595
+		[PARTICLE FILENAME]
+			`../Particle/Run5.ptl`
+		[LEVEL]
+			60
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8595
+		[PARTICLE FILENAME]
+			`../Particle/Run6.ptl`
+		[LEVEL]
+			60
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8595
+		[PARTICLE FILENAME]
+			`../Particle/Run7.ptl`
+		[LEVEL]
+			60
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8595
+		[PARTICLE FILENAME]
+			`../Particle/Run8.ptl`
+		[LEVEL]
+			60
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8595
+		[PARTICLE FILENAME]
+			`../Particle/Run9.ptl`
+		[LEVEL]
+			60
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8595
+		[PARTICLE FILENAME]
+			`../Particle/Run10.ptl`
+		[LEVEL]
+			60
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			60002
+		[/IS INDEX]
+		[IS TEAM]
+			[MONSTER TEAM]
+		[/IS TEAM]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		3
+	[NOW]
+[/BEHAVIOR]

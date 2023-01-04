@@ -1,0 +1,96 @@
+#PVF_File
+
+[name]
+	`(旧) 哥布林冥骨项坠`
+
+[name2]
+	`Goblin Bone Necklace`
+
+[basic explain]
+	`攻击时， 有1%%的几率召唤出1只哥布林。`
+
+[detail explain]
+	`攻击时， 有1%%的几率召唤出1只Lv10的哥布林协助召唤者攻击敌人， 哥布林存在60秒。 (召唤的怪物只能同时存在1只， 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失)`
+
+[grade]
+	19
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	17
+
+[magical attack]
+	9
+
+[magical defense]
+	21
+
+[HP MAX]
+	100
+
+[price]
+	19000
+
+[repair price]
+	15200
+
+[value]
+	15200
+
+[equipment magical defense]
+	1760	1600
+
+[icon]
+	`Item/IconAcc.img`	40
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		78000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		60000
+	[reduce duration at pvp module]
+		75
+	[probability]
+		1
+	[summon monster]
+		1	10	1
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

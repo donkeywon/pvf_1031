@@ -1,0 +1,240 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Loop/MagicCircle_MagicCircle_Effect_M_Floor_magiccircle5.ani`
+	[SUB ANI]
+		`../Animation/Loop/MagicCircle_MagicCircle_Effect_M_Floor_magiccircle6.ani`	0	-1
+		`../Animation/Loop/MagicCircle_MagicCircle_Effect_M_Floor_magiccircle4.ani`	0	1
+		`../Animation/Loop/MagicCircle_MagicCircle_Effect_M_Floor_magiccircle3.ani`	0	2
+		`../Animation/Loop/MagicCircle_MagicCircle_Effect_M_Floor_magiccircle1.ani`	0	3
+		`../Animation/Loop/MagicCircle_MagicCircle_Effect_M_Floor_magiccircle0.ani`	0	4
+		`../Animation/Loop/MagicCircle_MagicCircle_Effect_C_M_Circle.ani`	0	5
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`AttackTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[DIM]
+		`TargetAttackTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[DIM]
+		`DotTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[DIM]
+		`DeBuffTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`AttackTime`	
+		[+]
+			1500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54107
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			-420	-350	-280	-210	-140	-70	0
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			-100	-80	-60	-40	-20	0	20	40	60	80	100
+		[/RANDOM SELECT]
+	0	
+		[USE MY BASEPOS]
+		[WARNING MARK]
+			0	0	100	2
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54107
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			420	350	280	210	140	70	0
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			-100	-80	-60	-40	-20	0	20	40	60	80	100
+		[/RANDOM SELECT]
+	0	
+		[USE MY BASEPOS]
+		[WARNING MARK]
+			0	0	100	2
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`AttackTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`TargetAttackTime`	
+		[+]
+			500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54107
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[USE MY BASEPOS]
+		[WARNING MARK]
+			0	0	100	2
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`TargetAttackTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`DotTime`	
+		[+]
+			200
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+		[DISTANCE]
+		[>]
+			430
+		[HP]
+		[>]
+			0
+		[%]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		-10
+	[%]
+	[DIM]
+		`DotTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`DeBuffTime`	
+		[+]
+			500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+		[DISTANCE]
+		[<]
+			430
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		600	
+		[jump power]
+		[%]
+			-100.0
+	[/APPENDAGE]
+	[DIM]
+		`DeBuffTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[SUMMON MASTER]
+	[CHECKED NO]
+	[<=]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[OFF]
+[/BEHAVIOR]

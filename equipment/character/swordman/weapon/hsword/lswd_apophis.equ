@@ -1,0 +1,211 @@
+#PVF_File
+
+[name]
+	`魔剑 - 阿波菲斯`
+
+[name2]
+	`Evil Sword : Apophis`
+
+[basic explain]
+	`物理、 魔法伤害 +10%%
+[血之狂暴]攻击力 +10%%`
+
+[detail explain]
+	`物理、 魔法伤害 +10%% (在决斗场中 +5%%)
+[血之狂暴]攻击力 +10%%`
+
+[grade]
+	65
+
+[rarity]
+	3
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	61
+
+[physical attack]
+	44
+
+[attack speed]
+	-90
+
+[cast speed]
+	-20
+
+[HP MAX]
+	-500
+
+[HP regen speed]
+	-340
+
+[price]
+	117000
+
+[repair price]
+	98280
+
+[value]
+	93600
+
+[equipment physical attack]
+	737	677
+
+[equipment magical attack]
+	553	508
+
+[separate attack]
+	365	246
+
+[skill levelup]
+	`[swordman]`	76	1
+	`[swordman]`	81	2
+	`[swordman]`	38	2
+	`[swordman]`	73	2
+	`[swordman]`	25	2
+	`[swordman]`	82	2
+	`[swordman]`	47	2
+	`[swordman]`	74	2
+	`[demonic swordman]`	81	2
+	`[demonic swordman]`	82	2
+	`[demonic swordman]`	73	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/swordman/lswd.img`	55
+
+[field image]
+	`Item/FieldImage.img`	13
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	9	0
+
+[layer variation]
+	2791
+	`lswdc1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	2792
+	`lswdc2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	651
+	`lswdb1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	652
+	`lswdb2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	9	0
+
+[layer variation]
+	2791
+	`lswdc1`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	2792
+	`lswdc2`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	651
+	`lswdb1`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	652
+	`lswdb2`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SQUARESWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`lswd`
+
+[cool time]
+	10000
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	10
+[/then]
+
+[int data]
+	110
+[/int data]
+
+[pvp]
+	[if]
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase damage]
+			`%`	5
+	[/then]
+	[int data]
+		110
+	[/int data]
+[/pvp]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

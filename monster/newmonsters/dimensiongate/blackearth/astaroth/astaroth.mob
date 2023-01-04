@@ -1,0 +1,230 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`恐怖之阿斯特罗斯`
+
+[face image]
+	`Monster/MonsterFace.img`	543
+
+[die effect]
+	0	0	1
+
+[attack sound]
+	``
+
+[appear sound]
+	`R_ASTAROTH_MEET`
+
+[damage sound]
+	`R_ASTAROTH_DMG`
+
+[die sound]
+	`ASTAROTH_DIE`
+
+[ambient sound]
+	``
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	2000
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	200
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	200
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	200
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	200
+[/ability category]
+
+[fire resistance]
+	20	20
+
+[water resistance]
+	20	20
+
+[dark resistance]
+	50	50
+
+[light resistance]
+	10	10
+
+[freeze resistance]
+	1000	1000
+
+[stone resistance]
+	1000	1000
+
+[stun resistance]
+	100	100
+
+[blind resistance]
+	100	100
+
+[sleep resistance]
+	100	100
+
+[hold resistance]
+	100	100
+
+[slow resistance]
+	100	100
+
+[curse resistance]
+	100	100
+
+[confuse resistance]
+	100	100
+
+[targeting bonus]
+	0	0	0	0	0	0	0	0	0	0	0	0	0	60	0	20	0	0	0	0	0
+	`[stand]`
+	`[dash]`	0	0	0
+
+[category]
+	`[devil]`
+	`[melee combat]`
+	`[close-tough]`
+[/category]
+
+[set damage check]
+	3000
+
+[hp regen rate]
+	0.0	0.0
+
+[level]
+	70	70
+
+[move speed]
+	1500	1500
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1500	1500
+
+[weight]
+	250000	250000
+
+[lie frame]
+	2	3	3	2	4
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[proc action]
+	`action/proc.act`
+
+[last action]
+	`action/last.act`
+
+[attack action]
+	`action/slash_01.act`
+	`action/slash_02.act`
+	`action/uppercut.act`
+	`action/downattack.act`
+	`action/casting.act`
+	`action/evileye.act`
+	`action/super_slash01.act`
+	`action/super_slash02.act`
+	`action/damage3.act`
+	`action/tell_dash.act`
+[/attack action]
+
+[attack info]
+	`attackinfo/Attack1.atk`
+	`attackinfo/Attack2.atk`
+	`attackinfo/Attack3.atk`
+	`attackinfo/Attack4.atk`
+	``
+	``
+	`attackinfo/Attack1.atk`
+	`attackinfo/Attack1.atk`
+	``
+	``
+[/attack info]
+
+[cooltime]
+	4000	4000	5000	5000	5000	56000	5000	5000	5000	1000
+[/cooltime]
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	1000
+
+[warlike]
+	100
+
+[think term]
+	100
+
+[destination change term]
+	500
+
+[keep distance with target]
+	250
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[event super on scr]
+	`[on hp]`	10	5000	1
+	`[unbreakable]`	-1	-1	-1	-1
+	`[with blast]`
+[/event super on scr]

@@ -1,0 +1,93 @@
+#PVF_File
+
+[window]
+	[type]
+		`popup`
+	[horizontal alignment]
+		`center`
+	[horizontal distance]
+		0
+	[vertical alignment]
+		`middle`
+	[vertical distance]
+		0
+	[tile type]
+		5
+	[size]
+		31	20
+	[alpha]
+		255
+	[title string]
+		`金库密码`
+	[title accesorry type]
+		16
+	[controls]
+		[ui controls]
+			`[board image]`
+			`1000`	0	39	1
+			`Interface/WindowCommon.img`	11	372	151	213	214	215	216	217	218	219	220	221
+		[/ui controls]
+		[ui controls]
+			`[basic button]`
+			`1001`	130	240	1
+			`确认`	0
+		[/ui controls]
+		[ui controls]
+			`[basic button]`
+			`1002`	186	240	1
+			`关闭`	0
+		[/ui controls]
+		[ui controls]
+			`[tab group]`
+			`1003`	0	18	4
+			`申请`
+			`输入`
+			`变更`
+			`解除`	1	40	0
+		[/ui controls]
+		[ui controls]
+			`[control]`
+			`1004`	0	22	0	2	0	0	
+			[parent tab]
+				`1003`	0
+		[/ui controls]
+		[ui controls]
+			`[control]`
+			`1005`	0	22	0	2	0	0	
+			[parent tab]
+				`1003`	1
+		[/ui controls]
+		[ui controls]
+			`[control]`
+			`1006`	0	22	0	2	0	0	
+			[parent tab]
+				`1003`	2
+		[/ui controls]
+		[ui controls]
+			`[control]`
+			`1007`	0	22	0	2	0	0	
+			[parent tab]
+				`1003`	3
+		[/ui controls]
+		[ui path]
+			`UI/Cargo/Cargo_password.ui`
+			`1000`
+		[/ui path]
+		[ui path]
+			`UI/Cargo/Cargo_register.ui`
+			`1004`
+		[/ui path]
+		[ui path]
+			`UI/Cargo/Cargo_certify.ui`
+			`1005`
+		[/ui path]
+		[ui path]
+			`UI/Cargo/Cargo_modify.ui`
+			`1006`
+		[/ui path]
+		[ui path]
+			`UI/Cargo/Cargo_unregister.ui`
+			`1007`
+		[/ui path]
+	[/controls]
+[/window]

@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/shoot.ani`
+	[SUB ANI]
+		`../animation/shoot_w.ani`	0	1
+		`../animation/shoot_w1.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`HAS_SHOT_03`	2
+		`VERRICKTM_ATK_01`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10519
+		[PARTICLE FILENAME]
+			`../Particle/bullet.ptl`
+		[LEVEL]
+			0
+		[POS]
+			130	0	120
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+	[PROC]
+		0
+	[ON]
+[/BEHAVIOR]

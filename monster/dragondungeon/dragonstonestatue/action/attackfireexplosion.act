@@ -1,0 +1,137 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AttackFireExplosion/Body.ani`
+	[SUB ANI]
+		`../Animation/AttackFireExplosion/Jaw.ani`	0	1
+		`../Animation/AttackFireExplosion/Attack_Darkmable_Nomal.ani`	0	2
+		`../Animation/AttackFireExplosion/Attack_Energy_Dodge.ani`	0	3
+		`../Animation/AttackFireExplosion/Head.ani`	0	4
+		`../Animation/AttackFireExplosion/Attack_Dust.ani`	0	5
+		`../Animation/AttackFireExplosion/Attack_Shock.ani`	0	6
+		`../Animation/AttackFireExplosion/Eye_Dodge.ani`	0	7
+		`../Animation/AttackFireExplosion/Start_Back_Dodge.ani`	0	8
+		`../Animation/AttackFireExplosion/Start_Core_Dodge.ani`	0	9
+		`../Animation/AttackFireExplosion/Start_Floor_Dodge.ani`	0	10
+		`../Animation/AttackFireExplosion/Start_Head_Dodge.ani`	0	11
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54041
+		[PARTICLE FILENAME]
+			`../Particle/FireExplosionTop.ptl`
+		[LEVEL]
+			0
+		[POS]
+			51	0	250
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54041
+		[PARTICLE FILENAME]
+			`../Particle/FireExplosionMid.ptl`
+		[LEVEL]
+			0
+		[POS]
+			51	0	250
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54041
+		[PARTICLE FILENAME]
+			`../Particle/FireExplosionDown.ptl`
+		[LEVEL]
+			0
+		[POS]
+			51	0	250
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54041
+		[PARTICLE FILENAME]
+			`../Particle/FireExplosionMidTop.ptl`
+		[LEVEL]
+			0
+		[POS]
+			51	0	250
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54041
+		[PARTICLE FILENAME]
+			`../Particle/FireExplosionMidDown.ptl`
+		[LEVEL]
+			0
+		[POS]
+			51	0	250
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54041
+		[PARTICLE FILENAME]
+			`../Particle/FireExplosionDown.ptl`
+		[LEVEL]
+			0
+		[POS]
+			51	0	250
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54041
+		[PARTICLE FILENAME]
+			`../Particle/FireExplosionTop.ptl`
+		[LEVEL]
+			0
+		[POS]
+			51	0	250
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54041
+		[PARTICLE FILENAME]
+			`../Particle/FireExplosionMidDown.ptl`
+		[LEVEL]
+			0
+		[POS]
+			51	0	250
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54041
+		[PARTICLE FILENAME]
+			`../Particle/FireExplosionMidTop.ptl`
+		[LEVEL]
+			0
+		[POS]
+			51	0	250
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

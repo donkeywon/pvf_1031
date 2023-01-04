@@ -1,0 +1,184 @@
+#PVF_File
+
+[name]
+	`血之审判者[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 有5%%的几率使敌人进入出血状态。
+攻击出血状态的敌人时， 附加10%%的伤害。
+
+无法进行合成和分解。`
+
+[detail explain]
+	`攻击时， 有5%%的几率使敌人进入出血状态10秒； 但在决斗场中， 只能持续5秒； 出血状态下的敌人， 每0.5秒受到32点伤害。 (若敌人高于Lv60， 则减少进入异常状态的几率； 反之， 则增加几率)
+无法进行合成和分解。`
+
+[grade]
+	61
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	41
+
+[magical attack]
+	21
+
+[attack speed]
+	20
+
+[stuck]
+	-1
+
+[price]
+	97600
+
+[repair price]
+	81984
+
+[value]
+	78080
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	437	378
+
+[equipment magical attack]
+	486	420
+
+[separate attack]
+	341	230
+
+[physical critical hit]
+	3
+
+[icon]
+	`item/weapon/gunner/bowgun.img`	37
+
+[field image]
+	`Item/field_weapon.img`	5
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	5	0
+
+[layer variation]
+	2790
+	`bowgunc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`bowgunb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	5	0
+
+[layer variation]
+	2790
+	`at_bowgunc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_bowgunb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BOWGUN_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`bowgun`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		5000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		5
+	[active status]
+		`bleeding`	60	650
+[/then]
+
+[if]
+	[target active status]
+		`bleeding`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[not amplify]
+	1
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

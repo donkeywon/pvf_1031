@@ -1,0 +1,60 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Heal.ani`
+	[SUB ANI]
+		`../animation/Stick/stDance.ani`	0	0
+		`../animation/Effect/BubblesAttack_A_0.ani`	0	0
+		`../animation/Effect/BubblesAttack_B_0.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			400
+		[IS NOT INDEX]
+			64597
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64610
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64660
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64632
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64633
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64634
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64635
+		[/IS NOT INDEX]
+		[IS OBJECT TYPE]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		10
+	[%]
+[/BEHAVIOR]

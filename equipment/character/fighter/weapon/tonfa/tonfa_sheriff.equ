@@ -1,0 +1,181 @@
+#PVF_File
+
+[name]
+	`执法者`
+
+[name2]
+	`Sheriff-Amn`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入感电状态。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入感电状态15秒； 若攻击感电状态的敌人， 则每次攻击都会附加37点伤害。 (若敌人高于Lv10， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[grade]
+	12
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	10
+
+[physical attack]
+	12
+
+[magical attack]
+	18
+
+[attack speed]
+	50
+
+[stuck]
+	-2
+
+[stuck resistance]
+	30
+
+[price]
+	19200
+
+[repair price]
+	15360
+
+[value]
+	15360
+
+[equipment physical attack]
+	156	118
+
+[equipment magical attack]
+	164	124
+
+[equipment physical defense]
+	120	110
+
+[separate attack]
+	90	56
+
+[physical critical hit]
+	2
+
+[skill levelup]
+	`[fighter]`	8	2
+	`[at fighter]`	8	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/tonfa.img`	4
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	0	1
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	0	1
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[cooltime]
+		22500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		15000
+	[probability]
+		3
+	[active status]
+		`lightning`	10	37
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

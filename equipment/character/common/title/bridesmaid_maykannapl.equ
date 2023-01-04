@@ -1,0 +1,119 @@
+#PVF_File
+
+[name]
+	`白金版五月的伴娘[卡妮娜]`
+
+[name2]
+	`Bridesmaid of May[Kanna] Platinum`
+
+[explain]
+	`佩戴时以40秒为间隔发动卡妮娜的坚强，20秒内力量增加45，体力增加30。(佩戴时从40秒后发动。)
+HP为15%% 以下时，被攻击时以 5%%的机率恢复全体 HP的5%%。(决斗场不发动。)`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	177
+
+[equipment type]
+	`[title name]`	1
+
+[custom animation]
+	`TitleAnimation/bestman_maypl.ani`
+[/custom animation]
+
+[HP MAX]
+	150
+
+[MP MAX]
+	150
+
+[physical attack]
+	27
+
+[physical defense]
+	18
+
+[inventory limit]
+	5000
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[if]
+	[time]
+		40000	1	40000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[stat]
+		`physical attack`
+		`+`	45
+	[stat]
+		`physical defense`
+		`+`	30
+[/then]
+
+[if]
+	[cooltime]
+		180000
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[stat change]
+		`hp`
+		`<`
+		`%`	15
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[restore]
+		`hp`
+		`%`	5	5000
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[room list move speed rate]
+	0.15
+
+[icon mark]
+	`Item/IconMark.img`	64

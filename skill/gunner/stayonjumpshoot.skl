@@ -1,0 +1,142 @@
+#PVF_File
+
+[name]
+	`空中射击`
+
+[name2]
+	`Air Shooting`
+
+[explain]
+	`增加跳跃攻击的空中停留时间以及跳跃射击的攻击力和射击次数上限， 效果持续一定时间。`
+
+[basic explain]
+	`增加跳跃攻击的空中停留时间以及跳跃射击的攻击力和射击次数上限， 效果持续一定时间。`
+
+[purchase cost]
+	20
+[/purchase cost]
+
+[required level]
+	10
+
+[required level range]
+	3
+
+[type]
+	`[active]`
+
+[skill class]
+	0
+
+[maximum level]
+	20
+
+[growtype maximum level]
+	10	10	10	10	10	10
+
+[skill fitness growtype]
+	0	1	2	3	4
+[/skill fitness growtype]
+
+[durability decrease rate]
+	30
+
+[icon]
+	`Character/Gunner/Effect/SkillIcon.img`	74
+	`Character/Gunner/Effect/SkillIcon.img`	75
+
+[command]
+	{6=`(UP)`}
+	{8=`,`}
+	{6=`(UP)`}
+	{8=`,`}
+	{6=`(BUFF)`}
+[/command]
+
+[command key explain]
+	`操作指令 : ↑↑ + Space`
+
+[dungeon]
+	[consume MP]
+		22	119
+	[casting time]
+		400	400
+	[cool time]
+		40000	40000
+	[level info]
+		7
+		20000	2	4	6	3	2	7
+		20000	4	4	7	3	2	8
+		20000	6	5	7	4	2	8
+		20000	8	5	8	4	3	9
+		20000	10	6	9	5	3	10
+		20000	12	6	9	5	3	11
+		20000	14	7	10	6	3	11
+		20000	16	7	10	6	3	12
+		20000	18	7	11	7	4	13
+		20000	20	8	12	7	4	14
+		20000	22	8	12	8	4	14
+		20000	24	9	13	8	4	15
+		20000	26	9	14	9	5	16
+		20000	28	9	14	9	5	17
+		20000	30	10	15	10	5	17
+		20000	32	10	15	10	5	18
+		20000	34	11	16	11	5	19
+		20000	36	11	17	11	6	20
+		20000	38	12	17	12	6	20
+		20000	40	12	18	12	6	21
+	[/level info]
+[/dungeon]
+
+[pvp]
+	[cool time]
+		30000	30000
+	[level info]
+		7
+		10000	-10	2	3	2	1	4
+		10000	-8	2	3	2	1	4
+		10000	-6	2	4	2	1	4
+		10000	-3	3	4	2	1	5
+		10000	-1	3	4	2	1	5
+		10000	1	3	5	2	2	5
+		10000	3	3	5	3	2	6
+		10000	6	4	5	3	2	6
+		10000	8	4	6	3	2	7
+		10000	10	4	6	3	2	7
+		10000	12	4	6	3	2	7
+		10000	14	4	7	3	2	8
+		10000	17	5	7	4	2	8
+		10000	19	5	7	4	2	9
+		10000	21	5	8	4	3	9
+		10000	23	5	8	4	3	9
+		10000	26	6	8	4	3	10
+		10000	28	6	9	4	3	10
+		10000	30	6	9	5	3	11
+		10000	32	6	9	5	3	11
+	[/level info]
+[/pvp]
+
+[death tower]
+[/death tower]
+
+[warroom]
+[/warroom]
+
+[level property]
+	1	99
+	`持续时间 : <float1>秒
+攻击力增加比率 : <int>%%
+增加发射子弹数上限
+左轮枪 : <int>发
+自动手枪 : <int>发
+步枪 : <int>发
+手炮 : <int>发
+手弩 : <int>发`
+	-1	0	0.001
+	-1	1	1.0
+	-1	2	1.0
+	-1	3	1.0
+	-1	4	1.0
+	-1	5	1.0
+	-1	6	1.0
+[/level property]

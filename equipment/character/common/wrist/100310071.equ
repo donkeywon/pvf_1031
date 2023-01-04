@@ -1,0 +1,101 @@
+#PVF_File
+
+[name]
+	`幽云护腕`
+
+[basic explain]
+	`暗属性攻击时， 物理攻击力和魔法攻击力各增加40点， 效果持续20秒。
+无法进行分解。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	33
+
+[physical defense]
+	83
+
+[need material]
+	3339	525
+
+[value]
+	67200
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	4368	4128
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	81
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	20
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[if]
+	[element]
+		`dark`
+	[attack success]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		3
+	[stat]
+		`equipment physical attack`
+		`+`	40
+	[stat]
+		`equipment magical attack`
+		`+`	40
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,81 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Heal_0.ani`
+	[SPEECH]
+		`有治疗费吗？`	2	100
+		`正在治疗伤者……`	0	20
+	[/SPEECH]
+	[SOUND]
+		`FLYDRAGON_FLAP`	2
+		`KMEDIC_SKILL`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	3
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			500
+		[IS INDEX]
+			62709	62703	62704	62705	62706
+		[/IS INDEX]
+		[HP]
+		[<=]
+			40
+		[%]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<=]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			500
+		[IS INDEX]
+			62709	62703	62704	62705	62706
+		[/IS INDEX]
+		[HP]
+		[<=]
+			40
+		[%]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[GET TARGET]
+		1
+	[HP]
+	[LOW]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		20
+	[%]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]

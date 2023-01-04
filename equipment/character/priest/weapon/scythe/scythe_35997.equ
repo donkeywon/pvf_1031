@@ -1,0 +1,151 @@
+#PVF_File
+
+[name]
+	`魔女阿嘉璐的缠发战镰`
+
+[name2]
+	`找不到代码name2_35997`
+
+[basic explain]
+	`攻击时， 有5%%的几率召唤出受刑的村民协助战斗。
+无法进行分解。`
+
+[detail explain]
+	`攻击时， 有5%%的几率召唤出受刑的村民； 受刑的村民会对周围敌人施放1次火属性攻击后消失。
+无法进行分解。`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	65
+
+[physical attack]
+	46
+
+[magical attack]
+	46
+
+[attack speed]
+	80
+
+[stuck]
+	1
+
+[price]
+	110400
+
+[repair price]
+	92736
+
+[value]
+	88320
+
+[equipment physical attack]
+	621	574
+
+[equipment magical attack]
+	654	604
+
+[separate attack]
+	389	264
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[icon]
+	`Item/weapon/priest/scythe.img`	66
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	19	0
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		1000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		3000
+	[probability]
+		5
+	[summon monster]
+		61763	69	1
+[/then]
+
+[routing priority]
+	`priest`	2
+	`priest`	3
+	`priest`	4
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

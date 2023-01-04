@@ -1,0 +1,232 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`哥布林王高格`
+
+[face image]
+	`Monster/MonsterFace.img`	339
+
+[die effect]
+	0	2	0
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	2000
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	200
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	300
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	200
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	300
+[/ability category]
+
+[category]
+	`[human]`
+	`[goblin]`
+[/category]
+
+[dark resistance]
+	-20	-20
+
+[light resistance]
+	50	50
+
+[freeze resistance]
+	100	100
+
+[stun resistance]
+	100	100
+
+[blind resistance]
+	100	100
+
+[stone resistance]
+	100	100
+
+[sleep resistance]
+	100	100
+
+[hold resistance]
+	100	100
+
+[slow resistance]
+	100	100
+
+[curse resistance]
+	100	100
+
+[confuse resistance]
+	100	100
+
+[targeting bonus]
+	0	0	0	0	100	0	0	99	0	0	0	0	0	0	0	0	0	0	0	0	0
+	`[stand]`
+	`[dash]`	0	0	0
+
+[hp regen rate]
+	0.0	0.0
+
+[level]
+	62	67
+
+[move speed]
+	1300	1300
+
+[attack speed]
+	1200	1200
+
+[cast speed]
+	1100	1100
+
+[hit recovery]
+	1400	1400
+
+[weight]
+	200000	200000
+
+[sight]
+	1000
+
+[warlike]
+	100
+
+[attack delay]
+	1500
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	1000
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[set damage check]
+	2500
+
+[keep range distance with target]
+	400	0	200	10
+
+[lie frame]
+	1	2	3	3	4
+
+[attack sound]
+	`THROWER_ATK`
+
+[appear sound]
+	`THROWER_MEET_02`
+
+[damage sound]
+	`R_THROWER_DMG`
+
+[die sound]
+	`R_THROWER_DIE`
+
+[ambient sound]
+	`THROWER_AMB_02`
+
+[common champion drop item]
+[/common champion drop item]
+
+[waiting action]
+	`Action/chair_stay.act`
+
+[move action]
+	`Action/chair_move.act`
+
+[sit action]
+	`Action/chair_stay.act`
+
+[damage action 1]
+	`Action/chair_damage1.act`
+
+[damage action 2]
+	`Action/chair_damage2.act`
+
+[down action]
+	``
+
+[overturn action]
+	``
+
+[attack action]
+	`Action/nochair_octorthunder.act`
+	`Action/nochair_summon.act`
+	`Action/nochair_saintskullsummon.act`
+	`Action/nochair_extreamthunder.act`
+	`Action/chair_dashready.act`
+	`Action/chair_dash.act`
+	`Action/chair_dance.act`
+	`Action/WagonDestroy_Ready.act`
+	`Action/nochair_RollingJump.act`
+	`Action/nochair_cloud.act`
+	`Action/nochair_octorthunder1.act`
+	`Action/nochair_octorthunder2.act`
+[/attack action]
+
+[attack info]
+	``
+	``
+	``
+	``
+	``
+	`attackinfo/chair_dash.atk`
+	``
+	``
+	``
+	``
+[/attack info]
+
+[cooltime]
+	10000	20000	50000	60000	3000	3000	50000	0	50000	20000	20000	20000
+[/cooltime]
+
+[atk super on scr]
+	0
+	`[breakable]`	20	10	100	100
+[/atk super on scr]
+
+[etc action]
+	`Action/WagonDestroy.act`
+	`Action/dummy_stay.act`
+[/etc action]
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

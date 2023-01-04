@@ -1,0 +1,104 @@
+#PVF_File
+
+[name]
+	`瞬移`
+
+[name2]
+	`Teleport`
+
+[explain]
+	`向指定方向快速移动一定距离。`
+
+[basic explain]
+	`向指定方向快速移动一定距离。`
+
+[executable states]
+	8
+[/executable states]
+
+[executable states]
+	0	14
+[/executable states]
+
+[purchase cost]
+	25
+[/purchase cost]
+
+[required level]
+	10
+
+[required level range]
+	2
+
+[type]
+	`[active]`
+
+[skill class]
+	0
+
+[maximum level]
+	1
+
+[growtype maximum level]
+	1	1	1	1	1	1
+
+[skill fitness growtype]
+	0	1	2	3	4
+[/skill fitness growtype]
+
+[command]
+	{6=`(RIGHT)`}
+	{8=`,`}
+	{6=`(BUFF)`}
+[/command]
+
+[command key explain]
+	`操作指令 : → + Space`
+
+[dungeon]
+
+[consume MP]
+	40	56
+
+[cool time]
+	1500	1500
+
+[durability decrease rate]
+	30
+
+[weapon effect type]
+	`[magical]`
+
+[executable states]
+	0	14
+[/executable states]
+
+[icon]
+	`Character/Mage/Effect/ATSkillIcon.img`	0
+	`Character/Mage/Effect/ATSkillIcon.img`	1
+
+[static data]
+	400	100
+[/static data]
+
+[pvp]
+	[cool time]
+		10000	10000
+	[static data]
+		400	100
+	[/static data]
+[/pvp]
+
+[death tower]
+[/death tower]
+
+[warroom]
+[/warroom]
+
+[level property]
+	1	99
+	`X轴移动距离 : <int>px
+Y轴移动距离 : <int>px`
+	0	0	1.0
+	1	1	1.0
+[/level property]

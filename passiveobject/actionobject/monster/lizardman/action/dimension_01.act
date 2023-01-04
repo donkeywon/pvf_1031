@@ -1,0 +1,75 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Dimension_Gate/Dimension_Gate_Start.ani`
+	[SUB ANI]
+		`../Animation/Dimension_Gate/Dimension_Gate_S.ani`	0	0
+		`../Animation/Dimension_Gate/Dimension_Gate00.ani`	0	0
+		`../Animation/Dimension_Gate/Dimension_Gate00_.ani`	0	1
+		`../Animation/Dimension_Gate/Dimension_Gate01.ani`	0	1
+		`../Animation/Dimension_Gate/Dimension_Gate02.ani`	0	2
+		`../Animation/Dimension_Gate/Dimension_Gate_All.ani`	0	3
+	[/SUB ANI]
+	[SOUND]
+		`BOX_BREAK`	0
+		`AIR_SWORD_READY`	4
+		`AURA_ICE_DMG`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PULL APPENDAGE]
+		5.5	2.5	1000
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/D1.ptl`	0	10	-70
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	3000
+[/BEHAVIOR]

@@ -1,0 +1,157 @@
+#PVF_File
+
+[name]
+	`冰焰左轮枪`
+
+[name2]
+	`Gai Stade`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入灼伤状态。
+攻击速度 +2%%`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入灼伤状态6秒， 灼伤状态下的敌人， 每0.5秒受到62点伤害， 同时其周围的敌人每2秒受到12点伤害。 (若敌人高于Lv60， 则减少进入异常状态的几率； 反之， 则增加几率)
+攻击速度 +2%%`
+
+[grade]
+	62
+
+[rarity]
+	2
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	60
+
+[physical attack]
+	39
+
+[attack speed]
+	20
+
+[price]
+	86800
+
+[repair price]
+	72912
+
+[value]
+	69440
+
+[equipment physical attack]
+	509	488
+
+[equipment magical attack]
+	428	411
+
+[separate attack]
+	270	182
+
+[physical critical hit]
+	2
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`item/weapon/gunner/revolver.img`	44
+
+[field image]
+	`Item/field_weapon.img`	1
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	11	6
+
+[layer variation]
+	2790
+	`revc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`revb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	11	6
+
+[layer variation]
+	2790
+	`at_revc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_revb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2000
+
+[item group name]
+	`revolver`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[fire element]`
+
+[if]
+	[cooltime]
+		9000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		6000
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`burn`	60	750	35	1	2000
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

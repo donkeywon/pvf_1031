@@ -1,0 +1,147 @@
+#PVF_File
+
+[name]
+	`梦魇杖`
+
+[name2]
+	`Nightmare`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入减速状态。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入减速状态7秒； 减速状态下的敌人， 将减少17%%的移动速度和攻击速度。 (若敌人高于Lv30， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	34
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	30
+
+[magical attack]
+	25
+
+[attack speed]
+	-100
+
+[MP MAX]
+	80
+
+[price]
+	54400
+
+[repair price]
+	43520
+
+[value]
+	43520
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	275	242
+
+[equipment magical attack]
+	391	345
+
+[separate attack]
+	196	130
+
+[magical critical hit]
+	5
+
+[skill levelup]
+	`[thief]`	51	2
+	`[thief]`	55	1
+[/skill levelup]
+
+[sleep resistance]
+	15
+
+[icon]
+	`Item/weapon/thief/wand.img`	37
+
+[field image]
+	`Item/field_weapon.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	3	3
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2300
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		10500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[probability]
+		3
+	[active status]
+		`slow`	30	17	17
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,23 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/damage1.ani`
+	[SOUND]
+		`BLUESLIME_DMG_01`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/WaterPtl.ptl`	30	0	30
+	[PARTICLE]
+		`../particle/WaterPtl.ptl`	-10	0	30
+[/BEHAVIOR]

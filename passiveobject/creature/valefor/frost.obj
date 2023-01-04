@@ -1,0 +1,41 @@
+#PVF_File
+
+[width]
+	1	1
+
+[floating height]
+	40
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	100
+
+[basic motion]
+	`Animation/frost_shining.ani`
+
+[attack info]
+	`AttackInfo/Frost.atk`
+
+[string data]
+	`Particle/frost_solid.ptl`
+	`Particle/frost_steam.ptl`
+[/string data]
+
+[sound category]
+	`[after object create]`
+	`VALEFOR_SKILL_01`	-1
+[/sound category]
+
+[int data]
+	5
+[/int data]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[on end of animation]`
+[/object destroy condition]

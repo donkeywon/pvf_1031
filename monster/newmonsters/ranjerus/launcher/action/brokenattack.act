@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/BrokenAttack.ani`
+	[SUB ANI]
+		`../Animation/HeadAttack.ani`	0	0
+		`../Animation/Smoke.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`ROCKET_READY`	1
+		`ROCKET_SHOT`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8493
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			40
+		[POS]
+			27	0	128
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

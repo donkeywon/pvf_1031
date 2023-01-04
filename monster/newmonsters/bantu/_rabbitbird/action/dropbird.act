@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Bird.ani`
+	[SOUND]
+		`SEME_SKILL_01_2`	1
+	[/SOUND]
+	[SPEECH]
+		`go！go！`	0	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[TARGET]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8039
+		[PARTICLE FILENAME]
+			`../Particle/BirdDrop.ptl`
+		[LEVEL]
+			55
+		[POS]
+			0	0
+		[RANDOM]
+			400	700
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

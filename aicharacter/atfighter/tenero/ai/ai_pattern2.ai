@@ -1,0 +1,97 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	140.0	140.0	30.0	30.0
+		[true]
+	
+		[think]
+			[void]
+				`get random()`	0.0	100.0
+		
+			[think]
+				[last result]
+					`<=`	50.0
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`boong2`
+					[true]
+				
+					[think]
+						[check key cooltime]
+							`boong1`
+						[true]
+						[return str]
+							`baldo`
+						[false]
+						[return str]
+							`boong1`
+					[/think]
+	[false]
+	[return str]
+		`boong2`
+	[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`boong1`
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`boong2`
+			[true]
+			[return str]
+				`baldo`
+			[false]
+			[return str]
+				`boong2`
+		[/think]
+	[false]
+	[return str]
+		`boong1`
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	180.0	180.0	100.0	100.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`limitpoint`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`limitpoint`
+		[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	200.0	200.0	130.0	130.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`baldo`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`baldo`
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

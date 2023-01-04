@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Summon.ani`
+	[SOUND]
+		`MILITIAN_ATK02`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61003
+		[LEVEL]
+			0
+		[POS]
+			100	0	0
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61003
+		[LEVEL]
+			0
+		[POS]
+			-100	0	0
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

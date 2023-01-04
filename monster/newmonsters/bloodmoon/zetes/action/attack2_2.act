@@ -1,0 +1,106 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack2_2.ani`
+	[SUB ANI]
+		`../Animation/weapon/Attack2_weapon_2.ani`	0	10
+		`../Animation/Spirit/Spirit2_attack_2.ani`	0	5
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			400
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[CHARACTER]
+	[GET TARGET]
+		4
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10119
+		[PARTICLE FILENAME]
+			`../Particle/Thunder.ptl`
+		[LEVEL]
+			0
+		[POS]
+			20	8	0
+		[WARNING MARK]
+			0	0	200	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10119
+		[PARTICLE FILENAME]
+			`../Particle/Thunder.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-20	8	0
+		[WARNING MARK]
+			0	0	200	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10119
+		[PARTICLE FILENAME]
+			`../Particle/Thunder.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	-8	0
+		[WARNING MARK]
+			0	0	200	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

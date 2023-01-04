@@ -1,0 +1,218 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/age_seed_stay.ani`
+	[SUB ANI]
+		`../Animation/Mage_seed_glow4.ani`	0	-2
+		`../Animation/Mage_seed_glow3.ani`	0	-2
+		`../Animation/Mage_seed_glow2.ani`	0	-2
+		`../Animation/Mage_seed_glow1.ani`	0	-2
+		`../Animation/age_seed_eff.ani`	0	-2
+		`../Animation/age_seed_sub.ani`	0	-1
+	[/SUB ANI]
+	[SOUND]
+		`POP_UP`	1
+		`POP_UP`	2
+		`POP_UP`	3
+		`POP_UP`	4
+		`POP_UP`	5
+		`POP_UP`	6
+		`POP_UP`	7
+		`POP_UP`	8
+		`POP_UP`	9
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9126
+		[PARTICLE FILENAME]
+			`../particle/dummy.ptl`
+		[LEVEL]
+			65
+		[POS]
+			0	-1	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9126
+		[PARTICLE FILENAME]
+			`../particle/dummy_up.ptl`
+		[LEVEL]
+			65
+		[POS]
+			0	-1	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9126
+		[PARTICLE FILENAME]
+			`../particle/dummy_down.ptl`
+		[LEVEL]
+			65
+		[POS]
+			0	-1	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9126
+		[PARTICLE FILENAME]
+			`../particle/dummy_up1.ptl`
+		[LEVEL]
+			65
+		[POS]
+			0	-1	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9126
+		[PARTICLE FILENAME]
+			`../particle/dummy_up2.ptl`
+		[LEVEL]
+			65
+		[POS]
+			0	-1	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9126
+		[PARTICLE FILENAME]
+			`../particle/dummy_down1.ptl`
+		[LEVEL]
+			65
+		[POS]
+			0	-1	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9126
+		[PARTICLE FILENAME]
+			`../particle/dummy_down2.ptl`
+		[LEVEL]
+			65
+		[POS]
+			0	-1	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9126
+		[PARTICLE FILENAME]
+			`../particle/dummy_back.ptl`
+		[LEVEL]
+			65
+		[POS]
+			0	-1	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		18	18
+	[DO BEHAVIOR]
+	[ME]
+		9
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

@@ -1,0 +1,54 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/drill2.ani`
+	[SOUND]
+		`SPIN_CIRCLE`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35130
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	120
+		[USE OBJECT ZPOS]
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+	[APPENDAGE]
+		10000	
+		[dark element]
+		[+]
+			1000.0
+	[/APPENDAGE]
+	[TRIGGER]
+		1
+	[ON]
+	[ABS CASTING]
+		8000	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+[/TRIGGER]

@@ -1,0 +1,58 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/last.ani`
+	[SUB ANI]
+		`../Animation/effect/last_e.ani`	0	1
+		`../Animation/effect/last_e2.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`好厉害……`	0	50
+		`安徒恩大人，我尽力了……`	0	50
+	[/SPEECH]
+	[SOUND]
+		`FITZ_DIE`	20
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		30	30
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			11219	11220	11245
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		30	30
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			11215
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

@@ -1,0 +1,307 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	70.0	70.0	17.0	17.0
+		[true]
+	
+		[think]
+			[target state]
+				6
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	58
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					9
+			[/think]
+	[false]
+	[think]
+		[void]
+			`enemy number of in attack area()`	350.0	350.0	400.0	400.0
+	
+		[think]
+			[last result]
+				`>=`	2.0
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	73
+				[true]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	58
+					[true]
+					[return]
+						-1
+					[false]
+					[return]
+						9
+				[/think]
+	[false]
+	[return]
+		1
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is the skill in cooltime()`	46
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	58
+			[true]
+			[return]
+				-1
+			[false]
+		
+			[think]
+				[target state]
+					11
+				[true]
+				[return]
+					9
+				[false]
+				[return]
+					18
+			[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	70.0	-20.0	25.0	25.0
+		[true]
+		[return]
+			19
+		[false]
+		[return]
+			4
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	120.0	120.0	30.0	30.0
+		[true]
+	
+		[think]
+			[void]
+				`enemy number of in attack area()`	300.0	300.0	400.0	400.0
+		
+			[think]
+				[last result]
+					`>=`	2.0
+				[true]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	73
+					[true]
+				
+					[think]
+						[void]
+							`is the skill in cooltime()`	72
+						[true]
+						[return]
+							-1
+						[false]
+						[return]
+							12
+					[/think]
+	[false]
+	[return]
+		1
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is the skill in cooltime()`	68
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	73
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				1
+		[/think]
+	[false]
+	[return]
+		2
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	230.0	230.0	150.0	150.0
+		[true]
+	
+		[think]
+			[void]
+				`enemy number of in attack area()`	400.0	400.0	300.0	300.0
+		
+			[think]
+				[last result]
+					`>=`	2.0
+				[true]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	86
+					[true]
+				
+					[think]
+						[void]
+							`is the skill in cooltime()`	72
+						[true]
+						[return]
+							-1
+						[false]
+						[return]
+							3
+					[/think]
+	[false]
+	[think]
+		[hp]
+			`%<=`	80
+		[true]
+		[return]
+			7
+		[false]
+		[return]
+			-1
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[target state]
+			11
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	16
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				10
+		[/think]
+	[false]
+	[think]
+		[void]
+			`is the skill in cooltime()`	72
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	9
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				0
+		[/think]
+	[false]
+	[return]
+		3
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[hp]
+			`%<=`	70
+		[true]
+	
+		[think]
+			[void]
+				`get random()`	0.0	100.0
+		
+			[think]
+				[last result]
+					`<=`	40.0
+				[true]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	73
+					[true]
+					[return]
+						-1
+					[false]
+					[return]
+						1
+				[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	450.0	450.0	350.0	350.0
+		[true]
+	
+		[think]
+			[void]
+				`enemy number of in attack area()`	300.0	300.0	150.0	150.0
+		
+			[think]
+				[last result]
+					`<`	1.0
+				[true]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	180
+					[true]
+				
+					[think]
+						[void]
+							`is the skill in cooltime()`	38
+						[true]
+						[return]
+							-1
+						[false]
+						[return]
+							6
+					[/think]
+	[false]
+	[return]
+		8
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

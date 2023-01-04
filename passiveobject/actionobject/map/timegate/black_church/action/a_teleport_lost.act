@@ -1,0 +1,74 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Die2.ani`
+	[SUB ANI]
+		`../animation/show/2Hide_Dimension_Gate01.ani`	0	-16
+		`../animation/show/2Appear_Dimension_Gate00.ani`	0	-15
+		`../animation/show/2Summon_Dimension_Gate00.ani`	0	-14
+		`../animation/show/2Summon_Dimension_Gate00_1.ani`	0	-13
+		`../animation/show/2Summon_Dimension_Gate01.ani`	0	-12
+		`../animation/show/2Summon_Dimension_Gate02.ani`	0	-11
+		`../animation/show/2Summon_Dimension_Gate03.ani`	0	-10
+		`../animation/show/2Summon_Dimension_Gate03_1.ani`	0	-9
+		`../animation/show/2Appear_Dimension_Gate00_1.ani`	0	-8
+		`../animation/show/2Appear_Dimension_Gate01.ani`	0	-7
+		`../animation/show/2Appear_Dimension_Gate02.ani`	0	-6
+		`../animation/show/2Appear_Dimension_Gate03.ani`	0	-5
+		`../animation/show/2Appear_Dimension_Gate03_1.ani`	0	-4
+		`../animation/show/2Appear_Effect4.ani`	0	-3
+		`../animation/show/2Hide_Dimension_Gate00.ani`	0	-2
+		`../animation/show/2Hide_Dimension_Gate00_1.ani`	0	-1
+		`../animation/show/2Hide_Dimension_Gate02.ani`	0	1
+		`../animation/show/2Hide_Dimension_Gate03.ani`	0	2
+		`../animation/show/2Hide_Dust.ani`	0	3
+		`../animation/show/2Hide_Dimension_Gate03_1.ani`	0	4
+		`../animation/show/2Hide_Effect1.ani`	0	5
+		`../animation/show/2Hide_Effect2.ani`	0	6
+		`../animation/show/2Hide_Effect3.ani`	0	7
+		`../animation/show/2Hide_Effect4.ani`	0	8
+	[/SUB ANI]
+	[SOUND]
+		`QUEST_GATE_02`	10
+		`QUEST_GATE_01`	17
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[REVERSE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH WITH POSITION]
+		`?！有人来了！哎呀快跑~`	0	20
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		17	17
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

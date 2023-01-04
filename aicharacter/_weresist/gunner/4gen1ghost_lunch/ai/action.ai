@@ -1,0 +1,110 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[mp]
+			`%>=`	99.5
+		[true]
+	
+		[think]
+			[target state]
+				0
+			[true]
+			[return]
+				-1
+			[false]
+		
+			[think]
+				[void]
+					`is target in attack area()`	40.0	40.0	20.0	20.0
+				[true]
+			
+				[think]
+					[check use skill]
+						14
+					[false]
+					[return]
+						-1
+					[true]
+					[return str]
+						`bbq`
+				[/think]
+	[false]
+	[think]
+		[check use skill]
+			71
+		[false]
+	
+		[think]
+			[check use skill]
+				39
+			[false]
+		
+			[think]
+				[void]
+					`check random()`	80	100
+				[true]
+				[return str]
+					`combo`
+				[false]
+				[return]
+					-1
+			[/think]
+	[true]
+	[return str]
+		`laser`
+	[/think]
+	[true]
+	[return str]
+		`x1`
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	40.0	40.0	20.0	20.0
+		[true]
+	
+		[think]
+			[check use skill]
+				14
+			[false]
+			[return]
+				-1
+			[true]
+			[return str]
+				`bbq`
+		[/think]
+	[false]
+	[think]
+		[check use skill]
+			71
+		[false]
+	
+		[think]
+			[check use skill]
+				39
+			[false]
+		
+			[think]
+				[void]
+					`check random()`	80	100
+				[true]
+				[return str]
+					`combo`
+				[false]
+				[return]
+					-1
+			[/think]
+	[true]
+	[return str]
+		`laser`
+	[/think]
+	[true]
+	[return str]
+		`x1`
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

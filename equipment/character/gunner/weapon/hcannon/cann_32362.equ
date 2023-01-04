@@ -1,0 +1,161 @@
+#PVF_File
+
+[name]
+	`白焰翼龙 [网吧]`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 有3%%的几率出现火焰爆炸。
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。`
+
+[grade]
+	56
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	50
+
+[physical attack]
+	57
+
+[price]
+	100800
+
+[repair price]
+	84672
+
+[value]
+	80640
+
+[equipment physical attack]
+	564	484
+
+[equipment magical attack]
+	338	291
+
+[separate attack]
+	311	208
+
+[physical critical hit]
+	4
+
+[skill levelup]
+	`[gunner]`	21	1
+	`[at gunner]`	21	1
+	`[gunner]`	71	1
+	`[at gunner]`	71	1
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/hcannon.img`	20
+
+[field image]
+	`Item/field_weapon.img`	4
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	2	6
+
+[layer variation]
+	2790
+	`hcanc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`hcanb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	2	6
+
+[layer variation]
+	2790
+	`at_hcanc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_hcanb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2800
+
+[item group name]
+	`hcannon`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[fire element]`
+
+[if]
+	[cooltime]
+		1000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[passive object]
+		48085	0	0	0	50	0	``
+	[/passive object]
+[/then]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,102 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/In.ani`
+	[SPEECH]
+		`啊~进入我的身体了！`	1	30
+		`别乱操纵我！`	1	30
+		`不爽！`	1	30
+	[/SPEECH]
+	[SOUND]
+		`ZGM_ATTACH`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[TARGET]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[TARGET]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[TARGET]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[TARGET]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			0
+		[X END]
+			0
+		[Y START]
+			1
+		[Z START]
+			70
+		[USE TARGET POS]
+		[MOVE REDUCE]
+		[MOVE ME]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		2
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CHANGE GRAVITY]
+		0
+[/BEHAVIOR]

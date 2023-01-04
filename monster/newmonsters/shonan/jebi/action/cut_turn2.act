@@ -1,0 +1,87 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/cut_turn.ani`
+	[SUB ANI]
+		`../animation/weapon/cut_turn.ani`	0	1
+	[/SUB ANI]
+	[SOUND]
+		`BYOEN_SWISH`	1
+		`R_WEAPONM_ATK_05`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[RIGHT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9894
+		[PARTICLE FILENAME]
+			`../particle/down1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	10
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9894
+		[PARTICLE FILENAME]
+			`../particle/down2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	10
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9894
+		[PARTICLE FILENAME]
+			`../particle/down3.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	10
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9894
+		[PARTICLE FILENAME]
+			`../particle/down4.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	10
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9894
+		[PARTICLE FILENAME]
+			`../particle/down5.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	10
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

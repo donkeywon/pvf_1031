@@ -1,0 +1,49 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Tornado.ani`
+	[SUB ANI]
+		`../Animation/TornadoDust.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`SCARECROW_SPINATK`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		2
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+	[SET SPEED]
+		[X AXIS]
+			400
+		[Y AXIS]
+		[RANDOM]
+			-200	200
+		[Z AXIS]
+			100
+	[/SET SPEED]
+[/BEHAVIOR]

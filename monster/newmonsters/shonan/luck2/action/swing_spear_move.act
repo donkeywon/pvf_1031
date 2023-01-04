@@ -1,0 +1,54 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/swing_spear.ani`
+	[SUB ANI]
+		`../animation/weapon/swing_eff.ani`	0	1
+		`../animation/weapon/swing_spear.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`休想跑掉！`	1	10
+	[/SPEECH]
+	[SOUND]
+		`WEAPONM_ATK_01_1`	0
+		`R_ROBBER_HOE`	1
+	[/SOUND]
+[/MOTION]
+
+[DEFAULT ATTACKINFO]
+	`../AttackInfo/Attack2.atk`
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET OUTLINE]
+		0	255	255	255	6
+[/BEHAVIOR]

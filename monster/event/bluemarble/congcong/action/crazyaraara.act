@@ -1,0 +1,173 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/crazyaraara.ani`
+	[SUB ANI]
+		`../animation/Effect/wparaara.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`海鲜乱舞！！！`	0	50
+		`海鲜们，都出来吧~`	0	50
+	[/SPEECH]
+	[SOUND]
+		`KONG_SKILL_04`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			300
+	[/SET SPEED]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8745
+		[PARTICLE FILENAME]
+			`../particle/eel.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	-10	30
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8744
+		[PARTICLE FILENAME]
+			`../particle/wave.ptl`
+		[LEVEL]
+			0
+		[POS]
+			200	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8745
+		[PARTICLE FILENAME]
+			`../particle/eel2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	10	60
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8751
+		[PARTICLE FILENAME]
+			`../particle/medusa2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	40
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8746
+		[PARTICLE FILENAME]
+			`../particle/marlin.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	10
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8748
+		[PARTICLE FILENAME]
+			`../particle/octo.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	40
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8752
+		[PARTICLE FILENAME]
+			`../particle/octo.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	-1	30
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8748
+		[PARTICLE FILENAME]
+			`../particle/octo.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-30	0	60
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8748
+		[PARTICLE FILENAME]
+			`../particle/octo.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-20	0	50
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8752
+		[PARTICLE FILENAME]
+			`../particle/octo.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-40	1	30
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8751
+		[PARTICLE FILENAME]
+			`../particle/medusa.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	80
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8752
+		[PARTICLE FILENAME]
+			`../particle/octo.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	-1	30
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

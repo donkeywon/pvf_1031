@@ -1,0 +1,184 @@
+#PVF_File
+
+[name]
+	`极刑绝之镰`
+
+[name2]
+	``
+
+[basic explain]
+	`以额外杀伤使敌人致死时， 可以使自身增加50点智力， 效果持续20秒。
+暴击时， 增加6%%的施放速度， 效果持续20秒。
+攻击时， 有1%%的几率消耗自身2000点的HP值， 而增加20%%的魔法暴击率， 效果持续20秒。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	56
+
+[magical attack]
+	56
+
+[attack speed]
+	80
+
+[stuck]
+	1
+
+[price]
+	136000
+
+[repair price]
+	114240
+
+[value]
+	108800
+
+[equipment physical attack]
+	783	726
+
+[equipment magical attack]
+	824	764
+
+[separate attack]
+	504	343
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[icon]
+	`item/new_equipment/01_weapon/priest/scythe/scythe.img`	88
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	25	8
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		1
+	[overkill]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[stat]
+		`magical attack`
+		`+`	50
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		2000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		20
+	[reduce probability to human armor at pvp module]
+		90
+	[add absolute damage]
+		`dark`
+		`+`	2000
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[duration]
+		20000
+	[probability]
+		1
+	[target]
+		`myself`	-1
+	[restore]
+		`hp`
+		`+`	-1500	0
+	[stat]
+		`physical critical hit rate`
+		`+`	20
+	[stat]
+		`magical critical hit rate`
+		`+`	20
+[/then]
+
+[routing priority]
+	`priest`	4
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

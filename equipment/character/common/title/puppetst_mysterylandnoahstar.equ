@@ -1,0 +1,114 @@
+#PVF_File
+
+[name]
+	`神秘王国的人偶剧 (诺亚星)`
+
+[name2]
+	`Puppet Stage of Mystery Land`
+
+[explain]
+	`攻击时， 有1%%的几率使自身增加7%%的攻击速度， 效果持续30秒。
+施放技能时， 有2%%的几率使自身增加7%%施的放速度， 效果持续30秒。`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	90
+
+[custom animation]
+	`TitleAnimation/puppet_stage.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	13
+
+[physical defense]
+	9
+
+[magical attack]
+	13
+
+[magical defense]
+	9
+
+[stuck resistance]
+	10
+
+[inventory limit]
+	5000
+
+[move speed]
+	30
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`attack speed`
+		`+`	70
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`cast speed`
+		`+`	70
+[/then]
+
+[stuck]
+	-1
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

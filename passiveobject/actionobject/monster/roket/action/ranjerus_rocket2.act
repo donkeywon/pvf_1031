@@ -1,0 +1,86 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Ranjerus_Rocket2.ani`
+	[SOUND]
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/BossMissileSmog.ptl`	10	0	40
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			40
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET TEAM]
+		50
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8495
+		[PARTICLE FILENAME]
+			`../particle/dummy.ptl`
+		[LEVEL]
+			40
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[PARTICLE]
+		`../particle/DropBombFireDestroy.ptl`	0	0	0
+	[SHAKING]
+		2	1000
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+		[RANDOM]
+			50	100
+		[Z AXIS]
+			-450
+	[/SET SPEED]
+	[SET TEAM]
+		50
+[/BEHAVIOR]

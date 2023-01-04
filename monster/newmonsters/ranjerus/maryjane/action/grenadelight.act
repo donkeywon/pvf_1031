@@ -1,0 +1,37 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Throw_Grenade.ani`
+	[SUB ANI]
+		`../Animation/GrenadeLight.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`JENA_SKILL_01`	0
+		`SG_GUN_OVER_01`	2
+	[/SOUND]
+	[SPEECH]
+		`你还能睁开眼睛吗？`	0	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8336
+		[PARTICLE FILENAME]
+			`../Particle/jump_Dagger.ptl`
+		[LEVEL]
+			40
+		[POS]
+			120	0	70
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,191 @@
+#PVF_File
+
+[name]
+	`吞日者`
+
+[name2]
+	`SunEater`
+
+[basic explain]
+	`攻击时， 有4%%的几率使敌人进入灼伤状态。
+普通攻击时， 有10%%的几率发射杰克暴弹。
+普通攻击时， 有5%%的几率出现陨石。 (消耗1个无色小晶块)`
+
+[detail explain]
+	`攻击时， 有4%%的几率使敌人进入灼伤状态7秒； 灼伤状态下的敌人， 每0.5秒受到125点伤害， 同时其周围的敌人每3秒会受到321点伤害。 (若敌人高于Lv55， 则减少进入异常状态的几率； 反之， 则增加几率)
+普通攻击时， 有10%%的几率发射杰克暴弹。
+普通攻击时， 有5%%的几率出现陨石。 (消耗1个无色小晶块)`
+
+[flavor text]
+	`把一切化为灰烬后自己也消失的火， 非常讨人喜欢。  --卡赞`
+
+[grade]
+	57
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	59
+
+[price]
+	102600
+
+[repair price]
+	86184
+
+[value]
+	82080
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	581	493
+
+[equipment magical attack]
+	349	296
+
+[separate attack]
+	328	220
+
+[icon]
+	`item/weapon/gunner/hcannon.img`	27
+
+[field image]
+	`Item/field_weapon.img`	4
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	3	1
+
+[layer variation]
+	2790
+	`hcanc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`hcanb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	3	1
+
+[layer variation]
+	2790
+	`at_hcanc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_hcanb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2800
+
+[item group name]
+	`hcannon`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		3500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[probability]
+		4
+	[active status]
+		`burn`	55	1750	750	1	3000
+[/then]
+
+[if]
+	[cooltime]
+		1000
+	[my state]
+		`attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	1
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[passive object]
+		48030	0	0	0	15	1	``
+	[/passive object]
+[/then]
+
+[if]
+	[cooltime]
+		1000
+	[my state]
+		`attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[passive object]
+		23008	120	0	90	40	0	`Straight.ptl`
+	[/passive object]
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

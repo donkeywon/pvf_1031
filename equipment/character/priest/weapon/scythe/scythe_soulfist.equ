@@ -1,0 +1,146 @@
+#PVF_File
+
+[name]
+	`异灵钩镰`
+
+[name2]
+	`Soul Fist`
+
+[basic explain]
+	`攻击时， 有1%%的几率召唤出1只瑟冥特克。`
+
+[detail explain]
+	`攻击时， 有1%%的几率召唤出1只Lv30的瑟冥特克协助召唤者攻击敌人， 瑟冥特克存在100秒。 (召唤的怪物只能同时存在1只， 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失)`
+
+[grade]
+	32
+
+[rarity]
+	2
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	30
+
+[physical attack]
+	21
+
+[magical attack]
+	21
+
+[attack speed]
+	80
+
+[stuck]
+	1
+
+[price]
+	44800
+
+[repair price]
+	35840
+
+[value]
+	35840
+
+[equipment physical attack]
+	277	262
+
+[equipment magical attack]
+	292	276
+
+[separate attack]
+	145	96
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	41	1
+	`[priest]`	11	1
+	`[priest]`	113	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/priest/scythe.img`	17
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[priest]`
+
+[variation]
+	0	10
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		130000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		100000
+	[reduce duration at pvp module]
+		75
+	[probability]
+		1
+	[summon monster]
+		60113	30	1
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

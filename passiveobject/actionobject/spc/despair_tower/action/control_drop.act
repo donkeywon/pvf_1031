@@ -1,0 +1,389 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Control.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9207
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+		[RANDOM]
+			250	900
+		[RANDOM]
+			150	398
+		[RANDOM]
+			450	500
+		[USE MAP POS]
+		[WARNING MARK]
+			420	0	50	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9207
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			0	0
+		[RANDOM]
+			450	500
+		[WARNING MARK]
+			420	0	50	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		2	2
+	[IF]
+		`throw`	
+		[>=]
+			0
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		2	2
+	[IF]
+		`throw`	
+		[>=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		2	2
+	[IF]
+		`throw`	
+		[>=]
+			2
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		2	2
+	[IF]
+		`throw`	
+		[>=]
+			3
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		9
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		2	2
+	[IF]
+		`throw`	
+		[>=]
+			4
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		10
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		2	2
+	[IF]
+		`throw`	
+		[>=]
+			5
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		11
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		2	2
+	[IF]
+		`throw`	
+		[>=]
+			6
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		12
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		2	2
+	[IF]
+		`throw`	
+		[>=]
+			7
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		13
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		2	2
+	[IF]
+		`throw`	
+		[>=]
+			8
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		14
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		2	2
+	[IF]
+		`throw`	
+		[>=]
+			9
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		15
+[/TRIGGER]
+
+[TRIGGER]
+	[WHICH]
+	[AI CHARACTER]
+	[CHECKUP]
+		[IS INDEX]
+			10410
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			8000
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		5
+	[DO BEHAVIOR]
+	[ME]
+		16
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		13	13
+	[IF]
+		`throw`	
+		[<=]
+			10
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			`throw`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		1
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		14	14
+	[DO BEHAVIOR]
+	[ME]
+		16
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		15	15
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CENTER MSG]
+		`10秒后解除炮击`	3000
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CENTER MSG]
+		`9秒后解除炮击`	3000
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CENTER MSG]
+		`8秒后解除炮击`	3000
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CENTER MSG]
+		`7秒后解除炮击`	3000
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CENTER MSG]
+		`6秒后解除炮击`	3000
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CENTER MSG]
+		`5秒后解除炮击`	3000
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CENTER MSG]
+		`4秒后解除炮击`	3000
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CENTER MSG]
+		`3秒后解除炮击`	3000
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CENTER MSG]
+		`2秒后解除炮击`	3000
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CENTER MSG]
+		`1秒后解除炮击`	3000
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CENTER MSG]
+		`已解除炮击`	3000
+[/BEHAVIOR]

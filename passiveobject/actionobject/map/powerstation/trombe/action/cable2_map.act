@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/cable2_map_0.ani`
+	[SUB ANI]
+		`../Animation/cable2_map_1.ani`	0	1
+		`../Animation/cable2_map_2.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`TRAP_WIRE`	46
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		53	53
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			15124
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-90	10	0
+		[FIX DIRECTION]
+		[LEFT]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

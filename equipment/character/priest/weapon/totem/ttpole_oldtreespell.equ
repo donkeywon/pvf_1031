@@ -1,0 +1,138 @@
+#PVF_File
+
+[name]
+	`神秘的古树图腾`
+
+[name2]
+	`Old Tree Totem of Spell`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态。
+攻击速度 +2.5%%`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态4秒； 但在决斗场中， 只能持续2秒。 (若敌人高于Lv65， 则减少进入异常状态的几率； 反之， 则增加几率)
+攻击速度 +2.5%%`
+
+[grade]
+	67
+
+[rarity]
+	2
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	65
+
+[physical attack]
+	64
+
+[attack speed]
+	25
+
+[stuck]
+	-1
+
+[price]
+	93800
+
+[repair price]
+	78792
+
+[value]
+	75040
+
+[equipment physical attack]
+	624	603
+
+[equipment magical attack]
+	535	517
+
+[separate attack]
+	293	199
+
+[physical critical hit]
+	3
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/weapon/priest/totem.img`	50
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[priest]`
+
+[variation]
+	12	10
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		6000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		4000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`stun`	65
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,137 @@
+#PVF_File
+
+[name]
+	`串串怪`
+
+[category]
+	`[hybrid]`
+[/category]
+
+[damage sound]
+	`DRAGONMAN_DMG`
+
+[die sound]
+	`DRAGONMAN_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	110
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	120
+	`[HP MAX]`	`*`	150
+[/ability category]
+
+[level]
+	76	76
+
+[move speed]
+	650	650
+
+[attack speed]
+	800	800
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	70000	70000
+
+[warlike]
+	50
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[face image]
+	`Monster/MonsterFace.img`	550
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`action/sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[attack action]
+	`Action/Attack.act`
+	`Action/shoot.act`
+	`Action/super_attack.act`
+[/attack action]
+
+[attack info]
+	`attackinfo/Attack.atk`
+	`attackinfo/Attack.atk`
+	`attackinfo/Attack.atk`
+[/attack info]
+
+[cooltime]
+	5000	7000	10000
+[/cooltime]
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	270
+
+[intelligence]
+	80	50	4000
+
+[vision]
+	900
+
+[lie frame]
+	1	2	3	3	4

@@ -1,0 +1,46 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_2.ani`
+	[SUB ANI]
+		`../Animation/attack_2_0.ani`	0	-2
+		`../Animation/attack_2_3.ani`	0	-1
+		`../Animation/attack_2_1.ani`	0	1
+		`../Animation/attack_2_2.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`机会来了！`	0	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		3000	2
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[ON DAMAGE]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		6
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]

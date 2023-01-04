@@ -1,0 +1,57 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Dash.ani`
+	[SUB ANI]
+		`../Animation/back/Move_back.ani`	0	-1
+		`../Animation/weapon/Move_wp.ani`	0	0
+		`../Animation/shoes/Move_shoes.ani`	0	1
+		`../Animation/shirts/Move_shirts.ani`	0	1
+		`../Animation/pants/Move_pants.ani`	0	1
+		`../Animation/hat/Move_hat.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			350
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/DustDownSmall.ptl`	0	0	0
+[/BEHAVIOR]

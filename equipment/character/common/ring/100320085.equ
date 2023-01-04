@@ -1,0 +1,102 @@
+#PVF_File
+
+[name]
+	`波罗丁的迷离之戒`
+
+[basic explain]
+	`攻击时， 有5%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`攻击时， 有5%%的几率使敌人进入眩晕状态2秒。 (在决斗场中几率为1%%； 若敌人高于Lv89， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	77
+
+[physical defense]
+	25
+
+[magical defense]
+	25
+
+[HP MAX]
+	250
+
+[MP MAX]
+	250
+
+[price]
+	89000
+
+[value]
+	71200
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	3072	2912
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	113
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[magical attack]
+	77
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		5
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`stun`	89
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

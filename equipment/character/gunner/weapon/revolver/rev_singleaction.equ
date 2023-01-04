@@ -1,0 +1,191 @@
+#PVF_File
+
+[name]
+	`横扫千军`
+
+[name2]
+	`Single-Action Army`
+
+[basic explain]
+	`施放[双鹰回旋]时， 有50%%的几率发动提升Lv3或Lv5的该技能。`
+
+[grade]
+	64
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	60
+
+[physical attack]
+	43
+
+[price]
+	102400
+
+[repair price]
+	86016
+
+[value]
+	81920
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	565	514
+
+[equipment magical attack]
+	475	432
+
+[separate attack]
+	360	242
+
+[physical critical hit]
+	5
+
+[skill levelup]
+	`[gunner]`	15	2
+	`[at gunner]`	15	2
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/revolver.img`	52
+
+[field image]
+	`Item/field_weapon.img`	1
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	10	0
+
+[layer variation]
+	2790
+	`revc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`revb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	10	0
+
+[layer variation]
+	2790
+	`at_revc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_revb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2000
+
+[item group name]
+	`revolver`
+
+[cool time]
+	10000
+
+[if]
+	[event use skill]
+		`gunner`	51
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			50
+		[skill levelup]
+			`gunner`	51	3
+		[/skill levelup]
+		[then probability]
+			70.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			50
+		[skill levelup]
+			`gunner`	51	5
+		[/skill levelup]
+		[then probability]
+			30.0
+	[/then]
+[/multiple then]
+
+[if]
+	[event use skill]
+		`at gunner`	51
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			50
+		[skill levelup]
+			`at gunner`	51	3
+		[/skill levelup]
+		[then probability]
+			70.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			50
+		[skill levelup]
+			`at gunner`	51	5
+		[/skill levelup]
+		[then probability]
+			30.0
+	[/then]
+[/multiple then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

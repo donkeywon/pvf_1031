@@ -1,0 +1,156 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`哥布林守卫队员`
+
+[face image]
+	`Monster/MonsterFace.img`	338
+
+[die effect]
+	0	5	0
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	10000
+	`[PHYSICAL_ATTACK]`	`*`	100
+	`[PHYSICAL_DEFENSE]`	`*`	500
+	`[MAGICAL_ATTACK]`	`*`	100
+	`[MAGICAL_DEFENSE]`	`*`	500
+[/ability category]
+
+[category]
+	`[human]`
+	`[goblin]`
+[/category]
+
+[targeting bonus]
+	100	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	`[stand]`
+	`[dash]`	0	0	0
+
+[HP regen speed]
+	0	0
+
+[MP regen speed]
+	0	0
+
+[level]
+	60	60
+
+[move speed]
+	1300	1300
+
+[attack speed]
+	500	500
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	800	800
+
+[weight]
+	60000	60000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[lie frame]
+	2	3	2	3	4
+
+[damage sound]
+	`R_GOBLIN_DMG`
+
+[die sound]
+	`R_GOBLIN_DIE`
+
+[ambient sound]
+	`R_GOBLIN_TALK`
+
+[common champion drop item]
+[/common champion drop item]
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[attack action]
+	`Action/Attack.act`
+	`Action/SelfKill.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack.atk`
+	``
+[/attack info]
+
+[cooltime]
+	5000	0
+[/cooltime]
+
+[vision]
+	2000
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[keep distance with target]
+	60
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

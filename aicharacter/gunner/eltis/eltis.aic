@@ -1,0 +1,204 @@
+#PVF_File
+
+[minimum info]
+	`思乡者艾丁斯`	2	3	0	0	70	0	0	1	0	0	0
+	`no creature`	0	0	0
+
+[additional character status]
+	0	0	0	0	0	0	0	0	3000	2200	0	0	0	0	0	0	100	100	100	100	100	100	100	100	100	100	100	100	100	100	100	100	100	0	100	100	100
+[/additional character status]
+
+[character status rate]
+	500	1000	1	1	1	1	1	3	1	3	1	1	10	1	1	1	4	1	4	1	10	10	10	10	100	100	10	100	1	100	10	100	100	10	100	10	1	0.3	100	100	100
+[/character status rate]
+
+[attack damage rate]
+	0.1
+
+[add equipment status from level]
+	1
+
+[armor subtype]
+	4
+
+[quick skill]
+	4	10
+	47	30
+	46	10
+	33	10
+	169	1
+	12	30
+[/quick skill]
+
+[skill]
+	84	1
+	27	30
+	56	28
+	197	1
+	3	30
+	6	30
+	8	1
+	13	28
+	14	28
+	16	1
+	18	1
+	19	1
+	25	1
+	30	30
+	7	28
+	37	10
+	85	1
+	86	1
+	68	8
+	2	10
+	11	5
+	28	27
+	29	21
+	40	10
+	42	10
+	43	10
+	50	10
+	59	16
+	63	18
+	67	12
+	79	26
+	80	23
+	81	18
+	83	13
+	105	1
+	106	1
+	181	2
+	184	1
+	185	1
+	179	8
+	170	1
+	174	70
+	187	1
+	183	5
+	91	1
+	171	1
+	173	1
+	175	10
+	176	10
+	178	10
+	180	10
+	186	10
+	188	10
+	189	10
+	190	1
+	177	10
+[/skill]
+
+[skill correction]
+	46	0.01	43	0.01	27	0.01	29	0.01	59	0.01	83	0.01	63	0.01
+[/skill correction]
+
+[quick item]
+[/quick item]
+
+[equipment]
+	31427	4	0
+	10175	4	0
+	14155	0	0
+	12172	0	0
+	18156	2	0
+	16147	4	0
+	20155	0	0
+	22148	0	0
+	24163	1	0
+	47087	2	0
+	47573	2	0
+	47875	2	0
+	48798	2	0
+	49189	2	0
+	49856	2	0
+	48316	2	0
+	49515	2	0
+	50237	2	0
+[/equipment]
+
+[think term]
+	200
+
+[destination change term]
+	500
+
+[keep distance with target]
+	500
+
+[keep range distance with target]
+	500	0	100	100
+
+[warlike]
+	-20
+
+[vision]
+	1000
+
+[death tower item]
+[/death tower item]
+
+[targeting bonus]
+	0	0	0	0	30	0	50	0	0	0	0	0	0	50	0	0	0	0	0	0	0
+	`[stand]`
+	`[dash]`	0	0
+	`[slow]`
+	`[confuse]`	0
+
+[ai pattern]
+	`Event.ai`
+	`DestinationSelect.ai`
+	`Action.ai`
+	`MoveMethod.ai`
+[/ai pattern]
+
+[key stream]
+	`kamo`
+	`kamo.key`
+	`robot`
+	`robot.key`
+	`casting`
+	`casting.key`
+	`rand1`
+	`rand1.key`
+	`rand2`
+	`rand2.key`
+	`by`
+	`by.key`
+	`tem`
+	`tem.key`
+	`drop`
+	`drop.key`
+	`factory`
+	`factory.key`
+	`babek`
+	`babek.key`
+	`wind`
+	`wind.key`
+[/key stream]
+
+[key cooltime]
+	`kamo`	23000
+	`robot`	19000
+	`casting`	45000
+	`rand1`	13000
+	`rand2`	3000
+	`by`	15000
+	`tem`	20000
+	`drop`	23000
+	`factory`	25000
+[/key cooltime]
+
+[proc action]
+	`action/proc.act`
+
+[etc action]
+	`action/casting.act`
+[/etc action]
+
+[speech on situation]
+	[on key]
+		`只要打败你， 我就能回故乡了！！`	100	0
+	[on die]
+		`故乡， 还很远吗……`	100
+[/speech on situation]

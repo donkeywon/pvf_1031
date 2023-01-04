@@ -1,0 +1,88 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Pierce1_2.ani`
+	[SUB ANI]
+		`../Animation/Spirit/Spirit1_pierce_2.ani`	0	-10
+		`../Animation/weapon/Pierce1_weapon_2.ani`	0	10
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			250
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12638
+		[PARTICLE FILENAME]
+			`../Particle/Thunder.ptl`
+		[LEVEL]
+			0
+		[POS]
+			60	0	0
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12638
+		[PARTICLE FILENAME]
+			`../Particle/Thunder.ptl`
+		[LEVEL]
+			0
+		[POS]
+			110	0	0
+		[WARNING MARK]
+			0	0	90	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

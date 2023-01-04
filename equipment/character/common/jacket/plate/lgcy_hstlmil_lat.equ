@@ -1,0 +1,144 @@
+#PVF_File
+
+[name]
+	`传承 : 神圣的守夜女神玄钢胸甲`
+
+[name2]
+	`Legacy : Holy Coat of Latri`
+
+[grade]
+	32
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	30
+
+[physical attack]
+	19
+
+[physical defense]
+	15
+
+[magical attack]
+	26
+
+[MP MAX]
+	120
+
+[price]
+	38400
+
+[repair price]
+	30720
+
+[value]
+	30720
+
+[equipment physical defense]
+	2100	1980
+
+[skill levelup]
+	`[swordman]`	21	1
+	`[priest]`	23	1
+	`[creator mage]`	136	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/IconArmor.img`	316
+
+[field image]
+	`Item/field_equip.img`	15
+
+[equipment type]
+	`[coat]`	21
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	60
+
+[weight]
+	5000
+
+[item group name]
+	`mt coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 神圣的守夜女神玄钢板甲  套装`
+
+[set item]
+	11651	13650	19650
+[/set item]
+
+[item overpower part]
+
+[set ability]
+	[HP MAX]
+		150
+	[MP MAX]
+		150
+	[physical attack]
+		45
+	[magical attack]
+		45
+	[light resistance]
+		8
+	[inventory limit]
+		4000
+	[skill levelup]
+		`[swordman]`	21	1
+		`[swordman]`	50	1
+		`[priest]`	20	1
+		`[priest]`	23	1
+		`[demonic swordman]`	50	1
+		`[creator mage]`	134	1
+		`[creator mage]`	136	2
+	[/skill levelup]
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福可以使自身增加5%%的攻击速度和施放速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`attack speed`
+			`+`	50
+		[stat by condition]
+			`cast speed`
+			`+`	50
+	[/then]
+[/set ability]
+
+[possible kiri protect]

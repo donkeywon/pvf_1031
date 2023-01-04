@@ -1,0 +1,113 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	12
+[/dungeon]
+
+[type]
+	`[normal]`
+
+[tile]
+	`Tile/SkyCastleNPoll.til`
+	`Tile/SkyCastleNOPoll.til`
+	`Tile/SkyCastleDCPoll.til`
+	`Tile/SkyCastlePCPoll.til`
+	`Tile/SkyCastlePCPoll.til`
+	`Tile/SkyCastleNOPoll.til`
+	`Tile/SkyCastleUCPoll.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/far1.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/far3.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	13	264	1556	263	779	209	785	348
+
+[sound]
+	`RM_SKYCASTLE`
+	`WIND_AMB_01`
+	`G_AMON`
+[/sound]
+
+[animation]
+	`Animation/scloud.ani`	`[distantback]`	-378	201	0
+	`Animation/scloud.ani`	`[distantback]`	253	201	0
+	`Animation/scloud.ani`	`[distantback]`	884	201	0
+	`Animation/scloud.ani`	`[distantback]`	1515	201	0
+	`Animation/scloud.ani`	`[distantback]`	2146	201	0
+	`Animation/scloud.ani`	`[distantback]`	2777	201	0
+[/animation]
+
+[passive object]
+	235	539	332	0
+	235	1053	336	0
+	1040	973	257	0
+	1040	975	303	0
+	1036	615	258	0
+	1036	613	303	0
+[/passive object]
+
+[monster]
+	39	1	0	1200	226	0	1	1	`[fixed]`	`[normal]`
+	39	1	0	360	246	0	1	1	`[fixed]`	`[normal]`
+	39	1	0	1273	248	0	1	1	`[fixed]`	`[normal]`
+	39	1	0	281	252	0	1	1	`[fixed]`	`[normal]`
+	37	1	0	258	310	0	1	1	`[fixed]`	`[normal]`
+	37	1	0	1299	317	0	1	1	`[fixed]`	`[normal]`
+	31	1	0	355	331	0	1	1	`[fixed]`	`[normal]`
+	31	1	0	1176	334	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[special passive object]
+	238	429	208	0	1
+	`[item]`	3	-1	2	-1	-1
+	238	1119	214	0	1
+	`[trap]`	48020	13	3	10	-1
+	235	1009	220	0	1
+	`[monster]`	39	18	3	10	-1
+	235	563	222	0	1
+	`[monster]`	39	18	3	10	-1
+	235	1037	273	0	1
+	`[trap]`	2011	1	2	5	-1
+	235	534	275	0	1
+	`[trap]`	2111	1	2	5	-1	
+[/special passive object]
+
+[greed]
+	`CC CC`
+
+[map name]
+	`PVP 无名`

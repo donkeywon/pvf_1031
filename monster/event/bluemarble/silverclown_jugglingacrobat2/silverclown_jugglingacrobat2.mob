@@ -1,0 +1,133 @@
+#PVF_File
+
+[name]
+	`吉格罗`
+
+[category]
+	`[human]`
+	`[fixture]`
+[/category]
+
+[damage sound]
+	`R_NORMALSILVER_DMG`
+
+[die sound]
+	`NORMALSILVER_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	120
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	80
+	`[HP MAX]`	`*`	1
+[/ability category]
+
+[level]
+	64	64
+
+[move speed]
+	100	100
+
+[attack speed]
+	500	500
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	60000	60000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[common champion drop item]
+[/common champion drop item]
+
+[common champion elemental property]
+	`[fire element]`
+	`[water element]`
+	`[dark element]`
+	`[light element]`
+	`[no element]`
+[/common champion elemental property]
+
+[face image]
+	`Monster/MonsterFace.img`	427
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/juggling_Stay.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[last action]
+	`action/die.act`
+
+[cooltime]
+[/cooltime]
+
+[think term]
+	200
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/Jungling_DestinationSelect.ai`
+		`ai/Jungling_Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/Jungling_DestinationSelect.ai`
+		`ai/Jungling_Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/Jungling_DestinationSelect.ai`
+		`ai/Jungling_Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/Jungling_DestinationSelect.ai`
+		`ai/Jungling_Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	1000
+
+[keep range distance with target]
+	2000	0	500	500
+
+[intelligence]
+	100	100	3000
+
+[vision]
+	2000
+
+[lie frame]
+	1	1	1	1	1
+
+[destroy count]
+	1
+
+[destroy count damage]
+	1

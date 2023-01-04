@@ -1,0 +1,203 @@
+#PVF_File
+
+[name]
+	`魔剑阿波菲斯`
+
+[face image]
+	`Monster/MonsterFace.img`	388
+
+[die effect]
+	0	0	0
+
+[floating height]
+	90
+
+[category]
+	`[devil]`
+[/category]
+
+[ambient sound]
+	``
+
+[attack sound]
+	`R_DEVILSWORD_VOICE`
+
+[appear sound]
+	``
+
+[damage sound]
+	`SWD_GUARDED`
+
+[die sound]
+	``
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	200
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	250
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	200
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	150
+	`[HP MAX]`	`*`	1440
+[/ability category]
+
+[level]
+	100	100
+
+[dark resistance]
+	50	50
+
+[light resistance]
+	-30	-30
+
+[slow resistance]
+	30	30
+
+[freeze resistance]
+	30	30
+
+[poison resistance]
+	50	50
+
+[stun resistance]
+	30	30
+
+[curse resistance]
+	30	30
+
+[blind resistance]
+	30	30
+
+[lightning resistance]
+	-10	-10
+
+[stone resistance]
+	30	30
+
+[sleep resistance]
+	30	30
+
+[burn resistance]
+	30	30
+
+[bleeding resistance]
+	50	50
+
+[confuse resistance]
+	30	30
+
+[hold resistance]
+	30	30
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1400	1400
+
+[weight]
+	40000	40000
+
+[come in action]
+	`Action/Comein_0.act`	1300	1300
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[waiting action]
+	`Action/Move_0.act`
+
+[move action]
+	`Action/Move_50_0.act`
+
+[damage action 1]
+	`Action/Damage1_0.act`
+
+[damage action 2]
+	`Action/Damage2_0.act`
+
+[down action]
+	`Action/Down_0.act`
+
+[attack action]
+	`Action/AttackDown_0.act`
+	`Action/AttackSide_0.act`
+	`Action/Cast_0.act`
+	`Action/AttackSide_Combo1_0.act`
+	`Action/AttackSide_Combo2_0.act`
+	`Action/BladeWave_0.act`
+	`Action/Comein_0.act`
+	`Action/kill_0.act`
+	`Action/Cast2_0.act`
+[/attack action]
+
+[last action]
+	`Action/Die_0.act`
+
+[proc action]
+	`Action/Proc_0.act`
+
+[attack info]
+	`AttackInfo/Attack_0.atk`
+	`AttackInfo/Attack_0.atk`
+	`AttackInfo/Attack_0.atk`
+	`AttackInfo/Attack_0.atk`
+	`AttackInfo/Attack_0.atk`
+	`AttackInfo/Attack_0.atk`
+	``
+	``
+	``
+[/attack info]
+
+[cooltime]
+	5000	5000	5000	5000	5000	5000	500000000	500000000	500000000
+[/cooltime]
+
+[think term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event_0.ai`
+		`ai/DestinationSelect_0.ai`
+		`ai/Action_0.ai`
+		`ai/MoveMethod_0.ai`
+	[/easy]
+	[medium]
+		`ai/Event_0.ai`
+		`ai/DestinationSelect_0.ai`
+		`ai/Action_0.ai`
+		`ai/MoveMethod_0.ai`
+	[/medium]
+	[hard]
+		`ai/Event_0.ai`
+		`ai/DestinationSelect_0.ai`
+		`ai/Action_0.ai`
+		`ai/MoveMethod_0.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event_0.ai`
+		`ai/DestinationSelect_0.ai`
+		`ai/Action_0.ai`
+		`ai/MoveMethod_0.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event_0.ai`
+		`ai/DestinationSelect_0.ai`
+		`ai/Action_0.ai`
+		`ai/MoveMethod_0.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	250
+
+[vision]
+	1000
+
+[lie frame]
+	2	3	2	3	4

@@ -1,0 +1,53 @@
+#PVF_File
+
+[width]
+	0	0
+
+[floating height]
+	1
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	1000
+
+[basic action]
+	`Action/GiselleMissile2_2.act`
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[ENEMY]`
+	[homing velocity]
+		550	100
+	[homing check gap]
+		500
+	[sync animation rotation]
+		0
+	[max rotation]
+		180
+	[init rotation]
+		280
+	[diff rotation]
+		340
+	[homing time]
+		1000
+[/homing]
+
+[sound category]
+	`[on destroyobject]`
+	`BOMB_03`	-1
+[/sound category]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[on end of animation]`
+[/object destroy condition]
+
+[name]
+	`青铜石巨人的子弹`

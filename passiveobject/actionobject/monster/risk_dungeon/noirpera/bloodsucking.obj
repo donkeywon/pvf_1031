@@ -1,0 +1,37 @@
+#PVF_File
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	1000
+
+[basic action]
+	`Action/blood_ball_start.act`
+
+[etc action]
+	`Action/blood_ball.act`
+[/etc action]
+
+[last action]
+	`Action/blood_ball_end.act`
+
+[sound category]
+	1
+	`[after object create]`
+	`BLOODYR_BLACKHOLE_LOOP`	-1
+[/sound category]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	10000
+[/object destroy condition]
+
+[team]
+	100
+
+[name]
+	`发射型杰克爆弹`

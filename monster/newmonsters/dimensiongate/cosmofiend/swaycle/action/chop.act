@@ -1,0 +1,45 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/chop.ani`
+	[SUB ANI]
+		`../animation/Chop_e.ani`	0	-10
+		`../animation/Chop_e1.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`别跟我……耍花样……`	0	50
+		`全都……陷入混沌吧！`	0	50
+	[/SPEECH]
+	[SOUND]
+		`HM_LAUGH`	0
+		`R_TOTEM`	1
+		`BIGGOLEM_ATK_02`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		100	200	500	100	255	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	1000
+[/BEHAVIOR]

@@ -1,0 +1,82 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack2.ani`
+	[SUB ANI]
+		`../Animation/wp/Attack2.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`ALEKTO_SKILL_02`	3
+	[/SOUND]
+	[SPEECH]
+		`咳呵！`	0	50
+		`呸！`	0	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8073
+		[PARTICLE FILENAME]
+			`../particle/01-0.ptl`
+		[LEVEL]
+			0
+		[POS]
+			100	0	80
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8073
+		[PARTICLE FILENAME]
+			`../particle/01-1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			100	0	80
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8073
+		[PARTICLE FILENAME]
+			`../particle/01-2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			100	0	80
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

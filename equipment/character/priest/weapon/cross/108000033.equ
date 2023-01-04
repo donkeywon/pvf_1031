@@ -1,0 +1,167 @@
+#PVF_File
+
+[name]
+	`苍木之冥`
+
+[name2]
+	``
+
+[basic explain]
+	`[圣愈之风]屏障持续时间 +4秒
+
+每10秒可以对100px范围内的敌人随机发动束缚Buff， 效果持续2秒。
+以额外杀伤使敌人致死时， 可使自身恢复800点HP。`
+
+[detail explain]
+	`[圣愈之风]屏障持续时间 +4秒
+
+每10秒可以对100px范围内的敌人随机发动束缚Buff， 效果持续2秒。 (若敌人高于Lv85， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 在决斗场中， 每60秒发动一次)
+以额外杀伤使敌人致死时， 可使自身恢复800点HP。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical defense]
+	70
+
+[magical attack]
+	56
+
+[magical defense]
+	70
+
+[cast speed]
+	20
+
+[HP regen speed]
+	90
+
+[price]
+	136000
+
+[repair price]
+	114240
+
+[value]
+	108800
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	824	764
+
+[equipment magical attack]
+	783	726
+
+[equipment physical defense]
+	850	850
+
+[equipment magical defense]
+	850	850
+
+[separate attack]
+	504	343
+
+[icon]
+	`item/new_equipment/01_weapon/priest/cross/cross.img`	84
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	24	1
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[routing priority]
+	`priest`	1
+[/routing priority]
+
+[elemental property]
+	`[water element]`
+
+[if]
+	[time]
+		10000	1	10000
+[/if]
+
+[then]
+	[target]
+		`enemy`	100
+	[duration]
+		2000
+	[active status]
+		`hold`	85
+[/then]
+
+[if]
+	[attack success]
+		1
+	[overkill]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`hp`
+		`+`	800	0
+[/then]
+
+[skill data up]
+	`[priest]`	26	`[all]`	`[level]`	4	`+`	4000
+[/skill data up]
+
+[icon mark]
+	`Item/IconMark.img`	68

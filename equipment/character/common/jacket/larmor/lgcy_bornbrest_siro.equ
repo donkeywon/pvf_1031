@@ -1,0 +1,124 @@
+#PVF_File
+
+[name]
+	`传承 : 大地女神的血骨胸甲`
+
+[name2]
+	`Legacy : Coat of Sironen`
+
+[grade]
+	17
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	15
+
+[physical attack]
+	14
+
+[magical attack]
+	6
+
+[HP MAX]
+	60
+
+[MP MAX]
+	35
+
+[price]
+	15300
+
+[repair price]
+	12240
+
+[value]
+	12240
+
+[equipment physical defense]
+	720	648
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/IconArmor.img`	213
+
+[field image]
+	`Item/field_equip.img`	5
+
+[equipment type]
+	`[coat]`	19
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3100
+
+[item group name]
+	`la coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 大地女神的血骨轻甲  套装`
+
+[set item]
+	10879	12879
+[/set item]
+
+[item overpower part]
+
+[set ability]
+	[HP MAX]
+		150
+	[MP MAX]
+		150
+	[physical attack]
+		23
+	[physical defense]
+		23
+	[fire resistance]
+		10
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福可以使自身增加3%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	30
+	[/then]
+[/set ability]
+
+[possible kiri protect]

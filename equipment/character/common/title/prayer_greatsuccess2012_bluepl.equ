@@ -1,0 +1,118 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	`Prayer For Great Success 2011[BlueDragon]`
+
+[explain]
+	`攻击时以3%%的机率使用2个无色大晶体，30秒内攻击速度增加+5%%，施展速度增加+5%%，移动速度增加+5%%，魔法攻击力增加+5%%。(决斗场内修正为15秒)`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	432
+
+[custom animation]
+	`TitleAnimation/2012daebak_intelligence_platinum.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	150
+
+[MP MAX]
+	150
+
+[magical attack]
+	30
+
+[magical defense]
+	30
+
+[stuck resistance]
+	20
+
+[move speed]
+	30
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[equipment magical attack]
+	7	7
+
+[magical critical hit]
+	3
+
+[stuck]
+	-2
+
+[move wav]
+	`NAME_TOUCH`
+
+[separate attack]
+	10	7
+
+[if]
+	[cooltime]
+		40000
+	[cooltime group]
+		7
+	[attack success]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	2
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[reduce duration at pvp module]
+		50
+	[probability]
+		3
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`cast speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+	[stat]
+		`equipment magical attack`
+		`%`	5
+[/then]
+
+[room list move speed rate]
+	0.15
+
+[icon mark]
+	`Item/IconMark.img`	64

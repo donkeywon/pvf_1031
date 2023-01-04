@@ -1,0 +1,252 @@
+#PVF_File
+
+[name]
+	`狂龙之怒`
+
+[name2]
+	`Power Punch Of Angry`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态。
+拳术伤害 +30%%
+腿法伤害 -15%%`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态2秒； 但在决斗场中， 只能持续1秒。 (若敌人高于Lv70， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+拳术伤害 +30%%
+腿法伤害 -15%%`
+
+[flavor text]
+	`再来啊！ 让我用拳头好好教训你！`
+
+[grade]
+	70
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	65
+
+[physical attack]
+	47
+
+[attack speed]
+	100
+
+[price]
+	126000
+
+[repair price]
+	105840
+
+[value]
+	100800
+
+[equipment physical attack]
+	708	645
+
+[equipment magical attack]
+	640	583
+
+[separate attack]
+	411	278
+
+[icon]
+	`Item/weapon/fighter/bglove.img`	54
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	9	0
+
+[layer variation]
+	2791
+	`bglovec1`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	2792
+	`bglovec2`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	651
+	`bgloveb1`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	652
+	`bgloveb2`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	9	0
+
+[layer variation]
+	2151
+	`at_bglovea1`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	651
+	`at_bgloveb1`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2791
+	`at_bglovec1`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	202
+	`at_bgloved2`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`stun`	70
+[/then]
+
+[skill data up]
+	`[fighter]`	1	`[all]`	`[level]`	0	`%`	30
+	`[fighter]`	4	`[all]`	`[level]`	0	`%`	-15
+	`[fighter]`	5	`[all]`	`[level]`	0	`%`	30
+	`[fighter]`	6	`[all]`	`[level]`	0	`%`	-15
+	`[fighter]`	17	`[all]`	`[level]`	2	`%`	-15
+	`[fighter]`	17	`[all]`	`[level]`	3	`%`	-15
+	`[fighter]`	17	`[all]`	`[level]`	4	`%`	-15
+	`[fighter]`	17	`[all]`	`[level]`	0	`%`	-15
+	`[fighter]`	19	`[all]`	`[level]`	0	`%`	30
+	`[fighter]`	19	`[all]`	`[level]`	2	`%`	30
+	`[fighter]`	46	`[all]`	`[level]`	2	`%`	-15
+	`[fighter]`	46	`[all]`	`[level]`	3	`%`	-15
+	`[fighter]`	58	`[all]`	`[level]`	0	`%`	-15
+	`[fighter]`	68	`[all]`	`[level]`	1	`%`	-15
+	`[fighter]`	71	`[all]`	`[level]`	0	`%`	-15
+	`[fighter]`	80	`[all]`	`[level]`	0	`%`	30
+	`[fighter]`	82	`[all]`	`[level]`	0	`%`	-15
+	`[fighter]`	82	`[all]`	`[level]`	1	`%`	30
+	`[fighter]`	82	`[all]`	`[level]`	2	`%`	30
+	`[fighter]`	84	`[all]`	`[level]`	0	`%`	30
+	`[fighter]`	84	`[all]`	`[level]`	1	`%`	30
+	`[fighter]`	84	`[all]`	`[level]`	2	`%`	30
+	`[fighter]`	84	`[all]`	`[level]`	3	`%`	-15
+	`[fighter]`	83	`[all]`	`[level]`	0	`%`	30
+	`[fighter]`	83	`[all]`	`[level]`	1	`%`	30
+	`[fighter]`	102	`[all]`	`[level]`	0	`%`	30
+	`[fighter]`	102	`[all]`	`[level]`	7	`%`	30
+	`[fighter]`	102	`[all]`	`[level]`	8	`%`	30
+	`[fighter]`	102	`[all]`	`[level]`	9	`%`	30
+	`[fighter]`	103	`[all]`	`[level]`	0	`%`	30
+	`[fighter]`	103	`[all]`	`[level]`	1	`%`	30
+	`[fighter]`	103	`[all]`	`[level]`	4	`%`	30
+	`[fighter]`	103	`[all]`	`[level]`	5	`%`	30
+	`[at fighter]`	1	`[all]`	`[level]`	0	`%`	30
+	`[at fighter]`	4	`[all]`	`[level]`	1	`%`	-15
+	`[at fighter]`	4	`[all]`	`[level]`	7	`%`	-15
+	`[at fighter]`	5	`[all]`	`[level]`	1	`%`	-15
+	`[at fighter]`	6	`[all]`	`[level]`	1	`%`	-15
+	`[at fighter]`	6	`[all]`	`[level]`	2	`%`	-15
+	`[at fighter]`	17	`[all]`	`[level]`	2	`%`	-15
+	`[at fighter]`	17	`[all]`	`[level]`	3	`%`	-15
+	`[at fighter]`	17	`[all]`	`[level]`	4	`%`	-15
+	`[at fighter]`	17	`[all]`	`[level]`	0	`%`	-15
+	`[at fighter]`	19	`[all]`	`[level]`	0	`%`	-15
+	`[at fighter]`	19	`[all]`	`[level]`	2	`%`	-15
+	`[at fighter]`	46	`[all]`	`[level]`	2	`%`	-15
+	`[at fighter]`	46	`[all]`	`[level]`	3	`%`	-15
+	`[at fighter]`	58	`[all]`	`[level]`	0	`%`	-15
+	`[at fighter]`	68	`[all]`	`[level]`	1	`%`	-15
+	`[at fighter]`	68	`[all]`	`[level]`	2	`%`	-15
+	`[at fighter]`	80	`[all]`	`[level]`	0	`%`	30
+	`[at fighter]`	82	`[all]`	`[level]`	0	`%`	-15
+	`[at fighter]`	82	`[all]`	`[level]`	1	`%`	-15
+	`[at fighter]`	82	`[all]`	`[level]`	2	`%`	-15
+	`[at fighter]`	82	`[all]`	`[level]`	3	`%`	-15
+	`[at fighter]`	84	`[all]`	`[level]`	0	`%`	30
+	`[at fighter]`	84	`[all]`	`[level]`	1	`%`	30
+	`[at fighter]`	83	`[all]`	`[level]`	0	`%`	-15
+[/skill data up]
+
+[routing priority]
+	`fighter`	2
+	`at fighter`	2
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,153 @@
+#PVF_File
+
+[name]
+	`传承 : 大地女神的赤铜锁甲`
+
+[name2]
+	`Legacy : Coat of Sironen`
+
+[grade]
+	17
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	15
+
+[physical attack]
+	14
+
+[physical defense]
+	14
+
+[magical attack]
+	6
+
+[HP MAX]
+	60
+
+[MP MAX]
+	35
+
+[price]
+	17000
+
+[repair price]
+	13600
+
+[value]
+	13600
+
+[equipment physical defense]
+	960	864
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/IconArmor.img`	300
+
+[field image]
+	`Item/field_equip.img`	10
+
+[equipment type]
+	`[coat]`	20
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	3600
+
+[item group name]
+	`ha coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 大地女神的赤铜重甲  套装`
+
+[set item]
+	11279	13279
+[/set item]
+
+[item overpower part]
+
+[set ability]
+	[HP MAX]
+		150
+	[MP MAX]
+		150
+	[physical attack]
+		23
+	[physical defense]
+		23
+	[magical attack]
+		18
+	[fire resistance]
+		10
+	[if]
+		[cooltime]
+			1000
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			8000
+		[reduce duration to human armor at pvp module]
+			75
+		[probability]
+			2
+		[reduce probability at pvp module]
+			100
+		[active status]
+			`sleep`	15
+	[/then]
+	[fullset basic explain]
+		`被攻击时， 有2%%的几率使敌人进入睡眠状态。
+进入地下城时， 因传承的祝福可以使自身增加3%%的移动速度。`
+	[fullset detail explain]
+		`被攻击时， 有2%%的几率使敌人进入睡眠状态8秒。 (若敌人高于Lv15， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果。)
+进入地下城时， 因传承的祝福可以使自身增加3%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	30
+	[/then]
+[/set ability]
+
+[possible kiri protect]

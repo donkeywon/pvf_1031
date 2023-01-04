@@ -1,0 +1,143 @@
+#PVF_File
+
+[name]
+	`蓝锥石手杖`
+
+[name2]
+	`Benitoite`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态4秒； 但在决斗场中， 只能持续2秒。 (若敌人高于Lv65， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	67
+
+[rarity]
+	2
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	65
+
+[magical attack]
+	42
+
+[attack speed]
+	-100
+
+[stuck]
+	-2
+
+[price]
+	93800
+
+[repair price]
+	78792
+
+[value]
+	75040
+
+[equipment physical attack]
+	480	464
+
+[equipment magical attack]
+	683	660
+
+[separate attack]
+	293	199
+
+[magical critical hit]
+	7
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/weapon/thief/wand.img`	70
+
+[field image]
+	`Item/field_weapon.img`	18
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[thief]`
+
+[variation]
+	12	6
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2300
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		6000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		4000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`stun`	65
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

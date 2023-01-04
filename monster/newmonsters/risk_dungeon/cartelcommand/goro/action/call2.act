@@ -1,0 +1,138 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/call1.ani`
+	[SUB ANI]
+		`../Animation/call_1.ani`	0	1
+		`../Animation/call_2.ani`	0	2
+		`../Animation/call_3.ani`	0	3
+		`../Animation/call_4.ani`	0	4
+		`../Animation/call_5.ani`	0	5
+	[/SUB ANI]
+	[SPEECH]
+		`帮帮咕噜吧！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35682
+		[PARTICLE FILENAME]
+			`../Particle/launcher.ptl`
+		[LEVEL]
+			0
+		[POS]
+			1174	156	600
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	100	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35682
+		[PARTICLE FILENAME]
+			`../Particle/launcher.ptl`
+		[LEVEL]
+			0
+		[POS]
+			965	190	600
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	100	2
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35682
+		[PARTICLE FILENAME]
+			`../Particle/launcher.ptl`
+		[LEVEL]
+			0
+		[POS]
+			786	130	600
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	100	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35682
+		[PARTICLE FILENAME]
+			`../Particle/launcher.ptl`
+		[LEVEL]
+			0
+		[POS]
+			625	190	600
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	100	2
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35682
+		[PARTICLE FILENAME]
+			`../Particle/launcher.ptl`
+		[LEVEL]
+			0
+		[POS]
+			447	130	600
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	100	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35682
+		[PARTICLE FILENAME]
+			`../Particle/launcher.ptl`
+		[LEVEL]
+			0
+		[POS]
+			212	159	600
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	100	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

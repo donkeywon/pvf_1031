@@ -1,0 +1,198 @@
+#PVF_File
+
+[name]
+	`狄瑞吉的邪念`
+
+[face image]
+	`Monster/MonsterFace.img`	381
+
+[die effect]
+	0	1	1
+
+[floating height]
+	40
+
+[category]
+	`[undead]`
+[/category]
+
+[ambient sound]
+	``
+
+[attack sound]
+	``
+
+[appear sound]
+	``
+
+[damage sound]
+	`ECHEVERRA_DMG_01`
+
+[die sound]
+	`ECHEVERRA_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+	`[HP MAX]`	`*`	90
+[/ability category]
+
+[level]
+	100	100
+
+[fire resistance]
+	30	30
+
+[water resistance]
+	30	30
+
+[dark resistance]
+	30	30
+
+[light resistance]
+	-10	-10
+
+[slow resistance]
+	30	30
+
+[freeze resistance]
+	30	30
+
+[poison resistance]
+	50	50
+
+[stun resistance]
+	30	30
+
+[curse resistance]
+	30	30
+
+[blind resistance]
+	50	50
+
+[lightning resistance]
+	-10	-10
+
+[stone resistance]
+	30	30
+
+[sleep resistance]
+	30	30
+
+[bleeding resistance]
+	20	20
+
+[piercing resistance]
+	10	10
+
+[stuck resistance]
+	30	30
+
+[confuse resistance]
+	30	30
+
+[hold resistance]
+	10	10
+
+[move speed]
+	450	450
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	500	500
+
+[hit recovery]
+	10000	10000
+
+[weight]
+	6000	6000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[waiting action]
+	`Action/stay.act`
+
+[move action]
+	`Action/move.act`
+
+[damage action 1]
+	`Action/damage1.act`
+
+[damage action 2]
+	`Action/damage2.act`
+
+[attack action]
+	`Action/bomb.act`
+	`Action/absorption.act`
+	`Action/DashBomb.act`
+	`Action/DashBomb_2.act`
+	`Action/stay_bomb.act`
+	`Action/stay_bomb2.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/attack1.atk`
+[/attack info]
+
+[cooltime]
+	5000	1000	1000	1000	10000	7000
+[/cooltime]
+
+[think term]
+	200
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	300
+
+[warlike]
+	60
+
+[intelligence]
+	60	60	3000
+
+[vision]
+	1000
+
+[lie frame]
+	0	1	2	3	4

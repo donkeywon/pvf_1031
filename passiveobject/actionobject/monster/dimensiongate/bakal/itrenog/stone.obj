@@ -1,0 +1,47 @@
+#PVF_File
+
+[width]
+	1	1
+
+[floating height]
+	0
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	1000
+
+[team]
+	100
+
+[basic action]
+	`Action/stone.act`
+
+[attack info]
+	`AttackInfo/stone.atk`
+
+[etc action]
+	`Action/stone1.act`
+	`Action/stone2.act`
+	`Action/stone3.act`
+	`Action/stone4.act`
+[/etc action]
+
+[destroy particle]
+	`Particle/stone.ptl`
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	5500
+[/object destroy condition]
+
+[sound category]
+	`[after object create]`
+	`DBBLOW`	-1
+	`[on destroyobject]`
+	`R_HIT_STONE2`	-1
+[/sound category]

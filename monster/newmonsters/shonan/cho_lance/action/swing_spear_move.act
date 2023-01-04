@@ -1,0 +1,96 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/swing_spear.ani`
+	[SUB ANI]
+		`../animation/weapon/Sword.ani`	0	2
+		`../animation/weapon/swing_spear.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[DEFAULT ATTACKINFO]
+	`../AttackInfo/Attack2.atk`
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9935
+		[PARTICLE FILENAME]
+			`../Particle/skill_sarin1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			50	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9935
+		[PARTICLE FILENAME]
+			`../Particle/skill_sarin2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			50	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	500
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9934
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			80	10	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9933
+		[PARTICLE FILENAME]
+			`../Particle/skill_sarin1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			50	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9933
+		[PARTICLE FILENAME]
+			`../Particle/skill_sarin2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			50	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

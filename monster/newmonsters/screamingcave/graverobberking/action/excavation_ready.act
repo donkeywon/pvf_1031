@@ -1,0 +1,30 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AttackNormalLoop.ani`
+	[SUB ANI]
+		`../Animation/equipment/AttackNormalLoop.ani`	0	0
+		`../Animation/Exclamation.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`COOLTIME_SKILL_END`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+	[RANDOM SELECT]
+		2	3	4
+	[/RANDOM SELECT]
+	[END]
+[/BEHAVIOR]

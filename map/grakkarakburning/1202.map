@@ -1,0 +1,130 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	8
+[/dungeon]
+
+[type]
+	`[normal]`
+
+[greed]
+	`II II`
+
+[tile]
+	`Tile/ForestOver.til`
+	`Tile/ForestOverUnder.til`
+	`Tile/ForestUnder.til`
+	`Tile/ForestUnderOver.til`
+	`Tile/ForestOver.til`
+	`Tile/ForestOver.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/far0.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/mid0.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`../CommonAnimation/FireCurtain.ani`
+		[layer]
+			`[close]`
+		[order]
+			`[upper]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	12	242	1330	244	555	173	1091	348
+
+[sound]
+	`M_GRAKKARAK`
+	`AMB_FOREST_03`
+[/sound]
+
+[animation]
+	`Animation/BurntTree4.ani`	`[close]`	519	408	0
+	`Animation/Stone0.ani`	`[normal]`	895	293	0
+	`Animation/Stone0.ani`	`[bottom]`	366	228	0
+	`Animation/BurntTree6.ani`	`[closeback]`	317	155	0
+	`Animation/BurntTree3.ani`	`[closeback]`	1057	132	0
+	`Animation/BurntTree0.ani`	`[closeback]`	435	153	0
+	`Animation/BurntTree1.ani`	`[closeback]`	913	137	0
+	`Animation/BurntTree2.ani`	`[closeback]`	752	147	0
+[/animation]
+
+[passive object]
+	7	200	260	540
+	302	601	178	0
+	221	902	258	0
+	306	778	261	0
+	302	604	349	0
+[/passive object]
+
+[monster]
+	13	0	14	287	230	0	1	1	`[fixed]`	`[normal]`
+	7	0	15	513	235	0	1	1	`[fixed]`	`[normal]`
+	4	0	6	617	248	0	1	1	`[fixed]`	`[normal]`
+	11	0	7	1018	262	0	1	1	`[fixed]`	`[normal]`
+	13	0	14	225	287	0	1	1	`[fixed]`	`[normal]`
+	7	0	15	507	297	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[special passive object]
+	231	958	159	0	1
+	`[item]`	0	1	-1	-1	-1
+	231	177	169	0	1
+	`[item]`	0	1	-1	-1	-1
+	221	846	198	0	1
+	`[item]`	1	-1	1	-1	-1
+	221	845	316	0	1
+	`[monster]`	4	6	5	10	-1	
+[/special passive object]
+
+[event monster position]
+	244	199	0
+	259	309	0
+	903	181	0
+	905	302	0
+[/event monster position]
+
+[map name]
+	`PVP 无名`

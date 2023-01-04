@@ -1,0 +1,65 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/CastingStay.ani`
+	[SPEECH]
+		`力量模式解除！！！！`	0	100
+	[/SPEECH]
+	[SOUND]
+		`ENJO_CILCLE`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`力量模式解除！！！！`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		10
+		`Move_Front.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		11
+		`Move_Up.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		12
+		`Move_Down.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		13
+		`Move_Upside.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		14
+		`Move_DownSide.act`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		0	
+		[equipment physical attack]
+		[%]
+			-20.0
+		[attack speed]
+		[%]
+			-20.0
+	[/APPENDAGE]
+[/BEHAVIOR]

@@ -1,0 +1,195 @@
+#PVF_File
+
+[name]
+	`碎空魔炎`
+
+[name2]
+	`Distortion Blaster`
+
+[basic explain]
+	`施放[M-3喷火器]、 [聚焦喷火器]时， 有50%%的几率发动提升Lv5的该技能。`
+
+[flavor text]
+	`缓过神后， 才发现自己已经被火焰喷伤了。  --海岚回忆被武器支配的经历`
+
+[grade]
+	50
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	45
+
+[physical attack]
+	53
+
+[need material]
+	3260	750
+
+[repair price]
+	75600
+
+[value]
+	72000
+
+[equipment physical attack]
+	520	436
+
+[equipment magical attack]
+	312	261
+
+[separate attack]
+	285	189
+
+[skill levelup]
+	`[gunner]`	13	1
+	`[gunner]`	36	1
+	`[at gunner]`	13	1
+	`[at gunner]`	36	1
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/hcannon.img`	29
+
+[field image]
+	`Item/field_weapon.img`	4
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	3	0
+
+[layer variation]
+	2790
+	`hcanc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`hcanb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	3	0
+
+[layer variation]
+	2790
+	`at_hcanc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_hcanb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2800
+
+[item group name]
+	`hcannon`
+
+[cool time]
+	10000
+
+[if]
+	[event use skill]
+		`gunner`	30
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`gunner`	30	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`gunner`	36
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`gunner`	36	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`at gunner`	30
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`at gunner`	30	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`at gunner`	36
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`at gunner`	36	5
+	[/skill levelup]
+[/then]
+
+[routing priority]
+	`gunner`	2
+	`at gunner`	2
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,76 @@
+#PVF_File
+
+[name]
+	`华丽的绝杀`
+
+[name2]
+	`Tower of Despair 17 Floor`
+
+[explain]
+	`攻击时， 有9%%的几率附加99点伤害。`
+
+[flavor text]
+	`没错， 如此华丽的舞台才适合我！ 这里就是我的归宿……`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	361
+
+[custom animation]
+	`TitleAnimation/apc_tower_of_despair_17.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical defense]
+	9
+
+[magical defense]
+	9
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[cooltime]
+		3000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		9
+	[add absolute damage]
+		`all`
+		`+`	99
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

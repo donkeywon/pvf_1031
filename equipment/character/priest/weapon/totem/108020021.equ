@@ -1,0 +1,146 @@
+#PVF_File
+
+[name]
+	`奥尔卡的黑狼图腾[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`被暗属性攻击时， 有10%%的几率使自身增加10%%的物理暴击率， 效果持续30秒。
+
+无法进行合成和分解。`
+
+[grade]
+	56
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	57
+
+[stuck]
+	-1
+
+[price]
+	89600
+
+[repair price]
+	75264
+
+[value]
+	71680
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	542	500
+
+[equipment magical attack]
+	464	428
+
+[separate attack]
+	311	208
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[priest]`	35	2
+	`[priest]`	58	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/totem.img`	29
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	1	9
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[cooltime]
+		30000
+	[element]
+		`dark`
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		10
+	[stat]
+		`physical critical hit rate`
+		`+`	10
+[/then]
+
+[not amplify]
+	1
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

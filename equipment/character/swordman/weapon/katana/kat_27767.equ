@@ -1,0 +1,198 @@
+#PVF_File
+
+[name]
+	`汲血者的庇护 [网吧]`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 有2%%的几率使自身恢复3%%的HP和2%%的MP。
+攻击时， 有3%%的几率使自身增加35点力量、 体力、 智力和精神， 效果持续20秒。
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。`
+
+[grade]
+	64
+
+[rarity]
+	3
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	60
+
+[physical attack]
+	43
+
+[magical attack]
+	65
+
+[attack speed]
+	80
+
+[cast speed]
+	40
+
+[stuck]
+	1
+
+[HP MAX]
+	200
+
+[price]
+	102400
+
+[repair price]
+	86016
+
+[value]
+	81920
+
+[equipment physical attack]
+	574	526
+
+[equipment magical attack]
+	634	582
+
+[separate attack]
+	360	242
+
+[physical critical hit]
+	2
+
+[icon]
+	`Item/weapon/swordman/katana.img`	58
+
+[field image]
+	`Item/FieldImage.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	14	0
+
+[layer variation]
+	2790
+	`katanac`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`katanab`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	14	0
+
+[layer variation]
+	2790
+	`katanac`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`katanab`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`KATANA_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`katana`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		5000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		2
+	[restore]
+		`hp`
+		`%`	3	0
+	[restore]
+		`mp`
+		`%`	2	0
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		3
+	[stat]
+		`physical attack`
+		`+`	35
+	[stat]
+		`physical defense`
+		`+`	35
+	[stat]
+		`magical attack`
+		`+`	35
+	[stat]
+		`magical defense`
+		`+`	35
+[/then]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

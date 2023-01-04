@@ -1,0 +1,62 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`get random()`	0.0	100.0
+	
+		[think]
+			[last result]
+				`<=`	33
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	2
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					2
+			[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	66
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	5
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				5
+		[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	99
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	13
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				13
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

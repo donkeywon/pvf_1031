@@ -1,0 +1,44 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Howling.ani`
+	[SUB ANI]
+		`../Animation/Howling_e.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`BIGGOLEM_ATK_02`	2
+		`FRANKEN_ELEC`	3
+	[/SOUND]
+	[SPEECH]
+		`再刺激我的话，后果自负！`	0	5
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		5	1500
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		500	1700	100	100	0	0	0
+[/BEHAVIOR]

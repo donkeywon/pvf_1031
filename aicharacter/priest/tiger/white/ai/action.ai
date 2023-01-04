@@ -1,0 +1,66 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[hp]
+			`%>=`	70
+		[true]
+	
+		[think]
+			[void]
+				`number of in attack area()`	350.0	350.0	250.0	250.0
+				`friend`
+				`passive object`	24020
+			[true]
+		
+			[think]
+				[last result]
+					`<`	3
+				[false]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	30
+					[false]
+					[return]
+						`counter`
+					[true]
+					[return]
+						-1
+				[/think]
+	[true]
+	[think]
+		[void]
+			`is the skill in cooltime()`	39
+		[false]
+		[return]
+			`je_ap`
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	37
+			[false]
+			[return]
+				`wind`
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	70
+				[false]
+				[return]
+					`white_tiger`
+				[true]
+				[return]
+					-1
+			[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[import ai]
+		`White_Action.ai`
+	[/think]
+[/ai pattern]

@@ -1,0 +1,79 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/earthquake_s.ani`
+	[SUB ANI]
+		`../animation/effect/earthquake_charge.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`呃啊啊！永远地呆在地狱里吧~！`	1	100
+	[/SPEECH]
+	[SOUND]
+		`UMTARA_SKILL_02`	0
+		`UMTARA_HAMMER_02`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		800	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9374
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			150	0	0
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		2	500
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		3	4
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		12
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		13
+	[NOW]
+[/BEHAVIOR]

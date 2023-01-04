@@ -1,0 +1,212 @@
+#PVF_File
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[<=]
+			90
+		[%]
+	[/CHECKUP]
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[<=]
+			40
+		[%]
+	[/CHECKUP]
+	[DO PROC BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			56723
+		[LEVEL]
+			0
+		[POS]
+			740	220	0
+		[NO EFFECT]
+		[USE MAP POS]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			56724
+		[LEVEL]
+			0
+		[POS]
+			240	340	0
+		[NO EFFECT]
+		[USE MAP POS]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+	[APPENDAGE]
+		0	
+		[equipment magical defense]
+		[%]
+			1000.0
+		[equipment physical defense]
+		[%]
+			1000.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			56723
+		[LEVEL]
+			0
+		[POS]
+			240	220	0
+		[NO EFFECT]
+		[USE MAP POS]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			56724
+		[LEVEL]
+			0
+		[POS]
+			740	350	0
+		[NO EFFECT]
+		[USE MAP POS]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+	[APPENDAGE]
+		0	
+		[equipment magical defense]
+		[%]
+			1000.0
+		[equipment physical defense]
+		[%]
+			1000.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON DESTROY OBJECT]
+	[WHICH]
+	[DESTROY OBJECT]
+	[CHECKUP]
+		[IS INDEX]
+			56723
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[ON DESTROY OBJECT]
+	[WHICH]
+	[DESTROY OBJECT]
+	[CHECKUP]
+		[IS INDEX]
+			56724
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		2
+	[OFF]
+	[TRIGGER]
+		4
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		3
+	[OFF]
+	[TRIGGER]
+		5
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			56724
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=<]
+		0
+	[DO PROC BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			56723
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=<]
+		0
+	[DO PROC BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[REMOVE APPENDAGE]
+	[equipment magical defense]
+	[REMOVE APPENDAGE]
+	[equipment physical defense]
+	[TRIGGER]
+		4
+	[OFF]
+	[TRIGGER]
+		5
+	[OFF]
+	[TRIGGER]
+		2
+	[ON]
+	[TRIGGER]
+		3
+	[ON]
+[/BEHAVIOR]

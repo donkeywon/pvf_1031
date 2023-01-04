@@ -1,0 +1,52 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/bomb.ani`
+	[SUB ANI]
+		`../animation/skull/bomb.ani`	0	0
+		`../animation/skullglow/bomb.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`VILLAGEWOMAN1_ATK_02`	6
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10209
+		[PARTICLE FILENAME]
+			`../Particle/summon.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	120
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1000	2
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		5
+[/BEHAVIOR]

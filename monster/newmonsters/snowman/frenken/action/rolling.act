@@ -1,0 +1,49 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Rolling.ani`
+	[SUB ANI]
+		`../Animation/Rolling_e.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`FRANKEN_ROLLING`	2
+		`FRANKEN_ROLLING`	14
+		`FRANKEN_ROLLING`	24
+		`FRANKEN_ROLLING`	36
+		`FRANKEN_ROLLING`	51
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		5	2000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		30	30
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			800
+		[Y AXIS]
+		[RANDOM SELECT]
+			100	-100
+		[/RANDOM SELECT]
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

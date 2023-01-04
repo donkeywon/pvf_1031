@@ -1,0 +1,75 @@
+#PVF_File
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[ON SET ACTION]
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[OFF]
+	[DIM]
+		`position`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[DO PROC BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`position`	
+		[=]
+			`position`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`position`	
+		[=>]
+			10
+	[/IF]
+	[DO PROC BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		2	3
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		1
+	[NOW]
+	[DIM]
+		`position`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		0
+	[NOW]
+	[DIM]
+		`position`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]

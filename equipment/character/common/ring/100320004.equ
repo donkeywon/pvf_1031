@@ -1,0 +1,99 @@
+#PVF_File
+
+[name]
+	`时空主宰者戒指`
+
+[name2]
+	``
+
+[basic explain]
+	`被攻击时， 有5%%的几率重置自身技能的冷却时间， 但只能重置一个剩余冷却时间最短的技能。`
+
+[detail explain]
+	`被攻击时， 有5%%几率重置自身技能的冷却时间， 但只能重置一个剩余冷却时间最短的技能。
+(冷却时间剩60秒以上的技能无效)`
+
+[grade]
+	75
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[physical attack]
+	45
+
+[magical attack]
+	45
+
+[price]
+	90000
+
+[value]
+	72000
+
+[creation rate]
+	250
+
+[equipment magical defense]
+	2656	2464
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	86
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	21
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[skill cooltime reset]
+		0
+		``	1
+	[speech on]
+		0	2000
+		`时空主宰者`
+	[/speech on]
+[/then]
+
+[set item master]
+	100300002
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

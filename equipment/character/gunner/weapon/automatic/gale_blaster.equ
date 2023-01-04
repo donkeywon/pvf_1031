@@ -1,0 +1,158 @@
+#PVF_File
+
+[name]
+	`爆裂者 - 血鹰`
+
+[name2]
+	`Gale Blaster`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入出血状态。
+穿刺力 +15%%`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入出血状态10秒； 出血状态下的敌人， 每0.5秒受到105点伤害。 (若敌人高于Lv50， 则减少进入异常状态的几率； 反之， 则增加几率)
+穿刺力 +15%%`
+
+[grade]
+	56
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	50
+
+[magical attack]
+	38
+
+[stuck]
+	1
+
+[price]
+	89600
+
+[repair price]
+	75264
+
+[value]
+	71680
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	338	291
+
+[equipment magical attack]
+	496	426
+
+[separate attack]
+	311	208
+
+[skill levelup]
+	`[gunner]`	59	1
+	`[at gunner]`	59	1
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/automatic.img`	29
+
+[field image]
+	`Item/field_weapon.img`	2
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	2	6
+
+[layer variation]
+	2790
+	`autoc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`autob`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	2	6
+
+[layer variation]
+	2790
+	`at_autoc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_autob`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	1500
+
+[item group name]
+	`automatic`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		15000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[probability]
+		3
+	[active status]
+		`bleeding`	50	2100
+[/then]
+
+[int data]
+	-1	-1	-1	-1	-1	-1	-1	-1	40	-1
+[/int data]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

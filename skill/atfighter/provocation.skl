@@ -1,0 +1,149 @@
+#PVF_File
+
+[name]
+	`挑衅`
+
+[name2]
+	`Provocation`
+
+[explain]
+	`向自身周围的敌人发出挑衅， 使被挑衅的敌人变得异常兴奋并先手攻击施放者。
+被挑衅状态下的敌人， 会降低命中率和异常状态抗性。`
+
+[basic explain]
+	`向自身周围的敌人发出挑衅， 使被挑衅的敌人变得异常兴奋并先手攻击施放者。`
+
+[executable states]
+	8
+[/executable states]
+
+[feature skill index]
+	142
+
+[purchase cost]
+	30
+[/purchase cost]
+
+[required level]
+	35
+
+[required level range]
+	3
+
+[type]
+	`[active]`
+
+[skill class]
+	2
+
+[maximum level]
+	20
+
+[growtype maximum level]
+	0	0	0	10	0	0
+
+[skill fitness growtype]
+	3
+[/skill fitness growtype]
+
+[durability decrease rate]
+	30
+
+[icon]
+	`Character/Fighter/Effect/SkillIcon.img`	76
+	`Character/Fighter/Effect/SkillIcon.img`	77
+
+[command]
+	{6=`(DOWN)`}
+	{8=`,`}
+	{6=`(DOWN)`}
+	{8=`,`}
+	{6=`(BUFF)`}
+[/command]
+
+[command key explain]
+	`操作指令 : ↓↓ + Space`
+
+[skill command advantage]
+	10	20
+
+[dungeon]
+	[consume MP]
+		60	252
+	[casting time]
+		500	500
+	[cool time]
+		30000	30000
+	[level info]
+		9
+		10000	400	50	0	0	0	0	0	4
+		11111	433	67	0	0	0	0	0	8
+		12222	467	83	0	0	0	0	0	12
+		13333	500	100	0	0	0	0	0	16
+		14444	533	117	0	0	0	0	0	20
+		15556	567	133	0	0	0	0	0	24
+		16667	600	150	0	0	0	0	0	28
+		17778	633	167	0	0	0	0	0	32
+		18889	667	183	0	0	0	0	0	36
+		20000	700	200	0	0	0	0	0	40
+		21111	733	217	0	0	0	0	0	44
+		22222	767	233	0	0	0	0	0	48
+		23333	800	250	0	0	0	0	0	52
+		24444	833	267	0	0	0	0	0	56
+		25556	867	283	0	0	0	0	0	60
+		26667	900	300	0	0	0	0	0	64
+		27778	933	317	0	0	0	0	0	68
+		28889	967	333	0	0	0	0	0	72
+		30000	1000	350	0	0	0	0	0	76
+		31111	1033	367	0	0	0	0	0	80
+	[/level info]
+[/dungeon]
+
+[pvp]
+	[level info]
+		9
+		5000	400	100	0	0	0	0	0	4
+		5556	433	111	0	0	0	0	0	8
+		6111	467	122	0	0	0	0	0	12
+		6667	500	133	0	0	0	0	0	16
+		7222	533	144	0	0	0	0	0	20
+		7778	567	156	0	0	0	0	0	24
+		8334	600	167	0	0	0	0	0	28
+		8889	633	178	0	0	0	0	0	32
+		9445	667	189	0	0	0	0	0	36
+		10000	700	200	0	0	0	0	0	40
+		10556	733	211	0	0	0	0	0	44
+		11111	767	222	0	0	0	0	0	48
+		11667	800	233	0	0	0	0	0	52
+		12222	833	244	0	0	0	0	0	56
+		12778	867	256	0	0	0	0	0	60
+		13334	900	267	0	0	0	0	0	64
+		13889	933	278	0	0	0	0	0	68
+		14445	967	289	0	0	0	0	0	72
+		15000	1000	300	0	0	0	0	0	76
+		15556	1033	311	0	0	0	0	0	80
+	[/level info]
+[/pvp]
+
+[death tower]
+[/death tower]
+
+[warroom]
+[/warroom]
+
+[level property]
+	1	99
+	`效果范围 : <int>px
+持续时间 : <int>秒
+减少命中率 : <int>%%
+减少异常状态抗性 : <int>`
+	-1	1	1.0
+	-1	0	0.001
+	-1	2	0.1
+	-1	8	1.0
+[/level property]
+
+[skill preloading image]
+	`Character/Fighter/Effect/Provocation.img`
+	`Character/Fighter/Effect/Provocationed.img`
+[/skill preloading image]

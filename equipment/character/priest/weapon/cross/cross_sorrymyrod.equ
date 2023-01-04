@@ -1,0 +1,156 @@
+#PVF_File
+
+[name]
+	`席蒿待罪`
+
+[name2]
+	`I Artemisia Guilt`
+
+[basic explain]
+	`施放技能时， 有10%%的几率使自身增加50点体力和精神， 效果持续10秒。
+[厄运之轮]施放时间 -50%%`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical defense]
+	53
+
+[magical attack]
+	42
+
+[magical defense]
+	53
+
+[cast speed]
+	20
+
+[need material]
+	3285	1200
+
+[price]
+	0
+
+[repair price]
+	83328
+
+[value]
+	79360
+
+[equipment physical attack]
+	572	524
+
+[equipment magical attack]
+	543	498
+
+[equipment physical defense]
+	620	610
+
+[equipment magical defense]
+	620	610
+
+[separate attack]
+	360	243
+
+[skill levelup]
+	`[priest]`	53	1
+	`[priest]`	74	2
+	`[priest]`	45	2
+	`[priest]`	121	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/cross.img`	55
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	3	1
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		15000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		10
+	[stat]
+		`magical defense`
+		`+`	50
+	[stat]
+		`physical defense`
+		`+`	50
+[/then]
+
+[skill data up]
+	`[priest]`	115	`[all]`	`[static]`	0	`%`	-50
+[/skill data up]
+
+[routing priority]
+	`priest`	1
+	`priest`	4
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

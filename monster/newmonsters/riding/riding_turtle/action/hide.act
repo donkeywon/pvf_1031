@@ -1,0 +1,46 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Hide.ani`
+	[SUB ANI]
+		`../Animation/Fire/Hide.ani`	0	1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		6000	
+		[hp regen rate]
+		[%]
+			100.0
+		[mp regen rate]
+		[%]
+			100.0
+		[hit recovery]
+		[%]
+			100.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CASTING]
+		6000	2
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[SIT]
+	[NOW]
+[/BEHAVIOR]

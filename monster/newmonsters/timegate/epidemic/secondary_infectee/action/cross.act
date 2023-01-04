@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/cross.ani`
+	[SUB ANI]
+		`../Animation/MilitiamanBlood1.ani`	0	1
+		`../Animation/cross_effect.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`呃啊啊啊！！`	8	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8997
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			178	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

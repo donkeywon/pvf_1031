@@ -1,0 +1,145 @@
+#PVF_File
+
+[name]
+	`素喃订制铁指虎`
+
+[name2]
+	`找不到代码name2_29162`
+
+[basic explain]
+	`暴击伤害 +7%%
+无法进行分解。`
+
+[grade]
+	52
+
+[attach type]
+	`[trade]`
+
+[item group name]
+	`knuckle`
+
+[rarity]
+	3
+
+[weight]
+	1900
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[minimum level]
+	48
+
+[icon]
+	`Item/weapon/fighter/knuckle.img`	86
+
+[icon mark]
+	`Item/IconMark.img`	52
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[sub type]
+	0
+
+[durability]
+	39
+
+[need material]
+	3323	40
+
+[value]
+	66560
+
+[cool time]
+	10000
+
+[magical attack]
+	36
+
+[equipment physical attack]
+	460	422
+
+[equipment magical attack]
+	557	511
+
+[separate attack]
+	287	192
+
+[attack speed]
+	100
+
+[cast speed]
+	70
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	7
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	1	7
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	7
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]

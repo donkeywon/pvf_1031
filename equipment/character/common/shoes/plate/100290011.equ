@@ -1,0 +1,107 @@
+#PVF_File
+
+[name]
+	`尼尔巴斯的钛钢长靴`
+
+[name2]
+	``
+
+[basic explain]
+	`HP为50%%以下时， 可以增加15点的力量和智力。
+HP为50%%起， 每减少10%%的HP可以增加15点的力量和智力。
+最多可增加75点的力量和智力。`
+
+[grade]
+	68
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	64
+
+[physical attack]
+	17
+
+[physical defense]
+	19
+
+[magical attack]
+	17
+
+[move speed]
+	55
+
+[price]
+	61200
+
+[repair price]
+	51408
+
+[value]
+	48960
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	1500	1400
+
+[Force Result Item Rule]
+	1	0
+
+[icon]
+	`Item/new_equipment/06_plate/shoes/plate_shoes.img`	11
+
+[field image]
+	`Item/field_equip.img`	19
+
+[equipment type]
+	`[shoes]`	19
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	2200
+
+[item group name]
+	`mt shoes`
+
+[cool time]
+	10000
+
+[if]
+	[change status in range]
+		`hp`	50	10
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[apply status in range]
+		`physical attack`
+		`+`	15	75
+	[apply status in range]
+		`magical attack`
+		`+`	15	75
+[/then]
+
+[set item master]
+	15667
+
+[icon mark]
+	`Item/IconMark.img`	66

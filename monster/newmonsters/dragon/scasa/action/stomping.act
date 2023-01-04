@@ -1,0 +1,55 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/ShoulderB/ShoulderB_Stomping.ani`
+	[SUB ANI]
+		`../Animation/ArmB/ArmB_Stomping.ani`	0	2
+		`../Animation/FingerB/FingerB_Stomping.ani`	0	3
+		`../Animation/Neck4/Neck4_Stomping.ani`	0	4
+		`../Animation/Neck3/Neck3_Stomping.ani`	0	5
+		`../Animation/Neck2/Neck2_Stomping.ani`	0	6
+		`../Animation/Neck1/Neck1_Stomping.ani`	0	7
+		`../Animation/Jaw/Jaw_Stomping.ani`	0	8
+		`../Animation/Head/Head_Stomping.ani`	0	9
+		`../Animation/Shoulder/Shoulder_Stomping.ani`	0	10
+		`../Animation/Arm/Arm_Stomping.ani`	0	11
+		`../Animation/Finger/Finger_Stomping.ani`	0	12
+	[/SUB ANI]
+	[SOUND]
+		`SKASA_ATK_01`	7
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8700
+		[PARTICLE FILENAME]
+			`../Particle/SlaveofSirocoManShockWave.ptl`
+		[LEVEL]
+			0
+		[POS]
+			300	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8147
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			300	0	0
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		1	1000
+[/BEHAVIOR]

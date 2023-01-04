@@ -1,0 +1,170 @@
+#PVF_File
+
+[name]
+	`闪刀 - 斩影刃`
+
+[name2]
+	`Shadow Cutting Sword`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入失明状态。
+攻击速度 +1%%`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入失明状态7秒， 在决斗场时效果持续3.5秒； 失明状态下， 减少90%%视野和20%%命中率。 (若敌人高于Lv55， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击速度 +1%%`
+
+[grade]
+	59
+
+[rarity]
+	2
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[physical attack]
+	38
+
+[magical attack]
+	57
+
+[attack speed]
+	90
+
+[cast speed]
+	40
+
+[stuck]
+	1
+
+[price]
+	82600
+
+[repair price]
+	69384
+
+[value]
+	66080
+
+[equipment physical attack]
+	483	467
+
+[equipment magical attack]
+	533	517
+
+[separate attack]
+	256	173
+
+[physical critical hit]
+	2
+
+[skill levelup]
+	`[swordman]`	5	1
+	`[swordman]`	82	1
+	`[demonic swordman]`	5	1
+	`[demonic swordman]`	82	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/swordman/katana.img`	42
+
+[field image]
+	`Item/FieldImage.img`	11
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	10	2
+
+[layer variation]
+	2790
+	`katanac`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`katanab`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	10	2
+
+[layer variation]
+	2790
+	`katanac`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`katanab`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`KATANA_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`katana`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		12600
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[active status]
+		`blind`	55	90	20
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

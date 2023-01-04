@@ -1,0 +1,134 @@
+#PVF_File
+
+[name]
+	`镇魂曲 : 幽游板甲护肩`
+
+[name2]
+	``
+
+[basic explain]
+	`施放[狂乱锤击]、 [圣光球]、 [爆炎 · 波动剑]时， 有10%%的几率不受冷却时间影响。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	28
+
+[physical defense]
+	31
+
+[magical attack]
+	28
+
+[MP MAX]
+	200
+
+[price]
+	102000
+
+[repair price]
+	85680
+
+[value]
+	81600
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	3720	3480
+
+[icon]
+	`item/new_equipment/06_plate/neck/plate_neck.img`	10
+
+[field image]
+	`Item/field_equip.img`	17
+
+[equipment type]
+	`[shoulder]`	21
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	3200
+
+[item group name]
+	`mt shoulder`
+
+[cool time]
+	10000
+
+[set item master]
+	100090009
+
+[if]
+	[event use skill]
+		`priest`	28
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[skill data up]
+		`[priest]`	28	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`priest`	49
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[skill data up]
+		`[priest]`	49	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`swordman`	22
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[skill data up]
+		`[swordman]`	22	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

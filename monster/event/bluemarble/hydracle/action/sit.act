@@ -1,0 +1,20 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Sit.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/WaterPtl.ptl`	30	0	30
+	[PARTICLE]
+		`../particle/WaterPtl.ptl`	-10	0	30
+[/BEHAVIOR]

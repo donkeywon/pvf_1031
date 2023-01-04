@@ -1,0 +1,62 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/powerpunch.ani`
+	[SUB ANI]
+		`../animation/powerpunch_e.ani`	0	1
+		`../animation/powerpunch_e1.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`我要摧毁你……`	0	100
+	[/SPEECH]
+	[SOUND]
+		`FUHRMAN_NC_PUNCH_READY`	0
+		`FUHRMAN_NC_PUNCH`	17
+		`FUHRMAN_SKILL_01`	18
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[MONSTER]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PULL APPENDAGE EX]
+		[SPEED]
+			3.5	3.0
+		[VALIDTIME]
+			1500
+		[USE TARGET]
+			0
+		[OFFSET POS]
+			0	0
+		[MIN DISTANCE]
+			10
+	[/PULL APPENDAGE EX]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		17	17
+	[DO BEHAVIOR]
+	[TARGET]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		100	100	100	255	255	255	255
+[/BEHAVIOR]

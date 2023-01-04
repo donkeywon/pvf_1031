@@ -1,0 +1,23 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Destroy.ani`
+	[SUB ANI]
+		`../Animation/Destroy_Bone.ani`	0	-1
+		`../Animation/Destroy_High.ani`	0	-2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Damage.ptl`	0	-10	40
+[/BEHAVIOR]

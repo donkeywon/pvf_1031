@@ -1,0 +1,114 @@
+#PVF_File
+
+[name]
+	`游龙之魂战靴`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 有2%%的几率使队员的攻击速度、 移动速度和施放速度各增加5%%， 效果持续20秒。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	21
+
+[magical attack]
+	21
+
+[magical defense]
+	23
+
+[move speed]
+	70
+
+[price]
+	59500
+
+[repair price]
+	49980
+
+[value]
+	47600
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	1116	1044
+
+[icon]
+	`item/new_equipment/03_leather/shoes/leather_shoes.img`	10
+
+[field image]
+	`Item/FieldImage.img`	4
+
+[equipment type]
+	`[shoes]`	17
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	20
+
+[weight]
+	900
+
+[item group name]
+	`lt shoes`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[stat]
+		`move speed`
+		`+`	50
+	[stat]
+		`cast speed`
+		`+`	50
+	[stat]
+		`attack speed`
+		`+`	50
+[/then]
+
+[set item master]
+	100060016
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

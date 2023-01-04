@@ -1,0 +1,33 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Shoot.ani`
+	[SOUND]
+		`R_SG_GUN_SHOT`	1
+		`R_GUN_HIT`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8200
+		[PARTICLE FILENAME]
+			`../Particle/Bullet.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	72
+	[/CREATE PASSIVEOBJECT]
+	[PARTICLE]
+		`../particle/shell.ptl`	35	0	72
+[/BEHAVIOR]

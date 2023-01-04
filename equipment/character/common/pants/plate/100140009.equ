@@ -1,0 +1,134 @@
+#PVF_File
+
+[name]
+	`镇魂曲 : 幽游板甲护腿`
+
+[name2]
+	``
+
+[basic explain]
+	`施放[疾空旋风破]、 [忏悔之锤]、 [邪光波动阵]时， 有12%%的几率不受冷却时间影响。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	35
+
+[physical defense]
+	39
+
+[magical attack]
+	35
+
+[MP MAX]
+	250
+
+[price]
+	119000
+
+[repair price]
+	99960
+
+[value]
+	95200
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	4650	4350
+
+[icon]
+	`item/new_equipment/06_plate/pants/plate_pants.img`	10
+
+[field image]
+	`Item/field_equip.img`	16
+
+[equipment type]
+	`[pants]`	22
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	50
+
+[weight]
+	4100
+
+[item group name]
+	`mt pants`
+
+[cool time]
+	10000
+
+[set item master]
+	100090009
+
+[if]
+	[event use skill]
+		`priest`	5
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		12
+	[skill data up]
+		`[priest]`	5	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`priest`	74
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		12
+	[skill data up]
+		`[priest]`	74	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`swordman`	57
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		12
+	[skill data up]
+		`[swordman]`	57	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

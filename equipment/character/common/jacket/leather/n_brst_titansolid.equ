@@ -1,0 +1,158 @@
+#PVF_File
+
+[name]
+	`(旧) 泰坦的蛇眼胸甲`
+
+[name2]
+	`Titan's Solid Breast`
+
+[flavor text]
+	`单个人的强大， 不是我追求的强大！！  --阿登高地的守卫队长比尔莫兹`
+
+[grade]
+	55
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	24
+
+[magical attack]
+	24
+
+[magical defense]
+	26
+
+[price]
+	55000
+
+[repair price]
+	44000
+
+[value]
+	44000
+
+[equipment physical defense]
+	1512	1368
+
+[icon]
+	`Item/common/coat.img`	104
+
+[field image]
+	`Item/FieldImage.img`	0
+
+[equipment type]
+	`[coat]`	20
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	33
+
+[weight]
+	1900
+
+[item group name]
+	`lt coat`
+
+[cool time]
+	10000
+
+[item aura]
+	`equipment physical defense`
+	`+`	1000	300
+
+[set name]
+	`巨人悲叹之皮甲  套装`
+
+[set item]
+	10492	12491	18487
+[/set item]
+
+[set ability]
+	[physical defense]
+		60
+	[if]
+		[attack condition]
+			`critical`
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[add absolute defense percent]
+			`all`	30
+	[/then]
+	[fullset basic explain]
+		`被暴击时自身伤害 -30%%
+被攻击时， 有2%%的几率召唤出泰坦、 歌利亚、 阿特拉斯中的一个。`
+	[fullset detail explain]
+		`被暴击时自身伤害 -30%%
+被攻击时， 有2%%的几率召唤出Lv50的泰坦、 歌利亚、 阿特拉斯中的一个协助召唤者攻击敌人， 召唤的怪物存在100秒。 (召唤的怪物只能同时存在1只， 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失)`
+	[if]
+		[cooltime]
+			150000
+		[hit]
+			1
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[duration]
+				100000
+			[reduce duration to human armor at pvp module]
+				50
+			[probability]
+				2
+			[summon monster]
+				60105	50	1
+			[then probability]
+				35.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				2
+			[summon monster]
+				60106	50	1
+			[then probability]
+				35.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				2
+			[summon monster]
+				60107	50	1
+			[then probability]
+				30.0
+		[/then]
+	[/multiple then]
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

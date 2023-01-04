@@ -1,0 +1,74 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Smoke.ani`
+	[SUB ANI]
+		`../Animation/Smoke2.ani`	0	0
+		`../Animation/Smoke3.ani`	0	0
+		`../Animation/Smoke4.ani`	0	0
+		`../Animation/Smoke5.ani`	0	0
+		`../Animation/Smoke6.ani`	0	0
+		`../Animation/Smoke7.ani`	0	0
+		`../Animation/Smoke8.ani`	0	0
+		`../Animation/Smoke9.ani`	0	0
+		`../Animation/Smoke10.ani`	0	0
+		`../Animation/Smoke11.ani`	0	0
+		`../Animation/Smoke12.ani`	0	0
+		`../Animation/Smoke13.ani`	0	0
+		`../Animation/Smoke14.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Smoke.ptl`	180	0	10
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Smoke.ptl`	-180	0	10
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Smoke.ptl`	0	50	10
+	[PARTICLE]
+		`../particle/Smoke.ptl`	0	-50	10
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

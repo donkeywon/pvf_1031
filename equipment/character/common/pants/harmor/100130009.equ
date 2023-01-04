@@ -1,0 +1,119 @@
+#PVF_File
+
+[name]
+	`星云迷踪护腿`
+
+[name2]
+	``
+
+[basic explain]
+	`被击时， 有10%%的几率使200px范围内的敌人进入失明状态。`
+
+[detail explain]
+	`被击时， 有10%%的几率使200px范围内的敌人进入失明状态3秒； 失明状态下的敌人， 会减少90%%的视野和20%%的命中率。 (若敌人高于Lv85， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	39
+
+[physical defense]
+	35
+
+[magical attack]
+	28
+
+[price]
+	102000
+
+[repair price]
+	85680
+
+[value]
+	81600
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	3720	3480
+
+[skill levelup]
+	`[gunner]`	71	3
+	`[at gunner]`	71	3
+	`[fighter]`	99	2
+	`[at fighter]`	119	2
+	`[swordman]`	79	3
+	`[priest]`	125	3
+	`[demonic swordman]`	79	3
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/05_harmor/pants/harmor_pants.img`	10
+
+[field image]
+	`Item/field_equip.img`	11
+
+[equipment type]
+	`[pants]`	21
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	34
+
+[weight]
+	2900
+
+[item group name]
+	`ha pants`
+
+[cool time]
+	10000
+
+[if]
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`all enemy`	200
+	[duration]
+		3000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		10
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`blind`	85	90	20
+[/then]
+
+[set item master]
+	100080009
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

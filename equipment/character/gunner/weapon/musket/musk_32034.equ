@@ -1,0 +1,254 @@
+#PVF_File
+
+[name]
+	`UM-0 终结者步枪`
+
+[name2]
+	`找不到代码name2_32034`
+
+[basic explain]
+	`施放[G-14手雷]、 [G-35L感电手雷]、 [G-18C冰冻手雷]时， 有10%%的几率增加1枚填装数。
+无法进行分解。`
+
+[detail explain]
+	`施放[G-14手雷]、 [G-35L感电手雷]、 [G-18C冰冻手雷]时， 有10%%的几率增加1枚填装数。 (在决斗场中几率为2%%)
+无法进行分解。`
+
+[grade]
+	64
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	43
+
+[magical attack]
+	65
+
+[need material]
+	3336	370
+
+[repair price]
+	96768
+
+[value]
+	92160
+
+[equipment physical attack]
+	607	553
+
+[equipment magical attack]
+	528	481
+
+[separate attack]
+	360	242
+
+[skill levelup]
+	`[gunner]`	56	1
+	`[gunner]`	57	1
+	`[gunner]`	58	1
+	`[at gunner]`	56	1
+	`[at gunner]`	57	1
+	`[at gunner]`	58	1
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/musket.img`	69
+
+[field image]
+	`Item/field_weapon.img`	3
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	20	0
+
+[layer variation]
+	2790
+	`musketc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`musketb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	20	0
+
+[layer variation]
+	2790
+	`at_musketc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_musketb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	2100
+
+[item group name]
+	`musket`
+
+[cool time]
+	10000
+
+[if]
+	[event use skill]
+		`gunner`	57
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[reduce probability to human armor at pvp module]
+		80
+	[skill data up]
+		`[gunner]`	57	`[all]`	`[static]`	0	`+`	1
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`gunner`	56
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		10
+	[reduce probability to human armor at pvp module]
+		80
+	[skill data up]
+		`[gunner]`	56	`[all]`	`[static]`	0	`+`	1
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`gunner`	58
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[reduce probability to human armor at pvp module]
+		80
+	[skill data up]
+		`[gunner]`	58	`[all]`	`[static]`	0	`+`	1
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`at gunner`	57
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[reduce probability to human armor at pvp module]
+		80
+	[skill data up]
+		`[at gunner]`	57	`[all]`	`[static]`	0	`+`	1
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`at gunner`	56
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		10
+	[reduce probability to human armor at pvp module]
+		80
+	[skill data up]
+		`[at gunner]`	56	`[all]`	`[static]`	0	`+`	1
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`at gunner`	58
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[reduce probability to human armor at pvp module]
+		80
+	[skill data up]
+		`[at gunner]`	58	`[all]`	`[static]`	0	`+`	1
+	[/skill data up]
+[/then]
+
+[routing priority]
+	`gunner`	1
+	`at gunner`	1
+	`gunner`	4
+	`at gunner`	4
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

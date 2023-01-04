@@ -1,0 +1,88 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check skill on]
+			37
+		[false]
+		[return str]
+			`aura`
+		[true]
+	
+		[think]
+			[void]
+				`number of in attack area()`	1200.0	1200.0	1200.0	1200.0
+				`friend`
+				`summon`	901
+		
+			[think]
+				[last result]
+					`<=`	0.0
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`summon1`
+					[true]
+					[return]
+						-1
+					[false]
+					[return str]
+						`summon1`
+				[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	1200.0	1200.0	1200.0	1200.0
+			`friend`
+			`summon`	902
+	
+		[think]
+			[last result]
+				`<=`	0.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`summon2`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`summon2`
+			[/think]
+	[false]
+	[think]
+		[void]
+			`check random()`	50	100
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`fire`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`fire`
+		[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`frost`
+		[true]
+		[return]
+			-1
+		[false]
+		[return str]
+			`frost`
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

@@ -1,0 +1,71 @@
+#PVF_File
+
+[width]
+	1	1
+
+[floating height]
+	0
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	100
+
+[basic motion]
+	`Animation/basic.ani`
+
+[etc motion]
+	`Animation/belzebuite_overskill_circle_of_magic_1.ani`
+	`Animation/belzebuite_overskill_circle_of_magic_2.ani`
+	`Animation/belzebuite_overskill_circle_of_magic_3.ani`
+[/etc motion]
+
+[attack info]
+	`AttackInfo/hell_raid.atk`
+
+[add particles]
+	[particle]
+		[file]
+			`Particle/belzebuite_overskill_part.ptl`
+		[create delay]
+			200
+	[/particle]
+	[particle]
+		[file]
+			`Particle/belzebuite_overskill_inazuma.ptl`
+		[create delay]
+			200
+	[/particle]
+	[particle]
+		[file]
+			`Particle/belzebuite_overskill_exp.ptl`
+		[create delay]
+			1200
+		[create sound]
+			`BELZEBUITE_SKILL_CRASH`
+	[/particle]
+	[particle]
+		[file]
+			`Particle/belzebuite_overskill_dark.ptl`
+		[create delay]
+			200
+	[/particle]
+[/add particles]
+
+[sound category]
+	`[after object create]`
+	`BELZEBUITE_SKILL_01`	-1
+[/sound category]
+
+[int data]
+	1400	200	300	7
+[/int data]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	10000
+[/object destroy condition]

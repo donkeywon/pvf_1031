@@ -1,0 +1,78 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/conter_shield.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[AI CHARACTER]
+	[CHECKUP]
+		[IS INDEX]
+			20429
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			8000
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		0	
+		[equipment physical defense]
+		[%]
+			500.0
+		[hp regen rate]
+		[%]
+			100.0
+		[fire element]
+		[%]
+			100.0
+		[water element]
+		[%]
+			100.0
+		[dark element]
+		[%]
+			100.0
+		[light element]
+		[+]
+			100.0
+		[stuck]
+		[%]
+			100.0
+		[hit recovery]
+		[%]
+			500.0
+		[equipment magical defense]
+		[%]
+			500.0
+		[all active status resistance]
+		[%]
+			100.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

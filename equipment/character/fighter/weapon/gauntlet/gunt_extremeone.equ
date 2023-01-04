@@ -1,0 +1,220 @@
+#PVF_File
+
+[name]
+	`暴躁铁拳`
+
+[name2]
+	`Extreme One's Gauntlet`
+
+[basic explain]
+	`攻击时， 有5%%的几率使自身增加30%%的物理攻击力， 效果持续30秒。
+攻击时， 有2%%的几率使敌人进入破甲状态。`
+
+[detail explain]
+	`攻击时， 有6%%的几率使武器耐久度减少1， 并增加30%%的物理攻击力， 效果持续30秒。
+攻击时， 有2%%的几率使敌人进入破甲状态4秒； 破甲状态的敌人， 暂时无法使用护甲且护甲的耐久度消耗增加30倍。 (若敌人高于Lv60， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`世界如此美妙， 我却如此暴躁！ 这样不好， 不好！`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	64
+
+[attack speed]
+	-80
+
+[stuck]
+	-1
+
+[price]
+	111600
+
+[repair price]
+	93744
+
+[value]
+	89280
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	686	629
+
+[equipment magical attack]
+	515	472
+
+[separate attack]
+	360	243
+
+[icon]
+	`Item/weapon/fighter/gauntlet.img`	34
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	2	2
+
+[layer variation]
+	2790
+	`gauntletc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gauntletb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	2	2
+
+[layer variation]
+	2150
+	`at_gauntleta`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_gauntletc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_gauntletx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[war room]`
+		`[dungeon]`
+		`[assault]`
+		`[dead tower]`
+		`[blood system]`
+		`[assault]`
+	[/module]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`equipment physical attack`
+		`%`	30
+	[reduction]
+		`weapon`	1
+[/then]
+
+[if]
+	[module]
+		`[tournament dungeon]`
+	[/module]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`equipment physical attack`
+		`%`	30
+[/then]
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`weapon break`	60	30
+	[active status]
+		`armor break`	60	30
+[/then]
+
+[possible kiri protect]
+
+[need material]
+	2749095	129
+
+[icon mark]
+	`Item/IconMark.img`	68

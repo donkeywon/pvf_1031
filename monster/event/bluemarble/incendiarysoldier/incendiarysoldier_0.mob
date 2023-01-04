@@ -1,0 +1,148 @@
+#PVF_File
+
+[name]
+	`卡勒特纵火兵`
+
+[category]
+	`[human]`
+	`[range combat]`
+	`[close-carefully]`
+[/category]
+
+[ambient sound]
+	`KFIRE_AMB`
+
+[appear sound]
+	`KFIRE_MEET`
+
+[damage sound]
+	`R_KINFANTRY_DMG`
+
+[die sound]
+	`KFIRE_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	90
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	110
+	`[HP MAX]`	`*`	150
+[/ability category]
+
+[level]
+	60	60
+
+[move speed]
+	500	500
+
+[attack speed]
+	500	500
+
+[hit recovery]
+	450	450
+
+[weight]
+	65000	65000
+
+[warlike]
+	30
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[common champion elemental property]
+	`[fire element]`
+	`[water element]`
+	`[dark element]`
+	`[light element]`
+	`[no element]`
+[/common champion elemental property]
+
+[die effect]
+	0	9	0
+
+[face image]
+	`Monster/MonsterFace.img`	284
+
+[waiting action]
+	`Action/Stay_0.act`
+
+[move action]
+	`Action/Move_0.act`
+
+[sit action]
+	`Action/Sit_0.act`
+
+[damage action 1]
+	`Action/Damage1_0.act`
+
+[damage action 2]
+	`Action/Damage2_0.act`
+
+[down action]
+	`Action/Down_0.act`
+
+[overturn action]
+	`Action/Overturn_0.act`
+
+[attack action]
+	`Action/ThrowBomb_0.act`
+	`Action/Reload_0.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack_0.atk`
+	`AttackInfo/Attack_0.atk`
+[/attack info]
+
+[cooltime]
+	13000	10000
+[/cooltime]
+
+[think term]
+	200
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event_0.ai`
+		`ai/DestinationSelect_0.ai`
+		`ai/Action_0.ai`
+		`ai/MoveMethod_0.ai`
+	[/easy]
+	[medium]
+		`ai/Event_0.ai`
+		`ai/DestinationSelect_0.ai`
+		`ai/Action_0.ai`
+		`ai/MoveMethod_0.ai`
+	[/medium]
+	[hard]
+		`ai/Event_0.ai`
+		`ai/DestinationSelect_0.ai`
+		`ai/Action_0.ai`
+		`ai/MoveMethod_0.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event_0.ai`
+		`ai/DestinationSelect_0.ai`
+		`ai/Action_0.ai`
+		`ai/MoveMethod_0.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event_0.ai`
+		`ai/DestinationSelect_0.ai`
+		`ai/Action_0.ai`
+		`ai/MoveMethod_0.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	300
+
+[keep range distance with target]
+	320	3	10	20
+
+[lie frame]
+	0	0	1	1	2

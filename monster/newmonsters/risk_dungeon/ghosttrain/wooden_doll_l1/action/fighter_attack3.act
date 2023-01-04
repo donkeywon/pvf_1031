@@ -1,0 +1,89 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Fighter_Attack3.ani`
+	[SUB ANI]
+		`../Animation/weapon/Fighter_Attack3.ani`	0	0
+		`../Animation/ball/Fighter_Attack3.ani`	0	0
+		`../Animation/ball_eff/Fighter_Attack3.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`LOWKICK_SWING`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`Dcount`	
+		[=]
+			0
+	[/DIM]
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`Dcount`	
+		[=]
+			`Dcount`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[IF]
+		`Dcount`	
+		[>]
+			5
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		4
+	[END]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[ON]
+	[DIM]
+		`Dcount`	
+		[=]
+			0
+	[/DIM]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]

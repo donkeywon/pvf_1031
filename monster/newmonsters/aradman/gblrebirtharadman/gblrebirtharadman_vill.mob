@@ -1,0 +1,181 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`死亡傀儡`
+
+[face image]
+	`Monster/MonsterFace.img`	264
+
+[die effect]
+	0	7	1
+
+[attack sound]
+	`R_ARADMAN_ATK`
+
+[appear sound]
+	`ARADMAN_MEET`
+
+[damage sound]
+	`R_ARADMAN_DMG`
+
+[die sound]
+	`R_ARADMAN_DIE`
+
+[ambient sound]
+	`R_ARADMAN_AMB`
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	180
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	90
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	110
+[/ability category]
+
+[category]
+	`[undead]`
+	`[melee combat]`
+	`[close-carefully]`
+[/category]
+
+[intelligence]
+	70	70	3000
+
+[level]
+	39	39
+
+[dark resistance]
+	30	30
+
+[light resistance]
+	-30	-30
+
+[move speed]
+	300	300
+
+[attack speed]
+	200	200
+
+[cast speed]
+	700	700
+
+[hit recovery]
+	1700	1700
+
+[weight]
+	60000	60000
+
+[sight]
+	350
+
+[targeting nearest]
+	1
+
+[warlike]
+	80
+
+[attack delay]
+	1500
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[lie frame]
+	2	2	2	2	2
+
+[item]
+	3227	800
+[/item]
+
+[common champion drop item]
+[/common champion drop item]
+
+[come in action]
+	`Action/ComeIn.act`	300	150
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/move.act`
+
+[sit action]
+	`Action/sit.act`
+
+[damage action 1]
+	`Action/damage1.act`
+
+[damage action 2]
+	`Action/damage2.act`
+
+[down action]
+	`Action/down.act`
+
+[overturn action]
+	`Action/overturn.act`
+
+[attack action]
+	`Action/Attack2.act`
+	`Action/Buff.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack2.atk`
+	``
+[/attack info]
+
+[cooltime]
+	3000	1000000000
+[/cooltime]
+
+[vision]
+	1000
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[keep distance with target]
+	300
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+[/ai pattern]
+
+[item]
+[/item]
+
+[speech on situation]
+	
+[/speech on situation]

@@ -1,0 +1,66 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is the skill in cooltime()`	54
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	33
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	40
+				[true]
+			
+				[think]
+					[void]
+						`is target in attack area()`	100	100	50	50
+					[false]
+				
+					[think]
+						[void]
+							`is target in attack area()`	250	250	120	120
+						[false]
+						[return]
+							-1
+						[true]
+						[return]
+							`jump_cannon`
+					[/think]
+	[true]
+	[think]
+		[void]
+			`is the skill in cooltime()`	3
+		[true]
+		[return]
+			-1
+		[false]
+		[return]
+			`windmill`
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	500	500	100	100
+		[true]
+		[return]
+			`missle`
+		[false]
+		[return]
+			-1
+	[/think]
+	[/think]
+	[false]
+	[return]
+		`air_buff`
+	[/think]
+	[false]
+	[return]
+		`satlite`
+	[/think]
+[/ai pattern]

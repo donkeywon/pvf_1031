@@ -1,0 +1,119 @@
+#PVF_File
+
+[name]
+	`风华绝世之坠`
+
+[name2]
+	``
+
+[basic explain]
+	`施放技能时， 有5%%的几率使自身进入霸体状态10秒。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[magical attack]
+	34
+
+[magical defense]
+	85
+
+[price]
+	102000
+
+[repair price]
+	81600
+
+[value]
+	81600
+
+[creation rate]
+	250
+
+[equipment magical defense]
+	7440	6960
+
+[icon]
+	`item/new_equipment/08_necklace/necklace.img`	76
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[routing priority]
+[/routing priority]
+
+[if]
+	[casting]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[probability]
+		5
+	[appendage]
+		205
+	[appendage]
+		207
+[/then]
+
+[set name]
+	`风华绝世  首饰`
+
+[set item]
+	100310007	100300007	100320009
+[/set item]
+
+[set ability]
+	[fullset basic explain]
+		`发动首饰的霸体效果后， 在效果持续时间内攻击敌人时， 附加20%%的伤害， 并增加7%%的攻击速度、 施放速度和移动速度。`
+	[if]
+		[my appendage]
+			205
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	20
+	[/then]
+[/set ability]
+
+[icon mark]
+	`Item/IconMark.img`	68

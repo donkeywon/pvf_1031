@@ -1,0 +1,83 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[my level]
+			`is in range()`	1	10
+		[true]
+		[import ai]
+			`ai_pattern1.ai`
+		[false]
+	
+		[think]
+			[my level]
+				`is in range()`	11	20
+			[true]
+			[import ai]
+				`ai_pattern2.ai`
+			[false]
+		
+			[think]
+				[my level]
+					`is in range()`	21	30
+				[true]
+				[import ai]
+					`ai_pattern3.ai`
+				[false]
+			
+				[think]
+					[my level]
+						`is in range()`	31	40
+					[true]
+					[import ai]
+						`ai_pattern4.ai`
+					[false]
+				
+					[think]
+						[my level]
+							`is in range()`	41	50
+						[true]
+						[import ai]
+							`ai_pattern5.ai`
+						[false]
+					
+						[think]
+							[my level]
+								`is in range()`	50	99
+							[true]
+						
+							[think]
+								[set party member]
+									1
+								[true]
+							
+								[think]
+									[check party buff on]
+										`priest`	21
+									[true]
+									[import ai]
+										`ai_pattern6.ai`
+									[false]
+								
+									[think]
+										[void]
+											`is the skill in cooltime()`	21
+										[true]
+										[import ai]
+											`ai_pattern6.ai`
+										[false]
+										[return]
+											13
+									[/think]
+	[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

@@ -1,0 +1,27 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/throw.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8401
+		[PARTICLE FILENAME]
+			`../Particle/Dagger.ptl`
+		[LEVEL]
+			40
+		[POS]
+			20	0	60
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

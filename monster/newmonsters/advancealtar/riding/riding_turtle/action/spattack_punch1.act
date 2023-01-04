@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/spattack/SpAttack_punch1.ani`
+	[SUB ANI]
+		`../Animation/spattack/fire/SpAttack_punch1.ani`	0	1
+		`../Animation/Fire/attack_speed_up_back.ani`	0	1
+		`../Animation/Fire/attack_speed_up_front.ani`	0	2
+		`../Animation/Fire/move_speed_up.ani`	0	3
+	[/SUB ANI]
+	[SOUND]
+		`VOTI_SKILL_03`	0
+	[/SOUND]
+[/MOTION]
+
+[AUTOEND]
+	0
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[START KEYSTROKE MODE]
+		11	15	0	0	4	
+		[DEPENDENT ACTION]
+			11	12	13	14
+	[/START KEYSTROKE MODE]
+[/BEHAVIOR]

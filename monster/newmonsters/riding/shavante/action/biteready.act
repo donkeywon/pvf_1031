@@ -1,0 +1,157 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/BiteReady.ani`
+	[SUB ANI]
+		`../Animation/BiteLayer.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`ICETIGER_BITE_01`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		0
+	[WHICH]
+	[LAST ACTIVE ATTACKSUCCESS]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			300
+		[HP]
+		[>]
+			0
+		[POINT]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[ON]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Y AXIS]
+			0
+		[Z AXIS]
+			0
+		[NOT USE DIRECTION]
+	[/SET SPEED]
+	[SET POS FORCE]
+		[X START]
+			0
+		[X END]
+			0
+		[Y START]
+			0
+		[Y END]
+			0
+		[USE MY BASEPOS]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		2	12
+	[WHICH]
+	[LAST ACTIVE ATTACKSUCCESS]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			300
+		[HP]
+		[>]
+			0
+		[POINT]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			60041
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			40
+		[POS]
+			0	0	0
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		5	5
+	[WHICH]
+	[LAST ACTIVE ATTACKSUCCESS]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			400
+		[HP]
+		[>]
+			0
+		[POINT]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[START KEYSTROKE MODE]
+		4	5	1	1	5
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[WHICH]
+	[LAST ACTIVE ATTACKSUCCESS]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			400
+		[HP]
+		[>]
+			0
+		[POINT]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		12
+[/BEHAVIOR]

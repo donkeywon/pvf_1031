@@ -1,0 +1,154 @@
+#PVF_File
+
+[name]
+	`卡勒特先锋卫队`
+
+[category]
+	`[human]`
+	`[melee combat]`
+	`[close-tough]`
+[/category]
+
+[ambient sound]
+	`KFATMAN_AMB`
+
+[appear sound]
+	`KFATMAN_MEET`
+
+[damage sound]
+	`R_KFATMAN_DMG`
+
+[die sound]
+	`KFATMAN_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	120
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	80
+	`[HP MAX]`	`*`	160
+[/ability category]
+
+[level]
+	50	50
+
+[move speed]
+	800	800
+
+[attack speed]
+	400	400
+
+[hit recovery]
+	800	800
+
+[weight]
+	75000	75000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[common champion elemental property]
+	`[fire element]`
+	`[water element]`
+	`[dark element]`
+	`[light element]`
+	`[no element]`
+[/common champion elemental property]
+
+[die effect]
+	0	1	1
+
+[face image]
+	`Monster/MonsterFace.img`	290
+
+[waiting action]
+	`Action/Stay_1.act`
+
+[move action]
+	`Action/Move_1.act`
+
+[sit action]
+	`Action/Sit_1.act`
+
+[damage action 1]
+	`Action/Damage1_1.act`
+
+[damage action 2]
+	`Action/Damage2_1.act`
+
+[down action]
+	`Action/Down_1.act`
+
+[overturn action]
+	`Action/Overturn_1.act`
+
+[attack action]
+	`Action/Attack_1.act`
+	`Action/Crouch_1.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack_1.atk`
+	`AttackInfo/Attack_1.atk`
+[/attack info]
+
+[cooltime]
+	1500	2000	2000
+[/cooltime]
+
+[think term]
+	200
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event_1.ai`
+		`ai/DestinationSelect_1.ai`
+		`ai/Action_1.ai`
+		`ai/MoveMethod_1.ai`
+	[/easy]
+	[medium]
+		`ai/Event_1.ai`
+		`ai/DestinationSelect_1.ai`
+		`ai/Action_1.ai`
+		`ai/MoveMethod_1.ai`
+	[/medium]
+	[hard]
+		`ai/Event_1.ai`
+		`ai/DestinationSelect_1.ai`
+		`ai/Action_1.ai`
+		`ai/MoveMethod_1.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event_1.ai`
+		`ai/DestinationSelect_1.ai`
+		`ai/Action_1.ai`
+		`ai/MoveMethod_1.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event_1.ai`
+		`ai/DestinationSelect_1.ai`
+		`ai/Action_1.ai`
+		`ai/MoveMethod_1.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	250
+
+[keep range distance with target]
+	250	0	1	100
+
+[warlike]
+	70
+
+[intelligence]
+	70	70	3000
+
+[vision]
+	800
+
+[lie frame]
+	0	1	2	1	2

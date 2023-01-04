@@ -1,0 +1,101 @@
+#PVF_File
+
+[name]
+	`突击队长的增幅戒指`
+
+[basic explain]
+	`武器每12秒进入增幅状态， 效果持续3秒。
+在增幅状态下， 物理攻击力和魔法攻击力增加20%%； 力量和智力增加100点， 体力和精神增加50点。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[physical attack]
+	50
+
+[magical attack]
+	50
+
+[price]
+	84000
+
+[repair price]
+	67200
+
+[value]
+	67200
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	2912	2752
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	99
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		12000	0	500
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		3000
+	[appendage]
+		215
+	[stat]
+		`equipment physical attack`
+		`%`	20
+	[stat]
+		`equipment magical attack`
+		`%`	20
+	[stat]
+		`physical attack`
+		`+`	100
+	[stat]
+		`magical attack`
+		`+`	100
+	[stat]
+		`physical defense`
+		`+`	50
+	[stat]
+		`magical defense`
+		`+`	50
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

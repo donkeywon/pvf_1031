@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Counter2_Howling.ani`
+	[SPEECH]
+		`啊哈！`	1	15
+		`啪！`	1	15
+		`呀哈！`	1	15
+	[/SPEECH]
+	[SOUND]
+		`DRAGONMAN_JAIL`	0
+	[/SOUND]
+	[SUB ANI]
+		`../Animation/EnegyBall_ch2.ani`	0	0
+		`../Animation/EnegyBall_ch2.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8590
+		[PARTICLE FILENAME]
+			`../Particle/EnergyBall.ptl`
+		[LEVEL]
+			60
+		[POS]
+			75	0	78
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

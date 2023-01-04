@@ -1,0 +1,54 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/special.ani`
+	[SUB ANI WITH XYZ]
+		`../animation/special1.ani`	0	-10	0	-12	0
+	[/SUB ANI WITH XYZ]
+	[SUB ANI]
+		`../animation/bling.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`AT5T_ALERT`	0
+		`AT5T_ALERT`	1
+		`AT5T_ALERT`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		1000	1500	1000	250	0	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10266
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			43	192	0
+		[USE MAP POS]
+		[FIX DIRECTION]
+		[LEFT]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,168 @@
+#PVF_File
+
+[name]
+	`恶鬼噬魂槌`
+
+[name2]
+	`Aguiyamara`
+
+[basic explain]
+	`杀死敌人时， 有10%%的几率召唤出1只饥饿僵尸。
+攻击速度 +2%%`
+
+[detail explain]
+	`杀死敌人时， 有10%%的几率召唤出1只Lv50的饥饿僵尸协助召唤者攻击敌人， 饥饿僵尸存在100秒。 (召唤的怪物只能同时存在1只， 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失)
+攻击速度 +2%%`
+
+[flavor text]
+	`含有可以操纵死人的邪恶之力。`
+
+[grade]
+	57
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	59
+
+[attack speed]
+	-10
+
+[stuck]
+	-1
+
+[need material]
+	3260	900
+
+[repair price]
+	73920
+
+[value]
+	70400
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	585	532
+
+[equipment magical attack]
+	505	460
+
+[separate attack]
+	328	220
+
+[skill levelup]
+	`[swordman]`	7	5
+[/skill levelup]
+
+[icon]
+	`Item/weapon/swordman/club.img`	35
+
+[field image]
+	`Item/FieldImage.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	5	0
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	5	0
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`STICK_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3400
+
+[item group name]
+	`club`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		130000
+	[attack success]
+		1
+	[target death]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		100000
+	[reduce duration at pvp module]
+		75
+	[probability]
+		10
+	[summon monster]
+		60114	50	1
+[/then]
+
+[routing priority]
+	`swordman`	1
+	`demonic swordman`	0
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

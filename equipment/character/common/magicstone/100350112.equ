@@ -1,0 +1,201 @@
+#PVF_File
+
+[name]
+	`瘟疫之核`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入中毒状态。
+攻击时， 有3%%的几率使敌人进入出血状态。
+攻击时， 有3%%的几率使敌人进入失明状态。
+攻击时， 有3%%的几率使敌人进入减速状态。
+攻击时， 有3%%的几率使敌人进入眩晕状态。
+攻击时， 有3%%的几率使敌人进入混乱状态。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入中毒状态2秒； 中毒状态下的敌人， 每0.5秒会受到1000点伤害。 (若敌人高于Lv89， 则减少进入异常状态的几率； 反之， 则增加几率)
+攻击时， 有3%%的几率使敌人进入出血状态2秒； 出血状态下的敌人， 每0.5秒会受到1000点伤害。 (若敌人高于Lv89， 则减少进入异常状态的几率； 反之， 则增加几率)
+攻击时， 有3%%的几率使敌人进入失明状态2秒； 失明状态下的敌人， 减少80%%的视野和20%%的命中率。 (若敌人高于Lv89， 则减少进入异常状态的几率； 反之， 则增加几率)
+攻击时， 有3%%的几率使敌人进入减速状态2秒； 减速状态下的敌人， 减少15%%的移动速度和攻击速度。 (若敌人高于Lv89， 则减少进入异常状态的几率； 反之， 则增加几率)
+攻击时， 有3%%的几率使敌人进入眩晕状态2秒。 (若敌人高于Lv89， 则减少进入异常状态的几率； 反之， 则增加几率)
+攻击时， 有3%%的几率使敌人进入混乱状态2秒。 (若敌人高于Lv89， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	51
+
+[physical defense]
+	51
+
+[magical defense]
+	51
+
+[price]
+	89000
+
+[value]
+	71200
+
+[creation rate]
+	0
+
+[icon]
+	`Item/new_equipment/11_magicstone/magicstone.img`	88
+
+[field image]
+	`Item/field_equip.img`	23
+
+[equipment type]
+	`[magic stone]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`magic stone`
+
+[cool time]
+	10000
+
+[magical attack]
+	51
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`poison`	89	4000
+[/then]
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`bleeding`	89	4000
+[/then]
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`stun`	89
+[/then]
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`blind`	89	80	20
+[/then]
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`slow`	89	15	15
+[/then]
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`confuse`	89	1
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

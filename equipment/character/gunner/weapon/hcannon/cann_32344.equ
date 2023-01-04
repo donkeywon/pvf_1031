@@ -1,0 +1,151 @@
+#PVF_File
+
+[name]
+	`查理的火箭炮`
+
+[name2]
+	`找不到代码name2_32344`
+
+[basic explain]
+	`跳跃攻击时， 可以施放怒拳炮弹。
+无法进行分解。`
+
+[grade]
+	49
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	45
+
+[physical attack]
+	51
+
+[price]
+	88200
+
+[repair price]
+	70560
+
+[value]
+	70560
+
+[equipment physical attack]
+	503	428
+
+[equipment magical attack]
+	302	257
+
+[separate attack]
+	269	180
+
+[icon]
+	`item/weapon/gunner/hcannon.img`	67
+
+[field image]
+	`Item/field_weapon.img`	4
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	18	0
+
+[layer variation]
+	2790
+	`hcanc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`hcanb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	18	0
+
+[layer variation]
+	2790
+	`at_hcanc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_hcanb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2800
+
+[item group name]
+	`hcannon`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		100
+	[set my state]
+		1
+	[my state]
+		`jump attack`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		48155	45	0	75	0	0	`punch.ptl`
+	[/passive object]
+[/then]
+
+[routing priority]
+	`gunner`	2
+	`at gunner`	2
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

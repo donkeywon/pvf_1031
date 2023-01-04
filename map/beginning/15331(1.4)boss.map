@@ -1,0 +1,115 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	76
+[/dungeon]
+
+[type]
+	`[boss]`
+
+[greed]
+	`EE EE`
+
+[tile]
+	`Tile/Boss2.til`
+	`Tile/Boss2.til`
+	`Tile/Boss1.til`
+	`Tile/Boss1.til`
+	`Tile/Boss2.til`
+[/tile]
+
+[background animation]
+	[ani info]
+		[filename]
+			`animation/Far.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`animation/Far2.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	18	268	1089	637	1065	634	1039	631
+
+[sound]
+	`M_T_BEGINNING_BOSS`
+	`AMB_DARKSTAGE_01`
+[/sound]
+
+[animation]
+	`Animation/slmid.ani`	`[middleback]`	500	-309	0
+	`Animation/slmid.ani`	`[middleback]`	-140	-309	0
+	`Animation/slmid.ani`	`[middleback]`	481	-205	0
+	`Animation/slmid.ani`	`[middleback]`	-159	-204	0
+	`Animation/Time_Fargear_up_eff.ani`	`[distantback]`	287	-180	0
+	`Animation/Time_Fargear_down_L.ani`	`[distantback]`	950	-27	0
+[/animation]
+
+[passive object]
+	740	282	171	0
+	740	437	178	0
+	743	186	179	0
+	741	315	184	0
+	845	276	213	0
+	845	368	224	0
+	845	373	310	0
+	845	303	341	0
+	845	710	343	0
+	743	913	380	0
+	742	1118	384	0
+	742	1061	391	0
+[/passive object]
+
+[monster]
+	61455	1	0	1056	219	0	1	1	`[fixed]`	`[normal]`
+	61455	1	0	551	234	0	1	1	`[fixed]`	`[normal]`
+	62112	1	0	903	267	0	1	1	`[fixed]`	`[boss]`
+	61455	1	0	600	299	0	1	1	`[fixed]`	`[normal]`
+	61455	1	0	1015	311	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[special passive object]
+	10608	215	210	0	1
+	`[item]`	0	1	-1	-1	-1
+	10608	364	342	0	1
+	`[item]`	0	1	-1	-1	-1	
+[/special passive object]
+
+[NPC]
+	1000	`[left]`	0	0	0
+[/NPC]
+
+[event monster position]
+	249	244	0
+	286	243	0
+	255	261	0
+	279	257	0
+[/event monster position]
+
+[map name]
+	`PVP 无名`

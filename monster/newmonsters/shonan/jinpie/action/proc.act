@@ -1,0 +1,147 @@
+#PVF_File
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[ON SET ACTION]
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[OFF]
+	[DIM]
+		`throw`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9928
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		2
+	[ON]
+	[TRIGGER]
+		3
+	[ON]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[IF]
+		`time`	
+		[+]
+			2000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO PROC BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[ON]
+	[TRIGGER]
+		2
+	[OFF]
+	[DIM]
+		`throw`	
+		[=]
+			`throw`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[IF]
+		`throw`	
+		[>=]
+			7
+	[/IF]
+	[DO PROC BEHAVIOR]
+	[ME]
+		3
+	[DO PROC BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		3
+	[OFF]
+	[ABS CASTING]
+		13000	4
+	[SAY SPEECH WITH POSITION]
+		`好累啊……让我歇会儿……`	0	10
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			0
+	[/DIM]
+	[TRIGGER]
+	[ATTACK]
+		0	0
+	[OFF]
+	[TRIGGER]
+	[ATTACK]
+		9	0
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[ATTACK]
+		0	0
+	[ON]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9930
+		[PARTICLE FILENAME]
+			`../Particle/dummy.ptl`
+		[LEVEL]
+			38
+		[POS]
+			0	0	200
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

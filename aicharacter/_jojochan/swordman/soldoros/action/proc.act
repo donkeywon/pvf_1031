@@ -1,0 +1,174 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/proc.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[FRAME]
+		3	3
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			62159
+		[LEVEL]
+			70
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[USE MY BASEPOS]
+		[SUMMON MARK]
+			1
+	[/SUMMON MONSTER]
+	[SAY SPEECH]
+		`钝器也挺好用的！`
+	[CHANGE AI]
+	[NORMAL]
+		2
+		`blunt.ai`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[FRAME]
+		4	4
+	[DO PROC BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`还是用光剑跟你好好玩吧！`
+	[CHANGE AI]
+	[NORMAL]
+		2
+		`beamsword.ai`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[FRAME]
+		5	5
+	[DO PROC BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9878
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			50
+		[POS]
+			800	300	0
+		[USE MAP POS]
+		[FIX DIRECTION]
+		[NEUTRAL]
+	[/CREATE PASSIVEOBJECT]
+	[SAY SPEECH]
+		`竟然需要召唤到克拉丽斯！ 还不错嘛~不如考虑加入我们？`
+	[CHANGE AI]
+	[NORMAL]
+		2
+		`bsword.ai`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[ON DAMAGE]
+	[DO PROC BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		1
+	[TRIGGER]
+		0
+	[ON]
+	[TRIGGER]
+		1
+	[ON]
+	[TRIGGER]
+		2
+	[ON]
+	[TRIGGER]
+		4
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO PROC BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		1
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO PROC BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[NAME HIDE ON]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+		[MONSTER]
+		[IS OBJECT TYPE]
+		[HP]
+		[>]
+			0
+		[POINT]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		-20
+	[%]
+[/BEHAVIOR]

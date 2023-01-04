@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Lsword00.ani`
+	[SUB ANI]
+		`../Animation/Lsword01.ani`	0	0
+		`../Animation/Lsword_effect01.ani`	0	0
+		`../Animation/Lsword_effect00.ani`	0	0
+		`../Animation/Lsword_effect02.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61767
+		[LEVEL]
+			70
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[SUMMON MARK]
+			0
+	[/SUMMON MONSTER]
+	[DESTROY]
+[/BEHAVIOR]

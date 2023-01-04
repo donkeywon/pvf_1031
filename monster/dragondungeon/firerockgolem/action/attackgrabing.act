@@ -1,0 +1,51 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AttackGrabing/Hold_02_Body.ani`
+	[SUB ANI]
+		`../Animation/AttackGrabing/Hold_03_BodyFire_02.ani`	0	-2
+		`../Animation/AttackGrabing/Hold_03_BodyFire_01.ani`	0	-1
+		`../Animation/AttackGrabing/Hold_02_body_dodge.ani`	0	1
+		`../Animation/AttackGrabing/Hold_00_headt.ani`	0	2
+		`../Animation/AttackGrabing/Hold_01_headt_dodge.ani`	0	3
+		`../Animation/AttackGrabing/Hold_00_Fire_dodge.ani`	0	4
+		`../Animation/AttackGrabing/Hold_00_headb.ani`	0	5
+		`../Animation/AttackGrabing/Hold_00_headb_dodge.ani`	0	6
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`loopTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`loopTime`	
+		[+]
+			10000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		3
+	[NOW]
+[/BEHAVIOR]

@@ -1,0 +1,37 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check key cooltime]
+			`h_combo_start`
+		[false]
+		[return str]
+			`h_combo_start`
+		[true]
+	
+		[think]
+			[void]
+				`get random()`	0.0	100.0
+		
+			[think]
+				[last result]
+					`<=`	50
+				[true]
+				[return str]
+					`back`
+				[false]
+			
+				[think]
+					[last result]
+						`<=`	100
+					[true]
+					[return str]
+						`mah`
+					[false]
+					[return]
+						-1
+				[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

@@ -1,0 +1,31 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/cut.ani`
+	[SUB ANI]
+		`../animation/weapon/cut.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`回旋斩！`	1	10
+	[/SPEECH]
+	[SOUND]
+		`R_WEAPONM_ATK_05`	0
+		`DENDROID_SWISH_01`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		3
+	[NOW]
+[/BEHAVIOR]

@@ -1,0 +1,235 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`胆小的卡斯珀`
+
+[face image]
+	`Monster/MonsterFace.img`	289
+
+[die effect]
+	0	2	1
+
+[ability table]
+	0
+
+[common champion elemental property]
+	`[fire element]`
+	`[water element]`
+	`[dark element]`
+	`[light element]`
+	`[no element]`
+[/common champion elemental property]
+
+[ability category]
+	`[HP MAX]`	`*`	535
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	130
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	130
+[/ability category]
+
+[category]
+	`[hybrid]`
+	`[range combat]`
+	`[close-cafefully]`
+[/category]
+
+[intelligence]
+	90	90	3000
+
+[attack info]
+	`AttackInfo/base.atk`
+	`AttackInfo/base.atk`
+[/attack info]
+
+[attack sound]
+	`R_CASPAR_ATK`
+
+[appear sound]
+	`CASPAR_MEET`
+
+[damage sound]
+	`R_CASPAR_DMG`
+
+[die sound]
+	`CASPAR_DIE`
+
+[level]
+	40	50
+
+[fire resistance]
+	0	0
+
+[water resistance]
+	0	0
+
+[dark resistance]
+	0	0
+
+[light resistance]
+	0	0
+
+[slow resistance]
+	20	20
+
+[freeze resistance]
+	20	20
+
+[poison resistance]
+	0	0
+
+[stun resistance]
+	20	20
+
+[curse resistance]
+	0	0
+
+[blind resistance]
+	20	20
+
+[sleep resistance]
+	0	0
+
+[lightning resistance]
+	0	0
+
+[stone resistance]
+	20	20
+
+[bleeding resistance]
+	0	0
+
+[confuse resistance]
+	20	20
+
+[hold resistance]
+	20	20
+
+[burn resistance]
+	0	0
+
+[move speed]
+	1500	1500
+
+[attack speed]
+	700	700
+
+[hit recovery]
+	800	800
+
+[weight]
+	80000	80000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[keep distance with target]
+	300
+
+[keep range distance with target]
+	300	10	100	100
+
+[change direction by target]
+	1
+
+[last action]
+	`Action/Die.act`
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[lie frame]
+	0	1	2	3	4
+
+[item]
+	3227	800
+[/item]
+
+[action list]
+	`Action/Shoot.act`
+	`Action/Shoot2.act`
+	`Action/Shoot2_1.act`
+	`Action/Shoot2_2.act`
+	`Action/Shoot2_3.act`
+	`Action/Shoot2_4.act`
+	`Action/Shoot2_5.act`
+	`Action/Run.act`
+	`Action/Run2.act`
+[/action list]
+
+[cooltime]
+	1500	4000
+[/cooltime]
+
+[think term]
+	200
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[level of difficulty]
+	[easy]
+		-50	3000
+	[medium]
+		-30	2000
+	[hard]
+		0	0
+	[ultimate]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]

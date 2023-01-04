@@ -1,0 +1,264 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`强袭兵梅隆`
+
+[face image]
+	`Monster/MonsterFace.img`	355
+
+[die effect]
+	0	6	0
+
+[ability table]
+	0
+
+[common champion elemental property]
+	`[fire element]`
+	`[water element]`
+	`[dark element]`
+	`[light element]`
+	`[no element]`
+[/common champion elemental property]
+
+[ability category]
+	`[HP MAX]`	`*`	500
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	80
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	130
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	130
+[/ability category]
+
+[category]
+	`[human]`
+	`[range combat]`
+	`[close-carefully]`
+[/category]
+
+[set damage check]
+	2000
+
+[attack sound]
+	`R_BARMY`
+
+[damage sound]
+	`R_BARMY_DMG`
+
+[die sound]
+	`R_BARMY_DIE`
+
+[fire resistance]
+	0	0
+
+[water resistance]
+	0	0
+
+[dark resistance]
+	0	0
+
+[light resistance]
+	0	0
+
+[freeze resistance]
+	30	30
+
+[stun resistance]
+	30	30
+
+[blind resistance]
+	30	30
+
+[stone resistance]
+	30	30
+
+[sleep resistance]
+	30	30
+
+[hold resistance]
+	30	30
+
+[slow resistance]
+	30	30
+
+[curse resistance]
+	30	30
+
+[confuse resistance]
+	30	30
+
+[lightning resistance]
+	1000	1000
+
+[bleeding resistance]
+	1000	1000
+
+[poison resistance]
+	1000	1000
+
+[burn resistance]
+	0	0
+
+[piercing resistance]
+	0	0
+
+[level]
+	40	50
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1400	1400
+
+[hit recovery]
+	1200	1200
+
+[weight]
+	75000	75000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[warlike]
+	400
+
+[keep distance with target]
+	300
+
+[is direction to move]
+	1
+
+[item]
+	3277	9700	3227	275
+[/item]
+
+[common champion drop item]
+[/common champion drop item]
+
+[add gravity in aerial]
+	1	20.0	-300.0
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[lie frame]
+	2	3	2	3	4
+
+[action list]
+	`Action/Shoot.act`
+	`Action/Run.act`
+	`Action/Shoot2.act`
+	`Action/Run2.act`
+	`Action/Shoot3.act`
+	`Action/Run3.act`
+	`Action/Move2.act`
+	`Action/Run4.act`
+	`Action/Shoot4.act`
+[/action list]
+
+[cooltime]
+	8000	6000	6000	6000	6000	6000	6000
+[/cooltime]
+
+[attack info]
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+[/attack info]
+
+[atk super on scr]
+	1
+	`[unbreakable]`	-1	-1	-1	-1
+[/atk super on scr]
+
+[atk super on scr]
+	3
+	`[unbreakable]`	-1	-1	-1	-1
+[/atk super on scr]
+
+[atk super on scr]
+	5
+	`[unbreakable]`	-1	-1	-1	-1
+[/atk super on scr]
+
+[atk super on scr]
+	6
+	`[unbreakable]`	-1	-1	-1	-1
+[/atk super on scr]
+
+[think term]
+	200
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/heroEvent.ai`
+		`ai/heroDestinationSelect.ai`
+		`ai/heroAction.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[level of difficulty]
+	[easy]
+		-50	3000
+	[medium]
+		-30	2000
+	[hard]
+		0	0
+	[ultimate]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]

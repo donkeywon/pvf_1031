@@ -1,0 +1,130 @@
+#PVF_File
+
+[name]
+	`信奘的天资`
+
+[name2]
+	`Talent of SinJang`
+
+[basic explain]
+	`施放技能时， 有10%%的几率使自身增加50点智力和10%%的施放速度， 效果持续20秒。`
+
+[grade]
+	61
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[magical attack]
+	62
+
+[attack speed]
+	-50
+
+[cast speed]
+	50
+
+[price]
+	97600
+
+[repair price]
+	81984
+
+[value]
+	78080
+
+[equipment physical attack]
+	500	464
+
+[equipment magical attack]
+	639	593
+
+[separate attack]
+	341	230
+
+[magical critical hit]
+	2
+
+[icon]
+	`Item/weapon/priest/rosary.img`	36
+
+[field image]
+	`Item/field_weapon.img`	12
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	5	0
+
+[layer variation]
+	200
+	`rosaryd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`rosaryc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`ROSARY_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`rosary`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		10000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		10
+	[stat]
+		`cast speed`
+		`+`	100
+	[stat]
+		`magical attack`
+		`+`	75
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

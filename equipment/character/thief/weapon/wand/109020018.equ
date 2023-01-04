@@ -1,0 +1,152 @@
+#PVF_File
+
+[name]
+	`归灵秘印手杖`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 有10%%的几率使自身减少100点HP的同时， 使敌人受到2000点暗属性伤害。`
+
+[grade]
+	75
+
+[rarity]
+	4
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[magical attack]
+	50
+
+[attack speed]
+	-100
+
+[need material]
+	3285	1800
+
+[repair price]
+	100800
+
+[value]
+	96000
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	585	536
+
+[equipment magical attack]
+	833	764
+
+[separate attack]
+	441	298
+
+[magical critical hit]
+	5
+
+[dark attack]
+	10
+
+[icon]
+	`item/new_equipment/01_weapon/thief/wand/wand.img`	101
+
+[field image]
+	`Item/field_weapon.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	24	1
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2300
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[routing priority]
+	`thief`	2
+[/routing priority]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		200
+[/if]
+
+[then]
+	[probability]
+		10
+	[target]
+		`enemy`	-1
+	[appendage]
+		206
+	[add absolute damage]
+		`dark`
+		`+`	2000
+[/then]
+
+[if]
+	[my appendage]
+		206
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[restore]
+		`hp`
+		`+`	-100	0
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	68

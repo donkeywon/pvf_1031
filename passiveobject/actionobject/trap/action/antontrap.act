@@ -1,0 +1,76 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AntonTrap.ani`
+	[SUB ANI]
+		`../Animation/AntonTrap2.ani`	0	-100
+		`../Animation/AntonTrapEffect.ani`	0	-100
+		`../Animation/AntonTrapEffect4.ani`	0	-100
+		`../Animation/AntonTrapEffect2.ani`	0	0
+		`../Animation/AntonTrapEffect3.ani`	0	0
+		`../Animation/AntonTrapEffect5.ani`	0	0
+		`../Animation/AntonTrapEffect6.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`FLAMES_FIRECIRCLE`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[<=]
+			50
+		[%]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			56504	61400	61117
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND MESSAGE]
+	[ATTACK_COMMAND]
+		5
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/A_idol_particle.ptl`	0	0	50
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]

@@ -1,0 +1,70 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/down.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE FLOATING HEIGHT]
+		0
+	[REMOVE CATEGORY]
+	[fixture]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`move.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`sit.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`damage2.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		`down.act`
+	[SET ACTION]
+	[DOWN]
+	[DEFAULT]
+		1
+	[FORCE]
+		10	300
+	[NOW]
+	[CHANGE AI]
+	[NORMAL]
+		2
+		`Action2.ai`
+	[CHANGE AI]
+	[EXPERT]
+		2
+		`Action2.ai`
+	[CHANGE AI]
+	[MASTER]
+		2
+		`Action2.ai`
+	[CHANGE AI]
+	[KING]
+		2
+		`Action2.ai`
+	[CHANGE AI]
+	[HERO]
+		2
+		`Action2.ai`
+	[SET POSITION CASTING GAUGE]
+		0	0	-60
+[/BEHAVIOR]

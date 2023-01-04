@@ -1,0 +1,244 @@
+#PVF_File
+
+[name]
+	`牛头械王的能量扫把`
+
+[basic explain]
+	`近距离攻击力 +20%% (在决斗场中 +10%%)
+缔造者各系能量值 +20%%
+
+攻击眩晕状态的敌人时， 附加10%%的伤害。
+近距离攻击时， 有5%%的几率使300px范围内的所有敌人进入眩晕状态2秒。
+施放[控制]时， 有20%%的几率使300px范围内的所有敌人进入眩晕状态2秒。`
+
+[detail explain]
+	`近距离攻击力 +20%%
+缔造者各系能量值 +20%%
+
+攻击眩晕状态的敌人时， 附加10%%的伤害。
+近距离攻击时， 有5%%的几率使300px范围内的所有敌人进入眩晕状态2秒。 (在决斗场中几率为1%%； 若敌人高于Lv89， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+施放[控制]时， 有20%%的几率使300px范围内的所有敌人进入眩晕状态2秒。 (在决斗场中几率为1%%； 若敌人高于Lv89， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[attack speed]
+	60
+
+[move speed]
+	30
+
+[price]
+	160200
+
+[repair price]
+	134568
+
+[value]
+	128160
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	854	804
+
+[equipment magical attack]
+	939	884
+
+[separate attack]
+	510	347
+
+[icon]
+	`item/new_equipment/01_weapon/mage/broom/broom.img`	84
+
+[field image]
+	`Item/field_weapon.img`	10
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[mage]`
+
+[variation]
+	15	9
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	15	9
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BROOM_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`broom`
+
+[cool time]
+	10000
+
+[magical attack]
+	58
+
+[if]
+	[module]
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[dead tower]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[attacker]
+		`character`	-1
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	20
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[attacker]
+		`character`	-1
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	20
+[/then]
+
+[if]
+	[target active status]
+		`stun`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[skill data up]
+	`[creator mage]`	250	`[all]`	`[level]`	0	`%`	20
+	`[creator mage]`	251	`[all]`	`[level]`	0	`%`	20
+	`[creator mage]`	252	`[all]`	`[level]`	0	`%`	20
+	`[creator mage]`	253	`[all]`	`[level]`	0	`%`	20
+	`[creator mage]`	254	`[all]`	`[level]`	0	`%`	20
+[/skill data up]
+
+[if]
+	[cooltime]
+		4000
+	[attacker]
+		`character`	-1
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`all enemy`	300
+	[duration]
+		2000
+	[probability]
+		5
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`stun`	89
+[/then]
+
+[if]
+	[cooltime]
+		4000
+	[use skill]
+		`creator mage`	252
+[/if]
+
+[then]
+	[target]
+		`all enemy`	300
+	[duration]
+		2000
+	[probability]
+		20
+	[reduce probability to human armor at pvp module]
+		90
+	[active status]
+		`stun`	89
+[/then]
+
+[required skill]
+	91
+
+[icon mark]
+	`Item/IconMark.img`	66

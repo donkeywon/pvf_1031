@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack.ani`
+	[SUB ANI]
+		`../Animation/back/Attack.ani`	0	-2
+		`../Animation/Hat/Attack.ani`	0	1
+		`../Animation/pants/Attack.ani`	0	0
+		`../Animation/Wp/Attack.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8571
+		[PARTICLE FILENAME]
+			`../Particle/ThrowSpear.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	60
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

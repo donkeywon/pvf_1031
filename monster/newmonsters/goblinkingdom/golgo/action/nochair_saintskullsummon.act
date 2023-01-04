@@ -1,0 +1,66 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/nochair_saintskullsummon.ani`
+	[SUB ANI]
+		`../Animation/Stick/Stick_nochair_saintskullsummon.ani`	0	10
+		`../Animation/nochair_saintskullsummon_effect.ani`	0	20
+	[/SUB ANI]
+	[SPEECH]
+		`死亡之舞~`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			8215
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8215
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			595	255	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			8215
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]

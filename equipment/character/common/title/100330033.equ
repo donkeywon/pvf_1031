@@ -1,0 +1,103 @@
+#PVF_File
+
+[name]
+	`2009祈祷成功-神枪手(智力)`
+
+[name2]
+	``
+
+[explain]
+	`施放技能时， 有2%%的几率使自身进入霸体状态10秒； 但在决斗场中， 只能持续3秒。`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[magical attack]
+	27
+
+[magical defense]
+	18
+
+[attack speed]
+	20
+
+[cast speed]
+	30
+
+[move speed]
+	20
+
+[stuck resistance]
+	20
+
+[HP MAX]
+	100
+
+[MP MAX]
+	100
+
+[magical critical hit]
+	3
+
+[skill levelup]
+	`[gunner]`	22	1
+	`[gunner]`	49	1
+	`[gunner]`	46	1
+	`[gunner]`	62	1
+	`[at gunner]`	22	1
+	`[at gunner]`	49	1
+	`[at gunner]`	46	1
+	`[at gunner]`	62	1
+[/skill levelup]
+
+[icon]
+	`Item/Title/title.img`	144
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/prayer_greatsuccess2009azure.ani`
+[/custom animation]
+
+[if]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[probability]
+		2
+	[reduce duration at pvp module]
+		70
+	[buff]
+		`superarmor`
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,71 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Spit.ani`
+	[SUB ANI]
+		`../Animation/StayStones_b.ani`	0	0
+		`../Animation/StayStones_f.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`IMAGO_ATK_01`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61149
+		[LEVEL]
+			0
+		[POS]
+			120	0	100
+		[JUMP OUT]
+		[RANDOM]
+			600	900	0
+		[RANDOM]
+			100	300
+		[RANDOM]
+		[UP]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61149
+		[LEVEL]
+			0
+		[POS]
+			120	0	100
+		[JUMP OUT]
+		[RANDOM]
+			600	900	0
+		[RANDOM]
+			100	300
+		[RANDOM]
+		[UP]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+	[RANDOM SELECT]
+		11	13	13	13	13
+	[/RANDOM SELECT]
+	[END]
+[/BEHAVIOR]

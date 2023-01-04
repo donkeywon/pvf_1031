@@ -1,0 +1,26 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/rabbit_move.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[RANDOM]
+	[SET SPEED]
+		[X AXIS]
+			100
+		[Y AXIS]
+			10
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

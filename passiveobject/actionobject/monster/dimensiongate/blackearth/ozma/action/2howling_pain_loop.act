@@ -1,0 +1,83 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/howling_pain/loop_skull_d2.ani`
+	[SUB ANI]
+		`../animation/howling_pain/loop_col2.ani`	0	-9
+		`../animation/howling_pain/loop_col1.ani`	0	-8
+		`../animation/howling_pain/loop_col.ani`	0	-7
+		`../animation/howling_pain/loop_col7.ani`	0	-6
+		`../animation/howling_pain/loop_col6.ani`	0	-5
+		`../animation/howling_pain/loop_col5.ani`	0	-4
+		`../animation/howling_pain/loop_col4.ani`	0	-3
+		`../animation/howling_pain/loop_col3.ani`	0	-2
+		`../animation/howling_pain/loop_skull.ani`	0	-1
+		`../animation/howling_pain/loop_front.ani`	0	1
+	[/SUB ANI]
+	[SOUND]
+		`OZMA_COLUMN_LOOP`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			`throw`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[FRAME]
+		5	5
+	[IF]
+		`throw`	
+		[>=]
+			1
+	[/IF]
+	[WHICH]
+	[AI CHARACTER]
+	[CHECKUP]
+		[IS INDEX]
+			20440
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

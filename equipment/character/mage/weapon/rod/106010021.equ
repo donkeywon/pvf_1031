@@ -1,0 +1,232 @@
+#PVF_File
+
+[name]
+	`灵兔魔杖`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 有10%%的几率出现闪电。 (在决斗场中无效)
+施放技能时， 有10%%的几率使自身所有属性强化值增加10点， 效果持续15秒。
+攻击时， 有4%%的几率使自身增加7%%的武器魔法攻击力， 效果持续20秒。`
+
+[detail explain]
+	`攻击时， 有10%%的几率出现闪电使敌人受到2000点伤害。 (在决斗场中无效)
+施放技能时， 有10%%的几率使自身所有属性强化值增加10点， 效果持续15秒。
+攻击时， 有4%%的几率使自身增加7%%的武器魔法攻击力， 效果持续20秒。`
+
+[grade]
+	75
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[magical attack]
+	75
+
+[attack speed]
+	100
+
+[cast speed]
+	50
+
+[stuck]
+	1
+
+[need material]
+	3285	1800
+
+[repair price]
+	100800
+
+[value]
+	96000
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	652	598
+
+[equipment magical attack]
+	796	730
+
+[separate attack]
+	441	298
+
+[skill levelup]
+	`[mage]`	176	3
+	`[at mage]`	176	3
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/mage/rod/rod.img`	90
+
+[field image]
+	`Item/field_weapon.img`	7
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	28	1
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	28	1
+
+[layer variation]
+	2150
+	`at_roda`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_rodd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	28	1
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`ROD_TOUCH`
+
+[durability]
+	24
+
+[weight]
+	2200
+
+[item group name]
+	`rod`
+
+[cool time]
+	10000
+
+[routing priority]
+	`mage`	1
+	`mage`	2
+	`at mage`	2
+[/routing priority]
+
+[if]
+	[event attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[probability]
+		10
+	[target]
+		`enemy`	-1
+	[reduce probability to human armor at pvp module]
+		80
+	[passive object]
+		48503	0	0	0	0	0	``
+		48506	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[casting]
+		1
+	[cooltime]
+		25000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[probability]
+		10
+	[appendage]
+		19
+	[appendage]
+		20
+	[appendage]
+		21
+	[appendage]
+		22
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[probability]
+		4
+	[duration]
+		20000
+	[target]
+		`myself`	-1
+	[stat]
+		`equipment magical attack`
+		`%`	7
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	68

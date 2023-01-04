@@ -1,0 +1,144 @@
+#PVF_File
+
+[name]
+	`幽冥黑莲战镰`
+
+[name2]
+	`Nether Black Lotus sickle`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入诅咒状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入诅咒状态20秒； 诅咒状态下的敌人， 将减少40点力量、 体力、 智力和精神。 (若敌人高于Lv40， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[grade]
+	42
+
+[rarity]
+	2
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	40
+
+[physical attack]
+	27
+
+[magical attack]
+	27
+
+[attack speed]
+	80
+
+[stuck]
+	1
+
+[price]
+	58800
+
+[repair price]
+	47040
+
+[value]
+	47040
+
+[equipment physical attack]
+	353	338
+
+[equipment magical attack]
+	372	356
+
+[separate attack]
+	183	122
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	50	1
+	`[priest]`	11	1
+	`[priest]`	116	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/priest/scythe.img`	21
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[priest]`
+
+[variation]
+	1	5
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		32000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[active status]
+		`curse`	40	40	40	40	40
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

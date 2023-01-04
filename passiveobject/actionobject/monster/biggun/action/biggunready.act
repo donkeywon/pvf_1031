@@ -1,0 +1,117 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Ball0.ani`
+	[SUB ANI]
+		`../Animation/Ball1.ani`	0	0
+		`../Animation/Ball1-1.ani`	0	0
+		`../Animation/Ball1-2.ani`	0	0
+		`../Animation/Ball1-3.ani`	0	0
+		`../Animation/Charge2.ani`	0	0
+		`../Animation/Charge3.ani`	0	0
+		`../Animation/Charge4.ani`	0	0
+		`../Animation/Charge5.ani`	0	0
+		`../Animation/Ball2.ani`	0	0
+		`../Animation/Ball2-1.ani`	0	0
+		`../Animation/Ball2-2.ani`	0	0
+		`../Animation/Ball2-3.ani`	0	0
+		`../Animation/Ball3.ani`	0	0
+		`../Animation/Ball3-1.ani`	0	0
+		`../Animation/Ball4.ani`	0	0
+		`../Animation/Ball4-1.ani`	0	0
+		`../Animation/Ball5.ani`	0	0
+		`../Animation/FullCharge1.ani`	0	10
+		`../Animation/FullCharge2.ani`	0	10
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[DIM]
+		`time1`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			800
+	[/CHECKUP]
+	[IF]
+		`time`	
+		[+]
+			1000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PULL APPENDAGE]
+		3.0	1.5	5000
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`time1`	
+		[+]
+			5000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8849
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			60
+		[POS]
+			0	0	65
+	[/CREATE PASSIVEOBJECT]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]

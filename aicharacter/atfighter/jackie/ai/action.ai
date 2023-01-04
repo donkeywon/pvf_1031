@@ -1,0 +1,425 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check skill on]
+			20
+		[true]
+	
+		[think]
+			[check skill on]
+				50
+			[true]
+		
+			[think]
+				[void]
+					`number of in attack area()`	8000.0	8000.0	5000.0	5000.0
+					`all`
+					`monster`	56466
+			
+				[think]
+					[last result]
+						`>=`	1.0
+					[true]
+				
+					[think]
+						[void]
+							`enemy number of in attack area()`	8000.0	8000.0	5000.0	5000.0
+					
+						[think]
+							[last result]
+								`>=`	5.0
+							[true]
+						
+							[think]
+								[void]
+									`is target in attack area()`	200	200	30	30
+								[true]
+							
+								[think]
+									[void]
+										`is the skill in cooltime()`	81
+									[true]
+									[import ai]
+										`Action2.ai`
+									[false]
+									[return]
+										4
+								[/think]
+	[false]
+	[import ai]
+		`Action2.ai`
+	[/think]
+	[false]
+	[import ai]
+		`Action2.ai`
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	8000.0	8000.0	5000.0	5000.0
+			`all`
+			`monster`	61278
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[void]
+					`number of in attack area()`	500.0	500.0	50.0	50.0
+					`all`
+					`summon`	61136
+			
+				[think]
+					[last result]
+						`>=`	1.0
+					[true]
+				
+					[think]
+						[void]
+							`is the skill in cooltime()`	81
+						[true]
+						[return]
+							-1
+						[false]
+						[return]
+							4
+					[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	8000.0	8000.0	5000.0	5000.0
+			`all`
+			`passive object`	10543
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`skill42`
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					5
+			[/think]
+	[false]
+	[import ai]
+		`Action3.ai`
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	8000.0	8000.0	5000.0	5000.0
+			`all`
+			`passive object`	9954
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`skill42`
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					5
+			[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	8000.0	8000.0	5000.0	5000.0
+			`all`
+			`passive object`	9955
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`skill42`
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					5
+			[/think]
+	[false]
+	[import ai]
+		`Action2.ai`
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is the skill in cooltime()`	50
+		[true]
+	
+		[think]
+			[void]
+				`number of in attack area()`	8000.0	8000.0	5000.0	5000.0
+				`all`
+				`monster`	61278
+		
+			[think]
+				[last result]
+					`>=`	1.0
+				[true]
+			
+				[think]
+					[void]
+						`number of in attack area()`	500.0	500.0	50.0	50.0
+						`all`
+						`summon`	61136
+				
+					[think]
+						[last result]
+							`>=`	1.0
+						[true]
+					
+						[think]
+							[void]
+								`is the skill in cooltime()`	81
+							[true]
+							[return]
+								-1
+							[false]
+							[return]
+								4
+						[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	8000.0	8000.0	5000.0	5000.0
+			`all`
+			`passive object`	10543
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`skill42`
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					5
+			[/think]
+	[false]
+	[import ai]
+		`Action3.ai`
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	8000.0	8000.0	5000.0	5000.0
+			`all`
+			`passive object`	9954
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`skill42`
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					5
+			[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	8000.0	8000.0	5000.0	5000.0
+			`all`
+			`passive object`	9955
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`skill42`
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					5
+			[/think]
+	[false]
+	[import ai]
+		`Action2.ai`
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return]
+		1
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is the skill in cooltime()`	20
+		[true]
+	
+		[think]
+			[void]
+				`number of in attack area()`	8000.0	8000.0	5000.0	5000.0
+				`all`
+				`monster`	61278
+		
+			[think]
+				[last result]
+					`>=`	1.0
+				[true]
+			
+				[think]
+					[void]
+						`number of in attack area()`	500.0	500.0	50.0	50.0
+						`all`
+						`summon`	61136
+				
+					[think]
+						[last result]
+							`>=`	1.0
+						[true]
+					
+						[think]
+							[void]
+								`is the skill in cooltime()`	81
+							[true]
+							[return]
+								-1
+							[false]
+							[return]
+								4
+						[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	8000.0	8000.0	5000.0	5000.0
+			`all`
+			`passive object`	10543
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`skill42`
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					5
+			[/think]
+	[false]
+	[import ai]
+		`Action3.ai`
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	8000.0	8000.0	5000.0	5000.0
+			`all`
+			`passive object`	9954
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`skill42`
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					5
+			[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	8000.0	8000.0	5000.0	5000.0
+			`all`
+			`passive object`	9955
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`skill42`
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					5
+			[/think]
+	[false]
+	[import ai]
+		`Action2.ai`
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return]
+		0
+	[/think]
+	[/think]
+[/ai pattern]

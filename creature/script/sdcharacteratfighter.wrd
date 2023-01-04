@@ -1,0 +1,22 @@
+#PVF_File
+
+[ambient]
+	[all]
+		`Creature/SDCharacter/ATFighter/talk_stand1.ani`
+		`Creature/SDCharacter/ATFighter/talk_stand2.ani`
+	[/all]
+[/ambient]
+
+[trigger]
+	[all]
+		[call the name]
+			`Creature/SDCharacter/ATFighter/talk_call.ani`
+		[/call the name]
+		[using skill]
+			`Creature/SDCharacter/ATFighter/talk_skill.ani`
+		[/using skill]
+		[state special]
+			`Creature/SDCharacter/ATFighter/talk_random.ani`
+		[/state special]
+	[/all]
+[/trigger]

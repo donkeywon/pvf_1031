@@ -1,0 +1,217 @@
+#PVF_File
+
+[name]
+	`异魔之源`
+
+[name2]
+	``
+
+[basic explain]
+	`每消耗1%%的MP值， 武器物理攻击力会减少1点。 (最多减少99点)
+每500点MP可增加2点的武器物理攻击力。 (最多增加150点)
+MP上限 +20%%
+攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`每消耗1%%的MP值， 武器物理攻击力会减少1点。 (最多减少99点)
+每500点MP可增加2点的武器物理攻击力。 (最多增加150点)
+MP上限 +20%%
+攻击时， 有2%%的几率使敌人进入眩晕状态2秒。 (若敌人高于Lv85， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[routing priority]
+	`fighter`	2
+	`at fighter`	2
+[/routing priority]
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	56
+
+[attack speed]
+	100
+
+[price]
+	153000
+
+[repair price]
+	128520
+
+[value]
+	122400
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	865	802
+
+[equipment magical attack]
+	783	726
+
+[separate attack]
+	504	343
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/bglove/bglove.img`	78
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	20	1
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	21	1
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[reduce duration to human armor at pvp module]
+		50
+	[duration]
+		2000
+	[reduce probability to human armor at pvp module]
+		80
+	[probability]
+		2
+	[active status]
+		`stun`	85
+[/then]
+
+[if]
+	[change status in range]
+		`mp`	100	0
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[apply status in range]
+		`equipment physical attack`
+		`+`	-1	-100
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`mp max`	500
+		`equipment physical attack`
+		`+`	2	150
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`mp max`
+		`%`	20
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,56 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Stay.ani`
+	[SUB ANI]
+		`../Animation/ac/Stay_200.ani`	0	0
+		`../Animation/hair/Stay_300.ani`	0	0
+		`../Animation/hat/Stay_400.ani`	0	0
+		`../Animation/pants/Stay_500.ani`	0	0
+		`../Animation/shirts/Stay_800.ani`	0	0
+		`../Animation/shoes/Stay_600.ani`	0	0
+		`../Animation/skin/Stay_700.ani`	0	0
+		`../Animation/Stay_100.ani`	0	100
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			0
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[>]
+			0
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		9
+	[NOW]
+[/BEHAVIOR]

@@ -1,0 +1,172 @@
+#PVF_File
+
+[name]
+	`时空主宰者项链`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 有2%%的几率重置自身技能的冷却时间， 但只能重置一个剩余冷却时间最短的技能。`
+
+[detail explain]
+	`攻击时， 有2%%的几率重置自身技能的冷却时间， 但只能重置一个剩余冷却时间最短的技能。 (冷却时间剩60秒以上的技能无效)`
+
+[grade]
+	75
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[magical attack]
+	31
+
+[magical defense]
+	76
+
+[MP regen speed]
+	1
+
+[price]
+	90000
+
+[repair price]
+	72000
+
+[value]
+	72000
+
+[creation rate]
+	250
+
+[equipment magical defense]
+	6640	6160
+
+[icon]
+	`item/new_equipment/08_necklace/necklace.img`	70
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	21
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		2
+	[skill cooltime reset]
+		0
+		``	1
+	[speech on]
+		0	2000
+		`时空主宰者`
+	[/speech on]
+[/then]
+
+[set name]
+	`时空主宰者`
+
+[set item]
+	100300002	100320004	100310002
+[/set item]
+
+[set ability]
+	[fullset basic explain]
+		`攻击时， 有1%%的几率重置自身技能的冷却时间， 但只能重置一个剩余冷却时间最长的技能。
+施放技能时， 有2%%的几率重置自身技能的冷却时间， 但只能重置一个剩余冷却时间最长的技能。
+被攻击时， 有2%%的几率重置自身技能的冷却时间， 但只能重置一个剩余冷却时间最长的技能。`
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			60000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			1
+		[skill cooltime reset]
+			0
+			``	2
+		[speech on]
+			0	2000
+			`时空主宰者`
+		[/speech on]
+	[/then]
+	[if]
+		[casting]
+			1
+		[cooltime]
+			60000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			2
+		[skill cooltime reset]
+			0
+			``	2
+		[speech on]
+			0	2000
+			`时空主宰者`
+		[/speech on]
+	[/then]
+	[if]
+		[hit]
+			1
+		[cooltime]
+			60000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			2
+		[skill cooltime reset]
+			0
+			``	2
+		[speech on]
+			0	2000
+			`时空主宰者`
+		[/speech on]
+	[/then]
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

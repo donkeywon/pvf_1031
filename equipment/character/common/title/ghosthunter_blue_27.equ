@@ -1,0 +1,106 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	``
+
+[explain]
+	`释放技能时， 有5%%的几率增加7%%的移动速度和释放速度， 持续时间30秒。`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	230
+
+[custom animation]
+	`TitleAnimation/ghosthunter_blue.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	200
+
+[MP MAX]
+	200
+
+[magical attack]
+	30
+
+[magical defense]
+	20
+
+[stuck resistance]
+	20
+
+[move speed]
+	30
+
+[cast speed]
+	30
+
+[magical critical hit]
+	3
+
+[stuck]
+	-2
+
+[if]
+	[cooltime]
+		50000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`move speed`
+		`+`	70
+	[stat]
+		`cast speed`
+		`+`	70
+[/then]
+
+[set name]
+	``
+
+[set item]
+	26468
+[/set item]
+
+[set ability]
+	[all elemental resistance]
+		3
+[/set ability]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,134 @@
+#PVF_File
+
+[name]
+	`斗者的信念手镯`
+
+[name2]
+	`True Faith Armlet of Refusing Person`
+
+[grade]
+	63
+
+[rarity]
+	5
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	31
+
+[physical defense]
+	49
+
+[magical attack]
+	8
+
+[magical defense]
+	13
+
+[anti evil]
+	2
+
+[need material]
+	3228	30
+
+[repair price]
+	50400
+
+[value]
+	50400
+
+[equipment magical defense]
+	3264	3120
+
+[all elemental resistance]
+	3
+
+[icon]
+	`Item/common/bracelet.img`	1
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	20
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[set name]
+	`斗者的信念  套装`
+
+[set item]
+	20124	22119	24129	11668	13666	15663	19667	17661
+[/set item]
+
+[piece set ability]
+	3	
+	[MP MAX]
+		500
+	[magical critical hit]
+		3
+[/piece set ability]
+
+[piece set ability]
+	5	
+	[stuck resistance]
+		20
+	[MP regen speed]
+		14
+[/piece set ability]
+
+[piece set ability]
+	8	
+	[cast speed]
+		40
+	[if]
+		[target type]
+			`human`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[if]
+		[target type]
+			`undead`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[parameter basic explain]
+		`对人型怪敌人的伤害 +10%%
+对不死族敌人的伤害 +10%%`
+[/piece set ability]
+
+[possible kiri protect]

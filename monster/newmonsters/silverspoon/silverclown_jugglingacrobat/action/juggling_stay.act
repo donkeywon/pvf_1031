@@ -1,0 +1,61 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Juggling_Stay.ani`
+	[SUB ANI]
+		`../Animation/Juggling_Stay_wp.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`NORMALSILVER_ATK_02`	0
+		`NORMALSILVER_JUGGLING`	0
+		`NORMALSILVER_JUGGLING`	7
+	[/SOUND]
+	[SPEECH]
+		`哈！哈！哈！`	3	5
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ADD CATEGORY]
+	[FIXTURE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8881
+		[PARTICLE FILENAME]
+			`../Particle/Dagger.ptl`
+		[LEVEL]
+			0
+		[POS]
+			20	0	55
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

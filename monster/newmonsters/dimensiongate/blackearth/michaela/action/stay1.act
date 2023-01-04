@@ -1,0 +1,58 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/stay1.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CUT SCENE]
+		[FLIP TYPE]
+			1
+		[START POSITION]
+			-400	600
+		[ANI FILE]
+			`Monster/NewMonsters/dimensiongate/blackearth/michaela/animation/cutscene.ani`
+		[MOVE DIR]
+			-5	600	500	7	600	50	-5	600	50	-5	600	800	7	600	50	-400	600	500	-400	600	2000
+		[/MOVE DIR]
+	[/CUT SCENE]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10361
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	-10	0
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		6
+	[END]
+[/BEHAVIOR]

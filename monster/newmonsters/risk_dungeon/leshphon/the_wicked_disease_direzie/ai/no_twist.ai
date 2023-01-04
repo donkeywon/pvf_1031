@@ -1,0 +1,21 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	2040.0	2040.0	2020.0	2020.0
+			`friend`
+			`summon`	62255
+	
+		[think]
+			[last result]
+				`<=`	4.0
+			[true]
+			[import ai]
+				`particle.ai`
+			[false]
+			[import ai]
+				`no_particle.ai`
+		[/think]
+	[/think]
+[/ai pattern]

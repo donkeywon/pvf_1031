@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/teleport.ani`
+	[SPEECH]
+		`恩！！！！`	2	30
+	[/SPEECH]
+	[SOUND]
+		`R_GGANG_ATK_01`	1
+		`MERMAN_HEAL`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[WHICH]
+	[CHARACTER]
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+		[RANDOM]
+			-130	130
+		[RANDOM]
+			-40	40	1
+		[MOVE ME]
+	[/TELEPORT]
+	[SET DIRECTION]
+	[TO TARGET]
+[/BEHAVIOR]

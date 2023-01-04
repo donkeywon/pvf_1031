@@ -1,0 +1,136 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	`We are Single Unit`
+
+[explain]
+	`※发动选项适用单人游戏。※
+攻击时以3%%的机率受到30%%的附加伤害。(决斗场内10%%的附加伤害)
+安装时每隔50秒会因为独自的能量30秒内智力，精神增加 20，魔法暴击增加3%%，施放速度增加3%%，移动速度增加 2%%。(安装时50秒后开始发动。)`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	236
+
+[custom animation]
+	`TitleAnimation/10_christmas_solo_bl.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[magical attack]
+	20
+
+[magical defense]
+	20
+
+[inventory limit]
+	10000
+
+[move speed]
+	20
+
+[cast speed]
+	30
+
+[magical critical hit]
+	3
+
+[if]
+	[party count]
+		`=`	1
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[add absolute damage]
+		`all`
+		`%`	30
+[/then]
+
+[if]
+	[party count]
+		`=`	1
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		5000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[if]
+	[party count]
+		`=`	1
+	[time]
+		50000	1	30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[stat]
+		`magical attack`
+		`+`	20
+	[stat]
+		`magical defense`
+		`+`	20
+	[stat]
+		`move speed`
+		`+`	20
+	[stat]
+		`cast speed`
+		`+`	30
+	[stat]
+		`magical critical hit`
+		`+`	3
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[usable period]
+	7
+
+[icon mark]
+	`Item/IconMark.img`	64

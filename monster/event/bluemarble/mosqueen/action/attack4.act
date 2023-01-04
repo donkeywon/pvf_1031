@@ -1,0 +1,123 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack4.ani`
+	[SOUND]
+		`MOSSQUEEN_NEEDLE`	3
+	[/SOUND]
+	[SPEECH]
+		`尝尝毒针的威力吧！！`	0	20
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10005
+		[PARTICLE FILENAME]
+			`../Particle/kemuri1.ptl`
+		[LEVEL]
+			50
+		[POS]
+		[RANDOM]
+			0	10	0
+		[RANDOM]
+			30	80
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10005
+		[PARTICLE FILENAME]
+			`../Particle/kemuri1.ptl`
+		[LEVEL]
+			50
+		[POS]
+		[RANDOM]
+			0	10	0
+		[RANDOM]
+			30	80
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10005
+		[PARTICLE FILENAME]
+			`../Particle/kemuri1.ptl`
+		[LEVEL]
+			50
+		[POS]
+		[RANDOM]
+			0	10	0
+		[RANDOM]
+			30	50
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10005
+		[PARTICLE FILENAME]
+			`../Particle/kemuri1.ptl`
+		[LEVEL]
+			50
+		[POS]
+		[RANDOM]
+			0	10	0
+		[RANDOM]
+			30	80
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10005
+		[PARTICLE FILENAME]
+			`../Particle/kemuri1.ptl`
+		[LEVEL]
+			50
+		[POS]
+		[RANDOM]
+			0	10	0
+		[RANDOM]
+			30	70
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10005
+		[PARTICLE FILENAME]
+			`../Particle/kemuri1.ptl`
+		[LEVEL]
+			50
+		[POS]
+		[RANDOM]
+			0	10	0
+		[RANDOM]
+			30	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

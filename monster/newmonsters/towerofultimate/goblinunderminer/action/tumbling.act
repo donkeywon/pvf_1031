@@ -1,0 +1,54 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Tumbling.ani`
+	[SOUND]
+		`WINDMILL_SWING`	1
+	[/SOUND]
+	[SPEECH]
+		`翻滚！！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-300
+		[Y AXIS]
+		[RANDOM SELECT]
+			50	-50
+		[/RANDOM SELECT]
+		[X AXIS]
+			-500
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			24001
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			50
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

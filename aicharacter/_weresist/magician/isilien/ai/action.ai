@@ -1,0 +1,52 @@
+#PVF_File
+
+[ai pattern]
+
+[think]
+	[void]
+		`is target in attack area()`	100.0	100.0	50.0	50.0
+	[false]
+
+	[think]
+		[check key cooltime]
+			`tree`
+		[false]
+	
+		[think]
+			[void]
+				`number of in attack area()`	1000	1000	1000	1000
+				`all`
+				`passive object`	8069
+			[true]
+		
+			[think]
+				[last result]
+					`<=`	30
+				[true]
+				[return str]
+					`tree`
+				[false]
+				[import ai]
+					`fight.ai`
+			[/think]
+
+[false]
+
+[return]
+	-1
+
+[/think]
+
+[true]
+
+[import ai]
+	`fight.ai`
+
+[/think]
+
+[true]
+
+[import ai]
+	`fight.ai`
+
+[/think]

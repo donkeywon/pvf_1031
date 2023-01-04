@@ -1,0 +1,91 @@
+#PVF_File
+
+[name]
+	`幽灵猎人的浓密发型[B型]`
+
+[name2]
+	``
+
+[explain]
+	`2010年中秋节时装角色
+佩戴时会出现哥布林的幽灵。`
+
+[enable dye]
+	1	0
+
+[grade]
+	2
+
+[usable job]
+	`[gunner]`
+[/usable job]
+
+[attach type]
+	`[free]`
+
+[minimum level]
+	1
+
+[icon]
+	`item/avatar/gunner/gn_ahair.img`	284
+
+[equipment type]
+	`[hair avatar]`	0
+
+[avatar type select]
+	7	0	0	1500	0
+	30	0	0	3000	0
+	0	0	0	6000	0
+	0	0	0	6600	2
+	`[A socket]`	`[A socket]`
+[/avatar type select]
+
+[avatar select ability]
+	`[MAGICAL_ATTACK]`	`+`	45
+	`[MAGICAL_DEFENSE]`	`+`	45
+	`[HP_REGENRATE]`	`+`	60
+	`[MP_REGENRATE]`	`+`	12
+	`[CAST_SPEED]`	`+`	120
+[/avatar select ability]
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	82	1
+
+[layer variation]
+	2000
+	`hair_a`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[set item master]
+	48876
+
+[particle]
+	`same position`
+	`Character/Common/Particle/go1.ptl`	0	0	80
+[/particle]
+
+[effect]
+	[type]
+		`animation`
+	[attach pos]
+		`top`
+	[index]
+		1
+	[option]
+		`apply custom color`
+		`sync speed`
+	[/option]
+	[module]
+		`[room list]`
+	[/module]
+	[file name]
+		`Character/Common/Animation/go2.ani`
+[/effect]

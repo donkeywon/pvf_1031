@@ -1,0 +1,93 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/LittelDend4.ani`
+	[SUB ANI]
+		`../Animation/LittelDend4_eff.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`LDENDROID_SPAWN`	0
+		`DENDROID_SPIT`	6
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9128
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	4	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61603
+		[LEVEL]
+			38
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[USE MY DIRECTION]
+		[TEAM]
+			100
+		[USE OBJECT ZPOS]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/tree.ptl`	0	0	70
+[/BEHAVIOR]

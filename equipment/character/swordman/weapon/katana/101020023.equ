@@ -1,0 +1,307 @@
+#PVF_File
+
+[name]
+	`九龙护魂刀`
+
+[name2]
+	``
+
+[basic explain]
+	`施放[刀魂之卡赞]、 [侵蚀之普戾蒙]、 [冰霜之萨亚]、 [瘟疫之罗刹]、 [鬼影步]、 [冥炎之卡洛]、 [残影之凯贾]、 [邪神之怖拉修]、 [冰晶之萨亚]时， 可以使自身进入霸体状态。
+施放[暗影斩]、 [冥魂珠]、 [破魂之刃]、 [邪影 · 波动剑]时， 可以使自身进入霸体状态。
+施放[疾影斩]、 [破军旋舞斩]、 [瞬影三绝斩]时， 可以使自身进入霸体状态。`
+
+[grade]
+	75
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[physical attack]
+	50
+
+[magical attack]
+	75
+
+[attack speed]
+	80
+
+[cast speed]
+	40
+
+[stuck]
+	1
+
+[need material]
+	3285	1800
+
+[repair price]
+	100800
+
+[value]
+	96000
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	688	631
+
+[equipment magical attack]
+	760	697
+
+[separate attack]
+	441	298
+
+[physical critical hit]
+	2
+
+[skill levelup]
+	`[swordman]`	25	1
+	`[swordman]`	41	1
+	`[swordman]`	36	1
+	`[swordman]`	75	1
+	`[swordman]`	84	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/katana/katana.img`	91
+
+[field image]
+	`Item/FieldImage.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	30	1
+
+[layer variation]
+	2790
+	`katanac`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`katanab`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	30	1
+
+[layer variation]
+	2790
+	`katanac`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`katanab`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`KATANA_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`katana`
+
+[cool time]
+	10000
+
+[routing priority]
+	`swordman`	2
+	`demonic swordman`	0
+[/routing priority]
+
+[if]
+	[event use skill]
+		`swordman`	25
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`swordman`	25
+[/then]
+
+[if]
+	[event use skill]
+		`swordman`	36
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`swordman`	36
+[/then]
+
+[if]
+	[event use skill]
+		`swordman`	41
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`swordman`	41
+[/then]
+
+[if]
+	[event use skill]
+		`swordman`	75
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`swordman`	75
+[/then]
+
+[if]
+	[event use skill]
+		`swordman`	18
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`swordman`	18
+[/then]
+
+[if]
+	[event use skill]
+		`swordman`	82
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`swordman`	82
+[/then]
+
+[if]
+	[event use skill]
+		`swordman`	87
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`swordman`	87
+[/then]
+
+[if]
+	[event use skill]
+		`swordman`	96
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`swordman`	96
+[/then]
+
+[if]
+	[event use skill]
+		`swordman`	84
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`swordman`	84
+[/then]
+
+[if]
+	[event use skill]
+		`demonic swordman`	5
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`demonic swordman`	5
+[/then]
+
+[if]
+	[event use skill]
+		`demonic swordman`	2
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`demonic swordman`	2
+[/then]
+
+[if]
+	[event use skill]
+		`demonic swordman`	3
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`demonic swordman`	3
+[/then]
+
+[if]
+	[event use skill]
+		`demonic swordman`	17
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`demonic swordman`	17
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	68

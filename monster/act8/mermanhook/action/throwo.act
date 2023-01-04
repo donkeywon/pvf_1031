@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Throw.ani`
+	[SUB ANI]
+		`../Animation/Throw_O.ani`	0	0
+		`../Animation/Throw_E.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`HFISH_SKILL_01`	0
+		`THUNDERC_ATK`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10168
+		[PARTICLE FILENAME]
+			`../Particle/ThrowO.ptl`
+		[LEVEL]
+			0
+		[POS]
+			85	0	85
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,27 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/JumpAttack.ani`
+	[SOUND]
+		`HUNT_JUMP`	0
+	[/SOUND]
+	[SPEECH]
+		`这里……就是你的葬身之地！`	0	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[JUMP TO TARGET]
+		-1	2200	-3500	1.1	700	400	0	10	11
+[/BEHAVIOR]

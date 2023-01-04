@@ -1,0 +1,105 @@
+#PVF_File
+
+[name]
+	`暗精灵之戒`
+
+[name2]
+	`Elemental Ring of Darkness`
+
+[basic explain]
+	`被攻击时， 有20%%的几率召唤出1只瑟冥特克。`
+
+[detail explain]
+	`被攻击时， 有20%%的几率召唤出1只Lv55的瑟冥特克协助召唤者攻击敌人， 瑟冥特克存在100秒。 (召唤的怪物只能同时存在1只， 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失)`
+
+[flavor text]
+	`若暗之力量渗透到这枚戒指里， 暗之精灵就会从沉睡中苏醒。  --希泊`
+
+[grade]
+	57
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	36
+
+[magical attack]
+	36
+
+[need material]
+	3260	450
+
+[repair price]
+	55440
+
+[value]
+	52800
+
+[creation rate]
+	500
+
+[equipment magical defense]
+	2080	1888
+
+[dark attack]
+	13
+
+[icon]
+	`Item/common/ring.img`	18
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	21
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		100000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		100000
+	[reduce duration at pvp module]
+		75
+	[probability]
+		20
+	[summon monster]
+		60113	55	1
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

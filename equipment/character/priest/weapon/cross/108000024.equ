@@ -1,0 +1,153 @@
+#PVF_File
+
+[name]
+	`祭司的祷告[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`施放技能时， 有5%%的几率使所有队员增加35点力量、 30点智力， 效果持续20秒。
+
+无法进行合成和分解。`
+
+[grade]
+	64
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical defense]
+	54
+
+[magical attack]
+	43
+
+[magical defense]
+	54
+
+[cast speed]
+	20
+
+[price]
+	102400
+
+[repair price]
+	86016
+
+[value]
+	81920
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	604	554
+
+[equipment magical attack]
+	574	526
+
+[equipment physical defense]
+	640	630
+
+[equipment magical defense]
+	640	630
+
+[separate attack]
+	360	242
+
+[skill levelup]
+	`[priest]`	45	3
+	`[priest]`	121	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/cross.img`	52
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	10	0
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[duration]
+		20000
+	[probability]
+		5
+	[stat]
+		`physical attack`
+		`+`	35
+	[stat]
+		`magical attack`
+		`+`	35
+[/then]
+
+[not amplify]
+	1
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

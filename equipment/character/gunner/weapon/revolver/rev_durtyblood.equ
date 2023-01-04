@@ -1,0 +1,282 @@
+#PVF_File
+
+[name]
+	`暗黑血之毁伤`
+
+[name2]
+	`Revolver of Dirty Blood`
+
+[basic explain]
+	`穿戴时， 使自身HP每30秒减少1%%。
+攻击空中的敌人时， 附加20%%的伤害。
+攻击倒地的敌人时， 附加20%%的伤害。
+穿刺力 +10%%
+攻击速度 +4%%`
+
+[detail explain]
+	`穿戴时， 使自身HP每30秒减少1%%。
+攻击空中的敌人时， 附加20%%的伤害。 (在决斗场中 +10%%)
+攻击倒地的敌人时， 附加20%%的伤害。(在决斗场中 +10%%)
+(不适用于被抓取的对象)
+穿刺力 +10%%
+攻击速度 +4%%`
+
+[grade]
+	75
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	71
+
+[physical attack]
+	50
+
+[attack speed]
+	40
+
+[move speed]
+	30
+
+[stuck]
+	-2
+
+[price]
+	120000
+
+[repair price]
+	100800
+
+[value]
+	96000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	668	610
+
+[equipment magical attack]
+	562	513
+
+[separate attack]
+	425	288
+
+[physical critical hit]
+	2
+
+[skill levelup]
+	`[gunner]`	22	2
+	`[at gunner]`	22	2
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/revolver.img`	57
+
+[field image]
+	`Item/field_weapon.img`	1
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	13	3
+
+[layer variation]
+	2790
+	`revc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`revb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	13	3
+
+[layer variation]
+	2790
+	`at_revc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_revb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2000
+
+[item group name]
+	`revolver`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[int data]
+	-1	-1	-1	-1	-1	-1	-1	-1	35	-1
+[/int data]
+
+[if]
+	[time]
+		10000	1	1000
+	[cooltime]
+		30000
+	[stat change]
+		`hp`
+		`>`
+		`%`	1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`hp`
+		`%`	-1	0
+[/then]
+
+[if]
+	[target state]
+		`jump`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	20
+[/then]
+
+[if]
+	[target state]
+		`jump attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	20
+[/then]
+
+[if]
+	[target state]
+		`down`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	20
+[/then]
+
+[pvp]
+	[if]
+		[time]
+			10000	1	1000
+		[cooltime]
+			30000
+		[stat change]
+			`hp`
+			`>`
+			`%`	1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[restore]
+			`hp`
+			`%`	-1	0
+	[/then]
+	[if]
+		[target state]
+			`jump`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[if]
+		[target state]
+			`jump attack`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[if]
+		[target state]
+			`down`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+[/pvp]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Down.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8039
+		[PARTICLE FILENAME]
+			`../Particle/BirdDrop.ptl`
+		[LEVEL]
+			55
+		[POS]
+		[RANDOM]
+			-100	100
+		[RANDOM]
+			-40	40
+		[RANDOM]
+			400	600
+	[/CREATE PASSIVEOBJECT]
+	[SAY SPEECH]
+		`两只！`
+[/BEHAVIOR]

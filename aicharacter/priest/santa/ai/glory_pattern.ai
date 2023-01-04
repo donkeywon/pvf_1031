@@ -1,0 +1,23 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[set party member]
+			1
+		[true]
+	
+		[think]
+			[check party buff on]
+				`priest`	45
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				11
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+[/ai pattern]

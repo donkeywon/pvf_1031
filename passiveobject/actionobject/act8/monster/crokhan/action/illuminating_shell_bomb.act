@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/flash01.ani`
+	[SUB ANI]
+		`../animation/flash02.ani`	0	0
+		`../animation/flash03.ani`	0	0
+		`../animation/flash04.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`FLASH_BOMB`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[FRONTSIDE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[blind]
+		100	70	15000	20	50
+	[ACTIVE STATUS]
+	[confuse]
+		100	70	15000	1
+[/BEHAVIOR]

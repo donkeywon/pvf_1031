@@ -1,0 +1,35 @@
+#PVF_File
+
+[width]
+	200	70
+
+[floating height]
+	0
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[do not pass]`
+
+[basic action]
+	`Action/bunker.act`
+
+[etc action]
+	`Action/bunker_warning.act`
+	`Action/bunker_open.act`
+	`Action/bunker_destroy.act`
+	`Action/bunker.act`
+[/etc action]
+
+[hp max]
+	3500000
+
+[hp destroy]
+	1
+
+[object destroy condition]
+	`[destroy action]`
+	`[object create after destroy]`
+	`[add object index]`	1	10509
+[/object destroy condition]

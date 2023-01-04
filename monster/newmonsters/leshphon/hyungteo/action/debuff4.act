@@ -1,0 +1,77 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack2.ani`
+	[SUB ANI]
+		`../animation/wp/attack2.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		0	
+		[equipment physical attack]
+		[%]
+			100.0
+		[equipment physical defense]
+		[%]
+			100.0
+		[hp max]
+		[%]
+			100.0
+		[equipment magical attack]
+		[%]
+			100.0
+		[equipment magical defense]
+		[%]
+			100.0
+		[all active status resistance]
+		[%]
+			100.0
+		[all element]
+		[%]
+			100.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[OFF]
+	[TRIGGER]
+		2
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`move2.act`
+[/BEHAVIOR]

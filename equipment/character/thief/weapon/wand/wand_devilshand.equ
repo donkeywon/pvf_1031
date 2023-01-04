@@ -1,0 +1,140 @@
+#PVF_File
+
+[name]
+	`恶魔之手`
+
+[name2]
+	`Devil's Hand`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入减速状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入减速状态20秒； 减速状态下的敌人， 将减少17%%的移动速度和攻击速度。 (若敌人高于Lv35， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	37
+
+[rarity]
+	2
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	35
+
+[magical attack]
+	24
+
+[attack speed]
+	-100
+
+[price]
+	51800
+
+[repair price]
+	41440
+
+[value]
+	41440
+
+[equipment physical attack]
+	268	255
+
+[equipment magical attack]
+	382	363
+
+[separate attack]
+	164	109
+
+[magical critical hit]
+	5
+
+[skill levelup]
+	`[thief]`	49	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/thief/wand.img`	22
+
+[field image]
+	`Item/field_weapon.img`	18
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[thief]`
+
+[variation]
+	1	6
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2300
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[active status]
+		`slow`	35	17	17
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

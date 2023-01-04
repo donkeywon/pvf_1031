@@ -1,0 +1,64 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Changemotion.ani`
+	[SOUND]
+		`RIZARD_SKILL_01`	0
+		`DRAGONMAN_ATK`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		0	
+		[physical attack]
+		[+]
+			100.0
+		[equipment physical defense]
+		[%]
+			-30.0
+		[attack speed]
+		[%]
+			30.0
+		[move speed]
+		[%]
+			150.0
+		[hit recovery]
+		[%]
+			10.0
+		[all active status resistance]
+		[%]
+			-10.0
+		[all element]
+		[%]
+			-10.0
+	[/APPENDAGE]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`_Stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`_Move.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`_Damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`_Damage2.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		`_Down.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`_Sit.act`
+[/BEHAVIOR]

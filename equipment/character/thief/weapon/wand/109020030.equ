@@ -1,0 +1,136 @@
+#PVF_File
+
+[name]
+	`魂天宿 - 离歌`
+
+[name2]
+	``
+
+[basic explain]
+	`施放[暗影蛛丝阵]时， 有15%%的几率重置自身技能的冷却时间。 (在决斗场中几率为5%%)`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[magical attack]
+	55
+
+[attack speed]
+	-100
+
+[price]
+	134400
+
+[repair price]
+	112896
+
+[value]
+	107520
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	649	609
+
+[equipment magical attack]
+	925	867
+
+[separate attack]
+	481	327
+
+[magical critical hit]
+	5
+
+[skill levelup]
+	`[thief]`	35	2
+	`[thief]`	53	1
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/thief/wand/wand.img`	105
+
+[field image]
+	`Item/field_weapon.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	26	0
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2300
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[if]
+	[use skill]
+		`thief`	53
+	[/use skill]
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		15
+	[skill cooltime reset]
+		53
+		`%`	-100
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

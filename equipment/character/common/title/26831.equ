@@ -1,0 +1,114 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	``
+
+[explain]
+	`攻击时， 有5%%的几率召唤出与自身Lv相同的1只变异牛头巨兽协助召唤者攻击敌人， 变异牛头巨兽存在30秒。 (在决斗场中无效)`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[physical attack]
+	20
+
+[physical defense]
+	20
+
+[magical attack]
+	20
+
+[magical defense]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[move speed]
+	20
+
+[HP MAX]
+	200
+
+[MP MAX]
+	200
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[icon]
+	`Item/Title/title.img`	458
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/jumping_with_taw.ani`
+[/custom animation]
+
+[no random]
+
+[jump power]
+	20
+
+[usable period]
+	30
+
+[room list move speed rate]
+	0.1
+
+[if]
+	[cooltime]
+		60000
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[summon monster]
+		61154	-1	1
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

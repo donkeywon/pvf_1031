@@ -1,0 +1,65 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/cliff_falling.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			400
+		[ZPOS]
+		[<=]
+			100
+		[ZPOS]
+		[>=]
+			-100
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			200
+		[ZPOS]
+		[>=]
+			10
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[STRAIGHT MOVE]
+		[AXIS]
+		[Z]
+		[MOVING MOTION]
+		[JUMP]
+		[TIME]
+			4000
+		[DAMAGE HP]
+			0
+	[/STRAIGHT MOVE]
+	[SET SHADOW]
+		1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SHADOW]
+		0
+[/BEHAVIOR]

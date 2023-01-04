@@ -1,0 +1,185 @@
+#PVF_File
+
+[name]
+	`惊月流云扫把`
+
+[name2]
+	``
+
+[basic explain]
+	`[苍蝇拍]、 [超级苍蝇拍]技能失败率 -10%%
+[苍蝇拍]、 [超级苍蝇拍]大成功率 +10%%
+
+攻击时， 有1%%的几率使[炽炎星陨]、 [冰天震地]、 [风暴漩涡]的能量消耗值减少30%%， 效果持续15秒。
+攻击时， 可对敌人附加10%%的伤害。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[magical attack]
+	56
+
+[attack speed]
+	60
+
+[move speed]
+	30
+
+[price]
+	153000
+
+[repair price]
+	128520
+
+[value]
+	122400
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	824	764
+
+[equipment magical attack]
+	906	840
+
+[separate attack]
+	504	343
+
+[skill levelup]
+	`[mage]`	95	2
+	`[mage]`	115	1
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/mage/broom/broom.img`	78
+
+[field image]
+	`Item/field_weapon.img`	10
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[mage]`
+
+[variation]
+	27	1
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	27	1
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BROOM_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`broom`
+
+[cool time]
+	10000
+
+[routing priority]
+	`mage`	4
+[/routing priority]
+
+[required skill]
+	91
+
+[skill data up]
+	`[mage]`	95	`[all]`	`[static]`	0	`+`	-100
+	`[mage]`	95	`[all]`	`[static]`	2	`+`	100
+	`[mage]`	115	`[all]`	`[static]`	0	`+`	-100
+	`[mage]`	115	`[all]`	`[static]`	2	`+`	100
+[/skill data up]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		15000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		1
+	[duration]
+		10000
+	[skill data up]
+		`[creator mage]`	133	`[all]`	`[static]`	2	`%`	-30
+		`[creator mage]`	136	`[all]`	`[static]`	1	`%`	-30
+		`[creator mage]`	249	`[all]`	`[static]`	2	`%`	-30
+	[/skill data up]
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	68

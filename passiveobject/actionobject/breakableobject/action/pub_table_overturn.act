@@ -1,0 +1,138 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/pub_table_overturn.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[LAST ATTACKER]
+	[CHECKUP]
+		[IS TEAM]
+			[MONSTER TEAM]
+		[/IS TEAM]
+		[IS FRONTPOS]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[LAST ATTACKER]
+	[CHECKUP]
+		[IS TEAM]
+			[MONSTER TEAM]
+		[/IS TEAM]
+		[IS BACKPOS]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[LAST ATTACKER]
+	[CHECKUP]
+		[IS TEAM]
+			[CHARCTER TEAM]
+		[/IS TEAM]
+		[IS FRONTPOS]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[LAST ATTACKER]
+	[CHECKUP]
+		[IS TEAM]
+			[CHARCTER TEAM]
+		[/IS TEAM]
+		[IS BACKPOS]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			200
+		[Z AXIS]
+			400
+	[/SET SPEED]
+	[SET TEAM]
+		100
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			-200
+		[Z AXIS]
+			400
+	[/SET SPEED]
+	[SET TEAM]
+		100
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			200
+		[Z AXIS]
+			400
+	[/SET SPEED]
+	[SET TEAM]
+		0
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			-200
+		[Z AXIS]
+			400
+	[/SET SPEED]
+	[SET TEAM]
+		0
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

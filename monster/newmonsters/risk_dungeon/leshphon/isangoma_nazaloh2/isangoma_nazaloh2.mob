@@ -1,0 +1,141 @@
+#PVF_File
+
+[name]
+	`咒术师纳扎罗`
+
+[face image]
+	`Monster/MonsterFace.img`	502
+
+[die effect]
+	0	10	0
+
+[category]
+	`[devil]`
+[/category]
+
+[ambient sound]
+	`GACKLE_AMB`
+
+[attack sound]
+	``
+
+[appear sound]
+	`R_GACKLE_MEET`
+
+[damage sound]
+	`R_GACKLE_DMG`
+
+[die sound]
+	`R_GACKLE_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	200
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	220
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+	`[HP MAX]`	`*`	823
+[/ability category]
+
+[level]
+	100	100
+
+[move speed]
+	400	400
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	60000	60000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[waiting action]
+	`../isangoma_nazaloh/Action/Stay.act`
+
+[move action]
+	`../isangoma_nazaloh/Action/move.act`
+
+[sit action]
+	`../isangoma_nazaloh/Action/sit.act`
+
+[damage action 1]
+	`../isangoma_nazaloh/Action/damage1.act`
+
+[damage action 2]
+	`../isangoma_nazaloh/Action/damage2.act`
+
+[down action]
+	`../isangoma_nazaloh/Action/down.act`
+
+[overturn action]
+	`../isangoma_nazaloh/Action/overturn.act`
+
+[attack action]
+	`Action2/casting1.act`
+	`Action2/casting2.act`
+	`Action2/casting3.act`
+	`Action2/casting_attack.act`
+	`Action2/casting_summon.act`
+[/attack action]
+
+[attack info]
+	`../isangoma_nazaloh/AttackInfo/attack.atk`
+	``
+	``
+	``
+	``
+[/attack info]
+
+[cooltime]
+	5000	5000	5000	100	10000
+[/cooltime]
+
+[destination change term]
+	400
+
+[ai pattern]
+	[easy]
+		`../isangoma_nazaloh/ai/Event.ai`
+		`../isangoma_nazaloh/ai/DestinationSelect.ai`
+		`ai/Action2.ai`
+		`../isangoma_nazaloh/ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`../isangoma_nazaloh/ai/Event.ai`
+		`../isangoma_nazaloh/ai/DestinationSelect.ai`
+		`ai/Action2.ai`
+		`../isangoma_nazaloh/ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`../isangoma_nazaloh/ai/Event.ai`
+		`../isangoma_nazaloh/ai/DestinationSelect.ai`
+		`ai/Action2.ai`
+		`../isangoma_nazaloh/ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`../isangoma_nazaloh/ai/Event.ai`
+		`../isangoma_nazaloh/ai/DestinationSelect.ai`
+		`ai/Action2.ai`
+		`../isangoma_nazaloh/ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`../isangoma_nazaloh/ai/Event.ai`
+		`../isangoma_nazaloh/ai/DestinationSelect.ai`
+		`ai/Action2.ai`
+		`../isangoma_nazaloh/ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[vision]
+	1000
+
+[lie frame]
+	2	2	3	3	4

@@ -1,0 +1,187 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Casting4.ani`
+	[SUB ANI]
+		`../Animation/weapon/Casting3.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`SE_KBOX`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[ALL OUR TEAM]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			19511
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	50
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		19	19
+	[WHICH]
+	[ALL OUR TEAM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+	[RANDOM SELECT]
+		1	2	3	4	5	6	7
+	[/RANDOM SELECT]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	3	4	5	6	7
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		30000	
+		[physical attack]
+		[+]
+			0
+		[magical attack]
+		[+]
+			0
+		[physical defense]
+		[+]
+			0
+		[magical defense]
+		[+]
+			0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		30000	
+		[physical attack]
+		[+]
+			50
+		[magical attack]
+		[+]
+			50
+		[physical defense]
+		[+]
+			50
+		[magical defense]
+		[+]
+			50
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		30000	
+		[physical attack]
+		[+]
+			100
+		[magical attack]
+		[+]
+			100
+		[physical defense]
+		[+]
+			100
+		[magical defense]
+		[+]
+			100
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		30000	
+		[physical attack]
+		[+]
+			150
+		[magical attack]
+		[+]
+			150
+		[physical defense]
+		[+]
+			150
+		[magical defense]
+		[+]
+			150
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		30000	
+		[physical attack]
+		[+]
+			200
+		[magical attack]
+		[+]
+			200
+		[physical defense]
+		[+]
+			200
+		[magical defense]
+		[+]
+			200
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		30000	
+		[physical attack]
+		[+]
+			250
+		[magical attack]
+		[+]
+			250
+		[physical defense]
+		[+]
+			250
+		[magical defense]
+		[+]
+			250
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		30000	
+		[physical attack]
+		[+]
+			300
+		[magical attack]
+		[+]
+			300
+		[physical defense]
+		[+]
+			300
+		[magical defense]
+		[+]
+			300
+	[/APPENDAGE]
+[/BEHAVIOR]

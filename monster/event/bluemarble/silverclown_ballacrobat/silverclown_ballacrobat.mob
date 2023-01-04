@@ -1,0 +1,156 @@
+#PVF_File
+
+[name]
+	`波洛洛`
+
+[category]
+	`[human]`
+[/category]
+
+[damage sound]
+	`R_NORMALSILVER_DMG`
+
+[die sound]
+	`NORMALSILVER_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	120
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	80
+	`[HP MAX]`	`*`	140
+[/ability category]
+
+[level]
+	50	50
+
+[move speed]
+	900	900
+
+[attack speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	60000	60000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[item]
+	3275	2000
+[/item]
+
+[common champion drop item]
+[/common champion drop item]
+
+[common champion elemental property]
+	`[fire element]`
+	`[water element]`
+	`[dark element]`
+	`[light element]`
+	`[no element]`
+[/common champion elemental property]
+
+[die effect]
+	0	1	1
+
+[face image]
+	`Monster/MonsterFace.img`	426
+
+[waiting action]
+	`Action/Stone_Stay.act`
+
+[move action]
+	`Action/Stone_Move.act`
+
+[sit action]
+	`Action/Stone_Sit.act`
+
+[damage action 1]
+	`Action/Stone_Damage1.act`
+
+[damage action 2]
+	`Action/Stone_Damage2.act`
+
+[down action]
+	`Action/Stone_Down.act`
+
+[overturn action]
+	`Action/Stone_Overturn.act`
+
+[attack action]
+	`Action/Change.act`
+	`Action/Stone_Attack.act`
+	`Action/Summersalt.act`
+	`Action/Kick.act`
+	`Action/A_rara.act`
+[/attack action]
+
+[attack info]
+	``
+	`Attackinfo/jump_atk.atk`
+	`Attackinfo/kick.atk`
+	`Attackinfo/kick.atk`
+	`Attackinfo/kick.atk`
+[/attack info]
+
+[cooltime]
+	300	9000	5000	5000	15000
+[/cooltime]
+
+[think term]
+	200
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep range distance with target]
+	40	0	5	5
+
+[warlike]
+	70
+
+[intelligence]
+	70	70	3000
+
+[vision]
+	500
+
+[lie frame]
+	1	2	3	3	4

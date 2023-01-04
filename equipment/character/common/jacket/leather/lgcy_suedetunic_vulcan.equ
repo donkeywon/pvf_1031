@@ -1,0 +1,160 @@
+#PVF_File
+
+[name]
+	`传承 : 摩羯守护神的狼皮长袍`
+
+[name2]
+	`Legacy : Suede Tunic of Vulcan`
+
+[grade]
+	67
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	65
+
+[physical attack]
+	43
+
+[magical attack]
+	27
+
+[magical defense]
+	16
+
+[price]
+	53600
+
+[repair price]
+	47275
+
+[value]
+	42880
+
+[equipment physical defense]
+	1680	1632
+
+[skill levelup]
+	`[gunner]`	7	2
+	`[at gunner]`	7	2
+	`[gunner]`	30	2
+	`[at gunner]`	30	2
+	`[mage]`	14	2
+	`[mage]`	100	2
+	`[at mage]`	8	2
+	`[thief]`	3	2
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/common/coat.img`	229
+
+[field image]
+	`Item/FieldImage.img`	0
+
+[equipment type]
+	`[coat]`	18
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	33
+
+[weight]
+	1900
+
+[item group name]
+	`lt coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 摩羯守护神的狼皮战甲  套装`
+
+[set item]
+	10537	12534	14524	16523	18533
+[/set item]
+
+[set ability]
+	[HP MAX]
+		220
+	[MP MAX]
+		220
+	[physical attack]
+		105
+	[magical attack]
+		105
+	[equipment physical defense]
+		400	400
+	[fire resistance]
+		10
+	[HP regen speed]
+		40
+	[MP regen speed]
+		8
+	[move speed]
+		20
+	[attack speed]
+		40
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福可以使自身增加7%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	70
+	[/then]
+	[skill levelup]
+		`[gunner]`	72	1
+		`[gunner]`	51	2
+		`[at gunner]`	72	1
+		`[at gunner]`	51	2
+		`[gunner]`	58	1
+		`[gunner]`	78	2
+		`[at gunner]`	58	1
+		`[at gunner]`	78	2
+		`[mage]`	10	1
+		`[mage]`	69	2
+		`[mage]`	103	1
+		`[mage]`	104	1
+		`[mage]`	105	1
+		`[mage]`	106	1
+		`[at mage]`	15	1
+		`[at mage]`	13	2
+		`[thief]`	45	1
+		`[thief]`	47	2
+	[/skill levelup]
+[/set ability]
+
+[possible kiri protect]

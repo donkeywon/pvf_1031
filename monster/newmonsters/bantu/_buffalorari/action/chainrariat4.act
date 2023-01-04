@@ -1,0 +1,50 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/ChainRariat.ani`
+	[SUB ANI]
+		`../Animation/ChainRariat_Effect.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`四圈`	0	100
+	[/SPEECH]
+	[SOUND]
+		`RARI_FOUR`	0
+		`R_SKASA_ICEWIND`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		3
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[REVERSE]
+	[SET SPEED]
+		[X AXIS]
+			300
+		[Y AXIS]
+			-150
+	[/SET SPEED]
+[/BEHAVIOR]

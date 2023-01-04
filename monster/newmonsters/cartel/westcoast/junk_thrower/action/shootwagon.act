@@ -1,0 +1,37 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/ShootWagon.ani`
+	[SUB ANI]
+		`../animation/Whisker/ShootWagon.ani`	0	0
+		`../animation/Top/ShootWagon.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`尝尝手推车吧！`	0	100
+	[/SPEECH]
+	[SOUND]
+		`THROWER_CATCH_REARCAR`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8000
+		[PARTICLE FILENAME]
+			`../particle/JunkWagon.ptl`
+		[LEVEL]
+			40
+		[POS]
+			63	0	89
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,55 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_2.ani`
+	[SUB ANI]
+		`../Animation/attack_2_eff.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`嗨，小鬼！`	2	20
+		`嘻嘻嘻~`	2	20
+	[/SPEECH]
+	[SOUND]
+		`R_MAX_ATK`	1
+		`MAX_SHOT`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9952
+		[PARTICLE FILENAME]
+			`../Particle/curve_in.ptl`
+		[LEVEL]
+			1
+		[POS]
+			110	0	90
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9952
+		[PARTICLE FILENAME]
+			`../Particle/curve_out.ptl`
+		[LEVEL]
+			1
+		[POS]
+			110	0	90
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

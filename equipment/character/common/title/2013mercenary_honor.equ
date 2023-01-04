@@ -1,0 +1,118 @@
+#PVF_File
+
+[name]
+	`荣誉的佣兵`
+
+[explain]
+	`攻击时有3%机率30秒之间力量、智能、体力、精神+25，攻击速度、施放速度、移动速度+3%。`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[equipment physical attack]
+	20	15
+
+[equipment magical attack]
+	20	15
+
+[separate attack]
+	30	20
+
+[physical attack]
+	25
+
+[physical defense]
+	25
+
+[magical attack]
+	25
+
+[magical defense]
+	25
+
+[attack speed]
+	30
+
+[move speed]
+	30
+
+[cast speed]
+	30
+
+[stuck]
+	-3
+
+[physical critical hit]
+	3
+
+[magical critical hit]
+	3
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`physical attack`
+		`+`	25
+	[stat]
+		`physical defense`
+		`+`	25
+	[stat]
+		`magical attack`
+		`+`	25
+	[stat]
+		`magical defense`
+		`+`	25
+	[stat]
+		`cast speed`
+		`+`	30
+	[stat]
+		`attack speed`
+		`+`	30
+	[stat]
+		`move speed`
+		`+`	30
+[/then]
+
+[icon]
+	`Item/Title/title_tw.img`	20
+
+[custom animation]
+	`TitleAnimation/mercenary_honor.ani`
+[/custom animation]
+
+[icon mark]
+	`Item/IconMark.img`	64

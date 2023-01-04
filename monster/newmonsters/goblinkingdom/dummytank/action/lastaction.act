@@ -1,0 +1,103 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack1.ani`
+	[SUB ANI]
+		`../Animation/Attack1_Light.ani`	0	0
+		`../Animation/Warning.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`TEMPESTER_ALERT`	0
+		`TEMPESTER_ALERT`	1
+		`TEMPESTER_ALERT`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8371
+		[PARTICLE FILENAME]
+			`../Particle/Fire1.ptl`
+		[LEVEL]
+			40
+		[POS]
+			1400	250	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8371
+		[PARTICLE FILENAME]
+			`../Particle/Fire1.ptl`
+		[LEVEL]
+			40
+		[POS]
+			1400	250	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8371
+		[PARTICLE FILENAME]
+			`../Particle/Fire1.ptl`
+		[LEVEL]
+			40
+		[POS]
+			1400	250	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8371
+		[PARTICLE FILENAME]
+			`../Particle/Fire1.ptl`
+		[LEVEL]
+			40
+		[POS]
+			1400	250	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

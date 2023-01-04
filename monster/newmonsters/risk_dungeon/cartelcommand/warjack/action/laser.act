@@ -1,0 +1,44 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/laser.ani`
+	[SUB ANI]
+		`../animation/laser_ee9.ani`	0	10
+		`../animation/laser_ee8.ani`	0	10
+		`../animation/laser_ee7.ani`	0	10
+		`../animation/laser_ee6.ani`	0	10
+		`../animation/laser_ee5.ani`	0	10
+		`../animation/laser_e1.ani`	0	10
+		`../animation/laser_ee4.ani`	0	11
+		`../animation/laser_ee3.ani`	0	11
+		`../animation/laser_ee2.ani`	0	11
+		`../animation/laser_ee1.ani`	0	11
+		`../animation/laser_ee.ani`	0	11
+		`../animation/laser_e.ani`	0	11
+	[/SUB ANI]
+	[SPEECH]
+		`激光束~！`	2	100
+	[/SPEECH]
+	[SOUND]
+		`WARJACK_SKILL_03_1`	3
+		`LASER_HIT`	3
+		`LASER_HIT`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			-80
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

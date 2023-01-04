@@ -1,0 +1,86 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Die.ani`
+	[SUB ANI]
+		`../Animation/ball/Die.ani`	0	0
+		`../Animation/ball_eff/Die.ani`	0	0
+		`../Animation/ball_eff/Die.ani`	0	0
+		`../Animation/weapon/Die.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`R_DIST_WOOD2`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9057
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			401	271	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9057
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			1053	204	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9057
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			1507	285	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			2512
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[SET TEAM]
+		100
+[/BEHAVIOR]

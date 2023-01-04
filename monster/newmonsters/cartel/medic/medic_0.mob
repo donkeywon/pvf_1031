@@ -1,0 +1,162 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`卡勒特医疗兵`
+
+[face image]
+	`Monster/MonsterFace.img`	285
+
+[die effect]
+	0	4	0
+
+[ability table]
+	0
+
+[common champion elemental property]
+	`[fire element]`
+	`[water element]`
+	`[dark element]`
+	`[light element]`
+	`[no element]`
+[/common champion elemental property]
+
+[ability category]
+	`[HP MAX]`	`*`	105
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[category]
+	`[human]`
+	`[melee combat]`
+	`[close-carefully]`
+[/category]
+
+[intelligence]
+	70	70	3000
+
+[appear sound]
+	`KMEDIC_MEET`
+
+[damage sound]
+	`R_KINFANTRY_DMG`
+
+[die sound]
+	`KMEDIC_DIE`
+
+[ambient sound]
+	`KMEDIC_AMB`
+
+[level]
+	40	50
+
+[move speed]
+	700	700
+
+[attack speed]
+	500	500
+
+[hit recovery]
+	600	600
+
+[weight]
+	65000	65000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[warlike]
+	50
+
+[keep distance with target]
+	330
+
+[item]
+[/item]
+
+[common champion drop item]
+[/common champion drop item]
+
+[waiting action]
+	`../../../Event/BlueMarble/medic/Action/Stay_1.act`
+
+[move action]
+	`../../../Event/BlueMarble/medic/Action/Move_1.act`
+
+[sit action]
+	`../../../Event/BlueMarble/medic/Action/Sit_1.act`
+
+[damage action 1]
+	`../../../Event/BlueMarble/medic/Action/Damage1_1.act`
+
+[damage action 2]
+	`../../../Event/BlueMarble/medic/Action/Damage2_1.act`
+
+[down action]
+	`../../../Event/BlueMarble/medic/Action/Down_1.act`
+
+[overturn action]
+	`../../../Event/BlueMarble/medic/Action/Overturn_1.act`
+
+[lie frame]
+	0	0	1	1	2
+
+[action list]
+	`../../../Event/BlueMarble/medic/Action/Attack_1.act`
+	`../../../Event/BlueMarble/medic/Action/Heal_1.act`
+[/action list]
+
+[attack info]
+	`../../../Event/BlueMarble/medic/AttackInfo/base_1.atk`
+[/attack info]
+
+[cooltime]
+	1500	8000
+[/cooltime]
+
+[think term]
+	200
+
+[destination change term]
+	500
+
+[keep range distance with target]
+	295	0	1	100
+
+[ai pattern]
+	[easy]
+		`../../../Event/BlueMarble/medic/ai/Event_1.ai`
+		`../../../Event/BlueMarble/medic/ai/DestinationSelect_1.ai`
+		`../../../Event/BlueMarble/medic/ai/Action_1.ai`
+		`../../../Event/BlueMarble/medic/ai/MoveMethod_1.ai`
+	[/easy]
+	[hard]
+		`../../../Event/BlueMarble/medic/ai/Event_1.ai`
+		`../../../Event/BlueMarble/medic/ai/DestinationSelect_1.ai`
+		`../../../Event/BlueMarble/medic/ai/Action_1.ai`
+		`../../../Event/BlueMarble/medic/ai/MoveMethod_1.ai`
+	[/hard]
+	[medium]
+		`../../../Event/BlueMarble/medic/ai/Event_1.ai`
+		`../../../Event/BlueMarble/medic/ai/DestinationSelect_1.ai`
+		`../../../Event/BlueMarble/medic/ai/Action_1.ai`
+		`../../../Event/BlueMarble/medic/ai/MoveMethod_1.ai`
+	[/medium]
+	[ultimate]
+		`../../../Event/BlueMarble/medic/ai/Event_1.ai`
+		`../../../Event/BlueMarble/medic/ai/DestinationSelect_1.ai`
+		`../../../Event/BlueMarble/medic/ai/Action_1.ai`
+		`../../../Event/BlueMarble/medic/ai/MoveMethod_1.ai`
+	[/ultimate]
+	[hero]
+		`../../../Event/BlueMarble/medic/ai/Event_1.ai`
+		`../../../Event/BlueMarble/medic/ai/DestinationSelect_1.ai`
+		`../../../Event/BlueMarble/medic/ai/Action_1.ai`
+		`../../../Event/BlueMarble/medic/ai/MoveMethod_1.ai`
+	[/hero]
+[/ai pattern]

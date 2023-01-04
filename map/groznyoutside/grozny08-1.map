@@ -1,0 +1,113 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	61
+[/dungeon]
+
+[type]
+	`[boss]`
+
+[greed]
+	`II II`
+
+[tile]
+	`Tile/GroznyWide.til`
+	`Tile/GroznyWide.til`
+	`Tile/GroznyWide.til`
+	`Tile/GroznyWide.til`
+[/tile]
+
+[extended tile]
+	`Tile/GroznyEx.til`
+	`Tile/GroznyEx.til`
+	`Tile/GroznyEx.til`
+	`Tile/GroznyEx.til`
+[/extended tile]
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/Far.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/Mid.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	1	315	998	260	975	2	730	469
+
+[sound]
+	`M_GROZNY_BOSS`
+	`AMB_WIND_01`
+[/sound]
+
+[animation]
+	`Animation/Tree2.ani`	`[normal]`	893	598	0
+	`Animation/Tree1.ani`	`[normal]`	896	405	0
+	`Animation/Tree1.ani`	`[normal]`	874	316	0
+	`Animation/Tree1.ani`	`[normal]`	844	216	0
+	`Animation/mlupweb2.ani`	`[normal]`	136	206	0
+	`Animation/BigDust.ani`	`[bottom]`	181	296	0
+	`Animation/BigDustBig.ani`	`[bottom]`	558	258	0
+	`Animation/Field0.ani`	`[bottom]`	244	415	0
+	`Animation/Field1.ani`	`[bottom]`	719	408	0
+	`Animation/Field0.ani`	`[bottom]`	435	274	0
+	`Animation/HighWall0.ani`	`[closeback]`	448	-120	0
+	`Animation/HighWall0.ani`	`[closeback]`	224	-120	0
+	`Animation/HighWall1.ani`	`[closeback]`	672	-119	0
+	`Animation/HighWall0.ani`	`[closeback]`	0	-120	0
+[/animation]
+
+[passive object]
+	8049	139	191	0
+[/passive object]
+
+[monster]
+	61320	1	0	290	271	0	1	1	`[fixed]`	`[normal]`
+	61320	1	0	594	271	0	1	1	`[fixed]`	`[normal]`
+	61320	1	0	601	367	0	1	1	`[fixed]`	`[normal]`
+	61320	1	0	290	376	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[NPC]
+	1000	`[left]`	0	0	0
+[/NPC]
+
+[ai character]
+	5603	436	284	0	`[monster]`	`[boss]`	2	0
+[/ai character]
+
+[event monster position]
+	374	404	0
+	349	239	0
+	728	252	0
+	495	329	0
+[/event monster position]
+
+[map name]
+	`PVP 无名`

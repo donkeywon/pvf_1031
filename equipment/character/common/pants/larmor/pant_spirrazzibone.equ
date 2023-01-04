@@ -1,0 +1,106 @@
+#PVF_File
+
+[name]
+	`邪龙的脊骨胫甲`
+
+[name2]
+	`Spirrazzi's BoneArmor Pants`
+
+[basic explain]
+	`攻击时， 有1%%的几率使敌人进入中毒状态。`
+
+[detail explain]
+	`攻击时， 有1%%的几率使敌人进入中毒状态7秒； 中毒状态下的敌人， 每0.5秒受到128点伤害。 (若敌人高于Lv55， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[flavor text]
+	`邪龙还真邪恶， 连骨头都含有这么强烈的毒。  --希泊观察邪龙的骨头时说`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	32
+
+[magical attack]
+	21
+
+[price]
+	62000
+
+[repair price]
+	54684
+
+[value]
+	49600
+
+[equipment physical defense]
+	2100	1920
+
+[icon]
+	`Item/common/pants.img`	105
+
+[field image]
+	`Item/field_equip.img`	6
+
+[equipment type]
+	`[pants]`	20
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	32
+
+[weight]
+	2500
+
+[item group name]
+	`la pants`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		10500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[probability]
+		1
+	[active status]
+		`poison`	55	1800
+[/then]
+
+[set item master]
+	10918
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

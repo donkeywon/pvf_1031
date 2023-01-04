@@ -1,0 +1,137 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/loop_attack_4.ani`
+	[SUB ANI]
+		`../Animation/loop_attack_4_eff.ani`	0	1
+		`../Animation/BlackRoseEffectAppear2.ani`	0	2
+		`../Animation/BlackRoseEffectAppear1.ani`	0	3
+	[/SUB ANI]
+	[SPEECH]
+		`噶！小鬼，还不赖嘛……`	1	100
+	[/SPEECH]
+	[SOUND]
+		`MAX_GUN_CASTING`	0
+		`MAX_GUN`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ABS CASTING]
+		800	6
+	[SET DIRECTION]
+	[TO TARGET]
+	[DIM]
+		`position`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9952
+		[PARTICLE FILENAME]
+			`../Particle/Arrow_down.ptl`
+		[LEVEL]
+			1
+		[POS]
+			95	0	75
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`position`	
+		[=]
+			`position`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`position`	
+		[<=]
+			3
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		1
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			120
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		2
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[>=]
+			121
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		14
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]

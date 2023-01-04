@@ -1,0 +1,118 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/frontfly_attack2.ani`
+	[SUB ANI]
+		`../animation/frontfly_wing1.ani`	0	-10
+		`../animation/howl5.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`BAKAL_RHYTHM_ROAR`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		2	2
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	8000
+	[RHYTHM ACTION]
+		8	9000	10334	
+		[PATTERN]
+		[LEFT]
+			700	0
+		[PATTERN]
+		[UP]
+			500	1
+		[PATTERN]
+		[LEFT]
+			600	1
+		[PATTERN]
+		[UP]
+			400	1
+		[PATTERN]
+		[DOWN]
+			350	1
+		[PATTERN]
+		[RIGHT]
+			600	1
+		[PATTERN]
+		[LEFT]
+			400	1
+		[PATTERN]
+		[UP]
+			500	2
+		[IF SUCCESS]
+			10341	0	10	40
+		[IF FAIL]
+			10339	0	10	40
+	[/RHYTHM ACTION]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time9`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		2
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time9`	
+		[+]
+			9000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[ON]
+	[TRIGGER]
+		2
+	[RESET]
+	[TRIGGER]
+		2
+	[OFF]
+	[SET ACTION]
+	[CUSTOM]
+		5
+	[NOW]
+[/BEHAVIOR]

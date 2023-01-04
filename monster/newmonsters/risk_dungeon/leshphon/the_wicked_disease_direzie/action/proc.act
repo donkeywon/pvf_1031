@@ -1,0 +1,480 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/proc.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[TRIGGER CHECK]
+		[ATTACK]
+			13	1
+		[ON]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[WHICH]
+	[LAST ATTACKER]
+	[CHECKUP]
+		[IS DARK DAMAGE]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+	[DO PROC BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+	[DO PROC BEHAVIOR]
+	[LAST ACTIVE ATTACKER]
+		11
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[TRIGGER CHECK]
+		[ATTACK]
+			14	1
+		[ON]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[WHICH]
+	[LAST ATTACKER]
+	[CHECKUP]
+		[IS FIRE DAMAGE]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		2
+	[DO PROC BEHAVIOR]
+	[LAST ACTIVE ATTACKER]
+		11
+[/TRIGGER]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[TRIGGER CHECK]
+		[ATTACK]
+			17	1
+		[ON]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[WHICH]
+	[LAST ATTACKER]
+	[CHECKUP]
+		[IS LIGHT DAMAGE]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		3
+	[DO PROC BEHAVIOR]
+	[LAST ACTIVE ATTACKER]
+		11
+[/TRIGGER]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[TRIGGER CHECK]
+		[ATTACK]
+			18	1
+		[ON]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[WHICH]
+	[LAST ATTACKER]
+	[CHECKUP]
+		[IS WATER DAMAGE]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		4
+	[DO PROC BEHAVIOR]
+	[LAST ACTIVE ATTACKER]
+		11
+[/TRIGGER]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[TRIGGER CHECK]
+		[ATTACK]
+			12	0
+		[OFF]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[WHICH]
+	[LAST ATTACKER]
+	[CHECKUP]
+		[IS DARK DAMAGE]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[TRIGGER CHECK]
+		[ATTACK]
+			12	0
+		[OFF]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[WHICH]
+	[LAST ATTACKER]
+	[CHECKUP]
+		[IS FIRE DAMAGE]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[TRIGGER CHECK]
+		[ATTACK]
+			12	0
+		[OFF]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[WHICH]
+	[LAST ATTACKER]
+	[CHECKUP]
+		[IS LIGHT DAMAGE]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[TRIGGER CHECK]
+		[ATTACK]
+			12	0
+		[OFF]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[WHICH]
+	[LAST ATTACKER]
+	[CHECKUP]
+		[IS WATER DAMAGE]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		4
+	[OFF]
+	[TRIGGER]
+		5
+	[OFF]
+	[TRIGGER]
+		6
+	[OFF]
+	[TRIGGER]
+		7
+	[OFF]
+	[TRIGGER]
+		9
+	[OFF]
+	[TRIGGER]
+		8
+	[ON]
+	[DIM]
+		`time_aura34`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[SET ACTION]
+	[ATTACK]
+		13
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		4
+	[OFF]
+	[TRIGGER]
+		5
+	[OFF]
+	[TRIGGER]
+		6
+	[OFF]
+	[TRIGGER]
+		7
+	[OFF]
+	[TRIGGER]
+		9
+	[OFF]
+	[TRIGGER]
+		8
+	[ON]
+	[DIM]
+		`time_aura34`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[SET ACTION]
+	[ATTACK]
+		14
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		4
+	[OFF]
+	[TRIGGER]
+		5
+	[OFF]
+	[TRIGGER]
+		6
+	[OFF]
+	[TRIGGER]
+		7
+	[OFF]
+	[TRIGGER]
+		9
+	[OFF]
+	[TRIGGER]
+		8
+	[ON]
+	[DIM]
+		`time_aura34`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[SET ACTION]
+	[ATTACK]
+		17
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		4
+	[OFF]
+	[TRIGGER]
+		5
+	[OFF]
+	[TRIGGER]
+		6
+	[OFF]
+	[TRIGGER]
+		7
+	[OFF]
+	[TRIGGER]
+		9
+	[OFF]
+	[TRIGGER]
+		8
+	[ON]
+	[DIM]
+		`time_aura34`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[SET ACTION]
+	[ATTACK]
+		18
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time_aura34`	
+		[+]
+			8500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO PROC BEHAVIOR]
+	[ME]
+		9
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		4
+	[ON]
+	[TRIGGER]
+		5
+	[ON]
+	[TRIGGER]
+		6
+	[ON]
+	[TRIGGER]
+		7
+	[ON]
+	[TRIGGER]
+		9
+	[ON]
+	[TRIGGER]
+		8
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[TRIGGER CHECK]
+		[ATTACK]
+			12	0
+		[OFF]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[WHICH]
+	[LAST ATTACKER]
+	[CHECKUP]
+		[IS NONE DAMAGE]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		10
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		4
+	[OFF]
+	[TRIGGER]
+		5
+	[OFF]
+	[TRIGGER]
+		6
+	[OFF]
+	[TRIGGER]
+		7
+	[OFF]
+	[TRIGGER]
+		9
+	[OFF]
+	[TRIGGER]
+		8
+	[ON]
+	[DIM]
+		`time_aura34`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[SET ACTION]
+	[ATTACK]
+		19
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		-15
+	[%]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO PROC BEHAVIOR]
+	[ME]
+		12
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[ATTACK]
+		12	0
+	[OFF]
+[/BEHAVIOR]

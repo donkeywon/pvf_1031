@@ -1,0 +1,27 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	1050.0	1130.0	1000.0	1000.0
+			`all`
+			`monster`	62117
+	
+		[think]
+			[last result]
+				`>`	0
+			[true]
+		
+			[think]
+				[set target monster]
+					62117	1
+				[true]
+				[return]
+					6
+			[/think]
+	[false]
+	[return]
+		0
+	[/think]
+	[/think]
+[/ai pattern]

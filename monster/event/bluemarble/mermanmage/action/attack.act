@@ -1,0 +1,55 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack.ani`
+	[SUB ANI]
+		`../Animation/Attack_e2.ani`	0	-10
+		`../Animation/Attack_e.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`啦啦啦~`	1	100
+	[/SPEECH]
+	[SOUND]
+		`MERMAN_WATERATK`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		900	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		1
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10165
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			117	0	-2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Throw2.ani`
+	[SUB ANI]
+		`../Animation/shirts/Throw2.ani`	0	1
+		`../Animation/ac3/Throw2.ani`	0	1
+		`../Animation/back/Throw2.ani`	0	2
+		`../Animation/hat/Throw2.ani`	0	3
+		`../Animation/pants/Throw2.ani`	0	4
+		`../Animation/shoes/Throw2.ani`	0	8
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30047
+		[PARTICLE FILENAME]
+			`../Particle/AimingBomb.ptl`
+		[LEVEL]
+			0
+		[POS]
+			20	0	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

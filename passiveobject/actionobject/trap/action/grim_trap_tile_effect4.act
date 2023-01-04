@@ -1,0 +1,66 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Grim_Trap_Tile_Effect.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time`	
+		[+]
+			2000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61500
+		[LEVEL]
+			41
+		[POS]
+			300	300	300
+		[NO EFFECT]
+		[USE MAP POS]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61500
+		[LEVEL]
+			41
+		[POS]
+			300	250	300
+		[NO EFFECT]
+		[USE MAP POS]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

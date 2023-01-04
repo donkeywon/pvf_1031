@@ -1,0 +1,132 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Fire.ani`
+	[SUB ANI]
+		`../Animation/Fire_aura.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`BOOKCASE_SKILL_01`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[ON]
+	[TRIGGER]
+		2
+	[ON]
+	[TRIGGER]
+		3
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			100
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			100
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			100
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8416
+		[PARTICLE FILENAME]
+			`../Particle/x_move.ptl`
+		[LEVEL]
+			10
+		[POS]
+			10	-50	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8417
+		[PARTICLE FILENAME]
+			`../Particle/x_move.ptl`
+		[LEVEL]
+			0
+		[POS]
+			10	0	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		2
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8417
+		[PARTICLE FILENAME]
+			`../Particle/x_move.ptl`
+		[LEVEL]
+			0
+		[POS]
+			10	50	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		3
+	[OFF]
+[/BEHAVIOR]

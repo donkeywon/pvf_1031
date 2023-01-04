@@ -1,0 +1,175 @@
+#PVF_File
+
+[name]
+	`驱魔法杖`
+
+[name2]
+	`Dispellizer`
+
+[basic explain]
+	`攻击时， 有8%%的几率出现驱散效果。`
+
+[detail explain]
+	`攻击时， 有8%%的几率驱散敌人身上的所有有益状态和Buff。`
+
+[grade]
+	44
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	40
+
+[magical attack]
+	31
+
+[attack speed]
+	-100
+
+[HP MAX]
+	100
+
+[MP MAX]
+	200
+
+[price]
+	70400
+
+[repair price]
+	56320
+
+[value]
+	56320
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	399	361
+
+[equipment magical attack]
+	504	456
+
+[separate attack]
+	245	164
+
+[skill levelup]
+	`[mage]`	28	2
+	`[at mage]`	8	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/mage/staff.img`	25
+
+[field image]
+	`Item/field_weapon.img`	9
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	5	3
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	5	3
+
+[layer variation]
+	2150
+	`at_staffa`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_staffd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	5	3
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`STAFF_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2400
+
+[item group name]
+	`staff`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		8
+	[disenchant]
+		1
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

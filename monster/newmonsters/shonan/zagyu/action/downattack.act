@@ -1,0 +1,46 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/downattack.ani`
+	[SPEECH]
+		`哟， 还有闲心躺在这里？！！`	2	100
+	[/SPEECH]
+	[SOUND]
+		`R_GGANG_ATK_01`	3
+		`BUNKER_HIT_02`	4
+		`R_GGANG_ATK_01`	9
+		`BUNKER_HIT_02`	10
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8207
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			80	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

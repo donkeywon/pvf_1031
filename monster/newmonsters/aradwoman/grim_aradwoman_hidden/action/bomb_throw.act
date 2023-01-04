@@ -1,0 +1,30 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/bomb_throw.ani`
+	[SUB ANI]
+		`../Animation/weapon/Attack1_wp.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8310
+		[PARTICLE FILENAME]
+			`../../../../../PassiveObject/ActionObject/Common/Particle/Throw_wave.ptl`
+		[LEVEL]
+			30
+		[POS]
+			50	0	70
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

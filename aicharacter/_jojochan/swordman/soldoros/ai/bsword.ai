@@ -1,0 +1,153 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check key cooltime]
+			`bsword`
+		[true]
+	
+		[think]
+			[check skill on]
+				40
+			[false]
+			[return str]
+				`buff2`
+			[true]
+		
+			[think]
+				[void]
+					`is target in attack area()`	70.0	20.0	15.0	15.0
+				[true]
+			
+				[think]
+					[void]
+						`check random()`	50	100
+					[true]
+				
+					[think]
+						[check key cooltime]
+							`lig`
+						[true]
+						[return]
+							-1
+						[false]
+						[return str]
+							`lig`
+					[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`combo1`
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`combo2`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`combo2`
+		[/think]
+	[false]
+	[return str]
+		`combo1`
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	120.0	20.0	40.0	40.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`slash`
+			[true]
+		
+			[think]
+				[void]
+					`check random()`	50	100
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`lig`
+					[true]
+					[return]
+						-1
+					[false]
+					[return str]
+						`lig`
+				[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`combo1`
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`combo2`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`combo2`
+		[/think]
+	[false]
+	[return str]
+		`combo1`
+	[/think]
+	[/think]
+	[false]
+	[return str]
+		`slash`
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	180.0	180.0	100.0	100.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`bal`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`bal`
+		[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	780.0	300.0	200.0	200.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`random_dragon`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`random_dragon`
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return str]
+		`bsword`
+	[/think]
+[/ai pattern]

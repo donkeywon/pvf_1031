@@ -1,0 +1,43 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Hisss2.ani`
+	[SOUND]
+		`FLAMETHROWER_FIRE`	4
+	[/SOUND]
+	[SPEECH]
+		`火焰柱！`	0	50
+		`你只能走到这了！`	0	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9434
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9436
+		[PARTICLE FILENAME]
+			`../particle/drop.ptl`
+		[LEVEL]
+			60
+		[POS]
+			170	30	400
+		[WARNING MARK]
+			0	0	100	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

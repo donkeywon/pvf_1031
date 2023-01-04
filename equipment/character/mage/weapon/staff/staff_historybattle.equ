@@ -1,0 +1,183 @@
+#PVF_File
+
+[name]
+	`远古逆袭之厄特尔法杖`
+
+[name2]
+	`Ertel Quarter Staff of Historical Battle`
+
+[basic explain]
+	`施放技能时， 有4%%的几率使自身增加30点智力， 效果持续30秒。
+攻击速度 +1%%`
+
+[flavor text]
+	`蕴含远古战争英雄之灵魂的稀贵武器。`
+
+[grade]
+	59
+
+[rarity]
+	2
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[magical attack]
+	44
+
+[attack speed]
+	-90
+
+[cast speed]
+	10
+
+[move speed]
+	10
+
+[price]
+	82600
+
+[repair price]
+	69384
+
+[value]
+	66080
+
+[equipment physical attack]
+	483	467
+
+[equipment magical attack]
+	610	590
+
+[separate attack]
+	256	173
+
+[skill levelup]
+	`[mage]`	27	1
+	`[mage]`	55	1
+	`[mage]`	59	1
+	`[mage]`	58	1
+	`[at mage]`	28	2
+	`[at mage]`	14	1
+	`[at mage]`	24	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/mage/staff.img`	53
+
+[field image]
+	`Item/field_weapon.img`	9
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[mage]`
+
+[variation]
+	9	0
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	9	0
+
+[layer variation]
+	2150
+	`at_staffa`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_staffd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	9	0
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`STAFF_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2400
+
+[item group name]
+	`staff`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	22
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		4
+	[stat]
+		`magical attack`
+		`+`	30
+[/then]
+
+[possible kiri protect]

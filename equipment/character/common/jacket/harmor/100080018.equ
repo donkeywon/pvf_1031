@@ -1,0 +1,155 @@
+#PVF_File
+
+[name]
+	`传承 : 生命女神的铁合金链甲[活动]`
+
+[name2]
+	``
+
+[grade]
+	37
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	35
+
+[physical attack]
+	22
+
+[physical defense]
+	22
+
+[stuck resistance]
+	10
+
+[HP MAX]
+	150
+
+[price]
+	0
+
+[repair price]
+	29600
+
+[value]
+	0
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	1920	1824
+
+[icon]
+	`Item/IconArmor.img`	158
+
+[field image]
+	`Item/field_equip.img`	10
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[equipment type]
+	`[coat]`	20
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	3600
+
+[item group name]
+	`ha coat`
+
+[cool time]
+	10000
+
+[magical attack]
+	12
+
+[set name]
+	`传承 : 生命女神的铂金重甲  套装`
+
+[set item]
+	100080017	100130014	100280014
+[/set item]
+
+[item overpower part]
+
+[set ability]
+	[HP MAX]
+		200
+	[MP MAX]
+		200
+	[physical attack]
+		53
+	[physical defense]
+		53
+	[magical attack]
+		42
+	[move speed]
+		20
+	[attack speed]
+		20
+	[if]
+		[cooltime]
+			30000
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			20000
+		[probability]
+			2
+		[stat]
+			`stuck resistance`
+			`+`	70
+	[/then]
+	[stuck]
+		-1
+	[fullset basic explain]
+		`被攻击时， 有2%%的几率使自身增加7%%的回避率， 效果持续20秒。
+进入地下城时， 因传承的祝福可以使自身增加5%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	50
+	[/then]
+[/set ability]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]

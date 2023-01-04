@@ -1,0 +1,67 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/suction.ani`
+	[SUB ANI]
+		`../animation/effect/suction_charge_shout.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`你必死无疑！！`	1	30
+	[/SPEECH]
+	[SOUND]
+		`UMTARA_SKILL_05`	0
+		`UMTARA_INHALE`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+		[IS NOT INDEX]
+			60012
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PULL APPENDAGE EX]
+		[SPEED]
+			4.1	2.7
+		[VALIDTIME]
+			1500
+		[USE TARGET]
+			0
+		[OFFSET POS]
+			50	0
+		[MIN DISTANCE]
+			10
+	[/PULL APPENDAGE EX]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		7
+	[NOW]
+[/BEHAVIOR]

@@ -1,0 +1,32 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack2.ani`
+	[SUB ANI]
+		`../Animation/Effect/Swing.ani`	0	0
+		`../Animation/weapon/Attack2.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`R_SE_ATK2`	0
+		`R_STAFF`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`Attack1.act`
+	[CHANGE ATTACKINFO]
+		`../Attackinfo/Swing.atk`
+[/BEHAVIOR]

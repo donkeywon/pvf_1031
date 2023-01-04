@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/cast.ani`
+	[SUB ANI]
+		`../animation/cast_e.ani`	0	0
+		`../animation/cast_e1.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`人偶们，跳舞吧~`	1	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			61232	61233
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`跳吧，哒哒哒~`
+	[SEND MESSAGE]
+	[ATTACK_COMMAND]
+		0
+[/BEHAVIOR]

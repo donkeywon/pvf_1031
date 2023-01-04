@@ -1,0 +1,83 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Eltis_machine.ani`
+	[SUB ANI]
+		`../Animation/Eltis_machine_effect.ani`	0	10
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[DIM]
+		`summoncount`	
+		[=]
+			0
+	[/DIM]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			1320
+		[<=]
+		[GET TIME]
+	[/IF]
+	[IF]
+		`summoncount`	
+		[=]
+			0
+	[/IF]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			11100
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		4
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+	[DIM]
+		`summoncount`	
+		[=]
+			`summoncount`
+		[+]
+			1
+	[/DIM]
+	[DIM]
+		`time`	
+		[=]
+			`time`
+		[+]
+			6000
+	[/DIM]
+[/BEHAVIOR]

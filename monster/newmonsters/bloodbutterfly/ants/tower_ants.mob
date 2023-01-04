@@ -1,0 +1,197 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`食梦蚁群`
+
+[face image]
+	`Monster/MonsterFace.img`	471
+
+[die effect]
+	0	26	0
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	800
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	300
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	190
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	300
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	190
+[/ability category]
+
+[category]
+	`[insect]`
+[/category]
+
+[fire resistance]
+	0	0
+
+[water resistance]
+	0	0
+
+[dark resistance]
+	0	0
+
+[light resistance]
+	0	0
+
+[freeze resistance]
+	0	0
+
+[stun resistance]
+	0	0
+
+[blind resistance]
+	0	0
+
+[stone resistance]
+	0	0
+
+[sleep resistance]
+	10	10
+
+[hold resistance]
+	10	10
+
+[slow resistance]
+	10	10
+
+[curse resistance]
+	0	0
+
+[confuse resistance]
+	10	10
+
+[lightning resistance]
+	0	0
+
+[bleeding resistance]
+	0	0
+
+[poison resistance]
+	10	10
+
+[burn resistance]
+	0	0
+
+[piercing resistance]
+	0	0
+
+[HP regen speed]
+	0	0
+
+[MP regen speed]
+	0	0
+
+[level]
+	30	35
+
+[move speed]
+	750	750
+
+[attack speed]
+	500	500
+
+[cast speed]
+	500	500
+
+[hit recovery]
+	1300	1300
+
+[weight]
+	90000	90000
+
+[lie frame]
+	0	0	0	0	0
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[attack action]
+	`Action/Attack.act`
+	`action/die.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack1_tower.atk`
+	``
+[/attack info]
+
+[cooltime]
+	9000	1000
+[/cooltime]
+
+[atk super on scr]
+	6
+	`[unbreakable]`	-1	-1	-1	-1
+[/atk super on scr]
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	3000
+
+[think term]
+	300
+
+[destination change term]
+	500
+
+[keep distance with target]
+	300
+
+[keep range distance with target]
+	150	20	50	80
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect_Tower.ai`
+		`ai/_Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect_Tower.ai`
+		`ai/_Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect_Tower.ai`
+		`ai/_Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect_Tower.ai`
+		`ai/_Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect_Tower.ai`
+		`ai/_Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

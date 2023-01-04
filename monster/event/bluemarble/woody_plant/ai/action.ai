@@ -1,0 +1,41 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[hp]
+			`%>=`	80
+		[true]
+		[import ai]
+			`Action_attack_1.ai`
+		[false]
+	
+		[think]
+			[hp]
+				`%>=`	30
+			[true]
+			[import ai]
+				`Action_attack.ai`
+			[false]
+		
+			[think]
+				[my active status]
+					9
+				[true]
+				[import ai]
+					`Action_attack.ai`
+				[false]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	4
+					[true]
+					[import ai]
+						`Action_attack.ai`
+					[false]
+					[return]
+						4
+				[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

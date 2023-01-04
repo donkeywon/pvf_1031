@@ -1,0 +1,122 @@
+#PVF_File
+
+[name]
+	`素喃订制双剑`
+
+[name2]
+	`找不到代码name2_37400`
+
+[basic explain]
+	`攻击速度 +3%%
+暴击伤害 +7%%
+无法进行分解。`
+
+[grade]
+	52
+
+[attach type]
+	`[trade]`
+
+[item group name]
+	`twinswd`
+
+[rarity]
+	3
+
+[weight]
+	3100
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[minimum level]
+	48
+
+[icon]
+	`Item/weapon/thief/twinswd.img`	95
+
+[icon mark]
+	`Item/IconMark.img`	52
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	24
+
+[sub type]
+	1
+
+[durability]
+	35
+
+[need material]
+	3323	40
+
+[value]
+	74880
+
+[cool time]
+	10000
+
+[physical attack]
+	36
+
+[equipment physical attack]
+	494	453
+
+[equipment magical attack]
+	387	355
+
+[separate attack]
+	287	192
+
+[attack speed]
+	-50
+
+[physical critical hit]
+	5
+
+[variation]
+	2	1
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	7
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]

@@ -1,0 +1,416 @@
+#PVF_File
+
+[character exp table]
+	2	300
+	3	700
+	4	1200
+	5	1800
+	6	2500
+	7	3300
+	8	4200
+	9	5200
+	10	6300
+	11	7500
+	12	8800
+	13	10200
+	14	11700
+	15	13300
+	16	15000
+	17	16800
+	18	18700
+	19	20700
+	20	22800
+	21	25000
+	22	27300
+	23	29700
+	24	32200
+	25	34800
+	26	37500
+	27	40300
+	28	43200
+	29	46200
+	30	49300
+	31	52500
+	32	55800
+	33	59200
+	34	62700
+	35	66300
+	36	70000
+	37	73800
+	38	77700
+	39	81700
+	40	85800
+	41	90000
+	42	94300
+	43	98700
+	44	103200
+	45	107800
+	46	112500
+	47	117300
+	48	122200
+	49	127200
+	50	132300
+[/character exp table]
+
+[monster fp exp point]
+	61752	100	100
+	61753	100	100
+	61754	100	100
+	61755	100	100
+	61756	100	100
+	61757	100	100
+	61758	100	100
+	61759	100	100
+	700	50	50
+	50064	300	300
+	50065	300	300
+	50066	300	300
+	50067	300	300
+	711	700	700
+[/monster fp exp point]
+
+[level up skill point]
+	30
+
+[barrack count]
+	12200	4
+
+[tower count]
+	12200	8
+
+[barrack fp exp point]
+	10087	300	200
+	10088	300	200
+	10094	300	200
+	10095	300	200
+[/barrack fp exp point]
+
+[tower fp exp point]
+	10089	300	200
+	10090	300	200
+	10091	300	200
+	10092	300	200
+	10096	300	200
+	10097	300	200
+	10098	300	200
+	10099	300	200
+[/tower fp exp point]
+
+[barrack destroy point]
+	30000	300
+[/barrack destroy point]
+
+[equipment reinforce type]
+	[pattern]
+		0
+	[name]
+		``
+	[if]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+[/equipment reinforce type]
+
+[equipment reinforce type]
+	[pattern]
+		1
+	[name]
+		``
+	[if]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[increase critical damage]
+			`%`	10
+		[target]
+			`enemy`
+	[/then]
+[/equipment reinforce type]
+
+[equipment reinforce type]
+	[pattern]
+		2
+	[name]
+		``
+	[if]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`
+		[duration]
+			4000
+		[probability]
+			3
+		[active status]
+			`slow`	65	20	20
+	[/then]
+[/equipment reinforce type]
+
+[equipment reinforce type]
+	[pattern]
+		3
+	[name]
+		``
+	[fire attack]
+		16
+	[water attack]
+		16
+	[dark attack]
+		16
+	[light attack]
+		16
+[/equipment reinforce type]
+
+[equipment reinforce type]
+	[pattern]
+		4
+	[name]
+		``
+	[physical critical hit]
+		15
+[/equipment reinforce type]
+
+[equipment reinforce type]
+	[pattern]
+		5
+	[name]
+		``
+	[equipment physical defense]
+		1000	1000
+[/equipment reinforce type]
+
+[equipment reinforce type]
+	[pattern]
+		6
+	[name]
+		``
+	[HP MAX]
+		2000
+	[HP regen speed]
+		500
+[/equipment reinforce type]
+
+[equipment reinforce type]
+	[pattern]
+		7
+	[name]
+		``
+	[HP drain]
+		20
+[/equipment reinforce type]
+
+[equipment reinforce type]
+	[pattern]
+		8
+	[name]
+		``
+	[magical critical hit]
+		15
+[/equipment reinforce type]
+
+[equipment reinforce type]
+	[pattern]
+		9
+	[name]
+		``
+	[equipment magical defense]
+		1000	1000
+[/equipment reinforce type]
+
+[equipment reinforce type]
+	[pattern]
+		10
+	[name]
+		``
+	[MP MAX]
+		2000
+	[MP regen speed]
+		500
+[/equipment reinforce type]
+
+[equipment reinforce type]
+	[pattern]
+		11
+	[name]
+		``
+	[MP drain]
+		20
+[/equipment reinforce type]
+
+[equipment reinforce type]
+	[pattern]
+		12
+	[name]
+		``
+	[stuck resistance]
+		10
+[/equipment reinforce type]
+
+[equipment reinforce type]
+	[pattern]
+		13
+	[name]
+		``
+	[stuck]
+		-10
+[/equipment reinforce type]
+
+[equipment reinforce type]
+	[pattern]
+		14
+	[name]
+		``
+	[all activestatus resistance]
+		10
+[/equipment reinforce type]
+
+[equipment reinforce type]
+	[pattern]
+		15
+	[name]
+		``
+	[all elemental resistance]
+		16
+[/equipment reinforce type]
+
+[equipment reinforce type]
+	[pattern]
+		16
+	[name]
+		``
+	[move speed]
+		100
+[/equipment reinforce type]
+
+[equipment reinforce type]
+	[pattern]
+		17
+	[name]
+		``
+	[attack speed]
+		100
+[/equipment reinforce type]
+
+[equipment reinforce type]
+	[pattern]
+		18
+	[name]
+		``
+	[cast speed]
+		100
+[/equipment reinforce type]
+
+[equipment reinforce type]
+	[pattern]
+		19
+	[name]
+		``
+[/equipment reinforce type]
+
+[equipment reinforce type]
+	[pattern]
+		20
+	[name]
+		``
+[/equipment reinforce type]
+
+[equipment reinforce type]
+	[pattern]
+		21
+	[name]
+		``
+	[if]
+		[attack condition]
+			`counter`
+	[/if]
+	[then]
+		[target]
+			`enemy`
+		[add absolute damage]
+			`all`
+			`%`	30
+	[/then]
+[/equipment reinforce type]
+
+[equipment reinforce type]
+	[pattern]
+		22
+	[name]
+		``
+[/equipment reinforce type]
+
+[equipment definition]
+	[category]
+	[weapon]
+	[fp cost]
+		300
+	[reinforce max]
+		5
+	[use patterns]
+		4	0	1	2	3
+[/equipment definition]
+
+[equipment definition]
+	[category]
+	[coat]
+	[fp cost]
+		300
+	[reinforce max]
+		5
+	[use patterns]
+		4	4	5	6	7
+[/equipment definition]
+
+[equipment definition]
+	[category]
+	[pants]
+	[fp cost]
+		300
+	[reinforce max]
+		5
+	[use patterns]
+		4	8	9	10	11
+[/equipment definition]
+
+[equipment definition]
+	[category]
+	[shoulder]
+	[fp cost]
+		300
+	[reinforce max]
+		5
+	[use patterns]
+		4	12	13	14	15
+[/equipment definition]
+
+[equipment definition]
+	[category]
+	[shoes]
+	[fp cost]
+		300
+	[reinforce max]
+		5
+	[use patterns]
+		3	16	17	18
+[/equipment definition]
+
+[equipment definition]
+	[category]
+	[amulet]
+	[fp cost]
+		300
+	[reinforce max]
+		5
+	[use patterns]
+		4	19	20	21	22
+[/equipment definition]

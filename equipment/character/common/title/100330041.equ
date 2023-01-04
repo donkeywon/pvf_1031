@@ -1,0 +1,99 @@
+#PVF_File
+
+[name]
+	`白金版五月的伴娘[赛丽亚]`
+
+[name2]
+	``
+
+[explain]
+	`穿戴时， 每隔40秒会发动赛丽亚的祝福Buff， 该Buff可以使自身增加45点力量和智力、 30点体力和精神， 效果持续20秒。 (穿戴40秒后生效)`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[physical attack]
+	15
+
+[physical defense]
+	10
+
+[magical attack]
+	23
+
+[magical defense]
+	15
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[move speed]
+	20
+
+[HP regen speed]
+	75
+
+[MP regen speed]
+	15
+
+[icon]
+	`Item/Title/title.img`	173
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/bestman_maypl.ani`
+[/custom animation]
+
+[if]
+	[time]
+		40000	1	40000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[stat]
+		`physical attack`
+		`+`	45
+	[stat]
+		`physical defense`
+		`+`	30
+	[stat]
+		`magical attack`
+		`+`	45
+	[stat]
+		`magical defense`
+		`+`	30
+[/then]
+
+[room list move speed rate]
+	0.15
+
+[icon mark]
+	`Item/IconMark.img`	64

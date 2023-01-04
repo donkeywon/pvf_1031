@@ -1,0 +1,52 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/leafAttack.ani`
+	[SOUND]
+		`AGARUM_SKILL_03`	0
+		`SPIN_CIRCLE`	0
+		`WIND_SPIN`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			48173
+		[PARTICLE FILENAME]
+			`../particle/bomb.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	50	100
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			48173
+		[PARTICLE FILENAME]
+			`../particle/bomb.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	100
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			48173
+		[PARTICLE FILENAME]
+			`../particle/bomb.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	-50	100
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

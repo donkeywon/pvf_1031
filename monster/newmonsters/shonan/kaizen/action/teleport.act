@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/teleport.ani`
+	[SUB ANI]
+		`../animation/weapon/teleport.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`幻影步法！`	2	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[WHICH]
+	[CHARACTER]
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+			-140	0	0
+		[MOVE ME]
+	[/TELEPORT]
+	[SET DIRECTION]
+	[TO TARGET]
+[/BEHAVIOR]

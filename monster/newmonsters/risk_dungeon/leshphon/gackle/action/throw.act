@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/throw.ani`
+	[SUB ANI]
+		`../animation/Mucus.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`HOLD`	3
+		`HOLD`	6
+		`GACKLE_SKILL_02`	7
+		`CLAY_SHOOT`	8
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35214
+		[PARTICLE FILENAME]
+			`../particle/mucus.ptl`
+		[LEVEL]
+			0
+		[POS]
+			50	0	40
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

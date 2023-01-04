@@ -1,0 +1,177 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`征服者卡西利亚斯`
+
+[face image]
+	`Monster/MonsterFace.img`	202
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	1500
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	220
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	130
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	430
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	110
+[/ability category]
+
+[category]
+	`[human]`
+	`[melee combat]`
+	`[close-tough]`
+[/category]
+
+[fire resistance]
+	0	0
+
+[water resistance]
+	0	0
+
+[dark resistance]
+	0	0
+
+[light resistance]
+	0	0
+
+[freeze resistance]
+	1000	1000
+
+[stun resistance]
+	1000	1000
+
+[blind resistance]
+	1000	1000
+
+[stone resistance]
+	1000	1000
+
+[sleep resistance]
+	1000	1000
+
+[hold resistance]
+	1000	1000
+
+[slow resistance]
+	1000	1000
+
+[curse resistance]
+	1000	1000
+
+[confuse resistance]
+	1000	1000
+
+[lightning resistance]
+	1000	1000
+
+[bleeding resistance]
+	1000	1000
+
+[poison resistance]
+	50	50
+
+[level]
+	80	80
+
+[move speed]
+	1200	1200
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	90000	90000
+
+[stuckbonus on damage]
+	10	10	10	10
+
+[warlike]
+	70
+
+[think term]
+	200
+
+[destination change term]
+	1000
+
+[vision]
+	1000
+
+[item]
+[/item]
+
+[targeting bonus]
+	100	0	100	0	0	0	100	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	`[stand]`
+	`[dash]`	0	0
+	`[slow]`
+	`[confuse]`	0
+
+[add gravity in aerial]
+	1	10.0	-300.0
+
+[waiting action]
+	`Action/stay.act`
+
+[move action]
+	`Action/move.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[action list]
+	`Action/attack01.act`
+	`Action/attack02.act`
+	`Action/attack03.act`
+	`Action/move_attack.act`
+	`Action/move_attack02.act`
+[/action list]
+
+[cooltime]
+	6000	7000	8000	9000	10000
+[/cooltime]
+
+[attack info]
+	`attackinfo/Attack1.atk`
+	`attackinfo/Attack2.atk`
+	`attackinfo/Attack3.atk`
+	`attackinfo/MoveSlash.atk`
+	`attackinfo/MoveSlashAfter.atk`
+[/attack info]
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+[/ai pattern]

@@ -1,0 +1,51 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/angel.ani`
+	[SUB ANI]
+		`../animation/GuardFloor1.ani`	0	-7
+		`../animation/GuardFloor7.ani`	0	-6
+		`../animation/GuardFloor6.ani`	0	-5
+		`../animation/GuardFloor5.ani`	0	-4
+		`../animation/GuardFloor4.ani`	0	-3
+		`../animation/GuardFloor3.ani`	0	-2
+		`../animation/GuardFloor2.ani`	0	-1
+		`../animation/angel_e.ani`	0	1
+		`../animation/Heal_casting.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`降临吧！大天使……`	7	100
+	[/SPEECH]
+	[SOUND]
+		`MICA_SKILL_05`	8
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+		[DISTANCE]
+		[<=]
+			250
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		5
+	[%]
+[/BEHAVIOR]

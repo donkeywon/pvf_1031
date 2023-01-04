@@ -1,0 +1,123 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/cliff_falling.ani`
+[/MOTION]
+
+[TRIGGER]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[IS IN AREA]
+			[POS]
+				270	120	0
+			[RANGE]
+				270	300	10
+			[COORDINATE]
+				`ABSOLUTE`
+		[/IS IN AREA]
+		[IS TARGET STATE]
+			0
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		[GET TIME]
+		[>]
+			`time_jump`
+		[+]
+			3000
+	[/IF]
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		[GET TIME]
+		[>]
+			`time_nextmap`
+		[+]
+			15000
+	[/IF]
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time_nextmap`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		0
+	[OFF]
+	[TRIGGER]
+		3
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`time_jump`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		2
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[FORCE JUMP TO]
+		600	200	250
+	[DIM]
+		`time_jump`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[ON]
+	[TRIGGER]
+		2
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		3
+	[OFF]
+	[TELEPORT]
+		[POS]
+			600	200	0
+		[USE MAP POS]
+	[/TELEPORT]
+[/BEHAVIOR]

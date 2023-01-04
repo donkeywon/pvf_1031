@@ -1,0 +1,217 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`Du-1 1号机`
+
+[face image]
+	`Monster/MonsterFace.img`	619
+
+[die effect]
+	0	21	1
+
+[damage sound]
+	`R_GARCHER_DMG`
+
+[die sound]
+	`R_GARCHER_DIE`
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	800
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	150
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	150
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	150
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	150
+[/ability category]
+
+[category]
+	`[machine]`
+[/category]
+
+[HP regen speed]
+	20	20
+
+[MP regen speed]
+	0	0
+
+[fire resistance]
+	100	100
+
+[water resistance]
+	100	100
+
+[dark resistance]
+	100	100
+
+[light resistance]
+	100	100
+
+[freeze resistance]
+	1000	1000
+
+[stun resistance]
+	1000	1000
+
+[blind resistance]
+	1000	1000
+
+[stone resistance]
+	1000	1000
+
+[sleep resistance]
+	1000	1000
+
+[hold resistance]
+	1000	1000
+
+[slow resistance]
+	1000	1000
+
+[curse resistance]
+	1000	1000
+
+[confuse resistance]
+	1000	1000
+
+[lightning resistance]
+	1000	1000
+
+[bleeding resistance]
+	1000	1000
+
+[poison resistance]
+	1000	1000
+
+[burn resistance]
+	1000	1000
+
+[piercing resistance]
+	20	20
+
+[level]
+	85	85
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	60000	60000
+
+[lie frame]
+	1	2	3	3	4
+
+[waiting action]
+	`action/Stay_start.act`
+
+[move action]
+	`action/move_start.act`
+
+[damage action 1]
+	`action/Damage1_start.act`
+
+[damage action 2]
+	`action/Damage2_start.act`
+
+[proc action]
+	`Action/Proc.act`
+
+[attack action]
+	`action/1_Chang_Action.act`
+	`action/Attack1.act`
+	`action/Attack_Move.act`
+	`action/Attack2.act`
+	`action/Attack_Move2.act`
+	`action/Attack3.act`
+	`action/Attack_Move3.act`
+	`action/Attack4.act`
+	`action/Attack_Move4.act`
+	`action/F_Attack.act`
+	`action/Stop_Action.act`
+	`action/Warning.act`
+	`action/Warning2.act`
+[/attack action]
+
+[attack info]
+	``
+	`Attackinfo/Attack.atk`
+	`Attackinfo/Attack.atk`
+	`Attackinfo/Attack.atk`
+	`Attackinfo/Attack.atk`
+	`Attackinfo/Attack.atk`
+	`Attackinfo/Attack.atk`
+	`Attackinfo/Attack.atk`
+	`Attackinfo/Attack.atk`
+	`Attackinfo/Attack.atk`
+	``
+	``
+	``
+[/attack info]
+
+[cooltime]
+	1000	1000	1000	20000	2000	2000	2000	2000	2000	2000	2000	2000	2000
+[/cooltime]
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	1000
+
+[think term]
+	200
+
+[destination change term]
+	200
+
+[keep distance with target]
+	400
+
+[keep range distance with target]
+	20	0	30	20
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/1DestinationSelect.ai`
+		`ai/Action_L.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/1DestinationSelect.ai`
+		`ai/Action_L.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/1DestinationSelect.ai`
+		`ai/Action_L.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/1DestinationSelect.ai`
+		`ai/Action_L.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/1DestinationSelect.ai`
+		`ai/Action_L.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

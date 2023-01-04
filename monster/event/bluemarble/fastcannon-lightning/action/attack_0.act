@@ -1,0 +1,100 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_0.ani`
+	[SUB ANI]
+		`../Animation/Effect/ChargingEffect_R_0.ani`	0	10
+		`../Animation/Effect/ChargingEffect_0.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`LASERCANNON_READY`	0
+		`LASERCANNON_SHOOT`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14076
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			95	0	70
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		5	300
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14077
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			95	0	70
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		5	300
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14078
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			95	0	70
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		5	300
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		2000	2
+	[TRIGGER]
+		2
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		2
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		1
+[/BEHAVIOR]

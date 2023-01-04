@@ -1,0 +1,151 @@
+#PVF_File
+
+[name]
+	`破损的格斗拳套`
+
+[name2]
+	`Peeled Trainer Gloves`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态2秒。 (若敌人高于Lv25， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	25
+
+[rarity]
+	0
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[free]`
+
+[minimum level]
+	25
+
+[attack speed]
+	100
+
+[price]
+	22500
+
+[repair price]
+	18000
+
+[value]
+	16200
+
+[equipment physical attack]
+	214	214
+
+[equipment magical attack]
+	194	194
+
+[separate attack]
+	85	55
+
+[icon]
+	`Item/weapon/fighter/bglove.img`	3
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	19
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	0	1
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	0	1
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		2
+	[active status]
+		`stun`	25
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	62

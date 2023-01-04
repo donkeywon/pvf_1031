@@ -1,0 +1,156 @@
+#PVF_File
+
+[no cooltime]
+
+[minimum info]
+	`地狱之手幽茗`	6	1	1	0	70	0	0	1	0	0	0
+	`no creature`	0	0	0
+
+[additional character status]
+	0	0	0	0	0	0	0	0	0	0	1000	0	0	0	0	0	100	100	100	100	100	100	100	100	100	100	100	100	100	100	100	100	100	0	100	100	100
+[/additional character status]
+
+[character status rate]
+	400	1000	1	3	1	1	1	3	1	3	1	1	1	1	1.2	1.2	4	1	4	1	10	10	10	10	100	100	10	100	1	100	10	100	100	10	100	10	1	0.3	100	100	100
+[/character status rate]
+
+[attack damage rate]
+	0.1
+
+[add equipment status from level]
+	1
+
+[armor subtype]
+	4
+
+[equipment]
+	26697	2	0
+	37675	3	0
+	10536	2	0
+	14523	0	0
+	12533	3	0
+	18532	1	0
+	16522	4	0
+	20136	1	0
+	22148	4	0
+	24163	0	0
+	1760082	2	0
+[/equipment]
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[keep distance with target]
+	400
+
+[warlike]
+	0
+
+[vision]
+	2000
+
+[death tower item]
+	6520	10000
+[/death tower item]
+
+[appearance point]
+	0
+
+[targeting bonus]
+	0	0	0	0	30	0	50	0	0	0	0	0	0	50	0	0	0	0	0	0	100
+	`[down]`	0	100
+	`[stun]`	0
+
+[ai pattern]
+	`Event.ai`
+	`DestinationSelect.ai`
+	`Action.ai`
+	`MoveMethod.ai`
+[/ai pattern]
+
+[proc action]
+	`action/proc.act`
+
+[quick skill]
+	49	22
+	74	1
+	22	20
+	24	1
+	31	5
+	35	23
+[/quick skill]
+
+[limit passiveobject]
+	25001
+[/limit passiveobject]
+
+[skill]
+	32	1
+	19	1
+	10	1
+	26	5
+	29	10
+	30	10
+	44	1
+	1	1
+	9	1
+	23	1
+	181	2
+	182	2
+	184	1
+	179	8
+	170	1
+	62	1
+	61	1
+	169	1
+	190	1
+	70	1
+	71	1
+	72	1
+	73	1
+	174	70
+	146	3
+[/skill]
+
+[key stream]
+	`atk`
+	`atk.key`
+	`atk1`
+	`atk1.key`
+	`special`
+	`special.key`
+	`shield`
+	`shield.key`
+	`atk2`
+	`atk2.key`
+[/key stream]
+
+[key cooltime]
+	`atk`	1500
+	`atk1`	3000
+	`special`	10000
+	`shield`	65000
+	`atk2`	8000
+[/key cooltime]
+
+[speech on situation]
+	[on attack]
+		`去吧……陷入这绝望的沼泽中去吧！！！`	15	2
+	[on attack]
+		`嘻嘻~看到了么？ 一双双充满绝望的手在不停地挣扎……`	15	2
+	[on attack]
+		`那是非常可怕又令人厌恶的……`	10	0
+	[on attack]
+		`哈哈！ 怨恨是非常恐怖的东西……`	10	0
+	[on damage]
+		`嘻嘻嘻~`	30
+	[on damage]
+		`再来啊！`	30
+	[on appear]
+		`无数双手在向你召唤……召唤你来到地狱！！`	100
+	[on die]
+		`诅咒你……总有一天我会亲手抓到你……`	100
+[/speech on situation]

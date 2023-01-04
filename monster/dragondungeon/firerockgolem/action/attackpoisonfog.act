@@ -1,0 +1,438 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AttackPoisonFog/AttackPoisonFog_02_Body.ani`
+	[SUB ANI]
+		`../Animation/AttackPoisonFog/AttackPoisonFog_03_BodyFire_02.ani`	0	-2
+		`../Animation/AttackPoisonFog/AttackPoisonFog_03_BodyFire_01.ani`	0	-1
+		`../Animation/AttackPoisonFog/AttackPoisonFog_02_body_dodge.ani`	0	1
+		`../Animation/AttackPoisonFog/AttackPoisonFog_00_headt.ani`	0	2
+		`../Animation/AttackPoisonFog/AttackPoisonFog_01_headt_dodge.ani`	0	3
+		`../Animation/AttackPoisonFog/AttackPoisonFog_00_Fire_dodge.ani`	0	4
+		`../Animation/AttackPoisonFog/AttackPoisonFog_00_headb.ani`	0	5
+		`../Animation/AttackPoisonFog/AttackPoisonFog_00_headb_dodge.ani`	0	6
+	[/SUB ANI]
+	[SOUND]
+		`BLAZE_GOLEM_ROAR`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		2	3	4	5
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		8
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		9
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		10
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		11
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		12
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		13
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		14
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		15
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		16
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		17
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		16	16
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		18
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[SUMMON OBJECT]
+	[CHECKUP]
+		[IS INDEX]
+			54071
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[SUMMON OBJECT]
+	[CHECKUP]
+		[IS INDEX]
+			54072
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		2
+	[OFF]
+	[TRIGGER]
+		3
+	[OFF]
+	[TRIGGER]
+		4
+	[OFF]
+	[TRIGGER]
+		5
+	[OFF]
+	[TRIGGER]
+		6
+	[OFF]
+	[TRIGGER]
+		7
+	[OFF]
+	[TRIGGER]
+		8
+	[OFF]
+	[TRIGGER]
+		9
+	[OFF]
+	[TRIGGER]
+		10
+	[OFF]
+	[TRIGGER]
+		11
+	[OFF]
+	[TRIGGER]
+		12
+	[OFF]
+	[TRIGGER]
+		13
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		5
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		2
+	[ON]
+	[TRIGGER]
+		3
+	[ON]
+	[TRIGGER]
+		4
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		5
+	[ON]
+	[TRIGGER]
+		6
+	[ON]
+	[TRIGGER]
+		7
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		8
+	[ON]
+	[TRIGGER]
+		9
+	[ON]
+	[TRIGGER]
+		10
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		11
+	[ON]
+	[TRIGGER]
+		12
+	[ON]
+	[TRIGGER]
+		13
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[FLASH SCREEN EX]
+		500	1200	500	100	132	78	255	0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54061
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	280	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+	[ACTIVE STATUS]
+	[poison]
+		100	85	15000	2000
+	[PLAY SOUND]
+		`DARK_KNIGHT_HIT_02`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[FLASH SCREEN EX]
+		500	1200	500	100	121	197	0	0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54062
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	280	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+	[ACTIVE STATUS]
+	[slow]
+		100	85	15000	50	50
+	[PLAY SOUND]
+		`DARK_KNIGHT_HIT_02`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[FLASH SCREEN EX]
+		500	1200	500	100	197	155	0	0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54063
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	280	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+	[ACTIVE STATUS]
+	[confuse]
+		100	85	15000	1
+	[PLAY SOUND]
+		`DARK_KNIGHT_HIT_02`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[FLASH SCREEN EX]
+		500	1200	500	100	78	140	255	0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54064
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	280	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+	[ACTIVE STATUS]
+	[haste]
+		100	85	5000	200	50
+	[PLAY SOUND]
+		`DARK_KNIGHT_HIT_02`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]

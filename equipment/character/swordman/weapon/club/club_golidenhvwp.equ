@@ -1,0 +1,175 @@
+#PVF_File
+
+[name]
+	`树魔的巨蟒槌`
+
+[name2]
+	`Goliden' Heavy Weapon`
+
+[basic explain]
+	`攻击时， 有5%%的几率使敌人进入眩晕状态。
+攻击时， 有2%%的几率生成树魔的树根针刺。`
+
+[detail explain]
+	`攻击时， 有5%%的几率使敌人进入眩晕状态5秒。 (若敌人高于Lv50， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击时， 有2%%的几率生成树魔的树根针刺。`
+
+[flavor text]
+	`我打、 我刺、 我砸……你能阻止我吗？`
+
+[grade]
+	50
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	45
+
+[physical attack]
+	53
+
+[attack speed]
+	-30
+
+[stuck]
+	-1
+
+[need material]
+	3260	750
+
+[repair price]
+	67200
+
+[value]
+	64000
+
+[equipment physical attack]
+	524	471
+
+[equipment magical attack]
+	452	407
+
+[separate attack]
+	285	189
+
+[icon]
+	`Item/weapon/swordman/club.img`	36
+
+[field image]
+	`Item/FieldImage.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	5	1
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	5	1
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`STICK_TOUCH`
+
+[durability]
+	50
+
+[weight]
+	3400
+
+[item group name]
+	`club`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		2000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		5
+	[active status]
+		`stun`	50
+[/then]
+
+[if]
+	[cooltime]
+		1000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[passive object]
+		30039	0	0	0	30	0	``
+	[/passive object]
+[/then]
+
+[routing priority]
+	`swordman`	1
+	`swordman`	3
+	`demonic swordman`	0
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

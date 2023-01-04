@@ -1,0 +1,54 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack3.ani`
+	[SUB ANI]
+		`../animation/effect/attack3.ani`	0	10
+		`../animation/effect/attack3_e.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`咿呀！`	2	30
+	[/SPEECH]
+	[SOUND]
+		`R_GGANG_ATK_03`	1
+		`DRAWING_SWORD`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[CHECK STUCK]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		5	5
+	[DELAY DO BEHAVIOR]
+	[ME]
+		1	300
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+	[SET ACTION]
+	[ATTACK]
+		3
+	[NOW]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]

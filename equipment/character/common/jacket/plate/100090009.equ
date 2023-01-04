@@ -1,0 +1,236 @@
+#PVF_File
+
+[name]
+	`镇魂曲 : 幽游板甲上衣`
+
+[name2]
+	``
+
+[basic explain]
+	`施放[无双击]、 [正义审判]、 [不动明王阵]时， 有12%%的几率不受冷却时间影响。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	35
+
+[physical defense]
+	39
+
+[magical attack]
+	35
+
+[MP MAX]
+	250
+
+[price]
+	136000
+
+[repair price]
+	114240
+
+[value]
+	108800
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	5580	5220
+
+[icon]
+	`item/new_equipment/06_plate/coat/plate_coat.img`	10
+
+[field image]
+	`Item/field_equip.img`	15
+
+[equipment type]
+	`[coat]`	23
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	60
+
+[weight]
+	5000
+
+[item group name]
+	`mt coat`
+
+[cool time]
+	10000
+
+[set name]
+	`镇魂曲 : 幽游板甲  套装`
+
+[set item]
+	100140009	100190009	100240009	100290009	100090009
+[/set item]
+
+[if]
+	[event use skill]
+		`priest`	88
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		12
+	[skill data up]
+		`[priest]`	88	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`priest`	81
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		12
+	[skill data up]
+		`[priest]`	81	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`swordman`	74
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		12
+	[skill data up]
+		`[swordman]`	74	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[set ability]
+	[fullset basic explain]
+		`攻击时， 有5%%的几率发动无尽之镇魂曲Buff， 效果持续5秒。 (发动该Buff时， 可以重置[极冰 · 裂波剑]、 [双子沁盾]、 [狂暴锤击]的冷却时间)
+发动无尽之镇魂曲Buff时， [极冰 · 裂波剑]、 [双子沁盾]的冷却时间减少96%%、 攻击力减少80%%、 MP消耗量减少80%%。
+发动无尽之镇魂曲Buff时， [狂暴锤击]的冷却时间减少97%%、 攻击力减少80%%、 MP消耗量减少80%%。`
+	[if]
+		[attack success]
+			1
+		[character]
+			`swordman`
+		[cooltime]
+			30000
+	[/if]
+	[then]
+		[probability]
+			5
+		[target]
+			`myself`	-1
+		[appendage]
+			172
+		[duration]
+			5000
+		[skill cooltime reset]
+			100
+			`%`	-100
+	[/then]
+	[if]
+		[attack success]
+			1
+		[character]
+			`priest`
+		[cooltime]
+			30000
+	[/if]
+	[then]
+		[probability]
+			5
+		[target]
+			`myself`	-1
+		[appendage]
+			172
+		[duration]
+			5000
+		[skill cooltime reset]
+			109
+			`%`	-100
+	[/then]
+	[if]
+		[attack success]
+			1
+		[character]
+			`priest`
+		[cooltime]
+			30000
+	[/if]
+	[then]
+		[probability]
+			5
+		[target]
+			`myself`	-1
+		[appendage]
+			172
+		[duration]
+			5000
+		[skill cooltime reset]
+			105
+			`%`	-100
+	[/then]
+	[if]
+		[my appendage]
+			172
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			5000
+		[skill data up]
+			`[priest]`	109	`[all]`	`[cooltime]`	0	`%`	-96
+			`[priest]`	109	`[all]`	`[mp]`	0	`%`	-80
+			`[priest]`	109	`[all]`	`[level]`	2	`%`	-80
+			`[priest]`	109	`[all]`	`[level]`	3	`%`	-80
+			`[swordman]`	100	`[all]`	`[cooltime]`	0	`%`	-96
+			`[swordman]`	100	`[all]`	`[mp]`	0	`%`	-80
+			`[swordman]`	100	`[all]`	`[level]`	3	`%`	-80
+			`[swordman]`	100	`[all]`	`[level]`	7	`%`	-80
+			`[priest]`	105	`[all]`	`[cooltime]`	0	`%`	-97
+			`[priest]`	105	`[all]`	`[mp]`	0	`%`	-80
+			`[priest]`	105	`[all]`	`[level]`	0	`%`	-80
+			`[priest]`	105	`[all]`	`[level]`	1	`%`	-80
+			`[priest]`	105	`[all]`	`[level]`	5	`%`	-80
+			`[priest]`	105	`[all]`	`[level]`	9	`%`	-80
+		[/skill data up]
+	[/then]
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

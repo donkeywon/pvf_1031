@@ -1,0 +1,75 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/sera_box.ani`
+	[SUB ANI]
+		`../Animation/sera_box_back.ani`	0	-1
+		`../Animation/sera_box_front.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`BIGGOLEM_ATK_01`	0
+		`SERIA_STORAGE_CRASH`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			5
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			1000
+	[/SET SPEED]
+	[SET FRAME]
+		1
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			19509
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			0	0	-15
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		10	300
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/BoxDestroy.ptl`	0	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

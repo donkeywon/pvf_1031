@@ -1,0 +1,131 @@
+#PVF_File
+
+[name]
+	`九龙阙`
+
+[name2]
+	``
+
+[basic explain]
+	`施放[意念驱动]时， 可以使队员的武器属性变成光属性， 且增加10点光属性强化值， 效果持续10秒。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	84
+
+[stuck]
+	-1
+
+[price]
+	136000
+
+[repair price]
+	114240
+
+[value]
+	108800
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	865	802
+
+[equipment magical attack]
+	742	688
+
+[separate attack]
+	504	343
+
+[light attack]
+	13
+
+[icon]
+	`item/new_equipment/01_weapon/priest/totem/totem.img`	87
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	26	0
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[routing priority]
+	`priest`	2
+[/routing priority]
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[use skill]
+		`priest`	13
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[duration]
+		10000
+	[elemental weapon]
+		`light`
+	[stat]
+		`light attack`
+		`+`	10
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	68

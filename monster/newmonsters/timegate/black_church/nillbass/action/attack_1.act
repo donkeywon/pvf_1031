@@ -1,0 +1,50 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_1.ani`
+	[SUB ANI]
+		`../Animation/eff/attack_1.ani`	0	1
+		`../Animation/eff/attack_1_dust.ani`	0	2
+		`../Animation/eff/attack_1_dust2.ani`	0	3
+	[/SUB ANI]
+	[SPEECH]
+		`咳啊啊！！`	2	20
+	[/SPEECH]
+	[SOUND]
+		`NGRASIA_ATK_02`	1
+		`DGUARDIAN_ATK_3`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			300
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

@@ -1,0 +1,32 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Swordman_Attack3_Final_start.ani`
+	[SUB ANI]
+		`../Animation/ball/Swordman_Attack3_Final_start.ani`	0	0
+		`../Animation/ball_eff/Swordman_Attack3_Final_start.ani`	0	0
+		`../Animation/Skill_eff/Dust1.ani`	0	0
+		`../Animation/Skill_eff/Dust2.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[TARGET]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			320
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		8
+	[NOW]
+[/BEHAVIOR]

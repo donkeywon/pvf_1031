@@ -1,0 +1,107 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	8000.0	8000.0	5000.0	5000.0
+			`all`
+			`monster`	56454
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[my active status]
+					11
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`beel`
+					[true]
+					[return]
+						-1
+					[false]
+					[return]
+						2
+				[/think]
+	[false]
+	[think]
+		[my active status]
+			4
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`sil`
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				1
+		[/think]
+	[false]
+	[think]
+		[my active status]
+			15
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`cure`
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				0
+		[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`heal`
+		[true]
+	
+		[think]
+			[check skill on]
+				180
+			[true]
+			[return]
+				-1
+			[false]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	180
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					4
+			[/think]
+	[/think]
+	[false]
+	[return]
+		5
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`last`
+		[true]
+		[return]
+			-1
+		[false]
+		[return]
+			7
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

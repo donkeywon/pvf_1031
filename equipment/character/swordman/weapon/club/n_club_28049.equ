@@ -1,0 +1,141 @@
+#PVF_File
+
+[name]
+	`素喃订制钝器`
+
+[name2]
+	`找不到代码name2_28049`
+
+[basic explain]
+	`攻击速度 +3%%
+暴击伤害 +7%%
+攻击时以2%%的机率让敌人陷入眩晕状态
+无法进行分解。`
+
+[detail explain]
+	`攻击速度 +3%%
+暴击伤害 +7%%
+攻击时以2%%的机率2秒内让敌人陷入眩晕状态。 (高于Lv42的对象得到的机率和效果减少，低于Lv42的对象则会增加。决斗场内修正为1秒)
+无法进行分解。`
+
+[grade]
+	52
+
+[attach type]
+	`[trade]`
+
+[item group name]
+	`club`
+
+[rarity]
+	3
+
+[weight]
+	3400
+
+[usable job]
+	`[swordman]`
+[/usable job]
+
+[minimum level]
+	48
+
+[icon]
+	`Item/weapon/swordman/club.img`	76
+
+[icon mark]
+	`Item/IconMark.img`	52
+
+[field image]
+	`Item/FieldImage.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[sub type]
+	2
+
+[durability]
+	35
+
+[need material]
+	3323	40
+
+[value]
+	66560
+
+[cool time]
+	10000
+
+[physical attack]
+	54
+
+[equipment physical attack]
+	532	488
+
+[equipment magical attack]
+	460	422
+
+[separate attack]
+	287	192
+
+[stuck]
+	-1
+
+[variation]
+	3	3
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[move wav]
+	`STICK_TOUCH`
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	7
+[/then]
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[reduce duration to human armor at pvp module]
+		50
+	[duration]
+		2000
+	[reduce probability to human armor at pvp module]
+		80
+	[probability]
+		2
+	[active status]
+		`stun`	42
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]

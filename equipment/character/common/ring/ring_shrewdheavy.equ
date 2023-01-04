@@ -1,0 +1,135 @@
+#PVF_File
+
+[name]
+	`敏者的荣誉戒指`
+
+[name2]
+	`Heavy Honor Ring of Shrewd Person`
+
+[grade]
+	63
+
+[rarity]
+	5
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	54
+
+[magical attack]
+	39
+
+[cast speed]
+	20
+
+[anti evil]
+	2
+
+[need material]
+	3228	30
+
+[repair price]
+	50400
+
+[value]
+	50400
+
+[equipment magical defense]
+	2176	2080
+
+[all elemental resistance]
+	2
+
+[icon]
+	`Item/IconAcc.img`	48
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[set name]
+	`敏者的荣誉  套装`
+
+[set item]
+	20121	22116	24126	10505	12503	14493	18500	16492
+[/set item]
+
+[piece set ability]
+	3	
+	[MP MAX]
+		200
+	[physical critical hit]
+		2
+	[magical critical hit]
+		2
+[/piece set ability]
+
+[piece set ability]
+	5	
+	[MP regen speed]
+		9
+	[move speed]
+		20
+	[cast speed]
+		30
+[/piece set ability]
+
+[piece set ability]
+	8	
+	[attack speed]
+		20
+	[if]
+		[target type]
+			`human`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[if]
+		[target type]
+			`undead`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[parameter basic explain]
+		`对人型怪敌人的伤害 +10%%
+对不死族敌人的伤害 +10%%`
+[/piece set ability]
+
+[possible kiri protect]

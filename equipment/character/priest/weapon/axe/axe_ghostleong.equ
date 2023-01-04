@@ -1,0 +1,133 @@
+#PVF_File
+
+[name]
+	`里昂之怒`
+
+[name2]
+	`Axe Having Ghost of Leong`
+
+[basic explain]
+	`攻击时， 有3%%的几率施放里昂的斧之怒。`
+
+[grade]
+	72
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	68
+
+[physical attack]
+	48
+
+[attack speed]
+	-80
+
+[stuck]
+	-2
+
+[price]
+	129600
+
+[repair price]
+	108864
+
+[value]
+	103680
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	821	761
+
+[equipment magical attack]
+	581	539
+
+[separate attack]
+	408	275
+
+[skill levelup]
+	`[priest]`	1	1
+	`[priest]`	11	2
+	`[priest]`	41	3
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/axe.img`	59
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	10	5
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		80
+	[passive object]
+		48102	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

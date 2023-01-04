@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/TombStone1.ani`
+	[SUB ANI]
+		`../Animation/TombStoneGlow21.ani`	0	0
+		`../Animation/TombStoneGlow11.ani`	0	0
+		`../Animation/TombStoneDust1.ani`	0	0
+		`../Animation/TombStone21.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`TOMBSTONE_DROP`	0
+		`TOMBTONE_STUCK`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	500
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

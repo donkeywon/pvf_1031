@@ -1,0 +1,41 @@
+#PVF_File
+
+[use animation]
+	`6_el-p_dodge_2.ani`
+	`2l1`
+
+[use animation]
+	`12_last_dust_normal_1.ani`
+	`2l2`
+
+[use animation]
+	`13_last_dust_dodge_1.ani`
+	`2l3`
+
+[use animation]
+	`12_last_dust_normal_2.ani`
+	`2l4`
+
+[use animation]
+	`13_last_dust_dodge_2.ani`
+	`2l5`
+
+[add]
+	0	1
+	`2l1`
+
+[add]
+	0	2
+	`2l2`
+
+[add]
+	0	3
+	`2l3`
+
+[add]
+	0	4
+	`2l4`
+
+[add]
+	0	5
+	`2l5`

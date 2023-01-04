@@ -1,0 +1,163 @@
+#PVF_File
+
+[name]
+	`泽忒斯`
+
+[face image]
+	`Monster/MonsterFace.img`	413
+
+[category]
+	`[hybrid]`
+	`[melee combat]`
+	`[close-carefully]`
+[/category]
+
+[ambient sound]
+	``
+
+[attack sound]
+	``
+
+[appear sound]
+	``
+
+[damage sound]
+	`AMOR_HIT`
+
+[die sound]
+	``
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	156
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	180
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	156
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	180
+	`[HP MAX]`	`*`	1100
+[/ability category]
+
+[level]
+	60	60
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	700	700
+
+[cast speed]
+	500	500
+
+[hit recovery]
+	800	800
+
+[weight]
+	120000	120000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`action/Overturn.act`
+
+[attack action]
+	`Action/Attack.act`
+	`Action/Pierce.act`
+	`Action/Summon.act`
+	`Action/Change.act`
+	`Action/Change1_1.act`
+	`Action/Attack1_2.act`
+	`Action/Attack2_2.act`
+	`Action/Pierce1_2.act`
+	`Action/Pierce2_2.act`
+	`Action/Summon1_2.act`
+	`Action/Summon2_2.act`
+	`Action/Change1_2.act`
+[/attack action]
+
+[proc action]
+	`action/Proc.act`
+
+[attack info]
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Pierce.atk`
+	``
+	``
+	``
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Pierce.atk`
+	`AttackInfo/Pierce.atk`
+	``
+	``
+	``
+[/attack info]
+
+[cooltime]
+	3000	3000	30000	1000000000	1000000000	3000	3000	3000	3000	70000	70000	1000000000
+[/cooltime]
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[warlike]
+	80
+
+[vision]
+	1000
+
+[lie frame]
+	1	2	2	3	5

@@ -1,0 +1,80 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack_up.ani`
+	[SUB ANI]
+		`../Animation/light/Attack_up.ani`	0	0
+		`../Animation/wp/Attack_up.ani`	0	0
+		`../Animation/Cast3.ani`	0	0
+		`../Animation/Charge1.ani`	0	0
+		`../Animation/Charge2.ani`	0	0
+		`../Animation/Charge3.ani`	0	0
+		`../Animation/Charge4.ani`	0	0
+		`../Animation/Charge5.ani`	0	0
+		`../Animation/Charge6.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`空中分解！`	0	20
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ATTACKINFO]
+		`../AttackInfo/Attack2.atk`
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			19504
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			170	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ATTACKINFO]
+	[DEFAULT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9417
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

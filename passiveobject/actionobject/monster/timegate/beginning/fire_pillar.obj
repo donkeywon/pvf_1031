@@ -1,0 +1,66 @@
+#PVF_File
+
+[hp max]
+	1000000
+
+[hp destroy]
+	1
+
+[floating height]
+	0
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[basic action]
+	`Action/fire_pillar.act`
+
+[attack info]
+	`AttackInfo/fire.atk`
+
+[piercing power]
+	10000
+
+[hp destroy]
+	0
+
+[vanish on move collision]
+	0
+
+[team]
+	100
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[ENEMY]`
+	[homing velocity]
+		400	10
+	[homing check gap]
+		1000
+	[sync animation rotation]
+		0
+	[max rotation]
+		40
+	[init rotation]
+		0
+	[diff rotation]
+		50
+	[homing time]
+		1500
+[/homing]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	2000
+	`[destroy action]`
+	`[object create after destroy]`
+	`[add object index]`	1	13041
+[/object destroy condition]
+
+[name]
+	`天谴飓风 2`

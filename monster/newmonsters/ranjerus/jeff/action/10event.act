@@ -1,0 +1,33 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/ShootOblique.ani`
+	[SUB ANI]
+		`../Animation/Weapon/ShootOblique.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`R_JEFF_SKILL_05`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8226
+		[PARTICLE FILENAME]
+			`../Particle/Oblique_Missile.ptl`
+		[LEVEL]
+			0
+		[POS]
+			55	0	165
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

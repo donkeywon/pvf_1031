@@ -1,0 +1,225 @@
+#PVF_File
+
+[name]
+	`青龙雕纹斗篷`
+
+[name2]
+	`找不到代码name2_440415`
+
+[basic explain]
+	`装备后， 使自身进入伪装状态， 并增加12%%的魔法暴击率和物理暴击率， 以及10%%的暴击伤害， 但是被攻击时所受伤害增加20%%， 效果持续15秒。`
+
+[detail explain]
+	`装备后， 使自身进入伪装状态， 并增加12%%的魔法暴击率和物理暴击率， 以及10%%的暴击伤害， 但是被攻击时所受伤害增加20%%， 效果持续15秒。 (冷却时间为30秒， 解除装备后效果消失； 在决斗场、 竞技大赛和街头争霸中无法进入伪装状态， 且只增加6%%的魔法暴击率和物理暴击率， 以及5%%的暴击伤害； 另被攻击时所受伤害增加10%%)`
+
+[grade]
+	74
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[physical attack]
+	29
+
+[physical defense]
+	29
+
+[magical attack]
+	29
+
+[magical defense]
+	29
+
+[anti evil]
+	2
+
+[need material]
+	4733	80
+
+[repair price]
+	71040
+
+[value]
+	71040
+
+[icon]
+	`Item/common/support.img`	62
+
+[field image]
+	`Item/field_equip.img`	22
+
+[equipment type]
+	`[support]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	700
+
+[item group name]
+	`support`
+
+[cool time]
+	10000
+
+[set name]
+	`青龙雕纹  套装`
+
+[set item]
+	440415	450135
+[/set item]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[time]
+		30000	1	1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		15000
+	[stat]
+		`physical critical hit rate`
+		`+`	12
+	[stat]
+		`magical critical hit rate`
+		`+`	12
+	[appendage]
+		43
+	[appendage]
+		44
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[my appendage]
+		43
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	-20
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[my appendage]
+		43
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	10
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+		`[assault]`
+	[/module]
+	[time]
+		30000	1	1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		15000
+	[stat]
+		`physical critical hit rate`
+		`+`	6
+	[stat]
+		`magical critical hit rate`
+		`+`	6
+	[appendage]
+		43
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+		`[assault]`
+	[/module]
+	[my appendage]
+		43
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	-10
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+		`[assault]`
+	[/module]
+	[my appendage]
+		43
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	5
+[/then]
+
+[set ability]
+	[stuck resistance]
+		20
+	[move speed]
+		15
+	[attack speed]
+		15
+	[cast speed]
+		20
+	[physical critical hit]
+		3
+	[magical critical hit]
+		3
+	[stuck]
+		-1
+[/set ability]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

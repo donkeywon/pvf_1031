@@ -1,0 +1,308 @@
+#PVF_File
+
+[name]
+	`魔之贤者 - 玛丽蕾特`
+
+[basic explain]
+	`施放[光电鳗]、 [雷旋]时， [天雷]剩余冷却时间减少5%%
+施放[冰霜雪人]、 [冰墙]时， [极冰盛宴]剩余冷却时间减少5%%
+施放[暗影夜猫]、 [虚无之球]时， [湮灭黑洞]剩余冷却时间减少5%%
+施放[杰克爆弹]、 [烈焰冲击]时， [杰克降临]剩余冷却时间减少5%%
+施放[魔球连射]时， [元素轰炸]剩余冷却时间减少10%%
+无法进行分解。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[magical attack]
+	55
+
+[attack speed]
+	-100
+
+[need material]
+	3338	1000
+
+[repair price]
+	112896
+
+[value]
+	107520
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	764	716
+
+[equipment magical attack]
+	965	905
+
+[separate attack]
+	481	327
+
+[all elemental attack]
+	6
+
+[icon]
+	`item/new_equipment/01_weapon/mage/staff/staff.img`	103
+
+[field image]
+	`Item/field_weapon.img`	9
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	31	0
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	31	0
+
+[layer variation]
+	2150
+	`at_staffa`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_staffd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	31	0
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`STAFF_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2400
+
+[item group name]
+	`staff`
+
+[cool time]
+	10000
+
+[routing priority]
+	`mage`	1
+	`mage`	2
+	`at mage`	1
+[/routing priority]
+
+[if]
+	[event use skill]
+		`mage`	17
+	[/event use skill]
+	[character]
+		`mage`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill cooltime reset]
+		55
+		`%`	-5
+[/then]
+
+[if]
+	[event use skill]
+		`mage`	31
+	[/event use skill]
+	[character]
+		`mage`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill cooltime reset]
+		55
+		`%`	-5
+[/then]
+
+[if]
+	[event use skill]
+		`mage`	16
+	[/event use skill]
+	[character]
+		`mage`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill cooltime reset]
+		59
+		`%`	-5
+[/then]
+
+[if]
+	[event use skill]
+		`mage`	56
+	[/event use skill]
+	[character]
+		`mage`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill cooltime reset]
+		59
+		`%`	-5
+[/then]
+
+[if]
+	[event use skill]
+		`mage`	18
+	[/event use skill]
+	[character]
+		`mage`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill cooltime reset]
+		58
+		`%`	-5
+[/then]
+
+[if]
+	[event use skill]
+		`mage`	26
+	[/event use skill]
+	[character]
+		`mage`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill cooltime reset]
+		58
+		`%`	-5
+[/then]
+
+[if]
+	[event use skill]
+		`mage`	15
+	[/event use skill]
+	[character]
+		`mage`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill cooltime reset]
+		27
+		`%`	-5
+[/then]
+
+[if]
+	[event use skill]
+		`mage`	57
+	[/event use skill]
+	[character]
+		`mage`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill cooltime reset]
+		27
+		`%`	-5
+[/then]
+
+[if]
+	[event use skill]
+		`at mage`	25
+	[/event use skill]
+	[character]
+		`at mage`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill cooltime reset]
+		30
+		`%`	-10
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,183 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/L_switch_0.ani`
+	[SUB ANI]
+		`../Animation/MonsterSkill_Timeload_00.ani`	0	1
+		`../Animation/MonsterSkill_Timeload_02.ani`	0	2
+		`../Animation/MonsterSkill_Timeload_01.ani`	0	3
+		`../Animation/MonsterSkill_Timeload_01.ani`	0	4
+		`../Animation/MonsterSkill_Timeload_01.ani`	0	5
+		`../Animation/MonsterSkill_Timeload_01.ani`	0	6
+		`../Animation/MonsterSkill_Timeload_01.ani`	0	7
+		`../Animation/MonsterSkill_Timeload_01.ani`	0	8
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			11245
+		[/IS INDEX]
+		[IS OBJECT TYPE]
+			[PASSIVE OBJECT]
+		[/IS OBJECT TYPE]
+		[DISTANCE]
+		[<]
+			20
+	[/CHECKUP]
+	[CHECKED NO]
+	[<=]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			11219
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11219
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			1181	122	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11219
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			1164	138	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11219
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			1173	157	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11219
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			1184	174	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11219
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			1191	201	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11219
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			1209	228	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11219
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			1228	235	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11219
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			1248	247	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11219
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			1263	250	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			63045
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

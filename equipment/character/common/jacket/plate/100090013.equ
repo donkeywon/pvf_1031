@@ -1,0 +1,131 @@
+#PVF_File
+
+[name]
+	`突击队长的玄铁胸甲`
+
+[basic explain]
+	`被攻击时， 可以减少5%%的伤害。
+施放技能时， 有10%%的几率向队友施放Lv1的[圣光守护]。 (冷却时间为60秒)
+HP低于20%%时， 会对自身施放Lv1的[圣光守护]。 (冷却时间为60秒)`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[physical attack]
+	35
+
+[physical defense]
+	38
+
+[magical attack]
+	35
+
+[price]
+	117600
+
+[repair price]
+	98784
+
+[value]
+	94080
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	5460	5160
+
+[skill levelup]
+	`[priest]`	22	2
+[/skill levelup]
+
+[icon]
+	`Item/new_equipment/06_plate/coat/plate_coat.img`	11
+
+[field image]
+	`Item/field_equip.img`	15
+
+[equipment type]
+	`[coat]`	22
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	60
+
+[weight]
+	5000
+
+[item group name]
+	`mt coat`
+
+[cool time]
+	10000
+
+[if]
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	5
+[/then]
+
+[if]
+	[casting]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[probability]
+		10
+	[perform skill]
+		`priest`	22	1	0
+[/then]
+
+[if]
+	[time]
+		1000	1	1000
+	[stat change]
+		`hp`
+		`<`
+		`%`	20
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		5000
+	[perform skill]
+		`priest`	22	1	0
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

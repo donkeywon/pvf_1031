@@ -1,0 +1,165 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`黑夜之影`
+
+[face image]
+	`Monster/MonsterFace.img`	287
+
+[die effect]
+	0	21	0
+
+[ability table]
+	0
+
+[common champion elemental property]
+	`[fire element]`
+	`[water element]`
+	`[dark element]`
+	`[light element]`
+	`[no element]`
+[/common champion elemental property]
+
+[ability category]
+	`[HP MAX]`	`*`	160
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	160
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	120
+[/ability category]
+
+[category]
+	`[human]`
+	`[melee combat]`
+	`[close-carefully]`
+[/category]
+
+[intelligence]
+	50	50	3000
+
+[appear sound]
+	`CLAES_MEET`
+
+[damage sound]
+	`R_CLAES_DMG`
+
+[die sound]
+	`R_CLAES_DIE`
+
+[ambient sound]
+	`CLAES_AMB`
+
+[level]
+	40	50
+
+[move speed]
+	1100	1100
+
+[attack speed]
+	1000	1200
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	80000	80000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[keep distance with target]
+	100
+
+[keep range distance with target]
+	40	0	5	5
+
+[item]
+[/item]
+
+[common champion drop item]
+[/common champion drop item]
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[lie frame]
+	1	2	3	3	4
+
+[item]
+	3227	800
+[/item]
+
+[action list]
+	`Action/Attack1.act`
+[/action list]
+
+[attack info]
+	`AttackInfo/Attack1.atk`
+[/attack info]
+
+[cooltime]
+	3000
+[/cooltime]
+
+[think term]
+	200
+
+[destination change term]
+	500
+
+[keep distance with target]
+	100
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

@@ -1,0 +1,116 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/L1_Change_Start.ani`
+	[SUB ANI]
+		`../Animation/L1_Change_Start_eff.ani`	0	1
+		`../Animation/Change_Start_eff.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`模式转换`	1	100
+	[/SPEECH]
+	[SOUND]
+		`AGENT_A_ATK`	0
+		`MONAHUN_SHOCKWAVE`	8
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16191
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			1
+		[POS]
+			798	463	90
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[FLASH SCREEN]
+		500	2300	500	60	100	0	100
+	[SET DIRECTION]
+	[LEFT]
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[FRAME]
+		1	1
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			16167
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		3
+		`P2_Chang_Start.act`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	1000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		36	36
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		4
+	[NOW]
+[/BEHAVIOR]

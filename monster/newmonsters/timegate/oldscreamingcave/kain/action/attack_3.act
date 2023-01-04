@@ -1,0 +1,63 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_0_stay.ani`
+	[SUB ANI]
+		`../Animation/effect/smoke.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`呵呵，原来躲在这！`	0	50
+		`你想逃吗？`	0	50
+	[/SPEECH]
+	[SOUND]
+		`KANE_SKILL_05`	0
+		`KANE_SHADOWWARP`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			800
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[PLAYER]
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+		[RANDOM]
+			-110	-230
+		[RANDOM]
+			-15	15	0
+		[NOT USE OBJECT ZPOS]
+		[MOVE ME]
+	[/TELEPORT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+[/BEHAVIOR]

@@ -1,0 +1,143 @@
+#PVF_File
+
+[name]
+	`命运之殇兽骨手杖`
+
+[name2]
+	`Beast Bone Wand of Sad Fate`
+
+[basic explain]
+	`攻击人型怪敌人时， 附加50点伤害。
+攻击不死族敌人时， 附加50点伤害。`
+
+[grade]
+	39
+
+[rarity]
+	2
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	38
+
+[magical attack]
+	26
+
+[attack speed]
+	-100
+
+[price]
+	54600
+
+[repair price]
+	43680
+
+[value]
+	43680
+
+[equipment physical attack]
+	284	268
+
+[equipment magical attack]
+	405	382
+
+[separate attack]
+	172	114
+
+[magical critical hit]
+	5
+
+[icon]
+	`Item/weapon/thief/wand.img`	21
+
+[field image]
+	`Item/field_weapon.img`	18
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[thief]`
+
+[variation]
+	1	0
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2300
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[if]
+	[target type]
+		`human`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`+`	50
+[/then]
+
+[if]
+	[target type]
+		`undead`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`+`	50
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

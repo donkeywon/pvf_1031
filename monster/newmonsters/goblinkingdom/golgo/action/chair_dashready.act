@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Server/chair_server2_dashready.ani`
+	[SUB ANI]
+		`../Animation/Server/chair_server1_dashready.ani`	0	1
+		`../Animation/Server/chair_server3_dashready.ani`	0	2
+		`../Animation/Wagon_Back/Wagon_Back_dashready.ani`	0	3
+		`../Animation/chair_dashready.ani`	0	4
+		`../Animation/Stick/Stick_chair_dashready.ani`	0	5
+		`../Animation/Server/chair_server4_dashready.ani`	0	6
+		`../Animation/Server/chair_server5_dashready.ani`	0	7
+		`../Animation/Server/chair_server6_dashready.ani`	0	8
+		`../Animation/Wagon_Front/Wagon_Front_dashready.ani`	0	9
+	[/SUB ANI]
+	[SPEECH]
+		`哈哈哈，看谁敢挡朕的路！`	0	15
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		5
+	[END]
+[/BEHAVIOR]

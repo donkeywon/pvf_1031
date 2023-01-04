@@ -1,0 +1,27 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/skill.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8201
+		[PARTICLE FILENAME]
+			`../Particle/bomb.ptl`
+		[LEVEL]
+			0
+		[POS]
+			50	0	25
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

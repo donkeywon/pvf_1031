@@ -1,0 +1,117 @@
+#PVF_File
+
+[name]
+	`卡勒特的鹿皮夹克`
+
+[basic explain]
+	`施放[远程格挡]时， 无视冷却时间。 (冷却时间10秒)`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[physical attack]
+	35
+
+[magical attack]
+	35
+
+[magical defense]
+	38
+
+[stuck resistance]
+	20
+
+[price]
+	75600
+
+[repair price]
+	63504
+
+[value]
+	60480
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	2184	2064
+
+[skill levelup]
+	`[gunner]`	10	2
+	`[at gunner]`	10	2
+[/skill levelup]
+
+[icon]
+	`Item/new_equipment/03_leather/coat/leather_coat.img`	11
+
+[field image]
+	`Item/FieldImage.img`	0
+
+[equipment type]
+	`[coat]`	19
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	33
+
+[weight]
+	1900
+
+[item group name]
+	`lt coat`
+
+[cool time]
+	10000
+
+[if]
+	[use skill]
+		`gunner`	10
+	[/use skill]
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill data up]
+		`[gunner]`	10	`[all]`	`[cooltime]`	10	`%`	-100
+	[/skill data up]
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	10
+	[/use skill]
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill data up]
+		`[at gunner]`	10	`[all]`	`[cooltime]`	10	`%`	-100
+	[/skill data up]
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

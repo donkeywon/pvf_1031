@@ -1,0 +1,60 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/IceWave.ani`
+	[SUB ANI]
+		`../animation/IceWave_Effect2_2.ani`	0	-10
+		`../Animation/Dust2.ani`	0	-5
+		`../animation/AttackArea.ani`	0	-5
+		`../Animation/Dust1.ani`	0	0
+		`../Animation/Dust3.ani`	0	0
+		`../animation/IceWave_Core.ani`	0	10
+		`../animation/IceWave_Effect1_1.ani`	0	10
+		`../animation/IceWave_Effect1_2.ani`	0	10
+		`../animation/IceWave_Effect2_1.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`GPUNCH_LIGHT`	0
+		`RIKU_SKILL`	0
+		`B_RIKU_ENERGY`	1
+		`B_RIKU_ENERGY_OUT`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		6
+	[END]
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1210	2
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CASTING]
+		1210	1
+[/BEHAVIOR]

@@ -1,0 +1,240 @@
+#PVF_File
+
+[floating height]
+	25
+
+[name]
+	`鲁斯欧拉`
+
+[face image]
+	`Monster/MonsterFace.img`	469
+
+[ambient sound]
+	`RUCY_AMB`
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	685
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	120
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	120
+[/ability category]
+
+[category]
+	`[insect]`
+[/category]
+
+[fire resistance]
+	0	0
+
+[water resistance]
+	0	0
+
+[dark resistance]
+	0	0
+
+[light resistance]
+	0	0
+
+[freeze resistance]
+	30	30
+
+[stun resistance]
+	30	30
+
+[blind resistance]
+	30	30
+
+[stone resistance]
+	30	30
+
+[sleep resistance]
+	30	30
+
+[hold resistance]
+	30	30
+
+[slow resistance]
+	30	30
+
+[curse resistance]
+	30	30
+
+[confuse resistance]
+	30	30
+
+[lightning resistance]
+	0	0
+
+[bleeding resistance]
+	0	0
+
+[poison resistance]
+	10	10
+
+[burn resistance]
+	0	0
+
+[piercing resistance]
+	0	0
+
+[level]
+	66	70
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1200	1200
+
+[weight]
+	90000	90000
+
+[lie frame]
+	1	2	3	3	4
+
+[add gravity in aerial]
+	1	20.0	-300.0
+
+[waiting action]
+	`action/Stay.act`
+
+[move action]
+	`action/Move.act`
+
+[sit action]
+	`action/Sit.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`action/Overturn.act`
+
+[damage action 1]
+	`action/Damage1.act`
+
+[damage action 2]
+	`action/Damage2.act`
+
+[attack action]
+	`Action/attack1.act`
+	`Action/attack2.act`
+	`Action/Butterfly_Attack.act`
+	`Action/Butterfly_Attack1.act`
+	`Action/Butterfly_Attack2.act`
+	`Action/Butterfly_Attack3.act`
+	`Action/Butterfly_Attack4.act`
+	`Action/Butterfly_Attack5.act`
+	`Action/Butterfly_Attack6.act`
+	`Action/Attack1_Grap.act`
+	`Action/Attack3.act`
+	`Action/Attack3_Grap.act`
+	`Action/Butterfly_Attack3_1.act`
+	`Action/Attack1_Slash.act`
+	`Action/Casting.act`
+	`Action/Casting_hero.act`
+[/attack action]
+
+[attack info]
+	``
+	`AttackInfo/Attack2.atk`
+	``
+	`AttackInfo/Butterfly_Attack3.atk`
+	`AttackInfo/Butterfly_Attack3.atk`
+	`AttackInfo/Butterfly_Attack3.atk`
+	`AttackInfo/Butterfly_Attack3.atk`
+	`AttackInfo/Butterfly_Attack3.atk`
+	`AttackInfo/Butterfly_Attack3.atk`
+	`AttackInfo/Kiss_Attack1.atk`
+	``
+	`AttackInfo/Kiss_Attack1.atk`
+	`AttackInfo/Butterfly_Attack3.atk`
+	`AttackInfo/Butterfly_Slash.atk`
+	``
+	``
+[/attack info]
+
+[cooltime]
+	3000	8000	6000	6000	6000	6000	6000	6000	6000	6000	6000	6000	6000	2000	5000	5000
+[/cooltime]
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	800
+
+[think term]
+	600
+
+[destination change term]
+	500
+
+[keep distance with target]
+	300
+
+[keep range distance with target]
+	400	0	20	100
+
+[intelligence]
+	80	80	800
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action_Hero.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Hero_Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action_Hero.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[item]
+	3279	4000	3227	400
+[/item]
+
+[level of difficulty]
+	[easy]
+		-50	3000
+	[medium]
+		-30	2000
+	[hard]
+		0	0
+	[ultimate]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]

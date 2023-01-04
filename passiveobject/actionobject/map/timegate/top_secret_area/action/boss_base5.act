@@ -1,0 +1,80 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/boss_start0.ani`
+	[SUB ANI]
+		`../Animation/boss_start2.ani`	0	1
+		`../Animation/boss_ex3_1.ani`	0	2
+		`../Animation/boss_ex2.ani`	0	3
+		`../Animation/boss_ex2_dodge1.ani`	0	4
+		`../Animation/boss_ex2_dodge2.ani`	0	5
+		`../Animation/boss_ex2_dodge3.ani`	0	6
+		`../Animation/boss_ex2_dodge4.ani`	0	7
+		`../Animation/boss_ex3.ani`	0	8
+		`../Animation/boss_ex1.ani`	0	9
+		`../Animation/boss_ex_line1.ani`	0	10
+		`../Animation/boss_ex_line2.ani`	0	11
+		`../Animation/boss_ex_line3.ani`	0	12
+		`../Animation/boss_ex_line4.ani`	0	13
+		`../Animation/boss_ex_line5.ani`	0	14
+		`../Animation/boss_ex_line6.ani`	0	15
+		`../Animation/boss_ex_line7.ani`	0	16
+		`../Animation/boss_ex_line8.ani`	0	17
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			15050
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[MOVABLE POS ONLY]
+		[FIX DIRECTION]
+		[RIGHT]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35067
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			1
+		[POS]
+			0	60	180
+		[USE MY BASEPOS]
+		[FIX DIRECTION]
+		[RIGHT]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

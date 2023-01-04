@@ -1,0 +1,157 @@
+#PVF_File
+
+[name]
+	`流浪者战镰 [网吧]`
+
+[name2]
+	`找不到代码name2_36013`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入诅咒状态。
+攻击速度 +2%%
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入诅咒状态20秒； 诅咒状态下， 减少30点力量、 体力、 智力和精神。 (若敌人高于Lv30， 则减少进入异常状态的几率； 反之， 则增加几率)
+攻击速度 +2%%
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。`
+
+[grade]
+	34
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	30
+
+[physical attack]
+	25
+
+[magical attack]
+	25
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[stuck]
+	1
+
+[price]
+	54400
+
+[repair price]
+	43520
+
+[value]
+	43520
+
+[equipment physical attack]
+	323	285
+
+[equipment magical attack]
+	340	300
+
+[separate attack]
+	196	130
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	114	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/scythe.img`	23
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	2	5
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		20000
+	[probability]
+		3
+	[active status]
+		`curse`	30	30	30	30	30
+[/then]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

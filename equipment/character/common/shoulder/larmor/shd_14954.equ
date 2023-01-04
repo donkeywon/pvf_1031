@@ -1,0 +1,161 @@
+#PVF_File
+
+[name]
+	`克罗姆的生命护肩`
+
+[name2]
+	`Crom's Bloodsucker Shoulder`
+
+[basic explain]
+	`攻击时， 有15%%的几率使敌人进入出血状态。`
+
+[detail explain]
+	`攻击时， 有15%%的几率使敌人进入出血状态10秒； 出血状态下的敌人， 每0.5秒受到1000点伤害。 (若敌人高于Lv65， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[flavor text]
+	`红色……一定是世上最美丽的颜色~  --克罗姆`
+
+[grade]
+	65
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	27
+
+[physical defense]
+	52
+
+[magical attack]
+	18
+
+[HP regen speed]
+	30
+
+[need material]
+	3285	1500
+
+[repair price]
+	51597
+
+[value]
+	46800
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	1752	1608
+
+[icon]
+	`Item/common/shoulder.img`	236
+
+[field image]
+	`Item/field_equip.img`	7
+
+[equipment type]
+	`[shoulder]`	19
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	1900
+
+[item group name]
+	`la shoulder`
+
+[cool time]
+	10000
+
+[set item master]
+	10964
+
+[if]
+	[module]
+		`[dungeon type]`
+	[/module]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		4000
+	[probability]
+		15
+	[active status]
+		`bleeding`	65	8000
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		10000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		4000
+	[probability]
+		3
+	[active status]
+		`bleeding`	65	3000
+[/then]
+
+[if]
+	[module]
+		`[assault]`
+		`[war room]`
+	[/module]
+	[cooltime]
+		10000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		4000
+	[probability]
+		3
+	[active status]
+		`bleeding`	65	1500
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,62 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Die/Body.ani`
+	[SUB ANI]
+		`../Animation/Die/Jaw.ani`	0	1
+		`../Animation/Die/Head.ani`	0	2
+		`../Animation/Die/Core_Dodge.ani`	0	3
+		`../Animation/Die/Die_Light_Dodge.ani`	0	4
+		`../Animation/Die/Die_Light_Normal_1.ani`	0	5
+		`../Animation/Die/Die_Light_Normal_5.ani`	0	6
+		`../Animation/Die/Die_Light2_Normal_1.ani`	0	7
+		`../Animation/Die/Die_Light_Normal_4.ani`	0	8
+		`../Animation/Die/Die_Light_Normal_3.ani`	0	9
+		`../Animation/Die/Die_Light_Normal_2.ani`	0	10
+		`../Animation/Die/Die_Mid_Dust.ani`	0	11
+		`../Animation/Die/Die_Front_Dust.ani`	0	12
+		`../Animation/Die/Die_Etc_Dust.ani`	0	13
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			54032
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		3
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			54215
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

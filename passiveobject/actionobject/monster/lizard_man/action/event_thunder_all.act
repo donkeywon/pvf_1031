@@ -1,0 +1,54 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Event_Thunder_all.ani`
+	[SOUND]
+		`THUNDERC_LIGHTNING`	1
+	[/SOUND]
+	[SUB ANI]
+		`../Animation/Event_Thunder_all1.ani`	0	0
+		`../Animation/Event_Thunder_all2.ani`	0	0
+		`../Animation/Event_Thunder_all3.ani`	0	0
+		`../Animation/Event_Thunder_all4.ani`	0	0
+		`../Animation/Event_Thunder_all5.ani`	0	0
+		`../Animation/Event_Thunder_all6.ani`	0	0
+		`../Animation/Event_Thunder_all7.ani`	0	0
+		`../Animation/Event_Thunder_all8.ani`	0	0
+		`../Animation/Event_Thunder_all9.ani`	0	0
+		`../Animation/Event_Thunder_all10.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPEND HIT]
+		0	0	0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

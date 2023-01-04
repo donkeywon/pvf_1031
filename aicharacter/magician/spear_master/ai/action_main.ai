@@ -1,0 +1,145 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	140.0	140.0	18.0	18.0
+		[true]
+	
+		[think]
+			[target state]
+				4
+			[true]
+		
+			[think]
+				[check use skill]
+					125
+				[true]
+				[return]
+					4
+				[false]
+				[return]
+					-1
+			[/think]
+	[false]
+	[think]
+		[check use skill]
+			65
+		[true]
+		[return]
+			5
+		[false]
+	
+		[think]
+			[check use skill]
+				4
+			[true]
+			[return]
+				0
+			[false]
+		
+			[think]
+				[check use skill]
+					13
+				[true]
+				[return]
+					2
+				[false]
+				[return]
+					-1
+			[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	180.0	180.0	50.0	50.0
+		[true]
+	
+		[think]
+			[target state]
+				4
+			[true]
+			[return]
+				-1
+			[false]
+		
+			[think]
+				[check use skill]
+					117
+				[true]
+				[return]
+					3
+				[false]
+			
+				[think]
+					[check use skill]
+						4
+					[true]
+					[return]
+						0
+					[false]
+					[return]
+						-1
+				[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	2000.0	2000.0	80.0	80.0
+		[true]
+	
+		[think]
+			[check skill on]
+				37
+			[true]
+			[return]
+				-1
+			[false]
+		
+			[think]
+				[check use skill]
+					37
+				[true]
+				[return]
+					10
+				[false]
+				[return]
+					-1
+			[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	100.0	100.0	500.0	500.0
+		[true]
+		[return]
+			-1
+		[false]
+	
+		[think]
+			[check skill on]
+				37
+			[true]
+			[return]
+				-1
+			[false]
+		
+			[think]
+				[check use skill]
+					37
+				[true]
+				[return]
+					10
+				[false]
+				[return]
+					-1
+			[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

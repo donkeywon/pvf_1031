@@ -1,0 +1,108 @@
+#PVF_File
+
+[name]
+	`神秘王国的人偶剧 (狼)`
+
+[name2]
+	`Puppet Stage of Mystery Land`
+
+[explain]
+	`攻击时， 有1%%的几率使自身增加30点智力， 效果持续30秒。
+施放技能时， 有2%%的几率使自身增加10%%的魔法暴击率， 效果持续30秒。`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	93
+
+[custom animation]
+	`TitleAnimation/puppet_stage.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	27
+
+[physical defense]
+	18
+
+[stuck resistance]
+	10
+
+[inventory limit]
+	5000
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	45
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`physical critical hit`
+		`+`	10
+[/then]
+
+[physical critical hit]
+	3
+
+[stuck]
+	-1
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

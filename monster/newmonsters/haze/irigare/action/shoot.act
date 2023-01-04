@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/shoot.ani`
+	[SPEECH]
+		`转换为狙击模式！`	0	30
+	[/SPEECH]
+	[SOUND]
+		`R_SNIPERKARE_SKILL_01`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[CHARACTER]
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10460
+		[PARTICLE FILENAME]
+			`../particle/scope.ptl`
+		[LEVEL]
+			70
+		[POS]
+		[RANDOM SELECT]
+			100	-100
+		[/RANDOM SELECT]
+	0	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

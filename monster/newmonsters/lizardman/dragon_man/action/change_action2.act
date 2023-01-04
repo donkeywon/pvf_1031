@@ -1,0 +1,55 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/change/change_action.ani`
+	[SPEECH]
+		`找不到代码Dragon_man_change_3`	1	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`move.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		`down.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`damage2.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`sit.act`
+	[CHANGE ACTION FILE]
+	[OVERTURN]
+		`overturn.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`Breath.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		1
+		`caude_atk.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		2
+		`Scratching.act`
+[/BEHAVIOR]

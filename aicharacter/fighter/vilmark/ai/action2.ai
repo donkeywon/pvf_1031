@@ -1,0 +1,86 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check use skill]
+			50
+		[true]
+		[return str]
+			`mustgrab`
+		[false]
+	
+		[think]
+			[void]
+				`is target in attack area()`	100	100	30	30
+			[true]
+		
+			[think]
+				[check use skill]
+					88
+				[true]
+				[return str]
+					`wild`
+				[false]
+			
+				[think]
+					[check use skill]
+						89
+					[true]
+					[return str]
+						`cyclone`
+					[false]
+				
+					[think]
+						[check use skill]
+							18
+						[true]
+						[return str]
+							`spire`
+						[false]
+					
+						[think]
+							[check use skill]
+								49
+							[true]
+							[return str]
+								`ropling`
+							[false]
+						
+							[think]
+								[check use skill]
+									9
+								[true]
+								[return str]
+									`suplex`
+								[false]
+							
+								[think]
+									[check use skill]
+										81
+									[true]
+									[return str]
+										`neck`
+									[false]
+								
+									[think]
+										[check use skill]
+											62
+										[true]
+										[return str]
+											`air`
+										[false]
+										[return]
+											-1
+									[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+[/ai pattern]

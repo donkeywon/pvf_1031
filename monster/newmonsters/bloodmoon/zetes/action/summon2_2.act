@@ -1,0 +1,152 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Summon2_2.ani`
+	[SUB ANI]
+		`../Animation/Spirit/Spirit2_summon_2.ani`	0	-10
+		`../Animation/weapon/Summon2_weapon_2.ani`	0	10
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		5
+	[DO BEHAVIOR]
+	[ME]
+		6
+	[DO BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10119
+		[PARTICLE FILENAME]
+			`../Particle/Thunder.ptl`
+		[LEVEL]
+			0
+		[POS]
+			60	40	0
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10119
+		[PARTICLE FILENAME]
+			`../Particle/Thunder.ptl`
+		[LEVEL]
+			0
+		[POS]
+			60	-40	0
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10119
+		[PARTICLE FILENAME]
+			`../Particle/Thunder.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-60	40	0
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10119
+		[PARTICLE FILENAME]
+			`../Particle/Thunder.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-60	-40	0
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			705
+		[LEVEL]
+			0
+		[POS]
+			60	40	0
+		[MAGIC CIRCLE]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			705
+		[LEVEL]
+			0
+		[POS]
+			60	-40	0
+		[MAGIC CIRCLE]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			705
+		[LEVEL]
+			0
+		[POS]
+			-60	40	0
+		[MAGIC CIRCLE]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			705
+		[LEVEL]
+			0
+		[POS]
+			-60	-40	0
+		[MAGIC CIRCLE]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

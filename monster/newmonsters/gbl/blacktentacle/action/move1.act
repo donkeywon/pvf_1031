@@ -1,0 +1,27 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/move1.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			1031
+		[PARTICLE FILENAME]
+			`../Particle/Chick.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	20
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

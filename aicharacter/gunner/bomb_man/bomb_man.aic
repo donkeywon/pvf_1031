@@ -1,0 +1,151 @@
+#PVF_File
+
+[minimum info]
+	`D.T.部队纳乐凯`	2	1	1	1	80	0	0	1	0	0	0
+	`no creature`	0	0	0
+
+[additional character status]
+	0	0	0	0	0	0	0	0	3000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+[/additional character status]
+
+[character status rate]
+	1.5	1000	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1000	1	1	1
+[/character status rate]
+
+[attack damage rate]
+	0.1
+
+[add equipment status from level]
+	1
+
+[armor subtype]
+	4
+
+[custom skill level]
+[/custom skill level]
+
+[party member]
+	1	0	2	600
+[/party member]
+
+[quick skill]
+	56	1
+[/quick skill]
+
+[skill]
+	84	1
+	4	10
+	47	1
+	44	1
+	65	1
+	25	1
+	52	10
+	21	10
+	34	1
+	89	1
+	41	1
+	88	1
+	181	2
+	184	3
+	185	1
+	179	7
+	173	1
+	170	1
+	92	1
+	7	1
+	169	1
+	62	7
+	174	55
+[/skill]
+
+[skill correction]
+[/skill correction]
+
+[quick item]
+[/quick item]
+
+[equipment]
+	26558	2	0
+	31102	2	0
+	11272	1	0
+	15271	3	0
+	13272	2	0
+	19272	3	0
+	17271	1	0
+	20105	1	0
+	22101	1	0
+	24103	2	0
+	47152	2	0
+	1250063	2	0
+	48036	2	0
+	1280051	2	0
+	1290052	2	0
+	1310043	2	0
+	50208	2	0
+[/equipment]
+
+[think term]
+	200
+
+[destination change term]
+	200
+
+[keep distance with target]
+	500
+
+[keep range distance with target]
+	500	0	100	100
+
+[warlike]
+	0
+
+[vision]
+	1000
+
+[death tower item]
+[/death tower item]
+
+[limit passiveobject]
+	22219	22220	22221
+[/limit passiveobject]
+
+[targeting bonus]
+	99	50	0	0	0	0	0	0	0	0	0	0	0	0	100	0	0	0	0	0	0
+	`[stand]`
+	`[dash]`	0	0
+	`[slow]`
+	`[confuse]`	0
+
+[ai pattern]
+	`Event.ai`
+	`DestinationSelect.ai`
+	`Action.ai`
+	`MoveMethod.ai`
+[/ai pattern]
+
+[key stream]
+	`bomb`
+	`bomb.key`
+	`bomb_C`
+	`bomb_C.key`
+[/key stream]
+
+[key cooltime]
+	`bomb`	8000
+	`bomb_C`	6000
+[/key cooltime]
+
+[etc action]
+	`action/Action.act`
+[/etc action]
+
+[speech on situation]
+	[on appear]
+		`在炸弹放置结束前和敌人对峙`	100
+	[on attack]
+		`爆破！趴下！`	100	0
+	[on attack]
+		`因战斗导致地基不稳，无法放置炸弹`	60	1
+	[on attack]
+		`要找别的路径`	40	1
+[/speech on situation]

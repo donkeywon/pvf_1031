@@ -1,0 +1,155 @@
+#PVF_File
+
+[name]
+	`菲德里斯`
+
+[name2]
+	`Crux Fidelis`
+
+[basic explain]
+	`光属性攻击时， 附加20%%的伤害。`
+
+[detail explain]
+	`光属性攻击时， 附加20%%的伤害。 (在决斗场中 +10%%)`
+
+[grade]
+	64
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	60
+
+[physical defense]
+	54
+
+[magical attack]
+	43
+
+[magical defense]
+	54
+
+[cast speed]
+	20
+
+[price]
+	102400
+
+[repair price]
+	86016
+
+[value]
+	81920
+
+[equipment physical attack]
+	604	554
+
+[equipment magical attack]
+	574	526
+
+[equipment physical defense]
+	640	630
+
+[equipment magical defense]
+	640	630
+
+[separate attack]
+	360	242
+
+[skill levelup]
+	`[priest]`	7	2
+	`[priest]`	23	3
+	`[priest]`	118	1
+	`[priest]`	116	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/cross.img`	56
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	10	2
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[if]
+	[element]
+		`light`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	20
+[/then]
+
+[pvp]
+	[if]
+		[element]
+			`light`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+[/pvp]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

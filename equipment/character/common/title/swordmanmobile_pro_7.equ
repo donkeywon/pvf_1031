@@ -1,0 +1,103 @@
+#PVF_File
+
+[name]
+	`鬼剑士手机Pro(7天)`
+
+[name2]
+	``
+
+[explain]
+	`攻击时以1%%的机率4秒内呈现霸体护甲状态。(决斗场内不适用。)`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	212
+
+[custom animation]
+	`TitleAnimation/swordmanmobile_pro.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[usable period]
+	7
+
+[HP MAX]
+	150
+
+[MP MAX]
+	150
+
+[physical attack]
+	15
+
+[physical defense]
+	12
+
+[magical attack]
+	15
+
+[magical defense]
+	12
+
+[all elemental resistance]
+	10
+
+[inventory limit]
+	10000
+
+[if]
+	[module]
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[dead tower]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		4000
+	[probability]
+		1
+	[buff]
+		`superarmor`
+[/then]
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

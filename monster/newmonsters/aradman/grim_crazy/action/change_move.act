@@ -1,0 +1,24 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Change_Move.ani`
+	[SUB ANI]
+		`../Animation/weapon/Change_Move_wp.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE DIRECTION BY TARGET]
+		1
+	[ADD CATEGORY]
+	[FIXTURE]
+[/BEHAVIOR]

@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Smoke_Attack.ani`
+	[SUB ANI]
+		`../Animation/Smoke_Attack_Sub.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			80
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[HELLOFHEAL APPENDAGE]
+		200	300
+	[HP APPENDAGE]
+		3000	50	
+		[ENEMY TEAM]
+		[%]
+		[HP MAX]
+			-3	300
+	[/HP APPENDAGE]
+[/BEHAVIOR]

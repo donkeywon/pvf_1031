@@ -1,0 +1,163 @@
+#PVF_File
+
+[name]
+	`风暴`
+
+[width]
+	40	10
+
+[floating height]
+	150
+
+[ability category]
+	`[HP MAX]`	`*`	1200
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	200
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	200
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[category]
+	`[fort armor]`
+	`[machine]`
+	`[melee combat]`
+	`[close-carefully]`
+[/category]
+
+[level]
+	1	99
+
+[move speed]
+	2000	2000
+
+[attack speed]
+	750	750
+
+[cast speed]
+	700	790
+
+[hit recovery]
+	500	1500
+
+[weight]
+	45000	45000
+
+[sight]
+	600
+
+[warlike]
+	100
+
+[attack delay]
+	1500
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[keep distance with target]
+	50
+
+[out of targetting]
+	1
+
+[face image]
+	`Monster/MonsterFace.img`	147
+
+[attack sound]
+	`R_TEMPESTER_ATK`
+
+[appear sound]
+	`TEMPESTER_APPEAR`
+
+[damage sound]
+	`R_TEMPESTER_DMG`
+
+[die sound]
+	`TEMPESTER_DIE`
+
+[ambient sound]
+	`TEMPESTER_FLOATING_LOOP`
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[action list]
+	`action/Missile.act`
+	`action/Gun1.act`
+	`action/Gun2.act`
+	`action/Gun3.act`
+	`action/Gun4.act`
+	`action/Gun5.act`
+	`action/Gun6.act`
+	`action/Gun7.act`
+
+[/attack motion]
+
+[attack info]
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+[/attack info]
+
+[cooltime]
+	10000	5000	5000	5000	5000	5000	5000	5000
+[/cooltime]
+
+[think term]
+	200
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

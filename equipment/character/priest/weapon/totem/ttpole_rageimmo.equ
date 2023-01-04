@@ -1,0 +1,148 @@
+#PVF_File
+
+[name]
+	`狂龙图腾`
+
+[name2]
+	`Rage Totem of Immortality`
+
+[basic explain]
+	`HP降到20%%以下时， 伤害 +300`
+
+[detail explain]
+	`HP降到20%%以下时伤害 +300 (在决斗场中， HP降到10%%以下时伤害 +300)`
+
+[grade]
+	37
+
+[rarity]
+	2
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	35
+
+[physical attack]
+	37
+
+[stuck]
+	-1
+
+[price]
+	51800
+
+[repair price]
+	41440
+
+[value]
+	41440
+
+[equipment physical attack]
+	349	332
+
+[equipment magical attack]
+	299	284
+
+[separate attack]
+	164	109
+
+[skill levelup]
+	`[priest]`	56	1
+	`[priest]`	57	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/priest/totem.img`	19
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[priest]`
+
+[variation]
+	1	6
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[stat change]
+		`hp`
+		`<`
+		`%`	20
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`+`	300
+[/then]
+
+[pvp]
+	[if]
+		[attack success]
+			1
+		[stat change]
+			`hp`
+			`<`
+			`%`	10
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`+`	300
+	[/then]
+[/pvp]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

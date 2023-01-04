@@ -1,0 +1,206 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/approach_attack.ani`
+	[SUB ANI]
+		`../Animation/approach_Attack_Card.ani`	0	1
+	[/SUB ANI]
+	[SOUND]
+		`SILKHET_ATK_02`	1
+		`SILKHET_CARD_SPREAD`	2
+	[/SOUND]
+	[SPEECH]
+		`跳舞吧！卡片！`	3	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2	1	2	0	0	1	2
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8887
+		[PARTICLE FILENAME]
+			`../Particle/approachCard_move1.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			10	5	0	-5	10	-30	30
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			-10	-5	0	5	10
+		[/RANDOM SELECT]
+	94	
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8887
+		[PARTICLE FILENAME]
+			`../Particle/approachCard_move2.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			10	5	0	-5	10
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			-20	-10	0	10	20
+		[/RANDOM SELECT]
+	74	
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8887
+		[PARTICLE FILENAME]
+			`../Particle/approachCard_move3.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			-20	-35	0	-5	10
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			-25	-30	0	-15	5
+		[/RANDOM SELECT]
+	94	
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8887
+		[PARTICLE FILENAME]
+			`../Particle/approachCard_move1.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			10	5	0	-5	10	-30	30
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			-10	-5	0	5	10
+		[/RANDOM SELECT]
+	94	
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8887
+		[PARTICLE FILENAME]
+			`../Particle/approachCard_move2.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			10	5	0	-5	10
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			-20	-10	0	10	20
+		[/RANDOM SELECT]
+	74	
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8887
+		[PARTICLE FILENAME]
+			`../Particle/approachCard_move3.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			-20	-35	0	-5	10
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			-25	-30	0	-15	5
+		[/RANDOM SELECT]
+	94	
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8887
+		[PARTICLE FILENAME]
+			`../Particle/approachCard_move1.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			10	5	0	-5	10	-30	30
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			-10	-5	0	5	10
+		[/RANDOM SELECT]
+	94	
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8887
+		[PARTICLE FILENAME]
+			`../Particle/approachCard_move2.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			10	5	0	-5	10
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			-20	-10	0	10	20
+		[/RANDOM SELECT]
+	74	
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8887
+		[PARTICLE FILENAME]
+			`../Particle/approachCard_move1.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			-20	-35	0	-5	10
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			-25	-30	0	-15	-5
+		[/RANDOM SELECT]
+	94	
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		900	4
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		1
+[/BEHAVIOR]

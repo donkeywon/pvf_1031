@@ -1,0 +1,97 @@
+#PVF_File
+
+[name]
+	`剜心指环`
+
+[name2]
+	`The 3rd Finger of Pulling Heart`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入出血状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入出血状态10秒； 出血状态下的敌人， 每0.5秒受到8点伤害。 (若敌人高于Lv15， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[flavor text]
+	`我要把仇人的心挖出来磨成血粥喝掉！`
+
+[grade]
+	17
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	15
+
+[physical attack]
+	11
+
+[magical attack]
+	11
+
+[price]
+	17000
+
+[repair price]
+	13600
+
+[value]
+	13600
+
+[equipment magical defense]
+	640	576
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/IconAcc.img`	55
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	200
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		18000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[probability]
+		2
+	[active status]
+		`bleeding`	15	160
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,48 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/telephone.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/telephonedestroy2.ptl`	0	0	50
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[=<]
+			70
+		[%]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON APC]
+		[INDEX]
+			10401
+		[LEVEL]
+			60
+		[POS]
+			20	20	20
+		[NO EFFECT]
+		[TEAM]
+			0
+		[USE MY BASEPOS]
+	[/SUMMON APC]
+	[DESTROY]
+[/BEHAVIOR]

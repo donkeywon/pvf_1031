@@ -1,0 +1,185 @@
+#PVF_File
+
+[name]
+	`杀意波动`
+
+[name2]
+	``
+
+[explain]
+	`向敌人喷射强烈杀意的波动， 使周围敌人受到持续的无视防御伤害， 并增加自身及周围队员的物理暴击率和魔法暴击率。
+技能施放后会持续消耗MP， 若MP不足或再次施放， 则可以中断技能。
+此技能对处于过高位置的敌人无效； 若对方是玩家角色， 则只能造成25%%的伤害。`
+
+[basic explain]
+	`向敌人喷射强烈杀意的波动， 使周围敌人受到持续的无视防御伤害， 并增加自身及周围队员的物理暴击率和魔法暴击率。`
+
+[purchase cost]
+	30
+[/purchase cost]
+
+[required level]
+	30
+
+[required level range]
+	2
+
+[pre required skill]
+[/pre required skill]
+
+[type]
+	`[active]`
+
+[skill class]
+	0
+
+[maximum level]
+	70
+
+[growtype maximum level]
+	30	0	0	0	50	0
+
+[skill fitness growtype]
+	4
+[/skill fitness growtype]
+
+[consume MP]
+	20	120
+
+[maintain MP]
+	10.0	60.0
+
+[casting time]
+	500	500
+
+[cool time]
+	5000	5000
+
+[durability decrease rate]
+	50
+
+[auto cooltime apply]
+	0
+
+[icon]
+	`Character/Swordman/Effect/SkillIcon.img`	118
+	`Character/Swordman/Effect/SkillIcon.img`	119
+
+[command]
+	{6=`(RIGHT)`}
+	{8=`,`}
+	{6=`(RIGHT)`}
+	{8=`,`}
+	{6=`(BUFF)`}
+[/command]
+
+[command key explain]
+	`操作指令 : →→ + Space`
+
+[dungeon]
+	[static data]
+		50	10
+	[/static data]
+	[level info]
+		4
+		312	300	5	5
+		344	305	10	10
+		377	310	15	15
+		409	316	19	19
+		442	321	24	24
+		473	326	29	29
+		505	331	34	34
+		538	336	39	39
+		570	341	44	44
+		602	347	48	48
+		635	352	53	53
+		667	357	58	58
+		700	362	63	63
+		732	367	68	68
+		764	372	73	73
+		796	378	77	77
+		828	383	82	82
+		860	388	87	87
+		893	393	92	92
+		925	398	97	97
+		958	403	102	102
+		990	409	106	106
+		1022	414	111	111
+		1055	419	116	116
+		1087	424	121	121
+		1118	429	126	126
+		1151	434	131	131
+		1183	440	135	135
+		1216	445	140	140
+		1248	450	145	145
+		1280	455	150	150
+		1313	460	155	155
+		1345	466	159	159
+		1378	471	164	164
+		1409	476	169	169
+		1441	481	174	174
+		1474	486	179	179
+		1506	491	184	184
+		1538	497	188	188
+		1571	502	193	193
+		1603	507	198	198
+		1636	512	203	203
+		1668	517	208	208
+		1700	522	213	213
+		1732	528	217	217
+		1764	533	222	222
+		1796	538	227	227
+		1829	543	232	232
+		1861	548	237	237
+		1894	553	242	242
+		1926	559	246	246
+		1958	564	251	251
+		1990	569	256	256
+		2023	574	261	261
+		2055	579	266	266
+		2087	584	271	271
+		2119	590	275	275
+		2152	595	280	280
+		2184	600	285	285
+		2216	605	290	290
+		2248	610	295	295
+		2281	615	300	300
+		2313	621	304	304
+		2345	626	309	309
+		2378	631	314	314
+		2410	636	319	319
+		2442	641	324	324
+		2474	646	329	329
+		2507	652	333	333
+		2539	657	338	338
+	[/level info]
+[/dungeon]
+
+[pvp]
+[/pvp]
+
+[death tower]
+[/death tower]
+
+[warroom]
+[/warroom]
+
+[level property]
+	1	99
+	`每秒波动伤害 : <int>
+波动领域 : <int>px
+增加物理暴击率 : <float1>%%
+增加魔法暴击率 : <float1>%%`
+	-2	0	0.1
+	-1	1	1.0
+	-1	2	0.1
+	-1	3	0.1
+[/level property]
+
+[skill preloading image]
+	`Character/Swordman/Effect/DOTArea.img`
+	`Character/Swordman/Effect/DOTAreaDamage.img`
+[/skill preloading image]
+
+[feature skill index]
+	150

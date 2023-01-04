@@ -1,0 +1,37 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/cut_turn.ani`
+	[SUB ANI]
+		`../animation/weapon/cut_turn.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`这次是……这里？`	1	100
+	[/SPEECH]
+	[SOUND]
+		`R_WEAPONM_ATK_03`	1
+		`MENGRYOUNG_ATK`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10491
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-180	0	70
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

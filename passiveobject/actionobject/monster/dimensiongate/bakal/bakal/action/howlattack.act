@@ -1,0 +1,176 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/howlattack.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10309
+		[PARTICLE FILENAME]
+			`../Particle/dropstone_2.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			500	300
+		[RANDOM]
+			60	-60	600
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10317
+		[PARTICLE FILENAME]
+			`../Particle/dropstone_3.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			300	100
+		[RANDOM]
+			60	-60	600
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10315
+		[PARTICLE FILENAME]
+			`../Particle/dropstone_3.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			300	100
+		[RANDOM]
+			60	-60	600
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10317
+		[PARTICLE FILENAME]
+			`../Particle/dropstone_1.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			100	0
+		[RANDOM]
+			60	-60	600
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10309
+		[PARTICLE FILENAME]
+			`../Particle/dropstone_4.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			0	-100
+		[RANDOM]
+			60	-60	600
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10315
+		[PARTICLE FILENAME]
+			`../Particle/dropstone_4.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			0	-100
+		[RANDOM]
+			60	-60	600
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10317
+		[PARTICLE FILENAME]
+			`../Particle/dropstone_1.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-100	-300
+		[RANDOM]
+			60	-60	600
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10309
+		[PARTICLE FILENAME]
+			`../Particle/dropstone_3.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-300	-500
+		[RANDOM]
+			60	-60	600
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10312
+		[PARTICLE FILENAME]
+			`../Particle/dropstone_3.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-300	-500
+		[RANDOM]
+			60	-60	600
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,108 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[hp]
+			`%<=`	30
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	80.0	80.0	50.0	50.0
+			[true]
+			[return]
+				1
+			[false]
+		
+			[think]
+				[void]
+					`is target in attack area()`	320.0	320.0	40.0	40.0
+				[true]
+				[return]
+					10
+				[false]
+			
+				[think]
+					[void]
+						`is target in attack area()`	30.0	100.0	300.0	300.0
+					[true]
+					[return]
+						2
+					[false]
+				
+					[think]
+						[void]
+							`is target in attack area()`	320.0	320.0	300.0	300.0
+						[true]
+						[return]
+							0
+						[false]
+						[return]
+							10
+					[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	3000.0	3000.0	3000.0	3000.0
+			`all`
+			`monster`	61421
+	
+		[think]
+			[last result]
+				`>`	3.0
+			[true]
+		
+			[think]
+				[void]
+					`is target in attack area()`	220.0	220.0	30.0	30.0
+				[true]
+			
+				[think]
+					[target state]
+						8
+					[true]
+					[return]
+						0
+					[false]
+					[return]
+						11
+				[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	500.0	500.0	30.0	30.0
+		[true]
+		[return]
+			10
+		[false]
+		[return]
+			11
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	80.0	80.0	50.0	50.0
+		[true]
+		[return]
+			0
+		[false]
+	
+		[think]
+			[void]
+				`is target in attack area()`	350.0	350.0	40.0	40.0
+			[true]
+			[return]
+				11
+			[false]
+			[return]
+				0
+		[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

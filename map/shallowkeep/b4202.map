@@ -1,0 +1,169 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	31
+[/dungeon]
+
+[type]
+	`[boss]`
+
+[greed]
+	`EE EE`
+
+[tile]
+	`Tile/overlefthighblank.til`
+	`Tile/overnoblankmid.til`
+	`Tile/overnoblankdown.til`
+	`Tile/overnoblankup.til`
+	`Tile/overnoblankdown.til`
+	`Tile/overnoblankmid.til`
+	`Tile/overnoblankdown.til`
+	`Tile/overnoblankup.til`
+	`Tile/overnoblankmid.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/skfar.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/skmid.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	12	247	2005	205	1008	153	1008	294
+
+[sound]
+	`R_AMB_CAVE`
+	`RM_SHALLOWKEEP_BOSS`
+[/sound]
+
+[animation]
+	`Animation/skshortwpollwall1.ani`	`[bottom]`	339	262	80
+	`Animation/skshortwpollwall2.ani`	`[bottom]`	563	262	80
+	`Animation/skshortwpollwall1.ani`	`[bottom]`	787	262	80
+	`Animation/skshortwpollwall1.ani`	`[bottom]`	1235	262	80
+	`Animation/skshortwpollwall2.ani`	`[bottom]`	1459	262	80
+	`Animation/skshortwpollwall2.ani`	`[bottom]`	1907	262	80
+	`Animation/skshortwpollwall2.ani`	`[bottom]`	1011	262	80
+	`Animation/skshortwpollwall2.ani`	`[bottom]`	1683	262	80
+	`Animation/skshotleftwall.ani`	`[bottom]`	227	257	80
+	`Animation/skfarstreamani.ani`	`[distantback]`	0	-120	0
+	`Animation/skfarstreamani.ani`	`[distantback]`	640	-120	0
+	`Animation/skfarstreamani.ani`	`[distantback]`	1280	-120	0
+	`Animation/skfarstreamani.ani`	`[distantback]`	1920	-120	0
+	`Animation/skfarstreamani.ani`	`[distantback]`	2560	-120	0
+[/animation]
+
+[passive object]
+	812	407	141	0
+	812	514	293	0
+	812	934	191	0
+	812	1000	236	0
+	813	1514	144	0
+	813	1553	281	0
+	805	1290	207	0
+	805	1333	210	0
+[/passive object]
+
+[monster]
+	401	1	0	1402	170	0	1	1	`[fixed]`	`[normal]`
+	400	1	0	1268	173	0	1	1	`[fixed]`	`[normal]`
+	600	1	1	817	174	0	1	1	`[fixed]`	`[normal]`
+	600	1	1	617	196	0	1	1	`[fixed]`	`[normal]`
+	600	1	1	728	197	0	1	1	`[fixed]`	`[normal]`
+	400	1	0	1146	208	0	1	1	`[fixed]`	`[normal]`
+	402	1	2	1637	210	0	2	1	`[fixed]`	`[boss]`
+	401	1	0	1466	211	0	1	1	`[fixed]`	`[normal]`
+	600	1	1	796	231	0	1	1	`[fixed]`	`[normal]`
+	401	1	0	1387	244	0	1	1	`[fixed]`	`[normal]`
+	400	1	0	1218	248	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[special passive object]
+	816	1315	142	0	1
+	`[item]`	0	2	-1	-1	-1
+	802	1633	143	0	1
+	`[item]`	1	1	-1	-1	-1
+	815	662	151	0	2
+	`[monster]`	600	40	1	5	-1
+	`[item]`	2	-1	1	-1	-1
+	803	1702	191	0	3
+	`[trap]`	2210	1	1	4	-1
+	`[trap]`	2211	1	1	10	-1
+	`[item]`	2	-1	5	-1	-1
+	815	444	197	0	1
+	`[trap]`	48022	25	1	2	-1
+	815	457	237	0	1
+	`[trap]`	48023	25	1	2	-1
+	815	877	260	0	2
+	`[monster]`	600	40	1	5	-1
+	`[item]`	2	-1	1	-1	-1
+	802	1726	266	0	1
+	`[item]`	0	1	-1	-1	-1
+	815	672	268	0	2
+	`[monster]`	600	40	1	5	-1
+	`[item]`	2	-1	1	-1	-1
+	816	1322	272	0	1
+	`[item]`	0	2	-1	-1	-1	
+[/special passive object]
+
+[NPC]
+	1000	`[left]`	0	0	0
+[/NPC]
+
+[event monster position]
+	564	164	0
+	581	223	0
+	777	179	0
+	331	194	0
+[/event monster position]
+
+[NPC]
+	1000	`[left]`	0	0	0
+[/NPC]
+
+[map name]
+	`PVP 无名`

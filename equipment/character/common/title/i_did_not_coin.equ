@@ -1,0 +1,63 @@
+#PVF_File
+
+[name]
+	`不留活路`
+
+[name2]
+	`I did not Coin`
+
+[explain]
+	`使用复活币复活时， 可以使队员恢复15%%的MP。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	303
+
+[custom animation]
+	`TitleAnimation/i_did_not_coin.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[revive]
+		1
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[restore]
+		`mp`
+		`%`	15	1000
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

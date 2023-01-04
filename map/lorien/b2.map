@@ -1,0 +1,131 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	1
+[/dungeon]
+
+[type]
+	`[boss]`
+
+[greed]
+	`DD DD`
+
+[tile]
+	`Tile/ForestOverUnder.til`
+	`Tile/ForestUnder.til`
+	`Tile/ForestUnder.til`
+	`Tile/ForestUnderOver.til`
+	`Tile/ForestOverUnder.til`
+	`Tile/ForestUnder.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/far1.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/mid1.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	16	216	1330	259	942	153	672	348
+
+[sound]
+	`AMB_FOREST_01`
+	`M_FOREST_02`
+[/sound]
+
+[animation]
+	`Animation/DeadTree1.ani`	`[close]`	931	516	0
+	`Animation/StonePillar1.ani`	`[close]`	1018	421	0
+	`Animation/aniFlower.ani`	`[bottom]`	714	300	0
+	`Animation/aniFlower.ani`	`[bottom]`	889	268	0
+	`Animation/aniFlower.ani`	`[bottom]`	763	213	0
+	`Animation/BurntTree5.ani`	`[closeback]`	777	145	0
+[/animation]
+
+[passive object]
+	5	150	150	0
+	6	330	230	500
+	5	650	190	0
+	6	830	270	500
+	5	1150	170	0
+	6	1330	250	500
+	223	215	198	0
+	274	57	198	0
+	274	121	216	0
+	223	148	269	0
+	274	97	315	0
+	223	161	340	0
+	274	51	343	0
+	274	112	347	0
+	274	11	218	0
+	274	24	341	0
+[/passive object]
+
+[monster]
+	1	1	0	673	211	0	1	1	`[fixed]`	`[normal]`
+	1	1	0	570	227	0	1	1	`[fixed]`	`[normal]`
+	2	1	0	451	256	0	2	1	`[fixed]`	`[boss]`
+	1	1	0	773	261	0	1	1	`[fixed]`	`[normal]`
+	1	1	0	627	306	0	1	1	`[fixed]`	`[normal]`
+	1	1	0	773	324	0	1	1	`[fixed]`	`[normal]`
+	1	1	0	546	332	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[special passive object]
+	223	282	316	0	1
+	`[item]`	0	2	-1	-1	-1	
+[/special passive object]
+
+[NPC]
+	1000	`[left]`	0	0	0
+[/NPC]
+
+[event monster position]
+	409	234	0
+	464	325	0
+	524	248	0
+	690	248	0
+[/event monster position]
+
+[map name]
+	`PVP 无名`

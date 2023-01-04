@@ -1,0 +1,123 @@
+#PVF_File
+
+[name]
+	`素喃订制十字架`
+
+[name2]
+	`找不到代码name2_35116`
+
+[basic explain]
+	`暴击伤害 +7%%
+无法进行分解。`
+
+[grade]
+	52
+
+[attach type]
+	`[trade]`
+
+[item group name]
+	`cross`
+
+[rarity]
+	3
+
+[weight]
+	3100
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[minimum level]
+	48
+
+[icon]
+	`Item/weapon/priest/cross.img`	74
+
+[icon mark]
+	`Item/IconMark.img`	52
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[sub type]
+	0
+
+[durability]
+	35
+
+[need material]
+	3323	40
+
+[value]
+	66560
+
+[cool time]
+	10000
+
+[physical defense]
+	45
+
+[magical attack]
+	36
+
+[magical defense]
+	45
+
+[equipment physical attack]
+	484	444
+
+[equipment physical defense]
+	520	510
+
+[equipment magical attack]
+	460	422
+
+[equipment magical defense]
+	520	510
+
+[separate attack]
+	287	192
+
+[cast speed]
+	70
+
+[variation]
+	1	5
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[move wav]
+	`CROSS_TOUCH`
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	7
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]

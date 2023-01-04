@@ -1,0 +1,136 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	6
+[/dungeon]
+
+[type]
+	`[normal]`
+
+[tile]
+	`Tile/ForestUnder.til`
+	`Tile/ForestOverUnder.til`
+	`Tile/ForestUnder.til`
+	`Tile/ForestUnderOver.til`
+	`Tile/ForestOverUnder.til`
+	`Tile/ForestUnder.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/far0.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/mid0.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`../CommonAnimation/pfog.ani`
+		[layer]
+			`[close]`
+		[order]
+			`[upper]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	16	216	1329	241	672	144	672	348
+
+[sound]
+	`M_SUNDERLAND`
+	`AMB_FOREST_02`
+[/sound]
+
+[animation]
+	`Animation/Grass0.ani`	`[bottom]`	1357	324	0
+	`Animation/smallTree1.ani`	`[closeback]`	839	135	0
+	`Animation/smallTree1.ani`	`[closeback]`	1408	161	0
+	`Animation/smallTree1.ani`	`[closeback]`	1012	142	0
+	`Animation/smallTree1.ani`	`[closeback]`	541	173	0
+	`Animation/BurntTree3.ani`	`[closeback]`	159	143	0
+	`Animation/BurntTree3.ani`	`[closeback]`	631	112	0
+[/animation]
+
+[passive object]
+	261	912	159	0
+	292	747	169	0
+	261	504	179	0
+	247	721	184	0
+	248	560	187	0
+	247	734	188	0
+	247	755	188	0
+	296	241	193	0
+	261	912	196	0
+	248	565	197	0
+	296	299	198	0
+	248	602	198	0
+	248	585	199	0
+	248	622	199	0
+	261	383	199	0
+	261	849	215	0
+	261	433	216	0
+	291	103	378	0
+[/passive object]
+
+[monster]
+	5001	1	0	986	191	0	1	1	`[fixed]`	`[normal]`
+	3	0	6	1098	251	0	1	1	`[fixed]`	`[normal]`
+	3	0	6	749	255	0	1	1	`[fixed]`	`[normal]`
+	6	0	10	498	278	0	1	1	`[fixed]`	`[normal]`
+	5002	1	0	411	282	0	1	1	`[fixed]`	`[normal]`
+	5003	1	0	1043	316	0	1	1	`[fixed]`	`[normal]`
+	5001	1	0	384	331	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[special passive object]
+	231	673	170	0	1
+	`[item]`	1	1	-1	-1	-1
+	231	618	172	0	1
+	`[item]`	1	1	-1	-1	-1
+	221	437	182	0	1
+	`[trap]`	2000	1	4	25	-1
+	221	849	184	0	1
+	`[trap]`	2200	1	4	50	-1
+	228	257	328	0	1
+	`[item]`	0	2	-1	-1	-1	
+[/special passive object]
+
+[greed]
+	`NN MM`
+
+[event monster position]
+	351	252	0
+	885	266	0
+	931	327	0
+	1006	250	0
+[/event monster position]
+
+[map name]
+	`PVP 无名`

@@ -1,0 +1,59 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Fire1.ani`
+	[SUB ANI]
+		`../animation/FireGas.ani`	0	0
+		`../Animation/body.ani`	0	0
+		`../Animation/acc1.ani`	0	0
+		`../Animation/hair.ani`	0	0
+		`../Animation/skin.ani`	0	0
+		`../Animation/pants.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`R_BUNKER_ATK`	0
+		`COWCANNON_SHOOT`	9
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8347
+		[PARTICLE FILENAME]
+			`../Particle/Fire.ptl`
+		[LEVEL]
+			60
+		[POS]
+			28	0	87
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8347
+		[PARTICLE FILENAME]
+			`../Particle/Fire_1.ptl`
+		[LEVEL]
+			60
+		[POS]
+			28	0	87
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8347
+		[PARTICLE FILENAME]
+			`../Particle/Fire_2.ptl`
+		[LEVEL]
+			60
+		[POS]
+			28	0	87
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

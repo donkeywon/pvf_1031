@@ -1,0 +1,58 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/HoldShoot.ani`
+	[SUB ANI]
+		`../Animation/Weapon/HoldShoot.ani`	0	10
+		`../Animation/Weapon/JeffBazookaSmoke_HoldShoot.ani`	0	20
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+	[SET POS FORCE]
+		[X START]
+			0
+		[Y START]
+			0
+		[Z START]
+			100
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8226
+		[PARTICLE FILENAME]
+			`../Particle/Oblique_Missile.ptl`
+		[LEVEL]
+			0
+		[POS]
+			45	0	147
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

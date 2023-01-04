@@ -1,0 +1,109 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	81
+[/dungeon]
+
+[type]
+	`[boss]`
+
+[greed]
+	`BB BB`
+
+[tile]
+	`Tile/RampartTile.til`
+	`Tile/RampartTile.til`
+	`Tile/RampartTile.til`
+	`Tile/RampartTile.til`
+	`Tile/RampartTile.til`
+	`Tile/RampartTile.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/RampartFar.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/RampartMid.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	86	672	1340	229	230	722	816	708
+
+[sound]
+	`M_GENTGATE_EAST_BOSS`
+	`AMB_WAR_01`
+[/sound]
+
+[animation]
+	`Animation/RampartWall1.ani`	`[closeback]`	560	170	0
+	`Animation/RampartWall1.ani`	`[closeback]`	112	170	0
+	`Animation/RampartWall3.ani`	`[closeback]`	336	170	0
+	`Animation/RampartWall1.ani`	`[closeback]`	784	170	0
+	`Animation/RampartWall2.ani`	`[closeback]`	1232	170	0
+	`Animation/RampartWall3.ani`	`[closeback]`	1008	170	0
+[/animation]
+
+[monster]
+	61113	1	0	642	232	0	1	1	`[fixed]`	`[normal]`
+	61494	1	0	897	234	0	1	1	`[fixed]`	`[normal]`
+	61801	1	0	999	235	0	1	1	`[fixed]`	`[normal]`
+	61801	1	0	1089	268	0	1	1	`[fixed]`	`[normal]`
+	61112	1	3	256	271	0	2	1	`[fixed]`	`[boss]`
+	61801	1	0	1014	321	0	1	1	`[fixed]`	`[normal]`
+	61494	1	0	914	322	0	1	1	`[fixed]`	`[normal]`
+	61113	1	0	682	324	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[NPC]
+	1000	`[left]`	0	0	0
+[/NPC]
+
+[event monster position]
+	594	269	0
+	508	210	0
+	462	285	0
+	267	287	0
+[/event monster position]
+
+[map name]
+	`PVP 无名`

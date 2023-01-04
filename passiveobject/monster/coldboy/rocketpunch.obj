@@ -1,0 +1,36 @@
+#PVF_File
+
+[width]
+	1	1
+
+[floating height]
+	0
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	1
+
+[basic motion]
+	`Ani/RocketPunch.ani`
+
+[attack info]
+	`AttackInfo/RocketPunch.atk`
+
+[name]
+	`导弹拳`
+
+[object destroy condition]
+	`[destroy condition]`
+	`[z pos equal zero]`
+	`[destroy action]`
+	`[object create after destroy]`
+	`[add object index]`	2	30371	40008
+	`[on attack]`
+	`[object create after destroy]`
+	`[add object index on attack]`	1	40008
+[/object destroy condition]

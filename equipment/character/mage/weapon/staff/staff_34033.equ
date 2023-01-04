@@ -1,0 +1,266 @@
+#PVF_File
+
+[name]
+	`灾难召唤者法杖`
+
+[name2]
+	``
+
+[basic explain]
+	`施放[天雷]、 [雷光屏障]时， 有20%%的几率召唤出冰焰或火焰怪中的一个， 召唤兽存在40秒。 (最高上限3只)`
+
+[detail explain]
+	`施放[天雷]、 [雷光屏障]时， 有20%%的几率召唤出冰焰或火焰怪中的一个， 召唤兽存在40秒。 (召唤的怪物只能同时存在3只， 若其受到较大伤害， 则召唤时间结束前就会消失)`
+
+[grade]
+	75
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[magical attack]
+	50
+
+[attack speed]
+	-100
+
+[cast speed]
+	50
+
+[price]
+	120000
+
+[repair price]
+	100800
+
+[value]
+	96000
+
+[equipment physical attack]
+	688	631
+
+[equipment magical attack]
+	869	797
+
+[separate attack]
+	441	299
+
+[skill levelup]
+	`[mage]`	48	2
+	`[mage]`	55	2
+	`[at mage]`	29	2
+[/skill levelup]
+
+[light attack]
+	10
+
+[icon]
+	`item/new_equipment/01_weapon/mage/staff/staff.img`	105
+
+[field image]
+	`Item/field_weapon.img`	9
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	28	8
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	28	8
+
+[layer variation]
+	2150
+	`at_staffa`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_staffd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	28	8
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`STAFF_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2400
+
+[item group name]
+	`staff`
+
+[cool time]
+	10000
+
+[if]
+	[event use skill]
+		`mage`	48
+	[cooltime]
+		10000
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			20
+		[then probability]
+			50.0
+		[duration]
+			40000
+		[summon monster]
+			63035	70	1
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			20
+		[then probability]
+			50.0
+		[duration]
+			40000
+		[summon monster]
+			63036	70	1
+	[/then]
+[/multiple then]
+
+[if]
+	[event use skill]
+		`mage`	55
+	[cooltime]
+		10000
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			20
+		[then probability]
+			50.0
+		[duration]
+			40000
+		[summon monster]
+			63035	70	1
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			20
+		[then probability]
+			50.0
+		[duration]
+			40000
+		[summon monster]
+			63036	70	1
+	[/then]
+[/multiple then]
+
+[if]
+	[event use skill]
+		`at mage`	29
+	[cooltime]
+		10000
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			20
+		[then probability]
+			50.0
+		[duration]
+			40000
+		[summon monster]
+			63035	70	1
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			20
+		[then probability]
+			50.0
+		[duration]
+			40000
+		[summon monster]
+			63036	70	1
+	[/then]
+[/multiple then]
+
+[routing priority]
+	`mage`	1
+	`mage`	2
+	`at mage`	1
+	`at mage`	2
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

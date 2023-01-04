@@ -1,0 +1,45 @@
+#PVF_File
+
+[width]
+	1	1
+
+[floating height]
+	0
+
+[layer]
+	`[bottom]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	100
+
+[basic action]
+	`Action/basic.act`
+
+[add particles]
+	[particle]
+		[file]
+			`Particle/direzie_effect_part.ptl`
+		[create delay]
+			800
+	[/particle]
+	[particle]
+		[file]
+			`Particle/direzie_effect_inazuma2.ptl`
+		[create delay]
+			1200
+	[/particle]
+	[particle]
+		[file]
+			`Particle/direzie_effect_dark.ptl`
+		[create delay]
+			800
+	[/particle]
+[/add particles]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	6000
+[/object destroy condition]

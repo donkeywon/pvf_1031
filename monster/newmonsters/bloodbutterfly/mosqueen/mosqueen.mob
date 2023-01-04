@@ -1,0 +1,251 @@
+#PVF_File
+
+[floating height]
+	30
+
+[name]
+	`诺丝克尔`
+
+[face image]
+	`Monster/MonsterFace.img`	470
+
+[appear sound]
+	`MOSSQUEEN_MEET`
+
+[damage sound]
+	`R_MOSSQUEEN_DMG`
+
+[die sound]
+	`MOSSQUEEN_DIE`
+
+[ambient sound]
+	`RUCY_AMB`
+
+[keep distance with target]
+	30
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	645
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	130
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	130
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	130
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	130
+[/ability category]
+
+[category]
+	`[insect]`
+	`[melee combat]`
+	`[close-tough]`
+[/category]
+
+[fire resistance]
+	0	0
+
+[water resistance]
+	0	0
+
+[dark resistance]
+	0	0
+
+[light resistance]
+	0	0
+
+[freeze resistance]
+	50	50
+
+[stun resistance]
+	50	50
+
+[blind resistance]
+	50	50
+
+[stone resistance]
+	50	50
+
+[sleep resistance]
+	50	50
+
+[hold resistance]
+	50	50
+
+[slow resistance]
+	50	50
+
+[curse resistance]
+	50	50
+
+[confuse resistance]
+	50	50
+
+[lightning resistance]
+	0	0
+
+[bleeding resistance]
+	0	0
+
+[poison resistance]
+	10	10
+
+[burn resistance]
+	0	0
+
+[piercing resistance]
+	0	0
+
+[HP regen speed]
+	200	200
+
+[level]
+	66	70
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1300	1300
+
+[weight]
+	60000	60000
+
+[lie frame]
+	1	2	3	3	4
+
+[common champion drop item]
+[/common champion drop item]
+
+[event super on scr]
+	`[on hp]`	20	8000	1
+	`[unbreakable]`	-1	-1	-1	-1
+[/event super on scr]
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[last action]
+	`Action/Lastaction.act`
+
+[action list]
+	`Action/Attack.act`
+	`Action/Grap.act`
+	`Action/Attack2.act`
+	`Action/Attack3.act`
+	`Action/Attack4.act`
+	`Action/Attack1.act`
+	`Action/Grap2.act`
+	`Action/summon.act`
+	`Action/ankleAttack.act`
+	`Action/superguard.act`
+[/action list]
+
+[attack info]
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Grap.atk`
+	`AttackInfo/Attack2.atk`
+	`AttackInfo/Attack3.atk`
+	`AttackInfo/Attack4.atk`
+	`AttackInfo/Attack1.atk`
+	`AttackInfo/Grap2.atk`
+	``
+	`AttackInfo/Attack_.atk`
+	``
+[/attack info]
+
+[cooltime]
+	4000	3000	7000	7000	6000	15000	10000	30000	2000	33000
+[/cooltime]
+
+[reflection object]
+	0	0	1	0	2	0	3	0	4	0	5	0	6	0	7	0	8	0	9	100
+[/reflection object]
+
+[vision]
+	800
+
+[warlike]
+	90
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[keep distance with target]
+	300
+
+[keep range distance with target]
+	60	120	150	200
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/HeroAction.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[item]
+	3279	8000
+[/item]
+
+[level of difficulty]
+	[easy]
+		-40	2000
+	[medium]
+		-20	1000
+	[hard]
+		0	0
+	[ultimate]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]

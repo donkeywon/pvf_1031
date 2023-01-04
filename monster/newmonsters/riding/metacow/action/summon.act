@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/FireBreath.ani`
+	[SUB ANI]
+		`../Animation/light/FireBreath.ani`	0	0
+		`../Animation/wp/Crying.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`HYPER_TAU_ATK_03`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		20000	
+		[equipment physical attack]
+		[%]
+			50.0
+		[physical critical hit rate]
+		[%]
+			50.0
+	[/APPENDAGE]
+	[ACTIVE STATUS]
+	[burn]
+		100	71	20000	0	200	1	500
+[/BEHAVIOR]

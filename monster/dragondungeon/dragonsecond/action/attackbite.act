@@ -1,0 +1,206 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AttackBite/Bite_Dummy.ani`
+	[SUB ANI]
+		`../Animation/AttackBite/Bite_19_arm.ani`	0	1
+		`../Animation/AttackBite/Bite_18_body.ani`	0	2
+		`../Animation/AttackBite/Bite_17_neck.ani`	0	3
+		`../Animation/AttackBite/Bite_16_neck.ani`	0	4
+		`../Animation/AttackBite/Bite_15_neck.ani`	0	5
+		`../Animation/AttackBite/Bite_14_neck.ani`	0	6
+		`../Animation/AttackBite/Bite_13_neck.ani`	0	7
+		`../Animation/AttackBite/Bite_12_back.ani`	0	8
+		`../Animation/AttackBite/Bite_11_back.ani`	0	9
+		`../Animation/AttackBite/Bite_10_back.ani`	0	10
+		`../Animation/AttackBite/Bite_09_back.ani`	0	11
+		`../Animation/AttackBite/Bite_08_back.ani`	0	12
+		`../Animation/AttackBite/Bite_07_back.ani`	0	13
+		`../Animation/AttackBite/Bite_06_head.ani`	0	14
+		`../Animation/AttackBite/Bite_05_head.ani`	0	15
+		`../Animation/AttackBite/Bite_04_head.ani`	0	16
+		`../Animation/AttackBite/Bite_03_headhorn.ani`	0	17
+		`../Animation/AttackBite/Bite_02_shoulder.ani`	0	18
+		`../Animation/AttackBite/Bite_01_arm.ani`	0	19
+		`../Animation/AttackBite/Bite_00_hand.ani`	0	20
+		`../Animation/AttackBite/Bite_Bite.ani`	0	21
+		`../Animation/AttackBite/Bite_Effect_Bite_Normal.ani`	0	22
+		`../Animation/AttackBite/Bite_Effect_Bite_Dodge.ani`	0	23
+		`../Animation/AttackBite/Bite_Effect_Bite_Start_Dodge.ani`	0	24
+		`../Animation/AttackBite/Bite_Effect_Bite_Shot1.ani`	0	25
+		`../Animation/AttackBite/Bite_Effect_HandSwing_Wind.ani`	0	26
+	[/SUB ANI]
+	[SOUND]
+		`NEITRAM_INHALE`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`grab`	
+		[=]
+			0
+	[/DIM]
+	[FLASH SCREEN]
+		300	1800	300	220	0	0	0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PULL APPENDAGE]
+		8	6	640
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		16	16
+	[IF]
+		`grab`	
+		[=]
+			0
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+		[IS GRABABLE]
+			1
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+	[SET DIRECTION]
+	[RIGHT]
+	[TELEPORT]
+		[POS]
+			-5	0	3000
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/TELEPORT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`grab`	
+		[=]
+			1
+	[/DIM]
+	[TRIGGER]
+		5
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		33	33
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			201844
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-300	0	200
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		5
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		24	24
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		10	30	10	255	255	255	255
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS IN AREA]
+			[POS]
+				-5	0	3000
+			[RANGE]
+				100	100	1000
+			[COORDINATE]
+				`RELATIVE`
+		[/IS IN AREA]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		7
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			-5
+		[Y START]
+			0
+		[Z START]
+			3000
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/SET POS FORCE]
+[/BEHAVIOR]

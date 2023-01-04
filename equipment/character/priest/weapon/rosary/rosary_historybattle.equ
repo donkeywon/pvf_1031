@@ -1,0 +1,139 @@
+#PVF_File
+
+[name]
+	`远古逆袭之厄特尔念珠`
+
+[name2]
+	`Ertel Rosary of Historical Battle`
+
+[basic explain]
+	`施放技能时， 有4%%的几率使自身增加30点智力， 效果持续30秒。
+攻击速度 +1%%`
+
+[flavor text]
+	`蕴含远古战争英雄之灵魂的稀贵武器。`
+
+[grade]
+	59
+
+[rarity]
+	2
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[magical attack]
+	67
+
+[attack speed]
+	-40
+
+[cast speed]
+	60
+
+[move speed]
+	10
+
+[price]
+	82600
+
+[repair price]
+	69384
+
+[value]
+	66080
+
+[equipment physical attack]
+	457	443
+
+[equipment magical attack]
+	584	566
+
+[separate attack]
+	256	173
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	48	1
+	`[priest]`	40	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/rosary.img`	39
+
+[field image]
+	`Item/field_weapon.img`	12
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[priest]`
+
+[variation]
+	8	0
+
+[layer variation]
+	200
+	`rosaryd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`rosaryc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`ROSARY_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`rosary`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	22
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		4
+	[stat]
+		`magical attack`
+		`+`	30
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,113 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	`School Defender`
+
+[explain]
+	`下降时以20%%的机率7秒内呈现超级盔甲状态，移动速度增加20%%。被击时以5%%的机率5秒内回避率增加20%%，恢复全体HP的5%%。(发动效果仅适用于决斗场。)`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	150
+
+[equipment type]
+	`[title name]`	1
+
+[usable period]
+	30
+
+[HP MAX]
+	300
+
+[stuck resistance]
+	30
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[hit recovery]
+	100
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		20000
+	[set my state]
+		1
+	[my state]
+		`down`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		20
+	[buff]
+		`superarmor`
+	[stat]
+		`move speed`
+		`+`	200
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		20000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		5000
+	[probability]
+		5
+	[stat]
+		`stuck resistance`
+		`+`	200
+	[restore]
+		`HP`
+		`%`	5	1000
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

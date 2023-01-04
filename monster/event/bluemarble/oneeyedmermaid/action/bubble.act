@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Stay2.ani`
+	[SUB ANI]
+		`../animation/Sword/swStay.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`魔法气泡会保护你的~`	0	30
+		`谢谢你~`	0	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8735
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	80
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

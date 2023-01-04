@@ -1,0 +1,124 @@
+#PVF_File
+
+[name]
+	`机械吉赛尔的变异胸甲`
+
+[name2]
+	`找不到代码name2_11709`
+
+[basic explain]
+	`HP降到50%%以下时， 增加5点的力量、 体力、 智力和精神。
+HP降到50%%时开始， 每减少10%%的HP都会增加5点。
+最多可增加25点的力量、 体力、 智力和精神。
+无法进行分解。`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	65
+
+[physical attack]
+	36
+
+[physical defense]
+	39
+
+[magical attack]
+	36
+
+[magical defense]
+	7
+
+[hit recovery]
+	60
+
+[need material]
+	3336	265
+
+[repair price]
+	66240
+
+[value]
+	66240
+
+[equipment physical defense]
+	4560	4260
+
+[icon]
+	`Item/common/coat.img`	333
+
+[field image]
+	`Item/field_equip.img`	15
+
+[equipment type]
+	`[coat]`	21
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	60
+
+[weight]
+	5000
+
+[item group name]
+	`mt coat`
+
+[cool time]
+	10000
+
+[routing priority]
+[/routing priority]
+
+[need material]
+	3336	265
+
+[if]
+	[change status in range]
+		`hp`	50	10
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[apply status in range]
+		`physical attack`
+		`+`	5	25
+	[apply status in range]
+		`physical defense`
+		`+`	5	25
+	[apply status in range]
+		`magical attack`
+		`+`	5	25
+	[apply status in range]
+		`magical defense`
+		`+`	5	25
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

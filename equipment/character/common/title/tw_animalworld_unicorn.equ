@@ -1,0 +1,117 @@
+#PVF_File
+
+[name]
+	`动物的王国(独角兽)`
+
+[name2]
+	`找不到代码name2_600330021`
+
+[explain]
+	`攻击或施放技能时，以1%%的机率附加冰属性，效果持续40秒。`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	252
+
+[equipment type]
+	`[title name]`	1
+
+[custom animation]
+	`TitleAnimation/animalworld_unicorn.ani`
+[/custom animation]
+
+[HP MAX]
+	200
+
+[physical attack]
+	18
+
+[magical attack]
+	18
+
+[all elemental resistance]
+	8
+
+[all activestatus resistance]
+	8
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		40000
+	[probability]
+		1
+	[elemental weapon]
+		`water`
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		40000
+	[probability]
+		1
+	[elemental weapon]
+		`water`
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[fire attack]
+	8
+
+[water attack]
+	8
+
+[light attack]
+	8
+
+[dark attack]
+	8
+
+[icon mark]
+	`Item/IconMark.img`	64

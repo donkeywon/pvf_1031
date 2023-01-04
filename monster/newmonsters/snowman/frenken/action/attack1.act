@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack1.ani`
+	[SOUND]
+		`FRANKEN_SKILL_01`	2
+	[/SOUND]
+	[SPEECH]
+		`你最好有个心理准备！`	0	5
+	[/SPEECH]
+	[SUB ANI]
+		`../Animation/Cast2.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9333
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			153	0	80
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

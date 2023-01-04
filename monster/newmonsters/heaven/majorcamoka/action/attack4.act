@@ -1,0 +1,87 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack2.ani`
+	[SOUND]
+		`CLAES_SKILL`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`黑夜即将降临~~`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61185
+		[LEVEL]
+			0
+		[POS]
+			100	0	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61185
+		[LEVEL]
+			0
+		[POS]
+			200	0	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61185
+		[LEVEL]
+			0
+		[POS]
+			-100	0	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61185
+		[LEVEL]
+			0
+		[POS]
+			-200	0	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61185
+		[LEVEL]
+			0
+		[POS]
+			400	0	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61185
+		[LEVEL]
+			0
+		[POS]
+			-400	0	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

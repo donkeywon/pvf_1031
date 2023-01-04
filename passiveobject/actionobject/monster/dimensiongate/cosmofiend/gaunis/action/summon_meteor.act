@@ -1,0 +1,76 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/_Aura_dumy.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		200	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		2
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		30
+	[FRAME]
+		3	3
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14135
+		[/IS INDEX]
+		[DISTANCE]
+		[=<]
+			3000
+	[/CHECKUP]
+	[GET TARGET]
+		3
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		1
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14134
+		[PARTICLE FILENAME]
+			`../Particle/drop.ptl`
+		[LEVEL]
+			70
+		[POS]
+			0	0	1000
+		[WARNING MARK]
+			0	0	80	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

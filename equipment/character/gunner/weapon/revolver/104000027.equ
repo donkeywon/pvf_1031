@@ -1,0 +1,171 @@
+#PVF_File
+
+[name]
+	`柯尔特 - 咆哮者[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`用光属性攻击时， 有2%%的几率使敌人进入眩晕状态。
+[踏射]、 [钉刺射]发射数 +1
+
+无法进行合成和分解。`
+
+[detail explain]
+	`光属性攻击时， 有2%%的几率使敌人进入眩晕状态2秒。 (若敌人高于Lv69， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+
+无法进行合成和分解。`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	65
+
+[physical attack]
+	46
+
+[price]
+	110400
+
+[repair price]
+	92736
+
+[value]
+	88320
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	612	558
+
+[equipment magical attack]
+	515	469
+
+[separate attack]
+	389	264
+
+[physical critical hit]
+	2
+
+[skill levelup]
+	`[gunner]`	9	2
+	`[at gunner]`	9	2
+	`[gunner]`	22	1
+	`[at gunner]`	22	1
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/revolver.img`	58
+
+[field image]
+	`Item/field_weapon.img`	1
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	13	2
+
+[layer variation]
+	2790
+	`revc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`revb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	13	2
+
+[layer variation]
+	2790
+	`at_revc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_revb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2000
+
+[item group name]
+	`revolver`
+
+[cool time]
+	10000
+
+[if]
+	[element]
+		`light`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		2
+	[active status]
+		`stun`	69
+[/then]
+
+[skill data up]
+	`[gunner]`	6	`[all]`	`[static]`	0	`+`	1
+	`[at gunner]`	6	`[all]`	`[static]`	0	`+`	1
+[/skill data up]
+
+[not amplify]
+	1
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

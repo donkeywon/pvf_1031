@@ -1,0 +1,153 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Stay.ani`
+	[SUB ANI]
+		`../Animation/CannonReadyBF.ani`	0	-1
+		`../Animation/CannonReadyBB.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`THROW_BOMB`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9111
+		[PARTICLE FILENAME]
+			`../Particle/Fire_Drap.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-70	40	-1
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9111
+		[PARTICLE FILENAME]
+			`../Particle/Fire_Drap.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-70	-40	-1
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9111
+		[PARTICLE FILENAME]
+			`../Particle/Fire_Drap.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	40	-1
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9111
+		[PARTICLE FILENAME]
+			`../Particle/Fire_Drap.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	-40	-1
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9111
+		[PARTICLE FILENAME]
+			`../Particle/Fire_Drap.ptl`
+		[LEVEL]
+			0
+		[POS]
+			70	40	-1
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9111
+		[PARTICLE FILENAME]
+			`../Particle/Fire_Drap.ptl`
+		[LEVEL]
+			0
+		[POS]
+			70	-40	-1
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9111
+		[PARTICLE FILENAME]
+			`../Particle/Fire_Drap.ptl`
+		[LEVEL]
+			0
+		[POS]
+			140	40	-1
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9111
+		[PARTICLE FILENAME]
+			`../Particle/Fire_Drap.ptl`
+		[LEVEL]
+			0
+		[POS]
+			140	-40	-1
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

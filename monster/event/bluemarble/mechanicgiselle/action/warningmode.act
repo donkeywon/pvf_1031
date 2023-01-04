@@ -1,0 +1,59 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/CastingStay.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`危机模式启动！！！！受死吧！`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		10
+		`_Move_Front.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		11
+		`_Move_Up.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		12
+		`_Move_Down.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		13
+		`_Move_Upside.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		14
+		`_Move_DownSide.act`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		0	
+		[equipment physical attack]
+		[%]
+			20.0
+		[attack speed]
+		[%]
+			20.0
+	[/APPENDAGE]
+[/BEHAVIOR]

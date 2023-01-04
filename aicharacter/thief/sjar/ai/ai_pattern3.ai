@@ -1,0 +1,32 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check key cooltime]
+			`summon_coin`
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`fortune_coin`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`bom_coin`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`bom_coin`
+			[/think]
+	[false]
+	[return str]
+		`fortune_coin`
+	[/think]
+	[false]
+	[return str]
+		`summon_coin`
+	[/think]
+[/ai pattern]

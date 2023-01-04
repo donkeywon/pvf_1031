@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Candle.ani`
+	[SUB ANI]
+		`../Animation/Candle_light.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`THUNDERC_ATK_1`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		10	500	10	150	0	0	0
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			19517
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			0	0	50
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		10	300
+[/BEHAVIOR]

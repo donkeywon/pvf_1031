@@ -1,0 +1,62 @@
+#PVF_File
+
+[ui controls]
+	`[board image]`
+	`900`	0	0	1
+	`Interface/newstyle/windows/Chatting/chatting_ver4.img`	11	188	125	149	150	151	152	153	154	155	156	157
+[/ui controls]
+
+[ui controls]
+	`[control]`
+	`901`	7	0	0	2	176	125
+[/ui controls]
+
+[ui controls]
+	`[tab group]`
+	`999`	0	0	2
+	`表情`
+	`设置`	7	58	2	58	40	4	-3	4	
+	[parent]
+		`901`
+[/ui controls]
+
+[ui controls]
+	`[control]`
+	`1000`	3	25	0	2	110	100	
+	[parent tab]
+		`999`	0
+[/ui controls]
+
+[ui path]
+	`UI/Chat/ChatEmoticonInven.ui`
+	`1000`
+[/ui path]
+
+[ui controls]
+	`[control]`
+	`1001`	0	28	0	2	168	90	
+	[parent tab]
+		`999`	1
+[/ui controls]
+
+[ui path]
+	`UI/Chat/ChatEmoticonConfig.ui`
+	`1001`
+[/ui path]
+
+[ui controls]
+	`[control]`
+	`10500`	0	0	0	2	1	1
+[/ui controls]
+
+[ui controls]
+	`[tooltips]`
+	`10501`	0	0	2
+	`900`
+	`警告`	5	1	180	2	1	2000
+[/ui controls]
+
+[variable]
+	`[int]`
+	`10502`	2	14	14
+[/variable]

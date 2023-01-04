@@ -1,0 +1,84 @@
+#PVF_File
+
+[name]
+	`皇都军D.T.部队`
+
+[name2]
+	``
+
+[explain]
+	`在[普鲁兹发电站]地下城攻击敌人时， 可附加500点伤害。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	455
+
+[custom animation]
+	`TitleAnimation/hwangdo_dt.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	8
+
+[physical defense]
+	8
+
+[magical attack]
+	8
+
+[magical defense]
+	8
+
+[HP MAX]
+	200
+
+[move speed]
+	30
+
+[if]
+	[attack success]
+		1
+	[dungeon check]
+		102
+	[/dungeon check]
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`+`	500
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[icon mark]
+	`Item/IconMark.img`	64

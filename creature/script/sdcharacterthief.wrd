@@ -1,0 +1,22 @@
+#PVF_File
+
+[ambient]
+	[all]
+		`Creature/SDCharacter/Thief/C_talk_stand1.ani`
+		`Creature/SDCharacter/Thief/C_talk_stand2.ani`
+	[/all]
+[/ambient]
+
+[trigger]
+	[all]
+		[call the name]
+			`Creature/SDCharacter/Thief/C_talk_call.ani`
+		[/call the name]
+		[using skill]
+			`Creature/SDCharacter/Thief/C_talk_skill.ani`
+		[/using skill]
+		[state special]
+			`Creature/SDCharacter/Thief/C_talk_random.ani`
+		[/state special]
+	[/all]
+[/trigger]

@@ -1,0 +1,84 @@
+#PVF_File
+
+[name]
+	`亡灵十字架`
+
+[name2]
+	`Tower of Despair 82 Floor`
+
+[flavor text]
+	`亡灵十字架……你为什么要选择我？ 我也渴望自由之身， 到底要用多少鲜血祭奠你才能放我自由？`
+
+[explain]
+	`被攻击时， 有2%%的几率使自身进入加速状态15秒； 加速状态下， 增加8%%的移动速度和攻击速度。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	390
+
+[custom animation]
+	`TitleAnimation/apc_tower_of_despair_82.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	13
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[cooltime]
+		30000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[probability]
+		2
+	[stat]
+		`attack speed`
+		`+`	80
+	[stat]
+		`move speed`
+		`+`	80
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

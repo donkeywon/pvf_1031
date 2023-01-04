@@ -1,0 +1,175 @@
+#PVF_File
+
+[name]
+	`僵尸猎手`
+
+[name2]
+	`Letum Via`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入冰冻状态。
+攻击速度 +2%%`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入冰冻状态5秒； 但在决斗场中， 只能持续2.5秒。 (若敌人高于Lv65， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击速度 2%%`
+
+[grade]
+	65
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	44
+
+[magical attack]
+	66
+
+[attack speed]
+	20
+
+[price]
+	117000
+
+[repair price]
+	98280
+
+[value]
+	93600
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	627	562
+
+[equipment magical attack]
+	546	489
+
+[separate attack]
+	378	255
+
+[skill levelup]
+	`[gunner]`	58	3
+	`[at gunner]`	58	3
+[/skill levelup]
+
+[water attack]
+	10
+
+[icon]
+	`item/weapon/gunner/musket.img`	56
+
+[field image]
+	`Item/field_weapon.img`	3
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	9	4
+
+[layer variation]
+	2790
+	`musketc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`musketb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	9	4
+
+[layer variation]
+	2790
+	`at_musketc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_musketb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	2100
+
+[item group name]
+	`musket`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[water element]`
+
+[if]
+	[cooltime]
+		7500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`freeze`	65
+[/then]
+
+[routing priority]
+	`gunner`	4
+	`at gunner`	4
+[/routing priority]
+
+[possible kiri protect]
+
+[need material]
+	2749095	169
+
+[icon mark]
+	`Item/IconMark.img`	68

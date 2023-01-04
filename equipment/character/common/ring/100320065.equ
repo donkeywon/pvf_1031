@@ -1,0 +1,161 @@
+#PVF_File
+
+[name]
+	`枪灵之魂`
+
+[basic explain]
+	`攻击时， 有2%%的几率召唤出小枪手空空伊或哥布林枪手， 效果持续20秒。
+(决斗场内10秒内召唤)
+无法进行分解。`
+
+[detail explain]
+	`攻击时， 有2%%的几率召唤出一个Lv75的小枪手空空伊或哥布林枪手， 效果持续20秒。 (召唤的怪物只能同时存在1只， 若其受到较大伤害时， 则召唤时间结束前就会消失)
+(决斗场内10秒内召唤)
+无法进行分解。`
+
+[flavor text]
+	`无法地带， 这个鸟不生蛋的地方， 也会是我们梦开始的地方！  --安祖·赛弗`
+
+[grade]
+	79
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[physical attack]
+	47
+
+[magical attack]
+	47
+
+[need material]
+	3338	440
+
+[value]
+	63200
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	2752	2592
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	100
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[routing priority]
+[/routing priority]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[summon monster]
+		65500	75	1
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[summon monster]
+		65013	75	1
+[/then]
+
+[pvp]
+	[if]
+		[cooltime]
+			60000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			10000
+		[probability]
+			2
+		[summon monster]
+			65500	75	1
+	[/then]
+	[if]
+		[cooltime]
+			60000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			10000
+		[probability]
+			2
+		[summon monster]
+			65013	75	1
+	[/then]
+[/pvp]
+
+[icon mark]
+	`Item/IconMark.img`	66

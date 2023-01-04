@@ -1,0 +1,118 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`enemy number of in attack area()`	500.0	500.0	280.0	280.0
+	
+		[think]
+			[last result]
+				`>=`	2.0
+			[true]
+		
+			[think]
+				[mp]
+					`%>=`	95.0
+				[true]
+				[import ai]
+					`Action_pattern3.ai`
+				[false]
+			
+				[think]
+					[set party member]
+						1
+				
+					[think]
+						[party member hp]
+							`%>=`	70
+						[true]
+						[import ai]
+							`Action_pattern3.ai`
+						[false]
+					
+						[think]
+							[mp]
+								`%>=`	50.0
+							[true]
+							[import ai]
+								`Action_pattern1.ai`
+							[false]
+						
+							[think]
+								[mp]
+									`%>=`	40.0
+								[true]
+								[import ai]
+									`Action_pattern2.ai`
+								[false]
+							
+								[think]
+									[mp]
+										`%>=`	20.0
+									[true]
+									[import ai]
+										`Action_pattern1.ai`
+									[false]
+									[import ai]
+										`Action_pattern2.ai`
+								[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[mp]
+			`%>=`	80.0
+		[true]
+		[import ai]
+			`Action_pattern4.ai`
+		[false]
+	
+		[think]
+			[set party member]
+				1
+		
+			[think]
+				[party member hp]
+					`%>=`	70
+				[true]
+				[import ai]
+					`Action_pattern4.ai`
+				[false]
+			
+				[think]
+					[mp]
+						`%>=`	50.0
+					[true]
+					[import ai]
+						`Action_pattern1.ai`
+					[false]
+				
+					[think]
+						[mp]
+							`%>=`	40.0
+						[true]
+						[import ai]
+							`Action_pattern2.ai`
+						[false]
+					
+						[think]
+							[mp]
+								`%>=`	20.0
+							[true]
+							[import ai]
+								`Action_pattern1.ai`
+							[false]
+							[import ai]
+								`Action_pattern2.ai`
+						[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

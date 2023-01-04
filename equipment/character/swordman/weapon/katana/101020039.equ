@@ -1,0 +1,194 @@
+#PVF_File
+
+[name]
+	`炎月之魂`
+
+[basic explain]
+	`普通攻击时， 有15%%的几率出现火焰旋风。
+被击时， 有20%%的几率对敌人发动陨石攻击。
+无法进行分解。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	55
+
+[magical attack]
+	83
+
+[attack speed]
+	80
+
+[cast speed]
+	40
+
+[stuck]
+	1
+
+[need material]
+	3339	1000
+
+[repair price]
+	112896
+
+[value]
+	107520
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	764	716
+
+[equipment magical attack]
+	844	792
+
+[separate attack]
+	481	327
+
+[physical critical hit]
+	2
+
+[skill levelup]
+	`[swordman]`	13	3
+	`[swordman]`	22	1
+	`[demonic swordman]`	13	3
+	`[demonic swordman]`	117	1
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/katana/katana.img`	98
+
+[field image]
+	`Item/FieldImage.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	34	0
+
+[layer variation]
+	2790
+	`katanac`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`katanab`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	34	0
+
+[layer variation]
+	2790
+	`katanac`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`katanab`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`KATANA_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`katana`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[routing priority]
+	`swordman`	2
+	`demonic swordman`	0
+[/routing priority]
+
+[elemental property]
+	`[fire element]`
+
+[if]
+	[cooltime]
+		3000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		20
+	[passive object]
+		48030	0	0	0	85	1	``
+	[/passive object]
+[/then]
+
+[if]
+	[cooltime]
+		3000
+	[my state]
+		`attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		15
+	[passive object]
+		48231	0	0	0	85	0	``
+	[/passive object]
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

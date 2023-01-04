@@ -1,0 +1,104 @@
+#PVF_File
+
+[name]
+	`玛丽蕾特`
+
+[floating height]
+	180
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+	`[HP MAX]`	`*`	685
+[/ability category]
+
+[level]
+	70	70
+
+[move speed]
+	1500	1500
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	100000	100000
+
+[warlike]
+	0
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[waiting action]
+	`Action/move.act`
+
+[move action]
+	`Action/move.act`
+
+[attack action]
+	`Action/attack_0.act`
+	`Action/attack_1.act`
+	`Action/_attack_1.act`
+	`Action/_attack_2.act`
+[/attack action]
+
+[cooltime]
+	0	0	0	0
+[/cooltime]
+
+[think term]
+	300
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	0
+
+[warlike]
+	0
+
+[vision]
+	1000

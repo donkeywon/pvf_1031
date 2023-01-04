@@ -1,0 +1,187 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	70
+[/dungeon]
+
+[type]
+	`[normal]`
+
+[greed]
+	`PP PP`
+
+[tile]
+	`Tile/ForestUnder.til`
+	`Tile/ForestUnder.til`
+	`Tile/ForestUnderOver.til`
+	`Tile/ForestOver.til`
+	`Tile/ForestOver.til`
+	`Tile/ForestOver.til`
+[/tile]
+
+[extended tile]
+	`Tile/tileex00.til`
+	`Tile/tileex00.til`
+	`Tile/tileex00.til`
+	`Tile/tileex00.til`
+	`Tile/tileex00.til`
+	`Tile/tileex00.til`
+[/extended tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/far0.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/mid0.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/FireCurtain01.ani`
+		[layer]
+			`[close]`
+		[order]
+			`[upper]`
+		[screen pos]
+			0	80
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	23	318	1331	372	365	162	954	473
+
+[sound]
+	`M_T_CONFLAGRATION`
+	`AMB_FOREST_05`
+[/sound]
+
+[animation]
+	`Animation/fire01.ani`	`[close]`	-25	517	0
+	`Animation/fire02.ani`	`[close]`	1177	513	0
+	`Animation/fire03.ani`	`[close]`	277	527	0
+	`Animation/Stone1.ani`	`[normal]`	1108	163	0
+	`Animation/Stone1.ani`	`[normal]`	852	248	0
+	`Animation/Stone1.ani`	`[normal]`	1130	251	0
+	`Animation/Stone0.ani`	`[normal]`	848	280	0
+	`Animation/Stone1.ani`	`[normal]`	565	289	0
+	`Animation/Stone0.ani`	`[normal]`	1184	322	0
+	`Animation/Stone0.ani`	`[bottom]`	436	260	0
+	`Animation/Stone0.ani`	`[bottom]`	893	229	0
+	`Animation/Stone0.ani`	`[bottom]`	751	283	0
+	`Animation/Stone1.ani`	`[bottom]`	352	278	0
+	`Animation/BurntTree0.ani`	`[closeback]`	567	127	0
+	`Animation/BurntTree4.ani`	`[closeback]`	836	139	0
+	`Animation/BurntTree5.ani`	`[closeback]`	981	139	0
+	`Animation/BurntTree6.ani`	`[closeback]`	1122	136	0
+	`Animation/BurntTree1.ani`	`[closeback]`	1247	135	0
+	`Animation/fire03.ani`	`[middleback]`	765	124	0
+	`Animation/Time_Fargear_down_eff.ani`	`[distantback]`	866	3	0
+	`Animation/Time_Fargear_down_L.ani`	`[distantback]`	861	-31	0
+	`Animation/Time_Fargear_up_L.ani`	`[distantback]`	45	-52	0
+	`Animation/Time_Fargear_up_eff.ani`	`[distantback]`	-21	-138	0
+	`Animation/Time_Fargear_up_L.ani`	`[distantback]`	1545	-52	0
+	`Animation/Time_Fargear_up_eff.ani`	`[distantback]`	1479	-138	0
+[/animation]
+
+[passive object]
+	306	607	151	0
+	11199	696	301	0
+	11202	697	303	0
+	7	200	260	540
+	221	742	167	0
+	11189	1099	192	0
+	11187	1052	197	0
+	11189	132	200	0
+	11188	95	206	0
+	11189	414	420	0
+	11187	370	422	0
+	11189	1179	437	0
+	303	570	461	0
+	303	1126	464	0
+	303	236	465	0
+	222	474	465	0
+	221	816	467	0
+	221	649	470	0
+	222	735	471	0
+[/passive object]
+
+[monster]
+	63039	1	0	803	228	0	1	1	`[fixed]`	`[normal]`
+	63039	1	0	1021	243	0	1	1	`[fixed]`	`[normal]`
+	63039	1	0	1143	334	0	1	1	`[fixed]`	`[normal]`
+	63040	1	0	973	373	0	1	1	`[fixed]`	`[normal]`
+	63040	1	0	615	380	0	1	1	`[fixed]`	`[normal]`
+	63040	1	0	842	394	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[special passive object]
+	16012	376	333	0	1
+	`[hellparty]`
+		116	20	1
+		117	20	1
+		118	20	1
+		119	20	1
+		120	20	1
+		135	20	1
+		136	20	1
+		137	20	1
+		138	20	1
+		139	20	1
+		140	20	1
+		162	20	1
+		108	20	2
+		109	20	2
+		110	20	2
+		111	20	2
+		112	20	2
+		113	20	2
+		114	20	2
+		115	20	2
+	`[/hellparty]`
+[/special passive object]
+
+[event monster position]
+	927	275	0
+	897	326	0
+	1106	301	0
+	846	166	0
+[/event monster position]
+
+[map name]
+	`PVP 无名`

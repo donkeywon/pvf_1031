@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/cast.ani`
+	[SUB ANI]
+		`../Animation/weapon/cast_wp.ani`	0	1
+		`../Animation/effect/fire_cast_dodge.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`FORESTOAK_SKILL_02_1`	0
+		`SEANUWA_SWING_FIRE`	0
+		`SEANUWA_SWING_FIRE`	4
+		`SEANUWA_SWING_FIRE`	8
+		`SEANUWA_SWING_FIRE`	12
+		`SEANUWA_FIREMAGIC_READY`	16
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		17	17
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11197
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			50	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

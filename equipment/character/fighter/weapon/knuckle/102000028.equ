@@ -1,0 +1,237 @@
+#PVF_File
+
+[name]
+	`碎骨裂魂拳套`
+
+[name2]
+	``
+
+[basic explain]
+	`[分身]数量 +2
+[幻影爆碎]攻击力 +25%%
+[幻影爆碎]爆炸范围 +25%%
+
+施放[分身]、 [幻影爆碎]时， 可以使自身增加25点智力， 效果持续20秒。
+被攻击时， 有20%%的几率施放Lv30的[幻影爆碎]。`
+
+[detail explain]
+	`[分身]数量 +2
+[幻影爆碎]攻击力 +25%%
+[幻影爆碎]爆炸范围 +25%%
+
+施放[分身]、 [幻影爆碎]时， 可以使自身增加25点智力， 效果持续20秒。 (效果最多可重叠3次)
+被攻击时， 有20%%的几率施放Lv30的[幻影爆碎]。 (分身数量 +10； 在决斗场内几率为2%%)`
+
+[grade]
+	75
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[magical attack]
+	50
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[need material]
+	3285	1800
+
+[repair price]
+	100800
+
+[value]
+	96000
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	688	631
+
+[equipment magical attack]
+	833	764
+
+[separate attack]
+	441	298
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/knuckle/knuckle.img`	93
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	19	1
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	20	1
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[routing priority]
+	`fighter`	1
+	`at fighter`	1
+[/routing priority]
+
+[skill data up]
+	`[fighter]`	8	`[all]`	`[level]`	0	`+`	2
+	`[at fighter]`	8	`[all]`	`[level]`	0	`+`	2
+	`[fighter]`	69	`[all]`	`[level]`	0	`%`	25
+	`[at fighter]`	69	`[all]`	`[level]`	0	`%`	25
+	`[fighter]`	69	`[all]`	`[static]`	0	`%`	25
+	`[at fighter]`	69	`[all]`	`[static]`	0	`%`	25
+[/skill data up]
+
+[if]
+	[event use skill]
+		`fighter`	8
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[appendage]
+		47
+[/then]
+
+[if]
+	[event use skill]
+		`fighter`	69
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[appendage]
+		47
+[/then]
+
+[if]
+	[event use skill]
+		`at fighter`	8
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[appendage]
+		47
+[/then]
+
+[if]
+	[event use skill]
+		`at fighter`	69
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[appendage]
+		47
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[hit]
+		1
+[/if]
+
+[then]
+	[probability]
+		20
+	[reduce probability to human armor at pvp module]
+		90
+	[perform skill]
+		`fighter`	69	30	10
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	68

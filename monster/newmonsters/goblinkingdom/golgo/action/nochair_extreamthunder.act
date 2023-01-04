@@ -1,0 +1,96 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/nochair_extreamthunder.ani`
+	[SUB ANI]
+		`../Animation/Stick/Stick_nochair_extreamthunder.ani`	0	10
+	[/SUB ANI]
+	[SPEECH]
+		`朕要还手了！`	0	50
+		`嘿嘿~`	0	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[ZPOS]
+	[<=]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			3000
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[ZPOS]
+	[>=]
+		900
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8218
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			595	255	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TELEPORT]
+		[POS]
+		[RANDOM]
+			200	1000
+		[RANDOM]
+			150	350	1000
+		[USE MAP POS]
+		[MOVE ME]
+	[/TELEPORT]
+	[SET SPEED]
+		[Z AXIS]
+			0
+	[/SET SPEED]
+	[TRIGGER]
+		2
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		2	2
+	[ZSPEED]
+	[<]
+		0
+	[ZPOS]
+	[<=]
+		10
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		3
+	[TRIGGER]
+		2
+	[OFF]
+[/BEHAVIOR]

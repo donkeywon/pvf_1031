@@ -1,0 +1,176 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`死亡之惧`
+
+[face image]
+	`Monster/MonsterFace.img`	350
+
+[attack sound]
+	``
+
+[appear sound]
+	`ASTAROTH_SOUL_INVOKE`
+
+[damage sound]
+	``
+
+[die sound]
+	`BASILRISK_DIE`
+
+[ambient sound]
+	``
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	1000
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	200
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	250
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	200
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	250
+[/ability category]
+
+[dark resistance]
+	50	50
+
+[light resistance]
+	-30	-30
+
+[freeze resistance]
+	1000	1000
+
+[stone resistance]
+	1000	1000
+
+[stun resistance]
+	100	100
+
+[blind resistance]
+	100	100
+
+[sleep resistance]
+	100	100
+
+[hold resistance]
+	100	100
+
+[slow resistance]
+	100	100
+
+[curse resistance]
+	100	100
+
+[confuse resistance]
+	100	100
+
+[targeting bonus]
+	0	0	0	0	0	0	0	0	0	0	0	0	0	0	50	0	0	0	0	0	50
+	`[stand]`
+	`[dash]`	0	0	0
+
+[category]
+	`[devil]`
+[/category]
+
+[set damage check]
+	3000
+
+[hp regen rate]
+	0.0	0.0
+
+[MP regen speed]
+	0	0
+
+[level]
+	62	67
+
+[move speed]
+	1200	1200
+
+[attack speed]
+	1200	1200
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1800	1800
+
+[weight]
+	150000	150000
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[attack action]
+	`Action/Attack.act`
+	`Action/last.act`
+[/attack action]
+
+[attack info]
+	`attackinfo/Attack1.atk`
+	``
+[/attack info]
+
+[cooltime]
+	4000	4000
+[/cooltime]
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	1000
+
+[warlike]
+	100
+
+[think term]
+	500
+
+[destination change term]
+	1000
+
+[keep distance with target]
+	250
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

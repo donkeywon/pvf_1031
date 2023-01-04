@@ -1,0 +1,28 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Appear.ani`
+	[SUB ANI]
+		`../Animation/AppearStones_f.ani`	0	1
+		`../Animation/AppearStones_b.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`IMAGO_UNDERLAND`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Bug-out-kemuri.ptl`	0	0	0
+	[REMOVE CATEGORY]
+	[FIXTURE]
+[/BEHAVIOR]

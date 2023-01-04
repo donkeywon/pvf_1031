@@ -1,0 +1,52 @@
+#PVF_File
+
+[name]
+	`无色小晶块效果`
+
+[name2]
+	`Nonecolor Small Cube`
+
+[explain]
+	`武器的物理攻击力和魔法攻击力各增加40点， 效果持续30秒。`
+
+[grade]
+	0
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[icon]
+	`Item/IconMaterial.img`	13
+
+[equipment type]
+	`[coat]`	14
+
+[cool time]
+	30000
+
+[if]
+	[time]
+		30000	1	1000
+	[module]
+		`[dungeon type]`
+	[/module]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[consume item]
+		3037	1
+	[duration]
+		30000
+	[stat]
+		`equipment magical attack`
+		`+`	40
+	[stat]
+		`equipment physical attack`
+		`+`	40
+[/then]

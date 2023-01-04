@@ -1,0 +1,159 @@
+#PVF_File
+
+[name]
+	`湮灭之心战镰`
+
+[name2]
+	``
+
+[basic explain]
+	`施放[恶魔之刺]时， 可以使所有敌人减少2000点魔法防御力， 效果持续5秒。(在决斗场中魔法防御力 -400)`
+
+[grade]
+	75
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[physical attack]
+	50
+
+[magical attack]
+	50
+
+[attack speed]
+	110
+
+[stuck]
+	1
+
+[need material]
+	3285	1800
+
+[repair price]
+	113400
+
+[value]
+	108000
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	688	631
+
+[equipment magical attack]
+	724	664
+
+[separate attack]
+	441	298
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	114	2
+	`[priest]`	123	2
+	`[priest]`	121	2
+[/skill levelup]
+
+[dark attack]
+	12
+
+[icon]
+	`item/new_equipment/01_weapon/priest/scythe/scythe.img`	80
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	25	1
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[routing priority]
+	`priest`	4
+[/routing priority]
+
+[if]
+	[event use skill]
+		`priest`	116
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[duration]
+		5000
+	[stat]
+		`equipment magical defense`
+		`+`	-2000
+[/then]
+
+[pvp]
+	[if]
+		[event use skill]
+			`priest`	116
+	[/if]
+	[then]
+		[target]
+			`all enemy`	-1
+		[duration]
+			5000
+		[stat]
+			`equipment magical defense`
+			`+`	-400
+	[/then]
+[/pvp]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Casting3.ani`
+	[SUB ANI]
+		`../animation/skill_eff/Shoot2.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`赫！`	1	10
+		`咿呀！`	1	10
+	[/SPEECH]
+	[SOUND]
+		`NENKWON_ATK_01_1`	2
+		`SKASA_ICEWIND_02`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9928
+		[PARTICLE FILENAME]
+			`../Particle/throw_down.ptl`
+		[LEVEL]
+			38
+		[POS]
+			60	5	65
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

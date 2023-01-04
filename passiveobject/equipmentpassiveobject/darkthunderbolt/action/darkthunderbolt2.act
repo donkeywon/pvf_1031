@@ -1,0 +1,28 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/darkthunderbolt.ani`
+	[SUB ANI]
+		`../animation/darkthunderboltglow.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`THUNDERC_LIGHTNING`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		5000	
+		[dark element]
+		[+]
+			-5
+	[/APPENDAGE]
+[/BEHAVIOR]

@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Casting.ani`
+	[SUB ANI]
+		`../animation/Casting_e.ani`	0	-2
+		`../animation/Casting_e1.ani`	0	-1
+		`../animation/Casting_e2.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`摧毁吧~`	2	30
+		`哎呀！`	2	30
+	[/SPEECH]
+	[SOUND]
+		`R_EXPENTOY_ATK`	1
+		`EXPENTOY_BUFF`	1
+		`SPACETOY_THROW`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10571
+		[PARTICLE FILENAME]
+			`../Particle/cast.ptl`
+		[LEVEL]
+			0
+		[POS]
+			80	0	80
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

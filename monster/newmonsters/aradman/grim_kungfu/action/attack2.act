@@ -1,0 +1,32 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack2.ani`
+	[SUB ANI]
+		`../Animation/Attack2_eff.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`R_KUNGFUMAN_ATK`	0
+		`R_KUNGFUMAN_KICK`	2
+	[/SOUND]
+	[SPEECH]
+		`嘿呀！！`	0	20
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		2
+	[END]
+[/BEHAVIOR]

@@ -1,0 +1,162 @@
+#PVF_File
+
+[name]
+	`玄铁手套`
+
+[name2]
+	`Steel Sand Gloves`
+
+[basic explain]
+	`攻击时， 有3%%的几率附加30点伤害。`
+
+[flavor text]
+	`嗯哈，如果铁砂拳配上这玄铁手套……！！`
+
+[grade]
+	32
+
+[rarity]
+	2
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	30
+
+[magical attack]
+	21
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[price]
+	44800
+
+[repair price]
+	35840
+
+[value]
+	35840
+
+[equipment physical attack]
+	277	262
+
+[equipment magical attack]
+	336	317
+
+[separate attack]
+	145	96
+
+[skill levelup]
+	`[fighter]`	7	2
+	`[at fighter]`	7	2
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/fighter/knuckle.img`	14
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	0	5
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	0	5
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[add absolute damage]
+		`all`
+		`+`	30
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

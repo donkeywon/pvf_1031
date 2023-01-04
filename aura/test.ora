@@ -1,0 +1,68 @@
+#PVF_File
+
+[type]
+	`include`
+
+[range]
+	250
+
+[duration]
+	10000
+
+[destroy method]
+	`duration`
+	`source destroy`
+[/destroy method]
+
+[event time]
+	`first`	1000
+	`repeat`	1000
+	`update`	250
+[/event time]
+
+[overlab type]
+	`overlab`
+
+[target]
+	[object type]
+		`all`
+	[ally type]
+		`dont-care`
+[/target]
+
+[event]
+	`appendage`	1
+	`appendage`	2
+[/event]
+
+[effect]
+	[attach target]
+		`delegator`
+	[type]
+		`animation`
+	[attach pos]
+		`bottom`
+	[index]
+		-1
+	[option]
+		`floor`
+		`apply custom color`
+		`sync speed`
+		`copy horizon`
+		`copy vertical`
+		`resize`
+	[/option]
+	[file name]
+		`Aura/Effect/Animation/test_aura_range.ani`
+[/effect]
+
+[effect]
+	[attach target]
+		`target`
+	[type]
+		`particle`
+	[attach pos]
+		`middle`
+	[file name]
+		`Aura/Effect/Particle/test_aura_particle2.ptl`
+[/effect]

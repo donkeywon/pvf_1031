@@ -1,0 +1,30 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/bomb.ani`
+	[SPEECH]
+		`向前方扔手榴弹！！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30536
+		[PARTICLE FILENAME]
+			`../Particle/Grenade.ptl`
+		[LEVEL]
+			60
+		[POS]
+			20	0	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

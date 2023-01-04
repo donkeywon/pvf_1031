@@ -1,0 +1,179 @@
+#PVF_File
+
+[name]
+	`动物王国(猎豹-纪念版)`
+
+[name2]
+	`Animal World (Leopard)`
+
+[explain]
+	`攻击时， 有3%%的几率使自身增加3%%的攻击速度， 效果持续30秒。
+施放技能时， 有3%%的几率使自身增加3%%的施放速度， 效果持续30秒。
+攻击或施放技能时， 有3%%的几率使自身增加3%%的移动速度， 效果持续30秒。
+被攻击时， 有10%%的几率使自身增加3%%的回避率， 效果持续30秒。`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	253
+
+[custom animation]
+	`TitleAnimation/animalworld_leopardpl.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	200
+
+[physical attack]
+	18
+
+[physical defense]
+	18
+
+[magical attack]
+	18
+
+[magical defense]
+	18
+
+[stuck resistance]
+	20
+
+[HP regen speed]
+	85
+
+[move speed]
+	30
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[hit recovery]
+	80
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`attack speed`
+		`+`	30
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`cast speed`
+		`+`	30
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`move speed`
+		`+`	30
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`move speed`
+		`+`	30
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		10
+	[stat]
+		`stuck resistance`
+		`+`	30
+[/then]
+
+[room list move speed rate]
+	0.15
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

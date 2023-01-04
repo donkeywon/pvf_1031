@@ -1,0 +1,156 @@
+#PVF_File
+
+[name]
+	`布鲁之怨灵印章`
+
+[name2]
+	`A Ghost Sealed of Flu`
+
+[basic explain]
+	`被攻击时， 有5%%的几率使敌人进入诅咒状态30秒。
+攻击时， 有3%%的几率使敌人减少20%%的物防和魔防， 效果持续20秒。`
+
+[detail explain]
+	`被攻击时， 有5%%的几率使敌人进入诅咒状态30秒； 诅咒状态下， 减少70点力量、 体力、 智力和精神。 (若敌人高于Lv69， 则减少进入异常状态的几率； 反之， 则增加几率)
+攻击时， 有3%%的几率使敌人减少20%%的物防和魔防， 效果持续20秒。`
+
+[grade]
+	72
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	68
+
+[physical attack]
+	28
+
+[physical defense]
+	28
+
+[magical attack]
+	28
+
+[magical defense]
+	28
+
+[price]
+	72000
+
+[repair price]
+	57600
+
+[value]
+	57600
+
+[creation rate]
+	0
+
+[icon]
+	`Item/common/support.img`	40
+
+[field image]
+	`Item/field_equip.img`	22
+
+[equipment type]
+	`[support]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	700
+
+[item group name]
+	`support`
+
+[cool time]
+	10000
+
+[if]
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[active status]
+		`curse`	69	70	70	70	70
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		20000
+	[probability]
+		3
+	[stat]
+		`equipment physical defense`
+		`%`	-20
+	[stat]
+		`equipment magical defense`
+		`%`	-20
+[/then]
+
+[pvp]
+	[if]
+		[cooltime]
+			20000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			20000
+		[probability]
+			3
+		[stat]
+			`equipment physical defense`
+			`%`	-10
+		[stat]
+			`equipment magical defense`
+			`%`	-10
+	[/then]
+	[if]
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			30000
+		[probability]
+			1
+		[active status]
+			`curse`	69	70	70	70	70
+	[/then]
+[/pvp]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

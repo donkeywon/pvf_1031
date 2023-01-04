@@ -1,0 +1,212 @@
+#PVF_File
+
+[name]
+	`危机拯救者`
+
+[name2]
+	`Emergency escape Brush`
+
+[basic explain]
+	`[替身草人]冷却时间 -3秒
+[极冰护盾]持续时间 +25%%
+
+被攻击时， 有2%%的几率使敌人进入睡眠状态。
+被攻击时， 有7%%的几率使自身恢复1700点HP。`
+
+[flavor text]
+	`紧急逃生的时候能不能多拿两把？  --胆小的魔道学者`
+
+[grade]
+	70
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	65
+
+[magical attack]
+	47
+
+[attack speed]
+	60
+
+[move speed]
+	30
+
+[price]
+	112000
+
+[repair price]
+	94080
+
+[value]
+	89600
+
+[equipment physical attack]
+	674	614
+
+[equipment magical attack]
+	741	675
+
+[separate attack]
+	411	278
+
+[skill levelup]
+	`[mage]`	37	3
+	`[mage]`	3	1
+	`[creator mage]`	138	3
+[/skill levelup]
+
+[icon]
+	`Item/weapon/mage/broom.img`	53
+
+[field image]
+	`Item/field_weapon.img`	10
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	14	4
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	14	4
+
+[layer variation]
+	2150
+	`at_brooma`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_broomd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	14	4
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BROOM_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`broom`
+
+[cool time]
+	10000
+
+[required skill]
+	91
+
+[skill data up]
+	`[mage]`	3	`[all]`	`[cooltime]`	0	`+`	-3000
+[/skill data up]
+
+[if]
+	[cooltime]
+		15000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		2
+	[passive object]
+		48203	0	0	0	1	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[cooltime]
+		5000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		7
+	[reduce probability to human armor at pvp module]
+		80
+	[restore]
+		`hp`
+		`+`	1700	1000
+[/then]
+
+[routing priority]
+	`mage`	4
+	`creator mage`	0
+[/routing priority]
+
+[possible kiri protect]
+
+[skill data up]
+	`[creator mage]`	135	`[all]`	`[level]`	0	`%`	25
+[/skill data up]
+
+[icon mark]
+	`Item/IconMark.img`	68

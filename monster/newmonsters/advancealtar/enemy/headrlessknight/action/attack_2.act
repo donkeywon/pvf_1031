@@ -1,0 +1,32 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Whirl_Attack.ani`
+	[SUB ANI]
+		`../Animation/TyphoonDust1.ani`	0	-10
+		`../Animation/TyphoonDust2.ani`	0	2
+		`../Animation/Whirl_Attack_00.ani`	0	3
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12589
+		[PARTICLE FILENAME]
+			`../Particle/ThrowStone.ptl`
+		[LEVEL]
+			60
+		[POS]
+			100	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

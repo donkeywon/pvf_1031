@@ -1,0 +1,165 @@
+#PVF_File
+
+[name]
+	`夕阳骑士`
+
+[name2]
+	`Sunset Riders`
+
+[basic explain]
+	`滑铲起始动作的延迟 -30%%
+攻击时， 有2%%的几率消减敌人20%%的HP。 (对精英怪物的效果为1/3、 对领主和深渊怪物的效果为1/6)`
+
+[detail explain]
+	`滑铲起始动作的延迟 -30%%
+攻击时， 有2%%的几率消减敌人20%%的HP； 但在决斗场中， 只能消减敌人10%%的HP。 (对精英怪物的效果为1/3、 对领主和深渊怪物的效果为1/6)`
+
+[flavor text]
+	`生命也可以像我的滑铲那样……瞬间消失……  --卡图在最后的对决中说`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	42
+
+[price]
+	99200
+
+[repair price]
+	83328
+
+[value]
+	79360
+
+[equipment physical attack]
+	535	456
+
+[equipment magical attack]
+	450	384
+
+[separate attack]
+	360	243
+
+[physical critical hit]
+	2
+
+[icon]
+	`item/weapon/gunner/revolver.img`	30
+
+[field image]
+	`Item/field_weapon.img`	1
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	4	1
+
+[layer variation]
+	2790
+	`revc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`revb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	4	1
+
+[layer variation]
+	2790
+	`at_revc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_revb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2000
+
+[item group name]
+	`revolver`
+
+[cool time]
+	10000
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[weakness]
+		20
+[/then]
+
+[pvp]
+	[if]
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			2
+		[weakness]
+			10
+	[/then]
+[/pvp]
+
+[routing priority]
+	`gunner`	1
+	`at gunner`	1
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

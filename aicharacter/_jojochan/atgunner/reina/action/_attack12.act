@@ -1,0 +1,45 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack2ShootUp.ani`
+	[SUB ANI]
+		`../animation/HeadShotUp.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[HOLD POSITION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`第六发弹！`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9873
+		[PARTICLE FILENAME]
+			`../Particle/shot1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			100	0	100
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

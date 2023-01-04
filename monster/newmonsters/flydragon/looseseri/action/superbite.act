@@ -1,0 +1,30 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Bite.ani`
+	[SUB ANI]
+		`../Animation/EndofCasting.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			50806
+		[PARTICLE FILENAME]
+			`../Particle/FastThrowStone.ptl`
+		[LEVEL]
+			0
+		[POS]
+			43	0	20
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

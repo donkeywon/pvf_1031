@@ -1,0 +1,152 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/betrayal.ani`
+	[SUB ANI]
+		`../animation/spaceescape_effect/line_b_dodge.ani`	0	-1
+		`../animation/spaceescape_effect/spaceescape.ani`	0	1
+		`../animation/spaceescape_effect/se_f_dodge.ani`	0	2
+		`../animation/spaceescape_effect/line_f_dodge.ani`	0	3
+	[/SUB ANI]
+	[SOUND]
+		`OZMA_SKILL_04`	0
+		`CANNONBALL_READY`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_01.ptl`	0	0	0
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_02.ptl`	0	0	0
+	[PARTICLE]
+		`../particle/effect_dark.ptl`	0	0	0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_01.ptl`	0	0	0
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_02.ptl`	0	0	0
+	[PARTICLE]
+		`../particle/effect_dark.ptl`	0	0	0
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_skill.ptl`	0	0	50
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_skill.ptl`	0	0	50
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_skill.ptl`	0	0	50
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`出来吧！我的奴隶！`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9999
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			387	174	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9999
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			837	180	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9999
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			915	377	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[END]
+[/BEHAVIOR]

@@ -1,0 +1,117 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack_summon.ani`
+	[SUB ANI]
+		`../Animation/weapon2/Attack_summon.ani`	0	-1
+		`../Animation/weapon1/Attack_summon.ani`	0	0
+		`../Animation/ware/Attack_summon.ani`	0	0
+		`../Animation/Attack_summon_eff2.ani`	0	0
+		`../Animation/Attack_summon_eff.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`追随我的意愿!`	1	30
+		`这些都是价格很贵的鸟哦!`	1	30
+	[/SPEECH]
+	[SOUND]
+		`WTHIEF_MEET_04`	0
+		`FLAME_ON`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61487
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9117
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			155	1	100
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61487
+		[LEVEL]
+			0
+		[POS]
+			205	50	100
+		[NO EFFECT]
+		[TEAM]
+			0
+		[SUMMON TIME]
+			60000
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61487
+		[LEVEL]
+			0
+		[POS]
+			205	0	100
+		[NO EFFECT]
+		[TEAM]
+			0
+		[SUMMON TIME]
+			60000
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61487
+		[LEVEL]
+			0
+		[POS]
+			205	-50	100
+		[NO EFFECT]
+		[TEAM]
+			0
+		[SUMMON TIME]
+			60000
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

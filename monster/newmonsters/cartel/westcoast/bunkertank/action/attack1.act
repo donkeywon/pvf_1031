@@ -1,0 +1,45 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack1.ani`
+	[SUB ANI]
+		`../Animation/AttackCylinder.ani`	0	0
+		`../Animation/Smoke.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`COWCANNON_SHOOT`	1
+		`COWCANNON_READY`	3
+		`R_BUNKER_ATK`	0
+	[/SOUND]
+	[SPEECH]
+		`瞄准!`	0	30
+		`发射!`	3	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[TARGET]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8031
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			44
+		[POS]
+		[RANDOM]
+			-50	50
+		[RANDOM]
+			-50	50	40
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,97 @@
+#PVF_File
+
+[set name]
+	`炼狱之恸  套装`
+
+[piece set ability]
+	3	
+	[skill data up]
+		`[priest]`	115	`[dungeon type]`	`[level]`	0	`%`	20
+		`[priest]`	115	`[dungeon type]`	`[static]`	0	`%`	-20
+		`[priest]`	115	`[dungeon type]`	`[static]`	2	`%`	20
+		`[priest]`	115	`[dungeon type]`	`[static]`	3	`%`	20
+		`[priest]`	116	`[dungeon type]`	`[level]`	0	`%`	20
+	[/skill data up]
+	[parameter basic explain]
+		`[厄运之轮]攻击力 +20%%
+[厄运之轮]移动速度 +20%%
+[厄运之轮]齿轮变身时间 -20%%
+[复仇之刺]攻击力 +20%%`
+[/piece set ability]
+
+[piece set ability]
+	6	
+	[if]
+		[module]
+			`[dungeon type]`
+		[/module]
+		[skill]
+			`priest`	116
+		[/skill]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			7000
+		[active status]
+			`bleeding`	68	1200
+	[/then]
+	[skill data up]
+		`[priest]`	115	`[dungeon type]`	`[level]`	0	`%`	20
+		`[priest]`	115	`[dungeon type]`	`[cooltime]`	0	`%`	-20
+		`[priest]`	115	`[dungeon type]`	`[static]`	0	`%`	-25
+		`[priest]`	115	`[dungeon type]`	`[static]`	2	`%`	25
+		`[priest]`	115	`[dungeon type]`	`[static]`	3	`%`	25
+	[/skill data up]
+	[parameter basic explain]
+		`[厄运之轮]攻击力 +20%%
+[厄运之轮]冷却时间 -20%%
+[厄运之轮]移动速度 +25%%
+[厄运之轮]齿轮变身时间 -25%%
+[复仇之刺]命中时， 使敌人进入出血状态7秒； 出血状态下的敌人， 每0.5秒受到86点伤害。 (若敌人高于Lv68， 则减少进入异常状态的几率； 反之， 则增加几率)`
+[/piece set ability]
+
+[piece set ability]
+	9	
+	[if]
+		[module]
+			`[dungeon type]`
+		[/module]
+		[skill]
+			`priest`	115
+		[/skill]
+		[attack success]
+			1
+		[cooltime]
+			1500
+	[/if]
+	[then]
+		[target]
+			`party`	-1
+		[probability]
+			23
+		[duration]
+			30000
+		[stat]
+			`dark attack`
+			`+`	5
+	[/then]
+	[skill data up]
+		`[priest]`	115	`[dungeon type]`	`[cooltime]`	0	`%`	-30
+		`[priest]`	115	`[dungeon type]`	`[static]`	2	`%`	30
+		`[priest]`	115	`[dungeon type]`	`[static]`	3	`%`	30
+		`[priest]`	115	`[dungeon type]`	`[static]`	0	`%`	-30
+		`[priest]`	115	`[dungeon type]`	`[static]`	1	`+`	4
+		`[priest]`	115	`[dungeon type]`	`[level]`	1	`%`	40
+	[/skill data up]
+	[parameter basic explain]
+		`[厄运之轮]冷却时间 -30%%
+[厄运之轮]移动速度 +30%%
+[厄运之轮]齿轮变身时间 -30%%
+[厄运之轮]移动距离 +40%%
+[厄运之轮]多段攻击次数 +4
+[厄运之轮]命中时， 有23%%几率强化队员的暗属性5点， 效果持续30秒。 (可重叠)`
+[/piece set ability]

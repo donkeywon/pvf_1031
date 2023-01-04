@@ -1,0 +1,72 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack1.ani`
+	[SUB ANI]
+		`../animation/weapon/attack1_wp.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8311
+		[PARTICLE FILENAME]
+			`../../../../../PassiveObject/ActionObject/Common/Particle/Throw_wp.ptl`
+		[LEVEL]
+			30
+		[POS]
+			90	0	94
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8311
+		[PARTICLE FILENAME]
+			`../../../../../PassiveObject/ActionObject/Common/Particle/Throw_wp.ptl`
+		[LEVEL]
+			30
+		[POS]
+			90	0	94
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8311
+		[PARTICLE FILENAME]
+			`../../../../../PassiveObject/ActionObject/Common/Particle/Throw_wp.ptl`
+		[LEVEL]
+			30
+		[POS]
+			90	0	94
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

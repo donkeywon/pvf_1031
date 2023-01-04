@@ -1,0 +1,51 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Buster.ani`
+	[SUB ANI]
+		`../Animation/CastEffect.ani`	0	1
+		`../Animation/CastEffectGlow.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[DEFAULT ATTACKINFO]
+	`../Attackinfo/Cast.atk`
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	2
+	[DO BEHAVIOR]
+	[TARGET]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1500	2
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8347
+		[PARTICLE FILENAME]
+			`../Particle/ShootingStarPath.ptl`
+		[LEVEL]
+			32
+		[POS]
+			0	0	300
+		[WARNING MARK]
+			330	0	100	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

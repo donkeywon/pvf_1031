@@ -1,0 +1,217 @@
+#PVF_File
+
+[name]
+	`元素幻灭`
+
+[name2]
+	`Elemental Strike`
+
+[explain]
+	`在空中生成5个大魔法球并砸向地面。 魔法球落地时生成魔法阵并引发强烈爆炸。 魔法球的属性受最近一次施放[属性变换]中选择的属性影响。`
+
+[basic explain]
+	`在空中生成5个大魔法球并砸向地面。 魔法球落地时生成魔法阵并引发强烈爆炸。`
+
+[purchase cost]
+	70
+[/purchase cost]
+
+[required level]
+	70
+
+[required level range]
+	2
+
+[type]
+	`[active]`
+
+[skill class]
+	1
+
+[maximum level]
+	50
+
+[growtype maximum level]
+	0	0	0	0	0	0
+
+[second growtype maximum level]
+	0	0	30	0	0	0	0	0	0	0	0	0
+
+[skill fitness growtype]
+[/skill fitness growtype]
+
+[skill fitness second growtype]
+	1
+[/skill fitness second growtype]
+
+[consume item]
+	3037	2	2
+[/consume item]
+
+[consume MP]
+	935	1960
+
+[cool time]
+	50000	50000
+
+[executable states]
+	8	0	14
+[/executable states]
+
+[durability decrease rate]
+	30
+
+[weapon effect type]
+	`[magical]`
+
+[icon]
+	`Character/Mage/Effect/ATSkillIcon.img`	164
+	`Character/Mage/Effect/ATSkillIcon.img`	165
+
+[command]
+	{6=`(RIGHT)`}
+	{8=`,`}
+	{6=`(LEFT)`}
+	{8=`,`}
+	{6=`(UP)`}
+	{8=`,`}
+	{6=`(RIGHT)`}
+	{8=`,`}
+	{6=`(SKILL)`}
+[/command]
+
+[command key explain]
+	`操作指令 : →←↑→ + Z`
+
+[skill command advantage]
+	20	40
+
+[static data]
+	100	100
+[/static data]
+
+[level info]
+	2
+	5451	287
+	6598	347
+	7745	408
+	8893	468
+	10041	528
+	11188	589
+	12336	649
+	13483	710
+	14631	770
+	15779	830
+	16925	891
+	18073	951
+	19220	1012
+	20368	1072
+	21516	1132
+	22663	1193
+	23811	1253
+	24958	1314
+	26106	1374
+	27254	1434
+	28400	1495
+	29548	1555
+	30695	1616
+	31843	1676
+	32991	1736
+	34138	1797
+	35286	1857
+	36433	1918
+	37581	1978
+	38728	2038
+	39875	2099
+	41023	2159
+	42171	2220
+	43318	2280
+	44466	2340
+	45613	2401
+	46761	2461
+	47909	2522
+	49056	2582
+	50203	2642
+	51350	2703
+	52498	2763
+	53646	2823
+	54793	2884
+	55941	2944
+	57088	3005
+	58236	3065
+	59384	3125
+	60530	3186
+	61678	3246
+[/level info]
+
+[pvp]
+	[start cool time]
+		600000	600000
+	[level info]
+		2
+		1280	40
+		1371	86
+		1462	131
+		1553	177
+		1644	222
+		1735	268
+		1826	313
+		1917	359
+		2008	404
+		2099	450
+		2190	495
+		2281	541
+		2372	586
+		2463	632
+		2554	677
+		2645	723
+		2736	768
+		2827	814
+		2918	859
+		3009	905
+		3100	950
+		3191	996
+		3282	1041
+		3373	1087
+		3464	1132
+		3555	1178
+		3646	1223
+		3737	1269
+		3828	1314
+		3919	1360
+		4010	1405
+		4101	1451
+		4192	1496
+		4283	1542
+		4374	1587
+		4465	1633
+		4556	1678
+		4647	1724
+		4738	1769
+		4829	1815
+		4920	1860
+		5011	1906
+		5102	1951
+		5193	1997
+		5284	2042
+		5375	2088
+		5466	2133
+		5557	2179
+		5648	2224
+		5739	2270
+	[/level info]
+[/pvp]
+
+[death tower]
+[/death tower]
+
+[warroom]
+[/warroom]
+
+[level property]
+	1	99
+	`魔法球攻击力 : <int>%%
+爆炸攻击力 : <int>%%`
+	-1	1	1.0
+	-1	0	1.0
+[/level property]

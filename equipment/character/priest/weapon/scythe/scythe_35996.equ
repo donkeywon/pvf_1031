@@ -1,0 +1,155 @@
+#PVF_File
+
+[name]
+	`冰龙战镰`
+
+[name2]
+	`找不到代码name2_35996`
+
+[basic explain]
+	`近距离攻击时， 有3%%的几率施放[冰刺袭击]。
+无法进行分解。`
+
+[grade]
+	54
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	37
+
+[magical attack]
+	37
+
+[attack speed]
+	80
+
+[stuck]
+	1
+
+[price]
+	86400
+
+[repair price]
+	69120
+
+[value]
+	69120
+
+[equipment physical attack]
+	475	437
+
+[equipment magical attack]
+	504	454
+
+[separate attack]
+	299	200
+
+[physical critical hit]
+	10
+
+[magical critical hit]
+	10
+
+[icon]
+	`Item/weapon/priest/scythe.img`	65
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	18	0
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[water element]`
+
+[if]
+	[attacker]
+		`character`	-1
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		80
+	[passive object]
+		48195	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[routing priority]
+	`priest`	2
+	`priest`	3
+	`priest`	4
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

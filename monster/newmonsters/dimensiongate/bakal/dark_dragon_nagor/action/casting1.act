@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/casting1.ani`
+	[SUB ANI]
+		`../Animation/casting1_ring01.ani`	0	-1
+		`../Animation/casting1_ring04.ani`	0	-1
+		`../Animation/casting1_ring03.ani`	0	0
+		`../Animation/casting1_effect00.ani`	0	0
+		`../Animation/casting1_ring00.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10055
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			90	0	105
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

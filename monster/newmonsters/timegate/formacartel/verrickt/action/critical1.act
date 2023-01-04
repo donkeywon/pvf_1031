@@ -1,0 +1,55 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/critical.ani`
+	[SUB ANI]
+		`../animation/Dust1.ani`	0	1
+		`../animation/Dust2.ani`	0	2
+		`../animation/critical_w.ani`	0	3
+		`../animation/critical_w1.ani`	0	4
+	[/SUB ANI]
+	[SPEECH]
+		`还敢调皮！`	2	10
+	[/SPEECH]
+	[SOUND]
+		`VERRICKTM_ATK_01`	1
+		`MSOONBO`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			500
+		[Y AXIS]
+			-180
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Y AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

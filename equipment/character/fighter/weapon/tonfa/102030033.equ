@@ -1,0 +1,177 @@
+#PVF_File
+
+[name]
+	`圣殿遗迹之远古棍`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击速度 +2%%
+500px范围内队员的物理和魔法攻击力 +40
+500px范围内队员的独立攻击力 +64`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[physical attack]
+	55
+
+[magical attack]
+	83
+
+[attack speed]
+	70
+
+[stuck]
+	-2
+
+[stuck resistance]
+	30
+
+[MP MAX]
+	300
+
+[price]
+	134400
+
+[repair price]
+	112896
+
+[value]
+	107520
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	764	716
+
+[equipment magical attack]
+	804	754
+
+[equipment physical defense]
+	840	840
+
+[separate attack]
+	481	327
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/tonfa/tonfa.img`	86
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	24	0
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	25	0
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`party`	500
+	[stat by condition]
+		`equipment physical attack`
+		`+`	40
+	[stat by condition]
+		`equipment magical attack`
+		`+`	40
+	[stat by condition]
+		`separate attack`
+		`+`	64
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

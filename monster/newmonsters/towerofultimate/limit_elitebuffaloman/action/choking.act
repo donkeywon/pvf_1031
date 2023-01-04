@@ -1,0 +1,47 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Three.ani`
+	[SOUND]
+		`BISONMAN_ATK_03`	2
+		`SWING_LONG`	2
+	[/SOUND]
+	[SPEECH]
+		`扣！杀！`	3	10
+		`啊啊啊！`	3	10
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[ZPOS]
+		[>=]
+			130
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		1
+[/BEHAVIOR]

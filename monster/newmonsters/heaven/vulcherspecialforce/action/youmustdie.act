@@ -1,0 +1,64 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/MotorCycle/Heyyou.ani`
+	[SUB ANI]
+		`../Animation/Heyyou.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`地雷埋设完毕!`	1	30
+		`要切断敌人前进的道路！`	1	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8032
+		[PARTICLE FILENAME]
+			`../Particle/Mine.ptl`
+		[LEVEL]
+			10
+		[POS]
+			0	15	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8032
+		[PARTICLE FILENAME]
+			`../Particle/Mine.ptl`
+		[LEVEL]
+			10
+		[POS]
+			0	-15	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8032
+		[PARTICLE FILENAME]
+			`../Particle/Mine.ptl`
+		[LEVEL]
+			10
+		[POS]
+			80	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8032
+		[PARTICLE FILENAME]
+			`../Particle/Mine.ptl`
+		[LEVEL]
+			10
+		[POS]
+			-80	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

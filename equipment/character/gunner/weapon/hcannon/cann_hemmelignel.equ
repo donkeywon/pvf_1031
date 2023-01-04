@@ -1,0 +1,148 @@
+#PVF_File
+
+[name]
+	`(旧) 光电手炮`
+
+[name2]
+	`Hemmelig Nel`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入眩晕状态3秒。 (若敌人高于Lv24， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	26
+
+[rarity]
+	2
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	24
+
+[physical attack]
+	27
+
+[stuck]
+	-1
+
+[price]
+	41600
+
+[repair price]
+	33280
+
+[value]
+	33280
+
+[equipment physical attack]
+	266	233
+
+[equipment magical attack]
+	160	140
+
+[separate attack]
+	123	80
+
+[skill levelup]
+	`[common]`	186	1
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/hcannon.img`	9
+
+[field image]
+	`Item/field_weapon.img`	4
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	1	2
+
+[layer variation]
+	2790
+	`hcanc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`hcanb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	1	2
+
+[layer variation]
+	2790
+	`at_hcanc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_hcanb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2800
+
+[item group name]
+	`hcannon`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		6000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[probability]
+		3
+	[active status]
+		`stun`	24
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,40 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/StoneBreak.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Break.ptl`	0	0	10
+	[PARTICLE]
+		`../particle/Break.ptl`	0	0	20
+	[PARTICLE]
+		`../particle/Break.ptl`	0	0	30
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Break2.ptl`	0	0	200
+	[PARTICLE]
+		`../particle/Break2.ptl`	0	0	120
+	[PARTICLE]
+		`../particle/Break2.ptl`	0	0	50
+[/BEHAVIOR]

@@ -1,0 +1,39 @@
+#PVF_File
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	1000
+
+[basic action]
+	`Action/darkfireshoot2.act`
+
+[name]
+	`青铜石巨人的子弹`
+
+[attack info]
+	`AttackInfo/Damage.atk`
+
+[object destroy condition]
+	`[destroy condition]`
+	`[on end of animation]`
+[/object destroy condition]
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[ENEMY]`
+	[homing velocity]
+		600	0
+	[homing check gap]
+		10000
+	[sync animation rotation]
+		0
+	[max rotation]
+		120
+[/homing]

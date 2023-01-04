@@ -1,0 +1,187 @@
+#PVF_File
+
+[name]
+	`冰龙掩日矛 (活动)`
+
+[name2]
+	`Innovation of Dragon Lance Skasage`
+
+[basic explain]
+	`攻击时， 有4%%的几率使敌人进入冰冻状态。
+
+无法进行分解、 封装和合成。`
+
+[detail explain]
+	`攻击时， 有4%%的几率使敌人进入冰冻状态8秒。 (若敌人高于Lv50， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+
+无法进行分解、 封装和合成。`
+
+[grade]
+	56
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	44
+
+[physical defense]
+	10
+
+[attack speed]
+	-50
+
+[stuck]
+	-1
+
+[price]
+	0
+
+[repair price]
+	75264
+
+[value]
+	0
+
+[equipment physical attack]
+	619	571
+
+[equipment magical attack]
+	439	405
+
+[separate attack]
+	311	208
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[mage]`	7	2
+	`[mage]`	68	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/mage/spear.img`	33
+
+[field image]
+	`Item/field_weapon.img`	6
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	1	0
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	1	0
+
+[layer variation]
+	2150
+	`at_speara`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_speard`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	1	0
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`SPEAR_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3200
+
+[item group name]
+	`spear`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		12000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		8000
+	[probability]
+		4
+	[active status]
+		`freeze`	50
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

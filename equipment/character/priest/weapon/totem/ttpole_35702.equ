@@ -1,0 +1,152 @@
+#PVF_File
+
+[name]
+	`布万加的族长图腾`
+
+[name2]
+	`找不到代码name2_35702`
+
+[basic explain]
+	`攻击速度 +1%%
+[破碎之锤]命中敌人时， 有20%%的几率使敌人进入眩晕状态。
+无法进行分解。`
+
+[detail explain]
+	`攻击速度 +1%%
+[破碎之锤]命中时， 有20%%的几率使敌人进入眩晕状态3秒。 (若敌人高于Lv69， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 在决斗场中几率为2%%)
+无法进行分解。`
+
+[grade]
+	54
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	56
+
+[attack speed]
+	10
+
+[stuck]
+	-1
+
+[price]
+	86400
+
+[repair price]
+	69120
+
+[value]
+	69120
+
+[equipment physical attack]
+	525	483
+
+[equipment magical attack]
+	450	414
+
+[separate attack]
+	299	200
+
+[skill levelup]
+	`[priest]`	33	2
+	`[priest]`	13	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/totem.img`	68
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	20	0
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[if]
+	[skill]
+		`priest`	33
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[reduce duration to human armor at pvp module]
+		40
+	[probability]
+		20
+	[reduce probability to human armor at pvp module]
+		90
+	[active status]
+		`stun`	54
+[/then]
+
+[routing priority]
+	`priest`	2
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,186 @@
+#PVF_File
+
+[name]
+	`常春藤之缠绕法杖`
+
+[name2]
+	`Staff Entwined with an ivy`
+
+[basic explain]
+	`施放技能时， 有2%%的几率使敌人进入束缚状态。`
+
+[detail explain]
+	`施放技能时， 有2%%的几率使300px范围内最近的敌人进入束缚状态5秒； 但在决斗场中， 只能持续2.5秒。 (若敌人高于Lv65， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	67
+
+[rarity]
+	2
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	65
+
+[magical attack]
+	42
+
+[attack speed]
+	-100
+
+[cast speed]
+	30
+
+[price]
+	93800
+
+[repair price]
+	78792
+
+[value]
+	75040
+
+[equipment physical attack]
+	564	545
+
+[equipment magical attack]
+	713	689
+
+[separate attack]
+	293	199
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[mage]`	55	1
+	`[at mage]`	28	1
+[/skill levelup]
+
+[light attack]
+	4
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/weapon/mage/staff.img`	66
+
+[field image]
+	`Item/field_weapon.img`	9
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[mage]`
+
+[variation]
+	15	8
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	15	8
+
+[layer variation]
+	2150
+	`at_staffa`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_staffd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	15	8
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`STAFF_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2400
+
+[item group name]
+	`staff`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		7500
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy near`	300
+	[duration]
+		5000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`hold`	65
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

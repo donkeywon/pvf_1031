@@ -1,0 +1,111 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/buff.ani`
+	[SUB ANI]
+		`../Animation/buff_eff2.ani`	0	-1
+		`../Animation/buff_eff_3.ani`	0	-1
+		`../Animation/buff_eff.ani`	0	0
+		`../Animation/buff_eff1.ani`	0	0
+		`../Animation/buff_eff_2.ani`	0	0
+		`../Animation/buff_eff_1.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`你想试试我的力量吗？`	1	100
+	[/SPEECH]
+	[SOUND]
+		`R_VENITH_SKILL_05`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9167	9168
+		[/IS INDEX]
+	[/CHECKUP]
+	[GET TARGET]
+		10
+	[DISTANCE]
+	[LOW]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[VIRTUALHP APPENDAGE]
+		5000	100000	2	5
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[COLOR CHANGE EFFECT]
+		[EFFECT GREEN END]
+			10
+		[EFFECT BLUE END]
+			255
+		[EFFECT RED END]
+			150
+		[EFFECT ALPHA END]
+			120
+		[CHANGE SIZE START]
+			100
+		[CHANGE SIZE END]
+			100
+		[CHANGE TIME]
+			100
+		[LIFE TIME]
+			0
+	[/COLOR CHANGE EFFECT]
+	[SET OUTLINE]
+		1	150	10	255	1
+[/BEHAVIOR]

@@ -1,0 +1,229 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	3000.0	3000.0	800.0	800.0
+			`all`
+			`summon`	61754
+	
+		[think]
+			[last result]
+				`>=`	15.0
+			[true]
+		
+			[think]
+				[void]
+					`is target in attack area()`	150.0	150.0	40.0	40.0
+				[true]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	0
+					[true]
+				
+					[think]
+						[void]
+							`get random()`	0.0	100.0
+					
+						[think]
+							[last result]
+								`<=`	20
+							[true]
+						
+							[think]
+								[void]
+									`is the skill in cooltime()`	1
+								[true]
+								[return]
+									-1
+								[false]
+								[return]
+									1
+							[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[false]
+	[return]
+		0
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	300.0	300.0	300.0	300.0
+		[true]
+	
+		[think]
+			[void]
+				`get random()`	0.0	100.0
+		
+			[think]
+				[last result]
+					`<=`	30
+				[true]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	1
+					[true]
+					[return]
+						-1
+					[false]
+					[return]
+						1
+				[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	70
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	2
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				2
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`get random()`	0.0	100.0
+	
+		[think]
+			[last result]
+				`>=`	70
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	2
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					2
+			[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[last result]
+			`>=`	1.0
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	150.0	150.0	40.0	40.0
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	0
+				[true]
+			
+				[think]
+					[void]
+						`get random()`	0.0	100.0
+				
+					[think]
+						[last result]
+							`<=`	10
+						[true]
+					
+						[think]
+							[void]
+								`is the skill in cooltime()`	1
+							[true]
+							[return]
+								-1
+							[false]
+							[return]
+								1
+						[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[false]
+	[return]
+		0
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	300.0	300.0	300.0	300.0
+		[true]
+	
+		[think]
+			[void]
+				`get random()`	0.0	100.0
+		
+			[think]
+				[last result]
+					`<=`	30
+				[true]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	1
+					[true]
+					[return]
+						-1
+					[false]
+					[return]
+						1
+				[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	150.0	150.0	40.0	40.0
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	0
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				0
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

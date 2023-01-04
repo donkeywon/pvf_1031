@@ -1,0 +1,173 @@
+#PVF_File
+
+[name]
+	`苍木之镰`
+
+[name2]
+	`找不到代码name2_36003`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入出血状态。
+使用[复仇之刺]攻击敌人时， 有30%%的几率使敌人进入出血状态。
+无法进行分解。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入出血状态4秒， 出血状态下的敌人， 每0.5秒受到100点伤害。 (若敌人高于Lv39， 则减少进入异常状态的几率； 反之， 则增加几率)
+无法进行分解。`
+
+[grade]
+	39
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	35
+
+[physical attack]
+	28
+
+[magical attack]
+	31
+
+[attack speed]
+	100
+
+[stuck]
+	1
+
+[price]
+	62400
+
+[repair price]
+	49920
+
+[value]
+	49920
+
+[equipment physical attack]
+	361	323
+
+[equipment magical attack]
+	380	340
+
+[separate attack]
+	221	146
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[icon]
+	`Item/weapon/priest/scythe.img`	73
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	24	0
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		6000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		4000
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`bleeding`	39	800
+[/then]
+
+[if]
+	[skill]
+		`priest`	116
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		100
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`bleeding`	39	1000
+[/then]
+
+[routing priority]
+	`priest`	4
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

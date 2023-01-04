@@ -1,0 +1,56 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/throw3.ani`
+	[SPEECH]
+		`咻！ ?当！`	3	40
+	[/SPEECH]
+	[SOUND]
+		`POENA_KNIFE_02`	2
+		`R_PIERE_SKILL_03`	2
+		`ENJO_SWISH_01`	6
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10392
+		[PARTICLE FILENAME]
+			`../Particle/throw3.ptl`
+		[LEVEL]
+			0
+		[POS]
+			100	0	60
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10393
+		[PARTICLE FILENAME]
+			`../Particle/throw4.ptl`
+		[LEVEL]
+			0
+		[POS]
+			100	0	60
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

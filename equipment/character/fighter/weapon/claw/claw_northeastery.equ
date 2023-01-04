@@ -1,0 +1,201 @@
+#PVF_File
+
+[name]
+	`暴风之戾啸`
+
+[name2]
+	`A Northeastery Wind Claw`
+
+[basic explain]
+	`攻击束缚状态下的敌人， 可以使其进入混乱、 出血状态。
+攻击时， 可以发动强风攻击敌人。`
+
+[detail explain]
+	`攻击束缚状态的敌人时， 可以使敌人进入混乱状态3秒。 (若对方等级高于Lv60， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击束缚状态的敌人时， 可以使敌人进入出血状态1秒； 出血状态下的敌人， 每0.5秒受到200点伤害。 (若对方等级高于Lv60， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击时， 发射强风。`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	42
+
+[magical attack]
+	21
+
+[need material]
+	3285	1200
+
+[repair price]
+	83328
+
+[value]
+	79360
+
+[equipment physical attack]
+	572	524
+
+[equipment magical attack]
+	572	524
+
+[separate attack]
+	360	243
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[fighter]`	52	1
+	`[at fighter]`	52	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/claw.img`	61
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	2	3
+
+[layer variation]
+	2790
+	`clawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	2	3
+
+[layer variation]
+	2150
+	`at_clawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_clawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_clawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[water element]`
+
+[if]
+	[target active status]
+		`hold`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[active status]
+		`confuse`	60	1
+[/then]
+
+[if]
+	[target active status]
+		`hold`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		1000
+	[active status]
+		`bleeding`	60	400
+[/then]
+
+[if]
+	[cooltime]
+		500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		100
+	[passive object]
+		48101	0	0	0	55	0	``
+	[/passive object]
+[/then]
+
+[routing priority]
+	`fighter`	3
+	`at fighter`	3
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,241 @@
+#PVF_File
+
+[name]
+	`破极卸刃棍`
+
+[name2]
+	`Extreme One's Pole`
+
+[basic explain]
+	`攻击时， 有5%%的几率使自身增加30%%的物理攻击力， 效果持续30秒。
+攻击时， 有2%%的几率使敌人进入破甲状态。`
+
+[detail explain]
+	`攻击时， 有5%%的几率使武器耐久度减少1， 并增加30%%的物理攻击力， 效果持续30秒。
+攻击时， 有2%%的几率使敌人进入破甲状态7秒； 破甲状态的敌人， 暂时无法使用护甲且护甲的耐久度消耗增加30倍。 (若敌人高于Lv60， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`每次打得天昏地暗后， 我就会失去知觉， 缓过神时只剩下横七竖八的敌人和残破的武器了。`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	42
+
+[magical attack]
+	42
+
+[attack speed]
+	50
+
+[stuck]
+	-1
+
+[price]
+	99200
+
+[repair price]
+	83328
+
+[value]
+	79360
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	618	566
+
+[equipment magical attack]
+	515	472
+
+[separate attack]
+	360	243
+
+[icon]
+	`Item/weapon/mage/pole.img`	44
+
+[field image]
+	`Item/field_weapon.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	5	0
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	5	0
+
+[layer variation]
+	2150
+	`at_polea`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_poled`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	5	0
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`POLE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2400
+
+[item group name]
+	`pole`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[war room]`
+		`[dungeon]`
+		`[assault]`
+		`[dead tower]`
+		`[blood system]`
+		`[assault]`
+	[/module]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`equipment physical attack`
+		`%`	30
+	[reduction]
+		`weapon`	1
+[/then]
+
+[if]
+	[module]
+		`[tournament dungeon]`
+	[/module]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`equipment physical attack`
+		`%`	30
+[/then]
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`weapon break`	60	30
+	[active status]
+		`armor break`	60	30
+[/then]
+
+[routing priority]
+	`mage`	3
+[/routing priority]
+
+[possible kiri protect]
+
+[need material]
+	2749095	129
+
+[icon mark]
+	`Item/IconMark.img`	68

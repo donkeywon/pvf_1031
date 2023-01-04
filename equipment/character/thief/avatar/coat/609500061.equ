@@ -1,0 +1,166 @@
+#PVF_File
+
+[name]
+	`女神的漆黑蕾丝上衣`
+
+[enable dye]
+	1	0
+
+[grade]
+	2
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[icon]
+	`item/avatar/thief/th_acoat.img`	204
+
+[equipment type]
+	`[coat avatar]`	0
+
+[avatar type select]
+	7	0	0	1700	0
+	30	0	0	3400	0
+	0	0	0	6800	0
+	0	0	0	7480	2
+	`[C socket]`	`[C socket]`
+[/avatar type select]
+
+[avatar select ability]
+	`[SKILL_LEVEL]`	`[thief]`	16	1
+	`[SKILL_LEVEL]`	`[thief]`	9	1
+	`[SKILL_LEVEL]`	`[thief]`	29	1
+	`[SKILL_LEVEL]`	`[thief]`	30	1
+	`[SKILL_LEVEL]`	`[thief]`	27	1
+	`[SKILL_LEVEL]`	`[thief]`	41	1
+	`[SKILL_LEVEL]`	`[thief]`	31	1
+	`[SKILL_LEVEL]`	`[thief]`	33	1
+	`[SKILL_LEVEL]`	`[thief]`	45	1
+	`[SKILL_LEVEL]`	`[thief]`	34	1
+	`[SKILL_LEVEL]`	`[thief]`	47	1
+	`[SKILL_LEVEL]`	`[thief]`	35	1
+	`[SKILL_LEVEL]`	`[thief]`	51	1
+	`[SKILL_LEVEL]`	`[thief]`	54	1
+	`[SKILL_LEVEL]`	`[thief]`	49	1
+	`[SKILL_LEVEL]`	`[thief]`	52	1
+	`[SKILL_LEVEL]`	`[thief]`	53	1
+	`[SKILL_LEVEL]`	`[thief]`	50	1
+	`[SKILL_LEVEL]`	`[thief]`	55	1
+	`[SKILL_LEVEL]`	`[thief]`	36	1
+	`[SKILL_LEVEL]`	`[thief]`	37	1
+	`[SKILL_LEVEL]`	`[thief]`	39	1
+	`[SKILL_LEVEL]`	`[thief]`	40	1
+[/avatar select ability]
+
+[animation job]
+	`[thief]`
+
+[variation]
+	63	3
+
+[layer variation]
+	1800
+	`coat_a`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	900
+	`coat_b`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	500
+	`coat_d`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[set item master]
+	609500061
+
+[set name]
+	`天使与恶魔礼包`
+
+[set item]
+	609550061	609560059	609570054	609520053	609500061	609510060	609530052	609540061	609580024
+[/set item]
+
+[set ability]
+	[HP MAX]
+		150
+	[MP MAX]
+		150
+	[physical attack]
+		25
+	[physical defense]
+		25
+	[magical attack]
+		25
+	[magical defense]
+		25
+	[inventory limit]
+		6000
+	[HP regen speed]
+		20
+	[MP regen speed]
+		4
+	[move speed]
+		20
+	[attack speed]
+		20
+	[cast speed]
+		20
+	[fullset explain]
+		`找不到代码fullset_basic_explain_109500024`
+	[if]
+		[cooltime]
+			30000
+		[module]
+			`[dungeon type]`
+		[/module]
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			20000
+		[probability]
+			10
+		[stat]
+			`equipment magical attack`
+			`%`	1
+		[stat]
+			`equipment physical attack`
+			`%`	1
+		[stat]
+			`equipment physical defense`
+			`%`	-5
+		[stat]
+			`equipment magical defense`
+			`%`	-5
+		[replace avatar ani]
+			`[shoes avatar]`	-1
+			`[breast avatar]`	-1
+			`[waist avatar]`	-1
+			`[aurora avatar]`	-1
+			`[coat avatar]`	109500008
+			`[pants avatar]`	109510008
+		[/replace avatar ani]
+	[/then]
+[/set ability]

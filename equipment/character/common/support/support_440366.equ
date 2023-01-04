@@ -1,0 +1,102 @@
+#PVF_File
+
+[name]
+	`机械师之魂`
+
+[name2]
+	`找不到代码name2_440366`
+
+[basic explain]
+	`攻击时， 有5%%的几率附加1500的光属性伤害。
+无法进行分解。`
+
+[grade]
+	74
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[physical attack]
+	29
+
+[physical defense]
+	29
+
+[magical attack]
+	29
+
+[magical defense]
+	29
+
+[need material]
+	3337	370
+
+[repair price]
+	74592
+
+[value]
+	71040
+
+[icon]
+	`Item/common/support.img`	57
+
+[field image]
+	`Item/field_equip.img`	22
+
+[equipment type]
+	`[support]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	700
+
+[item group name]
+	`support`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[reduce probability to human armor at pvp module]
+		80
+	[add absolute damage]
+		`light`
+		`+`	1500
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[routing priority]
+[/routing priority]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

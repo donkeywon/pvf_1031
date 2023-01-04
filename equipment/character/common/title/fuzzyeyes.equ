@@ -1,0 +1,167 @@
+#PVF_File
+
+[name]
+	`朦胧视线`
+
+[name2]
+	``
+
+[explain]
+	`物理、 魔法伤害 +10%%
+在决斗场中， 物理、 魔法伤害 +5%%
+
+攻击时， 有5%%的几率使自身增加25点力量、 体力、 智力和精神， 效果持续30秒。
+攻击时， 有5%%的几率使自身增加2%%的攻击速度、 施放速度和移动速度， 效果持续30秒。`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	446
+
+[custom animation]
+	`TitleAnimation/fuzzyeyes.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	300
+
+[MP MAX]
+	300
+
+[physical attack]
+	30
+
+[physical defense]
+	30
+
+[magical attack]
+	30
+
+[magical defense]
+	30
+
+[move speed]
+	30
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[physical critical hit]
+	3
+
+[magical critical hit]
+	3
+
+[stuck]
+	-2
+
+[if]
+	[cooltime]
+		40000
+	[attack success]
+		1
+	[cooltime group]
+		4
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`physical attack`
+		`+`	25
+	[stat]
+		`physical defense`
+		`+`	25
+	[stat]
+		`magical attack`
+		`+`	25
+	[stat]
+		`magical defense`
+		`+`	25
+[/then]
+
+[if]
+	[cooltime]
+		40000
+	[attack success]
+		1
+	[cooltime group]
+		5
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`attack speed`
+		`+`	20
+	[stat]
+		`cast speed`
+		`+`	20
+	[stat]
+		`move speed`
+		`+`	20
+[/then]
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	10
+[/then]
+
+[pvp]
+	[if]
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase damage]
+			`%`	5
+	[/then]
+[/pvp]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

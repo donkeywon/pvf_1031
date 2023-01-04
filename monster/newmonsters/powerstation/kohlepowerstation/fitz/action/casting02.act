@@ -1,0 +1,62 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/casting02.ani`
+	[SUB ANI]
+		`../Animation/effect/casting02_e.ani`	0	1
+		`../Animation/effect/base_effect.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`出来吧~！我的护卫们~！！`	0	30
+	[/SPEECH]
+	[SOUND]
+		`R_FITZ_SKILL_04`	0
+		`FITZ_CAST_02`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		14	14
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			63046
+		[LEVEL]
+			0
+		[POS]
+			0	20	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			63047
+		[LEVEL]
+			0
+		[POS]
+			0	-20	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1040	2
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]

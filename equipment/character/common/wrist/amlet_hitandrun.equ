@@ -1,0 +1,95 @@
+#PVF_File
+
+[name]
+	`游刃者的护腕`
+
+[name2]
+	`Hit and Run`
+
+[basic explain]
+	`被攻击时， 有1%%的几率使自身增加5%%的移动速度， 但减少20%%的物理防御力， 效果持续20秒。`
+
+[flavor text]
+	`这个护腕有点特别， 不知道戴上它是什么感觉， 但……我有预感， 那感觉应该还不错。  --收集饰品30年的达人`
+
+[grade]
+	34
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	32
+
+[physical attack]
+	14
+
+[physical defense]
+	34
+
+[price]
+	34000
+
+[repair price]
+	27200
+
+[value]
+	27200
+
+[equipment magical defense]
+	1776	1680
+
+[icon]
+	`Item/IconAcc.img`	10
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	20
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		20000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		1
+	[stat]
+		`move speed`
+		`+`	50
+	[stat]
+		`equipment physical defense`
+		`%`	-20
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,98 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/change/change_action.ani`
+	[SPEECH]
+		`呃啊~~力量正在消失！`	1	50
+		`躲到分身边上吧！`	1	50
+	[/SPEECH]
+	[SOUND]
+		`OLI_INVISIBLE`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`time`	
+		[+]
+			500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`change_stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`change_move.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		`change_down.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`change_damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`change_damage2.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`change_sit.act`
+	[CHANGE ACTION FILE]
+	[OVERTURN]
+		`change_overturn.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`change_Breath.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		1
+		`change_cauda_atk.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		5
+		`change_jump_attack.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		6
+		`change_doble_jump.act`
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		1
+	[RESET]
+[/BEHAVIOR]

@@ -1,0 +1,45 @@
+#PVF_File
+
+[width]
+	1	1
+
+[floating height]
+	0
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	1000
+
+[basic motion]
+	`Ani/BantuIceBreath1.ani`
+
+[attack info]
+	`AttackInfo/BantuIceBreath1.atk`
+
+[sound category]
+	`[on attack]`
+	`ICE_BLESS_HIT`	-1
+[/sound category]
+
+[name]
+	`冰息`
+
+[add object effect]
+	`Ani/BantuIceBreath2.ani`	100
+[/add object effect]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[on end of animation]`
+	`[destroy action]`
+	`[only destroy]`
+	`[add object index]`	1	30005
+	`[on attack]`
+	`[only destroy]`
+	`[add object index on attack]`	1	30005
+[/object destroy condition]

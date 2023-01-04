@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Surprise.ani`
+	[SUB ANI]
+		`../Animation/Effect/ShootEffect.ani`	0	1
+		`../Animation/Effect/Shoot.ani`	0	1
+		`../Animation/Effect/Smoke.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`让你见识下我美丽的武器吧~`	0	50
+	[/SPEECH]
+	[SOUND]
+		`YIPKISS_SKILL_01_1`	1
+		`BOMB_02`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			22253
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			50	1	82
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

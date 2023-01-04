@@ -1,0 +1,50 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/start_light.ani`
+	[SUB ANI]
+		`../Animation/boom_light.ani`	0	0
+		`../Animation/front_light.ani`	0	0
+		`../Animation/focus_light.ani`	0	0
+		`../Animation/boom_light1.ani`	0	0
+		`../Animation/boom_light2.ani`	0	0
+		`../Animation/boom_light3.ani`	0	0
+		`../Animation/focus_light1.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`SERIA_PROVOCATION`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[CHECK TIME]
+		100
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			300
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PULL APPENDAGE]
+		5.0	5.0	10000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		84	84
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

@@ -1,0 +1,87 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Loop/AttackMineralShoot_Effect_M_Dodge.ani`
+	[SUB ANI]
+		`../Animation/Loop/AttackMineralShoot_Effect_M_Stone1.ani`	0	-2
+		`../Animation/Loop/AttackMineralShoot_Effect_M_Normal.ani`	0	-1
+		`../Animation/Loop/AttackMineralShoot_Effect_M_Dodge2.ani`	0	1
+		`../Animation/Loop/AttackMineralShoot_Effect_M_Stone2.ani`	0	2
+		`../Animation/Loop/AttackMineralShoot_Effect_M_Floor_energy00.ani`	0	3
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`DeBuffTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[=<]
+			0
+		[%]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`DeBuffTime`	
+		[+]
+			500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+		[DISTANCE]
+		[<=]
+			200
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[slow]
+		100	85	500	25	25
+	[DIM]
+		`DeBuffTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]

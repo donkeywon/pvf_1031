@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/throw.ani`
+	[SOUND]
+		`RABBITWOMANN_DMG_03`	0
+		`BASTRUK_SUMMON`	4
+	[/SOUND]
+	[SPEECH]
+		`蛇蛇蛇~`	0	50
+		`沙沙~`	0	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61330
+		[LEVEL]
+			0
+		[POS]
+			0	0	60
+		[JUMP OUT]
+		[RANDOM SELECT]
+			-200	200
+		[/RANDOM SELECT]
+		[RANDOM]
+			-50	50	40
+		[LEFT]
+		[UP]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

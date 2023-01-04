@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/ball.ani`
+	[SUB ANI]
+		`../Animation/ball_edge3.ani`	0	0
+		`../Animation/ball_edge2.ani`	0	0
+		`../Animation/ball_edge1.ani`	0	0
+		`../Animation/ball_bomb.ani`	0	0
+		`../Animation/ball_edge.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`BOMB_03`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	500
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

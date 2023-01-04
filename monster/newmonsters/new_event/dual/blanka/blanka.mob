@@ -1,0 +1,249 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`UM-7 布莱斯托`
+
+[face image]
+	`Monster/MonsterFace.img`	432
+
+[die effect]
+	0	3	0
+
+[attack sound]
+	`R_FRANKENJACO_ATK`
+
+[damage sound]
+	`R_FRANKENJACO_DMG`
+
+[die sound]
+	`FRANKENJACO_DIE`
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	400
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	130
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	105
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	105
+[/ability category]
+
+[category]
+	`[beast]`
+[/category]
+
+[fire resistance]
+	-10	-10
+
+[water resistance]
+	-10	-10
+
+[dark resistance]
+	-10	-10
+
+[light resistance]
+	50	50
+
+[freeze resistance]
+	20	20
+
+[stun resistance]
+	20	20
+
+[blind resistance]
+	20	20
+
+[stone resistance]
+	20	20
+
+[sleep resistance]
+	20	20
+
+[hold resistance]
+	20	20
+
+[slow resistance]
+	20	20
+
+[curse resistance]
+	20	20
+
+[confuse resistance]
+	20	20
+
+[lightning resistance]
+	70	70
+
+[bleeding resistance]
+	0	0
+
+[poison resistance]
+	0	0
+
+[burn resistance]
+	0	0
+
+[piercing resistance]
+	0	0
+
+[weapon break resistance]
+	100	100
+
+[HP regen speed]
+	0	0
+
+[MP regen speed]
+	0	0
+
+[level]
+	70	70
+
+[move speed]
+	800	800
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1200	1200
+
+[weight]
+	190000	190000
+
+[set damage check]
+	3000
+
+[lie frame]
+	0	1	4	3	4
+
+[add gravity in aerial]
+	1	20.0	-300.0
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[jump action]
+	`Action/_jump.act`
+
+[attack action]
+	`Action/Attack2.act`
+	`Action/Attack3.act`
+	`Action/Rolling.act`
+	`Action/Jump.act`
+	`Action/JumpAttack.act`
+	`Action/Rolling_H.act`
+	`Action/_rolling.act`
+	`Action/elec_stay.act`
+	`Action/Attack3.act`
+[/attack action]
+
+[attack info]
+	`Attackinfo/Attack2.atk`
+	`Attackinfo/Attack2.atk`
+	`Attackinfo/Rolling.atk`
+	`Attackinfo/Attack2.atk`
+	`Attackinfo/Attack2.atk`
+	`Attackinfo/Rolling.atk`
+	`Attackinfo/Rolling.atk`
+	`Attackinfo/Rolling.atk`
+	`Attackinfo/Rolling.atk`
+[/attack info]
+
+[cooltime]
+	5000	6000	15000	10000	5000	10000	10000	10000	2000
+[/cooltime]
+
+[attack sound]
+	``
+
+[appear sound]
+	``
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	600
+
+[warlike]
+	80
+
+[think term]
+	500
+
+[destination change term]
+	800
+
+[keep distance with target]
+	250
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action_H.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[level of difficulty]
+	[easy]
+		-50	3000
+	[medium]
+		-30	2000
+	[hard]
+		0	0
+	[ultimate]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]

@@ -1,0 +1,46 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check use skill]
+			36
+		[true]
+		[return str]
+			`saya`
+		[false]
+	
+		[think]
+			[check use skill]
+				75
+			[true]
+			[return str]
+				`rasa`
+			[false]
+		
+			[think]
+				[void]
+					`is target in attack area()`	100.0	100.0	30.0	30.0
+				[true]
+				[import ai]
+					`upper-x.ai`
+				[false]
+			
+				[think]
+					[void]
+						`is target in attack area()`	200.0	200.0	40.0	40.0
+				
+					[think]
+						[check use skill]
+							65
+						[true]
+						[return str]
+							`mountain`
+						[false]
+						[import ai]
+							`buff.ai`
+					[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

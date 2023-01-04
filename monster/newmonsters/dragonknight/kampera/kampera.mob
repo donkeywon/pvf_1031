@@ -1,0 +1,164 @@
+#PVF_File
+
+[name]
+	`卡姆拉`
+
+[face image]
+	`Monster/MonsterFace.img`	412
+
+[category]
+	`[dragon]`
+[/category]
+
+[ambient sound]
+	`DRAGONKNIGHT_AMB`
+
+[attack sound]
+	``
+
+[appear sound]
+	`FIRESOUL_ATK_2_READY`
+
+[damage sound]
+	`DRAGONMAN_DMG`
+
+[die sound]
+	`DRAGONMAN_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	156
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	180
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	156
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	180
+	`[HP MAX]`	`*`	1650
+[/ability category]
+
+[level]
+	60	60
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	900	900
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1800	1800
+
+[weight]
+	200000	200000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[waiting action]
+	`action/Stay.act`
+
+[move action]
+	`action/Move.act`
+
+[sit action]
+	`action/Sit.act`
+
+[damage action 1]
+	`action/Damage1.act`
+
+[damage action 2]
+	`action/Damage2.act`
+
+[down action]
+	`action/Down.act`
+
+[overturn action]
+	`action/Overturn.act`
+
+[attack action]
+	`Action/Jump.act`
+	`Action/Sky.act`
+	`Action/Attack01.act`
+	`Action/Tornado.act`
+	`Action/Guard00.act`
+	`Action/Dash.act`
+	`Action/Attack00.act`
+	`Action/Attack02.act`
+	`Action/Dash1.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Dash.atk`
+	`AttackInfo/Attack.atk`
+	`AttackInfo/LongAttack.atk`
+	`AttackInfo/Attack.atk`
+[/attack info]
+
+[cooltime]
+	12000	0	0	0	10000	10000	3000	8000	5000
+[/cooltime]
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	270
+
+[keep range distance with target]
+	250	10	15	15
+
+[warlike]
+	80
+
+[intelligence]
+	80	80	1000
+
+[vision]
+	600
+
+[set damage check]
+	3000
+
+[lie frame]
+	1	2	3	3	4

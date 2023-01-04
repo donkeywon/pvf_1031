@@ -1,0 +1,201 @@
+#PVF_File
+
+[name]
+	`塞斯奇的鬃毛扫把`
+
+[basic explain]
+	`施放[魔法星弹]、 [烈炎]时， 有5%%的几率出现3个塞斯奇的冰柱。
+无法进行分解。`
+
+[detail explain]
+	`施放[魔法星弹]、 [烈炎]时， 有5%%的几率出现3个塞斯奇的冰柱。 (在决斗场中几率为1%%)
+无法进行分解。`
+
+[grade]
+	49
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	45
+
+[magical attack]
+	34
+
+[attack speed]
+	60
+
+[move speed]
+	30
+
+[price]
+	78400
+
+[repair price]
+	62720
+
+[value]
+	62720
+
+[equipment physical attack]
+	462	422
+
+[equipment magical attack]
+	506	462
+
+[separate attack]
+	269	180
+
+[icon]
+	`Item/weapon/mage/broom.img`	63
+
+[field image]
+	`Item/field_weapon.img`	10
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	23	0
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	23	0
+
+[layer variation]
+	2150
+	`at_brooma`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_broomd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	23	0
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BROOM_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`broom`
+
+[cool time]
+	10000
+
+[required skill]
+	91
+
+[if]
+	[use skill]
+		`mage`	11
+	[/use skill]
+[/if]
+
+[then]
+	[probability]
+		5
+	[reduce probability to human armor at pvp module]
+		80
+	[target]
+		`myself`	-1
+	[passive object]
+		9255	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`creator mage`	250
+	[/use skill]
+[/if]
+
+[then]
+	[probability]
+		5
+	[reduce probability to human armor at pvp module]
+		80
+	[target]
+		`myself`	-1
+	[passive object]
+		9255	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[routing priority]
+	`mage`	4
+	`creator mage`	0
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

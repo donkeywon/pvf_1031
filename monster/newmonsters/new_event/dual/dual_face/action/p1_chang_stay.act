@@ -1,0 +1,94 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/L1_Change_Stay.ani`
+	[SUB ANI]
+		`../Animation/L1_Change_Stay_eff.ani`	0	1
+		`../Animation/P_Change_Stay_eff.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`MONAHUN_SHIELD_DMG`	9
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[RIGHT]
+	[TRIGGER]
+	[ATTACK]
+		3	1
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`L1_stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`L1_move.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`L1_damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`L1_damage2.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		4
+		`L1_Chang_Stay.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		7
+		`L1_Stop.act`
+	[CHANGE ACTION FILE]
+	[LAST]
+		`L1_die.act`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET OUTLINE]
+		1	255	255	255	4
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		20	20
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DAMAGE BOX]
+	[ON]
+	[SHAKING]
+		2	1000
+[/BEHAVIOR]

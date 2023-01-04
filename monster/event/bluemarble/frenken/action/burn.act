@@ -1,0 +1,181 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Burn.ani`
+	[SPEECH]
+		`看来是要逼我动手了！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		30000	
+		[physical attack]
+		[+]
+			50.0
+		[physical defense]
+		[%]
+			20.0
+		[attack speed]
+		[%]
+			20.0
+		[cast speed]
+		[%]
+			20.0
+		[move speed]
+		[%]
+			20.0
+		[hit recovery]
+		[%]
+			20.0
+	[/APPENDAGE]
+	[SHAKING]
+		3	2000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			60032
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			40	30	0
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		8	500
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			60032
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			40	30	0
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		8	500
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			60032
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			40	30	0
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		8	500
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			60032
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			40	30	0
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		8	500
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[COLOR CHANGE EFFECT]
+		[EFFECT RED START]
+			0
+		[EFFECT RED END]
+			255
+		[CHANGE SIZE START]
+			100
+		[CHANGE SIZE END]
+			150
+		[CHANGE TIME]
+			1000
+		[LIFE TIME]
+			2000
+	[/COLOR CHANGE EFFECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[COLOR CHANGE EFFECT]
+		[EFFECT RED START]
+			0
+		[EFFECT RED END]
+			255
+		[CHANGE SIZE START]
+			100
+		[CHANGE SIZE END]
+			120
+		[CHANGE TIME]
+			2000
+		[LIFE TIME]
+			30000
+	[/COLOR CHANGE EFFECT]
+[/BEHAVIOR]

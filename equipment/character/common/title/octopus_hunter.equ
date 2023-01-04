@@ -1,0 +1,73 @@
+#PVF_File
+
+[name]
+	`章鱼捕手`
+
+[name2]
+	`Octopus Hunter`
+
+[explain]
+	`被攻击时， 有5%%的几率使自身恢复500点MP。`
+
+[flavor text]
+	`章鱼猎人只在指定的地方猎章鱼， 如果有人侵犯他们打猎的地区， 不顾一些施行暴力。  --阿拉德秘史`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	271
+
+[equipment type]
+	`[title name]`	1
+
+[custom animation]
+	`TitleAnimation/octopus_hunter.ani`
+[/custom animation]
+
+[move speed]
+	20
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[cooltime]
+		20000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[restore]
+		`mp`
+		`+`	500	1000
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

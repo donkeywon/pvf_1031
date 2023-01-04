@@ -1,0 +1,55 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_3.ani`
+	[SUB ANI]
+		`../Animation/aura_back.ani`	0	-1
+		`../Animation/aura_front.ani`	0	1
+		`../Animation/effect/buff.ani`	0	2
+		`../Animation/effect/autoguard_ldodge.ani`	0	3
+		`../Animation/effect/buff_eff.ani`	0	4
+	[/SUB ANI]
+	[SPEECH]
+		`欲望之沼！`	0	30
+	[/SPEECH]
+	[SOUND]
+		`KANE_SKILL_03_1`	0
+		`KANE_COUNTER_CAST`	0
+		`KANE_COUNTER_READY`	1
+		`KANE_COUNTER_READY`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		7
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		2900	2
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]

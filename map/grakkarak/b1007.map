@@ -1,0 +1,135 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	7
+[/dungeon]
+
+[type]
+	`[boss]`
+
+[greed]
+	`EE EE`
+
+[tile]
+	`Tile/ForestOver.til`
+	`Tile/ForestOver.til`
+	`Tile/ForestOverUnder.til`
+	`Tile/ForestUnder.til`
+	`Tile/ForestUnder.til`
+	`Tile/ForestUnderOver.til`
+	`Tile/ForestOverUnder.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/far0.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/mid0.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	16	216	1552	216	784	144	784	348
+
+[sound]
+	`M_GRAKKARAK_BOSS`
+	`AMB_FOREST_03`
+[/sound]
+
+[animation]
+	`Animation/Grass2.ani`	`[bottom]`	1305	156	0
+	`Animation/Grass2.ani`	`[bottom]`	510	272	0
+	`Animation/Grass2.ani`	`[bottom]`	289	220	0
+	`Animation/Grass2.ani`	`[bottom]`	1059	180	0
+	`Animation/Tree1.ani`	`[closeback]`	1099	170	0
+	`Animation/Tree3.ani`	`[closeback]`	1322	141	0
+	`Animation/DeadTree0.ani`	`[closeback]`	168	131	0
+	`Animation/Tree0.ani`	`[closeback]`	494	153	0
+	`Animation/Tree1.ani`	`[closeback]`	378	140	0
+[/animation]
+
+[passive object]
+	302	221	149	0
+	302	1247	200	0
+	302	394	228	0
+	302	1375	255	0
+	302	280	321	0
+	302	1215	337	0
+[/passive object]
+
+[monster]
+	14	0	16	726	205	0	1	1	`[fixed]`	`[normal]`
+	13	0	14	970	212	0	1	1	`[fixed]`	`[normal]`
+	11	0	9	619	232	0	1	1	`[fixed]`	`[normal]`
+	7	0	14	961	263	0	1	1	`[fixed]`	`[normal]`
+	15	1	0	843	273	0	2	1	`[fixed]`	`[boss]`
+	5002	1	0	1079	295	0	1	1	`[fixed]`	`[normal]`
+	7	0	14	579	296	0	1	1	`[fixed]`	`[normal]`
+	14	0	16	978	318	0	1	1	`[fixed]`	`[normal]`
+	13	0	14	721	323	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[special passive object]
+	221	158	153	0	1
+	`[trap]`	2411	1	1	5	-1
+	222	1355	177	0	1
+	`[trap]`	2510	1	1	5	-1
+	221	198	308	0	1
+	`[trap]`	2611	1	1	5	-1
+	222	1375	323	0	1
+	`[trap]`	2211	1	5	50	-1	
+[/special passive object]
+
+[NPC]
+	1000	`[left]`	0	0	0
+[/NPC]
+
+[event monster position]
+	505	192	0
+	505	277	0
+	401	275	0
+	1134	230	0
+[/event monster position]
+
+[map name]
+	`PVP 无名`

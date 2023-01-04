@@ -1,0 +1,79 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/bigshoot.ani`
+	[SUB ANI]
+		`../animation/bigshoot_w.ani`	0	1
+		`../animation/bigshoot_w1.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`太失望了……`	2	15
+	[/SPEECH]
+	[SOUND]
+		`ENJO_MUSKET_BOOM`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30045
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			150	0	110
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30045
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			200	0	110
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30045
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			250	0	110
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

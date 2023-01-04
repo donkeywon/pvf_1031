@@ -1,0 +1,85 @@
+#PVF_File
+
+[name]
+	`突击队长兰蒂卢斯 卡片`
+
+[name2]
+	`找不到代码name2_3778`
+
+[flavor text]
+	`向前突进！`
+
+[grade]
+	1
+
+[attach type]
+	`[free]`
+
+[rarity]
+	3
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/stackable/MonsterCard_icon.img`	158
+
+[field image]
+	`Item/field_material.img`	30
+
+[stackable type]
+	`[material expert job]`	1
+
+[sub type]
+	1
+
+[price]
+	10
+
+[move wav]
+	`PAPER_TOUCH`
+
+[string data]
+	`Interface/MonsterCard/MonsterCard_image.img`
+	`[support]`
+[/string data]
+
+[int data]
+	158	61278
+[/int data]
+
+[enchant]
+	[if]
+		[cooltime]
+			90000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			30000
+		[probability]
+			1
+		[active status]
+			`bless`	1	200	200	200	200
+	[/then]
+[/enchant]
+
+[stat desc]
+	`攻击时， 有1%%的几率使自身进入祝福状态， 效果持续30秒。 (力量、 体力、 智力、 精神 +200； 冷却时间为30秒)`
+
+[item category]
+	`monster card`
+[/item category]
+
+[icon mark]
+	`Item/IconMark.img`	66

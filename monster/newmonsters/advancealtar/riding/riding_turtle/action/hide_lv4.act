@@ -1,0 +1,75 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Hide.ani`
+	[SUB ANI]
+		`../Animation/Fire/Hide.ani`	0	1
+		`../Animation/Fire/attack_speed_up_back.ani`	0	1
+		`../Animation/Fire/attack_speed_up_front.ani`	0	2
+		`../Animation/Fire/move_speed_up.ani`	0	3
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[LIMIT]
+		1
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+		[AREA]
+			0	-30	300	60
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		8500	
+		[hp regen rate]
+		[%]
+			6000.0
+		[mp regen rate]
+		[%]
+			750.0
+		[physical absolute defense]
+		[%]
+			100000
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CASTING]
+		8500	2
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[SIT]
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[FIX TARGET ME]
+	[TIME]
+		8500
+[/BEHAVIOR]

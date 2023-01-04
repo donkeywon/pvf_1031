@@ -1,0 +1,27 @@
+#PVF_File
+
+[TRIGGER]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			50606
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			100
+	[/CHECKUP]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[bleeding]
+		100	71	10000	50000
+[/BEHAVIOR]

@@ -1,0 +1,96 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/rocket_item.ani`
+	[SOUND]
+		`MISSILE_PROPELL`	1
+		`MISSILE_PROPELL`	3
+		`MISSILE_PROPELL`	5
+		`MISSILE_PROPELL`	6
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			48143
+		[PARTICLE FILENAME]
+			`../Particle/BossMissileSmogUp.ptl`
+		[LEVEL]
+			0
+		[POS]
+			80	0	110
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			48143
+		[PARTICLE FILENAME]
+			`../Particle/BossMissileSmogDown.ptl`
+		[LEVEL]
+			0
+		[POS]
+			80	0	115
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			48143
+		[PARTICLE FILENAME]
+			`../Particle/BossMissileSmogUp.ptl`
+		[LEVEL]
+			0
+		[POS]
+			80	0	110
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			48143
+		[PARTICLE FILENAME]
+			`../Particle/BossMissileSmogDown.ptl`
+		[LEVEL]
+			0
+		[POS]
+			80	0	115
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

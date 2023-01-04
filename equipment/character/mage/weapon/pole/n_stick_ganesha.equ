@@ -1,0 +1,187 @@
+#PVF_File
+
+[name]
+	`圣使锁魂棍`
+
+[name2]
+	`Holy Kami Ganesha`
+
+[basic explain]
+	`攻击时， 有3%%的几率使自身进入祝福状态。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使自身进入祝福状态20秒； 祝福状态下， 增加82点力量、 体力、 智力和精神。`
+
+[flavor text]
+	`神使用过的棍， 充满了神圣的力量， 可以击退任何邪恶。`
+
+[grade]
+	57
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	39
+
+[magical attack]
+	49
+
+[attack speed]
+	50
+
+[stuck]
+	-1
+
+[price]
+	91200
+
+[repair price]
+	76608
+
+[value]
+	72960
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	575	523
+
+[equipment magical attack]
+	479	436
+
+[separate attack]
+	328	220
+
+[light attack]
+	12
+
+[icon]
+	`Item/weapon/mage/pole.img`	39
+
+[field image]
+	`Item/field_weapon.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	3	0
+
+[layer variation]
+	2790
+	`dakshac`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`dakshad`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	3	0
+
+[layer variation]
+	2790
+	`at_dakshac`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_dakshad`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	3	0
+
+[layer variation]
+	2790
+	`dakshac`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`dakshad`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`POLE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2400
+
+[item group name]
+	`pole`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		3
+	[active status]
+		`bless`	55	82	82	82	82
+[/then]
+
+[routing priority]
+	`mage`	3
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

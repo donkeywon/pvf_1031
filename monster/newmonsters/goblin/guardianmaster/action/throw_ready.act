@@ -1,0 +1,47 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Hide.ani`
+	[SUB ANI]
+		`../Animation/back/Hide_400.ani`	0	-2
+		`../Animation/pants/Hide_300.ani`	0	0
+		`../Animation/shoes/Hide_600.ani`	0	0
+		`../Animation/skin/Hide_700.ani`	0	0
+		`../Animation/ac/Hide_200.ani`	0	0
+		`../Animation/hat/Hide_500.ani`	0	0
+		`../Animation/Hide_100.ani`	0	100
+	[/SUB ANI]
+	[SOUND]
+		`OLI_INVISIBLE`	1
+		`R_GOLI_SKILL_01`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`gogogo！！！`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		10
+	[NOW]
+[/BEHAVIOR]

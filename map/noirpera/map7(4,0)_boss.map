@@ -1,0 +1,103 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	1502
+[/dungeon]
+
+[type]
+	`[boss]`
+
+[greed]
+	`EE EE`
+
+[tile]
+	`Tile/tile_ex_base01.til`
+	`Tile/tile_ex_base02.til`
+	`Tile/tile_ex_base03.til`
+	`Tile/tile_ex_base03.til`
+	`Tile/tile_ex_base03.til`
+[/tile]
+
+[extended tile]
+	`Tile/tile_ex_sub05.til`
+	`Tile/tile_ex_sub06.til`
+	`Tile/tile_ex_sub05.til`
+	`Tile/tile_ex_sub06.til`
+	`Tile/tile_ex_sub06.til`
+[/extended tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/distantback.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/middleback.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/fog.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	12	307	1107	236	494	192	710	377
+
+[sound]
+	`M_NPERA_BOSS`
+	`AMB_DARKSTAGE_01`
+[/sound]
+
+[animation]
+	`Animation/closeback_pillar1.ani`	`[middleback]`	166	0	0
+	`Animation/closeback_pillar2.ani`	`[middleback]`	500	0	0
+	`Animation/closeback_pillar1.ani`	`[middleback]`	834	0	0
+	`Animation/closeback_pillar2.ani`	`[middleback]`	1168	0	0
+	`Animation/closeback_pillar2.ani`	`[middleback]`	1502	0	0
+	`Animation/closeback_pillar1.ani`	`[middleback]`	1836	0	0
+[/animation]
+
+[monster]
+	61001	1	0	747	275	0	2	1	`[fixed]`	`[boss]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+[/monster specific AI]
+
+[NPC]
+	1000	`[left]`	0	0	0
+[/NPC]
+
+[map name]
+	`PVP 无名`

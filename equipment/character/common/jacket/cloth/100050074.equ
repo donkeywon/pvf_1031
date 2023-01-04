@@ -1,0 +1,124 @@
+#PVF_File
+
+[name]
+	`首领萨斯的阴影长袍`
+
+[basic explain]
+	`攻击时， 有2%%的几率使自身进入伪装状态20秒。
+攻击时， 有2%%的几率使武器附加暗属性， 并增加自身15点的暗属性强化值。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使自身进入伪装状态20秒。 (冷却时间为30秒； 在决斗场中无效)
+攻击时， 有2%%的几率使武器附加暗属性， 并增加自身15点的暗属性强化值， 效果持续20秒。 (冷却时间为30秒)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	20
+
+[physical defense]
+	20
+
+[magical defense]
+	63
+
+[price]
+	71200
+
+[repair price]
+	59808
+
+[value]
+	56960
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	1152	1092
+
+[icon]
+	`Item/new_equipment/02_cloth/coat/cloth_coat.img`	16
+
+[field image]
+	`Item/field_equip.img`	0
+
+[equipment type]
+	`[coat]`	18
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	1400
+
+[item group name]
+	`cl coat`
+
+[cool time]
+	10000
+
+[magical attack]
+	63
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		20000
+	[probability]
+		2
+	[stat]
+		`dark attack`
+		`+`	15
+	[elemental weapon]
+		`dark`
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		20000
+	[probability]
+		2
+	[appendage]
+		59
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

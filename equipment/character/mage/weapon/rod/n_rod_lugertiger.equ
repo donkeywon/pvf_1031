@@ -1,0 +1,188 @@
+#PVF_File
+
+[name]
+	`鲁乌格的伏虎魔杖`
+
+[name2]
+	`Luger's Tiger Rod`
+
+[basic explain]
+	`施放技能时， 有5%%的几率召唤出1只寒冰虎。`
+
+[detail explain]
+	`施放技能时， 有5%%的几率召唤出1只Lv50的寒冰虎协助召唤者攻击敌人， 寒冰虎存在100秒。 (召唤的怪物只能同时存在1只， 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失)`
+
+[flavor text]
+	`召唤寒冰虎就说我可耻？ 我看被我揍得哭爹喊娘的你， 才是傻蛋。`
+
+[grade]
+	50
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	45
+
+[magical attack]
+	53
+
+[attack speed]
+	100
+
+[cast speed]
+	50
+
+[stuck]
+	1
+
+[need material]
+	3260	750
+
+[repair price]
+	67200
+
+[value]
+	64000
+
+[equipment physical attack]
+	428	385
+
+[equipment magical attack]
+	524	471
+
+[separate attack]
+	285	189
+
+[skill levelup]
+	`[mage]`	16	3
+	`[mage]`	56	2
+	`[at mage]`	9	3
+	`[at mage]`	19	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/mage/rod.img`	38
+
+[field image]
+	`Item/field_weapon.img`	7
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	5	4
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	5	4
+
+[layer variation]
+	2150
+	`at_roda`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_rodd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	5	4
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`ROD_TOUCH`
+
+[durability]
+	24
+
+[weight]
+	2200
+
+[item group name]
+	`rod`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		100000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		100000
+	[reduce duration at pvp module]
+		75
+	[probability]
+		5
+	[summon monster]
+		60111	50	1
+[/then]
+
+[routing priority]
+	`mage`	1
+	`at mage`	1
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

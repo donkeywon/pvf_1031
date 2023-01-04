@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/drive.ani`
+	[SUB ANI]
+		`../animation/drive_w.ani`	0	10
+		`../animation/drive_e.ani`	0	15
+	[/SUB ANI]
+	[SOUND]
+		`MICA_SKILL_01`	3
+		`WD_CRASH`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10330
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			66	10	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

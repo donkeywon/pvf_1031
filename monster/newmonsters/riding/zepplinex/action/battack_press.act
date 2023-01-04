@@ -1,0 +1,62 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Press2.ani`
+	[SUB ANI]
+		`../Animation/CrashUnder.ani`	0	-2
+		`../Animation/CannonReadyBF.ani`	0	-1
+		`../Animation/CrashOver.ani`	0	0
+		`../Animation/CannonReadyBB.ani`	0	2
+		`../Animation/Height_down_eff.ani`	0	3
+	[/SUB ANI]
+	[SOUND]
+		`SHOCKWAVE_HIT_01`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-1000
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	1200
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[ATTACK]
+		2	0
+	[ON]
+[/BEHAVIOR]

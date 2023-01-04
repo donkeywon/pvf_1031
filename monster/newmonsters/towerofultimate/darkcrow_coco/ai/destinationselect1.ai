@@ -1,0 +1,50 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[command]
+			`==`	1
+		[true]
+		[return]
+			1
+		[false]
+	
+		[think]
+			[void]
+				`number of in attack area()`	500	500	300	300
+				`friend`
+				`monster`	56015
+			[true]
+		
+			[think]
+				[last result]
+					`>`	0
+				[true]
+			
+				[think]
+					[set target monster]
+						56015
+						`friend`
+					[true]
+				
+					[think]
+						[set bound]
+							20	20	20	20
+						[true]
+						[return]
+							6
+						[false]
+						[return]
+							0
+					[/think]
+	[/think]
+	[false]
+	[return]
+		1
+	[/think]
+	[false]
+	[return]
+		1
+	[/think]
+	[/think]
+[/ai pattern]

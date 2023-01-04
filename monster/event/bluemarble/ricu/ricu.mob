@@ -1,0 +1,209 @@
+#PVF_File
+
+[name]
+	`寒冰巨人利库`
+
+[category]
+	`[hybrid]`
+[/category]
+
+[attack sound]
+	`R_RIKU_ATK`
+
+[appear sound]
+	`RIKU_MEET`
+
+[damage sound]
+	`R_RIKU_DMG`
+
+[die sound]
+	`RIKU_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	130
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+	`[HP MAX]`	`*`	345
+[/ability category]
+
+[level]
+	49	49
+
+[fire resistance]
+	-20	-20
+
+[water resistance]
+	50	50
+
+[slow resistance]
+	100	100
+
+[freeze resistance]
+	180	180
+
+[poison resistance]
+	30	30
+
+[blind resistance]
+	40	40
+
+[lightning resistance]
+	50	50
+
+[stone resistance]
+	200	200
+
+[sleep resistance]
+	100	100
+
+[weapon break resistance]
+	100	100
+
+[bleeding resistance]
+	100	100
+
+[HP regen speed]
+	10	10
+
+[move speed]
+	800	800
+
+[attack speed]
+	700	700
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	170000	170000
+
+[warlike]
+	80
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[common champion drop item]
+[/common champion drop item]
+
+[die effect]
+	0	3	1
+
+[face image]
+	`Monster/MonsterFace.img`	224
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/move.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[attack action]
+	`Action/Attack1.act`
+	`Action/Attack2.act`
+	`Action/IceWave1.act`
+	`Action/IceWave2.act`
+	`Action/IceWave3.act`
+	`Action/Command1.act`
+	`Action/Command2.act`
+	`Action/Command3.act`
+	`Action/Summon.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack1.atk`
+	`AttackInfo/Attack2.atk`
+	`AttackInfo/IceWave1.atk`
+	`AttackInfo/IceWave2.atk`
+	`AttackInfo/IceWave3.atk`
+	`AttackInfo/Command1.atk`
+	`AttackInfo/Command2.atk`
+	`AttackInfo/Command3.atk`
+	`AttackInfo/Summon.atk`
+[/attack info]
+
+[speech on situation]
+	`[on die]`	`你......高兴得太早了......`	0
+[/speech on situation]
+
+[atk super on scr]
+	0
+	`[unbreakable]`	-1	-1	-1	-1	1
+	`[unbreakable]`	-1	-1	-1	-1	8
+	`[unbreakable]`	-1	-1	-1	-1
+[/atk super on scr]
+
+[cooltime]
+	5000	7000	7000	7000	7000	7000	7000	7000	12000
+[/cooltime]
+
+[think term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	250
+
+[keep range distance with target]
+	50	30	80	80
+
+[vision]
+	1000
+
+[lie frame]
+	2	2	2	2	2
+
+[level of difficulty]
+	[easy]
+		-40	2000
+	[medium]
+		-20	1000
+	[hard]
+		0	0
+	[ultimate]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]

@@ -1,0 +1,211 @@
+#PVF_File
+
+[name]
+	`白猫之惩戒`
+
+[name2]
+	`White Cat Rod`
+
+[basic explain]
+	`施放技能时， 有8%%的几率向所有敌人发动闪电。`
+
+[detail explain]
+	`施放技能时， 有8%%的几率向所有敌人发动闪电。 (在决斗场中有1%%的几率)`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[magical attack]
+	64
+
+[attack speed]
+	100
+
+[cast speed]
+	50
+
+[stuck]
+	1
+
+[need material]
+	3285	1200
+
+[price]
+	0
+
+[repair price]
+	83328
+
+[value]
+	79360
+
+[equipment physical attack]
+	515	472
+
+[equipment magical attack]
+	629	576
+
+[separate attack]
+	360	243
+
+[skill levelup]
+	`[mage]`	176	2
+	`[mage]`	77	2
+	`[mage]`	17	3
+	`[at mage]`	176	2
+	`[at mage]`	31	2
+	`[at mage]`	26	3
+[/skill levelup]
+
+[light attack]
+	8
+
+[icon]
+	`Item/weapon/mage/rod.img`	67
+
+[field image]
+	`Item/field_weapon.img`	7
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	13	6
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	13	6
+
+[layer variation]
+	2150
+	`at_roda`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_rodd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	13	6
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`ROD_TOUCH`
+
+[durability]
+	24
+
+[weight]
+	2200
+
+[item group name]
+	`rod`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+	[/module]
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[probability]
+		8
+	[passive object]
+		48098	0	0	0	25	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[module]
+		`[pvp type]`
+	[/module]
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[probability]
+		1
+	[passive object]
+		48098	0	0	0	25	0	``
+	[/passive object]
+[/then]
+
+[routing priority]
+	`mage`	2
+	`mage`	1
+	`at mage`	2
+	`at mage`	1
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

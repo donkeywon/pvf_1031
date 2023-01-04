@@ -1,0 +1,102 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[my state]
+			4
+		[true]
+		[return]
+			-1
+		[false]
+	
+		[think]
+			[check key cooltime]
+				`gailforce`
+			[false]
+			[return str]
+				`gailforce`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`rand`
+				[true]
+			
+				[think]
+					[void]
+						`is target in attack area()`	60.0	60.0	30.0	30.0
+					[true]
+				
+					[think]
+						[check key cooltime]
+							`wind2`
+						[true]
+					
+						[think]
+							[check key cooltime]
+								`wind`
+							[true]
+						
+							[think]
+								[check key cooltime]
+									`head`
+								[true]
+							
+								[think]
+									[check key cooltime]
+										`combo`
+									[true]
+									[return]
+										-1
+									[false]
+									[return str]
+										`combo`
+								[/think]
+	[false]
+	[return str]
+		`head`
+	[/think]
+	[false]
+	[return str]
+		`wind`
+	[/think]
+	[false]
+	[return str]
+		`wind2`
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	300.0	60.0	30.0	30.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`head`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`combo`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`combo`
+			[/think]
+	[false]
+	[return str]
+		`head`
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[false]
+	[return str]
+		`rand`
+	[/think]
+	[/think]
+[/ai pattern]

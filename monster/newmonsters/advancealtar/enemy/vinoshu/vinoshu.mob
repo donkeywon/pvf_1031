@@ -1,0 +1,159 @@
+#PVF_File
+
+[floating height]
+	20
+
+[name]
+	`炽热彼诺修`
+
+[face image]
+	`Monster/MonsterFace.img`	21
+
+[ability category]
+	`[HP MAX]`	`+`	145
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	150
+[/ability category]
+
+[overhead gauge type]
+	1
+
+[category]
+	`[oneside move]`
+	`[human]`
+	`[melee combat]`
+	`[close-carefully]`
+[/category]
+
+[fix direction]
+	`[left]`
+
+[initial target]
+	[MONSTER]
+		64597
+	[initial target Permanent]
+		0
+[/initial target]
+
+[level]
+	1	70
+
+[move speed]
+	800	800
+
+[attack speed]
+	700	700
+
+[cast speed]
+	900	900
+
+[hit recovery]
+	800	800
+
+[weight]
+	50000	50000
+
+[vision]
+	700
+
+[targeting nearest]
+	1
+
+[warlike]
+	80
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[think term]
+	250
+
+[lie frame]
+	1	2	3	3	4
+
+[keep distance with target]
+	180
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[proc action]
+	`Action/Proc.act`
+
+[attack action]
+	`Action/Attack.act`
+	`Action/cast.act`
+	`Action/cast1.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack.atk`
+	``
+	``
+[/attack info]
+
+[cooltime]
+	4000	6000	9000
+[/cooltime]
+
+[ai pattern]
+	[normal]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/normal]
+	[expert]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/expert]
+	[master]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/master]
+	[king]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/king]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action1.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[vision]
+	700
+
+[lie frame]
+	1	2	3	3	4
+
+[base table]
+	`NewMonsters/AdvanceAltar/Enemy/Vinoshu/table/AdvanceAltarMonsterBaseParameter.tbl`

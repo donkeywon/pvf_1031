@@ -1,0 +1,67 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Magic.ani`
+	[SUB ANI]
+		`../Animation/Clothes/Magic.ani`	0	0
+		`../Animation/Equip_a/Magic.ani`	0	0
+		`../Animation/Equip_b/Magic.ani`	0	0
+		`../Animation/EquipEffect_a/Magic.ani`	0	0
+		`../Animation/EquipEffect_b/Magic.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`SKEL_MAGIC`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11092
+		[PARTICLE FILENAME]
+			`../Particle/Fire.ptl`
+		[LEVEL]
+			60
+		[POS]
+			0	0	80
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11094
+		[PARTICLE FILENAME]
+			`../Particle/Fire.ptl`
+		[LEVEL]
+			60
+		[POS]
+			0	0	100
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11095
+		[PARTICLE FILENAME]
+			`../Particle/Fire.ptl`
+		[LEVEL]
+			60
+		[POS]
+			0	50	120
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11096
+		[PARTICLE FILENAME]
+			`../Particle/Fire.ptl`
+		[LEVEL]
+			60
+		[POS]
+			0	-50	140
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

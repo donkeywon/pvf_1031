@@ -1,0 +1,107 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Hero_Mage_Attack.ani`
+	[SUB ANI]
+		`../Animation/ball/Hero_Mage_Attack.ani`	0	0
+		`../Animation/ball_eff/Hero_Mage_Attack.ani`	0	0
+		`../Animation/ball_eff/Hero_Mage_Attack.ani`	0	0
+		`../Animation/Skill_eff/Hero_Mage_Attack.ani`	0	0
+		`../Animation/Skill_eff/Swing.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`TEYMER_WHIP`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			4000
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/DustMove.ptl`	0	0	0
+	[SET SPEED]
+		[X AXIS]
+			10
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9048
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-30	0	30
+		[USE MY BASEPOS]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9048
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-10	0	30
+		[USE MY BASEPOS]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

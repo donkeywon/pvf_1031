@@ -1,0 +1,102 @@
+#PVF_File
+
+[name]
+	`(旧) 史苏克的一滴眼泪`
+
+[name2]
+	`Shuske's Teardrop Ring`
+
+[basic explain]
+	`被攻击时， 有1%%的几率使敌人进入冰冻状态。`
+
+[detail explain]
+	`被攻击时， 有1%%的几率使敌人进入冰冻状态2秒。 (若敌人高于Lv45， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`史苏克的眼泪结晶， 冰寒异常， 可以冻结一切生灵。`
+
+[grade]
+	50
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	45
+
+[physical attack]
+	32
+
+[magical attack]
+	32
+
+[price]
+	60000
+
+[repair price]
+	48000
+
+[value]
+	48000
+
+[equipment magical defense]
+	1856	1664
+
+[icon]
+	`Item/common/ring.img`	9
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	21
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		1000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		1
+	[reduce probability to human armor at pvp module]
+		60
+	[active status]
+		`freeze`	45
+[/then]
+
+[set item master]
+	20109
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

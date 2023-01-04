@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Move.ani`
+	[SUB ANI]
+		`../Animation/Move_e.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`呜啊呜啊~~~~！！ 呜啊啊啊哦！！`	0	5
+		`呜??！！呜??！ 唔啊啊！！！`	0	5
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[RANDOM CHECK]
+			1	200
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[JUMP TO TARGET]
+		-1	1000	-2500	1.1	2200	1000	0	1	2
+[/BEHAVIOR]

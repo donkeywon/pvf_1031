@@ -1,0 +1,28 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	300.0	300.0	500.0	500.0
+		[true]
+	
+		[think]
+			[void]
+				`get random()`	0.0	100.0
+		
+			[think]
+				[last result]
+					`<=`	50.0
+				[true]
+				[return]
+					0
+				[false]
+				[return]
+					10
+			[/think]
+	[/think]
+	[false]
+	[return]
+		3
+	[/think]
+[/ai pattern]

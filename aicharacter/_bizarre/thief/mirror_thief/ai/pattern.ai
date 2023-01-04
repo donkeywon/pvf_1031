@@ -1,0 +1,110 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is the skill in cooltime()`	21
+		[false]
+		[return str]
+			`darksoul`
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	60.0	60.0	30.0	30.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`combo`
+				[true]
+			
+				[think]
+					[target state]
+						4
+					[true]
+					[return]
+						-1
+					[false]
+				
+					[think]
+						[void]
+							`is the skill in cooltime()`	7
+						[true]
+						[return]
+							-1
+						[false]
+						[return str]
+							`atk7`
+					[/think]
+	[/think]
+	[false]
+	[return str]
+		`combo`
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	100.0	100.0	30.0	30.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`b_s`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`s_cut`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`s_cut`
+			[/think]
+	[false]
+	[return str]
+		`b_s`
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	200	200	60	60
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	5
+			[false]
+			[return str]
+				`flamecut`
+			[true]
+			[return]
+				-1
+		[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	300	300	150	150
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	35
+			[false]
+			[return str]
+				`nail`
+			[true]
+			[return]
+				-1
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

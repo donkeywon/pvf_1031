@@ -1,0 +1,147 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Jump.ani`
+	[SPEECH]
+		`再来一次！`	0	100
+	[/SPEECH]
+	[SOUND]
+		`VENTING_SKILL`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			50705
+		[PARTICLE FILENAME]
+			`../Particle/8Throw/IceMissileBackDown.ptl`
+		[LEVEL]
+			50
+		[POS]
+			40	0	89
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			50705
+		[PARTICLE FILENAME]
+			`../Particle/8Throw/IceMissileBackUp.ptl`
+		[LEVEL]
+			50
+		[POS]
+			40	0	89
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			50705
+		[PARTICLE FILENAME]
+			`../Particle/8Throw/IceMissileCenterDown.ptl`
+		[LEVEL]
+			50
+		[POS]
+			40	0	89
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			50705
+		[PARTICLE FILENAME]
+			`../Particle/8Throw/IceMissileCenterUp.ptl`
+		[LEVEL]
+			50
+		[POS]
+			40	0	89
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30006
+		[PARTICLE FILENAME]
+			`../Particle/Bomb/IceMissileBackDown.ptl`
+		[LEVEL]
+			50
+		[POS]
+			40	0	89
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30006
+		[PARTICLE FILENAME]
+			`../Particle/Bomb/IceMissileBackUp.ptl`
+		[LEVEL]
+			50
+		[POS]
+			40	0	89
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30006
+		[PARTICLE FILENAME]
+			`../Particle/Bomb/IceMissileCenterDown.ptl`
+		[LEVEL]
+			50
+		[POS]
+			40	0	89
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30006
+		[PARTICLE FILENAME]
+			`../Particle/Bomb/IceMissileCenterUp.ptl`
+		[LEVEL]
+			50
+		[POS]
+			40	0	89
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			700
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		800	4
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		1
+[/BEHAVIOR]

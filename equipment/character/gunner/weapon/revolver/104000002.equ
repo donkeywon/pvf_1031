@@ -1,0 +1,173 @@
+#PVF_File
+
+[name]
+	`寇特双重行动[租借活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`光属性攻击时以2%% 的机率让敌人陷入眩晕状态
+踏射，钉刺射发射数+1
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。
+只能在异界地下城使用。`
+
+[detail explain]
+	`明属性攻击时会以2%%机率在2秒内让敌人陷入眩晕状态。 (高于Lv69的对象得到的机率和效果减少，低于Lv69的对象则会增加。)
+踏射，钉刺射发射数+1
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。
+只能在异界地下城使用。`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	65
+
+[physical attack]
+	46
+
+[price]
+	110400
+
+[repair price]
+	92736
+
+[value]
+	88320
+
+[equipment physical attack]
+	612	558
+
+[equipment magical attack]
+	515	469
+
+[separate attack]
+	389	264
+
+[physical critical hit]
+	2
+
+[skill levelup]
+	`[gunner]`	9	2
+	`[at gunner]`	9	2
+	`[gunner]`	22	1
+	`[at gunner]`	22	1
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/revolver.img`	58
+
+[field image]
+	`Item/field_weapon.img`	1
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	13	2
+
+[layer variation]
+	2790
+	`revc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`revb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	13	2
+
+[layer variation]
+	2790
+	`at_revc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_revb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2000
+
+[item group name]
+	`revolver`
+
+[cool time]
+	10000
+
+[if]
+	[element]
+		`light`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		2
+	[active status]
+		`stun`	69
+[/then]
+
+[skill data up]
+	`[gunner]`	6	`[all]`	`[static]`	0	`+`	1
+	`[at gunner]`	6	`[all]`	`[static]`	0	`+`	1
+[/skill data up]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

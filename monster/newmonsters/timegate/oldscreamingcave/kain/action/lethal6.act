@@ -1,0 +1,55 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/lethal11.ani`
+	[SUB ANI]
+		`../Animation/effect/charge.ani`	0	1
+		`../Animation/effect/FinishFloor1.ani`	0	2
+		`../Animation/effect/FinishSlash.ani`	0	3
+	[/SUB ANI]
+	[SPEECH]
+		`神之一击！`	0	40
+	[/SPEECH]
+	[SOUND]
+		`KANE_CAST`	0
+		`KANE_SKILL_02`	2
+		`A_WHEEL_HIT`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[TARGET]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+	[SET SPEED]
+		[X AXIS]
+			200
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

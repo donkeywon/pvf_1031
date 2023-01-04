@@ -1,0 +1,212 @@
+#PVF_File
+
+[name]
+	`(旧) 无轩之斩魄`
+
+[name2]
+	`Thorn of U-Yo`
+
+[basic explain]
+	`攻击时， 有3%%的几率使所有队员进入无敌状态20秒。 (在决斗场中持续10秒， 街头争霸中持续3秒)`
+
+[detail explain]
+	`攻击时， 有3%%的几率消耗10个无色小晶块并使所有队员进入无敌状态， 效果持续20秒。 (在决斗场中持续10秒， 街头争霸中持续3秒)`
+
+[flavor text]
+	`传言无轩是统治过半个宇宙的强大异界星， ‘斩魄’是它的五大史诗武器之一， 但不知为何落到异面生物手里， 难道又是异变引起的？`
+
+[grade]
+	57
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	39
+
+[magical attack]
+	20
+
+[price]
+	91200
+
+[repair price]
+	72960
+
+[value]
+	72960
+
+[equipment physical attack]
+	532	484
+
+[equipment magical attack]
+	532	484
+
+[separate attack]
+	328	220
+
+[physical critical hit]
+	3
+
+[icon]
+	`Item/weapon/fighter/claw.img`	39
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	2	3
+
+[layer variation]
+	2790
+	`clawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	2	3
+
+[layer variation]
+	2150
+	`at_clawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_clawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_clawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[dead tower]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	10
+	[target]
+		`party`	-1
+	[duration]
+		20000
+	[probability]
+		3
+	[buff]
+		`unbreakable`
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	10
+	[target]
+		`party`	-1
+	[duration]
+		10000
+	[probability]
+		3
+	[buff]
+		`unbreakable`
+[/then]
+
+[if]
+	[module]
+		`[assault]`
+	[/module]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	10
+	[target]
+		`party`	-1
+	[duration]
+		3000
+	[probability]
+		3
+	[buff]
+		`unbreakable`
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

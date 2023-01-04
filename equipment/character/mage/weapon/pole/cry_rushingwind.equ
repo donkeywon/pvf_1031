@@ -1,0 +1,178 @@
+#PVF_File
+
+[name]
+	`疾风棍`
+
+[name2]
+	`Cry of Rushing Wind`
+
+[basic explain]
+	`攻击时， 有3%%的几率使自身进入加速状态。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使自身进入加速状态20秒； 加速状态下， 增加15%%的移动速度和攻击速度。`
+
+[grade]
+	42
+
+[rarity]
+	2
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	40
+
+[physical attack]
+	27
+
+[magical attack]
+	27
+
+[attack speed]
+	50
+
+[stuck]
+	-1
+
+[price]
+	58800
+
+[repair price]
+	47040
+
+[value]
+	47040
+
+[equipment physical attack]
+	402	384
+
+[equipment magical attack]
+	335	320
+
+[separate attack]
+	183	122
+
+[skill levelup]
+	`[mage]`	14	2
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/mage/pole.img`	20
+
+[field image]
+	`Item/field_weapon.img`	8
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[mage]`
+
+[variation]
+	6	2
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	6	2
+
+[layer variation]
+	2150
+	`at_polea`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_poled`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	6	2
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`POLE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2400
+
+[item group name]
+	`pole`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		32000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		3
+	[active status]
+		`haste`	40	15	15
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

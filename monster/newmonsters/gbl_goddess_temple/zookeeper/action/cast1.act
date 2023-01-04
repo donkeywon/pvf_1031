@@ -1,0 +1,89 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/cast.ani`
+	[SUB ANI]
+		`../animation/CastEffect.ani`	0	100
+		`../animation/CastEffectGlow.ani`	0	100
+	[/SUB ANI]
+	[SOUND]
+		`GBLTRAINER_SUMMON`	0
+		`R_RESERCHER_AMB`	0
+	[/SOUND]
+	[SPEECH]
+		`可爱的小家伙， 上吧~~`	0	40
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			5003	5002
+		[/IS INDEX]
+		[CHECKED NO]
+		[<=]
+			4
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		2200	2
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CASTING]
+		2200	3
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			5002
+		[LEVEL]
+			0
+		[POS]
+			60	0	0
+		[USE MY BASEPOS]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			5003
+		[LEVEL]
+			0
+		[POS]
+			60	90	0
+		[USE MY BASEPOS]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			5002
+		[LEVEL]
+			0
+		[POS]
+			60	-90	0
+		[USE MY BASEPOS]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			5002
+		[LEVEL]
+			0
+		[POS]
+			60	0	0
+		[USE MY BASEPOS]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

@@ -1,0 +1,122 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	52
+[/dungeon]
+
+[type]
+	`[normal]`
+
+[greed]
+	`EE EE`
+
+[tile]
+	`Tile/attile.til`
+	`Tile/attile1.til`
+	`Tile/attile2.til`
+	`Tile/attile.til`
+	`Tile/attile1.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/atfar.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/atmid.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/cback.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	11	260	903	627	696	681	469	644
+
+[dungeon start area]
+	982	345	50	44
+
+[sound]
+	`M_BLOODBUTTERFLY`
+	`AMB_WIND_03`
+[/sound]
+
+[animation]
+	`Animation/Sand.ani`	`[bottom]`	315	221	0
+	`Animation/Sand.ani`	`[bottom]`	174	315	0
+[/animation]
+
+[passive object]
+	10014	508	260	0
+[/passive object]
+
+[monster]
+	62014	1	0	344	213	0	1	1	`[fixed]`	`[normal]`
+	62015	1	0	610	229	0	1	1	`[fixed]`	`[normal]`
+	62014	1	0	351	268	0	1	1	`[fixed]`	`[normal]`
+	62015	1	0	613	289	0	1	1	`[fixed]`	`[normal]`
+	62014	1	0	335	319	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[special passive object]
+	8939	494	220	0	1
+	`[monster]`	62014	64	-1	-1	-1
+	8938	244	262	0	1
+	`[monster]`	62014	64	-1	-1	-1
+	8938	501	307	0	1
+	`[monster]`	62015	64	-1	-1	-1	
+[/special passive object]
+
+[event monster position]
+	782	206	0
+	378	204	0
+	377	294	0
+	779	291	0
+[/event monster position]
+
+[show dust]
+	`Common/CommonEffect/Animation/SandDust.ani`
+	`Common/CommonEffect/Animation/FootPrintOnSand.ani`
+
+[map name]
+	`PVP 无名`

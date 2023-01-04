@@ -1,0 +1,87 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AttackCurseStone/CurseStone_Dummy.ani`
+	[SUB ANI]
+		`../Animation/AttackCurseStone/CurseStone_19_arm.ani`	0	1
+		`../Animation/AttackCurseStone/CurseStone_18_body.ani`	0	2
+		`../Animation/AttackCurseStone/CurseStone_17_neck.ani`	0	3
+		`../Animation/AttackCurseStone/CurseStone_16_neck.ani`	0	4
+		`../Animation/AttackCurseStone/CurseStone_15_neck.ani`	0	5
+		`../Animation/AttackCurseStone/CurseStone_14_neck.ani`	0	6
+		`../Animation/AttackCurseStone/CurseStone_13_neck.ani`	0	7
+		`../Animation/AttackCurseStone/CurseStone_12_back.ani`	0	8
+		`../Animation/AttackCurseStone/CurseStone_11_back.ani`	0	9
+		`../Animation/AttackCurseStone/CurseStone_10_back.ani`	0	10
+		`../Animation/AttackCurseStone/CurseStone_09_back.ani`	0	11
+		`../Animation/AttackCurseStone/CurseStone_08_back.ani`	0	12
+		`../Animation/AttackCurseStone/CurseStone_07_back.ani`	0	13
+		`../Animation/AttackCurseStone/CurseStone_06_head.ani`	0	14
+		`../Animation/AttackCurseStone/CurseStone_05_head.ani`	0	15
+		`../Animation/AttackCurseStone/CurseStone_04_head.ani`	0	16
+		`../Animation/AttackCurseStone/CurseStone_03_headhorn.ani`	0	17
+		`../Animation/AttackCurseStone/CurseStone_02_shoulder.ani`	0	18
+		`../Animation/AttackCurseStone/CurseStone_01_arm.ani`	0	19
+		`../Animation/AttackCurseStone/CurseStone_00_hand.ani`	0	20
+		`../Animation/AttackCurseStone/CurseStone_CurseStone_Effect_EyeLight.ani`	0	21
+		`../Animation/AttackCurseStone/CurseStone_CurseStone_04_Eye.ani`	0	22
+		`../Animation/AttackCurseStone/CurseStone_Effect_EyeCharge.ani`	0	23
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		14	14
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS IN AREA]
+			[POS]
+				-300	0	0
+			[RANGE]
+				300	400	200
+			[COORDINATE]
+				`RELATIVE`
+		[/IS IN AREA]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+		[IS DIRECTION RIGHT]
+		[IS NOT TARGET STATE]
+			9
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[stone]
+		100	100	10000	50
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		14	14
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		10	30	10	255	255	255	255
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]

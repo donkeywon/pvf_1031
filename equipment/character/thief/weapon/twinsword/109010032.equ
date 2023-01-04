@@ -1,0 +1,146 @@
+#PVF_File
+
+[name]
+	`死亡之审判者`
+
+[basic explain]
+	`攻击时， 有2%%的几率消耗2个无色小晶块， 对300px范围内的敌人施放黑色闪电。
+被黑色闪电命中的敌人， 将减少10点暗属性抗性。
+无法进行分解。`
+
+[detail explain]
+	`攻击时， 有2%%的几率消耗2个无色小晶块， 对300px范围内的敌人施放黑色闪电。 (冷却时间20秒)
+被黑色闪电命中的敌人将减少10点暗属性抗性， 效果持续5秒。
+无法进行分解。`
+
+[grade]
+	74
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[physical attack]
+	49
+
+[attack speed]
+	-80
+
+[need material]
+	3338	670
+
+[repair price]
+	99456
+
+[value]
+	94720
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	718	667
+
+[equipment magical attack]
+	563	523
+
+[separate attack]
+	420	284
+
+[physical critical hit]
+	5
+
+[icon]
+	`item/new_equipment/01_weapon/thief/twinswd/twinswd.img`	106
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	25	0
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[routing priority]
+	`thief`	1
+[/routing priority]
+
+[if]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[passive object]
+		48308	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[icon mark]
+	`Item/IconMark.img`	66

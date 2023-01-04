@@ -1,0 +1,79 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`get random()`	0.0	100.0
+	
+		[think]
+			[last result]
+				`<=`	30
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`1`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`1`
+			[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	60
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`buff`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`buff`
+		[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	80
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`buff1`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`buff1`
+		[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	99
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`buff2`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`buff2`
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

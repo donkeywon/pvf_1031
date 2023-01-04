@@ -1,0 +1,60 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/seal_rock_left_active2.ani`
+	[SUB ANI]
+		`../animation/seal_rock_light1_1.ani`	0	-1
+		`../animation/seal_rock_light1_2.ani`	0	-2
+		`../animation/seal_rock_light2_1.ani`	0	-3
+		`../animation/seal_rock_light2_2.ani`	0	-4
+		`../animation/seal_rock_light3_1.ani`	0	-5
+		`../animation/seal_rock_light3_2.ani`	0	-6
+	[/SUB ANI]
+	[SOUND]
+		`SKULLKNIGHT_SEAL`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DIRECT DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			5000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[NOW]
+[/BEHAVIOR]

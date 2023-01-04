@@ -1,0 +1,42 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Ball_count.ani`
+	[SUB ANI]
+		`../Animation/Ball_count_e.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`VM_MINE`	0
+		`ZX777_AMB`	1
+		`ZX777_AMB`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8942
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			58
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

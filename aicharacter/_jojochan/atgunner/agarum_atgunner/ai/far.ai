@@ -1,0 +1,45 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`get random()`	0.0	100.0
+	
+		[think]
+			[last result]
+				`<=`	50
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`meca`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`meca`
+			[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	99
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`bomb`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`bomb`
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

@@ -1,0 +1,40 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/arm3.ani`
+	[SUB ANI]
+		`../animation/effect/f_nentan/Cast.ani`	0	0
+		`../animation/effect/f_nentan/charge.ani`	0	0
+		`../animation/effect/f_nentan/f_nentan.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`嘿哈！`	2	30
+	[/SPEECH]
+	[SOUND]
+		`R_NENKWON_ATK_03`	2
+		`GSEEKERWOMAN_FIRE`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11122
+		[PARTICLE FILENAME]
+			`../Particle/throw_down.ptl`
+		[LEVEL]
+			38
+		[POS]
+			100	0	65
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

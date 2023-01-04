@@ -1,0 +1,159 @@
+#PVF_File
+
+[name]
+	`远古逆袭之火焰喷射器`
+
+[name2]
+	`Flame Injector of Historical Battle`
+
+[basic explain]
+	`攻击时， 有3%%的几率使自身增加30点力量， 效果持续30秒。
+攻击速度 +1%%`
+
+[flavor text]
+	`蕴含远古战争英雄之灵魂的稀贵武器。`
+
+[grade]
+	59
+
+[rarity]
+	2
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[physical attack]
+	67
+
+[attack speed]
+	10
+
+[cast speed]
+	10
+
+[move speed]
+	10
+
+[price]
+	94400
+
+[repair price]
+	79296
+
+[value]
+	75520
+
+[equipment physical attack]
+	555	501
+
+[equipment magical attack]
+	333	300
+
+[separate attack]
+	256	173
+
+[skill levelup]
+	`[gunner]`	21	1
+	`[gunner]`	45	1
+	`[at gunner]`	21	1
+	`[at gunner]`	45	1
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/hcannon.img`	36
+
+[field image]
+	`Item/field_weapon.img`	4
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	6	0
+
+[layer variation]
+	2790
+	`hcanc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`hcanb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	6	0
+
+[layer variation]
+	2790
+	`at_hcanc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_hcanb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2800
+
+[item group name]
+	`hcannon`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	22
+
+[if]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`physical attack`
+		`+`	30
+[/then]
+
+[possible kiri protect]

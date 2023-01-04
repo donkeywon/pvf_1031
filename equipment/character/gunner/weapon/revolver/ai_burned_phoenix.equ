@@ -1,0 +1,151 @@
+#PVF_File
+
+[name]
+	`浴火凤凰`
+
+[name2]
+	`Revolver of Burned Phoenix`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入束缚状态。
+[爆炎弹]的子弹数 +10`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入束缚状态8秒。 (若敌人高于Lv50， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+[爆炎弹]的子弹数 +10`
+
+[grade]
+	54
+
+[rarity]
+	2
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	35
+
+[price]
+	75600
+
+[repair price]
+	63504
+
+[value]
+	60480
+
+[equipment physical attack]
+	438	394
+
+[equipment magical attack]
+	368	331
+
+[separate attack]
+	233	156
+
+[physical critical hit]
+	2
+
+[icon]
+	`item/weapon/gunner/revolver.img`	24
+
+[field image]
+	`Item/field_weapon.img`	1
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	2	6
+
+[layer variation]
+	2790
+	`revc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`revb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	2	6
+
+[layer variation]
+	2790
+	`at_revc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_revb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2000
+
+[item group name]
+	`revolver`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		12000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		8000
+	[probability]
+		2
+	[active status]
+		`hold`	50
+[/then]
+
+[skill data up]
+	`[gunner]`	1	`[all]`	`[level]`	0	`+`	10
+	`[at gunner]`	1	`[all]`	`[level]`	0	`+`	10
+[/skill data up]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

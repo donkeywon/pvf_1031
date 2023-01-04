@@ -1,0 +1,48 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/FireExplosion2ndEx/attack_darkexplosion_ground_normal.ani`
+	[SUB ANI]
+		`../Animation/FireExplosion2ndEx/attack_darkexplosion_wave.ani`	1	1
+		`../Animation/FireExplosion2ndEx/attack_darkexplosion_line.ani`	1	2
+		`../Animation/FireExplosion2ndEx/attack_darkexplosion_ground_dodge.ani`	0	3
+		`../Animation/FireExplosion2ndEx/attack_darkexplosion_nomal.ani`	1	4
+		`../Animation/FireExplosion2ndEx/attack_darkexplosion_dodge.ani`	1	5
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54045
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-180	0	0
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		3	500
+[/BEHAVIOR]

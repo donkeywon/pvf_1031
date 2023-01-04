@@ -1,0 +1,30 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Bee_sting.ani`
+	[SOUND]
+		`CV_ATK`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8898
+		[PARTICLE FILENAME]
+			`../Particle/Throw_wp.ptl`
+		[LEVEL]
+			0
+		[POS]
+			53	0	30
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,42 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/hide.ani`
+	[SPEECH]
+		`隐遁术！`	1	50
+		`隐身术！`	1	50
+	[/SPEECH]
+	[SOUND]
+		`ORONA_CAST`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1000	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CAMOUFLAGE]
+		1	15000
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11028
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

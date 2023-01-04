@@ -1,0 +1,50 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/_SpearJail.ani`
+	[SUB ANI]
+		`../Animation/_SpearJail3.ani`	0	0
+		`../Animation/_SpearJail5.ani`	0	0
+		`../Animation/_SpearJail4.ani`	0	0
+		`../Animation/_SpearJail6.ani`	0	0
+		`../Animation/_SpearJail7.ani`	0	0
+		`../Animation/_SpearJail8.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`ICE_BLESS_HIT`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			56108
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND MESSAGE]
+	[ATTACK_COMMAND]
+		1
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

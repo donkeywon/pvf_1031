@@ -1,0 +1,102 @@
+#PVF_File
+
+[name]
+	`(旧) 荣耀者肩甲`
+
+[name2]
+	`Glorious Amice`
+
+[basic explain]
+	`被攻击时， 有10%%的几率使自身进入祝福状态。`
+
+[detail explain]
+	`被攻击时， 有10%%的几率使自身进入祝福状态20秒； 祝福状态下， 增加21点力量、 体力、 智力和精神。`
+
+[grade]
+	30
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	28
+
+[magical attack]
+	12
+
+[magical defense]
+	12
+
+[stuck resistance]
+	10
+
+[price]
+	15000
+
+[repair price]
+	12000
+
+[value]
+	12000
+
+[equipment physical defense]
+	264	248
+
+[icon]
+	`Item/common/shoulder.img`	6
+
+[field image]
+	`Item/field_equip.img`	2
+
+[equipment type]
+	`[shoulder]`	15
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	21
+
+[weight]
+	800
+
+[item group name]
+	`cl shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		1000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		10
+	[reduce probability to human armor at pvp module]
+		78
+	[active status]
+		`bless`	28	21	21	21	21
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

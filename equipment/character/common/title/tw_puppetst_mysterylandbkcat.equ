@@ -1,0 +1,138 @@
+#PVF_File
+
+[name]
+	`神秘王国的人偶剧 (黑猫)`
+
+[name2]
+	``
+
+[explain]
+	`攻击时以1%%机率30秒内物理防御力增加300。施展时以2%%机率30秒内魔法防御力增加300。被击时以5%%机率30秒内物理防御力增加300，魔法防御力增加300。`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	91
+
+[custom animation]
+	`TitleAnimation/puppet_stage.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	300
+
+[physical defense]
+	20
+
+[magical defense]
+	20
+
+[all elemental resistance]
+	7
+
+[all activestatus resistance]
+	7
+
+[stuck resistance]
+	20
+
+[inventory limit]
+	10000
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[hit recovery]
+	100
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`equipment physical defense`
+		`+`	300
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`equipment magical defense`
+		`+`	300
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`equipment physical defense`
+		`+`	300
+	[stat]
+		`equipment magical defense`
+		`+`	300
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

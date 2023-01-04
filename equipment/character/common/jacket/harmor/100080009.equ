@@ -1,0 +1,159 @@
+#PVF_File
+
+[name]
+	`星云迷踪上衣`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入失明状态。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入失明状态7秒； 失明状态下的敌人， 会减少90%%的视野和20%%的命中率。 (若敌人高于Lv85， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	39
+
+[physical defense]
+	35
+
+[magical attack]
+	28
+
+[price]
+	119000
+
+[repair price]
+	99960
+
+[value]
+	95200
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	4464	4176
+
+[skill levelup]
+	`[gunner]`	71	3
+	`[at gunner]`	71	3
+	`[fighter]`	99	2
+	`[at fighter]`	119	2
+	`[swordman]`	79	3
+	`[priest]`	125	3
+	`[demonic swordman]`	79	3
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/05_harmor/coat/harmor_coat.img`	10
+
+[field image]
+	`Item/field_equip.img`	10
+
+[equipment type]
+	`[coat]`	22
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	3600
+
+[item group name]
+	`ha coat`
+
+[cool time]
+	10000
+
+[set name]
+	`星云迷踪  套装`
+
+[set item]
+	100080009	100130009	100180009	100230009	100280009
+[/set item]
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[probability]
+		3
+	[active status]
+		`blind`	85	90	20
+[/then]
+
+[set ability]
+	[fullset basic explain]
+		`攻击时， 有5%%的几率使自身进入失明状态， 效果持续10秒； 失明状态下， 减少80%%的视野和20%%的命中率。 (若敌人高于Lv85， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+
+失明状态下攻击敌人时， 附加50%%的伤害。`
+	[if]
+		[cooltime]
+			10000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			10000
+		[reduce duration to human armor at pvp module]
+			50
+		[probability]
+			5
+		[active status]
+			`blind`	85	80	20
+	[/then]
+	[if]
+		[my active status]
+			`blind`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	50
+	[/then]
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

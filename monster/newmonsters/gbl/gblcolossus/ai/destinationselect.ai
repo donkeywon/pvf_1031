@@ -1,0 +1,67 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[target state]
+			4.0
+		[true]
+		[return]
+			2
+		[false]
+	
+		[think]
+			[target state]
+				0.0
+			[true]
+			[return]
+				10.0
+			[false]
+		
+			[think]
+				[hp]
+					`%>=`	45.0
+				[true]
+			
+				[think]
+					[void]
+						`is target in attack area()`	80.0	80.0	40.0	40.0
+					[true]
+					[return]
+						0
+					[false]
+				
+					[think]
+						[void]
+							`is target in attack area()`	150.0	150.0	45.0	45.0
+						[true]
+						[return]
+							1
+						[false]
+						[return]
+							-1
+					[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	200.0	200.0	150.0	150.0
+		[true]
+		[return]
+			10
+		[false]
+	
+		[think]
+			[void]
+				`is target in attack area()`	300.0	300.0	85.0	85.0
+			[true]
+			[return]
+				1
+			[false]
+			[return]
+				10
+		[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

@@ -1,0 +1,144 @@
+#PVF_File
+
+[floating height]
+	17
+
+[name]
+	`黑龙武士`
+
+[face image]
+	`Monster/MonsterFace.img`	682
+
+[attack sound]
+	``
+
+[damage sound]
+	`R_NAGOR_DMG`
+
+[die sound]
+	`DRAGONMAN_DIE`
+
+[ambient sound]
+	``
+
+[ability category]
+	`[HP MAX]`	`*`	150
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	120
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	120
+[/ability category]
+
+[dark resistance]
+	10	10
+
+[light resistance]
+	-10	-10
+
+[category]
+	`[dragon]`
+	`[melee combat]`
+	`[close-tough]`
+[/category]
+
+[level]
+	80	80
+
+[hp regen rate]
+	0.0	0.0
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1200	1200
+
+[weight]
+	150000	150000
+
+[set damage check]
+	5000
+
+[lie frame]
+	3	3	4	4	5
+
+[last action]
+	`Action/last.act`
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[attack action]
+	`Action/attack.act`
+[/attack action]
+
+[attack info]
+	``
+[/attack info]
+
+[cooltime]
+	10000
+[/cooltime]
+
+[vision]
+	1300
+
+[warlike]
+	100
+
+[think term]
+	500
+
+[destination change term]
+	1000
+
+[keep distance with target]
+	200
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+[/ai pattern]
+
+[intelligence]
+	100	50	5000

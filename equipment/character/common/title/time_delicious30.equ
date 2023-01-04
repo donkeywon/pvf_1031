@@ -1,0 +1,114 @@
+#PVF_File
+
+[name]
+	`美味时间 (30天)`
+
+[name2]
+	`Delicious Time`
+
+[explain]
+	`攻击时， 有1%%的几率使自身恢复5%%的HP最大值。
+被攻击时， 有2%%的几率使自身恢复5%%的HP最大值。`
+
+[flavor text]
+	`<活动>  与“肉汤碗面”一起玩DNF吧！`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	72
+
+[custom animation]
+	`TitleAnimation/time_delicious.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[usable period]
+	30
+
+[HP MAX]
+	100
+
+[MP MAX]
+	100
+
+[HP regen speed]
+	38
+
+[MP regen speed]
+	8
+
+[move speed]
+	20
+
+[cast speed]
+	10
+
+[hit recovery]
+	80
+
+[jump power]
+	30
+
+[if]
+	[cooltime]
+		8000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		5000
+	[probability]
+		1
+	[restore]
+		`HP`
+		`%`	5	5000
+[/then]
+
+[if]
+	[cooltime]
+		5000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		5000
+	[probability]
+		2
+	[restore]
+		`HP`
+		`%`	5	5000
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

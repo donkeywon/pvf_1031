@@ -1,0 +1,245 @@
+#PVF_File
+
+[name]
+	`魔刹之穿云弓`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击速度 +1.5%%
+
+施放[银弹]时， 可增加12点光属性强化值， 效果持续12秒。
+施放[冰冻弹]时， 可增加12冰属性强化值， 效果持续15秒。
+施放[爆炎弹]时， 可增加12点火属性强化值， 效果持续18秒。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[physical attack]
+	55
+
+[magical attack]
+	28
+
+[attack speed]
+	35
+
+[stuck]
+	-1
+
+[price]
+	134400
+
+[repair price]
+	112896
+
+[value]
+	107520
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	633	579
+
+[equipment magical attack]
+	703	643
+
+[separate attack]
+	481	327
+
+[physical critical hit]
+	3
+
+[magical critical hit]
+	5
+
+[skill levelup]
+	`[gunner]`	30	1
+	`[gunner]`	2	1
+	`[gunner]`	1	1
+	`[at gunner]`	30	1
+	`[at gunner]`	2	1
+	`[at gunner]`	1	1
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/bowgun/bowgun.img`	82
+
+[field image]
+	`Item/field_weapon.img`	5
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	23	0
+
+[layer variation]
+	2790
+	`bowgunc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`bowgunb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	23	0
+
+[layer variation]
+	2790
+	`at_bowgunc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_bowgunb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BOWGUN_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`bowgun`
+
+[cool time]
+	10000
+
+[if]
+	[use skill]
+		`gunner`	1
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		18000
+	[stat]
+		`fire attack`
+		`+`	12
+[/then]
+
+[if]
+	[use skill]
+		`gunner`	30
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		12000
+	[stat]
+		`light attack`
+		`+`	12
+[/then]
+
+[if]
+	[use skill]
+		`gunner`	2
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[stat]
+		`water attack`
+		`+`	12
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	1
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		18000
+	[stat]
+		`fire attack`
+		`+`	12
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	30
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		12000
+	[stat]
+		`light attack`
+		`+`	12
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	2
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[stat]
+		`water attack`
+		`+`	12
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,87 @@
+#PVF_File
+
+[name]
+	`SD 女魔法师宠物`
+
+[name2]
+	``
+
+[explain]
+	`暴击伤害 +10%%(决斗场内 +5%%)
+
+技能等级上升的选项仅适用于女魔法师角色。
+
+2012梦幻勇士2宠物`
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`item/creature/creature.img`	71
+
+[field image]
+	`item/fieldimage.img`	30
+
+[equipment type]
+	`[creature]`	0
+
+[sub type]
+	0
+
+[creature species]
+	165
+
+[cool time]
+	10000
+
+[skill levelup]
+	`[mage]`	19	1
+	`[mage]`	48	1
+	`[mage]`	97	1
+	`[mage]`	35	1
+	`[mage]`	36	1
+[/skill levelup]
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	10
+[/then]
+
+[pvp]
+	[if]
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase critical damage]
+			`%`	5
+	[/then]
+[/pvp]
+
+[move wav]
+	`CREATURE_EQUIP_TOUCH`
+
+[set item master]
+	-1
+
+[icon mark]
+	`Item/IconMark.img`	64

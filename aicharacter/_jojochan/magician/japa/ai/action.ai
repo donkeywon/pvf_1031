@@ -1,0 +1,48 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	1200.0	1200.0	1200.0	1200.0
+			`friend`
+			`summon`	-1
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`shade`
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`seli`
+					[true]
+				
+					[think]
+						[check key cooltime]
+							`sandor`
+						[true]
+						[return]
+							-1
+						[false]
+						[return str]
+							`sandor`
+					[/think]
+	[false]
+	[return str]
+		`seli`
+	[/think]
+	[false]
+	[return str]
+		`shade`
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+[/ai pattern]

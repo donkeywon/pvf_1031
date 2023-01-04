@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/HoldUpHold.ani`
+	[SUB ANI]
+		`../Animation/limitpoint/Charge3.ani`	0	0
+		`../Animation/limitpoint/Charge4.ani`	0	0
+		`../Animation/limitpoint/TractDodge.ani`	0	0
+		`../Animation/limitpoint/TractNormal.ani`	0	0
+		`../Animation/limitpoint/Kick.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[DEFAULT ATTACKINFO]
+	`../AttackInfo/limitpoint.atk`
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PULL APPENDAGE EX]
+		[SPEED]
+			6.1	2.7
+		[VALIDTIME]
+			1500
+		[USE TARGET]
+			0
+		[OFFSET POS]
+			60	0
+		[MIN DISTANCE]
+			10
+	[/PULL APPENDAGE EX]
+[/BEHAVIOR]

@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack1.ani`
+	[SUB ANI]
+		`../Animation/ac1/Attack1_ac1.ani`	0	1
+		`../Animation/face/Attack1_face.ani`	0	2
+		`../Animation/hair/Attack1_hair.ani`	0	2
+		`../Animation/skin/Attack1_skin.ani`	0	3
+		`../Animation/pants/Attack1_pants.ani`	0	4
+		`../Animation/shoes/Attack1_shoes.ani`	0	8
+		`../Animation/hat/Attack1_hat.ani`	0	10
+		`../Animation/weapon/Attack1_wp.ani`	0	15
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			61408
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND MESSAGE]
+	[ETC_COMMAND]
+		5	1	5000
+[/BEHAVIOR]

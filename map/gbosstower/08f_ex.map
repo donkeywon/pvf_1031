@@ -1,0 +1,203 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[dungeon]
+	3505
+[/dungeon]
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[type]
+	`[normal]`
+
+[tile]
+	`Tile/boss_basetile1.til`
+	`Tile/boss_basetile2.til`
+	`Tile/boss_basetile3.til`
+	`Tile/boss_basetile3.til`
+	`Tile/boss_basetile4.til`
+	`Tile/boss_basetile5.til`
+	`Tile/boss_basetile6.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/bg_far_back_8.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/bg_far_stream_8.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/bg_far_forward_8.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/bg_far_gradation.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	315	275	1207	243	794	192	862	305
+
+[sound]
+	`M_EVILTOWER_01`
+	`AMB_DARKSTAGE_01`
+[/sound]
+
+[animation]
+	`Animation/chain_Foward.ani`	`[normal]`	1333	297	0
+	`Animation/chain_Foward.ani`	`[normal]`	433	297	0
+	`Animation/chain_Back.ani`	`[normal]`	185	129	0
+	`Animation/chain_Back.ani`	`[normal]`	1121	129	0
+	`Animation/buildingBackground_ex_red6.ani`	`[middleback]`	0	-200	0
+	`Animation/buildingBackground_ex_red3.ani`	`[middleback]`	224	-200	0
+	`Animation/buildingBackground_ex_red1.ani`	`[middleback]`	448	-200	0
+	`Animation/buildingBackground_ex_red2.ani`	`[middleback]`	672	-200	0
+	`Animation/buildingBackground_ex_red3.ani`	`[middleback]`	896	-200	0
+	`Animation/buildingBackground_ex_red4.ani`	`[middleback]`	1120	-200	0
+	`Animation/buildingBackground_ex_red5.ani`	`[middleback]`	1344	-200	0
+	`Animation/buildingBackground_ex_red1.ani`	`[middleback]`	1568	-200	0
+	`Animation/ironWall5.ani`	`[middleback]`	222	30	0
+	`Animation/ironWall5.ani`	`[middleback]`	446	30	0
+	`Animation/ironWall5.ani`	`[middleback]`	894	30	0
+	`Animation/ironWall5.ani`	`[middleback]`	1118	30	0
+	`Animation/closefog.ani`	`[close]`	1428	41	0
+	`Animation/closefog.ani`	`[close]`	714	41	0
+	`Animation/closefog.ani`	`[close]`	0	41	0
+[/animation]
+
+[passive object]
+	12551	184	396	0
+	12562	1492	122	0
+	12552	1337	258	0
+	12557	787	72	0
+	12559	299	3	0
+	12559	522	3	0
+	12559	970	3	0
+	12559	1193	3	0
+	12559	1488	3	0
+	12564	74	3	0
+	12564	299	3	0
+	12564	522	3	0
+	12564	970	3	0
+	12564	1193	3	0
+	12564	1419	3	0
+	31019	184	396	0
+	31020	184	396	0
+	31021	184	396	0
+	31022	184	396	0
+	31023	184	396	0
+	31024	184	396	0
+	31025	1337	258	0
+	31026	1337	258	0
+	31027	1337	258	0
+	31028	1337	258	0
+	31029	1337	258	0
+	31030	1337	258	0
+	31025	1492	122	0
+	31027	1492	122	0
+	31028	1492	122	0
+	31029	1492	122	0
+	31030	1492	122	0
+	31042	787	72	0
+	31043	787	72	0
+	31044	787	72	0
+[/passive object]
+
+[map name]
+	`PVP 无名`
+
+[NPC]
+	1010	`[left]`	743	175	0
+[/NPC]
+
+[monster]
+	64587	0	71	460	212	0	1	1	`[fixed]`	`[normal]`
+	64587	0	71	548	276	0	1	1	`[fixed]`	`[normal]`
+	64587	0	71	609	210	0	1	1	`[fixed]`	`[normal]`
+	64587	0	71	694	275	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[absolute start path]
+	`[right]`
+[/absolute start path]
+
+[background effect]
+	`[swing]`
+	`[closeback]`	10	10	2800	1	600
+	``
+	`[swing]`
+	`[bottom]`	10	10	2800	1	600
+	``
+	`[swing]`
+	`[normal]`	10	10	2800	1	600
+	`R_BOSSTOWER_SHAKE`
+	`[dust]`
+	`[normal]`	300	500	5
+[/background effect]
+
+[block effect]
+	`[swing]`
+	`[object]`	12550
+	`[swing]`
+	`[object]`	12553
+[/block effect]
+
+[block path]
+	`[close]`
+	`[close]`
+	`[close]`
+	`[close]`
+
+[tile option]
+	`[upper]`
+[/tile option]

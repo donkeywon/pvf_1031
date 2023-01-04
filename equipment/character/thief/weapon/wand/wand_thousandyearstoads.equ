@@ -1,0 +1,145 @@
+#PVF_File
+
+[name]
+	`千年蟾蜍`
+
+[name2]
+	`Thousand Years Toad's Hind Leg`
+
+[basic explain]
+	`攻击时， 有1%%的几率使自身恢复10%%的MP。`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[magical attack]
+	42
+
+[attack speed]
+	-100
+
+[MP regen speed]
+	12
+
+[need material]
+	3285	1200
+
+[repair price]
+	83328
+
+[value]
+	79360
+
+[equipment physical attack]
+	462	423
+
+[equipment magical attack]
+	658	603
+
+[separate attack]
+	360	243
+
+[magical critical hit]
+	5
+
+[skill levelup]
+	`[thief]`	50	1
+	`[thief]`	22	1
+	`[thief]`	40	1
+[/skill levelup]
+
+[dark attack]
+	10
+
+[icon]
+	`Item/weapon/thief/wand.img`	76
+
+[field image]
+	`Item/field_weapon.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	3	3
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2300
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		40000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		1
+	[restore]
+		`mp`
+		`%`	10	0
+[/then]
+
+[routing priority]
+	`thief`	2
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

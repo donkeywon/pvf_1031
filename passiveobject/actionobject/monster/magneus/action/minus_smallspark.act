@@ -1,0 +1,64 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/minus_smallspark.ani`
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[PASSIVE OBJECT]
+		[/IS OBJECT TYPE]
+		[IS INDEX]
+			8223	8242
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			150
+		[CHECKED NO]
+		[=>]
+			1
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[PASSIVE OBJECT]
+		[/IS OBJECT TYPE]
+		[IS INDEX]
+			8243
+		[/IS INDEX]
+		[DISTANCE]
+		[>]
+			150
+		[CHECKED NO]
+		[=>]
+			1
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]

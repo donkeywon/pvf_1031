@@ -1,0 +1,107 @@
+#PVF_File
+
+[name]
+	`残忍之弑蓝宝石项链 - 圣骑士`
+
+[name2]
+	`找不到代码name2_100300053`
+
+[basic explain]
+	`[圣愈之风]冷却时间 -5%%`
+
+[grade]
+	64
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[magical attack]
+	26
+
+[magical defense]
+	65
+
+[HP MAX]
+	100
+
+[need material]
+	3336	80
+
+[repair price]
+	51200
+
+[value]
+	51200
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	5680	5280
+
+[icon]
+	`Item/IconAcc.img`	50
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[priest]`	26	`[dungeon type]`	`[cooltime]`	0	`%`	-5
+[/skill data up]
+
+[set name]
+	`时之沙碎片套装`
+
+[set item]
+	100300053	100310052	100320055
+[/set item]
+
+[set ability]
+	[fullset basic explain]
+		`攻击异界地下城敌人时， 附加7%%的伤害。
+攻击远古地下城敌人时， 附加7%%的伤害。`
+	[if]
+		[attack success]
+			1
+		[dungeon check]
+			62	63	64	65	66	67	1500	1501	1502	1504	1506	1507
+		[/dungeon check]
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	7
+	[/then]
+	[anti evil]
+		10
+[/set ability]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/move.ani`
+	[SUB ANI]
+		`../animation/weapon/move.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		5000	
+		[physical defense]
+		[%]
+			900.0
+		[magical defense]
+		[%]
+			900.0
+		[equipment physical defense]
+		[%]
+			900.0
+		[equipment magical defense]
+		[%]
+			900.0
+	[/APPENDAGE]
+[/BEHAVIOR]

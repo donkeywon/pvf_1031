@@ -1,0 +1,68 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack1.ani`
+	[SUB ANI]
+		`../Animation/back/Attack1_back01.ani`	0	-1
+		`../Animation/weapon/Attack1_wp.ani`	0	0
+		`../Animation/back/Attack1_back.ani`	0	1
+		`../Animation/pants/Attack1_pants.ani`	0	1
+		`../Animation/shirts/Attack1_shirts.ani`	0	1
+		`../Animation/shoes/Attack1_shoes.ani`	0	1
+		`../Animation/hat/Attack1_hat.ani`	0	2
+		`../Animation/Attack1_effect.ani`	0	26
+	[/SUB ANI]
+	[SPEECH]
+		`吃我一箭！`	0	30
+		`你真残忍！`	0	40
+	[/SPEECH]
+	[SOUND]
+		`SILVER_ATK3`	2
+	[/SOUND]
+[/MOTION]
+
+[DEFAULT ATTACKINFO]
+	`../AttackInfo/Dashattack.atk`
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8209
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	10	5
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

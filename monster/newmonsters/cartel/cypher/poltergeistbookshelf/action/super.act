@@ -1,0 +1,337 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/super.ani`
+	[SUB ANI]
+		`../Animation/super_aura.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`BOOKCASE_SKILL_03`	0
+		`TOMBTONE_STUCK`	2
+		`TOMBTONE_STUCK`	4
+		`TOMBTONE_STUCK`	6
+		`TOMBTONE_STUCK`	8
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8700
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8416
+		[PARTICLE FILENAME]
+			`../Particle/x_move_up3.ptl`
+		[LEVEL]
+			10
+		[POS]
+			10	0	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8417
+		[PARTICLE FILENAME]
+			`../Particle/su_xmove.ptl`
+		[LEVEL]
+			0
+		[POS]
+			10	0	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8417
+		[PARTICLE FILENAME]
+			`../Particle/x_move_dwon3.ptl`
+		[LEVEL]
+			0
+		[POS]
+			10	0	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8417
+		[PARTICLE FILENAME]
+			`../Particle/xmove_back.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-10	0	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8700
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8417
+		[PARTICLE FILENAME]
+			`../Particle/su_move_up2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			10	0	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8417
+		[PARTICLE FILENAME]
+			`../Particle/su_move_dwon2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			10	0	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8416
+		[PARTICLE FILENAME]
+			`../Particle/x_move_up2_back.ptl`
+		[LEVEL]
+			10
+		[POS]
+			-10	0	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8417
+		[PARTICLE FILENAME]
+			`../Particle/x_move_dwon2_back.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-10	0	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8700
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8416
+		[PARTICLE FILENAME]
+			`../Particle/su_move_dwon2.ptl`
+		[LEVEL]
+			10
+		[POS]
+			10	0	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8417
+		[PARTICLE FILENAME]
+			`../Particle/su_xmove.ptl`
+		[LEVEL]
+			0
+		[POS]
+			10	0	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8416
+		[PARTICLE FILENAME]
+			`../Particle/su_move_up2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			10	0	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8417
+		[PARTICLE FILENAME]
+			`../Particle/x_move_dwon2_back.ptl`
+		[LEVEL]
+			10
+		[POS]
+			-10	0	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8417
+		[PARTICLE FILENAME]
+			`../Particle/xmove_back.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-10	0	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8416
+		[PARTICLE FILENAME]
+			`../Particle/x_move_up2_back.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-10	0	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8700
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8418
+		[PARTICLE FILENAME]
+			`../Particle/x_move_dwon.ptl`
+		[LEVEL]
+			10
+		[POS]
+			10	20	70
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8419
+		[PARTICLE FILENAME]
+			`../Particle/xmove_u.ptl`
+		[LEVEL]
+			10
+		[POS]
+			10	15	50
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8418
+		[PARTICLE FILENAME]
+			`../Particle/x_move_up.ptl`
+		[LEVEL]
+			10
+		[POS]
+			-10	0	120
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8419
+		[PARTICLE FILENAME]
+			`../Particle/xmove_u.ptl`
+		[LEVEL]
+			10
+		[POS]
+			-10	-15	20
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8418
+		[PARTICLE FILENAME]
+			`../Particle/x_move_dwon2_back.ptl`
+		[LEVEL]
+			10
+		[POS]
+			-10	-20	60
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8419
+		[PARTICLE FILENAME]
+			`../Particle/xmove.ptl`
+		[LEVEL]
+			10
+		[POS]
+			-10	15	100
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	300
+[/BEHAVIOR]

@@ -1,0 +1,160 @@
+#PVF_File
+
+[name]
+	`魅月之天语`
+
+[basic explain]
+	`施放[荣誉祝福]时， 可以使队员增加10点火属性强化值， 效果持续60秒。 (效果最多可重叠2次)
+施放[天使祝福]时， 可以使队员增加15点火属性强抗性值， 效果持续10秒。 (效果最多可重叠2次)
+无法进行分解。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical defense]
+	69
+
+[magical attack]
+	55
+
+[magical defense]
+	69
+
+[cast speed]
+	20
+
+[need material]
+	3339	1000
+
+[repair price]
+	112896
+
+[value]
+	107520
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	804	754
+
+[equipment magical attack]
+	764	716
+
+[equipment physical defense]
+	840	840
+
+[equipment magical defense]
+	840	840
+
+[separate attack]
+	481	327
+
+[skill levelup]
+	`[priest]`	45	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/priest/cross/cross.img`	86
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	26	0
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[routing priority]
+	`priest`	1
+[/routing priority]
+
+[if]
+	[use skill]
+		`priest`	45
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[duration]
+		60000
+	[appendage]
+		49
+[/then]
+
+[if]
+	[use skill]
+		`priest`	53
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[duration]
+		10000
+	[appendage]
+		50
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

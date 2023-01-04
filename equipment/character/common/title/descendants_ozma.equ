@@ -1,0 +1,103 @@
+#PVF_File
+
+[name]
+	`奥兹玛的后裔`
+
+[name2]
+	`Descendants of Ozma`
+
+[explain]
+	`攻击时以1%%的机率，施展时以2%%的机率施展Lv10普莱曼。`
+
+[flavor text]
+	`「就算在梦中也不想把你这样的你英雄当作敌人对待」-给奥兹玛、卡赞`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	55
+
+[icon]
+	`Item/Title/title.img`	179
+
+[equipment type]
+	`[title name]`	1
+
+[custom animation]
+	`TitleAnimation/descendants_ozma.ani`
+[/custom animation]
+
+[user power war point]
+	3000
+
+[MP MAX]
+	200
+
+[magical attack]
+	30
+
+[magical defense]
+	20
+
+[move speed]
+	30
+
+[attack speed]
+	20
+
+[cast speed]
+	40
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		1
+	[passive object]
+		20013	0	0	0	10	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		2
+	[passive object]
+		20013	0	0	0	10	0	``
+	[/passive object]
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

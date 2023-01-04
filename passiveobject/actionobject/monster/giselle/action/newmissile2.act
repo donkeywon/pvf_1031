@@ -1,0 +1,68 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Bullet3.ani`
+	[SUB ANI]
+		`../Animation/Broken.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`THUNDERC_ELEC_HIT`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../../particle/DropBombFireDestroy.ptl`	0	0	0
+	[PARTICLE]
+		`../../particle/DropBombFireDestroy2.ptl`	0	0	0
+	[PARTICLE]
+		`../../particle/DropBombFireDestroy3.ptl`	0	0	0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Y AXIS]
+		[RANDOM]
+			-50	50
+		[X AXIS]
+		[RANDOM]
+			-100	100
+		[Z AXIS]
+		[RANDOM]
+			-20	-40
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		14	14
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8686
+		[PARTICLE FILENAME]
+			`../Particle/missile.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	-10
+	[/CREATE PASSIVEOBJECT]
+	[DESTROY]
+[/BEHAVIOR]

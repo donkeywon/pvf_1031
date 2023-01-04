@@ -1,0 +1,189 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/_Round.ani`
+	[SUB ANI]
+		`../Animation/Spark/Spark2.ani`	0	-10
+		`../Animation/Spark/Spark3.ani`	0	-10
+		`../Animation/Spark/Spark4.ani`	0	-10
+		`../Animation/Spark/Spark6.ani`	0	-10
+		`../Animation/_Round2.ani`	0	0
+		`../Animation/_Round3.ani`	0	0
+		`../Animation/_Round4.ani`	0	0
+		`../Animation/Spark/Spark1.ani`	0	0
+		`../Animation/Spark/Spark5.ani`	0	0
+		`../Animation/Spark/Spark7.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`G3_MOVE`	0
+		`G3_MOVE`	5
+		`G3_MOVE`	10
+		`G3_MOVE`	15
+		`G3_MOVE`	20
+		`G3_MOVE`	25
+		`G3_MOVE`	30
+		`G3_MOVE`	35
+		`G3_MOVE`	40
+		`G3_MOVE`	45
+		`G3_MOVE`	50
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[TARGET]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[WHICH]
+	[TARGET]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		15	15
+	[WHICH]
+	[TARGET]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		20	20
+	[WHICH]
+	[TARGET]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		25	25
+	[WHICH]
+	[TARGET]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		30	30
+	[WHICH]
+	[TARGET]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		35	35
+	[WHICH]
+	[TARGET]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		40	40
+	[WHICH]
+	[TARGET]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8604
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			60
+		[POS]
+			0	0	50
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		45	45
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			0
+		[X END]
+			0
+		[Y START]
+			1
+		[Z START]
+			100
+		[USE TARGET POS]
+		[MOVE UNIFORM]
+		[MOVE REDUCE]
+		[MOVE ME]
+	[/SET POS FORCE]
+[/BEHAVIOR]

@@ -1,0 +1,135 @@
+#PVF_File
+
+[name]
+	`传承 : 守夜女神的兽骨胸甲`
+
+[name2]
+	`Legacy : Coat of Latri`
+
+[grade]
+	27
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	25
+
+[physical attack]
+	19
+
+[magical attack]
+	9
+
+[price]
+	24300
+
+[repair price]
+	19440
+
+[value]
+	19440
+
+[equipment physical defense]
+	1080	1008
+
+[skill levelup]
+	`[swordman]`	7	1
+	`[fighter]`	1	1
+	`[fighter]`	51	1
+	`[at fighter]`	1	1
+	`[at fighter]`	51	1
+	`[priest]`	56	1
+	`[thief]`	21	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/IconArmor.img`	270
+
+[field image]
+	`Item/field_equip.img`	5
+
+[equipment type]
+	`[coat]`	19
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3100
+
+[item group name]
+	`la coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 守夜女神的兽骨轻甲  套装`
+
+[set item]
+	10881	12881	18877
+[/set item]
+
+[item overpower part]
+
+[set ability]
+	[HP MAX]
+		250
+	[physical attack]
+		38
+	[physical defense]
+		38
+	[light resistance]
+		5
+	[skill levelup]
+		`[swordman]`	38	1
+		`[fighter]`	4	1
+		`[fighter]`	10	1
+		`[at fighter]`	4	1
+		`[at fighter]`	10	1
+		`[priest]`	31	1
+		`[thief]`	35	1
+	[/skill levelup]
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福可以使自身增加5%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	50
+	[/then]
+[/set ability]
+
+[possible kiri protect]

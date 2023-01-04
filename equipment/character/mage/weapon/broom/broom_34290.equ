@@ -1,0 +1,203 @@
+#PVF_File
+
+[name]
+	`诺丝克尔的皇羽扫把`
+
+[basic explain]
+	`跳跃攻击时， 有25%%的几率出现血蝴蝶之影。
+施放[风暴]时， 有10%%的几率出现血蝴蝶之影。
+无法进行分解。`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	65
+
+[magical attack]
+	46
+
+[attack speed]
+	60
+
+[move speed]
+	30
+
+[price]
+	110400
+
+[repair price]
+	92736
+
+[value]
+	88320
+
+[equipment physical attack]
+	654	604
+
+[equipment magical attack]
+	719	664
+
+[separate attack]
+	389	264
+
+[icon]
+	`Item/weapon/mage/broom.img`	64
+
+[field image]
+	`Item/field_weapon.img`	10
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	24	0
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	24	0
+
+[layer variation]
+	2150
+	`at_brooma`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_broomd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	24	0
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BROOM_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`broom`
+
+[cool time]
+	10000
+
+[required skill]
+	91
+
+[if]
+	[cooltime]
+		500
+	[set my state]
+		1
+	[my state]
+		`jump attack`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		25
+	[reduce probability to human armor at pvp module]
+		90
+	[passive object]
+		48166	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[cooltime]
+		2000
+	[event use skill]
+		`creator mage`	254
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[reduce probability to human armor at pvp module]
+		80
+	[passive object]
+		48218	0	0	100	0	0	``
+	[/passive object]
+	[probability]
+		10
+[/then]
+
+[routing priority]
+	`mage`	4
+	`creator mage`	0
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

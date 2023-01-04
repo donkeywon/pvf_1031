@@ -1,0 +1,63 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Summon.ani`
+	[SOUND]
+		`BANTU_DIE_01`	0
+	[/SOUND]
+	[SUB ANI]
+		`../Animation/SpecialBalloon.ani`	0	-1
+		`../Animation/AvalancheBalloon.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`啊~~~~天啊！！！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		7	300
+	[TRIGGER]
+	[ATTACK]
+		8	3
+	[RESET]
+	[COLOR CHANGE EFFECT]
+		[CHANGE SIZE START]
+			100
+		[CHANGE SIZE END]
+			120
+		[CHANGE TIME]
+			1500
+		[LIFE TIME]
+			0
+	[/COLOR CHANGE EFFECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		0	
+		[equipment physical attack]
+		[%]
+			200.0
+	[/APPENDAGE]
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]

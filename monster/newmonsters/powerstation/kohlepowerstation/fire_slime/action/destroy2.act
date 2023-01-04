@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Destroy.ani`
+	[SUB ANI]
+		`../Animation/Destroy_High.ani`	0	-2
+		`../Animation/Destroy_Bone.ani`	0	-1
+	[/SUB ANI]
+	[SPEECH]
+		`嗡~！呜嗡~！`	30	0
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11246
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			1
+		[POS]
+			0	0	30
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+	[DESTROY]
+[/BEHAVIOR]

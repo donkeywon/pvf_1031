@@ -1,0 +1,48 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	4000.0	4000.0	800.0	800.0
+			`all`
+			`passive object`	23052
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+			[return]
+				-1
+			[false]
+		
+			[think]
+				[hit]
+					1
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`reset`
+					[true]
+				
+					[think]
+						[void]
+							`is the skill in cooltime()`	3
+						[true]
+						[return]
+							-1
+						[false]
+						[return]
+							2
+					[/think]
+	[false]
+	[return]
+		1
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

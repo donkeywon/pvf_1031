@@ -1,0 +1,99 @@
+#PVF_File
+
+[name]
+	`守护者之魂`
+
+[name2]
+	`Soul of One to Guard`
+
+[basic explain]
+	`HP为10%%以上时， 被攻击后有100%%的几率向敌人返还1000%%的伤害。 (在决斗场、 街头争霸和战场中无效)`
+
+[grade]
+	61
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[magical attack]
+	26
+
+[magical defense]
+	64
+
+[price]
+	73200
+
+[repair price]
+	58560
+
+[value]
+	58560
+
+[equipment magical defense]
+	5440	5040
+
+[icon]
+	`Item/common/necklace.img`	20
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[dead tower]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		50
+	[hit]
+		1
+	[stat change]
+		`hp`
+		`>`
+		`%`	10
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		100
+	[thorn]
+		1000
+[/then]
+
+[pvp]
+[/pvp]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,309 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/flybr.ani`
+	[SUB ANI]
+		`../animation/flybr_e.ani`	0	20
+		`../animation/flybr_e1.ani`	0	30
+	[/SUB ANI]
+	[SOUND]
+		`BAKAL_FLAP`	0
+		`BAKAL_FIREATK`	3
+		`BAKAL_FLAP`	5
+		`BAKAL_FLAP`	11
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET USE HOMING]
+		0
+	[SET PARTY TARGET]
+		0	1
+	[SET DIRECTION]
+	[TO TARGET]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10345
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			100	0	310
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+	[SET SPEED]
+		[X AXIS]
+			-130
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10319
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			200	0	0
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		15	15
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10343
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			270	20	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		16	16
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10343
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			200	20	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		17	17
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10343
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			130	20	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time74`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		5
+	[OFF]
+	[TRIGGER]
+		6
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time74`	
+		[+]
+			3500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		6
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		5
+	[ON]
+	[TRIGGER]
+		6
+	[RESET]
+	[TRIGGER]
+		0
+	[RESET]
+	[TRIGGER]
+		1
+	[RESET]
+	[TRIGGER]
+		2
+	[RESET]
+	[TRIGGER]
+		3
+	[RESET]
+	[TRIGGER]
+		4
+	[RESET]
+	[TRIGGER]
+		6
+	[OFF]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`count21`	
+		[=]
+			0
+	[/DIM]
+	[TRIGGER]
+		7
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`count21`	
+		[=]
+			`count21`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`count21`	
+		[=>]
+			3
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		9
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[DO BEHAVIOR]
+	[ME]
+		10
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		9
+	[OFF]
+	[TRIGGER]
+		10
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61238
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		11
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		-1500
+	[POINT]
+	[TRIGGER]
+		10
+	[OFF]
+	[TRIGGER]
+		10
+	[RESET]
+	[TRIGGER]
+		9
+	[ON]
+[/BEHAVIOR]

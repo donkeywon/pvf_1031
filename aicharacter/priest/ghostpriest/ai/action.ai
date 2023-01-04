@@ -1,0 +1,39 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[my state]
+			4
+		[true]
+		[return]
+			-1
+		[false]
+	
+		[think]
+			[void]
+				`number of in attack area()`	7000	7000	7000	7000
+				`all`
+				`passive object`	9054
+		
+			[think]
+				[last result]
+					`>=`	1
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`saintball`
+					[true]
+					[import ai]
+						`ai_pattern_defalt.ai`
+					[false]
+					[return str]
+						`saintball`
+				[/think]
+	[false]
+	[import ai]
+		`ai_pattern_defalt.ai`
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/tan.ani`
+	[SUB ANI]
+		`../animation/tan_ef.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`R_ALBERTM_SKILL_01`	2
+		`MNENTAN`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10385
+		[PARTICLE FILENAME]
+			`../Particle/tan.ptl`
+		[LEVEL]
+			0
+		[POS]
+			120	0	60
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

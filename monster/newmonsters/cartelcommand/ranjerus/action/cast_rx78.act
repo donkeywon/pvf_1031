@@ -1,0 +1,49 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/cast.ani`
+	[SPEECH POS]
+		`歼灭敌人！`	8	30	0	0
+		`真是些棘手的家伙！`	8	30	0	0
+	[/SPEECH POS]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8581
+		[PARTICLE FILENAME]
+			`../Particle/Summon.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			300	900
+		[RANDOM]
+			160	340	300
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8581
+		[PARTICLE FILENAME]
+			`../Particle/Summon.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			300	900
+		[RANDOM]
+			160	340	300
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

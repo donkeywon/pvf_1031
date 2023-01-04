@@ -1,0 +1,37 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Stay_long.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		10000	
+		[equipment physical attack]
+		[%]
+			30.0
+		[equipment physical defense]
+		[%]
+			30.0
+		[attack speed]
+		[%]
+			30.0
+		[move speed]
+		[%]
+			30.0
+		[equipment magical attack]
+		[%]
+			100.0
+	[/APPENDAGE]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]

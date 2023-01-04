@@ -1,0 +1,113 @@
+#PVF_File
+
+[name]
+	`(旧) 闪灵兜甲`
+
+[name2]
+	`Shining Lorica Coat`
+
+[grade]
+	31
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	29
+
+[physical attack]
+	14
+
+[physical defense]
+	13
+
+[magical attack]
+	10
+
+[price]
+	31000
+
+[repair price]
+	24800
+
+[value]
+	24800
+
+[equipment physical defense]
+	1632	1536
+
+[blind resistance]
+	10
+
+[icon]
+	`Item/common/coat.img`	24
+
+[field image]
+	`Item/field_equip.img`	10
+
+[equipment type]
+	`[coat]`	20
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	3600
+
+[item group name]
+	`ha coat`
+
+[cool time]
+	10000
+
+[set name]
+	`闪灵重甲  套装`
+
+[set item]
+	11230	13230	15228	17227	19227
+[/set item]
+
+[set ability]
+	[light resistance]
+		10
+	[if]
+		[cooltime]
+			1000
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			15000
+		[probability]
+			3
+		[reduce probability to human armor at pvp module]
+			73
+		[active status]
+			`lightning`	30	130
+	[/then]
+	[fullset basic explain]
+		`被攻击时， 有3%%的几率使敌人进入感电状态。`
+	[fullset detail explain]
+		`被攻击时， 有3%%的几率使敌人进入感电状态15秒； 若攻击感电状态的敌人， 则每次攻击都会附加130点伤害。 (若敌人高于Lv30， 则减少进入异常状态的几率； 反之， 则增加几率)`
+[/set ability]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

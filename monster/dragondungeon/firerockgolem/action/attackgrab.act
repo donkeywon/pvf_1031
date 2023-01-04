@@ -1,0 +1,69 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AttackGrab/Hold_02_Body.ani`
+	[SUB ANI]
+		`../Animation/AttackGrab/Hold_03_BodyFire_02.ani`	0	-2
+		`../Animation/AttackGrab/Hold_03_BodyFire_01.ani`	0	-1
+		`../Animation/AttackGrab/Hold_02_body_dodge.ani`	0	1
+		`../Animation/AttackGrab/Hold_00_headt.ani`	0	2
+		`../Animation/AttackGrab/Hold_01_headt_dodge.ani`	0	3
+		`../Animation/AttackGrab/Hold_00_Fire_dodge.ani`	0	4
+		`../Animation/AttackGrab/Hold_00_headb.ani`	0	5
+		`../Animation/AttackGrab/Hold_00_headb_dodge.ani`	0	6
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[SUMMON OBJECT]
+	[CHECKUP]
+		[IS INDEX]
+			54071	54072
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		6
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[NOW]
+[/BEHAVIOR]

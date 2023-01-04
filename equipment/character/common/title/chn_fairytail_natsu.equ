@@ -1,0 +1,115 @@
+#PVF_File
+
+[name]
+	`灭龙魔导士`
+
+[name2]
+	``
+
+[explain]
+	`攻击或施放技能时， 有3%%的几率使自身增加50点的力量和智力。`
+
+[flavor text]
+	`<妖精的尾巴宠物礼包>`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[physical attack]
+	35
+
+[physical defense]
+	35
+
+[magical attack]
+	30
+
+[magical defense]
+	30
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[magical critical hit]
+	3
+
+[physical critical hit]
+	3
+
+[fire attack]
+	10
+
+[icon mark]
+	`Item/IconMark.img`	64
+
+[icon]
+	`Item/Title/title_cn.img`	205
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`physical attack`
+		`+`	50
+	[stat]
+		`magical attack`
+		`+`	50
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`physical attack`
+		`+`	50
+	[stat]
+		`magical attack`
+		`+`	50
+[/then]

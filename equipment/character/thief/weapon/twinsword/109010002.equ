@@ -1,0 +1,193 @@
+#PVF_File
+
+[name]
+	`金色闪电[租借活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击速度 +2%%
+攻击时以 3%% 的机率让敌人进入感电状态
+攻击时以 3%% 的机率施展落雷
+感电状态的敌人攻击时10%%附加伤害
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。
+只能在异界地下城使用。`
+
+[detail explain]
+	`攻击速度 +2%%
+攻击时以3%%的机率5秒内敌人进入感电状态，每次攻击时以 400的攻击力给予附加伤害。 (高于Lv69的对象得到的机率减少，低于Lv69的对象则会增加。)
+攻击时以 3%% 的机率施展落雷
+感电状态的敌人攻击时10%% 附加伤害(决斗场内5%% 附加伤害)
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。
+只能在异界地下城使用。`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	65
+
+[physical attack]
+	48
+
+[attack speed]
+	-60
+
+[move speed]
+	10
+
+[price]
+	124200
+
+[repair price]
+	104328
+
+[value]
+	99360
+
+[equipment physical attack]
+	667	616
+
+[equipment magical attack]
+	523	483
+
+[separate attack]
+	389	264
+
+[physical critical hit]
+	5
+
+[icon]
+	`Item/weapon/thief/twinswd.img`	77
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[thief]`
+
+[variation]
+	12	4
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		5000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		80
+	[duration]
+		5000
+	[reduce duration to human armor at pvp module]
+		50
+	[active status]
+		`lightning`	69	400
+[/then]
+
+[if]
+	[target active status]
+		`lightning`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		3
+	[passive object]
+		48108	0	0	0	20	0	``
+	[/passive object]
+[/then]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

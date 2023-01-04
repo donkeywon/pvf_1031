@@ -1,0 +1,134 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check skill on]
+			37
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	100.0	10.0	50.0	50.0
+			[true]
+		
+			[think]
+				[void]
+					`number of in attack area()`	300.0	20.0	50.0	50.0
+					`friend`
+					`summon`	-1
+			
+				[think]
+					[last result]
+						`>=`	3.0
+					[true]
+				
+					[think]
+						[void]
+							`is the skill in cooltime()`	49
+						[true]
+						[return]
+							-1
+						[false]
+						[return]
+							3
+					[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	10000.0	10000.0	1000.0	1000.0
+			`friend`
+			`summon`	-1
+	
+		[think]
+			[last result]
+				`>=`	7.0
+			[true]
+		
+			[think]
+				[check use skill]
+					79
+				[true]
+				[return str]
+					`fire`
+				[false]
+			
+				[think]
+					[check use skill]
+						78
+					[true]
+					[return str]
+						`ice`
+					[false]
+				
+					[think]
+						[check use skill]
+							76
+						[true]
+						[return str]
+							`dark`
+						[false]
+					
+						[think]
+							[check use skill]
+								77
+							[true]
+							[return str]
+								`light`
+							[false]
+							[return]
+								-1
+						[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[check use skill]
+			21
+		[true]
+		[return]
+			4
+		[false]
+	
+		[think]
+			[check use skill]
+				22
+			[true]
+			[return]
+				5
+			[false]
+		
+			[think]
+				[check use skill]
+					23
+				[true]
+				[return]
+					6
+				[false]
+			
+				[think]
+					[check use skill]
+						24
+					[true]
+					[return]
+						7
+					[false]
+					[return]
+						-1
+				[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return]
+		2
+	[/think]
+[/ai pattern]

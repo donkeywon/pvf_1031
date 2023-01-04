@@ -1,0 +1,145 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Stay.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8364
+		[PARTICLE FILENAME]
+			`../Particle/Fire1.ptl`
+		[LEVEL]
+			40
+		[POS]
+			1500	160	50
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8364
+		[PARTICLE FILENAME]
+			`../Particle/Fire1.ptl`
+		[LEVEL]
+			40
+		[POS]
+			1500	225	50
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8364
+		[PARTICLE FILENAME]
+			`../Particle/Fire1.ptl`
+		[LEVEL]
+			40
+		[POS]
+			1500	290	50
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8364
+		[PARTICLE FILENAME]
+			`../Particle/Fire1.ptl`
+		[LEVEL]
+			40
+		[POS]
+			1500	355	50
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[ON]
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			1000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8348
+		[PARTICLE FILENAME]
+			`../Particle/Fire1.ptl`
+		[LEVEL]
+			40
+		[POS]
+			1500	200	50
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8348
+		[PARTICLE FILENAME]
+			`../Particle/Fire1.ptl`
+		[LEVEL]
+			40
+		[POS]
+			1500	225	50
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8348
+		[PARTICLE FILENAME]
+			`../Particle/Fire1.ptl`
+		[LEVEL]
+			40
+		[POS]
+			1500	250	50
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8348
+		[PARTICLE FILENAME]
+			`../Particle/Fire1.ptl`
+		[LEVEL]
+			40
+		[POS]
+			1500	275	50
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		0
+	[ON]
+[/BEHAVIOR]

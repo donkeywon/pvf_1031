@@ -1,0 +1,37 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/ShootLadder.ani`
+	[SUB ANI]
+		`../animation/Whisker/ShootLadder.ani`	0	0
+		`../animation/Top/ShootLadder.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`尝尝梯子吧！`	0	100
+	[/SPEECH]
+	[SOUND]
+		`THROWER_CATCH_GARBAGE`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8002
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			40
+		[POS]
+			63	0	89
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

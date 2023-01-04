@@ -1,0 +1,130 @@
+#PVF_File
+
+[name]
+	`天选之剑 - 格朗`
+
+[name2]
+	`Great Sword of Chosen One : Gram`
+
+[basic explain]
+	`攻击速度 +3%%
+近距离武器攻击力 +20%%`
+
+[grade]
+	61
+
+[attach type]
+	`[sealing]`
+
+[item group name]
+	`lswd`
+
+[creation rate]
+	500
+
+[rarity]
+	3
+
+[anti evil]
+	38
+
+[weight]
+	4000
+
+[usable job]
+	`[swordman]`
+[/usable job]
+
+[minimum level]
+	55
+
+[icon]
+	`Item/weapon/swordman/lswd.img`	50
+
+[field image]
+	`Item/FieldImage.img`	13
+
+[equipment type]
+	`[weapon]`	24
+
+[sub type]
+	3
+
+[durability]
+	35
+
+[price]
+	109800
+
+[value]
+	87840
+
+[cool time]
+	10000
+
+[physical attack]
+	41
+
+[equipment physical attack]
+	667	619
+
+[equipment magical attack]
+	500	464
+
+[attack speed]
+	-60
+
+[cast speed]
+	-20
+
+[variation]
+	5	0
+
+[layer variation]
+	2600
+	`lswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`lswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[move wav]
+	`SQUARESWD_TOUCH`
+
+[if]
+	[attacker]
+		`character`	-1
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	20
+[/then]
+
+[pvp]
+	[if]
+		[attacker]
+			`character`	-1
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase damage]
+			`%`	10
+	[/then]
+[/pvp]
+
+[icon mark]
+	`Item/IconMark.img`	66

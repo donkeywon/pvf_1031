@@ -1,0 +1,32 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Nentan1_int.ani`
+	[SUB ANI]
+		`../../lv4Goblin_Str/Animation/Nentan1_Effect.ani`	0	0
+		`../../lv4Goblin_Str/Animation/Nentan1_Effect2.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			39005
+		[PARTICLE FILENAME]
+			`../../lv4Goblin_Str/Particle/ThrowStone.ptl`
+		[LEVEL]
+			0
+		[POS]
+			50	0	40
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

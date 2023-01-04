@@ -1,0 +1,56 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Totem.ani`
+	[SOUND]
+		`B_RELIGION_SWING`	0
+		`ARCTICF_HIT`	4
+		`SEME_ATK_01`	1
+	[/SOUND]
+	[SPEECH]
+		`就是这里！`	4	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8039
+		[PARTICLE FILENAME]
+			`../Particle/BirdDrop.ptl`
+		[LEVEL]
+			55
+		[POS]
+		[RANDOM]
+			-100	100
+		[RANDOM]
+			-40	40
+		[RANDOM]
+			400	600
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,102 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is the skill in cooltime()`	180
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`flore`
+			[true]
+		
+			[think]
+				[void]
+					`is target in attack area()`	80.0	80.0	40.0	40.0
+				[true]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	56
+					[true]
+				
+					[think]
+						[void]
+							`is the skill in cooltime()`	103
+						[true]
+					
+						[think]
+							[check key cooltime]
+								`frost`
+							[true]
+							[return]
+								-1
+							[false]
+							[return str]
+								`frost`
+						[/think]
+	[false]
+	[return str]
+		`anti_gravity`
+	[/think]
+	[false]
+	[return str]
+		`chiling`
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	350.0	350.0	50.0	50.0
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	99
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`frost`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`frost`
+			[/think]
+	[false]
+	[return str]
+		`acid`
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	500.0	500.0	100.0	100.0
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	100
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`magic`
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return str]
+		`flore`
+	[/think]
+	[false]
+	[return str]
+		`boolgool`
+	[/think]
+[/ai pattern]

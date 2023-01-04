@@ -1,0 +1,29 @@
+#PVF_File
+
+[event]
+	[title]
+		`出席活动`
+	[explain]
+		`在消耗疲劳值30后，请点按确认出席按钮！
+活动期间内，如每天都有进行确认出席，将可以获得更特别的礼物！`
+	[db table]
+		`event_1202_fatigue_attendance`
+	[fatigue]
+		30
+	[msg overbtn]
+		`如疲劳值消耗到 30以上时，将可进行出席确认。`
+	[reward]
+		690000005	3	690000004	3	36	3	690000301	1	690000005	3	690000004	3	690000005	3	690000004	3	690000005	3	900	2	900	2	690000004	3	690000005	3	690000004	3	690000005	3
+	[/reward]
+	[reward explain]
+		`game_server_msg_211`
+	[send mail]
+		[inven]
+			0
+		[detail]
+			0	0	0	0
+			`game_server_msg_210`
+			` `
+		[/detail]
+	[/send mail]
+[/event]

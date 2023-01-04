@@ -1,0 +1,41 @@
+#PVF_File
+
+[name]
+	`艾利佛·塞利文之卵`
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[basic action]
+	`Action/FireBall_Move.act`
+
+[attack info]
+	`AttackInfo/ball.atk`
+
+[etc action]
+	`Action/FireBall_break.act`
+[/etc action]
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[ENEMY]`
+	[homing velocity]
+		50	250
+	[homing check gap]
+		5000
+	[sync animation rotation]
+		0
+	[max rotation]
+		45
+	[init rotation]
+		0
+	[diff rotation]
+		100
+	[homing time]
+		10000
+[/homing]

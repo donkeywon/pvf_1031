@@ -1,0 +1,40 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	120.0	120.0	25.0	25.0
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	6
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				6
+		[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	500.0	500.0	100.0	100.0
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	2
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				2
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+[/ai pattern]

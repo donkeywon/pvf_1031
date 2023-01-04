@@ -1,0 +1,208 @@
+#PVF_File
+
+[name]
+	`极寒水晶棍`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 有5%%的几率使自身增加10%%的攻击速度和移动速度， 效果持续25秒。
+
+以额外杀伤杀死敌人时， 可以使自身增加1点冰属性强化。 (可重叠， 冷却时间为4秒)`
+
+[grade]
+	75
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[physical attack]
+	50
+
+[magical attack]
+	50
+
+[attack speed]
+	50
+
+[cast speed]
+	50
+
+[stuck]
+	-1
+
+[need material]
+	3285	1800
+
+[repair price]
+	100800
+
+[value]
+	96000
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	782	717
+
+[equipment magical attack]
+	652	598
+
+[separate attack]
+	441	298
+
+[water attack]
+	10
+
+[icon]
+	`item/new_equipment/01_weapon/mage/pole/pole.img`	86
+
+[field image]
+	`Item/field_weapon.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	28	1
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	28	1
+
+[layer variation]
+	2150
+	`at_polea`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_poled`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	28	1
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`POLE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2400
+
+[item group name]
+	`pole`
+
+[cool time]
+	10000
+
+[routing priority]
+	`mage`	3
+	`at mage`	2
+[/routing priority]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		35000
+[/if]
+
+[then]
+	[probability]
+		5
+	[target]
+		`myself`	-1
+	[duration]
+		25000
+	[stat]
+		`attack speed`
+		`+`	100
+	[stat]
+		`move speed`
+		`+`	100
+[/then]
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+	[overkill]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		60000
+	[stat]
+		`water attack`
+		`+`	1
+[/then]
+
+[elemental property]
+	`[water element]`
+
+[icon mark]
+	`Item/IconMark.img`	68

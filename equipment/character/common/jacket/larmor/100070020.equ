@@ -1,0 +1,133 @@
+#PVF_File
+
+[name]
+	`天魔之爪上衣`
+
+[basic explain]
+	`被击时， 有10%%的几率恢复自身3%%的HP或5%%的MP。 (在决斗场中几率为1%%)
+每隔40秒， 可赋予自身光属性， 效果持续20秒。 (装备20秒后生效)
+无法进行分解。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	41
+
+[magical attack]
+	28
+
+[need material]
+	3339	630
+
+[repair price]
+	70560
+
+[value]
+	67200
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	3276	3096
+
+[icon]
+	`item/new_equipment/04_larmor/coat/larmor_coat.img`	15
+
+[field image]
+	`Item/field_equip.img`	5
+
+[equipment type]
+	`[coat]`	20
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3100
+
+[item group name]
+	`la coat`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		8000
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			10
+		[restore]
+			`mp`
+			`%`	5	1000
+		[then probability]
+			50.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			10
+		[restore]
+			`hp`
+			`%`	3	1000
+		[then probability]
+			50.0
+	[/then]
+[/multiple then]
+
+[if]
+	[time]
+		40000	1	20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[elemental weapon]
+		`light`
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,93 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check key cooltime]
+			`drive`
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	100.0	0.0	30.0	30.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`combo1`
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`combo2`
+					[true]
+					[return]
+						-1
+					[false]
+					[return str]
+						`combo2`
+				[/think]
+	[false]
+	[return str]
+		`combo1`
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	200.0	40.0	100.0	100.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`hurri`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`jud`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`jud`
+			[/think]
+	[false]
+	[return str]
+		`hurri`
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	500.0	500.0	200.0	200.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`ducking`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`summon`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`summon`
+			[/think]
+	[false]
+	[return str]
+		`ducking`
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return str]
+		`drive`
+	[/think]
+[/ai pattern]

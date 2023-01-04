@@ -1,0 +1,103 @@
+#PVF_File
+
+[name]
+	`火魁之歌项链`
+
+[basic explain]
+	`施放技能时， 可通过消耗1个无色小晶块施放[火魁之幕]。
+被[火魁之幕]命中的敌人， 将进入灼伤状态， 效果持续5秒。
+无法进行分解。`
+
+[detail explain]
+	`施放技能时， 可通过消耗1个无色小晶块施放[火魁之幕]。
+被[火魁之幕]命中的敌人， 将进入灼伤状态， 且每0.5秒会受到15点伤害， 效果持续5秒。 (若敌人高于Lv84， 则减少进入异常状态的几率； 反之， 则增加几率； 冷却时间为30秒)
+无法进行分解。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[magical attack]
+	33
+
+[magical defense]
+	83
+
+[need material]
+	3338	525
+
+[value]
+	67200
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	7280	6880
+
+[fire attack]
+	3
+
+[icon]
+	`item/new_equipment/08_necklace/necklace.img`	87
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	20
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[routing priority]
+[/routing priority]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		48312	0	0	0	80	0	``
+	[/passive object]
+	[consume item]
+		3037	1
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[icon mark]
+	`Item/IconMark.img`	66

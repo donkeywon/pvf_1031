@@ -1,0 +1,65 @@
+#PVF_File
+
+[window]
+	[type]
+		`popup`
+	[horizontal alignment]
+		`center`
+	[vertical alignment]
+		`middle`
+	[tile type]
+		5
+	[size]
+		18	24
+	[title string]
+		`游戏设置窗口(O)`
+	[title accesorry type]
+		16
+	[controls]
+		[ui controls]
+			`[basic button]`
+			`5`	53	280	0	1	21116
+		[/ui controls]
+		[ui controls]
+			`[basic button]`
+			`6`	110	280	0	1	21401
+		[/ui controls]
+		[ui controls]
+			`[tab group]`
+			`0`	0	20	3
+			`图像`
+			`声音`
+			`系统`	1	60
+		[/ui controls]
+		[ui controls]
+			`[control]`
+			`2`	6	34	0	2	216	208	
+			[parent tab]
+				`0`	0
+		[/ui controls]
+		[ui controls]
+			`[control]`
+			`3`	6	34	0	2	216	208	
+			[parent tab]
+				`0`	1
+		[/ui controls]
+		[ui controls]
+			`[control]`
+			`4`	6	34	0	2	216	208	
+			[parent tab]
+				`0`	2
+		[/ui controls]
+		[ui path]
+			`UI/OptionWindow/OptionGraphic.ui`
+			`2`
+		[/ui path]
+		[ui path]
+			`UI/OptionWindow/OptionSound.ui`
+			`3`
+		[/ui path]
+		[ui path]
+			`UI/OptionWindow/OptionSystem.ui`
+			`4`
+		[/ui path]
+	[/controls]
+[/window]

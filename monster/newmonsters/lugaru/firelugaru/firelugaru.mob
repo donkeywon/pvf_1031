@@ -1,0 +1,190 @@
+#PVF_File
+
+[width]
+	57	12
+
+[floating height]
+	0
+
+[appear sound]
+	`R_FOX_TALK`
+
+[damage sound]
+	`R_FOX_DMG`
+
+[die sound]
+	`FOX_DIE`
+
+[name]
+	`炎猫妖`
+
+[face image]
+	`Monster/MonsterFace.img`	317
+
+[die effect]
+	1	15	1
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[category]
+	`[beast]`
+[/category]
+
+[intelligence]
+	70	70	3000
+
+[HP regen speed]
+	0	0
+
+[MP regen speed]
+	0	0
+
+[level]
+	60	60
+
+[fire resistance]
+	40	40
+
+[water resistance]
+	-20	-20
+
+[freeze resistance]
+	50	50
+
+[burn resistance]
+	50	50
+
+[move speed]
+	700	700
+
+[attack speed]
+	700	700
+
+[cast speed]
+	100	100
+
+[hit recovery]
+	500	500
+
+[weight]
+	80000	80000
+
+[targeting time term]
+	-1
+
+[sight]
+	400
+
+[targeting nearest]
+	1
+
+[warlike]
+	100
+
+[attack delay]
+	2500
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[lie frame]
+	2	3	2	3	4
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[attack action]
+	`Action/Attack.act`
+	`Action/JumpAttack1.act`
+	`Action/JumpAttack2.act`
+	`Action/bite.act`
+	`Action/ReleaseBite.act`
+	`Action/Rolling.act`
+	`Action/bite2.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Attack.atk`
+	`AttackInfo/bite.atk`
+	`AttackInfo/Attack.atk`
+	``
+	`AttackInfo/bite.atk`
+[/attack info]
+
+[cooltime]
+	6000	4500	0	0	0	0	0
+[/cooltime]
+
+[vision]
+	1000
+
+[think term]
+	600
+
+[destination change term]
+	1000
+
+[keep distance with target]
+	1000
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

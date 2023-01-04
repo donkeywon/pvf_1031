@@ -1,0 +1,75 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/CrisisRX78.ani`
+	[SUB ANI]
+		`../Animation/wp/CrisisRX78.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`GRIGUN_RUNNER`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`哈哈哈！用力打我吧！！！`
+	[SET OUTLINE]
+		1	255	255	255	3
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			60002
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[JUMP OUT]
+		[RANDOM]
+			-200	200
+		[RANDOM]
+			-250	250
+		[RANDOM]
+			100	200
+		[LEFT]
+		[UP]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET OUTLINE]
+		0	255	255	255	2
+[/BEHAVIOR]

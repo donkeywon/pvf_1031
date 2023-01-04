@@ -1,0 +1,149 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/SuperHyperUltraLuckyAttack.ani`
+	[SUB ANI]
+		`../animation/Effect/KnockSmall.ani`	0	0
+		`../animation/Effect/KnockSmall2.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`运气不错嘛~竟然全都躲过了！`	9	100
+	[/SPEECH]
+	[SOUND]
+		`KONG_ACCIDENT_01`	0
+		`KONG_ACCIDENT_01`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			200
+		[X AXIS]
+			300
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-100
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8755
+		[PARTICLE FILENAME]
+			`../particle/bomb.ptl`
+		[LEVEL]
+			0
+		[POS]
+			400	0	400
+		[WARNING MARK]
+			0	0	80	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8755
+		[PARTICLE FILENAME]
+			`../particle/bomb.ptl`
+		[LEVEL]
+			0
+		[POS]
+			100	0	400
+		[WARNING MARK]
+			0	0	80	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8755
+		[PARTICLE FILENAME]
+			`../particle/bomb.ptl`
+		[LEVEL]
+			0
+		[POS]
+			250	-80	400
+		[WARNING MARK]
+			0	0	80	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8755
+		[PARTICLE FILENAME]
+			`../particle/bomb.ptl`
+		[LEVEL]
+			0
+		[POS]
+			250	80	400
+		[WARNING MARK]
+			0	0	80	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		13
+	[NOW]
+[/BEHAVIOR]

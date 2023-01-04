@@ -1,0 +1,48 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/repeat_spear.ani`
+	[SUB ANI]
+		`../animation/weapon/repeat_spear.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`连环双击！`	1	10
+	[/SPEECH]
+	[SOUND]
+		`R_WEAPONM_ATK_05`	0
+		`THROW_RAT`	1
+		`R_WEAPONM_ATK_05`	4
+		`THROW_RAT`	4
+		`THROW_RAT`	7
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]

@@ -1,0 +1,179 @@
+#PVF_File
+
+[minimum info]
+	`控沙者拉玛`	1	3	0	1	70	0	0	0	0	0	0
+	`no creature`	0	0	0
+
+[additional character status]
+	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	100	100	100	100	100	100	100	100	100	100	100	100	100	100	100	100	100	0	100	100	100
+[/additional character status]
+
+[character status rate]
+	400	1000	1	1	1	1	1	2.5	1	2.5	1	1	10	1.2	1.5	3	3	1	5	1	10	10	10	10	100	100	10	100	1	100	10	100	100	10	100	10	1	0.3	100	100	100
+[/character status rate]
+
+[attack damage rate]
+	0.08
+
+[add equipment status from level]
+	1
+
+[armor subtype]
+	4
+
+[quick skill]
+	14	20
+	46	10
+	69	26
+	5	10
+	18	18
+[/quick skill]
+
+[skill]
+	77	13
+	8	10
+	49	26
+	28	1
+	51	10
+	13	10
+	32	1
+	33	1
+	2	1
+	74	10
+	181	3
+	182	5
+	184	1
+	172	1
+	179	5
+	73	1
+	169	1
+	170	1
+	190	1
+	186	7
+	178	5
+	23	1
+	174	0
+	86	20
+	92	1
+	6	20
+	24	1
+[/skill]
+
+[skill correction]
+	5	0.1	86	0.8
+[/skill correction]
+
+[quick item]
+	1142	1000
+[/quick item]
+
+[equipment]
+	26582	2	0
+	29736	4	3
+	10926	1	3
+	14915	1	3
+	12920	1	3
+	18918	1	3
+	16909	1	3
+	20148	2	0
+	22140	1	0
+	24155	0	0
+	43254	2	0
+	43598	2	0
+	43966	2	0
+	44743	2	0
+	45160	2	0
+	45921	2	0
+	46242	2	0
+[/equipment]
+
+[think term]
+	300
+
+[destination change term]
+	300
+
+[keep distance with target]
+	300
+
+[warlike]
+	0
+
+[vision]
+	4000
+
+[appearance point]
+	0
+
+[pvp win point]
+	0	0
+
+[targeting bonus]
+	0	0	0	0	30	0	50	0	0	0	0	0	0	50	0	0	0	0	0	0	100
+	`[down]`	0	100
+	`[bleeding]`
+	`[poison]`	0
+
+[ai pattern]
+	`Event.ai`
+	`DestinationSelect.ai`
+	`Action.ai`
+	`MoveMethod.ai`
+[/ai pattern]
+
+[key stream]
+	`atk0`
+	`atk0.key`
+	`atk1`
+	`atk1.key`
+	`goldattack`
+	`goldattack.key`
+	`attack13`
+	`attack13.key`
+	`attack69`
+	`attack69.key`
+	`attack18`
+	`attack18.key`
+	`attack77`
+	`attack77.key`
+	`attack49`
+	`attack49.key`
+	`atk2`
+	`combo.key`
+	`exit`
+	`exit.key`
+	`attack5`
+	`attack5.key`
+	`atk190`
+	`atk190.key`
+	`atk0_1`
+	`atk0_1.key`
+[/key stream]
+
+[key cooltime]
+	`atk0`	3000
+	`atk1`	20000
+	`atk2`	3000
+	`exit`	200
+	`atk0_1`	10000
+[/key cooltime]
+
+[etc action]
+	`action/attack_sand.act`
+	`action/cast1.act`
+	`action/cast2.act`
+[/etc action]
+
+[proc action]
+	`action/proc.act`
+
+[speech on situation]
+	[on appear]
+		`我要用沙子将你活埋！`	100
+	[on stand]
+		`灭亡吧！`	20
+	[on attack]
+		`沙尘暴！`	60	2
+	[on attack]
+		`灭亡吧！`	60	0
+[/speech on situation]

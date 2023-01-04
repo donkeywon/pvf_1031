@@ -1,0 +1,28 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Effect/NapalmBombExplosion_0.ani`
+	[SUB ANI]
+		`../Animation/Effect/NapalmBombExplosionDodge_0.ani`	0	0
+		`../Animation/Effect/blast-back_0.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`BOMB_05`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		10	600
+	[PARTICLE]
+		`../particle/Destroy_0.ptl`	0	0	40
+[/BEHAVIOR]

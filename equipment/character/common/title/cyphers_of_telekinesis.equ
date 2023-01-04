@@ -1,0 +1,78 @@
+#PVF_File
+
+[name]
+	`异能之奥秘`
+
+[name2]
+	`Cyphers of Telekinesis`
+
+[flavor text]
+	`不用手就可以移动东西……真心尊敬你。  --虫之狄桑`
+
+[explain]
+	`施放技能时， 有7%%的几率发动念动波。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	280
+
+[equipment type]
+	`[title name]`	1
+
+[custom animation]
+	`TitleAnimation/cyphers_of_telekinesis.ani`
+[/custom animation]
+
+[magical attack]
+	15
+
+[cast speed]
+	20
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[cooltime]
+		10000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		7
+	[reduce probability to human armor at pvp module]
+		80
+	[passive object]
+		48300	0	0	0	60	0	``
+	[/passive object]
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,86 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Casting_Meteor.ani`
+	[SUB ANI]
+		`../Animation/Effect/Casting_Meteor.ani`	0	0
+		`../Animation/Direction/Casting_Charge_LD.ani`	0	0
+		`../Animation/Direction/Casting_Charge_LU.ani`	0	0
+		`../Animation/Direction/Casting_Charge_RD.ani`	0	0
+		`../Animation/Direction/Casting_Charge_RU.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`不要以为脚下的大地是属于你们的！`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		8000	2
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14136
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			1305	295	0
+		[USE MAP POS]
+		[FIX DIRECTION]
+		[RIGHT]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		3
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14135
+		[/IS INDEX]
+		[TRIGGER CHECK]
+		[CUSTOM]
+			1	0
+		[OFF]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		50
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		16
+	[NOW]
+[/BEHAVIOR]

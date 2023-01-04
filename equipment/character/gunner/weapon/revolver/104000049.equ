@@ -1,0 +1,168 @@
+#PVF_File
+
+[name]
+	`疾空之舞`
+
+[basic explain]
+	`普通攻击时， 有30%%的几率出现火焰爆炸。 (在决斗场中无效)
+普通攻击时， 可以使[爆头一击]、 [乱射]、 [枪舞]的攻击力增加10%%。 (效果最多可重叠4次)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	58
+
+[price]
+	142400
+
+[repair price]
+	119616
+
+[value]
+	113920
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	799	731
+
+[equipment magical attack]
+	672	615
+
+[separate attack]
+	510	347
+
+[physical critical hit]
+	2
+
+[skill levelup]
+	`[gunner]`	9	2
+	`[gunner]`	5	2
+	`[at gunner]`	9	2
+	`[at gunner]`	5	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/revolver/revolver.img`	89
+
+[field image]
+	`Item/field_weapon.img`	1
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	26	1
+
+[layer variation]
+	2790
+	`revc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`revb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	26	1
+
+[layer variation]
+	2790
+	`at_revc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_revb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2000
+
+[item group name]
+	`revolver`
+
+[cool time]
+	10000
+
+[if]
+	[set my state]
+		1
+	[my state]
+		`attack`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[duration]
+		2000
+	[reduce probability to human armor at pvp module]
+		90
+	[appendage]
+		54
+[/then]
+
+[if]
+	[cooltime]
+		500
+	[my state]
+		`attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		30
+	[passive object]
+		48541	0	0	0	75	0	``
+	[/passive object]
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,149 @@
+#PVF_File
+
+[name]
+	`高科技木乃伊手杖`
+
+[name2]
+	`Zombie Powder Wand`
+
+[basic explain]
+	`施放[驱使僵尸]时， 有10%%的几率召唤出1只丛林僵尸。
+
+无法进行分解、 封装和合成。`
+
+[detail explain]
+	`施放[驱使僵尸]时， 有10%%的几率召唤出1只Lv42的丛林僵尸协助召唤者攻击敌人， 丛林僵尸存在60秒。 (召唤的怪物只能同时存在1只， 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失)
+
+无法进行分解、 封装和合成。`
+
+[grade]
+	46
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	42
+
+[magical attack]
+	19
+
+[attack speed]
+	-100
+
+[cast speed]
+	20
+
+[price]
+	0
+
+[repair price]
+	61824
+
+[value]
+	0
+
+[equipment physical attack]
+	352	320
+
+[equipment magical attack]
+	501	455
+
+[separate attack]
+	256	171
+
+[magical critical hit]
+	5
+
+[skill levelup]
+	`[thief]`	52	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/thief/wand.img`	38
+
+[field image]
+	`Item/field_weapon.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	4	3
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2300
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		180000
+	[use skill]
+		`thief`	52
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		60000
+	[probability]
+		10
+	[summon monster]
+		65001	42	1
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

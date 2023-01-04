@@ -1,0 +1,27 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/DefenceStay/Body.ani`
+	[SUB ANI]
+		`../Animation/DefenceStay/Jaw.ani`	0	1
+		`../Animation/DefenceStay/Head.ani`	0	2
+		`../Animation/DefenceStay/Eye_Dodge.ani`	0	3
+		`../Animation/DefenceStay/Start_Back_Dodge.ani`	0	4
+		`../Animation/DefenceStay/Start_Core_Dodge.ani`	0	5
+		`../Animation/DefenceStay/Start_Floor_Dodge.ani`	0	6
+		`../Animation/DefenceStay/Start_Head_Dodge.ani`	0	7
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PLAY SOUND]
+		`R_DRAGONSTONE_HIT`
+[/BEHAVIOR]

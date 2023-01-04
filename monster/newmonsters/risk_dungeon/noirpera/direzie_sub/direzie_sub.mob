@@ -1,0 +1,230 @@
+#PVF_File
+
+[name]
+	`狄瑞吉的幻影`
+
+[face image]
+	`Monster/MonsterFace.img`	383
+
+[die effect]
+	0	20	1
+
+[width]
+	150	50
+
+[category]
+	`[devil]`
+[/category]
+
+[ambient sound]
+	`DIRE_AMB`
+
+[attack sound]
+	`R_DIRE_MEET`
+
+[appear sound]
+	`R_DIRE_ATK`
+
+[damage sound]
+	`R_DIRE_DMG`
+
+[die sound]
+	`R_DIRE_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	165
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	200
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	165
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	200
+	`[HP MAX]`	`*`	560
+[/ability category]
+
+[level]
+	100	100
+
+[fire resistance]
+	10	10
+
+[dark resistance]
+	30	30
+
+[light resistance]
+	20	20
+
+[slow resistance]
+	20	20
+
+[freeze resistance]
+	40	40
+
+[poison resistance]
+	1000	1000
+
+[stun resistance]
+	20	20
+
+[curse resistance]
+	1000	1000
+
+[blind resistance]
+	1000	1000
+
+[lightning resistance]
+	10	10
+
+[stone resistance]
+	80	80
+
+[bleeding resistance]
+	100	100
+
+[hold resistance]
+	20	20
+
+[move speed]
+	800	800
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1200	1200
+
+[weight]
+	100000	100000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[waiting action]
+	`../Direzie/Action/Stay.act`
+
+[move action]
+	`../Direzie/Action/Move.act`
+
+[sit action]
+	`../Direzie/Action/Sit.act`
+
+[damage action 1]
+	`../Direzie/Action/Damage1.act`
+
+[damage action 2]
+	`../Direzie/Action/Damage2.act`
+
+[down action]
+	`Action/Down_Sub.act`
+
+[overturn action]
+	`../Direzie/Action/Overturn.act`
+
+[attack action]
+	`../Direzie/Action/Attack1.act`
+	`../Direzie/Action/Attack2.act`
+	`../Direzie/Action/Attack3.act`
+	`../Direzie/Action/Drill.act`
+	`../Direzie/Action/Hide_disappear.act`
+	`../Direzie/Action/Bite.act`
+	`../Direzie/Action/Swallow.act`
+	`Action/Backstep_Sub.act`
+	`../Direzie/Action/BackstepToDrill.act`
+	`../Direzie/Action/JumpDrill.act`
+	`../Direzie/Action/HideAndSummon75.act`
+	`../Direzie/Action/HideAndSummon50.act`
+	`../Direzie/Action/HideAndSummon25.act`
+	`../Direzie/Action/Heal.act`
+[/attack action]
+
+[etc action]
+	`../Direzie/Action/Hide_appear.act`
+	`../Direzie/Action/SwallowRewind.act`
+[/etc action]
+
+[last action]
+	`../Direzie/Action/Die.act`
+
+[attack info]
+	`../Direzie/AttackInfo/Attack1.atk`
+	`../Direzie/AttackInfo/Attack2.atk`
+	`../Direzie/AttackInfo/Attack3.atk`
+	`../Direzie/AttackInfo/Drill.atk`
+	``
+	`../Direzie/AttackInfo/Bite.atk`
+	`../Direzie/AttackInfo/Swallow.atk`
+	``
+	``
+	`../Direzie/AttackInfo/Drill.atk`
+	``
+	``
+	``
+	``
+	``
+[/attack info]
+
+[atk super on scr]
+	3
+	`[unbreakable]`	-1	-1	-1	-1	5
+	`[unbreakable]`	-1	-1	-1	-1	6
+	`[unbreakable]`	-1	-1	-1	-1	9
+	`[unbreakable]`	-1	-1	-1	-1
+[/atk super on scr]
+
+[cooltime]
+	1000	1000	1000	10000	20000	20000	3000	13000	20000	0	0	0	0	15000
+[/cooltime]
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event_Sub.ai`
+		`../Direzie/ai/DestinationSelect.ai`
+		`ai/Action_Sub.ai`
+		`../Direzie/ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event_Sub.ai`
+		`../Direzie/ai/DestinationSelect.ai`
+		`ai/Action_Sub.ai`
+		`../Direzie/ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event_Sub.ai`
+		`../Direzie/ai/DestinationSelect.ai`
+		`ai/Action_Sub.ai`
+		`../Direzie/ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event_Sub.ai`
+		`../Direzie/ai/DestinationSelect.ai`
+		`ai/Action_Sub.ai`
+		`../Direzie/ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`../Direzie/ai/Event.ai`
+		`../Direzie/ai/DestinationSelect.ai`
+		`../Direzie/ai/Action.ai`
+		`../Direzie/ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep range distance with target]
+	150	0	50	30
+
+[intelligence]
+	100	80	5000
+
+[vision]
+	1000
+
+[set damage check]
+	3000
+
+[lie frame]
+	0	1	2	3	4

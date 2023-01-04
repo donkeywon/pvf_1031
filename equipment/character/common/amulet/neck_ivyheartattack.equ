@@ -1,0 +1,100 @@
+#PVF_File
+
+[name]
+	`麻痹心脏的常春藤项链`
+
+[name2]
+	`Heart Attack of Ivy`
+
+[basic explain]
+	`攻击中毒状态的敌人时， 附加10%%的伤害。`
+
+[grade]
+	50
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	45
+
+[magical attack]
+	22
+
+[magical defense]
+	53
+
+[price]
+	60000
+
+[repair price]
+	48000
+
+[value]
+	48000
+
+[equipment magical defense]
+	4640	4160
+
+[icon]
+	`Item/common/necklace.img`	12
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[target active status]
+		`poison`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[set name]
+	`破坏身体的常春藤首饰`
+
+[set item]
+	20117	24120
+[/set item]
+
+[set ability]
+	[fullset basic explain]
+		`使敌人进入任意的异常状态时， 有20%%的几率施放Lv5的[侵蚀之普戾蒙]。`
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

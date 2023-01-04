@@ -1,0 +1,160 @@
+#PVF_File
+
+[name]
+	`(旧) 戾冰鸣泉棒`
+
+[name2]
+	`Frost Shaft`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入冰冻状态。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入眩晕状态6秒。 (若敌人高于Lv36， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`我要用极寒之气把你的血冻结。`
+
+[grade]
+	40
+
+[rarity]
+	3
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	36
+
+[physical attack]
+	43
+
+[attack speed]
+	-30
+
+[stuck]
+	-1
+
+[price]
+	64000
+
+[repair price]
+	51200
+
+[value]
+	51200
+
+[equipment physical attack]
+	427	383
+
+[equipment magical attack]
+	369	331
+
+[separate attack]
+	226	150
+
+[skill levelup]
+	`[swordman]`	21	2
+[/skill levelup]
+
+[freeze resistance]
+	-20
+
+[icon]
+	`Item/weapon/swordman/club.img`	22
+
+[field image]
+	`Item/FieldImage.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	2	7
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	2	7
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`STICK_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3400
+
+[item group name]
+	`club`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[water element]`
+
+[if]
+	[cooltime]
+		9000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		6000
+	[probability]
+		3
+	[active status]
+		`freeze`	36
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

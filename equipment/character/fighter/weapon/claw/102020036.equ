@@ -1,0 +1,201 @@
+#PVF_File
+
+[name]
+	`百鬼冤灵之咒`
+
+[name2]
+	``
+
+[basic explain]
+	`施放[狂 · 霸王拳]时， 附加22%%的伤害， 效果持续6秒。
+[狂 · 霸王拳]的无色小晶块消耗量 +1
+攻击不死族类型的敌人时， 附加15%%的伤害。`
+
+[flavor text]
+	`活着有什么意思？ 被嘲笑、 被欺辱……来吧， 跟我们走吧， 下面的世界欢迎你~  --某个冤鬼`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	56
+
+[magical attack]
+	28
+
+[price]
+	136000
+
+[repair price]
+	114240
+
+[value]
+	108800
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	824	764
+
+[equipment magical attack]
+	824	764
+
+[separate attack]
+	504	343
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[fighter]`	45	2
+	`[at fighter]`	45	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/claw/claw.img`	93
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	26	1
+
+[layer variation]
+	2790
+	`clawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	27	1
+
+[layer variation]
+	2150
+	`at_clawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_clawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_clawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[routing priority]
+	`fighter`	3
+	`at fighter`	3
+[/routing priority]
+
+[if]
+	[target type]
+		`undead`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	15
+[/then]
+
+[if]
+	[skill]
+		`fighter`	74
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	22
+[/then]
+
+[if]
+	[skill]
+		`at fighter`	74
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	22
+[/then]
+
+[skill data up]
+	`[fighter]`	74	`[all]`	`[skill consume item]`	0	`+`	1
+	`[at fighter]`	74	`[all]`	`[skill consume item]`	0	`+`	1
+[/skill data up]
+
+[icon mark]
+	`Item/IconMark.img`	68

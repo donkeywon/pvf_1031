@@ -1,0 +1,125 @@
+#PVF_File
+
+[name]
+	`素喃订制匕首`
+
+[name2]
+	`找不到代码name2_37112`
+
+[basic explain]
+	`攻击速度 +3%%
+暴击伤害 +7%%
+无法进行分解。`
+
+[grade]
+	52
+
+[attach type]
+	`[trade]`
+
+[item group name]
+	`dagger`
+
+[rarity]
+	3
+
+[weight]
+	2100
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[minimum level]
+	48
+
+[icon]
+	`Item/weapon/thief/dagger.img`	98
+
+[icon mark]
+	`Item/IconMark.img`	52
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[sub type]
+	0
+
+[durability]
+	35
+
+[need material]
+	3323	40
+
+[value]
+	66560
+
+[cool time]
+	10000
+
+[physical attack]
+	36
+
+[equipment physical attack]
+	411	377
+
+[equipment magical attack]
+	436	400
+
+[separate attack]
+	287	192
+
+[attack speed]
+	130
+
+[physical critical hit]
+	10
+
+[stuck]
+	1
+
+[variation]
+	2	6
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	7
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]

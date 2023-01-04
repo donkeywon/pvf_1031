@@ -1,0 +1,207 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[target state]
+			4.0
+		[true]
+		[return]
+			-1
+		[false]
+	
+		[think]
+			[attack success]
+				1
+			[true]
+		
+			[think]
+				[my attack]
+					1
+				[true]
+			
+				[think]
+					[my level]
+						`is in range()`	11	20
+					[true]
+				
+					[think]
+						[void]
+							`get random()`	0.0	100.0
+					
+						[think]
+							[last result]
+								`<=`	30.0
+							[true]
+						
+							[think]
+								[void]
+									`is the skill in cooltime()`	8
+								[true]
+								[return]
+									-1
+								[false]
+								[return]
+									1
+							[/think]
+	[false]
+	[think]
+		[last result]
+			`>=`	95.0
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	41
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				19
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[my level]
+			`is in range()`	21	30
+		[true]
+	
+		[think]
+			[void]
+				`get random()`	0.0	100.0
+		
+			[think]
+				[last result]
+					`<=`	40.0
+				[true]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	8
+					[true]
+					[return]
+						-1
+					[false]
+					[return]
+						1
+				[/think]
+	[false]
+	[think]
+		[last result]
+			`>=`	70.0
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	41
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				19
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[my level]
+			`is in range()`	31	40
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	70.0	70.0	35.0	35.0
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	8
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					1
+			[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[false]
+	[think]
+		[my level]
+			`is in range()`	51	70
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	70.0	70.0	35.0	35.0
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	8
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					1
+			[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[my attack]
+			49
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	110.0	110.0	60.0	60.0
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	41
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					19
+			[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+[/ai pattern]

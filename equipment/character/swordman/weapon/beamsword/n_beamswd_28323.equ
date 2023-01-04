@@ -1,0 +1,132 @@
+#PVF_File
+
+[name]
+	`素喃订制光剑`
+
+[name2]
+	`找不到代码name2_28323`
+
+[basic explain]
+	`攻击速度 +3%%
+暴击伤害 +7%%
+无法进行分解。`
+
+[grade]
+	52
+
+[attach type]
+	`[trade]`
+
+[item group name]
+	`beamswd`
+
+[rarity]
+	3
+
+[weight]
+	2500
+
+[usable job]
+	`[swordman]`
+[/usable job]
+
+[minimum level]
+	48
+
+[required skill]
+	33
+
+[icon]
+	`Item/weapon/swordman/beamswd.img`	73
+
+[icon mark]
+	`Item/IconMark.img`	52
+
+[field image]
+	`Item/FieldImage.img`	35
+
+[equipment type]
+	`[weapon]`	24
+
+[sub type]
+	5
+
+[durability]
+	38
+
+[need material]
+	3323	40
+
+[value]
+	74880
+
+[cool time]
+	10000
+
+[physical attack]
+	36
+
+[equipment physical attack]
+	450	413
+
+[equipment magical attack]
+	436	400
+
+[separate attack]
+	287	192
+
+[attack speed]
+	130
+
+[stuck]
+	1
+
+[variation]
+	2	2
+
+[layer variation]
+	2791
+	`beamswdc1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	2792
+	`beamswdc2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	651
+	`beamswdb1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	652
+	`beamswdb2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[move wav]
+	`BEAMSWD_TOUCH`
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	7
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]

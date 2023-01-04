@@ -1,0 +1,119 @@
+#PVF_File
+
+[name]
+	`素喃订制矛`
+
+[name2]
+	`找不到代码name2_33116`
+
+[basic explain]
+	`攻击速度 +3%%
+暴击伤害 +7%%
+无法进行分解。`
+
+[grade]
+	52
+
+[attach type]
+	`[trade]`
+
+[item group name]
+	`spear`
+
+[rarity]
+	3
+
+[weight]
+	3200
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+[/usable job]
+
+[minimum level]
+	48
+
+[icon]
+	`Item/weapon/mage/spear.img`	92
+
+[icon mark]
+	`Item/IconMark.img`	52
+
+[field image]
+	`Item/field_weapon.img`	6
+
+[equipment type]
+	`[weapon]`	23
+
+[sub type]
+	0
+
+[durability]
+	35
+
+[need material]
+	3323	40
+
+[value]
+	66560
+
+[cool time]
+	10000
+
+[physical attack]
+	54
+
+[equipment physical attack]
+	581	533
+
+[equipment magical attack]
+	411	377
+
+[separate attack]
+	287	192
+
+[attack speed]
+	-20
+
+[physical critical hit]
+	2
+
+[stuck]
+	-1
+
+[variation]
+	6	3
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[move wav]
+	`SPEAR_TOUCH`
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	7
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]

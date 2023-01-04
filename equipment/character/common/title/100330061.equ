@@ -1,0 +1,131 @@
+#PVF_File
+
+[name]
+	`2010成功起源 (智力)`
+
+[name2]
+	``
+
+[explain]
+	`攻击时， 有1%%的几率使自身增加15点智力和20点精神， 效果持续30秒。
+施放技能时， 有2%%的几率使自身增加15点智力和20点精神， 效果持续30秒。`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[magical attack]
+	25
+
+[magical defense]
+	20
+
+[attack speed]
+	10
+
+[cast speed]
+	30
+
+[move speed]
+	30
+
+[HP MAX]
+	120
+
+[MP MAX]
+	120
+
+[MP regen speed]
+	8
+
+[magical critical hit]
+	3
+
+[skill levelup]
+	`[priest]`	23	1
+	`[priest]`	57	1
+	`[priest]`	47	1
+	`[priest]`	48	1
+	`[priest]`	45	1
+	`[priest]`	35	1
+	`[priest]`	5	1
+	`[priest]`	40	1
+[/skill levelup]
+
+[all elemental resistance]
+	4
+
+[icon]
+	`Item/Title/title.img`	210
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/prayer_greatsuccess2010white.ani`
+[/custom animation]
+
+[if]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`magical attack`
+		`+`	15
+	[stat]
+		`magical defense`
+		`+`	20
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`magical attack`
+		`+`	15
+	[stat]
+		`magical defense`
+		`+`	20
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

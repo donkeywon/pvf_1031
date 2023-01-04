@@ -1,0 +1,161 @@
+#PVF_File
+
+[name]
+	`高科技雷鸣手枪`
+
+[name2]
+	`Huger Bochers`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态。
+
+无法进行分解、 封装和合成。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态5秒。 (若敌人高于Lv42， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+
+无法进行分解、 封装和合成。`
+
+[grade]
+	46
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	42
+
+[magical attack]
+	16
+
+[stuck]
+	1
+
+[price]
+	0
+
+[repair price]
+	61824
+
+[value]
+	0
+
+[equipment physical attack]
+	286	242
+
+[equipment magical attack]
+	419	355
+
+[separate attack]
+	256	171
+
+[skill levelup]
+	`[gunner]`	46	1
+	`[at gunner]`	46	1
+	`[gunner]`	80	2
+	`[at gunner]`	80	2
+	`[common]`	188	1
+	`[common]`	176	1
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/automatic.img`	23
+
+[field image]
+	`Item/field_weapon.img`	2
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	2	3
+
+[layer variation]
+	2790
+	`autoc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`autob`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	2	3
+
+[layer variation]
+	2790
+	`at_autoc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_autob`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	1500
+
+[item group name]
+	`automatic`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		7500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		2
+	[active status]
+		`stun`	42
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

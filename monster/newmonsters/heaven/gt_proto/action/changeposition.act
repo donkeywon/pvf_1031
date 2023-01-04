@@ -1,0 +1,56 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/ChangePosition.ani`
+	[SPEECH]
+		`准备防御形态！`	0	100
+	[/SPEECH]
+	[SOUND]
+		`GT9600_LIFTUP`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`Damage2_1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`Damage2_2.act`
+	[APPENDAGE]
+		10000	
+		[equipment magical defense]
+		[%]
+			500.0
+		[equipment physical defense]
+		[%]
+			500.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[RESET]
+[/BEHAVIOR]

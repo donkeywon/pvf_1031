@@ -1,0 +1,164 @@
+#PVF_File
+
+[name]
+	`(旧) 千年玄铁棒`
+
+[name2]
+	`Black Steel Cudgel`
+
+[basic explain]
+	`攻击速度 +1%%
+耐久度 +12
+攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`攻击速度 +1%%
+耐久度 +12
+攻击时， 有2%%的几率使敌人进入眩晕状态2秒； 但在决斗场中， 只能持续1秒。 (若敌人高于Lv26， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`这黑暗的光芒有股魔力， 让人不自觉的沦陷…… `
+
+[grade]
+	33
+
+[rarity]
+	2
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	31
+
+[physical attack]
+	33
+
+[attack speed]
+	-20
+
+[stuck]
+	-2
+
+[price]
+	46200
+
+[repair price]
+	36960
+
+[value]
+	36960
+
+[equipment physical attack]
+	330	312
+
+[equipment magical attack]
+	285	270
+
+[separate attack]
+	150	98
+
+[physical critical hit]
+	2
+
+[icon]
+	`Item/weapon/swordman/club.img`	17
+
+[field image]
+	`Item/FieldImage.img`	8
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	2	0
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	2	0
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`STICK_TOUCH`
+
+[durability]
+	47
+
+[weight]
+	3400
+
+[item group name]
+	`club`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[reduce duration to human armor at pvp module]
+		50
+	[duration]
+		2000
+	[reduce probability to human armor at pvp module]
+		80
+	[probability]
+		2
+	[active status]
+		`stun`	31
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

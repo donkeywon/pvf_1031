@@ -1,0 +1,126 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	`Burning For PCRoom`
+
+[explain]
+	`攻击时， 有1%%的几率使自身增加4%%的攻击速度和移动速度， 效果持续30秒。
+施放技能时， 有2%%的几率使自身增加4%%的施放速度和移动速度， 效果持续30秒。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[usable period]
+	90
+
+[icon]
+	`Item/Title/title.img`	257
+
+[custom animation]
+	`TitleAnimation/event_pcroom.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	22
+
+[physical defense]
+	22
+
+[magical attack]
+	22
+
+[magical defense]
+	22
+
+[HP regen speed]
+	40
+
+[MP regen speed]
+	8
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[physical critical hit]
+	3
+
+[magical critical hit]
+	3
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`attack speed`
+		`+`	40
+	[stat]
+		`move speed`
+		`+`	40
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`cast speed`
+		`+`	40
+	[stat]
+		`move speed`
+		`+`	40
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

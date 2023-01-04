@@ -1,0 +1,250 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`HM-8 古斯托`
+
+[face image]
+	`Monster/MonsterFace.img`	419
+
+[die effect]
+	0	6	0
+
+[attack sound]
+	`R_FATSILVER_ATK`
+
+[appear sound]
+	`GOOSTO_MEET`
+
+[damage sound]
+	`R_FATSILVER_DMG`
+
+[die sound]
+	`R_FATSILVER_DIE`
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	740
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	120
+[/ability category]
+
+[category]
+	`[human]`
+[/category]
+
+[fire resistance]
+	40	40
+
+[water resistance]
+	-20	-20
+
+[dark resistance]
+	0	0
+
+[light resistance]
+	0	0
+
+[freeze resistance]
+	30	30
+
+[stun resistance]
+	30	30
+
+[blind resistance]
+	30	30
+
+[stone resistance]
+	30	30
+
+[sleep resistance]
+	30	30
+
+[hold resistance]
+	30	30
+
+[slow resistance]
+	30	30
+
+[curse resistance]
+	30	30
+
+[confuse resistance]
+	30	30
+
+[lightning resistance]
+	0	0
+
+[bleeding resistance]
+	0	0
+
+[poison resistance]
+	0	0
+
+[burn resistance]
+	0	0
+
+[piercing resistance]
+	0	0
+
+[set damage check]
+	4000
+
+[HP regen speed]
+	0	0
+
+[MP regen speed]
+	0	0
+
+[level]
+	60	60
+
+[move speed]
+	700	700
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1200	1200
+
+[weight]
+	70000	70000
+
+[lie frame]
+	0	1	3	3	4
+
+[intelligence]
+	80	80	5000
+
+[add gravity in aerial]
+	1	20.0	-300.0
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/move.act`
+
+[sit action]
+	`Action/sit.act`
+
+[damage action 1]
+	`Action/damage1.act`
+
+[damage action 2]
+	`Action/damage2.act`
+
+[down action]
+	`Action/down.act`
+
+[overturn action]
+	`Action/overturn.act`
+
+[attack action]
+	`Action/Attack.act`
+	`Action/Attack_a.act`
+	`Action/Attack_b.act`
+	`Action/jump_Attack1.act`
+	`Action/jump_Attack2.act`
+	`Action/Attack_c.act`
+	`Action/Attack_d.act`
+	`Action/Attack_d_H.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Attack_a.atk`
+	`AttackInfo/Attack_b.atk`
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Attack.atk`
+	`AttackInfo/Attack_b.atk`
+	`AttackInfo/Attack_b.atk`
+	`AttackInfo/Attack_b.atk`
+[/attack info]
+
+[cooltime]
+	9000	3000	3000	10000	10000	10000	5000	5000
+[/cooltime]
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	500
+
+[warlike]
+	80
+
+[think term]
+	500
+
+[destination change term]
+	800
+
+[keep distance with target]
+	250
+
+[targeting bonus]
+	0	80	0	95	0	0	0	0	0	0	0	0	0	0	0	75	0	0	0	0	100
+	`[stand]`
+	`[dash]`	0	0	0
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action_H.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[item]
+	3227	200
+[/item]
+
+[level of difficulty]
+	[easy]
+		-50	3000
+	[medium]
+		-30	2000
+	[hard]
+		0	0
+	[ultimate]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]

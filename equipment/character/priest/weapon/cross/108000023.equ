@@ -1,0 +1,164 @@
+#PVF_File
+
+[name]
+	`欧贝斯的蓝龙十字架[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`施放技能时， 有2%%的几率使自身进入祝福状态。
+
+无法进行合成和分解。`
+
+[detail explain]
+	`释放技能时， 有2%%的几率使自身进入祝福状态20秒； 祝福状态下， 增加39点力量、 体力、 智力和精神。
+
+无法进行合成和分解。`
+
+[grade]
+	56
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical defense]
+	48
+
+[magical attack]
+	38
+
+[magical defense]
+	48
+
+[cast speed]
+	20
+
+[move speed]
+	10
+
+[HP regen speed]
+	35
+
+[MP regen speed]
+	8
+
+[price]
+	89600
+
+[repair price]
+	75264
+
+[value]
+	71680
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	516	476
+
+[equipment magical attack]
+	490	452
+
+[equipment physical defense]
+	560	550
+
+[equipment magical defense]
+	560	550
+
+[separate attack]
+	311	208
+
+[skill levelup]
+	`[priest]`	26	1
+	`[priest]`	45	1
+	`[priest]`	115	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/cross.img`	29
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	1	6
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		20000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[active status]
+		`bless`	45	39	39	39	39
+[/then]
+
+[not amplify]
+	1
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

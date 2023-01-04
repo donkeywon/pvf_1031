@@ -1,0 +1,168 @@
+#PVF_File
+
+[name]
+	`啮齿N7 - 虎蛇[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 有5%%的几率使敌人进入出血状态。
+攻击速度 +1%%
+
+无法进行合成和分解。`
+
+[detail explain]
+	`攻击速度 +1%%
+
+攻击时， 有5%%的几率使敌人进入出血状态10秒； 出血状态下的敌人， 每0.5秒受到75点伤害。 (若敌人高于Lv40， 则减少进入异常状态的几率； 反之， 则增加几率)
+无法进行合成和分解。`
+
+[grade]
+	44
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	40
+
+[physical attack]
+	47
+
+[attack speed]
+	10
+
+[price]
+	79200
+
+[repair price]
+	63360
+
+[value]
+	63360
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	459	387
+
+[equipment magical attack]
+	275	232
+
+[separate attack]
+	245	164
+
+[skill levelup]
+	`[gunner]`	40	1
+	`[at gunner]`	40	1
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/hcannon.img`	17
+
+[field image]
+	`Item/field_weapon.img`	4
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	2	3
+
+[layer variation]
+	2790
+	`hcanc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`hcanb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	2	3
+
+[layer variation]
+	2790
+	`at_hcanc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_hcanb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2800
+
+[item group name]
+	`hcannon`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[cooltime]
+		15000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[probability]
+		5
+	[active status]
+		`bleeding`	40	1500
+[/then]
+
+[not amplify]
+	1
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

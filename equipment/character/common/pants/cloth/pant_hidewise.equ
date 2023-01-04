@@ -1,0 +1,134 @@
+#PVF_File
+
+[name]
+	`贤者的智慧下装`
+
+[name2]
+	`Hiding Wisdom Pants of Wise Person`
+
+[grade]
+	63
+
+[rarity]
+	5
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[magical attack]
+	40
+
+[magical defense]
+	32
+
+[hit recovery]
+	12
+
+[anti evil]
+	5
+
+[need material]
+	3228	43
+
+[repair price]
+	33340
+
+[value]
+	30240
+
+[equipment physical defense]
+	680	650
+
+[icon]
+	`Item/common/pants.img`	34
+
+[field image]
+	`Item/field_equip.img`	1
+
+[equipment type]
+	`[pants]`	16
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	24
+
+[weight]
+	1100
+
+[item group name]
+	`cl pants`
+
+[cool time]
+	10000
+
+[set name]
+	`贤者的智慧  套装`
+
+[set item]
+	20120	22115	24125	10134	12131	14118	18115	16108
+[/set item]
+
+[piece set ability]
+	3	
+	[MP MAX]
+		500
+	[magical critical hit]
+		3
+[/piece set ability]
+
+[piece set ability]
+	5	
+	[MP regen speed]
+		14
+	[attack speed]
+		20
+[/piece set ability]
+
+[piece set ability]
+	8	
+	[cast speed]
+		50
+	[if]
+		[target type]
+			`human`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[if]
+		[target type]
+			`undead`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[parameter basic explain]
+		`对人型怪敌人的伤害 +10%%
+对不死族敌人的伤害 +10%%`
+[/piece set ability]
+
+[possible kiri protect]

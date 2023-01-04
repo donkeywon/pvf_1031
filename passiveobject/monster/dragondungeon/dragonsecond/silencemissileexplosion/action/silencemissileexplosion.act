@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/NenSpearExplosionBase.ani`
+	[SUB ANI]
+		`../Animation/ExplosionNormal2_3.ani`	0	1
+		`../Animation/ExplosionDodge2_3.ani`	0	2
+		`../Animation/FireEffect1.ani`	0	3
+		`../Animation/FireEffect2.ani`	0	4
+		`../Animation/FireEffect3.ani`	0	5
+		`../Animation/HorizonCircle1.ani`	0	6
+		`../Animation/VerticalCircle.ani`	0	7
+		`../Animation/MiniLightning1.ani`	2	8
+		`../Animation/MiniLightning2.ani`	2	9
+		`../Animation/MiniLightning3.ani`	3	10
+		`../Animation/MiniLightning4.ani`	3	11
+		`../Animation/MiniLightning5.ani`	3	12
+		`../Animation/MiniLightning6.ani`	3	13
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESSES]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESSES]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[MUCU LIMIT CONTROL]
+		6000
+[/BEHAVIOR]

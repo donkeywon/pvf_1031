@@ -1,0 +1,147 @@
+#PVF_File
+
+[name]
+	`传承 : 战争女神的薄纱长袍`
+
+[name2]
+	`Legacy : Coat of Ishtar`
+
+[grade]
+	47
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	45
+
+[magical attack]
+	23
+
+[magical defense]
+	23
+
+[MP regen speed]
+	6
+
+[price]
+	32900
+
+[repair price]
+	29017
+
+[value]
+	26320
+
+[equipment physical defense]
+	600	576
+
+[skill levelup]
+	`[mage]`	59	1
+	`[mage]`	55	1
+	`[mage]`	47	1
+	`[at mage]`	14	1
+	`[at mage]`	28	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/IconArmor.img`	240
+
+[field image]
+	`Item/field_equip.img`	0
+
+[equipment type]
+	`[coat]`	17
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	1399
+
+[item group name]
+	`cl coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 战争女神的薄纱战袍  套装`
+
+[set item]
+	10112	12110	14100	18091	16086
+[/set item]
+
+[item overpower part]
+
+[set ability]
+	[physical attack]
+		30
+	[magical attack]
+		53
+	[magical defense]
+		23
+	[fire resistance]
+		10
+	[MP regen speed]
+		9
+	[move speed]
+		20
+	[cast speed]
+		40
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福可以使自身增加7%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	70
+	[/then]
+	[skill levelup]
+		`[swordman]`	44	1
+		`[fighter]`	15	1
+		`[at fighter]`	15	1
+		`[gunner]`	29	1
+		`[at gunner]`	29	1
+		`[mage]`	27	1
+		`[mage]`	58	1
+		`[mage]`	46	1
+		`[at mage]`	28	1
+		`[at mage]`	24	1
+		`[priest]`	69	1
+		`[demonic swordman]`	44	1
+	[/skill levelup]
+[/set ability]
+
+[possible kiri protect]

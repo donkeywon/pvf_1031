@@ -1,0 +1,35 @@
+#PVF_File
+
+[type]
+	`include`
+
+[range]
+	130
+
+[duration]
+	1000
+
+[destroy method]
+	`duration`
+	`source destroy`
+[/destroy method]
+
+[event time]
+	`first`	500
+	`repeat`	0
+	`update`	250
+[/event time]
+
+[overlab type]
+	`overlab`
+
+[target]
+	[object type]
+		`character`
+	[ally type]
+		`ally`
+[/target]
+
+[event]
+	`appendage`	113
+[/event]

@@ -1,0 +1,93 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check key cooltime]
+			`a`
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	40.0	40.0	16.0	16.0
+			[true]
+		
+			[think]
+				[target state]
+					4
+				[true]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	14
+					[true]
+				
+					[think]
+						[check key cooltime]
+							`lowkick`
+						[true]
+						[return]
+							-1
+						[false]
+						[return]
+							6
+					[/think]
+	[false]
+	[return]
+		3
+	[/think]
+	[false]
+	[return]
+		7
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	110.0	110.0	23.0	23.0
+		[true]
+	
+		[think]
+			[target state]
+				4
+			[true]
+			[return]
+				-1
+			[false]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	5
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					2
+			[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	210.0	210.0	40.0	40.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`goldattack`
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				5
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return]
+		1
+	[/think]
+[/ai pattern]

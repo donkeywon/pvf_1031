@@ -1,0 +1,303 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Change.ani`
+	[SUB ANI]
+		`../Animation/weapon/Change_weapon.ani`	0	1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`Stay1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`Damage11.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`Damage12.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		`Down1.act`
+	[CHANGE ACTION FILE]
+	[OVERTURN]
+		`Overturn1.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`Sit1.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`Move1.act`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		0	
+		[attack speed]
+		[%]
+			40.0
+		[equipment physical attack]
+		[%]
+			40.0
+		[equipment physical defense]
+		[%]
+			40.0
+		[hit recovery]
+		[%]
+			40.0
+		[move speed]
+		[%]
+			20.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		6
+	[DO BEHAVIOR]
+	[ME]
+		7
+	[DO BEHAVIOR]
+	[ME]
+		8
+	[DO BEHAVIOR]
+	[ME]
+		9
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		10
+	[DO BEHAVIOR]
+	[ME]
+		11
+	[DO BEHAVIOR]
+	[ME]
+		12
+	[DO BEHAVIOR]
+	[ME]
+		13
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12638
+		[PARTICLE FILENAME]
+			`../Particle/Thunder.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	20	0
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12638
+		[PARTICLE FILENAME]
+			`../Particle/Thunder.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	-20	0
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12638
+		[PARTICLE FILENAME]
+			`../Particle/Thunder.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-40	20	0
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12638
+		[PARTICLE FILENAME]
+			`../Particle/Thunder.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-40	-20	0
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12638
+		[PARTICLE FILENAME]
+			`../Particle/Thunder.ptl`
+		[LEVEL]
+			0
+		[POS]
+			100	30	0
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12638
+		[PARTICLE FILENAME]
+			`../Particle/Thunder.ptl`
+		[LEVEL]
+			0
+		[POS]
+			100	-30	0
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12638
+		[PARTICLE FILENAME]
+			`../Particle/Thunder.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-100	30	0
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12638
+		[PARTICLE FILENAME]
+			`../Particle/Thunder.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-100	-30	0
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12638
+		[PARTICLE FILENAME]
+			`../Particle/Thunder.ptl`
+		[LEVEL]
+			0
+		[POS]
+			160	40	0
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12638
+		[PARTICLE FILENAME]
+			`../Particle/Thunder.ptl`
+		[LEVEL]
+			0
+		[POS]
+			160	-40	0
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12638
+		[PARTICLE FILENAME]
+			`../Particle/Thunder.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-160	40	0
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12638
+		[PARTICLE FILENAME]
+			`../Particle/Thunder.ptl`
+		[LEVEL]
+			0
+		[POS]
+			-160	-40	0
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

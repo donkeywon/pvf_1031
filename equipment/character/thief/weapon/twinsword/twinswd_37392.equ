@@ -1,0 +1,147 @@
+#PVF_File
+
+[name]
+	`冰龙斯卡萨的蚀骨双剑`
+
+[name2]
+	`找不到代码name2_37392`
+
+[basic explain]
+	`攻击时， 有15%%的几率附加10%%的冰属性伤害。
+无法进行分解。`
+
+[grade]
+	64
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	48
+
+[attack speed]
+	-80
+
+[price]
+	115200
+
+[repair price]
+	96768
+
+[value]
+	92160
+
+[equipment physical attack]
+	616	565
+
+[equipment magical attack]
+	483	443
+
+[separate attack]
+	360	242
+
+[physical critical hit]
+	5
+
+[skill levelup]
+	`[thief]`	30	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/thief/twinswd.img`	88
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[thief]`
+
+[variation]
+	19	0
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[water element]`
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		15
+	[add absolute damage]
+		`water`
+		`%`	10
+[/then]
+
+[routing priority]
+	`thief`	1
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

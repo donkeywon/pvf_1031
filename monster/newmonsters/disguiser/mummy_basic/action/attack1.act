@@ -1,0 +1,33 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack1.ani`
+	[SUB ANI]
+		`../Animation/Attack1_lighting.ani`	0	5
+	[/SUB ANI]
+	[SOUND]
+		`ATK_LIGHTNING`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8252
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			80	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

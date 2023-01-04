@@ -1,0 +1,223 @@
+#PVF_File
+
+[name]
+	`魔女阿嘉璐`
+
+[category]
+	`[devil]`
+	`[close-tough]`
+[/category]
+
+[appear sound]
+	`AGARUM_MEET`
+
+[damage sound]
+	`R_AGARUM_DMG`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	120
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	150
+	`[HP MAX]`	`*`	800
+[/ability category]
+
+[level]
+	70	70
+
+[fire resistance]
+	-20	-20
+
+[dark resistance]
+	10	10
+
+[light resistance]
+	-6	-6
+
+[slow resistance]
+	50	50
+
+[freeze resistance]
+	100	100
+
+[stun resistance]
+	50	50
+
+[curse resistance]
+	50	50
+
+[blind resistance]
+	50	50
+
+[stone resistance]
+	50	50
+
+[sleep resistance]
+	50	50
+
+[confuse resistance]
+	50	50
+
+[hold resistance]
+	50	50
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1200	1200
+
+[weight]
+	185000	185000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[face image]
+	`Monster/MonsterFace.img`	483
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[attack action]
+	`Action/Attack_01.act`
+	`Action/Attack_d.act`
+	`Action/Metamorphosis.act`
+	`Action/Summon_ready.act`
+	`Action/Summon_loop.act`
+	`Action/Bite_green.act`
+	`Action/Bite_blue.act`
+	`Action/Bite_red.act`
+	`Action/Bite_soul.act`
+	`Action/heroBite_green.act`
+	`Action/heroBite_blue.act`
+	`Action/heroBite_red.act`
+	`Action/leafattack.act`
+	`Action/leafattack2.act`
+	`Action/iceattack.act`
+	`Action/victimsummon.act`
+[/attack action]
+
+[last action]
+	`Action/last.act`
+
+[attack info]
+	`attackinfo/attack_1.atk`
+	`attackinfo/attack_d.atk`
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+[/attack info]
+
+[event super on scr]
+	`[on hp]`	10	10000	1
+	`[unbreakable]`	-1	-1	-1	-1
+[/event super on scr]
+
+[cooltime]
+	5000	5000	80000000	25000	5000	80000000	80000000	80000000	80000000	3000000	3000000	3000000	20000	15000	20000	25000
+[/cooltime]
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/heroEvent.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	300
+
+[vision]
+	1000
+
+[set damage check]
+	3000
+
+[hp regen rate]
+	0.0	0.0
+
+[lie frame]
+	1	2	3	3	4
+
+[level of difficulty]
+	[easy]
+		-40	2000
+	[medium]
+		-20	1000
+	[hard]
+		0	0
+	[ultimate]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]
+
+[add gravity in aerial]
+	1	10.0	-300.0

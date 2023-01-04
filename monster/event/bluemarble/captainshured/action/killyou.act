@@ -1,0 +1,62 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/MotorCycle/Killyou.ani`
+	[SUB ANI]
+		`../Animation/Killyou.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`准备发射！`	4	40
+	[/SPEECH]
+	[SOUND]
+		`SHURED_SKILL_02`	5
+		`R_LASERGUNB`	8
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		0
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			48029
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			100	0	68
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		0
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30015
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			80	0	73
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

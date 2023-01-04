@@ -1,0 +1,159 @@
+#PVF_File
+
+[name]
+	`艾克洛索的巨型蛛刺`
+
+[name2]
+	`找不到代码name2_35995`
+
+[basic explain]
+	`攻击时， 有2%%的几率发动艾克洛索的电极波。
+无法进行分解。`
+
+[detail explain]
+	`攻击时， 有2%%的几率发动艾克洛索的电极波。
+被电极波攻击时， 有10%%的几率使敌人进入感电状态； 若攻击感电状态的敌人， 则每次攻击都会附加107点伤害。 (若敌人高于Lv44， 则减少进入异常状态的几率； 反之， 则增加几率)
+无法进行分解。`
+
+[grade]
+	44
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	40
+
+[physical attack]
+	31
+
+[magical attack]
+	31
+
+[attack speed]
+	110
+
+[stuck]
+	1
+
+[price]
+	70400
+
+[repair price]
+	56320
+
+[value]
+	56320
+
+[equipment physical attack]
+	399	361
+
+[equipment magical attack]
+	420	380
+
+[separate attack]
+	245	164
+
+[physical critical hit]
+	5
+
+[magical critical hit]
+	5
+
+[icon]
+	`Item/weapon/priest/scythe.img`	64
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	20	0
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[jump power]
+	30
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[cooltime]
+		500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[passive object]
+		48151	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[routing priority]
+	`priest`	2
+	`priest`	3
+	`priest`	4
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

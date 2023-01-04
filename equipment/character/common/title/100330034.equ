@@ -1,0 +1,100 @@
+#PVF_File
+
+[name]
+	`2009祈祷成功-魔法师(力量)`
+
+[name2]
+	``
+
+[explain]
+	`攻击时， 有1%%的几率使自身进入霸体状态10秒； 但在决斗场中， 只能持续3秒。`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[physical attack]
+	27
+
+[physical defense]
+	18
+
+[attack speed]
+	30
+
+[cast speed]
+	20
+
+[move speed]
+	20
+
+[stuck]
+	-2
+
+[HP MAX]
+	100
+
+[MP MAX]
+	100
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[mage]`	19	1
+	`[mage]`	48	1
+	`[mage]`	35	1
+	`[mage]`	36	1
+	`[mage]`	97	1
+[/skill levelup]
+
+[icon]
+	`Item/Title/title.img`	140
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/prayer_greatsuccess2009glow.ani`
+[/custom animation]
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[probability]
+		1
+	[reduce duration at pvp module]
+		70
+	[buff]
+		`superarmor`
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,157 @@
+#PVF_File
+
+[name]
+	`碎霸炮 - 戴达罗斯`
+
+[name2]
+	`Daidaros, Heavy-complex Cannon`
+
+[basic explain]
+	`攻击时， 有4%%的几率使敌人进入灼伤状态。
+普通攻击时， 有10%%的几率发射杰克暴弹。
+普通攻击时， 有5%%的几率出现陨石。 (消耗1个无色小晶块)`
+
+[flavor text]
+	`把一切化为灰烬后自己也消失的火， 非常讨人喜欢。  --卡赞`
+
+[grade]
+	60
+
+[attach type]
+	`[trade]`
+
+[creation rate]
+	500
+
+[rarity]
+	4
+
+[weight]
+	2800
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[minimum level]
+	55
+
+[icon]
+	`item/weapon/gunner/hcannon.img`	27
+
+[field image]
+	`Item/field_weapon.img`	4
+
+[equipment type]
+	`[weapon]`	24
+
+[sub type]
+	3
+
+[durability]
+	28
+
+[price]
+	108000
+
+[value]
+	86400
+
+[cool time]
+	10000
+
+[physical attack]
+	25
+
+[equipment physical attack]
+	558	493
+
+[equipment magical attack]
+	335	296
+
+[if]
+	[cooltime]
+		1000
+	[my state]
+		`attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		4
+	[passive object]
+		23008	120	0	90	40	0	`Straight.ptl`
+	[/passive object]
+[/then]
+
+[if]
+	[cooltime]
+		1000
+	[my state]
+		`attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	1
+	[target]
+		`enemy`	-1
+	[probability]
+		1
+	[passive object]
+		48030	0	0	0	40	1	``
+	[/passive object]
+[/then]
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	3	1
+
+[layer variation]
+	2600
+	`hcanc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`hcanb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	3	1
+
+[layer variation]
+	2600
+	`at_hcanc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_hcanb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	68

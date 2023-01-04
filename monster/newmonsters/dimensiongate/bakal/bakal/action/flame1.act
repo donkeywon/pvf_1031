@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/flame1.ani`
+	[SUB ANI]
+		`../animation/flame_e.ani`	0	10
+		`../animation/ani/flame1.ani`	0	9
+	[/SUB ANI]
+	[SOUND]
+		`R_BAKAL_ATK`	2
+		`FREET_FIREBALL_02`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10333
+		[PARTICLE FILENAME]
+			`../Particle/flame1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			145	0	60
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

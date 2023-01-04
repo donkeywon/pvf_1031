@@ -1,0 +1,32 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[hit]
+			1
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`damage`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`damage2`
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					12
+			[/think]
+	[false]
+	[return]
+		11
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+[/ai pattern]

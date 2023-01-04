@@ -1,0 +1,71 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/show/Dimension_Wind_upS.ani`
+	[SUB ANI]
+		`../Animation/show/Dimension_Wind_upS1.ani`	0	1
+		`../Animation/show/Dimension_Wind_downS1.ani`	0	2
+		`../Animation/show/Dimension_Wind_downS.ani`	0	3
+	[/SUB ANI]
+	[SOUND]
+		`INHALE_WIND_LOOP`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[CHECK TIME]
+		500
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			400
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[CHECK TIME]
+		500
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			400
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[WIND APPENDAGE]
+		0.2	0.0	2	0	600
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Wind_stoneS.ptl`	200	0	0
+	[WIND APPENDAGE]
+		0.7	0.0	2	0	600
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		61	61
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]

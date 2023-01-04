@@ -1,0 +1,138 @@
+#PVF_File
+
+[name2]
+	`Aura Shield`
+
+[purchase cost]
+	20
+[/purchase cost]
+
+[required level]
+	5
+
+[required level range]
+	3
+
+[type]
+	`[active]`
+
+[skill class]
+	2
+
+[maximum level]
+	20
+
+[growtype maximum level]
+	10	10	10	10	10	10
+
+[skill fitness growtype]
+	0	1	2	3	4
+[/skill fitness growtype]
+
+[consume MP]
+	10	14
+
+[casting time]
+	1000	1000
+
+[durability decrease rate]
+	30
+
+[icon]
+	`Character/Mage/Effect/SkillIcon.img`	146
+	`Character/Mage/Effect/SkillIcon.img`	147
+
+[command]
+	{6=`(DOWN)`}
+	{8=`,`}
+	{6=`(UP)`}
+	{8=`,`}
+	{6=`(BUFF)`}
+[/command]
+
+[command key explain]
+	`操作指令 : ↓↑ + Space`
+
+[cool time]
+	5000	5000
+
+[auto cooltime apply]
+	0
+
+[level info]
+	2
+	10	250
+	12	214
+	13	188
+	15	167
+	17	150
+	18	136
+	20	125
+	22	115
+	23	107
+	25	100
+	27	94
+	28	88
+	30	83
+	32	79
+	33	75
+	35	71
+	37	68
+	38	65
+	40	63
+	42	60
+[/level info]
+
+[pvp]
+	[level info]
+		2
+		8	250
+		10	214
+		10	188
+		12	167
+		14	150
+		14	136
+		16	125
+		18	115
+		18	107
+		20	100
+		22	94
+		22	88
+		24	83
+		26	79
+		26	75
+		28	71
+		30	68
+		30	65
+		32	63
+		34	60
+	[/level info]
+[/pvp]
+
+[name]
+	`魔法护盾`
+
+[explain]
+	`受到敌人攻击时，可以用MP的削减来代替一定比率的HP消减。
+ 若再次施放技能，则会取消护盾效果; 在决斗场中，将采用未适用天平系统时的HP比率计算MP。`
+
+[basic explain]
+	`受到敌人攻击时，可以用MP的削减来代替一定比率的HP消减。`
+
+[level property]
+	1	99
+	`吸收伤害 : <int>%%
+每1点HP与MP变换比率 : <float2>`
+	-1	0	1.0
+	-1	1	0.01
+[/level property]
+
+[skill preloading image]
+	`Character/Mage/Effect/AuraShield/Auraf_d_down.img`
+	`Character/Mage/Effect/AuraShield/Auraf_d_up.img`
+	`Character/Mage/Effect/AuraShield/Aurar_d_down.img`
+	`Character/Mage/Effect/AuraShield/Aurar_d_up.img`
+[/skill preloading image]
+
+[feature skill index]
+	140

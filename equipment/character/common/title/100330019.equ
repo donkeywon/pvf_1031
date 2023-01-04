@@ -1,0 +1,108 @@
+#PVF_File
+
+[name]
+	`神秘王国的人偶剧 (魔女)`
+
+[name2]
+	``
+
+[explain]
+	`攻击时， 有1%%的几率使自身增加45点智力， 效果持续30秒。
+施放技能时， 有2%%的几率使自身增加10%%的魔法暴击率， 效果持续30秒。`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[magical attack]
+	27
+
+[magical defense]
+	18
+
+[cast speed]
+	20
+
+[move speed]
+	20
+
+[stuck]
+	-1
+
+[stuck resistance]
+	10
+
+[inventory limit]
+	5000
+
+[magical critical hit]
+	3
+
+[icon]
+	`Item/Title/title.img`	94
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/puppet_stage.ani`
+[/custom animation]
+
+[if]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`magical attack`
+		`+`	45
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`magical critical hit`
+		`+`	10
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

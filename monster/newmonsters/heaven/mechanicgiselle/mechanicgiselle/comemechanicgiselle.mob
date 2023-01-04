@@ -1,0 +1,104 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`机械吉赛尔`
+
+[face image]
+	`Monster/MonsterFace.img`	435
+
+[die effect]
+	0	1	1
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	2000
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	10
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	500
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	10
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	500
+[/ability category]
+
+[category]
+	`[machine]`
+[/category]
+
+[level]
+	60	60
+
+[move speed]
+	0	0
+
+[attack speed]
+	900	900
+
+[hit recovery]
+	1100	1100
+
+[weight]
+	80000000	80000000
+
+[vision]
+	10
+
+[stuckbonus on damage]
+	5	15	25	35
+
+[waiting action]
+	`Action/_Stay.act`
+
+[come in action ex]
+	`Action/_ComeIn.act`
+	`Action/_ComeIn1.act`	400	400
+
+[action list]
+	``
+[/action list]
+
+[attack info]
+	``
+[/attack info]
+
+[cooltime]
+	0
+[/cooltime]
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[keep distance with target]
+	1000
+
+[ai pattern]
+	[easy]
+		`ai/comeEvent.ai`
+		`ai/DestinationSelect.ai`
+		`ai/comeAction.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/comeEvent.ai`
+		`ai/DestinationSelect.ai`
+		`ai/comeAction.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/comeEvent.ai`
+		`ai/DestinationSelect.ai`
+		`ai/comeAction.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/comeEvent.ai`
+		`ai/DestinationSelect.ai`
+		`ai/comeAction.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+[/ai pattern]

@@ -1,0 +1,184 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`垃圾投掷者`
+
+[face image]
+	`Monster/MonsterFace.img`	271
+
+[die effect]
+	0	6	0
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	60
+	`[PHYSICAL_ATTACK]`	`*`	100
+	`[PHYSICAL_DEFENSE]`	`*`	100
+	`[MAGICAL_ATTACK]`	`*`	100
+	`[MAGICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[category]
+	`[goblin]`
+	`[human]`
+	`[range combat]`
+	`[close-carefully]`
+[/category]
+
+[intelligence]
+	70	70	3000
+
+[targeting bonus]
+	0	0	0	0	100	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	`[stand]`
+	`[dash]`	0	0	0
+
+[HP regen speed]
+	0	0
+
+[MP regen speed]
+	0	0
+
+[level]
+	40	50
+
+[move speed]
+	500	500
+
+[attack speed]
+	500	500
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	800	800
+
+[weight]
+	40000	40000
+
+[sight]
+	400
+
+[warlike]
+	30
+
+[attack delay]
+	1500
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[lie frame]
+	2	3	2	3	4
+
+[attack sound]
+	`THROWER_ATK`
+
+[appear sound]
+	`THROWER_MEET_02`
+
+[damage sound]
+	`R_THROWER_DMG`
+
+[die sound]
+	`R_THROWER_DIE`
+
+[ambient sound]
+	`THROWER_AMB_02`
+
+[common champion drop item]
+[/common champion drop item]
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[attack action]
+	`Action/shootWagon.act`
+	`Action/shootBrick.act`
+	`Action/shootLadder.act`
+	`Action/shootNipper.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Wagon.atk`
+	`AttackInfo/Brick.atk`
+	`AttackInfo/Ladder.atk`
+	`AttackInfo/Nipper.atk`
+[/attack info]
+
+[cooltime]
+	12500	5000	7500	2500
+[/cooltime]
+
+[vision]
+	350
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[keep distance with target]
+	300
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

@@ -1,0 +1,130 @@
+#PVF_File
+
+[name]
+	`冰凌图腾`
+
+[name2]
+	`Totem of Cold Snowstorm`
+
+[basic explain]
+	`攻击时， 有3%%的几率出现雪崩。`
+
+[grade]
+	37
+
+[rarity]
+	2
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	35
+
+[physical attack]
+	37
+
+[stuck]
+	-1
+
+[price]
+	51800
+
+[repair price]
+	41440
+
+[value]
+	41440
+
+[equipment physical attack]
+	349	332
+
+[equipment magical attack]
+	299	284
+
+[separate attack]
+	164	109
+
+[skill levelup]
+	`[priest]`	16	1
+	`[priest]`	41	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/priest/totem.img`	20
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[priest]`
+
+[variation]
+	2	2
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[water element]`
+
+[if]
+	[cooltime]
+		3000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		3
+	[passive object]
+		48045	0	0	0	10	2	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

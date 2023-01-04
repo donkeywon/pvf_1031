@@ -1,0 +1,92 @@
+#PVF_File
+
+[name]
+	`我是特种兵`
+
+[name2]
+	`Amyranger Members`
+
+[explain]
+	`攻击人型怪敌人时， 有2%%的几率使自身增加25点力量、 35点体力、 2%%的攻击速度和3%%的移动速度， 效果持续30秒。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	306
+
+[custom animation]
+	`TitleAnimation/amyranger_members.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	10
+
+[physical defense]
+	10
+
+[magical attack]
+	10
+
+[magical defense]
+	10
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[cooltime]
+		40000
+	[target type]
+		`human`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		2
+	[duration]
+		30000
+	[stat]
+		`attack speed`
+		`+`	20
+	[stat]
+		`move speed`
+		`+`	30
+	[stat]
+		`physical attack`
+		`+`	25
+	[stat]
+		`physical defense`
+		`+`	35
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

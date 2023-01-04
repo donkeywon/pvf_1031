@@ -1,0 +1,27 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Throw.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8199
+		[PARTICLE FILENAME]
+			`../Particle/ThrowStone.ptl`
+		[LEVEL]
+			0
+		[POS]
+			20	0	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,83 @@
+#PVF_File
+
+[name]
+	`玩偶之家`
+
+[name2]
+	`Tower of Despair 35 Floor`
+
+[explain]
+	`跌倒时， 有5%%的几率使自身进入霸体状态5秒。 (在决斗场中无效)`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	373
+
+[custom animation]
+	`TitleAnimation/apc_tower_of_despair_35.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	12
+
+[physical defense]
+	22
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[cooltime]
+		20000
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[set my state]
+		1
+	[my state]
+		`down`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		5000
+	[probability]
+		5
+	[buff]
+		`superarmor`
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

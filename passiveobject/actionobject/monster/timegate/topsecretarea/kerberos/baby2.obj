@@ -1,0 +1,39 @@
+#PVF_File
+
+[name]
+	`青铜石巨人的子弹`
+
+[width]
+	0	0
+
+[pass type]
+	`[pass all]`
+
+[basic action]
+	`Action/Etc_3.act`
+
+[etc action]
+	`Action/Etc_3_1.act`
+	`Action/baby_3.act`
+[/etc action]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	99999999
+[/object destroy condition]
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[ENEMY]`
+	[homing velocity]
+		160.0	1.0
+	[homing check gap]
+		300
+	[diff rotation]
+		360.0
+	[homing direction]
+		-1
+	[sync target move]
+[/homing]

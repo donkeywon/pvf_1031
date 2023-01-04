@@ -1,0 +1,74 @@
+#PVF_File
+
+[set name]
+	`寒月摄魂  套装`
+
+[piece set ability]
+	3	
+	[skill data up]
+		`[at mage]`	1	`[dungeon type]`	`[level]`	0	`%`	12
+		`[at mage]`	1	`[dungeon type]`	`[level]`	1	`%`	12
+		`[at mage]`	8	`[dungeon type]`	`[level]`	0	`%`	12
+		`[at mage]`	8	`[dungeon type]`	`[level]`	1	`%`	12
+		`[at mage]`	8	`[dungeon type]`	`[cooltime]`	0	`%`	-25
+	[/skill data up]
+	[parameter basic explain]
+		`[魔法旋风]攻击力 +12%%
+[冰魄剑]攻击力 +12%%
+[冰魄剑]冷却时间 -25%%`
+[/piece set ability]
+
+[piece set ability]
+	6	
+	[skill data up]
+		`[at mage]`	21	`[dungeon type]`	`[level]`	1	`+`	2
+		`[at mage]`	21	`[dungeon type]`	`[cooltime]`	0	`%`	-10
+		`[at mage]`	23	`[dungeon type]`	`[level]`	0	`%`	25
+		`[at mage]`	23	`[dungeon type]`	`[cooltime]`	0	`%`	-20
+		`[at mage]`	23	`[dungeon type]`	`[static]`	1	`%`	-30
+		`[at mage]`	22	`[dungeon type]`	`[level]`	0	`+`	2
+		`[at mage]`	22	`[dungeon type]`	`[level]`	1	`%`	12
+	[/skill data up]
+	[parameter basic explain]
+		`[寒冰连枪]多段攻击次数 +2
+[寒冰连枪]冷却时间 -10%%
+[冰魄旋枪]攻击力 +25%%
+[冰魄旋枪]冷却时间 -20%%
+[冰魄旋枪]移动距离 -30%%
+[冰之领悟]MP消耗量减少率 +2%%
+[冰之领悟]智力增加量 +12%%`
+[/piece set ability]
+
+[piece set ability]
+	9	
+	[if]
+		[module]
+			`[dungeon type]`
+		[/module]
+		[use skill]
+			`at mage`	31
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			60000
+		[probability]
+			100
+		[appendage]
+			45
+	[/then]
+	[skill data up]
+		`[at mage]`	12	`[dungeon type]`	`[level]`	0	`%`	30
+		`[at mage]`	12	`[dungeon type]`	`[level]`	1	`%`	30
+		`[at mage]`	32	`[dungeon type]`	`[level]`	1	`%`	20
+		`[at mage]`	32	`[dungeon type]`	`[level]`	2	`%`	20
+		`[at mage]`	32	`[dungeon type]`	`[level]`	3	`%`	20
+		`[at mage]`	32	`[dungeon type]`	`[static]`	1	`%`	-100
+	[/skill data up]
+	[parameter basic explain]
+		`[冰魄锤击]攻击力 +30%%
+[极冰绽放]立即施放魔法阵
+[极冰绽放]攻击力 +20%%
+施放[寒冰之境]时， 可以使自身增加3%%的攻击速度和1.5%%的移动速度， 效果持续60秒。 (效果最多可重叠5次)`
+[/piece set ability]

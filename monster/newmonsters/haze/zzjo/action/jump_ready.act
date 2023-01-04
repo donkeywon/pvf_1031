@@ -1,0 +1,24 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/jump.ani`
+	[SUB ANI]
+		`../animation/weapon/jump.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[JUMP TO TARGET]
+		-1	500	-2500	1.1	800	400	2	4	5
+[/BEHAVIOR]

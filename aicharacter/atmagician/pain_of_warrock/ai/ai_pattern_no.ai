@@ -1,0 +1,67 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	150.0	150.0	50.0	50.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`darkness`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`flame`
+				[true]
+				[return str]
+					`straight_shoot`
+				[false]
+				[return str]
+					`flame`
+			[/think]
+	[false]
+	[return str]
+		`darkness`
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	560.0	560.0	50.0	50.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`darkness`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`crystal`
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`chain`
+					[true]
+					[return str]
+						`straight_shoot`
+					[false]
+					[return str]
+						`chain`
+				[/think]
+	[false]
+	[return str]
+		`crystal`
+	[/think]
+	[false]
+	[return str]
+		`darkness`
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+[/ai pattern]

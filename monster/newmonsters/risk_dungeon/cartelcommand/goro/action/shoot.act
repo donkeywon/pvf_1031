@@ -1,0 +1,94 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/shoot.ani`
+	[SUB ANI]
+		`../Animation/shoot_1.ani`	0	1
+		`../Animation/shoot_2.ani`	0	2
+		`../Animation/shoot_3.ani`	0	3
+		`../Animation/shoot_4.ani`	0	4
+	[/SUB ANI]
+	[SPEECH]
+		`咕噜~咕噜~发射~！`	2	30
+	[/SPEECH]
+	[SOUND]
+		`GORO_SKILL_01`	0
+		`GORO_MACHINEGUN`	2
+		`GORO_MACHINEGUN`	4
+		`GORO_MACHINEGUN`	6
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE FLOATING HEIGHT]
+		150
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35679
+		[PARTICLE FILENAME]
+			`../Particle/bullet1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			43	7	-17
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35679
+		[PARTICLE FILENAME]
+			`../Particle/bullet1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			61	-7	-6
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE FLOATING HEIGHT]
+		80
+[/BEHAVIOR]

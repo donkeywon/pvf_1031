@@ -1,0 +1,149 @@
+#PVF_File
+
+[name]
+	`传承 : 摩羯守护神的钛钢胸甲`
+
+[name2]
+	`Legacy : Titanium Armor of Vulcan`
+
+[grade]
+	67
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	65
+
+[physical attack]
+	35
+
+[physical defense]
+	29
+
+[magical attack]
+	46
+
+[price]
+	80400
+
+[repair price]
+	70912
+
+[value]
+	64320
+
+[equipment physical defense]
+	4200	4080
+
+[skill levelup]
+	`[swordman]`	20	2
+	`[priest]`	7	1
+	`[priest]`	53	1
+	`[priest]`	85	2
+	`[demonic swordman]`	20	2
+	`[creator mage]`	134	2
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/common/coat.img`	235
+
+[field image]
+	`Item/field_equip.img`	15
+
+[equipment type]
+	`[coat]`	21
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	60
+
+[weight]
+	5000
+
+[item group name]
+	`mt coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 摩羯守护神的钛钢板甲  套装`
+
+[set item]
+	11685	13683	15682	17677	19685
+[/set item]
+
+[set ability]
+	[HP MAX]
+		300
+	[MP MAX]
+		500
+	[physical attack]
+		105
+	[magical attack]
+		105
+	[stuck resistance]
+		40
+	[inventory limit]
+		5000
+	[MP regen speed]
+		10
+	[move speed]
+		45
+	[attack speed]
+		45
+	[cast speed]
+		60
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福可以使自身增加7%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	70
+	[/then]
+	[skill levelup]
+		`[swordman]`	22	1
+		`[swordman]`	74	2
+		`[priest]`	45	2
+		`[priest]`	81	2
+		`[priest]`	49	1
+		`[priest]`	88	2
+		`[demonic swordman]`	74	2
+		`[creator mage]`	132	1
+		`[creator mage]`	249	2
+	[/skill levelup]
+[/set ability]
+
+[possible kiri protect]

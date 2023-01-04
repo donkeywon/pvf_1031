@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack1.ani`
+	[SOUND]
+		`SWING_SHORT`	2
+		`HUNTER_COMMAND_ACCEPT`	2
+	[/SOUND]
+	[SPEECH]
+		`你……胆敢……`	0	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1350	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11119
+		[PARTICLE FILENAME]
+			`../Particle/bone_spear.ptl`
+		[LEVEL]
+			0
+		[POS]
+			130	0	50
+		[USE MY DIRECTION]
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

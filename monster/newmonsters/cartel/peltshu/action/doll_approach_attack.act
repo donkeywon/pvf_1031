@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/approach_attack.ani`
+	[SUB ANI]
+		`../Animation/approach_Attack_Card.ani`	0	1
+	[/SUB ANI]
+	[SOUND]
+		`PELTSHU_ATK_02`	1
+		`SILKHET_CARD_FASTEN`	2
+		`R_SILKHET_CARD`	2
+		`R_SILKHET_CARD`	2
+		`R_SILKHET_CARD`	2
+		`R_SILKHET_CARD`	2
+		`R_SILKHET_CARD`	3
+		`R_SILKHET_CARD`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8890
+		[PARTICLE FILENAME]
+			`../Particle/peltshu_shot.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	250
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

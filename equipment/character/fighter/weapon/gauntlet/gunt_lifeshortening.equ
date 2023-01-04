@@ -1,0 +1,167 @@
+#PVF_File
+
+[name]
+	`冬之逝臂铠`
+
+[name2]
+	`Life Shortening`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入冰冻状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入冰冻状态5秒； 但在决斗场中， 只能持续2.5秒。 (若敌人高于Lv65， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	67
+
+[rarity]
+	2
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	65
+
+[physical attack]
+	64
+
+[attack speed]
+	-80
+
+[stuck]
+	-1
+
+[HP MAX]
+	270
+
+[price]
+	107200
+
+[repair price]
+	90048
+
+[value]
+	85760
+
+[equipment physical attack]
+	713	689
+
+[equipment magical attack]
+	535	517
+
+[separate attack]
+	293	199
+
+[physical critical hit]
+	1
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/weapon/fighter/gauntlet.img`	51
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	10	1
+
+[layer variation]
+	2790
+	`gauntletc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gauntletb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	10	1
+
+[layer variation]
+	2150
+	`at_gauntleta`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_gauntletc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_gauntletx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		7500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`freeze`	65
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

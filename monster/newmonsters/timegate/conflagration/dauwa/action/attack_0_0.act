@@ -1,0 +1,33 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_0_3.ani`
+	[SUB ANI]
+		`../Animation/attack_0_0_2.ani`	0	-1
+		`../Animation/attack_0_1_0.ani`	0	1
+		`../Animation/attack_0_0_1.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`燃烧吧！`	0	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1000	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		0
+[/BEHAVIOR]

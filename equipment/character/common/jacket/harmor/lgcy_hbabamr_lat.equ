@@ -1,0 +1,144 @@
+#PVF_File
+
+[name]
+	`传承 : 神圣的守夜女神星纹锁甲`
+
+[name2]
+	`Legacy : Holy Coat of Latri`
+
+[grade]
+	32
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	30
+
+[physical attack]
+	20
+
+[physical defense]
+	20
+
+[magical attack]
+	11
+
+[price]
+	32000
+
+[repair price]
+	25600
+
+[value]
+	25600
+
+[equipment physical defense]
+	1680	1584
+
+[skill levelup]
+	`[swordman]`	40	1
+	`[fighter]`	14	1
+	`[at fighter]`	14	1
+	`[gunner]`	36	1
+	`[at gunner]`	36	1
+	`[priest]`	50	1
+	`[priest]`	121	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/IconArmor.img`	276
+
+[field image]
+	`Item/field_equip.img`	10
+
+[equipment type]
+	`[coat]`	20
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	3600
+
+[item group name]
+	`ha coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 神圣的守夜女神星纹重甲  套装`
+
+[set item]
+	11282	13282	19278
+[/set item]
+
+[item overpower part]
+
+[set ability]
+	[HP MAX]
+		300
+	[physical attack]
+		45
+	[physical defense]
+		45
+	[magical attack]
+		36
+	[light resistance]
+		8
+	[skill levelup]
+		`[swordman]`	24	1
+		`[fighter]`	60	1
+		`[at fighter]`	60	1
+		`[gunner]`	36	1
+		`[at gunner]`	36	1
+		`[priest]`	50	1
+		`[priest]`	116	1
+		`[demonic swordman]`	24	1
+	[/skill levelup]
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福可以使自身增加5%%的攻击速度和施放速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`attack speed`
+			`+`	50
+		[stat by condition]
+			`cast speed`
+			`+`	50
+	[/then]
+[/set ability]
+
+[possible kiri protect]

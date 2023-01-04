@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/ThrowSpearJail2.ani`
+	[SUB ANI]
+		`../Animation/ThrowSpearJail2_100.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`THROW_BONE`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[PASSIVE OBJECT]
+		[/IS OBJECT TYPE]
+		[IS INDEX]
+			8562
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND DO BEHAVIOR]
+	[ME]
+		0
+[/BEHAVIOR]

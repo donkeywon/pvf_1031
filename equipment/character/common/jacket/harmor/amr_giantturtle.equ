@@ -1,0 +1,141 @@
+#PVF_File
+
+[name]
+	`玄武护魂胸甲`
+
+[name2]
+	`Giant Turtle BackGuard`
+
+[basic explain]
+	`被背击时伤害 -10%%`
+
+[flavor text]
+	`它就像乌龟背上的甲壳一样， 无论多大的背击伤害都不是威胁。`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	29
+
+[physical defense]
+	27
+
+[magical attack]
+	21
+
+[price]
+	86800
+
+[repair price]
+	76557
+
+[value]
+	69440
+
+[equipment physical defense]
+	3360	3072
+
+[icon]
+	`Item/common/coat.img`	109
+
+[field image]
+	`Item/field_equip.img`	10
+
+[equipment type]
+	`[coat]`	22
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	3600
+
+[item group name]
+	`ha coat`
+
+[cool time]
+	10000
+
+[if]
+	[attack condition]
+		`back attack`
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	10
+[/then]
+
+[set name]
+	`玄武护魂重甲  套装`
+
+[set item]
+	11313	13312	15304
+[/set item]
+
+[set ability]
+	[equipment physical defense]
+		1000	1000
+	[if]
+		[attack condition]
+			`back attack`
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[add absolute defense percent]
+			`all`	30
+	[/then]
+	[if]
+		[attack condition]
+			`critical`
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[add absolute defense percent]
+			`all`	20
+	[/then]
+	[fullset basic explain]
+		`被背击时伤害 -30%%
+被暴击时伤害 -20%%`
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[need material]
+	2749212	49
+
+[icon mark]
+	`Item/IconMark.img`	68

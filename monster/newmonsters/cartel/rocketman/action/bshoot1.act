@@ -1,0 +1,85 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/BShoot10.ani`
+	[SUB ANI]
+		`../Animation/BShoot1_Fire3_1.ani`	0	-11
+		`../Animation/BShoot1_Fire2_1.ani`	0	-5
+		`../Animation/BShoot1_Fire1_1.ani`	0	-5
+		`../Animation/BShoot1_Floor.ani`	0	0
+		`../Animation/BShoot1_Fire3_2.ani`	0	8
+		`../Animation/BShoot1_Fire2_2.ani`	0	15
+		`../Animation/BShoot1_Fire1_2.ani`	0	17
+	[/SUB ANI]
+	[SPEECH]
+		`焚烧大地！`	1	100
+	[/SPEECH]
+	[SOUND]
+		`ROCKETMAN_SKILL_01`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[TARGET]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			8169
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8169
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8172
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	400
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		500	3000	500	150	0	0	0
+	[CASTING]
+		2500	4
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]

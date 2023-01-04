@@ -1,0 +1,265 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`机动队长苏雷德`
+
+[face image]
+	`Monster/MonsterFace.img`	296
+
+[die effect]
+	0	1	1
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	1680
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	195
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	450
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	150
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	450
+[/ability category]
+
+[appear sound]
+	`SHURED_MEET`
+
+[damage sound]
+	`R_SHURED_DMG`
+
+[die sound]
+	`SHURED_DIE`
+
+[ambient sound]
+	`SHURED_AMB`
+
+[category]
+	`[machine]`
+	`[human]`
+	`[melee combat]`
+	`[close-tough]`
+[/category]
+
+[change direction by target]
+	0
+
+[HP regen speed]
+	0	0
+
+[MP regen speed]
+	0	0
+
+[level]
+	71	72
+
+[fire resistance]
+	30	30
+
+[water resistance]
+	30	30
+
+[dark resistance]
+	30	30
+
+[light resistance]
+	30	30
+
+[slow resistance]
+	75	75
+
+[freeze resistance]
+	75	75
+
+[poison resistance]
+	75	75
+
+[stun resistance]
+	75	75
+
+[curse resistance]
+	75	75
+
+[blind resistance]
+	75	75
+
+[lightning resistance]
+	75	75
+
+[stone resistance]
+	75	75
+
+[sleep resistance]
+	75	75
+
+[burn resistance]
+	75	75
+
+[weapon break resistance]
+	75	75
+
+[bleeding resistance]
+	75	75
+
+[piercing resistance]
+	75	75
+
+[stuck resistance]
+	75	75
+
+[confuse resistance]
+	75	75
+
+[hold resistance]
+	75	75
+
+[armor break resistance]
+	75	75
+
+[move speed]
+	2400	2400
+
+[attack speed]
+	1200	1200
+
+[cast speed]
+	1200	1200
+
+[hit recovery]
+	1540	1540
+
+[weight]
+	85000	85000
+
+[warlike]
+	90
+
+[vision]
+	600
+
+[stuckbonus on damage]
+	3	3	3	3
+
+[lie frame]
+	1	2	1	2	3
+
+[common champion drop item]
+	3171	7000
+[/common champion drop item]
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[damage action 1]
+	`Action/damage.act`
+
+[damage action 2]
+	`Action/damage.act`
+
+[come in action]
+	`Action/ComeIn.act`	300	150
+
+[attack action]
+	`Action/Turning.act`
+	`Action/AttackReady.act`
+	`Action/DestroyYou.act`
+	`Action/YouMustDie.act`
+	`Action/Killyou.act`
+	`Action/Turning2.act`
+	`Action/Turning3.act`
+	`Action/JumpRollingAttack2.act`
+	`Action/RollingAttack.act`
+	`Action/JumpRollingAttack.act`
+[/attack action]
+
+[attack info]
+	`Attackinfo/Attack2.atk`
+	`Attackinfo/Willy.atk`
+	``
+	``
+	``
+	`Attackinfo/Attack2.atk`
+	`Attackinfo/Attack2.atk`
+	``
+	`Attackinfo/Willy.atk`
+	`Attackinfo/Willy.atk`
+[/attack info]
+
+[cooltime]
+	0	5500	20000	8000	8000	0	0	20000
+[/cooltime]
+
+[atk super on scr]
+[/atk super on scr]
+
+[etc action]
+	`Action/RollingAttack.act`
+	`Action/AttackReady.act`
+	`Action/JumpRollingAttack.act`
+	`Action/AttackReady2.act`
+	`Action/Rest.act`
+	`Action/JumpRollingAttack2.act`
+[/etc action]
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	1000
+
+[warlike]
+	100
+
+[think term]
+	300
+
+[destination change term]
+	500
+
+[keep distance with target]
+	50
+
+[keep range distance with target]
+	35	0	20	15
+
+[targeting bonus]
+	50	75	90	0	95	0	0	0	0	0	0	0	0	100	0	0	0	0	0	0	0
+	`[stand]`
+	`[dash]`	0	0	0
+
+[ai pattern]
+	[normal]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/normal]
+	[expert]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/expert]
+	[master]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/master]
+	[king]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/king]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

@@ -1,0 +1,119 @@
+#PVF_File
+
+[name]
+	`沙影贝利特的枪手长袍`
+
+[basic explain]
+	`无法进行分解。`
+
+[grade]
+	79
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[physical attack]
+	33
+
+[magical attack]
+	33
+
+[magical defense]
+	36
+
+[attack speed]
+	20
+
+[stuck]
+	-3
+
+[need material]
+	3338	525
+
+[value]
+	47360
+
+[equipment physical defense]
+	2064	1944
+
+[physical critical hit]
+	3
+
+[magical critical hit]
+	3
+
+[icon]
+	`Item/new_equipment/03_leather/coat/leather_coat.img`	13
+
+[field image]
+	`Item/FieldImage.img`	0
+
+[equipment type]
+	`[coat]`	18
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	33
+
+[weight]
+	1900
+
+[item group name]
+	`lt coat`
+
+[cool time]
+	10000
+
+[routing priority]
+[/routing priority]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[set name]
+	`沙影贝利特的枪手套装`
+
+[set item]
+	100060018	100110013
+[/set item]
+
+[set ability]
+	[fullset basic explain]
+		`攻击人型敌人时， 附加10%%的伤害。`
+	[if]
+		[attack success]
+			1
+		[target type]
+			`human`
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+[/set ability]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[icon mark]
+	`Item/IconMark.img`	66

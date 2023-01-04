@@ -1,0 +1,510 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/SaintSkull.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[DIM]
+		`summoncount`	
+		[=]
+			0
+	[/DIM]
+	[TRIGGER]
+		1
+	[ON]
+	[TRIGGER]
+		2
+	[ON]
+	[TRIGGER]
+		3
+	[ON]
+	[TRIGGER]
+		4
+	[ON]
+	[TRIGGER]
+		5
+	[ON]
+	[TRIGGER]
+		6
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			3000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[IF]
+		`summoncount`	
+		[=]
+			0
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8214
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			410	190	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`summoncount`	
+		[=]
+			`summoncount`
+		[+]
+			1
+	[/DIM]
+	[DIM]
+		`time`	
+		[=]
+			`time`
+		[+]
+			6000
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			3000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[IF]
+		`summoncount`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8214
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			740	190	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`summoncount`	
+		[=]
+			`summoncount`
+		[+]
+			1
+	[/DIM]
+	[DIM]
+		`time`	
+		[=]
+			`time`
+		[+]
+			6000
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			3000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[IF]
+		`summoncount`	
+		[=]
+			2
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8214
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			740	310	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`summoncount`	
+		[=]
+			`summoncount`
+		[+]
+			1
+	[/DIM]
+	[DIM]
+		`time`	
+		[=]
+			`time`
+		[+]
+			6000
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			3000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[IF]
+		`summoncount`	
+		[=]
+			3
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8214
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			410	310	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`summoncount`	
+		[=]
+			`summoncount`
+		[+]
+			1
+	[/DIM]
+	[DIM]
+		`time`	
+		[=]
+			`time`
+		[+]
+			6000
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			3000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[IF]
+		`summoncount`	
+		[=]
+			4
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8214
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			290	250	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`summoncount`	
+		[=]
+			`summoncount`
+		[+]
+			1
+	[/DIM]
+	[DIM]
+		`time`	
+		[=]
+			`time`
+		[+]
+			6000
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			3000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[IF]
+		`summoncount`	
+		[=]
+			5
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8214
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			590	170	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`summoncount`	
+		[=]
+			`summoncount`
+		[+]
+			1
+	[/DIM]
+	[DIM]
+		`time`	
+		[=]
+			`time`
+		[+]
+			6000
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			3000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[IF]
+		`summoncount`	
+		[=]
+			6
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8214
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			900	250	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`summoncount`	
+		[=]
+			`summoncount`
+		[+]
+			1
+	[/DIM]
+	[DIM]
+		`time`	
+		[=]
+			`time`
+		[+]
+			6000
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			3000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[IF]
+		`summoncount`	
+		[=]
+			7
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8214
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			590	340	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`summoncount`	
+		[=]
+			`summoncount`
+		[+]
+			1
+	[/DIM]
+	[DIM]
+		`time`	
+		[=]
+			`time`
+		[+]
+			6000
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`summoncount`	
+		[=]
+			6
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		9
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		2
+	[OFF]
+	[TRIGGER]
+		3
+	[OFF]
+	[TRIGGER]
+		4
+	[OFF]
+	[TRIGGER]
+		5
+	[OFF]
+	[TRIGGER]
+		6
+	[OFF]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			8214
+		[/IS INDEX]
+		[CHECKED NO]
+		[>=]
+			4
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		10
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61809
+		[/IS INDEX]
+		[CHECKED NO]
+		[<]
+			1
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		11
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]

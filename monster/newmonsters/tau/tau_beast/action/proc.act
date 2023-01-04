@@ -1,0 +1,66 @@
+#PVF_File
+
+[TRIGGER]
+	[LIMIT]
+		0
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[IS OURTEAMATTACKED]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		0
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[IS TARGETACTIVESTATUS]
+			3
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`竟敢攻击我的队伍！！！！我要让你付出性命代价！！！！`
+	[APPENDAGE]
+		7000	
+		[move speed]
+		[%]
+			120.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CHANGE MY TARGET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`就是现在！！以战斗民族牛头怪的名誉突击！！！！`
+	[APPENDAGE]
+		7000	
+		[move speed]
+		[%]
+			120.0
+	[/APPENDAGE]
+[/BEHAVIOR]

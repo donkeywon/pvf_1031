@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/throw.ani`
+	[SUB ANI]
+		`../Animation/danger.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`NORMALSILVER_JUGGLING`	0
+		`NORMALSILVER_ATK_02`	3
+	[/SOUND]
+[/MOTION]
+
+[BEHAVIOR]
+	[CASTING]
+		1500	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9258
+		[PARTICLE FILENAME]
+			`../Particle/Dagger.ptl`
+		[LEVEL]
+			0
+		[POS]
+			20	0	55
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]

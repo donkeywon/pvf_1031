@@ -1,0 +1,121 @@
+#PVF_File
+
+[name]
+	`妖精女王`
+
+[name2]
+	``
+
+[explain]
+	`攻击或施放技能时， 有3%%的几率使自身增加5%%的攻击速度、 施放速度和移动速度。`
+
+[flavor text]
+	`<妖精的尾巴宠物礼包>`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[physical attack]
+	25
+
+[physical defense]
+	25
+
+[magical attack]
+	25
+
+[magical defense]
+	25
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[magical critical hit]
+	3
+
+[physical critical hit]
+	3
+
+[anti evil]
+	8
+
+[icon mark]
+	`Item/IconMark.img`	64
+
+[icon]
+	`Item/Title/title_cn.img`	207
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+	[stat]
+		`cast speed`
+		`+`	50
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+	[stat]
+		`cast speed`
+		`+`	50
+[/then]

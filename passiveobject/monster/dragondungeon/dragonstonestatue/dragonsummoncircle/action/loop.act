@@ -1,0 +1,129 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Loop_Normal.ani`
+	[SUB ANI]
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`summontime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[DIM]
+		`destroytime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`summontime`	
+		[+]
+			1800
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54043
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[USE MY BASEPOS]
+		[WARNING MARK]
+			0	0	110	2
+	[/CREATE PASSIVEOBJECT]
+	[SUMMON MONSTER]
+		[INDEX]
+			100011
+		[LEVEL]
+			80
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[TEAM]
+			100
+		[USE MY BASEPOS]
+	[/SUMMON MONSTER]
+	[DIM]
+		`summontime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54043
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[USE MY BASEPOS]
+		[WARNING MARK]
+			0	0	110	2
+	[/CREATE PASSIVEOBJECT]
+	[SUMMON MONSTER]
+		[INDEX]
+			100012
+		[LEVEL]
+			80
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[TEAM]
+			100
+		[USE MY BASEPOS]
+	[/SUMMON MONSTER]
+	[DIM]
+		`summontime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`destroytime`	
+		[+]
+			10000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]

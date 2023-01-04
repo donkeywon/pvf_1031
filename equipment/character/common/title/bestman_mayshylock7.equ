@@ -1,0 +1,120 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	``
+
+[explain]
+	`攻击时以2%%的机率在60秒内召唤一只和自己的等级相同的夏洛克·戈林德。
+偶尔也会召唤牛头怪兽。(决斗场不发动。)`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	170
+
+[equipment type]
+	`[title name]`	1
+
+[custom animation]
+	`TitleAnimation/bestman_may.ani`
+[/custom animation]
+
+[usable period]
+	7
+
+[HP MAX]
+	100
+
+[MP MAX]
+	100
+
+[physical attack]
+	27
+
+[magical attack]
+	27
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[if]
+	[cooltime]
+		90000
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		60000
+	[probability]
+		2
+	[summon monster]
+		61729	-1	1
+[/then]
+
+[if]
+	[cooltime]
+		150000
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[summon monster]
+		61730	-1	1
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

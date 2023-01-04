@@ -1,0 +1,40 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Rage.ani`
+	[SPEECH]
+		`好饿！`	0	50
+		`我要吃哥布林！`	0	50
+	[/SPEECH]
+	[SOUND]
+		`GGLIC_SKILL_02`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			39000
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			10
+		[POS]
+			0	0	0
+		[FOLLOWING TARGET]
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

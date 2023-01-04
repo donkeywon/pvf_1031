@@ -1,0 +1,66 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AirShot.ani`
+	[SOUND]
+		`SILKHET_SKILL_02`	1
+		`R_SILKHET_CARD`	1
+		`R_SILKHET_CARD`	1
+		`R_SILKHET_CARD`	2
+		`R_SILKHET_CARD`	2
+		`R_SILKHET_CARD`	3
+	[/SOUND]
+	[SPEECH]
+		`让你见识下魔术的威力！！`	3	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8871
+		[PARTICLE FILENAME]
+			`../Particle/SilkHatCard_nansa.ptl`
+		[LEVEL]
+			0
+		[POS]
+			45	0	100
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[CHECKUP]
+		[ZSPEED]
+		[<]
+			0
+		[ZPOS]
+		[<=]
+			0
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+	[/SET SPEED]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

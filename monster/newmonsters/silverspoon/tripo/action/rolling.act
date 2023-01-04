@@ -1,0 +1,53 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Rolling.ani`
+	[SUB ANI]
+		`../Animation/Rolling_1.ani`	0	0
+		`../Animation/TornadoDust.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`TRYPO_FIREROLLING`	0
+	[/SOUND]
+	[SPEECH]
+		`滚来滚去~`	5	30
+		`别动我的食物！哼！`	5	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Y AXIS]
+		[RANDOM SELECT]
+			0	0
+		[/RANDOM SELECT]
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		13	13
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[stun]
+		100	60	2500
+[/BEHAVIOR]

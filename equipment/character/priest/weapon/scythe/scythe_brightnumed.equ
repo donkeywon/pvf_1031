@@ -1,0 +1,143 @@
+#PVF_File
+
+[name]
+	`冥日战镰`
+
+[name2]
+	`Bright Numed Scythe`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入感电状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入感电状态6秒； 若攻击感电状态的敌人， 则每次攻击都会附加230点伤害。 (若敌人高于Lv65， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[grade]
+	67
+
+[rarity]
+	2
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	65
+
+[physical attack]
+	42
+
+[magical attack]
+	42
+
+[attack speed]
+	80
+
+[stuck]
+	1
+
+[price]
+	93800
+
+[repair price]
+	78792
+
+[value]
+	75040
+
+[equipment physical attack]
+	564	545
+
+[equipment magical attack]
+	594	574
+
+[separate attack]
+	293	199
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/weapon/priest/scythe.img`	49
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[priest]`
+
+[variation]
+	12	0
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[cooltime]
+		9000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		6000
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`lightning`	65	230
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

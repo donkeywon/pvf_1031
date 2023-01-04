@@ -1,0 +1,25 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[state]
+			`==`
+			`jump`
+		[false]
+	
+		[think]
+			[state]
+				`==`
+				`jump attack`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`jumpshot`
+		[/think]
+	[true]
+	[return]
+		-1
+	[/think]
+[/ai pattern]

@@ -1,0 +1,67 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/shadow.ani`
+	[SUB ANI]
+		`../animation/shadow_ghost.ani`	0	0
+		`../Animation/weapon/Change_Shadow_wp.ani`	0	0
+		`../Animation/weapon/Change_Shadow_ghost_wp.ani`	0	0
+		`../Animation/shadow_eff.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`DIRE_THOUGHT`	0
+	[/SOUND]
+	[SPEECH]
+		`地狱迪阿鲁~`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			56412
+		[LEVEL]
+			0
+		[POS]
+			94	0	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`Change_Move.act`
+	[CHANGE ACTION FILE]
+	[STAY]
+		`Change_Stay.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		`Change_Down.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`Change_Damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`Change_Damage2.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`Change_Sit.act`
+	[CHANGE ACTION FILE]
+	[OVERTURN]
+		`Change_Overturn.act`
+[/BEHAVIOR]

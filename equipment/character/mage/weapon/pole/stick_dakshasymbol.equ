@@ -1,0 +1,174 @@
+#PVF_File
+
+[name]
+	`(旧) 贤者屠魔棍`
+
+[name2]
+	`Daksha's Symbol`
+
+[basic explain]
+	`施放技能时， 有2%%的几率使自身进入祝福状态。`
+
+[detail explain]
+	`施放技能时， 有2%%的几率使自身进入祝福状态20秒； 祝福状态下， 可增加75点的力量、 体力、 智力和精神。`
+
+[flavor text]
+	`坦拉库沓的贤者达克夏使用的棍。`
+
+[grade]
+	45
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	40
+
+[physical attack]
+	32
+
+[magical attack]
+	32
+
+[attack speed]
+	30
+
+[stuck]
+	-1
+
+[price]
+	72000
+
+[repair price]
+	57600
+
+[value]
+	57600
+
+[equipment physical attack]
+	471	419
+
+[equipment magical attack]
+	392	349
+
+[separate attack]
+	259	173
+
+[icon]
+	`Item/weapon/mage/pole.img`	41
+
+[field image]
+	`Item/field_weapon.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	3	1
+
+[layer variation]
+	2790
+	`dakshac`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`dakshad`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	3	1
+
+[layer variation]
+	2790
+	`at_dakshac`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_dakshad`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	3	1
+
+[layer variation]
+	2790
+	`dakshac`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`dakshad`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`POLE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2400
+
+[item group name]
+	`pole`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		20000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[active status]
+		`bless`	40	75	75	75	75
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,51 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Oder.ani`
+	[SUB ANI]
+		`../Animation/Weapon/Oder.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`JEFF_SKILL_02`	0
+	[/SOUND]
+	[SPEECH]
+		`全员火力~集中射击！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			61354
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND MESSAGE]
+	[ATTACK_COMMAND]
+		4
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		4000	7000	3000	100	255	25	25
+	[CHANGE DIRECTION BY TARGET]
+		1
+[/BEHAVIOR]

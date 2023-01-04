@@ -1,0 +1,140 @@
+#PVF_File
+
+[name]
+	`地狱公爵战镰`
+
+[name2]
+	`Blue Scythe of Astaros`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入冰冻状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入冰冻状态8秒。 (若敌人高于Lv50， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	47
+
+[rarity]
+	2
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	45
+
+[physical attack]
+	30
+
+[magical attack]
+	30
+
+[attack speed]
+	80
+
+[price]
+	65800
+
+[repair price]
+	55272
+
+[value]
+	52640
+
+[equipment physical attack]
+	391	376
+
+[equipment magical attack]
+	412	396
+
+[separate attack]
+	202	135
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	49	1
+	`[priest]`	115	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/priest/scythe.img`	23
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[priest]`
+
+[variation]
+	2	5
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		14400
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		8000
+	[probability]
+		2
+	[active status]
+		`freeze`	50
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_0.ani`
+	[SUB ANI]
+		`../Animation/attack_0_1.ani`	0	1
+		`../Animation/attack_0_eff.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`FLYINGGRANITE_WING_LOOP`	0
+		`R_FLYINGGRANITE_SKILL`	2
+		`FLYINGGRANITE_MAGMA`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16093
+		[PARTICLE FILENAME]
+			`../Particle/stone1.ptl`
+		[LEVEL]
+			1
+		[POS]
+			40	1	10
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

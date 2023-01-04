@@ -1,0 +1,51 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack1.ani`
+	[SUB ANI]
+		`../animation/attack1_e.ani`	0	10
+	[/SUB ANI]
+	[SPEECH]
+		`在那里！！！`	0	100
+	[/SPEECH]
+	[SOUND]
+		`WRAITH_ATK_01`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		100	100	100	255	255	255	255
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[stun]
+		100	70	3000
+	[ACTIVE STATUS]
+	[bleeding]
+		100	70	8000	1000
+	[RESTORE]
+	[HP]
+		-30
+	[%]
+[/BEHAVIOR]

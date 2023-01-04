@@ -1,0 +1,23 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[hp]
+			`%>=`	80
+		[true]
+		[import ai]
+			`100HP.ai`
+		[false]
+	
+		[think]
+			[hp]
+				`%>=`	40
+			[true]
+			[import ai]
+				`80HP.ai`
+			[false]
+			[import ai]
+				`40HP.ai`
+		[/think]
+	[/think]
+[/ai pattern]

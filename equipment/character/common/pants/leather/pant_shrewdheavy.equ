@@ -1,0 +1,141 @@
+#PVF_File
+
+[name]
+	`敏者的荣誉下装`
+
+[name2]
+	`Heavy Honor Pants of Shrewd Person`
+
+[grade]
+	63
+
+[rarity]
+	5
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	35
+
+[magical attack]
+	35
+
+[magical defense]
+	30
+
+[hit recovery]
+	24
+
+[anti evil]
+	5
+
+[need material]
+	3228	43
+
+[repair price]
+	38896
+
+[value]
+	35280
+
+[equipment physical defense]
+	1360	1300
+
+[icon]
+	`Item/common/pants.img`	35
+
+[field image]
+	`Item/FieldImage.img`	1
+
+[equipment type]
+	`[pants]`	17
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	27
+
+[weight]
+	1500
+
+[item group name]
+	`lt pants`
+
+[cool time]
+	10000
+
+[set name]
+	`敏者的荣誉  套装`
+
+[set item]
+	20121	22116	24126	10505	12503	14493	18500	16492
+[/set item]
+
+[piece set ability]
+	3	
+	[MP MAX]
+		200
+	[physical critical hit]
+		2
+	[magical critical hit]
+		2
+[/piece set ability]
+
+[piece set ability]
+	5	
+	[MP regen speed]
+		9
+	[move speed]
+		20
+	[cast speed]
+		30
+[/piece set ability]
+
+[piece set ability]
+	8	
+	[attack speed]
+		20
+	[if]
+		[target type]
+			`human`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[if]
+		[target type]
+			`undead`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[parameter basic explain]
+		`对人型怪敌人的伤害 +10%%
+对不死族敌人的伤害 +10%%`
+[/piece set ability]
+
+[possible kiri protect]

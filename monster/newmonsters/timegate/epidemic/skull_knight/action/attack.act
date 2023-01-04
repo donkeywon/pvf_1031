@@ -1,0 +1,50 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack.ani`
+	[SUB ANI]
+		`../animation/effect/attack_e1.ani`	0	0
+		`../animation/effect/attack_e2.ani`	0	0
+		`../animation/effect/attack_e3.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`暗黑的力量~！`	0	10
+	[/SPEECH]
+	[SOUND]
+		`R_SKULLKNIGHT_ATK`	2
+		`R_SQUARESWDA`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			650
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

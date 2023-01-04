@@ -1,0 +1,117 @@
+#PVF_File
+
+[name]
+	`艾丽丝之泪`
+
+[basic explain]
+	`施放技能时， 有5%%的几率使所有属性强化增加35点， 效果持续10秒。
+无法进行分解。`
+
+[detail explain]
+	`施放技能时， 有5%%的几率使所有属性强化增加35点， 效果持续10秒。 (冷却时间30秒)
+无法进行分解。`
+
+[flavor text]
+	`一个拥有人类内心的人偶的眼泪……  --阿甘左`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	49
+
+[physical defense]
+	49
+
+[magical attack]
+	49
+
+[magical defense]
+	49
+
+[need material]
+	3338	755
+
+[value]
+	67200
+
+[creation rate]
+	0
+
+[icon]
+	`Item/new_equipment/11_magicstone/magicstone.img`	73
+
+[field image]
+	`Item/field_equip.img`	23
+
+[equipment type]
+	`[magic stone]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`magic stone`
+
+[cool time]
+	10000
+
+[routing priority]
+[/routing priority]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[probability]
+		5
+	[reduce probability to human armor at pvp module]
+		80
+	[stat]
+		`fire attack`
+		`+`	35
+	[stat]
+		`water attack`
+		`+`	35
+	[stat]
+		`light attack`
+		`+`	35
+	[stat]
+		`dark attack`
+		`+`	35
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,35 @@
+#PVF_File
+
+[TRIGGER]
+	[CHECK TIME]
+		6000
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[IS TARGETACTIVESTATUS]
+			5
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH WITH POSITION]
+		`敌退我进，是最好的战术！`	0	0
+	[APPENDAGE]
+		4500	
+		[equipment physical attack]
+		[%]
+			100.0
+		[equipment magical attack]
+		[%]
+			100.0
+		[move speed]
+		[%]
+			100.0
+	[/APPENDAGE]
+[/BEHAVIOR]

@@ -1,0 +1,171 @@
+#PVF_File
+
+[name]
+	`(旧) 天界猎杀者`
+
+[name2]
+	`Tacoma`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态。
+被攻击时， 有4%的几率使自身进入眩晕状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态5秒。 (若敌人高于Lv34， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+被攻击时， 有4%%几率使敌人进入眩晕状态5秒。 (若敌人高于Lv34， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	38
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	34
+
+[physical attack]
+	27
+
+[magical attack]
+	41
+
+[price]
+	68400
+
+[repair price]
+	54720
+
+[value]
+	54720
+
+[equipment physical attack]
+	374	311
+
+[equipment magical attack]
+	325	271
+
+[separate attack]
+	216	144
+
+[skill levelup]
+	`[gunner]`	26	2
+	`[at gunner]`	26	2
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/musket.img`	17
+
+[field image]
+	`Item/field_weapon.img`	3
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	2	1
+
+[layer variation]
+	2790
+	`musketc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`musketb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	2	1
+
+[layer variation]
+	2790
+	`at_musketc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_musketb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	2100
+
+[item group name]
+	`musket`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		7500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		2
+	[active status]
+		`stun`	34
+[/then]
+
+[if]
+	[cooltime]
+		1000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		4
+	[reduce probability at pvp module]
+		100
+	[active status]
+		`stun`	34
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

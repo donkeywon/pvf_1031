@@ -1,0 +1,58 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/leafAttack.ani`
+	[SUB ANI]
+		`../animation/sub_ani/sho_leafAttack.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`AGARUM_SKILL_03`	0
+		`SPIN_CIRCLE`	0
+		`WIND_SPIN`	2
+	[/SOUND]
+	[SPEECH]
+		`接我一招！！碎石！`	0	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9323
+		[PARTICLE FILENAME]
+			`../particle/bomb.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	50	100
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9323
+		[PARTICLE FILENAME]
+			`../particle/bomb.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	100
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9323
+		[PARTICLE FILENAME]
+			`../particle/bomb.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	-50	100
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

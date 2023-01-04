@@ -1,0 +1,237 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`黑夜使者卡莫卡`
+
+[face image]
+	`Monster/MonsterFace.img`	287
+
+[die effect]
+	0	21	0
+
+[ability table]
+	0
+
+[common champion elemental property]
+	`[fire element]`
+	`[water element]`
+	`[dark element]`
+	`[light element]`
+	`[no element]`
+[/common champion elemental property]
+
+[ability category]
+	`[HP MAX]`	`*`	685
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[category]
+	`[human]`
+	`[melee combat]`
+	`[close-carefully]`
+[/category]
+
+[appear sound]
+	`CLAES_MEET`
+
+[damage sound]
+	`R_CLAES_DMG`
+
+[die sound]
+	`R_CLAES_DIE`
+
+[ambient sound]
+	`CLAES_AMB`
+
+[level]
+	60	60
+
+[fire resistance]
+	0	0
+
+[water resistance]
+	0	0
+
+[dark resistance]
+	30	30
+
+[light resistance]
+	-30	-30
+
+[freeze resistance]
+	30	30
+
+[stun resistance]
+	30	30
+
+[blind resistance]
+	30	30
+
+[stone resistance]
+	30	30
+
+[sleep resistance]
+	30	30
+
+[hold resistance]
+	30	30
+
+[slow resistance]
+	30	30
+
+[curse resistance]
+	30	30
+
+[confuse resistance]
+	30	30
+
+[lightning resistance]
+	0	0
+
+[bleeding resistance]
+	0	0
+
+[poison resistance]
+	0	0
+
+[burn resistance]
+	0	0
+
+[piercing resistance]
+	0	0
+
+[move speed]
+	800	800
+
+[attack speed]
+	1000	1000
+
+[hit recovery]
+	1100	1100
+
+[weight]
+	80000	80000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[keep distance with target]
+	100
+
+[keep range distance with target]
+	40	0	5	5
+
+[item]
+	3277	9700	3227	275
+[/item]
+
+[common champion drop item]
+[/common champion drop item]
+
+[add gravity in aerial]
+	1	20.0	-300.0
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[lie frame]
+	1	2	3	3	4
+
+[action list]
+	`Action/Attack1.act`
+	`Action/Attack2.act`
+	`Action/Attack3.act`
+	`Action/Attack4.act`
+	`Action/Attack5.act`
+[/action list]
+
+[attack info]
+	`AttackInfo/Attack1.atk`
+	``
+	`AttackInfo/Attack2.atk`
+	``
+	``
+[/attack info]
+
+[cooltime]
+	5000	5000	3000	3000	15000
+[/cooltime]
+
+[think term]
+	200
+
+[destination change term]
+	500
+
+[keep distance with target]
+	100
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/heroEvent.ai`
+		`ai/heroDestinationSelect.ai`
+		`ai/heroAction.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[level of difficulty]
+	[easy]
+		-50	3000
+	[medium]
+		-30	2000
+	[hard]
+		0	0
+	[ultimate]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]

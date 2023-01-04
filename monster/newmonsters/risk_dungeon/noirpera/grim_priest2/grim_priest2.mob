@@ -1,0 +1,205 @@
+#PVF_File
+
+[name]
+	`暴戾搜捕团祭司凯迪尼斯`
+
+[face image]
+	`Monster/MonsterFace.img`	380
+
+[die effect]
+	0	7	0
+
+[category]
+	`[human]`
+[/category]
+
+[ambient sound]
+	``
+
+[attack sound]
+	`R_HOODLUM_ATK`
+
+[appear sound]
+	`HOODLUM_MEET`
+
+[damage sound]
+	`R_HOODLUM_DMG`
+
+[die sound]
+	`HOODLUM_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	185
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	150
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	185
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	150
+	`[HP MAX]`	`*`	1200
+[/ability category]
+
+[level]
+	100	100
+
+[fire resistance]
+	-10	-10
+
+[water resistance]
+	10	10
+
+[dark resistance]
+	20	20
+
+[light resistance]
+	-15	-15
+
+[slow resistance]
+	30	30
+
+[freeze resistance]
+	50	50
+
+[poison resistance]
+	30	30
+
+[stun resistance]
+	30	30
+
+[curse resistance]
+	80	80
+
+[blind resistance]
+	30	30
+
+[lightning resistance]
+	-20	-20
+
+[stone resistance]
+	50	50
+
+[bleeding resistance]
+	30	30
+
+[confuse resistance]
+	80	80
+
+[hold resistance]
+	90	90
+
+[move speed]
+	200	200
+
+[attack speed]
+	800	800
+
+[cast speed]
+	500	500
+
+[hit recovery]
+	700	700
+
+[weight]
+	65000	65000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[waiting action]
+	`Action/priest2_Stay.act`
+
+[move action]
+	`Action/priest2_move.act`
+
+[sit action]
+	`Action/priest2_sit.act`
+
+[damage action 1]
+	`Action/priest2_damage1.act`
+
+[damage action 2]
+	`Action/priest2_damage2.act`
+
+[down action]
+	`Action/priest2_down.act`
+
+[overturn action]
+	`Action/priest2_overturn.act`
+
+[attack action]
+	`Action/priest2_Fire_shoot.act`
+	`Action/priest2_Angry.act`
+	`Action/priest2_Teleport.act`
+[/attack action]
+
+[attack info]
+	``
+	``
+	``
+[/attack info]
+
+[event super on scr]
+	`[always]`	5000	1
+	`[breakable]`	20	7	1	1
+[/event super on scr]
+
+[cooltime]
+	3500	0	10000
+[/cooltime]
+
+[think term]
+	200
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event2.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action2.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event2.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action2.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event2.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action2.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event2.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action2.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event2.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action2.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	50
+
+[keep range distance with target]
+	200	0	50	30
+
+[warlike]
+	80
+
+[intelligence]
+	80	100	3000
+
+[vision]
+	400
+
+[set damage check]
+	3000
+
+[lie frame]
+	1	2	3	3	4

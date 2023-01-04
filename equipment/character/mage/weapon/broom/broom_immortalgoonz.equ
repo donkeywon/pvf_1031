@@ -1,0 +1,241 @@
+#PVF_File
+
+[name]
+	`永恒的骨弹扫把`
+
+[name2]
+	`Immortal Skull Goonz`
+
+[basic explain]
+	`近距离武器攻击力 +10%%
+
+攻击时， 有5%%的几率发射盗尸者的骷髅爆弹。
+施放[烈炎]时， 增加40点智力。
+施放[寒冰]时， 增加40点智力。`
+
+[detail explain]
+	`近距离武器攻击力 +10%% (在决斗场中 +5%%)
+
+攻击时， 有5%%的几率发射盗尸者的骷髅爆弹。
+施放[烈炎]时， 可增加40点智力， 效果持续20秒。
+施放[寒冰]时， 可增加40点智力， 效果持续20秒。`
+
+[grade]
+	61
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[magical attack]
+	41
+
+[attack speed]
+	60
+
+[move speed]
+	30
+
+[price]
+	97600
+
+[repair price]
+	81984
+
+[value]
+	78080
+
+[equipment physical attack]
+	558	518
+
+[equipment magical attack]
+	612	568
+
+[separate attack]
+	341	230
+
+[icon]
+	`Item/weapon/mage/broom.img`	26
+
+[field image]
+	`Item/field_weapon.img`	10
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	5	0
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	5	0
+
+[layer variation]
+	2150
+	`at_brooma`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_broomd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	5	0
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BROOM_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`broom`
+
+[cool time]
+	10000
+
+[required skill]
+	91
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[passive object]
+		48079	70	0	70	30	0	`Redrock.ptl`
+	[/passive object]
+[/then]
+
+[if]
+	[attacker]
+		`character`	-1
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	10
+[/then]
+
+[pvp]
+	[if]
+		[attacker]
+			`character`	-1
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase damage]
+			`%`	5
+	[/then]
+[/pvp]
+
+[if]
+	[use skill]
+		`creator mage`	250
+	[/use skill]
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[stat]
+		`magical attack`
+		`+`	40
+[/then]
+
+[if]
+	[use skill]
+		`creator mage`	251
+	[/use skill]
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[stat]
+		`magical attack`
+		`+`	40
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

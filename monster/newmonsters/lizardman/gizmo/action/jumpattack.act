@@ -1,0 +1,53 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack3.ani`
+	[SUB ANI]
+		`../Animation/Attack1_Effect.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`JUMP_START`	0
+		`FLYDRAGON_DMG`	0
+		`CLAW_SWING`	3
+		`FLYDRAGON_DIE`	3
+	[/SOUND]
+	[SPEECH]
+		`嘻~`	0	25
+		`?~`	0	25
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			200
+		[Z AXIS]
+			600
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Z AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]

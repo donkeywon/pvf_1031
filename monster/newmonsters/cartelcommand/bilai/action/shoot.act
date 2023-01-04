@@ -1,0 +1,79 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/BShoot11.ani`
+	[SUB ANI]
+		`../Animation/BShoot1_Fire3_2.ani`	0	1
+		`../Animation/BShoot1_Fire2_2.ani`	0	2
+		`../Animation/BShoot1_Fire1_2.ani`	0	3
+	[/SUB ANI]
+	[SPEECH]
+		`呀哈哈！！将你们全部炸死！`	1	100
+	[/SPEECH]
+	[SOUND]
+		`R_BELAY_SKILL_03`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61270	61283	61284	61285
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET HP]
+		100
+	[SET DAMAGE BOX]
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			10566
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DAMAGE BOX]
+	[ON]
+	[MOVE PATTERN OFF]
+	[MOVE PATTERN]
+		[TYPE]
+			3
+		[VELOCITY]
+			1000
+		[STAY TIME]
+			500
+		[AREA]
+			400	220	150	900	220	300
+		[MIN MOVE DISTANCE]
+			150
+	[/MOVE PATTERN]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

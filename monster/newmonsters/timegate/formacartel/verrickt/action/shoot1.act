@@ -1,0 +1,37 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/shoot1.ani`
+	[SUB ANI]
+		`../animation/shoot1_w.ani`	0	1
+		`../animation/shoot1_w1.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`卡勒特，见证我的传奇吧！`	2	10
+	[/SPEECH]
+	[SOUND]
+		`HAS_SHOT_03`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10520
+		[PARTICLE FILENAME]
+			`../Particle/bullet1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			110	0	65
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

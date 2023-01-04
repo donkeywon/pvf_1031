@@ -1,0 +1,48 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Stomping.ani`
+	[SUB ANI]
+		`../Animation/EarthBreakOut.ani`	0	-6
+		`../Animation/EarthBreakOut1.ani`	0	-6
+		`../Animation/EarthBreakOut3.ani`	0	-5
+		`../Animation/EarthBreakOut2.ani`	0	-4
+		`../Animation/EarthBreakIn.ani`	0	-2
+		`../Animation/EarthBreakStone2.ani`	0	1
+		`../Animation/EarthBreakStone1.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			21031
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			90	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			21032
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			90	0	0
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		1	1000
+[/BEHAVIOR]

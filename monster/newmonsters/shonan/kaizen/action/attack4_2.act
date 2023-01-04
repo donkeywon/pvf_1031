@@ -1,0 +1,44 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack4_2.ani`
+	[SUB ANI]
+		`../animation/weapon/Attack4_2.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`KAIGEN_SPEAR_02`	1
+		`R_WEAPONM_ATK_03`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		2600	
+		[equipment physical defense]
+		[%]
+			-93.0
+		[equipment magical defense]
+		[%]
+			-93.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]

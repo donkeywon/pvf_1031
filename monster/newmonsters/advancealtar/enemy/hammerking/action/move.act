@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Move.ani`
+	[SOUND PROBABILITY]
+		`BLOODKNIGHT_MOVE`	1	0
+	[/SOUND PROBABILITY]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[LIMIT]
+		1
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			12684
+		[/IS INDEX]
+		[DISTANCE]
+		[<]
+			100
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ZOOM IT]
+		1500	100
+	[SAY SPEECH WITH POSITION]
+		`只要有分身……`	20	-100
+[/BEHAVIOR]

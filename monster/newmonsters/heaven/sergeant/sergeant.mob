@@ -1,0 +1,240 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`老中士`
+
+[face image]
+	`Monster/MonsterFace.img`	428
+
+[die effect]
+	0	1	1
+
+[ability table]
+	0
+
+[common champion elemental property]
+	`[fire element]`
+	`[water element]`
+	`[dark element]`
+	`[light element]`
+	`[no element]`
+[/common champion elemental property]
+
+[ability category]
+	`[HP MAX]`	`*`	2000
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	150
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	20
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	20
+[/ability category]
+
+[category]
+	`[human]`
+[/category]
+
+[level]
+	65	70
+
+[move speed]
+	600	600
+
+[attack speed]
+	2000	2000
+
+[hit recovery]
+	1200	1200
+
+[weight]
+	100000	100000
+
+[fire resistance]
+	0	0
+
+[water resistance]
+	0	0
+
+[dark resistance]
+	0	0
+
+[light resistance]
+	0	0
+
+[freeze resistance]
+	30	30
+
+[stun resistance]
+	30	30
+
+[blind resistance]
+	30	30
+
+[stone resistance]
+	30	30
+
+[sleep resistance]
+	30	30
+
+[hold resistance]
+	30	30
+
+[slow resistance]
+	30	30
+
+[curse resistance]
+	30	30
+
+[confuse resistance]
+	30	30
+
+[lightning resistance]
+	0	0
+
+[bleeding resistance]
+	0	0
+
+[poison resistance]
+	0	0
+
+[burn resistance]
+	0	0
+
+[piercing resistance]
+	0	0
+
+[set damage check]
+	2000
+
+[add gravity in aerial]
+	1	20.0	-300.0
+
+[item]
+	3277	9700	3227	275
+[/item]
+
+[common champion drop item]
+[/common champion drop item]
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[last action]
+	`Action/die.act`
+
+[come in action ex]
+	`Action/Change.act`
+	`Action/Sleep.act`	200	200
+
+[lie frame]
+	1	2	3	3	4
+
+[action list]
+	`Action/Kick.act`
+	`Action/superKick.act`
+	`Action/supersturnKick.act`
+	`Action/supersturnKick2.act`
+	`Action/Sleep2.act`
+	`Action/Summersalt.act`
+	`Action/Sleep3.act`
+	`Action/Sleep4.act`
+	`Action/Sleep5.act`
+	`Action/Sleep6.act`
+[/action list]
+
+[attack info]
+	`AttackInfo/kick.atk`
+	``
+	`AttackInfo/kick2.atk`
+	`AttackInfo/kick3.atk`
+	``
+	`AttackInfo/kick4.atk`
+	``
+	``
+	``
+	``
+[/attack info]
+
+[cooltime]
+	1000	1000	1000	1000	30000	1000	1000	1000	30000	1000
+[/cooltime]
+
+[vision]
+	350
+
+[think term]
+	300
+
+[destination change term]
+	500
+
+[keep distance with target]
+	100
+
+[keep range distance with target]
+	40	0	5	5
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/heroEvent.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[level of difficulty]
+	[easy]
+		-50	3000
+	[medium]
+		-30	2000
+	[hard]
+		0	0
+	[ultimate]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]

@@ -1,0 +1,31 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/downattack.ani`
+	[SUB ANI]
+		`../animation/effect/crash1.ani`	0	0
+		`../animation/effect/crash2.ani`	0	0
+		`../animation/effect/crash3.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`ASTAROTH_SKILL_02`	0
+		`LIGHTNING_DASH_02`	0
+		`VERTICAL_CRASH`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-1700
+	[/SET SPEED]
+[/BEHAVIOR]

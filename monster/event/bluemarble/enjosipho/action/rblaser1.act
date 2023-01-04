@@ -1,0 +1,79 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/robot/rblaser1.ani`
+	[SUB ANI]
+		`../animation/robot/rblaser_w1.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`开启保护模式， 解除危险状态！`	3	10
+		`小型火箭填装完毕！`	3	10
+	[/SPEECH]
+	[SOUND]
+		`ENJO_ROBOT_ARM`	2
+		`ENJO_SKILL_04`	3
+		`ENJO_ROBOT_SHOT`	6
+		`ENJO_ROBOT_SHOT`	7
+		`ENJO_ROBOT_SHOT`	8
+		`ENJO_ROBOT_SHOT`	9
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10476
+		[PARTICLE FILENAME]
+			`../Particle/rocket.ptl`
+		[LEVEL]
+			0
+		[POS]
+			80	0	115
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10476
+		[PARTICLE FILENAME]
+			`../Particle/rocket1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			80	0	115
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

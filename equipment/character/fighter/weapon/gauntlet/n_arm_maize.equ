@@ -1,0 +1,173 @@
+#PVF_File
+
+[name]
+	`金丝蟒`
+
+[name2]
+	`Maize`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入失明状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入失明状态4秒； 失明状态下， 减少90%%视野和20%%命中率。 (若敌人高于Lv20， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`获得天下第一铁匠大会“最佳武器”大奖的臂铠。`
+
+[grade]
+	24
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	20
+
+[physical attack]
+	29
+
+[attack speed]
+	-80
+
+[stuck]
+	-1
+
+[HP MAX]
+	100
+
+[price]
+	43200
+
+[repair price]
+	34560
+
+[value]
+	34560
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	312	264
+
+[equipment magical attack]
+	234	198
+
+[separate attack]
+	148	96
+
+[physical critical hit]
+	2
+
+[skill levelup]
+	`[fighter]`	46	2
+	`[fighter]`	50	1
+	`[at fighter]`	46	2
+	`[at fighter]`	50	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/gauntlet.img`	7
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	0	7
+
+[layer variation]
+	2790
+	`gauntletc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gauntletb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	0	7
+
+[layer variation]
+	2150
+	`at_gauntleta`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_gauntletc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_gauntletx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		6000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		4000
+	[probability]
+		2
+	[active status]
+		`blind`	20	90	20
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

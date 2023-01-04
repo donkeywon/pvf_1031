@@ -1,0 +1,76 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack2.ani`
+	[SUB ANI]
+		`../Animation/Attack2_Light.ani`	0	0
+		`../Animation/Warning.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`TEMPESTER_ALERT`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8366
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			60	157	0
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	50	2
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8366
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			60	335	0
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	50	2
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8366
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			1100	335	0
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	50	2
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8366
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			1100	157	0
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	50	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

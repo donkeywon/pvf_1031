@@ -1,0 +1,71 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Throw.ani`
+	[SPEECH]
+		`唔哈哈~?！！！`	0	100
+	[/SPEECH]
+	[SOUND]
+		`VENTING_ATK`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30006
+		[PARTICLE FILENAME]
+			`../Particle/BombDown.ptl`
+		[LEVEL]
+			50
+		[POS]
+			25	0	100
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30006
+		[PARTICLE FILENAME]
+			`../Particle/Bomb.ptl`
+		[LEVEL]
+			50
+		[POS]
+			25	0	100
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30006
+		[PARTICLE FILENAME]
+			`../Particle/BombUp.ptl`
+		[LEVEL]
+			50
+		[POS]
+			25	0	100
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		700	2
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		1
+[/BEHAVIOR]

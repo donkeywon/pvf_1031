@@ -1,0 +1,67 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/BackAttack.ani`
+	[SUB ANI]
+		`../Animation/link_tail_dodge_back.ani`	0	-1
+		`../Animation/link_dust_normal.ani`	0	-1
+		`../Animation/Weapon/BackAttack.ani`	0	0
+		`../Animation/Cast3.ani`	0	0
+		`../Animation/link_tail_dodge_front.ani`	0	0
+		`../Animation/Slash4.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`秘技！斩影！`	0	100
+	[/SPEECH]
+	[SOUND]
+		`CASILLAS_FLASH`	1
+		`W_MOVING_ATK_01`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9416
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			50	0	0
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9415
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-50	0	0
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		100	100	100	200	0	0	0
+[/BEHAVIOR]

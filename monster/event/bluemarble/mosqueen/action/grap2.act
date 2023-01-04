@@ -1,0 +1,70 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Grap.ani`
+	[SPEECH]
+		`成为我的奴隶吧~`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		0
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			300
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			10
+		[X END]
+			10
+		[Y START]
+			-5
+		[Y END]
+			-5
+		[USE MY DIRECTION]
+		[USE MY BASEPOS]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	12
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			300
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10053
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			40
+		[POS]
+			0	-5	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

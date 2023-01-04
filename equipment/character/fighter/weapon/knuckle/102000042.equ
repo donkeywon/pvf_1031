@@ -1,0 +1,255 @@
+#PVF_File
+
+[name]
+	`神之恩典`
+
+[name2]
+	``
+
+[basic explain]
+	`当HP高于75%%并施放技能时， 有5%%的几率增加50点的智力， 5%%的魔法暴击率， 以及3%%的移动速度和施放速度， 效果持续10秒。
+当HP在50%%~75%%之间并施放技能时， 有5%%的几率增加30点的智力和3%%的魔法暴击率， 效果持续10秒。
+
+格斗家 (女)
+施放[念气罩]时， 在该技能持续时间内， 可使队员的力量和智力各增加40点。
+
+格斗家 (男)
+施放[念气罩]时， 在该技能持续时间内， 可使队员的力量和智力各增加80点。 (念气罩被击消失后， 增益效果仍会继续维持)`
+
+[flavor text]
+	`如果连你自己都不爱惜自己， 那么如何去让别人甚至是神来爱你~`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[magical attack]
+	55
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[move speed]
+	20
+
+[MP MAX]
+	200
+
+[price]
+	134400
+
+[repair price]
+	112896
+
+[value]
+	107520
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	764	716
+
+[equipment magical attack]
+	925	867
+
+[separate attack]
+	481	327
+
+[skill levelup]
+	`[fighter]`	42	2
+	`[at fighter]`	42	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/knuckle/knuckle.img`	97
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	21	0
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	22	0
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[if]
+	[stat change]
+		`hp`
+		`>`
+		`%`	75
+	[casting]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[probability]
+		5
+	[stat]
+		`magical attack`
+		`+`	50
+	[stat]
+		`magical critical hit rate`
+		`+`	5
+	[stat]
+		`cast speed`
+		`+`	30
+	[stat]
+		`move speed`
+		`+`	30
+[/then]
+
+[if]
+	[stat change]
+		`hp`
+		`<`
+		`%`	75
+	[stat change]
+		`hp`
+		`>=`
+		`%`	50
+	[casting]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[probability]
+		5
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`magical critical hit rate`
+		`+`	3
+[/then]
+
+[if]
+	[use skill]
+		`fighter`	42
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[duration]
+		`skill level info`	42	0	-1
+	[stat]
+		`physical attack`
+		`+`	40
+	[stat]
+		`magical attack`
+		`+`	40
+[/then]
+
+[if]
+	[use skill]
+		`at fighter`	42
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[duration]
+		`skill level info`	42	0	-1
+	[stat]
+		`physical attack`
+		`+`	80
+	[stat]
+		`magical attack`
+		`+`	80
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

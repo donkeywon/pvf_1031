@@ -1,0 +1,88 @@
+#PVF_File
+
+[name]
+	`草原之幻想(棕熊)`
+
+[name2]
+	``
+
+[explain]
+	`攻击敌人时， 有2%%的几率使自身增加30点力量， 效果持续20秒。`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[physical attack]
+	23
+
+[physical defense]
+	15
+
+[attack speed]
+	10
+
+[move speed]
+	10
+
+[stuck]
+	-2
+
+[HP MAX]
+	150
+
+[HP regen speed]
+	45
+
+[hit recovery]
+	100
+
+[icon]
+	`Item/Title/title.img`	50
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/dream_greenplainbear.ani`
+[/custom animation]
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[stat]
+		`physical attack`
+		`+`	30
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

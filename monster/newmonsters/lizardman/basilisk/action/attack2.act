@@ -1,0 +1,205 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/EyeOfEvil2.ani`
+	[SUB ANI]
+		`../Animation/EyeEffect/EyeOfEvil2.ani`	0	0
+		`../Animation/Effect/Aura3.ani`	0	0
+		`../Animation/Effect/Breath2.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`BUFF_BWANGA`	0
+		`R_BASILRISK_ATK`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[LEFT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			100
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		2
+	[ON]
+	[TRIGGER]
+		3
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61129	61130	61131	61132	61133
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		2
+	[OFF]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		3
+	[OFF]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../../../../../PassiveObject/ActionObject/Monster/LizardMan/particle/Smoke2.ptl`	-130	0	80
+	[PARTICLE]
+		`../../../../../PassiveObject/ActionObject/Monster/LizardMan/particle/Smoke2.ptl`	-230	0	60
+	[PARTICLE]
+		`../../../../../PassiveObject/ActionObject/Monster/LizardMan/particle/Smoke2.ptl`	-280	0	40
+	[PARTICLE]
+		`../../../../../PassiveObject/ActionObject/Monster/LizardMan/particle/Smoke2.ptl`	-380	0	40
+	[PARTICLE]
+		`../../../../../PassiveObject/ActionObject/Monster/LizardMan/particle/Smoke2.ptl`	-480	0	40
+	[PARTICLE]
+		`../../../../../PassiveObject/ActionObject/Monster/LizardMan/particle/Smoke2.ptl`	-580	0	40
+	[PARTICLE]
+		`../../../../../PassiveObject/ActionObject/Monster/LizardMan/particle/Smoke2.ptl`	-680	0	40
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61129	61130	61131	61132	61133
+		[/IS INDEX]
+	[/CHECKUP]
+	[GET TARGET]
+		3
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8790
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			-40	40
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			-40	40
+		[/RANDOM SELECT]
+	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8790
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			-40	40
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			-40	40
+		[/RANDOM SELECT]
+	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8790
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			-40	40
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			-40	40
+		[/RANDOM SELECT]
+	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]

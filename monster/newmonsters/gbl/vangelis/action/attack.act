@@ -1,0 +1,30 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack.ani`
+	[SUB ANI]
+		`../Animation/DarkAttack.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8540
+		[PARTICLE FILENAME]
+			`../Particle/DarkAttack.ptl`
+		[LEVEL]
+			45
+		[POS]
+			60	0	60
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

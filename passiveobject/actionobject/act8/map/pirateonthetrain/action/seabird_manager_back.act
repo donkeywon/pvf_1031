@@ -1,0 +1,145 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/seabird_manager.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[RANDOM CHECK]
+			1	500
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2	3	4
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[RANDOM CHECK]
+			1	500
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2	3	4
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[RANDOM CHECK]
+			1	500
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2	3	4
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[RANDOM CHECK]
+			1	500
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2	3	4
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8772
+		[PARTICLE FILENAME]
+			`../particle/seabird_back1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			150	0
+		[RANDOM]
+			210	420
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8772
+		[PARTICLE FILENAME]
+			`../particle/seabird_back2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			150	0
+		[RANDOM]
+			210	420
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8772
+		[PARTICLE FILENAME]
+			`../particle/seabird_back3.ptl`
+		[LEVEL]
+			0
+		[POS]
+			150	0
+		[RANDOM]
+			210	420
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8772
+		[PARTICLE FILENAME]
+			`../particle/seabird_back4.ptl`
+		[LEVEL]
+			0
+		[POS]
+			150	0
+		[RANDOM]
+			210	420
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]

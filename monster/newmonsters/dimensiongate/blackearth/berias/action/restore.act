@@ -1,0 +1,112 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/restore.ani`
+	[SUB ANI]
+		`../animation/cap/restore.ani`	0	0
+		`../animation/shield/restore.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61500
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`2stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`2move.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`2damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`2damage2.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`2sit.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`2Attack.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		1
+		`2Attack2.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		2
+		`2casting.act`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[ATTACK]
+		3	0
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[ATTACK]
+		4	0
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[VIRTUALHP APPENDAGE]
+		99999	999999999	2	10
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]

@@ -1,0 +1,81 @@
+#PVF_File
+
+[name]
+	`法力猎食者 `
+
+[name2]
+	`Tower of Despair 95 Floor`
+
+[explain]
+	`被攻击时， 有10%%的几率使自身增加25点体力， 效果持续30秒。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	396
+
+[custom animation]
+	`TitleAnimation/apc_tower_of_despair_95.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	190
+
+[MP MAX]
+	190
+
+[physical defense]
+	15
+
+[move speed]
+	10
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[cooltime]
+		45000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		10
+	[stat]
+		`physical defense`
+		`+`	25
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

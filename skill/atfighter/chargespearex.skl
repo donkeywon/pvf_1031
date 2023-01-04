@@ -1,0 +1,231 @@
+#PVF_File
+
+[name]
+	`彗星冲击`
+
+[name2]
+	`Pierce`
+
+[explain]
+	`向前方飞冲的同时拖倒冲击范围内的敌人， 使其受到伤害。
+ 在技能结束之前， 被命中的敌人会被拖着向前移动。
+按住技能键可以蓄气， 蓄气时间越长冲出的距离越远。`
+
+[basic explain]
+	`向前方飞冲的同时拖倒冲击范围内的敌人， 使其受到伤害。`
+
+[executable states]
+	8
+[/executable states]
+
+[purchase cost]
+	60
+[/purchase cost]
+
+[required level]
+	60
+
+[required level range]
+	2
+
+[type]
+	`[active]`
+
+[skill class]
+	0
+
+[maximum level]
+	50
+
+[growtype maximum level]
+	0	0	0	0	0	0
+
+[second growtype maximum level]
+	0	0	0	0	0	0	0	0	30	0	0	0
+
+[skill fitness growtype]
+[/skill fitness growtype]
+
+[skill fitness second growtype]
+	1
+[/skill fitness second growtype]
+
+[durability decrease rate]
+	100
+
+[skill under cooltime effect each]
+[/skill under cooltime effect each]
+
+[consume item]
+	3037	1	1
+[/consume item]
+
+[league ban]
+	1
+
+[icon]
+	`Character/Fighter/Effect/ATSkillIcon.img`	146
+	`Character/Fighter/Effect/ATSkillIcon.img`	147
+
+[command]
+	{6=`(RIGHT)`}
+	{8=`,`}
+	{6=`(LEFT)`}
+	{8=`,`}
+	{6=`(DOWN)`}
+	{8=`,`}
+	{6=`(RIGHT)`}
+	{8=`,`}
+	{6=`(SKILL)`}
+[/command]
+
+[command key explain]
+	`操作指令 : →←↓→ + Z`
+
+[skill command advantage]
+	50	50
+
+[dungeon]
+	[consume MP]
+		280	784
+	[cool time]
+		30000	30000
+	[static data]
+		400	50	350	1200	-3000	1000	3000
+	[/static data]
+	[level info]
+		2
+		1500	1500
+		1816	1816
+		2132	2132
+		2448	2448
+		2763	2763
+		3079	3079
+		3395	3395
+		3711	3711
+		4027	4027
+		4342	4342
+		4658	4658
+		4974	4974
+		5290	5290
+		5606	5606
+		5921	5921
+		6237	6237
+		6553	6553
+		6869	6869
+		7184	7184
+		7500	7500
+		7816	7816
+		8132	8132
+		8448	8448
+		8763	8763
+		9079	9079
+		9395	9395
+		9711	9711
+		10027	10027
+		10342	10342
+		10658	10658
+		10974	10974
+		11290	11290
+		11606	11606
+		11921	11921
+		12237	12237
+		12553	12553
+		12869	12869
+		13184	13184
+		13500	13500
+		13816	13816
+		14132	14132
+		14448	14448
+		14763	14763
+		15079	15079
+		15395	15395
+		15711	15711
+		16027	16027
+		16342	16342
+		16658	16658
+		16974	16974
+	[/level info]
+[/dungeon]
+
+[shake screen]
+	5	100
+
+[pvp]
+	[start cool time]
+		600000	600000
+	[static data]
+		400	50	350	1200	-3000	1000	3000
+	[/static data]
+	[level info]
+		2
+		300	300
+		363	363
+		426	426
+		490	490
+		553	553
+		616	616
+		679	679
+		742	742
+		805	805
+		868	868
+		932	932
+		995	995
+		1058	1058
+		1121	1121
+		1184	1184
+		1247	1247
+		1311	1311
+		1374	1374
+		1437	1437
+		1500	1500
+		1563	1563
+		1626	1626
+		1690	1690
+		1753	1753
+		1816	1816
+		1879	1879
+		1942	1942
+		2005	2005
+		2068	2068
+		2132	2132
+		2195	2195
+		2258	2258
+		2321	2321
+		2384	2384
+		2447	2447
+		2511	2511
+		2574	2574
+		2637	2637
+		2700	2700
+		2763	2763
+		2826	2826
+		2890	2890
+		2953	2953
+		3016	3016
+		3079	3079
+		3142	3142
+		3205	3205
+		3268	3268
+		3332	3332
+		3395	3395
+	[/level info]
+[/pvp]
+
+[death tower]
+[/death tower]
+
+[warroom]
+[/warroom]
+
+[level property]
+	1	99
+	`蓄气时间上限 : <float2>秒
+物理攻击伤害 : <int>%% + <int>`
+	0	0	0.001
+	-1	0	1.0
+	-2	1	1.0
+[/level property]
+
+[skill preloading image]
+[/skill preloading image]

@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/brokenStay.ani`
+	[SUB ANI]
+		`../Animation/Head.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`RLAUNCHER_SKILL_02`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`brokenStay.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`brokenDamage.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`brokenDamage.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`brokenAttack.act`
+[/BEHAVIOR]

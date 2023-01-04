@@ -1,0 +1,216 @@
+#PVF_File
+
+[name]
+	`US狂沙之怒`
+
+[basic explain]
+	`角色每100点的智力， 可增加1%%的物理暴击。
+角色每100点的力量， 可增加1%%的魔法暴击。
+普通攻击时， 有10%%的几率消耗1个无色小晶块并且生成沙尘暴， 效果持续2秒。
+无法进行分解。`
+
+[detail explain]
+	`角色每100点的智力， 可增加1%%的物理暴击。
+角色每100点的力量， 可增加1%%的魔法暴击。
+普通攻击时， 有10%%的几率消耗1个无色小晶块并且生成沙尘暴， 效果持续2秒。 (冷却时间为20秒； 在决斗场中几率为1%%)
+无法进行分解。`
+
+[grade]
+	79
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[physical attack]
+	52
+
+[magical attack]
+	78
+
+[stuck]
+	-2
+
+[need material]
+	3338	840
+
+[repair price]
+	119448
+
+[value]
+	113760
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	758	693
+
+[equipment magical attack]
+	659	602
+
+[separate attack]
+	450	305
+
+[physical critical hit]
+	-5
+
+[magical critical hit]
+	-5
+
+[skill levelup]
+	`[gunner]`	110	2
+	`[at gunner]`	110	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/musket/musket.img`	89
+
+[field image]
+	`Item/field_weapon.img`	3
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	29	0
+
+[layer variation]
+	2790
+	`musketc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`musketb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	29	0
+
+[layer variation]
+	2790
+	`at_musketc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_musketb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	2100
+
+[item group name]
+	`musket`
+
+[cool time]
+	10000
+
+[routing priority]
+	`gunner`	4
+	`at gunner`	4
+[/routing priority]
+
+[if]
+	[cooltime]
+		20000
+	[my state]
+		`attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	1
+	[target]
+		`enemy`	-1
+	[probability]
+		10
+	[reduce probability to human armor at pvp module]
+		90
+	[passive object]
+		48800	0	0	0	74	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`physical attack`	100
+		`magical critical hit rate`
+		`+`	1	20
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`magical attack`	100
+		`physical critical hit rate`
+		`+`	1	20
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[icon mark]
+	`Item/IconMark.img`	66

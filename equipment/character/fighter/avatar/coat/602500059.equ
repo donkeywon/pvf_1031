@@ -1,0 +1,192 @@
+#PVF_File
+
+[name]
+	`女神的黄金蕾丝上衣`
+
+[enable dye]
+	1	0
+
+[grade]
+	2
+
+[usable job]
+	`[fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[icon]
+	`item/avatar/fighter/ft_acoat.img`	396
+
+[equipment type]
+	`[coat avatar]`	0
+
+[avatar type select]
+	7	0	0	1700	0
+	30	0	0	3400	0
+	0	0	0	6800	0
+	0	0	0	7480	2
+	`[C socket]`	`[C socket]`
+[/avatar type select]
+
+[avatar select ability]
+	`[SKILL_LEVEL]`	`[fighter]`	30	1
+	`[SKILL_LEVEL]`	`[fighter]`	20	1
+	`[SKILL_LEVEL]`	`[fighter]`	1	1
+	`[SKILL_LEVEL]`	`[fighter]`	3	1
+	`[SKILL_LEVEL]`	`[fighter]`	45	1
+	`[SKILL_LEVEL]`	`[fighter]`	22	1
+	`[SKILL_LEVEL]`	`[fighter]`	10	1
+	`[SKILL_LEVEL]`	`[fighter]`	51	1
+	`[SKILL_LEVEL]`	`[fighter]`	50	1
+	`[SKILL_LEVEL]`	`[fighter]`	11	1
+	`[SKILL_LEVEL]`	`[fighter]`	37	1
+	`[SKILL_LEVEL]`	`[fighter]`	43	1
+	`[SKILL_LEVEL]`	`[fighter]`	49	1
+	`[SKILL_LEVEL]`	`[fighter]`	36	1
+	`[SKILL_LEVEL]`	`[fighter]`	31	1
+	`[SKILL_LEVEL]`	`[fighter]`	4	1
+	`[SKILL_LEVEL]`	`[fighter]`	38	1
+	`[SKILL_LEVEL]`	`[fighter]`	18	1
+	`[SKILL_LEVEL]`	`[fighter]`	42	1
+	`[SKILL_LEVEL]`	`[fighter]`	52	1
+	`[SKILL_LEVEL]`	`[fighter]`	39	1
+	`[SKILL_LEVEL]`	`[fighter]`	44	1
+	`[SKILL_LEVEL]`	`[fighter]`	40	1
+	`[SKILL_LEVEL]`	`[fighter]`	19	1
+	`[SKILL_LEVEL]`	`[fighter]`	14	1
+	`[SKILL_LEVEL]`	`[fighter]`	54	1
+	`[SKILL_LEVEL]`	`[fighter]`	15	1
+	`[SKILL_LEVEL]`	`[fighter]`	16	1
+	`[SKILL_LEVEL]`	`[fighter]`	60	1
+	`[SKILL_LEVEL]`	`[fighter]`	62	1
+	`[SKILL_LEVEL]`	`[fighter]`	69	1
+	`[SKILL_LEVEL]`	`[fighter]`	68	1
+	`[SKILL_LEVEL]`	`[fighter]`	74	1
+	`[SKILL_LEVEL]`	`[fighter]`	75	1
+	`[SKILL_LEVEL]`	`[fighter]`	76	1
+	`[SKILL_LEVEL]`	`[fighter]`	77	1
+	`[SKILL_LEVEL]`	`[fighter]`	78	1
+	`[SKILL_LEVEL]`	`[fighter]`	79	1
+	`[SKILL_LEVEL]`	`[fighter]`	90	1
+	`[SKILL_LEVEL]`	`[fighter]`	80	1
+	`[SKILL_LEVEL]`	`[fighter]`	91	1
+	`[SKILL_LEVEL]`	`[fighter]`	83	1
+	`[SKILL_LEVEL]`	`[fighter]`	82	1
+	`[SKILL_LEVEL]`	`[fighter]`	81	1
+	`[SKILL_LEVEL]`	`[fighter]`	87	1
+	`[SKILL_LEVEL]`	`[fighter]`	89	1
+	`[SKILL_LEVEL]`	`[fighter]`	88	1
+	`[SKILL_LEVEL]`	`[fighter]`	106	1
+[/avatar select ability]
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	122	1
+
+[layer variation]
+	1800
+	`coat_a`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	900
+	`coat_b`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[hide equipment]
+	`[pants avatar]`
+[/hide equipment]
+
+[hide layer]
+	2860	1650	1501	1500	1300	1151	1150
+[/hide layer]
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[set item master]
+	602500059
+
+[set name]
+	`天使与恶魔礼包`
+
+[set item]
+	602550059	602560057	602570052	602520051	602500059	602510058	602530050	602540059	602580022
+[/set item]
+
+[set ability]
+	[HP MAX]
+		150
+	[MP MAX]
+		150
+	[physical attack]
+		25
+	[physical defense]
+		25
+	[magical attack]
+		25
+	[magical defense]
+		25
+	[inventory limit]
+		6000
+	[HP regen speed]
+		20
+	[MP regen speed]
+		4
+	[move speed]
+		20
+	[attack speed]
+		20
+	[cast speed]
+		20
+	[fullset explain]
+		`套装选项效果：被击时以10%%的机率20秒内变换为内衣角色，物理/魔法攻击力上升1%%，防御力下降5%%。(决斗场不适用)`
+	[if]
+		[cooltime]
+			30000
+		[module]
+			`[dungeon type]`
+		[/module]
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			20000
+		[probability]
+			10
+		[stat]
+			`equipment magical attack`
+			`%`	1
+		[stat]
+			`equipment physical attack`
+			`%`	1
+		[stat]
+			`equipment physical defense`
+			`%`	-5
+		[stat]
+			`equipment magical defense`
+			`%`	-5
+		[replace avatar ani]
+			`[shoes avatar]`	-1
+			`[breast avatar]`	-1
+			`[waist avatar]`	-1
+			`[aurora avatar]`	-1
+			`[coat avatar]`	102500008
+			`[pants avatar]`	102510008
+		[/replace avatar ani]
+	[/then]
+[/set ability]

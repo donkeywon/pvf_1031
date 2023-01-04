@@ -1,0 +1,136 @@
+#PVF_File
+
+[name]
+	`(旧) 落星战斧`
+
+[name2]
+	`Blow Away To The Infernal Regions`
+
+[basic explain]
+	`攻击时， 有2%%的几率附加300点伤害。
+[星落打]挥击攻击力 +20%%
+[星落打]增加攻击时的浮空力`
+
+[flavor text]
+	`蕴含有恐怖威力的战斧， 可以瞬间把敌人打入地狱。`
+
+[grade]
+	35
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	30
+
+[physical attack]
+	26
+
+[attack speed]
+	-80
+
+[stuck]
+	-2
+
+[price]
+	63000
+
+[repair price]
+	50400
+
+[value]
+	50400
+
+[equipment physical attack]
+	427	370
+
+[equipment magical attack]
+	303	262
+
+[separate attack]
+	209	138
+
+[skill levelup]
+	`[priest]`	41	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/axe.img`	32
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	3	0
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[add absolute damage]
+		`all`
+		`+`	300
+[/then]
+
+[skill data up]
+	`[priest]`	41	`[all]`	`[level]`	1	`%`	20
+	`[priest]`	41	`[all]`	`[level]`	2	`%`	20
+	`[priest]`	41	`[all]`	`[level]`	3	`+`	150
+	`[priest]`	41	`[all]`	`[level]`	4	`+`	200
+[/skill data up]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,56 @@
+#PVF_File
+
+[floating height]
+	20
+
+[layer]
+	`[bottom]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	1000
+
+[basic action]
+	`Action/Blackhole_mine_Appear_1P.act`
+
+[etc action]
+	`Action/Blackhole_mine_1P.act`
+	`Action/Blackhole_mine_Explosion.act`
+[/etc action]
+
+[last action]
+	`Action/Blackhole_mine_Explosion.act`
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	10000
+[/object destroy condition]
+
+[team]
+	100
+
+[hp destroy]
+	1
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[CHARACTER]`	0
+	[homing velocity]
+		100	100
+	[homing check gap]
+		200
+	[sync animation rotation]
+		1
+	[max rotation]
+		0
+	[init rotation]
+		0
+	[diff rotation]
+		180
+	[homing time]
+		0
+[/homing]

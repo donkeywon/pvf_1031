@@ -1,0 +1,37 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/ThrowF.ani`
+	[SUB ANI]
+		`../Animation/Weapon/ThrowF_w.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`鱼肉~！`	1	100
+	[/SPEECH]
+	[SOUND]
+		`MERMAN_ATK_01`	0
+		`CIRCLED_PUSH_02`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10164
+		[PARTICLE FILENAME]
+			`../Particle/ThrowF.ptl`
+		[LEVEL]
+			0
+		[POS]
+			85	0	85
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,120 @@
+#PVF_File
+
+[name]
+	`巫师的灵珠`
+
+[name2]
+	`A Glass Bead of The Shaman`
+
+[basic explain]
+	`施放技能时， 有10%%的几率使自身进入霸体状态。`
+
+[detail explain]
+	`施放技能时， 有10%%的几率使自身进入霸体状态10秒。 (在决斗场中无效)`
+
+[grade]
+	75
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	71
+
+[physical attack]
+	30
+
+[physical defense]
+	75
+
+[cast speed]
+	50
+
+[price]
+	75000
+
+[repair price]
+	60000
+
+[value]
+	60000
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	3936	3696
+
+[skill levelup]
+	`[mage]`	48	2
+[/skill levelup]
+
+[icon]
+	`Item/common/bracelet.img`	37
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	20
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		20000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[probability]
+		10
+	[buff]
+		`superarmor`
+[/then]
+
+[pvp]
+	[if]
+		[cooltime]
+			20000
+		[casting]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			3000
+		[probability]
+			1
+		[buff]
+			`superarmor`
+	[/then]
+[/pvp]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

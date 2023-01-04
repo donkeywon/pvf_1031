@@ -1,0 +1,66 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/casting.ani`
+	[SOUND]
+		`NORMALSILVER_ATK_03`	0
+	[/SOUND]
+	[SUB ANI]
+		`../Animation/end_Aura.ani`	0	1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`Stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`Move.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		`Down.actt`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`Damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`Damage2.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`sit.act`
+	[CHANGE ACTION FILE]
+	[OVERTURN]
+		`Overturn.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		1
+		`arm_right.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		2
+		`arm_left.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		3
+		`arm_clang.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		4
+		`arm_count.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		8
+		`summer_kick.act`
+[/BEHAVIOR]

@@ -1,0 +1,113 @@
+#PVF_File
+
+[name]
+	`幽冥玄铁胫甲`
+
+[name2]
+	`Darksteel Gaiter`
+
+[basic explain]
+	`被攻击时， 有3%%的几率使敌人进入失明状态。`
+
+[detail explain]
+	`被攻击时， 有3%%的几率使敌人进入失明状态9秒； 失明状态下的敌人， 将减少90%%视野和20%%命中率。 (若敌人高于Lv55， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`玄铁不好冶炼， 稍有不慎就能让你失明！  --辛达吓唬G.S.D (但G.S.D本来就……)`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	27
+
+[physical defense]
+	29
+
+[magical attack]
+	27
+
+[price]
+	74400
+
+[repair price]
+	65620
+
+[value]
+	59520
+
+[equipment physical defense]
+	3500	3200
+
+[icon]
+	`Item/common/pants.img`	109
+
+[field image]
+	`Item/field_equip.img`	16
+
+[equipment type]
+	`[pants]`	21
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	50
+
+[weight]
+	4100
+
+[item group name]
+	`mt pants`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		1000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		9000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		73
+	[active status]
+		`blind`	55	90	20
+[/then]
+
+[set item master]
+	11672
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,81 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Cube_EX.ani`
+	[SOUND]
+		`ANDRES_CUBE_BREAK`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			5000
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[AI CHARACTER]
+		[/IS OBJECT TYPE]
+		[DISTANCE]
+		[<=]
+			5000
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		7000	
+		[attack speed]
+		[%]
+			-100.0
+		[cast speed]
+		[%]
+			-100.0
+	[/APPENDAGE]
+	[APPEND HIT]
+		0	0	0
+	[FLASH SCREEN]
+		300	1000	7000	130	200	200	200
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		7000	
+		[move speed]
+		[%]
+			-100.0
+	[/APPENDAGE]
+	[APPEND HIT]
+		0	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

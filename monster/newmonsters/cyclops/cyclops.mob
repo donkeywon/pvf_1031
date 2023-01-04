@@ -1,0 +1,212 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`独眼巨人`
+
+[face image]
+	`Monster/MonsterFace.img`	476
+
+[die effect]
+	0	24	1
+
+[ability table]
+	0
+
+[attack sound]
+	`R_CYCLOPS_ATK`
+
+[damage sound]
+	`R_CYCLOPS_DMG`
+
+[die sound]
+	`CYCLOPS_DIE`
+
+[ability category]
+	`[HP MAX]`	`*`	710
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	130
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[category]
+	`[hybrid]`
+	`[melee combat]`
+	`[close-tough]`
+[/category]
+
+[level]
+	60	70
+
+[fire resistance]
+	50	50
+
+[water resistance]
+	-30	-30
+
+[light resistance]
+	-20	-20
+
+[freeze resistance]
+	30	30
+
+[stun resistance]
+	30	30
+
+[blind resistance]
+	30	30
+
+[stone resistance]
+	30	30
+
+[sleep resistance]
+	30	30
+
+[hold resistance]
+	30	30
+
+[slow resistance]
+	30	30
+
+[curse resistance]
+	30	30
+
+[confuse resistance]
+	30	30
+
+[lightning resistance]
+	0	0
+
+[bleeding resistance]
+	0	0
+
+[poison resistance]
+	0	0
+
+[burn resistance]
+	0	0
+
+[piercing resistance]
+	0	0
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	700	700
+
+[hit recovery]
+	1200	1200
+
+[weight]
+	200000	200000
+
+[keep distance with target]
+	200
+
+[think term]
+	500
+
+[destination change term]
+	1000
+
+[vision]
+	600
+
+[intelligence]
+	90	90	3000
+
+[lie frame]
+	1	2	3	3	4
+
+[item]
+	3227	250
+[/item]
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[action list]
+	`Action/Attack1.act`
+	`Action/Attack2.act`
+	`Action/Attack3.act`
+	`Action/Attack4.act`
+[/action list]
+
+[cooltime]
+	5000	5000	16000	14000
+[/cooltime]
+
+[attack info]
+	``
+	``
+	``
+	`AttackInfo/Stump.atk`
+[/attack info]
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action_H.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[level of difficulty]
+	[easy]
+		-50	3000
+	[medium]
+		-30	2000
+	[hard]
+		0	0
+	[ultimate]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]

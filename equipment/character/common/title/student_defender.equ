@@ -1,0 +1,117 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	`Student of Defender`
+
+[explain]
+	`下降时以15%%的机率7秒内呈现超级盔甲状态，移动速度增加13%%。被击时以5%%的机率5秒内回避率增加13%%，恢复全体HP的3%%。(发动效果仅适用于决斗场。)`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	157
+
+[equipment type]
+	`[title name]`	1
+
+[custom animation]
+	`TitleAnimation/student_defender.ani`
+[/custom animation]
+
+[usable period]
+	30
+
+[HP MAX]
+	150
+
+[stuck resistance]
+	20
+
+[move speed]
+	10
+
+[attack speed]
+	10
+
+[cast speed]
+	10
+
+[hit recovery]
+	70
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		20000
+	[set my state]
+		1
+	[my state]
+		`down`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		7000
+	[probability]
+		15
+	[buff]
+		`superarmor`
+	[stat]
+		`move speed`
+		`+`	130
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		20000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		5000
+	[probability]
+		5
+	[stat]
+		`stuck resistance`
+		`+`	130
+	[restore]
+		`HP`
+		`%`	3	1000
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

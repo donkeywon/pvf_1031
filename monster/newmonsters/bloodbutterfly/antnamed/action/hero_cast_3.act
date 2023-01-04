@@ -1,0 +1,37 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Cast_3.ani`
+	[SUB ANI]
+		`../Animation/Cast_e.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`万物都可吸进的强风`	0	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1500	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8029
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			20	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

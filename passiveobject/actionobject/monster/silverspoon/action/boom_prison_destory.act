@@ -1,0 +1,59 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Trap_prison_destory.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/pop.ptl`	40	0	30
+	[PARTICLE]
+		`../particle/pop.ptl`	0	0	30
+	[PARTICLE]
+		`../particle/pop.ptl`	-40	0	30
+	[PARTICLE]
+		`../particle/pop.ptl`	-20	0	20
+	[PARTICLE]
+		`../particle/pop.ptl`	-20	0	20
+	[PARTICLE]
+		`../particle/pop.ptl`	20	20	20
+	[PARTICLE]
+		`../particle/pop.ptl`	-60	10	20
+	[PARTICLE]
+		`../particle/pop.ptl`	60	-10	20
+	[PARTICLE]
+		`../particle/pop.ptl`	20	-20	20
+	[PARTICLE]
+		`../particle/ShockWave.ptl`	0	0	10
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Box_particle.ptl`	0	0	20
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

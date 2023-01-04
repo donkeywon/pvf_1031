@@ -1,0 +1,87 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/jump_start.ani`
+	[SOUND]
+		`MAX_SKILL_02`	0
+		`MAX_JUMP`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9955
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[ATTACK]
+		6	0
+	[OFF]
+	[TRIGGER]
+	[ATTACK]
+		7	0
+	[ON]
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		4
+		`jump_start.act`
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9955
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			1
+		[POS]
+			0	0	0
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[NAME HIDE ON]
+	[SET VISIBLITY]
+		0
+	[SET ACTION]
+	[ATTACK]
+		5
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[RESET]
+	[TELEPORT]
+		[POS]
+			0	0	990000
+		[USE MY BASEPOS]
+		[MOVE ME]
+	[/TELEPORT]
+[/BEHAVIOR]

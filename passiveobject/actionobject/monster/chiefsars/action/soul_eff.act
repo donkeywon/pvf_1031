@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/jangpung_eff_1_loof.ani`
+	[SUB ANI]
+		`../animation/jangpung_eff_2_loof.ani`	0	0
+		`../animation/jangpung_eff_3_loof.ani`	0	0
+		`../animation/jangpung_eff_4_loof.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		19	19
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			10237
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			4
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

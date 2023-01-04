@@ -1,0 +1,144 @@
+#PVF_File
+
+[name]
+	`(旧) 怯敌 - CK7`
+
+[name2]
+	`Huger Bochers`
+
+[basic explain]
+	`攻击时， 有1%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`攻击时， 有1%%的几率使敌人进入眩晕状态4秒。 (若敌人高于Lv32， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	36
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	32
+
+[magical attack]
+	26
+
+[stuck]
+	1
+
+[price]
+	57600
+
+[repair price]
+	46080
+
+[value]
+	46080
+
+[equipment physical attack]
+	233	193
+
+[equipment magical attack]
+	342	283
+
+[separate attack]
+	207	137
+
+[icon]
+	`item/weapon/gunner/automatic.img`	23
+
+[field image]
+	`Item/field_weapon.img`	2
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	2	3
+
+[layer variation]
+	2790
+	`autoc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`autob`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	2	3
+
+[layer variation]
+	2790
+	`at_autoc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_autob`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	1500
+
+[item group name]
+	`automatic`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		6000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		4000
+	[probability]
+		1
+	[active status]
+		`stun`	32
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

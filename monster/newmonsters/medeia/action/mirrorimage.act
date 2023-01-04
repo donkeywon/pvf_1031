@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/MirrorImage.ani`
+	[SUB ANI]
+		`../animation/Sword/swMirrorImage.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`哈哈哈，一个美丽的石人玩偶即将诞生~`	5	50
+		`天啊，你不知道我的眼睛会让人着魔吗？`	5	50
+	[/SPEECH]
+	[SOUND]
+		`S_MEDUSA_SKILL`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[FRONTSIDE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[stone]
+		100	60	8000	100
+[/BEHAVIOR]

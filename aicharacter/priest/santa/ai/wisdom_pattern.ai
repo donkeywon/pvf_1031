@@ -1,0 +1,49 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[set party member]
+			1
+		[true]
+	
+		[think]
+			[my level]
+				`is in range()`	1	99
+			[true]
+		
+			[think]
+				[check party buff on]
+					`priest`	53
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					17
+			[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[false]
+	[think]
+		[set party member]
+			-1
+		[true]
+	
+		[think]
+			[my level]
+				`is in range()`	1	99
+			[true]
+			[return]
+				17
+			[false]
+			[return]
+				-1
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+[/ai pattern]

@@ -1,0 +1,54 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Start/BreathHP_17_neck.ani`
+	[SUB ANI]
+		`../Animation/Start/BreathHP_16_neck.ani`	0	1
+		`../Animation/Start/BreathHP_15_neck.ani`	0	2
+		`../Animation/Start/BreathHP_14_neck.ani`	0	3
+		`../Animation/Start/BreathHP_13_neck.ani`	0	4
+		`../Animation/Start/BreathHP_06_head.ani`	0	5
+		`../Animation/Start/BreathHP_05_head.ani`	0	6
+		`../Animation/Start/BreathHP_04_head.ani`	0	7
+		`../Animation/Start/BreathHP_03_headhorn.ani`	0	8
+		`../Animation/Start/BreathHP_Effect_0_Breath.ani`	0	9
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54013
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-80	0	0
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

@@ -1,0 +1,119 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	`Plays Neople`
+
+[explain]
+	`攻击时以3%%的机率20秒内力量、体力、智能、精神力增加20和12。`
+
+[flavor text]
+	`< 活动 > 2012年大成功！`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	426
+
+[custom animation]
+	`TitleAnimation/2012newyear.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		25000
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			3
+		[duration]
+			20000
+		[stat]
+			`physical attack`
+			`+`	20
+		[stat]
+			`magical attack`
+			`+`	20
+		[stat]
+			`physical defense`
+			`+`	20
+		[stat]
+			`magical defense`
+			`+`	20
+		[then probability]
+			60.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			3
+		[duration]
+			20000
+		[stat]
+			`physical attack`
+			`+`	12
+		[stat]
+			`magical attack`
+			`+`	12
+		[stat]
+			`physical defense`
+			`+`	12
+		[stat]
+			`magical defense`
+			`+`	12
+		[then probability]
+			40.0
+	[/then]
+[/multiple then]
+
+[icon mark]
+	`Item/IconMark.img`	64

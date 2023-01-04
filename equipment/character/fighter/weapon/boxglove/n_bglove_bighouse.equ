@@ -1,0 +1,187 @@
+#PVF_File
+
+[name]
+	`比哈斯的圣斗`
+
+[name2]
+	`Bighouse the Challenger`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态。
+[强拳]敌人的僵直比率 +10%%
+[武神步]效果持续时间 +50%%`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态2秒； 但在决斗场中， 只能持续1秒。 (若敌人高于Lv55， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+[强拳]敌人的僵直比率 +10%%
+[武神步]效果持续时间 +50%%`
+
+[flavor text]
+	`拉奇？ 你是说那个只会逃命的猥琐家伙？ 甭提了， 我最鄙视的就是他了。  --极皇挑战者比哈斯`
+
+[grade]
+	57
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	39
+
+[attack speed]
+	100
+
+[HP MAX]
+	500
+
+[need material]
+	3260	900
+
+[repair price]
+	83160
+
+[value]
+	79200
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	559	508
+
+[equipment magical attack]
+	505	460
+
+[separate attack]
+	328	220
+
+[skill levelup]
+	`[fighter]`	37	3
+	`[at fighter]`	37	3
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/bglove.img`	25
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	7
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	1	7
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`stun`	55
+[/then]
+
+[skill data up]
+	`[fighter]`	37	`[all]`	`[static]`	1	`%`	10
+	`[fighter]`	70	`[all]`	`[level]`	1	`%`	50
+	`[at fighter]`	37	`[all]`	`[static]`	1	`%`	10
+[/skill data up]
+
+[routing priority]
+	`fighter`	2
+	`at fighter`	2
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

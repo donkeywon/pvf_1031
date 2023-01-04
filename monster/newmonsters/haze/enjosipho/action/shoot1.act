@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/shoot1.ani`
+	[SUB ANI]
+		`../animation/shoot1_w.ani`	0	1
+		`../animation/shoot1_w1.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`ENJO_MUSKET`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10472
+		[PARTICLE FILENAME]
+			`../Particle/bullet.ptl`
+		[LEVEL]
+			0
+		[POS]
+			170	0	110
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

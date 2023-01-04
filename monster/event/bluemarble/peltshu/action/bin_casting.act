@@ -1,0 +1,312 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/bin_casting.ani`
+	[SUB ANI]
+		`../Animation/bin_casting_shdow.ani`	0	1
+	[/SUB ANI]
+	[SOUND]
+		`PELTSHU_SKILL_03`	4
+	[/SOUND]
+	[SPEECH]
+		`把这个礼物带走吧~~`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9352
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			3500
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	3	4	1	2	3	4
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9352
+		[PARTICLE FILENAME]
+			`../Particle/SilkHatCard_nansa_up.ptl`
+		[LEVEL]
+			0
+		[POS]
+			575	146	200
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	150	2
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9352
+		[PARTICLE FILENAME]
+			`../Particle/SilkHatCard_nansa_up.ptl`
+		[LEVEL]
+			0
+		[POS]
+			390	142	200
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	150	2
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9352
+		[PARTICLE FILENAME]
+			`../Particle/SilkHatCard_nansa_up.ptl`
+		[LEVEL]
+			0
+		[POS]
+			409	227	200
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	150	2
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9352
+		[PARTICLE FILENAME]
+			`../Particle/SilkHatCard_nansa_up.ptl`
+		[LEVEL]
+			0
+		[POS]
+			577	226	200
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	150	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9352
+		[PARTICLE FILENAME]
+			`../Particle/SilkHatCard_nansa_up.ptl`
+		[LEVEL]
+			0
+		[POS]
+			620	153	200
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	150	2
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9352
+		[PARTICLE FILENAME]
+			`../Particle/SilkHatCard_nansa_up.ptl`
+		[LEVEL]
+			0
+		[POS]
+			300	247	200
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	150	2
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9352
+		[PARTICLE FILENAME]
+			`../Particle/SilkHatCard_nansa_up.ptl`
+		[LEVEL]
+			0
+		[POS]
+			551	259	200
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	150	2
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9352
+		[PARTICLE FILENAME]
+			`../Particle/SilkHatCard_nansa_up.ptl`
+		[LEVEL]
+			0
+		[POS]
+			242	154	200
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	150	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9352
+		[PARTICLE FILENAME]
+			`../Particle/SilkHatCard_nansa_up.ptl`
+		[LEVEL]
+			0
+		[POS]
+			390	127	200
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	150	2
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9352
+		[PARTICLE FILENAME]
+			`../Particle/SilkHatCard_nansa_up.ptl`
+		[LEVEL]
+			0
+		[POS]
+			553	169	200
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	150	2
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9352
+		[PARTICLE FILENAME]
+			`../Particle/SilkHatCard_nansa_up.ptl`
+		[LEVEL]
+			0
+		[POS]
+			391	219	200
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	150	2
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9352
+		[PARTICLE FILENAME]
+			`../Particle/SilkHatCard_nansa_up.ptl`
+		[LEVEL]
+			0
+		[POS]
+			552	258	200
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	150	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9352
+		[PARTICLE FILENAME]
+			`../Particle/SilkHatCard_nansa_up.ptl`
+		[LEVEL]
+			0
+		[POS]
+			305	236	200
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	150	2
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9352
+		[PARTICLE FILENAME]
+			`../Particle/SilkHatCard_nansa_up.ptl`
+		[LEVEL]
+			0
+		[POS]
+			400	138	200
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	150	2
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9352
+		[PARTICLE FILENAME]
+			`../Particle/SilkHatCard_nansa_up.ptl`
+		[LEVEL]
+			0
+		[POS]
+			517	242	200
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	150	2
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9352
+		[PARTICLE FILENAME]
+			`../Particle/SilkHatCard_nansa_up.ptl`
+		[LEVEL]
+			0
+		[POS]
+			624	162	200
+		[USE MAP POS]
+		[WARNING MARK]
+			0	0	150	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		5	6	7	8	5	6	7	8
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+			247	173	10
+		[USE MAP POS]
+	[/TELEPORT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+			330	265	10
+		[USE MAP POS]
+	[/TELEPORT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+			514	152	10
+		[USE MAP POS]
+	[/TELEPORT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+			609	269	10
+		[USE MAP POS]
+	[/TELEPORT]
+[/BEHAVIOR]

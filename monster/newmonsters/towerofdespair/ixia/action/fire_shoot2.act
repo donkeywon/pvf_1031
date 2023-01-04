@@ -1,0 +1,45 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/shoot2.ani`
+	[SUB ANI]
+		`../animation/_shoot.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[TARGET]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			23025
+		[PARTICLE FILENAME]
+			`../Particle/ShootingStarPath.ptl`
+		[LEVEL]
+			70
+		[POS]
+			0	0	350
+		[WARNING MARK]
+			250	0	90	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[CREATE PASSIVEOBJECT]
+	[INDEX]
+		23013
+	[PARTICLE FILENAME]
+		`../Particle/ShootingStarPath.ptl`
+	[LEVEL]
+		45
+	[POS]
+		0	0	550
+	[WARNING MARK]
+		650	0	150	2
+[/CREATE PASSIVEOBJECT]

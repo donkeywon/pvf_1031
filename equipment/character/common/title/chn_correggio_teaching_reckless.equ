@@ -1,0 +1,108 @@
+#PVF_File
+
+[name]
+	`鲁莽的修炼者`
+
+[explain]
+	`攻击时有1%%的几率、 施放技能时有2%%的几率， 召唤出冰霜之萨亚。`
+
+[flavor text]
+	`为了得到更强的力量， 我不惜向冰霜之萨亚挑战， 忍受着严寒才拥有了现在可以冰冻万物的能力。 可是， 为什么？ 为什么会这样？！
+如果能再坚持一会， 说不定就能净化更多的祭坛……我好不甘心啊！  -- 
+克雷泽望着一涌而上的地狱军团叹道`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	55
+
+[icon mark]
+	`Item/IconMark.img`	64
+
+[icon]
+	`Item/stackable/AdvanceAltar_ch.img`	3
+
+[equipment type]
+	`[title name]`	1
+
+[custom animation]
+	`TitleAnimation/chn_Correggio_Teaching.ani`
+[/custom animation]
+
+[HP MAX]
+	238
+
+[physical attack]
+	22
+
+[magical attack]
+	22
+
+[physical defense]
+	22
+
+[magical defense]
+	22
+
+[move speed]
+	30
+
+[attack speed]
+	20
+
+[cast speed]
+	30
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		1
+	[passive object]
+		20012	0	0	0	27	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		2
+	[passive object]
+		20012	0	0	0	27	0	``
+	[/passive object]
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[need material]
+	2749212	89

@@ -1,0 +1,116 @@
+#PVF_File
+
+[name]
+	`动物的王国(松鼠) 白金`
+
+[name2]
+	`找不到代码name2_600330020`
+
+[explain]
+	`攻击或施放技能时，以3%%的机率使自身增加15%%的物理、魔法暴击率，效果持续30秒，但需要消耗2个无色小晶块。`
+
+[grade]
+	2
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	255
+
+[equipment type]
+	`[title name]`	1
+
+[custom animation]
+	`TitleAnimation/animalworld_squirrelpl.ani`
+[/custom animation]
+
+[HP MAX]
+	200
+
+[physical attack]
+	25
+
+[magical attack]
+	25
+
+[move speed]
+	30
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[equipment physical attack]
+	5	5
+
+[equipment magical attack]
+	5	5
+
+[if]
+	[cooltime]
+		30000
+	[cooltime group]
+		6
+	[attack success]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	2
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[appendage]
+		114
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[cooltime group]
+		6
+	[casting]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	2
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[appendage]
+		114
+[/then]
+
+[room list move speed rate]
+	0.15
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

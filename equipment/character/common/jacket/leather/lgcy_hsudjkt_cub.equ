@@ -1,0 +1,170 @@
+#PVF_File
+
+[name]
+	`传承 : 神圣的生命女神狼皮胸甲`
+
+[name2]
+	`Legacy : Holy Coat of Cubeley`
+
+[basic explain]
+	`[魔道酸雨云]大成功率 +0.5%%`
+
+[grade]
+	42
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	40
+
+[physical attack]
+	28
+
+[magical attack]
+	17
+
+[magical defense]
+	8
+
+[MP MAX]
+	130
+
+[price]
+	33600
+
+[repair price]
+	26880
+
+[value]
+	26880
+
+[equipment physical defense]
+	1080	1032
+
+[physical critical hit]
+	2
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/common/coat.img`	15
+
+[field image]
+	`Item/FieldImage.img`	0
+
+[equipment type]
+	`[coat]`	18
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	33
+
+[weight]
+	1900
+
+[item group name]
+	`lt coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[skill data up]
+	`[mage]`	99	`[all]`	`[static]`	0	`+`	-5
+	`[mage]`	99	`[all]`	`[static]`	2	`+`	5
+[/skill data up]
+
+[set name]
+	`传承 : 神圣的生命女神狼皮战甲  套装`
+
+[set item]
+	10487	12487	18482
+[/set item]
+
+[item overpower part]
+
+[set ability]
+	[HP MAX]
+		230
+	[MP MAX]
+		200
+	[physical attack]
+		53
+	[magical attack]
+		53
+	[attack speed]
+		30
+	[cast speed]
+		30
+	[if]
+		[cooltime]
+			30000
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			20000
+		[probability]
+			2
+		[stat]
+			`physical critical hit rate`
+			`+`	20
+		[stat]
+			`magical critical hit rate`
+			`+`	20
+	[/then]
+	[stuck]
+		-2
+	[skill data up]
+		`[mage]`	99	`[all]`	`[static]`	0	`+`	-25
+		`[mage]`	99	`[all]`	`[static]`	2	`+`	15
+		`[mage]`	99	`[all]`	`[static]`	1	`+`	10
+	[/skill data up]
+	[fullset basic explain]
+		`[魔道酸雨云]大成功率 +1.5%%
+[魔道酸雨云]成功率 +1%%
+被攻击时， 有2%%的几率使自身增加20%%的暴击率， 效果持续20秒。
+进入地下城时， 因传承的祝福可以使自身增加5%%的攻击速度和施放速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`attack speed`
+			`+`	50
+		[stat by condition]
+			`cast speed`
+			`+`	50
+	[/then]
+[/set ability]
+
+[possible kiri protect]

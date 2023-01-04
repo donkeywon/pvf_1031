@@ -1,0 +1,42 @@
+#PVF_File
+
+[floating height]
+	0
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	1000
+
+[basic action]
+	`Action/DarkMissileStart.act`
+
+[team]
+	100
+
+[etc action]
+	`Action/DarkMissileLoop.act`
+[/etc action]
+
+[name]
+	`小规模的缝隙`
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[ENEMY]`
+	[homing velocity]
+		1000	700
+	[homing check gap]
+		500
+[/homing]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[z pos equal zero]`
+[/object destroy condition]

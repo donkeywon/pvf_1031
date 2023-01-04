@@ -1,0 +1,24 @@
+#PVF_File
+
+[TRIGGER]
+	[CHECK TIME]
+		1000
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9930
+		[IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<=]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/skill_sarin.ptl`	0	2	20
+[/BEHAVIOR]

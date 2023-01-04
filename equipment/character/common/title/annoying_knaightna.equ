@@ -1,0 +1,73 @@
+#PVF_File
+
+[name]
+	`被秒杀的可怜人`
+
+[name2]
+	`Annoying Knaightna`
+
+[explain]
+	`被攻击时， 有6%%的几率使自身恢复600点HP。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	301
+
+[custom animation]
+	`TitleAnimation/annoying_knaightna.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[stuck resistance]
+	-20
+
+[move speed]
+	30
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[probability]
+		6
+	[target]
+		`myself`	-1
+	[restore]
+		`hp`
+		`+`	600	1000
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

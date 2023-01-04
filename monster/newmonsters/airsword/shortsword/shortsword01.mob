@@ -1,0 +1,180 @@
+#PVF_File
+
+[name]
+	`冥空巨剑`
+
+[face image]
+	`Monster/MonsterFace.img`	466
+
+[die effect]
+	0	1	1
+
+[ability table]
+	0
+
+[common champion elemental property]
+	`[fire element]`
+	`[water element]`
+	`[dark element]`
+	`[light element]`
+	`[no element]`
+[/common champion elemental property]
+
+[ability category]
+	`[HP MAX]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[category]
+	`[hybrid]`
+[/category]
+
+[fire resistance]
+	0	0
+
+[water resistance]
+	0	0
+
+[dark resistance]
+	0	0
+
+[light resistance]
+	0	0
+
+[freeze resistance]
+	0	0
+
+[stun resistance]
+	0	0
+
+[blind resistance]
+	0	0
+
+[stone resistance]
+	0	0
+
+[sleep resistance]
+	10	10
+
+[hold resistance]
+	10	10
+
+[slow resistance]
+	10	10
+
+[curse resistance]
+	0	0
+
+[confuse resistance]
+	10	10
+
+[lightning resistance]
+	0	0
+
+[bleeding resistance]
+	0	0
+
+[poison resistance]
+	10	10
+
+[burn resistance]
+	0	0
+
+[piercing resistance]
+	0	0
+
+[level]
+	70	70
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	60000	60000
+
+[set damage check]
+	1000
+
+[item]
+[/item]
+
+[common champion drop item]
+[/common champion drop item]
+
+[waiting action]
+	`Action/Stay02.act`
+
+[move action]
+	`Action/Move02.act`
+
+[lie frame]
+	1	2	3	3	4
+
+[action list]
+	`Action/Attack1.act`
+[/action list]
+
+[attack info]
+	`Attackinfo/Attack.atk`
+[/attack info]
+
+[cooltime]
+	15000
+[/cooltime]
+
+[vision]
+	700
+
+[think term]
+	500
+
+[destination change term]
+	300
+
+[keep distance with target]
+	200
+
+[keep range distance with target]
+	40	0	5	5
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

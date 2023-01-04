@@ -1,0 +1,84 @@
+#PVF_File
+
+[name]
+	`hell raid of dark spirit higher`
+
+[width]
+	1	1
+
+[floating height]
+	0
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	10000
+
+[basic motion]
+	`../../Creature/Belzebuite/Animation/basic.ani`
+
+[etc motion]
+	`../../Creature/Belzebuite/Animation/belzebuite_overskill_circle_of_magic_1.ani`
+	`../../Creature/Belzebuite/Animation/belzebuite_overskill_circle_of_magic_2.ani`
+	`../../Creature/Belzebuite/Animation/belzebuite_overskill_circle_of_magic_3.ani`
+[/etc motion]
+
+[attack info]
+	`AttackInfo/MageDarkHigherSpiritHellRaid.atk`
+
+[add particles]
+	[particle]
+		[file]
+			`../../Creature/Belzebuite/Particle/belzebuite_overskill_part.ptl`
+		[create delay]
+			200
+		[loop]
+			1
+	[/particle]
+	[particle]
+		[file]
+			`../../Creature/Belzebuite/Particle/belzebuite_overskill_inazuma.ptl`
+		[create delay]
+			200
+		[loop]
+			1
+	[/particle]
+	[particle]
+		[file]
+			`../../Creature/Belzebuite/Particle/belzebuite_overskill_exp.ptl`
+		[create delay]
+			1200
+		[create sound]
+			`BELZEBUITE_SKILL_CRASH`
+		[loop]
+			1
+	[/particle]
+	[particle]
+		[file]
+			`particle/belzebuite_overskill_dark_for_deadmulker.ptl`
+		[create delay]
+			200
+		[loop]
+			1
+	[/particle]
+[/add particles]
+
+[sound category]
+	`[after object create]`
+	`DMURKER_DARK_OPEN`	-1
+	`[on destroyobject]`
+	`DMURKER_DARK_CLOSE`	-1
+[/sound category]
+
+[int data]
+	1000	1000	200	999
+[/int data]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	0
+[/object destroy condition]

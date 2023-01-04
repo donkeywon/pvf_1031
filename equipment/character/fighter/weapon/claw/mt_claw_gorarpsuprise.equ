@@ -1,0 +1,125 @@
+#PVF_File
+
+[name]
+	`卡露亚的深入教导 - 奇袭`
+
+[name2]
+	`Deep Teaching of Gora - Raid Surprise`
+
+[basic explain]
+	`攻击时， 有1%%的几率附加100点伤害
+攻击速度 +3%%`
+
+[grade]
+	44
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	40
+
+[physical attack]
+	14
+
+[magical attack]
+	16
+
+[attack speed]
+	30
+
+[price]
+	70400
+
+[repair price]
+	56320
+
+[value]
+	56320
+
+[equipment physical attack]
+	412	356
+
+[equipment magical attack]
+	412	356
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[fighter]`	13	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/claw.img`	31
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	3
+
+[layer variation]
+	2600
+	`clawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	32
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		1
+	[add absolute damage]
+		`all`
+		`+`	100
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

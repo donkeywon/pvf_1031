@@ -1,0 +1,49 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/leafAttack.ani`
+	[SUB ANI]
+		`../animation/sub_ani/sho_leafAttack.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`AGARUM_SKILL_03`	0
+		`SPIN_CIRCLE`	0
+		`WIND_SPIN`	2
+	[/SOUND]
+	[SPEECH]
+		`火之村民啊！吞噬敌人的灵魂吧！`	0	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9314
+		[/IS INDEX]
+	[/CHECKUP]
+	[GET TARGET]
+		3
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			62111
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[MAGIC CIRCLE]
+		[SUMMON TIME]
+			21000
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

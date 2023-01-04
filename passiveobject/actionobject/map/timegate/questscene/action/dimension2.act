@@ -1,0 +1,95 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Dimension_Gate_Start.ani`
+	[SUB ANI]
+		`../Animation/Dimension_Gate00.ani`	0	-1
+		`../Animation/Dimension_Gate_S.ani`	0	1
+		`../Animation/Dimension_Gate01.ani`	0	2
+		`../Animation/Dimension_Gate00_.ani`	0	3
+		`../Animation/Dimension_Gate02.ani`	0	4
+		`../Animation/Dimension_Gate_All.ani`	0	5
+	[/SUB ANI]
+	[SOUND]
+		`QUEST_GATE_03`	0
+		`QUEST_GATE_04`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[LEFT]
+	[SHAKING]
+		2	8000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/D1.ptl`	0	10	-70
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10629
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			700	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			10630
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9387
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	50
+	[/CREATE PASSIVEOBJECT]
+	[DESTROY]
+[/BEHAVIOR]

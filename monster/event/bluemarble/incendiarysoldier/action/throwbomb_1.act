@@ -1,0 +1,116 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/ThrowBomb_1.ani`
+	[SPEECH]
+		`投掷手雷！`	0	20
+		`全部烧掉！`	1	20
+	[/SPEECH]
+	[SOUND]
+		`R_KINFANTRY_ATK`	0
+		`SG_GUN_OVER_01`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`position`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8201
+		[PARTICLE FILENAME]
+			`../Particle/Bullet_1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	0	122
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`position`	
+		[=]
+			`position`
+		[+]
+			1
+	[/DIM]
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`position`	
+		[=>]
+			5
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		0
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[ON]
+	[SAY SPEECH]
+		`准备填装手雷！！`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9354
+		[PARTICLE FILENAME]
+			`../Particle/Bullet2_1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	0	122
+	[/CREATE PASSIVEOBJECT]
+	[CASTING]
+		1400	5
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		1
+[/BEHAVIOR]

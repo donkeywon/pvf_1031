@@ -1,0 +1,105 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Laugh.ani`
+	[SPEECH]
+		`嘿嘿嘿~`	0	100
+		`嘿~呀！`	2	100
+		`你们，死定了！`	4	100
+	[/SPEECH]
+	[SOUND]
+		`SCARECROW_BOUND`	2
+		`AIRSHIP_UP`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		7
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			1000
+		[X AXIS]
+		[RANDOM]
+			100	250
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		3	3
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			30
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+	[/SET SPEED]
+	[COLOR CHANGE EFFECT]
+		[CHANGE SIZE END]
+			200
+		[CHANGE TIME]
+			200
+		[LIFE TIME]
+			0
+	[/COLOR CHANGE EFFECT]
+	[APPENDAGE]
+		0	
+		[physical attack]
+		[%]
+			300.0
+	[/APPENDAGE]
+	[SET FRAME]
+		4
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		2
+	[ON]
+[/BEHAVIOR]

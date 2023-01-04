@@ -1,0 +1,49 @@
+#PVF_File
+
+[event]
+	[title]
+		`出席活动`
+	[explain]
+		`在消耗疲劳值30后，请点按确认出席按钮！
+活动期间内，如每天都有进行确认出席，将可以获得更特别的礼物！`
+	[db table]
+		`event_package_purchase_log`
+	[item idx]
+	[/item idx]
+	[item idx start]
+		2660434
+	[item idx end]
+		2660451
+	[send]
+		[purchase start count]
+			2
+		[purchase end count]
+			100
+		[purchase mutiple number]
+			2
+		[send mail]
+			[inven]
+				0
+			[detail]
+				2660413	1	0	0
+				`game_server_msg_236`
+				`game_server_msg_238`
+			[/detail]
+		[/send mail]
+		[purchase start count]
+			1
+		[purchase end count]
+			0
+		[purchase mutiple number]
+			1
+		[send mail]
+			[inven]
+				0
+			[detail]
+				0	0	1000000	0
+				`game_server_msg_236`
+				`game_server_msg_237`
+			[/detail]
+		[/send mail]
+	[/send]
+[/event]

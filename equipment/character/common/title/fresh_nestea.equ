@@ -1,0 +1,91 @@
+#PVF_File
+
+[name]
+	`雀巢清新茶`
+
+[name2]
+	``
+
+[explain]
+	`攻击时以1%%的机率30秒内物理爆击增加+5%%,魔法爆击增加+5%%。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	233
+
+[custom animation]
+	`TitleAnimation/fresh_nestea.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	150
+
+[physical attack]
+	25
+
+[magical attack]
+	25
+
+[MP regen speed]
+	9
+
+[move speed]
+	30
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[stuck]
+	-3
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical critical hit`
+		`+`	5
+	[stat]
+		`magical critical hit`
+		`+`	5
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

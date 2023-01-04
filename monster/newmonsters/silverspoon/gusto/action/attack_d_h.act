@@ -1,0 +1,68 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack_d.ani`
+	[SOUND]
+		`R_KATANAC`	2
+	[/SOUND]
+	[SUB ANI]
+		`../Animation/Gusto_2.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`想要见识我的刀法吗？`	0	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8936
+		[PARTICLE FILENAME]
+			`../Particle/Blade.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	0	65
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8936
+		[PARTICLE FILENAME]
+			`../Particle/Blade_1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	0	65
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8936
+		[PARTICLE FILENAME]
+			`../Particle/Blade_2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	0	65
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

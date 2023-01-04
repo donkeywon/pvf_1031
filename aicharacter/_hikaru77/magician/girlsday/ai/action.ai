@@ -1,0 +1,102 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check key cooltime]
+			`shield`
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	100.0	100.0	100.0	100.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`combo1`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`combo1`
+			[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	500.0	500.0	300.0	300.0
+	
+		[think]
+			[check key cooltime]
+				`combo`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`showtime`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`showtime`
+			[/think]
+	[false]
+	[return str]
+		`combo`
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[check skill on]
+			37
+		[false]
+		[return str]
+			`shield`
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	100.0	100.0	100.0	100.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`combo1`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`combo1`
+			[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	500.0	500.0	300.0	300.0
+	
+		[think]
+			[check key cooltime]
+				`combo`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`showtime`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`showtime`
+			[/think]
+	[false]
+	[return str]
+		`combo`
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

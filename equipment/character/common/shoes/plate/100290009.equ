@@ -1,0 +1,134 @@
+#PVF_File
+
+[name]
+	`镇魂曲 : 幽游板甲战靴`
+
+[name2]
+	``
+
+[basic explain]
+	`施放[疾风打]、 [圣光十字]、 [波动爆发]时， 有10%%的几率不受冷却时间影响。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	21
+
+[physical defense]
+	23
+
+[magical attack]
+	21
+
+[move speed]
+	60
+
+[price]
+	85000
+
+[repair price]
+	71400
+
+[value]
+	68000
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	2790	2610
+
+[icon]
+	`item/new_equipment/06_plate/shoes/plate_shoes.img`	10
+
+[field image]
+	`Item/field_equip.img`	19
+
+[equipment type]
+	`[shoes]`	20
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	2200
+
+[item group name]
+	`mt shoes`
+
+[cool time]
+	10000
+
+[set item master]
+	100090009
+
+[if]
+	[event use skill]
+		`priest`	85
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[skill data up]
+		`[priest]`	85	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`priest`	107
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[skill data up]
+		`[priest]`	107	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`swordman`	32
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[skill data up]
+		`[swordman]`	32	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

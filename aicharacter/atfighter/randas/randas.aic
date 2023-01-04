@@ -1,0 +1,178 @@
+#PVF_File
+
+[minimum info]
+	`神投手兰蒂斯`	7	3	0	0	70	0	0	1	0	0	0
+	`no creature`	0	0	0
+
+[additional character status]
+	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	10	10	10	100	100	100	100	100	100	100	100	100	100	100	100	100	0	100	100	100
+[/additional character status]
+
+[character status rate]
+	400	1000	1	1	1	1	1	5	1	5	1	1	1	1	1	5	3	1	100	1	1	1	1	1	100	100	10	10	1	1000	10	1	1	1	100	1	1	1	1	1000	100
+[/character status rate]
+
+[attack damage rate]
+	0.04
+
+[add equipment status from level]
+	1
+
+[armor subtype]
+	4
+
+[quick skill]
+	5	1
+	46	1
+	169	1
+	12	1
+	13	30
+	17	1
+[/quick skill]
+
+[skill]
+	9	20
+	27	1
+	32	1
+	33	1
+	43	10
+	38	17
+	109	1
+	110	1
+	75	23
+	60	21
+	61	1
+	23	1
+	108	1
+	181	3
+	182	5
+	184	1
+	172	1
+	179	8
+	170	1
+	174	70
+	73	1
+[/skill]
+
+[quick item]
+	1117	982
+[/quick item]
+
+[skill correction]
+	108	0.3	9	0.5
+[/skill correction]
+
+[equipment]
+	29001	4	0
+	10151	0	0
+	14132	1	0
+	12148	0	0
+	18132	1	0
+	16124	3	0
+	20147	2	0
+	22139	4	0
+	24153	2	0
+	1960036	2	0
+	1970015	2	0
+	1980023	2	0
+	2000016	2	0
+	2010015	2	0
+	2030014	2	0
+	2040012	2	0
+[/equipment]
+
+[think term]
+	200
+
+[destination change term]
+	300
+
+[keep distance with target]
+	200
+
+[warlike]
+	0
+
+[vision]
+	500
+
+[targeting bonus]
+	100	0	100	0	0	0	100	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	`[stand]`
+	`[dash]`	0	0
+	`[slow]`
+	`[confuse]`	0
+
+[ai pattern]
+	`Event.ai`
+	`DestinationSelect.ai`
+	`Action.ai`
+	`MoveMethod.ai`
+[/ai pattern]
+
+[key stream]
+	`curve1`
+	`curve_in.key`
+	`curve2`
+	`curve_out.key`
+	`fork`
+	`fork.key`
+	`back_shot`
+	`back_shot.key`
+	`power`
+	`power.key`
+	`108_back`
+	`108_back.key`
+	`9_attack`
+	`9_attack.key`
+	`108_front`
+	`108_front.key`
+	`non`
+	`non.key`
+[/key stream]
+
+[key cooltime]
+	`curve1`	3500
+	`curve2`	3500
+	`fork`	3000
+	`power`	1000
+	`back_shot`	1000
+	`non`	5000
+[/key cooltime]
+
+[etc action]
+	`action/curve_stay_in.act`
+	`action/curve_start_in.act`
+	`action/curve_stay_out.act`
+	`action/curve_start_out.act`
+	``
+	``
+	``
+	`action/back_shot.act`
+	`action/fork_stay.act`
+	`action/fork_start.act`
+	``
+	``
+	`action/power_stay.act`
+	`action/power_start.act`
+	`action/power_start_up.act`
+	`action/non_stay.act`
+	`action/non_start.act`
+[/etc action]
+
+[speech on situation]
+	[on appear]
+		`哈哈哈~你就是接球手吗？`	100
+	[on die]
+		`裁判！ 他违反比赛规则， 该给红牌！！`	100
+	[on attack]
+		`唔~~唔！ 直线球！`	50	4
+	[on attack]
+		`曲线球！`	50	1
+	[on attack]
+		`下坠球！`	50	0
+	[on attack]
+		`好！ 这次是慢速变化球！！`	50	3
+	[on attack]
+		`离我远点！ 不要影响我投球！`	50	6
+[/speech on situation]

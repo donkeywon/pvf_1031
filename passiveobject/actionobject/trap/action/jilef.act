@@ -1,0 +1,40 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/JileF.ani`
+	[SUB ANI]
+		`../Animation/JileF_Ground.ani`	0	0
+		`../Animation/JileF_Ice.ani`	0	0
+		`../Animation/JileF_Ice_D.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[<=]
+			95
+		[%]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON APC]
+		[INDEX]
+			10609
+		[LEVEL]
+			48
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[TEAM]
+			100
+	[/SUMMON APC]
+	[DESTROY]
+[/BEHAVIOR]

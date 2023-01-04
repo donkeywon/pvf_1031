@@ -1,0 +1,160 @@
+#PVF_File
+
+[name]
+	`传承 : 神圣的控魂女神的绢丝长袍`
+
+[name2]
+	`Legacy : Holy Silky Yarn Robe of Keres`
+
+[grade]
+	62
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	60
+
+[magical attack]
+	30
+
+[magical defense]
+	30
+
+[price]
+	43400
+
+[repair price]
+	38278
+
+[value]
+	34720
+
+[equipment physical defense]
+	780	756
+
+[skill levelup]
+	`[swordman]`	60	1
+	`[fighter]`	16	1
+	`[at fighter]`	16	1
+	`[gunner]`	59	1
+	`[at gunner]`	59	1
+	`[mage]`	59	1
+	`[mage]`	47	1
+	`[at mage]`	14	1
+	`[priest]`	40	1
+	`[demonic swordman]`	60	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/common/coat.img`	226
+
+[field image]
+	`Item/field_equip.img`	0
+
+[equipment type]
+	`[coat]`	17
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	1400
+
+[item group name]
+	`cl coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 神圣的控魂女神的绢丝战袍  套装`
+
+[set item]
+	10164	12161	14145	18145	16137
+[/set item]
+
+[set ability]
+	[physical attack]
+		90
+	[magical attack]
+		90
+	[magical defense]
+		23
+	[water resistance]
+		15
+	[MP regen speed]
+		14
+	[move speed]
+		40
+	[attack speed]
+		15
+	[cast speed]
+		70
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福增加自身7%%的攻击速度和施放速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`attack speed`
+			`+`	70
+		[stat by condition]
+			`cast speed`
+			`+`	70
+	[/then]
+	[skill levelup]
+		`[gunner]`	28	2
+		`[gunner]`	79	1
+		`[at gunner]`	28	2
+		`[at gunner]`	79	1
+		`[fighter]`	42	2
+		`[fighter]`	78	1
+		`[at fighter]`	42	2
+		`[at fighter]`	78	1
+		`[swordman]`	41	2
+		`[swordman]`	6	1
+		`[priest]`	70	2
+		`[priest]`	48	1
+		`[mage]`	24	2
+		`[mage]`	46	1
+		`[mage]`	58	1
+		`[mage]`	19	1
+		`[mage]`	55	1
+		`[at mage]`	24	1
+		`[at mage]`	5	1
+		`[at mage]`	2	1
+	[/skill levelup]
+[/set ability]
+
+[possible kiri protect]

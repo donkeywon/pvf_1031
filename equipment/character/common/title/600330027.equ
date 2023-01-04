@@ -1,0 +1,96 @@
+#PVF_File
+
+[name]
+	`黄金时钟的齿轮`
+
+[explain]
+	`攻击时有 5%% 的机率，增加 30 秒的攻击速度、移动速度、施放速度 3%%`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical attack]
+	40
+
+[physical defense]
+	40
+
+[magical attack]
+	40
+
+[magical defense]
+	40
+
+[equipment physical attack]
+	30	30
+
+[equipment magical attack]
+	30	30
+
+[separate attack]
+	50	50
+
+[all elemental attack]
+	10
+
+[icon]
+	`Item/Title/title.img`	491
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/steampunk_goldtitle.ani`
+[/custom animation]
+
+[if]
+	[cooltime]
+		40000
+	[attack success]
+		1
+	[cooltime group]
+		5
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`attack speed`
+		`+`	30
+	[stat]
+		`cast speed`
+		`+`	30
+	[stat]
+		`move speed`
+		`+`	30
+[/then]
+
+[room list move speed rate]
+	0.15
+
+[icon mark]
+	`Item/IconMark.img`	64

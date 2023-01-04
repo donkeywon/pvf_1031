@@ -1,0 +1,176 @@
+#PVF_File
+
+[name]
+	`龙影皓月棍`
+
+[name2]
+	`White Dragon`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入感电状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入感电状态15秒； 若攻击感电状态的敌人， 则每次攻击都会附加159点伤害。 (若敌人高于Lv50， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[grade]
+	54
+
+[rarity]
+	2
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	50
+
+[physical attack]
+	35
+
+[magical attack]
+	52
+
+[attack speed]
+	50
+
+[stuck]
+	-2
+
+[stuck resistance]
+	30
+
+[price]
+	75600
+
+[repair price]
+	63504
+
+[value]
+	60480
+
+[equipment physical attack]
+	445	429
+
+[equipment magical attack]
+	468	452
+
+[equipment physical defense]
+	540	540
+
+[separate attack]
+	233	156
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/fighter/tonfa.img`	29
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	1
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	1	1
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[cooltime]
+		24000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		15000
+	[probability]
+		2
+	[active status]
+		`lightning`	50	159
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

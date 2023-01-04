@@ -1,0 +1,168 @@
+#PVF_File
+
+[minimum info]
+	`灵魂师娜米`	6	1	1	1	70	0	0	0	0	0	0
+	`no creature`	0	0	0
+
+[additional character status]
+	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	100	100	100	100	100	100	0	100	0	100	0	0	0	0	0	0	0	0	100	0	100
+[/additional character status]
+
+[character status rate]
+	500	1000	1	1	1	1	1	5	1	5	1	1	100	1.2	1.5	1.5	1	1	1	1	1	1	10	1	100	100	1	100	1	100	1	1	1	1	1	1	1	1	50	100	100
+[/character status rate]
+
+[attack damage rate]
+	0.04
+
+[add equipment status from level]
+	1
+
+[armor subtype]
+	4
+
+[quick skill]
+	49	21
+	50	20
+	21	30
+	37	18
+	39	16
+	40	13
+[/quick skill]
+
+[skill]
+	35	23
+	19	1
+	10	1
+	26	5
+	29	10
+	30	10
+	44	1
+	1	1
+	9	1
+	23	1
+	181	2
+	182	2
+	184	1
+	179	8
+	170	1
+	62	1
+	61	1
+	169	1
+	190	1
+	70	1
+	71	1
+	174	70
+[/skill]
+
+[skill correction]
+	37	0.1	35	0.3	190	0.01
+[/skill correction]
+
+[quick item]
+[/quick item]
+
+[equipment]
+	37074	1	0
+	10951	3	0
+	14940	1	0
+	12945	0	0
+	18943	0	0
+	16934	1	0
+	20155	3	0
+	22148	1	0
+	24163	0	0
+	1720009	2	0
+	1730019	2	0
+	1740006	2	0
+	1760011	2	0
+	1770011	2	0
+	1790011	2	0
+	1750067	2	0
+	1780014	2	0
+	1800027	2	0
+[/equipment]
+
+[think term]
+	200
+
+[destination change term]
+	300
+
+[keep distance with target]
+	300
+
+[warlike]
+	0
+
+[vision]
+	4000
+
+[keep range distance with target]
+	300	0	20	100
+
+[limit passiveobject]
+[/limit passiveobject]
+
+[targeting bonus]
+	100	0	0	0	100	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	`[stand]`
+	`[dash]`	0	0
+	`[slow]`
+	`[confuse]`	0
+
+[ai pattern]
+	`Event.ai`
+	`DestinationSelect.ai`
+	`Action.ai`
+	`MoveMethod.ai`
+[/ai pattern]
+
+[key stream]
+	`atk21`
+	`attack21.key`
+	`atk35`
+	`attack35.key`
+	`atk190`
+	`atk190.key`
+	`combo`
+	`combo.key`
+	`reset`
+	`reset.key`
+	`exit`
+	`exit.key`
+	`atk37`
+	`attack37.key`
+	`atk39`
+	`attack39.key`
+	`Zattack`
+	`Zattack.key`
+	`atk40`
+	`attack40.key`
+[/key stream]
+
+[key cooltime]
+	`combo`	100
+	`reset`	500
+	`exit`	500
+	`Zattack`	5000
+[/key cooltime]
+
+[speech on situation]
+	[on appear]
+		`咦？ 我好像闻到了死亡的气息~`	100
+	[on die]
+		`你会活在恐怖中……`	100
+	[on stand]
+		`看来我也饿了~`	50
+	[on attack]
+		`恶灵们正好饿了！！`	50	4
+	[on attack]
+		`你会活在恐怖中……`	50	5
+	[on attack]
+		`恶灵之袭~`	50	0
+	[on attack]
+		`你会活在恐怖中……`	50	6
+	[on attack]
+		`恶灵之袭~`	50	7
+[/speech on situation]

@@ -1,0 +1,175 @@
+#PVF_File
+
+[name]
+	`人偶之王的咒术手杖`
+
+[name2]
+	`找不到代码name2_37692`
+
+[basic explain]
+	`攻击时， 有5%%的几率使敌人进入石化状态。
+攻击时， 有5%%的几率使敌人进入混乱状态。
+无法进行分解。`
+
+[detail explain]
+	`攻击时， 有5%%的几率使敌人进入石化状态5秒， 但在决斗场中， 只能持续2秒； 石化状态解除时， 使敌人受到450点伤害。 (若敌人高于Lv24， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击时， 有5%%几率使敌人进入混乱状态5秒； 但在决斗场中， 只能持续2秒。 (若敌人高于Lv24， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+无法进行分解。`
+
+[grade]
+	24
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	20
+
+[magical attack]
+	19
+
+[attack speed]
+	-100
+
+[price]
+	38400
+
+[repair price]
+	30720
+
+[value]
+	30720
+
+[equipment physical attack]
+	210	178
+
+[equipment magical attack]
+	299	253
+
+[separate attack]
+	148	96
+
+[magical critical hit]
+	5
+
+[icon]
+	`Item/weapon/thief/wand.img`	88
+
+[field image]
+	`Item/field_weapon.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	19	0
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2300
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		7500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[reduce duration to human armor at pvp module]
+		60
+	[probability]
+		5
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`confuse`	24	1
+[/then]
+
+[if]
+	[cooltime]
+		7500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[reduce duration to human armor at pvp module]
+		60
+	[probability]
+		5
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`stone`	24	450
+[/then]
+
+[routing priority]
+	`thief`	2
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

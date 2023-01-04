@@ -1,0 +1,170 @@
+#PVF_File
+
+[name]
+	`十字斩刀 - 者`
+
+[name2]
+	`Sword of Ten Letters - Sha`
+
+[basic explain]
+	`攻击时， 有3%%的几率消减敌人30%%的HP。 (对精英怪物的效果为1/3、 对领主和深渊怪物的效果为1/6)`
+
+[detail explain]
+	`攻击时， 有3%%的几率消减敌人30%%的HP； 在决斗场中， 只能消减敌人15%%的HP。 (对精英怪物的效果为1/3、 对领主和深渊怪物的效果为1/6)`
+
+[flavor text]
+	`遇到皮硬的家伙， 就用这把刀砍它。  --西岚和布万加的对话中`
+
+[grade]
+	50
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	45
+
+[physical attack]
+	35
+
+[magical attack]
+	53
+
+[attack speed]
+	80
+
+[cast speed]
+	40
+
+[stuck]
+	1
+
+[price]
+	80000
+
+[repair price]
+	67200
+
+[value]
+	64000
+
+[equipment physical attack]
+	452	407
+
+[equipment magical attack]
+	500	449
+
+[separate attack]
+	285	189
+
+[physical critical hit]
+	2
+
+[icon]
+	`Item/weapon/swordman/katana.img`	32
+
+[field image]
+	`Item/FieldImage.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	1	10
+
+[layer variation]
+	2790
+	`katanac`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`katanab`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	1	10
+
+[layer variation]
+	2790
+	`katanac`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`katanab`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`KATANA_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`katana`
+
+[cool time]
+	10000
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[weakness]
+		30
+[/then]
+
+[pvp]
+	[if]
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			3
+		[weakness]
+			15
+	[/then]
+[/pvp]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,113 @@
+#PVF_File
+
+[name]
+	`动物王国(松鼠)`
+
+[name2]
+	`Animal World (Squirrel)`
+
+[explain]
+	`攻击或施放技能时， 有3%%的几率使自身增加15%%的物理、 魔法暴击率， 效果持续30秒， 但需要消耗2个无色小晶块。`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	251
+
+[equipment type]
+	`[title name]`	1
+
+[custom animation]
+	`TitleAnimation/animalworld_squirrel.ani`
+[/custom animation]
+
+[HP MAX]
+	200
+
+[physical attack]
+	20
+
+[magical attack]
+	20
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[equipment physical attack]
+	3	3
+
+[equipment magical attack]
+	3	3
+
+[if]
+	[cooltime]
+		30000
+	[cooltime group]
+		6
+	[attack success]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	2
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[appendage]
+		114
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[cooltime group]
+		6
+	[casting]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	2
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[appendage]
+		114
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,103 @@
+#PVF_File
+
+[name]
+	`巨人波图拉 卡片`
+
+[name2]
+	`找不到代码name2_3799`
+
+[flavor text]
+	`看我用拳头把你碾碎！`
+
+[grade]
+	1
+
+[attach type]
+	`[free]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/stackable/MonsterCard_icon.img`	179
+
+[field image]
+	`Item/field_material.img`	30
+
+[stackable type]
+	`[material expert job]`	1
+
+[sub type]
+	1
+
+[price]
+	10
+
+[move wav]
+	`PAPER_TOUCH`
+
+[string data]
+	`Interface/MonsterCard/MonsterCard_image.img`
+	`[pants]`
+[/string data]
+
+[int data]
+	179	56055
+[/int data]
+
+[enchant]
+	[if]
+		[cooltime]
+			90000
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			5000
+		[probability]
+			3
+		[buff]
+			`unbreakable`
+	[/then]
+	[pvp]
+		[if]
+			[cooltime]
+				360000
+			[hit]
+				1
+		[/if]
+		[then]
+			[target]
+				`myself`	-1
+			[duration]
+				1000
+			[probability]
+				1
+			[buff]
+				`unbreakable`
+		[/then]
+	[/pvp]
+[/enchant]
+
+[stat desc]
+	`被攻击时， 有3%%的几率使自身进入无敌状态， 效果持续5秒。 (冷却时间为90秒； 在决斗场中会有所调整)`
+
+[item category]
+	`monster card`
+[/item category]
+
+[icon mark]
+	`Item/IconMark.img`	64

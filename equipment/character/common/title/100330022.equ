@@ -1,0 +1,140 @@
+#PVF_File
+
+[name]
+	`神秘王国的人偶剧 (黑猫)`
+
+[name2]
+	``
+
+[explain]
+	`攻击时， 有1%%的几率使自身增加600点物防， 效果持续30秒。
+施放技能时， 有2%%的几率使自身增加600点魔防， 效果持续30秒。
+被攻击时， 有5%%的几率使自身增加600点物防和魔防， 效果持续30秒。`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[physical defense]
+	27
+
+[magical defense]
+	27
+
+[attack speed]
+	10
+
+[cast speed]
+	10
+
+[move speed]
+	20
+
+[stuck resistance]
+	30
+
+[HP MAX]
+	300
+
+[hit recovery]
+	100
+
+[inventory limit]
+	5000
+
+[all elemental resistance]
+	5
+
+[all activestatus resistance]
+	5
+
+[icon]
+	`Item/Title/title.img`	91
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/puppet_stage.ani`
+[/custom animation]
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`equipment physical defense`
+		`+`	600
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`equipment magical defense`
+		`+`	600
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`equipment physical defense`
+		`+`	600
+	[stat]
+		`equipment magical defense`
+		`+`	600
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,250 @@
+#PVF_File
+
+[name]
+	`纯白之矛`
+
+[name2]
+	`Pure-white Spear`
+
+[basic explain]
+	`攻击时， 有6%%的几率使自身增加20%%的攻击速度， 效果持续20秒。
+被攻击时， 可以增加1%%的物理暴击率和命中率， 效果持续60秒。 (效果最多叠加10次)
+攻击速度 +2%%
+暴击伤害 +10%%`
+
+[detail explain]
+	`攻击时， 有6%%的几率使自身增加20%%的攻击速度， 效果持续20秒。 (在决斗场中 +10%%)
+被攻击时， 可以使自身增加1%%的物理暴击率和命中率， 效果持续60秒。 (效果最多叠加10次)
+攻击速度 +2%%
+暴击伤害 +10%% (在决斗场中 +5%%)`
+
+[grade]
+	70
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	65
+
+[physical attack]
+	71
+
+[attack speed]
+	-30
+
+[stuck]
+	-1
+
+[price]
+	112000
+
+[repair price]
+	94080
+
+[value]
+	89600
+
+[equipment physical attack]
+	809	737
+
+[equipment magical attack]
+	573	522
+
+[separate attack]
+	411	278
+
+[physical critical hit]
+	2
+
+[skill levelup]
+	`[mage]`	6	2
+	`[mage]`	7	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/mage/spear.img`	74
+
+[field image]
+	`Item/field_weapon.img`	6
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	15	4
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	15	4
+
+[layer variation]
+	2150
+	`at_speara`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_speard`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	15	4
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`SPEAR_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3200
+
+[item group name]
+	`spear`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	10
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		500
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[appendage]
+		101
+	[duration]
+		60000
+[/then]
+
+[if]
+	[cooltime]
+		35000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		6
+	[stat]
+		`attack speed`
+		`+`	200
+[/then]
+
+[pvp]
+	[if]
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase critical damage]
+			`%`	5
+	[/then]
+	[if]
+		[cooltime]
+			35000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			20000
+		[probability]
+			6
+		[reduce probability to human armor at pvp module]
+			80
+		[stat]
+			`attack speed`
+			`+`	100
+	[/then]
+[/pvp]
+
+[routing priority]
+	`mage`	3
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

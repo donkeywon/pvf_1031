@@ -1,0 +1,121 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/summon.ani`
+	[SUB ANI]
+		`../animation/effect/Berias_body_eff2.ani`	0	-1
+		`../animation/effect/Berias_Summon_Effect.ani`	0	0
+		`../animation/reclaim1/summon.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`吞噬之灵们！把他们全部吞噬吧！`	2	100
+	[/SPEECH]
+	[SOUND]
+		`BERIAS_SKILL_03`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9186
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			75	1	110
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9186
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			5	1	110
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9186
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			20	1	50
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9186
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			60	1	50
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

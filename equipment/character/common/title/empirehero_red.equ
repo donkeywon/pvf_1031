@@ -1,0 +1,211 @@
+#PVF_File
+
+[name]
+	`生命之神的荣耀`
+
+[name2]
+	``
+
+[explain]
+	`攻击时以 1%%的机率消耗1个无色小晶块，30秒内力量增加 30，体力增加 20，攻击速度增加5%%，移动速度增加 5%%。
+施展时以 1%%的机率消耗1个无色小晶块，30秒内力量增加30，体力增加 20，攻击速度增加5%%，移动速度增加 5%%。(决斗场内持续时间适用15秒,冷却时间适用60秒。)`
+
+[flavor text]
+	`<2011劳动节称号>`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	183
+
+[custom animation]
+	`TitleAnimation/empire_red.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	200
+
+[physical attack]
+	30
+
+[physical defense]
+	20
+
+[MP regen speed]
+	15
+
+[move speed]
+	30
+
+[attack speed]
+	30
+
+[cast speed]
+	10
+
+[if]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	1
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	20
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[if]
+	[cooltime]
+		45000
+	[casting]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	1
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	20
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	1
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	20
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[consume item]
+		3037	1
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	20
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[physical critical hit]
+	3
+
+[move wav]
+	`NAME_TOUCH`
+
+[fire attack]
+	3
+
+[water attack]
+	3
+
+[light attack]
+	3
+
+[dark attack]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	64

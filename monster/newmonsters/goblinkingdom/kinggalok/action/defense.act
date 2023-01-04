@@ -1,0 +1,48 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/stay1.ani`
+	[SUB ANI]
+		`../Animation/back/stay1.ani`	0	-6
+		`../Animation/shoes/stay1.ani`	0	1
+		`../Animation/shirts/stay1.ani`	0	1
+		`../Animation/pant/stay1.ani`	0	1
+		`../Animation/hat/stay1.ani`	0	1
+		`../animation/Weapon/stay1.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		5000	
+		[physical attack]
+		[+]
+			100.0
+		[magical attack]
+		[%]
+			100.0
+		[physical defense]
+		[%]
+			100.0
+		[magical defense]
+		[%]
+			100.0
+		[attack speed]
+		[%]
+			100.0
+		[move speed]
+		[%]
+			100.0
+	[/APPENDAGE]
+[/BEHAVIOR]

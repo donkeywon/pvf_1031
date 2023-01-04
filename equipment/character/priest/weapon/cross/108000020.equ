@@ -1,0 +1,155 @@
+#PVF_File
+
+[name]
+	`战地狂人十字架`
+
+[name2]
+	``
+
+[basic explain]
+	`施放[荣誉祝福]时， 可以使队员增加10点火属性强化值， 效果持续30秒。
+施放[荣誉祝福]时， 有40%%的几率不受冷却时间影响。 (在决斗场中无效)`
+
+[grade]
+	74
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	70
+
+[physical defense]
+	61
+
+[magical attack]
+	49
+
+[magical defense]
+	61
+
+[cast speed]
+	20
+
+[move speed]
+	20
+
+[MP regen speed]
+	40
+
+[price]
+	118400
+
+[repair price]
+	99456
+
+[value]
+	94720
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	704	654
+
+[equipment magical attack]
+	669	621
+
+[equipment physical defense]
+	740	740
+
+[separate attack]
+	420	284
+
+[skill levelup]
+	`[priest]`	26	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/priest/cross/cross.img`	78
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	22	0
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[if]
+	[use skill]
+		`priest`	45
+	[/use skill]
+[/if]
+
+[then]
+	[duration]
+		30000
+	[target]
+		`party`	-1
+	[stat]
+		`fire attack`
+		`+`	10
+[/then]
+
+[if]
+	[use skill]
+		`priest`	45
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		40
+	[skill data up]
+		`[priest]`	45	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

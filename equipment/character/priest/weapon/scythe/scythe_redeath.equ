@@ -1,0 +1,162 @@
+#PVF_File
+
+[name]
+	`即死领悟 - 死神之镰`
+
+[name2]
+	`Redeath : Sythe of Grim Reaper`
+
+[basic explain]
+	`破招攻击力 +40%%`
+
+[flavor text]
+	`引领亡者的死神使用的巨大镰刀， 若被该镰刀割下头颅， 则连灵魂都会湮灭。`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	42
+
+[magical attack]
+	42
+
+[attack speed]
+	80
+
+[stuck]
+	1
+
+[price]
+	99200
+
+[repair price]
+	83328
+
+[value]
+	79360
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	543	498
+
+[equipment magical attack]
+	572	524
+
+[separate attack]
+	360	243
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	114	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/scythe.img`	34
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	4	0
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[if]
+	[attack condition]
+		`counter`
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	40
+[/then]
+
+[pvp]
+	[if]
+		[attack condition]
+			`counter`
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase damage]
+			`%`	28
+	[/then]
+[/pvp]
+
+[routing priority]
+	`priest`	3
+	`priest`	2
+	`priest`	4
+[/routing priority]
+
+[possible kiri protect]
+
+[need material]
+	2749095	129
+
+[icon mark]
+	`Item/IconMark.img`	68

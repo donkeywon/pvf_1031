@@ -1,0 +1,122 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	``
+
+[explain]
+	`攻击时以1%%的机率30秒内力量增加45，攻击速度增加7%%。施展时以2%%的机率30秒内智能增加45,施放速度增加7%%。`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	122
+
+[custom animation]
+	`TitleAnimation/man_devildom.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	150
+
+[MP MAX]
+	150
+
+[physical attack]
+	18
+
+[physical defense]
+	5
+
+[magical attack]
+	18
+
+[magical defense]
+	5
+
+[all elemental resistance]
+	5
+
+[all activestatus resistance]
+	5
+
+[move speed]
+	40
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[if]
+	[cooltime]
+		40000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	45
+	[stat]
+		`attack speed`
+		`+`	70
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`magical attack`
+		`+`	45
+	[stat]
+		`cast speed`
+		`+`	70
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,59 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Stay/Stay_02_Body.ani`
+	[SUB ANI]
+		`../Animation/Stay/Stay_03_BodyFire_02.ani`	0	-2
+		`../Animation/Stay/Stay_03_BodyFire_01.ani`	0	-1
+		`../Animation/Stay/Stay_02_body_dodge.ani`	0	1
+		`../Animation/Stay/Stay_00_headt.ani`	0	2
+		`../Animation/Stay/Stay_01_headt_dodge.ani`	0	3
+		`../Animation/Stay/Stay_00_Fire_dodge.ani`	0	4
+		`../Animation/Stay/Stay_00_headb.ani`	0	5
+		`../Animation/Stay/Stay_00_headb_dodge.ani`	0	6
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			54071
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			54072
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		8
+	[NOW]
+[/BEHAVIOR]

@@ -1,0 +1,100 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/gravity.ani`
+	[SUB ANI]
+		`../Animation/gravity_eff.ani`	0	0
+		`../Animation/gravity_on_eff.ani`	0	0
+		`../Animation/gravity_on_eff1.ani`	0	0
+		`../Animation/gravity_on_eff2.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`timecome1`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[ON]
+	[FLASH SCREEN EX]
+		100	9800	100	50	250	250	250	0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		10000	
+		[attack speed]
+		[%]
+			-60.0
+		[move speed]
+		[%]
+			-60.0
+		[cast speed]
+		[%]
+			-60.0
+		[stuck]
+		[%]
+			-60.0
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`timecome1`	
+		[+]
+			10000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		3
+[/BEHAVIOR]

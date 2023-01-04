@@ -1,0 +1,44 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/chain/1chain_start.ani`
+	[SUB ANI]
+		`../Animation/Chain/chain_effect_start.ani`	0	-1
+		`../Animation/Chain/chain_sphere_start.ani`	0	1
+		`../Animation/Chain/1chain_start_bottom.ani`	0	2
+		`../Animation/Chain/1chain_start_lineeffect.ani`	0	3
+		`../Animation/Chain/1chain_start_shockwave.ani`	0	4
+	[/SUB ANI]
+	[SOUND]
+		`ANDRES_TIMECHAIN`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		6	300
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

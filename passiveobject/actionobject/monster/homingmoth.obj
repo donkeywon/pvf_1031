@@ -1,0 +1,46 @@
+#PVF_File
+
+[width]
+	10	5
+
+[floating height]
+	1
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	0
+
+[basic action]
+	`Action/HomingMoth.act`
+
+[attack info]
+	`AttackInfo/HomingMoth.atk`
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[ENEMY]`
+	[homing velocity]
+		0	150
+	[homing check gap]
+		1000
+[/homing]
+
+[name]
+	`迪桑的蛀虫`
+
+[sound category]
+	`[after object create]`
+	`DESHANG_SKILL_01`	-1
+[/sound category]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[on end of animation]`
+[/object destroy condition]

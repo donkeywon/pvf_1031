@@ -1,0 +1,157 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack_1_0.ani`
+	[SUB ANI]
+		`../Animation/Attack_1_5.ani`	0	-2
+		`../Animation/Attack_1_3.ani`	0	-1
+		`../Animation/Attack_1_4.ani`	0	1
+	[/SUB ANI]
+	[SOUND]
+		`R_BASTEN_SKILL_02`	0
+		`BASTEN_SCREAM`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS NOT INDEX]
+			64010
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64011
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64012
+		[/IS NOT INDEX]
+		[DISTANCE]
+		[<=]
+			5000
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS NOT INDEX]
+			64010
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64011
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64012
+		[/IS NOT INDEX]
+		[DISTANCE]
+		[<=]
+			5000
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS NOT INDEX]
+			64010
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64011
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64012
+		[/IS NOT INDEX]
+		[DISTANCE]
+		[<=]
+			5000
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS NOT INDEX]
+			64010
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64011
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64012
+		[/IS NOT INDEX]
+		[DISTANCE]
+		[<=]
+			5000
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[IS NOT INDEX]
+			64010
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64011
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64012
+		[/IS NOT INDEX]
+		[DISTANCE]
+		[<=]
+			5000
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		5
+	[%]
+[/BEHAVIOR]

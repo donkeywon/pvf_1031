@@ -1,0 +1,79 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/dummy_stay.ani`
+	[SUB ANI]
+		`../Animation/Stick/Stick_dummy_stay.ani`	0	10
+	[/SUB ANI]
+	[SPEECH]
+		`竟敢毁坏朕的轿子！朕怒了！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET OUTLINE]
+		1	100	100	255	1
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			4000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`nochair_stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`nochair_move.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`nochair_sit.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`nochair_damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`nochair_damage2.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		`nochair_down.act`
+	[CHANGE ACTION FILE]
+	[OVERTURN]
+		`nochair_overturn.act`
+	[TRIGGER]
+		1
+	[OFF]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]

@@ -1,0 +1,168 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/booldRave_stay.ani`
+	[SUB ANI]
+		`../Animation/booldRave_ptl1_stay.ani`	0	0
+		`../Animation/booldRave_ptl2_stay.ani`	0	0
+		`../Animation/booldRave_ptl3_stay.ani`	0	0
+		`../Animation/booldRave_ptl4_stay.ani`	0	0
+		`../Animation/booldRave_ptl_stay.ani`	0	0
+		`../Animation/booldRave_ptl5_stay.ani`	0	0
+		`../Animation/booldRave_ptl6_stay.ani`	0	0
+		`../Animation/Line1_stay.ani`	0	0
+		`../Animation/Line2_stay.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			600
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PULL APPENDAGE EX]
+		[SPEED]
+			8.0	8.0
+		[VALIDTIME]
+			3000
+		[USE TARGET]
+			0
+	[/PULL APPENDAGE EX]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			100
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9270
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+		[RANDOM]
+			15	-15
+		[RANDOM]
+			10	-10
+		[RANDOM]
+			80	30
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		15	15
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		18	18
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		21	21
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1	
+		[ON]
+		[BEHAVIOR]
+	
+		[TRIGGER]
+			[FRAME]
+				23	23
+			[DO BEHAVIOR]
+			[ME]
+				3
+		[/TRIGGER]
+
+	[BEHAVIOR]
+		[SET ACTION]
+		[CUSTOM]
+			2
+		[NOW]
+	[/BEHAVIOR]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		5
+	[%]
+[/BEHAVIOR]

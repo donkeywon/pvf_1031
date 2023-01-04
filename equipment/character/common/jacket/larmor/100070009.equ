@@ -1,0 +1,222 @@
+#PVF_File
+
+[name]
+	`深海熔岩胸甲`
+
+[name2]
+	``
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	42
+
+[magical attack]
+	28
+
+[HP MAX]
+	350
+
+[price]
+	102000
+
+[repair price]
+	85680
+
+[value]
+	81600
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	3348	3132
+
+[skill levelup]
+	`[priest]`	103	1
+	`[priest]`	104	1
+	`[fighter]`	101	1
+	`[fighter]`	105	1
+	`[at fighter]`	118	1
+	`[at fighter]`	121	1
+	`[fighter]`	103	1
+	`[fighter]`	102	1
+	`[at fighter]`	122	1
+	`[at fighter]`	124	1
+	`[swordman]`	98	1
+	`[swordman]`	97	1
+	`[thief]`	74	1
+	`[thief]`	77	1
+[/skill levelup]
+
+[fire resistance]
+	6
+
+[water resistance]
+	12
+
+[icon]
+	`item/new_equipment/04_larmor/coat/larmor_coat.img`	10
+
+[field image]
+	`Item/field_equip.img`	5
+
+[equipment type]
+	`[coat]`	21
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3100
+
+[item group name]
+	`la coat`
+
+[cool time]
+	10000
+
+[set name]
+	`深海熔岩  套装`
+
+[set item]
+	100070009	100120009	100170009	100220009	100270009
+[/set item]
+
+[set ability]
+	[fullset basic explain]
+		`HP低于30%%时， 冰属性抗性 -30
+攻击时， 有5%%的几率连续施放2次[烈焰冲击]。
+攻击时， 有5%%的几率使自身冰属性抗性值减少20%， 效果持续10秒。 (效果最多可重叠5次)
+
+冰属性抗性值越低， 火属性能力值越高。
+冰属性抗性值低于30时， 增加40点火属性抗性和50点火属性强化。
+冰属性抗性介于31~50时， 增加25点火属性抗性和30点火属性强化。
+冰属性抗性介于51~100时， 增加7点火属性抗性和10点火属性强化。`
+	[elemental property]
+		`[fire element]`
+	[if]
+		[cooltime]
+			3000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			2
+		[passive object]
+			48518	0	0	0	84	0	``
+			48518	0	0	0	84	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[change status]
+			`hp`
+			`=<`
+			`%`	30
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`water resistance`
+			`+`	-30
+	[/then]
+	[if]
+		[is stat]
+			`myself`	-1
+			`water resistance`
+			`<=`	30
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[add stat at once]
+			`fire resistance`
+			`+`	40
+		[add stat at once]
+			`fire attack`
+			`+`	50
+	[/then]
+	[if]
+		[is stat]
+			`myself`	-1
+			`water resistance`
+			`<=`	50
+		[is stat]
+			`myself`	-1
+			`water resistance`
+			`>`	30
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[add stat at once]
+			`fire resistance`
+			`+`	25
+		[add stat at once]
+			`fire attack`
+			`+`	30
+	[/then]
+	[if]
+		[is stat]
+			`myself`	-1
+			`water resistance`
+			`<=`	100
+		[is stat]
+			`myself`	-1
+			`water resistance`
+			`>`	50
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[add stat at once]
+			`fire resistance`
+			`+`	7
+		[add stat at once]
+			`fire attack`
+			`+`	10
+	[/then]
+	[if]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			5
+		[appendage]
+			174
+	[/then]
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

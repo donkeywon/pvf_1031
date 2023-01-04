@@ -1,0 +1,178 @@
+#PVF_File
+
+[name]
+	`亡者的墓碑`
+
+[name2]
+	`Grave of the Dead`
+
+[basic explain]
+	``
+
+[detail explain]
+	`施放技能时， 有5%%的几率出现光环并使300px范围内的敌人每秒受到3000点伤害， 效果持续7秒。
+施放技能时， 有5%%的几率使所有队员增加8%%的攻击速度和移动速度， 效果持续30秒。
+[裂地锤]冷却时间 -2秒`
+
+[flavor text]
+	`谁把亡者坟墓的墓碑都挖来了？`
+
+[grade]
+	70
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	65
+
+[physical defense]
+	59
+
+[magical attack]
+	47
+
+[magical defense]
+	59
+
+[cast speed]
+	20
+
+[price]
+	112000
+
+[repair price]
+	94080
+
+[value]
+	89600
+
+[equipment physical attack]
+	674	614
+
+[equipment magical attack]
+	640	583
+
+[equipment physical defense]
+	700	690
+
+[equipment magical defense]
+	700	690
+
+[separate attack]
+	411	278
+
+[skill levelup]
+	`[priest]`	23	3
+	`[priest]`	117	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/cross.img`	59
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	12	3
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		45000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[reduce probability to human armor at pvp module]
+		80
+	[stat]
+		`attack speed`
+		`+`	80
+	[stat]
+		`move speed`
+		`+`	80
+[/then]
+
+[skill data up]
+	`[priest]`	118	`[all]`	`[cooltime]`	0	`+`	-2000
+[/skill data up]
+
+[routing priority]
+	`priest`	1
+	`priest`	4
+[/routing priority]
+
+[if]
+	[casting]
+		1
+	[cooltime]
+		14000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[aura]
+		3
+	[duration]
+		7000
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

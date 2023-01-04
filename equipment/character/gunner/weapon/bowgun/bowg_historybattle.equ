@@ -1,0 +1,168 @@
+#PVF_File
+
+[name]
+	`远古逆袭之黑雀弩`
+
+[name2]
+	`Black Sparrow of Historical Battle`
+
+[basic explain]
+	`攻击时， 有2%%的几率使自身增加30点力量， 效果持续30秒。
+攻击速度 +1%%`
+
+[flavor text]
+	`蕴含远古战争英雄之灵魂的稀贵武器。`
+
+[grade]
+	59
+
+[rarity]
+	2
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[physical attack]
+	44
+
+[magical attack]
+	22
+
+[attack speed]
+	30
+
+[cast speed]
+	10
+
+[move speed]
+	10
+
+[stuck]
+	-1
+
+[price]
+	82600
+
+[repair price]
+	69384
+
+[value]
+	66080
+
+[equipment physical attack]
+	400	360
+
+[equipment magical attack]
+	444	401
+
+[separate attack]
+	256	173
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[gunner]`	49	1
+	`[gunner]`	53	1
+	`[at gunner]`	49	1
+	`[at gunner]`	53	1
+[/skill levelup]
+
+[icon]
+	`item/weapon/gunner/bowgun.img`	40
+
+[field image]
+	`Item/field_weapon.img`	5
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	7	0
+
+[layer variation]
+	2790
+	`bowgunc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`bowgunb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	7	0
+
+[layer variation]
+	2790
+	`at_bowgunc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_bowgunb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BOWGUN_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`bowgun`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	22
+
+[if]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`physical attack`
+		`+`	30
+[/then]
+
+[possible kiri protect]

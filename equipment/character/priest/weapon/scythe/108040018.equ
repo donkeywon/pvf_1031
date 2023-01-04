@@ -1,0 +1,142 @@
+#PVF_File
+
+[name]
+	`遗迹守卫者之镰`
+
+[name2]
+	``
+
+[basic explain]
+	`[恶魔之触]冷却时间 -4秒
+
+施放[天使祝福]时， 有40%%的几率发动提升Lv4的该技能。`
+
+[grade]
+	74
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	70
+
+[physical attack]
+	49
+
+[magical attack]
+	49
+
+[attack speed]
+	80
+
+[stuck]
+	1
+
+[price]
+	133200
+
+[repair price]
+	111888
+
+[value]
+	106560
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	669	621
+
+[equipment magical attack]
+	704	654
+
+[separate attack]
+	420	284
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	123	1
+	`[priest]`	116	1
+	`[priest]`	131	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/priest/scythe/scythe.img`	79
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	25	0
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[if]
+	[event use skill]
+		`priest`	53
+[/if]
+
+[then]
+	[probability]
+		40
+	[target]
+		`myself`	-1
+	[skill levelup]
+		`[priest]`	53	4
+	[/skill levelup]
+[/then]
+
+[skill data up]
+	`[priest]`	117	`[all]`	`[cooltime]`	0	`+`	-4000
+[/skill data up]
+
+[icon mark]
+	`Item/IconMark.img`	66

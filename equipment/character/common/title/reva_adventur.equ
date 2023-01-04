@@ -1,0 +1,127 @@
+#PVF_File
+
+[name]
+	`5周年阿拉德庆典`
+
+[name2]
+	``
+
+[explain]
+	`攻击时以1%%的机率让敌人5秒内陷入混乱状态。 (决斗场内15秒内发动, 持续时间2秒。)状态异常效果的等级和角色等级相同适用。`
+
+[flavor text]
+	`< 5周年 纪念称号> 和雷帕一起展开DNF的冒险!!!`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	226
+
+[custom animation]
+	`TitleAnimation/reva_adventur.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	150
+
+[MP MAX]
+	150
+
+[physical attack]
+	25
+
+[physical defense]
+	25
+
+[magical attack]
+	25
+
+[magical defense]
+	25
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[if]
+	[cooltime]
+		10000
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		1
+	[active status]
+		`confuse`	-1	1
+[/then]
+
+[if]
+	[cooltime]
+		15000
+	[module]
+		`[pvp]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		1
+	[active status]
+		`confuse`	-1	1
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

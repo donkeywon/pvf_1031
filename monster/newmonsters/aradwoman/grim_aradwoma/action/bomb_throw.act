@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/bomb_throw.ani`
+	[SUB ANI]
+		`../Animation/weapon/Bomb_Throw_wp.ani`	0	3
+	[/SUB ANI]
+	[SOUND PROBABILITY]
+		`R_GSEEKERWOMAN_ATK`	2	30
+		`THUNDERC_ATK`	0	100
+	[/SOUND PROBABILITY]
+	[SPEECH]
+		`一起伺奉使徒大人吧！`	2	3
+		`敢对使徒大人不敬？去死吧！`	2	10
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8859
+		[PARTICLE FILENAME]
+			`../Particle/Bomb.ptl`
+		[LEVEL]
+			0
+		[POS]
+			25	0	100
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

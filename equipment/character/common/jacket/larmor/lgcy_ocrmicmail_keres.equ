@@ -1,0 +1,142 @@
+#PVF_File
+
+[name]
+	`传承 : 控魂女神的软陶胸甲`
+
+[name2]
+	`Legacy : Ceramics Mail of Keres`
+
+[grade]
+	59
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[physical attack]
+	32
+
+[magical attack]
+	19
+
+[price]
+	53100
+
+[repair price]
+	46834
+
+[value]
+	42480
+
+[equipment physical defense]
+	2232	2160
+
+[skill levelup]
+	`[swordman]`	38	1
+	`[fighter]`	37	1
+	`[fighter]`	22	1
+	`[at fighter]`	37	1
+	`[at fighter]`	22	1
+	`[priest]`	33	1
+	`[thief]`	37	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/common/coat.img`	22
+
+[field image]
+	`Item/field_equip.img`	5
+
+[equipment type]
+	`[coat]`	19
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3100
+
+[item group name]
+	`la coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 控魂女神的软陶轻甲  套装`
+
+[set item]
+	10909	12906	14899	18903	16896
+[/set item]
+
+[set ability]
+	[HP MAX]
+		300
+	[MP MAX]
+		250
+	[physical attack]
+		75
+	[physical defense]
+		75
+	[dark resistance]
+		10
+	[move speed]
+		35
+	[attack speed]
+		35
+	[stuck]
+		-2
+	[skill levelup]
+		`[swordman]`	73	1
+		`[fighter]`	82	1
+		`[fighter]`	88	1
+		`[at fighter]`	82	1
+		`[at fighter]`	88	1
+		`[priest]`	4	1
+		`[thief]`	39	1
+		`[demonic swordman]`	73	1
+	[/skill levelup]
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福可以使自身增加7%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	70
+	[/then]
+[/set ability]
+
+[possible kiri protect]

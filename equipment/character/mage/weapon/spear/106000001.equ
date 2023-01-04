@@ -1,0 +1,199 @@
+#PVF_File
+
+[name]
+	`红色穿刺矛[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`魔法护盾施展时30秒内命中率增加10%%，力量增加80，减少智力40，攻击速度增加4%%，移动速度增加4%% 
+
+无法进行交易，合成和分解，可以强化。`
+
+[flavor text]
+	`光环防护解除后仍然很强大.. 这种武器要去哪里取得呢...？ -路过的魔斗士-`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	65
+
+[physical attack]
+	69
+
+[attack speed]
+	-50
+
+[stuck]
+	-1
+
+[price]
+	110400
+
+[repair price]
+	92736
+
+[value]
+	88320
+
+[equipment physical attack]
+	785	725
+
+[equipment magical attack]
+	556	513
+
+[separate attack]
+	389	264
+
+[physical critical hit]
+	2
+
+[icon]
+	`Item/weapon/mage/spear.img`	73
+
+[field image]
+	`Item/field_weapon.img`	6
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	15	1
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	15	1
+
+[layer variation]
+	2150
+	`at_speara`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_speard`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	15	1
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[move wav]
+	`SPEAR_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3200
+
+[item group name]
+	`spear`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		20000
+	[use skill]
+		`mage`	37
+	[/use skill]
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			30000
+		[stat]
+			`physical attack`
+			`+`	80
+		[stat]
+			`magical attack`
+			`+`	-40
+		[stat]
+			`stuck`
+			`+`	-10
+		[then probability]
+			40.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			30000
+		[stat]
+			`attack speed`
+			`+`	40
+		[stat]
+			`move speed`
+			`+`	40
+		[then probability]
+			60.0
+	[/then]
+[/multiple then]
+
+[impossible contents]
+	`disjoint`
+	`gift`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

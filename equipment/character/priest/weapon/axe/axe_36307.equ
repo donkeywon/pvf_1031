@@ -1,0 +1,137 @@
+#PVF_File
+
+[name]
+	`高科技赤铜战斧`
+
+[name2]
+	`Teaching of Gora - Oppression`
+
+[basic explain]
+	`破招攻击时， 对敌人附加15%%的伤害。
+
+无法进行分解、 封装和合成。`
+
+[grade]
+	46
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	42
+
+[physical attack]
+	16
+
+[magical attack]
+	16
+
+[attack speed]
+	-80
+
+[stuck]
+	-2
+
+[price]
+	0
+
+[repair price]
+	69552
+
+[value]
+	0
+
+[equipment physical attack]
+	523	475
+
+[equipment magical attack]
+	371	337
+
+[separate attack]
+	256	171
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[priest]`	30	2
+	`[priest]`	49	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/axe.img`	27
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	1	7
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[if]
+	[attack condition]
+		`counter`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	15
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

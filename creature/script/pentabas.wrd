@@ -1,0 +1,157 @@
+#PVF_File
+
+[ambient]
+	[room list]
+		`主人的健康就是我的幸福，一定要保护好自己哦……^_^……`
+		`主人，我饿得好难受啊，眼泪都要流出来了……`
+		`我讨厌人多的地方，它会让我跟丢主人……T_T……`	
+		[in elven gard]
+			`嘿嘿，美丽的风景总让我心情快乐！^_^……`
+		[/in elven gard]
+		[in alfhlyra]
+			`这里什么都没有，太让人失望了！`
+		[/in alfhlyra]
+		[in stom pass]
+			`主人您冷不冷？我愿意献上我小小的怀抱给您取暖哦……`
+		[/in stom pass]
+	[/room list]
+	[main game]
+		[fill point under]
+			20
+			`我的力量在消失，再不给我吃的，我就要离开您了……T_T……`
+			`我的力量在消失，再不给我吃的，我就要离开您了……T_T……`
+			`我的力量在消失，再不给我吃的，我就要离开您了……T_T……`
+		[/fill point under]
+		[enemies alive]
+			[hits over]
+				20
+				`主人，我的存在就是为了您，请使用我的力量吧！`
+				`主人，如果您的血流完了，我就见不着您了……T_T……`
+			[/hits over]
+			[hits under]
+				21
+				`主人您到一边呆着吧，这些怪物让我来！`
+				`让你们看看什么叫来一个杀一个，来两个杀一双！`
+			[/hits under]
+		[/enemies alive]
+		[enemies destroyed]
+		[rank over]
+			`b`
+			`评分很高哦，嘿嘿，主人会考虑请我吃大餐吧？`
+			`主人您太了不起了，我对你的敬仰犹如滔滔江水，连绵不绝，又如黄河泛滥，一发不可收拾……`
+		[/rank over]
+		[rank under]
+			`b`
+			`主人您不累吗？我好累啊，特别是我的两个翅膀……T_T……`
+			`我，无语了……- -……`
+		[/rank under]
+	[/main game]
+[/ambient]
+
+[trigger]
+	[room list]
+		[renamed]
+			`哇，我有新名字了，谢谢主人！`
+		[/renamed]
+		[pop random]
+			30	
+			[call the name]
+				`遵命，主人！`
+			[/call the name]
+		[/pop random]
+		[pop random]
+			20	
+			[equip]
+				`终于进化了！我可以更好的帮助主人了！`
+				`主人有事尽管吩咐……我一定会为您冲锋陷阵，死而后己的……`
+			[/equip]
+		[/pop random]
+		[pop random]
+			20	
+			[level up]
+				`哇，主人越来越帅啦！`
+				`哇，主人的能力提高了！我们吃大餐庆祝吧……^_^……`
+			[/level up]
+		[/pop random]
+		[pop random]
+			30	
+			[character level up]
+				`恭喜主人！主人永远是最棒的！`
+			[/character level up]
+		[/pop random]
+		[evolution]
+			`保护主人是我的责任！`
+		[/evolution]
+		[eat feed]
+			`好饱~嗝~！好久没有这种感觉了……T_T……`
+		[/eat feed]
+	[/room list]
+	[main game]
+		[eat feed]
+			`哇，主人终于想起我了，我一定不会浪费它们的！`
+			`食物可以让我的蓄气时间缩短，如果老让我饿肚子，我会越来越脑残的！`
+		[/eat feed]
+		[none feed]
+			`呜呜，又没食物了！我要告诉阿-拉德的同伴，说主人喜欢虐待动物……T_T……`
+		[/none feed]
+		[end buff]
+			`饿得没力气了，这样下去，我就要跟丢您了……`
+		[/end buff]
+		[dying]
+			`您真的忍心看着我被饿死啊？好狠心的主人……T_T……`
+		[/dying]
+		[using overskill]
+			`黑暗！吞噬吧！`
+			`暗影迷雾！！`
+		[/using overskill]
+		[pop random]
+			30	
+			[skill gauge full]
+				`主人，我都准备好了，就等您吩咐了！`
+				`主人！`
+			[/skill gauge full]
+		[/pop random]
+		[pop random]
+			30	
+			[over skill gauge full]
+				`暗影迷雾准备好了！`
+				`主人，只要您想，您随时都可以用我的力量！`
+			[/over skill gauge full]
+		[/pop random]
+		[over skill waiting]
+			`暗影迷雾！发动！……- -……主人，这样够有杀气了吧？`
+			`主人，您放心！如果它们想靠近您，除非先踏过我的身体！`
+		[/over skill waiting]
+		[call the name]
+			`遵命，主人！`
+		[/call the name]
+		[pop random]
+			20	
+			[equip]
+				`终于进化了！我可以更好的帮助主人了！`
+				`主人有事尽管吩咐……我一定会为您冲锋陷阵，死而后己的……`
+			[/equip]
+		[/pop random]
+		[pop random]
+			20	
+			[level up]
+				`哇，主人越来越帅啦！`
+				`哇，主人的能力提高了！我们吃大餐庆祝吧……^_^……`
+			[/level up]
+		[/pop random]
+		[pop random]
+			30	
+			[character level up]
+				`恭喜主人！主人永远是最棒的！`
+			[/character level up]
+		[/pop random]
+		[evolution]
+			`保护主人是我的责任！`
+		[/evolution]
+	[/main game]
+	[pvp]
+		[press creature button]
+			`主人，我帮不上忙还连累了您……呜呜，我不是故意的！`
+		[/press creature button]
+	[/pvp]
+[/trigger]

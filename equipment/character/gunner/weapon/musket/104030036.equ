@@ -1,0 +1,250 @@
+#PVF_File
+
+[name]
+	`屠龙之首`
+
+[name2]
+	``
+
+[basic explain]
+	`施放[破甲弹]时， 有50%%的几率使弹药数增加4发。
+施放[闪击地雷]时， 有50%%的几率施放提升了Lv2的[闪击地雷]。
+施放[散弹枪]时， 增加5%%的攻击速度和80点力量， 效果持续5秒。
+以额外杀伤使敌人致死时， 可以使自身恢复180点的MP。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[physical attack]
+	55
+
+[magical attack]
+	83
+
+[attack speed]
+	20
+
+[price]
+	151200
+
+[repair price]
+	127008
+
+[value]
+	120960
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	808	739
+
+[equipment magical attack]
+	703	643
+
+[separate attack]
+	481	327
+
+[skill levelup]
+	`[gunner]`	48	2
+	`[at gunner]`	48	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/musket/musket.img`	87
+
+[field image]
+	`Item/field_weapon.img`	3
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	28	0
+
+[layer variation]
+	2790
+	`musketc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`musketb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	28	0
+
+[layer variation]
+	2790
+	`at_musketc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_musketb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	2100
+
+[item group name]
+	`musket`
+
+[cool time]
+	10000
+
+[if]
+	[event use skill]
+		`gunner`	52
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill data up]
+		`[gunner]`	52	`[all]`	`[level]`	0	`+`	4
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`gunner`	76
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`[gunner]`	76	2
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`at gunner`	52
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill data up]
+		`[at gunner]`	52	`[all]`	`[level]`	0	`+`	4
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`at gunner`	76
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`[at gunner]`	76	2
+	[/skill levelup]
+[/then]
+
+[if]
+	[attack success]
+		1
+	[target death]
+		1
+	[overkill]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`mp`
+		`+`	180	0
+[/then]
+
+[if]
+	[use skill]
+		`gunner`	48
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		5000
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`physical attack`
+		`+`	60
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	48
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		5000
+	[stat]
+		`attack speed`
+		`+`	20
+	[stat]
+		`physical attack`
+		`+`	80
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

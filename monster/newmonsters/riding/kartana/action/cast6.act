@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Cast5.ani`
+	[SUB ANI]
+		`../Animation/weapon1/Cast5.ani`	0	0
+		`../Animation/ware/Cast5.ani`	0	0
+		`../Animation/weapon2/Cast5.ani`	0	-1
+	[/SUB ANI]
+	[SPEECH]
+		`复活吧,花儿!`	1	100
+	[/SPEECH]
+	[SOUND]
+		`WTHIEF_MEET_04`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9125
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			70	0	70
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

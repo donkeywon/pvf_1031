@@ -1,0 +1,182 @@
+#PVF_File
+
+[name]
+	`风雷战戟`
+
+[name2]
+	`Spear of Sius`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入感电状态。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入感电状态15秒； 若攻击感电状态的敌人， 则每次攻击都会附加135点伤害。 (若敌人高于Lv30， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[grade]
+	34
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	30
+
+[physical attack]
+	38
+
+[attack speed]
+	-50
+
+[stuck]
+	-1
+
+[MP MAX]
+	150
+
+[price]
+	54400
+
+[repair price]
+	43520
+
+[value]
+	43520
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	408	360
+
+[equipment magical attack]
+	289	255
+
+[separate attack]
+	196	130
+
+[physical critical hit]
+	2
+
+[skill levelup]
+	`[mage]`	5	1
+	`[mage]`	9	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/mage/spear.img`	24
+
+[field image]
+	`Item/field_weapon.img`	6
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	2	6
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	2	6
+
+[layer variation]
+	2150
+	`at_speara`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_speard`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	2	6
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`SPEAR_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3200
+
+[item group name]
+	`spear`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		22500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		15000
+	[probability]
+		3
+	[active status]
+		`lightning`	30	135
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

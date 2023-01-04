@@ -1,0 +1,105 @@
+#PVF_File
+
+[name]
+	`噬魂碎灵胸甲`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入破甲状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入破甲状态7秒； 破甲状态下， 耐久度消耗会增加30倍， 并且暂时无法使用防具。 (若敌人高于Lv89， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间为10秒)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	63
+
+[physical defense]
+	20
+
+[magical defense]
+	20
+
+[price]
+	89000
+
+[repair price]
+	74760
+
+[value]
+	71200
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	3456	3276
+
+[icon]
+	`Item/new_equipment/04_larmor/coat/larmor_coat.img`	16
+
+[field image]
+	`Item/field_equip.img`	5
+
+[equipment type]
+	`[coat]`	20
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3100
+
+[item group name]
+	`la coat`
+
+[cool time]
+	10000
+
+[magical attack]
+	49
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[consume item]
+		3037	1
+	[duration]
+		7000
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`armor break`	89	30
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,105 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/search_light.ani`
+	[SUB ANI]
+		`../Animation/search_light1.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+		[DISTANCE]
+		[<=]
+			125
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8177
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			65
+		[POS]
+			0	0	0
+		[FIX DIRECTION]
+		[NEUTRAL]
+		[WARNING MARK]
+			0	0	900	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8177
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			65
+		[POS]
+			0	0	0
+		[FIX DIRECTION]
+		[NEUTRAL]
+		[WARNING MARK]
+			0	0	700	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8177
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			65
+		[POS]
+			0	0	0
+		[FIX DIRECTION]
+		[NEUTRAL]
+		[WARNING MARK]
+			0	0	500	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`time`	
+		[+]
+			700
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[RESET]
+[/BEHAVIOR]

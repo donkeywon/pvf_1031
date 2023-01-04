@@ -1,0 +1,81 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/FiveThrow.ani`
+	[SUB ANI]
+		`../Animation/weapon/FiveThrow_wp.ani`	0	0
+		`../Animation/acc1/FiveThrow_acc1.ani`	0	0
+		`../Animation/acc2/FiveThrow_acc2.ani`	0	0
+		`../Animation/acc3/FiveThrow_acc3.ani`	0	0
+		`../Animation/acc4/FiveThrow_acc4.ani`	0	0
+		`../Animation/acc5/FiveThrow_acc5.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`GOBLIN_THROW`	2
+	[/SOUND]
+	[SPEECH]
+		`这个没那么好躲哦~`	0	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30372
+		[PARTICLE FILENAME]
+			`../Particle/ThrowStone.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	50
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30372
+		[PARTICLE FILENAME]
+			`../Particle/ThrowStoneDown1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	50
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30372
+		[PARTICLE FILENAME]
+			`../Particle/ThrowStoneDown2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	50
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30372
+		[PARTICLE FILENAME]
+			`../Particle/ThrowStoneUp1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	50
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30372
+		[PARTICLE FILENAME]
+			`../Particle/ThrowStoneUp2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

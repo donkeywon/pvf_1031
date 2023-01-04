@@ -1,0 +1,181 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[hit]
+			1
+		[true]
+	
+		[think]
+			[my attack]
+				9
+			[true]
+			[return]
+				-1
+			[false]
+		
+			[think]
+				[my attack]
+					10
+				[true]
+				[return]
+					-1
+				[false]
+			
+				[think]
+					[void]
+						`damage check()`	120000
+					[true]
+				
+					[think]
+						[void]
+							`get random()`	0.0	100.0
+					
+						[think]
+							[last result]
+								`<=`	10
+							[true]
+						
+							[think]
+								[void]
+									`is the skill in cooltime()`	3
+								[true]
+								[return]
+									-1
+								[false]
+								[return]
+									3
+							[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	45
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	9
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				9
+		[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	99
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	10
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				10
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[cube item number]
+			`>=`	1
+		[true]
+	
+		[think]
+			[my attack]
+				9
+			[true]
+			[return]
+				-1
+			[false]
+		
+			[think]
+				[my attack]
+					10
+				[true]
+				[return]
+					-1
+				[false]
+			
+				[think]
+					[void]
+						`get random()`	0.0	100.0
+				
+					[think]
+						[last result]
+							`<=`	50
+						[true]
+					
+						[think]
+							[void]
+								`is the skill in cooltime()`	6
+							[true]
+							[return]
+								-1
+							[false]
+							[return]
+								6
+						[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	75
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	9
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				9
+		[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	99
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	10
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				10
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+[/ai pattern]

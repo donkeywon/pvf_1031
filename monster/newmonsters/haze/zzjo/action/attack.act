@@ -1,0 +1,47 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack.ani`
+	[SUB ANI]
+		`../animation/attack_e.ani`	0	1
+		`../animation/weapon/attack.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`你在紧张吗？ 小鬼~`	1	20
+		`吓到了吧？ 哇??！`	1	20
+	[/SPEECH]
+	[SOUND]
+		`R_FATJOE_SKILL_01`	0
+		`R_APC_PACK_HIT`	2
+		`R_APC_PACK_HIT`	5
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	300
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	300
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]

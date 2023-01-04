@@ -1,0 +1,184 @@
+#PVF_File
+
+[name]
+	`玄冰散灵`
+
+[name2]
+	`Frigid Snap`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入冰冻状态。
+攻击时， 有2%%的几率使自身和周围队员的武器属性变成冰属性， 效果持续60秒。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入冰冻状态7秒。 (若敌人高于Lv55， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击时， 有2%%的几率使自身和周围队员的武器属性变成冰属性， 效果持续60秒。`
+
+[flavor text]
+	`用坎纳克山的冰精灵力量制成的手套。`
+
+[grade]
+	57
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[magical attack]
+	39
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[need material]
+	3260	900
+
+[repair price]
+	73920
+
+[value]
+	70400
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	505	460
+
+[equipment magical attack]
+	612	557
+
+[separate attack]
+	328	220
+
+[water attack]
+	12
+
+[icon]
+	`Item/weapon/fighter/knuckle.img`	36
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	2	1
+
+[layer variation]
+	2790
+	`glovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	2	1
+
+[layer variation]
+	2150
+	`at_glovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_glovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_glovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[probability]
+		3
+	[active status]
+		`freeze`	55
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		80000
+[/if]
+
+[then]
+	[duration]
+		60000
+	[target]
+		`party`	-1
+	[elemental weapon]
+		`water`
+[/then]
+
+[routing priority]
+	`fighter`	1
+	`at fighter`	1
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,60 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/BodyAttack.ani`
+	[SUB ANI]
+		`../Animation/Dust1.ani`	0	0
+		`../Animation/Dust2.ani`	0	0
+		`../Animation/BodyAttack_e.ani`	0	0
+		`../Animation/Fire/BodyAttack.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`VOTI_SKILL_02`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			150
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		3	700
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			-2
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

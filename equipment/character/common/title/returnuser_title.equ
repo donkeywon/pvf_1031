@@ -1,0 +1,156 @@
+#PVF_File
+
+[name]
+	`勇者归来`
+
+[name2]
+	`Return of Adventurer`
+
+[explain]
+	`装备后， 每隔50秒可增加自身10点的力量和智力， 以及2%%的物理暴击率和魔法暴击率， 效果持续20秒。 (装备50秒后生效)
+攻击或施放技能时， 有2%%的几率增加2%%的移动速度、 攻击速度及施放速度， 效果持续20秒。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	232
+
+[custom animation]
+	`TitleAnimation/returnuser_title.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[usable period]
+	14
+
+[HP MAX]
+	250
+
+[MP MAX]
+	250
+
+[physical attack]
+	25
+
+[physical defense]
+	25
+
+[magical attack]
+	25
+
+[magical defense]
+	25
+
+[all elemental resistance]
+	5
+
+[inventory limit]
+	10000
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[if]
+	[time]
+		50000	1	30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[stat]
+		`physical attack`
+		`+`	20
+	[stat]
+		`magical attack`
+		`+`	20
+	[stat]
+		`physical critical hit`
+		`+`	5
+	[stat]
+		`magical critical hit`
+		`+`	5
+[/then]
+
+[if]
+	[cooltime]
+		50000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`attack speed`
+		`+`	30
+	[stat]
+		`cast speed`
+		`+`	30
+	[stat]
+		`move speed`
+		`+`	30
+[/then]
+
+[if]
+	[cooltime]
+		50000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`attack speed`
+		`+`	30
+	[stat]
+		`cast speed`
+		`+`	30
+	[stat]
+		`move speed`
+		`+`	30
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

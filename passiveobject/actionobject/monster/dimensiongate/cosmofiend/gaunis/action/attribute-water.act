@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/_Aura_dumy.ani`
+	[SUB ANI WITH XYZ]
+		`../Animation/_Water_Aura.ani`	0	0	0	-100	0
+		`../Animation/_Water_Aura_Cover.ani`	0	0	0	-100	0
+		`../Animation/_Water_Aura_Cover.ani`	0	0	0	-100	0
+	[/SUB ANI WITH XYZ]
+[/MOTION]
+
+[TRIGGER]
+	[CHECK TIME]
+		300
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14140
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[=>]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[NOW]
+[/BEHAVIOR]

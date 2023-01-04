@@ -1,0 +1,202 @@
+#PVF_File
+
+[name]
+	`断残蚀骨`
+
+[name2]
+	``
+
+[basic explain]
+	`普通攻击时， 有5%%的几率使敌人进入出血状态5秒。
+施放[狂乱锤击]时， 可直接发动最后一击； 最后一击及所引起的冲击波物理攻击力各增加2倍。
+用[狂乱锤击]攻击出血状态的敌人时， 可附加50%%的伤害。
+用[疾风打]攻击出血状态的敌人时， 有15%%的几率使剩余的技能冷却时间减少1秒。
+用[断空捶击]攻击出血状态的敌人时， 有15%%的几率使剩余的技能冷却时间减少1秒。`
+
+[detail explain]
+	`普通攻击时， 有5%%的几率使敌人进入出血状态； 出血状态下的敌人， 每0.5秒会受到10点伤害。 (若敌人高于Lv85， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+施放[狂乱锤击]时， 可直接发动最后一击； 最后一击及所引起的冲击波物理攻击力各增加2倍。
+用[狂乱锤击]攻击出血状态的敌人时， 附加50%%的伤害。
+用[疾风打]攻击出血状态的敌人时， 有15%%的几率使剩余的技能冷却时间减少1秒。
+用[断空捶击]攻击出血状态的敌人时， 有15%%的几率使剩余的技能冷却时间减少1秒。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	56
+
+[attack speed]
+	-80
+
+[stuck]
+	-2
+
+[price]
+	153000
+
+[repair price]
+	128520
+
+[value]
+	122400
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	989	917
+
+[equipment magical attack]
+	700	649
+
+[separate attack]
+	504	343
+
+[skill levelup]
+	`[priest]`	47	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/priest/axe/axe.img`	88
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	26	1
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[routing priority]
+	`priest`	3
+[/routing priority]
+
+[if]
+	[my state]
+		`attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		5
+	[active status]
+		`bleeding`	85	100
+[/then]
+
+[if]
+	[target active status]
+		`bleeding`
+	[use skill]
+		`priest`	85
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		15
+	[skill cooltime reset]
+		85
+		`%`	-15
+[/then]
+
+[if]
+	[target active status]
+		`bleeding`
+	[use skill]
+		`priest`	111
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		15
+	[skill cooltime reset]
+		111
+		`%`	-15
+[/then]
+
+[if]
+	[target active status]
+		`bleeding`
+	[use skill]
+		`priest`	49
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	50
+[/then]
+
+[skill data up]
+	`[priest]`	49	`[all]`	`[level]`	2	`%`	-75
+	`[priest]`	49	`[all]`	`[level]`	3	`%`	-87
+	`[priest]`	49	`[all]`	`[level]`	1	`%`	100
+	`[priest]`	49	`[all]`	`[level]`	5	`%`	100
+[/skill data up]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,159 @@
+#PVF_File
+
+[width]
+	55	12
+
+[floating height]
+	0
+
+[name]
+	`驯兽者伽罗华`
+
+[face image]
+	`Monster/MonsterFace.img`	318
+
+[die effect]
+	1	25	1
+
+[appear sound]
+	`TEYMER_MEET`
+
+[damage sound]
+	`R_TEYMER_DMG`
+
+[die sound]
+	`TEYMER_DIE`
+
+[lie frame]
+	1	2	3	3	4
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	350
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[category]
+	`[human]`
+[/category]
+
+[fire resistance]
+	50	50
+
+[water resistance]
+	-20	-20
+
+[HP regen speed]
+	0	0
+
+[MP regen speed]
+	0	0
+
+[level]
+	60	60
+
+[move speed]
+	500	500
+
+[attack speed]
+	600	600
+
+[cast speed]
+	500	500
+
+[hit recovery]
+	900	900
+
+[weight]
+	95000	95000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	600
+
+[warlike]
+	80
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[keep distance with target]
+	300
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/move.act`
+
+[sit action]
+	`Action/sit.act`
+
+[damage action 1]
+	`Action/damage1.act`
+
+[damage action 2]
+	`Action/damage2.act`
+
+[down action]
+	`Action/down.act`
+
+[overturn action]
+	`Action/overturn.act`
+
+[attack action]
+	`Action/Attack2.act`
+	`Action/casting.act`
+[/attack action]
+
+[attack info]
+	`Attackinfo/Attack2.atk`
+	``
+[/attack info]
+
+[cooltime]
+	5000	15000
+[/cooltime]
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

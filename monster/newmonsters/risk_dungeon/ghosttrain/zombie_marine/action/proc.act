@@ -1,0 +1,26 @@
+#PVF_File
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[LAST ATTACKER]
+	[CHECKUP]
+		[IS TEAM]
+			[CHARCTER TEAM]
+		[/IS TEAM]
+		[IS FRONTPOS]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		-3
+	[%]
+[/BEHAVIOR]

@@ -1,0 +1,29 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/reload_a.ani`
+	[SUB ANI]
+		`../Animation/Gas.ani`	0	0
+		`../Animation/reload_a_effect.ani`	0	0
+	[/SUB ANI]
+	[SUB ANI WITH XYZ]
+		`../Animation/reload_b_effect.ani`	0	-5	0	-10	0
+		`../Animation/reload_b.ani`	0	-10	0	-10	0
+	[/SUB ANI WITH XYZ]
+	[SOUND]
+		`SMOKESHELL_SMOKE`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[END KEYSTROKE MODE]
+[/BEHAVIOR]

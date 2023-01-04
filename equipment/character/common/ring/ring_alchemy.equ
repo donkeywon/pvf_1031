@@ -1,0 +1,92 @@
+#PVF_File
+
+[name]
+	`伟大的炼金`
+
+[name2]
+	`Ring of Alchemy`
+
+[basic explain]
+	`被攻击时， 有50%%的几率使自身增加300点物理防御力， 效果持续10秒。`
+
+[flavor text]
+	`赫顿玛尔炼金协会出品， 而且可以作为护身符使用的首饰。`
+
+[grade]
+	20
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	18
+
+[physical attack]
+	13
+
+[magical attack]
+	13
+
+[price]
+	20000
+
+[repair price]
+	16000
+
+[value]
+	16000
+
+[equipment magical defense]
+	736	672
+
+[icon]
+	`Item/common/ring.img`	3
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		10000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[probability]
+		50
+	[stat]
+		`equipment physical defense`
+		`+`	300
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,145 @@
+#PVF_File
+
+[name]
+	`时间掌控者`
+
+[basic explain]
+	`施放[式神 · 殇]时， 有15%%的几率不受冷却时间影响。
+无法进行分解。`
+
+[detail explain]
+	`施放[式神 · 殇]时， 有15%%的几率不受冷却时间影响。 (在决斗场中几率为1.5%%)
+无法进行分解。`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	65
+
+[magical attack]
+	69
+
+[attack speed]
+	-50
+
+[cast speed]
+	50
+
+[HP MAX]
+	150
+
+[MP MAX]
+	150
+
+[need material]
+	3336	420
+
+[repair price]
+	92736
+
+[value]
+	88320
+
+[equipment physical attack]
+	589	544
+
+[equipment magical attack]
+	752	695
+
+[separate attack]
+	389	264
+
+[magical critical hit]
+	2
+
+[icon]
+	`Item/weapon/priest/rosary.img`	67
+
+[field image]
+	`Item/field_weapon.img`	12
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	20	0
+
+[layer variation]
+	200
+	`rosaryd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`rosaryc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`ROSARY_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`rosary`
+
+[cool time]
+	10000
+
+[if]
+	[event use skill]
+		`priest`	101
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		15
+	[reduce probability to human armor at pvp module]
+		90
+	[skill data up]
+		`[priest]`	101	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[routing priority]
+	`priest`	3
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,159 @@
+#PVF_File
+
+[name]
+	`魔力之精髓 [网吧]`
+
+[name2]
+	``
+
+[basic explain]
+	`施放技能时， 有6%%的几率使自身增加3%%的智力， 效果持续50秒。
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。`
+
+[flavor text]
+	`头脑越聪明越好……至少不会被人欺负。`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	65
+
+[magical attack]
+	69
+
+[attack speed]
+	-50
+
+[cast speed]
+	50
+
+[price]
+	110400
+
+[repair price]
+	92736
+
+[value]
+	88320
+
+[equipment physical attack]
+	589	544
+
+[equipment magical attack]
+	752	695
+
+[separate attack]
+	389	264
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	38	1
+	`[priest]`	40	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/rosary.img`	56
+
+[field image]
+	`Item/field_weapon.img`	12
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	13	2
+
+[layer variation]
+	201
+	`rosaryd1`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	202
+	`rosaryd2`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2791
+	`rosaryc1`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2792
+	`rosaryc2`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`ROSARY_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`rosary`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		500
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		50000
+	[probability]
+		6
+	[stat]
+		`magical attack`
+		`%`	3
+[/then]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

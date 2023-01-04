@@ -1,0 +1,149 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`远古人偶师鱿鱼`
+
+[face image]
+	`Monster/MonsterFace.img`	342
+
+[overhead gauge type]
+	1
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`+`	150
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[category]
+	`[oneside move]`
+	`[human]`
+[/category]
+
+[fix direction]
+	`[right]`
+
+[HP regen speed]
+	0	0
+
+[MP regen speed]
+	0	0
+
+[level]
+	1	60
+
+[move speed]
+	500	500
+
+[attack speed]
+	500	500
+
+[cast speed]
+	500	500
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	300000	300000
+
+[lie frame]
+	2	3	2	3	4
+
+[damage sound]
+	`DOLL_DMG`
+
+[die sound]
+	`DOLL_DIE`
+
+[ambient sound]
+	`DOLL_FLOAT_LOOP`
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[proc action]
+	`Action/Proc.act`
+
+[attack action]
+	`Action/Attack.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack.atk`
+[/attack info]
+
+[cooltime]
+	7000
+[/cooltime]
+
+[vision]
+	500
+
+[think term]
+	500
+
+[destination change term]
+	300
+
+[keep distance with target]
+	300
+
+[ai pattern]
+	[normal]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/normal]
+	[expert]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/expert]
+	[master]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/master]
+	[king]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/king]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

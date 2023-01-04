@@ -1,0 +1,128 @@
+#PVF_File
+
+[name]
+	`幽魂魅影肩甲`
+
+[name2]
+	``
+
+[basic explain]
+	`每15点暗属性抗性增加1点暗属性强化值。
+攻击速度 +2%%`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[magical attack]
+	34
+
+[magical defense]
+	34
+
+[attack speed]
+	20
+
+[cast speed]
+	50
+
+[price]
+	59500
+
+[repair price]
+	49980
+
+[value]
+	47600
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	744	696
+
+[skill levelup]
+	`[gunner]`	83	1
+	`[at gunner]`	83	1
+	`[mage]`	59	1
+	`[mage]`	58	1
+	`[mage]`	81	1
+	`[at mage]`	30	1
+	`[priest]`	101	1
+	`[swordman]`	82	1
+	`[fighter]`	90	1
+	`[at fighter]`	90	1
+	`[demonic swordman]`	82	1
+[/skill levelup]
+
+[dark resistance]
+	10
+
+[light resistance]
+	-5
+
+[icon]
+	`Item/new_equipment/02_cloth/neck/cloth_neck.img`	10
+
+[field image]
+	`Item/field_equip.img`	2
+
+[equipment type]
+	`[shoulder]`	17
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	21
+
+[weight]
+	800
+
+[item group name]
+	`cl shoulder`
+
+[cool time]
+	10000
+
+[set item master]
+	100050050
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`dark resistance`	15
+		`dark attack`
+		`+`	1	0
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

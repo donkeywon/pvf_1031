@@ -1,0 +1,56 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/change.ani`
+	[SOUND]
+		`HAS_GUNSPIN_01`	1
+		`HAS_GUNSPIN_02`	8
+		`HAS_SKILL_04`	0
+	[/SOUND]
+	[SPEECH]
+		`你会后悔来到这里的！`	2	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		13	13
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	0
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`很爽吧~~哈哈！`
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11112
+		[PARTICLE FILENAME]
+			`../Particle/dummy.ptl`
+		[LEVEL]
+			70
+		[POS]
+			300	300	100
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`尝尝苦头吧， 小鬼！`
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11113
+		[PARTICLE FILENAME]
+			`../Particle/dummy.ptl`
+		[LEVEL]
+			70
+		[POS]
+			300	300	100
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

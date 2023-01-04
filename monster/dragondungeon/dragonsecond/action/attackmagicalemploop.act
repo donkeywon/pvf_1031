@@ -1,0 +1,97 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Dummy.ani`
+	[SUB ANI]
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_Effect_1_EMP_Aura_back.ani`	0	1
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_Effect_M_Floor_energy01.ani`	0	2
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_19_arm.ani`	0	3
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_18_body.ani`	0	4
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_17_neck.ani`	0	5
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_16_neck.ani`	0	6
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_15_neck.ani`	0	7
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_14_neck.ani`	0	8
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_13_neck.ani`	0	9
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_12_back.ani`	0	10
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_11_back.ani`	0	11
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_10_back.ani`	0	12
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_09_back.ani`	0	13
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_08_back.ani`	0	14
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_07_back.ani`	0	15
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_06_head.ani`	0	16
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_05_head.ani`	0	17
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_04_head.ani`	0	18
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_03_headhorn.ani`	0	19
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_02_shoulder.ani`	0	20
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_01_arm.ani`	0	21
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_00_hand.ani`	0	22
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_Effect_1_EMP_Circle1.ani`	0	23
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_Effect_1_EMP_CCharge.ani`	0	24
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_Effect_1_EMP_Big_elec.ani`	0	25
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_Effect_1_EMP_EX_elec.ani`	0	26
+		`../Animation/AttackEMP_Blue/Loop/AttackEMP_Blue_Effect_1_EMP_Aura_Front.ani`	0	27
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`destroyTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[SHAKING]
+		3	4000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`destroyTime`	
+		[+]
+			4000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		2
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		5
+	[NOW]
+	[TRIGGER]
+		1
+	[ON]
+	[TRIGGER]
+		2
+	[OFF]
+[/BEHAVIOR]

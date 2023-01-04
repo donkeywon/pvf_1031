@@ -1,0 +1,27 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack1.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8006
+		[PARTICLE FILENAME]
+			`../particle/xmove.ptl`
+		[LEVEL]
+			40
+		[POS]
+			74	0	74
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

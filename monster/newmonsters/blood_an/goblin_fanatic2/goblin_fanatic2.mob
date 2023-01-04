@@ -1,0 +1,135 @@
+#PVF_File
+
+[name]
+	`地狱哥布林狂信徒`
+
+[face image]
+	`Monster/MonsterFace.img`	119
+
+[category]
+	`[human]`
+	`[goblin]`
+[/category]
+
+[ambient sound]
+	`R_GOLEM_AMB`
+
+[attack sound]
+	`R_GOBLIN_TALK`
+
+[appear sound]
+	``
+
+[damage sound]
+	`R_GOBLIN_DMG`
+
+[die sound]
+	`R_GOBLIN_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	108
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	110
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	108
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	110
+	`[HP MAX]`	`*`	110
+[/ability category]
+
+[level]
+	60	60
+
+[move speed]
+	500	500
+
+[attack speed]
+	600	600
+
+[hit recovery]
+	800	800
+
+[weight]
+	80000	80000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[attack action]
+	`Action/Attack.act`
+	`Action/Change.act`
+	`Action/_Attack.act`
+[/attack action]
+
+[attack info]
+	``
+	``
+	`Attackinfo/attack.atk`
+[/attack info]
+
+[cooltime]
+	1000	12000	12000
+[/cooltime]
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	1000
+
+[vision]
+	500
+
+[lie frame]
+	2	3	2	3	4

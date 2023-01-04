@@ -1,0 +1,239 @@
+#PVF_File
+
+[name]
+	`[巨龙]纳特拉的碎岩拳套`
+
+[basic explain]
+	`在[素喃郊外]地区和真 · 远古地下城中可以发动特殊效果。
+攻击时， 有5%%的几率向敌人发动闪电攻击。
+被闪电命中的敌人会进入感电状态。
+攻击感电状态的敌人时， 附加10%%的伤害。`
+
+[detail explain]
+	`在[素喃郊外]地区和真 · 远古地下城中可以发动特殊效果。
+攻击时， 有5%%的几率向敌人发动闪电攻击。 (冷却时间15秒)
+被闪电命中的敌人会进入感电状态5秒； 若攻击感电状态的敌人， 则每次攻击都会附加900点伤害。 (若敌人高于Lv75， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击感电状态的敌人时， 附加10%%的伤害。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	55
+
+[attack speed]
+	130
+
+[stuck]
+	-3
+
+[HP MAX]
+	200
+
+[need material]
+	10002515	400
+
+[price]
+	151200
+
+[value]
+	5
+
+[equipment physical attack]
+	844	792
+
+[equipment magical attack]
+	764	716
+
+[separate attack]
+	481	327
+
+[icon]
+	`Item/common/chn_Dragon_Weapon.img`	5
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	14
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	1	14
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[item group name]
+	`bglove`
+
+[required skill]
+	34
+
+[if]
+	[dungeon check]
+		200	201	202	203	204	205	206	3536	3537	3538	3539	3540
+	[/dungeon check]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	50
+	[stat by condition]
+		`magical attack`
+		`+`	50
+	[stat by condition]
+		`physical defense`
+		`+`	25
+	[stat by condition]
+		`magical defense`
+		`+`	25
+[/then]
+
+[if]
+	[dungeon check]
+		200	201	202	203	204	205	206	3536	3537	3538	3539	3540
+	[/dungeon check]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	50
+	[stat by condition]
+		`magical attack`
+		`+`	50
+	[stat by condition]
+		`physical defense`
+		`+`	25
+	[stat by condition]
+		`magical defense`
+		`+`	25
+[/then]
+
+[if]
+	[cooltime]
+		15000
+	[attack success]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[then probability]
+			50.0
+		[target]
+			`enemy`	-1
+		[probability]
+			5
+		[passive object]
+			54010	0	0	0	0	0	``
+		[/passive object]
+	[/then]
+	[then]
+		[then probability]
+			50.0
+		[target]
+			`enemy`	-1
+		[probability]
+			5
+		[passive object]
+			54011	0	0	0	0	0	``
+		[/passive object]
+	[/then]
+[/multiple then]
+
+[if]
+	[target active status]
+		`lightning`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[spectrum]
+	250	130	0	200	500
+
+[possible kiri protect]

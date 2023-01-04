@@ -1,0 +1,63 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Stay.ani`
+	[SUB ANI]
+		`../Animation/CannonReadyF.ani`	0	-1
+		`../Animation/CannonReadyB.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`FLASK_TOUCH`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9150
+		[PARTICLE FILENAME]
+			`../Particle/Oil_Drap.ptl`
+		[LEVEL]
+			0
+		[POS]
+			80	50	0
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+		[USE TARGET TEAM]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9150
+		[PARTICLE FILENAME]
+			`../Particle/Oil_Drap.ptl`
+		[LEVEL]
+			0
+		[POS]
+			100	0	0
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+		[USE TARGET TEAM]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9150
+		[PARTICLE FILENAME]
+			`../Particle/Oil_Drap.ptl`
+		[LEVEL]
+			0
+		[POS]
+			80	-50	0
+		[USE MY DIRECTION]
+		[USE OBJECT ZPOS]
+		[USE TARGET TEAM]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

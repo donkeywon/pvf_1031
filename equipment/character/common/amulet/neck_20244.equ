@@ -1,0 +1,109 @@
+#PVF_File
+
+[name]
+	`冰雪女王的寒石项链`
+
+[name2]
+	`找不到代码name2_20244`
+
+[basic explain]
+	`受到冰属性攻击时， 有10%%的几率使敌人进入冰冻状态3秒。
+无法进行分解。`
+
+[detail explain]
+	`受到冰属性攻击时， 有10%%的几率使敌人进入冰冻状态3秒。 (若敌人高于Lv54， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 在决斗场中几率为2%%)
+无法进行分解。`
+
+[grade]
+	54
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[magical attack]
+	23
+
+[magical defense]
+	56
+
+[price]
+	64800
+
+[repair price]
+	54432
+
+[value]
+	51840
+
+[equipment magical defense]
+	4880	4480
+
+[water resistance]
+	15
+
+[icon]
+	`Item/common/necklace.img`	59
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[routing priority]
+[/routing priority]
+
+[if]
+	[element]
+		`water`
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[probability]
+		10
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`freeze`	54
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

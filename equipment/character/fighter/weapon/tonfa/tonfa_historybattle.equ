@@ -1,0 +1,189 @@
+#PVF_File
+
+[name]
+	`远古逆袭之黄雾东方棍`
+
+[name2]
+	`Baikanfu of Historical Battle`
+
+[basic explain]
+	`攻击时， 有2%%的几率使自身增加30点力量， 效果持续30秒。
+攻击速度 +1%%`
+
+[flavor text]
+	`蕴含远古战争英雄之灵魂的稀贵武器。`
+
+[grade]
+	59
+
+[rarity]
+	2
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[physical attack]
+	44
+
+[magical attack]
+	67
+
+[attack speed]
+	60
+
+[cast speed]
+	10
+
+[move speed]
+	10
+
+[stuck]
+	-2
+
+[stuck resistance]
+	30
+
+[price]
+	82600
+
+[repair price]
+	69384
+
+[value]
+	66080
+
+[equipment physical attack]
+	483	467
+
+[equipment magical attack]
+	508	492
+
+[equipment physical defense]
+	590	590
+
+[separate attack]
+	256	173
+
+[skill levelup]
+	`[fighter]`	90	1
+	`[fighter]`	77	1
+	`[fighter]`	88	1
+	`[fighter]`	82	1
+	`[at fighter]`	90	1
+	`[at fighter]`	77	1
+	`[at fighter]`	88	1
+	`[at fighter]`	82	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/tonfa.img`	40
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	7	0
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	7	0
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	22
+
+[if]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`physical attack`
+		`+`	30
+[/then]
+
+[possible kiri protect]

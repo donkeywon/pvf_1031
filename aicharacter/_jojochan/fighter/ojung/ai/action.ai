@@ -1,0 +1,75 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	100.0	0.0	10.0	10.0
+		[true]
+	
+		[think]
+			[void]
+				`check random()`	50	100
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`combo_grap`
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`combo`
+					[true]
+					[return]
+						-1
+					[false]
+					[return str]
+						`combo`
+				[/think]
+	[false]
+	[return str]
+		`combo_grap`
+	[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`combo_grap2`
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`combo`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`combo`
+		[/think]
+	[false]
+	[return str]
+		`combo_grap2`
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	680.0	0.0	40.0	40.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`wave`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`wave`
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+[/ai pattern]

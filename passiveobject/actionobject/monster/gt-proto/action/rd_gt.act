@@ -1,0 +1,827 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/dumy.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[REALDUNGEON CHECKUP]
+		1	59015	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		2
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			10000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[REALDUNGEON CHECKUP]
+		1	59015	1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14081
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			180	137	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		2
+	[OFF]
+	[TRIGGER]
+		3
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			10100
+		[<=]
+		[GET TIME]
+	[/IF]
+	[REALDUNGEON CHECKUP]
+		1	59015	1
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14081
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			155	217	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		3
+	[OFF]
+	[TRIGGER]
+		4
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			10200
+		[<=]
+		[GET TIME]
+	[/IF]
+	[REALDUNGEON CHECKUP]
+		1	59015	1
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14081
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			118	297	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		4
+	[OFF]
+	[TRIGGER]
+		5
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			10300
+		[<=]
+		[GET TIME]
+	[/IF]
+	[REALDUNGEON CHECKUP]
+		1	59015	1
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14081
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			338	137	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		5
+	[OFF]
+	[TRIGGER]
+		6
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			10400
+		[<=]
+		[GET TIME]
+	[/IF]
+	[REALDUNGEON CHECKUP]
+		1	59015	1
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14081
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			336	217	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		6
+	[OFF]
+	[TRIGGER]
+		7
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			10500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[REALDUNGEON CHECKUP]
+		1	59015	1
+	[DO BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14081
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			326	297	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		7
+	[OFF]
+	[TRIGGER]
+		8
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			10600
+		[<=]
+		[GET TIME]
+	[/IF]
+	[REALDUNGEON CHECKUP]
+		1	59015	1
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14081
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			538	137	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		8
+	[OFF]
+	[TRIGGER]
+		9
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			10700
+		[<=]
+		[GET TIME]
+	[/IF]
+	[REALDUNGEON CHECKUP]
+		1	59015	1
+	[DO BEHAVIOR]
+	[ME]
+		9
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14081
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			538	217	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		9
+	[OFF]
+	[TRIGGER]
+		10
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			10800
+		[<=]
+		[GET TIME]
+	[/IF]
+	[REALDUNGEON CHECKUP]
+		1	59015	1
+	[DO BEHAVIOR]
+	[ME]
+		10
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14081
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			542	297	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		10
+	[OFF]
+	[TRIGGER]
+		11
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			10900
+		[<=]
+		[GET TIME]
+	[/IF]
+	[REALDUNGEON CHECKUP]
+		1	59015	1
+	[DO BEHAVIOR]
+	[ME]
+		11
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14081
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			692	137	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		11
+	[OFF]
+	[TRIGGER]
+		12
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			11000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[REALDUNGEON CHECKUP]
+		1	59015	1
+	[DO BEHAVIOR]
+	[ME]
+		12
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14081
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			692	217	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		12
+	[OFF]
+	[TRIGGER]
+		13
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			11100
+		[<=]
+		[GET TIME]
+	[/IF]
+	[REALDUNGEON CHECKUP]
+		1	59015	1
+	[DO BEHAVIOR]
+	[ME]
+		13
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14081
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			692	297	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		13
+	[OFF]
+	[TRIGGER]
+		14
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			11200
+		[<=]
+		[GET TIME]
+	[/IF]
+	[REALDUNGEON CHECKUP]
+		1	59015	1
+	[DO BEHAVIOR]
+	[ME]
+		14
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14081
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			839	137	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		14
+	[OFF]
+	[TRIGGER]
+		15
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			11300
+		[<=]
+		[GET TIME]
+	[/IF]
+	[REALDUNGEON CHECKUP]
+		1	59015	1
+	[DO BEHAVIOR]
+	[ME]
+		15
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14081
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			849	217	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		15
+	[OFF]
+	[TRIGGER]
+		16
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			11400
+		[<=]
+		[GET TIME]
+	[/IF]
+	[REALDUNGEON CHECKUP]
+		1	59015	1
+	[DO BEHAVIOR]
+	[ME]
+		16
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14081
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			856	297	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		16
+	[OFF]
+	[TRIGGER]
+		17
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			11500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[REALDUNGEON CHECKUP]
+		1	59015	1
+	[DO BEHAVIOR]
+	[ME]
+		17
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14081
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			981	137	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		17
+	[OFF]
+	[TRIGGER]
+		18
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			11600
+		[<=]
+		[GET TIME]
+	[/IF]
+	[REALDUNGEON CHECKUP]
+		1	59015	1
+	[DO BEHAVIOR]
+	[ME]
+		18
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14081
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			1013	217	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		18
+	[OFF]
+	[TRIGGER]
+		19
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			11700
+		[<=]
+		[GET TIME]
+	[/IF]
+	[REALDUNGEON CHECKUP]
+		1	59015	1
+	[DO BEHAVIOR]
+	[ME]
+		19
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14081
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			1039	297	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		19
+	[OFF]
+	[TRIGGER]
+		20
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			11800
+		[<=]
+		[GET TIME]
+	[/IF]
+	[REALDUNGEON CHECKUP]
+		1	59015	1
+	[DO BEHAVIOR]
+	[ME]
+		20
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14081
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			1119	137	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		20
+	[OFF]
+	[TRIGGER]
+		21
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			11900
+		[<=]
+		[GET TIME]
+	[/IF]
+	[REALDUNGEON CHECKUP]
+		1	59015	1
+	[DO BEHAVIOR]
+	[ME]
+		21
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14081
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			1150	217	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		21
+	[OFF]
+	[TRIGGER]
+		22
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			12000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[REALDUNGEON CHECKUP]
+		1	59015	1
+	[DO BEHAVIOR]
+	[ME]
+		22
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			14081
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			62
+		[POS]
+			1187	297	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		22
+	[OFF]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[SET FRAME]
+		1
+[/BEHAVIOR]

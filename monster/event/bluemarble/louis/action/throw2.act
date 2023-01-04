@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Throw.ani`
+	[SOUND]
+		`GOURD_HIT_02`	1
+		`QUICK_MOTION_02`	5
+	[/SOUND]
+	[SPEECH]
+		`真好玩......嘻嘻嘻！`	0	10
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8409
+		[PARTICLE FILENAME]
+			`../Particle/Snowsht_Up.ptl`
+		[LEVEL]
+			0
+		[POS]
+			12	-2	53
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

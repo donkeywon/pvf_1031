@@ -1,0 +1,116 @@
+#PVF_File
+
+[name]
+	`(旧) 邪龙的脊骨肩甲`
+
+[name2]
+	`Spirrazzi's BoneArmor Shoulder Horn`
+
+[basic explain]
+	`攻击时， 有2%%的几率附加100点伤害。
+前冲攻击伤害 +100`
+
+[flavor text]
+	`如果在对方的肩膀上发现邪龙的角， 记得一定要先发制人， 听我的准没错！`
+
+[grade]
+	45
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	40
+
+[physical attack]
+	19
+
+[magical attack]
+	13
+
+[price]
+	40500
+
+[repair price]
+	32400
+
+[value]
+	32400
+
+[equipment physical defense]
+	1272	1128
+
+[icon]
+	`Item/common/shoulder.img`	99
+
+[field image]
+	`Item/field_equip.img`	7
+
+[equipment type]
+	`[shoulder]`	19
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	1900
+
+[item group name]
+	`la shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[add absolute damage]
+		`all`
+		`+`	100
+[/then]
+
+[if]
+	[my state]
+		`dash attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`+`	100
+[/then]
+
+[set item master]
+	10887
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

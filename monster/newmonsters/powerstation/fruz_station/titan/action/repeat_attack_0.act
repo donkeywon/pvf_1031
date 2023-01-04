@@ -1,0 +1,222 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/repeat_attack_0.ani`
+	[SUB ANI]
+		`../Animation/repeat_earthquake_e.ani`	0	-1
+		`../Animation/repeat_blow_charge.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`这是我的地盘！`	0	100
+	[/SPEECH]
+	[SOUND]
+		`TITAN_SMASH_CAST`	1
+		`TITAN_SKILL_03`	2
+		`TITAN_SMASH`	4
+		`TITAN_SMASH`	12
+		`TITAN_SMASH`	20
+		`TITAN_SMASH`	28
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		17	17
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		25	25
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1080	3
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+	[CASTING]
+		300	3
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		13	13
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		21	21
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		29	29
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+	[SHAKING]
+		5	600
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16136
+		[PARTICLE FILENAME]
+			`../Particle/down.ptl`
+		[LEVEL]
+			1
+		[POS]
+		[RANDOM]
+			-200	200
+		[RANDOM]
+			-70	70	400
+		[WARNING MARK]
+			0	0	160	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16135
+		[PARTICLE FILENAME]
+			`../Particle/down.ptl`
+		[LEVEL]
+			1
+		[POS]
+		[RANDOM]
+			-200	200
+		[RANDOM]
+			-70	70	400
+		[WARNING MARK]
+			0	0	170	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16135
+		[PARTICLE FILENAME]
+			`../Particle/down.ptl`
+		[LEVEL]
+			1
+		[POS]
+		[RANDOM]
+			-600	600
+		[RANDOM]
+			-150	150	400
+		[WARNING MARK]
+			0	0	200	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16136
+		[PARTICLE FILENAME]
+			`../Particle/down.ptl`
+		[LEVEL]
+			1
+		[POS]
+		[RANDOM]
+			-600	600
+		[RANDOM]
+			-150	150	400
+		[WARNING MARK]
+			0	0	160	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[PLAYER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		13	13
+	[WHICH]
+	[PLAYER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		19	19
+	[WHICH]
+	[PLAYER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		24	24
+	[WHICH]
+	[PLAYER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			16135
+		[PARTICLE FILENAME]
+			`../Particle/down.ptl`
+		[LEVEL]
+			1
+		[POS]
+			0	0	400
+		[WARNING MARK]
+			0	0	180	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

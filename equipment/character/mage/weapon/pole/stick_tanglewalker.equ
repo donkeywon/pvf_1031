@@ -1,0 +1,195 @@
+#PVF_File
+
+[name]
+	`(旧) 缠龙圆舞棍`
+
+[name2]
+	`TangleWalker`
+
+[basic explain]
+	`普通攻击时， 有5%%的几率使敌人进入束缚状态。
+施放技能时， 有3%%的几率在特定的敌人身下生成树藤。`
+
+[detail explain]
+	`普通攻击时， 有5%%的几率使敌人进入束缚状态10秒。 (若敌人高于Lv35， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+施放技能时， 有3%%的几率在300px范围内最近的敌人身下生成树藤。`
+
+[flavor text]
+	`不要妨碍我施法！ 如果你敬酒不吃吃罚酒， 那就见识一下我的魔法吧！  --尼巫`
+
+[grade]
+	40
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	35
+
+[physical attack]
+	29
+
+[magical attack]
+	29
+
+[attack speed]
+	50
+
+[stuck]
+	-1
+
+[price]
+	64000
+
+[repair price]
+	51200
+
+[value]
+	51200
+
+[equipment physical attack]
+	428	376
+
+[equipment magical attack]
+	356	313
+
+[separate attack]
+	234	156
+
+[icon]
+	`Item/weapon/mage/pole.img`	38
+
+[field image]
+	`Item/field_weapon.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	0	3
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	0	3
+
+[layer variation]
+	2150
+	`at_polea`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_poled`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	0	3
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`POLE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2400
+
+[item group name]
+	`pole`
+
+[cool time]
+	10000
+
+[if]
+	[my state]
+		`attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[reduce duration to human armor at pvp module]
+		75
+	[probability]
+		5
+	[active status]
+		`hold`	35
+[/then]
+
+[if]
+	[cooltime]
+		1000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy near`	300
+	[probability]
+		3
+	[passive object]
+		1030	0	0	0	35	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

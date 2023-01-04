@@ -1,0 +1,135 @@
+#PVF_File
+
+[name]
+	`精英追击者`
+
+[face image]
+	`Monster/MonsterFace.img`	368
+
+[width]
+	40	10
+
+[category]
+	`[machine]`
+	`[fort armor]`
+	`[melee combat]`
+	`[close-tough]`
+[/category]
+
+[ambient sound]
+	``
+
+[attack sound]
+	``
+
+[appear sound]
+	``
+
+[damage sound]
+	`LIGH_LIGHTNING`
+
+[die sound]
+	`ROBOT_EX_02`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	121
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	50
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	266
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	50
+	`[HP MAX]`	`*`	783
+[/ability category]
+
+[level]
+	100	100
+
+[move speed]
+	100	100
+
+[attack speed]
+	750	750
+
+[cast speed]
+	790	790
+
+[hit recovery]
+	1500	1500
+
+[weight]
+	45000	45000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[attack action]
+	`Action/Boom.act`
+	`Action/Boom2.act`
+[/attack action]
+
+[attack info]
+	``
+	``
+[/attack info]
+
+[cooltime]
+	1000	1000
+[/cooltime]
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	300
+
+[vision]
+	1000

@@ -1,0 +1,32 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[cube item number]
+			`>=`	5
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	150	150	80	80
+			[false]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	78
+				[false]
+				[return]
+					`nill`
+				[true]
+				[return]
+					-1
+			[/think]
+	[true]
+	[return]
+		-1
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+[/ai pattern]

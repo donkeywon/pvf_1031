@@ -1,0 +1,253 @@
+#PVF_File
+
+[name]
+	`[巨龙]纳特拉的龙骨法杖`
+
+[basic explain]
+	`在[素喃郊外]地区和真 · 远古地下城中可以发动特殊效果。
+攻击时， 有5%%的几率向敌人发动闪电攻击。
+被闪电命中的敌人会进入感电状态。
+攻击感电状态的敌人时， 附加10%%的伤害。`
+
+[detail explain]
+	`在[素喃郊外]地区和真 · 远古地下城中可以发动特殊效果。
+攻击时， 有5%%的几率向敌人发动闪电攻击。 (冷却时间15秒)
+被闪电命中的敌人会进入感电状态5秒； 若攻击感电状态的敌人， 则每次攻击都会附加900点伤害。 (若敌人高于Lv75， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击感电状态的敌人时， 附加10%%的伤害。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[magical attack]
+	55
+
+[attack speed]
+	-100
+
+[need material]
+	10002515	400
+
+[price]
+	134400
+
+[value]
+	5
+
+[equipment physical attack]
+	764	716
+
+[equipment magical attack]
+	965	905
+
+[separate attack]
+	481	327
+
+[skill levelup]
+	`[mage]`	22	1
+	`[mage]`	47	1
+	`[mage]`	59	1
+	`[mage]`	56	1
+	`[at mage]`	13	1
+	`[at mage]`	14	1
+[/skill levelup]
+
+[icon]
+	`Item/common/chn_Dragon_Weapon.img`	19
+
+[field image]
+	`Item/field_weapon.img`	9
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	5	8
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	5	8
+
+[layer variation]
+	2150
+	`at_staffa`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_staffd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	5	8
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`STAFF_TOUCH`
+
+[item group name]
+	`staff`
+
+[if]
+	[dungeon check]
+		200	201	202	203	204	205	206	3536	3537	3538	3539	3540
+	[/dungeon check]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	50
+	[stat by condition]
+		`magical attack`
+		`+`	50
+	[stat by condition]
+		`physical defense`
+		`+`	25
+	[stat by condition]
+		`magical defense`
+		`+`	25
+[/then]
+
+[if]
+	[dungeon check]
+		200	201	202	203	204	205	206	3536	3537	3538	3539	3540
+	[/dungeon check]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	50
+	[stat by condition]
+		`magical attack`
+		`+`	50
+	[stat by condition]
+		`physical defense`
+		`+`	25
+	[stat by condition]
+		`magical defense`
+		`+`	25
+[/then]
+
+[if]
+	[cooltime]
+		15000
+	[attack success]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[then probability]
+			50.0
+		[target]
+			`enemy`	-1
+		[probability]
+			5
+		[passive object]
+			54010	0	0	0	0	0	``
+		[/passive object]
+	[/then]
+	[then]
+		[then probability]
+			50.0
+		[target]
+			`enemy`	-1
+		[probability]
+			5
+		[passive object]
+			54011	0	0	0	0	0	``
+		[/passive object]
+	[/then]
+[/multiple then]
+
+[if]
+	[target active status]
+		`lightning`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[spectrum]
+	250	130	0	200	500
+
+[possible kiri protect]

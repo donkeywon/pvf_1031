@@ -1,0 +1,159 @@
+#PVF_File
+
+[name]
+	`灼魂之魔刹图腾`
+
+[basic explain]
+	`火属性攻击时， 可附加10%%的伤害。
+[俯冲]、 [摆动]攻击时， 可以使武器的属性变成火属性， 效果持续4秒。
+无法进行分解。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	83
+
+[stuck]
+	-1
+
+[need material]
+	3339	1000
+
+[repair price]
+	112896
+
+[value]
+	107520
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	844	792
+
+[equipment magical attack]
+	724	679
+
+[separate attack]
+	481	327
+
+[icon]
+	`item/new_equipment/01_weapon/priest/totem/totem.img`	89
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	28	0
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[routing priority]
+	`priest`	2
+[/routing priority]
+
+[if]
+	[element]
+		`fire`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[if]
+	[event use skill]
+		`priest`	2
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		4000
+	[elemental weapon]
+		`fire`
+[/then]
+
+[if]
+	[event use skill]
+		`priest`	3
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		4000
+	[elemental weapon]
+		`fire`
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,63 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`enemy number of in attack area()`	300.0	300.0	150.0	150.0
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[void]
+					`enemy number of in attack area()`	150.0	150.0	50.0	50.0
+			
+				[think]
+					[last result]
+						`>=`	1.0
+					[true]
+				
+					[think]
+						[void]
+							`is the skill in cooltime()`	44
+						[true]
+					
+						[think]
+							[check target direction]
+							[true]
+							[import ai]
+								`Ghostslash.ai`
+							[false]
+							[return]
+								-1
+						[/think]
+	[false]
+	[return]
+		15
+	[/think]
+	[false]
+	[think]
+		[void]
+			`enemy number of in attack area()`	300.0	30.0	100.0	100.0
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+			[import ai]
+				`ghoststep.ai`
+			[false]
+			[return]
+				-1
+		[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+[/ai pattern]

@@ -1,0 +1,70 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Stay.ani`
+	[SUB ANI]
+		`../animation/Stick/stStay.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[IS RIGHT]
+		[DISTANCE]
+		[>]
+			300
+		[IS OBJECT TYPE]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+		[IS NOT INDEX]
+			64597
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64610
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64660
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64632
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64633
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64634
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64635
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64613
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64651
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64652
+		[/IS NOT INDEX]
+		[IS NOT INDEX]
+			64653
+		[/IS NOT INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<=]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]

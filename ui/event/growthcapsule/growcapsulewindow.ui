@@ -1,0 +1,93 @@
+#PVF_File
+
+[window]
+	[type]
+		`popup`
+	[horizontal alignment]
+		`left`
+	[vertical alignment]
+		`middle`
+	[horizontal distance]
+		110
+	[vertical distance]
+		0
+	[size]
+		20	18
+	[title string]
+		`Lv80经验槽激活`
+	[controls]
+		[ui controls]
+			`[text button]`
+			`2`	96	214	2
+			`Interface/WindowCommon.img`
+			`确认`	4	12	13	14	15
+		[/ui controls]
+		[ui controls]
+			`[board image]`
+			`400`	-1	3	1
+			`Interface/WindowCommon.img`	11	241	210	213	214	215	216	217	218	219	220	221
+		[/ui controls]
+		[ui controls]
+			`[text]`
+			`1`	6	6	1
+			`1、 为了让勇士们在Lv85开启之后更快成长， 活动期间将激活Lv80的经验槽。
+2、 Lv80以后一部分的经验值将会累积到成长胶囊中。
+3、 当成长胶囊内的经验储满后， 会以邮件形式发放给拥有者。
+4、 Lv80的经验槽达到50%后， 角色经验仍可以继续被储存进成长胶囊中。
+正在进行[成长胶囊轻松领]活动， 活动期间Lv80的角色可以继续提升经验值， 直到经验槽达到50%。`	9	-1	235	0	0	0	0	230	200	155	
+			[parent]
+				`400`
+		[/ui controls]
+		[ui controls]
+			`[text]`
+			`403`	52	170	1
+			`成长胶囊`	9	-1	180	0	0	0	0	230	200	155	
+			[parent]
+				`400`
+		[/ui controls]
+		[ui controls]
+			`[text button]`
+			`404`	160	138	2
+			`Interface/WindowCommon.img`
+			`领取`	4	12	13	14	15	
+			[parent]
+				`400`
+		[/ui controls]
+		[ui controls]
+			`[image]`
+			`405`	30	120	1
+			`Interface2/event/growcapsule/event_capsule.img`	1	0	
+			[parent]
+				`400`
+		[/ui controls]
+		[ui controls]
+			`[gauge]`
+			`402`	41	139	1
+			`Interface2/event/growcapsule/event_capsule.img`	3	-1	1	1	
+			[parent]
+				`400`
+		[/ui controls]
+		[ui controls]
+			`[hyperlinklabel]`
+			`401`	167	190	0	7	100	20	230	200	155	0	0	
+			[user option]
+				`url link`
+				``	255	240	0
+				``
+			[/user option]
+			[parent]
+				`400`
+		[/ui controls]
+		[ui controls]
+			`[image]`
+			`406`	151	192	1
+			`Interface2/UI/EventList/Event_window.img`	1	2
+		[/ui controls]
+		[ui controls]
+			`[tooltips]`
+			`408`	-90	0	2
+			`404`
+			`Lv60及以上的角色可以参与活动。`	4	0	180	0	0
+		[/ui controls]
+	[/controls]
+[/window]

@@ -1,0 +1,121 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	`D&F Book GiftCard`
+
+[explain]
+	`攻击时以1%%的机率30秒内发动力量+50光环。施展以2%%的机率30秒内发动力量+50光环`
+
+[flavor text]
+	`< 活动 > 图书文化商品券和地城和勇士！
+可以看书！也能玩DNF！
+还能增长知识！！也能结交朋友！！`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	419
+
+[custom animation]
+	`TitleAnimation/dnf_book_giftcard.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	30
+
+[magical attack]
+	30
+
+[inventory limit]
+	10000
+
+[HP regen speed]
+	60
+
+[MP regen speed]
+	12
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[aura active]
+		`physical attack`
+		`+`	50	300
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[aura active]
+		`magical attack`
+		`+`	50	300
+[/then]
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[move wav]
+	`NAME_TOUCH`
+
+[usable period]
+	30
+
+[icon mark]
+	`Item/IconMark.img`	64

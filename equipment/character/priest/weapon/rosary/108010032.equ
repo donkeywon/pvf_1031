@@ -1,0 +1,133 @@
+#PVF_File
+
+[name]
+	`云梦沉香珠`
+
+[name2]
+	``
+
+[basic explain]
+	`找不到代码basic_explain_108010032`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[magical attack]
+	84
+
+[attack speed]
+	-50
+
+[cast speed]
+	50
+
+[price]
+	136000
+
+[repair price]
+	114240
+
+[value]
+	108800
+
+[equipment physical attack]
+	742	688
+
+[equipment magical attack]
+	948	879
+
+[separate attack]
+	504	343
+
+[magical critical hit]
+	2
+
+[light attack]
+	5
+
+[icon]
+	`item/new_equipment/01_weapon/priest/rosary/rosary.img`	81
+
+[field image]
+	`Item/field_weapon.img`	12
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	24	1
+
+[layer variation]
+	200
+	`rosaryd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`rosaryc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`ROSARY_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`rosary`
+
+[cool time]
+	10000
+
+[routing priority]
+	`priest`	3
+[/routing priority]
+
+[if]
+	[use skill]
+		`priest`	40
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[stat]
+		`light attack`
+		`+`	12
+	[duration]
+		20000
+[/then]
+
+[skill data up]
+	`[priest]`	40	`[all]`	`[level]`	2	`+`	2
+[/skill data up]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,48 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/JunkTree.ani`
+	[SOUND]
+		`R_SHOCKWAVE_HIT`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			10
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	200
+	[ATTACKRECT]
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../../../MapObject/Trap/particle/GrassDestroy.ptl`	0	0	0
+[/BEHAVIOR]

@@ -1,0 +1,209 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	`DNF of Wonder Land ( Alicia )`
+
+[explain]
+	`攻击时以2%%的机率受到50%%的附加伤害。( 决斗场内受到20%%的附加伤害。)
+攻击时以 2%%的机率让敌人 在10秒内进入出血状态。( 决斗场内5秒内出血状态)
+攻击时以2%%的机率让敌人在10秒内进入中毒状态。( 决斗场内5秒内中毒状态)
+攻击时以2%%的机率让敌人在2秒内进入晕眩状态。( 决斗场内不发动。)
+
+状态异常效果的等级和伤害根据角色 等级不同的适用，等级越高伤害越高。`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	221
+
+[custom animation]
+	`TitleAnimation/wonderland_dnfpl.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	20
+
+[magical attack]
+	20
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[add absolute damage]
+		`all`
+		`%`	50
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[probability]
+		2
+	[active status]
+		`bleeding`	-1	7
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[probability]
+		2
+	[active status]
+		`poison`	-1	7
+[/then]
+
+[if]
+	[cooltime]
+		10000
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		2
+	[active status]
+		`stun`	-1
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		5000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[add absolute damage]
+		`all`
+		`%`	20
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		2
+	[active status]
+		`bleeding`	-1	7
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		2
+	[active status]
+		`poison`	-1	7
+[/then]
+
+[room list move speed rate]
+	0.15
+
+[move wav]
+	`NAME_TOUCH`
+
+[usable period]
+	7
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,141 @@
+#PVF_File
+
+[name]
+	`传承 : 守夜女神的羊毛长袍`
+
+[name2]
+	`Legacy : Coat of Latri`
+
+[grade]
+	27
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	25
+
+[magical attack]
+	14
+
+[magical defense]
+	14
+
+[price]
+	18900
+
+[repair price]
+	15120
+
+[value]
+	15120
+
+[equipment physical defense]
+	360	336
+
+[skill levelup]
+	`[swordman]`	41	1
+	`[fighter]`	30	1
+	`[at fighter]`	11	1
+	`[gunner]`	46	1
+	`[at gunner]`	46	1
+	`[mage]`	31	1
+	`[mage]`	30	1
+	`[at mage]`	19	1
+	`[priest]`	38	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/IconArmor.img`	82
+
+[field image]
+	`Item/field_equip.img`	0
+
+[equipment type]
+	`[coat]`	17
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	1400
+
+[item group name]
+	`cl coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 守夜女神的羊毛战袍  套装`
+
+[set item]
+	10108	12106	18087
+[/set item]
+
+[item overpower part]
+
+[set ability]
+	[MP MAX]
+		200
+	[physical attack]
+		23
+	[magical attack]
+		38
+	[magical defense]
+		15
+	[light resistance]
+		5
+	[skill levelup]
+		`[swordman]`	41	1
+		`[fighter]`	30	1
+		`[at fighter]`	11	1
+		`[gunner]`	46	1
+		`[at gunner]`	46	1
+		`[mage]`	57	1
+		`[mage]`	44	1
+		`[at mage]`	18	1
+		`[priest]`	39	1
+	[/skill levelup]
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福可以使自身增加5%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	50
+	[/then]
+[/set ability]
+
+[possible kiri protect]

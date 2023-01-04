@@ -1,0 +1,231 @@
+#PVF_File
+
+[floating height]
+	0
+
+[damage sound]
+	`WATER_HIT`
+
+[name]
+	`腐水之菲里斯`
+
+[face image]
+	`Monster/MonsterFace.img`	262
+
+[die effect]
+	1	29	1
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	370
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	150
+[/ability category]
+
+[category]
+	`[spirit]`
+	`[range combat]`
+	`[close-carefully]`
+[/category]
+
+[intelligence]
+	90	90	3000
+
+[HP regen speed]
+	0	0
+
+[MP regen speed]
+	0	0
+
+[level]
+	35	45
+
+[fire resistance]
+	-50	-50
+
+[water resistance]
+	50	50
+
+[dark resistance]
+	0	0
+
+[light resistance]
+	0	0
+
+[slow resistance]
+	20	20
+
+[freeze resistance]
+	50	50
+
+[poison resistance]
+	0	0
+
+[stun resistance]
+	20	20
+
+[curse resistance]
+	0	0
+
+[blind resistance]
+	0	0
+
+[sleep resistance]
+	0	0
+
+[lightning resistance]
+	0	0
+
+[stone resistance]
+	20	20
+
+[bleeding resistance]
+	0	0
+
+[confuse resistance]
+	0	0
+
+[hold resistance]
+	20	20
+
+[burn resistance]
+	0	0
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	700	700
+
+[cast speed]
+	800	800
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	80000	80000
+
+[targeting time term]
+	-1
+
+[sight]
+	500
+
+[targeting nearest]
+	1
+
+[warlike]
+	50
+
+[attack delay]
+	1500
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[lie frame]
+	0	0	0	0	0
+
+[item]
+	3227	800
+[/item]
+
+[common champion drop item]
+[/common champion drop item]
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[attack action]
+	`Action/Attack1.act`
+	`Action/Attack2.act`
+	`Action/Attack3.act`
+[/attack action]
+
+[attack info]
+	``
+	`AttackInfo/Attack.atk`
+	``
+[/attack info]
+
+[cooltime]
+	10000	2000	5000
+[/cooltime]
+
+[last action]
+	`Action/Die.act`
+
+[vision]
+	1000
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[keep distance with target]
+	300
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[level of difficulty]
+	[easy]
+		-50	3000
+	[medium]
+		-30	2000
+	[hard]
+		0	0
+	[ultimate]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]

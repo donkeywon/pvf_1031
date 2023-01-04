@@ -1,0 +1,67 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/drill6.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		10000	
+		[equipment physical attack]
+		[%]
+			30.0
+		[equipment physical defense]
+		[%]
+			1000.0
+		[attack speed]
+		[%]
+			50.0
+		[move speed]
+		[%]
+			50.0
+		[equipment magical attack]
+		[%]
+			30.0
+		[equipment magical defense]
+		[%]
+			1000.0
+		[all element]
+		[+]
+			200.0
+	[/APPENDAGE]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35129
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	-1	100
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		1
+	[ON]
+	[ABS CASTING]
+		8000	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+[/TRIGGER]

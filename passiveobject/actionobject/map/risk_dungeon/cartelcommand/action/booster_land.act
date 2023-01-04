@@ -1,0 +1,466 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/cliff_falling.ani`
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[PARTY TARGET]
+		[INDEX]
+			0
+		[INCLUDE DEAD]
+			1
+	[/PARTY TARGET]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[WHICH]
+	[PARTY TARGET]
+		[INDEX]
+			1
+		[INCLUDE DEAD]
+			1
+	[/PARTY TARGET]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[WHICH]
+	[PARTY TARGET]
+		[INDEX]
+			2
+		[INCLUDE DEAD]
+			1
+	[/PARTY TARGET]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[WHICH]
+	[PARTY TARGET]
+		[INDEX]
+			3
+		[INCLUDE DEAD]
+			1
+	[/PARTY TARGET]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[OFF]
+	[BOOSTER APPENDAGE]
+		[GRAVITY]
+			1500
+		[FALLING INIT VELOCITY]
+			1000
+		[TERMINAL VELOCITY]
+			1300
+		[HEIGHT]
+			10000
+		[DISABLE KEYINPUT]
+		[LANDING MODE]
+		[DEFAULT ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/fallingeffect_back.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/fallingeffect_standard.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/fallingeffect_front.ani`
+				[LAYER]
+					`front`
+			[/ANI]
+		[/DEFAULT ANI]
+		[BOOSTING ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/fallingeffect_boost.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+		[/BOOSTING ANI]
+		[RELEASE ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_0.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_1.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_2.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_3.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_4.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_5.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_6.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_7.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_7.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+		[/RELEASE ANI]
+	[/BOOSTER APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[BOOSTER APPENDAGE]
+		[GRAVITY]
+			1500
+		[FALLING INIT VELOCITY]
+			1000
+		[TERMINAL VELOCITY]
+			1300
+		[HEIGHT]
+			10000
+		[DISABLE KEYINPUT]
+		[LANDING MODE]
+		[DEFAULT ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/fallingeffect_back.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/fallingeffect_standard.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/fallingeffect_front.ani`
+				[LAYER]
+					`front`
+			[/ANI]
+		[/DEFAULT ANI]
+		[BOOSTING ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/fallingeffect_boost.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+		[/BOOSTING ANI]
+		[RELEASE ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_0.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_1.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_2.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_3.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_4.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_5.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_6.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_7.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_7.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+		[/RELEASE ANI]
+	[/BOOSTER APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		2
+	[OFF]
+	[BOOSTER APPENDAGE]
+		[GRAVITY]
+			1500
+		[FALLING INIT VELOCITY]
+			1000
+		[TERMINAL VELOCITY]
+			1300
+		[HEIGHT]
+			10000
+		[DISABLE KEYINPUT]
+		[LANDING MODE]
+		[DEFAULT ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/fallingeffect_back.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/fallingeffect_standard.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/fallingeffect_front.ani`
+				[LAYER]
+					`front`
+			[/ANI]
+		[/DEFAULT ANI]
+		[BOOSTING ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/fallingeffect_boost.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+		[/BOOSTING ANI]
+		[RELEASE ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_0.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_1.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_2.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_3.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_4.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_5.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_6.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_7.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_7.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+		[/RELEASE ANI]
+	[/BOOSTER APPENDAGE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		3
+	[OFF]
+	[BOOSTER APPENDAGE]
+		[GRAVITY]
+			1500
+		[FALLING INIT VELOCITY]
+			1000
+		[TERMINAL VELOCITY]
+			1300
+		[HEIGHT]
+			10000
+		[DISABLE KEYINPUT]
+		[LANDING MODE]
+		[DEFAULT ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/fallingeffect_back.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/fallingeffect_standard.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/fallingeffect_front.ani`
+				[LAYER]
+					`front`
+			[/ANI]
+		[/DEFAULT ANI]
+		[BOOSTING ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/fallingeffect_boost.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+		[/BOOSTING ANI]
+		[RELEASE ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_0.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_1.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_2.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_3.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_4.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_5.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_6.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_7.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+			[ANI]
+				[PATH]
+					`Character/Common/Animation/booster_particle_7.ani`
+				[LAYER]
+					`back`
+			[/ANI]
+		[/RELEASE ANI]
+	[/BOOSTER APPENDAGE]
+[/BEHAVIOR]

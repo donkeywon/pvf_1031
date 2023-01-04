@@ -1,0 +1,501 @@
+#PVF_File
+
+[name]
+	`血影明空剑`
+
+[basic explain]
+	`攻击时， 有5%%的几率使敌人进入出血状态。
+装备时， 每5秒可以使200px范围内的所有敌人进入出血状态5秒。 (强化或增幅的数值越高， 出血适用范围就越大； 最多可到第15阶段)
+装备时， 出血效果范围内每存在1个出血状态的敌人， 可使自身增加10点物理攻击力。`
+
+[detail explain]
+	`攻击时， 有5%%的几率使敌人进入出血状态7秒； 出血状态下的敌人， 每0.5秒会受到1000点的伤害。 (若敌人高于Lv89， 则减少进入异常状态的几率； 反之， 则增加几率)
+装备时， 每5秒可以使200px范围内的所有敌人进入出血状态5秒。 (强化或增幅的数值越高， 出血适用范围就越大； 最多可到第15阶段)
+装备时， 出血效果范围内每存在1个出血状态的敌人， 可使自身增加10点物理攻击力。 (效果最多可重叠15次)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	58
+
+[attack speed]
+	-30
+
+[price]
+	142400
+
+[repair price]
+	119616
+
+[value]
+	113920
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	871	820
+
+[equipment magical attack]
+	683	643
+
+[separate attack]
+	510	347
+
+[physical critical hit]
+	10
+
+[icon]
+	`item/new_equipment/01_weapon/thief/twinswd/twinswd.img`	109
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	28	0
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[active status]
+		`bleeding`	85	1000
+	[probability]
+		5
+	[reduce probability to human armor at pvp module]
+		80
+[/then]
+
+[variable stat]
+	`equipment physical attack`
+	`+`	10
+	`object number`
+	`enemy`	5000
+	`bleeding`	15
+[/variable stat]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`<`	1	0
+	[/equipment upgrade]
+	[equipment upgrade]
+		`amplify`
+		`<`	1	0
+	[/equipment upgrade]
+	[time]
+		5000	1	500
+[/if]
+
+[then]
+	[probability]
+		100
+	[target]
+		`all enemy`	200
+	[duration]
+		5000
+	[active status]
+		`bleeding`	89	100
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	1	0
+		`amplify`
+		`=`	1	0
+	[/equipment upgrade]
+	[time]
+		5000	1	500
+[/if]
+
+[then]
+	[probability]
+		100
+	[target]
+		`all enemy`	220
+	[duration]
+		5000
+	[active status]
+		`bleeding`	89	100
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	2	0
+		`amplify`
+		`=`	2	0
+	[/equipment upgrade]
+	[time]
+		5000	1	500
+[/if]
+
+[then]
+	[probability]
+		100
+	[target]
+		`all enemy`	240
+	[duration]
+		5000
+	[active status]
+		`bleeding`	89	100
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	3	0
+		`amplify`
+		`=`	3	0
+	[/equipment upgrade]
+	[time]
+		5000	1	500
+[/if]
+
+[then]
+	[probability]
+		100
+	[target]
+		`all enemy`	260
+	[duration]
+		5000
+	[active status]
+		`bleeding`	89	100
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	4	0
+		`amplify`
+		`=`	4	0
+	[/equipment upgrade]
+	[time]
+		5000	1	500
+[/if]
+
+[then]
+	[probability]
+		100
+	[target]
+		`all enemy`	280
+	[duration]
+		5000
+	[active status]
+		`bleeding`	89	100
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	5	0
+		`amplify`
+		`=`	5	0
+	[/equipment upgrade]
+	[time]
+		5000	1	500
+[/if]
+
+[then]
+	[probability]
+		100
+	[target]
+		`all enemy`	300
+	[duration]
+		5000
+	[active status]
+		`bleeding`	89	100
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	6	0
+		`amplify`
+		`=`	6	0
+	[/equipment upgrade]
+	[attack success]
+		1
+	[time]
+		5000	1	500
+[/if]
+
+[then]
+	[probability]
+		100
+	[target]
+		`all enemy`	320
+	[duration]
+		5000
+	[active status]
+		`bleeding`	89	100
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	7	0
+		`amplify`
+		`=`	7	0
+	[/equipment upgrade]
+	[time]
+		5000	1	500
+[/if]
+
+[then]
+	[probability]
+		100
+	[target]
+		`all enemy`	340
+	[duration]
+		5000
+	[active status]
+		`bleeding`	89	100
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	8	0
+		`amplify`
+		`=`	8	0
+	[/equipment upgrade]
+	[time]
+		5000	1	500
+[/if]
+
+[then]
+	[probability]
+		100
+	[target]
+		`all enemy`	360
+	[duration]
+		5000
+	[active status]
+		`bleeding`	89	100
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	9	0
+		`amplify`
+		`=`	9	0
+	[/equipment upgrade]
+	[time]
+		5000	1	500
+[/if]
+
+[then]
+	[probability]
+		100
+	[target]
+		`all enemy`	380
+	[duration]
+		5000
+	[active status]
+		`bleeding`	89	100
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	10	0
+		`amplify`
+		`=`	10	0
+	[/equipment upgrade]
+	[time]
+		5000	1	500
+[/if]
+
+[then]
+	[probability]
+		100
+	[target]
+		`all enemy`	400
+	[duration]
+		5000
+	[active status]
+		`bleeding`	89	100
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	11	0
+		`amplify`
+		`=`	11	0
+	[/equipment upgrade]
+	[time]
+		5000	1	500
+[/if]
+
+[then]
+	[probability]
+		100
+	[target]
+		`all enemy`	420
+	[duration]
+		5000
+	[active status]
+		`bleeding`	89	100
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	12	0
+		`amplify`
+		`=`	12	0
+	[/equipment upgrade]
+	[time]
+		5000	1	500
+[/if]
+
+[then]
+	[probability]
+		100
+	[target]
+		`all enemy`	440
+	[duration]
+		5000
+	[active status]
+		`bleeding`	89	100
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	13	0
+		`amplify`
+		`=`	13	0
+	[/equipment upgrade]
+	[time]
+		5000	1	500
+[/if]
+
+[then]
+	[probability]
+		100
+	[target]
+		`all enemy`	460
+	[duration]
+		5000
+	[active status]
+		`bleeding`	89	100
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	14	0
+		`amplify`
+		`=`	14	0
+	[/equipment upgrade]
+	[time]
+		5000	1	500
+[/if]
+
+[then]
+	[probability]
+		100
+	[target]
+		`all enemy`	480
+	[duration]
+		5000
+	[active status]
+		`bleeding`	89	100
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`>=`	15	0
+		`amplify`
+		`>=`	15	0
+	[/equipment upgrade]
+	[time]
+		5000	1	500
+[/if]
+
+[then]
+	[probability]
+		100
+	[target]
+		`all enemy`	500
+	[duration]
+		5000
+	[active status]
+		`bleeding`	89	100
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

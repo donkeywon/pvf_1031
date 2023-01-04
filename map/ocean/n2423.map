@@ -1,0 +1,134 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	15
+[/dungeon]
+
+[type]
+	`[normal]`
+
+[tile]
+	`Tile/SkyCastleNPoll.til`
+	`Tile/SkyCastlePCPoll.til`
+	`Tile/SkyCastleNPoll.til`
+	`Tile/SkyCastleDCPoll.til`
+	`Tile/SkyCastleNOPoll.til`
+	`Tile/SkyCastleDCPoll.til`
+	`Tile/SkyCastlePCPoll.til`
+	`Tile/SkyCastleNPoll.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/far0.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`../../PassiveObject/MapObject/ParticleFactory/Animation/OceanGradationTop.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`../../PassiveObject/MapObject/ParticleFactory/Animation/OceanGradationBottom.ani`
+		[layer]
+			`[close]`
+		[order]
+			`[upper]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	12	259	1779	257	277	206	1524	338
+
+[sound]
+	`M_OCEAN`
+	`R_ABYSMAL`
+[/sound]
+
+[animation]
+	`Animation/wshadow.ani`	`[bottom]`	777	317	0
+	`Animation/wshadow.ani`	`[bottom]`	1043	323	0
+[/animation]
+
+[passive object]
+	13	150	0	140
+	13	650	0	160
+	13	1150	0	140
+	13	1750	0	145
+	13	2250	0	150
+	14	200	0	0
+	14	300	0	150
+	14	600	0	30
+	14	900	0	-100
+	14	1200	0	-40
+	14	1400	0	0
+	14	1850	0	-50
+	14	2200	0	-80
+	18	200	0	10
+	15	350	0	230
+	16	490	0	-20
+	17	650	0	60
+	15	720	0	-50
+	16	800	0	150
+	18	1100	0	-200
+	17	1210	0	30
+	17	1500	0	0
+	18	1800	0	10
+	16	2020	0	-225
+	1021	1207	218	0
+	1021	1277	296	0
+	1036	1247	331	0
+	1036	1185	344	0
+[/passive object]
+
+[monster]
+	34	1	0	968	236	0	1	1	`[fixed]`	`[normal]`
+	34	1	0	499	241	0	1	1	`[fixed]`	`[normal]`
+	34	1	0	390	244	0	1	1	`[fixed]`	`[normal]`
+	34	0	25	730	279	0	1	1	`[fixed]`	`[normal]`
+	34	1	0	1082	302	0	1	1	`[fixed]`	`[normal]`
+	34	1	0	844	324	0	1	1	`[fixed]`	`[normal]`
+	34	1	0	585	331	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[special passive object]
+	235	1236	249	0	1
+	`[trap]`	2511	1	4	10	-1
+	235	293	314	0	1
+	`[trap]`	2011	1	1	10	-1
+	239	362	314	0	1
+	`[item]`	4	-1	4	-1	-1
+	1021	440	318	0	1
+	`[item]`	3	4	-1	-1	-1	
+[/special passive object]
+
+[greed]
+	`OO II`
+
+[map name]
+	`PVP 无名`

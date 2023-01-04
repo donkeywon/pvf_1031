@@ -1,0 +1,94 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	320.0	320.0	160.0	100.0
+			`all`
+			`passive object`	15087
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`combo`
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					0
+			[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	8000.0	8000.0	2000.0	2000.0
+			`all`
+			`passive object`	16140
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[void]
+					`number of in attack area()`	140.0	140.0	30.0	30.0
+					`all`
+					`passive object`	5799
+			
+				[think]
+					[last result]
+						`>=`	1.0
+					[true]
+				
+					[think]
+						[check key cooltime]
+							`Last`
+						[true]
+						[return]
+							-1
+						[false]
+						[return]
+							1
+					[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	8000.0	8000.0	2000.0	2000.0
+			`all`
+			`passive object`	15087
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+			[return]
+				-1
+			[false]
+		
+			[think]
+				[check key cooltime]
+					`casting`
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					2
+			[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

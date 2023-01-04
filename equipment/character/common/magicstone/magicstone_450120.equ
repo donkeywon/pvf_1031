@@ -1,0 +1,110 @@
+#PVF_File
+
+[name]
+	`地火熔岩珠`
+
+[name2]
+	`找不到代码name2_450120`
+
+[basic explain]
+	`攻击时， 有2%%的几率出现熔岩地带。
+无法进行分解。`
+
+[detail explain]
+	`攻击时， 有2%%的几率出现熔岩地带。 (冷却时间为12秒)
+无法进行分解。`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	65
+
+[physical attack]
+	41
+
+[physical defense]
+	41
+
+[magical attack]
+	41
+
+[magical defense]
+	41
+
+[price]
+	82800
+
+[repair price]
+	69552
+
+[value]
+	66240
+
+[icon]
+	`Item/common/magicstone.img`	40
+
+[field image]
+	`Item/field_equip.img`	23
+
+[equipment type]
+	`[magic stone]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`magic stone`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		12000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[duration]
+		10000
+	[passive object]
+		48176	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[routing priority]
+[/routing priority]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

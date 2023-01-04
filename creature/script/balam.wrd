@@ -1,0 +1,157 @@
+#PVF_File
+
+[ambient]
+	[room list]
+		`哇，这儿还是这么热闹，一点不受危机影响呀！`
+		`啊？这儿也卖我的装备？嘿嘿~~那我不是可以……`
+		`这儿我来过吧？感觉很熟悉……`	
+		[in elven gard]
+			`我喜欢呼吸这里的新鲜空气！！`
+		[/in elven gard]
+		[in alfhlyra]
+			`你有没有觉得这里的气氛很诡异？`
+		[/in alfhlyra]
+		[in stom pass]
+			`冷，好冷……你要战斗时再召我出来吧……`
+		[/in stom pass]
+	[/room list]
+	[main game]
+		[fill point under]
+			20
+			`我的肚子又向我抱怨了，说我老虐待它，怎么办？`
+			`我的肚子又向我抱怨了，说我老虐待它，怎么办？`
+			`我的肚子又向我抱怨了，说我老虐待它，怎么办？`
+		[/fill point under]
+		[enemies alive]
+			[hits over]
+				20
+				`嘿嘿，战斗时，你需要冲锋号角吧？`
+				`你身手再灵活点就无敌了，加油呀！`
+			[/hits over]
+			[hits under]
+				21
+				`面对敌人的攻击，一定要先学会躲避！`
+				`嗯，根据我的目测，你的身法明显比以前好了！`
+			[/hits under]
+		[/enemies alive]
+		[enemies destroyed]
+		[rank over]
+			`b`
+			`总算看到你变强了，我还以为我等不到了……`
+			`要不是看在你表现还行的份上，我早踹你一脚了！`
+		[/rank over]
+		[rank under]
+			`b`
+			`嘿嘿，就让我引领你走向巅峰吧！`
+			`评分必须要提高，老这样，太碍眼了！`
+		[/rank under]
+	[/main game]
+[/ambient]
+
+[trigger]
+	[room list]
+		[renamed]
+			`新名字不错，我喜欢！`
+		[/renamed]
+		[pop random]
+			30	
+			[call the name]
+				`啊……那个……那个是我吗？`
+			[/call the name]
+		[/pop random]
+		[pop random]
+			20	
+			[equip]
+				`HI！见到可爱的我，高兴吗？`
+				`你想我了吗？说不想，我会很伤心的……T_T……`
+			[/equip]
+		[/pop random]
+		[pop random]
+			20	
+			[level up]
+				`我又进步了，不祝贺我吗？`
+				`阿-拉德这么大，却找不到一个对手，真悲哀呀！`
+			[/level up]
+		[/pop random]
+		[pop random]
+			30	
+			[character level up]
+				`哇哦~~啪~啪！啪！`
+			[/character level up]
+		[/pop random]
+		[evolution]
+			``
+		[/evolution]
+		[eat feed]
+			`太小气了，多给一点又不会少块肉……T_T……`
+		[/eat feed]
+	[/room list]
+	[main game]
+		[eat feed]
+			`啧啧……不错！这样才有王者的气魄！`
+			`浑身又充满力量啦！`
+		[/eat feed]
+		[none feed]
+			`都什么时候了，还不给我吃的！我都快饿扁了……`
+		[/none feed]
+		[end buff]
+			`唉，什么时候我才能想吃什么就吃什么呀！`
+		[/end buff]
+		[dying]
+			`我死后你一定要告诉他们，我是被饿死的！`
+		[/dying]
+		[using overskill]
+			`对高手来说，靠近敌人也是一种策略！`
+			`冲锋！嘻嘻，这就是技术，看到没？`
+		[/using overskill]
+		[pop random]
+			30	
+			[skill gauge full]
+				`手榴弹！……哈哈，被骗了吧？`
+				`准备，投掷！……看我的无敌手榴弹！哈哈哈~~~`
+			[/skill gauge full]
+		[/pop random]
+		[pop random]
+			30	
+			[over skill gauge full]
+				`准备好冲锋了吗？一个都不能少呀！`
+				`充电完毕！开战！`
+			[/over skill gauge full]
+		[/pop random]
+		[over skill waiting]
+			`唉，忍耐也是有限度的！我要爆发了！！`
+			`我早就准备好了，难道你没发现？`
+		[/over skill waiting]
+		[call the name]
+			`啊……那个……那个是我吗？`
+		[/call the name]
+		[pop random]
+			20	
+			[equip]
+				`HI！见到可爱的我，高兴吗？`
+				`你想我了吗？说不想，我会很伤心的……T_T……`
+			[/equip]
+		[/pop random]
+		[pop random]
+			20	
+			[level up]
+				`我又进步了，不祝贺我吗？`
+				`阿-拉德这么大，却找不到一个对手，真悲哀呀！`
+			[/level up]
+		[/pop random]
+		[pop random]
+			30	
+			[character level up]
+				`哇哦~~啪~啪！啪！`
+			[/character level up]
+		[/pop random]
+		[evolution]
+			``
+		[/evolution]
+	[/main game]
+	[pvp]
+		[press creature button]
+			`为你提升攻击速度已经够吃力了，你再有其他要求我就跟你翻脸！`
+		[/press creature button]
+	[/pvp]
+[/trigger]

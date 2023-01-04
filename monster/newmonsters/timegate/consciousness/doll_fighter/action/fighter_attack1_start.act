@@ -1,0 +1,47 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Fighter_Attack1_Start.ani`
+	[SUB ANI]
+		`../Animation/ball/Fighter_Attack1_Start.ani`	0	0
+		`../Animation/ball_eff/Fighter_Attack1_Start.ani`	0	0
+		`../Animation/ball_eff/Fighter_Attack1_Start.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`AJUMP`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			350
+		[Z AXIS]
+			580
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		2
+	[NOW]
+[/BEHAVIOR]

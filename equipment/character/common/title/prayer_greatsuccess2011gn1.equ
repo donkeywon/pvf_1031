@@ -1,0 +1,165 @@
+#PVF_File
+
+[name]
+	`2011成功起源 (神枪手)`
+
+[name2]
+	``
+
+[explain]
+	`攻击时、施展时以5%%的机率30秒内命中率增加+3%%，攻击速度增加+3%%，施展速度增加+3%%,移动速度增加+5%%。`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	239
+
+[custom animation]
+	`TitleAnimation/prayer_greatsuccess2011speed.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	120
+
+[MP MAX]
+	120
+
+[physical attack]
+	20
+
+[physical defense]
+	20
+
+[magical attack]
+	20
+
+[magical defense]
+	20
+
+[all elemental resistance]
+	4
+
+[MP regen speed]
+	8
+
+[move speed]
+	30
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[equipment physical attack]
+	8	8
+
+[equipment magical attack]
+	8	8
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`stuck`
+		`+`	-3
+	[stat]
+		`attack speed`
+		`+`	30
+	[stat]
+		`cast speed`
+		`+`	30
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`stuck`
+		`+`	-3
+	[stat]
+		`attack speed`
+		`+`	30
+	[stat]
+		`cast speed`
+		`+`	30
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[physical critical hit]
+	3
+
+[magical critical hit]
+	3
+
+[skill levelup]
+	`[gunner]`	60	1
+	`[gunner]`	48	1
+	`[gunner]`	46	1
+	`[gunner]`	62	1
+	`[gunner]`	9	1
+	`[gunner]`	53	1
+	`[gunner]`	59	1
+	`[gunner]`	45	1
+	`[at gunner]`	60	1
+	`[at gunner]`	48	1
+	`[at gunner]`	46	1
+	`[at gunner]`	62	1
+	`[at gunner]`	9	1
+	`[at gunner]`	53	1
+	`[at gunner]`	59	1
+	`[at gunner]`	45	1
+[/skill levelup]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

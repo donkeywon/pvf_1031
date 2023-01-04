@@ -1,0 +1,206 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/wind.ani`
+	[SUB ANI]
+		`../animation/effect/wind_effect.ani`	0	1
+	[/SUB ANI]
+	[SOUND]
+		`UMTARA_EXHALE`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DIRECT DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			6000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		4
+	[RESET]
+	[TRIGGER]
+		5
+	[RESET]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[IS DIRECTION LEFT]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/wind_effect.ptl`	-250	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[IS DIRECTION RIGHT]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/wind_effect.ptl`	250	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[IS DIRECTION LEFT]
+	[DELAY DO BEHAVIOR]
+	[ME]
+		4	100
+	[DELAY DO BEHAVIOR]
+	[ME]
+		5	1000
+	[DELAY DO BEHAVIOR]
+	[ME]
+		6	2000
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11157
+		[PARTICLE FILENAME]
+			`../particle/great_fire.ptl`
+		[LEVEL]
+			0
+		[POS]
+			180	180	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11157
+		[PARTICLE FILENAME]
+			`../particle/great_fire.ptl`
+		[LEVEL]
+			0
+		[POS]
+			180	300	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11157
+		[PARTICLE FILENAME]
+			`../particle/great_fire.ptl`
+		[LEVEL]
+			0
+		[POS]
+			180	430	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[IS DIRECTION RIGHT]
+	[DELAY DO BEHAVIOR]
+	[ME]
+		7	100
+	[DELAY DO BEHAVIOR]
+	[ME]
+		8	1000
+	[DELAY DO BEHAVIOR]
+	[ME]
+		9	2000
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11157
+		[PARTICLE FILENAME]
+			`../particle/great_fire.ptl`
+		[LEVEL]
+			0
+		[POS]
+			1200	180	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11157
+		[PARTICLE FILENAME]
+			`../particle/great_fire.ptl`
+		[LEVEL]
+			0
+		[POS]
+			1200	300	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11157
+		[PARTICLE FILENAME]
+			`../particle/great_fire.ptl`
+		[LEVEL]
+			0
+		[POS]
+			1200	430	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,241 @@
+#PVF_File
+
+[name]
+	`火箭侠`
+
+[floating height]
+	30
+
+[category]
+	`[human]`
+	`[range combat]`
+	`[close-carefully]`
+[/category]
+
+[ambient sound]
+	`R_ROCKETMAN_AMB`
+
+[attack sound]
+	`R_ROCKETMAN_MACHINE`
+
+[appear sound]
+	`R_ROCKETMAN_MEET`
+
+[damage sound]
+	`R_ROCKETMAN_DMG`
+
+[die sound]
+	`ROCKETMAN_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	130
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	130
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	90
+	`[HP MAX]`	`*`	405
+[/ability category]
+
+[level]
+	59	59
+
+[slow resistance]
+	30	30
+
+[freeze resistance]
+	30	30
+
+[stun resistance]
+	30	30
+
+[blind resistance]
+	30	30
+
+[stone resistance]
+	30	30
+
+[confuse resistance]
+	30	30
+
+[hold resistance]
+	30	30
+
+[move speed]
+	700	700
+
+[attack speed]
+	500	500
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	100000	100000
+
+[stuckbonus on damage]
+	3	3	3	3
+
+[common champion drop item]
+[/common champion drop item]
+
+[common champion elemental property]
+	`[fire element]`
+	`[water element]`
+	`[dark element]`
+	`[light element]`
+	`[no element]`
+[/common champion elemental property]
+
+[die effect]
+	0	26	1
+
+[face image]
+	`Monster/MonsterFace.img`	269
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[attack action]
+	`Action/LShoot1.act`
+	`Action/LShoot2.act`
+	`Action/LShoot3.act`
+	`Action/LShoot4.act`
+	`Action/LShoot5.act`
+	`Action/LShoot6.act`
+	`Action/LShoot7.act`
+	`Action/LShoot8.act`
+	`Action/LShoot9.act`
+	`Action/LShoot10.act`
+	`Action/BShoot1.act`
+	`Action/BShoot2.act`
+	`Action/Dash.act`
+	`Action/MoveLeftUP1.act`
+	`Action/MoveLeftUP2.act`
+	`Action/MoveLeftDown1.act`
+	`Action/MoveLeftDown2.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/LShoot.atk`
+	`AttackInfo/LShoot.atk`
+	`AttackInfo/LShoot.atk`
+	`AttackInfo/LShoot.atk`
+	`AttackInfo/LShoot.atk`
+	`AttackInfo/LShoot.atk`
+	`AttackInfo/LShoot.atk`
+	`AttackInfo/LShoot.atk`
+	`AttackInfo/LShoot.atk`
+	`AttackInfo/Base.atk`
+	`AttackInfo/Base.atk`
+	`AttackInfo/Base.atk`
+	`AttackInfo/Base.atk`
+	`AttackInfo/Base.atk`
+	`AttackInfo/Base.atk`
+	`AttackInfo/Base.atk`
+	`AttackInfo/Base.atk`
+[/attack info]
+
+[event super on scr]
+	`[on hp]`	50	100000	1
+	`[unbreakable]`	-1	-1	-1	-1
+[/event super on scr]
+
+[cooltime]
+	2000	2000	2000	2000	2000	2000	2000	2000	2000	5000	10000	6000	5000	5000	5000	5000	5000
+[/cooltime]
+
+[think term]
+	200
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+		`ai/100HP.ai`
+		`ai/80HP.ai`
+		`ai/40HP.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+		`ai/100HP.ai`
+		`ai/80HP.ai`
+		`ai/40HP.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+		`ai/100HP.ai`
+		`ai/80HP.ai`
+		`ai/40HP.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+		`ai/100HP.ai`
+		`ai/80HP.ai`
+		`ai/40HP.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+		`ai/100HP.ai`
+		`ai/80HP.ai`
+		`ai/40HP.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	210
+
+[vision]
+	600
+
+[is direction to move]
+	1
+
+[lie frame]
+	1	2	3	3	4
+
+[level of difficulty]
+	[easy]
+		-40	2000
+	[medium]
+		-20	1000
+	[hard]
+		0	0
+	[ultimate]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]

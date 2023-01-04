@@ -1,0 +1,66 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack.ani`
+	[SUB ANI]
+		`../animation/effect/Attack_effect2.ani`	0	-4
+		`../animation/shield/Attack.ani`	0	0
+		`../animation/effect/Attack_effect.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`消失吧！`	3	100
+	[/SPEECH]
+	[SOUND]
+		`BERIAS_SKILL_05`	1
+		`DRAWING_SWORD`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[IS LEFT]
+		[DISTANCE]
+		[<=]
+			300
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[IS RIGHT]
+		[DISTANCE]
+		[<=]
+			300
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[WIND APPENDAGE]
+		12.0	0.0	2	0	200
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[WIND APPENDAGE]
+		12.0	0.0	1	0	200
+[/BEHAVIOR]

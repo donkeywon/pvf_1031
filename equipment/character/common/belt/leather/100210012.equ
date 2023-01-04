@@ -1,0 +1,122 @@
+#PVF_File
+
+[name]
+	`游龙之魂腰带`
+
+[name2]
+	``
+
+[basic explain]
+	`站立2秒后， 可进入伪装状态15秒。 (在决斗场则为站立5秒后)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	21
+
+[magical attack]
+	21
+
+[magical defense]
+	23
+
+[inventory limit]
+	3000
+
+[price]
+	59500
+
+[repair price]
+	49980
+
+[value]
+	47600
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	744	696
+
+[icon]
+	`item/new_equipment/03_leather/belt/leather_belt.img`	10
+
+[field image]
+	`Item/FieldImage.img`	3
+
+[equipment type]
+	`[waist]`	17
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	20
+
+[weight]
+	800
+
+[item group name]
+	`lt waist`
+
+[cool time]
+	10000
+
+[if]
+	[keep my state]
+		`stand`	2000
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[buff]
+		`camoflage`
+[/then]
+
+[pvp]
+	[if]
+		[keep my state]
+			`stand`	5000
+		[cooltime]
+			30000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			15000
+		[buff]
+			`camoflage`
+	[/then]
+[/pvp]
+
+[set item master]
+	100060016
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,49 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/tower/catapult_tower00_1.ani`
+	[SUB ANI]
+		`../animation/FireReadyGas.ani`	0	-1
+		`../Animation/tower/catapult_tower01_1.ani`	0	1
+		`../animation/Fire.ani`	0	2
+		`../animation/FireReadyEyes.ani`	0	3
+		`../Animation/tower/catapult_tower02_1.ani`	0	4
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12621
+		[PARTICLE FILENAME]
+			`../Particle/boom.ptl`
+		[LEVEL]
+			1
+		[POS]
+			58	60	160
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]

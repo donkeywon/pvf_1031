@@ -1,0 +1,213 @@
+#PVF_File
+
+[name]
+	`(旧) 希曼的影舞衬衫`
+
+[name2]
+	`Himan Stella's Rangerie Top`
+
+[basic explain]
+	`死亡时， 可以使所有队员进入无敌状态， 效果持续30秒。 但在决斗场中， 只能持续15秒。
+复活时， 可以使所有队员增加20%%的暴击率， 效果持续30秒。`
+
+[flavor text]
+	`如果我死了， 你也不要太激动， 我会马上回来的……`
+
+[grade]
+	35
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	30
+
+[magical attack]
+	20
+
+[magical defense]
+	20
+
+[price]
+	31500
+
+[repair price]
+	25200
+
+[value]
+	25200
+
+[equipment physical defense]
+	516	444
+
+[icon]
+	`Item/common/coat.img`	116
+
+[field image]
+	`Item/field_equip.img`	0
+
+[equipment type]
+	`[coat]`	19
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	1400
+
+[item group name]
+	`cl coat`
+
+[cool time]
+	10000
+
+[set name]
+	`希曼的影舞战袍  套装`
+
+[set item]
+	10116	12114	18096	16090
+[/set item]
+
+[if]
+	[module]
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[dead tower]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		30000
+	[set my state]
+		1
+	[my state]
+		`die`
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[duration]
+		30000
+	[buff]
+		`unbreakable`
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		30000
+	[set my state]
+		1
+	[my state]
+		`die`
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[duration]
+		15000
+	[buff]
+		`unbreakable`
+[/then]
+
+[if]
+	[module]
+		`[assault]`
+	[/module]
+	[cooltime]
+		30000
+	[set my state]
+		1
+	[my state]
+		`die`
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[duration]
+		5000
+	[probability]
+		30
+	[buff]
+		`unbreakable`
+[/then]
+
+[if]
+	[revive]
+		1
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[duration]
+		30000
+	[stat]
+		`physical critical hit rate`
+		`+`	20
+	[stat]
+		`magical critical hit rate`
+		`+`	20
+[/then]
+
+[set ability]
+	[if]
+		[cooltime]
+			1000
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			5
+		[restore]
+			`hp`
+			`%`	30	0
+	[/then]
+	[if]
+		[cooltime]
+			1000
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			5
+		[restore]
+			`mp`
+			`%`	30	0
+	[/then]
+	[fullset basic explain]
+		`被攻击时， 有5%%的几率恢复30%%的HP。
+被攻击时， 有5%%的几率恢复30%%的MP。`
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

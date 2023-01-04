@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack2.ani`
+	[SUB ANI]
+		`../animation/Attack2_Slash.ani`	0	-1
+		`../animation/casting_eff.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`嗯~啊！`	0	20
+	[/SPEECH]
+	[SOUND]
+		`R_TIAMAT_SKILL_02`	0
+		`CASILLAS_FLASH`	1
+		`SCYTHE_02`	5
+		`TIAMAT_SPACE_CUT`	11
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9181
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			275	-1	110
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

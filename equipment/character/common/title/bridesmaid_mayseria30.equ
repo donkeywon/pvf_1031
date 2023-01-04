@@ -1,0 +1,99 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	``
+
+[explain]
+	`佩戴时以40秒的间隔给予赛丽亚的祝福，20秒内力量、智能增加45，体力、精神力增加30。(佩戴时从40秒后发动。)`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	172
+
+[equipment type]
+	`[title name]`	1
+
+[custom animation]
+	`TitleAnimation/bestman_may.ani`
+[/custom animation]
+
+[usable period]
+	30
+
+[physical attack]
+	15
+
+[physical defense]
+	10
+
+[magical attack]
+	23
+
+[magical defense]
+	15
+
+[HP regen speed]
+	75
+
+[MP regen speed]
+	15
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[if]
+	[time]
+		40000	1	40000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[stat]
+		`physical attack`
+		`+`	45
+	[stat]
+		`physical defense`
+		`+`	30
+	[stat]
+		`magical attack`
+		`+`	45
+	[stat]
+		`magical defense`
+		`+`	30
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

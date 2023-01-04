@@ -1,0 +1,133 @@
+#PVF_File
+
+[name]
+	`命运之殇图卢斯图腾`
+
+[name2]
+	`Nihal Toros TotemPole of Sad Fate`
+
+[basic explain]
+	`攻击人型怪敌人时， 附加50点伤害。
+攻击不死族敌人时， 附加50点伤害。`
+
+[grade]
+	39
+
+[rarity]
+	2
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	38
+
+[physical attack]
+	38
+
+[stuck]
+	-1
+
+[price]
+	54600
+
+[repair price]
+	43680
+
+[value]
+	43680
+
+[equipment physical attack]
+	353	341
+
+[equipment magical attack]
+	302	292
+
+[separate attack]
+	172	114
+
+[icon]
+	`Item/weapon/priest/totem.img`	8
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[priest]`
+
+[variation]
+	1	3
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[if]
+	[target type]
+		`human`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`+`	50
+[/then]
+
+[if]
+	[target type]
+		`undead`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`+`	50
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

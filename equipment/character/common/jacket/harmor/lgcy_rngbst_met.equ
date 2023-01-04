@@ -1,0 +1,122 @@
+#PVF_File
+
+[name]
+	`传承 : 智慧女神的青铜锁甲`
+
+[name2]
+	`Legacy : Coat of Metis`
+
+[grade]
+	7
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	5
+
+[physical attack]
+	9
+
+[physical defense]
+	9
+
+[magical attack]
+	3
+
+[HP MAX]
+	35
+
+[price]
+	7000
+
+[repair price]
+	5600
+
+[value]
+	5600
+
+[equipment physical defense]
+	480	384
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/IconArmor.img`	134
+
+[field image]
+	`Item/field_equip.img`	10
+
+[equipment type]
+	`[coat]`	20
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	3600
+
+[item group name]
+	`ha coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 智慧女神的青铜重甲  套装`
+
+[set item]
+	11277	13277
+[/set item]
+
+[item overpower part]
+
+[set ability]
+	[HP MAX]
+		75
+	[physical attack]
+		8
+	[physical defense]
+		8
+	[magical attack]
+		6
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福可以使自身增加3%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	30
+	[/then]
+[/set ability]
+
+[possible kiri protect]

@@ -1,0 +1,89 @@
+#PVF_File
+
+[name]
+	`小红帽的面包篮`
+
+[name2]
+	`Bread Basket of Red Cloak`
+
+[explain]
+	`2010年劳动节礼包`
+
+[grade]
+	2
+
+[part set index]
+	2
+
+[usable job]
+	`[mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[free]`
+
+[minimum level]
+	1
+
+[icon]
+	`item/weapon/mage/rod.img`	46
+
+[equipment type]
+	`[waist avatar]`	0
+
+[avatar type select]
+	7	0	0	1000	0
+	30	0	0	2000	0
+	0	0	0	4000	0
+	0	0	0	4500	2
+	`[D socket]`	`[D socket]`
+[/avatar type select]
+
+[avatar select ability]
+	`[ELEMENT_TOLERANCE_FIRE]`	`+`	25
+	`[ELEMENT_TOLERANCE_WATER]`	`+`	25
+	`[ELEMENT_TOLERANCE_DARK]`	`+`	25
+	`[ELEMENT_TOLERANCE_LIGHT]`	`+`	25
+	`[ACTIVESTATUS_TOLERANCE_STUCK]`	`+`	40
+	`[INVENTORY_MAX_WEIGHT]`	`+`	10000
+[/avatar select ability]
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[attack speed]
+	10
+
+[cast speed]
+	10
+
+[expand ani]
+	10	1	0	1	
+	[variation]
+		9	0
+	[layer variation]
+		2600
+		`rodc`
+	[equipment ani script]
+		`equipment/character/mage.lay`
+	[layer variation]
+		200
+		`rodd`
+	[equipment ani script]
+		`equipment/character/mage.lay`
+	[custom wav]
+		`SUPPER_01`
+		`R_GOURD_HIT`
+	[/custom wav]
+	[expand path]
+		`equipment/character/mage/weapon/rod/`
+[/expand ani]
+
+[int data]
+	654321	3	3	80	0	70	3	80	0	70	3	80	0	70	3	80	0	70	3	80	0	70
+[/int data]
+
+[string data]
+	`Common/Particle/childrenday_mg.ptl`
+[/string data]

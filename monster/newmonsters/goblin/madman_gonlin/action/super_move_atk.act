@@ -1,0 +1,64 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/super/move_atk.ani`
+	[SUB ANI]
+		`../Animation/hat/Move_atk_hat.ani`	0	0
+		`../Animation/pants/Move_atk_pants.ani`	0	0
+		`../Animation/shirts/Move_atk_shirts.ani`	0	0
+		`../Animation/Top/Move_atk_top.ani`	0	0
+		`../Animation/weapon/Move_atk_wp.ani`	0	10
+	[/SUB ANI]
+	[SPEECH]
+		`站住！不要过来！！`	1	99
+	[/SPEECH]
+	[SOUND]
+		`R_MADGBL_ATK`	7
+		`R_MINERALSWDC`	7
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	9
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			300
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			80
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		5
+	[END]
+[/BEHAVIOR]

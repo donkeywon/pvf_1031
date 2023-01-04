@@ -1,0 +1,61 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/LShoot1.ani`
+	[SUB ANI]
+		`../Animation/LShoot1_Fire3.ani`	0	-11
+		`../Animation/LShoot1_Fire2.ani`	0	-5
+		`../Animation/LShoot1_Fire1.ani`	0	-5
+		`../Animation/LShoot1_Floor.ani`	0	0
+		`../Animation/ShootEffect1.ani`	0	0
+		`../Animation/ShootEffect2.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`G_MUSKETA`	0
+		`G_MUSKETB`	1
+		`R_ROCKETMAN_ATK`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8170
+		[PARTICLE FILENAME]
+			`../Particle/Bullet.ptl`
+		[LEVEL]
+			0
+		[POS]
+			100	0	70
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8170
+		[PARTICLE FILENAME]
+			`../Particle/Bullet.ptl`
+		[LEVEL]
+			0
+		[POS]
+			100	0	65
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

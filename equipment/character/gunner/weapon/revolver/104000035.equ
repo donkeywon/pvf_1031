@@ -1,0 +1,161 @@
+#PVF_File
+
+[name]
+	`夜之亡冥者`
+
+[name2]
+	``
+
+[basic explain]
+	`[双鹰回旋]持续时间 +20%%
+
+攻击时， 有4%%的几率增加7%%的攻击速度， 效果持续10秒。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[physical attack]
+	55
+
+[price]
+	134400
+
+[repair price]
+	112896
+
+[value]
+	107520
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	752	688
+
+[equipment magical attack]
+	633	579
+
+[separate attack]
+	481	327
+
+[physical critical hit]
+	2
+
+[skill levelup]
+	`[gunner]`	51	2
+	`[at gunner]`	51	2
+	`[gunner]`	5	2
+	`[at gunner]`	5	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/revolver/revolver.img`	83
+
+[field image]
+	`Item/field_weapon.img`	1
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	25	0
+
+[layer variation]
+	2790
+	`revc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`revb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	25	0
+
+[layer variation]
+	2790
+	`at_revc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_revb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2000
+
+[item group name]
+	`revolver`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[gunner]`	51	`[all]`	`[static]`	14	`%`	20
+	`[gunner]`	51	`[all]`	`[static]`	15	`%`	20
+	`[gunner]`	51	`[all]`	`[static]`	16	`%`	20
+	`[at gunner]`	51	`[all]`	`[static]`	14	`%`	20
+	`[at gunner]`	51	`[all]`	`[static]`	15	`%`	20
+	`[at gunner]`	51	`[all]`	`[static]`	16	`%`	20
+[/skill data up]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[probability]
+		4
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[stat]
+		`attack speed`
+		`+`	70
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

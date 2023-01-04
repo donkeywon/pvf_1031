@@ -1,0 +1,53 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/cut_turn.ani`
+	[SUB ANI]
+		`../animation/weapon/cut_turn.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`即使月亮也能划开！`	3	15
+		`快快快！`	3	15
+	[/SPEECH]
+	[SOUND]
+		`R_WEAPONM_ATK_05`	1
+		`BYOEN_SWISH`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			350
+		[Y AXIS]
+			-200
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Y AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

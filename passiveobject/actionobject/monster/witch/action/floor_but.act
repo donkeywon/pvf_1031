@@ -1,0 +1,372 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/floor_a.ani`
+	[SUB ANI]
+		`../animation/floor_Fox.ani`	0	0
+		`../animation/floor_b.ani`	0	0
+		`../animation/floor_c.ani`	0	0
+		`../animation/floor_d.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`time`	
+		[+]
+			500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	3	4	5
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`time`	
+		[+]
+			1200
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	3	4	5
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`time`	
+		[+]
+			1900
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	3	4	5
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`time`	
+		[+]
+			2600
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	3	4	5
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`time`	
+		[+]
+			3400
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	3	4	5
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`time`	
+		[+]
+			4100
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	3	4	5
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`time`	
+		[+]
+			4800
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	3	4	5
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`time`	
+		[+]
+			5400
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	3	4	5
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`time`	
+		[+]
+			6100
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	3	4	5
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`time`	
+		[+]
+			6800
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	3	4	5
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`time`	
+		[+]
+			7400
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	3	4	5
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`time`	
+		[+]
+			8100
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	3	4	5
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`time`	
+		[+]
+			8800
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	3	4	5
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`time`	
+		[+]
+			9400
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	3	4	5
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9011
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			65
+		[POS]
+		[RANDOM SELECT]
+			240	200	160
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			30	20	10	0	-10	-20	-30
+		[/RANDOM SELECT]
+	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9011
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			65
+		[POS]
+		[RANDOM SELECT]
+			120	80	40
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			35	25	15	0	-15	-25	-35
+		[/RANDOM SELECT]
+	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9011
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			65
+		[POS]
+		[RANDOM SELECT]
+			20	0	-20
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			40	30	20	10	0	-10	-20	-30	-40
+		[/RANDOM SELECT]
+	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9011
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			65
+		[POS]
+		[RANDOM SELECT]
+			-120	-80	-40
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			35	25	15	0	-15	-25	-35
+		[/RANDOM SELECT]
+	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9011
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			65
+		[POS]
+		[RANDOM SELECT]
+			-240	-200	-160
+		[/RANDOM SELECT]
+		[RANDOM SELECT]
+			30	20	10	0	-10	-20	-30
+		[/RANDOM SELECT]
+	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

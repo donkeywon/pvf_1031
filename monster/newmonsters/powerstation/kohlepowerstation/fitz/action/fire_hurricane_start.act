@@ -1,0 +1,90 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/fire_hurricane_start.ani`
+	[SUB ANI]
+		`../Animation/effect/fire_hurricane_start_e.ani`	0	1
+		`../Animation/effect/fire_hurricane_start_e3.ani`	0	2
+		`../Animation/effect/fire_hurricane_start_e2.ani`	0	3
+	[/SUB ANI]
+	[SPEECH]
+		`烧吧~火焰！！`	0	40
+		`业火之漩涡~！！`	0	50
+	[/SPEECH]
+	[SOUND]
+		`FITZ_VORTEX`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		12
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[DOWN]
+		``
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		``
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		``
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+		[IS NOT INDEX]
+			60012
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PULL APPENDAGE EX]
+		[SPEED]
+			4.1	2.7
+		[VALIDTIME]
+			5800
+		[USE TARGET]
+			0
+		[OFFSET POS]
+			10	0
+		[MIN DISTANCE]
+			10
+	[/PULL APPENDAGE EX]
+[/BEHAVIOR]

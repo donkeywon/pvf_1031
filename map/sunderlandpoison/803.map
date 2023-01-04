@@ -1,0 +1,172 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	6
+[/dungeon]
+
+[type]
+	`[normal]`
+
+[tile]
+	`Tile/ForestOver.til`
+	`Tile/ForestOverUnder.til`
+	`Tile/ForestUnderOver.til`
+	`Tile/ForestOver.til`
+	`Tile/ForestOverUnder.til`
+	`Tile/ForestUnder.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/far0.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/mid0.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`../CommonAnimation/pfog.ani`
+		[layer]
+			`[close]`
+		[order]
+			`[upper]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	16	216	1328	216	672	144	672	348
+
+[sound]
+	`M_SUNDERLAND`
+	`AMB_FOREST_02`
+[/sound]
+
+[animation]
+	`Animation/Grass0.ani`	`[bottom]`	1357	324	0
+	`Animation/smallTree1.ani`	`[closeback]`	278	125	0
+	`Animation/smallTree1.ani`	`[closeback]`	124	129	0
+	`Animation/smallTree1.ani`	`[closeback]`	1408	161	0
+	`Animation/smallTree1.ani`	`[closeback]`	658	131	0
+	`Animation/smallTree1.ani`	`[closeback]`	897	131	0
+[/animation]
+
+[passive object]
+	293	257	141	0
+	293	338	142	0
+	293	421	145	0
+	248	171	171	0
+	247	261	173	0
+	247	294	173	0
+	247	115	173	0
+	248	283	174	0
+	248	351	176	0
+	247	345	177	0
+	247	435	179	0
+	248	377	180	0
+	248	319	180	0
+	247	404	181	0
+	247	793	182	0
+	247	605	189	0
+	248	159	197	0
+	248	474	198	0
+	247	267	201	0
+	292	907	202	0
+	247	389	205	0
+	247	506	208	0
+	247	241	219	0
+	248	311	221	0
+	247	276	226	0
+	247	129	229	0
+	247	184	232	0
+	247	442	233	0
+	221	916	238	0
+	248	241	256	0
+	292	930	261	0
+	247	703	263	0
+	248	483	268	0
+	248	516	283	0
+	248	158	287	0
+	247	187	287	0
+	247	781	288	0
+	221	945	301	0
+	247	422	307	0
+	248	496	308	0
+	248	614	311	0
+	247	288	311	0
+	248	451	312	0
+	248	272	312	0
+	247	375	314	0
+	248	301	315	0
+	248	434	315	0
+	247	876	316	0
+	248	385	317	0
+	247	200	318	0
+	292	952	318	0
+	247	137	326	0
+	293	255	344	0
+	293	339	345	0
+	293	427	346	0
+	221	967	350	0
+	291	1092	391	0
+	292	985	392	0
+[/passive object]
+
+[monster]
+	5001	1	0	733	170	0	1	1	`[fixed]`	`[normal]`
+	3	0	6	499	194	0	1	1	`[fixed]`	`[normal]`
+	6	0	10	988	200	0	1	1	`[fixed]`	`[normal]`
+	5002	1	1	650	231	0	1	1	`[fixed]`	`[normal]`
+	6	0	10	1022	276	0	1	1	`[fixed]`	`[normal]`
+	3	0	6	482	290	0	1	1	`[fixed]`	`[normal]`
+	3	0	6	592	310	0	1	1	`[fixed]`	`[normal]`
+	5001	1	0	753	318	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[special passive object]
+	221	344	201	0	1
+	`[monster]`	5003	11	1	5	-1
+	222	809	263	0	1
+	`[item]`	2	-1	2	-1	-1
+	221	338	289	0	1
+	`[trap]`	2400	1	1	5	-1	
+[/special passive object]
+
+[greed]
+	`NN EE`
+
+[event monster position]
+	408	241	0
+	544	239	0
+	1080	237	0
+	1071	312	0
+[/event monster position]
+
+[map name]
+	`PVP 无名`

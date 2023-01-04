@@ -1,0 +1,33 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/ex_bead_fire_attack_box.ani`
+	[SUB ANI]
+		`../animation/ex_flame_dodge2.ani`	0	1
+		`../animation/ex_bead_fire_dodge.ani`	0	2
+		`../animation/ex_bead_fire_dodge_rot.ani`	0	3
+		`../animation/ex_bead_fire_normal.ani`	0	4
+		`../animation/ex_flame_dodge.ani`	0	5
+		`../animation/ex_sub_dodge.ani`	0	6
+		`../animation/ex_sub_normal.ani`	0	7
+		`../animation/ex_flame_floor_dodge.ani`	0	8
+		`../animation/ex_flame_floor_normal.ani`	0	9
+	[/SUB ANI]
+	[SOUND]
+		`ASTORM_EXP_FIRE`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]

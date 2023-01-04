@@ -1,0 +1,87 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AttackMagicCircle/Loop/SilenceMissile_Dummy.ani`
+	[SUB ANI]
+		`../Animation/AttackMagicCircle/Loop/SilenceMissile_19_arm.ani`	0	1
+		`../Animation/AttackMagicCircle/Loop/SilenceMissile_18_body.ani`	0	2
+		`../Animation/AttackMagicCircle/Loop/SilenceMissile_17_neck.ani`	0	3
+		`../Animation/AttackMagicCircle/Loop/SilenceMissile_16_neck.ani`	0	4
+		`../Animation/AttackMagicCircle/Loop/SilenceMissile_15_neck.ani`	0	5
+		`../Animation/AttackMagicCircle/Loop/SilenceMissile_14_neck.ani`	0	6
+		`../Animation/AttackMagicCircle/Loop/SilenceMissile_13_neck.ani`	0	7
+		`../Animation/AttackMagicCircle/Loop/SilenceMissile_12_back.ani`	0	8
+		`../Animation/AttackMagicCircle/Loop/SilenceMissile_11_back.ani`	0	9
+		`../Animation/AttackMagicCircle/Loop/SilenceMissile_10_back.ani`	0	10
+		`../Animation/AttackMagicCircle/Loop/SilenceMissile_09_back.ani`	0	11
+		`../Animation/AttackMagicCircle/Loop/SilenceMissile_08_back.ani`	0	12
+		`../Animation/AttackMagicCircle/Loop/SilenceMissile_07_back.ani`	0	13
+		`../Animation/AttackMagicCircle/Loop/SilenceMissile_06_head.ani`	0	14
+		`../Animation/AttackMagicCircle/Loop/SilenceMissile_05_head.ani`	0	15
+		`../Animation/AttackMagicCircle/Loop/SilenceMissile_04_head.ani`	0	16
+		`../Animation/AttackMagicCircle/Loop/SilenceMissile_03_headhorn.ani`	0	17
+		`../Animation/AttackMagicCircle/Loop/SilenceMissile_02_shoulder.ani`	0	18
+		`../Animation/AttackMagicCircle/Loop/SilenceMissile_01_arm.ani`	0	19
+		`../Animation/AttackMagicCircle/Loop/SilenceMissile_00_hand.ani`	0	20
+		`../Animation/AttackMagicCircle/Loop/SilenceMissile_Effect_S_HornDodge.ani`	0	21
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[ON]
+	[DIM]
+		`endTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`endTime`	
+		[+]
+			15000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			54106
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		7
+	[NOW]
+[/BEHAVIOR]

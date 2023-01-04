@@ -1,0 +1,153 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	60.0	60.0	20.0	20.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`combo`
+			[true]
+		
+			[think]
+				[target state]
+					4
+				[true]
+				[return]
+					-1
+				[false]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	7
+					[true]
+					[return]
+						-1
+					[false]
+					[return]
+						1
+				[/think]
+	[/think]
+	[false]
+	[return]
+		10
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	130.0	130.0	20.0	20.0
+		[true]
+	
+		[think]
+			[target state]
+				4
+			[true]
+			[return]
+				-1
+			[false]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	5
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					2
+			[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	150.0	150.0	60.0	60.0
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	16
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				7
+		[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	400.0	400.0	20.0	20.0
+		[true]
+	
+		[think]
+			[target state]
+				4
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	57
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					12
+			[/think]
+	[false]
+	[think]
+		[void]
+			`check random()`	50.0	100.0
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	44
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				3
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	650.0	650.0	30.0	30.0
+		[true]
+	
+		[think]
+			[hp]
+				`%>=`	60
+			[true]
+			[return]
+				-1
+			[false]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	57
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					12
+			[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

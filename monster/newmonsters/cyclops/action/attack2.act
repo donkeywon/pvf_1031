@@ -1,0 +1,130 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack2.ani`
+	[SUB ANI]
+		`../Animation/Chop_e.ani`	0	-10
+		`../Animation/sand/sd_Attack2.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`BIGGOLEM_ATK_01`	3
+		`BIGGOLEM_ATK_02`	7
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	1000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	1000
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10021
+		[PARTICLE FILENAME]
+			`../Particle/Dropping.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-20	20
+		[RANDOM]
+			-20	20	400
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10022
+		[PARTICLE FILENAME]
+			`../Particle/Dropping.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-50	50
+		[RANDOM]
+			-60	60	400
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10023
+		[PARTICLE FILENAME]
+			`../Particle/Dropping.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-120	120
+		[RANDOM]
+			-100	100	400
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10024
+		[PARTICLE FILENAME]
+			`../Particle/Dropping.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-80	80
+		[RANDOM]
+			-90	90	400
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10025
+		[PARTICLE FILENAME]
+			`../Particle/Dropping.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-20	20
+		[RANDOM]
+			-20	20	400
+		[WARNING MARK]
+			0	0	100	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

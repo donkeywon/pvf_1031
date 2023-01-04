@@ -1,0 +1,164 @@
+#PVF_File
+
+[name]
+	`沙凡特的冰齿剑`
+
+[name2]
+	`Icepicker of Shabante`
+
+[basic explain]
+	`攻击时， 有3%%的几率出现冰冻针刺。
+[冰霜之萨亚]范围 +30px`
+
+[flavor text]
+	`它可以冰冻一切……`
+
+[grade]
+	50
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	45
+
+[magical attack]
+	35
+
+[cast speed]
+	20
+
+[price]
+	80000
+
+[repair price]
+	67200
+
+[value]
+	64000
+
+[equipment physical attack]
+	452	407
+
+[equipment magical attack]
+	547	492
+
+[separate attack]
+	285	189
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[swordman]`	21	3
+[/skill levelup]
+
+[icon]
+	`Item/weapon/swordman/sswd.img`	35
+
+[field image]
+	`Item/FieldImage.img`	9
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	1	1
+
+[layer variation]
+	2790
+	`sswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`sswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	1	1
+
+[layer variation]
+	2790
+	`sswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`sswdb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`MINERALSWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`ssword`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[water element]`
+
+[if]
+	[cooltime]
+		3000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[passive object]
+		30059	0	0	0	40	0	``
+	[/passive object]
+[/then]
+
+[skill data up]
+	`[swordman]`	36	`[all]`	`[static]`	1	`+`	30
+[/skill data up]
+
+[routing priority]
+	`swordman`	2
+	`swordman`	4
+	`demonic swordman`	0
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

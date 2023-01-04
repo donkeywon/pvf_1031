@@ -1,0 +1,40 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	80.0	80.0	80.0	80.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`turn`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`turn`
+		[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	150.0	50.0	50.0	50.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`atk`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`atk`
+		[/think]
+	[false]
+	[import ai]
+		`throw.ai`
+	[/think]
+	[/think]
+[/ai pattern]

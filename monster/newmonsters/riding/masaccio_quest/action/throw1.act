@@ -1,0 +1,44 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Throw.ani`
+	[SUB ANI]
+		`../Animation/Weapon/Throw.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`秘技！暗影飞镖！`	0	30
+		`影子投掷！`	0	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9403
+		[PARTICLE FILENAME]
+			`../Particle/Arrow5.ptl`
+		[LEVEL]
+			0
+		[POS]
+			120	0	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9404
+		[PARTICLE FILENAME]
+			`../Particle/Arrow5.ptl`
+		[LEVEL]
+			0
+		[POS]
+			120	0	90
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

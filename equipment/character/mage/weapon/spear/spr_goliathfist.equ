@@ -1,0 +1,186 @@
+#PVF_File
+
+[name]
+	`(旧) 焰纹封魔戟`
+
+[name2]
+	`Firejaveling of Goliath's Fist`
+
+[basic explain]
+	`普通攻击时， 有5%%的几率召唤出1只亚德炎。`
+
+[detail explain]
+	`普通攻击时， 有5%%的几率消耗50点MP召唤出1只Lv50的亚德炎协助召唤者攻击敌人， 亚德炎存在100秒。 (召唤的怪物只能同时存在1只， 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失)`
+
+[flavor text]
+	`你如果能够完全控制它， 火之精灵就会臣服于你。`
+
+[grade]
+	57
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	59
+
+[attack speed]
+	-50
+
+[stuck]
+	-1
+
+[price]
+	91200
+
+[repair price]
+	72960
+
+[value]
+	72960
+
+[equipment physical attack]
+	638	581
+
+[equipment magical attack]
+	452	411
+
+[separate attack]
+	328	220
+
+[physical critical hit]
+	2
+
+[skill levelup]
+	`[mage]`	35	2
+	`[mage]`	13	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/mage/spear.img`	42
+
+[field image]
+	`Item/field_weapon.img`	6
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	2	0
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	2	0
+
+[layer variation]
+	2150
+	`at_speara`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_speard`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	2	0
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`SPEAR_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3200
+
+[item group name]
+	`spear`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		100000
+	[my state]
+		`attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		100000
+	[reduce duration at pvp module]
+		75
+	[probability]
+		5
+	[restore]
+		`mp`
+		`+`	-50	0
+	[summon monster]
+		60112	50	1
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

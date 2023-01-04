@@ -1,0 +1,130 @@
+#PVF_File
+
+[name]
+	`冥炎逐日项链`
+
+[name2]
+	``
+
+[basic explain]
+	`近距离攻击时， 有2%%的几率使自身的力量、 智力、 体力和精神各增加50点， 效果持续20秒。 (效果最多可重叠3次)`
+
+[flavor text]
+	`别以为我老了， 我的热情可永远不会输给年轻人！  --沙影贝利特`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[magical attack]
+	33
+
+[magical defense]
+	83
+
+[need material]
+	4794	75
+
+[repair price]
+	67200
+
+[value]
+	67200
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	7280	6880
+
+[Force Result Item Rule]
+	1	0
+
+[icon]
+	`Item/new_equipment/08_necklace/necklace.img`	81
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[attacker]
+		`character`	-1
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	0
+	[probability]
+		2
+	[equipment duration]
+		20000
+	[appendage]
+		168
+[/then]
+
+[set name]
+	`冥炎逐日  首饰`
+
+[fullset basic explain]
+	`近距离攻击时， 有2%%的几率增加15%%的物理暴击率和魔法暴击率， 效果持续20秒。`
+
+[set item]
+	100300008	100320010	100310008
+[/set item]
+
+[set ability]
+	[if]
+		[attacker]
+			`character`	-1
+		[event attack success]
+			1
+		[cooltime]
+			20000
+	[/if]
+	[then]
+		[target]
+			`myself`	0
+		[probability]
+			2
+		[duration]
+			20000
+		[stat]
+			`physical critical hit rate`
+			`+`	15
+		[stat]
+			`magical critical hit rate`
+			`+`	15
+	[/then]
+[/set ability]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Throw3.ani`
+	[SUB ANI]
+		`../Animation/skin/Throw3_skin.ani`	0	0
+		`../Animation/back/Throw3_back.ani`	0	-2
+		`../Animation/weapon/Throw3_wp.ani`	0	0
+		`../Animation/shoes/Throw3_shoes.ani`	0	2
+		`../Animation/ac1/Throw3_ac1.ani`	0	0
+		`../Animation/ac2/Throw3_ac2.ani`	0	0
+		`../Animation/shirts/Throw3_shirts.ani`	0	2
+		`../Animation/pants/Throw3_pants.ani`	0	2
+		`../Animation/hair/Throw3_hair.ani`	0	3
+	[/SUB ANI]
+	[SOUND]
+		`GOBLIN_THROW`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8480
+		[PARTICLE FILENAME]
+			`../Particle/Arrow_up.ptl`
+		[LEVEL]
+			0
+		[POS]
+			20	0	125
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

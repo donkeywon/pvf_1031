@@ -1,0 +1,126 @@
+#PVF_File
+
+[name]
+	`神秘王国的人偶剧 (妖精)`
+
+[name2]
+	``
+
+[explain]
+	`攻击时， 有1%%的几率使自身恢复2%%的HP最大值。
+施放技能时， 有2%%的几率使自身恢复2%%的MP最大值。`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[physical attack]
+	13
+
+[physical defense]
+	9
+
+[magical attack]
+	13
+
+[magical defense]
+	9
+
+[attack speed]
+	10
+
+[cast speed]
+	10
+
+[move speed]
+	20
+
+[stuck]
+	-1
+
+[stuck resistance]
+	10
+
+[HP MAX]
+	150
+
+[MP MAX]
+	150
+
+[HP regen speed]
+	60
+
+[MP regen speed]
+	12
+
+[inventory limit]
+	5000
+
+[icon]
+	`Item/Title/title.img`	92
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/puppet_stage.ani`
+[/custom animation]
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[restore]
+		`hp`
+		`%`	2	1000
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[restore]
+		`mp`
+		`%`	2	1000
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

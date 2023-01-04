@@ -1,0 +1,117 @@
+#PVF_File
+
+[name]
+	`精致的素喃订制匕首`
+
+[name2]
+	`找不到代码name2_37114`
+
+[basic explain]
+	`攻击速度 +5%%
+暴击伤害 +10%%`
+
+[grade]
+	52
+
+[attach type]
+	`[trade]`
+
+[item group name]
+	`dagger`
+
+[rarity]
+	3
+
+[weight]
+	2100
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[minimum level]
+	48
+
+[icon]
+	`Item/weapon/thief/dagger.img`	98
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[sub type]
+	0
+
+[durability]
+	35
+
+[value]
+	66560
+
+[cool time]
+	10000
+
+[physical attack]
+	36
+
+[equipment physical attack]
+	411	377
+
+[equipment magical attack]
+	436	400
+
+[separate attack]
+	287	192
+
+[attack speed]
+	150
+
+[physical critical hit]
+	10
+
+[stuck]
+	1
+
+[variation]
+	2	6
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	10
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

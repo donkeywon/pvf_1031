@@ -1,0 +1,87 @@
+#PVF_File
+
+[name]
+	`克雷之截能指环`
+
+[basic explain]
+	`攻击[克雷发电站]地下城的领主时， 可附加10%%的伤害。`
+
+[flavor text]
+	`发电站工作人员在危险作业时常会佩戴防护物品， 这枚戒指就是仿造那个做成的。
+在智能娃娃机处收集钢铁碎片后， 可以通过NPC马蒂亚斯制作该装备。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	50
+
+[magical attack]
+	50
+
+[need material]
+	10000066	30
+
+[value]
+	67200
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	2912	2752
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	108
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[dungeon check]
+		101
+	[/dungeon check]
+	[target grade]
+		`boss`
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

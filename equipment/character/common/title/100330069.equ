@@ -1,0 +1,127 @@
+#PVF_File
+
+[name]
+	`梦游仙境-兔子(白金)`
+
+[name2]
+	``
+
+[explain]
+	`攻击时， 有3%%的几率使自身增加3%%的攻击速度， 效果持续30秒。
+施放技能时， 有5%%的几率使自身增加3%%的施放速度， 效果持续30秒。
+前冲时， 有2%%的几率使自身增加3%%的移动速度， 效果持续30秒。`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[move speed]
+	30
+
+[stuck resistance]
+	20
+
+[HP MAX]
+	200
+
+[hit recovery]
+	80
+
+[icon]
+	`Item/Title/title.img`	223
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/wonderland_dnfpl.ani`
+[/custom animation]
+
+[if]
+	[cooltime]
+		50000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`attack speed`
+		`+`	30
+[/then]
+
+[if]
+	[cooltime]
+		50000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`cast speed`
+		`+`	30
+[/then]
+
+[if]
+	[cooltime]
+		50000
+	[set my state]
+		1
+	[my state]
+		`dash`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`move speed`
+		`+`	30
+[/then]
+
+[room list move speed rate]
+	0.15
+
+[icon mark]
+	`Item/IconMark.img`	64

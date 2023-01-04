@@ -1,0 +1,27 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Move.ani`
+	[SPEECH]
+		`你看到偷懒的士兵了吗？`	0	3
+		`那家伙到底躲哪儿去了？`	0	3
+		`他的活还没干完呢……`	0	3
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[burn]
+		100	60	50000	0	800	1	700
+[/BEHAVIOR]

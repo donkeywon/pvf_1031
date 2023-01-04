@@ -1,0 +1,69 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/BShoot10.ani`
+	[SUB ANI]
+		`../Animation/BShoot1_Fire3_1.ani`	0	-3
+		`../Animation/BShoot1_Fire2_1.ani`	0	-2
+		`../Animation/BShoot1_Fire1_1.ani`	0	-1
+	[/SUB ANI]
+	[SPEECH]
+		`吼吼吼~攻击！`	0	50
+		`准备进攻！`	0	50
+	[/SPEECH]
+	[SOUND]
+		`R_BELAY_SKILL_02`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[MOVE PATTERN OFF]
+	[MOVE PATTERN]
+		[TYPE]
+			3
+		[VELOCITY]
+			0
+		[STAY TIME]
+			5200
+		[AREA]
+			400	220	150	900	220	300
+		[MIN MOVE DISTANCE]
+			150
+	[/MOVE PATTERN]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10566
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	60
+		[USE OBJECT ZPOS]
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		2
+	[NOW]
+[/BEHAVIOR]

@@ -1,0 +1,163 @@
+#PVF_File
+
+[name]
+	`天翎逐月长袍`
+
+[name2]
+	`Araclotho's Silk shirts`
+
+[flavor text]
+	`穿上轻便的衣服， 连攻击也变得灵活了。  --吉格在修行中`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[magical attack]
+	32
+
+[magical defense]
+	32
+
+[price]
+	55800
+
+[repair price]
+	49215
+
+[value]
+	44640
+
+[equipment physical defense]
+	840	768
+
+[skill levelup]
+	`[swordman]`	18	1
+	`[swordman]`	41	1
+	`[fighter]`	15	1
+	`[fighter]`	12	1
+	`[at fighter]`	15	1
+	`[at fighter]`	12	1
+	`[gunner]`	29	1
+	`[gunner]`	50	1
+	`[at gunner]`	29	1
+	`[at gunner]`	50	1
+	`[mage]`	27	1
+	`[mage]`	26	1
+	`[priest]`	39	1
+	`[priest]`	70	1
+[/skill levelup]
+
+[icon]
+	`Item/common/coat.img`	100
+
+[field image]
+	`Item/field_equip.img`	0
+
+[equipment type]
+	`[coat]`	19
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	1400
+
+[item group name]
+	`cl coat`
+
+[cool time]
+	10000
+
+[set name]
+	`天翎逐月战袍  套装`
+
+[set item]
+	10146	12143	14128	16119	18126
+[/set item]
+
+[set ability]
+	[physical attack]
+		15
+	[physical defense]
+		15
+	[magical attack]
+		15
+	[magical defense]
+		15
+	[MP regen speed]
+		8
+	[cast speed]
+		20
+	[jump power]
+		20
+	[if]
+		[cooltime]
+			1000
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			7000
+		[reduce duration to human armor at pvp module]
+			75
+		[probability]
+			3
+		[reduce probability to human armor at pvp module]
+			73
+		[active status]
+			`hold`	45
+	[/then]
+	[if]
+		[cooltime]
+			1000
+		[my state]
+			`attack`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			2
+		[passive object]
+			30016	70	0	60	40	0	`Straight.ptl`
+		[/passive object]
+	[/then]
+	[fullset basic explain]
+		`被攻击时， 有3%%的几率使敌人进入束缚状态。
+普通攻击时， 有2%%的几率向敌人发射蛛丝。`
+	[fullset detail explain]
+		`被攻击时， 有3%%的几率使敌人进入束缚状态7秒。 (若敌人高于Lv45， 则减少进入异常状态的几率和效果； 反之， 则会增加几率和效果)
+普通攻击时， 有2%%的几率向敌人发射蛛丝。`
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

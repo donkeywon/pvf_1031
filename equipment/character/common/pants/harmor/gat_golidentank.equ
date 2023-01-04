@@ -1,0 +1,104 @@
+#PVF_File
+
+[name]
+	`树魔的野熊胸甲`
+
+[name2]
+	`Goliden's Heavy Tank LowerGuard`
+
+[basic explain]
+	`HP降到20%%以下时伤害 -50%%`
+
+[flavor text]
+	`感应到危机时， 会让自己变得更强的神奇护甲。`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	29
+
+[physical defense]
+	27
+
+[magical attack]
+	21
+
+[price]
+	74400
+
+[repair price]
+	65620
+
+[value]
+	59520
+
+[equipment physical defense]
+	2800	2560
+
+[icon]
+	`Item/common/pants.img`	118
+
+[field image]
+	`Item/field_equip.img`	11
+
+[equipment type]
+	`[pants]`	21
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	34
+
+[weight]
+	2900
+
+[item group name]
+	`ha pants`
+
+[cool time]
+	10000
+
+[if]
+	[hit]
+		1
+	[stat change]
+		`hp`
+		`<`
+		`%`	20
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	50
+[/then]
+
+[set item master]
+	11314
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,100 @@
+#PVF_File
+
+[name]
+	`阿拉德领航员`
+
+[name2]
+	`找不到代码name2_600330026`
+
+[explain]
+	`被击时以3%%的机率20秒内体力增加45，恢复全体HP的10%%。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/title/title_tw.img`	19
+
+[custom animation]
+	`titleanimation/tw_130926_invite_old.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	20
+
+[physical defense]
+	20
+
+[magical attack]
+	20
+
+[magical defense]
+	20
+
+[HP MAX]
+	100
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[stuck]
+	-2
+
+[stuck resistance]
+	20
+
+[inventory limit]
+	10000
+
+[if]
+	[cooltime]
+		20000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		3
+	[stat]
+		`physical defense`
+		`+`	45
+	[restore]
+		`HP`
+		`%`	10	20000
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

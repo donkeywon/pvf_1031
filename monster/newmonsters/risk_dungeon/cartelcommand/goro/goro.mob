@@ -1,0 +1,211 @@
+#PVF_File
+
+[name]
+	`机械顽童咕噜`
+
+[face image]
+	`Monster/MonsterFace.img`	621
+
+[floating height]
+	80
+
+[category]
+	`[human]`
+	`[close-carefully]`
+[/category]
+
+[ambient sound]
+	``
+
+[attack sound]
+	``
+
+[appear sound]
+	``
+
+[damage sound]
+	``
+
+[die sound]
+	`GORO_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	121
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	160
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	133
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	160
+	`[HP MAX]`	`*`	1960
+[/ability category]
+
+[level]
+	100	100
+
+[fire resistance]
+	40	40
+
+[light resistance]
+	20	20
+
+[slow resistance]
+	30	30
+
+[freeze resistance]
+	30	30
+
+[poison resistance]
+	10	10
+
+[stun resistance]
+	10	10
+
+[curse resistance]
+	30	30
+
+[blind resistance]
+	50	50
+
+[lightning resistance]
+	10	10
+
+[stone resistance]
+	30	30
+
+[sleep resistance]
+	30	30
+
+[bleeding resistance]
+	10	10
+
+[piercing resistance]
+	30	30
+
+[confuse resistance]
+	30	30
+
+[hold resistance]
+	30	30
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1200	1200
+
+[weight]
+	200000	200000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[waiting action]
+	`Action/stay.act`
+
+[move action]
+	`Action/move.act`
+
+[overturn action]
+	`Action/overturn.act`
+
+[attack action]
+	`Action/attack.act`
+	`Action/bomb.act`
+	`Action/shoot.act`
+	`Action/throw.act`
+	`Action/call.act`
+	`Action/throw1.act`
+	`Action/teleport.act`
+	`Action/teleport_back.act`
+	`Action/shoot1.act`
+	`Action/attack1.act`
+	`Action/teleport.act`
+	`Action/teleport_back.act`
+	`Action/bomb1.act`
+	`Action/call0.act`
+	`Action/call1.act`
+	`Action/call2.act`
+	`Action/bomb_select.act`
+[/attack action]
+
+[last action]
+	`Action/die.act`
+
+[attack info]
+	`AttackInfo/attack.atk`
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	`AttackInfo/attack.atk`
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+[/attack info]
+
+[cooltime]
+	3000	10000	6000	5000	20000	7000	4000	5000	8000	3000	10000	10000	10000	17000	17000	17000	20000
+[/cooltime]
+
+[think term]
+	200
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	150
+
+[warlike]
+	0
+
+[vision]
+	1000
+
+[set damage check]
+	3000

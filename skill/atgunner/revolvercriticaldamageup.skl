@@ -1,0 +1,136 @@
+#PVF_File
+
+[name]
+	`死亡左轮`
+
+[name2]
+	`Death by Revolver`
+
+[explain]
+	`使用左轮枪系列武器攻击敌人时， 可以增加物理暴击的伤害值， 而且效果持续一定时间。`
+
+[basic explain]
+	`使用左轮枪系列武器攻击敌人时， 可以增加物理暴击的伤害值， 而且效果持续一定时间。`
+
+[purchase cost]
+	30
+[/purchase cost]
+
+[required level]
+	30
+
+[required level range]
+	3
+
+[type]
+	`[active]`
+
+[skill class]
+	0
+
+[maximum level]
+	20
+
+[growtype maximum level]
+	0	10	0	0	0	0
+
+[skill fitness growtype]
+	1
+[/skill fitness growtype]
+
+[durability decrease rate]
+	70
+
+[icon]
+	`Character/Gunner/Effect/SkillIcon.img`	146
+	`Character/Gunner/Effect/SkillIcon.img`	147
+
+[command]
+	{6=`(RIGHT)`}
+	{8=`,`}
+	{6=`(RIGHT)`}
+	{8=`,`}
+	{6=`(BUFF)`}
+[/command]
+
+[command key explain]
+	`操作指令 : →→ + Space`
+
+[dungeon]
+	[consume MP]
+		160	1344
+	[casting time]
+		500	500
+	[cool time]
+		30000	30000
+	[level info]
+		2
+		120000	3
+		120000	7
+		120000	10
+		120000	13
+		120000	17
+		120000	20
+		120000	23
+		120000	26
+		120000	30
+		120000	33
+		120000	36
+		120000	40
+		120000	43
+		120000	46
+		120000	50
+		120000	53
+		120000	56
+		120000	59
+		120000	63
+		120000	66
+	[/level info]
+[/dungeon]
+
+[pvp]
+	[consume MP]
+		40	336
+	[cool time]
+		40000	40000
+	[level info]
+		2
+		20000	3
+		20000	7
+		20000	10
+		20000	13
+		20000	17
+		20000	20
+		20000	23
+		20000	26
+		20000	30
+		20000	33
+		20000	36
+		20000	40
+		20000	43
+		20000	46
+		20000	50
+		20000	53
+		20000	56
+		20000	59
+		20000	63
+		20000	66
+	[/level info]
+[/pvp]
+
+[death tower]
+[/death tower]
+
+[warroom]
+[/warroom]
+
+[level property]
+	1	99
+	`持续时间 : <float1>秒
+物理暴击伤害值增加比率 : <int>%%`
+	-1	0	0.001
+	-1	1	1.0
+[/level property]
+
+[skill preloading image]
+[/skill preloading image]

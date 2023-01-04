@@ -1,0 +1,141 @@
+#PVF_File
+
+[name]
+	`古老的猎魂战镰`
+
+[name2]
+	`Low-Cost Mortal Gazer`
+
+[basic explain]
+	`攻击时， 有2%%的几率附加300点伤害。
+无法进行强化、 增幅、 分解和赠送。`
+
+[grade]
+	42
+
+[rarity]
+	2
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	40
+
+[physical attack]
+	27
+
+[magical attack]
+	27
+
+[attack speed]
+	80
+
+[stuck]
+	1
+
+[price]
+	0
+
+[repair price]
+	47040
+
+[value]
+	0
+
+[equipment physical attack]
+	353	338
+
+[equipment magical attack]
+	372	356
+
+[separate attack]
+	183	122
+
+[physical critical hit]
+	3
+
+[magical critical hit]
+	3
+
+[skill levelup]
+	`[priest]`	47	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/scythe.img`	20
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[priest]`
+
+[variation]
+	1	4
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[add absolute damage]
+		`all`
+		`+`	300
+[/then]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

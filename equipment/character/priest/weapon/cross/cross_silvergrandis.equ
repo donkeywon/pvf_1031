@@ -1,0 +1,138 @@
+#PVF_File
+
+[name]
+	`歌兰蒂斯的圣银十字架`
+
+[name2]
+	`Silver Cross of Grandis`
+
+[basic explain]
+	`攻击不死族敌人时， 附加30%%的伤害。`
+
+[grade]
+	49
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	45
+
+[physical defense]
+	44
+
+[magical attack]
+	34
+
+[magical defense]
+	44
+
+[cast speed]
+	40
+
+[price]
+	78400
+
+[repair price]
+	65856
+
+[value]
+	62720
+
+[equipment physical attack]
+	452	430
+
+[equipment magical attack]
+	429	399
+
+[equipment physical defense]
+	490	480
+
+[equipment magical defense]
+	490	480
+
+[separate attack]
+	269	180
+
+[skill levelup]
+	`[priest]`	28	1
+	`[priest]`	74	1
+	`[priest]`	23	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/cross.img`	28
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	2	11
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[target type]
+		`undead`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	30
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

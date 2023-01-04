@@ -1,0 +1,147 @@
+#PVF_File
+
+[name]
+	`哥布林队长`
+
+[face image]
+	`Monster/MonsterFace.img`	2
+
+[die effect]
+	0	3	0
+
+[ability category]
+	`[HP MAX]`	`*`	9000
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[category]
+	`[human]`
+	`[goblin]`
+	`[melee combat]`
+	`[close-carefully]`
+	`[oneside move]`
+[/category]
+
+[overhead gauge type]
+	1
+
+[fix direction]
+	`[left]`
+
+[initial target]
+	[MONSTER]
+		64597
+	[initial target Permanent]
+		0
+[/initial target]
+
+[level]
+	60	60
+
+[move speed]
+	950	950
+
+[attack speed]
+	4000	4000
+
+[hit recovery]
+	600	600
+
+[weight]
+	95000	95000
+
+[sight]
+	1000
+
+[warlike]
+	1500
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[lie frame]
+	1	2	3	3	4
+
+[think term]
+	100
+
+[destination change term]
+	300
+
+[keep distance with target]
+	50
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[proc action]
+	`action/Proc.act`
+
+[attack action]
+	`Action/Attack.act`
+[/attack action]
+
+[attack info]
+	`attackinfo/Attack.atk`
+[/attack info]
+
+[cooltime]
+	1000
+[/cooltime]
+
+[ai pattern]
+	[normal]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/normal]
+	[expert]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/expert]
+	[master]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/master]
+	[king]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/king]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[base table]
+	`NewMonsters/AdvanceAltar/Enemy/GoblinTaskmaster/table/AdvanceAltarMonsterBaseParameter.tbl`

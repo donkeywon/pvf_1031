@@ -1,0 +1,181 @@
+#PVF_File
+
+[name]
+	`精良的真理凝视者`
+
+[name2]
+	`Gaze of Truth Penetration`
+
+[basic explain]
+	`施放技能时， 有3%%的几率使特定的敌人进入减速状态， 并增加自身的智力和施放速度。
+
+无法进行分解、 封装和合成。`
+
+[detail explain]
+	`施放技能时， 有3%%的几率使300px范围内HP最多的敌人进入减速状态12秒， 减速状态下的敌人， 减少15%%的移动速度和攻击速度； 并且还会使自身增加15点智力和10%%的施放速度， 效果持续12秒。 (若敌人高于Lv62， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+
+无法进行分解、 封装和合成。`
+
+[grade]
+	65
+
+[rarity]
+	5
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	62
+
+[magical attack]
+	46
+
+[attack speed]
+	-100
+
+[anti evil]
+	8
+
+[price]
+	0
+
+[repair price]
+	74088
+
+[value]
+	0
+
+[equipment physical attack]
+	543	521
+
+[equipment magical attack]
+	686	658
+
+[separate attack]
+	324	219
+
+[icon]
+	`Item/weapon/mage/staff.img`	52
+
+[field image]
+	`Item/field_weapon.img`	9
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[mage]`
+
+[variation]
+	8	0
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	8	0
+
+[layer variation]
+	2150
+	`at_staffa`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_staffd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	8	0
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`STAFF_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2400
+
+[item group name]
+	`staff`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		12000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy hp max`	300
+	[duration]
+		12000
+	[probability]
+		3
+	[active status]
+		`slow`	62	15	15
+	[target]
+		`myself`	-1
+	[stat]
+		`magical attack`
+		`+`	15
+	[stat]
+		`cast speed`
+		`+`	100
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]

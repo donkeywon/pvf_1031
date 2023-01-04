@@ -1,0 +1,82 @@
+#PVF_File
+
+[name]
+	`王之守护 · 炎`
+
+[name2]
+	`King's Guard of Flame`
+
+[explain]
+	`使用武器攻击时， 有2%%的几率出现火焰爆炸， 并且可以造成150点伤害。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	17
+
+[custom animation]
+	`TitleAnimation/ksguard_flame.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	100
+
+[MP MAX]
+	100
+
+[fire resistance]
+	20
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[passive object]
+		48054	0	0	70	50	0	``
+	[/passive object]
+[/then]
+
+[physical critical hit]
+	2
+
+[move wav]
+	`NAME_TOUCH`
+
+[set item master]
+	11316
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[icon mark]
+	`Item/IconMark.img`	64

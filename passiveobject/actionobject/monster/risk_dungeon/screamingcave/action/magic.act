@@ -1,0 +1,163 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Magic.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			56738
+		[/IS INDEX]
+	[/CHECKUP]
+	[SAVE TARGET OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			100
+		[ZPOS]
+		[<=]
+			40
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`timex`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		2
+	[ON]
+	[TRIGGER]
+		3
+	[ON]
+	[SET COLOR]
+		255	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`timex`	
+		[+]
+			200
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11088
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[TELEPORT]
+		[POS]
+			0	0	10000
+		[USE MY BASEPOS]
+		[MOVE TARGET]
+	[/TELEPORT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`timex`	
+		[+]
+			600
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11088
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[TELEPORT]
+		[POS]
+			0	0	0
+		[USE MY BASEPOS]
+		[MOVE TARGET]
+	[/TELEPORT]
+	[SEND MESSAGE]
+	[ATTACK_COMMAND]
+		0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[stun]
+		50	60	10000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]

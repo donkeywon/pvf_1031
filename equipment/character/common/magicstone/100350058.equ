@@ -1,0 +1,144 @@
+#PVF_File
+
+[name]
+	`灵石玉髓 - 狂虎帝`
+
+[name2]
+	``
+
+[grade]
+	80
+
+[rarity]
+	4
+
+[usable job]
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[physical attack]
+	47
+
+[physical defense]
+	47
+
+[magical attack]
+	47
+
+[magical defense]
+	47
+
+[price]
+	96000
+
+[repair price]
+	76800
+
+[value]
+	76800
+
+[creation rate]
+	30
+
+[skill levelup]
+	`[at fighter]`	117	1
+	`[at fighter]`	120	1
+[/skill levelup]
+
+[icon]
+	`Item/new_equipment/11_magicstone/magicstone.img`	66
+
+[field image]
+	`Item/field_equip.img`	23
+
+[equipment type]
+	`[magic stone]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`magic stone`
+
+[cool time]
+	10000
+
+[basic explain]
+	`施放[念之战矛]时， 有50%%的几率发动提升Lv2或Lv4的该技能。
+施放[冲云念气场]时， 有50%%的几率发动提升Lv2或Lv4的该技能。`
+
+[routing priority]
+	`at fighter`	1
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	36
+
+[if]
+	[event use skill]
+		`at fighter`	117
+[/if]
+
+[multiple then]
+	[then]
+		[probability]
+			50
+		[target]
+			`myself`	-1
+		[skill levelup]
+			`at fighter`	117	2
+		[/skill levelup]
+		[then probability]
+			60.0
+	[/then]
+	[then]
+		[probability]
+			50
+		[target]
+			`myself`	-1
+		[skill levelup]
+			`at fighter`	117	4
+		[/skill levelup]
+		[then probability]
+			40.0
+	[/then]
+[/multiple then]
+
+[if]
+	[event use skill]
+		`at fighter`	120
+[/if]
+
+[multiple then]
+	[then]
+		[probability]
+			50
+		[target]
+			`myself`	-1
+		[skill levelup]
+			`at fighter`	120	2
+		[/skill levelup]
+		[then probability]
+			60.0
+	[/then]
+	[then]
+		[probability]
+			50
+		[target]
+			`myself`	-1
+		[skill levelup]
+			`at fighter`	120	4
+		[/skill levelup]
+		[then probability]
+			40.0
+	[/then]
+[/multiple then]

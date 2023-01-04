@@ -1,0 +1,154 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	1000
+[/dungeon]
+
+[type]
+	`[boss]`
+
+[greed]
+	`CC CC`
+
+[tile]
+	`Tile/ForestUnderOver.til`
+	`Tile/ForestOverUnder.til`
+	`Tile/ForestUnderOver.til`
+	`Tile/ForestOver.til`
+	`Tile/ForestOverUnder.til`
+	`Tile/ForestUnderOver.til`
+	`Tile/ForestOverUnder.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/far0.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/mid0.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`../CommonAnimation/DarkCurtain.ani`
+		[layer]
+			`[close]`
+		[order]
+			`[upper]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	14	230	1556	236	251	144	841	346
+
+[sound]
+	`M_SUNDERLAND_BOSS`
+	`AMB_FOREST_02`
+[/sound]
+
+[animation]
+	`Animation/smallTree0.ani`	`[close]`	1920	407	0
+	`Animation/Tree4.ani`	`[closeback]`	1750	163	0
+[/animation]
+
+[passive object]
+	291	908	159	0
+	291	1385	161	0
+	291	595	162	0
+	291	1075	163	0
+	291	1229	163	0
+	291	751	167	0
+	221	1073	189	0
+	221	589	193	0
+	221	1134	204	0
+	221	531	219	0
+	221	1192	224	0
+	221	473	234	0
+	221	1238	238	0
+	221	426	251	0
+	221	1278	254	0
+	221	1330	268	0
+	221	1385	282	0
+	221	326	290	0
+	221	1443	304	0
+	221	268	306	0
+	291	1233	344	0
+	291	1079	345	0
+	291	440	346	0
+	291	269	347	0
+	291	595	347	0
+	291	1392	347	0
+[/passive object]
+
+[monster]
+	210	1	0	619	227	0	1	1	`[fixed]`	`[normal]`
+	211	1	0	901	229	0	1	1	`[fixed]`	`[normal]`
+	211	1	0	1070	244	0	1	1	`[fixed]`	`[normal]`
+	212	1	0	987	246	0	2	1	`[fixed]`	`[boss]`
+	210	1	0	1142	247	0	1	1	`[fixed]`	`[normal]`
+	211	1	0	781	248	0	1	1	`[fixed]`	`[normal]`
+	210	1	0	538	264	0	1	1	`[fixed]`	`[normal]`
+	5002	1	0	616	266	0	1	1	`[fixed]`	`[normal]`
+	210	1	0	1221	271	0	1	1	`[fixed]`	`[normal]`
+	211	1	0	703	289	0	1	1	`[fixed]`	`[normal]`
+	211	1	0	917	311	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[special passive object]
+	221	377	269	0	1
+	`[trap]`	2611	1	2	3	-1	
+[/special passive object]
+
+[event monster position]
+	739	196	0
+	836	223	0
+	759	291	0
+	955	191	0
+[/event monster position]
+
+[NPC]
+	1000	`[left]`	0	0	0
+[/NPC]
+
+[map name]
+	`PVP 无名`

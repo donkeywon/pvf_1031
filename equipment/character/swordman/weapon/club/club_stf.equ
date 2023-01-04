@@ -1,0 +1,154 @@
+#PVF_File
+
+[name]
+	`坚硬的短木棒`
+
+[name2]
+	`Stiff Club`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入眩晕状态2秒； 但在决斗场中， 只能持续1秒。 (若敌人高于Lv7， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`听说了吗？ 艾尔文防线的林纳斯是个深藏不露的高手呢。  --赫顿玛尔小道消息`
+
+[grade]
+	7
+
+[rarity]
+	1
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[free]`
+
+[minimum level]
+	7
+
+[physical attack]
+	7
+
+[attack speed]
+	-30
+
+[stuck]
+	-1
+
+[price]
+	7000
+
+[repair price]
+	5600
+
+[value]
+	5040
+
+[equipment physical attack]
+	75	75
+
+[equipment magical attack]
+	65	65
+
+[separate attack]
+	48	28
+
+[icon]
+	`Item/weapon/swordman/club.img`	1
+
+[field image]
+	`Item/FieldImage.img`	8
+
+[equipment type]
+	`[weapon]`	20
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	0	8
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	0	8
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`STICK_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3400
+
+[item group name]
+	`club`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[reduce duration to human armor at pvp module]
+		50
+	[duration]
+		2000
+	[reduce probability to human armor at pvp module]
+		80
+	[probability]
+		2
+	[active status]
+		`stun`	7
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	63

@@ -1,0 +1,152 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	61
+[/dungeon]
+
+[type]
+	`[boss]`
+
+[greed]
+	`CC CC`
+
+[tile]
+	`Tile/GroznyWide.til`
+	`Tile/GroznyWide.til`
+	`Tile/GroznyGate.til`
+	`Tile/GroznyWide.til`
+[/tile]
+
+[extended tile]
+	`Tile/GroznyEx.til`
+	`Tile/GroznyEx.til`
+	`Tile/GroznyEx.til`
+	`Tile/GroznyEx.til`
+[/extended tile]
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/Far.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/Mid.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/topWeed.ani`
+		[layer]
+			`[close]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	10	374	961	290	551	183	393	471
+
+[sound]
+	`M_GROZNY_BOSS`
+	`AMB_WIND_01`
+[/sound]
+
+[animation]
+	`Animation/mlweb2.ani`	`[close]`	813	495	0
+	`Animation/Tree1.ani`	`[normal]`	315	637	0
+	`Animation/Tree1.ani`	`[normal]`	549	634	0
+	`Animation/Tree1.ani`	`[normal]`	438	633	0
+	`Animation/Tree1.ani`	`[normal]`	194	632	0
+	`Animation/Tree1.ani`	`[normal]`	74	629	0
+	`Animation/Tree1.ani`	`[normal]`	663	625	0
+	`Animation/Tree1.ani`	`[normal]`	763	606	0
+	`Animation/mlprey2.ani`	`[normal]`	542	437	0
+	`Animation/mlprey2.ani`	`[normal]`	101	360	0
+	`Animation/mlbone1.ani`	`[normal]`	596	359	0
+	`Animation/mlbone2.ani`	`[normal]`	287	272	0
+	`Animation/mlupweb3.ani`	`[normal]`	845	166	0
+	`Animation/mlupweb4.ani`	`[normal]`	272	163	0
+	`Animation/mlprey1.ani`	`[normal]`	674	160	0
+	`Animation/mlprey2.ani`	`[normal]`	99	157	0
+	`Animation/mlprey1.ani`	`[normal]`	767	143	0
+	`Animation/mlupweb1.ani`	`[normal]`	405	128	0
+	`Animation/mlupweb2.ani`	`[normal]`	550	-7	0
+	`Animation/Tile.ani`	`[bottom]`	559	360	0
+	`Animation/BigDust.ani`	`[bottom]`	471	388	0
+	`Animation/BigDustBig.ani`	`[bottom]`	116	271	0
+	`Animation/smgroundgrass2.ani`	`[bottom]`	259	382	0
+	`Animation/smgroundgrass1.ani`	`[bottom]`	125	251	0
+	`Animation/smgroundgrass2.ani`	`[bottom]`	83	340	0
+	`Animation/smgroundgrass1.ani`	`[bottom]`	621	444	0
+	`Animation/smgroundgrass2.ani`	`[bottom]`	554	307	0
+	`Animation/LowWall.ani`	`[closeback]`	224	-120	0
+	`Animation/LowWall.ani`	`[closeback]`	672	-120	0
+	`Animation/LowWall.ani`	`[closeback]`	0	-120	0
+[/animation]
+
+[passive object]
+	8049	808	220	0
+	8050	859	306	0
+	8050	876	385	0
+	8051	861	495	0
+[/passive object]
+
+[monster]
+	61325	1	0	409	222	0	1	1	`[fixed]`	`[normal]`
+	61304	1	0	177	255	0	1	1	`[fixed]`	`[normal]`
+	61325	1	0	643	268	0	1	1	`[fixed]`	`[normal]`
+	61325	1	0	481	270	0	1	1	`[fixed]`	`[normal]`
+	61325	1	0	582	312	0	1	1	`[fixed]`	`[normal]`
+	61304	1	0	200	319	0	1	1	`[fixed]`	`[normal]`
+	61325	1	0	424	329	0	1	1	`[fixed]`	`[normal]`
+	61304	1	0	220	354	0	1	1	`[fixed]`	`[normal]`
+	61325	1	0	545	397	0	1	1	`[fixed]`	`[normal]`
+	61304	1	0	272	398	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[NPC]
+	1000	`[left]`	0	0	0
+[/NPC]
+
+[ai character]
+	610	255	342	0	`[monster]`	`[boss]`	2	0
+[/ai character]
+
+[event monster position]
+	278	299	0
+	704	305	0
+	643	382	0
+	218	422	0
+[/event monster position]
+
+[map name]
+	`PVP 无名`

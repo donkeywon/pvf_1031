@@ -1,0 +1,171 @@
+#PVF_File
+
+[minimum info]
+	`迷你莎洛特`	6	1	1	1	70	0	0	0	0	0	0
+	`no creature`	0	0	0
+
+[additional character status]
+	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+[/additional character status]
+
+[character status rate]
+	400	1000	1	1	1	1	1	6	1	6	1	1	100	1.6	1.6	1	2	1	1	1	1	1	1	1	100	1000	10	1000	10	1000	10	1000	10	10	100	10	1	10	100	1000	1000
+[/character status rate]
+
+[attack damage rate]
+	0.04
+
+[add equipment status from level]
+	1
+
+[armor subtype]
+	4
+
+[custom skill level]
+[/custom skill level]
+
+[quick skill]
+	7	7
+	16	10
+	24	7
+	5	7
+	8	8
+	3	10
+[/quick skill]
+
+[skill]
+	2	10
+	57	11
+	41	23
+	19	1
+	10	1
+	26	5
+	15	1
+	29	10
+	30	10
+	17	1
+	66	1
+	44	1
+	65	1
+	14	1
+	1	1
+	9	1
+	23	1
+	181	2
+	182	2
+	184	1
+	179	8
+	170	1
+	60	1
+	174	60
+	61	1
+	169	1
+	190	1
+[/skill]
+
+[skill correction]
+	16	0.01	7	0.01	24	0.001	3	0.001	44	1.5	1	2.5	8	0.1	190	0.01	57	0.05
+[/skill correction]
+
+[quick item]
+[/quick item]
+
+[equipment]
+	37074	1	0
+	10951	3	0
+	14940	1	0
+	12945	0	0
+	18943	0	0
+	16934	1	0
+	20155	3	0
+	22148	1	0
+	24163	0	0
+	1760084	2	0
+[/equipment]
+
+[think term]
+	200
+
+[destination change term]
+	300
+
+[keep distance with target]
+	500
+
+[warlike]
+	20
+
+[vision]
+	1000
+
+[keep range distance with target]
+	280	0	60	200
+
+[limit passiveobject]
+[/limit passiveobject]
+
+[targeting bonus]
+	100	0	0	0	100	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	`[stand]`
+	`[dash]`	0	0
+	`[slow]`
+	`[confuse]`	0
+
+[ai pattern]
+	`Event.ai`
+	`DestinationSelect.ai`
+	`Action.ai`
+	`MoveMethod.ai`
+[/ai pattern]
+
+[key stream]
+	`reset`
+	`reset.key`
+	`atk7`
+	`attack7.key`
+	`atk16`
+	`attack16.key`
+	`atk24`
+	`attack24.key`
+	`atk44`
+	`attack44.key`
+	`atk5`
+	`attack5.key`
+	`atk8`
+	`attack8.key`
+	`atk3`
+	`attack3_1.key`
+	`exit`
+	`exit.key`
+	`atk169`
+	`attack169.key`
+	`combo`
+	`combo.key`
+	`quick`
+	`atk190.key`
+	`attack19`
+	`attack19.key`
+[/key stream]
+
+[key cooltime]
+	`reset`	100
+	`combo`	3000
+[/key cooltime]
+
+[proc action]
+	`action/proc.act`
+
+[speech on situation]
+	[on appear]
+		`小瞧对手是会吃大亏的！`	50
+	[on attack]
+		`快点！`	30	1
+	[on attack]
+		`再快点！`	30	2
+	[on attack]
+		`灵活些！`	30	10
+	[on attack]
+		`再灵活些！`	30	7
+	[on attack]
+		`来啊！！`	100	12
+[/speech on situation]

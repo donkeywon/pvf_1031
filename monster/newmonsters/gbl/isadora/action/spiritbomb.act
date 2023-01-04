@@ -1,0 +1,76 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Buster2.ani`
+	[SUB ANI]
+		`../Animation/CastEffect.ani`	0	1
+		`../Animation/CastEffectGlow.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`爆发吧！！精灵们！！`	1	50
+		`禁咒！精灵之爆！`	1	50
+	[/SPEECH]
+	[SOUND]
+		`ESADORA_SKILL_01`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			60115	60103
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30560
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	-40	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30560
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	40	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30561
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			40
+		[POS]
+			40	0	150
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30561
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			40
+		[POS]
+			-40	0	150
+	[/CREATE PASSIVEOBJECT]
+	[DESTROY]
+[/BEHAVIOR]

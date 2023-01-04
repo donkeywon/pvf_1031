@@ -1,0 +1,49 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack2.ani`
+	[SUB ANI]
+		`../Animation/ac1/Attack2_ac1.ani`	0	1
+		`../Animation/face/Attack2_face.ani`	0	2
+		`../Animation/hair/Attack2_hair.ani`	0	2
+		`../Animation/skin/Attack2_skin.ani`	0	3
+		`../Animation/pants/Attack2_pants.ani`	0	4
+		`../Animation/shoes/Attack2_shoes.ani`	0	8
+		`../Animation/hat/Attack2_hat.ani`	0	10
+		`../Animation/weapon/Attack2_wp.ani`	0	15
+	[/SUB ANI]
+	[SOUND PROBABILITY]
+		`R_GASSAS_ATK`	1	30
+		`CLAWB_01`	2	100
+	[/SOUND PROBABILITY]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		3
+	[END]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			50
+	[/SET SPEED]
+[/BEHAVIOR]

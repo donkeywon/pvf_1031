@@ -1,0 +1,54 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack1.ani`
+	[SUB ANI]
+		`../Animation/Dust2.ani`	0	0
+		`../Animation/Dust1.ani`	0	0
+		`../animation/IceWave_Effect1_2.ani`	0	10
+		`../animation/IceWave_Effect1_1.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`MOSSQUEEN_SKILL_04`	0
+		`MOSSQUEEN_POISON_READY`	1
+		`MOSSQUEEN_POISON`	4
+	[/SOUND]
+	[SPEECH]
+		`格杀勿论！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		1000	15000	1000	100	128	0	100
+	[ACTIVE STATUS]
+		`[poison]`	100	66	15000	2000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		5
+		`summon_global_bosstower.act`
+[/BEHAVIOR]

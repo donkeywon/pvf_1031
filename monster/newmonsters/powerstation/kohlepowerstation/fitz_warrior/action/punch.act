@@ -1,0 +1,50 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/punch.ani`
+	[SUB ANI]
+		`../Animation/effect/punch_e3.ani`	0	1
+		`../Animation/effect/punch_e.ani`	0	2
+		`../Animation/effect/punch_e2.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`?啊~！`	11	30
+	[/SPEECH]
+	[SOUND]
+		`R_FITZ_ARCHER_ATK`	11
+		`FITZ_WARRIOR_SWING`	11
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			750
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		14	14
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

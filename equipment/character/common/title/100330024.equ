@@ -1,0 +1,93 @@
+#PVF_File
+
+[name]
+	`逐梦勇士 (血)`
+
+[name2]
+	``
+
+[explain]
+	`前冲时， 有7%%的几率使自身增加7%%的移动速度和攻击速度， 效果持续30秒。`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[physical attack]
+	30
+
+[physical defense]
+	20
+
+[attack speed]
+	30
+
+[cast speed]
+	20
+
+[move speed]
+	30
+
+[HP MAX]
+	200
+
+[MP regen speed]
+	15
+
+[physical critical hit]
+	2
+
+[icon]
+	`Item/Title/title.img`	126
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/dreamfighter_blood.ani`
+[/custom animation]
+
+[if]
+	[cooltime]
+		50000
+	[set my state]
+		1
+	[my state]
+		`dash`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		4
+	[stat]
+		`move speed`
+		`+`	70
+	[stat]
+		`attack speed`
+		`+`	70
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

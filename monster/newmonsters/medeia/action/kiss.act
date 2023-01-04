@@ -1,0 +1,71 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/kiss.ani`
+	[SPEECH]
+		`这些可是我最美丽的收藏品哦~`	0	50
+		`呵呵呵……碎的话，它们都会死的……明白吗？？`	0	50
+	[/SPEECH]
+	[SOUND]
+		`S_MEDUSA_AMB`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			84
+		[LEVEL]
+			0
+		[POS]
+			50	30	0
+		[MAGIC CIRCLE]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			82
+		[LEVEL]
+			0
+		[POS]
+			50	-30	0
+		[MAGIC CIRCLE]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			83
+		[LEVEL]
+			0
+		[POS]
+			-50	30	0
+		[MAGIC CIRCLE]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			81
+		[LEVEL]
+			0
+		[POS]
+			-50	-30	0
+		[MAGIC CIRCLE]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

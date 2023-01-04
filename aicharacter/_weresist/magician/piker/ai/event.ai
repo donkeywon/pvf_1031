@@ -1,0 +1,32 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[attack success]
+			1
+		[true]
+	
+		[think]
+			[check use skill]
+				39
+			[true]
+			[return str]
+				`chaser`
+			[false]
+		
+			[think]
+				[check use skill]
+					4
+				[true]
+				[return str]
+					`dragon`
+				[false]
+				[return]
+					-1
+			[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+[/ai pattern]

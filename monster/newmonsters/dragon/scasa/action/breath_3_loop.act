@@ -1,0 +1,521 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/ShoulderB/ShoulderB_Breath_3_Loop.ani`
+	[SUB ANI]
+		`../Animation/Scasa_Breath_Fire_Effect.ani`	0	0
+		`../Animation/ArmB/ArmB_Breath_3_Loop.ani`	0	2
+		`../Animation/FingerB/FingerB_Breath_3_Loop.ani`	0	3
+		`../Animation/Neck4/Neck4_Breath_3_Loop.ani`	0	4
+		`../Animation/Neck3/Neck3_Breath_3_Loop.ani`	0	5
+		`../Animation/Neck2/Neck2_Breath_3_Loop.ani`	0	6
+		`../Animation/Neck1/Neck1_Breath_3_Loop.ani`	0	7
+		`../Animation/Jaw/Jaw_Breath_3_Loop.ani`	0	8
+		`../Animation/Head/Head_Breath_3_Loop.ani`	0	9
+		`../Animation/Shoulder/Shoulder_Breath_3_Loop.ani`	0	10
+		`../Animation/Arm/Arm_Breath_3_Loop.ani`	0	11
+		`../Animation/Finger/Finger_Breath_3_Loop.ani`	0	12
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DIRECT DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			5000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`breath`	
+		[+]
+			500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`count`	
+		[>]
+			0
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`count`	
+		[>]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`count`	
+		[>]
+			2
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`count`	
+		[>]
+			3
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`count`	
+		[>]
+			4
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`count`	
+		[>]
+			5
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		9
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`count`	
+		[>]
+			6
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		10
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`count`	
+		[>]
+			7
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		11
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[IF]
+		`count`	
+		[>]
+			8
+	[/IF]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			8148
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		12
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[DIM]
+		`breath`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[DIM]
+		`count`	
+		[=]
+			0
+	[/DIM]
+	[TRIGGER]
+		1
+	[ON]
+	[TRIGGER]
+		2
+	[ON]
+	[TRIGGER]
+		2
+	[RESET]
+	[TRIGGER]
+		3
+	[RESET]
+	[TRIGGER]
+		4
+	[RESET]
+	[TRIGGER]
+		5
+	[RESET]
+	[TRIGGER]
+		6
+	[RESET]
+	[TRIGGER]
+		7
+	[RESET]
+	[TRIGGER]
+		8
+	[RESET]
+	[TRIGGER]
+		9
+	[RESET]
+	[TRIGGER]
+		10
+	[RESET]
+	[TRIGGER]
+		11
+	[RESET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		2
+	[OFF]
+	[SET ACTION]
+	[ATTACK]
+		3
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/ScasaCrescent.ptl`	250	0	0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8148
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			300	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8148
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			400	50	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8148
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			400	-50	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8148
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			500	100	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8148
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			500	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8148
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			500	-100	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`count`	
+		[=]
+			`count`
+		[+]
+			1
+	[/DIM]
+	[DIM]
+		`breath`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		2
+	[RESET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8148
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			600	100	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8148
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			600	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8148
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			600	-100	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8148
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			700	100	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8148
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			700	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8148
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			700	-100	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8148
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			800	100	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8148
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			800	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8148
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			800	-100	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8148
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			900	100	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8148
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			900	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8148
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			900	-100	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8148
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			1000	100	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8148
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			1000	0	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8148
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			1000	-100	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SEND DO BEHAVIOR]
+	[ME]
+		0
+[/BEHAVIOR]

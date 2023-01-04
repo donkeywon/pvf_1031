@@ -1,0 +1,119 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AttackBreathHP/Dummy.ani`
+	[SUB ANI]
+		`../Animation/AttackBreathHP/BreathHP_HandSwing_newLayer.ani`	0	1
+		`../Animation/AttackBreathHP/Lighting_Effect_L_floor_shock01.ani`	0	2
+		`../Animation/AttackBreathHP/Lighting_Effect_L_floor_shock00.ani`	0	3
+		`../Animation/AttackBreathHP/BreathHP_19_arm.ani`	0	4
+		`../Animation/AttackBreathHP/BreathHP_18_body.ani`	0	5
+		`../Animation/AttackBreathHP/BreathHP_17_neck.ani`	0	6
+		`../Animation/AttackBreathHP/BreathHP_16_neck.ani`	0	7
+		`../Animation/AttackBreathHP/BreathHP_15_neck.ani`	0	8
+		`../Animation/AttackBreathHP/BreathHP_14_neck.ani`	0	9
+		`../Animation/AttackBreathHP/BreathHP_13_neck.ani`	0	10
+		`../Animation/AttackBreathHP/BreathHP_12_back.ani`	0	11
+		`../Animation/AttackBreathHP/BreathHP_11_back.ani`	0	12
+		`../Animation/AttackBreathHP/BreathHP_10_back.ani`	0	13
+		`../Animation/AttackBreathHP/BreathHP_09_back.ani`	0	14
+		`../Animation/AttackBreathHP/BreathHP_08_back.ani`	0	15
+		`../Animation/AttackBreathHP/BreathHP_07_back.ani`	0	16
+		`../Animation/AttackBreathHP/BreathHP_06_head.ani`	0	17
+		`../Animation/AttackBreathHP/BreathHP_05_head.ani`	0	18
+		`../Animation/AttackBreathHP/BreathHP_04_head.ani`	0	19
+		`../Animation/AttackBreathHP/BreathHP_03_headhorn.ani`	0	20
+		`../Animation/AttackBreathHP/BreathHP_02_shoulder.ani`	0	21
+		`../Animation/AttackBreathHP/BreathHP_01_arm.ani`	0	22
+		`../Animation/AttackBreathHP/BreathHP_00_hand.ani`	0	23
+		`../Animation/AttackBreathHP/BreathHP_FireShot.ani`	0	24
+		`../Animation/AttackBreathHP/BreathHP_Effect_BreathHP_Charge01.ani`	0	25
+		`../Animation/AttackBreathHP/BreathHP_Effect_BreathHP_Charge.ani`	0	26
+		`../Animation/AttackBreathHP/BreathHP_Effect_Breath.ani`	0	27
+		`../Animation/AttackBreathHP/BreathHP_BreathShot.ani`	0	28
+		`../Animation/AttackBreathHP/BreathHP_HandSwing_Effect_HandSwing_HitDust.ani`	0	29
+		`../Animation/AttackBreathHP/BreathHP_HandSwing_Explosion_Dodge.ani`	0	30
+		`../Animation/AttackBreathHP/BreathHP_HandSwing_Explosion_Dodge2.ani`	0	31
+		`../Animation/AttackBreathHP/BreathHP_HandSwing_Effect_HandSwing_HitFloor.ani`	0	32
+		`../Animation/AttackBreathHP/BreathHP_HandSwing_Effect_HandSwing_Swing.ani`	0	33
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		18	18
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ATTACKINFO]
+		`../AttackInfo/AttackBreathHP.atk`
+	[ATTACKRECT]
+	[RESET]
+	[TRIGGER]
+		2
+	[ON]
+	[TRIGGER]
+		3
+	[ON]
+	[DIM]
+		`DamageTimer`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`DamageTimer`	
+		[+]
+			250
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+	[DIM]
+		`DamageTimer`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESSES]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[burn]
+		100	10	500	3000	10	1	2500
+[/BEHAVIOR]

@@ -1,0 +1,64 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/kiss.ani`
+	[SPEECH]
+		`LOVE！LOVE！泡击！！！`	0	100
+	[/SPEECH]
+	[SOUND]
+		`NANOO_SKILL`	0
+		`NANOO_HEART`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8743
+		[PARTICLE FILENAME]
+			`../particle/down.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	0	80
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8743
+		[PARTICLE FILENAME]
+			`../particle/down2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	0	80
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8743
+		[PARTICLE FILENAME]
+			`../particle/up.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	0	80
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8743
+		[PARTICLE FILENAME]
+			`../particle/up2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	0	80
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

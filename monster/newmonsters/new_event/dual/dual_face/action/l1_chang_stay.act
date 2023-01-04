@@ -1,0 +1,122 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/P1_Change_Stay.ani`
+	[SUB ANI]
+		`../Animation/P1_Change_Stay_eff.ani`	0	1
+		`../Animation/Change_Stay_eff.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`MONAHUN_SHIELD_DMG`	9
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[ATTACK]
+		3	1
+	[ON]
+	[SET DIRECTION]
+	[RIGHT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`P1_stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`P1_move.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`P1_damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`P1_damage2.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		4
+		`P1_Chang_Stay.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		7
+		`P1_Stop.act`
+	[CHANGE ACTION FILE]
+	[LAST]
+		`P1_die.act`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET OUTLINE]
+		0	255	255	255	4
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			61656
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		4
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		20	20
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DAMAGE BOX]
+	[ON]
+	[SHAKING]
+		2	1000
+[/BEHAVIOR]

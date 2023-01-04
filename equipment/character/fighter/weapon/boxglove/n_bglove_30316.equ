@@ -1,0 +1,169 @@
+#PVF_File
+
+[name]
+	`虚祖国修行弑拳套`
+
+[name2]
+	`找不到代码name2_30316`
+
+[basic explain]
+	`攻击时， 有2%%的机率使敌人进入眩晕状态。
+无法进行分解。`
+
+[detail explain]
+	`攻击时， 有2%%的机率使敌人进入眩晕状态。 (高于Lv42的对象得到的机率和效果减少，低于Lv42的对象则会增加。决斗场内修正为1秒)
+无法进行分解。`
+
+[grade]
+	42
+
+[attach type]
+	`[trade]`
+
+[item group name]
+	`bglove`
+
+[rarity]
+	3
+
+[weight]
+	2100
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[minimum level]
+	38
+
+[required skill]
+	34
+
+[icon]
+	`Item/weapon/fighter/bglove.img`	67
+
+[icon mark]
+	`Item/IconMark.img`	52
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[sub type]
+	3
+
+[durability]
+	39
+
+[need material]
+	3323	20
+
+[value]
+	60480
+
+[cool time]
+	10000
+
+[physical attack]
+	30
+
+[equipment physical attack]
+	424	382
+
+[equipment magical attack]
+	384	346
+
+[separate attack]
+	235	157
+
+[attack speed]
+	100
+
+[stuck]
+	-2
+
+[skill levelup]
+	`[fighter]`	37	1
+	`[at fighter]`	37	1
+	`[fighter]`	19	2
+	`[at fighter]`	19	2
+[/skill levelup]
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	4
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	1	4
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[reduce duration to human armor at pvp module]
+		50
+	[duration]
+		2000
+	[reduce probability to human armor at pvp module]
+		80
+	[probability]
+		2
+	[active status]
+		`stun`	42
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]

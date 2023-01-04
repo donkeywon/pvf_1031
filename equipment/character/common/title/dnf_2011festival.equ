@@ -1,0 +1,107 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	`DnF Festival`
+
+[explain]
+	`攻击时以1%%的机率20秒内力量上升60。`
+
+[flavor text]
+	`<活动> 2011 DNF庆典纪念称号`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	287
+
+[custom animation]
+	`TitleAnimation/dnf_2011festival.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	150
+
+[MP MAX]
+	150
+
+[physical attack]
+	20
+
+[physical defense]
+	15
+
+[magical attack]
+	20
+
+[magical defense]
+	15
+
+[inventory limit]
+	10000
+
+[HP regen speed]
+	60
+
+[MP regen speed]
+	12
+
+[move speed]
+	30
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[if]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	60
+[/then]
+
+[skill levelup]
+	`[mage]`	2	2
+[/skill levelup]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,227 @@
+#PVF_File
+
+[name]
+	`邪恶之矛 - 卡莫索`
+
+[basic explain]
+	`攻击时， 有5%%的几率使敌人进入出血状态， 效果持续10秒。
+攻击出血状态的敌人时， 附加15%的伤害。
+无法进行分解。`
+
+[detail explain]
+	`攻击时， 有5%%的几率使敌人进入出血状态， 且每0.5秒造成500点伤害， 效果持续10秒。 (若敌人高于Lv74， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 在决斗场几率为1%%)
+攻击出血状态的敌人时， 附加15%%的伤害。 (在决斗场中+ 7%%)
+无法进行分解。`
+
+[grade]
+	74
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[physical attack]
+	74
+
+[attack speed]
+	-50
+
+[stuck]
+	-1
+
+[need material]
+	3338	670
+
+[repair price]
+	99456
+
+[value]
+	94720
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	845	785
+
+[equipment magical attack]
+	598	556
+
+[separate attack]
+	420	284
+
+[physical critical hit]
+	2
+
+[icon]
+	`item/new_equipment/01_weapon/mage/spear/spear.img`	105
+
+[field image]
+	`Item/field_weapon.img`	6
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	32	0
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	33	0
+
+[layer variation]
+	2150
+	`at_speara`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_speard`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	32	0
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`SPEAR_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3200
+
+[item group name]
+	`spear`
+
+[cool time]
+	10000
+
+[routing priority]
+	`mage`	3
+[/routing priority]
+
+[if]
+	[cooltime]
+		15000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[probability]
+		5
+	[reduce probability to human armor at pvp module]
+		90
+	[active status]
+		`bleeding`	74	10000
+[/then]
+
+[if]
+	[module]
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[dead tower]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[target active status]
+		`bleeding`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	15
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[target active status]
+		`bleeding`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	15
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[icon mark]
+	`Item/IconMark.img`	66

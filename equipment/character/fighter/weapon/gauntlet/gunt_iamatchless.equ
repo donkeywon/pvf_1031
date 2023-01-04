@@ -1,0 +1,180 @@
+#PVF_File
+
+[name]
+	`英雄之荣耀`
+
+[name2]
+	`Iron Arm of matchless valor`
+
+[basic explain]
+	`攻击速度 +2%%
+近身武器攻击力 +23%%`
+
+[detail explain]
+	`攻击速度 +2%%
+近距离武器攻击力 +23%% (在决斗场中 +12%%)`
+
+[grade]
+	65
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	66
+
+[attack speed]
+	-60
+
+[stuck]
+	-1
+
+[price]
+	117000
+
+[repair price]
+	98280
+
+[value]
+	93600
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	749	677
+
+[equipment magical attack]
+	562	508
+
+[separate attack]
+	378	255
+
+[icon]
+	`Item/weapon/fighter/gauntlet.img`	55
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	9	3
+
+[layer variation]
+	2790
+	`gauntletc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gauntletb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	9	3
+
+[layer variation]
+	2150
+	`at_gauntleta`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_gauntletc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_gauntletx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[if]
+	[attacker]
+		`character`	-1
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	23
+[/then]
+
+[pvp]
+	[if]
+		[attacker]
+			`character`	-1
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase damage]
+			`%`	12
+	[/then]
+[/pvp]
+
+[routing priority]
+	`fighter`	4
+	`fighter`	2
+	`at fighter`	4
+	`at fighter`	2
+[/routing priority]
+
+[possible kiri protect]
+
+[need material]
+	2749095	169
+
+[icon mark]
+	`Item/IconMark.img`	68

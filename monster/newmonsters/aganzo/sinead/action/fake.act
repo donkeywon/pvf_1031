@@ -1,0 +1,74 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Dummy.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[<=]
+			50
+		[%]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[>]
+			50
+		[%]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8041
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			55
+		[POS]
+		[RANDOM]
+			150	-150
+		[RANDOM]
+			100	-100	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8042
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			55
+		[POS]
+		[RANDOM]
+			150	-150
+		[RANDOM]
+			100	-100	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

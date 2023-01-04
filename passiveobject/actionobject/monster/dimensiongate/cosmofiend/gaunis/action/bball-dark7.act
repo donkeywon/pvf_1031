@@ -1,0 +1,450 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/_Aura_dumy.ani`
+	[SUB ANI]
+		`../Animation/HPFairyEF.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[CHECK TIME]
+		500
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9194
+		[/IS INDEX]
+		[IS IN POS]
+			715	175	0
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14118
+		[/IS INDEX]
+		[IS IN POS]
+			715	175	0
+		[TRIGGER CHECK]
+		[CUSTOM]
+			0	0
+		[ON]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[CHECK TIME]
+		500
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9194
+		[/IS INDEX]
+		[IS IN POS]
+			785	235	0
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14118
+		[/IS INDEX]
+		[IS IN POS]
+			785	235	0
+		[TRIGGER CHECK]
+		[CUSTOM]
+			0	0
+		[ON]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[CHECK TIME]
+		500
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9194
+		[/IS INDEX]
+		[IS IN POS]
+			855	295	0
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14118
+		[/IS INDEX]
+		[IS IN POS]
+			855	295	0
+		[TRIGGER CHECK]
+		[CUSTOM]
+			0	0
+		[ON]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[CHECK TIME]
+		500
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9194
+		[/IS INDEX]
+		[IS IN POS]
+			925	355	0
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14118
+		[/IS INDEX]
+		[IS IN POS]
+			925	355	0
+		[TRIGGER CHECK]
+		[CUSTOM]
+			0	0
+		[ON]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[CHECK TIME]
+		500
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9194
+		[/IS INDEX]
+		[IS IN POS]
+			995	415	0
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14118
+		[/IS INDEX]
+		[IS IN POS]
+			995	415	0
+		[TRIGGER CHECK]
+		[CUSTOM]
+			0	0
+		[ON]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[CHECK TIME]
+		500
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9194
+		[/IS INDEX]
+		[IS IN POS]
+			1065	475	0
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14118
+		[/IS INDEX]
+		[IS IN POS]
+			1065	475	0
+		[TRIGGER CHECK]
+		[CUSTOM]
+			0	0
+		[ON]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9194
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			715	175	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		0
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9194
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			785	235	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9194
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			855	295	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		2
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9194
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			925	355	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		3
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9194
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			995	415	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		4
+	[OFF]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9194
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			1065	475	0
+		[USE MAP POS]
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+		5
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[CHECK TIME]
+		2000
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14118
+		[/IS INDEX]
+		[IS IN POS]
+			715	175	0
+		[TRIGGER CHECK]
+		[CUSTOM]
+			0	0
+		[OFF]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14118
+		[/IS INDEX]
+		[IS IN POS]
+			785	235	0
+		[TRIGGER CHECK]
+		[CUSTOM]
+			0	0
+		[OFF]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14118
+		[/IS INDEX]
+		[IS IN POS]
+			855	295	0
+		[TRIGGER CHECK]
+		[CUSTOM]
+			0	0
+		[OFF]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14118
+		[/IS INDEX]
+		[IS IN POS]
+			925	355	0
+		[TRIGGER CHECK]
+		[CUSTOM]
+			0	0
+		[OFF]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14118
+		[/IS INDEX]
+		[IS IN POS]
+			995	415	0
+		[TRIGGER CHECK]
+		[CUSTOM]
+			0	0
+		[OFF]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			14118
+		[/IS INDEX]
+		[IS IN POS]
+			1065	475	0
+		[TRIGGER CHECK]
+		[CUSTOM]
+			0	0
+		[OFF]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		8
+	[NOW]
+[/BEHAVIOR]

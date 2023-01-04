@@ -1,0 +1,243 @@
+#PVF_File
+
+[name]
+	`童趣灵兔扫把`
+
+[name2]
+	``
+
+[basic explain]
+	`[烈炎]、 [寒冰]、 [风暴]系列的能量值 +10%%
+
+施放[冰霜钻孔车]、 [电鳗碰撞机]、 [暴炎加热炉]、 [反重力装置]时， 有50%%的几率发动提升Lv4的该技能。
+施放[控制]时， 可增加8%%移动速度， 效果持续20秒。
+施放[守护]时， 可增加1200点的物理防御力， 效果持续20秒。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[magical attack]
+	55
+
+[attack speed]
+	60
+
+[cast speed]
+	30
+
+[move speed]
+	30
+
+[MP MAX]
+	200
+
+[price]
+	151200
+
+[repair price]
+	127008
+
+[value]
+	120960
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	804	754
+
+[equipment magical attack]
+	884	829
+
+[separate attack]
+	481	327
+
+[icon]
+	`item/new_equipment/01_weapon/mage/broom/broom.img`	77
+
+[field image]
+	`Item/field_weapon.img`	10
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[mage]`
+
+[variation]
+	27	0
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	27	0
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BROOM_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`broom`
+
+[cool time]
+	10000
+
+[required skill]
+	91
+
+[if]
+	[event use skill]
+		`mage`	103
+[/if]
+
+[then]
+	[probability]
+		50
+	[target]
+		`myself`	-1
+	[skill levelup]
+		`mage`	103	4
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`mage`	104
+[/if]
+
+[then]
+	[probability]
+		50
+	[target]
+		`myself`	-1
+	[skill levelup]
+		`mage`	104	4
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`mage`	105
+[/if]
+
+[then]
+	[probability]
+		50
+	[target]
+		`myself`	-1
+	[skill levelup]
+		`mage`	105	4
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`mage`	106
+[/if]
+
+[then]
+	[probability]
+		50
+	[target]
+		`myself`	-1
+	[skill levelup]
+		`mage`	106	4
+	[/skill levelup]
+[/then]
+
+[if]
+	[use skill]
+		`creator mage`	252
+	[/use skill]
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[stat]
+		`move speed`
+		`+`	80
+[/then]
+
+[if]
+	[use skill]
+		`creator mage`	253
+	[/use skill]
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[stat]
+		`equipment physical defense`
+		`+`	1200
+[/then]
+
+[skill data up]
+	`[creator mage]`	250	`[all]`	`[level]`	0	`%`	10
+	`[creator mage]`	251	`[all]`	`[level]`	0	`%`	10
+	`[creator mage]`	254	`[all]`	`[level]`	0	`%`	10
+[/skill data up]
+
+[icon mark]
+	`Item/IconMark.img`	66

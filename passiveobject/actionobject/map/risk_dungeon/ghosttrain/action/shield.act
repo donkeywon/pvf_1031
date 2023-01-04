@@ -1,0 +1,46 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/shield13.ani`
+	[SUB ANI]
+		`../animation/shield23.ani`	0	0
+		`../animation/shieldcircle1.ani`	0	0
+		`../animation/shieldcircle1.ani`	0	0
+		`../animation/shieldcircle2.ani`	0	0
+		`../animation/shieldcircle2.ani`	0	0
+		`../animation/shieldsoul1.ani`	0	0
+		`../animation/shieldsoul1.ani`	0	0
+		`../animation/shieldsoul2.ani`	0	0
+		`../animation/shieldsoul2.ani`	0	0
+		`../animation/shieldsoul3.ani`	0	0
+		`../animation/shieldsoul3.ani`	0	0
+		`../animation/shieldsoul4.ani`	0	0
+		`../animation/shieldsoul4.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`R_SAS_SOULVOICE`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			56767
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

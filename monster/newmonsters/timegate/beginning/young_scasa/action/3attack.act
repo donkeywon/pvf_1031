@@ -1,0 +1,81 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/3attack.ani`
+	[SUB ANI]
+		`../animation/body_effect/3attack.ani`	0	1
+	[/SUB ANI]
+	[SOUND]
+		`YOUNGSKASA_ATK_01`	2
+		`YOUNGSKASA_SMASH`	2
+		`YOUNGSKASA_ATK_01`	5
+		`YOUNGSKASA_SMASH`	5
+		`YOUNGSKASA_ATK_01`	8
+		`YOUNGSKASA_SMASH`	8
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[PLAYER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[WHICH]
+	[PLAYER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[WHICH]
+	[PLAYER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8700
+		[PARTICLE FILENAME]
+			`../particle/SlaveofSirocoManShockWave.ptl`
+		[LEVEL]
+			0
+		[POS]
+			100	20	0
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			13043
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			100	20	0
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		3	1000
+[/BEHAVIOR]

@@ -1,0 +1,159 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`伊西利恩的七个小矮人`
+
+[face image]
+	`Monster/MonsterFace.img`	1
+
+[die effect]
+	0	5	0
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	900
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	290
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	290
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	240
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	240
+[/ability category]
+
+[category]
+	`[human]`
+	`[goblin]`
+[/category]
+
+[targeting bonus]
+	10	100	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	`[stand]`
+	`[dash]`	0	0	0
+
+[HP regen speed]
+	0	0
+
+[MP regen speed]
+	0	0
+
+[level]
+	60	60
+
+[move speed]
+	850	850
+
+[attack speed]
+	500	500
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	800	800
+
+[weight]
+	40000	40000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[lie frame]
+	2	3	2	3	4
+
+[attack sound]
+	`R_GFRESH_ATK`
+
+[damage sound]
+	`R_GFRESH_DMG`
+
+[die sound]
+	`GFRESH_DIE`
+
+[ambient sound]
+	`R_GFRESH_AMB`
+
+[common champion drop item]
+[/common champion drop item]
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[attack action]
+	`Action/Attack.act`
+	`Action/ShootTree.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack.atk`
+	``
+[/attack info]
+
+[cooltime]
+	4000	4000
+[/cooltime]
+
+[vision]
+	300
+
+[think term]
+	500
+
+[destination change term]
+	300
+
+[keep distance with target]
+	300
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

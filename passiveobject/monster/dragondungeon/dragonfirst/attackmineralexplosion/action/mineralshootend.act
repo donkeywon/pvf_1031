@@ -1,0 +1,47 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/End/AttackMineralShoot_Effect_M_Dodge.ani`
+	[SUB ANI]
+		`../Animation/End/AttackMineralShoot_Effect_M_Stone1.ani`	0	-2
+		`../Animation/End/AttackMineralShoot_Effect_M_Normal.ani`	0	-1
+		`../Animation/End/AttackMineralShoot_Effect_M_Dodge2.ani`	0	1
+		`../Animation/End/AttackMineralShoot_Effect_M_end_Normal.ani`	5	2
+		`../Animation/End/AttackMineralShoot_Effect_M_Stone2.ani`	0	3
+		`../Animation/End/AttackMineralShoot_Effect_M_Floor_energy00.ani`	0	4
+		`../Animation/End/AttackMineralShoot_Effect_M_Lightning.ani`	6	5
+		`../Animation/End/AttackMineralShoot_Effect_EXP.ani`	1	6
+		`../Animation/End/AttackMineralShoot_Effect_HandSwing_HitFloor.ani`	1	7
+		`../Animation/End/AttackMineralShoot_Effect_M_EX_Normal.ani`	3	8
+		`../Animation/End/AttackMineralShoot_Effect_M_EX_Dodge3.ani`	3	9
+		`../Animation/End/AttackMineralShoot_Effect_M_EX_Dodge.ani`	1	10
+		`../Animation/End/AttackMineralShoot_Effect_M_EX_Dodge2.ani`	1	11
+		`../Animation/End/AttackMineralShoot_Effect_HandSwing_HitDust2.ani`	1	12
+		`../Animation/End/AttackMineralShoot_Effect_HandSwing_HitDust.ani`	1	13
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack.ani`
+	[SUB ANI]
+		`../Animation/wp/Attack_wp.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`HUMFRI_IRONHAMMER`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+			499
+		[RANDOM]
+			200	223	0
+		[USE MAP POS]
+	[/TELEPORT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+			384
+		[RANDOM]
+			200	224	0
+		[USE MAP POS]
+	[/TELEPORT]
+[/BEHAVIOR]

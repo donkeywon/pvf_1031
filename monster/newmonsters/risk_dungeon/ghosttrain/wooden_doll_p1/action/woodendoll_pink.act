@@ -1,0 +1,46 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/WoodenDoll_Stay.ani`
+	[SUB ANI]
+		`../Animation/ball/pink_ball_stay.ani`	0	0
+		`../Animation/ball_eff/pink_ball_effect.ani`	0	0
+		`../Animation/weapon/weapon_Stay.ani`	0	0
+		`../Animation/ComeinGhost.ani`	0	0
+		`../Animation/ball_eff/pink_ball_effect.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`WOODDOLL_GHOST`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`Move.act`
+	[CHANGE ACTION FILE]
+	[STAY]
+		`Stay.act`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[REMOVE CATEGORY]
+	[FIXTURE]
+[/BEHAVIOR]

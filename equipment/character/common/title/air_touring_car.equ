@@ -1,0 +1,101 @@
+#PVF_File
+
+[name]
+	`我是传奇`
+
+[name2]
+	`Air Touring Car`
+
+[explain]
+	`连击达到10次时， 使自身增加3%%的攻击速度和5%%的施放速度， 效果持续20秒。
+连击达到100次时， 使自身增加40点力量、 智力、 体力和精神， 效果持续40秒。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	291
+
+[custom animation]
+	`TitleAnimation/air_touring_car.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[cooltime]
+		20000
+	[after attack]
+		1
+	[combo]
+		10
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[stat]
+		`attack speed`
+		`+`	30
+	[stat]
+		`cast speed`
+		`+`	50
+[/then]
+
+[if]
+	[cooltime]
+		40000
+	[after attack]
+		1
+	[combo]
+		100
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		40000
+	[stat]
+		`physical attack`
+		`+`	40
+	[stat]
+		`magical attack`
+		`+`	40
+	[stat]
+		`physical defense`
+		`+`	40
+	[stat]
+		`magical defense`
+		`+`	40
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

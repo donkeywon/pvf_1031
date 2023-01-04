@@ -1,0 +1,174 @@
+#PVF_File
+
+[name]
+	`冥王之预言胸甲`
+
+[name2]
+	``
+
+[grade]
+	75
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[physical attack]
+	32
+
+[magical attack]
+	32
+
+[magical defense]
+	35
+
+[stuck]
+	-3
+
+[price]
+	75000
+
+[repair price]
+	63000
+
+[value]
+	60000
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	1992	1848
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[piercing resistance]
+	15
+
+[icon]
+	`item/new_equipment/03_leather/coat/leather_coat.img`	8
+
+[field image]
+	`Item/FieldImage.img`	0
+
+[equipment type]
+	`[coat]`	20
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	33
+
+[weight]
+	1900
+
+[item group name]
+	`lt coat`
+
+[cool time]
+	10000
+
+[set name]
+	`心脏收割者套装`
+
+[set item]
+	100060006	100110004	100160004	100210004	100260004
+[/set item]
+
+[set ability]
+	[fullset basic explain]
+		`对恶魔族敌人的伤害 +10%%
+
+攻击时， 附加5%%的伤害。
+攻击时， 有10%%几率使自身增加40点力量， 效果持续10秒。
+攻击时， 有10%%的几率出现红色闪电。
+被红色闪电击中的敌人， 会进入出血状态。`
+	[fullset detail explain]
+		`对恶魔族敌人的伤害 +10%%
+
+攻击时， 附加5%%的伤害。
+攻击时， 有10%%几率使自身增加40点力量， 效果持续10秒。
+攻击时， 有10%%的几率出现可以造成3000点伤害的红色闪电。
+被红色闪电击中的敌人， 会进入出血状态； 出血状态下的敌人， 每0.5秒受到2000点伤害， 效果持续1秒。 (若敌人高于Lv75， 则减少进入异常状态的几率； 反之， 则增加几率)`
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			5000
+	[/if]
+	[then]
+		[probability]
+			10
+		[duration]
+			10000
+		[target]
+			`myself`	-1
+		[stat]
+			`physical attack`
+			`+`	40
+	[/then]
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			3000
+	[/if]
+	[then]
+		[probability]
+			10
+		[reduce probability to human armor at pvp module]
+			80
+		[target]
+			`enemy`	-1
+		[passive object]
+			48509	0	0	0	0	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[attack success]
+			1
+		[target type]
+			`devil`
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[if]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	5
+	[/then]
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,114 @@
+#PVF_File
+
+[name]
+	`时间支配者斗篷`
+
+[name2]
+	`Time Ruler Shoulder`
+
+[basic explain]
+	`攻击时， 有10%%的几率使敌人进入减速状态。 (在决斗场中无效)`
+
+[detail explain]
+	`攻击时， 有10%%的几率使敌人进入减速状态6秒； 减速状态下的敌人， 将减少15%%的移动速度和攻击速度。 (若敌人高于Lv65， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 在决斗场中无效)`
+
+[flavor text]
+	`呵~我一定会征服你的！  --玄冥精灵希德`
+
+[grade]
+	65
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	24
+
+[physical defense]
+	62
+
+[magical attack]
+	18
+
+[need material]
+	3285	1500
+
+[repair price]
+	57330
+
+[value]
+	52000
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	2336	2144
+
+[icon]
+	`Item/common/shoulder.img`	237
+
+[field image]
+	`Item/field_equip.img`	12
+
+[equipment type]
+	`[shoulder]`	20
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	32
+
+[weight]
+	2300
+
+[item group name]
+	`ha shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		15000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		6000
+	[probability]
+		10
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`slow`	65	15	15
+[/then]
+
+[set item master]
+	11345
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

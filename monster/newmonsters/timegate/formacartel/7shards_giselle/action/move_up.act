@@ -1,0 +1,174 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/_Move.ani`
+	[SUB ANI]
+		`../Animation/DustWind2.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`MZIZEL_AMB`	1
+		`MZIZEL_AMB`	6
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Y AXIS]
+			190
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Y AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Y AXIS]
+			100
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		5
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		5
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../Particle/Dust.ptl`	0	-1	-15
+	[PARTICLE]
+		`../Particle/Dust.ptl`	10	-1	-15
+	[PARTICLE]
+		`../Particle/Dust.ptl`	20	-1	-15
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../Particle/Dust.ptl`	20	-1	-15
+	[PARTICLE]
+		`../Particle/Dust.ptl`	-40	-1	-15
+	[PARTICLE]
+		`../Particle/Dust.ptl`	60	-1	-15
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../Particle/Dust.ptl`	-20	-1	-15
+	[PARTICLE]
+		`../Particle/Dust.ptl`	-40	-1	-15
+	[PARTICLE]
+		`../Particle/Dust.ptl`	-60	-1	-15
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	100
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8692
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	-1	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/_Aura_dumy.ani`
+	[SUB ANI WITH XYZ]
+		`../Animation/_Dark_Aura.ani`	0	0	0	-100	0
+		`../Animation/_Dark_Aura_Cover.ani`	0	0	0	-100	0
+		`../Animation/_Dark_Aura_Cover.ani`	0	0	0	-100	0
+	[/SUB ANI WITH XYZ]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[SUMMON MASTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+			2110	470	0
+		[USE MAP POS]
+	[/TELEPORT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[NOW]
+[/BEHAVIOR]

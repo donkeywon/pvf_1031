@@ -1,0 +1,121 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Death/Death_02_Body.ani`
+	[SUB ANI]
+		`../Animation/Death/Death_03_BodyFire_02.ani`	0	-2
+		`../Animation/Death/Death_03_BodyFire_01.ani`	0	-1
+		`../Animation/Death/Death_02_body_dodge.ani`	0	1
+		`../Animation/Death/Death_00_headt.ani`	0	2
+		`../Animation/Death/Death_01_headt_dodge.ani`	0	3
+		`../Animation/Death/Death_00_Fire_dodge.ani`	0	4
+		`../Animation/Death/Death_00_headb.ani`	0	5
+		`../Animation/Death/Death_00_headb_dodge.ani`	0	6
+		`../Animation/Death/Death_Effect_boom_smoke.ani`	17	7
+		`../Animation/Death/Death_Effect_boom_death.ani`	12	8
+		`../Animation/Death/Death_Effect_boom_dodge2.ani`	12	9
+		`../Animation/Death/Death_Effect_boom_dodge.ani`	0	10
+		`../Animation/Death/Death_Effect_boomplus_dodge.ani`	12	11
+	[/SUB ANI]
+	[SOUND]
+		`BLAZE_GOLEM_DIE`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			54071
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			54072
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			54071
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			54072
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			54080
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

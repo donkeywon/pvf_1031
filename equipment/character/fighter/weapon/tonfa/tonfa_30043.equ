@@ -1,0 +1,234 @@
+#PVF_File
+
+[name]
+	`捷克的机械臂`
+
+[name2]
+	`找不到代码name2_30043`
+
+[basic explain]
+	`每20秒武器状态会发生变化， 效果持续5秒。 
+武器状态变化时攻击敌人， 附加20%%的光属性伤害。 (在决斗场中 +10%%)
+无法进行分解。`
+
+[grade]
+	64
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	43
+
+[magical attack]
+	65
+
+[attack speed]
+	50
+
+[stuck]
+	-2
+
+[stuck resistance]
+	30
+
+[need material]
+	3336	370
+
+[repair price]
+	86016
+
+[value]
+	81920
+
+[equipment physical attack]
+	574	526
+
+[equipment magical attack]
+	604	554
+
+[equipment physical defense]
+	640	90
+
+[separate attack]
+	360	242
+
+[icon]
+	`Item/weapon/fighter/tonfa.img`	72
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	20	0
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	21	0
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[time]
+		20000	1	10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[appendage]
+		36
+	[speech on]
+		0	2000
+		`能量蓄气完毕！`
+	[/speech on]
+[/then]
+
+[if]
+	[my appendage]
+		36
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`light`
+		`%`	20
+[/then]
+
+[pvp]
+	[if]
+		[time]
+			20000	1	1000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			5000
+		[appendage]
+			36
+	[/then]
+	[if]
+		[my appendage]
+			36
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`light`
+			`%`	10
+	[/then]
+[/pvp]
+
+[routing priority]
+	`fighter`	1
+	`at fighter`	1
+	`fighter`	2
+	`at fighter`	2
+	`fighter`	3
+	`at fighter`	3
+	`fighter`	4
+	`at fighter`	4
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

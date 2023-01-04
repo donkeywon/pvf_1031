@@ -1,0 +1,49 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Change_Stay.ani`
+	[SOUND]
+		`MIMIC_OPEN2`	0
+		`MIMIC_OPEN`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[ATTACK]
+		3	1
+	[ON]
+	[REMOVE VIRTUALHP]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		4
+		`Chang_Stay1.act`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET OUTLINE]
+		0	0	255	255	4
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+[/TRIGGER]

@@ -1,0 +1,158 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Suicide.ani`
+	[SPEECH]
+		`死去的同胞啊！以血之契约复活吧！`	1	100
+		`真正的战斗从现在开始！`	18	100
+	[/SPEECH]
+	[SUB ANI]
+		`../Animation/ActiveStatus_BurnDamage_Effect.ani`	0	0
+		`../Animation/Count.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`VANGELIS_DMG_01`	2
+		`MAP_COUNTDOWN`	7
+		`MAP_COUNTDOWN`	8
+		`MAP_COUNTDOWN`	9
+		`MAP_COUNTDOWN`	10
+		`MAP_COUNTDOWN`	11
+		`MAP_COUNTDOWN`	12
+		`MAP_COUNTDOWN`	13
+		`MAP_COUNTDOWN`	14
+		`MAP_COUNTDOWN`	15
+		`MAP_COUNTDOWN`	16
+		`AURA_DEFEND`	17
+		`VANGELIS_SKILL_01`	18
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[RIGHT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		2	2
+	[WHICH]
+	[PASSIVE]
+	[IS INDEX]
+	[/IS INDEX]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND DO BEHAVIOR]
+	[ME]
+		0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		17	17
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[IS INDEX]
+	[/IS INDEX]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		18	18
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[IS INDEX]
+	[/IS INDEX]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND MESSAGE]
+	[ATTACK_COMMAND]
+		3
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		18	18
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		950000	
+		[physical defense]
+		[%]
+			10.0
+		[magical defense]
+		[%]
+			10.0
+		[equipment physical attack]
+		[%]
+			10.0
+		[equipment physical defense]
+		[%]
+			10.0
+		[hp regen rate]
+		[%]
+			20.0
+		[magical critical hit rate]
+		[%]
+			20.0
+		[physical critical hit rate]
+		[%]
+			20.0
+		[hit recovery]
+		[%]
+			10.0
+		[equipment magical attack]
+		[%]
+			20.0
+		[equipment magical defense]
+		[%]
+			20.0
+		[all active status resistance]
+		[%]
+			20.0
+		[all element]
+		[%]
+			20.0
+	[/APPENDAGE]
+[/BEHAVIOR]

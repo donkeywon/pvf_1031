@@ -1,0 +1,137 @@
+#PVF_File
+
+[name]
+	`传承 : 守夜女神的玄钢胸甲`
+
+[name2]
+	`Legacy : Coat of Latri`
+
+[grade]
+	27
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	25
+
+[physical attack]
+	17
+
+[physical defense]
+	13
+
+[magical attack]
+	23
+
+[MP MAX]
+	100
+
+[price]
+	32400
+
+[repair price]
+	25920
+
+[value]
+	25920
+
+[equipment physical defense]
+	1800	1680
+
+[skill levelup]
+	`[swordman]`	21	1
+	`[priest]`	43	1
+	`[creator mage]`	131	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/IconArmor.img`	145
+
+[field image]
+	`Item/field_equip.img`	15
+
+[equipment type]
+	`[coat]`	21
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	60
+
+[weight]
+	5000
+
+[item group name]
+	`mt coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 守夜女神的玄钢板甲  套装`
+
+[set item]
+	11650	13649	19649
+[/set item]
+
+[item overpower part]
+
+[set ability]
+	[HP MAX]
+		120
+	[MP MAX]
+		120
+	[physical attack]
+		38
+	[magical attack]
+		38
+	[light resistance]
+		5
+	[inventory limit]
+		3000
+	[skill levelup]
+		`[swordman]`	52	1
+		`[priest]`	23	1
+		`[creator mage]`	138	1
+	[/skill levelup]
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福可以使自身增加5%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	50
+	[/then]
+[/set ability]
+
+[possible kiri protect]

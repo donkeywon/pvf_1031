@@ -1,0 +1,71 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Attack2.ani`
+	[SUB ANI]
+		`../animation/effect/ShoulderTackle.ani`	0	0
+		`../animation/effect/ShoulderTackleHit.ani`	0	0
+		`../animation/weapon/Attack2.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`岳家枪法 - 流星枪！`	2	30
+	[/SPEECH]
+	[SOUND]
+		`R_WEAPONM_ATK_06`	0
+		`R_WEAPONM_ATK_05`	2
+		`KEIGA_ATK`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1050	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			700
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+	[CHANGE ATTACKINFO]
+		`../AttackInfo/Attack2_1.atk`
+[/BEHAVIOR]

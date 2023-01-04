@@ -1,0 +1,50 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack_3_0.ani`
+	[SUB ANI]
+		`../Animation/Attack_3_2.ani`	0	1
+	[/SUB ANI]
+	[SPEECH]
+		`我必须等待时机！！`	0	15
+		`就是现在！！`	0	15
+	[/SPEECH]
+	[SOUND]
+		`TOMA_SAND`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1000	100
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			15034
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			20	-10	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

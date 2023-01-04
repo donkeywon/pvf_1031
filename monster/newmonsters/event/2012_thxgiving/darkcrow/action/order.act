@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/order.ani`
+	[SPEECH]
+		`麻雀啊，快来帮助我！`	1	100
+	[/SPEECH]
+	[SOUND]
+		`CSCARECROW_AMB`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[ALL OUR TEAM]
+	[CHECKUP]
+		[IS INDEX]
+			57101
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND MESSAGE]
+	[ETC_COMMAND]
+		1	1	3000
+[/BEHAVIOR]

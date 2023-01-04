@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Cast.ani`
+	[SOUND]
+		`DOLL_AMB_02`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			64594	64595	64596
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			300
+		[CHECKED NO]
+		[=>]
+			1
+	[/CHECKUP]
+	[GET TARGET]
+		1
+	[HP]
+	[LOW]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		60
+	[%]
+[/BEHAVIOR]

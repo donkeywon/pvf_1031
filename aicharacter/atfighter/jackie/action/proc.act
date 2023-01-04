@@ -1,0 +1,29 @@
+#PVF_File
+
+[TRIGGER]
+	[LIMIT]
+		3
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[<=]
+			50
+		[%]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`找不到代码Jackie_speech01`
+	[RESTORE]
+	[HP]
+		100
+	[%]
+[/BEHAVIOR]

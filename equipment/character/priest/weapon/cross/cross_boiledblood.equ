@@ -1,0 +1,174 @@
+#PVF_File
+
+[name]
+	`燃烧之血十字架`
+
+[name2]
+	`Cross of Boiled Blood`
+
+[basic explain]
+	`施放[武器祝福]、 [荣誉祝福]、 [天使祝福]时， 有50%%的几率使自身减少1%%的HP。
+[武器祝福]武器攻击力 +20、 武器命中率 +1%%
+[荣誉祝福]力量 +20、 智力 +20
+[天使祝福]魔法攻击力 +10、 智力 +20`
+
+[grade]
+	68
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	64
+
+[physical defense]
+	57
+
+[magical attack]
+	45
+
+[magical defense]
+	57
+
+[cast speed]
+	20
+
+[price]
+	108800
+
+[repair price]
+	91392
+
+[value]
+	87040
+
+[equipment physical attack]
+	644	594
+
+[equipment magical attack]
+	612	564
+
+[equipment physical defense]
+	680	670
+
+[equipment magical defense]
+	680	670
+
+[separate attack]
+	384	260
+
+[icon]
+	`Item/weapon/priest/cross.img`	41
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	5	1
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[if]
+	[use skill]
+		`priest`	7
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[restore]
+		`hp`
+		`%`	-1	0
+[/then]
+
+[if]
+	[use skill]
+		`priest`	53
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[restore]
+		`hp`
+		`%`	-1	0
+[/then]
+
+[if]
+	[use skill]
+		`priest`	45
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[restore]
+		`hp`
+		`%`	-1	0
+[/then]
+
+[skill data up]
+	`[priest]`	7	`[all]`	`[level]`	1	`+`	20
+	`[priest]`	7	`[all]`	`[level]`	2	`+`	10
+	`[priest]`	53	`[all]`	`[level]`	1	`+`	10
+	`[priest]`	53	`[all]`	`[level]`	2	`+`	20
+	`[priest]`	45	`[all]`	`[level]`	1	`+`	20
+	`[priest]`	45	`[all]`	`[level]`	2	`+`	20
+[/skill data up]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

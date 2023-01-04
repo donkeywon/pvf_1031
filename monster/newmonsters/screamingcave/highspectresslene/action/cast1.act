@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Cast.ani`
+	[SUB ANI]
+		`../Animation/Effect/Cast.ani`	0	0
+		`../Animation/Eye/Cast.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`R_SPECTRE_SKILL`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8631
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			60
+		[POS]
+		[RANDOM]
+			100	300	0	60
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

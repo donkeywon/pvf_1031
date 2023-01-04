@@ -1,0 +1,278 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`UM-0 终结者`
+
+[face image]
+	`Monster/MonsterFace.img`	434
+
+[die effect]
+	0	3	1
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	1530
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	360
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	390
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	300
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	300
+[/ability category]
+
+[item]
+	3267	10000
+[/item]
+
+[category]
+	`[beast]`
+[/category]
+
+[fire resistance]
+	20	20
+
+[water resistance]
+	20	20
+
+[dark resistance]
+	20	20
+
+[light resistance]
+	20	20
+
+[slow resistance]
+	80	80
+
+[freeze resistance]
+	80	80
+
+[poison resistance]
+	60	60
+
+[stun resistance]
+	60	60
+
+[curse resistance]
+	60	60
+
+[blind resistance]
+	80	80
+
+[lightning resistance]
+	180	180
+
+[stone resistance]
+	60	60
+
+[sleep resistance]
+	60	60
+
+[burn resistance]
+	60	60
+
+[weapon break resistance]
+	100	100
+
+[bleeding resistance]
+	60	60
+
+[piercing resistance]
+	60	60
+
+[stuck resistance]
+	60	60
+
+[confuse resistance]
+	60	60
+
+[hold resistance]
+	60	60
+
+[armor break resistance]
+	60	60
+
+[HP regen speed]
+	0	0
+
+[MP regen speed]
+	0	0
+
+[level]
+	65	70
+
+[move speed]
+	1040	1040
+
+[attack speed]
+	1350	1350
+
+[cast speed]
+	1500	1500
+
+[hit recovery]
+	1800	1800
+
+[weight]
+	200000	200000
+
+[lie frame]
+	1	2	3	3	4
+
+[set damage check]
+	3000
+
+[add gravity in aerial]
+	1	10.0	-300.0
+
+[event super on scr]
+	`[on hp]`	60	5000	1
+	`[unbreakable]`	-1	-1	-1	-1
+[/event super on scr]
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[proc action]
+	`Action/Proc.act`
+
+[last action]
+	`Action/last.act`
+
+[jump action]
+	`Action/jump.act`
+
+[attack action]
+	`Action/shoot.act`
+	`Action/Attack2.act`
+	`Action/Howling.act`
+	`Action/Rolling_H.act`
+	`Action/Rolling_H_1.act`
+	`Action/Rolling_SE.act`
+	`Action/Howl.act`
+	`Action/Power.act`
+	`Action/Burn.act`
+	`Action/Recharge.act`
+	`Action/Rolling_SE2.act`
+	`Action/Attack1.act`
+	`Action/shoot2.act`
+[/attack action]
+
+[attack info]
+	`Attackinfo/Attack1.atk`
+	`Attackinfo/Attack2.atk`
+	`Attackinfo/Howling.atk`
+	`Attackinfo/Rolling.atk`
+	`Attackinfo/Rolling.atk`
+	`Attackinfo/Rolling.atk`
+	`Attackinfo/Attack1.atk`
+	`Attackinfo/Attack1.atk`
+	`Attackinfo/Attack3.atk`
+	``
+	`Attackinfo/Rolling.atk`
+	`Attackinfo/Attack1.atk`
+	``
+[/attack info]
+
+[cooltime]
+	15000	30000	8000	10000	10000	12000	5000	15000	30000	30000	12000	5000	15000
+[/cooltime]
+
+[attack sound]
+	`R_FRANKEN_ATK`
+
+[appear sound]
+	`FRANKEN_MEET`
+
+[damage sound]
+	`R_FRANKEN_DMG`
+
+[die sound]
+	`FRANKEN_DIE`
+
+[ambient sound]
+	`FRANKEN_AMB`
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	950
+
+[think term]
+	500
+
+[destination change term]
+	200
+
+[keep distance with target]
+	250
+
+[targeting bonus]
+	0	90	95	100	80	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+
+[ai pattern]
+	[normal]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/normal]
+	[expert]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/expert]
+	[master]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/master]
+	[king]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/king]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action_H.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[level of difficulty]
+	[normal]
+		-10	0
+	[ex]
+		-10	0
+	[master]
+		-10	0
+	[king]
+		-10	0
+	[hero]
+		-10	0
+[/level of difficulty]

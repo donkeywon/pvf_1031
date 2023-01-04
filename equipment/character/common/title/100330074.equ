@@ -1,0 +1,133 @@
+#PVF_File
+
+[name]
+	`无敌单身部队`
+
+[name2]
+	``
+
+[explain]
+	`※单人模式下生效※
+攻击时， 有3%%的几率附加30%%的伤害。 (在决斗场中 +10%%)
+穿戴时， 每隔50秒会发动单身之力量Buff， 该Buff可以使自身增加20点力量和体力、 3%%的物理暴击率、 3%%的攻击速度和2%%的移动速度， 效果持续30秒。 (穿戴50秒后生效)`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[physical attack]
+	20
+
+[physical defense]
+	20
+
+[attack speed]
+	30
+
+[move speed]
+	20
+
+[inventory limit]
+	10000
+
+[physical critical hit]
+	3
+
+[icon]
+	`Item/Title/title.img`	235
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/10_christmas_solo_rd.ani`
+[/custom animation]
+
+[if]
+	[party count]
+		`=`	1
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[add absolute damage]
+		`all`
+		`%`	30
+[/then]
+
+[if]
+	[party count]
+		`=`	1
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		5000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[if]
+	[party count]
+		`=`	1
+	[time]
+		50000	1	30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[stat]
+		`physical attack`
+		`+`	20
+	[stat]
+		`physical defense`
+		`+`	20
+	[stat]
+		`move speed`
+		`+`	20
+	[stat]
+		`attack speed`
+		`+`	30
+	[stat]
+		`physical critical hit`
+		`+`	3
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

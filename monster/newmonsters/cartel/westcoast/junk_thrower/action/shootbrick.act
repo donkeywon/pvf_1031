@@ -1,0 +1,37 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/ShootBrick.ani`
+	[SUB ANI]
+		`../animation/Whisker/ShootBrick.ani`	0	0
+		`../animation/Top/ShootBrick.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`尝尝砖头吧！`	0	100
+	[/SPEECH]
+	[SOUND]
+		`THROWER_CATCH_GARBAGE`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8001
+		[PARTICLE FILENAME]
+			`../particle/JunkBrick.ptl`
+		[LEVEL]
+			40
+		[POS]
+			63	0	89
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

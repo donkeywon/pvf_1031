@@ -1,0 +1,44 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Chariot/Move.ani`
+	[SUB ANI]
+		`../Animation/Goblin_c/Move_3.ani`	0	-12
+		`../Animation/Chariot/Back_R.ani`	0	-11
+		`../Animation/Goblin_a/Back/Move_b.ani`	0	-10
+		`../Animation/Goblin_b/Move_2.ani`	0	-9
+		`../Animation/Goblin_a/Move.ani`	0	-8
+		`../Animation/Goblin_c/Wp/Move_w3.ani`	0	-7
+		`../Animation/Goblin_b/Hat/Move_h2.ani`	0	-6
+		`../Animation/Goblin_c/Hat/Move_h3.ani`	0	-5
+		`../Animation/Goblin_b/pants/Move_w.ani`	0	-4
+		`../Animation/Goblin_b/Wp/Move_w.ani`	0	-4
+		`../Animation/Goblin_a/pants/Move.ani`	0	-3
+		`../Animation/Goblin_a/Hat/Move_h.ani`	0	-3
+		`../Animation/Goblin_a/Wp/Move_w.ani`	0	-2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+	[ATTACK]
+		0	1
+	[RESET]
+	[TRIGGER]
+	[ATTACK]
+		1	1
+	[RESET]
+	[TRIGGER]
+	[ATTACK]
+		2	1
+	[RESET]
+[/BEHAVIOR]

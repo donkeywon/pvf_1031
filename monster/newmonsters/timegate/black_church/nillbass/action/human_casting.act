@@ -1,0 +1,79 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/human/Casting.ani`
+	[SUB ANI]
+		`../Animation/chang/00/2_start_dodge.ani`	0	-7
+		`../Animation/chang/01/2_body_normal.ani`	0	-6
+		`../Animation/chang/01/4_energy_black_normal_0.ani`	0	-5
+		`../Animation/chang/01/4_energy_black_normal_1.ani`	0	-4
+		`../Animation/chang/01/5_energy_spark_dodge.ani`	0	-3
+		`../Animation/chang/01/6_energy_ring_dodge.ani`	0	-2
+		`../Animation/chang/02/2_body_normal.ani`	0	-1
+		`../Animation/chang/03/5_crack_normal.ani`	0	1
+		`../Animation/chang/03/6_crack_dodge.ani`	0	2
+		`../Animation/chang/03/7_stone_normal_00.ani`	0	3
+		`../Animation/chang/03/7_stone_normal_01.ani`	0	4
+		`../Animation/chang/03/7_stone_normal_02.ani`	0	5
+		`../Animation/chang/03/7_stone_normal_03.ani`	0	6
+		`../Animation/chang/03/7_stone_normal_04.ani`	0	7
+		`../Animation/chang/03/7_stone_normal_05.ani`	0	8
+		`../Animation/chang/03/7_stone_normal_06.ani`	0	9
+		`../Animation/chang/03/7_stone_normal_07.ani`	0	10
+		`../Animation/chang/03/Awakening_back.ani`	0	11
+		`../Animation/chang/03/nanmu_sword_hikar.ani`	0	12
+		`../Animation/chang/03/sub_dodge.ani`	0	13
+		`../Animation/chang/03/4_change_light_dodge.ani`	0	14
+	[/SUB ANI]
+	[SOUND]
+		`DGUARDIAN_CHANGE_1`	7
+		`DGUARDIAN_CHANGE_2`	9
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[OFF]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`move.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`damage2.act`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[REMOVE CATEGORY]
+	[FIXTURE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		400	800	400	150	2550	0	0
+[/BEHAVIOR]

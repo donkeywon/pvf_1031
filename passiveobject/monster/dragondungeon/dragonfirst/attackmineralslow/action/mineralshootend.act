@@ -1,0 +1,56 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/End/AttackMineralShoot_Effect_M_Dodge.ani`
+	[SUB ANI]
+		`../Animation/End/AttackMineralShoot_Effect_M_Stone1.ani`	0	-3
+		`../Animation/End/AttackMineralShoot_Effect_L_floor_shock01.ani`	0	-2
+		`../Animation/End/AttackMineralShoot_Effect_M_Normal.ani`	0	-1
+		`../Animation/End/AttackMineralShoot_Effect_M_Dodge2.ani`	0	1
+		`../Animation/End/AttackMineralShoot_Effect_M_end_Normal.ani`	0	2
+		`../Animation/End/AttackMineralShoot_Effect_M_Stone2.ani`	0	3
+		`../Animation/End/AttackMineralShoot_Effect_M_Floor_energy00.ani`	0	4
+		`../Animation/End/AttackMineralShoot_Effect_M_EXx_Dodge.ani`	0	5
+		`../Animation/End/AttackMineralShoot_Effect_HandSwing_HitFloor.ani`	0	6
+		`../Animation/End/AttackMineralShoot_Effect_HandSwing_HitDust2.ani`	0	7
+		`../Animation/End/AttackMineralShoot_Effect_HandSwing_HitDust.ani`	0	8
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			54092
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			0
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

@@ -1,0 +1,46 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack.ani`
+	[SUB ANI]
+		`../Animation/ac/Attack_200.ani`	0	0
+		`../Animation/hair/Attack_300.ani`	0	0
+		`../Animation/hat/Attack_400.ani`	0	0
+		`../Animation/pants/Attack_500.ani`	0	0
+		`../Animation/shirts/Attack_800.ani`	0	0
+		`../Animation/shoes/Attack_600.ani`	0	0
+		`../Animation/skin/Attack_700.ani`	0	0
+		`../Animation/Attack_100.ani`	0	100
+	[/SUB ANI]
+	[SOUND]
+		`GOBLIN_COMMAND`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[PASSIVE OBJECT]
+		[/IS OBJECT TYPE]
+		[IS INDEX]
+			8562
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			100
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND DO BEHAVIOR]
+	[ME]
+		0
+[/BEHAVIOR]

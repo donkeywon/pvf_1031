@@ -1,0 +1,119 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[greed]
+	`JJ JJ`
+
+[type]
+	`[normal]`
+
+[tile]
+	`Tile/SkyCastleDCPoll.til`
+	`Tile/SkyCastleUCPoll.til`
+	`Tile/SkyCastlePCPoll.til`
+	`Tile/SkyCastleNPoll.til`
+	`Tile/SkyCastleNPoll.til`
+	`Tile/SkyCastleDCPoll.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/far1.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/far3.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[sound]
+	`RM_SKYCASTLE_BOSS`
+	`WIND_AMB_01`
+	`G_AMON`
+[/sound]
+
+[pathgate pos]
+	10	265	1332	256	672	144	377	349
+
+[animation]
+	`Animation/bakalsymbol.ani`	`[middleback]`	112	145	0
+	`Animation/bakalsymbol.ani`	`[middleback]`	336	145	0
+	`Animation/bakalsymbol.ani`	`[middleback]`	560	145	0
+	`Animation/bakalsymbol.ani`	`[middleback]`	784	145	0
+	`Animation/bakalsymbol.ani`	`[middleback]`	1008	145	0
+	`Animation/bakalsymbol.ani`	`[middleback]`	1232	145	0
+	`Animation/scloud.ani`	`[distantback]`	-378	201	0
+	`Animation/scloud.ani`	`[distantback]`	253	201	0
+	`Animation/scloud.ani`	`[distantback]`	884	201	0
+	`Animation/scloud.ani`	`[distantback]`	1515	201	0
+	`Animation/scloud.ani`	`[distantback]`	2146	201	0
+	`Animation/scloud.ani`	`[distantback]`	2777	201	0
+[/animation]
+
+[passive object]
+	268	765	270	160
+	268	1090	270	160
+	1036	952	322	0
+	1036	956	348	0
+[/passive object]
+
+[monster]
+	39	0	15	1014	223	0	1	1	`[fixed]`	`[normal]`
+	33	0	15	869	237	0	1	1	`[fixed]`	`[normal]`
+	50	1	0	430	257	0	1	1	`[fixed]`	`[normal]`
+	61	0	15	859	266	0	1	1	`[fixed]`	`[normal]`
+	61	0	15	1090	270	0	1	1	`[fixed]`	`[normal]`
+	31	1	0	1120	294	0	1	1	`[fixed]`	`[normal]`
+	50	1	0	469	300	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[special passive object]
+	240	574	216	0	0
+	240	448	220	0	0
+	30507	619	296	0	1
+	`[monster]`	1050	16	1	1	-1
+	235	825	343	0	2
+	`[trap]`	2200	1	2	3	-1
+	`[trap]`	48020	13	1	1	-1
+	`[hellparty]`	1	50	1	5
+	50	1	6	50	1	7
+	50	1	8	50	1	9
+	50	1	10	50	1	61
+	50	1	62	50	1	63
+	50	1	64	50	1	`[/hellparty]`	
+[/special passive object]
+
+[map name]
+	`PVP 无名`

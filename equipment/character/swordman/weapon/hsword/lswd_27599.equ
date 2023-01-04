@@ -1,0 +1,182 @@
+#PVF_File
+
+[name]
+	`邪龙之脊`
+
+[basic explain]
+	`攻击时， 有2%%的几率召唤出邪龙的铁索。
+被攻击时， 有5%%的几率召唤出邪龙的铁索。
+无法进行分解。`
+
+[detail explain]
+	`攻击时， 有2%%的几率召唤出3条邪龙的铁索攻击敌人。
+被攻击时， 有5%%的几率召唤出1条邪龙的铁索攻击敌人。 (在决斗场中几率为1%%)
+无法进行分解。`
+
+[grade]
+	44
+
+[rarity]
+	3
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	40
+
+[physical attack]
+	31
+
+[attack speed]
+	-90
+
+[cast speed]
+	-20
+
+[price]
+	79200
+
+[repair price]
+	66528
+
+[value]
+	63360
+
+[equipment physical attack]
+	504	456
+
+[equipment magical attack]
+	378	342
+
+[separate attack]
+	245	164
+
+[icon]
+	`Item/weapon/swordman/lswd.img`	84
+
+[field image]
+	`Item/FieldImage.img`	13
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	19	0
+
+[layer variation]
+	2790
+	`lswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`lswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	19	0
+
+[layer variation]
+	2790
+	`lswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`lswdb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SQUARESWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`lswd`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[passive object]
+		48194	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[cooltime]
+		500
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[reduce probability to human armor at pvp module]
+		80
+	[passive object]
+		48193	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[routing priority]
+	`swordman`	1
+	`swordman`	3
+	`demonic swordman`	0
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

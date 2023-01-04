@@ -1,0 +1,159 @@
+#PVF_File
+
+[name]
+	`传承 : 神圣的生命女神铂金链甲`
+
+[name2]
+	`Legacy : Holy Coat of Cubeley`
+
+[grade]
+	42
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	40
+
+[physical attack]
+	24
+
+[physical defense]
+	24
+
+[magical attack]
+	14
+
+[stuck resistance]
+	15
+
+[HP MAX]
+	180
+
+[price]
+	42000
+
+[repair price]
+	33600
+
+[value]
+	33600
+
+[equipment physical defense]
+	2160	2064
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/IconArmor.img`	295
+
+[field image]
+	`Item/field_equip.img`	10
+
+[equipment type]
+	`[coat]`	20
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	3600
+
+[item group name]
+	`ha coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 神圣的生命女神铂金重甲  套装`
+
+[set item]
+	11284	13284	19280
+[/set item]
+
+[item overpower part]
+
+[set ability]
+	[HP MAX]
+		250
+	[MP MAX]
+		250
+	[physical attack]
+		60
+	[physical defense]
+		60
+	[magical attack]
+		48
+	[HP regen speed]
+		20
+	[move speed]
+		20
+	[attack speed]
+		20
+	[if]
+		[cooltime]
+			30000
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			20000
+		[probability]
+			2
+		[stat]
+			`physical critical hit rate`
+			`+`	20
+		[stat]
+			`magical critical hit rate`
+			`+`	20
+	[/then]
+	[stuck]
+		-1
+	[fullset basic explain]
+		`被攻击时， 有2%%的几率使自身增加20%%的暴击率， 效果持续20秒。
+进入地下城时， 因传承的祝福可以使自身增加5%%的攻击速度和施放速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`attack speed`
+			`+`	50
+		[stat by condition]
+			`cast speed`
+			`+`	50
+	[/then]
+[/set ability]
+
+[possible kiri protect]

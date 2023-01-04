@@ -1,0 +1,101 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/all_Magic_Card2.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9256
+		[PARTICLE FILENAME]
+			`../Particle/SilkHatCard_up.ptl`
+		[LEVEL]
+			0
+		[POS]
+			58	0	64
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9256
+		[PARTICLE FILENAME]
+			`../Particle/SilkHatCard_up2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			58	0	64
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9256
+		[PARTICLE FILENAME]
+			`../Particle/SilkHatCard.ptl`
+		[LEVEL]
+			0
+		[POS]
+			58	0	64
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9256
+		[PARTICLE FILENAME]
+			`../Particle/SilkHatCard_down.ptl`
+		[LEVEL]
+			0
+		[POS]
+			58	0	64
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9256
+		[PARTICLE FILENAME]
+			`../Particle/SilkHatCard_down2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			58	0	64
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

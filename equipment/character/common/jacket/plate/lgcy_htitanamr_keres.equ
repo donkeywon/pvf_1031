@@ -1,0 +1,153 @@
+#PVF_File
+
+[name]
+	`传承 : 神圣的控魂女神的钛钢胸甲`
+
+[name2]
+	`Legacy : Holy Titanium Armor of Keres`
+
+[grade]
+	62
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	60
+
+[physical attack]
+	32
+
+[physical defense]
+	27
+
+[magical attack]
+	43
+
+[price]
+	74400
+
+[repair price]
+	65620
+
+[value]
+	59520
+
+[equipment physical defense]
+	3900	3780
+
+[skill levelup]
+	`[swordman]`	22	1
+	`[priest]`	45	1
+	`[priest]`	5	1
+	`[creator mage]`	135	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/common/coat.img`	234
+
+[field image]
+	`Item/field_equip.img`	15
+
+[equipment type]
+	`[coat]`	21
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	60
+
+[weight]
+	5000
+
+[item group name]
+	`mt coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 神圣的控魂女神的钛钢板甲  套装`
+
+[set item]
+	11684	13682	15681	17676	19684
+[/set item]
+
+[set ability]
+	[HP MAX]
+		300
+	[MP MAX]
+		500
+	[physical attack]
+		90
+	[magical attack]
+		90
+	[stuck resistance]
+		35
+	[inventory limit]
+		5000
+	[MP regen speed]
+		9
+	[move speed]
+		40
+	[attack speed]
+		40
+	[cast speed]
+		50
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福增加自身7%%的攻击速度和施放速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`attack speed`
+			`+`	70
+		[stat by condition]
+			`cast speed`
+			`+`	70
+	[/then]
+	[skill levelup]
+		`[swordman]`	74	1
+		`[swordman]`	2	1
+		`[swordman]`	47	1
+		`[priest]`	45	1
+		`[priest]`	53	1
+		`[priest]`	23	1
+		`[priest]`	49	2
+		`[priest]`	41	1
+		`[demonic swordman]`	2	1
+		`[demonic swordman]`	74	1
+		`[creator mage]`	134	1
+		`[creator mage]`	249	2
+	[/skill levelup]
+[/set ability]
+
+[possible kiri protect]

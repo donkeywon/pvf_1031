@@ -1,0 +1,174 @@
+#PVF_File
+
+[name]
+	`找不到代码name_108030034`
+
+[name2]
+	`找不到代码name2_108030034`
+
+[basic explain]
+	`找不到代码basic_explain_108030034`
+
+[detail explain]
+	`找不到代码detail_explain_108030034`
+
+[if]
+	[cooltime]
+		35000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		3
+	[active status]
+		`haste`	85	10	10
+[/then]
+
+[if]
+	[event use skill]
+		`priest`	49
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[skill data up]
+		`[priest]`	49	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`priest`	88
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[skill data up]
+		`[priest]`	88	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`+`	1100
+[/then]
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[durability]
+	35
+
+[physical attack]
+	56
+
+[stuck]
+	-2
+
+[weight]
+	4000
+
+[price]
+	153000
+
+[repair price]
+	128520
+
+[value]
+	122400
+
+[creation rate]
+	0
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[equipment physical attack]
+	989	917
+
+[equipment magical attack]
+	700	649
+
+[separate attack]
+	504	343
+
+[attack speed]
+	-80
+
+[skill levelup]
+	`[priest]`	47	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/priest/axe/axe.img`	88
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	26	1
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	68

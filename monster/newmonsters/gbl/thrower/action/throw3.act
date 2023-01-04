@@ -1,0 +1,30 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Throw.ani`
+	[SOUND]
+		`BELIEVER_ATK_03`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8506
+		[PARTICLE FILENAME]
+			`../Particle/ThrowStar3.ptl`
+		[LEVEL]
+			42
+		[POS]
+			0	0	40
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

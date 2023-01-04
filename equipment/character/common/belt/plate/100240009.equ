@@ -1,0 +1,137 @@
+#PVF_File
+
+[name]
+	`镇魂曲 : 幽游板甲腰带`
+
+[name2]
+	``
+
+[basic explain]
+	`施放[巨旋风]、 [圣光沁盾]、 [冰刃 · 波动剑]时， 有10%%的几率不受冷却时间影响。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	21
+
+[physical defense]
+	23
+
+[magical attack]
+	21
+
+[MP MAX]
+	200
+
+[inventory limit]
+	3000
+
+[price]
+	85000
+
+[repair price]
+	71400
+
+[value]
+	68000
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	1860	1740
+
+[icon]
+	`item/new_equipment/06_plate/belt/plate_belt.img`	10
+
+[field image]
+	`Item/field_equip.img`	18
+
+[equipment type]
+	`[waist]`	20
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	2000
+
+[item group name]
+	`mt waist`
+
+[cool time]
+	10000
+
+[set item master]
+	100090009
+
+[if]
+	[event use skill]
+		`priest`	50
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[skill data up]
+		`[priest]`	50	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`priest`	27
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[skill data up]
+		`[priest]`	27	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`swordman`	21
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[skill data up]
+		`[swordman]`	21	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

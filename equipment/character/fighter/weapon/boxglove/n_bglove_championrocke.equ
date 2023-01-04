@@ -1,0 +1,210 @@
+#PVF_File
+
+[name]
+	`(旧) 极皇拳套`
+
+[name2]
+	`Rocke the Champion`
+
+[basic explain]
+	`破招时， 有30%%的几率使敌人进入眩晕状态。
+破招伤害 +50%%`
+
+[detail explain]
+	`破招时， 有30%%的几率使敌人进入眩晕状态7秒。 (若敌人高于Lv50， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+破招伤害 +50%% (在决斗场中 +38%%)`
+
+[flavor text]
+	`比哈斯？ 哼， 这小子刚来时猖狂地像什么似的， 最后还不是被我的破招攻击搞得鼻青脸肿。  --极皇莱奇`
+
+[grade]
+	57
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	39
+
+[attack speed]
+	100
+
+[price]
+	102600
+
+[repair price]
+	82080
+
+[value]
+	82080
+
+[equipment physical attack]
+	559	508
+
+[equipment magical attack]
+	505	460
+
+[separate attack]
+	328	220
+
+[icon]
+	`Item/weapon/fighter/bglove.img`	26
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	8
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	1	8
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[if]
+	[cooltime]
+		4000
+	[attack condition]
+		`counter`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[probability]
+		30
+	[active status]
+		`stun`	50
+[/then]
+
+[if]
+	[attack condition]
+		`counter`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	50
+[/then]
+
+[pvp]
+	[if]
+		[cooltime]
+			4000
+		[attack condition]
+			`counter`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			7000
+		[probability]
+			30
+		[active status]
+			`stun`	50
+	[/then]
+	[if]
+		[attack condition]
+			`counter`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	38
+	[/then]
+[/pvp]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

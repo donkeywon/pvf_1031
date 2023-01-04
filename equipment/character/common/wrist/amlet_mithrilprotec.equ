@@ -1,0 +1,101 @@
+#PVF_File
+
+[name]
+	`神圣秘银的遗迹`
+
+[name2]
+	`Holy Mithril Relic`
+
+[basic explain]
+	`攻击时， 有3%%的几率赋予武器光属性， 效果持续30秒。
+被攻击时所受伤害 -5%%`
+
+[grade]
+	61
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[physical attack]
+	25
+
+[physical defense]
+	62
+
+[price]
+	73200
+
+[repair price]
+	61488
+
+[value]
+	58560
+
+[equipment magical defense]
+	3264	3024
+
+[icon]
+	`Item/common/bracelet.img`	19
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	21
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		15000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		3
+	[duration]
+		30000
+	[elemental weapon]
+		`light`
+[/then]
+
+[if]
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	5
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

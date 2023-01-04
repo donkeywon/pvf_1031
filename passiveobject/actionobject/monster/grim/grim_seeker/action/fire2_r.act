@@ -1,0 +1,33 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Fire2.ani`
+	[SOUND]
+		`GSEEKERWOMAN_FIRE`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+		[RANDOM SELECT]
+			9136	9137
+		[/RANDOM SELECT]
+		[PARTICLE FILENAME]
+			`../Particle/Fire.ptl`
+		[LEVEL]
+			0
+		[POS]
+			50	0	0
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

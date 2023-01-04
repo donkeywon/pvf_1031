@@ -1,0 +1,592 @@
+#PVF_File
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[ME]
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[ME]
+	[DO PROC BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[ME]
+	[DO PROC BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[ME]
+	[DO PROC BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[WHICH]
+	[ME]
+	[DO PROC BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[OFF]
+	[TRIGGER]
+		5
+	[ON]
+	[DIM]
+		`time_cool1`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[SET ACTION]
+	[ATTACK]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		6
+	[ON]
+	[DIM]
+		`time_cool2`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[SET ACTION]
+	[ATTACK]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		2
+	[OFF]
+	[TRIGGER]
+		7
+	[ON]
+	[DIM]
+		`time_cool3`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[SET ACTION]
+	[ATTACK]
+		3
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		3
+	[OFF]
+	[TRIGGER]
+		8
+	[ON]
+	[DIM]
+		`time_cool4`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[SET ACTION]
+	[ATTACK]
+		2
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[TRIGGER]
+		4
+	[OFF]
+	[TRIGGER]
+		5
+	[ON]
+	[DIM]
+		`time_cool1`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[SET ACTION]
+	[ATTACK]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time_cool1`	
+		[+]
+			30000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO PROC BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[ON]
+	[TRIGGER]
+		5
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time_cool2`	
+		[+]
+			30000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO PROC BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		2
+	[ON]
+	[TRIGGER]
+		6
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time_cool3`	
+		[+]
+			30000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO PROC BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		3
+	[ON]
+	[TRIGGER]
+		7
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time_cool4`	
+		[+]
+			30000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO PROC BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		4
+	[ON]
+	[TRIGGER]
+		8
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[DO PROC BEHAVIOR]
+	[ME]
+		9
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`damage`	
+		[=]
+			0
+	[/DIM]
+	[TRIGGER]
+		9
+	[OFF]
+	[TRIGGER]
+		10
+	[ON]
+	[TRIGGER]
+		11
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[ON DAMAGE]
+	[DO PROC BEHAVIOR]
+	[ME]
+		10
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_skill.ptl`	0	0	0
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_skill.ptl`	0	0	0
+	[PARTICLE]
+		`../particle/Teen_Monster_Die_Down_skill.ptl`	0	0	0
+	[DIM]
+		`damage`	
+		[=]
+			`damage`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`damage`	
+		[>]
+			40
+	[/IF]
+	[DO PROC BEHAVIOR]
+	[ME]
+		11
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`damage`	
+		[=]
+			0
+	[/DIM]
+	[DIM]
+		`damagecool`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		11
+	[OFF]
+	[TRIGGER]
+		12
+	[ON]
+	[SET ACTION]
+	[ATTACK]
+	[RANDOM SELECT]
+		4	5
+	[/RANDOM SELECT]
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`damagecool`	
+		[+]
+			10000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO PROC BEHAVIOR]
+	[ME]
+		12
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		10
+	[OFF]
+	[TRIGGER]
+		12
+	[OFF]
+	[TRIGGER]
+		9
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			62141
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO PROC BEHAVIOR]
+	[ME]
+		13
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9472
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9473
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9474
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	-1	0
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[ME]
+	[DO PROC BEHAVIOR]
+	[ME]
+		14
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time_cool88`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		15
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time_cool88`	
+		[+]
+			12000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO PROC BEHAVIOR]
+	[ME]
+		15
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		15
+	[OFF]
+	[TRIGGER]
+		0
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+[/TRIGGER]
+
+[TRIGGER]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		-1000
+	[POINT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		-2000
+	[POINT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		-3000
+	[POINT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		-4000
+	[POINT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[CHECK TIME]
+		500
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			60024
+		[/IS INDEX]
+		[DISTANCE]
+		[=<]
+			300
+	[/CHECKUP]
+	[DO PROC BEHAVIOR]
+	[ME]
+		20
+	[DO PROC BEHAVIOR]
+	[CHECKUP OBJECT]
+		23
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`卡西利亚斯？是你吗？但又不太像……`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[CHECK TIME]
+		500
+	[WHICH]
+	[LAST ATTACKER]
+	[CHECKUP]
+		[IS INDEX]
+			60024
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO PROC BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		21	21	21	21	22
+	[/RANDOM SELECT]
+	[DO PROC BEHAVIOR]
+	[CHECKUP OBJECT]
+	[RANDOM SELECT]
+		26	26	24	26	25	26
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		-1
+	[%]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		-2
+	[%]
+	[SAY SPEECH]
+		`呃！！卡西利亚斯！你别这样！`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`奥兹玛！我们看看谁更厉害吧！`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`奥兹玛，没想到你这么懦弱！`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`来，看招！`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[LIMIT]
+		1
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			30567
+		[/IS INDEX]
+		[DISTANCE]
+		[=<]
+			300
+	[/CHECKUP]
+	[DO PROC BEHAVIOR]
+	[ME]
+		27
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		9
+	[NOW]
+[/BEHAVIOR]

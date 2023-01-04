@@ -1,0 +1,27 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Sub_appear.ani`
+	[SUB ANI]
+		`../Animation/Effect/normal/Sub_appear.ani`	0	-1
+		`../Animation/Effect/dodge/Sub_appear.ani`	0	-2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`Stay.act`
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]

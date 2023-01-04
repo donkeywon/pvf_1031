@@ -1,0 +1,192 @@
+#PVF_File
+
+[name]
+	`光辉之阿伽门农`
+
+[category]
+	`[angel]`
+	`[melee combat]`
+	`[close-tough]`
+[/category]
+
+[appear sound]
+	`R_AKARES_MEET`
+
+[damage sound]
+	`R_AKARES_DMG`
+
+[die sound]
+	`AKARES_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	120
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	120
+	`[HP MAX]`	`*`	12350
+[/ability category]
+
+[level]
+	65	65
+
+[dark resistance]
+	-20	-20
+
+[light resistance]
+	70	70
+
+[slow resistance]
+	150	150
+
+[freeze resistance]
+	150	150
+
+[stun resistance]
+	150	150
+
+[curse resistance]
+	150	150
+
+[blind resistance]
+	150	150
+
+[stone resistance]
+	150	150
+
+[sleep resistance]
+	150	150
+
+[confuse resistance]
+	150	150
+
+[hold resistance]
+	150	150
+
+[move speed]
+	400	400
+
+[attack speed]
+	500	500
+
+[cast speed]
+	500	500
+
+[hit recovery]
+	1500	1500
+
+[weight]
+	120000	120000
+
+[warlike]
+	100
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[face image]
+	`Monster/MonsterFace.img`	518
+
+[etc motion]
+	`Animation/magic.ani`
+	`Animation/magic2.ani`
+[/etc motion]
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[attack action]
+	`Action/Attack.act`
+	`Action/Casting.act`
+	`Action/MagicFire.act`
+	`Action/Move_Back.act`
+	`Action/revive.act`
+	`Action/MirrorImage.act`
+	`Action/summon.act`
+	`Action/OP.act`
+	`Action/Casting2.act`
+	`Action/Attack2.act`
+	`Action/Casting3.act`
+	`Action/Casting_ready.act`
+[/attack action]
+
+[last action]
+	`Action/Die.act`
+
+[attack info]
+	`Attackinfo/attack.atk`
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	`Attackinfo/attack2.atk`
+	`Attackinfo/attack.atk`
+	``
+	``
+[/attack info]
+
+[cooltime]
+	40000	20000	8000	4000	100000	30000	50000	100000	20000	30000	20000	15000
+[/cooltime]
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	450
+
+[vision]
+	700
+
+[set damage check]
+	3000
+
+[lie frame]
+	3	2	2	3	3

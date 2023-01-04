@@ -1,0 +1,132 @@
+#PVF_File
+
+[name]
+	`暗魂波`
+
+[name2]
+	`Dark Soul`
+
+[basic explain]
+	`向敌人发射暗属性球体， 球体命中敌人后使敌人受到暗属性的多段魔法伤害， 最后球体爆炸并给予敌人较大的暗属性魔法伤害。`
+
+[explain]
+	`向敌人发射暗属性球体， 球体命中敌人后使敌人受到暗属性的多段魔法伤害， 最后球体爆炸并给予敌人较大的暗属性魔法伤害。
+暗属性球体具有诱导性。`
+
+[purchase cost]
+	25
+[/purchase cost]
+
+[required level]
+	5
+
+[required level range]
+	2
+
+[type]
+	`[active]`
+
+[skill class]
+	2
+
+[maximum level]
+	30
+
+[growtype maximum level]
+	20	20	20	20	20	20
+
+[skill fitness growtype]
+	0	1	2	3	4
+[/skill fitness growtype]
+
+[durability decrease rate]
+	20
+
+[weapon effect type]
+	`[magical]`
+
+[icon]
+	`Character/Thief/Effect/SkillIcon.img`	36
+	`Character/Thief/Effect/SkillIcon.img`	37
+
+[command]
+[/command]
+
+[skill command advantage]
+	10	20
+
+[dungeon]
+	[consume MP]
+		20	70
+	[casting time]
+		300	300
+	[cool time]
+		6000	6000
+	[static data]
+		300	3	350	200	500
+	[/static data]
+	[level info]
+		6
+		27	9	37	108	30	5
+		28	11	45	114	32	10
+		30	14	55	119	33	15
+		31	16	65	125	35	20
+		33	19	76	131	36	25
+		34	22	87	136	38	30
+		36	25	99	142	39	35
+		37	28	112	148	41	40
+		38	31	125	153	43	45
+		40	35	139	159	44	50
+		41	38	154	165	46	55
+		43	42	169	171	47	60
+		44	46	185	176	49	65
+		45	51	202	182	51	70
+		47	55	220	188	52	75
+		48	59	238	193	54	80
+		50	64	256	199	55	85
+		51	69	276	205	57	90
+		53	74	296	210	58	95
+		54	79	317	216	60	100
+		55	85	338	222	62	100
+		57	90	360	227	63	100
+		58	96	383	233	65	100
+		60	102	407	239	66	100
+		61	108	431	244	68	100
+		63	114	456	250	69	100
+		64	120	481	256	71	100
+		65	127	507	261	73	100
+		67	134	534	267	74	100
+		68	140	562	273	76	100
+	[/level info]
+[/dungeon]
+
+[pvp]
+[/pvp]
+
+[death tower]
+[/death tower]
+
+[warroom]
+[/warroom]
+
+[level property]
+	1	99
+	`多段攻击次数上限 : <int>次
+多段攻击魔法攻击力 : <int>%% + <int>
+爆炸魔法攻击力 : <int>%% + <int>
+诱导性比率 : <int>%%`
+	1	1	1.0
+	-1	0	1.0
+	-2	1	1.0
+	-1	3	1.0
+	-2	2	1.0
+	-1	4	3.3333333
+[/level property]
+
+[skill preloading image]
+	`Character/Fighter/Effect/BlockBusterGlow.img`
+	`Character/Fighter/Effect/BlockBusterDust.img`
+	`Character/Fighter/Effect/BlockBusterPieceGlow.img`
+	`Character/Fighter/Effect/BlockBusterPiece.img`
+	`Character/Fighter/Effect/BlockBusterBlock.img`
+[/skill preloading image]

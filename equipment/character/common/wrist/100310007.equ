@@ -1,0 +1,97 @@
+#PVF_File
+
+[name]
+	`风华绝世手镯`
+
+[name2]
+	``
+
+[basic explain]
+	`被击时， 有10%%的几率使自身进入霸体状态10秒。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	34
+
+[physical defense]
+	85
+
+[price]
+	102000
+
+[repair price]
+	81600
+
+[value]
+	81600
+
+[creation rate]
+	250
+
+[equipment magical defense]
+	4464	4176
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	72
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	21
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[routing priority]
+[/routing priority]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[probability]
+		10
+	[appendage]
+		205
+	[appendage]
+		207
+[/then]
+
+[set item master]
+	100300007
+
+[icon mark]
+	`Item/IconMark.img`	68

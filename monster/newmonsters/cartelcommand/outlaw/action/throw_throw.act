@@ -1,0 +1,183 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/throw_throw.ani`
+	[SUB ANI]
+		`../animation/throw_throw_drum.ani`	0	1
+	[/SUB ANI]
+	[SOUND]
+		`OUTLAW_THROW`	2
+		`R_OUTLAW_SKILL_02`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9959
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			300
+		[IS LEFT]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9959
+		[/IS INDEX]
+		[DISTANCE]
+		[>=]
+			301
+		[IS LEFT]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9959
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			300
+		[IS RIGHT]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			9959
+		[/IS INDEX]
+		[DISTANCE]
+		[>=]
+			301
+		[IS RIGHT]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9958
+		[PARTICLE FILENAME]
+			`../Particle/throw.ptl`
+		[LEVEL]
+			0
+		[POS]
+			70	0	130
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9958
+		[PARTICLE FILENAME]
+			`../Particle/throw1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			70	0	130
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9958
+		[PARTICLE FILENAME]
+			`../Particle/throw2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			70	0	130
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		5	5	3
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`throw_throw2.act`
+	[CHANGE ACTION FILE]
+	[STAY]
+		`throw_stay2.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`throw_stay2.act`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[REVERSE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]

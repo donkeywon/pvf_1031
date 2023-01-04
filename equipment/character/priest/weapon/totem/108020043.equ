@@ -1,0 +1,136 @@
+#PVF_File
+
+[name]
+	`血缘的图腾[活动]`
+
+[basic explain]
+	`攻击时以3%%的机让敌人陷入冰冻状态
+无法进行合成和分解。`
+
+[grade]
+	24
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	20
+
+[physical attack]
+	29
+
+[stuck]
+	-1
+
+[price]
+	0
+
+[repair price]
+	30720
+
+[value]
+	0
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	273	231
+
+[equipment magical attack]
+	234	198
+
+[separate attack]
+	148	96
+
+[skill levelup]
+	`[priest]`	61	1
+	`[priest]`	13	1
+	`[priest]`	7	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/totem.img`	10
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	1	5
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入冰冻状态2秒。(若敌人高于Lv20， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。`
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		3
+	[active status]
+		`freeze`	20
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,155 @@
+#PVF_File
+
+[name]
+	`(旧) 波罗丁的天祈胸甲`
+
+[name2]
+	`Borodin's EmperorAromor Breast`
+
+[basic explain]
+	`被攻击时物理伤害 -5%%`
+
+[flavor text]
+	`波罗丁， 你的强大难道是因为你的护甲， 而不是你的力量？`
+
+[grade]
+	55
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	24
+
+[physical defense]
+	26
+
+[magical attack]
+	24
+
+[price]
+	77000
+
+[repair price]
+	61600
+
+[value]
+	61600
+
+[equipment physical defense]
+	3780	3420
+
+[icon]
+	`Item/common/coat.img`	111
+
+[field image]
+	`Item/field_equip.img`	15
+
+[equipment type]
+	`[coat]`	22
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	60
+
+[weight]
+	5000
+
+[item group name]
+	`mt coat`
+
+[cool time]
+	10000
+
+[if]
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`physical`	5
+[/then]
+
+[set name]
+	`波罗丁的天祈板金战甲  套装`
+
+[set item]
+	11657	13656	15653	19656
+[/set item]
+
+[set ability]
+	[all elemental resistance]
+		10
+	[move speed]
+		30
+	[attack speed]
+		30
+	[if]
+		[cooltime]
+			100000
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			100000
+		[reduce duration at pvp module]
+			75
+		[probability]
+			1
+		[summon monster]
+			60109	50	1
+	[/then]
+	[if]
+		[cooltime]
+			100000
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			100000
+		[reduce duration at pvp module]
+			75
+		[probability]
+			3
+		[summon monster]
+			60108	50	1
+	[/then]
+	[fullset basic explain]
+		`被攻击时， 有1%%的几率召唤出1只守护之迈拉。
+被攻击时， 有3%%的几率召唤出1只驱逐者。`
+	[fullset detail explain]
+		`被攻击时， 有1%%的几率召唤出1只Lv50的守护之迈拉协助召唤者攻击敌人， 守护之迈拉存在100秒。 (召唤的怪物只能同时存在1只， 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失)
+被攻击时， 有3%%的几率召唤出1只Lv50的驱逐者协助召唤者攻击敌人， 驱逐者存在100秒。 (召唤的怪物只能同时存在1只， 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失)`
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,175 @@
+#PVF_File
+
+[name]
+	`海妖散月拳套 (活动)`
+
+[name2]
+	`Innovation of Salty Moon`
+
+[basic explain]
+	`攻击时， 有4%%的几率使敌人进入失明状态。
+
+无法进行分解、 封装和合成。`
+
+[detail explain]
+	`攻击时， 有4%%的几率使敌人进入失明状态12秒； 失明状态下， 减少90%%视野和20%%命中率。 (若敌人高于Lv50， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+
+无法进行分解、 封装和合成。`
+
+[grade]
+	56
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	50
+
+[physical attack]
+	26
+
+[attack speed]
+	100
+
+[HP regen speed]
+	20
+
+[price]
+	0
+
+[repair price]
+	84672
+
+[value]
+	0
+
+[equipment physical attack]
+	542	500
+
+[equipment magical attack]
+	490	452
+
+[separate attack]
+	311	208
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[fighter]`	20	1
+	`[fighter]`	19	1
+	`[at fighter]`	20	1
+	`[at fighter]`	19	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/bglove.img`	21
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	3
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	1	3
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[if]
+	[cooltime]
+		18000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		12000
+	[probability]
+		4
+	[active status]
+		`blind`	50	90	20
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

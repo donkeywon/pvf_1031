@@ -1,0 +1,85 @@
+#PVF_File
+
+[name]
+	`SD 暗夜使者宠物`
+
+[name2]
+	``
+
+[explain]
+	`暴击伤害 +10%%(决斗场内 +5%%)
+
+技能等级上升的选项仅适用于暗夜使者角色。
+
+2012梦幻勇士2宠物`
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`item/creature/creature.img`	74
+
+[field image]
+	`item/fieldimage.img`	30
+
+[equipment type]
+	`[creature]`	0
+
+[sub type]
+	0
+
+[creature species]
+	168
+
+[cool time]
+	10000
+
+[skill levelup]
+	`[thief]`	29	1
+	`[thief]`	30	1
+	`[thief]`	37	1
+[/skill levelup]
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	10
+[/then]
+
+[pvp]
+	[if]
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase critical damage]
+			`%`	5
+	[/then]
+[/pvp]
+
+[move wav]
+	`CREATURE_EQUIP_TOUCH`
+
+[set item master]
+	-1
+
+[icon mark]
+	`Item/IconMark.img`	64

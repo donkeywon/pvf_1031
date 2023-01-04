@@ -1,0 +1,117 @@
+#PVF_File
+
+[name]
+	`尼尔巴斯的意志链甲斗蓬`
+
+[name2]
+	`Nilvas Will Chain Mantle`
+
+[basic explain]
+	`HP降到50%%以下时， 增加2%%的攻击速度、 施放速度和移动速度。
+HP降到50%%时开始， 每减少10%%的HP都会增加2%%的速度。
+最多可增加10%%的攻击速度、 施放速度和移动速度。`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	64
+
+[physical attack]
+	40
+
+[physical defense]
+	33
+
+[magical attack]
+	23
+
+[attack speed]
+	30
+
+[price]
+	69000
+
+[repair price]
+	60858
+
+[value]
+	55200
+
+[equipment physical defense]
+	2432	2272
+
+[icon]
+	`Item/common/shoulder.img`	141
+
+[field image]
+	`Item/field_equip.img`	12
+
+[equipment type]
+	`[shoulder]`	20
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	32
+
+[weight]
+	2300
+
+[item group name]
+	`ha shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[change status in range]
+		`hp`	50	10
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[apply status in range]
+		`move speed`
+		`%`	2	10
+	[apply status in range]
+		`attack speed`
+		`%`	2	10
+	[apply status in range]
+		`cast speed`
+		`%`	2	10
+[/then]
+
+[set name]
+	`尼尔巴斯家族的荣誉`
+
+[set item]
+	15302	100230011	100280011
+[/set item]
+
+[set ability]
+	[light attack]
+		8
+	[all elemental resistance]
+		7
+[/set ability]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

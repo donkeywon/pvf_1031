@@ -1,0 +1,121 @@
+#PVF_File
+
+[name]
+	``
+
+[name2]
+	``
+
+[explain]
+	`攻击时以1%%的机率30秒内物理爆击增加10%%。施展时以1%%机率30秒内魔法爆击增加10%%。`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	79
+
+[custom animation]
+	`TitleAnimation/prayer_greatsuccess.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[usable period]
+	30
+
+[physical attack]
+	23
+
+[magical attack]
+	15
+
+[stuck resistance]
+	10
+
+[inventory limit]
+	10000
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical critical hit`
+		`+`	10
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`magical critical hit`
+		`+`	10
+[/then]
+
+[stuck]
+	-1
+
+[skill levelup]
+	`[fighter]`	16	1
+	`[fighter]`	68	1
+	`[fighter]`	52	1
+	`[fighter]`	18	1
+	`[at fighter]`	16	1
+	`[at fighter]`	68	1
+	`[at fighter]`	52	1
+	`[at fighter]`	18	1
+[/skill levelup]
+
+[move wav]
+	`NAME_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	64

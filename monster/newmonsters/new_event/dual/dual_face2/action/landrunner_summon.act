@@ -1,0 +1,37 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/LandRunner_Summon.ani`
+	[SOUND]
+		`MIMIC_ATK`	0
+		`MIMIC_ATK2`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61642
+		[LEVEL]
+			1
+		[POS]
+			5	-1	5
+		[NO EFFECT]
+		[JUMP OUT]
+			250	0	-20
+		[NEUTRAL]
+		[NEUTRAL]
+		[USE OBJECT ZPOS]
+		[COLLISION GROUP]
+			2	0	1
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

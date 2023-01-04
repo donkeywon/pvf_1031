@@ -1,0 +1,268 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`黑鳞莫贝尼`
+
+[face image]
+	`Monster/MonsterFace.img`	455
+
+[ability table]
+	0
+
+[appear sound]
+	`MOOSAM_MEET`
+
+[damage sound]
+	`R_MOOSAM_DMG`
+
+[die sound]
+	`MOOSAM_DIE`
+
+[monster title]
+	`../title_ani/pirate_musam.ani`
+
+[ability category]
+	`[HP MAX]`	`*`	720
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	130
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	130
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	110
+[/ability category]
+
+[category]
+	`[human]`
+	`[close-manace]`
+[/category]
+
+[lie frame]
+	2	3	2	3	4
+
+[fire resistance]
+	-30	-30
+
+[water resistance]
+	30	30
+
+[dark resistance]
+	0	0
+
+[light resistance]
+	0	0
+
+[freeze resistance]
+	100	100
+
+[stun resistance]
+	50	50
+
+[blind resistance]
+	50	50
+
+[stone resistance]
+	50	50
+
+[sleep resistance]
+	50	50
+
+[hold resistance]
+	50	50
+
+[slow resistance]
+	50	50
+
+[curse resistance]
+	50	50
+
+[confuse resistance]
+	50	50
+
+[lightning resistance]
+	-10	-10
+
+[bleeding resistance]
+	0	0
+
+[poison resistance]
+	10	10
+
+[burn resistance]
+	-10	-10
+
+[piercing resistance]
+	20	20
+
+[level]
+	68	70
+
+[move speed]
+	700	700
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	2000	2100
+
+[hit recovery]
+	1400	1400
+
+[weight]
+	19000	19000
+
+[stuckbonus on damage]
+	10	10	10	10
+
+[warlike]
+	70
+
+[think term]
+	200
+
+[destination change term]
+	1000
+
+[vision]
+	1000
+
+[item]
+[/item]
+
+[common champion drop item]
+[/common champion drop item]
+
+[add gravity in aerial]
+	1	10.0	-300.0
+
+[event super on scr]
+	`[on hp]`	60	5000	1
+	`[unbreakable]`	-1	-1	-1	-1
+[/event super on scr]
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[jump action]
+	`Action/jump.act`
+
+[action list]
+	`Action/CannonAttack.act`
+	`Action/ColumnAttack.act`
+	`Action/ScrewReady.act`
+	`Action/ScrewAttack.act`
+	`Action/SuperScrewAttack.act`
+	`Action/SummonPlover.act`
+	`Action/Standup.act`
+	`Action/CooltimeReset.act`
+	`Action/JumpAttack.act`
+	`Action/Sit2.act`
+	`Action/hero_ColumnAttack.act`
+	`Action/SummonCroco.act`
+	`Action/SuperScrewReady.act`
+	`Action/Dash.act`
+	`Action/casting_cool.act`
+	`Action/supermove.act`
+	`Action/CannonAttack2_1.act`
+	`Action/rolling_move1.act`
+	`Action/rolling_move2.act`
+	`Action/rolling_move3.act`
+	`Action/CannonAttack2_2.act`
+	`Action/CannonAttack2_3.act`
+	`Action/SummonPlover2.act`
+[/action list]
+
+[cooltime]
+	12000	5000	5000	5000	5000	35000	0	45000	0	0	13000	35000	15000	6000	35000	9000	120000	25000	25000	25000	120000	120000	45000
+[/cooltime]
+
+[attack info]
+	``
+	`attackinfo/DownAttack1.atk`
+	`attackinfo/ScrewAttack.atk`
+	`attackinfo/ScrewAttack.atk`
+	`attackinfo/ScrewAttack2.atk`
+	``
+	`attackinfo/standup.atk`
+	``
+	``
+	``
+	`attackinfo/DownAttack1.atk`
+	``
+	``
+	`attackinfo/DownAttack1.atk`
+	``
+	`attackinfo/superAttack.atk`
+	``
+	`attackinfo/ScrewAttack2.atk`
+	`attackinfo/ScrewAttack2.atk`
+	`attackinfo/ScrewAttack2.atk`
+	`attackinfo/ScrewAttack2.atk`
+	`attackinfo/ScrewAttack2.atk`
+	``
+[/attack info]
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/heroEvent.ai`
+		`ai/DestinationSelect.ai`
+		`ai/heroAction.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[level of difficulty]
+	[easy]
+		-40	2000
+	[medium]
+		-20	1000
+	[hard]
+		0	600
+	[ultimate]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]

@@ -1,0 +1,81 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/SpinCore.ani`
+	[SUB ANI]
+		`../animation/TyphoonDust1.ani`	0	1
+		`../animation/TyphoonDust2.ani`	0	2
+		`../animation/TyphoonDust3.ani`	0	3
+		`../Animation/Spin32.ani`	0	4
+		`../Animation/Spin31.ani`	0	5
+		`../Animation/Spin22.ani`	0	6
+		`../Animation/Spin21.ani`	0	7
+		`../Animation/Spin12.ani`	0	8
+		`../Animation/Spin11.ani`	0	9
+		`../Animation/Spin32.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`VERRICKTM_TORNADO`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[MONSTER]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/sandstorm.ptl`	0	0	50
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PULL APPENDAGE EX]
+		[SPEED]
+			1.5	1.4
+		[VALIDTIME]
+			8000
+		[USE TARGET]
+			0
+		[OFFSET POS]
+			0	0
+		[MIN DISTANCE]
+			10
+	[/PULL APPENDAGE EX]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]

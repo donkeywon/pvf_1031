@@ -1,0 +1,198 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	40.0	40.0	10.0	10.0
+		[true]
+	
+		[think]
+			[check skill on]
+				80
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`g2`
+				[true]
+				[import ai]
+					`approach_pattern.ai`
+				[false]
+				[return str]
+					`g2`
+			[/think]
+	[false]
+	[think]
+		[check skill on]
+			81
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`g3`
+			[true]
+			[import ai]
+				`approach_pattern.ai`
+			[false]
+			[return str]
+				`g3`
+		[/think]
+	[false]
+	[import ai]
+		`approach_pattern.ai`
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	350.0	350.0	10.0	10.0
+		[true]
+	
+		[think]
+			[check skill on]
+				80
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`g2`
+				[true]
+			
+				[think]
+					[hp]
+						`%<=`	40.0
+					[true]
+					[import ai]
+						`ai_pattern2.ai`
+					[false]
+				
+					[think]
+						[hp]
+							`%<=`	60.0
+						[true]
+						[import ai]
+							`ai_pattern3.ai`
+						[false]
+					
+						[think]
+							[hp]
+								`%<=`	80.0
+							[true]
+							[import ai]
+								`ai_pattern4.ai`
+							[false]
+							[import ai]
+								`ai_pattern5.ai`
+						[/think]
+	[/think]
+	[/think]
+	[false]
+	[return str]
+		`g2`
+	[/think]
+	[false]
+	[think]
+		[check skill on]
+			81
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`g3`
+			[true]
+		
+			[think]
+				[hp]
+					`%<=`	40.0
+				[true]
+				[import ai]
+					`ai_pattern2.ai`
+				[false]
+			
+				[think]
+					[hp]
+						`%<=`	60.0
+					[true]
+					[import ai]
+						`ai_pattern3.ai`
+					[false]
+				
+					[think]
+						[hp]
+							`%<=`	80.0
+						[true]
+						[import ai]
+							`ai_pattern4.ai`
+						[false]
+						[import ai]
+							`ai_pattern5.ai`
+					[/think]
+	[/think]
+	[/think]
+	[false]
+	[return str]
+		`g3`
+	[/think]
+	[false]
+	[think]
+		[hp]
+			`%<=`	40.0
+		[true]
+		[import ai]
+			`ai_pattern2.ai`
+		[false]
+	
+		[think]
+			[hp]
+				`%<=`	60.0
+			[true]
+			[import ai]
+				`ai_pattern3.ai`
+			[false]
+		
+			[think]
+				[hp]
+					`%<=`	80.0
+				[true]
+				[import ai]
+					`ai_pattern4.ai`
+				[false]
+				[import ai]
+					`ai_pattern5.ai`
+			[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[hp]
+			`%<=`	40.0
+		[true]
+		[import ai]
+			`ai_pattern2.ai`
+		[false]
+	
+		[think]
+			[hp]
+				`%<=`	60.0
+			[true]
+			[import ai]
+				`ai_pattern3.ai`
+			[false]
+		
+			[think]
+				[hp]
+					`%<=`	80.0
+				[true]
+				[import ai]
+					`ai_pattern4.ai`
+				[false]
+				[import ai]
+					`ai_pattern5.ai`
+			[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

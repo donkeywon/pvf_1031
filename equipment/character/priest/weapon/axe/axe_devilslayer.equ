@@ -1,0 +1,136 @@
+#PVF_File
+
+[name]
+	`恶魔战斧`
+
+[name2]
+	`Devil Slayer`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入出血状态。
+攻击速度 +2%%`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入出血状态10秒； 出血状态下的敌人， 每0.5秒受到97点伤害。 (若敌人高于Lv50， 则减少进入异常状态的几率； 反之， 则增加几率)
+攻击速度 +2%%`
+
+[grade]
+	54
+
+[rarity]
+	2
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	50
+
+[physical attack]
+	35
+
+[attack speed]
+	-60
+
+[stuck]
+	-2
+
+[price]
+	86400
+
+[repair price]
+	72576
+
+[value]
+	69120
+
+[equipment physical attack]
+	562	542
+
+[equipment magical attack]
+	398	384
+
+[separate attack]
+	233	156
+
+[skill levelup]
+	`[priest]`	50	1
+	`[priest]`	85	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/priest/axe.img`	24
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	2	7
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		18000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[probability]
+		2
+	[active status]
+		`bleeding`	50	1950
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

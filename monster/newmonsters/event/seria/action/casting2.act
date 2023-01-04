@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Casting1.ani`
+	[SUB ANI]
+		`../Animation/weapon/Casting1.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`SE_STORAGE_01`	0
+		`SE_STORAGE_02`	6
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			19508
+		[PARTICLE FILENAME]
+			`../Particle/Box_Drop.ptl`
+		[LEVEL]
+			0
+		[POS]
+			200	0	300
+		[FIX DIRECTION]
+		[RIGHT]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

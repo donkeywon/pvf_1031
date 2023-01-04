@@ -1,0 +1,130 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	32
+[/dungeon]
+
+[type]
+	`[normal]`
+
+[greed]
+	`MM EE`
+
+[tile]
+	`Tile/underdown.til`
+	`Tile/underdown.til`
+	`Tile/undermid.til`
+	`Tile/underdown.til`
+	`Tile/underup.til`
+	`Tile/undermid.til`
+	`Tile/undermid.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/mlfar.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/mlmid.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	12	239	1556	230	321	192	1240	288
+
+[sound]
+	`R_AMB_CAVE`
+	`M_SPIDER`
+[/sound]
+
+[animation]
+	`Animation/mlupweb4.ani`	`[close]`	1187	-55	0
+	`Animation/mlupweb3.ani`	`[close]`	1063	-65	0
+	`Animation/mlupweb3.ani`	`[close]`	1318	-67	0
+	`Animation/mlfarstreamani.ani`	`[distantback]`	0	-120	0
+	`Animation/mlfarstreamani.ani`	`[distantback]`	640	-120	0
+	`Animation/mlfarstreamani.ani`	`[distantback]`	1280	-120	0
+	`Animation/mlfarstreamani.ani`	`[distantback]`	1920	-120	0
+[/animation]
+
+[passive object]
+	804	710	201	0
+[/passive object]
+
+[monster]
+	420	1	0	1059	203	0	1	1	`[fixed]`	`[normal]`
+	405	1	0	782	207	0	1	1	`[fixed]`	`[normal]`
+	405	1	0	849	227	0	1	1	`[fixed]`	`[normal]`
+	411	1	0	1284	229	0	1	1	`[fixed]`	`[normal]`
+	420	1	0	1185	239	0	1	1	`[fixed]`	`[normal]`
+	411	1	0	714	251	0	1	1	`[fixed]`	`[normal]`
+	405	1	0	771	253	0	1	1	`[fixed]`	`[normal]`
+	420	1	0	1079	257	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[special passive object]
+	818	585	189	0	1
+	`[item]`	1	1	-1	-1	-1
+	818	947	227	0	1
+	`[item]`	1	1	-1	-1	-1
+	815	410	228	0	2
+	`[item]`	2	-1	1	-1	-1
+	`[monster]`	403	41	1	5	-1
+	815	388	257	0	3
+	`[monster]`	403	41	1	5	-1
+	`[trap]`	2511	1	1	5	-1
+	`[trap]`	2611	1	1	5	-1
+	818	628	271	0	1
+	`[item]`	1	1	-1	-1	-1
+	815	371	281	0	2
+	`[item]`	2	-1	1	-1	-1
+	`[monster]`	403	41	1	5	-1	
+[/special passive object]
+
+[event monster position]
+	826	252	0
+	1022	223	0
+	659	208	0
+	816	200	0
+[/event monster position]
+
+[map name]
+	`PVP 无名`

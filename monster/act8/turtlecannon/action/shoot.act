@@ -1,0 +1,108 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Shoot.ani`
+	[SUB ANI]
+		`../Animation/Shoot_smoke.ani`	0	-10
+		`../Animation/Shoot_e.ani`	0	0
+		`../Animation/Shoot_fire.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`BL_SHELL`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2	3
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30077
+		[PARTICLE FILENAME]
+			`../Particle/Shoot.ptl`
+		[LEVEL]
+			0
+		[POS]
+			65	0	84
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30077
+		[PARTICLE FILENAME]
+			`../Particle/Shoot.ptl`
+		[LEVEL]
+			0
+		[POS]
+			65	0	84
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30077
+		[PARTICLE FILENAME]
+			`../Particle/Shoot.ptl`
+		[LEVEL]
+			0
+		[POS]
+			65	0	84
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			10168
+		[PARTICLE FILENAME]
+			`../Particle/Shoot.ptl`
+		[LEVEL]
+			0
+		[POS]
+			65	0	84
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			-150
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			-2
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

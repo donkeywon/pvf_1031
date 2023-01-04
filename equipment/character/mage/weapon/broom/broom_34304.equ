@@ -1,0 +1,215 @@
+#PVF_File
+
+[name]
+	`暗黑魔女的扫把 [网吧]`
+
+[name2]
+	``
+
+[basic explain]
+	`[变异苍蝇拍]成功率 +5%%
+[变异苍蝇拍]召唤兽持续时间 +10秒
+施放[控制]时， 可对所有敌人发动暗黑爆炸， 同时命中的敌人将进入束缚状态。(冷却时间为10秒)
+攻击束缚状态的敌人时， 附加5%%的伤害。
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。`
+
+[detail explain]
+	`[变异苍蝇拍]成功率 +5%%
+[变异苍蝇拍]召唤兽持续时间 +10秒
+施放[控制]时， 可对所有敌人发动暗黑爆炸， 使其受到1200点的伤害， 同时命中的敌人将进入束缚状态2秒。 (若敌人高于Lv69， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间为10秒)
+攻击束缚状态的敌人时， 附加5%%的伤害。
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	65
+
+[magical attack]
+	46
+
+[attack speed]
+	60
+
+[move speed]
+	30
+
+[price]
+	110400
+
+[repair price]
+	92736
+
+[value]
+	88320
+
+[equipment physical attack]
+	654	604
+
+[equipment magical attack]
+	719	664
+
+[separate attack]
+	389	264
+
+[skill levelup]
+	`[mage]`	95	1
+	`[mage]`	85	2
+	`[creator mage]`	253	2
+	`[creator mage]`	248	3
+[/skill levelup]
+
+[icon]
+	`Item/weapon/mage/broom.img`	52
+
+[field image]
+	`Item/field_weapon.img`	10
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	14	5
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	14	5
+
+[layer variation]
+	2150
+	`at_brooma`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_broomd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	14	5
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BROOM_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`broom`
+
+[cool time]
+	10000
+
+[required skill]
+	91
+
+[skill data up]
+	`[mage]`	95	`[all]`	`[static]`	1	`+`	5
+	`[mage]`	95	`[all]`	`[level]`	7	`+`	10000
+[/skill data up]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]
+
+[if]
+	[use skill]
+		`creator mage`	252
+	[/use skill]
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[passive object]
+		48314	0	0	0	69	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[target active status]
+		`hold`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	5
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

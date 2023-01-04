@@ -1,0 +1,44 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Throw3.ani`
+	[SUB ANI]
+		`../Animation/back/Throw3_back.ani`	0	-1
+		`../Animation/weapon/Throw3_wp.ani`	0	0
+		`../Animation/shoes/Throw3_shoes.ani`	0	1
+		`../Animation/shirts/Throw3_shirts.ani`	0	1
+		`../Animation/pants/Throw3_pants.ani`	0	1
+		`../Animation/hat/Throw3_hat.ani`	0	2
+	[/SUB ANI]
+	[SOUND PROBABILITY]
+		`R_GARCHER_SKILL_01`	2	10
+		`R_GARCHER_SKILL_02`	0	30
+		`JACO_BOWATK`	4	100
+	[/SOUND PROBABILITY]
+	[SPEECH]
+		`发射!`	0	30
+		`集中射击!`	0	40
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8478
+		[PARTICLE FILENAME]
+			`../Particle/Arrow_up.ptl`
+		[LEVEL]
+			0
+		[POS]
+			20	0	125
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

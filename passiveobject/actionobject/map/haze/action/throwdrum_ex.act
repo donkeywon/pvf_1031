@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/NapalmBombExplosion.ani`
+	[SUB ANI]
+		`../Animation/blast-back.ani`	0	1
+		`../Animation/NapalmBombExplosionDodge.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`FIRE_EXPLOSION_CREATE`	0
+		`R_BOMB`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS INDEX]
+			56402
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		-15
+	[%]
+[/BEHAVIOR]

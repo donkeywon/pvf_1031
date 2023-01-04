@@ -1,0 +1,232 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`魔法巨龙石像`
+
+[face image]
+	`Monster/ch_Monsterface.img`	18
+
+[width]
+	250	120
+
+[die effect]
+	0	3	1
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	2500
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	420
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	450
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	520
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	500
+[/ability category]
+
+[category]
+	`[dragon]`
+	`[fort armor]`
+	`[fixture]`
+[/category]
+
+[fire resistance]
+	250	250
+
+[water resistance]
+	250	250
+
+[dark resistance]
+	250	250
+
+[light resistance]
+	100	100
+
+[freeze resistance]
+	1000	1000
+
+[stun resistance]
+	1000	1000
+
+[blind resistance]
+	1000	1000
+
+[stone resistance]
+	1000	1000
+
+[sleep resistance]
+	1000	1000
+
+[hold resistance]
+	1000	1000
+
+[slow resistance]
+	1000	1000
+
+[curse resistance]
+	1000	1000
+
+[confuse resistance]
+	1000	1000
+
+[lightning resistance]
+	1000	1000
+
+[bleeding resistance]
+	1000	1000
+
+[poison resistance]
+	1000	1000
+
+[burn resistance]
+	1000	1000
+
+[piercing resistance]
+	0	0
+
+[weapon break resistance]
+	400	400
+
+[targeting bonus]
+	50	75	90	0	95	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	`[stand]`
+	`[dash]`	0	0	0
+
+[item]
+[/item]
+
+[change direction by target]
+	0
+
+[HP regen speed]
+	1000	1300
+
+[MP regen speed]
+	1000	1300
+
+[hp regen rate]
+	0.0	0.0
+
+[level]
+	80	83
+
+[move speed]
+	0	0
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1300	1300
+
+[weight]
+	250000	250000
+
+[drop item offset]
+	0	0
+
+[fix direction]
+	`[right]`
+
+[common champion drop item]
+[/common champion drop item]
+
+[think term]
+	2300
+
+[keep range distance with target]
+	0	0	0	0
+
+[intelligence]
+	30	30	500
+
+[vision]
+	4000
+
+[level of difficulty]
+	[easy]
+		50	5000
+	[medium]
+		60	2500
+	[hard]
+		70	0
+	[ultimate]
+		70	0
+	[hero]
+		0	0
+[/level of difficulty]
+
+[waiting action]
+	`Action/Stay.act`
+
+[proc action]
+	`Action/Proc.act`
+
+[last action]
+	`Action/Die.act`
+
+[attack action]
+	`Action/AttackDragonSummon.act`
+	`Action/AttackFireExplosion.act`
+	`Action/AttackChangeTeam.act`
+	`Action/AttackDarkMissile.act`
+	`Action/AttackFireBottom.act`
+	`Action/AttackFireBottomFollow.act`
+[/attack action]
+
+[attack info]
+	``
+	``
+	``
+	``
+	``
+	``
+[/attack info]
+
+[etc action]
+	`Action/GuardOn.act`
+	`Action/GuardOff.act`
+	`Action/Sleep.act`
+[/etc action]
+
+[cooltime]
+	18000	6000	13000	13000	20000	20000
+[/cooltime]
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

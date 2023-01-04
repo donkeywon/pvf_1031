@@ -1,0 +1,155 @@
+#PVF_File
+
+[name]
+	`祭司之哀吟`
+
+[name2]
+	`Agony Rosary`
+
+[basic explain]
+	`施放[落雷符]时， 有50%%的几率发动提升Lv5的该技能。
+施放[式神 : 玄武]时， 有50%%的几率发动提升Lv5的该技能。`
+
+[grade]
+	65
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[magical attack]
+	66
+
+[attack speed]
+	-50
+
+[cast speed]
+	50
+
+[stuck]
+	-2
+
+[price]
+	104000
+
+[repair price]
+	87360
+
+[value]
+	83200
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	562	508
+
+[equipment magical attack]
+	718	649
+
+[separate attack]
+	378	255
+
+[magical critical hit]
+	2
+
+[icon]
+	`Item/weapon/priest/rosary.img`	52
+
+[field image]
+	`Item/field_weapon.img`	12
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	12	2
+
+[layer variation]
+	200
+	`rosaryd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`rosaryc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`ROSARY_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`rosary`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[event use skill]
+		`priest`	40
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`priest`	40	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`priest`	69
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`priest`	69	5
+	[/skill levelup]
+[/then]
+
+[routing priority]
+	`priest`	3
+[/routing priority]
+
+[possible kiri protect]
+
+[need material]
+	2749095	169
+
+[icon mark]
+	`Item/IconMark.img`	68

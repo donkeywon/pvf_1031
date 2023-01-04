@@ -1,0 +1,60 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/ball_eff/Pinch_Mode.ani`
+	[SUB ANI]
+		`../Animation/weapon/Pinch_Mode.ani`	0	-5
+		`../animation/Pinch_Mode.ani`	0	0
+		`../Animation/ball/Pinch_Mode.ani`	0	0
+		`../Animation/Skill_eff/Start1_return.ani`	0	0
+		`../Animation/Skill_eff/Start2_return.ani`	0	0
+		`../Animation/Skill_eff/Start1.ani`	0	0
+		`../Animation/Skill_eff/Start2.ani`	0	0
+		`../Animation/Skill_eff/Start4_return4.ani`	0	0
+		`../Animation/Skill_eff/Start4_return3.ani`	0	0
+		`../Animation/Skill_eff/Start4_return1.ani`	0	0
+		`../Animation/Skill_eff/Start4_return2.ani`	0	0
+		`../Animation/ball_eff/Pinch_Mode.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		100	300	100	250	255	255	255
+	[FLASH SCREEN]
+		100	300	100	250	255	255	255
+	[FLASH SCREEN]
+		100	300	100	250	255	255	255
+	[FLASH SCREEN]
+		100	300	100	250	255	255	255
+	[FLASH SCREEN]
+		100	300	100	250	255	255	255
+	[FLASH SCREEN]
+		100	300	100	250	255	255	255
+	[FLASH SCREEN]
+		100	300	100	250	255	255	255
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPEND HIT]
+		0	0	0
+[/BEHAVIOR]

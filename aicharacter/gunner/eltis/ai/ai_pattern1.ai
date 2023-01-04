@@ -1,0 +1,67 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	10.0	10.0	10.0	10.0
+		[true]
+		[return str]
+			`babek`
+		[false]
+	
+		[think]
+			[void]
+				`is target in attack area()`	20.0	20.0	20.0	10.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`wind`
+				[true]
+			
+				[think]
+					[hp]
+						`%<=`	50.0
+					[true]
+					[import ai]
+						`ai_pattern2.ai`
+					[false]
+				
+					[think]
+						[hp]
+							`%<=`	80.0
+						[true]
+						[import ai]
+							`ai_pattern3.ai`
+						[false]
+						[import ai]
+							`ai_pattern4.ai`
+					[/think]
+	[/think]
+	[false]
+	[return str]
+		`wind`
+	[/think]
+	[false]
+	[think]
+		[hp]
+			`%<=`	50.0
+		[true]
+		[import ai]
+			`ai_pattern2.ai`
+		[false]
+	
+		[think]
+			[hp]
+				`%<=`	80.0
+			[true]
+			[import ai]
+				`ai_pattern3.ai`
+			[false]
+			[import ai]
+				`ai_pattern4.ai`
+		[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

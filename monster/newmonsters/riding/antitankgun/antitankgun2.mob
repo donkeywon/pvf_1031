@@ -1,0 +1,203 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`反坦克炮 P-36`
+
+[face image]
+	`Monster/MonsterFace.img`	520
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	110
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	110
+[/ability category]
+
+[fix direction]
+	`[left]`
+
+[category]
+	`[machine]`
+	`[fort armor]`
+	`[range combat]`
+	`[close-carefully]`
+[/category]
+
+[level]
+	60	60
+
+[move speed]
+	0	0
+
+[attack speed]
+	1000	1000
+
+[hit recovery]
+	800	800
+
+[weight]
+	80000	80000
+
+[vision]
+	1900
+
+[stuckbonus on damage]
+	15	25	35	35
+
+[waiting action]
+	`Action/Stay.act`
+
+[proc action]
+	`Action/Proc1.act`
+
+[last action]
+	`Action/die2.act`
+
+[attack action]
+	`Action/shoot2.act`
+	``
+	`Action/shoot2.act`
+	``
+	``
+	``
+	``
+	``
+	`Action/in2.act`
+	`Action/out2.act`
+[/attack action]
+
+[mounting action]
+	`Action/in2.act`
+
+[mounted action]
+	`Action/stay1.act`
+
+[unmounting action]
+	`Action/out2.act`
+
+[control passive object]
+	[index]
+		10568
+	[x pos]
+		-600
+	[y pos]
+		250
+	[width]
+		700
+	[height]
+		300
+	[velocity x]
+		400.0
+	[velocity y]
+		400.0
+	[fix direction]
+		`[left]`
+	[transparency]
+		[master]
+			255
+		[others]
+			50
+		[option]
+			`inherit`
+	[/transparency]
+	[option]
+		`convert y to z`
+[/control passive object]
+
+[ridableskill definition]
+	[pattern]
+		0
+	[image path]
+		`Sprite/Monster/riding/at_5t/Transport_Skill.img`
+	[skill]
+		0	-1
+		`normal`	0	-1	-1
+		`normal`	0	2	-1
+		`normal`	0	-1	-1
+		`normal`	0	-1	-1
+		`normal`	0	-1	-1
+		`normal`	0	-1	-1
+		`normal`	0	-1	-1
+		`normal`	0
+[/ridableskill definition]
+
+[ridableskill explanation]
+	[pattern]
+		0
+	[title]
+		`发射！`
+	[category]
+		`[普通]`
+	[detail]
+		`调整狙击镜，瞄准发射！`
+[/ridableskill explanation]
+
+[attack info]
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+	``
+[/attack info]
+
+[cooltime]
+	500	0	500	0	0	0	0	0	2000	2000
+[/cooltime]
+
+[int data]
+	5	5000	1000	0	230	0	0	60	60	270
+[/int data]
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[keep distance with target]
+	1000
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

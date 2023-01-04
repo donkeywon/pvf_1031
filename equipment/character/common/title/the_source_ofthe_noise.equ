@@ -1,0 +1,69 @@
+#PVF_File
+
+[name]
+	`噪音发源地`
+
+[name2]
+	`The Source of the Noise`
+
+[explain]
+	`攻击时， 有3%%的几率召唤出服务器喇叭。 (在决斗场中无效)`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	346
+
+[custom animation]
+	`TitleAnimation/the_source_ofthe_noise.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[cooltime]
+		10000
+	[event attack success]
+		1
+	[disable pvp]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		3
+	[passive object]
+		62101	100	0	200	70	0	`Title_Mega_Drop.ptl`
+	[/passive object]
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

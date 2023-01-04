@@ -1,0 +1,134 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/window_1.ani`
+	[SUB ANI]
+		`../Animation/window_5.ani`	0	-10
+		`../Animation/window_2.ani`	0	0
+		`../Animation/window_3.ani`	0	0
+		`../Animation/window_4.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			160
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+	[PARTICLE]
+		`../particle/Destroy3.ptl`	0	0	100
+	[SUMMON MONSTER]
+		[INDEX]
+			61220
+		[LEVEL]
+			65
+		[POS]
+			0	-30	50
+		[JUMP OUT]
+		[RANDOM]
+			200	-200	-200	80
+		[LEFT]
+		[UP]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61220
+		[LEVEL]
+			65
+		[POS]
+			0	-30	50
+		[JUMP OUT]
+		[RANDOM]
+			200	-200	-200	80
+		[LEFT]
+		[UP]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+	[PARTICLE]
+		`../particle/Destroy3.ptl`	0	0	100
+	[SUMMON MONSTER]
+		[INDEX]
+			61219
+		[LEVEL]
+			65
+		[POS]
+			0	-30	50
+		[JUMP OUT]
+		[RANDOM]
+			200	-200	-200	80
+		[LEFT]
+		[UP]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61219
+		[LEVEL]
+			65
+		[POS]
+			0	-30	50
+		[JUMP OUT]
+		[RANDOM]
+			200	-200	-200	80
+		[LEFT]
+		[UP]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+	[PARTICLE]
+		`../particle/Destroy3.ptl`	0	0	100
+	[SUMMON MONSTER]
+		[INDEX]
+			61221
+		[LEVEL]
+			65
+		[POS]
+			0	-30	50
+		[JUMP OUT]
+		[RANDOM]
+			200	-200	-200	80
+		[LEFT]
+		[UP]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61221
+		[LEVEL]
+			65
+		[POS]
+			0	-30	50
+		[JUMP OUT]
+		[RANDOM]
+			200	-200	-200	80
+		[LEFT]
+		[UP]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

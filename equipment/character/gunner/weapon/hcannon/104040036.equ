@@ -1,0 +1,174 @@
+#PVF_File
+
+[name]
+	`地狱犬之首`
+
+[basic explain]
+	`攻击速度 +4%%
+
+普通攻击时， 会向前方发射3颗刺牙。
+被刺牙击中的敌人， 将进入出血状态， 效果持续7秒。
+角色500px范围内， 每存在1个出血状态的敌人时， 可增加自身20点力量。
+无法进行分解。`
+
+[detail explain]
+	`攻击速度 +4%%
+
+普通攻击时， 会向前方发射3颗刺牙。
+被刺牙击中的敌人， 将进入出血状态； 出血状态下的敌人， 每0.5秒会受到560点伤害， 效果持续7秒。 (冷却时间7秒； 若敌人高于Lv79， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+角色500px范围内， 每存在1个出血状态的敌人时， 可增加自身20点力量。
+无法进行分解。`
+
+[grade]
+	79
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[physical attack]
+	78
+
+[attack speed]
+	40
+
+[need material]
+	3338	840
+
+[repair price]
+	119448
+
+[value]
+	113760
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	824	753
+
+[equipment magical attack]
+	494	452
+
+[separate attack]
+	450	305
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/hcannon/hcannon.img`	88
+
+[field image]
+	`Item/field_weapon.img`	4
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	25	0
+
+[layer variation]
+	2790
+	`hcanc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`hcanb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	25	0
+
+[layer variation]
+	2790
+	`at_hcanc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_hcanb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2800
+
+[item group name]
+	`hcannon`
+
+[cool time]
+	10000
+
+[routing priority]
+	`gunner`	2
+	`at gunner`	2
+[/routing priority]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[if]
+	[cooltime]
+		7000
+	[my state]
+		`attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		48310	70	0	35	75	0	`DragonHeadEnergyBall.ptl`
+		48310	70	40	35	75	0	`DragonHeadEnergyBall.ptl`
+		48310	70	-40	35	75	0	`DragonHeadEnergyBall.ptl`
+	[/passive object]
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[variable stat]
+	`physical attack`
+	`+`	20
+	`object number`
+	`enemy`	500
+	`bleeding`	5
+[/variable stat]
+
+[icon mark]
+	`Item/IconMark.img`	66

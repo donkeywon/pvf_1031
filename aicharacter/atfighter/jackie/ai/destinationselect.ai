@@ -1,0 +1,104 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	8000.0	8000.0	5000.0	5000.0
+			`all`
+			`monster`	56466
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[set friend character]
+					0
+				[true]
+				[return]
+					5
+			[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	8000.0	8000.0	5000.0	5000.0
+			`all`
+			`passive object`	9954
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[set friend character]
+					0
+				[true]
+				[return]
+					5
+			[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	8000.0	8000.0	5000.0	5000.0
+			`all`
+			`passive object`	9955
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[set friend character]
+					0
+				[true]
+				[return]
+					5
+			[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	8000.0	8000.0	5000.0	5000.0
+			`all`
+			`passive object`	10543
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[set friend character]
+					0
+				[true]
+				[return]
+					5
+			[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	850.0	850.0	50.0	50.0
+		[true]
+		[return]
+			0
+		[false]
+	
+		[think]
+			[set friend character]
+				0
+			[true]
+			[return]
+				5
+		[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

@@ -1,0 +1,159 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/nochair_RoolingJump.ani`
+	[SUB ANI]
+		`../Animation/Stick/Stick_nochair_RoolingJump.ani`	0	10
+	[/SUB ANI]
+	[SPEECH]
+		`你以为靠近点就安全了吗?`	0	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			1200
+		[X AXIS]
+		[RANDOM]
+			300	400
+		[Y AXIS]
+		[RANDOM]
+			80	-80
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		1
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	2
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			10
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Y AXIS]
+			0
+	[/SET SPEED]
+	[SET FRAME]
+		3
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8212
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			25	10	0
+		[WARNING MARK]
+			0	0	140	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8212
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	20	0
+		[WARNING MARK]
+			0	0	140	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8212
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-25	10	0
+		[WARNING MARK]
+			0	0	140	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8212
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-25	-10	0
+		[WARNING MARK]
+			0	0	140	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8212
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	-20	0
+		[WARNING MARK]
+			0	0	140	1
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8212
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			25	-10	0
+		[WARNING MARK]
+			0	0	140	1
+	[/CREATE PASSIVEOBJECT]
+	[TRIGGER]
+	[ATTACK]
+		0	1
+	[ON]
+[/BEHAVIOR]

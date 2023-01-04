@@ -1,0 +1,322 @@
+#PVF_File
+
+[name]
+	`九龙破煞步枪`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击速度 +5%%
+施放[银弹]时， 有40%%的几率使队员的武器属性变成光属性， 效果持续20秒。
+施放[爆炎弹]时， 有35%%的几率使队员的武器属性变成火属性， 效果持续20秒。
+施放[冰冻弹]时， 有30%%的几率使队员的武器属性变成冰属性， 效果持续20秒。
+施放[破甲弹]时， 有25%%的几率使队员增加40点力量、 智力、 体力和精神， 效果持续20秒。
+攻击时， 附加6%%伤害。`
+
+[grade]
+	75
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[physical attack]
+	50
+
+[magical attack]
+	75
+
+[attack speed]
+	50
+
+[need material]
+	3285	1800
+
+[repair price]
+	113400
+
+[value]
+	108000
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	728	655
+
+[equipment magical attack]
+	633	570
+
+[separate attack]
+	441	298
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/musket/musket.img`	83
+
+[field image]
+	`Item/field_weapon.img`	3
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	26	1
+
+[layer variation]
+	2790
+	`musketc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`musketb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	26	1
+
+[layer variation]
+	2790
+	`at_musketc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_musketb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	2100
+
+[item group name]
+	`musket`
+
+[cool time]
+	10000
+
+[routing priority]
+	`gunner`	4
+	`at gunner`	4
+[/routing priority]
+
+[if]
+	[use skill]
+		`gunner`	30
+	[/use skill]
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[probability]
+		40
+	[duration]
+		20000
+	[target]
+		`party`	-1
+	[elemental weapon]
+		`light`
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	30
+	[/use skill]
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[probability]
+		40
+	[duration]
+		20000
+	[target]
+		`party`	-1
+	[elemental weapon]
+		`light`
+[/then]
+
+[if]
+	[use skill]
+		`gunner`	1
+	[/use skill]
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[probability]
+		35
+	[duration]
+		20000
+	[target]
+		`party`	-1
+	[elemental weapon]
+		`fire`
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	1
+	[/use skill]
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[probability]
+		35
+	[duration]
+		20000
+	[target]
+		`party`	-1
+	[elemental weapon]
+		`fire`
+[/then]
+
+[if]
+	[use skill]
+		`gunner`	2
+	[/use skill]
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[probability]
+		30
+	[duration]
+		20000
+	[target]
+		`party`	-1
+	[elemental weapon]
+		`water`
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	2
+	[/use skill]
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[probability]
+		30
+	[duration]
+		20000
+	[target]
+		`party`	-1
+	[elemental weapon]
+		`water`
+[/then]
+
+[if]
+	[use skill]
+		`gunner`	52
+	[/use skill]
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[probability]
+		25
+	[duration]
+		20000
+	[target]
+		`party`	-1
+	[stat]
+		`physical attack`
+		`+`	40
+	[stat]
+		`magical attack`
+		`+`	40
+	[stat]
+		`physical defense`
+		`+`	40
+	[stat]
+		`magical defense`
+		`+`	40
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	52
+	[/use skill]
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[probability]
+		25
+	[duration]
+		20000
+	[target]
+		`party`	-1
+	[stat]
+		`physical attack`
+		`+`	40
+	[stat]
+		`magical attack`
+		`+`	40
+	[stat]
+		`physical defense`
+		`+`	40
+	[stat]
+		`magical defense`
+		`+`	40
+[/then]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	6
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	68

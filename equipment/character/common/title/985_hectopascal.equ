@@ -1,0 +1,65 @@
+#PVF_File
+
+[name]
+	`完美一击`
+
+[name2]
+	`985 Hectopascal`
+
+[explain]
+	`攻击时， 有4%%的几率附加985点伤害。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	290
+
+[custom animation]
+	`TitleAnimation/985_hectopascal.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		4
+	[add absolute damage]
+		`all`
+		`+`	985
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

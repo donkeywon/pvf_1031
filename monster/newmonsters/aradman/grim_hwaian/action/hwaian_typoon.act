@@ -1,0 +1,147 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Hwaian_typoon.ani`
+	[SPEECH]
+		`做好心里准备了吗？`	0	40
+	[/SPEECH]
+	[SUB ANI]
+		`../Animation/Typoon_effect_test3.ani`	0	0
+		`../Animation/Typoon_effect_test1.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`FIRAN_GETFIRE`	0
+		`FIRAN_SKILL`	0
+		`BECK_FIREBALL`	3
+	[/SOUND]
+	[SPEECH]
+		`喷射火焰~~`	1	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CASTING]
+		1200	1
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET FRAME]
+		3
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8996
+		[PARTICLE FILENAME]
+			`../../../../../PassiveObject/ActionObject/Monster/Grim/Hwaian/Particle/Left.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	20	30
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8996
+		[PARTICLE FILENAME]
+			`../../../../../PassiveObject/ActionObject/Monster/Grim/Hwaian/Particle/Center.ptl`
+		[LEVEL]
+			0
+		[POS]
+			70	0	60
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8996
+		[PARTICLE FILENAME]
+			`../../../../../PassiveObject/ActionObject/Monster/Grim/Hwaian/Particle/Right.ptl`
+		[LEVEL]
+			0
+		[POS]
+			100	-20	100
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			180
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[burn]
+		100	60	10000	0	65	1	1200
+[/BEHAVIOR]

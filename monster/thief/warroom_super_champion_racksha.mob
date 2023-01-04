@@ -1,0 +1,177 @@
+#PVF_File
+
+[width]
+	40	10
+
+[ability category]
+	`[HP MAX]`	`*`	200
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	120
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	110
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	120
+[/ability category]
+
+[category]
+	`[human]`
+	`[melee combat]`
+	`[close-carefully]`
+[/category]
+
+[level]
+	52	57
+
+[fire resistance]
+	0	0
+
+[water resistance]
+	0	0
+
+[dark resistance]
+	-20	-20
+
+[move speed]
+	700	700
+
+[attack speed]
+	800	800
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	600	600
+
+[weight]
+	80000	80000
+
+[sight]
+	800
+
+[diving sight]
+	80	100
+
+[targeting low HP]
+	1
+
+[warlike]
+	90
+
+[spawn prob]
+	35
+
+[attack delay]
+	2000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[item]
+	3183	1045
+[/item]
+
+[common champion drop item]
+[/common champion drop item]
+
+[attack kind]
+	30.0	0.0	0.0	1	100	0	0	0	20	0	10	0
+	30.0	0.0	0.0	1	100	0	0	0	10	0	20	0
+	20.0	0.0	0.0	1	50	0	0	0	5	0	5	0
+	20.0	0.0	0.0	1	100	0	0	0	20	0	20	0
+	60.0	0.0	0.0	1	100	0	0	0	20	0	20	0
+	30.0	0.0	0.0	1	100	0	0	0	20	0	20	0
+[/attack kind]
+
+[die effect]
+	0	21	0
+
+[face image]
+	`Monster/MonsterFace.img`	187
+
+[attack motion]
+	`RackshaAni/attack1.ani`
+	`RackshaAni/attack2.ani`
+	`RackshaAni/HoldReadyMotion.ani`
+	`RackshaAni/Drop.ani`
+	`RackshaAni/Throw.ani`
+	`RackshaAni/Drop.ani`
+[/attack motion]
+
+[attack info]
+	`AttackInfo/Attack1.atk`
+	`AttackInfo/Attack2.atk`
+	`AttackInfo/Hold.atk`
+	`AttackInfo/Hold.atk`
+	`AttackInfo/Hold.atk`
+	`AttackInfo/Hold.atk`
+[/attack info]
+
+[waiting motion]
+	`RackshaAni/Stay.ani`
+
+[move motion]
+	`RackshaAni/Move.ani`
+
+[sit motion]
+	`RackshaAni/Sit.ani`
+
+[damage motion 1]
+	`RackshaAni/Damage1.ani`
+
+[damage motion 2]
+	`RackshaAni/Damage2.ani`
+
+[down motion]
+	`RackshaAni/Down.ani`
+
+[overturn motion]
+	`RackshaAni/Overturn.ani`
+
+[etc motion]
+	`RackshaAni/HoldMotion.ani`
+	`RackshaAni/Hold.ani`
+[/etc motion]
+
+[int data]
+	5000	5000	10	500	400	200	6	100	100	6000
+[/int data]
+
+[name]
+	`老鼠商人洛克沙`
+
+[speech on situation]
+	`[on appear]`	`我没见过你……混哪的？`	0	`[on etc]`
+	`这家伙交给我！`	0	`[on etc]`	`唧唧，失败了哦！`
+	0	`[on etc]`	`赶紧给大爷消失！`	0
+[/speech on situation]
+
+[ready action]
+	`[motion index]`	3
+	`[effect ani file & layer index]`	1
+	`RackshaAni/DropEffect.ani`	100
+[/ready action]
+
+[hold attack]
+	`[function index]`	0
+	`[attack index]`	2
+	`[offset]`	30	1
+	`[animation index]`	0
+	`[min hold]`	5
+	`[max hold]`	10
+[/hold attack]
+
+[throw attack]
+	`[attack index]`	4
+	`[passive object number]`	1
+	`[passive object filename]`
+	`Particle/RatThrow.ptl`
+	`[object type]`	1
+	`[passive object index]`	30541
+	`[power]`	0
+	`[throw frame]`	4
+	`[passive object start x cood]`	20
+	`[passive object start y cood]`	0
+	`[passive object start z cood]`	60
+	`[attack number]`	1
+	`[throw sound]`
+	`THROW_RAT`
+[/throw attack]

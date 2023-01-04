@@ -1,0 +1,110 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Casting3_2.ani`
+	[SUB ANI]
+		`../Animation/weapon/Casting3.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`R_SE_BCUBE`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			19510
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		19	19
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE RIDABLESKILL PATTERN]
+		0
+	[CHANGE ACTION FILE]
+	[STAY]
+		`Stay.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`Move.act`
+	[CHANGE ACTION FILE]
+	[SIT]
+		`Sit.act`
+	[CHANGE ACTION FILE]
+	[DASH]
+		`dash.act`
+	[CHANGE ACTION FILE]
+	[DASHATTACK]
+		`DashAttack.act`
+	[CHANGE ACTION FILE]
+	[DOWN]
+		`Down.act`
+	[CHANGE ACTION FILE]
+	[JUMP]
+		`Jump.act`
+	[CHANGE ACTION FILE]
+	[JUMPATTACK]
+		`JumpAttack.act`
+	[CHANGE ACTION FILE]
+	[OVERTURN]
+		`Overturn.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`Damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`Damage2.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		0
+		`Attack1.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		2
+		`Throw.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		3
+		`Throw2.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		4
+		`Casting2.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		5
+		`Scream.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		6
+		`Casting1.act`
+	[CHANGE ACTION FILE]
+	[ATTACK]
+		7
+		`Casting3.act`
+	[RESTART COOLTIME]
+[/BEHAVIOR]

@@ -1,0 +1,140 @@
+#PVF_File
+
+[name]
+	`灭屠虎牙`
+
+[name2]
+	`Extinction of Oblique`
+
+[basic explain]
+	`施放技能时， 有3%%的几率使特定的敌人进入减速状态， 并使自身增加智力和施放速度。`
+
+[detail explain]
+	`施放技能时， 有3%%的几率使300px范围内最近的敌人进入减速状态12秒， 减速状态下的敌人减少15%%的移动速度和攻击速度； 同时还会使自身增加15点智力和10%%的施放速度， 效果持续12秒。 (若敌人高于Lv60， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	63
+
+[rarity]
+	5
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[magical attack]
+	69
+
+[magical defense]
+	7
+
+[attack speed]
+	-50
+
+[cast speed]
+	50
+
+[anti evil]
+	8
+
+[need material]
+	3228	60
+
+[repair price]
+	74088
+
+[value]
+	70560
+
+[equipment physical attack]
+	500	479
+
+[equipment magical attack]
+	639	612
+
+[separate attack]
+	314	212
+
+[magical critical hit]
+	2
+
+[icon]
+	`Item/weapon/priest/rosary.img`	38
+
+[field image]
+	`Item/field_weapon.img`	12
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[priest]`
+
+[variation]
+	6	0
+
+[layer variation]
+	200
+	`rosaryd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`rosaryc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`ROSARY_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`rosary`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		12000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy near`	300
+	[duration]
+		12000
+	[probability]
+		3
+	[active status]
+		`slow`	60	15	15
+	[target]
+		`myself`	-1
+	[stat]
+		`magical attack`
+		`+`	22
+	[stat]
+		`cast speed`
+		`+`	100
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,42 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_0_2.ani`
+	[SUB ANI]
+		`../Animation/attack_0_1_0.ani`	0	1
+		`../Animation/attack_0_0_0.ani`	0	2
+		`../Animation/attack_0_0_1.ani`	0	3
+		`../Animation/attack_0_0_2.ani`	0	4
+	[/SUB ANI]
+	[SPEECH]
+		`下地狱吧！！`	0	30
+	[/SPEECH]
+	[SOUND]
+		`PARIS_SKILL_02_1`	0
+		`PARIS_LIGHTNING_CHARGE`	3
+		`PARIS_SKILL_02_2`	12
+		`PATRIS_LIGHTNING`	14
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		14	14
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			15122
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			55	0	70
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,203 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/proc.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		2	2
+	[DO PROC BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`修改下……用两根手指……`
+	[TRIGGER]
+	[MOVE]
+		0
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		3	3
+	[DO PROC BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`呃……再加一根手指……`
+	[TRIGGER]
+		2
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO PROC BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		-1
+	[%]
+	[ACTIVE STATUS]
+	[stun]
+		70	70	1000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO PROC BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`我只用一根手指就能对付你。`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		4	4
+	[DO PROC BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`你还不错~现在开始正式切磋！`
+	[CHANGE AI]
+	[NORMAL]
+		2
+		`bsword.ai`
+	[CHANGE AI]
+	[NORMAL]
+		1
+		`DestinationSelect2.ai`
+	[TRIGGER]
+		5
+	[ON]
+	[TRIGGER]
+	[MOVE]
+		0
+	[OFF]
+	[TRIGGER]
+	[MOVE]
+		1
+	[ON]
+	[TRIGGER]
+	[MOVE]
+		2
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS INDEX]
+			9881
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO PROC BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		10	5	10	6	10	7	10	8	10	9	10
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			20033
+		[PARTICLE FILENAME]
+			`../Particle/Wave.ptl`
+		[LEVEL]
+			60
+		[POS]
+			1	0	-150
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			20034
+		[PARTICLE FILENAME]
+			`../Particle/Wave.ptl`
+		[LEVEL]
+			60
+		[POS]
+			1	0	-150
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			20035
+		[PARTICLE FILENAME]
+			`../Particle/Wave.ptl`
+		[LEVEL]
+			60
+		[POS]
+			1	0	-150
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			20036
+		[PARTICLE FILENAME]
+			`../Particle/Wave.ptl`
+		[LEVEL]
+			60
+		[POS]
+			1	0	-150
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			20037
+		[PARTICLE FILENAME]
+			`../Particle/Wave.ptl`
+		[LEVEL]
+			60
+		[POS]
+			1	0	-150
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]

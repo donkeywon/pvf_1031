@@ -1,0 +1,83 @@
+#PVF_File
+
+[name]
+	`影子杀手`
+
+[name2]
+	`I want See Your Back`
+
+[explain]
+	`背击攻击时， 有7%%的几率使自身增加3%%的攻击速度和5%%的施放速度， 效果持续15秒。`
+
+[flavor text]
+	`掉落的肥皂， 他们尴尬的微笑着……谁先捡肥皂呢？`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title_tw.img`	1
+
+[custom animation]
+	`TitleAnimation/i_want_see_your_back.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	13
+
+[magical attack]
+	13
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[cooltime]
+		25000
+	[attack condition]
+		`back attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[probability]
+		7
+	[stat]
+		`attack speed`
+		`+`	30
+	[stat]
+		`cast speed`
+		`+`	50
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

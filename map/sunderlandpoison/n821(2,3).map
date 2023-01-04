@@ -1,0 +1,190 @@
+#PVF_File
+
+[player number]
+	2	8
+
+[pvp start area]
+	0	0	0	0
+	0	0	0	0
+	0	0	0	0
+
+[dungeon]
+	6
+[/dungeon]
+
+[type]
+	`[normal]`
+
+[greed]
+	`FF EE`
+
+[tile]
+	`Tile/ForestOver.til`
+	`Tile/ForestOverUnder.til`
+	`Tile/ForestUnderOver.til`
+	`Tile/ForestOver.til`
+	`Tile/ForestOverUnder.til`
+	`Tile/ForestUnderOver.til`
+	`Tile/ForestOver.til`
+[/tile]
+
+[far sight scroll]
+	56
+
+[middle sight scroll]
+	90
+
+[near sight scroll]
+	110
+
+[background animation]
+	[ani info]
+		[filename]
+			`Animation/far0.ani`
+		[layer]
+			`[distantback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`Animation/mid0.ani`
+		[layer]
+			`[middleback]`
+		[order]
+			`[below]`
+	[/ani info]
+	[ani info]
+		[filename]
+			`../CommonAnimation/pfog.ani`
+		[layer]
+			`[close]`
+		[order]
+			`[upper]`
+	[/ani info]
+[/background animation]
+
+[pathgate pos]
+	14	238	1554	234	292	148	1274	346
+
+[sound]
+	`M_SUNDERLAND`
+	`AMB_FOREST_02`
+[/sound]
+
+[animation]
+	`Animation/DeadTree1.ani`	`[close]`	1058	560	0
+	`Animation/DeadTree0.ani`	`[close]`	352	476	0
+	`Animation/DeadTree1.ani`	`[close]`	626	615	0
+	`Animation/Flower2.ani`	`[normal]`	890	296	0
+	`Animation/Flower1.ani`	`[normal]`	1264	294	0
+	`Animation/Flower1.ani`	`[normal]`	359	284	0
+	`Animation/Flower2.ani`	`[normal]`	936	242	0
+	`Animation/Flower1.ani`	`[normal]`	1264	232	0
+	`Animation/Flower1.ani`	`[normal]`	381	200	0
+	`Animation/smallTree0.ani`	`[normal]`	460	160	0
+	`Animation/smallTree0.ani`	`[normal]`	560	140	0
+	`Animation/Grass0.ani`	`[bottom]`	1357	324	0
+	`Animation/Grass0.ani`	`[bottom]`	678	219	0
+	`Animation/Grass0.ani`	`[bottom]`	733	290	0
+	`Animation/BurntTree4.ani`	`[closeback]`	868	138	0
+	`Animation/BurntTree6.ani`	`[closeback]`	92	148	0
+	`Animation/BurntTree3.ani`	`[closeback]`	1231	146	0
+	`Animation/smallTree1.ani`	`[closeback]`	1088	156	0
+	`Animation/BurntTree3.ani`	`[closeback]`	264	129	0
+	`Animation/BurntTree4.ani`	`[closeback]`	1481	145	0
+[/animation]
+
+[passive object]
+	1012	1122	225	0
+	1012	1152	255	0
+	1011	574	269	0
+	1013	486	305	0
+	1013	688	307	0
+	1011	588	335	0
+	3000	893	149	0
+	3001	1131	195	0
+	3003	1139	195	0
+	3000	1181	203	0
+	3000	1067	203	0
+	3000	1207	209	0
+	3004	1039	209	0
+	3000	1225	219	0
+	3004	1021	223	0
+	3003	575	237	0
+	3000	1239	239	0
+	3003	1245	239	0
+	3003	519	239	0
+	3004	1035	241	0
+	3003	633	241	0
+	3004	1051	247	0
+	3000	1251	247	0
+	3000	475	247	0
+	3003	693	249	0
+	3005	1185	255	0
+	293	295	262	0
+	3000	717	265	0
+	3000	1239	281	0
+	3003	1213	285	0
+	3003	445	285	0
+	3004	621	285	0
+	3003	1081	287	0
+	3003	1125	289	0
+	3000	719	291	0
+	3005	541	291	0
+	3003	1169	291	0
+	3000	749	301	0
+	3003	417	301	0
+	3003	411	319	0
+	3000	733	331	0
+	3004	587	331	0
+	3003	445	337	0
+	3005	649	337	0
+	293	1083	346	0
+	3003	467	359	0
+	3000	729	359	0
+[/passive object]
+
+[monster]
+	5002	1	0	602	202	0	1	1	`[fixed]`	`[normal]`
+	5002	1	0	928	204	0	1	1	`[fixed]`	`[normal]`
+	5002	1	0	1272	204	0	1	1	`[fixed]`	`[normal]`
+	5003	1	0	414	226	0	1	1	`[fixed]`	`[normal]`
+	5003	1	0	567	297	0	1	1	`[fixed]`	`[normal]`
+	5002	1	0	834	300	0	1	1	`[fixed]`	`[normal]`
+	5003	1	0	988	312	0	1	1	`[fixed]`	`[normal]`
+	5003	1	0	1220	326	0	1	1	`[fixed]`	`[normal]`
+[/monster]
+
+[monster specific AI]
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+	`[normal]`
+[/monster specific AI]
+
+[special passive object]
+	222	1140	176	0	1
+	`[item]`	2	-1	4	-1	-1
+	222	1048	180	0	2
+	`[trap]`	48003	2	3	10	-1
+	`[trap]`	48023	11	2	10	-1
+	228	1011	254	0	1
+	`[item]`	0	2	-1	-1	-1
+	228	755	276	0	1
+	`[item]`	0	2	-1	-1	-1	
+[/special passive object]
+
+[event monster position]
+	668	181	0
+	835	195	0
+	923	266	0
+	856	330	0
+[/event monster position]
+
+[map name]
+	`PVP 无名`

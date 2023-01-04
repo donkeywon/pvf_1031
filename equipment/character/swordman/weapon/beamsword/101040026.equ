@@ -1,0 +1,161 @@
+#PVF_File
+
+[name]
+	`塞吉彬塞伯[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`普通攻击时， 有12%%的机率释放念力弹
+无法进行合成和分解。`
+
+[detail explain]
+	`普通攻击时以12%%的机率施展念力弹(决斗场内修正为 2.5%% 机率)
+无法进行分解。`
+
+[required skill]
+	33
+
+[if]
+	[cooltime]
+		500
+	[set my state]
+		1
+	[my state]
+		`attack`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		12
+	[reduce probability to human armor at pvp module]
+		80
+	[passive object]
+		48144	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[routing priority]
+	`swordman`	1
+[/routing priority]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[grade]
+	59
+
+[rarity]
+	3
+
+[usable job]
+	`[swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[durability]
+	38
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[physical attack]
+	40
+
+[stuck]
+	1
+
+[weight]
+	2500
+
+[anti evil]
+	38
+
+[price]
+	106200
+
+[value]
+	84960
+
+[item group name]
+	`beamswd`
+
+[cool time]
+	10000
+
+[equipment physical attack]
+	502	465
+
+[equipment magical attack]
+	486	450
+
+[separate attack]
+	329	222
+
+[attack speed]
+	100
+
+[physical critical hit]
+	2
+
+[icon]
+	`Item/weapon/swordman/beamswd.img`	68
+
+[field image]
+	`Item/FieldImage.img`	35
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	19	0
+
+[layer variation]
+	2791
+	`beamswdc1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	2792
+	`beamswdc2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	651
+	`beamswdb1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	652
+	`beamswdb2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`BEAMSWD_TOUCH`
+
+[icon mark]
+	`Item/IconMark.img`	66

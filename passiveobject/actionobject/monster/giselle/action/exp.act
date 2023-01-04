@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Stinger/ATExpNormal.ani`
+	[SUB ANI]
+		`../Animation/Stinger/ExpNormal.ani`	0	0
+		`../Animation/Stinger/ATExpDodge.ani`	0	1
+	[/SUB ANI]
+	[SOUND]
+		`BOMB_03`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8715
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	1
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

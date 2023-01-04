@@ -1,0 +1,291 @@
+#PVF_File
+
+[name]
+	`释魂之真灵手炮`
+
+[basic explain]
+	`攻击速度 +2%%
+
+攻击时， 附加12%%的伤害。
+攻击时， 有5%%的几率赋予武器灵魂之力， 效果持续20秒。 (消耗1个灵魂晶石)
+- 狂暴的灵魂 : 可以使武器周身发出红光， 并增加自身100点的力量和智力、 7%%的物理暴击和魔法暴击。
+- 纯洁的灵魂 : 可以使武器周身发出金光， 并增加自身100点的精神和体力； 被攻击时， 所受伤害会减少5%%， 并恢复自身5%%的HP和MP。
+- 狂乱的灵魂 : 可以使武器周身发出紫光， 并增加自身10%%的攻击速度、 移动速度和施放速度。`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	102
+
+[attack speed]
+	20
+
+[cast speed]
+	30
+
+[move speed]
+	20
+
+[HP MAX]
+	300
+
+[MP MAX]
+	300
+
+[need material]
+	10000204	100
+
+[repair price]
+	134568
+
+[value]
+	128160
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	933	855
+
+[equipment magical attack]
+	560	513
+
+[separate attack]
+	510	347
+
+[physical critical hit]
+	5
+
+[magical critical hit]
+	5
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/hcannon/hcannon.img`	92
+
+[field image]
+	`Item/field_weapon.img`	4
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	28	0
+
+[layer variation]
+	2791
+	`hcanc1`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	651
+	`hcanb1`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	2792
+	`hcanc2`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	652
+	`hcanb2`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	28	0
+
+[layer variation]
+	2791
+	`at_hcanc1`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	651
+	`at_hcanb1`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	2792
+	`at_hcanc2`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	652
+	`at_hcanb2`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2800
+
+[item group name]
+	`hcannon`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	12
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[consume item]
+			3187	1
+		[target]
+			`myself`	-1
+		[probability]
+			5
+		[reduce probability to human armor at pvp module]
+			80
+		[equipment duration]
+			20000
+		[appendage]
+			51
+		[stat]
+			`magical attack`
+			`+`	100
+		[stat]
+			`physical attack`
+			`+`	100
+		[stat]
+			`physical critical hit rate`
+			`+`	7
+		[stat]
+			`magical critical hit rate`
+			`+`	7
+		[then probability]
+			33.0
+	[/then]
+	[then]
+		[consume item]
+			3187	1
+		[target]
+			`myself`	-1
+		[probability]
+			5
+		[reduce probability to human armor at pvp module]
+			80
+		[equipment duration]
+			20000
+		[appendage]
+			52
+		[stat]
+			`magical defense`
+			`+`	100
+		[stat]
+			`physical defense`
+			`+`	100
+		[restore]
+			`hp`
+			`%`	5	20000
+		[restore]
+			`mp`
+			`%`	5	20000
+		[then probability]
+			33.0
+	[/then]
+	[then]
+		[consume item]
+			3187	1
+		[target]
+			`myself`	-1
+		[probability]
+			5
+		[reduce probability to human armor at pvp module]
+			80
+		[equipment duration]
+			20000
+		[appendage]
+			53
+		[stat]
+			`attack speed`
+			`+`	100
+		[stat]
+			`move speed`
+			`+`	100
+		[stat]
+			`cast speed`
+			`+`	100
+		[then probability]
+			34.0
+	[/then]
+[/multiple then]
+
+[if]
+	[my appendage]
+		52
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	5
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

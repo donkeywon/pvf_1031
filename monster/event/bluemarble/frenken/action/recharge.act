@@ -1,0 +1,28 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Recharge.ani`
+	[SUB ANI]
+		`../Animation/Recharge_e.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		30
+	[%]
+	[SHAKING]
+		2	1400
+	[SAY SPEECH]
+		`发电机很给力啊！！！`
+[/BEHAVIOR]

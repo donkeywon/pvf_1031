@@ -1,0 +1,110 @@
+#PVF_File
+
+[name]
+	`盗尸者骨狱息的腿甲`
+
+[name2]
+	`找不到代码name2_12963`
+
+[basic explain]
+	`被攻击时， 有5%%的几率使敌人进入冰冻状态。
+无法进行分解。`
+
+[detail explain]
+	`被攻击时， 有5%%的几率使敌人进入冰冻状态7秒； 但在决斗场中， 只能持续2秒。 (若敌人高于Lv19， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+无法进行分解。`
+
+[grade]
+	19
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	15
+
+[physical attack]
+	12
+
+[magical attack]
+	8
+
+[price]
+	19000
+
+[repair price]
+	15200
+
+[value]
+	15200
+
+[equipment physical defense]
+	780	630
+
+[icon]
+	`Item/common/pants.img`	304
+
+[field image]
+	`Item/field_equip.img`	6
+
+[equipment type]
+	`[pants]`	20
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	32
+
+[weight]
+	2500
+
+[item group name]
+	`la pants`
+
+[cool time]
+	10000
+
+[if]
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[reduce duration to human armor at pvp module]
+		71
+	[probability]
+		5
+	[active status]
+		`freeze`	19
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

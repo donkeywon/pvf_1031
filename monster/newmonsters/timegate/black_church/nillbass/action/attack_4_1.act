@@ -1,0 +1,51 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_4_1.ani`
+	[SUB ANI]
+		`../Animation/garp_eff/17_2_shockline_normal.ani`	0	1
+		`../Animation/garp_eff/17_3_shockline_normal.ani`	0	2
+		`../Animation/garp_eff/17_1_shockline_normal.ani`	0	3
+		`../Animation/garp_eff/20_2_shockline_dodge.ani`	0	4
+		`../Animation/garp_eff/20_3_shockline_dodge.ani`	0	5
+		`../Animation/garp_eff/20_1_shockline_dodge.ani`	0	6
+		`../Animation/garp_eff/11_hand_dodge.ani`	0	7
+	[/SUB ANI]
+	[SOUND]
+		`DGUARDIAN_CATCH`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		1
+	[OFF]
+	[SET ACTION]
+	[ATTACK]
+		4
+	[NOW]
+[/BEHAVIOR]

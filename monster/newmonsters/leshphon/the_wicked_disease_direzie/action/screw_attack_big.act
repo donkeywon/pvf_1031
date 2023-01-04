@@ -1,0 +1,116 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/screw_ready_big2.ani`
+	[SUB ANI]
+		`../animation/particle1.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			62127
+		[LEVEL]
+			0
+		[POS]
+			80	0	230
+		[JUMP OUT]
+			600	0	50
+		[RIGHT]
+		[UP]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			62127
+		[LEVEL]
+			0
+		[POS]
+			80	0	230
+		[JUMP OUT]
+			600	0	50
+		[RIGHT]
+		[UP]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			62127
+		[LEVEL]
+			0
+		[POS]
+			-70	0	230
+		[JUMP OUT]
+			600	0	50
+		[LEFT]
+		[UP]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			62127
+		[LEVEL]
+			0
+		[POS]
+			-70	0	230
+		[JUMP OUT]
+			600	0	50
+		[LEFT]
+		[UP]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

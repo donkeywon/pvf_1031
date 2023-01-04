@@ -1,0 +1,160 @@
+#PVF_File
+
+[name]
+	`雪崩拉比纳的冰心十字`
+
+[name2]
+	`找不到代码name2_35108`
+
+[basic explain]
+	`施放技能时， 有5%%的几率对500px范围内最近的敌人发动雪崩攻击。
+无法进行分解。`
+
+[detail explain]
+	`施放技能时， 有5%%的几率对500px范围内最近的敌人发动雪崩攻击。 (在决斗场中几率为1%%)
+无法进行分解。`
+
+[grade]
+	49
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	45
+
+[physical defense]
+	43
+
+[magical attack]
+	34
+
+[magical defense]
+	43
+
+[cast speed]
+	20
+
+[MP MAX]
+	200
+
+[price]
+	78400
+
+[repair price]
+	62720
+
+[value]
+	62720
+
+[equipment physical attack]
+	460	420
+
+[equipment magical attack]
+	437	399
+
+[equipment physical defense]
+	490	480
+
+[equipment magical defense]
+	490	480
+
+[separate attack]
+	269	180
+
+[skill levelup]
+	`[priest]`	21	2
+[/skill levelup]
+
+[water resistance]
+	12
+
+[icon]
+	`Item/weapon/priest/cross.img`	69
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	19	0
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		3000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy near`	500
+	[probability]
+		5
+	[reduce probability to human armor at pvp module]
+		80
+	[passive object]
+		48157	0	0	0	10	2	``
+	[/passive object]
+[/then]
+
+[routing priority]
+	`priest`	1
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

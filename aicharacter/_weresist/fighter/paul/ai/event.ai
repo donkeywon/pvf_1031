@@ -1,0 +1,32 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[attack success]
+			1
+		[true]
+	
+		[think]
+			[my attack]
+				80
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`exp`
+				[false]
+				[return str]
+					`exp`
+				[true]
+				[return]
+					-1
+			[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+[/ai pattern]

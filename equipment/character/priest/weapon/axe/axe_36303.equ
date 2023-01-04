@@ -1,0 +1,152 @@
+#PVF_File
+
+[name]
+	`萨乌塔的血饮战斧`
+
+[name2]
+	`找不到代码name2_36303`
+
+[basic explain]
+	`杀死敌人时， 有10%%的几率使自身增加5点力量。
+无法进行分解。`
+
+[detail explain]
+	`杀死敌人时， 有10%%的几率使自身增加5点力量， 效果持续20秒。 (效果最多可重叠10次)
+无法进行分解。`
+
+[grade]
+	14
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	10
+
+[physical attack]
+	28
+
+[attack speed]
+	-80
+
+[stuck]
+	-2
+
+[HP MAX]
+	150
+
+[price]
+	22400
+
+[repair price]
+	17920
+
+[value]
+	17920
+
+[equipment physical attack]
+	216	168
+
+[equipment magical attack]
+	153	119
+
+[separate attack]
+	99	63
+
+[skill levelup]
+	`[priest]`	1	1
+	`[priest]`	11	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/axe.img`	69
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	21	1
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[item aura]
+	`physical attack`
+	`+`	17	300
+
+[if]
+	[attack success]
+		1
+	[target death]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		10
+	[appendage]
+		30
+[/then]
+
+[routing priority]
+	`priest`	3
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

@@ -1,0 +1,122 @@
+#PVF_File
+
+[ambient]
+	[room list]
+		`我是小财神~`
+		`别想偷我的钱~`
+		`胡萝卜呀~胡萝卜~`
+		`打赢我就有钱拿哦~赶紧报名吧！`	
+		[in elven gard]
+			`主人，原来你是菜鸟啊~`
+			`人生最痛苦的事，就是有钱没处花~`
+		[/in elven gard]
+		[in stom pass]
+			`哎呦~好……冷……`
+		[/in stom pass]
+	[/room list]
+	[main game]
+		[fill point under]
+			20
+			`咕噜噜……`
+			`我宁愿我背的是一袋胡萝卜~`
+		[/fill point under]
+	[/main game]
+[/ambient]
+
+[trigger]
+	[room list]
+		[renamed]
+			`换个低调点的名字~`
+		[/renamed]
+		[pop random]
+			40	
+			[call the name]
+				`主人找我有事吗？难道想借钱？`
+				`低调~低调！钱财不可外露~`
+			[/call the name]
+		[/pop random]
+		[pop random]
+			30	
+			[equip]
+				`财神降临，列队欢迎！`
+				`主人是想我呢，还是想我的钱呢？`
+			[/equip]
+		[/pop random]
+		[pop random]
+			50	
+			[level up]
+				`成长的快乐，是用钱买不到的~`
+				`我又进步了~主人，有没有奖励啊？`
+			[/level up]
+		[/pop random]
+		[pop random]
+			50	
+			[character level up]
+				`主人真棒！我也不能落后~`
+				`主人的进步，也有我的功劳哦！`
+			[/character level up]
+		[/pop random]
+		[eat feed]
+			`我喜欢吃新鲜无污染的有机萝卜！`
+			`好吃！我还要~`
+		[/eat feed]
+	[/room list]
+	[main game]
+		[eat feed]
+			`我喜欢吃新鲜无污染的有机萝卜！`
+			`好吃！我还要~`
+		[/eat feed]
+		[dying]
+			`再见~我要回月球了！~`
+		[/dying]
+		[using skill]
+			`财神送钱喽！！`
+			`拿了钱还不走~`
+			`飞来横财的感觉不错吧？`
+		[/using skill]
+		[pop random]
+			40	
+			[skill gauge full]
+				`我准备好了~`
+				`被钱砸死也是一种幸福~`
+			[/skill gauge full]
+		[/pop random]
+		[pop random]
+			40	
+			[over skill gauge full]
+				`我的钱袋满了~`
+				`天降横财喽！！`
+			[/over skill gauge full]
+		[/pop random]
+		[over skill waiting]
+			`不扔点钱，浑身不舒服~`
+			`赶紧储备金钱~`
+		[/over skill waiting]
+		[call the name]
+			`我可不是一只随便的兔子~`
+			`这么高贵的名字，能随便乱喊嘛？`
+		[/call the name]
+		[pop random]
+			40	
+			[equip]
+				`主人，我可是着名的理财专家！`
+				`主人，给点见面礼吧？`
+			[/equip]
+		[/pop random]
+		[pop random]
+			50	
+			[level up]
+				`成长的快乐，是用钱买不到的~`
+				`我又进步了~主人，有没有奖励啊？`
+			[/level up]
+		[/pop random]
+		[pop random]
+			50	
+			[character level up]
+				`主人真棒！我也不能落后~`
+				`主人的进步，也有我的功劳哦！`
+				`恭喜主人~贺喜主人~`
+			[/character level up]
+		[/pop random]
+	[/main game]
+[/trigger]

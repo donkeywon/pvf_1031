@@ -1,0 +1,67 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is the skill in cooltime()`	23
+		[false]
+		[return]
+			`light_rev`
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	250	250	200	200
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	43
+				[false]
+				[return]
+					`white_knife`
+				[true]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	27
+					[false]
+					[return]
+						`wall`
+					[true]
+					[return]
+						-1
+				[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	400	400	300	300
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	74
+			[false]
+			[return]
+				`hammer`
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	73
+				[false]
+				[return]
+					`spear`
+				[true]
+				[return]
+					-1
+			[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

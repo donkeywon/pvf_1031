@@ -1,0 +1,103 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/sniper_shoot.ani`
+	[SUB ANI]
+		`../animation/pirate_ship_fire.ani`	0	1
+	[/SUB ANI]
+	[SOUND]
+		`KINFANTRY_ATK_01`	0
+		`COWCANNON_SHOOT`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON DAMAGE]
+	[WHICH]
+	[LAST ATTACKER]
+	[CHECKUP]
+		[IS INDEX]
+			35116	35136	35137	35138
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`count7`	
+		[=]
+			`count7`
+		[+]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`count7`	
+		[=>]
+			2
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		4
+	[END]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[GET TARGET]
+			1
+		[RANDOM]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35118
+		[PARTICLE FILENAME]
+			`../Particle/rocket.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-50	50
+		[RANDOM]
+			-50	50	600
+		[WARNING MARK]
+			0	0	100	6
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

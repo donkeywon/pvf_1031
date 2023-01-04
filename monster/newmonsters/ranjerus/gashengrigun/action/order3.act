@@ -1,0 +1,85 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Order3.ani`
+	[SUB ANI]
+		`../animation/wp/Order3.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`GRIGUN_SKILL_04`	0
+		`MINSTALL_03`	8
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`风暴！守护我！`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61529
+		[LEVEL]
+			0
+		[POS]
+			270	170	0
+		[NO EFFECT]
+		[USE MAP POS]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61529
+		[LEVEL]
+			0
+		[POS]
+			270	330	0
+		[NO EFFECT]
+		[USE MAP POS]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61529
+		[LEVEL]
+			0
+		[POS]
+			920	330	0
+		[NO EFFECT]
+		[USE MAP POS]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61529
+		[LEVEL]
+			0
+		[POS]
+			920	170	0
+		[NO EFFECT]
+		[USE MAP POS]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

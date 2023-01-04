@@ -1,0 +1,74 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/jangpung1.ani`
+	[SUB ANI]
+		`../Animation/jangpung_eff_1_loof.ani`	0	-5
+		`../Animation/jangpung_eff_2_loof.ani`	0	-5
+		`../Animation/jangpung_eff_3_loof.ani`	0	-5
+		`../Animation/jangpung_eff_4_loof.ani`	0	-5
+	[/SUB ANI]
+	[SOUND]
+		`KUNGFUMANN_GET`	2
+		`KUNGFUMANN_SKILL_01_1`	2
+	[/SOUND]
+	[SPEECH]
+		`呃……啊……`	2	50
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PULL APPENDAGE]
+		5.0	2.0	1500
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	10
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			140
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		8
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		8
+	[END]
+[/BEHAVIOR]

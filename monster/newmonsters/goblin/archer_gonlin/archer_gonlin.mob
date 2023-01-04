@@ -1,0 +1,164 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`哥布林精锐弓手`
+
+[face image]
+	`Monster/MonsterFace.img`	326
+
+[die effect]
+	0	21	4
+
+[damage sound]
+	`R_GARCHER_DMG`
+
+[die sound]
+	`R_GARCHER_DIE`
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`*`	800
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	150
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	150
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	150
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	150
+[/ability category]
+
+[category]
+	`[human]`
+	`[goblin]`
+[/category]
+
+[HP regen speed]
+	20	20
+
+[MP regen speed]
+	0	0
+
+[level]
+	35	50
+
+[fire resistance]
+	-30	-30
+
+[water resistance]
+	30	30
+
+[move speed]
+	800	800
+
+[attack speed]
+	800	800
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	60000	60000
+
+[lie frame]
+	1	2	3	3	4
+
+[waiting action]
+	`action/Stay.act`
+
+[move action]
+	`action/Move.act`
+
+[sit action]
+	`action/Sit.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`action/Overturn.act`
+
+[damage action 1]
+	`action/Damage1.act`
+
+[damage action 2]
+	`action/Damage2.act`
+
+[attack action]
+	`Action/Throw.act`
+	`Action/Throw3.act`
+	`Action/Throw2.act`
+	`Action/Throw4.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Attack.atk`
+	`AttackInfo/ChargeAttackHodor.atk`
+	`AttackInfo/ChargeAttackHodor.atk`
+	`AttackInfo/ChargeAttackHodor.atk`
+[/attack info]
+
+[cooltime]
+	3000	3000	3000	3000
+[/cooltime]
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	1000
+
+[warlike]
+	50
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[keep distance with target]
+	400
+
+[keep range distance with target]
+	400	0	20	100
+
+[intelligence]
+	80	80	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

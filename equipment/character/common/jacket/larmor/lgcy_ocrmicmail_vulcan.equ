@@ -1,0 +1,155 @@
+#PVF_File
+
+[name]
+	`传承 : 摩羯守护神的橡木胸甲`
+
+[name2]
+	`Legacy : Ceramics Mail of Vulcan`
+
+[grade]
+	67
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	65
+
+[physical attack]
+	36
+
+[magical attack]
+	21
+
+[price]
+	60300
+
+[repair price]
+	53184
+
+[value]
+	48240
+
+[equipment physical defense]
+	2520	2448
+
+[skill levelup]
+	`[swordman]`	8	2
+	`[fighter]`	6	2
+	`[fighter]`	9	2
+	`[at fighter]`	6	2
+	`[at fighter]`	9	2
+	`[priest]`	61	2
+	`[thief]`	21	2
+	`[demonic swordman]`	8	2
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/common/coat.img`	231
+
+[field image]
+	`Item/field_equip.img`	5
+
+[equipment type]
+	`[coat]`	19
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3100
+
+[item group name]
+	`la coat`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[set name]
+	`传承 : 摩羯守护神的橡木轻甲  套装`
+
+[set item]
+	10940	12934	14929	16923	18932
+[/set item]
+
+[set ability]
+	[HP MAX]
+		300
+	[MP MAX]
+		250
+	[physical attack]
+		105
+	[physical defense]
+		90
+	[magical attack]
+		90
+	[magical defense]
+		75
+	[fire resistance]
+		12
+	[move speed]
+		45
+	[attack speed]
+		45
+	[stuck]
+		-3
+	[fullset basic explain]
+		`进入地下城时， 因传承的祝福可以使自身增加7%%的移动速度。`
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	70
+	[/then]
+	[skill levelup]
+		`[fighter]`	82	1
+		`[fighter]`	83	2
+		`[at fighter]`	82	1
+		`[at fighter]`	83	2
+		`[swordman]`	9	1
+		`[swordman]`	73	2
+		`[fighter]`	18	1
+		`[fighter]`	88	2
+		`[at fighter]`	18	1
+		`[at fighter]`	88	2
+		`[priest]`	37	1
+		`[priest]`	4	2
+		`[thief]`	37	1
+		`[thief]`	40	2
+		`[demonic swordman]`	9	1
+		`[demonic swordman]`	73	2
+	[/skill levelup]
+[/set ability]
+
+[possible kiri protect]

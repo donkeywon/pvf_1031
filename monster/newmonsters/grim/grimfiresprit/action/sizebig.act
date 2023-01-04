@@ -1,0 +1,43 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/SizeBig.ani`
+	[SUB ANI]
+		`../animation/weapon/Size_wp_Big.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[COLOR CHANGE EFFECT]
+		[CHANGE SIZE END]
+			120
+		[CHANGE TIME]
+			1000
+		[LIFE TIME]
+			20000
+	[/COLOR CHANGE EFFECT]
+	[APPENDAGE]
+		20000	
+		[move speed]
+		[%]
+			30.0
+		[attack speed]
+		[%]
+			30.0
+		[equipment magical attack]
+		[%]
+			-15.0
+		[equipment physical attack]
+		[%]
+			-15.0
+	[/APPENDAGE]
+[/BEHAVIOR]

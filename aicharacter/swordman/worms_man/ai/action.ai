@@ -1,0 +1,247 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	90.0	90.0	40.0	40.0
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	32
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	46
+				[true]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	58
+					[true]
+					[return]
+						-1
+					[false]
+				
+					[think]
+						[void]
+							`is target in attack area()`	50.0	50.0	30.0	30.0
+						[true]
+						[return]
+							7
+						[false]
+						[return]
+							-1
+					[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	70.0	70.0	20.0	20.0
+		[true]
+		[return]
+			6
+		[false]
+		[return]
+			-1
+	[/think]
+	[/think]
+	[false]
+	[return]
+		3
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	130.0	130.0	70.0	70.0
+		[true]
+		[return]
+			-1
+		[false]
+	
+		[think]
+			[void]
+				`is target in attack area()`	800.0	800.0	15.0	15.0
+			[true]
+			[return]
+				-1
+			[false]
+		
+			[think]
+				[void]
+					`number of in attack area()`	3800.0	3800.0	1400.0	1400.0
+					`all`
+					`summon`	61505
+			
+				[think]
+					[last result]
+						`<=`	10.0
+					[true]
+				
+					[think]
+						[check key cooltime]
+							`atk3`
+						[true]
+					
+						[think]
+							[void]
+								`number of in attack area()`	3800.0	3800.0	1400.0	1400.0
+								`all`
+								`summon`	61507
+						
+							[think]
+								[last result]
+									`<=`	5.0
+								[true]
+							
+								[think]
+									[check key cooltime]
+										`atk2`
+									[true]
+								
+									[think]
+										[void]
+											`number of in attack area()`	3800.0	3800.0	1400.0	1400.0
+											`all`
+											`summon`	62010
+									
+										[think]
+											[last result]
+												`<=`	5.0
+											[true]
+										
+											[think]
+												[check key cooltime]
+													`atk1`
+												[true]
+												[return]
+													-1
+												[false]
+												[return]
+													0
+											[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[false]
+	[return]
+		1
+	[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	3800.0	3800.0	1400.0	1400.0
+			`all`
+			`summon`	62010
+	
+		[think]
+			[last result]
+				`<=`	5.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`atk2`
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					0
+			[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return]
+		2
+	[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	3800.0	3800.0	1400.0	1400.0
+			`all`
+			`summon`	61507
+	
+		[think]
+			[last result]
+				`<=`	5.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`atk2`
+				[true]
+			
+				[think]
+					[void]
+						`number of in attack area()`	3800.0	3800.0	1400.0	1400.0
+						`all`
+						`summon`	62010
+				
+					[think]
+						[last result]
+							`<=`	5.0
+						[true]
+					
+						[think]
+							[check key cooltime]
+								`atk1`
+							[true]
+							[return]
+								-1
+							[false]
+							[return]
+								0
+						[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[false]
+	[return]
+		1
+	[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	3800.0	3800.0	1400.0	1400.0
+			`all`
+			`summon`	62010
+	
+		[think]
+			[last result]
+				`<=`	5.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`atk1`
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					0
+			[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

@@ -1,0 +1,162 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[cube item number]
+			`>=`	1
+		[true]
+	
+		[think]
+			[second type]
+				`==`	0
+			[true]
+		
+			[think]
+				[void]
+					`number of in attack area()`	2500.0	2500.0	800.0	800.0
+					`all`
+					`passive object`	35054
+			
+				[think]
+					[last result]
+						`>=`	1.0
+					[true]
+					[return]
+						-1
+					[false]
+				
+					[think]
+						[void]
+							`is the skill in cooltime()`	8
+						[true]
+						[return]
+							-1
+						[false]
+					
+						[think]
+							[my active status]
+								1
+							[true]
+							[return]
+								-1
+							[false]
+						
+							[think]
+								[my active status]
+									3
+								[true]
+								[return]
+									-1
+								[false]
+							
+								[think]
+									[my active status]
+										7
+									[true]
+									[return]
+										-1
+									[false]
+								
+									[think]
+										[my active status]
+											8
+										[true]
+										[return]
+											-1
+										[false]
+									
+										[think]
+											[my active status]
+												16
+											[true]
+											[return]
+												-1
+											[false]
+											[return]
+												8
+										[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`number of in attack area()`	2500.0	2500.0	800.0	800.0
+			`all`
+			`passive object`	35054
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+			[return]
+				-1
+			[false]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	8
+				[true]
+				[return]
+					-1
+				[false]
+			
+				[think]
+					[my active status]
+						1
+					[true]
+					[return]
+						-1
+					[false]
+				
+					[think]
+						[my active status]
+							3
+						[true]
+						[return]
+							-1
+						[false]
+					
+						[think]
+							[my active status]
+								7
+							[true]
+							[return]
+								-1
+							[false]
+						
+							[think]
+								[my active status]
+									8
+								[true]
+								[return]
+									-1
+								[false]
+							
+								[think]
+									[my active status]
+										16
+									[true]
+									[return]
+										-1
+									[false]
+									[return]
+										8
+								[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+[/ai pattern]

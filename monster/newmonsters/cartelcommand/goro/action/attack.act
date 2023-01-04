@@ -1,0 +1,54 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack.ani`
+	[SUB ANI]
+		`../Animation/attack_1.ani`	0	1
+		`../Animation/attack_2.ani`	0	2
+		`../Animation/attack_3.ani`	0	3
+	[/SUB ANI]
+	[SPEECH]
+		`咕噜！！`	4	30
+	[/SPEECH]
+	[SOUND]
+		`GORO_ATK_01`	3
+		`GORO_HAMMER`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			1100
+		[Z AXIS]
+			-250
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[Z AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

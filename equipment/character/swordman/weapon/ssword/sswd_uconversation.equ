@@ -1,0 +1,158 @@
+#PVF_File
+
+[name]
+	`(旧) 落日幻影`
+
+[name2]
+	`Useless Conversation`
+
+[basic explain]
+	`攻击时， 有2%%的几率使自身增加45点力量， 效果持续60秒。
+攻击时， 有2%%的几率使自身增加30点力量， 效果持续60秒。`
+
+[flavor text]
+	`传说在落日中舞动时， 周围会出现龙的幻影， 因此而得名‘落日幻影’。`
+
+[grade]
+	36
+
+[rarity]
+	3
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	32
+
+[magical attack]
+	26
+
+[cast speed]
+	20
+
+[price]
+	57600
+
+[repair price]
+	46080
+
+[value]
+	46080
+
+[equipment physical attack]
+	338	300
+
+[equipment magical attack]
+	409	363
+
+[separate attack]
+	207	137
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[swordman]`	1	1
+	`[swordman]`	12	1
+	`[demonic swordman]`	12	1
+[/skill levelup]
+
+[confuse resistance]
+	30
+
+[icon]
+	`Item/weapon/swordman/sswd.img`	23
+
+[field image]
+	`Item/FieldImage.img`	9
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	0	2
+
+[layer variation]
+	2790
+	`lgswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`lgswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	0	2
+
+[layer variation]
+	2790
+	`lgswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`lgswdb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`MINERALSWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`ssword`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		48000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		60000
+	[probability]
+		2
+	[stat]
+		`physical attack`
+		`+`	45
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

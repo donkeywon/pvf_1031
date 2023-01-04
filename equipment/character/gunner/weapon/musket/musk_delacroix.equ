@@ -1,0 +1,197 @@
+#PVF_File
+
+[name]
+	`潜龙魅影`
+
+[name2]
+	`Delacroix, Timid Gunner's Musket`
+
+[basic explain]
+	`攻击时， 有5%%的几率使敌人进入减速状态。
+攻击减速状态的敌人时， 附加30%%的伤害。`
+
+[detail explain]
+	`攻击时， 有5%%的几率使敌人进入减速状态15秒； 减速状态下， 可以减少40%%的移动速度和攻击速度。 (若敌人高于Lv50， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击减速状态的敌人时， 附加30%%的伤害。 (在决斗场中 +15%%)`
+
+[flavor text]
+	`我一直准备逃亡呢
+朋友， 你再怎么逃亡都是在我的射程距离以内呢， 砰！`
+
+[grade]
+	50
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	45
+
+[physical attack]
+	35
+
+[magical attack]
+	53
+
+[need material]
+	3260	750
+
+[repair price]
+	75600
+
+[value]
+	72000
+
+[equipment physical attack]
+	478	401
+
+[equipment magical attack]
+	416	349
+
+[separate attack]
+	285	189
+
+[icon]
+	`item/weapon/gunner/musket.img`	33
+
+[field image]
+	`Item/field_weapon.img`	3
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	3	2
+
+[layer variation]
+	2790
+	`musketc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`musketb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	3	2
+
+[layer variation]
+	2790
+	`at_musketc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_musketb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	2100
+
+[item group name]
+	`musket`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		5000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		15000
+	[probability]
+		5
+	[active status]
+		`slow`	50	40	40
+[/then]
+
+[if]
+	[target active status]
+		`slow`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	30
+[/then]
+
+[pvp]
+	[if]
+		[cooltime]
+			5000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			15000
+		[probability]
+			5
+		[active status]
+			`slow`	50	40	40
+	[/then]
+	[if]
+		[target active status]
+			`slow`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	15
+	[/then]
+[/pvp]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

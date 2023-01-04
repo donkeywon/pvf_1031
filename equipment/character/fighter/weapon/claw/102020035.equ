@@ -1,0 +1,180 @@
+#PVF_File
+
+[name]
+	`邪风异云爪`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 有2%%的几率使300px范围内的所有敌人进入失明状态。
+攻击失明状态的敌人时， 附加7%%的伤害。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使300px范围内的所有敌人进入失明状态5秒； 失明状态下的敌人， 会减少90%%的视野和20%%的命中率。 (若敌人高于Lv84， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击失明状态的敌人时， 附加7%%的伤害。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[physical attack]
+	55
+
+[magical attack]
+	28
+
+[price]
+	134400
+
+[repair price]
+	112896
+
+[value]
+	107520
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	804	754
+
+[equipment magical attack]
+	804	754
+
+[separate attack]
+	481	327
+
+[physical critical hit]
+	3
+
+[dark attack]
+	5
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/claw/claw.img`	92
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	26	0
+
+[layer variation]
+	2790
+	`clawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	27	0
+
+[layer variation]
+	2150
+	`at_clawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_clawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_clawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`all enemy`	300
+	[duration]
+		5000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[active status]
+		`blind`	84	90	20
+[/then]
+
+[if]
+	[target active status]
+		`blind`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	7
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

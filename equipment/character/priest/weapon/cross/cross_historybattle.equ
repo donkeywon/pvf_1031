@@ -1,0 +1,149 @@
+#PVF_File
+
+[name]
+	`远古逆袭之厄特尔十字架`
+
+[name2]
+	`Ertel Cross of Historical Battle`
+
+[basic explain]
+	`施放技能时， 有4%%的几率使自身增加30点智力， 效果持续30秒。
+攻击速度 +1%%`
+
+[flavor text]
+	`蕴含远古战争英雄之灵魂的稀贵武器。`
+
+[grade]
+	59
+
+[rarity]
+	2
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[physical defense]
+	56
+
+[magical attack]
+	44
+
+[magical defense]
+	56
+
+[attack speed]
+	10
+
+[cast speed]
+	30
+
+[move speed]
+	10
+
+[price]
+	82600
+
+[repair price]
+	69384
+
+[value]
+	66080
+
+[equipment physical attack]
+	508	492
+
+[equipment magical attack]
+	483	467
+
+[equipment physical defense]
+	590	590
+
+[equipment magical defense]
+	590	590
+
+[separate attack]
+	256	173
+
+[skill levelup]
+	`[priest]`	7	1
+	`[priest]`	26	1
+	`[priest]`	125	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/cross.img`	39
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[priest]`
+
+[variation]
+	7	0
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[icon mark]
+	`Item/IconMark.img`	22
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		4
+	[stat]
+		`magical attack`
+		`+`	30
+[/then]
+
+[possible kiri protect]

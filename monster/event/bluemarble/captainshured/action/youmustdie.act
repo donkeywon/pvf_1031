@@ -1,0 +1,77 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/MotorCycle/Heyyou.ani`
+	[SUB ANI]
+		`../Animation/Heyyou.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`接招吧！`	1	0
+	[/SPEECH]
+	[SOUND]
+		`SHURED_SKILL_04`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8552
+		[PARTICLE FILENAME]
+			`../Particle/Missile.ptl`
+		[LEVEL]
+			50
+		[POS]
+			20	0	90
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8552
+		[PARTICLE FILENAME]
+			`../Particle/Missile.ptl`
+		[LEVEL]
+			50
+		[POS]
+			0	0	110
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8552
+		[PARTICLE FILENAME]
+			`../Particle/Missile.ptl`
+		[LEVEL]
+			50
+		[POS]
+			-20	0	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`扳钮开关！！`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`3秒后发射导弹~`
+[/BEHAVIOR]

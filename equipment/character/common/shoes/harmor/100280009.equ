@@ -1,0 +1,130 @@
+#PVF_File
+
+[name]
+	`星云迷踪战靴`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 有5%%的几率使自身进入失明状态10秒。
+失明状态下， 攻击速度和移动速度各增加7%%， 效果持续10秒。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[physical attack]
+	23
+
+[physical defense]
+	21
+
+[magical attack]
+	17
+
+[move speed]
+	60
+
+[price]
+	76500
+
+[repair price]
+	64260
+
+[value]
+	61200
+
+[creation rate]
+	250
+
+[equipment physical defense]
+	2232	2088
+
+[icon]
+	`item/new_equipment/05_harmor/shoes/harmor_shoes.img`	10
+
+[field image]
+	`Item/field_equip.img`	14
+
+[equipment type]
+	`[shoes]`	19
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	26
+
+[weight]
+	1600
+
+[item group name]
+	`ha shoes`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		5
+	[active status]
+		`blind`	85	80	10
+[/then]
+
+[if]
+	[my active status]
+		`blind`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[stat]
+		`attack speed`
+		`+`	70
+	[stat]
+		`move speed`
+		`+`	70
+[/then]
+
+[set item master]
+	100080009
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	68

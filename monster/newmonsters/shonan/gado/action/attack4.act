@@ -1,0 +1,51 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack4.ani`
+	[SUB ANI]
+		`../animation/effect/attack4.ani`	0	10
+		`../animation/effect/attack4_e.ani`	0	0
+		`../animation/effect/GhostStepSlash1.ani`	0	20
+		`../animation/effect/GhostStepSlash2.ani`	0	20
+	[/SUB ANI]
+	[SPEECH]
+		`邪光劈！！`	2	30
+	[/SPEECH]
+	[SOUND]
+		`R_GGANG_ATK_04`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[LAST ACTIVE ATTACKSUCCESS]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[LAST ACTIVE ATTACKSUCCESS]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+	[FLASH SCREEN]
+		300	1500	300	150	0	0	0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[DOWN]
+	[DEFAULT]
+		0
+	[FORCE]
+		300	300
+	[NOW]
+[/BEHAVIOR]

@@ -1,0 +1,128 @@
+#PVF_File
+
+[name]
+	`暴龙战斧`
+
+[name2]
+	`Dragonic Devastator`
+
+[grade]
+	54
+
+[rarity]
+	2
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	50
+
+[physical attack]
+	35
+
+[attack speed]
+	-80
+
+[stuck]
+	-3
+
+[price]
+	86400
+
+[repair price]
+	72576
+
+[value]
+	69120
+
+[equipment physical attack]
+	562	542
+
+[equipment magical attack]
+	398	384
+
+[separate attack]
+	233	156
+
+[physical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	49	1
+	`[priest]`	5	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/priest/axe.img`	25
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	2	8
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[add absolute damage]
+		`all`
+		`+`	444
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

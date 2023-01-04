@@ -1,0 +1,54 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`get random()`	0.0	100.0
+	
+		[think]
+			[last result]
+				`<=`	50.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`baback`
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`wind`
+					[true]
+					[return]
+						-1
+					[false]
+					[return str]
+						`wind`
+				[/think]
+	[false]
+	[return str]
+		`baback`
+	[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`wind`
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`baback`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`baback`
+		[/think]
+	[false]
+	[return str]
+		`wind`
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

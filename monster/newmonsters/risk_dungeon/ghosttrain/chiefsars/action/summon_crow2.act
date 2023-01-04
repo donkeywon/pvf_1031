@@ -1,0 +1,127 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/summon_crow2.ani`
+	[SUB ANI]
+		`../animation/hand/summon_crow2.ani`	0	0
+		`../animation/foot/summon_crow2.ani`	0	0
+		`../animation/ef/summon_crow2_1.ani`	0	0
+		`../animation/ef/summon_crow2_2.ani`	0	0
+		`../animation/ef/summon_crow2_3.ani`	0	0
+		`../animation/ef/summon_crow2_4.ani`	0	0
+		`../animation/ef/summon_crow2_5.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`SAS_SKILL_04`	0
+		`SAS_CROW`	6
+	[/SOUND]
+	[SPEECH]
+		`暗影们，将他们彻底地撕碎吧！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35310
+		[PARTICLE FILENAME]
+			`../Particle/crow.ptl`
+		[LEVEL]
+			0
+		[POS]
+			20	0	30
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35310
+		[PARTICLE FILENAME]
+			`../Particle/crow1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			10	0	60
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35310
+		[PARTICLE FILENAME]
+			`../Particle/crow3.ptl`
+		[LEVEL]
+			0
+		[POS]
+			10	0	80
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35310
+		[PARTICLE FILENAME]
+			`../Particle/crow1.ptl`
+		[LEVEL]
+			0
+		[POS]
+			40	0	80
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35310
+		[PARTICLE FILENAME]
+			`../Particle/crow2.ptl`
+		[LEVEL]
+			0
+		[POS]
+			30	0	70
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

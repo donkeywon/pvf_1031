@@ -1,0 +1,191 @@
+#PVF_File
+
+[name]
+	`空之无境`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 附加5%%的伤害。
+[破冰飞刃]冰碎片数量 +1
+[精灵召唤 : 极光格雷林]下级精灵消耗数 +2
+[精灵召唤 : 极光格雷林]攻击力 +50%%`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[magical attack]
+	84
+
+[attack speed]
+	100
+
+[cast speed]
+	50
+
+[stuck]
+	1
+
+[price]
+	136000
+
+[repair price]
+	114240
+
+[value]
+	108800
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	742	688
+
+[equipment magical attack]
+	906	840
+
+[separate attack]
+	504	343
+
+[light attack]
+	9
+
+[water attack]
+	9
+
+[icon]
+	`item/new_equipment/01_weapon/mage/rod/rod.img`	95
+
+[field image]
+	`Item/field_weapon.img`	7
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	30	1
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	30	1
+
+[layer variation]
+	2150
+	`at_roda`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_rodd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	30	1
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`ROD_TOUCH`
+
+[durability]
+	24
+
+[weight]
+	2200
+
+[item group name]
+	`rod`
+
+[cool time]
+	10000
+
+[routing priority]
+	`mage`	2
+	`at mage`	2
+[/routing priority]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	5
+[/then]
+
+[skill data up]
+	`[at mage]`	10	`[all]`	`[static]`	2	`+`	1
+	`[at mage]`	10	`[all]`	`[static]`	3	`+`	1
+	`[mage]`	77	`[all]`	`[static]`	7	`+`	2
+	`[mage]`	77	`[all]`	`[level]`	6	`%`	50
+	`[mage]`	77	`[all]`	`[level]`	7	`%`	50
+	`[mage]`	77	`[all]`	`[level]`	11	`%`	50
+	`[mage]`	77	`[all]`	`[level]`	15	`%`	50
+	`[mage]`	77	`[all]`	`[level]`	16	`%`	50
+	`[mage]`	77	`[all]`	`[level]`	20	`%`	50
+	`[mage]`	77	`[all]`	`[level]`	22	`%`	50
+[/skill data up]
+
+[icon mark]
+	`Item/IconMark.img`	68

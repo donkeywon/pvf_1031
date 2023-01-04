@@ -1,0 +1,197 @@
+#PVF_File
+
+[name]
+	`破极卸甲战斧`
+
+[name2]
+	`Extreme One's Axe`
+
+[basic explain]
+	`攻击时， 有5%%的几率使自身增加30%%的物理攻击力， 效果持续30秒。
+攻击时， 有2%%的几率使敌人进入破甲状态。`
+
+[detail explain]
+	`攻击时， 有5%%的几率使武器耐久度减少1点， 并增加30%%的物理攻击力， 效果持续30秒。
+攻击时， 有2%%的几率使敌人进入破甲状态7秒； 破甲状态的敌人， 暂时无法使用护甲且护甲的耐久度消耗增加30倍。 (若敌人高于Lv60， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`一旦开始攻击就不要停歇， 越是猛攻， 它的威力就越大。 `
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	42
+
+[attack speed]
+	-80
+
+[stuck]
+	-2
+
+[price]
+	111600
+
+[repair price]
+	93744
+
+[value]
+	89280
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	686	629
+
+[equipment magical attack]
+	486	445
+
+[separate attack]
+	360	243
+
+[icon]
+	`Item/weapon/priest/axe.img`	34
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	4	2
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[war room]`
+		`[dungeon]`
+		`[assault]`
+		`[dead tower]`
+		`[blood system]`
+		`[assault]`
+	[/module]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`equipment physical attack`
+		`%`	30
+	[reduction]
+		`weapon`	1
+[/then]
+
+[if]
+	[module]
+		`[tournament dungeon]`
+	[/module]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`equipment physical attack`
+		`%`	30
+[/then]
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		2
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`armor break`	60	30
+	[active status]
+		`weapon break`	60	30
+[/then]
+
+[routing priority]
+	`priest`	3
+	`priest`	2
+[/routing priority]
+
+[possible kiri protect]
+
+[need material]
+	2749095	129
+
+[icon mark]
+	`Item/IconMark.img`	68

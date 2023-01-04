@@ -1,0 +1,102 @@
+#PVF_File
+
+[name]
+	`帕特里斯之魂`
+
+[basic explain]
+	`每400点力量增加20点力量。
+无法进行分解。`
+
+[detail explain]
+	`每400点力量可增加20点力量。 (最多增加100点)
+无法进行分解。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[magical attack]
+	33
+
+[magical defense]
+	83
+
+[need material]
+	3339	525
+
+[value]
+	67200
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	7280	6880
+
+[light attack]
+	7
+
+[icon]
+	`item/new_equipment/08_necklace/necklace.img`	89
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`physical attack`	400
+		`physical attack`
+		`+`	20	100
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[icon mark]
+	`Item/IconMark.img`	66

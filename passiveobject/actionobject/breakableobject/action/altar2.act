@@ -1,0 +1,40 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Altar.ani`
+	[SUB ANI]
+		`../Animation/Altar2.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[<=]
+			80
+		[%]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON APC]
+		[INDEX]
+			409
+		[LEVEL]
+			51
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[TEAM]
+			0
+	[/SUMMON APC]
+	[DESTROY]
+[/BEHAVIOR]

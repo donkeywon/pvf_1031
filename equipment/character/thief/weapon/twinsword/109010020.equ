@@ -1,0 +1,161 @@
+#PVF_File
+
+[name]
+	`艾菲卡隆的毒刃[活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击速度 +1%%
+
+攻击时， 有3%%的几率使敌人进入中毒状态。
+攻击速度 +1%%
+
+无法进行合成和分解。`
+
+[detail explain]
+	`攻击速度 +1%%
+
+攻击时， 有3%%的几率使敌人进入中毒状态10秒； 中毒状态下的敌人每0.5秒受到117点伤害。 (若敌人高于Lv40， 则减少进入异常状态的几率； 反之， 则增加几率)
+无法进行合成和分解。`
+
+[grade]
+	44
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	40
+
+[physical attack]
+	31
+
+[attack speed]
+	-70
+
+[stuck]
+	-2
+
+[price]
+	79200
+
+[repair price]
+	63360
+
+[value]
+	63360
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	428	388
+
+[equipment magical attack]
+	336	304
+
+[separate attack]
+	245	164
+
+[physical critical hit]
+	5
+
+[skill levelup]
+	`[thief]`	33	1
+[/skill levelup]
+
+[poison resistance]
+	15
+
+[icon]
+	`Item/weapon/thief/twinswd.img`	38
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[thief]`
+
+[variation]
+	3	7
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		15000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[probability]
+		3
+	[active status]
+		`poison`	40	2350
+[/then]
+
+[not amplify]
+	1
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

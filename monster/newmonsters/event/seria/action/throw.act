@@ -1,0 +1,81 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/OneHandThrow1.ani`
+	[SUB ANI]
+		`../Animation/Effect/OneHandThrow1.ani`	0	0
+		`../Animation/Effect/MagicMissile2_dodge4.ani`	0	0
+		`../Animation/Effect/MagicMissile2_dodge3.ani`	0	0
+		`../Animation/Effect/MagicMissile2_dodge2.ani`	0	0
+		`../Animation/Effect/MagicMissile2_dodge1.ani`	0	0
+		`../Animation/Effect/OneHandThrow1_effect.ani`	0	0
+		`../Animation/weapon/OneHandThrow1.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`R_SE_ATK1`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			19515
+		[PARTICLE FILENAME]
+			`../Particle/MagicMissile.ptl`
+		[LEVEL]
+			0
+		[POS]
+			42	0	60
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			19515
+		[PARTICLE FILENAME]
+			`../Particle/MagicMissile.ptl`
+		[LEVEL]
+			0
+		[POS]
+			42	0	60
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			19515
+		[PARTICLE FILENAME]
+			`../Particle/MagicMissile.ptl`
+		[LEVEL]
+			0
+		[POS]
+			42	0	60
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

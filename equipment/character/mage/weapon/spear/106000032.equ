@@ -1,0 +1,260 @@
+#PVF_File
+
+[name]
+	`命运轮回之矛`
+
+[name2]
+	``
+
+[basic explain]
+	`攻击时， 有3%%的几率恢复3%%的HP。
+当HP高于95%%时， 力量和智力各增加150点。
+当HP在70%%~95%%之间时， 力量和智力各增加100点。
+当HP在50%%~70%%之间时， 力量和智力各增加50。
+当HP在20%%~50%%之间时， 力量和智力各增加20点。`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[physical attack]
+	83
+
+[attack speed]
+	-50
+
+[HP MAX]
+	300
+
+[HP regen speed]
+	54
+
+[price]
+	134400
+
+[repair price]
+	112896
+
+[value]
+	107520
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	965	905
+
+[equipment magical attack]
+	683	641
+
+[separate attack]
+	481	327
+
+[physical critical hit]
+	2
+
+[icon]
+	`item/new_equipment/01_weapon/mage/spear/spear.img`	103
+
+[field image]
+	`Item/field_weapon.img`	6
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	31	0
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	32	0
+
+[layer variation]
+	2150
+	`at_speara`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_speard`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	31	0
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`SPEAR_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3200
+
+[item group name]
+	`spear`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>=`
+		`%`	95
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	130
+	[stat by condition]
+		`magical attack`
+		`+`	130
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`=<`
+		`%`	94
+		`hp`
+		`>=`
+		`%`	70
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	90
+	[stat by condition]
+		`magical attack`
+		`+`	90
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`=<`
+		`%`	69
+		`hp`
+		`>=`
+		`%`	50
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	50
+	[stat by condition]
+		`magical attack`
+		`+`	50
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`=<`
+		`%`	49
+		`hp`
+		`>=`
+		`%`	20
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	20
+	[stat by condition]
+		`magical attack`
+		`+`	20
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		3
+	[restore]
+		`hp`
+		`%`	3	0
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

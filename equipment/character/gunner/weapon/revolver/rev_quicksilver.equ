@@ -1,0 +1,149 @@
+#PVF_File
+
+[name]
+	`银光左轮枪`
+
+[name2]
+	`Quicksilver Revolver`
+
+[basic explain]
+	`攻击时， 有1%%的几率使敌人进入束缚状态。`
+
+[detail explain]
+	`攻击时， 有1%%的几率使敌人进入束缚状态5秒。 (若敌人高于Lv35， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	35
+
+[rarity]
+	2
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	35
+
+[physical attack]
+	23
+
+[price]
+	800000
+
+[repair price]
+	50000
+
+[value]
+	50000
+
+[equipment physical attack]
+	295	262
+
+[equipment magical attack]
+	248	220
+
+[separate attack]
+	157	103
+
+[physical critical hit]
+	4
+
+[icon]
+	`item/weapon/gunner/revolver.img`	23
+
+[field image]
+	`Item/field_weapon.img`	1
+
+[equipment type]
+	`[weapon]`	20
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	2	0
+
+[layer variation]
+	2790
+	`revc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`revb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	2	0
+
+[layer variation]
+	2790
+	`at_revc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_revb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2000
+
+[item group name]
+	`revolver`
+
+[cool time]
+	10000
+
+[medal]
+	2500
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[reduce duration to human armor at pvp module]
+		75
+	[probability]
+		1
+	[active status]
+		`hold`	35
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

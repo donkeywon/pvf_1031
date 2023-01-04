@@ -1,0 +1,144 @@
+#PVF_File
+
+[name]
+	`虚祖的驱魔珠`
+
+[name2]
+	`Pride of Suju`
+
+[basic explain]
+	`施放技能时， 有5%%的几率使自身增加15%%的移动速度和施放速度， 效果持续60秒。`
+
+[flavor text]
+	`授予虚祖实力最强的驱魔师的念珠。`
+
+[grade]
+	50
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	45
+
+[magical attack]
+	53
+
+[attack speed]
+	-50
+
+[cast speed]
+	50
+
+[MP MAX]
+	150
+
+[need material]
+	3260	750
+
+[repair price]
+	67200
+
+[value]
+	64000
+
+[equipment physical attack]
+	428	385
+
+[equipment magical attack]
+	547	492
+
+[separate attack]
+	285	189
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	48	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/rosary.img`	31
+
+[field image]
+	`Item/field_weapon.img`	12
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	3	1
+
+[layer variation]
+	200
+	`rosaryd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`rosaryc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`ROSARY_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`rosary`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		60000
+	[probability]
+		5
+	[stat]
+		`cast speed`
+		`+`	150
+	[stat]
+		`move speed`
+		`+`	150
+[/then]
+
+[routing priority]
+	`priest`	3
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

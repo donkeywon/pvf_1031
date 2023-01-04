@@ -1,0 +1,88 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Alarm.ani`
+	[SUB ANI]
+		`../Animation/AlarmLight.ani`	0	10
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			61803
+		[LEVEL]
+			62
+		[POS]
+			50	50	0
+		[NO EFFECT]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61803
+		[LEVEL]
+			62
+		[POS]
+			50	-50	0
+		[NO EFFECT]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61803
+		[LEVEL]
+			62
+		[POS]
+			-50	50	0
+		[NO EFFECT]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61803
+		[LEVEL]
+			62
+		[POS]
+			-50	-50	0
+		[NO EFFECT]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61494
+		[LEVEL]
+			62
+		[POS]
+			-100	-100	0
+		[NO EFFECT]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			61494
+		[LEVEL]
+			62
+		[POS]
+			100	100	0
+		[NO EFFECT]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

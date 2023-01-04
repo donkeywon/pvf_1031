@@ -1,0 +1,54 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/experiment_bottle2_dest.ani`
+	[SUB ANI]
+		`../Animation/experiment_bottle_dest.ani`	0	-2
+		`../Animation/BloodNeck_damage_2.ani`	0	-1
+		`../Animation/experiment_bottle2_shutter__dest_action1.ani`	0	1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/tube_destroy.ptl`	0	0	60
+	[SUMMON MONSTER]
+		[INDEX]
+			64002
+		[LEVEL]
+			77
+		[POS]
+			10	0	50
+		[JUMP OUT]
+			40	-80	50
+		[LEFT]
+		[UP]
+		[USE MY BASEPOS]
+		[TEAM]
+			100
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		14	14
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		4
+	[NOW]
+[/BEHAVIOR]

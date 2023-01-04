@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/stay_str.ani`
+[/MOTION]
+
+[TRIGGER]
+	[IF]
+		`a`	
+		[=]
+			0
+	[/IF]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		30000	
+		[physical attack]
+		[+]
+			30
+		[move speed]
+		[%]
+			4.0
+		[attack speed]
+		[%]
+			4.0
+	[/APPENDAGE]
+	[DIM]
+		`a`	
+		[=]
+			1
+	[/DIM]
+[/BEHAVIOR]

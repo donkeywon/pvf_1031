@@ -1,0 +1,88 @@
+#PVF_File
+
+[name]
+	`听说爱情曾来过`
+
+[name2]
+	``
+
+[explain]
+	`攻击人型怪敌人时， 附加500点伤害。
+
+进入异常状态时， 恢复1%%的HP最大值。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	441
+
+[custom animation]
+	`TitleAnimation/romancemania.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move speed]
+	40
+
+[physical defense]
+	40
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[target type]
+		`human`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`+`	500
+[/then]
+
+[if]
+	[cooltime]
+		5000
+	[my active status on]
+		`any`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`hp`
+		`%`	1	0
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

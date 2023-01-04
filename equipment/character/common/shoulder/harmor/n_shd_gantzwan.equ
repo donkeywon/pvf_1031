@@ -1,0 +1,100 @@
+#PVF_File
+
+[name]
+	`(旧) 杀戮护肩`
+
+[name2]
+	`Gantzwan`
+
+[basic explain]
+	`前冲伤害 +20%%`
+
+[flavor text]
+	`f=ma 重量越大， 冲击力就越强， 你们都懂了吧？  --夏洛克对聚过来的客人们说到`
+
+[grade]
+	30
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	25
+
+[physical attack]
+	13
+
+[physical defense]
+	12
+
+[magical attack]
+	9
+
+[price]
+	30000
+
+[repair price]
+	24000
+
+[value]
+	24000
+
+[equipment physical defense]
+	1216	1024
+
+[icon]
+	`Item/common/shoulder.img`	24
+
+[field image]
+	`Item/field_equip.img`	12
+
+[equipment type]
+	`[shoulder]`	20
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	32
+
+[weight]
+	2300
+
+[item group name]
+	`ha shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[my state]
+		`dash attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	20
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

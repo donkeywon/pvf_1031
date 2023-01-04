@@ -1,0 +1,66 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check key cooltime]
+			`super`
+		[false]
+		[return str]
+			`super`
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	70.0	20.0	15.0	15.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`tripleattack`
+				[false]
+				[return str]
+					`tripleattack`
+				[true]
+				[return]
+					-1
+			[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	100.0	100.0	42.0	42.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`oilwave`
+			[false]
+			[return str]
+				`oilwave`
+			[true]
+			[return]
+				-1
+		[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	400.0	0.0	22.0	22.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`combo`
+			[false]
+			[return str]
+				`combo`
+			[true]
+			[return]
+				-1
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

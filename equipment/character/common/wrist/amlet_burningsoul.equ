@@ -1,0 +1,89 @@
+#PVF_File
+
+[name]
+	`燃烧者之魂`
+
+[name2]
+	`Soul of One to Blaze up`
+
+[basic explain]
+	`攻击时， 有5%%的几率出现火焰爆炸。`
+
+[grade]
+	61
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[physical attack]
+	26
+
+[physical defense]
+	64
+
+[price]
+	73200
+
+[repair price]
+	58560
+
+[value]
+	58560
+
+[equipment magical defense]
+	3264	3024
+
+[icon]
+	`Item/common/bracelet.img`	21
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	21
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		1000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[reduce probability to human armor at pvp module]
+		80
+	[passive object]
+		48071	0	0	0	50	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

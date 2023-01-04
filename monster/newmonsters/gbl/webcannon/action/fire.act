@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/fire.ani`
+	[SUB ANI]
+		`../animation/firereadyeyes.ani`	1	0
+		`../animation/firereadygas.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`DRGCANNON_READY`	0
+		`DRGCANNON_SHOOT`	10
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8503
+		[PARTICLE FILENAME]
+			`../Particle/Fire.ptl`
+		[LEVEL]
+			50
+		[POS]
+			0	0	30
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

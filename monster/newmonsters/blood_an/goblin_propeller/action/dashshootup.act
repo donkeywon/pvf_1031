@@ -1,0 +1,148 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/DashShootUp.ani`
+	[SUB ANI]
+		`../Animation/Propeller/DashShootUp.ani`	0	0
+		`../Animation/PropellerEffect/DashEffect04.ani`	0	10
+		`../Animation/DashFireEffectB.ani`	0	1
+		`../Animation/DashFireEffectF.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`MACHINEGUNA_01`	0
+		`MACHINEGUNA_01`	2
+		`MACHINEGUNA_01`	4
+		`MACHINEGUNA_01`	6
+		`MACHINEGUNA_01`	8
+		`MACHINEGUNA_01`	10
+		`MACHINEGUNA_01`	12
+		`MACHINEGUNA_01`	14
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		14	14
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30018
+		[PARTICLE FILENAME]
+			`../Particle/DamageBullet.ptl`
+		[LEVEL]
+			0
+		[POS]
+			90	0	0
+		[USE MY DIRECTION]
+		[FIX DIRECTION]
+		[NEUTRAL]
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			30018
+		[PARTICLE FILENAME]
+			`../Particle/DamageBullet.ptl`
+		[LEVEL]
+			0
+		[POS]
+			100	-10	0
+		[USE MY DIRECTION]
+		[FIX DIRECTION]
+		[NEUTRAL]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-100
+		[X AXIS]
+			-50
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			150
+	[/SET SPEED]
+[/BEHAVIOR]

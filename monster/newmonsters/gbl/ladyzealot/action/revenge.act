@@ -1,0 +1,27 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/attack.ani`
+[/MOTION]
+
+[TRIGGER]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			23013
+		[PARTICLE FILENAME]
+			`../Particle/ShootingStarPath.ptl`
+		[LEVEL]
+			32
+		[POS]
+			0	0	300
+		[WARNING MARK]
+			330	0	100	2
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

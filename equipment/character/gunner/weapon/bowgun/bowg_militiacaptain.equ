@@ -1,0 +1,173 @@
+#PVF_File
+
+[name]
+	`野战队长的奇袭手弩`
+
+[name2]
+	`Custom Bow of Militia Captain`
+
+[basic explain]
+	`物理、 魔法伤害 +5%%
+[弹药主宰]的速度和射程距离 +5%%
+[弹药主宰]的附加发射几率 +10%%`
+
+[detail explain]
+	`物理、 魔法伤害 +5%% (在决斗场中 +3%%)
+[弹药主宰]的速度和射程距离 +5%%
+[弹药主宰]的附加发射几率 +10%%`
+
+[grade]
+	68
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	64
+
+[physical attack]
+	45
+
+[magical attack]
+	23
+
+[attack speed]
+	20
+
+[stuck]
+	-1
+
+[price]
+	108800
+
+[repair price]
+	91392
+
+[value]
+	87040
+
+[equipment physical attack]
+	507	462
+
+[equipment magical attack]
+	563	513
+
+[separate attack]
+	384	260
+
+[physical critical hit]
+	3
+
+[icon]
+	`item/weapon/gunner/bowgun.img`	42
+
+[field image]
+	`Item/field_weapon.img`	5
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	5	1
+
+[layer variation]
+	2790
+	`bowgunc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`bowgunb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	5	1
+
+[layer variation]
+	2790
+	`at_bowgunc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_bowgunb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BOWGUN_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`bowgun`
+
+[cool time]
+	10000
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	5
+[/then]
+
+[skill data up]
+	`[gunner]`	69	`[all]`	`[level]`	0	`+`	50
+	`[gunner]`	69	`[all]`	`[level]`	1	`+`	100
+[/skill data up]
+
+[pvp]
+	[if]
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase damage]
+			`%`	3
+	[/then]
+	[skill data up]
+		`[gunner]`	69	`[all]`	`[level]`	0	`+`	50
+		`[gunner]`	69	`[all]`	`[level]`	1	`+`	100
+	[/skill data up]
+[/pvp]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

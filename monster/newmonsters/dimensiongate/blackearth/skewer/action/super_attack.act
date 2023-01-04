@@ -1,0 +1,48 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/super.ani`
+	[SUB ANI]
+		`../animation/super1.ani`	0	-1
+		`../animation/super2.ani`	0	-1
+		`../animation/super3.ani`	0	0
+		`../animation/super4.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`来这里吧！我给你治疗！`	0	50
+		`大家集合！要发射串签啦！`	0	50
+	[/SPEECH]
+	[SOUND]
+		`SUPERARMOR`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DEFAULT TEAM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[WHICH]
+	[ME]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		0
+	[RESET]
+[/BEHAVIOR]

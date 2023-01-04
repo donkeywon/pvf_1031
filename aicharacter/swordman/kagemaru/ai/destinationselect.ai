@@ -1,0 +1,68 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[target state]
+			4.0
+		[true]
+		[return]
+			0
+		[false]
+	
+		[think]
+			[hp]
+				`%>=`	30.0
+			[true]
+		
+			[think]
+				[void]
+					`get random()`	0.0	100.0
+			
+				[think]
+					[last result]
+						`>=`	5.0
+					[true]
+					[return]
+						0
+					[false]
+				
+					[think]
+						[last result]
+							`>=`	4
+						[true]
+						[return]
+							0
+						[false]
+						[return]
+							1
+					[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`get random()`	0.0	100.0
+	
+		[think]
+			[last result]
+				`>=`	70.0
+			[true]
+			[return]
+				2
+			[false]
+		
+			[think]
+				[last result]
+					`>=`	69
+				[true]
+				[return]
+					0
+				[false]
+				[return]
+					2
+			[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

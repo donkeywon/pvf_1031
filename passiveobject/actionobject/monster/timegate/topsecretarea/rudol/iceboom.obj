@@ -1,0 +1,48 @@
+#PVF_File
+
+[floating height]
+	1
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	0
+
+[basic action]
+	`action/iceboom.act`
+
+[attack info]
+	`AttackInfo/icearrow.atk`
+
+[destroy particle]
+	`Particle/iceDestroy.ptl`
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	2600
+[/object destroy condition]
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[ENEMY]`
+	[homing velocity]
+		40	40
+	[homing check gap]
+		1000
+	[sync animation rotation]
+		1
+	[max rotation]
+		360
+	[init rotation]
+		0
+	[diff rotation]
+		100
+	[homing time]
+		2000
+[/homing]

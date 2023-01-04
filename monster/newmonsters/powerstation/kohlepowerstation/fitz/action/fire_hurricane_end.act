@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/fire_hurricane_end.ani`
+	[SUB ANI]
+		`../Animation/effect/fire_hurricane_end_e.ani`	0	1
+		`../Animation/effect/fire_hurricane_end_e3.ani`	0	2
+		`../Animation/effect/fire_hurricane_end_e2.ani`	0	4
+	[/SUB ANI]
+	[SOUND]
+		`FITZ_TELEPORT_IN`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[DOWN]
+		`down.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`damage2.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`damage1.act`
+[/BEHAVIOR]

@@ -1,0 +1,216 @@
+#PVF_File
+
+[name]
+	`波罗丁的破坏之锤`
+
+[basic explain]
+	`攻击时， 有5%%的几率使敌人进入眩晕状态。
+攻击晕眩状态的敌人时， 附加10%%的伤害。
+普通攻击的最后一击可以对前方施放冲击波。 (消耗1个无色小晶块)`
+
+[detail explain]
+	`攻击时， 有5%%的几率使敌人进入眩晕状态2秒。 (在决斗场中几率为1%%； 若敌人高于Lv89， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+攻击晕眩状态的敌人时， 附加10%%的伤害。
+普通攻击的最后一击时， 可以对前方施放3段冲击波； 被冲击波命中的敌人会浮空， 并有20%%的几率进入眩晕状态2秒(冷却时间为20秒， 决斗场内冷却时间为40秒； 被冲击波击中的敌人漂浮到空中， 有20%%的机率进入眩晕状态， 持续时间2秒)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	87
+
+[attack speed]
+	-30
+
+[stuck]
+	-1
+
+[price]
+	142400
+
+[repair price]
+	119616
+
+[value]
+	113920
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	939	884
+
+[equipment magical attack]
+	811	764
+
+[separate attack]
+	510	347
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/club/club.img`	90
+
+[field image]
+	`Item/FieldImage.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	28	0
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	28	0
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`STICK_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3400
+
+[item group name]
+	`club`
+
+[cool time]
+	10000
+
+[if]
+	[target active status]
+		`stun`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		5
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`stun`	89
+[/then]
+
+[if]
+	[module]
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[dead tower]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		20000
+	[my state]
+		`final attack`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[consume item]
+		3037	1
+	[probability]
+		100
+	[passive object]
+		48527	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		40000
+	[my state]
+		`final attack`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[consume item]
+		3037	1
+	[probability]
+		100
+	[passive object]
+		48527	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

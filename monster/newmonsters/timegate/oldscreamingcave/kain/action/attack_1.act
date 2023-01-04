@@ -1,0 +1,44 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/attack_1.ani`
+	[SUB ANI]
+		`../Animation/effect/upper_dust.ani`	0	1
+		`../Animation/effect/upper_eff.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`休想打到我……`	0	30
+	[/SPEECH]
+	[SOUND]
+		`KANE_ATK_01`	1
+		`KANE_PHANTOM_02`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		3
+	[END]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+[/BEHAVIOR]

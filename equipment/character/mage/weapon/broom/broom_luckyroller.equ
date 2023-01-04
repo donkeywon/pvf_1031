@@ -1,0 +1,237 @@
+#PVF_File
+
+[name]
+	`幸运护身符`
+
+[name2]
+	`Lucky Roller`
+
+[basic explain]
+	`[暴炎加热炉]大成功率 +5%%
+[暴炎加热炉]失败率 -5%%
+[反重力装置]大成功率 +5%%
+[反重力装置]失败率 -5%
+
+施放[烈炎]时， 有5%%的几率恢复1000点HP。 (冷却时间为40秒)
+施放[寒冰]时， 有5%%的几率恢复2000点MP。 (冷却时间为40秒)
+施放[控制]时， 有5%%几率增加70点智力。 (冷却时间为40秒)`
+
+[grade]
+	65
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[magical attack]
+	44
+
+[attack speed]
+	60
+
+[move speed]
+	30
+
+[price]
+	104000
+
+[repair price]
+	87360
+
+[value]
+	83200
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	624	564
+
+[equipment magical attack]
+	686	620
+
+[separate attack]
+	378	255
+
+[skill levelup]
+	`[mage]`	106	1
+	`[mage]`	103	1
+	`[creator mage]`	250	3
+[/skill levelup]
+
+[icon]
+	`Item/weapon/mage/broom.img`	47
+
+[field image]
+	`Item/field_weapon.img`	10
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	12	1
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	12	1
+
+[layer variation]
+	2150
+	`at_brooma`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_broomd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	12	1
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BROOM_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`broom`
+
+[cool time]
+	10000
+
+[required skill]
+	91
+
+[skill data up]
+	`[mage]`	106	`[all]`	`[static]`	2	`+`	50
+	`[mage]`	106	`[all]`	`[static]`	0	`+`	-50
+	`[mage]`	103	`[all]`	`[static]`	2	`+`	50
+	`[mage]`	103	`[all]`	`[static]`	0	`+`	-50
+[/skill data up]
+
+[routing priority]
+	`mage`	4
+	`creator mage`	0
+[/routing priority]
+
+[possible kiri protect]
+
+[if]
+	[use skill]
+		`creator mage`	250
+	[/use skill]
+	[cooltime]
+		40000
+[/if]
+
+[then]
+	[probability]
+		5
+	[target]
+		`myself`	-1
+	[restore]
+		`hp`
+		`+`	1000	0
+[/then]
+
+[if]
+	[use skill]
+		`creator mage`	251
+	[/use skill]
+	[cooltime]
+		40000
+[/if]
+
+[then]
+	[probability]
+		5
+	[target]
+		`myself`	-1
+	[restore]
+		`mp`
+		`+`	2000	0
+[/then]
+
+[if]
+	[use skill]
+		`creator mage`	252
+	[/use skill]
+	[cooltime]
+		40000
+[/if]
+
+[then]
+	[probability]
+		5
+	[target]
+		`myself`	-1
+	[duration]
+		40000
+	[stat]
+		`magical attack`
+		`+`	70
+[/then]
+
+[need material]
+	2749095	169
+
+[icon mark]
+	`Item/IconMark.img`	68

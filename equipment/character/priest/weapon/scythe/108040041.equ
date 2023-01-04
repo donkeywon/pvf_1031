@@ -1,0 +1,139 @@
+#PVF_File
+
+[name]
+	`镇魂之封灵战镰`
+
+[basic explain]
+	`攻击速度 +1%%
+
+攻击时， 附加8%%的伤害。`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	68
+
+[attack speed]
+	90
+
+[cast speed]
+	15
+
+[move speed]
+	10
+
+[stuck]
+	1
+
+[HP MAX]
+	200
+
+[MP MAX]
+	200
+
+[need material]
+	10000204	100
+
+[repair price]
+	134568
+
+[value]
+	128160
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	811	764
+
+[equipment magical attack]
+	854	804
+
+[separate attack]
+	510	347
+
+[physical critical hit]
+	5
+
+[magical critical hit]
+	5
+
+[icon]
+	`item/new_equipment/01_weapon/priest/scythe/scythe.img`	91
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	29	0
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[magical attack]
+	68
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	8
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66

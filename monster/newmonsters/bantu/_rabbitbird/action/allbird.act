@@ -1,0 +1,72 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/AllBird.ani`
+	[SOUND]
+		`HORROR_AMB_07`	0
+		`FOLLOW_ME`	2
+		`FOLLOW_ME`	3
+		`SEME_SKILL_04`	3
+	[/SOUND]
+	[SPEECH]
+		`无敌的鸟群啊！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			300
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		150	3500	100	100	50	0	0
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		0
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8037
+		[PARTICLE FILENAME]
+			`../Particle/Bird.ptl`
+		[LEVEL]
+			55
+		[POS]
+		[RANDOM]
+			-400	-100
+		[RANDOM]
+			-200	200	200
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]

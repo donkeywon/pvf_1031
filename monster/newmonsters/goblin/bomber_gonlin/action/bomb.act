@@ -1,0 +1,61 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/bomb.ani`
+	[SUB ANI]
+		`../Animation/bomb_u/bomb_bomb_u.ani`	0	-5
+		`../Animation/bomb_s/bomb_bomb_s.ani`	0	1
+		`../Animation/hair/bomb_hair.ani`	0	2
+		`../Animation/hat/bomb_hat.ani`	0	5
+		`../Animation/pants/bomb_pants.ani`	0	7
+		`../Animation/skin/bomb_skin.ani`	0	11
+		`../Animation/weapon/bomb_100.ani`	0	15
+	[/SUB ANI]
+	[SOUND]
+		`GSELFDEST_SKILL`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[COLOR CHANGE EFFECT]
+		[EFFECT RED END]
+			255
+		[EFFECT ALPHA END]
+			255
+		[CHANGE TIME]
+			500
+		[LIFE TIME]
+			2000
+	[/COLOR CHANGE EFFECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			40008
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			40
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[DESTROY]
+[/BEHAVIOR]

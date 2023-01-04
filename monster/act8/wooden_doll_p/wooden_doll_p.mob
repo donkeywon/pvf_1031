@@ -1,0 +1,221 @@
+#PVF_File
+
+[name]
+	`里昂`
+
+[face image]
+	`Monster/MonsterFace.img`	491
+
+[die effect]
+	0	3	1
+
+[category]
+	`[human]`
+	`[melee combat]`
+	`[close-tough]`
+[/category]
+
+[ambient sound]
+	``
+
+[attack sound]
+	``
+
+[appear sound]
+	``
+
+[damage sound]
+	`R_HIT_WOOD2`
+
+[die sound]
+	``
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	150
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	150
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+	`[HP MAX]`	`*`	925
+[/ability category]
+
+[level]
+	70	70
+
+[fire resistance]
+	-10	-10
+
+[water resistance]
+	-10	-10
+
+[dark resistance]
+	30	30
+
+[light resistance]
+	-30	-30
+
+[freeze resistance]
+	30	30
+
+[poison resistance]
+	50	50
+
+[curse resistance]
+	30	30
+
+[blind resistance]
+	30	30
+
+[lightning resistance]
+	-10	-10
+
+[sleep resistance]
+	50	50
+
+[burn resistance]
+	-10	-10
+
+[bleeding resistance]
+	50	50
+
+[HP regen speed]
+	20	20
+
+[move speed]
+	550	550
+
+[attack speed]
+	700	700
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	100000	100000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[waiting action]
+	`Action/Wait_Stay.act`
+
+[move action]
+	`Action/Wait_Stay.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[attack action]
+	`Action/Casting.act`
+	`Action/Priest_Attack.act`
+	`Action/Swordman_Attack1.act`
+	`Action/Swordman_Attack2.act`
+	`Action/Swordman_Attack3.act`
+	`Action/Swordman_Attack3_Final_start.act`
+	`Action/Wait_Stay.act`
+	`Action/Pinch_Mode.act`
+	`Action/Swordman_Attack3_Final_end.act`
+[/attack action]
+
+[etc action]
+	`Action/WoodenDoll_pink.act`
+[/etc action]
+
+[last action]
+	`Action/Die.act`
+
+[attack info]
+	`AttackInfo/Grap.atk`
+	`AttackInfo/Push.atk`
+	`AttackInfo/Upper.atk`
+	``
+	`AttackInfo/Grap.atk`
+	``
+	``
+	``
+	`AttackInfo/Final_Upper.atk`
+[/attack info]
+
+[cooltime]
+	5000	7000	5000	3000	7000	7000	5000	5000	7000
+[/cooltime]
+
+[think term]
+	400
+
+[destination change term]
+	500
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[targeting bonus]
+	30	80	80	90	50	0	0	50	20	0	0	0	0	50	0	0	0	0	0	0	100
+	`[stand]`
+	`[dash]`	0	0	0
+[/targeting bonus]
+
+[keep distance with target]
+	230
+
+[keep range distance with target]
+	0	0	150	220
+
+[warlike]
+	90
+
+[intelligence]
+	90	90	3000
+
+[vision]
+	600
+
+[set damage check]
+	3000
+
+[lie frame]
+	0	1	2	2	4

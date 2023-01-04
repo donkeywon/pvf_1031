@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Laugh.ani`
+	[SPEECH]
+		`挖出来了！`	1	30
+		`这次会挖到什么呢？`	1	30
+		`成功了！！！`	1	30
+	[/SPEECH]
+	[SOUND]
+		`ROBBER_04`	0
+	[/SOUND]
+	[SUB ANI]
+		`../Animation/Eye/Laugh.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11071
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			55
+		[POS]
+			60	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

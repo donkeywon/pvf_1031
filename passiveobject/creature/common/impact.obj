@@ -1,0 +1,40 @@
+#PVF_File
+
+[width]
+	1	1
+
+[floating height]
+	0
+
+[layer]
+	`[bottom]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	100
+
+[basic motion]
+	`Animation/jump_impact.ani`
+
+[add particles]
+	[particle]
+		[file]
+			`Particle/pig_overskill_dust.ptl`
+	[/particle]
+	[particle]
+		[file]
+			`Particle/pig_overskill_stone.ptl`
+	[/particle]
+[/add particles]
+
+[sound category]
+	`[after object create]`
+	`BRONZEPIG_CRASH`	-1
+[/sound category]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	3000
+[/object destroy condition]

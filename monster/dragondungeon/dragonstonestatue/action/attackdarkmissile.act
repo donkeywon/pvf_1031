@@ -1,0 +1,93 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/AttackDarkMissile/Body.ani`
+	[SUB ANI]
+		`../Animation/AttackDarkMissile/Jaw.ani`	0	1
+		`../Animation/AttackDarkMissile/Head.ani`	0	2
+		`../Animation/AttackDarkMissile/Eye_Dodge.ani`	0	3
+		`../Animation/AttackDarkMissile/Start_Back_Dodge.ani`	0	4
+		`../Animation/AttackDarkMissile/Start_Core_Dodge.ani`	0	5
+		`../Animation/AttackDarkMissile/Start_Floor_Dodge.ani`	0	6
+		`../Animation/AttackDarkMissile/Start_Head_Dodge.ani`	0	7
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`createTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[DIM]
+		`endTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`createTime`	
+		[+]
+			700
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54038
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM SELECT]
+			-29	-39	-19
+		[/RANDOM SELECT]
+	0	
+		[RANDOM SELECT]
+			350	360
+		[/RANDOM SELECT]
+		[USE MY BASEPOS]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+	[DIM]
+		`createTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`endTime`	
+		[+]
+			3000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]

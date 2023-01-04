@@ -1,0 +1,218 @@
+#PVF_File
+
+[name]
+	`卡斯帕魔杖[租借活动]`
+
+[name2]
+	``
+
+[basic explain]
+	`合约召唤：黑暗骑士黑骑士 桑德尔攻击力增加22%% 
+施展时以 50%% 的机率恢复MP 37 
+冰魄旋枪，冰魄剑攻击力增加15%% 
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。
+只能在异界地下城使用。`
+
+[detail explain]
+	`合约召唤：黑暗骑士黑骑士 桑德尔攻击力增加22%%(决斗场内增加11%%)
+施展时以 50%% 的机率恢复MP 37。
+冰魄旋枪，冰魄剑攻击力增加1 5%%(决斗场内增加8%%)
+
+无法进行强化、 增幅、 锻造、 分解、 赠送和金库储藏。
+只能在异界地下城使用。`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	65
+
+[magical attack]
+	69
+
+[attack speed]
+	100
+
+[cast speed]
+	50
+
+[stuck]
+	1
+
+[price]
+	110400
+
+[repair price]
+	92736
+
+[value]
+	88320
+
+[equipment physical attack]
+	589	544
+
+[equipment magical attack]
+	719	664
+
+[separate attack]
+	389	264
+
+[skill levelup]
+	`[mage]`	30	1
+	`[mage]`	50	2
+	`[at mage]`	21	1
+	`[at mage]`	22	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/mage/rod.img`	70
+
+[field image]
+	`Item/field_weapon.img`	7
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	15	6
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	15	6
+
+[layer variation]
+	2150
+	`at_roda`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_rodd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	15	6
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`ROD_TOUCH`
+
+[durability]
+	24
+
+[weight]
+	2200
+
+[item group name]
+	`rod`
+
+[cool time]
+	10000
+
+[if]
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[reduce probability to human armor at pvp module]
+		80
+	[restore]
+		`mp`
+		`+`	37	0
+[/then]
+
+[skill data up]
+	`[mage]`	44	`[all]`	`[level]`	12	`%`	22
+	`[mage]`	44	`[all]`	`[level]`	13	`%`	22
+	`[mage]`	44	`[all]`	`[level]`	14	`%`	22
+	`[mage]`	44	`[all]`	`[level]`	15	`%`	22
+	`[at mage]`	23	`[all]`	`[level]`	0	`%`	15
+	`[at mage]`	8	`[all]`	`[level]`	0	`%`	15
+	`[at mage]`	8	`[all]`	`[level]`	1	`%`	15
+[/skill data up]
+
+[pvp]
+	[skill data up]
+		`[mage]`	44	`[all]`	`[level]`	12	`%`	11
+		`[mage]`	44	`[all]`	`[level]`	13	`%`	11
+		`[mage]`	44	`[all]`	`[level]`	14	`%`	11
+		`[mage]`	44	`[all]`	`[level]`	15	`%`	11
+		`[at mage]`	23	`[all]`	`[level]`	0	`%`	8
+		`[at mage]`	8	`[all]`	`[level]`	0	`%`	8
+		`[at mage]`	8	`[all]`	`[level]`	1	`%`	8
+	[/skill data up]
+[/pvp]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

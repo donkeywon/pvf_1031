@@ -1,0 +1,138 @@
+#PVF_File
+
+[name]
+	`少女秀英的奴隶`
+
+[name2]
+	`Friend of Girls[Su-Young]`
+
+[explain]
+	`攻击时以1%%的机率30秒内移动速度增加9%%。施展时以2%%的机率30秒内施放速度增加9%%。
+在聊天视窗内输入「秀英」会出现特别绘文字和音效。`
+
+[flavor text]
+	`<活动>和少女时代一起进行的Dungeon & Fighter！`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	160
+
+[equipment type]
+	`[title name]`	1
+
+[custom animation]
+	`TitleAnimation/slave_girls.ani`
+[/custom animation]
+
+[HP MAX]
+	99
+
+[MP MAX]
+	99
+
+[physical attack]
+	13
+
+[physical defense]
+	9
+
+[magical attack]
+	13
+
+[magical defense]
+	9
+
+[stuck resistance]
+	10
+
+[HP regen speed]
+	22
+
+[MP regen speed]
+	4
+
+[move speed]
+	30
+
+[attack speed]
+	10
+
+[cast speed]
+	10
+
+[if]
+	[cooltime]
+		45000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`move speed`
+		`+`	90
+[/then]
+
+[if]
+	[cooltime]
+		45000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`cast speed`
+		`+`	90
+[/then]
+
+[physical critical hit]
+	1
+
+[magical critical hit]
+	1
+
+[stuck]
+	-1
+
+[move wav]
+	`NAME_TOUCH`
+
+[special ability]
+	1
+
+[chat emoticon index]
+	32
+
+[icon mark]
+	`Item/IconMark.img`	64

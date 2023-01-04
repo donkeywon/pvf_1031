@@ -1,0 +1,163 @@
+#PVF_File
+
+[name]
+	`云晖之蓝影手杖`
+
+[name2]
+	`找不到代码name2_37698`
+
+[basic explain]
+	`施放[巴拉克的愤怒]、 [巴拉克的野心]时， 有15%%的几率不受冷却时间影响。
+[死灵之怨]范围 +30%%`
+
+[detail explain]
+	`施放[巴拉克的愤怒]、 [巴拉克的野心]时， 有15%的几率不受冷却时间影响。 (在决斗场中几率为1.5%)
+[死灵之怨]范围 +30%`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[magical attack]
+	42
+
+[attack speed]
+	-100
+
+[need material]
+	3285	1200
+
+[repair price]
+	83328
+
+[value]
+	79360
+
+[equipment physical attack]
+	462	423
+
+[equipment magical attack]
+	658	603
+
+[separate attack]
+	360	243
+
+[magical critical hit]
+	5
+
+[skill levelup]
+	`[thief]`	37	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/thief/wand.img`	93
+
+[field image]
+	`Item/field_weapon.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	5	7
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	2300
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[thief]`	49	`[all]`	`[static]`	0	`%`	30
+[/skill data up]
+
+[if]
+	[event use skill]
+		`thief`	40
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		15
+	[reduce probability to human armor at pvp module]
+		90
+	[skill data up]
+		`[thief]`	40	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`thief`	39
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		15
+	[reduce probability to human armor at pvp module]
+		90
+	[skill data up]
+		`[thief]`	39	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[routing priority]
+	`thief`	2
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

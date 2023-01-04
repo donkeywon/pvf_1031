@@ -1,0 +1,31 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Appear_Dimension_Gate00.ani`
+	[SUB ANI]
+		`../Animation/Appear_Dimension_Gate01.ani`	0	-10
+		`../Animation/Appear_Dimension_Gate00_1.ani`	0	0
+		`../Animation/Appear_Dimension_Gate02.ani`	0	0
+		`../Animation/Appear_Dimension_Gate03.ani`	0	0
+		`../Animation/Appear_Dimension_Gate03_1.ani`	0	0
+		`../Animation/Appear_Effect4.ani`	0	10
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ADD CATEGORY]
+	[FIXTURE]
+	[PARTICLE]
+		`../particle/ApperaParticle.ptl`	0	0	100
+	[FLASH SCREEN]
+		80	80	80	150	255	255	255
+[/BEHAVIOR]

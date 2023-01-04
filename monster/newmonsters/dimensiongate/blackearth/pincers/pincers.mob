@@ -1,0 +1,175 @@
+#PVF_File
+
+[damage sound]
+	`DRAGONMAN_DMG`
+
+[die sound]
+	`DRAGONMAN_DIE`
+
+[floating height]
+	0
+
+[name]
+	`钳子怪`
+
+[face image]
+	`Monster/MonsterFace.img`	551
+
+[ability category]
+	`[HP MAX]`	`*`	5520
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[category]
+	`[hybrid]`
+	`[fort armor]`
+	`[range combat]`
+	`[close-carefully]`
+[/category]
+
+[level]
+	60	60
+
+[ability table]
+	1
+
+[lie frame]
+	1	2	3	3	4
+
+[move speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[hit recovery]
+	800	800
+
+[weight]
+	80000	80000
+
+[vision]
+	1900
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[damage action 1]
+	`Action/Damage1.act`
+
+[damage action 2]
+	`Action/Damage2.act`
+
+[sit action]
+	`action/sit.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[action list]
+	`Action/Attack.act`
+	``
+	`Action/super_attack.act`
+	``
+	``
+	``
+	``
+[/action list]
+
+[ridableskill definition]
+	[pattern]
+		0
+	[image path]
+		`sprite/Monster/impossible_blackearth/icon/pincers.img`
+	[skill]
+		0	-1
+		`normal`	0	-1	-1
+		`normal`	0	2	-1
+		`normal`	0	-1	-1
+		`normal`	0	-1	-1
+		`normal`	0	-1	-1
+		`normal`	0	-1	-1
+		`normal`	0	-1	-1
+		`normal`	0
+[/ridableskill definition]
+
+[ridableskill explanation]
+	[pattern]
+		0
+	[title]
+		`捆绑`
+	[subtitle]
+		`Super Bite`
+	[category]
+		`[普通]`
+	[detail]
+		`紧紧咬住并捆住奥兹玛。`
+[/ridableskill explanation]
+
+[attack info]
+	`attackinfo/Attack.atk`
+	``
+	`attackinfo/superAttack.atk`
+	`attackinfo/Attack.atk`
+	``
+	``
+[/attack info]
+
+[cooltime]
+	100	0	7000	10000	0	0
+[/cooltime]
+
+[int data]
+	0	20000	1000	0	200	1	3	205	0	0	80000	90000
+[/int data]
+
+[think term]
+	500
+
+[destination change term]
+	500
+
+[keep distance with target]
+	1000
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]

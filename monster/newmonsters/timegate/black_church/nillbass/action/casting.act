@@ -1,0 +1,112 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/chang.ani`
+	[SUB ANI]
+		`../Animation/casting/ExpLight1.ani`	0	-12
+		`../Animation/casting/StoneBack4.ani`	0	-11
+		`../Animation/casting/ExpCircle1.ani`	0	-10
+		`../Animation/casting/StoneBack3.ani`	0	-9
+		`../Animation/casting/12b_burst1-back_normal.ani`	0	-8
+		`../Animation/casting/StoneBack2.ani`	0	-7
+		`../Animation/casting/01_dust_normal_down.ani`	0	-6
+		`../Animation/casting/02_1_dust2_normal.ani`	0	-5
+		`../Animation/casting/02_dust2_normal.ani`	0	-4
+		`../Animation/casting/03_inside-energy_normal_down.ani`	0	-3
+		`../Animation/casting/04_inside-energy_dodge_up.ani`	0	-2
+		`../Animation/casting/10_character-hand_dodge_down.ani`	0	-1
+		`../Animation/casting/13_red_dodge.ani`	0	1
+		`../Animation/casting/23_outside-energy_normal.ani`	0	2
+		`../Animation/casting/25_dust_normal_up.ani`	0	3
+		`../Animation/casting/11_character-hand_normal_up.ani`	0	4
+		`../Animation/casting/ExpLight2.ani`	0	5
+		`../Animation/casting/StoneFront1.ani`	0	6
+		`../Animation/casting/StoneFront2.ani`	0	7
+		`../Animation/casting/StoneFront3.ani`	0	8
+		`../Animation/casting/StoneFront4.ani`	0	9
+		`../Animation/casting/StoneFront5.ani`	0	10
+	[/SUB ANI]
+	[SOUND]
+		`NGRASIA_DARK_CAST`	2
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	2200
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9980
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	15	0
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CHANGE ACTION FILE]
+	[STAY]
+		`berserker_stay.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		0
+		`berserker_damage1.act`
+	[CHANGE ACTION FILE]
+	[DAMAGE]
+		1
+		`berserker_damage2.act`
+	[CHANGE ACTION FILE]
+	[MOVE]
+		`berserker_move.act`
+	[APPENDAGE]
+		0	
+		[attack speed]
+		[%]
+			50.0
+		[move speed]
+		[%]
+			50.0
+		[equipment physical attack]
+		[%]
+			20.0
+		[equipment physical defense]
+		[%]
+			900.0
+		[equipment magical defense]
+		[%]
+			900.0
+		[all active status resistance]
+		[%]
+			1000.0
+		[all element]
+		[%]
+			50.0
+	[/APPENDAGE]
+[/BEHAVIOR]

@@ -1,0 +1,71 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/ShoulderAttack.ani`
+	[SUB ANI]
+		`../Animation/ShoulderAttack1_Effect.ani`	0	0
+		`../Animation/ShoulderAttack2_Effect.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`MINERALSWDA_02`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8615
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			60
+		[POS]
+			50	0	0
+	[/CREATE PASSIVEOBJECT]
+	[SET SPEED]
+		[X AXIS]
+			800
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+	[RANDOM SELECT]
+		0	1	2	3	4	5
+	[/RANDOM SELECT]
+	[END]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]

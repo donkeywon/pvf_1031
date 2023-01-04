@@ -1,0 +1,57 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[attack success]
+			1
+		[true]
+	
+		[think]
+			[my attack]
+				9
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	6
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					4
+			[/think]
+	[false]
+	[think]
+		[my attack]
+			6
+		[true]
+		[return]
+			-1
+		[false]
+		[return]
+			5
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[my attack]
+			6
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	46
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				5
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+[/ai pattern]

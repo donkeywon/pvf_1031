@@ -1,0 +1,92 @@
+#PVF_File
+
+[name]
+	`燃烧的念气`
+
+[explain]
+	`可以使自身的力量和智力各增加100点， 体力和精神各增加20点。
+可以使队友增加100点的力量和智力。
+(称号效果只在[念气修炼场]、 [念气洞穴深处]、 [时空之门 : 镇魂曲]内有效)
+若队友穿戴了相同光环效果的装备， 则不会为队友赋予BUFF效果。`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	3
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title_cn.img`	255
+
+[custom animation]
+	`titleanimation/chn_DragonDungeon_title02.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[if]
+	[dungeon check]
+		200	201	202	203	204	205	206	3536	3537
+	[/dungeon check]
+	[stat change]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	100
+	[stat by condition]
+		`magical attack`
+		`+`	100
+[/then]
+
+[if]
+	[dungeon check]
+		200	201	202	203	204	205	206	3536	3537
+	[/dungeon check]
+	[stat change]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	100
+	[stat by condition]
+		`magical attack`
+		`+`	100
+	[stat by condition]
+		`physical defense`
+		`+`	20
+	[stat by condition]
+		`magical defense`
+		`+`	20
+[/then]
+
+[move wav]
+	`NAME_TOUCH`

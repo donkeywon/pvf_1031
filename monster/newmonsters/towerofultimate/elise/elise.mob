@@ -1,0 +1,170 @@
+#PVF_File
+
+[name]
+	`恶灵艾维丝`
+
+[floating height]
+	40
+
+[category]
+	`[undead]`
+	`[melee combat]`
+	`[close-carefully]`
+[/category]
+
+[appear sound]
+	`R_WRAITH_AMB`
+
+[damage sound]
+	`R_WRAITH_DMG`
+
+[die sound]
+	`R_WRAITH_DIE`
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	120
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+	`[HP MAX]`	`*`	3900
+[/ability category]
+
+[level]
+	65	65
+
+[dark resistance]
+	40	40
+
+[light resistance]
+	-30	-30
+
+[slow resistance]
+	20	20
+
+[freeze resistance]
+	20	20
+
+[stun resistance]
+	20	20
+
+[curse resistance]
+	50	50
+
+[stone resistance]
+	20	20
+
+[confuse resistance]
+	20	20
+
+[hold resistance]
+	20	20
+
+[move speed]
+	900	900
+
+[attack speed]
+	700	700
+
+[cast speed]
+	700	700
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	65000	65000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[face image]
+	`Monster/MonsterFace.img`	95
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[down action]
+	`Action/Down.act`
+
+[attack action]
+	`Action/appear.act`
+	`Action/attack.act`
+	`Action/attack1.act`
+[/attack action]
+
+[attack info]
+	``
+	``
+	``
+[/attack info]
+
+[cooltime]
+	15000	5000	5000
+[/cooltime]
+
+[think term]
+	500
+
+[destination change term]
+	200
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/easy]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/medium]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hard]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/ultimate]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[keep distance with target]
+	200
+
+[vision]
+	1200
+
+[set damage check]
+	3000
+
+[lie frame]
+	1	2	3	3	4
+
+[level of difficulty]
+	[easy]
+		-50	3000
+	[medium]
+		-30	2000
+	[hard]
+		0	0
+	[ultimate]
+		0	0
+	[hero]
+		0	0
+[/level of difficulty]

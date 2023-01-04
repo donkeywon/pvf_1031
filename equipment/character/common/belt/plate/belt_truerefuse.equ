@@ -1,0 +1,140 @@
+#PVF_File
+
+[name]
+	`斗者的信念腰带`
+
+[name2]
+	`True Faith Belt of Refusing Person`
+
+[grade]
+	58
+
+[rarity]
+	5
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	60
+
+[physical attack]
+	15
+
+[physical defense]
+	17
+
+[magical attack]
+	22
+
+[hit recovery]
+	17
+
+[inventory limit]
+	3000
+
+[anti evil]
+	4
+
+[need material]
+	3228	37
+
+[repair price]
+	40925
+
+[value]
+	37120
+
+[equipment physical defense]
+	1260	1200
+
+[icon]
+	`Item/common/belt.img`	82
+
+[field image]
+	`Item/field_equip.img`	18
+
+[equipment type]
+	`[waist]`	18
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	2000
+
+[item group name]
+	`mt waist`
+
+[cool time]
+	10000
+
+[set name]
+	`斗者的信念  套装`
+
+[set item]
+	20124	22119	24129	11668	13666	15663	19667	17661
+[/set item]
+
+[piece set ability]
+	3	
+	[MP MAX]
+		500
+	[magical critical hit]
+		3
+[/piece set ability]
+
+[piece set ability]
+	5	
+	[stuck resistance]
+		40
+	[MP regen speed]
+		14
+[/piece set ability]
+
+[piece set ability]
+	8	
+	[cast speed]
+		40
+	[if]
+		[target type]
+			`human`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[if]
+		[target type]
+			`undead`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[parameter basic explain]
+		`对人型怪敌人的伤害 +10%%
+对不死族敌人的伤害 +10%%`
+[/piece set ability]
+
+[possible kiri protect]

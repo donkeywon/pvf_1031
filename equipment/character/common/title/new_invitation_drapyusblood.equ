@@ -1,0 +1,126 @@
+#PVF_File
+
+[name]
+	`死神的邀请`
+
+[name2]
+	`Invitation of Drapyus ( Blood )`
+
+[explain]
+	`攻击或施放技能时， 有1%%的几率使自身增加5%%的物理、 魔法暴击率， 效果持续30秒。
+被攻击时， 有2%%的几率召唤一名APC--亡影狄瑞安协助召唤者攻击敌人， 亡影狄瑞安存在30秒。 (无法在决斗场召唤APC。)`
+
+[flavor text]
+	`亲爱的冒险家， 你在死亡之塔中英勇的表现， 让我对你刮目相看。 我现在正式邀请你到‘绝望之塔’来， 而且我答应你， 只要你来这里， 我就把最美丽的‘绝望’奖励给你， 呵呵~  --死神德莱弗斯`
+
+[grade]
+	1
+
+[attach type]
+	`[trade delete]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	55
+
+[icon]
+	`Item/Title/title.img`	85
+
+[custom animation]
+	`TitleAnimation/invitation_drapyusblood.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	270
+
+[MP MAX]
+	270
+
+[physical attack]
+	18
+
+[physical defense]
+	15
+
+[magical attack]
+	18
+
+[magical defense]
+	15
+
+[stuck resistance]
+	10
+
+[move speed]
+	30
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[if]
+	[cooltime]
+		40000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical critical hit`
+		`+`	5
+	[stat]
+		`magical critical hit`
+		`+`	5
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[npc gift disallowance]
+	1
+
+[if]
+	[cooltime]
+		60000
+	[disable pvp]
+		1
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[summon apc]
+		20405	55	1
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	64

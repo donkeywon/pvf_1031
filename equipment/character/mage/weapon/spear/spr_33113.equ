@@ -1,0 +1,233 @@
+#PVF_File
+
+[name]
+	`精竹之魂`
+
+[basic explain]
+	`施放[碎霸]时， 使自身进入霸体状态， 效果持续1秒。 (在决斗场中无效)
+施放[碎霸]时， 使自身增加37点力量， 效果持续12秒。
+施放[双翼之弩]时， 使自身增加37点力量， 效果持续12秒。`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	55
+
+[physical attack]
+	64
+
+[attack speed]
+	-50
+
+[stuck]
+	-1
+
+[need material]
+	3285	1200
+
+[price]
+	0
+
+[repair price]
+	83328
+
+[value]
+	79360
+
+[equipment physical attack]
+	686	629
+
+[equipment magical attack]
+	486	445
+
+[separate attack]
+	360	243
+
+[physical critical hit]
+	2
+
+[skill levelup]
+	`[mage]`	35	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/mage/spear.img`	86
+
+[field image]
+	`Item/field_weapon.img`	6
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	4	0
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	4	0
+
+[layer variation]
+	2150
+	`at_speara`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_speard`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	4	0
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`SPEAR_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3200
+
+[item group name]
+	`spear`
+
+[cool time]
+	10000
+
+[if]
+	[event use skill]
+		`mage`	13
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		12000
+	[stat]
+		`physical attack`
+		`+`	37
+[/then]
+
+[if]
+	[event use skill]
+		`mage`	125
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		12000
+	[stat]
+		`physical attack`
+		`+`	37
+[/then]
+
+[if]
+	[event use skill]
+		`mage`	13
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		1000
+	[buff]
+		`superarmor`
+[/then]
+
+[pvp]
+	[if]
+		[event use skill]
+			`mage`	13
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			12000
+		[stat]
+			`physical attack`
+			`+`	37
+	[/then]
+	[if]
+		[event use skill]
+			`mage`	125
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			12000
+		[stat]
+			`physical attack`
+			`+`	37
+	[/then]
+[/pvp]
+
+[routing priority]
+	`mage`	3
+[/routing priority]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	68

@@ -1,0 +1,152 @@
+#PVF_File
+
+[name]
+	`库兰的焰影剑`
+
+[name2]
+	`Kuran's Fire Blasting Sword`
+
+[basic explain]
+	`攻击时， 有5%%的几率附加40点火属性伤害。`
+
+[grade]
+	18
+
+[rarity]
+	3
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	15
+
+[physical attack]
+	15
+
+[attack speed]
+	-90
+
+[cast speed]
+	-20
+
+[HP regen speed]
+	24
+
+[price]
+	32400
+
+[repair price]
+	25920
+
+[value]
+	25920
+
+[equipment physical attack]
+	254	206
+
+[equipment magical attack]
+	191	155
+
+[separate attack]
+	119	76
+
+[skill levelup]
+	`[swordman]`	20	1
+	`[demonic swordman]`	20	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/swordman/lswd.img`	9
+
+[field image]
+	`Item/FieldImage.img`	13
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	0	3
+
+[layer variation]
+	2790
+	`lswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`lswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	0	3
+
+[layer variation]
+	2790
+	`lswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`lswdb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SQUARESWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`lswd`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[fire element]`
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[add absolute damage]
+		`all`
+		`+`	40
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

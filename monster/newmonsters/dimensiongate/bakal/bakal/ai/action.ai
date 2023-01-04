@@ -1,0 +1,23 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[hp]
+			`%>=`	90
+		[true]
+		[import ai]
+			`100action.ai`
+		[false]
+	
+		[think]
+			[hp]
+				`%>=`	15
+			[true]
+			[import ai]
+				`flyaction.ai`
+			[false]
+			[import ai]
+				`100action.ai`
+		[/think]
+	[/think]
+[/ai pattern]

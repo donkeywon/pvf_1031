@@ -1,0 +1,141 @@
+#PVF_File
+
+[name]
+	`希梅利亚毒匕首`
+
+[name2]
+	`Silmaria Dagger`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入中毒状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入中毒状态6秒； 中毒状态下的敌人， 每0.5秒受到329点伤害。 (若敌人高于Lv65， 则减少进入异常状态的几率； 反之， 则增加几率)`
+
+[grade]
+	67
+
+[rarity]
+	2
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	65
+
+[physical attack]
+	42
+
+[attack speed]
+	100
+
+[stuck]
+	1
+
+[price]
+	93800
+
+[repair price]
+	78792
+
+[value]
+	75040
+
+[equipment physical attack]
+	505	488
+
+[equipment magical attack]
+	535	517
+
+[separate attack]
+	293	199
+
+[physical critical hit]
+	12
+
+[Force Result Item Rule]
+	0	250
+
+[icon]
+	`Item/weapon/thief/dagger.img`	71
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[thief]`
+
+[variation]
+	12	4
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		9000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		6000
+	[probability]
+		2
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`poison`	65	3950
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

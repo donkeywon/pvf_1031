@@ -1,0 +1,40 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Throw.ani`
+	[SUB ANI]
+		`../Animation/ac3/Throw.ani`	0	1
+		`../Animation/back/Throw.ani`	0	2
+		`../Animation/hat/Throw.ani`	0	3
+		`../Animation/pants/Throw.ani`	0	4
+		`../Animation/shoes/Throw.ani`	0	8
+	[/SUB ANI]
+	[SPEECH]
+		`你这是自寻死路！`	2	30
+	[/SPEECH]
+	[SOUND]
+		`THROW_BOMB`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			11177
+		[PARTICLE FILENAME]
+			`../Particle/bomb.ptl`
+		[LEVEL]
+			0
+		[POS]
+			20	0	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

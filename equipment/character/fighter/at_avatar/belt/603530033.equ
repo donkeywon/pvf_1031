@@ -1,0 +1,148 @@
+#PVF_File
+
+[name]
+	`狂野梭子蟹夹子`
+
+[explain]
+	`攻击时，施放有1%的机率发出波涛妨碍前方敌军的移动。
+狂野一夏礼包`
+
+[enable dye]
+	1	0
+
+[grade]
+	2
+
+[part set index]
+	20005
+
+[usable job]
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[icon]
+	`item/weapon/fighter/gauntlet.img`	73
+
+[equipment type]
+	`[waist avatar]`	0
+
+[avatar type select]
+	7	0	0	1000	0
+	30	0	0	2000	0
+	0	0	0	4000	0
+	0	0	0	120	2
+	`[D socket]`	`[D socket]`
+[/avatar type select]
+
+[avatar select ability]
+	`[ELEMENT_TOLERANCE_FIRE]`	`+`	25
+	`[ELEMENT_TOLERANCE_WATER]`	`+`	25
+	`[ELEMENT_TOLERANCE_DARK]`	`+`	25
+	`[ELEMENT_TOLERANCE_LIGHT]`	`+`	25
+	`[ACTIVESTATUS_TOLERANCE_STUCK]`	`+`	40
+	`[INVENTORY_MAX_WEIGHT]`	`+`	9000
+[/avatar select ability]
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[expand ani]
+	10	1	0	1	
+	[variation]
+		19	0
+	[layer variation]
+		2150
+		`at_gauntleta`
+	[equipment ani script]
+		`equipment/character/atfighter.lay`
+	[layer variation]
+		2790
+		`at_gauntletc`
+	[equipment ani script]
+		`equipment/character/atfighter.lay`
+	[layer variation]
+		1350
+		`at_gauntletx`
+	[equipment ani script]
+		`equipment/character/atfighter.lay`
+	[sub type]
+		2
+	[expand path]
+		`equipment/character/fighter/weapon/gauntlet/`
+[/expand ani]
+
+[int data]
+	654321	4	1	60	0	70	1	60	0	70	2	60	0	70	2	60	0	70	1	50	0	70	2	80	0	20
+[/int data]
+
+[string data]
+	`Common/Particle/fmsummer.ptl`
+[/string data]
+
+[if]
+	[cooltime]
+		60000
+	[module]
+		`[dungeon]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		8745	0	-10	30	0	0	`../../../Monster/Act8/congcong/particle/eel.ptl`
+		62001	200	0	0	0	0	`../../../Monster/Act8/congcong/particle/wave.ptl`
+		8745	0	10	60	0	0	`../../../Monster/Act8/congcong/particle/eel2.ptl`
+		62002	0	0	40	0	0	`../../../Monster/Act8/congcong/particle/medusa2.ptl`
+		8746	0	0	10	0	0	`../../../Monster/Act8/congcong/particle/marlin.ptl`
+		8748	0	0	40	0	0	`../../../Monster/Act8/congcong/particle/octo.ptl`
+		8752	0	-1	30	0	0	`../../../Monster/Act8/congcong/particle/octo.ptl`
+		8748	-30	0	60	0	0	`../../../Monster/Act8/congcong/particle/octo.ptl`
+		8748	-20	0	50	0	0	`../../../Monster/Act8/congcong/particle/octo.ptl`
+		8752	-40	1	30	0	0	`../../../Monster/Act8/congcong/particle/octo.ptl`
+		62002	0	0	80	0	0	`../../../Monster/Act8/congcong/particle/medusa.ptl`
+		8752	30	-1	30	0	0	`../../../Monster/Act8/congcong/particle/octo.ptl`
+	[/passive object]
+	[probability]
+		1
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[module]
+		`[dungeon]`
+	[/module]
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		8745	0	-10	30	0	0	`../../../Monster/Act8/congcong/particle/eel.ptl`
+		62001	200	0	0	0	0	`../../../Monster/Act8/congcong/particle/wave.ptl`
+		8745	0	10	60	0	0	`../../../Monster/Act8/congcong/particle/eel2.ptl`
+		62002	0	0	40	0	0	`../../../Monster/Act8/congcong/particle/medusa2.ptl`
+		8746	0	0	10	0	0	`../../../Monster/Act8/congcong/particle/marlin.ptl`
+		8748	0	0	40	0	0	`../../../Monster/Act8/congcong/particle/octo.ptl`
+		8752	0	-1	30	0	0	`../../../Monster/Act8/congcong/particle/octo.ptl`
+		8748	-30	0	60	0	0	`../../../Monster/Act8/congcong/particle/octo.ptl`
+		8748	-20	0	50	0	0	`../../../Monster/Act8/congcong/particle/octo.ptl`
+		8752	-40	1	30	0	0	`../../../Monster/Act8/congcong/particle/octo.ptl`
+		62002	0	0	80	0	0	`../../../Monster/Act8/congcong/particle/medusa.ptl`
+		8752	30	-1	30	0	0	`../../../Monster/Act8/congcong/particle/octo.ptl`
+	[/passive object]
+	[probability]
+		1
+[/then]

@@ -1,0 +1,66 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/SuperScrewAttack2_Ready.ani`
+	[SUB ANI]
+		`../animation/Column2.ani`	0	0
+		`../animation/Hit2.ani`	0	0
+		`../animation/Effect.ani`	0	0
+	[/SUB ANI]
+	[SPEECH]
+		`爆发~螺旋攻击！`	0	50
+	[/SPEECH]
+	[SOUND]
+		`MOOSAM_SKILL_05`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-200
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8736
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			125	-1	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	700
+[/BEHAVIOR]

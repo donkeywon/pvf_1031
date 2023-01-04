@@ -1,0 +1,222 @@
+#PVF_File
+
+[name]
+	`圣光战矛`
+
+[name2]
+	`Beam Spear of Brionac`
+
+[basic explain]
+	`攻击时， 有3%%的几率使自身进入祝福状态。
+攻击速度 +5%%`
+
+[detail explain]
+	`攻击时， 有3%%的几率使自身进入祝福状态20秒； 祝福状态下， 增加40点力量、 体力、 智力和精神。
+攻击速度 +5%%`
+
+[grade]
+	42
+
+[rarity]
+	2
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	40
+
+[physical attack]
+	41
+
+[stuck]
+	-1
+
+[MP regen speed]
+	10
+
+[price]
+	58800
+
+[repair price]
+	47040
+
+[value]
+	47040
+
+[equipment physical attack]
+	446	427
+
+[equipment magical attack]
+	316	303
+
+[separate attack]
+	183	122
+
+[physical critical hit]
+	2
+
+[skill levelup]
+	`[mage]`	35	1
+[/skill levelup]
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/mage/spear.img`	20
+
+[field image]
+	`Item/field_weapon.img`	6
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[mage]`
+
+[variation]
+	7	0
+
+[layer variation]
+	2790
+	`beamspearc1`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	2791
+	`beamspearc2`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`beamspeard1`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	201
+	`beamspeard2`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	7	0
+
+[layer variation]
+	2150
+	`at_beamspeara1`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	2150
+	`at_beamspeara2`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_beamspeard1`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	201
+	`at_beamspeard2`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	7	0
+
+[layer variation]
+	2790
+	`beamspearc1`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	2791
+	`beamspearc2`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`beamspeard1`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	201
+	`beamspeard2`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`SPEAR_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3200
+
+[item group name]
+	`spear`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		32000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		3
+	[active status]
+		`bless`	40	40	40	40	40
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/shock.ani`
+	[SUB ANI]
+		`../animation/aura_shock.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`MONAHUN_SKILL_02`	3
+		`MONAHUN_SHOCKWAVE`	4
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8026
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			40
+		[POS]
+			30	0	50
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,175 @@
+#PVF_File
+
+[name]
+	`素喃订制 弑拳套`
+
+[name2]
+	`找不到代码name2_30317`
+
+[basic explain]
+	`攻击速度 +3%%
+暴击伤害 +7%%
+攻击时以2%%的机率让敌人陷入眩晕状态
+无法进行分解。`
+
+[detail explain]
+	`攻击速度 +3%%
+暴击伤害 +7%%
+攻击时以2%%的机率2秒内让敌人陷入眩晕状态。 (高于Lv42的对象得到的机率和效果减少，低于Lv42的对象则会增加。决斗场内修正为1秒)
+无法进行分解。`
+
+[grade]
+	52
+
+[attach type]
+	`[trade]`
+
+[item group name]
+	`bglove`
+
+[rarity]
+	3
+
+[weight]
+	2100
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[minimum level]
+	48
+
+[required skill]
+	34
+
+[icon]
+	`Item/weapon/fighter/bglove.img`	68
+
+[icon mark]
+	`Item/IconMark.img`	52
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[sub type]
+	3
+
+[durability]
+	39
+
+[need material]
+	3323	40
+
+[value]
+	74880
+
+[cool time]
+	10000
+
+[physical attack]
+	36
+
+[equipment physical attack]
+	508	466
+
+[equipment magical attack]
+	460	422
+
+[separate attack]
+	287	192
+
+[attack speed]
+	130
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	1
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	1	1
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	7
+[/then]
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[reduce duration to human armor at pvp module]
+		50
+	[duration]
+		2000
+	[reduce probability to human armor at pvp module]
+		80
+	[probability]
+		2
+	[active status]
+		`stun`	42
+[/then]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]

@@ -1,0 +1,139 @@
+#PVF_File
+
+[name]
+	`雪怒之提拉纳`
+
+[name2]
+	`Snow tirana`
+
+[basic explain]
+	`攻击时， 有2%%的几率使敌人进入冰冻状态。`
+
+[detail explain]
+	`攻击时， 有2%%的几率使敌人进入冰冻状态4秒。 (若敌人高于Lv25， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	27
+
+[rarity]
+	2
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	25
+
+[physical attack]
+	18
+
+[attack speed]
+	-80
+
+[price]
+	43200
+
+[repair price]
+	34560
+
+[value]
+	34560
+
+[equipment physical attack]
+	257	241
+
+[equipment magical attack]
+	202	189
+
+[separate attack]
+	126	82
+
+[physical critical hit]
+	5
+
+[freeze resistance]
+	10
+
+[Force Result Item Rule]
+	0	500
+
+[icon]
+	`Item/weapon/thief/twinswd.img`	16
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	1	2
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		6000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		4000
+	[probability]
+		2
+	[active status]
+		`freeze`	25
+[/then]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	64

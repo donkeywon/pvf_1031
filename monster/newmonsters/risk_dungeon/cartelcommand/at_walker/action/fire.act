@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/fire.ani`
+	[SUB ANI]
+		`../animation/fire_ef.ani`	0	1
+		`../animation/fire1.ani`	0	-2
+	[/SUB ANI]
+	[SPEECH]
+		`保护兰蒂卢斯大人！`	0	30
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			-8
+		[USE MY DIRECTION]
+	[/SET SPEED]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			35195
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			112	0	40
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,43 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Tumbling.ani`
+	[SOUND]
+		`MALAGA_SKILL_02`	0
+		`DDASH`	0
+	[/SOUND]
+	[SPEECH]
+		`哼，别以为你站得远我就拿你没辙！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			500
+		[Y AXIS]
+		[RANDOM SELECT]
+			100	-100
+		[/RANDOM SELECT]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]

@@ -1,0 +1,546 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Kiss.ani`
+	[SPEECH]
+		`死亡的探戈……`	3	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		8
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		9
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[CHARACTER ATTACKSUCCESS]
+	[CHECKUP]
+		[IS GRABABLE]
+			1
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[CHARACTER ATTACKSUCCESS]
+	[CHECKUP]
+		[IS GRABABLE]
+			1
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[IF]
+		`throw`	
+		[=]
+			0
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		7
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		10
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		4
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		13
+	[DO BEHAVIOR]
+	[ME]
+		11
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		10
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		4
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		13
+	[DO BEHAVIOR]
+	[ME]
+		11
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		12
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		10
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		4
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		13
+	[DO BEHAVIOR]
+	[ME]
+		11
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		12
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		4
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		13
+	[DO BEHAVIOR]
+	[ME]
+		11
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		10
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		13	13
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		10
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		14	14
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		12
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		15	15
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		4
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		13
+	[DO BEHAVIOR]
+	[ME]
+		11
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		16	16
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		4
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		13
+	[DO BEHAVIOR]
+	[ME]
+		11
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		17	17
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		10
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		18	18
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		12
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		19	19
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		4
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		13
+	[DO BEHAVIOR]
+	[ME]
+		11
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		20	20
+	[IF]
+		`throw`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		14
+	[DO BEHAVIOR]
+	[CHARACTER ATTACKSUCCESS]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			0
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`throw`	
+		[=]
+			1
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			10
+		[Y START]
+			-1
+		[Z START]
+			5
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/SET POS FORCE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET POS FORCE]
+		[X START]
+			10
+		[Y START]
+			-1
+		[Z START]
+			200
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/SET POS FORCE]
+	[SET ACTION]
+	[DOWN]
+	[DEFAULT]
+		1
+	[FORCE]
+		0	200
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8634
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	70
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			800
+		[Z AXIS]
+			-100
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			300
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[REVERSE]
+	[SET SPEED]
+		[X AXIS]
+			300
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			-300
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[REVERSE]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[APPEND HIT]
+		10	-1	5
+	[APPEND HIT]
+		10	-1	5
+[/BEHAVIOR]

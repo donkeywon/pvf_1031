@@ -1,0 +1,180 @@
+#PVF_File
+
+[name]
+	`毒猫王的紫影爪`
+
+[name2]
+	`找不到代码name2_29744`
+
+[basic explain]
+	`攻击时， 有7%%的几率使敌人进入中毒状态。
+无法进行分解。`
+
+[detail explain]
+	`攻击时， 有7%%的几率使敌人进入中毒状态7秒； 中毒状态下的敌人， 每0.5秒受到9点伤害。 (若敌人高于Lv9， 则减少进入异常状态的几率； 反之， 则增加几率)
+无法进行分解。`
+
+[grade]
+	14
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	10
+
+[physical attack]
+	13
+
+[magical attack]
+	7
+
+[price]
+	22400
+
+[repair price]
+	17920
+
+[value]
+	17920
+
+[equipment physical attack]
+	180	140
+
+[equipment magical attack]
+	180	140
+
+[separate attack]
+	99	63
+
+[physical critical hit]
+	7
+
+[icon]
+	`Item/weapon/fighter/claw.img`	73
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	17	0
+
+[layer variation]
+	2790
+	`clawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	18	0
+
+[layer variation]
+	2150
+	`at_clawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_clawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_clawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[cooltime]
+		10500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[probability]
+		7
+	[reduce probability to human armor at pvp module]
+		70
+	[active status]
+		`poison`	9	127
+[/then]
+
+[routing priority]
+	`fighter`	1
+	`at fighter`	1
+	`fighter`	2
+	`at fighter`	2
+	`fighter`	3
+	`at fighter`	3
+	`fighter`	4
+	`at fighter`	4
+[/routing priority]
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[icon mark]
+	`Item/IconMark.img`	66

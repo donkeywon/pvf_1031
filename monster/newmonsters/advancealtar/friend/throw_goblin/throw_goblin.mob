@@ -1,0 +1,156 @@
+#PVF_File
+
+[floating height]
+	0
+
+[name]
+	`哥布林投掷队员`
+
+[face image]
+	`Monster/MonsterFace.img`	319
+
+[damage sound]
+	`R_GOBLIN_DMG`
+
+[die sound]
+	`R_GOBLIN_DIE`
+
+[overhead gauge type]
+	1
+
+[ability table]
+	0
+
+[ability category]
+	`[HP MAX]`	`+`	130
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+[/ability category]
+
+[category]
+	`[oneside move]`
+	`[goblin]`
+[/category]
+
+[HP regen speed]
+	0	0
+
+[MP regen speed]
+	0	0
+
+[level]
+	1	70
+
+[fire resistance]
+	30	30
+
+[water resistance]
+	-30	-30
+
+[move speed]
+	450	450
+
+[attack speed]
+	500	500
+
+[cast speed]
+	500	500
+
+[hit recovery]
+	1000	1000
+
+[lie frame]
+	1	2	3	3	4
+
+[waiting action]
+	`action/Stay.act`
+
+[move action]
+	`action/Move.act`
+
+[sit action]
+	`action/Sit.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`action/Overturn.act`
+
+[damage action 1]
+	`action/Damage1.act`
+
+[damage action 2]
+	`action/Damage2.act`
+
+[proc action]
+	`Action/Proc.act`
+
+[action list]
+	`Action/Throw.act`
+
+[/attack action]
+
+[attack info]
+	``
+[/attack info]
+
+[cooltime]
+	2500
+[/cooltime]
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[vision]
+	650
+
+[think term]
+	500
+
+[destination change term]
+	300
+
+[keep distance with target]
+	400
+
+[keep range distance with target]
+	200	0	20	10
+
+[ai pattern]
+	[normal]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/normal]
+	[expert]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/expert]
+	[master]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/master]
+	[king]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/king]
+	[hero]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/hero]
+[/ai pattern]
+
+[fix direction]
+	`[right]`

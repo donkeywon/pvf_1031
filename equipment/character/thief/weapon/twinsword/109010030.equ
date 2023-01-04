@@ -1,0 +1,165 @@
+#PVF_File
+
+[name]
+	`邪魅双剑`
+
+[name2]
+	``
+
+[basic explain]
+	`普通攻击时， 有50%%的几率使敌人进入出血状态。
+攻击出血状态的敌人时， 附加8%%的伤害。
+[翔击]终结追击攻击力 +30%%
+[绝杀斩]终结追击攻击力 +30%%`
+
+[detail explain]
+	`普通攻击时， 有50%%的几率使敌人进入出血状态2秒； 出血状态下的敌人， 每0.5秒会受到30点伤害。 (若敌人高于Lv84， 则减少进入异常状态的几率； 反之， 则增加几率)
+攻击出血状态的敌人时， 附加8%%的伤害。
+[翔击]终结追击攻击力 +30%%
+[绝杀斩]终结追击攻击力 +30%%`
+
+[grade]
+	84
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[physical attack]
+	55
+
+[attack speed]
+	-80
+
+[price]
+	134400
+
+[repair price]
+	112896
+
+[value]
+	107520
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	820	769
+
+[equipment magical attack]
+	643	603
+
+[separate attack]
+	481	327
+
+[physical critical hit]
+	5
+
+[icon]
+	`item/new_equipment/01_weapon/thief/twinswd/twinswd.img`	104
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	24	0
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[if]
+	[my state]
+		`attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		50
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`bleeding`	84	120
+[/then]
+
+[if]
+	[target active status]
+		`bleeding`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	8
+[/then]
+
+[skill data up]
+	`[thief]`	9	`[all]`	`[level]`	0	`%`	30
+	`[thief]`	9	`[all]`	`[level]`	3	`%`	30
+	`[thief]`	9	`[all]`	`[level]`	5	`%`	30
+	`[thief]`	9	`[all]`	`[level]`	6	`%`	30
+	`[thief]`	9	`[all]`	`[level]`	7	`%`	30
+[/skill data up]
+
+[icon mark]
+	`Item/IconMark.img`	66

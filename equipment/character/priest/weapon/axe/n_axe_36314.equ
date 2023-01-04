@@ -1,0 +1,107 @@
+#PVF_File
+
+[name]
+	`精致的素喃订制双刃斧`
+
+[name2]
+	`找不到代码name2_36314`
+
+[basic explain]
+	`攻击速度 +5%%
+暴击伤害 +10%%`
+
+[grade]
+	52
+
+[attach type]
+	`[trade]`
+
+[item group name]
+	`axe`
+
+[rarity]
+	3
+
+[weight]
+	4000
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[minimum level]
+	48
+
+[icon]
+	`Item/weapon/priest/axe.img`	78
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[sub type]
+	4
+
+[durability]
+	35
+
+[value]
+	74880
+
+[cool time]
+	10000
+
+[physical attack]
+	36
+
+[equipment physical attack]
+	581	533
+
+[equipment magical attack]
+	411	377
+
+[separate attack]
+	287	192
+
+[attack speed]
+	-30
+
+[stuck]
+	-2
+
+[variation]
+	2	10
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[move wav]
+	`AXE_TOUCH`
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	10
+[/then]
+
+[icon mark]
+	`Item/IconMark.img`	66
