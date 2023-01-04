@@ -12,6 +12,12 @@
 [layer]
 	`[normal]`
 
+[skill recovery time]
+	25000
+
+[over skill recovery time]
+	40000
+
 [direction correct]
 	1
 
@@ -32,6 +38,9 @@
 
 [parent max level]
 	50
+
+[learn overskill level]
+	24
 
 [artifact slot]
 	`red`
@@ -55,16 +64,16 @@
 	`Animation/run.ani`
 
 [skill motion]
-	``
+	`Animation/skill.ani`
 
 [over skill motion]
-	``
+	`Animation/skill.ani`
 
 [response motion]
 	`Animation/skill.ani`
 
 [skill over effect]
-	``
+	`Animation/skill_effect.ani`
 
 [response sound tag]
 	`R_BIRD_CRY_B`
@@ -80,6 +89,10 @@
 
 [etc motion]
 [/etc motion]
+
+[int data]
+	20000	5	30
+[/int data]
 
 [string data]
 	`DESTROY_SOUND`
