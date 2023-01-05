@@ -1,0 +1,230 @@
+#PVF_File
+
+[name]
+	`聚金雕翎`
+
+[basic explain]
+	`    在高于150px的位置施放[裂石破天]时， 冲击波范围增加40%%。
+[裂石破天]落下速度 +50%%
+[裂石破天]攻击力 +30%%
+[跃翔]冷却时间 -10%%
+    在空中普通攻击时， 附加45%%的伤害， 效果持续10秒。`
+
+[detail explain]
+	`    在高于150px的位置施放[裂石破天]时， 冲击波范围增加40%%。
+[裂石破天]落下速度 +50%%
+[裂石破天]攻击力 +30%%
+[跃翔]冷却时间 -10%%
+    在空中普通攻击时， 附加45%%的伤害， 效果持续10秒。 (冷却时间15秒； 伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外）`
+
+[flavor text]
+	`    这白色羽毛是怎么回事？ 不是说好冠军奖杯全是金子打造的嘛！  --某届武斗大会冠军`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	65
+
+[magical attack]
+	97
+
+[attack speed]
+	250
+
+[move speed]
+	200
+
+[stuck]
+	-2
+
+[stuck resistance]
+	30
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	912	783
+
+[equipment magical attack]
+	960	824
+
+[equipment physical defense]
+	910	910
+
+[separate attack]
+	589	382
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/tonfa/tonfa.img`	103
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	34	0
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	33	0
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[jump power]
+	50
+
+[skill data up]
+	`[fighter]`	88	`[all]`	`[level]`	8	`%`	40
+	`[fighter]`	88	`[all]`	`[static]`	3	`%`	50
+	`[fighter]`	88	`[all]`	`[static]`	5	`%`	50
+	`[fighter]`	88	`[all]`	`[level]`	0	`%`	30
+	`[fighter]`	88	`[all]`	`[level]`	1	`%`	30
+	`[fighter]`	88	`[all]`	`[level]`	2	`%`	30
+	`[fighter]`	88	`[all]`	`[level]`	3	`%`	30
+	`[fighter]`	88	`[all]`	`[level]`	4	`%`	30
+	`[fighter]`	88	`[all]`	5	`%`	30	`[fighter]`
+	88	`[all]`	`[level]`	6	`%`	30	`[fighter]`
+	88	`[all]`	`[level]`	7	`%`	30	`[fighter]`
+	88	`[all]`	`[cooltime]`	0	`%`	-30	`[fighter]`
+	175	`[all]`	`[cooltime]`	0	`%`	-10	`[fighter]`
+	88	`[all]`	`[level]`	9	`%`	30	`[at fighter]`
+	88	`[all]`	`[level]`	8	`%`	40	`[at fighter]`
+	88	`[all]`	`[static]`	0	`%`	50	`[at fighter]`
+	88	`[all]`	`[static]`	2	`%`	50	`[at fighter]`
+	88	`[all]`	`[level]`	0	`%`	35	`[at fighter]`
+	88	`[all]`	`[level]`	1	`%`	35	`[at fighter]`
+	88	`[all]`	`[level]`	2	`%`	35	`[at fighter]`
+	88	`[all]`	`[cooltime]`	0	`%`	-30	`[at fighter]`
+	175	`[all]`	`[cooltime]`	0	`%`	-10
+[/skill data up]
+
+[if]
+	[cooltime]
+		15000
+	[set my state]
+		1
+	[my state]
+		`jump attack`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[appendage]
+		246
+[/then]
+
+[if]
+	[attack success]
+		1
+	[my appendage]
+		246
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	45
+[/then]
+
+[possible kiri protect]

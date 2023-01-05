@@ -1,0 +1,138 @@
+#PVF_File
+
+[name]
+	`尘封的悲鸣僚牙胸甲`
+
+[basic explain]
+	`攻击时， 有5%%的几率减少自身10%%的HP并使所有攻击力增加20%%， 效果持续30秒。`
+
+[detail explain]
+	`攻击时， 有5%%的几率减少自身10%%的HP并使所有攻击力增加20%%， 效果持续30秒。 (冷却时间30秒， 装备解除时效果消失)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	12544
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	41
+
+[magical attack]
+	30
+
+[physical defense]
+	38
+
+[HP MAX]
+	700
+
+[need material]
+	10000204	100
+
+[price]
+	85000000
+
+[repair price]
+	100800
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment physical defense]
+	4704	4368
+
+[icon]
+	`item/new_equipment/05_harmor/coat/harmor_coat.img`	52
+
+[field image]
+	`Item/field_equip.img`	10
+
+[equipment type]
+	`[coat]`	22
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	3600
+
+[item group name]
+	`ha coat`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[duration]
+		30000
+	[restore]
+		`hp`
+		`%`	-10	0
+	[stat by condition]
+		`magical attack bonus`
+		`%`	20
+	[stat by condition]
+		`physical attack bonus`
+		`%`	20
+	[stat by condition]
+		`separate attack`
+		`%`	20
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	300
+	[duration]
+		1000
+	[appendage]
+		374
+[/then]
+
+[possible kiri protect]

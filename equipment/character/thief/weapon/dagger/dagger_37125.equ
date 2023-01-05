@@ -3,15 +3,15 @@
 [name]
 	`蓝色飓风`
 
-[name2]
-	``
-
 [basic explain]
 	`[剑刃风暴]持续时间 +40%%
-[剑刃风暴]攻击次数 +5`
+[剑刃风暴]攻击次数 +5
+[剑刃风暴]移动速度 +30%%
+[刃舞]回旋斩击攻击力 +20%%
+[刃舞]攻击次数 +10%%`
 
 [grade]
-	75
+	81
 
 [rarity]
 	4
@@ -24,10 +24,13 @@
 	`[trade]`
 
 [minimum level]
-	70
+	75
+
+[need material]
+	3285	2000
 
 [physical attack]
-	50
+	58
 
 [attack speed]
 	100
@@ -35,31 +38,42 @@
 [stuck]
 	1
 
-[price]
-	120000
-
 [repair price]
-	100800
+	116640
 
 [value]
-	96000
+	7500000
+
+[creation rate]
+	125
 
 [equipment physical attack]
-	615	564
+	798	636
 
 [equipment magical attack]
-	652	598
+	769	652
 
 [separate attack]
-	441	299
+	520	336
 
 [physical critical hit]
 	10
 
 [skill levelup]
-	`[thief]`	9	1
-	`[thief]`	31	1
+	`[thief]`	9	3
+	`[thief]`	31	4
+	`[thief]`	80	1
+	`[thief]`	33	2
+	`[thief]`	75	2
+	`[thief]`	101	3
+	`[thief]`	110	5
 [/skill levelup]
+
+[water attack]
+	12
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/01_weapon/thief/dagger/dagger.img`	111
@@ -104,7 +118,7 @@
 	`DAGGER_TOUCH`
 
 [durability]
-	35
+	45
 
 [weight]
 	2100
@@ -121,11 +135,12 @@
 [skill data up]
 	`[thief]`	31	`[all]`	`[static]`	0	`%`	40
 	`[thief]`	31	`[all]`	`[static]`	2	`+`	5
+	`[thief]`	31	`[all]`	`[static]`	6	`%`	30
+	`[thief]`	31	`[all]`	`[static]`	7	`%`	30
+	`[thief]`	110	`[all]`	`[static]`	8	`+`	10
+	`[thief]`	110	`[all]`	`[static]`	9	`+`	10
+	`[thief]`	110	`[all]`	`[level]`	0	`%`	20
+	`[thief]`	110	`[all]`	`[level]`	1	`%`	20
 [/skill data up]
 
-[routing priority]
-	`thief`	1
-[/routing priority]
-
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

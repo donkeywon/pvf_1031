@@ -1,0 +1,121 @@
+#PVF_File
+
+[name]
+	`冰雪凝香石`
+
+[basic explain]
+	`    装备后， 使250px范围内的所有敌人减少10点冰属性抗性。
+    攻击时， 有2%%的几率使250px范围内的所有敌人进入冰冻状态。`
+
+[detail explain]
+	`    装备后， 使250px范围内的所有敌人减少10点冰属性抗性。
+    攻击时， 有2%%的几率使250px范围内的所有敌人进入冰冻状态3秒。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间8秒)`
+
+[flavor text]
+	`    这名字听起来好像某些妃子用的。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	35
+
+[magical attack]
+	35
+
+[physical defense]
+	35
+
+[magical defense]
+	35
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[water attack]
+	15
+
+[icon]
+	`Item/new_equipment/10_support/support.img`	151
+
+[field image]
+	`Item/field_equip.img`	22
+
+[equipment type]
+	`[support]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	700
+
+[item group name]
+	`support`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		500
+[/if]
+
+[then]
+	[target]
+		`all enemy`	250
+	[duration]
+		500
+	[appendage]
+		3601
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		8000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	250
+	[probability]
+		20
+	[duration]
+		3000
+	[active status]
+		`freeze`	90
+[/then]
+
+[possible kiri protect]

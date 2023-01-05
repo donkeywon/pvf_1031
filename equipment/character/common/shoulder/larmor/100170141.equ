@@ -1,0 +1,128 @@
+#PVF_File
+
+[name]
+	`混元武士的煞血护肩`
+
+[basic explain]
+	`装备后， 每30秒会使自身进入出血状态。
+装备时， 会增加自身25%%的物理暴击率和魔法暴击率。`
+
+[detail explain]
+	`每30秒使自身进入出血状态30秒； 出血状态下， 每0.5秒受到20点伤害。(装备1秒后生效)
+物理暴击率 +25%%
+魔法暴击率 +25%%
+(装备10秒后生效)`
+
+[flavor text]
+	`爱情容易让人受伤、 流血……我说的是心在滴血……`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[part set index]
+	11468
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	63
+
+[magical attack]
+	52
+
+[HP MAX]
+	350
+
+[repair price]
+	64800
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	2208	1992
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/04_larmor/neck/larmor_neck.img`	16
+
+[field image]
+	`Item/field_equip.img`	7
+
+[equipment type]
+	`[shoulder]`	19
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	1900
+
+[item group name]
+	`la shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		30000	1	1000
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[duration]
+		30000
+	[active status]
+		`bleeding`	100	1200
+[/then]
+
+[if]
+	[time]
+		500	1	500
+	[start cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical critical hit rate`
+		`+`	25
+	[stat by condition]
+		`magical critical hit rate`
+		`+`	25
+[/then]
+
+[possible kiri protect]

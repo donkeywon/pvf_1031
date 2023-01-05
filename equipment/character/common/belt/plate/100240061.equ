@@ -1,0 +1,146 @@
+#PVF_File
+
+[name]
+	`魔战无双腰带`
+
+[basic explain]
+	`    MP为70%%以上时， 技能冷却时间将缩短11%%。`
+
+[detail explain]
+	`MP为70%%以上时， 技能冷却时间缩短11%%。
+(怪物与装备Lv相差35以上时， 不适用冷却时间减少效果)`
+
+[flavor text]
+	`    在魔界的所有使徒中， 卡西利亚斯并没有和普雷还有罗特斯决斗过， 至于卢克他压根没当做对手过。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11731
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	23
+
+[magical attack]
+	23
+
+[physical defense]
+	25
+
+[MP MAX]
+	500
+
+[MP regen speed]
+	26
+
+[inventory limit]
+	3000
+
+[price]
+	85000000
+
+[repair price]
+	87360
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	2040	1860
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/06_plate/belt/plate_belt.img`	17
+
+[field image]
+	`Item/field_equip.img`	18
+
+[equipment type]
+	`[waist]`	20
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	2000
+
+[item group name]
+	`mt waist`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`mp`
+		`>=`
+		`%`	70
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`skill cool time`
+		`%`	-5
+[/then]
+
+[skill levelup]
+	`[at fighter]`	230	2
+	`[at gunner]`	238	2
+	`[at mage]`	244	2
+	`[demonic swordman]`	232	2
+	`[fighter]`	227	2
+	`[fighter]`	231	2
+	`[gunner]`	243	2
+	`[mage]`	243	2
+	`[priest]`	244	2
+	`[swordman]`	239	2
+	`[swordman]`	240	2
+	`[thief]`	221	2
+	`[priest]`	239	2
+[/skill levelup]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

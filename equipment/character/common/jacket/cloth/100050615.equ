@@ -1,0 +1,116 @@
+#PVF_File
+
+[name]
+	`海神谜咒之蓝灵上衣`
+
+[basic explain]
+	`攻击时， 有5%%的几率使自身增加80点力量和智力， 效果持续15秒。`
+
+[detail explain]
+	`攻击时， 有5%%的几率使自身增加80点力量和智力， 效果持续15秒。(冷却时间15秒)`
+
+[flavor text]
+	`老大驾着船， 刚驶出大海没多远， 就停了下来。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	12400
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[magical attack]
+	45
+
+[magical defense]
+	45
+
+[need material]
+	10000204	100
+
+[price]
+	85000000
+
+[repair price]
+	64800
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	1176	1092
+
+[water attack]
+	6
+
+[fire resistance]
+	-6
+
+[icon]
+	`item/new_equipment/02_cloth/coat/cloth_coat.img`	40
+
+[field image]
+	`Item/field_equip.img`	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[coat]`	18
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	1400
+
+[item group name]
+	`cl coat`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		15000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[duration]
+		15000
+	[stat]
+		`physical attack`
+		`+`	80
+	[stat]
+		`magical attack`
+		`+`	80
+[/then]
+
+[possible kiri protect]

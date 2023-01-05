@@ -3,11 +3,9 @@
 [name]
 	`明光追影刀`
 
-[name2]
-	``
-
 [basic explain]
-	`光属性攻击时， 附加10%%的伤害。`
+	`    光属性攻击时， 附加20%%的伤害。
+    每10点光属性抗性， 可以使自身增加5点光属性强化。 (最多增加20点)`
 
 [grade]
 	85
@@ -26,11 +24,14 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [physical attack]
-	56
+	62
 
 [magical attack]
-	84
+	92
 
 [attack speed]
 	80
@@ -42,36 +43,37 @@
 	1
 
 [price]
-	136000
+	80000000
 
 [repair price]
-	114240
+	123840
 
 [value]
-	108800
+	8000000
+
+[creation rate]
+	250
 
 [equipment physical attack]
-	783	726
+	862	735
 
 [equipment magical attack]
-	865	802
+	953	813
 
 [separate attack]
-	504	343
+	555	359
 
 [physical critical hit]
 	2
 
-[skill levelup]
-	`[swordman]`	13	1
-	`[demonic swordman]`	13	1
-[/skill levelup]
-
 [light attack]
-	6
+	20
 
 [light resistance]
-	6
+	22
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/01_weapon/swordman/katana/katana.img`	100
@@ -129,7 +131,7 @@
 	`KATANA_TOUCH`
 
 [durability]
-	35
+	45
 
 [weight]
 	2800
@@ -144,25 +146,25 @@
 	`[light element]`
 
 [if]
-	[element]
-		`light`
-	[attack success]
-		1
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	10
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`light resistance`	10
+		`light attack`
+		`+`	5	20
 [/then]
 
-[routing priority]
-	`swordman`	2
-	`swordman`	3
-	`demonic swordman`	0
-[/routing priority]
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	20
+[/skill data up]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

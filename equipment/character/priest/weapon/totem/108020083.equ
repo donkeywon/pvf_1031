@@ -1,0 +1,195 @@
+#PVF_File
+
+[name]
+	`风驰电掣 - 连袭`
+
+[basic explain]
+	`    根据当前的连击数触发攻击加速和Buff效果10秒； 效果随着连击数的增加而增加。
+    - 12连击 : 攻击速度 +10%%、 力量 +40
+    - 32连击 : 攻击速度 +20%%、 力量 +80
+    - 60连击 : 攻击速度 +30%%、 力量+120
+    - 120连击 : 攻击速度 +40%%、 力量 +160
+    - 达到120连击时， 可以重置自身60秒内的技能的冷却时间， 但只能重置一个剩余冷却时间最长的技能。 (冷却时间10秒)`
+
+[flavor text]
+	`    他途经的地方， 总是特别干净……`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	88
+
+[stuck]
+	-1
+
+[repair price]
+	116640
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	897	760
+
+[equipment magical attack]
+	769	652
+
+[separate attack]
+	520	336
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`Item/new_equipment/01_weapon/priest/totem/totem.img`	102
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	36	0
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[if]
+	[after attack]
+		1
+	[combo]
+		12
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[stat]
+		`attack speed`
+		`+`	100
+	[stat]
+		`physical attack`
+		`+`	40
+[/then]
+
+[if]
+	[after attack]
+		1
+	[combo]
+		32
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[stat]
+		`attack speed`
+		`+`	100
+	[stat]
+		`physical attack`
+		`+`	40
+[/then]
+
+[if]
+	[after attack]
+		1
+	[combo]
+		60
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[stat]
+		`attack speed`
+		`+`	100
+	[stat]
+		`physical attack`
+		`+`	40
+[/then]
+
+[if]
+	[after attack]
+		1
+	[combo]
+		120
+	[time]
+		10000	1	0
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill cooltime reset]
+		0
+		``	2
+[/then]
+
+[possible kiri protect]

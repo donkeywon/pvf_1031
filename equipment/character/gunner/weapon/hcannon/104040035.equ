@@ -3,25 +3,19 @@
 [name]
 	`惊雷之吼`
 
-[name2]
-	``
-
 [basic explain]
-	`神枪手 (男)
-[反坦克炮]爆炸次数 +2
+	`神枪手(男)
+[反坦克炮]爆炸次数 +2次
 [反坦克炮]爆炸时间 -50%%
 [反坦克炮]爆炸物理攻击力 -50%%
-
-神枪手 (女)
-[反坦克炮]爆炸次数 -2
+[反坦克炮]冷却时间 -1秒
+神枪手(女)
+[反坦克炮]爆炸次数 -2次
 [反坦克炮]爆炸时间 +0.5秒
 [反坦克炮]爆炸大小比率 +50%%
-[反坦克炮]爆炸物理攻击力 +350%%`
-
-[routing priority]
-	`gunner`	2
-	`at gunner`	2
-[/routing priority]
+[反坦克炮]爆炸物理攻击力 +350%%
+[反坦克炮]冷却时间 -1秒
+    施放[反坦克炮]时， 有30%%的几率增加1个炮弹发射数。`
 
 [grade]
 	85
@@ -40,32 +34,38 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [physical attack]
-	84
+	92
 
 [price]
-	153000
+	80000000
 
 [repair price]
-	128520
+	137600
 
 [value]
-	122400
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical attack]
-	901	814
+	1052	824
 
 [equipment magical attack]
-	540	488
+	631	494
 
 [separate attack]
-	504	343
+	555	359
 
 [fire attack]
-	12
+	18
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/01_weapon/gunner/hcannon/hcannon.img`	87
@@ -123,7 +123,7 @@
 	`RIFLE_TOUCH`
 
 [durability]
-	28
+	38
 
 [weight]
 	2800
@@ -142,13 +142,47 @@
 	`[gunner]`	40	`[all]`	`[static]`	4	`%`	-50
 	`[gunner]`	40	`[all]`	`[level]`	1	`%`	-50
 	`[gunner]`	40	`[all]`	`[level]`	4	`%`	-50
+	`[gunner]`	40	`[all]`	`[static]`	5	`+`	230
+	`[gunner]`	40	`[all]`	`[static]`	8	`+`	-75
+	`[gunner]`	40	`[all]`	`[cooltime]`	0	`+`	-1000
 	`[at gunner]`	40	`[all]`	`[static]`	6	`+`	-2
 	`[at gunner]`	40	`[all]`	`[static]`	4	`+`	500
 	`[at gunner]`	40	`[all]`	`[static]`	3	`%`	50
 	`[at gunner]`	40	`[all]`	`[level]`	5	`%`	50
 	`[at gunner]`	40	`[all]`	`[level]`	1	`%`	350
 	`[at gunner]`	40	`[all]`	`[level]`	4	`%`	350
+	`[at gunner]`	40	`[all]`	`[static]`	8	`%`	-50
+	`[at gunner]`	40	`[all]`	`[cooltime]`	0	`+`	-1000
 [/skill data up]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[if]
+	[event use skill]
+		`gunner`	40
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		30
+	[skill data up]
+		`[gunner]`	40	`[all]`	`[static]`	7	`+`	1
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`at gunner`	40
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		30
+	[skill data up]
+		`[at gunner]`	40	`[all]`	`[static]`	7	`+`	1
+	[/skill data up]
+[/then]
+
+[possible kiri protect]

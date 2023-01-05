@@ -1,0 +1,114 @@
+#PVF_File
+
+[name]
+	`金镶玉翠项链`
+
+[basic explain]
+	`所有技能冷却时间 -5%%。`
+
+[detail explain]
+	`所有技能冷却时间 -5%%`
+
+[flavor text]
+	`    这么臭美的首饰， 某人应该会很喜欢。`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[magical attack]
+	34
+
+[magical defense]
+	84
+
+[price]
+	75000000
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment magical defense]
+	7360	6640
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/08_necklace/necklace.img`	107
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`skill cool time`
+		`%`	-5
+[/then]
+
+[all skill item container]
+	[all skill item]
+		[item growtype]
+			`[all]`	0
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				45
+			[upper bound level]
+				45
+			[value]
+				1
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
+[/all skill item container]
+
+[possible kiri protect]

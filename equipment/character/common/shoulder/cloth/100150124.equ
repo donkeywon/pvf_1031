@@ -1,0 +1,166 @@
+#PVF_File
+
+[name]
+	`逝魔之灵悟肩甲`
+
+[basic explain]
+	`    每10秒减少1%%的MP值。
+    攻击和施放技能时， 增加2%%的魔法攻击力和独立攻击力， 效果持续60秒。`
+
+[detail explain]
+	`    每10秒减少1%%的MP值。
+    攻击和施放技能时， 增加2%%的魔法攻击力和独立攻击力， 效果持续60秒。 (最多增加12%%； 冷却时间0.1秒； 解除装备后效果消失)`
+
+[flavor text]
+	`摩恩身形庞大， 常年戴着斗笠， 喜欢背着一根禅杖浪迹于阿拉德各地。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11198
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[magical attack]
+	37
+
+[magical defense]
+	37
+
+[price]
+	85000000
+
+[repair price]
+	58240
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	816	744
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/02_cloth/neck/cloth_neck.img`	17
+
+[field image]
+	`Item/field_equip.img`	2
+
+[equipment type]
+	`[shoulder]`	17
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	21
+
+[weight]
+	800
+
+[item group name]
+	`cl shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[time]
+		10000	1	500
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`mp`
+		`%`	-1	0
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[equipment duration]
+		60000
+	[appendage]
+		250
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[casting]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[equipment duration]
+		60000
+	[appendage]
+		250
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

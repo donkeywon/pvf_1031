@@ -1,0 +1,179 @@
+#PVF_File
+
+[name]
+	`虎王之坦`
+
+[basic explain]
+	`近距离武器攻击力 +25%%
+[念兽 : 龙虎啸]攻击力 +40%%
+[念气环绕]攻击力 +20%%`
+
+[detail explain]
+	`近距离武器攻击力 +25%% (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)
+[念兽 : 龙虎啸]攻击力 +40%%
+[念气环绕]攻击力 +20%%`
+
+[flavor text]
+	`    你想阻挡虎王坦克？ 那是不可能的。`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[magical attack]
+	58
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[repair price]
+	116640
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	812	688
+
+[equipment magical attack]
+	983	833
+
+[separate attack]
+	520	336
+
+[magical critical hit]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/knuckle/knuckle.img`	118
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	31	0
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	31	0
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[if]
+	[attacker]
+		`character`	-1
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	25
+[/then]
+
+[skill data up]
+	`[fighter]`	40	`[all]`	`[level]`	0	`%`	20
+	`[fighter]`	79	`[all]`	`[level]`	0	`%`	40
+	`[fighter]`	79	`[all]`	`[level]`	1	`%`	40
+	`[fighter]`	79	`[all]`	`[level]`	2	`%`	40
+	`[fighter]`	79	`[all]`	`[level]`	3	`%`	40
+	`[fighter]`	79	`[all]`	`[level]`	4	`%`	40
+	`[fighter]`	79	`[all]`	`[level]`	5	`%`	40
+	`[fighter]`	79	`[all]`	`[level]`	6	`%`	40
+	`[at fighter]`	40	`[all]`	`[level]`	0	`%`	20
+	`[at fighter]`	79	`[all]`	`[level]`	0	`%`	40
+	`[at fighter]`	79	`[all]`	`[level]`	1	`%`	40
+	`[at fighter]`	79	`[all]`	`[level]`	2	`%`	40
+	`[at fighter]`	79	`[all]`	`[level]`	3	`%`	40
+	`[at fighter]`	79	`[all]`	`[level]`	4	`%`	40
+	`[at fighter]`	79	`[all]`	`[level]`	5	`%`	40
+	`[at fighter]`	79	`[all]`	`[level]`	6	`%`	40
+[/skill data up]
+
+[possible kiri protect]

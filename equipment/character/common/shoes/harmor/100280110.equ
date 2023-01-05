@@ -1,0 +1,169 @@
+#PVF_File
+
+[name]
+	`誓血之盟战靴`
+
+[basic explain]
+	`物理攻击力 +100
+魔法攻击力 +100
+独立攻击力 +100
+    保持站立或行走状态时， 每10秒使自身减少1%%的HP。`
+
+[detail explain]
+	`物理攻击力 +100
+魔法攻击力 +100
+独立攻击力 +100
+    保持站立或行走状态时， 每10秒使自身减少1%%的HP。 (装备1秒后生效)`
+
+[flavor text]
+	`    最近血流得有点多， 得吃点猪腰补补。  --某个帝血弑天`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11349
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	25
+
+[magical attack]
+	18
+
+[physical defense]
+	23
+
+[attack speed]
+	50
+
+[cast speed]
+	70
+
+[move speed]
+	90
+
+[price]
+	85000000
+
+[repair price]
+	72800
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	2448	2232
+
+[all elemental attack]
+	12
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/05_harmor/shoes/harmor_shoes.img`	17
+
+[field image]
+	`Item/field_equip.img`	14
+
+[equipment type]
+	`[shoes]`	19
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	26
+
+[weight]
+	1600
+
+[item group name]
+	`ha shoes`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[time]
+		10000	1	5000
+	[cooltime]
+		10000
+	[keep my state]
+		`stand`	0
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`hp`
+		`%`	-1	0
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`equipment physical attack`
+		`+`	100
+	[stat by condition]
+		`equipment magical attack`
+		`+`	100
+	[stat by condition]
+		`separate attack`
+		`+`	100
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

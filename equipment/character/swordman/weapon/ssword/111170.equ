@@ -1,0 +1,182 @@
+#PVF_File
+
+[name]
+	`紫雾团团员的血舞剑`
+
+[basic explain]
+	`   攻击时， 有5%%的几率对500px范围内随机3个敌人召唤出哈迪的血雾风暴。
+   攻击出血状态目标时， 暴击攻击力增加20%%。`
+
+[detail explain]
+	`   攻击时， 有5%%的几率对500px范围内随机3个敌人召唤出哈迪的血雾风暴； 被血雾风暴击中时， 有3%%的几率使敌人进入出血状态8秒； 出血状态下的敌人， 每0.5秒会受到500点的伤害。（若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果）
+   攻击出血状态目标时， 暴击攻击力增加20%%。`
+
+[flavor text]
+	`  千万小心啊 ！如果被哪些家伙发现你偷了他们的东西， 就别想安稳睡觉了。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	62
+
+[cast speed]
+	20
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[equipment physical attack]
+	952	752
+
+[equipment magical attack]
+	1152	952
+
+[separate attack]
+	607	507
+
+[magical critical hit]
+	2
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/sswd/sswd.img`	110
+
+[field image]
+	`Item/FieldImage.img`	9
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	33	0
+
+[layer variation]
+	2790
+	`sswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`sswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	33	0
+
+[layer variation]
+	2790
+	`sswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`sswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`MINERALSWD_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`ssword`
+
+[cool time]
+	10000
+
+[active status control info]
+	`bleeding`	0	0	0	10
+
+[if]
+	[target active status]
+		`bleeding`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	20
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`enemy near`	500
+	[probability]
+		5
+	[passive object]
+		60096	0	0	0	90	0	``
+	[/passive object]
+	[target]
+		`enemy far`	500
+	[probability]
+		5
+	[passive object]
+		60096	0	0	0	90	0	``
+	[/passive object]
+	[target]
+		`enemy far`	250
+	[probability]
+		5
+	[passive object]
+		60096	0	0	0	90	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]

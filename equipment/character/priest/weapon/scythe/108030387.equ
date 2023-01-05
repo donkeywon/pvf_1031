@@ -1,0 +1,151 @@
+#PVF_File
+
+[name]
+	`血葬天痕`
+
+[basic explain]
+	`[半魔化]恶魔能量衰减周期 +20%%
+[堕落之魂]每1点恶魔能量与智力的转换率 +20%%
+    攻击时， 使敌人减少10点暗属性抗性， 效果持续15秒。`
+
+[detail explain]
+	`[半魔化]恶魔能量衰减周期 +20%%
+[堕落之魂]每1点恶魔能量与智力的转换率 +20%%
+    攻击时， 使敌人减少10点暗属性抗性， 效果持续15秒。 (最高减少50点）`
+
+[flavor text]
+	`    这都是在那场灾难中， 无辜丧生的我的子民们的鲜血……  --梅娅女王`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[magical attack]
+	62
+
+[attack speed]
+	80
+
+[stuck]
+	1
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	129600
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	952	752
+
+[equipment magical attack]
+	1002	802
+
+[separate attack]
+	607	507
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	10	1
+	`[priest]`	252	1
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/priest/scythe/scythe.img`	100
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	35	0
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[priest]`	131	`[all]`	`[level]`	0	`%`	20
+	`[priest]`	252	`[all]`	`[level]`	8	`%`	20
+[/skill data up]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[equipment duration]
+		15000
+	[appendage]
+		691
+[/then]
+
+[possible kiri protect]

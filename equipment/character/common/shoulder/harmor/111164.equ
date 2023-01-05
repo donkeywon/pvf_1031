@@ -1,0 +1,369 @@
+#PVF_File
+
+[name]
+	`异世魂铃肩甲`
+
+[basic explain]
+	`    被攻击时， 有20%%的几率召唤自身在异次元的灵魂分身吸收伤害， 效果持续20秒。
+    被攻击时， 有5%%的几率进入无敌状态， 效果持续2秒。`
+
+[detail explain]
+	`    被攻击时， 有20%%的几率召唤自身在异次元的灵魂分身吸收伤害， 效果持续20秒。（冷却时间60秒）
+    被攻击时， 有5%%的几率进入无敌状态， 效果持续2秒。（解除装备后效果消失； 冷却时间10秒） `
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	33
+
+[magical attack]
+	24
+
+[physical defense]
+	30
+
+[magical defense]
+	70
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[repair price]
+	72000
+
+[value]
+	8500000
+
+[equipment physical defense]
+	3136	2912
+
+[icon]
+	`item/new_equipment/05_harmor/neck/harmor_neck.img`	42
+
+[field image]
+	`Item/field_equip.img`	12
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[shoulder]`	20
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	32
+
+[weight]
+	2300
+
+[item group name]
+	`ha shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[character]
+		`swordman`
+	[hit]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		20
+	[stat]
+		`stuck resistance`
+		`+`	1000
+	[passive object]
+		60073	-80	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[character]
+		`demonic swordman`
+	[hit]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		20
+	[stat]
+		`stuck resistance`
+		`+`	1000
+	[passive object]
+		60073	-80	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[character]
+		`fighter`
+	[hit]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		20
+	[stat]
+		`stuck resistance`
+		`+`	1000
+	[passive object]
+		60069	-80	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[character]
+		`at fighter`
+	[hit]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		20
+	[stat]
+		`stuck resistance`
+		`+`	1000
+	[passive object]
+		60066	-80	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[character]
+		`gunner`
+	[hit]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		20
+	[stat]
+		`stuck resistance`
+		`+`	1000
+	[passive object]
+		60070	-80	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[character]
+		`at gunner`
+	[hit]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		20
+	[stat]
+		`stuck resistance`
+		`+`	1000
+	[passive object]
+		60067	-80	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[character]
+		`mage`
+	[hit]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		20
+	[stat]
+		`stuck resistance`
+		`+`	1000
+	[passive object]
+		60071	-80	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[character]
+		`at mage`
+	[hit]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		20
+	[stat]
+		`stuck resistance`
+		`+`	1000
+	[passive object]
+		60068	-80	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[character]
+		`priest`
+	[hit]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		20
+	[stat]
+		`stuck resistance`
+		`+`	1000
+	[passive object]
+		60072	-80	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[character]
+		`thief`
+	[hit]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		20
+	[stat]
+		`stuck resistance`
+		`+`	1000
+	[passive object]
+		60074	-80	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[character]
+		`thief`
+	[hit]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		20
+	[stat]
+		`stuck resistance`
+		`+`	1000
+	[passive object]
+		60074	-80	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		20
+	[equipment duration]
+		2000
+	[buff]
+		`unbreakable`
+[/then]
+
+[possible kiri protect]

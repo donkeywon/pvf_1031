@@ -1,0 +1,126 @@
+#PVF_File
+
+[set name]
+	`战术之王的御敌  套装`
+
+[piece set ability]
+	5
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[attack success]
+			1
+		[cooltime]
+			30000
+	[/if]
+	[then]
+		[target]
+			`party`	500
+		[probability]
+			5
+		[equipment duration]
+			20000
+		[buff]
+			`superarmor`
+		[stat]
+			`attack speed`
+			`+`	200
+		[stat]
+			`move speed`
+			`+`	200
+		[stat]
+			`cast speed`
+			`+`	200
+	[/then]
+	[item aura]
+		`physical attack`
+		`+`	620	500
+	[item aura]
+		`magical attack`
+		`+`	620	500
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[attack success]
+			1
+		[party count]
+			`=`	1
+		[cooltime]
+			1000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			1000
+		[appendage]
+			940
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[attack success]
+			1
+		[party count]
+			`=`	2
+		[cooltime]
+			1000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			1000
+		[appendage]
+			945
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[attack success]
+			1
+		[party count]
+			`=`	3
+		[cooltime]
+			1000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			1000
+		[appendage]
+			950
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[attack success]
+			1
+		[party count]
+			`=`	4
+		[cooltime]
+			1000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			1000
+		[appendage]
+			955
+	[/then]
+	[parameter basic explain]
+		`    攻击时， 有5%%的几率向周围500px范围内的队友施加霸体护甲， 使其攻击速度增加20%%， 移动速度增加20%%， 施放速度增加20%%。 (冷却时间30秒)
+    攻击时， 附加40%%的伤害。 (每增加1名队友， 增加5%%的附加伤害。)`
+[/piece set ability]

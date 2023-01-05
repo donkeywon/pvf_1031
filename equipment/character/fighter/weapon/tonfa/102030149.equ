@@ -1,0 +1,221 @@
+#PVF_File
+
+[name]
+	`黑暗契约者`
+
+[basic explain]
+	`    HP低于90%%时， 增加10%%的攻击速度、 施放速度和移动速度。
+    HP低于80%%时， 增加20点暗属性强化值。
+    HP低于70%%时， 增加20%%的伤害。`
+
+[detail explain]
+	`    HP低于90%%时， 增加10%%的攻击速度、 施放速度和移动速度。
+    HP低于80%%时， 增加20点暗属性强化值。
+    HP低于70%%时， 增加20%%的伤害。 (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)`
+
+[flavor text]
+	`    我不太喜欢黑漆漆的东西。  --阿斯卡`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	58
+
+[magical attack]
+	88
+
+[attack speed]
+	50
+
+[stuck]
+	-2
+
+[stuck resistance]
+	30
+
+[repair price]
+	116640
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	812	688
+
+[equipment magical attack]
+	855	724
+
+[equipment physical defense]
+	810	810
+
+[separate attack]
+	520	336
+
+[dark attack]
+	35
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/tonfa/tonfa.img`	101
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	17
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	32	0
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	31	0
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[time]
+		500	1	500
+	[stat change]
+		`hp`
+		`<=`
+		`%`	90
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`attack speed`
+		`+`	100
+	[stat by condition]
+		`cast speed`
+		`+`	100
+	[stat by condition]
+		`move speed`
+		`+`	100
+[/then]
+
+[if]
+	[time]
+		500	1	500
+	[stat change]
+		`hp`
+		`<=`
+		`%`	80
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`dark attack`
+		`+`	20
+[/then]
+
+[if]
+	[stat change]
+		`hp`
+		`<=`
+		`%`	70
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	20
+[/then]
+
+[possible kiri protect]

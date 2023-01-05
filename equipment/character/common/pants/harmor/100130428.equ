@@ -1,0 +1,110 @@
+#PVF_File
+
+[name]
+	`断肠绝伤之黑鳞腿甲`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11372
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	41
+
+[magical attack]
+	30
+
+[physical defense]
+	38
+
+[need material]
+	10000204	75
+
+[price]
+	85000000
+
+[repair price]
+	86400
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	3920	3640
+
+[icon]
+	`item/new_equipment/05_harmor/pants/harmor_pants.img`	37
+
+[field image]
+	`Item/field_equip.img`	11
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[pants]`	20
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	34
+
+[weight]
+	2900
+
+[item group name]
+	`ha pants`
+
+[cool time]
+	10000
+
+[possible kiri protect]
+
+[basic explain]
+	`装备时，可以使500px范围内的队员增加59的物理攻击力、59的魔法攻击力、59的独立攻击力`
+
+[if]
+	[module]
+		`[dungeon type]`
+	[/module]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`party`	500
+	[stat by condition]
+		`equipment physical attack`
+		`+`	59
+	[stat by condition]
+		`equipment magical attack`
+		`+`	59
+	[stat by condition]
+		`separate attack`
+		`+`	59
+[/then]

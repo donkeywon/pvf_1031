@@ -3,14 +3,20 @@
 [name]
 	`星云迷踪护肩`
 
-[name2]
-	``
+[basic explain]
+	`    攻击时， 增加12%%的伤害。`
+
+[detail explain]
+	`    攻击时， 增加12%%的伤害。 (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)`
 
 [grade]
 	85
 
 [rarity]
 	4
+
+[part set index]
+	11337
 
 [usable job]
 	`[all]`
@@ -22,17 +28,23 @@
 [minimum level]
 	80
 
-[physical attack]
-	31
+[need material]
+	3285	2500
 
-[physical defense]
-	28
+[physical attack]
+	32
 
 [magical attack]
-	22
+	23
+
+[physical defense]
+	29
 
 [attack speed]
-	30
+	70
+
+[cast speed]
+	100
 
 [stuck]
 	-5
@@ -41,19 +53,22 @@
 	300
 
 [price]
-	85000
+	80000000
 
 [repair price]
-	71400
+	82560
 
 [value]
-	68000
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical defense]
-	2976	2784
+	3104	2816
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/05_harmor/neck/harmor_neck.img`	10
@@ -82,11 +97,18 @@
 [cool time]
 	10000
 
-[set item master]
-	100080009
+[if]
+	[attack success]
+		1
+[/if]
 
-[routing priority]
-[/routing priority]
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[increase damage]
+		`%`	12
+[/then]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

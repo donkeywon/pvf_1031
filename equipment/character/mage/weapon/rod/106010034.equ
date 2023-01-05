@@ -3,14 +3,13 @@
 [name]
 	`空之无境`
 
-[name2]
-	``
-
 [basic explain]
-	`攻击时， 附加5%%的伤害。
+	`    攻击时， 附加12%%的伤害。
 [破冰飞刃]冰碎片数量 +1
-[精灵召唤 : 极光格雷林]下级精灵消耗数 +2
-[精灵召唤 : 极光格雷林]攻击力 +50%%`
+[破冰飞刃]施放前僵直 -50%%
+    施放[破冰飞刃]时， 增加25%%的攻击速度， 效果持续2秒。
+[精灵召唤 : 极光格雷林]攻击力 +40%%
+[精灵召唤 : 冰影阿奎利斯]攻击力 +40%%`
 
 [grade]
 	85
@@ -30,8 +29,11 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [magical attack]
-	84
+	92
 
 [attack speed]
 	100
@@ -43,31 +45,39 @@
 	1
 
 [price]
-	136000
+	80000000
 
 [repair price]
-	114240
+	123840
 
 [value]
-	108800
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical attack]
-	742	688
+	816	697
 
 [equipment magical attack]
-	906	840
+	998	851
 
 [separate attack]
-	504	343
+	555	359
+
+[skill levelup]
+	`[mage]`	48	2
+	`[at mage]`	10	3
+[/skill levelup]
 
 [light attack]
-	9
+	18
 
 [water attack]
-	9
+	18
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/01_weapon/mage/rod/rod.img`	95
@@ -145,7 +155,7 @@
 	`ROD_TOUCH`
 
 [durability]
-	24
+	34
 
 [weight]
 	2200
@@ -156,36 +166,40 @@
 [cool time]
 	10000
 
-[routing priority]
-	`mage`	2
-	`at mage`	2
-[/routing priority]
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	12
+[/skill data up]
 
 [if]
-	[attack success]
-		1
+	[event use skill]
+		`at mage`	10
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	5
+		`myself`	-1
+	[equipment duration]
+		2000
+	[stat]
+		`attack speed`
+		`+`	250
 [/then]
 
 [skill data up]
 	`[at mage]`	10	`[all]`	`[static]`	2	`+`	1
 	`[at mage]`	10	`[all]`	`[static]`	3	`+`	1
-	`[mage]`	77	`[all]`	`[static]`	7	`+`	2
-	`[mage]`	77	`[all]`	`[level]`	6	`%`	50
-	`[mage]`	77	`[all]`	`[level]`	7	`%`	50
-	`[mage]`	77	`[all]`	`[level]`	11	`%`	50
-	`[mage]`	77	`[all]`	`[level]`	15	`%`	50
-	`[mage]`	77	`[all]`	`[level]`	16	`%`	50
-	`[mage]`	77	`[all]`	`[level]`	20	`%`	50
-	`[mage]`	77	`[all]`	`[level]`	22	`%`	50
+	`[at mage]`	10	`[all]`	`[static]`	8	`%`	50
+	`[mage]`	77	`[all]`	`[level]`	6	`%`	40
+	`[mage]`	77	`[all]`	`[level]`	7	`%`	40
+	`[mage]`	77	`[all]`	`[level]`	11	`%`	40
+	`[mage]`	77	`[all]`	`[level]`	15	`%`	40
+	`[mage]`	77	`[all]`	`[level]`	16	`%`	40
+	`[mage]`	77	`[all]`	`[level]`	20	`%`	40
+	`[mage]`	77	`[all]`	`[level]`	22	`%`	40
+	`[mage]`	78	`[all]`	`[level]`	6	`%`	40
+	`[mage]`	78	`[all]`	`[level]`	7	`%`	40
+	`[mage]`	78	`[all]`	`[level]`	10	`%`	40
+	`[mage]`	78	`[all]`	`[level]`	14	`%`	40
 [/skill data up]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

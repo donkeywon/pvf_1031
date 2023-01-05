@@ -3,13 +3,13 @@
 [name]
 	`极刑绝之镰`
 
-[name2]
-	``
-
 [basic explain]
-	`以额外杀伤使敌人致死时， 可以使自身增加50点智力， 效果持续20秒。
-暴击时， 增加6%%的施放速度， 效果持续20秒。
-攻击时， 有1%%的几率消耗自身2000点的HP值， 而增加20%%的魔法暴击率， 效果持续20秒。`
+	`暴击伤害 +22%%
+攻击时， 有5%%的几率使敌人进入出血状态。`
+
+[detail explain]
+	`暴击伤害 +22%% (暴击伤害加成效果取最高值， 且无法叠加)
+攻击时， 有5%%的几率使敌人进入出血状态， 且每0.5秒造成600点的伤害， 效果持续3秒。 `
 
 [grade]
 	85
@@ -27,41 +27,50 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [physical attack]
-	56
+	62
 
 [magical attack]
-	56
+	62
 
 [attack speed]
 	80
 
 [stuck]
-	1
+	2
 
 [price]
-	136000
+	80000000
 
 [repair price]
-	114240
+	137600
 
 [value]
-	108800
+	8000000
+
+[creation rate]
+	250
 
 [equipment physical attack]
-	783	726
+	862	735
 
 [equipment magical attack]
-	824	764
+	907	774
 
 [separate attack]
-	504	343
+	555	359
 
 [physical critical hit]
-	2
+	20
 
 [magical critical hit]
-	2
+	20
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/01_weapon/priest/scythe/scythe.img`	88
@@ -99,7 +108,7 @@
 	`SCYTHE_TOUCH`
 
 [durability]
-	35
+	45
 
 [weight]
 	2800
@@ -114,71 +123,33 @@
 	`[dark element]`
 
 [if]
-	[cooltime]
-		10000
 	[attack success]
 		1
-	[overkill]
-		1
-[/if]
-
-[then]
-	[target]
-		`myself`	-1
-	[duration]
-		20000
-	[stat]
-		`magical attack`
-		`+`	50
-[/then]
-
-[if]
-	[hit]
-		1
-	[cooltime]
-		2000
 [/if]
 
 [then]
 	[target]
 		`enemy`	-1
 	[probability]
-		20
-	[reduce probability to human armor at pvp module]
-		90
-	[add absolute damage]
-		`dark`
-		`+`	2000
+		5
+	[reduce probability at pvp module]
+		80
+	[duration]
+		3000
+	[active status]
+		`bleeding`	86	3600
 [/then]
 
 [if]
 	[attack success]
 		1
-	[cooltime]
-		20000
 [/if]
 
 [then]
-	[duration]
-		20000
-	[probability]
-		1
 	[target]
-		`myself`	-1
-	[restore]
-		`hp`
-		`+`	-1500	0
-	[stat]
-		`physical critical hit rate`
-		`+`	20
-	[stat]
-		`magical critical hit rate`
-		`+`	20
+		`enemy`	-1
+	[increase critical damage]
+		`%`	20
 [/then]
 
-[routing priority]
-	`priest`	4
-[/routing priority]
-
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

@@ -1,0 +1,151 @@
+#PVF_File
+
+[name]
+	`海神谜咒之巨灵铠甲`
+
+[basic explain]
+	`攻击时， 有5%%的几率使自身增加80点力量和智力， 效果持续15秒。`
+
+[detail explain]
+	`攻击时， 有5%%的几率使自身增加80点力量和智力， 效果持续15秒。(冷却时间15秒)`
+
+[flavor text]
+	`这一天，渔夫叫来老大，让他跟着自己出海寻找宝贝。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	12400
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	41
+
+[magical attack]
+	30
+
+[physical defense]
+	38
+
+[need material]
+	10000204	100
+
+[price]
+	85000000
+
+[repair price]
+	100800
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	4704	4368
+
+[water attack]
+	6
+
+[fire resistance]
+	-6
+
+[icon]
+	`item/new_equipment/05_harmor/coat/harmor_coat.img`	39
+
+[field image]
+	`Item/field_equip.img`	10
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[coat]`	21
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	3600
+
+[item group name]
+	`ha coat`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		15000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[duration]
+		15000
+	[stat]
+		`physical attack`
+		`+`	80
+	[stat]
+		`magical attack`
+		`+`	80
+[/then]
+
+[if]
+	[time]
+		10000	1	0
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[probability]
+		100
+	[duration]
+		10000
+	[active status]
+		`curse`	90	50	50	50	50
+[/then]
+
+[if]
+	[time]
+		60000	1	0
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		60000
+	[elemental weapon]
+		`water`
+[/then]
+
+[possible kiri protect]

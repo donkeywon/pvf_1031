@@ -1,0 +1,132 @@
+#PVF_File
+
+[name]
+	`剥筋蚀骨手镯`
+
+[basic explain]
+	`    每200点体力增加自身2%%的物理暴击率。
+    每200点力量增加自身7点物理攻击力。
+    消灭敌人时， 使自身增加50点力量。`
+
+[detail explain]
+	`    每200点体力增加自身2%%的物理暴击率。(最多增加15%%)
+    每200点力量增加自身7点物理攻击力。(最多增加105点)
+    消灭敌人时， 使自身增加50点力量， 效果持续30秒。(冷却时间30秒)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	45
+
+[physical defense]
+	87
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	4608	4368
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	109
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[wrist]`	20
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`physical defense`	200
+		`physical critical hit`
+		`+`	2	15
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`physical attack`	200
+		`equipment physical attack`
+		`+`	7	105
+[/then]
+
+[if]
+	[target death]
+		1
+	[attack success]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[stat]
+		`physical attack`
+		`+`	50
+[/then]
+
+[possible kiri protect]

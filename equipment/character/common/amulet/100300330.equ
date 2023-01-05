@@ -1,0 +1,125 @@
+#PVF_File
+
+[name]
+	`魔咒之骸`
+
+[basic explain]
+	`    装备时， 每20秒会使自身进入诅咒状态， 效果持续20秒； 诅咒状态下， 将减少自身1点力量、 体力、 智力和精神。
+    进入诅咒状态时， 使自身增加100点力量和10%%的物理暴击率， 效果持续20秒。 `
+
+[flavor text]
+	`    原来如此， 那家最终还是…… --阿甘左`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	90
+
+[magical attack]
+	-24
+
+[magical defense]
+	90
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	7920	7360
+
+[physical critical hit]
+	5
+
+[magical critical hit]
+	-2
+
+[dark attack]
+	18
+
+[light resistance]
+	-10
+
+[icon]
+	`Item/new_equipment/08_necklace/necklace.img`	114
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[my active status on]
+		`curse`
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		20000
+	[stat]
+		`physical attack`
+		`+`	100
+	[stat]
+		`physical critical hit rate`
+		`+`	10
+[/then]
+
+[if]
+	[time]
+		20000	1	0
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[active status]
+		`curse`	100	1	1	1	1
+[/then]
+
+[possible kiri protect]

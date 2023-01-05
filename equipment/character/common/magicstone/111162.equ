@@ -1,0 +1,107 @@
+#PVF_File
+
+[name]
+	`骷髅凯恩的血凝石`
+
+[basic explain]
+	`    装备后， 每15秒会召唤出骷髅凯恩的魔法阵， 效果持续10秒。
+    攻击眩晕状态的敌人时， 附加5%%的伤害。`
+
+[flavor text]
+	`    靠怨恨活着， 他不累吗？ --西岚`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	53
+
+[magical attack]
+	53
+
+[physical defense]
+	53
+
+[magical defense]
+	53
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[icon]
+	`Item/new_equipment/11_magicstone/magicstone.img`	130
+
+[field image]
+	`Item/field_equip.img`	23
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[magic stone]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`magic stone`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		15000	1	0
+	[cooltime]
+		15000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		60097	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[attack success]
+		1
+	[target active status]
+		`stun`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		905
+[/then]
+
+[possible kiri protect]

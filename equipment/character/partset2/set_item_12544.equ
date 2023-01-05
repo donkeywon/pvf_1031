@@ -1,0 +1,33 @@
+#PVF_File
+
+[set name]
+	`尘封的悲鸣  套装`
+
+[piece set ability]
+	5
+	[all elemental attack]
+		10
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			10000
+	[/if]
+	[then]
+		[target]
+			`all enemy`	250
+		[probability]
+			3
+		[duration]
+			10000
+		[stat]
+			`equipment physical defense`
+			`%`	-10
+		[stat]
+			`equipment magical defense`
+			`%`	-10
+	[/then]
+	[parameter basic explain]
+		`  攻击时， 有3%%的几率使被命中的敌人周围250px范围内的所有敌人减少10%%的防御力， 效果持续10秒。
+  装备时， 使300px范围内的所有敌人减少35点所有属性抗性。`
+[/piece set ability]

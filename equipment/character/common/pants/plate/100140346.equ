@@ -1,0 +1,113 @@
+#PVF_File
+
+[name]
+	`尘封的悲鸣断骨护腿`
+
+[basic explain]
+	`攻击时， 有5%%的几率减少自身10%%的HP并使技能冷却时间减少20%%， 效果持续30秒。`
+
+[detail explain]
+	`攻击时， 有5%%的几率减少自身10%%的HP并使技能冷却时间减少20%%， 效果持续30秒。 (冷却时间30秒， 装备解除时效果消失)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	12544
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	38
+
+[magical attack]
+	38
+
+[physical defense]
+	41
+
+[HP MAX]
+	700
+
+[need material]
+	10000204	100
+
+[price]
+	85000000
+
+[repair price]
+	100800
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment physical defense]
+	4900	4550
+
+[icon]
+	`item/new_equipment/06_plate/pants/plate_pants.img`	49
+
+[field image]
+	`Item/field_equip.img`	16
+
+[equipment type]
+	`[pants]`	22
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	50
+
+[weight]
+	4100
+
+[item group name]
+	`mt pants`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[duration]
+		30000
+	[restore]
+		`hp`
+		`%`	-10	0
+	[stat by condition]
+		`skill cool time`
+		`%`	-20
+[/then]
+
+[possible kiri protect]

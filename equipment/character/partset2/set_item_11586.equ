@@ -1,0 +1,99 @@
+#PVF_File
+
+[set name]
+	`游龙之魂  套装`
+
+[piece set ability]
+	5
+	[equipment magical attack]
+		92	92
+	[equipment physical attack]
+		92	92
+	[separate attack]
+		92	92
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			20000
+	[/if]
+	[then]
+		[target]
+			`party`	-1
+		[probability]
+			5
+		[equipment duration]
+			20000
+		[buff]
+			`camoflage`
+		[appendage]
+			847
+	[/then]
+	[if]
+		[my appendage]
+			845
+		[time]
+			500	1	0
+		[cooltime]
+			20000
+		[stat change]
+			`hp`
+			`>`
+			`%`	0
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			20000
+		[appendage]
+			839
+	[/then]
+	[if]
+		[my appendage]
+			846
+		[time]
+			500	1	0
+		[cooltime]
+			20000
+		[stat change]
+			`hp`
+			`>`
+			`%`	0
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			20000
+		[appendage]
+			839
+	[/then]
+	[if]
+		[my appendage]
+			847
+		[time]
+			500	1	0
+		[cooltime]
+			20000
+		[stat change]
+			`hp`
+			`>`
+			`%`	0
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			20000
+		[appendage]
+			839
+	[/then]
+	[skill data up]
+		`[all]`	199	`[all]`	`[level]`	50	`+`	30
+	[/skill data up]
+	[parameter basic explain]
+		`    攻击时， 有5%%的几率使包括自身在内的所有队员进入伪装状态20秒。 (冷却时间20秒)
+    该装备的伪装状态下， 会增加150点的力量、 体力、 智力和精神。 (最多重叠2次)
+    该装备的伪装状态下攻击敌人时， 可以附加15%%的伤害。 (最多重叠2次)`
+[/piece set ability]

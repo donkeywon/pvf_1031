@@ -1,0 +1,301 @@
+#PVF_File
+
+[name]
+	`天魔之爪 - 怒风`
+
+[basic explain]
+	`攻击时， 使敌人减少10%%的攻击速度， 并使自身增加相应的攻击速度， 效果持续30秒。
+攻击时， 使敌人减少5%%的移动速度， 并使自身增加相应的移动速度， 效果持续30秒。
+攻击时， 使敌人减少20点力量和智力， 并使自身增加相应的力量和智力， 效果持续60秒。
+对500px范围内的所有敌人发动光环， 可以减少敌人50点异常状态抗性。
+攻击恶魔族敌人时， 附加30%%的伤害。`
+
+[detail explain]
+	`攻击时， 使敌人减少10%%的攻击速度， 并使自身增加相应的攻击速度， 效果持续30秒。 (最多重叠5次； 冷却时间0.1秒)
+攻击时， 使敌人减少5%%的移动速度， 并使自身增加相应的移动速度， 效果持续30秒。 (最多重叠5次； 冷却时间0.1秒)
+攻击时， 使敌人减少20点力量和智力， 并使自身增加相应的力量和智力， 效果持续60秒。 (最多重叠15次； 冷却时间0.1秒)
+对500px范围内的所有敌人发动光环， 可以减少敌人50点异常状态抗性。
+攻击恶魔族敌人时， 附加30%%的伤害。
+(解除装备后效果消失)`
+
+[flavor text]
+	`看上去好眼熟~  --某个冒险家`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	215
+
+[magical attack]
+	182
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	960	824
+
+[equipment magical attack]
+	960	824
+
+[separate attack]
+	589	382
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[fighter]`	45	1
+	`[at fighter]`	45	1
+[/skill levelup]
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/claw/claw.img`	110
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2790
+	`clawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	35	0
+
+[layer variation]
+	2150
+	`at_clawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_clawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_clawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[active status control info]
+	`bleeding`	0	0	0	35
+
+[active status control info]
+	`poison`	0	0	0	35
+
+[active status control info]
+	`burn`	0	0	0	35	35	0
+
+[if]
+	[time]
+		500	1	500
+	[stat change]
+		`hp`
+		`>`
+		`%`	0
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[duration]
+		1000
+	[appendage]
+		850
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		30000
+	[appendage]
+		618
+	[appendage]
+		619
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		60000
+	[appendage]
+		620
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		30000
+	[appendage]
+		621
+	[appendage]
+		622
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		60000
+	[appendage]
+		623
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[target type]
+		`devil`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	30
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		480	412
+	[equipment magical attack]
+		480	412
+[/pvp]
+
+[possible kiri protect]

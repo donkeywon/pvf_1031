@@ -3,12 +3,15 @@
 [name]
 	`西岚的武士刀`
 
-[name2]
-	`Katana of Siran`
-
 [basic explain]
 	`[猛龙断空斩]最大斩击数 +4
-[瞬影斩]攻击力 +80%%`
+[瞬影斩]攻击力 +80%%
+    攻击时， 附加3%%的伤害。`
+
+[detail explain]
+	`[猛龙断空斩]最大斩击数 +4
+[瞬影斩]攻击力 +80%%
+    攻击时， 附加3%%的伤害。(每一次强化/增幅数值可以增加1%%的附加伤害； 最多可到第17阶段)`
 
 [grade]
 	57
@@ -26,6 +29,9 @@
 
 [minimum level]
 	50
+
+[need material]
+	3260	4000
 
 [physical attack]
 	39
@@ -46,13 +52,16 @@
 	1
 
 [price]
-	91200
+	50000000
 
 [repair price]
 	76608
 
 [value]
-	72960
+	5000000
+
+[creation rate]
+	250
 
 [equipment physical attack]
 	505	460
@@ -67,10 +76,13 @@
 	2
 
 [icon]
-	`Item/weapon/swordman/katana.img`	1
+	`item/new_equipment/01_weapon/swordman/katana/katana.img`	119
 
 [field image]
-	`Item/FieldImage.img`	11
+	`Item/FieldImage1.img`	11
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [equipment type]
 	`[weapon]`	23
@@ -79,7 +91,7 @@
 	`[swordman]`
 
 [variation]
-	0	0
+	5	0
 
 [layer variation]
 	2790
@@ -99,7 +111,7 @@
 	`[demonic swordman]`
 
 [variation]
-	0	0
+	5	0
 
 [layer variation]
 	2790
@@ -133,6 +145,456 @@
 [cool time]
 	10000
 
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	0	0
+		`amplify`
+		`=`	0	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		903
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	1	0
+		`amplify`
+		`=`	1	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		904
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	2	0
+		`amplify`
+		`=`	2	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		905
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	3	0
+		`amplify`
+		`=`	3	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		906
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	4	0
+		`amplify`
+		`=`	4	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		907
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	5	0
+		`amplify`
+		`=`	5	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		908
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	6	0
+		`amplify`
+		`=`	6	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		909
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	7	0
+		`amplify`
+		`=`	7	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		910
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	8	0
+		`amplify`
+		`=`	8	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		911
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	9	0
+		`amplify`
+		`=`	9	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		912
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	10	0
+		`amplify`
+		`=`	10	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		913
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	11	0
+		`amplify`
+		`=`	11	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		914
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	12	0
+		`amplify`
+		`=`	12	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		915
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	13	0
+		`amplify`
+		`=`	13	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		916
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	14	0
+		`amplify`
+		`=`	14	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		917
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	15	0
+		`amplify`
+		`=`	15	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		918
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	16	0
+		`amplify`
+		`=`	16	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		919
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	17	0
+		`amplify`
+		`=`	17	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		920
+[/then]
+
 [skill data up]
 	`[swordman]`	72	`[all]`	`[static]`	0	`+`	4
 	`[demonic swordman]`	72	`[all]`	`[level]`	0	`%`	80
@@ -140,6 +602,3 @@
 [/skill data up]
 
 [possible kiri protect]
-
-[icon mark]
-	`Item/IconMark.img`	68

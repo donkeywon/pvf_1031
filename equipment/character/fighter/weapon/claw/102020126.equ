@@ -1,0 +1,304 @@
+#PVF_File
+
+[name]
+	`双子物语`
+
+[basic explain]
+	`[挑衅]效果范围 +20%%
+攻击异常状态下的敌人时， 附加30%%的伤害。
+攻击时， 使敌人减少5点所有异常状态抗性， 效果持续20秒。 (最多重叠5次； 冷却时间1秒； 解除装备后效果消失)
+攻击状态异常的敌人时， 有20%%的几率使敌人进入石化、 混乱、 冰冻、 失明、 减速和诅咒状态中的1种。`
+
+[detail explain]
+	`[挑衅]效果范围 +20%%
+攻击异常状态下的敌人时， 附加30%%的伤害。
+攻击时， 使敌人减少5点所有异常状态抗性， 效果持续20秒。 (最多重叠5次； 冷却时间1秒； 解除装备后效果消失)
+攻击状态异常的敌人时， 有20%%的几率使敌人进入石化、 混乱、 冰冻、 失明、 减速和诅咒状态中的1种。
+-使敌人进入石化、 混乱、 冰冻状态7秒。
+-使敌人进入失明状态7秒， 减少90%%的视野和10%%的命中率。
+-使敌人进入减速状态7秒， 减少20%%的移动速度和10%%的攻击速度。
+-使敌人进入诅咒状态7秒， 减少75点的力量、 体力、 智力和精神。`
+
+[flavor text]
+	`兄弟如手足， 女人如衣服。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	65
+
+[magical attack]
+	32
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	960	824
+
+[equipment magical attack]
+	960	824
+
+[separate attack]
+	589	382
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[fighter]`	44	2
+	`[fighter]`	65	2
+	`[at fighter]`	44	2
+	`[at fighter]`	116	2
+[/skill levelup]
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/claw/claw.img`	109
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	35	0
+
+[layer variation]
+	2790
+	`clawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	34	0
+
+[layer variation]
+	2150
+	`at_clawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_clawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_clawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[fighter]`	44	`[dungeon type]`	`[level]`	1	`%`	20
+	`[at fighter]`	44	`[dungeon type]`	`[level]`	1	`%`	20
+[/skill data up]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[target active status]
+		`all activestatus`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	30
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		20000
+	[appendage]
+		219
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[target active status]
+		`any`
+	[attack success]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			20
+		[duration]
+			7000
+		[active status]
+			`stone`	91	7600
+		[then probability]
+			17.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			20
+		[duration]
+			7000
+		[active status]
+			`confuse`	91	1
+		[then probability]
+			17.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			20
+		[duration]
+			7000
+		[active status]
+			`freeze`	91
+		[then probability]
+			17.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			20
+		[duration]
+			7000
+		[active status]
+			`blind`	91	90	10
+		[then probability]
+			17.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			20
+		[duration]
+			7000
+		[active status]
+			`slow`	90	20	10
+		[then probability]
+			16.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			20
+		[duration]
+			7000
+		[active status]
+			`curse`	91	75	75	75	75
+		[then probability]
+			16.0
+	[/then]
+[/multiple then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		480	412
+	[equipment magical attack]
+		480	412
+[/pvp]
+
+[possible kiri protect]

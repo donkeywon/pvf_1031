@@ -1,0 +1,301 @@
+#PVF_File
+
+[name]
+	`牛头械王的能源战棍`
+
+[basic explain]
+	`[自动炫纹]持续时间 +20秒
+炫纹攻击力 +18%%
+    [炫纹]命中敌人时， 可以降低敌人的魔法防御力。`
+
+[detail explain]
+	`[自动炫纹]持续时间 +20秒
+[炫纹 : 无属性]攻击力 +18%%
+[炫纹 : 光属性]攻击力 +18%%
+[炫纹 : 冰属性]攻击力 +18%%
+[炫纹 : 火属性]攻击力 +18%%
+[炫纹 : 暗属性]攻击力 +18%%
+    [炫纹]命中敌人时， 可以降低敌人的魔法防御力。
+    [炫纹 : 无属性]命中时， 有20%%的几率降低敌人10%%的魔法防御力， 效果持续5秒。
+    [炫纹 : 冰属性]命中时， 有20%%的几率降低敌人10%%的魔法防御力， 效果持续5秒。
+    [炫纹 : 光属性]命中时， 有20%%的几率降低敌人10%%的魔法防御力， 效果持续5秒。
+    [炫纹 : 火属性]命中时， 有20%%的几率使降低敌人10%%的魔法防御力， 效果持续5秒。
+    [炫纹 : 暗属性]命中时， 有20%%的几率降低敌人10%%的魔法防御力， 效果持续5秒。`
+
+[flavor text]
+	`    这机械牛的身上还真都是宝啊！`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[magical attack]
+	132
+
+[attack speed]
+	50
+
+[stuck]
+	-1
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	1081	881
+
+[equipment magical attack]
+	901	701
+
+[separate attack]
+	607	507
+
+[icon]
+	`item/new_equipment/01_weapon/mage/pole/pole.img`	110
+
+[field image]
+	`Item/field_weapon.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	43	0
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	44	0
+
+[layer variation]
+	2150
+	`at_polea`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_poled`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	43	0
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`POLE_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2400
+
+[item group name]
+	`pole`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[mage]`	5	`[all]`	`[level]`	1	`%`	18
+	`[mage]`	5	`[all]`	`[level]`	6	`%`	18
+	`[mage]`	5	`[all]`	`[level]`	8	`%`	18
+	`[mage]`	6	`[all]`	`[level]`	1	`%`	18
+	`[mage]`	6	`[all]`	`[level]`	8	`%`	18
+	`[mage]`	6	`[all]`	`[level]`	10	`%`	18
+	`[mage]`	7	`[all]`	`[level]`	1	`%`	18
+	`[mage]`	7	`[all]`	`[level]`	11	`%`	18
+	`[mage]`	7	`[all]`	`[level]`	13	`%`	18
+	`[mage]`	8	`[all]`	`[level]`	1	`%`	18
+	`[mage]`	8	`[all]`	`[level]`	8	`%`	18
+	`[mage]`	8	`[all]`	`[level]`	10	`%`	18
+	`[mage]`	9	`[all]`	`[level]`	1	`%`	18
+	`[mage]`	9	`[all]`	`[level]`	8	`%`	18
+	`[mage]`	9	`[all]`	`[level]`	10	`%`	18
+	`[mage]`	40	`[all]`	`[level]`	0	`+`	20000
+[/skill data up]
+
+[if]
+	[attack success]
+		1
+	[skill]
+		`mage`	9
+	[/skill]
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		20
+	[duration]
+		5000
+	[stat]
+		`equipment magical defense`
+		`%`	-10
+[/then]
+
+[if]
+	[attack success]
+		1
+	[skill]
+		`mage`	5
+	[/skill]
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		20
+	[duration]
+		5000
+	[stat]
+		`equipment magical defense`
+		`%`	-10
+[/then]
+
+[if]
+	[attack success]
+		1
+	[skill]
+		`mage`	6
+	[/skill]
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		20
+	[duration]
+		5000
+	[stat]
+		`equipment magical defense`
+		`%`	-10
+[/then]
+
+[if]
+	[attack success]
+		1
+	[skill]
+		`mage`	7
+	[/skill]
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		20
+	[duration]
+		5000
+	[stat]
+		`equipment magical defense`
+		`%`	-10
+[/then]
+
+[if]
+	[attack success]
+		1
+	[skill]
+		`mage`	8
+	[/skill]
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		20
+	[duration]
+		5000
+	[stat]
+		`equipment magical defense`
+		`%`	-10
+[/then]
+
+[possible kiri protect]

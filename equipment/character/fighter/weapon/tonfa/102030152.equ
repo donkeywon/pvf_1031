@@ -1,0 +1,232 @@
+#PVF_File
+
+[name]
+	`无轩之黄金东方棍`
+
+[basic explain]
+	`攻击时， 附加20%%的伤害。
+[装备属性指令]输入时， 使队员进入无敌状态2秒。 (消耗10个无色小晶块)
+施放技能时， 有15%%的几率使包括自身在内的所有队员增加12%%的物理攻击力、 魔法攻击力和独立攻击力， 效果持续40秒。`
+
+[detail explain]
+	`攻击时， 附加20%%的伤害。
+[装备属性指令]输入时， 使队员进入无敌状态2秒。 (消耗10个无色小晶块； 冷却时间50秒)
+施放技能时， 有15%%的几率使包括自身在内的所有队员增加12%%的物理攻击力、 魔法攻击力和独立攻击力， 效果持续40秒。 (最多叠加1次)
+(解除装备后所有效果消失)
+(怪物与装备Lv相差35以上时， 不发动队伍无敌效果)`
+
+[flavor text]
+	`全军突击！`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	65
+
+[magical attack]
+	97
+
+[attack speed]
+	50
+
+[stuck]
+	-2
+
+[stuck resistance]
+	30
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	912	783
+
+[equipment magical attack]
+	960	824
+
+[equipment physical defense]
+	910	910
+
+[separate attack]
+	589	382
+
+[all elemental attack]
+	25
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/tonfa/tonfa.img`	102
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	33	0
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	32	0
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[command]
+	{6=`(SKILL)`}
+[/command]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[use command]
+		1
+	[cooltime]
+		50000
+[/if]
+
+[then]
+	[consume item]
+		3037	10
+	[target]
+		`party`	-1
+	[equipment duration]
+		2000
+	[buff]
+		`unbreakable`
+[/then]
+
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	20
+[/skill data up]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[probability]
+		15
+	[equipment duration]
+		40000
+	[appendage]
+		615
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		456	392
+	[equipment magical attack]
+		480	412
+[/pvp]
+
+[possible kiri protect]

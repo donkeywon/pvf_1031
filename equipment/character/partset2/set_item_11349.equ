@@ -1,0 +1,100 @@
+#PVF_File
+
+[set name]
+	`誓血之盟  套装`
+
+[piece set ability]
+	5
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`=<`
+			`%`	100
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`equipment physical attack`
+			`%`	30
+		[stat by condition]
+			`equipment magical attack`
+			`%`	30
+		[stat by condition]
+			`separate attack`
+			`%`	30
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase critical damage]
+			`%`	20
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[stat change]
+			`hp`
+			`=<`
+			`%`	40
+		[attack success]
+			1
+		[cooltime]
+			180000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			100
+		[restore]
+			`hp`
+			`%`	60	0
+		[restore]
+			`mp`
+			`%`	60	0
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[cooltime]
+			100000
+		[stat change]
+			`hp`
+			`=<`
+			`%`	50
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			2000
+		[buff]
+			`unbreakable`
+	[/then]
+	[parameter basic explain]
+		`    HP低于100%%时， 可以使自身增加30%%的物理攻击力、 魔法攻击力和独立攻击力。
+    暴击攻击时， 增加20%%的伤害。 (暴击伤害加成效果取最高值， 且无法叠加)
+    HP低于40%%时， 攻击时恢复60%%的HP和MP。 (冷却时间180秒)
+    HP低于50%%时， 被击时进入无敌状态2秒。 (冷却时间100秒)
+(解除装备后效果消失)`
+[/piece set ability]

@@ -1,0 +1,672 @@
+#PVF_File
+
+[name]
+	`破幻死光`
+
+[basic explain]
+	`    光属性攻击时， 附加8%%的光属性伤害。
+    装备时， 每一次强化/增幅数值可以增加1%%的光属性附加伤害。
+    装备时， 每2点光属性抗性增加1点光属性强化。
+    普通攻击时， 消耗250点的MP和HP， 对500px范围内的所有敌人发动闪电攻击。 `
+
+[detail explain]
+	`    光属性攻击时， 附加8%%的光属性伤害。
+    装备时， 每一次强化/增幅数值可以增加1%%的光属性附加伤害。(强化或增幅的数值越高， 附加伤害也会越高； 最多可到第17阶段)
+    装备时， 每2点光属性抗性增加1点光属性强化。(最多增加50点)
+    普通攻击时， 消耗250点的MP和HP， 对500px范围内的所有敌人发动闪电攻击。 `
+
+[flavor text]
+	`    生死就在一瞬间！  ——克鲁斯`
+
+[grade]
+	72
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	70
+
+[need material]
+	3285	1500
+
+[physical attack]
+	58
+
+[attack speed]
+	100
+
+[price]
+	70000000
+
+[repair price]
+	129600
+
+[value]
+	7000000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	821	621
+
+[equipment magical attack]
+	794	594
+
+[separate attack]
+	536	456
+
+[physical critical hit]
+	5
+
+[skill levelup]
+	`[swordman]`	4	5
+[/skill levelup]
+
+[icon]
+	`Item/weapon/swordman/beamswd.img`	64
+
+[field image]
+	`Item/FieldImage1.img`	35
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	15	0
+
+[layer variation]
+	2791
+	`beamswdc1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	2792
+	`beamswdc2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	651
+	`beamswdb1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	652
+	`beamswdb2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	15	0
+
+[layer variation]
+	2791
+	`beamswdc1`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	2792
+	`beamswdc2`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	651
+	`beamswdb1`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	652
+	`beamswdb2`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`BEAMSWD_TOUCH`
+
+[durability]
+	55
+
+[weight]
+	2500
+
+[item group name]
+	`beamswd`
+
+[cool time]
+	10000
+
+[spectrum]
+	255	90	90	200	500
+
+[required skill]
+	33
+
+[elemental property]
+	`[light element]`
+[/elemental property]
+
+[if]
+	[set my state]
+		1
+	[my state]
+		`attack`
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[passive object]
+		960408	0	0	0	90	0	``
+	[/passive object]
+	[target]
+		`myself`	-1
+	[restore]
+		`mp`
+		`+`	-250	0
+	[restore]
+		`hp`
+		`+`	-250	0
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`light resistance`	2
+		`light attack`
+		`+`	1	50
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	0	0
+		`amplify`
+		`=`	0	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		908
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	1	0
+		`amplify`
+		`=`	1	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		909
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	2	0
+		`amplify`
+		`=`	2	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		910
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	3	0
+		`amplify`
+		`=`	3	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		911
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	4	0
+		`amplify`
+		`=`	4	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		912
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	5	0
+		`amplify`
+		`=`	5	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		913
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	6	0
+		`amplify`
+		`=`	6	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		914
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	7	0
+		`amplify`
+		`=`	7	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		915
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	8	0
+		`amplify`
+		`=`	8	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		916
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	9	0
+		`amplify`
+		`=`	9	0
+	[/equipment upgrade]
+	[element]
+		`light`
+	[attack success]
+		1
+	[cooltime]
+		500
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`light`
+		`%`	17
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	10	0
+		`amplify`
+		`=`	10	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		918
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	11	0
+		`amplify`
+		`=`	11	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		919
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	12	0
+		`amplify`
+		`=`	12	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		920
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	13	0
+		`amplify`
+		`=`	13	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		921
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	14	0
+		`amplify`
+		`=`	14	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		922
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	15	0
+		`amplify`
+		`=`	15	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		923
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	16	0
+		`amplify`
+		`=`	16	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		924
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`>=`	17	0
+		`amplify`
+		`>=`	17	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		925
+[/then]
+
+[possible kiri protect]

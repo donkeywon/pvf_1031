@@ -1,0 +1,173 @@
+#PVF_File
+
+[name]
+	`逝魔之暴烈长裤`
+
+[basic explain]
+	`    攻击和施放技能时， 消耗1%%的MP值， 增加15%%的魔法暴击伤害， 效果持续60秒。`
+
+[detail explain]
+	`    攻击和施放技能时， 消耗1%%的MP值， 增加15%%的魔法暴击伤害， 效果持续60秒。 (冷却时间60秒； 解除装备后效果消失； 暴击伤害加成效果取最高值， 且无法叠加)`
+
+[flavor text]
+	`“毁灭纪”爆发时， 凶残的怪物杀害了摩恩心爱的弟子， 自此他变得非常偏激， 只要看见邪恶的事物都会毫不留情的铲除。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11198
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[magical attack]
+	46
+
+[magical defense]
+	46
+
+[price]
+	85000000
+
+[repair price]
+	65520
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	1020	930
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/02_cloth/pants/cloth_pants.img`	19
+
+[field image]
+	`Item/field_equip.img`	1
+
+[equipment type]
+	`[pants]`	18
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	24
+
+[weight]
+	1100
+
+[item group name]
+	`cl pants`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`mp`
+		`%`	-1	0
+	[probability]
+		100
+	[equipment duration]
+		60000
+	[appendage]
+		252
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[casting]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`mp`
+		`%`	-1	0
+	[probability]
+		100
+	[equipment duration]
+		60000
+	[appendage]
+		252
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[time]
+		2000	1	0
+	[my appendage]
+		252
+[/if]
+
+[then]
+	[probability]
+		100
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[increase critical damage]
+		`%`	15
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

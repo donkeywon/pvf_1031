@@ -1,0 +1,50 @@
+#PVF_File
+
+[set name]
+	`星云迷踪  套装`
+
+[piece set ability]
+	5
+	[if]
+		[cooltime]
+			3000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			15000
+		[reduce duration to human armor at pvp module]
+			50
+		[probability]
+			5
+		[active status]
+			`blind`	86	50	5
+	[/then]
+	[if]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+		[cooltime]
+			1000
+		[my active status]
+			`blind`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			1000
+		[appendage]
+			950
+	[/then]
+	[parameter basic explain]
+		`    攻击时， 有5%%的几率使自身进入失明状态15秒。 (若敌人高于Lv86， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间3秒)
+    攻击时， 附加30%%的伤害。
+    失明状态下攻击敌人时， 可以附加50%%的伤害。
+(附加伤害效果取最高值， 且无法叠加)`
+[/piece set ability]

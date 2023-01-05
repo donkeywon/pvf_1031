@@ -1,0 +1,110 @@
+#PVF_File
+
+[name]
+	`日落狂沙之石`
+
+[basic explain]
+	`    攻击时， 有3%%的几率积攒一层沙尘能量。
+    当能量达到1层时， 会生成沙尘暴攻击敌人。`
+
+[detail explain]
+	`    攻击时， 有3%%的几率积攒一层沙尘能量。
+    当能量达到1层时， 会生成沙尘暴攻击敌人。`
+
+[flavor text]
+	`    来， 小鬼， 使出你的全力， 让我看看你真正的水平。-沙影贝利特`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	53
+
+[magical attack]
+	53
+
+[physical defense]
+	53
+
+[magical defense]
+	53
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[icon]
+	`Item/new_equipment/11_magicstone/magicstone.img`	133
+
+[field image]
+	`Item/field_equip.img`	23
+
+[equipment type]
+	`[magic stone]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`magic stone`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[passive object]
+		8926	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[after attack]
+		1
+	[combo]
+		10
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[passive object]
+		8925	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,164 @@
+#PVF_File
+
+[name]
+	`死亡宣告 - 契约之镰`
+
+[basic explain]
+	`    攻击时， 有2%%的几率使敌人减少20%%的HP。
+    攻击敌人时， 附加30%%的伤害。`
+
+[detail explain]
+	`    攻击时， 有2%%的几率使敌人减少20%%的HP。 (若敌人高于Lv91， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 对精英怪物的效果为1/3， 对领主和深渊怪物的效果为1/6)
+    攻击敌人时， 附加30%%的伤害。`
+
+[flavor text]
+	`    竟然还有临死前的通知， 真是人性化。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	65
+
+[magical attack]
+	65
+
+[attack speed]
+	80
+
+[stuck]
+	2
+
+[price]
+	85000000
+
+[repair price]
+	145600
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	912	783
+
+[equipment magical attack]
+	960	824
+
+[separate attack]
+	589	382
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	10
+
+[dark attack]
+	35
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/priest/scythe/scythe.img`	98
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	33	0
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	30
+[/skill data up]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[weakness]
+		20
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		456	392
+	[equipment magical attack]
+		480	412
+[/pvp]
+
+[possible kiri protect]

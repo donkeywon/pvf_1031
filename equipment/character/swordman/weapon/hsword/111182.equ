@@ -1,0 +1,164 @@
+#PVF_File
+
+[name]
+	`锤王波罗丁的惊世宝剑`
+
+[basic explain]
+	`   攻击时， 有5%%的几率使120px范围内的所有敌人进入眩晕状态2秒。
+   攻击眩晕状态的敌人时， 增加15%%的伤害。`
+
+[detail explain]
+	`   攻击时， 有5%%的几率使120px范围内的所有敌人进入眩晕状态2秒。（若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果）
+   攻击眩晕状态的敌人时， 增加15%%的伤害。（伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外） `
+
+[flavor text]
+	`  据说拥有这把宝剑的人便可以支配整个世界！ --远古留下的传说`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[attack speed]
+	-90
+
+[cast speed]
+	-20
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	129600
+
+[value]
+	8500000
+
+[equipment physical attack]
+	1202	1002
+
+[equipment magical attack]
+	901	701
+
+[separate attack]
+	607	507
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/lswd/lswd.img`	122
+
+[field image]
+	`Item/FieldImage.img`	13
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	38	0
+
+[layer variation]
+	2790
+	`lswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`lswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	38	0
+
+[layer variation]
+	2790
+	`lswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`lswdb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SQUARESWD_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	4000
+
+[item group name]
+	`lswd`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`all enemy`	120
+	[duration]
+		2000
+	[probability]
+		5
+	[active status]
+		`stun`	90
+[/then]
+
+[if]
+	[target active status]
+		`stun`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	15
+[/then]
+
+[possible kiri protect]

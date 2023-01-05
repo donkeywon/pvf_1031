@@ -3,11 +3,14 @@
 [name]
 	`终极之纳罗时空`
 
-[name2]
-	`Naro Space - R`
-
 [basic explain]
-	`[卫星射线]持续时间 +6秒`
+	`[卫星射线]持续时间 +10秒
+[卫星射线]攻击力 +30%%
+[卫星射线]冷却时间 -30%%
+[远古粒子炮]主炮持续时间 +3秒
+[远古粒子炮]主炮攻击次数 +12次
+[远古粒子炮]攻击力 +30%%
+[远古粒子炮]冷却时间 -30%%`
 
 [grade]
 	65
@@ -26,17 +29,23 @@
 [minimum level]
 	60
 
+[need material]
+	3260	8000
+
 [physical attack]
 	66
 
 [price]
-	117000
+	60000000
 
 [repair price]
 	98280
 
 [value]
-	93600
+	6000000
+
+[creation rate]
+	250
 
 [equipment physical attack]
 	682	611
@@ -46,6 +55,11 @@
 
 [separate attack]
 	378	255
+
+[skill levelup]
+	`[gunner]`	54	3
+	`[at gunner]`	97	3
+[/skill levelup]
 
 [icon]
 	`item/weapon/gunner/hcannon.img`	52
@@ -115,11 +129,21 @@
 	10000
 
 [skill data up]
-	`[gunner]`	54	`[all]`	`[level]`	2	`+`	6000
-	`[at gunner]`	54	`[all]`	`[level]`	2	`+`	6000
+	`[gunner]`	54	`[all]`	`[level]`	2	`+`	10000
+	`[gunner]`	54	`[all]`	`[level]`	1	`%`	30
+	`[gunner]`	54	`[all]`	`[level]`	0	`%`	30
+	`[gunner]`	54	`[all]`	`[cooltime]`	0	`%`	-30
+	`[at gunner]`	97	`[all]`	`[static]`	0	`+`	3000
+	`[at gunner]`	97	`[all]`	`[static]`	1	`+`	12
+	`[at gunner]`	97	`[all]`	`[cooltime]`	0	`%`	-30
+	`[at gunner]`	97	`[all]`	`[level]`	0	`%`	30
+	`[at gunner]`	97	`[all]`	`[level]`	1	`%`	30
+	`[at gunner]`	97	`[all]`	`[level]`	2	`%`	30
+	`[at gunner]`	97	`[all]`	`[level]`	3	`%`	30
+	`[at gunner]`	97	`[all]`	`[level]`	4	`%`	30
+	`[at gunner]`	97	`[all]`	`[level]`	5	`%`	30
+	`[at gunner]`	97	`[all]`	`[level]`	6	`%`	30
+	`[at gunner]`	97	`[all]`	`[level]`	7	`%`	30
 [/skill data up]
 
 [possible kiri protect]
-
-[icon mark]
-	`Item/IconMark.img`	68

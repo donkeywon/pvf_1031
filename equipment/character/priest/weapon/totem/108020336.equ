@@ -1,0 +1,155 @@
+#PVF_File
+
+[name]
+	`拳头暴君`
+
+[basic explain]
+	`[意念驱动]暴击几率 +20%%
+[意念驱动]力量 +200
+    施放[意念驱动]时， 召唤君王之魂附体， 效果持续20秒。`
+
+[detail explain]
+	`[意念驱动]暴击几率 +20%%
+[意念驱动]力量 +200
+    施放[意念驱动]时， 召唤君王之魂附体， 攻击时有20%%的几率出现冲击波， 效果持续20秒。 (冷却时间30秒)`
+
+[flavor text]
+	`    如果能再一次见到他威武的身影那该多好啊！`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	92
+
+[stuck]
+	-1
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	1052	852
+
+[equipment magical attack]
+	901	701
+
+[separate attack]
+	607	507
+
+[icon]
+	`item/new_equipment/01_weapon/priest/totem/totem.img`	106
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	36	1
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[priest]`	13	`[all]`	`[level]`	0	`+`	20
+	`[priest]`	13	`[all]`	`[level]`	1	`+`	200
+[/skill data up]
+
+[if]
+	[cooltime]
+		30000
+	[event use skill]
+		`priest`	13
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		20000
+	[appendage]
+		692
+[/then]
+
+[if]
+	[attack success]
+		1
+	[my appendage]
+		692
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		20
+	[passive object]
+		60107	0	0	0	999	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]

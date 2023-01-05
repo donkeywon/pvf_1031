@@ -1,0 +1,223 @@
+#PVF_File
+
+[name]
+	`死亡冰柱`
+
+[basic explain]
+	`装备时， 使画面内的所有敌人减少22点冰属性抗性和冰冻抗性。
+    攻击时， 附加20%%的冰属性伤害。`
+
+[detail explain]
+	`装备时， 使画面内的所有敌人减少22点冰属性抗性和冰冻抗性。
+    攻击时， 附加20%%的冰属性伤害。`
+
+[flavor text]
+	`        如果时光能够倒流那该多好.....  ——电脑前的你`
+
+[grade]
+	80
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	80
+
+[need material]
+	3285	2500
+
+[physical attack]
+	75
+
+[attack speed]
+	100
+
+[stuck]
+	1
+
+[price]
+	80000000
+
+[repair price]
+	63360
+
+[value]
+	8000000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	928	781
+
+[equipment magical attack]
+	898	644
+
+[separate attack]
+	611	511
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/beamswd/beamswd.img`	137
+
+[field image]
+	`Item/FieldImage1.img`	35
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	30	0
+
+[layer variation]
+	2791
+	`beamswdc1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	2792
+	`beamswdc2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	651
+	`beamswdb1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	652
+	`beamswdb2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	30	0
+
+[layer variation]
+	2791
+	`beamswdc1`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	2792
+	`beamswdc2`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	651
+	`beamswdb1`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	652
+	`beamswdb2`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`BEAMSWD_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	2500
+
+[item group name]
+	`beamswd`
+
+[cool time]
+	10000
+
+[spectrum]
+	255	255	170	200	500
+
+[required skill]
+	33
+
+[all elemental attack]
+	40
+
+[skill levelup]
+	`[swordman]`	91	2
+[/skill levelup]
+
+[elemental property]
+	`[water element]`
+[/elemental property]
+
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	20
+[/skill data up]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[duration]
+		1000
+	[appendage]
+		377
+[/then]
+
+[possible kiri protect]
+
+[if]
+	[target active status]
+		`lightning`
+	[attack success]
+		1
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		910
+[/then]

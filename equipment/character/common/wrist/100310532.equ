@@ -1,0 +1,115 @@
+#PVF_File
+
+[name]
+	`精炼的毁伤魔石手环`
+
+[basic explain]
+	`所有攻击力 +7%%`
+
+[flavor text]
+	`甲 : 混沌！ 毁伤！ 遗忘！
+乙 : 说人话！
+甲 : 世界原是混沌的， 后来有了人， 然后经历了很多事后毁灭了， 毁灭自然会有伤亡， 而且还狗血的失忆了， 也就是遗忘……`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11127
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	87
+
+[magical attack]
+	50
+
+[physical defense]
+	143
+
+[magical defense]
+	50
+
+[price]
+	85000000
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment magical defense]
+	4896	4464
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	101
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	21
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack bonus`
+		`%`	7
+	[stat by condition]
+		`physical attack bonus`
+		`%`	7
+	[stat by condition]
+		`separate attack`
+		`%`	7
+[/then]
+
+[pvp]
+	[attack speed]
+		57
+	[cast speed]
+		108
+	[hit recovery]
+		112
+[/pvp]
+
+[possible kiri protect]

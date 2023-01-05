@@ -1,0 +1,185 @@
+#PVF_File
+
+[name]
+	`黑暗绝魂之杖`
+
+[basic explain]
+	`[降临 : 暴君巴拉克]攻击力 +15%%
+[巴拉克的野心]攻击力 +40%%
+[巴拉克的野心]冷却时间 -15%%
+[巴拉克的愤怒]攻击力 +40%%
+[巴拉克的愤怒]冷却时间 -15%%
+    攻击时， 附加28%%的伤害。`
+
+[flavor text]
+	`    可以战胜我的只有我自己！`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[magical attack]
+	65
+
+[attack speed]
+	-100
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	838	665
+
+[equipment magical attack]
+	1104	948
+
+[separate attack]
+	589	382
+
+[magical critical hit]
+	5
+
+[skill levelup]
+	`[thief]`	37	2
+[/skill levelup]
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/thief/wand/wand.img`	122
+
+[field image]
+	`Item/field_weapon.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	38	0
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	2300
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[thief]`	37	`[all]`	`[level]`	5	`%`	15
+	`[thief]`	37	`[all]`	`[level]`	6	`%`	15
+	`[thief]`	37	`[all]`	`[level]`	7	`%`	15
+	`[thief]`	37	`[all]`	`[level]`	8	`%`	15
+	`[thief]`	37	`[all]`	`[level]`	9	`%`	15
+	`[thief]`	37	`[all]`	`[level]`	10	`%`	15
+	`[thief]`	37	`[all]`	`[level]`	11	`%`	15
+	`[thief]`	37	`[all]`	`[level]`	12	`%`	15
+	`[thief]`	37	`[all]`	`[level]`	13	`%`	15
+	`[thief]`	37	`[all]`	`[level]`	14	`%`	15
+	`[thief]`	37	`[all]`	`[level]`	15	`%`	15
+	`[thief]`	39	`[all]`	`[level]`	0	`%`	40
+	`[thief]`	39	`[all]`	`[level]`	1	`%`	40
+	`[thief]`	39	`[all]`	`[level]`	2	`%`	40
+	`[thief]`	39	`[all]`	`[level]`	3	`%`	40
+	`[thief]`	39	`[all]`	`[cooltime]`	0	`%`	-15
+	`[thief]`	40	`[all]`	`[level]`	0	`%`	40
+	`[thief]`	40	`[all]`	`[level]`	1	`%`	40
+	`[thief]`	40	`[all]`	`[level]`	2	`%`	40
+	`[thief]`	40	`[all]`	`[level]`	3	`%`	40
+	`[thief]`	40	`[all]`	`[level]`	4	`%`	40
+	`[thief]`	40	`[all]`	`[level]`	5	`%`	40
+	`[thief]`	40	`[all]`	`[cooltime]`	0	`%`	-15
+[/skill data up]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	28
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		419	333
+	[equipment magical attack]
+		552	474
+[/pvp]
+
+[possible kiri protect]

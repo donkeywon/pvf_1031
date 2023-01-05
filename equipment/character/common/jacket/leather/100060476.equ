@@ -1,0 +1,136 @@
+#PVF_File
+
+[name]
+	`贝拉的巡查队制服`
+
+[basic explain]
+	` 被击时所受远程伤害 -10%%
+ 被攻击时， 使自身增加30%%的物理暴击率和魔法暴击率， 效果持续5秒。`
+
+[detail explain]
+	` 被击时所受远程伤害 -10%%
+ 被攻击时， 使自身增加30%%的物理暴击率和魔法暴击率， 效果持续5秒。 (冷却时间10秒)`
+
+[flavor text]
+	`这年头能混上一份公职已经很不错了 ——某个冒险家`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	38
+
+[magical attack]
+	38
+
+[magical defense]
+	41
+
+[attack speed]
+	30
+
+[move speed]
+	30
+
+[stuck resistance]
+	50
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[repair price]
+	72000
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	3852	3684
+
+[icon]
+	`Item/new_equipment/03_leather/coat/leather_coat.img`	24
+
+[field image]
+	`Item/FieldImage.img`	0
+
+[equipment type]
+	`[coat]`	19
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	33
+
+[weight]
+	1900
+
+[item group name]
+	`lt coat`
+
+[cool time]
+	10000
+
+[magical attack]
+	56
+
+[if]
+	[distance]
+		`far`
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	10
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[stat]
+		`physical critical hit`
+		`+`	30
+	[stat]
+		`magical critical hit`
+		`+`	30
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,119 @@
+#PVF_File
+
+[name]
+	`海神谜咒之异灵肩甲`
+
+[basic explain]
+	`攻击时， 有10%%的几率使敌人进入诅咒状态10秒。`
+
+[detail explain]
+	`攻击时， 有10%%的几率使敌人进入诅咒状态10秒； 诅咒状态下的敌人， 将减少50点力量、 体力、 智力和精神。(若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`随着夕阳西下， 渔夫本以为老三应该要准备回家了， 可是这三儿子却依然不断地向深海处行进……`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	12400
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	30
+
+[magical attack]
+	30
+
+[physical defense]
+	33
+
+[need material]
+	10000204	100
+
+[price]
+	85000000
+
+[repair price]
+	86400
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	3920	3640
+
+[water attack]
+	6
+
+[fire resistance]
+	-6
+
+[physical critical hit]
+	4
+
+[magical critical hit]
+	4
+
+[icon]
+	`item/new_equipment/06_plate/neck/plate_neck.img`	35
+
+[field image]
+	`Item/field_equip.img`	17
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[shoulder]`	20
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	3200
+
+[item group name]
+	`mt shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		10
+	[duration]
+		10000
+	[active status]
+		`curse`	90	50	50	50	50
+[/then]
+
+[possible kiri protect]

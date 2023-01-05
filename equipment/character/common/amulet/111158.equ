@@ -1,0 +1,128 @@
+#PVF_File
+
+[name]
+	`阿波菲斯的魔刃指环`
+
+[basic explain]
+	`    普通攻击时， 有20%%的几率发射阿波菲斯的剑气。
+    若角色为鬼剑士、 黑暗武士， 攻击时， 有10%%的几率追加释放阿波菲斯的剑气。`
+
+[flavor text]
+	`    魔剑做成的指环真的能戴吗？`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	36
+
+[magical defense]
+	90
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[equipment magical defense]
+	7920	7360
+
+[icon]
+	`Item/new_equipment/08_necklace/necklace.img`	113
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[amulet]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		500
+	[set my state]
+		1
+	[my state]
+		`attack`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		20
+	[passive object]
+		600811	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[attack success]
+		1
+	[character]
+		`swordman`
+	[cooltime]
+		500
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[passive object]
+		600811	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[attack success]
+		1
+	[character]
+		`demonic swordman`
+	[cooltime]
+		500
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[passive object]
+		600811	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]

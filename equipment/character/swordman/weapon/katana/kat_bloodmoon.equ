@@ -3,14 +3,11 @@
 [name]
 	`血舞旋月刀`
 
-[name2]
-	`Blood Moon`
-
 [basic explain]
-	`施放[拔刀斩]时， 刀刃经过处会生成12只血蝴蝶。 (未实现)`
+	`施放[拔刀斩]时， 刀刃经过处会生成12只血蝴蝶。`
 
 [flavor text]
-	`啊啊……血……怎么止不住血啊……  --虚祖国贾犹的最后一句话 `
+	`    啊啊……血……怎么止不住血啊……  --虚祖国贾犹的最后一句话 `
 
 [grade]
 	57
@@ -29,6 +26,9 @@
 [minimum level]
 	50
 
+[need material]
+	3260	4000
+
 [physical attack]
 	39
 
@@ -45,13 +45,16 @@
 	1
 
 [price]
-	91200
+	50000000
 
 [repair price]
 	76608
 
 [value]
-	72960
+	5000000
+
+[creation rate]
+	250
 
 [equipment physical attack]
 	505	460
@@ -132,12 +135,58 @@
 [cool time]
 	10000
 
+[if]
+	[skill]
+		`swordman`	9
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		9344	0	0	0	0	0	``
+		9344	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`swordman`	9
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[weakness]
+		10
+[/then]
+
+[if]
+	[skill]
+		`swordman`	9
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[active status]
+		`bleeding`	150	51500
+[/then]
+
 [routing priority]
 	`swordman`	1
 	`demonic swordman`	0
 [/routing priority]
 
 [possible kiri protect]
-
-[icon mark]
-	`Item/IconMark.img`	68

@@ -1,0 +1,224 @@
+#PVF_File
+
+[name]
+	`星云幻`
+
+[basic explain]
+	`    施放普通技能时， 会出现台词。
+[圣拳锤击]冲击波范围 +25%%
+[破碎之锤]冲击波范围 +25%%
+[俯冲腹拳]攻击力 +25%%
+[神圣组合拳]攻击力 +30%%
+    攻击时， 附加30%%的伤害。`
+
+[detail explain]
+	`    施放[圣拳锤击]时， 会出现台词‘啪！’。
+    施放[破碎之锤]时， 会出现台词‘疼！！’。
+    施放[俯冲腹拳]时， 会出现台词‘你死定了！’。
+    施放[神圣组合拳]时， 会出现台词‘冲出下水道！！’。
+[圣拳锤击]冲击波范围 +25%%
+[破碎之锤]冲击波范围 +25%%
+[俯冲腹拳]攻击力 +25%%
+[神圣组合拳]攻击力 +30%%
+    攻击时， 附加30%%的伤害。`
+
+[flavor text]
+	`    空空伊的弟弟是不是叫空空贰？`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	207
+
+[stuck]
+	-1
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	1008	865
+
+[equipment magical attack]
+	864	742
+
+[separate attack]
+	589	382
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`Item/new_equipment/01_weapon/priest/totem/totem.img`	103
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	37	0
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[priest]`	76	`[dungeon type]`	`[static]`	4	`%`	25
+	`[priest]`	33	`[dungeon type]`	`[static]`	2	`%`	25
+	`[priest]`	57	`[dungeon type]`	`[level]`	0	`%`	25
+	`[priest]`	75	`[dungeon type]`	`[level]`	0	`%`	30
+	`[priest]`	75	`[dungeon type]`	`[level]`	1	`%`	30
+	`[priest]`	75	`[dungeon type]`	`[level]`	2	`%`	30
+[/skill data up]
+
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	30
+[/skill data up]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[event use skill]
+		`priest`	75
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[speech on]
+		0	1500
+		`冲出下水道！！`
+	[/speech on]
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[event use skill]
+		`priest`	76
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[speech on]
+		0	1000
+		`啪！`
+	[/speech on]
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[event use skill]
+		`priest`	33
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[speech on]
+		0	1000
+		`疼！！`
+	[/speech on]
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[event use skill]
+		`priest`	57
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[speech on]
+		0	1000
+		`你死定了！`
+	[/speech on]
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		504	433
+	[equipment magical attack]
+		432	371
+[/pvp]
+
+[possible kiri protect]

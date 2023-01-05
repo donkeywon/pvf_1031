@@ -1,0 +1,208 @@
+#PVF_File
+
+[name]
+	`焚天祭手环`
+
+[basic explain]
+	`攻击伤害 +10%%
+对束缚状态下敌人的伤害 +20%%
+对灼伤状态下敌人的伤害 +20%%
+攻击时， 有5%%的几率使击中的敌人的200px范围内的所有敌人进入束缚状态4秒。
+攻击时， 有5%%的几率使击中的敌人的250px范围内的所有敌人进入灼伤状态4秒。`
+
+[detail explain]
+	`攻击伤害 +10%%
+对束缚状态下敌人的伤害 +20%%
+对灼伤状态下敌人的伤害 +20%%
+(伤害加成效果取最高值， 且无法叠加， 暴击/附加伤害除外)
+攻击时， 有5%%的几率使击中的敌人的200px范围内的所有敌人进入束缚状态4秒。 (冷却时间10秒)
+攻击时， 有5%%的几率使击中的敌人的250px范围内的所有敌人进入灼伤状态4秒； 灼伤状态下的敌人， 每0.5秒受到2500点伤害。 (冷却时间5秒)`
+
+[flavor text]
+	`据说它的原主人含冤获罪， 被执以火刑。 熊熊烈火中， 一切都烧成了灰烬， 唯有这手环毫发无损……`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	87
+
+[magical attack]
+	50
+
+[physical defense]
+	93
+
+[price]
+	85000000
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment magical defense]
+	4896	4464
+
+[physical critical hit]
+	10
+
+[magical critical hit]
+	10
+
+[fire attack]
+	10
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	98
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	21
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	200
+	[probability]
+		2
+	[duration]
+		4000
+	[active status]
+		`hold`	91
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	250
+	[probability]
+		2
+	[duration]
+		4000
+	[active status]
+		`burn`	91	20000	0	0	0
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[increase damage]
+		`%`	10
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[target active status]
+		`hold`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[equipment duration]
+		5000
+	[increase damage]
+		`%`	20
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[target active status]
+		`burn`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[equipment duration]
+		5000
+	[increase damage]
+		`%`	20
+[/then]
+
+[pvp]
+	[attack speed]
+		57
+	[cast speed]
+		108
+	[hit recovery]
+		112
+[/pvp]
+
+[possible kiri protect]

@@ -1,0 +1,110 @@
+#PVF_File
+
+[name]
+	`断肠绝伤之黑金肩甲`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11372
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	67
+
+[magical attack]
+	64
+
+[physical defense]
+	67
+
+[need material]
+	10000204	75
+
+[price]
+	85000000
+
+[repair price]
+	86400
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	3920	3640
+
+[icon]
+	`item/new_equipment/06_plate/neck/plate_neck.img`	45
+
+[field image]
+	`Item/field_equip.img`	17
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[shoulder]`	21
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	3200
+
+[item group name]
+	`mt shoulder`
+
+[cool time]
+	10000
+
+[possible kiri protect]
+
+[basic explain]
+	`装备时，可以使500px范围内的队员增加4%%的移动速度、6%%的攻击速度、8%%的释放速度`
+
+[if]
+	[module]
+		`[dungeon type]`
+	[/module]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`party`	500
+	[stat by condition]
+		`move speed`
+		`+`	40
+	[stat by condition]
+		`attack speed`
+		`+`	60
+	[stat by condition]
+		`cast speed`
+		`+`	80
+[/then]

@@ -1,0 +1,185 @@
+#PVF_File
+
+[name]
+	`魔战无双胸甲`
+
+[basic explain]
+	`所有技能MP消耗量 +15%%
+所有技能冷却时间 -12%%
+对敌人的伤害 +10%%`
+
+[detail explain]
+	`技能MP消耗量 +15%%
+技能冷却时间 -12%%
+攻击时， 增加10%%的伤害。 (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)
+(怪物与装备Lv相差35以上时， 不适用冷却时间减少效果)`
+
+[flavor text]
+	`    第一届魔界盟会， 参加的有塔拉库沓的艾丽丝、 佧修派的里查德、 古代图书馆的伊奇、 守护者的尼巫、 旋魔会的鲁姆等， 结果艾丽丝获胜。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11731
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	39
+
+[magical attack]
+	39
+
+[physical defense]
+	42
+
+[cast speed]
+	50
+
+[MP MAX]
+	300
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	6120	5580
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/06_plate/coat/plate_coat.img`	21
+
+[field image]
+	`Item/field_equip.img`	15
+
+[equipment type]
+	`[coat]`	23
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	60
+
+[weight]
+	5000
+
+[item group name]
+	`mt coat`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		0
+	[appendage]
+		1226
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	10
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`mp max`
+		`%`	-15
+[/then]
+
+[skill levelup]
+	`[at fighter]`	220	2
+	`[at gunner]`	242	2
+	`[at gunner]`	234	2
+	`[fighter]`	238	2
+	`[fighter]`	240	2
+	`[gunner]`	233	2
+	`[gunner]`	237	2
+	`[mage]`	133	2
+	`[mage]`	135	2
+	`[mage]`	252	2
+	`[priest]`	242	2
+	`[priest]`	238	2
+	`[swordman]`	243	2
+	`[swordman]`	234	2
+[/skill levelup]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

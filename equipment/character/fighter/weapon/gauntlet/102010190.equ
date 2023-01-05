@@ -1,0 +1,228 @@
+#PVF_File
+
+[name]
+	`疾虎之力`
+
+[basic explain]
+	`    攻击时， 使自身增加20%%的物理攻击力和20%%的独立攻击力， 效果持续30秒。
+    施放技能时， 使自身增加50%%的攻击速度， 效果持续30秒。
+攻击伤害 +20%%`
+
+[detail explain]
+	`    攻击时， 使自身增加20%%的物理攻击力和20%%的独立攻击力， 效果持续30秒。 (冷却时间30秒； 最多重叠1次)
+    施放技能时， 使自身增加50%%的攻击速度， 效果持续30秒。 (冷却时间30秒； 最多重叠1次)
+攻击伤害 +20%% (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)
+    (解除装备后效果消失)`
+
+[flavor text]
+	`    有了这臂铠， 我单手就能扫平他们。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	97
+
+[attack speed]
+	-80
+
+[stuck]
+	-1
+
+[price]
+	85000000
+
+[repair price]
+	145600
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	1152	989
+
+[equipment magical attack]
+	864	742
+
+[separate attack]
+	589	382
+
+[physical critical hit]
+	10
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/gauntlet/gauntlet.img`	104
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	30	0
+
+[layer variation]
+	2790
+	`gauntletc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gauntletb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	29	0
+
+[layer variation]
+	2150
+	`at_gauntleta`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_gauntletc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_gauntletx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		30000
+	[stat]
+		`equipment physical attack`
+		`%`	20
+	[stat]
+		`separate attack`
+		`%`	20
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[casting]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		30000
+	[stat]
+		`attack speed`
+		`+`	500
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[increase damage]
+		`%`	20
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		576	495
+	[equipment magical attack]
+		432	371
+[/pvp]
+
+[possible kiri protect]

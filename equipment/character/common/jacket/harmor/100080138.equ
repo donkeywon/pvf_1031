@@ -1,0 +1,157 @@
+#PVF_File
+
+[name]
+	`誓血之盟铠甲`
+
+[basic explain]
+	`    HP为100%%时， 会减少15%%的HP值。
+    HP从100%%起每减少1%%时， 会额外增加10点力量和智力、 0.7%%的攻击速度和1.1%%的施放速度。`
+
+[detail explain]
+	`    HP为100%%时， 会减少15%%的HP值。
+    HP从100%%起每减少1%%时， 会额外增加10点力量和智力、 0.7%%的攻击速度和1.1%%的施放速度。
+(最多增加200点力量和智力、 14%%的攻击速度和22%%的施放速度)`
+
+[flavor text]
+	`    不服solo， 不过点到即止， 别见血， 我贫血。  --某个帝血弑天`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11349
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	242
+
+[magical attack]
+	231
+
+[physical defense]
+	39
+
+[price]
+	85000000
+
+[repair price]
+	116480
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	4896	4464
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/05_harmor/coat/harmor_coat.img`	20
+
+[field image]
+	`Item/field_equip.img`	10
+
+[equipment type]
+	`[coat]`	22
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	3600
+
+[item group name]
+	`ha coat`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[time]
+		500	1	500
+	[stat change]
+		`hp`
+		`=`
+		`%`	100
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`hp`
+		`%`	-15	0
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	200
+	[stat by condition]
+		`magical attack`
+		`+`	200
+	[stat by condition]
+		`attack speed`
+		`+`	14
+	[stat by condition]
+		`cast speed`
+		`+`	22
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

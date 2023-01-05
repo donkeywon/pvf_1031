@@ -1,0 +1,1025 @@
+#PVF_File
+
+[name]
+	`魔剑 - 莎拉维尔`
+
+[basic explain]
+	`[幻影剑舞]斩击次数上限 +25%%
+[猛龙断空斩]多段攻击次数 +1
+   装备时，附加伤害 + 16%%
+   装备时， 所有攻击力 +16%%
+   装备时，减少自身16%%的防御力
+   装备时， 发动莎拉维尔的庇佑。`
+
+[detail explain]
+	`[幻影剑舞]斩击次数上限 +25%%
+[猛龙断空斩]多段攻击次数 +1
+   装备时，附加伤害 + 16%%(每一次强化/增幅数值可以增加2%%的附加伤害； 最多可到第17阶段)
+   装备时， 所有攻击力 +16%%(每一次强化/增幅数值可以增加2%%的所有攻击力； 最多可到第17阶段)
+   装备时，减少自身16%%的防御力(每一次强化/增幅数值可以减少2%%的防御力； 最多可到第17阶段)
+   装备时， 发动莎拉维尔的庇佑。
+    - 施放[幻影剑舞]、 [后跳斩]时， 触发莎拉维尔的剑气
+    - 施放[极 · 鬼剑术(暴风式)]时， 使附近450px范围内的所有敌人进入石化状态3秒
+    - 施放[猛龙断空斩]时， 刀刃经过处会生成血色风暴， 同时使敌人进入出血状态5秒  `
+
+[flavor text]
+	`   堕落也是天使……  ——莎拉维尔`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[price]
+	85000000
+
+[physical attack]
+	129
+
+[attack speed]
+	100
+
+[move speed]
+	70
+
+[cast speed]
+	120
+
+[stuck]
+	5
+
+[HP MAX]
+	-1500
+
+[HP regen speed]
+	-3000
+
+[repair price]
+	134568
+
+[value]
+	8500000
+
+[creation rate]
+	50
+
+[equipment physical attack]
+	982	782
+
+[equipment magical attack]
+	950	750
+
+[separate attack]
+	648	548
+
+[physical critical hit]
+	5
+
+[magical critical hit]
+	5
+
+[all elemental attack]
+	31
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/beamswd/beamswd.img`	130
+
+[field image]
+	`Item/FieldImage1.img`	35
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	90	100
+
+[layer variation]
+	2791
+	`beamswdc1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	2792
+	`beamswdc2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	651
+	`beamswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	652
+	`beamswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`BEAMSWD_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	2500
+
+[item group name]
+	`beamswd`
+
+[elemental property]
+	`[water element]`
+
+[cool time]
+	10000
+
+[required skill]
+	33
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	0	0
+		`amplify`
+		`=`	0	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		916
+	[stat by condition]
+		`magical attack bonus`
+		`%`	16
+	[stat by condition]
+		`physical attack bonus`
+		`%`	16
+	[stat by condition]
+		`separate attack`
+		`%`	16
+	[stat by condition]
+		`equipment physical defense`
+		`%`	-16
+	[stat by condition]
+		`equipment magical defense`
+		`%`	-16
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	1	0
+		`amplify`
+		`=`	1	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		918
+	[stat by condition]
+		`magical attack bonus`
+		`%`	18
+	[stat by condition]
+		`physical attack bonus`
+		`%`	18
+	[stat by condition]
+		`separate attack`
+		`%`	18
+	[stat by condition]
+		`equipment physical defense`
+		`%`	-18
+	[stat by condition]
+		`equipment magical defense`
+		`%`	-18
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	2	0
+		`amplify`
+		`=`	2	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		920
+	[stat by condition]
+		`magical attack bonus`
+		`%`	20
+	[stat by condition]
+		`physical attack bonus`
+		`%`	20
+	[stat by condition]
+		`separate attack`
+		`%`	20
+	[stat by condition]
+		`equipment physical defense`
+		`%`	-20
+	[stat by condition]
+		`equipment magical defense`
+		`%`	-20
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	3	0
+		`amplify`
+		`=`	3	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		922
+	[stat by condition]
+		`magical attack bonus`
+		`%`	22
+	[stat by condition]
+		`physical attack bonus`
+		`%`	22
+	[stat by condition]
+		`separate attack`
+		`%`	22
+	[stat by condition]
+		`equipment physical defense`
+		`%`	-22
+	[stat by condition]
+		`equipment magical defense`
+		`%`	-22
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	4	0
+		`amplify`
+		`=`	4	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		924
+	[stat by condition]
+		`magical attack bonus`
+		`%`	24
+	[stat by condition]
+		`physical attack bonus`
+		`%`	24
+	[stat by condition]
+		`separate attack`
+		`%`	24
+	[stat by condition]
+		`equipment physical defense`
+		`%`	-24
+	[stat by condition]
+		`equipment magical defense`
+		`%`	-24
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	5	0
+		`amplify`
+		`=`	5	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		926
+	[stat by condition]
+		`magical attack bonus`
+		`%`	26
+	[stat by condition]
+		`physical attack bonus`
+		`%`	26
+	[stat by condition]
+		`separate attack`
+		`%`	26
+	[stat by condition]
+		`equipment physical defense`
+		`%`	-26
+	[stat by condition]
+		`equipment magical defense`
+		`%`	-26
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	6	0
+		`amplify`
+		`=`	6	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		928
+	[stat by condition]
+		`magical attack bonus`
+		`%`	28
+	[stat by condition]
+		`physical attack bonus`
+		`%`	28
+	[stat by condition]
+		`separate attack`
+		`%`	28
+	[stat by condition]
+		`equipment physical defense`
+		`%`	-28
+	[stat by condition]
+		`equipment magical defense`
+		`%`	-28
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	7	0
+		`amplify`
+		`=`	7	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		930
+	[stat by condition]
+		`magical attack bonus`
+		`%`	30
+	[stat by condition]
+		`physical attack bonus`
+		`%`	30
+	[stat by condition]
+		`separate attack`
+		`%`	30
+	[stat by condition]
+		`equipment physical defense`
+		`%`	-30
+	[stat by condition]
+		`equipment magical defense`
+		`%`	-30
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	8	0
+		`amplify`
+		`=`	8	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		932
+	[stat by condition]
+		`magical attack bonus`
+		`%`	32
+	[stat by condition]
+		`physical attack bonus`
+		`%`	32
+	[stat by condition]
+		`separate attack`
+		`%`	32
+	[stat by condition]
+		`equipment physical defense`
+		`%`	-32
+	[stat by condition]
+		`equipment magical defense`
+		`%`	-32
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	9	0
+		`amplify`
+		`=`	9	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		934
+	[stat by condition]
+		`magical attack bonus`
+		`%`	34
+	[stat by condition]
+		`physical attack bonus`
+		`%`	34
+	[stat by condition]
+		`separate attack`
+		`%`	34
+	[stat by condition]
+		`equipment physical defense`
+		`%`	-34
+	[stat by condition]
+		`equipment magical defense`
+		`%`	-34
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	10	0
+		`amplify`
+		`=`	10	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		936
+	[stat by condition]
+		`magical attack bonus`
+		`%`	36
+	[stat by condition]
+		`physical attack bonus`
+		`%`	36
+	[stat by condition]
+		`separate attack`
+		`%`	36
+	[stat by condition]
+		`equipment physical defense`
+		`%`	-36
+	[stat by condition]
+		`equipment magical defense`
+		`%`	-36
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	11	0
+		`amplify`
+		`=`	11	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		938
+	[stat by condition]
+		`magical attack bonus`
+		`%`	38
+	[stat by condition]
+		`physical attack bonus`
+		`%`	38
+	[stat by condition]
+		`separate attack`
+		`%`	38
+	[stat by condition]
+		`equipment physical defense`
+		`%`	-38
+	[stat by condition]
+		`equipment magical defense`
+		`%`	-38
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	12	0
+		`amplify`
+		`=`	12	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		940
+	[stat by condition]
+		`magical attack bonus`
+		`%`	40
+	[stat by condition]
+		`physical attack bonus`
+		`%`	40
+	[stat by condition]
+		`separate attack`
+		`%`	40
+	[stat by condition]
+		`equipment physical defense`
+		`%`	-40
+	[stat by condition]
+		`equipment magical defense`
+		`%`	-40
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	13	0
+		`amplify`
+		`=`	13	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		942
+	[stat by condition]
+		`magical attack bonus`
+		`%`	42
+	[stat by condition]
+		`physical attack bonus`
+		`%`	42
+	[stat by condition]
+		`separate attack`
+		`%`	42
+	[stat by condition]
+		`equipment physical defense`
+		`%`	-42
+	[stat by condition]
+		`equipment magical defense`
+		`%`	-42
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	14	0
+		`amplify`
+		`=`	14	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		944
+	[stat by condition]
+		`magical attack bonus`
+		`%`	44
+	[stat by condition]
+		`physical attack bonus`
+		`%`	44
+	[stat by condition]
+		`separate attack`
+		`%`	44
+	[stat by condition]
+		`equipment physical defense`
+		`%`	-44
+	[stat by condition]
+		`equipment magical defense`
+		`%`	-44
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	15	0
+		`amplify`
+		`=`	15	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		946
+	[stat by condition]
+		`magical attack bonus`
+		`%`	46
+	[stat by condition]
+		`physical attack bonus`
+		`%`	46
+	[stat by condition]
+		`separate attack`
+		`%`	46
+	[stat by condition]
+		`equipment physical defense`
+		`%`	-46
+	[stat by condition]
+		`equipment magical defense`
+		`%`	-46
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	16	0
+		`amplify`
+		`=`	16	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		948
+	[stat by condition]
+		`magical attack bonus`
+		`%`	48
+	[stat by condition]
+		`physical attack bonus`
+		`%`	48
+	[stat by condition]
+		`separate attack`
+		`%`	48
+	[stat by condition]
+		`equipment physical defense`
+		`%`	-48
+	[stat by condition]
+		`equipment magical defense`
+		`%`	-48
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`>=`	17	0
+		`amplify`
+		`>=`	17	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		950
+	[stat by condition]
+		`magical attack bonus`
+		`%`	50
+	[stat by condition]
+		`physical attack bonus`
+		`%`	50
+	[stat by condition]
+		`separate attack`
+		`%`	50
+	[stat by condition]
+		`equipment physical defense`
+		`%`	-50
+	[stat by condition]
+		`equipment magical defense`
+		`%`	-50
+[/then]
+
+[if]
+	[use skill]
+		`swordman`	72
+	[/use skill]
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		9447	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`swordman`	72
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[active status]
+		`bleeding`	150	50000
+	[passive object]
+		9344	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`swordman`	73
+	[/use skill]
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		11281
+[/then]
+
+[if]
+	[time]
+		100	1	0
+	[my appendage]
+		11281
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		911010	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`swordman`	49
+	[/use skill]
+	[cooltime]
+		200
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		911010	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`swordman`	86
+	[/use skill]
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	450
+	[duration]
+		3000
+	[active status]
+		`stone`	150	50000
+[/then]
+
+[if]
+	[set my state]
+		1
+	[my state]
+		`any`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		-99999999
+	[appendage]
+		11281
+[/then]
+
+[skill data up]
+	`[swordman]`	73	`[all]`	`[static]`	1	`%`	25
+	`[swordman]`	73	`[all]`	`[static]`	2	`%`	25
+	`[swordman]`	73	`[all]`	`[static]`	3	`%`	25
+	`[swordman]`	73	`[all]`	`[static]`	4	`%`	25
+	`[swordman]`	73	`[all]`	`[static]`	5	`%`	25
+	`[swordman]`	73	`[all]`	`[static]`	6	`%`	25
+	`[swordman]`	73	`[all]`	`[static]`	7	`%`	25
+	`[swordman]`	73	`[all]`	`[static]`	8	`%`	25
+	`[swordman]`	73	`[all]`	`[static]`	11	`%`	25
+	`[swordman]`	73	`[all]`	`[static]`	12	`%`	25
+	`[swordman]`	73	`[all]`	`[static]`	25	`%`	25
+	`[swordman]`	73	`[all]`	`[static]`	26	`%`	25
+	`[swordman]`	73	`[all]`	`[static]`	27	`%`	25
+	`[swordman]`	73	`[all]`	`[static]`	28	`%`	25
+	`[swordman]`	72	`[all]`	`[static]`	1	`+`	1
+[/skill data up]
+
+[possible kiri protect]

@@ -3,14 +3,20 @@
 [name]
 	`深海熔岩肩甲`
 
-[name2]
-	``
+[basic explain]
+	`    攻击时， 有3%%的几率对300px范围内的敌人随机生成最多2个沸腾之泉。`
+
+[detail explain]
+	`攻击时， 有3%%的几率对300px范围内的敌人随机生成最多2个沸腾之泉。 (冷却时间5秒)`
 
 [grade]
 	85
 
 [rarity]
 	4
+
+[part set index]
+	11457
 
 [usable job]
 	`[all]`
@@ -22,41 +28,53 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [physical attack]
-	34
+	35
 
 [magical attack]
-	22
+	23
 
 [attack speed]
-	30
+	50
+
+[cast speed]
+	70
 
 [HP MAX]
-	350
+	200
 
 [MP MAX]
-	350
+	200
 
 [price]
-	76500
+	80000000
 
 [repair price]
-	64260
+	68800
 
 [value]
-	61200
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical defense]
-	2232	2088
+	2328	2112
 
-[fire resistance]
-	5
+[physical critical hit]
+	15
+
+[magical critical hit]
+	15
 
 [water resistance]
-	10
+	12
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/04_larmor/neck/larmor_neck.img`	10
@@ -85,11 +103,60 @@
 [cool time]
 	10000
 
-[set item master]
-	100070009
+[all skill item container]
+	[all skill item]
+		[item growtype]
+			`[all]`	0
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				45
+			[upper bound level]
+				50
+			[value]
+				1
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
+[/all skill item container]
 
-[routing priority]
-[/routing priority]
+[if]
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[then]
+	[target]
+		`enemy`	300
+	[probability]
+		3
+	[passive object]
+		140156	0	0	0	0	0	` `
+	[/passive object]
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`enemy`	300
+	[probability]
+		3
+	[passive object]
+		140156	0	0	0	0	0	` `
+	[/passive object]
+[/then]
+
+[possible kiri protect]

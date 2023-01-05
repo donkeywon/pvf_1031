@@ -1,0 +1,60 @@
+#PVF_File
+
+[set name]
+	`海神谜咒之愤怒  套装`
+
+[piece set ability]
+	5
+	[water attack]
+		35
+	[move speed]
+		20
+	[attack speed]
+		30
+	[cast speed]
+		30
+	[HP MAX]
+		250
+	[MP MAX]
+		250
+	[skill data up]
+		`[all]`	199	`[all]`	`[level]`	50	`+`	20
+	[/skill data up]
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			1000
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			100
+		[duration]
+			5000
+		[active status]
+			`curse`	90	50	50	50	50
+	[/then]
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			5000
+	[/if]
+	[then]
+		[target]
+			`all enemy`	500
+		[probability]
+			5
+		[passive object]
+			54132	0	0	0	99	0	``
+		[/passive object]
+	[/then]
+	[parameter basic explain]
+		`  装备时， 每60秒对武器赋予冰属性， 效果持续60秒。
+  攻击时， 附加20%%的伤害。
+  装备时， 会使500px范围内的所有敌人进入诅咒状态； 诅咒状态下的敌人， 将减少50点力量、体力、智力和精神。
+  攻击时， 使敌人进入诅咒状态5秒； 诅咒状态下的敌人， 将减少50点力量、 体力、 智力和精神。
+  攻击时， 有5%%的几率使自身周围500px范围内发动被诅咒的海神之怒效果。`
+[/piece set ability]

@@ -3,14 +3,16 @@
 [name]
 	`七煞星 - 狂袭`
 
-[name2]
-	``
-
 [basic explain]
-	`穿刺力 +20
+	`    攻击时， 可以使敌人减少15点光属性抗性， 效果持续10秒。
+    攻击时， 有5%%的几率对敌人召唤天谴闪电。
+    被攻击时， 在自身周围召唤8个天谴闪电。`
 
-攻击时， 有2%%的几率对敌人召唤出审判之闪电。 (在决斗场中无效)
-敌人死亡时， 有10%%的几率召唤出更强烈的审判之闪电。 (在决斗场中无效)`
+[detail explain]
+	`    攻击时， 可以使敌人减少15点光属性抗性， 效果持续10秒。 (冷却时间0.1秒； 最多重叠1次)
+    攻击时， 有5%%的几率对敌人召唤天谴闪电。
+    被攻击时， 在自身周围召唤8个天谴闪电。 (冷却时间20秒)
+穿刺力 +20`
 
 [grade]
 	85
@@ -29,11 +31,14 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [physical attack]
-	56
+	62
 
 [magical attack]
-	28
+	31
 
 [attack speed]
 	20
@@ -42,28 +47,41 @@
 	-1
 
 [price]
-	136000
+	80000000
 
 [repair price]
-	114240
+	123840
 
 [value]
-	108800
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical attack]
-	648	586
+	758	593
 
 [equipment magical attack]
-	721	651
+	842	659
 
 [separate attack]
-	504	343
+	555	359
 
 [physical critical hit]
 	3
+
+[skill levelup]
+	`[gunner]`	30	3
+	`[at gunner]`	30	3
+	`[gunner]`	57	3
+	`[at gunner]`	57	3
+[/skill levelup]
+
+[light attack]
+	20
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/01_weapon/gunner/bowgun/bowgun.img`	83
@@ -121,7 +139,7 @@
 	`BOWGUN_TOUCH`
 
 [durability]
-	39
+	48
 
 [weight]
 	2300
@@ -132,28 +150,49 @@
 [cool time]
 	10000
 
-[routing priority]
-	`gunner`	4
-	`at gunner`	4
-[/routing priority]
-
 [int data]
 	7	-1	-1	-1	-1	-1	-1	-1	35	-1
 [/int data]
 
 [elemental property]
-	`light`
+	`[light element]`
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[probability]
+		100
+	[target]
+		`myself`	-1
+	[passive object]
+		48513	120	0	0	0	0	``
+		48513	90	50	0	0	0	``
+		48513	0	75	0	0	0	``
+		48513	-75	50	0	0	0	``
+		48513	-120	0	0	0	0	``
+		48513	-90	-50	0	0	0	``
+		48513	0	-75	0	0	0	``
+		48513	90	-50	0	0	0	``
+	[/passive object]
+[/then]
 
 [if]
 	[attack success]
 		1
 	[cooltime]
-		2333
+		100
 [/if]
 
 [then]
 	[probability]
-		2
+		5
+	[reduce probability at pvp module]
+		100
 	[target]
 		`enemy`	-1
 	[passive object]
@@ -164,21 +203,17 @@
 [if]
 	[attack success]
 		1
-	[target death]
-		1
 	[cooltime]
-		2333
+		100
 [/if]
 
 [then]
-	[probability]
-		10
 	[target]
 		`enemy`	-1
-	[passive object]
-		48515	0	0	0	0	0	``
-	[/passive object]
+	[equipment duration]
+		10000
+	[appendage]
+		834
 [/then]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

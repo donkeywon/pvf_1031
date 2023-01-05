@@ -1,0 +1,113 @@
+#PVF_File
+
+[set name]
+	`最佳球手的绝杀  套装`
+
+[piece set ability]
+	5
+	[attack speed]
+		50
+	[move speed]
+		50
+	[cast speed]
+		70
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			0
+		[stat by condition]
+			`physical attack`
+			`%`	5
+		[stat by condition]
+			`magical attack`
+			`%`	5
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[event use skill]
+			`common`	169
+		[cooltime]
+			5000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			5000
+		[appendage]
+			283
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[set my state]
+			1
+		[my state]
+			`dash`
+		[cooltime]
+			15000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			60000
+		[appendage]
+			644
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[attack success]
+			1
+		[cooltime]
+			20000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			20000
+		[stat]
+			`attack speed`
+			`+`	150
+		[stat]
+			`move speed`
+			`+`	150
+		[stat]
+			`cast speed`
+			`+`	225
+	[/then]
+	[parameter basic explain]
+		`力量、 智力 +5%%
+    施放[后跳]后， 下一次前冲攻击的伤害增加600%%， 效果持续5秒。  (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外； 冷却时间5秒)
+    前冲时， 使自身增加10%%的攻击速度、 10%%的移动速度和15%%的施放速度， 并增加40%%的物理攻击力、 魔法攻击力和独立攻击力， 效果持续60秒。 (冷却时间15秒； 最多重叠1次)
+    攻击时， 使自身增加15%%的攻击速度、 15%%的移动速度和22.5%%的施放速度， 效果持续20秒。  (冷却时间20秒)`
+	[pvp]
+		[attack speed]
+			1
+		[move speed]
+			1
+		[cast speed]
+			1
+	[/pvp]
+[/piece set ability]

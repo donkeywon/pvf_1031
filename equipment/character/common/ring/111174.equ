@@ -1,0 +1,233 @@
+#PVF_File
+
+[name]
+	`释灵渊`
+
+[basic explain]
+	`    攻击时， 有5%%的几率召唤出3只幽灵攻击目标。
+  被幽灵攻击的目标， 在以下异常状态中随机施加一种效果， 效果持续5秒。
+    被幽灵攻击的敌人所有属性抗性减少20点， 效果持续10秒。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率召唤出3只幽灵攻击目标。
+  被幽灵攻击的目标， 在以下异常状态中随机施加一种效果， 效果持续5秒。
+  -出血、 中毒状态下的敌人， 每0.5秒受到800点的伤害。
+  -减速状态下， 减少20%%的移动速度和攻击速度。
+  -失明状态下， 减少90的视野和20的命中率。
+    -诅咒状态下， 减少22点力量、 体力、 智力和精神。
+    被幽灵攻击的敌人所有属性抗性减少20点， 效果持续10秒。`
+
+[flavor text]
+	`  我觉得已经没有必要去了解那个一直在跟踪我的影子了， 爱跟就跟吧！ --某个鬼泣`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	54
+
+[magical attack]
+	54
+
+[hit recovery]
+	90
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[equipment magical defense]
+	3168	2944
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	154
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	200
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[multiple then]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[passive object]
+		60112	-50	0	20	2	0	``
+		60113	0	0	0	2	0	``
+		60114	-50	0	-20	2	0	``
+	[/passive object]
+	[then probability]
+		10.0
+[/then]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[passive object]
+		60112	-50	0	20	2	0	``
+		60113	0	0	0	2	0	``
+		60115	-50	0	-20	2	0	``
+	[/passive object]
+	[then probability]
+		10.0
+[/then]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[passive object]
+		60112	-50	0	20	2	0	``
+		60113	0	0	0	2	0	``
+		60116	-50	0	-20	2	0	``
+	[/passive object]
+	[then probability]
+		10.0
+[/then]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[passive object]
+		60113	-50	0	20	2	0	``
+		60114	0	0	0	2	0	``
+		60115	-50	0	-20	2	0	``
+	[/passive object]
+	[then probability]
+		10.0
+[/then]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[passive object]
+		60113	-50	0	20	2	0	``
+		60114	0	0	0	2	0	``
+		60116	-50	0	-20	2	0	``
+	[/passive object]
+	[then probability]
+		10.0
+[/then]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[passive object]
+		60112	-50	0	20	2	0	``
+		60115	0	0	0	2	0	``
+		60116	-50	0	-20	2	0	``
+	[/passive object]
+	[then probability]
+		10.0
+[/then]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[passive object]
+		60112	-50	0	20	2	0	``
+		60114	0	0	0	2	0	``
+		60115	-50	0	-20	2	0	``
+	[/passive object]
+	[then probability]
+		10.0
+[/then]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[passive object]
+		60112	-50	0	20	2	0	``
+		60114	0	0	0	2	0	``
+		60116	-50	0	-20	2	0	``
+	[/passive object]
+	[then probability]
+		10.0
+[/then]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[passive object]
+		60113	-50	0	20	2	0	``
+		60115	0	0	0	2	0	``
+		60116	-50	0	-20	2	0	``
+	[/passive object]
+	[then probability]
+		10.0
+[/then]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[passive object]
+		60114	-50	0	20	2	0	``
+		60115	0	0	0	2	0	``
+		60116	-50	0	-20	2	0	``
+	[/passive object]
+	[then probability]
+		10.0
+[/then]
+
+[possible kiri protect]

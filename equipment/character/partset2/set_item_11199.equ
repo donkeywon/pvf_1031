@@ -1,0 +1,134 @@
+#PVF_File
+
+[set name]
+	`天劫  套装`
+
+[piece set ability]
+	5
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`light attack`
+			`+`	50
+		[stat by condition]
+			`fire attack`
+			`+`	50
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`dark attack`
+			`+`	50
+		[stat by condition]
+			`water attack`
+			`+`	50
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`magical attack`
+			`+`	400
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[cooltime]
+			1000
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`all enemy`	300
+		[duration]
+			1000
+		[stat]
+			`equipment magical defense`
+			`%`	-20
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[casting]
+			1
+		[cooltime]
+			2000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			2000
+		[buff]
+			`superarmor`
+	[/then]
+	[if]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`magical attack bonus`
+			`%`	18
+		[stat by condition]
+			`physical attack bonus`
+			`%`	18
+		[stat by condition]
+			`separate attack`
+			`%`	18
+	[/then]
+	[parameter basic explain]
+		`    装备时， 若500px范围内有敌人时， 则可使自身所有属性强化增加50点。
+    装备时， 若400px范围内有敌人时， 则使自身增加400点智力。
+    装备时， 若300px范围内有敌人时， 则使自身增加18%%的所有攻击力。
+    装备时， 若300px范围内有敌人时， 则施放技能时可使自身进入霸体状态2秒。 (冷却时间2秒)
+    装备后生成光环， 使300px范围内的敌人减少20%%的魔法防御力。`
+[/piece set ability]

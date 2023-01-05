@@ -1,0 +1,119 @@
+#PVF_File
+
+[name]
+	`断肠绝伤之黑革长靴`
+
+[flavor text]
+	`留给历史去审判？  让那些被害者和家人等到那个时候？ 呵， 别说他们， 连我这个龙族人都做不到。  --船长鲁特`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11372
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	22
+
+[magical attack]
+	22
+
+[magical defense]
+	25
+
+[move speed]
+	80
+
+[stuck resistance]
+	50
+
+[need material]
+	10000204	75
+
+[price]
+	85000000
+
+[repair price]
+	50400
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	1176	1092
+
+[icon]
+	`item/new_equipment/03_leather/shoes/leather_shoes.img`	36
+
+[field image]
+	`Item/FieldImage.img`	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[shoes]`	16
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	20
+
+[weight]
+	900
+
+[item group name]
+	`lt shoes`
+
+[cool time]
+	10000
+
+[possible kiri protect]
+
+[basic explain]
+	`装备时，可以使500px范围内的队员增加8%%的物理暴击率、8%%的魔法暴击率、4%%的移动速度`
+
+[if]
+	[module]
+		`[dungeon type]`
+	[/module]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`party`	500
+	[stat by condition]
+		`physical critical hit`
+		`+`	8
+	[stat by condition]
+		`magical critical hit`
+		`+`	8
+	[stat by condition]
+		`move speed`
+		`+`	40
+[/then]

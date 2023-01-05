@@ -1,0 +1,184 @@
+#PVF_File
+
+[name]
+	`锈刀 - 归真`
+
+[basic explain]
+	`攻击速度 +100%%
+    攻击时无视敌人防御。
+    装备时， 每3点力量增加1点物理攻击力。
+    装备时， 每3点智力增加1点魔法攻击力。`
+
+[detail explain]
+	`攻击速度 +100%%
+    攻击时无视敌人防御。
+    装备时， 每3点力量增加1点物理攻击力。
+    装备时， 每3点智力增加1点魔法攻击力。`
+
+[flavor text]
+	`真正的强者， 天地万物皆可为刀！`
+
+[grade]
+	5
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	2
+
+[need material]
+	3260	900
+
+[price]
+	2000000
+
+[repair price]
+	8160
+
+[value]
+	200000
+
+[attack speed]
+	1100
+
+[cast speed]
+	1000
+
+[stuck]
+	-100
+
+[equipment physical attack]
+	1	1
+
+[equipment magical attack]
+	1	1
+
+[separate attack]
+	1	1
+
+[physical critical hit]
+	100
+
+[magical critical hit]
+	100
+
+[icon]
+	`Item/weapon/swordman/katana.img`	9
+
+[field image]
+	`Item/FieldImage.img`	11
+
+[equipment type]
+	`[weapon]`	20
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	1	1
+
+[layer variation]
+	2790
+	`katanac`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`katanab`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	1	1
+
+[layer variation]
+	2790
+	`katanac`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`katanab`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`KATANA_TOUCH`
+
+[durability]
+	53
+
+[weight]
+	200
+
+[item group name]
+	`katana`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		500	1	500
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`physical attack`	3
+		`equipment physical attack`
+		`+`	1	0
+	[stat change by stat]
+		`myself`	-1
+		`magical attack`	3
+		`equipment magical attack`
+		`+`	1	0
+[/then]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		100
+	[stat]
+		`equipment physical defense`
+		`%`	-100
+	[stat]
+		`equipment magical defense`
+		`%`	-100
+[/then]
+
+[routing priority]
+	`swordman`	1
+	`demonic swordman`	0
+[/routing priority]
+
+[possible kiri protect]

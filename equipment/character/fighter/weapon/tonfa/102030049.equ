@@ -1,0 +1,212 @@
+#PVF_File
+
+[name]
+	`芝诺的蛮骨东方棍`
+
+[basic explain]
+	`   装备时， 会消耗1个白色小晶块， 召唤芝诺的灵魂附体， 效果持续40秒； 附体状态下， 角色可以借用芝诺的技能。
+   附体状态下进行攻击时， 会生成芝诺的念花。
+   攻击感电状态下的敌人时， 附加10%%光属性的伤害。`
+
+[detail explain]
+	`   装备时， 会消耗1个白色小晶块， 召唤芝诺的灵魂附体， 效果持续40秒； 附体状态下， 角色可以借用芝诺的技能。（冷却时间40秒）
+   附体状态下进行攻击时， 会生成芝诺的念花。（冷却时间5秒）
+   攻击感电状态下的敌人时， 附加10%%光属性的伤害。`
+
+[flavor text]
+	`  比想象的要好控制， 但是不知道为什么， 总有一些不详的预感。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	68
+
+[attack speed]
+	50
+
+[stuck]
+	-3
+
+[stuck resistance]
+	50
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	119616
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	952	752
+
+[equipment magical attack]
+	1002	802
+
+[equipment physical defense]
+	990	790
+
+[separate attack]
+	607	507
+
+[light attack]
+	18
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/tonfa/tonfa.img`	106
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	37	0
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[magical attack]
+	101
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		40000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[consume item]
+		3034	1
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		21021	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[target active status]
+		`lightning`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`light`
+		`%`	10
+[/then]
+
+[possible kiri protect]

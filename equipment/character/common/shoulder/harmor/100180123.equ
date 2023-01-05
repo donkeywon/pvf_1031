@@ -1,0 +1,116 @@
+#PVF_File
+
+[name]
+	`逆龙之战强袭肩甲`
+
+[basic explain]
+	`    攻击HP为50%%以上的敌人时， 增加15%%的伤害。`
+
+[detail explain]
+	`    攻击HP为50%%以上的敌人时， 增加15%%的伤害。 (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)`
+
+[flavor text]
+	`    唉， 这里为什么就我一个神族呢……  --露德米拉`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[part set index]
+	11348
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	31
+
+[magical attack]
+	22
+
+[physical defense]
+	28
+
+[attack speed]
+	100
+
+[cast speed]
+	150
+
+[repair price]
+	77760
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	2944	2656
+
+[physical critical hit]
+	10
+
+[magical critical hit]
+	10
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/05_harmor/neck/harmor_neck.img`	17
+
+[field image]
+	`Item/field_equip.img`	12
+
+[equipment type]
+	`[shoulder]`	20
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	32
+
+[weight]
+	2300
+
+[item group name]
+	`ha shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[target stat]
+		`hp`
+		`>`
+		`%`	50
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	15
+[/then]
+
+[possible kiri protect]

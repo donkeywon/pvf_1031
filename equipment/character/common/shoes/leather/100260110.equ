@@ -1,0 +1,152 @@
+#PVF_File
+
+[name]
+	`黄泉之风战靴`
+
+[basic explain]
+	`    攻击时， 增加15%%的攻击速度和移动速度， 效果持续30秒。
+    攻击时， 有5%%的几率增加20点所有属性强化， 效果持续30秒。`
+
+[detail explain]
+	`    攻击时， 增加15%%的攻击速度和移动速度， 效果持续30秒。 (冷却时间10秒； 最多重叠1次)
+    攻击时， 有5%%的几率增加20点所有属性强化， 效果持续30秒。 (冷却时间10秒； 最多重叠1次)
+    (解除装备后效果消失)`
+
+[flavor text]
+	`    尽管被誉为枪神， 也斗不过这无法地带的沙尘暴啊……  --沙影贝利特`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11598
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	53
+
+[magical attack]
+	53
+
+[magical defense]
+	25
+
+[move speed]
+	70
+
+[price]
+	85000000
+
+[repair price]
+	58240
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	1224	1116
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/03_leather/shoes/leather_shoes.img`	17
+
+[field image]
+	`Item/FieldImage.img`	4
+
+[equipment type]
+	`[shoes]`	17
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	20
+
+[weight]
+	900
+
+[item group name]
+	`lt shoes`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		30000
+	[appendage]
+		1006
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[equipment duration]
+		30000
+	[appendage]
+		1007
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

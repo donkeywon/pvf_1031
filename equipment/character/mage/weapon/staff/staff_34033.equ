@@ -3,17 +3,15 @@
 [name]
 	`灾难召唤者法杖`
 
-[name2]
-	``
-
 [basic explain]
-	`施放[天雷]、 [雷光屏障]时， 有20%%的几率召唤出冰焰或火焰怪中的一个， 召唤兽存在40秒。 (最高上限3只)`
+	`    施放技能时， 有5%%的几率召唤出冰魄或火焰寄生虫中的一个， 召唤兽存在100秒。`
 
 [detail explain]
-	`施放[天雷]、 [雷光屏障]时， 有20%%的几率召唤出冰焰或火焰怪中的一个， 召唤兽存在40秒。 (召唤的怪物只能同时存在3只， 若其受到较大伤害， 则召唤时间结束前就会消失)`
+	`    施放技能时， 有5%%的几率召唤1只冰魄寄生虫或火焰寄生虫， 效果持续100秒。
+    (召唤的怪物最多存在4只且每种怪物最多同时存在2只； 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失。 冷却时间10秒)`
 
 [grade]
-	75
+	81
 
 [rarity]
 	4
@@ -28,43 +26,55 @@
 	`[trade]`
 
 [minimum level]
-	70
+	75
+
+[need material]
+	3285	2000
 
 [magical attack]
-	50
+	58
 
 [attack speed]
 	-100
 
 [cast speed]
-	50
-
-[price]
-	120000
+	100
 
 [repair price]
-	100800
+	116640
 
 [value]
-	96000
+	7500000
+
+[creation rate]
+	125
 
 [equipment physical attack]
-	688	631
+	812	688
 
 [equipment magical attack]
-	869	797
+	1026	869
 
 [separate attack]
-	441	299
+	520	336
 
 [skill levelup]
 	`[mage]`	48	2
-	`[mage]`	55	2
-	`[at mage]`	29	2
+	`[mage]`	82	1
+	`[mage]`	55	4
+	`[at mage]`	29	4
+	`[mage]`	81	1
+	`[mage]`	29	1
+	`[mage]`	74	1
+	`[at mage]`	28	1
+	`[at mage]`	49	1
 [/skill levelup]
 
 [light attack]
-	10
+	20
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/01_weapon/mage/staff/staff.img`	105
@@ -142,7 +152,7 @@
 	`STAFF_TOUCH`
 
 [durability]
-	28
+	38
 
 [weight]
 	2400
@@ -154,8 +164,8 @@
 	10000
 
 [if]
-	[event use skill]
-		`mage`	48
+	[casting]
+		1
 	[cooltime]
 		10000
 [/if]
@@ -166,101 +176,33 @@
 			`myself`	-1
 		[probability]
 			20
+		[reduce probability at pvp module]
+			100
 		[then probability]
 			50.0
 		[duration]
-			40000
+			100000
+		[reduce probability at pvp module]
+			100
 		[summon monster]
-			63035	70	1
+			63035	75	2
 	[/then]
 	[then]
 		[target]
 			`myself`	-1
 		[probability]
 			20
+		[reduce probability at pvp module]
+			100
 		[then probability]
 			50.0
 		[duration]
-			40000
+			100000
+		[reduce probability at pvp module]
+			100
 		[summon monster]
-			63036	70	1
+			63036	75	2
 	[/then]
 [/multiple then]
 
-[if]
-	[event use skill]
-		`mage`	55
-	[cooltime]
-		10000
-[/if]
-
-[multiple then]
-	[then]
-		[target]
-			`myself`	-1
-		[probability]
-			20
-		[then probability]
-			50.0
-		[duration]
-			40000
-		[summon monster]
-			63035	70	1
-	[/then]
-	[then]
-		[target]
-			`myself`	-1
-		[probability]
-			20
-		[then probability]
-			50.0
-		[duration]
-			40000
-		[summon monster]
-			63036	70	1
-	[/then]
-[/multiple then]
-
-[if]
-	[event use skill]
-		`at mage`	29
-	[cooltime]
-		10000
-[/if]
-
-[multiple then]
-	[then]
-		[target]
-			`myself`	-1
-		[probability]
-			20
-		[then probability]
-			50.0
-		[duration]
-			40000
-		[summon monster]
-			63035	70	1
-	[/then]
-	[then]
-		[target]
-			`myself`	-1
-		[probability]
-			20
-		[then probability]
-			50.0
-		[duration]
-			40000
-		[summon monster]
-			63036	70	1
-	[/then]
-[/multiple then]
-
-[routing priority]
-	`mage`	1
-	`mage`	2
-	`at mage`	1
-	`at mage`	2
-[/routing priority]
-
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

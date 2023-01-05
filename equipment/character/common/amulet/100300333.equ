@@ -1,0 +1,209 @@
+#PVF_File
+
+[name]
+	`不动如山`
+
+[basic explain]
+	`    每2000点物理防御力增加10点体力。
+    每2000点魔法防御力增加10点精神。
+    HP高于10%%时， 被攻击后向敌人返还1000%%的伤害。
+    每增加1名队友， [圣愈之风]范围增加10%%， [铁壁推进]范围增加10%%。`
+
+[detail explain]
+	`    每2000点物理防御力增加10点体力。 (最多增加100点)
+    每2000点魔法防御力增加10点精神。 (最多增加100点)
+    HP高于10%%时， 被攻击后向敌人返还1000%%的伤害。 (若伤害大于敌人的HP， 则以当前的HP为基准)
+   每增加1名队友， [圣愈之风]范围增加10%%， [铁壁推进]范围增加10%%`
+
+[flavor text]
+	`    妳绝对突破不了我的防守。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	36
+
+[magical defense]
+	90
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	7920	7360
+
+[icon]
+	`Item/new_equipment/08_necklace/necklace.img`	110
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`equipment physical defense`	2000
+		`physical defense`
+		`+`	10	100
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`equipment magical defense`	2000
+		`magical defense`
+		`+`	10	100
+[/then]
+
+[if]
+	[module]
+		`[dungeon]`
+		`[despair tower]`
+		`[tournament dungeon]`
+		`[dead tower]`
+		`[blood system]`
+	[/module]
+	[stat change]
+		`hp`
+		`>`
+		`%`	10
+	[hit]
+		1
+	[cooltime]
+		50
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		100
+	[thorn]
+		1000
+[/then]
+
+[if]
+	[use skill]
+		`priest`	26
+	[party count]
+		`=`	1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[appendage]
+		3471
+[/then]
+
+[if]
+	[use skill]
+		`priest`	26
+	[party count]
+		`=`	2
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[appendage]
+		3481
+[/then]
+
+[if]
+	[use skill]
+		`priest`	26
+	[party count]
+		`=`	3
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[appendage]
+		3491
+[/then]
+
+[if]
+	[use skill]
+		`priest`	26
+	[party count]
+		`=`	4
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[appendage]
+		3501
+[/then]
+
+[possible kiri protect]

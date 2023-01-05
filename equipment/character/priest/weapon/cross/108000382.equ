@@ -1,0 +1,169 @@
+#PVF_File
+
+[name]
+	`腐血之灵`
+
+[basic explain]
+	`    施放技能时， 减少3%%的HP， 使自身增加100点体力和精神。`
+
+[detail explain]
+	`    施放技能时， 减少3%%的HP， 使自身增加100点体力和精神， 效果持续60秒。 (最多叠加一次， 冷却时间60秒， 解除装备效果消失）`
+
+[flavor text]
+	`    在最恶劣的情况下也要坚持自己的信仰`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	62
+
+[physical defense]
+	75
+
+[magical defense]
+	75
+
+[cast speed]
+	20
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	1002	802
+
+[equipment magical attack]
+	952	752
+
+[equipment physical defense]
+	990	790
+
+[equipment magical defense]
+	990	790
+
+[separate attack]
+	607	507
+
+[skill levelup]
+	`[priest]`	45	3
+	`[priest]`	7	2
+	`[priest]`	53	2
+	`[priest]`	20	3
+	`[priest]`	23	5
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/priest/cross/cross.img`	100
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	36	0
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		60000
+	[stat]
+		`physical defense`
+		`+`	100
+	[stat]
+		`magical defense`
+		`+`	100
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`hp`
+		`%`	-3	0
+[/then]
+
+[possible kiri protect]

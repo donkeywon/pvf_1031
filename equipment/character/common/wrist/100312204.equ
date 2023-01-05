@@ -1,0 +1,121 @@
+#PVF_File
+
+[name]
+	`光电之子`
+
+[basic explain]
+	`    装备后， 每7秒会赋予武器光属性； 同时使300px范围内的所有敌人进入感电状态， 并使敌人减少10点光属性抗性。`
+
+[detail explain]
+	`    每7秒会赋予武器光属性， 效果持续7秒； 同时使300px范围内的所有敌人进入感电状态5秒； 若攻击感电状态的敌人， 则每次攻击都会附加350点伤害， 并使敌人减少10点光属性抗性。 (装备后立即生效)`
+
+[flavor text]
+	`    荣耀加身， 站得越高， 跌的时候反而会更惨。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	36
+
+[physical defense]
+	90
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	4752	4416
+
+[light attack]
+	10
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	103
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	20
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		7000	1	500
+	[cooltime]
+		7000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		7000
+	[elemental weapon]
+		`light`
+	[appendage]
+		3411
+[/then]
+
+[if]
+	[my appendage]
+		3411
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		7000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	300
+	[duration]
+		5000
+	[stat]
+		`light resistance`
+		`+`	-10
+	[active status]
+		`lightning`	90	35000
+[/then]
+
+[possible kiri protect]

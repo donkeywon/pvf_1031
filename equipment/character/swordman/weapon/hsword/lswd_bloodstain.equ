@@ -3,8 +3,16 @@
 [name]
 	`鲜血之痕巨剑`
 
-[name2]
-	`Bloodstain Greatsword of Gladiator`
+[basic explain]
+	`   攻击时， 有35%%的几率使敌人进入出血状态。
+   攻击出血状态下的敌人时， 使敌人减少5%%的防御力。`
+
+[detail explain]
+	`   攻击时， 有35%%的几率使敌人进入出血状态10秒； 出血状态下的敌人， 每0.5秒会受到50000点伤害。
+   攻击出血状态下的敌人时， 使敌人减少5%%的防御力， 效果持续5秒（冷却时间0.5秒）。`
+
+[flavor text]
+	`    鲜血止不住地往下流......`
 
 [grade]
 	62
@@ -23,23 +31,38 @@
 [minimum level]
 	55
 
+[need material]
+	3260	6000
+
 [physical attack]
 	42
 
 [attack speed]
-	-90
+	100
 
 [cast speed]
-	-20
+	20
+
+[move speed]
+	100
+
+[HP MAX]
+	-550
+
+[HP regen speed]
+	-440
 
 [price]
-	111600
+	55000000
 
 [repair price]
 	93744
 
 [value]
-	89280
+	5500000
+
+[creation rate]
+	250
 
 [equipment physical attack]
 	686	629
@@ -50,11 +73,23 @@
 [separate attack]
 	360	243
 
+[physical critical hit]
+	7
+
+[skill levelup]
+	`[swordman]`	76	3
+	`[swordman]`	40	2
+	`[swordman]`	23	2
+[/skill levelup]
+
 [icon]
 	`Item/weapon/swordman/lswd.img`	56
 
 [field image]
-	`Item/FieldImage.img`	13
+	`Item/FieldImage1.img`	13
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [equipment type]
 	`[weapon]`	24
@@ -117,13 +152,42 @@
 [cool time]
 	10000
 
-[routing priority]
-	`swordman`	1
-	`swordman`	2
-	`demonic swordman`	0
-[/routing priority]
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[probability]
+		35
+	[active status]
+		`bleeding`	150	50150
+[/then]
+
+[if]
+	[target active status]
+		`bleeding`
+	[attack success]
+		1
+	[cooltime]
+		500
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[stat]
+		`equipment physical defense`
+		`%`	-5
+	[stat]
+		`equipment magical defense`
+		`%`	-5
+[/then]
 
 [possible kiri protect]
-
-[icon mark]
-	`Item/IconMark.img`	68

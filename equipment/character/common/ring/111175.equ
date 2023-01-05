@@ -1,0 +1,98 @@
+#PVF_File
+
+[name]
+	`噩梦惊魂指环`
+
+[basic explain]
+	`    攻击时， 有5%%的几率召唤出狄瑞吉幻影。
+    被狄瑞吉幻影击中的敌人， 进入中毒状态5秒。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率召唤出狄瑞吉幻影。（冷却时间5秒）
+    被狄瑞吉幻影击中的敌人， 进入中毒状态5秒， 每0.5秒受到1200点的伤害。（若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果）`
+
+[flavor text]
+	`  我每天都在做噩梦。事实上我的灵魂已经深陷在诅咒中， 根本无力去阻止噩梦的进行。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	54
+
+[magical attack]
+	54
+
+[hit recovery]
+	90
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[equipment magical defense]
+	3168	2944
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	151
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	200
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[active status control info]
+	`poison`	0	0	0	20
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[passive object]
+		60109	-25	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]

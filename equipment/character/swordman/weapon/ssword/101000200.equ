@@ -1,0 +1,289 @@
+#PVF_File
+
+[name]
+	`阴剑 - 莫邪`
+
+[basic explain]
+	`    装备时， 发动阴气的气息， 效果持续60秒。
+阴气的气息： 
+    - 使包括自身在内的队员的武器附加暗属性和冰属性
+    - 使自身增加10%%的魔法暴击率和30点冰属性强化
+    - 每1点冰属性强化， 使自身增加1点暗属性强化
+    - 暴击伤害 +15%%
+    - 攻击时， 附加20%%的冰属性伤害`
+
+[detail explain]
+	`    装备时， 发动阴气的气息， 效果持续60秒。 (消耗2个无色小晶块； 冷却时间60秒)
+阴气的气息： 
+    - 使包括自身在内的队员的武器附加暗属性和冰属性
+    - 使自身增加10%%的魔法暴击率和30点冰属性强化
+    - 每1点冰属性强化， 使自身增加1点暗属性强化(最多增加70点）
+    - 暴击伤害 +15%%（增加暴击伤害类属性仅适用于最高数值， 且无法叠加）
+    - 攻击时， 附加20%%的冰属性伤害（解除装备后消失）`
+
+[flavor text]
+	`    此剑有雌雄即阴阳双剑， 皆以锻造者的名字命名。 阳剑干将赠与了王， 阴剑莫邪留给了锻造者的儿子。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[magical attack]
+	65
+
+[cast speed]
+	20
+
+[need material]
+	3285	3000
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	912	783
+
+[equipment magical attack]
+	1104	948
+
+[separate attack]
+	589	382
+
+[magical critical hit]
+	2
+
+[water attack]
+	35
+
+[water resistance]
+	15
+
+[icon]
+	`Item/new_equipment/01_weapon/swordman/sswd/sswd.img`	108
+
+[field image]
+	`Item/FieldImage1.img`	9
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	31	0
+
+[layer variation]
+	2790
+	`sswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`sswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	31	0
+
+[layer variation]
+	2790
+	`sswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`sswdb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`MINERALSWD_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3100
+
+[item group name]
+	`ssword`
+
+[elemental property]
+	`[water element]`
+[/elemental property]
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[consume item]
+		3037	2
+	[target]
+		`myself`	-1
+	[equipment duration]
+		60000
+	[appendage]
+		234
+[/then]
+
+[if]
+	[my appendage]
+		234
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		60000
+	[appendage]
+		235
+[/then]
+
+[if]
+	[my appendage]
+		235
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[equipment duration]
+		60000
+	[elemental weapon]
+		`dark`
+	[elemental weapon]
+		`water`
+[/then]
+
+[if]
+	[my appendage]
+		235
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		60000
+	[stat by condition]
+		`water attack`
+		`+`	30
+	[stat by condition]
+		`magical critical hit`
+		`+`	10
+[/then]
+
+[if]
+	[my appendage]
+		235
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		60000
+	[stat change by stat]
+		`myself`	-1
+		`water attack`	1
+		`dark attack`
+		`+`	1	70
+[/then]
+
+[if]
+	[my appendage]
+		235
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	15
+[/then]
+
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	20
+[/skill data up]
+
+[possible kiri protect]

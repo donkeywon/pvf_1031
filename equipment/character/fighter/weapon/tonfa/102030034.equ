@@ -3,13 +3,10 @@
 [name]
 	`异魔封神棍`
 
-[name2]
-	``
-
 [basic explain]
-	`当MP高于75%%并攻击时， 可对敌人附加20%%的伤害。
-当MP在50%%~75%%之间并攻击时， 可对敌人附加10%%的伤害。
-当MP在25%%~50%%之间并攻击时， 可对敌人附加5%%的伤害。`
+	`    MP高于75%%时， 攻击时可对敌人附加30%%的伤害。
+    MP在50%%~75%%之间时， 攻击时可对敌人附加15%%的伤害。
+    MP在25%%~50%%之间时， 攻击时可对敌人附加5%%的伤害。`
 
 [grade]
 	85
@@ -28,11 +25,14 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [physical attack]
-	56
+	62
 
 [magical attack]
-	84
+	92
 
 [attack speed]
 	50
@@ -47,28 +47,31 @@
 	78
 
 [price]
-	136000
+	80000000
 
 [repair price]
-	114240
+	123840
 
 [value]
-	108800
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical attack]
-	783	726
+	862	735
 
 [equipment magical attack]
-	824	764
+	907	774
 
 [equipment physical defense]
-	850	850
+	860	860
 
 [separate attack]
-	504	343
+	555	359
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/01_weapon/fighter/tonfa/tonfa.img`	87
@@ -140,7 +143,7 @@
 	`TONFA_TOUCH`
 
 [durability]
-	39
+	48
 
 [weight]
 	2300
@@ -150,17 +153,6 @@
 
 [cool time]
 	10000
-
-[routing priority]
-	`fighter`	1
-	`at fighter`	1
-	`fighter`	2
-	`at fighter`	2
-	`fighter`	3
-	`at fighter`	3
-	`fighter`	4
-	`at fighter`	4
-[/routing priority]
 
 [if]
 	[stat change]
@@ -176,7 +168,7 @@
 		`enemy`	-1
 	[add absolute damage]
 		`all`
-		`%`	20
+		`%`	30
 [/then]
 
 [if]
@@ -197,7 +189,7 @@
 		`enemy`	-1
 	[add absolute damage]
 		`all`
-		`%`	10
+		`%`	15
 [/then]
 
 [if]
@@ -221,5 +213,4 @@
 		`%`	5
 [/then]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

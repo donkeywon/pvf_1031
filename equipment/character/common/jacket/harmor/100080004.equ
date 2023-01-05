@@ -3,9 +3,6 @@
 [name]
 	`邪神之怒胸甲`
 
-[name2]
-	``
-
 [grade]
 	75
 
@@ -96,13 +93,16 @@
 			`%`	75
 		[attack success]
 			1
+		[cooltime]
+			1000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	20
+			`myself`	-1
+		[equipment duration]
+			1000
+		[appendage]
+			920
 	[/then]
 	[HP MAX]
 		800

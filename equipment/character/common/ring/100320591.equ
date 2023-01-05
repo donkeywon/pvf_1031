@@ -1,0 +1,113 @@
+#PVF_File
+
+[name]
+	`冰雪公主的霜语戒指`
+
+[basic explain]
+	`    攻击时， 有2%%的几率使被命中敌人250px范围内的所有敌人进入冰冻状态， 效果持续2秒。`
+
+[detail explain]
+	`    攻击时， 有2%%的几率使被命中敌人250px范围内的所有敌人进入冰冻状态2秒， 效果持续2秒。 (若敌人高于Lv91， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间5秒)`
+
+[flavor text]
+	`    为什么不愿和我一起走， 原来……王国的利益才是最重要的吗？  --摘自已故公主的日记`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11126
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	56
+
+[magical attack]
+	56
+
+[price]
+	85000000
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment magical defense]
+	3264	2976
+
+[water attack]
+	25
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	144
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	21
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	250
+	[probability]
+		2
+	[duration]
+		2000
+	[active status]
+		`freeze`	91
+[/then]
+
+[pvp]
+	[attack speed]
+		57
+	[cast speed]
+		108
+	[hit recovery]
+		112
+[/pvp]
+
+[possible kiri protect]

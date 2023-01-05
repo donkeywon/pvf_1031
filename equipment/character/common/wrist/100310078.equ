@@ -1,0 +1,103 @@
+#PVF_File
+
+[name]
+	`王权之卫 - 守护`
+
+[basic explain]
+	`   被攻击时所受伤害 -15%%
+   被攻击时， 向敌人返还1000%%的伤害。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	55
+
+[physical defense]
+	187
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	4608	4368
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	111
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[wrist]`	20
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	15
+[/then]
+
+[if]
+	[cooltime]
+		50
+	[hit]
+		1
+	[stat change]
+		`hp`
+		`>`
+		`%`	1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		100
+	[thorn]
+		1000
+[/then]
+
+[possible kiri protect]

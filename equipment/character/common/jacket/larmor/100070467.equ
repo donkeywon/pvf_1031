@@ -1,0 +1,145 @@
+#PVF_File
+
+[name]
+	`海神谜咒之轻灵战衣`
+
+[basic explain]
+	`攻击时， 有5%%的几率使自身增加80点力量和智力， 效果持续15秒。`
+
+[detail explain]
+	`攻击时， 有5%%的几率使自身增加80点力量和智力， 效果持续15秒。(冷却时间15秒)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	45
+
+[magical attack]
+	30
+
+[price]
+	85000000
+
+[repair price]
+	86400
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[part set index]
+	12400
+
+[need material]
+	10000204	100
+
+[equipment physical defense]
+	3528	3276
+
+[water attack]
+	6
+
+[fire resistance]
+	-6
+
+[icon]
+	`item/new_equipment/04_larmor/coat/larmor_coat.img`	39
+
+[field image]
+	`Item/field_equip.img`	5
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[coat]`	20
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3100
+
+[item group name]
+	`la coat`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		15000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[duration]
+		15000
+	[stat]
+		`physical attack`
+		`+`	80
+	[stat]
+		`magical attack`
+		`+`	80
+[/then]
+
+[if]
+	[time]
+		10000	1	0
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[probability]
+		100
+	[duration]
+		10000
+	[active status]
+		`curse`	90	50	50	50	50
+[/then]
+
+[if]
+	[time]
+		60000	1	0
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		60000
+	[elemental weapon]
+		`water`
+[/then]
+
+[possible kiri protect]

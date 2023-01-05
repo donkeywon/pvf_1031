@@ -1,0 +1,96 @@
+#PVF_File
+
+[name]
+	`魔力逆流项链`
+
+[basic explain]
+	`对敌人的伤害 +10%%`
+
+[detail explain]
+	`对敌人的伤害 +10%% (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)`
+
+[flavor text]
+	`    虽然很强大， 但如果控制不当， 全身的魔力就会暴走， 或许会招来死亡也说不定。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	36
+
+[magical defense]
+	90
+
+[cast speed]
+	100
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	7920	7360
+
+[skill levelup]
+	`[mage]`	2	2
+	`[at mage]`	28	2
+[/skill levelup]
+
+[icon]
+	`Item/new_equipment/08_necklace/necklace.img`	121
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	10
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,124 @@
+#PVF_File
+
+[name]
+	`幽灵诡影护肩`
+
+[basic explain]
+	`  保持站立或行走状态0.5秒时， 使自身进入伪装状态10秒。
+  被攻击时， 使自身进入无敌状态2秒。`
+
+[detail explain]
+	`  保持站立或行走状态0.5秒时， 使自身进入伪装状态10秒。 (冷却时间20秒)
+  被攻击时， 使自身进入无敌状态2秒。 (冷却时间15秒)`
+
+[flavor text]
+	`你说什么？ 哪里有幽灵！ 不要故意吓人家啊！ 讨厌！  --小灯笼`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	36
+
+[magical defense]
+	36
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[repair price]
+	50400
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	792	736
+
+[all activestatus resistance]
+	20
+
+[icon]
+	`item/new_equipment/02_cloth/neck/cloth_neck.img`	19
+
+[field image]
+	`Item/field_equip.img`	2
+
+[equipment type]
+	`[shoulder]`	16
+
+[sub type]
+	0
+
+[durability]
+	21
+
+[weight]
+	800
+
+[item group name]
+	`cl shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[keep my state]
+		`stand`	500
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[buff]
+		`camoflage`
+[/then]
+
+[if]
+	[cooltime]
+		15000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		2000
+	[probability]
+		100
+	[buff]
+		`unbreakable`
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]

@@ -1,13 +1,13 @@
 #PVF_File
 
 [name]
-	`85_首饰-辅助装备_史诗`
+	`普俐坦的遗物`
 
-[name2]
-	``
+[basic explain]
+	`    装备时， 每100点力量可以使自身增加1点独立攻击力。 `
 
 [grade]
-	85
+	80
 
 [rarity]
 	4
@@ -23,34 +23,57 @@
 	80
 
 [physical attack]
-	33
+	55
 
 [physical defense]
-	33
+	55
 
 [magical attack]
-	33
+	55
 
 [magical defense]
-	33
+	55
+
+[attack speed]
+	100
+
+[move speed]
+	100
 
 [price]
-	102000
-
-[repair price]
-	81600
+	80000000
 
 [value]
-	81600
+	8000000
+
+[need material]
+	3285	2500
 
 [creation rate]
-	0
+	70
+
+[equipment physical attack]
+	125	125
+
+[equipment magical attack]
+	125	125
+
+[skill levelup]
+	`[swordman]`	40	5
+	`[swordman]`	76	5
+	`[swordman]`	19	5
+	`[swordman]`	31	5
+	`[swordman]`	34	5
+[/skill levelup]
 
 [icon]
-	`Item/common/support.img`	59
+	`item/new_equipment/10_support/support.img`	130
 
 [field image]
-	`Item/field_equip.img`	22
+	`Item/field_equip1.img`	22
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [equipment type]
 	`[support]`	21
@@ -67,8 +90,22 @@
 [cool time]
 	10000
 
-[routing priority]
-[/routing priority]
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`physical attack`	100
+		`separate attack`
+		`+`	1	10000000
+[/then]
+
+[possible kiri protect]

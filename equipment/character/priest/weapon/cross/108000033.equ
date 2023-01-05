@@ -3,20 +3,8 @@
 [name]
 	`苍木之冥`
 
-[name2]
-	``
-
 [basic explain]
-	`[圣愈之风]屏障持续时间 +4秒
-
-每10秒可以对100px范围内的敌人随机发动束缚Buff， 效果持续2秒。
-以额外杀伤使敌人致死时， 可使自身恢复800点HP。`
-
-[detail explain]
-	`[圣愈之风]屏障持续时间 +4秒
-
-每10秒可以对100px范围内的敌人随机发动束缚Buff， 效果持续2秒。 (若敌人高于Lv85， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 在决斗场中， 每60秒发动一次)
-以额外杀伤使敌人致死时， 可使自身恢复800点HP。`
+	``
 
 [grade]
 	85
@@ -34,47 +22,58 @@
 [minimum level]
 	80
 
-[physical defense]
-	70
+[need material]
+	3285	2500
 
 [magical attack]
-	56
+	62
+
+[physical defense]
+	73
 
 [magical defense]
-	70
+	73
 
 [cast speed]
 	20
 
-[HP regen speed]
-	90
-
 [price]
-	136000
+	80000000
 
 [repair price]
-	114240
+	123840
 
 [value]
-	108800
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical attack]
-	824	764
+	907	774
 
 [equipment magical attack]
-	783	726
+	862	735
 
 [equipment physical defense]
-	850	850
+	860	860
 
 [equipment magical defense]
-	850	850
+	860	860
 
 [separate attack]
-	504	343
+	555	359
+
+[skill levelup]
+	`[priest]`	20	3
+	`[priest]`	22	3
+	`[priest]`	45	4
+	`[priest]`	21	4
+	`[priest]`	26	4
+[/skill levelup]
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/01_weapon/priest/cross/cross.img`	84
@@ -112,7 +111,7 @@
 	`CROSS_TOUCH`
 
 [durability]
-	35
+	45
 
 [weight]
 	3100
@@ -123,45 +122,4 @@
 [cool time]
 	10000
 
-[routing priority]
-	`priest`	1
-[/routing priority]
-
-[elemental property]
-	`[water element]`
-
-[if]
-	[time]
-		10000	1	10000
-[/if]
-
-[then]
-	[target]
-		`enemy`	100
-	[duration]
-		2000
-	[active status]
-		`hold`	85
-[/then]
-
-[if]
-	[attack success]
-		1
-	[overkill]
-		1
-[/if]
-
-[then]
-	[target]
-		`myself`	-1
-	[restore]
-		`hp`
-		`+`	800	0
-[/then]
-
-[skill data up]
-	`[priest]`	26	`[all]`	`[level]`	4	`+`	4000
-[/skill data up]
-
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

@@ -1,0 +1,437 @@
+#PVF_File
+
+[name]
+	`小霸王 - 其乐无穷`
+
+[basic explain]
+	`攻击速度 +5%%
+    攻击时， 附加10%%的光属性伤害。
+    施放特定技能时， 会发动强力的闪电爆炸。
+    攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`攻击速度 +5%%
+    攻击时， 附加10%%的光属性伤害。
+    特定技能攻击时， 会发动强力的闪电爆炸。
+ - [寸拳]、 [闪电之舞]、 [破碎拳]、 [铁山靠]、 [碎骨]
+ - [闪电之舞]、 [瞬影连环踢]、 [飞燕旋风]、 [铁山靠]、 [碎骨]
+    攻击时， 有2%%的几率使敌人进入眩晕状态。 (若敌人高于Lv91， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`    个中滋味， 只有自己最能体会。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	215
+
+[attack speed]
+	150
+
+[price]
+	85000000
+
+[repair price]
+	145600
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	1008	865
+
+[equipment magical attack]
+	912	783
+
+[separate attack]
+	589	382
+
+[physical critical hit]
+	10
+
+[light attack]
+	30
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/bglove/bglove.img`	94
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	30	0
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	29	0
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[reduce duration to human armor at pvp module]
+		50
+	[duration]
+		2000
+	[reduce probability at pvp module]
+		85
+	[probability]
+		2
+	[active status]
+		`stun`	91
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[skill]
+		`fighter`	19
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		48722	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[skill]
+		`fighter`	68
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		48722	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[skill]
+		`fighter`	102
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		48722	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[skill]
+		`fighter`	1
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		48722	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[skill]
+		`fighter`	4
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		48722	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[skill]
+		`fighter`	102
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		48722	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[skill]
+		`at fighter`	68
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		48722	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[skill]
+		`at fighter`	82
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		48722	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[skill]
+		`at fighter`	124
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		48722	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[skill]
+		`at fighter`	1
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		48722	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[skill]
+		`at fighter`	4
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		48722	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`light`
+		`%`	10
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		504	433
+	[equipment magical attack]
+		456	392
+[/pvp]
+
+[possible kiri protect]

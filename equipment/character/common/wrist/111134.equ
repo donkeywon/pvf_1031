@@ -1,0 +1,103 @@
+#PVF_File
+
+[name]
+	`武之禅 - 灼炎`
+
+[basic explain]
+	`  攻击时， 有10%%的几率赋予武器火属性， 并使自身增加32点火属性强化， 效果持续30秒。`
+
+[flavor text]
+	`  一忧一喜皆心火， 一荣一枯皆眼尘。`
+
+[grade]
+	80
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[physical attack]
+	37
+
+[physical defense]
+	95
+
+[price]
+	80000000
+
+[need material]
+	10000204	100
+
+[repair price]
+	55680
+
+[value]
+	8000000
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	3500	800
+
+[fire resistance]
+	18
+
+[fire attack]
+	10
+
+[burn resistance]
+	25
+
+[icon]
+	`Item/new_equipment/09_bracelet/bracelet.img`	144
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	20
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		10
+	[elemental weapon]
+		`fire`
+	[stat]
+		`fire attack`
+		`+`	32
+[/then]
+
+[possible kiri protect]

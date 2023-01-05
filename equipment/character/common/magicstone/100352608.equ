@@ -1,0 +1,123 @@
+#PVF_File
+
+[name]
+	`被诅咒的冰魄魂石`
+
+[basic explain]
+	`    攻击时， 有3%%的几率使敌人进入失明或冰冻状态， 并且使敌人减少15点冰属性抗性和暗属性抗性。`
+
+[detail explain]
+	`    攻击时， 有3%%的几率使敌人进入失明或冰冻状态3秒， 并且使敌人减少15点冰属性抗性和暗属性抗性。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`    和食物放在一起， 应该能保鲜吧？`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	53
+
+[magical attack]
+	53
+
+[physical defense]
+	53
+
+[magical defense]
+	53
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[dark attack]
+	20
+
+[water attack]
+	20
+
+[icon]
+	`Item/new_equipment/11_magicstone/magicstone.img`	136
+
+[field image]
+	`Item/field_equip.img`	23
+
+[equipment type]
+	`[magic stone]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`magic stone`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			3
+		[duration]
+			3000
+		[appendage]
+			3631
+		[active status]
+			`blind`	90	90	20
+		[then probability]
+			50.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			3
+		[duration]
+			3000
+		[appendage]
+			3631
+		[active status]
+			`freeze`	90
+		[then probability]
+			50.0
+	[/then]
+[/multiple then]
+
+[possible kiri protect]

@@ -1,0 +1,177 @@
+#PVF_File
+
+[name]
+	`寂灭之乱 - 神击`
+
+[basic explain]
+	`    攻击时， 有3%%的几率使自身进入伪装状态5秒。
+    该装备的伪装效果发动后， 攻击时有10%%的几率使敌人减少30%%的HP。`
+
+[detail explain]
+	`    攻击时， 有3%%的几率使自身进入伪装状态5秒。 (冷却时间10秒； 解除装备后效果消失)
+    该装备的伪装效果发动后， 攻击时有10%%的几率使敌人减少30%%的HP。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 对精英怪物的效果为1/3， 对领主和深渊怪物的效果为1/6)`
+
+[flavor text]
+	`    应该要有所觉悟了！  --丽贝卡`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	937	737
+
+[equipment magical attack]
+	789	589
+
+[separate attack]
+	607	507
+
+[physical critical hit]
+	2
+
+[dark attack]
+	22
+
+[dark resistance]
+	15
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/revolver/revolver.img`	102
+
+[field image]
+	`Item/field_weapon.img`	1
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2790
+	`revc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`revb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	34	0
+
+[layer variation]
+	2790
+	`at_revc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_revb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2000
+
+[item group name]
+	`revolver`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		3
+	[equipment duration]
+		5000
+	[appendage]
+		676
+[/then]
+
+[if]
+	[my appendage]
+		676
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		10
+	[weakness]
+		30
+[/then]
+
+[possible kiri protect]

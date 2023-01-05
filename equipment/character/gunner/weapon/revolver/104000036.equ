@@ -3,22 +3,17 @@
 [name]
 	`寐语者 - 残云`
 
-[name2]
-	``
-
 [basic explain]
-	`神枪手 (男)
-[乱射]发射数上限 +80%%
+	`[乱射]发射数上限 +80%%
 [乱射]攻击力 -25%%
-
-[乱射]攻击时， 可对武器进行加热， 并使被击的敌人附加10%%的火属性伤害， 效果持续10秒。
-
-神枪手 (女)
-[多重爆头]发射数上限 +80%%
+[乱射]发射速度 +30%%
+[枪舞]发射数上限 +80%%
+[枪舞]攻击力 -25%%
+[枪舞]发射速度 +30%%
+[多重爆头]发射数上限 + 80%%
 [多重爆头]攻击力 -25%%
-穿刺力 +15%%
-
-[多重爆头]攻击时， 可对武器进行加热， 并使被击的敌人附加10%%的火属性伤害， 效果持续10秒。`
+    施放[乱射]、 [枪舞]、 [多重爆头]时， 可对武器进行加热， 并使被击的敌人附加10%%的火属性伤害， 效果持续15秒。
+穿刺力 +15%%`
 
 [grade]
 	85
@@ -37,32 +32,43 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [physical attack]
-	56
+	62
 
 [price]
-	136000
+	80000000
 
 [repair price]
-	114240
+	123840
 
 [value]
-	108800
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical attack]
-	771	697
+	901	705
 
 [equipment magical attack]
-	648	586
+	758	593
 
 [separate attack]
-	504	343
+	555	359
 
 [physical critical hit]
 	2
+
+[skill levelup]
+	`[gunner]`	60	2
+	`[at gunner]`	60	2
+[/skill levelup]
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/01_weapon/gunner/revolver/revolver.img`	84
@@ -120,7 +126,7 @@
 	`GUN_TOUCH`
 
 [durability]
-	35
+	45
 
 [weight]
 	2000
@@ -131,23 +137,54 @@
 [cool time]
 	10000
 
-[routing priority]
-	`gunner`	1
-	`at gunner`	1
-[/routing priority]
-
 [int data]
 	-1	-1	-1	-1	-1	-1	-1	-1	40	-1
 [/int data]
 
+[elemental property]
+	`[fire element]`
+
 [skill data up]
 	`[gunner]`	9	`[all]`	`[level]`	2	`%`	80
 	`[gunner]`	9	`[all]`	`[level]`	0	`%`	-25
-	`[at gunner]`	72	`[all]`	`[level]`	2	`%`	80
+	`[gunner]`	9	`[all]`	`[static]`	0	`%`	-30
+	`[gunner]`	9	`[all]`	`[static]`	1	`%`	-30
+	`[gunner]`	9	`[all]`	`[static]`	2	`%`	30
+	`[gunner]`	72	`[all]`	`[static]`	4	`%`	80
+	`[gunner]`	72	`[all]`	`[static]`	5	`%`	80
+	`[gunner]`	72	`[all]`	`[static]`	6	`%`	80
+	`[gunner]`	72	`[all]`	`[static]`	7	`%`	80
+	`[gunner]`	72	`[all]`	`[static]`	8	`%`	80
+	`[gunner]`	72	`[all]`	`[level]`	0	`%`	-25
+	`[at gunner]`	9	`[all]`	`[level]`	2	`%`	80
+	`[at gunner]`	9	`[all]`	`[level]`	0	`%`	-25
+	`[at gunner]`	9	`[all]`	`[level]`	3	`%`	-25
+	`[at gunner]`	9	`[all]`	`[level]`	7	`%`	-25
+	`[at gunner]`	9	`[all]`	`[static]`	0	`%`	-30
+	`[at gunner]`	9	`[all]`	`[static]`	1	`%`	-30
+	`[at gunner]`	9	`[all]`	`[static]`	2	`%`	30
+	`[at gunner]`	72	`[all]`	`[static]`	4	`%`	80
+	`[at gunner]`	72	`[all]`	`[static]`	5	`%`	80
+	`[at gunner]`	72	`[all]`	`[static]`	6	`%`	80
+	`[at gunner]`	72	`[all]`	`[static]`	7	`%`	80
+	`[at gunner]`	72	`[all]`	`[static]`	8	`%`	80
 	`[at gunner]`	72	`[all]`	`[level]`	0	`%`	-25
-	`[at gunner]`	72	`[all]`	`[level]`	3	`%`	-25
-	`[at gunner]`	72	`[all]`	`[level]`	7	`%`	-25
 [/skill data up]
+
+[if]
+	[use skill]
+		`gunner`	72
+	[/use skill]
+[/if]
+
+[then]
+	[equipment duration]
+		15000
+	[target]
+		`myself`	-1
+	[appendage]
+		200
+[/then]
 
 [if]
 	[use skill]
@@ -156,8 +193,23 @@
 [/if]
 
 [then]
-	[duration]
-		10000
+	[equipment duration]
+		15000
+	[target]
+		`myself`	-1
+	[appendage]
+		200
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	9
+	[/use skill]
+[/if]
+
+[then]
+	[equipment duration]
+		15000
 	[target]
 		`myself`	-1
 	[appendage]
@@ -171,8 +223,8 @@
 [/if]
 
 [then]
-	[duration]
-		10000
+	[equipment duration]
+		15000
 	[target]
 		`myself`	-1
 	[appendage]
@@ -194,5 +246,4 @@
 		`%`	10
 [/then]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

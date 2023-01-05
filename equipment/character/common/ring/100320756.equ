@@ -1,0 +1,96 @@
+#PVF_File
+
+[name]
+	`武之禅 - 静心`
+
+[basic explain]
+	`    装备后， 每30秒会增加15%%的智力和3%%的魔法暴击率， 效果持续25秒。`
+
+[detail explain]
+	`    装备后， 每30秒会增加15%%的智力和3%%的魔法暴击率， 效果持续25秒。 (装备10秒后生效)`
+
+[flavor text]
+	`    命由己造， 相由心生。 世间万物皆是化相， 心不动， 万物皆不动， 心不变， 万物皆不变。`
+
+[grade]
+	80
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[physical attack]
+	51
+
+[magical attack]
+	51
+
+[price]
+	80000000
+
+[need material]
+	10000204	100
+
+[value]
+	8000000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	3008	2784
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	197
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	21
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		30000	1	10000
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		25000
+	[stat]
+		`magical attack`
+		`%`	15
+	[stat]
+		`magical critical hit`
+		`+`	3
+[/then]
+
+[possible kiri protect]

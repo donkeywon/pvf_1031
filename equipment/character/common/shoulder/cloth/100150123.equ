@@ -1,0 +1,107 @@
+#PVF_File
+
+[name]
+	`锦绣丹华护肩`
+
+[basic explain]
+	`    施放技能时， 使自身进入霸体状态1秒。 (冷却时间3秒)`
+
+[detail explain]
+	`    施放技能时， 使自身进入霸体状态1秒。 (冷却时间3秒； 解除装备后效果消失)`
+
+[flavor text]
+	`    这衣服很漂亮吗？ 我怎么不觉得。  --丽贝卡`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[part set index]
+	11197
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[magical attack]
+	33
+
+[magical defense]
+	33
+
+[cast speed]
+	200
+
+[HP MAX]
+	300
+
+[repair price]
+	51840
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	2736	2664
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/02_cloth/neck/cloth_neck.img`	16
+
+[field image]
+	`Item/field_equip.img`	2
+
+[equipment type]
+	`[shoulder]`	17
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	21
+
+[weight]
+	800
+
+[item group name]
+	`cl shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[casting]
+		1
+	[cooltime]
+		3000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[buff]
+		`superarmor`
+[/then]
+
+[possible kiri protect]

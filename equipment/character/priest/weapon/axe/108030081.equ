@@ -1,0 +1,141 @@
+#PVF_File
+
+[name]
+	`混元之斧`
+
+[basic explain]
+	`    攻击时， 增加6%%的物理和魔法攻击力， 效果持续60秒。 (最多重叠10次； 冷却时间6秒)
+    被攻击时， 降低自身4%%的物理和魔法防御力， 效果持续60秒。 (最多重叠10次； 冷却时间6秒)`
+
+[flavor text]
+	`    不要总觉得修炼很苦， 当你习惯了， 就会觉得那和呼吸一样都是再自然不过的事了。  --某位圣职者`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	58
+
+[attack speed]
+	-60
+
+[stuck]
+	-2
+
+[repair price]
+	129600
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	1026	869
+
+[equipment magical attack]
+	726	615
+
+[separate attack]
+	520	336
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/priest/axe/axe.img`	98
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	32	0
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		6000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		60000
+	[appendage]
+		262
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		6000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		60000
+	[appendage]
+		263
+[/then]
+
+[possible kiri protect]

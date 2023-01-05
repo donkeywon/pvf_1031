@@ -1,0 +1,268 @@
+#PVF_File
+
+[name]
+	`辟邪封灵剑`
+
+[basic explain]
+	`    攻击恶魔、 不死族怪物时， 附加15%%的暗属性伤害。
+    攻击恶魔、 不死族怪物时， 使自身增加5%%的攻击速度、 移动速度和施放速度， 效果持续20秒。 
+    消灭恶魔、 不死族敌人时， 使自身进入霸体状态， 效果持续10秒。 `
+
+[detail explain]
+	`    攻击恶魔、 不死族怪物时， 附加15%%的暗属性伤害。
+    攻击恶魔、 不死族怪物时， 使自身增加5%%的攻击速度、 移动速度和施放速度， 效果持续20秒。 (冷却时间20秒)
+    消灭恶魔、 不死族敌人时， 使自身进入霸体状态， 效果持续10秒。 (冷却时间20秒)`
+
+[flavor text]
+	`    别浪费时间！  --阿甘左`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[attack speed]
+	-90
+
+[cast speed]
+	-20
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	129600
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment physical attack]
+	1202	1002
+
+[equipment magical attack]
+	901	701
+
+[separate attack]
+	607	507
+
+[dark attack]
+	18
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/lswd/lswd.img`	123
+
+[field image]
+	`Item/FieldImage.img`	13
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	39	0
+
+[layer variation]
+	2790
+	`lswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`lswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	39	0
+
+[layer variation]
+	2790
+	`lswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`lswdb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SQUARESWD_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	4000
+
+[item group name]
+	`lswd`
+
+[cool time]
+	10000
+
+[if]
+	[target type]
+		`devil`
+	[attack success]
+		1
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		915
+[/then]
+
+[if]
+	[target type]
+		`undead`
+	[attack success]
+		1
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		915
+[/then]
+
+[if]
+	[target type]
+		`devil`
+	[attack success]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+	[stat]
+		`cast speed`
+		`+`	50
+[/then]
+
+[if]
+	[target type]
+		`undead`
+	[attack success]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+	[stat]
+		`cast speed`
+		`+`	50
+[/then]
+
+[if]
+	[target type]
+		`devil`
+	[cooltime]
+		20000
+	[attack success]
+		1
+	[target death]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[buff]
+		`superarmor`
+[/then]
+
+[if]
+	[target type]
+		`undead`
+	[cooltime]
+		20000
+	[attack success]
+		1
+	[target death]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[buff]
+		`superarmor`
+[/then]
+
+[possible kiri protect]

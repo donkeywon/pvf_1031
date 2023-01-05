@@ -1,0 +1,97 @@
+#PVF_File
+
+[name]
+	`魔灵瞳 - 仇魂之刃`
+
+[basic explain]
+	`物理伤害 +10%%`
+
+[detail explain]
+	`物理伤害 +10%% (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)`
+
+[flavor text]
+	`    这上面的装饰比普通匕首还要锋利！ 真的是手镯吗？ `
+
+[grade]
+	72
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	70
+
+[physical attack]
+	31
+
+[physical defense]
+	77
+
+[price]
+	70000000
+
+[need material]
+	10000204	100
+
+[value]
+	7000000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	4032	3696
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`common`	178	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	142
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	21
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[attack type]
+		`physical`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	10
+[/then]
+
+[possible kiri protect]

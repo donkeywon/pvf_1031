@@ -1,0 +1,256 @@
+#PVF_File
+
+[name]
+	`耀武者锋芒指环`
+
+[basic explain]
+	`    被攻击时， 进入伪装状态5秒。
+    根据自身HP值增加移动速度、 攻击速度和施放速度， 并增加暴击率。
+    自身每10%%的攻击速度， 增加3点物理攻击力和2点独立攻击力。
+    自身每15%%的施放速度， 增加3点魔法攻击力和2点独立攻击力。`
+
+[detail explain]
+	`    被攻击时， 进入伪装状态5秒。 (冷却时间30秒)
+    HP为100%%时， 使自身增加3%%的攻击速度、 移动速度和施放速度， 以及2%%的物理暴击率和魔法暴击率。
+    HP为70%%以上时， 使自身增加4%%的攻击速度、 移动速度和施放速度， 以及5%%的物理暴击率和魔法暴击率。
+    HP为40%%以上、 70%%以下时， 使自身增加5%%的攻击速度、 移动速度和施放速度， 以及7%%的物理暴击率和魔法暴击率。
+    HP为40%%以下时， 使自身增加7%%的攻击速度、 移动速度和施放速度， 以及10%%的物理暴击率和魔法暴击率。
+    自身每10%%的攻击速度， 增加3点物理攻击力和2点独立攻击力。
+    自身每15%%的施放速度， 增加3点魔法攻击力和2点独立攻击力。 (最多叠加10次)`
+
+[flavor text]
+	`    据说那个人的攻击比风还快， 所以至今没人能看到他……  --船长鲁特`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	54
+
+[magical attack]
+	54
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	3168	2944
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	149
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`=`
+		`%`	100
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`attack speed`
+		`+`	30
+	[stat by condition]
+		`cast speed`
+		`+`	30
+	[stat by condition]
+		`move speed`
+		`+`	30
+	[stat by condition]
+		`physical critical hit`
+		`+`	2
+	[stat by condition]
+		`magical critical hit`
+		`+`	2
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`<`
+		`%`	100
+		`end`
+	[stat change]
+		`hp`
+		`>=`
+		`%`	70
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`attack speed`
+		`+`	40
+	[stat by condition]
+		`cast speed`
+		`+`	40
+	[stat by condition]
+		`move speed`
+		`+`	40
+	[stat by condition]
+		`physical critical hit`
+		`+`	5
+	[stat by condition]
+		`magical critical hit`
+		`+`	5
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`<`
+		`%`	70
+		`end`
+	[stat change]
+		`hp`
+		`>=`
+		`%`	40
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`attack speed`
+		`+`	50
+	[stat by condition]
+		`cast speed`
+		`+`	50
+	[stat by condition]
+		`move speed`
+		`+`	50
+	[stat by condition]
+		`physical critical hit`
+		`+`	7
+	[stat by condition]
+		`magical critical hit`
+		`+`	7
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`<`
+		`%`	40
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`attack speed`
+		`+`	70
+	[stat by condition]
+		`cast speed`
+		`+`	70
+	[stat by condition]
+		`move speed`
+		`+`	70
+	[stat by condition]
+		`physical critical hit`
+		`+`	10
+	[stat by condition]
+		`magical critical hit`
+		`+`	10
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[reduce probability at pvp module]
+		100
+	[duration]
+		5000
+	[buff]
+		`camoflage`
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`attack speed`	100
+		`equipment physical attack`
+		`+`	3	30
+	[stat change by stat]
+		`myself`	-1
+		`attack speed`	100
+		`separate attack`
+		`+`	2	20
+	[stat change by stat]
+		`myself`	-1
+		`cast speed`	150
+		`equipment magical attack`
+		`+`	3	30
+	[stat change by stat]
+		`myself`	-1
+		`cast speed`	150
+		`separate attack`
+		`+`	2	20
+[/then]
+
+[possible kiri protect]

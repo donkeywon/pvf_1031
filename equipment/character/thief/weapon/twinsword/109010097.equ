@@ -1,0 +1,253 @@
+#PVF_File
+
+[name]
+	`逆天命 - 无归`
+
+[basic explain]
+	`    攻击HP为60%%以上的敌人时， 附加20%%的伤害。
+    攻击HP为20%%以上60%%以下的敌人时， 附加30%%的伤害。
+    攻击HP为20%%以下的敌人时， 附加40%%的伤害。
+    自身HP低于50%%以下时， [迅影]攻击点数获得量和获得上限增加50%%。
+    暴击攻击时， 增加10%%的伤害。`
+
+[detail explain]
+	`    攻击HP为60%%以上的敌人时， 附加20%%的伤害。
+    攻击HP为20%%以上60%%以下的敌人时， 附加30%%的伤害。
+    攻击HP为20%%以下的敌人时， 附加40%%的伤害。
+    自身HP低于50%%以下时， [迅影]攻击点数获得量和获得上限增加50%%。
+    暴击攻击时， 增加10%%的伤害。 (暴击伤害加成效果取最高值， 且无法叠加)`
+
+[flavor text]
+	`    即使命运再怎么折磨我， 我也不会屈服。 我知道， 变得更强是我唯一的出路！  --某位刺客`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	65
+
+[attack speed]
+	-80
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	1043	836
+
+[equipment magical attack]
+	768	659
+
+[separate attack]
+	589	382
+
+[physical critical hit]
+	5
+
+[skill levelup]
+	`[thief]`	30	2
+[/skill levelup]
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/thief/twinswd/twinswd.img`	118
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	33	0
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[target stat]
+		`hp`
+		`>=`
+		`%`	60
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	20
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[target stat]
+		`hp`
+		`>=`
+		`%`	20
+	[target stat]
+		`hp`
+		`<`
+		`%`	60
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	30
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[target stat]
+		`hp`
+		`<`
+		`%`	20
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	40
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[time]
+		500	1	500
+	[stat change]
+		`hp`
+		`<`
+		`%`	50
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[appendage]
+		264
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[increase critical damage]
+		`%`	10
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		522	418
+	[equipment magical attack]
+		384	330
+[/pvp]
+
+[possible kiri protect]

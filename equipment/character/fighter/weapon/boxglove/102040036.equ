@@ -3,25 +3,17 @@
 [name]
 	`异魔之源`
 
-[name2]
-	``
-
 [basic explain]
-	`每消耗1%%的MP值， 武器物理攻击力会减少1点。 (最多减少99点)
-每500点MP可增加2点的武器物理攻击力。 (最多增加150点)
-MP上限 +20%%
-攻击时， 有2%%的几率使敌人进入眩晕状态。`
+	`    每消耗1%%的MP值， 武器物理攻击力会减少1点。 (最多减少99点)
+	每500点MP最大值， 可增加4点物理攻击力和力量。 (最多增加300点)
+    MP高于50%%时， 可增加20%%的物理暴击率。
+    攻击时， 有2%%的几率使敌人进入眩晕状态。`
 
 [detail explain]
-	`每消耗1%%的MP值， 武器物理攻击力会减少1点。 (最多减少99点)
-每500点MP可增加2点的武器物理攻击力。 (最多增加150点)
-MP上限 +20%%
-攻击时， 有2%%的几率使敌人进入眩晕状态2秒。 (若敌人高于Lv85， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
-
-[routing priority]
-	`fighter`	2
-	`at fighter`	2
-[/routing priority]
+	`    每消耗1%%的MP值， 武器物理攻击力会减少1点。 (最多减少99点)
+	每500点MP最大值， 可增加4点物理攻击力和力量。 (最多增加300点)
+    MP高于50%%时， 可增加20%%的物理暴击率。
+    攻击时， 有2%%的几率使敌人进入眩晕状态2秒。 (若敌人高于Lv86， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
 
 [grade]
 	85
@@ -40,32 +32,41 @@ MP上限 +20%%
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [physical attack]
-	56
+	62
 
 [attack speed]
 	100
 
+[MP MAX]
+	1000
+
 [price]
-	153000
+	80000000
 
 [repair price]
-	128520
+	137600
 
 [value]
-	122400
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical attack]
-	865	802
+	953	813
 
 [equipment magical attack]
-	783	726
+	862	735
 
 [separate attack]
-	504	343
+	555	359
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/01_weapon/fighter/bglove/bglove.img`	78
@@ -130,7 +131,7 @@ MP上限 +20%%
 	`BGLOVE_TOUCH`
 
 [durability]
-	39
+	48
 
 [weight]
 	2100
@@ -158,12 +159,12 @@ MP上限 +20%%
 		50
 	[duration]
 		2000
-	[reduce probability to human armor at pvp module]
+	[reduce probability at pvp module]
 		80
 	[probability]
 		2
 	[active status]
-		`stun`	85
+		`stun`	86
 [/then]
 
 [if]
@@ -194,14 +195,19 @@ MP上限 +20%%
 		`myself`	-1
 		`mp max`	500
 		`equipment physical attack`
-		`+`	2	150
+		`+`	4	300
+	[stat change by stat]
+		`myself`	-1
+		`mp max`	500
+		`physical attack`
+		`+`	4	300
 [/then]
 
 [if]
 	[change status]
-		`hp`
-		`>`
-		`%`	0
+		`mp`
+		`>=`
+		`%`	50
 		`end`
 [/if]
 
@@ -209,9 +215,8 @@ MP上限 +20%%
 	[target]
 		`myself`	-1
 	[stat by condition]
-		`mp max`
-		`%`	20
+		`physical critical hit`
+		`+`	20
 [/then]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

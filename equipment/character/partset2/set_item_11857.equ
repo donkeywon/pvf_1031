@@ -1,0 +1,38 @@
+#PVF_File
+
+[set name]
+	`血色残阳  套装`
+
+[piece set ability]
+	5
+	[physical attack]
+		100
+	[magical attack]
+		100
+	[if]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`magical attack bonus`
+			`%`	8
+		[stat by condition]
+			`physical attack bonus`
+			`%`	8
+		[stat by condition]
+			`separate attack`
+			`%`	8
+	[/then]
+	[skill data up]
+		`[all]`	199	`[all]`	`[level]`	50	`+`	17
+	[/skill data up]
+	[parameter basic explain]
+		`  所有攻击力 +8%%
+  攻击时， 附加17%%的伤害。`
+[/piece set ability]

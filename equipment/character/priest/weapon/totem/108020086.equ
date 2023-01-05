@@ -1,0 +1,278 @@
+#PVF_File
+
+[name]
+	`风涌雷煞图腾`
+
+[basic explain]
+	`攻击速度 +5%%
+    [仲裁怒击]、 [泯灭神击]攻击时， 对500px范围内的随机敌人发动落雷攻击。 (最多发动5个)
+[极速飓风拳]吸附范围 +20%%
+[极速飓风拳]吸附力 +20%%
+[极速飓风拳]每秒攻击次数达到上限时， 攻击速度比率 +20%%
+[极速飓风拳]每秒攻击次数达到上限时， 移动速度 +35%%
+[仲裁怒击]攻击力 +20%%
+[仲裁怒击]攻击速度 +35%%
+[仲裁怒击]冲击波范围 +20%%
+    攻击时， 附加10%%的光属性伤害。`
+
+[detail explain]
+	`攻击速度 +5%%
+    [仲裁怒击]、 [泯灭神击]攻击时， 对500px范围内的随机敌人发动落雷攻击。 (最多发动5个； 冷却时间0.1秒)
+[极速飓风拳]吸附范围 +20%%
+[极速飓风拳]吸附力 +20%%
+[极速飓风拳]每秒攻击次数达到上限时， 攻击速度比率 +20%%
+[极速飓风拳]每秒攻击次数达到上限时， 移动速度 +35%%
+[仲裁怒击]攻击力 +20%%
+[仲裁怒击]攻击速度 +35%%
+[仲裁怒击]冲击波范围 +20%%
+    攻击时， 附加10%%的光属性伤害。`
+
+[flavor text]
+	`    嘿， 朋友， 朝这里打个雷， 我们需要生火！`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	97
+
+[attack speed]
+	50
+
+[move speed]
+	100
+
+[stuck]
+	-1
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	1008	865
+
+[equipment magical attack]
+	864	742
+
+[separate attack]
+	589	382
+
+[light attack]
+	35
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/priest/totem/totem.img`	104
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	38	0
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[skill data up]
+	`[priest]`	4	`[dungeon type]`	`[static]`	0	`%`	35
+	`[priest]`	4	`[dungeon type]`	`[static]`	3	`%`	20
+	`[priest]`	4	`[dungeon type]`	`[level]`	3	`%`	20
+	`[priest]`	4	`[dungeon type]`	`[level]`	4	`%`	20
+	`[priest]`	4	`[dungeon type]`	`[level]`	5	`%`	20
+[/skill data up]
+
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	10
+[/skill data up]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[skill]
+		`priest`	90
+	[/skill]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`enemy`	500
+	[passive object]
+		48619	0	0	0	0	0	` `
+	[/passive object]
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[skill]
+		`priest`	90
+	[/skill]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`enemy`	500
+	[passive object]
+		48619	0	0	0	0	0	` `
+	[/passive object]
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[skill]
+		`priest`	90
+	[/skill]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`enemy`	500
+	[passive object]
+		48619	0	0	0	0	0	` `
+	[/passive object]
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[skill]
+		`priest`	90
+	[/skill]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`enemy`	500
+	[passive object]
+		48619	0	0	0	0	0	` `
+	[/passive object]
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[skill]
+		`priest`	90
+	[/skill]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`enemy`	500
+	[passive object]
+		48619	0	0	0	0	0	` `
+	[/passive object]
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		504	433
+	[equipment magical attack]
+		432	371
+[/pvp]
+
+[possible kiri protect]

@@ -1,0 +1,103 @@
+#PVF_File
+
+[name]
+	`锦绣丹华长袍`
+
+[basic explain]
+	`    每3000点物理防御力增加12点魔法攻击力。 (最多增加120点)`
+
+[flavor text]
+	`    这衣服成本太高了， 赚不了多少钱。  --卡妮娜`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[part set index]
+	11197
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[magical attack]
+	42
+
+[magical defense]
+	42
+
+[HP MAX]
+	450
+
+[repair price]
+	64800
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	4104	3996
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/02_cloth/coat/cloth_coat.img`	20
+
+[field image]
+	`Item/field_equip.img`	0
+
+[equipment type]
+	`[coat]`	19
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	1400
+
+[item group name]
+	`cl coat`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`equipment physical defense`	3000
+		`equipment magical attack`
+		`+`	12	120
+[/then]
+
+[possible kiri protect]

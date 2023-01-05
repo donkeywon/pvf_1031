@@ -1,0 +1,143 @@
+#PVF_File
+
+[name]
+	`牛头械王的超能芯片`
+
+[basic explain]
+	`    每200点智力会增加2%%的魔法暴击率。
+    每200点智力会增加2%%的施放速度。
+    被攻击时， 有50%%的几率使画面内的所有敌人进入感电状态。`
+
+[detail explain]
+	`    每200点智力会增加2%%的魔法暴击率。 (最多增加20%%)
+    每200点智力会增加2%%的施放速度。 (最多增加20%%)
+    被攻击时， 有50%%的几率使画面内的所有敌人进入感电状态3秒； 若攻击感电状态的敌人， 则每次攻击都会附加1200点伤害。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间5秒)`
+
+[flavor text]
+	`    那头笨牛以为装上芯片就能变聪明吗？ 真是可笑。  --娜塔莉娅`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	35
+
+[magical attack]
+	35
+
+[physical defense]
+	35
+
+[magical defense]
+	35
+
+[cast speed]
+	50
+
+[stuck]
+	-5
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[icon]
+	`Item/new_equipment/10_support/support.img`	163
+
+[field image]
+	`Item/field_equip.img`	22
+
+[equipment type]
+	`[support]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	700
+
+[item group name]
+	`support`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`magical attack`	200
+		`magical critical hit`
+		`+`	2	20
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`magical attack`	200
+		`cast speed`
+		`+`	20	200
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[probability]
+		50
+	[duration]
+		3000
+	[active status]
+		`lightning`	90	12000
+[/then]
+
+[possible kiri protect]

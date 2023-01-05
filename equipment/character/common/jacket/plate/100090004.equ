@@ -3,9 +3,6 @@
 [name]
 	`领主的灭魂胸甲`
 
-[name2]
-	``
-
 [grade]
 	75
 
@@ -109,17 +106,9 @@
 			`equipment magical defense`
 			`%`	-20
 	[/then]
-	[if]
-		[attack success]
-			1
-	[/if]
-	[then]
-		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	5
-	[/then]
+	[skill data up]
+		`[all]`	199	`[all]`	`[level]`	50	`+`	5
+	[/skill data up]
 	[item aura]
 		`magical attack`
 		`+`	80	300

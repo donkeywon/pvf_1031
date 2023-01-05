@@ -1,0 +1,205 @@
+#PVF_File
+
+[name]
+	`幻影追魂爪`
+
+[basic explain]
+	`    攻击时， 有10%%的几率施放[旋风之袭]。
+    被攻击时， 有20%%的几率施放[旋风之袭]。
+    攻击时， 有1%%的几率对敌人发动驱散效果。`
+
+[detail explain]
+	`    攻击时， 有10%%的几率施放[旋风之袭]。
+    被攻击时， 有20%%的几率施放[旋风之袭]。
+    攻击时， 有1%%的几率对敌人发动驱散效果。 (冷却时间20秒)`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	58
+
+[magical attack]
+	29
+
+[repair price]
+	116640
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	855	724
+
+[equipment magical attack]
+	855	724
+
+[separate attack]
+	520	336
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[fighter]`	18	3
+	`[at fighter]`	18	3
+[/skill levelup]
+
+[dark attack]
+	20
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`Item/weapon/fighter/claw.img`	72
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	5	1
+
+[layer variation]
+	2790
+	`clawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	9	4
+
+[layer variation]
+	2150
+	`at_clawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_clawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_clawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[reduce probability at pvp module]
+		100
+	[passive object]
+		48705	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		20
+	[reduce probability at pvp module]
+		100
+	[passive object]
+		48705	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		1
+	[disenchant]
+		1
+[/then]
+
+[possible kiri protect]

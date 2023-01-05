@@ -1,0 +1,198 @@
+#PVF_File
+
+[name]
+	`牛头统帅的权威手环`
+
+[basic explain]
+	`    HP低于80%%时， 可以使自身增加3%%的攻击速度、 3%%移动速度和5%%的施放速度。
+    MP为30%%以上时， 使自身增加7%%的物理暴击率和魔法暴击率。
+    攻击时， 有3%%的几率随机适用以下任意一种效果， 效果持续20秒。
+    - 恢复15%%的HP和MP
+    - 增加180点力量、 智力、 90点体力和90点精神
+    - 增加25%%的移动速度、 25%%攻击速度和30%%的施放速度`
+
+[detail explain]
+	`    HP低于80%%时， 可以使自身增加3%%的攻击速度、 3%%移动速度和5%%的施放速度。 
+    MP为30%%以上时， 使自身增加7%%的物理暴击率和魔法暴击率。
+    攻击时， 有3%%的几率随机适用以下任意一种效果， 效果持续20秒。 (冷却时间20秒)
+    - 恢复15%%的HP和MP
+    - 增加180点力量、 智力、 90点体力和90点精神
+    - 增加25%%的移动速度、 25%%攻击速度和30%%的施放速度`
+
+[flavor text]
+	`    听说， 他们曾是饱受赞誉的森林守卫。  --索西雅`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	36
+
+[physical defense]
+	90
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	4752	4416
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	104
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	20
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[stat change]
+		`hp`
+		`<`
+		`%`	80
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`attack speed`
+		`+`	30
+	[stat by condition]
+		`move speed`
+		`+`	30
+	[stat by condition]
+		`cast speed`
+		`+`	50
+[/then]
+
+[if]
+	[change status]
+		`mp`
+		`>`
+		`%`	30
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical critical hit`
+		`+`	7
+	[stat by condition]
+		`magical critical hit`
+		`+`	7
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			20000
+		[probability]
+			3
+		[restore]
+			`hp`
+			`%`	15	0
+		[restore]
+			`mp`
+			`%`	15	0
+		[then probability]
+			30.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			20000
+		[probability]
+			3
+		[stat]
+			`physical attack`
+			`+`	180
+		[stat]
+			`magical attack`
+			`+`	180
+		[stat]
+			`magical defense`
+			`+`	90
+		[stat]
+			`physical defense`
+			`+`	90
+		[then probability]
+			30.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			20000
+		[probability]
+			3
+		[stat]
+			`attack speed`
+			`+`	250
+		[stat]
+			`move speed`
+			`+`	250
+		[stat]
+			`cast speed`
+			`+`	300
+		[then probability]
+			40.0
+	[/then]
+[/multiple then]
+
+[possible kiri protect]

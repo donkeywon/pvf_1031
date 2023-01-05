@@ -1,0 +1,185 @@
+#PVF_File
+
+[name]
+	`誓血之盟腰带`
+
+[basic explain]
+	`物理、 魔法、 独立攻击力 +5%%
+    消灭敌人时， 增加10点体力和100点HP最大值。
+    每4000的HP最大值， 可以增加10点物理、 魔法和独立攻击力。`
+
+[detail explain]
+	`物理、 魔法和独立攻击力 +5%%
+    消灭敌人时， 增加10点体力和100HP最大值。 (最多重叠10次)
+    每4000点HP最大值， 可以增加10点物理、 魔法和独立攻击力。 (最多增加100点)
+    (解除装备后效果消失)`
+
+[flavor text]
+	`    即便靠吞噬一些人的肉体变强， 也只是饮鸩止渴。  --某个老人`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11349
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	25
+
+[magical attack]
+	18
+
+[physical defense]
+	23
+
+[HP MAX]
+	1000
+
+[inventory limit]
+	3000
+
+[price]
+	85000000
+
+[repair price]
+	72800
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	1632	1488
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/05_harmor/belt/harmor_belt.img`	18
+
+[field image]
+	`Item/field_equip.img`	13
+
+[equipment type]
+	`[waist]`	19
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	26
+
+[weight]
+	1400
+
+[item group name]
+	`ha waist`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[target death]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat]
+		`physical defense`
+		`+`	10
+	[stat]
+		`hp max`
+		`+`	100
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`equipment physical attack`
+		`+`	100
+	[stat by condition]
+		`equipment magical attack`
+		`+`	100
+	[stat by condition]
+		`separate attack`
+		`+`	100
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`equipment physical attack`
+		`%`	5
+	[stat by condition]
+		`equipment magical attack`
+		`%`	5
+	[stat by condition]
+		`separate attack`
+		`%`	5
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

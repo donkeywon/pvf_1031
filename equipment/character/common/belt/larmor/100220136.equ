@@ -1,0 +1,154 @@
+#PVF_File
+
+[name]
+	`混元武士的暗隐腰带`
+
+[basic explain]
+	`    装备后， 每30秒会使自身进入失明状态。
+    当自身处于失明状态时， 会增加10%%的攻击伤害。
+    装备时， 会增加30%%的命中率和15%%的回避率。`
+
+[detail explain]
+	`    每30秒使自身进入失明状态30秒； 失明状态下， 减少80%%的视野和10%%的命中率。 (若敌人高于Lv100， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 装备1秒后生效)
+    在失明状态下攻击目标时， 伤害增加10%%。 (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)
+    装备后， 命中率增加30%%， 回避率增加15%%。 (装备10秒后生效)`
+
+[flavor text]
+	`    咦， 我又能看见了！ 这是爱情的力量！`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[part set index]
+	11468
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	55
+
+[magical attack]
+	47
+
+[MP MAX]
+	350
+
+[inventory limit]
+	3000
+
+[repair price]
+	58320
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	1104	996
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/04_larmor/belt/larmor_belt.img`	16
+
+[field image]
+	`Item/field_equip.img`	8
+
+[equipment type]
+	`[waist]`	18
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	25
+
+[weight]
+	1200
+
+[item group name]
+	`la waist`
+
+[cool time]
+	10000
+
+[if]
+	[my active status]
+		`blind`
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		910
+[/then]
+
+[if]
+	[time]
+		500	1	500
+	[start cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`stuck`
+		`+`	-30
+	[stat by condition]
+		`stuck resistance`
+		`+`	150
+[/then]
+
+[if]
+	[stat change]
+		`hp`
+		`>`
+		`%`	0
+	[time]
+		100	1	500
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[active status]
+		`blind`	100	80	10
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,276 @@
+#PVF_File
+
+[name]
+	`小美人鱼的苍蝇拍`
+
+[basic explain]
+	`施放[变异苍蝇拍]、 [超级苍蝇拍]时， 每次均大成功。
+[末日虫洞]能量消耗值 -20%%
+[乖离 : 禁锢]攻击力 +15%%
+[乖离 : 禁锢]强制控制时间 +1秒
+[人偶戏法]攻击力 +20%%
+攻击时， 增加22%%的伤害。`
+
+[detail explain]
+	`施放[变异苍蝇拍]、 [超级苍蝇拍]时， 每次均大成功。
+[末日虫洞]能量消耗值 -20%%
+[乖离 : 禁锢]攻击力 +15%%
+[乖离 : 禁锢]强制控制时间 +1秒
+[人偶戏法]攻击力 +20%%
+攻击时， 增加22%%的伤害。  (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)`
+
+[flavor text]
+	`    空空伊又去哪了？ 约好了一起去唱歌呢~  --小灯笼`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[magical attack]
+	65
+
+[attack speed]
+	60
+
+[move speed]
+	30
+
+[price]
+	85000000
+
+[repair price]
+	145600
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	960	824
+
+[equipment magical attack]
+	1056	906
+
+[separate attack]
+	589	382
+
+[skill levelup]
+	`[mage]`	41	1
+	`[mage]`	97	1
+[/skill levelup]
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/mage/broom/broom.img`	93
+
+[field image]
+	`Item/field_weapon.img`	10
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[mage]`
+
+[variation]
+	37	0
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	37	0
+
+[layer variation]
+	2150
+	`at_brooma`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_broomd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	37	0
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BROOM_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2500
+
+[item group name]
+	`broom`
+
+[cool time]
+	10000
+
+[required skill]
+	91
+
+[skill data up]
+	`[mage]`	115	`[dungeon type]`	`[static]`	0	`+`	-200
+	`[mage]`	115	`[dungeon type]`	`[static]`	1	`+`	-600
+	`[mage]`	115	`[dungeon type]`	`[static]`	2	`+`	800
+	`[mage]`	95	`[dungeon type]`	`[static]`	0	`+`	-200
+	`[mage]`	95	`[dungeon type]`	`[static]`	1	`+`	-600
+	`[mage]`	95	`[dungeon type]`	`[static]`	2	`+`	800
+[/skill data up]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[increase damage]
+		`%`	22
+[/then]
+
+[all skill item container]
+	[all skill item]
+		[item growtype]
+			`[mage]`	0
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				1
+			[upper bound level]
+				70
+			[value]
+				2
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
+	[all skill item]
+		[item growtype]
+			`[at mage]`	0
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				1
+			[upper bound level]
+				70
+			[value]
+				2
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
+	[all skill item]
+		[item growtype]
+			`[creator mage]`	0
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				1
+			[upper bound level]
+				70
+			[value]
+				2
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
+[/all skill item container]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		480	412
+	[equipment magical attack]
+		528	453
+[/pvp]
+
+[possible kiri protect]

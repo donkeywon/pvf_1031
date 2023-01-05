@@ -1,22 +1,22 @@
 #PVF_File
 
 [name]
-	`达人之落日幻影`
-
-[name2]
-	`Master's Useless Conversation`
+	`十猛龙刹秦的短剑`
 
 [basic explain]
-	`攻击时， 有2%%的几率使自身增加30点力量， 效果持续60秒。`
+	`Y轴移动速度 +50%%
+[猛龙断空斩]斩击数上限增加5
+施放[猛龙断空斩]命中敌人时将触发幻影剑舞最后一斩的剑气
+[猛龙断空斩]冷却时间减少10秒。`
 
 [flavor text]
-	`传说在落日中舞动时， 周围会出现龙的幻影， 因此而得名‘落日幻影’。`
+	`    是时候展现真正的技术了。——刹秦`
 
 [grade]
-	44
+	62
 
 [rarity]
-	3
+	4
 
 [usable job]
 	`[swordman]`
@@ -24,49 +24,65 @@
 [/usable job]
 
 [attach type]
-	`[sealing]`
+	`[trade]`
 
 [minimum level]
-	40
+	55
 
-[magical attack]
-	14
+[need material]
+	3260	6000
+
+[physical attack]
+	75
 
 [cast speed]
 	20
 
+[attack speed]
+	100
+
+[move speed]
+	150
+
 [price]
-	70400
+	55000000
 
 [repair price]
 	56320
 
 [value]
-	56320
+	5500000
+
+[creation rate]
+	125
 
 [equipment physical attack]
-	391	338
+	532	487
 
 [equipment magical attack]
-	474	409
+	515	472
+
+[separate attack]
+	328	220
 
 [magical critical hit]
 	2
 
-[skill levelup]
-	`[swordman]`	1	1
-	`[swordman]`	12	1
-	`[demonic swordman]`	12	1
-[/skill levelup]
+[physical critical hit]
+	7
 
-[confuse resistance]
-	30
+[skill levelup]
+	`[swordman]`	72	3
+[/skill levelup]
 
 [icon]
 	`Item/weapon/swordman/sswd.img`	34
 
 [field image]
-	`Item/FieldImage.img`	9
+	`Item/FieldImage1.img`	9
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [equipment type]
 	`[weapon]`	23
@@ -129,9 +145,15 @@
 [cool time]
 	10000
 
+[y move dash speed]
+	0.5
+
 [if]
+	[skill]
+		`swordman`	72
+	[/skill]
 	[cooltime]
-		48000
+		100
 	[attack success]
 		1
 [/if]
@@ -139,16 +161,15 @@
 [then]
 	[target]
 		`myself`	-1
-	[duration]
-		60000
 	[probability]
-		2
-	[stat]
-		`physical attack`
-		`+`	30
+		100
+	[passive object]
+		20065	0	0	0	0	0	`Straight3.ptl`
+	[/passive object]
 [/then]
 
-[possible kiri protect]
+[skill data up]
+	`[swordman]`	72	`[all]`	`[static]`	0	`+`	5
+	`[swordman]`	72	`[all]`	`[cooltime]`	0	`+`	-10000
 
-[icon mark]
-	`Item/IconMark.img`	66
+[possible kiri protect]

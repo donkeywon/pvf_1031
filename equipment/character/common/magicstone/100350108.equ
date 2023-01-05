@@ -19,7 +19,7 @@
 	89
 
 [rarity]
-	3
+	4
 
 [usable job]
 	`[all]`
@@ -104,24 +104,23 @@
 [/then]
 
 [if]
-	[start cooltime]
-		30000
-	[change status]
+	[time]
+		500	1	500
+	[stat change]
 		`hp`
 		`>`
 		`%`	0
-		`end`
 [/if]
 
 [then]
 	[target]
 		`all enemy`	500
-	[stat by condition]
-		`equipment physical defense`
-		`%`	-10
-	[stat by condition]
-		`equipment magical defense`
-		`%`	-10
+	[duration]
+		1000
+	[appendage]
+		848
+	[appendage]
+		849
 [/then]
 
 [icon mark]

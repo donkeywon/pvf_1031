@@ -3,9 +3,6 @@
 [name]
 	`冥王之预言胸甲`
 
-[name2]
-	``
-
 [grade]
 	75
 
@@ -146,25 +143,20 @@
 			1
 		[target type]
 			`devil`
+		[cooltime]
+			1000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	10
+			`myself`	-1
+		[equipment duration]
+			1000
+		[appendage]
+			910
 	[/then]
-	[if]
-		[attack success]
-			1
-	[/if]
-	[then]
-		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	5
-	[/then]
+	[skill data up]
+		`[all]`	199	`[all]`	`[level]`	50	`+`	5
+	[/skill data up]
 [/set ability]
 
 [routing priority]

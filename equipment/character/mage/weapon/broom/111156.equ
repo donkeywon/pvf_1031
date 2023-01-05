@@ -1,0 +1,206 @@
+#PVF_File
+
+[name]
+	`熔岩虫的异形扫把`
+
+[basic explain]
+	`  ↑↓+[宠物技能键]输入时， 会消耗2个红色小晶块， 生成熔岩虫的虫洞。 (冷却时间5秒)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[magical attack]
+	62
+
+[attack speed]
+	60
+
+[move speed]
+	30
+
+[price]
+	85000000
+
+[repair price]
+	129600
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	911	814
+
+[equipment magical attack]
+	1002	895
+
+[separate attack]
+	552	363
+
+[skill levelup]
+	`[creator mage]`	250	2
+	`[mage]`	88	2
+[/skill levelup]
+
+[fire attack]
+	15
+
+[icon]
+	`item/new_equipment/01_weapon/mage/broom/broom.img`	121
+
+[field image]
+	`Item/field_weapon.img`	10
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[mage]`
+
+[variation]
+	45	0
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	45	0
+
+[layer variation]
+	2150
+	`at_brooma`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_broomd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	45	0
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BROOM_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2500
+
+[item group name]
+	`broom`
+
+[cool time]
+	10000
+
+[required skill]
+	91
+
+[item category]
+	`boss drop`
+[/item category]
+
+[command]
+	{6=`(UP)`}
+	{8=`,`}
+	{6=`(DOWN)`}
+	{8=`,`}
+	{6=`(CREATURE)`}
+[/command]
+
+[if]
+	[cooltime]
+		5000
+	[use command]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[consume item]
+		3035	2
+	[passive object]
+		54135	200	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`cast speed`
+		`+`	250
+[/then]

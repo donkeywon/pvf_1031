@@ -3,14 +3,20 @@
 [name]
 	`杀手之潜行短靴`
 
-[name2]
-	``
+[basic explain]
+	`    背击时， 增加10%%的伤害。`
+
+[detail explain]
+	`    背击时， 增加10%%的伤害。 (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)`
 
 [grade]
 	75
 
 [rarity]
 	4
+
+[part set index]
+	11185
 
 [usable job]
 	`[all]`
@@ -85,8 +91,19 @@
 [cool time]
 	10000
 
-[set item master]
-	100050019
+[if]
+	[attack condition]
+		`back attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	10
+[/then]
 
 [routing priority]
 [/routing priority]

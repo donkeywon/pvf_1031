@@ -1,0 +1,99 @@
+#PVF_File
+
+[name]
+	`魔晶进化 - 智者之心`
+
+[basic explain]
+	`    HP为50%%以下时， 可以增加45点智力和15点精神。`
+
+[flavor text]
+	`    做得很好， 这个先交由我保管。 我们要开始下一步计划了…… --赫尔德对爱丽丝说`
+
+[grade]
+	25
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	20
+
+[physical attack]
+	19
+
+[magical attack]
+	39
+
+[magical defense]
+	15
+
+[price]
+	20000000
+
+[need material]
+	10000204	100
+
+[value]
+	2000000
+
+[creation rate]
+	500
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	1088	864
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	194
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	21
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[item aura]
+	`magical attack`
+	`+`	80	450
+
+[if]
+	[change status]
+		`hp`
+		`<`
+		`%`	50
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack`
+		`+`	45
+	[stat by condition]
+		`magical defense`
+		`+`	15
+[/then]
+
+[possible kiri protect]

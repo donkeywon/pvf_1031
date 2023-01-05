@@ -1,0 +1,146 @@
+#PVF_File
+
+[name]
+	`魔战无双腿甲`
+
+[basic explain]
+	`所有技能冷却时间 -9%%`
+
+[detail explain]
+	`技能冷却时间 -9%%
+(怪物与装备Lv相差35以上时， 不适用冷却时间减少效果)`
+
+[flavor text]
+	`    卡西利亚斯作为魔界中的嗜战者， 曾和很多人交手过， 比如阿尔伯特， 结果阿尔伯特连对方手指都没碰到就输了。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11731
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	39
+
+[magical attack]
+	39
+
+[physical defense]
+	42
+
+[attack speed]
+	50
+
+[cast speed]
+	50
+
+[move speed]
+	50
+
+[price]
+	85000000
+
+[repair price]
+	116480
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	5100	4650
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/06_plate/pants/plate_pants.img`	18
+
+[field image]
+	`Item/field_equip.img`	16
+
+[equipment type]
+	`[pants]`	22
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	50
+
+[weight]
+	4100
+
+[item group name]
+	`mt pants`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`skill cool time`
+		`%`	-9
+[/then]
+
+[skill levelup]
+	`[at fighter]`	226	2
+	`[at gunner]`	233	2
+	`[at gunner]`	243	2
+	`[at mage]`	243	2
+	`[demonic swordman]`	234	2
+	`[fighter]`	234	2
+	`[fighter]`	237	2
+	`[gunner]`	246	2
+	`[mage]`	242	2
+	`[priest]`	136	2
+	`[swordman]`	229	2
+	`[swordman]`	245	2
+	`[thief]`	223	2
+[/skill levelup]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

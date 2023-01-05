@@ -3,18 +3,20 @@
 [name]
 	`星云迷踪战靴`
 
-[name2]
-	``
-
 [basic explain]
-	`攻击时， 有5%%的几率使自身进入失明状态10秒。
-失明状态下， 攻击速度和移动速度各增加7%%， 效果持续10秒。`
+	`    攻击时， 有5%%的几率使自身进入失明状态15秒。`
+
+[detail explain]
+	`攻击时， 有5%%的几率进入失明状态15秒。 (若敌人高于Lv86， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间3秒)`
 
 [grade]
 	85
 
 [rarity]
 	4
+
+[part set index]
+	11337
 
 [usable job]
 	`[all]`
@@ -26,32 +28,44 @@
 [minimum level]
 	80
 
-[physical attack]
-	23
+[need material]
+	3285	2500
 
-[physical defense]
-	21
+[physical attack]
+	74
 
 [magical attack]
-	17
+	68
+
+[physical defense]
+	22
+
+[attack speed]
+	100
+
+[cast speed]
+	150
 
 [move speed]
-	60
+	140
 
 [price]
-	76500
+	80000000
 
 [repair price]
-	64260
+	68800
 
 [value]
-	61200
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical defense]
-	2232	2088
+	2328	2112
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/05_harmor/shoes/harmor_shoes.img`	10
@@ -82,7 +96,7 @@
 
 [if]
 	[cooltime]
-		10000
+		3000
 	[attack success]
 		1
 [/if]
@@ -91,40 +105,11 @@
 	[target]
 		`myself`	-1
 	[duration]
-		10000
-	[reduce duration to human armor at pvp module]
-		50
+		15000
 	[probability]
 		5
 	[active status]
-		`blind`	85	80	10
+		`blind`	86	50	5
 [/then]
 
-[if]
-	[my active status]
-		`blind`
-	[cooltime]
-		10000
-[/if]
-
-[then]
-	[target]
-		`myself`	-1
-	[duration]
-		10000
-	[stat]
-		`attack speed`
-		`+`	70
-	[stat]
-		`move speed`
-		`+`	70
-[/then]
-
-[set item master]
-	100080009
-
-[routing priority]
-[/routing priority]
-
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

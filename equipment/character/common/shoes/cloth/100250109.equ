@@ -1,0 +1,147 @@
+#PVF_File
+
+[name]
+	`逝魔之风速短靴`
+
+[basic explain]
+	`前冲时， 可以消耗1%%的MP， 使自身增加10%%的移动速度、 25%%的施放速度， 以及20点所有属性强化， 效果持续60秒。`
+
+[detail explain]
+	`前冲时， 可以消耗1%%的MP， 使自身增加10%%的移动速度、 25%%的施放速度， 以及20点所有属性强化， 效果持续60秒。 (解除装备后效果消失； 冷却时间60秒)`
+
+[flavor text]
+	`据说从来没有人见过摩恩真正的模样。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11198
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[magical attack]
+	28
+
+[magical defense]
+	28
+
+[move speed]
+	60
+
+[price]
+	85000000
+
+[repair price]
+	50960
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	612	558
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/02_cloth/shoes/cloth_shoes.img`	17
+
+[field image]
+	`Item/field_equip.img`	4
+
+[equipment type]
+	`[shoes]`	16
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	18
+
+[weight]
+	600
+
+[item group name]
+	`cl shoes`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[set my state]
+		1
+	[my state]
+		`dash`
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[equipment duration]
+		60000
+	[stat]
+		`move speed`
+		`+`	100
+	[stat]
+		`cast speed`
+		`+`	250
+	[stat]
+		`fire attack`
+		`+`	20
+	[stat]
+		`light attack`
+		`+`	20
+	[stat]
+		`water attack`
+		`+`	20
+	[stat]
+		`dark attack`
+		`+`	20
+	[restore]
+		`mp`
+		`%`	-1	0
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

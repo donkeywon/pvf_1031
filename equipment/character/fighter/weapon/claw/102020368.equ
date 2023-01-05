@@ -1,0 +1,236 @@
+#PVF_File
+
+[name]
+	`万病毒源之爪`
+
+[basic explain]
+	`    生成光环， 可以使500px范围内的所有敌人的所有异常状态抗性减少50点。
+    攻击时， 有2%%的几率使敌人进入出血、 中毒、 减速、 束缚中任意一种异常状态。
+    攻击异常状态的敌人时， 附加15%%的伤害。`
+
+[detail explain]
+	`    生成光环， 可以使500px范围内的所有敌人的所有异常状态抗性减少50点。
+    攻击时， 有2%%的几率使敌人进入出血、 中毒、 减速、 束缚中任意一种异常状态。（效果持续3秒； 若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果）
+    攻击异常状态的敌人时， 附加15%%的伤害。`
+
+[flavor text]
+	`    据说这里面蕴藏着所有我们能想像得到和想像不到的疾病。  --露德米拉`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[magical attack]
+	31
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	1002	802
+
+[equipment magical attack]
+	1002	802
+
+[separate attack]
+	607	507
+
+[physical critical hit]
+	3
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/claw/claw.img`	113
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	39	0
+
+[layer variation]
+	2790
+	`clawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	38	0
+
+[layer variation]
+	2150
+	`at_clawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_clawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_clawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[duration]
+		1000
+	[appendage]
+		672
+[/then]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			2
+		[duration]
+			3000
+		[active status]
+			`bleeding`	90	18000
+		[then probability]
+			25.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			2
+		[duration]
+			3000
+		[active status]
+			`hold`	90
+		[then probability]
+			25.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			2
+		[duration]
+			3000
+		[active status]
+			`poison`	90	18000
+		[then probability]
+			25.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			2
+		[duration]
+			3000
+		[active status]
+			`slow`	65	15	10
+		[then probability]
+			25.0
+	[/then]
+[/multiple then]
+
+[if]
+	[target active status]
+		`any`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	15
+[/then]
+
+[possible kiri protect]

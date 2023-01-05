@@ -3,17 +3,17 @@
 [name]
 	`镇魂曲 : 幽游板甲护腿`
 
-[name2]
-	``
-
 [basic explain]
-	`施放[疾空旋风破]、 [忏悔之锤]、 [邪光波动阵]时， 有12%%的几率不受冷却时间影响。`
+	`施放[疾空旋风破]、 [忏悔之锤]、 [邪光波动阵]时， 有20%%的几率不受冷却时间影响。`
 
 [grade]
 	85
 
 [rarity]
 	4
+
+[part set index]
+	11719
 
 [usable job]
 	`[all]`
@@ -25,32 +25,48 @@
 [minimum level]
 	80
 
-[physical attack]
-	35
+[need material]
+	3285	2500
 
-[physical defense]
-	39
+[physical attack]
+	37
 
 [magical attack]
-	35
+	37
+
+[physical defense]
+	40
 
 [MP MAX]
 	250
 
 [price]
-	119000
+	80000000
 
 [repair price]
-	99960
+	110080
 
 [value]
-	95200
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical defense]
-	4650	4350
+	4850	4400
+
+[skill levelup]
+	`[priest]`	5	2
+	`[priest]`	74	2
+	`[swordman]`	57	2
+	`[demonic swordman]`	57	3
+[/skill levelup]
+
+[all elemental attack]
+	10
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/06_plate/pants/plate_pants.img`	10
@@ -79,10 +95,34 @@
 [cool time]
 	10000
 
-[set item master]
-	100090009
+[all skill item container]
+	[all skill item]
+		[item growtype]
+			`[all]`	0
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				60
+			[upper bound level]
+				60
+			[value]
+				1
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
+[/all skill item container]
 
 [if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+		`[assault]`
+	[/module]
 	[event use skill]
 		`priest`	5
 [/if]
@@ -91,13 +131,18 @@
 	[target]
 		`myself`	-1
 	[probability]
-		12
+		20
 	[skill data up]
 		`[priest]`	5	`[all]`	`[cooltime]`	0	`%`	-100
 	[/skill data up]
 [/then]
 
 [if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+		`[assault]`
+	[/module]
 	[event use skill]
 		`priest`	74
 [/if]
@@ -106,13 +151,18 @@
 	[target]
 		`myself`	-1
 	[probability]
-		12
+		20
 	[skill data up]
 		`[priest]`	74	`[all]`	`[cooltime]`	0	`%`	-100
 	[/skill data up]
 [/then]
 
 [if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+		`[assault]`
+	[/module]
 	[event use skill]
 		`swordman`	57
 [/if]
@@ -121,14 +171,10 @@
 	[target]
 		`myself`	-1
 	[probability]
-		12
+		20
 	[skill data up]
 		`[swordman]`	57	`[all]`	`[cooltime]`	0	`%`	-100
 	[/skill data up]
 [/then]
 
-[routing priority]
-[/routing priority]
-
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

@@ -1,0 +1,163 @@
+#PVF_File
+
+[name]
+	`黑雾迷云手环`
+
+[basic explain]
+	`   装备后， 每1秒召唤出1个狄瑞吉的碎片。
+   被攻击时， 可以召唤出3个狄瑞吉的碎片。
+   装备后， 500px范围内每存在1个中毒状态的敌人， 都可以使自身增加2%%的物理暴击率和魔法暴击率。`
+
+[detail explain]
+	`   装备后， 每1秒召唤出1个狄瑞吉的碎片， 狄瑞吉的碎片存在7秒。 (装备后立即生效)
+   被攻击时， 可以召唤出3个狄瑞吉的碎片， 狄瑞吉的碎片存在20秒。 (冷却时间5秒)
+   装备后， 500px范围内每存在1个中毒状态的敌人， 都可以使自身增加2%%的物理暴击率和魔法暴击率。(最多增加20%%) 
+    (最多可召唤出10个狄瑞吉碎片)`
+
+[flavor text]
+	`    只要能支配瘟疫， 那?统治这片大陆就不再只是梦想了。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	36
+
+[physical defense]
+	90
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	4752	4416
+
+[skill levelup]
+	`[fighter]`	38	1
+	`[at fighter]`	38	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	113
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	20
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[variable stat]
+	`physical critical hit`
+	`+`	2
+	`object number`
+	`enemy`	500
+	`poison`	10
+	`magical critical hit`
+	`+`	2
+	`object number`
+	`enemy`	500
+	`poison`	10
+[/variable stat]
+
+[if]
+	[time]
+		1000	1	0
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		7000
+	[summon monster]
+		62131	90	10
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[summon monster]
+		62131	90	10
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[summon monster]
+		62131	90	10
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[summon monster]
+		62131	90	10
+[/then]
+
+[possible kiri protect]

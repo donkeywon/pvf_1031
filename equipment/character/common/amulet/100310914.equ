@@ -1,0 +1,103 @@
+#PVF_File
+
+[name]
+	`魔灵瞳 - 生死之契`
+
+[basic explain]
+	`对敌人的伤害 +9%%`
+
+[detail explain]
+	`对敌人的伤害 +9%% (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)`
+
+[flavor text]
+	`    死生契阔， 与子成说。`
+
+[grade]
+	65
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	60
+
+[magical attack]
+	27
+
+[magical defense]
+	68
+
+[attack speed]
+	20
+
+[cast speed]
+	30
+
+[move speed]
+	10
+
+[price]
+	60000000
+
+[need material]
+	10000204	100
+
+[value]
+	6000000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	5920	5360
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[icon]
+	`Item/new_equipment/08_necklace/necklace.img`	151
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	9
+[/then]
+
+[possible kiri protect]

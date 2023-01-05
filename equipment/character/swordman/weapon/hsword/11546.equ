@@ -1,0 +1,173 @@
+#PVF_File
+
+[name]
+	`破日惊天剑`
+
+[basic explain]
+	`    若使用[上挑]、 或[挑击]， 则可以施放魔刹石伊弗的强力一击。`
+
+[detail explain]
+	`    若使用[上挑]、 或[挑击]， 则可以施放魔刹石伊弗的强力一击。`
+
+[flavor text]
+	`    记住这把剑叫破日惊天剑而不是日破天剑。  ——某个屌丝冒险家`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	282
+
+[attack speed]
+	-90
+
+[cast speed]
+	-20
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	129600
+
+[value]
+	8500000
+
+[equipment physical attack]
+	1202	1002
+
+[equipment magical attack]
+	901	701
+
+[separate attack]
+	607	507
+
+[icon]
+	`Item/new_equipment/01_weapon/swordman/lswd/lswd.img`	147
+
+[field image]
+	`Item/FieldImage.img`	13
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	44	0
+
+[layer variation]
+	2790
+	`lswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`lswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	44	0
+
+[layer variation]
+	2790
+	`lswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`lswdb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SQUARESWD_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	4000
+
+[item group name]
+	`lswd`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[fire element]`
+
+[if]
+	[cooltime]
+		100
+	[use skill]
+		`swordman`	46
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		54121	0	0	0	5000	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[cooltime]
+		100
+	[use skill]
+		`demonic swordman`	46
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		54121	0	0	0	5000	0	``
+	[/passive object]
+[/then]
+
+[routing priority]
+	`swordman`	1
+	`swordman`	3
+	`demonic swordman`	0
+[/routing priority]
+
+[possible kiri protect]

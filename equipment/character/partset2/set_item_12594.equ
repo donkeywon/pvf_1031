@@ -1,0 +1,80 @@
+#PVF_File
+
+[set name]
+	`恍惚之境 套装 `
+
+[piece set ability]
+	3
+	[all elemental resistance]
+		30
+	[skill data up]
+		`[all]`	199	`[all]`	`[level]`	50	`+`	20
+	[/skill data up]
+	[if]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase critical damage]
+			`%`	20
+	[/then]
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			30000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			30000
+		[stat]
+			`attack speed`
+			`+`	100
+	[/then]
+	[if]
+		[casting]
+			1
+		[cooltime]
+			30000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			30000
+		[stat]
+			`cast speed`
+			`+`	120
+	[/then]
+	[if]
+		[my state]
+			`dash`
+		[cooltime]
+			30000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			30000
+		[stat]
+			`move speed`
+			`+`	100
+	[/then]
+	[parameter basic explain]
+		`   暴击攻击时， 增加20%%的伤害。
+    攻击时， 附加20%%的伤害。
+    攻击时， 增加10%%的攻击速度， 效果持续30秒。
+     施放技能时， 增加12%%的施放速度， 效果持续30秒。
+     前冲时， 可以增加10%%的移动速度， 效果持续30秒。`
+	[parameter detail explain]
+		`    暴击攻击时， 增加20%%的伤害。(暴击伤害加成效果取最高值， 且无法叠加)
+    攻击时， 附加20%%的伤害。
+    攻击时， 增加10%%的攻击速度， 效果持续30秒。（冷却时间30秒）
+     施放技能时， 增加12%%的施放速度， 效果持续30秒。（冷却时间30秒）
+     前冲时， 可以增加10%%的移动速度， 效果持续30秒。（冷却时间30秒）`
+[/piece set ability]

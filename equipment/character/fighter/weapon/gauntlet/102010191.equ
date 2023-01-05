@@ -1,0 +1,242 @@
+#PVF_File
+
+[name]
+	`未完成的研发者臂铠`
+
+[basic explain]
+	`    HP为90%%以上时， 攻击时附加15%%的伤害。
+    HP为50%%以上、 90%%以下时， 攻击时附加25%%的伤害。`
+
+[flavor text]
+	`    还未完成已经有如此强大的气场， 这要是成品……哦， 简直不敢想象。  --某人在猛拍马屁`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	97
+
+[attack speed]
+	-80
+
+[stuck]
+	-1
+
+[price]
+	85000000
+
+[repair price]
+	145600
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	1152	989
+
+[equipment magical attack]
+	864	742
+
+[separate attack]
+	589	382
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/gauntlet/gauntlet.img`	103
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	29	0
+
+[layer variation]
+	2790
+	`gauntletc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gauntletb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	28	0
+
+[layer variation]
+	2150
+	`at_gauntleta`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_gauntletc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_gauntletx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[all skill item container]
+	[all skill item]
+		[item growtype]
+			`[fighter]`	0
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				1
+			[upper bound level]
+				70
+			[value]
+				2
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
+	[all skill item]
+		[item growtype]
+			`[at fighter]`	0
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				1
+			[upper bound level]
+				70
+			[value]
+				2
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
+[/all skill item container]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[stat change]
+		`hp`
+		`>=`
+		`%`	90
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	15
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[stat change]
+		`hp`
+		`>=`
+		`%`	50
+	[stat change]
+		`hp`
+		`<`
+		`%`	90
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	25
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		576	495
+	[equipment magical attack]
+		432	371
+[/pvp]
+
+[possible kiri protect]

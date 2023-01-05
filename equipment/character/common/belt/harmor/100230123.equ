@@ -1,0 +1,119 @@
+#PVF_File
+
+[name]
+	`逆龙之战暗袭腰带`
+
+[basic explain]
+	`    攻击HP为50%%以下的敌人时， 增加15%%的伤害。`
+
+[detail explain]
+	`    攻击HP为50%%以下的敌人时， 增加15%%的伤害。(伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)`
+
+[flavor text]
+	`    快要开战了。 你现在这样也太悠闲了吧？ 不会又要搞偷袭那一招吧？  --娜塔莎`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[part set index]
+	11348
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	23
+
+[magical attack]
+	17
+
+[physical defense]
+	21
+
+[attack speed]
+	100
+
+[cast speed]
+	150
+
+[inventory limit]
+	3000
+
+[repair price]
+	64800
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	1472	1328
+
+[physical critical hit]
+	10
+
+[magical critical hit]
+	10
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/05_harmor/belt/harmor_belt.img`	17
+
+[field image]
+	`Item/field_equip.img`	13
+
+[equipment type]
+	`[waist]`	19
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	26
+
+[weight]
+	1400
+
+[item group name]
+	`ha waist`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[target stat]
+		`hp`
+		`<`
+		`%`	50
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	15
+[/then]
+
+[possible kiri protect]

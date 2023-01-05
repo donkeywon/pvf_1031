@@ -3,9 +3,6 @@
 [name]
 	`阿法利亚之息胸甲`
 
-[name2]
-	``
-
 [grade]
 	75
 
@@ -123,17 +120,9 @@
 		`[thief]`	52	3
 		`[demonic swordman]`	68	3
 	[/skill levelup]
-	[if]
-		[attack success]
-			1
-	[/if]
-	[then]
-		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	5
-	[/then]
+	[skill data up]
+		`[all]`	199	`[all]`	`[level]`	50	`+`	5
+	[/skill data up]
 	[attack speed]
 		40
 	[physical critical hit]

@@ -3,17 +3,18 @@
 [name]
 	`幽魂魅影腰带`
 
-[name2]
-	``
-
 [basic explain]
-	`每15点暗属性抗性增加1点暗属性强化值。`
+	`    每6点暗属性抗性增加2点暗属性强化。 (最多增加30点)
+    每7点暗属性抗性增加1%%的魔法暴击率。 (最多增加20%%)`
 
 [grade]
 	85
 
 [rarity]
 	4
+
+[part set index]
+	11187
 
 [usable job]
 	`[all]`
@@ -26,16 +27,16 @@
 	80
 
 [magical attack]
-	25
+	26
 
 [magical defense]
-	25
+	26
 
 [move speed]
-	15
+	20
 
 [stuck resistance]
-	20
+	30
 
 [inventory limit]
 	3000
@@ -53,13 +54,10 @@
 	250
 
 [equipment physical defense]
-	372	348
+	388	352
 
 [dark resistance]
 	10
-
-[light resistance]
-	-5
 
 [icon]
 	`Item/new_equipment/02_cloth/belt/cloth_belt.img`	10
@@ -88,9 +86,6 @@
 [cool time]
 	10000
 
-[set item master]
-	100050050
-
 [routing priority]
 [/routing priority]
 
@@ -107,10 +102,17 @@
 		`myself`	-1
 	[stat change by stat]
 		`myself`	-1
-		`dark resistance`	15
+		`dark resistance`	6
 		`dark attack`
-		`+`	1	0
+		`+`	2	30
+	[stat change by stat]
+		`myself`	-1
+		`dark resistance`	7
+		`magical critical hit`
+		`+`	1	20
 [/then]
+
+[possible kiri protect]
 
 [icon mark]
 	`Item/IconMark.img`	68

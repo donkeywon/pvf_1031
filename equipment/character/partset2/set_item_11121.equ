@@ -1,0 +1,155 @@
+#PVF_File
+
+[set name]
+	`巨龙之魂  套装`
+
+[piece set ability]
+	5
+	[equipment magical attack]
+		120	120
+	[equipment physical attack]
+		120	120
+	[separate attack]
+		145	145
+	[physical attack]
+		85
+	[physical defense]
+		85
+	[magical attack]
+		85
+	[magical defense]
+		85
+	[all elemental attack]
+		65
+	[if]
+		[module]
+			`[dead tower]`
+			`[dungeon]`
+			`[tournament dungeon]`
+			`[war room]`
+			`[blood system]`
+		[/module]
+		[cooltime]
+			20000
+		[attack success]
+			1
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				5
+			[reduce probability to human armor at pvp module]
+				100
+			[then probability]
+				20.0
+			[passive object]
+				140501	0	0	99	0	0	`布甲`
+			[/passive object]
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				5
+			[reduce probability to human armor at pvp module]
+				100
+			[then probability]
+				20.0
+			[passive object]
+				140505	0	0	99	0	0	`轻甲`
+			[/passive object]
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				5
+			[reduce probability to human armor at pvp module]
+				100
+			[then probability]
+				20.0
+			[passive object]
+				140510	0	0	99	0	0	`皮甲`
+			[/passive object]
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				5
+			[reduce probability to human armor at pvp module]
+				100
+			[then probability]
+				20.0
+			[passive object]
+				140515	0	0	99	0	0	`重甲`
+			[/passive object]
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				5
+			[reduce probability to human armor at pvp module]
+				100
+			[then probability]
+				20.0
+			[passive object]
+				140520	0	0	99	0	0	`板甲`
+			[/passive object]
+		[/then]
+	[/multiple then]
+	[if]
+		[module]
+			`[dead tower]`
+			`[dungeon]`
+			`[tournament dungeon]`
+			`[war room]`
+			`[blood system]`
+		[/module]
+		[attack success]
+			1
+		[cooltime]
+			500
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			1000
+		[appendage]
+			940
+	[/then]
+	[if]
+		[module]
+			`[dead tower]`
+			`[dungeon]`
+			`[tournament dungeon]`
+			`[war room]`
+			`[blood system]`
+		[/module]
+		[attack success]
+			1
+		[cooltime]
+			500
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			10000
+		[appendage]
+			912
+	[/then]
+	[parameter basic explain]
+		`    攻击时， 附加40%%的伤害。
+    攻击时， 减少敌人12%%的防御力。
+    攻击时， 有5%%的几率发动随机一种特效。(冷却时间20秒；无法在决斗场中使用)
+    苍天的巨浪
+    世界的风暴
+    末日之光
+    动荡之环
+    颂德之光`
+[/piece set ability]

@@ -1,0 +1,317 @@
+#PVF_File
+
+[name]
+	`未完成的研发者之矛`
+
+[basic explain]
+	`    HP为90%%以上时， 攻击时附加15%%的伤害。
+    HP为50%%以上、 90%%以下时， 攻击时附加25%%的伤害。`
+
+[flavor text]
+	`    虽然还未完成， 不过这里面蕴含的能量已经非常强大， 绝对是强者身份的象征。  --某人又在猛拍马屁`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	97
+
+[attack speed]
+	-50
+
+[stuck]
+	-1
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	1152	989
+
+[equipment magical attack]
+	816	700
+
+[separate attack]
+	589	382
+
+[physical critical hit]
+	2
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/mage/spear/spear.img`	117
+
+[field image]
+	`Item/field_weapon.img`	6
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	37	0
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	40	0
+
+[layer variation]
+	2150
+	`at_speara`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_speard`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	37	0
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`SPEAR_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3200
+
+[item group name]
+	`spear`
+
+[cool time]
+	10000
+
+[all skill item container]
+	[all skill item]
+		[item growtype]
+			`[mage]`	0
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				1
+			[upper bound level]
+				70
+			[value]
+				2
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
+	[all skill item]
+		[item growtype]
+			`[at mage]`	0
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				1
+			[upper bound level]
+				70
+			[value]
+				2
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
+	[all skill item]
+		[item growtype]
+			`[creator mage]`	0
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				1
+			[upper bound level]
+				70
+			[value]
+				2
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
+[/all skill item container]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[change status]
+		`hp`
+		`>=`
+		`%`	90
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		0
+	[appendage]
+		1135
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[stat change]
+		`hp`
+		`>=`
+		`%`	50
+	[stat change]
+		`hp`
+		`<`
+		`%`	90
+	[time]
+		500	1	0
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		0
+	[appendage]
+		1136
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[my appendage]
+		1135
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	15
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[my appendage]
+		1136
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	25
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		576	495
+	[equipment magical attack]
+		408	350
+[/pvp]
+
+[possible kiri protect]

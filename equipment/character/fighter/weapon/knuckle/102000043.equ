@@ -3,13 +3,9 @@
 [name]
 	`异魔之主`
 
-[name2]
-	``
-
 [basic explain]
-	`MP减少时， 武器魔法攻击力也会根据剩余MP量而减少。 (武器魔法攻击力减少范围为1~100点)
-每500点MP可增加2点的武器魔法攻击力。 (最多增加150点)
-MP上限 +20%%`
+	`    每500点MP最大值， 可增加4点魔法攻击力和智力。 (最多增加300点)
+    MP高于50%%时， 可增加20%%的魔法暴击率。`
 
 [grade]
 	85
@@ -28,8 +24,11 @@ MP上限 +20%%`
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [magical attack]
-	56
+	62
 
 [attack speed]
 	100
@@ -37,26 +36,32 @@ MP上限 +20%%`
 [cast speed]
 	20
 
+[MP MAX]
+	1000
+
 [price]
-	136000
+	80000000
 
 [repair price]
-	114240
+	123840
 
 [value]
-	108800
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical attack]
-	783	726
+	862	735
 
 [equipment magical attack]
-	948	879
+	1043	890
 
 [separate attack]
-	504	343
+	555	359
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/01_weapon/fighter/knuckle/knuckle.img`	98
@@ -121,7 +126,7 @@ MP上限 +20%%`
 	`KNUCKLE_TOUCH`
 
 [durability]
-	39
+	48
 
 [weight]
 	1900
@@ -131,24 +136,6 @@ MP上限 +20%%`
 
 [cool time]
 	10000
-
-[routing priority]
-	`fighter`	1
-	`at fighter`	1
-[/routing priority]
-
-[if]
-	[change status in range]
-		`mp`	100	0
-[/if]
-
-[then]
-	[target]
-		`myself`	-1
-	[apply status in range]
-		`equipment magical attack`
-		`+`	-1	-100
-[/then]
 
 [if]
 	[change status]
@@ -165,14 +152,19 @@ MP上限 +20%%`
 		`myself`	-1
 		`mp max`	500
 		`equipment magical attack`
-		`+`	2	150
+		`+`	4	300
+	[stat change by stat]
+		`myself`	-1
+		`mp max`	500
+		`magical attack`
+		`+`	4	300
 [/then]
 
 [if]
 	[change status]
-		`hp`
-		`>`
-		`%`	0
+		`mp`
+		`>=`
+		`%`	50
 		`end`
 [/if]
 
@@ -180,9 +172,8 @@ MP上限 +20%%`
 	[target]
 		`myself`	-1
 	[stat by condition]
-		`mp max`
-		`%`	20
+		`magical critical hit`
+		`+`	20
 [/then]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

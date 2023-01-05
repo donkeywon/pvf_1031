@@ -1,0 +1,113 @@
+#PVF_File
+
+[name]
+	`天空的灯塔 - 王良四`
+
+[basic explain]
+	`力量、智力 +8%%`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[part set index]
+	12593
+
+[physical attack]
+	43
+
+[physical defense]
+	107
+
+[attack speed]
+	30
+
+[move speed]
+	30
+
+[cast speed]
+	50
+
+[need material]
+	9999	1500
+
+[price]
+	85000000
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment magical defense]
+	5136	4704
+
+[physical critical hit]
+	10
+
+[magical critical hit]
+	10
+
+[all elemental attack]
+	18
+
+[all elemental resistance]
+	14
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	191
+
+[field image]
+	`Item/FieldImage1.img`	7
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[equipment type]
+	`[wrist]`	21
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`%`	8
+	[stat by condition]
+		`magical attack`
+		`%`	8
+[/then]
+
+[possible kiri protect]

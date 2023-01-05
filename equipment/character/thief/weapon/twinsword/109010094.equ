@@ -1,0 +1,194 @@
+#PVF_File
+
+[name]
+	`超光速之刃`
+
+[basic explain]
+	`攻击速度 +5%%
+    施放[疾风乱舞]时， 有25%%的几率不受冷却时间影响。
+    施放[雷光刃影]时， 有25%%的几率不受冷却时间影响。
+    [装备属性指令]输入时， 可以减少[疾风乱舞]90%%的冷却时间、 50%%的攻击力， 效果持续10秒。 (消耗1个白色小晶块； 冷却时间60秒； 发动后立即重置[疾风乱舞]的剩余冷却时间)`
+
+[flavor text]
+	`    真是越来越疯狂了， 这个世界到底怎么了？`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	58
+
+[attack speed]
+	-30
+
+[move speed]
+	50
+
+[stuck]
+	-2
+
+[repair price]
+	116640
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	924	740
+
+[equipment magical attack]
+	684	579
+
+[separate attack]
+	520	336
+
+[physical critical hit]
+	5
+
+[skill levelup]
+	`[thief]`	34	4
+	`[thief]`	45	4
+	`[thief]`	79	2
+	`[thief]`	9	2
+[/skill levelup]
+
+[light attack]
+	15
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/thief/twinswd/twinswd.img`	115
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[thief]`
+
+[variation]
+	30	0
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[command]
+	{6=`(SKILL)`}
+[/command]
+
+[if]
+	[use command]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[consume item]
+		3034	1
+	[equipment duration]
+		10000
+	[appendage]
+		267
+	[skill cooltime reset]
+		34
+		`%`	-100
+[/then]
+
+[if]
+	[event use skill]
+		`thief`	34
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		25
+	[skill data up]
+		`[thief]`	34	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`thief`	45
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		25
+	[skill data up]
+		`[thief]`	45	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[possible kiri protect]

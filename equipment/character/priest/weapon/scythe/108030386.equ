@@ -1,0 +1,161 @@
+#PVF_File
+
+[name]
+	`魔魂之手`
+
+[basic explain]
+	`[恶魔之力]能量值上限 +20%%
+[化魔]能量值恢复量 +20%%
+[化魔]HP消耗量 -10%%
+[化魔]MP恢复量 +10%%
+    施放[化魔]时， 使自身增加10点暗属性强化， 效果持续20秒。`
+
+[detail explain]
+	`[恶魔之力]能量值上限 +20%%
+[化魔]能量值恢复量 +20%%
+[化魔]HP消耗量 -10%%
+[化魔]MP恢复量 +10%%
+    施放[化魔]时， 使自身增加10点暗属性强化， 效果持续20秒。 (冷却时间20秒)`
+
+[flavor text]
+	`    这手已经被恶魔控制了， 所以它接下来做出什么都与我无关啊……`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[magical attack]
+	62
+
+[attack speed]
+	80
+
+[stuck]
+	1
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	129600
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	952	752
+
+[equipment magical attack]
+	1002	802
+
+[separate attack]
+	607	507
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	121	3
+	`[priest]`	122	2
+	`[priest]`	123	3
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/priest/scythe/scythe.img`	101
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	36	0
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[priest]`	123	`[all]`	`[static]`	0	`%`	20
+	`[priest]`	10	`[all]`	`[level]`	0	`%`	-10
+	`[priest]`	10	`[all]`	`[level]`	1	`%`	10
+	`[priest]`	10	`[all]`	`[level]`	2	`%`	20
+[/skill data up]
+
+[if]
+	[event use skill]
+		`priest`	10
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[stat]
+		`dark attack`
+		`+`	10
+[/then]
+
+[possible kiri protect]

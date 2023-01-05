@@ -1,0 +1,127 @@
+#PVF_File
+
+[name]
+	`血色残阳狼魂腰带`
+
+[basic explain]
+	`攻击时， 有3%%的几率使队友及自身的攻击速度和移动速度增加5%%， 施放速度增加6%%， 效果持续20秒。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使队友及自身的攻击速度和移动速度增加5%%， 施放速度增加6%%， 效果持续20秒。(冷却时间20秒， 最大重叠1次； 该效果与血色残阳的头肩、 腰带、 鞋子共享； 装备解除后效果消失)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11857
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	22
+
+[magical attack]
+	22
+
+[magical defense]
+	25
+
+[attack speed]
+	50
+
+[cast speed]
+	60
+
+[move speed]
+	50
+
+[inventory limit]
+	3000
+
+[need material]
+	10000204	100
+
+[price]
+	85000000
+
+[repair price]
+	50400
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	48	53
+
+[equipment magical attack]
+	48	57
+
+[separate attack]
+	78	83
+
+[equipment physical defense]
+	784	728
+
+[icon]
+	`item/new_equipment/03_leather/belt/leather_belt.img`	50
+
+[field image]
+	`Item/FieldImage.img`	3
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[waist]`	17
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	20
+
+[weight]
+	800
+
+[item group name]
+	`lt waist`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[probability]
+		3
+	[equipment duration]
+		20000
+	[appendage]
+		11280
+[/then]
+
+[possible kiri protect]

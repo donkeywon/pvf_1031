@@ -1,0 +1,257 @@
+#PVF_File
+
+[name]
+	`精灵王之庇护`
+
+[basic explain]
+	`攻击速度 +10%%
+召唤高精精灵时， 无需牺牲低级精灵。
+[精灵召唤 : 伊伽贝拉]精灵王存在时间 -50%%
+[精灵召唤 : 伊伽贝拉]召唤数量上限 +1
+[精灵召唤 : 伊伽贝拉]攻击冷却时间 -30%%
+[冰龙旋舞]水柱数量 +2
+[冰龙旋舞]爆炸攻击力 +30%%
+[冰龙旋舞]冷却时间 -10%%
+技能攻击力 +10%%`
+
+[flavor text]
+	`    精灵王， 我饿了！
+    精灵王， 我渴了。
+    精灵王， 我要买东西……
+    (精灵王怎么这么纵容这孩子……哦， 我明白了， 肯定是他亲生的)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[magical attack]
+	97
+
+[attack speed]
+	200
+
+[cast speed]
+	200
+
+[stuck]
+	1
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	864	742
+
+[equipment magical attack]
+	1056	906
+
+[separate attack]
+	589	382
+
+[skill levelup]
+	`[mage]`	47	3
+	`[mage]`	76	2
+	`[mage]`	77	2
+	`[mage]`	78	2
+	`[mage]`	79	2
+	`[mage]`	48	2
+	`[mage]`	81	2
+[/skill levelup]
+
+[all elemental attack]
+	18
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/mage/rod/rod.img`	106
+
+[field image]
+	`Item/field_weapon.img`	7
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	37	0
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2150
+	`at_roda`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_rodd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	37	0
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`ROD_TOUCH`
+
+[durability]
+	34
+
+[weight]
+	2200
+
+[item group name]
+	`rod`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[mage]`	47	`[dungeon type]`	`[level]`	2	`+`	1
+	`[mage]`	47	`[dungeon type]`	`[level]`	3	`%`	-50
+	`[mage]`	47	`[dungeon type]`	`[level]`	4	`%`	-30
+	`[mage]`	47	`[dungeon type]`	`[level]`	5	`%`	-30
+	`[mage]`	47	`[dungeon type]`	`[level]`	6	`%`	-30
+	`[mage]`	47	`[dungeon type]`	`[level]`	7	`%`	-30
+	`[mage]`	47	`[dungeon type]`	`[level]`	8	`%`	-30
+	`[mage]`	47	`[dungeon type]`	`[level]`	9	`%`	-30
+	`[mage]`	76	`[all]`	`[static]`	7	`+`	-1
+	`[mage]`	77	`[all]`	`[static]`	7	`+`	-1
+	`[mage]`	78	`[all]`	`[static]`	7	`+`	-1
+	`[mage]`	79	`[all]`	`[static]`	7	`+`	-1
+	`[mage]`	47	`[all]`	`[static]`	8	`+`	-1
+	`[at mage]`	13	`[dungeon type]`	`[static]`	5	`+`	2
+	`[at mage]`	13	`[dungeon type]`	`[level]`	1	`%`	30
+	`[at mage]`	13	`[dungeon type]`	`[cooltime]`	0	`%`	-10
+[/skill data up]
+
+[all skill item container]
+	[all skill item]
+		[item growtype]
+			`[at mage]`	2
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				20
+			[upper bound level]
+				48
+			[value]
+				3
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
+[/all skill item container]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		0
+	[appendage]
+		11250
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		432	371
+	[equipment magical attack]
+		528	453
+[/pvp]
+
+[possible kiri protect]

@@ -1,0 +1,154 @@
+#PVF_File
+
+[name]
+	`逝魔之灵心腰带`
+
+[basic explain]
+	`    攻击和施放技能时， 消耗1%%的MP值， 增加20%%的魔法暴击率， 效果持续60秒。`
+
+[detail explain]
+	`    攻击和施放技能时， 消耗1%%的MP值， 增加20%%的魔法暴击率， 效果持续60秒。 (冷却时间60秒； 解除装备后效果消失)`
+
+[flavor text]
+	`摩恩是素喃国的僧侣， 为人有点半疯癫， 人称“地狱僧侣”。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11198
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[magical attack]
+	28
+
+[magical defense]
+	28
+
+[inventory limit]
+	3000
+
+[price]
+	85000000
+
+[repair price]
+	50960
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	408	372
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/02_cloth/belt/cloth_belt.img`	17
+
+[field image]
+	`Item/field_equip.img`	3
+
+[equipment type]
+	`[waist]`	16
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	18
+
+[weight]
+	550
+
+[item group name]
+	`cl waist`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[equipment duration]
+		60000
+	[restore]
+		`mp`
+		`%`	-1	0
+	[appendage]
+		994
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[casting]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[equipment duration]
+		60000
+	[restore]
+		`mp`
+		`%`	-1	0
+	[appendage]
+		994
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

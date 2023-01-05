@@ -1,0 +1,128 @@
+#PVF_File
+
+[name]
+	`封霜雪影长袍`
+
+[basic explain]
+	`    装备时， 可以使300px范围内的所有敌人减少44点的冰属性抗性。`
+
+[flavor text]
+	`    我要冰封这里的一切！`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11199
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[magical attack]
+	46
+
+[magical defense]
+	46
+
+[price]
+	85000000
+
+[repair price]
+	72800
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	1224	1116
+
+[magical critical hit]
+	5
+
+[water attack]
+	10
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/02_cloth/coat/cloth_coat.img`	22
+
+[field image]
+	`Item/field_equip.img`	0
+
+[equipment type]
+	`[coat]`	19
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	1400
+
+[item group name]
+	`cl coat`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[cooltime]
+		500
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`all enemy`	300
+	[duration]
+		500
+	[stat]
+		`water resistance`
+		`+`	-44
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

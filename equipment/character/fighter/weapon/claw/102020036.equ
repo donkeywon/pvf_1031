@@ -3,16 +3,20 @@
 [name]
 	`百鬼冤灵之咒`
 
-[name2]
-	``
-
 [basic explain]
-	`施放[狂 · 霸王拳]时， 附加22%%的伤害， 效果持续6秒。
-[狂 · 霸王拳]的无色小晶块消耗量 +1
-攻击不死族类型的敌人时， 附加15%%的伤害。`
+	`    施放[狂 · 霸王拳]时， 附加25%%的伤害， 效果持续7秒。
+[狂 · 霸王拳]无色小晶块消耗量 +1
+    攻击不死族敌人时， 附加15%%的伤害。
+    攻击类人型敌人时， 附加15%%的伤害。`
+
+[detail explain]
+	`    施放[狂 · 霸王拳]时， 附加25%%的伤害， 效果持续7秒。
+[狂 · 霸王拳]无色小晶块消耗量 +1
+    攻击不死族敌人时， 附加15%%的伤害。
+    攻击类人型敌人时， 附加15%%的伤害。`
 
 [flavor text]
-	`活着有什么意思？ 被嘲笑、 被欺辱……来吧， 跟我们走吧， 下面的世界欢迎你~  --某个冤鬼`
+	`    你们怎么能独活呢？ 和我们一起去下面玩吧！  --某只恶鬼`
 
 [grade]
 	85
@@ -31,40 +35,46 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [physical attack]
-	56
+	62
 
 [magical attack]
-	28
+	31
 
 [price]
-	136000
+	80000000
 
 [repair price]
-	114240
+	123840
 
 [value]
-	108800
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical attack]
-	824	764
+	907	774
 
 [equipment magical attack]
-	824	764
+	907	774
 
 [separate attack]
-	504	343
+	555	359
 
 [physical critical hit]
 	3
 
 [skill levelup]
-	`[fighter]`	45	2
-	`[at fighter]`	45	2
+	`[fighter]`	45	5
+	`[at fighter]`	45	5
 [/skill levelup]
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/01_weapon/fighter/claw/claw.img`	93
@@ -129,7 +139,7 @@
 	`CLAW_TOUCH`
 
 [durability]
-	39
+	48
 
 [weight]
 	2300
@@ -140,10 +150,20 @@
 [cool time]
 	10000
 
-[routing priority]
-	`fighter`	3
-	`at fighter`	3
-[/routing priority]
+[if]
+	[attack success]
+		1
+	[target type]
+		`human`
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	15
+[/then]
 
 [if]
 	[target type]
@@ -161,27 +181,40 @@
 [/then]
 
 [if]
-	[skill]
-		`fighter`	74
-	[/skill]
-	[attack success]
-		1
+	[use skill]
+		`at fighter`	74
+	[/use skill]
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	22
+		`myself`	-1
+	[duration]
+		7000
+	[appendage]
+		297
 [/then]
 
 [if]
-	[skill]
-		`at fighter`	74
-	[/skill]
+	[use skill]
+		`fighter`	74
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		6000
+	[appendage]
+		297
+[/then]
+
+[if]
 	[attack success]
 		1
+	[my appendage]
+		297
 [/if]
 
 [then]
@@ -189,7 +222,7 @@
 		`enemy`	-1
 	[add absolute damage]
 		`all`
-		`%`	22
+		`%`	25
 [/then]
 
 [skill data up]
@@ -197,5 +230,4 @@
 	`[at fighter]`	74	`[all]`	`[skill consume item]`	0	`+`	1
 [/skill data up]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

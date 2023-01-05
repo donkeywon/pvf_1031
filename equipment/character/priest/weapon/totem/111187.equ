@@ -1,0 +1,148 @@
+#PVF_File
+
+[name]
+	`首领萨斯的棺木图腾`
+
+[basic explain]
+	`   施放[意念驱动]时， 会从空中掉落首领萨斯的棺木产生冲击波； 同时使自身增加300点力量、 20%的攻击速度和移动速度， 效果持续60秒。`
+
+[flavor text]
+	`  这把武器好诡异,隐约间似乎能听到被囚禁的冤魂们的悲哀......`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	92
+
+[stuck]
+	-1
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[equipment physical attack]
+	1052	852
+
+[equipment magical attack]
+	901	701
+
+[separate attack]
+	607	507
+
+[icon]
+	`item/new_equipment/01_weapon/priest/totem/totem.img`	108
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	42	0
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+[/elemental property]
+
+[if]
+	[use skill]
+		`priest`	13
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		60370	150	-25	500	2	0	`woodendolltomb.ptl`
+		60370	-70	-25	500	2	0	`woodendolltomb.ptl`
+		60370	30	50	500	2	0	`woodendolltomb.ptl`
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`priest`	13
+	[/use skill]
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		60000
+	[stat]
+		`physical attack`
+		`+`	300
+	[stat]
+		`attack speed`
+		`+`	200
+	[stat]
+		`move speed`
+		`+`	200
+[/then]
+
+[possible kiri protect]

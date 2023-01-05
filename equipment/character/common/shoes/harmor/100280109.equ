@@ -1,0 +1,128 @@
+#PVF_File
+
+[name]
+	`逆龙之战急速短靴`
+
+[basic explain]
+	`    前冲时， 增加自身15%%的攻击速度和移动速度， 效果持续10秒。 (冷却时间10秒)
+    前冲状态下， 使自身进入霸体状态。
+(解除装备后效果消失)`
+
+[flavor text]
+	`    在战斗中， 速度决定一切！`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[part set index]
+	11348
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	23
+
+[magical attack]
+	17
+
+[physical defense]
+	21
+
+[move speed]
+	70
+
+[repair price]
+	64800
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	2208	1992
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/05_harmor/shoes/harmor_shoes.img`	16
+
+[field image]
+	`Item/field_equip.img`	14
+
+[equipment type]
+	`[shoes]`	19
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	26
+
+[weight]
+	1600
+
+[item group name]
+	`ha shoes`
+
+[cool time]
+	10000
+
+[if]
+	[set my state]
+		1
+	[my state]
+		`dash`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[stat]
+		`move speed`
+		`+`	150
+	[stat]
+		`attack speed`
+		`+`	150
+[/then]
+
+[if]
+	[set my state]
+		1
+	[my state]
+		`dash`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		0
+	[appendage]
+		476
+[/then]
+
+[possible kiri protect]

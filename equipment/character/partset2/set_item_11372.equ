@@ -1,0 +1,54 @@
+#PVF_File
+
+[set name]
+	`断肠绝伤  套装`
+
+[piece set ability]
+	5
+	[fire attack]
+		15
+	[water attack]
+		15
+	[dark attack]
+		15
+	[light attack]
+		15
+	[if]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase damage]
+			`%`	20
+	[/then]
+	[if]
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[add absolute defense percent]
+			`all`	20
+	[/then]
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			15000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			15000
+		[buff]
+			`superarmor`
+	[/then]
+	[parameter basic explain]
+		`  装备时， 增加20%%的伤害。
+  被攻击时， 所受伤害 -20%%
+  攻击时， 使自身进入霸体状态， 效果持续15秒。`
+[/piece set ability]

@@ -1,0 +1,143 @@
+#PVF_File
+
+[name]
+	`幽冥列车长的亡灵护肩`
+
+[basic explain]
+	` 被暗属性攻击时， 使自身增加5点暗属性抗性， 效果持续30秒， 最多叠加5次。
+ 每5点暗属性抗性增加3点暗属性强化， 最多增加30点。
+ 被攻击时， 有30%%的几率免疫所受伤害， 冷却时间20秒。`
+
+[flavor text]
+	`通往地狱的列车即将开启`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	36
+
+[magical attack]
+	24
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[repair price]
+	64800
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	2376	2208
+
+[dark attack]
+	10
+
+[dark resistance]
+	10
+
+[icon]
+	`item/new_equipment/04_larmor/neck/larmor_neck.img`	19
+
+[field image]
+	`Item/field_equip.img`	7
+
+[equipment type]
+	`[shoulder]`	18
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	1900
+
+[item group name]
+	`la shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[element]
+		`dark`
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		30000
+	[appendage]
+		4371
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`dark resistance`	5
+		`dark attack`
+		`+`	3	30
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		30
+	[add absolute defense percent]
+		`all`	100
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]

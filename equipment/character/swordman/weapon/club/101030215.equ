@@ -1,0 +1,277 @@
+#PVF_File
+
+[name]
+	`梁月的钝剑`
+
+[basic explain]
+	`    破招伤害 +30%%
+    装备后， 每3秒使自身增加5%%的攻击速度、 5%%的移动速度、 25点力量和智力。
+    攻击时， 使敌人减少25%%的防御力， 效果持续40秒。
+    攻击时， 附加20%%的伤害。
+    攻击时， 有5%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`    破招伤害 +30%%（增加破招伤害类属性仅适用于最高数值， 且无法叠加）
+    装备后， 每3秒使自身增加5%%的攻击速度、 5%%的移动速度、 25点力量和智力。（最多叠加4次）
+    攻击时， 使敌人减少25%%的防御力， 效果持续40秒。（最多叠加1次）
+    攻击时， 附加20%%的伤害。
+    攻击时， 有5%%的几率使敌人进入眩晕状态。 (若敌人高于Lv91， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`    如果妳对自己的实力有信心， 即使随地捡起的枝叶也能成为这世上最好的武器。  ——梁月`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	97
+
+[magical attack]
+	97
+
+[attack speed]
+	-30
+
+[stuck]
+	-1
+
+[need material]
+	3285	3000
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	1056	906
+
+[equipment magical attack]
+	1056	906
+
+[separate attack]
+	589	382
+
+[skill levelup]
+	`[swordman]`	239	1
+	`[swordman]`	229	1
+	`[swordman]`	242	1
+	`[swordman]`	248	1
+	`[swordman]`	234	1
+	`[swordman]`	240	1
+	`[swordman]`	230	1
+	`[swordman]`	245	1
+	`[swordman]`	236	1
+	`[swordman]`	243	1
+	`[swordman]`	231	1
+	`[swordman]`	246	1
+	`[swordman]`	244	1
+	`[swordman]`	241	1
+[/skill levelup]
+
+[icon]
+	`Item/new_equipment/01_weapon/swordman/club/club.img`	134
+
+[field image]
+	`Item/FieldImage1.img`	8
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	47	0
+
+[layer variation]
+	2791
+	`clubc1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	651
+	`clubb1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	2792
+	`clubc2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	652
+	`clubb2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	47	0
+
+[layer variation]
+	2791
+	`clubc1`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	651
+	`clubb1`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	2792
+	`clubc2`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	652
+	`clubb2`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`STICK_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3400
+
+[item group name]
+	`club`
+
+[cool time]
+	10000
+
+[all skill item]
+	[item growtype]
+		`[all]`	0
+	[skill apply condition]
+		[skill group]
+			`[all]`
+		[lower bound level]
+			1
+		[upper bound level]
+			70
+		[value]
+			1
+		[extra condition]
+			`[except for ex skill]`
+		[/extra condition]
+	[/skill apply condition]
+	[skill phase]
+		`[all]`
+[/all skill item]
+
+[if]
+	[attack condition]
+		`counter`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	30
+[/then]
+
+[if]
+	[time]
+		3000	1	0
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[appendage]
+		344
+[/then]
+
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	20
+[/skill data up]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[appendage]
+		853
+	[appendage]
+		854
+[/then]
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[reduce duration to human armor at pvp module]
+		50
+	[duration]
+		3000
+	[reduce probability at pvp module]
+		80
+	[probability]
+		5
+	[active status]
+		`stun`	91
+[/then]
+
+[possible kiri protect]

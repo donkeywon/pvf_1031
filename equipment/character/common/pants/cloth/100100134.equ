@@ -1,0 +1,128 @@
+#PVF_File
+
+[name]
+	`火殒灭炎长裤`
+
+[basic explain]
+	`    装备时， 可以使300px范围内的所有敌人减少44点的火属性抗性。`
+
+[flavor text]
+	`    这是裤子上面烧着火， 还是火烧成了裤子形状呢？`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11199
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[magical attack]
+	46
+
+[magical defense]
+	46
+
+[price]
+	85000000
+
+[repair price]
+	65520
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	1020	930
+
+[magical critical hit]
+	5
+
+[fire attack]
+	10
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`Item/new_equipment/02_cloth/pants/cloth_pants.img`	20
+
+[field image]
+	`Item/field_equip.img`	1
+
+[equipment type]
+	`[pants]`	18
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	24
+
+[weight]
+	1100
+
+[item group name]
+	`cl pants`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[cooltime]
+		500
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`all enemy`	300
+	[duration]
+		500
+	[stat]
+		`fire resistance`
+		`+`	-44
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

@@ -1,0 +1,171 @@
+#PVF_File
+
+[name]
+	`最佳球手的逆袭跑鞋`
+
+[basic explain]
+	`    施放[受身蹲伏]时， 使自身进入霸体状态， 效果持续5秒。
+前冲状态时， 施放霸体护甲并增加移动速度。
+Y轴移动速度 +20%%`
+
+[detail explain]
+	`    施放[受身蹲伏]时， 使自身进入霸体状态， 效果持续5秒。
+前冲状态时， 施放霸体护甲并增加移动速度。(最多增加100%%)
+Y轴移动速度 +20%%`
+
+[flavor text]
+	`    那家伙， 溜的比谁都快！  --某球手`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11470
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	28
+
+[magical attack]
+	18
+
+[move speed]
+	60
+
+[price]
+	85000000
+
+[repair price]
+	65520
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	1836	1674
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/04_larmor/shoes/larmor_shoes.img`	18
+
+[field image]
+	`Item/field_equip.img`	9
+
+[equipment type]
+	`[shoes]`	18
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	25
+
+[weight]
+	1400
+
+[item group name]
+	`la shoes`
+
+[cool time]
+	10000
+
+[y move dash speed]
+	0.2
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[event use skill]
+		`common`	190
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[buff]
+		`superarmor`
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[set my state]
+		1
+	[my state]
+		`dash`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		0
+	[appendage]
+		476
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[time]
+		100	1	0
+	[my state]
+		`dash`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[stat]
+		`move speed`
+		`+`	100
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

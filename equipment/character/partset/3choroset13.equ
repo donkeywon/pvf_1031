@@ -4,37 +4,23 @@
 	`雷霆之啸  套装`
 
 [piece set ability]
-	3	
+	5
 	[skill data up]
 		`[fighter]`	40	`[dungeon type]`	`[level]`	0	`%`	30
+		`[fighter]`	40	`[dungeon type]`	`[level]`	1	`%`	20
+		`[fighter]`	12	`[dungeon type]`	`[level]`	1	`%`	15
+		`[fighter]`	12	`[dungeon type]`	`[level]`	7	`%`	15
 		`[at fighter]`	40	`[dungeon type]`	`[level]`	0	`%`	30
-	[/skill data up]
-	[parameter basic explain]
-		`[念气环绕]攻击力 +30%%`
-[/piece set ability]
-
-[piece set ability]
-	6	
-	[skill data up]
-		`[fighter]`	16	`[dungeon type]`	`[level]`	0	`%`	15
+		`[at fighter]`	40	`[dungeon type]`	`[level]`	1	`%`	20
+		`[at fighter]`	112	`[dungeon type]`	`[static]`	0	`%`	-15
+		`[fighter]`	16	`[dungeon type]`	`[level]`	0	`%`	25
 		`[fighter]`	16	`[dungeon type]`	`[cooltime]`	0	`%`	-30
-		`[fighter]`	15	`[dungeon type]`	`[level]`	3	`%`	15
+		`[fighter]`	15	`[dungeon type]`	`[level]`	3	`%`	25
 		`[fighter]`	15	`[dungeon type]`	`[cooltime]`	0	`%`	-30
-		`[at fighter]`	16	`[dungeon type]`	`[level]`	0	`%`	15
+		`[at fighter]`	16	`[dungeon type]`	`[level]`	0	`%`	25
 		`[at fighter]`	16	`[dungeon type]`	`[cooltime]`	0	`%`	-30
-		`[at fighter]`	15	`[dungeon type]`	`[level]`	3	`%`	15
+		`[at fighter]`	15	`[dungeon type]`	`[level]`	3	`%`	25
 		`[at fighter]`	15	`[dungeon type]`	`[cooltime]`	0	`%`	-30
-	[/skill data up]
-	[parameter basic explain]
-		`[螺旋念气场]冷却时间 -30%%
-[螺旋念气场]攻击力 +15%%
-[狮子吼]冷却时间 -30%%
-[狮子吼]攻击力 +15%%`
-[/piece set ability]
-
-[piece set ability]
-	9	
-	[skill data up]
 		`[fighter]`	79	`[dungeon type]`	`[level]`	0	`%`	50
 		`[fighter]`	79	`[dungeon type]`	`[level]`	1	`%`	50
 		`[fighter]`	79	`[dungeon type]`	`[level]`	2	`%`	50
@@ -43,9 +29,10 @@
 		`[fighter]`	79	`[dungeon type]`	`[level]`	5	`%`	50
 		`[fighter]`	79	`[dungeon type]`	`[level]`	6	`%`	50
 		`[fighter]`	79	`[dungeon type]`	`[level]`	12	`+`	40
-		`[fighter]`	79	`[dungeon type]`	`[level]`	7	`%`	20
-		`[fighter]`	79	`[dungeon type]`	`[cooltime]`	0	`%`	-30
 		`[fighter]`	79	`[dungeon type]`	`[skill consume item]`	0	`+`	1
+		`[fighter]`	79	`[dungeon type]`	`[static]`	1	`+`	150
+		`[fighter]`	69	`[dungeon type]`	`[cooltime]`	0	`%`	-30
+		`[fighter]`	69	`[dungeon type]`	`[level]`	0	`%`	20
 		`[at fighter]`	79	`[dungeon type]`	`[level]`	0	`%`	50
 		`[at fighter]`	79	`[dungeon type]`	`[level]`	1	`%`	50
 		`[at fighter]`	79	`[dungeon type]`	`[level]`	2	`%`	50
@@ -53,21 +40,33 @@
 		`[at fighter]`	79	`[dungeon type]`	`[level]`	4	`%`	50
 		`[at fighter]`	79	`[dungeon type]`	`[level]`	5	`%`	50
 		`[at fighter]`	79	`[dungeon type]`	`[level]`	6	`%`	50
-		`[at fighter]`	79	`[dungeon type]`	`[skill consume item]`	0	`+`	1
 		`[at fighter]`	79	`[dungeon type]`	`[level]`	12	`+`	40
+		`[at fighter]`	79	`[dungeon type]`	`[skill consume item]`	0	`+`	1
+		`[at fighter]`	79	`[dungeon type]`	`[static]`	1	`+`	150
+		`[at fighter]`	112	`[dungeon type]`	`[level]`	0	`%`	30
 		`[at fighter]`	112	`[dungeon type]`	`[cooltime]`	0	`%`	-35
+		`[at fighter]`	112	`[dungeon type]`	`[static]`	0	`%`	-30
 	[/skill data up]
 	[parameter basic explain]
-		`格斗家(男)
-[念兽 : 龙虎啸]攻击力 +50%%
-[念兽 : 龙虎啸]移动速度 +4%%
-[念兽 : 龙虎啸]无色小晶块消耗量 +1
-[念气环绕]冷却时间 -30%%
-
+		`[念气环绕]攻击力 +30%%
+[念气环绕]持续时间 +20%%
+格斗家(男)
+[念气环绕 : 御]多段攻击间隔 -15%%
 格斗家(女)
+[念气波]攻击力 +15%%
+[螺旋念气场]攻击力 +25%%
+[螺旋念气场]冷却时间 -30%%
+[狮子吼]攻击力 +25%%
+[狮子吼]冷却时间 -30%%
 [念兽 : 龙虎啸]攻击力 +50%%
-[念兽 : 龙虎啸]冷却时间 -30%%
-[念兽 : 龙虎啸]持续时间 +20%%
 [念兽 : 龙虎啸]移动速度 +4%%
-[念兽 : 龙虎啸]无色小晶块消耗量 +1`
+[念兽 : 龙虎啸]攻击速度增加量 +15%%
+[念兽 : 龙虎啸]无色小晶块消耗量 +1
+格斗家(男)
+[念气环绕 : 御]冷却时间 -35%%
+[念气环绕 : 御]攻击力增幅量 +30%%
+[念气环绕 : 御]多段攻击间隔 -30%%
+格斗家(女)
+[幻影爆碎]攻击力 +20%%
+[幻影爆碎]冷却时间 -30%%`
 [/piece set ability]

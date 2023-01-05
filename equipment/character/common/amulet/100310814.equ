@@ -1,0 +1,122 @@
+#PVF_File
+
+[name]
+	`无上之威严`
+
+[basic explain]
+	`    继承遗忘之王的威严， 增加自身100点的力量和智力、 54点的独立攻击力、 以及5%%的物理暴击率和魔法暴击率。
+    被破招攻击时， 100%%的几率召唤出锤王波罗丁。`
+
+[detail explain]
+	`    继承遗忘之王的威严， 增加自身100点的力量和智力、 54点的独立攻击力、 以及5%%的物理暴击率和魔法暴击率。
+    被破招攻击时， 100%%的几率召唤出锤王波罗丁。(冷却时间40秒)`
+
+[flavor text]
+	`    虽然后世称他为“暴君”， 但当时确实有无数的骑士向他盟誓效忠， 甚至在失去王权后， 也仍有非常多的骑士选择站在他一边。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	36
+
+[magical defense]
+	90
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	7920	7360
+
+[icon]
+	`Item/new_equipment/08_necklace/necklace.img`	120
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	100
+	[stat by condition]
+		`magical attack`
+		`+`	100
+	[stat by condition]
+		`separate attack`
+		`+`	54
+	[stat by condition]
+		`physical critical hit`
+		`+`	5
+	[stat by condition]
+		`magical critical hit`
+		`+`	5
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		40000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		40000
+	[summon monster]
+		61750	100	1
+[/then]
+
+[possible kiri protect]

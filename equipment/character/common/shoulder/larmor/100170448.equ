@@ -1,0 +1,113 @@
+#PVF_File
+
+[name]
+	`海神谜咒之轻灵肩甲`
+
+[basic explain]
+	`攻击时， 有10%%的几率使敌人进入诅咒状态10秒。`
+
+[detail explain]
+	`攻击时， 有10%%的几率使敌人进入诅咒状态10秒； 诅咒状态下的敌人， 将减少50点力量、 体力、 智力和精神。(若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	36
+
+[magical attack]
+	24
+
+[price]
+	85000000
+
+[repair price]
+	64800
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[need material]
+	10000204	100
+
+[physical critical hit]
+	4
+
+[magical critical hit]
+	4
+
+[part set index]
+	12400
+
+[equipment physical defense]
+	2352	2184
+
+[water attack]
+	6
+
+[fire resistance]
+	-6
+
+[icon]
+	`item/new_equipment/04_larmor/neck/larmor_neck.img`	35
+
+[field image]
+	`Item/field_equip.img`	7
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[shoulder]`	18
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	1900
+
+[item group name]
+	`la shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		10
+	[duration]
+		10000
+	[active status]
+		`curse`	90	50	50	50	50
+[/then]
+
+[possible kiri protect]

@@ -3,15 +3,15 @@
 [name]
 	`惊月流云扫把`
 
-[name2]
-	``
-
 [basic explain]
-	`[苍蝇拍]、 [超级苍蝇拍]技能失败率 -10%%
-[苍蝇拍]、 [超级苍蝇拍]大成功率 +10%%
-
-攻击时， 有1%%的几率使[炽炎星陨]、 [冰天震地]、 [风暴漩涡]的能量消耗值减少30%%， 效果持续15秒。
-攻击时， 可对敌人附加10%%的伤害。`
+	`[变异苍蝇拍]、 [超级苍蝇拍]、 [暴炎加热炉]、 [冰霜钻孔车]、 [电鳗碰撞机]、 [反重力装置]失败率 -10%%
+[变异苍蝇拍]、 [超级苍蝇拍]、 [暴炎加热炉]、 [冰霜钻孔车]、 [电鳗碰撞机]、 [反重力装置]大成功率 +10%%
+[炽炎星陨]、 [冰天震地]、 [风暴漩涡]能量消耗值 -25%%
+[乖离 : 异界蜂群]持续攻击时间 +2秒
+[次元 : 粒子波]攻击力 +20%%
+[细心缝补]队员选择范围 +10%%
+[细心缝补]恢复量 +10%%
+攻击时， 附加15%%的伤害。`
 
 [grade]
 	85
@@ -31,8 +31,11 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [magical attack]
-	56
+	62
 
 [attack speed]
 	60
@@ -41,30 +44,38 @@
 	30
 
 [price]
-	153000
+	80000000
 
 [repair price]
-	128520
+	137600
 
 [value]
-	122400
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical attack]
-	824	764
+	907	774
 
 [equipment magical attack]
-	906	840
+	998	851
 
 [separate attack]
-	504	343
+	555	359
 
 [skill levelup]
-	`[mage]`	95	2
-	`[mage]`	115	1
+	`[mage]`	95	3
+	`[mage]`	115	2
+	`[creator mage]`	136	1
+	`[creator mage]`	133	1
 [/skill levelup]
+
+[all elemental attack]
+	15
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/01_weapon/mage/broom/broom.img`	78
@@ -96,6 +107,26 @@
 	`equipment/character/mage.lay`
 
 [animation job]
+	`[at mage]`
+
+[variation]
+	27	1
+
+[layer variation]
+	2150
+	`at_brooma`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_broomd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
 	`[creator mage]`
 
 [variation]
@@ -122,7 +153,7 @@
 	`BROOM_TOUCH`
 
 [durability]
-	35
+	45
 
 [weight]
 	2500
@@ -133,10 +164,6 @@
 [cool time]
 	10000
 
-[routing priority]
-	`mage`	4
-[/routing priority]
-
 [required skill]
 	91
 
@@ -145,6 +172,17 @@
 	`[mage]`	95	`[all]`	`[static]`	2	`+`	100
 	`[mage]`	115	`[all]`	`[static]`	0	`+`	-100
 	`[mage]`	115	`[all]`	`[static]`	2	`+`	100
+	`[mage]`	103	`[all]`	`[static]`	0	`+`	-100
+	`[mage]`	103	`[all]`	`[static]`	2	`+`	100
+	`[mage]`	104	`[all]`	`[static]`	0	`+`	-100
+	`[mage]`	104	`[all]`	`[static]`	2	`+`	100
+	`[mage]`	105	`[all]`	`[static]`	0	`+`	-100
+	`[mage]`	105	`[all]`	`[static]`	2	`+`	100
+	`[mage]`	106	`[all]`	`[static]`	0	`+`	-100
+	`[mage]`	106	`[all]`	`[static]`	2	`+`	100
+	`[creator mage]`	133	`[all]`	`[static]`	2	`%`	-25
+	`[creator mage]`	136	`[all]`	`[static]`	1	`%`	-25
+	`[creator mage]`	249	`[all]`	`[static]`	1	`%`	-25
 [/skill data up]
 
 [if]
@@ -157,29 +195,7 @@
 		`enemy`	-1
 	[add absolute damage]
 		`all`
-		`%`	10
+		`%`	15
 [/then]
 
-[if]
-	[attack success]
-		1
-	[cooltime]
-		15000
-[/if]
-
-[then]
-	[target]
-		`myself`	-1
-	[probability]
-		1
-	[duration]
-		10000
-	[skill data up]
-		`[creator mage]`	133	`[all]`	`[static]`	2	`%`	-30
-		`[creator mage]`	136	`[all]`	`[static]`	1	`%`	-30
-		`[creator mage]`	249	`[all]`	`[static]`	2	`%`	-30
-	[/skill data up]
-[/then]
-
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

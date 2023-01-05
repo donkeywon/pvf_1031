@@ -1,0 +1,180 @@
+#PVF_File
+
+[name]
+	`弹幕之雨`
+
+[basic explain]
+	`    攻击时， 附加10%%的光属性伤害。`
+
+[detail explain]
+	`    攻击时， 附加10%%的光属性伤害。`
+
+[flavor text]
+	`    这是我最喜欢的装备。  --爱穿白丝的巡音`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	65
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	957	749
+
+[equipment magical attack]
+	805	630
+
+[separate attack]
+	589	382
+
+[physical critical hit]
+	7
+
+[magical critical hit]
+	5
+
+[skill levelup]
+	`[gunner]`	30	5
+	`[gunner]`	143	1
+	`[at gunner]`	30	5
+	`[at gunner]`	143	1
+[/skill levelup]
+
+[light attack]
+	40
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/revolver/revolver.img`	99
+
+[field image]
+	`Item/field_weapon.img`	1
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	33	0
+
+[layer variation]
+	2790
+	`revc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`revb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	31	0
+
+[layer variation]
+	2790
+	`at_revc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_revb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2000
+
+[item group name]
+	`revolver`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`light`
+		`%`	10
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		479	375
+	[equipment magical attack]
+		403	315
+[/pvp]
+
+[possible kiri protect]

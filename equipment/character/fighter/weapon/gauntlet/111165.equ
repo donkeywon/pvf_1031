@@ -1,0 +1,171 @@
+#PVF_File
+
+[name]
+	`巨灵之足袭`
+
+[basic explain]
+	`    背击伤害 +20%%
+    攻击时， 有5%%的几率向300px范围内的敌人发动布鲁的乱拳攻击。`
+
+[flavor text]
+	`    别犹豫了， 快动手吧！在我的灵魂被恶灵吞噬之前。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	92
+
+[attack speed]
+	-80
+
+[stuck]
+	-1
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	129600
+
+[value]
+	8500000
+
+[equipment physical attack]
+	1202	1002
+
+[equipment magical attack]
+	901	701
+
+[separate attack]
+	607	507
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/gauntlet/gauntlet.img`	108
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	34	0
+
+[layer variation]
+	2790
+	`gauntletc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gauntletb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	33	0
+
+[layer variation]
+	2150
+	`at_gauntleta`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_gauntletc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_gauntletx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[attack condition]
+		`back attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	20
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		500
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[passive object]
+		60085	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]

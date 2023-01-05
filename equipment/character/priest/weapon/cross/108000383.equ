@@ -1,0 +1,160 @@
+#PVF_File
+
+[name]
+	`黑暗十字 - 堕落之心`
+
+[basic explain]
+	`[黑暗权能攻击力] +15%%
+[地狱之门攻击力] +15%%
+[魔化 : 末日审判者]持续时间 +20秒
+    施放[天使祝福]时， 在持续时间内增加22点暗属性强化。`
+
+[detail explain]
+	`[黑暗权能攻击力] +15%%
+[地狱之门攻击力] +15%%
+[魔化 : 末日审判者]持续时间 +20秒
+    施放[天使祝福]时， 在持续时间内增加22点暗属性强化。 (最多叠加1次）`
+
+[flavor text]
+	`    你们这群肮脏的人类， 我为你们半生劳苦， 却换来如今的满门被诛。 我不服！ 不服！！`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	62
+
+[physical defense]
+	75
+
+[magical defense]
+	75
+
+[cast speed]
+	20
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	1002	802
+
+[equipment magical attack]
+	952	752
+
+[equipment physical defense]
+	990	790
+
+[equipment magical defense]
+	990	790
+
+[separate attack]
+	607	507
+
+[skill levelup]
+	`[priest]`	53	2
+	`[priest]`	121	1
+	`[priest]`	131	3
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/priest/cross/cross.img`	99
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	35	0
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[priest]`	125	`[all]`	`[level]`	0	`%`	15
+	`[priest]`	125	`[all]`	`[level]`	2	`%`	15
+	`[priest]`	133	`[all]`	`[level]`	0	`%`	15
+	`[priest]`	119	`[all]`	`[level]`	1	`+`	20000
+[/skill data up]
+
+[if]
+	[use skill]
+		`priest`	53
+	[/use skill]
+	[cooltime]
+		120000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		120000
+	[stat]
+		`dark attack`
+		`+`	22
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,208 @@
+#PVF_File
+
+[name]
+	`霸域英豪护肩`
+
+[basic explain]
+	`被远程攻击时， 可以使自身进入霸体状态5秒。 (冷却时间5秒)
+    远程攻击时， 可以使自身进入霸体状态5秒。 (冷却时间5秒)
+    处于该装备霸体状态时， 增加15%%暴击伤害。
+(解除装备后效果消失)`
+
+[detail explain]
+	`被远程攻击时， 可以使自身进入霸体状态5秒。 (冷却时间5秒)
+    远程攻击时， 可以使自身进入霸体状态5秒。 (冷却时间5秒)
+    处于该装备霸体状态时， 增加15%%暴击伤害。 (暴击伤害加成效果取最高值， 且无法叠加)
+(解除装备后效果消失)`
+
+[flavor text]
+	`定名五大宝 : 狂霸酷拽叼。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11732
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	31
+
+[magical attack]
+	31
+
+[physical defense]
+	34
+
+[price]
+	85000000
+
+[repair price]
+	101920
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	4080	3720
+
+[physical critical hit]
+	7
+
+[magical critical hit]
+	7
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/06_plate/neck/plate_neck.img`	18
+
+[field image]
+	`Item/field_equip.img`	17
+
+[equipment type]
+	`[shoulder]`	21
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	3200
+
+[item group name]
+	`mt shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[distance]
+		`far`
+	[hit]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[equipment duration]
+		5000
+	[appendage]
+		251
+	[appendage]
+		1152
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[distance]
+		`far`
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[appendage]
+		251
+	[appendage]
+		1152
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[my appendage]
+		251
+	[time]
+		500	1	0
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[equipment duration]
+		1000
+	[increase critical damage]
+		`%`	15
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[my appendage]
+		251
+	[time]
+		500	1	0
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[appendage]
+		1152
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

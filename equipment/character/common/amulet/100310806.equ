@@ -1,0 +1,218 @@
+#PVF_File
+
+[name]
+	`公爵尤里斯的野心`
+
+[basic explain]
+	`    被近身攻击时， 可以使敌人进入中毒状态； 同时也有80%%的几率为其额外附加冰冻、 石化、 束缚、 混乱状态中的任意一种异常状态， 效果持续3秒。
+    受到远程攻击时， 可以使敌人进入出血状态； 同时也有80%%的几率为其附加冰冻、 石化、 束缚、 混乱状态中的任意一种异常状态， 效果持续3秒。`
+
+[detail explain]
+	`    被近身攻击时， 可以使敌人进入中毒状态； 同时也有80%%的几率为其额外附加冰冻、 石化、 束缚、 混乱状态中的任意一一种异常状态， 效果持续3秒。
+    受到远程攻击时， 可以使敌人进入出血状态； 同时也有80%%的几率为其附加冰冻、 石化、 束缚、 混乱状态中的任意一种异常状态， 效果持续3秒。
+    - 使目标进入中毒、 出血状态， 每0.5秒以3000点的攻击力给予伤害， 效果持续3秒
+    - 使目标进入束缚/混乱状态， 效果持续3秒
+    - 使目标进入石化状态， 解除时以30000的攻击力给予伤害， 效果持续3秒。
+(若敌人高于Lv90， 则减少该装备所有异常状态的发动几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`    曾经它对使徒的位置非常渴望， 寻找着任何能打败狄瑞吉的机会。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	36
+
+[magical defense]
+	90
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	7920	7360
+
+[icon]
+	`Item/new_equipment/08_necklace/necklace.img`	123
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[distance]
+		`near`
+	[hit]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			3000
+		[active status]
+			`poison`	90	18000
+		[then probability]
+			20.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			3000
+		[active status]
+			`poison`	90	18000
+		[active status]
+			`freeze`	90
+		[then probability]
+			20.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			3000
+		[active status]
+			`poison`	90	18000
+		[active status]
+			`stone`	90	4734
+		[then probability]
+			20.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			3000
+		[active status]
+			`poison`	90	18000
+		[active status]
+			`hold`	90
+		[then probability]
+			20.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			3000
+		[active status]
+			`poison`	90	18000
+		[active status]
+			`confuse`	90	1
+		[then probability]
+			20.0
+	[/then]
+[/multiple then]
+
+[if]
+	[distance]
+		`far`
+	[hit]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			3000
+		[active status]
+			`bleeding`	90	18000
+		[then probability]
+			20.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			3000
+		[active status]
+			`bleeding`	90	18000
+		[active status]
+			`freeze`	90
+		[then probability]
+			20.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			3000
+		[active status]
+			`bleeding`	90	18000
+		[active status]
+			`stone`	90	9468
+		[then probability]
+			20.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			3000
+		[active status]
+			`bleeding`	90	18000
+		[active status]
+			`hold`	90
+		[then probability]
+			20.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			3000
+		[active status]
+			`bleeding`	90	18000
+		[active status]
+			`confuse`	90	1
+		[then probability]
+			20.0
+	[/then]
+[/multiple then]
+
+[possible kiri protect]

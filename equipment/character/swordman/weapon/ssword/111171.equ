@@ -1,0 +1,198 @@
+#PVF_File
+
+[name]
+	`杰诺的冰霜短剑`
+
+[basic explain]
+	`    装备时， 会消耗1个蓝色小晶块， 召唤杰诺的灵魂附体， 效果持续40秒； 附体状态下， 角色可以借用杰诺的技能。
+  附体状态下进行攻击时， 会生成杰诺的[死亡墓碑]。
+  攻击冰冻状态下的敌人时， 附加10%%的伤害。`
+
+[detail explain]
+	`    装备时， 会消耗1个蓝色小晶块， 召唤杰诺的灵魂附体， 效果持续40秒； 附体状态下， 角色可以借用杰诺的技能。（冷却时间40秒）
+  附体状态下进行攻击时， 会生成杰诺的[死亡墓碑]。（冷却时间0.5秒）
+  攻击冰冻状态下的敌人时， 附加10%%的伤害。`
+
+[flavor text]
+	`    把那些幽灵冰冻起来， 放到博物馆展览。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	62
+
+[cast speed]
+	20
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[equipment physical attack]
+	952	752
+
+[equipment magical attack]
+	1152	952
+
+[separate attack]
+	607	507
+
+[magical critical hit]
+	2
+
+[water attack]
+	15
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/sswd/sswd.img`	111
+
+[field image]
+	`Item/FieldImage.img`	9
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	34	0
+
+[layer variation]
+	2790
+	`sswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`sswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	34	0
+
+[layer variation]
+	2790
+	`sswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`sswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`MINERALSWD_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3100
+
+[item group name]
+	`ssword`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		40000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[consume item]
+		3036	1
+	[duration]
+		40000
+	[appendage]
+		234
+	[passive object]
+		60092	0	0	0	99	0	` `
+	[/passive object]
+[/then]
+
+[if]
+	[my appendage]
+		234
+	[attack success]
+		1
+	[cooltime]
+		500
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		60091	0	0	0	99	0	` `
+	[/passive object]
+[/then]
+
+[if]
+	[target active status]
+		`freeze`
+	[attack success]
+		1
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		910
+[/then]
+
+[possible kiri protect]

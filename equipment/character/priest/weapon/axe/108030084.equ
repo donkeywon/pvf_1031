@@ -1,0 +1,166 @@
+#PVF_File
+
+[name]
+	`巨神之父`
+
+[basic explain]
+	`攻击速度 +5%%
+暴击伤害 +25%%
+    攻击时， 附加10%%的伤害。`
+
+[detail explain]
+	`攻击速度 +5%%
+    攻击时， 附加10%%的伤害。
+暴击伤害 +25%% (暴击伤害加成效果取最高值， 且无法叠加； 解除装备后效果消失)`
+
+[flavor text]
+	`    据说有把武器和我同名， 为了显示我比它高级， 我只能用最传统的方法 -- 我是他爹……  --亥伯龙`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	115
+
+[attack speed]
+	-30
+
+[stuck]
+	-2
+
+[price]
+	85000000
+
+[repair price]
+	145600
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	1152	989
+
+[equipment magical attack]
+	816	700
+
+[separate attack]
+	589	382
+
+[physical critical hit]
+	10
+
+[skill levelup]
+	`[priest]`	82	2
+	`[priest]`	47	3
+[/skill levelup]
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/priest/axe/axe.img`	100
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	34	0
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[fire element]`
+
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	10
+[/skill data up]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[increase critical damage]
+		`%`	25
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		576	495
+	[equipment magical attack]
+		408	350
+[/pvp]
+
+[possible kiri protect]

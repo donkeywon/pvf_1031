@@ -3,11 +3,12 @@
 [name]
 	`灵石玉髓 - 剑圣`
 
-[name2]
-	``
+[basic explain]
+	`[极 · 神剑术 (流星落)]攻击时， 有50%%的几率发动提升Lv4的该技能。
+[破空拔刀斩]攻击时， 有50%%的几率发动提升Lv4的该技能。`
 
 [grade]
-	80
+	81
 
 [rarity]
 	4
@@ -22,40 +23,46 @@
 [minimum level]
 	75
 
-[physical attack]
-	47
+[need material]
+	3285	2000
 
-[physical defense]
-	47
+[physical attack]
+	99
 
 [magical attack]
-	47
+	99
+
+[physical defense]
+	99
 
 [magical defense]
-	47
+	99
 
 [price]
-	96000
-
-[repair price]
-	76800
+	75000000
 
 [value]
-	76800
+	7500000
 
 [creation rate]
-	30
+	70
 
 [skill levelup]
-	`[swordman]`	98	1
+	`[swordman]`	236	1
 	`[swordman]`	97	1
 [/skill levelup]
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`Item/new_equipment/11_magicstone/magicstone.img`	66
 
 [field image]
 	`Item/field_equip.img`	23
+
+[icon mark]
+	`Item/IconMark.img`	6
 
 [equipment type]
 	`[magic stone]`	21
@@ -72,73 +79,36 @@
 [cool time]
 	10000
 
-[basic explain]
-	`[破军斩龙击]攻击时， 有50%%的几率发动提升Lv2或Lv4的该技能。
-[破空拔刀斩]攻击时， 有50%%的几率发动提升Lv2或Lv4的该技能。`
-
-[routing priority]
-	`swordman`	1
-[/routing priority]
-
-[icon mark]
-	`Item/IconMark.img`	6
-
 [if]
 	[event use skill]
-		`swordman`	98
+		`swordman`	236
+	[/event use skill]
 [/if]
 
-[multiple then]
-	[then]
-		[probability]
-			50
-		[target]
-			`myself`	-1
-		[skill levelup]
-			`swordman`	98	2
-		[/skill levelup]
-		[then probability]
-			60.0
-	[/then]
-	[then]
-		[probability]
-			50
-		[target]
-			`myself`	-1
-		[skill levelup]
-			`swordman`	98	4
-		[/skill levelup]
-		[then probability]
-			40.0
-	[/then]
-[/multiple then]
+[then]
+	[probability]
+		50
+	[target]
+		`myself`	-1
+	[skill levelup]
+		`[swordman]`	236	4
+	[/skill levelup]
+[/then]
 
 [if]
 	[event use skill]
 		`swordman`	97
+	[/event use skill]
 [/if]
 
-[multiple then]
-	[then]
-		[probability]
-			50
-		[target]
-			`myself`	-1
-		[skill levelup]
-			`swordman`	97	2
-		[/skill levelup]
-		[then probability]
-			60.0
-	[/then]
-	[then]
-		[probability]
-			50
-		[target]
-			`myself`	-1
-		[skill levelup]
-			`swordman`	97	4
-		[/skill levelup]
-		[then probability]
-			40.0
-	[/then]
-[/multiple then]
+[then]
+	[probability]
+		50
+	[target]
+		`myself`	-1
+	[skill levelup]
+		`[swordman]`	97	4
+	[/skill levelup]
+[/then]
+
+[possible kiri protect]

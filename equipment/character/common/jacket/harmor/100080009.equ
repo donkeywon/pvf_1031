@@ -3,20 +3,20 @@
 [name]
 	`星云迷踪上衣`
 
-[name2]
-	``
-
 [basic explain]
-	`攻击时， 有3%%的几率使敌人进入失明状态。`
+	`    攻击时， 有5%%的几率使自身进入失明状态。`
 
 [detail explain]
-	`攻击时， 有3%%的几率使敌人进入失明状态7秒； 失明状态下的敌人， 会减少90%%的视野和20%%的命中率。 (若敌人高于Lv85， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+	`    攻击时， 有5%%的几率使自身进入失明状态15秒。 (若敌人高于Lv86， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间3秒)`
 
 [grade]
 	85
 
 [rarity]
 	4
+
+[part set index]
+	11337
 
 [usable job]
 	`[all]`
@@ -28,39 +28,41 @@
 [minimum level]
 	80
 
-[physical attack]
-	39
+[need material]
+	3285	2500
 
-[physical defense]
-	35
+[physical attack]
+	40
 
 [magical attack]
-	28
+	29
+
+[physical defense]
+	37
 
 [price]
-	119000
+	80000000
 
 [repair price]
-	99960
+	110080
 
 [value]
-	95200
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical defense]
-	4464	4176
+	4656	4224
 
-[skill levelup]
-	`[gunner]`	71	3
-	`[at gunner]`	71	3
-	`[fighter]`	99	2
-	`[at fighter]`	119	2
-	`[swordman]`	79	3
-	`[priest]`	125	3
-	`[demonic swordman]`	79	3
-[/skill levelup]
+[physical critical hit]
+	4
+
+[magical critical hit]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/05_harmor/coat/harmor_coat.img`	10
@@ -89,71 +91,63 @@
 [cool time]
 	10000
 
-[set name]
-	`星云迷踪  套装`
-
-[set item]
-	100080009	100130009	100180009	100230009	100280009
-[/set item]
+[all skill item container]
+	[all skill item]
+		[item growtype]
+			`[all]`	0
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				45
+			[upper bound level]
+				45
+			[value]
+				3
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
+	[all skill item]
+		[item growtype]
+			`[all]`	0
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				60
+			[upper bound level]
+				60
+			[value]
+				2
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
+[/all skill item container]
 
 [if]
 	[cooltime]
-		10000
+		3000
 	[attack success]
 		1
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
+		`myself`	-1
 	[duration]
-		7000
+		15000
 	[probability]
-		3
+		5
 	[active status]
-		`blind`	85	90	20
+		`blind`	86	50	5
 [/then]
 
-[set ability]
-	[fullset basic explain]
-		`攻击时， 有5%%的几率使自身进入失明状态， 效果持续10秒； 失明状态下， 减少80%%的视野和20%%的命中率。 (若敌人高于Lv85， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
-
-失明状态下攻击敌人时， 附加50%%的伤害。`
-	[if]
-		[cooltime]
-			10000
-		[attack success]
-			1
-	[/if]
-	[then]
-		[target]
-			`myself`	-1
-		[duration]
-			10000
-		[reduce duration to human armor at pvp module]
-			50
-		[probability]
-			5
-		[active status]
-			`blind`	85	80	20
-	[/then]
-	[if]
-		[my active status]
-			`blind`
-		[attack success]
-			1
-	[/if]
-	[then]
-		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	50
-	[/then]
-[/set ability]
-
-[routing priority]
-[/routing priority]
-
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

@@ -1,24 +1,25 @@
 #PVF_File
 
 [name]
-	`(旧) 碎风乱波剑`
-
-[name2]
-	`Wind Sword of Genial Wave`
+	`机械战神的灵魂之刃`
 
 [basic explain]
-	`增加[三段斩]、 [滑斩]的移动速度
-Y轴移动速度 +50
-攻击速度 +4%%`
+	`    攻击时， 有20%%的几率召唤出[史上最强追击者]， 史上最强追击者最多存在10秒。 (冷却时间为10秒)
+    攻击时， 有5%%的几率召唤出[风暴]协助召唤者攻击敌人， 风暴存在60秒。 (冷却时间为60秒)
+    攻击时， 有10%%的几率召唤出[G3]协助召唤者攻击敌人， G3存在20秒。 (冷却时间为20秒)
+    施放[幻影剑舞]、 [崩山裂地斩]、 [鬼影闪]、 [邪光波动阵]时可以召唤出[盖波加之拳]攻击敌人。`
 
 [flavor text]
-	`剑气散发的时候， 就像春天暖风中飞扬的花瓣。  --《碎风乱波录》的前言`
+	`    有了它， 我就是机械战神！  --某位鬼剑士`
 
 [grade]
-	20
+	70
 
 [rarity]
 	4
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [usable job]
 	`[swordman]`
@@ -26,43 +27,62 @@ Y轴移动速度 +50
 [/usable job]
 
 [attach type]
-	`[trade]`
+	`[free]`
 
 [minimum level]
-	15
+	65
+
+[physical attack]
+	47
 
 [magical attack]
-	17
+	47
 
 [attack speed]
 	40
 
 [cast speed]
-	20
+	40
 
-[price]
-	32000
+[need material]
+	3285	1000
 
 [repair price]
-	25600
+	94080
 
 [value]
-	25600
+	6500000
 
 [equipment physical attack]
-	224	179
+	640	583
 
 [equipment magical attack]
-	271	216
+	775	706
 
 [separate attack]
-	133	86
+	411	278
 
 [magical critical hit]
 	2
 
+[creation rate]
+	250
+
+[skill levelup]
+	`[swordman]`	73	2
+	`[swordman]`	81	2
+	`[swordman]`	57	2
+	`[swordman]`	60	2
+[/skill levelup]
+
+[fire resistance]
+	20
+
+[fire attack]
+	20
+
 [icon]
-	`Item/weapon/swordman/sswd.img`	37
+	`Item/new_equipment/01_weapon/gunner/automatic/automatic.img`	105
 
 [field image]
 	`Item/FieldImage.img`	9
@@ -128,12 +148,125 @@ Y轴移动速度 +50
 [cool time]
 	10000
 
-[skill data up]
-	`[swordman]`	8	`[all]`	`[static]`	0	`+`	120
-	`[demonic swordman]`	8	`[all]`	`[static]`	0	`+`	120
-[/skill data up]
+[elemental property]
+	`[fire element]`
+
+[if]
+	[use skill]
+		`swordman`	73
+	[/use skill]
+	[cooltime]
+		50
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		11106	50	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`swordman`	81
+	[/use skill]
+	[cooltime]
+		50
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		11106	50	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`swordman`	57
+	[/use skill]
+	[cooltime]
+		50
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		11106	50	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`swordman`	60
+	[/use skill]
+	[cooltime]
+		50
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		11106	50	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[probability]
+		20
+	[summon monster]
+		61136	-1	1
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		60000
+	[probability]
+		5
+	[summon monster]
+		61528	-1	1
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		10
+	[summon monster]
+		61134	-1	1
+[/then]
 
 [possible kiri protect]
-
-[icon mark]
-	`Item/IconMark.img`	68

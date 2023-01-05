@@ -1,0 +1,69 @@
+#PVF_File
+
+[set name]
+	`远古王国的骑士  套装`
+
+[piece set ability]
+	5
+	[HP MAX]
+		1200
+	[hit recovery]
+		750
+	[stun resistance]
+		60
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			20000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			20000
+		[probability]
+			5
+		[stat]
+			`physical attack`
+			`+`	100
+		[stat]
+			`magical attack`
+			`+`	100
+	[/then]
+	[if]
+		[hit]
+			1
+		[cooltime]
+			500
+	[/if]
+	[then]
+		[target]
+			`all enemy`	300
+		[duration]
+			3000
+		[active status]
+			`stun`	90
+	[/then]
+	[if]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`physical attack`
+			`%`	8
+		[stat by condition]
+			`magical attack`
+			`%`	8
+	[/then]
+	[parameter basic explain]
+		`  攻击时， 有5%%的几率使自身增加100点力量和100点智力， 效果持续20秒。
+  被攻击时， 使300px范围内的所有敌人进入眩晕状态3秒。
+  装备后， 增加8%%的力量和智力。`
+[/piece set ability]

@@ -1,0 +1,276 @@
+#PVF_File
+
+[name]
+	`江山略 - 法杖`
+
+[basic explain]
+	`    装备时， 每20秒可以随机发动一种特殊效果， 效果持续20秒。 (消耗2个无色小晶块； 冷却时间20秒)
+    -被攻击时进入无敌状态； 攻击时， 附加35%%的伤害。
+    - 使自身进入霸体状态； 破招攻击时， 附加35%%的伤害。
+    - 使自身进入伪装状态， 同时所有队员增加40点的所有属性强化值。`
+
+[detail explain]
+	`    装备时， 每20秒可以随机发动一种特殊效果， 效果持续20秒。 (消耗2个无色小晶块； 冷却时间20秒)
+    - 武器发蓝光且免疫所受伤害； 同时攻击时附加35%%的伤害。
+    - 使自身进入霸体状态； 破招攻击时， 附加35%%的伤害。
+    - 使自身进入伪装状态， 同时所有队员增加40点的所有属性强化值。`
+
+[flavor text]
+	`    上次说到卧底的事， 我想想克伦特也挺合适……  --贝利特对泽丁说`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[magical attack]
+	58
+
+[attack speed]
+	-100
+
+[repair price]
+	116640
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	812	688
+
+[equipment magical attack]
+	1026	869
+
+[separate attack]
+	520	336
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/mage/staff/staff.img`	115
+
+[field image]
+	`Item/field_weapon.img`	9
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	37	0
+
+[layer variation]
+	2150
+	`at_staffa`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_staffd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`STAFF_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	2400
+
+[item group name]
+	`staff`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		20000	1	500
+	[cooltime]
+		20000
+[/if]
+
+[multiple then]
+	[then]
+		[consume item]
+			3037	2
+		[target]
+			`myself`	-1
+		[equipment duration]
+			20000
+		[appendage]
+			352
+		[then probability]
+			33.3
+	[/then]
+	[then]
+		[consume item]
+			3037	2
+		[target]
+			`myself`	-1
+		[equipment duration]
+			20000
+		[appendage]
+			353
+		[then probability]
+			33.3
+	[/then]
+	[then]
+		[consume item]
+			3037	2
+		[target]
+			`myself`	-1
+		[equipment duration]
+			20000
+		[appendage]
+			354
+		[then probability]
+			33.3
+	[/then]
+[/multiple then]
+
+[if]
+	[attack success]
+		1
+	[my appendage]
+		352
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	35
+[/then]
+
+[if]
+	[hit]
+		1
+	[my appendage]
+		352
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	100
+[/then]
+
+[if]
+	[attack condition]
+		`counter`
+	[attack success]
+		1
+	[my appendage]
+		353
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	35
+[/then]
+
+[if]
+	[my appendage]
+		354
+	[time]
+		500	1	0
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[equipment duration]
+		20000
+	[stat]
+		`fire attack`
+		`+`	40
+	[stat]
+		`water attack`
+		`+`	40
+	[stat]
+		`light attack`
+		`+`	40
+	[stat]
+		`dark attack`
+		`+`	40
+[/then]
+
+[possible kiri protect]

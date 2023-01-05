@@ -3,13 +3,10 @@
 [name]
 	`西洋棋之迷踪骑士`
 
-[name2]
-	``
-
 [basic explain]
 	`[强袭流星打]攻击力 +40%%
-
-用[强袭流星打]杀死敌人时， 有20%的几率使该技能的冷却时间减少10%%。`
+[风暴之拳]攻击力 +40%%
+    施放[强袭流星打]和[风暴之拳]时， 附加10%%的伤害， 效果持续120秒。 (最多重叠1次； 解除装备后效果消失)`
 
 [grade]
 	85
@@ -29,11 +26,14 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [physical attack]
-	56
+	62
 
 [magical attack]
-	56
+	62
 
 [attack speed]
 	50
@@ -45,30 +45,35 @@
 	-1
 
 [price]
-	136000
+	80000000
 
 [repair price]
-	114240
+	123840
 
 [value]
-	108800
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical attack]
-	890	825
+	980	836
 
 [equipment magical attack]
-	742	688
+	816	697
 
 [separate attack]
-	504	343
+	555	359
 
 [skill levelup]
-	`[mage]`	14	3
-	`[mage]`	68	2
+	`[mage]`	36	3
 [/skill levelup]
+
+[dark attack]
+	18
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/01_weapon/mage/pole/pole.img`	92
@@ -146,7 +151,7 @@
 	`POLE_TOUCH`
 
 [durability]
-	35
+	45
 
 [weight]
 	2400
@@ -157,9 +162,8 @@
 [cool time]
 	10000
 
-[routing priority]
-	`mage`	3
-[/routing priority]
+[elemental property]
+	`[dark element]`
 
 [skill data up]
 	`[mage]`	68	`[all]`	`[level]`	0	`%`	40
@@ -167,24 +171,32 @@
 [/skill data up]
 
 [if]
-	[skill]
+	[event use skill]
 		`mage`	68
-	[/skill]
-	[attack success]
-		1
-	[target death]
-		1
 [/if]
 
 [then]
 	[target]
 		`myself`	-1
-	[probability]
-		20
-	[skill cooltime reset]
-		68
-		`%`	-10
+	[equipment duration]
+		120000
+	[appendage]
+		826
 [/then]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[if]
+	[my appendage]
+		826
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[possible kiri protect]

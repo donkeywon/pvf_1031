@@ -1,0 +1,228 @@
+#PVF_File
+
+[name]
+	`神之天佑`
+
+[basic explain]
+	`HP为50%%以下时， 增加313点体力。
+MP为50%%以下时， 增加313点精神。
+施放技能时， 有10%%的几率对自身施放Lv8的[圣光守护]。 (冷却时间30秒)
+施放技能时， 有10%%的几率对包括自身在内的队员施放Lv13的[圣光守护]。 (冷却时间40秒)
+[启示 : 惩戒]技能攻击力增加量 +10%%
+施放[神之教诲]时， 增加10%%的独立攻击力， 效果持续100秒。 (最多叠加1次； 解除装备后效果消失)`
+
+[flavor text]
+	`愿神之荣誉与你同在。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[magical attack]
+	65
+
+[physical defense]
+	77
+
+[magical defense]
+	77
+
+[cast speed]
+	20
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	960	824
+
+[equipment magical attack]
+	912	783
+
+[equipment physical defense]
+	910	910
+
+[equipment magical defense]
+	910	910
+
+[separate attack]
+	589	382
+
+[skill levelup]
+	`[priest]`	23	4
+	`[priest]`	45	4
+	`[priest]`	86	3
+	`[priest]`	20	1
+	`[priest]`	84	1
+[/skill levelup]
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/priest/cross/cross.img`	96
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	32	0
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[change status]
+		`hp`
+		`=<`
+		`%`	50
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical defense`
+		`+`	313
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[change status]
+		`mp`
+		`=<`
+		`%`	50
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical defense`
+		`+`	313
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[casting]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[perform skill]
+		`priest`	22	8	0
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[casting]
+		1
+	[cooltime]
+		40000
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[probability]
+		10
+	[perform skill]
+		`priest`	22	13	0
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		480	412
+	[equipment magical attack]
+		456	392
+[/pvp]
+
+[possible kiri protect]

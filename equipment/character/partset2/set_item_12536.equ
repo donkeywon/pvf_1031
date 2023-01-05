@@ -1,0 +1,52 @@
+#PVF_File
+
+[set name]
+	`格拉西亚家族遗物的象征  套装`
+
+[piece set ability]
+	5
+	[physical attack]
+		50
+	[magical attack]
+		50
+	[light attack]
+		22
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			500
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			5
+		[passive object]
+			48075	0	0	70	85	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			1000
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			10
+		[passive object]
+			48075	0	0	70	85	0	``
+		[/passive object]
+	[/then]
+	[skill data up]
+		`[all]`	199	`[all]`	`[level]`	50	`+`	6
+	[/skill data up]
+	[parameter basic explain]
+		`  装备时， 每60秒对武器赋予光属性， 效果持续60秒。
+  攻击时， 有5%%的几率向敌人发动闪电爆炸。
+  攻击时， 有10%%的几率向敌人发动闪电爆炸。
+  攻击时， 附加6%%的光属性伤害。`
+[/piece set ability]

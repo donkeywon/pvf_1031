@@ -1,0 +1,125 @@
+#PVF_File
+
+[name]
+	`暴戾搜捕团的守护之心`
+
+[basic explain]
+	`    被攻击时， 有20%%的几率使自身进入霸体状态3秒。
+    在霸体状态下被攻击时， 使自身恢复20%%的HP和MP， 效果持续20秒。`
+
+[detail explain]
+	`    被攻击时， 有20%%的几率使自身进入霸体状态3秒。 (冷却时间10秒)
+    在霸体状态下被攻击时， 使自身恢复20%%的HP和MP， 效果持续20秒。 (仅在该装备的霸体效果被触发后发动； 冷却时间3秒)`
+
+[flavor text]
+	`    暴戾搜捕团我听过， 感觉他们为了守护那些邪恶的使徒， 即使再疯狂的事都能干……  --疯牛鲁埃尔`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	53
+
+[magical attack]
+	53
+
+[physical defense]
+	53
+
+[magical defense]
+	53
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[dark attack]
+	20
+
+[dark resistance]
+	15
+
+[icon]
+	`Item/new_equipment/11_magicstone/magicstone.img`	132
+
+[field image]
+	`Item/field_equip.img`	23
+
+[equipment type]
+	`[magic stone]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`magic stone`
+
+[cool time]
+	10000
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		20
+	[equipment duration]
+		3000
+	[appendage]
+		3651
+[/then]
+
+[if]
+	[my appendage]
+		3651
+	[hit]
+		1
+	[cooltime]
+		3000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`hp`
+		`%`	20	0
+	[restore]
+		`mp`
+		`%`	20	0
+[/then]
+
+[possible kiri protect]

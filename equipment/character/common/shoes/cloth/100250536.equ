@@ -1,0 +1,113 @@
+#PVF_File
+
+[name]
+	`耀之荣光青丝战靴`
+
+[basic explain]
+	`装备时， 每30秒通过消耗1个无色小晶块增加10点所有属性强化， 效果持续30秒。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	12540
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[magical attack]
+	107
+
+[magical defense]
+	97
+
+[move speed]
+	40
+
+[need material]
+	10000204	50
+
+[price]
+	85000000
+
+[repair price]
+	43200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	588	546
+
+[icon]
+	`item/new_equipment/02_cloth/shoes/cloth_shoes.img`	48
+
+[field image]
+	`Item/field_equip.img`	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[shoes]`	16
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	18
+
+[weight]
+	600
+
+[item group name]
+	`cl shoes`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		30000	1	0
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[consume item]
+		3037	1
+	[target]
+		`myself`	-1
+	[equipment duration]
+		30000
+	[stat]
+		`light attack`
+		`+`	10
+	[stat]
+		`dark attack`
+		`+`	10
+	[stat]
+		`fire attack`
+		`+`	10
+	[stat]
+		`water attack`
+		`+`	10
+[/then]
+
+[possible kiri protect]

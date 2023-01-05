@@ -1,0 +1,236 @@
+#PVF_File
+
+[name]
+	`贝拉的巡查狙击枪`
+
+[basic explain]
+	`[散弹枪]攻击力 +10%%
+[尼尔狙击]施放后的延迟时间减少
+    施放[尼尔狙击]时， 在射击时间内， 使自身增加100%%的物理暴击率， 并且有40%%的几率附加25%%的伤害。`
+
+[detail explain]
+	`[散弹枪]攻击力 +10%%
+ [尼尔狙击]施放后的延迟时间减少
+    施放[尼尔狙击]时， 在射击时间内， 使自身增加100%%的物理暴击率， 并且有40%%的几率附加25%%的伤害。`
+
+[flavor text]
+	`    狙击枪可是我的秘密武器`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[magical attack]
+	92
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	129600
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	1008	808
+
+[equipment magical attack]
+	876	676
+
+[separate attack]
+	607	507
+
+[skill levelup]
+	`[gunner]`	52	2
+	`[at gunner]`	52	2
+	`[gunner]`	78	3
+	`[at gunner]`	78	3
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/musket/musket.img`	107
+
+[field image]
+	`Item/field_weapon.img`	3
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	40	0
+
+[layer variation]
+	2600
+	`musketc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`musketb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	38	0
+
+[layer variation]
+	2600
+	`at_musketc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_musketb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	2100
+
+[item group name]
+	`musket`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[gunner]`	48	`[all]`	`[level]`	0	`%`	10
+	`[at gunner]`	48	`[all]`	`[level]`	0	`%`	10
+	`[gunner]`	78	`[all]`	`[static]`	0	`+`	-400
+	`[at gunner]`	78	`[all]`	`[static]`	0	`+`	-400
+[/skill data up]
+
+[if]
+	[skill]
+		`gunner`	78
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		40
+	[add absolute damage]
+		`all`
+		`%`	25
+[/then]
+
+[if]
+	[use skill]
+		`gunner`	78
+	[/use skill]
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		200000
+	[appendage]
+		679
+[/then]
+
+[if]
+	[skill]
+		`at gunner`	78
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		40
+	[add absolute damage]
+		`all`
+		`%`	25
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	78
+	[/use skill]
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		200000
+	[appendage]
+		679
+[/then]
+
+[if]
+	[set my state]
+		1
+	[my state]
+		`any`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		-99999999
+	[appendage]
+		679
+[/then]
+
+[possible kiri protect]

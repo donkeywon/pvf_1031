@@ -1,0 +1,119 @@
+#PVF_File
+
+[name]
+	`万兽之瞳`
+
+[basic explain]
+	`    攻击时， 有5%%的几率增加10点的所有异常状态抗性， 效果持续20秒。 
+    装备时， 可以使180px范围内的所有敌人减少15%%的移动速度。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率提升10点的所有异常状态抗性， 效果持续20秒。 (最多叠加3次； 冷却时间3秒)
+    装备时， 可以使180px范围内的所有敌人减少15%%的移动速度。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	36
+
+[physical defense]
+	90
+
+[attack speed]
+	70
+
+[cast speed]
+	100
+
+[HP MAX]
+	350
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	4752	4416
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	157
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	21
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		3000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[appendage]
+		3391
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`all enemy`	180
+	[duration]
+		100
+	[appendage]
+		3401
+[/then]
+
+[possible kiri protect]

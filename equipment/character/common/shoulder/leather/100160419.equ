@@ -1,0 +1,119 @@
+#PVF_File
+
+[name]
+	`海神谜咒之恶灵护肩`
+
+[basic explain]
+	`攻击时， 有10%%的几率使敌人进入诅咒状态10秒。`
+
+[detail explain]
+	`攻击时， 有10%%的几率使敌人进入诅咒状态10秒； 诅咒状态下的敌人， 将减少50点力量、 体力、 智力和精神。(若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`看到老二满载而归，老三当晚就自告奋勇地要隔天出海，并且坚持不用父亲跟随。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	12400
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	30
+
+[magical attack]
+	30
+
+[magical defense]
+	33
+
+[physical critical hit]
+	4
+
+[magical critical hit]
+	4
+
+[need material]
+	10000204	100
+
+[price]
+	85000000
+
+[repair price]
+	57600
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	1568	1456
+
+[water attack]
+	6
+
+[fire resistance]
+	-6
+
+[icon]
+	`item/new_equipment/03_leather/neck/leather_neck.img`	34
+
+[field image]
+	`Item/FieldImage.img`	2
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[shoulder]`	17
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	25
+
+[weight]
+	1100
+
+[item group name]
+	`lt shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		10
+	[duration]
+		10000
+	[active status]
+		`curse`	90	50	50	50	50
+[/then]
+
+[possible kiri protect]

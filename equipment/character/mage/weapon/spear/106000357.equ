@@ -1,0 +1,221 @@
+#PVF_File
+
+[name]
+	`卡勒特的军用长矛`
+
+[basic explain]
+	`[天击]攻击力 +10%%
+[龙牙]攻击力 +10%%
+    攻击时， 有3%%的几率使敌人进入出血状态。
+    400px范围内， 每存在1个出血状态的敌人， 会使自身增加2%%的攻击速度和移动速度。
+    攻击出血状态下的敌人时， 附加15%%的伤害。`
+
+[detail explain]
+	`[天击]攻击力 +10%%
+[龙牙]攻击力 +10%%
+    攻击时， 有3%%的几率使敌人进入出血状态5秒； 出血状态下的敌人， 每0.5秒受到500点伤害。(若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+    400px范围内， 每有1个出血状态的敌人， 使自身增加2%%的攻击速度和移动速度。 (最高增加20%%）
+    攻击出血状态下的敌人时， 附加15%%的伤害。`
+
+[flavor text]
+	`    士官长说每天要刺一千下`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	92
+
+[attack speed]
+	-50
+
+[stuck]
+	-1
+
+[HP regen speed]
+	54
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	1202	1002
+
+[equipment magical attack]
+	851	651
+
+[separate attack]
+	607	507
+
+[physical critical hit]
+	2
+
+[icon]
+	`item/new_equipment/01_weapon/mage/spear/spear.img`	121
+
+[field image]
+	`Item/field_weapon.img`	6
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	41	0
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	44	0
+
+[layer variation]
+	2150
+	`at_speara`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_speard`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	41	0
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`SPEAR_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3200
+
+[item group name]
+	`spear`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[mage]`	12	`[all]`	`[level]`	0	`%`	10
+	`[mage]`	12	`[all]`	`[level]`	4	`%`	10
+	`[mage]`	4	`[all]`	`[level]`	0	`%`	10
+	`[mage]`	4	`[all]`	`[level]`	2	`%`	10
+[/skill data up]
+
+[variable stat]
+	`move speed`
+	`+`	20
+	`object number`
+	`enemy`	400
+	`bleeding`	10
+	`attack speed`
+	`+`	20
+	`object number`
+	`enemy`	400
+	`bleeding`	10
+[/variable stat]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[duration]
+		5000
+	[active status]
+		`bleeding`	90	18000
+[/then]
+
+[if]
+	[target active status]
+		`bleeding`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	15
+[/then]
+
+[possible kiri protect]

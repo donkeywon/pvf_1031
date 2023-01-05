@@ -1,0 +1,155 @@
+#PVF_File
+
+[name]
+	`牛头统帅的破魂战斧`
+
+[basic explain]
+	`    对类人型敌人的伤害 +20%%`
+
+[detail explain]
+	`    对类人型敌人的伤害 +20%%`
+
+[flavor text]
+	`    苏醒吧！ 牛头怪的力量！`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	282
+
+[attack speed]
+	-80
+
+[stuck]
+	-2
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	129600
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	1202	1002
+
+[equipment magical attack]
+	851	651
+
+[separate attack]
+	607	507
+
+[icon]
+	`item/new_equipment/01_weapon/priest/axe/axe.img`	102
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	29	1
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[water element]`
+
+[all skill item]
+	[item growtype]
+		`[priest]`	0
+	[skill apply condition]
+		[skill group]
+			`[all]`
+		[lower bound level]
+			30
+		[upper bound level]
+			45
+		[value]
+			1
+		[extra condition]
+			`[except for ex skill]`
+		[/extra condition]
+	[/skill apply condition]
+	[skill phase]
+		`[all]`
+[/all skill item]
+
+[if]
+	[target type]
+		`human`
+	[attack success]
+		1
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		920
+[/then]
+
+[possible kiri protect]

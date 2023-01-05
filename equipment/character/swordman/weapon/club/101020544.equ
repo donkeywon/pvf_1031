@@ -1,0 +1,303 @@
+#PVF_File
+
+[name]
+	`公爵尤里斯的邪魔棍`
+
+[basic explain]
+	`    攻击时， 有5%%的几率使敌人进入出血、 中毒、 感电、 石化、 诅咒、 减速、 失明、 冰冻、 眩晕和束缚中任意一种异常状态， 效果持续5秒。
+    攻击异常状态下的敌人时， 有15%%的几率减少敌人15%%的HP。
+    
+    攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率使敌人进入出血、 中毒、 感电、 石化、 诅咒、 减速、 失明、 冰冻、 眩晕和束缚中任意一种异常状态， 效果持续5秒。
+    攻击异常状态下的敌人时， 有15%%的几率减少敌人15%%的HP。（攻击精英怪物时效果缩减为原来的1/3、 对领主和深渊怪物的效果则缩减为1/6）
+    
+    攻击时， 有2%%的几率使敌人进入眩晕状态。(若敌人高于Lv90， 则减少该装备所有异常状态的发动几率和效果； 反之， 则增加几率和效果) `
+
+[flavor text]
+	`    我曾经很向往成为使徒， 不过后来想想那一切或许早就注定了……--尤里斯`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	101
+
+[attack speed]
+	-30
+
+[stuck]
+	-1
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment physical attack]
+	1102	902
+
+[equipment magical attack]
+	952	752
+
+[separate attack]
+	607	507
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/club/club.img`	107
+
+[field image]
+	`Item/FieldImage.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	40	0
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	40	0
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`STICK_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3400
+
+[item group name]
+	`club`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			5
+		[duration]
+			5000
+		[active status]
+			`bleeding`	90	2333
+		[then probability]
+			10.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			5
+		[duration]
+			5000
+		[active status]
+			`poison`	90	2333
+		[then probability]
+			10.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			5
+		[duration]
+			5000
+		[active status]
+			`lightning`	90	2333
+		[then probability]
+			10.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			5
+		[duration]
+			5000
+		[active status]
+			`stone`	90	15775
+		[then probability]
+			10.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			5
+		[duration]
+			5000
+		[active status]
+			`curse`	90	67	67	67	67
+		[then probability]
+			10.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			5
+		[duration]
+			5000
+		[active status]
+			`slow`	90	15	15
+		[then probability]
+			10.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			5
+		[duration]
+			5000
+		[active status]
+			`blind`	90	90	20
+		[then probability]
+			10.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			5
+		[duration]
+			5000
+		[active status]
+			`hold`	90
+		[then probability]
+			10.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			5
+		[duration]
+			5000
+		[active status]
+			`freeze`	90
+		[then probability]
+			10.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			5
+		[duration]
+			5000
+		[active status]
+			`stun`	90
+		[then probability]
+			10.0
+	[/then]
+[/multiple then]
+
+[if]
+	[target active status]
+		`any`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		15
+	[weakness]
+		15
+[/then]
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		2
+	[active status]
+		`stun`	90
+[/then]
+
+[possible kiri protect]

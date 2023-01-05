@@ -1,0 +1,107 @@
+#PVF_File
+
+[name]
+	`格拉西亚家族遗物僚牙护腿`
+
+[basic explain]
+	`被击时， 有50%%的几率施放Lv25的[圣光守护]。`
+
+[detail explain]
+	`被击时， 有50%%的几率施放Lv25的[圣光守护]。(冷却时间40秒)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	12536
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	41
+
+[magical attack]
+	30
+
+[physical defense]
+	38
+
+[need material]
+	10000204	100
+
+[price]
+	85000000
+
+[repair price]
+	86400
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	3920	3640
+
+[light attack]
+	13
+
+[icon]
+	`item/new_equipment/05_harmor/pants/harmor_pants.img`	51
+
+[field image]
+	`Item/field_equip.img`	11
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[pants]`	21
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	34
+
+[weight]
+	2900
+
+[item group name]
+	`ha pants`
+
+[cool time]
+	10000
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		40000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[perform skill]
+		`priest`	22	25	0
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,179 @@
+#PVF_File
+
+[name]
+	`万疫之源 - 恶魔之舌`
+
+[basic explain]
+	`    施放技能时， 有5%%的几率使周围500px范围内的所有敌人随机进入出血、 感电、 减速、 诅咒、 冰冻、 眩晕状态中的任意一种状态。`
+
+[detail explain]
+	`    施放技能时， 有5%%的几率使周围500px范围内的所有敌人随机进入出血、 感电、 减速、 诅咒、 冰冻、 眩晕状态中的任意一种状态， 效果持续3秒。 
+    - 使敌人进入出血状态3秒； 出血状态下的敌人， 每0.5秒受到1000点伤害。
+    - 使敌人进入感电状态3秒； 若攻击感电状态的敌人， 则每次攻击都会附加1500点伤害。 
+    - 使敌人进入减速状态3秒； 减速状态下的敌人， 将减少15%%的移动速度和10%%的攻击速度。
+    - 使敌人进入混乱、 束缚状态3秒。 
+(若敌人高于Lv90， 则减少该装备所有异常状态的发动几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`    狄瑞吉的舌头……唉……能不能不要啊……`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	35
+
+[magical attack]
+	35
+
+[physical defense]
+	35
+
+[magical defense]
+	35
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment physical attack]
+	80	40
+
+[equipment magical attack]
+	80	40
+
+[separate attack]
+	100	50
+
+[physical critical hit]
+	5
+
+[magical critical hit]
+	5
+
+[icon]
+	`Item/new_equipment/10_support/support.img`	160
+
+[field image]
+	`Item/field_equip.img`	22
+
+[equipment type]
+	`[support]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	700
+
+[item group name]
+	`support`
+
+[cool time]
+	10000
+
+[if]
+	[casting]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`all enemy`	500
+		[probability]
+			5
+		[duration]
+			3000
+		[active status]
+			`bleeding`	90	6000
+		[then probability]
+			16.0
+	[/then]
+	[then]
+		[target]
+			`all enemy`	500
+		[probability]
+			5
+		[duration]
+			3000
+		[active status]
+			`lightning`	90	1500
+		[then probability]
+			16.0
+	[/then]
+	[then]
+		[target]
+			`all enemy`	500
+		[probability]
+			5
+		[duration]
+			3000
+		[active status]
+			`slow`	90	15	10
+		[then probability]
+			17.0
+	[/then]
+	[then]
+		[target]
+			`all enemy`	500
+		[probability]
+			5
+		[duration]
+			3000
+		[active status]
+			`stun`	90
+		[then probability]
+			17.0
+	[/then]
+	[then]
+		[target]
+			`all enemy`	500
+		[probability]
+			5
+		[duration]
+			3000
+		[active status]
+			`curse`	90	20	20	20	20
+		[then probability]
+			17.0
+	[/then]
+	[then]
+		[target]
+			`all enemy`	500
+		[probability]
+			5
+		[duration]
+			3000
+		[active status]
+			`freeze`	90
+		[then probability]
+			17.0
+	[/then]
+[/multiple then]
+
+[possible kiri protect]

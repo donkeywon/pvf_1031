@@ -1,0 +1,131 @@
+#PVF_File
+
+[name]
+	`寒蝉鸣泣之石`
+
+[basic explain]
+	`    攻击时， 有3%%的几率召唤出泣灵。
+    泣灵存在状态下， 角色暗属性强化增加5点， 效果持续40秒。`
+
+[detail explain]
+	`    攻击时， 有3%%的几率召唤出泣灵。 (冷却时间1秒)
+    泣灵存在状态下， 角色暗属性强化增加5点， 效果持续40秒。 (最多可叠加4次)`
+
+[flavor text]
+	`    妳有听到有人在哭吗？  --G.S.D`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	36
+
+[magical defense]
+	90
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	7920	7360
+
+[dark attack]
+	22
+
+[water attack]
+	22
+
+[icon]
+	`Item/new_equipment/08_necklace/necklace.img`	117
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[passive object]
+		24294	0	0	0	2	0	``
+	[/passive object]
+	[target]
+		`myself`	-1
+	[appendage]
+		3511
+	[appendage]
+		3561
+[/then]
+
+[if]
+	[my appendage]
+		3511
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	350
+	[duration]
+		-500
+	[add absolute damage]
+		`dark`
+		`+`	8400
+	[appendage]
+		3511
+[/then]
+
+[possible kiri protect]

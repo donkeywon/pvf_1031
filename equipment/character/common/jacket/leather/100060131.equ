@@ -1,0 +1,144 @@
+#PVF_File
+
+[name]
+	`暗魅之影上衣`
+
+[basic explain]
+	`    攻击时， 增加18%%的伤害。
+    背击攻击时， 有5%%的几率使自身进入伪装状态5秒。`
+
+[detail explain]
+	`    攻击时， 增加18%%的伤害。 (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)
+    背击攻击时， 有5%%的几率使自身进入伪装状态5秒。（冷却时间5秒）`
+
+[flavor text]
+	`    很适合夜晚行动时穿， 不过切记不要穿着这个去万年雪山， 不然会被一眼认出来的。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11598
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	84
+
+[magical attack]
+	84
+
+[magical defense]
+	42
+
+[price]
+	85000000
+
+[repair price]
+	87360
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	2448	2232
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/03_leather/coat/leather_coat.img`	22
+
+[field image]
+	`Item/FieldImage.img`	0
+
+[equipment type]
+	`[coat]`	20
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	33
+
+[weight]
+	1900
+
+[item group name]
+	`lt coat`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		5000
+	[attack condition]
+		`back attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[duration]
+		5000
+	[appendage]
+		346
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[increase damage]
+		`%`	18
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

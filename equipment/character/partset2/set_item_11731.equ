@@ -1,0 +1,135 @@
+#PVF_File
+
+[set name]
+	`魔战无双  套装`
+
+[piece set ability]
+	5
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`mp max`
+			`%`	-15
+	[/then]
+	[skill data up]
+		`[all]`	199	`[all]`	`[level]`	50	`+`	35
+	[/skill data up]
+	[if]
+		[time]
+			10000	1	0
+		[cooltime]
+			10000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			48655	0	0	0	0	-1	``
+		[/passive object]
+		[skill cooltime reset]
+			0
+			``	2
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[casting]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			50
+		[equipment duration]
+			100000
+		[appendage]
+			992
+	[/then]
+	[skill data up]
+		`[common]`	174	`[dungeon type]`	`[level]`	0	`%`	20
+		`[common]`	174	`[dungeon type]`	`[level]`	1	`%`	20
+		`[common]`	174	`[dungeon type]`	`[level]`	2	`%`	20
+	[/skill data up]
+	[skill levelup]
+		`[at fighter]`	224	2
+		`[at fighter]`	225	2
+		`[at fighter]`	231	2
+		`[at fighter]`	228	2
+		`[at fighter]`	222	2
+		`[at gunner]`	239	2
+		`[at gunner]`	244	2
+		`[at gunner]`	249	2
+		`[at gunner]`	235	2
+		`[at mage]`	245	2
+		`[at mage]`	248	2
+		`[demonic swordman]`	233	2
+		`[fighter]`	232	2
+		`[fighter]`	239	2
+		`[fighter]`	228	2
+		`[fighter]`	235	2
+		`[fighter]`	236	2
+		`[gunner]`	235	2
+		`[gunner]`	247	2
+		`[gunner]`	240	2
+		`[gunner]`	245	2
+		`[mage]`	245	2
+		`[mage]`	126	2
+		`[mage]`	253	2
+		`[mage]`	139	2
+		`[mage]`	134	2
+		`[priest]`	241	2
+		`[priest]`	251	2
+		`[priest]`	138	2
+		`[priest]`	245	2
+		`[swordman]`	231	2
+		`[swordman]`	246	2
+		`[swordman]`	244	2
+		`[swordman]`	241	2
+		`[thief]`	225	2
+		`[thief]`	222	2
+	[/skill levelup]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[combo]
+			100
+		[after attack]
+			1
+		[cooltime]
+			20000
+	[/if]
+	[then]
+		[equipment duration]
+			15000
+		[target]
+			`myself`	-1
+		[appendage]
+			991
+	[/then]
+	[parameter basic explain]
+		`技能MP消耗量 +15%%
+ 攻击时， 附加35%%的伤害。
+ 每10秒重置随机1个技能的冷却时间， 但只能重置剩余冷却时间少于30秒的技能。
+ 施放技能时， 有50%%的几率使自身增加10%%的攻击速度、 10%%的移动速度和15%%的施放速度， 效果持续100秒。 (最多重叠3次)
+[基础精通]技能攻击力增加量 +20%%
+ 连击数每达到100次时， 进入霸体状态， 效果持续15秒。 (冷却时间20秒)
+ (解除装备后效果消失)
+ (怪物与装备Lv相差35以上时， 无法重置冷却时间。) `
+[/piece set ability]

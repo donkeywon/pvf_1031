@@ -1,0 +1,119 @@
+#PVF_File
+
+[name]
+	`断肠绝伤之黑云腰带`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	27
+
+[magical attack]
+	18
+
+[inventory limit]
+	3000
+
+[price]
+	85000000
+
+[repair price]
+	57600
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[need material]
+	10000204	75
+
+[part set index]
+	11372
+
+[equipment physical defense]
+	1176	1092
+
+[icon]
+	`item/new_equipment/04_larmor/belt/larmor_belt.img`	46
+
+[field image]
+	`Item/field_equip.img`	8
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[waist]`	18
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	25
+
+[weight]
+	1200
+
+[item group name]
+	`la waist`
+
+[cool time]
+	10000
+
+[possible kiri protect]
+
+[basic explain]
+	`装备时，可以使500px范围内的队员增加350的HP最大值、450的MP最大值、10的所有属性强化`
+
+[if]
+	[module]
+		`[dungeon type]`
+	[/module]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`party`	500
+	[stat by condition]
+		`HP MAX`
+		`+`	350
+	[stat by condition]
+		`MP MAX`
+		`+`	450
+	[stat by condition]
+		`fire attack`
+		`+`	10
+	[stat by condition]
+		`water attack`
+		`+`	10
+	[stat by condition]
+		`dark attack`
+		`+`	10
+	[stat by condition]
+		`light attack`
+		`+`	10
+[/then]

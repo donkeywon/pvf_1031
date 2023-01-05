@@ -1,0 +1,27 @@
+#PVF_File
+
+[set name]
+	`圣堂骑士的神谕  套装`
+
+[piece set ability]
+	5
+	[all elemental attack]
+		45
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			100
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			50
+		[passive object]
+			48600	0	0	70	25	0	` `
+		[/passive object]
+	[/then]
+	[parameter basic explain]
+		`    攻击时， 有50%%的几率出现雷光爆炸。`
+[/piece set ability]

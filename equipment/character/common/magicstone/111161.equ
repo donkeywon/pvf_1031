@@ -1,0 +1,124 @@
+#PVF_File
+
+[name]
+	`聚灵之核`
+
+[basic explain]
+	`    攻击时， 有2%%的几率消耗1%%的MP值生成布鲁之尖啸。
+    被攻击时， 有50%%的几率恢复自身5%%的MP， 并且增加50点的物理、 魔法攻击力， 效果持续10秒。`
+
+[detail explain]
+	`    攻击时， 有2%%的几率消耗1%%的MP值生成布鲁之尖啸。
+    被攻击时， 有50%%的几率恢复自身5%%的MP， 并且增加50点的物理、 魔法攻击力， 效果持续10秒。（冷却时间10秒）`
+
+[flavor text]
+	`    有没有感觉到一股非常邪恶的七夕... --莎兰`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	53
+
+[magical attack]
+	53
+
+[physical defense]
+	53
+
+[magical defense]
+	53
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[dark attack]
+	20
+
+[icon]
+	`Item/new_equipment/11_magicstone/magicstone.img`	134
+
+[field image]
+	`Item/field_equip.img`	23
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[magic stone]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`magic stone`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		2
+	[restore]
+		`mp`
+		`%`	-1	0
+	[passive object]
+		60088	0	0	0	70	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[cooltime]
+		10000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[restore]
+		`mp`
+		`%`	5	0
+	[duration]
+		10000
+	[stat]
+		`equipment magical attack`
+		`+`	50
+	[stat]
+		`equipment physical attack`
+		`+`	50
+[/then]
+
+[possible kiri protect]

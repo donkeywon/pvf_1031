@@ -1,0 +1,198 @@
+#PVF_File
+
+[name]
+	`霸域英豪战靴`
+
+[basic explain]
+	`    前冲、 跳跃状态时， 可以进入霸体状态， 效果持续5秒。
+    处于该装备的霸体状态时， 增加30%%的所有速度。`
+
+[detail explain]
+	`    前冲、 跳跃状态时， 可以进入霸体状态， 效果持续5秒。 (冷却时间5秒)
+    处于该装备的霸体状态时， 增加30%%的所有速度。 (解除装备后效果消失)`
+
+[flavor text]
+	`    这种身轻如燕的感觉真好！`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11732
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	23
+
+[magical attack]
+	23
+
+[physical defense]
+	25
+
+[attack speed]
+	20
+
+[cast speed]
+	30
+
+[move speed]
+	60
+
+[price]
+	85000000
+
+[repair price]
+	87360
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	3060	2790
+
+[physical critical hit]
+	10
+
+[magical critical hit]
+	10
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/06_plate/shoes/plate_shoes.img`	18
+
+[field image]
+	`Item/field_equip.img`	19
+
+[equipment type]
+	`[shoes]`	20
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	2200
+
+[item group name]
+	`mt shoes`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[set my state]
+		1
+	[my state]
+		`jump`
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[appendage]
+		251
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[set my state]
+		1
+	[my state]
+		`dash`
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[appendage]
+		251
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[my appendage]
+		251
+	[time]
+		500	1	500
+	[cooltime]
+		5000
+	[stat change]
+		`hp`
+		`>`
+		`%`	0
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[stat]
+		`attack speed`
+		`+`	300
+	[stat]
+		`cast speed`
+		`+`	300
+	[stat]
+		`move speed`
+		`+`	300
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

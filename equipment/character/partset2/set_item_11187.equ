@@ -1,0 +1,110 @@
+#PVF_File
+
+[set name]
+	`幽魂魅影  套装`
+
+[piece set ability]
+	5
+	[if]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+		[cooltime]
+			30000
+	[/if]
+	[then]
+		[duration]
+			30000
+		[target]
+			`party`	-1
+		[elemental weapon]
+			`dark`
+	[/then]
+	[if]
+		[is stat]
+			`myself`	-1
+			`dark resistance`
+			`=>`	30
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`dark attack`
+			`+`	15
+	[/then]
+	[if]
+		[is stat]
+			`myself`	-1
+			`dark resistance`
+			`=>`	30
+		[attack success]
+			1
+		[cooltime]
+			1000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			1000
+		[appendage]
+			910
+	[/then]
+	[if]
+		[is stat]
+			`myself`	-1
+			`dark resistance`
+			`=>`	55
+		[attack success]
+			1
+		[cooltime]
+			5000
+	[/if]
+	[then]
+		[target]
+			`all enemy`	500
+		[probability]
+			10
+		[passive object]
+			48313	0	0	0	84	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[is stat]
+			`myself`	-1
+			`dark resistance`
+			`=>`	75
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`dark resistance`
+			`+`	50
+	[/then]
+	[if]
+		[cooltime]
+			1000
+		[is stat]
+			`myself`	-1
+			`dark resistance`
+			`=>`	75
+	[/if]
+	[then]
+		[target]
+			`all enemy`	500
+		[duration]
+			1000
+		[stat]
+			`dark resistance`
+			`+`	-30
+	[/then]
+	[parameter basic explain]
+		`    每30秒对队员赋予暗属性， 效果持续30秒。 (装备0.5秒后生效)
+    暗属性抗性高于30 : 攻击时， 附加10%%的暗属性伤害； 增加15点的暗属性强化。
+    暗属性抗性高于55 : 攻击时， 有10%%的几率对500px范围内的所有敌人施放暗影爆炸。 (冷却时间5秒)
+    暗属性抗性高于75 : 增加50点的暗属性抗性； 并且自身的每7点暗属性抗性可以使500px范围内的敌人减少3点暗属性抗性。 (最多减少30点)`
+[/piece set ability]

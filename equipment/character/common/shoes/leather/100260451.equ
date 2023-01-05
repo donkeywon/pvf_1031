@@ -1,0 +1,119 @@
+#PVF_File
+
+[name]
+	`海神谜咒之恶灵皮靴`
+
+[basic explain]
+	`攻击时， 有10%%的几率使敌人进入诅咒状态5秒。`
+
+[detail explain]
+	`攻击时， 有10%%的几率使敌人进入诅咒状态5秒； 诅咒状态下的敌人， 将减少50点力量、 体力、 智力和精神。(若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`当时，渔夫感叹:自己明明捕鱼技术一流，而且也毫无保留地传给了儿子们，为什?会换来不同的结局。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	12400
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	22
+
+[magical attack]
+	22
+
+[magical defense]
+	25
+
+[move speed]
+	70
+
+[stuck resistance]
+	20
+
+[need material]
+	10000204	100
+
+[price]
+	85000000
+
+[repair price]
+	50400
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	1176	1092
+
+[water attack]
+	6
+
+[fire resistance]
+	-6
+
+[icon]
+	`item/new_equipment/03_leather/shoes/leather_shoes.img`	37
+
+[field image]
+	`Item/FieldImage.img`	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[shoes]`	16
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	20
+
+[weight]
+	900
+
+[item group name]
+	`lt shoes`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		10
+	[duration]
+		5000
+	[active status]
+		`curse`	90	50	50	50	50
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,226 @@
+#PVF_File
+
+[name]
+	`煞血天劫腿甲`
+
+[basic explain]
+	`    保持站立或行走状态10秒以上时， 使自身减少10%%的HP。
+    装备后， 每5秒减少1%%的HP。
+    攻击时， 有1%%的几率使画面内的所有敌人减少5%%的HP。 
+    攻击时， 有5%%的几率使画面内的敌人进入出血状态。 
+    被攻击时， 使自身恢复25%%的HP。
+    自身在出血状态下， 使自身增加20%%的攻击速度、 30%%的施放速度和10%%的移动速度。`
+
+[detail explain]
+	`    保持站立或行走状态10秒以上时， 使自身减少10%%的HP。
+    每5秒减少1%%的HP。 (装备1秒后生效)
+    攻击时， 有1%%的几率使画面内的所有敌人减少5%%的HP。 (冷却时间3秒。 若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 对精英怪物的效果为1/3、 对领主和深渊怪物的效果为1/6)
+    攻击时， 有5%%的几率使画面内的所有敌人进入出血状态4秒； 出血状态下的敌人， 每0.5秒受到75点伤害。(若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间5秒)
+    被攻击时， 使自身恢复25%%的HP。 (冷却时间60秒)
+    自身在出血状态下， 使自身增加20%%的攻击速度、 30%%的施放速度和10%%的移动速度。`
+
+[flavor text]
+	`    为了复仇， 我愿献出我的血与肉， 只求赐予我力量， 消灭眼前这可恶的混蛋。  --某位鬼剑士`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	38
+
+[magical attack]
+	38
+
+[physical defense]
+	41
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[repair price]
+	100800
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment physical defense]
+	4950	46000
+
+[icon]
+	`item/new_equipment/06_plate/pants/plate_pants.img`	20
+
+[field image]
+	`Item/field_equip.img`	16
+
+[equipment type]
+	`[pants]`	21
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	50
+
+[weight]
+	4100
+
+[item group name]
+	`mt pants`
+
+[cool time]
+	10000
+
+[if]
+	[keep my state]
+		`stand`	10000
+	[cool time]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		682
+[/then]
+
+[if]
+	[my appendage]
+		682
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`hp`
+		`%`	-10	0
+[/then]
+
+[if]
+	[time]
+		5000	1	1000
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`hp`
+		`%`	-1	0
+[/then]
+
+[if]
+	[cooltime]
+		3000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[probability]
+		1
+	[weakness]
+		5
+[/then]
+
+[if]
+	[cooltime]
+		5000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[probability]
+		5
+	[duration]
+		4000
+	[active status]
+		`bleeding`	90	12800
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`hp`
+		`%`	25	0
+[/then]
+
+[if]
+	[my active status]
+		`bleeding`
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		1000
+	[stat]
+		`attack speed`
+		`+`	200
+	[stat]
+		`cast speed`
+		`+`	300
+	[stat]
+		`move speed`
+		`+`	100
+[/then]
+
+[possible kiri protect]

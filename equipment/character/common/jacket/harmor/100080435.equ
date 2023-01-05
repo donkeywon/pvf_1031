@@ -1,0 +1,121 @@
+#PVF_File
+
+[name]
+	`稳如磐石之甲`
+
+[basic explain]
+	`被击时所受伤害 -20%%
+被攻击时， 使自身增加500点物理防御力和魔法防御力， 效果持续30秒。`
+
+[detail explain]
+	`被击时所受伤害 -20%%
+被攻击时， 使自身增加500点物理防御力和魔法防御力， 效果持续30秒。(最多叠加6次)`
+
+[flavor text]
+	`实在是太厉害了， 没想到在那个年代就已经有如此高超的锻造技术。  --林纳斯`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	41
+
+[magical attack]
+	30
+
+[physical defense]
+	38
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[repair price]
+	100800
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	5752	5408
+
+[icon]
+	`Item/new_equipment/05_harmor/coat/harmor_coat.img`	23
+
+[field image]
+	`Item/field_equip.img`	10
+
+[equipment type]
+	`[coat]`	21
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	3600
+
+[item group name]
+	`ha coat`
+
+[cool time]
+	10000
+
+[if]
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	20
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		200
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		30000
+	[appendage]
+		4241
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]

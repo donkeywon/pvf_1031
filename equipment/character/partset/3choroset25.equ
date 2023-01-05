@@ -4,45 +4,59 @@
 	`阴影暗迹  套装`
 
 [piece set ability]
-	3	
+	5
 	[skill data up]
-		`[theif]`	45	`[dungeon type]`	`[static]`	14	`+`	1
-		`[theif]`	45	`[dungeon type]`	`[cooltime]`	0	`%`	-50
-		`[theif]`	45	`[dungeon type]`	`[skill consume item]`	0	`+`	-1
-		`[theif]`	19	`[dungeon type]`	`[cooltime]`	0	`%`	-30
+		`[thief]`	45	`[dungeon type]`	`[static]`	14	`+`	1
+		`[thief]`	45	`[dungeon type]`	`[cooltime]`	0	`%`	-50
+		`[thief]`	45	`[dungeon type]`	`[skill consume item]`	0	`+`	-1
+		`[thief]`	45	`[dungeon type]`	`[static]`	1	`%`	10000
+		`[thief]`	34	`[dungeon type]`	`[level]`	0	`%`	25
+		`[thief]`	34	`[dungeon type]`	`[level]`	1	`%`	25
+		`[thief]`	34	`[dungeon type]`	`[level]`	2	`%`	25
+		`[thief]`	34	`[dungeon type]`	`[level]`	4	`%`	25
+		`[thief]`	34	`[dungeon type]`	`[level]`	3	`%`	60
+		`[thief]`	34	`[dungeon type]`	`[cooltime]`	0	`%`	-20
+		`[thief]`	34	`[dungeon type]`	`[static]`	5	`%`	20
+		`[thief]`	34	`[dungeon type]`	`[skill consume item]`	0	`+`	1
+		`[thief]`	34	`[dungeon type]`	`[level]`	5	`%`	15
+		`[thief]`	45	`[dungeon type]`	`[level]`	0	`%`	30
+		`[thief]`	45	`[dungeon type]`	`[level]`	2	`%`	30
+		`[thief]`	45	`[dungeon type]`	`[level]`	3	`%`	30
+		`[thief]`	45	`[dungeon type]`	`[level]`	6	`%`	30
+		`[thief]`	45	`[dungeon type]`	`[level]`	7	`%`	30
+		`[thief]`	45	`[dungeon type]`	`[static]`	5	`%`	50
+		`[thief]`	75	`[dungeon type]`	`[static]`	1	`%`	-70
+		`[thief]`	75	`[dungeon type]`	`[level]`	0	`%`	50
+		`[thief]`	75	`[dungeon type]`	`[level]`	1	`%`	50
+		`[thief]`	75	`[dungeon type]`	`[level]`	2	`%`	50
+		`[thief]`	75	`[dungeon type]`	`[cooltime]`	0	`%`	-30
+		`[thief]`	75	`[dungeon type]`	`[static]`	10	`%`	50
+		`[thief]`	76	`[dungeon type]`	`[level]`	0	`%`	30
+		`[thief]`	76	`[dungeon type]`	`[level]`	2	`%`	30
+		`[thief]`	76	`[dungeon type]`	`[level]`	4	`%`	30
+		`[thief]`	76	`[dungeon type]`	`[level]`	6	`%`	30
+		`[thief]`	76	`[dungeon type]`	`[level]`	15	`%`	30
+		`[thief]`	76	`[dungeon type]`	`[cooltime]`	0	`%`	-15
+		`[thief]`	76	`[dungeon type]`	`[static]`	14	`%`	30
+		`[thief]`	45	`[dungeon type]`	`[level]`	4	`%`	30
 	[/skill data up]
 	[parameter basic explain]
-		`[雷光刃影]无法进行连续突刺
+		`[雷光刃影]删除连续突刺攻击
+[雷光刃影]原地下落
 [雷光刃影]冷却时间 -50%%
 [雷光刃影]无色小晶块消耗量 -1
-[疾驰]冷却时间 -30%%`
-[/piece set ability]
-
-[piece set ability]
-	6	
-	[skill data up]
-		`[theif]`	34	`[dungeon type]`	`[level]`	3	`+`	6
-		`[theif]`	34	`[dungeon type]`	`[cooltime]`	0	`%`	-30
-		`[theif]`	34	`[dungeon type]`	`[skill consume item]`	0	`+`	1
-	[/skill data up]
-	[parameter basic explain]
-		`[疾风乱舞]多段攻击次数 +6
+[疾风乱舞]攻击力 +25%%
+[疾风乱舞]乱舞次数 +60%%
 [疾风乱舞]冷却时间 -20%%
-[疾风乱舞]无色小晶块消耗量 +1`
-[/piece set ability]
-
-[piece set ability]
-	9	
-	[skill data up]
-		`[theif]`	75	`[dungeon type]`	`[static]`	1	`%`	-70
-		`[theif]`	75	`[dungeon type]`	`[level]`	0	`%`	50
-		`[theif]`	75	`[dungeon type]`	`[level]`	1	`%`	50
-		`[theif]`	75	`[dungeon type]`	`[cooltime]`	0	`%`	-30
-		`[theif]`	75	`[dungeon type]`	`[skill consume item]`	0	`+`	-1
-	[/skill data up]
-	[parameter basic explain]
-		`[陨落螺旋刺]落地时间 -70%%
-[陨落螺旋刺]攻击力 +50%%
+[疾风乱舞]瞬移距离上限 +20%%
+[疾风乱舞]无色小晶块消耗量 +1
+[雷光刃影]攻击力 +30%%
+[雷光刃影]冲击波高度伤害增加率 +50%%
 [陨落螺旋刺]冷却时间 -30%%
-[陨落螺旋刺]无色小晶块消耗量 -1`
+[陨落螺旋刺]降落速度 +350%%
+[陨落螺旋刺]攻击力 +50%%
+[陨落螺旋刺]冲刺范围 +50%%
+[旋刃冲击]冷却时间 -15%%
+[旋刃冲击]攻击力 +30%%
+[雷光刃影]冲击波范围 +30%%`
 [/piece set ability]

@@ -1,0 +1,106 @@
+#PVF_File
+
+[name]
+	`巨灵布鲁的封印之铃`
+
+[basic explain]
+	`   攻击时， 有3%%的几率召唤出布鲁向前发射冲击波， 并提升队员70点的物理和魔法攻击力， 以及100点的独立攻击力， 效果持续20秒。
+   冲击波攻击时， 使敌人进入眩晕状态。`
+
+[detail explain]
+	`   攻击时， 有3%%的几率召唤出布鲁向前发射冲击波， 并提升队员70点的物理和魔法攻击力， 以及100点的独立攻击力， 效果持续20秒。（冷却时间为20秒）
+   冲击波攻击时， 使敌人进入眩晕状态， 效果持续1秒。（若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果） `
+
+[flavor text]
+	`  那个灵魂会永远活在痛苦之中吧~ --陆德米拉`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	35
+
+[magical attack]
+	35
+
+[physical defense]
+	35
+
+[magical defense]
+	35
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[icon]
+	`Item/new_equipment/10_support/support.img`	157
+
+[field image]
+	`Item/field_equip.img`	22
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[support]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	700
+
+[item group name]
+	`support`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		3
+	[stat]
+		`equipment physical attack`
+		`+`	70
+	[stat]
+		`equipment magical attack`
+		`+`	70
+	[stat]
+		`separate attack`
+		`+`	100
+	[passive object]
+		60117	-20	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]

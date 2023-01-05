@@ -1,0 +1,99 @@
+#PVF_File
+
+[name]
+	`龙战玄黄 - 血战之灵`
+
+[basic explain]
+	`    HP为50%%以下时， 可以增加45点力量和15点体力。`
+
+[flavor text]
+	`    即使死， 我也要死在战场上。`
+
+[grade]
+	25
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	20
+
+[physical attack]
+	39
+
+[magical attack]
+	19
+
+[physical defense]
+	15
+
+[price]
+	20000000
+
+[need material]
+	10000204	100
+
+[value]
+	2000000
+
+[creation rate]
+	500
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	1088	864
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	193
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	21
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`<`
+		`%`	50
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	45
+	[stat by condition]
+		`physical defense`
+		`+`	15
+[/then]
+
+[item aura]
+	`physical attack`
+	`+`	80	450
+
+[possible kiri protect]

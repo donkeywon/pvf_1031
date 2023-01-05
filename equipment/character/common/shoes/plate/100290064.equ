@@ -1,0 +1,151 @@
+#PVF_File
+
+[name]
+	`魔战无双短靴`
+
+[basic explain]
+	`    增加8%%的物理攻击力、 魔法攻击力和独立攻击力。`
+
+[flavor text]
+	`    魔界中， 使徒的顺序和他们的战斗力并不成正比。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11731
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	103
+
+[magical attack]
+	103
+
+[physical defense]
+	25
+
+[move speed]
+	60
+
+[MP MAX]
+	200
+
+[price]
+	85000000
+
+[repair price]
+	87360
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	3060	2790
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/06_plate/shoes/plate_shoes.img`	17
+
+[field image]
+	`Item/field_equip.img`	19
+
+[equipment type]
+	`[shoes]`	20
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	2200
+
+[item group name]
+	`mt shoes`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		0
+	[stat by condition]
+		`equipment physical attack`
+		`%`	8
+	[stat by condition]
+		`equipment magical attack`
+		`%`	8
+	[stat by condition]
+		`separate attack`
+		`%`	8
+[/then]
+
+[skill levelup]
+	`[at fighter]`	229	2
+	`[at fighter]`	223	2
+	`[at gunner]`	237	2
+	`[at gunner]`	248	2
+	`[at mage]`	247	2
+	`[fighter]`	233	2
+	`[fighter]`	226	2
+	`[gunner]`	239	2
+	`[mage]`	251	2
+	`[priest]`	137	2
+	`[swordman]`	230	2
+	`[swordman]`	236	2
+	`[thief]`	220	2
+[/skill levelup]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

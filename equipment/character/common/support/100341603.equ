@@ -1,0 +1,115 @@
+#PVF_File
+
+[name]
+	`牛头械王的超能心脏`
+
+[basic explain]
+	`    HP为50%%以上时， 可以增加20点的火属性强化。
+    HP为50%%以下被攻击时， 所受伤害会增加10%%。`
+
+[flavor text]
+	`    怪不得不懂爱也不知痛， 原来装着这样一颗冰冷心脏。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	35
+
+[magical attack]
+	35
+
+[physical defense]
+	35
+
+[magical defense]
+	35
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment physical attack]
+	105	105
+
+[equipment magical attack]
+	105	105
+
+[icon]
+	`Item/new_equipment/10_support/support.img`	162
+
+[field image]
+	`Item/field_equip.img`	22
+
+[equipment type]
+	`[support]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	700
+
+[item group name]
+	`support`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	49
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`fire attack`
+		`+`	20
+[/then]
+
+[if]
+	[stat change]
+		`hp`
+		`<`
+		`%`	50
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	-10
+[/then]
+
+[possible kiri protect]

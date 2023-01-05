@@ -1,0 +1,131 @@
+#PVF_File
+
+[name]
+	`王权之卫 - 光`
+
+[basic explain]
+	`    攻击时， 有2%%的几率使敌人进入感电状态。
+    被感电状态的敌人攻击时， 会落下闪电攻击敌人， 使画面内的所有敌人进入感电状态。`
+
+[detail explain]
+	`    攻击时， 有2%%的几率使敌人进入感电状态。
+    被感电状态的敌人攻击时， 会落下闪电攻击敌人， 使画面内的所有敌人进入感电状态。`
+
+[flavor text]
+	`    想见吾王， 先问过我手中的闪电！`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	36
+
+[physical defense]
+	90
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	4752	4416
+
+[light attack]
+	20
+
+[light resistance]
+	15
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	112
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	20
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[duration]
+		5000
+	[active status]
+		`lightning`	90	80000
+[/then]
+
+[if]
+	[target active status]
+		`lightning`
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		48526	0	0	0	99	0	` `
+	[/passive object]
+[/then]
+
+[if]
+	[target active status]
+		`lightning`
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[duration]
+		5000
+	[active status]
+		`lightning`	90	15000
+[/then]
+
+[possible kiri protect]

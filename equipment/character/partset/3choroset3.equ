@@ -4,47 +4,78 @@
 	`天之剑痕  套装`
 
 [piece set ability]
-	3	
+	5
 	[skill data up]
 		`[swordman]`	107	`[dungeon type]`	`[level]`	1	`%`	-30
-		`[swordman]`	107	`[dungeon type]`	`[level]`	0	`%`	15
-	[/skill data up]
-	[parameter basic explain]
-		`[流心 : 刺]冷却时间 -30%%
-[流心 : 刺]攻击力 +15%%`
-[/piece set ability]
-
-[piece set ability]
-	6	
-	[skill data up]
-		`[swordman]`	108	`[dungeon type]`	`[level]`	1	`%`	-30
-		`[swordman]`	108	`[dungeon type]`	`[level]`	0	`%`	15
-		`[swordman]`	108	`[dungeon type]`	`[level]`	3	`%`	15
+		`[swordman]`	107	`[dungeon type]`	`[level]`	0	`%`	30
+		`[swordman]`	109	`[dungeon type]`	`[level]`	0	`%`	30
 		`[swordman]`	109	`[dungeon type]`	`[level]`	1	`%`	-30
-		`[swordman]`	109	`[dungeon type]`	`[level]`	0	`%`	15
+		`[swordman]`	108	`[dungeon type]`	`[level]`	1	`%`	-30
+		`[swordman]`	108	`[dungeon type]`	`[level]`	0	`%`	30
+		`[swordman]`	110	`[dungeon type]`	`[cooltime]`	0	`%`	-50
+		`[swordman]`	110	`[dungeon type]`	`[static]`	1	`%`	-50
+		`[swordman]`	110	`[dungeon type]`	`[level]`	0	`%`	100
+		`[swordman]`	110	`[dungeon type]`	`[level]`	1	`%`	100
+		`[swordman]`	110	`[dungeon type]`	`[level]`	2	`%`	100
+		`[swordman]`	12	`[dungeon type]`	`[static]`	13	`%`	100
+		`[swordman]`	12	`[dungeon type]`	`[static]`	14	`%`	100
 		`[swordman]`	105	`[dungeon type]`	`[cooltime]`	0	`%`	-50
 	[/skill data up]
 	[parameter basic explain]
-		`[流心 : 跃]冷却时间 -30%%
-[流心 : 跃]攻击力 +15%%
+		`[流心 : 刺]冷却时间 -30%%
+[流心 : 刺]攻击力 +30%%
+[流心 : 跃]冷却时间 -30%%
+[流心 : 跃]攻击力 +30%%
 [流心 : 升]冷却时间 -30%%
-[流心 : 升]攻击力 +15%%
-[流心]冷却时间 -50%%`
-[/piece set ability]
-
-[piece set ability]
-	9	
-	[skill data up]
-		`[swordman]`	107	`[dungeon type]`	`[level]`	1	`%`	-50
-		`[swordman]`	108	`[dungeon type]`	`[level]`	1	`%`	-50
-		`[swordman]`	109	`[dungeon type]`	`[level]`	1	`%`	-50
-		`[swordman]`	110	`[dungeon type]`	`[level]`	0	`+`	5
-		`[swordman]`	110	`[dungeon type]`	`[level]`	1	`+`	5
-		`[swordman]`	110	`[dungeon type]`	`[level]`	2	`+`	5
-	[/skill data up]
-	[parameter basic explain]
-		`[流心 : 刺]冷却时间 -50%%
-[流心 : 跃]冷却时间 -50%%
-[流心 : 升]冷却时间 -50%%
-[流心 : 狂]流心类技能攻击力 +5%%`
+[流心 : 升]攻击力 +30%%
+[流心]冷却时间 -50%%
+[流心 : 狂]冷却时间 -50%%
+[流心 : 狂]持续时间 -50%%
+[流心 : 狂]流心类技能攻击力 +100%%
+[短剑精通]独立攻击系数 +100%%
+    施放[流心]系列技能时， 自身进入霸体状态。`
+	[if]
+		[event use skill]
+			`swordman`	105
+		[/event use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[skill super armor]
+			`swordman`	105
+	[/then]
+	[if]
+		[event use skill]
+			`swordman`	107
+		[/event use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[skill super armor]
+			`swordman`	107
+	[/then]
+	[if]
+		[event use skill]
+			`swordman`	108
+		[/event use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[skill super armor]
+			`swordman`	108
+	[/then]
+	[if]
+		[event use skill]
+			`swordman`	109
+		[/event use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[skill super armor]
+			`swordman`	109
+	[/then]
 [/piece set ability]

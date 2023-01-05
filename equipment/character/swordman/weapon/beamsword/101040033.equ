@@ -3,11 +3,17 @@
 [name]
 	`王之悲鸣`
 
-[name2]
-	``
-
 [basic explain]
-	`[破极兵刃]攻击时， 可以施放Lv23的[狮子吼]。`
+	`攻击速度 +10%%
+    施放[破极兵刃]时， 在Buff持续时间内使自身被痛苦的女王附身。`
+
+[detail explain]
+	`攻击速度 +10%%
+    施放[破极兵刃]时， Buff持续时间内使自身被痛苦的女王附身。
+痛苦女王附身效果 (最多重叠1次)
+- 增加20%%的攻击速度和移动速度。
+- 攻击时， 有5%%的几率施放女王的悲鸣。
+(解除装备后所有效果消失)`
 
 [grade]
 	85
@@ -26,41 +32,49 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [physical attack]
-	56
+	62
 
 [attack speed]
-	100
+	200
 
 [stuck]
 	1
 
-[MP MAX]
-	300
-
 [price]
-	153000
+	80000000
 
 [repair price]
-	128520
+	137600
 
 [value]
-	122400
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical attack]
-	752	696
+	844	720
 
 [equipment magical attack]
-	742	688
+	816	697
 
 [separate attack]
-	504	343
+	555	359
 
-[curse resistance]
-	18
+[skill levelup]
+	`[swordman]`	67	2
+	`[demonic swordman]`	4	3
+[/skill levelup]
+
+[dark attack]
+	25
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/01_weapon/swordman/beamswd/beamswd.img`	83
@@ -146,7 +160,7 @@
 	`BEAMSWD_TOUCH`
 
 [durability]
-	38
+	48
 
 [weight]
 	2500
@@ -157,11 +171,6 @@
 [cool time]
 	10000
 
-[routing priority]
-	`swordman`	1
-	`demonic swordman`	0
-[/routing priority]
-
 [required skill]
 	33
 
@@ -169,24 +178,40 @@
 	`[dark element]`
 
 [if]
-	[set my state]
-		1
-	[my state]
-		`stand`
-	[my prev state]
-		`buff`
-	[skill]
+	[character]
+		`swordman`	-1	-1
+	[event use skill]
 		`swordman`	38
-	[/skill]
 [/if]
 
 [then]
 	[target]
 		`myself`	-1
+	[equipment duration]
+		`skill level info`	38	0	-1
+	[appendage]
+		803
+[/then]
+
+[if]
+	[character]
+		`swordman`	-1	-1
+	[my appendage]
+		803
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
 	[passive object]
 		48211	0	0	0	85	0	``
 	[/passive object]
 [/then]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

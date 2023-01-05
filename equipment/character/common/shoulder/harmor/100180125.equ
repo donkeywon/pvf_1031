@@ -1,0 +1,171 @@
+#PVF_File
+
+[name]
+	`千蛛碎影之蛛丝肩甲`
+
+[basic explain]
+	`攻击时， 有30%%的几率使敌人进入感电状态。
+攻击感电状态的敌人时， 敌人的防御力减少， 效果持续20秒。`
+
+[detail explain]
+	`攻击时， 有30%%的几率使敌人进入感电状态3秒； 每次攻击感电状态下的敌人时， 附加4000点伤害。 
+攻击感电状态的敌人时， 使敌人减少36000点防御力， 效果持续20秒。 (最多重叠1次； 冷却时间8秒； 防御力减少效果与千蛛碎影之毒牙胸甲、 千蛛碎影之蛛网护腿、 千蛛碎影之蛛丝肩甲、 千蛛碎影之蛛刺腰带、 千蛛碎影之利齿战靴共享； 解除装备后效果消失)`
+
+[flavor text]
+	`蜘蛛好可怕啊！ 呜呜……  --某个小女孩`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11350
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	134
+
+[magical attack]
+	125
+
+[physical defense]
+	31
+
+[price]
+	85000000
+
+[repair price]
+	87360
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	3264	2976
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/05_harmor/neck/harmor_neck.img`	19
+
+[field image]
+	`Item/field_equip.img`	12
+
+[equipment type]
+	`[shoulder]`	20
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	32
+
+[weight]
+	2300
+
+[item group name]
+	`ha shoulder`
+
+[cool time]
+	10000
+
+[active status control info]
+	`lightning`	0	12	0	20
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		30
+	[duration]
+		3000
+	[active status]
+		`lightning`	91	4000
+[/then]
+
+[if]
+	[target active status]
+		`lightning`
+	[attack success]
+		1
+	[cooltime]
+		8000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		20000
+	[appendage]
+		851
+	[appendage]
+		852
+[/then]
+
+[all skill item container]
+	[all skill item]
+		[item growtype]
+			`[all]`	0
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				48
+			[upper bound level]
+				48
+			[value]
+				1
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
+[/all skill item container]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

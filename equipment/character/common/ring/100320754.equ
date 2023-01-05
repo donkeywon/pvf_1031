@@ -1,0 +1,98 @@
+#PVF_File
+
+[name]
+	`魔灵瞳 - 杀呐之音`
+
+[basic explain]
+	`    被攻击时， 有20%%的几率使周围500px范围内的所有敌人减少10%%的物理防御力， 效果持续10秒。 `
+
+[detail explain]
+	`    被攻击时， 有20%%的几率使周围500px范围内的所有敌人减少10%%的物理防御力， 效果持续10秒。 (冷却时间10秒)`
+
+[flavor text]
+	`    戴上它， 仿佛还能听见那绝望的呐喊声……`
+
+[grade]
+	55
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	50
+
+[physical attack]
+	35
+
+[magical attack]
+	35
+
+[stuck]
+	-2.5
+
+[price]
+	50000000
+
+[need material]
+	10000204	100
+
+[value]
+	5000000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	2048	1824
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	195
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	21
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[probability]
+		20
+	[duration]
+		10000
+	[stat]
+		`equipment physical defense`
+		`%`	-10
+[/then]
+
+[possible kiri protect]

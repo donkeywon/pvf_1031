@@ -1,0 +1,138 @@
+#PVF_File
+
+[name]
+	`戮蛊的绝地战靴`
+
+[basic explain]
+	`  被攻击时， 若单次伤害导致角色被消减HP上限的10%%以上， 则会受到岩石保护， HP恢复10%%并进入无敌状态和石化状态， 效果持续5秒。
+  自身进入石化状态时， 可以使500px范围内的所有敌人进入石化状态3秒。`
+
+[detail explain]
+	`  被攻击时， 若单次伤害导致角色被消减HP上限的10%%以上， 则会受到岩石保护， HP恢复10%%并进入无敌状态和石化状态， 效果持续5秒； 石化解除时自身会受到3000点伤害。 (若敌人高于Lv100， 则减少进入异常状态的几率； 反之则增加几率； 冷却时间20秒)
+  自身进入石化状态时， 可以使500px范围内的所有敌人进入石化状态3秒； 石化状态解除时， 敌人受到12000点伤害。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间20秒)`
+
+[flavor text]
+	`  穿着一只虫子在脚上， 虽然效果是不错， 还是多少觉得有些变扭`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	27
+
+[magical attack]
+	18
+
+[physical defense]
+	30
+
+[move speed]
+	20
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[repair price]
+	57600
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	2864	2438
+
+[icon]
+	`item/new_equipment/04_larmor/shoes/larmor_shoes.img`	19
+
+[field image]
+	`Item/field_equip.img`	9
+
+[equipment type]
+	`[shoes]`	17
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	25
+
+[weight]
+	1400
+
+[item group name]
+	`la shoes`
+
+[cool time]
+	10000
+
+[if]
+	[check damage]
+		`%`	10
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		5000
+	[active status]
+		`stone`	100	947
+	[restore]
+		`hp`
+		`%`	10	5000
+	[buff]
+		`unbreakable`
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[my active status]
+		`stone`
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[duration]
+		3000
+	[active status]
+		`stone`	90	107087
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]

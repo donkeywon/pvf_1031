@@ -1,0 +1,195 @@
+#PVF_File
+
+[name]
+	`民兵队长的变异之手`
+
+[basic explain]
+	`    攻击时， 有5%%的几率进入霸体状态5秒， 并且使自身增加10%%的物理暴击率和魔法暴击率， 效果持续10秒。
+    暴击伤害 +20%% `
+
+[detail explain]
+	`    攻击时， 有5%%的几率进入霸体状态5秒， 并且使自身增加10%%的物理暴击率和魔法暴击率， 效果持续10秒。
+    暴击伤害 +20%% (冷却时间10秒； 暴击伤害加成效果取最高值）`
+
+[flavor text]
+	`    虽然有幸存者， 可是已经……  --摩根`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	192
+
+[physical defense]
+	30
+
+[attack speed]
+	-80
+
+[stuck]
+	-1
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	129600
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	1202	1002
+
+[equipment magical attack]
+	901	701
+
+[separate attack]
+	607	507
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/gauntlet/gauntlet.img`	107
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	33	0
+
+[layer variation]
+	2790
+	`gauntletc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gauntletb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	32	0
+
+[layer variation]
+	2150
+	`at_gauntleta`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_gauntletc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_gauntletx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[equipment duration]
+		5000
+	[appendage]
+		670
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[equipment duration]
+		10000
+	[appendage]
+		671
+[/then]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[increase critical damage]
+		`%`	20
+[/then]
+
+[possible kiri protect]

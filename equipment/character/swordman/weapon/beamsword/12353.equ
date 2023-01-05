@@ -1,0 +1,256 @@
+#PVF_File
+
+[name]
+	`邪影污灵剑`
+
+[basic explain]
+	`攻击速度 +5%%
+    背击攻击时， 有20%%的几率使敌人进入石化、 冰冻、 混乱和束缚中任意一种异常状态2秒。
+    攻击异常状态下的敌人时， 附加15%%的暗属性伤害。`
+
+[detail explain]
+	`攻击速度 +5%%
+    背击攻击时， 有20%%的几率使敌人进入石化、 冰冻、 混乱和束缚中任意一种异常状态2秒。(若敌人高于Lv90， 则减少该装备所有异常状态的发动几率和效果； 反之， 则增加几率和效果) 
+    攻击异常状态下的敌人时， 附加15%%的暗属性伤害。`
+
+[flavor text]
+	`    这么阴暗的武器， 使用者的心理多少会受点影响吧。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	68
+
+[stuck]
+	1
+
+[attack speed]
+	150
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	134568
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	932	732
+
+[equipment magical attack]
+	901	701
+
+[separate attack]
+	607	507
+
+[dark attack]
+	14
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/beamswd/beamswd.img`	100
+
+[field image]
+	`Item/FieldImage.img`	35
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[skill levelup]
+	`[common]`	178	5
+[/skill levelup]
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2791
+	`beamswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	2792
+	`beamswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	651
+	`beamswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	652
+	`beamswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2791
+	`beamswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	2792
+	`beamswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	651
+	`beamswdb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	652
+	`beamswdb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`BEAMSWD_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	2500
+
+[item group name]
+	`beamswd`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[required skill]
+	33
+
+[if]
+	[attack condition]
+		`back attack`
+	[attack success]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			20
+		[duration]
+			2000
+		[active status]
+			`stone`	90	20000
+		[then probability]
+			25.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			20
+		[duration]
+			2000
+		[active status]
+			`hold`	90
+		[then probability]
+			25.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			20
+		[duration]
+			2000
+		[active status]
+			`freeze`	90
+		[then probability]
+			25.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			20
+		[duration]
+			2000
+		[active status]
+			`confuse`	90	1
+		[then probability]
+			25.0
+	[/then]
+[/multiple then]
+
+[if]
+	[target active status]
+		`any`
+	[attack success]
+		1
+	[cooltime]
+		500
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		915
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,281 @@
+#PVF_File
+
+[name]
+	`冰火之莲`
+
+[basic explain]
+	`攻击速度 +10%%
+装备时， 攻击时发动灼伤、 冰冻Buff， 效果持续60秒。
+冰冻Buff状态下攻击时， 有5%%的几率使敌人进入冰冻状态2秒。 
+灼伤Buff状态下攻击时， 有5%%的几率使敌人进入灼伤状态3秒。
+冰属性攻击时， 附加15%%的伤害。
+火属性攻击时， 附加15%%的伤害。`
+
+[detail explain]
+	`攻击速度 +10%%
+[装备属性指令]输入时， 攻击时发动灼伤、 冰冻Buff， 效果持续60秒。 (冷却时间60秒； 解除装备后效果消失)
+冰冻Buff状态下攻击时， 有5%%的几率使敌人进入冰冻状态2秒。 
+灼伤Buff状态下攻击时， 有5%%的几率使敌人进入灼伤状态3秒； 灼伤状态下的敌人， 每0.5秒受到1000点伤害。
+冰属性攻击时， 附加15%%的伤害。
+火属性攻击时， 附加15%%的伤害。
+(若敌人高于Lv91， 则减少该装备冰冻异常状态的发动几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`女人果然都是善变的， 一会对你热情如火， 一会又冷若冰霜……  --卡坤`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	65
+
+[magical attack]
+	32
+
+[attack speed]
+	120
+
+[stuck]
+	-1
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	805	630
+
+[equipment magical attack]
+	894	700
+
+[separate attack]
+	589	382
+
+[physical critical hit]
+	3
+
+[fire attack]
+	35
+
+[water attack]
+	35
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/bowgun/bowgun.img`	121
+
+[field image]
+	`Item/field_weapon.img`	5
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	37	0
+
+[layer variation]
+	2790
+	`bowgunc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`bowgunb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	35	0
+
+[layer variation]
+	2790
+	`at_bowgunc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_bowgunb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BOWGUN_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`bowgun`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[fire element]`
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[cooltime]
+		60000
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		60000
+	[appendage]
+		610
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[my appendage]
+		610
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		5
+	[active status]
+		`freeze`	91
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[my appendage]
+		610
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[probability]
+		5
+	[active status]
+		`burn`	91	6000	0	1	0
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[element]
+		`water`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	15
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[element]
+		`fire`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	15
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		403	365
+	[equipment magical attack]
+		447	350
+[/pvp]
+
+[possible kiri protect]

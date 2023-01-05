@@ -1,0 +1,113 @@
+#PVF_File
+
+[name]
+	`黑雾之牙`
+
+[basic explain]
+	`    破招攻击时， 有10%%的几率提升15%%的暴击伤害， 效果持续15秒。 `
+
+[detail explain]
+	`    破招攻击时， 有10%%的几率提升15%%的暴击伤害， 效果持续15秒。 (解除装备后效果消失； 冷却时间30秒； 暴击伤害加成效果取最高值， 且无法叠加)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	54
+
+[magical attack]
+	54
+
+[stuck]
+	-8
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	3168	2944
+
+[all elemental attack]
+	10
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	207
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	21
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		30000
+	[attack condition]
+		`counter`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[equipment duration]
+		20000
+	[appendage]
+		3571
+[/then]
+
+[if]
+	[my appendage]
+		3571
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	15
+[/then]
+
+[possible kiri protect]

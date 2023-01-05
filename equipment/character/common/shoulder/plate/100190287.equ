@@ -1,0 +1,136 @@
+#PVF_File
+
+[name]
+	`突击队长的机械护肩`
+
+[basic explain]
+	` HP为50%%以上时， 自身增加140点力量、 140点智力、 10%%的物理暴击率和10%%的魔法暴击率。
+ HP为50%%以下时， 使自身增加2500点物理防御力、 2500点魔法防御力和250点硬直。`
+
+[flavor text]
+	`我只看结果， 实力变强了最重要。 至于是怎么变强的， 我不在乎。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	30
+
+[magical attack]
+	30
+
+[physical defense]
+	33
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[repair price]
+	86400
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	3960	3680
+
+[icon]
+	`item/new_equipment/06_plate/neck/plate_neck.img`	19
+
+[field image]
+	`Item/field_equip.img`	17
+
+[equipment type]
+	`[shoulder]`	20
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	3200
+
+[item group name]
+	`mt shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>=`
+		`%`	50
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	140
+	[stat by condition]
+		`magical attack`
+		`+`	140
+	[stat by condition]
+		`physical critical hit rate`
+		`+`	10
+	[stat by condition]
+		`magical critical hit rate`
+		`+`	10
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`<`
+		`%`	50
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`equipment physical defense`
+		`+`	2500
+	[stat by condition]
+		`equipment magical defense`
+		`+`	2500
+	[stat by condition]
+		`hit recovery`
+		`+`	250
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]

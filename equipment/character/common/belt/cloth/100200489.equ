@@ -1,0 +1,119 @@
+#PVF_File
+
+[name]
+	`海神谜咒之蓝灵腰带`
+
+[basic explain]
+	`攻击时， 有10%%的几率使敌人进入诅咒状态5秒。`
+
+[detail explain]
+	`攻击时， 有10%%的几率使敌人进入诅咒状态5秒； 诅咒状态下的敌人， 将减少50点力量、 体力、 智力和精神。(若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`后来， 渔夫因为悲伤过度， 一病不起……`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	12400
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[magical attack]
+	27
+
+[magical defense]
+	27
+
+[HP MAX]
+	250
+
+[MP MAX]
+	250
+
+[inventory limit]
+	3000
+
+[need material]
+	10000204	100
+
+[price]
+	85000000
+
+[repair price]
+	43200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	392	364
+
+[water attack]
+	6
+
+[fire resistance]
+	-6
+
+[icon]
+	`item/new_equipment/02_cloth/belt/cloth_belt.img`	36
+
+[field image]
+	`Item/field_equip.img`	3
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[waist]`	15
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	18
+
+[weight]
+	550
+
+[item group name]
+	`cl waist`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		10
+	[duration]
+		5000
+	[active status]
+		`curse`	90	50	50	50	50
+[/then]
+
+[possible kiri protect]

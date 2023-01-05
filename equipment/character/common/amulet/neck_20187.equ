@@ -3,9 +3,6 @@
 [name]
 	`战神的天袭项链`
 
-[name2]
-	`God of War Necklace`
-
 [grade]
 	65
 
@@ -22,6 +19,9 @@
 [minimum level]
 	60
 
+[need material]
+	3260	8000
+
 [magical attack]
 	47
 
@@ -29,13 +29,13 @@
 	87
 
 [price]
-	78000
+	60000000
 
 [repair price]
 	65520
 
 [value]
-	62400
+	6000000
 
 [creation rate]
 	250
@@ -75,13 +75,13 @@
 	[fullset basic explain]
 		`连击达到50次时， 增加10%%的攻击速度、 移动速度和施放速度。
 连击达到100次时， 增加10%%的力量和智力。
-胜点附加伤害
-胜点10001~15000时， 附加伤害 +1%%~5%%
-胜点15001~25000时， 附加伤害 +6%%~10%%
-胜点25001~50000时， 附加伤害 +11%%~15%%
-胜点50001~90000时， 附加伤害 +16%%~19%%
-胜点90001以上时， 附加伤害 +20%%
-(在决斗场中胜点附加伤害无效)`
+胜点追加伤害
+胜点10001~15000时， 追加伤害 +1%%~5%%
+胜点15001~25000时， 追加伤害 +6%%~10%%
+胜点25001~50000时， 追加伤害 +11%%~15%%
+胜点50001~90000时， 追加伤害 +16%%~19%%
+胜点90001以上时， 追加伤害 +20%%
+(在决斗场中胜点追加伤害无效)`
 	[if]
 		[stat change]
 			`vp`
@@ -91,15 +91,18 @@
 			`vp`
 			`<`
 			`+`	11001
-		[attack success]
-			1
+		[cooltime]
+			10000
+		[time]
+			5000	1	5000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	1
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			901
 	[/then]
 	[if]
 		[stat change]
@@ -110,15 +113,18 @@
 			`vp`
 			`<`
 			`+`	12001
-		[attack success]
-			1
+		[cooltime]
+			10000
+		[time]
+			5000	1	5000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	2
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			902
 	[/then]
 	[if]
 		[stat change]
@@ -129,15 +135,18 @@
 			`vp`
 			`<`
 			`+`	13001
-		[attack success]
-			1
+		[cooltime]
+			10000
+		[time]
+			5000	1	5000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	3
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			903
 	[/then]
 	[if]
 		[stat change]
@@ -148,15 +157,18 @@
 			`vp`
 			`<`
 			`+`	14001
-		[attack success]
-			1
+		[cooltime]
+			10000
+		[time]
+			5000	1	5000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	4
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			904
 	[/then]
 	[if]
 		[stat change]
@@ -167,15 +179,18 @@
 			`vp`
 			`<`
 			`+`	15001
-		[attack success]
-			1
+		[cooltime]
+			10000
+		[time]
+			5000	1	5000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	5
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			905
 	[/then]
 	[if]
 		[stat change]
@@ -186,15 +201,18 @@
 			`vp`
 			`<`
 			`+`	17001
-		[attack success]
-			1
+		[cooltime]
+			10000
+		[time]
+			5000	1	5000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	6
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			906
 	[/then]
 	[if]
 		[stat change]
@@ -205,15 +223,18 @@
 			`vp`
 			`<`
 			`+`	19001
-		[attack success]
-			1
+		[cooltime]
+			10000
+		[time]
+			5000	1	5000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	7
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			907
 	[/then]
 	[if]
 		[stat change]
@@ -224,15 +245,18 @@
 			`vp`
 			`<`
 			`+`	21001
-		[attack success]
-			1
+		[cooltime]
+			10000
+		[time]
+			5000	1	5000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	8
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			908
 	[/then]
 	[if]
 		[stat change]
@@ -243,15 +267,18 @@
 			`vp`
 			`<`
 			`+`	23001
-		[attack success]
-			1
+		[cooltime]
+			10000
+		[time]
+			5000	1	5000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	9
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			909
 	[/then]
 	[if]
 		[stat change]
@@ -262,15 +289,18 @@
 			`vp`
 			`<`
 			`+`	25001
-		[attack success]
-			1
+		[cooltime]
+			10000
+		[time]
+			5000	1	5000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	10
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			910
 	[/then]
 	[if]
 		[stat change]
@@ -281,15 +311,18 @@
 			`vp`
 			`<`
 			`+`	30001
-		[attack success]
-			1
+		[cooltime]
+			10000
+		[time]
+			5000	1	5000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	11
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			911
 	[/then]
 	[if]
 		[stat change]
@@ -300,15 +333,18 @@
 			`vp`
 			`<`
 			`+`	35001
-		[attack success]
-			1
+		[cooltime]
+			10000
+		[time]
+			5000	1	5000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	12
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			912
 	[/then]
 	[if]
 		[stat change]
@@ -319,15 +355,18 @@
 			`vp`
 			`<`
 			`+`	40001
-		[attack success]
-			1
+		[cooltime]
+			10000
+		[time]
+			5000	1	5000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	13
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			913
 	[/then]
 	[if]
 		[stat change]
@@ -338,15 +377,18 @@
 			`vp`
 			`<`
 			`+`	45001
-		[attack success]
-			1
+		[cooltime]
+			10000
+		[time]
+			5000	1	5000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	14
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			914
 	[/then]
 	[if]
 		[stat change]
@@ -357,15 +399,18 @@
 			`vp`
 			`<`
 			`+`	50001
-		[attack success]
-			1
+		[cooltime]
+			10000
+		[time]
+			5000	1	5000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	15
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			915
 	[/then]
 	[if]
 		[stat change]
@@ -376,15 +421,18 @@
 			`vp`
 			`<`
 			`+`	60001
-		[attack success]
-			1
+		[cooltime]
+			10000
+		[time]
+			5000	1	5000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	16
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			916
 	[/then]
 	[if]
 		[stat change]
@@ -395,15 +443,18 @@
 			`vp`
 			`<`
 			`+`	70001
-		[attack success]
-			1
+		[cooltime]
+			10000
+		[time]
+			5000	1	5000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	17
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			917
 	[/then]
 	[if]
 		[stat change]
@@ -414,15 +465,18 @@
 			`vp`
 			`<`
 			`+`	80001
-		[attack success]
-			1
+		[cooltime]
+			10000
+		[time]
+			5000	1	5000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	18
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			918
 	[/then]
 	[if]
 		[stat change]
@@ -433,30 +487,36 @@
 			`vp`
 			`<`
 			`+`	90001
-		[attack success]
-			1
+		[cooltime]
+			10000
+		[time]
+			5000	1	5000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	19
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			919
 	[/then]
 	[if]
 		[stat change]
 			`vp`
 			`>`
 			`+`	90000
-		[attack success]
-			1
+		[cooltime]
+			10000
+		[time]
+			5000	1	5000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	20
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			920
 	[/then]
 	[if]
 		[cooltime]

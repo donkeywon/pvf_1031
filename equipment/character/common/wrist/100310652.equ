@@ -1,0 +1,93 @@
+#PVF_File
+
+[name]
+	`龙战玄黄 - 激战之魂`
+
+[basic explain]
+	`物理伤害 +8%%`
+
+[detail explain]
+	`物理伤害 +8%% (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)`
+
+[flavor text]
+	`    兄弟们， 冲啊！`
+
+[grade]
+	45
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	40
+
+[physical attack]
+	50
+
+[physical defense]
+	50
+
+[attack speed]
+	30
+
+[price]
+	40000000
+
+[need material]
+	10000204	100
+
+[value]
+	4000000
+
+[creation rate]
+	500
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	2592	2256
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	140
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	21
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[attack type]
+		`physical`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	8
+[/then]
+
+[possible kiri protect]

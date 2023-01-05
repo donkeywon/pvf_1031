@@ -1,0 +1,133 @@
+#PVF_File
+
+[name]
+	`白月沉息护腿`
+
+[basic explain]
+	`    攻击时， 有5%%的几率增加10%%的物理和魔法暴击率， 效果持续10秒。 `
+
+[detail explain]
+	`    攻击时， 有5%%的几率增加10%%的物理和魔法暴击率， 效果持续10秒。 (解除装备后效果消失； 冷却时间10秒)`
+
+[flavor text]
+	`    黑刀-暗月。。。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	38
+
+[magical attack]
+	38
+
+[magical defense]
+	41
+
+[move speed]
+	20
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[repair price]
+	64800
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment physical defense]
+	1960	1820
+
+[icon]
+	`item/new_equipment/03_leather/pants/leather_pants.img`	44
+
+[field image]
+	`Item/FieldImage.img`	1
+
+[equipment type]
+	`[pants]`	19
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	27
+
+[weight]
+	1500
+
+[item group name]
+	`lt pants`
+
+[cool time]
+	10000
+
+[all skill item]
+	[item growtype]
+		`[all]`	0
+	[skill apply condition]
+		[skill group]
+			`[all]`
+		[lower bound level]
+			1
+		[upper bound level]
+			45
+		[value]
+			1
+		[extra condition]
+			`[except for ex skill]`
+		[/extra condition]
+	[/skill apply condition]
+	[skill phase]
+		`[all]`
+[/all skill item]
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[probability]
+		5
+	[stat]
+		`physical critical hit`
+		`+`	10
+	[stat]
+		`magical critical hit`
+		`+`	10
+[/then]
+
+[possible kiri protect]

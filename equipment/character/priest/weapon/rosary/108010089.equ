@@ -1,0 +1,193 @@
+#PVF_File
+
+[name]
+	`无轩之黄金念珠`
+
+[basic explain]
+	`攻击时， 附加20%%的伤害。
+攻击时， 有3%%的几率使队员进入无敌状态10秒。 (消耗10个无色小晶块)
+施放技能时， 有40%%的几率使包括自身在内的所有队员增加12%%的物理攻击力、 魔法攻击力和独立攻击力， 效果持续40秒。`
+
+[detail explain]
+	`攻击时， 附加20%%的伤害。
+攻击时， 有3%%的几率使队员进入无敌状态10秒。 (消耗10个无色小晶块； 冷却时间50秒)
+施放技能时， 有40%%的几率使包括自身在内的所有队员增加12%%的物理攻击力、 魔法攻击力和独立攻击力， 效果持续40秒。 (最多叠加1次)
+(解除装备后所有效果消失)
+(怪物与装备Lv相差35以上时， 不发动队伍无敌效果)`
+
+[flavor text]
+	`传说中的念珠， 据说曾被虚祖王室收藏过。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[magical attack]
+	97
+
+[attack speed]
+	-20
+
+[cast speed]
+	80
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	864	742
+
+[equipment magical attack]
+	1104	948
+
+[separate attack]
+	589	382
+
+[magical critical hit]
+	2
+
+[all elemental attack]
+	25
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/priest/rosary/rosary.img`	90
+
+[field image]
+	`Item/field_weapon.img`	12
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	29	0
+
+[layer variation]
+	200
+	`rosaryd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`rosaryc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`ROSARY_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2500
+
+[item group name]
+	`rosary`
+
+[cool time]
+	10000
+
+[command]
+	{6=`(SKILL)`}
+[/command]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		50000
+[/if]
+
+[then]
+	[consume item]
+		3037	10
+	[target]
+		`party`	-1
+	[probability]
+		3
+	[equipment duration]
+		10000
+	[buff]
+		`unbreakable`
+[/then]
+
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	20
+[/skill data up]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[probability]
+		40
+	[equipment duration]
+		40000
+	[appendage]
+		615
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		432	371
+	[equipment magical attack]
+		552	474
+[/pvp]
+
+[possible kiri protect]

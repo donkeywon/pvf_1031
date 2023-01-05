@@ -27,7 +27,7 @@
 	89
 
 [rarity]
-	3
+	4
 
 [usable job]
 	`[fighter]`
@@ -197,18 +197,9 @@
 [required skill]
 	34
 
-[if]
-	[attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	12
-[/then]
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	12
+[/skill data up]
 
 [if]
 	[cooltime]

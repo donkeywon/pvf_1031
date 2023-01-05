@@ -1,0 +1,90 @@
+#PVF_File
+
+[name]
+	`戮蛊的记忆之眼`
+
+[basic explain]
+	`   跳跃攻击时， 有20%%的几率发射3个巨型戮蛊唾液炸弹。`
+
+[flavor text]
+	`  我曾经对这个世界充满了厌恶， 可自从跟你在一起， 却逐渐发觉世界的每个角落都充满了光彩， 真是奇怪吧！ -卢克西的自言自语`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	53
+
+[magical attack]
+	53
+
+[physical defense]
+	53
+
+[magical defense]
+	53
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[icon]
+	`Item/new_equipment/11_magicstone/magicstone.img`	131
+
+[field image]
+	`Item/field_equip.img`	23
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[magic stone]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`magic stone`
+
+[cool time]
+	10000
+
+[if]
+	[set my state]
+		1
+	[my state]
+		`jump attack`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		35023	20	20	60	2	0	`Redrock.ptl`
+		35023	20	0	60	2	0	`Redrock.ptl`
+		35023	20	-20	60	2	0	`Redrock.ptl`
+	[/passive object]
+[/then]
+
+[possible kiri protect]

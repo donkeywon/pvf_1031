@@ -1,0 +1,132 @@
+#PVF_File
+
+[name]
+	`怒海狂鲨腿甲`
+
+[basic explain]
+	`冰属性攻击时， 有2%%的几率使敌人进入中毒状态。
+冰属性攻击时， 有3%%的几率使画面内的所有敌人减少30点冰属性抗性， 效果持续7秒。 (冷却时间7秒)`
+
+[detail explain]
+	`冰属性攻击时， 有2%%的几率使敌人进入中毒状态3秒； 中毒状态下的敌人， 每0.5秒受到1083点伤害。 
+冰属性攻击时， 有3%%的几率使画面内的所有敌人减少30点冰属性抗性， 效果持续7秒。 (冷却时间7秒)`
+
+[flavor text]
+	`鲨鱼皮应该比鳄鱼皮值钱吧？`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[part set index]
+	11597
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	35
+
+[magical attack]
+	35
+
+[magical defense]
+	38
+
+[repair price]
+	64800
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	1840	1660
+
+[water attack]
+	12
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/03_leather/pants/leather_pants.img`	17
+
+[field image]
+	`Item/FieldImage.img`	1
+
+[equipment type]
+	`[pants]`	19
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	27
+
+[weight]
+	1500
+
+[item group name]
+	`lt pants`
+
+[cool time]
+	10000
+
+[if]
+	[element]
+		`water`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[duration]
+		3000
+	[active status]
+		`poison`	81	6498
+[/then]
+
+[if]
+	[element]
+		`water`
+	[attack success]
+		1
+	[cooltime]
+		7000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[duration]
+		7000
+	[probability]
+		3
+	[stat]
+		`water resistance`
+		`+`	-30
+[/then]
+
+[possible kiri protect]

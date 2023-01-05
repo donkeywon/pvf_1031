@@ -1,0 +1,107 @@
+#PVF_File
+
+[name]
+	`瘟疫之源狼魂护肩`
+
+[basic explain]
+	`装备时， 使500px范围内的敌人减少10点所有异常状态抗性。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	12550
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	30
+
+[magical attack]
+	30
+
+[magical defense]
+	33
+
+[need material]
+	10000204	100
+
+[price]
+	85000000
+
+[repair price]
+	57600
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	1568	1456
+
+[icon]
+	`item/new_equipment/03_leather/neck/leather_neck.img`	47
+
+[field image]
+	`Item/FieldImage.img`	2
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[shoulder]`	18
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	25
+
+[weight]
+	1100
+
+[item group name]
+	`lt shoulder`
+
+[cool time]
+	10000
+
+[active status control info]
+	`slow`	0	0	10	0	0
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[duration]
+		1000
+	[appendage]
+		375
+[/then]
+
+[possible kiri protect]

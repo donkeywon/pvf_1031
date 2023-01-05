@@ -1,0 +1,103 @@
+#PVF_File
+
+[set name]
+	`千蛛碎影  套装`
+
+[piece set ability]
+	5
+	[physical critical hit]
+		10
+	[magical critical hit]
+		10
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			0
+		[stat by condition]
+			`equipment physical attack`
+			`%`	12
+		[stat by condition]
+			`equipment magical attack`
+			`%`	12
+		[stat by condition]
+			`separate attack`
+			`%`	12
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			20000
+		[appendage]
+			639
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			5000
+		[increase damage]
+			`%`	45
+	[/then]
+	[active status control info]
+		`poison`	0	0	0	30
+	[active status control info]
+		`lightning`	0	0	0	30
+	[active status control info]
+		`bleeding`	0	0	0	30
+	[active status control info]
+		`burn`	0	0	0	30	30	0
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[target active status]
+			`all activestatus`
+		[attack success]
+			1
+		[cooltime]
+			1000
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			5
+		[weakness]
+			30
+	[/then]
+	[parameter basic explain]
+		`物理、 魔法和独立攻击力 +12%%
+    攻击时， 使敌人的所有异常状态抗性减少25， 效果持续20秒。 (冷却时间10秒)
+    攻击时， 增加45%%的伤害。 (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)
+    攻击异常状态的敌人时， 有5%%的几率使敌人减少30%%的HP。 (若敌人高于Lv91， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 对精英怪物的效果为1/3、 对领主和深渊怪物的效果为1/6； 冷却时间1秒)`
+[/piece set ability]

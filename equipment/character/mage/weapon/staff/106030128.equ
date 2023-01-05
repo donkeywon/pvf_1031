@@ -1,0 +1,213 @@
+#PVF_File
+
+[name]
+	`贤者之杖`
+
+[basic explain]
+	`魔法攻击力 +12%%
+独立攻击力 +12%%
+智力 +15%%
+    触发[不死之身]技能时， 复活时额外恢复50%%的HP。`
+
+[flavor text]
+	`    被认可的魔法师才有资格佩戴的法杖。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[magical attack]
+	265
+
+[attack speed]
+	-100
+
+[HP MAX]
+	500
+
+[MP MAX]
+	500
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	912	783
+
+[equipment magical attack]
+	1152	989
+
+[separate attack]
+	589	382
+
+[skill levelup]
+	`[common]`	176	5
+[/skill levelup]
+
+[all elemental attack]
+	22
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/mage/staff/staff.img`	117
+
+[field image]
+	`Item/field_weapon.img`	9
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	38	0
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	39	0
+
+[layer variation]
+	2150
+	`at_staffa`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_staffd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	38	0
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`STAFF_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	2400
+
+[item group name]
+	`staff`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[at mage]`	33	`[dungeon type]`	`[static]`	1	`+`	50
+[/skill data up]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		0
+	[stat by condition]
+		`equipment magical attack`
+		`%`	12
+	[stat by condition]
+		`separate attack`
+		`%`	12
+	[stat by condition]
+		`magical attack`
+		`%`	15
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		456	392
+	[equipment magical attack]
+		576	495
+[/pvp]
+
+[possible kiri protect]

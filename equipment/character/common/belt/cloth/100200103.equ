@@ -1,0 +1,121 @@
+#PVF_File
+
+[name]
+	`锦绣丹华腰带`
+
+[basic explain]
+	`    施放技能时， 有20%%的几率使自身所有属性强化增加30点， 效果持续40秒。 (消耗1个无色小晶块； 冷却时间40秒)`
+
+[detail explain]
+	`    施放技能时， 有20%%的几率使自身所有属性强化增加30点， 效果持续40秒。 (消耗1个无色小晶块； 冷却时间40秒； 解除装备后效果消失)`
+
+[flavor text]
+	`    那个混蛋专挑我穿漂亮衣服的时候来找我决斗， 害我每次都输！！  --娜塔莎`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[part set index]
+	11197
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[magical attack]
+	25
+
+[magical defense]
+	25
+
+[HP MAX]
+	150
+
+[inventory limit]
+	3000
+
+[repair price]
+	45360
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	1368	1332
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/02_cloth/belt/cloth_belt.img`	16
+
+[field image]
+	`Item/field_equip.img`	3
+
+[equipment type]
+	`[waist]`	16
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	18
+
+[weight]
+	550
+
+[item group name]
+	`cl waist`
+
+[cool time]
+	10000
+
+[if]
+	[casting]
+		1
+	[cooltime]
+		40000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[consume item]
+		3037	1
+	[equipment duration]
+		40000
+	[probability]
+		20
+	[stat]
+		`light attack`
+		`+`	30
+	[stat]
+		`dark attack`
+		`+`	30
+	[stat]
+		`fire attack`
+		`+`	30
+	[stat]
+		`water attack`
+		`+`	30
+[/then]
+
+[possible kiri protect]

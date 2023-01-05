@@ -1,0 +1,201 @@
+#PVF_File
+
+[name]
+	`噩梦喧灵`
+
+[basic explain]
+	`    施放[死亡左轮]时， 消耗5%%的HP， 在技能持续时间内， 使自身增加10%%的攻击速度、 移动速度和物理暴击率； 暴击攻击时增加15%%的伤害， 并且使自身进入失明状态。`
+
+[detail explain]
+	`    施放[死亡左轮]时， 消耗5%%的HP， 在技能持续时间内， 使自身增加10%%的攻击速度、 移动速度和物理暴击率； 暴击攻击时增加15%%的伤害， 并且使自身进入失明状态； 失明状态下， 减少50%%的视野和5%%的命中率。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 暴击伤害加成效果取最高值）`
+
+[flavor text]
+	`    最热闹的梦， 不是吗？`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	937	737
+
+[equipment magical attack]
+	789	589
+
+[separate attack]
+	607	507
+
+[physical critical hit]
+	2
+
+[skill levelup]
+	`[gunner]`	60	2
+	`[at gunner]`	60	2
+[/skill levelup]
+
+[dark attack]
+	12
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/revolver/revolver.img`	103
+
+[field image]
+	`Item/field_weapon.img`	1
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	37	0
+
+[layer variation]
+	2790
+	`revc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`revb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	35	0
+
+[layer variation]
+	2790
+	`at_revc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_revb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2000
+
+[item group name]
+	`revolver`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[use skill]
+		`gunner`	60
+	[[/use skill]
+	[cooltime]
+		1200000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		1200000
+	[appendage]
+		675
+	[restore]
+		`hp`
+		`%`	-5	0
+	[active status]
+		`blind`	90	50	5
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	60
+	[[/use skill]
+	[cooltime]
+		1200000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		1200000
+	[appendage]
+		675
+	[restore]
+		`hp`
+		`%`	-5	0
+	[active status]
+		`blind`	90	50	5
+[/then]
+
+[if]
+	[attack success]
+		1
+	[my appendage]
+		675
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	15
+[/then]
+
+[possible kiri protect]

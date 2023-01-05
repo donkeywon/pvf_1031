@@ -1,0 +1,177 @@
+#PVF_File
+
+[name]
+	`拳风传奇`
+
+[basic explain]
+	`攻击速度 +5%%
+    攻击时， 增加2%%的物理攻击力、 魔法攻击力和独立攻击力， 同时减少2%%的防御力， 效果持续60秒。 (效果可重叠， 但增加或减少的上限为60%%； 冷却时间0.1秒)`
+
+[flavor text]
+	`    甲 :  一拳打过去， 你感觉到了什么？
+    乙 : 有风！`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[magical attack]
+	65
+
+[attack speed]
+	150
+
+[cast speed]
+	100
+
+[HP MAX]
+	500
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	912	783
+
+[equipment magical attack]
+	1104	948
+
+[separate attack]
+	589	382
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/knuckle/knuckle.img`	120
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	33	0
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	33	0
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		60000
+	[appendage]
+		361
+	[appendage]
+		362
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		456	392
+	[equipment magical attack]
+		552	474
+[/pvp]
+
+[possible kiri protect]

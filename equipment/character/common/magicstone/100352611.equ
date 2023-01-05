@@ -1,0 +1,132 @@
+#PVF_File
+
+[name]
+	`王者耀世之威`
+
+[basic explain]
+	`    攻击时， 有5%%的几率使自身增加50点力量、 50点智力和75点独立攻击力， 并赋予武器光属性， 效果持续20秒。
+    在武器发光状态下攻击时， 有20%%的几率产生冲击波。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率使自身增加50点力量、 50点智力和75点独立攻击力， 并赋予武器光属性， 效果持续20秒。 (冷却时间30秒)
+    在武器发光状态下攻击时， 有20%%的几率产生冲击波。 (冷却时间3秒)`
+
+[flavor text]
+	`    所谓王者的威严， 绝不是靠他人的拥戴而来。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	53
+
+[magical attack]
+	53
+
+[physical defense]
+	53
+
+[magical defense]
+	53
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[light attack]
+	18
+
+[icon]
+	`Item/new_equipment/11_magicstone/magicstone.img`	128
+
+[field image]
+	`Item/field_equip.img`	23
+
+[equipment type]
+	`[magic stone]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`magic stone`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[appendage]
+		3641
+	[equipment duration]
+		20000
+	[stat]
+		`physical attack`
+		`+`	50
+	[stat]
+		`magical attack`
+		`+`	50
+	[stat]
+		`separate attack`
+		`+`	75
+	[elemental weapon]
+		`light`
+[/then]
+
+[if]
+	[attack success]
+		1
+	[my appendage]
+		3641
+	[cooltime]
+		3000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		20
+	[passive object]
+		60107	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]

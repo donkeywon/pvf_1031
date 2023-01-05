@@ -1,0 +1,170 @@
+#PVF_File
+
+[name]
+	`民兵队长的灵骨念珠`
+
+[basic explain]
+	`    对敌人的伤害  +10%% 
+    
+    攻击类人型敌人时， 附加15000点伤害。
+    攻击不死族敌人时， 附加15000点伤害。
+    可以对500px内的敌人生成诅咒光环。`
+
+[detail explain]
+	`    对敌人的伤害  +10%% (伤害加成效果取最高值）
+    
+    攻击类人型敌人时， 附加15000点伤害。
+    攻击不死族敌人时， 附加15000点伤害。
+    可以对500px内的敌人生成诅咒光环。`
+
+[flavor text]
+	`    虽然有些残忍， 但是或许这是另一种救赎`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	152
+
+[attack speed]
+	-50
+
+[cast speed]
+	50
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	901	701
+
+[equipment magical attack]
+	1152	952
+
+[separate attack]
+	607	507
+
+[magical critical hit]
+	2
+
+[icon]
+	`item/new_equipment/01_weapon/priest/rosary/rosary.img`	93
+
+[field image]
+	`Item/field_weapon.img`	12
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	32	0
+
+[layer variation]
+	200
+	`rosaryd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`rosaryc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`ROSARY_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2500
+
+[item group name]
+	`rosary`
+
+[cool time]
+	10000
+
+[curse appendage]
+	40000	500	5000	5000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	10
+[/then]
+
+[if]
+	[attack success]
+		1
+	[target type]
+		`human`
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`+`	15000
+[/then]
+
+[if]
+	[attack success]
+		1
+	[target type]
+		`undead`
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`+`	15000
+[/then]
+
+[possible kiri protect]

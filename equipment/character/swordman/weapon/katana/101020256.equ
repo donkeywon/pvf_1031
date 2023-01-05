@@ -1,0 +1,309 @@
+#PVF_File
+
+[name]
+	`三一真神`
+
+[basic explain]
+	`物理、 魔法、 独立攻击力 +3%%
+    攻击时， 附加33%%的伤害。
+    攻击时， 有33%%的几率增加3%%的攻击速度、 移动速度和施放速度， 并增加33点力量和智力， 效果持续33秒。 
+    施放技能时， 有33%%的几率使一个技能的冷却时间初始化。
+    HP为33%%以上时， 被攻击时有33%%的几率向敌人返还33%%的所受伤害。
+    攻击时， 有3%%的几率使自身增加33点的物理、 魔法和独立攻击力， 效果持续33秒。`
+
+[detail explain]
+	`攻击时， 附加33%%的伤害。
+物理、 魔法、 独立攻击力 +3%%
+攻击时， 有33%%的几率增加3%%的攻击速度、 移动速度和施放速度， 并增加33点力量和智力， 效果持续33秒。 (冷却时间3秒； 最多重叠3次； 解除装备后效果消失)
+施放技能时， 有33%%的几率使33秒内使用的技能中冷却时间最长的技能的冷却时间初始化。 (冷却时间333秒)
+HP为33%%以上时， 被攻击时有33%%的几率向敌人返还33%%的所受伤害。 (冷却时间33秒)
+(怪物与装备Lv相差35以上时， 无法重置冷却时间)
+    攻击时， 有3%%的几率使自身增加33点物理、 魔法和独立攻击力， 效果持续33秒。（冷却时间3秒， 最多重叠3次）`
+
+[flavor text]
+	`    强化的时候拜什么神明都没用， 只有信凯丽才能得永生。  --某位装备已连碎几次的冒险家`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	65
+
+[magical attack]
+	97
+
+[attack speed]
+	80
+
+[cast speed]
+	40
+
+[stuck]
+	1
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	912	783
+
+[equipment magical attack]
+	1008	865
+
+[separate attack]
+	589	382
+
+[physical critical hit]
+	3
+
+[magical critical hit]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/katana/katana.img`	116
+
+[field image]
+	`Item/FieldImage.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	44	0
+
+[layer variation]
+	2790
+	`katanac`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`katanab`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	44	0
+
+[layer variation]
+	2790
+	`katanac`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`katanab`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`KATANA_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2800
+
+[item group name]
+	`katana`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	33
+[/skill data up]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`equipment physical attack`
+		`%`	3
+	[stat by condition]
+		`equipment magical attack`
+		`%`	3
+	[stat by condition]
+		`separate attack`
+		`%`	3
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		3000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		33
+	[equipment duration]
+		33000
+	[appendage]
+		642
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[casting]
+		1
+	[cooltime]
+		33000
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			33
+		[then probability]
+			50
+		[skill cooltime reset]
+			0
+			``	1
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			33
+		[then probability]
+			50
+		[skill cooltime reset]
+			0
+			``	2
+	[/then]
+[/multiple then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[module]
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[dead tower]`
+		`[blood system]`
+	[/module]
+	[stat change]
+		`hp`
+		`>=`
+		`%`	33
+	[hit]
+		1
+	[cooltime]
+		33000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		33
+	[thorn]
+		33
+[/then]
+
+[if]
+	[cooltime]
+		3000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		33000
+	[probability]
+		3
+	[appendage]
+		641
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		456	392
+	[equipment magical attack]
+		504	433
+[/pvp]
+
+[possible kiri protect]

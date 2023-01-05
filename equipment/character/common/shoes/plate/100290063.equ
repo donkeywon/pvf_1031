@@ -1,0 +1,125 @@
+#PVF_File
+
+[name]
+	`圣堂骑士的赐福战靴`
+
+[basic explain]
+	`    攻击时， 可以使500px范围内的队员恢复2%%的HP。 (冷却时间5秒)
+    攻击时， 使500px范围内包括自己在内的队员进入加速状态10秒； 加速状态下， 增加10%%的移动速度和攻击速度。 (冷却时间20秒)
+(解除装备后效果消失)`
+
+[flavor text]
+	`    愿神的祝福与你同在！`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[part set index]
+	11730
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	21
+
+[magical attack]
+	21
+
+[physical defense]
+	23
+
+[move speed]
+	60
+
+[repair price]
+	77760
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	2760	2490
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/06_plate/shoes/plate_shoes.img`	16
+
+[field image]
+	`Item/field_equip.img`	19
+
+[equipment type]
+	`[shoes]`	19
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	2200
+
+[item group name]
+	`mt shoes`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`party`	500
+	[probability]
+		100
+	[restore]
+		`hp`
+		`%`	2	0
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`party`	500
+	[probability]
+		100
+	[equipment duration]
+		10000
+	[active status]
+		`haste`	81	10	10
+[/then]
+
+[possible kiri protect]

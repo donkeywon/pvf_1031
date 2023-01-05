@@ -1,0 +1,46 @@
+#PVF_File
+
+[set name]
+	`风华绝世  首饰`
+
+[piece set ability]
+	3
+	[move speed]
+		120
+	[cast speed]
+		180
+	[attack speed]
+		120
+	[if]
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			5000
+		[add absolute defense percent]
+			`all`	25
+	[/then]
+	[skill data up]
+		`[all]`	199	`[all]`	`[level]`	50	`+`	25
+	[/skill data up]
+	[if]
+		[event use skill]
+			`common`	180
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			205
+	[/then]
+	[parameter basic explain]
+		`    施放[不屈意志]后， 使自身进入霸体状态10秒。
+    发动该装备的霸体效果后， 在效果持续时间内攻击敌人， 可以附加5%%的伤害。 (最多重叠2次)
+    攻击时， 附加15%%的伤害。 
+    被击时所受的伤害 -15%%`
+[/piece set ability]

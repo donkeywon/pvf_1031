@@ -1,0 +1,147 @@
+#PVF_File
+
+[name]
+	`卡勒特的神射手军靴`
+
+[basic explain]
+	` [空中射击]冷却时间 -10秒
+ [空中射击]攻击力增加率 +10%%
+ [空中射击]发射数 +2
+ 跳跃状态时， 可以发动霸体护甲。`
+
+[flavor text]
+	`  这神射手是本命年的关系吗？ 穿得这么红， 觉得能带来好运气吗？`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	22
+
+[magical attack]
+	22
+
+[magical defense]
+	25
+
+[move speed]
+	40
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[repair price]
+	50400
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	1188	1104
+
+[skill levelup]
+	`[common]`	175	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/03_leather/shoes/leather_shoes.img`	19
+
+[field image]
+	`Item/FieldImage.img`	4
+
+[equipment type]
+	`[shoes]`	16
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	20
+
+[weight]
+	900
+
+[item group name]
+	`lt shoes`
+
+[cool time]
+	10000
+
+[if]
+	[set my state]
+		1
+	[my state]
+		`jump`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[appendage]
+		349
+[/then]
+
+[if]
+	[set my state]
+		1
+	[my state]
+		`stand`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		-99999999
+	[appendage]
+		349
+[/then]
+
+[skill data up]
+	`[gunner]`	33	`[all]`	`[cooltime]`	0	`+`	-10000
+	`[at gunner]`	33	`[all]`	`[cooltime]`	0	`+`	-10000
+	`[gunner]`	33	`[all]`	`[level]`	1	`+`	10
+	`[gunner]`	33	`[all]`	`[level]`	2	`+`	2
+	`[gunner]`	33	`[all]`	`[level]`	3	`+`	2
+	`[gunner]`	33	`[all]`	`[level]`	4	`+`	2
+	`[gunner]`	33	`[all]`	`[level]`	5	`+`	2
+	`[gunner]`	33	`[all]`	`[level]`	6	`+`	2
+	`[at gunner]`	33	`[all]`	`[level]`	1	`+`	10
+	`[at gunner]`	33	`[all]`	`[level]`	2	`+`	2
+	`[at gunner]`	33	`[all]`	`[level]`	3	`+`	2
+	`[at gunner]`	33	`[all]`	`[level]`	4	`+`	2
+	`[at gunner]`	33	`[all]`	`[level]`	5	`+`	2
+	`[at gunner]`	33	`[all]`	`[level]`	6	`+`	2
+[/skill data up]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]

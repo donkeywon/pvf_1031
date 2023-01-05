@@ -3,16 +3,20 @@
 [name]
 	`堕落的恶魔之手`
 
-[name2]
-	``
-
 [basic explain]
-	`物理和魔法伤害 +10%%
-攻击恶魔类型的敌人时， 附加15%%的伤害。
-杀死恶魔族敌人时， 可恢复自身2%%的HP上限。`
+	`对敌人的伤害 +12%%
+    攻击恶魔族敌人时， 附加23%%的伤害。
+    击杀恶魔族敌人时， 可以恢复自身2%%的HP。
+    装备时， 使自身增加15点暗属性强化。`
+
+[detail explain]
+	`对敌人的伤害 +12%% (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)
+    攻击恶魔族敌人时， 附加23%%的伤害。
+    击杀恶魔族敌人时， 可以恢复自身2%%的HP。
+    装备时， 使自身增加15点暗属性强化。(解除装备后效果消失)`
 
 [flavor text]
-	`我会帮助你征服那些恶魔， 但是代价是……你也会变成……恶魔……`
+	`    想要战胜你的对手， 成为人人敬仰的英雄吗？ 我可以帮你， 不过， 有一个条件。`
 
 [grade]
 	85
@@ -31,8 +35,11 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [physical attack]
-	84
+	92
 
 [attack speed]
 	-80
@@ -44,25 +51,31 @@
 	-300
 
 [price]
-	153000
+	80000000
 
 [repair price]
-	128520
+	137600
 
 [value]
-	122400
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical attack]
-	989	917
+	1089	929
 
 [equipment magical attack]
-	742	688
+	816	697
 
 [separate attack]
-	504	343
+	555	359
+
+[dark attack]
+	18
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/01_weapon/fighter/gauntlet/gauntlet.img`	90
@@ -127,7 +140,7 @@
 	`GUNTLET_TOUCH`
 
 [durability]
-	39
+	48
 
 [weight]
 	2900
@@ -138,24 +151,21 @@
 [cool time]
 	10000
 
-[routing priority]
-	`fighter`	4
-	`at fighter`	4
-[/routing priority]
-
 [elemental property]
 	`[dark element]`
 
 [if]
-	[event attack success]
+	[attack success]
 		1
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
+		`myself`	-1
+	[equipment duration]
+		5000
 	[increase damage]
-		`%`	10
+		`%`	12
 [/then]
 
 [if]
@@ -187,8 +197,23 @@
 		`enemy`	-1
 	[add absolute damage]
 		`all`
-		`%`	15
+		`%`	23
 [/then]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[if]
+	[time]
+		20000	1	500
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		0
+	[appendage]
+		614
+[/then]
+
+[possible kiri protect]

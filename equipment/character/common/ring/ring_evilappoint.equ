@@ -3,9 +3,6 @@
 [name]
 	`嗜灵之戒`
 
-[name2]
-	`Forefinger Appointing Evil`
-
 [basic explain]
 	`攻击恶魔族敌人时， 附加30%%的伤害。`
 
@@ -75,14 +72,17 @@
 		`devil`
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	30
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		930
 [/then]
 
 [routing priority]

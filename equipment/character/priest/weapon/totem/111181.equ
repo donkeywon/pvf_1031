@@ -1,0 +1,207 @@
+#PVF_File
+
+[name]
+	`腐蚀之界`
+
+[basic explain]
+	`   攻击时， 有5%%的几率使敌人降低15%%的移动速度和攻击速度， 效果持续20秒。
+   施放[意念驱动]时， 可以召唤鼠群。
+   破招伤害 +20%%`
+
+[flavor text]
+	`  他们不仅残忍地吃掉同族， 吃之前黑布忘剥掉同族的毛皮。这些毛皮堆积在这里， 谁知道时间一长竟然凝固成图腾的模样。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	92
+
+[stuck]
+	-1
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[equipment physical attack]
+	1052	852
+
+[equipment magical attack]
+	901	701
+
+[separate attack]
+	607	507
+
+[icon]
+	`item/new_equipment/01_weapon/priest/totem/totem.img`	107
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	40	0
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[duration]
+		20000
+	[active status]
+		`slow`	120	15	15
+[/then]
+
+[if]
+	[attack condition]
+		`counter`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	20
+[/then]
+
+[if]
+	[use skill]
+		`priest`	13
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		60108	0	25	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`priest`	13
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		60108	-20	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`priest`	13
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		60108	0	-25	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`priest`	13
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		60108	20	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`priest`	13
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		60108	20	-25	0	2	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]

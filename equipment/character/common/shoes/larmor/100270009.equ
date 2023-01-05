@@ -3,14 +3,20 @@
 [name]
 	`深海熔岩战靴`
 
-[name2]
-	``
+[basic explain]
+	`    攻击时， 有3%%的几率对300px范围内的敌人随机生成最多2个沸腾之泉。`
+
+[detail explain]
+	`    攻击时， 有3%%的几率对300px范围内的敌人随机生成生成最多2个沸腾之泉。 (冷却时间5秒)`
 
 [grade]
 	85
 
 [rarity]
 	4
+
+[part set index]
+	11457
 
 [usable job]
 	`[all]`
@@ -22,41 +28,50 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [physical attack]
-	25
+	26
 
 [magical attack]
-	17
+	18
 
 [move speed]
 	60
 
+[stuck resistance]
+	30
+
 [HP MAX]
-	100
+	200
 
 [MP MAX]
-	100
+	200
 
 [price]
-	68000
+	80000000
 
 [repair price]
-	57120
+	61920
 
 [value]
-	54400
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical defense]
-	1674	1566
+	1746	1584
 
-[fire resistance]
-	5
+[fire attack]
+	20
 
 [water resistance]
-	10
+	12
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/04_larmor/shoes/larmor_shoes.img`	10
@@ -85,11 +100,38 @@
 [cool time]
 	10000
 
-[set item master]
-	100070009
+[if]
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
 
-[routing priority]
-[/routing priority]
+[then]
+	[target]
+		`enemy`	300
+	[probability]
+		3
+	[passive object]
+		140156	0	0	0	0	0	` `
+	[/passive object]
+[/then]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[if]
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`enemy`	300
+	[probability]
+		3
+	[passive object]
+		140156	0	0	0	0	0	` `
+	[/passive object]
+[/then]
+
+[possible kiri protect]

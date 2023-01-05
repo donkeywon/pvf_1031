@@ -1,0 +1,196 @@
+#PVF_File
+
+[name]
+	`戮蛊的巨骨拳套`
+
+[basic explain]
+	`   对石化状态下敌人的暴击伤害 +25%%
+    
+   攻击时， 有10%%的几率使命中的敌人300px范围内的所有敌人进入石化状态。
+   攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`   对石化状态下敌人的暴击伤害 +25%%
+    
+   攻击时， 有10%%的几率使被命中敌人的300px范围内的所有敌人进入石化状态5秒； 石化状态解除时， 使敌人受到55000点伤害。(若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+   攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[flavor text]
+	`    嗨， 妹妹， 你的这拳套好有个性啊~  --亚贝罗`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[attack speed]
+	100
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	129600
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	1052	852
+
+[equipment magical attack]
+	952	752
+
+[separate attack]
+	607	507
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/bglove/bglove.img`	97
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	33	0
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	32	0
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`all enemy`	300
+	[probability]
+		10
+	[duration]
+		5000
+	[active status]
+		`stone`	90	17353
+[/then]
+
+[if]
+	[attack success]
+		1
+	[target active status]
+		`stone`
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	25
+[/then]
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		2
+	[active status]
+		`stun`	90
+[/then]
+
+[possible kiri protect]

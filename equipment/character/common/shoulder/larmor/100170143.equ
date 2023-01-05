@@ -1,0 +1,124 @@
+#PVF_File
+
+[name]
+	`最佳球手的反击护具`
+
+[basic explain]
+	`    被击时， 使自身进入霸体状态2秒。`
+
+[detail explain]
+	`被击时， 可以施放霸体护甲， 效果持续2秒。 (冷却时间0.5秒； 解除装备后效果消失)`
+
+[flavor text]
+	`    刚才是让你们， 现在是时候展现我真正的技术了！  --某球手`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11470
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	337
+
+[magical attack]
+	325
+
+[HP MAX]
+	350
+
+[price]
+	85000000
+
+[repair price]
+	72800
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	2448	2232
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/04_larmor/neck/larmor_neck.img`	18
+
+[field image]
+	`Item/field_equip.img`	7
+
+[equipment type]
+	`[shoulder]`	19
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	1900
+
+[item group name]
+	`la shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[hit]
+		1
+	[cooltime]
+		500
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		2000
+	[buff]
+		`superarmor`
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

@@ -1,0 +1,109 @@
+#PVF_File
+
+[name]
+	`格拉西亚家族遗物青丝腰带`
+
+[basic explain]
+	`攻击时， 有5%%的几率增加80点力量和智力， 以及5点光属性强化， 效果持续15秒。`
+
+[detail explain]
+	`攻击时， 有5%%的几率增加80点力量和智力， 以及5点光属性强化， 效果持续15秒。(冷却时间20秒， 最大重叠3次； 该效果与格拉西亚家族遗物的肩甲、 腰带、 鞋子共享； 装备解除后效果消失)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	12536
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[magical attack]
+	27
+
+[magical defense]
+	27
+
+[inventory limit]
+	3000
+
+[need material]
+	10000204	100
+
+[price]
+	85000000
+
+[repair price]
+	43200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	392	364
+
+[light attack]
+	8
+
+[icon]
+	`item/new_equipment/02_cloth/belt/cloth_belt.img`	48
+
+[field image]
+	`Item/field_equip.img`	3
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[waist]`	16
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	18
+
+[weight]
+	550
+
+[item group name]
+	`cl waist`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[equipment duration]
+		15000
+	[appendage]
+		358
+[/then]
+
+[possible kiri protect]

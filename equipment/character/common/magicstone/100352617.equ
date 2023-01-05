@@ -1,0 +1,104 @@
+#PVF_File
+
+[name]
+	`疯狂伊凡的超级炸药`
+
+[basic explain]
+	`    自身HP为5%%以上时， 被攻击时自爆， 对240px范围内的敌人造成伤害。 `
+
+[detail explain]
+	`    自身HP为5%%以上时， 被攻击时自爆， 对240px范围内的敌人造成伤害， 并使自身减少2%%的HP。 (冷却时间2秒)`
+
+[flavor text]
+	`    我新研制的炸药很特别哦， 要不要试试？  --疯狂伊凡`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	53
+
+[magical attack]
+	53
+
+[physical defense]
+	53
+
+[magical defense]
+	53
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[fire attack]
+	15
+
+[icon]
+	`Item/new_equipment/11_magicstone/magicstone.img`	129
+
+[field image]
+	`Item/field_equip.img`	23
+
+[equipment type]
+	`[magic stone]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`magic stone`
+
+[cool time]
+	10000
+
+[if]
+	[stat change]
+		`hp`
+		`>`
+		`%`	5
+	[hit]
+		1
+	[cooltime]
+		2000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`hp`
+		`%`	-2	0
+	[passive object]
+		48532	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]

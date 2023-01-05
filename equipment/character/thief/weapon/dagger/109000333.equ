@@ -1,0 +1,173 @@
+#PVF_File
+
+[name]
+	`骷髅凯恩的执念匕首`
+
+[basic explain]
+	`[剑刃风暴]持续时间 +30%%
+[剑刃风暴]多段攻击次数上限 +3
+[刃舞]回旋斩击攻击力 +15%%
+[刃舞]攻击次数 +8
+    普通攻击时伤害 +40%%
+    攻击时， 有1%%的几率使自身减少2%%的HP。`
+
+[detail explain]
+	`[剑刃风暴]持续时间 +30%%
+[剑刃风暴]多段攻击次数上限 +3
+[刃舞]回旋斩击攻击力 +15%%
+[刃舞]攻击次数 +8
+    普通攻击时伤害 +40%%（伤害加成效果取最高值）
+    攻击时， 有1%%的几率使自身减少2%%的HP。`
+
+[flavor text]
+	`    正因为有执念， 我才能够坚持到现在。  --凯恩`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[attack speed]
+	100
+
+[stuck]
+	1
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	902	702
+
+[equipment magical attack]
+	901	701
+
+[separate attack]
+	607	507
+
+[physical critical hit]
+	10
+
+[icon]
+	`item/new_equipment/01_weapon/thief/dagger/dagger.img`	125
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	35	0
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[thief]`	31	`[all]`	`[static]`	0	`%`	30
+	`[thief]`	31	`[all]`	`[static]`	2	`+`	3
+	`[thief]`	110	`[all]`	`[static]`	9	`+`	8
+	`[thief]`	110	`[all]`	`[static]`	10	`+`	8
+	`[thief]`	110	`[all]`	`[static]`	11	`+`	8
+	`[thief]`	110	`[all]`	`[level]`	0	`%`	15
+	`[thief]`	110	`[all]`	`[level]`	1	`%`	15
+[/skill data up]
+
+[if]
+	[my state]
+		`attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	40
+[/then]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		1
+	[restore]
+		`hp`
+		`%`	-2	0
+[/then]
+
+[possible kiri protect]

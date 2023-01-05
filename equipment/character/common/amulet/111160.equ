@@ -1,0 +1,272 @@
+#PVF_File
+
+[name]
+	`成王之志`
+
+[basic explain]
+	`    继承遗忘之王的意志， 增加100点的力量和智力、 5%%的物理暴击率和魔法暴击率。
+    施放[受身蹲伏]时， 产生冲击波。`
+
+[flavor text]
+	`    每个人都可能有着取向权威、 巅峰挑战的热情和勇气。如果那个人能用自己的力量征服一切， 那么他就会成为那个时代的王。 --鲁特船长`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	36
+
+[magical defense]
+	90
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[equipment magical defense]
+	7920	7360
+
+[icon]
+	`Item/new_equipment/08_necklace/necklace.img`	111
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[amulet]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical critical hit rate`
+		`+`	5
+	[stat by condition]
+		`magical critical hit rate`
+		`+`	5
+	[stat by condition]
+		`physical attack`
+		`+`	100
+	[stat by condition]
+		`magical attack`
+		`+`	100
+[/then]
+
+[if]
+	[use skill]
+		`swordman`	190
+	[/use skill]
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		60099	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`demonic swordman`	190
+	[/use skill]
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		60099	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`fighter`	190
+	[/use skill]
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		60099	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`at fighter`	190
+	[/use skill]
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		60099	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`gunner`	190
+	[/use skill]
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		60099	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	190
+	[/use skill]
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		60099	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`mage`	190
+	[/use skill]
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		60099	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`at mage`	190
+	[/use skill]
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		60099	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`priest`	190
+	[/use skill]
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		60099	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`thief`	190
+	[/use skill]
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		60099	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`creator mage`	190
+	[/use skill]
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		60099	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]

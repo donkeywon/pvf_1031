@@ -1,0 +1,54 @@
+#PVF_File
+
+[set name]
+	`瘟疫之源  套装`
+
+[piece set ability]
+	5
+	[all elemental attack]
+		12
+	[if]
+		[target active status]
+			`any`
+		[attack success]
+			1
+		[cooltime]
+			10000
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			10000
+		[stat]
+			`equipment physical defense`
+			`%`	-10
+		[stat]
+			`equipment magical defense`
+			`%`	-10
+	[/then]
+	[if]
+		[target active status]
+			`any`
+		[attack success]
+			1
+		[cooltime]
+			1000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			1000
+		[appendage]
+			905
+	[/then]
+	[parameter basic explain]
+		`  生成光环， 使500px范围内的所有敌人减少50点异常状态抗性。
+  攻击异常状态的敌人时， 使敌人减少10%%的防御力， 效果持续10秒。
+  攻击异常状态的敌人时， 附加5%%的伤害。
+  装备时， 每2秒使300px范围内的所有敌人进入诅咒、 出血、 感电状态10秒
+  - 使敌人进入出血状态10秒； 出血状态下的敌人， 每0.5秒受到100点伤害
+  - 使敌人进入感电状态10秒； 每次攻击时附加100点攻击力的伤害
+  - 使敌人进入诅咒状态10秒； 诅咒状态下的敌人力量、 体力、 智力和精神各减少10点`
+[/piece set ability]

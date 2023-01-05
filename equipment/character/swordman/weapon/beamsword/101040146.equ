@@ -1,0 +1,269 @@
+#PVF_File
+
+[name]
+	`雷剑 - 苦轮`
+
+[basic explain]
+	`    攻击时， 附加10%%的光属性伤害。
+    装备时， 使500px范围内的所有敌人进入眩晕状态3秒。
+    每隔3秒还会对500px范围内的所有敌人发动闪电攻击， 效果持续15秒。
+    被击时， 以自身为中心发动闪电攻击。`
+
+[detail explain]
+	`    攻击时， 附加10%%的光属性伤害。
+    装备时， 使500px范围内的所有敌人进入眩晕状态3秒。(消耗2个白色小晶块) 
+    每隔3秒还会对500px范围内的所有敌人发动闪电攻击， 效果持续15秒。(冷却时间20秒)
+    被击时， 以自身为中心发动闪电攻击。`
+
+[flavor text]
+	`    光芒越耀眼， 人生越苦短。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	72
+
+[attack speed]
+	100
+
+[stuck]
+	1
+
+[need material]
+	3285	3000
+
+[price]
+	85000000
+
+[repair price]
+	145600
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	982	782
+
+[equipment magical attack]
+	950	750
+
+[separate attack]
+	648	548
+
+[light attack]
+	40
+
+[icon]
+	`Item/new_equipment/01_weapon/swordman/beamswd/beamswd.img`	96
+
+[field image]
+	`Item/FieldImage1.img`	35
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	32	0
+
+[layer variation]
+	2791
+	`beamswdc1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	2792
+	`beamswdc2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	651
+	`beamswdb1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	652
+	`beamswdb2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	32	0
+
+[layer variation]
+	2791
+	`beamswdc1`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	2792
+	`beamswdc2`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	651
+	`beamswdb1`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	652
+	`beamswdb2`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`BEAMSWD_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2500
+
+[item group name]
+	`beamswd`
+
+[cool time]
+	10000
+
+[required skill]
+	33
+
+[light attack]
+	45
+
+[elemental property]
+	`[light element]`
+[/elemental property]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[consume item]
+		3034	2
+	[equipment duration]
+		15000
+	[appendage]
+		237
+[/then]
+
+[if]
+	[my appendage]
+		237
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		15000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[probability]
+		100
+	[duration]
+		3000
+	[active status]
+		`stun`	120
+[/then]
+
+[if]
+	[time]
+		3000	1	0
+	[my appendage]
+		237
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		3000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[passive object]
+		60408	0	0	0	40	0	``
+	[/passive object]
+[/then]
+
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	10
+[/skill data up]
+
+[if]
+	[cooltime]
+		100
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[passive object]
+		60408	0	0	0	40	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]

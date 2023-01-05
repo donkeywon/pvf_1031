@@ -1,0 +1,133 @@
+#PVF_File
+
+[name]
+	`冰雪公主的霜语手镯`
+
+[basic explain]
+	`    攻击时， 赋予武器冰属性， 效果持续20秒。
+    被攻击时， 使500px范围内的所有敌人进入冰冻状态。`
+
+[detail explain]
+	`    攻击时， 赋予武器冰属性， 效果持续20秒。 (冷却时间20秒； 解除装备后效果消失)
+    被攻击时， 使500px范围内的所有敌人进入冰冻状态3秒。(若敌人高于Lv91， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`    那就别怪我做出这样的决定！  --摘自已故公主的日记`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11126
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	37
+
+[physical defense]
+	93
+
+[price]
+	85000000
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment magical defense]
+	4896	4464
+
+[water attack]
+	18
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	97
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	21
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		20000
+	[elemental weapon]
+		`water`
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[hit]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[duration]
+		3000
+	[active status]
+		`freeze`	91
+[/then]
+
+[pvp]
+	[attack speed]
+		57
+	[cast speed]
+		108
+	[hit recovery]
+		112
+[/pvp]
+
+[possible kiri protect]

@@ -1,0 +1,151 @@
+#PVF_File
+
+[name]
+	`卡勒特的黑铁念珠`
+
+[basic explain]
+	`   施放技能时， 有20%%的几率发动警卫队长库尔基普的EMP爆炸攻击。
+   被EMP爆炸命中的敌人， 会进入眩晕状态2秒。
+   被EMP爆炸命中的敌人， 会进入感电状态3秒。
+   角色400px范围内， 每存在1个眩晕状态的敌人， 即可增加自身3%%的魔法暴击率。
+   角色400px范围内， 每存在1个感电状态的敌人， 即可增加自身40点的智力。`
+
+[detail explain]
+	`   施放技能时， 有20%%的几率发动警卫队长库尔基普的EMP爆炸攻击。（冷却时间10秒）
+   被EMP爆炸命中的敌人， 会进入眩晕状态2秒。
+   被EMP爆炸命中的敌人， 会进入感电状态3秒； 若攻击感电状态的敌人， 则每次攻击会附加2000点的伤害。
+   角色400px范围内， 每存在1个眩晕状态的敌人， 即可增加自身3%%的魔法暴击率。（最多重叠5次）
+   角色400px范围内， 每存在1个感电状态的敌人， 即可增加自身40点的智力。（最多重叠5次）
+  （上述所有异常状态， 若敌人高于Lv89， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果）`
+
+[flavor text]
+	`  据说这种金属的导电效果是最好的， 可以给那些动不动就发毒誓“什么五雷轰顶”的人用。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	92
+
+[attack speed]
+	-50
+
+[cast speed]
+	50
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[equipment physical attack]
+	901	701
+
+[equipment magical attack]
+	1152	952
+
+[separate attack]
+	607	507
+
+[magical critical hit]
+	2
+
+[icon]
+	`item/new_equipment/01_weapon/priest/rosary/rosary.img`	94
+
+[field image]
+	`Item/field_weapon.img`	12
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	33	0
+
+[layer variation]
+	200
+	`rosaryd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`rosaryc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`ROSARY_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2500
+
+[item group name]
+	`rosary`
+
+[cool time]
+	10000
+
+[if]
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		20
+	[passive object]
+		60094	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[variable stat]
+	`magical critical hit`
+	`+`	3
+	`object number`
+	`enemy`	400
+	`stun`	5
+	`magical attack`
+	`+`	40
+	`object number`
+	`enemy`	400
+	`lightning`	5
+[/variable stat]
+
+[possible kiri protect]

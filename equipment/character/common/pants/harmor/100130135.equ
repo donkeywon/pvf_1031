@@ -1,0 +1,173 @@
+#PVF_File
+
+[name]
+	`超级赛亚人变身铠甲`
+
+[basic explain]
+	`  装备时， 会增加1800点物理防御力和1000点魔法防御力。
+  HP高于70%%时， 被攻击时所受伤害减少25%%。
+  HP在50%%~70%%之间时， 被攻击时所受伤害减少15%%。
+  HP低于50%%时， 被攻击时所受伤害减少10%%。`
+
+[flavor text]
+	`使用说明 : 想让这件装备发挥奇效， 穿上之后一定要大声念出咒语， 咒语你懂得。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	141
+
+[magical attack]
+	30
+
+[physical defense]
+	138
+
+[attack speed]
+	-20
+
+[move speed]
+	-20
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[repair price]
+	86400
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	3960	3680
+
+[all elemental resistance]
+	30
+
+[icon]
+	`item/new_equipment/05_harmor/pants/harmor_pants.img`	21
+
+[field image]
+	`Item/field_equip.img`	11
+
+[equipment type]
+	`[pants]`	20
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	34
+
+[weight]
+	2900
+
+[item group name]
+	`ha pants`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`equipment physical defense`
+		`+`	1800
+	[stat by condition]
+		`equipment magical defense`
+		`+`	1500
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	70
+		`end`
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	25
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`=<`
+		`%`	70
+		`hp`
+		`>=`
+		`%`	50
+		`end`
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	15
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`<`
+		`%`	50
+		`end`
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	10
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]

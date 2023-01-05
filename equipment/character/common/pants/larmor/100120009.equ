@@ -3,14 +3,22 @@
 [name]
 	`深海熔岩护腿`
 
-[name2]
-	``
+[basic explain]
+	`    火属性强化100以上时， 增加8%%的物理、 魔法和独立攻击力。
+攻击时， 有3%%的几率对300px范围内的敌人随机发动最多3个沸腾之泉。`
+
+[detail explain]
+	`    火属性强化100以上时， 增加8%%的物理、 魔法和独立攻击力。
+攻击时， 有3%%的几率对300px范围内的敌人随机发动最多3个沸腾之泉。 (冷却时间5秒)`
 
 [grade]
 	85
 
 [rarity]
 	4
+
+[part set index]
+	11457
 
 [usable job]
 	`[all]`
@@ -22,48 +30,38 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [physical attack]
-	42
+	44
 
 [magical attack]
-	28
+	29
 
-[HP regen speed]
-	54
-
-[MP regen speed]
-	39
+[HP MAX]
+	350
 
 [price]
-	85000
+	80000000
 
 [repair price]
-	71400
+	82560
 
 [value]
-	68000
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical defense]
-	2790	2610
-
-[skill levelup]
-	`[priest]`	104	1
-	`[fighter]`	105	1
-	`[at fighter]`	121	1
-	`[fighter]`	103	1
-	`[at fighter]`	122	1
-	`[swordman]`	97	1
-	`[thief]`	77	1
-[/skill levelup]
-
-[fire resistance]
-	6
+	2910	2640
 
 [water resistance]
 	12
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/04_larmor/pants/larmor_pants.img`	10
@@ -92,11 +90,80 @@
 [cool time]
 	10000
 
-[set item master]
-	100070009
+[if]
+	[time]
+		500	1	500
+	[is stat]
+		`myself`	-1
+		`fire attack`
+		`=>`	100
+[/if]
 
-[routing priority]
-[/routing priority]
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		0
+	[stat by condition]
+		`equipment physical attack`
+		`%`	8
+	[stat by condition]
+		`equipment magical attack`
+		`%`	8
+	[stat by condition]
+		`separate attack`
+		`%`	8
+[/then]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[if]
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`enemy`	300
+	[probability]
+		3
+	[passive object]
+		140156	0	0	0	0	0	` `
+	[/passive object]
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`enemy`	300
+	[probability]
+		3
+	[passive object]
+		140156	0	0	0	0	0	` `
+	[/passive object]
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`enemy`	300
+	[probability]
+		3
+	[passive object]
+		140156	0	0	0	0	0	` `
+	[/passive object]
+[/then]
+
+[possible kiri protect]

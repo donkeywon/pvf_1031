@@ -1,0 +1,176 @@
+#PVF_File
+
+[name]
+	`刀疤鼠的来历`
+
+[basic explain]
+	`   每5秒使自身进入出血状态。
+   自身在出血状态下攻击时， 有5%%的几率使画面内的所有敌人进入出血状态。 
+   对出血状态下敌人的暴击伤害 +15%%`
+
+[detail explain]
+	`   每5秒使自身进入出血状态5秒； 出血状态下， 每0.5秒受到5点伤害。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 装备5秒后生效)
+   自身在出血状态下攻击时， 有5%%的几率使画面内的所有敌人进入出血状态。
+   对出血状态下敌人的暴击伤害 +15%%`
+
+[flavor text]
+	`    它曾经向狄瑞吉发起过挑战， 不过力量太悬殊了……所以， 后来它就成了狄瑞吉的仆人。  --艾丽丝`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[attack speed]
+	-80
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	1022	822
+
+[equipment magical attack]
+	801	601
+
+[separate attack]
+	607	507
+
+[physical critical hit]
+	10
+
+[dark attack]
+	15
+
+[icon]
+	`item/new_equipment/01_weapon/thief/twinswd/twinswd.img`	121
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		5000	1	0
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		5000
+	[active status]
+		`bleeding`	90	50
+[/then]
+
+[if]
+	[my active status]
+		`bleeding`
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[probability]
+		5
+	[duration]
+		3000
+	[active status]
+		`bleeding`	90	50000
+[/then]
+
+[if]
+	[target active status]
+		`bleeding`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	15
+[/then]
+
+[possible kiri protect]

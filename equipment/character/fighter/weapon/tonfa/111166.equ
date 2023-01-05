@@ -1,0 +1,336 @@
+#PVF_File
+
+[name]
+	`阿波菲斯的魔灵护具`
+
+[basic explain]
+	`    成功施放以下技能时， 发动地震攻击。
+  格斗家（女）
+  [抛投]、 [空绞锤]、 [螺旋彗星落]、 [地狱摇篮]、 [裂石破天]
+  格斗家（男）
+  [抛投]、 [空绞锤]、 [浮空凌云踢]、 [地狱风火轮]、 [裂石破天]`
+
+[flavor text]
+	`    魔剑冠名的武器， 必属精品 ！`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	112
+
+[magical attack]
+	92
+
+[attack speed]
+	50
+
+[stuck]
+	-2
+
+[stuck resistance]
+	30
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[equipment physical attack]
+	952	752
+
+[equipment magical attack]
+	1002	802
+
+[equipment physical defense]
+	990	790
+
+[separate attack]
+	607	507
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/tonfa/tonfa.img`	105
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	35	0
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[if]
+	[skill]
+		`fighter`	49
+	[/skill]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		60083	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`fighter`	18
+	[/skill]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		60083	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`fighter`	62
+	[/skill]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		60083	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`fighter`	89
+	[/skill]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		60083	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`fighter`	88
+	[/skill]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		60083	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`at fighter`	49
+	[/skill]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		60083	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`at fighter`	18
+	[/skill]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		60083	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`at fighter`	62
+	[/skill]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		60083	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`at fighter`	89
+	[/skill]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		60083	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`at fighter`	88
+	[/skill]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		60083	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]

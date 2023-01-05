@@ -1,0 +1,67 @@
+#PVF_File
+
+[set name]
+	`怒海狂鲨  套装`
+
+[piece set ability]
+	5
+	[water attack]
+		45
+	[if]
+		[element]
+			`water`
+		[attack success]
+			1
+		[cooltime]
+			1000
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			30
+		[passive object]
+			48615	0	0	0	90	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[element]
+			`water`
+		[attack success]
+			1
+		[cooltime]
+			10000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			10
+		[passive object]
+			49004	0	0	0	99	0	` `
+		[/passive object]
+	[/then]
+	[if]
+		[cooltime]
+			25000
+		[element]
+			`water`
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			140157	0	0	0	90	0	``
+		[/passive object]
+	[/then]
+	[parameter basic explain]
+		`    冰属性攻击时， 有10%%的几率施放波涛攻击敌人。
+    冰属性攻击时， 有30%%的几率出现冰属性爆炸。
+    被冰属性攻击时， 在500px范围内随机发动怒海狂鲨的庇护。`
+	[parameter detail explain]
+		`    冰属性攻击时， 有10%%的几率施放波涛攻击敌人。 (冷却时间10秒)
+    冰属性攻击时， 有30%%的几率出现冰属性爆炸。 
+    被冰属性攻击时， 在500px范围内随机发动怒海狂鲨的庇护。 (冷却时间25秒)`
+[/piece set ability]

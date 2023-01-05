@@ -1,0 +1,207 @@
+#PVF_File
+
+[name]
+	`最高指挥官战弩`
+
+[basic explain]
+	`    攻击时， 附加22%%的伤害。
+    装备时， 增加6%%的物理、 魔法和独立攻击力。`
+
+[flavor text]
+	`    一二三四， 二二三四。 换了子弹， 再来一次！`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	215
+
+[magical attack]
+	182
+
+[attack speed]
+	20
+
+[stuck]
+	-1
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	805	630
+
+[equipment magical attack]
+	894	700
+
+[separate attack]
+	589	382
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[gunner]`	2	5
+	`[gunner]`	30	5
+	`[at gunner]`	2	5
+	`[at gunner]`	30	5
+	`[at gunner]`	31	2
+[/skill levelup]
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/bowgun/bowgun.img`	98
+
+[field image]
+	`Item/field_weapon.img`	5
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	33	0
+
+[layer variation]
+	2790
+	`bowgunc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`bowgunb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	31	0
+
+[layer variation]
+	2790
+	`at_bowgunc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_bowgunb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BOWGUN_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`bowgun`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	22
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		0
+	[stat by condition]
+		`equipment physical attack`
+		`%`	6
+	[stat by condition]
+		`equipment magical attack`
+		`%`	6
+	[stat by condition]
+		`separate attack`
+		`%`	6
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		403	365
+	[equipment magical attack]
+		447	350
+[/pvp]
+
+[possible kiri protect]

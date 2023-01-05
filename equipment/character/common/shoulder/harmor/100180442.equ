@@ -1,0 +1,107 @@
+#PVF_File
+
+[name]
+	`瘟疫之源僚牙护肩`
+
+[basic explain]
+	`装备时， 使500px范围内的敌人减少10点所有异常状态抗性。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	12550
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	33
+
+[magical attack]
+	24
+
+[physical defense]
+	30
+
+[need material]
+	10000204	100
+
+[price]
+	85000000
+
+[repair price]
+	72000
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	3136	2912
+
+[icon]
+	`item/new_equipment/05_harmor/neck/harmor_neck.img`	50
+
+[field image]
+	`Item/field_equip.img`	12
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[shoulder]`	20
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	32
+
+[weight]
+	2300
+
+[item group name]
+	`ha shoulder`
+
+[cool time]
+	10000
+
+[active status control info]
+	`slow`	0	0	10	0	0
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[duration]
+		1000
+	[appendage]
+		375
+[/then]
+
+[possible kiri protect]

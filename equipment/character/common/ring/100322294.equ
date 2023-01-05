@@ -1,0 +1,490 @@
+#PVF_File
+
+[name]
+	`清泉流响`
+
+[basic explain]
+	`    增加5%%的四维
+    每提升1点强化或增幅等级， 额外增加1%%的四维。`
+
+[detail explain]
+	`    增加5%%的四维
+    每提升1点强化或增幅等级， 额外增加1%%的四维。(强化或增幅等级最多增加至12)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[part set index]
+	12594
+
+[physical attack]
+	64
+
+[magical attack]
+	64
+
+[attack speed]
+	50
+
+[move speed]
+	50
+
+[cast speed]
+	80
+
+[price]
+	85000000
+
+[value]
+	8500000
+
+[need material]
+	9999	1500
+
+[creation rate]
+	25
+
+[equipment magical defense]
+	3424	3136
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	243
+
+[field image]
+	`Item/FieldImage1.img`	5
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[equipment type]
+	`[ring]`	21
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	0	0
+		`amplify`
+		`=`	0	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack`
+		`%`	5
+	[stat by condition]
+		`physical attack`
+		`%`	5
+	[stat by condition]
+		`magical defense`
+		`%`	5
+	[stat by condition]
+		`physical defense`
+		`%`	5
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	1	0
+		`amplify`
+		`=`	1	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack`
+		`%`	6
+	[stat by condition]
+		`physical attack`
+		`%`	6
+	[stat by condition]
+		`magical defense`
+		`%`	6
+	[stat by condition]
+		`physical defense`
+		`%`	6
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	2	0
+		`amplify`
+		`=`	2	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack`
+		`%`	7
+	[stat by condition]
+		`physical attack`
+		`%`	7
+	[stat by condition]
+		`magical defense`
+		`%`	7
+	[stat by condition]
+		`physical defense`
+		`%`	7
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	3	0
+		`amplify`
+		`=`	3	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack`
+		`%`	8
+	[stat by condition]
+		`physical attack`
+		`%`	8
+	[stat by condition]
+		`magical defense`
+		`%`	8
+	[stat by condition]
+		`physical defense`
+		`%`	8
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	4	0
+		`amplify`
+		`=`	4	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack`
+		`%`	9
+	[stat by condition]
+		`physical attack`
+		`%`	9
+	[stat by condition]
+		`magical defense`
+		`%`	9
+	[stat by condition]
+		`physical defense`
+		`%`	9
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	5	0
+		`amplify`
+		`=`	5	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack`
+		`%`	10
+	[stat by condition]
+		`physical attack`
+		`%`	10
+	[stat by condition]
+		`magical defense`
+		`%`	10
+	[stat by condition]
+		`physical defense`
+		`%`	10
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	6	0
+		`amplify`
+		`=`	6	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack`
+		`%`	11
+	[stat by condition]
+		`physical attack`
+		`%`	11
+	[stat by condition]
+		`magical defense`
+		`%`	11
+	[stat by condition]
+		`physical defense`
+		`%`	11
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	7	0
+		`amplify`
+		`=`	7	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack`
+		`%`	12
+	[stat by condition]
+		`physical attack`
+		`%`	12
+	[stat by condition]
+		`magical defense`
+		`%`	12
+	[stat by condition]
+		`physical defense`
+		`%`	12
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	8	0
+		`amplify`
+		`=`	8	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack`
+		`%`	13
+	[stat by condition]
+		`physical attack`
+		`%`	13
+	[stat by condition]
+		`magical defense`
+		`%`	13
+	[stat by condition]
+		`physical defense`
+		`%`	13
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	9	0
+		`amplify`
+		`=`	9	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack`
+		`%`	14
+	[stat by condition]
+		`physical attack`
+		`%`	14
+	[stat by condition]
+		`magical defense`
+		`%`	14
+	[stat by condition]
+		`physical defense`
+		`%`	14
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	10	0
+		`amplify`
+		`=`	10	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack`
+		`%`	15
+	[stat by condition]
+		`physical attack`
+		`%`	15
+	[stat by condition]
+		`magical defense`
+		`%`	15
+	[stat by condition]
+		`physical defense`
+		`%`	15
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	11	0
+		`amplify`
+		`=`	11	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack`
+		`%`	16
+	[stat by condition]
+		`physical attack`
+		`%`	16
+	[stat by condition]
+		`magical defense`
+		`%`	16
+	[stat by condition]
+		`physical defense`
+		`%`	16
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`>=`	12	0
+		`amplify`
+		`>=`	12	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack`
+		`%`	17
+	[stat by condition]
+		`physical attack`
+		`%`	17
+	[stat by condition]
+		`magical defense`
+		`%`	17
+	[stat by condition]
+		`physical defense`
+		`%`	17
+[/then]
+
+[possible kiri protect]

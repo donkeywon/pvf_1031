@@ -1,0 +1,188 @@
+#PVF_File
+
+[name]
+	`米斯特汀`
+
+[basic explain]
+	`    攻击时， 附加22%%的伤害。
+    攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`    攻击时， 附加22%%的伤害。
+    攻击时， 有2%%的几率使敌人进入眩晕状态。 (若敌人高于Lv91， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`    无论多强大的武器， 当需要时不在身边， 都会成无用之物。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	152
+
+[attack speed]
+	-30
+
+[stuck]
+	-1
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	1056	906
+
+[equipment magical attack]
+	912	783
+
+[separate attack]
+	589	382
+
+[dark attack]
+	45
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/club/club.img`	103
+
+[field image]
+	`Item/FieldImage.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`STICK_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3400
+
+[item group name]
+	`club`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	22
+[/skill data up]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[reduce duration to human armor at pvp module]
+		50
+	[duration]
+		2000
+	[reduce probability at pvp module]
+		80
+	[probability]
+		2
+	[active status]
+		`stun`	91
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		528	528
+	[equipment magical attack]
+		456	392
+[/pvp]
+
+[possible kiri protect]

@@ -1,0 +1,287 @@
+#PVF_File
+
+[name]
+	`生死轮盘 - 玩命`
+
+[basic explain]
+	`攻击时， 有66%%的几率增加55%%的伤害或66%%的伤害。
+    HP高于20%%时， 输入[技能指令]， 可随机发动以下特殊效果中的任意一种， 效果持续20秒。
+    - 胜利 : 自身的防御力变为2倍， 并增加50%%的伤害。
+    - 失败 : 自身的防御力变为0， 同时减少20%%的HP值， 并增加40%%的伤害。`
+
+[detail explain]
+	`攻击时， 有66%%的几率增加55%%的伤害或66%%的伤害。
+    HP高于20%%时， 输入[技能指令]， 可随机发动以下特殊效果中的任意一种， 效果持续20秒。 (冷却时间20秒)
+    - 胜利 : 自身的防御力变为2倍， 并增加50%%的伤害。
+    - 失败 : 自身的防御力变为0， 同时减少20%%的HP， 并增加40%%的伤害。
+    (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外， 解除装备后效果消失)`
+
+[flavor text]
+	`    你有几条命， 敢和我玩？`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	97
+
+[attack speed]
+	-80
+
+[stuck]
+	-1
+
+[price]
+	85000000
+
+[repair price]
+	145600
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	1202	1039
+
+[equipment magical attack]
+	864	742
+
+[separate attack]
+	637	430
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/gauntlet/gauntlet.img`	105
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	31	0
+
+[layer variation]
+	2790
+	`gauntletc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gauntletb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	30	0
+
+[layer variation]
+	2150
+	`at_gauntleta`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_gauntletc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_gauntletx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[command]
+	{6=`(SKILL)`}
+[/command]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[multiple then]
+	[then]
+		[probability]
+			66
+		[target]
+			`myself`	-1
+		[equipment duration]
+			500
+		[increase damage]
+			`%`	55
+		[then probability]
+			50.0
+	[/then]
+	[then]
+		[probability]
+			66
+		[target]
+			`myself`	-1
+		[equipment duration]
+			500
+		[increase damage]
+			`%`	66
+		[then probability]
+			50.0
+	[/then]
+[/multiple then]
+
+[if]
+	[stat change]
+		`hp`
+		`>=`
+		`%`	20
+	[use command]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			20000
+		[appendage]
+			363
+		[appendage]
+			857
+		[then probability]
+			50.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			20000
+		[appendage]
+			364
+		[appendage]
+			858
+		[restore]
+			`hp`
+			`%`	-20	0
+		[then probability]
+			50.0
+	[/then]
+[/multiple then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[time]
+		500	1	0
+	[my appendage]
+		363
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[increase damage]
+		`%`	50
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[time]
+		500	1	0
+	[my appendage]
+		364
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[increase damage]
+		`%`	40
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		601	520
+	[equipment magical attack]
+		432	371
+[/pvp]
+
+[possible kiri protect]

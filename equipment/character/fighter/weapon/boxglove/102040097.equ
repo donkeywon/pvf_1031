@@ -1,0 +1,241 @@
+#PVF_File
+
+[name]
+	`卑劣肾击者`
+
+[basic explain]
+	`物理背击暴击率 +30%%
+背击攻击时， 暴击伤害 +50%%
+暴击伤害 +30%%
+    攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`    物理背击暴击率 +30%%
+背击攻击时， 暴击伤害增加50%%。
+暴击伤害 +30%%
+(暴击伤害加成效果取最高值， 且无法叠加)
+    攻击时， 有2%%的几率使敌人进入眩晕状态2秒。 (若敌人高于Lv91， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`    甲 : 太卑鄙了， 竟然搞偷袭。
+乙 : 只要能赢， 别说偷袭， 偷情都行。
+(注 : 小朋友们， 这可是不好的示范， 大家不要学哦！)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	65
+
+[attack speed]
+	100
+
+[price]
+	85000000
+
+[repair price]
+	145600
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	1008	865
+
+[equipment magical attack]
+	912	783
+
+[separate attack]
+	589	382
+
+[physical critical hit]
+	15
+
+[skill levelup]
+	`[fighter]`	39	1
+	`[at fighter]`	39	1
+[/skill levelup]
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/bglove/bglove.img`	93
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	29	0
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	28	0
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		2
+	[active status]
+		`stun`	91
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack condition]
+		`back attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	50
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[increase critical damage]
+		`%`	30
+[/then]
+
+[skill data up]
+	`[fighter]`	178	`[all]`	`[level]`	0	`+`	300
+	`[at fighter]`	178	`[all]`	`[level]`	0	`+`	300
+[/skill data up]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		504	433
+	[equipment magical attack]
+		456	392
+[/pvp]
+
+[possible kiri protect]

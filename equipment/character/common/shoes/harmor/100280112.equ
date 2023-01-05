@@ -1,0 +1,185 @@
+#PVF_File
+
+[name]
+	`凯恩的猛袭长靴`
+
+[basic explain]
+	`    装备时， 会增加3%%的攻击速度和施放速度。
+    连击数达到30次时， 增加60点的力量和智力， 效果持续10秒。 
+    连击数达到50次时， 增加7%%的物理暴击率和魔法暴击率， 效果持续10秒。 
+    连击数达到100次时， 增加55点的物理攻击力和魔法攻击力， 以及70点独立攻击力， 效果持续10秒。 `
+
+[detail explain]
+	`    装备时， 会增加3%%的攻击速度和施放速度。
+    连击数达到30次时， 增加60点的力量和智力， 效果持续10秒。 (冷却时间10秒)
+    连击数达到50次时， 增加7%%的物理暴击率和魔法暴击率， 效果持续10秒。 (冷却时间10秒)
+    连击数达到100次时， 增加55点的物理攻击力和魔法攻击力， 以及70点独立攻击力， 效果持续10秒。 (冷却时间10秒)`
+
+[flavor text]
+	`    能抵挡住他剑招的， 这世上有几个人呢？`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	25
+
+[magical attack]
+	18
+
+[physical defense]
+	22
+
+[move speed]
+	70
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[repair price]
+	64800
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment physical defense]
+	2376	2208
+
+[icon]
+	`item/new_equipment/05_harmor/shoes/harmor_shoes.img`	19
+
+[field image]
+	`Item/field_equip.img`	14
+
+[equipment type]
+	`[shoes]`	18
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	26
+
+[weight]
+	1600
+
+[item group name]
+	`ha shoes`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`attack speed`
+		`+`	30
+	[stat by condition]
+		`cast speed`
+		`+`	30
+[/then]
+
+[if]
+	[cooltime]
+		10000
+	[after attack]
+		1
+	[combo]
+		30
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[stat]
+		`physical attack`
+		`+`	60
+	[stat]
+		`magical attack`
+		`+`	60
+[/then]
+
+[if]
+	[cooltime]
+		10000
+	[after attack]
+		1
+	[combo]
+		50
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[stat]
+		`physical critical hit`
+		`+`	7
+	[stat]
+		`magical critical hit`
+		`+`	7
+[/then]
+
+[if]
+	[cooltime]
+		10000
+	[after attack]
+		1
+	[combo]
+		100
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[stat]
+		`equipment physical attack`
+		`+`	55
+	[stat]
+		`equipment magical attack`
+		`+`	55
+	[stat]
+		`separate attack`
+		`+`	70
+[/then]
+
+[possible kiri protect]

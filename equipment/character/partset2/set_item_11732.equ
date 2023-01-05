@@ -1,0 +1,92 @@
+#PVF_File
+
+[set name]
+	`霸域英豪  套装`
+
+[piece set ability]
+	5
+	[physical attack]
+		220
+	[magical attack]
+		220
+	[physical defense]
+		220
+	[magical defense]
+		220
+	[equipment physical attack]
+		300	300
+	[equipment magical attack]
+		300	300
+	[separate attack]
+		300	300
+	[attack speed]
+		50
+	[move speed]
+		50
+	[cast speed]
+		200
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[time]
+			500	1	0
+		[my appendage]
+			251
+		[cooltime]
+			5000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			5000
+		[appendage]
+			1150
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[my appendage]
+			251
+		[time]
+			500	1	500
+		[cooltime]
+			1000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			1000
+		[appendage]
+			940
+	[/then]
+	[pvp]
+		[physical attack]
+			1
+		[magical attack]
+			1
+		[physical defense]
+			1
+		[magical defense]
+			1
+		[equipment physical attack]
+			1	1
+		[equipment magical attack]
+			1	1
+		[separate attack]
+			1	1
+		[attack speed]
+			1
+		[move speed]
+			1
+		[cast speed]
+			1
+	[/pvp]
+	[parameter basic explain]
+		`    处于该装备霸体状态时， 附加40%%的伤害。`
+[/piece set ability]

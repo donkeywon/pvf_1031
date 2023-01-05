@@ -3,17 +3,17 @@
 [name]
 	`镇魂曲 : 幽游板甲腰带`
 
-[name2]
-	``
-
 [basic explain]
-	`施放[巨旋风]、 [圣光沁盾]、 [冰刃 · 波动剑]时， 有10%%的几率不受冷却时间影响。`
+	`施放[巨旋风]、 [圣光沁盾]、 [冰刃 · 波动剑]时，  有20%%的几率不受冷却时间影响。`
 
 [grade]
 	85
 
 [rarity]
 	4
+
+[part set index]
+	11719
 
 [usable job]
 	`[all]`
@@ -26,13 +26,13 @@
 	80
 
 [physical attack]
-	21
-
-[physical defense]
-	23
+	22
 
 [magical attack]
-	21
+	22
+
+[physical defense]
+	24
 
 [MP MAX]
 	200
@@ -53,7 +53,17 @@
 	250
 
 [equipment physical defense]
-	1860	1740
+	1940	1760
+
+[skill levelup]
+	`[priest]`	50	3
+	`[priest]`	27	3
+	`[swordman]`	21	3
+	`[demonic swordman]`	44	4
+[/skill levelup]
+
+[all elemental attack]
+	8
 
 [icon]
 	`item/new_equipment/06_plate/belt/plate_belt.img`	10
@@ -82,9 +92,6 @@
 [cool time]
 	10000
 
-[set item master]
-	100090009
-
 [if]
 	[event use skill]
 		`priest`	50
@@ -94,7 +101,7 @@
 	[target]
 		`myself`	-1
 	[probability]
-		10
+		20
 	[skill data up]
 		`[priest]`	50	`[all]`	`[cooltime]`	0	`%`	-100
 	[/skill data up]
@@ -109,7 +116,7 @@
 	[target]
 		`myself`	-1
 	[probability]
-		10
+		20
 	[skill data up]
 		`[priest]`	27	`[all]`	`[cooltime]`	0	`%`	-100
 	[/skill data up]
@@ -124,11 +131,13 @@
 	[target]
 		`myself`	-1
 	[probability]
-		10
+		20
 	[skill data up]
 		`[swordman]`	21	`[all]`	`[cooltime]`	0	`%`	-100
 	[/skill data up]
 [/then]
+
+[possible kiri protect]
 
 [routing priority]
 [/routing priority]

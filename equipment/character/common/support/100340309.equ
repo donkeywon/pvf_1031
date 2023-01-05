@@ -3,17 +3,14 @@
 [name]
 	`路易斯的毒王手套`
 
-[name2]
-	`找不到代码name2_100340309`
-
-[basic explain]
-	`在决斗场中， 出血、 中毒、 感电伤害 +23%%`
-
 [grade]
 	85
 
 [rarity]
 	4
+
+[basic explain]
+	`500px范围内敌人的所有异常状态抗性-40`
 
 [usable job]
 	`[all]`
@@ -25,29 +22,32 @@
 [minimum level]
 	80
 
-[physical attack]
-	33
+[need material]
+	3285	2500
 
-[physical defense]
-	33
+[physical attack]
+	35
 
 [magical attack]
-	33
+	35
+
+[physical defense]
+	35
 
 [magical defense]
-	33
+	35
 
 [price]
-	102000
-
-[repair price]
-	81600
+	80000000
 
 [value]
-	81600
+	8000000
 
 [creation rate]
-	30
+	70
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`Item/new_equipment/10_support/support.img`	95
@@ -79,17 +79,22 @@
 [active status control info]
 	`lightning`	0	6	0	50
 
-[pvp]
-	[active status control info]
-		`bleeding`	0	6	0	25
-	[active status control info]
-		`poison`	0	6	0	25
-	[active status control info]
-		`lightning`	0	6	0	25
-[/pvp]
+[if]
+	[time]
+		500	1	500
+	[stat change]
+		`hp`
+		`>`
+		`%`	0
+[/if]
 
-[routing priority]
-[/routing priority]
+[then]
+	[target]
+		`all enemy`	500
+	[duration]
+		1000
+	[appendage]
+		791
+[/then]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

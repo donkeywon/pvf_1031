@@ -1,0 +1,150 @@
+#PVF_File
+
+[name]
+	`誓血之盟肩甲`
+
+[basic explain]
+	`技能MP消耗量 +15%%
+    攻击时， 额外增加4%%的伤害增加量。`
+
+[flavor text]
+	`    反正都这样了， 狗就狗吧！`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11349
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	109
+
+[magical attack]
+	100
+
+[physical defense]
+	31
+
+[MP MAX]
+	500
+
+[price]
+	85000000
+
+[repair price]
+	87360
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	105	105
+
+[equipment magical attack]
+	105	105
+
+[equipment physical defense]
+	3264	2976
+
+[separate attack]
+	105	105
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/05_harmor/neck/harmor_neck.img`	18
+
+[field image]
+	`Item/field_equip.img`	12
+
+[equipment type]
+	`[shoulder]`	20
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	32
+
+[weight]
+	2300
+
+[item group name]
+	`ha shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`mp max`
+		`%`	-15
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	4
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

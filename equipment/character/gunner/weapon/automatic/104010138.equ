@@ -1,0 +1,254 @@
+#PVF_File
+
+[name]
+	`全面开战 - 总攻`
+
+[basic explain]
+	`    施放[机械引爆]时， 使自身进入霸体状态。
+     施放[G-1科罗纳]时， 使自身进入霸体状态。
+    施放技能时， 有10%%的几率增加24点的火属性强化和24点光属性强化， 以及16%%的魔法攻击力， 效果持续60秒。`
+
+[detail explain]
+	`    施放[机械引爆]时， 使自身进入霸体状态。
+    施放[G-1科罗纳]时， 使自身进入霸体状态。
+    施放技能时， 有10%%的几率增加24点的火属性强化和24点光属性强化， 以及16%%的魔法攻击力， 效果持续60秒。 (最多重叠1次； 解除装备后效果消失)`
+
+[flavor text]
+	`    “来！ 战个痛快！”`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[magical attack]
+	65
+
+[stuck]
+	1
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	671	525
+
+[equipment magical attack]
+	984	770
+
+[separate attack]
+	589	382
+
+[skill levelup]
+	`[gunner]`	27	2
+	`[gunner]`	28	2
+	`[gunner]`	29	2
+	`[gunner]`	63	2
+	`[gunner]`	50	2
+	`[at gunner]`	27	2
+	`[at gunner]`	28	2
+	`[at gunner]`	29	2
+	`[at gunner]`	63	2
+	`[at gunner]`	50	2
+[/skill levelup]
+
+[fire attack]
+	30
+
+[light attack]
+	30
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/automatic/automatic.img`	107
+
+[field image]
+	`Item/field_weapon.img`	2
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	33	0
+
+[layer variation]
+	2790
+	`autoc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`autob`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	32	0
+
+[layer variation]
+	2790
+	`at_autoc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_autob`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	1500
+
+[item group name]
+	`automatic`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[event use skill]
+		`gunner`	50
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`gunner`	50
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[event use skill]
+		`at gunner`	50
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`at gunner`	50
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[event use skill]
+		`gunner`	79
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`gunner`	79
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[event use skill]
+		`at gunner`	79
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`at gunner`	79
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[event use skill]
+		`common`	-1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[equipment duration]
+		60000
+	[appendage]
+		836
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		386	263
+	[equipment magical attack]
+		492	335
+[/pvp]
+
+[possible kiri protect]

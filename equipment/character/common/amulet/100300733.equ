@@ -1,0 +1,451 @@
+#PVF_File
+
+[name]
+	`氤氲之息`
+
+[basic explain]
+	`所有攻击力 +5%%
+    每提升1点强化或增幅等级， 额外增加1%%的所有攻击力。`
+
+[detail explain]
+	`所有攻击力 +5%%
+    每提升1点强化或增幅等级， 额外增加1%%的所有攻击力。(强化或增幅等级最多增加至12)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[part set index]
+	12594
+
+[magical attack]
+	39
+
+[magical defense]
+	97
+
+[attack speed]
+	50
+
+[move speed]
+	50
+
+[cast speed]
+	80
+
+[price]
+	85000000
+
+[value]
+	8500000
+
+[need material]
+	9999	1500
+
+[creation rate]
+	25
+
+[equipment magical defense]
+	8560	7840
+
+[icon]
+	`item/new_equipment/08_necklace/necklace.img`	199
+
+[field image]
+	`Item/FieldImage1.img`	6
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[equipment type]
+	`[amulet]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	0	0
+		`amplify`
+		`=`	0	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack bonus`
+		`%`	5
+	[stat by condition]
+		`physical attack bonus`
+		`%`	5
+	[stat by condition]
+		`separate attack`
+		`%`	5
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	1	0
+		`amplify`
+		`=`	1	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack bonus`
+		`%`	6
+	[stat by condition]
+		`physical attack bonus`
+		`%`	6
+	[stat by condition]
+		`separate attack`
+		`%`	6
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	2	0
+		`amplify`
+		`=`	2	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack bonus`
+		`%`	7
+	[stat by condition]
+		`physical attack bonus`
+		`%`	7
+	[stat by condition]
+		`separate attack`
+		`%`	7
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	3	0
+		`amplify`
+		`=`	3	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack bonus`
+		`%`	8
+	[stat by condition]
+		`physical attack bonus`
+		`%`	8
+	[stat by condition]
+		`separate attack`
+		`%`	8
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	4	0
+		`amplify`
+		`=`	4	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack bonus`
+		`%`	9
+	[stat by condition]
+		`physical attack bonus`
+		`%`	9
+	[stat by condition]
+		`separate attack`
+		`%`	9
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	5	0
+		`amplify`
+		`=`	5	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack bonus`
+		`%`	10
+	[stat by condition]
+		`physical attack bonus`
+		`%`	10
+	[stat by condition]
+		`separate attack`
+		`%`	10
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	6	0
+		`amplify`
+		`=`	6	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack bonus`
+		`%`	11
+	[stat by condition]
+		`physical attack bonus`
+		`%`	11
+	[stat by condition]
+		`separate attack`
+		`%`	11
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	7	0
+		`amplify`
+		`=`	7	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack bonus`
+		`%`	12
+	[stat by condition]
+		`physical attack bonus`
+		`%`	12
+	[stat by condition]
+		`separate attack`
+		`%`	12
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	8	0
+		`amplify`
+		`=`	8	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack bonus`
+		`%`	13
+	[stat by condition]
+		`physical attack bonus`
+		`%`	13
+	[stat by condition]
+		`separate attack`
+		`%`	13
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	9	0
+		`amplify`
+		`=`	9	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack bonus`
+		`%`	14
+	[stat by condition]
+		`physical attack bonus`
+		`%`	14
+	[stat by condition]
+		`separate attack`
+		`%`	14
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	10	0
+		`amplify`
+		`=`	10	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack bonus`
+		`%`	15
+	[stat by condition]
+		`physical attack bonus`
+		`%`	15
+	[stat by condition]
+		`separate attack`
+		`%`	15
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	11	0
+		`amplify`
+		`=`	11	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack bonus`
+		`%`	16
+	[stat by condition]
+		`physical attack bonus`
+		`%`	16
+	[stat by condition]
+		`separate attack`
+		`%`	16
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`>=`	12	0
+		`amplify`
+		`>=`	12	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack bonus`
+		`%`	17
+	[stat by condition]
+		`physical attack bonus`
+		`%`	17
+	[stat by condition]
+		`separate attack`
+		`%`	17
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,76 @@
+#PVF_File
+
+[set name]
+	`杀意决  套装`
+
+[piece set ability]
+	5
+	[physical attack]
+		150
+	[magical attack]
+		150
+	[physical defense]
+		150
+	[magical defense]
+		150
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			0
+		[stat by condition]
+			`physical attack`
+			`%`	12
+		[stat by condition]
+			`magical attack`
+			`%`	12
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[time]
+			100	1	0
+		[keep my state]
+			`stand`	1000
+		[cooltime]
+			5000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			5000
+		[appendage]
+			757
+	[/then]
+	[skill data up]
+		`[all]`	199	`[all]`	`[level]`	50	`+`	35
+	[/skill data up]
+	[parameter basic explain]
+		`力量、 智力 +12%%
+    保持站立或行走状态1秒时， 使自身进入伪装状态， 效果持续5秒。 (冷却时间5秒； 解除装备后效果消失)
+    攻击时， 附加35%%的伤害。`
+	[pvp]
+		[physical attack]
+			1
+		[magical attack]
+			1
+		[physical defense]
+			1
+		[magical defense]
+			1
+	[/pvp]
+[/piece set ability]

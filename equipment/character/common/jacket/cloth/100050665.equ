@@ -1,0 +1,167 @@
+#PVF_File
+
+[name]
+	`瘟疫之源青丝胸甲`
+
+[basic explain]
+	`装备时， 使500px范围内的敌人减少10点所有异常状态抗性。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	12550
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[magical attack]
+	45
+
+[magical defense]
+	45
+
+[need material]
+	10000204	100
+
+[price]
+	85000000
+
+[repair price]
+	64800
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	1176	1092
+
+[icon]
+	`item/new_equipment/02_cloth/coat/cloth_coat.img`	54
+
+[field image]
+	`Item/field_equip.img`	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[coat]`	19
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	1400
+
+[item group name]
+	`cl coat`
+
+[cool time]
+	10000
+
+[active status control info]
+	`poison`	0	0	0	10
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[duration]
+		1000
+	[appendage]
+		376
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[time]
+		2000	1	0
+	[cooltime]
+		2000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	300
+	[duration]
+		10000
+	[active status]
+		`curse`	90	100	100	100	100
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[time]
+		2000	1	0
+	[cooltime]
+		2000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	300
+	[duration]
+		10000
+	[active status]
+		`bleeding`	90	10000
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[time]
+		2000	1	0
+	[cooltime]
+		2000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	300
+	[duration]
+		10000
+	[active status]
+		`lightning`	90	10000
+[/then]
+
+[possible kiri protect]

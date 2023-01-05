@@ -3,17 +3,21 @@
 [name]
 	`风华绝世手镯`
 
-[name2]
-	``
-
 [basic explain]
-	`被击时， 有10%%的几率使自身进入霸体状态10秒。`
+	`    施放技能时， 有10%%的几率使自身进入霸体状态12秒。`
+
+[detail explain]
+	`    施放技能时， 有10%%的几率使自身进入霸体状态12秒。 (冷却时间15秒)
+(解除装备后效果消失)`
 
 [grade]
 	85
 
 [rarity]
 	4
+
+[part set index]
+	11037
 
 [usable job]
 	`[all]`
@@ -25,26 +29,32 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [physical attack]
-	34
+	36
 
 [physical defense]
-	85
+	88
 
 [price]
-	102000
-
-[repair price]
-	81600
+	80000000
 
 [value]
-	81600
+	8000000
 
 [creation rate]
 	250
 
 [equipment magical defense]
-	4464	4176
+	4656	4224
+
+[all elemental attack]
+	10
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/09_bracelet/bracelet.img`	72
@@ -67,31 +77,23 @@
 [cool time]
 	10000
 
-[routing priority]
-[/routing priority]
-
 [if]
-	[hit]
-		1
+	[event use skill]
+		`common`	-1
+	[/event use skill]
 	[cooltime]
-		30000
+		15000
 [/if]
 
 [then]
 	[target]
 		`myself`	-1
-	[duration]
-		10000
+	[equipment duration]
+		12000
 	[probability]
 		10
 	[appendage]
 		205
-	[appendage]
-		207
 [/then]
 
-[set item master]
-	100300007
-
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

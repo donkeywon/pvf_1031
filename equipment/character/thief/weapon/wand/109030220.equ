@@ -1,0 +1,160 @@
+#PVF_File
+
+[name]
+	`咒术师的九个颅骨`
+
+[basic explain]
+	`[暗影蛛丝阵]范围 +10%%
+[百鬼夜行]冷却时间 -20%%
+[百鬼夜行]攻击力 +20%%
+[降临 : 尼古拉斯]尼古拉斯存在时间 -150秒 
+   施放[暗黑仪式]时， 有50%%的几率出现骷髅亡灵， 使[巴拉克的野心]、 [巴拉克的愤怒]增加20%%的攻击力， 效果持续120秒。`
+
+[detail explain]
+	`[暗影蛛丝阵]范围 +10%%
+[百鬼夜行]冷却时间 -20%%
+[百鬼夜行]攻击力 +20%%
+[降临 : 尼古拉斯]尼古拉斯存在时间 -150秒 
+   施放[暗黑仪式]时， 有50%%的几率出现骷髅亡灵， 使[巴拉克的野心]、 [巴拉克的愤怒]增加20%%的攻击力， 效果持续120秒。(最多叠加一次， 冷却时间120秒， 解除装备效果消失）`
+
+[flavor text]
+	`    “九”这个数字， 对他们来说好像有什么特殊的含义……`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	62
+
+[attack speed]
+	-100
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	809	609
+
+[equipment magical attack]
+	1152	952
+
+[separate attack]
+	607	507
+
+[magical critical hit]
+	5
+
+[skill levelup]
+	`[thief]`	50	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/thief/wand/wand.img`	125
+
+[field image]
+	`Item/field_weapon.img`	18
+
+[equipment type]
+	`[weapon]`	25
+
+[animation job]
+	`[thief]`
+
+[variation]
+	41	0
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	2300
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[thief]`	53	`[all]`	`[level]`	2	`%`	10
+	`[thief]`	36	`[all]`	`[cooltime]`	0	`%`	-20
+	`[thief]`	36	`[all]`	`[level]`	0	`%`	20
+	`[thief]`	36	`[all]`	`[level]`	1	`%`	20
+	`[thief]`	51	`[all]`	`[level]`	10	`+`	-150000
+[/skill data up]
+
+[if]
+	[use skill]
+		`thief`	50
+	[/use skill]
+	[cooltime]
+		120000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[equipment duration]
+		120000
+	[appendage]
+		683
+[/then]
+
+[possible kiri protect]

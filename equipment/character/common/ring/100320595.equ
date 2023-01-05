@@ -1,0 +1,135 @@
+#PVF_File
+
+[name]
+	`精炼的遗忘魔石戒指`
+
+[basic explain]
+	`    施放技能时， 有15%%的几率重置自身技能的冷却时间； 但只能随机重置一个已经进入冷却时间的技能。 (冷却时间20秒)
+    施放技能时， 有2%%的几率重置自身使用过的所有技能的冷却时间。 (冷却时间90秒)`
+
+[detail explain]
+	`    施放技能时， 有15%%的几率重置自身技能的冷却时间； 但只能随机重置一个已经进入冷却时间的技能。 (冷却时间20秒)
+    施放技能时， 有2%%的几率重置自身使用过的所有技能的冷却时间。 (冷却时间90秒)
+    (怪物与装备相差35Lv以上时， 无法重置冷却时间。)`
+
+[flavor text]
+	`    甲 : 混沌！ 毁伤！ 遗忘！
+乙 : 说人话！
+甲 : 世界原是混沌的， 后来有了人， 然后经历了很多事后毁灭了， 毁灭自然会有伤亡， 而且还狗血的失忆了， 也就是遗忘……`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11127
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	56
+
+[magical attack]
+	56
+
+[price]
+	85000000
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment magical defense]
+	3264	2976
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	148
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	21
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[casting]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			15
+		[then probability]
+			50
+		[passive object]
+			48655	0	0	0	0	-1	``
+		[/passive object]
+		[skill cooltime reset]
+			0
+			``	1
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			2
+		[then probability]
+			50
+		[passive object]
+			48655	0	0	0	0	-1	``
+		[/passive object]
+		[skill cooltime reset]
+			0
+			``	2
+	[/then]
+[/multiple then]
+
+[pvp]
+	[attack speed]
+		57
+	[cast speed]
+		108
+	[hit recovery]
+		112
+[/pvp]
+
+[possible kiri protect]

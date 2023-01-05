@@ -3,17 +3,21 @@
 [name]
 	`风华绝世之坠`
 
-[name2]
-	``
-
 [basic explain]
-	`施放技能时， 有5%%的几率使自身进入霸体状态10秒。`
+	`    施放技能时， 有10%%的几率使自身进入霸体状态12秒。`
+
+[detail explain]
+	`    施放技能时， 有10%%的几率使自身进入霸体状态12秒。 (冷却时间15秒)
+(解除装备后效果消失)`
 
 [grade]
 	85
 
 [rarity]
 	4
+
+[part set index]
+	11037
 
 [usable job]
 	`[all]`
@@ -26,10 +30,10 @@
 	80
 
 [magical attack]
-	34
+	36
 
 [magical defense]
-	85
+	88
 
 [price]
 	102000
@@ -44,7 +48,13 @@
 	250
 
 [equipment magical defense]
-	7440	6960
+	7760	7040
+
+[all elemental attack]
+	12
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/08_necklace/necklace.img`	76
@@ -74,46 +84,19 @@
 	[casting]
 		1
 	[cooltime]
-		30000
+		15000
 [/if]
 
 [then]
 	[target]
 		`myself`	-1
-	[duration]
-		10000
+	[equipment duration]
+		12000
 	[probability]
-		5
+		10
 	[appendage]
 		205
-	[appendage]
-		207
 [/then]
-
-[set name]
-	`风华绝世  首饰`
-
-[set item]
-	100310007	100300007	100320009
-[/set item]
-
-[set ability]
-	[fullset basic explain]
-		`发动首饰的霸体效果后， 在效果持续时间内攻击敌人时， 附加20%%的伤害， 并增加7%%的攻击速度、 施放速度和移动速度。`
-	[if]
-		[my appendage]
-			205
-		[attack success]
-			1
-	[/if]
-	[then]
-		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	20
-	[/then]
-[/set ability]
 
 [icon mark]
 	`Item/IconMark.img`	68

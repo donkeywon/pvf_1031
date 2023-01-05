@@ -1,0 +1,61 @@
+#PVF_File
+
+[set name]
+	`镇魂曲 : 幽游板甲  套装`
+
+[piece set ability]
+	5
+	[if]
+		[casting]
+			1
+		[cooltime]
+			100
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			10
+		[equipment duration]
+			30000
+		[appendage]
+			841
+	[/then]
+	[if]
+		[my appendage]
+			841
+		[time]
+			500	1	100
+		[cooltime]
+			100
+	[/if]
+	[then]
+		[target]
+			`party`	-1
+		[equipment duration]
+			30000
+		[appendage]
+			844
+	[/then]
+	[if]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`skill cool time`
+			`%`	-9
+	[/then]
+	[skill data up]
+		`[all]`	199	`[all]`	`[level]`	50	`+`	20
+	[/skill data up]
+	[parameter basic explain]
+		`    施放技能时， 有10%%的几率发动无尽之镇魂曲Buff， 可以使自己和队员的物理、 魔法和独立攻击力增加15%%， 效果持续30秒。 (解除装备后效果消失)
+技能冷却时间 -9%%
+    攻击时， 附加20%%的伤害。`
+[/piece set ability]

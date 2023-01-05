@@ -1,0 +1,46 @@
+#PVF_File
+
+[set name]
+	`战场颤栗者套装`
+
+[piece set ability]
+	5
+	[HP MAX]
+		330
+	[MP MAX]
+		330
+	[equipment physical defense]
+		1650	1650
+	[equipment magical defense]
+		1650	1650
+	[move speed]
+		50
+	[cast speed]
+		100
+	[skill data up]
+		`[all]`	199	`[all]`	`[level]`	50	`+`	20
+	[/skill data up]
+	[variable stat]
+		`equipment physical attack`
+		`+`	60
+		`object number`
+		`enemy`	500
+		`all`	10
+		`equipment magical attack`
+		`+`	60
+		`object number`
+		`enemy`	500
+		`all`	10
+		`separate attack`
+		`+`	60
+		`object number`
+		`enemy`	500
+		`all`	10
+	[/variable stat]
+	[parameter basic explain]
+		`若自身500px范围内存在敌人，则增加攻击力。
+- 范围内每增加1个敌人，则增加36点的物理攻击力。（最多可叠加10次）
+- 范围内每增加1个敌人，则增加36点的魔法攻击力。（最多可叠加10次）
+- 范围内每增加1个敌人，则增加60点的独立攻击力。（最多可叠加10次）
+    攻击时，可以附加20%%的伤害。`
+[/piece set ability]

@@ -1,0 +1,114 @@
+#PVF_File
+
+[name]
+	`污浊之魂戒指 - 毒`
+
+[basic explain]
+	`对中毒状态下敌人的伤害 +15%%
+    攻击时， 有1%%的几率使敌人进入中毒状态。`
+
+[detail explain]
+	`对中毒状态下敌人的伤害 +15%% (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)
+    攻击时， 有1%%的几率使敌人进入中毒状态4秒； 中毒状态下的敌人， 每0.5秒受到100点伤害。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	``
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	54
+
+[magical attack]
+	54
+
+[move speed]
+	30
+
+[hit recovery]
+	100
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	3168	2944
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	155
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[target active status]
+		`poison`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	15
+[/then]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		4000
+	[probability]
+		1
+	[active status]
+		`poison`	90	800
+[/then]
+
+[possible kiri protect]

@@ -3,9 +3,6 @@
 [name]
 	`极刑绝之戒`
 
-[name2]
-	``
-
 [basic explain]
 	`攻击HP低于40%%的敌人时， 可附加9%%的伤害。`
 
@@ -80,14 +77,17 @@
 		`hp`
 		`<`
 		`%`	41
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	9
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		909
 [/then]
 
 [icon mark]

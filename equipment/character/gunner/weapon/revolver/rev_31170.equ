@@ -3,12 +3,12 @@
 [name]
 	`孤影流觞`
 
-[name2]
-	``
-
 [basic explain]
-	`[瞬踢]、 [刺踢]击退时间增加比率 +20%%
-[瞬踢]、 [刺踢]攻击时， 会产生冲击波。 (未实现)`
+	`    施放[瞬踢]、 [刺踢]时， 使自身增加10%%的移动速度， 效果持续2秒。
+   施放[回旋踢]、 [上旋踢]时， 使自身增加10%%的攻击速度， 效果持续2秒。
+[瞬踢]、 [刺踢]击退时间增加比率 +20%% 
+    施放[瞬踢]、 [刺踢]时， 会产生冲击波。 
+    施放[瞬踢]、 [刺踢]时， 可以使自身进入霸体状态。`
 
 [grade]
 	85
@@ -27,26 +27,32 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [physical attack]
-	56
+	62
 
 [price]
-	136000
+	80000000
 
 [repair price]
-	114240
+	123840
 
 [value]
-	108800
+	8000000
+
+[creation rate]
+	250
 
 [equipment physical attack]
-	771	697
+	1013	817
 
 [equipment magical attack]
-	648	586
+	758	593
 
 [separate attack]
-	504	343
+	628	432
 
 [physical critical hit]
 	15
@@ -54,7 +60,18 @@
 [skill levelup]
 	`[gunner]`	7	4
 	`[at gunner]`	7	4
+	`[gunner]`	3	2
+	`[at gunner]`	3	2
+	`[gunner]`	11	4
+	`[at gunner]`	11	4
+	`[gunner]`	35	2
+	`[at gunner]`	35	2
+	`[gunner]`	111	1
+	`[at gunner]`	111	1
 [/skill levelup]
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/01_weapon/gunner/revolver/revolver.img`	88
@@ -112,7 +129,7 @@
 	`GUN_TOUCH`
 
 [durability]
-	35
+	45
 
 [weight]
 	2000
@@ -131,62 +148,152 @@
 [if]
 	[event use skill]
 		`gunner`	7
+	[/event use skill]
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[passive object]
-		48212	0	0	0	70	0	``
-	[/passive object]
+		`myself`	-1
+	[duration]
+		2000
+	[stat]
+		`move speed`
+		`%`	10
 [/then]
 
 [if]
 	[event use skill]
 		`at gunner`	7
+	[/event use skill]
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
+		`myself`	-1
+	[duration]
+		2000
+	[stat]
+		`move speed`
+		`%`	10
+[/then]
+
+[if]
+	[event use skill]
+		`gunner`	3
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		2000
+	[stat]
+		`attack speed`
+		`%`	10
+[/then]
+
+[if]
+	[event use skill]
+		`at gunner`	3
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		2000
+	[stat]
+		`attack speed`
+		`%`	10
+[/then]
+
+[if]
+	[my appendage]
+		355
+	[my state]
+		`stand`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
 	[passive object]
-		48212	0	0	0	70	0	``
+		48684	0	0	0	70	0	``
+	[/passive object]
+	[move pos]
+		500	0
+	[remove appendage]
+		355
+[/then]
+
+[if]
+	[use skill]
+		`gunner`	7
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[reduce probability at pvp module]
+		100
+	[appendage]
+		355
+	[duration]
+		100
+	[passive object]
+		48636	0	0	50	70	0	``
 	[/passive object]
 [/then]
 
-[pvp]
-	[if]
-		[event use skill]
-			`gunner`	7
-	[/if]
-	[then]
-		[target]
-			`enemy`	-1
-		[probability]
-			3
-		[passive object]
-			48212	0	0	0	70	0	``
-		[/passive object]
-	[/then]
-	[if]
-		[event use skill]
-			`at gunner`	7
-	[/if]
-	[then]
-		[target]
-			`enemy`	-1
-		[probability]
-			3
-		[passive object]
-			48212	0	0	0	70	0	``
-		[/passive object]
-	[/then]
-[/pvp]
+[if]
+	[use skill]
+		`at gunner`	7
+	[/use skill]
+[/if]
 
-[routing priority]
-	`gunner`	1
-	`at gunner`	1
-[/routing priority]
+[then]
+	[target]
+		`myself`	-1
+	[reduce probability at pvp module]
+		100
+	[appendage]
+		355
+	[duration]
+		100
+	[passive object]
+		48636	0	0	50	70	0	``
+	[/passive object]
+[/then]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[if]
+	[use skill]
+		`gunner`	7
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`gunner`	7
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	7
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill super armor]
+		`at gunner`	7
+[/then]
+
+[possible kiri protect]

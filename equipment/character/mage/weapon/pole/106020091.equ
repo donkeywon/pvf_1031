@@ -1,0 +1,259 @@
+#PVF_File
+
+[name]
+	`爱之闪耀魔法少女棒`
+
+[basic explain]
+	`    攻击时， 附加18%%的伤害。
+    攻击时， 使敌人减少25%%的防御力， 效果持续40秒。
+    物品栏内的装扮数量越多， 附加的效果也会越大。`
+
+[detail explain]
+	`    攻击时， 附加18%%的伤害。 
+    攻击时， 使敌人减少25%%的防御力， 效果持续40秒。 (最多重叠1次)
+    物品栏内的装扮数量越多， 会产生额外的效果。 (各属性加成效果取最高值)
+- 装扮数量在7个以下时 : 增加3%%的攻击速度、 3%%的移动速度和5%%的施放速度。
+- 装扮数量在8~20个时 : 增加5%%的攻击速度、 5%%的移动速度和8%%的施放速度。
+- 装扮数量在21个以上时 : 增加8%%的攻击速度、 8%%的移动速度和12%%的施放速度。
+    (解除装备后效果消失)`
+
+[flavor text]
+	`    不要小看陷入爱情里的魔法少女~☆~`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	65
+
+[magical attack]
+	65
+
+[attack speed]
+	100
+
+[stuck]
+	-1
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	1036	890
+
+[equipment magical attack]
+	864	742
+
+[separate attack]
+	589	382
+
+[skill levelup]
+	`[mage]`	83	1
+	`[mage]`	84	2
+	`[mage]`	36	2
+[/skill levelup]
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/mage/pole/pole.img`	105
+
+[field image]
+	`Item/field_weapon.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	37	0
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	38	0
+
+[layer variation]
+	2150
+	`at_polea`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_poled`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	37	0
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`POLE_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2400
+
+[item group name]
+	`pole`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		500	1	500
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		30000
+	[appendage]
+		829
+[/then]
+
+[if]
+	[time]
+		500	1	500
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		30000
+	[appendage]
+		830
+[/then]
+
+[if]
+	[time]
+		500	1	500
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		30000
+	[appendage]
+		831
+[/then]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[equipment duration]
+		40000
+	[appendage]
+		999
+	[appendage]
+		859
+[/then]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	18
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		518	445
+	[equipment magical attack]
+		432	371
+[/pvp]
+
+[possible kiri protect]

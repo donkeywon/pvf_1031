@@ -1,0 +1,180 @@
+#PVF_File
+
+[name]
+	`被诅咒的十字架 - 图卢瓦`
+
+[basic explain]
+	`    装备时， 每5秒使自身进入诅咒状态， 效果持续10秒。
+    攻击时， 有5%%的几率使敌人进入诅咒状态。
+    装备时， 每10秒消耗自身10%%的HP使500px范围内的所有敌人进入诅咒状态10秒。
+    生成光环， 使500px范围内的所有敌人减少30点诅咒抗性。
+    攻击时， 附加35%%的伤害。`
+
+[detail explain]
+	`    装备时， 每5秒使自身进入诅咒状态， 效果持续10秒。
+    攻击时， 有5%%的几率使敌人进入诅咒状态。(若敌人高于Lv91， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+    装备时， 每10秒消耗自身10%%的HP使500px范围内的所有敌人进入诅咒状态10秒。(若敌人高于Lv91， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+    生成光环， 使500px范围内的所有敌人减少30点诅咒抗性。
+    攻击时， 附加35%%的伤害。`
+
+[flavor text]
+	`    这是......呃， 最好还是严密封印起来吧......  ——格鲁`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical defense]
+	80
+
+[magical attack]
+	70
+
+[magical defense]
+	80
+
+[cast speed]
+	20
+
+[price]
+	85000000
+
+[need material]
+	3285	3000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	1056	856
+
+[equipment magical attack]
+	1003	803
+
+[equipment physical defense]
+	1001	801
+
+[equipment magical defense]
+	1001	801
+
+[separate attack]
+	648	548
+
+[skill levelup]
+	`[priest]`	45	4
+[/skill levelup]
+
+[icon]
+	`Item/new_equipment/01_weapon/priest/cross/cross.img`	97
+
+[field image]
+	`Item/field_weapon1.img`	11
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	33	0
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	35
+[/skill data up]
+
+[if]
+	[time]
+		10000	1	0
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[duration]
+		10000
+	[active status]
+		`curse`	91	100	100	100	100
+	[stat]
+		`curse resistance`
+		`+`	-30
+	[target]
+		`myself`	-1
+	[restore]
+		`hp`
+		`%`	-10	0
+[/then]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[active status]
+		`curse`	91	100	100	100	100
+[/then]
+
+[possible kiri protect]

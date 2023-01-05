@@ -1,0 +1,144 @@
+#PVF_File
+
+[name]
+	`圣堂骑士的赦令胸甲`
+
+[basic explain]
+	`    攻击时， 有1%%的几率使自身进入霸体状态7秒。 (冷却时间20秒)
+    被攻击时， 有20%%的几率使自身进入霸体状态3秒。 (冷却时间20秒)
+    该装备的霸体效果发动后， 被攻击时有50%%的几率免疫所受伤害。
+(解除装备后效果消失)`
+
+[flavor text]
+	`    再用点力啊， 你这是在给我饶痒痒吗？`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[part set index]
+	11730
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	35
+
+[magical attack]
+	35
+
+[physical defense]
+	38
+
+[repair price]
+	116640
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	5520	4980
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/06_plate/coat/plate_coat.img`	20
+
+[field image]
+	`Item/field_equip.img`	15
+
+[equipment type]
+	`[coat]`	22
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	60
+
+[weight]
+	5000
+
+[item group name]
+	`mt coat`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		1
+	[equipment duration]
+		7000
+	[buff]
+		`superarmor`
+	[appendage]
+		638
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		20
+	[equipment duration]
+		3000
+	[buff]
+		`superarmor`
+	[appendage]
+		638
+[/then]
+
+[if]
+	[my appendage]
+		638
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[add absolute defense percent]
+		`all`	100
+[/then]
+
+[possible kiri protect]

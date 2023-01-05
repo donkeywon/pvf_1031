@@ -1,0 +1,114 @@
+#PVF_File
+
+[name]
+	`热血枪魂长裤`
+
+[basic explain]
+	`  前冲时， 有5%%的几率使自身进入伪装状态10秒。`
+
+[detail explain]
+	`  前冲时， 有5%%的几率使自身进入伪装状态10秒。 (冷却时间10秒)`
+
+[flavor text]
+	`  不容易弄脏， 而且还特别显身材。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	45
+
+[magical defense]
+	45
+
+[stuck resistance]
+	50
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[repair price]
+	57600
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	1490	1420
+
+[all elemental attack]
+	15
+
+[icon]
+	`item/new_equipment/02_cloth/pants/cloth_pants.img`	21
+
+[field image]
+	`Item/field_equip.img`	1
+
+[equipment type]
+	`[pants]`	17
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	24
+
+[weight]
+	1100
+
+[item group name]
+	`cl pants`
+
+[cool time]
+	10000
+
+[if]
+	[set my state]
+		1
+	[my state]
+		`dash`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[probability]
+		5
+	[buff]
+		`camoflage`
+[/then]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]

@@ -1,0 +1,165 @@
+#PVF_File
+
+[name]
+	`戮蛊的利齿锋牙`
+
+[basic explain]
+	`[街头风暴]抛投物品数量 +3个
+[血色风暴]旋转次数 +3次
+    攻击出血状态的敌人时， 增加20%%的暴击伤害。`
+
+[detail explain]
+	`[街头风暴]抛投物品数量 +3个
+[血色风暴]旋转次数 +3次
+    攻击出血状态的敌人时， 增加20%%的暴击伤害。(暴击伤害加成效果取最高值）`
+
+[flavor text]
+	`    还好虫王戮蛊没有口臭……`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[magical attack]
+	31
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[equipment physical attack]
+	1002	802
+
+[equipment magical attack]
+	1002	802
+
+[separate attack]
+	607	507
+
+[physical critical hit]
+	10
+
+[magical critical hit]
+	10
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/claw/claw.img`	112
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	38	0
+
+[layer variation]
+	2790
+	`clawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	37	0
+
+[layer variation]
+	2150
+	`at_clawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_clawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_clawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[fighter]`	77	`[all]`	`[level]`	0	`+`	3
+	`[at fighter]`	77	`[all]`	`[level]`	0	`+`	3
+[/skill data up]
+
+[if]
+	[attack success]
+		1
+	[target active status]
+		`bleeding`
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	20
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,221 @@
+#PVF_File
+
+[name]
+	`神秘代号 608`
+
+[basic explain]
+	`[闪击地雷]攻击力 +20%%
+[闪击地雷]范围 +30%%
+[M-61地雷]攻击力 +20%%
+[M-61地雷]范围 +30%%
+    攻击时增加10%%的伤害， 效果持续300秒。
+    攻击时， 附加22%%的伤害。`
+
+[detail explain]
+	`[闪击地雷]攻击力 +20%%
+[闪击地雷]范围 +30%%
+[M-61地雷]攻击力 +20%%
+[M-61地雷]范围 +30%%
+    攻击时增加10%%的伤害， 效果持续300秒。（冷却时间300秒； 最多重叠1次， 伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外）
+    攻击时， 附加22%%的伤害。`
+
+[flavor text]
+	`    这个代号一定藏着什么秘密。  --杰伊`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	65
+
+[magical attack]
+	97
+
+[price]
+	85000000
+
+[repair price]
+	145600
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	1028	805
+
+[equipment magical attack]
+	894	700
+
+[separate attack]
+	589	382
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/musket/musket.img`	103
+
+[field image]
+	`Item/field_weapon.img`	3
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2790
+	`musketc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`musketb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	34	0
+
+[layer variation]
+	2790
+	`at_musketc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_musketb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	2100
+
+[item group name]
+	`musket`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[gunner]`	76	`[all]`	`[static]`	2	`%`	30
+	`[gunner]`	76	`[all]`	`[level]`	0	`%`	20
+	`[gunner]`	76	`[all]`	`[level]`	1	`%`	30
+	`[gunner]`	103	`[all]`	`[level]`	0	`%`	20
+	`[gunner]`	103	`[all]`	`[level]`	1	`%`	30
+	`[at gunner]`	76	`[all]`	`[static]`	2	`%`	30
+	`[at gunner]`	76	`[all]`	`[level]`	0	`%`	20
+	`[at gunner]`	76	`[all]`	`[level]`	1	`%`	30
+	`[at gunner]`	103	`[all]`	`[level]`	0	`%`	20
+	`[at gunner]`	103	`[all]`	`[level]`	1	`%`	30
+[/skill data up]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		300000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		300000
+	[appendage]
+		390
+[/then]
+
+[if]
+	[my appendage]
+		390
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	10
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	22
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		514	403
+	[equipment magical attack]
+		447	350
+[/pvp]
+
+[possible kiri protect]

@@ -3,15 +3,12 @@
 [name]
 	`贝利特印痕左轮枪`
 
-[name2]
-	`Finger-marked Revolver of Verrickt`
-
 [basic explain]
-	`物理暴击几率 +20%%
-[爆头一击]冷却时间 -1秒`
+	`[爆头一击]冷却时间 -1秒
+[回头一击]冷却时间 -3秒`
 
 [flavor text]
-	`这左轮枪虽然看着不起眼， 但是仔细看， 会发现保养得非常好， 只是枪柄磨的很厉害。`
+	`    这左轮枪虽然看着不起眼， 但是仔细看， 会发现保养得非常好， 只是枪柄磨的很厉害。`
 
 [grade]
 	65
@@ -30,17 +27,23 @@
 [minimum level]
 	60
 
+[need material]
+	3260	8000
+
 [physical attack]
 	44
 
 [price]
-	104000
+	60000000
 
 [repair price]
 	87360
 
 [value]
-	83200
+	6000000
+
+[creation rate]
+	250
 
 [equipment physical attack]
 	584	523
@@ -56,6 +59,9 @@
 
 [icon]
 	`item/weapon/gunner/revolver.img`	27
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [field image]
 	`Item/field_weapon.img`	1
@@ -124,6 +130,8 @@
 [skill data up]
 	`[gunner]`	5	`[all]`	`[cooltime]`	0	`+`	-1000
 	`[at gunner]`	5	`[all]`	`[cooltime]`	0	`+`	-1000
+	`[gunner]`	20	`[all]`	`[cooltime]`	0	`+`	-3000
+	`[at gunner]`	20	`[all]`	`[cooltime]`	0	`+`	-3000
 [/skill data up]
 
 [routing priority]
@@ -132,9 +140,3 @@
 [/routing priority]
 
 [possible kiri protect]
-
-[need material]
-	2749095	169
-
-[icon mark]
-	`Item/IconMark.img`	68

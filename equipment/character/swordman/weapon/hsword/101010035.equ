@@ -3,12 +3,15 @@
 [name]
 	`天魔斩`
 
-[name2]
-	``
-
 [basic explain]
-	`攻击时， 有30%%的几率附加20%%的火属性伤害。
-攻击恶魔族敌人时， 会出现火焰爆炸。`
+	`    攻击时， 有30%%的几率附加35%%的火属性伤害。
+    攻击恶魔族敌人时， 会出现火焰爆炸。
+    装备时， 使自身增加15点火属性强化。`
+
+[detail explain]
+	`    攻击时， 有30%%的几率附加35%%的火属性伤害。
+    攻击恶魔族敌人时， 会出现火焰爆炸。 (冷却时间0.1秒)
+    装备时， 使自身增加15点火属性强化。`
 
 [grade]
 	85
@@ -27,8 +30,11 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [physical attack]
-	56
+	62
 
 [attack speed]
 	-90
@@ -37,25 +43,31 @@
 	-20
 
 [price]
-	153000
+	80000000
 
 [repair price]
-	128520
+	137600
 
 [value]
-	122400
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical attack]
-	989	917
+	1089	929
 
 [equipment magical attack]
-	742	688
+	816	697
 
 [separate attack]
-	504	343
+	555	359
+
+[fire attack]
+	18
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/01_weapon/swordman/lswd/lswd.img`	100
@@ -113,7 +125,7 @@
 	`SQUARESWD_TOUCH`
 
 [durability]
-	35
+	45
 
 [weight]
 	4000
@@ -123,12 +135,6 @@
 
 [cool time]
 	10000
-
-[routing priority]
-	`swordman`	1
-	`swordman`	3
-	`demonic swordman`	0
-[/routing priority]
 
 [elemental property]
 	`[fire element]`
@@ -145,7 +151,7 @@
 		30
 	[add absolute damage]
 		`fire`
-		`%`	20
+		`%`	35
 [/then]
 
 [if]
@@ -154,7 +160,7 @@
 	[attack success]
 		1
 	[cooltime]
-		2000
+		100
 [/if]
 
 [then]
@@ -165,5 +171,20 @@
 	[/passive object]
 [/then]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`fire attack`
+		`+`	15
+[/then]
+
+[possible kiri protect]

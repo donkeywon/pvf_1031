@@ -1,0 +1,205 @@
+#PVF_File
+
+[name]
+	`无轩之黄金手炮`
+
+[basic explain]
+	`攻击时， 附加20%%的伤害。
+攻击时， 有3%%的几率使队员进入无敌状态10秒。 (消耗5个无色小晶块)
+施放技能时， 有40%%的几率使包括自身在内的所有队员增加12%%的物理攻击力、 魔法攻击力和独立攻击力， 效果持续40秒。`
+
+[detail explain]
+	`攻击时， 附加20%%的伤害。
+攻击时， 有3%%的几率使队员进入无敌状态10秒。 (消耗5个无色小晶块； 冷却时间50秒)
+施放技能时， 有40%%的几率使包括自身在内的所有队员增加12%%的物理攻击力、 魔法攻击力和独立攻击力， 效果持续40秒。 (最多叠加1次)
+(解除装备后所有效果消失)
+(怪物与装备Lv相差35以上时， 不发动队伍无敌效果)`
+
+[flavor text]
+	`用神秘植物无轩的枝干做成的手炮， 不过后来被一个土豪截获， 他在手炮的外面又镀上了一层黄金。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	97
+
+[price]
+	85000000
+
+[repair price]
+	145600
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	1118	875
+
+[equipment magical attack]
+	671	525
+
+[separate attack]
+	589	382
+
+[all elemental attack]
+	25
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/hcannon/hcannon.img`	102
+
+[field image]
+	`Item/field_weapon.img`	4
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	33	0
+
+[layer variation]
+	2790
+	`hcanc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`hcanb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	31	0
+
+[layer variation]
+	2790
+	`at_hcanc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_hcanb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	2800
+
+[item group name]
+	`hcannon`
+
+[cool time]
+	10000
+
+[command]
+	{6=`(SKILL)`}
+[/command]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		50000
+[/if]
+
+[then]
+	[consume item]
+		3037	5
+	[target]
+		`party`	-1
+	[probability]
+		3
+	[equipment duration]
+		10000
+	[buff]
+		`unbreakable`
+[/then]
+
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	20
+[/skill data up]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[probability]
+		40
+	[equipment duration]
+		40000
+	[appendage]
+		615
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		559	488
+	[equipment magical attack]
+		336	263
+[/pvp]
+
+[possible kiri protect]

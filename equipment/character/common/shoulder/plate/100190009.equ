@@ -3,17 +3,17 @@
 [name]
 	`镇魂曲 : 幽游板甲护肩`
 
-[name2]
-	``
-
 [basic explain]
-	`施放[狂乱锤击]、 [圣光球]、 [爆炎 · 波动剑]时， 有10%%的几率不受冷却时间影响。`
+	`施放[狂乱锤击]、 [圣光球]、 [爆炎·波动剑]时， 有20%%的几率不受冷却时间影响。`
 
 [grade]
 	85
 
 [rarity]
 	4
+
+[part set index]
+	11719
 
 [usable job]
 	`[all]`
@@ -25,32 +25,48 @@
 [minimum level]
 	80
 
-[physical attack]
-	28
+[need material]
+	3285	2500
 
-[physical defense]
-	31
+[physical attack]
+	29
 
 [magical attack]
-	28
+	29
+
+[physical defense]
+	32
 
 [MP MAX]
 	200
 
 [price]
-	102000
+	80000000
 
 [repair price]
-	85680
+	96320
 
 [value]
-	81600
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical defense]
-	3720	3480
+	3880	3520
+
+[skill levelup]
+	`[priest]`	28	3
+	`[priest]`	49	3
+	`[swordman]`	22	3
+	`[demonic swordman]`	60	3
+[/skill levelup]
+
+[all elemental attack]
+	8
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/06_plate/neck/plate_neck.img`	10
@@ -79,10 +95,12 @@
 [cool time]
 	10000
 
-[set item master]
-	100090009
-
 [if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+		`[assault]`
+	[/module]
 	[event use skill]
 		`priest`	28
 [/if]
@@ -91,13 +109,18 @@
 	[target]
 		`myself`	-1
 	[probability]
-		10
+		20
 	[skill data up]
 		`[priest]`	28	`[all]`	`[cooltime]`	0	`%`	-100
 	[/skill data up]
 [/then]
 
 [if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+		`[assault]`
+	[/module]
 	[event use skill]
 		`priest`	49
 [/if]
@@ -106,13 +129,18 @@
 	[target]
 		`myself`	-1
 	[probability]
-		10
+		20
 	[skill data up]
 		`[priest]`	49	`[all]`	`[cooltime]`	0	`%`	-100
 	[/skill data up]
 [/then]
 
 [if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+		`[assault]`
+	[/module]
 	[event use skill]
 		`swordman`	22
 [/if]
@@ -121,14 +149,10 @@
 	[target]
 		`myself`	-1
 	[probability]
-		10
+		20
 	[skill data up]
 		`[swordman]`	22	`[all]`	`[cooltime]`	0	`%`	-100
 	[/skill data up]
 [/then]
 
-[routing priority]
-[/routing priority]
-
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

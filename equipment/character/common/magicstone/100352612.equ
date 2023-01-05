@@ -1,0 +1,173 @@
+#PVF_File
+
+[name]
+	`万疫之源 - 污秽之心`
+
+[basic explain]
+	`    被攻击时， 有20%%的几率使周围500px范围内的所有敌人随机进入中毒、 灼伤、 石化、 失明、 束缚、 混乱状态中的任意一种状态， 效果持续3秒。`
+
+[detail explain]
+	`    被攻击时， 有20%%的几率使周围500px范围内的所有敌人随机进入中毒、 灼伤、 石化、 失明、 束缚、 混乱状态中的任意一种状态， 效果持续3秒。 
+    - 使敌人进入中毒、 灼伤状态3秒； 该状态下的敌人， 每0.5秒受到800点伤害。 
+    - 使敌人进入石化状态3秒； 石化状态解除时， 使敌人受到8000点伤害。 
+    - 使敌人进入失明状态3秒； 失明状态下的敌人， 会减少90%%的视野和20%%的命中率。
+    - 使敌人进入混乱、 束缚状态3秒。
+    (若敌人高于Lv90， 则减少该装备所有异常状态的发动几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`    即使戴着手套， 我也不敢碰这东西……`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	53
+
+[magical attack]
+	53
+
+[physical defense]
+	53
+
+[magical defense]
+	53
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[physical critical hit]
+	5
+
+[magical critical hit]
+	5
+
+[all elemental attack]
+	35
+
+[icon]
+	`Item/new_equipment/11_magicstone/magicstone.img`	137
+
+[field image]
+	`Item/field_equip.img`	23
+
+[equipment type]
+	`[magic stone]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`magic stone`
+
+[cool time]
+	10000
+
+[if]
+	[hit]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`all enemy`	500
+		[probability]
+			20
+		[duration]
+			3000
+		[active status]
+			`burn`	90	4800	0	0	0
+		[then probability]
+			16.0
+	[/then]
+	[then]
+		[target]
+			`all enemy`	500
+		[probability]
+			20
+		[duration]
+			3000
+		[active status]
+			`poison`	90	4800
+		[then probability]
+			16.0
+	[/then]
+	[then]
+		[target]
+			`all enemy`	500
+		[probability]
+			20
+		[duration]
+			3000
+		[active status]
+			`blind`	90	90	20
+		[then probability]
+			17.0
+	[/then]
+	[then]
+		[target]
+			`all enemy`	500
+		[probability]
+			20
+		[duration]
+			3000
+		[active status]
+			`confuse`	90	1
+		[then probability]
+			17.0
+	[/then]
+	[then]
+		[target]
+			`all enemy`	500
+		[probability]
+			20
+		[duration]
+			3000
+		[active status]
+			`hold`	90
+		[then probability]
+			17.0
+	[/then]
+	[then]
+		[target]
+			`all enemy`	500
+		[probability]
+			20
+		[duration]
+			3000
+		[active status]
+			`stone`	90	2524
+		[then probability]
+			17.0
+	[/then]
+[/multiple then]
+
+[possible kiri protect]

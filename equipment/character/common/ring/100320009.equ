@@ -3,17 +3,20 @@
 [name]
 	`风华绝世之戒`
 
-[name2]
-	``
-
 [basic explain]
-	`攻击时， 有3%%的几率使自身进入霸体状态10秒。`
+	`    攻击时， 有3%%的几率使自身进入霸体状态12秒。`
+
+[detail explain]
+	`    攻击时， 有3%%的几率使自身进入霸体状态12秒。 (冷却时间15秒； 解除装备后效果消失)`
 
 [grade]
 	85
 
 [rarity]
 	4
+
+[part set index]
+	11037
 
 [usable job]
 	`[all]`
@@ -25,26 +28,32 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [physical attack]
-	51
+	53
 
 [magical attack]
-	51
+	53
 
 [price]
-	102000
-
-[repair price]
-	81600
+	80000000
 
 [value]
-	81600
+	8000000
 
 [creation rate]
 	250
 
 [equipment magical defense]
-	2976	2784
+	3104	2816
+
+[all elemental attack]
+	10
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/07_ring/ring.img`	91
@@ -67,31 +76,22 @@
 [cool time]
 	10000
 
-[routing priority]
-[/routing priority]
-
 [if]
 	[attack success]
 		1
 	[cooltime]
-		30000
+		15000
 [/if]
 
 [then]
 	[target]
 		`myself`	-1
-	[duration]
-		10000
+	[equipment duration]
+		12000
 	[probability]
 		3
 	[appendage]
 		205
-	[appendage]
-		207
 [/then]
 
-[set item master]
-	100300007
-
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

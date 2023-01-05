@@ -1,0 +1,140 @@
+#PVF_File
+
+[name]
+	`圣堂骑士的援护腰带`
+
+[basic explain]
+	`    当HP低于50%%时， 会立即恢复10%%的HP， 并增加10%%的自身防御力， 效果持续30秒。
+(冷却时间30秒； 解除装备后效果消失)
+    当HP低于25%%时， 会对自身施放Lv10的[圣光守护]。 (冷却时间60秒)`
+
+[flavor text]
+	`    以神之名， 拯救这些堕落的怨灵。 愿他们能够得到安息！`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[part set index]
+	11730
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	21
+
+[magical attack]
+	21
+
+[physical defense]
+	53
+
+[magical defense]
+	30
+
+[inventory limit]
+	3000
+
+[repair price]
+	77760
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	1840	1660
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/06_plate/belt/plate_belt.img`	16
+
+[field image]
+	`Item/field_equip.img`	18
+
+[equipment type]
+	`[waist]`	19
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	2000
+
+[item group name]
+	`mt waist`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		30000
+	[time]
+		500	1	500
+	[stat change]
+		`hp`
+		`<`
+		`%`	50
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		30000
+	[stat]
+		`equipment physical defense`
+		`%`	10
+	[stat]
+		`equipment magical defense`
+		`%`	10
+	[restore]
+		`hp`
+		`%`	10	0
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[time]
+		500	1	500
+	[stat change]
+		`hp`
+		`<`
+		`%`	25
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		60000
+	[perform skill]
+		`priest`	22	10	0
+[/then]
+
+[possible kiri protect]

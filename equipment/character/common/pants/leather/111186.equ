@@ -1,0 +1,102 @@
+#PVF_File
+
+[name]
+	`山崩地裂腿甲`
+
+[basic explain]
+	`   被攻击时， 有50%%的几率发生轰鸣之怒， 使500px范围内产生落石， 并令所有敌人进入眩晕状态， 效果持续3秒。`
+
+[flavor text]
+	`  怎么会变成这样， 是魔法吗？ --炼金术摩尔根`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	98
+
+[magical attack]
+	98
+
+[magical defense]
+	41
+
+[HP MAX]
+	200
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[repair price]
+	64800
+
+[value]
+	8500000
+
+[equipment physical defense]
+	1980	1840
+
+[icon]
+	`item/new_equipment/03_leather/pants/leather_pants.img`	21
+
+[field image]
+	`Item/FieldImage.img`	1
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[pants]`	18
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	27
+
+[weight]
+	1500
+
+[item group name]
+	`lt pants`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		100
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[passive object]
+		60364	30	0	80	2	0	`fallingstone.ptl`
+	[/passive object]
+[/then]
+
+[possible kiri protect]

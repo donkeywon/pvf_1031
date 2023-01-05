@@ -1,16 +1,21 @@
 #PVF_File
 
 [name]
-	`西岚的倒刺帮`
-
-[name2]
-	`Club of Siran`
+	`西岚的倒刺棒`
 
 [basic explain]
-	`攻击时， 有2%%的几率使敌人进入眩晕状态。`
+	`攻击时， 有3%%的几率使敌人进入眩晕状态。
+[银光落刃]冷却时间 -50%%
+[银光落刃]攻击力 +50%%
+[银光落刃]攻击范围 +50%%
+    对眩晕状态下敌人的伤害 +50%%`
 
 [detail explain]
-	`攻击时， 有2%%的几率使敌人进入眩晕状态2秒； 但在决斗场中， 只能持续1秒。 (若敌人高于Lv55， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+	`攻击时， 有3%%的几率使敌人进入眩晕状态。
+[银光落刃]冷却时间 -50%%
+[银光落刃]攻击力 +50%%
+[银光落刃]攻击范围 +50%%
+    对眩晕状态下敌人的伤害 +50%%（伤害加成取最高值， 且无法叠加； 暴击/附加伤害除外）`
 
 [grade]
 	57
@@ -29,6 +34,9 @@
 [minimum level]
 	50
 
+[need material]
+	3260	4000
+
 [physical attack]
 	59
 
@@ -39,13 +47,16 @@
 	-1
 
 [price]
-	91200
+	50000000
 
 [repair price]
 	76608
 
 [value]
-	72960
+	5000000
+
+[creation rate]
+	500
 
 [equipment physical attack]
 	585	532
@@ -56,11 +67,21 @@
 [separate attack]
 	328	220
 
+[physical critical hit]
+	15
+
+[skill levelup]
+	`[swordman]`	16	5
+[/skill levelup]
+
 [icon]
-	`Item/weapon/swordman/club.img`	1
+	`item/new_equipment/01_weapon/swordman/club/club.img`	31
 
 [field image]
 	`Item/FieldImage.img`	8
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [equipment type]
 	`[weapon]`	23
@@ -69,7 +90,7 @@
 	`[swordman]`
 
 [variation]
-	0	7
+	2	4
 
 [layer variation]
 	2790
@@ -89,7 +110,7 @@
 	`[demonic swordman]`
 
 [variation]
-	0	7
+	2	4
 
 [layer variation]
 	2790
@@ -140,12 +161,32 @@
 	[reduce probability to human armor at pvp module]
 		80
 	[probability]
-		2
+		3
 	[active status]
 		`stun`	50
 [/then]
 
-[possible kiri protect]
+[jump power]
+	50
 
-[icon mark]
-	`Item/IconMark.img`	68
+[if]
+	[target active status]
+		`stun`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	50
+[/then]
+
+[skill data up]
+	`[swordman]`	16	`[all]`	`[cooltime]`	0	`%`	-50
+	`[swordman]`	16	`[all]`	`[level]`	0	`%`	50
+	`[swordman]`	16	`[all]`	`[level]`	1	`%`	50
+	`[swordman]`	16	`[all]`	`[level]`	2	`%`	50
+
+[possible kiri protect]

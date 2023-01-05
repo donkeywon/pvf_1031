@@ -1,0 +1,110 @@
+#PVF_File
+
+[name]
+	`断肠绝伤之黑金链甲`
+
+[flavor text]
+	`只是因为一场试验，就剥夺了多少无辜的生命`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11372
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	38
+
+[magical attack]
+	38
+
+[physical defense]
+	41
+
+[need material]
+	10000204	75
+
+[price]
+	85000000
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	5880	5460
+
+[icon]
+	`item/new_equipment/06_plate/coat/plate_coat.img`	39
+
+[field image]
+	`Item/field_equip.img`	15
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[coat]`	22
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	60
+
+[weight]
+	5000
+
+[item group name]
+	`mt coat`
+
+[cool time]
+	10000
+
+[possible kiri protect]
+
+[basic explain]
+	`装备时，可以使500px范围内的队员增加100的智力、100的力量`
+
+[if]
+	[module]
+		`[dungeon type]`
+	[/module]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`party`	500
+	[stat by condition]
+		`physical attack`
+		`+`	100
+	[stat by condition]
+		`magical attack`
+		`+`	100
+[/then]

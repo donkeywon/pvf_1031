@@ -3,17 +3,20 @@
 [name]
 	`游龙之魂战靴`
 
-[name2]
-	``
-
 [basic explain]
-	`攻击时， 有2%%的几率使队员的攻击速度、 移动速度和施放速度各增加5%%， 效果持续20秒。`
+	`    攻击时， 有3%%的几率使包括自身在内的所有队员增加20%%的攻击速度、 20%%移动速度和32.5%%的施放速度， 效果持续20秒。 (冷却时间20秒)`
+
+[detail explain]
+	`    攻击时， 有3%%的几率使包括自身在内的所有队员增加20%%的攻击速度、 20%%移动速度和32.5%%的施放速度， 效果持续20秒。 (冷却时间20秒； 装备解除时效果消失)`
 
 [grade]
 	85
 
 [rarity]
 	4
+
+[part set index]
+	11586
 
 [usable job]
 	`[all]`
@@ -25,32 +28,38 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [physical attack]
-	21
+	22
 
 [magical attack]
-	21
+	22
 
 [magical defense]
-	23
+	24
 
 [move speed]
 	70
 
 [price]
-	59500
+	80000000
 
 [repair price]
-	49980
+	55040
 
 [value]
-	47600
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical defense]
-	1116	1044
+	1164	1056
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/03_leather/shoes/leather_shoes.img`	10
@@ -89,26 +98,19 @@
 [then]
 	[target]
 		`party`	-1
-	[duration]
+	[equipment duration]
 		20000
 	[probability]
-		2
+		3
 	[stat]
 		`move speed`
-		`+`	50
+		`+`	200
 	[stat]
 		`cast speed`
-		`+`	50
+		`+`	325
 	[stat]
 		`attack speed`
-		`+`	50
+		`+`	200
 [/then]
 
-[set item master]
-	100060016
-
-[routing priority]
-[/routing priority]
-
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

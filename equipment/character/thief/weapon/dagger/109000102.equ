@@ -1,0 +1,201 @@
+#PVF_File
+
+[name]
+	`沾血之魂`
+
+[basic explain]
+	`攻击时， 有5%%的几率使敌人进入出血状态3秒； 出血状态下的敌人， 每0.5秒受到75点伤害。
+[旋舞斩]技能攻击时， 可以使敌人进入出血状态6秒； 出血状态下的敌人， 每0.5秒受到75点伤害。
+[穿心]技能攻击时， 可以使敌人进入出血状态6秒； 出血状态下的敌人， 每0.5秒受到75点伤害。
+攻击出血状态下敌人时， 附加25%%的伤害。`
+
+[detail explain]
+	`攻击时， 有5%%的几率使敌人进入出血状态3秒； 出血状态下的敌人， 每0.5秒受到75点伤害。
+[旋舞斩]技能攻击时， 可以使敌人进入出血状态6秒； 出血状态下的敌人， 每0.5秒受到75点伤害。
+[穿心]技能攻击时， 可以使敌人进入出血状态6秒； 出血状态下的敌人， 每0.5秒受到75点伤害。
+攻击出血状态下敌人时， 附加25%%的伤害。`
+
+[flavor text]
+	`又是一个被血染红的夜晚……`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	58
+
+[attack speed]
+	100
+
+[stuck]
+	1
+
+[repair price]
+	116640
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	798	636
+
+[equipment magical attack]
+	769	652
+
+[separate attack]
+	520	336
+
+[physical critical hit]
+	10
+
+[skill levelup]
+	`[thief]`	80	5
+	`[thief]`	107	5
+[/skill levelup]
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/thief/dagger/dagger.img`	121
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	31	0
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[duration]
+		3000
+	[active status]
+		`bleeding`	81	300
+[/then]
+
+[if]
+	[skill]
+		`thief`	78
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		6000
+	[probability]
+		100
+	[active status]
+		`bleeding`	81	300
+[/then]
+
+[if]
+	[skill]
+		`thief`	107
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		6000
+	[probability]
+		100
+	[active status]
+		`bleeding`	81	300
+[/then]
+
+[if]
+	[target active status]
+		`bleeding`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	25
+[/then]
+
+[possible kiri protect]

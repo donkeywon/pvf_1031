@@ -1,0 +1,96 @@
+#PVF_File
+
+[name]
+	`武之禅 - 制怒`
+
+[basic explain]
+	`    装备后， 每30秒会增加15%%的力量和3%%的物理暴击率， 效果持续25秒。`
+
+[detail explain]
+	`    装备后， 每30秒会增加15%%的力量和3%%的物理暴击率， 效果持续25秒。 (装备10秒后生效)`
+
+[flavor text]
+	`    怒为万障之根， 忍为百福之首。`
+
+[grade]
+	80
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[magical attack]
+	34
+
+[magical defense]
+	86
+
+[price]
+	80000000
+
+[need material]
+	10000204	100
+
+[value]
+	8000000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	7520	6960
+
+[icon]
+	`Item/new_equipment/08_necklace/necklace.img`	153
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		30000	1	10000
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		25000
+	[stat]
+		`physical attack`
+		`%`	15
+	[stat]
+		`physical critical hit`
+		`+`	3
+[/then]
+
+[possible kiri protect]

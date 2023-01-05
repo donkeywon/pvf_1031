@@ -1,0 +1,107 @@
+#PVF_File
+
+[name]
+	`逆龙之战影袭护腿`
+
+[basic explain]
+	`背击伤害 +18%%`
+
+[detail explain]
+	`背击伤害 +18%% (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)`
+
+[flavor text]
+	`    那些喜欢在战场上穿华丽衣服的呆瓜们， 寿衣更适合你们！`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[part set index]
+	11348
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	158
+
+[magical attack]
+	148
+
+[physical defense]
+	35
+
+[repair price]
+	90720
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	3680	3320
+
+[skill levelup]
+	`[common]`	178	5
+	`[common]`	189	5
+[/skill levelup]
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/05_harmor/pants/harmor_pants.img`	17
+
+[field image]
+	`Item/field_equip.img`	11
+
+[equipment type]
+	`[pants]`	21
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	34
+
+[weight]
+	2900
+
+[item group name]
+	`ha pants`
+
+[cool time]
+	10000
+
+[if]
+	[attack condition]
+		`back attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	18
+[/then]
+
+[possible kiri protect]

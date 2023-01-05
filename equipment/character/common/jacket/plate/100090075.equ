@@ -1,0 +1,174 @@
+#PVF_File
+
+[name]
+	`霸域英豪胸甲`
+
+[basic explain]
+	`被物理攻击时， 使自身进入霸体状态5秒。 (冷却时间5秒)
+    物理攻击时， 有10%%的几率使自身进入霸体状态5秒。 (冷却时间5秒)
+    处于该装备霸体状态时， 使自身时增加100点物理攻击力、 100点魔法攻击力和100点独立攻击力。
+(解除装备后效果消失)`
+
+[flavor text]
+	`想打倒我？ 换把没生锈的武器先！`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11732
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	89
+
+[magical attack]
+	89
+
+[physical defense]
+	42
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	6120	5580
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/06_plate/coat/plate_coat.img`	22
+
+[field image]
+	`Item/field_equip.img`	15
+
+[equipment type]
+	`[coat]`	23
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	60
+
+[weight]
+	5000
+
+[item group name]
+	`mt coat`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack type]
+		`physical`
+	[hit]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[equipment duration]
+		5000
+	[appendage]
+		251
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack type]
+		`physical`
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[equipment duration]
+		5000
+	[appendage]
+		251
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[my appendage]
+		251
+	[stat change]
+		`hp`
+		`<=`
+		`%`	100
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		0
+	[appendage]
+		633
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

@@ -1,0 +1,165 @@
+#PVF_File
+
+[name]
+	`执刑者的刺杀项链`
+
+[basic explain]
+	`攻击HP为70%%以上的敌人时， 增加10%%的伤害。
+    攻击HP为20%%以上70%%以下的敌人时， 增加20%%的伤害。
+    攻击HP为20%%以下的敌人时， 增加30%%的伤害。`
+
+[detail explain]
+	`攻击HP为70%%以上的敌人时， 增加10%%的伤害。
+    攻击HP为20%%以上70%%以下的敌人时， 增加20%%的伤害。
+    攻击HP为20%%以下的敌人时， 增加30%%的伤害。 (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)`
+
+[flavor text]
+	`    据说是执行绞刑的无情侩子手佩戴过的。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[magical attack]
+	37
+
+[magical defense]
+	93
+
+[attack speed]
+	50
+
+[cast speed]
+	50
+
+[price]
+	85000000
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment magical defense]
+	8160	7440
+
+[physical critical hit]
+	7
+
+[magical critical hit]
+	7
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/08_necklace/necklace.img`	106
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[target stat]
+		`hp`
+		`>=`
+		`%`	70
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	10
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[target stat]
+		`hp`
+		`>=`
+		`%`	70
+	[target stat]
+		`hp`
+		`<`
+		`%`	20
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	15
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[target stat]
+		`hp`
+		`<`
+		`%`	20
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	30
+[/then]
+
+[pvp]
+	[attack speed]
+		57
+	[cast speed]
+		108
+	[hit recovery]
+		112
+[/pvp]
+
+[possible kiri protect]

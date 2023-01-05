@@ -1,0 +1,101 @@
+#PVF_File
+
+[name]
+	`毒雾云绕手镯`
+
+[basic explain]
+	`    攻击时， 有5%%的几率在自身周围生成强大的毒雾。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率在自身周围生成强大的毒雾。
+    被毒雾命中的敌人， 会进入中毒状态4秒； 中毒状态下的敌人， 每0.5秒受到6000点伤害。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`    咳咳……这手镯的卖家应该再给个配套的防毒面具……咳咳……`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	36
+
+[physical defense]
+	90
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	4752	4416
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	108
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	20
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[passive object]
+		35236	0	0	0	2	0	``
+	[/passive object]
+	[target]
+		`all enemy`	500
+	[duration]
+		4000
+	[active status]
+		`poison`	90	48000
+[/then]
+
+[active status control info]
+	`poison`	0	0	0	20
+
+[possible kiri protect]

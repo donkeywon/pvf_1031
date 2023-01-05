@@ -1,0 +1,126 @@
+#PVF_File
+
+[name]
+	`黑暮瞳`
+
+[basic explain]
+	`    每20秒使550px范围内的所有敌人和自身进入失明状态10秒。
+   攻击失明状态下的敌人时， 附加15%%的伤害。`
+
+[detail explain]
+	`    每20秒使550px范围内的所有敌人和自身进入失明状态10秒； 失明状态下的敌人， 会减少90%%的视野和20%%的命中率。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 装备10秒后生效)
+    攻击失明状态下的敌人时， 附加15%%的伤害。`
+
+[flavor text]
+	`    就这?被它看着， 感觉要被吸进无边的黑暗……`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	54
+
+[magical attack]
+	54
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	3168	2944
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	153
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	200
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		20000	1	0
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[active status]
+		`blind`	90	50	5
+[/then]
+
+[if]
+	[time]
+		20000	1	0
+[/if]
+
+[then]
+	[target]
+		`all enemy`	550
+	[duration]
+		10000
+	[active status]
+		`blind`	90	90	20
+[/then]
+
+[if]
+	[target active status]
+		`blind`
+	[attack success]
+		1
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		915
+[/then]
+
+[possible kiri protect]

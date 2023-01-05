@@ -1,0 +1,220 @@
+#PVF_File
+
+[name]
+	`智者千虑`
+
+[basic explain]
+	`    施放[远古记忆]时， 在冷却时间内， 使自身增加20点所有属性强化。
+    攻击时， 附加16%%的伤害。`
+
+[detail explain]
+	`    施放[远古记忆]时， 在冷却时间内， 使自身增加20点所有属性强化。 (最多重叠1次， 解除装备后效果消失)
+    攻击时， 附加16%%的伤害。`
+
+[flavor text]
+	`    甲 : 智者千虑给你带来了什么好处？
+    乙 : 少白头。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[magical attack]
+	65
+
+[attack speed]
+	-100
+
+[cast speed]
+	100
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	912	783
+
+[equipment magical attack]
+	1152	989
+
+[separate attack]
+	589	382
+
+[magical critical hit]
+	10
+
+[skill levelup]
+	`[mage]`	2	3
+	`[mage]`	41	5
+	`[at mage]`	5	5
+	`[at mage]`	28	3
+[/skill levelup]
+
+[all elemental attack]
+	30
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/mage/staff/staff.img`	116
+
+[field image]
+	`Item/field_weapon.img`	9
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	37	0
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	38	0
+
+[layer variation]
+	2150
+	`at_staffa`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_staffd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	37	0
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`STAFF_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	2400
+
+[item group name]
+	`staff`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[event use skill]
+		`common`	176
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[appendage]
+		1047
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	16
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		456	392
+	[equipment magical attack]
+		576	495
+[/pvp]
+
+[possible kiri protect]

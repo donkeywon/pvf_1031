@@ -1,0 +1,146 @@
+#PVF_File
+
+[name]
+	`混元武士的邪魔护腿`
+
+[basic explain]
+	`体力 +150
+精神 +150
+攻击速度 +20%%
+施放速度 +25%%
+移动速度 +10%%
+    装备后， 每30秒会使自身进入混乱状态。`
+
+[detail explain]
+	`    每30秒使自身进入混乱状态30秒。 (若对象高于Lv100， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 装备0.5秒后生效)
+体力 +150
+精神 +150
+攻击速度 +20%%
+施放速度 +25%%
+移动速度 +10%%
+(装备10秒后生效)`
+
+[flavor text]
+	`    我看不是一念成魔， 而是一恋成魔。`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[part set index]
+	11468
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	92
+
+[magical attack]
+	78
+
+[MP MAX]
+	500
+
+[repair price]
+	77760
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	2760	2490
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/04_larmor/pants/larmor_pants.img`	18
+
+[field image]
+	`Item/field_equip.img`	6
+
+[equipment type]
+	`[pants]`	20
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	32
+
+[weight]
+	2500
+
+[item group name]
+	`la pants`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		500	1	500
+	[start cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical defense`
+		`+`	150
+	[stat by condition]
+		`magical defense`
+		`+`	150
+	[stat by condition]
+		`attack speed`
+		`+`	200
+	[stat by condition]
+		`cast speed`
+		`+`	250
+	[stat by condition]
+		`move speed`
+		`+`	100
+[/then]
+
+[if]
+	[stat change]
+		`hp`
+		`>`
+		`%`	0
+	[time]
+		100	1	500
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[active status]
+		`confuse`	100	1
+[/then]
+
+[possible kiri protect]

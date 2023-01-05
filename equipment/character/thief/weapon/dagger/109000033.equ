@@ -3,12 +3,28 @@
 [name]
 	`潜龙渊`
 
-[name2]
-	``
-
 [basic explain]
-	`[螺旋穿刺]攻击敌人时， 有5%%的几率使该技能当前的冷却时间减少10%%。
-[剑刃风暴]攻击敌人时， 有3%%的几率使该技能当前的冷却时间减少10%%。`
+	`[剑刃风暴]冷却时间 -30%%
+[螺旋穿刺]冷却时间 -20%%
+[陨落螺旋刺]冷却时间 -30%%
+[追命]冷却时间 -20%%
+[刃舞]冷却时间 -30%%
+[剑刃风暴]技能攻击时， 附加15%%的伤害。
+[螺旋穿刺]技能攻击时， 附加15%%的伤害。
+[陨落螺旋刺]技能攻击时， 附加20%%的伤害。
+    施放特定技能时， 攻击时附加12%%的伤害， 效果持续60秒。`
+
+[detail explain]
+	`[剑刃风暴]冷却时间 -30%%
+[螺旋穿刺]冷却时间 -20%%
+[陨落螺旋刺]冷却时间 -30%%
+[追命]冷却时间 -20%%
+[刃舞]冷却时间 -30%%
+[剑刃风暴]技能攻击时， 附加15%%的伤害。
+[螺旋穿刺]技能攻击时， 附加15%%的伤害。
+[陨落螺旋刺]技能攻击时， 附加20%%的伤害。
+    施放特定技能时， 攻击时附加12%%的伤害， 效果持续60秒。 (最多重叠1次)
+- [剑刃风暴]、 [追命]`
 
 [grade]
 	85
@@ -26,8 +42,11 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [physical attack]
-	56
+	62
 
 [attack speed]
 	100
@@ -36,33 +55,37 @@
 	1
 
 [price]
-	136000
+	80000000
 
 [repair price]
-	114240
+	123840
 
 [value]
-	108800
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical attack]
-	700	649
+	851	678
 
 [equipment magical attack]
-	742	688
+	816	697
 
 [separate attack]
-	504	343
+	555	359
 
 [physical critical hit]
 	10
 
 [skill levelup]
-	`[thief]`	31	2
-	`[thief]`	33	2
+	`[thief]`	31	3
+	`[thief]`	33	3
+	`[thief]`	75	2
 [/skill levelup]
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/01_weapon/thief/dagger/dagger.img`	108
@@ -107,7 +130,7 @@
 	`DAGGER_TOUCH`
 
 [durability]
-	35
+	45
 
 [weight]
 	2100
@@ -118,9 +141,11 @@
 [cool time]
 	10000
 
-[routing priority]
-	`thief`	1
-[/routing priority]
+[skill data up]
+	`[thief]`	31	`[all]`	`[cooltime]`	0	`%`	-30
+	`[thief]`	33	`[all]`	`[cooltime]`	0	`%`	-20
+	`[thief]`	75	`[all]`	`[cooltime]`	0	`%`	-30
+[/skill data up]
 
 [if]
 	[skill]
@@ -131,13 +156,11 @@
 [/if]
 
 [then]
-	[probability]
-		5
 	[target]
-		`myself`	-1
-	[skill cooltime reset]
-		31
-		`%`	-10
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	15
 [/then]
 
 [if]
@@ -149,14 +172,58 @@
 [/if]
 
 [then]
-	[probability]
-		3
 	[target]
-		`myself`	-1
-	[skill cooltime reset]
-		33
-		`%`	-10
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	15
 [/then]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[if]
+	[skill]
+		`thief`	75
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	20
+[/then]
+
+[if]
+	[cooltime]
+		1000
+	[event use skill]
+		`thief`	31
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		60000
+	[appendage]
+		208
+[/then]
+
+[if]
+	[attack success]
+		1
+	[my appendage]
+		208
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	12
+[/then]
+
+[possible kiri protect]

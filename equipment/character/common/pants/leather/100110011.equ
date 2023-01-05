@@ -3,14 +3,22 @@
 [name]
 	`游龙之魂护腿`
 
-[name2]
-	``
+[basic explain]
+	`    装备后， 每1秒使自身增加1.5%%的攻击速度和移动速度， 3%%的物理暴击率、 魔法暴击率、 施放速度， 以及0.5%%的命中率和回避率。
+    被攻击时， 有10%%的几率使所有效果消失。`
+
+[detail explain]
+	`    装备后， 每1秒使自身增加1.5%%的攻击速度和移动速度， 3%%的物理暴击率、 魔法暴击率、 施放速度， 以及0.5%%的命中率和回避率。 (最多重叠10次； 解除装备后效果消失)
+    被攻击时， 有10%%的几率使所有效果消失。`
 
 [grade]
 	85
 
 [rarity]
 	4
+
+[part set index]
+	11586
 
 [usable job]
 	`[all]`
@@ -22,50 +30,56 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [physical attack]
-	35
+	37
 
 [magical attack]
-	35
+	37
 
 [magical defense]
-	39
+	40
 
 [attack speed]
-	30
+	0
 
 [cast speed]
-	30
+	0
 
 [move speed]
-	30
+	0
 
 [stuck]
-	-3
+	0
 
 [stuck resistance]
-	30
+	0
 
 [price]
-	76500
+	80000000
 
 [repair price]
-	64260
+	68800
 
 [value]
-	61200
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical defense]
-	1860	1740
+	1940	1760
 
 [physical critical hit]
-	3
+	0
 
 [magical critical hit]
-	3
+	0
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/03_leather/pants/leather_pants.img`	10
@@ -94,11 +108,20 @@
 [cool time]
 	10000
 
-[set item master]
-	100060016
+[if]
+	[time]
+		1000	1	500
+	[cooltime]
+		1000
+[/if]
 
-[routing priority]
-[/routing priority]
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		650
+[/then]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

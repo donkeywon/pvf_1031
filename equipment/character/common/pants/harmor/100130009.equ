@@ -3,20 +3,20 @@
 [name]
 	`星云迷踪护腿`
 
-[name2]
-	``
-
 [basic explain]
-	`被击时， 有10%%的几率使200px范围内的敌人进入失明状态。`
+	`    攻击时， 有5%%的几率进入失明状态15秒。`
 
 [detail explain]
-	`被击时， 有10%%的几率使200px范围内的敌人进入失明状态3秒； 失明状态下的敌人， 会减少90%%的视野和20%%的命中率。 (若敌人高于Lv85， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+	`    攻击时， 有5%%的几率使自身进入失明状态， 效果持续15秒。 (冷却时间3秒； 若敌人高于Lv86， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
 
 [grade]
 	85
 
 [rarity]
 	4
+
+[part set index]
+	11337
 
 [usable job]
 	`[all]`
@@ -28,39 +28,41 @@
 [minimum level]
 	80
 
-[physical attack]
-	39
+[need material]
+	3285	2500
 
-[physical defense]
-	35
+[physical attack]
+	40
 
 [magical attack]
-	28
+	29
+
+[physical defense]
+	37
 
 [price]
-	102000
+	80000000
 
 [repair price]
-	85680
+	96320
 
 [value]
-	81600
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical defense]
-	3720	3480
+	3880	3520
 
-[skill levelup]
-	`[gunner]`	71	3
-	`[at gunner]`	71	3
-	`[fighter]`	99	2
-	`[at fighter]`	119	2
-	`[swordman]`	79	3
-	`[priest]`	125	3
-	`[demonic swordman]`	79	3
-[/skill levelup]
+[physical critical hit]
+	4
+
+[magical critical hit]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/05_harmor/pants/harmor_pants.img`	10
@@ -90,30 +92,62 @@
 	10000
 
 [if]
-	[hit]
+	[cooltime]
+		3000
+	[attack success]
 		1
 [/if]
 
 [then]
 	[target]
-		`all enemy`	200
+		`myself`	-1
 	[duration]
-		3000
-	[reduce duration to human armor at pvp module]
-		50
+		15000
 	[probability]
-		10
-	[reduce probability to human armor at pvp module]
-		80
+		5
 	[active status]
-		`blind`	85	90	20
+		`blind`	86	50	5
 [/then]
 
-[set item master]
-	100080009
+[all skill item container]
+	[all skill item]
+		[item growtype]
+			`[all]`	0
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				45
+			[upper bound level]
+				45
+			[value]
+				3
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
+	[all skill item]
+		[item growtype]
+			`[all]`	0
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				60
+			[upper bound level]
+				60
+			[value]
+				2
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
+[/all skill item container]
 
-[routing priority]
-[/routing priority]
-
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

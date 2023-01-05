@@ -1,0 +1,170 @@
+#PVF_File
+
+[name]
+	`大智度论`
+
+[basic explain]
+	`    攻击时， 附加28%%的伤害。
+    施放技能时， 有20%%的几率使自身进入霸体状态2秒。 `
+
+[detail explain]
+	`    攻击时， 附加28%%的伤害。
+    施放技能时， 有20%%的几率使自身进入霸体状态2秒。 (冷却时间5秒)`
+
+[flavor text]
+	`    大师， 你在说什么？ 我怎么都听不懂呢？  --某位冒险家`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[magical attack]
+	97
+
+[attack speed]
+	-50
+
+[cast speed]
+	50
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	864	742
+
+[equipment magical attack]
+	1104	948
+
+[separate attack]
+	589	382
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	48	3
+[/skill levelup]
+
+[light attack]
+	30
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/priest/rosary/rosary.img`	91
+
+[field image]
+	`Item/field_weapon.img`	12
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	30	0
+
+[layer variation]
+	200
+	`rosaryd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`rosaryc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`ROSARY_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2500
+
+[item group name]
+	`rosary`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	28
+[/skill data up]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[casting]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		20
+	[equipment duration]
+		2000
+	[appendage]
+		261
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		432	371
+	[equipment magical attack]
+		552	474
+[/pvp]
+
+[possible kiri protect]

@@ -1,0 +1,321 @@
+#PVF_File
+
+[name]
+	`御魂 - 七支刀`
+
+[basic explain]
+	`攻击速度 +10%%
+攻击时， 附加18%%的伤害。
+施放技能时， 增加200点力量和智力， 效果持续30秒。
+施放技能时， [不动明王阵]、 [黑暗明王阵]、 [崩山裂地斩] [冥炎之卡洛] [魔狱裂魂斩] [冥炎破空斩]的剩余冷却时间减少20%%。 `
+
+[detail explain]
+	`攻击速度 +10%%
+攻击时， 附加18%%的伤害。
+施放技能时， 增加200点力量和智力， 效果持续30秒。 (冷却时间30秒； 最多重叠1次； 解除装备后效果消失)
+施放技能时， [不动明王阵]、 [黑暗明王阵]、 [崩山裂地斩] [冥炎之卡洛] [魔狱裂魂斩] [冥炎破空斩]的剩余冷却时间减少20%%。 (冷却时间10秒)`
+
+[flavor text]
+	`    这把剑给你， 就像鲜花插在那什么上……`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	115
+
+[magical attack]
+	147
+
+[attack speed]
+	180
+
+[cast speed]
+	190
+
+[move speed]
+	100
+
+[stuck]
+	1
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	1040	911
+
+[equipment magical attack]
+	1136	993
+
+[separate attack]
+	717	510
+
+[physical critical hit]
+	8
+
+[magical critical hit]
+	8
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/katana/katana.img`	117
+
+[field image]
+	`Item/FieldImage.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	45	0
+
+[layer variation]
+	2790
+	`katanac`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`katanab`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	45	0
+
+[layer variation]
+	2790
+	`katanac`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`katanab`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`KATANA_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2800
+
+[item group name]
+	`katana`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	18
+[/skill data up]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[casting]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		30000
+	[appendage]
+		612
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[character]
+		`swordman`
+	[casting]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill cooltime reset]
+		74
+		`%`	-20
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[character]
+		`swordman`
+	[casting]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill cooltime reset]
+		82
+		`%`	-20
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[character]
+		`swordman`
+	[casting]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill cooltime reset]
+		81
+		`%`	-20
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[character]
+		`demonic swordman`
+	[casting]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill cooltime reset]
+		74
+		`%`	-20
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[character]
+		`demonic swordman`
+	[casting]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill cooltime reset]
+		81
+		`%`	-20
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[character]
+		`demonic swordman`
+	[casting]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[skill cooltime reset]
+		82
+		`%`	-20
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		520	456
+	[equipment magical attack]
+		568	447
+[/pvp]
+
+[possible kiri protect]

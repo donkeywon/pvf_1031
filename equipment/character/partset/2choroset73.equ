@@ -4,55 +4,73 @@
 	`圣域魔神  套装`
 
 [piece set ability]
-	3	
+	5
 	[skill data up]
-		`[priest]`	124	`[dungeon type]`	`[level]`	0	`+`	2
-		`[priest]`	115	`[dungeon type]`	`[level]`	1	`%`	15
 		`[priest]`	123	`[dungeon type]`	`[level]`	3	`%`	15
 		`[priest]`	123	`[dungeon type]`	`[level]`	4	`%`	15
 		`[priest]`	123	`[dungeon type]`	`[level]`	5	`%`	15
-	[/skill data up]
-	[parameter basic explain]
-		`[死亡切割]多段攻击次数 +2
-[厄运之轮]移动距离 +15%%
-[恶魔之力]攻击力 +15%%`
-[/piece set ability]
-
-[piece set ability]
-	6	
-	[skill data up]
 		`[priest]`	124	`[dungeon type]`	`[level]`	0	`+`	2
+		`[priest]`	115	`[dungeon type]`	`[level]`	0	`%`	15
+		`[priest]`	117	`[dungeon type]`	`[level]`	0	`%`	10
+		`[priest]`	117	`[dungeon type]`	`[level]`	1	`%`	10
+		`[priest]`	117	`[dungeon type]`	`[level]`	2	`%`	20
+		`[priest]`	117	`[dungeon type]`	`[cooltime]`	0	`%`	-15
+		`[priest]`	124	`[dungeon type]`	`[cooltime]`	0	`%`	-20
+		`[priest]`	124	`[dungeon type]`	`[level]`	0	`+`	4
 		`[priest]`	124	`[dungeon type]`	`[level]`	1	`%`	15
-		`[priest]`	125	`[dungeon type]`	`[static]`	2	`+`	-40
 		`[priest]`	123	`[dungeon type]`	`[level]`	3	`%`	20
 		`[priest]`	123	`[dungeon type]`	`[level]`	4	`%`	20
 		`[priest]`	123	`[dungeon type]`	`[level]`	5	`%`	20
-		`[priest]`	125	`[dungeon type]`	`[level]`	0	`%`	15
-		`[priest]`	125	`[dungeon type]`	`[level]`	2	`%`	15
-	[/skill data up]
-	[parameter basic explain]
-		`[死亡切割]攻击力 +15%%
-[死亡切割]多段攻击次数 +2
-[恶魔之力]攻击力 +20%%
-[黑暗权能]降低浮空高度`
-[/piece set ability]
-
-[piece set ability]
-	9	
-	[skill data up]
+		`[priest]`	125	`[dungeon type]`	`[static]`	2	`+`	-40
+		`[priest]`	115	`[dungeon type]`	`[cooltime]`	1	`%`	-20
+		`[priest]`	117	`[dungeon type]`	`[level]`	0	`%`	20
+		`[priest]`	117	`[dungeon type]`	`[level]`	1	`%`	20
 		`[priest]`	123	`[dungeon type]`	`[level]`	0	`%`	-20
 		`[priest]`	123	`[dungeon type]`	`[level]`	1	`%`	-20
 		`[priest]`	123	`[dungeon type]`	`[level]`	2	`%`	-20
 		`[priest]`	123	`[dungeon type]`	`[level]`	3	`%`	20
 		`[priest]`	123	`[dungeon type]`	`[level]`	4	`%`	20
 		`[priest]`	123	`[dungeon type]`	`[level]`	5	`%`	20
-		`[priest]`	117	`[dungeon type]`	`[level]`	0	`%`	30
-		`[priest]`	117	`[dungeon type]`	`[level]`	1	`%`	30
-		`[priest]`	117	`[dungeon type]`	`[cooltime]`	0	`%`	-30
+		`[priest]`	117	`[dungeon type]`	`[level]`	0	`%`	40
+		`[priest]`	117	`[dungeon type]`	`[level]`	1	`%`	40
+		`[priest]`	117	`[dungeon type]`	`[cooltime]`	0	`%`	-40
+		`[priest]`	124	`[dungeon type]`	`[level]`	0	`+`	6
+		`[priest]`	124	`[dungeon type]`	`[level]`	1	`%`	35
+		`[priest]`	117	`[dungeon type]`	`[level]`	2	`%`	40
 	[/skill data up]
 	[parameter basic explain]
-		`[恶魔之力]攻击力 +20%%
-[恶魔能量]消耗量 -20%%
-[黑暗之触]攻击力 +30%%
-[黑暗之触]冷却时间 -30%%`
+		`[恶魔之力]攻击力 +15%%
+[死亡切割]多段攻击次数 +2
+[黑暗之触]攻击力 +10%%
+[黑暗之触]范围 +20%%
+[黑暗之触]冷却时间 -15%%
+[恶魔之力]攻击力 +15%%
+[死亡切割]冷却时间 -20%%
+[死亡切割]攻击力 +15%%
+[死亡切割]多段攻击次数 +4
+[黑暗之触]攻击力 +20%%
+[恶魔之力]攻击力 +20%%
+[死亡切割]攻击力 +35%%
+[死亡切割]多段攻击次数 +6
+[恶魔之力]能量消耗量 -20%%
+[黑暗之触]冷却时间 -40%%
+[黑暗之触]攻击力 +40%%
+[黑暗之触]范围 +40%%
+    施放[死亡切割]后3秒内增加100%%的攻击速度`
+	[if]
+		[event use skill]
+			`priest`	124
+		[/event use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			100
+		[duration]
+			3000
+		[stat]
+			`attack speed`
+			`+`	1000
+	[/then]
 [/piece set ability]

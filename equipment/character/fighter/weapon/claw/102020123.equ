@@ -1,0 +1,181 @@
+#PVF_File
+
+[name]
+	`路易斯的毒王血爪`
+
+[basic explain]
+	`    攻击出血状态的敌人时， 附加30%%的伤害。
+    被攻击时， 有20%%的几率使自身进入霸体状态5秒。 (冷却时间10秒)`
+
+[flavor text]
+	`    毒对我而言， 有种致命的吸引力。  --路易斯`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	58
+
+[magical attack]
+	29
+
+[repair price]
+	116640
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	855	724
+
+[equipment magical attack]
+	855	724
+
+[separate attack]
+	520	336
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[fighter]`	60	3
+	`[at fighter]`	60	3
+	`[fighter]`	52	3
+	`[at fighter]`	52	3
+	`[fighter]`	75	3
+	`[at fighter]`	75	3
+	`[fighter]`	45	3
+	`[at fighter]`	45	3
+[/skill levelup]
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/claw/claw.img`	108
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	34	0
+
+[layer variation]
+	2790
+	`clawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	33	0
+
+[layer variation]
+	2150
+	`at_clawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_clawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_clawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[if]
+	[target active status]
+		`bleeding`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	30
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		20
+	[equipment duration]
+		5000
+	[buff]
+		`superarmor`
+[/then]
+
+[possible kiri protect]

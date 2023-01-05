@@ -1,0 +1,181 @@
+#PVF_File
+
+[name]
+	`月影刃`
+
+[basic explain]
+	`[迅影]攻击点数获得量和获得上限 +100%%
+    施放[夺魂]时， 10秒内增加150点力量。 (最多重叠1次)
+[暗杀之心]背击攻击力增加率 +7%%
+    施放[瞬杀]时， 有30%%的几率不受冷却时间影响。`
+
+[detail explain]
+	`[迅影]攻击点数获得量和获得上限 +100%%
+    施放[夺魂]时， 10秒内增加150点力量。 (最多重叠1次)
+[暗杀之心]背击攻击力增加率 +7%%
+    施放[瞬杀]时， 有30%%的几率不受冷却时间影响。`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	58
+
+[attack speed]
+	100
+
+[stuck]
+	1
+
+[repair price]
+	116640
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	798	636
+
+[equipment magical attack]
+	769	652
+
+[separate attack]
+	520	336
+
+[physical critical hit]
+	10
+
+[skill levelup]
+	`[thief]`	57	3
+	`[thief]`	29	5
+	`[thief]`	56	5
+	`[thief]`	114	2
+	`[thief]`	117	3
+[/skill levelup]
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/thief/dagger/dagger.img`	157
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	10	4
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[thief]`	79	`[all]`	`[static]`	0	`%`	100
+	`[thief]`	79	`[all]`	`[static]`	1	`%`	100
+	`[thief]`	117	`[all]`	`[level]`	1	`+`	70
+[/skill data up]
+
+[if]
+	[remove equip]
+		1
+[/if]
+
+[then]
+	[end skill]
+		`thief`	57
+[/then]
+
+[if]
+	[event use skill]
+		`thief`	106
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		754
+[/then]
+
+[if]
+	[event use skill]
+		`thief`	113
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		30
+	[reduce probability at pvp module]
+		90
+	[skill data up]
+		`[thief]`	113	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[possible kiri protect]

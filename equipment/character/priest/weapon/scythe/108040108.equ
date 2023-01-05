@@ -1,0 +1,199 @@
+#PVF_File
+
+[name]
+	`黑暗禁咒`
+
+[basic explain]
+	`[恶魔之拳]攻击力 +30%%
+[恶魔之拳]爆炸范围 +25%%
+[恶魔之握]施放速度 +30%%
+[半魔化]发动时所需能量值 -50%%
+[半魔化]恶魔能量衰减周期 +30%%
+施放[罪业加身]时， 赋予武器暗属性， 效果持续60秒。
+[愤怒之袭]攻击力 +20%%
+[贪婪之刺]范围 +25%%
+使500px范围内的所有敌人减少22点暗属性抗性。
+攻击时， 附加10%%的暗属性伤害。 `
+
+[detail explain]
+	`[恶魔之拳]攻击力 +30%%
+[恶魔之拳]爆炸范围 +25%%
+[恶魔之握]施放速度 +30%%
+[半魔化]发动时所需能量值 -50%%
+[半魔化]恶魔能量衰减周期 +30%%
+施放[罪业加身]时， 赋予武器暗属性， 效果持续60秒。 (冷却时间20秒)
+[愤怒之袭]攻击力 +20%%
+[贪婪之刺]范围 +25%%
+使500px范围内的所有敌人减少22点暗属性抗性。
+攻击时， 附加10%%的暗属性伤害。 `
+
+[flavor text]
+	`    如果注定要成为伪装者， 我宁愿化身成恶魔， 让敌人见识到什么才是真正的恐惧。  --某个没有留下姓名的复仇者`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	65
+
+[magical attack]
+	65
+
+[attack speed]
+	80
+
+[stuck]
+	1
+
+[price]
+	85000000
+
+[repair price]
+	145600
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	912	783
+
+[equipment magical attack]
+	960	824
+
+[separate attack]
+	589	382
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	9
+
+[skill levelup]
+	`[priest]`	119	2
+	`[priest]`	121	2
+	`[priest]`	131	3
+[/skill levelup]
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/priest/scythe/scythe.img`	97
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	32	0
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[cooltime]
+		1000
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[duration]
+		1000
+	[stat]
+		`dark resistance`
+		`+`	-22
+[/then]
+
+[skill data up]
+	`[priest]`	117	`[dungeon type]`	`[level]`	0	`%`	30
+	`[priest]`	117	`[dungeon type]`	`[level]`	1	`%`	30
+	`[priest]`	117	`[dungeon type]`	`[level]`	2	`%`	30
+	`[priest]`	117	`[dungeon type]`	`[level]`	3	`%`	30
+	`[priest]`	117	`[dungeon type]`	`[static]`	1	`%`	25
+	`[priest]`	117	`[dungeon type]`	`[static]`	2	`%`	25
+[/skill data up]
+
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	10
+[/skill data up]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		456	392
+	[equipment magical attack]
+		480	412
+[/pvp]
+
+[possible kiri protect]

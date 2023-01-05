@@ -3,11 +3,15 @@
 [name]
 	`飞龙翼`
 
-[name2]
-	``
-
 [basic explain]
-	`被击时， 有10%%的几率进入霸体状态， 效果持续10秒。`
+	`[念气环绕]个数 +1
+    装备时， 每20秒发动霸体状态， 效果持续20秒。
+   被攻击时， 有20%%的几率生成Lv20的[念气罩]。`
+
+[detail explain]
+	`[念气环绕]个数 +1
+    装备时， 每20秒发动霸体状态， 效果持续20秒。
+   被攻击时， 有20%%的几率生成Lv20的[念气罩]。 (冷却时间50秒)`
 
 [grade]
 	85
@@ -26,8 +30,11 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [magical attack]
-	56
+	62
 
 [attack speed]
 	100
@@ -36,29 +43,31 @@
 	20
 
 [price]
-	136000
+	80000000
 
 [repair price]
-	114240
+	123840
 
 [value]
-	108800
+	8000000
+
+[creation rate]
+	250
 
 [equipment physical attack]
-	783	726
+	862	735
 
 [equipment magical attack]
-	948	879
+	1128	975
 
 [separate attack]
-	504	343
+	640	444
 
-[skill levelup]
-	`[fighter]`	7	3
-	`[fighter]`	16	4
-	`[at fighter]`	7	3
-	`[at fighter]`	16	4
-[/skill levelup]
+[light attack]
+	20
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/01_weapon/fighter/knuckle/knuckle.img`	103
@@ -123,7 +132,7 @@
 	`KNUCKLE_TOUCH`
 
 [durability]
-	39
+	48
 
 [weight]
 	1900
@@ -138,26 +147,80 @@
 	`equipment physical defense`
 	`+`	1000	500
 
+[skill data up]
+	`[fighter]`	40	`[all]`	`[static]`	2	`+`	1
+	`[at fighter]`	40	`[all]`	`[static]`	2	`+`	1
+[/skill data up]
+
 [if]
-	[hit]
-		1
+	[time]
+		20000	1	500
 	[cooltime]
-		30000
+		20000
 [/if]
 
 [then]
 	[target]
 		`myself`	-1
-	[duration]
-		10000
+	[equipment duration]
+		20000
 	[buff]
 		`superarmor`
 [/then]
 
-[routing priority]
-	`fighter`	1
-	`at fighter`	1
-[/routing priority]
+[if]
+	[hit]
+		1
+	[cooltime]
+		50000
+[/if]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[then]
+	[probability]
+		20
+	[perform skill]
+		`fighter`	42	20	0
+[/then]
+
+[all skill item container]
+	[all skill item]
+		[item growtype]
+			`[fighter]`	1
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				20
+			[upper bound level]
+				35
+			[value]
+				4
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
+	[all skill item]
+		[item growtype]
+			`[at fighter]`	1
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				20
+			[upper bound level]
+				35
+			[value]
+				4
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
+[/all skill item container]
+
+[possible kiri protect]

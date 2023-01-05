@@ -3,18 +3,23 @@
 [name]
 	`游龙之魂肩甲`
 
-[name2]
-	``
-
 [basic explain]
-	`被攻击时， 有15%%的几率使自身增加50%%的回避率， 效果持续3秒。
-攻击敌人出现Miss时， 增加50%%的物理和魔法暴击率， 效果持续5秒。`
+	`攻击时， 有3%%的几率增加10%%的物理暴击和魔法暴击， 效果持续30秒。
+    攻击时， 有3%%的几率使自身进入伪装状态， 效果持续20秒。`
+
+[detail explain]
+	`    攻击时， 有3%%的几率增加10%%的物理暴击率和魔法暴击率， 效果持续30秒。 (冷却时间30秒)
+    攻击时， 有3%%的几率使自身进入伪装状态， 效果持续20秒。 (冷却时间20秒)
+(解除装备后效果消失)`
 
 [grade]
 	85
 
 [rarity]
 	4
+
+[part set index]
+	11586
 
 [usable job]
 	`[all]`
@@ -26,32 +31,38 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [physical attack]
-	28
+	29
 
 [magical attack]
-	28
+	29
 
 [magical defense]
-	31
+	32
 
 [stuck resistance]
-	30
+	50
 
 [price]
-	68000
+	80000000
 
 [repair price]
-	57120
+	61920
 
 [value]
-	54400
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical defense]
-	1488	1392
+	1552	1408
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/03_leather/neck/leather_neck.img`	10
@@ -82,48 +93,44 @@
 
 [if]
 	[cooltime]
-		20000
-	[hit]
+		30000
+	[attack success]
 		1
 [/if]
 
 [then]
 	[target]
 		`myself`	-1
-	[duration]
-		3000
+	[equipment duration]
+		30000
 	[probability]
-		15
+		3
 	[stat]
-		`stuck resistance`
-		`+`	500
+		`physical critical hit rate`
+		`+`	10
+	[stat]
+		`magical critical hit rate`
+		`+`	10
 [/then]
 
 [if]
+	[attack success]
+		1
 	[cooltime]
-		7500
-	[hit]
-		0
+		20000
 [/if]
 
 [then]
 	[target]
 		`myself`	-1
-	[duration]
-		5000
-	[stat]
-		`physical critical hit rate`
-		`+`	50
-	[stat]
-		`magical critical hit rate`
-		`+`	50
+	[probability]
+		3
+	[equipment duration]
+		20000
+	[buff]
+		`camoflage`
+	[appendage]
+		846
 [/then]
 
-[set item master]
-	100060016
-
-[routing priority]
-[/routing priority]
-
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

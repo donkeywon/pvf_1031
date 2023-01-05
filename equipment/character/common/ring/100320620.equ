@@ -1,0 +1,197 @@
+#PVF_File
+
+[name]
+	`瘟疫蔓延之戒`
+
+[basic explain]
+	`    攻击异常状态的敌人时， 有50%%的几率使周围450px范围内任意敌人进入随机一种异常状态， 效果持续3秒。 
+    生成光环， 使250px范围内的所有敌人减少25点异常状态抗性。`
+
+[detail explain]
+	`    攻击异常状态的敌人时， 有50%%的几率使周围450px范围内任意敌人随机进入出血、 中毒、 石化、 减速、 失明、 混乱、 束缚中的任意一种异常状态， 效果持续3秒。 
+- 使敌人进入出血、 中毒状态3秒； 该状态下的敌人， 每0.5秒受到1000点伤害。 
+- 使敌人进入石化状态3秒； 石化状态解除时， 使敌人受到12000点伤害。 
+- 使敌人进入减速状态3秒； 减速状态下的敌人， 将减少15%%的移动速度和10%%的攻击速度。 
+- 使敌人进入失明状态3秒； 失明状态下的敌人， 会减少90%%的视野和20%%的命中率。 
+- 使敌人进入冰冻、 晕眩、 束缚、 混乱状态3秒。 
+    (若敌人高于Lv90， 则减少该装备所有异常状态的发动几率和效果； 反之， 则增加几率和效果)
+    生成光环， 使250px范围内的所有敌人减少20点异常状态抗性。`
+
+[flavor text]
+	`    一定要阻止这场瘟疫的蔓延！ `
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	54
+
+[magical attack]
+	54
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	3168	2944
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	171
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[target active status]
+		`any`
+	[attack success]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`enemy`	450
+		[probability]
+			50
+		[duration]
+			3000
+		[active status]
+			`slow`	90	15	10
+		[then probability]
+			14.3
+	[/then]
+	[then]
+		[target]
+			`enemy`	450
+		[probability]
+			50
+		[duration]
+			3000
+		[active status]
+			`blind`	90	90	20
+		[then probability]
+			14.3
+	[/then]
+	[then]
+		[target]
+			`enemy`	450
+		[probability]
+			50
+		[duration]
+			3000
+		[active status]
+			`bleeding`	90	6000
+		[then probability]
+			14.3
+	[/then]
+	[then]
+		[target]
+			`enemy`	450
+		[probability]
+			50
+		[duration]
+			3000
+		[active status]
+			`poison`	90	6000
+		[then probability]
+			14.3
+	[/then]
+	[then]
+		[target]
+			`enemy`	450
+		[probability]
+			50
+		[duration]
+			3000
+		[active status]
+			`stone`	90	3800
+		[then probability]
+			14.3
+	[/then]
+	[then]
+		[target]
+			`enemy`	450
+		[probability]
+			50
+		[duration]
+			3000
+		[active status]
+			`hold`	90
+		[then probability]
+			14.3
+	[/then]
+	[then]
+		[target]
+			`enemy`	450
+		[probability]
+			50
+		[duration]
+			3000
+		[active status]
+			`confuse`	90	1
+		[then probability]
+			14.2
+	[/then]
+[/multiple then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	250
+	[duration]
+		1000
+	[appendage]
+		3581
+[/then]
+
+[possible kiri protect]

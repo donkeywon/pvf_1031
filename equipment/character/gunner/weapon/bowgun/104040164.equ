@@ -1,0 +1,209 @@
+#PVF_File
+
+[name]
+	`梦幻列车长的噩梦之弩`
+
+[basic explain]
+	`    攻击时， 有5%%的几率使敌人进入失明或诅咒状态。
+    攻击失明状态的敌人时， 增加22%%的暴击伤害。
+    攻击诅咒状态的敌人时， 附加22%%的伤害。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率使敌人进入失明或诅咒状态5秒； 失明状态下的敌人， 会减少80%%的视野和20%%的命中率； 诅咒状态下的敌人， 力量、 体力、 智力和精神各减少90点。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+    对失明状态下敌人的暴击伤害 +22%% (暴击伤害加成效果取最高值）
+    攻击诅咒状态的敌人时， 附加22%%的伤害。`
+
+[flavor text]
+	`    看着别人做噩梦就是我最高兴的时候`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[magical attack]
+	31
+
+[attack speed]
+	20
+
+[stuck]
+	-1
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	789	589
+
+[equipment magical attack]
+	876	676
+
+[separate attack]
+	607	507
+
+[physical critical hit]
+	7
+
+[magical critical hit]
+	7
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/bowgun/bowgun.img`	102
+
+[field image]
+	`Item/field_weapon.img`	5
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	38	0
+
+[layer variation]
+	2790
+	`bowgunc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`bowgunb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2790
+	`at_bowgunc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_bowgunb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BOWGUN_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`bowgun`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			5
+		[duration]
+			5000
+		[active status]
+			`curse`	90	90	90	90	90
+		[then probability]
+			50.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			5
+		[duration]
+			5000
+		[active status]
+			`blind`	90	80	20
+		[then probability]
+			50.0
+	[/then]
+[/multiple then]
+
+[if]
+	[target active status]
+		`blind`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	22
+[/then]
+
+[if]
+	[target active status]
+		`curse`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	22
+[/then]
+
+[possible kiri protect]

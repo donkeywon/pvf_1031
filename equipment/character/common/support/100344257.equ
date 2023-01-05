@@ -1,0 +1,138 @@
+#PVF_File
+
+[name]
+	`梦幻列车长的怀表`
+
+[basic explain]
+	`    HP为30%%以下时， 被攻击时使自身进入伪装状态10秒。 
+    伪装状态下， 使自身恢复50%%的HP， 并增加3%%的移动速度、 攻击速度和施放速度， 以及5%%的物理暴击率和魔法暴击率； 暴击攻击时， 增加10%%的伤害。`
+
+[detail explain]
+	`    HP为30%%以下时， 被攻击时使自身进入伪装状态10秒， 但会消耗10个无色小晶块。 (冷却时间60秒)
+    伪装状态下， 可以恢复自身50%%的HP， 并增加3%%的移动速度、 攻击速度和施放速度， 以及5%%的物理暴击率和魔法暴击率； 暴击攻击时， 增加10%%的伤害。 (暴击伤害加成效果取最高值， 且无法叠加)`
+
+[flavor text]
+	`    一开始就没有想过他能遵守时间， 所以我并没有怎?生气……只是， 这迟到太久了吧！ --青年时代的布万加`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	35
+
+[magical attack]
+	35
+
+[physical defense]
+	35
+
+[magical defense]
+	35
+
+[cast speed]
+	50
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[icon]
+	`Item/new_equipment/10_support/support.img`	156
+
+[field image]
+	`Item/field_equip.img`	22
+
+[equipment type]
+	`[support]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	700
+
+[item group name]
+	`support`
+
+[cool time]
+	10000
+
+[if]
+	[stat change]
+		`hp`
+		`<`
+		`%`	30
+	[hit]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[consume item]
+		3037	3
+	[equipment duration]
+		10000
+	[appendage]
+		3591
+	[restore]
+		`hp`
+		`%`	50	0
+	[stat]
+		`attack speed`
+		`+`	30
+	[stat]
+		`move speed`
+		`+`	30
+	[stat]
+		`cast speed`
+		`+`	30
+	[stat]
+		`physical critical hit`
+		`+`	5
+	[stat]
+		`magical critical hit`
+		`+`	5
+[/then]
+
+[if]
+	[my appendage]
+		3591
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	10
+[/then]
+
+[possible kiri protect]

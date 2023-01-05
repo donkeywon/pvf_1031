@@ -3,9 +3,6 @@
 [name]
 	`黄龙战魂手镯`
 
-[name2]
-	``
-
 [basic explain]
 	`攻击人型怪敌人时， 附加7%%的伤害。`
 
@@ -72,14 +69,17 @@
 		`human`
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	7
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		907
 [/then]
 
 [possible kiri protect]

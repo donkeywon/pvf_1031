@@ -1,0 +1,80 @@
+#PVF_File
+
+[set name]
+	`锦绣丹华  套装`
+
+[piece set ability]
+	5
+	[if]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			20
+		[add absolute damage]
+			`all`
+			`+`	100000
+	[/then]
+	[if]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			30
+		[add absolute damage]
+			`all`
+			`%`	50
+	[/then]
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			10000
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			3
+		[duration]
+			10000
+		[stat]
+			`equipment physical defense rate`
+			`%`	-20
+		[stat]
+			`equipment magical defense rate`
+			`%`	-20
+	[/then]
+	[if]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat change by stat]
+			`myself`	-1
+			`equipment magical defense`	3000
+			`equipment magical attack`
+			`%`	2	20
+		[stat change by stat]
+			`myself`	-1
+			`equipment magical defense`	3000
+			`separate attack`
+			`%`	2	20
+	[/then]
+	[parameter basic explain]
+		`    攻击时， 有20%%的几率附加10000点伤害。
+    攻击时， 有30%%的几率附加50%%的伤害。
+    攻击时， 有3%%的几率使敌人的防御力减少20%%， 效果持续10秒。(冷却时间10秒)
+    每3000点魔法防御力增加2%%的魔法攻击力和独立攻击力。 (最多增加20%%)`
+[/piece set ability]

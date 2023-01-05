@@ -1,0 +1,267 @@
+#PVF_File
+
+[name]
+	`江山略 - 战弩`
+
+[basic explain]
+	`    装备时， 每20秒可以随机发动一种特殊效果， 效果持续20秒。 (消耗2个无色小晶块； 冷却时间20秒)
+    -被攻击时进入无敌状态； 攻击时， 附加35%%的伤害。
+    - 使自身进入霸体状态； 破招攻击时， 附加35%%的伤害。
+    - 使自身进入伪装状态， 同时所有队员增加40点的所有属性强化值。`
+
+[detail explain]
+	`    装备时， 每20秒可以随机发动一种特殊效果， 效果持续20秒。 (消耗2个无色小晶块； 冷却时间20秒)
+    - 武器发蓝光且被击时免疫所受伤害； 同时攻击时附加35%%的伤害。
+    - 使自身进入霸体状态； 破招攻击时， 附加35%%的伤害。
+    - 使自身进入伪装状态， 同时所有队员增加40点的所有属性强化值。`
+
+[flavor text]
+	`    贝利特 : 其实最适合去卡勒特当卧底的应该是凯丽。
+    泽丁 : 为什么？
+    贝利特 : 敌人的武器都碎了， 自然没有战斗力。
+    泽丁 : ……`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	58
+
+[magical attack]
+	29
+
+[attack speed]
+	20
+
+[stuck]
+	-1
+
+[repair price]
+	116640
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	710	557
+
+[equipment magical attack]
+	789	619
+
+[separate attack]
+	520	336
+
+[physical critical hit]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/bowgun/bowgun.img`	97
+
+[field image]
+	`Item/field_weapon.img`	5
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	32	0
+
+[layer variation]
+	2790
+	`bowgunc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`bowgunb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	30	0
+
+[layer variation]
+	2790
+	`at_bowgunc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_bowgunb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BOWGUN_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`bowgun`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		20000	1	500
+	[cooltime]
+		20000
+[/if]
+
+[multiple then]
+	[then]
+		[consume item]
+			3037	2
+		[target]
+			`myself`	-1
+		[equipment duration]
+			20000
+		[appendage]
+			352
+		[then probability]
+			33.3
+	[/then]
+	[then]
+		[consume item]
+			3037	2
+		[target]
+			`myself`	-1
+		[equipment duration]
+			20000
+		[appendage]
+			353
+		[then probability]
+			33.3
+	[/then]
+	[then]
+		[consume item]
+			3037	2
+		[target]
+			`myself`	-1
+		[equipment duration]
+			20000
+		[appendage]
+			354
+		[then probability]
+			33.3
+	[/then]
+[/multiple then]
+
+[if]
+	[attack success]
+		1
+	[my appendage]
+		352
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	35
+[/then]
+
+[if]
+	[hit]
+		1
+	[my appendage]
+		352
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	100
+[/then]
+
+[if]
+	[attack condition]
+		`counter`
+	[attack success]
+		1
+	[my appendage]
+		353
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	35
+[/then]
+
+[if]
+	[my appendage]
+		354
+	[time]
+		500	1	0
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[equipment duration]
+		20000
+	[stat]
+		`fire attack`
+		`+`	40
+	[stat]
+		`water attack`
+		`+`	40
+	[stat]
+		`light attack`
+		`+`	40
+	[stat]
+		`dark attack`
+		`+`	40
+[/then]
+
+[possible kiri protect]

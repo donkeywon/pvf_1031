@@ -1,0 +1,108 @@
+#PVF_File
+
+[set name]
+	`逝魔之力  套装`
+
+[piece set ability]
+	5
+	[MP MAX]
+		1100
+	[equipment magical attack]
+		550	550
+	[separate attack]
+		550	550
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[hit]
+			1
+		[cooltime]
+			1000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[restore]
+			`mp`
+			`%`	-2	0
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[add absolute defense percent]
+			`all`	10
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[time]
+			30000	1	500
+		[cooltime]
+			30000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			30000
+		[restore]
+			`mp`
+			`%`	-3	0
+		[stat]
+			`magical attack`
+			`%`	18
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[target death]
+			1
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[restore]
+			`mp`
+			`%`	1	0
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`mp max`
+			`%`	-10
+	[/then]
+	[parameter basic explain]
+		`MP消耗量 +10%%
+    被攻击时， 消耗2%%的MP。 (冷却时间1秒)
+    被攻击时， 减少10%%的伤害。
+    击杀敌人时， 恢复1%%的MP。
+    装备时， 每30秒以消耗3%%的MP为代价， 增加18%%的智力， 效果持续30秒。 (装备后立即生效)`
+[/piece set ability]

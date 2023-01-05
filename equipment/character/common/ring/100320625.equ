@@ -1,0 +1,144 @@
+#PVF_File
+
+[name]
+	`王权之卫 - 风`
+
+[basic explain]
+	`    每10秒使自身增加10%%的攻击速度或移动速度， 效果持续10秒。
+    被攻击时， 使自身增加5%%的攻击速度、 5%%的移动速度和7%%的施放速度， 并使自身进入伪装状态， 效果持续10秒。`
+
+[detail explain]
+	`    每10秒使自身增加10%%的攻击速度或移动速度， 效果持续10秒。 (装备后立即生效)
+    被攻击时， 使自身增加5%%的攻击速度、 5%%的移动速度和7%%的施放速度， 并使自身进入伪装状态， 效果持续10秒。 (冷却时间10秒)`
+
+[flavor text]
+	`    我的风只为守护吾王。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	54
+
+[magical attack]
+	54
+
+[attack speed]
+	30
+
+[cast speed]
+	45
+
+[move speed]
+	30
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	3168	2944
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	167
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		10000	1	500
+	[cooltime]
+		10000
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			10000
+		[stat]
+			`attack speed`
+			`+`	100
+		[then probability]
+			50.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			10000
+		[stat]
+			`move speed`
+			`+`	100
+		[then probability]
+			50.0
+	[/then]
+[/multiple then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+	[stat]
+		`cast speed`
+		`+`	70
+	[buff]
+		`camoflage`
+[/then]
+
+[possible kiri protect]

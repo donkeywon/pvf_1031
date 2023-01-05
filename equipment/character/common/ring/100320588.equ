@@ -1,0 +1,120 @@
+#PVF_File
+
+[name]
+	`圣光之灵`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入感电状态， 效果持续7秒。
+被攻击时， 有20%%的几率通过消耗1个白色小晶块召唤出1只Lv81的中级精灵艾丽西娅， 效果持续60秒。 (冷却时间60秒)`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入感电状态7秒； 若攻击感电状态的敌人， 则每次攻击都会附加1000点伤害。
+被攻击时， 有20%%的几率召唤1只Lv81的艾丽西娅协助召唤者攻击敌人。 (消耗1个白色小晶块； 召唤的怪物只能同时存在1只， 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失； 冷却时间60秒)`
+
+[flavor text]
+	`能感受到光的存在也是一种幸福。  --某位圣职者`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	70
+
+[magical attack]
+	70
+
+[price]
+	75000000
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment magical defense]
+	2944	2656
+
+[light attack]
+	30
+
+[light resistance]
+	18
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	141
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	21
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[duration]
+		7000
+	[active status]
+		`lightning`	81	1000
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		20
+	[equipment duration]
+		60000
+	[consume item]
+		3034	1
+	[summon monster]
+		60046	81	1
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,195 @@
+#PVF_File
+
+[name]
+	`别云剑 - 无用`
+
+[basic explain]
+	`攻击速度 +12%%
+对敌人的伤害 +50%%
+    攻击敌人出现Miss时， 会有50%%的几率减少20%%的力量和智力， 效果持续15秒。 (冷却时间15秒)`
+
+[detail explain]
+	`攻击速度 +12%%
+对敌人的伤害 +50%% (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)
+    攻击敌人出现Miss时， 会有50%%的几率减少20%%的力量和智力， 效果持续15秒。 (冷却时间15秒)`
+
+[flavor text]
+	`    带着这样一把武器， 绝对很有挑战性！  --西岚`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	65
+
+[attack speed]
+	30
+
+[cast speed]
+	-20
+
+[stuck]
+	5
+
+[price]
+	85000000
+
+[repair price]
+	145600
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	1177	1014
+
+[equipment magical attack]
+	864	742
+
+[separate attack]
+	589	382
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/lswd/lswd.img`	119
+
+[field image]
+	`Item/FieldImage.img`	13
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	35	0
+
+[layer variation]
+	2790
+	`lswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`lswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	35	0
+
+[layer variation]
+	2790
+	`lswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`lswdb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SQUARESWD_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	4000
+
+[item group name]
+	`lswd`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[increase damage]
+		`%`	50
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack condition]
+		`stuck`
+	[cooltime]
+		15000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[duration]
+		15000
+	[stat]
+		`physical attack`
+		`%`	-20
+	[stat]
+		`magical attack`
+		`%`	-20
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		589	507
+	[equipment magical attack]
+		432	371
+[/pvp]
+
+[possible kiri protect]

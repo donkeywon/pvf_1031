@@ -1,0 +1,127 @@
+#PVF_File
+
+[name]
+	`冰封雪殒手镯`
+
+[basic explain]
+	`    装备时， 可以使300px范围内的所有敌人生成冰冻光环。
+    装备时， 可以使300px范围内的所有敌人减少20点的冰属性抗性。`
+
+[detail explain]
+	`    装备时， 可以使300px范围内的所有敌人生成冰冻光环； 冰冻光环持续5秒时， 有100%%的几率使敌人进入冰冻状态3秒。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+        装备时， 可以使300px范围内的所有敌人减少20点的冰属性抗性。`
+
+[flavor text]
+	`    我会一直在这里， 等妳转身的那一刻……`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	36
+
+[physical defense]
+	90
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	4752	4416
+
+[water resistance]
+	15
+
+[freeze resistance]
+	20
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	102
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	20
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[ice appendage]
+	55000	300	5000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[start cooltime]
+		5000
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	300
+	[duration]
+		3000
+	[active status]
+		`freeze`	90
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	300
+	[duration]
+		1000
+	[appendage]
+		3421
+[/then]
+
+[possible kiri protect]

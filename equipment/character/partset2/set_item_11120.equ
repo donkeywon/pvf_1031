@@ -1,0 +1,218 @@
+#PVF_File
+
+[set name]
+	`巨龙之魂  套装`
+
+[piece set ability]
+	3
+	[all elemental attack]
+		24
+	[if]
+		[module]
+			`[dead tower]`
+			`[dungeon]`
+			`[tournament dungeon]`
+			`[war room]`
+			`[blood system]`
+		[/module]
+		[attack success]
+			1
+		[cooltime]
+			500
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			10000
+		[appendage]
+			913
+	[/then]
+	[parameter basic explain]
+		`    攻击时， 可以减少敌人6%%的防御力。`
+[/piece set ability]
+
+[piece set ability]
+	5
+	[if]
+		[module]
+			`[dead tower]`
+			`[dungeon]`
+			`[tournament dungeon]`
+			`[war room]`
+			`[blood system]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+		[cooltime]
+			30000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[equipment duration]
+				30000
+			[appendage]
+				648
+			[stat]
+				`attack speed`
+				`+`	200
+			[stat]
+				`move speed`
+				`+`	200
+			[stat]
+				`cast speed`
+				`+`	200
+			[target]
+				`myself`	-1
+			[passive object]
+				2017123	0	0	0	0	-1	`黑暗光照`
+			[/passive object]
+			[then probability]
+				50.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[equipment duration]
+				30000
+			[appendage]
+				649
+			[stat]
+				`magical attack`
+				`%`	10
+			[stat]
+				`physical attack`
+				`%`	10
+			[stat]
+				`magical defense`
+				`%`	10
+			[stat]
+				`physical defense`
+				`%`	10
+			[stat]
+				`physical critical hit rate`
+				`+`	10
+			[stat]
+				`magical critical hit rate`
+				`+`	10
+			[target]
+				`myself`	-1
+			[passive object]
+				2017122	0	0	0	0	-1	`光明光照`
+			[/passive object]
+			[then probability]
+				50.0
+		[/then]
+	[/multiple then]
+	[if]
+		[module]
+			`[dead tower]`
+			`[dungeon]`
+			`[tournament dungeon]`
+			`[war room]`
+			`[blood system]`
+		[/module]
+		[my appendage]
+			648
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[appendage]
+			930
+	[/then]
+	[if]
+		[module]
+			`[dead tower]`
+			`[dungeon]`
+			`[tournament dungeon]`
+			`[war room]`
+			`[blood system]`
+		[/module]
+		[my appendage]
+			649
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[appendage]
+			905
+	[/then]
+	[if]
+		[module]
+			`[dead tower]`
+			`[dungeon]`
+			`[tournament dungeon]`
+			`[war room]`
+			`[blood system]`
+		[/module]
+		[my appendage]
+			649
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[appendage]
+			905
+	[/then]
+	[if]
+		[module]
+			`[dead tower]`
+			`[dungeon]`
+			`[tournament dungeon]`
+			`[war room]`
+			`[blood system]`
+		[/module]
+		[my appendage]
+			649
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[appendage]
+			905
+	[/then]
+	[if]
+		[module]
+			`[dead tower]`
+			`[dungeon]`
+			`[tournament dungeon]`
+			`[war room]`
+			`[blood system]`
+		[/module]
+		[my appendage]
+			649
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[appendage]
+			905
+	[/then]
+	[parameter basic explain]
+		`    攻击时， 附加5%%的光属性伤害
+    攻击时， 附加5%%的火属性伤害
+    攻击时， 附加5%%的冰属性伤害
+    攻击时， 附加5%%的暗属性伤害
+    每30秒随机赋予角色壹种气息特效
+    - 黑暗气息效果 : 
+    武器发出紫色光芒， 攻击速度、移动速度、施放速度各增加20%%
+    攻击时，附加20%%伤害
+    - 光明气息效果 : 
+    武器发出金色光芒， 力量、精神、体力、智力、魔法暴击率、物理暴击率各增加10%%`
+[/piece set ability]

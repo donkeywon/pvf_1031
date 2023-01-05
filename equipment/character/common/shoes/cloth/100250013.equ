@@ -3,17 +3,18 @@
 [name]
 	`幽魂魅影短靴`
 
-[name2]
-	``
-
 [basic explain]
-	`每15点暗属性抗性增加1点暗属性强化值。`
+	`    每6点暗属性抗性增加2点暗属性强化。 (最多增加30点)
+    每7点暗属性抗性增加1%%的移动速度。 (最多增加20%%)`
 
 [grade]
 	85
 
 [rarity]
 	4
+
+[part set index]
+	11187
 
 [usable job]
 	`[all]`
@@ -25,35 +26,38 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [magical attack]
-	25
+	26
 
 [magical defense]
-	25
+	26
 
 [move speed]
-	60
+	70
 
 [price]
-	51000
+	80000000
 
 [repair price]
-	42840
+	48160
 
 [value]
-	40800
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical defense]
-	558	522
+	582	528
 
 [dark resistance]
 	10
 
-[light resistance]
-	-5
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`Item/new_equipment/02_cloth/shoes/cloth_shoes.img`	10
@@ -82,12 +86,6 @@
 [cool time]
 	10000
 
-[set item master]
-	100050050
-
-[routing priority]
-[/routing priority]
-
 [if]
 	[change status]
 		`hp`
@@ -101,10 +99,14 @@
 		`myself`	-1
 	[stat change by stat]
 		`myself`	-1
-		`dark resistance`	15
+		`dark resistance`	6
 		`dark attack`
-		`+`	1	0
+		`+`	2	30
+	[stat change by stat]
+		`myself`	-1
+		`dark resistance`	7
+		`move speed`
+		`+`	10	200
 [/then]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

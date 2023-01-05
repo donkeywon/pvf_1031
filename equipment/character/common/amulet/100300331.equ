@@ -1,0 +1,283 @@
+#PVF_File
+
+[name]
+	`哈尼克的骨甲链`
+
+[basic explain]
+	`    施放[受身蹲伏]时， 出现狂龙之吼。
+    HP为40%%以下时， 使自身进入霸体状态， 并增加5%%的攻击速度和移动速度。 
+    该装备的霸体状态下， 被攻击时增加10%%的伤害。`
+
+[detail explain]
+	`    施放[受身蹲伏]时， 出现狂龙之吼。
+    HP为40%%以下时， 使自身进入霸体状态， 并增加5%%的攻击速度和移动速度。 (解除装备后效果消失) 
+    该装备的霸体状态下， 被攻击时增加10%%的伤害。`
+
+[flavor text]
+	`    这指甲多久没剪了， 一股怪味……`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	36
+
+[magical defense]
+	90
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	7920	7360
+
+[icon]
+	`Item/new_equipment/08_necklace/necklace.img`	112
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[stat change]
+		`hp`
+		`<`
+		`%`	40
+	[time]
+		500	1	500
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		99999999
+	[appendage]
+		3461
+[/then]
+
+[if]
+	[my appendage]
+		3461
+	[stat change]
+		`hp`
+		`>=`
+		`%`	40
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		500
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		-99999999
+	[appendage]
+		3461
+[/then]
+
+[if]
+	[my appendage]
+		3461
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[appendage]
+		3451
+[/then]
+
+[if]
+	[my appendage]
+		3461
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	10
+[/then]
+
+[if]
+	[use skill]
+		`priest`	190
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		48001	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	190
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		48001	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`fighter`	190
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		48001	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`swordman`	190
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		48001	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`gunner`	190
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		48001	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`mage`	190
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		48001	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`at mage`	190
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		48001	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`thief`	190
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		48001	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`<`
+		`%`	40
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`attack speed`
+		`+`	50
+	[stat by condition]
+		`move speed`
+		`+`	50
+[/then]
+
+[possible kiri protect]

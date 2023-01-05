@@ -1,0 +1,111 @@
+#PVF_File
+
+[name]
+	`魔龙之核`
+
+[basic explain]
+	`所有攻击力 +18%%
+攻击特定状态的敌人时， 额外附加10%%的伤害。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[price]
+	85000000
+
+[physical attack]
+	72
+
+[physical defense]
+	72
+
+[magical attack]
+	72
+
+[magical defense]
+	72
+
+[need material]
+	9999	150
+
+[value]
+	8500000
+
+[icon]
+	`Item/new_equipment/11_magicstone/magicstone.img`	142
+
+[field image]
+	`Item/field_equip1.img`	23
+
+[icon mark]
+	`Item/IconMark.img`	352
+
+[equipment type]
+	`[magic stone]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`magic stone`
+
+[cool time]
+	10000
+
+[if]
+	[target state]
+		`any`
+	[attack success]
+		1
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		910
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack bonus`
+		`%`	18
+	[stat by condition]
+		`physical attack bonus`
+		`%`	18
+	[stat by condition]
+		`separate attack`
+		`%`	18
+[/then]
+
+[possible kiri protect]

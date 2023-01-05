@@ -1,0 +1,170 @@
+#PVF_File
+
+[name]
+	`霸域英豪腰带`
+
+[basic explain]
+	`    霸体状态下受到的伤害 -30%%
+    被攻击时， 使自身进入霸体状态5秒。 (冷却时间5秒； 解除装备后效果消失)`
+
+[flavor text]
+	`不要因为只看重效果， 而选择一些和自身不符的装备。  --诺羽`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11732
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	173
+
+[magical attack]
+	173
+
+[physical defense]
+	175
+
+[magical defense]
+	150
+
+[inventory limit]
+	3000
+
+[price]
+	85000000
+
+[repair price]
+	87360
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	2040	1860
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/06_plate/belt/plate_belt.img`	18
+
+[field image]
+	`Item/field_equip.img`	18
+
+[equipment type]
+	`[waist]`	20
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	2000
+
+[item group name]
+	`mt waist`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[hit]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[appendage]
+		251
+	[appendage]
+		1151
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[my appendage]
+		251
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	30
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[my appendage]
+		251
+	[time]
+		500	1	0
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[appendage]
+		1151
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

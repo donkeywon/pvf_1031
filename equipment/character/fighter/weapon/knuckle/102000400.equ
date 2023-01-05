@@ -1,0 +1,183 @@
+#PVF_File
+
+[name]
+	`寂灭之乱 - 雷霆`
+
+[basic explain]
+	`    攻击时， 有10%%的几率施放忏悔之雷， 效果持续10秒。
+    攻击感电状态的敌人时， 附加10%%的伤害。`
+
+[detail explain]
+	`    攻击时， 有10%%的几率施放忏悔之雷， 效果持续10秒。 (冷却时间10秒)
+    被忏悔之雷击中的敌人， 有50%%的几率进入感电状态4秒； 若攻击感电状态的敌人， 则每次攻击都会附加15000点伤害。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+    攻击感电状态下的敌人时， 附加10%%的伤害。`
+
+[flavor text]
+	`    有时候无声无息的攻击更加能够出其不意。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	62
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	952	752
+
+[equipment magical attack]
+	1152	952
+
+[separate attack]
+	607	507
+
+[light attack]
+	22
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/knuckle/knuckle.img`	122
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	35	0
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	35	0
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[passive object]
+		485151	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[target active status]
+		`lightning`
+	[attack success]
+		1
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		910
+[/then]
+
+[possible kiri protect]

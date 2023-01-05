@@ -1,0 +1,60 @@
+#PVF_File
+
+[set name]
+	`逆龙之战  套装`
+
+[piece set ability]
+	5
+	[if]
+		[attack condition]
+			`counter`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase damage]
+			`%`	70
+	[/then]
+	[if]
+		[attack condition]
+			`back attack`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase damage]
+			`%`	70
+	[/then]
+	[if]
+		[target state]
+			`jump attack`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase damage]
+			`%`	105
+	[/then]
+	[if]
+		[target state]
+			`down`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase damage]
+			`%`	105
+	[/then]
+	[parameter basic explain]
+		`破招攻击力 +70%%
+背击伤害 +70%%
+对空中或倒地敌人的伤害 +105%% (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)`
+[/piece set ability]

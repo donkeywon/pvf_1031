@@ -1,0 +1,114 @@
+#PVF_File
+
+[name]
+	`魔眼之异能腰带`
+
+[basic explain]
+	`    进入地下城后， 若受到1次伤害， 则进入霸体状态， 效果持续15秒。
+    当触发该装备的霸体效果时， 可以增加100点的力量、 智力、 体力和精神， 以及10%%的移动速度、 攻击速度和施放速度。`
+
+[detail explain]
+	`    进入地下城后， 若受到1次伤害， 则进入霸体状态， 效果持续15秒。 (解除装备后效果消失； 冷却时间30秒)
+    当触发该装备的霸体效果时， 可以恢复10%%的HP， 并增加100点力量、 智力、 体力和精神， 以及10%%的攻击速度、 移动速度和15%%的施放速度。`
+
+[flavor text]
+	`    鹰眼杰克好像是电影里的吧？`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	22
+
+[magical attack]
+	22
+
+[magical defense]
+	25
+
+[inventory limit]
+	3000
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[repair price]
+	50400
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment physical defense]
+	784	728
+
+[icon]
+	`item/new_equipment/03_leather/belt/leather_belt.img`	41
+
+[field image]
+	`Item/FieldImage.img`	3
+
+[equipment type]
+	`[waist]`	17
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	20
+
+[weight]
+	800
+
+[item group name]
+	`lt waist`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		30000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		15000
+	[buff]
+		`superarmor`
+	[appendage]
+		649
+	[restore]
+		`hp`
+		`%`	10	0
+[/then]
+
+[possible kiri protect]

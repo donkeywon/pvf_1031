@@ -1,0 +1,243 @@
+#PVF_File
+
+[name]
+	`纳扎罗的邪术法杖`
+
+[basic explain]
+	`    施放技能时， 有15%%的几率使自身进入霸体状态1秒。
+    施放技能时， 有5%%的几率使包括自身在内的所有队员增加10%%的魔法暴击率， 效果持续30秒。
+    施放技能时， 有5%%的几率使包括自身在内的所有队员增加150点力量和智力， 效果持续30秒。
+    施放技能时， 有5%%的几率使包括自身在内的所有队员增加5%%的移动速度， 效果持续30秒。 `
+
+[detail explain]
+	`    施放技能时， 有15%%的几率使自身进入霸体状态1秒。 (冷却时间10秒)
+    施放技能时， 有5%%的几率使包括自身在内的所有队员增加10%%的魔法暴击率， 效果持续30秒。 (冷却时间30秒)
+    施放技能时， 有5%%的几率使包括自身在内的所有队员增加150点力量和智力， 效果持续30秒。 (冷却时间30秒)
+    施放技能时， 有5%%的几率使包括自身在内的所有队员增加5%%的移动速度， 效果持续30秒。 (冷却时间30秒)`
+
+[flavor text]
+	`    有没有能复活的咒语？  --纳扎罗`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	62
+
+[attack speed]
+	-100
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	952	752
+
+[equipment magical attack]
+	1202	1002
+
+[separate attack]
+	607	507
+
+[dark attack]
+	18
+
+[fire attack]
+	15
+
+[icon]
+	`item/new_equipment/01_weapon/mage/staff/staff.img`	121
+
+[field image]
+	`Item/field_weapon.img`	9
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	43	0
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	44	0
+
+[layer variation]
+	2150
+	`at_staffa`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_staffd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	43	0
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`STAFF_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	2400
+
+[item group name]
+	`staff`
+
+[cool time]
+	10000
+
+[if]
+	[casting]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		15
+	[duration]
+		1000
+	[buff]
+		`superarmor`
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[probability]
+		5
+	[duration]
+		30000
+	[stat]
+		`magical critical hit`
+		`+`	10
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[probability]
+		5
+	[duration]
+		30000
+	[stat]
+		`physical attack`
+		`+`	150
+	[stat]
+		`magical attack`
+		`+`	150
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[probability]
+		5
+	[duration]
+		30000
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[possible kiri protect]

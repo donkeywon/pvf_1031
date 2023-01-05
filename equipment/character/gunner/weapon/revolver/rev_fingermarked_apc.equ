@@ -3,14 +3,12 @@
 [name]
 	`终极之贝利特印痕左轮枪`
 
-[name2]
-	`Finger-marked Revolver of Verrickt - R`
-
 [basic explain]
-	`物理暴击几率 +100%%`
+	`[爆头一击]冷却时间 -5秒
+[回头一击]冷却时间 -8秒`
 
 [flavor text]
-	`这左轮枪虽然看着不起眼， 但是仔细看， 会发现保养得非常好， 只是枪柄磨的很厉害。`
+	`    这左轮枪虽然看着不起眼， 但是仔细看， 会发现保养得非常好， 只是枪柄磨的很厉害。`
 
 [grade]
 	65
@@ -29,17 +27,23 @@
 [minimum level]
 	60
 
+[need material]
+	3260	8000
+
 [physical attack]
 	44
 
 [price]
-	104000
+	60000000
 
 [repair price]
 	87360
 
 [value]
-	83200
+	6000000
+
+[creation rate]
+	250
 
 [equipment physical attack]
 	584	523
@@ -120,7 +124,16 @@
 [cool time]
 	10000
 
-[possible kiri protect]
+[skill data up]
+	`[gunner]`	5	`[all]`	`[cooltime]`	0	`+`	-5000
+	`[gunner]`	20	`[all]`	`[cooltime]`	0	`+`	-8000
+	`[at gunner]`	5	`[all]`	`[cooltime]`	0	`+`	-5000
+	`[at gunner]`	20	`[all]`	`[cooltime]`	0	`+`	-8000
+[/skill data up]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[routing priority]
+	`gunner`	1
+	`at gunner`	1
+[/routing priority]
+
+[possible kiri protect]

@@ -1,0 +1,118 @@
+#PVF_File
+
+[name]
+	`巨灵布鲁的咒蕴手镯`
+
+[basic explain]
+	`    攻击时， 有2%%的几率使敌人进入诅咒状态6秒； 攻击诅咒状态的敌人时， 有5%%的几率使其减少5%%的物理和魔法防御力。`
+
+[detail explain]
+	`    攻击时， 有2%%的几率使敌人进入诅咒状态； 诅咒状态下的敌人， 会减少20点的力量、 体力和精神， 效果持续6秒。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+    攻击诅咒状态的敌人时， 有5%%的几率使其减少5%%的物理防御力和魔法防御力， 效果持续5秒。`
+
+[flavor text]
+	`    诅咒他人者， 他的人生也必定充满阴霾。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	36
+
+[physical defense]
+	90
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	4752	4416
+
+[dark attack]
+	8
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	114
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	20
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[duration]
+		6000
+	[active status]
+		`curse`	90	20	20	20	20
+[/then]
+
+[if]
+	[target active status]
+		`curse`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[duration]
+		5000
+	[stat]
+		`equipment physical defense`
+		`%`	-5
+	[stat]
+		`equipment magical defense`
+		`%`	-5
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,250 @@
+#PVF_File
+
+[set name]
+	`天御之灾  套装`
+
+[piece set ability]
+	5
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+		[cooltime]
+			10000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			335
+		[elemental weapon]
+			`dark`
+		[stat]
+			`dark attack`
+			`+`	50
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+		[cooltime]
+			10000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			339
+		[elemental weapon]
+			`light`
+		[stat]
+			`light attack`
+			`+`	50
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+		[cooltime]
+			10000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			336
+		[elemental weapon]
+			`water`
+		[stat]
+			`water attack`
+			`+`	50
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+		[cooltime]
+			10000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			338
+		[elemental weapon]
+			`fire`
+		[stat]
+			`fire attack`
+			`+`	50
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+		[cooltime]
+			10000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			337
+		[stat]
+			`attack speed`
+			`+`	200
+		[stat]
+			`move speed`
+			`+`	200
+		[stat]
+			`cast speed`
+			`+`	250
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[my appendage]
+			337
+		[time]
+			500	1	500
+		[cooltime]
+			1000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			1000
+		[appendage]
+			945
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[my appendage]
+			338
+		[time]
+			500	1	500
+		[cooltime]
+			1000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			1000
+		[appendage]
+			925
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[my appendage]
+			336
+		[time]
+			500	1	500
+		[cooltime]
+			1000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			1000
+		[appendage]
+			925
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[my appendage]
+			339
+		[time]
+			500	1	500
+		[cooltime]
+			1000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			1000
+		[appendage]
+			925
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[my appendage]
+			335
+		[time]
+			500	1	500
+		[cooltime]
+			1000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			1000
+		[appendage]
+			925
+	[/then]
+	[parameter basic explain]
+		` 攻击中， 对单一目标触发装备对应效果 (雷电之怒、 冰霜爆炸、 飓风、 黑色蜂群和烈焰) 时， 可以获得附加效果， 持续10秒。
+ - 出现雷电之怒时， 赋予武器光属性， 并增加50点光属性强化； 攻击时， 附加25%%的光属性伤害。
+ - 出现烈焰时， 赋予武器火属性， 并增加50点火属性强化； 攻击时， 附加25%%的火属性伤害。
+ - 出现黑色蜂群时， 赋予武器暗属性， 并增加50点暗属性强化； 攻击时， 附加25%%的暗属性伤害。
+ - 出现冰霜爆炸时， 赋予武器冰属性， 并增加50点冰属性强化； 攻击时， 附加25%%的冰属性伤害。
+ - 出现飓风时， 增加自身20%%的移动速度、 20%%的攻击速度和25%%的施放速度， 并附加45%%的伤害。
+(附加伤害无法叠加)`
+[/piece set ability]

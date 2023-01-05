@@ -1,0 +1,245 @@
+#PVF_File
+
+[name]
+	`黑鸟之翼`
+
+[basic explain]
+	`    每20秒召唤3个死亡之鸟。
+    若800px范围内有死亡之鸟， 则攻击时附加10%%的暗属性伤害。
+    
+    攻击时， 有2%%的几率使敌人进入诅咒状态。`
+
+[detail explain]
+	`    每20秒召唤3个死亡之鸟。 (装备10秒后生效)
+    若800px范围内存在死亡之鸟， 则攻击时附加10%%的暗属性伤害。
+    
+    攻击时， 有2%%的几率使敌人进入诅咒状态7秒； 诅咒状态下的敌人， 会减少166点力量、 体力、 智力和精神。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`    黑色的鸟通常被称为死亡的使者。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	62
+
+[attack speed]
+	60
+
+[move speed]
+	30
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	129600
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	1002	802
+
+[equipment magical attack]
+	1102	902
+
+[separate attack]
+	607	507
+
+[skill levelup]
+	`[mage]`	85	2
+	`[creator mage]`	254	2
+[/skill levelup]
+
+[dark attack]
+	15
+
+[icon]
+	`item/new_equipment/01_weapon/mage/broom/broom.img`	98
+
+[field image]
+	`Item/field_weapon.img`	10
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[mage]`
+
+[variation]
+	42	0
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	42	0
+
+[layer variation]
+	2150
+	`at_brooma`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_broomd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	42	0
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BROOM_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2500
+
+[item group name]
+	`broom`
+
+[cool time]
+	10000
+
+[required skill]
+	91
+
+[skill data up]
+	`[mage]`	100	`[all]`	`[static]`	0	`+`	-25
+	`[mage]`	100	`[all]`	`[static]`	1	`+`	10
+	`[mage]`	100	`[all]`	`[static]`	2	`+`	15
+[/skill data up]
+
+[if]
+	[time]
+		20000	1	10000
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		20000
+	[appendage]
+		699
+	[passive object]
+		11176	0	0	0	90	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[my appendage]
+		699
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`dark`
+		`%`	10
+[/then]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[duration]
+		7000
+	[active status]
+		`curse`	90	166	166	166	166
+[/then]
+
+[possible kiri protect]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`cast speed`
+		`+`	250
+[/then]

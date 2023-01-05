@@ -1,0 +1,143 @@
+#PVF_File
+
+[name]
+	`天御风行战靴`
+
+[basic explain]
+	`    攻击时， 有5%%的几率生成飓风攻击400px范围内的所有敌人。 (冷却时间15秒)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11469
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	28
+
+[magical attack]
+	18
+
+[attack speed]
+	80
+
+[cast speed]
+	120
+
+[move speed]
+	120
+
+[price]
+	85000000
+
+[repair price]
+	65520
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	67	67
+
+[equipment magical attack]
+	67	67
+
+[equipment physical defense]
+	1836	1674
+
+[separate attack]
+	67	67
+
+[physical critical hit]
+	3
+
+[magical critical hit]
+	3
+
+[all elemental attack]
+	12
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/04_larmor/shoes/larmor_shoes.img`	17
+
+[field image]
+	`Item/field_equip.img`	9
+
+[equipment type]
+	`[shoes]`	18
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	25
+
+[weight]
+	1400
+
+[item group name]
+	`la shoes`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		15000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	400
+	[probability]
+		5
+	[passive object]
+		48612	0	0	0	99	0	` `
+	[/passive object]
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

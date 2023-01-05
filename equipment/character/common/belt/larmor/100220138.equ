@@ -1,0 +1,147 @@
+#PVF_File
+
+[name]
+	`最佳球手的冲锋腰带`
+
+[basic explain]
+	`    破招攻击时， 有10%%的几率使自身进入霸体状态， 效果持续20秒。`
+
+[detail explain]
+	`    破招攻击时， 有10%%的几率使自身进入霸体状态， 效果持续20秒。 (冷却时间20秒； 解除装备后效果消失)`
+
+[flavor text]
+	`    压力是驱使我向前的动力！ 再输我就……就回家卖肉松饼。  --某球手`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11470
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	28
+
+[magical attack]
+	18
+
+[stuck]
+	-5
+
+[stuck resistance]
+	50
+
+[inventory limit]
+	3000
+
+[price]
+	85000000
+
+[repair price]
+	65520
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	125	125
+
+[equipment magical attack]
+	125	125
+
+[equipment physical defense]
+	1224	1116
+
+[separate attack]
+	125	125
+
+[physical critical hit]
+	15
+
+[magical critical hit]
+	15
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/04_larmor/belt/larmor_belt.img`	18
+
+[field image]
+	`Item/field_equip.img`	8
+
+[equipment type]
+	`[waist]`	18
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	25
+
+[weight]
+	1200
+
+[item group name]
+	`la waist`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack condition]
+		`counter`
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[equipment duration]
+		20000
+	[buff]
+		`superarmor`
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

@@ -1,0 +1,110 @@
+#PVF_File
+
+[name]
+	`瘟疫之源断骨战靴`
+
+[basic explain]
+	`装备时， 使500px范围内的敌人减少10点所有异常状态抗性。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	12550
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	22
+
+[magical attack]
+	22
+
+[physical defense]
+	25
+
+[move speed]
+	40
+
+[need material]
+	10000204	100
+
+[price]
+	85000000
+
+[repair price]
+	72000
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	2940	2730
+
+[icon]
+	`item/new_equipment/06_plate/shoes/plate_shoes.img`	49
+
+[field image]
+	`Item/field_equip.img`	19
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment type]
+	`[shoes]`	20
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	2200
+
+[item group name]
+	`mt shoes`
+
+[cool time]
+	10000
+
+[active status control info]
+	`bleeding`	0	0	0	10
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[duration]
+		1000
+	[appendage]
+		375
+[/then]
+
+[possible kiri protect]

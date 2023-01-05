@@ -1,0 +1,132 @@
+#PVF_File
+
+[name]
+	`闲云碎步短靴`
+
+[basic explain]
+	`    装备时， 可以使300px范围内的所有敌人生成移动速度减少25%%的光环。
+    装备时， 可以使300px范围内的所有敌人生成攻击速度减少25%%的光环`
+
+[flavor text]
+	`    如果对跑赢别人没有信心， 也可以换个角度， 拖住他们的脚步， 不让他们跑不就行了。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11199
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[magical attack]
+	68
+
+[magical defense]
+	28
+
+[move speed]
+	60
+
+[price]
+	85000000
+
+[repair price]
+	50960
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	612	558
+
+[all elemental attack]
+	25
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`Item/new_equipment/02_cloth/shoes/cloth_shoes.img`	18
+
+[field image]
+	`Item/field_equip.img`	4
+
+[equipment type]
+	`[shoes]`	16
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	18
+
+[weight]
+	600
+
+[item group name]
+	`cl shoes`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[cooltime]
+		500
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`all enemy`	300
+	[duration]
+		500
+	[stat]
+		`move speed`
+		`+`	-250
+	[stat]
+		`attack speed`
+		`+`	-250
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

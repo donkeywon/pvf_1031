@@ -1,0 +1,126 @@
+#PVF_File
+
+[name]
+	`血舞之牙护腿`
+
+[basic explain]
+	`    暴击攻击时， 额外增加4%%的伤害。`
+
+[flavor text]
+	`    看不见所谓的獠牙， 因为都被鲜血覆盖住了……`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11598
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	84
+
+[magical attack]
+	84
+
+[magical defense]
+	42
+
+[price]
+	85000000
+
+[repair price]
+	72800
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	110	110
+
+[equipment magical attack]
+	110	110
+
+[equipment physical defense]
+	2040	1860
+
+[separate attack]
+	110	110
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/03_leather/pants/leather_pants.img`	18
+
+[field image]
+	`Item/FieldImage.img`	1
+
+[equipment type]
+	`[pants]`	19
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	27
+
+[weight]
+	1500
+
+[item group name]
+	`lt pants`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	4
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

@@ -1,0 +1,281 @@
+#PVF_File
+
+[name]
+	`电光石火之拳`
+
+[basic explain]
+	`攻击速度 +5%%
+    攻击时， 有2%%的几率使敌人进入眩晕状态。
+    施放[铁山靠]时， 有25%%的几率不受冷却时间影响。 
+    施放[闪电之舞]时， 有25%%的几率不受冷却时间影响。
+    [装备属性指令]输入时， 可以减少[闪电之舞]90%%的冷却时间和50%%的攻击力。 (消耗1个白色小晶块)`
+
+[detail explain]
+	`攻击速度 +5%%
+    攻击时， 有2%%的几率使敌人进入眩晕状态2秒。 (若敌人高于Lv81， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+    施放[铁山靠]时， 有25%%的几率不受冷却时间影响。 
+    施放[闪电之舞]时， 有25%%的几率不受冷却时间影响。
+    [装备属性指令]输入时， 可以减少[闪电之舞]90%%的冷却时间和50%%的攻击力， 效果持续10秒。 (消耗1个白色小晶块； 冷却时间60秒； 发动后立即重置[闪电之舞]的剩余冷却时间)`
+
+[flavor text]
+	`    更高、 更快、 更强！`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	58
+
+[attack speed]
+	150
+
+[move speed]
+	50
+
+[stuck]
+	-2
+
+[repair price]
+	129600
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	897	760
+
+[equipment magical attack]
+	812	688
+
+[separate attack]
+	520	336
+
+[skill levelup]
+	`[fighter]`	91	2
+	`[at fighter]`	91	2
+	`[fighter]`	1	4
+	`[at fighter]`	1	4
+	`[fighter]`	68	4
+	`[at fighter]`	68	4
+	`[fighter]`	37	2
+	`[at fighter]`	37	2
+[/skill levelup]
+
+[light attack]
+	15
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/bglove/bglove.img`	92
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	28	0
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	27	0
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[required skill]
+	34
+
+[command]
+	{6=`(SKILL)`}
+[/command]
+
+[if]
+	[use command]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[consume item]
+		3034	1
+	[duration]
+		10000
+	[appendage]
+		265
+	[skill cooltime reset]
+		68
+		`%`	-100
+[/then]
+
+[if]
+	[event use skill]
+		`fighter`	1
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		20
+	[skill data up]
+		`[fighter]`	1	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`at fighter`	1
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		20
+	[skill data up]
+		`[at fighter]`	1	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`fighter`	68
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		25
+	[skill data up]
+		`[fighter]`	68	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`at fighter`	68
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		25
+	[skill data up]
+		`[at fighter]`	68	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[reduce probability at pvp module]
+		80
+	[active status]
+		`stun`	81
+[/then]
+
+[possible kiri protect]

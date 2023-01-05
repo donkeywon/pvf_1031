@@ -1,0 +1,202 @@
+#PVF_File
+
+[name]
+	`贪婪之欲`
+
+[basic explain]
+	`    地下城内若有敌人死亡时， 可以随机发动以下效果中的任意一种。
+    - 体力 +32、 恢复30%的HP
+    - 智力+32、 释放速度 +2%%、 魔法暴击 +4%%
+    - 精神 +32、 恢复30%%的MP
+    
+    攻击时， 有2%%的几率消耗自身5%%的HP或使敌人减少30%%的HP。 `
+
+[detail explain]
+	`    地下城内若有敌人死亡时， 可以随机发动以下效果中的任意一种。
+    - 体力 +32、 恢复30%的HP（最多重叠5次）
+    - 智力+32、 释放速度 +2%%、 魔法暴击 +4%%（最多重叠5次）
+    - 精神 +32、 恢复30%%的MP（最多重叠5次）
+    
+    攻击时， 有2%%的几率消耗自身5%%的HP或使敌人减少30%%的HP。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 对精英怪物的效果为1/3， 对领主和深渊怪物的效果为1/6)`
+
+[flavor text]
+	`    一入罐门深似海， 从此金币是路人。——运气糟糕的年轻人`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	92
+
+[attack speed]
+	-50
+
+[cast speed]
+	50
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	901	701
+
+[equipment magical attack]
+	1152	952
+
+[separate attack]
+	607	507
+
+[magical critical hit]
+	2
+
+[icon]
+	`item/new_equipment/01_weapon/priest/rosary/rosary.img`	95
+
+[field image]
+	`Item/field_weapon.img`	12
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	35	0
+
+[layer variation]
+	200
+	`rosaryd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`rosaryc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`ROSARY_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2500
+
+[item group name]
+	`rosary`
+
+[cool time]
+	10000
+
+[if]
+	[target death]
+		1
+	[attack success]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[restore]
+			`hp`
+			`%`	30	0
+		[equipment duration]
+			0
+		[appendage]
+			694
+		[then probability]
+			33.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			0
+		[appendage]
+			695
+		[then probability]
+			34.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[restore]
+			`mp`
+			`%`	30	0
+		[equipment duration]
+			0
+		[appendage]
+			696
+		[then probability]
+			33.0
+	[/then]
+[/multiple then]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			2
+		[restore]
+			`hp`
+			`%`	-5	0
+		[then probability]
+			50.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			2
+		[weakness]
+			30
+		[then probability]
+			50.0
+	[/then]
+[/multiple then]
+
+[possible kiri protect]

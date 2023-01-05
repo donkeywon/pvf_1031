@@ -1,0 +1,182 @@
+#PVF_File
+
+[name]
+	`激光狂热者`
+
+[basic explain]
+	`[激光炮]厚度 +30%%
+[激光炮]射程 +22%%
+[蓄电激光炮]攻击力增加率 +30%%
+    攻击时， 附加10%%的光属性伤害。`
+
+[flavor text]
+	`    我的激光可以突破天际！`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	97
+
+[price]
+	85000000
+
+[repair price]
+	145600
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	1118	875
+
+[equipment magical attack]
+	671	525
+
+[separate attack]
+	589	382
+
+[skill levelup]
+	`[gunner]`	39	5
+	`[gunner]`	54	2
+	`[at gunner]`	39	5
+	`[at gunner]`	97	2
+	`[gunner]`	41	2
+	`[at gunner]`	41	2
+[/skill levelup]
+
+[light attack]
+	30
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/hcannon/hcannon.img`	103
+
+[field image]
+	`Item/field_weapon.img`	4
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	34	0
+
+[layer variation]
+	2790
+	`hcanc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`hcanb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	32	0
+
+[layer variation]
+	2790
+	`at_hcanc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_hcanb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	2800
+
+[item group name]
+	`hcannon`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[gunner]`	39	`[dungeon type]`	`[static]`	2	`%`	20
+	`[gunner]`	39	`[dungeon type]`	`[static]`	1	`+`	200
+	`[gunner]`	41	`[dungeon type]`	`[level]`	1	`%`	30
+	`[at gunner]`	39	`[dungeon type]`	`[static]`	2	`%`	30
+	`[at gunner]`	39	`[dungeon type]`	`[static]`	1	`+`	200
+	`[at gunner]`	41	`[dungeon type]`	`[level]`	1	`%`	30
+[/skill data up]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`light`
+		`%`	10
+[/then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		559	488
+	[equipment magical attack]
+		336	263
+[/pvp]
+
+[possible kiri protect]

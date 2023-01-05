@@ -3,22 +3,13 @@
 [name]
 	`魔之密语巨剑`
 
-[name2]
-	``
-
 [basic explain]
 	`攻击速度 +3%%
-
-攻击时， 附加800点伤害。
-攻击时， 有10%%的几率出现冥炎之卡洛。`
-
-[detail explain]
-	`攻击速度 +3%%
-
-攻击时， 附加800点伤害。n攻击时， 有10%%的几率出现冥炎之卡洛， 并且每秒造成400点暗属性伤害， 效果持续10秒。`
+    攻击时， 附加20%%的伤害。
+    攻击时， 有10%%的几率出现冥炎之卡洛。 (冷却时间0.5秒)`
 
 [grade]
-	75
+	81
 
 [rarity]
 	4
@@ -32,10 +23,13 @@
 	`[trade]`
 
 [minimum level]
-	70
+	75
+
+[need material]
+	3285	2000
 
 [physical attack]
-	50
+	58
 
 [attack speed]
 	-60
@@ -43,23 +37,26 @@
 [cast speed]
 	-20
 
-[price]
-	135000
-
 [repair price]
-	113400
+	129600
 
 [value]
-	108000
+	7500000
+
+[creation rate]
+	125
 
 [equipment physical attack]
-	811	754
+	1026	869
 
 [equipment magical attack]
-	608	565
+	769	652
 
 [separate attack]
-	441	299
+	520	336
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/01_weapon/swordman/lswd/lswd.img`	103
@@ -117,7 +114,7 @@
 	`SQUARESWD_TOUCH`
 
 [durability]
-	35
+	45
 
 [weight]
 	4000
@@ -128,7 +125,13 @@
 [cool time]
 	10000
 
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	20
+[/skill data up]
+
 [if]
+	[cooltime]
+		500
 	[attack success]
 		1
 [/if]
@@ -136,23 +139,10 @@
 [then]
 	[target]
 		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`+`	800
-[/then]
-
-[if]
-	[cooltime]
-		15000
-	[event attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`enemy`	-1
 	[probability]
-		6
+		10
+	[reduce probability at pvp module]
+		100
 	[duration]
 		20000
 	[passive object]
@@ -160,10 +150,4 @@
 	[/passive object]
 [/then]
 
-[routing priority]
-	`swordman`	3
-	`demonic swordman`	0
-[/routing priority]
-
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

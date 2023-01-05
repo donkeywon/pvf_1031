@@ -3,18 +3,19 @@
 [name]
 	`幽魂魅影肩甲`
 
-[name2]
-	``
-
 [basic explain]
-	`每15点暗属性抗性增加1点暗属性强化值。
-攻击速度 +2%%`
+	`    每6点暗属性抗性增加2点暗属性强化。 (最多增加30点)
+    每6点暗属性抗性增加1%%的攻击速度。 (最多增加25%%)
+    每6点暗属性抗性增加1.5%%的施放速度。 (最多增加37.5%%)`
 
 [grade]
 	85
 
 [rarity]
 	4
+
+[part set index]
+	11187
 
 [usable job]
 	`[all]`
@@ -26,52 +27,41 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [magical attack]
-	34
+	35
 
 [magical defense]
-	34
+	35
 
 [attack speed]
-	20
-
-[cast speed]
 	50
 
+[cast speed]
+	70
+
 [price]
-	59500
+	80000000
 
 [repair price]
-	49980
+	55040
 
 [value]
-	47600
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical defense]
-	744	696
-
-[skill levelup]
-	`[gunner]`	83	1
-	`[at gunner]`	83	1
-	`[mage]`	59	1
-	`[mage]`	58	1
-	`[mage]`	81	1
-	`[at mage]`	30	1
-	`[priest]`	101	1
-	`[swordman]`	82	1
-	`[fighter]`	90	1
-	`[at fighter]`	90	1
-	`[demonic swordman]`	82	1
-[/skill levelup]
+	776	704
 
 [dark resistance]
 	10
 
-[light resistance]
-	-5
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`Item/new_equipment/02_cloth/neck/cloth_neck.img`	10
@@ -100,9 +90,6 @@
 [cool time]
 	10000
 
-[set item master]
-	100050050
-
 [if]
 	[change status]
 		`hp`
@@ -116,13 +103,41 @@
 		`myself`	-1
 	[stat change by stat]
 		`myself`	-1
-		`dark resistance`	15
+		`dark resistance`	6
 		`dark attack`
-		`+`	1	0
+		`+`	2	30
+	[stat change by stat]
+		`myself`	-1
+		`dark resistance`	6
+		`attack speed`
+		`+`	10	250
+	[stat change by stat]
+		`myself`	-1
+		`dark resistance`	6
+		`cast speed`
+		`+`	15	375
 [/then]
 
-[routing priority]
-[/routing priority]
+[all skill item container]
+	[all skill item]
+		[item growtype]
+			`[all]`	0
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				40
+			[upper bound level]
+				50
+			[value]
+				1
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
+[/all skill item container]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

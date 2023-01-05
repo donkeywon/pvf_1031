@@ -1,0 +1,149 @@
+#PVF_File
+
+[name]
+	`千蛛碎影之蛛网护腿`
+
+[basic explain]
+	`    攻击时， 有30%%的几率使敌人进入束缚状态。
+    攻击束缚状态的敌人时， 敌人的防御力减少， 效果持续20秒。`
+
+[detail explain]
+	`    攻击时， 有30%%的几率使敌人进入束缚状态3秒。 (若敌人高于Lv91， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+    攻击束缚状态下的敌人时， 使敌人减少36000点防御力， 效果持续20秒。(最多重叠1次； 冷却时间8秒； 防御力减少效果与千蛛碎影之毒牙胸甲、 千蛛碎影之蛛网护腿、 千蛛碎影之蛛丝肩甲、 千蛛碎影之蛛刺腰带、 千蛛碎影之利齿战靴共享； 解除装备后效果消失)`
+
+[flavor text]
+	`妹妹， 出来一下。  --尼古拉斯召唤安吉丽娜`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11350
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	182
+
+[magical attack]
+	171
+
+[physical defense]
+	39
+
+[price]
+	85000000
+
+[repair price]
+	101920
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	4080	3720
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/05_harmor/pants/harmor_pants.img`	19
+
+[field image]
+	`Item/field_equip.img`	11
+
+[equipment type]
+	`[pants]`	21
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	34
+
+[weight]
+	2900
+
+[item group name]
+	`ha pants`
+
+[cool time]
+	10000
+
+[active status control info]
+	`hold`	0	12	20
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		30
+	[duration]
+		3000
+	[active status]
+		`hold`	91
+[/then]
+
+[if]
+	[target active status]
+		`hold`
+	[attack success]
+		1
+	[cooltime]
+		8000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		20000
+	[appendage]
+		851
+	[appendage]
+		852
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

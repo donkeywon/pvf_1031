@@ -3,17 +3,17 @@
 [name]
 	`镇魂曲 : 幽游板甲战靴`
 
-[name2]
-	``
-
 [basic explain]
-	`施放[疾风打]、 [圣光十字]、 [波动爆发]时， 有10%%的几率不受冷却时间影响。`
+	`施放[疾风打]、 [圣光十字]、 [波动爆发]时， 有20%%的几率不受冷却时间影响。`
 
 [grade]
 	85
 
 [rarity]
 	4
+
+[part set index]
+	11719
 
 [usable job]
 	`[all]`
@@ -25,32 +25,48 @@
 [minimum level]
 	80
 
-[physical attack]
-	21
+[need material]
+	3285	2500
 
-[physical defense]
-	23
+[physical attack]
+	22
 
 [magical attack]
-	21
+	22
+
+[physical defense]
+	24
 
 [move speed]
 	60
 
 [price]
-	85000
+	80000000
 
 [repair price]
-	71400
+	82560
 
 [value]
-	68000
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical defense]
-	2790	2610
+	2910	2640
+
+[skill levelup]
+	`[priest]`	85	3
+	`[priest]`	107	3
+	`[swordman]`	32	3
+	`[demonic swordman]`	2	4
+[/skill levelup]
+
+[all elemental attack]
+	8
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
 	`item/new_equipment/06_plate/shoes/plate_shoes.img`	10
@@ -79,10 +95,12 @@
 [cool time]
 	10000
 
-[set item master]
-	100090009
-
 [if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+		`[assault]`
+	[/module]
 	[event use skill]
 		`priest`	85
 [/if]
@@ -91,13 +109,18 @@
 	[target]
 		`myself`	-1
 	[probability]
-		10
+		12
 	[skill data up]
 		`[priest]`	85	`[all]`	`[cooltime]`	0	`%`	-100
 	[/skill data up]
 [/then]
 
 [if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+		`[assault]`
+	[/module]
 	[event use skill]
 		`priest`	107
 [/if]
@@ -106,13 +129,18 @@
 	[target]
 		`myself`	-1
 	[probability]
-		10
+		12
 	[skill data up]
 		`[priest]`	107	`[all]`	`[cooltime]`	0	`%`	-100
 	[/skill data up]
 [/then]
 
 [if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+		`[assault]`
+	[/module]
 	[event use skill]
 		`swordman`	32
 [/if]
@@ -121,14 +149,10 @@
 	[target]
 		`myself`	-1
 	[probability]
-		10
+		12
 	[skill data up]
 		`[swordman]`	32	`[all]`	`[cooltime]`	0	`%`	-100
 	[/skill data up]
 [/then]
 
-[routing priority]
-[/routing priority]
-
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

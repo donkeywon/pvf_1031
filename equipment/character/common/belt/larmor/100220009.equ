@@ -3,17 +3,22 @@
 [name]
 	`深海熔岩腰带`
 
-[name2]
-	``
-
 [basic explain]
-	`装备时， 每30秒使自身的武器属性变成冰属性， 效果持续20秒。 (进入地下城10秒后生效)`
+	`    装备时， 使自身的武器附加火属性。
+    攻击时， 有3%%的几率对300px范围内的敌人随机发动沸腾之泉。 (最多发动2个)`
+
+[detail explain]
+	`    装备时， 使自身的武器附加火属性。
+    攻击时， 有3%%的几率对300px范围内的敌人随机发动沸腾之泉。 (最多发动2个； 冷却时间5秒)`
 
 [grade]
 	85
 
 [rarity]
 	4
+
+[part set index]
+	11457
 
 [usable job]
 	`[all]`
@@ -26,10 +31,16 @@
 	80
 
 [physical attack]
-	25
+	26
 
 [magical attack]
-	17
+	18
+
+[HP MAX]
+	200
+
+[MP MAX]
+	200
 
 [inventory limit]
 	3000
@@ -47,16 +58,13 @@
 	250
 
 [equipment physical defense]
-	1116	1044
+	1164	1056
 
-[water attack]
-	8
-
-[fire resistance]
-	5
+[fire attack]
+	35
 
 [water resistance]
-	10
+	12
 
 [icon]
 	`item/new_equipment/04_larmor/belt/larmor_belt.img`	10
@@ -87,20 +95,53 @@
 
 [if]
 	[time]
-		30000	1	10000
+		500	1	500
 [/if]
 
 [then]
 	[target]
 		`myself`	-1
-	[duration]
-		20000
+	[equipment duration]
+		3000
 	[elemental weapon]
-		`water`
+		`fire`
 [/then]
 
-[set item master]
-	100070009
+[if]
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`enemy`	300
+	[probability]
+		3
+	[passive object]
+		140156	0	0	0	0	0	` `
+	[/passive object]
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`enemy`	300
+	[probability]
+		3
+	[passive object]
+		140156	0	0	0	0	0	` `
+	[/passive object]
+[/then]
+
+[possible kiri protect]
 
 [routing priority]
 [/routing priority]

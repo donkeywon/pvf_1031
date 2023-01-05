@@ -1,0 +1,175 @@
+#PVF_File
+
+[name]
+	`断肠之殇`
+
+[basic explain]
+	`    攻击时， 有5%%的几率使敌人进入出血状态7秒。
+    攻击出血状态的敌人时， 增加40%%的伤害。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率使敌人进入出血状态7秒； 出血状态下的敌人， 每0.5秒受到200点伤害。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+    
+    攻击出血状态的敌人时， 增加40%%的伤害。 (伤害加成效果取最高值）`
+
+[flavor text]
+	`    除了公爵尤里斯之外， 刀疤鼠， 还有谁？`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	62
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	952	752
+
+[equipment magical attack]
+	1152	952
+
+[separate attack]
+	607	507
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/knuckle/knuckle.img`	124
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	38	0
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	38	0
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[duration]
+		7000
+	[active status]
+		`bleeding`	90	2800
+[/then]
+
+[if]
+	[target active status]
+		`bleeding`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	40
+[/then]
+
+[possible kiri protect]

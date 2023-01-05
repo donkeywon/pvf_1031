@@ -1,0 +1,159 @@
+#PVF_File
+
+[name]
+	`誓血之盟腿甲`
+
+[basic explain]
+	`    MP为100%%时， 会减少15%%的MP值。
+    MP从100%%起每减少1%%时， 会增加1%%的物理暴击率和魔法暴击率。`
+
+[detail explain]
+	`    MP为100%%时， 减少15%%的MP值。
+    MP从100%%起每减少1%%时， 增加1%%的物理暴击率和魔法暴击率。 (最多可增加15%%的物理和魔法暴击率)`
+
+[flavor text]
+	`    听说结拜要割手指头……算了， 最近贫血， 随便找点鸡血吧……  --某个帝血弑天`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11349
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	42
+
+[magical attack]
+	31
+
+[physical defense]
+	39
+
+[price]
+	85000000
+
+[repair price]
+	101920
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	125	125
+
+[equipment magical attack]
+	125	125
+
+[equipment physical defense]
+	4080	3720
+
+[separate attack]
+	125	125
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/05_harmor/pants/harmor_pants.img`	18
+
+[field image]
+	`Item/field_equip.img`	11
+
+[equipment type]
+	`[pants]`	21
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	34
+
+[weight]
+	2900
+
+[item group name]
+	`ha pants`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[time]
+		500	1	500
+	[stat change]
+		`mp`
+		`=`
+		`%`	100
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`mp`
+		`%`	-15	0
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical critical hit`
+		`+`	15
+	[stat by condition]
+		`magical critical hit`
+		`+`	15
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

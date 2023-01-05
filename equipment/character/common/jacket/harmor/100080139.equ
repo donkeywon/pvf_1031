@@ -1,0 +1,150 @@
+#PVF_File
+
+[name]
+	`千蛛碎影之毒牙胸甲`
+
+[basic explain]
+	`攻击时， 有30%%的几率使敌人进入中毒状态。
+攻击中毒状态的敌人时， 敌人的防御力减少， 效果持续20秒。`
+
+[detail explain]
+	`攻击时， 有30%%的几率使敌人进入中毒状态3秒； 中毒状态下的敌人， 每0.5秒受到1500点伤害。
+攻击中毒状态的敌人时， 使敌人减少36000点防御力， 效果持续20秒。
+(最多重叠1次； 冷却时间8秒； 防御力减少效果与千蛛碎影之毒牙胸甲、 千蛛碎影之蛛网护腿、 千蛛碎影之蛛丝肩甲、 千蛛碎影之蛛刺腰带、 千蛛碎影之利齿战靴共享)`
+
+[flavor text]
+	`有啥可怕的， 我召唤个蜘蛛王子给你看看。 尼古拉斯！  --某死灵术士`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[part set index]
+	11350
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	182
+
+[magical attack]
+	171
+
+[physical defense]
+	39
+
+[price]
+	85000000
+
+[repair price]
+	116480
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	4896	4464
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/05_harmor/coat/harmor_coat.img`	21
+
+[field image]
+	`Item/field_equip.img`	10
+
+[equipment type]
+	`[coat]`	22
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	3600
+
+[item group name]
+	`ha coat`
+
+[cool time]
+	10000
+
+[active status control info]
+	`poison`	0	12	0	20
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		30
+	[duration]
+		3000
+	[active status]
+		`poison`	91	1500
+[/then]
+
+[if]
+	[target active status]
+		`poison`
+	[attack success]
+		1
+	[cooltime]
+		8000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		20000
+	[appendage]
+		851
+	[appendage]
+		852
+[/then]
+
+[pvp]
+	[move speed]
+		34
+	[HP MAX]
+		503
+	[all elemental resistance]
+		9
+	[stuck resistance]
+		12
+	[stuck]
+		-1.99
+[/pvp]
+
+[possible kiri protect]

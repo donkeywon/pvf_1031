@@ -1,0 +1,122 @@
+#PVF_File
+
+[name]
+	`逆龙之战破敌铠甲`
+
+[basic explain]
+	`    攻击时， 有2%%的几率使自身进入霸体状态10秒。
+    该装备的霸体效果被触发后， 在效果持续时间内破招攻击敌人时， 可以增加20%%的伤害。`
+
+[detail explain]
+	`    攻击时， 有2%%的几率使自身进入霸体状态10秒。 (冷却时间15秒)
+    该装备的霸体效果被触发后， 在该效果持续时间内破招攻击敌人， 可以增加20%%的伤害。 (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)`
+
+[flavor text]
+	`    这大热天的， 穿这衣服出去， 还没打就先中暑了吧！`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[part set index]
+	11348
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	38
+
+[magical attack]
+	28
+
+[physical defense]
+	35
+
+[repair price]
+	103680
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	4416	3984
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/05_harmor/coat/harmor_coat.img`	19
+
+[field image]
+	`Item/field_equip.img`	10
+
+[equipment type]
+	`[coat]`	22
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	3600
+
+[item group name]
+	`ha coat`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		15000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		2
+	[equipment duration]
+		10000
+	[appendage]
+		205
+[/then]
+
+[if]
+	[my appendage]
+		205
+	[time]
+		500	1	0
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	20
+[/then]
+
+[possible kiri protect]

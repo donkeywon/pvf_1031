@@ -1,0 +1,125 @@
+#PVF_File
+
+[name]
+	`怒海狂鲨胸甲`
+
+[basic explain]
+	`冰属性攻击时， 有3%%的几率使敌人进入出血状态。
+冰属性暴击攻击时， 增加10%%的伤害。`
+
+[detail explain]
+	`冰属性攻击时， 有3%%的几率使敌人进入出血状态4秒； 出血状态下的敌人， 每0.5秒受到462点伤害。 
+冰属性暴击攻击时， 增加10%%的伤害。 (暴击伤害加成效果取最高值， 且无法叠加)`
+
+[flavor text]
+	`上次穿着它去游泳， 结果我前面的人都游得飞快……`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[part set index]
+	11597
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	75
+
+[need material]
+	3285	2000
+
+[physical attack]
+	35
+
+[magical attack]
+	35
+
+[magical defense]
+	38
+
+[repair price]
+	77760
+
+[value]
+	7500000
+
+[creation rate]
+	125
+
+[equipment physical defense]
+	2208	1992
+
+[water attack]
+	12
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/03_leather/coat/leather_coat.img`	21
+
+[field image]
+	`Item/FieldImage.img`	0
+
+[equipment type]
+	`[coat]`	20
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	33
+
+[weight]
+	1900
+
+[item group name]
+	`lt coat`
+
+[cool time]
+	10000
+
+[if]
+	[element]
+		`water`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[duration]
+		4000
+	[active status]
+		`bleeding`	81	3696
+[/then]
+
+[if]
+	[element]
+		`water`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	10
+[/then]
+
+[possible kiri protect]

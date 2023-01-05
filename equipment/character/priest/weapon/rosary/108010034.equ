@@ -3,13 +3,10 @@
 [name]
 	`云梦浮生珠`
 
-[name2]
-	``
-
 [basic explain]
 	`[落雷符]每次闪电数 +2
-
-施放[落雷符]时， 可以使队员增加12点光属性强化值， 效果持续20秒。`
+[落雷符]持续时间 +15%%
+    施放[落雷符]、 [龙魂之怒]时， 可以使自身和队员增加30点光属性强化值， 效果持续40秒。 (最多重叠1次； 解除装备后效果消失)`
 
 [grade]
 	85
@@ -27,8 +24,11 @@
 [minimum level]
 	80
 
+[need material]
+	3285	2500
+
 [magical attack]
-	84
+	92
 
 [attack speed]
 	-50
@@ -37,34 +37,41 @@
 	50
 
 [price]
-	136000
+	80000000
 
 [repair price]
-	114240
+	123840
 
 [value]
-	108800
+	8000000
 
 [creation rate]
 	250
 
 [equipment physical attack]
-	742	688
+	816	697
 
 [equipment magical attack]
-	948	879
+	1043	890
 
 [separate attack]
-	504	343
+	555	359
 
 [magical critical hit]
 	2
 
+[skill levelup]
+	`[priest]`	40	3
+[/skill levelup]
+
 [light attack]
-	5
+	25
+
+[icon mark]
+	`Item/IconMark.img`	68
 
 [icon]
-	`item/new_equipment/01_weapon/priest/rosary/rosary.img`	76
+	`item/new_equipment/01_weapon/priest/rosary/rosary.img`	81
 
 [field image]
 	`Item/field_weapon.img`	12
@@ -76,7 +83,7 @@
 	`[priest]`
 
 [variation]
-	22	1
+	24	1
 
 [layer variation]
 	200
@@ -99,7 +106,7 @@
 	`ROSARY_TOUCH`
 
 [durability]
-	35
+	45
 
 [weight]
 	2500
@@ -110,6 +117,9 @@
 [cool time]
 	10000
 
+[elemental property]
+	`[light element]`
+
 [if]
 	[use skill]
 		`priest`	40
@@ -119,16 +129,17 @@
 [then]
 	[target]
 		`party`	-1
-	[stat]
-		`light attack`
-		`+`	12
-	[duration]
-		20000
+	[equipment duration]
+		40000
+	[elemental weapon]
+		`light`
+	[appendage]
+		608
 [/then]
 
 [skill data up]
 	`[priest]`	40	`[all]`	`[level]`	2	`+`	2
+	`[priest]`	40	`[all]`	`[level]`	0	`%`	15
 [/skill data up]
 
-[icon mark]
-	`Item/IconMark.img`	68
+[possible kiri protect]

@@ -1,0 +1,250 @@
+#PVF_File
+
+[name]
+	`牧童之谎 - 狼来了`
+
+[basic explain]
+	`    攻击时， 附加25%%的伤害。
+    进入地下城时， 每40秒可以随机发动特殊效果中的任意一种， 效果持续40秒。 (消耗2个无色小晶块)`
+
+[detail explain]
+	`    攻击时， 附加25%%的伤害。
+    进入地下城时， 每40秒可以随机发动以下效果中的任意一种， 效果持续40秒。 (消耗2个无色小晶块； 装备10秒后生效)
+    - 真实 : 增加20%%的魔法暴击率， 恢复10%%的HP。 (对话气泡 : 狼真的来了！)
+    - 谎言 : 增加10%%的魔法暴击率。 (对话气泡 : 狼来了！)`
+
+[flavor text]
+	`    小鬼1号 : 狼来了！ 快跑啊！
+    小鬼2号 : 狼有什么可怕。 野猪才可怕呢！`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[magical attack]
+	97
+
+[attack speed]
+	100
+
+[cast speed]
+	50
+
+[stuck]
+	1
+
+[price]
+	85000000
+
+[repair price]
+	131040
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment physical attack]
+	864	742
+
+[equipment magical attack]
+	1056	906
+
+[separate attack]
+	589	382
+
+[all elemental attack]
+	30
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/01_weapon/mage/rod/rod.img`	107
+
+[field image]
+	`Item/field_weapon.img`	7
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	38	0
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	37	0
+
+[layer variation]
+	2150
+	`at_roda`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_rodd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	38	0
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`ROD_TOUCH`
+
+[durability]
+	34
+
+[weight]
+	2200
+
+[item group name]
+	`rod`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	25
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[time]
+		40000	1	10000
+	[cooltime]
+		40000
+[/if]
+
+[multiple then]
+	[then]
+		[consume item]
+			3037	2
+		[target]
+			`myself`	-1
+		[equipment duration]
+			40000
+		[stat]
+			`magical critical hit rate`
+			`+`	20
+		[restore]
+			`hp`
+			`%`	10	0
+		[speech on]
+			0	2000
+			`狼真的来了！`
+		[/speech on]
+		[then probability]
+			50.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[consume item]
+			3037	2
+		[equipment duration]
+			40000
+		[stat]
+			`magical critical hit rate`
+			`+`	10
+		[speech on]
+			0	2000
+			`狼来了！`
+		[/speech on]
+		[then probability]
+			50.0
+	[/then]
+[/multiple then]
+
+[pvp]
+	[cast speed]
+		40
+	[all elemental attack]
+		39
+	[rigidity]
+		196
+	[MP MAX]
+		2090
+	[equipment physical attack]
+		432	371
+	[equipment magical attack]
+		528	453
+[/pvp]
+
+[possible kiri protect]

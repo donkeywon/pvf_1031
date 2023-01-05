@@ -1,0 +1,96 @@
+#PVF_File
+
+[name]
+	`魔晶进化 - 残忍之嗜`
+
+[basic explain]
+	`魔法伤害 +8%%`
+
+[detail explain]
+	`魔法伤害 +8%% (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)`
+
+[flavor text]
+	`    使徒这么强大， 或许能拯救我们魔界吧？  --年幼时的艾丽丝`
+
+[grade]
+	45
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	40
+
+[physical attack]
+	20
+
+[magical attack]
+	30
+
+[physical defense]
+	50
+
+[cast speed]
+	50
+
+[price]
+	40000000
+
+[need material]
+	10000204	100
+
+[value]
+	4000000
+
+[creation rate]
+	500
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[equipment magical defense]
+	2592	2256
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	141
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	21
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[attack type]
+		`magical`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	8
+[/then]
+
+[possible kiri protect]

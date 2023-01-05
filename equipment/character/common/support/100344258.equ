@@ -1,0 +1,135 @@
+#PVF_File
+
+[name]
+	`突击队长的护心仪`
+
+[basic explain]
+	`被暴击时所受伤害 -20%%
+    HP为50%%以下时， 增加自身5%%的攻击速度和移动速度， 以及7%%的施放速度。
+    HP为30%%以下时， 使自身恢复50%%的HP并增加15000点物理防御力和魔法防御力。`
+
+[detail explain]
+	`被暴击时所受伤害 -20%%
+    HP为50%%以下时， 使自身增加5%%的攻击速度、 5%%的移动速度和7%%的施放速度。 (最多重叠1次)
+    HP为30%%以下时， 使自身恢复50%%的HP并增加15000点物理防御力和魔法防御力， 效果持续5秒。 (冷却时间200秒)`
+
+[flavor text]
+	`    我佩服妳这种不自量力的勇气， 所以， 就由我来亲自送妳上路吧！  --兰蒂卢斯`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	35
+
+[magical attack]
+	35
+
+[physical defense]
+	35
+
+[magical defense]
+	35
+
+[price]
+	85000000
+
+[need material]
+	10000204	100
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[icon]
+	`Item/new_equipment/10_support/support.img`	155
+
+[field image]
+	`Item/field_equip.img`	22
+
+[equipment type]
+	`[support]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	700
+
+[item group name]
+	`support`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`<`
+		`%`	50
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`attack speed`
+		`+`	50
+	[stat by condition]
+		`move speed`
+		`+`	50
+	[stat by condition]
+		`cast speed`
+		`+`	70
+[/then]
+
+[if]
+	[stat change]
+		`hp`
+		`<`
+		`%`	30
+	[time]
+		500	1	500
+	[cooltime]
+		200000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		5000
+	[restore]
+		`hp`
+		`%`	50	0
+	[stat]
+		`equipment physical defense`
+		`+`	15000
+	[stat]
+		`equipment magical defense`
+		`+`	15000
+[/then]
+
+[decrease critical damage]
+	`%`	20
+
+[possible kiri protect]

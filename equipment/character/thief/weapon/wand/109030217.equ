@@ -1,0 +1,281 @@
+#PVF_File
+
+[name]
+	`邪念欲动权杖`
+
+[basic explain]
+	`    攻击时， 有10%%的几率使敌人进入任意一种异常状态6秒。
+    攻击异常状态的敌人时， 附加10%%的伤害。`
+
+[detail explain]
+	`    攻击时， 有10%%的几率使敌人进入出血、 中毒、 灼伤、 感电、 石化、 诅咒、 减速、 失明、 冰冻、 眩晕、 束缚和混乱中任意一种异常状态6秒。(若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+    攻击异常状态的敌人时， 附加10%%的伤害。`
+
+[flavor text]
+	`    女王何时才能下令和人类开战`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	62
+
+[attack speed]
+	-100
+
+[price]
+	85000000
+
+[need material]
+	10000204	250
+
+[repair price]
+	115200
+
+[value]
+	8500000
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	809	609
+
+[equipment magical attack]
+	1152	952
+
+[separate attack]
+	607	507
+
+[magical critical hit]
+	5
+
+[dark attack]
+	18
+
+[icon]
+	`item/new_equipment/01_weapon/thief/wand/wand.img`	124
+
+[field image]
+	`Item/field_weapon.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	40	0
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	2300
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			10
+		[duration]
+			6000
+		[active status]
+			`curse`	90	67	67	67	67
+		[then probability]
+			9.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			10
+		[duration]
+			6000
+		[active status]
+			`poison`	90	18000
+		[then probability]
+			8.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			10
+		[duration]
+			6000
+		[active status]
+			`blind`	90	90	20
+		[then probability]
+			8.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			10
+		[duration]
+			6000
+		[active status]
+			`slow`	90	15	10
+		[then probability]
+			8.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			10
+		[duration]
+			6000
+		[active status]
+			`burn`	90	14000
+		[then probability]
+			8.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			10
+		[duration]
+			6000
+		[active status]
+			`hold`	90
+		[then probability]
+			8.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			10
+		[duration]
+			6000
+		[active status]
+			`confuse`	90	1
+		[then probability]
+			8.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			10
+		[duration]
+			6000
+		[active status]
+			`bleeding`	90	18000
+		[then probability]
+			8.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			10
+		[duration]
+			6000
+		[active status]
+			`freeze`	90
+		[then probability]
+			9.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			10
+		[duration]
+			6000
+		[active status]
+			`stone`	90	9468
+		[then probability]
+			9.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			10
+		[duration]
+			6000
+		[active status]
+			`lightning`	90	2333
+		[then probability]
+			9.0
+	[/then]
+[/multiple then]
+
+[if]
+	[target active status]
+		`any`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[possible kiri protect]

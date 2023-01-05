@@ -1,0 +1,160 @@
+#PVF_File
+
+[name]
+	`暗杀者的锋芒戒指`
+
+[basic explain]
+	`    攻击HP为70%%以上的敌人时， 增加10%%的暴击伤害。
+    攻击HP为20%%以上70%%以下的敌人时， 增加20%%的暴击伤害。
+    攻击HP为20%%以下的敌人时， 增加30%%的暴击伤害。`
+
+[detail explain]
+	`    攻击HP70%%以上的的敌人时， 暴击伤害增加10%%。
+    攻击HP20%%以上70%%以下的敌人时， 暴击伤害增加20%%。
+    攻击HP20%%以下的敌人时， 暴击伤害增加30%%。(增加暴击伤害类属性仅适用于最高数值， 且无法叠加)`
+
+[flavor text]
+	`    
+`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[need material]
+	3285	3000
+
+[physical attack]
+	56
+
+[magical attack]
+	56
+
+[price]
+	85000000
+
+[value]
+	8500000
+
+[creation rate]
+	125
+
+[equipment magical defense]
+	3264	2976
+
+[physical critical hit]
+	7
+
+[magical critical hit]
+	7
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	145
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	21
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[target stat]
+		`hp`
+		`>=`
+		`%`	70
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	10
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[target stat]
+		`hp`
+		`<`
+		`%`	70
+	[target stat]
+		`hp`
+		`>=`
+		`%`	20
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	20
+[/then]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[attack success]
+		1
+	[target stat]
+		`hp`
+		`<`
+		`%`	20
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	30
+[/then]
+
+[pvp]
+	[attack speed]
+		57
+	[cast speed]
+		108
+	[hit recovery]
+		112
+[/pvp]
+
+[possible kiri protect]
