@@ -1,8 +1,5 @@
 #PVF_File
 
-[floating height]
-	0
-
 [name]
 	`流氓罗森`
 
@@ -12,8 +9,24 @@
 [die effect]
 	0	6	0
 
-[ability table]
-	0
+[category]
+	`[human]`
+[/category]
+
+[ambient sound]
+	``
+
+[attack sound]
+	``
+
+[appear sound]
+	``
+
+[damage sound]
+	``
+
+[die sound]
+	``
 
 [ability category]
 	`[HP MAX]`	`*`	330
@@ -23,24 +36,8 @@
 	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
 [/ability category]
 
-[category]
-	`[human]`
-[/category]
-
-[water resistance]
-	0	0
-
-[freeze resistance]
-	0	0
-
-[HP regen speed]
-	0	0
-
-[MP regen speed]
-	0	0
-
 [level]
-	31	35
+	35	35
 
 [move speed]
 	800	800
@@ -55,13 +52,10 @@
 	1900	1900
 
 [weight]
-	100000	100000
+	90000	90000
 
-[lie frame]
-	0	1	0	1	2
-
-[common champion drop item]
-[/common champion drop item]
+[stuckbonus on damage]
+	0	0	0	0
 
 [waiting action]
 	`Action/Stay.act`
@@ -99,18 +93,14 @@
 	`AttackInfo/DashAttack.atk`
 [/attack info]
 
+[atk super on scr]
+	6
+	`[unbreakable]`	-1	-1	-1	-1
+[/atk super on scr]
+
 [cooltime]
 	5000	1000	5000	1000	1000	1000	1000	5000	1000
 [/cooltime]
-
-[stuckbonus on damage]
-	0	0	0	0
-
-[vision]
-	1500
-
-[warlike]
-	80
 
 [think term]
 	500
@@ -118,49 +108,30 @@
 [destination change term]
 	500
 
-[keep distance with target]
-	80
-
-[keep range distance with target]
-	80	0	5	5
-
-[atk super on scr]
-	6
-	`[unbreakable]`	-1	-1	-1	-1
-[/atk super on scr]
-
 [ai pattern]
 	[easy]
 		`ai/Event.ai`
 		`ai/DestinationSelect.ai`
 		`ai/Action.ai`
 		`ai/MoveMethod.ai`
-		`ai/100.ai`
-		`ai/50.ai`
 	[/easy]
 	[medium]
 		`ai/Event.ai`
 		`ai/DestinationSelect.ai`
 		`ai/Action.ai`
 		`ai/MoveMethod.ai`
-		`ai/100.ai`
-		`ai/50.ai`
 	[/medium]
 	[hard]
 		`ai/Event.ai`
 		`ai/DestinationSelect.ai`
 		`ai/Action.ai`
 		`ai/MoveMethod.ai`
-		`ai/100.ai`
-		`ai/50.ai`
 	[/hard]
 	[ultimate]
 		`ai/Event.ai`
 		`ai/DestinationSelect.ai`
 		`ai/Action.ai`
 		`ai/MoveMethod.ai`
-		`ai/100.ai`
-		`ai/50.ai`
 	[/ultimate]
 	[hero]
 		`ai/Event.ai`
@@ -170,9 +141,14 @@
 	[/hero]
 [/ai pattern]
 
-[item]
-[/item]
+[keep distance with target]
+	80
 
-[speech on situation]
-	
-[/speech on situation]
+[keep range distance with target]
+	80	0	5	5
+
+[warlike]
+	80
+
+[lie frame]
+	0	1	0	1	2
