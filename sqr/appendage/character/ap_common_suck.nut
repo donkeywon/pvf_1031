@@ -28,7 +28,7 @@ function onStart_appendage_common_suck(appendage)
 		return;
 	}
 	
-	local obj = appendage.getParent();
+	local obj = appendage.getParent();	
 	
 	
 }
@@ -40,7 +40,7 @@ function prepareDraw_appendage_common_suck(appendage)
 		return;
 	}
 	
-	local obj = appendage.getParent();
+	local obj = appendage.getParent();	
 }
 
 

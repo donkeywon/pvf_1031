@@ -1,1 +1,0 @@
-IRDSQRCharacter.pushScriptFiles("Character/ATFighter/atfighter_common.nut");

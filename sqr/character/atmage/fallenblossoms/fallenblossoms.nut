@@ -110,17 +110,15 @@ function onSetState_FallenBlossoms(obj, state, datas, isResetTimer)
 	if(substate == SUB_STATE_FALLENBLOSSOMS_0) {
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_FALLENBLOSSOMS1);
 		obj.sq_PlaySound("MW_ICESPEAR");
-		
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED,
-				SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
+
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 	else if(substate == SUB_STATE_FALLENBLOSSOMS_1)
 	{
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_FALLENBLOSSOMS2);
 		obj.sq_SetCurrentAttackInfo(CUSTOM_ATTACK_INFO_FALLENBLOSSOMS);	
-		
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED,
-				SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
+
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	
 		local sq_var = obj.getVar();
 		
@@ -176,9 +174,8 @@ function onSetState_FallenBlossoms(obj, state, datas, isResetTimer)
 	else if(substate == SUB_STATE_FALLENBLOSSOMS_2) {
 		createFallenBlossomsSpearExp(obj, 0, 3, 70);
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_FALLENBLOSSOMS3);
-		
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED,
-				SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
+
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		
 	}
 	else if(substate == SUB_STATE_FALLENBLOSSOMS_3) {

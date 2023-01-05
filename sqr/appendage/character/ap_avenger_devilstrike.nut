@@ -29,7 +29,7 @@ function onStart_appendage_avenger_devilstrike(appendage)
 		return;
 	}
 	
-	local obj = appendage.getParent();
+	local obj = appendage.getParent();	
 	
 }
 
@@ -40,7 +40,7 @@ function prepareDraw_appendage_avenger_devilstrike(appendage)
 		return;
 	}
 	
-	local obj = appendage.getParent();
+	local obj = appendage.getParent();	
 }
 
 

@@ -104,21 +104,26 @@ function onSetState_MultiShot(obj, state, datas, isResetTimer)
 			obj.sq_SetStaticMoveInfo(0, 0, 0, false);	
 			obj.sq_SetStaticMoveInfo(1, 0, 0, false);	
 			sq_SetZVelocity(obj,1,0);
-			obj.sq_SetCurrentAnimation(CUSTOM_ANI_AT_MAGIC_CANNON_READY);		
+			obj.sq_SetCurrentAnimation(CUSTOM_ANI_AT_MAGIC_CANNON_READY);
+			obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		}
 		else if(subState == ENUM_MULTI_SHOT_SUBSTATE_HORIZON) {
-			obj.sq_SetCurrentAnimation(CUSTOM_ANI_AT_MAGIC_CANNON_1);		
+			obj.sq_SetCurrentAnimation(CUSTOM_ANI_AT_MAGIC_CANNON_1);
+			obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		}
 		else if(subState == ENUM_MULTI_SHOT_SUBSTATE_VERTICAL) {
 			obj.sq_SetCurrentAnimation(CUSTOM_ANI_AT_MAGIC_CANNON_3);
+			obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		}
 		else if(subState == ENUM_MULTI_SHOT_SUBSTATE_DIAGONAL) {
 			obj.sq_SetCurrentAnimation(CUSTOM_ANI_AT_MAGIC_CANNON_2);
+			obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		}
 	}
 	else {
 		obj.sq_StopMove();
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_MULTI_SHOT);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 	
 	//obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED,

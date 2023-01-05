@@ -70,6 +70,7 @@ function onSetState_IceCrash(obj, state, datas, isResetTimer)
 		
 		obj.sq_StopMove();
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ICE_CRASH_START);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		obj.sq_SetCurrentAttackInfo(CUSTOM_ATTACK_INFO_ICE_CRASH);	
 		local currentAttackInfo = sq_GetCurrentAttackInfo(obj);
 		sq_SetCurrentAttackBonusRate(currentAttackInfo, attackPower);
@@ -78,6 +79,7 @@ function onSetState_IceCrash(obj, state, datas, isResetTimer)
 	}
 	else if(subState == ENUM_ICE_CRASH_SUBSTATE_LOOP) {		
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ICE_CRASH_LOOP);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		obj.setTimeEvent(ENUM_ICE_CRASH_TIMER_SPIN,spinTime.tointeger(),1,false);
 		obj.setTimeEvent(ENUM_ICE_CRASH_MULTI_HIT,multiHitGap,9999,false);		
 	}	
@@ -89,10 +91,12 @@ function onSetState_IceCrash(obj, state, datas, isResetTimer)
 		}
 			
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ICE_CRASH_LOOP_ATTACK);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}	
 	else if(subState == ENUM_ICE_CRASH_SUBSTATE_END) {
 		obj.sq_StopMove();
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ICE_CRASH_END);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		obj.sq_SetCurrentAttackInfo(CUSTOM_ATTACK_INFO_ICE_CRASH_LAST);	
 		
 		sq_RemoveParticle("Character/Mage/Particle/IceCrashIceDust.ptl",obj);

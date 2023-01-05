@@ -30,7 +30,7 @@ function onStart_appendage_atmage_effect(appendage)
 		return;
 	}
 	
-	local obj = appendage.getParent();
+	local obj = appendage.getParent();	
 	
 	
 }
@@ -42,7 +42,7 @@ function prepareDraw_appendage_atmage_effect(appendage)
 		return;
 	}
 	
-	local obj = appendage.getParent();
+	local obj = appendage.getParent();	
 }
 
 

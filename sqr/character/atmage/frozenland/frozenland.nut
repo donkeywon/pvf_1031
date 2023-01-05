@@ -89,18 +89,19 @@ function onSetState_FrozenLand(obj, state, datas, isResetTimer)
 		local animation = sq_GetCurrentAnimation(obj);
 		local startTime = sq_GetFrameStartTime(animation, 16);
 		local speedRate = startTime.tofloat() / castTime.tofloat();
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED,
-			SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, speedRate, speedRate);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, speedRate, speedRate);
 
 		sq_StartDrawCastGauge(obj, startTime, true);
 		obj.sq_PlaySound("MW_SLASHWATER");
 	}
 	else if(substate == SUB_STATE_FROZENLAND_0) {
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_FROZENLAND1);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		
 	}
 	else if(substate == SUB_STATE_FROZENLAND_1) {
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_FROZENLAND2);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 	else if(substate == SUB_STATE_FROZENLAND_2) {
 		local t = obj.getVar("state").get_ct_vector(0);
@@ -112,6 +113,7 @@ function onSetState_FrozenLand(obj, state, datas, isResetTimer)
 	{
 		//print(" obj.sq_SetCurrentAnimation(CUSTOM_ANI_FROZENLAND3);");
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_FROZENLAND3);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 	else if(substate == SUB_STATE_FROZENLAND_4) {
 		// SUB_STATE_FROZENLAND_4 서브스테이트 작업

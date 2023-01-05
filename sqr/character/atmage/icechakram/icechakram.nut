@@ -70,6 +70,7 @@ function onSetState_IceChakram(obj, state, datas, isResetTimer)
 	if(substate == SUB_STATE_ICECHAKRAM_0) {
 		// SUB_STATE_ICECHAKRAM_0 서브스테이트 작업
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ICECHAKRAM_1);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		
 		
 		// 캐스팅 없음.		
@@ -81,6 +82,7 @@ function onSetState_IceChakram(obj, state, datas, isResetTimer)
 		t.Start(10000,0);
 		
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ICECHAKRAM_2);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		
 		if(obj.isMyControlObject())
 		{
@@ -101,6 +103,7 @@ function onSetState_IceChakram(obj, state, datas, isResetTimer)
 	else if(substate == SUB_STATE_ICECHAKRAM_2) {
 		// SUB_STATE_ICECHAKRAM_2 서브스테이트 작업
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ICECHAKRAM_3);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		obj.sq_PlaySound("RAGEBLAST_SPIN_01", 7577);
 	}
 	else if(substate == SUB_STATE_ICECHAKRAM_3) {
@@ -110,13 +113,16 @@ function onSetState_IceChakram(obj, state, datas, isResetTimer)
 		obj.getVar("findchr").push_vector(isFindChr);
 		
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ICECHAKRAM_4);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 	else if(substate == SUB_STATE_ICECHAKRAM_4) {
 		// SUB_STATE_ICECHAKRAM_4 서브스테이트 작업
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ICECHAKRAM_4);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}	
 	else if(substate == SUB_STATE_ICECHAKRAM_5) { // 회전
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ICECHAKRAM_5);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		sq_SetCurrentAttackInfoFromCustomIndex(obj,CUSTOM_ATTACK_INFO_ICE_CHAKRAM);
 		
 		sq_SetBodyEffect(obj, obj, true, sq_RGB(255,255,255), 0, 80, 0, sq_ALPHA(255)); // 몸에 하얀 이펙트
@@ -144,6 +150,7 @@ function onSetState_IceChakram(obj, state, datas, isResetTimer)
 	}
 	else if(substate == SUB_STATE_ICECHAKRAM_6) {
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ICECHAKRAM_6);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 	
 	

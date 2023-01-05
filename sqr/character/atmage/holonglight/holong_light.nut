@@ -80,9 +80,7 @@ function onSetState_HolongLight(obj, state, datas, isResetTimer)
 
 	obj.sq_StopMove();
 	obj.sq_SetCurrentAnimation(CUSTOM_ANI_HOLONG_LIGHT);
-	
-	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED,
-			SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
+	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 			
 	local level		  = sq_GetSkillLevel(obj, SKILL_HOLONG_LIGHT);
 	local lifeTime    = sq_GetLevelData(obj, SKILL_HOLONG_LIGHT, 0, level); //호롱불 버프 유효 시간

@@ -1,1 +1,0 @@
-IRDSQRCharacter.pushScriptFiles("Character/Mage/mage_common.nut");

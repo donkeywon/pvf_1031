@@ -29,7 +29,7 @@ function onStart_appendage_atmage_buff(appendage)
 		return;
 	}
 	
-	local obj = appendage.getParent();
+	local obj = appendage.getParent();	
 	
 	
 }
@@ -49,7 +49,7 @@ function onEnd_appendage_atmage_buff(appendage)
 {
 	if(!appendage) {
 		return;
-	}
+	}	
 }
 
 function drawAppend_appendage_atmage_buff(appendage, isOver, x, y, isFlip)
@@ -63,7 +63,7 @@ function drawAppend_appendage_atmage_buff(appendage, isOver, x, y, isFlip)
 	
 	if(validT < T)
 	{
-		appendage.setValid(false);
+		appendage.setValid(false);	
 	}
 	
 }

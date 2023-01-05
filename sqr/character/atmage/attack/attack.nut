@@ -6,6 +6,8 @@ function onSetState_Attack(obj, state, datas, isResetTimer)
 	if (!obj)
 		return;
 
+	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
+
 	local skillLevel = obj.sq_GetSkillLevel(SKILL_ICE_ELEMENTAL_ATTACK);
 
 	// 수인체를 배웠음.

@@ -3,8 +3,9 @@
 // state를 세팅하고 처음으로 들어오게 됩니다. 각종 리소스를 세팅합니다. 
 function onSetState_ATMageDashAttack(obj, state, datas, isResetTimer)
 {	
-	if (!obj)
-		return;
+	if (!obj) return;
+
+	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 
 	local skillLevel = obj.sq_GetSkillLevel(SKILL_ICE_ELEMENTAL_ATTACK);
 

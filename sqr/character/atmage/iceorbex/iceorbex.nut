@@ -30,6 +30,7 @@ function onSetState_IceOrbEx(obj, state, datas, isResetTimer)
 	
 	obj.sq_StopMove();
 	obj.sq_SetCurrentAnimation(CUSTOM_ANI_ICE_ORB_EX);
+	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	obj.sq_PlaySound("MW_ICEORB");
 }
 

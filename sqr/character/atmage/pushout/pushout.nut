@@ -104,7 +104,8 @@ function onSetState_PushOut(obj, state, datas, isResetTimer)
 		var.setBool(VAR_AMP_HOLD_REALSE_COMPLETE,false);
 		
 		obj.sq_StopMove();
-		obj.sq_SetCurrentAnimation(CUSTOM_ANI_PUSH_OUT_GRAB);	
+		obj.sq_SetCurrentAnimation(CUSTOM_ANI_PUSH_OUT_GRAB);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		obj.sq_SetCurrentAttackInfo(CUSTOM_ATTACK_INFO_PUSH_OUT_GRAB);
 		// 컨버전 스킬을 적용한다.
 		obj.sq_SetApplyConversionSkill();
@@ -126,6 +127,7 @@ function onSetState_PushOut(obj, state, datas, isResetTimer)
 		}
 
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_PUSH_OUT);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		obj.sq_SetCurrentAttackInfo(CUSTOM_ATTACK_INFO_PUSH_OUT);
 		// 컨버전 스킬을 적용한다.
 		obj.sq_SetApplyConversionSkill();
@@ -138,7 +140,8 @@ function onSetState_PushOut(obj, state, datas, isResetTimer)
 		sq_SetCurrentAttackBonusRate(attackInfo,pushingAttackPower);
 	}
 	else if(subState == ENUM_AMP_SUBSTATE_RELEASE) {
-		obj.sq_SetCurrentAnimation(CUSTOM_ANI_PUSH_OUT_ATTACK);		
+		obj.sq_SetCurrentAnimation(CUSTOM_ANI_PUSH_OUT_ATTACK);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 		
 	if(subState != ENUM_AMP_SUBSTATE_GRAB) 

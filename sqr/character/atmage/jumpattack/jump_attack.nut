@@ -10,7 +10,9 @@ function onSetState_JumpAttack(obj, state, datas, isResetTimer)
 function onAfterSetState_JumpAttack(obj, state, datas, isResetTimer)
 {
 	if (!obj) return;
-	
+
+	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
+
 	local iceElementalAttackSkillLevel = obj.sq_GetSkillLevel(SKILL_ICE_ELEMENTAL_ATTACK);
 	
 	if (state == STATE_JUMP_ATTACK && iceElementalAttackSkillLevel <= 0)

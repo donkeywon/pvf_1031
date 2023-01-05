@@ -69,7 +69,7 @@ function onSetCharacter(obj)
 	
 	if (sq_getJob(obj) == ENUM_CHARACTERJOB_CREATOR_MAGE)
 	{
-		sq_SetExSkillSlotVisible(false);
+		sq_SetExSkillSlotVisible(false);	
 		sq_SetSkillSlotVisible(5, false);
 		sq_SetSkillSlotEnable(5, false);
 		
@@ -77,12 +77,12 @@ function onSetCharacter(obj)
 		local SKILLICON_START_Y = 555;
 	
 		for (local i = 0; i < 5; i++)
-		{
+		{	
 			sq_SetSkillSlotPos(i, SKILLICON_START_X + (i*36), SKILLICON_START_Y);
 		}
 	}
 	else
-	{
+	{	
 		sq_SetExSkillSlotVisible(true);	
 		sq_SetSkillSlotVisible(5, true);
 		sq_SetSkillSlotEnable(5, true);
@@ -92,7 +92,7 @@ function onSetCharacter(obj)
 		
 		
 		for (local i = 0; i < 6; i++)
-		{
+		{	
 			sq_SetSkillSlotPos(i, SKILLICON_START_X + (i*30), SKILLICON_START_Y);
 		}
 	}

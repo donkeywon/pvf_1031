@@ -72,6 +72,7 @@ function onSetState_Teleport(obj, state, datas, isResetTimer)
 		sq_var.push_vector(ENUM_DIRECTION_NEUTRAL);
 		sq_var.push_vector(ENUM_DIRECTION_NEUTRAL);
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_TELEPORT1);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		
 		local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, SKILL_TELEPORT, 
 		true, "Appendage/Character/ap_atmage_bodyeffect.nut", true);
@@ -79,6 +80,7 @@ function onSetState_Teleport(obj, state, datas, isResetTimer)
 	}
 	else if(substate == SUB_STATE_TELEPORT_1) {
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_TELEPORT2);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		
 	}
 	else if(substate == SUB_STATE_TELEPORT_2) {

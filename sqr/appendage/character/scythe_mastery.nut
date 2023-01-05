@@ -23,14 +23,14 @@ function isDrawAppend_appendage_priest_scythe_mastery(appendage)
 		return false;
 	}
 	
-	local obj = appendage.getParent();
+	local obj = appendage.getParent();	
 	
 	
 	if(obj) {
 	
 		switch(obj.getState())
-		{
-		case STATE_FASTMOVE :
+		{		
+		case STATE_FASTMOVE :		// 고속이동일때엔 사이드마스터리를 그리지 않는다..
 		case STATE_AVENGER_AWAKENING :
 		case STATE_EXECUTION :
 		case STATE_AWAKENING_TURN_OFF :

@@ -30,7 +30,7 @@ function onStart_appendage_avenger_effect(appendage)
 		return;
 	}
 	
-	local obj = appendage.getParent();
+	local obj = appendage.getParent();	
 	
 	
 }
@@ -42,7 +42,7 @@ function prepareDraw_appendage_avenger_effect(appendage)
 		return;
 	}
 	
-	local obj = appendage.getParent();
+	local obj = appendage.getParent();	
 }
 
 
@@ -92,7 +92,7 @@ function drawAppend_appendage_avenger_effect(appendage, isOver, x, y, isFlip)
 	
 	if(size > 0) {
 		//local aniList =[];
-		//aniList.resize(size);
+		//aniList.resize(size);		
 		for(local i=0;i<size;i+=1) {
 			local aniL = sq_getAniLayerListObject(pAni, i);
 			

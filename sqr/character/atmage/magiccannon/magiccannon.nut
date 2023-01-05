@@ -62,20 +62,25 @@ function onSetState_MagicCannon(obj, state, datas, isResetTimer)
 	
 	
 	if(subState == ENUM_MAGIC_CANNON_SUBSTATE_CHARGE) {
-		obj.sq_SetCurrentAnimation(CUSTOM_ANI_AT_MAGIC_CANNON_READY);		
+		obj.sq_SetCurrentAnimation(CUSTOM_ANI_AT_MAGIC_CANNON_READY);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		obj.sq_PlaySound("MW_MCANNON");		
 	}
 	else if(subState == ENUM_MAGIC_CANNON_SUBSTATE_HORIZON) {
-		obj.sq_SetCurrentAnimation(CUSTOM_ANI_AT_MAGIC_CANNON_1);		
+		obj.sq_SetCurrentAnimation(CUSTOM_ANI_AT_MAGIC_CANNON_1);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 	else if(subState == ENUM_MAGIC_CANNON_SUBSTATE_VERTICAL) {
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_AT_MAGIC_CANNON_3);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 	else if(subState == ENUM_MAGIC_CANNON_SUBSTATE_DIAGONAL) {
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_AT_MAGIC_CANNON_2);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 	else if(subState == ENUM_MAGIC_CANNON_SUBSTATE_LAND) {
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_AT_MAGIC_CANNON_4);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		obj.sq_StopMove();
 		obj.sq_PlaySound("MW_MCANNON");
 	}

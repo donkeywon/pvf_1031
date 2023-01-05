@@ -7,7 +7,7 @@
 //function setCustomData_po_SpincutterThrow(obj, data, size)
 function setCustomData_po_SpincutterThrow(obj,reciveData)
 {
-	//sq_BinaryStartRead(data);
+	//sq_BinaryStartRead(data);		
 	//local rate = sq_BinaryGetDWord();
 	
 	local rate = reciveData.readDword();
@@ -35,7 +35,7 @@ function procAppend_po_SpincutterThrow(obj)
 		return;
 	}
 	
-	local state = pChr.getState();
+	local state = pChr.getState();	
 	local substate = pChr.getSkillSubState();
 	local pAni = pChr.getCurrentAnimation();
     local frmIndex = pAni.GetCurrentFrameIndex();

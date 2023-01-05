@@ -154,14 +154,19 @@ function onSetState_BrokenArrow(obj, state, datas, isResetTimer)
 		obj.getVar("dash").push_vector(0);
 		
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_BROKENARROW1);
+/*
 		local pAni = obj.sq_GetCurrentAni();
 		pAni.setSpeedRate(200.0);
-
+*/
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 	else if(substate == SUB_STATE_BROKENARROW_1) {
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_BROKENARROW_LOOP1);
+/*
 		local pAni = obj.sq_GetCurrentAni();
 		pAni.setSpeedRate(200.0);
+*/
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 	else if(substate == SUB_STATE_BROKENARROW_2) {
 		// ´ë½¬1
@@ -203,9 +208,11 @@ function onSetState_BrokenArrow(obj, state, datas, isResetTimer)
 		}
 		
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_BROKENARROW_DASH1);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 	else if(substate == SUB_STATE_BROKENARROW_3) {
 		obj.sq_SetCurrentAttackInfo(CUSTOM_ATTACK_INFO_AT_MAGE_BROKENARROW);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_BROKENARROW_DASH2);
 		
 		obj.sq_PlaySound("MW_BARROW_FIN");

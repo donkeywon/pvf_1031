@@ -102,8 +102,7 @@ function onSetState_ElementalRain(obj, state, datas, isResetTimer)
 		local castAniTime = animation.getDelaySum(false);
 		
 		local speedRate = castAniTime.tofloat() / castTime.tofloat();
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED,
-			SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, speedRate, speedRate);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, speedRate, speedRate);
 
 		sq_StartDrawCastGauge(obj, castAniTime, true);		
 		obj.sq_PlaySound("MW_ERAIN_READY");
@@ -114,7 +113,7 @@ function onSetState_ElementalRain(obj, state, datas, isResetTimer)
 	else if (subState == SUB_STATE_ELEMENTAL_RAIN_JUMP)
 	{
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ELEMENTAL_RAIN_JUMP);
-		
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);		
 		sq_SetZVelocity(obj, 750, -1200);
 	}
 	else if (subState == SUB_STATE_ELEMENTAL_RAIN_CHARGE)
@@ -126,6 +125,7 @@ function onSetState_ElementalRain(obj, state, datas, isResetTimer)
 		obj.sq_ZStop();
 		// 충전
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ELEMENTAL_RAIN_JUMP_STAY);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		
 			
 		// 이펙트 에니메이션
@@ -169,6 +169,7 @@ function onSetState_ElementalRain(obj, state, datas, isResetTimer)
 	{		
 		// 마법구 발사
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ELEMENTAL_RAIN_SHOOT);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		
 		// 이펙트 에니메이션
 		local angle = sq_GetIntData(obj, SKILL_ELEMENTAL_RAIN, 5);
@@ -182,6 +183,7 @@ function onSetState_ElementalRain(obj, state, datas, isResetTimer)
 	{
 		// 충전 및 폭발구 생성, 땅으로의 착지
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ELEMENTAL_RAIN_CHARGE_SHOOT);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		
 		
 		// 이펙트 에니메이션

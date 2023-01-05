@@ -44,7 +44,9 @@ function onSetState_LightningWall(obj, state, datas, isResetTimer)
 	
 	obj.sq_StopMove();
 	obj.sq_SetCurrentAnimation(CUSTOM_ANI_LIGHTNING_WALL);
-	
+	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
+
+/*
 	// 캐스팅 속도를 따라가도록 설정
 	// 캐스팅 속도가 변경되면, 에니메이션 속도도 변경 됩니다.
 	// 캐스팅 게이지도 표시를 해줍니다.
@@ -53,8 +55,8 @@ function onSetState_LightningWall(obj, state, datas, isResetTimer)
 	local animation = sq_GetCurrentAnimation(obj);
 	local castAniTime = sq_GetFrameStartTime(animation, 6);
 	local speedRate = castAniTime.tofloat() / castTime.tofloat();
-	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED,
-		SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, speedRate, speedRate);
+	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, speedRate, speedRate);
+*/
 
 	sq_StartDrawCastGauge(obj, castAniTime, true);
 	

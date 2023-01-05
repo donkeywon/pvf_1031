@@ -23,7 +23,7 @@ function onAttack_PassiveObject(passiveobj, damager, bounding_box, is_stuck)
 	if(!passiveobj) return -1;
 	
 	if(passiveobj) {
-		local pChr = passiveobj.getTopCharacter();
+		local pChr = passiveobj.getTopCharacter();	
 		
 		if(!isGrowTypeAvenger(pChr)) return -1; // 어벤져가 다음으로 진행되서는 안됩니다..
 
@@ -42,15 +42,6 @@ function onAttack_PassiveObject(passiveobj, damager, bounding_box, is_stuck)
 	return 1;
 }
 
-function Common_onStartDungeon(obj)
-{
-	ReadAheadBuffAni(obj);
-}
-
-function Common_setState(obj, state, datas, isResetTimer)
-{
-	AllJobBuffNeo(obj);
-}
 
 // 캐릭터 선택창에 출력되는 전직효과 그리기
 function drawGrowAvatarAniType(job, growtype, x, y, isOver, is_draw)
@@ -167,21 +158,6 @@ function CNAimPointMarkCustomAnimation(obj, parentObj)
 	}
 
 	return false;
-}
-
-function drawMainCustomUI_All(obj) {
-    local objectManager = obj.getObjectManager();
-    if (!objectManager) return;
-    local CollisionObjectNumber = objectManager.getCollisionObjectNumber();
-    for (local i = 0; i < CollisionObjectNumber; i += 1) {
-        local object = objectManager.getCollisionObject(i);
-        if (object && object.isObjectType(OBJECTTYPE_ACTIVE) && obj.isEnemy(object) && object.isInDamagableState(obj) && object.getTeam() != 0) {
-            if (!CNSquirrelAppendage.sq_IsAppendAppendage(object, "appendage/character/ap_mob_effect.nut")) {
-                local append = CNSquirrelAppendage.sq_AppendAppendage(object, obj, -1, true, "appendage/character/ap_mob_effect.nut", false);
-                CNSquirrelAppendage.sq_AppendAppendageID(append, object, obj, 255, false);
-            }
-        }
-    }
 }
 
 // aim타겟 움직일 수 잇는 범위를 정하는 함수입니다.
@@ -375,18 +351,18 @@ function sq_LoadSkillEffect_DemonicSwordman(obj, skillIndex)
 	{
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave_DS/Start1.ani");		// bloodyRaveStartAnis_		0
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave_DS/Start2.ani");		// bloodyRaveStartAnis_		1
-		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave_DS/Loop1.ani");			// bloodyRaveLoopAnis_	2
-		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave_DS/Loop2.ani");			// bloodyRaveLoopAnis_	3
-		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave_DS/Line1.ani");			// bloodyRaveLineAnis_	4
-		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave_DS/Line2.ani");			// bloodyRaveLineAnis_	5
+		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave_DS/Loop1.ani");			// bloodyRaveLoopAnis_		2
+		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave_DS/Loop2.ani");			// bloodyRaveLoopAnis_		3
+		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave_DS/Line1.ani");			// bloodyRaveLineAnis_		4
+		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave_DS/Line2.ani");			// bloodyRaveLineAnis_		5
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave_DS/Typhoon.ani");		// bloodyRaveTyphoonAni_	6
-		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave_DS/End.ani");			// bloodyRaveEndAni_	7
+		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave_DS/End.ani");			// bloodyRaveEndAni_		7
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave_DS/Sword1.ani");		// bloodyRaveSwordAnis_		8
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave_DS/Sword2.ani");		// bloodyRaveSwordAnis_		9
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave_DS/Sword3.ani");		// bloodyRaveSwordAnis_		10
-		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave_DS/Sword4.ani");		// bloodyRaveSwordAnis_		11
+		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave_DS/Sword4.ani");		// bloodyRaveSwordAnis_		11		
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave/(TN)Sword2.ani");		// bloodyRaveSwordAnis_		12
-		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave/(TN)Sword4.ani");		// bloodyRaveSwordAnis_		13
+		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave/(TN)Sword4.ani");		// bloodyRaveSwordAnis_		13		
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave_DS/Hit.ani");		// 14
 	}
 	else if (skillIndex == SKILL_OUT_RAGE_BREAK)
@@ -425,9 +401,9 @@ function sq_LoadSkillEffect_DemonicSwordman(obj, skillIndex)
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/ChargeCrash_DS/dash.ani");			// 0
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/ChargeCrash_DS/up-slash.ani");		// 1
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/ChargeCrash_DS/charge.ani");		// 2
-		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/ChargeCrash_DS/down-slash.ani");	// 3
-		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/ChargeCrash_DS/dustdash.ani");		// 4
-		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/ChargeCrash_DS/dustdashlast.ani");	// 5
+		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/ChargeCrash_DS/down-slash.ani");	// 3	
+		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/ChargeCrash_DS/dustdash.ani");		// 4	
+		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/ChargeCrash_DS/dustdashlast.ani");	// 5	
 	}
 	else if (skillIndex == SKILL_ILLUSION_SLASH)
 	{
@@ -438,19 +414,19 @@ function sq_LoadSkillEffect_DemonicSwordman(obj, skillIndex)
 	{
 		obj.sq_LoadSkillEffectAni(skillIndex,"Effect/Animation/ShockWaveArea_DS/Cast.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex,"Effect/Animation/ShockWaveArea_DS/Smash.ani");
-		obj.sq_LoadSkillEffectAni(skillIndex,"Effect/Animation/ShockWaveArea_DS/Area.ani");
-	}
+		obj.sq_LoadSkillEffectAni(skillIndex,"Effect/Animation/ShockWaveArea_DS/Area.ani");		
+	}	
 	else if (skillIndex == SKILL_GRAND_WAVE)
 	{
 		obj.sq_LoadSkillEffectAni(skillIndex,"Effect/Animation/grandWaveOnCharge1.ani"); // 0
 		obj.sq_LoadSkillEffectAni(skillIndex,"Effect/Animation/grandWaveOnCharge2.ani"); // 1
 		obj.sq_LoadSkillEffectAni(skillIndex,"Effect/Animation/grandWave_DS.ani"); // 2
-	}
+	}	
 	else if (skillIndex == SKILL_REFLECT_GUARD)
 	{
 		obj.sq_LoadSkillEffectAni(skillIndex,"Effect/Animation/ReflectGuard_DS/charge.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex,"Effect/Animation/ReflectGuard_DS/slash.ani");
-	}
+	}	
 	
 }
 
@@ -477,7 +453,7 @@ function sq_LoadSkillEffect_Swordman(obj, skillIndex)
 	}
 	else if (skillIndex == SKILL_GHOST_STEP_SLASH)
 	{
-		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/GhostStepSlash/Move.ani"); // 0
+		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/GhostStepSlash/Move.ani"); // 0				
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/GhostStepSlash/Slash1.ani"); // 1
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/GhostStepSlash/Slash2.ani"); // 2
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/GhostStepSlash/Skull.ani"); // 2
@@ -503,9 +479,9 @@ function sq_LoadSkillEffect_Swordman(obj, skillIndex)
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/MomentarySlash/momentaryslash_white_ldodge_under.ani");	//4
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/MomentarySlash/momentaryslash_white_ldodge_upper.ani");	//5
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/MomentarySlash/momentaryslash_red_ldodge_under.ani");	//6
-		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/MomentarySlash/momentaryslash_red_ldodge_upper.ani");	//7
+		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/MomentarySlash/momentaryslash_red_ldodge_upper.ani");	//7		
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/MomentarySlash/Charge1.ani");							//8
-		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/MomentarySlash/Charge2.ani");							//9
+		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/MomentarySlash/Charge2.ani");							//9		
 	}
 	else if (skillIndex == SKILL_ASHEN_FORK)
 	{
@@ -584,13 +560,13 @@ function sq_LoadSkillEffect_Swordman(obj, skillIndex)
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave/Line1.ani");			// bloodyRaveLineAnis_		4
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave/Line2.ani");			// bloodyRaveLineAnis_		5
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave/Typhoon.ani");		// bloodyRaveTyphoonAni_	6
-		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave/End.ani");		// bloodyRaveEndAni_		7
+		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave/End.ani");			// bloodyRaveEndAni_		7
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave/Sword1.ani");		// bloodyRaveSwordAnis_		8
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave/Sword2.ani");		// bloodyRaveSwordAnis_		9
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave/Sword3.ani");		// bloodyRaveSwordAnis_		10
-		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave/Sword4.ani");		// bloodyRaveSwordAnis_		11
+		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave/Sword4.ani");		// bloodyRaveSwordAnis_		11		
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave/(TN)Sword2.ani");		// bloodyRaveSwordAnis_		12
-		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave/(TN)Sword4.ani");		// bloodyRaveSwordAnis_		13
+		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave/(TN)Sword4.ani");		// bloodyRaveSwordAnis_		13		
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/BloodyRave/Hit.ani");		// 14
 	}
 	else if (skillIndex == SKILL_OUT_RAGE_BREAK)
@@ -620,13 +596,13 @@ function sq_LoadSkillEffect_Swordman(obj, skillIndex)
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/WaveSpinArea/CircleBack.ani");
 	}
 	else if (skillIndex == SKILL_CHARGE_CRASH)
-	{
+	{					
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/ChargeCrash/dash.ani");			// 0
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/ChargeCrash/up-slash.ani");		// 1
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/ChargeCrash/charge.ani");		// 2
-		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/ChargeCrash/down-slash.ani");	// 3
-		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/ChargeCrash/dustdash.ani");		// 4
-		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/ChargeCrash/dustdashlast.ani");	// 5
+		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/ChargeCrash/down-slash.ani");	// 3	
+		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/ChargeCrash/dustdash.ani");		// 4	
+		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/ChargeCrash/dustdashlast.ani");	// 5	
 	}
 	else if (skillIndex == SKILL_ILLUSION_SLASH)
 	{
@@ -638,18 +614,18 @@ function sq_LoadSkillEffect_Swordman(obj, skillIndex)
 		obj.sq_LoadSkillEffectAni(skillIndex,"Effect/Animation/ShockWaveArea/Cast.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex,"Effect/Animation/ShockWaveArea/Smash.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex,"Effect/Animation/ShockWaveArea/Area.ani");
-	}
+	}	
 	else if (skillIndex == SKILL_GRAND_WAVE)
 	{
 		obj.sq_LoadSkillEffectAni(skillIndex,"Effect/Animation/grandWaveOnCharge1.ani"); // 0
 		obj.sq_LoadSkillEffectAni(skillIndex,"Effect/Animation/grandWaveOnCharge2.ani"); // 1
 		obj.sq_LoadSkillEffectAni(skillIndex,"Effect/Animation/grandWave.ani"); // 2
-	}
+	}	
 	else if (skillIndex == SKILL_REFLECT_GUARD)
 	{
 		obj.sq_LoadSkillEffectAni(skillIndex,"Effect/Animation/ReflectGuard/charge.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex,"Effect/Animation/ReflectGuard/slash.ani");
-	}
+	}	
 }
 
 

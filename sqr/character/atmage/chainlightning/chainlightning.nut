@@ -83,14 +83,14 @@ function onSetState_ChainLightning(obj, state, datas, isResetTimer)
 		local animation = sq_GetCurrentAnimation(obj);
 		local startTime = sq_GetFrameStartTime(animation, 16);
 		local speedRate = startTime.tofloat() / castTime.tofloat();
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED,
-			SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, speedRate, speedRate);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, speedRate, speedRate);
 
 		sq_StartDrawCastGauge(obj, startTime, true);
 		addElementalChain_ATMage(obj, ENUM_ELEMENT_LIGHT);
 	}
 	else if(substate == SUB_STATE_ATCHAINLIGHTNING_1) {
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_CHAINLIGHTNING);		
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		obj.sq_PlaySound("MW_CHAINLIGHT");
 
 		if(obj.isMyControlObject()) {
@@ -134,6 +134,7 @@ function onSetState_ChainLightning(obj, state, datas, isResetTimer)
 	}
 	else if(substate == SUB_STATE_ATCHAINLIGHTNING_2) {
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_CHAINLIGHTNING_END);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 	else if(substate == SUB_STATE_ATCHAINLIGHTNING_3) {
 		// SUB_STATE_ATCHAINLIGHTNING_3 서브스테이트 작업

@@ -77,8 +77,7 @@ function onSetState_Resonance(obj, state, datas, isResetTimer)
 	local animation = sq_GetCurrentAnimation(obj);
 	local startTime = sq_GetFrameStartTime(animation, 15);
 	local speedRate = startTime.tofloat() / castTime.tofloat();	
-	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED,
-		SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, speedRate, speedRate);
+	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, speedRate, speedRate);
 
 	sq_StartDrawCastGauge(obj, startTime, true);
 }

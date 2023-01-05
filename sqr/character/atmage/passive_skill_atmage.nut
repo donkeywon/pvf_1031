@@ -16,7 +16,7 @@ function ProcPassiveSkill_ATMage(obj, skill_index, skill_level)
 				print(" expression appendage:" + appendage);
 			if(appendage)
 			{
-				local magicalAtkChangeRate = sq_GetLevelData(obj, skill_index, SKL_LVL_COLUMN_IDX_1, skill_level);
+				local magicalAtkChangeRate = sq_GetLevelData(obj, skill_index, SKL_LVL_COLUMN_IDX_1, skill_level);				
 				
 				local change_appendage = appendage.sq_getChangeStatus("expression");
 				
@@ -94,7 +94,7 @@ function ProcPassiveSkill_ATMage(obj, skill_index, skill_level)
 function onUseSkillPassiveSkill_ATMage(obj,skillIndex, skillLevel)
 {
 	if(!obj)
-		return;
+		return;		
 		
 	print( " onuseskill");
 

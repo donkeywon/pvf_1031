@@ -1,6 +1,6 @@
 CNAvenger.pushScriptFiles("Character/Priest/avenger_header.nut"); // 어벤져  스크립트 개발을 위해 넣어둔 상수,enum값 모음  
 CNAvenger.pushScriptFiles("Character/Priest/avenger_common.nut"); //  이곳은 state로 구분짓는것이 아닌 어벤져 공통 함수 입니다..
-IRDSQRCharacter.pushScriptFiles("Character/Priest/priest_common.nut");
+
 CNAvenger.pushScriptFiles("Character/Priest/passive_skill_priest.nut");
 
 

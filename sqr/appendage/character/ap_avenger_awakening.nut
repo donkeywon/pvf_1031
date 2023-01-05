@@ -82,15 +82,15 @@ function onStart_appendage_avenger_awakening(appendage)
 		return;
 	}
 	
-	local obj = appendage.getParent();
+	local obj = appendage.getParent();	
 	
 	
 	obj.setObjectHeight(-1);
 	
 	//obj.setHp(2, null, false);
-	//appendage.sq_var.clear_vector();
-	//appendage.sq_var.push_vector(20000); // I_AVENGER_AWAKENING_TIME
-	//appendage.sq_var.push_vector(4000); // 완전 변신체 HP
+	//appendage.sq_var.clear_vector();		
+	//appendage.sq_var.push_vector(20000); // I_AVENGER_AWAKENING_TIME	
+	//appendage.sq_var.push_vector(4000); // 완전 변신체 HP 
 
 }
 
@@ -101,7 +101,7 @@ function prepareDraw_appendage_avenger_awakening(appendage)
 		return;
 	}
 	
-	local obj = appendage.getParent();
+	local obj = appendage.getParent();	
 }
 
 
@@ -113,7 +113,7 @@ function onEnd_appendage_avenger_awakening(appendage)
 		return;
 	}
 	
-	local obj = appendage.getParent();
+	local obj = appendage.getParent();		
 	obj.setObjectHeight(-1);
 	//appendage.sq_var.set_vector(I_AVENGER_AWAKENING_VALID, 0);
 	

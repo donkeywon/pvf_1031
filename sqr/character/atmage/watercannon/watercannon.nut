@@ -49,6 +49,7 @@ function onSetState_WaterCannon(obj, state, datas, isResetTimer)
 
 	obj.sq_StopMove();
 	obj.sq_SetCurrentAnimation(CUSTOM_ANI_WATER_CANNON);
+	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	//obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED,
 	//	SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	

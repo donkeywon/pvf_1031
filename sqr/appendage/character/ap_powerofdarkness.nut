@@ -23,7 +23,7 @@ function onStart_appendage_PowerOfDarkness(appendage)
 		return;
 	}
 	
-	local obj = appendage.getParent();
+	local obj = appendage.getParent();		
 
 }
 
@@ -35,7 +35,7 @@ function onEnd_appendage_PowerOfDarkness(appendage)
 		return;
 	}
 	
-	local obj = appendage.getParent();
+	local obj = appendage.getParent();		
 	if(obj && sq_IsMyControlObject(obj) ) {
 		sq_SimpleMoveToNearMovablePos(obj,200);
 		//obj.setObjectHeight(-1);

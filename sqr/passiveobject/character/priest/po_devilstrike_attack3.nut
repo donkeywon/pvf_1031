@@ -3,7 +3,7 @@
 
 function setCustomData_po_DevilStrike3(obj,reciveData)
 {
-	local rate = reciveData.readDword(); // 공격력(%)
+	local rate = reciveData.readDword(); // 공격력(%)		
 	
 	local pAttack = sq_GetCurrentAttackInfo(obj);
 	sq_SetCurrentAttackBonusRate(pAttack, rate);
@@ -23,7 +23,7 @@ function procAppend_po_DevilStrike3(obj)
 		return;
 	}
 	
-	local state = pChr.getState();
+	local state = pChr.getState();	
 	local substate = pChr.getSkillSubState();
 	local pAni = obj.getCurrentAnimation();
     local frmIndex = pAni.GetCurrentFrameIndex();

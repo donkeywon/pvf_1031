@@ -2,7 +2,7 @@ IRDSQRCharacter.pushScriptFiles("Character/CreatorMage/creatormage_header.nut");
 //******************************************************************************************
 // CreatorMage 공통
 //******************************************************************************************
-IRDSQRCharacter.pushScriptFiles("Character/CreatorMage/CreatorMage_header.nut"); // CreatorMage 스크립트 개발을 위해 넣어둔 상수(enum값 모음)
+IRDSQRCharacter.pushScriptFiles("Character/CreatorMage/CreatorMage_header.nut");	// CreatorMage 스크립트 개발을 위해 넣어둔 상수(enum값 모음)
 IRDSQRCharacter.pushScriptFiles("Character/CreatorMage/mousecontrol_lib.nut"); // 
 IRDSQRCharacter.pushScriptFiles("Character/CreatorMage/CreatorMage_common.nut"); //  이곳은 state로 구분짓는것이 아닌 남법사 공통 함수 입니다
 

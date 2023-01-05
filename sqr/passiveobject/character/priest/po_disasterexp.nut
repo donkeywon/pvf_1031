@@ -2,7 +2,7 @@
 //function setCustomData_po_DisasterExp(obj, data, size)
 function setCustomData_po_DisasterExp(obj,reciveData)
 {
-	local rate = reciveData.readDword();
+	local rate = reciveData.readDword();	
 	local pAttack = sq_GetCurrentAttackInfo(obj);
 	sq_SetCurrentAttackBonusRate(pAttack, rate);
 	
@@ -22,7 +22,7 @@ function procAppend_po_DisasterExp(obj)
 		return;
 	}
 	
-	local state = pChr.getState();
+	local state = pChr.getState();	
 	local substate = pChr.getSkillSubState();
 	//local pAni = pChr.getCurrentAnimation();
 	local pAni = sq_GetCurrentAnimation(obj);

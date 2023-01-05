@@ -953,7 +953,7 @@ function getTypeSkillIndex(obj, type)
 	case CREATOR_TYPE_WIND:
 		idx = SKILL_CREATORWIND;
 		break;
-	}
+	}	
 	
 	return idx;
 }
@@ -977,7 +977,7 @@ function drawMainCustomUI_CreatorMage(obj)
 	local offset = 36;
 
 	// 판그리기
-	local hudCreatorAni = sq_var.GetAnimationMap("hud_creator_back", "Character/Mage/CreatorAnimation/ui/hud_creator_back.ani");
+	local hudCreatorAni = sq_var.GetAnimationMap("hud_creator_back", "Character/Mage/CreatorAnimation/ui/hud_creator_back.ani");	
 	sq_DrawSpecificFrame(hudCreatorAni, x, y, false, 0, false, 1.0);
 	//
 	
@@ -999,7 +999,7 @@ function drawMainCustomUI_CreatorMage(obj)
 	
 	// 선택한 테두리 그리기
 	if (getCreatorSkillStateSkillIndex(obj) != -1)
-	{
+	{	
 		local type = getCreatorSkillStateSkillIndex(obj);
 		
 		local skillmgr = obj.getSkillManager();
@@ -1012,7 +1012,7 @@ function drawMainCustomUI_CreatorMage(obj)
 		}
 		
 		if (slot != -1)
-		{
+		{	
 			// 선택지 그리기
 			sq_AnimationProc(hud_creator_b_select);
 			sq_drawCurrentFrame(hud_creator_b_select, x + (slot * offset), y, false);
@@ -1022,7 +1022,7 @@ function drawMainCustomUI_CreatorMage(obj)
 	// 게이지 그리기
 	local hud_creator_b_gauge = sq_var.GetAnimationMap("hud_creator_b_gauge", "Character/Mage/CreatorAnimation/ui/hud_creator_b_gauge.ani");
 
-	// 속성스킬 게이지 그리기 부분입니다.
+	// 속성스킬 게이지 그리기 부분입니다.	
 	
 	local skillmgr = obj.getSkillManager();
 	
@@ -1030,7 +1030,7 @@ function drawMainCustomUI_CreatorMage(obj)
 		return;
 	
 	for (local i = CREATOR_TYPE_FLAME; i < CREATOR_TYPE_MAX; i++)
-	{
+	{	
 		local slot = -1;
 		
 		if (skillmgr)
@@ -1050,10 +1050,10 @@ function drawMainCustomUI_CreatorMage(obj)
 				max_gaugeValue = appendage.sq_var.get_vector(I_MAX_COUNT);
 				
 				gaugeValue = appendage.sq_var.get_vector(I_REMAIN_COUNT);
-				local rate = gaugeValue.tofloat() / max_gaugeValue.tofloat();
+				local rate = gaugeValue.tofloat() / max_gaugeValue.tofloat();			
 				local rgb = getCreatorTypeColor(obj, i);
 				local alpha = sq_ALPHA(255);
-				hud_creator_b_gauge.setImageRate(rate, 1.0);
+				hud_creator_b_gauge.setImageRate(rate, 1.0);	
 				local gaugePosX = x - 87;
 				sq_DrawSpecificFrameEffect_SIMPLE(hud_creator_b_gauge, gaugePosX + (slot * offset), y, 0, rgb, alpha, true);
 			}
@@ -1073,7 +1073,7 @@ function onProcSkillShop_CreatorMage(obj, control)
 	// 게이지 그리기
 	local hud_creator_b_gauge = sq_var.GetAnimationMap("hud_creator_b_gauge", "Character/Mage/CreatorAnimation/ui/hud_creator_b_gauge.ani");
 
-	// 속성스킬 게이지 그리기 부분입니다.
+	// 속성스킬 게이지 그리기 부분입니다.	
 	
 	local skillmgr = obj.getSkillManager();
 	
@@ -1081,7 +1081,7 @@ function onProcSkillShop_CreatorMage(obj, control)
 		return;
 	
 	for (local i = CREATOR_TYPE_FLAME; i < CREATOR_TYPE_MAX; i++)
-	{
+	{	
 		local slot = -1;
 		
 		if (skillmgr)
@@ -1101,10 +1101,10 @@ function onProcSkillShop_CreatorMage(obj, control)
 				max_gaugeValue = appendage.sq_var.get_vector(I_MAX_COUNT);
 				
 				gaugeValue = appendage.sq_var.get_vector(I_REMAIN_COUNT);
-				local rate = gaugeValue.tofloat() / max_gaugeValue.tofloat();
+				local rate = gaugeValue.tofloat() / max_gaugeValue.tofloat();			
 				local rgb = getCreatorTypeColor(obj, i);
 				local alpha = sq_ALPHA(255);
-				hud_creator_b_gauge.setImageRate(rate, 1.0);
+				hud_creator_b_gauge.setImageRate(rate, 1.0);	
 				local gaugePosX = x;
 				sq_DrawSpecificFrameEffect_SIMPLE(hud_creator_b_gauge, gaugePosX + (slot * offset), y, 0, rgb, alpha, true);
 			}
@@ -1125,7 +1125,7 @@ function drawCustomUI_CreatorMage(obj)
 	{
 		return;
 	}
-	// 커서그리기
+	// 커서그리기	
 	// 커서 그리기 부분입니다.
 	
 	
@@ -1160,7 +1160,7 @@ function drawCustomUI_CreatorMage(obj)
 		if (!stage)
 			return;
 		
-		local control = stage.getMainControl();
+		local control = stage.getMainControl();		
 
 		if (control.IsRBDown())
 		{ // 드로우일땐 커서를 바꿉니다.
@@ -1186,18 +1186,18 @@ function drawCustomUI_CreatorMage(obj)
 	else if (usingSkillIndex == CREATOR_TYPE_FLAME)
 	{
 		ani = obj.getVar().GetAnimationMap("FIRE", 
-			"Character/Mage/Effect/Animation/CreatorMagicSphere/firesphere.ani"); //
+			"Character/Mage/Effect/Animation/CreatorMagicSphere/firesphere.ani"); //		
 	}
-	else if (usingSkillIndex == CREATOR_TYPE_WIND)
+	else if (usingSkillIndex == CREATOR_TYPE_WIND)	
 	{
 		ani = obj.getVar().GetAnimationMap("WIND", 
 		"Character/Mage/Effect/Animation/CreatorMagicSphere/wind.ani"); //
-	}
+	}		
 
 	local state = obj.getState();
 
 	if (state == STATE_ICESHIELD)
-	{
+	{	
 		ani = obj.getVar().GetAnimationMap("SHIELD", 
 		"Character/Mage/Effect/Animation/CreatorMagicSphere/shield_cursor_dodge.ani"); //
 	}
@@ -1250,9 +1250,9 @@ function drawCustomUI_CreatorMage(obj)
 	
 	if (getCreatorSkillStateSkillIndex(obj) != -1)
 	{
-		local creator_guage_1 = sq_var.GetAnimationMap("creator_guage_1", "Character/Mage/CreatorAnimation/ui/creator_guage_1.ani");
-		local creator_guage_2 = sq_var.GetAnimationMap("creator_guage_2", "Character/Mage/CreatorAnimation/ui/creator_guage_2.ani");
-		local creator_guage_3 = sq_var.GetAnimationMap("creator_guage_3", "Character/Mage/CreatorAnimation/ui/creator_guage_3.ani");
+		local creator_guage_1 = sq_var.GetAnimationMap("creator_guage_1", "Character/Mage/CreatorAnimation/ui/creator_guage_1.ani");	
+		local creator_guage_2 = sq_var.GetAnimationMap("creator_guage_2", "Character/Mage/CreatorAnimation/ui/creator_guage_2.ani");	
+		local creator_guage_3 = sq_var.GetAnimationMap("creator_guage_3", "Character/Mage/CreatorAnimation/ui/creator_guage_3.ani");	
 		local creator_guage_4 = sq_var.GetAnimationMap("creator_guage_4", "Character/Mage/CreatorAnimation/ui/creator_guage_4.ani");
 		local type = getCreatorSkillStateSkillIndex(obj);
 		
@@ -1298,10 +1298,10 @@ function drawCustomUI_CreatorMage(obj)
 
 	
 	// 선택한 스킬인덱스 그리기	
-	local main_gauge_b_select = sq_var.GetAnimationMap("main_gauge_b_select", "Character/Mage/CreatorAnimation/ui/main_gauge_b_select.ani");
+	local main_gauge_b_select = sq_var.GetAnimationMap("main_gauge_b_select", "Character/Mage/CreatorAnimation/ui/main_gauge_b_select.ani");	
 	
 	if (getCreatorSkillStateSkillIndex(obj) != -1)
-	{
+	{		
 		local off = 32;
 		local type = getCreatorSkillStateSkillIndex(obj);
 
@@ -1357,7 +1357,7 @@ function drawCustomUI_CreatorMage(obj)
 		if (!stage)
 			return;
 		
-		local control = stage.getMainControl();
+		local control = stage.getMainControl();		
 		
 		if (control.IsLBDown())
 		{
@@ -1399,7 +1399,7 @@ function onStartMap_CreatorMage(obj)
 
 function resetDungeonStart_CreatorMage(obj, moduleType, resetReason, isDeadTower, isResetSkillUserCount)
 {
-	if (!obj) return -1;
+	if (!obj) return -1;	
 
 	if (!obj.isMyControlObject())
 		return -1;
@@ -1412,7 +1412,7 @@ function resetDungeonStart_CreatorMage(obj, moduleType, resetReason, isDeadTower
 	if (sq_GetCurrentModuleType() == MODULE_TYPE_ROOM_LIST || sq_GetCurrentModuleType() == MODULE_TYPE_ENTRANCE || sq_GetCurrentModuleType() == MODULE_TYPE_SELECT_DUNGEON)
 	{
 		unLockMouse(obj);
-	}
+	}	
 	else
 	{
 		print(" game module:" + sq_GetCurrentModuleType());
@@ -1424,7 +1424,7 @@ function resetDungeonStart_CreatorMage(obj, moduleType, resetReason, isDeadTower
 	if (!sq_IsTowerDungeon())
 	{
 		for (local i = CREATOR_TYPE_FLAME; i < CREATOR_TYPE_MAX; i++)
-		{
+		{	
 			local slot = -1;
 		
 			local skillmgr = obj.getSkillManager();
@@ -1484,6 +1484,7 @@ function onStartDungeon_CreatorMage(obj)
 	}
 }
 
+
 // 윈도우가 활성화 됐을때 호출되는 콜백함수 입니다.
 function onActiveWindow_CreatorMage(obj, activeState)
 {
@@ -1512,6 +1513,7 @@ function onInActiveWindow_CreatorMage(obj)
 }
 
 
+
 function onChangeSkillEffect_CreatorMage(obj, skillIndex, reciveData)
 {
 	if (!obj)
@@ -1522,6 +1524,7 @@ function onChangeSkillEffect_CreatorMage(obj, skillIndex, reciveData)
 		onChangeSkillEffect_Mgrab(obj, skillIndex, reciveData);
 	}
 }
+
 
 function procAppend_CreatorMage(obj)
 {
@@ -1538,7 +1541,7 @@ function procAppend_CreatorMage(obj)
 	if (!obj.isMyControlObject())
 		return 0;
 
-	local STATE_ACTIVE = 1;
+	local STATE_ACTIVE = 1;		
 	
 	local cashState = sq_GetStateCashShop();
 	local isClipCursor = sq_IsClipCursor(); // 커서가 갇혀있는지 체크합니다.
@@ -1593,7 +1596,7 @@ function procAppend_CreatorMage(obj)
 				// 현재 마우스 좌표가 윈도우 화면안쪽에 있는 체크합니다.
 				//print(" isClipCursor:" + isClipCursor);
 				if (!isClipCursor)
-				{ // 마우스락이 풀린 상태라면
+				{ // 마우스락이 풀린 상태라면					
 					//print(" isopencreator:" + sq_IsOpenCreatorControlPopupWindows());
 					if (!sq_IsOpenCreatorControlPopupWindows())
 					{
@@ -1617,6 +1620,7 @@ function procAppend_CreatorMage(obj)
 	}
 
 		
+
 	return 1;
 }
 
@@ -1731,7 +1735,7 @@ function onMouseButtonDown_ProcSkill(obj, usingSkillIndex)
 		}
 	}
 	else if (usingSkillIndex == SKILL_ICESHIELD)
-	{
+	{	
 		if (obj.isExcutableState(SKILL_CREATORGUARDIAN))
 		{
 			local consumeValue = getCreatorSkillConsumeValue(obj, usingSkillIndex);
@@ -1759,7 +1763,7 @@ function onMouseButtonDown_ProcSkill(obj, usingSkillIndex)
 			}
 		}
 	}
-	else if (usingSkillIndex == SKILL_WINDSTORM)
+	else if (usingSkillIndex == SKILL_WINDSTORM)	
 	{
 		local consumeValue = getCreatorSkillConsumeValue(obj, usingSkillIndex);
 
@@ -1810,7 +1814,7 @@ function onMouseButtonDown_ProcSkill(obj, usingSkillIndex)
 		
 			if (hoverEnemyObject)
 			{
-				yPos = hoverEnemyObject.getYPos();
+				yPos = hoverEnemyObject.getYPos();							
 			
 				if (hoverEnemyObject.getZPos() > 0)
 				{
@@ -1825,7 +1829,7 @@ function onMouseButtonDown_ProcSkill(obj, usingSkillIndex)
 			sq_SetCurrentAttackInfo(obj, sq_GetCurrentAttackInfo(obj));
 
 			obj.sq_StartWrite();
-			sq_BinaryWriteWord(0);
+			sq_BinaryWriteWord(0);		// 더미
 			sq_SendCreatePassiveObjectPacketPos(obj, 24353, 0, xPos, yPos, zPos);
 		}
 	}
@@ -1933,7 +1937,7 @@ function onMouseRightButtonUp_CreatorMage(obj)
 
 	local usingSkillIndex = getRButtonSkill(obj);
 	
-	onMouseButtonUp_ProcSkill(obj, usingSkillIndex);
+	onMouseButtonUp_ProcSkill(obj, usingSkillIndex);	
 		
 }
 
@@ -1966,7 +1970,7 @@ function onMouseMoveCharacter_CreatorMage(obj, x, y)
 		return;
 	
 	x = IMouse.GetXPos();
-	y = IMouse.GetYPos();
+	y = IMouse.GetYPos();	
 	
 	local control = stage.getMainControl();	
 	
@@ -1986,7 +1990,7 @@ function onMouseMoveCharacter_CreatorMage(obj, x, y)
 	{
 		onMouseMoveCharacter_Firewall(obj, x, y);
 	}
-	else if (usingSkillIndex == SKILL_WOODFENCE)
+	else if (usingSkillIndex == SKILL_WOODFENCE)	
 	{
 		onMouseMoveCharacter_WoodFence(obj, x, y);
 	}

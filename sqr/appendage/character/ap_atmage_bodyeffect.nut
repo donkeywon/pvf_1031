@@ -32,7 +32,7 @@ function onStart_appendage_atmage_bodyeffect(appendage)
 		return;
 	}
 	
-	local obj = appendage.getParent();
+	local obj = appendage.getParent();	
 	
 	appendage.getVar().clear_vector();
 	appendage.getVar().push_vector(0);
@@ -48,7 +48,7 @@ function prepareDraw_appendage_atmage_bodyeffect(appendage)
 		return;
 	}
 	
-	local obj = appendage.getParent();
+	local obj = appendage.getParent();	
 }
 
 
@@ -178,7 +178,7 @@ function drawAppend_appendage_atmage_bodyeffect(appendage, isOver, x, y, isFlip)
 				appendage.getVar().set_vector(APPENDAGE_INDEX_ISEND, 1);
 			}
 		}
-	}
+	}	
 	
 }
 

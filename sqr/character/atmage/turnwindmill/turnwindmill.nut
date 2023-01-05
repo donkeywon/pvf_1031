@@ -74,8 +74,7 @@ function onSetState_TurnWindmill(obj, state, datas, isResetTimer)
 	
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_TURNWINDMILL1);
 		
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED,
-				SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		
 		//local term = obj.sq_GetIntData(SKILL_TURNWINDMILL, 0); // 0. 다단히트 간격
 		local ani = obj.sq_GetCurrentAni();
@@ -134,8 +133,7 @@ function onSetState_TurnWindmill(obj, state, datas, isResetTimer)
 		//}
 	
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_TURNWINDMILL2);
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED,
-				SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 	else if(substate == SUB_STATE_TURNWINDMILL_2) {
 		// SUB_STATE_TURNWINDMILL_2 서브스테이트 작업

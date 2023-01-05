@@ -100,6 +100,7 @@ function onSetState_ElementalStrikeEx(obj, state, datas, isResetTimer)
 		}
 	
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ELEMENTAL_STRIKE_EX);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		
 		local currentAni = obj.getCurrentAnimation();
 		

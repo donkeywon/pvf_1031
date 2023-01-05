@@ -51,7 +51,8 @@ function onSetState_Concentrate(obj, state, datas, isResetTimer)
 	addElementalChain_ATMage(obj, element);
 		
 		
-	obj.sq_SetCurrentAnimation(CUSTOM_ANI_CONCENTRATE_EX);		
+	obj.sq_SetCurrentAnimation(CUSTOM_ANI_CONCENTRATE_EX);
+	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 
 	// 사운드 플레이	
 	obj.sq_PlaySound("MW_CONCENTRATE");

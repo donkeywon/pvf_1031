@@ -56,8 +56,7 @@ function onSetState_IceArea(obj, state, datas, isResetTimer)
 	local animation = sq_GetCurrentAnimation(obj);
 	local castAniTime = sq_GetFrameStartTime(animation, 2);
 	local speedRate = castAniTime.tofloat() / castTime.tofloat();
-	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED,
-		SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, speedRate, speedRate);
+	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, speedRate, speedRate);
 
 	sq_StartDrawCastGauge(obj, castAniTime, true);
 	addElementalChain_ATMage(obj, ENUM_ELEMENT_WATER);

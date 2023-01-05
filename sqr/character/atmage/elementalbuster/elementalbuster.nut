@@ -168,6 +168,7 @@ function onSetState_ElementalBuster(obj, state, datas, isResetTimer)
 	// 캐스팅
 	//animationIndex = ANIMATION_TABLE[animationIndex];
 	obj.sq_SetCurrentAnimation(animationIndex);
+	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	
 	
 	
@@ -179,15 +180,13 @@ function onSetState_ElementalBuster(obj, state, datas, isResetTimer)
 		local castAniTime = animation.getDelaySum(false);
 
 		local speedRate = castAniTime.tofloat() / castTime.tofloat();
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED,
-			SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, speedRate, speedRate);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, speedRate, speedRate);
 		sq_StartDrawCastGauge(obj, castAniTime, true);
 		obj.sq_PlaySound("MW_EBUSTER_READY");
 	}
 	else
 	{
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CONST, SPEED_TYPE_CONST,
-			SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 	
 	if (!isCast) // 발사

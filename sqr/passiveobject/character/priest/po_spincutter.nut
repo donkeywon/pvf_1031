@@ -15,7 +15,7 @@ VECTOR_I_ATTACK_RATE <- 3 // °ø°Ý·Â
 //function setCustomData_po_Spincutter(obj, data, size)
 function setCustomData_po_Spincutter(obj,reciveData)
 {
-	//sq_BinaryStartRead(data);
+	//sq_BinaryStartRead(data);		
 	//local multi_count = sq_BinaryGetDWord();
 	//local rate = sq_BinaryGetDWord();
 	local multi_count = reciveData.readDword();
@@ -29,7 +29,7 @@ function setCustomData_po_Spincutter(obj,reciveData)
 	obj.sq_var.push_vector(0);
 	obj.sq_var.push_vector(0);
 	
-	obj.sq_var.set_vector(VECTOR_I_MULTI_HIT_COUNT, multi_count);
+	obj.sq_var.set_vector(VECTOR_I_MULTI_HIT_COUNT, multi_count);	
 	obj.sq_var.set_vector(VECTOR_I_ATTACK_RATE, rate);
 	
 	local attackInfo = sq_GetCustomAttackInfo(obj, 0);
@@ -73,7 +73,7 @@ function setState_po_Spincutter(obj, state, datas)
 		//print("objectx:" + objectX + "getxpos" + obj.getXPos());
 		
 		local attackInfo = sq_GetDefaultAttackInfo(obj);
-		sq_SetCurrentAttackInfo(obj, attackInfo);
+		sq_SetCurrentAttackInfo(obj, attackInfo);		
 		local rate = obj.sq_var.get_vector(VECTOR_I_ATTACK_RATE);
 		
 		local current_attack_info = sq_GetCurrentAttackInfo(obj);
@@ -81,7 +81,7 @@ function setState_po_Spincutter(obj, state, datas)
 		sq_SetCurrentAttackBonusRate(current_attack_info, rate);
 		
 		
-		local pAni = obj.getCurrentAnimation();
+		local pAni = obj.getCurrentAnimation();	
 		
 		local initDelay = 0;
 		local attackTime = pAni.getDelaySum(false);
@@ -106,9 +106,9 @@ function procAppend_po_Spincutter(obj)
 	{
 		sq_SendDestroyPacketPassiveObject(obj);
 		return;
-	}
+	}	
 	
-	local state = pChr.getState();
+	local state = pChr.getState();	
 	local substate = pChr.getSkillSubState();
 	local pAni = pChr.getCurrentAnimation();
     local frmIndex = pAni.GetCurrentFrameIndex();
@@ -140,9 +140,9 @@ function procAppend_po_Spincutter(obj)
 
 	    			obj.addSetStatePacket(S_PO_SPINCUTTER_RECALL, pIntVec, STATE_PRIORITY_AUTO, false, "");
 	    			//sq_addSetStatePacketColObj(obj, S_PO_SPINCUTTER_RECALL);
-	    		}
+	    		} 
     	}
-    	else {
+    	else {    	
     		if(obj.getState() == S_PO_SPINCUTTER_RECALL) {
     			local dstX = sq_GetDistancePos(pChr.getXPos(), obj.getDirection(), 80);
     			//local dstX = pChr.getXPos();
@@ -176,7 +176,7 @@ function procAppend_po_Spincutter(obj)
 	
 	if (obj.timer_.isOnEvent(time) == true) {
 		//print("resetHitObjectList");
-		obj.resetHitObjectList();
+		obj.resetHitObjectList();    
 	}
 
 	

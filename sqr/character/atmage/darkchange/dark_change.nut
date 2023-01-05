@@ -68,14 +68,14 @@ function onSetState_DarkChange(obj, state, datas, isResetTimer)
 		local castAniTime = sq_GetFrameStartTime(animation, 5);
 		local speedRate = castAniTime.tofloat() / castTime.tofloat();
 		
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED,
-			SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, speedRate, speedRate);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, speedRate, speedRate);
 
 		sq_StartDrawCastGauge(obj, castAniTime, true);
 		obj.sq_PlaySound("MW_DCHANGE");
 	}
 	else if(substate == SUB_STATE_DARK_CHANGE_START) {
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_DARK_CHANGE_START);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		sq_flashScreen(obj,0,0,800,150, sq_RGB(0,0,0), GRAPHICEFFECT_NONE, ENUM_DRAWLAYER_BOTTOM);
 		
 		local dark_range = sq_GetLevelData(obj, SKILL_DARK_CHANGE, 1, skill_level);

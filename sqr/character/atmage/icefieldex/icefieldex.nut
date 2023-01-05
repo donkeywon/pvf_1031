@@ -36,7 +36,8 @@ function onSetState_IceFieldEx(obj, state, datas, isResetTimer)
 	if(!obj) return;	
 	
 	obj.sq_StopMove();
-	obj.sq_SetCurrentAnimation(CUSTOM_ANI_ICE_FIELD_EX);	
+	obj.sq_SetCurrentAnimation(CUSTOM_ANI_ICE_FIELD_EX);
+	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	obj.sq_PlaySound("MW_ICEFIELD");
 }
 

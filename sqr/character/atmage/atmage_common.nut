@@ -7,12 +7,12 @@ function destroyObject(obj)
 		local vObj = obj.getVar().get_obj_vector(i);
 		if(vObj == null)
 			continue;
-			
+
 		vObj.setValid(false);
 	}
-	
+
 	obj.getVar().clear_obj_vector();
-	
+
 }
 
 function destroyObjectByVar(obj, varStr)
@@ -23,34 +23,34 @@ function destroyObjectByVar(obj, varStr)
 		local vObj = obj.getVar(varStr).get_obj_vector(i);
 		if(vObj == null)
 			continue;
-			
+
 		vObj.setValid(false);
 	}
-	
+
 	obj.getVar(varStr).clear_obj_vector();
-	
+
 }
 
 
 function getAngle(xPos1, yPos1, xPos2, yPos2)
 {
-	// µÎ ÁöÁ¡°£ÀÇ °Å¸®¸¦ ±¸ÇÑ´Ù
+	// ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Å¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ñ´ï¿½
 	local xDistance = (xPos2 - xPos1);
 	local yDistance = (yPos2 - yPos1);
 
 	print(" xDistance:" + xDistance + " yDistance:" + yDistance);
-	
+
 	xDistance = sq_Abs(xDistance);
 	yDistance = sq_Abs(yDistance);
 
-	// ¾ÆÅ© ÅºÁ¨Æ®·Î °¢µµ¸¦ ±¸ÇÑ´Ù
+	// ï¿½ï¿½Å© Åºï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ñ´ï¿½
 	local radian = sq_Atan2(yDistance.tofloat(), xDistance.tofloat());
-	
-	// ¶óµð¾ÈÀ» degree ·Î º¯È¯
+
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ degree ï¿½ï¿½ ï¿½ï¿½È¯
 	local angle = sq_ToDegree(radian);
-	// 0 ~ 360 »çÀÌÀÇ °ªÀ» ±¸ÇÏ±â À§ÇÔ
-	// 360 À» ´õÇÏ´Â ÀÌÀ¯´Â 360º¸´Ù ³·Àº °ªÀ» À×¿©¿¬»êÀ» ÇÏ¸é
-	// 0 ÀÌ ³ª¿À¹Ç·Î
+	// 0 ~ 360 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½
+	// 360 ï¿½ï¿½ ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 360ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½×¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï¸ï¿½
+	// 0 ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½
 	print(" radian:" + radian + " angle:" + angle);
 	return (angle + 360) % 360;
 }
@@ -59,14 +59,14 @@ function getObjectAngle(orgObj, dstObj)
 {
 	if(!orgObj || !dstObj)
 		return 9999.0;
-		
+
 	return getAngle(orgObj.getXPos(), orgObj.getYPos(), dstObj.getXPos(), dstObj.getYPos());
 }
 
 
 
 function isInFrontObject(orgObj, dstObj)
-{ // ÀûÀÌ ³» ¾Õ¿¡ ÀÖ´ÂÁö Ã¼Å©ÇÏ´Â ÇÔ¼ö ÀÔ´Ï´Ù.
+{ // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Õ¿ï¿½ ï¿½Ö´ï¿½ï¿½ï¿½ Ã¼Å©ï¿½Ï´ï¿½ ï¿½Ô¼ï¿½ ï¿½Ô´Ï´ï¿½.
 	if(orgObj.getDirection() == ENUM_DIRECTION_RIGHT)
 	{
 		if(orgObj.getXPos() < dstObj.getXPos())
@@ -77,26 +77,26 @@ function isInFrontObject(orgObj, dstObj)
 		if(orgObj.getXPos() > dstObj.getXPos())
 			return true;
 	}
-	
+
 	return false;
 }
 
 
-// °Å¸®¿Í °¢µµ·Î Å¸°ÙÀ» Ã£¾Æ³»¾î ¸®ÅÏÇÏ´Â ÇÔ¼öÀÔ´Ï´Ù.
+// ï¿½Å¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½Æ³ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ô¼ï¿½ï¿½Ô´Ï´ï¿½.
 function findAngleTarget(obj, distance, angle, targetMaxHeight)
 {
 	if(!obj)
 		return null;
-		
+
 	local objectManager = obj.getObjectManager();
-	
+
 
 	if (objectManager == null)
 		return null;
 
 	local minDistance = 0;
 	local target = null;
-	
+
 
 	for (local i = 0; i < objectManager.getCollisionObjectNumber(); i+=1)
 	{
@@ -105,12 +105,12 @@ function findAngleTarget(obj, distance, angle, targetMaxHeight)
 			isInFrontObject(obj, object) && object.getZPos() <= targetMaxHeight)
 		{
 			local activeObj = sq_GetCNRDObjectToActiveObject(object);
-			//	¿µ¿ª ³»¿¡¼­ °¡Àå °¡±î¿î ÀûÀ» °í¸¥´Ù
-			
+			//	ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
 			if(!activeObj.isDead())
 			{
 				//local testAngle = CNRDObject.getAngle(0, 0, 10, 10, false);
-				
+
 				print( " angle:" + getObjectAngle(obj, object));
 				if(sq_GetDistanceObject(obj, object, false) < distance && getObjectAngle(obj, object) < angle)
 				{
@@ -127,45 +127,45 @@ function findAngleTarget(obj, distance, angle, targetMaxHeight)
 	return target;
 }
 
-// ¿äÃ»ÇÑ º¤ÅÍ getvar ¿ÀºêÁ§Æ® ¸®½ºÆ®¾È¿¡ °°Àº ¿ÀºêÁ§Æ®°¡ ÀÖ´ÂÁö Ã¼Å©ÇÏ´Â ÇÔ¼öÀÔ´Ï´Ù.
-// orgObj : ºñ±³ÇÒ objectÀÔ´Ï´Ù.
-// sq_var get_obj_vector_size ºñ±³ÇÒ ¸®½ºÆ®µé
+// ï¿½ï¿½Ã»ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ getvar ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½Æ®ï¿½È¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Ö´ï¿½ï¿½ï¿½ Ã¼Å©ï¿½Ï´ï¿½ ï¿½Ô¼ï¿½ï¿½Ô´Ï´ï¿½.
+// orgObj : ï¿½ï¿½ï¿½ï¿½ objectï¿½Ô´Ï´ï¿½.
+// sq_var get_obj_vector_size ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½
 function isSameObjectBySqVar(orgObj, sq_var)
 {
 	if(!orgObj || !sq_var)
 		return false;
-	
+
 	local i;
 	local object_num = sq_var.get_obj_vector_size();
-	
+
 	for(i = 0; i < object_num; i++)
-	{ // ºö ¿ÀºêÁ§Æ® ¾Ö´Ï¸ÞÀÌ¼ÇÀ» »ç¶óÁöµµ·Ï ÇÏ´Â ¾Ö´Ï¸ÞÀÌ¼ÇÀ¸·Î ¸ðµÎ ±³Ã¼ÇÑ´Ù..
+	{ // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½Ö´Ï¸ï¿½ï¿½Ì¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï´ï¿½ ï¿½Ö´Ï¸ï¿½ï¿½Ì¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½Ñ´ï¿½..
 		local dstObj = sq_var.get_obj_vector(i);
-		
+
 		local isSame = isSameObject(orgObj, dstObj);
-		
-		if(isSame) // Áßº¹µÇ´Â °ÍÀÌ ÀÖ´Ù¸é..
+
+		if(isSame) // ï¿½ßºï¿½ï¿½Ç´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´Ù¸ï¿½..
 			return true;
 	}
-	
+
 	return false;
-	
+
 }
 
 function getBossTarget(obj, firstTargetXStartRange, firstTargetXEndRange, firstTargetYRange, targetMaxHeight, exceptSqVar)
 {
 	if(!obj)
 		return null;
-		
+
 	local objectManager = obj.getObjectManager();
-	
+
 
 	if (objectManager == null)
 		return null;
 
 	//local minDistance = 0;
 	local target = null;
-	
+
 
 	for (local i = 0; i < objectManager.getCollisionObjectNumber(); i+=1)
 	{
@@ -176,13 +176,13 @@ function getBossTarget(obj, firstTargetXStartRange, firstTargetXEndRange, firstT
 			if(sq_IsinMapArea(obj, object, firstTargetXStartRange, firstTargetXEndRange, firstTargetYRange))
 			{
 				local activeObj = sq_GetCNRDObjectToActiveObject(object);
-				
+
 				if(!activeObj.isDead())
-				{ // Á×Áö ¾ÊÀº
+				{ // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 					if(activeObj.isBoss())
-					{ // º¸½º
+					{ // ï¿½ï¿½ï¿½ï¿½
 						local isExist = isSameObjectBySqVar(object, exceptSqVar);
-						
+
 						if(!isExist || target == null)
 						{
 							target = activeObj;
@@ -201,16 +201,16 @@ function getPriorityTarget(obj, firstTargetXStartRange, firstTargetXEndRange, fi
 {
 	if(!obj)
 		return null;
-		
+
 	local objectManager = obj.getObjectManager();
-	
+
 
 	if (objectManager == null)
 		return null;
 
 	//local minDistance = 0;
 	local target = null;
-	
+
 
 	for (local i = 0; i < objectManager.getCollisionObjectNumber(); i+=1)
 	{
@@ -228,59 +228,59 @@ function getPriorityTarget(obj, firstTargetXStartRange, firstTargetXEndRange, fi
 			if(sq_IsinMapArea(obj, object, firstTargetXStartRange, firstTargetXEndRange, firstTargetYRange))
 			{
 				local activeObj = sq_GetCNRDObjectToActiveObject(object);
-				
+
 				if(!activeObj.isDead())
-				{ // Á×Áö ¾ÊÀº
+				{ // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 					local isExist = isSameObjectBySqVar(object, exceptSqVar);
-					
+
 					if(activeObj.isBoss())
 					{
 						if(target == null)
 						{
 							target = activeObj;
-							
+
 							if(!isExist)
 								return target;
 						}
 					}
-					
+
 					if(activeObj.isSuperChampion())
-					{ // º¸½º
+					{ // ï¿½ï¿½ï¿½ï¿½
 						if(target == null || !isExist)
 						{
 							target = activeObj;
-							
+
 							if(!isExist)
 								return target;
 						}
 					}
-					
+
 					if(activeObj.isCommonChampion())
 					{
 						if(target == null || !isExist)
 						{
 							target = activeObj;
-							
+
 							if(!isExist)
 								return target;
 						}
 					}
-					
+
 					if(activeObj.isChampion())
 					{
 						if(target == null || !isExist)
 						{
 							target = activeObj;
-							
+
 							if(!isExist)
 								return target;
 						}
 					}
-					
+
 					if(target == null || !isExist)
 					{
 						target = activeObj;
-						
+
 						if(!isExist)
 							return target;
 					}
@@ -298,7 +298,7 @@ function getPriorityTarget(obj, firstTargetXStartRange, firstTargetXEndRange, fi
 function createPaticleMap(obj, filename, x, y, z)
 {
 	local particleCreater = obj.getVar().GetparticleCreaterMap(filename, filename, obj);
-		
+
 	particleCreater.Restart(0);
 	particleCreater.SetPos(x, y, z);
 	sq_AddParticleObject(obj, particleCreater);
@@ -308,16 +308,16 @@ function initGetVarTimer(obj, maxTimerNum, eventTerm, eventMaxCount)
 {
 	if(maxTimerNum <= 0)
 		return;
-		
+
 	local sq_var = obj.getVar();
-	
+
 	sq_var.clear_timer_vector();
-	
+
 	for (local i = 0;i < maxTimerNum; i+=1)
 	{
 		sq_var.push_timer_vector();
 	}
-	
+
 	for (local i = 0;i < maxTimerNum; i+=1)
 	{
 		local t = sq_var.get_timer_vector(i);
@@ -331,17 +331,17 @@ function initGetVarTimer(obj, maxTimerNum, eventTerm, eventMaxCount)
 function procParticleCreaterMap(obj, currentT, filename, x, y, z)
 {
 	local t = obj.getVar().get_timer_vector(0);
-	
+
 	if(!t)
 		return;
-	
+
 	if(t.isOnEvent(currentT) == true)
 	{
 		local particleCreater = obj.getVar().GetparticleCreaterMap(filename, filename, obj);
-			
+
 		particleCreater.Restart(0);
 		particleCreater.SetPos(x, y, z);
-		
+
 		sq_AddParticleObject(obj, particleCreater);
 	}
 }
@@ -351,31 +351,31 @@ function createAnimationPooledObject(obj, aniFilename, isAutoDestroy, x, y, z)
 {
 	local ani = sq_CreateAnimation("",aniFilename);
 	local pooledObj = sq_CreatePooledObject(ani,isAutoDestroy);
-	
+
 	pooledObj.setCurrentPos(x,y,z);
 	sq_SetCurrentDirection(pooledObj, obj.getDirection());
-	
+
 	sq_AddObject(obj, pooledObj, OBJECTTYPE_DRAWONLY, false);
-	
+
 	return pooledObj;
 }
 
 function createAnimationImageRatePooledObject(obj, aniFilename, isAutoDestroy, widthRate, heightRate, x, y, z)
 {
 	local ani = sq_CreateAnimation("",aniFilename);
-	
+
 	if(!ani)
 		return null;
-	
+
 	ani.setImageRateFromOriginal(widthRate, heightRate);
-	
+
 	local pooledObj = sq_CreatePooledObject(ani,isAutoDestroy);
-	
+
 	pooledObj.setCurrentPos(x,y,z);
 	sq_SetCurrentDirection(pooledObj, obj.getDirection());
-	
+
 	sq_AddObject(obj, pooledObj, OBJECTTYPE_DRAWONLY, false);
-	
+
 	return pooledObj;
 }
 
@@ -385,21 +385,21 @@ function createAnimationImageRatePooledObject(obj, aniFilename, isAutoDestroy, w
 function procSkill_IceRoad(obj)
 {
 	local appendage = obj.GetSquirrelAppendage("Character/ATMage/IceRoad/ap_ATMage_IceRoad.nut");
-	
+
 	if(appendage) {
 		local isvalid = appendage.isValid();
 		if(isvalid) {
 			local currentT = appendage.getTimer().Get();
 			local t = appendage.sq_var.get_timer_vector(0);
-			local t2 = appendage.sq_var.get_timer_vector(1); // ¾óÀ½Á¶°¢À» ¸¸µå´Â°Í°ú º°µµ·Î ¿¥ÇÇ¼Ò¸ð´Â ´Ù¸¥Å¸ÀÌ¸Ó·Î µ¹¾Æ°¡¼­ mp¼Ò¸ð¸¦ ½ÃÅµ´Ï´Ù.
-			
+			local t2 = appendage.sq_var.get_timer_vector(1); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Â°Í°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ç¼Ò¸ï¿½ï¿½ ï¿½Ù¸ï¿½Å¸ï¿½Ì¸Ó·ï¿½ ï¿½ï¿½ï¿½Æ°ï¿½ï¿½ï¿½ mpï¿½Ò¸ï¿½ ï¿½ï¿½Åµï¿½Ï´ï¿½.
+
 			if (t2.isOnEvent(currentT) == true)
 			{
 				local skill = sq_GetSkill(obj, SKILL_ICEROAD);
 				if(skill)
 				{
 					local skill_level = obj.sq_GetSkillLevel(SKILL_ICEROAD);
-					local spendMp = obj.sq_GetLevelData(SKILL_ICEROAD, SKL_LV_0, skill_level); // 0.½Ã°£´çMP ¼Ò¸ð·®
+					local spendMp = obj.sq_GetLevelData(SKILL_ICEROAD, SKL_LV_0, skill_level); // 0.ï¿½Ã°ï¿½ï¿½ï¿½MP ï¿½Ò¸ï¿½
 					if (spendMp > obj.getMp())
 					{
 						appendage.setValid(false);
@@ -408,17 +408,17 @@ function procSkill_IceRoad(obj)
 					}
 					else
 					{
-						// MP°¡ ÃæºÐÇÏ´Ù¸é ¾óÀ½ÀÇ ±æ ÇÑÁ¶°¢À» ¸¸µç´Ù..
+						// MPï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´Ù¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½..
 						print( " spendMp:" + spendMp);
 						obj.sendSetMpPacket(obj.getMp() - spendMp);
 					}
-				
+
 				}
 			}
-			
+
 			if (t.getEventTerm() == -1)
 				return;
-			
+
 			if (t.isOnEvent(currentT) == true)
 			{
 				if(obj.isMyControlObject())
@@ -426,29 +426,29 @@ function procSkill_IceRoad(obj)
 					if(obj.getZPos() == 0)
 					{
 						local skill_level = sq_GetSkillLevel(obj, SKILL_ICEROAD);
-						local change_time = sq_GetLevelData(obj, SKILL_ICEROAD, SKL_LV_1, skill_level); // Áö¼Ó½Ã°£
-						local rate = sq_GetLevelData(obj, SKILL_ICEROAD, SKL_LV_3, skill_level); // ÀÌ¼Ó È®À²
-						local movSpd = sq_GetLevelData(obj, SKILL_ICEROAD, SKL_LV_2, skill_level); // 
-					
+						local change_time = sq_GetLevelData(obj, SKILL_ICEROAD, SKL_LV_1, skill_level); // ï¿½ï¿½ï¿½Ó½Ã°ï¿½
+						local rate = sq_GetLevelData(obj, SKILL_ICEROAD, SKL_LV_3, skill_level); // ï¿½Ì¼ï¿½ È®ï¿½ï¿½
+						local movSpd = sq_GetLevelData(obj, SKILL_ICEROAD, SKL_LV_2, skill_level); //
+
 						sq_BinaryStartWrite();
-						sq_BinaryWriteDword(change_time);	// ½Ã°£
-						sq_BinaryWriteDword(rate);			// È®À²
-						sq_BinaryWriteDword(movSpd);		// °¨¼ÒÄ¡ 
-						
-						// ¾ÆÀÌ½º ·Îµå Æ¯¼º ÆÐ½Ãºê ½ºÅ³À» ¹è¿ü´Ù¸é ¸ÂÀº ÀûÀÌ ºù°á »óÅÂÀÌ»ó¿¡ °É¸°´Ù.
+						sq_BinaryWriteDword(change_time);	// ï¿½Ã°ï¿½
+						sq_BinaryWriteDword(rate);			// È®ï¿½ï¿½
+						sq_BinaryWriteDword(movSpd);		// ï¿½ï¿½ï¿½ï¿½Ä¡
+
+						// ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½Îµï¿½ Æ¯ï¿½ï¿½ ï¿½Ð½Ãºï¿½ ï¿½ï¿½Å³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì»ï¿½ ï¿½É¸ï¿½ï¿½ï¿½.
 						local skillLevel = sq_GetSkillLevel(obj, SKILL_ICEROAD_EX);
 						sq_BinaryWriteWord(skillLevel);
-						
+
 						if (skillLevel > 0)
 						{
-							local prob = sq_GetLevelData(obj, SKILL_ICEROAD_EX, 4, skillLevel) / 10.0;// »óÅÂÀÌ»ó ºù°áÀÇ È®·ü
-							local asLevel = sq_GetLevelData(obj, SKILL_ICEROAD_EX, 5, skillLevel);	// »óÅÂÀÌ»ó ºù°áÀÇ ·¹º§
-							local validTime = sq_GetLevelData(obj, SKILL_ICEROAD_EX, 6, skillLevel);	// »óÅÂÀÌ»ó ºù°áÀÇ ½Ã°£
-							sq_BinaryWriteFloat(prob.tofloat());	// È®·ü
-							sq_BinaryWriteWord(asLevel);			// ·¹º§
-							sq_BinaryWriteDword(validTime);			// ½Ã°£
+							local prob = sq_GetLevelData(obj, SKILL_ICEROAD_EX, 4, skillLevel) / 10.0;// ï¿½ï¿½ï¿½ï¿½ï¿½Ì»ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½
+							local asLevel = sq_GetLevelData(obj, SKILL_ICEROAD_EX, 5, skillLevel);	// ï¿½ï¿½ï¿½ï¿½ï¿½Ì»ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+							local validTime = sq_GetLevelData(obj, SKILL_ICEROAD_EX, 6, skillLevel);	// ï¿½ï¿½ï¿½ï¿½ï¿½Ì»ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½
+							sq_BinaryWriteFloat(prob.tofloat());	// È®ï¿½ï¿½
+							sq_BinaryWriteWord(asLevel);			// ï¿½ï¿½ï¿½ï¿½
+							sq_BinaryWriteDword(validTime);			// ï¿½Ã°ï¿½
 						}
-						
+
 						sq_SendCreatePassiveObjectPacket(obj, 24243, 0, 0, 0, 0, obj.getDirection());
 					}
 				}
@@ -460,17 +460,17 @@ function procSkill_IceRoad(obj)
 function playMoveSound_ATMage(obj)
 {
 	//obj.sq_PlaySound("R_ICE_WALK");
-	
+
 	if(!obj)
 		return;
-	
+
 	local result = CNSquirrelAppendage.sq_IsAppendAppendage(obj, "Character/ATMage/IceRoad/ap_ATMage_IceRoad.nut");
 
-	if (result == true) // ¾ÆÀÌ½º·Îµå¸¦ ÄÑ³ùÀ» ¶© ¹ßÀÚ±¹¼Ò¸®°¡ ¹Ù²ò´Ï´Ù.
+	if (result == true) // ï¿½ï¿½ï¿½Ì½ï¿½ï¿½Îµå¸¦ ï¿½Ñ³ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Ú±ï¿½ï¿½Ò¸ï¿½ï¿½ï¿½ ï¿½Ù²ï¿½Ï´ï¿½.
 	{
 		obj.sq_PlaySound("R_ICE_WALK_LOOP", SOUND_ID_MOVE);
 	}
-	else 
+	else
 	{
 		obj.sq_PlayMoveSound();
 	}
@@ -480,46 +480,46 @@ function procDash_ATMage(obj)
 {
 	if(!obj)
 		return;
-	
+
 	local ani = sq_GetCurrentAnimation(obj);
-	
+
 	if(!ani)
 		return;
-		
+
 	local isFlag = obj.sq_IsKeyFrameFlag(ani, 1);
-	
-	
+
+
 	local result = CNSquirrelAppendage.sq_IsAppendAppendage(obj, "Character/ATMage/IceRoad/ap_ATMage_IceRoad.nut");
 
-	if (result == true) // ¾ÆÀÌ½º·Îµå¸¦ ÄÑ³ùÀ» ¶© ¹ßÀÚ±¹¼Ò¸®°¡ ¹Ù²ò´Ï´Ù.
+	if (result == true) // ï¿½ï¿½ï¿½Ì½ï¿½ï¿½Îµå¸¦ ï¿½Ñ³ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Ú±ï¿½ï¿½Ò¸ï¿½ï¿½ï¿½ ï¿½Ù²ï¿½Ï´ï¿½.
 	{
-		
+
 		if(isFlag)
 		{
 			obj.sq_PlaySound("R_ICE_WALK");
 		}
-		
+
 		obj.sq_ClearKeyFrameFlag(ani);
 	}
 	else
 	{
 		//print(" procDash");
-		
+
 		if (isFlag)
 		{
 			local stage = sq_GetGlobaludpModuleStage();
 			if(!stage)
 				return;
-			
+
 			local dungeon = sq_GetDungeonByStage(stage);
-			
+
 			if(!dungeon)
 				return;
-				
+
 			local dungeonIndex = sq_GetDuegonIndex(dungeon);
 			local mapIndex = sq_GetMapIndex(stage);
 
-			//¼³»êÂÊ ´øÀüÀÇ °æ¿ì 40¹ø, ¼³»êÀÇ ÃßÀû PVP¸ÊÀÇ °æ¿ì 50019¹ø.
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ 40ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ PVPï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ 50019ï¿½ï¿½.
 			if (dungeonIndex == 40 || mapIndex == 50019)
 			{
 				obj.sq_PlaySound("R_RUN_SNOW");
@@ -538,9 +538,18 @@ function procDash_ATMage(obj)
 			}
 		}
 		obj.sq_ClearKeyFrameFlag(ani);
-		
+
 	}
 }
+
+
+
+
+
+function procSkill_MagicShield(obj)
+{
+}
+
 
 function procSkill_MagicShield(obj)
 {
@@ -548,7 +557,7 @@ function procSkill_MagicShield(obj)
 
 function getImmuneTypeDamgeRate_ATMage(obj,damageRate, attacker)
 {
-	// ºÒ±âµÕ ¿ø°Å¸® °ø°ÝÀÇ µ¥¹ÌÁö¸¦ N%¸¸Å­ °¨¼Ò½ÃÅ°°í, °æÁ÷À» ¹ÞÁö ¾Ê½À´Ï´Ù.
+	// ï¿½Ò±ï¿½ï¿½ ï¿½ï¿½ï¿½Å¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ N%ï¿½ï¿½Å­ ï¿½ï¿½ï¿½Ò½ï¿½Å°ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê½ï¿½ï¿½Ï´ï¿½.
 	if(obj.getVar("firepillar").size_vector() > 0)
 	{
 		if(obj.getVar("firepillar").get_vector(VECTOR_FLAG_2))
@@ -557,8 +566,8 @@ function getImmuneTypeDamgeRate_ATMage(obj,damageRate, attacker)
 			{
 				print( " damageRate:" + damageRate);
 				local skillLevel = obj.sq_GetSkillLevel(SKILL_FIREPILLAR);
-				local N = obj.sq_GetLevelData(SKILL_FIREPILLAR, 0, skillLevel); // 0.¿ø°Å¸® ÇÇÇØÁÙ¿©ÁÖ´Â °¨¼ÒÄ¡(%)
-				// ¿ø°Å¸® °ø°ÝÀÌ¶ó¸é..
+				local N = obj.sq_GetLevelData(SKILL_FIREPILLAR, 0, skillLevel); // 0.ï¿½ï¿½ï¿½Å¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ù¿ï¿½ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½Ä¡(%)
+				// ï¿½ï¿½ï¿½Å¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì¶ï¿½ï¿½..
 				damageRate = damageRate - N;
 				//damageRate = 10;
 				print( " convert damageRate:" + damageRate);
@@ -566,23 +575,23 @@ function getImmuneTypeDamgeRate_ATMage(obj,damageRate, attacker)
 		}
 	}
 
-	// ºÒ»ç·Î È¸º¹½Ã¿£ µ¥¹ÌÁö°¡ 2¹è(1.5¹è?) µé¾î°£´Ù
+	// ï¿½Ò»ï¿½ï¿½ È¸ï¿½ï¿½ï¿½Ã¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 2ï¿½ï¿½(1.5ï¿½ï¿½?) ï¿½ï¿½î°£ï¿½ï¿½.
 	if(CNSquirrelAppendage.sq_IsAppendAppendage(obj, "Character/ATMage/DieHard/ap_ATMage_DieHardSlowHeal.nut")) //
 	{
-		//0. ÇÇ°Ý½Ã ¹Þ´Â µ¥¹ÌÁö Áõ°¡À²(%)
-		local increaseDamageRate = sq_GetIntData(obj, SKILL_DIEHARD, SKL_STATIC_INT_IDX_0); 
-		
+		//0. ï¿½Ç°Ý½ï¿½ ï¿½Þ´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(%)
+		local increaseDamageRate = sq_GetIntData(obj, SKILL_DIEHARD, SKL_STATIC_INT_IDX_0);
+
 		//increaseDamageRate.tofloat() / 100.0;
 		damageRate = damageRate + increaseDamageRate;
 	}
-	
+
 	return damageRate;
 }
 
 function getImmuneType_ATMage(obj,type, attacker)
 {
 	local immuneType = type;
-	
+
 	return immuneType;
 }
 
@@ -598,43 +607,43 @@ function procSkill_ATMage(obj)
 function useSkill_before_ATMage(obj, skillIndex, consumeMp, consumeItem, oldSkillMpRate)
 {
 	local bChangedMp = false;
-	
+
 	print(" consumpMp:" + consumeMp + " oldSkillMpRate:" + oldSkillMpRate);
-	
+
 	local appendage = obj.GetSquirrelAppendage("Character/ATMage/ManaBurst/ap_ATMage_ManaBurst.nut");
-	
+
 	if(appendage)
 	{
 		local isvalid = appendage.isValid();
-		
+
 		if(isvalid)
 		{
 			local skillLevel = obj.sq_GetSkillLevel(SKILL_MANABURST);
 			local mpComsumeRate = sq_GetLevelData(obj, SKILL_MANABURST, SKL_LVL_COLUMN_IDX_0, skillLevel);
 			local newMpRate = oldSkillMpRate.tofloat() * (100 + mpComsumeRate.tofloat()) / 100;
-			
+
 			print(" newMpRate:" + newMpRate);
 			obj.setSkillMpRate(skillIndex, newMpRate.tofloat());
 			bChangedMp = true;
 		}
 	}
-	
+
 	if(obj.sq_GetSkillLevel(SKILL_EXPRESSION) > 0)
 	{
 		local skillLevel = obj.sq_GetSkillLevel(SKILL_EXPRESSION);
 		local skillMpRate = obj.getSkillMpRate(skillIndex);
 		local mpComsumeRate = sq_GetLevelData(obj, SKILL_EXPRESSION, 0, skillLevel);
 		local newMpRate = skillMpRate.tofloat() * (100 - mpComsumeRate.tofloat()) / 100;
-		
+
 		//print(" expression consumeMp oldMpRate:" + skillMpRate.tofloat() + " skillIndex:" + skillIndex);
 		//print(" expression consumeMp newMpRate:" + newMpRate.tofloat());
 		//print(" expression consumeMp mpComsumeRate:" + mpComsumeRate.tofloat());
 
 		obj.setSkillMpRate(skillIndex, newMpRate.tofloat());
 	}
-	
+
 	print(" now consumpMp:" + obj.getSkillMpRate(skillIndex));
-	
+
 	return true;
 }
 
@@ -642,95 +651,94 @@ function useSkill_after_ATMage(obj, skillIndex, consumeMp, consumeItem, oldSkill
 {
 	if(!obj)
 		return false;
-		
+
 	obj.setSkillMpRate(skillIndex, oldSkillMpRate.tofloat());
 	print(" after set consumpMp:" + oldSkillMpRate);
-	
+
 	return true;
 }
 
 
 
 // getAttackAni()
-// ÇÊ¿ä¿¡ µû¶ó ÆòÅ¸¸ð¼ÇÀÌ ¹Ù²ð¶§, ÀÌ ÇÔ¼ö¿¡¼­ Ã³¸®ÇØÁÜ
-// ¿¹) ¼öÀÎÃ¼ ½ºÅ³
+// ï¿½Ê¿ä¿¡ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù²ï¿½, ï¿½ï¿½ ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½Ã¼ ï¿½ï¿½Å³
 function getAttackAni_ATMage(obj, index)
 {
 	if (!obj)
 		return null;
-	
+
 	local animation = obj.sq_GetAttackAni(index);
 
-	// ¼öÀÎÃ¼ ½ºÅ³À» ¹è¿ü´Ù¸é, ÆòÅ¸ ¿¡´Ï¸ÞÀÌ¼ÇÀÌ ¹Ù²ñ
-	// ¸¶¹ý±¸µµ ¹ß»çµÇÁö ¾ÊÀ½.
+	// ï¿½ï¿½ï¿½ï¿½Ã¼ ï¿½ï¿½Å³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ù¸ï¿½, ï¿½ï¿½Å¸ ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½Ì¼ï¿½ï¿½ï¿½ ï¿½Ù²ï¿½
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
 	local skillLevel = obj.sq_GetSkillLevel(SKILL_ICE_ELEMENTAL_ATTACK);
 	if (skillLevel > 0)
 		animation = obj.sq_GetCustomAni(CUSTOM_ANI_ICE_ELEMENTAL_ATTACK1 + index);
-	
+
 	return animation;
 }
 
 
 
 // getDashAttackAni()
-// ÇÊ¿ä¿¡ µû¶ó ÆòÅ¸¸ð¼ÇÀÌ ¹Ù²ð¶§, ÀÌ ÇÔ¼ö¿¡¼­ Ã³¸®ÇØÁÜ
-// ¿¹) ¼öÀÎÃ¼ ½ºÅ³
+// ï¿½Ê¿ä¿¡ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù²ï¿½, ï¿½ï¿½ ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½Ã¼ ï¿½ï¿½Å³
 function getDashAttackAni_ATMage(obj)
 {
 	if (!obj)
 		return null;
-	
+
 	local animation = obj.sq_GetDashAttackAni();
 
-	// ¼öÀÎÃ¼ ½ºÅ³À» ¹è¿ü´Ù¸é, ÆòÅ¸ ¿¡´Ï¸ÞÀÌ¼ÇÀÌ ¹Ù²ñ
-	// ¸¶¹ý±¸µµ ¹ß»çµÇÁö ¾ÊÀ½.
+	// ï¿½ï¿½ï¿½ï¿½Ã¼ ï¿½ï¿½Å³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ù¸ï¿½, ï¿½ï¿½Å¸ ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½Ì¼ï¿½ï¿½ï¿½ ï¿½Ù²ï¿½
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
 	local skillLevel = obj.sq_GetSkillLevel(SKILL_ICE_ELEMENTAL_ATTACK);
 	if (skillLevel > 0)
 		animation = obj.sq_GetCustomAni(CUSTOM_ANI_ICE_ELEMENTAL_DASH_ATTACK);
-	
+
 	return animation;
 }
 
 
 
 // getJumpAttackAni()
-// ÇÊ¿ä¿¡ µû¶ó ÆòÅ¸¸ð¼ÇÀÌ ¹Ù²ð¶§, ÀÌ ÇÔ¼ö¿¡¼­ Ã³¸®ÇØÁÜ
-// ¿¹) ¼öÀÎÃ¼ ½ºÅ³
+// ï¿½Ê¿ä¿¡ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù²ï¿½, ï¿½ï¿½ ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½Ã¼ ï¿½ï¿½Å³
 function getJumpAttackAni_ATMage(obj)
 {
 	if (!obj)
 		return null;
-	
+
 	local animation = obj.sq_GetJumpAttackAni();
 
-	// ¼öÀÎÃ¼ ½ºÅ³À» ¹è¿ü´Ù¸é, ÆòÅ¸ ¿¡´Ï¸ÞÀÌ¼ÇÀÌ ¹Ù²ñ
-	// ¸¶¹ý±¸µµ ¹ß»çµÇÁö ¾ÊÀ½.
+	// ï¿½ï¿½ï¿½ï¿½Ã¼ ï¿½ï¿½Å³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ù¸ï¿½, ï¿½ï¿½Å¸ ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½Ì¼ï¿½ï¿½ï¿½ ï¿½Ù²ï¿½
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
 	local skillLevel = obj.sq_GetSkillLevel(SKILL_ICE_ELEMENTAL_ATTACK);
 	if (skillLevel > 0)
 		animation = obj.sq_GetCustomAni(CUSTOM_ANI_ICE_ELEMENTAL_JUMP_ATTACK);
-	
+
 	return animation;
 }
 
-// ±âº» °ø°ÝÀÌ ÃÖ´ë ¸îÅ¸ÀÎ°¡?
-// ¼öÀÎÃ¼¸¦ ¹è¿ì¸é ÃÖ´ë 3Å¸±îÁö ÆòÅ¸°¡ ÀÌ·ç¾îÁü
+// ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½Å¸ï¿½Î°ï¿½?
+// ï¿½ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ 3Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½ ï¿½Ì·ï¿½ï¿½ï¿½ï¿½
 function getAttackCancelStartFrameSize_ATMage(obj)
 {
 	local maxAttackNumber = obj.sq_GetAttackCancelStartFrameSize();
 
 	local skillLevel = obj.sq_GetSkillLevel(SKILL_ICE_ELEMENTAL_ATTACK);
-	// ÃÖ´ë°³¼öº¸´Ù 1ÀÛÀº ¼ö¸¦ ¸®ÅÏÇÏ¸é µÊ
+	// ï¿½Ö´ë°³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½ï¿½
 	if (skillLevel > 0)
 		maxAttackNumber = 2;
 
 	return maxAttackNumber;
 }
 
-function setState_ATMage(obj, state, datas, isResetTimer)
+function setState_ATMage_ARR(obj, state, datas, isResetTimer)
 {
-	Common_setState(obj, state, datas, isResetTimer);
 	if(state == STATE_DIE)
-		obj.sq_RemoveSkillLoad(SKILL_HOLONG_LIGHT);	// Á×À¸¸é È£·ÕºÒ UI Á¦°Å
+		obj.sq_RemoveSkillLoad(SKILL_HOLONG_LIGHT);	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È£ï¿½Õºï¿½ UI ï¿½ï¿½ï¿½ï¿½
 	return 0;
 }
 
@@ -738,16 +746,16 @@ function getDefaultAttackInfo_ATMage(obj, index)
 {
 	if (!obj)
 		return null;
-	
+
 	local attackInfo = obj.sq_GetDefaultAttackInfo(index);
 
-	// ÆòÅ¸ °ø°ÝÁ¤º¸ º¯°æ
+	// ï¿½ï¿½Å¸ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	local skillLevel = obj.sq_GetSkillLevel(SKILL_ICE_ELEMENTAL_ATTACK);
 	if (skillLevel > 0)
 	{
 		attackInfo = sq_GetCustomAttackInfo(obj, CUSTOM_ATTACK_INFO_ICE_ELEMENTAL_ATTACK1 + index);
 	}
-	
+
 	return attackInfo;
 }
 
@@ -755,14 +763,14 @@ function getDashAttackInfo_ATMage(obj)
 {
 	if (!obj)
 		return null;
-	
+
 	local attackInfo = obj.sq_GetDashAttackInfo();
 
-	// ÆòÅ¸ °ø°ÝÁ¤º¸ º¯°æ
+	// ï¿½ï¿½Å¸ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	local skillLevel = obj.sq_GetSkillLevel(SKILL_ICE_ELEMENTAL_ATTACK);
 	if (skillLevel > 0)
 		attackInfo = sq_GetCustomAttackInfo(obj, CUSTOM_ATTACK_INFO_ICE_ELEMENTAL_DASH_ATTACK);
-	
+
 	return attackInfo;
 }
 
@@ -771,14 +779,14 @@ function getJumpAttackInfo_ATMage(obj)
 {
 	if (!obj)
 		return null;
-	
+
 	local attackInfo = obj.sq_GetJumpAttackInfo();
 
-	// ÆòÅ¸ °ø°ÝÁ¤º¸ º¯°æ
+	// ï¿½ï¿½Å¸ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	local skillLevel = obj.sq_GetSkillLevel(SKILL_ICE_ELEMENTAL_ATTACK);
 	if (skillLevel > 0)
 		attackInfo = sq_GetCustomAttackInfo(obj, CUSTOM_ATTACK_INFO_ICE_ELEMENTAL_JUMP_ATTACK);
-	
+
 	return attackInfo;
 }
 
@@ -789,65 +797,65 @@ function setEnableCancelSkill_ATMage(obj, isEnable)
 {
 	if(!obj)
 		return false;
-	
+
 	if(!obj.isMyControlObject())
 		return false;
 
 
 	if(!isEnable)
 		return true;
-		
-	// Äµ½½±â »èÁ¦ ÀÛ¾÷ÀÔ´Ï´Ù. (2012.04.12)
-	// ³²¹ý»ç - ºò¹ð°ËÀº ºù°á»ç·Î ÀüÁ÷ÇÏ±â Àü±îÁö ÀÚµ¿Äµ½½ÀÌ ÀÛµ¿¾ÈÇÕ´Ï´Ù.
-	
-	local GROW_TYPE_AT_MAGE = 0; // ÀüÁ÷ ¹«
-	local GROW_TYPE_ELEMENTAL_BOMBER = 1; // ÀüÁ÷ ¿¤¸®¸àÅ» ¹Ù¸Ó
-	local GROW_TYPE_GLACIALMASTER = 2; // ÀüÁ÷ ºù°á»ç
-	
+
+	// Äµï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Û¾ï¿½ï¿½Ô´Ï´ï¿½. (2012.04.12)
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Úµï¿½Äµï¿½ï¿½ï¿½ï¿½ ï¿½Ûµï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
+
+	local GROW_TYPE_AT_MAGE = 0; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
+	local GROW_TYPE_ELEMENTAL_BOMBER = 1; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½Ù¸ï¿½
+	local GROW_TYPE_GLACIALMASTER = 2; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
+
 	//print( "  growtype:" +  sq_getGrowType(obj));
-	
-	
-	
-	// °áÅõÀå¿¡¼­´Â Æ¯Á¤½ºÅ³¸¸ Äµ½½ÀÌ °¡´ÉÇÕ´Ï´Ù. ÀÛ¾÷ÀÚ:Á¤Áø¼ö [2012.04.20]
+
+
+
+	// ï¿½ï¿½ï¿½ï¿½ï¿½å¿¡ï¿½ï¿½ï¿½ï¿½ Æ¯ï¿½ï¿½ï¿½ï¿½Å³ï¿½ï¿½ Äµï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½. ï¿½Û¾ï¿½ï¿½ï¿½:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ [2012.04.20]
 	//if(sq_isPVPMode())
 	{
-//38	`ATMage/CancelWindStrike.skl`		// Äµ½½ À©µå½ºÆ®¶óÀÌÅ©
+//38	`ATMage/CancelWindStrike.skl`		// Äµï¿½ï¿½ ï¿½ï¿½ï¿½å½ºÆ®ï¿½ï¿½ï¿½ï¿½Å©
 		obj.setSkillCommandEnable(SKILL_WIND_STRIKE, isEnable);
-//39	`ATMage/CancelAtMagePush.skl`		// Äµ½½ ¹Ð¾î³»±â
+//39	`ATMage/CancelAtMagePush.skl`		// Äµï¿½ï¿½ ï¿½Ð¾î³»ï¿½ï¿½
 		obj.setSkillCommandEnable(SKILL_PUSH_OUT, isEnable);
-//40	`ATMage/CancelFallenBlossoms.skl`	// Äµ½½ ³«È­¿¬Ã¢
+//40	`ATMage/CancelFallenBlossoms.skl`	// Äµï¿½ï¿½ ï¿½ï¿½È­ï¿½ï¿½Ã¢
 		obj.setSkillCommandEnable(SKILL_FALLENBLOSSOMS, isEnable);
-//41	`ATMage/CancelTurnWindmill.skl`		// Äµ½½ Ç³Â÷µ¹¸®±â
+//41	`ATMage/CancelTurnWindmill.skl`		// Äµï¿½ï¿½ Ç³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		obj.setSkillCommandEnable(SKILL_TURNWINDMILL, isEnable);
-//42	`ATMage/CancelBrokenArrow.skl`		// Äµ½½ ºê·ÎÅ«¾Ö·Î¿ì
+//42	`ATMage/CancelBrokenArrow.skl`		// Äµï¿½ï¿½ ï¿½ï¿½ï¿½Å«ï¿½Ö·Î¿ï¿½
 		obj.setSkillCommandEnable(SKILL_BROKENARROW, isEnable);
-//43	`ATMage/CancelIceCrash.skl`			// Äµ½½ ¾ÆÀÌ½º Å©·¡½¬
+//43	`ATMage/CancelIceCrash.skl`			// Äµï¿½ï¿½ ï¿½ï¿½ï¿½Ì½ï¿½ Å©ï¿½ï¿½ï¿½ï¿½
 		obj.setSkillCommandEnable(SKILL_ICE_CRASH, isEnable);
-//44	`ATMage/CancelFrozenLand.skl`		// Äµ½½ ¾ó¾îºÙÀº ´ëÁö
+//44	`ATMage/CancelFrozenLand.skl`		// Äµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		obj.setSkillCommandEnable(SKILL_FROZENLAND, isEnable);
-//45	`ATMage/CancelIceSword.skl`			// Äµ½½ ºù°Ë
+//45	`ATMage/CancelIceSword.skl`			// Äµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		obj.setSkillCommandEnable(SKILL_ICE_SWORD, isEnable);
-//46	`ATMage/CancelMultiShot.skl`		// Äµ½½ ¿¬¼Ó ¸¶¹ý±¸ ³¯¸®±â
+//46	`ATMage/CancelMultiShot.skl`		// Äµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		obj.setSkillCommandEnable(SKILL_MULTI_SHOT, isEnable);
-//47	`ATMage/CancelFlameCircle.skl`		// Äµ½½ ÇÁ·¹ÀÓ¼­Å¬
+//47	`ATMage/CancelFlameCircle.skl`		// Äµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ó¼ï¿½Å¬
 		obj.setSkillCommandEnable(SKILL_FLAMECIRCLE, isEnable);
-//170	`ATMage/CancelBackStep.skl`			// Äµ½½ ¹é½ºÅÜ	
+//170	`ATMage/CancelBackStep.skl`			// Äµï¿½ï¿½ ï¿½é½ºï¿½ï¿½
 		//obj.setSkillCommandEnable(SKILL_BROKENARROW, isEnable);
-		
-//60	`ATMage/IceOrbEx.skl`			// ¾ÆÀÌ½º ¿Àºê (Æ¯¼º)
-//SKILL_ICE_ORB_EX				<- 60	// Æ¯¼º ¾ÆÀÌ½º ¿Àºê
+
+//60	`ATMage/IceOrbEx.skl`			// ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½ï¿½ï¿½ï¿½ (Æ¯ï¿½ï¿½)
+//SKILL_ICE_ORB_EX				<- 60	// Æ¯ï¿½ï¿½ ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		obj.setSkillCommandEnable(SKILL_ICE_ORB_EX, isEnable);
-//61	`ATMage/Concentrate.skl`		// ÄÁ¼¾Æ®·¹ÀÌÆ®(Æ¯¼º ¾×Æ¼ºê ½ºÅ³)
-//SKILL_CONCENTRATE_EX			<- 61	// ÄÁ¼¾Æ®·¹Æ®(³óÃà)
+//61	`ATMage/Concentrate.skl`		// ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Æ®(Æ¯ï¿½ï¿½ ï¿½ï¿½Æ¼ï¿½ï¿½ ï¿½ï¿½Å³)
+//SKILL_CONCENTRATE_EX			<- 61	// ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½Æ®(ï¿½ï¿½ï¿½ï¿½)
 		obj.setSkillCommandEnable(SKILL_CONCENTRATE_EX, isEnable);
-//62 	`ATMage/ElementalStrikeEx.skl`		// ¿¤·¹¸àÅ»½ºÆ®¶óÀÌÅ© (Æ¯¼º)
-//SKILL_ELEMENTAL_STRIKE_EX		<- 62	// ¿¤·¹¸àÅ» ½ºÆ®¶óÀÌÅ© (Æ¯¼º½ºÅ³)
-//63	`ATMage/IceFieldEx.skl`			// ¾ÆÀÌ½º ÇÊµå (Æ¯¼º)
+//62 	`ATMage/ElementalStrikeEx.skl`		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å»ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Å© (Æ¯ï¿½ï¿½)
+//SKILL_ELEMENTAL_STRIKE_EX		<- 62	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Å© (Æ¯ï¿½ï¿½ï¿½ï¿½Å³)
+//63	`ATMage/IceFieldEx.skl`			// ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½Êµï¿½ (Æ¯ï¿½ï¿½)
 		obj.setSkillCommandEnable(SKILL_ELEMENTAL_STRIKE_EX, isEnable);
-//SKILL_ICE_FIELD_EX				<- 63	// ¾ÆÀÌ½º ÇÊµå
+//SKILL_ICE_FIELD_EX				<- 63	// ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½Êµï¿½
 		obj.setSkillCommandEnable(SKILL_ICE_FIELD_EX, isEnable);
 		//
-		
+
 		if(sq_getGrowType(obj) == GROW_TYPE_GLACIALMASTER)
 		{
 			obj.setSkillCommandEnable(SKILL_ICE_SWORD, isEnable);
@@ -856,26 +864,26 @@ function setEnableCancelSkill_ATMage(obj, isEnable)
 	//else
 	//{
 	//}
-	
-	
-	
+
+
+
 	return true;
-	
-	local size = 10; // ÇÏ³ª ´õ Ãß°¡ÇØ¾ßÇÔ
+
+	local size = 10; // ï¿½Ï³ï¿½ ï¿½ï¿½ ï¿½ß°ï¿½ï¿½Ø¾ï¿½ï¿½ï¿½
 	local cancel_skill_l =[];
 	local skill_l =[];
 	cancel_skill_l.resize(size);
 	skill_l.resize(size);
-//SKILL_WIND_STRIKE				<- 38	// À©µå ½ºÆ®¶óÀÌÅ©
-//SKILL_PUSH_OUT				<- 39	// ¹Ð¾î³»±â
-//SKILL_FALLENBLOSSOMS			<- 40   // °øÅë:³«È­¿¬Ã¢
-//SKILL_TURNWINDMILL				<- 41	// Ç³Â÷µ¹¸®±â
-//SKILL_BROKENARROW				<- 42	// ¾ó¾îºÙÀº ´ëÁö
-//SKILL_ICE_CRASH					<- 43	// ¾ÆÀÌ½ºÅ©·¡½¬
-//SKILL_FROZENLAND				<- 44	// ¾ó¾îºÙÀº ´ëÁö
-//SKILL_ICE_SWORD					<- 45	// ºù°Ë
-//SKILL_FLAMECIRCLE				<- 47	// ÇÁ·¹ÀÓ¼­Å¬
-//SKILL_MULTI_SHOT				<- 25	// ¿¬¼Ó ¸¶¹ý±¸ ¹ß»ç
+//SKILL_WIND_STRIKE				<- 38	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Å©
+//SKILL_PUSH_OUT				<- 39	// ï¿½Ð¾î³»ï¿½ï¿½
+//SKILL_FALLENBLOSSOMS			<- 40   // ï¿½ï¿½ï¿½ï¿½:ï¿½ï¿½È­ï¿½ï¿½Ã¢
+//SKILL_TURNWINDMILL				<- 41	// Ç³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//SKILL_BROKENARROW				<- 42	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//SKILL_ICE_CRASH					<- 43	// ï¿½ï¿½ï¿½Ì½ï¿½Å©ï¿½ï¿½ï¿½ï¿½
+//SKILL_FROZENLAND				<- 44	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//SKILL_ICE_SWORD					<- 45	// ï¿½ï¿½ï¿½ï¿½
+//SKILL_FLAMECIRCLE				<- 47	// ï¿½ï¿½ï¿½ï¿½ï¿½Ó¼ï¿½Å¬
+//SKILL_MULTI_SHOT				<- 25	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½
 	cancel_skill_l[0] = SKILL_CANCEL_WIND_STRIKE;
 	cancel_skill_l[1] = SKILL_CANCEL_PUSH_OUT;
 	cancel_skill_l[2] = SKILL_CANCEL_FALLENBLOSSOMS;
@@ -900,10 +908,10 @@ function setEnableCancelSkill_ATMage(obj, isEnable)
 
 	for(local i=0;i<size;i+=1)
 	{
-		// ÆÄ¶ó¹ÌÅÍ·Î ³Ñ°ÜÁø Å° ÀÎµ¦½º¿Í, °ø°Ý¹æ¹ýÀÌ °¡´ÉÇÑÁö Ã¼Å©ÇÏ¿© Åë°úÇÏ¸é ÆÐ½Ãºê¿ÀºêÁ§Æ®¸¦ ¸¸µé¾î µî·ÏÇÕ´Ï´Ù..
+		// ï¿½Ä¶ï¿½ï¿½ï¿½Í·ï¿½ ï¿½Ñ°ï¿½ï¿½ï¿½ Å° ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½Ý¹ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã¼Å©ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½Ð½Ãºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½..
 		local level = sq_GetSkillLevel(obj, cancel_skill_l[i]);
 		local bRet = false;
-		
+
 		if(level > 0)
 		{
 			if(isEnable)
@@ -911,32 +919,32 @@ function setEnableCancelSkill_ATMage(obj, isEnable)
 				bRet = true;
 			}
 		}
-		
+
 		obj.setSkillCommandEnable(skill_l[i], bRet);
 	}
-	
-	
+
+
 	return true;
 }
 
 function isUsableItem_ATMage(obj, itemIndex)
 {
 	if(CNSquirrelAppendage.sq_IsAppendAppendage(obj, "Character/ATMage/DieHard/ap_ATMage_DieHardSlowHeal.nut")) //
-	{ // ºÒ»ç·Î ½½·Î¿ìÈú ÁßÀÌ¶ó¸é È¸º¹°è¿­ ¾ÆÀÌÅÛÀ» ¾µ ¼ö ¾ø½À´Ï´Ù.
+	{ // ï¿½Ò»ï¿½ï¿½ ï¿½ï¿½ï¿½Î¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¶ï¿½ï¿½ È¸ï¿½ï¿½ï¿½è¿­ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.
 		local isRecover = sq_IsItemRecover(itemIndex);
 
 		if(isRecover == true)
 		{
 			return false;
 		}
-		
+
 		if(itemIndex == 8)
-		{ // ·¹¹ÌÀÇ ¼Õ±æ
+		{ // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Õ±ï¿½
 			return false;
 		}
 	}
 	//print( " is use itemIndex:" + itemIndex + " return true");
-	
+
 	return true;
 }
 
@@ -961,66 +969,67 @@ function sendSetMpPacket_ATMage(obj, mp, sendInstant)
 
 
 
-// ÄÁ¹öÀü ½ºÅ³ÀÌ Àû¿ëµÇ¾î¾ß ÇÒ ÆÐ½Ãºê ¿ÀºêÁ§Æ® ÀÎµ¦½º¶ó¸é,
-// `isApplyConversionSkillPassiveObject`ÇÔ¼ö¿¡ Ãß°¡¸¦ ÇØÁÖµµ·Ï ÇÑ´Ù.
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ ï¿½ï¿½ ï¿½Ð½Ãºï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,
+// `isApplyConversionSkillPassiveObject`ï¿½Ô¼ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ ï¿½Ñ´ï¿½.
 function isApplyConversionSkillPassiveObject_ATMage(passiveObjectIndex)
 {
 	if (passiveObjectIndex == 24201)
-	{	// À©µå ½ºÆ®¶óÀÌÅ©
+	{	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Å©
 		return true;
 	}
 	else if (passiveObjectIndex == 24222)
-	{	// È£·ÕºÒ
+	{	// È£ï¿½Õºï¿½
 		return true;
 	}
 	else if (passiveObjectIndex == 24217)
-	{	// ¹°´ëÆ÷
+	{	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		return true;
 	}
 	else if (passiveObjectIndex == 24254)
-	{	// ºÒ±âµÕ(È­¿°¹æÆÐ)
+	{	// ï¿½Ò±ï¿½ï¿½(È­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
 		return true;
 	}
-	
-	// ¿¬¼Ó¹ß»ç ÆÐ½Ãºê ¿ÀºêÁ§Æ®, ¿¬¼Ó¹ß»çÀÇ Æø¹ß ÆÐ½Ãºê ¿ÀºêÁ§Æ®
-	
+
+	// ï¿½ï¿½ï¿½Ó¹ß»ï¿½ ï¿½Ð½Ãºï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®, ï¿½ï¿½ï¿½Ó¹ß»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ð½Ãºï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
+
 	local idx = passiveObjectIndex;
 	if (idx >= 24266 && idx <= 24283)
 	{
 		return true;
 	}
-	
+
 	return false;
 }
 
-//´øÀüÀ» »õ·Î ½ÃÀÛÇÒ ¶§ È£ÃâµÇ´Â ¸®¼Â ÇÔ¼ö
-// ´øÀü¿¡¼­ ¸¶À»·Î ³ª¿Ã ¶§ ¿ª½Ã È£ÃâµË´Ï´Ù.
-function resetDungeonStart_ATMage(obj, moduleType, resetReason, isDeadTower, isResetSkillUserCount)
-{
-	if(!obj) return -1;	
 
-	local isReset = true; // ±âº»ÀûÀ¸·Ð ÀüºÎ ¸®¼ÂÀÔ´Ï´Ù.
-		
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ È£ï¿½ï¿½Ç´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½Ë´Ï´ï¿½.
+function resetDungeonStart_ATMage_ARR(obj, moduleType, resetReason, isDeadTower, isResetSkillUserCount)
+{
+	if(!obj) return -1;
+
+	local isReset = true; // ï¿½âº»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.
+
 	if (sq_GetCurrentModuleType() == MODULE_TYPE_WARROOM || sq_GetCurrentModuleType() == MODULE_TYPE_DEAD_TOWER)
 	{
-		// ¸®¼ÂÀÇ ÀÌÀ¯°¡ Á×´ÂÀÌÀ¯°¡ ¾Æ´Ï¶ó¸é..
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´Ï¶ï¿½ï¿½..
 		if (resetReason != REASON_DEATH)
 		{
-			isReset = false; // ¸®¼Â½ÃÅ°Áö ¾Ê½À´Ï´Ù.
+			isReset = false; // ï¿½ï¿½ï¿½Â½ï¿½Å°ï¿½ï¿½ ï¿½Ê½ï¿½ï¿½Ï´ï¿½.
 		}
 	}
-	
-	
+
+
 	if(isReset)
-	{ // ¸®¼ÂÀ» ÇØ¾ßÇÑ´Ù¸é..
+	{ // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ø¾ï¿½ï¿½Ñ´Ù¸ï¿½..
 		local appendage = obj.GetSquirrelAppendage("Character/ATMage/IceRoad/ap_ATMage_IceRoad.nut");
-		
+
 
 		if(appendage)
 		{
 			local skill = sq_GetSkill(obj, SKILL_ICEROAD);
 			local isvalid = appendage.isValid();
-			
+
 			if(skill)
 			{
 				print(" isSeal:" + skill.isSealActiveFunction());
@@ -1029,41 +1038,41 @@ function resetDungeonStart_ATMage(obj, moduleType, resetReason, isDeadTower, isR
 					skill.setSealActiveFunction(true);
 				}
 			}
-			
+
 			if(isvalid)
 			{
 				appendage.setValid(false);
 			}
 		}
-		
-		obj.sq_RemoveSkillLoad(SKILL_HOLONG_LIGHT);	// È£·ÕºÒ UI Á¦°Å
+
+		obj.sq_RemoveSkillLoad(SKILL_HOLONG_LIGHT);	// È£ï¿½Õºï¿½ UI ï¿½ï¿½ï¿½ï¿½
 	}
-	
+
 	return 1;
-	
+
 }
 
 
-// ³²¹ý»ç : ¿¤·¹¸àÅ» Ã¼ÀÎ
-// parameter·Î Àü´ÞµÈ element¼Ó¼ºÀ» Á¦¿ÜÇÑ ´Ù¸¥3¼Ó¼ºÀ» °­È­ÇÑ´Ù.
-// appendage´Â ÁßÃ¸µÇÁö ¾ÊÀ½.
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» Ã¼ï¿½ï¿½
+// parameterï¿½ï¿½ ï¿½ï¿½ï¿½Þµï¿½ elementï¿½Ó¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¸ï¿½3ï¿½Ó¼ï¿½ï¿½ï¿½ ï¿½ï¿½È­ï¿½Ñ´ï¿½.
+// appendageï¿½ï¿½ ï¿½ï¿½Ã¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
 function addElementalChain_ATMage(obj, element)
 {
 	if (!obj) return;
 	if (element == ENUM_ELEMENT_MAX) return;
 	local skillLevel = sq_GetSkillLevel(obj, SKILL_ELEMENTAL_CHAIN);
 	if (skillLevel <= 0) return;
-	
+
 	local skill = sq_GetSkill(obj, SKILL_ELEMENTAL_CHAIN);
 	if (!skill) return;
 	local changeValue = obj.sq_GetLevelData(SKILL_ELEMENTAL_CHAIN, 0, skillLevel);
 	local validTime = obj.sq_GetLevelData(SKILL_ELEMENTAL_CHAIN, 1, skillLevel);
-	
+
 	local apFire = null;
 	local apWater = null;
 	local apDark = null;
 	local apLight = null;
-	
+
 	if (element == ENUM_ELEMENT_FIRE)
 	{
 		apWater = sq_CreateChangeStatus(CHANGE_STATUS_TYPE_ELEMENT_ATTACK_WATER, false, changeValue.tofloat(), validTime);
@@ -1095,7 +1104,7 @@ function addElementalChain_ATMage(obj, element)
 		apDark = sq_CreateChangeStatus(CHANGE_STATUS_TYPE_ELEMENT_ATTACK_DARK, false, changeValue.tofloat(), validTime);
 		apLight = sq_CreateChangeStatus(CHANGE_STATUS_TYPE_ELEMENT_ATTACK_LIGHT, false, changeValue.tofloat(), validTime);
 	}
-	
+
 	if (apFire != null)
 		apFire.sq_Append(obj, obj, APID_SKILL_ELEMENTAL_CHAIN_FIRE);
 	if (apWater != null)
@@ -1106,19 +1115,20 @@ function addElementalChain_ATMage(obj, element)
 		apLight.sq_Append(obj, obj, APID_SKILL_ELEMENTAL_CHAIN_LIGHT);
 }
 
-function onChangeSkillEffect_ATMage(obj, skillIndex, reciveData)
+
+function onChangeSkillEffect_ATMage_ARR(obj, skillIndex, reciveData)
 {
 	if(!obj)
 		return;
-		
+
 	if(skillIndex == SKILL_ICEROAD)
 	{
 		local skill = sq_GetSkill(obj, SKILL_ICEROAD);
 		skill.resetCurrentCoolTime();
-		skill.setSealActiveFunction(true);	
+		skill.setSealActiveFunction(true);
 		local skill_level = sq_GetSkillLevel(obj, SKILL_ICEROAD);
 		obj.startSkillCoolTime(SKILL_ICEROAD, skill_level, -1);
-		
+
 		local appendage = obj.GetSquirrelAppendage("Character/ATMage/IceRoad/ap_ATMage_IceRoad.nut");
 		appendage.setValid(false);
 	}
@@ -1126,8 +1136,8 @@ function onChangeSkillEffect_ATMage(obj, skillIndex, reciveData)
 	{
 		if(reciveData.getSize() > 0)
 		{
-			local hp = reciveData.readDword(); // µ¿±âÈ­ÇÒ hp
-			
+			local hp = reciveData.readDword(); // ï¿½ï¿½ï¿½ï¿½È­ï¿½ï¿½ hp
+
 			if(hp > 0)
 			{
 				print(" onchange:" + hp);
@@ -1141,8 +1151,8 @@ function onChangeSkillEffect_ATMage(obj, skillIndex, reciveData)
 		{
 			local element = reciveData.readByte();
 			obj.setThrowElement(element);
-			
-			// º¸È£¸·Çü¼º Ã³¸®
+
+			// ï¿½ï¿½È£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½
 			local appendage = CNSquirrelAppendage.sq_GetAppendage(obj,"Character/ATMage/MagicShield/ap_MagicShield.nut");
 			if(appendage)
 				setMagicShieldType(appendage, obj, obj.getThrowElement());
@@ -1153,21 +1163,21 @@ function onChangeSkillEffect_ATMage(obj, skillIndex, reciveData)
 		if (reciveData.getSize() > 0)
 		{
 			local mode = reciveData.readDword();
-			
+
 			local auraAppendage = 0;
 			local appendage = CNSquirrelAppendage.sq_GetAppendage(obj, "Character/ATMage/TundraSoul/ap_ATMage_TundraSoul.nut");
-			
+
 			if(appendage)
 			{
 				auraAppendage = appendage.sq_getSquirrelAuraMaster("AuraTundraSoul");
-			
+
 				if(mode == 1)
-				{ // ÀÖ´Â°ÍÀ» ²¨¾ßÇÕ´Ï´Ù. (¾Æ¿ì¶ó)
+				{ // ï¿½Ö´Â°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½. (ï¿½Æ¿ï¿½ï¿½)
 					appendage.sq_DeleteAppendages();
 				}
 				else if(mode == 0)
-				{ // ¾ø´Â°ÍÀ» ÄÑ¾ßÇÕ´Ï´Ù. (¾Æ¿ì¶ó)
-					local range = obj.sq_GetIntData(SKILL_TUNDRASOUL , 0);// 0. ºù°á »óÅÂÀÌ»ó¿¡ °É¸®´Â È¿°ú¹üÀ§
+				{ // ï¿½ï¿½ï¿½Â°ï¿½ï¿½ï¿½ ï¿½Ñ¾ï¿½ï¿½Õ´Ï´ï¿½. (ï¿½Æ¿ï¿½ï¿½)
+					local range = obj.sq_GetIntData(SKILL_TUNDRASOUL , 0);// 0. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì»ï¿½ ï¿½É¸ï¿½ï¿½ï¿½ È¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 					appendage.sq_AddSquirrelAuraMaster("AuraTundraSoul",obj, obj, range, 18, 5, 0);
 				}
 			}
@@ -1179,12 +1189,12 @@ function onChangeSkillEffect_ATMage(obj, skillIndex, reciveData)
 function changeTrhowState_ATMage(obj, throwState)
 {
 	if (!obj) return false;
-	
+
 	printc("changeTrhowState_ATMage");
 	if (throwState == 3 &&
 		obj.getThrowIndex() == SKILL_ELEMENTAL_CHANGE)
 	{
-		// ³²¹ý»ç : ¼Ó¼º ¹ßµ¿
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : ï¿½Ó¼ï¿½ ï¿½ßµï¿½
 		obj.sq_IntVectClear();
 		obj.sq_IntVectPush(throwState);
 		obj.sq_IntVectPush(-1);
@@ -1205,7 +1215,7 @@ function isCounterState_ATMage(obj, isCounter)
 			isCounter = false;
 		}
 	}
-	
+
 	return isCounter;
 }
 
@@ -1213,49 +1223,34 @@ function isCounterState_ATMage(obj, isCounter)
 function AppendAppendageToSimple(obj, skillIndex, appendageFileName, validTime, isBuff)
 {
 	local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skillIndex, false, appendageFileName, false);
-	
-	appendage.sq_SetValidTime(validTime); // ¾îÆæµðÁö Å¸ÀÓ ¼¼ÆÃ
-	
-	// ¿©±â¼­ append ÀÛ¾÷
-	CNSquirrelAppendage.sq_Append(appendage, obj, obj, isBuff); // ¹öÇÁ¿Â
 
-}
+	appendage.sq_SetValidTime(validTime); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
-function drawMainCustomUI_ATMage(obj)
-{
-    if (!obj)
-        return;
+	// ï¿½ï¿½ï¿½â¼­ append ï¿½Û¾ï¿½
+	CNSquirrelAppendage.sq_Append(appendage, obj, obj, isBuff); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-    drawMainCustomUI_All(obj);
 }
 
 function setActiveStatus_ATMage(obj, activeStatus, power)
 {
 	if (!obj) return 0;
-	
+
 	local state = sq_GetState(obj);
-	
+
 	if (state == STATE_ELEMENTAL_BUSTER)
 	{
-		// °¢¼ºÀÏ¶© µû·Î »óÅÂÀÌ»óÀÌ °É¸®Áö ¾ÊÀ½ (¿¤·¹¸àÅ» ¹ö½ºÅÍ)
+		// ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì»ï¿½ï¿½ï¿½ ï¿½É¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
 		//printc("state : STATE_ELEMENTAL_BUSTER");
 		return 0;
 	}
-	
+
 	return 1;
 }
 
-function onStartDungeon_ATMage(obj)
-{
-	if(!obj) return;
-	Common_onStartDungeon(obj);
-	return;
-	
-}
 
 function reset_ATMage(obj)
 {
 	if(!obj)
 		return;
-	
+
 }

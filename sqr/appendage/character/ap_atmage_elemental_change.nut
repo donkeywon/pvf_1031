@@ -32,7 +32,7 @@ function onStart_appendage_atmage_elemental_change(appendage)
 
 
 
-	local obj = appendage.getParent();
+	local obj = appendage.getParent();	
 }
 
 
@@ -41,7 +41,7 @@ function prepareDraw_appendage_atmage_elemental_change(appendage)
 	if (!appendage)
 		return;
 	
-	local obj = appendage.getParent();
+	local obj = appendage.getParent();	
 }
 
 
