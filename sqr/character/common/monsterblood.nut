@@ -37,8 +37,8 @@ function DrawMosterNormalBlood_Striker(obj, xPos, yPos, CurrHp, MaxHp) {
     }
 
     local sq_var = obj.getVar();
-    local master_ui = sq_var.GetAnimationMap("master_ui", "character/mage/effect/animation/masterblood/master_ui.ani");
-    local normalblood = sq_var.GetAnimationMap("normalblood", "character/mage/effect/animation/masterblood/normalblood.ani");
+    local master_ui = sq_var.GetAnimationMap("master_ui", "character/common/animation/monsterblood/master_ui.ani");
+    local normalblood = sq_var.GetAnimationMap("normalblood", "character/common/animation/monsterblood/normalblood.ani");
 
     local x = 75;
     local y = 450;
@@ -73,8 +73,8 @@ function DrawMosterAIBlood_Striker(obj, xPos, yPos, CurrHp, MaxHp) {
     }
 
     local sq_var = obj.getVar();
-    local master_ui = sq_var.GetAnimationMap("master_ui", "character/mage/effect/animation/masterblood/master_ui.ani");
-    local aiblood = sq_var.GetAnimationMap("aiblood", "character/mage/effect/animation/masterblood/aiblood.ani");
+    local master_ui = sq_var.GetAnimationMap("master_ui", "character/common/animation/monsterblood/master_ui.ani");
+    local aiblood = sq_var.GetAnimationMap("aiblood", "character/common/animation/monsterblood/aiblood.ani");
 
     local x = 75;
     local y = 450;
@@ -109,8 +109,8 @@ function DrawMosterEliteBlood_Striker(obj, xPos, yPos, CurrHp, MaxHp) {
     }
 
     local sq_var = obj.getVar();
-    local master_ui = sq_var.GetAnimationMap("master_ui", "character/mage/effect/animation/masterblood/master_ui.ani");
-    local eliteblood = sq_var.GetAnimationMap("eliteblood", "character/mage/effect/animation/masterblood/eliteblood.ani");
+    local master_ui = sq_var.GetAnimationMap("master_ui", "character/common/animation/monsterblood/master_ui.ani");
+    local eliteblood = sq_var.GetAnimationMap("eliteblood", "character/common/animation/monsterblood/eliteblood.ani");
 
     local x = 75;
     local y = 450;
@@ -145,8 +145,8 @@ function DrawMosterBOSSBlood_Striker(obj, xPos, yPos, CurrHp, MaxHp) {
     }
 
     local sq_var = obj.getVar();
-    local master_ui = sq_var.GetAnimationMap("master_ui", "character/mage/effect/animation/masterblood/master_ui.ani");
-    local bossblood = sq_var.GetAnimationMap("bossblood", "character/mage/effect/animation/masterblood/bossblood.ani");
+    local master_ui = sq_var.GetAnimationMap("master_ui", "character/common/animation/monsterblood/master_ui.ani");
+    local bossblood = sq_var.GetAnimationMap("bossblood", "character/common/animation/monsterblood/bossblood.ani");
 
     local x = 75;
     local y = 450;
@@ -182,7 +182,7 @@ function DrawMosterBlood_NUMBER(obj, xPos, yPos, CurrHp, MaxHp) {
     }
 
     local sq_var = obj.getVar();
-    local baifen = sq_var.GetAnimationMap("baifen", "character/mage/effect/animation/masterblood/baifen.ani");
+    local baifen = sq_var.GetAnimationMap("baifen", "character/common/animation/monsterblood/baifen.ani");
 
     local x = 75;
     local y = 450;
@@ -225,25 +225,25 @@ function DrawMosterIndexNum(obj, num) {
     local numImage = null;
     local sq_var = obj.getVar();
     if (num == 0) {
-        numImage = sq_var.GetAnimationMap("blood0", "character/mage/effect/animation/masterblood/0.ani");
+        numImage = sq_var.GetAnimationMap("blood0", "character/common/animation/monsterblood/0.ani");
     } else if (num == 1) {
-        numImage = sq_var.GetAnimationMap("blood1", "character/mage/effect/animation/masterblood/1.ani");
+        numImage = sq_var.GetAnimationMap("blood1", "character/common/animation/monsterblood/1.ani");
     } else if (num == 2) {
-        numImage = sq_var.GetAnimationMap("blood2", "character/mage/effect/animation/masterblood/2.ani");
+        numImage = sq_var.GetAnimationMap("blood2", "character/common/animation/monsterblood/2.ani");
     } else if (num == 3) {
-        numImage = sq_var.GetAnimationMap("blood3", "character/mage/effect/animation/masterblood/3.ani");
+        numImage = sq_var.GetAnimationMap("blood3", "character/common/animation/monsterblood/3.ani");
     } else if (num == 4) {
-        numImage = sq_var.GetAnimationMap("blood4", "character/mage/effect/animation/masterblood/4.ani");
+        numImage = sq_var.GetAnimationMap("blood4", "character/common/animation/monsterblood/4.ani");
     } else if (num == 5) {
-        numImage = sq_var.GetAnimationMap("blood5", "character/mage/effect/animation/masterblood/5.ani");
+        numImage = sq_var.GetAnimationMap("blood5", "character/common/animation/monsterblood/5.ani");
     } else if (num == 6) {
-        numImage = sq_var.GetAnimationMap("blood6", "character/mage/effect/animation/masterblood/6.ani");
+        numImage = sq_var.GetAnimationMap("blood6", "character/common/animation/monsterblood/6.ani");
     } else if (num == 7) {
-        numImage = sq_var.GetAnimationMap("blood7", "character/mage/effect/animation/masterblood/7.ani");
+        numImage = sq_var.GetAnimationMap("blood7", "character/common/animation/monsterblood/7.ani");
     } else if (num == 8) {
-        numImage = sq_var.GetAnimationMap("blood8", "character/mage/effect/animation/masterblood/8.ani");
+        numImage = sq_var.GetAnimationMap("blood8", "character/common/animation/monsterblood/8.ani");
     } else if (num == 9) {
-        numImage = sq_var.GetAnimationMap("blood9", "character/mage/effect/animation/masterblood/9.ani");
+        numImage = sq_var.GetAnimationMap("blood9", "character/common/animation/monsterblood/9.ani");
     }
     return numImage;
 }

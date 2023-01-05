@@ -1,0 +1,17 @@
+#PVF_File
+
+[use animation]
+	`RageLoop04Body_00.ani`
+	`00`
+
+[use animation]
+	`RageLoop04Body_02.ani`
+	`02`
+
+[none effect add]
+	0	-1
+	`02`
+
+[none effect add]
+	0	10001
+	`00`
