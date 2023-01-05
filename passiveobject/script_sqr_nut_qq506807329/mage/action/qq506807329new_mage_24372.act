@@ -1,0 +1,113 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`0.ani`
+[/MOTION]
+
+[TRIGGER]
+	[IF]
+		`time`	
+		[+]
+			100
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		0
+	[OFF]
+	[TRIGGER]
+		1
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[=]
+			1111
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[SUMMON MASTER]
+		1
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[=]
+			1112
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[SUMMON MASTER]
+		2
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[=]
+			1113
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[SUMMON MASTER]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			50680731
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[MAGIC CIRCLE]
+		[USE MY DIRECTION]
+		[USE MY BASEPOS]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			50680732
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[MAGIC CIRCLE]
+		[USE MY DIRECTION]
+		[USE MY BASEPOS]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			50680733
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[NO EFFECT]
+		[MAGIC CIRCLE]
+		[USE MY DIRECTION]
+		[USE MY BASEPOS]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
