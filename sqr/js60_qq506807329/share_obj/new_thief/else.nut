@@ -203,7 +203,6 @@ function onTimeEvent_po_qq506807329new_thief_24378(lgGjVeHQPEif, efVFdFaM8W8FH65
  
  
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); 
 function onDestroyObject_po_qq506807329new_thief_24378(lgGjVeHQPEif, efVFdFaM8W8FH65Er5cFVF)
 {
  if(!lgGjVeHQPEif) return;

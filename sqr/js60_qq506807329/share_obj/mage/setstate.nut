@@ -6,7 +6,6 @@
  
  
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function setState_po_qq506807329new_mage_24372(dKqt8L7ZvgyB, QME3kfKOCzou, lbNq4j7HjAgxvbvbVNWDo)
 {
  if(!dKqt8L7ZvgyB) return;

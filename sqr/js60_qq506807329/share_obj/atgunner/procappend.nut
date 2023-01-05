@@ -6,7 +6,6 @@
  
  
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function procAppend_po_qq506807329new_atgunner_24376(x_0IaV6Sjtz)
 {
  if(!x_0IaV6Sjtz) return;

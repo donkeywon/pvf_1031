@@ -7,7 +7,6 @@
  
  
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function onAttack_po_qq506807329new_atfighter_24375(f3hFfpSdcAhXvEq1VaCMpAEM, X9q7k8InQEHndnLtN_BSoM, TWuHQTYbljNx9Wy3EPd, _szQD3AdSYtbZbQvqp6CC5d)
 {
  if(!f3hFfpSdcAhXvEq1VaCMpAEM || !X9q7k8InQEHndnLtN_BSoM) return 0;
