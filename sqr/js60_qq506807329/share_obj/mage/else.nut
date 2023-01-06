@@ -594,5 +594,3 @@ function onChangeSkillEffect_po_qq506807329new_mage_24372(tlLFKYlK4kkvaz3, Z3WbP
 } ;
  
 
-
-   

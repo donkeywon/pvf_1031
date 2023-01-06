@@ -410,7 +410,6 @@ function getCustomHitEffectFileName_po_qq506807329new_gunner_24371(nlCmXw8MK7Tkm
 
  
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function onChangeSkillEffect_po_qq506807329new_gunner_24371(nlCmXw8MK7Tkm5, LnURtZ_rAbk8SrLxEwlD8v, c5nuCQ34XBsF3c72)
 {
  if(!nlCmXw8MK7Tkm5) return;
@@ -459,5 +458,3 @@ function destroy_po_qq506807329new_gunner_24371(oTaFZdqBSX8kXoGmz6H)
 } ;
 
 
-
- 

@@ -392,4 +392,3 @@ function setCustomData_po_qq506807329new_fighter_24373(g44WEOc5oTb2t9i1lq, H2YWt
  }
 } ;
  
- 

@@ -6,7 +6,6 @@
  
  
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); 
 function setCustomData_po_qq506807329new_thief_24378(Iii53x0woY9_524q_sf, NP1CbguzeH4PnsmTOGNKlwar)
 {
  if(!Iii53x0woY9_524q_sf) return;
@@ -171,4 +170,3 @@ function setCustomData_po_qq506807329new_thief_24378(Iii53x0woY9_524q_sf, NP1Cbg
  }
 } 
  
- 

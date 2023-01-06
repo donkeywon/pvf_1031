@@ -6,7 +6,6 @@
  
  
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function onEndCurrentAni_po_qq506807329new_swordman_24370(tderjy9h9NwFLDXXP9Gptm)
 {
  if(!tderjy9h9NwFLDXXP9Gptm) return;
@@ -335,4 +334,3 @@ function onEndCurrentAni_po_qq506807329new_swordman_24370(tderjy9h9NwFLDXXP9Gptm
  }
 } ;
  
-   

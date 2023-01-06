@@ -209,7 +209,6 @@ function onAttack_po_qq506807329new_priest_24374(eJ5nCE48XTHw7bzVAC3ppeuv, RGK11
  
  
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function onKeyFrameFlag_po_qq506807329new_priest_24374(UVdg92utcpl9fp8LtMTK1, avOJ_p_CbrvJ)
 {
  if(!UVdg92utcpl9fp8LtMTK1) return false;
@@ -679,6 +678,3 @@ function destroy_po_qq506807329new_priest_24374(zKjNDN2dRvkghQL8GSKjk)
 } ;
 
 
-
-
-  
