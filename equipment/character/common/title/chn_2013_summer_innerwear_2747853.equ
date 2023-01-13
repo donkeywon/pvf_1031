@@ -1,0 +1,269 @@
+#PVF_File
+
+[name]
+	`夏日時尚達人`
+	
+
+[explain]
+	`    攻擊時， 有2%%的幾率使自身增加15點力量、 智力以及3%%的攻擊速度， 效果持續20秒(在決斗場中， 只增加1.5%%)。
+    施放技能時， 有3%%的幾率使自身增加15點力量、 智力以及3%%的施放速度， 效果持續20秒(在決斗場中， 只增加1.5%%)。
+    前沖時， 有1%%的幾率使自身增加3%%的移動速度， 效果持續30秒(在決斗場中， 只增加1.5%%)。`
+	
+
+[flavor text]
+	`    其實， 夏日里真正頂級的時裝， 就是你的臉龐和身材！
+    出去運動下， 向朋友們展現你的魅力吧！
+<2013夏日禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical attack]
+	30
+
+[magical attack]
+	30
+
+[physical defense]
+	30
+
+[magical defense]
+	30
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[move speed]
+	30
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[light attack]
+	4
+
+[dark attack]
+	4
+
+[fire attack]
+	8
+
+[water attack]
+	8
+
+[light resistance]
+	5
+
+[dark resistance]
+	5
+
+[fire resistance]
+	10
+
+[water resistance]
+	10
+
+[icon]
+	`Item/Title/title_cn.img`	226
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/chn_2013_summer_innerwear.ani`
+[/custom animation]
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[stat]
+		`physical attack`
+		`+`	15
+	[stat]
+		`magical attack`
+		`+`	15
+	[stat]
+		`attack speed`
+		`+`	30
+[/then]
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		3
+	[stat]
+		`physical attack`
+		`+`	15
+	[stat]
+		`magical attack`
+		`+`	15
+	[stat]
+		`cast speed`
+		`+`	30
+[/then]
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		30000
+	[set my state]
+		1
+	[my state]
+		`dash`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`move speed`
+		`+`	30
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[stat]
+		`physical attack`
+		`+`	15
+	[stat]
+		`magical attack`
+		`+`	15
+	[stat]
+		`attack speed`
+		`+`	15
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		3
+	[stat]
+		`physical attack`
+		`+`	15
+	[stat]
+		`magical attack`
+		`+`	15
+	[stat]
+		`cast speed`
+		`+`	15
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		30000
+	[set my state]
+		1
+	[my state]
+		`dash`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`move speed`
+		`+`	15
+[/then]

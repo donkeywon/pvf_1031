@@ -1,0 +1,146 @@
+#PVF_File
+
+[name]
+	`落霞孤鴻`
+	
+
+[explain]
+	`    攻擊時， 有1%%的幾率使自身增加30點的力量和體力， 效果持續30秒。
+    施放技能時， 有1%%的幾率使自身增加4%%的攻擊速度， 效果持續30秒。 (在決斗場中， 只增加2%%)`
+	
+
+[flavor text]
+	`<2014夏日禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical attack]
+	30
+
+[physical defense]
+	30
+
+[attack speed]
+	25
+
+[move speed]
+	25
+
+[cast speed]
+	20
+
+[stuck]
+	-1
+
+[stuck resistance]
+	10
+
+[HP MAX]
+	180
+
+[MP MAX]
+	180
+
+[physical critical hit]
+	2
+
+[icon]
+	`Item/Title/title.img`	542
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/chn_2014summer_sunset.ani`
+[/custom animation]
+
+[if]
+	[cooltime]
+		50000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	30
+[/then]
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		50000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`attack speed`
+		`+`	40
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		50000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`attack speed`
+		`+`	20
+[/then]

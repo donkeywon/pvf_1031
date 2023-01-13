@@ -1,0 +1,116 @@
+#PVF_File
+
+[name]
+	`迷你帕克`
+
+[explain]
+	`暴擊傷害 +7%%(pkc效果減半)`
+
+[flavor text]
+	`<Re：從零開始的異世界生活>`
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Common/anicon/creature/anicon_pack.img`	0
+
+[field image]
+	`item/fieldimage.img`	30
+
+[equipment type]
+	`[creature]`	0
+
+[sub type]
+	0
+
+[creature species]
+	10228
+
+[cool time]
+	10000
+
+[equipment magical attack]
+	30	30
+
+[equipment physical attack]
+	30	30
+
+[separate attack]
+	30	30
+
+[physical critical hit]
+	3.0
+
+[magical critical hit]
+	3.0
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[move speed]
+	30
+
+[MP MAX rate]
+	5.0
+
+[if]
+	[time]
+		2000	1	0
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[increase critical damage]
+		`%`	7
+[/then]
+
+[pvp]
+	[if]
+		[time]
+			2000	1	0
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			5000
+		[increase critical damage]
+			`%`	3.5
+	[/then]
+[/pvp]
+
+[if]
+	[cooltime]
+		999999
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		0
+	[speech on]
+		0	0
+		`(作者>狼叔)  py>劍聖60  QQ506807329`
+	[/speech on]
+[/then]
+
+[set item master]
+	-1

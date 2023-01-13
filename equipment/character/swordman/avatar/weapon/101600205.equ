@@ -1,0 +1,79 @@
+#PVF_File
+
+[name]
+	`復古長劍`
+
+[price]
+	200000
+
+[grade]
+	2
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/katana/katana.img`	110
+
+[equipment type]
+	`[waist avatar]`	0
+
+[avatar type select]
+	7	0	0	1000	0	30	0	0	2000	0	0	0	0	4000	0	0	0	0	4500	2
+	`[D socket]`
+	`[D socket]`
+[/avatar type select]
+
+[avatar select ability]
+	`[ELEMENT_TOLERANCE_FIRE]`
+	`+`	25
+	`[ELEMENT_TOLERANCE_WATER]`
+	`+`	25
+	`[ELEMENT_TOLERANCE_DARK]`
+	`+`	25
+	`[ELEMENT_TOLERANCE_LIGHT]`
+	`+`	25
+	`[ACTIVESTATUS_TOLERANCE_STUCK]`
+	`+`	40
+	`[INVENTORY_MAX_WEIGHT]`
+	`+`	9000
+[/avatar select ability]
+
+[move wav]
+	`8BIT_WP_TOUCH`
+
+[expand ani]
+	10	1	0	1
+	[variation]
+		39	0
+	[layer variation]
+		2600
+		`katanac`
+	[equipment ani script]
+		`equipment/character/swordman.lay`
+	[layer variation]
+		650
+		`katanab`
+	[equipment ani script]
+		`equipment/character/swordman.lay`
+	[expand path]
+		`equipment/character/swordman/weapon/katana/`
+	[spectrum avatar]
+		255	255	255	120	500	0
+[/expand ani]
+
+[string data]
+	`Common/Particle/weaponavatar_3/8bit.ptl`
+[/string data]
+
+[int data]
+	654321	3	3	100	30	70	3	100	30	70	3	120	30	70	3	130	30	70	3	100	30	70
+[/int data]

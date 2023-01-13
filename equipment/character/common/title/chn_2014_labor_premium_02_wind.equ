@@ -1,0 +1,187 @@
+#PVF_File
+
+[name]
+	`明日之洗禮 - 無痕`
+	
+
+[explain]
+	`    攻擊時， 有3%%的幾率減少30%%的技能冷卻時間， 效果持續10秒。 (在決斗場中無效)
+    被攻擊時， 有3%%的幾率使自身的攻擊附加5%%的傷害， 效果持續10秒。(在決斗場中無效)
+(裝備解除時所有效果消失)	`
+	
+
+[flavor text]
+	`<2014勞動節禮包>`
+	
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	3
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title_cn.img`	266
+
+[custom animation]
+	`TitleAnimation/chn_2014_laborday_premium_02_wind.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	28
+
+[magical attack]
+	35
+
+[physical defense]
+	28
+
+[magical defense]
+	31
+
+[attack speed]
+	25
+
+[move speed]
+	25
+
+[cast speed]
+	25
+
+[stuck]
+	-2
+
+[stuck resistance]
+	20
+
+[HP MAX]
+	230
+
+[MP MAX]
+	230
+
+[physical critical hit]
+	2.5
+
+[magical critical hit]
+	2.5
+
+[all elemental attack]
+	8
+
+[equipment physical attack]
+	8	8
+
+[equipment magical attack]
+	8	8
+
+[separate attack]
+	15	15
+
+[room list move speed rate]
+	0.2
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[equipment duration]
+		15000
+	[appendage]
+		334
+[/then]
+
+[if]
+	[my appendage]
+		334
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		15000
+	[stat]
+		`skill cool time`
+		`%`	-15
+[/then]
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[hit]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[equipment duration]
+		15000
+	[appendage]
+		335
+[/then]
+
+[if]
+	[my appendage]
+		335
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	5
+[/then]
+
+[move wav]
+	`NAME_TOUCH`

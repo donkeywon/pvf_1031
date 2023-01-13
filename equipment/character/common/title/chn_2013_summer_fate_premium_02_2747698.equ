@@ -1,0 +1,139 @@
+#PVF_File
+
+[name]
+	`征服王的友誼`
+	
+
+[explain]
+	`    攻擊時， 有3%%的幾率增加8%%的物理暴擊率和魔法暴擊率， 效果持續15秒(在決斗場中無效)。
+    施放技能時， 有1%%的幾率增加20點力量和智力。`
+	
+
+[flavor text]
+	`    沒有欲望的王， 還不如無用的裝飾品。  --征服王。
+<Fate/Zero禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical attack]
+	28
+
+[magical attack]
+	28
+
+[physical defense]
+	30
+
+[magical defense]
+	30
+
+[HP MAX]
+	200
+
+[MP MAX]
+	200
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[move speed]
+	20
+
+[physical critical hit]
+	1
+
+[magical critical hit]
+	1
+
+[stuck]
+	-2
+
+[stuck resistance]
+	20
+
+[separate attack]
+	25	18
+
+[icon]
+	`Item/Title/title_cn.img`	221
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/chn_fate_02_Rider.ani`
+[/custom animation]
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[probability]
+		3
+	[stat]
+		`physical critical hit`
+		`%`	8
+	[stat]
+		`magical critical hit`
+		`%`	8
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	20
+	[stat]
+		`magical attack`
+		`+`	20
+[/then]

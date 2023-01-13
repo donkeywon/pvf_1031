@@ -1,0 +1,235 @@
+#PVF_File
+
+[name]
+	`明日之洗禮 - 春華`
+	
+
+[explain]
+	`    攻擊時， 有3%%的幾率減少30%%的技能冷卻時間， 效果持續15秒。 (在決斗場中無效)
+    被攻擊時， 有3%%的幾率使自身的攻擊附加5%%的傷害， 效果持續15秒。 (在決斗場中無效)
+    前沖時， 有3%%的幾率使自身增加8%%的移動速度， 效果持續10秒。 (在決斗場中無效)
+(裝備解除時所有效果消失)`
+	
+
+[flavor text]
+	`<2014勞動節禮包>`
+	
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	3
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title_cn.img`	265
+
+[custom animation]
+	`TitleAnimation/chn_2014_laborday_premium_01_newleaf.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	32
+
+[magical attack]
+	32
+
+[physical defense]
+	32
+
+[magical defense]
+	32
+
+[attack speed]
+	30
+
+[move speed]
+	30
+
+[cast speed]
+	30
+
+[stuck]
+	-2.5
+
+[stuck resistance]
+	25
+
+[HP MAX]
+	280
+
+[MP MAX]
+	280
+
+[physical critical hit]
+	3
+
+[magical critical hit]
+	3
+
+[all elemental attack]
+	12
+
+[equipment physical attack]
+	10	10
+
+[equipment magical attack]
+	10	10
+
+[separate attack]
+	20	20
+
+[room list move speed rate]
+	0.2
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[equipment duration]
+		15000
+	[appendage]
+		334
+[/then]
+
+[if]
+	[my appendage]
+		334
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		15000
+	[stat]
+		`skill cool time`
+		`%`	-30
+[/then]
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[hit]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[equipment duration]
+		15000
+	[appendage]
+		335
+[/then]
+
+[if]
+	[my appendage]
+		335
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	5
+[/then]
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[set my state]
+		1
+	[my state]
+		`dash`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		8
+	[equipment duration]
+		10000
+	[appendage]
+		336
+[/then]
+
+[if]
+	[my appendage]
+		336
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[stat]
+		`move speed`
+		`+`	80
+[/then]
+
+[move wav]
+	`NAME_TOUCH`

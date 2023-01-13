@@ -1,0 +1,109 @@
+#PVF_File
+
+[name]
+	`狂戰士的憤怒`
+	
+
+[explain]
+	`    攻擊時， 有1%%的幾率增加7%%的物理暴擊率， 效果持續15秒。 (在決斗場中無效)`
+	
+
+[flavor text]
+	`<Fate/Zero禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical attack]
+	23
+
+[magical attack]
+	23
+
+[physical defense]
+	23
+
+[magical defense]
+	23
+
+[HP MAX]
+	150
+
+[MP MAX]
+	150
+
+[attack speed]
+	10
+
+[cast speed]
+	10
+
+[move speed]
+	20
+
+[physical critical hit]
+	2
+
+[stuck]
+	-1
+
+[stuck resistance]
+	10
+
+[equipment physical attack]
+	10	7
+
+[icon]
+	`Item/Title/title_cn.img`	224
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/chn_fate_05_Berserker.ani`
+[/custom animation]
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[probability]
+		1
+	[stat]
+		`physical critical hit`
+		`%`	7
+[/then]

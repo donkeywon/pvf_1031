@@ -1,0 +1,111 @@
+#PVF_File
+
+[name]
+	`光之恩賜青銅戒指`
+
+[name2]
+	`Divine Knights Bronze Ring`
+
+[explain]
+	`    攻擊時， 有3%%幾率使自身增加1%%的魔法暴擊率、 物理暴擊率和命中率， 效果持續30秒。`
+
+[flavor text]
+	`<2011勞動節高級禮包>`
+
+[grade]
+	56
+
+[attach type]
+	`[sealing]`
+
+[item group name]
+	`ring`
+
+[creation rate]
+	0
+
+[rarity]
+	3
+
+[weight]
+	300
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	25
+
+[icon]
+	`Item/stackable/cash_cn.img`	298
+
+[field image]
+	`Item/field_material_cn.img`	39
+
+[equipment type]
+	`[ring]`	20
+
+[price]
+	67200
+
+[value]
+	25000
+
+[cool time]
+	10000
+
+[equipment magical defense]
+	1000	700
+
+[physical attack]
+	20
+
+[magical attack]
+	20
+
+[cast speed]
+	10
+
+[attack speed]
+	10
+
+[anti evil]
+	4
+
+[room list move speed rate]
+	0.05
+
+[light resistance]
+	2
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`physical critical hit rate`
+		`+`	1
+	[stat]
+		`magical critical hit rate`
+		`+`	1
+	[stat]
+		`stuck`
+		`+`	-1
+[/then]
+
+[move wav]
+	`RING_TOUCH`
+
+[set item master]
+	2681274

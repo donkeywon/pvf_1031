@@ -1,0 +1,464 @@
+#PVF_File
+
+[name]
+	`莫納亨的紅色襯衣`
+	
+
+[name2]
+	`Monaghan's Red Lace Blouse`
+	
+
+[explain]
+	`莫納亨套裝 2`
+	
+
+[grade]
+	2
+
+[attach type]
+	`[trade]`
+
+[usable job]
+	`[fighter]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`item/avatar/fighter/ft_acoat.img`	360
+
+[equipment type]
+	`[coat avatar]`	0
+
+[avatar type select]
+	7	0	0	1700	0	30	0	0	3400	0	0	0	0	6800	0	0	0	0	7480	2
+	`[C socket]`
+	`[C socket]`
+[/avatar type select]
+
+[physical attack]
+	5
+
+[magical attack]
+	5
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	112	1
+
+[layer variation]
+	1800
+	`coat_a`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	900
+	`coat_b`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[set name]
+	`莫納亨套裝 2`
+	
+
+[set item]
+	2685229	2685353	2685487	2685610	2685745	2685875	2686004	2686134	2686192
+[/set item]
+
+[set ability]
+	[HP MAX]
+		150
+	[MP MAX]
+		150
+	[physical attack]
+		25
+	[physical defense]
+		25
+	[magical attack]
+		25
+	[magical defense]
+		25
+	[inventory limit]
+		6000
+	[HP regen speed]
+		20
+	[MP regen speed]
+		4
+	[move speed]
+		20
+	[attack speed]
+		20
+	[cast speed]
+		20
+	[fullset explain]
+		`    攻擊或施放技能時， 有3%%的幾率發動隨機Buff。`
+		
+	[if]
+		[module]
+			`[dungeon type]`
+		[/module]
+		[attack success effect animation]
+			2
+			`Common/Etc/Animation/2011na_Body.ani`	0	-150
+			`Common/Etc/Animation/2011na_Effect.ani`	0	-150
+		[attack success]
+			1
+		[cooltime]
+			50000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				4
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				5
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				6
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				7
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				8
+			[then probability]
+				20.0
+		[/then]
+	[/multiple then]
+	[if]
+		[module]
+			`[dungeon type]`
+		[/module]
+		[attack success effect animation]
+			2
+			`Common/Etc/Animation/2011na_Body.ani`	0	-150
+			`Common/Etc/Animation/2011na_Effect.ani`	0	-150
+		[casting]
+			1
+		[cooltime]
+			50000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				4
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				5
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				6
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				7
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				8
+			[then probability]
+				20.0
+		[/then]
+	[/multiple then]
+	[if]
+		[module]
+			`[pvp type]`
+		[/module]
+		[attack success effect animation]
+			2
+			`Common/Etc/Animation/2011na_Body.ani`	0	-150
+			`Common/Etc/Animation/2011na_Effect.ani`	0	-150
+		[attack success]
+			1
+		[cooltime]
+			70000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				4
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				5
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				6
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				7
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				8
+			[then probability]
+				20.0
+		[/then]
+	[/multiple then]
+	[if]
+		[module]
+			`[pvp type]`
+		[/module]
+		[attack success effect animation]
+			2
+			`Common/Etc/Animation/2011na_Body.ani`	0	-150
+			`Common/Etc/Animation/2011na_Effect.ani`	0	-150
+		[casting]
+			1
+		[cooltime]
+			70000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				4
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				5
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				6
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				7
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				8
+			[then probability]
+				20.0
+		[/then]
+	[/multiple then]
+[/set ability]
+
+[avatar select ability]
+	`[SKILL_LEVEL]`
+	`[fighter]`	30	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	20	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	1	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	3	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	45	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	22	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	10	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	51	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	50	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	11	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	37	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	43	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	49	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	36	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	31	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	4	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	38	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	18	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	42	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	52	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	39	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	44	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	40	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	19	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	14	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	54	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	15	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	16	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	60	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	62	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	69	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	68	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	74	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	75	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	76	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	77	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	78	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	79	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	90	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	80	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	91	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	83	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	82	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	81	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	87	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	89	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	88	1
+	`[SKILL_LEVEL]`
+	`[fighter]`	106	1
+[/avatar select ability]

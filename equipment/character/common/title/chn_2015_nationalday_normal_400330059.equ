@@ -1,0 +1,144 @@
+#PVF_File
+
+[name]
+	`朝圣者`
+	
+
+[explain]
+	`    攻擊時， 有2%%的幾率增加3%%的物理暴擊和魔法暴擊， 效果持續20秒；
+    施放技能時， 有2%%的幾率增加2%%的攻擊速度、 施放速度、 移動速度， 效果持續20秒。 (冷卻時間為40秒)`
+	
+
+[flavor text]
+	`<2015國慶節美麗傳說禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[weight]
+	1
+
+[icon]
+	`Item/Title/title_cn.img`	327
+
+[custom animation]
+	`titleanimation/chn_2015NationalDay_Normal.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[sub type]
+	0
+
+[equipment physical attack]
+	15	15
+
+[equipment magical attack]
+	15	15
+
+[separate attack]
+	25	25
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[move speed]
+	20
+
+[stuck]
+	-1
+
+[stuck resistance]
+	10
+
+[HP MAX]
+	100
+
+[MP MAX]
+	100
+
+[HP regen speed]
+	40
+
+[MP regen speed]
+	8
+
+[physical critical hit]
+	3.0
+
+[magical critical hit]
+	3.0
+
+[all elemental attack]
+	5
+
+[if]
+	[cooltime]
+		40000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[stat]
+		`physical critical hit`
+		`+`	3
+	[stat]
+		`magical critical hit`
+		`+`	3
+[/then]
+
+[if]
+	[cooltime]
+		40000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[stat]
+		`attack speed`
+		`+`	20
+	[stat]
+		`cast speed`
+		`+`	20
+	[stat]
+		`move speed`
+		`+`	20
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[set item master]
+	-1

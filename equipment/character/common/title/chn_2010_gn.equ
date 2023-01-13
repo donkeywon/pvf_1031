@@ -1,0 +1,132 @@
+#PVF_File
+
+[name]
+	`風雲遊俠`
+	
+
+[explain]
+	`    攻擊時， 有1%%的幾率增加30點力量, 效果持續30秒。
+    施放技能時， 有2%%的幾率增加30點智力, 效果持續30秒。`
+	
+
+[flavor text]
+	`<2010國慶節禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical attack]
+	24
+
+[physical defense]
+	16
+
+[magical attack]
+	24
+
+[magical defense]
+	16
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[move speed]
+	20
+
+[MP regen speed]
+	12
+
+[stuck]
+	-1
+
+[stuck resistance]
+	10
+
+[all elemental resistance]
+	8
+
+[skill levelup]
+	`[gunner]`	64	1
+	`[gunner]`	9	1
+	`[gunner]`	60	1
+	`[gunner]`	54	1
+	`[gunner]`	45	1
+	`[gunner]`	62	1
+	`[gunner]`	67	1
+	`[gunner]`	59	1
+	`[gunner]`	29	1
+	`[gunner]`	70	1
+	`[gunner]`	53	1
+	`[gunner]`	1	1
+[/skill levelup]
+
+[icon]
+	`Item/Title/title_cn.img`	65
+
+[custom animation]
+	`TitleAnimation/chn_2010_na_gn.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[if]
+	[cooltime]
+		50000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	30
+[/then]
+
+[if]
+	[cooltime]
+		50000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`magical attack`
+		`+`	30
+[/then]

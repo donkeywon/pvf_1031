@@ -1,0 +1,90 @@
+#PVF_File
+
+[name]
+	`人偶劇團 (藍仙女)`
+	
+
+[explain]
+	`    被攻擊時，有2%%的幾率召喚出LV40的調皮的匹諾曹協助召喚者攻擊敵人，調皮的匹諾曹存在30秒。(無法在決斗場、死亡之塔召喚APC)`
+	
+
+[flavor text]
+	`    我討厭說謊的人！你第一次看見我時就說愛我，這明顯是騙人的……  --藍仙女
+<2010勞動節禮包>`
+	
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	92
+
+[equipment type]
+	`[title name]`	1
+
+[custom animation]
+	`TitleAnimation/chn_puppet_show.ani`
+[/custom animation]
+
+[physical defense]
+	15
+
+[magical defense]
+	15
+
+[HP MAX]
+	180
+
+[MP MAX]
+	180
+
+[HP regen speed]
+	60
+
+[MP regen speed]
+	12
+
+[attack speed]
+	10
+
+[cast speed]
+	10
+
+[if]
+	[cooltime]
+		60000
+	[disable pvp]
+		1
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[summon apc]
+		15000	40	1
+[/then]
+
+[move wav]
+	`NAME_TOUCH`

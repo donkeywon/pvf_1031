@@ -1,0 +1,138 @@
+#PVF_File
+
+[name]
+	`精·鐵扇公主`
+	
+
+[explain]
+	`    攻擊時， 有1%%的幾率增加30點力量, 效果持續30秒。
+    施放技能時， 有2%%的幾率增加30點智力, 效果持續30秒。`
+	
+
+[flavor text]
+	`<2010國慶節高級禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical attack]
+	27
+
+[physical defense]
+	18
+
+[magical attack]
+	27
+
+[magical defense]
+	18
+
+[attack speed]
+	25
+
+[cast speed]
+	25
+
+[move speed]
+	25
+
+[MP regen speed]
+	12
+
+[stuck]
+	-2
+
+[stuck resistance]
+	20
+
+[all elemental resistance]
+	8
+
+[room list move speed rate]
+	0.2
+
+[skill levelup]
+	`[mage]`	74	1
+	`[mage]`	27	1
+	`[mage]`	55	1
+	`[mage]`	82	1
+	`[mage]`	76	1
+	`[mage]`	77	1
+	`[mage]`	78	1
+	`[mage]`	79	1
+	`[mage]`	45	1
+	`[mage]`	83	1
+	`[mage]`	68	1
+	`[mage]`	13	1
+	`[mage]`	109	1
+	`[mage]`	103	1
+	`[mage]`	106	1
+[/skill levelup]
+
+[icon]
+	`Item/Title/title_cn.img`	66
+
+[custom animation]
+	`TitleAnimation/chn_2010_pr_na_mg.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[if]
+	[cooltime]
+		50000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	30
+[/then]
+
+[if]
+	[cooltime]
+		50000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`magical attack`
+		`+`	30
+[/then]

@@ -1,0 +1,236 @@
+#PVF_File
+
+[name]
+	`天之驕子 · 辨`
+	
+
+[explain]
+	`    攻擊時， 有1%%的幾率使力量、 智力、 體力和精神各增加30點， 攻擊速度、 施放速度和移動速度各增加3%%， 效果持續30秒。 (在決斗場中， 只增加1.5%%)
+    施放技能時， 有1%%的幾率使物理暴擊率和魔法暴擊率增加5%%， 效果持續60秒(在決斗場中， 只增加3%%)。`
+	
+
+[flavor text]
+	`與人辯， 與己辯， 方可分辨是非。
+<2014春節禮包>`
+	
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title_cn.img`	258
+
+[custom animation]
+	`TitleAnimation/chn_2014_New_Year_premium.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	33
+
+[physical defense]
+	33
+
+[magical attack]
+	33
+
+[magical defense]
+	33
+
+[attack speed]
+	25
+
+[cast speed]
+	25
+
+[move speed]
+	25
+
+[HP MAX]
+	250
+
+[MP MAX]
+	250
+
+[stuck]
+	-2
+
+[stuck resistance]
+	20
+
+[physical critical hit]
+	2.5
+
+[magical critical hit]
+	2.5
+
+[all elemental attack]
+	7
+
+[equipment physical attack]
+	10	10
+
+[equipment magical attack]
+	10	10
+
+[separate attack]
+	20	20
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		50000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`attack speed`
+		`+`	30
+	[stat]
+		`cast speed`
+		`+`	30
+	[stat]
+		`move speed`
+		`+`	30
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	30
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`magical defense`
+		`+`	30
+[/then]
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		80000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		60000
+	[probability]
+		1
+	[stat]
+		`physical critical hit`
+		`+`	5
+	[stat]
+		`magical critical hit`
+		`+`	5
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		50000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`attack speed`
+		`+`	15
+	[stat]
+		`cast speed`
+		`+`	15
+	[stat]
+		`move speed`
+		`+`	15
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	30
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`magical defense`
+		`+`	30
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		80000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		60000
+	[probability]
+		1
+	[stat]
+		`physical critical hit`
+		`+`	3
+	[stat]
+		`magical critical hit`
+		`+`	3
+[/then]
+
+[move wav]
+	`NAME_TOUCH`

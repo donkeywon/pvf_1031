@@ -1,0 +1,431 @@
+#PVF_File
+
+[name]
+	`白色死亡騎士制服`
+	
+
+[name2]
+	`Royal Guard Purple Coat`
+	
+
+[explain]
+	`皇家護衛隊  套裝 4 (男法師)`
+	
+
+[grade]
+	2
+
+[attach type]
+	`[trade]`
+
+[usable job]
+	`[at mage]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`item/avatar/atmage/mm_acoat.img`	74
+
+[equipment type]
+	`[coat avatar]`	0
+
+[sub type]
+	0
+
+[avatar type select]
+	7	0	0	450	0	30	0	0	990	0	0	0	0	2970	0	0	0	0	6500	2
+	`[C socket]`
+	`[C socket]`
+[/avatar type select]
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	26	3
+
+[layer variation]
+	2300
+	`coat_c`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	1800
+	`coat_a`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	900
+	`coat_b`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	500
+	`coat_d`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[physical attack]
+	5
+
+[magical attack]
+	5
+
+[set name]
+	`皇家護衛隊  套裝 4 (男法師)`
+	
+
+[set item]
+	2743329	2743424	2743517	2743630	2743731	2743832	2743926	2744034
+[/set item]
+
+[set ability]
+	[HP MAX]
+		150
+	[MP MAX]
+		150
+	[physical attack]
+		25
+	[physical defense]
+		25
+	[magical attack]
+		25
+	[magical defense]
+		25
+	[inventory limit]
+		6000
+	[HP regen speed]
+		20
+	[MP regen speed]
+		4
+	[move speed]
+		20
+	[attack speed]
+		20
+	[cast speed]
+		20
+	[fullset explain]
+		`    攻擊或施放技能時， 有3%%的幾率對所有隊員發動隨機Buff。`
+		
+	[if]
+		[module]
+			`[dungeon type]`
+		[/module]
+		[attack success effect animation]
+			2
+			`Common/Etc/Animation/2012_Na_Body.ani`	0	-160
+			`Common/Etc/Animation/2012_Na_Effect.ani`	0	-160
+		[attack success]
+			1
+		[cooltime]
+			50000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				4
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				5
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				6
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				7
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				8
+			[then probability]
+				20.0
+		[/then]
+	[/multiple then]
+	[if]
+		[module]
+			`[dungeon type]`
+		[/module]
+		[attack success effect animation]
+			2
+			`Common/Etc/Animation/2012_Na_Body.ani`	0	-160
+			`Common/Etc/Animation/2012_Na_Effect.ani`	0	-160
+		[casting]
+			1
+		[cooltime]
+			50000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				4
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				5
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				6
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				7
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				8
+			[then probability]
+				20.0
+		[/then]
+	[/multiple then]
+	[if]
+		[module]
+			`[pvp type]`
+		[/module]
+		[attack success effect animation]
+			2
+			`Common/Etc/Animation/2012_Na_Body.ani`	0	-160
+			`Common/Etc/Animation/2012_Na_Effect.ani`	0	-160
+		[attack success]
+			1
+		[cooltime]
+			70000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				4
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				5
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				6
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				7
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				8
+			[then probability]
+				20.0
+		[/then]
+	[/multiple then]
+	[if]
+		[module]
+			`[pvp type]`
+		[/module]
+		[attack success effect animation]
+			2
+			`Common/Etc/Animation/2012_Na_Body.ani`	0	-160
+			`Common/Etc/Animation/2012_Na_Effect.ani`	0	-160
+		[casting]
+			1
+		[cooltime]
+			70000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				4
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				5
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				6
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				7
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				8
+			[then probability]
+				20.0
+		[/then]
+	[/multiple then]
+[/set ability]
+
+[avatar select ability]
+	`[SKILL_LEVEL]`
+	`[at mage]`	5	1
+	`[SKILL_LEVEL]`
+	`[at mage]`	3	1
+	`[SKILL_LEVEL]`
+	`[at mage]`	19	1
+	`[SKILL_LEVEL]`
+	`[at mage]`	6	1
+	`[SKILL_LEVEL]`
+	`[at mage]`	28	1
+	`[SKILL_LEVEL]`
+	`[at mage]`	2	1
+	`[SKILL_LEVEL]`
+	`[at mage]`	4	1
+	`[SKILL_LEVEL]`
+	`[at mage]`	11	1
+	`[SKILL_LEVEL]`
+	`[at mage]`	14	1
+	`[SKILL_LEVEL]`
+	`[at mage]`	29	1
+	`[SKILL_LEVEL]`
+	`[at mage]`	24	1
+	`[SKILL_LEVEL]`
+	`[at mage]`	30	1
+	`[SKILL_LEVEL]`
+	`[at mage]`	21	1
+	`[SKILL_LEVEL]`
+	`[at mage]`	23	1
+	`[SKILL_LEVEL]`
+	`[at mage]`	7	1
+	`[SKILL_LEVEL]`
+	`[at mage]`	22	1
+	`[SKILL_LEVEL]`
+	`[at mage]`	16	1
+	`[SKILL_LEVEL]`
+	`[at mage]`	31	1
+	`[SKILL_LEVEL]`
+	`[at mage]`	10	1
+	`[SKILL_LEVEL]`
+	`[at mage]`	12	1
+	`[SKILL_LEVEL]`
+	`[at mage]`	15	1
+	`[SKILL_LEVEL]`
+	`[at mage]`	32	1
+	`[SKILL_LEVEL]`
+	`[at mage]`	13	1
+[/avatar select ability]

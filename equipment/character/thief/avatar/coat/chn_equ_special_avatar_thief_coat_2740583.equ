@@ -1,0 +1,428 @@
+#PVF_File
+
+[name]
+	`誘惑之梅傑茵的紅色旗袍`
+	
+
+[name2]
+	`Mary Jane's Red Chinese Dress`
+	
+
+[explain]
+	`誘惑之梅傑茵套裝 1`
+	
+
+[grade]
+	2
+
+[attach type]
+	`[trade]`
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`item/avatar/thief/th_acoat.img`	162
+
+[equipment type]
+	`[coat avatar]`	0
+
+[avatar type select]
+	7	0	0	1700	0	30	0	0	3400	0	0	0	0	6800	0	0	0	0	7480	2
+	`[C socket]`
+	`[C socket]`
+[/avatar type select]
+
+[physical attack]
+	5
+
+[magical attack]
+	5
+
+[animation job]
+	`[thief]`
+
+[variation]
+	53	0
+
+[layer variation]
+	2300
+	`coat_c`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1800
+	`coat_a`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	900
+	`coat_b`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	500
+	`coat_d`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[set name]
+	`誘惑之梅傑茵套裝 1`
+	
+
+[set item]
+	2740066	2740190	2740324	2740451	2740583	2740713	2741097	2740841	2740916
+[/set item]
+
+[set ability]
+	[HP MAX]
+		150
+	[MP MAX]
+		150
+	[physical attack]
+		25
+	[physical defense]
+		25
+	[magical attack]
+		25
+	[magical defense]
+		25
+	[inventory limit]
+		6000
+	[HP regen speed]
+		20
+	[MP regen speed]
+		4
+	[move speed]
+		20
+	[attack speed]
+		20
+	[cast speed]
+		20
+	[fullset explain]
+		`    攻擊或施放技能時， 有3%%的幾率發動隨機Buff。`
+		
+	[if]
+		[module]
+			`[dungeon type]`
+		[/module]
+		[attack success effect animation]
+			2
+			`Common/Etc/Animation/2011na_Body.ani`	0	-150
+			`Common/Etc/Animation/2011na_Effect.ani`	0	-150
+		[attack success]
+			1
+		[cooltime]
+			50000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				4
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				5
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				6
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				7
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				8
+			[then probability]
+				20.0
+		[/then]
+	[/multiple then]
+	[if]
+		[module]
+			`[dungeon type]`
+		[/module]
+		[attack success effect animation]
+			2
+			`Common/Etc/Animation/2011na_Body.ani`	0	-150
+			`Common/Etc/Animation/2011na_Effect.ani`	0	-150
+		[casting]
+			1
+		[cooltime]
+			50000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				4
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				5
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				6
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				7
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				8
+			[then probability]
+				20.0
+		[/then]
+	[/multiple then]
+	[if]
+		[module]
+			`[pvp type]`
+		[/module]
+		[attack success effect animation]
+			2
+			`Common/Etc/Animation/2011na_Body.ani`	0	-150
+			`Common/Etc/Animation/2011na_Effect.ani`	0	-150
+		[attack success]
+			1
+		[cooltime]
+			70000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				4
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				5
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				6
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				7
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				8
+			[then probability]
+				20.0
+		[/then]
+	[/multiple then]
+	[if]
+		[module]
+			`[pvp type]`
+		[/module]
+		[attack success effect animation]
+			2
+			`Common/Etc/Animation/2011na_Body.ani`	0	-150
+			`Common/Etc/Animation/2011na_Effect.ani`	0	-150
+		[casting]
+			1
+		[cooltime]
+			70000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				4
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				5
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				6
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				7
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				8
+			[then probability]
+				20.0
+		[/then]
+	[/multiple then]
+[/set ability]
+
+[avatar select ability]
+	`[SKILL_LEVEL]`
+	`[thief]`	16	1
+	`[SKILL_LEVEL]`
+	`[thief]`	9	1
+	`[SKILL_LEVEL]`
+	`[thief]`	29	1
+	`[SKILL_LEVEL]`
+	`[thief]`	30	1
+	`[SKILL_LEVEL]`
+	`[thief]`	27	1
+	`[SKILL_LEVEL]`
+	`[thief]`	41	1
+	`[SKILL_LEVEL]`
+	`[thief]`	31	1
+	`[SKILL_LEVEL]`
+	`[thief]`	33	1
+	`[SKILL_LEVEL]`
+	`[thief]`	45	1
+	`[SKILL_LEVEL]`
+	`[thief]`	34	1
+	`[SKILL_LEVEL]`
+	`[thief]`	47	1
+	`[SKILL_LEVEL]`
+	`[thief]`	35	1
+	`[SKILL_LEVEL]`
+	`[thief]`	51	1
+	`[SKILL_LEVEL]`
+	`[thief]`	54	1
+	`[SKILL_LEVEL]`
+	`[thief]`	49	1
+	`[SKILL_LEVEL]`
+	`[thief]`	52	1
+	`[SKILL_LEVEL]`
+	`[thief]`	53	1
+	`[SKILL_LEVEL]`
+	`[thief]`	50	1
+	`[SKILL_LEVEL]`
+	`[thief]`	55	1
+	`[SKILL_LEVEL]`
+	`[thief]`	36	1
+	`[SKILL_LEVEL]`
+	`[thief]`	37	1
+	`[SKILL_LEVEL]`
+	`[thief]`	39	1
+	`[SKILL_LEVEL]`
+	`[thief]`	40	1
+[/avatar select ability]

@@ -1,0 +1,105 @@
+#PVF_File
+
+[name]
+	`榮耀貴族`
+	
+
+[explain]
+	`    減少10%%的技能冷卻時間。 (在決斗場中無效)`
+	
+
+[flavor text]
+	`<2016勞動節禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	560
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/noblesse-oblige.ani`
+[/custom animation]
+
+[physical attack]
+	30
+
+[physical defense]
+	30
+
+[magical attack]
+	30
+
+[magical defense]
+	30
+
+[equipment physical attack]
+	70	70
+
+[equipment magical attack]
+	70	70
+
+[separate attack]
+	90	90
+
+[physical critical hit]
+	5.0
+
+[magical critical hit]
+	5.0
+
+[inventory limit]
+	15000
+
+[room list move speed rate]
+	0.3
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[time]
+		500	1	500
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[add stat at once]
+		`skill cool time`
+		`%`	-10
+[/then]

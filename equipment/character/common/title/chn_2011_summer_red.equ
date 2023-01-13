@@ -1,0 +1,217 @@
+#PVF_File
+
+[name]
+	`沙漠的勇士 - 力`
+	
+
+[explain]
+	`    攻擊時， 有1%%的幾率使自身增加30點力量和20點體力， 以及5%%的攻擊速度和移動速度， 效果持續30秒(在決斗場中， 只增加2.5%%)。
+    施放技能時， 有1%%的幾率使自身增加30點力量和20點體力， 以及5%%的攻擊速度和移動速度， 效果持續30秒(在決斗場中， 只增加2.5%%)。`
+	
+
+[flavor text]
+	`<2011夏日清爽禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical attack]
+	30
+
+[physical defense]
+	30
+
+[magical defense]
+	30
+
+[attack speed]
+	20
+
+[cast speed]
+	10
+
+[move speed]
+	20
+
+[HP MAX]
+	150
+
+[MP MAX]
+	150
+
+[fire attack]
+	3
+
+[water attack]
+	3
+
+[light attack]
+	3
+
+[dark attack]
+	3
+
+[physical critical hit]
+	2
+
+[icon]
+	`Item/Title/title_cn.img`	114
+
+[custom animation]
+	`TitleAnimation/chn_2011_summer_red.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	20
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	20
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	20
+	[stat]
+		`attack speed`
+		`+`	25
+	[stat]
+		`move speed`
+		`+`	25
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	20
+	[stat]
+		`attack speed`
+		`+`	25
+	[stat]
+		`move speed`
+		`+`	25
+[/then]

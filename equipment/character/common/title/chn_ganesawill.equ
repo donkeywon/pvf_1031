@@ -1,0 +1,114 @@
+#PVF_File
+
+[name]
+	`迦尼薩神的意志`
+
+[name2]
+	`Ganesa's Will`
+
+[explain]
+	`    使用武器攻擊敵人時， 有2%%的幾率使自身增加10點力量和10點智力。
+    被攻擊時， 有2%%的幾率恢復5%%的HP最大值。`
+
+[flavor text]
+	`    在阿拉德大陸， 智慧之神會普渡眾生。 你可以擁有愛， 擁有榮譽， 但不要太過執著， 因為分離是必然的。  --智慧之神迦尼薩`
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	117
+
+[custom animation]
+	`TitleAnimation/chn_ganesawill.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[sub type]
+	0
+
+[room list move speed rate]
+	0.2
+
+[MP MAX]
+	200
+
+[MP regen speed]
+	9
+
+[inventory limit]
+	15000
+
+[physical attack]
+	15
+
+[magical attack]
+	15
+
+[physical defense]
+	10
+
+[magical defense]
+	10
+
+[if]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[stat]
+		`physical attack`
+		`+`	10
+	[stat]
+		`magical attack`
+		`+`	10
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[restore]
+		`hp`
+		`%`	5	20000
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[set item master]
+	-1

@@ -1,0 +1,194 @@
+#PVF_File
+
+[name]
+	`皇家騎士團 (力)`
+	
+
+[explain]
+	`    攻擊時， 有5%%的幾率使自身增加40點的力量、 智力、 體力和精神， 效果持續30秒。
+    攻擊時， 有5%%的幾率使自身增加5%%的攻擊速度、 移動速度和釋施放速度， 效果持續30秒(在決斗場中， 只增加1%%)。
+    被攻擊時， 有1%%幾率恢復HP最大值的10%%，效果持續20秒。`
+	
+
+[flavor text]
+	`<2012國慶節禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical attack]
+	35
+
+[physical defense]
+	35
+
+[HP regen speed]
+	60
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[move speed]
+	30
+
+[HP MAX]
+	250
+
+[MP MAX]
+	250
+
+[stuck]
+	-2
+
+[physical critical hit]
+	3
+
+[room list move speed rate]
+	0.2
+
+[icon]
+	`Item/Title/title_cn.img`	175
+
+[custom animation]
+	`TitleAnimation/chn_2012_red_imperial_palace.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[if]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`physical attack`
+		`+`	40
+	[stat]
+		`magical attack`
+		`+`	40
+	[stat]
+		`physical defense`
+		`+`	40
+	[stat]
+		`magical defense`
+		`+`	40
+[/then]
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`cast speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		40000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		1
+	[restore]
+		`HP`
+		`%`	10	20000
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`attack speed`
+		`+`	10
+	[stat]
+		`cast speed`
+		`+`	10
+	[stat]
+		`move speed`
+		`+`	10
+[/then]

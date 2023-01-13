@@ -1,0 +1,185 @@
+#PVF_File
+
+[name]
+	`使徒的宿命 (希洛克)`
+	
+
+[explain]
+	`    裝備后， 每40秒使自身的力量、 體力、 智力、 精神各增加15點； 攻擊速度、 移動速度、 施放速度各增加2%%， 效果持續20秒(在決斗場中， 只增加1%%)。
+    破招攻擊時， 有5%%的幾率使敵人進入眩暈狀態， 效果持續2秒。 (在決斗場中無效)`
+	
+
+[flavor text]
+	`<使徒的后裔特別禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical attack]
+	25
+
+[physical defense]
+	20
+
+[magical attack]
+	25
+
+[magical defense]
+	20
+
+[HP MAX]
+	150
+
+[MP MAX]
+	150
+
+[attack speed]
+	15
+
+[cast speed]
+	15
+
+[move speed]
+	20
+
+[physical critical hit]
+	1
+
+[magical critical hit]
+	1
+
+[stuck]
+	-1
+
+[room list move speed rate]
+	0.05
+
+[icon]
+	`Item/Title/title_cn.img`	212
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/chn_common_descendant_of_apostle.ani`
+[/custom animation]
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[time]
+		60000	1	40000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[stat]
+		`physical attack`
+		`+`	15
+	[stat]
+		`physical defense`
+		`+`	15
+	[stat]
+		`magical attack`
+		`+`	15
+	[stat]
+		`magical defense`
+		`+`	15
+	[stat]
+		`attack speed`
+		`+`	20
+	[stat]
+		`cast speed`
+		`+`	20
+	[stat]
+		`move speed`
+		`+`	20
+[/then]
+
+[if]
+	[attack condition]
+		`counter`
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		5
+	[active status]
+		`stun`	-1
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[time]
+		60000	1	40000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[stat]
+		`physical attack`
+		`+`	15
+	[stat]
+		`physical defense`
+		`+`	15
+	[stat]
+		`magical attack`
+		`+`	15
+	[stat]
+		`magical defense`
+		`+`	15
+	[stat]
+		`attack speed`
+		`+`	10
+	[stat]
+		`cast speed`
+		`+`	10
+	[stat]
+		`move speed`
+		`+`	10
+[/then]

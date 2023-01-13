@@ -1,0 +1,135 @@
+#PVF_File
+
+[name]
+	`星★奇幻之旅 (智)`
+	
+
+[explain]
+	`    前沖時， 有8%%幾率增加8%%的施放速度和移動速度， 效果持續30秒。(在決斗場中， 只增加4%%)`
+	
+
+[flavor text]
+	`<2011國慶天驕禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[magical attack]
+	33
+
+[magical defense]
+	33
+
+[attack speed]
+	20
+
+[cast speed]
+	30
+
+[move speed]
+	30
+
+[HP MAX]
+	220
+
+[MP MAX]
+	220
+
+[physical critical hit]
+	1
+
+[magical critical hit]
+	3
+
+[stuck resistance]
+	20
+
+[room list move speed rate]
+	0.2
+
+[icon]
+	`Item/Title/title_cn.img`	121
+
+[custom animation]
+	`TitleAnimation/chn_2011na_blue.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[if]
+	[cooltime]
+		50000
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[set my state]
+		1
+	[my state]
+		`dash`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		8
+	[stat]
+		`move speed`
+		`+`	80
+	[stat]
+		`cast speed`
+		`+`	80
+[/then]
+
+[if]
+	[cooltime]
+		50000
+	[module]
+		`[pvp]`
+	[/module]
+	[set my state]
+		1
+	[my state]
+		`dash`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		8
+	[stat]
+		`move speed`
+		`+`	40
+	[stat]
+		`cast speed`
+		`+`	40
+[/then]

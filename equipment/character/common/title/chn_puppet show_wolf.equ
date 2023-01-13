@@ -1,0 +1,81 @@
+#PVF_File
+
+[name]
+	`人偶劇團 (大灰狼)`
+
+[explain]
+	`    被擊時，有2%%的幾率召喚出LV40的可愛的小紅帽協助召喚者攻擊敵人，可愛的小紅帽存在30秒。(無法在決斗場、死亡之塔召喚APC)`
+
+[flavor text]
+	`    我很孤獨，在這個森林里，沒有人愿意陪我玩，直到我遇見小紅帽。我對小紅帽沒有惡意，我只是想找個伴而已……  --大灰狼
+<2010勞動節禮包>`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	93
+
+[equipment type]
+	`[title name]`	1
+
+[custom animation]
+	`TitleAnimation/chn_puppet_show.ani`
+[/custom animation]
+
+[physical attack]
+	16
+
+[physical defense]
+	10
+
+[attack speed]
+	20
+
+[move speed]
+	10
+
+[physical critical hit]
+	2
+
+[stuck]
+	-1
+
+[if]
+	[cooltime]
+		60000
+	[disable pvp]
+		1
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[summon apc]
+		20000	40	1
+[/then]
+
+[move wav]
+	`NAME_TOUCH`

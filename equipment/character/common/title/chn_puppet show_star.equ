@@ -1,0 +1,96 @@
+#PVF_File
+
+[name]
+	`人偶劇團 (許愿星)`
+	
+
+[explain]
+	`    被攻擊時，有2%%的幾率召喚出LV40的憂郁的小王子協助召喚者攻擊敵人，憂郁的小王子存在30秒。(無法在決斗場、死亡之塔召喚APC)`
+	
+
+[flavor text]
+	`    如果有人愛上了在這億萬顆星星中獨一無二的那株花，當他看著這些星星的時候，就一定會感到很幸福……  --許愿星
+<2010勞動節禮包>`
+	
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	90
+
+[equipment type]
+	`[title name]`	1
+
+[custom animation]
+	`TitleAnimation/chn_puppet_show.ani`
+[/custom animation]
+
+[physical attack]
+	11
+
+[magical attack]
+	11
+
+[HP MAX]
+	50
+
+[MP MAX]
+	50
+
+[HP regen speed]
+	25
+
+[MP regen speed]
+	5
+
+[attack speed]
+	10
+
+[cast speed]
+	10
+
+[stuck]
+	-1
+
+[stuck resistance]
+	10
+
+[if]
+	[cooltime]
+		60000
+	[disable pvp]
+		1
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[summon apc]
+		5000	40	1
+[/then]
+
+[move wav]
+	`NAME_TOUCH`

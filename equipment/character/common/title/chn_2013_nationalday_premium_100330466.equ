@@ -1,0 +1,246 @@
+#PVF_File
+
+[name]
+	`巴卡爾的熾炎之息`
+	
+
+[explain]
+	`    攻擊時， 有1%%的幾率使力量、 智力、 體力、 精神各增加30點， 移動速度和攻擊速度各增加2%%， 效果持續20秒(在決斗場中， 只增加1%%)。
+    施放技能時， 有1%%的幾率使力量、 智力、 體力、 精神各增加30點， 移動速度和施放速度各增加2%%， 效果持續20秒(在決斗場中， 只增加1%%)。`
+	
+
+[flavor text]
+	`<龍族的傳承特別禮包>`
+
+[grade]
+	1
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical attack]
+	35
+
+[physical defense]
+	25
+
+[magical attack]
+	35
+
+[magical defense]
+	25
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[move speed]
+	30
+
+[stuck]
+	-3
+
+[HP MAX]
+	250
+
+[MP MAX]
+	250
+
+[HP regen speed]
+	60
+
+[physical critical hit]
+	3.5
+
+[magical critical hit]
+	3.5
+
+[fire attack]
+	15
+
+[room list move speed rate]
+	0.2
+
+[icon]
+	`Item/Title/title_cn.img`	238
+
+[custom animation]
+	`titleanimation/chn_2013_nationalday_premium_fire.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	30
+	[stat]
+		`magical defense`
+		`+`	30
+	[stat]
+		`move speed`
+		`+`	20
+	[stat]
+		`attack speed`
+		`+`	20
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	30
+	[stat]
+		`magical defense`
+		`+`	30
+	[stat]
+		`move speed`
+		`+`	10
+	[stat]
+		`attack speed`
+		`+`	10
+[/then]
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	30
+	[stat]
+		`magical defense`
+		`+`	30
+	[stat]
+		`move speed`
+		`+`	20
+	[stat]
+		`cast speed`
+		`+`	20
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	30
+	[stat]
+		`magical defense`
+		`+`	30
+	[stat]
+		`move speed`
+		`+`	10
+	[stat]
+		`cast speed`
+		`+`	10
+[/then]

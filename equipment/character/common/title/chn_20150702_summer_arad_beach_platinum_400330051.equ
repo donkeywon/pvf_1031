@@ -1,0 +1,156 @@
+#PVF_File
+
+[name]
+	`永恒之海`
+	
+
+[explain]
+	`    攻擊時， 有5%%的幾率使自身增加25點力量、 智力、 體力和精神， 效果持續30秒。 (冷卻時間30秒)
+     施放時， 有5%%的幾率使自身增加2%%的攻擊速度、 移動速度和技能施放速度， 效果持續30秒。 (冷卻時間30秒)`
+	
+
+[flavor text]
+	`<2015夏日禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical attack]
+	40
+
+[physical defense]
+	40
+
+[magical attack]
+	40
+
+[magical defense]
+	40
+
+[equipment physical attack]
+	20	20
+
+[equipment magical attack]
+	20	20
+
+[separate attack]
+	30	30
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[move speed]
+	30
+
+[stuck]
+	-3
+
+[HP MAX]
+	300
+
+[MP MAX]
+	300
+
+[HP regen speed]
+	40
+
+[MP regen speed]
+	8
+
+[stuck resistance]
+	30
+
+[physical critical hit]
+	12.0
+
+[magical critical hit]
+	12.0
+
+[room list move speed rate]
+	0.2
+
+[icon]
+	`Item/Title/title.img`	670
+
+[custom animation]
+	`TitleAnimation/fatal-woman-on-the-beach_platinum.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[weight]
+	1
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`physical attack`
+		`+`	25
+	[stat]
+		`physical defense`
+		`+`	25
+	[stat]
+		`magical attack`
+		`+`	25
+	[stat]
+		`magical defense`
+		`+`	25
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`attack speed`
+		`+`	20
+	[stat]
+		`cast speed`
+		`+`	20
+	[stat]
+		`move speed`
+		`+`	20
+[/then]
+
+[move wav]
+	`NAME_TOUCH`

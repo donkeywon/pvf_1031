@@ -1,0 +1,87 @@
+#PVF_File
+
+[name]
+	`人偶劇團 (小巫女)`
+	
+
+[explain]
+	`    被攻擊時，有2%%的幾率召喚出LV40的癡情的野獸伯爵協助召喚者攻擊敵人，癡情的野獸伯爵存在30秒。(無法在決斗場、死亡之塔召喚APC)`
+	
+
+[flavor text]
+	`    任何人都需要愛情，即使是我這樣的女巫，也有對愛的渴望！那些不愿意接受我愛的人啊~我詛咒你！ --小巫女
+<2010勞動節禮包>`
+	
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	94
+
+[equipment type]
+	`[title name]`	1
+
+[custom animation]
+	`TitleAnimation/chn_puppet_show.ani`
+[/custom animation]
+
+[magical attack]
+	16
+
+[magical defense]
+	10
+
+[MP regen speed]
+	11
+
+[cast speed]
+	20
+
+[move speed]
+	10
+
+[magical critical hit]
+	2
+
+[stuck]
+	-1
+
+[if]
+	[cooltime]
+		60000
+	[disable pvp]
+		1
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[summon apc]
+		25000	40	1
+[/then]
+
+[move wav]
+	`NAME_TOUCH`

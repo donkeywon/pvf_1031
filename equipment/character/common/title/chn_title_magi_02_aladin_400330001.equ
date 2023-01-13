@@ -1,0 +1,198 @@
+#PVF_File
+
+[name]
+	`阿拉丁`
+	
+
+[name2]
+	`找不到代码name2_400330001`
+	
+
+[explain]
+	`    攻擊時， 有2%%的幾率使自身的力量、 智力、 體力和精神各增加60點， 效果持續20秒。
+    施放技能時， 有3%%的幾率增加3%%的移動速度、 攻擊速度和施放速度， 效果持續30秒。 (在決斗場中效果減半)`
+	
+
+[flavor text]
+	`<魔笛禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical attack]
+	30
+
+[magical attack]
+	30
+
+[physical defense]
+	30
+
+[magical defense]
+	30
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[move speed]
+	30
+
+[stuck]
+	-2
+
+[stuck resistance]
+	20
+
+[HP MAX]
+	300
+
+[MP MAX]
+	300
+
+[HP regen speed]
+	40
+
+[MP regen speed]
+	8
+
+[equipment physical attack]
+	8	8
+
+[equipment magical attack]
+	8	8
+
+[separate attack]
+	14	14
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[light attack]
+	25
+
+[room list move speed rate]
+	0.2
+
+[icon]
+	`Item/Title/title_cn.img`	283
+
+[custom animation]
+	`titleanimation/chn_magi_01_Aladdin.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[if]
+	[cooltime]
+		50000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[stat]
+		`physical attack`
+		`+`	60
+	[stat]
+		`magical attack`
+		`+`	60
+	[stat]
+		`physical defense`
+		`+`	60
+	[stat]
+		`magical defense`
+		`+`	60
+[/then]
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		50000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`attack speed`
+		`+`	30
+	[stat]
+		`cast speed`
+		`+`	30
+	[stat]
+		`move speed`
+		`+`	30
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		50000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`attack speed`
+		`+`	15
+	[stat]
+		`cast speed`
+		`+`	15
+	[stat]
+		`move speed`
+		`+`	15
+[/then]

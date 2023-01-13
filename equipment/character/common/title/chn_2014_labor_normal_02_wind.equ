@@ -1,0 +1,172 @@
+#PVF_File
+
+[name]
+	`昨日之恩賜 - 微風`
+	
+
+[explain]
+	`    攻擊時， 有1%%的幾率減少30%%的技能冷卻時間， 效果持續10秒。 (在決斗場中無效)
+    被攻擊時， 有1%%的幾率使自身的攻擊附加5%%的傷害， 效果持續10秒。 (在決斗場中無效)
+(裝備解除時所有效果消失)`
+	
+
+[flavor text]
+	`<2014勞動節禮包>`
+	
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title_cn.img`	263
+
+[custom animation]
+	`TitleAnimation/chn_2014_laborday_normal_02_wind.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	23
+
+[magical attack]
+	25
+
+[physical defense]
+	23
+
+[magical defense]
+	25
+
+[attack speed]
+	15
+
+[move speed]
+	15
+
+[cast speed]
+	15
+
+[stuck]
+	-1
+
+[stuck resistance]
+	10
+
+[HP MAX]
+	150
+
+[MP MAX]
+	150
+
+[physical critical hit]
+	1.5
+
+[magical critical hit]
+	1.5
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[attack success]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[equipment duration]
+		10000
+	[appendage]
+		334
+[/then]
+
+[if]
+	[my appendage]
+		334
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[stat]
+		`skill cool time`
+		`%`	-30
+[/then]
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[hit]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[equipment duration]
+		10000
+	[appendage]
+		335
+[/then]
+
+[if]
+	[my appendage]
+		335
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	5
+[/then]
+
+[move wav]
+	`NAME_TOUCH`

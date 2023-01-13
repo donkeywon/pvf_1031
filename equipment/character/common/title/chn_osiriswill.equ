@@ -1,0 +1,116 @@
+#PVF_File
+
+[name]
+	`奧西里斯神的意志`
+
+[name2]
+	`Osiris's Will`
+
+[explain]
+	`    使用武器攻擊敵人時， 有2%%的幾率出現100點傷害的閃電。
+    使用武器攻擊敵人時， 有2%%的幾率出現100點傷害的冰凍針刺。
+    使用武器攻擊敵人時， 有2%%的幾率出現150點傷害的火焰爆炸。`
+
+[flavor text]
+	`    繼承我意志的人， 將得到無上的毀滅力量！  --冥界之神奧西里斯`
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	116
+
+[custom animation]
+	`TitleAnimation/chn_osiriswill.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[sub type]
+	0
+
+[cast speed]
+	10
+
+[attack speed]
+	10
+
+[move speed]
+	30
+
+[jump power]
+	15
+
+[equipment physical defense]
+	200	200
+
+[equipment magical defense]
+	200	200
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[passive object]
+		30059	0	0	0	50	0
+		``
+	[/passive object]
+[/then]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[passive object]
+		23016	0	0	70	50	0
+		``
+	[/passive object]
+[/then]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[passive object]
+		46001	0	0	0	50	0
+		``
+	[/passive object]
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[set item master]
+	-1

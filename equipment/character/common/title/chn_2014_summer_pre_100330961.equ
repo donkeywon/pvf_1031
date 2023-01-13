@@ -1,0 +1,190 @@
+#PVF_File
+
+[name]
+	`在水一方`
+	
+
+[explain]
+	`    攻擊時， 有2%%的幾率使自身增加30點的力量、 體力、 智力和精神， 效果持續30秒。
+    施放技能時， 有1%%的幾率使自身增加5%%的攻擊速度、 施放速度和移動速度， 效果持續30秒。 (在決斗場中， 只增加2.5%%)`
+	
+
+[flavor text]
+	`<2014夏日禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical attack]
+	30
+
+[physical defense]
+	30
+
+[magical attack]
+	30
+
+[magical defense]
+	30
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[move speed]
+	30
+
+[stuck]
+	-2
+
+[stuck resistance]
+	20
+
+[HP MAX]
+	250
+
+[MP MAX]
+	250
+
+[HP regen speed]
+	40
+
+[MP regen speed]
+	8
+
+[physical critical hit]
+	3.5
+
+[magical critical hit]
+	3.5
+
+[equipment physical attack]
+	45	45
+
+[equipment magical attack]
+	45	45
+
+[separate attack]
+	60	60
+
+[icon]
+	`Item/Title/title.img`	544
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/chn_2014summer_handsome_couple.ani`
+[/custom animation]
+
+[room list move speed rate]
+	0.2
+
+[if]
+	[cooltime]
+		50000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	30
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`magical defense`
+		`+`	30
+[/then]
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+	[stat]
+		`cast speed`
+		`+`	50
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`attack speed`
+		`+`	25
+	[stat]
+		`move speed`
+		`+`	25
+	[stat]
+		`cast speed`
+		`+`	25
+[/then]

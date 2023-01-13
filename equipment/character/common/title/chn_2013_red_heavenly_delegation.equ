@@ -1,0 +1,165 @@
+#PVF_File
+
+[name]
+	`禦林護衛 (力)`
+	
+
+[explain]
+	`    攻擊時， 有1%%的幾率使自身增加25點的力量、 智力、 體力和精神， 以及2%%的攻擊速度、 移動速度和施放速度， 效果持續30秒(在決斗場中， 只增加1%%)。`
+	
+
+[flavor text]
+	`<2013春節禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical attack]
+	25
+
+[physical defense]
+	25
+
+[magical attack]
+	20
+
+[magical defense]
+	20
+
+[attack speed]
+	15
+
+[cast speed]
+	20
+
+[move speed]
+	20
+
+[HP MAX]
+	150
+
+[MP MAX]
+	150
+
+[stuck]
+	-1
+
+[stuck resistance]
+	10
+
+[physical critical hit]
+	1
+
+[icon]
+	`Item/Title/title_cn.img`	189
+
+[custom animation]
+	`TitleAnimation/chn_2013_Red_Heavenly_Delegation.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	25
+	[stat]
+		`physical defense`
+		`+`	25
+	[stat]
+		`magical attack`
+		`+`	25
+	[stat]
+		`magical defense`
+		`+`	25
+	[stat]
+		`attack speed`
+		`+`	20
+	[stat]
+		`cast speed`
+		`+`	20
+	[stat]
+		`move speed`
+		`+`	20
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	25
+	[stat]
+		`physical defense`
+		`+`	25
+	[stat]
+		`magical attack`
+		`+`	25
+	[stat]
+		`magical defense`
+		`+`	25
+	[stat]
+		`attack speed`
+		`+`	10
+	[stat]
+		`cast speed`
+		`+`	10
+	[stat]
+		`move speed`
+		`+`	10
+[/then]

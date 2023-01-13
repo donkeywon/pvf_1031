@@ -1,0 +1,191 @@
+#PVF_File
+
+[name]
+	`傳說之尊者`
+	
+
+[explain]
+	`    攻擊時， 有2%%的幾率使自身增加20點力量、 30點體力和3%%的攻擊速度， 效果持續30秒。(在決斗場中， 只增加1.5%%)
+    施放技能時， 有3%%的幾率使自身增加20點力量、 30點體力和3%%的攻擊速度， 效果持續30秒(在決斗場中， 只增加1.5%%)。`
+	
+
+[flavor text]
+	`<2011春節禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical attack]
+	33
+
+[physical defense]
+	23
+
+[attack speed]
+	30
+
+[cast speed]
+	20
+
+[move speed]
+	30
+
+[HP MAX]
+	300
+
+[stuck]
+	-3
+
+[stuck resistance]
+	30
+
+[physical critical hit]
+	4
+
+[icon]
+	`Item/Title/title_cn.img`	81
+
+[custom animation]
+	`TitleAnimation/chn_2011_new_year_s3.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[if]
+	[cooltime]
+		50000
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`attack speed`
+		`+`	30
+	[stat]
+		`physical attack`
+		`+`	20
+	[stat]
+		`physical defense`
+		`+`	30
+[/then]
+
+[if]
+	[cooltime]
+		50000
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`attack speed`
+		`+`	30
+	[stat]
+		`physical attack`
+		`+`	20
+	[stat]
+		`physical defense`
+		`+`	30
+[/then]
+
+[if]
+	[cooltime]
+		50000
+	[module]
+		`[pvp]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[stat]
+		`attack speed`
+		`+`	15
+	[stat]
+		`physical attack`
+		`+`	20
+	[stat]
+		`physical defense`
+		`+`	30
+[/then]
+
+[if]
+	[cooltime]
+		50000
+	[module]
+		`[pvp]`
+	[/module]
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`attack speed`
+		`+`	15
+	[stat]
+		`physical attack`
+		`+`	20
+	[stat]
+		`physical defense`
+		`+`	30
+[/then]

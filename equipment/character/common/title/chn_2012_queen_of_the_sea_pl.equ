@@ -1,0 +1,149 @@
+#PVF_File
+
+[name]
+	`魅海之靈`
+	
+
+[explain]
+	`    施放技能時， 有3%%的幾率使自身增加4%%的施放速度、 3%%的命中率和5%%的移動速度， 以及10點的力量和智力， 效果持續30秒。 (在決斗場中， 命中率只增加2%%， 其它的觸發效果減半)`
+	
+
+[flavor text]
+	`<2012夏日禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title_cn.img`	170
+
+[custom animation]
+	`TitleAnimation/chn_2012_summer_queen_pl.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[magical attack]
+	33
+
+[magical defense]
+	33
+
+[physical defense]
+	33
+
+[separate attack]
+	38	26
+
+[cast speed]
+	40
+
+[move speed]
+	30
+
+[HP MAX]
+	250
+
+[MP MAX]
+	250
+
+[stuck]
+	-2
+
+[stuck resistance]
+	20
+
+[magical critical hit]
+	3
+
+[if]
+	[cooltime]
+		60000
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`cast speed`
+		`+`	40
+	[stat]
+		`move speed`
+		`+`	50
+	[stat]
+		`stuck`
+		`+`	-3
+	[stat]
+		`physical attack`
+		`+`	10
+	[stat]
+		`magical attack`
+		`+`	10
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[module]
+		`[pvp]`
+	[/module]
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		3
+	[stat]
+		`cast speed`
+		`+`	20
+	[stat]
+		`move speed`
+		`+`	25
+	[stat]
+		`stuck`
+		`+`	-2
+	[stat]
+		`physical attack`
+		`+`	5
+	[stat]
+		`magical attack`
+		`+`	5
+[/then]

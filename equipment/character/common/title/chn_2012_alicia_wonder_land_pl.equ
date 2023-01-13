@@ -1,0 +1,102 @@
+#PVF_File
+
+[name]
+	`童話王國 - 愛麗絲 (白金版)`
+	
+
+[explain]
+	`    裝備后， 每隔50秒會觸發一次愛麗絲的祝福， 可以使自身增加30點力量和智力， 效果持續30秒。(裝備后間隔50秒開始觸發)`
+	
+
+[flavor text]
+	`<2012勞動節禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical attack]
+	25
+
+[magical attack]
+	25
+
+[physical defense]
+	35
+
+[magical defense]
+	25
+
+[move speed]
+	30
+
+[attack speed]
+	35
+
+[cast speed]
+	35
+
+[hit recovery]
+	80
+
+[HP MAX]
+	250
+
+[MP MAX]
+	250
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[room list move speed rate]
+	0.2
+
+[icon]
+	`Item/Title/title_cn.img`	155
+
+[custom animation]
+	`TitleAnimation/chn_2012_Alicia_Wonder_Land_Pl.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[if]
+	[time]
+		65000	1	50000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`magical attack`
+		`+`	30
+[/then]

@@ -1,0 +1,96 @@
+#PVF_File
+
+[name]
+	`人偶劇團 (柴郡貓)`
+	
+
+[explain]
+	`    被攻擊時，有2%%的幾率召喚出LV40的好奇的愛麗絲協助召喚者攻擊敵人，好奇的愛麗絲存在30秒。(無法在決斗場、死亡之塔召喚APC)`
+	
+
+[flavor text]
+	`    你一定覺得自己來到了一個奇怪的地方，不過對我們來說，奇怪的是你，不是我們……  --柴郡貓
+<2010勞動節禮包>`
+	
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	91
+
+[equipment type]
+	`[title name]`	1
+
+[custom animation]
+	`TitleAnimation/chn_puppet_show.ani`
+[/custom animation]
+
+[physical attack]
+	8
+
+[physical defense]
+	7
+
+[magical attack]
+	8
+
+[magical defense]
+	7
+
+[move speed]
+	30
+
+[stuck resistance]
+	20
+
+[all elemental resistance]
+	8
+
+[all activestatus resistance]
+	8
+
+[hit recovery]
+	100
+
+[jump power]
+	30
+
+[if]
+	[cooltime]
+		60000
+	[disable pvp]
+		1
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		2
+	[summon apc]
+		10000	40	1
+[/then]
+
+[move wav]
+	`NAME_TOUCH`

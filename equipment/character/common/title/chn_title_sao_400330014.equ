@@ -1,0 +1,146 @@
+#PVF_File
+
+[name]
+	`S.A.O`
+	
+
+[explain]
+	`    進入地下城后， 力量、 智力、 體力和精神各增加60點； 攻擊速度、 移動速度和技能釋放速度增加6%%。
+(在決斗場中效果減半)`
+	
+
+[flavor text]
+	`<sao禮包稱號>`
+	
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[equipment physical attack]
+	40	40
+
+[equipment magical attack]
+	40	40
+
+[separate attack]
+	60	60
+
+[all elemental attack]
+	15
+
+[physical critical hit]
+	5
+
+[magical critical hit]
+	5
+
+[anti evil]
+	9
+
+[room list move speed rate]
+	0.2
+
+[if]
+	[module]
+		`[dungeon type]`
+	[/module]
+	[time]
+		500	1	500
+	[stat change]
+		`hp`
+		`>`
+		`%`	0
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`attack speed`
+		`+`	60
+	[stat by condition]
+		`cast speed`
+		`+`	60
+	[stat by condition]
+		`move speed`
+		`+`	60
+	[stat by condition]
+		`physical attack`
+		`+`	60
+	[stat by condition]
+		`physical defense`
+		`+`	60
+	[stat by condition]
+		`magical attack`
+		`+`	60
+	[stat by condition]
+		`magical defense`
+		`+`	60
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[time]
+		500	1	500
+	[stat change]
+		`hp`
+		`>`
+		`%`	0
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`attack speed`
+		`+`	30
+	[stat by condition]
+		`cast speed`
+		`+`	30
+	[stat by condition]
+		`move speed`
+		`+`	30
+	[stat by condition]
+		`physical attack`
+		`+`	30
+	[stat by condition]
+		`physical defense`
+		`+`	30
+	[stat by condition]
+		`magical attack`
+		`+`	30
+	[stat by condition]
+		`magical defense`
+		`+`	30
+[/then]
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[icon]
+	`Item/Title/title_jp.img`	141
+
+[custom animation]
+	`TitleAnimation/2013_Sao_Sao.ani`
+[/custom animation]

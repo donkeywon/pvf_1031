@@ -1,0 +1,180 @@
+#PVF_File
+
+[name]
+	`摩爾迦娜`
+	
+
+[name2]
+	`找不到代码name2_400330004`
+	
+
+[explain]
+	`    攻擊時， 有2%%的幾率使自身的力量、 智力、 體力和精神各增加30點， 效果持續20秒。
+    施放技能時， 有1%%的幾率增加3%%的移動速度、 攻擊速度和施放速度， 效果持續20秒。 (在抉斗場中效果減半)`
+	
+
+[flavor text]
+	`<魔笛禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical attack]
+	25
+
+[magical attack]
+	25
+
+[physical defense]
+	25
+
+[magical defense]
+	25
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[move speed]
+	20
+
+[stuck]
+	-1
+
+[stuck resistance]
+	10
+
+[HP MAX]
+	250
+
+[MP MAX]
+	250
+
+[equipment physical attack]
+	8	8
+
+[equipment magical attack]
+	8	8
+
+[separate attack]
+	15	15
+
+[icon]
+	`Item/Title/title_cn.img`	286
+
+[custom animation]
+	`titleanimation/chn_magi_05_Morgiana.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[if]
+	[cooltime]
+		50000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	30
+	[stat]
+		`magical defense`
+		`+`	30
+[/then]
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		50000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		1
+	[stat]
+		`attack speed`
+		`+`	30
+	[stat]
+		`cast speed`
+		`+`	30
+	[stat]
+		`move speed`
+		`+`	30
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		50000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		1
+	[stat]
+		`attack speed`
+		`+`	15
+	[stat]
+		`cast speed`
+		`+`	15
+	[stat]
+		`move speed`
+		`+`	15
+[/then]

@@ -1,0 +1,128 @@
+#PVF_File
+
+[name]
+	`怪物的突擊`
+	
+
+[explain]
+	`    攻擊時， 有2%%的幾率增加3%%的攻擊速度， 效果持續20秒。
+    施放技能時， 有2%%的幾率增加4%%的施放速度， 效果持續20秒。
+    被攻擊時， 有1%%的幾率恢復HP最大值的10%%。`
+	
+
+[flavor text]
+	`    我們玩的不是COSPLAY， 是寂寞！
+<2009國慶節禮包> `
+	
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[skill levelup]
+	`[mage]`	58	1
+	`[mage]`	47	1
+	`[mage]`	68	1
+	`[mage]`	106	1
+	`[mage]`	103	1
+[/skill levelup]
+
+[icon]
+	`Item/Title/title_cn.img`	33
+
+[custom animation]
+	`TitleAnimation/nationalday_2009_mage.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[sub type]
+	0
+
+[physical attack]
+	12
+
+[magical attack]
+	12
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[if]
+	[cooltime]
+		40000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		1
+	[restore]
+		`HP`
+		`%`	10	20000
+[/then]
+
+[if]
+	[cooltime]
+		40000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[stat]
+		`attack speed`
+		`+`	30
+[/then]
+
+[if]
+	[cooltime]
+		40000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[stat]
+		`cast speed`
+		`+`	40
+[/then]
+
+[move wav]
+	`NAME_TOUCH`

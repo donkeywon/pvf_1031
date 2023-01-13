@@ -1,0 +1,126 @@
+#PVF_File
+
+[name]
+	`虎之魂 (智)`
+	
+
+[explain]
+	`    前沖時，有8%%的幾率增加8%%的移動速度和施放速度，效果持續30秒。 (在決斗場中， 只增加4%%)`
+	
+
+[flavor text]
+	`<2010春節禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[magical attack]
+	27
+
+[magical defense]
+	18
+
+[move speed]
+	25
+
+[attack speed]
+	15
+
+[cast speed]
+	25
+
+[MP MAX]
+	180
+
+[MP regen speed]
+	9
+
+[magical critical hit]
+	2
+
+[icon]
+	`Item/Title/title_cn.img`	41
+
+[custom animation]
+	`TitleAnimation/chn_soul_of_tiger_blue.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		50000
+	[set my state]
+		1
+	[my state]
+		`dash`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		8
+	[stat]
+		`move speed`
+		`+`	80
+	[stat]
+		`cast speed`
+		`+`	80
+[/then]
+
+[if]
+	[cooltime]
+		50000
+	[module]
+		`[pvp]`
+	[/module]
+	[set my state]
+		1
+	[my state]
+		`dash`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		8
+	[stat]
+		`move speed`
+		`+`	40
+	[stat]
+		`cast speed`
+		`+`	40
+[/then]

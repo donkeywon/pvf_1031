@@ -1,0 +1,82 @@
+#PVF_File
+
+[name]
+	`阿拉德警察鐵拐`
+
+[price]
+	200000
+
+[grade]
+	2
+
+[usable job]
+	`[fighter]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/tonfa/tonfa.img`	127
+
+[avatar type select]
+	7	0	0	1000	0	30	0	0	2000	0	0	0	0	4000	0	0	0	0	120	2
+	`[D socket]`
+	`[D socket]`
+[/avatar type select]
+
+[avatar select ability]
+	`[ELEMENT_TOLERANCE_FIRE]`
+	`+`	25
+	`[ELEMENT_TOLERANCE_WATER]`
+	`+`	25
+	`[ELEMENT_TOLERANCE_DARK]`
+	`+`	25
+	`[ELEMENT_TOLERANCE_LIGHT]`
+	`+`	25
+	`[ACTIVESTATUS_TOLERANCE_STUCK]`
+	`+`	40
+	`[INVENTORY_MAX_WEIGHT]`
+	`+`	9000
+[/avatar select ability]
+
+[move wav]
+	`POLICECLUB_TOUCH`
+
+[equipment type]
+	`[waist avatar]`	0
+
+[expand ani]
+	10	1	0	1
+	[variation]
+		40	0
+	[layer variation]
+		650
+		`tonfab`
+	[equipment ani script]
+		`equipment/character/fighter.lay`
+	[layer variation]
+		2790
+		`tonfac`
+	[equipment ani script]
+		`equipment/character/fighter.lay`
+	[expand path]
+		`equipment/character/fighter/weapon/tonfa/`
+	[custom wav]
+		`R_POLICECLUB_ATK`
+		`R_POLICECLUB_ATK`
+		`R_BEAMROD_HIT`
+		`R_BEAMROD_HIT`
+	[/custom wav]
+[/expand ani]
+
+[string data]
+	`Common/Particle/weaponavatar_xmas13/ft_fm_13xmas.ptl`
+[/string data]
+
+[int data]
+	654321	4	1	60	-30	70	1	60	-30	70	2	60	-30	70	2	60	-30	70	1	50	-30	70	1	80	0	20
+[/int data]

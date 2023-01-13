@@ -1,0 +1,129 @@
+#PVF_File
+
+[name]
+	`奇幻之旅 (智)`
+	
+
+[explain]
+	`    前沖時， 有8%%幾率增加8%%的施放速度和移動速度， 效果持續30秒。(在決斗場中， 只增加4%%)`
+	
+
+[flavor text]
+	`<2011國慶祥雲禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[magical attack]
+	30
+
+[magical defense]
+	30
+
+[attack speed]
+	10
+
+[cast speed]
+	20
+
+[move speed]
+	20
+
+[MP MAX]
+	180
+
+[stuck resistance]
+	10
+
+[physical critical hit]
+	1
+
+[magical critical hit]
+	1
+
+[icon]
+	`Item/Title/title_cn.img`	121
+
+[custom animation]
+	`TitleAnimation/chn_2011na_blue.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[if]
+	[cooltime]
+		50000
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[set my state]
+		1
+	[my state]
+		`dash`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		8
+	[stat]
+		`move speed`
+		`+`	80
+	[stat]
+		`cast speed`
+		`+`	80
+[/then]
+
+[if]
+	[cooltime]
+		50000
+	[module]
+		`[pvp]`
+	[/module]
+	[set my state]
+		1
+	[my state]
+		`dash`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		8
+	[stat]
+		`move speed`
+		`+`	40
+	[stat]
+		`cast speed`
+		`+`	40
+[/then]

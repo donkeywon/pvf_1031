@@ -1,0 +1,468 @@
+#PVF_File
+
+[name]
+	`愛麗絲的藍色禮服`
+	
+
+[name2]
+	`Blue Alice Shirts`
+	
+
+[explain]
+	`愛麗絲  套裝 1`
+	
+
+[grade]
+	2
+
+[attach type]
+	`[trade]`
+
+[usable job]
+	`[at gunner]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`item/avatar/atgunner/gg_acoat.img`	99
+
+[equipment type]
+	`[coat avatar]`	0
+
+[sub type]
+	0
+
+[avatar type select]
+	7	0	0	300	0	30	0	0	660	0	0	0	0	1980	0	0	0	0	4500	2
+	`[B socket]`
+	`[B socket]`
+[/avatar type select]
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	34	0
+
+[layer variation]
+	500
+	`coat_d`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[set name]
+	`愛麗絲  套裝 1`
+	
+
+[set item]
+	2689886	2690014	2690138	2690275	2690408	2690538	2690663	2690798
+[/set item]
+
+[physical attack]
+	5
+
+[magical attack]
+	5
+
+[set ability]
+	[HP MAX]
+		150
+	[MP MAX]
+		150
+	[physical attack]
+		25
+	[physical defense]
+		25
+	[magical attack]
+		25
+	[magical defense]
+		25
+	[inventory limit]
+		6000
+	[HP regen speed]
+		20
+	[MP regen speed]
+		4
+	[move speed]
+		20
+	[attack speed]
+		20
+	[cast speed]
+		20
+	[fullset explain]
+		`    攻擊或施放技能時， 有3%%的幾率發動隨機Buff。`
+		
+	[if]
+		[module]
+			`[dungeon type]`
+		[/module]
+		[attack success effect animation]
+			3
+			`Common/Etc/Animation/2012_Labor_day_Body.ani`	0	-160
+			`Common/Etc/Animation/2012_Labor_day_Body_Effect.ani`	0	-160
+			`Common/Etc/Animation/2012_Labor_day_Effect.ani`	0	-160
+		[attack success]
+			1
+		[cooltime]
+			50000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				4
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				5
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				6
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				7
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				8
+			[then probability]
+				20.0
+		[/then]
+	[/multiple then]
+	[if]
+		[module]
+			`[dungeon type]`
+		[/module]
+		[attack success effect animation]
+			3
+			`Common/Etc/Animation/2012_Labor_day_Body.ani`	0	-160
+			`Common/Etc/Animation/2012_Labor_day_Body_Effect.ani`	0	-160
+			`Common/Etc/Animation/2012_Labor_day_Effect.ani`	0	-160
+		[casting]
+			1
+		[cooltime]
+			50000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				4
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				5
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				6
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				7
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				8
+			[then probability]
+				20.0
+		[/then]
+	[/multiple then]
+	[if]
+		[module]
+			`[pvp type]`
+		[/module]
+		[attack success effect animation]
+			3
+			`Common/Etc/Animation/2012_Labor_day_Body.ani`	0	-160
+			`Common/Etc/Animation/2012_Labor_day_Body_Effect.ani`	0	-160
+			`Common/Etc/Animation/2012_Labor_day_Effect.ani`	0	-160
+		[attack success]
+			1
+		[cooltime]
+			70000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				4
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				5
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				6
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				7
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				8
+			[then probability]
+				20.0
+		[/then]
+	[/multiple then]
+	[if]
+		[module]
+			`[pvp type]`
+		[/module]
+		[attack success effect animation]
+			3
+			`Common/Etc/Animation/2012_Labor_day_Body.ani`	0	-160
+			`Common/Etc/Animation/2012_Labor_day_Body_Effect.ani`	0	-160
+			`Common/Etc/Animation/2012_Labor_day_Effect.ani`	0	-160
+		[casting]
+			1
+		[cooltime]
+			70000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				4
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				5
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				6
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				7
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				8
+			[then probability]
+				20.0
+		[/then]
+	[/multiple then]
+[/set ability]
+
+[avatar select ability]
+	`[SKILL_LEVEL]`
+	`[at gunner]`	22	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	10	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	21	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	34	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	28	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	46	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	2	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	31	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	78	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	26	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	42	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	11	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	39	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	50	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	49	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	48	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	5	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	35	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	43	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	36	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	29	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	1	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	41	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	15	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	40	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	9	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	45	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	53	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	60	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	62	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	63	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	59	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	57	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	58	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	79	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	76	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	73	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	32	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	80	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	72	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	75	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	81	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	77	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	51	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	71	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	83	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	38	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	109	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	52	1
+	`[SKILL_LEVEL]`
+	`[at gunner]`	110	1
+[/avatar select ability]

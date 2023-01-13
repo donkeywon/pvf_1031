@@ -1,0 +1,79 @@
+#PVF_File
+
+[name]
+	`斗志碎片 (無限制)`
+
+[name2]
+	`A Piece of Fighting Spirit`
+
+[explain]
+	`    被攻擊時， 有1%%的幾率使自身增加5點力量和5點體力。`
+
+[flavor text]
+	`    雖然是碎片， 但是蘊含著神秘的力量。`
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	113
+
+[custom animation]
+	`TitleAnimation/chn_piecefs.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[sub type]
+	0
+
+[attack speed]
+	10
+
+[HP MAX]
+	100
+
+[stuck]
+	-1
+
+[if]
+	[cooltime]
+		20000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	5
+	[stat]
+		`physical defense`
+		`+`	5
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[set item master]
+	-1

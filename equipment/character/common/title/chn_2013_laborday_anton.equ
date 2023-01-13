@@ -1,0 +1,182 @@
+#PVF_File
+
+[name]
+	`使徒的宿命 (安徒恩)`
+	
+
+[explain]
+	`    裝備后， 每40秒使自身的力量、 體力、 智力、 精神各增加30點； 攻擊速度、 移動速度、 施放速度各增加5%%， 效果持續20秒(在決斗場中， 只增加2.5%%)。
+    破招攻擊時， 附加5%%的傷害。 (在決斗場中無效)`
+	
+
+[flavor text]
+	`<使徒的后裔特別禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical attack]
+	33
+
+[physical defense]
+	33
+
+[magical attack]
+	33
+
+[magical defense]
+	33
+
+[HP MAX]
+	250
+
+[MP MAX]
+	250
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[move speed]
+	30
+
+[physical critical hit]
+	3
+
+[magical critical hit]
+	3
+
+[stuck]
+	-2
+
+[room list move speed rate]
+	0.15
+
+[icon]
+	`Item/Title/title_cn.img`	213
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/chn_descendant_of_apostle.ani`
+[/custom animation]
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[time]
+		60000	1	40000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	30
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`magical defense`
+		`+`	30
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`cast speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[if]
+	[attack condition]
+		`counter`
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	5
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[time]
+		60000	1	40000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	30
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`magical defense`
+		`+`	30
+	[stat]
+		`attack speed`
+		`+`	25
+	[stat]
+		`cast speed`
+		`+`	25
+	[stat]
+		`move speed`
+		`+`	25
+[/then]

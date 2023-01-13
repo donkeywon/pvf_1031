@@ -1,0 +1,424 @@
+#PVF_File
+
+[name]
+	`女神的黑色絲織上衣`
+	
+
+[name2]
+	`Black Silk Shirt of Court Lady`
+	
+
+[explain]
+	`2010年國慶日裝扮套裝(暗夜使者3)`
+	
+
+[grade]
+	2
+
+[attach type]
+	`[trade]`
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`item/avatar/thief/th_acoat.img`	88
+
+[equipment type]
+	`[coat avatar]`	0
+
+[sub type]
+	0
+
+[avatar type select]
+	7	0	0	450	0	30	0	0	990	0	0	0	0	2970	0	0	0	0	6500	2
+	`[C socket]`
+	`[C socket]`
+[/avatar type select]
+
+[animation job]
+	`[thief]`
+
+[variation]
+	29	2
+
+[layer variation]
+	2300
+	`coat_c`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1800
+	`coat_a`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	500
+	`coat_d`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[set name]
+	`2010年國慶日裝扮套裝(暗夜使者3)`
+	
+
+[set item]
+	2740012	2740142	2740272	2740402	2740534	2740664	2741048	2740792
+[/set item]
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[physical attack]
+	5
+
+[magical attack]
+	5
+
+[avatar select ability]
+	`[SKILL_LEVEL]`
+	`[thief]`	16	1
+	`[SKILL_LEVEL]`
+	`[thief]`	9	1
+	`[SKILL_LEVEL]`
+	`[thief]`	29	1
+	`[SKILL_LEVEL]`
+	`[thief]`	30	1
+	`[SKILL_LEVEL]`
+	`[thief]`	27	1
+	`[SKILL_LEVEL]`
+	`[thief]`	41	1
+	`[SKILL_LEVEL]`
+	`[thief]`	31	1
+	`[SKILL_LEVEL]`
+	`[thief]`	33	1
+	`[SKILL_LEVEL]`
+	`[thief]`	45	1
+	`[SKILL_LEVEL]`
+	`[thief]`	34	1
+	`[SKILL_LEVEL]`
+	`[thief]`	47	1
+	`[SKILL_LEVEL]`
+	`[thief]`	35	1
+	`[SKILL_LEVEL]`
+	`[thief]`	51	1
+	`[SKILL_LEVEL]`
+	`[thief]`	54	1
+	`[SKILL_LEVEL]`
+	`[thief]`	49	1
+	`[SKILL_LEVEL]`
+	`[thief]`	52	1
+	`[SKILL_LEVEL]`
+	`[thief]`	53	1
+	`[SKILL_LEVEL]`
+	`[thief]`	50	1
+	`[SKILL_LEVEL]`
+	`[thief]`	55	1
+	`[SKILL_LEVEL]`
+	`[thief]`	36	1
+	`[SKILL_LEVEL]`
+	`[thief]`	37	1
+	`[SKILL_LEVEL]`
+	`[thief]`	39	1
+	`[SKILL_LEVEL]`
+	`[thief]`	40	1
+[/avatar select ability]
+
+[set ability]
+	[HP MAX]
+		150
+	[MP MAX]
+		150
+	[physical attack]
+		25
+	[physical defense]
+		25
+	[magical attack]
+		25
+	[magical defense]
+		25
+	[inventory limit]
+		6000
+	[HP regen speed]
+		20
+	[MP regen speed]
+		4
+	[move speed]
+		20
+	[attack speed]
+		20
+	[cast speed]
+		20
+	[fullset explain]
+		`    攻擊敵人或施放技能時， 有3%%的幾率出現小仙女萌萌； 小仙女萌萌會隨機發動Buff， 使召喚者和召喚者周圍260px範圍內的隊員進入Buff狀態。`
+		
+	[if]
+		[module]
+			`[dungeon type]`
+		[/module]
+		[attack success effect animation]
+			2
+			`Common/Etc/Animation/2010na_Body.ani`	0	-160
+			`Common/Etc/Animation/2010na_Effect.ani`	0	-160
+		[attack success]
+			1
+		[cooltime]
+			50000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				4
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				5
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				6
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				7
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				8
+			[then probability]
+				20.0
+		[/then]
+	[/multiple then]
+	[if]
+		[module]
+			`[dungeon type]`
+		[/module]
+		[attack success effect animation]
+			2
+			`Common/Etc/Animation/2010na_Body.ani`	0	-160
+			`Common/Etc/Animation/2010na_Effect.ani`	0	-160
+		[casting]
+			1
+		[cooltime]
+			50000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				4
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				5
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				6
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				7
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				8
+			[then probability]
+				20.0
+		[/then]
+	[/multiple then]
+	[if]
+		[module]
+			`[pvp type]`
+		[/module]
+		[attack success effect animation]
+			2
+			`Common/Etc/Animation/2010na_Body.ani`	0	-160
+			`Common/Etc/Animation/2010na_Effect.ani`	0	-160
+		[attack success]
+			1
+		[cooltime]
+			70000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				4
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				5
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				6
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				7
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				8
+			[then probability]
+				20.0
+		[/then]
+	[/multiple then]
+	[if]
+		[module]
+			`[pvp type]`
+		[/module]
+		[attack success effect animation]
+			2
+			`Common/Etc/Animation/2010na_Body.ani`	0	-160
+			`Common/Etc/Animation/2010na_Effect.ani`	0	-160
+		[casting]
+			1
+		[cooltime]
+			70000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				4
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				5
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				6
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				7
+			[then probability]
+				20.0
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				8
+			[then probability]
+				20.0
+		[/then]
+	[/multiple then]
+[/set ability]

@@ -1,0 +1,217 @@
+#PVF_File
+
+[name]
+	`沙漠的領主 - 智`
+	
+
+[explain]
+	`    攻擊時， 有1%%的幾率使自身增加30點力量和20點體力， 以及5%%的攻擊速度和移動速度， 效果持續30秒(在抉斗場中， 只增加2.5%%)。
+    施放技能時， 有1%%的幾率使自身增加30點力量和20點體力， 以及5%%的攻擊速度和移動速度， 效果持續30秒(在抉斗場中， 只增加2.5%%)。`
+	
+
+[flavor text]
+	`<2011夏日繽紛禮包>`
+	
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical defense]
+	32
+
+[magical attack]
+	33
+
+[magical defense]
+	32
+
+[attack speed]
+	20
+
+[cast speed]
+	30
+
+[move speed]
+	30
+
+[HP MAX]
+	180
+
+[MP MAX]
+	180
+
+[fire attack]
+	4
+
+[water attack]
+	4
+
+[light attack]
+	4
+
+[dark attack]
+	4
+
+[magical critical hit]
+	3
+
+[icon]
+	`Item/Title/title_cn.img`	117
+
+[custom animation]
+	`TitleAnimation/chn_2011_summer_pr_blue.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	20
+	[stat]
+		`cast speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`magical defense`
+		`+`	20
+	[stat]
+		`cast speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		60000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`magical defense`
+		`+`	20
+	[stat]
+		`cast speed`
+		`+`	25
+	[stat]
+		`move speed`
+		`+`	25
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		60000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`magical defense`
+		`+`	20
+	[stat]
+		`cast speed`
+		`+`	25
+	[stat]
+		`move speed`
+		`+`	25
+[/then]

@@ -1,0 +1,81 @@
+#PVF_File
+
+[name]
+	`愛心玫瑰魔杖`
+
+[grade]
+	2
+
+[price]
+	500000
+
+[usable job]
+	`[at mage]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[avatar type select]
+	7	0	0	1000	0	30	0	0	2000	0	0	0	0	4000	0	0	0	0	4500	2
+	`[D socket]`
+	`[D socket]`
+[/avatar type select]
+
+[icon]
+	`Item/new_equipment/01_weapon/mage/rod/rod.img`	150
+
+[expand ani]
+	10	1	0	1
+	[variation]
+		54	0
+	[layer variation]
+		2150
+		`at_roda`
+	[equipment ani script]
+		`equipment/character/atmage.lay`
+	[layer variation]
+		200
+		`at_rodd`
+	[equipment ani script]
+		`equipment/character/atmage.lay`
+	[sub type]
+		1
+	[expand path]
+		`equipment/character/mage/weapon/rod/`
+[/expand ani]
+
+[avatar func filter]
+	0
+
+[equipment type]
+	`[waist avatar]`	0
+
+[int data]
+	654321	3	3	80	30	70	3	80	30	70	3	80	30	70	3	80	30	70	3	80	30	70
+[/int data]
+
+[string data]
+	`Common/Particle/rose.ptl`
+[/string data]
+
+[move wav]
+	`ROD_TOUCH`
+
+[avatar select ability]
+	`[ELEMENT_TOLERANCE_FIRE]`
+	`+`	25
+	`[ELEMENT_TOLERANCE_WATER]`
+	`+`	25
+	`[ELEMENT_TOLERANCE_DARK]`
+	`+`	25
+	`[ELEMENT_TOLERANCE_LIGHT]`
+	`+`	25
+	`[ACTIVESTATUS_TOLERANCE_STUCK]`
+	`+`	40
+	`[INVENTORY_MAX_WEIGHT]`
+	`+`	9000
+[/avatar select ability]
