@@ -1,0 +1,96 @@
+#PVF_File
+
+[name]
+	`蓝灵龙女`
+
+[explain]
+	`增加暴击伤害 5%%(决斗场内增加2%%)`
+
+[need material]
+	2680669	3
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`item/creature/creature_cn.img`	12
+
+[field image]
+	`item/fieldimage.img`	30
+
+[equipment type]
+	`[creature]`	0
+
+[sub type]
+	0
+
+[creature species]
+	174
+
+[cool time]
+	10000
+
+[physical attack]
+	24
+
+[physical defense]
+	24
+
+[magical attack]
+	24
+
+[magical defense]
+	24
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[move speed]
+	20
+
+[MP MAX rate]
+	5.0
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	5
+[/then]
+
+[pvp]
+	[if]
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase critical damage]
+			`%`	2
+	[/then]
+[/pvp]
+
+[move wav]
+	`CREATURE_EQUIP_TOUCH`
+
+[set item master]
+	-1

@@ -1,0 +1,235 @@
+#PVF_File
+
+[name]
+`雷光之箭維多利亞`
+
+[explain]
+`下列屬性在決斗場中無效。
+攻擊時， 附加15%%的傷害。
+最終傷害 +5%%
+力量、 智力 +12%%
+所有技能冷卻時間 -5%%`
+
+[flavor text]
+`<2020新春禮包>`
+
+[attach type]
+`[trade]`
+
+[rarity]
+2	
+[usable job]
+`[all]`
+
+[/usable job]
+
+[minimum level]
+1	
+[icon]
+`item/creature/creature_cn.img`
+174	
+[field image]
+`item/fieldimage.img`
+30	
+[equipment type]
+`[creature]`
+0	
+[sub type]
+0	
+[creature species]
+10405	
+[cool time]
+10000	
+[physical attack]
+150	
+[magical attack]
+150	
+[physical defense]
+150	
+[magical defense]
+150	
+[physical critical hit]
+10.0	
+[magical critical hit]
+10.0	
+[all elemental attack]
+24	
+[room list move speed rate]
+0.2	
+[attack speed]
+50	
+[cast speed]
+50	
+[move speed]
+50	
+[MP MAX rate]
+20.0	
+[if]
+
+[module]
+`[dead tower]`
+`[dungeon]`
+`[tournament dungeon]`
+`[war room]`
+`[blood system]`
+
+[/module]
+
+[attack success]
+1	
+[/if]
+
+[then]
+
+[target]
+`enemy`
+-1	
+[add absolute damage]
+`all`
+`%`
+15	
+[/then]
+
+[if]
+
+[change status]
+`hp`
+`>`
+`%`
+0	`end`
+
+[cooltime]
+30000	
+[/if]
+
+[then]
+
+[target]
+`myself`
+-1	
+[probability]
+100	
+[duration]
+30000	
+[stat by condition]
+`physical attack`
+`%`
+5	
+[/then]
+
+[if]
+
+[change status]
+`hp`
+`>`
+`%`
+0	`end`
+
+[cooltime]
+30000	
+[/if]
+
+[then]
+
+[target]
+`myself`
+-1	
+[probability]
+100	
+[duration]
+30000	
+[stat by condition]
+`physical attack`
+`%`
+12	
+[stat by condition]
+`magical attack`
+`%`
+12	
+[/then]
+
+[if]
+
+[module]
+`[dead tower]`
+`[dungeon]`
+`[tournament dungeon]`
+`[war room]`
+`[blood system]`
+
+[/module]
+
+[change status]
+`hp`
+`>`
+`%`
+0	`end`
+
+[cooltime]
+30000	
+[/if]
+
+[then]
+
+[target]
+`myself`
+-1	
+[probability]
+100	
+[duration]
+30000	
+[stat by condition]
+`skill cool time`
+`%`
+-5	
+[/then]
+
+[all skill item]
+
+[item growtype]
+`[all]`
+0	
+[skill apply condition]
+
+[skill group]
+`[all]`
+
+[lower bound level]
+1	
+[upper bound level]
+50	
+[value]
+1	
+[extra condition]
+`[except for ex skill]`
+
+[/extra condition]
+
+[/skill apply condition]
+
+[skill phase]
+`[all]`
+
+[/all skill item]
+
+
+
+[if]
+
+[hit]
+1	
+[/if]
+
+[then]
+
+[target]
+`myself`
+-1	
+[probability]
+0	
+[speech on]
+0	0	`操你媽的偷你麻痺，自己不會做？還要偷我的？記住你爸爸 需要購買請認準作者--劍聖60 QQ-506807329`
+
+[/speech on]
+
+[/then]

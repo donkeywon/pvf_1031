@@ -1,0 +1,353 @@
+#PVF_File
+
+[name]
+`偉大的意志`
+
+[explain]
+`增加4%%的力量、 智力。  (決斗場中， 適用一半效果)
+暴擊時， 額外增加18%%的傷害增加量。 (決斗場中， 適用一半效果)
+
+攻擊時， 有3%%的幾率增加35點力量、 智力、 體力、 精神， 效果持續20秒。 (冷卻時間30秒)
+施放技能時， 有5%%的幾率增加6%%的物理、 魔法暴擊率， 效果持續20秒。 (冷卻時間30秒)`
+
+[flavor text]
+`<2020新春禮包>`
+
+[grade]
+1	
+[rarity]
+4	
+[usable job]
+`[all]`
+
+[/usable job]
+
+[attach type]
+`[trade]`
+
+[minimum level]
+1	
+[physical attack]
+90	
+[physical defense]
+90	
+[magical attack]
+90	
+[magical defense]
+90	
+[attack speed]
+40	
+[cast speed]
+40	
+[move speed]
+40	
+[stuck]
+-3	
+[stuck resistance]
+30	
+[HP MAX]
+350	
+[MP MAX]
+350	
+[HP regen speed]
+40	
+[MP regen speed]
+8	
+[equipment physical attack]
+65	65	
+[equipment magical attack]
+65	65	
+[separate attack]
+65	65	
+[physical critical hit]
+15.0	
+[magical critical hit]
+15.0	
+[all elemental attack]
+20	
+[icon]
+`Item/Title/title_cn.img`
+412	
+[equipment type]
+`[title name]`
+1	
+[move wav]
+`NAME_TOUCH`
+
+[weight]
+1	
+[custom animation]
+`TitleAnimation/chn_2020_newyear_hidden_normal.ani`
+
+[/custom animation]
+
+[room list move speed rate]
+0.3	
+[if]
+
+[event attack success]
+1	
+[/if]
+
+[then]
+
+[target]
+`enemy`
+-1	
+[increase critical damage]
+`%`
+18	
+[/then]
+
+[pvp]
+
+[if]
+
+[event attack success]
+1	
+[/if]
+
+[then]
+
+[target]
+`enemy`
+-1	
+[increase critical damage]
+`%`
+9	
+[/then]
+
+[/pvp]
+
+[if]
+
+[change status]
+`hp`
+`>`
+`%`
+0	`end`
+
+[/if]
+
+[then]
+
+[target]
+`myself`
+-1	
+[stat by condition]
+`physical attack`
+`%`
+4	
+[stat by condition]
+`magical attack`
+`%`
+4	
+[/then]
+
+[pvp]
+
+[if]
+
+[change status]
+`hp`
+`>`
+`%`
+0	`end`
+
+[/if]
+
+[then]
+
+[target]
+`myself`
+-1	
+[stat by condition]
+`physical attack`
+`%`
+2	
+[stat by condition]
+`magical attack`
+`%`
+2	
+[/then]
+
+[/pvp]
+
+[if]
+
+[module]
+`[dead tower]`
+`[dungeon]`
+`[tournament dungeon]`
+`[war room]`
+`[blood system]`
+
+[/module]
+
+[cooltime]
+30000	
+[attack success]
+1	
+[/if]
+
+[then]
+
+[target]
+`myself`
+-1	
+[equipment duration]
+20000	
+[probability]
+3	
+[stat]
+`physical attack`
+`+`
+35	
+[stat]
+`physical defense`
+`+`
+35	
+[stat]
+`magical attack`
+`+`
+35	
+[stat]
+`magical defense`
+`+`
+35	
+[/then]
+
+[if]
+
+[module]
+`[dead tower]`
+`[dungeon]`
+`[tournament dungeon]`
+`[war room]`
+`[blood system]`
+
+[/module]
+
+[cooltime]
+30000	
+[casting]
+1	
+[/if]
+
+[then]
+
+[target]
+`myself`
+-1	
+[equipment duration]
+20000	
+[probability]
+5	
+[stat]
+`physical critical hit`
+`+`
+6	
+[stat]
+`magical critical hit`
+`+`
+6	
+[/then]
+
+[if]
+
+[module]
+`[pvp]`
+
+[/module]
+
+[cooltime]
+30000	
+[attack success]
+1	
+[/if]
+
+[then]
+
+[target]
+`myself`
+-1	
+[equipment duration]
+20000	
+[probability]
+3	
+[stat]
+`physical attack`
+`+`
+18	
+[stat]
+`physical defense`
+`+`
+18	
+[stat]
+`magical attack`
+`+`
+18	
+[stat]
+`magical defense`
+`+`
+18	
+[/then]
+
+[if]
+
+[module]
+`[pvp]`
+
+[/module]
+
+[cooltime]
+30000	
+[casting]
+1	
+[/if]
+
+[then]
+
+[target]
+`myself`
+-1	
+[equipment duration]
+20000	
+[probability]
+5	
+[stat]
+`physical critical hit`
+`+`
+3	
+[stat]
+`magical critical hit`
+`+`
+3	
+[/then]
+
+[item category]
+`no random`
+
+[/item category]
+
+
+
+[if]
+
+[hit]
+1	
+[/if]
+
+[then]
+
+[target]
+`myself`
+-1	
+[probability]
+0	
+[speech on]
+0	0	`操你媽的偷你麻痺，自己不會做？還要偷我的？記住你爸爸 需要購買請認準作者--劍聖60 QQ-506807329`
+
+[/speech on]
+
+[/then]

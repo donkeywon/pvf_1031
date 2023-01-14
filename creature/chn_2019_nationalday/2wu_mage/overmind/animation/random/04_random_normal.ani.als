@@ -1,37 +1,41 @@
 #PVF_File
 
 [use animation]
-`04_boom_dodge.ani`
-`boom_dodge`
+	`04_boom_dodge.ani`
+	`boom_dodge`
 
 [use animation]
-`04_Element_dodge.ani`
-`Element_dodge`
+	`04_Element_dodge.ani`
+	`Element_dodge`
 
 [use animation]
-`04_White.ani`
-`White`
+	`04_White.ani`
+	`White`
 
 [use animation]
-`04_newLayer.ani`
-`newLayer`
+	`04_newLayer.ani`
+	`newLayer`
 
 [use animation]
-`04_boom_dodge_normal.ani`
-`boom_dodge_normal`
+	`04_boom_dodge_normal.ani`
+	`boom_dodge_normal`
 
 [add]
-11	-2	`boom_dodge_normal`
+	11	-2
+	`boom_dodge_normal`
 
 [add]
-11	-1	`newLayer`
+	11	-1
+	`newLayer`
 
 [add]
-16	10001	`White`
+	16	10001
+	`White`
 
 [add]
-11	10002	`Element_dodge`
+	11	10002
+	`Element_dodge`
 
 [add]
-19	10003	`boom_dodge`
-
+	19	10003
+	`boom_dodge`

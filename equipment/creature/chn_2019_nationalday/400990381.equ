@@ -1,90 +1,96 @@
 #PVF_File
 
 [name]
-`迷你宗師`
+	`迷你宗师`
 
 [explain]
-`暴擊傷害 +7%% 
-    技能Lv增加的屬性僅適用于男格斗家。`
+	`暴击伤害 +7%% 
+    技能Lv增加的属性仅适用于男格斗家。`
 
 [attach type]
-`[trade]`
+	`[trade]`
 
 [rarity]
-2	
-[usable job]
-`[all]`
+	2
 
+[usable job]
+	`[all]`
 [/usable job]
 
 [minimum level]
-1	
+	1
+
 [icon]
-`item/creature/creature_jp.img`
-91	
+	`item/creature/creature_jp.img`	91
+
 [field image]
-`item/fieldimage.img`
-30	
+	`item/fieldimage.img`	30
+
 [equipment type]
-`[creature]`
-0	
+	`[creature]`	0
+
 [sub type]
-0	
+	0
+
 [creature species]
-10346	
+	10346
+
 [cool time]
-10000	
+	10000
+
 [physical attack]
-20	
+	20
+
 [physical defense]
-20	
+	20
+
 [magical attack]
-20	
+	20
+
 [magical defense]
-20	
+	20
+
 [attack speed]
-30	
+	30
+
 [move speed]
-30	
+	30
+
 [cast speed]
-30	
+	30
+
 [skill levelup]
-`[at fighter]`
-36	1	`[at fighter]`
-37	1	`[at fighter]`
-43	1	`[at fighter]`
-50	1	
+	`[at fighter]`	36	1
+	`[at fighter]`	37	1
+	`[at fighter]`	43	1
+	`[at fighter]`	50	1
 [/skill levelup]
 
 [MP MAX rate]
-10.0	
-[if]
+	10.0
 
-[attack success]
-1	
-[target stat]
-`hp`
-`>=`
-`%`
-0	
+[if]
+	[attack success]
+		1
+	[target stat]
+		`hp`
+		`>=`
+		`%`	0
 [/if]
 
 [then]
-
-[target]
-`enemy`
--1	
-[increase critical damage]
-`%`
-7	
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	7
 [/then]
 
 [move wav]
-`CREATURE_EQUIP_TOUCH`
+	`CREATURE_EQUIP_TOUCH`
 
 [set item master]
--1	
-[item category]
-`Uncompoundable`
+	-1
 
+[item category]
+	`Uncompoundable`
 [/item category]

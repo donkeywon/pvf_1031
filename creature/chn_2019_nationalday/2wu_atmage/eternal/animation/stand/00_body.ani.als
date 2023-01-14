@@ -1,16 +1,17 @@
 #PVF_File
 
 [use animation]
-`00_dod.ani`
-`dod`
+	`00_dod.ani`
+	`dod`
 
 [use animation]
-`00_b_dod.ani`
-`b_dod`
+	`00_b_dod.ani`
+	`b_dod`
 
 [add]
-0	-1	`b_dod`
+	0	-1
+	`b_dod`
 
 [add]
-0	10001	`dod`
-
+	0	10001
+	`dod`

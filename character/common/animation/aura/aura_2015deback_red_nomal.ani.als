@@ -1,16 +1,17 @@
 #PVF_File
 
 [use animation]
-`Aura_2015deback_red_front_dodge.ani`
-`2015deback_red_front_dodge`
+	`Aura_2015deback_red_front_dodge.ani`
+	`2015deback_red_front_dodge`
 
 [use animation]
-`Aura_2015deback_red_back_dodge.ani`
-`2015deback_red_back_dodge`
+	`Aura_2015deback_red_back_dodge.ani`
+	`2015deback_red_back_dodge`
 
 [add]
-0	10001	`2015deback_red_back_dodge`
+	0	10001
+	`2015deback_red_back_dodge`
 
 [add]
-0	10002	`2015deback_red_front_dodge`
-
+	0	10002
+	`2015deback_red_front_dodge`
