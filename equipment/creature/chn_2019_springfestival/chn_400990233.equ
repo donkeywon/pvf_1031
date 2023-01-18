@@ -1,0 +1,139 @@
+#PVF_File
+
+[name]
+`騎士萊恩`
+
+[explain]
+`攻擊時， 附加10%%的傷害
+所有技能冷卻時間 -20%%`
+
+[flavor text]
+`<2019春節禮包>`
+
+[attach type]
+`[trade]`
+
+[rarity]
+2	
+[icon mark]
+`item/iconmark.img`
+64	
+[usable job]
+`[all]`
+
+[/usable job]
+
+[minimum level]
+1	
+[icon]
+`item/creature/creature_cn.img`
+147	
+[field image]
+`item/fieldimage.img`
+30	
+[equipment type]
+`[creature]`
+0	
+[sub type]
+0	
+[creature species]
+10197	
+[cool time]
+10000	
+[equipment physical attack]
+250	250	
+[equipment magical attack]
+250	250	
+[separate attack]
+250	250	
+[physical critical hit]
+15.0	
+[magical critical hit]
+15.0	
+[all elemental attack]
+70	
+[attack speed]
+100	
+[cast speed]
+100	
+[move speed]
+100	
+[all skill item container]
+
+[all skill item]
+
+[item growtype]
+`[all]`
+0	
+[skill apply condition]
+
+[skill group]
+`[all]`
+
+[lower bound level]
+1	
+[upper bound level]
+50	
+[value]
+1	
+[extra condition]
+`[except for ex skill]`
+
+[/extra condition]
+
+[/skill apply condition]
+
+[skill phase]
+`[all]`
+
+[/all skill item]
+
+[/all skill item container]
+
+[if]
+
+[attack success]
+1	
+[/if]
+
+[then]
+
+[target]
+`enemy`
+-1	
+[add absolute damage]
+`all`
+`%`
+10	
+[/then]
+
+[if]
+
+[change status]
+`hp`
+`>`
+`%`
+0	`end`
+
+[/if]
+
+[then]
+
+[target]
+`myself`
+-1	
+[stat by condition]
+`skill cool time`
+`%`
+-19	
+[/then]
+
+[MP MAX rate]
+15.0	
+[room list move speed rate]
+0.1	
+[move wav]
+`CREATURE_EQUIP_TOUCH`
+
+[set item master]
+-1	
