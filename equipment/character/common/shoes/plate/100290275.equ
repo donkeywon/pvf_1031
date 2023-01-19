@@ -1,0 +1,109 @@
+#PVF_File
+
+[name]
+	`九域玄天战靴`
+
+[basic explain]
+	`    前冲持续1秒时， 对400px范围内的所有敌人生成克拉特的血珠。`
+
+[detail explain]
+	`    前冲持续1秒时， 对400px范围内的所有敌人生成克拉特的血珠。 (冷却时间10秒)`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	90
+
+[magical attack]
+	90
+
+[physical defense]
+	60
+
+[magical defense]
+	60
+
+[move speed]
+	40
+
+[price]
+	90000
+
+[repair price]
+	72000
+
+[value]
+	72000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	2940	2730
+
+[icon]
+	`item/new_equipment/06_plate/shoes/plate_shoes.img`	42
+
+[field image]
+	`Item/field_equip.img`	19
+
+[equipment type]
+	`[shoes]`	20
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	2200
+
+[item group name]
+	`mt shoes`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		10000
+	[keep my state]
+		`dash`	1000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	400
+	[passive object]
+		140159	0	0	200	90	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]

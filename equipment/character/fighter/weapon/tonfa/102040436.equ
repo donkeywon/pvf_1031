@@ -1,0 +1,240 @@
+#PVF_File
+
+[name]
+	`芝诺的蛮骨东方棍`
+
+[basic explain]
+	`    施放[分身]时， 会消耗10个白色小晶块， 召唤芝诺的灵魂附体， 效果持续60秒。`
+
+[detail explain]
+	`    施放[分身]时， 会消耗10个白色小晶块， 召唤芝诺的灵魂附体， 效果持续60秒； 附体状态下， 角色可以借用芝诺的技能。 (冷却时间60秒)
+    附体状态下进行攻击时， 会生成芝诺的念花。 攻击感电状态的敌人时， 附加10%%的伤害。 (冷却时间5秒)`
+
+[flavor text]
+	`    比想象的要好控制， 但是不知道为什么， 总有一些不详的预感。`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[magical attack]
+	92
+
+[attack speed]
+	50
+
+[stuck]
+	-2
+
+[stuck resistance]
+	30
+
+[price]
+	144000
+
+[repair price]
+	115200
+
+[value]
+	115200
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	865	773
+
+[equipment magical attack]
+	911	814
+
+[equipment physical defense]
+	900	900
+
+[separate attack]
+	552	363
+
+[light attack]
+	15
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/tonfa/tonfa.img`	106
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	37	0
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[if]
+	[event use skill]
+		`fighter`	8
+	[/event use skill]
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[consume item]
+		3034	10
+	[duration]
+		60000
+	[appendage]
+		384
+	[passive object]
+		140076	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[event use skill]
+		`atfighter`	8
+	[/event use skill]
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[consume item]
+		3034	10
+	[duration]
+		60000
+	[appendage]
+		384
+	[passive object]
+		140076	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[my appendage]
+		384
+	[attack success]
+		1
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[summon monster]
+		61774	90	1
+[/then]
+
+[if]
+	[target active status]
+		`lightning`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[possible kiri protect]

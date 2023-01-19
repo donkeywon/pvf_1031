@@ -1,0 +1,141 @@
+#PVF_File
+
+[name]
+	`泥泞图腾`
+
+[basic explain]
+	`    攻击时， 使敌人减少10%%的移动速度和攻击速度， 效果持续8秒。`
+
+[grade]
+	79
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	75
+
+[physical attack]
+	78
+
+[stuck]
+	-1
+
+[price]
+	126400
+
+[repair price]
+	101120
+
+[value]
+	101120
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	792	739
+
+[equipment magical attack]
+	679	634
+
+[separate attack]
+	450	305
+
+[physical critical hit]
+	10
+
+[icon]
+	`item/new_equipment/01_weapon/priest/totem/totem.img`	121
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	17
+
+[animation job]
+	`[priest]`
+
+[variation]
+	25	5
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	201
+	`totemd1`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2791
+	`totemc1`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[equipment duration]
+		8000
+	[appendage]
+		763
+[/then]
+
+[possible kiri protect]

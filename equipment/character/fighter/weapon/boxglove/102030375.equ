@@ -1,0 +1,198 @@
+#PVF_File
+
+[name]
+	`玲珑`
+
+[basic explain]
+	`    施放[强拳]时， 使自身增加15点火属性强化， 效果持续30秒。`
+
+[detail explain]
+	`    施放[强拳]时， 使自身增加15点火属性强化， 效果持续30秒。`
+
+[grade]
+	79
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	75
+
+[physical attack]
+	52
+
+[attack speed]
+	100
+
+[price]
+	142200
+
+[repair price]
+	113760
+
+[value]
+	113760
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	792	739
+
+[equipment magical attack]
+	716	669
+
+[separate attack]
+	450	305
+
+[skill levelup]
+	`[fighter]`	37	1
+	`[at fighter]`	37	1
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/bglove/bglove.img`	111
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	19	5
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	20	5
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[elemental property]
+	`[fire element]`
+
+[if]
+	[use skill]
+		`fighter`	37
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		30000
+	[appendage]
+		762
+[/then]
+
+[if]
+	[use skill]
+		`at fighter`	37
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		30000
+	[appendage]
+		762
+[/then]
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		2
+	[active status]
+		`stun`	79
+[/then]
+
+[possible kiri protect]

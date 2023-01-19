@@ -1,0 +1,117 @@
+#PVF_File
+
+[name]
+	`尸疫之祸`
+
+[basic explain]
+	`    攻击时， 有8%%的几率召唤出3个疫病源。
+    被攻击时， 可以召唤出3个疫病源。
+    若角色接触到疫病源， 可以使自身恢复4%%的HP`
+
+[flavor text]
+	`    弱者不配活在这世上， 所以我见一个杀一个！`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	35
+
+[magical attack]
+	35
+
+[physical defense]
+	35
+
+[magical defense]
+	35
+
+[price]
+	108000
+
+[value]
+	86400
+
+[creation rate]
+	0
+
+[icon]
+	`Item/new_equipment/10_support/support.img`	172
+
+[field image]
+	`Item/field_equip.img`	22
+
+[equipment type]
+	`[support]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	700
+
+[item group name]
+	`support`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		8
+	[passive object]
+		52552	0	0	130	2	0	`../Particle/body.ptl`
+		52552	0	0	130	2	0	`../Particle/body2.ptl`
+		52552	0	0	130	2	0	`../Particle/body3.ptl`
+	[/passive object]
+[/then]
+
+[if]
+	[cooltime]
+		5000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		52552	0	0	130	2	0	`../Particle/body.ptl`
+		52552	0	0	130	2	0	`../Particle/body2.ptl`
+		52552	0	0	130	2	0	`../Particle/body3.ptl`
+	[/passive object]
+[/then]
+
+[possible kiri protect]

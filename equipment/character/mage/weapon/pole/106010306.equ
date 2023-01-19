@@ -1,0 +1,183 @@
+#PVF_File
+
+[name]
+	`红曜晶石棍`
+
+[basic explain]
+	`[炫纹融合]攻击力变化值 +35%%
+    使用[炫纹发射]后， 增加4%%的攻击速度、 移动速度和施放速度， 效果持续20秒。`
+
+[detail explain]
+	`[炫纹融合]攻击力变化值 +35%%
+    使用[炫纹发射]后， 增加4%%的攻击速度、 移动速度和施放速度， 效果持续20秒。 (最多重叠3次； 冷却时间1秒)`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[magical attack]
+	62
+
+[attack speed]
+	50
+
+[stuck]
+	-1
+
+[price]
+	144000
+
+[repair price]
+	115200
+
+[value]
+	115200
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	983	879
+
+[equipment magical attack]
+	819	733
+
+[separate attack]
+	552	363
+
+[icon]
+	`item/new_equipment/01_weapon/mage/pole/pole.img`	133
+
+[field image]
+	`Item/field_weapon.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	46	0
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	47	0
+
+[layer variation]
+	2150
+	`at_polea`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_poled`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	46	0
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`POLE_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2400
+
+[item group name]
+	`pole`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[mage]`	123	`[all]`	`[level]`	0	`%`	35
+	`[mage]`	123	`[all]`	`[level]`	4	`%`	35
+[/skill data up]
+
+[if]
+	[cooltime]
+		1000
+	[use skill]
+		`mage`	39
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		20000
+	[appendage]
+		459
+[/then]
+
+[possible kiri protect]

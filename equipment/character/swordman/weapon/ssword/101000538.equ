@@ -1,0 +1,158 @@
+#PVF_File
+
+[name]
+	`风之祝福`
+
+[basic explain]
+	`    攻击时， 有2%%的几率使自身进入祝福状态10秒。 (冷却时间20秒)`
+
+[detail explain]
+	`    攻击时， 有2%%的几率使自身进入祝福状态10秒； 祝福状态下， 增加40点力量、 体力、 智力和精神。 (解除穿戴时效果消失； 冷却时间20秒)`
+
+[grade]
+	19
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	15
+
+[magical attack]
+	16
+
+[cast speed]
+	20
+
+[price]
+	30400
+
+[repair price]
+	24320
+
+[value]
+	24320
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	209	171
+
+[equipment magical attack]
+	253	207
+
+[separate attack]
+	123	78
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[swordman]`	20	2
+	`[demonic swordman]`	20	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/sswd/sswd.img`	112
+
+[field image]
+	`Item/FieldImage.img`	9
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	0	9
+
+[layer variation]
+	2790
+	`sswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`sswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	0	9
+
+[layer variation]
+	2790
+	`sswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`sswdb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`MINERALSWD_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3100
+
+[item group name]
+	`ssword`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		3
+	[equipment duration]
+		10000
+	[active status]
+		`bless`	19	40	40	40	40
+[/then]
+
+[possible kiri protect]

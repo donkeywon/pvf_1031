@@ -1,0 +1,141 @@
+#PVF_File
+
+[name]
+	`黄金巨锤战镰`
+
+[basic explain]
+	`攻击速度 +3%%
+暴击伤害 +12%%`
+
+[detail explain]
+	`攻击速度 +3%%
+暴击伤害 +12%%  (暴击伤害加成效果取最高值， 且无法叠加)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	108
+
+[magical attack]
+	108
+
+[attack speed]
+	110
+
+[cast speed]
+	50
+
+[stuck]
+	1
+
+[need material]
+	10099777	90
+
+[repair price]
+	128160
+
+[value]
+	128160
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	811	764
+
+[equipment magical attack]
+	854	804
+
+[separate attack]
+	510	347
+
+[physical critical hit]
+	7
+
+[magical critical hit]
+	7
+
+[icon]
+	`item/new_equipment/01_weapon/priest/scythe/scythe.img`	132
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	45	0
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	12
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]

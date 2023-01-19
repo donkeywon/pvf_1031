@@ -1,0 +1,229 @@
+#PVF_File
+
+[name]
+	`进化的御魂之杖`
+
+[basic explain]
+	`    施放技能时， 有30%%的几率增加180点的智力， 效果持续30秒。
+    施放技能时， 有20%%的几率增加10%%的魔法暴击率， 效果持续30秒。
+    施放技能时， 有10%%的几率增加12%%的魔法攻击力， 效果持续30秒。
+ 
+[召唤兽狂化]技能攻击力 +6%%`
+
+[detail explain]
+	`    施放技能时， 有30%%的几率增加180点的智力， 效果持续30秒。 (最多叠加1次； 冷却时间15秒)
+施放技能时， 有20%%的几率增加10%%的魔法暴击率， 效果持续30秒。 (最多叠加1次； 冷却时间15秒)
+施放技能时， 有10%%的几率增加12%%的魔法攻击力， 效果持续30秒。 
+(解除装备后所有效果消失)
+ 
+[召唤兽狂化]技能攻击力增加量 +6%%`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	92
+
+[attack speed]
+	100
+
+[cast speed]
+	50
+
+[stuck]
+	1
+
+[price]
+	144000
+
+[repair price]
+	115200
+
+[value]
+	115200
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	819	733
+
+[equipment magical attack]
+	1002	895
+
+[separate attack]
+	552	363
+
+[icon]
+	`item/new_equipment/01_weapon/mage/rod/rod.img`	134
+
+[field image]
+	`Item/field_weapon.img`	7
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	45	0
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	44	0
+
+[layer variation]
+	2150
+	`at_roda`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_rodd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	45	0
+
+[layer variation]
+	2790
+	`rodc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`rodd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`ROD_TOUCH`
+
+[durability]
+	34
+
+[weight]
+	2200
+
+[item group name]
+	`rod`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[mage]`	81	`[all]`	`[level]`	1	`%`	6
+	`[mage]`	81	`[all]`	`[level]`	2	`%`	6
+	`[mage]`	81	`[all]`	`[level]`	3	`%`	6
+	`[mage]`	81	`[all]`	`[level]`	4	`%`	6
+[/skill data up]
+
+[if]
+	[cooltime]
+		15000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		30
+	[equipment duration]
+		30000
+	[appendage]
+		473
+[/then]
+
+[if]
+	[cooltime]
+		15000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		20
+	[equipment duration]
+		30000
+	[appendage]
+		474
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		10
+	[equipment duration]
+		30000
+	[appendage]
+		475
+[/then]
+
+[possible kiri protect]

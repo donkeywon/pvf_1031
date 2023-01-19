@@ -1,0 +1,186 @@
+#PVF_File
+
+[name]
+	`狂热祝福`
+
+[basic explain]
+	`    攻击时， 有5%%的几率使自身增加50点力量和智力， 以及7%%的攻击速度和移动速度， 效果持续32秒。 (冷却时间35秒)`
+
+[detail explain]
+	`    攻击时， 有5%%的几率使自身增加50点力量和智力， 以及7%%的攻击速度和移动速度， 效果持续32秒。 (解除穿戴时效果消失； 冷却时间35秒)`
+
+[grade]
+	39
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	35
+
+[physical attack]
+	28
+
+[magical attack]
+	42
+
+[attack speed]
+	50
+
+[stuck]
+	-2
+
+[stuck resistance]
+	30
+
+[price]
+	62400
+
+[repair price]
+	49920
+
+[value]
+	49920
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	361	323
+
+[equipment magical attack]
+	380	340
+
+[equipment physical defense]
+	390	390
+
+[separate attack]
+	220	146
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/tonfa/tonfa.img`	112
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	2	10
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	2	10
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		35000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		32000
+	[probability]
+		3
+	[stat]
+		`physical attack`
+		`+`	50
+	[stat]
+		`magical attack`
+		`+`	50
+	[stat]
+		`attack speed`
+		`+`	70
+	[stat]
+		`move speed`
+		`+`	70
+[/then]
+
+[possible kiri protect]

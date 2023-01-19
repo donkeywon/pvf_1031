@@ -1,0 +1,138 @@
+#PVF_File
+
+[name]
+	`王权之卫 - 守护`
+
+[basic explain]
+	`HP上限 +10%%
+被攻击时所受伤害 -15%%
+    被攻击时， 向敌人返还1000%%的所受伤害。`
+
+[detail explain]
+	`HP上限 +10%%
+被攻击时所受伤害 -15%%
+    被攻击时， 向敌人返还1000%%的所受伤害。 (若伤害大于敌人的HP， 则以当前的HP为基准； 在决斗场和街头争霸中无效)`
+
+[flavor text]
+	`    要见吾王， 除非从我的尸体上踏过去。`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	36
+
+[physical defense]
+	90
+
+[magical defense]
+	85
+
+[price]
+	108000
+
+[value]
+	86400
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	4752	4416
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	111
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	20
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		500	1	500
+	[change status]
+		`hp`
+		`>=`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`hp max`
+		`%`	10
+[/then]
+
+[if]
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	15
+[/then]
+
+[if]
+	[module]
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[dead tower]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		50
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		100
+	[thorn]
+		1000
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,176 @@
+#PVF_File
+
+[name]
+	`灭亡者永眠`
+
+[basic explain]
+	`[脉轮 : 烈焰]物理攻击力增加率 +5%%
+[无双击]攻击力 +30%%
+ 
+    施放[无双击]时， 使近战伤害增加25%%、 物理暴击增加20%%， 效果持续20秒。`
+
+[detail explain]
+	`[脉轮 : 烈焰]物理攻击力增加率 +5%%
+[无双击]攻击力 +30%%
+ 
+    施放[无双击]、 [神焰]时， 使近战伤害增加25%%、 物理暴击增加20%%， 效果持续20秒。 (冷却时间30秒)
+(伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[attack speed]
+	-80
+
+[stuck]
+	-2
+
+[price]
+	162000
+
+[repair price]
+	129600
+
+[value]
+	129600
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	1093	977
+
+[equipment magical attack]
+	774	692
+
+[separate attack]
+	552	363
+
+[icon]
+	`item/new_equipment/01_weapon/priest/axe/axe.img`	127
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	40	0
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[priest]`	88	`[all]`	`[level]`	0	`%`	30
+	`[priest]`	88	`[all]`	`[level]`	1	`%`	30
+	`[priest]`	47	`[all]`	`[level]`	1	`+`	50
+[/skill data up]
+
+[if]
+	[event use skill]
+		`priest`	88
+	[/event use skill]
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[appendage]
+		460
+[/then]
+
+[if]
+	[my appendage]
+		460
+	[change status]
+		`hp`
+		`>=`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		20000
+	[stat by condition]
+		`physical critical hit`
+		`+`	20
+[/then]
+
+[if]
+	[my appendage]
+		460
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	25
+[/then]
+
+[possible kiri protect]

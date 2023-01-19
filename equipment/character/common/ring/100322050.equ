@@ -1,0 +1,99 @@
+#PVF_File
+
+[name]
+	`能量之红宝石戒指`
+
+[basic explain]
+	`    攻击时， 消耗4%%的MP， 可以增加150点力量和智力， 效果持续30秒。 (冷却时间40秒)`
+
+[detail explain]
+	`    攻击时， 消耗4%%的MP， 可以增加150点力量和智力， 效果持续30秒。 (解除穿戴时效果消失； 冷却时间40秒)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	52
+
+[magical attack]
+	52
+
+[price]
+	89000
+
+[value]
+	71200
+
+[creation rate]
+	250
+
+[equipment magical defense]
+	3072	2912
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	219
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		40000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		30000
+	[restore]
+		`mp`
+		`%`	-4	0
+	[stat]
+		`physical attack`
+		`+`	150
+	[stat]
+		`magical attack`
+		`+`	150
+[/then]
+
+[possible kiri protect]

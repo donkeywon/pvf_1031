@@ -1,0 +1,215 @@
+#PVF_File
+
+[name]
+	`泯灭之领域`
+
+[basic explain]
+	`    若自身周围650px范围内存在敌人， 则增加65点的智力。
+    若自身周围550px范围内存在敌人， 则增加5%%的魔法暴击率。
+    若自身周围400px范围内存在敌人， 则增加15点的火属性强化和光属性强化。
+    若自身周围250px范围内存在敌人， 则增加10%%的魔法攻击力。`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	62
+
+[stuck]
+	1
+
+[price]
+	144000
+
+[repair price]
+	115200
+
+[value]
+	115200
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	635	519
+
+[equipment magical attack]
+	931	761
+
+[separate attack]
+	552	363
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/automatic/automatic.img`	135
+
+[field image]
+	`Item/field_weapon.img`	2
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	42	0
+
+[layer variation]
+	2790
+	`autoc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`autob`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	41	0
+
+[layer variation]
+	2790
+	`at_autoc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_autob`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	1500
+
+[item group name]
+	`automatic`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		500	1	500
+	[change status]
+		`hp`
+		`>=`
+		`%`	0
+		`end`
+	[enemy exists]
+		`<`	650
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack`
+		`+`	65
+[/then]
+
+[if]
+	[time]
+		500	1	500
+	[change status]
+		`hp`
+		`>=`
+		`%`	0
+		`end`
+	[enemy exists]
+		`<`	550
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical critical hit`
+		`+`	5
+[/then]
+
+[if]
+	[time]
+		500	1	500
+	[change status]
+		`hp`
+		`>=`
+		`%`	0
+		`end`
+	[enemy exists]
+		`<`	400
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`fire attack`
+		`+`	15
+	[stat by condition]
+		`light attack`
+		`+`	15
+[/then]
+
+[if]
+	[time]
+		500	1	500
+	[change status]
+		`hp`
+		`>=`
+		`%`	0
+		`end`
+	[enemy exists]
+		`<`	250
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`equipment magical attack`
+		`%`	10
+[/then]
+
+[possible kiri protect]

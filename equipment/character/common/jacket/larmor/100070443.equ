@@ -1,0 +1,113 @@
+#PVF_File
+
+[name]
+	`光剑洛克的胸甲`
+
+[basic explain]
+	`    穿戴上衣时， 职业的防具轻甲专精效果增加2倍。`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	145
+
+[magical attack]
+	30
+
+[physical defense]
+	10
+
+[magical defense]
+	10
+
+[price]
+	108000
+
+[repair price]
+	86400
+
+[value]
+	86400
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	3528	3276
+
+[physical critical hit]
+	7
+
+[magical critical hit]
+	7
+
+[icon]
+	`item/new_equipment/04_larmor/coat/larmor_coat.img`	47
+
+[field image]
+	`Item/field_equip.img`	5
+
+[equipment type]
+	`[coat]`	21
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3100
+
+[item group name]
+	`la coat`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		500	1	500
+	[change status]
+		`hp`
+		`>=`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		0
+	[appendage]
+		405
+[/then]
+
+[possible kiri protect]

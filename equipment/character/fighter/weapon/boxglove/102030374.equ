@@ -1,0 +1,168 @@
+#PVF_File
+
+[name]
+	`飞花竹影`
+
+[basic explain]
+	`    攻击时， 有2%%的几率使敌人进入眩晕状态。 (冷却时间4秒)`
+
+[detail explain]
+	`    攻击时， 有2%%的几率使敌人进入眩晕状态2秒。 (若敌人高于Lv39， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间4秒)`
+
+[grade]
+	39
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	35
+
+[physical attack]
+	28
+
+[attack speed]
+	100
+
+[price]
+	70200
+
+[repair price]
+	56160
+
+[value]
+	56160
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	399	357
+
+[equipment magical attack]
+	361	323
+
+[separate attack]
+	220	146
+
+[physical critical hit]
+	5
+
+[skill levelup]
+	`[fighter]`	19	2
+	`[at fighter]`	19	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/bglove/bglove.img`	103
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	0	16
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	0	16
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		2
+	[active status]
+		`stun`	39
+[/then]
+
+[possible kiri protect]

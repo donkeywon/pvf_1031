@@ -1,0 +1,135 @@
+#PVF_File
+
+[name]
+	`八足神骏`
+
+[basic explain]
+	`    若保持前冲状态2秒以上， 则增加10%%的攻击速度和12%%的施放速度， 及25%%的魔法暴击率。
+ 
+前冲时， 移动速度 +15%%`
+
+[detail explain]
+	`    若保持前冲状态2秒以上， 则增加10%%的攻击速度和12%%的施放速度， 及25%%的魔法暴击率。(持续时间8秒， 冷却时间10秒)
+ (解除装备后效果消失)
+前冲时， 移动速度 +15%%`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	40
+
+[physical defense]
+	20
+
+[magical defense]
+	27
+
+[move speed]
+	40
+
+[price]
+	54000
+
+[repair price]
+	43200
+
+[value]
+	43200
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	588	546
+
+[icon]
+	`item/new_equipment/02_cloth/shoes/cloth_shoes.img`	43
+
+[field image]
+	`Item/field_equip.img`	4
+
+[equipment type]
+	`[shoes]`	16
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	18
+
+[weight]
+	600
+
+[item group name]
+	`cl shoes`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		10000
+	[keep my state]
+		`dash`	2000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[stat]
+		`attack speed`
+		`+`	100
+	[stat]
+		`cast speed`
+		`+`	120
+	[stat]
+		`equipment magical attack`
+		`+`	25
+[/then]
+
+[if]
+	[time]
+		100	1	0
+	[my state]
+		`dash`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		100
+	[stat]
+		`move speed`
+		`+`	150
+[/then]
+
+[possible kiri protect]

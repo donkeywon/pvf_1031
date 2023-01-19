@@ -1,0 +1,195 @@
+#PVF_File
+
+[name]
+	`罗特斯的魂灵手弩`
+
+[basic explain]
+	`    施放技能时， 有10%%的几率使300px范围内的所有敌人进入混乱状态。
+    攻击野兽型敌人时， 附加10%%的伤害。
+攻击速度 +3%%`
+
+[detail explain]
+	`    施放技能时， 有10%%的几率使300px范围内的所有敌人进入混乱状态2秒。 (若敌人高于Lv49， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间6秒)
+    攻击野兽型敌人时， 附加10%%的伤害。
+攻击速度 +3%%`
+
+[grade]
+	49
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[trade]`
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[minimum level]
+	45
+
+[physical attack]
+	34
+
+[magical attack]
+	17
+
+[attack speed]
+	20
+
+[stuck]
+	-1.0
+
+[MP MAX]
+	150
+
+[need material]
+	10149508	40
+
+[price]
+	78400
+
+[repair price]
+	62720
+
+[value]
+	62720
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	362	308
+
+[equipment magical attack]
+	402	342
+
+[separate attack]
+	268	179
+
+[physical critical hit]
+	3
+
+[skill levelup]
+	`[gunner]`	114	2
+	`[at gunner]`	114	2
+[/skill levelup]
+
+[all activestatus resistance]
+	15
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/bowgun/bowgun.img`	120
+
+[field image]
+	`Item/field_weapon.img`	5
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	41	0
+
+[layer variation]
+	2790
+	`bowgunc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`bowgunb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	39	0
+
+[layer variation]
+	2790
+	`at_bowgunc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_bowgunb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`bowgun`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[if]
+	[target type]
+		`beast`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[if]
+	[casting]
+		1
+	[cooltime]
+		6000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	300
+	[probability]
+		10
+	[reduce probability at pvp module]
+		90
+	[duration]
+		2000
+	[active status]
+		`confuse`	49	0
+[/then]
+
+[possible kiri protect]

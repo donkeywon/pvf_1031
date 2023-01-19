@@ -1,0 +1,190 @@
+#PVF_File
+
+[name]
+	`兰诺的无影之刃`
+
+[basic explain]
+	`攻击速度 +10%%
+ 
+    施放[骨盾]时， 会消耗10个红色小晶块， 召唤兰诺的灵魂附体， 效果持续60秒。`
+
+[detail explain]
+	`攻击速度 +10%%
+ 
+    施放[骨盾]时， 会消耗10个红色小晶块， 召唤兰诺的灵魂附体； 附体状态下， 角色可以借用兰诺的技能60秒。 (冷却时间60秒)
+    附体状态下， 攻击时会产生兰诺的剑刃风暴， 同时增加10%%的暴击伤害。 (暴击伤害加成效果取最高值， 且无法叠加； 冷却时间0.5秒)`
+
+[flavor text]
+	`    死亡总是悄无声息地接近。  --米内特`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[attack speed]
+	100
+
+[move speed]
+	50
+
+[stuck]
+	1
+
+[price]
+	144000
+
+[repair price]
+	115200
+
+[value]
+	115200
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	855	712
+
+[equipment magical attack]
+	819	733
+
+[separate attack]
+	552	363
+
+[physical critical hit]
+	10
+
+[icon]
+	`item/new_equipment/01_weapon/thief/dagger/dagger.img`	126
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[if]
+	[event use skill]
+		`thief`	22
+	[/event use skill]
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[consume item]
+		3035	10
+	[duration]
+		60000
+	[appendage]
+		384
+	[passive object]
+		140076	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[my appendage]
+		384
+	[attack success]
+		1
+	[cooltime]
+		500
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		140077	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[my appendage]
+		384
+	[time]
+		500	1	0
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		1000
+	[increase damage]
+		`%`	10
+[/then]
+
+[possible kiri protect]

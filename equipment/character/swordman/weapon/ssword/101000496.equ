@@ -1,0 +1,244 @@
+#PVF_File
+
+[name]
+	`魔魂霜月残`
+
+[basic explain]
+	`[杀意波动]技能攻击力增加量 +10%%
+ 
+攻击时， 附加18%%的伤害。`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	62
+
+[cast speed]
+	20
+
+[price]
+	144000
+
+[repair price]
+	115200
+
+[value]
+	115200
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	865	773
+
+[equipment magical attack]
+	1047	936
+
+[separate attack]
+	552	363
+
+[magical critical hit]
+	2
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/sswd/sswd.img`	138
+
+[field image]
+	`Item/FieldImage.img`	9
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	39	0
+
+[layer variation]
+	2790
+	`sswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`sswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	39	0
+
+[layer variation]
+	2790
+	`sswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`sswdb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`MINERALSWD_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3100
+
+[item group name]
+	`ssword`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		15000
+	[hit]
+		1
+	[element]
+		`none`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		15000
+[/then]
+
+[if]
+	[cooltime]
+		15000
+	[hit]
+		1
+	[element]
+		`fire`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		15000
+	[stat]
+		`fire attack`
+		`+`	30
+	[stat]
+		`fire resistance`
+		`+`	-10
+[/then]
+
+[if]
+	[cooltime]
+		15000
+	[hit]
+		1
+	[element]
+		`water`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		15000
+	[stat]
+		`water attack`
+		`+`	30
+	[stat]
+		`water resistance`
+		`+`	-10
+[/then]
+
+[if]
+	[cooltime]
+		15000
+	[hit]
+		1
+	[element]
+		`light`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		15000
+	[stat]
+		`light attack`
+		`+`	30
+	[stat]
+		`light resistance`
+		`+`	-10
+[/then]
+
+[if]
+	[cooltime]
+		15000
+	[hit]
+		1
+	[element]
+		`dark`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		15000
+	[stat]
+		`dark attack`
+		`+`	30
+	[stat]
+		`dark element`
+		`+`	-10
+[/then]
+
+[skill data up]
+	`[swordman]`	52	`[all]`	`[level]`	4	`%`	10
+	`[swordman]`	169	`[dungeon type]`	`[static]`	1	`+`	16
+	`[demonic swordman]`	169	`[dungeon type]`	`[static]`	1	`+`	16
+[/skill data up]
+
+[possible kiri protect]

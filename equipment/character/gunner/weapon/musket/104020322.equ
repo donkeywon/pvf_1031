@@ -1,0 +1,144 @@
+#PVF_File
+
+[name]
+	`杀戮机器`
+
+[basic explain]
+	`暴击伤害 +22%%`
+
+[detail explain]
+	`暴击伤害 +22%% （暴击伤害加成效果取最高值， 且无法叠加）`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[magical attack]
+	92
+
+[price]
+	162000
+
+[repair price]
+	129600
+
+[value]
+	129600
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	973	796
+
+[equipment magical attack]
+	846	692
+
+[separate attack]
+	552	363
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/musket/musket.img`	130
+
+[field image]
+	`Item/field_weapon.img`	3
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	44	0
+
+[layer variation]
+	2790
+	`musketc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`musketb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	42	0
+
+[layer variation]
+	2790
+	`at_musketc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_musketb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	2100
+
+[item group name]
+	`musket`
+
+[cool time]
+	10000
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	22
+[/then]
+
+[possible kiri protect]

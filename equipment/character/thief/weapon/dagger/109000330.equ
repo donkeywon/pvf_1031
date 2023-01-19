@@ -1,0 +1,137 @@
+#PVF_File
+
+[name]
+	`黄金小丑的能量匕首`
+
+[basic explain]
+	`暴击伤害 +12%%`
+
+[detail explain]
+	`暴击伤害 +12%% (暴击伤害加成效果取最高值， 且无法叠加)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	58
+
+[attack speed]
+	100
+
+[stuck]
+	1
+
+[need material]
+	10099777	90
+
+[repair price]
+	113920
+
+[value]
+	113920
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	769	724
+
+[equipment magical attack]
+	769	724
+
+[separate attack]
+	510	346
+
+[physical critical hit]
+	15
+
+[icon]
+	`item/new_equipment/01_weapon/thief/dagger/dagger.img`	153
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	41	0
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	12
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]

@@ -1,0 +1,152 @@
+#PVF_File
+
+[name]
+	`鬼眼炼狱`
+
+[basic explain]
+	`[圣愈之风]恢复量 +25%%
+[圣愈之风]施放时间 -100%%
+[圣愈之风]持续时间 +50%%
+[圣愈之风]冷却时间 +25%%
+ 
+    施放[圣愈之风]时， 可以使640px范围内的所有队员进入无敌状态， 效果持续4秒。`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	120
+
+[physical defense]
+	120
+
+[magical defense]
+	120
+
+[cast speed]
+	20
+
+[price]
+	144000
+
+[repair price]
+	115200
+
+[value]
+	115200
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	911	814
+
+[equipment magical attack]
+	865	773
+
+[equipment physical defense]
+	900	900
+
+[equipment magical defense]
+	900	900
+
+[separate attack]
+	552	363
+
+[icon]
+	`item/new_equipment/01_weapon/priest/cross/cross.img`	124
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	40	0
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[item aura]
+	`hp max`
+	`+`	500	640
+
+[skill data up]
+	`[priest]`	26	`[all]`	`[level]`	0	`%`	50
+	`[priest]`	26	`[all]`	`[level]`	1	`%`	25
+	`[priest]`	26	`[all]`	`[level]`	2	`%`	50
+	`[priest]`	26	`[all]`	`[casting time]`	0	`%`	-100
+	`[priest]`	26	`[all]`	`[cooltime]`	0	`%`	25
+[/skill data up]
+
+[if]
+	[use skill]
+		`priest`	26
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[duration]
+		4000
+	[buff]
+		`unbreakable`
+[/then]
+
+[possible kiri protect]

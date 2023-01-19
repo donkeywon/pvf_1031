@@ -1,0 +1,179 @@
+#PVF_File
+
+[name]
+	`钢铁意志的火箭槌`
+
+[basic explain]
+	`    攻击时， 有5%%的几率向550px范围内的所有敌人发射曲射炮。
+    攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率向550px范围内的所有敌人发射曲射炮弹。 (冷却时间5秒)
+    攻击时， 有2%%的几率使敌人进入眩晕状态。 (若敌人高于Lv89， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间4秒)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	137
+
+[attack speed]
+	-30
+
+[stuck]
+	-1
+
+[need material]
+	10099777	90
+
+[repair price]
+	113920
+
+[value]
+	113920
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	939	884
+
+[equipment magical attack]
+	811	764
+
+[separate attack]
+	510	347
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/club/club.img`	136
+
+[field image]
+	`Item/FieldImage.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	48	0
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	48	0
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`KATANA_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3400
+
+[item group name]
+	`club`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	550
+	[probability]
+		5
+	[reduce probability at pvp module]
+		100
+	[passive object]
+		140203	0	0	0	0	0	``
+		140203	0	550	0	0	0	``
+		140203	0	-550	0	0	0	``
+		140203	550	0	0	0	0	``
+		140203	-550	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		2
+	[active status]
+		`stun`	89
+[/then]
+
+[possible kiri protect]

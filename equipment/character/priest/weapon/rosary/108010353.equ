@@ -1,0 +1,175 @@
+#PVF_File
+
+[name]
+	`卡勒特的黑铁念珠`
+
+[basic explain]
+	`    施放技能时， 有20%%的几率施放警卫队长库尔基普的EMP爆炸攻击。
+    攻击眩晕或感电状态的敌人， 即可增加自身40点的智力和3%%的魔法暴击率。`
+
+[detail explain]
+	`    施放技能时， 有20%%的几率施放警卫队长库尔基普的EMP爆炸攻击。
+被EMP爆炸命中的敌人， 会进入眩晕状态2秒。
+    被EMP爆炸命中的敌人， 会进入眩晕和感电状态3秒。 (若敌人高于Lv90， 则减少该装备眩晕异常状态的发动几率和效果； 反之， 则增加几率和效果)
+    攻击眩晕或感电状态的敌人， 即可增加自身40点的智力和3%%的魔法暴击率。(最多叠加5次)`
+
+[flavor text]
+	`    据说这种金属的导电效果是最好的， 可以给那些动不动就发毒誓“什么五雷轰顶”的人用。`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	92
+
+[attack speed]
+	-50
+
+[cast speed]
+	50
+
+[price]
+	144000
+
+[repair price]
+	115200
+
+[value]
+	115200
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	819	733
+
+[equipment magical attack]
+	1047	936
+
+[separate attack]
+	552	363
+
+[magical critical hit]
+	2
+
+[icon]
+	`item/new_equipment/01_weapon/priest/rosary/rosary.img`	94
+
+[field image]
+	`Item/field_weapon.img`	12
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	33	0
+
+[layer variation]
+	200
+	`rosaryd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`rosaryc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`ROSARY_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2500
+
+[item group name]
+	`rosary`
+
+[cool time]
+	10000
+
+[if]
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		20
+	[passive object]
+		140097	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[event attack success]
+		1
+	[target active status]
+		`stun`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[appendage]
+		1521
+[/then]
+
+[if]
+	[event attack success]
+		1
+	[target active status]
+		`lightning`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[appendage]
+		1522
+[/then]
+
+[possible kiri protect]

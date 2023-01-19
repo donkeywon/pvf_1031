@@ -1,0 +1,200 @@
+#PVF_File
+
+[name]
+	`全力搏击手套`
+
+[basic explain]
+	`攻击速度 +5%%
+ 
+    装备后， 每20秒获得梅迪尔的蓝色气息或红色气息。`
+
+[detail explain]
+	`攻击速度 +5%%
+ 
+    装备后， 每20秒获得梅迪尔的蓝色气息或红色气息。 (装备后立即生效)
+- 蓝色气息时的效果 :
+- 赋予武器冰属性
+- 冰属性强化 +25
+-     攻击时， 附加10%%的冰属性伤害。
+ 
+- 红色气息时的效果 :
+- 赋予武器火属性
+- 火属性强化 +25
+-     攻击时， 附加10%%的火属性伤害。`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[attack speed]
+	100
+
+[price]
+	162000
+
+[repair price]
+	129600
+
+[value]
+	129600
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	956	855
+
+[equipment magical attack]
+	865	773
+
+[separate attack]
+	552	363
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/bglove/bglove.img`	120
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	35	0
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[if]
+	[time]
+		20000	1	500
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			20000
+		[elemental weapon]
+			`water`
+		[stat]
+			`water attack`
+			`+`	25
+		[passive object]
+			141192	0	0	0	0	-1	``
+		[/passive object]
+		[then probability]
+			50.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			20000
+		[elemental weapon]
+			`fire`
+		[stat]
+			`fire attack`
+			`+`	25
+		[passive object]
+			141193	0	0	0	0	-1	``
+		[/passive object]
+		[then probability]
+			50.0
+	[/then]
+[/multiple then]
+
+[skill data up]
+	`[fighter]`	169	`[dungeon type]`	`[static]`	1	`+`	20
+	`[at fighter]`	169	`[dungeon type]`	`[static]`	1	`+`	20
+[/skill data up]
+
+[possible kiri protect]

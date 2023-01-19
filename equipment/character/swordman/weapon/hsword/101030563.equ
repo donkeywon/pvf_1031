@@ -1,0 +1,157 @@
+#PVF_File
+
+[name]
+	`破竹长空`
+
+[basic explain]
+	`    攻击时， 有5%%的几率使自身增加15%%的攻击速度和移动速度， 效果持续18秒。 (冷却时间20秒)`
+
+[detail explain]
+	`    攻击时， 有5%%的几率使自身增加15%%的攻击速度和移动速度， 效果持续18秒。 (解除穿戴时效果消失； 冷却时间20秒)`
+
+[grade]
+	39
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	35
+
+[physical attack]
+	28
+
+[attack speed]
+	-90
+
+[cast speed]
+	-20
+
+[price]
+	70200
+
+[repair price]
+	56160
+
+[value]
+	56160
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	456	408
+
+[equipment magical attack]
+	342	306
+
+[separate attack]
+	220	146
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/lswd/lswd.img`	128
+
+[field image]
+	`Item/FieldImage.img`	13
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	0	11
+
+[layer variation]
+	2790
+	`lswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`lswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	0	11
+
+[layer variation]
+	2790
+	`lswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`lswdb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`STICK_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	4000
+
+[item group name]
+	`lswd`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		18000
+	[probability]
+		5
+	[stat]
+		`attack speed`
+		`+`	150
+	[stat]
+		`move speed`
+		`+`	150
+[/then]
+
+[possible kiri protect]

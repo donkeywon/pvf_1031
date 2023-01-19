@@ -1,0 +1,151 @@
+#PVF_File
+
+[name]
+	`圣人的教诲`
+
+[basic explain]
+	`    施放技能时， 有10%%的几率使队友所有属性强化增加8点， 效果持续10秒。 (冷却时间20秒)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	58
+
+[physical defense]
+	73
+
+[magical defense]
+	73
+
+[cast speed]
+	20
+
+[price]
+	142400
+
+[repair price]
+	113920
+
+[value]
+	113920
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	854	804
+
+[equipment magical attack]
+	811	764
+
+[equipment physical defense]
+	890	890
+
+[equipment magical defense]
+	890	890
+
+[separate attack]
+	510	347
+
+[skill levelup]
+	`[priest]`	45	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/priest/cross/cross.img`	120
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	23	8
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[if]
+	[event use skill]
+		`common`	-1
+	[/event use skill]
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[duration]
+		10000
+	[stat]
+		`fire attack`
+		`+`	8
+	[stat]
+		`water attack`
+		`+`	8
+	[stat]
+		`dark attack`
+		`+`	8
+	[stat]
+		`light attack`
+		`+`	8
+[/then]
+
+[possible kiri protect]

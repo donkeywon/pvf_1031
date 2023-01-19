@@ -1,0 +1,180 @@
+#PVF_File
+
+[name]
+	`断罪者`
+
+[basic explain]
+	`    攻击时， 有5%%的几率使自身增加250点力量和5%%的物理暴击率， 效果持续18秒。 (冷却时间20秒)`
+
+[detail explain]
+	`    攻击时， 有5%%的几率使自身增加250点力量和5%%的物理暴击率， 效果持续18秒。 (解除穿戴时效果消失； 冷却时间20秒)`
+
+[grade]
+	79
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	75
+
+[physical attack]
+	52
+
+[magical attack]
+	78
+
+[attack speed]
+	50
+
+[stuck]
+	-2
+
+[stuck resistance]
+	30
+
+[price]
+	126400
+
+[repair price]
+	101120
+
+[value]
+	101120
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	716	669
+
+[equipment magical attack]
+	754	704
+
+[equipment physical defense]
+	790	790
+
+[separate attack]
+	450	305
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/tonfa/tonfa.img`	120
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	23	5
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	24	5
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		18000
+	[probability]
+		5
+	[stat]
+		`physical attack`
+		`+`	250
+	[stat]
+		`physical critical hit`
+		`+`	5
+[/then]
+
+[possible kiri protect]

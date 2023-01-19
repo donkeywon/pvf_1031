@@ -1,0 +1,99 @@
+#PVF_File
+
+[name]
+	`光芒蔽日手镯`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入失明状态。`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入失明状态3秒； 失明状态下的敌人， 会减少20%%的命中率和90%%的视野。 (若敌人高于Lv89， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	35
+
+[physical defense]
+	87
+
+[need material]
+	10099777	70
+
+[value]
+	71200
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	4608	4368
+
+[dark attack]
+	12
+
+[light resistance]
+	12
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	170
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	20
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[equipment duration]
+		3000
+	[probability]
+		3
+	[active status]
+		`blind`	89	90	20
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]

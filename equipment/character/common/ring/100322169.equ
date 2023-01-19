@@ -1,0 +1,102 @@
+#PVF_File
+
+[name]
+	`尘封的悲鸣戒指`
+
+[basic explain]
+	`装备后， 增加9%%的移动速度。`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[part set index]
+	11858
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	10000204	100
+
+[random option]
+	1
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	54
+
+[magical attack]
+	54
+
+[attack speed]
+	30
+
+[cast speed]
+	50
+
+[price]
+	108000
+
+[value]
+	86400
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	3168	2944
+
+[all elemental attack]
+	7
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	227
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	21
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	200
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		500	1	500
+	[stat change]
+		`hp`
+		`>`
+		`%`	0
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`move speed`
+		`+`	90
+[/then]
+
+[possible kiri protect]

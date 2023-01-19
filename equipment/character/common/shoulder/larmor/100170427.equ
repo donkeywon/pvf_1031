@@ -1,0 +1,107 @@
+#PVF_File
+
+[name]
+	`墨影朱莲护肩`
+
+[basic explain]
+	`    攻击时， 有5%%的几率增加15%%的攻击速度和20点火属性强化。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率增加15%%的移动速度和20点火属性强化。 (持续时间10秒， 冷却时间15秒)`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	40
+
+[magical attack]
+	40
+
+[price]
+	81000
+
+[repair price]
+	64800
+
+[value]
+	64800
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	2352	2184
+
+[icon]
+	`item/new_equipment/04_larmor/neck/larmor_neck.img`	43
+
+[field image]
+	`Item/field_equip.img`	7
+
+[equipment type]
+	`[shoulder]`	19
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	30
+
+[weight]
+	1900
+
+[item group name]
+	`la shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		15000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[duration]
+		10000
+	[stat by condition]
+		`attack speed`
+		`+`	150
+	[stat by condition]
+		`fire attack`
+		`+`	20
+[/then]
+
+[possible kiri protect]

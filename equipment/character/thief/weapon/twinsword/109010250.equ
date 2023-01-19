@@ -1,0 +1,141 @@
+#PVF_File
+
+[name]
+	`双火焚天剑`
+
+[basic explain]
+	`    攻击时， 有5%%的几率增加10%%的攻击速度和移动速度， 并附加10%%的火属性伤害， 效果持续20秒。`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[attack speed]
+	-80
+
+[price]
+	144000
+
+[repair price]
+	115200
+
+[value]
+	115200
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	988	826
+
+[equipment magical attack]
+	728	651
+
+[separate attack]
+	552	363
+
+[physical critical hit]
+	5
+
+[icon]
+	`item/new_equipment/01_weapon/thief/twinswd/twinswd.img`	144
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	40	0
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[fire element]`
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[equipment duration]
+		20000
+	[appendage]
+		456
+[/then]
+
+[skill data up]
+	`[thief]`	169	`[dungeon type]`	`[static]`	1	`+`	15
+[/skill data up]
+
+[possible kiri protect]

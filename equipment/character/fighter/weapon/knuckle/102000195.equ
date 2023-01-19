@@ -1,0 +1,181 @@
+#PVF_File
+
+[name]
+	`邪龙的尸毒手套`
+
+[basic explain]
+	`    攻击时， 有5%%的几率使敌人进入中毒状态。
+    攻击中毒状态的敌人时， 附加7%%的伤害。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率使敌人进入中毒状态5秒； 中毒状态下的敌人， 每0.5秒会受到800点伤害。 (若敌人高于Lv59， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间5秒)
+    攻击中毒状态的敌人时， 附加7%%的伤害。`
+
+[grade]
+	59
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[trade]`
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[minimum level]
+	55
+
+[magical attack]
+	40
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[need material]
+	10149508	80
+
+[price]
+	94400
+
+[repair price]
+	75520
+
+[value]
+	75520
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	513	475
+
+[equipment magical attack]
+	621	575
+
+[separate attack]
+	328	221
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/knuckle/knuckle.img`	140
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	39	0
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	39	0
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[duration]
+		5000
+	[active status]
+		`poison`	59	8000
+[/then]
+
+[if]
+	[target active status]
+		`poison`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	7
+[/then]
+
+[possible kiri protect]

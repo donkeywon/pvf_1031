@@ -1,0 +1,250 @@
+#PVF_File
+
+[name]
+	`幽火玄冥`
+
+[basic explain]
+	`    攻击时， 有5%%的几率使敌人进入灼伤状态。
+    攻击灼伤状态的敌人时， 附加20%%的火属性伤害。
+    施放[崩山击]、 [流心 : 跃]、 [跃斩]时， 可在地面生成火焰刻印， 被火焰刻印击中的敌人进入灼伤状态。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率使敌人进入灼伤状态5秒； 灼伤状态下的敌人， 每0.5秒受到1000点伤害。 (冷却时间2秒)
+    攻击灼伤状态的敌人时， 附加20%%的火属性伤害。
+    施放[崩山击]、 [流心 : 跃]、 [跃斩]时， 可在地面生成火焰刻印， 被火焰刻印击中的敌人进入灼伤状态。 (冷却时间1秒)`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	92
+
+[attack speed]
+	-30
+
+[stuck]
+	-1
+
+[price]
+	144000
+
+[repair price]
+	115200
+
+[value]
+	115200
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	1002	895
+
+[equipment magical attack]
+	865	773
+
+[separate attack]
+	552	363
+
+[fire attack]
+	15
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/club/club.img`	131
+
+[field image]
+	`Item/FieldImage.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	45	0
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	45	0
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`STICK_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3400
+
+[item group name]
+	`club`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[fire element]`
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		2000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		5
+	[active status]
+		`burn`	90	20000	0	0	0
+[/then]
+
+[if]
+	[target active status]
+		`burn`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`fire`
+		`%`	20
+[/then]
+
+[if]
+	[skill]
+		`swordman`	65
+	[/skill]
+	[attack success]
+		1
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		140001	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`swordman`	108
+	[/skill]
+	[attack success]
+		1
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		140001	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`demonic swordman`	65
+	[/skill]
+	[attack success]
+		1
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		140001	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`demonic swordman`	108
+	[/skill]
+	[attack success]
+		1
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		140001	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]

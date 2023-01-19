@@ -1,0 +1,97 @@
+#PVF_File
+
+[name]
+	`迷你机器人项链`
+
+[detail explain]
+	`攻击时， 有3%%的几率召唤出迷你机器人， 迷你机器人向前突进对敌人造成伤害。 (冷却时间20秒)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[magical attack]
+	35
+
+[magical defense]
+	87
+
+[need material]
+	10099777	70
+[/need material]
+
+[value]
+	71200
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	7680	7280
+
+[light attack]
+	10
+
+[icon]
+	`item/new_equipment/08_necklace/necklace.img`	177
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		3
+	[passive object]
+		140202	-100	35	0	0	0	``
+		140204	-70	0	0	0	0	``
+		140202	-100	-35	0	0	0	``
+	[/passive object]
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]

@@ -1,0 +1,190 @@
+#PVF_File
+
+[name]
+	`鲁乌格的寒冰拳套`
+
+[basic explain]
+	`力量 +50
+ 
+    攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`力量 +50
+ 
+    攻击时， 有2%%的几率使敌人进入眩晕状态2秒。 (若敌人高于Lv54， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	54
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[trade]`
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[minimum level]
+	50
+
+[physical attack]
+	37
+
+[attack speed]
+	100
+
+[need material]
+	10149508	75
+
+[price]
+	97200
+
+[repair price]
+	77760
+
+[value]
+	77760
+
+[equipment physical attack]
+	525	483
+
+[equipment magical attack]
+	475	437
+
+[separate attack]
+	298	199
+
+[skill levelup]
+	`[fighter]`	19	2
+	`[at fighter]`	19	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/bglove.img`	63
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	15	0
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	16	0
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[elemental property]
+	`[water element]`
+
+[if]
+	[time]
+		500	1	500
+	[stat change]
+		`hp`
+		`>`
+		`%`	0
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	50
+[/then]
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		2
+	[active status]
+		`stun`	49
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]

@@ -1,0 +1,148 @@
+#PVF_File
+
+[name]
+	`使徒行者短靴`
+
+[basic explain]
+	`    [瞬踢]、 [刺踢]破招攻击时， 使敌人减少5%%的防御力， 效果持续7秒。`
+
+[detail explain]
+	`    [瞬踢]、 [刺踢]破招攻击时， 使敌人减少5%%的防御力， 效果持续7秒。 (冷却时间30秒)`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	22
+
+[magical attack]
+	22
+
+[physical defense]
+	50
+
+[magical defense]
+	50
+
+[move speed]
+	40
+
+[price]
+	63000
+
+[repair price]
+	50400
+
+[value]
+	50400
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	1176	1092
+
+[icon]
+	`item/new_equipment/03_leather/shoes/leather_shoes.img`	44
+
+[field image]
+	`Item/FieldImage.img`	4
+
+[equipment type]
+	`[shoes]`	17
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	20
+
+[weight]
+	900
+
+[item group name]
+	`lt shoes`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		30000
+	[skill]
+		`gunner`	7
+	[/skill]
+	[attack success]
+		1
+	[attack condition]
+		`counter`
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[stat]
+		`equipment physical defense`
+		`%`	-5
+	[stat]
+		`equipment magical defense`
+		`%`	-5
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[skill]
+		`at gunner`	7
+	[/skill]
+	[attack success]
+		1
+	[attack condition]
+		`counter`
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[stat]
+		`equipment physical defense`
+		`%`	-5
+	[stat]
+		`equipment magical defense`
+		`%`	-5
+[/then]
+
+[parameter category]
+	`synergy`
+[/parameter category]
+
+[possible kiri protect]

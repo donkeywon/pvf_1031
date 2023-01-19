@@ -1,0 +1,161 @@
+#PVF_File
+
+[name]
+	`利库的霜寒臂铠`
+
+[basic explain]
+	`    攻击时， 有30%%的几率附加5%%的冰属性伤害。 `
+
+[detail explain]
+	`    攻击时， 有30%%的几率附加5%%的冰属性伤害。`
+
+[grade]
+	54
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[trade]`
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[minimum level]
+	50
+
+[physical attack]
+	56
+
+[attack speed]
+	-80
+
+[stuck]
+	-1.0
+
+[need material]
+	10149508	85
+
+[price]
+	97200
+
+[repair price]
+	77760
+
+[value]
+	77760
+
+[equipment physical attack]
+	600	552
+
+[equipment magical attack]
+	450	414
+
+[separate attack]
+	298	199
+
+[icon]
+	`Item/weapon/fighter/gauntlet.img`	71
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	16	0
+
+[layer variation]
+	2790
+	`gauntletc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gauntletb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	17	0
+
+[layer variation]
+	2150
+	`at_gauntleta`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_gauntletc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_gauntletx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[water element]`
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		30
+	[add absolute damage]
+		`water`
+		`%`	5
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]

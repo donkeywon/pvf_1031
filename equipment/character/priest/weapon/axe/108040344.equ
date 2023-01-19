@@ -1,0 +1,175 @@
+#PVF_File
+
+[name]
+	`里昂的怨灵战斧`
+
+[basic explain]
+	`    施放[武器祝福]输入时， 会消耗10个黑色小晶块， 召唤里昂的灵魂附体， 效果持续60秒。`
+
+[detail explain]
+	`    施放[武器祝福]输入时， 会消耗10个黑色小晶块， 召唤里昂的灵魂附体， 效果持续60秒； 附体状态下， 角色可以借用里昂的技能。 (冷却时间60秒)
+    附体状态下进行攻击时， 会生成里昂的闪电。 攻击感电状态的敌人时， 附加10%%的伤害。 (冷却时间1秒)`
+
+[flavor text]
+	`    是谁杀了我……`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[attack speed]
+	-80
+
+[stuck]
+	-2
+
+[price]
+	162000
+
+[repair price]
+	129600
+
+[value]
+	129600
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	1093	977
+
+[equipment magical attack]
+	774	692
+
+[separate attack]
+	552	363
+
+[dark attack]
+	15
+
+[icon]
+	`item/new_equipment/01_weapon/priest/axe/axe.img`	103
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	36	0
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[if]
+	[use skill]
+		`priest`	7
+	[/use skill]
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[consume item]
+		3033	1
+	[duration]
+		60000
+	[appendage]
+		384
+	[passive object]
+		140076	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[my appendage]
+		384
+	[attack success]
+		1
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		140078	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[target active status]
+		`lightning`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,147 @@
+#PVF_File
+
+[name]
+	`艾克洛索的绝命蛛刺`
+
+[basic explain]
+	`    攻击时， 有3%%的几率发动艾克洛索的闪电。`
+
+[detail explain]
+	`    攻击时， 有3%%的几率发动艾克洛索的闪电， 效果持续7秒。
+    被闪电攻击时， 有20%%的几率使敌人进入感电状态； 若攻击感电状态的敌人， 则每次攻击都会附加107点伤害。 (若敌人高于Lv54时， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间5秒)`
+
+[grade]
+	54
+
+[rarity]
+	3
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[trade]`
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[minimum level]
+	50
+
+[physical attack]
+	37
+
+[magical attack]
+	37
+
+[attack speed]
+	80
+
+[stuck]
+	1.0
+
+[need material]
+	10149508	65
+
+[price]
+	97200
+
+[repair price]
+	77760
+
+[value]
+	77760
+
+[equipment physical attack]
+	475	437
+
+[equipment magical attack]
+	500	460
+
+[separate attack]
+	298	199
+
+[physical critical hit]
+	6
+
+[magical critical hit]
+	6
+
+[icon]
+	`Item/weapon/priest/scythe.img`	64
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	20	0
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[cooltime]
+		5000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[reduce probability at pvp module]
+		80
+	[passive object]
+		48665	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]

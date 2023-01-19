@@ -1,0 +1,102 @@
+#PVF_File
+
+[name]
+	`海神谜咒戒指`
+
+[basic explain]
+	`    攻击时， 有3%%的几率对敌人施放海神的愤怒。`
+
+[detail explain]
+	`    攻击时， 有3%%的几率对敌人施放海神的愤怒。 (冷却时间1秒)`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[part set index]
+	12400
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	10000204	100
+
+[random option]
+	1
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	54
+
+[magical attack]
+	54
+
+[price]
+	108000
+
+[value]
+	86400
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	3168	2944
+
+[water attack]
+	10
+
+[fire resistance]
+	-6
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	225
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	21
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	200
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[passive object]
+		140172	0	0	0	99	0	` `
+	[/passive object]
+[/then]
+
+[possible kiri protect]

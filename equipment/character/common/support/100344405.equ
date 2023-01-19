@@ -1,0 +1,106 @@
+#PVF_File
+
+[name]
+	`海神谜咒之深海气息`
+
+[basic explain]
+	`    攻击时， 有5%%的几率使敌人的诅咒抗性减少15， 效果持续10秒。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率使敌人减少15的诅咒抗性。 (冷却时间8秒； 该属性与海神谜咒深海的气息和深海石共享)`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[part set index]
+	12400
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	10000204	100
+
+[random option]
+	1
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	35
+
+[magical attack]
+	35
+
+[physical defense]
+	35
+
+[magical defense]
+	35
+
+[price]
+	108000
+
+[value]
+	86400
+
+[creation rate]
+	0
+
+[water attack]
+	15
+
+[fire resistance]
+	-6
+
+[icon]
+	`item/new_equipment/10_support/support.img`	213
+
+[field image]
+	`Item/field_equip.img`	22
+
+[equipment type]
+	`[support]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	700
+
+[item group name]
+	`support`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		8000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[duration]
+		10000
+	[appendage]
+		586
+[/then]
+
+[possible kiri protect]

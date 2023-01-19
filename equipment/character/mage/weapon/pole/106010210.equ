@@ -1,0 +1,221 @@
+#PVF_File
+
+[name]
+	`幻影雷光电棍`
+
+[basic explain]
+	`    攻击时， 有7%%的几率发动闪电攻击。
+    攻击时， 附加5%%的光属性伤害。`
+
+[detail explain]
+	`    攻击时， 有7%%的几率发动闪电攻击。
+    被闪电攻击时， 有20%%的几率使敌人进入感电状态； 若攻击感电状态的敌人， 则每次攻击都会附加16点伤害。 (若敌人高于Lv54， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+    攻击时， 附加5%%的光属性伤害。 `
+
+[grade]
+	49
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[trade]`
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[minimum level]
+	45
+
+[physical attack]
+	34
+
+[magical attack]
+	34
+
+[attack speed]
+	50
+
+[stuck]
+	-1.0
+
+[need material]
+	10149508	60
+
+[price]
+	78400
+
+[repair price]
+	62720
+
+[value]
+	62720
+
+[equipment physical attack]
+	497	454
+
+[equipment magical attack]
+	414	378
+
+[separate attack]
+	268	179
+
+[light attack]
+	7
+
+[light resistance]
+	10
+
+[icon]
+	`Item/weapon/mage/pole.img`	75
+
+[field image]
+	`Item/field_weapon.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	24	0
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	24	0
+
+[layer variation]
+	2150
+	`at_polea`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_poled`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	24	0
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`POLE_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2400
+
+[item group name]
+	`pole`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`light`
+		`%`	5
+[/then]
+
+[if]
+	[cooltime]
+		500
+	[attack success]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			7
+		[reduce probability at pvp module]
+			80
+		[passive object]
+			48132	0	0	0	0	0	``
+		[/passive object]
+		[then probability]
+			50.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			7
+		[reduce probability at pvp module]
+			80
+		[passive object]
+			48133	0	0	0	0	0	``
+		[/passive object]
+		[then probability]
+			50.0
+	[/then]
+[/multiple then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]

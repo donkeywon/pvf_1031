@@ -1,0 +1,133 @@
+#PVF_File
+
+[name]
+	`落日熔金肩甲`
+
+[basic explain]
+	`被击所受伤害 -15%%
+ 
+    被攻击时， 使自身增加50点力量、智力和15点火属性强化。`
+
+[detail explain]
+	`被击所受伤害 -15%%
+ 
+    被攻击时， 使自身增加50点力量、智力和15点火属性强化。 (持续时间10秒， 冷却时间12秒)`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	30
+
+[magical attack]
+	30
+
+[physical defense]
+	33
+
+[price]
+	108000
+
+[repair price]
+	86400
+
+[value]
+	86400
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	3920	3640
+
+[physical critical hit]
+	12
+
+[magical critical hit]
+	12
+
+[icon]
+	`item/new_equipment/06_plate/neck/plate_neck.img`	40
+
+[field image]
+	`Item/field_equip.img`	17
+
+[equipment type]
+	`[shoulder]`	21
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	3200
+
+[item group name]
+	`mt shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	15
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		12000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[stat by condition]
+		`fire attack`
+		`+`	15
+	[stat by condition]
+		`magical attack`
+		`+`	50
+	[stat by condition]
+		`physical attack`
+		`+`	50
+[/then]
+
+[possible kiri protect]

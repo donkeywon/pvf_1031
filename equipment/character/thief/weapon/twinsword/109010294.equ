@@ -1,0 +1,142 @@
+#PVF_File
+
+[name]
+	`空间移动`
+
+[basic explain]
+	`    施放[疾风乱舞]时， 使自身增加40点力量和10%%的移动速度， 效果持续20秒。`
+
+[grade]
+	49
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	45
+
+[physical attack]
+	34
+
+[attack speed]
+	-80
+
+[price]
+	78400
+
+[repair price]
+	62720
+
+[value]
+	62720
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	469	428
+
+[equipment magical attack]
+	368	336
+
+[separate attack]
+	269	180
+
+[physical critical hit]
+	5
+
+[skill levelup]
+	`[thief]`	47	1
+	`[thief]`	34	1
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/thief/twinswd/twinswd.img`	128
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	2	12
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[if]
+	[event use skill]
+		`thief`	34
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		20000
+	[stat]
+		`physical attack`
+		`+`	40
+	[stat]
+		`move speed`
+		`+`	100
+[/then]
+
+[possible kiri protect]

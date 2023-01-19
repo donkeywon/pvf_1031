@@ -1,0 +1,139 @@
+#PVF_File
+
+[name]
+	`屠杀者的记忆`
+
+[basic explain]
+	`    [巴拉克的愤怒]命中敌人时， 使其进入出血状态。`
+
+[grade]
+	49
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	45
+
+[magical attack]
+	34
+
+[attack speed]
+	-100
+
+[price]
+	78400
+
+[repair price]
+	62720
+
+[value]
+	62720
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	371	339
+
+[equipment magical attack]
+	529	483
+
+[separate attack]
+	269	180
+
+[magical critical hit]
+	5
+
+[skill levelup]
+	`[thief]`	37	2
+	`[thief]`	39	1
+	`[thief]`	40	1
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/thief/wand/wand.img`	132
+
+[field image]
+	`Item/field_weapon.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	3	9
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	2300
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[if]
+	[skill]
+		`thief`	40
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[active status]
+		`bleeding`	45	10000
+[/then]
+
+[possible kiri protect]

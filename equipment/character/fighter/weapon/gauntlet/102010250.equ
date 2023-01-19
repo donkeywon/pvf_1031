@@ -1,0 +1,174 @@
+#PVF_File
+
+[name]
+	`罗特斯的缠袭臂铠`
+
+[basic explain]
+	`    攻击时， 有5%%的几率使敌人进入束缚状态。 `
+
+[detail explain]
+	`    攻击时， 有5%%的几率使敌人进入束缚状态3秒。 (若敌人高于Lv49， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间4.5秒)`
+
+[grade]
+	49
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[trade]`
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[minimum level]
+	45
+
+[physical attack]
+	51
+
+[attack speed]
+	-80
+
+[stuck]
+	-1.0
+
+[need material]
+	10149508	60
+
+[price]
+	88200
+
+[repair price]
+	70560
+
+[value]
+	70560
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	552	504
+
+[equipment magical attack]
+	414	378
+
+[separate attack]
+	268	179
+
+[skill levelup]
+	`[fighter]`	50	2
+	`[at fighter]`	50	2
+[/skill levelup]
+
+[all activestatus resistance]
+	15
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/gauntlet/gauntlet.img`	127
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	37	0
+
+[layer variation]
+	2790
+	`gauntletc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gauntletb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2150
+	`at_gauntleta`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_gauntletc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_gauntletx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		4500
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[reduce probability at pvp module]
+		80
+	[duration]
+		3000
+	[active status]
+		`hold`	49
+[/then]
+
+[possible kiri protect]

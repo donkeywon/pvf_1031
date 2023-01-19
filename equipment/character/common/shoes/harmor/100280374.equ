@@ -1,0 +1,111 @@
+#PVF_File
+
+[name]
+	`防御风暴短靴`
+
+[basic explain]
+	`    装备时， 可以使150px范围内的所有敌人减少20点所有属性抗性。`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	25
+
+[magical attack]
+	18
+
+[physical defense]
+	22
+
+[move speed]
+	40
+
+[price]
+	81000
+
+[repair price]
+	64800
+
+[value]
+	64800
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	2352	2184
+
+[icon]
+	`item/new_equipment/05_harmor/shoes/harmor_shoes.img`	41
+
+[field image]
+	`Item/field_equip.img`	14
+
+[equipment type]
+	`[shoes]`	19
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	26
+
+[weight]
+	1600
+
+[item group name]
+	`ha shoes`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		5000
+	[change status]
+		`hp`
+		`>=`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`all enemy`	150
+	[equipment duration]
+		5000
+	[appendage]
+		578
+[/then]
+
+[parameter category]
+	`synergy`
+[/parameter category]
+
+[possible kiri protect]

@@ -1,0 +1,175 @@
+#PVF_File
+
+[name]
+	`伊甸之森上衣`
+
+[basic explain]
+	`    施放技能时， 有5%%的几率增加15点的火属性强化， 效果持续30秒。
+    施放技能时， 有5%%的几率增加15点的冰属性强化， 效果持续30秒。
+    施放技能时， 有5%%的几率增加15点的光属性强化， 效果持续30秒。
+    施放技能时， 有5%%的几率增加15点的暗属性强化， 效果持续30秒。`
+
+[detail explain]
+	`    施放技能时， 有5%%的几率增加15点的火属性强化， 效果持续30秒。 (冷却时间30秒)
+    施放技能时， 有5%%的几率增加15点的冰属性强化， 效果持续30秒。 (冷却时间30秒)
+    施放技能时， 有5%%的几率增加15点的光属性强化， 效果持续30秒。 (冷却时间30秒)
+    施放技能时， 有5%%的几率增加15点的暗属性强化， 效果持续30秒。 (冷却时间30秒)
+(解除装备后效果消失)`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	45
+
+[magical defense]
+	45
+
+[price]
+	81000
+
+[repair price]
+	64800
+
+[value]
+	64800
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	1176	1092
+
+[magical critical hit]
+	8
+
+[all elemental resistance]
+	12
+
+[icon]
+	`item/new_equipment/02_cloth/coat/cloth_coat.img`	48
+
+[field image]
+	`Item/field_equip.img`	0
+
+[equipment type]
+	`[coat]`	19
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	1400
+
+[item group name]
+	`cl coat`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[equipment duration]
+		30000
+	[stat]
+		`fire attack`
+		`+`	15
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[equipment duration]
+		30000
+	[stat]
+		`water attack`
+		`+`	15
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[equipment duration]
+		30000
+	[stat]
+		`light attack`
+		`+`	15
+[/then]
+
+[if]
+	[cooltime]
+		30000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[equipment duration]
+		30000
+	[stat]
+		`dark attack`
+		`+`	15
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,266 @@
+#PVF_File
+
+[name]
+	`突击队长的杀戮手枪`
+
+[basic explain]
+	`男枪手施放技能时火属性强化
+女枪手施放技能时光属性强化。
+ 
+神枪手 （男)
+[空投支援]追击者空投数量 +25%%
+ 
+神枪手 （女)
+[空投支援]空投数量 +25%%`
+
+[detail explain]
+	`男枪手施放技能时火属性强化
+施放[RX-78追击者]、 [Ez-8自爆者]时， 使自身增加15点火属性强化， 效果持续30秒。 (冷却时间30秒； 最多重叠2次)
+男枪手施放[空投支援]时， 使自身增加15点火属性强化， 效果持续10秒。 (冷却时间40秒)
+女枪手施放技能时光属性强化
+施放[改装 : G-2旋雷者]、 [改装 : G-3捕食者]时， 使自身增加20点光属性强化， 效果持续15秒。 (冷却时间15秒； 最多重叠2次)
+施放[空投支援]时， 使自身增加15点光属性强化， 效果持续10秒。 (冷却时间40秒)
+ 
+神枪手 （男)
+[空投支援]追击者空投数量 +25%%
+ 
+神枪手 （女)
+[空投支援]空投数量 +25%%`
+
+[flavor text]
+	`    强化还是要适度啊。  --梅尔文`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	62
+
+[stuck]
+	1
+
+[price]
+	144000
+
+[repair price]
+	115200
+
+[value]
+	115200
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	635	519
+
+[equipment magical attack]
+	931	761
+
+[separate attack]
+	552	363
+
+[skill levelup]
+	`[gunner]`	46	2
+	`[at gunner]`	46	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/automatic/automatic.img`	110
+
+[field image]
+	`Item/field_weapon.img`	2
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2790
+	`autoc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`autob`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	35	0
+
+[layer variation]
+	2790
+	`at_autoc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_autob`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	1500
+
+[item group name]
+	`automatic`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[gunner]`	59	`[all]`	`[level]`	2	`%`	25
+	`[gunner]`	59	`[all]`	`[level]`	3	`%`	25
+	`[gunner]`	63
+[/skill data up]
+
+[if]
+	[use skill]
+		`gunner`	27
+	[/use skill]
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[appendage]
+		676
+[/then]
+
+[if]
+	[use skill]
+		`gunner`	28
+	[/use skill]
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[appendage]
+		680
+[/then]
+
+[if]
+	[use skill]
+		`gunner`	59
+	[/use skill]
+	[cooltime]
+		40000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[appendage]
+		677
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	80
+	[/use skill]
+	[cooltime]
+		15000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[appendage]
+		675
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	81
+	[/use skill]
+	[cooltime]
+		15000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[appendage]
+		679
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	59
+	[/use skill]
+	[cooltime]
+		40000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[appendage]
+		678
+[/then]
+
+[possible kiri protect]

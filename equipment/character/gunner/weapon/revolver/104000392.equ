@@ -1,0 +1,154 @@
+#PVF_File
+
+[name]
+	`天堂钥匙`
+
+[basic explain]
+	`    攻击时， 有3%%的几率使敌人进入感电状态。`
+
+[detail explain]
+	`    攻击时， 有3%%的几率使敌人进入感电状态3秒； 若攻击感电状态的敌人， 则每次攻击都会附加7500点伤害。 (若敌人高于Lv89， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	58
+
+[price]
+	142400
+
+[repair price]
+	113920
+
+[value]
+	113920
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	799	731
+
+[equipment magical attack]
+	672	615
+
+[separate attack]
+	510	347
+
+[physical critical hit]
+	2
+
+[light attack]
+	18
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/revolver/revolver.img`	122
+
+[field image]
+	`Item/field_weapon.img`	1
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	24	8
+
+[layer variation]
+	2790
+	`revc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`revb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	24	8
+
+[layer variation]
+	2790
+	`at_revc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_revb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2000
+
+[item group name]
+	`revolver`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[equipment duration]
+		3000
+	[probability]
+		3
+	[active status]
+		`lightning`	89	7500
+[/then]
+
+[possible kiri protect]

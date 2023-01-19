@@ -1,0 +1,122 @@
+#PVF_File
+
+[name]
+	`金属机甲的动力微核`
+
+[basic explain]
+	`未被攻击时， 使自身增加1%%的物理暴击率和魔法暴击率， 效果持续5秒。 (最多增加15%%)
+被攻击时， 已增加的能力值初始化。
+被攻击时， 使自己增加10%%的回避率， 效果持续10秒。 （冷却时间50秒）`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	67
+
+[magical attack]
+	67
+
+[physical defense]
+	67
+
+[magical defense]
+	67
+
+[need material]
+	10099777	70
+
+[value]
+	71200
+
+[creation rate]
+	0
+
+[icon]
+	`item/new_equipment/10_support/support.img`	210
+
+[field image]
+	`Item/field_equip.img`	22
+
+[equipment type]
+	`[support]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	700
+
+[item group name]
+	`support`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		5000	1	5000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		0
+	[appendage]
+		785
+[/then]
+
+[if]
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[disenchant]
+		1
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		50000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[stat]
+		`stuck resistance`
+		`+`	100
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]

@@ -1,0 +1,240 @@
+#PVF_File
+
+[name]
+	`迷花倚石`
+
+[basic explain]
+	`    HP为80%%以上时， 使自身增加100点力量、 100点智力、 7%%的物理暴击率、 7%%的魔法暴击率和100点独立攻击力。
+    HP为50%%以上、 80%%以下时， 额外增加100点力量、 100点智力、 7%%的物理暴击率和7%%的魔法暴击率。 
+    HP为20%%以上、 50%%以下时， 额外增加100点力量和智力。`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	58
+
+[magical attack]
+	87
+
+[attack speed]
+	50
+
+[stuck]
+	-2
+
+[stuck resistance]
+	30
+
+[price]
+	142400
+
+[repair price]
+	113920
+
+[value]
+	113920
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	811	764
+
+[equipment magical attack]
+	854	804
+
+[equipment physical defense]
+	890	890
+
+[separate attack]
+	510	347
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/tonfa/tonfa.img`	126
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	23	8
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	24	8
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		500	1	500
+	[stat change]
+		`hp`
+		`>=`
+		`%`	80
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	100
+	[stat by condition]
+		`magical attack`
+		`+`	100
+	[stat by condition]
+		`physical critical hit`
+		`+`	7
+	[stat by condition]
+		`magical critical hit`
+		`+`	7
+	[stat by condition]
+		`separate attack`
+		`+`	100
+[/then]
+
+[if]
+	[time]
+		500	1	500
+	[stat change]
+		`hp`
+		`<`
+		`%`	80
+	[stat change]
+		`hp`
+		`>=`
+		`%`	50
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	100
+	[stat by condition]
+		`magical attack`
+		`+`	100
+	[stat by condition]
+		`physical critical hit`
+		`+`	7
+	[stat by condition]
+		`magical critical hit`
+		`+`	7
+[/then]
+
+[if]
+	[time]
+		500	1	500
+	[stat change]
+		`hp`
+		`<`
+		`%`	50
+	[stat change]
+		`hp`
+		`>=`
+		`%`	20
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	100
+	[stat by condition]
+		`magical attack`
+		`+`	100
+[/then]
+
+[possible kiri protect]

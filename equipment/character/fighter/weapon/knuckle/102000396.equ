@@ -1,0 +1,213 @@
+#PVF_File
+
+[name]
+	`四次元魔法增幅手套`
+
+[basic explain]
+	`[念气波]大小 +25%%
+[螺旋念气场]大小 +25%%
+ 施放[念气波]时， 使自身增加35点智力， 效果持续5秒。 (重叠1次)
+ 施放[螺旋念气场]时， 使自身增加55点智力， 效果持续20秒。 (重叠1次)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[magical attack]
+	58
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[need material]
+	10099777	90
+
+[repair price]
+	113920
+
+[value]
+	113920
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	811	764
+
+[equipment magical attack]
+	982	925
+
+[separate attack]
+	510	347
+
+[light attack]
+	17
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/knuckle/knuckle.img`	150
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	42	0
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	42	0
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[fighter]`	12	`[all]`	`[level]`	4	`%`	25
+	`[at fighter]`	12	`[all]`	`[level]`	4	`%`	25
+	`[fighter]`	16	`[all]`	`[level]`	4	`%`	25
+	`[at fighter]`	16	`[all]`	`[level]`	4	`%`	25
+[/skill data up]
+
+[if]
+	[event use skill]
+		`fighter`	12
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[appendage]
+		783
+[/then]
+
+[if]
+	[event use skill]
+		`at fighter`	12
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		5000
+	[appendage]
+		783
+[/then]
+
+[if]
+	[event use skill]
+		`fighter`	16
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		20000
+	[appendage]
+		784
+[/then]
+
+[if]
+	[event use skill]
+		`at fighter`	16
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		20000
+	[appendage]
+		784
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]

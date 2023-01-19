@@ -1,0 +1,172 @@
+#PVF_File
+
+[name]
+	`腐蚀之界`
+
+[basic explain]
+	`破招伤害 +20%%
+ 
+    攻击时， 有5%%的几率使敌人减少15%%的移动速度和攻击速度， 效果持续20秒。 (最多重叠1次)
+    施放[意念驱动]时， 可以召唤出鼠群。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率使敌人减少15%%的移动速度和攻击速度， 效果持续20秒。 (最多重叠1次)
+    施放[意念驱动]时， 可以召唤出鼠群， 鼠群攻击时， 使敌人进入减速状态。
+ 
+破招伤害 +20%% (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)`
+
+[flavor text]
+	`    它们不仅残忍地吃掉同族， 吃之前还不忘剥掉同族的毛皮。 这些毛皮堆积在这里， 谁知道时间一长竟然凝固成图腾模样……`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	92
+
+[stuck]
+	-1
+
+[price]
+	144000
+
+[repair price]
+	115200
+
+[value]
+	115200
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	956	855
+
+[equipment magical attack]
+	819	733
+
+[separate attack]
+	552	363
+
+[icon]
+	`item/new_equipment/01_weapon/priest/totem/totem.img`	107
+
+[field image]
+	`Item/field_weapon.img`	13
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	40	0
+
+[layer variation]
+	200
+	`totemd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`totemc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`TOTEM_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	3400
+
+[item group name]
+	`totem`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[duration]
+		20000
+	[appendage]
+		695
+[/then]
+
+[if]
+	[attack condition]
+		`counter`
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	20
+[/then]
+
+[if]
+	[event use skill]
+		`priest`	13
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		140118	0	25	0	2	0	``
+		140118	-20	0	0	2	0	``
+		140118	0	-25	0	2	0	``
+		140118	20	0	0	2	0	``
+		140118	20	-25	0	2	0	``
+	[/passive object]
+[/then]
+
+[parameter category]
+	`synergy`
+[/parameter category]
+
+[possible kiri protect]

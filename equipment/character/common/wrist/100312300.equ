@@ -1,0 +1,99 @@
+#PVF_File
+
+[name]
+	`尘封的悲鸣手镯`
+
+[basic explain]
+	`装备后， 增加9%%的攻击速度。`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[part set index]
+	11858
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	10000204	100
+
+[random option]
+	1
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	36
+
+[physical defense]
+	90
+
+[move speed]
+	30
+
+[price]
+	108000
+
+[value]
+	86400
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	4752	4416
+
+[all elemental attack]
+	7
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	175
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	21
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		500	1	500
+	[stat change]
+		`hp`
+		`>`
+		`%`	0
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`attack speed`
+		`+`	90
+[/then]
+
+[possible kiri protect]

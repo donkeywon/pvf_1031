@@ -1,0 +1,116 @@
+#PVF_File
+
+[name]
+	`贝奇的淘气靴`
+
+[basic explain]
+	`    前冲时， 使自身增加100%%的移动速度， 效果持续4秒。 (冷却时间25秒)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[magical attack]
+	26
+
+[magical defense]
+	26
+
+[move speed]
+	60
+
+[stuck resistance]
+	20
+
+[need material]
+	10099777	60
+
+[repair price]
+	35600
+
+[value]
+	35600
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	570	540
+
+[icon]
+	`item/new_equipment/02_cloth/shoes/cloth_shoes.img`	44
+
+[field image]
+	`Item/field_equip.img`	4
+
+[equipment type]
+	`[shoes]`	15
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	18
+
+[weight]
+	600
+
+[item group name]
+	`cl shoes`
+
+[cool time]
+	10000
+
+[if]
+	[module]
+		`[assault]`
+		`[pvp]`
+		`[war room]`
+		`[dungeon type]`
+	[/module]
+	[cooltime]
+		25000
+	[set my state]
+		1
+	[my state]
+		`dash`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		4000
+	[probability]
+		100
+	[stat]
+		`move speed`
+		`+`	1000
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]

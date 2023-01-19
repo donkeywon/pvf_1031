@@ -1,0 +1,193 @@
+#PVF_File
+
+[name]
+	`罗特斯的魂灵法杖`
+
+[basic explain]
+	`    施放技能时， 有10%%的几率使300px范围内的所有敌人进入混乱状态。`
+
+[detail explain]
+	`    施放技能时， 有10%%的几率使300px范围的所有敌人进入混乱状态2秒。 (若敌人高于Lv49， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间6秒)`
+
+[grade]
+	49
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[trade]`
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[minimum level]
+	45
+
+[magical attack]
+	34
+
+[attack speed]
+	-100
+
+[cast speed]
+	70
+
+[MP MAX]
+	150
+
+[need material]
+	10149508	60
+
+[price]
+	78400
+
+[repair price]
+	62720
+
+[value]
+	62720
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	437	399
+
+[equipment magical attack]
+	552	504
+
+[separate attack]
+	268	179
+
+[skill levelup]
+	`[mage]`	19	1
+	`[mage]`	38	1
+	`[at mage]`	4	2
+	`[at mage]`	24	1
+[/skill levelup]
+
+[all activestatus resistance]
+	15
+
+[icon]
+	`item/new_equipment/01_weapon/mage/staff/staff.img`	139
+
+[field image]
+	`Item/field_weapon.img`	9
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	46	0
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	47	0
+
+[layer variation]
+	2150
+	`at_staffa`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_staffd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	46	0
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`STAFF_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	2400
+
+[item group name]
+	`staff`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[if]
+	[casting]
+		1
+	[cooltime]
+		6000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	300
+	[probability]
+		10
+	[reduce probability at pvp module]
+		90
+	[duration]
+		2000
+	[active status]
+		`confuse`	49	0
+[/then]
+
+[possible kiri protect]

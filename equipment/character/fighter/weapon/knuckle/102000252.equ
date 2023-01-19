@@ -1,0 +1,195 @@
+#PVF_File
+
+[name]
+	`愤怒之阿特拉斯手套`
+
+[basic explain]
+	`攻击速度 +3%%
+ 
+    攻击时， 有10%%的几率使敌人进入减速状态， 效果持续3秒。
+    HP低于50%%时， 增加5%%的攻击速度和移动速度， 增加7%%的施放速度。 `
+
+[detail explain]
+	`攻击速度 +3%%
+ 
+    攻击时， 有10%%的几率使敌人进入减速状态， 效果持续3秒。 (冷却时间4.5秒； 若敌人高于Lv54， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+    HP低于50%%时， 增加5%%的攻击速度和移动速度， 增加7%%的施放速度。 `
+
+[grade]
+	54
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[trade]`
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[minimum level]
+	50
+
+[magical attack]
+	37
+
+[attack speed]
+	100
+
+[cast speed]
+	50
+
+[move speed]
+	30
+
+[need material]
+	10149508	85
+
+[price]
+	86400
+
+[repair price]
+	69120
+
+[value]
+	69120
+
+[equipment physical attack]
+	475	437
+
+[equipment magical attack]
+	575	529
+
+[separate attack]
+	298	199
+
+[icon]
+	`Item/weapon/fighter/knuckle.img`	78
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	16	0
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	17	0
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		4500
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		10
+	[reduce probability at pvp module]
+		90
+	[duration]
+		3000
+	[active status]
+		`slow`	54	15	10
+[/then]
+
+[if]
+	[time]
+		500	1	500
+	[stat change]
+		`hp`
+		`<=`
+		`%`	50
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`attack speed`
+		`+`	50
+	[stat by condition]
+		`move speed`
+		`+`	50
+	[stat by condition]
+		`cast speed`
+		`+`	70
+[/then]
+
+[possible kiri protect]

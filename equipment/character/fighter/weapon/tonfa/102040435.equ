@@ -1,0 +1,364 @@
+#PVF_File
+
+[name]
+	`阿波菲斯的魔灵护具`
+
+[basic explain]
+	`    成功施放以下技能时， 可以发动地震攻击。
+    - 格斗家(女)
+    [抛投]、 [空绞锤]、 [螺旋彗星落]、 [地狱摇篮]、 [裂石破天]
+ 
+    - 格斗家(男)
+    [抛投]、 [空绞锤]、 [浮空凌云踢]、 [地狱风火轮]、 [裂石破天]`
+
+[detail explain]
+	`    成功施放以下技能时， 发动地震攻击。
+格斗家(女)
+[抛投]、 [空绞锤]、 [螺旋彗星落]、 [地狱摇篮]、 [裂石破天]
+(施放[抛投]时， 若将敌人抛到角色上方， 则不会发动地震攻击。)
+格斗家(男)
+[抛投]、 [空绞锤]、 [浮空凌云踢]、 [地狱风火轮]、 [裂石破天]`
+
+[flavor text]
+	`    魔剑冠名的武器， 必属精品！`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[physical attack]
+	50
+
+[magical attack]
+	92
+
+[attack speed]
+	50
+
+[stuck]
+	-2
+
+[stuck resistance]
+	30
+
+[price]
+	144000
+
+[repair price]
+	115200
+
+[value]
+	115200
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	865	773
+
+[equipment magical attack]
+	911	814
+
+[equipment physical defense]
+	900	900
+
+[separate attack]
+	552	363
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/tonfa/tonfa.img`	105
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	35	0
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[if]
+	[skill]
+		`fighter`	49
+	[/skill]
+	[attack success]
+		1
+	[damage check]
+		`>`
+		`+`	0
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		140101	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`fighter`	18
+	[/skill]
+	[attack success]
+		1
+	[damage check]
+		`>`
+		`+`	0
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		140101	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`fighter`	62
+	[/skill]
+	[attack success]
+		1
+	[damage check]
+		`>`
+		`+`	0
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		140101	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`fighter`	89
+	[/skill]
+	[attack success]
+		1
+	[damage check]
+		`>`
+		`+`	0
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		140101	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`fighter`	88
+	[/skill]
+	[attack success]
+		1
+	[damage check]
+		`>`
+		`+`	0
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		140101	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`at fighter`	49
+	[/skill]
+	[attack success]
+		1
+	[damage check]
+		`>`
+		`+`	0
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		140110	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`at fighter`	18
+	[/skill]
+	[attack success]
+		1
+	[damage check]
+		`>`
+		`+`	0
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		140110	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`at fighter`	62
+	[/skill]
+	[attack success]
+		1
+	[damage check]
+		`>`
+		`+`	0
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		140110	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`at fighter`	89
+	[/skill]
+	[attack success]
+		1
+	[damage check]
+		`>`
+		`+`	0
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		140110	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`at fighter`	88
+	[/skill]
+	[attack success]
+		1
+	[damage check]
+		`>`
+		`+`	0
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[passive object]
+		140110	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]

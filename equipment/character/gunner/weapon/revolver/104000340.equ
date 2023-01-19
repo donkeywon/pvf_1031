@@ -1,0 +1,185 @@
+#PVF_File
+
+[name]
+	`风暴突击 - 逆轮`
+
+[basic explain]
+	`    若使用[爆头一击]和[回头一击]时， 则可向前方施放毁灭之塔伊奥利的冲击波。`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[price]
+	144000
+
+[repair price]
+	115200
+
+[value]
+	115200
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	906	740
+
+[equipment magical attack]
+	762	623
+
+[separate attack]
+	552	363
+
+[physical critical hit]
+	2
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/revolver/revolver.img`	126
+
+[field image]
+	`Item/field_weapon.img`	1
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	41	0
+
+[layer variation]
+	2790
+	`revc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`revb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	39	0
+
+[layer variation]
+	2790
+	`at_revc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_revb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2000
+
+[item group name]
+	`revolver`
+
+[cool time]
+	10000
+
+[if]
+	[use skill]
+		`gunner`	5
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		140016	120	0	120	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`gunner`	20
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		140016	120	0	120	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	5
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		140016	120	0	90	2	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[use skill]
+		`at gunner`	20
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		140016	120	0	90	2	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]

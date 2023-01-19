@@ -1,0 +1,102 @@
+#PVF_File
+
+[name]
+	`血色残阳项链`
+
+[basic explain]
+	`    装备后， 增加4%%的物理攻击力、 魔法攻击力和独立攻击力。
+    HP低于50%%时， 触发附加属性。 (最多重叠1次； 该效果与血色残阳的项链、 手镯、 戒指共享； 装备解除后效果消失)
+- 物理、 魔法、 独立攻击力 +6%%`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[part set index]
+	11857
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	10000204	100
+
+[random option]
+	1
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[magical attack]
+	36
+
+[magical defense]
+	90
+
+[HP MAX]
+	800
+
+[price]
+	108000
+
+[value]
+	86400
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	7920	7360
+
+[icon]
+	`item/new_equipment/08_necklace/necklace.img`	185
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[appendage]
+		582
+	[appendage]
+		583
+[/then]
+
+[possible kiri protect]

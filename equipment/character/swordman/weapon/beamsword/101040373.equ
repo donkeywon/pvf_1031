@@ -1,0 +1,185 @@
+#PVF_File
+
+[name]
+	`织炎`
+
+[basic explain]
+	`    攻击时， 有3%%的几率使敌人减少15点火属性抗性， 效果持续6秒。`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	58
+
+[attack speed]
+	100
+
+[stuck]
+	1
+
+[price]
+	160200
+
+[repair price]
+	128160
+
+[value]
+	128160
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	794	748
+
+[equipment magical attack]
+	769	724
+
+[separate attack]
+	510	347
+
+[fire attack]
+	12
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/beamswd/beamswd.img`	119
+
+[field image]
+	`Item/FieldImage.img`	35
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	23	8
+
+[layer variation]
+	2791
+	`beamswdc1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	2792
+	`beamswdc2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	651
+	`beamswdb1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	652
+	`beamswdb2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	23	8
+
+[layer variation]
+	2791
+	`beamswdc1`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	2792
+	`beamswdc2`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	651
+	`beamswdb1`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	652
+	`beamswdb2`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`BEAMSWD_TOUCH`
+
+[required skill]
+	33
+
+[durability]
+	48
+
+[weight]
+	2500
+
+[item group name]
+	`beamswd`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[fire element]`
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[equipment duration]
+		6000
+	[probability]
+		3
+	[appendage]
+		766
+[/then]
+
+[possible kiri protect]

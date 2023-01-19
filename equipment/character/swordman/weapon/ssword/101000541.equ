@@ -1,0 +1,158 @@
+#PVF_File
+
+[name]
+	`冰陨利刃`
+
+[basic explain]
+	`    攻击时， 有5%%的几率使敌人进入冰冻状态。 (冷却时间4.5秒)`
+
+[detail explain]
+	`    攻击时， 有5%%的几率使敌人进入冰冻状态3秒。(若敌人高于Lv29， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间4.5秒)`
+
+[grade]
+	29
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	25
+
+[magical attack]
+	22
+
+[cast speed]
+	20
+
+[price]
+	46400
+
+[repair price]
+	37120
+
+[value]
+	37120
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	285	247
+
+[equipment magical attack]
+	345	299
+
+[separate attack]
+	171	112
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[swordman]`	5	2
+	`[swordman]`	32	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/sswd/sswd.img`	114
+
+[field image]
+	`Item/FieldImage.img`	9
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	0	10
+
+[layer variation]
+	2790
+	`sswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`sswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	0	10
+
+[layer variation]
+	2790
+	`sswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`sswdb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`MINERALSWD_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3100
+
+[item group name]
+	`ssword`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		4500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[equipment duration]
+		3000
+	[active status]
+		`freeze`	29
+[/then]
+
+[possible kiri protect]

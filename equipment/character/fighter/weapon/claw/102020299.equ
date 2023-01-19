@@ -1,0 +1,174 @@
+#PVF_File
+
+[name]
+	`血腥浩劫`
+
+[basic explain]
+	`[涂毒]技能中包含的中毒攻击力变化率 +70%%
+ 
+暴击伤害 +20%%
+[爪精通]物理武器攻击力增加率 +10%%
+[爪精通]魔法武器攻击力增加率 +10%%`
+
+[detail explain]
+	`[涂毒]技能中包含的中毒攻击力变化率 +70%%
+ 
+暴击伤害 +20%% (暴击伤害加成效果取最高值， 且无法叠加)
+[爪精通]物理武器攻击力增加率 +10%%
+[爪精通]魔法武器攻击力增加率 +10%%`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[magical attack]
+	31
+
+[price]
+	144000
+
+[repair price]
+	115200
+
+[value]
+	115200
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	911	814
+
+[equipment magical attack]
+	911	814
+
+[separate attack]
+	552	363
+
+[physical critical hit]
+	7
+
+[magical critical hit]
+	10
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/claw/claw.img`	135
+
+[field image]
+	`Item/FieldImage.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	42	0
+
+[layer variation]
+	2790
+	`clawc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`clawb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	41	0
+
+[layer variation]
+	2150
+	`at_clawa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_clawc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_clawx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`CLAW_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`claw`
+
+[cool time]
+	10000
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	20
+[/then]
+
+[skill data up]
+	`[at fighter]`	45	`[all]`	`[level]`	2	`+`	100
+	`[at fighter]`	45	`[all]`	`[level]`	3	`+`	100
+	`[at fighter]`	43	`[all]`	`[level]`	10	`+`	50
+	`[fighter]`	45	`[all]`	`[level]`	2	`+`	100
+	`[fighter]`	45	`[all]`	`[level]`	3	`+`	100
+	`[fighter]`	38	`[all]`	`[level]`	5	`+`	700
+[/skill data up]
+
+[possible kiri protect]

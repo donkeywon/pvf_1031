@@ -1,0 +1,207 @@
+#PVF_File
+
+[name]
+	`巨斧克洛的东方棍`
+
+[basic explain]
+	`[挑衅]异常状态抗性减少量 +15%%
+[挑衅]范围 +10%%
+[暴力抓取]抓取攻击力增加率 +15%%
+ 
+500px范围内， 所有队员物理攻击力 +7%%
+500px范围内， 所有队员魔法攻击力 +7%%
+500px范围内， 所有队员独立攻击力 +7%%
+ 
+被攻击时， 有50%%的几率触发狂霸之气。 (冷却时间10秒)`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[magical attack]
+	92
+
+[attack speed]
+	50
+
+[stuck]
+	-2
+
+[stuck resistance]
+	30
+
+[price]
+	144000
+
+[repair price]
+	115200
+
+[value]
+	115200
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	865	773
+
+[equipment magical attack]
+	911	814
+
+[equipment physical defense]
+	900	900
+
+[separate attack]
+	552	363
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/tonfa/tonfa.img`	131
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	41	0
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	40	0
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[fighter]`	44	`[all]`	`[level]`	8	`%`	15
+	`[fighter]`	44	`[all]`	`[level]`	1	`%`	10
+	`[fighter]`	50	`[all]`	`[level]`	1	`%`	15
+	`[at fighter]`	44	`[all]`	`[level]`	8	`%`	15
+	`[at fighter]`	44	`[all]`	`[level]`	1	`%`	10
+	`[at fighter]`	50	`[all]`	`[level]`	1	`%`	15
+[/skill data up]
+
+[item aura]
+	`equipment physical attack`
+	`%`	7	500
+
+[item aura]
+	`equipment magical attack`
+	`%`	7	500
+
+[item aura]
+	`separate attack`
+	`%`	7	500
+
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[passive object]
+		140000	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[parameter category]
+	`synergy`
+[/parameter category]
+
+[possible kiri protect]

@@ -1,0 +1,219 @@
+#PVF_File
+
+[name]
+	`愤怒之泰坦手套`
+
+[basic explain]
+	`    施放[上勾拳]时， 可以使自身进入霸体1秒。 (冷却时间1.8秒)
+    攻击时， 有1%%的几率驱散效果。
+    攻击时， 有2%%的几率使敌人进入眩晕状态2秒。`
+
+[detail explain]
+	`    施放[上勾拳]、 [后踢]时， 可以使自身进入霸体状态1秒。 (冷却时间1.8秒) 
+    攻击时， 有1%%的几率出现驱散效果。 (冷却时间10秒)
+    攻击时， 有2%%的几率使敌人进入眩晕状态2秒。 (冷却时间3秒； 若敌人高于Lv54， 则减少进入异常状态的几率； 反之， 则增加几率 )`
+
+[grade]
+	54
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[trade]`
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[minimum level]
+	50
+
+[magical attack]
+	37
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[need material]
+	10149508	85
+
+[price]
+	86400
+
+[repair price]
+	69120
+
+[value]
+	69120
+
+[equipment physical attack]
+	475	437
+
+[equipment magical attack]
+	575	529
+
+[separate attack]
+	298	199
+
+[icon]
+	`Item/weapon/fighter/knuckle.img`	80
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	16	2
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	17	2
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		1
+	[disenchant]
+		1
+[/then]
+
+[if]
+	[event use skill]
+		`fighter`	5
+	[/event use skill]
+	[cooltime]
+		1800
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[reduce probability at pvp module]
+		100
+	[duration]
+		1000
+	[buff]
+		`superarmor`
+[/then]
+
+[if]
+	[event use skill]
+		`at fighter`	5
+	[/event use skill]
+	[cooltime]
+		1800
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[reduce probability at pvp module]
+		100
+	[duration]
+		1000
+	[buff]
+		`superarmor`
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		3000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[duration]
+		2000
+	[active status]
+		`stun`	54
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]

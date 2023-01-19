@@ -1,0 +1,178 @@
+#PVF_File
+
+[name]
+	`二哥的充气小伙伴`
+
+[basic explain]
+	`    攻击时， 有3%%的几率使敌人进入中毒状态。 (冷却时间5秒)
+    攻击时， 有2%%的几率使敌人进入眩晕状态。 (冷却时间4秒)`
+
+[detail explain]
+	`    散发出令人不适的气味， 攻击时， 有3%%的几率使敌人进入中毒状态3秒； 中毒状态下的敌人， 每0.5秒受到600点伤害。 (若敌人高于Lv19， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间5秒)
+    攻击时， 有2%%的几率使敌人进入眩晕状态。 (若敌人高于Lv19， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间4秒)`
+
+[grade]
+	19
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	15
+
+[physical attack]
+	24
+
+[attack speed]
+	-30
+
+[stuck]
+	-1
+
+[price]
+	30400
+
+[repair price]
+	24320
+
+[value]
+	24320
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	242	198
+
+[equipment magical attack]
+	209	171
+
+[separate attack]
+	123	78
+
+[skill levelup]
+	`[demonic swordman]`	65	2
+	`[swordman]`	65	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/club/club.img`	108
+
+[field image]
+	`Item/FieldImage.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	0	10
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	0	10
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`KATANA_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3400
+
+[item group name]
+	`club`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		5000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[equipment duration]
+		3000
+	[probability]
+		3
+	[active status]
+		`poison`	19	3600
+[/then]
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[equipment duration]
+		2000
+	[probability]
+		2
+	[active status]
+		`stun`	19
+[/then]
+
+[possible kiri protect]

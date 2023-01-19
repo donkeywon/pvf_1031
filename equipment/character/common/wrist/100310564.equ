@@ -1,0 +1,106 @@
+#PVF_File
+
+[name]
+	`罗特斯的自缚手镯`
+
+[basic explain]
+	`    攻击时， 有2%%的几率使自身进入束缚状态， 效果持续2秒。`
+
+[detail explain]
+	`    攻击时， 有2%%的几率使自身进入束缚状态， 效果持续2秒。 (若敌人高于Lv49， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间10秒)`
+
+[grade]
+	49
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[trade]`
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[minimum level]
+	45
+
+[physical attack]
+	21
+
+[physical defense]
+	51
+
+[move speed]
+	20
+
+[need material]
+	10149508	50
+
+[price]
+	49000
+
+[value]
+	39200
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	30	30
+
+[equipment magical defense]
+	2688	2448
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	139
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	20
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		2
+	[reduce probability at pvp module]
+		80
+	[duration]
+		2000
+	[active status]
+		`hold`	49
+[/then]
+
+[possible kiri protect]

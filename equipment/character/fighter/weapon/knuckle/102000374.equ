@@ -1,0 +1,174 @@
+#PVF_File
+
+[name]
+	`怒叱`
+
+[basic explain]
+	`    施放[狮子吼]时， 使自身增加70点魔法攻击力和110点独立攻击力， 效果持续15秒。`
+
+[grade]
+	79
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	75
+
+[magical attack]
+	52
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[price]
+	126400
+
+[repair price]
+	101120
+
+[value]
+	101120
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	716	669
+
+[equipment magical attack]
+	867	810
+
+[separate attack]
+	450	305
+
+[skill levelup]
+	`[fighter]`	15	2
+	`[at fighter]`	15	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/knuckle/knuckle.img`	137
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	20	5
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	2790
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	21	5
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[if]
+	[use skill]
+		`fighter`	15
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		15000
+	[appendage]
+		761
+[/then]
+
+[if]
+	[use skill]
+		`at fighter`	15
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		15000
+	[appendage]
+		761
+[/then]
+
+[possible kiri protect]

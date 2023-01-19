@@ -1,0 +1,99 @@
+#PVF_File
+
+[name]
+	`致命之蓝宝石项坠`
+
+[basic explain]
+	`    攻击时， 消耗4%%的MP， 可以增加15%%的物理暴击率和魔法暴击率， 效果持续30秒。 (冷却时间40秒)`
+
+[detail explain]
+	`    攻击时， 消耗4%%的MP， 可以增加15%%的物理暴击率和魔法暴击率， 效果持续30秒。 (解除穿戴时效果消失； 冷却时间40秒)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	35
+
+[magical defense]
+	87
+
+[price]
+	89000
+
+[value]
+	71200
+
+[creation rate]
+	250
+
+[equipment magical defense]
+	7680	7280
+
+[icon]
+	`item/new_equipment/08_necklace/necklace.img`	175
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	21
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		40000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		30000
+	[restore]
+		`mp`
+		`%`	-4	0
+	[stat]
+		`physical critical hit`
+		`+`	15
+	[stat]
+		`magical critical hit`
+		`+`	15
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,159 @@
+#PVF_File
+
+[name]
+	`邪龙的毒牙双剑`
+
+[basic explain]
+	`    攻击时， 有5%%的几率使敌人进入中毒状态3秒。
+    攻击中毒状态的敌人时， 附加8%%的伤害。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率使敌人进入中毒状态3秒； 中毒状态下的敌人， 每0.5秒会受到600点伤害。 (若敌人高于Lv54时， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间4.5秒)
+    攻击中毒状态的敌人时， 附加8%%的伤害。`
+
+[grade]
+	54
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[trade]`
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[minimum level]
+	50
+
+[physical attack]
+	37
+
+[attack speed]
+	-80
+
+[need material]
+	10149508	85
+
+[price]
+	86400
+
+[repair price]
+	69120
+
+[value]
+	69120
+
+[equipment physical attack]
+	510	469
+
+[equipment magical attack]
+	400	368
+
+[separate attack]
+	298	199
+
+[physical critical hit]
+	5
+
+[icon]
+	`Item/weapon/thief/twinswd.img`	87
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[thief]`
+
+[variation]
+	18	0
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		4500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[probability]
+		5
+	[reduce probability at pvp module]
+		80
+	[active status]
+		`poison`	44	3600
+[/then]
+
+[if]
+	[attack success]
+		1
+	[target active status]
+		`poison`
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	8
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]

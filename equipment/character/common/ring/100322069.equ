@@ -1,0 +1,238 @@
+#PVF_File
+
+[name]
+	`释灵渊`
+
+[basic explain]
+	`    攻击时， 有5%%的几率召唤出3个幽灵攻击敌人。
+    幽灵命中敌人时， 会使敌人进入以下任意一种异常状态。
+ - 出血、 减速、 中毒、 诅咒、 失明
+ 
+    被击中的敌人所有属性抗性减少20点， 效果持续10秒。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率召唤出3个幽灵攻击敌人。
+    幽灵命中敌人时， 会使敌人进入以下任意一种异常状态。
+    - 使敌人进入出血、 中毒状态5秒； 该状态下的敌人， 每0.5秒受到800点伤害。
+    - 使敌人进入减速状态5秒； 减速状态下的敌人， 将减少20%%的移动速度和攻击速度。
+    - 使敌人进入诅咒状态5秒； 诅咒状态下的敌人， 将减少22点力量、 体力、 智力和精神。
+    - 使敌人进入失明状态5秒； 失明状态下的敌人， 会减少90%%视野和20%%命中率。
+(若敌人高于Lv90， 则减少该装备所有异常状态的发动几率和效果； 反之， 则增加几率和效果)
+ 
+    被击中的敌人所有属性抗性减少20点， 效果持续10秒。`
+
+[flavor text]
+	`    我觉得已经没有必要去了解那个一直在跟踪我的影子了， 爱跟就跟吧！  --某个鬼泣`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	54
+
+[magical attack]
+	54
+
+[hit recovery]
+	90
+
+[price]
+	108000
+
+[value]
+	86400
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	3168	2944
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	154
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	200
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		100
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			5
+		[passive object]
+			140121	-50	0	20	2	0	``
+			140122	0	0	0	2	0	``
+			140123	-50	0	-20	2	0	``
+		[/passive object]
+		[then probability]
+			10.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			5
+		[passive object]
+			140121	-50	0	20	2	0	``
+			140122	0	0	0	2	0	``
+			140124	-50	0	-20	2	0	``
+		[/passive object]
+		[then probability]
+			10.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			5
+		[passive object]
+			140121	-50	0	20	2	0	``
+			140122	0	0	0	2	0	``
+			140125	-50	0	-20	2	0	``
+		[/passive object]
+		[then probability]
+			10.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			5
+		[passive object]
+			140122	-50	0	20	2	0	``
+			140123	0	0	0	2	0	``
+			140124	-50	0	-20	2	0	``
+		[/passive object]
+		[then probability]
+			10.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			5
+		[passive object]
+			140122	-50	0	20	2	0	``
+			140123	0	0	0	2	0	``
+			140125	-50	0	-20	2	0	``
+		[/passive object]
+		[then probability]
+			10.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			5
+		[passive object]
+			140121	-50	0	20	2	0	``
+			140124	0	0	0	2	0	``
+			140125	-50	0	-20	2	0	``
+		[/passive object]
+		[then probability]
+			10.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			5
+		[passive object]
+			140121	-50	0	20	2	0	``
+			140123	0	0	0	2	0	``
+			140124	-50	0	-20	2	0	``
+		[/passive object]
+		[then probability]
+			10.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			5
+		[passive object]
+			140121	-50	0	20	2	0	``
+			140123	0	0	0	2	0	``
+			140125	-50	0	-20	2	0	``
+		[/passive object]
+		[then probability]
+			10.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			5
+		[passive object]
+			140122	-50	0	20	2	0	``
+			140124	0	0	0	2	0	``
+			140125	-50	0	-20	2	0	``
+		[/passive object]
+		[then probability]
+			10.0
+	[/then]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			5
+		[passive object]
+			140123	-50	0	20	2	0	``
+			140124	0	0	0	2	0	``
+			140125	-50	0	-20	2	0	``
+		[/passive object]
+		[then probability]
+			10.0
+	[/then]
+[/multiple then]
+
+[parameter category]
+	`synergy`
+[/parameter category]
+
+[possible kiri protect]

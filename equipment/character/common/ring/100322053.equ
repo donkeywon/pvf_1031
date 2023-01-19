@@ -1,0 +1,552 @@
+#PVF_File
+
+[name]
+	`瘟疫之源戒指`
+
+[basic explain]
+	`    强化或增幅数值每+1时， 使自身增加1%%的攻击速度和移动速度。
+    强化或增幅+11以上时， 使自身增加30点力量和智力， 并且强化或增幅数值每+1时， 额外再增加30点力量和智力。
+    攻击时， 有3%%的几率使敌人进入减速状态。`
+
+[detail explain]
+	`    强化或增幅数值每+1时， 使自身增加1%%的攻击速度和移动速度。 (最多增加10%%)
+    强化或增幅+11以上时， 使自身增加30点力量和智力， 并且强化或增幅数值每+1时， 额外再增加30点力量和智力。 (最多增加150)
+    攻击时， 有3%%的几率使敌人进入减速状态4秒； 减速状态下的敌人， 将减少20%%的移动速度和攻击速度。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`    所以我们唯一能做的， 就是尽量远离它。 可是， 竟然还有人把瘟疫戴身上， 真是蠢中至圣……`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[part set index]
+	11121
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	10000204	100
+
+[random option]
+	1
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	54
+
+[physical attack]
+	50
+
+[magical attack]
+	54
+
+[magical attack]
+	50
+
+[attack speed]
+	20
+
+[move speed]
+	20
+
+[price]
+	108000
+
+[value]
+	86400
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	3168	2944
+
+[slow resistance]
+	30
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	174
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	20
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	1	0
+		`amplify`
+		`=`	1	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[stat by condition]
+		`attack speed`
+		`+`	10
+	[stat by condition]
+		`move speed`
+		`+`	10
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	2	0
+		`amplify`
+		`=`	2	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[stat by condition]
+		`attack speed`
+		`+`	20
+	[stat by condition]
+		`move speed`
+		`+`	20
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	3	0
+		`amplify`
+		`=`	3	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[stat by condition]
+		`attack speed`
+		`+`	30
+	[stat by condition]
+		`move speed`
+		`+`	30
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	4	0
+		`amplify`
+		`=`	4	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[stat by condition]
+		`attack speed`
+		`+`	40
+	[stat by condition]
+		`move speed`
+		`+`	40
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	5	0
+		`amplify`
+		`=`	5	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[stat by condition]
+		`attack speed`
+		`+`	50
+	[stat by condition]
+		`move speed`
+		`+`	50
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	6	0
+		`amplify`
+		`=`	6	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[stat by condition]
+		`attack speed`
+		`+`	60
+	[stat by condition]
+		`move speed`
+		`+`	60
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	7	0
+		`amplify`
+		`=`	7	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[stat by condition]
+		`attack speed`
+		`+`	70
+	[stat by condition]
+		`move speed`
+		`+`	70
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	8	0
+		`amplify`
+		`=`	8	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[stat by condition]
+		`attack speed`
+		`+`	80
+	[stat by condition]
+		`move speed`
+		`+`	80
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	9	0
+		`amplify`
+		`=`	9	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[stat by condition]
+		`attack speed`
+		`+`	90
+	[stat by condition]
+		`move speed`
+		`+`	90
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`>=`	10	0
+		`amplify`
+		`>=`	10	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[stat by condition]
+		`attack speed`
+		`+`	100
+	[stat by condition]
+		`move speed`
+		`+`	100
+[/then]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[duration]
+		4000
+	[active status]
+		`slow`	90	20	20
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	11	0
+		`amplify`
+		`=`	11	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[stat by condition]
+		`physical attack`
+		`+`	30
+	[stat by condition]
+		`magical attack`
+		`+`	30
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	12	0
+		`amplify`
+		`=`	12	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[stat by condition]
+		`physical attack`
+		`+`	60
+	[stat by condition]
+		`magical attack`
+		`+`	60
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	13	0
+		`amplify`
+		`=`	13	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[stat by condition]
+		`physical attack`
+		`+`	90
+	[stat by condition]
+		`magical attack`
+		`+`	90
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`=`	14	0
+		`amplify`
+		`=`	14	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[stat by condition]
+		`physical attack`
+		`+`	120
+	[stat by condition]
+		`magical attack`
+		`+`	120
+[/then]
+
+[if]
+	[equipment upgrade]
+		`upgrade`
+		`>=`	15	0
+		`amplify`
+		`>=`	15	0
+	[/equipment upgrade]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[stat by condition]
+		`physical attack`
+		`+`	150
+	[stat by condition]
+		`magical attack`
+		`+`	150
+[/then]
+
+[possible kiri protect]

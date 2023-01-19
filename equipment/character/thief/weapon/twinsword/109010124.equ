@@ -1,0 +1,151 @@
+#PVF_File
+
+[name]
+	`邪龙的蛊毒双剑`
+
+[basic explain]
+	`    攻击时， 有2%%的几率使敌人进入中毒和出血状态。`
+
+[detail explain]
+	`    攻击时， 有2%%的几率使敌人进入出血和中毒状态7秒； 出血和中毒状态的下的敌人， 每0.5秒会受到140点伤害。 (若敌人高于Lv59， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间3秒)`
+
+[grade]
+	59
+
+[rarity]
+	3
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[trade]`
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[minimum level]
+	55
+
+[physical attack]
+	40
+
+[attack speed]
+	-80
+
+[need material]
+	10149508	90
+
+[price]
+	94400
+
+[repair price]
+	75520
+
+[value]
+	75520
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	551	510
+
+[equipment magical attack]
+	432	400
+
+[separate attack]
+	328	221
+
+[physical critical hit]
+	5
+
+[skill levelup]
+	`[thief]`	80	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/thief/twinswd/twinswd.img`	137
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	38	0
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		3000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[reduce probability at pvp module]
+		80
+	[duration]
+		7000
+	[active status]
+		`bleeding`	59	1960
+	[active status]
+		`poison`	59	1960
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,110 @@
+#PVF_File
+
+[name]
+	`墨影朱莲战靴`
+
+[basic explain]
+	`    攻击时， 有5%%的几率增加15%%的移动速度和20点火属性强化。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率增加15%%的移动速度和20点火属性强化。 (持续时间10秒， 冷却时间15秒)`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	40
+
+[magical attack]
+	40
+
+[move speed]
+	40
+
+[price]
+	72000
+
+[repair price]
+	57600
+
+[value]
+	57600
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	1764	1638
+
+[icon]
+	`item/new_equipment/04_larmor/shoes/larmor_shoes.img`	43
+
+[field image]
+	`Item/field_equip.img`	9
+
+[equipment type]
+	`[shoes]`	18
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	25
+
+[weight]
+	1400
+
+[item group name]
+	`la shoes`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		15000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[duration]
+		10000
+	[stat by condition]
+		`move speed`
+		`+`	150
+	[stat by condition]
+		`fire attack`
+		`+`	20
+[/then]
+
+[possible kiri protect]

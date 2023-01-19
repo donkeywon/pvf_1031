@@ -1,0 +1,176 @@
+#PVF_File
+
+[name]
+	`染血之魂`
+
+[basic explain]
+	`    攻击时， 有5%%的几率使敌人进入出血状态。 (冷却时间0.5秒)
+    攻击时， 有2%%的几率使敌人进入眩晕状态。 (冷却时间4秒)`
+
+[detail explain]
+	`    攻击时， 有5%%的几率使敌人进入出血状态3秒； 出血状态下的敌人， 每0.5秒受到500点伤害。 (若敌人高于Lv39， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间0.5秒)
+    攻击时， 有2%%的几率使敌人进入眩晕状态。 (若敌人高于Lv39， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间4秒)`
+
+[grade]
+	39
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	35
+
+[physical attack]
+	42
+
+[attack speed]
+	-30
+
+[stuck]
+	-1
+
+[price]
+	62400
+
+[repair price]
+	49920
+
+[value]
+	49920
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	418	374
+
+[equipment magical attack]
+	361	323
+
+[separate attack]
+	220	146
+
+[physical critical hit]
+	3
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/club/club.img`	112
+
+[field image]
+	`Item/FieldImage.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	2	8
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	2	8
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`KATANA_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3400
+
+[item group name]
+	`club`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[equipment duration]
+		3000
+	[probability]
+		5
+	[active status]
+		`bleeding`	39	3000
+[/then]
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[equipment duration]
+		2000
+	[probability]
+		2
+	[active status]
+		`stun`	39
+[/then]
+
+[possible kiri protect]

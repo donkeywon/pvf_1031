@@ -1,0 +1,168 @@
+#PVF_File
+
+[name]
+	`血染苍穹之杖`
+
+[basic explain]
+	`暴击伤害 +22%%
+ 
+[暗黑仪式]技能攻击力增加率 +13%%
+[降临 : 暴君巴拉克]MP消耗量 +10%%
+    攻击出血状态下敌人时， 增加10点智力， 效果持续20秒。`
+
+[detail explain]
+	`暴击伤害 +22%% (暴击伤害加成效果取最高值， 且无法叠加)
+ 
+[暗黑仪式]技能攻击力增加率 +13%%
+[降临 : 暴君巴拉克]MP消耗量 +10%%
+    攻击出血状态下敌人时， 增加10点智力， 效果持续20秒。 (冷却时间2秒， 最多重叠5次)
+(解除装备后效果消失)`
+
+[flavor text]
+	`    放弃， 就意味着到此为止了！`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	62
+
+[attack speed]
+	-100
+
+[price]
+	144000
+
+[repair price]
+	115200
+
+[value]
+	115200
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	792	657
+
+[equipment magical attack]
+	1047	936
+
+[separate attack]
+	552	363
+
+[magical critical hit]
+	5
+
+[icon]
+	`item/new_equipment/01_weapon/thief/wand/wand.img`	149
+
+[field image]
+	`Item/field_weapon.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	46	0
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	2300
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[thief]`	37	`[all]`	`[mp]`	0	`%`	10
+	`[thief]`	50	`[all]`	`[level]`	4	`%`	13
+[/skill data up]
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	22
+[/then]
+
+[if]
+	[cooltime]
+		2000
+	[target active status]
+		`bleeding`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		20000
+	[appendage]
+		698
+[/then]
+
+[possible kiri protect]

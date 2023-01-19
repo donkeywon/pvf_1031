@@ -1,0 +1,102 @@
+#PVF_File
+
+[name]
+	`疾风之翡翠手镯`
+
+[basic explain]
+	`    攻击时， 消耗4%%的MP， 可以增加10%%的攻击速度、 10%%的移动速度和15%%的施放速度， 效果持续30秒。 (冷却时间40秒)`
+
+[detail explain]
+	`    攻击时， 消耗4%%的MP， 可以增加10%%的攻击速度、 10%%的移动速度和15%%的施放速度， 效果持续30秒。 (解除装备后效果消失； 冷却时间40秒)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	35
+
+[physical defense]
+	87
+
+[price]
+	89000
+
+[value]
+	71200
+
+[creation rate]
+	250
+
+[equipment magical defense]
+	4608	4368
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	169
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	21
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		40000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		30000
+	[restore]
+		`mp`
+		`%`	-4	0
+	[stat]
+		`attack speed`
+		`+`	100
+	[stat]
+		`move speed`
+		`+`	100
+	[stat]
+		`cast speed`
+		`+`	150
+[/then]
+
+[possible kiri protect]

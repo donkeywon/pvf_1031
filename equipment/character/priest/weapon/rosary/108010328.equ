@@ -1,0 +1,134 @@
+#PVF_File
+
+[name]
+	`无尽智慧念珠`
+
+[basic explain]
+	`攻击速度 +3%%
+    攻击时， 有5%%的几率使自身增加250点智力， 效果持续9秒。 (冷却时间10秒)`
+
+[grade]
+	79
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	75
+
+[magical attack]
+	78
+
+[attack speed]
+	30
+
+[cast speed]
+	50
+
+[price]
+	126400
+
+[repair price]
+	101120
+
+[value]
+	101120
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	679	634
+
+[equipment magical attack]
+	867	810
+
+[separate attack]
+	450	305
+
+[magical critical hit]
+	2
+
+[icon]
+	`item/new_equipment/01_weapon/priest/rosary/rosary.img`	108
+
+[field image]
+	`Item/field_weapon.img`	12
+
+[equipment type]
+	`[weapon]`	22
+
+[animation job]
+	`[priest]`
+
+[variation]
+	23	5
+
+[layer variation]
+	200
+	`rosaryd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`rosaryc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`ROSARY_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2500
+
+[item group name]
+	`rosary`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[equipment duration]
+		9000
+	[stat]
+		`magical attack`
+		`+`	250
+[/then]
+
+[possible kiri protect]

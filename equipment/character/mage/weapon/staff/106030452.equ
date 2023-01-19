@@ -1,0 +1,282 @@
+#PVF_File
+
+[name]
+	`四魂断歌`
+
+[basic explain]
+	`    施放[杰克降临]、 [天雷]、 [湮灭黑洞]、 [极冰盛宴]时， 有50%%的几率发动提升Lv5的该技能。
+    施放[雷光屏障]、 [黑暗禁域]、 [旋炎破]、 [冰晶之浴]时， 有50%%的几率发动提升Lv5的该技能。`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+	`[creator mage]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	58
+
+[attack speed]
+	-100
+
+[price]
+	142400
+
+[repair price]
+	113920
+
+[value]
+	113920
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	811	764
+
+[equipment magical attack]
+	1025	965
+
+[separate attack]
+	510	347
+
+[all elemental attack]
+	13
+
+[icon]
+	`item/new_equipment/01_weapon/mage/staff/staff.img`	141
+
+[field image]
+	`Item/field_weapon.img`	9
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	29	8
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	29	8
+
+[layer variation]
+	2150
+	`at_staffa`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_staffd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	29	8
+
+[layer variation]
+	2790
+	`staffc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`staffd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`STAFF_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	2400
+
+[item group name]
+	`staff`
+
+[cool time]
+	10000
+
+[if]
+	[event use skill]
+		`mage`	59
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`mage`	59	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`mage`	55
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`mage`	55	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`mage`	58
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`mage`	58	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`mage`	27
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`mage`	27	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`at mage`	29
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`at mage`	29	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`at mage`	24
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`at mage`	24	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`at mage`	11
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`[at mage]`	11	5
+	[/skill levelup]
+[/then]
+
+[if]
+	[event use skill]
+		`at mage`	14
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[skill levelup]
+		`at mage`	14	5
+	[/skill levelup]
+[/then]
+
+[possible kiri protect]

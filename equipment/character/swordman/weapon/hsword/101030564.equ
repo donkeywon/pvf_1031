@@ -1,0 +1,163 @@
+#PVF_File
+
+[name]
+	`百战不败`
+
+[basic explain]
+	`攻击速度 +3%%
+ 
+    攻击时， 有5%%的几率使敌人进入中毒状态。 (冷却时间5秒)`
+
+[detail explain]
+	`攻击速度 +3%%
+ 
+    攻击时， 有5%%的几率使敌人进入中毒状态3秒； 中毒状态下的敌人， 每0.5秒受到600点伤害， 效果持续2秒。 (若敌人高于Lv29， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间5秒)`
+
+[grade]
+	29
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[swordman]`
+	`[demonic swordman]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	25
+
+[physical attack]
+	22
+
+[attack speed]
+	30
+
+[cast speed]
+	-20
+
+[move speed]
+	30
+
+[price]
+	52200
+
+[repair price]
+	41760
+
+[value]
+	41760
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	360	312
+
+[equipment magical attack]
+	270	234
+
+[separate attack]
+	171	112
+
+[physical critical hit]
+	5
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/lswd/lswd.img`	126
+
+[field image]
+	`Item/FieldImage.img`	13
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	0	9
+
+[layer variation]
+	2790
+	`lswdc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`lswdb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	0	9
+
+[layer variation]
+	2790
+	`lswdc`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	650
+	`lswdb`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`STICK_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	4000
+
+[item group name]
+	`lswd`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		5000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[equipment duration]
+		3000
+	[probability]
+		3
+	[active status]
+		`poison`	29	3600
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,176 @@
+#PVF_File
+
+[name]
+	`月沉海雾`
+
+[basic explain]
+	`    攻击时， 有2%%的几率使敌人进入眩晕状态。 (冷却时间4秒)`
+
+[detail explain]
+	`    攻击时， 有2%%的几率使敌人进入眩晕状态2秒。 (若敌人高于Lv49， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间4秒)`
+
+[grade]
+	49
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	45
+
+[physical attack]
+	34
+
+[attack speed]
+	100
+
+[move speed]
+	30
+
+[price]
+	88200
+
+[repair price]
+	70560
+
+[value]
+	70560
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	483	441
+
+[equipment magical attack]
+	437	399
+
+[separate attack]
+	269	180
+
+[skill levelup]
+	`[at fighter]`	82	1
+	`[fighter]`	82	1
+	`[fighter]`	68	1
+	`[at fighter]`	68	1
+	`[fighter]`	58	1
+	`[at fighter]`	58	1
+	`[fighter]`	4	1
+	`[at fighter]`	4	1
+	`[fighter]`	6	1
+	`[at fighter]`	6	1
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/bglove/bglove.img`	105
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	1	12
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	1	12
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`TONFA_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		2
+	[active status]
+		`stun`	49
+[/then]
+
+[possible kiri protect]

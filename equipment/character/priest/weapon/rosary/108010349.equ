@@ -1,0 +1,145 @@
+#PVF_File
+
+[name]
+	`被侵蚀的光耀`
+
+[basic explain]
+	`光属性攻击时， 有5%%的几率使自身增加30点智力， 效果持续20秒。 (冷却时间5秒； 最多重叠3次)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[magical attack]
+	127
+
+[attack speed]
+	-50
+
+[cast speed]
+	50
+
+[need material]
+	10099777	90
+
+[repair price]
+	113920
+
+[value]
+	113920
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	769	724
+
+[equipment magical attack]
+	982	925
+
+[separate attack]
+	510	347
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	40	1
+	`[priest]`	70	2
+	`[priest]`	38	2
+[/skill levelup]
+
+[light attack]
+	15
+
+[icon]
+	`item/new_equipment/01_weapon/priest/rosary/rosary.img`	124
+
+[field image]
+	`Item/field_weapon.img`	12
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	41	0
+
+[layer variation]
+	200
+	`rosaryd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`rosaryc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`ROSARY_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2500
+
+[item group name]
+	`rosary`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[element]
+		`light`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[equipment duration]
+		20000
+	[appendage]
+		780
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]

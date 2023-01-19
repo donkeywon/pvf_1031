@@ -1,0 +1,171 @@
+#PVF_File
+
+[name]
+	`断肠绝伤手镯`
+
+[basic explain]
+	`每增加一个队员自身的力量 +10
+    每400点力量增加2%%的物理暴击率。`
+
+[detail explain]
+	`每增加一个队员自身的力量 +10
+    每400点力量增加2%%的物理暴击率。 (最多增加8%%)`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[part set index]
+	11227
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	10000204	100
+
+[random option]
+	1
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	85
+
+[physical attack]
+	36
+
+[physical defense]
+	90
+
+[stuck]
+	-3
+
+[price]
+	108000
+
+[value]
+	86400
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	4752	4416
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	174
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	21
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		500	1	500
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`physical attack`	400
+		`physical critical hit rate`
+		`+`	2	8
+[/then]
+
+[if]
+	[party count]
+		`=`	1
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	10
+[/then]
+
+[if]
+	[party count]
+		`=`	2
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	10
+[/then]
+
+[if]
+	[party count]
+		`=`	3
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	10
+[/then]
+
+[if]
+	[party count]
+		`=`	4
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	10
+[/then]
+
+[possible kiri protect]

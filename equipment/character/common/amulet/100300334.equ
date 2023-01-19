@@ -1,0 +1,144 @@
+#PVF_File
+
+[name]
+	`成王之志`
+
+[basic explain]
+	`    继承遗王之志。
+    施放[受身蹲伏]时， 会产生冲击波。`
+
+[detail explain]
+	`    继承遗忘之王的意志， 使自身增加100点力量和智力， 以及5%%的物理暴击率和魔法暴击率。
+    施放[受身蹲伏]时， 产生冲击波。`
+
+[flavor text]
+	`    每个人都可能有着敢向权威、 巅峰挑战的热情和勇气。 如果那个人能用自己的力量征服一切， 那么他就会成为那个时代的王。  --鲁特船长`
+
+[grade]
+	90
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	36
+
+[magical defense]
+	90
+
+[price]
+	108000
+
+[value]
+	86400
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	7920	7360
+
+[icon]
+	`Item/new_equipment/08_necklace/necklace.img`	111
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	20
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[swordman]`	254	`[dungeon type]`	`[level]`	4	`+`	100
+	`[fighter]`	254	`[dungeon type]`	`[level]`	4	`+`	100
+	`[gunner]`	254	`[dungeon type]`	`[level]`	4	`+`	100
+	`[mage]`	254	`[dungeon type]`	`[level]`	4	`+`	100
+	`[priest]`	254	`[dungeon type]`	`[level]`	4	`+`	100
+	`[at gunner]`	254	`[dungeon type]`	`[level]`	4	`+`	100
+	`[thief]`	254	`[dungeon type]`	`[level]`	4	`+`	100
+	`[at fighter]`	254	`[dungeon type]`	`[level]`	4	`+`	100
+	`[at mage]`	254	`[dungeon type]`	`[level]`	4	`+`	100
+	`[demonic swordman]`	254	`[dungeon type]`	`[level]`	4	`+`	100
+	`[swordman]`	254	`[dungeon type]`	`[level]`	5	`+`	100
+	`[fighter]`	254	`[dungeon type]`	`[level]`	5	`+`	100
+	`[gunner]`	254	`[dungeon type]`	`[level]`	5	`+`	100
+	`[mage]`	254	`[dungeon type]`	`[level]`	5	`+`	100
+	`[priest]`	254	`[dungeon type]`	`[level]`	5	`+`	100
+	`[at gunner]`	254	`[dungeon type]`	`[level]`	5	`+`	100
+	`[thief]`	254	`[dungeon type]`	`[level]`	5	`+`	100
+	`[at fighter]`	254	`[dungeon type]`	`[level]`	5	`+`	100
+	`[at mage]`	254	`[dungeon type]`	`[level]`	5	`+`	100
+	`[demonic swordman]`	254	`[dungeon type]`	`[level]`	5	`+`	100
+	`[swordman]`	254	`[dungeon type]`	`[level]`	19	`+`	5
+	`[swordman]`	254	`[dungeon type]`	`[level]`	20	`+`	5
+	`[fighter]`	254	`[dungeon type]`	`[level]`	19	`+`	5
+	`[fighter]`	254	`[dungeon type]`	`[level]`	20	`+`	5
+	`[gunner]`	254	`[dungeon type]`	`[level]`	19	`+`	5
+	`[gunner]`	254	`[dungeon type]`	`[level]`	20	`+`	5
+	`[mage]`	254	`[dungeon type]`	`[level]`	19	`+`	5
+	`[mage]`	254	`[dungeon type]`	`[level]`	20	`+`	5
+	`[priest]`	254	`[dungeon type]`	`[level]`	19	`+`	5
+	`[priest]`	254	`[dungeon type]`	`[level]`	20	`+`	5
+	`[at gunner]`	254	`[dungeon type]`	`[level]`	19	`+`	5
+	`[at gunner]`	254	`[dungeon type]`	`[level]`	20	`+`	5
+	`[thief]`	254	`[dungeon type]`	`[level]`	19	`+`	5
+	`[thief]`	254	`[dungeon type]`	`[level]`	20	`+`	5
+	`[at fighter]`	254	`[dungeon type]`	`[level]`	19	`+`	5
+	`[at fighter]`	254	`[dungeon type]`	`[level]`	20	`+`	5
+	`[at mage]`	254	`[dungeon type]`	`[level]`	19	`+`	5
+	`[at mage]`	254	`[dungeon type]`	`[level]`	20	`+`	5
+	`[demonic swordman]`	254	`[dungeon type]`	`[level]`	19	`+`	5
+	`[demonic swordman]`	254	`[dungeon type]`	`[level]`	20	`+`	5
+[/skill data up]
+
+[if]
+	[event use skill]
+		`common`	190
+	[/event use skill]
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[speech on]
+		0	2000
+		`跪下吧！！`
+	[/speech on]
+	[passive object]
+		140100	0	0	0	2	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,135 @@
+#PVF_File
+
+[name]
+	`蛮力战斧`
+
+[basic explain]
+	`    施放[无双击]时， 使自身增加80点力量， 效果持续40秒。`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[usable job]
+	`[priest]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	58
+
+[attack speed]
+	-80
+
+[stuck]
+	-2
+
+[price]
+	160200
+
+[repair price]
+	128160
+
+[value]
+	128160
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	1025	965
+
+[equipment magical attack]
+	726	683
+
+[separate attack]
+	510	347
+
+[skill levelup]
+	`[priest]`	50	2
+	`[priest]`	5	2
+[/skill levelup]
+
+[fire attack]
+	15
+
+[icon]
+	`item/new_equipment/01_weapon/priest/axe/axe.img`	123
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	25
+
+[animation job]
+	`[priest]`
+
+[variation]
+	25	8
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[if]
+	[event use skill]
+		`priest`	88
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		40000
+	[stat]
+		`physical attack`
+		`+`	80
+[/then]
+
+[possible kiri protect]
