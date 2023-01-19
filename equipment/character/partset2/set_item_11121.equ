@@ -1,139 +1,40 @@
 #PVF_File
 
 [set name]
-	`巨龙之魂  套装`
+	`瘟疫之源  套装`
 
 [piece set ability]
-	5	
-	[equipment magical attack]
-		120	120
-	[equipment physical attack]
-		120	120
-	[separate attack]
-		145	145
-	[physical attack]
-		85
-	[physical defense]
-		85
-	[magical attack]
-		85
-	[magical defense]
-		85
-	[all elemental attack]
-		65
+	2	
 	[if]
-		[module]
-			`[dead tower]`
-			`[dungeon]`
-			`[tournament dungeon]`
-			`[war room]`
-			`[blood system]`
-		[/module]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
 		[cooltime]
-			20000
-		[attack success]
-			1
-	[/if]
-	[multiple then]
-		[then]
-			[target]
-				`myself`	-1
-			[probability]
-				5
-			[reduce probability to human armor at pvp module]
-				100
-			[then probability]
-				20.0
-			[passive object]
-				140501	0	0	99	0	0	`布甲`
-			[/passive object]
-		[/then]
-		[then]
-			[target]
-				`myself`	-1
-			[probability]
-				5
-			[reduce probability to human armor at pvp module]
-				100
-			[then probability]
-				20.0
-			[passive object]
-				140505	0	0	99	0	0	`轻甲`
-			[/passive object]
-		[/then]
-		[then]
-			[target]
-				`myself`	-1
-			[probability]
-				5
-			[reduce probability to human armor at pvp module]
-				100
-			[then probability]
-				20.0
-			[passive object]
-				140510	0	0	99	0	0	`皮甲`
-			[/passive object]
-		[/then]
-		[then]
-			[target]
-				`myself`	-1
-			[probability]
-				5
-			[reduce probability to human armor at pvp module]
-				100
-			[then probability]
-				20.0
-			[passive object]
-				140515	0	0	99	0	0	`重甲`
-			[/passive object]
-		[/then]
-		[then]
-			[target]
-				`myself`	-1
-			[probability]
-				5
-			[reduce probability to human armor at pvp module]
-				100
-			[then probability]
-				20.0
-			[passive object]
-				140520	0	0	99	0	0	`板甲`
-			[/passive object]
-		[/then]
-	[/multiple then]
-	[if]
-		[module]
-			`[dead tower]`
-			`[dungeon]`
-			`[tournament dungeon]`
-			`[war room]`
-			`[blood system]`
-		[/module]
-		[attack success]
-			1
-		[cooltime]
-			500
+			10000
 	[/if]
 	[then]
 		[target]
-			`myself`	-1
+			`all enemy`	500
 		[duration]
-			1000
+			10000
 		[appendage]
-			940
+			587
 	[/then]
+	[parameter basic explain]
+		`    生成光环， 使500px范围的所有敌人减少50点异常状态抗性。`
+[/piece set ability]
+
+[piece set ability]
+	3	
+	[all elemental attack]
+		12
 	[if]
-		[module]
-			`[dead tower]`
-			`[dungeon]`
-			`[tournament dungeon]`
-			`[war room]`
-			`[blood system]`
-		[/module]
+		[target active status]
+			`all`
 		[attack success]
 			1
-		[cooltime]
-			500
 	[/if]
 	[then]
 		[target]
@@ -141,15 +42,67 @@
 		[duration]
 			10000
 		[appendage]
-			912
+			572
 	[/then]
 	[parameter basic explain]
-		`    攻击时， 附加40%%的伤害。
-    攻击时， 减少敌人12%%的防御力。
-    攻击时， 有5%%的几率发动随机一种特效。(冷却时间20秒；无法在决斗场中使用)
-    苍天的巨浪
-    世界的风暴
-    末日之光
-    动荡之环
-    颂德之光`
+		`    攻击异常状态的敌人时， 使敌人减少10%%的防御力， 效果持续10秒。 (最多重叠1次)`
+[/piece set ability]
+
+[piece set ability]
+	5	
+	[if]
+		[target active status]
+			`all`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	15
+	[/then]
+	[if]
+		[time]
+			2000	1	2000
+		[stat change]
+			`hp`
+			`>`
+			`%`	0
+	[/if]
+	[then]
+		[target]
+			`all enemy`	300
+		[duration]
+			10000
+		[active status]
+			`burn`	90	100	0	1	5000
+		[active status]
+			`lightning`	90	100
+		[active status]
+			`curse`	90	10	10	10	10
+	[/then]
+	[if]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`skill cool time`
+			`%`	-30
+	[/then]
+	[parameter basic explain]
+		`    所有技能冷却时间 -30%% (相同数值的冷却时间不会叠加)
+    攻击异常状态的敌人时， 附加15%%的伤害。
+    每2秒使300px范围内的所有敌人进入诅咒、 灼伤、 感电状态10秒。
+ - 使敌人进入灼伤状态10秒； 灼伤状态下的敌人， 每0.5秒受到100点伤害。
+ - 使敌人进入感电状态10秒； 每次攻击时附加100点攻击力的伤害。
+ - 使敌人进入诅咒状态10秒； 诅咒状态下的敌人力量、 智力、体力和精神各减少10点。
+(若敌人高于Lv90， 则减少进入该装备诅咒状态的几率； 反之， 则增加几率)`
 [/piece set ability]

@@ -1,0 +1,103 @@
+#PVF_File
+
+[set name]
+	`格拉西亚家族遗物的象征  套装`
+
+[piece set ability]
+	2	
+	[if]
+		[time]
+			60000	1	1000
+		[cooltime]
+			60000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[consume item]
+			3034	1
+		[equipment duration]
+			60000
+		[elemental weapon]
+			`light`
+	[/then]
+	[physical attack]
+		50
+	[magical attack]
+		50
+	[light attack]
+		10
+	[parameter basic explain]
+		`    装备后， 每60秒通过消耗1个白色小晶块对武器赋予光属性， 效果持续60秒。 (装备后立即生效， 且装备解除后效果消失)`
+[/piece set ability]
+
+[piece set ability]
+	3	
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			500
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			10
+		[passive object]
+			140173	0	0	0	99	0	` `
+		[/passive object]
+	[/then]
+	[light attack]
+		12
+	[parameter basic explain]
+		`    攻击时， 有10%%的几率向敌人发动闪电爆炸。 (冷却时间0.5秒)`
+[/piece set ability]
+
+[piece set ability]
+	5	
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			1000
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			10
+		[passive object]
+			140173	0	0	0	99	0	` `
+		[/passive object]
+	[/then]
+	[if]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`light`
+			`%`	6
+	[/then]
+	[if]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`skill cool time`
+			`%`	-30
+	[/then]
+	[parameter basic explain]
+		`    所有技能冷却时间 -30%% (相同数值的冷却时间不会叠加)
+    攻击时， 有10%%的几率向敌人发动闪电爆炸。 (冷却时间1秒)
+    攻击时， 附加6%%的光属性伤害。`
+[/piece set ability]

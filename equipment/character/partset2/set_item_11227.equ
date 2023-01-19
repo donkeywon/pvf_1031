@@ -1,0 +1,111 @@
+#PVF_File
+
+[set name]
+	`断肠绝伤  套装`
+
+[piece set ability]
+	2	
+	[if]
+		[change status]
+			`hp`
+			`>=`
+			`%`	0
+			`end`
+		[cooltime]
+			20000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[consume item]
+			3033	1
+		[equipment duration]
+			15000
+		[appendage]
+			570
+	[/then]
+	[if]
+		[my appendage]
+			570
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase damage]
+			`%`	20
+	[/then]
+	[parameter basic explain]
+		`    装备后， 每20秒通过消耗1个黑色小晶块发动痛哭的悲叹效果， 效果持续15秒。 (装备解除后效果消失)
+    痛苦的悲叹效果下， 增加15%%的伤害。 (装备后立即生效； 伤害加成效果取最高值； 暴击/附加伤害除外)`
+[/piece set ability]
+
+[piece set ability]
+	3	
+	[if]
+		[my appendage]
+			570
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	10
+	[/then]
+	[all elemental attack]
+		15
+	[parameter basic explain]
+		`    痛苦的悲叹效果下， 攻击时附加10%%的伤害。`
+[/piece set ability]
+
+[piece set ability]
+	5	
+	[if]
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[add absolute defense percent]
+			`all`	20
+	[/then]
+	[if]
+		[cooltime]
+			20000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`party`	500
+		[probability]
+			5
+		[equipment duration]
+			15000
+		[buff]
+			`superarmor`
+	[/then]
+	[if]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`skill cool time`
+			`%`	-30
+	[/then]
+	[parameter basic explain]
+		`    所有技能冷却时间 -30%% (相同数值的冷却时间不会叠加)
+    被击时所受伤害 -20%%
+    攻击时， 有5%%的几率对500px范围内的所有队员施放霸体护甲， 效果持续15秒。(冷却时间为20秒， 装备解除时效果消失)`
+[/piece set ability]
