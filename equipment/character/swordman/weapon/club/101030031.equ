@@ -9,7 +9,8 @@
 
 [detail explain]
 	`    每100点力量， 可以使自身额外增加25点力量。 (最多增加500点)
-   HP低于100%%时， 自身增加200点力量； 每减少10%%的HP， 则增加200点力量。 (最多增加800点)`
+   HP低于100%%时， 自身增加200点力量； 每减少10%%的HP， 则增加200点力量。 (最多增加800点)
+   攻击时， 有2%%的几率使敌人进入眩晕状态2秒； 但在决斗场中， 只能持续1秒。 (若敌人高于Lv85， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
 
 [grade]
 	85
@@ -131,6 +132,23 @@
 [cool time]
 	10000
 
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		5
+	[active status]
+		`stun`	85
+[/then]
 [if]
 	[change status in range]
 		`hp`	50	10

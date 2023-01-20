@@ -1,0 +1,43 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/QuakeAreaEarth.ani`
+	[SUB ANI]
+		`../Animation/QuakeAreaStone.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			140102
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			-1
+		[POS]
+			0	0	0
+		[USE MY BASEPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

@@ -4,7 +4,8 @@
 	`绝望之光十字架`
 
 [basic explain]
-	`攻击浮空或倒地的敌人时， 可以使自身增加80点体力， 效果持续30秒。
+	`所有技能冷却时间 -15%%
+	攻击浮空或倒地的敌人时， 可以使自身增加80点体力， 效果持续30秒。
 前冲时， 可以使自身增加5%%的移动速度和10%%的施放速度， 效果持续20秒。`
 
 [grade]
@@ -114,6 +115,22 @@
 [routing priority]
 	`priest`	1
 [/routing priority]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`skill cool time`
+		`%`	-15
+[/then]
 
 [if]
 	[target state]

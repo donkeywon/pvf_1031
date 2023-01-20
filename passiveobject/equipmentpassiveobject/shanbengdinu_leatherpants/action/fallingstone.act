@@ -1,0 +1,128 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/FallingStone.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-300
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			60366
+		[PARTICLE FILENAME]
+			`../Particle/FallingStone.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-25	25
+		[RANDOM]
+			-20	20
+		[RANDOM]
+			250	400
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			60366
+		[PARTICLE FILENAME]
+			`../Particle/FallingStone1.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-25	25
+		[RANDOM]
+			-20	20
+		[RANDOM]
+			250	400
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			60366
+		[PARTICLE FILENAME]
+			`../Particle/FallingStone1.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-25	25
+		[RANDOM]
+			-20	20
+		[RANDOM]
+			300	400
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			60366
+		[PARTICLE FILENAME]
+			`../Particle/FallingStone2.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-25	25
+		[RANDOM]
+			-20	20
+		[RANDOM]
+			250	400
+	[/CREATE PASSIVEOBJECT]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			60366
+		[PARTICLE FILENAME]
+			`../Particle/FallingStone2.ptl`
+		[LEVEL]
+			0
+		[POS]
+		[RANDOM]
+			-25	25
+		[RANDOM]
+			-20	20
+		[RANDOM]
+			300	400
+	[/CREATE PASSIVEOBJECT]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			5
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

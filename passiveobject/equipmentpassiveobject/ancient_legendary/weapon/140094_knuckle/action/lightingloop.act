@@ -1,0 +1,72 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/lightingloop_02.ani`
+	[SUB ANI]
+		`../Animation/lightingloop_bottom.ani`	0	0
+		`../Animation/lightingloop_01.ani`	0	1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8253
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		1	2	2
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			8254
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[ON MOVE COLLISION]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

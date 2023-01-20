@@ -1,0 +1,49 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/skuldy_megaboom_Basic_0.ani`
+	[SOUND]
+		`VERDIR_TRUE_EXP`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	2000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			72138
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		17	17
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

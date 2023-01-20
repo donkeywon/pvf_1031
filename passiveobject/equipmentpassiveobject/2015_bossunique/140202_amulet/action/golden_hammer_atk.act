@@ -1,0 +1,59 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack_11_0.ani`
+	[SUB ANI]
+		`../Animation/Effect/GoldenHammer_01.ani`	0	1
+	[/SUB ANI]
+	[SOUND]
+		`R_GOLD_CLOWN_ATK`	2
+		`R_GOLD_CLOWN_ATK`	6
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET GRABABLE]
+		0
+	[NO DAMAGE MOTION]
+		1
+	[OBJECT SCALE]
+		0.4	0
+	[SET SPEED]
+		[X AXIS]
+			200
+		[Y AXIS]
+			0
+		[Z AXIS]
+			-50
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]

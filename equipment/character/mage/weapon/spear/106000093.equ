@@ -6,16 +6,15 @@
 [basic explain]
 	`攻击速度 +5%%
 对敌人的伤害 +35%%
-[使徒化身]一骑当千攻击力 +30%%
-[狱血之噬]攻击力 +15%%
-[狱血之牙]攻击力 +15%%`
+ 
+    释放[变身贝亚娜]时， 获得天使之力， 使自身增加300点力量和智力。
+    使用复活币时， 获得天使之力， 使自身增加25%%的物理攻击力、 魔法攻击力、 物理防御力、 魔法防御力和20%%的物理、 魔法暴击率。`
 
 [detail explain]
-	`攻击速度 +5%%
-对敌人的伤害 +35%% (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)
-[使徒化身]一骑当千攻击力 +30%%
-[狱血之噬]攻击力 +15%%
-[狱血之牙]攻击力 +15%%`
+	`对敌人的伤害 +35%% (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)
+ 
+    释放[变身贝亚娜]时， 获得天使之力， 使自身增加300点力量和智力。 (效果持续30秒, 冷却时间60秒)
+    使用复活币时， 获得天使之力， 使自身增加25%%的物理攻击力、 魔法攻击力、 物理防御力、 魔法防御力和20%%的物理、 魔法暴击率。 (效果持续20秒)`
 
 [flavor text]
 	`    如何才能获得胜利女神的青睐？`
@@ -167,21 +166,68 @@
 	10000
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
 	[attack success]
 		1
 [/if]
 
 [then]
 	[target]
-		`myself`	-1
-	[equipment duration]
-		5000
+		`enemy`	-1
 	[increase damage]
 		`%`	35
+[/then]
+
+[if]
+	[revive]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[equipment duration]
+		20000
+	[stat]
+		`equipment physical bonus`
+		`%`	25
+	[stat]
+		`equipment magical bonus`
+		`%`	25
+	[stat]
+		`equipment physical defense`
+		`%`	25
+	[stat]
+		`equipment magical defense`
+		`%`	25
+	[stat]
+		`physical critical hit rate`
+		`+`	20
+	[stat]
+		`magical critical hit rate`
+		`+`	20
+[/then]
+
+[if]
+	[use skill]
+		`mage`	83
+	[/use skill]
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[stat]
+		`physical attack`
+		`+`	300
+	[stat]
+		`magical attack`
+		`+`	300
 [/then]
 
 [pvp]

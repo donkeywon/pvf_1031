@@ -1,0 +1,68 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/HPFairy3.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-100
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			70
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[WHICH]
+	[SUMMON MASTER]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			70
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[WHICH]
+	[PLAYER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			200
+		[ZPOS]
+		[<=]
+			70
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[GET TARGET]
+		1
+	[DISTANCE]
+	[LOW]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

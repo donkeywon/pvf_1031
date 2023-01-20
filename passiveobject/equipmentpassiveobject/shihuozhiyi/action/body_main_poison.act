@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/body_main_dummy.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		1	1
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			180
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[poison]
+		100	90	5000	40000
+[/BEHAVIOR]

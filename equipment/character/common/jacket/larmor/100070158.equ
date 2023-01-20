@@ -4,7 +4,8 @@
 	`天御雷罚战甲`
 
 [basic explain]
-	`    攻击时， 有5%%的几率发动雷电之怒攻击400px范围内的所有敌人。 (冷却时间15秒)`
+	`    攻击时， 有5%%的几率发动雷电之怒。 (冷却时间0.5秒)
+    攻击时， 有5%%的几率发动雷电之怒攻击400px范围内的所有敌人。 (冷却时间15秒)`
 
 [flavor text]
 	`啊？ 又追加脚本了！  --苦逼汉化L君`
@@ -101,14 +102,33 @@
 	10000
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
+	[cooltime]
+		500
 	[attack success]
 		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[passive object]
+		12802	0	0	0	9999	0	``
+	[/passive object]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[appendage]
+		249
+[/then]
+
+[if]
 	[cooltime]
 		15000
+	[attack success]
+		1
 [/if]
 
 [then]
@@ -117,7 +137,7 @@
 	[probability]
 		5
 	[passive object]
-		48610	0	0	0	99	0	` `
+		12802	0	0	0	9999	0	``
 	[/passive object]
 [/then]
 

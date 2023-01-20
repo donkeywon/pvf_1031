@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../../../ActionObject/Monster/StormOfMetastasis/DriftCave/GoldCave/Widire/Animation/floor00_0.ani`
+	[SUB ANI]
+		`../../../ActionObject/Monster/StormOfMetastasis/DriftCave/GoldCave/Widire/Animation/floor_LSword00_0_0.ani`	0	1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			48642
+		[/IS INDEX]
+		[ZPOS]
+		[<=]
+			50
+		[DISTANCE]
+		[<=]
+			30
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

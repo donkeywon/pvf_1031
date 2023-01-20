@@ -92,10 +92,6 @@
 	10000
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
 	[time]
 		500	1	500
 	[stat change]
@@ -113,32 +109,25 @@
 [/then]
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
-	[change status]
-		`hp`
-		`>`
-		`%`	0
-		`end`
+	[change status in range]
+		`hp`	100	1
 [/if]
 
 [then]
 	[target]
 		`myself`	-1
-	[stat by condition]
-		`physical attack`
-		`+`	200
-	[stat by condition]
-		`magical attack`
-		`+`	200
-	[stat by condition]
+	[apply status in range]
 		`attack speed`
-		`+`	14
-	[stat by condition]
+		`+`	7	140
+	[apply status in range]
 		`cast speed`
-		`+`	22
+		`+`	11	220
+	[apply status in range]
+		`physical attack`
+		`+`	10	200
+	[apply status in range]
+		`magical attack`
+		`+`	10	200
 [/then]
 
 [pvp]

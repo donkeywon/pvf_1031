@@ -1,0 +1,33 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/90LvClub_Loop01.ani`
+	[SUB ANI]
+		`../animation/90LvClub_Loop02.ani`	0	1
+		`../animation/90LvClub_Loop03.ani`	0	2
+		`../animation/90LvClub_Loop04.ani`	0	3
+		`../animation/90LvClub_Loop05.ani`	0	4
+		`../animation/90LvClub_Loop06.ani`	0	5
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<=]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

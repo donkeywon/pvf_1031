@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Etc_skuldyfire_s_0_0.ani`
+	[SUB ANI]
+		`../Animation/Etc_skuldyfire_s_0_1.ani`	0	-1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			370
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

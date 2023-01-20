@@ -1,0 +1,111 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Magic.ani`
+[/MOTION]
+
+[TRIGGER]
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			100
+		[ZPOS]
+		[<=]
+			40
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`timex`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		1
+	[OFF]
+	[TRIGGER]
+		2
+	[ON]
+	[TRIGGER]
+		3
+	[ON]
+	[SET COLOR]
+		255	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`timex`	
+		[+]
+			200
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[LIMIT]
+		1
+	[IF]
+		`timex`	
+		[+]
+			600
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[LOAD TARGET]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[stun]
+		50	90	2000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]

@@ -1,0 +1,115 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/john_last2_Basic_0.ani`
+	[SUB ANI]
+		`../Animation/john_last2_Basic_6.ani`	0	1
+		`../Animation/john_last2_Basic_2.ani`	0	2
+		`../Animation/john_last2_Basic_3.ani`	0	3
+		`../Animation/john_last2_Basic_4.ani`	0	4
+		`../Animation/john_last2_Basic_5.ani`	0	5
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	500
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	700
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			140186
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	-20
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

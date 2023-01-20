@@ -1,0 +1,104 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/spark_Basic_0_0.ani`
+	[SUB ANI]
+		`../Animation/castingspark_Basic_5.ani`	0	-3
+		`../Animation/castingspark_Basic_4.ani`	0	-2
+		`../Animation/castingspark_Basic_3.ani`	0	-1
+		`../Animation/castingspark_Basic_6.ani`	0	1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			2500
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/light.ptl`	0	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			140282
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	-10
+		[RANDOM]
+			-30	30
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

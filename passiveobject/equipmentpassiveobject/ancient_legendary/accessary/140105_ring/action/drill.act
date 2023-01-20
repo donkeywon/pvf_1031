@@ -1,0 +1,126 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Drill.ani`
+	[SUB ANI]
+		`../Animation/teleportend_normal.ani`	0	-2
+		`../Animation/teleportend_light02.ani`	0	-1
+		`../Animation/Drill_normal.ani`	0	1
+		`../Animation/Drill_dodge.ani`	0	2
+		`../Animation/teleportstart_light01.ani`	0	3
+		`../Animation/teleportstart_light02.ani`	0	4
+		`../Animation/teleportstart_light03.ani`	0	5
+		`../Animation/teleportstart_light04.ani`	0	6
+		`../Animation/teleportstart_star.ani`	0	7
+		`../Animation/teleportend_circle01.ani`	0	8
+		`../Animation/teleportend_circle02.ani`	0	9
+		`../Animation/teleportend_circle03.ani`	0	10
+		`../Animation/teleportend_light01.ani`	0	11
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		3
+	[ON]
+	[SET SPEED]
+		[X AXIS]
+			700
+		[Z AXIS]
+			350
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[>]
+			5
+	[/CHECKUP]
+	[DIRECT DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		5
+	[SET SPEED]
+		[X AXIS]
+			700
+		[Z AXIS]
+			-350
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[FRAME]
+		5	8
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			5
+	[/CHECKUP]
+	[DIRECT DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		9
+	[SET SPEED]
+		[X AXIS]
+			500
+		[Z AXIS]
+			0
+	[/SET SPEED]
+	[TRIGGER]
+		3
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]

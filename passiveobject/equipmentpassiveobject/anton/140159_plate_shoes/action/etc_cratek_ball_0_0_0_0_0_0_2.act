@@ -1,0 +1,52 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Etc_cratek_ball_0_0_0_0_0_0_0_2.ani`
+	[SUB ANI]
+		`../Animation/Etc_cratek_ball_0_0_0_0_0_0_1_1.ani`	0	1
+		`../Animation/Etc_cratek_ball_0_1_0_0_0_0_0_2.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`LIGHT_EFFECT_03`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-100
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			5
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			0
+	[/SET SPEED]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

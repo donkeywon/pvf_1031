@@ -172,10 +172,6 @@
 [/skill data up]
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
 	[use skill]
 		`fighter`	79
 	[/use skill]
@@ -184,17 +180,13 @@
 [then]
 	[target]
 		`myself`	-1
-	[duration]
-		`skill level info`	79	7	-1
+	[equipment duration]
+		30000
 	[appendage]
 		225
 [/then]
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
 	[attack success]
 		1
 	[my appendage]
@@ -206,16 +198,14 @@
 		`enemy`	-1
 	[probability]
 		20
+	[equipment duration]
+		30000
 	[passive object]
-		48601	0	0	0	99	0	` `
+		48092	0	0	0	40	0	``
 	[/passive object]
 [/then]
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
 	[use skill]
 		`at fighter`	79
 	[/use skill]
@@ -224,17 +214,13 @@
 [then]
 	[target]
 		`myself`	-1
-	[duration]
-		`skill level info`	79	7	-1
+	[equipment duration]
+		30000
 	[appendage]
 		225
 [/then]
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
 	[attack success]
 		1
 	[my appendage]
@@ -246,16 +232,14 @@
 		`enemy`	-1
 	[probability]
 		20
+	[equipment duration]
+		30000
 	[passive object]
-		48601	0	0	0	99	0	` `
+		48092	0	0	0	40	0	``
 	[/passive object]
 [/then]
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
 	[attack success]
 		1
 [/if]

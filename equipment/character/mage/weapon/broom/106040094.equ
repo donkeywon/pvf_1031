@@ -181,19 +181,13 @@
 [/skill data up]
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
-	[attack success]
+	[event attack success]
 		1
 [/if]
 
 [then]
 	[target]
-		`myself`	-1
-	[equipment duration]
-		5000
+		`enemy`	-1
 	[increase damage]
 		`%`	22
 [/then]

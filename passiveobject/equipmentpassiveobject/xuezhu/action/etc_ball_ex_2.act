@@ -1,0 +1,48 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Etc_ball_ex_2_0.ani`
+	[SUB ANI]
+		`../Animation/Etc_ball_ex_2_1.ani`	0	-1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-1000
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			5
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			0
+	[/SET SPEED]
+	[SET ACTION]
+	[CUSTOM]
+		3
+	[NOW]
+[/BEHAVIOR]

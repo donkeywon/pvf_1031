@@ -1,0 +1,32 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Ratwave.ani`
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ACTIVE STATUS]
+	[slow]
+		50	90	3000	30	30
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

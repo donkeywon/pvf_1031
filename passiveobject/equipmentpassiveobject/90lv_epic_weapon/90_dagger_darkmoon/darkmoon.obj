@@ -1,0 +1,41 @@
+#PVF_File
+
+[name]
+	`月光剑满月`
+
+[pass type]
+	`[pass all]`
+
+[follow parent]
+	`[parent]`
+
+[basic action]
+	`Action/base.act`
+
+[last action]
+	`Action/last.act`
+
+[etc action]
+	`Action/Etc.act`
+[/etc action]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	30000
+[/object destroy condition]
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[ME]`
+	[homing velocity]
+		100.0	0.0
+	[homing check gap]
+		600
+	[diff rotation]
+		360.0
+	[homing direction]
+		0
+	[sync target move]
+[/homing]

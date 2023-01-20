@@ -1,0 +1,34 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/EarthQuakeRing.ani`
+	[SUB ANI]
+		`../Animation/EarthQuake.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		3	1000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

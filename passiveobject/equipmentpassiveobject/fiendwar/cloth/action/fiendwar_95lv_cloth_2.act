@@ -1,0 +1,105 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Step02_44.ani`
+	[SUB ANI]
+		`../Animation/Step02_43.ani`	0	1
+		`../Animation/Step02_42.ani`	0	2
+		`../Animation/Step02_41.ani`	0	3
+		`../Animation/Step02_40.ani`	0	4
+		`../Animation/Step02_39.ani`	0	5
+		`../Animation/Step02_38.ani`	0	6
+		`../Animation/Step02_37.ani`	0	7
+		`../Animation/Step02_36.ani`	0	8
+		`../Animation/Step02_35.ani`	0	9
+		`../Animation/Step02_34.ani`	0	10
+		`../Animation/Step02_33.ani`	0	11
+		`../Animation/Step02_32.ani`	0	12
+		`../Animation/Step02_31.ani`	0	13
+		`../Animation/Step02_30.ani`	0	14
+		`../Animation/Step02_29.ani`	0	15
+		`../Animation/Step02_28.ani`	0	16
+		`../Animation/Step02_27.ani`	0	17
+		`../Animation/Step02_26.ani`	0	18
+		`../Animation/Step02_25.ani`	0	19
+		`../Animation/Step02_24.ani`	0	20
+		`../Animation/Step02_23.ani`	0	21
+		`../Animation/Step02_22.ani`	0	22
+		`../Animation/Step02_21.ani`	0	23
+		`../Animation/Step02_20.ani`	0	24
+		`../Animation/Step02_19.ani`	0	25
+		`../Animation/Step02_18.ani`	0	26
+		`../Animation/Step02_17.ani`	0	27
+		`../Animation/Step02_16.ani`	0	28
+		`../Animation/Step02_15.ani`	0	29
+		`../Animation/Step02_14.ani`	0	30
+		`../Animation/Step02_13.ani`	0	31
+		`../Animation/Step02_12.ani`	0	32
+		`../Animation/Step02_11.ani`	0	33
+		`../Animation/Step02_10.ani`	0	34
+		`../Animation/Step02_09.ani`	0	35
+		`../Animation/Step02_08.ani`	0	36
+		`../Animation/Step02_07.ani`	0	37
+		`../Animation/Step02_06.ani`	0	38
+		`../Animation/Step02_05.ani`	0	39
+		`../Animation/Step02_04.ani`	0	40
+		`../Animation/Step02_03.ani`	0	41
+		`../Animation/Step02_02.ani`	0	42
+		`../Animation/Step02_01.ani`	0	43
+		`../Animation/Step02_00.ani`	0	44
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[IS DIRECTION RIGHT]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[IS DIRECTION LEFT]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		33	33
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			140503
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			-1
+		[POS]
+			-100	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

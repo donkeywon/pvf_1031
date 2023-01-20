@@ -1,0 +1,61 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Step01_17.ani`
+	[SUB ANI]
+		`../Animation/Step01_16.ani`	0	1
+		`../Animation/Step01_15.ani`	0	2
+		`../Animation/Step01_14.ani`	0	3
+		`../Animation/Step01_13.ani`	0	4
+		`../Animation/Step01_12.ani`	0	5
+		`../Animation/Step01_11.ani`	0	6
+		`../Animation/Step01_10.ani`	0	7
+		`../Animation/Step01_09.ani`	0	8
+		`../Animation/Step01_08.ani`	0	9
+		`../Animation/Step01_07.ani`	0	10
+		`../Animation/Step01_06.ani`	0	11
+		`../Animation/Step01_05.ani`	0	12
+		`../Animation/Step01_04.ani`	0	13
+		`../Animation/Step01_03.ani`	0	14
+		`../Animation/Step01_02.ani`	0	15
+		`../Animation/Step01_01.ani`	0	16
+	[/SUB ANI]
+	[SOUND]
+		`OB_CLOTH_SMOKE`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	2500
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			140502
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			-1
+		[POS]
+			-80	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

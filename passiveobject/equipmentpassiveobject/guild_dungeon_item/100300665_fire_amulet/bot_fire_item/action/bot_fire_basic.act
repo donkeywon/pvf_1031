@@ -1,0 +1,104 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Bot_fire_Basic_0.ani`
+	[SUB ANI]
+		`../Animation/Bot_fire_Basic_2.ani`	0	1
+		`../Animation/Bot_fire_Basic_1.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			74027
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[IF]
+		`time`	
+		[+]
+			15000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			74027
+		[/IS INDEX]
+	[/CHECKUP]
+	[DISTANCE]
+	[<=]
+		150
+	[DO BEHAVIOR]
+	[ME]
+		4
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[CHECK TIME]
+		5000
+	[ON ATTACKSUCCESS]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		0
+	[%]
+[/BEHAVIOR]

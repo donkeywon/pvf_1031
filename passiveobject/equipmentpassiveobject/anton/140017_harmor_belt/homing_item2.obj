@@ -1,0 +1,45 @@
+#PVF_File
+
+[name]
+	`追击用模块`
+
+[piercing power]
+	10000
+
+[basic action]
+	`Action/Homing_item.act`
+
+[etc action]
+	`Action/Etc_Homing_0.act`
+	`Action/Etc_Homing_1.act`
+	`Action/Etc_Homing_2.act`
+[/etc action]
+
+[attack info]
+	`attackinfo/Homing_item.atk`
+
+[etc attack info]
+	``
+	``
+	``
+[/etc attack info]
+
+[homing]
+	[homing use]
+		1
+	[homing follow]
+		`[CHARACTER]`	0
+	[homing velocity]
+		1700.0	170.0
+	[homing check gap]
+		300
+	[diff rotation]
+		360.0
+	[homing time]
+		100
+[/homing]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[time limite]`	1000
+[/object destroy condition]

@@ -4,11 +4,8 @@
 	`刀锋女王的铁血项链`
 
 [basic explain]
-	`装备后， 每20秒会使自身进入出血状态。
-攻击伤害 +20%%`
-
-[detail explain]
-	`每20秒使自身进入出血状态20秒； 出血状态下， 每0.5秒受到20点伤害。 (装备1秒后生效)
+	`    每20秒使自身进入出血状态20秒； 出血状态下， 每0.5秒受到20点伤害。 (装备10秒后生效)
+ 
 攻击伤害 +20%% (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)`
 
 [flavor text]
@@ -40,16 +37,19 @@
 	93
 
 [MP regen speed]
-	1
+	10
+
+[repair price]
+	101920
 
 [price]
-	85000000
+	127400
 
 [value]
-	8500000
+	101920
 
 [creation rate]
-	125
+	200
 
 [equipment magical defense]
 	8160	7440
@@ -73,7 +73,7 @@
 	`[amulet]`	21
 
 [move wav]
-	`BRACELET_TOUCH`
+	`NECKLACE_TOUCH`
 
 [weight]
 	400
@@ -85,12 +85,8 @@
 	10000
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
 	[time]
-		2000	1	1000
+		20000	1	10000
 	[cooltime]
 		20000
 [/if]
@@ -98,37 +94,23 @@
 [then]
 	[target]
 		`myself`	-1
-	[equipment duration]
+	[duration]
 		20000
 	[active status]
-		`bleeding`	120	100
+		`bleeding`	91	1600
 [/then]
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
 	[attack success]
 		1
 [/if]
 
 [then]
 	[target]
-		`myself`	-1
-	[equipment duration]
-		5000
+		`enemy`	-1
 	[increase damage]
 		`%`	20
 [/then]
 
-[pvp]
-	[attack speed]
-		57
-	[cast speed]
-		108
-	[hit recovery]
-		112
-[/pvp]
 
 [possible kiri protect]

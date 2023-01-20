@@ -1,0 +1,45 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/meteor2/larmor_Fall_09.ani`
+	[SUB ANI]
+	[/SUB ANI]
+	[SOUND]
+		`R_OB_LARMOR_FALL`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	250
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			140509
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			-1
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

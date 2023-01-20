@@ -1,0 +1,59 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/crow1_item.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-1100
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			10
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-30
+		[USE MY DIRECTION]
+	[/SET SPEED]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			9031
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]

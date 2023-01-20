@@ -1,0 +1,93 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../../../ActionObject/Monster/StormOfMetastasis/DriftCave/GoldCave/Widire/Animation/floor02.ani`
+	[SUB ANI]
+		`../../../ActionObject/Monster/StormOfMetastasis/DriftCave/GoldCave/Widire/Animation/floor02_effect05.ani`	0	1
+		`../../../ActionObject/Monster/StormOfMetastasis/DriftCave/GoldCave/Widire/Animation/floor02_Lsword01.ani`	0	2
+		`../../../ActionObject/Monster/StormOfMetastasis/DriftCave/GoldCave/Widire/Animation/floor02_effect02.ani`	0	3
+		`../../../ActionObject/Monster/StormOfMetastasis/DriftCave/GoldCave/Widire/Animation/floor02_Lsword00.ani`	0	4
+		`../../../ActionObject/Monster/StormOfMetastasis/DriftCave/GoldCave/Widire/Animation/floor02_effect01.ani`	0	5
+		`../../../ActionObject/Monster/StormOfMetastasis/DriftCave/GoldCave/Widire/Animation/floor02_effect03.ani`	0	6
+		`../../../ActionObject/Monster/StormOfMetastasis/DriftCave/GoldCave/Widire/Animation/floor02_effect00.ani`	0	7
+		`../../../ActionObject/Monster/StormOfMetastasis/DriftCave/GoldCave/Widire/Animation/floor02_effect04.ani`	0	8
+		`../../../ActionObject/Monster/StormOfMetastasis/DriftCave/GoldCave/Widire/Animation/floor02_effect06.ani`	0	9
+		`../../../ActionObject/Monster/StormOfMetastasis/DriftCave/GoldCave/Widire/Animation/floor02_effect07.ani`	0	10
+		`../../../ActionObject/Monster/StormOfMetastasis/DriftCave/GoldCave/Widire/Animation/floor02_effect08.ani`	0	11
+		`../../../ActionObject/Monster/StormOfMetastasis/DriftCave/GoldCave/Widire/Animation/floor02_effect09.ani`	0	12
+		`../../../ActionObject/Monster/StormOfMetastasis/DriftCave/GoldCave/Widire/Animation/floor02_effect10.ani`	0	13
+		`../../../ActionObject/Monster/StormOfMetastasis/DriftCave/GoldCave/Widire/Animation/floor02_effect11.ani`	0	14
+		`../../../ActionObject/Monster/StormOfMetastasis/DriftCave/GoldCave/Widire/Animation/floor02_effect12.ani`	0	15
+		`../../../ActionObject/Monster/StormOfMetastasis/DriftCave/GoldCave/Widire/Animation/floor02_effect13.ani`	0	16
+		`../../../ActionObject/Monster/StormOfMetastasis/DriftCave/GoldCave/Widire/Animation/floor02_effect14.ani`	0	17
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+	[CHANGE ATTACKINFO]
+		`../AttackInfo/floor_AirSword1.atk`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		[TIME VALUE]
+			50	50	0
+		[RGBA]
+			0	0	0	100
+		[LAYER]
+		[DEFAULT]
+	[/FLASH SCREEN]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		[TIME VALUE]
+			0	50	50
+		[RGBA]
+			255	255	255	150
+		[LAYER]
+		[DEFAULT]
+	[/FLASH SCREEN]
+	[SHAKING]
+		2	500
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CHANGE LAYER]
+		`[normal]`
+[/BEHAVIOR]

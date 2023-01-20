@@ -122,12 +122,12 @@
 	10000
 
 [skill data up]
-	`[priest]`	76	`[dungeon type]`	`[static]`	4	`%`	25
-	`[priest]`	33	`[dungeon type]`	`[static]`	2	`%`	25
-	`[priest]`	57	`[dungeon type]`	`[level]`	0	`%`	25
-	`[priest]`	75	`[dungeon type]`	`[level]`	0	`%`	30
-	`[priest]`	75	`[dungeon type]`	`[level]`	1	`%`	30
-	`[priest]`	75	`[dungeon type]`	`[level]`	2	`%`	30
+	`[priest]`	76	`[all]`	`[static]`	4	`%`	25
+	`[priest]`	33	`[all]`	`[static]`	2	`%`	25
+	`[priest]`	57	`[all]`	`[level]`	0	`%`	25
+	`[priest]`	75	`[all]`	`[level]`	0	`%`	30
+	`[priest]`	75	`[all]`	`[level]`	1	`%`	30
+	`[priest]`	75	`[all]`	`[level]`	2	`%`	30
 [/skill data up]
 
 [skill data up]
@@ -135,10 +135,6 @@
 [/skill data up]
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
 	[event use skill]
 		`priest`	75
 [/if]
@@ -153,10 +149,6 @@
 [/then]
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
 	[event use skill]
 		`priest`	76
 [/if]
@@ -171,10 +163,6 @@
 [/then]
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
 	[event use skill]
 		`priest`	33
 [/if]
@@ -189,10 +177,6 @@
 [/then]
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
 	[event use skill]
 		`priest`	57
 [/if]

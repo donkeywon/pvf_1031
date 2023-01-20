@@ -3,6 +3,9 @@
 [name]
 	`逝冰之舞项坠`
 
+[basic explain]
+	`    攻击时， 有20%%的几率附加50000点冰属性伤害。`
+
 [grade]
 	89
 
@@ -66,6 +69,20 @@
 
 [magical attack]
 	35
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		20
+	[add absolute damage]
+		`water`
+		`+`	50000
+[/then]
 
 [icon mark]
 	`Item/IconMark.img`	66

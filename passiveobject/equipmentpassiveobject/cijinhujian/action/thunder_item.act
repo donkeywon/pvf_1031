@@ -1,0 +1,65 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Thunder.ani`
+	[SUB ANI]
+		`../animation/Thunder_Normal.ani`	0	-2
+		`../animation/Thunder_Dodge.ani`	0	-1
+		`../animation/Thunder_trail_normal.ani`	0	1
+		`../animation/Thunder_trail_dodge.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`THUNDERC_LIGHTNING`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	250
+	[PARTICLE]
+		`../particle/Thunder.ptl`	0	0	0
+	[PARTICLE]
+		`../particle/Blizzard_ex2.ptl`	0	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		10000	
+		[attack speed]
+		[+]
+			-200.0
+		[move speed]
+		[+]
+			-200.0
+	[/APPENDAGE]
+[/BEHAVIOR]

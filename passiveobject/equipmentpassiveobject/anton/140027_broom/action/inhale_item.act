@@ -1,0 +1,98 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack_8_0.ani`
+	[SUB ANI]
+		`../animation/dust2.ani`	0	-1
+		`../Animation/Nedle_sub_hold_Basic_7.ani`	0	1
+		`../Animation/Attack_8_2.ani`	0	2
+		`../animation/dust3.ani`	0	3
+		`../Animation/Nedle_sub_hold_Basic_2.ani`	0	4
+		`../Animation/Nedle_sub_hold_Basic_3.ani`	0	5
+		`../Animation/Nedle_sub_hold_Basic_4.ani`	0	6
+		`../Animation/Nedle_sub_hold_Basic_5.ani`	0	7
+		`../Animation/Attack_8_3.ani`	0	8
+		`../Animation/Nedle_sub_hold_Basic_6.ani`	0	9
+		`../Animation/Nedle_sub_hold_Basic_1.ani`	0	10
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`timex`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		0
+	[OFF]
+	[TRIGGER]
+		1
+	[ON]
+	[TRIGGER]
+		5
+	[ON]
+	[TRIGGER]
+		6
+	[ON]
+	[TRIGGER]
+		7
+	[ON]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`timex`	
+		[+]
+			10000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		2
+	[FRAME]
+		1	1
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PULL APPENDAGE]
+		6.7	6.7	20000
+[/BEHAVIOR]

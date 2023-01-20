@@ -1,0 +1,114 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/borodin_weapon.ani`
+	[SUB ANI]
+		`../Animation/space_move_me_eff.ani`	0	-5
+		`../Animation/space_move_me_eff1.ani`	0	-4
+		`../Animation/space_move_me.ani`	0	-3
+		`../Animation/EarthQuake.ani`	0	-2
+		`../Animation/EarthQuake_eff.ani`	0	-1
+		`../Animation/borodin0.ani`	0	1
+		`../Animation/borodin5.ani`	0	2
+		`../Animation/borodin2.ani`	0	3
+		`../Animation/borodin4.ani`	0	4
+		`../Animation/borodin.ani`	0	5
+		`../Animation/borodin3.ani`	0	6
+		`../Animation/borodin1.ani`	0	7
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	600
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		15	15
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	1000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		13	13
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`放肆！`	0	0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`胆敢`	0	0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SAY SPEECH]
+		`忤逆我！`	0	0
+[/BEHAVIOR]

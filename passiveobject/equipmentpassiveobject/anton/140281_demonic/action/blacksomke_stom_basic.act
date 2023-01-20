@@ -1,0 +1,140 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/blacksomke_Stom_Basic_0.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`time`	
+		[+]
+			3000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			50
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../particle/light.ptl`	0	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]

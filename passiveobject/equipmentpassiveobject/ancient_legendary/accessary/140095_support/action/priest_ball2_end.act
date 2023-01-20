@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Void2_end_lineardodge.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			8258
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SEND DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

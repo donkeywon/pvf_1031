@@ -1,0 +1,45 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Etc_sury_attack1_2_0.ani`
+	[SUB ANI]
+		`../Animation/Etc_sury_attack1_2_1.ani`	0	1
+		`../Animation/Etc_sury_attack1_0_8.ani`	0	2
+		`../Animation/Etc_sury_attack1_0_5.ani`	0	3
+		`../Animation/Etc_sury_attack1_0_7.ani`	0	4
+		`../Animation/Etc_sury_attack1_0_2.ani`	0	5
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	500
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		3
+	[NOW]
+[/BEHAVIOR]

@@ -1,0 +1,84 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Tomb_normal.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-600
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-1200
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			5
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	500
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			60371
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			70
+		[POS]
+			0	0	0
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+	[SET FRAME]
+		9
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

@@ -1,0 +1,60 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/TidalWave.ani`
+	[SUB ANI]
+		`../Animation/TidalWave2.ani`	0	-2
+	[/SUB ANI]
+	[SOUND]
+		`KONG_WAVE`	0
+		`KONG_WAVE`	6
+		`KONG_WAVE`	11
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	1000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			49005
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			300	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		16	16
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

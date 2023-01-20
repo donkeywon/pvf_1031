@@ -97,8 +97,6 @@
 [then]
 	[target]
 		`party`	500
-	[probability]
-		100
 	[restore]
 		`hp`
 		`%`	2	0
@@ -114,12 +112,17 @@
 [then]
 	[target]
 		`party`	500
-	[probability]
-		100
 	[equipment duration]
 		10000
-	[active status]
-		`haste`	81	10	10
+	[stat]
+		`move speed`
+		`+`	100
+	[stat]
+		`attack speed`
+		`+`	100
+	[stat]
+		`cast speed`
+		`+`	100
 [/then]
 
 [possible kiri protect]

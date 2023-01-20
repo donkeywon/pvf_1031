@@ -1,0 +1,28 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/WaterMark.ani`
+	[SUB ANI]
+		`../Animation/WaterMark2.ani`	0	-10
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			50
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

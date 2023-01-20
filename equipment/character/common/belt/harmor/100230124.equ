@@ -118,10 +118,6 @@
 [/then]
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
 	[change status]
 		`hp`
 		`>`
@@ -132,22 +128,24 @@
 [then]
 	[target]
 		`myself`	-1
-	[stat by condition]
-		`equipment physical attack`
-		`+`	100
-	[stat by condition]
+	[stat change by stat]
+		`myself`	-1
+		`hp max`	4000
 		`equipment magical attack`
-		`+`	100
-	[stat by condition]
+		`+`	10	100
+	[stat change by stat]
+		`myself`	-1
+		`hp max`	4000
+		`equipment physical attack`
+		`+`	10	100
+	[stat change by stat]
+		`myself`	-1
+		`hp max`	4000
 		`separate attack`
-		`+`	100
+		`+`	10	100
 [/then]
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
 	[change status]
 		`hp`
 		`>`

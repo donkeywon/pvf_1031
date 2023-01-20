@@ -5,6 +5,7 @@
 
 [basic explain]
 	`[强袭流星打]攻击力 +40%%
+	用[强袭流星打]杀死敌人时， 有20%的几率使该技能的冷却时间减少10%%。
 [风暴之拳]攻击力 +40%%
     施放[强袭流星打]和[风暴之拳]时， 附加10%%的伤害， 效果持续120秒。 (最多重叠1次； 解除装备后效果消失)`
 
@@ -169,6 +170,26 @@
 	`[mage]`	68	`[all]`	`[level]`	0	`%`	40
 	`[mage]`	68	`[all]`	`[level]`	1	`%`	40
 [/skill data up]
+
+[if]
+	[skill]
+		`mage`	68
+	[/skill]
+	[attack success]
+		1
+	[target death]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		20
+	[skill cooltime reset]
+		68
+		`%`	-10
+[/then]
 
 [if]
 	[event use skill]

@@ -1,0 +1,62 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Sout.ani`
+	[SUB ANI]
+		`../Animation/Sout_eff.ani`	0	0
+		`../Animation/shield1.ani`	0	0
+		`../Animation/shield2.ani`	0	0
+	[/SUB ANI]
+	[SOUND]
+		`FLU_WAVE_GET`	1
+		`FLU_SKILL_03`	2
+		`FLU_WAVE_SHOT`	3
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		4	1000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			140108
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

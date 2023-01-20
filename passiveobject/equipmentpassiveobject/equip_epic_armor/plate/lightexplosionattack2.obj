@@ -1,0 +1,45 @@
+#PVF_File
+
+[floating height]
+	1
+
+[layer]
+	`[normal]`
+
+[pass type]
+	`[pass all]`
+
+[piercing power]
+	1000
+
+[basic motion]
+	`../../../Common/Animation/LightExplosion.ani`
+
+[attack info]
+	`AttackInfo/LightExplosionAttack2.atk`
+
+[add particles]
+	[particle]
+		[file]
+			`../../../Common/Particle/LightExplosionParticle1.ptl`
+	[/particle]
+	[particle]
+		[file]
+			`../../../Common/Particle/LightExplosionParticle2.ptl`
+	[/particle]
+	[particle]
+		[file]
+			`../../../Common/Particle/LightExplosionParticle3.ptl`
+	[/particle]
+	[particle]
+		[file]
+			`../../../Common/Particle/LightExplosionParticle4.ptl`
+	[/particle]
+[/add particles]
+
+[object destroy condition]
+	`[destroy condition]`
+	`[on end of animation]`
+	`[destroy action]`
+	`[only destroy]`
+[/object destroy condition]

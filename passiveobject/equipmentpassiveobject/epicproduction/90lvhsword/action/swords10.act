@@ -1,0 +1,44 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Drop10.ani`
+	[SUB ANI]
+		`../animation/Swords6.ani`	0	-1
+		`../animation/Crack10.ani`	0	-1
+		`../animation/Dust10.ani`	0	-1
+		`../animation/Dash10.ani`	0	-1
+		`../animation/Shock10.ani`	0	-1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	400
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		4
+	[NOW]
+[/BEHAVIOR]

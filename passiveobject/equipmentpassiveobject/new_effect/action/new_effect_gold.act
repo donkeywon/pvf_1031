@@ -1,0 +1,45 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/new_effect_gold.ani`
+	[SUB ANI]
+	[/SUB ANI]
+	[SOUND]
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		8
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[HP]
+		[<=]
+			1
+		[%]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

@@ -1,0 +1,37 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../../../ActionObject/Monster/StormOfMetastasis/Meltdown/MushroomGarden/Animation/Etc_siato_bomb_2_0.ani`
+	[SUB ANI]
+		`../../../ActionObject/Monster/StormOfMetastasis/Meltdown/MushroomGarden/Animation/Etc_siato_bomb_2_1.ani`	0	0
+		`../../../ActionObject/Monster/StormOfMetastasis/Meltdown/MushroomGarden/Animation/Etc_siato_bomb_2_2.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+	[CHANGE ATTACKINFO]
+		`../AttackInfo/Etc_siato_bomb_2.atk`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

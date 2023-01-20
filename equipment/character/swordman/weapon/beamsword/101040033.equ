@@ -11,7 +11,7 @@
 	`攻击速度 +10%%
     施放[破极兵刃]时， Buff持续时间内使自身被痛苦的女王附身。
 痛苦女王附身效果 (最多重叠1次)
-- 增加20%%的攻击速度和移动速度。
+- 可以增加20%%的攻击速度、 20%%的移动速度和15%%的物理攻击力。
 - 攻击时， 有5%%的几率施放女王的悲鸣。
 (解除装备后所有效果消失)`
 
@@ -178,17 +178,17 @@
 	`[dark element]`
 
 [if]
-	[character]
-		`swordman`	-1	-1
-	[event use skill]
+	[use skill]
 		`swordman`	38
+	[cooltime]
+		40000
 [/if]
 
 [then]
 	[target]
 		`myself`	-1
 	[equipment duration]
-		`skill level info`	38	0	-1
+		40000
 	[appendage]
 		803
 [/then]

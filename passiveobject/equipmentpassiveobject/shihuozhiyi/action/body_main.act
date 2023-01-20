@@ -1,0 +1,75 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/body_main.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			35
+		[ZPOS]
+		[<=]
+			20
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[PLAYER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			35
+		[ZPOS]
+		[<=]
+			20
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		4
+	[%]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

@@ -135,10 +135,11 @@
 	`[fire element]`
 
 [if]
+	[skill]
+		`gunner`	78
+	[/skill]
 	[attack success]
 		1
-	[my attack state]
-		`attack`
 [/if]
 
 [then]
@@ -146,7 +147,66 @@
 		`enemy`	-1
 	[add absolute damage]
 		`fire`
-		`%`	7
+		`%`	30
 [/then]
+
+[if]
+	[skill]
+		`gunner`	78
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[probability]
+		50
+	[target]
+		`enemy`	-1
+	[duration]
+		4000
+	[active status]
+		`burn`	85	4000	0	0	10000
+[/then]
+
+[if]
+	[skill]
+		`at gunner`	78
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`fire`
+		`%`	30
+[/then]
+
+[if]
+	[skill]
+		`at gunner`	78
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[probability]
+		50
+	[target]
+		`enemy`	-1
+	[duration]
+		4000
+	[active status]
+		`burn`	85	4000	1	0	3000
+[/then]
+
+[skill data up]
+	`[gunner]`	169	`[dungeon type]`	`[static]`	1	`+`	10
+	`[at gunner]`	169	`[dungeon type]`	`[static]`	1	`+`	10
+[/skill data up]
 
 [possible kiri protect]

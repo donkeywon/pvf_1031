@@ -12,7 +12,7 @@
 [冰龙旋舞]水柱数量 +2
 [冰龙旋舞]爆炸攻击力 +30%%
 [冰龙旋舞]冷却时间 -10%%
-技能攻击力 +10%%`
+所有攻击力 +20%%`
 
 [flavor text]
 	`    精灵王， 我饿了！
@@ -75,7 +75,13 @@
 	589	382
 
 [skill levelup]
+	`[at mage]`	10	2
+	`[at mage]`	12	2
+	`[at mage]`	13	3
+	`[at mage]`	31	3
+	`[at mage]`	50	3
 	`[mage]`	47	3
+	`[mage]`	116	3
 	`[mage]`	76	2
 	`[mage]`	77	2
 	`[mage]`	78	2
@@ -219,10 +225,6 @@
 [/all skill item container]
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
 	[change status]
 		`hp`
 		`>`
@@ -233,10 +235,15 @@
 [then]
 	[target]
 		`myself`	-1
-	[equipment duration]
-		0
-	[appendage]
-		11250
+	[stat by condition]
+		`magical attack bonus`
+		`%`	8
+	[stat by condition]
+		`physical attack bonus`
+		`%`	8
+	[stat by condition]
+		`separate attack`
+		`%`	8
 [/then]
 
 [pvp]

@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Etc_ice_wave_0_0.ani`
+	[SUB ANI]
+		`../Animation/Etc_ice_wave_0_1.ani`	0	0
+		`../Animation/Etc_ice_wave_0_2.ani`	0	0
+		`../Animation/Etc_ice_wave_0_3.ani`	0	0
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS TARGETACTIVESTATUS]
+			1
+		[/IS TARGETACTIVESTATUS]
+	[/CHECKUP]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		-10
+	[%]
+[/BEHAVIOR]

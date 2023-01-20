@@ -4,14 +4,26 @@
 	`雪落千寒`
 
 [basic explain]
-	`    装备时， 生成光环使500px范围的所有敌人减少10点冰属性抗性。
-    攻击时， 有5%%的几率吸收寒冰碎片并生成Buff， 效果持续40秒。`
+	`[冰霜钻孔车]100%%大成功
+[冰霜钻孔车]吸附力 +40%%
+[冰霜钻孔车]持续时间 +8秒
+[冰霜钻孔车]冷却时间 -25秒
+[冰霜钻孔车]攻击力 +100%%
+ 
+    装备时， 生成光环使500px范围的所有敌人减少30点冰属性抗性。
+ 
+    攻击时， 附加20%%的伤害。`
 
 [detail explain]
-	`    装备时， 生成光环使500px范围的所有敌人减少10点冰属性抗性。
-    攻击时， 有5%%的几率吸收寒冰碎片并生成Buff， 效果持续40秒。 (最多重叠1次； 冷却时间3秒； 解除装备后效果消失)
--    攻击时， 附加20%%的伤害。
-- 魔法暴击率 +12%%`
+	`[冰霜钻孔车]100%%大成功
+[冰霜钻孔车]吸附力 +40%%
+[冰霜钻孔车]持续时间 +8秒
+[冰霜钻孔车]冷却时间 -25秒
+[冰霜钻孔车]攻击力 +100%%
+ 
+    装备时， 生成光环使500px范围的所有敌人减少30点冰属性抗性。
+ 
+    攻击时， 附加20%%的伤害。`
 
 [flavor text]
 	`    下雪的时候， 心情也会跟着变得平静。  --某位魔导师`
@@ -21,6 +33,9 @@
 
 [rarity]
 	4
+
+[icon mark]
+	`item/iconmark.img`	68
 
 [usable job]
 	`[mage]`
@@ -34,9 +49,6 @@
 [minimum level]
 	85
 
-[need material]
-	3285	3000
-
 [magical attack]
 	65
 
@@ -46,17 +58,20 @@
 [move speed]
 	30
 
+[need material]
+	3285	5000
+
 [price]
-	85000000
+	182000
 
 [repair price]
 	145600
 
 [value]
-	8500000
+	145600
 
 [creation rate]
-	125
+	200
 
 [equipment physical attack]
 	960	824
@@ -68,9 +83,7 @@
 	589	382
 
 [skill levelup]
-	`[mage]`	86	3
-	`[creator mage]`	134	2
-	`[creator mage]`	136	2
+	`[mage]`	87	3
 [/skill levelup]
 
 [water attack]
@@ -79,11 +92,11 @@
 [water resistance]
 	15
 
-[icon mark]
-	`Item/IconMark.img`	68
+[elemental property]
+	`[water element]`
 
 [icon]
-	`item/new_equipment/01_weapon/mage/broom/broom.img`	95
+	`Item/new_equipment/01_weapon/mage/broom/broom.img`	95
 
 [field image]
 	`Item/field_weapon.img`	10
@@ -110,26 +123,6 @@
 
 [equipment ani script]
 	`equipment/character/mage.lay`
-
-[animation job]
-	`[at mage]`
-
-[variation]
-	39	0
-
-[layer variation]
-	2150
-	`at_brooma`
-
-[equipment ani script]
-	`equipment/character/atmage.lay`
-
-[layer variation]
-	200
-	`at_broomd`
-
-[equipment ani script]
-	`equipment/character/atmage.lay`
 
 [animation job]
 	`[creator mage]`
@@ -169,93 +162,46 @@
 [cool time]
 	10000
 
-[required skill]
-	91
-
-[elemental property]
-	`[water element]`
-
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
-	[attack success]
-		1
-	[cooltime]
-		3000
-[/if]
-
-[then]
-	[target]
-		`myself`	-1
-	[probability]
-		5
-	[equipment duration]
-		40000
-	[appendage]
-		832
-[/then]
-
-[if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
-	[my appendage]
-		832
-	[attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	20
-[/then]
-
-[if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
-	[cooltime]
-		1000
 	[change status]
 		`hp`
 		`>`
 		`%`	0
 		`end`
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`all enemy`	500
+		`all enemy`	300
 	[duration]
 		1000
-	[stat]
-		`water resistance`
-		`+`	-10
+	[appendage]
+		263
 [/then]
 
-[ice appendage]
-	0	400	999999
+[required skill]
+	91
 
-[pvp]
-	[cast speed]
-		40
-	[all elemental attack]
-		39
-	[rigidity]
-		196
-	[MP MAX]
-		2090
-	[equipment physical attack]
-		480	412
-	[equipment magical attack]
-		528	453
-[/pvp]
+[skill data up]
+	`[mage]`	104	`[dungeon type]`	`[cooltime]`	0	`+`	-25000
+	`[mage]`	104	`[dungeon type]`	`[static]`	0	`+`	-300
+	`[mage]`	104	`[dungeon type]`	`[static]`	2	`+`	300
+	`[mage]`	104	`[dungeon type]`	`[level]`	1	`+`	8000
+	`[mage]`	104	`[dungeon type]`	`[level]`	0	`%`	150
+	`[mage]`	104	`[dungeon type]`	`[static]`	17	`%`	150
+	`[mage]`	104	`[dungeon type]`	`[static]`	18	`%`	150
+	`[mage]`	104	`[dungeon type]`	`[static]`	21	`%`	150
+	`[mage]`	104	`[dungeon type]`	`[static]`	22	`%`	150
+	`[mage]`	104	`[dungeon type]`	`[level]`	2	`%`	100
+	`[mage]`	104	`[dungeon type]`	`[level]`	3	`%`	100
+	`[mage]`	104	`[dungeon type]`	`[level]`	4	`%`	100
+	`[mage]`	104	`[dungeon type]`	`[level]`	5	`%`	100
+	`[mage]`	104	`[dungeon type]`	`[level]`	6	`%`	100
+	`[mage]`	169	`[dungeon type]`	`[static]`	1	`+`	20
+	`[at mage]`	169	`[dungeon type]`	`[static]`	1	`+`	20
+	`[creator mage]`	`[dungeon type]`	`[static]`	1	`+`	20
+[/skill data up]
 
 [possible kiri protect]

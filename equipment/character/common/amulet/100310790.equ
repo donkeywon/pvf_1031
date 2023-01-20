@@ -4,12 +4,9 @@
 	`精炼的混沌魔石项链`
 
 [basic explain]
-	`    HP为30%%以下时， 使自身进入混乱状态30秒。
-    攻击时， 增加20%%的伤害。`
-
-[detail explain]
 	`    HP为30%%以下时， 使自身进入混乱状态30秒。 (装备5秒后生效)
-    攻击时， 增加20%%的伤害。 (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)`
+ 
+攻击伤害 +20%% (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)`
 
 [flavor text]
 	`    甲 : 混沌！ 毁伤！ 遗忘！
@@ -21,6 +18,9 @@
 
 [rarity]
 	4
+
+[icon mark]
+	`item/iconmark.img`	68
 
 [part set index]
 	11127
@@ -35,9 +35,6 @@
 [minimum level]
 	85
 
-[need material]
-	3285	3000
-
 [magical attack]
 	37
 
@@ -45,22 +42,22 @@
 	93
 
 [price]
-	85000000
+	127400
+
+[repair price]
+	101920
 
 [value]
-	8500000
+	101920
 
 [creation rate]
-	125
+	200
 
 [equipment magical defense]
 	8160	7440
 
-[icon mark]
-	`Item/IconMark.img`	68
-
 [icon]
-	`item/new_equipment/08_necklace/necklace.img`	109
+	`Item/new_equipment/08_necklace/necklace.img`	109
 
 [field image]
 	`Item/FieldImage.img`	6
@@ -81,33 +78,11 @@
 	10000
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
-	[attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`enemy`	-1
-	[equipment duration]
-		5000
-	[increase damage]
-		`%`	20
-[/then]
-
-[if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
 	[time]
 		500	1	500
 	[stat change]
 		`hp`
-		`=<`
+		`<`
 		`%`	30
 [/if]
 
@@ -120,13 +95,16 @@
 		`confuse`	91	0
 [/then]
 
-[pvp]
-	[attack speed]
-		57
-	[cast speed]
-		108
-	[hit recovery]
-		112
-[/pvp]
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	20
+[/then]
 
 [possible kiri protect]

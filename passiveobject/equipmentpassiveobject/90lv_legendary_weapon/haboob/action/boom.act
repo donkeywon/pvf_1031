@@ -1,0 +1,80 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Boom.ani`
+	[SUB ANI]
+		`../animation/Boom/Haboob_boom_firecircle.ani`	0	1
+		`../animation/Boom/Haboob_boom_firetail.ani`	0	2
+		`../animation/BoomWarning.ani`	0	3
+		`../animation/Boom/Haboob_boom_fireshot.ani`	0	4
+		`../animation/Boom_Dodge.ani`	0	5
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			2000
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			140200
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET HP]
+		0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			-80
+	[/SET SPEED]
+[/BEHAVIOR]

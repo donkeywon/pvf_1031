@@ -1,0 +1,44 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../ani/42.ani`
+	[SUB ANI]
+		`../ani/eye.ani`	0	-1
+		`../ani/45.ani`	0	1
+		`../ani/43.ani`	0	2
+		`../ani/44.ani`	0	3
+		`../ani/47.ani`	0	4
+		`../ani/48.ani`	0	5
+		`../ani/49.ani`	0	6
+		`../ani/46.ani`	0	7
+		`../ani/50.ani`	0	8
+		`../ani/rock.ani`	0	9
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[CHECK TIME]
+		400
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	1000
+[/BEHAVIOR]

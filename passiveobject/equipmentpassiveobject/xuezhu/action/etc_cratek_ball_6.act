@@ -1,0 +1,103 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Etc_cratek_ball_6_0.ani`
+	[SUB ANI]
+		`../Animation/Etc_cratek_ball_6_1.ani`	0	-2
+		`../Animation/Etc_cratek_ball_6_6.ani`	0	-1
+	[/SUB ANI]
+	[SOUND]
+		`KRATECK_BLOOD_FOUNTAIN_LOOP`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ENABLE]
+	[ON]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time_1`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		2
+	[OFF]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[IF]
+		`time_1`	
+		[+]
+			5000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		4
+	[NOW]
+	[DIM]
+		`time_1`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		4	4
+	[IF]
+		`time_1`	
+		[+]
+			5000
+		[>]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET FRAME]
+		0
+[/BEHAVIOR]

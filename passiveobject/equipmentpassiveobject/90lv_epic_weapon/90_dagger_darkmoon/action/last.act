@@ -1,0 +1,33 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/end_DarkMoon_Loop1Moon.ani`
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[SUMMON MASTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			70
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET USE HOMING TARGET]
+		0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[STAND]
+	[NOW]
+[/BEHAVIOR]

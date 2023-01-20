@@ -1,0 +1,45 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/aimingmark_small1_dummy.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[WHICH]
+	[MONSTER]
+	[GET TARGET]
+		3
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		5000	
+		[equipment physical defense]
+		[+]
+			-8000.0
+		[equipment magical defense]
+		[+]
+			-8000.0
+	[/APPENDAGE]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			48709
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	50
+		[FOLLOWING TARGET]
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

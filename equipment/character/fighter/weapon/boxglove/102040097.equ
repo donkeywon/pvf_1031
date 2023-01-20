@@ -157,10 +157,6 @@
 	34
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
 	[cooltime]
 		4000
 	[attack success]
@@ -179,10 +175,6 @@
 [/then]
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
 	[attack condition]
 		`back attack`
 	[attack success]
@@ -192,8 +184,6 @@
 [then]
 	[target]
 		`myself`	-1
-	[equipment duration]
-		5000
 	[target]
 		`enemy`	-1
 	[increase critical damage]
@@ -201,19 +191,13 @@
 [/then]
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
 	[attack success]
 		1
 [/if]
 
 [then]
 	[target]
-		`myself`	-1
-	[equipment duration]
-		5000
+		`enemy`	-1
 	[increase critical damage]
 		`%`	30
 [/then]

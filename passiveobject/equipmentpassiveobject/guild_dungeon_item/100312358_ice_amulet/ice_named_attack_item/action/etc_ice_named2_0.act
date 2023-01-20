@@ -1,0 +1,39 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Etc_ice_named2_0_0.ani`
+	[SUB ANI]
+		`../Animation/Etc_ice_named2_0_1.ani`	0	1
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS TARGETACTIVESTATUS]
+			1
+		[/IS TARGETACTIVESTATUS]
+	[/CHECKUP]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		0
+	[%]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

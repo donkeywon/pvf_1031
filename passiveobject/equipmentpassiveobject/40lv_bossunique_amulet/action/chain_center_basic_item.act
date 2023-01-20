@@ -1,0 +1,55 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../../../ActionObject/Monster/StormOfMetastasis/DriftCave/Dragon_seal/Animation/chain_center_Basic_0.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			-1900
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			10
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			0
+	[/SET SPEED]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			48660
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	3
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

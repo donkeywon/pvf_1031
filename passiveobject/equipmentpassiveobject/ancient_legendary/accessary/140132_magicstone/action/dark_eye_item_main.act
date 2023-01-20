@@ -1,0 +1,42 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Dark_Eye_main.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			20
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[GET TARGET]
+		1
+	[DISTANCE]
+	[LOW]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			140133
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	100
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

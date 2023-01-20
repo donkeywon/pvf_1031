@@ -1,0 +1,38 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/DamageSign00.ani`
+	[SUB ANI]
+		`../Animation/DamageSign01.ani`	0	1
+		`../Animation/DamageSign01.ani`	0	2
+		`../Animation/DamageSign01.ani`	31
+	[/SUB ANI]
+	[SOUND]
+		`MAGTONUM_ENERGY_LOOP`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[ON DESTROY OBJECT]
+	[WHICH]
+	[DESTROY OBJECT]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+		[DISTANCE]
+		[=]
+			0
+		[CHECKED NO]
+		[=]
+			1
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

@@ -4,16 +4,16 @@
 	`月影刃`
 
 [basic explain]
-	`[迅影]攻击点数获得量和获得上限 +100%%
-    施放[夺魂]时， 10秒内增加150点力量。 (最多重叠1次)
-[暗杀之心]背击攻击力增加率 +7%%
-    施放[瞬杀]时， 有30%%的几率不受冷却时间影响。`
+	`[月轮舞]持续时间 +20秒
+[月轮舞]冷却时间 -20%%
+[月轮舞]力量增加值 +20%%
+[月轮舞]Buff暴击伤害 +10%%`
 
 [detail explain]
-	`[迅影]攻击点数获得量和获得上限 +100%%
-    施放[夺魂]时， 10秒内增加150点力量。 (最多重叠1次)
-[暗杀之心]背击攻击力增加率 +7%%
-    施放[瞬杀]时， 有30%%的几率不受冷却时间影响。`
+	`[月轮舞]持续时间 +20秒
+[月轮舞]冷却时间 -20%%
+[月轮舞]力量增加值 +20%%
+[月轮舞]Buff暴击伤害 +10%% (若解除装备， 则取消月轮舞模式)`
 
 [grade]
 	81
@@ -130,52 +130,11 @@
 	10000
 
 [skill data up]
-	`[thief]`	79	`[all]`	`[static]`	0	`%`	100
-	`[thief]`	79	`[all]`	`[static]`	1	`%`	100
-	`[thief]`	117	`[all]`	`[level]`	1	`+`	70
+	`[thief]`	57	`[all]`	`[level]`	0	`+`	20000
+	`[thief]`	57	`[all]`	`[cooltime]`	0	`%`	-20
+	`[thief]`	57	`[all]`	`[level]`	12	`+`	200
+	`[thief]`	57	`[all]`	`[level]`	8	`%`	20
 [/skill data up]
 
-[if]
-	[remove equip]
-		1
-[/if]
-
-[then]
-	[end skill]
-		`thief`	57
-[/then]
-
-[if]
-	[event use skill]
-		`thief`	106
-	[/event use skill]
-[/if]
-
-[then]
-	[target]
-		`myself`	-1
-	[equipment duration]
-		10000
-	[appendage]
-		754
-[/then]
-
-[if]
-	[event use skill]
-		`thief`	113
-	[/event use skill]
-[/if]
-
-[then]
-	[target]
-		`myself`	-1
-	[probability]
-		30
-	[reduce probability at pvp module]
-		90
-	[skill data up]
-		`[thief]`	113	`[all]`	`[cooltime]`	0	`%`	-100
-	[/skill data up]
-[/then]
 
 [possible kiri protect]

@@ -1,0 +1,31 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Bot_fire_air_Basic_0.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			74026
+		[/IS INDEX]
+		[DISTANCE]
+		[<=]
+			150
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

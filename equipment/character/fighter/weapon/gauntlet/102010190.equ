@@ -148,10 +148,6 @@
 	10000
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
 	[attack success]
 		1
 	[cooltime]
@@ -172,10 +168,6 @@
 [/then]
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
 	[casting]
 		1
 	[cooltime]
@@ -193,19 +185,13 @@
 [/then]
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
-	[attack success]
+	[event attack success]
 		1
 [/if]
 
 [then]
 	[target]
-		`myself`	-1
-	[equipment duration]
-		5000
+		`enemy`	-1
 	[increase damage]
 		`%`	20
 [/then]

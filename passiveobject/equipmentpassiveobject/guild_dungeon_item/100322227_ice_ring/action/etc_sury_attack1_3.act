@@ -1,0 +1,55 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Etc_sury_attack1_3_0.ani`
+	[SUB ANI]
+		`../Animation/Etc_sury_attack1_3_2.ani`	0	1
+		`../Animation/Etc_sury_attack1_3_1.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS TARGETACTIVESTATUS]
+			1
+		[/IS TARGETACTIVESTATUS]
+	[/CHECKUP]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		0
+	[%]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]

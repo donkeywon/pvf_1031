@@ -1,0 +1,41 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/FlameStrike1.ani`
+	[SUB ANI]
+		`../Animation/FlameStrike2.ani`	0	1
+		`../Animation/FlameStrike_Sub1.ani`	0	2
+		`../Animation/FlameStrike_Sub2.ani`	0	3
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+	[X AXIS]
+		300
+	[SET SPEED]
+	[Z AXIS]
+		-800
+[/BEHAVIOR]

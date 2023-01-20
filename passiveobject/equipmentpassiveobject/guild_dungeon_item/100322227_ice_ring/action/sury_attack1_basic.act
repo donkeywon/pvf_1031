@@ -1,0 +1,43 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/sury_attack1_Basic_0.ani`
+	[SUB ANI]
+		`../Animation/sury_attack1_Basic_3.ani`	0	1
+		`../Animation/sury_attack1_Basic_4.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+	[RANDOM SELECT]
+		0	1	2
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[NOW]
+[/BEHAVIOR]

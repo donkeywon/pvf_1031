@@ -1,0 +1,49 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../../../ActionObject/Monster/StormOfMetastasis/DriftCave/GoldCave/Widire/animation/angelspear/spear.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			48643
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			150
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		2
+	[NOW]
+[/BEHAVIOR]

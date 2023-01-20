@@ -1,0 +1,55 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/HPFairy_dummy.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[WHICH]
+	[PLAYER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			10
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DELAY DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1	1800
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			140114
+		[PARTICLE FILENAME]
+			`../particle/fairy.ptl`
+		[LEVEL]
+			0
+		[POS]
+			0	0	300
+		[FOLLOWING TARGET]
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		20
+	[%]
+	[RESTORE]
+	[MP]
+		20
+	[%]
+[/BEHAVIOR]

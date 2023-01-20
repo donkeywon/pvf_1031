@@ -1,0 +1,30 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/wall_rockon_0.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON DESTROY OBJECT]
+	[WHICH]
+	[DESTROY OBJECT]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[MONSTER]
+		[/IS OBJECT TYPE]
+		[DISTANCE]
+		[=]
+			0
+		[CHECKED NO]
+		[=]
+			1
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

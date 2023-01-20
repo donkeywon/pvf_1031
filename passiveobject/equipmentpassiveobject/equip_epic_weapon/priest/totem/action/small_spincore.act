@@ -1,0 +1,151 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/BodySmall_Spincore.ani`
+[/MOTION]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			48619
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			1
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DIRECT DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DELAY DO BEHAVIOR]
+	[ME]
+		5	400
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`time`	
+		[+]
+			5500
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PARTICLE]
+		`../Particle/SmallTyphoon4.ptl`	0	0	0
+	[PARTICLE]
+		`../Particle/SmallTyphoon3.ptl`	0	0	0
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[TRIGGER]
+		8
+	[ON]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[PULL APPENDAGE]
+		[SPEED]
+			4.0	2.0
+		[VALIDTIME]
+			9900
+		[USE TARGET]
+			0
+		[OFFSET POS]
+			0	0
+		[MIN DISTANCE]
+			30
+		[KEEP STATE]
+			`none`
+	[/PULL APPENDAGE]
+[/BEHAVIOR]

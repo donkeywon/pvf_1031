@@ -1,0 +1,113 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Step03_31.ani`
+	[SUB ANI]
+		`../Animation/Step03_41.ani`	0	-10
+		`../Animation/Step03_40.ani`	0	-9
+		`../Animation/Step03_39.ani`	0	-8
+		`../Animation/Step03_38.ani`	0	-7
+		`../Animation/Step03_37.ani`	0	-6
+		`../Animation/Step03_36.ani`	0	-5
+		`../Animation/Step03_35.ani`	0	-4
+		`../Animation/Step03_34.ani`	0	-3
+		`../Animation/Step03_33.ani`	0	-2
+		`../Animation/Step03_32.ani`	0	-1
+		`../Animation/Step03_30.ani`	0	1
+		`../Animation/Step03_29.ani`	0	2
+		`../Animation/Step03_28.ani`	0	3
+		`../Animation/Step03_27.ani`	0	4
+		`../Animation/Step03_26.ani`	0	5
+		`../Animation/Step03_25.ani`	0	6
+		`../Animation/Step03_24.ani`	0	7
+		`../Animation/Step03_23.ani`	0	8
+		`../Animation/Step03_22.ani`	0	9
+		`../Animation/Step03_21.ani`	0	10
+		`../Animation/Step03_20.ani`	0	11
+		`../Animation/Step03_19.ani`	0	12
+		`../Animation/Step03_18.ani`	0	13
+		`../Animation/Step03_17.ani`	0	14
+		`../Animation/Step03_16.ani`	0	15
+		`../Animation/Step03_15.ani`	0	16
+		`../Animation/Step03_14.ani`	0	17
+		`../Animation/Step03_13.ani`	0	18
+		`../Animation/Step03_12.ani`	0	19
+		`../Animation/Step03_11.ani`	0	20
+		`../Animation/Step03_10.ani`	0	21
+		`../Animation/Step03_09.ani`	0	22
+		`../Animation/Step03_08.ani`	0	23
+		`../Animation/Step03_07.ani`	0	24
+		`../Animation/Step03_06.ani`	0	25
+		`../Animation/Step03_05.ani`	0	26
+		`../Animation/Step03_04.ani`	0	27
+		`../Animation/Step03_03.ani`	0	28
+		`../Animation/Step03_02.ani`	0	29
+		`../Animation/Step03_01.ani`	0	30
+		`../Animation/Step03_00.ani`	0	31
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		19	19
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			140504
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			-1
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	21
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	1500
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			250
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		16	16
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			100
+	[/SET SPEED]
+[/BEHAVIOR]

@@ -1,0 +1,28 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/damage_effect02.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			15
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]

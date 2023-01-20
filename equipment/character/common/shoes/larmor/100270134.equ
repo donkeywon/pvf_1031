@@ -107,14 +107,33 @@
 	10000
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
+	[cooltime]
+		500
 	[attack success]
 		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[passive object]
+		12803	0	0	0	9999	0	``
+	[/passive object]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[appendage]
+		253
+[/then]
+
+[if]
 	[cooltime]
 		15000
+	[attack success]
+		1
 [/if]
 
 [then]
@@ -123,7 +142,7 @@
 	[probability]
 		5
 	[passive object]
-		48612	0	0	0	99	0	` `
+		12803	0	0	0	9999	0	``
 	[/passive object]
 [/then]
 

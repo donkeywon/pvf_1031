@@ -1,0 +1,40 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Bot_fire_Basic_2_2.ani`
+[/MOTION]
+
+[TRIGGER]
+	[CHECK TIME]
+		5000
+	[ON ATTACKSUCCESS]
+[/TRIGGER]
+
+[BEHAVIOR]
+	[RESTORE]
+	[HP]
+		0
+	[%]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+		[RANDOM]
+			-50	50
+		[Y AXIS]
+		[RANDOM]
+			-20	20
+	[/SET SPEED]
+[/BEHAVIOR]

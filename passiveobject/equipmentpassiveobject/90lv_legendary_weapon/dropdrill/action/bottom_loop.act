@@ -1,0 +1,63 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Crack/Main_CrackNormal_Loop.ani`
+	[SUB ANI]
+		`../Animation/Crack/Main_CrackDodge_Loop.ani`	0	1
+		`../Animation/Crack_bottom_Loop.ani`	0	2
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[SUMMON MASTER]
+	[CHECKED NO]
+	[<=]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[CHECK TIME]
+		500
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			400
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PULL APPENDAGE]
+		10.0	10.0	1000
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]

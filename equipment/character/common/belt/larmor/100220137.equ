@@ -4,7 +4,8 @@
 	`天御凝霜腰带`
 
 [basic explain]
-	`    攻击时， 有5%%的几率生成冰霜爆炸攻击400px范围内的所有敌人。 (冷却时间15秒)`
+	`    攻击时， 有5%%的几率生成冰霜爆炸。 (冷却时间0.5秒)
+    攻击时， 有5%%的几率生成冰霜爆炸攻击400px范围内的所有敌人。 (冷却时间15秒)`
 
 [flavor text]
 	`说好三版， 三版之后又三版，三版之后又三版， 这都改了十几版了……  --苦逼策划案翻译乐乐`
@@ -104,25 +105,45 @@
 	10000
 
 [if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-	[/module]
+	[cooltime]
+		500
 	[attack success]
 		1
-	[cooltime]
-		15000
 [/if]
 
 [then]
+	[target]
+		`enemy`	-1
 	[probability]
 		5
+	[passive object]
+		60075	0	0	0	9999	0	``
+	[/passive object]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[appendage]
+		252
+[/then]
+
+[if]
+	[cooltime]
+		15000
+	[attack success]
+		1
+[/if]
+
+[then]
 	[target]
 		`all enemy`	400
+	[probability]
+		5
 	[passive object]
-		48614	0	0	0	99	0	` `
+		60075	0	0	0	9999	0	``
 	[/passive object]
 [/then]
+
 
 [pvp]
 	[move speed]
