@@ -1,0 +1,96 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/mental/Loop_MagicCircle(A).ani`
+	[SUB ANI]
+		`../Animation/mental/Loop_waterDrop(A).ani      `	0	1
+		`../Animation/mental/Loop_waterDrop(B).ani      `	0	2
+		`../Animation/mental/Loop_waterDrop(C).ani      `	0	3
+		`../Animation/mental/Loop_Floor(A).ani      `	0	4
+		`../Animation/mental/Loop_Floor(B).ani      `	0	5
+		`../Animation/mental/Loop_Floor(C).ani      `	0	6
+		`../Animation/mental/Loop_MagicCircle(B).ani      `	0	7
+		`../Animation/mental/Loop_MagicCircle(C).ani      `	0	8
+		`../Animation/mental/Loop_MagicCircle(start).ani      `	0	9
+		`../Animation/mental/Loop_MagicCircle-line(B).ani      `	0	10
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			18603
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[NO EFFECT]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			58019
+		[LEVEL]
+			0
+		[POS]
+			100	0	0
+		[TEAM]
+			100
+		[MAGIC CIRCLE]
+	[/SUMMON MONSTER]
+	[SUMMON MONSTER]
+		[INDEX]
+			58019
+		[LEVEL]
+			0
+		[POS]
+			-100	0	0
+		[TEAM]
+			100
+		[MAGIC CIRCLE]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		15	15
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CENTER MSG]
+		`罗特斯施展了精神支配， 出现了幻影。`	3000
+[/BEHAVIOR]

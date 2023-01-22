@@ -1,0 +1,82 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Rotoers_front_start_Lotus_6_body.ani`
+	[SUB ANI]
+		`../Animation/Rotoers_front_start_Lotus_7_arm2.ani`	0	-1
+		`../Animation/Rotoers_front_start_Lotus_4_inside.ani`	0	1
+		`../Animation/Rotoers_front_start_Lotus_3_head.ani`	0	2
+		`../Animation/Rotoers_front_start_Lotus_2_jaw.ani`	0	3
+		`../Animation/Rotoers_front_start_Lotus_1_eye.ani`	0	4
+		`../Animation/Rotoers_front_start_Lotus_5_arm1.ani`	0	5
+	[/SUB ANI]
+	[SOUND]
+		`R_BOSS_LOTUS_DMG`	30
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[>=]
+			350
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			150
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		60	60
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		61	61
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]

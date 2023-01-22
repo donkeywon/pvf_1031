@@ -1,0 +1,47 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/mental/End_End-Dust(C)_0.ani`
+	[SUB ANI]
+		`../Animation/mental/End_End-dust(B)_0.ani`	0	1
+		`../Animation/mental/End_End-dust(A)_0.ani`	0	2
+		`../Animation/mental/End_End-dust(D)_0.ani`	0	3
+		`../Animation/mental/End_Eye(start)_0.ani`	0	4
+		`../Animation/mental/End_Floor(B)_0.ani`	0	5
+		`../Animation/mental/End_Floor(C)_0.ani`	0	6
+		`../Animation/mental/End_Light(A)_0.ani`	0	7
+		`../Animation/mental/End_Light(B)_0.ani`	0	8
+		`../Animation/mental/End_Light(E)_0.ani`	0	9
+		`../Animation/mental/End_Tentacle(end)_0.ani`	0	10
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			58019
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

@@ -1,0 +1,31 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Roters_Last_0_0.ani`
+	[SUB ANI]
+		`../Animation/Roters_Last_3_0.ani`	0	-1
+		`../Animation/Roters_Last_2_0.ani`	0	1
+		`../Animation/Roters_Last_1_0.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`BOSS_LOTUS_TENTACLE_CUT`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			18570
+		[/IS INDEX]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

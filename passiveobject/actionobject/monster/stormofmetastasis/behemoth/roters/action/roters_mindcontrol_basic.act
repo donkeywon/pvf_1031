@@ -1,0 +1,54 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/mental/Start_Floor(A).ani`
+	[SUB ANI]
+		`../Animation/mental/Start_Floor(C).ani`	0	1
+		`../Animation/mental/Start_Light(A).ani`	0	2
+		`../Animation/mental/Start_Light(B).ani`	0	3
+		`../Animation/mental/Start_MagicCircle(A).ani`	0	4
+		`../Animation/mental/Start_MagicCircle(B).ani`	0	5
+		`../Animation/mental/Start_MagicCircle(ready).ani`	0	6
+		`../Animation/mental/Start_MagicCircle(start).ani`	0	7
+		`../Animation/mental/Start_MagicCircle-line(A).ani`	0	8
+		`../Animation/mental/Start_MagicCircle-line(B).ani`	0	9
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[IS IN AREA]
+			[POS]
+				0	0	0
+			[RANGE]
+				170	60	10
+			[COORDINATE]
+				`RELATIVE`
+		[/IS IN AREA]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		30	30
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

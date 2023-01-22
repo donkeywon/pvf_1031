@@ -1,0 +1,97 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Rotoers_front_damage_Lotus_7_arm2.ani`
+	[SUB ANI]
+		`../Animation/Rotoers_front_damage_Lotus_6_body.ani`	0	1
+		`../Animation/Rotoers_front_damage_Lotus_4_inside.ani`	0	2
+		`../Animation/Rotoers_front_damage_Lotus_3_head.ani`	0	3
+		`../Animation/Rotoers_front_damage_Lotus_2_jaw.ani`	0	4
+		`../Animation/Rotoers_front_damage_Lotus_1_eye.ani`	0	5
+		`../Animation/Rotoers_front_damage_Lotus_5_arm1.ani`	0	6
+	[/SUB ANI]
+	[SOUND]
+		`R_BOSS-LOTUS_DIE`	0
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[>=]
+			350
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[ZPOS]
+		[<=]
+			0
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		3	1000
+	[SET SPEED]
+		[Z AXIS]
+			-350
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		23	23
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		24	24
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[CUSTOM]
+		1
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[Z AXIS]
+			0
+	[/SET SPEED]
+[/BEHAVIOR]
