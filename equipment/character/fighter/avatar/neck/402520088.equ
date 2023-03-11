@@ -1,87 +1,94 @@
 #PVF_File
 
 [name]
-`天驕普雷蒼穹之翼[B款]`
+	`天驕普雷蒼穹之翼[B款]`
 
 [flavor text]
-`<2020新春禮包>`
+	`<2020新春禮包>`
 
 [grade]
-2	
+	2
+
 [attach type]
-`[trade]`
+	`[trade]`
 
 [usable job]
-`[fighter]`
-
+	`[fighter]`
 [/usable job]
 
 [minimum level]
-1	
-[icon]
-`item/avatar/fighter/ft_aneck.img`
-613	
-[enable dye]
-1	0	
-[equipment type]
-`[breast avatar]`
-0	
-[sub type]
-0	
-[avatar type select]
-7	0	0	1100	0	30	0	0	2200	0	0	0	0	4400	0	0	0	0	120	2	`[B socket]`
-`[B socket]`
+	1
 
+[icon]
+	`item/avatar/fighter/ft_aneck.img`
+613
+
+[enable dye]
+	1	0
+
+[equipment type]
+	`[breast avatar]`
+0
+
+[sub type]
+	0
+
+[avatar type select]
+	7	0	0	50	0
+	30	0	0	150	0
+	0	0	0	500	0
 [/avatar type select]
 
 [animation job]
-`[fighter]`
+	`[fighter]`
 
 [variation]
-190	1	
-[layer variation]
-2200	`neck_c`
-
-[equipment ani script]
-`equipment/character/fighter.lay`
+	190	1
 
 [layer variation]
-1975	`neck_x`
+	2200	`neck_c`
 
 [equipment ani script]
-`equipment/character/fighter.lay`
+	`equipment/character/fighter.lay`
 
 [layer variation]
-1900	`neck_a`
+	1975	`neck_x`
 
 [equipment ani script]
-`equipment/character/fighter.lay`
+	`equipment/character/fighter.lay`
 
 [layer variation]
-1000	`neck_b`
+	1900	`neck_a`
 
 [equipment ani script]
-`equipment/character/fighter.lay`
+	`equipment/character/fighter.lay`
 
 [layer variation]
-600	`neck_d`
+	1000	`neck_b`
 
 [equipment ani script]
-`equipment/character/fighter.lay`
+	`equipment/character/fighter.lay`
 
 [layer variation]
-290	`neck_k`
+	600	`neck_d`
 
 [equipment ani script]
-`equipment/character/fighter.lay`
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	290	`neck_k`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
 
 [move wav]
-`CLOTH_TOUCH`
+	`CLOTH_TOUCH`
 
 [part set index]
-30180	
+	30180
+
 [avatar select ability]
-`[EQUIPMENT_MAGICAL_DEFENSE]`
+	`[EQUIPMENT_MAGICAL_DEFENSE]`
 `+`
 660	`[ACTIVESTATUS_TOLERANCE_ALL]`
 `+`
@@ -89,27 +96,21 @@
 `+`
 50	`[HIT_RECOVERY]`
 `+`
-160	
+160
 [/avatar select ability]
 
-
-
 [if]
-
-[hit]
-1	
+	[hit]
+		1
 [/if]
 
 [then]
-
-[target]
-`myself`
--1	
-[probability]
-0	
-[speech on]
-0	0	`操你媽的偷你麻痺，自己不會做？還要偷我的？記住你爸爸 需要購買請認準作者--劍聖60 QQ-506807329`
-
-[/speech on]
-
+	[target]
+		`myself`
+-1
+	[probability]
+		0
+	[speech on]
+		0	0	`操你媽的偷你麻痺，自己不會做？還要偷我的？記住你爸爸 需要購買請認準作者--劍聖60 QQ-506807329`
+	[/speech on]
 [/then]

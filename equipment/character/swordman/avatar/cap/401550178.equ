@@ -1,79 +1,86 @@
 #PVF_File
 
 [name]
-`宿命者卡恩無畏頭盔[C款]`
+	`宿命者卡恩無畏頭盔[C款]`
 
 [flavor text]
-`<2020新春禮包>`
+	`<2020新春禮包>`
 
 [grade]
-2	
+	2
+
 [attach type]
-`[trade]`
+	`[trade]`
 
 [usable job]
-`[swordman]`
+	`[swordman]`
 `[demonic swordman]`
-
 [/usable job]
 
 [minimum level]
-1	
-[icon]
-`item/avatar/swordman/sm_acap.img`
-730	
-[enable dye]
-1	0	
-[equipment type]
-`[hat avatar]`
-0	
-[avatar type select]
-7	0	0	1000	0	30	0	0	2000	0	0	0	0	4000	0	0	0	0	4500	2	`[A socket]`
-`[A socket]`
+	1
 
+[icon]
+	`item/avatar/swordman/sm_acap.img`
+730
+
+[enable dye]
+	1	0
+
+[equipment type]
+	`[hat avatar]`
+0
+
+[avatar type select]
+	7	0	0	50	0
+	30	0	0	150	0
+	0	0	0	500	0
 [/avatar type select]
 
 [animation job]
-`[swordman]`
+	`[swordman]`
 
 [variation]
-244	2	
-[layer variation]
-2100	`cap_a`
-
-[equipment ani script]
-`equipment/character/swordman.lay`
+	244	2
 
 [layer variation]
-700	`cap_b`
+	2100	`cap_a`
 
 [equipment ani script]
-`equipment/character/swordman.lay`
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	700	`cap_b`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
 
 [animation job]
-`[demonic swordman]`
+	`[demonic swordman]`
 
 [variation]
-244	2	
-[layer variation]
-2100	`cap_a`
-
-[equipment ani script]
-`equipment/character/dsswordman.lay`
+	244	2
 
 [layer variation]
-700	`cap_b`
+	2100	`cap_a`
 
 [equipment ani script]
-`equipment/character/dsswordman.lay`
+	`equipment/character/dsswordman.lay`
+
+[layer variation]
+	700	`cap_b`
+
+[equipment ani script]
+	`equipment/character/dsswordman.lay`
 
 [move wav]
-`CLOTH_TOUCH`
+	`CLOTH_TOUCH`
 
 [part set index]
-30180	
+	30180
+
 [avatar select ability]
-`[MAGICAL_ATTACK]`
+	`[MAGICAL_ATTACK]`
 `+`
 55	`[MAGICAL_DEFENSE]`
 `+`
@@ -83,37 +90,30 @@
 `+`
 15	`[CAST_SPEED]`
 `+`
-140	
+140
 [/avatar select ability]
 
 [hide equipment]
-`[hair avatar]`
+	`[hair avatar]`
 `[face avatar]`
-
 [/hide equipment]
 
 [hide layer]
-2000	400	800	100	2400	20	260	2700	1925	2830	2750	270	2820	
+	2000	400	800	100	2400	20	260	2700	1925	2830	2750	270	2820
 [/hide layer]
 
-
-
 [if]
-
-[hit]
-1	
+	[hit]
+		1
 [/if]
 
 [then]
-
-[target]
-`myself`
--1	
-[probability]
-0	
-[speech on]
-0	0	`操你媽的偷你麻痺，自己不會做？還要偷我的？記住你爸爸 需要購買請認準作者--劍聖60 QQ-506807329`
-
-[/speech on]
-
+	[target]
+		`myself`
+-1
+	[probability]
+		0
+	[speech on]
+		0	0	`操你媽的偷你麻痺，自己不會做？還要偷我的？記住你爸爸 需要購買請認準作者--劍聖60 QQ-506807329`
+	[/speech on]
 [/then]

@@ -1,63 +1,70 @@
 #PVF_File
 
 [name]
-`爆龍王巴卡爾烈炎短發[D款]`
+	`爆龍王巴卡爾烈炎短發[D款]`
 
 [flavor text]
-`<2020新春禮包>`
+	`<2020新春禮包>`
 
 [grade]
-2	
+	2
+
 [attach type]
-`[trade]`
+	`[trade]`
 
 [usable job]
-`[priest]`
-
+	`[priest]`
 [/usable job]
 
 [minimum level]
-1	
-[icon]
-`item/avatar/priest/pr_ahair.img`
-629	
-[enable dye]
-1	0	
-[equipment type]
-`[hair avatar]`
-0	
-[sub type]
-0	
-[avatar type select]
-7	0	0	1500	0	30	0	0	3000	0	0	0	0	6000	0	0	0	0	6600	2	`[A socket]`
-`[A socket]`
+	1
 
+[icon]
+	`item/avatar/priest/pr_ahair.img`
+629
+
+[enable dye]
+	1	0
+
+[equipment type]
+	`[hair avatar]`
+0
+
+[sub type]
+	0
+
+[avatar type select]
+	7	0	0	50	0
+	30	0	0	150	0
+	0	0	0	500	0
 [/avatar type select]
 
 [animation job]
-`[priest]`
+	`[priest]`
 
 [variation]
-185	3	
-[layer variation]
-2000	`hair_a`
-
-[equipment ani script]
-`equipment/character/priest.lay`
+	185	3
 
 [layer variation]
-800	`hair_b`
+	2000	`hair_a`
 
 [equipment ani script]
-`equipment/character/priest.lay`
+	`equipment/character/priest.lay`
+
+[layer variation]
+	800	`hair_b`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
 
 [move wav]
-`CLOTH_TOUCH`
+	`CLOTH_TOUCH`
 
 [part set index]
-30180	
+	30180
+
 [avatar select ability]
-`[MAGICAL_ATTACK]`
+	`[MAGICAL_ATTACK]`
 `+`
 45	`[MAGICAL_DEFENSE]`
 `+`
@@ -67,27 +74,21 @@
 `+`
 12	`[CAST_SPEED]`
 `+`
-120	
+120
 [/avatar select ability]
 
-
-
 [if]
-
-[hit]
-1	
+	[hit]
+		1
 [/if]
 
 [then]
-
-[target]
-`myself`
--1	
-[probability]
-0	
-[speech on]
-0	0	`操你媽的偷你麻痺，自己不會做？還要偷我的？記住你爸爸 需要購買請認準作者--劍聖60 QQ-506807329`
-
-[/speech on]
-
+	[target]
+		`myself`
+-1
+	[probability]
+		0
+	[speech on]
+		0	0	`操你媽的偷你麻痺，自己不會做？還要偷我的？記住你爸爸 需要購買請認準作者--劍聖60 QQ-506807329`
+	[/speech on]
 [/then]

@@ -1,84 +1,88 @@
 #PVF_File
 
 [name]
-`潛行者希洛克無形上衣[D款]`
+	`潛行者希洛克無形上衣[D款]`
 
 [flavor text]
-`<2020新春禮包>`
+	`<2020新春禮包>`
 
 [grade]
-2	
+	2
+
 [attach type]
-`[trade]`
+	`[trade]`
 
 [usable job]
-`[at gunner]`
-
+	`[at gunner]`
 [/usable job]
 
 [minimum level]
-1	
-[icon]
-`item/avatar/atgunner/gg_acoat.img`
-570	
-[enable dye]
-1	0	
-[equipment type]
-`[coat avatar]`
-0	
-[sub type]
-0	
-[avatar type select]
-7	0	0	1500	0	30	0	0	3000	0	0	0	0	6000	0	0	0	0	6500	3	`[S socket]`
-`[C socket]`
-`[C socket]`
+	1
 
+[icon]
+	`item/avatar/atgunner/gg_acoat.img`
+570
+
+[enable dye]
+	1	0
+
+[equipment type]
+	`[coat avatar]`
+0
+
+[sub type]
+	0
+
+[avatar type select]
+	7	0	0	50	0
+	30	0	0	150	0
+	0	0	0	500	0
 [/avatar type select]
 
 [animation job]
-`[at gunner]`
+	`[at gunner]`
 
 [variation]
-170	3	
-[layer variation]
-2300	`coat_c`
-
-[equipment ani script]
-`equipment/character/atgunner.lay`
+	170	3
 
 [layer variation]
-1800	`coat_a`
+	2300	`coat_c`
 
 [equipment ani script]
-`equipment/character/atgunner.lay`
+	`equipment/character/atgunner.lay`
 
 [layer variation]
-925	`coat_h`
+	1800	`coat_a`
 
 [equipment ani script]
-`equipment/character/atgunner.lay`
+	`equipment/character/atgunner.lay`
 
 [layer variation]
-900	`coat_b`
+	925	`coat_h`
 
 [equipment ani script]
-`equipment/character/atgunner.lay`
+	`equipment/character/atgunner.lay`
 
 [layer variation]
-500	`coat_d`
+	900	`coat_b`
 
 [equipment ani script]
-`equipment/character/atgunner.lay`
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	500	`coat_d`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
 
 [move wav]
-`CLOTH_TOUCH`
+	`CLOTH_TOUCH`
 
 [part set index]
-30180	
-
+	30180
 
 [avatar select ability]
-`[SKILL_LEVEL]`
+	`[SKILL_LEVEL]`
 `[at gunner]`
 22	1	`[SKILL_LEVEL]`
 `[at gunner]`
@@ -176,26 +180,21 @@
 `[at gunner]`
 109	1	`[SKILL_LEVEL]`
 `[at gunner]`
-52	1	
+52	1
 [/avatar select ability]
 
-
 [if]
-
-[hit]
-1	
+	[hit]
+		1
 [/if]
 
 [then]
-
-[target]
-`myself`
--1	
-[probability]
-0	
-[speech on]
-0	0	`操你媽的偷你麻痺，自己不會做？還要偷我的？記住你爸爸 需要購買請認準作者--劍聖60 QQ-506807329`
-
-[/speech on]
-
+	[target]
+		`myself`
+-1
+	[probability]
+		0
+	[speech on]
+		0	0	`操你媽的偷你麻痺，自己不會做？還要偷我的？記住你爸爸 需要購買請認準作者--劍聖60 QQ-506807329`
+	[/speech on]
 [/then]

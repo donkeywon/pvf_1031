@@ -1,57 +1,64 @@
 #PVF_File
 
 [name]
-`潛行者希洛克無形項鏈[B款]`
+	`潛行者希洛克無形項鏈[B款]`
 
 [flavor text]
-`<2020新春禮包>`
+	`<2020新春禮包>`
 
 [grade]
-2	
+	2
+
 [attach type]
-`[trade]`
+	`[trade]`
 
 [usable job]
-`[at gunner]`
-
+	`[at gunner]`
 [/usable job]
 
 [minimum level]
-1	
-[icon]
-`item/avatar/atgunner/gg_aneck.img`
-511	
-[enable dye]
-1	0	
-[equipment type]
-`[breast avatar]`
-0	
-[sub type]
-0	
-[avatar type select]
-7	0	0	1000	0	30	0	0	2000	0	0	0	0	4000	0	0	0	0	4500	2	`[B socket]`
-`[B socket]`
+	1
 
+[icon]
+	`item/avatar/atgunner/gg_aneck.img`
+511
+
+[enable dye]
+	1	0
+
+[equipment type]
+	`[breast avatar]`
+0
+
+[sub type]
+	0
+
+[avatar type select]
+	7	0	0	50	0
+	30	0	0	150	0
+	0	0	0	500	0
 [/avatar type select]
 
 [animation job]
-`[at gunner]`
+	`[at gunner]`
 
 [variation]
-161	1	
+	161	1
+
 [layer variation]
-1975	`neck_x`
+	1975	`neck_x`
 
 [equipment ani script]
-`equipment/character/atgunner.lay`
+	`equipment/character/atgunner.lay`
 
 [move wav]
-`CLOTH_TOUCH`
+	`CLOTH_TOUCH`
 
 [part set index]
-30180	
+	30180
+
 [avatar select ability]
-`[EQUIPMENT_MAGICAL_DEFENSE]`
+	`[EQUIPMENT_MAGICAL_DEFENSE]`
 `+`
 900	`[ACTIVESTATUS_TOLERANCE_ALL]`
 `+`
@@ -59,27 +66,21 @@
 `+`
 60	`[HIT_RECOVERY]`
 `+`
-200	
+200
 [/avatar select ability]
 
-
-
 [if]
-
-[hit]
-1	
+	[hit]
+		1
 [/if]
 
 [then]
-
-[target]
-`myself`
--1	
-[probability]
-0	
-[speech on]
-0	0	`操你媽的偷你麻痺，自己不會做？還要偷我的？記住你爸爸 需要購買請認準作者--劍聖60 QQ-506807329`
-
-[/speech on]
-
+	[target]
+		`myself`
+-1
+	[probability]
+		0
+	[speech on]
+		0	0	`操你媽的偷你麻痺，自己不會做？還要偷我的？記住你爸爸 需要購買請認準作者--劍聖60 QQ-506807329`
+	[/speech on]
 [/then]
