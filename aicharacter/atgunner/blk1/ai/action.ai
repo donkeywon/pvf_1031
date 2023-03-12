@@ -1,0 +1,85 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	2500	2500	2050	2050
+			`enemy`
+			`monster`	56000
+	
+		[think]
+			[last result]
+				`>=`	1
+			[true]
+			[import ai]
+				`Action2.ai`
+			[false]
+		
+			[think]
+				[void]
+					`number of in attack area()`	2500	2500	2050	2050
+					`enemy`
+					`monster`	61420
+			
+				[think]
+					[last result]
+						`>=`	3
+					[true]
+					[import ai]
+						`Action3.ai`
+					[false]
+				
+					[think]
+						[void]
+							`number of in attack area()`	2500	2500	2050	2050
+							`enemy`
+							`monster`	56801
+					
+						[think]
+							[last result]
+								`>=`	1
+							[true]
+							[import ai]
+								`getrandom2.ai`
+							[false]
+						
+							[think]
+								[void]
+									`number of in attack area()`	2500	2500	2050	2050
+									`enemy`
+									`monster`	56803
+							
+								[think]
+									[last result]
+										`>=`	1
+									[true]
+									[import ai]
+										`Action5.ai`
+									[false]
+								
+									[think]
+										[void]
+											`number of in attack area()`	2500	2500	2050	2050
+											`enemy`
+											`monster`	61004
+									
+										[think]
+											[last result]
+												`>=`	1
+											[true]
+											[import ai]
+												`Action6.ai`
+											[false]
+											[import ai]
+												`Action2.ai`
+										[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

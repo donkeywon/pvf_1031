@@ -1,0 +1,32 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check key cooltime]
+			`skillcombo1`
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`skillcombo`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`combo`
+				[true]
+				[return]
+					21
+				[false]
+				[return]
+					0
+			[/think]
+	[false]
+	[return]
+		1
+	[/think]
+	[false]
+	[return]
+		0
+	[/think]
+[/ai pattern]

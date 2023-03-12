@@ -1,0 +1,76 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[my state]
+			4
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`qstanding`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`qstanding`
+		[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`buff`
+		[false]
+		[return str]
+			`buff`
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	50.0	50.0	15.0	15.0
+			[true]
+			[import ai]
+				`distance_50.ai`
+			[false]
+		
+			[think]
+				[void]
+					`is target in attack area()`	120.0	120.0	25.0	25.0
+				[true]
+				[import ai]
+					`distance_100.ai`
+				[false]
+			
+				[think]
+					[void]
+						`is target in attack area()`	320.0	320.0	105.0	105.0
+					[true]
+					[import ai]
+						`distance_300.ai`
+					[false]
+				
+					[think]
+						[void]
+							`is target in attack area()`	420.0	0.0	35.0	35.0
+						[true]
+						[return]
+							-1
+						[false]
+					
+						[think]
+							[void]
+								`is target in attack area()`	1320.0	0.0	105.0	105.0
+							[true]
+							[import ai]
+								`distance_1300.ai`
+							[false]
+							[return]
+								-1
+						[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

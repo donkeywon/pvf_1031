@@ -1,19 +1,19 @@
 #PVF_File
 
 [minimum info]
-	`西岚`	0	1	0	1	55	0	0	1	0	0	0
+	`罗特斯的傀儡`	0	1	0	1	55	0	0	1	0	0	0
 	`no creature`	0	0	0
 
 [additional character status]
-	0	0	0	0	0	0	0	100	0	0	0	0	0	0	0	0	5	5	-10	40	0	30	0	30	30	40	0	30	0	0	0	0	0	0	40	30	0
+	0	0	0	0	0	0	0	0	10000	0	0	0	0	0	0	0	100	100	100	100	100	100	100	100	100	100	100	100	100	100	100	100	0	0	100	100	100
 [/additional character status]
 
 [character status rate]
-	130	1000	1	1	1	1	1	1	1	1	1	1	1	1.3	1.3	1	1.2	1.4	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0.3	1	1	1
+	500	5000	1	1	1	1	1	2	1	2	1	1	1	1.1	1.3	3	3	1	4	1	10	10	10	10	100	100	1	100	1	1	1	100	1	1	100	1	1	1	100	100	100
 [/character status rate]
 
 [attack damage rate]
-	0.06
+	7.5
 
 [add equipment status from level]
 	1
@@ -31,16 +31,16 @@
 	67	1
 	46	10
 	49	1
-	8	20
-	72	10
-	77	10
+	8	25
+	72	25
+	77	25
 [/quick skill]
 
 [skill]
-	58	10
+	58	25
 	59	1
 	169	1
-	13	10
+	13	20
 	15	10
 	16	10
 	26	1
@@ -55,32 +55,45 @@
 	178	10
 	17	1
 	45	1
-	9	10
+	9	25
 	170	1
-	68	5
+	68	15
 	69	1
 	83	1
-	86	5
-	91	5
+	86	9
+	91	10
 	172	1
-	73	10
-	50	10
+	73	20
+	50	25
 	51	10
 	174	0
+	53	10
+	89	10
 [/skill]
 
 [quick item]
-	27711	1
+	1142	1
 [/quick item]
 
 [equipment]
-	28010	3	0
-	39607	2	0
-	40346	2	0
-	40831	2	0
-	41226	2	0
-	41549	2	0
-	42003	2	0
+	27747	3	13
+	10939	0	0
+	14928	1	0
+	12933	4	0
+	18931	4	0
+	16922	2	0
+	20147	0	0
+	22139	0	0
+	24153	4	0
+	39280	2	0
+	39686	2	0
+	40024	2	0
+	40428	2	0
+	40914	2	0
+	41304	2	0
+	41613	2	0
+	42081	2	0
+	42212	2	0
 [/equipment]
 
 [think term]
@@ -93,16 +106,16 @@
 	300
 
 [warlike]
-	80
+	100
 
 [vision]
-	1600
+	4000
 
 [death tower item]
 [/death tower item]
 
 [skill correction]
-	49	0	169	0	9	0.5	86	0.2	50	0
+	49	0	169	0	9	0.5	86	0.1	50	0	73	0.1
 [/skill correction]
 
 [targeting bonus]
@@ -152,43 +165,4 @@
 [/key stream]
 
 [speech on situation]
-	[on stand]
-		`嗯哈~无聊啊~`	30
-	[on damage]
-		`哎呀~别扯啦~`	10
-	[on damage]
-		`我说过了，我吃饱了~`	20
-	[on die]
-		`啊……我也快不行了~`	50
-	[on die]
-		`哎……呀……羽，你在那里吗？`	50
-	[on appear]
-		`干嘛活那么累？`	50
-	[on attack]
-		`嗯……`	20
-		`weapon_combination`
-	[on attack]
-		`疼吗？`	20
-		`basic_combination_upper`
-	[on attack]
-		`嘿哟~`	30
-		`chargecrash`
-	[on attack]
-		`让你屁滚尿流~`	40
-		`momentary_slash`
-	[on attack]
-		`这不是逃亡~`	10
-		`western_quadruple_backstepcutter`
-	[on attack]
-		`去哪里？`	20
-		`tripleslash`
-	[on attack]
-		`咿呀！`	10
-		`grab`
-	[on attack]
-		`哎~真的要这么做吗？`	50
-		`hundredsword`
-	[on key]
-		`那……这就开始？`	100
-		`weapon_change`
 [/speech on situation]

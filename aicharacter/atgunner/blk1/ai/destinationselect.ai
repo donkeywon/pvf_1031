@@ -1,0 +1,85 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	2500	2500	2050	2050
+			`enemy`
+			`monster`	56000
+	
+		[think]
+			[last result]
+				`>=`	1
+			[true]
+			[import ai]
+				`DestinationSelect2.ai`
+			[false]
+		
+			[think]
+				[void]
+					`number of in attack area()`	2500	2500	2050	2050
+					`enemy`
+					`monster`	61420
+			
+				[think]
+					[last result]
+						`>=`	3
+					[true]
+					[import ai]
+						`DestinationSelect3.ai`
+					[false]
+				
+					[think]
+						[void]
+							`number of in attack area()`	2500	2500	2050	2050
+							`enemy`
+							`monster`	56801
+					
+						[think]
+							[last result]
+								`>=`	1
+							[true]
+							[import ai]
+								`DestinationSelect4.ai`
+							[false]
+						
+							[think]
+								[void]
+									`number of in attack area()`	2500	2500	2050	2050
+									`enemy`
+									`monster`	56803
+							
+								[think]
+									[last result]
+										`>=`	1
+									[true]
+									[import ai]
+										`DestinationSelect5.ai`
+									[false]
+								
+									[think]
+										[void]
+											`number of in attack area()`	2500	2500	2050	2050
+											`enemy`
+											`monster`	61004
+									
+										[think]
+											[last result]
+												`>=`	1
+											[true]
+											[import ai]
+												`DestinationSelect6.ai`
+											[false]
+											[return]
+												10
+										[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

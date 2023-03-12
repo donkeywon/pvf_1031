@@ -1,0 +1,137 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check skill on]
+			13
+		[true]
+	
+		[think]
+			[void]
+				`enemy number of in attack area()`	8000.0	8000.0	1000.0	1000.0
+		
+			[think]
+				[last result]
+					`<=`	1.0
+				[true]
+			
+				[think]
+					[void]
+						`number of in attack area()`	8000.0	8000.0	3000.0	3000.0
+						`friend`
+						`passive object`	24019
+				
+					[think]
+						[last result]
+							`<=`	1.0
+						[true]
+					
+						[think]
+							[void]
+								`is the skill in cooltime()`	69
+							[true]
+							[import ai]
+								`main.ai`
+							[false]
+							[return]
+								1
+						[/think]
+	[false]
+	[import ai]
+		`main.ai`
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`enemy number of in attack area()`	8000.0	8000.0	1000.0	1000.0
+	
+		[think]
+			[last result]
+				`==`	2.0
+			[true]
+		
+			[think]
+				[void]
+					`number of in attack area()`	8000.0	8000.0	3000.0	3000.0
+					`friend`
+					`passive object`	24019
+			
+				[think]
+					[last result]
+						`<=`	2.0
+					[true]
+				
+					[think]
+						[void]
+							`is the skill in cooltime()`	69
+						[true]
+						[import ai]
+							`main.ai`
+						[false]
+						[return]
+							1
+					[/think]
+	[false]
+	[import ai]
+		`main.ai`
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`enemy number of in attack area()`	8000.0	8000.0	1000.0	1000.0
+	
+		[think]
+			[last result]
+				`>=`	3.0
+			[true]
+		
+			[think]
+				[void]
+					`number of in attack area()`	8000.0	8000.0	3000.0	3000.0
+					`friend`
+					`passive object`	24019
+			
+				[think]
+					[last result]
+						`<=`	6.0
+					[true]
+				
+					[think]
+						[void]
+							`is the skill in cooltime()`	69
+						[true]
+						[import ai]
+							`main.ai`
+						[false]
+						[return]
+							1
+					[/think]
+	[false]
+	[import ai]
+		`main.ai`
+	[/think]
+	[/think]
+	[false]
+	[import ai]
+		`main.ai`
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[check use skill]
+			13
+		[true]
+		[return]
+			0
+		[false]
+		[return]
+			-1
+	[/think]
+	[/think]
+[/ai pattern]

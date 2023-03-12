@@ -1,0 +1,218 @@
+#PVF_File
+
+[minimum info]
+	`巴恩`	0	1	0	1	91	0	0	1	0	0	0
+	`no creature`	0	0	0
+
+[additional character status]
+	0	0	0	0	0	0	0	100	0	0	0	0	0	0	0	0	5	5	-10	40	30	200	30	3000	30	200	200	200	3000	3000	30	30	0	0	1000	30	30
+[/additional character status]
+
+[character status rate]
+	305	70	1	1	1	1	3	1	3	1	1	3000	30	1.5	1.5	1	3000	1.4	1	1	1	1	1	1	1	5	1	3000	1	10	1	10	3000	3000	1	1	1	0.3	1000	1	1
+[/character status rate]
+
+[attack damage rate]
+	1.5
+
+[add equipment status from level]
+	1
+
+[armor subtype]
+	4
+
+[quick skill]
+	67	1
+	46	5
+	65	5
+	1	10
+	72	10
+[/quick skill]
+
+[skill]
+	169	1
+	170	1
+	49	1
+	16	10
+	181	2
+	182	2
+	184	1
+	173	1
+	179	5
+	187	1
+	186	20
+	178	20
+	17	1
+	45	1
+	9	10
+	68	10
+	69	1
+	172	1
+	66	1
+	12	20
+	3	20
+	40	20
+	38	10
+	73	10
+	50	20
+	51	20
+	72	10
+	174	0
+[/skill]
+
+[quick item]
+	2600022	1000	1017	100000	2660671	1000	2600656	500	2600028	500	2660671	500	2660672	500	2600022	500	1082	200
+[/quick item]
+
+[equipment]
+	101501192	3	0
+	26022	2	0
+	101501190	2	0
+[/equipment]
+
+[think term]
+	200
+
+[destination change term]
+	400
+
+[keep distance with target]
+	250
+
+[warlike]
+	50
+
+[vision]
+	1700
+
+[death tower item]
+[/death tower item]
+
+[targeting bonus]
+	100	0	0	0	0	0	0	0	0	20	0	20	0	39	0	0	0	0	0	0	0
+	`[stand]`
+	`[dash]`	0	100
+	`[slow]`	0
+
+[ai pattern]
+	`Event.ai`
+	`DestinationSelect.ai`
+	`Action.ai`
+	`MoveMethod.ai`
+[/ai pattern]
+
+[key stream]
+	`autoguard`
+	`autoguard.key`
+	`backstepcutter`
+	`backstepcutter.key`
+	`backstepashen`
+	`backstepashen.key`
+	`chargecrash`
+	`chargecrash.key`
+	`guard`
+	`guard.key`
+	`hopsmash_near`
+	`hopsmash_near.key`
+	`hopsmash_range`
+	`hopsmash_range.key`
+	`overdrive`
+	`overdrive.key`
+	`reckless`
+	`reckless.key`
+	`remi`
+	`remi.key`
+	`upperslash`
+	`upperslash.key`
+	`weapon_combination`
+	`weapon_combination.key`
+	`grandwave`
+	`grandwave.key`
+	`illusionslash`
+	`illusionslash.key`
+	`dragon_triple_slash`
+	`dragon_triple_slash.key`
+	`bal`
+	`bal.key`
+[/key stream]
+
+[key cooltime]
+	`autoguard`	10000
+	`backstepcutter`	1000
+	`backstepashen`	2000
+	`chargecrash`	1000
+	`guard`	2000
+	`hopsmash_near`	4000
+	`hopsmash_range`	4000
+	`overdrive`	5000
+	`reckless`	10000
+	`remi`	100000
+	`upperslash`	5000
+	`weapon_combination`	3100
+	`grandwave`	5000
+	`illusionslash`	5000
+	`dragon_triple_slash`	9000
+	`bal`	10000
+[/key cooltime]
+
+[speech on situation]
+	[on stand]
+		`嗯！`	10
+	[on damage]
+		`呜！`	10
+	[on damage]
+		`我就这么不济吗！`	10
+	[on die]
+		`咳，修炼不够呀~`	50
+	[on die]
+		`咳，好强~`	50
+	[on appear]
+		`试一下这段时间的修炼成果~`	100
+	[on attack]
+		`哼，你以为躺着就没事了吗~`	30
+		`backstepcutter`
+	[on attack]
+		`好机会！`	20
+		`chargecrash`
+	[on attack]
+		`你就以为`	10
+		`hopsmash_near`
+	[on attack]
+		`可以躲开？`	10
+		`hopsmash_near`
+	[on attack]
+		`逃也没用~`	10
+		`hopsmash_range`
+	[on attack]
+		`切，就你那点水平……`	10
+		`hopsmash_range`
+	[on attack]
+		`呃！`	10
+		`upperslash`
+	[on attack]
+		`啊！`	10
+		`upperslash`
+	[on attack]
+		`剑术最重要的是基础！`	10
+		`weapon_combination`
+	[on key]
+		`极品剑是剑士的基础！`	30
+		`overdrive`
+	[on key]
+		`有时节制的基础比华丽的技术重要~`	30
+		`overdrive`
+	[on key]
+		`现在才开始呢~`	30
+		`reckless`
+	[on key]
+		`鲁莽不一定是坏事~`	30
+		`reckless`
+	[on key]
+		`想攻击我？`	10
+		`guard`
+[/speech on situation]
+
+[no cooltime]
+
+[check accountitem]
+	0

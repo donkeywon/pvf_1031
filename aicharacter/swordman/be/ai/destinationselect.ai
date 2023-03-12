@@ -1,0 +1,66 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target object in area()`	0	8500.0	8500.0	2000.0	2000.0	18569	0
+		[true]
+		[return]
+			12
+		[false]
+	
+		[think]
+			[void]
+				`is target object in area()`	0	8500.0	8500.0	2000.0	2000.0	18617	0
+			[true]
+			[return]
+				12
+			[false]
+		
+			[think]
+				[void]
+					`is target object in area()`	0	8500.0	8500.0	2000.0	2000.0	18574	0
+				[true]
+				[return]
+					12
+				[false]
+			
+				[think]
+					[void]
+						`is target object in area()`	0	8500.0	8500.0	2000.0	2000.0	18578	0
+					[true]
+					[return]
+						12
+					[false]
+				
+					[think]
+						[void]
+							`is target object in area()`	0	8500.0	8500.0	2000.0	2000.0	13098	0
+						[true]
+						[return]
+							12
+						[false]
+					
+						[think]
+							[void]
+								`number of in attack area()`	2500	2500	2050	2050
+								`summon`
+								`monster`	62882
+						
+							[think]
+								[last result]
+									`>=`	1
+								[true]
+								[import ai]
+									`DestinationSelect2.ai`
+								[false]
+								[return]
+									0
+							[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

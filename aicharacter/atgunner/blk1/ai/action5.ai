@@ -1,0 +1,37 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`enemy number of in attack area()`	50.0	10.0	10.0	10.0
+	
+		[think]
+			[last result]
+				`>=`	1.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`nansa`
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`nan`
+					[true]
+					[return]
+						-1
+					[false]
+					[return str]
+						`nan`
+				[/think]
+	[false]
+	[return str]
+		`nansa`
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+[/ai pattern]

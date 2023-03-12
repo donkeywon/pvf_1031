@@ -1,0 +1,109 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check key cooltime]
+			`blunt`
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	70.0	20.0	15.0	15.0
+			[true]
+		
+			[think]
+				[void]
+					`check random()`	50	100
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`lig_b`
+					[true]
+					[return]
+						-1
+					[false]
+					[return str]
+						`lig_b`
+				[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`b_combo2`
+		[true]
+		[return]
+			-1
+		[false]
+		[return str]
+			`b_combo2`
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	280.0	0.0	100.0	100.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`over_bal`
+			[true]
+		
+			[think]
+				[void]
+					`check random()`	50	100
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`lig_b`
+					[true]
+					[return]
+						-1
+					[false]
+					[return str]
+						`lig_b`
+				[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`b_combo2`
+		[true]
+		[return]
+			-1
+		[false]
+		[return str]
+			`b_combo2`
+	[/think]
+	[/think]
+	[false]
+	[return str]
+		`over_bal`
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	780.0	300.0	200.0	200.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`random_dragon`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`random_dragon`
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return str]
+		`blunt`
+	[/think]
+[/ai pattern]

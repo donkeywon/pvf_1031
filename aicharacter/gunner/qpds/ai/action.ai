@@ -1,0 +1,110 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check key cooltime]
+			`miracle`
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	50.0	50.0	70.0	70.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`win`
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`jak`
+					[true]
+					[return]
+						-1
+					[false]
+					[return str]
+						`jak`
+				[/think]
+	[false]
+	[return str]
+		`win`
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	80.0	30.0	30.0	30.0
+		[true]
+		[import ai]
+			`combo2.ai`
+		[false]
+	
+		[think]
+			[void]
+				`is target in attack area()`	170.0	100.0	100.0	100.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`ex`
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`ball`
+					[true]
+					[return]
+						-1
+					[false]
+					[return str]
+						`ball`
+				[/think]
+	[false]
+	[return str]
+		`ex`
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	350.0	350.0	200.0	200.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`yang`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`sa`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`sa`
+			[/think]
+	[false]
+	[return str]
+		`yang`
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	500.0	400.0	100.0	100.0
+		[true]
+		[import ai]
+			`combo.ai`
+		[false]
+		[import ai]
+			`combo1.ai`
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return str]
+		`miracle`
+	[/think]
+[/ai pattern]

@@ -1,0 +1,37 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	8000	8000	3000	3000
+			`all`
+			`apc`	21113
+	
+		[think]
+			[last result]
+				`>=`	1
+			[true]
+			[return]
+				0
+			[false]
+		
+			[think]
+				[void]
+					`number of in attack area()`	8000	8000	3000	3000
+					`all`
+					`apc`	55501
+			
+				[think]
+					[last result]
+						`>=`	1
+					[true]
+					[return]
+						0
+					[false]
+					[return]
+						1
+				[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

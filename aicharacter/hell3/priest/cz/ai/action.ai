@@ -1,0 +1,210 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[my state]
+			4
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`qstanding`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`qstanding`
+		[/think]
+	[false]
+	[think]
+		[hp]
+			`%<=`	10.0
+		[true]
+	
+		[think]
+			[void]
+				`get random()`	0.0	101.0
+		
+			[think]
+				[last result]
+					`<=`	5
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`d`
+					[true]
+				
+					[think]
+						[check key cooltime]
+							`s`
+						[true]
+						[return]
+							-1
+						[false]
+						[return str]
+							`s`
+					[/think]
+	[false]
+	[return str]
+		`d`
+	[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	15
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`f`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`s`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`s`
+			[/think]
+	[false]
+	[return str]
+		`f`
+	[/think]
+	[false]
+	[think]
+		[last result]
+			`<=`	25
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`g`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`s`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`s`
+			[/think]
+	[false]
+	[return str]
+		`g`
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	150.0	20.0	50.0	50.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`combo3`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`s`
+				[true]
+			
+				[think]
+					[void]
+						`check random()`	60.0	100.0
+					[true]
+				
+					[think]
+						[check key cooltime]
+							`a`
+						[true]
+						[return]
+							-1
+						[false]
+						[return str]
+							`a`
+					[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`g`
+		[true]
+		[return]
+			-1
+		[false]
+		[return str]
+			`g`
+	[/think]
+	[/think]
+	[false]
+	[return str]
+		`s`
+	[/think]
+	[false]
+	[return str]
+		`combo3`
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	400.0	0.0	60.0	60.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`s`
+			[true]
+		
+			[think]
+				[void]
+					`check random()`	60.0	100.0
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`a`
+					[true]
+					[return]
+						-1
+					[false]
+					[return str]
+						`a`
+				[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`g`
+		[true]
+		[return]
+			-1
+		[false]
+		[return str]
+			`g`
+	[/think]
+	[/think]
+	[false]
+	[return str]
+		`s`
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

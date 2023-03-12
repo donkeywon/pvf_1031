@@ -1,0 +1,26 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[target state]
+			3
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	500
+				{8=`,`}	500
+				{8=`,`}	30
+				{8=`,`}	30
+			[true]
+			[return str]
+				`vertical`
+			[false]
+			[return]
+				-1
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+[/ai pattern]

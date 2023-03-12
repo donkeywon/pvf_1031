@@ -2,43 +2,59 @@
 
 [ai pattern]
 	[think]
-		[check key cooltime]
-			`beam`
+		[state]
+			`==`	64.0
 		[true]
+		[return str]
+			`x`
+		[false]
 	
 		[think]
-			[check skill on]
-				38
-			[false]
-			[return str]
-				`buff`
+			[state]
+				`==`	62.0
 			[true]
+			[return str]
+				`x`
+			[false]
 		
 			[think]
-				[void]
-					`is target in attack area()`	70.0	25.0	10.0	10.0
+				[check key cooltime]
+					`beam`
 				[true]
 			
 				[think]
-					[void]
-						`check random()`	50	100
+					[check skill on]
+						38
+					[false]
+					[return str]
+						`buff`
 					[true]
 				
 					[think]
-						[check key cooltime]
-							`yp`
+						[void]
+							`is target in attack area()`	70.0	25.0	10.0	10.0
 						[true]
 					
 						[think]
-							[check key cooltime]
-								`lig_beam`
+							[void]
+								`check random()`	50	100
 							[true]
-							[return]
-								-1
-							[false]
-							[return str]
-								`lig_beam`
-						[/think]
+						
+							[think]
+								[check key cooltime]
+									`yp`
+								[true]
+							
+								[think]
+									[check key cooltime]
+										`lig_beam`
+									[true]
+									[return]
+										-1
+									[false]
+									[return str]
+										`lig_beam`
+								[/think]
 	[false]
 	[return str]
 		`yp`
@@ -131,5 +147,7 @@
 	[false]
 	[return str]
 		`beam`
+	[/think]
+	[/think]
 	[/think]
 [/ai pattern]

@@ -1,0 +1,114 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[hp]
+			`%>=`	50
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`debari`
+			[true]
+		
+			[think]
+				[void]
+					`number of in attack area()`	2500	2500	2050	2050
+					`enemy`
+					`passive object`	10542
+			
+				[think]
+					[last result]
+						`>=`	1
+					[true]
+					[return]
+						-1
+					[false]
+				
+					[think]
+						[void]
+							`is target in attack area()`	50.0	10.0	10.0	10.0
+						[true]
+					
+						[think]
+							[check key cooltime]
+								`2room`
+							[true]
+						
+							[think]
+								[check key cooltime]
+									`4room1`
+								[true]
+								[return]
+									-1
+								[false]
+								[return str]
+									`4room1`
+							[/think]
+	[false]
+	[return str]
+		`2room`
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	180.0	10.0	20.0	20.0
+		[true]
+	
+		[think]
+			[void]
+				`enemy number of in attack area()`	350.0	350.0	300.0	300.0
+		
+			[think]
+				[last result]
+					`>=`	4.0
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`nansa`
+					[true]
+					[import ai]
+						`getrandom.ai`
+					[false]
+					[return str]
+						`nansa`
+				[/think]
+	[false]
+	[import ai]
+		`getrandom.ai`
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	350.0	20.0	20.0	20.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`1`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`1`
+		[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return str]
+		`debari`
+	[/think]
+	[false]
+	[return str]
+		`remi`
+	[/think]
+[/ai pattern]

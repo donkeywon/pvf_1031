@@ -1,0 +1,66 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	70.0	70.0	30.0	30.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`attack6`
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				1
+		[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	70.0	70.0	30.0	30.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`combo`
+			[true]
+			[return]
+				-1
+			[false]
+			[return]
+				4
+		[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	500.0	500.0	30.0	30.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`attack5`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`attack47`
+				[true]
+				[return]
+					-1
+				[false]
+				[return]
+					2
+			[/think]
+	[false]
+	[return]
+		0
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

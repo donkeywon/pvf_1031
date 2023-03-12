@@ -2,25 +2,41 @@
 
 [ai pattern]
 	[think]
-		[void]
-			`is target in attack area()`	70.0	20.0	15.0	15.0
+		[state]
+			`==`	64.0
 		[true]
+		[return str]
+			`x`
+		[false]
 	
 		[think]
-			[void]
-				`check random()`	50	100
+			[state]
+				`==`	62.0
 			[true]
+			[return str]
+				`x`
+			[false]
 		
 			[think]
-				[check key cooltime]
-					`lig`
+				[void]
+					`is target in attack area()`	70.0	20.0	15.0	15.0
 				[true]
-				[return]
-					-1
-				[false]
-				[return str]
-					`lig`
-			[/think]
+			
+				[think]
+					[void]
+						`check random()`	50	100
+					[true]
+				
+					[think]
+						[check key cooltime]
+							`lig`
+						[true]
+						[return]
+							-1
+						[false]
+						[return str]
+							`lig`
+					[/think]
 	[false]
 	[think]
 		[check key cooltime]
@@ -86,6 +102,8 @@
 	[false]
 	[return]
 		-1
+	[/think]
+	[/think]
 	[/think]
 	[/think]
 	[/think]

@@ -1,0 +1,23 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check skill on]
+			52
+		[false]
+		[return str]
+			`salpa`
+		[true]
+	
+		[think]
+			[void]
+				`is target in attack area()`	200	200	30	30
+			[true]
+			[return str]
+				`combo`
+			[false]
+			[return]
+				-1
+		[/think]
+	[/think]
+[/ai pattern]

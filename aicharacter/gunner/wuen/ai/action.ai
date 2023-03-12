@@ -1,0 +1,53 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`number of in attack area()`	2500	2500	2050	2050
+			`enemy`
+			`monster`	56402
+	
+		[think]
+			[last result]
+				`>=`	1
+			[true]
+			[import ai]
+				`2_a.ai`
+			[false]
+		
+			[think]
+				[void]
+					`number of in attack area()`	2500	2500	2050	2050
+					`enemy`
+					`monster`	56052
+			
+				[think]
+					[last result]
+						`>=`	1
+					[true]
+					[import ai]
+						`3_a.ai`
+					[false]
+				
+					[think]
+						[void]
+							`number of in attack area()`	2500	2500	2050	2050
+							`enemy`
+							`monster`	61278
+					
+						[think]
+							[last result]
+								`>=`	1
+							[true]
+							[import ai]
+								`5_a.ai`
+							[false]
+							[import ai]
+								`1_a.ai`
+						[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

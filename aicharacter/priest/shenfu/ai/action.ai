@@ -1,0 +1,69 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[set party member]
+			1
+	
+		[think]
+			[party member alive]
+			[true]
+		
+			[think]
+				[check use skill]
+					7
+				[true]
+				[return]
+					`f`
+				[false]
+			
+				[think]
+					[check use skill]
+						51
+					[true]
+					[return]
+						`s`
+					[false]
+				
+					[think]
+						[check use skill]
+							23
+						[true]
+						[return]
+							`h`
+						[false]
+					
+						[think]
+							[check use skill]
+								20
+							[true]
+							[return]
+								`g`
+							[false]
+						
+							[think]
+								[check use skill]
+									21
+								[true]
+								[return]
+									`life`
+								[false]
+							
+								[think]
+									[check use skill]
+										55
+									[true]
+									[return]
+										`fast`
+									[false]
+									[return]
+										-1
+								[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

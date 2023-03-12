@@ -1,0 +1,169 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[mp]
+			`%<=`	10.0
+		[true]
+		[return]
+			6
+		[false]
+	
+		[think]
+			[void]
+				`is target in attack area()`	50.0	50.0	24.0	24.0
+			[true]
+		
+			[think]
+				[my level]
+					`is in range()`	11	20
+				[true]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	1
+					[true]
+					[return]
+						20
+					[false]
+				
+					[think]
+						[void]
+							`get random()`	0.0	100.0
+					
+						[think]
+							[last result]
+								`<=`	20.0
+							[true]
+							[return]
+								0
+							[false]
+							[return]
+								20
+						[/think]
+	[/think]
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	120.0	120.0	40.0	40.0
+		[true]
+	
+		[think]
+			[void]
+				`get random()`	0.0	100.0
+		
+			[think]
+				[last result]
+					`<=`	5.0
+				[true]
+			
+				[think]
+					[void]
+						`is the skill in cooltime()`	1
+					[true]
+					[return]
+						-1
+					[false]
+					[return]
+						21
+				[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`get random()`	0.0	100.0
+	
+		[think]
+			[last result]
+				`<=`	50.0
+			[true]
+		
+			[think]
+				[void]
+					`enemy number of in attack area()`	150.0	150.0	80.0	80.0
+			
+				[think]
+					[last result]
+						`<`	1.0
+					[true]
+				
+					[think]
+						[void]
+							`is the skill in cooltime()`	51
+						[true]
+						[return]
+							-1
+						[false]
+						[import ai]
+							`hill_pattern.ai`
+					[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+	[false]
+	[think]
+		[void]
+			`get random()`	0.0	100.0
+	
+		[think]
+			[last result]
+				`<=`	35.0
+			[true]
+		
+			[think]
+				[void]
+					`is the skill in cooltime()`	7
+				[true]
+				[return]
+					-1
+				[false]
+				[import ai]
+					`strilking_pattern.ai`
+			[/think]
+	[false]
+	[think]
+		[last result]
+			`>=`	65.0
+		[true]
+	
+		[think]
+			[void]
+				`is the skill in cooltime()`	53
+			[true]
+			[return]
+				-1
+			[false]
+			[import ai]
+				`wisdom_pattern.ai`
+		[/think]
+	[false]
+	[think]
+		[void]
+			`is the skill in cooltime()`	20
+		[true]
+		[return]
+			-1
+		[false]
+		[import ai]
+			`protection_pattern.ai`
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

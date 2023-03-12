@@ -1,0 +1,134 @@
+#PVF_File
+
+[minimum info]
+	`微笑的斑格`	2	1	0	0	70	0	0	0	0	0	0
+	`no creature`	0	0	0
+
+[additional character status]
+	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	10	10	10	20	20	20	20	20	20	20	20	20	20	1	20	1	0	20	20	1
+[/additional character status]
+
+[character status rate]
+	420	1000	1	1	1	1	1	1.5	1	1.5	1	1	1	1	0.4	0.4	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+[/character status rate]
+
+[attack damage rate]
+	0.08
+
+[add equipment status from level]
+	1
+
+[armor subtype]
+	4
+
+[default equipment]
+	0
+
+[quick skill]
+	5	15
+	6	15
+	47	20
+	190	1
+[/quick skill]
+
+[skill]
+	197	1
+	4	10
+	7	1
+	12	1
+	27	1
+	22	10
+	23	1
+	66	1
+	64	8
+	111	10
+	181	3
+	184	1
+	179	8
+	174	85
+	55	1
+	169	1
+	178	10
+	186	10
+[/skill]
+
+[quick item]
+[/quick item]
+
+[equipment]
+	104000392	4	0
+	10400	4	0
+	12400	0	0
+	104560565	2	0
+	104500492	2	0
+	104510585	2	0
+	104540454	2	0
+	104580072	2	0
+[/equipment]
+
+[think term]
+	400
+
+[destination change term]
+	600
+
+[keep distance with target]
+	200
+
+[warlike]
+	0
+
+[vision]
+	1000
+
+[keep range distance with target]
+	-30	0	50	600
+
+[targeting bonus]
+	0	0	100	0	0	0	100	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	`[down]`	0	0
+	`[stun]`	0
+
+[ai pattern]
+	`Event.ai`
+	`DestinationSelect.ai`
+	`Action.ai`
+	`MoveMethod.ai`
+[/ai pattern]
+
+[proc action]
+	`action/proc.act`
+
+[key stream]
+	`attack5`
+	`attack5.key`
+	`attack6`
+	`attack6.key`
+	`attack47`
+	`attack47.key`
+	`attack190`
+	`attack190.key`
+	`combo`
+	`combo.key`
+[/key stream]
+
+[key cooltime]
+	`attack5`	20000
+	`attack6`	5000
+	`attack47`	3000
+	`attack190`	3000
+	`combo`	3000
+[/key cooltime]
+
+[speech on situation]
+	[on appear]
+		`让开`	100
+	[on attack]
+		`砰！！！`	100	0
+	[on attack]
+		`跪下， 你这家伙！`	100	1
+	[on die]
+		`撤退`	100
+[/speech on situation]
+
+[no cooltime]

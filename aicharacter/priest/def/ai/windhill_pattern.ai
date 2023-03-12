@@ -1,0 +1,50 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[set party member]
+			1
+		[true]
+	
+		[think]
+			[party member hp]
+				`%<`	35
+			[true]
+		
+			[think]
+				[set party member]
+					0
+				[true]
+			
+				[think]
+					[party member hp]
+						`%<`	35
+					[true]
+				
+					[think]
+						[my level]
+							`is in range()`	41	99
+						[true]
+						[return]
+							10
+						[false]
+						[return]
+							-1
+					[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+[/ai pattern]

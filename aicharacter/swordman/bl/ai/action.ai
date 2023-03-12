@@ -1,0 +1,195 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check skill on]
+			3
+		[false]
+		[return str]
+			`auto_g`
+		[true]
+	
+		[think]
+			[check skill on]
+				84
+			[false]
+			[return str]
+				`keiga`
+			[true]
+		
+			[think]
+				[check skill on]
+					18
+				[false]
+				[return str]
+					`gyb`
+				[true]
+			
+				[think]
+					[void]
+						`number of in attack area()`	200.0	200.0	100.0	100.0
+						`friend`
+						`passive object`	20013
+				
+					[think]
+						[last result]
+							`<=`	0.0
+						[true]
+					
+						[think]
+							[check key cooltime]
+								`bre`
+							[true]
+						
+							[think]
+								[void]
+									`is target in attack area()`	90.0	90.0	10.0	10.0
+								[true]
+							
+								[think]
+									[check key cooltime]
+										`ypc`
+									[true]
+								
+									[think]
+										[check key cooltime]
+											`combo`
+										[true]
+									
+										[think]
+											[check key cooltime]
+												`combo1`
+											[true]
+											[return]
+												-1
+											[false]
+											[return str]
+												`combo1`
+										[/think]
+	[false]
+	[return str]
+		`combo`
+	[/think]
+	[false]
+	[return str]
+		`ypc`
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	370.0	10.0	30.0	30.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`ghost_s`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`combo`
+				[true]
+			
+				[think]
+					[check key cooltime]
+						`combo1`
+					[true]
+					[return]
+						-1
+					[false]
+					[return str]
+						`combo1`
+				[/think]
+	[false]
+	[return str]
+		`combo`
+	[/think]
+	[false]
+	[return str]
+		`ghost_s`
+	[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`saya`
+		[true]
+		[return]
+			-1
+		[false]
+		[return str]
+			`saya`
+	[/think]
+	[/think]
+	[/think]
+	[false]
+	[return str]
+		`bre`
+	[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	90.0	90.0	10.0	10.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`ypc`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`combo`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`combo`
+			[/think]
+	[false]
+	[return str]
+		`ypc`
+	[/think]
+	[think]
+		[void]
+			`is target in attack area()`	370.0	10.0	30.0	30.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`ghost_s`
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`combo`
+				[true]
+				[return]
+					-1
+				[false]
+				[return str]
+					`combo`
+			[/think]
+	[false]
+	[return str]
+		`ghost_s`
+	[/think]
+	[false]
+	[think]
+		[check key cooltime]
+			`saya`
+		[true]
+		[return]
+			-1
+		[false]
+		[return str]
+			`saya`
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]

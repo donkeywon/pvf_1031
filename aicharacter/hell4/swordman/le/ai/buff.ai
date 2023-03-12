@@ -1,0 +1,34 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[check key cooltime]
+			`buff`
+		[false]
+		[return str]
+			`buff`
+		[true]
+		[return]
+			-1
+	
+		[think]
+			[void]
+				`is target in attack area()`	120.0	120.0	25.0	25.0
+			[true]
+		
+			[think]
+				[check key cooltime]
+					`buff`
+				[false]
+				[return str]
+					`buff`
+				[true]
+				[return]
+					-1
+			[/think]
+	[false]
+	[return]
+		-1
+	[/think]
+	[/think]
+[/ai pattern]

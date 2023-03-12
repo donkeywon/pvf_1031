@@ -1,0 +1,55 @@
+#PVF_File
+
+[ai pattern]
+	[think]
+		[void]
+			`is target in attack area()`	100.0	10.0	20.0	20.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`chargecrash`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`chargecrash`
+		[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	130.0	20.0	40.0	40.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`hopsmash_near`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`hopsmash_near`
+		[/think]
+	[false]
+	[think]
+		[void]
+			`is target in attack area()`	190.0	30.0	70.0	70.0
+		[true]
+	
+		[think]
+			[check key cooltime]
+				`dragon_triple_slash`
+			[true]
+			[return]
+				-1
+			[false]
+			[return str]
+				`dragon_triple_slash`
+		[/think]
+	[false]
+	[/think]
+	[/think]
+	[/think]
+[/ai pattern]
