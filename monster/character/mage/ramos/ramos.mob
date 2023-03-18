@@ -1,0 +1,217 @@
+#PVF_File
+
+[name]
+	`逆月者拉莫斯`
+
+[floating height]
+	0
+
+[width]
+	40	10
+
+[face image]
+	`Monster/MonsterFace.img`	1046
+
+[ability category]
+	`[HP MAX]`	`*`	400
+	`[PHYSICAL_ATTACK]`	`*`	100
+	`[PHYSICAL_DEFENSE]`	`*`	100
+	`[MAGICAL_ATTACK]`	`*`	100
+	`[MAGICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	200
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	200
+[/ability category]
+
+[category]
+	`[human]`
+[/category]
+
+[summon skill status up type]
+	1
+
+[ability table]
+	1
+
+[summon skill status up rate]
+	0.0	0.0	0.0	0.0	2.0	2.0	2.0	0.0	2.0	0.0
+
+[level]
+	17	19
+
+[slow resistance]
+	1000	1000
+
+[freeze resistance]
+	1000	1000
+
+[poison resistance]
+	50	50
+
+[stun resistance]
+	180	180
+
+[curse resistance]
+	1000	1000
+
+[blind resistance]
+	1000	1000
+
+[lightning resistance]
+	50	50
+
+[stone resistance]
+	1000	1000
+
+[sleep resistance]
+	1000	1000
+
+[bleeding resistance]
+	50	50
+
+[confuse resistance]
+	1000	1000
+
+[hold resistance]
+	1000	1000
+
+[fire resistance]
+	10	10
+
+[water resistance]
+	10	10
+
+[dark resistance]
+	10	10
+
+[light resistance]
+	10	10
+
+[move speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	90000	90000
+
+[keep range distance with target]
+	50	200	50	200
+
+[keep distance with target]
+	200
+
+[targeting nearest]
+	1
+
+[sight]
+	500
+
+[warlike]
+	80
+
+[superarmor on attack]
+	1	100
+
+[stuckbonus on damage]
+	10	10	0	0
+
+[waiting action]
+	`Action/Stay.act`
+
+[move motion]
+	`Animation/Move.ani`
+
+[sit motion]
+	`Animation/Stay.ani`
+
+[damage motion 1]
+	`Animation/Stay.ani`
+
+[damage motion 2]
+	`Animation/Stay.ani`
+
+[down motion]
+	`Animation/Stay.ani`
+
+[overturn motion]
+	`Animation/Dash.ani`
+
+[attack action]
+	`action/AppearRamos_04.act`
+	`action/PunchAttack1_01.act`
+	`action/PunchAttack2_02.act`
+	`action/skill_PunchStart_01.act`
+	`action/skill_PunchMove_01.act`
+	`action/skill_PunchAttack1_01.act`
+	`action/skill_PunchAttack2_02.act`
+	`action/skill_GluttonyStart_03.act`
+	`action/skill_GluttonyAttack_03.act`
+	`action/skill_GluttonyEnd_04.act`
+	`action/skill_GatherAttack_09.act`
+	`action/skill_1up_08.act`
+	`action/skill_4start_46.act`
+	`action/skill_4start_none_46.act`
+	`action/skill_4end_46.act`
+	`action/skill_disappear_01.act`
+[/attack action]
+
+[attack info]
+	`AttackInfo/Summon.atk`
+	`AttackInfo/BaseAttack1.atk`
+	`AttackInfo/BaseAttack2.atk`
+	``
+	`AttackInfo/PunchAttackMove.atk`
+	`AttackInfo/PunchAttack1.atk`
+	`AttackInfo/PunchAttack2.atk`
+	``
+	``
+	``
+	`AttackInfo/GatherAttack.atk`
+	`AttackInfo/mealDownHit.atk`
+	`AttackInfo/mealAbsorbMultiHit.atk`
+	``
+	`AttackInfo/mealFinish.atk`
+	`AttackInfo/UnSummon.atk`
+[/attack info]
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Event.ai`
+		`ai/Event.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Event.ai`
+		`ai/Event.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Event.ai`
+		`ai/Event.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Event.ai`
+		`ai/Event.ai`
+	[/ultimate]
+[/ai pattern]
+
+[think term]
+	200
+
+[destination change term]
+	300

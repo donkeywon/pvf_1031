@@ -1,0 +1,9 @@
+#PVF_File
+
+[use animation]
+	`electric_line.ani`
+	`line`
+
+[add]
+	0	10001
+	`line`

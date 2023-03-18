@@ -1,0 +1,62 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/PunchAttack/PunchMove_01.ani`
+[/MOTION]
+
+[TRIGGER]
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+	[SET SPEED]
+		[X AXIS]
+			1000
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[WHICH]
+	[ALL ENEMY]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+			[MONSTER]
+			[AI CHARACTER]
+		[/IS OBJECT TYPE]
+		[IS BACKPOS]
+		[CHECK DISTANCE]
+			60	30
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+	[/SET SPEED]
+	[SET ACTION]
+	[ATTACK]
+		5
+	[NOW]
+[/BEHAVIOR]

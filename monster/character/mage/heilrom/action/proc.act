@@ -1,0 +1,33 @@
+#PVF_File
+
+[TRIGGER]
+	[IF]
+		`time`	
+		[+]
+			1000
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[SUMMON MASTER]
+	[CHECKUP]
+		[DISTANCE]
+		[>]
+			120
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[CHANGE MY TARGET]
+[/BEHAVIOR]
