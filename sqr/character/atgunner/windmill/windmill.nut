@@ -4,29 +4,26 @@
 
 
 
-function onAfterSetState_atgunner_windmill(aTDO99_5mm438pBoYsK6, qBMbiY8TcO7eSp2Uc0aHu, hgK1YVEtFcfVeOGq, mLk3KNLf_CRqaboxmYWUu0)
+function onAfterSetState_atgunner_windmill(obj, state, datas, isResetTimer)
 {
- if (!aTDO99_5mm438pBoYsK6) return;
- local wuCEHJ7aLa8KV = aTDO99_5mm438pBoYsK6.sq_GetVectorData(hgK1YVEtFcfVeOGq, 0); 
- aTDO99_5mm438pBoYsK6.getVar().clear_vector(); 
- aTDO99_5mm438pBoYsK6.getVar().push_vector(wuCEHJ7aLa8KV); 
- local xkk_TY0_4lM5kR3exEzYhF = sq_GetSkillLevel(aTDO99_5mm438pBoYsK6, 250); 
- if(xkk_TY0_4lM5kR3exEzYhF > 0)
+ if (!obj) return;
+ if(sq_GetSkillLevel(obj, 253) > 0)//如果我學了花式槍術
  {
- local l3nZWSKeIsYqrqIEde2ezRO = aTDO99_5mm438pBoYsK6.sq_GetLevelData(250, 0, xkk_TY0_4lM5kR3exEzYhF);
- local miUJbfijWv5B6Fj = aTDO99_5mm438pBoYsK6.sq_GetLevelData(250, 1, xkk_TY0_4lM5kR3exEzYhF);
- aTDO99_5mm438pBoYsK6.sq_SetStaticMoveInfo(0, l3nZWSKeIsYqrqIEde2ezRO, l3nZWSKeIsYqrqIEde2ezRO, true);
- aTDO99_5mm438pBoYsK6.sq_SetStaticMoveInfo(1, miUJbfijWv5B6Fj, miUJbfijWv5B6Fj, true);
- aTDO99_5mm438pBoYsK6.sq_SetMoveDirection(aTDO99_5mm438pBoYsK6.getDirection(), ENUM_DIRECTION_NEUTRAL); 
+local skill_level = sq_GetSkillLevel(obj, 253);//獲取花式槍術技能等級
+local XPosmove = obj.sq_GetLevelData(253, 0, skill_level);//獲取x軸移動距離
+local YPosmove = obj.sq_GetLevelData(253, 1, skill_level);//獲取y軸移動距離
+ obj.sq_SetStaticMoveInfo(0, XPosmove, XPosmove, true);//設置x軸移動信息
+ obj.sq_SetStaticMoveInfo(1, YPosmove, YPosmove, true);//設置y軸移動信息
+ obj.sq_SetMoveDirection(obj.getDirection(), ENUM_DIRECTION_NEUTRAL);
  }
 } ;
 
 
 
-function onProcCon_atgunner_windmill(Y8MzuLvB5EFfBGpWB)
+function onProcCon_atgunner_windmill(obj)
 {
- if (!Y8MzuLvB5EFfBGpWB) return;
- local P5knwlwwNiP2Y9m_NlX3v = Y8MzuLvB5EFfBGpWB.getVar().get_vector(0);
- if (P5knwlwwNiP2Y9m_NlX3v == 3) 
- onProcIsSub_My_atgunner_stylish(Y8MzuLvB5EFfBGpWB);
+ if (!obj) return;
+ local sub = obj.getVar().get_vector(0);
+ if (sub == 3) 
+ onProcIsSub_My_atgunner_stylish(obj);
 } ;

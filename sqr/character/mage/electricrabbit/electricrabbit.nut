@@ -150,7 +150,6 @@ function onEndCurrentAni_mage_electricrabbit(Isf0yQTA2j)
 } ;
 
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function onEndState_mage_electricrabbit(Isf0yQTA2j, gN0sCdJwJfkODCTTU2O1lc34)
 {
  if(!Isf0yQTA2j) return;

@@ -145,7 +145,6 @@ function onProcCon_atgunner_suppressingfire(QzdzqMM6YDQ3H6)
 } ;
 
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function onChangeSkillEffect_atgunner_suppressingfire(aTDO99_5mm438pBoYsK6, qBMbiY8TcO7eSp2Uc0aHu, hgK1YVEtFcfVeOGq)
 {
  if(!aTDO99_5mm438pBoYsK6) return;

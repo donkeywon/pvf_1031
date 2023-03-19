@@ -206,7 +206,6 @@ function onProc_priest_unholyfury(iR7NOlkCJTKIjW)
 } ;
 
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function onChangeSkillEffect_priest_unholyfury(kK_RAK4UNJb0vCf9PEH, qFqSM8H5CBb3XdAC, KWSPdyxGGWJ_63u3)
 {
  if(!kK_RAK4UNJb0vCf9PEH) return;

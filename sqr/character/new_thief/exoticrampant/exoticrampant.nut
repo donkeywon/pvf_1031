@@ -1,6 +1,6 @@
 
-//ÄY¸T­Ë½æª¯¡A¦¹nut§Þ¯à¬°²³Äw©ÒÄÝ¡C¥u¶R²³Äw¡A¥t¥~»Ý­n°Ñ¥[ªÌ¥i¥HÁpÃ´§Ú
-//§@ªÌ¡G¼C¸t60 QQ506807329   ¦¬®{NUT½sµ{¼g§Þ¯à ¤â§â¤â±Ð¾Ç1500¤@¦ì¡C¥t¥~1000¾Ç¶O°òÂ¦¨ì¤j¯«¡A±`¥Î­×§ï ¨Ò¦p¡G©â¼ú¾÷ Å]²° ®ø¯Ó«~ ¸Ë³Æ °Æ¥» «°Âí NPC NPK ©Çª« Ãdª« act obj  UI±Ðµ{¥þ³£¦³¡A¤£·|¥i¥H»·µ{¡C
+//ï¿½Yï¿½Tï¿½Ë½æª¯ï¿½Aï¿½ï¿½nutï¿½Þ¯à¬°ï¿½ï¿½ï¿½wï¿½ï¿½ï¿½Ý¡Cï¿½uï¿½Rï¿½ï¿½ï¿½wï¿½Aï¿½tï¿½~ï¿½Ý­nï¿½Ñ¥[ï¿½Ì¥iï¿½Hï¿½pÃ´ï¿½ï¿½
+//ï¿½@ï¿½Ì¡Gï¿½Cï¿½t60 QQ506807329   ï¿½ï¿½ï¿½{NUTï¿½sï¿½{ï¿½gï¿½Þ¯ï¿½ ï¿½ï¿½ï¿½ï¿½Ð¾ï¿½1500ï¿½@ï¿½ï¿½Cï¿½tï¿½~1000ï¿½Ç¶Oï¿½ï¿½Â¦ï¿½ï¿½jï¿½ï¿½ï¿½Aï¿½`ï¿½Î­×§ï¿½ ï¿½Ò¦pï¿½Gï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½]ï¿½ï¿½ ï¿½ï¿½ï¿½Ó«~ ï¿½Ë³ï¿½ ï¿½Æ¥ï¿½ ï¿½ï¿½ï¿½ï¿½ NPC NPK ï¿½Çªï¿½ ï¿½dï¿½ï¿½ act obj  UIï¿½Ðµ{ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½|ï¿½iï¿½Hï¿½ï¿½ï¿½{ï¿½C
 
 
  
@@ -28,7 +28,6 @@ function checkExecutableSkill_thief_exoticrampant(zebrUf85bpwk)
 
  
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); 
 function checkCommandEnable_thief_exoticrampant(zebrUf85bpwk)
 {
  if(!zebrUf85bpwk) return false; 

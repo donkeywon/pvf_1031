@@ -84,7 +84,6 @@ function onSetState_IceMan(obj, state, datas, isResetTimer)
 		obj.sq_AddAimPointMark(offsetX, posY, vX, vY);
 	
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ICEMAN1);
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 	else if(substate == SUB_STATE_ICEMAN_WAIT)
 	{
@@ -94,15 +93,12 @@ function onSetState_IceMan(obj, state, datas, isResetTimer)
 		obj.getVar("dash").push_vector(dstX); //
 		
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ICEMAN6);
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
-
 	}
 	else if(substate == SUB_STATE_ICEMAN_1)
 	{
 		// 타겟팅 가두기
 		print(" sub_state_1");
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ICEMAN2);
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		
 	}
 	else if(substate == SUB_STATE_ICEMAN_2)
@@ -134,12 +130,11 @@ function onSetState_IceMan(obj, state, datas, isResetTimer)
 		obj.getVar("dash").push_vector(disY); // y축 이동거리 : i: 4
 	
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ICEMAN3);
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
+		
 	}
 	else if(substate == SUB_STATE_ICEMAN_3) {
 	// 때리기
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ICEMAN4);
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		obj.sq_SetCurrentAttackInfo(CUSTOM_ATTACK_INFO_ICEMAN);
 		
 		local multiHitAttackRate = obj.sq_GetBonusRateWithPassive(SKILL_ICEMAN, 
@@ -159,9 +154,9 @@ function onSetState_IceMan(obj, state, datas, isResetTimer)
 	else if(substate == SUB_STATE_ICEMAN_4) {
 	// 폭발
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ICEMAN5);
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
+		
 	}
-	
+	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED,SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.2, 1.2);
 	
 
 }

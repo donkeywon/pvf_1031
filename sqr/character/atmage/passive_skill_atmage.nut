@@ -7,7 +7,16 @@
 
 function ProcPassiveSkill_ATMage(obj, skill_index, skill_level)
 {
-	if (skill_index == SKILL_EXPRESSION)
+
+	if(skill_index == SKILL_ATMAGE_COMMINTERRUPT)
+	{
+		if(skill_level > 0)
+		{
+			local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skill_index, false, "character/atmage/appendage/ap_atmage_comminterrupt.nut", true);
+		}
+	}
+	
+	else if (skill_index == SKILL_EXPRESSION)
 	{
 		if(skill_level > 0)
 		{
@@ -36,7 +45,7 @@ function ProcPassiveSkill_ATMage(obj, skill_index, skill_level)
 		}
 	}
 	else if(skill_index == SKILL_DIEHARD)
-	{ // 불사
+	{ // i¿½O≫i¿½
 		if(skill_level > 0)
 		{
 			local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skill_index, false, 
@@ -49,7 +58,7 @@ function ProcPassiveSkill_ATMage(obj, skill_index, skill_level)
 	
 	}
 	else if(skill_index == SKILL_TUNDRASOUL)
-	{ // 툰드라의 가호
+	{ // i¿½i¿½i¿½i¿½i¿½i¿½i¿?i¿½i¿½E￡
 		if(skill_level > 0)
 		{
 			local skill = sq_GetSkill(obj, SKILL_TUNDRASOUL);
@@ -70,7 +79,7 @@ function ProcPassiveSkill_ATMage(obj, skill_index, skill_level)
 					//{
 						//if(sq_IsInBattle())
 						//{
-							//local range = obj.sq_GetIntData(SKILL_TUNDRASOUL , 0);// 0. 빙결 상태이상에 걸리는 효과범위
+							//local range = obj.sq_GetIntData(SKILL_TUNDRASOUL , 0);// 0. i¿½i¿½i¿½i¿½ i¿½i¿½i¿½i¿½i¿½I≫i¿½ i¿½E¸i¿½i¿½i¿½ E¿i¿½i¿½i¿½i¿½i¿½i¿½
 							//local AuraTundraSoulAppendage = appendage.sq_AddSquirrelAuraMaster("AuraTundraSoul",obj, obj, range, 18, 5, 0);
 						//}
 						//else
@@ -84,6 +93,13 @@ function ProcPassiveSkill_ATMage(obj, skill_index, skill_level)
 					//}
 				}
 			}
+		}
+	}
+	else if (skill_index == SKILL_BENYUAN)
+	{
+		if(skill_level > 0)
+		{
+			local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skill_index, false, "character/common/ap_benyuan.nut", true);
 		}
 	}
 	

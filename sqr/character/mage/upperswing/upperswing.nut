@@ -5,7 +5,6 @@
 
 
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function onAfterSetState_mage_MageUpperSwing(A4ZZlVhqV6, aTXgCO5MIXMm9XRC2, PfQkLZrEBwQpBgT4o, Epk_o0s9PvA_J0fUiPBDF1wo)
 {
  if (!A4ZZlVhqV6) return;

@@ -14,7 +14,7 @@ function onAfterSetState_swordman_attack(obj, state, datas, isResetTimer) {
         case 2:
             break;
     }
-    //wavemark_swordman_attack(obj, state, datas, isResetTimer);
+    wavemark_swordman_attack(obj, state, datas, isResetTimer);
     weaponcombo_swordman_attack(obj, state, datas, isResetTimer);
 };
 

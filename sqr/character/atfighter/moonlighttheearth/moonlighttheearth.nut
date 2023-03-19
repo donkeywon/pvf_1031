@@ -36,7 +36,6 @@ function checkCommandEnable_atfighter_moonlighttheearth(AdssrwWAJx1iEHlcYFvcyJ)
 
  
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function onSetState_atfighter_moonlighttheearth(AdssrwWAJx1iEHlcYFvcyJ, Gf3CehPfZwSnBxuqI7qdg, jvl9UXckHEJQmMqiga6785Ki, qgEHf4cgG3bz2AJLk)
 {
  if(!AdssrwWAJx1iEHlcYFvcyJ) return; 

@@ -125,7 +125,6 @@ function onKeyFrameFlag_atgunner_openfire(Y8MzuLvB5EFfBGpWB, P5knwlwwNiP2Y9m_NlX
 } ;
 
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function onProc_atgunner_openfire(_cGCreQXXwDdQ)
 {
  if(!_cGCreQXXwDdQ) return;

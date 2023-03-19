@@ -5,7 +5,6 @@
 
 
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function onProcCon_gunner_punisher2(fpBFMyPFwAsS1_9QIBJxjC)
 {
  if (!fpBFMyPFwAsS1_9QIBJxjC) return;

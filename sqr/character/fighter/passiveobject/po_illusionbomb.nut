@@ -21,7 +21,6 @@ function setCustomData_po_illusionbomb(s8oc9v3qeYKqKN9rbMe,HIY9FLlUCXTIbuVM)
 } ;
 
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function onEndCurrentAni_po_illusionbomb(Uv8N7K680yJqcd8)
 {
  if(!Uv8N7K680yJqcd8) return;

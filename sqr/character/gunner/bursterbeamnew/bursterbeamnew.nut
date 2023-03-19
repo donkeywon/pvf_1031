@@ -20,7 +20,6 @@ function checkExecutableSkill_gunner_bursterbeamnew(M79WZ6Po87Wh_ewXh)
 
  
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function checkCommandEnable_gunner_bursterbeamnew(M79WZ6Po87Wh_ewXh)
 {
  if(!M79WZ6Po87Wh_ewXh) return false; 

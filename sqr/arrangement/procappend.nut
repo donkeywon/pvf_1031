@@ -49,6 +49,11 @@ function procAppend_ATGunner(obj) {
 function procAppend_Mage(obj) {
     if (!obj) return;
 
+    if(obj.isDead()) {
+        CNSquirrelAppendage.sq_RemoveAppendage(obj, "character/mage/avatar/ap_avatar_icon.nut");
+        CNSquirrelAppendage.sq_RemoveAppendage(obj, "character/mage/avatar/ap_avatar.nut");
+    }
+
     Common_procAppend(obj);
 }
 

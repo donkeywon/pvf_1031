@@ -10,7 +10,7 @@ function checkExecutableSkill_mage_avatar(SIIxfEfI_IoLoCj)
 {
  if(!SIIxfEfI_IoLoCj) return false; 
  local QQFTyZzfnqNnrzIi8 = CNSquirrelAppendage.sq_GetAppendage(SIIxfEfI_IoLoCj, "character/mage/avatar/ap_avatar.nut"); 
- if(QQFTyZzfnqNnrzIi8) 
+ if(QQFTyZzfnqNnrzIi8 && QQFTyZzfnqNnrzIi8.isValid()) 
  {
  
  if(QQFTyZzfnqNnrzIi8.getVar("skill").getBool(0) == false)
@@ -199,6 +199,7 @@ function onAppendApEff_qq506807329_mage_avatar(tyF8WF78_m)
  local HTExDVgffJOPwyg = sq_GetSkillLevel(tyF8WF78_m, 245); 
  local QDvJ_U6nP_RZb0 = sq_GetLevelData(tyF8WF78_m, 245, 0, HTExDVgffJOPwyg); 
  local jf3ATPaBEllkefbWXez = sq_GetLevelData(tyF8WF78_m, 245, 1, HTExDVgffJOPwyg).tofloat() * sq_GetAbilityConvertRate(tyF8WF78_m, CONVERT_TABLE_TYPE_HP); 
+ local skill_dates = sq_GetLevelData(tyF8WF78_m, 245, 3, HTExDVgffJOPwyg); 
  local zzAg7n3DFovKftgs8vA = sq_GetLevelData(tyF8WF78_m, 245, 2, HTExDVgffJOPwyg); 
  local pHCgbtCwwgAU3gyKRYE = sq_GetLevelData(tyF8WF78_m, 245, 3, HTExDVgffJOPwyg); 
  local OnqpVE4NMwl = sq_GetLevelData(tyF8WF78_m, 245, 4, HTExDVgffJOPwyg); 
@@ -219,9 +220,12 @@ function onAppendApEff_qq506807329_mage_avatar(tyF8WF78_m)
  DzDNFS6H5MkzMxGVJZNXBO.addParameter(CHANGE_STATUS_TYPE_ATTACK_SPEED, false, pHCgbtCwwgAU3gyKRYE.tofloat());
  DzDNFS6H5MkzMxGVJZNXBO.addParameter(CHANGE_STATUS_TYPE_MOVE_SPEED, false, OnqpVE4NMwl.tofloat());
  DzDNFS6H5MkzMxGVJZNXBO.addParameter(CHANGE_STATUS_TYPE_ACTIVESTATUS_TOLERANCE_ALL, false, bLlnmdLZRZWgmJF.tofloat());
+skill_dates = skill_dates*3
+ DzDNFS6H5MkzMxGVJZNXBO.addParameter(CHANGE_STATUS_TYPE_PHYSICAL_CRITICAL_DAMAGE_RATE, false, skill_dates.tofloat());
  }
- local PWleEW2oykUqwqYZKd65 = CNSquirrelAppendage.sq_AppendAppendage(tyF8WF78_m, tyF8WF78_m, 245, true, "character/mage/avatar/ap_avatar.nut", false); 
- CNSquirrelAppendage.sq_AppendAppendageID(PWleEW2oykUqwqYZKd65, tyF8WF78_m, tyF8WF78_m, 246, false); 
+ //local PWleEW2oykUqwqYZKd65 = CNSquirrelAppendage.sq_AppendAppendage(tyF8WF78_m, tyF8WF78_m, 245, true, "character/mage/avatar/ap_avatar.nut", false); 
+ //CNSquirrelAppendage.sq_AppendAppendageID(PWleEW2oykUqwqYZKd65, tyF8WF78_m, tyF8WF78_m, 246, false); 
+ local PWleEW2oykUqwqYZKd65 = CNSquirrelAppendage.sq_AppendAppendage(tyF8WF78_m, tyF8WF78_m, 245, false, "character/mage/avatar/ap_avatar.nut", true); 
 } ;
 
 
@@ -261,8 +265,9 @@ function setCurrentAnimation_mage_avatar(X6HdYKIBae466vJb3Y, IdY8GzGkxRLrZKvWT1)
 function setCurrentAnimation_avatar_eff(MDkdSAyFS2ujtrenicQAN, MJhlT2WpfdRsVa9_qhUt9cP, ZsR0D8s3G4GWBo)
 {
  
- local sekYCFZiZho = null;
- sekYCFZiZho = MDkdSAyFS2ujtrenicQAN.getVar().GetAnimationMap("mage_avatar_" + MJhlT2WpfdRsVa9_qhUt9cP, "character/mage/effect/animation/avatar/js60qq506807329_skin/" + MJhlT2WpfdRsVa9_qhUt9cP + ".ani");
+ //local sekYCFZiZho = null;
+ //sekYCFZiZho = MDkdSAyFS2ujtrenicQAN.getVar().GetAnimationMap("mage_avatar_" + MJhlT2WpfdRsVa9_qhUt9cP, "character/mage/effect/animation/avatar/js60qq506807329_skin/" + MJhlT2WpfdRsVa9_qhUt9cP + ".ani");
+ local sekYCFZiZho = sq_CreateAnimation("","character/mage/effect/animation/avatar/js60qq506807329_skin/" + MJhlT2WpfdRsVa9_qhUt9cP + ".ani");
  if(sekYCFZiZho && ZsR0D8s3G4GWBo)
  sq_Rewind(sekYCFZiZho); 
  return sekYCFZiZho; 

@@ -32,7 +32,6 @@ function checkCommandEnable_gunner_g38arg(lxM2KkDuBOQhR)
 
  
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function onSetState_gunner_g38arg(GNwHN9o7zA, Sk6nYn81GrxbAV, kTbiDnTL6NDFvtTwaB, M46uOO8uVKijlZhJYQeMA)
 {
  if(!GNwHN9o7zA) return; 

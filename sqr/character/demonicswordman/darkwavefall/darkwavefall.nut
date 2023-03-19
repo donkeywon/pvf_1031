@@ -31,10 +31,12 @@ function onSetState_DarkWaveFall(obj, state, datas, isResetTimer)
 	if(state == 0)
 	{
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_DARKWAVEFALL_CASTING_BODY);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 	if(state == 1)
 	{
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_DARKWAAVEFALL_ATT_BODY);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}	
 }
 

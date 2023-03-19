@@ -33,12 +33,14 @@ function onSetState_DarkBurst(obj, state, datas, isResetTimer)
 	if(state == 0)
 	{
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_DARKBURST_READY_BODY);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 2.0, 2.0);
 		obj.sq_AddStateLayerAnimation(0, obj.sq_CreateCNRDAnimation("Effect/Animation/DarkBurst_DS/1_Ready/Back/DarkBurst_Ready_Back.ani"), 0, 0);
 		obj.sq_AddStateLayerAnimation(0, obj.sq_CreateCNRDAnimation("Effect/Animation/DarkBurst_DS/1_Ready/Front/DarkBurst_Ready_Front.ani"), 0, 0);
 	}
 	if(state == 1)
 	{
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_DARKBURST_SWING_BODY);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		
 		obj.sq_AddStateLayerAnimation(0, obj.sq_CreateCNRDAnimation("Effect/Animation/DarkBurst_DS/2_Swing/Back/DarkBurst_Swing_Back.ani"), 0, 0);
 		obj.sq_AddStateLayerAnimation(0, obj.sq_CreateCNRDAnimation("Effect/Animation/DarkBurst_DS/2_Swing/Front/DarkBurst_Swing_Front.ani"), 0, 0);
@@ -51,6 +53,7 @@ function onSetState_DarkBurst(obj, state, datas, isResetTimer)
 	if(state == 2)
 	{
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_DARKBURST_SMASH_BODY);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		obj.sq_AddStateLayerAnimation(0, obj.sq_CreateCNRDAnimation("Effect/Animation/DarkBurst_DS/3_Smash/Back/DarkBurst_Smash_Back.ani"), 0, 0);
 		obj.sq_AddStateLayerAnimation(0, obj.sq_CreateCNRDAnimation("Effect/Animation/DarkBurst_DS/3_Smash/Front/DarkBurst_Smash_Blade01.ani"), 0, 0);
 		obj.sq_AddStateLayerAnimation(0, obj.sq_CreateCNRDAnimation("Effect/Animation/DarkBurst_DS/DarkBurst_Smash_Back_ScreenGlow.ani"), 0, 0);
@@ -66,6 +69,7 @@ function onSetState_DarkBurst(obj, state, datas, isResetTimer)
 	if(state == 3)
 	{
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_DARKBURST_FINISH_BODY);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		obj.sq_AddStateLayerAnimation(0, obj.sq_CreateCNRDAnimation("Effect/Animation/DarkBurst_DS/4_Finish/DarkBurst_Finish_Front_Glow01.ani"), 0, 0);
 		obj.sq_AddStateLayerAnimation(0, obj.sq_CreateCNRDAnimation("Effect/Animation/DarkBurst_DS/4_Finish/DarkBurst_Finish_Front_Glow02.ani"), 0, 0);
 	}	

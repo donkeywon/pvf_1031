@@ -4,7 +4,6 @@
 
 
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function onAfterSetState_priest_apocalypse(dh9fxoGISRXeOIENS1j, NULchLBUnbdkMb8vz, hBSS6Vxpil5k1uO, SmnYNRd88rultw)
 {
  if (!dh9fxoGISRXeOIENS1j) return;

@@ -31,6 +31,7 @@ function onSetState_ChargeExplosion(obj, state, datas, isResetTimer)
 	if(state == 0)
 	{
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_CHARGEEXPLOSIONDASH01);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		obj.sq_SetCurrentAttackInfo(CUSTOM_ATTACK_INFO_CHARGEEXPLOSIONATTACK1);
 		
 		local damage = obj.sq_GetBonusRateWithPassive(SKILL_CHARGEEXPLOSION, STATE_CHARGEEXPLOSION, 0, 1.0);
@@ -49,6 +50,7 @@ function onSetState_ChargeExplosion(obj, state, datas, isResetTimer)
 	if(state == 1)
 	{
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_CHARGEEXPLOSIONDASH02);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		obj.sq_SetCurrentAttackInfo(CUSTOM_ATTACK_INFO_CHARGEEXPLOSIONATTACK2);
 		
 		local damage = obj.sq_GetBonusRateWithPassive(SKILL_CHARGEEXPLOSION, STATE_CHARGEEXPLOSION, 1, 1.0);
@@ -68,6 +70,7 @@ function onSetState_ChargeExplosion(obj, state, datas, isResetTimer)
 	if(state == 2)
 	{
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_CHARGEEXPLOSIONUPPER);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		obj.sq_SetCurrentDirection(sq_GetOppositeDirection(obj.getDirection()));
 	}	
 }

@@ -46,3 +46,5 @@ IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_CREATOR_MAGE, "Character/CreatorMage
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_CREATOR_MAGE, "Character/CreatorMage/CreatorGuardian/CreatorGuardian.nut", "CreatorGuardian", STATE_CREATORGUARDIAN, SKILL_CREATORGUARDIAN);
 
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_CREATOR_MAGE, "Character/CreatorMage/CreatorWind/CreatorWind.nut", "CreatorWind", STATE_CREATORWIND, SKILL_CREATORWIND);
+
+

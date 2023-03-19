@@ -210,7 +210,7 @@ function onChangeSkillEffect_gunner_suppressingfire(DbTkop04ElR_cgQXsEja, qPegPH
  local uVG0nAWpGnTcpMcVpnTuOt = DbTkop04ElR_cgQXsEja.getVar().get_timer_vector(0); 
  if(uVG0nAWpGnTcpMcVpnTuOt)
  uVG0nAWpGnTcpMcVpnTuOt.setEventTerm(xxNdNcBDKbPpLePR5GAMuA); 
- DbTkop04ElR_cgQXsEja.sq_SetStaticSpeedInfo(0, 0, 0, (1000 * f7sHvN0j9wyw0).tointeger(), 0.0, 0.0); 
+ DbTkop04ElR_cgQXsEja.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, (1000 * f7sHvN0j9wyw0).tointeger(), 2.0, 2.0);
  }
 } ;
 

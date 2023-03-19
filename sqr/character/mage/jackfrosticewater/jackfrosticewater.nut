@@ -34,7 +34,6 @@ function checkCommandEnable_mage_jackfrosticewater(jrxOuXKJzTQnxj3ee)
 
  
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function onSetState_mage_jackfrosticewater(SIIxfEfI_IoLoCj, QQFTyZzfnqNnrzIi8, bCXxHiJVd1ZSkBIm3MAe7Jt, VeYJxb00PjxvW1)
 {
  if(!SIIxfEfI_IoLoCj) return; 

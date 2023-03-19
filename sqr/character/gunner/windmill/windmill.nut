@@ -4,31 +4,27 @@
 
 
 
-function onAfterSetState_gunner_windmill(zFomHoW8jik, bgkGsJR7iSf, YDVeyjp9hRjlg6HiBvht, EjVyw5MGJGRhWN2fhZ_No)
+function onAfterSetState_gunner_windmill(obj, state, datas, isResetTimer)
 {
- if (!zFomHoW8jik) return;
- local KN_ht1swSs9V4d0B3ssa = zFomHoW8jik.sq_GetVectorData(YDVeyjp9hRjlg6HiBvht, 0); 
- zFomHoW8jik.getVar().clear_vector(); 
- zFomHoW8jik.getVar().push_vector(KN_ht1swSs9V4d0B3ssa); 
- local KG2G8DCnThulGWNuFJ = sq_GetSkillLevel(zFomHoW8jik, 248); 
- if(KG2G8DCnThulGWNuFJ > 0)
+ if (!obj) return;
+ if(sq_GetSkillLevel(obj, 253) > 0)//åýÍýä²ùÊÖõü£ãÒóæâú
  {
- local nY2iuYXUflJTRNq_qBE6ykT7 = zFomHoW8jik.sq_GetLevelData(248, 0, KG2G8DCnThulGWNuFJ);;
- local XzuD2IicgZXFbF8t6b5GSTcR = zFomHoW8jik.sq_GetLevelData(248, 1, KG2G8DCnThulGWNuFJ);;
- zFomHoW8jik.sq_SetStaticMoveInfo(0, nY2iuYXUflJTRNq_qBE6ykT7, nY2iuYXUflJTRNq_qBE6ykT7, true);
- zFomHoW8jik.sq_SetStaticMoveInfo(1, XzuD2IicgZXFbF8t6b5GSTcR, XzuD2IicgZXFbF8t6b5GSTcR, true);
- zFomHoW8jik.sq_SetMoveDirection(zFomHoW8jik.getDirection(), ENUM_DIRECTION_NEUTRAL); 
+local skill_level = sq_GetSkillLevel(obj, 253);//üòö¢ü£ãÒóæâúÐüÒöÔõÐä
+local XPosmove = obj.sq_GetLevelData(253, 0, skill_level);//üòö¢xõîì¹ÔÑËå×î
+local YPosmove = obj.sq_GetLevelData(253, 1, skill_level);//üòö¢yõîì¹ÔÑËå×î
+ obj.sq_SetStaticMoveInfo(0, XPosmove, XPosmove, true);//àâöÇxõîì¹ÔÑãáãÓ
+ obj.sq_SetStaticMoveInfo(1, YPosmove, YPosmove, true);//àâöÇyõîì¹ÔÑãáãÓ
+ obj.sq_SetMoveDirection(obj.getDirection(), ENUM_DIRECTION_NEUTRAL); 
  }
 } ;
 
 
 
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
-function onProcCon_gunner_windmill(rMOFGzE7p4B7DWkv)
+function onProcCon_gunner_windmill(obj)
 {
- if (!rMOFGzE7p4B7DWkv) return;
- local gHyelMuZbJE8a = rMOFGzE7p4B7DWkv.getVar().get_vector(0);
- if (gHyelMuZbJE8a == 3) 
- onProcIsSub_My_gunner_stylish(rMOFGzE7p4B7DWkv);
+ if (!obj) return;
+ local sub = obj.getVar().get_vector(0);
+ if (sub == 3) 
+ onProcIsSub_My_gunner_stylish(obj);
 } ;

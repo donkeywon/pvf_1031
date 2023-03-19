@@ -9,7 +9,6 @@ function onAfterSetState_priest_jumpattack(tg2sijw7u5a6tRTUA, LuRImcDgq6uZ, A7XG
 } ;
 
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function onKeyFrameFlag_priest_jumpattack(HmlmuQe6qZH6nJThYW1gng9, r95v9Gg7vxx)
 {
  if(!HmlmuQe6qZH6nJThYW1gng9) return false;

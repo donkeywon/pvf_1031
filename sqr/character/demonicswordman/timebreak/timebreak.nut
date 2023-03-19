@@ -173,6 +173,7 @@ function onSetState_TimeBreak(obj, state, datas, isResetTimer)
         obj.getVar("dama").clear_obj_vector(); 
         obj.sq_SetShake(obj, 1, 1020);
         obj.sq_SetCurrentAnimation(CUSTOM_ANI_TIMEBREAK_READY_BODY);
+        obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
         createReadyGround_TIMEBREAK(obj,0,-1,0);
     }
 	else if (state == 1)
@@ -181,6 +182,7 @@ function onSetState_TimeBreak(obj, state, datas, isResetTimer)
         controlAllMonster_TimeBreak(obj);	
 
         obj.sq_SetCurrentAnimation(CUSTOM_ANI_TIMEBREAK_ATTACK_BODY);
+        obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
         obj.sq_SetCurrentAttackInfo(CUSTOM_ATTACK_INFO_TIMEBREAKATTACK);
 		
 		local damage = obj.sq_GetBonusRateWithPassive(SKILL_TIMEBREAK , STATE_TIMEBREAK, 0, 1.0);

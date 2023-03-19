@@ -2,24 +2,75 @@
 //�Y�T�˽檯�A��nut�ޯର���w���ݡC�u�R���w�A�t�~�ݭn�ѥ[�̥i�H�pô��
 //�@�̡G�C�t60 QQ506807329   ���{NUT�s�{�g�ޯ� ����о�1500�@��C�t�~1000�ǶO��¦��j���A�`�έק� �Ҧp�G����� �]�� ���ӫ~ �˳� �ƥ� ���� NPC NPK �Ǫ� �d�� act obj  UI�е{�������A���|�i�H���{�C
 
-function ProcPassiveSkill_Gunner(TRBHDfekE4Z5wOHW7z1n, qZY4yCvWgk, trhWvqpRjOpi8L524cS)
+function ProcPassiveSkill_Gunner(obj, skill_index, skill_level)
 {
- switch(qZY4yCvWgk)
+ switch(skill_index)
  {
- case 248: 
- local IvYmSoSbzUJ = CNSquirrelAppendage.sq_AppendAppendage(TRBHDfekE4Z5wOHW7z1n, TRBHDfekE4Z5wOHW7z1n, qZY4yCvWgk, false, "character/gunner/appendage/ap_stylish_buff.nut", true);
- local Ii0Mor4B9g9oU = TRBHDfekE4Z5wOHW7z1n.sq_GetLevelData(qZY4yCvWgk, 2, trhWvqpRjOpi8L524cS); 
- local We9Ll6Rf_mnKKrhFqAL = TRBHDfekE4Z5wOHW7z1n.sq_GetLevelData(qZY4yCvWgk, 3, trhWvqpRjOpi8L524cS); 
- IvYmSoSbzUJ.getVar().clear_vector(); 
- IvYmSoSbzUJ.getVar().push_vector(Ii0Mor4B9g9oU); 
- IvYmSoSbzUJ.getVar().push_vector(Ii0Mor4B9g9oU); 
- 
+ case 248:
+ local IvYmSoSbzUJ = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skill_index, false, "character/gunner/appendage/ap_stylish_buff.nut", true);
+ local Ii0Mor4B9g9oU = obj.sq_GetLevelData(skill_index, 2, skill_level);
+ local We9Ll6Rf_mnKKrhFqAL = obj.sq_GetLevelData(skill_index, 3, skill_level);
+ IvYmSoSbzUJ.getVar().clear_vector();
+ IvYmSoSbzUJ.getVar().push_vector(Ii0Mor4B9g9oU);
+ IvYmSoSbzUJ.getVar().push_vector(Ii0Mor4B9g9oU);
+
  IvYmSoSbzUJ.getVar().clear_timer_vector();
  IvYmSoSbzUJ.getVar().push_timer_vector();
  local ILL7SKjHCyd = IvYmSoSbzUJ.getVar().get_timer_vector(0);
- ILL7SKjHCyd.setParameter(We9Ll6Rf_mnKKrhFqAL, -1); 
- ILL7SKjHCyd.resetInstant(0); 
+ ILL7SKjHCyd.setParameter(We9Ll6Rf_mnKKrhFqAL, -1);
+ ILL7SKjHCyd.resetInstant(0);
  break;
+ case SKILL_GUNNER_COMMINTERRUPT:
+	if(skill_level > 0)
+	{
+		local IvYmSoSbzUJ = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skill_index, false, "character/gunner/appendage/ap_gunner_comminterrupt.nut", true);
+
+	}
+ break;
+case SKILL_CROSSBOWMASTERY:
+	if(skill_level > 0)
+		{
+
+			local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skill_index, false, "Character/gunner/crossbowmastery/crossbowmastery.nut", true);
+			local sqrChr = sq_GetCNRDObjectToSQRCharacter(obj);
+			
+			if(appendage && (sqrChr.getWeaponSubType() == 4))//î¤sqrchr = 4ãÁ(â¢ÒÀøºûÜ?4)£¬â¢ÒÀïñ÷×ßæüù
+			{
+				local level_crossbowmastery = sq_GetSkillLevel(obj, SKILL_CROSSBOWMASTERY);//üòö¢ÐüÒöÔõÐä
+				local TYPE_STUCK 				= -(level_crossbowmastery/2) 	//Ù¤ñéáãñòÊ¥
+				local EQUIPMENT_PHYSICAL_ATTACK = level_crossbowmastery 		//ÙëÐïÚª×âÍôÌªñòÊ¥
+				local EQUIPMENT_MAGICAL_ATTACK 	= level_crossbowmastery 		//ÙëÐïØªÛöÍôÌªñòÊ¥
+				local MAGICAL_CRITICAL_HIT_RATE = level_crossbowmastery/2 		//ØªÛöøìÌªñòÊ¥
+				local ATTACK_SPEED 				= level_crossbowmastery*2 		//ÍôÌªáÜÓøñòÊ¥
+				
+				//ñòÊ¥Ê×ÜôÓðÓñøöîÜáÕàõ ìéÚõãÀù¬ÔÑÐüÒöüåêóìéËÁÐüÒöÓñøö£¬î¢éÄîÏËÁÊ¥ß¾ö¦ÜôüåêóäþèâîÜiconõóúÞ å¥üåÊ¥áÕàõ
+				local change_appendage = appendage.sq_getChangeStatus("crossbowmastery");//üòö¢Ü¨ûùßÒ÷¾
+				if(!change_appendage)//Ó×Üô?ßÒ÷¾Ü¨ûùãÁ£¬ôÕÊ¥ßÒ÷¾Ü¨ûùîÜID
+				{
+					change_appendage = appendage.sq_AddChangeStatusAppendageID(obj, obj, 0, CHANGE_STATUS_TYPE_STUCK, false, TYPE_STUCK, APID_COMMON);								//Ù¤ñéáã
+					change_appendage = appendage.sq_AddChangeStatusAppendageID(obj, obj, 0, CHANGE_STATUS_TYPE_EQUIPMENT_PHYSICAL_ATTACK, true, EQUIPMENT_PHYSICAL_ATTACK, APID_COMMON);	//ÙëÐïÚª×âÍôÌª
+					change_appendage = appendage.sq_AddChangeStatusAppendageID(obj, obj, 0, CHANGE_STATUS_TYPE_EQUIPMENT_MAGICAL_ATTACK, true, EQUIPMENT_MAGICAL_ATTACK, APID_COMMON);	//ÙëÐïØªÛöÍôÌª
+					change_appendage = appendage.sq_AddChangeStatusAppendageID(obj, obj, 0, CHANGE_STATUS_TYPE_MAGICAL_CRITICAL_HIT_RATE, false, MAGICAL_CRITICAL_HIT_RATE, APID_COMMON);	//ÙëÐïØªÛöøìÌª
+					change_appendage = appendage.sq_AddChangeStatusAppendageID(obj, obj, 0, CHANGE_STATUS_TYPE_ATTACK_SPEED, true, ATTACK_SPEED, APID_COMMON);							//ÍôÌªáÜÓø
+				}
+				if(change_appendage) //Ó×?ßÒ÷¾Ü¨ûùãÁ
+				{
+					change_appendage.clearParameter();//?ð¶óÑâ¦
+					change_appendage.addParameter(CHANGE_STATUS_TYPE_STUCK, false, TYPE_STUCK.tofloat());								//Ý¾Ê¥óÑâ¦ -Ù¤ñéáã
+					change_appendage.addParameter(CHANGE_STATUS_TYPE_EQUIPMENT_PHYSICAL_ATTACK, true, EQUIPMENT_PHYSICAL_ATTACK.tofloat());	//Ý¾Ê¥óÑâ¦ -ÙëÐïÚª×âÍôÌª
+					change_appendage.addParameter(CHANGE_STATUS_TYPE_EQUIPMENT_MAGICAL_ATTACK, true, EQUIPMENT_MAGICAL_ATTACK.tofloat());	//Ý¾Ê¥óÑâ¦ -ÙëÐïØªÛöÍôÌª
+					change_appendage.addParameter(CHANGE_STATUS_TYPE_MAGICAL_CRITICAL_HIT_RATE, false, MAGICAL_CRITICAL_HIT_RATE.tofloat());	//Ý¾Ê¥óÑâ¦ -ÙëÐïØªÛöøìÌª
+					change_appendage.addParameter(CHANGE_STATUS_TYPE_ATTACK_SPEED, true, ATTACK_SPEED.tofloat());							//Ý¾Ê¥óÑâ¦ -ÍôÌªáÜÓø
+				}
+			}
+		}
+	break;
+case SKILL_BENYUAN:
+	if(skill_level > 0)
+	{
+		local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skill_index, false, "character/common/ap_benyuan.nut", true);
+	}
+	break;
  }
  return true;
 } ;

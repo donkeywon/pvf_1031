@@ -94,8 +94,8 @@ function onSetState_CrystalAttack(obj, state, datas, isResetTimer)
 	local var = obj.getVar();
 	var.setBool(1,false); // 크리스탈 어택이 발동 됐는지 유무. 변수 초기화.
 	
-	//obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED,
-	//		SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);	
+	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED,
+			SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);	
 	addElementalChain_ATMage(obj, ENUM_ELEMENT_WATER);
 }	
 

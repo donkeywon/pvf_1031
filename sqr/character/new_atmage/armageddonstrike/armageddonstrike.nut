@@ -148,7 +148,6 @@ function onSetState_atmage_armageddonstrike(B74PVUwp1h, Wp5xWEER1lYn77EGo1qZc1yH
 } ;
 
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function onKeyFrameFlag_atmage_armageddonstrike(ulpO7loMZ5f8mxrT, hRuY8re0Cr)
 {
  if(!ulpO7loMZ5f8mxrT) return false;

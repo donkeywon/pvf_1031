@@ -21,7 +21,6 @@ function checkExecutableSkill_gunner_msc7(rMOFGzE7p4B7DWkv)
 
  
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function checkCommandEnable_gunner_msc7(rMOFGzE7p4B7DWkv)
 {
  if(!rMOFGzE7p4B7DWkv) return false; 

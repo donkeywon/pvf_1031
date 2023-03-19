@@ -36,7 +36,6 @@ function checkCommandEnable_mage_sestoelemento(fMrbKZyiFY0)
 
  
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function onSetState_mage_sestoelemento(PljpNED8aOP43cbnL_gYfHO, y3_u39GyX_aFwiNBL, rQ3zhJ7SyAj_nKAXeCEv, pCxq4qAfQ2l)
 {
  if(!PljpNED8aOP43cbnL_gYfHO) return; 

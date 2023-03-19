@@ -7,7 +7,6 @@
 
  
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function checkExecutableSkill_atgunner_pt_15(tqjCp58Aa1NUOXY5)
 {
  if(!tqjCp58Aa1NUOXY5) return false; 

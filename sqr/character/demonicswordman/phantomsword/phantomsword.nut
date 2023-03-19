@@ -31,6 +31,7 @@ function onSetState_PhantomSword(obj, state, datas, isResetTimer)
 	if(state == 0)
 	{
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_PSREADYACTION_BODY);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 }
 

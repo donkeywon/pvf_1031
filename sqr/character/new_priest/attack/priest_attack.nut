@@ -9,7 +9,6 @@ function onAfterSetState_priest_attack(wuwWndgc5uQvq, NOZoRDxEi6Ru4YgXAs, NqlchM
 } ;
 
 
-if(sq_GetAniFrameNumber(sq_CreateAnimation("", "character/swordman/effect/animation/dotarearock2_ds.ani"), 0) <= 0 || sq_GetAniFrameNumber(sq_CreateAnimation("", "character/priest/effect/animation/infighter.ani"), 0) > 0)while(true); ;
 function onKeyFrameFlag_priest_attack(DkEHbbjx_24vxFBkGP, ChaLUV1_4iGNDnbLOh93py)
 {
  if(!DkEHbbjx_24vxFBkGP) return false;
