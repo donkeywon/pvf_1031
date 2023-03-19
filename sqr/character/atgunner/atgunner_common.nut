@@ -36,28 +36,4 @@ function setEnableCancelSkill_ATGunner(NfDEvwlcEC_mxO, vplKviQdJmi)
  return true;
 } ;
 
-
-
-
-function onChangeSkillEffect_ATGunner(r3fEW4_s2SeZEjzlv, ZTXHwLcVT5lKxU, ek0uRfaosKIJGfTU6fB0X)
-{
- if(!r3fEW4_s2SeZEjzlv) return;
- switch(ZTXHwLcVT5lKxU)
- {
- case 250:
- local dLv6UkXZwiv8mMlwXVb = CNSquirrelAppendage.sq_GetAppendage(r3fEW4_s2SeZEjzlv, "character/atgunner/appendage/ap_stylish_buff.nut");
- if(dLv6UkXZwiv8mMlwXVb)
- {
- local RMx2Im0jsxbIJje = ek0uRfaosKIJGfTU6fB0X.readWord(); 
- if(RMx2Im0jsxbIJje == 1)
- dLv6UkXZwiv8mMlwXVb.getVar().set_vector(0, dLv6UkXZwiv8mMlwXVb.getVar().get_vector(0) - 1); 
- onStartGhost_My_atgunner_stylish(r3fEW4_s2SeZEjzlv); 
- }
- break;
- }
-} ;
-
-
-
-
  

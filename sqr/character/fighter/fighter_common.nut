@@ -34,24 +34,6 @@ function setEnableCancelSkill_Fighter(Eu2sIHKskIpQpfSgd, a2RdJFMnQsYHvMbnHt)
 } ;
 
 
-
-function onChangeSkillEffect_Fighter(FEiaZWB1pfOemFzlGreiKJx, ZK_zWOKX5ecWfHRV6w3kcf, pPPxeed4C7jz1WxjQ)
-{
- if(!FEiaZWB1pfOemFzlGreiKJx) return;
- switch(ZK_zWOKX5ecWfHRV6w3kcf)
- {
- case 235: 
- local J7diZ5_WiqUD3dzsG = pPPxeed4C7jz1WxjQ.readWord(); 
- switch(J7diZ5_WiqUD3dzsG)
- {
- case 1:
- onAppendApEff_qq506807329_fighter_poisonsnake(FEiaZWB1pfOemFzlGreiKJx); 
- break;
- }
- break;
- }
-} ;
-
 function getAttackCancelStartFrameSize_Fighter(FEiaZWB1pfOemFzlGreiKJx)
 {
  local ZK_zWOKX5ecWfHRV6w3kcf = FEiaZWB1pfOemFzlGreiKJx.sq_GetAttackCancelStartFrameSize();

@@ -1,6 +1,6 @@
 
-//ÄY¸T­Ë½æª¯¡A¦¹nut§Þ¯à¬°²³Äw©ÒÄÝ¡C¥u¶R²³Äw¡A¥t¥~»Ý­n°Ñ¥[ªÌ¥i¥HÁpÃ´§Ú
-//§@ªÌ¡G¼C¸t60 QQ506807329   ¦¬®{NUT½sµ{¼g§Þ¯à ¤â§â¤â±Ð¾Ç1500¤@¦ì¡C¥t¥~1000¾Ç¶O°òÂ¦¨ì¤j¯«¡A±`¥Î­×§ï ¨Ò¦p¡G©â¼ú¾÷ Å]²° ®ø¯Ó«~ ¸Ë³Æ °Æ¥» «°Âí NPC NPK ©Çª« Ãdª« act obj  UI±Ðµ{¥þ³£¦³¡A¤£·|¥i¥H»·µ{¡C
+//ï¿½Yï¿½Tï¿½Ë½æª¯ï¿½Aï¿½ï¿½nutï¿½Þ¯à¬°ï¿½ï¿½ï¿½wï¿½ï¿½ï¿½Ý¡Cï¿½uï¿½Rï¿½ï¿½ï¿½wï¿½Aï¿½tï¿½~ï¿½Ý­nï¿½Ñ¥[ï¿½Ì¥iï¿½Hï¿½pÃ´ï¿½ï¿½
+//ï¿½@ï¿½Ì¡Gï¿½Cï¿½t60 QQ506807329   ï¿½ï¿½ï¿½{NUTï¿½sï¿½{ï¿½gï¿½Þ¯ï¿½ ï¿½ï¿½ï¿½ï¿½Ð¾ï¿½1500ï¿½@ï¿½ï¿½Cï¿½tï¿½~1000ï¿½Ç¶Oï¿½ï¿½Â¦ï¿½ï¿½jï¿½ï¿½ï¿½Aï¿½`ï¿½Î­×§ï¿½ ï¿½Ò¦pï¿½Gï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½]ï¿½ï¿½ ï¿½ï¿½ï¿½Ó«~ ï¿½Ë³ï¿½ ï¿½Æ¥ï¿½ ï¿½ï¿½ï¿½ï¿½ NPC NPK ï¿½Çªï¿½ ï¿½dï¿½ï¿½ act obj  UIï¿½Ðµ{ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½|ï¿½iï¿½Hï¿½ï¿½ï¿½{ï¿½C
 
 
 
@@ -20,51 +20,5 @@ function setEnableCancelSkill_Thief(P17_Ie67RvIkHnpfoMfPp0, XfsYmB3qtYof_mmblqAA
  P17_Ie67RvIkHnpfoMfPp0.setSkillCommandEnable(224, XfsYmB3qtYof_mmblqAAafN); 
  P17_Ie67RvIkHnpfoMfPp0.setSkillCommandEnable(225, XfsYmB3qtYof_mmblqAAafN); 
  return true;
-} 
-
-
-
-function onChangeSkillEffect_Thief(zebrUf85bpwk, Fp6rhQKtOvlY, TMJNfY3L4tl)
-{
- if(!zebrUf85bpwk) return;
- switch(Fp6rhQKtOvlY)
- {
- case 224: 
- local UPEZnSzjrt4aFf = TMJNfY3L4tl.readWord(); 
- switch(UPEZnSzjrt4aFf)
- {
- case 1: 
- local aNYI5nmGqumVvgiY = sq_GetCNRDObjectToActiveObject(sq_GetObject(zebrUf85bpwk, TMJNfY3L4tl.readDword(), TMJNfY3L4tl.readDword())); 
- if(aNYI5nmGqumVvgiY.isDead())return; 
- local OCFKys9S_yL = CNSquirrelAppendage.sq_AppendAppendage(aNYI5nmGqumVvgiY, aNYI5nmGqumVvgiY, 224, true, "character/new_thief/appendage/ap_monster_nicolas.nut", false); 
- CNSquirrelAppendage.sq_Append(OCFKys9S_yL, aNYI5nmGqumVvgiY, aNYI5nmGqumVvgiY, false);
- 
- OCFKys9S_yL.getVar("sqrChr").clear_obj_vector(); 
- OCFKys9S_yL.getVar("sqrChr").push_obj_vector(zebrUf85bpwk); 
- break;
- case 2: 
- local aNYI5nmGqumVvgiY = sq_GetCNRDObjectToActiveObject(sq_GetObject(zebrUf85bpwk, TMJNfY3L4tl.readDword(), TMJNfY3L4tl.readDword())); 
- if(aNYI5nmGqumVvgiY.isDead())return; 
- if(aNYI5nmGqumVvgiY.isMyControlObject())
- {
- local KB2Bn0UZWmBEcV6oIluSgBuv = sq_GetGlobalIntVector(); 
- sq_IntVectorClear(KB2Bn0UZWmBEcV6oIluSgBuv); 
- sq_IntVectorPush(KB2Bn0UZWmBEcV6oIluSgBuv, 7); 
- sq_AddSetStatePacketActiveObject(aNYI5nmGqumVvgiY, 8, KB2Bn0UZWmBEcV6oIluSgBuv, STATE_PRIORITY_USER); 
- }
- break;
- case 3: 
- local aNYI5nmGqumVvgiY = sq_GetCNRDObjectToActiveObject(sq_GetObject(zebrUf85bpwk, TMJNfY3L4tl.readDword(), TMJNfY3L4tl.readDword())); 
- if(aNYI5nmGqumVvgiY.isDead())return; 
- sq_SetCurrentDirection(aNYI5nmGqumVvgiY, zebrUf85bpwk.getDirection()); 
- sq_MoveToNearMovablePos(aNYI5nmGqumVvgiY, 
- sq_GetDistancePos(zebrUf85bpwk.getXPos(), zebrUf85bpwk.getDirection(), 100), zebrUf85bpwk.getYPos(), 0,
- zebrUf85bpwk.getXPos(), zebrUf85bpwk.getYPos(), 0, 100, -1, 5); 
- sq_AddDrawOnlyAniFromParent(aNYI5nmGqumVvgiY, "monster/newmonsters/thief/nicolas/animation/effect/blackarachnia/start_smokenormal.ani", 0, -1, 0); 
- sq_CreateDrawOnlyObject(aNYI5nmGqumVvgiY, "monster/newmonsters/thief/nicolas/animation/effect/blackarachnia/start_blackground.ani", ENUM_DRAWLAYER_BOTTOM, true); 
- break;
- }
- break;
- }
-} 
+}
 

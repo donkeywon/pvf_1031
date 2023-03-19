@@ -29,30 +29,6 @@ function setEnableCancelSkill_ATFighter(b5auQt29ZJBGNtERo, WCDjwRh3IWyTM_NtayN5V
 } ;
 
 
-function onChangeSkillEffect_ATFighter(Lmb1IBm0hXY6DPN, YpaXlNk63NMAawV1szMUwYl, o5VdaHELFpH1U9ZZ)
-{
- if(!Lmb1IBm0hXY6DPN) return;
- switch(YpaXlNk63NMAawV1szMUwYl)
- {
- case 50: 
- local vMANHUtMTDpA = o5VdaHELFpH1U9ZZ.readWord(); 
- switch(vMANHUtMTDpA)
- {
- case 1:
- 
- if(CNSquirrelAppendage.sq_IsAppendAppendage(Lmb1IBm0hXY6DPN, "character/atfighter/appendage/ap_definitegrab.nut"))
- CNSquirrelAppendage.sq_RemoveAppendage(Lmb1IBm0hXY6DPN, "character/atfighter/appendage/ap_definitegrab.nut");
- local FVKCAd14Dts6N1 = Lmb1IBm0hXY6DPN.sq_GetLevelData(YpaXlNk63NMAawV1szMUwYl, 0, sq_GetSkillLevel(Lmb1IBm0hXY6DPN, YpaXlNk63NMAawV1szMUwYl)); 
- local CdeQ5bSIOksjOgU = CNSquirrelAppendage.sq_AppendAppendage(Lmb1IBm0hXY6DPN, Lmb1IBm0hXY6DPN, YpaXlNk63NMAawV1szMUwYl, false, "character/atfighter/appendage/ap_definitegrab.nut", false);
- CdeQ5bSIOksjOgU.sq_SetValidTime(FVKCAd14Dts6N1); 
- CNSquirrelAppendage.sq_Append(CdeQ5bSIOksjOgU, Lmb1IBm0hXY6DPN, Lmb1IBm0hXY6DPN, false);
- break;
- }
- break;
- }
-} ;
-
-
 
 
 function addSetStatePacket_ATFighter(ESBuU7W_pU965VMYvAv1, O1YsOXqr58lA3UC, cbIEyAGjuLj)

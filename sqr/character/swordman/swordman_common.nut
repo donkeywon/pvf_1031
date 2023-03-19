@@ -49,23 +49,6 @@ function setEnableCancelSkill_Swordman(JM8H4uzkC2sc8UKfL7, CSDeDFugOHJaOjHj1gt)
 } ;
 
 
- 
-function setState_Swordman(obj, state, datas, isResetTimer)
-{
- if(!obj) return;
-//P(obj, state, datas);
-	local substate = obj.sq_GetVectorData(datas, 0);
-	local substate1 = obj.sq_GetVectorData(datas, 1);
-	local substate2 = obj.sq_GetVectorData(datas, 2);
-	setState_Swordman_swordman_handlingsword(obj, state, datas, isResetTimer);
-	obj.getVar("Swordman_substate").clear_vector();
-	obj.getVar("Swordman_substate").push_vector(substate);
-	obj.getVar("Swordman_substate").push_vector(substate1);
-	obj.getVar("Swordman_substate").push_vector(substate2);
- return 0;
-} ;
-
-
 function addSetStatePacket_Swordman(obj, state, datas)
 {
  if(!obj) return -1;
@@ -109,51 +92,4 @@ function addSetStatePacket_Swordman(obj, state, datas)
  }
  return 1;
 } ;
-
-
-
-
-function procAppend_Swordman(YJq29a2yyU2)
-{
- if(!YJq29a2yyU2) return 1;
- local TQe80hG8iORg1UvIUwOEWt = YJq29a2yyU2.sq_IsMyControlObject();
- local NjiaBHxwntByBOUd = YJq29a2yyU2.getState(); 
- if(TQe80hG8iORg1UvIUwOEWt)
- switch(NjiaBHxwntByBOUd)
- {
- case 0:
- case 8:
- case 14:
- local xhHZeF1zGdQ4Nkrs8yOP4Lp = sq_GetSkill(YJq29a2yyU2, 62); 
- if(xhHZeF1zGdQ4Nkrs8yOP4Lp)
- { 
- 
- if(!xhHZeF1zGdQ4Nkrs8yOP4Lp.isInCoolTime())
- { 
- YJq29a2yyU2.setSkillCommandEnable(62, true); 
- if(YJq29a2yyU2.sq_IsEnterSkill(62) != -1) 
- {
- local W494kQM0HHrwjmSTuK8zX7 = YJq29a2yyU2.sq_IsUseSkill(62); 
- if(W494kQM0HHrwjmSTuK8zX7)
- {
- YJq29a2yyU2.sq_IntVectClear();
- YJq29a2yyU2.sq_IntVectPush(0);
- YJq29a2yyU2.sq_AddSetStatePacket(34, STATE_PRIORITY_USER, true); 
- return;
- }
- }
- }
- }
- break;
- }
- return 0;
-} ;
-
-
-
-
-
- 
-
-
 
