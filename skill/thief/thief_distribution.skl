@@ -1,0 +1,190 @@
+#PVF_File
+
+[name]
+	`月影突袭`
+
+[basic explain]
+	`    向前方突进， 用肉眼看不见的速度攻击敌人， 并将敌人聚集到中央。
+    可消耗连击点数发动[终结追击]。`
+
+[explain]
+	`    向前方突进， 用肉眼看不见的速度攻击敌人， 并将敌人聚集到中央。
+    可消耗连击点数发动[终结追击]。`
+
+[executable states]
+	8	0	14
+[/executable states]
+
+[purchase cost]
+	90
+[/purchase cost]
+
+[required level]
+	80
+
+[required level range]
+	2
+
+[type]
+	`[active]`
+
+[skill class]
+	1
+
+[maximum level]
+	40
+
+[growtype maximum level]
+	0	0	0	0	0	0
+
+[second growtype maximum level]
+	0	0	30	0	0	0	0	0	0	0	0	0
+
+[skill fitness second growtype]
+	2
+[/skill fitness second growtype]
+
+[consume item]
+	3037	5	5
+[/consume item]
+
+[weapon effect type]
+	`[physical]`
+
+[icon]
+	`Character/Thief/Effect/SkillIcon.img`	400
+	`Character/Thief/Effect/SkillIcon.img`	401
+
+[command]
+	{6=`(DOWN)`}
+	{8=`,`}
+	{6=`(UP)`}
+	{8=`,`}
+	{6=`(RIGHT)`}
+	{8=`,`}
+	{6=`(SKILL)`}
+[/command]
+
+[command key explain]
+	`操作指令 : ↓↑→ + Z`
+
+[skill command advantage]
+	50	50
+
+[durability decrease rate]
+	350
+
+[consume MP]
+	800	6000
+
+[cool time]
+	50000	50000
+
+[dungeon]
+	[static data]
+		10
+	[/static data]
+	[level info]
+		2
+		2317	4634
+		2552	5105
+		2788	5575
+		3022	6045
+		3257	6515
+		3492	6985
+		3727	7455
+		3963	7926
+		4198	8396
+		4433	8866
+		4668	9336
+		4903	9806
+		5137	10276
+		5372	10746
+		5608	11217
+		5843	11687
+		6079	12157
+		6313	12628
+		6548	13097
+		6784	13568
+		7019	14038
+		7255	14508
+		7489	14978
+		7724	15448
+		7959	15919
+		8194	16388
+		8429	16859
+		8665	17330
+		8900	17799
+		9135	18269
+		9370	18740
+		9604	19210
+		9839	19679
+		10075	20150
+		10310	20621
+		10546	21090
+		10780	21561
+		11015	22031
+		11250	22501
+		11485	22970
+	[/level info]
+[/dungeon]
+
+[pvp]
+	[start cool time]
+		600000	600000
+	[static data]
+		5
+	[/static data]
+	[level info]
+		2
+		33	66
+		36	73
+		40	80
+		43	87
+		46	93
+		50	100
+		53	107
+		57	114
+		60	121
+		63	127
+		67	134
+		70	141
+		74	148
+		77	154
+		80	161
+		84	168
+		87	175
+		91	182
+		94	188
+		97	195
+		101	202
+		104	209
+		107	215
+		111	222
+		114	229
+		118	236
+		121	243
+		124	249
+		128	256
+		131	263
+		135	270
+		138	276
+		141	283
+		145	290
+		148	297
+		152	304
+		155	310
+		158	317
+		162	324
+		165	331
+	[/level info]
+[/pvp]
+
+[level property]
+	1	99
+	`多段攻击力 : <int>%% X <int>
+[终结追击]攻击力 : <int>%%`
+	-1	0	1.0
+	0	0	1.0
+	-1	1	1.0
+[/level property]

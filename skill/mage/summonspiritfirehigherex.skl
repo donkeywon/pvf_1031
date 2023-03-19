@@ -25,17 +25,19 @@
  决斗场中不适用二重身。`
 
 [basic explain ex]
-	`火焰赫瑞克等级增加。`
+	`    增加[火焰赫瑞克]的Lv和同一张地图的召唤数上限， 同时减少火焰剑上斩攻击的冷却时间。`
 
 [explain ex]
-	`增加火焰赫瑞克等级增加。
-每增加Lv1时等级增加 : 1级`
+	`    增加[火焰赫瑞克]的Lv和同一张地图的召唤数上限， 同时减少火焰剑上斩攻击的冷却时间。
+技能每增加Lv1时， Lv增加量 : Lv3
+技能每增加Lv1时， 召唤数上限增加量 : 1个
+火焰剑上斩攻击冷却时间减少率 : 50%%`
 
 [feature skill type]
 	1
 
 [special purchase cost]
-	2
+	5
 [/special purchase cost]
 
 [type]
@@ -55,10 +57,10 @@
 	1
 
 [maximum level]
-	10
+	1
 
 [growtype maximum level]
-	0	0	5	0	0	0
+	0	0	1	0	0	0
 
 [skill fitness growtype]
 	2
@@ -147,8 +149,9 @@
 [/level info]
 
 [special level up]
-	-1	0
-	`+`	1
+	-1	0	`+`	3
+	-1	2	`+`	1
+	-1	4	`%`	-50
 [/special level up]
 
 [pvp]
@@ -235,15 +238,15 @@
 
 [level property]
 	1	99
-	`火焰赫瑞克等级 : <int>
+	`火焰赫瑞克Lv : Lv<int>
 召唤兽存在时间 : <float1>秒
 召唤兽数量上限 : <int>
 火焰剑上斩冷却时间 : <float1>秒
-火焰剑上斩魔法武器攻击力 : <int>%%
-焰刃冷却时间 : <float1>秒
-焰刃武器魔法攻击力 : <int>%%
-焰刃剑气攻击力 : <int>
-死亡爆炸时攻击力 : <int>`
+火焰剑上斩魔法攻击力 : <int>%%
+火焰下重斩冷却时间 : <float1>秒
+火焰下重斩魔法攻击力 : <int>%%
+火焰下重斩剑气魔法攻击力 : <int>
+死亡爆炸魔法攻击力 : <int>`
 	-1	0	1.0
 	-1	3	0.001
 	-1	2	1.0

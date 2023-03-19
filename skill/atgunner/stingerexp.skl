@@ -15,11 +15,11 @@
 若经过一定时间或松开技能键， 则榴弹会自动分离成小爆弹。`
 
 [explain ex]
-	`增加榴弹分离后形成的爆弹数， 并增加爆弹的攻击次数上限。
-每增加Lv1该技能时， 攻击力增加 : 10%%`
+	`    增加[FM-92 mk2榴弹]的攻击力。
+技能每增加Lv1时， 攻击力增加率 : 10%%`
 
 [basic explain ex]
-	`增加榴弹分离后形成的爆弹数， 并增加爆弹的攻击次数上限。`
+	`    增加[FM-92 mk2榴弹]的攻击力。`
 
 [feature skill type]
 	1
@@ -63,7 +63,7 @@
 
 [dungeon]
 	[static data]
-		400	1000	100	600	10	6
+		400	1000	100	600	10	8
 	[/static data]
 	[level info]
 		3
@@ -139,9 +139,8 @@
 		1896	1611	400
 	[/level info]
 	[special level up]
-		-1	0
-		`%`	10	-1	1
-		`%`	10
+		-1	0	`%`	10
+		-1	1	`%`	10
 	[/special level up]
 [/dungeon]
 
@@ -223,9 +222,8 @@
 		157	303	400
 	[/level info]
 	[special level up]
-		4	4
-		`+`	0	5	5
-		`+`	0
+		4	4	`+`	0
+		5	5	`+`	0
 	[/special level up]
 [/pvp]
 

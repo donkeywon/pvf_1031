@@ -1,0 +1,183 @@
+#PVF_File
+
+[name]
+	`暴君极刑斩`
+
+[basic explain]
+	`    暴君巴拉克挥舞他沈重的兵器将敌人劈成两半！
+    [天罚之剑！]`
+
+[explain]
+	`    巴拉克召唤出具象化的天罚之剑， 横扫前方敌人。
+    只能在巴拉克降临的状态下施放， 并且被[暴君极刑斩]命中的敌人有一定几率陷入[屠戮之惧]。`
+
+[executable states]
+	8	0	14
+[/executable states]
+
+[purchase cost]
+	90
+[/purchase cost]
+
+[required level]
+	80
+
+[required level range]
+	2
+
+[type]
+	`[active]`
+
+[skill class]
+	1
+
+[maximum level]
+	40
+
+[growtype maximum level]
+	0	0	0	0	0	0
+
+[second growtype maximum level]
+	0	0	0	0	30	0	0	0	0	0	0	0
+
+[skill fitness second growtype]
+	2
+[/skill fitness second growtype]
+
+[weapon effect type]
+	`[magical]`
+
+[durability decrease rate]
+	315
+
+[consume item]
+	3037	5	5
+[/consume item]
+
+[icon]
+	`Character/Thief/Effect/SkillIcon.img`	361
+	`Character/Thief/Effect/SkillIcon.img`	362
+
+[command]
+	{6=`(DOWN)`}
+	{8=`,`}
+	{6=`(RIGHT)`}
+	{8=`,`}
+	{6=`(RIGHT)`}
+	{8=`,`}
+	{6=`(SKILL)`}
+[/command]
+
+[command key explain]
+	`操作指令 : ↓→→ + Z`
+
+[skill command advantage]
+	50	50
+
+[consume MP]
+	800	6000
+
+[cool time]
+	45000	45000
+
+[dungeon]
+	[level info]
+		2
+		24747	1000
+		27258	1000
+		29768	1000
+		32279	1000
+		34790	1000
+		37300	1000
+		39811	1000
+		42322	1000
+		44832	1000
+		47343	1000
+		49854	1000
+		52364	1000
+		54875	1000
+		57385	1000
+		59896	1000
+		62407	1000
+		64917	1000
+		67428	1000
+		69939	1000
+		72449	1000
+		74960	1000
+		77470	1000
+		79981	1000
+		82492	1000
+		85002	1000
+		87513	1000
+		90024	1000
+		92534	1000
+		95045	1000
+		97556	1000
+		100066	1000
+		102577	1000
+		105087	1000
+		107598	1000
+		110109	1000
+		112619	1000
+		115130	1000
+		117641	1000
+		120151	1000
+		122662	1000
+	[/level info]
+[/dungeon]
+
+[pvp]
+	[start cool time]
+		600000	600000
+	[level info]
+		2
+		434	1000
+		478	1000
+		522	1000
+		566	1000
+		610	1000
+		654	1000
+		698	1000
+		743	1000
+		787	1000
+		831	1000
+		875	1000
+		919	1000
+		963	1000
+		1007	1000
+		1051	1000
+		1095	1000
+		1139	1000
+		1183	1000
+		1227	1000
+		1271	1000
+		1316	1000
+		1360	1000
+		1404	1000
+		1448	1000
+		1492	1000
+		1536	1000
+		1580	1000
+		1624	1000
+		1668	1000
+		1712	1000
+		1756	1000
+		1800	1000
+		1844	1000
+		1889	1000
+		1933	1000
+		1977	1000
+		2021	1000
+		2065	1000
+		2109	1000
+		2153	1000
+	[/level info]
+[/pvp]
+
+[level property]
+	1	99
+	`天罚之剑魔法攻击力 : <int>%%
+[屠戮之惧]触发几率 : <int>%%`
+	-1	0	1.0
+	-1	1	0.1
+[/level property]
