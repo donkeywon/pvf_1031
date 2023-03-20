@@ -10,6 +10,7 @@ sq_RunScript("character/thief_load_state.nut");
 sq_RunScript("Character/priest_load_state.nut");
 sq_RunScript("Character/swordman_load_state.nut");
 sq_RunScript("Character/atfighter_load_state.nut"); 
+sq_RunScript("Character/atgunner_load_state.nut");
 sq_RunScript("Character/fighter_load_state.nut");
 sq_RunScript("Character/mage_load_state.nut");
 sq_RunScript("Character/gunner_load_state.nut");
