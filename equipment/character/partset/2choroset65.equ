@@ -4,7 +4,7 @@
 	`血之洗礼  套装`
 
 [piece set ability]
-	5	
+	3	
 	[skill data up]
 		`[priest]`	25	`[dungeon type]`	`[level]`	8	`%`	50
 		`[priest]`	74	`[dungeon type]`	`[cooltime]`	0	`%`	-20
@@ -12,6 +12,18 @@
 		`[priest]`	74	`[dungeon type]`	`[level]`	1	`%`	10
 		`[priest]`	27	`[dungeon type]`	`[cooltime]`	0	`%`	-20
 		`[priest]`	27	`[dungeon type]`	`[level]`	2	`%`	10
+	[/skill data up]
+	[parameter basic explain]
+		`[灵魂牺牲]施放速度增加量 +50%%
+[圣光沁盾]冷却时间 -20%%
+[圣光沁盾]攻击力 +10%%
+[忏悔之锤]冷却时间 -20%%
+[忏悔之锤]攻击力 +10%%`
+[/piece set ability]
+
+[piece set ability]
+	6	
+	[skill data up]
 		`[priest]`	107	`[dungeon type]`	`[level]`	4	`+`	5
 		`[priest]`	107	`[dungeon type]`	`[level]`	5	`+`	5
 		`[priest]`	74	`[dungeon type]`	`[cooltime]`	0	`%`	-20
@@ -20,30 +32,17 @@
 		`[priest]`	27	`[dungeon type]`	`[cooltime]`	0	`%`	-40
 		`[priest]`	27	`[dungeon type]`	`[static]`	5	`%`	30
 		`[priest]`	27	`[dungeon type]`	`[level]`	2	`%`	30
-		`[priest]`	109	`[dungeon type]`	`[cooltime]`	0	`%`	-50
-		`[priest]`	109	`[dungeon type]`	`[static]`	0	`%`	60
-		`[priest]`	109	`[dungeon type]`	`[static]`	7	`%`	30
-		`[priest]`	109	`[dungeon type]`	`[level]`	2	`%`	40
-		`[priest]`	109	`[dungeon type]`	`[level]`	3	`%`	40
-		`[priest]`	107	`[dungeon type]`	`[level]`	4	`+`	5
-		`[priest]`	107	`[dungeon type]`	`[level]`	5	`+`	5
 	[/skill data up]
 	[parameter basic explain]
-		`[灵魂牺牲]施放速度增加量 +50%%
-[圣光沁盾]冷却时间 -20%%
-[圣光沁盾]攻击力 +10%%
-[忏悔之锤]冷却时间 -20%%
-[忏悔之锤]攻击力 +10%%
-[圣光十字]攻击力增加率 +5%%
+		`[圣光十字]攻击力增加率 +5%%
 [忏悔之锤]攻击力 +30%%
 [忏悔之锤]冷却时间 -20%%
 [圣光沁盾]攻击力 +30%%
-[圣光沁盾]冷却时间 -40%%
-[圣光十字]攻击力增加率 +5%%
-[双子沁盾]攻击力 +40%%
-[双子沁盾]冷却时间 -50%%
-[双子沁盾]移动速度 +60%%
-    施放[双子沁盾]时， 初始化[圣光沁盾]的冷却时间`
+[圣光沁盾]冷却时间 -40%%`
+[/piece set ability]
+
+[piece set ability]
+	9	
 	[if]
 		[event use skill]
 			`priest`	109
@@ -58,4 +57,19 @@
 			27
 			`%`	-100
 	[/then]
+	[skill data up]
+		`[priest]`	109	`[dungeon type]`	`[cooltime]`	0	`%`	-50
+		`[priest]`	109	`[dungeon type]`	`[static]`	0	`%`	60
+		`[priest]`	109	`[dungeon type]`	`[static]`	7	`%`	30
+		`[priest]`	109	`[dungeon type]`	`[level]`	2	`%`	40
+		`[priest]`	109	`[dungeon type]`	`[level]`	3	`%`	40
+		`[priest]`	107	`[dungeon type]`	`[level]`	4	`+`	5
+		`[priest]`	107	`[dungeon type]`	`[level]`	5	`+`	5
+	[/skill data up]
+	[parameter basic explain]
+		`[圣光十字]攻击力增加率 +5%%
+[双子沁盾]攻击力 +40%%
+[双子沁盾]冷却时间 -50%%
+[双子沁盾]移动速度 +60%%
+    施放[双子沁盾]时， 初始化[圣光沁盾]的冷却时间`
 [/piece set ability]

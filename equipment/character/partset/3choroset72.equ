@@ -4,7 +4,7 @@
 	`冰剑怒击  套装`
 
 [piece set ability]
-	5	
+	3	
 	[skill data up]
 		`[at mage]`	16	`[dungeon type]`	`[cooltime]`	0	`%`	-20
 		`[at mage]`	16	`[dungeon type]`	`[level]`	0	`%`	15
@@ -13,6 +13,18 @@
 		`[at mage]`	8	`[dungeon type]`	`[cooltime]`	0	`%`	-10
 		`[at mage]`	8	`[dungeon type]`	`[level]`	0	`%`	20
 		`[at mage]`	8	`[dungeon type]`	`[level]`	1	`%`	20
+	[/skill data up]
+	[parameter basic explain]
+		`[冰魄之弓]冷却时间 -20%%
+[冰魄之弓]攻击力 +15%%
+[冰魄之弓]箭失发射数 +1
+[冰魄剑]攻击力 +20%%
+[冰魄剑]冷却时间 -10%%`
+[/piece set ability]
+
+[piece set ability]
+	6	
+	[skill data up]
 		`[at mage]`	16	`[dungeon type]`	`[static]`	1	`%`	-100
 		`[at mage]`	16	`[dungeon type]`	`[cooltime]`	0	`%`	-60
 		`[at mage]`	16	`[dungeon type]`	`[level]`	0	`%`	30
@@ -21,33 +33,19 @@
 		`[at mage]`	8	`[dungeon type]`	`[cooltime]`	0	`%`	-20
 		`[at mage]`	8	`[dungeon type]`	`[level]`	0	`%`	30
 		`[at mage]`	8	`[dungeon type]`	`[level]`	1	`%`	30
-		`[at mage]`	16	`[dungeon type]`	`[static]`	6	`%`	50
-		`[at mage]`	16	`[dungeon type]`	`[static]`	7	`+`	100
-		`[at mage]`	16	`[dungeon type]`	`[static]`	0	`+`	2
-		`[at mage]`	16	`[dungeon type]`	`[level]`	0	`%`	20
-		`[at mage]`	16	`[dungeon type]`	`[level]`	1	`%`	20
-		`[at mage]`	8	`[dungeon type]`	`[level]`	0	`%`	40
-		`[at mage]`	8	`[dungeon type]`	`[level]`	1	`%`	40
-		`[at mage]`	8	`[dungeon type]`	`[static]`	0	`%`	50
 	[/skill data up]
 	[parameter basic explain]
-		`[冰魄之弓]冷却时间 -20%%
-[冰魄之弓]攻击力 +15%%
-[冰魄之弓]箭失发射数 +1
-[冰魄剑]攻击力 +20%%
-[冰魄剑]冷却时间 -10%%
-[冰魄之弓]无法施放最后一击
+		`[冰魄之弓]无法施放最后一击
 [冰魄之弓]攻击力 +30%%
 [冰魄之弓]冷却时间 -60%%
 [冰魄之弓]攻击范围 +50%%
 [冰魄之弓]箭失发射数 +1
 [冰魄剑]攻击力 +30%%
-[冰魄剑]冷却时间 -20%%
-[冰魄之弓]箭失发射数 +2
-[冰魄之弓]攻击力 +20%%
-[冰魄剑]攻击力 +40%%
-[冰魄剑]攻击速度 +50%%
-    施放[冰魄之弓]时， 使自身进入霸体状态并在箭矢上附加冰电爆炸`
+[冰魄剑]冷却时间 -20%%`
+[/piece set ability]
+
+[piece set ability]
+	9	
 	[if]
 		[module]
 			`[dungeon type]`
@@ -66,7 +64,7 @@
 		[probability]
 			100
 		[passive object]
-			20132	0	0	0	9999	0
+			20132	0	0	0	9999	0	``
 		[/passive object]
 	[/then]
 	[if]
@@ -80,4 +78,20 @@
 		[skill super armor]
 			`at mage`	16
 	[/then]
+	[skill data up]
+		`[at mage]`	16	`[dungeon type]`	`[static]`	6	`%`	50
+		`[at mage]`	16	`[dungeon type]`	`[static]`	7	`+`	100
+		`[at mage]`	16	`[dungeon type]`	`[static]`	0	`+`	2
+		`[at mage]`	16	`[dungeon type]`	`[level]`	0	`%`	20
+		`[at mage]`	16	`[dungeon type]`	`[level]`	1	`%`	20
+		`[at mage]`	8	`[dungeon type]`	`[level]`	0	`%`	40
+		`[at mage]`	8	`[dungeon type]`	`[level]`	1	`%`	40
+		`[at mage]`	8	`[dungeon type]`	`[static]`	0	`%`	50
+	[/skill data up]
+	[parameter basic explain]
+		`[冰魄之弓]箭失发射数 +2
+[冰魄之弓]攻击力 +20%%
+[冰魄剑]攻击力 +40%%
+[冰魄剑]攻击速度 +50%%
+    施放[冰魄之弓]时， 使自身进入霸体状态并在箭矢上附加冰电爆炸`
 [/piece set ability]
