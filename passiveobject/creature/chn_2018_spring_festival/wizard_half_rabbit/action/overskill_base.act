@@ -1,0 +1,113 @@
+#PVF_File
+
+[MOTION]
+
+[BASE ANI]
+`../Animation/01rabbit_02_05.normal_character.ani`
+
+[SUB ANI]
+`../Animation/01rabbit_02_07.normal_back_Fairy.ani`	20	-3	
+`../Animation/01rabbit_02_06.dodge_back_Fairy.ani`	20	-2	
+`../Animation/01rabbit_02_05.normal_character_01.ani`	24	-1	
+`../Animation/01rabbit_02_04.dodge_character.ani`	0	1	
+`../Animation/01rabbit_02_03.dodge_character_effect.ani`	0	2	
+`../Animation/01rabbit_02_02.normal_front_Fairy.ani`	0	3	
+`../Animation/01rabbit_02_01.dodge_front_Fairy.ani`	0	4	
+`../Animation/01rabbit_02_00.dodge_front_Fairy_effect.ani`	20	5	
+[/SUB ANI]
+
+[/MOTION]
+
+[TRIGGER]
+
+[FRAME]
+0	0	
+[WHICH]
+
+[ALL CHARACTER TEAM]
+
+[DO BEHAVIOR]
+
+[CHECKUP OBJECT]
+0	
+[/TRIGGER]
+
+[BEHAVIOR]
+
+[APPENDAGE]
+10000	
+[physical attack]
+
+[%]
+10.0	
+[magical attack]
+
+[%]
+10.0	
+[separate attack]
+
+[%]
+10.0	
+[/APPENDAGE]
+
+[/BEHAVIOR]
+
+[TRIGGER]
+
+[FRAME]
+0	0	
+[WHICH]
+
+[CHARACTER]
+
+[DO BEHAVIOR]
+
+[CHECKUP OBJECT]
+1	
+[/TRIGGER]
+
+[BEHAVIOR]
+
+[APPENDAGE]
+10000	
+[physical critical hit rate]
+
+[%]
+10	
+[magical critical hit rate]
+
+[%]
+10	
+[/APPENDAGE]
+
+[/BEHAVIOR]
+
+[TRIGGER]
+
+[FRAME]
+0	0	
+[DO BEHAVIOR]
+
+[ME]
+2	
+[/TRIGGER]
+
+[BEHAVIOR]
+
+[CREATE PASSIVEOBJECT]
+
+[INDEX]
+200419	
+[PARTICLE FILENAME]
+``
+
+[LEVEL]
+0	
+[POS]
+90	0	0	
+[FOLLOWING TARGET]
+
+[/CREATE PASSIVEOBJECT]
+
+[/BEHAVIOR]
+

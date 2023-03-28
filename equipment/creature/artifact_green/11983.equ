@@ -1,0 +1,109 @@
+#PVF_File
+
+[name]
+	`塞斯奇的头骨`
+
+[basic explain]
+	`施放技能时， 有20%%的几率增加18%%的所有攻击力， 效果持续60秒。`
+
+[detail explain]
+	`施放技能时， 有20%%的几率增加18%%的所有攻击力， 效果持续60秒。（冷却时间10秒， 最多叠加1次）`
+
+[grade]
+	85
+
+[creation rate]
+	50
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	4
+
+[weight]
+	50
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[icon]
+	`Item/common/magicstone.img`	25
+
+[field image]
+	`Item/field_creature.img`	2
+
+[icon mark]
+	`Item/IconMark1.img`	6
+
+[equipment type]
+	`[artifact green]`	20
+
+[sub type]
+	0
+
+[all elemental attack]
+	18
+
+[physical attack]
+	63
+
+[magical attack]
+	63
+
+[physical defense]
+	63
+
+[magical defense]
+	63
+
+[if]
+	[cooltime]
+		10000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		60000
+	[stat by condition]
+		`magical attack bonus`
+		`%`	18
+	[stat by condition]
+		`physical attack bonus`
+		`%`	18
+	[stat by condition]
+		`separate attack`
+		`%`	18
+	[probability]
+		20
+[/then]
+
+[creature minimum level]
+	1
+
+[creature skill charge time rate]
+	-20.1
+
+[creature skill over charge time rate]
+	-30.1
+
+[need material]
+	3285	3000
+
+[cool time]
+	10000
+
+[move wav]
+	`JEWEL_TOUCH`
+
+[set item master]
+	-1
+
+[possible kiri protect]
+
+[no random]

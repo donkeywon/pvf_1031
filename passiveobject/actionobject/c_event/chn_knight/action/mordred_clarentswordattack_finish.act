@@ -1,0 +1,198 @@
+#PVF_File
+
+[MOTION]
+
+[BASE ANI]
+`../Animation/mordred_Clarent/clarent_finish/05_clarent_middle_great_sword.ani`
+
+[SUB ANI]
+
+[/SUB ANI]
+
+[/MOTION]
+
+[TRIGGER]
+
+[LIMIT]
+1	
+[FRAME]
+1	1	
+[ON ATTACKSUCCESS]
+
+[WHICH]
+
+[LAST ATTACKSUCCESSES]
+
+[CHECKUP]
+
+[IS INDEX]
+110292	
+[/IS INDEX]
+
+[/CHECKUP]
+
+[CHECKED NO]
+
+[>]
+0	
+[DO BEHAVIOR]
+
+[CHECKUP OBJECT]
+0	
+[DO BEHAVIOR]
+
+[ME]
+5	
+[/TRIGGER]
+
+[BEHAVIOR]
+
+[APPEND HIT]
+0	0	0	
+[RESTORE]
+
+[HP]
+-51	
+[%]
+
+[/BEHAVIOR]
+
+[TRIGGER]
+
+[LIMIT]
+1	
+[FRAME]
+1	1	
+[DO BEHAVIOR]
+
+[ME]
+6	
+[ON ATTACKSUCCESS]
+
+[WHICH]
+
+[LAST ATTACKSUCCESSES]
+
+[CHECKUP]
+
+[IS INDEX]
+110293	
+[/IS INDEX]
+
+[/CHECKUP]
+
+[CHECKED NO]
+
+[>]
+0	
+[DO BEHAVIOR]
+
+[CHECKUP OBJECT]
+1	
+[/TRIGGER]
+
+[BEHAVIOR]
+
+[APPEND HIT]
+0	0	0	
+[RESTORE]
+
+[HP]
+-51	
+[%]
+
+[/BEHAVIOR]
+
+[TRIGGER]
+
+[LIMIT]
+1	
+[FRAME]
+3	3	
+[DO BEHAVIOR]
+
+[ME]
+3	
+[DO BEHAVIOR]
+
+[ME]
+4	
+[DO BEHAVIOR]
+
+[ME]
+5	
+[/TRIGGER]
+
+[TRIGGER]
+
+[LIMIT]
+1	
+[FRAME]
+7	7	
+[DO BEHAVIOR]
+
+[ME]
+3	
+[/TRIGGER]
+
+[TRIGGER]
+
+[LIMIT]
+1	
+[FRAME]
+10	10	
+[DO BEHAVIOR]
+
+[ME]
+3	
+[/TRIGGER]
+
+[BEHAVIOR]
+
+[RESTORE]
+
+[HP]
+-6	
+[%]
+
+[/BEHAVIOR]
+
+[BEHAVIOR]
+
+[ATTACKRECT]
+
+[RESET]
+
+[/BEHAVIOR]
+
+[BEHAVIOR]
+
+[CREATE PASSIVEOBJECT]
+
+[INDEX]
+200097	
+[PARTICLE FILENAME]
+`../Particle/EvilEyeMissile.ptl`
+
+[LEVEL]
+-1	
+[POS]
+0	0	0	
+[/CREATE PASSIVEOBJECT]
+
+[/BEHAVIOR]
+
+[BEHAVIOR]
+
+[PLAY SOUND]
+`JIHAD`
+
+[/BEHAVIOR]
+
+[BEHAVIOR]
+
+[PLAY SOUND]
+`MOMENT_SLASH`
+
+[/BEHAVIOR]
+

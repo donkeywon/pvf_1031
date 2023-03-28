@@ -1,0 +1,91 @@
+#PVF_File
+
+[name]
+	`巨龙之魂`
+
+[basic explain]
+	`对敌人的伤害 +10%%
+暴击攻击时， 额外增加15%%的伤害。`
+
+[grade]
+	85
+
+[creation rate]
+	50
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	4
+
+[weight]
+	50
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[icon]
+	`Item/stackable/material.img`	223
+
+[field image]
+	`Item/field_creature.img`	2
+
+[icon mark]
+	`Item/IconMark1.img`	6
+
+[equipment type]
+	`[artifact green]`	20
+
+[sub type]
+	0
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	10
+[/then]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	15
+[/then]
+
+[creature minimum level]
+	1
+
+[creature skill charge time rate]
+	-20.1
+
+[creature skill over charge time rate]
+	-30.1
+
+[need material]
+	3285	1600
+
+[cool time]
+	10000
+
+[move wav]
+	`JEWEL_TOUCH`
+
+[set item master]
+	-1
+
+[possible kiri protect]
+
+[no random]

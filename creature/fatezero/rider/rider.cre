@@ -1,0 +1,130 @@
+#PVF_File
+
+[name]
+	`伊斯坎达尔`
+
+[width]
+	10	10
+
+[floating height]
+	0
+
+[layer]
+	`[normal]`
+
+[direction correct]
+	1
+
+[move speed]
+	286	238	114	95	70
+
+[start level]
+	1
+
+[permission level]
+	10
+
+[max level]
+	50
+
+[parent max level]
+	50
+
+[artifact slot]
+	`red`
+	`blue`
+	`green`
+[/artifact slot]
+
+[basic motion]
+	`Animation/Rider_Stand.ani`
+
+[walk motion]
+	`Animation/Rider_Walk.ani`
+
+[run motion]
+	`Animation/Rider_Run.ani`
+
+[response motion]
+	`Animation/Rider_Call.ani`
+
+[response sound tag]
+	`CREATURE_CRY_02`
+
+[etc motion]
+	`Effect/Animation/buff/rider_buff_effect_dodge01.ani`
+	`Effect/Animation/buff/buff_lightning_dodge.ani`
+	`Effect/Animation/buff/floor_circle_dodge01.ani`
+	`Effect/Animation/buff/floor_circle_dodge02.ani`
+	`Effect/Animation/buff/floor_circle_dodge03.ani`
+	`Effect/Animation/appear_wave.ani`
+	`Effect/Animation/floor_crash.ani`
+	`Animation/rider_skill_change_dodge.ani`
+	`Animation/rider_skill_change_dodge.ani`
+[/etc motion]
+
+[piercing]
+	1000	0	1000	0
+[/piercing]
+
+[skill list]
+	[skill node]
+		0	
+		[skill type]
+			`general skill`
+		[skill name]
+			`征服宣言`
+		[skill explain]
+			`    祷念镇压敌人的话语， 使一定范围内的敌人进入眩晕状态。`
+		[skill recovery time]
+			80000
+		[learn skill level]
+			1
+		[skill mp]
+			60
+		[skill motion]
+			`Animation/skill.ani`
+		[skill info]
+			`skill/skill.skl`
+		[attack info]
+			`AttackInfo/skill.atk`
+	[/skill node]
+	[skill node]
+		0	
+		[skill type]
+			`over skill`
+		[skill name]
+			`神威车轮`
+		[skill explain]
+			`    召唤出曾经侍奉神的战车， 碾压敌人。`
+		[skill recovery time]
+			120000
+		[learn skill level]
+			1
+		[skill mp]
+			120
+		[skill motion]
+			`Animation/overskill_0.ani`
+		[skill info]
+			`skill/over_skill.skl`
+		[attack info]
+			`AttackInfo/overskill.atk`
+	[/skill node]
+[/skill list]
+
+[int data]
+	50	150	7	8
+[/int data]
+
+[string data]
+	`DESTROY_SOUND`
+[/string data]
+
+[evolution quest]
+	0
+
+[evolution creature id]
+	0
+
+[evolution level]
+	0

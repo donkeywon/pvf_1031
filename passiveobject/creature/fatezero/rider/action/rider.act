@@ -1,0 +1,157 @@
+#PVF_File
+
+[MOTION]
+
+[BASE ANI]
+`../Animation/rider.ani`
+
+[SUB ANI]
+`../Animation/cow_back.ani`	0	0	
+`../Animation/wagon.ani`	0	0	
+`../Animation/cow_front.ani`	0	0	
+`../Animation/wagon_front.ani`	0	0	
+`../Animation/wagon_wheel_front.ani`	0	0	
+`../Animation/wagon_wheel_dodge.ani`	0	0	
+`../Animation/wagon_wheel_acc.ani`	0	0	
+`../Animation/wagon_rope.ani`	0	0	
+[/SUB ANI]
+
+[SOUND]
+
+[/SOUND]
+
+[/MOTION]
+
+[TRIGGER]
+
+[FRAME]
+1	1	
+[DO BEHAVIOR]
+
+[ME]
+0	
+[/TRIGGER]
+
+[TRIGGER]
+
+[FRAME]
+3	3	
+[DO BEHAVIOR]
+
+[ME]
+0	
+[/TRIGGER]
+
+[BEHAVIOR]
+
+[ATTACKRECT]
+
+[RESET]
+
+[/BEHAVIOR]
+
+[TRIGGER]
+
+[FRAME]
+0	0	
+[DO BEHAVIOR]
+
+[ME]
+1	
+[/TRIGGER]
+
+[BEHAVIOR]
+
+[CREATE PASSIVEOBJECT]
+
+[INDEX]
+100146	
+[PARTICLE FILENAME]
+``
+
+[LEVEL]
+0	
+[POS]
+-100	30	0	
+[USE MY DIRECTION]
+
+[/CREATE PASSIVEOBJECT]
+
+[CREATE PASSIVEOBJECT]
+
+[INDEX]
+100146	
+[PARTICLE FILENAME]
+``
+
+[LEVEL]
+0	
+[POS]
+-100	-50	0	
+[USE MY DIRECTION]
+
+[/CREATE PASSIVEOBJECT]
+
+[CREATE PASSIVEOBJECT]
+
+[INDEX]
+100147	
+[PARTICLE FILENAME]
+``
+
+[LEVEL]
+0	
+[POS]
+0	-100	0	
+[USE MY DIRECTION]
+
+[/CREATE PASSIVEOBJECT]
+
+[CREATE PASSIVEOBJECT]
+
+[INDEX]
+100147	
+[PARTICLE FILENAME]
+``
+
+[LEVEL]
+0	
+[POS]
+150	0	0	
+[USE MY DIRECTION]
+
+[/CREATE PASSIVEOBJECT]
+
+[CREATE PASSIVEOBJECT]
+
+[INDEX]
+100150	
+[PARTICLE FILENAME]
+``
+
+[LEVEL]
+0	
+[POS]
+20	0	50	
+[USE MY DIRECTION]
+
+[/CREATE PASSIVEOBJECT]
+
+[/BEHAVIOR]
+
+[TRIGGER]
+
+[ON ATTACKSUCCESS]
+
+[DO BEHAVIOR]
+
+[ME]
+2	
+[/TRIGGER]
+
+[BEHAVIOR]
+
+[SHAKING]
+1	1000	
+[/BEHAVIOR]
+

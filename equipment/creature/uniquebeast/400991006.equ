@@ -1,0 +1,394 @@
+#PVF_File
+
+[name]
+`幽邃靈龍`
+
+[explain]
+`力量、 智力 +12%%
+最終傷害 +20%%
+攻擊時， 附加30%%的傷害。
+暴擊時， 額外增加20%%的傷害增加量。
+所有技能冷卻時間 -10%%`
+
+[attach type]
+`[trade delete]`
+
+[rarity]
+4	
+[icon mark]
+`Item/IconMark.img`	68	
+[usable job]
+`[all]`
+
+[/usable job]
+
+[minimum level]
+1	
+[icon]
+`character/uniquebeast/at_gunner/unique_1st/tubiao.img`	9	
+[field image]
+`item/fieldimage.img`	30	
+[equipment type]
+`[creature]`	0	
+[sub type]
+0	
+[creature species]
+2020731	
+[cool time]
+10000	
+[equipment physical attack]
+75	75	
+[equipment magical attack]
+75	75	
+[separate attack]
+100	100	
+[physical attack]
+110	
+[magical attack]
+110	
+[physical defense]
+110	
+[magical defense]
+110	
+[physical critical hit]
+10.0	
+[magical critical hit]
+10.0	
+[all elemental attack]
+36	
+[room list move speed rate]
+0.2	
+[attack speed]
+50	
+[cast speed]
+50	
+[move speed]
+50	
+[MP MAX rate]
+20.0	
+[set item master]
+-1	
+[move wav]
+`CREATURE_EQUIP_TOUCH`
+
+[skill data up]
+`[all]`	169	`[all]`	`[static]`	20	`+`	300	
+`[all]`	198	`[all]`	`[static]`	1	`+`	300	
+`[all]`	198	`[all]`	`[static]`	4	`+`	200	
+`[all]`	198	`[all]`	`[static]`	2	`+`	200	
+`[all]`	198	`[all]`	`[static]`	11	`+`	120	
+`[all]`	198	`[all]`	`[static]`	12	`+`	120	
+`[all]`	198	`[all]`	`[static]`	15	`+`	100	
+`[all]`	198	`[all]`	`[static]`	99	`+`	1069	
+[/skill data up]
+
+[if]
+
+[change status]
+`hp`	`>`	`%`	0	`end`	
+[/if]
+
+[then]
+
+[target]
+`myself`	-1	
+[equipment duration]
+0	
+[stat by condition]
+`physical attack`	`%`	12	
+[stat by condition]
+`magical attack`	`%`	12	
+[/then]
+
+[skill data up]
+`[all]`	1	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	2	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	3	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	4	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	5	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	6	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	7	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	8	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	9	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	10	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	11	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	12	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	13	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	14	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	15	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	16	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	17	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	18	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	19	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	20	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	21	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	22	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	23	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	24	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	25	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	26	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	27	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	28	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	29	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	30	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	31	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	32	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	33	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	34	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	35	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	36	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	37	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	38	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	39	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	40	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	41	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	42	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	43	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	44	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	45	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	46	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	47	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	48	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	49	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	50	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	51	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	52	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	53	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	54	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	55	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	56	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	57	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	58	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	59	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	60	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	61	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	62	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	63	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	64	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	65	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	66	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	67	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	68	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	69	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	70	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	71	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	72	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	73	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	74	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	75	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	76	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	77	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	78	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	79	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	80	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	81	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	82	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	83	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	84	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	85	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	86	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	87	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	88	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	89	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	90	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	91	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	92	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	93	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	94	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	95	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	96	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	97	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	98	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	99	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	100	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	101	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	102	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	103	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	104	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	105	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	106	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	107	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	108	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	109	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	110	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	111	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	112	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	113	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	114	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	115	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	116	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	117	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	118	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	119	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	120	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	121	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	122	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	123	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	124	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	125	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	126	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	127	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	128	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	129	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	130	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	131	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	132	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	133	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	134	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	135	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	136	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	137	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	138	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	139	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	140	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	141	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	142	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	143	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	144	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	145	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	146	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	147	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	148	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	149	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	150	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	151	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	152	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	153	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	154	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	155	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	156	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	157	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	158	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	159	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	160	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	161	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	162	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	163	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	164	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	165	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	166	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	167	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	168	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	169	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	170	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	171	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	172	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	173	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	174	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	175	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	176	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	177	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	178	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	179	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	180	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	181	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	182	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	183	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	184	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	185	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	186	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	187	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	188	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	189	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	190	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	191	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	192	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	193	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	194	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	195	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	196	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	197	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	198	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	199	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	200	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	201	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	202	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	203	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	204	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	205	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	206	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	207	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	208	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	209	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	210	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	211	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	212	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	213	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	214	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	215	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	216	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	217	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	218	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	219	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	220	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	221	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	222	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	223	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	224	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	225	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	226	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	227	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	228	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	229	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	230	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	231	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	232	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	233	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	234	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	235	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	236	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	237	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	238	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	239	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	240	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	241	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	242	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	243	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	244	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	245	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	246	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	247	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	248	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	249	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	250	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	251	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	252	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	253	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	254	`[all]`	`[cooltime]`	0	`%`	-10	
+`[all]`	255	`[all]`	`[cooltime]`	0	`%`	-10	
+[/skill data up]
+
+[all skill item]
+
+[item growtype]
+`[all]`
+0	
+[skill apply condition]
+
+[skill group]
+`[all]`
+
+[lower bound level]
+1	
+[upper bound level]
+70	
+[value]
+1	
+[extra condition]
+`[except for ex skill]`
+
+[/extra condition]
+
+[/skill apply condition]
+
+[skill phase]
+`[all]`
+
+[/all skill item]
+
+[set item master]
+-1	
+[skill data up]
+`[all]`	169	`[all]`	`[static]`	45	`+`	1238	
+[/skill data up]
+

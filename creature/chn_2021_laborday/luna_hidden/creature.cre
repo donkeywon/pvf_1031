@@ -1,0 +1,95 @@
+#PVF_File
+
+[name]
+	`九霄守卫者克利`
+
+[width]
+	10	10
+
+[move speed]
+	286	238	114	95	70
+
+[start level]
+	1
+
+[permission level]
+	1
+
+[max level]
+	50
+
+[parent max level]
+	50
+
+[artifact slot]
+	`red`
+	`blue`
+	`green`
+[/artifact slot]
+
+[piercing]
+	1000	0	1000	0
+[/piercing]
+
+[basic motion]
+	`animation/Idle/Luny_Idle_Body.ani`
+
+[walk motion]
+	`animation/Walk/Luny_Walk_Body.ani`
+
+[run motion]
+	`animation/Run/Luny_Run_Body.ani`
+
+[response motion]
+	`animation/Call/Luny_Call_Body.ani`
+
+[random motion]
+	`animation/Random/Luny_Random_Body.ani`
+[/random motion]
+
+[default random motion rate]
+	3
+
+[increase random motion rate]
+	1
+
+[skill list]
+	[skill node]
+		0	
+		[skill type]
+			`general skill`
+		[skill name]
+			`九霄祝福`
+		[skill explain]
+			`    使主人增加10%%的攻击力， 效果持续10秒。 (该效果不会叠加）`
+		[skill recovery time]
+			20000
+		[learn skill level]
+			1
+		[skill mp]
+			10
+		[skill motion]
+			`animation/Call/Luny_Call_Body.ani`
+		[skill info]
+			`skill/generalskill.skl`
+	[/skill node]
+	[skill node]
+		0	
+		[skill type]
+			`over skill`
+		[skill name]
+			`圣月流星雨`
+		[skill explain]
+			`    在前方召唤月之魔法阵， 向魔法阵发射6颗蕴含月之气息的流星， 对敌人造成伤害。`
+		[skill recovery time]
+			20000
+		[learn skill level]
+			1
+		[skill mp]
+			30
+		[skill motion]
+			`animation/overskill.ani`
+		[skill info]
+			`skill/overskill.skl`
+	[/skill node]
+[/skill list]

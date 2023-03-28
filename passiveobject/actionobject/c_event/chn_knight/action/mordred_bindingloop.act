@@ -1,0 +1,113 @@
+#PVF_File
+
+[MOTION]
+
+[BASE ANI]
+`../Animation/mordred_Binding/loop_shadowbinding_shadow.ani`
+
+[/MOTION]
+
+[TRIGGER]
+
+[LIMIT]
+1	
+[FRAME]
+0	0	
+[DO BEHAVIOR]
+
+[ME]
+0	
+[/TRIGGER]
+
+[BEHAVIOR]
+
+[ATTACKRECT]
+
+[RESET]
+
+[DIM]
+`bindingTime`
+
+[=]
+
+[GET TIME]
+
+[/DIM]
+
+[TRIGGER]
+1	
+[ON]
+
+[/BEHAVIOR]
+
+[TRIGGER]
+
+[ENABLE]
+
+[OFF]
+
+[IF]
+`bindingTime`
+
+[+]
+1000	
+[<=]
+
+[GET TIME]
+
+[/IF]
+
+[DO BEHAVIOR]
+
+[ME]
+1	
+[/TRIGGER]
+
+[BEHAVIOR]
+
+[SET ACTION]
+
+[CUSTOM]
+1	
+[NOW]
+
+[/BEHAVIOR]
+
+[TRIGGER]
+
+[FRAME]
+0	6	
+[ON ATTACKSUCCESS]
+
+[CHECK STUCK]
+0	
+[WHICH]
+
+[LAST ATTACKSUCCESSES]
+
+[CHECKUP]
+
+[IS GRABABLE]
+1	
+[/CHECKUP]
+
+[CHECKED NO]
+
+[>]
+0	
+[DO BEHAVIOR]
+
+[LAST ATTACKSUCCESS]
+2	
+[/TRIGGER]
+
+[BEHAVIOR]
+
+[SET ACTION]
+
+[HOLD]
+
+[NOW]
+
+[/BEHAVIOR]
+

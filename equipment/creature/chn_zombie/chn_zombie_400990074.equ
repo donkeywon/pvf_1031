@@ -1,0 +1,172 @@
+#PVF_File
+
+[name]
+`僵尸`
+
+[explain]
+`裝備后， 每20秒會使自身進入出血狀態20秒； 出血狀態下， 每0.5秒受到10點的傷害。
+    自身在出血狀態下， 增加10點的力量、 智力、 體力和精神。
+    根據自身的HP值增加攻擊速度、 移動速度和施放速度， 效果持續10秒。 (HP少于99%%時， 增加1%%的攻擊速度、 移動速度和施放速度； HP少于50%%時， 增加2%%的攻擊速度、 移動速度和施放速度； HP少于20%%時， 增加3%%的攻擊速度、 移動速度和施放速度。)`
+
+[flavor text]
+`<生化禁區>`
+
+[attach type]
+`[trade]`
+
+[rarity]
+2	
+[usable job]
+`[all]`
+
+[/usable job]
+
+[minimum level]
+1	
+[icon]
+`item/creature/creature_cn.img`	52	
+[icon mark]
+`Item/IconMark.img`	34	
+[equipment type]
+`[creature]`	0	
+[sub type]
+0	
+[creature species]
+10038	
+[cool time]
+10000	
+[if]
+
+[time]
+20000	1	10000	
+[cooltime]
+20000	
+[/if]
+
+[then]
+
+[target]
+`myself`	-1	
+[equipment duration]
+20000	
+[active status]
+`bleeding`
+91	100	
+[/then]
+
+[if]
+
+[time]
+0	1	0	
+[cooltime]
+5000	
+[my active status]
+`bleeding`
+
+[/if]
+
+[then]
+
+[target]
+`myself`	-1	
+[probability]
+100	
+[duration]
+5000	
+[stat by condition]
+`physical attack`	`+`	10	
+[stat by condition]
+`magical attack`	`+`	10	
+[stat by condition]
+`physical defense`	`+`	10	
+[stat by condition]
+`magical defense`	`+`	10	
+[/then]
+
+[if]
+
+[time]
+0	1	0	
+[cooltime]
+5000	
+[stat change]
+`hp`	`<`	`%`	99	
+[stat change]
+`hp`	`>=`	`%`	50	
+[/if]
+
+[then]
+
+[target]
+`myself`	-1	
+[probability]
+100	
+[duration]
+5000	
+[stat by condition]
+`attack speed`	`+`	10	
+[stat by condition]
+`move speed`	`+`	10	
+[stat by condition]
+`cast speed`	`+`	10	
+[/then]
+
+[if]
+
+[time]
+0	1	0	
+[cooltime]
+5000	
+[stat change]
+`hp`	`<`	`%`	50	
+[stat change]
+`hp`	`>=`	`%`	30	
+[/if]
+
+[then]
+
+[target]
+`myself`	-1	
+[probability]
+100	
+[duration]
+5000	
+[stat by condition]
+`attack speed`	`+`	20	
+[stat by condition]
+`move speed`	`+`	20	
+[stat by condition]
+`cast speed`	`+`	20	
+[/then]
+
+[if]
+
+[time]
+0	1	0	
+[cooltime]
+5000	
+[stat change]
+`hp`	`<`	`%`	30	
+[/if]
+
+[then]
+
+[target]
+`myself`	-1	
+[probability]
+100	
+[duration]
+5000	
+[stat by condition]
+`attack speed`	`+`	30	
+[stat by condition]
+`move speed`	`+`	30	
+[stat by condition]
+`cast speed`	`+`	30	
+[/then]
+
+[move wav]
+`CREATURE_EQUIP_TOUCH`
+
+[set item master]
+-1	

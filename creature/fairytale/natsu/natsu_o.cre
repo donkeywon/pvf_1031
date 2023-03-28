@@ -1,0 +1,128 @@
+#PVF_File
+
+[name]
+	`纳兹`
+
+[width]
+	10	10
+
+[floating height]
+	0
+
+[layer]
+	`[normal]`
+
+[direction correct]
+	1
+
+[move speed]
+	286	238	114	95	70
+
+[start level]
+	1
+
+[permission level]
+	1
+
+[max level]
+	50
+
+[parent max level]
+	50
+
+[artifact slot]
+	`red`
+	`blue`
+	`green`
+[/artifact slot]
+
+[basic motion]
+	`Animation/stay.ani`
+
+[walk motion]
+	`Animation/walk.ani`
+
+[run motion]
+	`Animation/run.ani`
+
+[response motion]
+	`Animation/response.ani`
+
+[random motion]
+	`Animation/random_stay.ani`
+[/random motion]
+
+[additional animation]
+	`[skill]`	1
+	`../../../passiveobject/creature/fairytale/natsu/animation/roaringoffiredragon_start.ani`
+
+[etc motion]
+	`Effect/Animation/skill/skill_motion_loop.ani`
+	`Effect/Animation/skill/skill_motion_end.ani`
+[/etc motion]
+
+[piercing]
+	1000	0	1000	0
+[/piercing]
+
+[int data]
+	80	80	12806	4000	90	40	20	1	1	4000	12807	60	-20	8	1620	120	60	4	4	100
+[/int data]
+
+[string data]
+	`DESTROY_SOUND`
+[/string data]
+
+[skill list]
+	[skill node]
+		0	
+		[skill type]
+			`general skill`
+		[skill name]
+			`火龙的咆哮`
+		[skill explain]
+			`    蓄积火龙的力量， 向前方喷射火焰。`
+		[skill recovery time]
+			20000
+		[learn skill level]
+			1
+		[skill mp]
+			0
+		[skill motion]
+			`Animation/skill.ani`
+		[skill info]
+			`skill/generalskill.skl`
+		[attack info]
+			`../../../passiveobject/creature/fairytale/natsu/attackinfo/roaringoffiredragonfire.atk`
+	[/skill node]
+	[skill node]
+		0	
+		[skill type]
+			`over skill`
+		[skill name]
+			`火龙的翼击`
+		[skill explain]
+			`    双手缠绕火焰， 向前突进并攻击敌人。`
+		[skill recovery time]
+			30000
+		[learn skill level]
+			1
+		[skill mp]
+			0
+		[skill motion]
+			`Animation/overskill.ani`
+		[skill info]
+			`skill/overskill.skl`
+		[attack info]
+			`../../../passiveobject/creature/fairytale/natsu/attackinfo/wingattackoffiredragon.atk`
+	[/skill node]
+[/skill list]
+
+[evolution quest]
+	0
+
+[evolution creature id]
+	0
+
+[default random motion rate]
+	20

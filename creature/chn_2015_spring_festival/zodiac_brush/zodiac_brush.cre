@@ -1,0 +1,130 @@
+#PVF_File
+
+[name]
+	`墨仙雪莲`
+
+[width]
+	10	10
+
+[floating height]
+	0
+
+[layer]
+	`[normal]`
+
+[piercing]
+	1000	0	1000	0
+[/piercing]
+
+[direction correct]
+	1
+
+[move speed]
+	286	238	114	95	70
+
+[start level]
+	1
+
+[permission level]
+	1
+
+[max level]
+	50
+
+[parent max level]
+	50
+
+[artifact slot]
+	`red`
+	`blue`
+	`green`
+[/artifact slot]
+
+[basic motion]
+	`Animation/Stand/brush_stand.ani`
+
+[walk motion]
+	`Animation/Walk/brush_walk.ani`
+
+[run motion]
+	`Animation/Run/brush_run.ani`
+
+[response motion]
+	`Animation/Call/brush_call.ani`
+
+[skill motion]
+	`Animation/Skill/brush_skill.ani`
+
+[additional animation]
+	`[skill]`	1
+	`Animation/Skill/brush_skill.ani`
+
+[additional animation]
+	`[response]`	1
+	`../CommonAni/common_call_dodge.ani`
+
+[random motion]
+	`Animation/Random/brush_random.ani`
+[/random motion]
+
+[default random motion rate]
+	50
+
+[revision x]
+	0
+
+[revision y]
+	20
+
+[skill list]
+	[skill node]
+		0	
+		[skill type]
+			`general skill`
+		[skill name]
+			`墨舞扇`
+		[skill explain]
+			`    使用技能时， 雪莲会在角色的位置挥舞扇子， 并将怪物向后击飞。 同时角色的物理暴击率增加30%%%%， 效果持续10秒。`
+		[skill recovery time]
+			20000
+		[learn skill level]
+			1
+		[skill mp]
+			10
+		[skill motion]
+			`../../../passiveobject/creature/zodiac/animation/fanblade.ani`
+		[skill under effect]
+			``
+		[skill over effect]
+			``
+		[skill info]
+			`skill/NormalSkill.skl`
+		[attack info]
+			`../../../passiveobject/creature/zodiac/attackinfo/fanblade.atk`
+	[/skill node]
+	[skill node]
+		0	
+		[skill type]
+			`over skill`
+		[skill name]
+			`画仙召唤 - 生肖聚灵阵`
+		[skill explain]
+			`    使用技能时， 将召唤出妹妹尔怜， 在角色前面画出12生肖法阵， 聚集周围的怪物并对其造成巨大的伤害。 角色周围200px范围内的所有队员增加75点力量和体力， 效果持续15秒， 最多可叠加4次。 佩戴生肖之灵铭符后发动该技能， 尔怜身后会出现与铭符相对应的生肖之神灵像。`
+		[skill recovery time]
+			20000
+		[learn skill level]
+			10
+		[skill mp]
+			10
+		[skill motion]
+			`../../../PassiveObject/Creature/Zodiac/Animation/brush_overskill.ani`
+		[skill under effect]
+			`../../../PassiveObject/Creature/Zodiac/Animation/brush_overskill_dodge_back.ani`
+		[skill over effect]
+			`../../../PassiveObject/Creature/Zodiac/Animation/brush_overskill_dodge_front.ani`
+		[skill info]
+			`skill/OverSkill.skl`
+		[attack info]
+			``
+	[/skill node]
+[/skill list]

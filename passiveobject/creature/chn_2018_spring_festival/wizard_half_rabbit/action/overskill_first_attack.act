@@ -1,0 +1,139 @@
+#PVF_File
+
+[MOTION]
+
+[BASE ANI]
+`../Animation/rabbit00_01_03.front_normal_effect(ice_snow).ani`
+
+[SUB ANI]
+`../Animation/rabbit00_01_02.front_dodge_effect(ice_snow).ani`	1	1	
+`../Animation/rabbit00_01_01.front_normal_smoke.ani`	16	2	
+`../Animation/rabbit00_00.front_dodge.ani`	4	3	
+[/SUB ANI]
+
+[/MOTION]
+
+[TRIGGER]
+
+[FRAME]
+0	0	
+[DO BEHAVIOR]
+
+[ME]
+0	
+[DO BEHAVIOR]
+
+[ME]
+1	
+[/TRIGGER]
+
+[TRIGGER]
+
+[FRAME]
+14	14	
+[DO BEHAVIOR]
+
+[ME]
+2	
+[/TRIGGER]
+
+[TRIGGER]
+
+[FRAME]
+10	12	
+[WHICH]
+
+[LAST ATTACKSUCCESSES]
+
+[DO BEHAVIOR]
+
+[CHECKUP OBJECT]
+3	
+[/TRIGGER]
+
+[TRIGGER]
+
+[FRAME]
+10	10	
+[DO BEHAVIOR]
+
+[ME]
+4	
+[/TRIGGER]
+
+[BEHAVIOR]
+
+[SUMMON MONSTER]
+
+[INDEX]
+506807304	
+[LEVEL]
+-1	
+[POS]
+0	0	9999	
+[SUMMON TIME]
+1000	
+[/SUMMON MONSTER]
+
+[/BEHAVIOR]
+
+[BEHAVIOR]
+
+[CREATE PASSIVEOBJECT]
+
+[INDEX]
+200421	
+[PARTICLE FILENAME]
+``
+
+[LEVEL]
+0	
+[POS]
+0	0	0	
+[FOLLOWING TARGET]
+
+[/CREATE PASSIVEOBJECT]
+
+[/BEHAVIOR]
+
+[BEHAVIOR]
+
+[CREATE PASSIVEOBJECT]
+
+[INDEX]
+200420	
+[PARTICLE FILENAME]
+``
+
+[LEVEL]
+0	
+[POS]
+0	0	0	
+[FOLLOWING TARGET]
+
+[/CREATE PASSIVEOBJECT]
+
+[/BEHAVIOR]
+
+[BEHAVIOR]
+
+[GRAB ON]
+
+[Z OFFSET]
+0	
+[ROTATE]
+0	
+[MAXTIME]
+1000	
+[USE ORI POS]
+
+[/GRAB ON]
+
+[/BEHAVIOR]
+
+[BEHAVIOR]
+
+[SHAKING]
+3	200	
+[/BEHAVIOR]
+

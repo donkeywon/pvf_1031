@@ -1,0 +1,88 @@
+#PVF_File
+
+[name]
+	`暗精灵之魂`
+
+[name2]
+	`name2_11953`
+
+[basic explain]
+	`攻击时， 附加10%%的伤害。
+暗属性攻击时，增加25%%的暴击伤害。`
+
+[grade]
+	85
+
+[creation rate]
+	50
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	4
+
+[weight]
+	50
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[icon]
+	`Item/stackable/material.img`	6
+
+[field image]
+	`Item/field_creature.img`	0
+
+[icon mark]
+	`Item/IconMark1.img`	6
+
+[equipment type]
+	`[artifact red]`	17
+
+[sub type]
+	0
+
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	10
+[/skill data up]
+
+[if]
+	[element]
+		`dark`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	25
+[/then]
+
+[creature minimum level]
+	1
+
+[creature physical attack]
+	1000
+
+[creature physical critical hit]
+	1.0
+
+[need material]
+	3285	1600
+
+[cool time]
+	2000
+
+[move wav]
+	`BONE_TOUCH`
+
+[set item master]
+	-1
+
+[possible kiri protect]
+
+[no random]

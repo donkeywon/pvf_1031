@@ -1,0 +1,126 @@
+#PVF_File
+
+[name]
+	`迪卢木多`
+
+[width]
+	10	10
+
+[floating height]
+	0
+
+[layer]
+	`[normal]`
+
+[direction correct]
+	1
+
+[move speed]
+	286	238	114	95	70
+
+[start level]
+	1
+
+[permission level]
+	10
+
+[max level]
+	50
+
+[parent max level]
+	50
+
+[artifact slot]
+	`red`
+	`blue`
+	`green`
+[/artifact slot]
+
+[basic motion]
+	`Animation/Lancer_Stand.ani`
+
+[walk motion]
+	`Animation/Lancer_Walk.ani`
+
+[run motion]
+	`Animation/Lancer_Run.ani`
+
+[response motion]
+	`Animation/Lancer_Call.ani`
+
+[response sound tag]
+	`CREATURE_CRY_02`
+
+[etc motion]
+	`Animation/overskill_pierce.ani`
+	`Animation/overskill_end.ani`
+	`Animation/skill_pierce.ani`
+	`Animation/Lancer_skill_change_dodge.ani`
+	`Animation/Lancer_skill_change_dodge.ani`
+[/etc motion]
+
+[piercing]
+	1000	0	1000	0
+[/piercing]
+
+[skill list]
+	[skill node]
+		0	
+		[skill type]
+			`general skill`
+		[skill name]
+			`必灭的黄蔷薇`
+		[skill explain]
+			`    使用黄色长枪攻击敌人， 使敌人进入破甲状态。`
+		[skill recovery time]
+			80000
+		[learn skill level]
+			1
+		[skill mp]
+			60
+		[skill motion]
+			`Animation/skill_start.ani`
+		[skill info]
+			`skill/skill.skl`
+		[attack info]
+			`AttackInfo/skill.atk`
+	[/skill node]
+	[skill node]
+		0	
+		[skill type]
+			`over skill`
+		[skill name]
+			`破魔的红蔷薇`
+		[skill explain]
+			`    使用红色长枪突击敌人。`
+		[skill recovery time]
+			120000
+		[learn skill level]
+			1
+		[skill mp]
+			60
+		[skill motion]
+			`Animation/0.ani`
+		[skill info]
+			`skill/over_skill.skl`
+		[attack info]
+			`AttackInfo/overskill.atk`
+	[/skill node]
+[/skill list]
+
+[int data]
+	100	50	300	120	400	3	4
+[/int data]
+
+[string data]
+	`DESTROY_SOUND`
+[/string data]
+
+[evolution quest]
+	0
+
+[evolution creature id]
+	0
+
+[evolution level]
+	0

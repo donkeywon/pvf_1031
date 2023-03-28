@@ -1,0 +1,130 @@
+#PVF_File
+
+[name]
+`迷你劍聖`
+
+[explain]
+`攻擊時，附加 30%%的傷害
+所有技能冷卻減少 20%%`
+
+[flavor text]
+``
+
+[creature species]
+59991	
+[sub type]
+0	
+[rarity]
+1	
+[usable job]
+`[all]`
+
+[/usable job]
+
+[attach type]
+`[trade]`
+
+[minimum level]
+1	
+[attack speed]
+50	
+[move speed]
+50	
+[cast speed]
+50	
+[physical attack]
+50	
+[magical attack]
+50	
+[physical defense]
+50	
+[magical defense]
+50	
+[all elemental attack]
+20	
+[room list move speed rate]
+0.5	
+[icon]
+`creature/qq506807329/light_swordman/sm_swordman.img`	242	
+[field image]
+`item/fieldimage.img`	30	
+[equipment type]
+`[creature]`	0	
+[if]
+
+[change status]
+`hp`	`>`	`%`	0	`end`	
+[cooltime]
+30000	
+[/if]
+
+[then]
+
+[target]
+`myself`	-1	
+[probability]
+100	
+[duration]
+30000	
+[stat by condition]
+`skill cool time`	`%`	-30	
+[/then]
+
+[if]
+
+[module]
+`[dead tower]`
+`[dungeon]`
+`[tournament dungeon]`
+`[war room]`
+`[blood system]`
+
+[/module]
+
+[attack success]
+1	
+[/if]
+
+[then]
+
+[target]
+`enemy`	-1	
+[add absolute damage]
+`all`	`%`	20	
+[/then]
+
+[move wav]
+`CREATURE_EQUIP_TOUCH`
+
+[MP MAX rate]
+5.0	
+[all skill item]
+
+[item growtype]
+`[all]`
+0	
+[skill apply condition]
+
+[skill group]
+`[all]`
+
+[lower bound level]
+1	
+[upper bound level]
+60	
+[value]
+3	
+[extra condition]
+`[except for ex skill]`
+
+[/extra condition]
+
+[/skill apply condition]
+
+[skill phase]
+`[all]`
+
+[/all skill item]
+
+[set item master]
+-1	

@@ -1,0 +1,63 @@
+#PVF_File
+
+[MOTION]
+
+[BASE ANI]
+`../Animation/IllusionSlashWave.ani`
+
+[SUB ANI]
+
+[/SUB ANI]
+
+[/MOTION]
+
+[TRIGGER]
+
+[FRAME]
+5	5	
+[DO BEHAVIOR]
+
+[ME]
+0	
+[/TRIGGER]
+
+[BEHAVIOR]
+
+[ATTACKRECT]
+
+[RESET]
+
+[/BEHAVIOR]
+
+[TRIGGER]
+
+[CHECK TIME]
+300	
+[WHICH]
+
+[ME]
+
+[DO BEHAVIOR]
+
+[ME]
+1	
+[DO BEHAVIOR]
+
+[ME]
+2	
+[/TRIGGER]
+
+[BEHAVIOR]
+
+[PARTICLE]
+`../../../../../passiveobject/character/swordman/particle/illusionslash.ptl`
+-10	30	0	
+[/BEHAVIOR]
+
+[BEHAVIOR]
+
+[PARTICLE]
+`../../../../../passiveobject/character/swordman/particle/illusionslash.ptl`
+-10	-30	0	
+[/BEHAVIOR]
+

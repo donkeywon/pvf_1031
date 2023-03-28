@@ -1,0 +1,123 @@
+#PVF_File
+
+[name]
+`吞噬之厄伽勒`
+
+[basic explain]
+`使敵人進入眩暈狀態。 （冷卻時間40秒）`
+
+[attach type]
+`[trade delete]`
+
+[rarity]
+3	
+[usable job]
+`[all]`
+
+[/usable job]
+
+[minimum level]
+1	
+[need material]
+10158709	300	
+[icon]
+`item/creature/creature.img`	260	
+[field image]
+`item/fieldimage.img`	30	
+[equipment type]
+`[creature]`	0	
+[sub type]
+0	
+[creature species]
+10150	
+[cool time]
+10000	
+[physical attack]
+40	
+[magical attack]
+40	
+[physical defense]
+40	
+[magical defense]
+40	
+[move wav]
+`CREATURE_EQUIP_TOUCH`
+
+[set item master]
+-1	
+[all skill item container]
+
+[all skill item]
+
+[item growtype]
+`[all]`
+0	
+[skill apply condition]
+
+[skill group]
+`[all]`
+
+[lower bound level]
+1	
+[upper bound level]
+50	
+[value]
+1	
+[extra condition]
+`[except for ex skill]`
+
+[/extra condition]
+
+[/skill apply condition]
+
+[skill phase]
+`[all]`
+
+[/all skill item]
+
+[/all skill item container]
+
+[move wav]
+`CREATURE_EQUIP_TOUCH`
+
+[set item master]
+-1	
+[command]
+{6=`(DOWN)`}
+{8=`,`}
+{6=`(CREATURE)`}
+
+[/command]
+
+[if]
+
+[use command]
+1	
+[cooltime]
+40000	
+[/if]
+
+[then]
+
+[target]
+`myself`	-1	
+[passive object]
+900200	0	0	0	0	0	``	
+[/passive object]
+
+[/then]
+
+[attack speed]
+40	
+[move speed]
+40	
+[cast speed]
+40	
+[equipment physical attack]
+30	30	
+[equipment magical attack]
+30	30	
+[separate attack]
+40	40	
+[MP MAX rate]
+15.0	

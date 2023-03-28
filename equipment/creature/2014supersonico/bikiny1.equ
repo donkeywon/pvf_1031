@@ -1,0 +1,162 @@
+#PVF_File
+
+[name]
+`泳裝索尼子`
+
+[attach type]
+`[trade delete]`
+
+[basic explain]
+`裝備時， 可以使1000px範圍內的所有敵人減少30%%的防禦力。
+攻擊時， 有5%%的幾率發動提升3倍攻擊力效果的[基礎精通]， 效果持續10秒。`
+
+[rarity]
+4	
+[usable job]
+`[all]`
+
+[/usable job]
+
+[minimum level]
+1	
+[icon]
+`item/creature/creature_jp.img`	63	
+[field image]
+`item/fieldimage.img`	30	
+[equipment type]
+`[creature]`	0	
+[sub type]
+0	
+[creature species]
+20021	
+[cool time]
+10000	
+[physical attack]
+80	
+[magical attack]
+80	
+[physical defense]
+80	
+[magical defense]
+80	
+[move wav]
+`CREATURE_EQUIP_TOUCH`
+
+[set item master]
+-1	
+[all skill item container]
+
+[all skill item]
+
+[item growtype]
+`[all]`
+0	
+[skill apply condition]
+
+[skill group]
+`[all]`
+
+[lower bound level]
+1	
+[upper bound level]
+50	
+[value]
+1	
+[extra condition]
+`[except for ex skill]`
+
+[/extra condition]
+
+[/skill apply condition]
+
+[skill phase]
+`[all]`
+
+[/all skill item]
+
+[/all skill item container]
+
+[move wav]
+`CREATURE_EQUIP_TOUCH`
+
+[set item master]
+-1	
+[attack speed]
+200	
+[move speed]
+200	
+[cast speed]
+200	
+[anti evil]
+800	
+[equipment physical attack]
+35	35	
+[equipment magical attack]
+35	35	
+[separate attack]
+50	50	
+[skill data up]
+`[priest]`	1	`[all]`	`[level]`	0	`%`	1000	
+`[priest]`	1	`[all]`	`[level]`	2	`%`	1000	
+`[priest]`	66	`[all]`	`[level]`	7	`%`	1000	
+`[priest]`	66	`[all]`	`[level]`	9	`%`	1000	
+`[priest]`	66	`[all]`	`[level]`	8	`%`	1000	
+`[priest]`	66	`[all]`	`[level]`	4	`%`	-99	
+[/skill data up]
+
+[skill levelup]
+`[common]`	174	10	
+[/skill levelup]
+
+[if]
+
+[start cooltime]
+1000	
+[change status]
+`hp`	`>`	`%`	0	`end`	
+[/if]
+
+[then]
+
+[target]
+`all enemy`	1000	
+[stat by condition]
+`equipment physical defense`	`%`	-30	
+[stat by condition]
+`equipment magical defense`	`%`	-30	
+[/then]
+
+[skill levelup]
+`[common]`	174	5	
+`[common]`	180	5	
+`[at fighter]`	149	2	
+`[at gunner]`	161	2	
+`[at mage]`	92	2	
+`[swordman]`	161	2	
+`[fighter]`	162	2	
+`[gunner]`	161	2	
+`[mage]`	165	2	
+`[priest]`	159	2	
+`[thief]`	152	2	
+[/skill levelup]
+
+[if]
+
+[attack success]
+1	
+[cooltime]
+1000	
+[/if]
+
+[then]
+
+[target]
+`myself`	-1	
+[probability]
+5	
+[duration]
+1000000	
+[appendage]
+289	
+[/then]
+

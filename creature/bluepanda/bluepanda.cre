@@ -4,13 +4,19 @@
 	`蓝色吉祥熊猫`
 
 [width]
-	40	40
+	10	10
 
 [floating height]
 	0
 
 [layer]
 	`[normal]`
+
+[skill recovery time]
+	25000
+
+[over skill recovery time]
+	40000
 
 [direction correct]
 	1
@@ -22,10 +28,10 @@
 	1500
 
 [start level]
-	20
+	1
 
 [permission level]
-	10
+	50
 
 [max level]
 	50
@@ -38,6 +44,9 @@
 	`blue`
 	`green`
 [/artifact slot]
+
+[learn overskill level]
+	24
 
 [skill MP]
 	0
@@ -72,18 +81,32 @@
 [wing sound tag]
 	`WING_FLAP_01`
 
-[skill type]
-	`[passive]`
-
-[over skill type]
-	`[passive]`
-
 [etc motion]
 [/etc motion]
 
 [int data]
-	20000	5	30
+	20000	10	50
 [/int data]
+
+[skill level values]
+	10	50
+[/skill level values]
+
+[attack info]
+	``
+	``
+[/attack info]
+
+[skill type]
+	`[active]`
+
+[over skill type]
+	`[passive]`
+
+[skill string]
+	`勇气赐福`
+	`使自身增加10点力量， 效果持续20秒。  增加的力量点数会随宠物Lv的增加而增加。`
+[/skill string]
 
 [string data]
 	`DESTROY_SOUND`

@@ -1,0 +1,91 @@
+#PVF_File
+
+[name]
+	`荒古能源石`
+
+[basic explain]
+	`四维 +30%%。`
+
+[grade]
+	85
+
+[creation rate]
+	50
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	4
+
+[weight]
+	50
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[icon]
+	`Item/stackable/material.img`	554
+
+[field image]
+	`Item/field_creature.img`	2
+
+[icon mark]
+	`Item/IconMark1.img`	6
+
+[equipment type]
+	`[artifact green]`	20
+
+[sub type]
+	0
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`magical attack`
+		`%`	30
+	[stat by condition]
+		`physical attack`
+		`%`	30
+	[stat by condition]
+		`magical defense`
+		`%`	30
+	[stat by condition]
+		`physical defense`
+		`%`	30
+[/then]
+
+[creature minimum level]
+	1
+
+[creature skill charge time rate]
+	-20.1
+
+[creature skill over charge time rate]
+	-30.1
+
+[need material]
+	10095702	1
+
+[cool time]
+	10000
+
+[move wav]
+	`JEWEL_TOUCH`
+
+[set item master]
+	-1
+
+[possible kiri protect]
+
+[no random]

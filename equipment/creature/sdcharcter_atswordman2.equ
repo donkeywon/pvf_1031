@@ -1,0 +1,79 @@
+#PVF_File
+
+[name]
+`迷你女鬼劍士`
+
+[explain]
+`爆擊傷害增加10%%。(決斗場中增加 5%%)
+技能等級上升的選項僅適用於女鬼劍士角色。`
+
+[need material]
+2680669	2	
+[attach type]
+`[trade delete]`
+
+[rarity]
+2	
+[usable job]
+`[all]`
+
+[/usable job]
+
+[minimum level]
+1	
+[icon]
+`item/creature/creature.img`	107	
+[field image]
+`item/fieldimage.img`	30	
+[equipment type]
+`[creature]`	0	
+[sub type]
+0	
+[creature species]
+179	
+[cool time]
+10000	
+[skill levelup]
+`[at swordman]`	14	1	
+`[at swordman]`	32	1	
+[/skill levelup]
+
+[if]
+
+[event attack success]
+1	
+[/if]
+
+[then]
+
+[target]
+`enemy`	-1	
+[increase critical damage]
+`%`
+10	
+[/then]
+
+[pvp]
+
+[if]
+
+[event attack success]
+1	
+[/if]
+
+[then]
+
+[target]
+`enemy`	-1	
+[increase critical damage]
+`%`
+5	
+[/then]
+
+[/pvp]
+
+[move wav]
+`CREATURE_EQUIP_TOUCH`
+
+[set item master]
+-1	

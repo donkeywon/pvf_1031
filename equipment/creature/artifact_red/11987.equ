@@ -1,0 +1,103 @@
+#PVF_File
+
+[name]
+	`雷龙之魂`
+
+[basic explain]
+	`每1点光属性抗性增加1点光属性强化
+每1点光属性强化增加1点无视防御的物理攻击力`
+
+[grade]
+	85
+
+[creation rate]
+	50
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	4
+
+[weight]
+	50
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[icon]
+	`Item/stackable/quest.img`	313
+
+[field image]
+	`Item/field_creature.img`	0
+
+[icon mark]
+	`Item/IconMark1.img`	6
+
+[equipment type]
+	`[artifact red]`	17
+
+[sub type]
+	0
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`light resistance`	1
+		`light attack`
+		`+`	1	500
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat change by stat]
+		`myself`	-1
+		`light attack`	1
+		`physical absolute damage`
+		`+`	1	2000
+[/then]
+
+[creature minimum level]
+	1
+
+[creature physical attack]
+	1000
+
+[creature physical critical hit]
+	1.0
+
+[need material]
+	3285	3000
+
+[cool time]
+	10000
+
+[move wav]
+	`BONE_TOUCH`
+
+[set item master]
+	-1
+
+[possible kiri protect]
+
+[no random]

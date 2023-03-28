@@ -1,0 +1,69 @@
+#PVF_File
+
+[name]
+`迷你莉斯 (黑色)`
+
+[explain]
+`裝備該寵物后， 進入哥特蘿莉派對時， 所有技能冷卻時間減少50%%。`
+
+[flavor text]
+`<哥特蘿莉派對>`
+
+[attach type]
+`[trade]`
+
+[rarity]
+2	
+[usable job]
+`[all]`
+
+[/usable job]
+
+[minimum level]
+1	
+[icon]
+`item/creature/creature_jp.img`	60	
+[field image]
+`item/fieldimage.img`	30	
+[equipment type]
+`[creature]`	0	
+[sub type]
+0	
+[creature species]
+20020	
+[cool time]
+10000	
+[physical attack]
+8	
+[physical defense]
+8	
+[magical attack]
+8	
+[magical defense]
+8	
+[inventory limit]
+5000	
+[if]
+
+[module]
+`[dungeon]`
+
+[/module]
+
+[change status]
+`hp`	`>`	`%`	0	`end`	
+[/if]
+
+[then]
+
+[target]
+`myself`	-1	
+[stat by condition]
+`skill cool time`	`%`	-50	
+[/then]
+
+[move wav]
+`CREATURE_EQUIP_TOUCH`
+
+[set item master]
+-1	

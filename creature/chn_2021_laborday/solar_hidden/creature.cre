@@ -1,0 +1,95 @@
+#PVF_File
+
+[name]
+	`九霄守卫者雅娜`
+
+[width]
+	10	10
+
+[move speed]
+	286	238	114	95	70
+
+[start level]
+	1
+
+[permission level]
+	1
+
+[max level]
+	50
+
+[parent max level]
+	50
+
+[artifact slot]
+	`red`
+	`blue`
+	`green`
+[/artifact slot]
+
+[piercing]
+	1000	0	1000	0
+[/piercing]
+
+[basic motion]
+	`animation/Soly_H_00stand_Soly_H.ani`
+
+[walk motion]
+	`animation/Soly_H_01walk_Soly_H.ani`
+
+[run motion]
+	`animation/Soly_H_02run_Soly_H.ani`
+
+[response motion]
+	`animation/Soly_H_03call_Soly_H.ani`
+
+[random motion]
+	`animation/Soly_H_04random_Soly_H.ani`
+[/random motion]
+
+[default random motion rate]
+	3
+
+[increase random motion rate]
+	1
+
+[skill list]
+	[skill node]
+		0	
+		[skill type]
+			`general skill`
+		[skill name]
+			`九霄祝福`
+		[skill explain]
+			`    使主人增加10%%的攻击力， 效果持续10秒。 (该效果不会叠加）`
+		[skill recovery time]
+			20000
+		[learn skill level]
+			1
+		[skill mp]
+			10
+		[skill motion]
+			`animation/Soly_H_03call_Soly_H.ani`
+		[skill info]
+			`skill/generalskill.skl`
+	[/skill node]
+	[skill node]
+		0	
+		[skill type]
+			`over skill`
+		[skill name]
+			`烈阳圣光斩`
+		[skill explain]
+			`    快速冲向前方， 将剑插入地面生成太阳魔法阵， 蓄力后发动强有力的斩击， 对领域内的敌人造成伤害。`
+		[skill recovery time]
+			20000
+		[learn skill level]
+			1
+		[skill mp]
+			30
+		[skill motion]
+			`animation/overskill.ani`
+		[skill info]
+			`skill/overskill.skl`
+	[/skill node]
+[/skill list]

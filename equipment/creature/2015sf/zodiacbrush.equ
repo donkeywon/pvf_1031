@@ -1,0 +1,141 @@
+#PVF_File
+
+[name]
+`墨仙雪蓮`
+
+[basic explain]
+`攻擊時，附加20%%的傷害
+冷卻時間 -10%%`
+
+[flavor text]
+`<2015春節禮包>`
+
+[attach type]
+`[trade]`
+
+[rarity]
+4	
+[usable job]
+`[all]`
+
+[/usable job]
+
+[minimum level]
+1	
+[icon]
+`Creature/chn_2015_spring_festival/anicon/anicon_brush.img`	0	
+[field image]
+`item/fieldimage.img`	30	
+[equipment type]
+`[creature]`	0	
+[sub type]
+0	
+[creature species]
+10027	
+[cool time]
+10000	
+[physical attack]
+135	
+[magical attack]
+135	
+[physical defense]
+135	
+[magical defense]
+135	
+[move wav]
+`CREATURE_EQUIP_TOUCH`
+
+[set item master]
+-1	
+[all skill item container]
+
+[all skill item]
+
+[item growtype]
+`[all]`
+0	
+[skill apply condition]
+
+[skill group]
+`[all]`
+
+[lower bound level]
+1	
+[upper bound level]
+70	
+[value]
+1	
+[extra condition]
+`[except for ex skill]`
+
+[/extra condition]
+
+[/skill apply condition]
+
+[skill phase]
+`[all]`
+
+[/all skill item]
+
+[/all skill item container]
+
+[move wav]
+`CREATURE_EQUIP_TOUCH`
+
+[set item master]
+-1	
+[attack speed]
+150	
+[move speed]
+150	
+[cast speed]
+150	
+[anti evil]
+800	
+[equipment physical attack]
+75	75	
+[equipment magical attack]
+75	75	
+[separate attack]
+90	90	
+[if]
+
+[module]
+`[dungeon type]`
+`[war room]`
+`[assault]`
+
+[/module]
+
+[attack success]
+1	
+[/if]
+
+[then]
+
+[target]
+`myself`	-1	
+[skill data up]
+`[common]`	169	`[dungeon type]`	`[static]`	30	`+`	20	
+[/skill data up]
+
+[/then]
+
+[if]
+
+[change status]
+`hp`	`>`	`%`	0	`end`	
+[/if]
+
+[then]
+
+[target]
+`myself`	-1	
+[add stat at once]
+`skill cool time`
+`%`
+-10	
+[/then]
+
+[room list move speed rate]
+1.0	

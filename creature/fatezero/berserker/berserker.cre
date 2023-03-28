@@ -1,0 +1,128 @@
+#PVF_File
+
+[name]
+	`兰斯洛特`
+
+[width]
+	10	10
+
+[floating height]
+	0
+
+[layer]
+	`[normal]`
+
+[direction correct]
+	1
+
+[move speed]
+	286	238	114	95	70
+
+[start level]
+	1
+
+[permission level]
+	10
+
+[max level]
+	50
+
+[parent max level]
+	50
+
+[artifact slot]
+	`red`
+	`blue`
+	`green`
+[/artifact slot]
+
+[basic motion]
+	`Animation/Berserker_Stand.ani`
+
+[walk motion]
+	`Animation/Berserker_Walk.ani`
+
+[run motion]
+	`Animation/Berserker_Run.ani`
+
+[response motion]
+	`Animation/Berserker_Call.ani`
+
+[response sound tag]
+	`CREATURE_CRY_02`
+
+[etc motion]
+	`Animation/skill.ani`
+	`Animation/roar_normal.ani`
+	`Animation/berserker_overskill_attackbasic.ani`
+	`Animation/floor_shockwave.ani`
+	`Animation/floor_shockwave_small_dodge.ani`
+	`Animation/berserker_skill_change_02.ani`
+	`Animation/berserker_skill_change_02.ani`
+[/etc motion]
+
+[piercing]
+	1000	0	1000	0
+[/piercing]
+
+[skill list]
+	[skill node]
+		0	
+		[skill type]
+			`general skill`
+		[skill name]
+			`无穷的武练`
+		[skill explain]
+			`    施放后， 使周围的敌人进入减速状态。`
+		[skill recovery time]
+			30000
+		[learn skill level]
+			1
+		[skill mp]
+			60
+		[skill motion]
+			`Animation/skill.ani`
+		[skill info]
+			`skill/skill.skl`
+		[attack info]
+			`AttackInfo/skill.atk`
+	[/skill node]
+	[skill node]
+		0	
+		[skill type]
+			`over skill`
+		[skill name]
+			`骑士徒手不死`
+		[skill explain]
+			`    将手中所有的东西变为武器， 摧毁敌人。`
+		[skill recovery time]
+			50000
+		[learn skill level]
+			1
+		[skill mp]
+			120
+		[skill motion]
+			`Animation/0.ani`
+		[skill info]
+			`skill/over_skill.skl`
+		[attack info]
+			`AttackInfo/overskill.atk`
+	[/skill node]
+[/skill list]
+
+[int data]
+	100	5000	800	100	100	100	100	100	100	100	100
+[/int data]
+
+[string data]
+	`DESTROY_SOUND`
+[/string data]
+
+[evolution quest]
+	0
+
+[evolution creature id]
+	0
+
+[evolution level]
+	0

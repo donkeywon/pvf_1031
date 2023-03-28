@@ -1,0 +1,156 @@
+#PVF_File
+
+[MOTION]
+
+[BASE ANI]
+`../Animation/mordred_JumpAttack/illusion/skill_1.ani`
+
+[SUB ANI]
+
+[/SUB ANI]
+
+[/MOTION]
+
+[TRIGGER]
+
+[FRAME]
+4	4	
+[DO BEHAVIOR]
+
+[ME]
+0	
+[/TRIGGER]
+
+[BEHAVIOR]
+
+[SET POS FORCE]
+
+[X START]
+0	
+[Y START]
+0	
+[Z START]
+0	
+[X END]
+-20	
+[Y END]
+0	
+[Z END]
+30	
+[USE MY BASEPOS]
+
+[MOVE REDUCE]
+
+[/SET POS FORCE]
+
+[/BEHAVIOR]
+
+[TRIGGER]
+
+[FRAME]
+0	0	
+[WHICH]
+
+[CHARACTER]
+
+[GET TARGET]
+1	
+[DISTANCE]
+
+[HIGH]
+
+[DO BEHAVIOR]
+
+[CHECKUP OBJECT]
+1	
+[/TRIGGER]
+
+[BEHAVIOR]
+
+[CREATE PASSIVEOBJECT]
+
+[INDEX]
+200094	
+[PARTICLE FILENAME]
+`../Particle/EvilEyeMissile.ptl`
+
+[LEVEL]
+1	
+[POS]
+0	0	0	
+[/CREATE PASSIVEOBJECT]
+
+[/BEHAVIOR]
+
+[TRIGGER]
+
+[FRAME]
+9	9	
+[WHICH]
+
+[PASSIVE]
+
+[CHECKUP]
+
+[IS INDEX]
+200094	
+[/IS INDEX]
+
+[/CHECKUP]
+
+[CHECKED NO]
+
+[>=]
+1	
+[DO BEHAVIOR]
+
+[CHECKUP OBJECT]
+2	
+[/TRIGGER]
+
+[BEHAVIOR]
+
+[SET POS FORCE]
+
+[X START]
+0	
+[Y START]
+0	
+[Z START]
+0	
+[X END]
+50	
+[Y END]
+0	
+[Z END]
+0	
+[USE MY BASEPOS]
+
+[MOVE TO TARGET]
+
+[USE ZPOS ZERO]
+
+[NOT USE OBJECT DIRECTION]
+
+[MOVE ACCELATE]
+
+[/SET POS FORCE]
+
+[/BEHAVIOR]
+
+[TRIGGER]
+
+[FRAME]
+18	18	
+[DO BEHAVIOR]
+
+[ME]
+3	
+[/TRIGGER]
+
+[BEHAVIOR]
+
+[DESTROY]
+
+[/BEHAVIOR]
+
