@@ -1,105 +1,77 @@
 #PVF_File
 
 [MOTION]
-
-[BASE ANI]
-`../animation/mage_overskill_creature.ani`
-
-[SUB ANI]
-
-[/SUB ANI]
-
-[SOUND]
-
-[/SOUND]
-
+	[BASE ANI]
+		`../animation/mage_overskill_creature.ani`
+	[SUB ANI]
+	[/SUB ANI]
+	[SOUND]
+	[/SOUND]
 [/MOTION]
 
 [TRIGGER]
-
-[FRAME]
-0	0	
-[WHICH]
-
-[PLAYER]
-
-[DO BEHAVIOR]
-
-[CHECKUP OBJECT]
-0	
+	[FRAME]
+		0	0
+	[WHICH]
+	[PLAYER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[APPENDAGE]
-10000	
-[physical attack]
-
-[%]
-10	
-[magical attack]
-
-[%]
-10	
-[separate attack]
-
-[%]
-10	
-[/APPENDAGE]
-
+	[APPENDAGE]
+		10000	
+		[physical attack]
+		[%]
+			10
+		[magical attack]
+		[%]
+			10
+		[separate attack]
+		[%]
+			10
+	[/APPENDAGE]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-9	9	
-[DO BEHAVIOR]
-
-[ME]
-2	
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		2
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[CREATE PASSIVEOBJECT]
-
-[INDEX]
-200338	
-[PARTICLE FILENAME]
-``
-
-[LEVEL]
-0	
-[POS]
-290	0	0	
-[/CREATE PASSIVEOBJECT]
-
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			200338
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			290	0	0
+	[/CREATE PASSIVEOBJECT]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-13	13	
-[DO BEHAVIOR]
-
-[ME]
-1	
+	[FRAME]
+		13	13
+	[DO BEHAVIOR]
+	[ME]
+		1
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[CREATE PASSIVEOBJECT]
-
-[INDEX]
-200339	
-[PARTICLE FILENAME]
-``
-
-[LEVEL]
-0	
-[POS]
-290	1	0	
-[/CREATE PASSIVEOBJECT]
-
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			200339
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			290	1	0
+	[/CREATE PASSIVEOBJECT]
 [/BEHAVIOR]
-

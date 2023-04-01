@@ -1,138 +1,149 @@
 #PVF_File
 
 [name]
-`賢君劉備`
+	`贤君刘备`
 
 [explain]
-`攻擊時， 附加5%%的傷害。
-    所有技能冷卻時間 -5%%`
+	`攻击时， 附加5%%的伤害。
+    所有技能冷却时间 -5%%`
 
 [flavor text]
-`<2016春節禮包>`
+	`<2016春节礼包>`
 
 [attach type]
-`[trade]`
+	`[trade]`
 
 [rarity]
-2	
-[usable job]
-`[all]`
+	2
 
+[usable job]
+	`[all]`
 [/usable job]
 
 [minimum level]
-1	
+	1
+
 [icon]
-`item/creature/creature_cn.img`	75	
+	`item/creature/creature_cn.img`	75
+
 [field image]
-`item/fieldimage.img`	30	
+	`item/fieldimage.img`	30
+
 [equipment type]
-`[creature]`	0	
+	`[creature]`	0
+
 [sub type]
-0	
+	0
+
 [creature species]
-10067	
+	10067
+
 [cool time]
-10000	
+	10000
+
 [physical attack]
-45	
+	45
+
 [magical attack]
-45	
+	45
+
 [physical defense]
-45	
+	45
+
 [magical defense]
-45	
+	45
+
 [physical critical hit]
-5.0	
+	5.0
+
 [magical critical hit]
-5.0	
+	5.0
+
 [all elemental attack]
-10	
+	10
+
 [attack speed]
-30	
+	30
+
 [cast speed]
-30	
+	30
+
 [move speed]
-30	
+	30
+
 [all skill item]
-
-[item growtype]
-`[all]`
-0	
-[skill apply condition]
-
-[skill group]
-`[all]`
-
-[lower bound level]
-1	
-[upper bound level]
-60	
-[value]
-1	
-[extra condition]
-`[except for ex skill]`
-
-[/extra condition]
-
-[/skill apply condition]
-
-[skill phase]
-`[all]`
-
+	[item growtype]
+		`[all]`	0
+	[skill apply condition]
+		[skill group]
+			`[all]`
+		[lower bound level]
+			1
+		[upper bound level]
+			60
+		[value]
+			1
+		[extra condition]
+			`[except for ex skill]`
+		[/extra condition]
+	[/skill apply condition]
+	[skill phase]
+		`[all]`
 [/all skill item]
 
 [anti evil]
-0	
+	0
+
 [if]
-
-[module]
-`[dead tower]`
-`[dungeon]`
-`[tournament dungeon]`
-`[war room]`
-`[blood system]`
-
-[/module]
-
-[attack success]
-1	
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[attack success]
+		1
 [/if]
 
 [then]
-
-[target]
-`enemy`	-1	
-[add absolute damage]
-`all`	`%`	5	
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	5
 [/then]
 
 [if]
-
-[change status]
-`hp`	`>`	`%`	0	`end`	
-[cooltime]
-30000	
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		30000
 [/if]
 
 [then]
-
-[target]
-`myself`	-1	
-[probability]
-100	
-[duration]
-30000	
-[stat by condition]
-`skill cool time`	`%`	-5	
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[duration]
+		30000
+	[stat by condition]
+		`skill cool time`
+		`%`	-5
 [/then]
 
 [MP MAX rate]
-15.0	
+	15.0
+
 [room list move speed rate]
-0.1	
+	0.1
+
 [move wav]
-`CREATURE_EQUIP_TOUCH`
+	`CREATURE_EQUIP_TOUCH`
 
 [set item master]
--1	
+	-1

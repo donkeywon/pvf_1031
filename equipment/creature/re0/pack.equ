@@ -1,109 +1,115 @@
 #PVF_File
 
 [name]
-`迷你帕克`
+	`迷你帕克`
 
 [basic explain]
-`攻擊時，附加12%%的傷害`
+	`攻击时，附加12%%的伤害`
 
 [attach type]
-`[trade delete]`
+	`[trade delete]`
 
 [rarity]
-4	
-[usable job]
-`[all]`
+	4
 
+[usable job]
+	`[all]`
 [/usable job]
 
 [minimum level]
-1	
+	1
+
 [icon]
-`common/anicon/creature/anicon_pack.img`	4	
+	`common/anicon/creature/anicon_pack.img`	4
+
 [field image]
-`item/fieldimage.img`	30	
+	`item/fieldimage.img`	30
+
 [equipment type]
-`[creature]`	0	
+	`[creature]`	0
+
 [sub type]
-0	
+	0
+
 [creature species]
-11115	
+	11115
+
 [cool time]
-10000	
+	10000
+
 [physical attack]
-60	
+	60
+
 [magical attack]
-60	
+	60
+
 [physical defense]
-60	
+	60
+
 [magical defense]
-60	
+	60
+
 [attack speed]
-70	
+	70
+
 [move speed]
-70	
+	70
+
 [cast speed]
-70	
+	70
+
 [anti evil]
-200	
+	200
+
 [equipment physical attack]
-30	30	
+	30	30
+
 [equipment magical attack]
-30	30	
+	30	30
+
 [separate attack]
-40	40	
+	40	40
+
 [move wav]
-`CREATURE_EQUIP_TOUCH`
+	`CREATURE_EQUIP_TOUCH`
 
 [set item master]
--1	
+	-1
+
 [all skill item container]
-
-[all skill item]
-
-[item growtype]
-`[all]`
-0	
-[skill apply condition]
-
-[skill group]
-`[all]`
-
-[lower bound level]
-1	
-[upper bound level]
-50	
-[value]
-1	
-[extra condition]
-`[except for ex skill]`
-
-[/extra condition]
-
-[/skill apply condition]
-
-[skill phase]
-`[all]`
-
-[/all skill item]
-
+	[all skill item]
+		[item growtype]
+			`[all]`	0
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				1
+			[upper bound level]
+				50
+			[value]
+				1
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
 [/all skill item container]
 
 [if]
-
-[attack success]
-1	
+	[attack success]
+		1
 [/if]
 
 [then]
-
-[target]
-`myself`	-1	
-[skill data up]
-`[common]`	169	`[dungeon type]`	`[static]`	30	`+`	12	
-[/skill data up]
-
+	[target]
+		`myself`	-1
+	[skill data up]
+		`[common]`	169	`[dungeon type]`	`[static]`	30	`+`	12
+	[/skill data up]
 [/then]
 
 [MP MAX rate]
-15.0	
+	15.0

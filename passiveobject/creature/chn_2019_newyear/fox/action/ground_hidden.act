@@ -1,60 +1,44 @@
 #PVF_File
 
 [MOTION]
-
-[BASE ANI]
-`../animation/eff/overskill_floor_05_floor_n.ani`
-
+	[BASE ANI]
+		`../animation/eff/overskill_floor_05_floor_n.ani`
 [/MOTION]
 
 [TRIGGER]
-
-[ON ATTACKSUCCESS]
-
-[CHECK STUCK]
-0	
-[DO BEHAVIOR]
-
-[LAST ATTACKSUCCESS]
-0	
+	[ON ATTACKSUCCESS]
+	[CHECK STUCK]
+		0
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		0
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[ACTIVE STATUS]
-
-[hold]
-1000	100	3000	
+	[ACTIVE STATUS]
+	[hold]
+		1000	100	3000
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-12	12	
-[DO BEHAVIOR]
-
-[ME]
-1	
+	[FRAME]
+		12	12
+	[DO BEHAVIOR]
+	[ME]
+		1
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[CREATE PASSIVEOBJECT]
-
-[INDEX]
-200625	
-[PARTICLE FILENAME]
-``
-
-[LEVEL]
-0	
-[POS]
-0	30	0	
-[FIX DIRECTION]
-
-[LEFT]
-
-[/CREATE PASSIVEOBJECT]
-
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			200625
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	30	0
+		[FIX DIRECTION]
+		[LEFT]
+	[/CREATE PASSIVEOBJECT]
 [/BEHAVIOR]
-

@@ -1,354 +1,254 @@
 #PVF_File
 
 [MOTION]
-
-[BASE ANI]
-`../Animation/flash_slash/chn_modred.ani`
-
-[SUB ANI]
-
-[/SUB ANI]
-
+	[BASE ANI]
+		`../Animation/flash_slash/chn_modred.ani`
+	[SUB ANI]
+	[/SUB ANI]
 [/MOTION]
 
 [TRIGGER]
-
-[ON SET ACTION]
-
-[DO BEHAVIOR]
-
-[ME]
-0	
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[DIM]
-`time`
-
-[=]
-
-[GET TIME]
-
-[/DIM]
-
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-6	6	
-[ON ATTACKSUCCESS]
-
-[CHECK STUCK]
-0	
-[WHICH]
-
-[LAST ATTACKSUCCESSES]
-
-[CHECKUP]
-
-[IS GRABABLE]
-1	
-[/CHECKUP]
-
-[CHECKED NO]
-
-[>]
-0	
-[DO BEHAVIOR]
-
-[ME]
-1	
+	[FRAME]
+		6	6
+	[ON ATTACKSUCCESS]
+	[CHECK STUCK]
+		0
+	[WHICH]
+	[LAST ATTACKSUCCESSES]
+	[CHECKUP]
+		[IS GRABABLE]
+			1
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[DIM]
-`time`
-
-[=]
-
-[GET TIME]
-
-[/DIM]
-
-[CREATE PASSIVEOBJECT]
-
-[INDEX]
-200107	
-[PARTICLE FILENAME]
-``
-
-[LEVEL]
--1	
-[POS]
-0	10	0	
-[/CREATE PASSIVEOBJECT]
-
+	[DIM]
+		`time`	
+		[=]
+		[GET TIME]
+	[/DIM]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			200107
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			-1
+		[POS]
+			0	10	0
+	[/CREATE PASSIVEOBJECT]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-7	7	
-[WHICH]
-
-[CHARACTER]
-
-[GET TARGET]
-1	
-[RANDOM]
-
-[DO BEHAVIOR]
-
-[CHECKUP OBJECT]
-2	
+	[FRAME]
+		7	7
+	[WHICH]
+	[CHARACTER]
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[SET POS FORCE]
-
-[X START]
-0	
-[Y START]
-0	
-[Z START]
-0	
-[X END]
-170	
-[Y END]
-0	
-[Z END]
-0	
-[MOVE ME]
-
-[USE MY DIRECTION]
-
-[USE MY BASEPOS]
-
-[/SET POS FORCE]
-
-[PLAY SOUND]
-`MELTADOROC_SHADOW_BITE`
-
+	[SET POS FORCE]
+		[X START]
+			0
+		[Y START]
+			0
+		[Z START]
+			0
+		[X END]
+			170
+		[Y END]
+			0
+		[Z END]
+			0
+		[MOVE ME]
+		[USE MY DIRECTION]
+		[USE MY BASEPOS]
+	[/SET POS FORCE]
+	[PLAY SOUND]
+		`MELTADOROC_SHADOW_BITE`
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-8	8	
-[IF]
-`time`
-
-[+]
-300	
-[<=]
-
-[GET TIME]
-
-[/IF]
-
-[DO BEHAVIOR]
-
-[LAST ATTACKSUCCESSES]
-3	
-[DO BEHAVIOR]
-
-[ME]
-4	
+	[FRAME]
+		8	8
+	[IF]
+		`time`	
+		[+]
+			300
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESSES]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		4
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[CREATE PASSIVEOBJECT]
-
-[INDEX]
-200116	
-[PARTICLE FILENAME]
-``
-
-[LEVEL]
--1	
-[POS]
-0	10	50	
-[USE OBJECT ZPOS]
-
-[/CREATE PASSIVEOBJECT]
-
-[SHAKING]
-3	2500	
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			200116
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			-1
+		[POS]
+			0	10	50
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		3	2500
 [/BEHAVIOR]
 
 [BEHAVIOR]
-
-[CREATE PASSIVEOBJECT]
-
-[INDEX]
-200108	
-[PARTICLE FILENAME]
-``
-
-[LEVEL]
--1	
-[POS]
--350	10	0	
-[/CREATE PASSIVEOBJECT]
-
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			200108
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			-1
+		[POS]
+			-350	10	0
+	[/CREATE PASSIVEOBJECT]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-10	10	
-[IF]
-`time`
-
-[+]
-300	
-[<=]
-
-[GET TIME]
-
-[/IF]
-
-[DO BEHAVIOR]
-
-[LAST ATTACKSUCCESSES]
-5	
-[DO BEHAVIOR]
-
-[ME]
-6	
+	[FRAME]
+		10	10
+	[IF]
+		`time`	
+		[+]
+			300
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESSES]
+		5
+	[DO BEHAVIOR]
+	[ME]
+		6
 [/TRIGGER]
 
 [TRIGGER]
-
-[FRAME]
-11	11	
-[IF]
-`time`
-
-[+]
-300	
-[<=]
-
-[GET TIME]
-
-[/IF]
-
-[DO BEHAVIOR]
-
-[LAST ATTACKSUCCESSES]
-5	
-[DO BEHAVIOR]
-
-[ME]
-6	
+	[FRAME]
+		11	11
+	[IF]
+		`time`	
+		[+]
+			300
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESSES]
+		5
+	[DO BEHAVIOR]
+	[ME]
+		6
 [/TRIGGER]
 
 [TRIGGER]
-
-[FRAME]
-12	12	
-[IF]
-`time`
-
-[+]
-300	
-[<=]
-
-[GET TIME]
-
-[/IF]
-
-[DO BEHAVIOR]
-
-[LAST ATTACKSUCCESSES]
-5	
-[DO BEHAVIOR]
-
-[ME]
-6	
+	[FRAME]
+		12	12
+	[IF]
+		`time`	
+		[+]
+			300
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESSES]
+		5
+	[DO BEHAVIOR]
+	[ME]
+		6
 [/TRIGGER]
 
 [TRIGGER]
-
-[FRAME]
-13	13	
-[IF]
-`time`
-
-[+]
-300	
-[<=]
-
-[GET TIME]
-
-[/IF]
-
-[DO BEHAVIOR]
-
-[LAST ATTACKSUCCESSES]
-5	
-[DO BEHAVIOR]
-
-[ME]
-6	
+	[FRAME]
+		13	13
+	[IF]
+		`time`	
+		[+]
+			300
+		[<=]
+		[GET TIME]
+	[/IF]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESSES]
+		5
+	[DO BEHAVIOR]
+	[ME]
+		6
 [/TRIGGER]
 
 [TRIGGER]
-
-[FRAME]
-14	14	
-[IF]
-`time`
-
-[+]
-300	
-[>=]
-`time`
-
-[/IF]
-
-[DO BEHAVIOR]
-
-[LAST ATTACKSUCCESSES]
-5	
-[DO BEHAVIOR]
-
-[ME]
-6	
+	[FRAME]
+		14	14
+	[IF]
+		`time`	
+		[+]
+			300
+		[>=]
+			`time`
+	[/IF]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESSES]
+		5
+	[DO BEHAVIOR]
+	[ME]
+		6
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[SET ACTION]
-
-[HOLD]
-
-[NOW]
-
-[APPEND HIT]
-0	0	0	
-[RESTORE]
-
-[HP]
--8	
-[%]
-
-[SHAKING]
-5	500	
-[PLAY SOUND]
-`R_DARK_SWORD_HIT`
-
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+	[APPEND HIT]
+		0	0	0
+	[RESTORE]
+	[HP]
+		-8
+	[%]
+	[SHAKING]
+		5	500
+	[PLAY SOUND]
+		`R_DARK_SWORD_HIT`
 [/BEHAVIOR]
 
 [BEHAVIOR]
-
-[PLAY SOUND]
-`R_DARK_SWORD_HIT`
-
+	[PLAY SOUND]
+		`R_DARK_SWORD_HIT`
 [/BEHAVIOR]
-

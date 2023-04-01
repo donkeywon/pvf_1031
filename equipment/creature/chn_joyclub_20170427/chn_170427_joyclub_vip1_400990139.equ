@@ -1,143 +1,151 @@
 #PVF_File
 
 [name]
-`羊小咩 (心悅 1)`
+	`羊小咩 (心悦 1)`
 
 [explain]
-`攻擊時， 附加5%%的傷害。
-    所有技能冷卻時間 -5%%`
+	`攻击时， 附加5%%的伤害。
+    所有技能冷却时间 -5%%`
 
 [flavor text]
-`<心悅俱樂部專屬寵物>`
+	`<心悦俱乐部专属宠物>`
 
 [attach type]
-`[trade]`
+	`[trade]`
 
 [rarity]
-2	
-[usable job]
-`[all]`
+	2
 
+[usable job]
+	`[all]`
 [/usable job]
 
 [minimum level]
-1	
+	1
+
 [icon]
-`item/creature/creature_cn.img`	101	
+	`item/creature/creature_cn.img`	101
+
 [field image]
-`item/fieldimage.img`	30	
+	`item/fieldimage.img`	30
+
 [equipment type]
-`[creature]`	0	
+	`[creature]`	0
+
 [sub type]
-0	
+	0
+
 [creature species]
-10101	
+	10101
+
 [cool time]
-10000	
+	10000
+
 [physical attack]
-35	
+	35
+
 [magical attack]
-35	
+	35
+
 [physical defense]
-35	
+	35
+
 [magical defense]
-35	
+	35
+
 [physical critical hit]
-10.0	
+	10.0
+
 [magical critical hit]
-10.0	
+	10.0
+
 [all elemental attack]
-15	
+	15
+
 [attack speed]
-30	
+	30
+
 [cast speed]
-30	
+	30
+
 [move speed]
-30	
+	30
+
 [all skill item]
-
-[item growtype]
-`[all]`
-0	
-[skill apply condition]
-
-[skill group]
-`[all]`
-
-[lower bound level]
-1	
-[upper bound level]
-60	
-[value]
-1	
-[extra condition]
-`[except for ex skill]`
-
-[/extra condition]
-
-[/skill apply condition]
-
-[skill phase]
-`[all]`
-
+	[item growtype]
+		`[all]`	0
+	[skill apply condition]
+		[skill group]
+			`[all]`
+		[lower bound level]
+			1
+		[upper bound level]
+			60
+		[value]
+			1
+		[extra condition]
+			`[except for ex skill]`
+		[/extra condition]
+	[/skill apply condition]
+	[skill phase]
+		`[all]`
 [/all skill item]
 
 [if]
-
-[module]
-`[dungeon type]`
-`[war room]`
-`[assault]`
-
-[/module]
-
-[attack success]
-1	
+	[module]
+		`[dungeon type]`
+		`[war room]`
+		`[assault]`
+	[/module]
+	[attack success]
+		1
 [/if]
 
 [then]
-
-[target]
-`enemy`	-1	
-[add absolute damage]
-`all`	`%`	5	
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	5
 [/then]
 
 [if]
-
-[module]
-`[dead tower]`
-`[dungeon]`
-`[tournament dungeon]`
-`[war room]`
-`[blood system]`
-
-[/module]
-
-[change status]
-`hp`	`>`	`%`	0	`end`	
-[cooltime]
-5000	
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		5000
 [/if]
 
 [then]
-
-[target]
-`myself`	-1	
-[probability]
-100	
-[duration]
-5000	
-[stat by condition]
-`skill cool time`	`%`	-5	
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[duration]
+		5000
+	[stat by condition]
+		`skill cool time`
+		`%`	-5
 [/then]
 
 [MP MAX rate]
-15.0	
+	15.0
+
 [room list move speed rate]
-0.1	
+	0.1
+
 [move wav]
-`CREATURE_EQUIP_TOUCH`
+	`CREATURE_EQUIP_TOUCH`
 
 [set item master]
--1	
+	-1

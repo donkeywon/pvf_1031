@@ -1,17 +1,16 @@
 #PVF_File
 
 [name]
-	`偉大的意志`
+	`伟大的意志`
 
 [explain]
-	`增加4%%的力量、 智力。  (決斗場中， 適用一半效果)
-暴擊時， 額外增加18%%的傷害增加量。 (決斗場中， 適用一半效果)
-
-攻擊時， 有3%%的幾率增加35點力量、 智力、 體力、 精神， 效果持續20秒。 (冷卻時間30秒)
-施放技能時， 有5%%的幾率增加6%%的物理、 魔法暴擊率， 效果持續20秒。 (冷卻時間30秒)`
+	`增加4%%的力量、 智力。  (决斗场中， 适用一半效果)
+暴击时， 额外增加18%%的伤害增加量。 (决斗场中， 适用一半效果)
+攻击时， 有3%%的几率增加35点力量、 智力、 体力、 精神， 效果持续20秒。 (冷却时间30秒)
+施放技能时， 有5%%的几率增加6%%的物理、 魔法暴击率， 效果持续20秒。 (冷却时间30秒)`
 
 [flavor text]
-	`<2020新春禮包>`
+	`<2020新春礼包>`
 
 [grade]
 	1
@@ -87,12 +86,10 @@
 	20
 
 [icon]
-	`Item/Title/title_cn.img`
-412
+	`Item/Title/title_cn.img`	412
 
 [equipment type]
-	`[title name]`
-1
+	`[title name]`	1
 
 [move wav]
 	`NAME_TOUCH`
@@ -114,11 +111,9 @@
 
 [then]
 	[target]
-		`enemy`
--1
+		`enemy`	-1
 	[increase critical damage]
-		`%`
-18
+		`%`	18
 [/then]
 
 [pvp]
@@ -128,66 +123,58 @@
 	[/if]
 	[then]
 		[target]
-			`enemy`
--1
+			`enemy`	-1
 		[increase critical damage]
-			`%`
-9
+			`%`	9
 	[/then]
 [/pvp]
 
 [if]
 	[change status]
 		`hp`
-`>`
-`%`
-0	`end`
+		`>`
+		`%`	0
+		`end`
 [/if]
 
 [then]
 	[target]
-		`myself`
--1
+		`myself`	-1
 	[stat by condition]
 		`physical attack`
-`%`
-4
+		`%`	4
 	[stat by condition]
 		`magical attack`
-`%`
-4
+		`%`	4
 [/then]
 
 [pvp]
 	[if]
 		[change status]
 			`hp`
-`>`
-`%`
-0	`end`
+			`>`
+			`%`	0
+			`end`
 	[/if]
 	[then]
 		[target]
-			`myself`
--1
+			`myself`	-1
 		[stat by condition]
 			`physical attack`
-`%`
-2
+			`%`	2
 		[stat by condition]
 			`magical attack`
-`%`
-2
+			`%`	2
 	[/then]
 [/pvp]
 
 [if]
 	[module]
 		`[dead tower]`
-`[dungeon]`
-`[tournament dungeon]`
-`[war room]`
-`[blood system]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
 	[/module]
 	[cooltime]
 		30000
@@ -197,37 +184,32 @@
 
 [then]
 	[target]
-		`myself`
--1
+		`myself`	-1
 	[equipment duration]
 		20000
 	[probability]
 		3
 	[stat]
 		`physical attack`
-`+`
-35
+		`+`	35
 	[stat]
 		`physical defense`
-`+`
-35
+		`+`	35
 	[stat]
 		`magical attack`
-`+`
-35
+		`+`	35
 	[stat]
 		`magical defense`
-`+`
-35
+		`+`	35
 [/then]
 
 [if]
 	[module]
 		`[dead tower]`
-`[dungeon]`
-`[tournament dungeon]`
-`[war room]`
-`[blood system]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
 	[/module]
 	[cooltime]
 		30000
@@ -237,20 +219,17 @@
 
 [then]
 	[target]
-		`myself`
--1
+		`myself`	-1
 	[equipment duration]
 		20000
 	[probability]
 		5
 	[stat]
 		`physical critical hit`
-`+`
-6
+		`+`	6
 	[stat]
 		`magical critical hit`
-`+`
-6
+		`+`	6
 [/then]
 
 [if]
@@ -265,28 +244,23 @@
 
 [then]
 	[target]
-		`myself`
--1
+		`myself`	-1
 	[equipment duration]
 		20000
 	[probability]
 		3
 	[stat]
 		`physical attack`
-`+`
-18
+		`+`	18
 	[stat]
 		`physical defense`
-`+`
-18
+		`+`	18
 	[stat]
 		`magical attack`
-`+`
-18
+		`+`	18
 	[stat]
 		`magical defense`
-`+`
-18
+		`+`	18
 [/then]
 
 [if]
@@ -301,20 +275,17 @@
 
 [then]
 	[target]
-		`myself`
--1
+		`myself`	-1
 	[equipment duration]
 		20000
 	[probability]
 		5
 	[stat]
 		`physical critical hit`
-`+`
-3
+		`+`	3
 	[stat]
 		`magical critical hit`
-`+`
-3
+		`+`	3
 [/then]
 
 [item category]
@@ -328,12 +299,12 @@
 
 [then]
 	[target]
-		`myself`
--1
+		`myself`	-1
 	[probability]
 		0
 	[speech on]
-		0	0	`操你媽的偷你麻痺，自己不會做？還要偷我的？記住你爸爸 需要購買請認準作者--劍聖60 QQ-506807329`
+		0	0
+		`操你妈的偷你麻痹，自己不会做？还要偷我的？记住你爸爸 需要购买请认准作者--剑圣60 QQ-506807329`
 	[/speech on]
 [/then]
 

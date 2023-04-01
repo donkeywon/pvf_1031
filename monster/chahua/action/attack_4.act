@@ -1,68 +1,48 @@
 #PVF_File
 
 [MOTION]
-
-[BASE ANI]
-`../Animation/Attack_4_0.ani`
-
-[SUB ANI]
-`../Animation/Attack_4_4.ani`	0	-1	
-`../Animation/Attack_4_5.ani`	0	1	
-`../Animation/Attack_4_2.ani`	0	2	
-`../Animation/Attack_4_3.ani`	0	3	
-[/SUB ANI]
-
-[SOUND]
-`MARCELLA_KICK_FINISH`	2	
-[/SOUND]
-
+	[BASE ANI]
+		`../Animation/Attack_4_0.ani`
+	[SUB ANI]
+		`../Animation/Attack_4_4.ani`	0	-1
+		`../Animation/Attack_4_5.ani`	0	1
+		`../Animation/Attack_4_2.ani`	0	2
+		`../Animation/Attack_4_3.ani`	0	3
+	[/SUB ANI]
+	[SOUND]
+		`MARCELLA_KICK_FINISH`	2
+	[/SOUND]
 [/MOTION]
 
 [TRIGGER]
-
-[FRAME]
-0	0	
-[WHICH]
-
-[CHARACTER]
-
-[GET TARGET]
-1	
-[DISTANCE]
-
-[LOW]
-
-[DO BEHAVIOR]
-
-[ME]
-0	
+	[FRAME]
+		0	0
+	[WHICH]
+	[CHARACTER]
+	[GET TARGET]
+		1
+	[DISTANCE]
+	[LOW]
+	[DO BEHAVIOR]
+	[ME]
+		0
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[SET DIRECTION]
-
-[TO TARGET]
-
+	[SET DIRECTION]
+	[TO TARGET]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[ON ATTACKSUCCESS]
-
-[DO BEHAVIOR]
-
-[ME]
-1	
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[ME]
+		1
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[SET ACTION]
-
-[ATTACK]
-12	
-[END]
-
+	[SET ACTION]
+	[ATTACK]
+		12
+	[END]
 [/BEHAVIOR]
-

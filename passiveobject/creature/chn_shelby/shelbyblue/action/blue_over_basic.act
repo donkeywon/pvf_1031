@@ -1,186 +1,141 @@
 #PVF_File
 
 [MOTION]
-
-[BASE ANI]
-`../Animation/09_ShelbyBlue_Overskill_Body.ani`
-
-[SUB ANI]
-`../../Common/Animation/Over/08_Body_Dodge.ani`	0	1	
-`../../Common/Animation/Over/07_Body_Wavelength_Dodge.ani`	0	2	
-[/SUB ANI]
-
+	[BASE ANI]
+		`../Animation/09_ShelbyBlue_Overskill_Body.ani`
+	[SUB ANI]
+		`../../Common/Animation/Over/08_Body_Dodge.ani`	0	1
+		`../../Common/Animation/Over/07_Body_Wavelength_Dodge.ani`	0	2
+	[/SUB ANI]
 [/MOTION]
 
 [TRIGGER]
-
-[FRAME]
-3	3	
-[DO BEHAVIOR]
-
-[ME]
-0	
+	[FRAME]
+		3	3
+	[DO BEHAVIOR]
+	[ME]
+		0
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[CREATE PASSIVEOBJECT]
-
-[INDEX]
-12739	
-[PARTICLE FILENAME]
-``
-
-[LEVEL]
-0	
-[POS]
-0	0	-10	
-[/CREATE PASSIVEOBJECT]
-
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12739
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	-10
+	[/CREATE PASSIVEOBJECT]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-5	5	
-[DO BEHAVIOR]
-
-[ME]
-1	
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[CREATE PASSIVEOBJECT]
-
-[INDEX]
-12731	
-[PARTICLE FILENAME]
-``
-
-[LEVEL]
-0	
-[POS]
-0	0	0	
-[/CREATE PASSIVEOBJECT]
-
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12731
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-26	26	
-[DO BEHAVIOR]
-
-[ME]
-2	
+	[FRAME]
+		26	26
+	[DO BEHAVIOR]
+	[ME]
+		2
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[CREATE PASSIVEOBJECT]
-
-[INDEX]
-12732	
-[PARTICLE FILENAME]
-``
-
-[LEVEL]
-0	
-[POS]
-420	0	0	
-[/CREATE PASSIVEOBJECT]
-
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12732
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			420	0	0
+	[/CREATE PASSIVEOBJECT]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-26	26	
-[DO BEHAVIOR]
-
-[ME]
-3	
+	[FRAME]
+		26	26
+	[DO BEHAVIOR]
+	[ME]
+		3
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[CREATE PASSIVEOBJECT]
-
-[INDEX]
-12740	
-[PARTICLE FILENAME]
-``
-
-[LEVEL]
-0	
-[POS]
-420	0	0	
-[/CREATE PASSIVEOBJECT]
-
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12740
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			420	0	0
+	[/CREATE PASSIVEOBJECT]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-0	0	
-[DO BEHAVIOR]
-
-[ME]
-4	
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		4
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[FLASH SCREEN]
-
-[TIME VALUE]
-500	2850	500	
-[RGBA]
-0	0	0	220	
-[LAYER]
-
-[DEFAULT]
-
-[/FLASH SCREEN]
-
+	[FLASH SCREEN]
+		[TIME VALUE]
+			500	2850	500
+		[RGBA]
+			0	0	0	220
+		[LAYER]
+		[DEFAULT]
+	[/FLASH SCREEN]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-0	0	
-[WHICH]
-
-[CHARACTER]
-
-[DO BEHAVIOR]
-
-[CHECKUP OBJECT]
-5	
+	[FRAME]
+		0	0
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		5
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[APPENDAGE]
-30000	
-[physical attack]
-
-[+]
-50	
-[magical attack]
-
-[+]
-50	
-[physical defense]
-
-[+]
-50	
-[magical defense]
-
-[+]
-50	
-[/APPENDAGE]
-
+	[APPENDAGE]
+		30000	
+		[physical attack]
+		[+]
+			50
+		[magical attack]
+		[+]
+			50
+		[physical defense]
+		[+]
+			50
+		[magical defense]
+		[+]
+			50
+	[/APPENDAGE]
 [/BEHAVIOR]
-

@@ -1,43 +1,32 @@
 #PVF_File
 
 [MOTION]
-
-[BASE ANI]
-`../Animation/rabbit01_01_03.front_normal_effect(ice_snow).ani`
-
-[SUB ANI]
-`../Animation/rabbit01_01_02.front_dodge_effect(ice_snow).ani`	0	1	
-[/SUB ANI]
-
+	[BASE ANI]
+		`../Animation/rabbit01_01_03.front_normal_effect(ice_snow).ani`
+	[SUB ANI]
+		`../Animation/rabbit01_01_02.front_dodge_effect(ice_snow).ani`	0	1
+	[/SUB ANI]
 [/MOTION]
 
 [TRIGGER]
-
-[FRAME]
-15	15	
-[DO BEHAVIOR]
-
-[ME]
-0	
+	[FRAME]
+		15	15
+	[DO BEHAVIOR]
+	[ME]
+		0
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[SHAKING]
-6	600	
-[FLASH SCREEN]
-
-[TIME VALUE]
-200	100	100	
-[RGBA]
-255	255	255	204	
-[LAYER]
-
-[CLOSE]
-
-[ID]
-1	
-[/FLASH SCREEN]
-
+	[SHAKING]
+		6	600
+	[FLASH SCREEN]
+		[TIME VALUE]
+			200	100	100
+		[RGBA]
+			255	255	255	204
+		[LAYER]
+		[CLOSE]
+		[ID]
+			1
+	[/FLASH SCREEN]
 [/BEHAVIOR]
-

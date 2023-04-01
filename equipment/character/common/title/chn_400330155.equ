@@ -1,15 +1,15 @@
 #PVF_File
 
 [name]
-	`秘境迷蹤`
+	`秘境迷踪`
 
 [explain]
-	`攻擊時， 增加25%%的附加傷害。(決鬥場增加5%)
-攻擊時， 有3%%的幾率使力量、 智力、 體力和精神各增加35點， 攻擊速度、 施放速度和移動速度各增加5%%， 效果持續30秒。 (在決鬥場中， 只增加2.5%%)
-施放技能時， 有5%%的幾率使物理暴擊率和魔法暴擊率增加5%%， 效果持續60秒(在決鬥場中， 只增加3%%)。`
+	`攻击时， 增加25%%的附加伤害。(决斗场增加5%)
+攻击时， 有3%%的几率使力量、 智力、 体力和精神各增加35点， 攻击速度、 施放速度和移动速度各增加5%%， 效果持续30秒。 (在决斗场中， 只增加2.5%%)
+施放技能时， 有5%%的几率使物理暴击率和魔法暴击率增加5%%， 效果持续60秒(在决斗场中， 只增加3%%)。`
 
 [flavor text]
-	`<2019春節禮包>`
+	`<2019春节礼包>`
 
 [grade]
 	1
@@ -18,8 +18,7 @@
 	2
 
 [icon mark]
-	`Item/IconMark.img`
-64
+	`Item/IconMark.img`	64
 
 [usable job]
 	`[all]`
@@ -32,12 +31,10 @@
 	1
 
 [icon]
-	`Item/Title/title_cn.img`
-386
+	`Item/Title/title_cn.img`	386
 
 [equipment type]
-	`[title name]`
-1
+	`[title name]`	1
 
 [move wav]
 	`NAME_TOUCH`
@@ -110,12 +107,10 @@
 
 [then]
 	[target]
-		`enemy`
--1
+		`enemy`	-1
 	[add absolute damage]
 		`all`
-`%`
-5
+		`%`	5
 [/then]
 
 [pvp]
@@ -125,22 +120,20 @@
 	[/if]
 	[then]
 		[target]
-			`enemy`
--1
+			`enemy`	-1
 		[add absolute damage]
 			`all`
-`%`
-5
+			`%`	5
 	[/then]
 [/pvp]
 
 [if]
 	[module]
 		`[dead tower]`
-`[dungeon]`
-`[tournament dungeon]`
-`[war room]`
-`[blood system]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
 	[/module]
 	[cooltime]
 		30000
@@ -150,37 +143,32 @@
 
 [then]
 	[target]
-		`myself`
--1
+		`myself`	-1
 	[duration]
 		20000
 	[probability]
 		3
 	[stat]
 		`physical attack`
-`+`
-35
+		`+`	35
 	[stat]
 		`physical defense`
-`+`
-35
+		`+`	35
 	[stat]
 		`magical attack`
-`+`
-35
+		`+`	35
 	[stat]
 		`magical defense`
-`+`
-35
+		`+`	35
 [/then]
 
 [if]
 	[module]
 		`[dead tower]`
-`[dungeon]`
-`[tournament dungeon]`
-`[war room]`
-`[blood system]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
 	[/module]
 	[cooltime]
 		30000
@@ -190,20 +178,17 @@
 
 [then]
 	[target]
-		`myself`
--1
+		`myself`	-1
 	[duration]
 		20000
 	[probability]
 		5
 	[stat]
 		`physical critical hit`
-`+`
-5
+		`+`	5
 	[stat]
 		`magical critical hit`
-`+`
-5
+		`+`	5
 [/then]
 
 [if]
@@ -218,28 +203,23 @@
 
 [then]
 	[target]
-		`myself`
--1
+		`myself`	-1
 	[duration]
 		20000
 	[probability]
 		3
 	[stat]
 		`physical attack`
-`+`
-18
+		`+`	18
 	[stat]
 		`physical defense`
-`+`
-18
+		`+`	18
 	[stat]
 		`magical attack`
-`+`
-18
+		`+`	18
 	[stat]
 		`magical defense`
-`+`
-18
+		`+`	18
 [/then]
 
 [if]
@@ -254,20 +234,17 @@
 
 [then]
 	[target]
-		`myself`
--1
+		`myself`	-1
 	[duration]
 		20000
 	[probability]
 		5
 	[stat]
 		`physical critical hit`
-`+`
-3
+		`+`	3
 	[stat]
 		`magical critical hit`
-`+`
-3
+		`+`	3
 [/then]
 
 [item category]

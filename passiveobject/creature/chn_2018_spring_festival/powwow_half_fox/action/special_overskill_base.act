@@ -1,115 +1,87 @@
 #PVF_File
 
 [MOTION]
-
-[BASE ANI]
-`../Animation/special_01fox_02_04.normal_character.ani`
-
-[SUB ANI]
-`../Animation/Aura/00.aura_back_normal.ani`	0	-4	
-`../Animation/Aura/00.aura_back_dodge.ani`	0	-3	
-`../Animation/01fox_02_06.normal_amulet.ani`	0	-2	
-`../Animation/01fox_02_05.dodge_amulet.ani`	0	-1	
-`../Animation/special_01fox_02_04.normal_character_01.ani`	0	1	
-`../Animation/01fox_02_03.dodge_character.ani`	0	2	
-`../Animation/01fox_02_02.normal_front_Fairy.ani`	0	3	
-`../Animation/01fox_02_01.dodge_front_Fairy.ani`	0	4	
-`../Animation/Aura/00.aura_front_normal.ani`	0	5	
-`../Animation/Aura/00.aura_front_dodge.ani`	0	6	
-[/SUB ANI]
-
+	[BASE ANI]
+		`../Animation/special_01fox_02_04.normal_character.ani`
+	[SUB ANI]
+		`../Animation/Aura/00.aura_back_normal.ani`	0	-4
+		`../Animation/Aura/00.aura_back_dodge.ani`	0	-3
+		`../Animation/01fox_02_06.normal_amulet.ani`	0	-2
+		`../Animation/01fox_02_05.dodge_amulet.ani`	0	-1
+		`../Animation/special_01fox_02_04.normal_character_01.ani`	0	1
+		`../Animation/01fox_02_03.dodge_character.ani`	0	2
+		`../Animation/01fox_02_02.normal_front_Fairy.ani`	0	3
+		`../Animation/01fox_02_01.dodge_front_Fairy.ani`	0	4
+		`../Animation/Aura/00.aura_front_normal.ani`	0	5
+		`../Animation/Aura/00.aura_front_dodge.ani`	0	6
+	[/SUB ANI]
 [/MOTION]
 
 [TRIGGER]
-
-[FRAME]
-0	0	
-[WHICH]
-
-[ALL CHARACTER TEAM]
-
-[DO BEHAVIOR]
-
-[CHECKUP OBJECT]
-0	
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL CHARACTER TEAM]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[APPENDAGE]
-10000	
-[physical attack]
-
-[%]
-10.0	
-[magical attack]
-
-[%]
-10.0	
-[separate attack]
-
-[%]
-10.0	
-[/APPENDAGE]
-
+	[APPENDAGE]
+		10000	
+		[physical attack]
+		[%]
+			10.0
+		[magical attack]
+		[%]
+			10.0
+		[separate attack]
+		[%]
+			10.0
+	[/APPENDAGE]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-0	0	
-[WHICH]
-
-[CHARACTER]
-
-[DO BEHAVIOR]
-
-[CHECKUP OBJECT]
-1	
+	[FRAME]
+		0	0
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[APPENDAGE]
-10000	
-[physical critical hit rate]
-
-[%]
-10	
-[magical critical hit rate]
-
-[%]
-10	
-[/APPENDAGE]
-
+	[APPENDAGE]
+		10000	
+		[physical critical hit rate]
+		[%]
+			10
+		[magical critical hit rate]
+		[%]
+			10
+	[/APPENDAGE]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-0	0	
-[DO BEHAVIOR]
-
-[ME]
-2	
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[CREATE PASSIVEOBJECT]
-
-[INDEX]
-200465	
-[PARTICLE FILENAME]
-``
-
-[LEVEL]
-0	
-[POS]
-300	0	0	
-[FOLLOWING TARGET]
-
-[/CREATE PASSIVEOBJECT]
-
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			200465
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			300	0	0
+		[FOLLOWING TARGET]
+	[/CREATE PASSIVEOBJECT]
 [/BEHAVIOR]
-

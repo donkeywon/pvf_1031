@@ -1,275 +1,197 @@
 #PVF_File
 
 [MOTION]
-
-[BASE ANI]
-`../Animation/casting_0.ani`
-
-[SOUND]
-`MORDRED_HEAL`	0	
-[/SOUND]
-
+	[BASE ANI]
+		`../Animation/casting_0.ani`
+	[SOUND]
+		`MORDRED_HEAL`	0
+	[/SOUND]
 [/MOTION]
 
 [TRIGGER]
-
-[FRAME]
-0	0	
-[DO BEHAVIOR]
-
-[ME]
-0	
-[WHICH]
-
-[MONSTER]
-
-[CHECKUP]
-
-[IS INDEX]
-110292	
-[/IS INDEX]
-
-[/CHECKUP]
-
-[CHECKED NO]
-
-[>=]
-1	
-[DO BEHAVIOR]
-
-[ME]
-1	
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			110292
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		1
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[TRIGGER]
-3	
-[ON]
-
+	[TRIGGER]
+		3
+	[ON]
 [/BEHAVIOR]
 
 [BEHAVIOR]
-
-[TRIGGER]
-3	
-[OFF]
-
+	[TRIGGER]
+		3
+	[OFF]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-0	0	
-[DO BEHAVIOR]
-
-[ME]
-2	
-[WHICH]
-
-[MONSTER]
-
-[CHECKUP]
-
-[IS INDEX]
-110293	
-[/IS INDEX]
-
-[/CHECKUP]
-
-[CHECKED NO]
-
-[>=]
-1	
-[DO BEHAVIOR]
-
-[ME]
-3	
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			110293
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		3
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[TRIGGER]
-4	
-[ON]
-
+	[TRIGGER]
+		4
+	[ON]
 [/BEHAVIOR]
 
 [BEHAVIOR]
-
-[TRIGGER]
-4	
-[OFF]
-
+	[TRIGGER]
+		4
+	[OFF]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-0	0	
-[DO BEHAVIOR]
-
-[ME]
-4	
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		4
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[FLASH SCREEN]
-
-[TIME VALUE]
-500	10000	500	
-[RGBA]
-0	0	0	150	
-[LAYER]
-
-[DEFAULT]
-
-[ID]
-0	
-[/FLASH SCREEN]
-
+	[FLASH SCREEN]
+		[TIME VALUE]
+			500	10000	500
+		[RGBA]
+			0	0	0	150
+		[LAYER]
+		[DEFAULT]
+		[ID]
+			0
+	[/FLASH SCREEN]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-3	3	
-[WHICH]
-
-[PASSIVE]
-
-[CHECKUP]
-
-[IS INDEX]
-200026	
-[/IS INDEX]
-
-[/CHECKUP]
-
-[CHECKED NO]
-
-[>=]
-1	
-[DO BEHAVIOR]
-
-[CHECKUP OBJECT]
-5	
+	[FRAME]
+		3	3
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			200026
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		5
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[SUMMON MONSTER]
-
-[INDEX]
-110292	
-[LEVEL]
-0	
-[POS]
-0	0	0	
-[NO EFFECT]
-
-[/SUMMON MONSTER]
-
+	[SUMMON MONSTER]
+		[INDEX]
+			110292
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-3	3	
-[WHICH]
-
-[PASSIVE]
-
-[CHECKUP]
-
-[IS INDEX]
-200027	
-[/IS INDEX]
-
-[/CHECKUP]
-
-[CHECKED NO]
-
-[>=]
-1	
-[DO BEHAVIOR]
-
-[CHECKUP OBJECT]
-6	
+	[FRAME]
+		3	3
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			200027
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		6
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[SUMMON MONSTER]
-
-[INDEX]
-110293	
-[LEVEL]
-0	
-[POS]
-0	0	0	
-[NO EFFECT]
-
-[/SUMMON MONSTER]
-
+	[SUMMON MONSTER]
+		[INDEX]
+			110293
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-0	0	
-[WHICH]
-
-[PASSIVE]
-
-[CHECKUP]
-
-[IS INDEX]
-200028	
-[/IS INDEX]
-
-[/CHECKUP]
-
-[CHECKED NO]
-
-[>=]
-1	
-[DO BEHAVIOR]
-
-[CHECKUP OBJECT]
-7	
+	[FRAME]
+		0	0
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			200028
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		7
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[TELEPORT]
-
-[POS]
-0	0	0	
-[MOVE ME]
-
-[/TELEPORT]
-
+	[TELEPORT]
+		[POS]
+			0	0	0
+		[MOVE ME]
+	[/TELEPORT]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-5	5	
-[DO BEHAVIOR]
-
-[ME]
-8	
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		8
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[SET ACTION]
-
-[ATTACK]
-2	
-[NOW]
-
+	[SET ACTION]
+	[ATTACK]
+		2
+	[NOW]
 [/BEHAVIOR]
-

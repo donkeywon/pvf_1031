@@ -1,94 +1,103 @@
 #PVF_File
 
 [name]
-`村正`
+	`村正`
 
 [explain]
-``
+	``
 
 [attach type]
-`[trade]`
+	`[trade]`
 
 [rarity]
-2	
-[usable job]
-`[all]`
+	2
 
+[usable job]
+	`[all]`
 [/usable job]
 
 [minimum level]
-1	
+	1
+
 [icon]
-`item/creature/creature_jp.img`	72	
+	`item/creature/creature_jp.img`	72
+
 [field image]
-`item/fieldimage.img`	30	
+	`item/fieldimage.img`	30
+
 [equipment type]
-`[creature]`	0	
+	`[creature]`	0
+
 [sub type]
-0	
+	0
+
 [creature species]
-20038	
+	20038
+
 [cool time]
-10000	
+	10000
+
 [physical attack]
-7	
+	7
+
 [magical attack]
-7	
+	7
+
 [MP MAX rate]
-7.0	
+	7.0
+
 [move speed]
-20	
+	20
+
 [attack speed]
-20	
+	20
+
 [cast speed]
-20	
+	20
+
 [if]
-
-[change status]
-`hp`	`>`	`%`	0	`end`	
-[my active status]
-`weapon break`
-
-[cooltime]
-1000	
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[my active status]
+		`weapon break`
+	[cooltime]
+		1000
 [/if]
 
 [then]
-
-[target]
-`myself`	-1	
-[duration]
-3000	
-[buff]
-`superarmor`
-
+	[target]
+		`myself`	-1
+	[duration]
+		3000
+	[buff]
+		`superarmor`
 [/then]
 
 [if]
-
-[module]
-`[dead tower]`
-`[dungeon]`
-`[tournament dungeon]`
-`[war room]`
-`[blood system]`
-
-[/module]
-
-[attack success]
-1	
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[attack success]
+		1
 [/if]
 
 [then]
-
-[target]
-`enemy`	-1	
-[add absolute damage]
-`all`	`%`	15	
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	15
 [/then]
 
 [move wav]
-`CREATURE_EQUIP_TOUCH`
+	`CREATURE_EQUIP_TOUCH`
 
 [set item master]
--1	
+	-1

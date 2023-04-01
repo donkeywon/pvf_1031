@@ -1,80 +1,98 @@
 #PVF_File
 
 [name]
-`酷夏迷你暗夜使者`
+	`酷夏迷你暗夜使者`
 
 [basic explain]
-`暴擊傷害 +5%%`
+	`暴击伤害 +5%%`
 
 [attach type]
-`[trade]`
+	`[trade]`
 
 [rarity]
-2	
-[usable job]
-`[all]`
+	2
 
+[usable job]
+	`[all]`
 [/usable job]
 
 [minimum level]
-1	
-[icon]
-`item/creature/creature.img`	181	
-[field image]
-`item/fieldimage.img`	30	
-[equipment type]
-`[creature]`	0	
-[sub type]
-0	
-[creature species]
-10006	
-[cool time]
-10000	
-[MP MAX rate]
-10.0	
-[physical attack]
-15	
-[physical defense]
-15	
-[magical attack]
-15	
-[magical defense]
-15	
-[physical critical hit]
-2.0	
-[magical critical hit]
-2.0	
-[attack speed]
-20	
-[cast speed]
-20	
-[move speed]
-20	
-[equipment physical attack]
-5	5	
-[equipment magical attack]
-5	5	
-[separate attack]
-7	7	
-[all elemental resistance]
-5	
-[if]
+	1
 
-[attack success]
-1	
+[icon]
+	`item/creature/creature.img`	181
+
+[field image]
+	`item/fieldimage.img`	30
+
+[equipment type]
+	`[creature]`	0
+
+[sub type]
+	0
+
+[creature species]
+	10006
+
+[cool time]
+	10000
+
+[MP MAX rate]
+	10.0
+
+[physical attack]
+	15
+
+[physical defense]
+	15
+
+[magical attack]
+	15
+
+[magical defense]
+	15
+
+[physical critical hit]
+	2.0
+
+[magical critical hit]
+	2.0
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[move speed]
+	20
+
+[equipment physical attack]
+	5	5
+
+[equipment magical attack]
+	5	5
+
+[separate attack]
+	7	7
+
+[all elemental resistance]
+	5
+
+[if]
+	[attack success]
+		1
 [/if]
 
 [then]
-
-[target]
-`enemy`	-1	
-[increase critical damage]
-`%`
-5	
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	5
 [/then]
 
 [move wav]
-`CREATURE_EQUIP_TOUCH`
+	`CREATURE_EQUIP_TOUCH`
 
 [set item master]
--1	
+	-1

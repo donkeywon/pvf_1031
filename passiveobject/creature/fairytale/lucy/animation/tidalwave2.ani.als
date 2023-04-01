@@ -1,6 +1,9 @@
 #PVF_File
 
 [use animation]
-`TidalWave.ani`	`TidalWave`	
+	`TidalWave.ani`
+	`TidalWave`
+
 [add]
-1	0	`TidalWave`	
+	1	0
+	`TidalWave`

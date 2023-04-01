@@ -1,23 +1,25 @@
 #PVF_File
 
 [use animation]
-`icewaveadd5.ani`
-`light`
+	`icewaveadd5.ani`
+	`light`
 
 [use animation]
-`ice5add_eff_a.ani`
-`effect`
+	`ice5add_eff_a.ani`
+	`effect`
 
 [use animation]
-`ice5add_eff_b.ani`
-`effect2`
+	`ice5add_eff_b.ani`
+	`effect2`
 
 [add]
-0	-1	`light`
+	0	-1
+	`light`
 
 [add]
-0	10001	`effect`
+	0	10001
+	`effect`
 
 [add]
-0	10002	`effect2`
-
+	0	10002
+	`effect2`

@@ -1,61 +1,42 @@
 #PVF_File
 
 [MOTION]
-
-[BASE ANI]
-`../Animation/mordred_Binding/casting_shadowbinding_shadow.ani`
-
+	[BASE ANI]
+		`../Animation/mordred_Binding/casting_shadowbinding_shadow.ani`
 [/MOTION]
 
 [TRIGGER]
-
-[FRAME]
-0	6	
-[ON ATTACKSUCCESS]
-
-[CHECK STUCK]
-0	
-[WHICH]
-
-[LAST ATTACKSUCCESSES]
-
-[CHECKUP]
-
-[IS GRABABLE]
-1	
-[/CHECKUP]
-
-[CHECKED NO]
-
-[>]
-0	
-[DO BEHAVIOR]
-
-[LAST ATTACKSUCCESS]
-0	
-[DO BEHAVIOR]
-
-[ME]
-1	
+	[FRAME]
+		0	6
+	[ON ATTACKSUCCESS]
+	[CHECK STUCK]
+		0
+	[WHICH]
+	[LAST ATTACKSUCCESSES]
+	[CHECKUP]
+		[IS GRABABLE]
+			1
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[SET ACTION]
-
-[HOLD]
-
-[NOW]
-
+	[SET ACTION]
+	[HOLD]
+	[NOW]
 [/BEHAVIOR]
 
 [BEHAVIOR]
-
-[SET ACTION]
-
-[CUSTOM]
-0	
-[NOW]
-
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
 [/BEHAVIOR]
-

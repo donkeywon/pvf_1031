@@ -1,87 +1,93 @@
 #PVF_File
 
 [name]
-`迷你劍帝`
+	`迷你剑帝`
 
 [explain]
-`暴擊傷害 +7%%`
+	`暴击伤害 +7%%`
 
 [attach type]
-`[trade delete]`
+	`[trade delete]`
 
 [rarity]
-2	
-[usable job]
-`[all]`
+	2
 
+[usable job]
+	`[all]`
 [/usable job]
 
 [minimum level]
-1	
-[icon]
-`item/creature/creature_cn.img`	92	
-[field image]
-`item/fieldimage.img`	30	
-[equipment type]
-`[creature]`	0	
-[sub type]
-0	
-[creature species]
-10091	
-[cool time]
-10000	
-[physical attack]
-20	
-[physical defense]
-20	
-[magical attack]
-20	
-[magical defense]
-20	
-[attack speed]
-30	
-[move speed]
-30	
-[cast speed]
-30	
-[MP MAX rate]
-10.0	
-[if]
+	1
 
-[attack success]
-1	
+[icon]
+	`item/creature/creature_cn.img`	92
+
+[field image]
+	`item/fieldimage.img`	30
+
+[equipment type]
+	`[creature]`	0
+
+[sub type]
+	0
+
+[creature species]
+	10091
+
+[cool time]
+	10000
+
+[physical attack]
+	20
+
+[physical defense]
+	20
+
+[magical attack]
+	20
+
+[magical defense]
+	20
+
+[attack speed]
+	30
+
+[move speed]
+	30
+
+[cast speed]
+	30
+
+[MP MAX rate]
+	10.0
+
+[if]
+	[attack success]
+		1
 [/if]
 
 [then]
-
-[target]
-`enemy`	-1	
-[increase critical damage]
-`%`
-7	
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	7
 [/then]
 
 [pvp]
-
-[if]
-
-[attack success]
-1	
-[/if]
-
-[then]
-
-[target]
-`enemy`	-1	
-[increase critical damage]
-`%`
-3.5	
-[/then]
-
+	[if]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase critical damage]
+			`%`	3.5
+	[/then]
 [/pvp]
 
 [move wav]
-`CREATURE_EQUIP_TOUCH`
+	`CREATURE_EQUIP_TOUCH`
 
 [set item master]
--1	
+	-1

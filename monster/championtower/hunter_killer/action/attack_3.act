@@ -1,303 +1,215 @@
 #PVF_File
 
 [MOTION]
-
-[BASE ANI]
-`../Animation/Attack_3_0.ani`
-
-[SUB ANI]
-`../Animation/Attack_3_1.ani`	0	1	
-[/SUB ANI]
-
-[SOUND]
-`HUNTKILLER_EAT`	9	
-`HUNTKILLER_CHEW`	17	
-`R_HUNTKILLER_SKILL_01`	18	
-`HUNTKILLER_CHEW`	24	
-`HUNTKILLER_CHEW`	28	
-`HUNTKILLER_CHEW_SPIT`	34	
-[/SOUND]
-
+	[BASE ANI]
+		`../Animation/Attack_3_0.ani`
+	[SUB ANI]
+		`../Animation/Attack_3_1.ani`	0	1
+	[/SUB ANI]
+	[SOUND]
+		`HUNTKILLER_EAT`	9
+		`HUNTKILLER_CHEW`	17
+		`R_HUNTKILLER_SKILL_01`	18
+		`HUNTKILLER_CHEW`	24
+		`HUNTKILLER_CHEW`	28
+		`HUNTKILLER_CHEW_SPIT`	34
+	[/SOUND]
 [/MOTION]
 
 [TRIGGER]
-
-[ON SET ACTION]
-
-[DO BEHAVIOR]
-
-[ME]
-0	
+	[ON SET ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		0
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[DIM]
-`grabsuccess`
-
-[=]
-0	
-[/DIM]
-
+	[DIM]
+		`grabsuccess`	
+		[=]
+			0
+	[/DIM]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[ON ATTACKSUCCESS]
-
-[WHICH]
-
-[LAST ATTACKSUCCESS]
-
-[CHECKUP]
-
-[IS OBJECT TYPE]
-
-[CHARACTER]
-
-[/IS OBJECT TYPE]
-
-[IS GRABABLE]
-1	
-[/CHECKUP]
-
-[CHECKED NO]
-
-[>]
-0	
-[SAVE TARGET OBJECT]
-0	
-[DO BEHAVIOR]
-
-[ME]
-1	
-[DO BEHAVIOR]
-
-[LAST ATTACKSUCCESS]
-7	
-[DO BEHAVIOR]
-
-[LAST ATTACKSUCCESS]
-8	
+	[ON ATTACKSUCCESS]
+	[WHICH]
+	[LAST ATTACKSUCCESS]
+	[CHECKUP]
+		[IS OBJECT TYPE]
+			[CHARACTER]
+		[/IS OBJECT TYPE]
+		[IS GRABABLE]
+			1
+	[/CHECKUP]
+	[CHECKED NO]
+	[>]
+		0
+	[SAVE TARGET OBJECT]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		7
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		8
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[DIM]
-`grabsuccess`
-
-[=]
-1	
-[/DIM]
-
+	[DIM]
+		`grabsuccess`	
+		[=]
+			1
+	[/DIM]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-10	10	
-[IF]
-`grabsuccess`
-
-[=]
-0	
-[/IF]
-
-[DO BEHAVIOR]
-
-[ME]
-2	
+	[FRAME]
+		10	10
+	[IF]
+		`grabsuccess`	
+		[=]
+			0
+	[/IF]
+	[DO BEHAVIOR]
+	[ME]
+		2
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[SET ACTION]
-
-[ATTACK]
-5	
-[NOW]
-
+	[SET ACTION]
+	[ATTACK]
+		5
+	[NOW]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-4	4	
-[IF]
-`grabsuccess`
-
-[=]
-1	
-[/IF]
-
-[DO BEHAVIOR]
-
-[LOAD TARGET]
-0	3	
+	[FRAME]
+		4	4
+	[IF]
+		`grabsuccess`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[LOAD TARGET]
+		0	3
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[SET ACTION]
-
-[HOLD]
-
-[NOW]
-
-[SET DIRECTION]
-
-[MY OPPOSITE DIRECTION]
-
-[SET POS FORCE]
-
-[X START]
-140	
-[Y START]
--2	
-[Z START]
-0	
-[USE MY BASEPOS]
-
-[USE MY DIRECTION]
-
-[/SET POS FORCE]
-
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+	[SET DIRECTION]
+	[MY OPPOSITE DIRECTION]
+	[SET POS FORCE]
+		[X START]
+			140
+		[Y START]
+			-2
+		[Z START]
+			0
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/SET POS FORCE]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-8	8	
-[IF]
-`grabsuccess`
-
-[=]
-1	
-[/IF]
-
-[DO BEHAVIOR]
-
-[LOAD TARGET]
-0	4	
+	[FRAME]
+		8	8
+	[IF]
+		`grabsuccess`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[LOAD TARGET]
+		0	4
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[SET ACTION]
-
-[HOLD]
-
-[NOW]
-
-[SET DIRECTION]
-
-[MY OPPOSITE DIRECTION]
-
-[SET POS FORCE]
-
-[X START]
-90	
-[Y START]
--2	
-[Z START]
-0	
-[USE MY BASEPOS]
-
-[USE MY DIRECTION]
-
-[/SET POS FORCE]
-
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+	[SET DIRECTION]
+	[MY OPPOSITE DIRECTION]
+	[SET POS FORCE]
+		[X START]
+			90
+		[Y START]
+			-2
+		[Z START]
+			0
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/SET POS FORCE]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-9	9	
-[IF]
-`grabsuccess`
-
-[=]
-1	
-[/IF]
-
-[DO BEHAVIOR]
-
-[LOAD TARGET]
-0	5	
+	[FRAME]
+		9	9
+	[IF]
+		`grabsuccess`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[LOAD TARGET]
+		0	5
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[SET ACTION]
-
-[HOLD]
-
-[NOW]
-
-[SET DIRECTION]
-
-[MY OPPOSITE DIRECTION]
-
-[SET POS FORCE]
-
-[X START]
-80	
-[Y START]
--2	
-[Z START]
-0	
-[USE MY BASEPOS]
-
-[USE MY DIRECTION]
-
-[/SET POS FORCE]
-
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+	[SET DIRECTION]
+	[MY OPPOSITE DIRECTION]
+	[SET POS FORCE]
+		[X START]
+			80
+		[Y START]
+			-2
+		[Z START]
+			0
+		[USE MY BASEPOS]
+		[USE MY DIRECTION]
+	[/SET POS FORCE]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[FRAME]
-34	34	
-[IF]
-`grabsuccess`
-
-[=]
-1	
-[/IF]
-
-[DO BEHAVIOR]
-
-[LOAD TARGET]
-0	6	
+	[FRAME]
+		34	34
+	[IF]
+		`grabsuccess`	
+		[=]
+			1
+	[/IF]
+	[DO BEHAVIOR]
+	[LOAD TARGET]
+		0	6
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[SET ACTION]
-
-[DOWN]
-
-[DEFAULT]
-0	
-[FORCE]
-1600	200	
-[NOW]
-
+	[SET ACTION]
+	[DOWN]
+	[DEFAULT]
+		0
+	[FORCE]
+		1600	200
+	[NOW]
 [/BEHAVIOR]
 
 [BEHAVIOR]
-
-[RESTORE]
-
-[HP]
--50	
-[%]
-
+	[RESTORE]
+	[HP]
+		-50
+	[%]
 [/BEHAVIOR]
 
 [BEHAVIOR]
-
-[SET COLOR]
-0	0	0	
+	[SET COLOR]
+		0	0	0
 [/BEHAVIOR]
-

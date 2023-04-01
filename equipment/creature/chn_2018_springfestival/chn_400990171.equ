@@ -77,38 +77,42 @@
 
 [MP MAX rate]
 	15.0
+
 [if]
-[attack success]
-1	
+	[attack success]
+		1
 [/if]
 
 [then]
-
-[target]
-`enemy`	-1	
-[add absolute damage]
-`all`	`%`	10	
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
 [/then]
 
 [if]
-
-[change status]
-`hp`	`>`	`%`	0	`end`	
-[cooltime]
-30000	
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		30000
 [/if]
 
 [then]
-
-[target]
-`myself`	-1	
-[probability]
-100	
-[duration]
-30000	
-[stat by condition]
-`skill cool time`	`%`	-5	
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[duration]
+		30000
+	[stat by condition]
+		`skill cool time`
+		`%`	-5
 [/then]
+
 [all skill item]
 	[item growtype]
 		`[all]`	0

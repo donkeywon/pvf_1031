@@ -1,45 +1,32 @@
 #PVF_File
 
 [MOTION]
-
-[BASE ANI]
-`../Animation/binding/chn_modred.ani`
-
-[SUB ANI]
-
-[/SUB ANI]
-
+	[BASE ANI]
+		`../Animation/binding/chn_modred.ani`
+	[SUB ANI]
+	[/SUB ANI]
 [/MOTION]
 
 [TRIGGER]
-
-[FRAME]
-10	10	
-[DO BEHAVIOR]
-
-[ME]
-0	
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		0
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[CREATE PASSIVEOBJECT]
-
-[INDEX]
-200024	
-[PARTICLE FILENAME]
-``
-
-[LEVEL]
-85	
-[POS]
-0	0	0	
-[USE MY DIRECTION]
-
-[/CREATE PASSIVEOBJECT]
-
-[PLAY SOUND]
-`SHADOW_BINDING`
-
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			200024
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			85
+		[POS]
+			0	0	0
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+	[PLAY SOUND]
+		`SHADOW_BINDING`
 [/BEHAVIOR]
-

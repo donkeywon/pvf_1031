@@ -1,101 +1,114 @@
 #PVF_File
 
 [name]
-`寵物蛋 (光明圣麒麟)`
+	`宠物蛋 (光明圣麒麟)`
 
 [explain]
-`暴擊傷害 +10%% (在決斗場中 +5%%)`
+	`暴击伤害 +10%% (在决斗场中 +5%%)`
 
 [attach type]
-`[sealing]`
+	`[sealing]`
 
 [rarity]
-2	
-[usable job]
-`[all]`
+	2
 
+[usable job]
+	`[all]`
 [/usable job]
 
 [minimum level]
-1	
+	1
+
 [icon]
-`item/creature/creature_egg_cn.img`	26	
+	`item/creature/creature_egg_cn.img`	26
+
 [field image]
-`item/fieldimage.img`	30	
+	`item/fieldimage.img`	30
+
 [equipment type]
-`[creature]`	0	
+	`[creature]`	0
+
 [sub type]
-1	
+	1
+
 [creature species]
-256	
+	256
+
 [output index]
-100330533	
+	100330533
+
 [cool time]
-10000	
+	10000
+
 [move wav]
-`CREATURE_EGG_TOUCH`
+	`CREATURE_EGG_TOUCH`
 
 [physical attack]
-30	
-[magical attack]
-30	
-[physical defense]
-30	
-[magical defense]
-30	
-[attack speed]
-30	
-[move speed]
-30	
-[cast speed]
-30	
-[MP MAX rate]
-15.0	
-[equipment physical attack]
-20	20	
-[equipment magical attack]
-20	20	
-[separate attack]
-30	30	
-[physical critical hit]
-7.0	
-[magical critical hit]
-7.0	
-[if]
+	30
 
-[event attack success]
-1	
+[magical attack]
+	30
+
+[physical defense]
+	30
+
+[magical defense]
+	30
+
+[attack speed]
+	30
+
+[move speed]
+	30
+
+[cast speed]
+	30
+
+[MP MAX rate]
+	15.0
+
+[equipment physical attack]
+	20	20
+
+[equipment magical attack]
+	20	20
+
+[separate attack]
+	30	30
+
+[physical critical hit]
+	7.0
+
+[magical critical hit]
+	7.0
+
+[if]
+	[event attack success]
+		1
 [/if]
 
 [then]
-
-[target]
-`enemy`	-1	
-[increase critical damage]
-`%`
-10	
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	10
 [/then]
 
 [pvp]
-
-[if]
-
-[event attack success]
-1	
-[/if]
-
-[then]
-
-[target]
-`enemy`	-1	
-[increase critical damage]
-`%`
-5	
-[/then]
-
+	[if]
+		[event attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase critical damage]
+			`%`	5
+	[/then]
 [/pvp]
 
 [set item master]
--1	
+	-1
+
 [anti evil]
-100	
+	100
