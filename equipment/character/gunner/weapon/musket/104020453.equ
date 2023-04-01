@@ -188,16 +188,19 @@
 	[/skill]
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
+		`myself`	-1
 	[probability]
 		40
-	[add absolute damage]
-		`all`
-		`%`	25
+	[equipment duration]
+		1000
+	[appendage]
+		925
 [/then]
 
 [if]

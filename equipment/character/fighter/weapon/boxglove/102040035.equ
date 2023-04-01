@@ -160,20 +160,9 @@
 		`stun`	84
 [/then]
 
-[if]
-	[attack success]
-		1
-	[cooltime]
-		2000
-[/if]
-
-[then]
-	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	12
-[/then]
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	12
+[/skill data up]
 
 [pvp]
 	[if]

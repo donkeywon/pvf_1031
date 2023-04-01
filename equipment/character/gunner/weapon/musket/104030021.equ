@@ -302,18 +302,9 @@
 		`+`	40
 [/then]
 
-[if]
-	[attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	6
-[/then]
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	6
+[/skill data up]
 
 [icon mark]
 	`Item/IconMark.img`	68

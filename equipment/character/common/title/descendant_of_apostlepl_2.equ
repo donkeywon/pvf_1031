@@ -133,45 +133,37 @@
 [if]
 	[target type]
 		`human`
-	[module]
-		`[dead tower]`
-		`[dungeon]`
-		`[tournament dungeon]`
-		`[war room]`
-		`[blood system]`
-	[/module]
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	7
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		907
 [/then]
 
 [if]
 	[target type]
 		`beast`
-	[module]
-		`[dead tower]`
-		`[dungeon]`
-		`[tournament dungeon]`
-		`[war room]`
-		`[blood system]`
-	[/module]
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	7
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		907
 [/then]
 
 [room list move speed rate]

@@ -195,14 +195,17 @@
 		1
 	[my appendage]
 		352
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	35
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		935
 [/then]
 
 [if]
@@ -224,16 +227,19 @@
 		`counter`
 	[attack success]
 		1
+	[cooltime]
+		1000
 	[my appendage]
 		353
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	35
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		935
 [/then]
 
 [if]

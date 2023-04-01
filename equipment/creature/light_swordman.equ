@@ -4,8 +4,8 @@
 	`迷你剑圣`
 
 [explain]
-	`攻击时，附加 30%%的伤害
-所有技能冷却减少 20%%`
+	`攻击时，附加 20%%的伤害
+所有技能冷却减少 10%%`
 
 [flavor text]
 	``
@@ -84,28 +84,12 @@
 		30000
 	[stat by condition]
 		`skill cool time`
-		`%`	-30
+		`%`	-10
 [/then]
 
-[if]
-	[module]
-		`[dead tower]`
-		`[dungeon]`
-		`[tournament dungeon]`
-		`[war room]`
-		`[blood system]`
-	[/module]
-	[attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	20
-[/then]
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	20
+[/skill data up]
 
 [move wav]
 	`CREATURE_EQUIP_TOUCH`

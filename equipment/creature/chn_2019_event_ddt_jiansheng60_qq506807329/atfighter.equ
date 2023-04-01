@@ -80,25 +80,9 @@
 [MP MAX rate]
 	15.0
 
-[if]
-	[module]
-		`[dead tower]`
-		`[dungeon]`
-		`[tournament dungeon]`
-		`[war room]`
-		`[blood system]`
-	[/module]
-	[attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	15
-[/then]
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	15
+[/skill data up]
 
 [if]
 	[change status]

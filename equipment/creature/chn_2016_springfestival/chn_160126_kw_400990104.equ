@@ -94,25 +94,9 @@
 [anti evil]
 	0
 
-[if]
-	[module]
-		`[dead tower]`
-		`[dungeon]`
-		`[tournament dungeon]`
-		`[war room]`
-		`[blood system]`
-	[/module]
-	[attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	5
-[/then]
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	5
+[/skill data up]
 
 [if]
 	[change status]

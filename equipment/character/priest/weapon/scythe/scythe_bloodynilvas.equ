@@ -119,14 +119,17 @@
 		`counter`
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	8
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		908
 [/then]
 
 [possible kiri protect]

@@ -55,47 +55,6 @@
 [cast speed]
 	20
 
-[if]
-	[change status]
-		`hp`
-		`>`
-		`%`	0
-		`end`
-	[my active status]
-		`weapon break`
-	[cooltime]
-		1000
-[/if]
-
-[then]
-	[target]
-		`myself`	-1
-	[duration]
-		3000
-	[buff]
-		`superarmor`
-[/then]
-
-[if]
-	[module]
-		`[dead tower]`
-		`[dungeon]`
-		`[tournament dungeon]`
-		`[war room]`
-		`[blood system]`
-	[/module]
-	[attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	15
-[/then]
-
 [move wav]
 	`CREATURE_EQUIP_TOUCH`
 

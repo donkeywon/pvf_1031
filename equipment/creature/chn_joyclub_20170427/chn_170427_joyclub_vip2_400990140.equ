@@ -91,23 +91,9 @@
 		`[all]`
 [/all skill item]
 
-[if]
-	[module]
-		`[dungeon type]`
-		`[war room]`
-		`[assault]`
-	[/module]
-	[attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	5
-[/then]
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	5
+[/skill data up]
 
 [if]
 	[module]

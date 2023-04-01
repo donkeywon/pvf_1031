@@ -189,14 +189,17 @@
 		`bleeding`
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	20
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		920
 [/then]
 
 [possible kiri protect]

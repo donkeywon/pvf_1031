@@ -150,18 +150,9 @@
 	`[at gunner]`	71	`[all]`	`[static]`	11	`%`	40
 [/skill data up]
 
-[if]
-	[attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	15
-[/then]
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	15
+[/skill data up]
 
 [elemental property]
 	`[fire element]`

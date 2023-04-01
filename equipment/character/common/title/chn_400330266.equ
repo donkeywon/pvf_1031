@@ -104,25 +104,9 @@
 [room list move speed rate]
 	0.2
 
-[if]
-	[module]
-		`[dead tower]`
-		`[dungeon]`
-		`[tournament dungeon]`
-		`[war room]`
-		`[blood system]`
-	[/module]
-	[attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	12
-[/then]
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	12
+[/skill data up]
 
 [pvp]
 	[if]

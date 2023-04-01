@@ -133,18 +133,9 @@
 [cool time]
 	10000
 
-[if]
-	[event attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	11
-[/then]
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	11
+[/skill data up]
 
 [item category]
 	`boss drop`

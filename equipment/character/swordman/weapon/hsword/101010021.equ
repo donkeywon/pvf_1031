@@ -153,16 +153,19 @@
 [if]
 	[attack success]
 		1
+	[cooltime]
+		1000
 	[my appendage]
 		146
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	22
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		922
 [/then]
 
 [if]
