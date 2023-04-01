@@ -1,0 +1,105 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../../../../../creature/fatezero/rider/animation/overskill.ani`
+	[SUB ANI]
+	[/SUB ANI]
+	[SOUND]
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		37	37
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		38	38
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		10	10
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		2	200
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		28	28
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		5	200
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		29	29
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		100	800	10	160	0	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		37	37
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		5	300
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		56	56
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			100145
+		[PARTICLE FILENAME]
+			`../../../../../creature/fatezero/rider/particle/riderwagon.ptl`
+		[LEVEL]
+			0
+		[POS]
+			260	0	0
+		[USE MY DIRECTION]
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

@@ -1,0 +1,130 @@
+#PVF_File
+
+[name]
+	`阿尔托莉亚`
+
+[width]
+	10	10
+
+[floating height]
+	0
+
+[layer]
+	`[normal]`
+
+[direction correct]
+	1
+
+[move speed]
+	286	238	114	95	70
+
+[start level]
+	1
+
+[permission level]
+	10
+
+[max level]
+	50
+
+[parent max level]
+	50
+
+[artifact slot]
+	`red`
+	`blue`
+	`green`
+[/artifact slot]
+
+[piercing]
+	1000	0	1000	0
+[/piercing]
+
+[basic motion]
+	`Animation/saver_stay.ani`
+
+[walk motion]
+	`Animation/saver_walk.ani`
+
+[run motion]
+	`Animation/saver_run.ani`
+
+[response motion]
+	`Animation/saver_response.ani`
+
+[response sound tag]
+	`CREATURE_CRY_02`
+
+[etc motion]
+	`Effect/Animation/buff/saver_d_land.ani`
+	`Effect/Animation/buff/saver_d_landwind_b.ani`
+	`Effect/Animation/buff/saver_d_fade_in.ani`
+	`Effect/Animation/buff/saver_d_fade_out.ani`
+	`Effect/Animation/buff/saver_d_landwind_f.ani`
+	`Effect/Animation/buff/saver_d_sword_dodge.ani`
+	`Effect/Animation/buff/saver_d_swordlight_a.ani`
+	`Effect/Animation/buff/saver_d_wave.ani`
+	`Effect/Animation/buff/saver_d_explode.ani`
+	`Animation/saver_come_in_normal_skill.ani`
+	`Animation/saver_come_in_over_skill.ani`
+[/etc motion]
+
+[skill list]
+	[skill node]
+		0	
+		[skill type]
+			`general skill`
+		[skill name]
+			`直感`
+		[skill explain]
+			`    用敏锐的直感预知危险， 可使角色获得属性上升的Buff。`
+		[skill recovery time]
+			80000
+		[learn skill level]
+			1
+		[skill mp]
+			60
+		[skill motion]
+			`Animation/skill.ani`
+		[skill info]
+			`skill/skill.skl`
+	[/skill node]
+	[skill node]
+		0	
+		[skill type]
+			`over skill`
+		[skill name]
+			`风王铁槌`
+		[skill explain]
+			`    释放风之力量覆盖剑身， 猛烈地攻击前方敌人。`
+		[skill recovery time]
+			120000
+		[learn skill level]
+			1
+		[skill mp]
+			120
+		[skill motion]
+			`Animation/overskill_0.ani`
+		[skill info]
+			`skill/over_skill.skl`
+		[attack info]
+			`AttackInfo/overskill.atk`
+	[/skill node]
+[/skill list]
+
+[int data]
+	50	50	10	10	20000	150	60	80	50	9	10
+[/int data]
+
+[string data]
+	`DESTROY_SOUND`
+[/string data]
+
+[evolution quest]
+	0
+
+[evolution creature id]
+	0
+
+[evolution level]
+	0

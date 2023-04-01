@@ -1,0 +1,70 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../../../../creature/gon/overskill/start/over_start_dust.ani`
+	[SUB ANI]
+		`../../../../creature/gon/aimpoint/aimpoint.ani`	20	0
+		`../../../../creature/gon/overskill/end/over_normal.ani`	22	1
+	[/SUB ANI]
+	[SOUND]
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		1	100
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		20	20
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			500
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		21	21
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SET SPEED]
+		[X AXIS]
+			0
+		[USE MY DIRECTION]
+	[/SET SPEED]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		23	23
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		8	200
+[/BEHAVIOR]

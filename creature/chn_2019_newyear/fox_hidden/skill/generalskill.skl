@@ -1,40 +1,41 @@
 #PVF_File
 
 [change status buff]
-
-[duration]
-10000	
-[appendage]
-10135	
+	[duration]
+		10000
+	[stat by condition]
+		`physical attack bonus`
+		`%`	10
 [/change status buff]
 
 [change status buff]
-
-[duration]
-10000	
-[stat by condition]
-`attack speed`
-`+`
-50	
+	[duration]
+		10000
+	[stat by condition]
+		`magical attack bonus`
+		`%`	10
 [/change status buff]
 
 [change status buff]
-
-[duration]
-10000	
-[stat by condition]
-`move speed`
-`+`
-50	
+	[duration]
+		10000
+	[stat by condition]
+		`attack speed`
+		`+`	50
 [/change status buff]
 
 [change status buff]
-
-[duration]
-10000	
-[stat by condition]
-`cast speed`
-`+`
-50	
+	[duration]
+		10000
+	[stat by condition]
+		`move speed`
+		`+`	50
 [/change status buff]
 
+[change status buff]
+	[duration]
+		10000
+	[stat by condition]
+		`cast speed`
+		`+`	50
+[/change status buff]

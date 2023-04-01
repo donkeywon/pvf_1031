@@ -72,7 +72,6 @@ function onSetState_FlameCircle(obj, state, datas, isResetTimer)
 	if(substate == SUB_STATE_FLAMECIRCLE_CASTING)
 	{
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_FLAMECIRCLE_CASTING);
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		
 		// 캐스팅 속도를 따라가도록 설정
 		// 캐스팅 속도가 변경되면, 에니메이션 속도도 변경 됩니다.
@@ -82,8 +81,8 @@ function onSetState_FlameCircle(obj, state, datas, isResetTimer)
 		//local animation = sq_GetCurrentAnimation(obj);
 		//local startTime = sq_GetFrameStartTime(animation, 16);
 		//local speedRate = startTime.tofloat() / castTime.tofloat();
-		//obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED,
-		//	SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, speedRate, speedRate);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED,
+			SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, speedRate, speedRate);
 		//
 		//sq_StartDrawCastGauge(obj, startTime, true);
 		
@@ -91,12 +90,10 @@ function onSetState_FlameCircle(obj, state, datas, isResetTimer)
 	}
 	else if(substate == SUB_STATE_FLAMECIRCLE_0) {
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_FLAMECIRCLE1);
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		local pAni = obj.sq_GetCurrentAni();
 	}
 	else if(substate == SUB_STATE_FLAMECIRCLE_1) {
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_FLAMECIRCLE2);
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		local pAni = obj.sq_GetCurrentAni();
 		//pAni.setSpeedRate(100.0);
 	}
@@ -104,7 +101,6 @@ function onSetState_FlameCircle(obj, state, datas, isResetTimer)
 		obj.sq_PlaySound("MW_FLAMECILCLE");
 	
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_FLAMECIRCLE3);
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		
 		obj.sq_SetCurrentAttackInfo(CUSTOM_ATTACK_INFO_FLAMECIRCLE);
 		local pAttack = sq_GetCurrentAttackInfo(obj);
@@ -133,8 +129,8 @@ function onSetState_FlameCircle(obj, state, datas, isResetTimer)
 		// SUB_STATE_FLAMECIRCLE_4 서브스테이트 작업
 	}
 
-	//obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED,
-	//	SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
+	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED,
+		SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 }
 
 function prepareDraw_FlameCircle(obj)

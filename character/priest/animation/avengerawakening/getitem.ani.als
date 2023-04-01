@@ -2,8 +2,8 @@
 
 [use animation]
 	`GetItem_ld.ani`
-	`2_light_dodge`
+	`GetItem_ld`
 
 [none effect add]
-	0	10010
-	`2_light_dodge`
+	0	10001
+	`GetItem_ld`

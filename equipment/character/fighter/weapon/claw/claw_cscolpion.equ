@@ -35,13 +35,13 @@
 	22
 
 [price]
-	104000
+	60000000
 
 [repair price]
 	87360
 
 [value]
-	83200
+	6000000
 
 [creation rate]
 	250
@@ -157,14 +157,17 @@
 		`bleeding`
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	15
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		915
 [/then]
 
 [pvp]

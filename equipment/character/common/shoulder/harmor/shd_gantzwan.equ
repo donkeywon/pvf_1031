@@ -35,13 +35,13 @@
 	16
 
 [price]
-	57000
+	50000000
 
 [repair price]
 	50274
 
 [value]
-	45600
+	5000000
 
 [equipment physical defense]
 	2080	1888
@@ -78,14 +78,17 @@
 		`dash attack`
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	20
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		920
 [/then]
 
 [routing priority]
@@ -95,3 +98,9 @@
 
 [icon mark]
 	`Item/IconMark.img`	68
+
+[need material]
+	3260	4000
+
+[creation rate]
+	250

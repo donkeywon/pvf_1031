@@ -1,0 +1,95 @@
+#PVF_File
+
+[name]
+	`斯卡萨之心`
+
+[name2]
+	`name2_11958`
+
+[basic explain]
+	`装备时， 使画面内的所有敌人减少7%%的防御力以及55点所有属性抗性`
+
+[grade]
+	85
+
+[creation rate]
+	50
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	4
+
+[weight]
+	50
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[icon]
+	`Item/creature/artifact_green_cn.img`	7
+
+[field image]
+	`Item/field_creature.img`	1
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[equipment type]
+	`[artifact blue]`	17
+
+[sub type]
+	0
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[duration]
+		1000
+	[stat]
+		`equipment physical defense`
+		`%`	-7
+	[stat]
+		`equipment magical defense`
+		`%`	-7
+	[stat]
+		`all elemental resistance`
+		`+`	-55
+[/then]
+
+[creature minimum level]
+	1
+
+[creature magical attack]
+	1000
+
+[creature magical critical hit]
+	1.0
+
+[need material]
+	3285	2000
+
+[cool time]
+	10000
+
+[move wav]
+	`SKIN_TOUCH`
+
+[set item master]
+	-1
+
+[possible kiri protect]
+
+[no random]

@@ -1,0 +1,25 @@
+#PVF_File
+
+[use animation]
+	`04_random_eff_normal.ani`
+	`04_random_eff_normal`
+
+[use animation]
+	`04_random_eff_dodge.ani`
+	`04_random_eff_dodge`
+
+[use animation]
+	`04_random_eff_normal_back.ani`
+	`04_random_eff_normal_back`
+
+[none effect add]
+	0	-1
+	`04_random_eff_normal_back`
+
+[none effect add]
+	0	10001
+	`04_random_eff_dodge`
+
+[none effect add]
+	0	10002
+	`04_random_eff_normal`

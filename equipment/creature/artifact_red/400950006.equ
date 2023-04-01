@@ -1,100 +1,67 @@
 #PVF_File
 
 [name]
-`宿命之戰袍`
+	`宿命之战袍`
 
 [explain]
-`    攻擊時， 附加8%%的傷害。
-    只有裝備寵物后， 寵物裝備附帶的屬性才能生效。`
+	`    攻击时， 附加8%%的伤害。
+    只有装备宠物后， 宠物装备附带的属性才能生效。`
 
 [flavor text]
-`<2020新春禮包>`
+	`<2020新春礼包>`
 
 [minimum level]
-1	
+	60
+
 [grade]
-1	
+	50
+
 [attach type]
-`[trade]`
+	`[trade]`
 
 [rarity]
-3	
-[weight]
-50	
-[usable job]
-`[all]`
+	3
 
+[weight]
+	50
+
+[usable job]
+	`[all]`
 [/usable job]
 
 [icon]
-`Item/creature/artifact_red_cn.img`
-50	
+	`Item/creature/artifact_red_cn.img`	50
+
 [field image]
-`Item/field_creature.img`
-0	
+	`Item/field_creature.img`	0
+
 [equipment type]
-`[artifact red]`
-15	
+	`[artifact red]`	15
+
 [sub type]
-0	
+	0
+
 [creature physical attack]
-1000	
-[if]
+	1000
 
-[module]
-`[dead tower]`
-`[dungeon]`
-`[tournament dungeon]`
-`[war room]`
-`[blood system]`
-
-[/module]
-
-[attack success]
-1	
-[/if]
-
-[then]
-
-[target]
-`enemy`
--1	
-[add absolute damage]
-`all`
-`%`
-8	
-[/then]
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	8
+[/skill data up]
 
 [cool time]
-10000	
+	10000
+
+[need material]
+	3285	120
+
 [move wav]
-`BONE_TOUCH`
+	`BONE_TOUCH`
 
 [set item master]
--1	
-[item category]
-`no random`
+	-1
 
+[item category]
+	`no random`
 [/item category]
 
-
-
-[if]
-
-[hit]
-1	
-[/if]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-0	
-[speech on]
-0	0	`操你媽的偷你麻痺，自己不會做？還要偷我的？記住你爸爸 需要購買請認準作者--劍聖60 QQ-506807329`
-
-[/speech on]
-
-[/then]
+[no random]

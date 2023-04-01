@@ -1,373 +1,315 @@
 #PVF_File
 
 [name]
-`使徒降臨`
+	`使徒降临`
 
 [explain]
-`攻擊時， 附加12%%的傷害。 (決斗場中， 適用一半效果)
-增加3%%的力量、 智力。 (決斗場中， 適用一半效果)
-
-攻擊時， 有3%%的幾率增加35點力量、 智力、 體力、 精神， 效果持續20秒。 (冷卻時間30秒)
-施放技能時， 有5%%的幾率增加5%%的物理、 魔法暴擊率， 效果持續20秒。 (冷卻時間30秒)`
+	`攻击时， 附加12%%的伤害。 (决斗场中， 适用一半效果)
+增加3%%的力量、 智力。 (决斗场中， 适用一半效果)
+攻击时， 有3%%的几率增加35点力量、 智力、 体力、 精神， 效果持续20秒。 (冷却时间30秒)
+施放技能时， 有5%%的几率增加5%%的物理、 魔法暴击率， 效果持续20秒。 (冷却时间30秒)`
 
 [flavor text]
-`<2020新春禮包>`
+	`<2020新春礼包>`
 
 [grade]
-1	
-[rarity]
-2	
-[usable job]
-`[all]`
+	1
 
+[rarity]
+	2
+
+[usable job]
+	`[all]`
 [/usable job]
 
 [attach type]
-`[sealing]`
+	`[sealing]`
 
 [minimum level]
-1	
+	1
+
 [physical attack]
-80	
+	80
+
 [physical defense]
-80	
+	80
+
 [magical attack]
-80	
+	80
+
 [magical defense]
-80	
+	80
+
 [attack speed]
-30	
+	30
+
 [cast speed]
-30	
+	30
+
 [move speed]
-30	
+	30
+
 [stuck]
--2	
+	-2
+
 [stuck resistance]
-20	
+	20
+
 [HP MAX]
-350	
+	350
+
 [MP MAX]
-350	
+	350
+
 [HP regen speed]
-40	
+	40
+
 [MP regen speed]
-8	
+	8
+
 [equipment physical attack]
-60	60	
+	60	60
+
 [equipment magical attack]
-60	60	
+	60	60
+
 [separate attack]
-60	60	
+	60	60
+
 [physical critical hit]
-12.0	
+	12.0
+
 [magical critical hit]
-12.0	
+	12.0
+
 [all elemental attack]
-15	
+	15
+
 [icon]
-`Item/Title/title_cn.img`
-411	
+	`Item/Title/title_cn.img`	411
+
 [equipment type]
-`[title name]`
-1	
+	`[title name]`	1
+
 [move wav]
-`NAME_TOUCH`
+	`NAME_TOUCH`
 
 [weight]
-1	
-[custom animation]
-`TitleAnimation/chn_2020_newyear_normal.ani`
+	1
 
+[custom animation]
+	`TitleAnimation/chn_2020_newyear_normal.ani`
 [/custom animation]
 
 [room list move speed rate]
-0.2	
-[if]
+	0.2
 
-[module]
-`[dead tower]`
-`[dungeon]`
-`[tournament dungeon]`
-`[war room]`
-`[blood system]`
-
-[/module]
-
-[attack success]
-1	
-[/if]
-
-[then]
-
-[target]
-`enemy`
--1	
-[add absolute damage]
-`all`
-`%`
-12	
-[/then]
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	12
+[/skill data up]
 
 [pvp]
-
-[if]
-
-[module]
-`[dead tower]`
-`[dungeon]`
-`[tournament dungeon]`
-`[war room]`
-`[blood system]`
-
-[/module]
-
-[attack success]
-1	
-[/if]
-
-[then]
-
-[target]
-`enemy`
--1	
-[add absolute damage]
-`all`
-`%`
-6	
-[/then]
-
+	[if]
+		[module]
+			`[dead tower]`
+			`[dungeon]`
+			`[tournament dungeon]`
+			`[war room]`
+			`[blood system]`
+		[/module]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	6
+	[/then]
 [/pvp]
 
 [if]
-
-[change status]
-`hp`
-`>`
-`%`
-0	`end`
-
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
 [/if]
 
 [then]
-
-[target]
-`myself`
--1	
-[stat by condition]
-`physical attack`
-`%`
-3	
-[stat by condition]
-`magical attack`
-`%`
-3	
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`%`	3
+	[stat by condition]
+		`magical attack`
+		`%`	3
 [/then]
 
 [pvp]
-
-[if]
-
-[change status]
-`hp`
-`>`
-`%`
-0	`end`
-
-[/if]
-
-[then]
-
-[target]
-`myself`
--1	
-[stat by condition]
-`physical attack`
-`%`
-2	
-[stat by condition]
-`magical attack`
-`%`
-2	
-[/then]
-
+	[if]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`physical attack`
+			`%`	2
+		[stat by condition]
+			`magical attack`
+			`%`	2
+	[/then]
 [/pvp]
 
 [if]
-
-[module]
-`[dead tower]`
-`[dungeon]`
-`[tournament dungeon]`
-`[war room]`
-`[blood system]`
-
-[/module]
-
-[cooltime]
-30000	
-[attack success]
-1	
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		30000
+	[attack success]
+		1
 [/if]
 
 [then]
-
-[target]
-`myself`
--1	
-[equipment duration]
-20000	
-[probability]
-3	
-[stat]
-`physical attack`
-`+`
-35	
-[stat]
-`physical defense`
-`+`
-35	
-[stat]
-`magical attack`
-`+`
-35	
-[stat]
-`magical defense`
-`+`
-35	
+	[target]
+		`myself`	-1
+	[equipment duration]
+		20000
+	[probability]
+		3
+	[stat]
+		`physical attack`
+		`+`	35
+	[stat]
+		`physical defense`
+		`+`	35
+	[stat]
+		`magical attack`
+		`+`	35
+	[stat]
+		`magical defense`
+		`+`	35
 [/then]
 
 [if]
-
-[module]
-`[dead tower]`
-`[dungeon]`
-`[tournament dungeon]`
-`[war room]`
-`[blood system]`
-
-[/module]
-
-[cooltime]
-30000	
-[casting]
-1	
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		30000
+	[casting]
+		1
 [/if]
 
 [then]
-
-[target]
-`myself`
--1	
-[equipment duration]
-20000	
-[probability]
-5	
-[stat]
-`physical critical hit`
-`+`
-5	
-[stat]
-`magical critical hit`
-`+`
-5	
+	[target]
+		`myself`	-1
+	[equipment duration]
+		20000
+	[probability]
+		5
+	[stat]
+		`physical critical hit`
+		`+`	5
+	[stat]
+		`magical critical hit`
+		`+`	5
 [/then]
 
 [if]
-
-[module]
-`[pvp]`
-
-[/module]
-
-[cooltime]
-30000	
-[attack success]
-1	
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		30000
+	[attack success]
+		1
 [/if]
 
 [then]
-
-[target]
-`myself`
--1	
-[equipment duration]
-20000	
-[probability]
-3	
-[stat]
-`physical attack`
-`+`
-18	
-[stat]
-`physical defense`
-`+`
-18	
-[stat]
-`magical attack`
-`+`
-18	
-[stat]
-`magical defense`
-`+`
-18	
+	[target]
+		`myself`	-1
+	[equipment duration]
+		20000
+	[probability]
+		3
+	[stat]
+		`physical attack`
+		`+`	18
+	[stat]
+		`physical defense`
+		`+`	18
+	[stat]
+		`magical attack`
+		`+`	18
+	[stat]
+		`magical defense`
+		`+`	18
 [/then]
 
 [if]
-
-[module]
-`[pvp]`
-
-[/module]
-
-[cooltime]
-30000	
-[casting]
-1	
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		30000
+	[casting]
+		1
 [/if]
 
 [then]
-
-[target]
-`myself`
--1	
-[equipment duration]
-20000	
-[probability]
-5	
-[stat]
-`physical critical hit`
-`+`
-3	
-[stat]
-`magical critical hit`
-`+`
-3	
+	[target]
+		`myself`	-1
+	[equipment duration]
+		20000
+	[probability]
+		5
+	[stat]
+		`physical critical hit`
+		`+`	3
+	[stat]
+		`magical critical hit`
+		`+`	3
 [/then]
 
 [item category]
-`no random`
-
+	`no random`
 [/item category]
 
-
-
 [if]
-
-[hit]
-1	
+	[hit]
+		1
 [/if]
 
 [then]
-
-[target]
-`myself`
--1	
-[probability]
-0	
-[speech on]
-0	0	`操你媽的偷你麻痺，自己不會做？還要偷我的？記住你爸爸 需要購買請認準作者--劍聖60 QQ-506807329`
-
-[/speech on]
-
+	[target]
+		`myself`	-1
+	[probability]
+		0
+	[speech on]
+		0	0
+		`操你妈的偷你麻痹，自己不会做？还要偷我的？记住你爸爸 需要购买请认准作者--剑圣60 QQ-506807329`
+	[/speech on]
 [/then]
+
+[price]
+	10000
+
+[value]
+	10000

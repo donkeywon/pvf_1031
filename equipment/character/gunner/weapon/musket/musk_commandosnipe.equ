@@ -37,16 +37,16 @@
 	64
 
 [need material]
-	3285	1200
+	3260	6000
 
 [price]
-	0
+	55000000
 
 [repair price]
 	93744
 
 [value]
-	89280
+	5500000
 
 [equipment physical attack]
 	575	490
@@ -158,14 +158,17 @@
 		`slow`
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	30
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		930
 [/then]
 
 [pvp]

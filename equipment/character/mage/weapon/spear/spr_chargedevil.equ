@@ -50,7 +50,7 @@
 	74088
 
 [value]
-	70560
+	1800000
 
 [equipment physical attack]
 	667	638
@@ -174,14 +174,20 @@
 		`bleeding`
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	10
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		910
 [/then]
 
 [possible kiri protect]
+
+[price]
+	6000000

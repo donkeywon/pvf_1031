@@ -1,0 +1,121 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack_11_0.ani`
+	[SUB ANI]
+		`../Animation/Attack_11_11.ani`	0	1
+		`../Animation/Attack_11_12.ani`	0	2
+		`../Animation/Attack_11_9.ani`	0	3
+		`../Animation/Attack_11_10.ani`	0	4
+		`../Animation/Attack_11_6.ani`	0	5
+		`../Animation/Attack_11_7.ani`	0	6
+		`../Animation/Attack_11_4.ani`	0	7
+		`../Animation/Attack_11_5.ani`	0	8
+	[/SUB ANI]
+	[SOUND]
+		`HAYLEY_SKILL_03`	2
+		`HAYLEY_UPCLAW_READY`	8
+		`HAYLEY_UPCLAW`	11
+	[/SOUND]
+	[SPEECH]
+		`吸血鬼的盛宴！`	0	100
+		`今晚你是我的了！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		6
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[WHICH]
+	[CHARACTER]
+	[GET TARGET]
+		1
+	[DISTANCE]
+	[LOW]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+			-200	0	0
+		[MOVE ME]
+	[/TELEPORT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET DIRECTION]
+	[TO TARGET]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		5
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		11	11
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		10	150
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SHAKING]
+		40	300
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			15549
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			-1
+		[POS]
+			200	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		[TIME VALUE]
+			100	400	300
+		[RGBA]
+			0	0	0	120
+		[LAYER]
+		[NEAR]
+		[ID]
+			1
+	[/FLASH SCREEN]
+[/BEHAVIOR]

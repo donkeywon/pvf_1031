@@ -40,13 +40,13 @@
 	19
 
 [price]
-	77000
+	50000000
 
 [repair price]
 	61600
 
 [value]
-	61600
+	5000000
 
 [equipment physical defense]
 	3024	2736
@@ -101,16 +101,22 @@
 [if]
 	[my active status]
 		`bleeding`
-	[attack success]
-		1
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	50
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		950
 [/then]
 
 [set name]
@@ -166,3 +172,6 @@
 
 [icon mark]
 	`Item/IconMark.img`	68
+
+[need material]
+	3260	4000

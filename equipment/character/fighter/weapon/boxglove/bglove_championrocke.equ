@@ -38,13 +38,13 @@
 	100
 
 [price]
-	111600
+	55000000
 
 [repair price]
 	93744
 
 [value]
-	89280
+	5500000
 
 [creation rate]
 	250
@@ -164,14 +164,17 @@
 		`counter`
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	40
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		940
 [/then]
 
 [pvp]

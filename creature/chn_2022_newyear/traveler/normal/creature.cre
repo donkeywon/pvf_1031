@@ -1,0 +1,98 @@
+#PVF_File
+
+[name]
+	`<16::name_10591>`
+
+[width]
+	10	10
+
+[move speed]
+	286	238	114	95	70
+
+[start level]
+	1
+
+[permission level]
+	1
+
+[max level]
+	50
+
+[parent max level]
+	50
+
+[artifact slot]
+	`red`
+	`blue`
+	`green`
+[/artifact slot]
+
+[piercing]
+	1000	0	1000	0
+[/piercing]
+
+[basic motion]
+	`Idle/Traveler_Idle_Chr.ani`
+
+[walk motion]
+	`Run/Traveler_Run_Chr.ani`
+
+[run motion]
+	`Run/Traveler_Run_Chr.ani`
+
+[response motion]
+	`Call/Traveler_Call_Chr.ani`
+
+[random motion]
+	`Random/Traveler_Random_Chr.ani`
+[/random motion]
+
+[default random motion rate]
+	3
+
+[increase random motion rate]
+	1
+
+[skill list]
+	[skill node]
+		0	
+		[skill type]
+			`general skill`
+		[skill name]
+			`次元屏障生成`
+		[skill explain]
+			`使主人增加10%%%%的攻击力并增加5%%%%的攻击速度、 施放速度和移动速度， 效果持续10秒。 (该效果不会叠加）`
+		[skill recovery time]
+			10000
+		[learn skill level]
+			1
+		[skill mp]
+			10
+		[skill motion]
+			`call/Traveler_Skill_Chr.ani`
+		[skill info]
+			`skill/generalskill.skl`
+	[/skill node]
+	[skill node]
+		0	
+		[skill type]
+			`over skill`
+		[skill name]
+			`次元工学导弹发射`
+		[skill explain]
+			`使所有队友增加10%%%%的攻击力， 并使自身增加10%%%%的物理暴击率和魔法暴击率， 效果持续10秒。 (该效果不会叠加)`
+		[skill recovery time]
+			30000
+		[learn skill level]
+			1
+		[skill mp]
+			10
+		[skill motion]
+			`call/overskill.ani`
+		[skill info]
+			`skill/overskill.skl`
+	[/skill node]
+[/skill list]
+
+[using random skill]
+	0

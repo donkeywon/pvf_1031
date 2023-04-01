@@ -225,18 +225,9 @@
 	[/all skill item]
 [/all skill item container]
 
-[if]
-	[attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	22
-[/then]
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	22
+[/skill data up]
 
 [skill data up]
 	`[creator mage]`	136	`[dungeon type]`	`[level]`	2	`%`	30

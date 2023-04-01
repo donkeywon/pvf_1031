@@ -32,13 +32,13 @@
 	34
 
 [price]
-	66000
+	50000000
 
 [repair price]
 	52800
 
 [value]
-	52800
+	5000000
 
 [equipment magical defense]
 	2016	1824
@@ -72,14 +72,17 @@
 		`devil`
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	30
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		930
 [/then]
 
 [routing priority]
@@ -89,3 +92,6 @@
 
 [icon mark]
 	`Item/IconMark.img`	68
+
+[need material]
+	3260	4000

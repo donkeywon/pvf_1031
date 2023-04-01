@@ -150,18 +150,9 @@
 	`[thief]`	40	`[all]`	`[cooltime]`	0	`%`	-15
 [/skill data up]
 
-[if]
-	[attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	28
-[/then]
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	28
+[/skill data up]
 
 [pvp]
 	[cast speed]

@@ -36,16 +36,16 @@
 	50
 
 [price]
-	151200
+	80000000
 
 [repair price]
 	127008
 
 [value]
-	120960
+	4000000
 
 [creation rate]
-	0
+	200
 
 [equipment physical attack]
 	808	739
@@ -178,14 +178,17 @@
 		`jump`
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	10
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		910
 [/then]
 
 [if]
@@ -193,14 +196,17 @@
 		`jump attack`
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	10
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		910
 [/then]
 
 [icon mark]

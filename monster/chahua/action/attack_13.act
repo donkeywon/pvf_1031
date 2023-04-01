@@ -1,0 +1,48 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack_13_0.ani`
+	[SUB ANI]
+		`../Animation/Attack_13_2.ani`	0	1
+		`../Animation/Attack_13_1.ani`	0	2
+	[/SUB ANI]
+	[SPEECH]
+		`去死去死去死！！！`	0	100
+		`我已经失去耐心了！！！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CUT SCENE]
+		[FLIP TYPE]
+			1
+		[START POSITION]
+			-400	600
+		[ANI FILE]
+			`Monster/bosstower/domina/animation/cutscene.ani`
+		[MOVE DIR]
+			-5	600	500	7	600	50	-5	600	50	-5	600	800	7	600	50	-400	600	500	-400	600	2000
+		[/MOVE DIR]
+	[/CUT SCENE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		5	5
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

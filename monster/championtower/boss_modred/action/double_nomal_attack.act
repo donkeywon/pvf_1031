@@ -1,0 +1,49 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/double_nomal_attack/attack_1.ani`
+	[SUB ANI]
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		7	7
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PLAY SOUND]
+		`DARKCROSS_02`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		14	14
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PLAY SOUND]
+		`DRAW_SWORD`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		15	15
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+	[CHANGE ATTACKINFO]
+		`../AttackInfo/attack8.atk`
+[/BEHAVIOR]

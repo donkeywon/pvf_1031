@@ -182,18 +182,9 @@
 		`%`	10
 [/then]
 
-[if]
-	[attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	22
-[/then]
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	22
+[/skill data up]
 
 [pvp]
 	[cast speed]

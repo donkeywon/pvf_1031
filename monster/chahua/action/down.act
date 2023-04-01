@@ -1,0 +1,40 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/down.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		3	3
+	[WHICH]
+	[ME]
+	[CHECKUP]
+		[HP]
+		[!=]
+			0
+		[%]
+		[ZPOS]
+		[<=]
+			5
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+	[RANDOM SELECT]
+		0	1	2
+	[/RANDOM SELECT]
+[/TRIGGER]
+
+[BEHAVIOR]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SET ACTION]
+	[ATTACK]
+		10
+	[NOW]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+[/BEHAVIOR]

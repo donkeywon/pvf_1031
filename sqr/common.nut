@@ -5,6 +5,38 @@ NULL <- null;
 // 스킬레벨을 상승시키는 함수 부분입니다..특정 스킬에 대해서 동기화해야하는 스킬이 있다면 이곳에서 처리해줍니다..
 // 스킬 구입 개선으로 flag 인자가 추가되었습니다.
 // flag는 0이면 스킬레벨-, 1이면 스킬레벨+를 표시하는 값입니다.
+function startSkillCoolTime(obj, skillIndex, skillLevel, currentCoolTime)
+{
+	if(!obj) return -1;
+	if(sq_getJob(obj) == ENUM_CHARACTERJOB_AT_GUNNER)
+	{
+	
+			//79	G1
+			//80	G2
+			//81	G3
+			//96	G0_1a§
+			//246	G4_2jue
+		local g_zhuzaiLevel = sq_GetSkillLevel(obj, SKILL_ATGUNNER_G_ZHUZAI);
+		local coolTimeRate = sq_GetLevelData(obj, SKILL_ATGUNNER_G_ZHUZAI, 1, g_zhuzaiLevel);
+		if(g_zhuzaiLevel > 0 && skillIndex == 79 && CURRENT_BUFF_COUNT_qianzhi > 2)
+		{
+			local newCoolTime = currentCoolTime.tofloat()*(100.0 - coolTimeRate.tofloat())/100.0
+			return newCoolTime.tointeger();
+		}
+		else if(g_zhuzaiLevel > 0 && skillIndex == 96 && CURRENT_BUFF_COUNT_qianzhi > 2)
+		{
+			local newCoolTime = currentCoolTime.tofloat()*(100.0 - coolTimeRate.tofloat())/100.0
+			return newCoolTime.tointeger();
+		}
+		else if(g_zhuzaiLevel > 0 && skillIndex == 246 && CURRENT_BUFF_COUNT_qianzhi > 2)
+		{
+			local newCoolTime = currentCoolTime.tofloat()*(100.0 - coolTimeRate.tofloat())/100.0
+			return newCoolTime.tointeger();
+		}
+		
+	}
+	return -1;
+}
 function requestBuy(obj, skill, nIndex, flag, count)
 {
 	if(sq_getJob(obj) == ENUM_CHARACTERJOB_PRIEST && sq_getGrowType(obj) == GROW_TYPE_AVENGER) { // 어벤저라면 동기화해야할 스킬이 있습니다..

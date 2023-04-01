@@ -37,13 +37,13 @@
 	-1
 
 [price]
-	99200
+	55000000
 
 [repair price]
 	80640
 
 [value]
-	76800
+	5500000
 
 [creation rate]
 	500
@@ -142,14 +142,17 @@
 		`confuse`
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	15
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		915
 [/then]
 
 [pvp]

@@ -104,18 +104,19 @@
 	[dungeon check]
 		210	211	212	213	214	215	216	218	219	220	221	222	223	224	225	226	227	228	229	231	233	1005	1006	1007
 	[/dungeon check]
-	[stat change]
-		`hp`
-		`>`
-		`%`	0
+	[attack success]
+		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	12
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		912
 [/then]
 
 [if]
@@ -170,3 +171,9 @@
 
 [move wav]
 	`NAME_TOUCH`
+
+[price]
+	1000000
+
+[value]
+	50000

@@ -1,192 +1,154 @@
 #PVF_File
 
 [name]
-`神官格洛麗亞`
+	`神官格洛丽亚`
 
 [explain]
-`下列屬性在決斗場中無效。
-攻擊時， 附加12%%的傷害。
+	`下列属性在决斗场中无效。
+攻击时， 附加12%%的伤害。
 力量、 智力 +10%%
-所有技能冷卻時間 -5%%`
+所有技能冷却时间 -5%%`
 
 [flavor text]
-`<2020新春禮包>`
+	`<2020新春礼包>`
 
 [attach type]
-`[trade]`
+	`[trade]`
 
 [rarity]
-2	
-[usable job]
-`[all]`
+	2
 
+[usable job]
+	`[all]`
 [/usable job]
 
 [minimum level]
-1	
+	1
+
 [icon]
-`item/creature/creature_cn.img`
-175	
+	`item/creature/creature_cn.img`	175
+
 [field image]
-`item/fieldimage.img`
-30	
+	`item/fieldimage.img`	30
+
 [equipment type]
-`[creature]`
-0	
+	`[creature]`	0
+
 [sub type]
-0	
+	0
+
 [creature species]
-10404	
+	10404
+
 [cool time]
-10000	
+	10000
+
+[equipment physical attack]
+	55	55
+
+[equipment magical attack]
+	55	55
+
+[separate attack]
+	75	75
+
 [physical attack]
-140	
+	140
+
 [magical attack]
-140	
+	140
+
 [physical defense]
-140	
+	140
+
 [magical defense]
-140	
+	140
+
 [physical critical hit]
-10.0	
+	10.0
+
 [magical critical hit]
-10.0	
+	10.0
+
 [all elemental attack]
-24	
+	24
+
 [room list move speed rate]
-0.1	
+	0.1
+
 [attack speed]
-50	
+	50
+
 [cast speed]
-50	
+	50
+
 [move speed]
-50	
+	50
+
 [MP MAX rate]
-15.0	
+	15.0
+
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	12
+[/skill data up]
+
 [if]
-
-[module]
-`[dead tower]`
-`[dungeon]`
-`[tournament dungeon]`
-`[war room]`
-`[blood system]`
-
-[/module]
-
-[attack success]
-1	
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
 [/if]
 
 [then]
-
-[target]
-`enemy`
--1	
-[add absolute damage]
-`all`
-`%`
-12	
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`%`	10
+	[stat by condition]
+		`magical attack`
+		`%`	10
 [/then]
 
 [if]
-
-[change status]
-`hp`
-`>`
-`%`
-0	`end`
-
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		30000
 [/if]
 
 [then]
-
-[target]
-`myself`
--1	
-[stat by condition]
-`physical attack`
-`%`
-10	
-[stat by condition]
-`magical attack`
-`%`
-10	
-[/then]
-
-[if]
-
-[change status]
-`hp`
-`>`
-`%`
-0	`end`
-
-[cooltime]
-30000	
-[/if]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-100	
-[duration]
-30000	
-[stat by condition]
-`skill cool time`
-`%`
--5	
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[duration]
+		30000
+	[stat by condition]
+		`skill cool time`
+		`%`	-5
 [/then]
 
 [all skill item]
-
-[item growtype]
-`[all]`
-0	
-[skill apply condition]
-
-[skill group]
-`[all]`
-
-[lower bound level]
-1	
-[upper bound level]
-50	
-[value]
-1	
-[extra condition]
-`[except for ex skill]`
-
-[/extra condition]
-
-[/skill apply condition]
-
-[skill phase]
-`[all]`
-
+	[item growtype]
+		`[all]`	0
+	[skill apply condition]
+		[skill group]
+			`[all]`
+		[lower bound level]
+			1
+		[upper bound level]
+			50
+		[value]
+			1
+		[extra condition]
+			`[except for ex skill]`
+		[/extra condition]
+	[/skill apply condition]
+	[skill phase]
+		`[all]`
 [/all skill item]
-
-
-
-[if]
-
-[hit]
-1	
-[/if]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-0	
-[speech on]
-0	0	`操你媽的偷你麻痺，自己不會做？還要偷我的？記住你爸爸 需要購買請認準作者--劍聖60 QQ-506807329`
-
-[/speech on]
-
-[/then]

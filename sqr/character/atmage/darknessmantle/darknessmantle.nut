@@ -78,7 +78,7 @@ function onSetState_DarknessMantle(obj, state, datas, isResetTimer)
 		local animation = sq_GetCurrentAnimation(obj);
 		local startTime = sq_GetFrameStartTime(animation, 16);
 		local speedRate = startTime.tofloat() / castTime.tofloat();
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, speedRate, speedRate);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED,SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.2, 1.2);
 
 		sq_StartDrawCastGauge(obj, startTime, true);
 		
@@ -88,7 +88,7 @@ function onSetState_DarknessMantle(obj, state, datas, isResetTimer)
 	{
 		obj.sq_PlaySound("MW_DMANTLE_READY");
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_DARKNESSMANTLE);
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED,SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.2, 1.2);
 	}
 	else if(substate == SUB_STATE_DARKNESSMANTLE_1) {
 		// SUB_STATE_DARKNESSMANTLE_1 서브스테이트 작업

@@ -1,0 +1,101 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Overskill_Incomming/overskill_overskill_body_normal.ani`
+	[SUB ANI]
+		`../animation/Overskill_Incomming/overskill_overskill_wing_dodge.ani`	0	1
+		`../animation/Overskill_Incomming/overskill_overskill_body_formchange.ani`	0	2
+		`../animation/Overskill_Incomming/overskill_light.ani`	0	3
+		`../animation/Overskill_Incomming/overskill_CastFire02_01.ani`	0	4
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			490007460
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			350	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			490007461
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			350	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			490007462
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			350	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			490007463
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			350	-2	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			85113
+		[LEVEL]
+			0
+		[POS]
+			5000	0	0
+		[NO EFFECT]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]

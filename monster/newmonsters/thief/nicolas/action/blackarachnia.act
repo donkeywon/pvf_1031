@@ -1,0 +1,35 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Effect/BlackArachnia/Attack_Nicolas.ani`
+[/MOTION]
+
+[DEFAULT ATTACKINFO]
+	`../AttackInfo/blackarachniaattract.atk`
+
+[TRIGGER]
+	[FRAME]
+		1	1
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		200	200	240	255	0	0	0
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]

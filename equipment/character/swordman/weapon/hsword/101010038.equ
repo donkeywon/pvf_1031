@@ -35,16 +35,16 @@
 	-90
 
 [price]
-	151200
+	80000000
 
 [repair price]
 	127008
 
 [value]
-	120960
+	4000000
 
 [creation rate]
-	0
+	200
 
 [equipment physical attack]
 	965	905
@@ -127,17 +127,17 @@
 		`character`	-1
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	7
-	[add absolute damage]
-		`all`
-		`%`	7
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		914
 [/then]
 
 [if]

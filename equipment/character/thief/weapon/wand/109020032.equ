@@ -44,7 +44,7 @@
 	106176
 
 [value]
-	101120
+	3750000
 
 [creation rate]
 	0
@@ -151,14 +151,17 @@
 	[/skill]
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	25
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		925
 [/then]
 
 [item category]
@@ -179,3 +182,6 @@
 
 [icon mark]
 	`Item/IconMark.img`	66
+
+[price]
+	75000000

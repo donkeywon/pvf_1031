@@ -1,279 +1,255 @@
 #PVF_File
 
 [name]
-`神選之英杰`
+	`神选之英杰`
 
 [explain]
-`攻擊時， 增加10%%的附加傷害。(決鬥場增加5%)
-攻擊時， 有3%%的幾率使力量、 智力、 體力和精神各增加35點， 攻擊速度、 施放速度和移動速度各增加5%%， 效果持續30秒。 (在決鬥場中， 只增加2.5%%)
-    施放技能時， 有5%%的幾率使物理暴擊率和魔法暴擊率增加5%%， 效果持續60秒(在決鬥場中， 只增加3%%)。`
+	`攻击时， 增加10%%的附加伤害。(决斗场增加5%)
+攻击时， 有3%%的几率使力量、 智力、 体力和精神各增加35点， 攻击速度、 施放速度和移动速度各增加5%%， 效果持续30秒。 (在决斗场中， 只增加2.5%%)
+    施放技能时， 有5%%的几率使物理暴击率和魔法暴击率增加5%%， 效果持续60秒(在决斗场中， 只增加3%%)。`
 
 [flavor text]
-`<2019春節禮包>`
+	`<2019春节礼包>`
 
 [grade]
-1	
-[rarity]
-4	
-[icon mark]
-`Item/IconMark.img`
-67	
-[usable job]
-`[all]`
+	1
 
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	67
+
+[usable job]
+	`[all]`
 [/usable job]
 
 [attach type]
-`[trade]`
+	`[trade]`
 
 [minimum level]
-1	
+	1
+
 [icon]
-`Item/Title/title_cn.img`
-387	
+	`Item/Title/title_cn.img`	387
+
 [equipment type]
-`[title name]`
-1	
+	`[title name]`	1
+
 [move wav]
-`NAME_TOUCH`
+	`NAME_TOUCH`
 
 [weight]
-1	
-[custom animation]
-`TitleAnimation/chn_2019_newyear_hidden_normal.ani`
+	1
 
+[custom animation]
+	`TitleAnimation/chn_2019_newyear_hidden_normal.ani`
 [/custom animation]
 
 [physical attack]
-169	
+	169
+
 [physical defense]
-169	
+	169
+
 [magical attack]
-169	
+	169
+
 [magical defense]
-169	
+	169
+
 [attack speed]
-200	
+	200
+
 [cast speed]
-200	
+	200
+
 [move speed]
-200	
+	200
+
 [HP MAX]
-550	
+	550
+
 [MP MAX]
-550	
+	550
+
 [stuck]
--5	
+	-5
+
 [stuck resistance]
-50	
+	50
+
 [anti evil]
-70	
+	70
+
 [physical critical hit]
-5.3	
+	5.3
+
 [magical critical hit]
-5.3	
+	5.3
+
 [all elemental attack]
-44	
+	44
+
 [equipment physical attack]
-169	169	
+	169	169
+
 [equipment magical attack]
-169	169	
+	169	169
+
 [separate attack]
-169	169	
+	169	169
+
 [room list move speed rate]
-0.2	
-[if]
+	0.2
 
-[attack success]
-1	
-[/if]
-
-[then]
-
-[target]
-`enemy`
--1	
-[add absolute damage]
-`all`
-`%`
-10	
-[/then]
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	10
+[/skill data up]
 
 [pvp]
-
-[if]
-
-[attack success]
-1	
-[/if]
-
-[then]
-
-[target]
-`enemy`
--1	
-[add absolute damage]
-`all`
-`%`
-5	
-[/then]
-
+	[if]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	5
+	[/then]
 [/pvp]
 
 [if]
-
-[module]
-`[dead tower]`
-`[dungeon]`
-`[tournament dungeon]`
-`[war room]`
-`[blood system]`
-
-[/module]
-
-[cooltime]
-30000	
-[attack success]
-1	
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		30000
+	[attack success]
+		1
 [/if]
 
 [then]
-
-[target]
-`myself`
--1	
-[duration]
-20000	
-[probability]
-3	
-[stat]
-`physical attack`
-`+`
-35	
-[stat]
-`physical defense`
-`+`
-35	
-[stat]
-`magical attack`
-`+`
-35	
-[stat]
-`magical defense`
-`+`
-35	
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		3
+	[stat]
+		`physical attack`
+		`+`	35
+	[stat]
+		`physical defense`
+		`+`	35
+	[stat]
+		`magical attack`
+		`+`	35
+	[stat]
+		`magical defense`
+		`+`	35
 [/then]
 
 [if]
-
-[module]
-`[dead tower]`
-`[dungeon]`
-`[tournament dungeon]`
-`[war room]`
-`[blood system]`
-
-[/module]
-
-[cooltime]
-30000	
-[casting]
-1	
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		30000
+	[casting]
+		1
 [/if]
 
 [then]
-
-[target]
-`myself`
--1	
-[duration]
-20000	
-[probability]
-5	
-[stat]
-`physical critical hit`
-`+`
-5	
-[stat]
-`magical critical hit`
-`+`
-5	
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		5
+	[stat]
+		`physical critical hit`
+		`+`	5
+	[stat]
+		`magical critical hit`
+		`+`	5
 [/then]
 
 [if]
-
-[module]
-`[pvp]`
-
-[/module]
-
-[cooltime]
-30000	
-[attack success]
-1	
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		30000
+	[attack success]
+		1
 [/if]
 
 [then]
-
-[target]
-`myself`
--1	
-[duration]
-20000	
-[probability]
-3	
-[stat]
-`physical attack`
-`+`
-18	
-[stat]
-`physical defense`
-`+`
-18	
-[stat]
-`magical attack`
-`+`
-18	
-[stat]
-`magical defense`
-`+`
-18	
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		3
+	[stat]
+		`physical attack`
+		`+`	18
+	[stat]
+		`physical defense`
+		`+`	18
+	[stat]
+		`magical attack`
+		`+`	18
+	[stat]
+		`magical defense`
+		`+`	18
 [/then]
 
 [if]
-
-[module]
-`[pvp]`
-
-[/module]
-
-[cooltime]
-30000	
-[casting]
-1	
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		30000
+	[casting]
+		1
 [/if]
 
 [then]
-
-[target]
-`myself`
--1	
-[duration]
-20000	
-[probability]
-5	
-[stat]
-`physical critical hit`
-`+`
-3	
-[stat]
-`magical critical hit`
-`+`
-3	
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		5
+	[stat]
+		`physical critical hit`
+		`+`	3
+	[stat]
+		`magical critical hit`
+		`+`	3
 [/then]
 
 [item category]
-`no random`
-
+	`no random`
 [/item category]
 
+[need material]
+	3260	900
+
+[price]
+	1000000
+
+[value]
+	100000

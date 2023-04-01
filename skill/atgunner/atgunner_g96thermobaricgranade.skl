@@ -1,0 +1,236 @@
+#PVF_File
+
+[name]
+	`G-96热压手雷`
+
+[explain]
+	`    向前投掷一颗[G-96热压手雷]。 投掷后， 当榴弹达到一定高度时， 会瞬间引燃所有燃料后对周围的敌人造成巨额伤害。`
+
+[basic explain]
+	`    向前投掷一颗[G-96热压手雷]。`
+
+[executable states]
+	8	0	14	6	7
+[/executable states]
+
+[purchase cost]
+	90
+[/purchase cost]
+
+[required level]
+	80
+
+[required level range]
+	2
+
+[type]
+	`[active]`
+
+[skill class]
+	4
+
+[maximum level]
+	40
+
+[growtype maximum level]
+	0	0	0	0	0	0
+
+[second growtype maximum level]
+	0	0	0	0	0	0	0	0	30	30	0	0
+
+[skill fitness second growtype]
+	2
+[/skill fitness second growtype]
+
+[icon]
+	`Character/Gunner/Effect/SkillIcon.img`	466
+	`Character/Gunner/Effect/SkillIcon.img`	467
+
+[command]
+	{6=`(DOWN)`}
+	{8=`,`}
+	{6=`(RIGHT)`}
+	{8=`,`}
+	{6=`(RIGHT)`}
+	{8=`,`}
+	{6=`(SKILL)`}
+[/command]
+
+[command key explain]
+	`操作指令 : ↓→→ + Z`
+
+[skill command advantage]
+	10	20
+
+[consume item]
+	3037	5	5
+[/consume item]
+
+[consume MP]
+	800	6000
+
+[cool time]
+	45000	45000
+
+[durability decrease rate]
+	315
+
+[dungeon]
+	[level info]
+		1
+		10312
+		11955
+		13599
+		15243
+		16887
+		18531
+		20175
+		21819
+		23462
+		25106
+		26750
+		28394
+		30038
+		31682
+		33326
+		34970
+		36613
+		38257
+		39901
+		41545
+		43189
+		44833
+		46477
+		48120
+		49764
+		51408
+		53052
+		54696
+		56340
+		57984
+		59628
+		61271
+		62915
+		64559
+		66203
+		67847
+		69491
+		71135
+		72779
+		74422
+		76066
+		77710
+		79354
+		80998
+		82642
+		84286
+		85929
+		87573
+		89217
+		90861
+		92505
+		94149
+		95793
+		97437
+		99080
+		100724
+		102368
+		104012
+		105656
+		107300
+		108944
+		110587
+		112231
+		113875
+		115519
+		117163
+		118807
+		120451
+		122095
+		123738
+	[/level info]
+[/dungeon]
+
+[pvp]
+	[start cool time]
+		600000	600000
+	[level info]
+		1
+		388
+		427
+		466
+		506
+		545
+		584
+		624
+		663
+		702
+		742
+		781
+		820
+		860
+		899
+		939
+		978
+		1017
+		1057
+		1096
+		1135
+		1175
+		1214
+		1253
+		1293
+		1332
+		1372
+		1411
+		1450
+		1490
+		1529
+		1568
+		1608
+		1647
+		1686
+		1726
+		1765
+		1805
+		1844
+		1883
+		1923
+		1962
+		2001
+		2041
+		2080
+		2119
+		2159
+		2198
+		2238
+		2277
+		2316
+		2356
+		2395
+		2434
+		2474
+		2513
+		2552
+		2592
+		2631
+		2671
+		2710
+		2749
+		2789
+		2828
+		2867
+		2907
+		2946
+		2985
+		3025
+		3064
+		3104
+	[/level info]
+[/pvp]
+
+[level property]
+	1	99
+	`爆炸物理攻击力 : <int>%%`
+	-1	0	1.0
+[/level property]

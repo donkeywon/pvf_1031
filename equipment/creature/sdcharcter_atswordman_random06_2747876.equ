@@ -1,0 +1,93 @@
+#PVF_File
+
+[name]
+	`迷你女鬼剑`
+
+[explain]
+	`暴击伤害 +10%% (在决斗场中为5%%)`
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`item/creature/creature.img`	107
+
+[field image]
+	`item/fieldimage.img`	30
+
+[equipment type]
+	`[creature]`	0
+
+[sub type]
+	0
+
+[creature species]
+	225
+
+[cool time]
+	10000
+
+[physical attack]
+	20
+
+[magical attack]
+	20
+
+[physical defense]
+	20
+
+[magical defense]
+	20
+
+[move speed]
+	30
+
+[cast speed]
+	25
+
+[attack speed]
+	25
+
+[MP MAX rate]
+	10.0
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	10
+[/then]
+
+[pvp]
+	[if]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase critical damage]
+			`%`	5
+	[/then]
+[/pvp]
+
+[move wav]
+	`CREATURE_EQUIP_TOUCH`
+
+[set item master]
+	-1

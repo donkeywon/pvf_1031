@@ -1,0 +1,136 @@
+#PVF_File
+
+[name]
+	`海伊伦`
+
+[face image]
+	`Monster/monsterFace.img`	0
+
+[die effect]
+	0	1	0
+
+[ambient sound]
+	``
+
+[attack sound]
+	``
+
+[appear sound]
+	``
+
+[damage sound]
+	``
+
+[die sound]
+	``
+
+[category]
+	`[spirit]`
+[/category]
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+	`[HP MAX]`	`*`	110
+[/ability category]
+
+[level]
+	1	1
+
+[move speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[attack speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	100000	100000
+
+[keep distance with target]
+	100
+
+[targeting nearest]
+	1
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[think term]
+	300
+
+[destination change term]
+	200
+
+[intelligence]
+	100	100	300
+
+[vision]
+	1000
+
+[lie frame]
+	1	2	3	3	4
+
+[cooltime]
+	10000
+[/cooltime]
+
+[waiting action]
+	`Action/Stay.act`
+
+[move motion]
+	`Animation/move_Heilrom.ani`
+
+[damage motion 1]
+	`Animation/damage1_Heilrom.ani`
+
+[damage motion 2]
+	`Animation/damage2_Heilrom.ani`
+
+[overturn motion]
+	`Animation/damage1_Heilrom.ani`
+
+[proc action]
+	`action/Proc.act`
+
+[attack motion]
+	`Animation/skill_Heilrom.ani`
+	`Animation/skill_Heilrom.ani`
+[/attack motion]
+
+[ai pattern]
+	[easy]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Event.ai`
+		`ai/Event.ai`
+	[/easy]
+	[hard]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Event.ai`
+		`ai/Event.ai`
+	[/hard]
+	[medium]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Event.ai`
+		`ai/Event.ai`
+	[/medium]
+	[ultimate]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Event.ai`
+		`ai/Event.ai`
+	[/ultimate]
+[/ai pattern]
+
+[summon skill status up type]
+	1

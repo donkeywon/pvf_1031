@@ -46,13 +46,13 @@
 	30
 
 [price]
-	97600
+	55000000
 
 [repair price]
 	81984
 
 [value]
-	78080
+	2750000
 
 [equipment physical attack]
 	528	490
@@ -172,14 +172,17 @@
 		`blind`
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	20
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		920
 [/then]
 
 [if]
@@ -246,3 +249,6 @@
 
 [icon mark]
 	`Item/IconMark.img`	66
+
+[creation rate]
+	250

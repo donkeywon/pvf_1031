@@ -164,17 +164,11 @@
 [required skill]
 	91
 
-[if]
-	[attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	20
-[/then]
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	20
+[/skill data up]
 
 [possible kiri protect]
+
+[price]
+	75000000

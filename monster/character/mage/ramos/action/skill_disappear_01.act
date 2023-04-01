@@ -1,0 +1,44 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/Disappear/Disappear_01.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		2	2
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		3	150
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		6	6
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[NAME HIDE ON]
+	[SHAKING]
+		3	150
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON END ACTION]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[DESTROY]
+[/BEHAVIOR]

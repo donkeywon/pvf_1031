@@ -39,13 +39,13 @@
 	30
 
 [need material]
-	3260	900
+	3260	4000
 
 [repair price]
 	73920
 
 [value]
-	70400
+	5000000
 
 [creation rate]
 	500
@@ -172,14 +172,17 @@
 		`bleeding`
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	30
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		930
 [/then]
 
 [pvp]
@@ -222,3 +225,6 @@
 
 [icon mark]
 	`Item/IconMark.img`	68
+
+[price]
+	50000000

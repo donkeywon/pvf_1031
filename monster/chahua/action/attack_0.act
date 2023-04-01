@@ -1,0 +1,42 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/Attack_0_0.ani`
+	[SUB ANI]
+		`../Animation/Attack_0_5.ani`	0	-2
+		`../Animation/Attack_0_6.ani`	0	-1
+		`../Animation/Attack_0_3.ani`	0	1
+		`../Animation/Attack_0_4.ani`	0	2
+	[/SUB ANI]
+	[SOUND]
+		`HAYLEY_SWISH`	2
+	[/SOUND]
+	[SPEECH]
+		`我渴望鲜血！`	0	100
+		`你的鲜血如玫瑰一样绽放！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			15547
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			100
+		[POS]
+			30	0	70
+	[/CREATE PASSIVEOBJECT]
+	[SHAKING]
+		1	100
+[/BEHAVIOR]

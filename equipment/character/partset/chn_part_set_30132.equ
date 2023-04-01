@@ -1,404 +1,318 @@
 #PVF_File
 
 [set name]
-`遺忘英雄傳說 套裝`
+	`遗忘英雄传说 套装`
 
 [piece set ability]
-7	
-[HP MAX]
-150	
-[MP MAX]
-150	
-[physical attack]
-50	
-[physical defense]
-50	
-[magical attack]
-50	
-[magical defense]
-50	
-[inventory limit]
-6000	
-[HP regen speed]
-20	
-[MP regen speed]
-4	
-[move speed]
-20	
-[attack speed]
-20	
-[cast speed]
-20	
-[parameter basic explain]
-`攻擊或施放技能時， 有3%%的幾率為全體隊員附加隨機Buff。`
-
-[if]
-
-[module]
-`[dungeon type]`
-
-[/module]
-
-[attack success]
-1	
-[cooltime]
-50000	
-[/if]
-
-[multiple then]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-3	
-[aura]
-4	
-[then probability]
-20.000490	
-[appendage]
-10134	
-[/then]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-3	
-[aura]
-5	
-[then probability]
-20.000490	
-[appendage]
-10134	
-[/then]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-3	
-[aura]
-6	
-[then probability]
-20.000490	
-[appendage]
-10134	
-[/then]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-3	
-[aura]
-7	
-[then probability]
-20.000490	
-[appendage]
-10134	
-[/then]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-3	
-[aura]
-8	
-[then probability]
-20.000490	
-[appendage]
-10134	
-[/then]
-
-[/multiple then]
-
-[if]
-
-[module]
-`[dungeon type]`
-
-[/module]
-
-[casting]
-1	
-[cooltime]
-50000	
-[/if]
-
-[multiple then]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-3	
-[aura]
-4	
-[then probability]
-20.000490	
-[appendage]
-10134	
-[/then]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-3	
-[aura]
-5	
-[then probability]
-20.000490	
-[appendage]
-10134	
-[/then]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-3	
-[aura]
-6	
-[then probability]
-20.000490	
-[appendage]
-10134	
-[/then]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-3	
-[aura]
-7	
-[then probability]
-20.000490	
-[appendage]
-10134	
-[/then]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-3	
-[aura]
-8	
-[then probability]
-20.000490	
-[appendage]
-10134	
-[/then]
-
-[/multiple then]
-
-[if]
-
-[module]
-`[pvp type]`
-
-[/module]
-
-[attack success]
-1	
-[cooltime]
-70000	
-[/if]
-
-[multiple then]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-1	
-[aura]
-4	
-[then probability]
-20.000490	
-[appendage]
-10134	
-[/then]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-1	
-[aura]
-5	
-[then probability]
-20.000490	
-[appendage]
-10134	
-[/then]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-1	
-[aura]
-6	
-[then probability]
-20.000490	
-[appendage]
-10134	
-[/then]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-1	
-[aura]
-7	
-[then probability]
-20.000490	
-[appendage]
-10134	
-[/then]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-1	
-[aura]
-8	
-[then probability]
-20.000490	
-[appendage]
-10134	
-[/then]
-
-[/multiple then]
-
-[if]
-
-[module]
-`[pvp type]`
-
-[/module]
-
-[casting]
-1	
-[cooltime]
-70000	
-[/if]
-
-[multiple then]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-1	
-[aura]
-4	
-[then probability]
-20.000490	
-[appendage]
-10134	
-[/then]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-1	
-[aura]
-5	
-[then probability]
-20.000490	
-[appendage]
-10134	
-[/then]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-1	
-[aura]
-6	
-[then probability]
-20.000490	
-[appendage]
-10134	
-[/then]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-1	
-[aura]
-7	
-[then probability]
-20.000490	
-[appendage]
-10134	
-[/then]
-
-[then]
-
-[target]
-`myself`
--1	
-[probability]
-1	
-[aura]
-8	
-[then probability]
-20.000490	
-[appendage]
-10134	
-[/then]
-
-[/multiple then]
-
+	7	
+	[HP MAX]
+		150
+	[MP MAX]
+		150
+	[physical attack]
+		50
+	[physical defense]
+		50
+	[magical attack]
+		50
+	[magical defense]
+		50
+	[inventory limit]
+		6000
+	[HP regen speed]
+		20
+	[MP regen speed]
+		4
+	[move speed]
+		20
+	[attack speed]
+		20
+	[cast speed]
+		20
+	[parameter basic explain]
+		`攻击或施放技能时， 有3%%的几率为全体队员附加随机Buff。`
+	[if]
+		[module]
+			`[dungeon type]`
+		[/module]
+		[attack success]
+			1
+		[cooltime]
+			50000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				4
+			[then probability]
+				20.00049
+			[appendage]
+				10134
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				5
+			[then probability]
+				20.00049
+			[appendage]
+				10134
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				6
+			[then probability]
+				20.00049
+			[appendage]
+				10134
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				7
+			[then probability]
+				20.00049
+			[appendage]
+				10134
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				8
+			[then probability]
+				20.00049
+			[appendage]
+				10134
+		[/then]
+	[/multiple then]
+	[if]
+		[module]
+			`[dungeon type]`
+		[/module]
+		[casting]
+			1
+		[cooltime]
+			50000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				4
+			[then probability]
+				20.00049
+			[appendage]
+				10134
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				5
+			[then probability]
+				20.00049
+			[appendage]
+				10134
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				6
+			[then probability]
+				20.00049
+			[appendage]
+				10134
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				7
+			[then probability]
+				20.00049
+			[appendage]
+				10134
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				3
+			[aura]
+				8
+			[then probability]
+				20.00049
+			[appendage]
+				10134
+		[/then]
+	[/multiple then]
+	[if]
+		[module]
+			`[pvp type]`
+		[/module]
+		[attack success]
+			1
+		[cooltime]
+			70000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				4
+			[then probability]
+				20.00049
+			[appendage]
+				10134
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				5
+			[then probability]
+				20.00049
+			[appendage]
+				10134
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				6
+			[then probability]
+				20.00049
+			[appendage]
+				10134
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				7
+			[then probability]
+				20.00049
+			[appendage]
+				10134
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				8
+			[then probability]
+				20.00049
+			[appendage]
+				10134
+		[/then]
+	[/multiple then]
+	[if]
+		[module]
+			`[pvp type]`
+		[/module]
+		[casting]
+			1
+		[cooltime]
+			70000
+	[/if]
+	[multiple then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				4
+			[then probability]
+				20.00049
+			[appendage]
+				10134
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				5
+			[then probability]
+				20.00049
+			[appendage]
+				10134
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				6
+			[then probability]
+				20.00049
+			[appendage]
+				10134
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				7
+			[then probability]
+				20.00049
+			[appendage]
+				10134
+		[/then]
+		[then]
+			[target]
+				`myself`	-1
+			[probability]
+				1
+			[aura]
+				8
+			[then probability]
+				20.00049
+			[appendage]
+				10134
+		[/then]
+	[/multiple then]
 [/piece set ability]
-

@@ -1,0 +1,197 @@
+#PVF_File
+
+[name]
+	`乱空杀`
+
+[basic explain]
+	`    以极快的速度随机掠过敌人进行攻击。`
+
+[explain]
+	`    以极快的速度随机掠过敌人进行攻击。
+    可以通过消耗连击点数使用[终结追击]。`
+
+[executable states]
+	8	0	14
+[/executable states]
+
+[purchase cost]
+	80
+[/purchase cost]
+
+[required level]
+	75
+
+[required level range]
+	3
+
+[type]
+	`[active]`
+
+[skill class]
+	1
+
+[maximum level]
+	40
+
+[growtype maximum level]
+	0	0	0	0	0	0
+
+[second growtype maximum level]
+	0	0	30	0	0	0	0	0	0	0	0	0
+
+[skill fitness second growtype]
+	2
+[/skill fitness second growtype]
+
+[consume item]
+	3037	3	3
+[/consume item]
+
+[icon]
+	`Character/Thief/Effect/SkillIcon.img`	329
+	`Character/Thief/Effect/SkillIcon.img`	330
+
+[weapon effect type]
+	`[physical]`
+
+[command]
+	{6=`(DOWN)`}
+	{8=`,`}
+	{6=`(LEFT)`}
+	{8=`,`}
+	{6=`(RIGHT)`}
+	{8=`,`}
+	{6=`(SKILL)`}
+[/command]
+
+[command key explain]
+	`操作指令 : ↓←→ + Z`
+
+[skill command advantage]
+	50	50
+
+[durability decrease rate]
+	210
+
+[is linked blast]
+	1
+
+[linked blast add point]
+	1
+
+[consume MP]
+	580	4500
+
+[cool time]
+	30000	30000
+
+[dungeon]
+	[static data]
+		2
+	[/static data]
+	[level info]
+		3
+		1086	4347	2173
+		1260	5040	2520
+		1433	5733	2866
+		1606	6426	3213
+		1779	7119	3559
+		1953	7812	3906
+		2126	8505	4252
+		2299	9198	4599
+		2472	9891	4945
+		2646	10584	5292
+		2819	11277	5638
+		2992	11970	5985
+		3165	12663	6331
+		3339	13356	6678
+		3512	14049	7024
+		3685	14742	7371
+		3858	15435	7717
+		4032	16128	8064
+		4205	16821	8410
+		4378	17514	8757
+		4551	18207	9103
+		4725	18900	9450
+		4898	19593	9796
+		5071	20286	10143
+		5244	20979	10489
+		5418	21672	10836
+		5591	22365	11182
+		5764	23058	11529
+		5937	23751	11875
+		6111	24444	12222
+		6284	25137	12568
+		6457	25830	12915
+		6630	26523	13261
+		6804	27216	13608
+		6977	27909	13954
+		7150	28602	14301
+		7323	29295	14647
+		7497	29988	14994
+		7670	30681	15340
+		7843	31374	15687
+	[/level info]
+[/dungeon]
+
+[pvp]
+	[start cool time]
+		600000	600000
+	[static data]
+		2
+	[/static data]
+	[level info]
+		3
+		22	91	45
+		26	105	52
+		30	120	60
+		33	135	67
+		37	149	74
+		41	164	82
+		44	178	89
+		48	193	96
+		51	207	103
+		55	222	111
+		59	237	118
+		62	251	125
+		66	266	133
+		70	280	140
+		73	295	147
+		77	309	154
+		81	324	162
+		84	339	169
+		88	353	176
+		92	368	184
+		95	382	191
+		99	397	198
+		102	411	205
+		106	426	213
+		110	441	220
+		113	455	227
+		117	470	235
+		121	484	242
+		124	499	249
+		128	513	256
+		132	528	264
+		135	543	271
+		139	557	278
+		143	572	286
+		146	586	293
+		150	601	300
+		153	615	307
+		157	630	315
+		161	645	322
+		164	659	329
+	[/level info]
+[/pvp]
+
+[level property]
+	1	99
+	`连续斩击攻击力 : <int>%% X <int>次
+向下斩击攻击力 : <int>%%
+[终结追击]攻击力 : <int>%%`
+	-1	0	1.0
+	0	0	3.0
+	-1	1	1.0
+	-1	2	1.0
+[/level property]

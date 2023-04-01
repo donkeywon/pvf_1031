@@ -1,0 +1,202 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/flash_attack/skill_2.ani`
+	[SUB ANI]
+	[/SUB ANI]
+	[SPEECH]
+		`我将化身为恶魔！`	0	100
+	[/SPEECH]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		9	9
+	[WHICH]
+	[CHARACTER]
+	[GET TARGET]
+		1
+	[RANDOM]
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CUT SCENE]
+		[FLIP TYPE]
+			1
+		[START POSITION]
+			-400	600
+		[ANI FILE]
+			`Monster/NewMonsters/event/chn_knight/cutscene/mordred.ani`
+		[MOVE DIR]
+			-5	600	500	7	600	50	-5	600	50	-5	600	800	7	600	50	-400	600	500	-400	600	2000
+		[/MOVE DIR]
+	[/CUT SCENE]
+	[PLAY SOUND]
+		`CRESS_AFTERIMAGE_MOVE`
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			200119
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			-1
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		21	21
+	[WHICH]
+	[PASSIVE]
+	[CHECKUP]
+		[IS INDEX]
+			200119
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[>=]
+		1
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TELEPORT]
+		[POS]
+			0	0	0
+		[MOVE ME]
+	[/TELEPORT]
+	[PLAY SOUND]
+		`MELTADOROC_SHADOW_BITE`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		22	22
+	[DO BEHAVIOR]
+	[ME]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[FLASH SCREEN]
+		50	1500	500	255	255	255	255
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			200099
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			-1
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+	[PLAY SOUND]
+		`UNHOLYFURY_EXP`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		23	23
+	[DO BEHAVIOR]
+	[ME]
+		4
+[/TRIGGER]
+
+[TRIGGER]
+	[ENABLE]
+	[OFF]
+	[IF]
+		`multiHitTime`	
+		[+]
+			100
+		[<=]
+		[GET TIME]
+	[/IF]
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[<=]
+			300
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		5
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		6
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		4
+	[ON]
+	[DIM]
+		`multiHitTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[DIM]
+		`multiHitTime`	
+		[=]
+		[GET TIME]
+	[/DIM]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			200038
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			-1
+		[POS]
+			0	-100	0
+		[USE OBJECT ZPOS]
+	[/CREATE PASSIVEOBJECT]
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+	[APPEND HIT]
+		0	0	0
+	[RESTORE]
+	[HP]
+		-100
+	[%]
+	[SHAKING]
+		5	500
+	[PLAY SOUND]
+		`R_DARK_SWORD_HIT`
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		30	30
+	[DO BEHAVIOR]
+	[ME]
+		7
+[/TRIGGER]
+
+[BEHAVIOR]
+	[TRIGGER]
+		4
+	[OFF]
+[/BEHAVIOR]

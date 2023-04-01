@@ -1,11 +1,14 @@
 #PVF_File
 
-[attack type]
-
-[magic]
+[damage bonus]
+	1000
 
 [weapon damage apply]
 	1
+
+[attack type]
+
+[physic]
 
 [attack enemy]
 	1
@@ -19,17 +22,35 @@
 [down]
 
 [push aside]
-	200
+	100
 
 [lift up]
 	200
 
 [hit wav]
-	`FIRE_EXPLOSION_CREATE`
+	`FIRE_PILLAR_HIT`
+
+[attack direction]
+
+[hit lift up]
+
+[active status]
+
+[freeze]
+	100	100	5000
 
 [hit info]
 
 [blow]
 
-[no blood]
+[ignore super armor]
+	1
+
+[blood]
 	100	1.0
+
+[hit wav]
+	`BLOODRIVEN_CHANGE`
+
+[knuck back]
+	3	20

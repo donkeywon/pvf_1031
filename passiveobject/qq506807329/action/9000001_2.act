@@ -1,79 +1,53 @@
 #PVF_File
 
 [MOTION]
-
-[BASE ANI]
-`../animation/9000001.ani`
-
-[SUB ANI WITH XYZ]
-`../../../Localization/AvatarSetEffect/Swordman/sm_neck20000_Rest_BackB.ani`
-0	0	0	-1	0	`../../../Localization/AvatarSetEffect/Swordman/sm_neck20000_Rest_FrontB.ani`
-0	0	0	1	0	
-[/SUB ANI WITH XYZ]
-
+	[BASE ANI]
+		`../animation/9000001.ani`
+	[SUB ANI WITH XYZ]
+		`../../../Localization/AvatarSetEffect/Swordman/sm_neck20000_Rest_BackB.ani`	0	0	0	-1	0
+		`../../../Localization/AvatarSetEffect/Swordman/sm_neck20000_Rest_FrontB.ani`	0	0	0	1	0
+	[/SUB ANI WITH XYZ]
 [/MOTION]
 
 [TRIGGER]
-
-[WHICH]
-
-[CHARACTER]
-
-[CHECKUP]
-
-[DISTANCE]
-
-[=]
-0	
-[IS TARGET STATE]
-0	
-[/CHECKUP]
-
-[DO BEHAVIOR]
-
-[ME]
-0	
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[=]
+			0
+		[IS TARGET STATE]
+			0
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		0
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[SET ACTION]
-
-[CUSTOM]
-0	
-[NOW]
-
+	[SET ACTION]
+	[CUSTOM]
+		0
+	[NOW]
 [/BEHAVIOR]
 
 [TRIGGER]
-
-[WHICH]
-
-[CHARACTER]
-
-[CHECKUP]
-
-[DISTANCE]
-
-[=]
-0	
-[HP]
-
-[<=]
-0	
-[%]
-
-[/CHECKUP]
-
-[DO BEHAVIOR]
-
-[ME]
-1	
+	[WHICH]
+	[CHARACTER]
+	[CHECKUP]
+		[DISTANCE]
+		[=]
+			0
+		[HP]
+		[<=]
+			0
+		[%]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[ME]
+		1
 [/TRIGGER]
 
 [BEHAVIOR]
-
-[DESTROY]
-
+	[DESTROY]
 [/BEHAVIOR]
-

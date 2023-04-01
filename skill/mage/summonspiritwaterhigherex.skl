@@ -25,17 +25,19 @@
  决斗场中不适用冰导弹攻击。`
 
 [explain ex]
-	`阿奎利斯的等级增加。
-每增加Lv1时等级增加 : 1级`
+	`    召唤出更高Lv的冰影阿奎利斯协助自身攻击敌人， 同时增加同一张地图内的召唤数量上限， 并减少落冰攻击的冷却时间。
+技能每增加Lv1时， 召唤兽的Lv增加量 : Lv3
+技能每增加Lv1时， 召唤上限增加量 : 1个
+落冰攻击冷却时间减少率 : 50%%`
 
 [basic explain ex]
-	`阿奎利斯的等级增加。`
+	`    召唤出更高Lv的冰影阿奎利斯协助自身攻击敌人， 同时增加同一张地图内的召唤数量上限， 并减少落冰攻击的冷却时间。`
 
 [feature skill type]
 	1
 
 [special purchase cost]
-	2
+	5
 [/special purchase cost]
 
 [type]
@@ -55,10 +57,10 @@
 	1
 
 [maximum level]
-	10
+	1
 
 [growtype maximum level]
-	0	0	5	0	0	0
+	0	0	1	0	0	0
 
 [skill fitness growtype]
 	2
@@ -147,8 +149,9 @@
 [/level info]
 
 [special level up]
-	-1	0
-	`+`	1
+	-1	0	`+`	3
+	-1	2	`+`	1
+	-1	4	`%`	-50
 [/special level up]
 
 [pvp]
@@ -235,14 +238,14 @@
 
 [level property]
 	1	99
-	`阿奎利斯等级 : <int>
+	`冰影阿奎利斯Lv : Lv<int>
 召唤兽存在时间 : <float1>秒
 召唤兽数量上限 : <int>
 落冰冷却时间 : <float1>秒
-落冰 武器魔法攻击力 : <int>%%
+落冰魔法攻击力 : <int>%%
 冰息冷却时间 : <float1>秒
-冰息武器魔法攻击力 : <int>%%
-死亡爆炸时攻击力 : <int>
+冰息魔法攻击力 : <int>%%
+死亡爆炸魔法攻击力 : <int>
 冰导弹攻击力 : <int>`
 	-1	0	1.0
 	-1	3	0.001

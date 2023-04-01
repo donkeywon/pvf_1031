@@ -38,13 +38,13 @@
 	-1
 
 [price]
-	102400
+	60000000
 
 [repair price]
 	86016
 
 [value]
-	81920
+	3000000
 
 [equipment physical attack]
 	664	609
@@ -125,18 +125,9 @@
 [elemental property]
 	`[fire element]`
 
-[if]
-	[attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	10
-[/then]
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	10
+[/skill data up]
 
 [pvp]
 	[if]
@@ -178,3 +169,6 @@
 
 [icon mark]
 	`Item/IconMark.img`	66
+
+[creation rate]
+	250

@@ -1,0 +1,100 @@
+#PVF_File
+
+[name]
+	`艾力斯的头骨`
+
+[basic explain]
+	`物理或魔法（最高值项）攻击力 +15%%
+独立攻击力 +15%%`
+
+[grade]
+	85
+
+[creation rate]
+	50
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	4
+
+[weight]
+	50
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[icon]
+	`Item/stackable/quest.img`	195
+
+[field image]
+	`Item/field_creature.img`	2
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[equipment type]
+	`[artifact green]`	20
+
+[sub type]
+	0
+
+[physical attack]
+	184
+
+[magical attack]
+	184
+
+[physical defense]
+	184
+
+[magical defense]
+	184
+
+[if]
+	[is stat]
+		`myself`	-1
+		`dark resistance`
+		`=>`	-9999
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add stat at once]
+		`magical attack bonus`
+		`%`	15
+	[add stat at once]
+		`physical attack bonus`
+		`%`	15
+	[add stat at once]
+		`separate attack`
+		`%`	15
+[/then]
+
+[creature minimum level]
+	1
+
+[creature skill charge time rate]
+	-20.1
+
+[creature skill over charge time rate]
+	-30.1
+
+[need material]
+	3285	3000
+
+[cool time]
+	10000
+
+[move wav]
+	`JEWEL_TOUCH`
+
+[set item master]
+	-1
+
+[possible kiri protect]
+
+[no random]

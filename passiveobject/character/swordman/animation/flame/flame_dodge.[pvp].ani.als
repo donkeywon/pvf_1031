@@ -1,0 +1,32 @@
+#PVF_File
+
+0
+[USE ANIMATION]
+	0.0	0
+
+[USE ANIMATION]
+	0.0	0
+
+[USE ANIMATION]
+	0.0	0
+
+[USE ANIMATION]
+	0.0	0
+
+[USE ANIMATION]
+	0.0	0
+
+[ADD]
+	0	-5	0
+
+[ADD]
+	0	-4	0
+
+[ADD]
+	0	-3	0
+
+[ADD]
+	0	-2	0
+
+[ADD]
+	0	-1	0

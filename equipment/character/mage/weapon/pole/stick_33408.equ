@@ -42,13 +42,13 @@
 	-1
 
 [price]
-	112000
+	65000000
 
 [repair price]
 	94080
 
 [value]
-	89600
+	6500000
 
 [equipment physical attack]
 	728	663
@@ -155,21 +155,21 @@
 	`[dark element]`
 
 [if]
-	[module]
-		`[dungeon type]`
-	[/module]
 	[target active status]
 		`hold`
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	30
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		930
 [/then]
 
 [if]
@@ -236,3 +236,6 @@
 
 [icon mark]
 	`Item/IconMark.img`	68
+
+[need material]
+	3285	1000

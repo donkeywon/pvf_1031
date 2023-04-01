@@ -1,0 +1,49 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/eff/overskill_flower_flower_01_flower_front_n.ani`
+[/MOTION]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[<]
+			300
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PULL APPENDAGE]
+		14.0	11.0	700
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		25	25
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			200610
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]

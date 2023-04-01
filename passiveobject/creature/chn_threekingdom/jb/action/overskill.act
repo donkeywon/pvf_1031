@@ -1,0 +1,114 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/overskill_zhangfei_body.ani`
+	[SUB ANI]
+	[/SUB ANI]
+	[SOUND]
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		30000	
+		[physical attack]
+		[+]
+			50
+		[magical attack]
+		[+]
+			50
+		[physical defense]
+		[+]
+			50
+		[magical defense]
+		[+]
+			50
+		[physical critical hit rate]
+		[+]
+			10
+		[magical critical hit rate]
+		[+]
+			10
+		[attack speed]
+		[+]
+			40
+		[move speed]
+		[+]
+			40
+		[cast speed]
+		[+]
+			40
+	[/APPENDAGE]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[WHICH]
+	[ME]
+	[IS DIRECTION RIGHT]
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[TRIGGER]
+	[FRAME]
+		8	8
+	[WHICH]
+	[ME]
+	[IS DIRECTION LEFT]
+	[DO BEHAVIOR]
+	[ME]
+		2
+[/TRIGGER]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54690
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			54691
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	0
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[ON ATTACKSUCCESS]
+	[DO BEHAVIOR]
+	[LAST ATTACKSUCCESS]
+		3
+[/TRIGGER]
+
+[BEHAVIOR]
+	[MASTER EFFECT]
+		700	1	6
+		`PassiveObject/Creature/chn_threekingdom/jb/Animation/05Dust.ani`
+[/BEHAVIOR]

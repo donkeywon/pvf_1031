@@ -41,13 +41,13 @@
 	20
 
 [price]
-	99200
+	55000000
 
 [repair price]
 	83328
 
 [value]
-	79360
+	5500000
 
 [equipment physical attack]
 	543	498
@@ -155,14 +155,17 @@
 		`bleeding`
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	25
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		925
 [/then]
 
 [pvp]
@@ -201,3 +204,6 @@
 
 [icon mark]
 	`Item/IconMark.img`	68
+
+[need material]
+	3260	6000

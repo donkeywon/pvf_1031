@@ -4,7 +4,7 @@
 	`黑暗之魂  套装`
 
 [piece set ability]
-	5	
+	3	
 	[skill data up]
 		`[swordman]`	82	`[dungeon type]`	`[level]`	1	`%`	10
 		`[swordman]`	82	`[dungeon type]`	`[level]`	2	`%`	10
@@ -20,6 +20,30 @@
 		`[swordman]`	111	`[dungeon type]`	`[level]`	0	`%`	15
 		`[swordman]`	111	`[dungeon type]`	`[level]`	1	`%`	15
 		`[swordman]`	82	`[dungeon type]`	`[level]`	0	`%`	10
+	[/skill data up]
+	[parameter basic explain]
+		`[冥炎之卡洛]攻击力 +10%%
+[冥炎之卡洛]持续时间 +10%%
+[冥炎之卡洛]冷却时间 -10%%
+[鬼影鞭]攻击力 +15%%`
+[/piece set ability]
+
+[piece set ability]
+	6	
+	[if]
+		[use skill]
+			`swordman`	82
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			`skill level info`	82	0	-1
+		[stat]
+			`cast speed`
+			`+`	150
+	[/then]
+	[skill data up]
 		`[swordman]`	82	`[dungeon type]`	`[level]`	1	`%`	20
 		`[swordman]`	82	`[dungeon type]`	`[level]`	2	`%`	20
 		`[swordman]`	82	`[dungeon type]`	`[level]`	3	`%`	20
@@ -34,6 +58,18 @@
 		`[swordman]`	60	`[dungeon type]`	`[level]`	0	`%`	30
 		`[swordman]`	60	`[dungeon type]`	`[level]`	5	`%`	30
 		`[swordman]`	82	`[dungeon type]`	`[level]`	6	`%`	-10
+	[/skill data up]
+	[parameter basic explain]
+		`[冥炎之卡洛]攻击力 +20%%
+[冥炎之卡洛]持续时间 +20%%
+[冥炎之卡洛]冥炎攻击间隔 -10%%
+[冥炎之卡洛]持续时间内增加15%%的施放速度
+[鬼影闪]攻击力 +30%%`
+[/piece set ability]
+
+[piece set ability]
+	9	
+	[skill data up]
 		`[swordman]`	82	`[dungeon type]`	`[level]`	1	`%`	30
 		`[swordman]`	82	`[dungeon type]`	`[level]`	2	`%`	30
 		`[swordman]`	82	`[dungeon type]`	`[level]`	3	`%`	30
@@ -55,32 +91,10 @@
 		`[swordman]`	82	`[dungeon type]`	`[level]`	0	`%`	30
 	[/skill data up]
 	[parameter basic explain]
-		`[冥炎之卡洛]攻击力 +10%%
-[冥炎之卡洛]持续时间 +10%%
-[冥炎之卡洛]冷却时间 -10%%
-[鬼影鞭]攻击力 +15%%
-[冥炎之卡洛]攻击力 +20%%
-[冥炎之卡洛]持续时间 +20%%
-[冥炎之卡洛]冥炎攻击间隔 -10%%
-[冥炎之卡洛]持续时间内增加15%%的施放速度
-[鬼影闪]攻击力 +30%%
-[冥炎之卡洛]攻击力 +30%%
+		`[冥炎之卡洛]攻击力 +30%%
 [冥炎之卡洛]持续时间 +30%%
 [冥炎之卡洛]冥炎攻击间隔 -20%%
 [冥炎之卡洛]冷却时间 -20%%
 [冥炎之卡洛]无色小晶块消耗量 +1
 [鬼影步]攻击力 +50%%`
-	[if]
-		[use skill]
-			`swordman`	82
-	[/if]
-	[then]
-		[target]
-			`myself`	-1
-		[duration]
-			`skill level info`	82	0	-1
-		[stat]
-			`cast speed`
-			`+`	150
-	[/then]
 [/piece set ability]

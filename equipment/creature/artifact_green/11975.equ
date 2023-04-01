@@ -1,0 +1,316 @@
+#PVF_File
+
+[name]
+	`能源紫水晶`
+
+[basic explain]
+	`进入异界地下城时， 使敌人减少3%%的防御力。
+进入异界地下城时， 被攻击所受的伤害减少3%%。`
+
+[flavor text]
+	`从此不穿异界装也可在异界横行了！`
+
+[grade]
+	85
+
+[creation rate]
+	50
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	4
+
+[weight]
+	50
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[icon]
+	`Item/stackable/material.img`	33
+
+[field image]
+	`Item/field_creature.img`	2
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[equipment type]
+	`[artifact green]`	20
+
+[sub type]
+	0
+
+[if]
+	[dungeon check]
+		62
+	[/dungeon check]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[duration]
+		1000
+	[stat]
+		`equipment physical defense`
+		`%`	-3
+	[stat]
+		`equipment magical defense`
+		`%`	-3
+[/then]
+
+[if]
+	[dungeon check]
+		63
+	[/dungeon check]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[duration]
+		1000
+	[stat]
+		`equipment physical defense`
+		`%`	-3
+	[stat]
+		`equipment magical defense`
+		`%`	-3
+[/then]
+
+[if]
+	[dungeon check]
+		64
+	[/dungeon check]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[duration]
+		1000
+	[stat]
+		`equipment physical defense`
+		`%`	-3
+	[stat]
+		`equipment magical defense`
+		`%`	-3
+[/then]
+
+[if]
+	[dungeon check]
+		65
+	[/dungeon check]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[duration]
+		1000
+	[stat]
+		`equipment physical defense`
+		`%`	-3
+	[stat]
+		`equipment magical defense`
+		`%`	-3
+[/then]
+
+[if]
+	[dungeon check]
+		66
+	[/dungeon check]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[duration]
+		1000
+	[stat]
+		`equipment physical defense`
+		`%`	-3
+	[stat]
+		`equipment magical defense`
+		`%`	-3
+[/then]
+
+[if]
+	[dungeon check]
+		67
+	[/dungeon check]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[duration]
+		1000
+	[stat]
+		`equipment physical defense`
+		`%`	-3
+	[stat]
+		`equipment magical defense`
+		`%`	-3
+[/then]
+
+[if]
+	[dungeon check]
+		62
+	[/dungeon check]
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	3
+[/then]
+
+[if]
+	[dungeon check]
+		63
+	[/dungeon check]
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	3
+[/then]
+
+[if]
+	[dungeon check]
+		64
+	[/dungeon check]
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	3
+[/then]
+
+[if]
+	[dungeon check]
+		65
+	[/dungeon check]
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	3
+[/then]
+
+[if]
+	[dungeon check]
+		66
+	[/dungeon check]
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	3
+[/then]
+
+[if]
+	[dungeon check]
+		67
+	[/dungeon check]
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[add absolute defense percent]
+		`all`	3
+[/then]
+
+[creature minimum level]
+	1
+
+[creature skill charge time rate]
+	-50.1
+
+[creature skill over charge time rate]
+	-50.1
+
+[need material]
+	3285	25
+
+[cool time]
+	2000
+
+[move wav]
+	`JEWEL_TOUCH`
+
+[set item master]
+	-1
+
+[possible kiri protect]
+
+[no random]

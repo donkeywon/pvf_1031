@@ -4,7 +4,7 @@
 	`致命一踢  套装`
 
 [piece set ability]
-	5	
+	3	
 	[skill data up]
 		`[gunner]`	3	`[dungeon type]`	`[cooltime]`	0	`%`	-30
 		`[gunner]`	3	`[dungeon type]`	`[level]`	1	`+`	1
@@ -14,6 +14,21 @@
 		`[at gunner]`	3	`[dungeon type]`	`[level]`	1	`+`	2
 		`[at gunner]`	3	`[dungeon type]`	`[level]`	2	`+`	20
 		`[at gunner]`	35	`[dungeon type]`	`[cooltime]`	0	`%`	-30
+	[/skill data up]
+	[parameter basic explain]
+		`神枪手(男)
+[回旋踢]旋转次数 +1
+[回旋踢]旋转速度 +20%%
+[浮空截击]冷却时间 -30%%
+神枪手(女)
+[上旋踢]旋转次数 +2
+[上旋踢]旋转速度 +20%%
+[音速截击]冷却时间 -30%%`
+[/piece set ability]
+
+[piece set ability]
+	6	
+	[skill data up]
 		`[gunner]`	7	`[dungeon type]`	`[cooltime]`	0	`+`	-1500
 		`[gunner]`	7	`[dungeon type]`	`[level]`	0	`%`	50
 		`[gunner]`	7	`[dungeon type]`	`[level]`	6	`%`	50
@@ -24,6 +39,111 @@
 		`[at gunner]`	7	`[dungeon type]`	`[level]`	6	`%`	50
 		`[at gunner]`	7	`[dungeon type]`	`[level]`	1	`%`	40
 		`[at gunner]`	32	`[dungeon type]`	`[level]`	0	`+`	40
+	[/skill data up]
+	[parameter basic explain]
+		`神枪手(男)
+[瞬踢]冷却时间 -1.5秒
+[瞬踢]攻击力 +50%%
+[瞬踢]发动速度增加率 +40%%
+[三重控制]中[瞬踢]攻击力增加率 +40%%
+神枪手(女)
+[刺踢]冷却时间 -1.5秒
+[刺踢]攻击力 +50%%
+[刺踢]发动速度增加率 +40%%
+[三重控制]中[刺踢]攻击力增加率 +40%%`
+[/piece set ability]
+
+[piece set ability]
+	9	
+	[if]
+		[event use skill]
+			`gunner`	3
+		[/event use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[skill super armor]
+			`gunner`	3
+	[/then]
+	[if]
+		[event use skill]
+			`at gunner`	3
+		[/event use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[skill super armor]
+			`at gunner`	3
+	[/then]
+	[if]
+		[event use skill]
+			`gunner`	7
+		[/event use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[skill super armor]
+			`gunner`	7
+	[/then]
+	[if]
+		[event use skill]
+			`at gunner`	7
+		[/event use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[skill super armor]
+			`at gunner`	7
+	[/then]
+	[if]
+		[event use skill]
+			`gunner`	6
+		[/event use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[skill super armor]
+			`gunner`	6
+	[/then]
+	[if]
+		[event use skill]
+			`at gunner`	6
+		[/event use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[skill super armor]
+			`at gunner`	6
+	[/then]
+	[if]
+		[event use skill]
+			`gunner`	35
+		[/event use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[skill super armor]
+			`gunner`	35
+	[/then]
+	[if]
+		[event use skill]
+			`at gunner`	35
+		[/event use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[skill super armor]
+			`at gunner`	35
+	[/then]
+	[skill data up]
 		`[gunner]`	3	`[dungeon type]`	`[level]`	1	`+`	1
 		`[gunner]`	3	`[dungeon type]`	`[level]`	2	`+`	30
 		`[gunner]`	6	`[dungeon type]`	`[static]`	0	`+`	-4
@@ -40,24 +160,6 @@
 	[parameter basic explain]
 		`神枪手(男)
 [回旋踢]旋转次数 +1
-[回旋踢]旋转速度 +20%%
-[浮空截击]冷却时间 -30%%
-神枪手(女)
-[上旋踢]旋转次数 +2
-[上旋踢]旋转速度 +20%%
-[音速截击]冷却时间 -30%%
-神枪手(男)
-[瞬踢]冷却时间 -1.5秒
-[瞬踢]攻击力 +50%%
-[瞬踢]发动速度增加率 +40%%
-[三重控制]中[瞬踢]攻击力增加率 +40%%
-神枪手(女)
-[刺踢]冷却时间 -1.5秒
-[刺踢]攻击力 +50%%
-[刺踢]发动速度增加率 +40%%
-[三重控制]中[刺踢]攻击力增加率 +40%%
-神枪手(男)
-[回旋踢]旋转次数 +1
 [回旋踢]旋转速度 +30%%
 [踏射]发射数 -4
 [踏射]攻击力 +400%%
@@ -68,92 +170,4 @@
 [钉刺射]发射数 -4
 [钉刺射]攻击力 +400%%
 施放[钉刺射][上旋踢][刺踢][音速劫击]时，自身进入霸体状态`
-	[if]
-		[event use skill]
-			`gunner`	3
-		[/event use skill]
-	[/if]
-	[then]
-		[target]
-			`myself`	-1
-		[skill super armor]
-			`gunner`	3
-	[/then]
-	[if]
-		[event use skill]
-			`at gunner`	3
-		[/event use skill]
-	[/if]
-	[then]
-		[target]
-			`myself`	-1
-		[skill super armor]
-			`at gunner`	3
-	[/then]
-	[if]
-		[event use skill]
-			`gunner`	7
-		[/event use skill]
-	[/if]
-	[then]
-		[target]
-			`myself`	-1
-		[skill super armor]
-			`gunner`	7
-	[/then]
-	[if]
-		[event use skill]
-			`at gunner`	7
-		[/event use skill]
-	[/if]
-	[then]
-		[target]
-			`myself`	-1
-		[skill super armor]
-			`at gunner`	7
-	[/then]
-	[if]
-		[event use skill]
-			`gunner`	6
-		[/event use skill]
-	[/if]
-	[then]
-		[target]
-			`myself`	-1
-		[skill super armor]
-			`gunner`	6
-	[/then]
-	[if]
-		[event use skill]
-			`at gunner`	6
-		[/event use skill]
-	[/if]
-	[then]
-		[target]
-			`myself`	-1
-		[skill super armor]
-			`at gunner`	6
-	[/then]
-	[if]
-		[event use skill]
-			`gunner`	35
-		[/event use skill]
-	[/if]
-	[then]
-		[target]
-			`myself`	-1
-		[skill super armor]
-			`gunner`	35
-	[/then]
-	[if]
-		[event use skill]
-			`at gunner`	35
-		[/event use skill]
-	[/if]
-	[then]
-		[target]
-			`myself`	-1
-		[skill super armor]
-			`at gunner`	35
-	[/then]
 [/piece set ability]

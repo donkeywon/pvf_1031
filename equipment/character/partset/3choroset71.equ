@@ -4,12 +4,22 @@
 	`冰花之狱  套装`
 
 [piece set ability]
-	5	
+	3	
 	[skill data up]
 		`[at mage]`	10	`[dungeon type]`	`[static]`	2	`+`	2
 		`[at mage]`	10	`[dungeon type]`	`[static]`	3	`+`	2
 		`[at mage]`	10	`[dungeon type]`	`[static]`	5	`%`	65
 		`[at mage]`	10	`[dungeon type]`	`[cooltime]`	0	`%`	-10
+	[/skill data up]
+	[parameter basic explain]
+		`[破冰飞刃]冰碎片数量 +2
+[破冰飞刃]攻击范围 +65%%
+[破冰飞刃]冷却时间 -10%%`
+[/piece set ability]
+
+[piece set ability]
+	6	
+	[skill data up]
 		`[at mage]`	10	`[dungeon type]`	`[static]`	2	`+`	4
 		`[at mage]`	10	`[dungeon type]`	`[static]`	3	`+`	4
 		`[at mage]`	10	`[dungeon type]`	`[static]`	5	`%`	30
@@ -17,28 +27,18 @@
 		`[at mage]`	60	`[dungeon type]`	`[cooltime]`	0	`%`	-30
 		`[at mage]`	60	`[dungeon type]`	`[level]`	2	`%`	30
 		`[at mage]`	10	`[dungeon type]`	`[level]`	0	`%`	30
-		`[at mage]`	10	`[dungeon type]`	`[static]`	2	`+`	8
-		`[at mage]`	10	`[dungeon type]`	`[static]`	3	`+`	6
-		`[at mage]`	10	`[dungeon type]`	`[static]`	5	`%`	300
-		`[at mage]`	63	`[dungeon type]`	`[cooltime]`	0	`%`	-20
-		`[at mage]`	63	`[dungeon type]`	`[level]`	0	`%`	40
 	[/skill data up]
 	[parameter basic explain]
-		`[破冰飞刃]冰碎片数量 +2
-[破冰飞刃]攻击范围 +65%%
-[破冰飞刃]冷却时间 -10%%
-[破冰飞刃]攻击力 +30%%
+		`[破冰飞刃]攻击力 +30%%
 [破冰飞刃]冰碎片数量 +4
 [破冰飞刃]攻击范围 +30%%
 [破冰飞刃]冷却时间 -30%%
 [冰凌破]冰凌数量 +30%%
-[冰凌破]冷却时间 -30%%
-[破冰飞刃]冰碎片数量 +6
-[破冰飞刃]必定释放最多冰碎片
-[破冰飞刃]攻击范围变为全屏攻击
-[千里冰封]攻击力 +40%%
-[千里冰封]冷却时间 -20%%
-    施放[破冰飞刃]时， 使自身进入无敌状态`
+[冰凌破]冷却时间 -30%%`
+[/piece set ability]
+
+[piece set ability]
+	9	
 	[if]
 		[event use skill]
 			`at mage`	10
@@ -54,4 +54,18 @@
 		[buff]
 			`unbreakable`
 	[/then]
+	[skill data up]
+		`[at mage]`	10	`[dungeon type]`	`[static]`	2	`+`	8
+		`[at mage]`	10	`[dungeon type]`	`[static]`	3	`+`	6
+		`[at mage]`	10	`[dungeon type]`	`[static]`	5	`%`	300
+		`[at mage]`	63	`[dungeon type]`	`[cooltime]`	0	`%`	-20
+		`[at mage]`	63	`[dungeon type]`	`[level]`	0	`%`	40
+	[/skill data up]
+	[parameter basic explain]
+		`[破冰飞刃]冰碎片数量 +6
+[破冰飞刃]必定释放最多冰碎片
+[破冰飞刃]攻击范围变为全屏攻击
+[千里冰封]攻击力 +40%%
+[千里冰封]冷却时间 -20%%
+    施放[破冰飞刃]时， 使自身进入无敌状态`
 [/piece set ability]

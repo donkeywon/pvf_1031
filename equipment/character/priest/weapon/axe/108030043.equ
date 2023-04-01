@@ -40,13 +40,13 @@
 	-2
 
 [price]
-	160200
+	85000000
 
 [repair price]
 	134568
 
 [value]
-	128160
+	8500000
 
 [creation rate]
 	0
@@ -108,25 +108,21 @@
 	10000
 
 [if]
-	[module]
-		`[dungeon]`
-		`[tournament dungeon]`
-		`[dead tower]`
-		`[war room]`
-		`[blood system]`
-	[/module]
 	[attack condition]
 		`counter`
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	15
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		915
 [/then]
 
 [if]
@@ -219,3 +215,6 @@
 
 [icon mark]
 	`Item/IconMark.img`	66
+
+[need material]
+	3285	3000

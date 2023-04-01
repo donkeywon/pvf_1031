@@ -185,17 +185,8 @@
 	`[creator mage]`	249	`[all]`	`[static]`	1	`%`	-25
 [/skill data up]
 
-[if]
-	[attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	15
-[/then]
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	15
+[/skill data up]
 
 [possible kiri protect]

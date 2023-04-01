@@ -14,9 +14,10 @@ CNAvenger.pushState("Character/Priest/Awakening.nut", "Awakening", STATE_AVENGER
 CNAvenger.pushState("Character/Priest/DashAttack.nut", "DashAttack", STATE_DASH_ATTACK, -1);
 CNAvenger.pushState("Character/Priest/AwakenningTurnOff.nut", "AwakenningTurnOff", STATE_AWAKENING_TURN_OFF, -1);
 
-CNAvenger.pushState("Character/Priest/AvengerAttack.nut", "AvengerAttack", STATE_ATTACK, -1); // 어벤져 - 각성 (공격)
-CNAvenger.pushState("Character/Priest/PowerOfDarkness.nut", "PowerOfDarkness", STATE_POWER_OF_DARKNESS, SKILL_POWER_OF_DARKNESS); // 어벤져 - 각성 (공격)
-CNAvenger.pushState("Character/Priest/FallingSoul.nut", "FallingSoul", STATE_FALLING_SOUL, SKILL_FALLING_SOUL); // 어벤져 - 각성 (공격)
+CNAvenger.pushState("Character/Priest/AvengerAttack.nut", "AvengerAttack", STATE_ATTACK, -1);  
+CNAvenger.pushState("Character/Priest/AvengerJump.nut", "AvengerJump", STATE_JUMP, -1);  
+CNAvenger.pushState("Character/Priest/PowerOfDarkness.nut", "PowerOfDarkness", 71, 125);  
+CNAvenger.pushState("Character/Priest/FallingSoul.nut", "FallingSoul", 72, 131);  
 
 CNAvenger.pushState("Character/Priest/DisasterEx.nut", "DisasterEx", STATE_EX_DISASTER, SKILL_EX_DISASTER); // 어벤져 -EX스킬 - 재앙
 CNAvenger.pushState("Character/Priest/PandemoniumEx.nut", "PandemoniumEx", STATE_PANDEMONIUM_EX, SKILL_PANDEMONIUM_EX); // 어벤져 - 특성 : 복마전

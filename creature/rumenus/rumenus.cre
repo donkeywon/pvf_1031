@@ -1,0 +1,128 @@
+#PVF_File
+
+[name]
+	`光咏之魂`
+
+[width]
+	10	10
+
+[floating height]
+	0
+
+[layer]
+	`[normal]`
+
+[direction correct]
+	1
+
+[move speed]
+	286	238	114	95	70
+
+[start level]
+	1
+
+[permission level]
+	1
+
+[max level]
+	50
+
+[parent max level]
+	50
+
+[artifact slot]
+	`red`
+	`blue`
+	`green`
+[/artifact slot]
+
+[piercing]
+	1000	0	1000	0
+[/piercing]
+
+[basic motion]
+	`Animation/rumenus_stand.ani`
+
+[walk motion]
+	`Animation/rumenus_move.ani`
+
+[run motion]
+	`Animation/rumenus_move.ani`
+
+[response motion]
+	`Animation/rumenus_response_body.ani`
+
+[basic over effect]
+	`Animation/rumenus_stand_dodge.ani`
+
+[walk over effect]
+	`Animation/rumenus_move_dodge.ani`
+
+[run over effect]
+	`Animation/rumenus_move_dodge.ani`
+
+[response over effect]
+	`Animation/rumenus_response_body_dodge.ani`
+
+[additional animation]
+	`[over skill]`	1
+	`Animation/rumenus_skill2_handlight.ani`
+
+[additional animation]
+	`[over skill]`	2
+	`Animation/rumenus_skill2_handlight2.ani`
+
+[revision x]
+	0
+
+[revision y]
+	30
+
+[evolution quest]
+	0
+
+[evolution creature id]
+	0
+
+[skill list]
+	[skill node]
+		0	
+		[skill type]
+			`general skill`
+		[skill name]
+			`光之咏`
+		[skill explain]
+			`    使角色增加15%%%%的攻击力， 效果持续20秒。`
+		[skill recovery time]
+			40000
+		[learn skill level]
+			1
+		[skill mp]
+			0
+		[skill motion]
+			`Animation/rumenus_skill1_body.ani`
+		[skill info]
+			`skill/generalskill.skl`
+	[/skill node]
+	[skill node]
+		0	
+		[skill type]
+			`over skill`
+		[skill name]
+			`神圣领域`
+		[skill explain]
+			`    从地底喷射闪亮的光柱， 然后光柱爆炸， 使魔法阵内的怪物受到伤害。 同时， 使角色增加15%%%%的攻击力， 效果持续20秒。`
+		[skill recovery time]
+			60000
+		[learn skill level]
+			1
+		[skill mp]
+			0
+		[skill motion]
+			`Animation/rumenus_skill2_body.ani`
+		[skill info]
+			`skill/overskill.skl`
+		[attack info]
+			`AttackInfo/overskill.atk`
+	[/skill node]
+[/skill list]

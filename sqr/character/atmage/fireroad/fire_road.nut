@@ -48,6 +48,7 @@ function onSetState_FireRoad(obj, state, datas, isResetTimer)
 	if (subState == 0)
 	{
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_FIRE_ROAD_CAST1);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED,SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.2, 1.2);
 		obj.sq_PlaySound("MW_FIREROAD");
 		
 		// 캐스팅 속도를 따라가도록 설정
@@ -58,7 +59,8 @@ function onSetState_FireRoad(obj, state, datas, isResetTimer)
 		local animation = sq_GetCurrentAnimation(obj);
 		obj.sq_Rewind(animation);
 		sq_SetFrameDelayTime(animation, 0, castTime);
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED,
+			SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		sq_StartDrawCastGauge(obj, castTime, true);
 		
 		addElementalChain_ATMage(obj, ENUM_ELEMENT_FIRE);
@@ -66,7 +68,7 @@ function onSetState_FireRoad(obj, state, datas, isResetTimer)
 	else if (subState == 1)
 	{
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_FIRE_ROAD_CAST2);
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED,SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.2, 1.2);
 	}
 }
 

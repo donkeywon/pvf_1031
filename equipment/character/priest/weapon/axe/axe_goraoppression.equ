@@ -32,13 +32,13 @@
 	-2
 
 [price]
-	79200
+	40000000
 
 [repair price]
 	63360
 
 [value]
-	63360
+	2000000
 
 [creation rate]
 	500
@@ -112,14 +112,17 @@
 		`counter`
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	15
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		915
 [/then]
 
 [possible kiri protect]

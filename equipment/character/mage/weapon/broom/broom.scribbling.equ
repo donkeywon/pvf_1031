@@ -37,13 +37,13 @@
 	30
 
 [price]
-	99200
+	55000000
 
 [repair price]
 	83328
 
 [value]
-	79360
+	5500000
 
 [equipment physical attack]
 	574	526
@@ -147,18 +147,9 @@
 [required skill]
 	91
 
-[if]
-	[attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	30
-[/then]
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	30
+[/skill data up]
 
 [pvp]
 	[if]
@@ -182,3 +173,6 @@
 
 [icon mark]
 	`Item/IconMark.img`	68
+
+[need material]
+	3260	6000

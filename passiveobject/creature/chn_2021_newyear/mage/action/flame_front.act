@@ -1,0 +1,65 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../animation/flame_front/chr_Finish_S06.ani`
+	[SUB ANI]
+		`../animation/flame_front/chr_p_e_f_01.ani`	55	-21
+		`../animation/flame_front/chr_p_e_f_dadge.ani`	55	-20
+		`../animation/flame_front/chr_p_f.ani`	16	-19
+		`../animation/flame_front/chr_p_f_dadge.ani`	16	-18
+		`../animation/flame_front/chr_Fire005.ani`	20	-17
+		`../animation/flame_front/chr_Fire005_03.ani`	17	-16
+		`../animation/flame_front/chr_Fire005_02.ani`	19	-15
+		`../animation/flame_front/chr_Fire005_01.ani`	18	-14
+		`../animation/flame_front/chr_Fire005_01_02.ani`	19	-13
+		`../animation/flame_front/chr_Fire005_01_02_01_01.ani`	18	-12
+		`../animation/flame_front/chr_Fire005_01_02_01.ani`	18	-11
+		`../animation/flame_front/chr_Fire005_01_01.ani`	17	-10
+		`../animation/flame_front/chr_Flame_1.ani`	16	-9
+		`../animation/flame_front/chr_Flame_1_01.ani`	17	-8
+		`../animation/flame_front/chr_Particle072.ani`	19	-7
+		`../animation/flame_front/chr_Particle072_01.ani`	19	-6
+		`../animation/flame_front/chr_Finish_S06_5.ani`	55	-5
+		`../animation/flame_front/chr_Finish_S06_1.ani`	26	-4
+		`../animation/flame_front/chr_Finish_S06_4.ani`	19	-3
+		`../animation/flame_front/chr_Finish_S06_3.ani`	26	-2
+		`../animation/flame_front/chr_Finish_S06_2.ani`	19	-1
+		`../animation/flame_front/chr_Finish_S06_0_1.ani`	55	1
+		`../animation/flame_front/chr_Finish_S06_0.ani`	19	2
+		`../animation/flame_front/chr_Finish_S04.ani`	18	3
+	[/SUB ANI]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		20	20
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[CHECKUP]
+		[DISTANCE]
+		[<]
+			520
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PULL APPENDAGE]
+		9.5	7.0	3500
+[/BEHAVIOR]
+
+[TRIGGER]
+	[CHECK TIME]
+		240
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[ATTACKRECT]
+	[RESET]
+[/BEHAVIOR]

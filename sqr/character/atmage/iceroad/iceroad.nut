@@ -93,7 +93,7 @@ function onSetState_IceRoad(obj, state, datas, isResetTimer)
 		local animation = sq_GetCurrentAnimation(obj);
 		local startTime = sq_GetFrameStartTime(animation, 16);
 		local speedRate = startTime.tofloat() / castTime.tofloat();
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, speedRate, speedRate);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED,SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.2, 1.2);
 
 		obj.sq_PlaySound("MW_ICEROAD");
 		sq_StartDrawCastGauge(obj, startTime, true);
@@ -101,7 +101,6 @@ function onSetState_IceRoad(obj, state, datas, isResetTimer)
 	else if(substate == SUB_STATE_ICEROAD_0) {
 		//CUSTOM_ANI_ICEROAD
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ICEROAD);
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 	else if(substate == SUB_STATE_ICEROAD_1) {
 		// SUB_STATE_ICEROAD_1 서브스테이트 작업

@@ -33,16 +33,16 @@
 	43
 
 [price]
-	72000
+	68000000
 
 [repair price]
 	57600
 
 [value]
-	57600
+	3400000
 
 [creation rate]
-	0
+	200
 
 [equipment magical defense]
 	2528	2368
@@ -73,14 +73,17 @@
 		`down`
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	5
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		905
 [/then]
 
 [pvp]

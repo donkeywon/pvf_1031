@@ -4,7 +4,7 @@
 	`深渊蚀骨  套装`
 
 [piece set ability]
-	5	
+	3	
 	[skill data up]
 		`[gunner]`	27	`[dungeon type]`	`[level]`	1	`%`	20
 		`[gunner]`	27	`[dungeon type]`	`[level]`	3	`%`	20
@@ -14,6 +14,16 @@
 		`[at gunner]`	27	`[dungeon type]`	`[level]`	3	`%`	20
 		`[at gunner]`	50	`[dungeon type]`	`[cooltime]`	0	`+`	-1300
 		`[at gunner]`	28	`[dungeon type]`	`[level]`	1	`%`	20
+	[/skill data up]
+	[parameter basic explain]
+		`[RX-78追击者]攻击力 +20%%
+[Ez-8自爆者]攻击力 +20%%
+[机械引爆]冷却时间 -1.3秒`
+[/piece set ability]
+
+[piece set ability]
+	6	
+	[skill data up]
 		`[gunner]`	27	`[dungeon type]`	`[cooltime]`	0	`%`	-30
 		`[gunner]`	27	`[dungeon type]`	`[level]`	1	`%`	10
 		`[gunner]`	27	`[dungeon type]`	`[level]`	3	`%`	10
@@ -24,34 +34,16 @@
 		`[at gunner]`	27	`[dungeon type]`	`[level]`	3	`%`	10
 		`[at gunner]`	28	`[dungeon type]`	`[cooltime]`	0	`%`	-40
 		`[at gunner]`	50	`[dungeon type]`	`[level]`	1	`+`	25
-		`[gunner]`	27	`[dungeon type]`	`[cooltime]`	0	`%`	-30
-		`[gunner]`	28	`[dungeon type]`	`[level]`	1	`%`	30
-		`[gunner]`	59	`[dungeon type]`	`[cooltime]`	0	`%`	-50
-		`[gunner]`	59	`[dungeon type]`	`[skill consume item]`	0	`+`	1
-		`[gunner]`	59	`[dungeon type]`	`[level]`	2	`%`	50
-		`[gunner]`	59	`[dungeon type]`	`[level]`	3	`%`	50
-		`[at gunner]`	27	`[dungeon type]`	`[level]`	1	`%`	30
-		`[at gunner]`	27	`[dungeon type]`	`[level]`	3	`%`	30
-		`[at gunner]`	28	`[dungeon type]`	`[level]`	1	`%`	30
-		`[at gunner]`	59	`[dungeon type]`	`[cooltime]`	0	`%`	-50
-		`[at gunner]`	59	`[dungeon type]`	`[skill consume item]`	0	`+`	1
-		`[at gunner]`	59	`[dungeon type]`	`[level]`	2	`%`	50
-		`[at gunner]`	59	`[dungeon type]`	`[level]`	3	`%`	50
 	[/skill data up]
 	[parameter basic explain]
-		`[RX-78追击者]攻击力 +20%%
-[Ez-8自爆者]攻击力 +20%%
-[机械引爆]冷却时间 -1.3秒
-[RX-78追击者]冷却时间 -30%%
+		`[RX-78追击者]冷却时间 -30%%
 [RX-78追击者]攻击力 +10%%
 [Ez-8自爆者]冷却时间 -40%%
-[机械引爆]引爆攻击力变化率 +25%%
-[RX-78追击者]冷却时间 -30%%
-[Ez-8自爆者攻击力 +30%%
-[空投支援]冷却时间 -50%%
-[空投支援]空投追击者数量 +50%%
-[空投支援]无色小晶块消耗量 +1
-  施放[RX-78追击者]时, 可以多召唤1个追击者`
+[机械引爆]引爆攻击力变化率 +25%%`
+[/piece set ability]
+
+[piece set ability]
+	9	
 	[if]
 		[use skill]
 			`gunner`	27
@@ -76,4 +68,26 @@
 			27	1	-1
 		[/add skill summon]
 	[/then]
+	[skill data up]
+		`[gunner]`	27	`[dungeon type]`	`[cooltime]`	0	`%`	-30
+		`[gunner]`	28	`[dungeon type]`	`[level]`	1	`%`	30
+		`[gunner]`	59	`[dungeon type]`	`[cooltime]`	0	`%`	-50
+		`[gunner]`	59	`[dungeon type]`	`[skill consume item]`	0	`+`	1
+		`[gunner]`	59	`[dungeon type]`	`[level]`	2	`%`	50
+		`[gunner]`	59	`[dungeon type]`	`[level]`	3	`%`	50
+		`[at gunner]`	27	`[dungeon type]`	`[level]`	1	`%`	30
+		`[at gunner]`	27	`[dungeon type]`	`[level]`	3	`%`	30
+		`[at gunner]`	28	`[dungeon type]`	`[level]`	1	`%`	30
+		`[at gunner]`	59	`[dungeon type]`	`[cooltime]`	0	`%`	-50
+		`[at gunner]`	59	`[dungeon type]`	`[skill consume item]`	0	`+`	1
+		`[at gunner]`	59	`[dungeon type]`	`[level]`	2	`%`	50
+		`[at gunner]`	59	`[dungeon type]`	`[level]`	3	`%`	50
+	[/skill data up]
+	[parameter basic explain]
+		`[RX-78追击者]冷却时间 -30%%
+[Ez-8自爆者攻击力 +30%%
+[空投支援]冷却时间 -50%%
+[空投支援]空投追击者数量 +50%%
+[空投支援]无色小晶块消耗量 +1
+  施放[RX-78追击者]时, 可以多召唤1个追击者`
 [/piece set ability]

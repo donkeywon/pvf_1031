@@ -1,0 +1,33 @@
+#PVF_File
+
+[active status buff]
+	[duration]
+		20000
+	[active status duration]
+		5000
+	[probability]
+		5
+	[reduce probability to human armor at pvp module]
+		80
+	[active status buff event type]
+		2
+	[active status]
+		`burn`	-1	500	80	1	2000
+	[/active status]
+[/active status buff]
+
+[additional animation]
+	[duration time]
+		20000
+	[start addtional animation]
+		`skill/effect/Petit_Ashcore_Effect_1_Front.ani`	1
+	[/start addtional animation]
+	[loop addtional animation]
+		`skill/effect/Petit_Ashcore_Effect_2_Back.ani`	-1
+		`skill/effect/Petit_Ashcore_Effect_2_Front.ani`	1
+	[/loop addtional animation]
+	[end addtional animation]
+		`skill/effect/Petit_Ashcore_Effect_3_Back.ani`	-1
+		`skill/effect/Petit_Ashcore_Effect_3_Front.ani`	1
+	[/end addtional animation]
+[/additional animation]

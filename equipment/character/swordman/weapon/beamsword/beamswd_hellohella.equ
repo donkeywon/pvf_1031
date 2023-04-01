@@ -41,13 +41,13 @@
 	1
 
 [price]
-	102600
+	50000000
 
 [repair price]
 	86184
 
 [value]
-	82080
+	5000000
 
 [creation rate]
 	500
@@ -185,14 +185,17 @@
 		`burn`
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	50
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		950
 [/then]
 
 [pvp]
@@ -236,3 +239,6 @@
 
 [icon mark]
 	`Item/IconMark.img`	68
+
+[need material]
+	3260	4000

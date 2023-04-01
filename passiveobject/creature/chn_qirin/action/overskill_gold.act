@@ -1,0 +1,235 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/OverSkill.ani`
+	[SOUND]
+		`AMB_THUNDER_01`	1
+	[/SOUND]
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[DO BEHAVIOR]
+	[ME]
+		0
+	[DO BEHAVIOR]
+	[ME]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		2
+	[DO BEHAVIOR]
+	[ME]
+		3
+	[DO BEHAVIOR]
+	[ME]
+		4
+	[DO BEHAVIOR]
+	[ME]
+		5
+	[DO BEHAVIOR]
+	[ME]
+		6
+	[DO BEHAVIOR]
+	[ME]
+		7
+	[DO BEHAVIOR]
+	[ME]
+		8
+	[DO BEHAVIOR]
+	[ME]
+		9
+	[DO BEHAVIOR]
+	[ME]
+		10
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SHAKING]
+		6	650
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12794
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	0	-10
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12794
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			100	-20	-10
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12794
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-100	20	-10
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12794
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-180	0	-10
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12794
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	-50	-10
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12794
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			0	50	-10
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12794
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			80	-50	-10
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12794
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			80	50	-10
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12794
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-80	50	-10
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12794
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			-80	-50	-10
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[BEHAVIOR]
+	[CREATE PASSIVEOBJECT]
+		[INDEX]
+			12794
+		[PARTICLE FILENAME]
+			``
+		[LEVEL]
+			0
+		[POS]
+			150	0	-10
+	[/CREATE PASSIVEOBJECT]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[CHARACTER]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		11
+[/TRIGGER]
+
+[BEHAVIOR]
+	[APPENDAGE]
+		20000	
+		[physical attack bonus]
+		[%]
+			10
+		[magical attack bonus]
+		[%]
+			10
+		[physical attack]
+		[+]
+			50
+		[magical attack]
+		[+]
+			50
+		[physical defense]
+		[+]
+			50
+		[magical defense]
+		[+]
+			50
+		[cast speed]
+		[+]
+			30
+		[attack speed]
+		[+]
+			30
+		[move speed]
+		[+]
+			30
+	[/APPENDAGE]
+[/BEHAVIOR]

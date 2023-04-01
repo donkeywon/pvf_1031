@@ -2,6 +2,7 @@
 // 던파소스에 있는 값을 이곳에 넣으시면 안됩니다.
 
 
+SKILL_ATMAGE_COMMINTERRUPT <- 254
 STATE_ATTACK					<- 8
 STATE_WIND_STRIKE				<- 20	// 윈드 스트라이크
 STATE_CRYSTALATTACK 			<- 21   // 크리스탈 어택

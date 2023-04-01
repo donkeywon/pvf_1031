@@ -31,13 +31,13 @@
 	25
 
 [need material]
-	3285	1800
+	3285	1500
 
 [repair price]
 	100800
 
 [value]
-	96000
+	7000000
 
 [creation rate]
 	250
@@ -139,18 +139,21 @@
 [/routing priority]
 
 [if]
-	[attack success]
-		1
 	[target type]
 		`human`
+	[attack success]
+		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	15
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		915
 [/then]
 
 [if]
@@ -169,3 +172,6 @@
 
 [icon mark]
 	`Item/IconMark.img`	68
+
+[price]
+	70000000

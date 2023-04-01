@@ -1,0 +1,173 @@
+#PVF_File
+
+[name]
+	`食人花猎手`
+
+[face image]
+	`Monster/monsterFace.img`	1283
+
+[die effect]
+	0	0	0
+
+[category]
+	`[plant]`
+[/category]
+
+[ambient sound]
+	``
+
+[attack sound]
+	``
+
+[appear sound]
+	``
+
+[damage sound]
+	``
+
+[die sound]
+	``
+
+[ability category]
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	100
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	100
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	100
+	`[HP MAX]`	`*`	5000
+[/ability category]
+
+[level]
+	90	90
+
+[water resistance]
+	20	20
+
+[poison resistance]
+	10	10
+
+[fire resistance]
+	-10	-10
+
+[burn resistance]
+	-10	-10
+
+[move speed]
+	500	500
+
+[attack speed]
+	1000	1000
+
+[cast speed]
+	1000	1000
+
+[hit recovery]
+	1000	1000
+
+[weight]
+	100000	100000
+
+[stuckbonus on damage]
+	0	0	0	0
+
+[waiting action]
+	`Action/Stay.act`
+
+[move action]
+	`Action/Move.act`
+
+[sit action]
+	`Action/Sit.act`
+
+[damage action 1]
+	`Action/Damage0.act`
+
+[damage action 2]
+	`Action/Damage1.act`
+
+[down action]
+	`Action/Down.act`
+
+[overturn action]
+	`Action/Overturn.act`
+
+[attack action]
+	`Action/Attack0_0.act`
+	`Action/Attack_1.act`
+	`Action/Attack_2.act`
+	`Action/Attack_3.act`
+	`Action/Attack_4.act`
+	`Action/Attack_5.act`
+[/attack action]
+
+[last action]
+	`Action/Last.act`
+
+[proc action]
+	`Action/Proc.act`
+
+[attack info]
+	``
+	`attackinfo/Attack_1.atk`
+	``
+	`attackinfo/Attack_3.atk`
+	``
+	``
+[/attack info]
+
+[cooltime]
+	0	0	7000	10000	0	0
+[/cooltime]
+
+[think term]
+	300
+
+[destination change term]
+	1000
+
+[ai pattern]
+	[normal]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/normal]
+	[expert]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/expert]
+	[master]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/master]
+	[king]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/king]
+	[slayer]
+		`ai/Event.ai`
+		`ai/DestinationSelect.ai`
+		`ai/Action.ai`
+		`ai/MoveMethod.ai`
+	[/slayer]
+[/ai pattern]
+
+[keep range distance with target]
+	50	200	50	200
+
+[intelligence]
+	60	60	2200
+
+[vision]
+	700
+
+[lie frame]
+	1	2	3	3	4
+
+[is named monster]
+	1

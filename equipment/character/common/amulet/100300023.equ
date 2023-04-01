@@ -38,7 +38,7 @@
 	51200
 
 [value]
-	51200
+	3000000
 
 [creation rate]
 	0
@@ -86,18 +86,24 @@
 		`攻击异界地下城敌人时， 附加7%%的伤害。
 攻击远古地下城敌人时， 附加7%%的伤害。`
 	[if]
-		[attack success]
-			1
 		[dungeon check]
 			62	63	64	65	66	67	1500	1501	1502	1504	1506	1507
 		[/dungeon check]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+		[cooltime]
+			10000
 	[/if]
 	[then]
 		[target]
-			`enemy`	-1
-		[add absolute damage]
-			`all`
-			`%`	7
+			`myself`	-1
+		[equipment duration]
+			10000
+		[appendage]
+			907
 	[/then]
 	[anti evil]
 		10
@@ -105,3 +111,6 @@
 
 [icon mark]
 	`Item/IconMark.img`	66
+
+[price]
+	60000000

@@ -70,14 +70,14 @@ function onSetState_FirePillar(obj, state, datas, isResetTimer)
 	{
 		obj.sq_PlaySound("MW_FPILLAR_READY");
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_FIREPILLAR1);
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED,SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.2, 1.2);
 		
 		addElementalChain_ATMage(obj, ENUM_ELEMENT_FIRE);
 	}
 	else if(substate == SUB_STATE_FIREPILLAR_1)
 	{
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_FIREPILLAR2);
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED,SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.2, 1.2);
 	}
 	else if(substate == SUB_STATE_FIREPILLAR_2)
 	{
@@ -100,7 +100,7 @@ function onSetState_FirePillar(obj, state, datas, isResetTimer)
 		}
 
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_FIREPILLAR3);
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED,SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.2, 1.2);
 	}
 	else if(substate == SUB_STATE_FIREPILLAR_3)
 	{

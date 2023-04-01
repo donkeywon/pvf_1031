@@ -46,7 +46,7 @@
 	104328
 
 [value]
-	99360
+	3250000
 
 [equipment physical attack]
 	785	725
@@ -132,17 +132,17 @@
 		`character`	-1
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	5
-	[add absolute damage]
-		`all`
-		`%`	5
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		910
 [/then]
 
 [if]
@@ -224,3 +224,6 @@
 
 [icon mark]
 	`Item/IconMark.img`	66
+
+[price]
+	65000000

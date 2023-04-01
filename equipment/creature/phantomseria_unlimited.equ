@@ -1,0 +1,87 @@
+#PVF_File
+
+[name]
+	`迷你赛丽亚`
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`item/creature/creature.img`	185
+
+[field image]
+	`item/fieldimage.img`	30
+
+[equipment type]
+	`[creature]`	0
+
+[sub type]
+	0
+
+[creature species]
+	219
+
+[cool time]
+	10000
+
+[MP MAX rate]
+	15.0
+
+[physical attack]
+	25
+
+[magical attack]
+	25
+
+[move speed]
+	30
+
+[attack speed]
+	10
+
+[cast speed]
+	10
+
+[room list move speed rate]
+	0.2
+
+[anti evil]
+	5
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	5
+[/then]
+
+[pvp]
+	[if]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[increase critical damage]
+			`%`	2
+	[/then]
+[/pvp]
+
+[move wav]
+	`CREATURE_EQUIP_TOUCH`

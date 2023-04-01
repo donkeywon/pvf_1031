@@ -132,24 +132,26 @@
 [if]
 	[attack condition]
 		`counter`
-	[module]
-		`[dead tower]`
-		`[dungeon]`
-		`[tournament dungeon]`
-		`[war room]`
-		`[blood system]`
-	[/module]
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	5
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		905
 [/then]
 
 [icon mark]
 	`Item/IconMark.img`	64
+
+[price]
+	10000
+
+[value]
+	10000

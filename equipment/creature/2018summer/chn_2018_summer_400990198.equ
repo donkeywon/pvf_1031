@@ -1,0 +1,122 @@
+#PVF_File
+
+[name]
+	`跳舞的喵`
+
+[explain]
+	`攻击时， 增加10%%的伤害。
+以下属性在超时空之战地下城中适用 : 
+所有属性强化 +15
+物理、 魔法暴击率 +5%%
+攻击速度、 移动速度、 施放速度 +3%%
+HP最大值 +400`
+
+[flavor text]
+	`<2018夏日礼包>`
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`item/creature/creature.img`	291
+
+[field image]
+	`item/fieldimage.img`	30
+
+[equipment type]
+	`[creature]`	0
+
+[sub type]
+	0
+
+[creature species]
+	10162
+
+[cool time]
+	10000
+
+[MP MAX rate]
+	10.0
+
+[physical attack]
+	35
+
+[magical attack]
+	35
+
+[physical defense]
+	35
+
+[magical defense]
+	35
+
+[all elemental attack]
+	10
+
+[skill data up]
+	`[all]`	199	`[all]`	`[level]`	50	`+`	10
+[/skill data up]
+
+[move wav]
+	`CREATURE_EQUIP_TOUCH`
+
+[set item master]
+	-1
+
+[if]
+	[time]
+		0	1	0
+	[cooltime]
+		5000
+	[stat change]
+		`hp`
+		`>`
+		`%`	0
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		5000
+	[stat by condition]
+		`attack speed`
+		`+`	30
+	[stat by condition]
+		`move speed`
+		`+`	30
+	[stat by condition]
+		`cast speed`
+		`+`	30
+	[stat by condition]
+		`fire attack`
+		`+`	15
+	[stat by condition]
+		`light attack`
+		`+`	15
+	[stat by condition]
+		`water attack`
+		`+`	15
+	[stat by condition]
+		`dark attack`
+		`+`	15
+	[stat by condition]
+		`hp max`
+		`+`	400
+	[stat by condition]
+		`magical critical hit`
+		`+`	5
+	[stat by condition]
+		`physical critical hit`
+		`+`	5
+[/then]

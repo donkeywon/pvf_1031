@@ -153,14 +153,17 @@
 	[/skill]
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	15
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		915
 [/then]
 
 [if]
@@ -169,14 +172,17 @@
 	[/skill]
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	15
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		915
 [/then]
 
 [if]
@@ -185,14 +191,17 @@
 	[/skill]
 	[attack success]
 		1
+	[cooltime]
+		1000
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	20
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		920
 [/then]
 
 [if]
@@ -214,16 +223,19 @@
 [if]
 	[attack success]
 		1
+	[cooltime]
+		1000
 	[my appendage]
 		208
 [/if]
 
 [then]
 	[target]
-		`enemy`	-1
-	[add absolute damage]
-		`all`
-		`%`	12
+		`myself`	-1
+	[equipment duration]
+		1000
+	[appendage]
+		912
 [/then]
 
 [possible kiri protect]

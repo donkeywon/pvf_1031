@@ -1,0 +1,80 @@
+#PVF_File
+
+[name]
+	`迷你流浪武士`
+
+[explain]
+	`暴击伤害 +3%%`
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`item/creature/creature.img`	187
+
+[field image]
+	`item/fieldimage.img`	30
+
+[equipment type]
+	`[creature]`	0
+
+[sub type]
+	0
+
+[creature species]
+	234
+
+[cool time]
+	10000
+
+[physical attack]
+	15
+
+[magical attack]
+	15
+
+[physical defense]
+	15
+
+[magical defense]
+	15
+
+[attack speed]
+	20
+
+[move speed]
+	20
+
+[cast speed]
+	20
+
+[MP MAX rate]
+	10.0
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	3
+[/then]
+
+[move wav]
+	`CREATURE_EQUIP_TOUCH`
+
+[set item master]
+	-1

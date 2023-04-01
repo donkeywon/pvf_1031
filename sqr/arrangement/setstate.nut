@@ -7,7 +7,16 @@ function Common_setState(obj, state, datas, isResetTimer)
 function setState_Swordman(obj, state, datas, isResetTimer)
 {
 	if(!obj) return;
+	local substate = obj.sq_GetVectorData(datas, 0);
+    local substate1 = obj.sq_GetVectorData(datas, 1);
+    local substate2 = obj.sq_GetVectorData(datas, 2);
+    setState_Swordman_swordman_handlingsword(obj, state, datas, isResetTimer);
+    obj.getVar("Swordman_substate").clear_vector();
+    obj.getVar("Swordman_substate").push_vector(substate);
+    obj.getVar("Swordman_substate").push_vector(substate1);
+    obj.getVar("Swordman_substate").push_vector(substate2);
 	Common_setState(obj, state, datas, isResetTimer);
+	return 0;
 }
 
 
