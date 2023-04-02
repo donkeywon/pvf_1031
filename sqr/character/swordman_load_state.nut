@@ -132,5 +132,3 @@ IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "Character/swordman/swordm
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/attack/attack.nut", "swordman_attack", 8, -1);
 
 IRDSQRCharacter.pushState(0, "character/swordman/defaneblood/defaneblood.nut", "swordman_defaneblood", -1, SKILL_DEFANEBLOOD);
-
-IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "Character/Swordman/LeiShen/JianQi.nut", "SwordmanAttack", 8, -1);
