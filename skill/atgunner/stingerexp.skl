@@ -16,6 +16,7 @@
 
 [explain ex]
 	`    增加[FM-92 mk2榴弹]的攻击力。
+技能每增加Lv1时， 攻击次数上限增加 : 1
 技能每增加Lv1时， 攻击力增加率 : 10%%`
 
 [basic explain ex]
@@ -63,7 +64,7 @@
 
 [dungeon]
 	[static data]
-		400	1000	100	600	10	8
+		400	1000	100	600	10	6
 	[/static data]
 	[level info]
 		3
@@ -141,6 +142,7 @@
 	[special level up]
 		-1	0	`%`	10
 		-1	1	`%`	10
+		5	5	`+`	1
 	[/special level up]
 [/dungeon]
 
