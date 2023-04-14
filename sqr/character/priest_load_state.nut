@@ -112,7 +112,8 @@ IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "character/new_priest/healwi
  
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "character/new_priest/apocalypse/apocalypse.nut", "priest_apocalypse", 47, -1);
 
-
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "character/priest/corkscrewblow/corkscrewblow.nut", 
+"CorkscrewBlow", STATE_CORKSCREWBLOW, SKILL_CORKSCREWBLOW);
 
 
 
