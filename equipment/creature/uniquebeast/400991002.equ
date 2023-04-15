@@ -4,9 +4,9 @@
 	`幻梦墨麒麟`
 
 [explain]
-	`力量、 智力 +7%%
-攻击时， 附加12%%的伤害。
-暴击时， 额外增加12%%的伤害增加量。
+	`力量、 智力 +5%%
+攻击时， 附加5%%的伤害。
+暴击时， 额外增加5%%的伤害增加量。
 所有技能冷却时间 -5%%`
 
 [attach type]
@@ -91,26 +91,6 @@
 [MP MAX rate]
 	20.0
 
-[skill data up]
-	`[all]`	199	`[all]`	`[level]`	50	`+`	12
-[/skill data up]
-
-[if]
-	[change status]
-		`hp`
-		`>`
-		`%`	0
-		`end`
-[/if]
-
-[then]
-	[target]
-		`myself`	-1
-	[stat by condition]
-		`skill cool time`
-		`%`	-5
-[/then]
-
 [if]
 	[event attack success]
 		1
@@ -120,7 +100,7 @@
 	[target]
 		`enemy`	-1
 	[increase critical damage]
-		`%`	12
+		`%`	5
 [/then]
 
 [move wav]
@@ -141,10 +121,10 @@
 		0
 	[stat by condition]
 		`physical attack`
-		`%`	7
+		`%`	5
 	[stat by condition]
 		`magical attack`
-		`%`	7
+		`%`	5
 [/then]
 
 [all skill item]
@@ -158,7 +138,7 @@
 		[upper bound level]
 			70
 		[value]
-			1
+			2
 		[extra condition]
 			`[except for ex skill]`
 		[/extra condition]
@@ -168,7 +148,7 @@
 [/all skill item]
 
 [skill data up]
-	`[all]`	199	`[all]`	`[level]`	50	`+`	12
+	`[all]`	199	`[all]`	`[level]`	50	`+`	5
 [/skill data up]
 
 [if]
@@ -185,16 +165,4 @@
 	[stat by condition]
 		`skill cool time`
 		`%`	-5
-[/then]
-
-[if]
-	[event attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`enemy`	-1
-	[increase critical damage]
-		`%`	12
 [/then]

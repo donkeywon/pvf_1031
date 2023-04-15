@@ -4,12 +4,9 @@
 	`日光守卫者克利`
 
 [explain]
-	`冒险家名望 +976
- 
-最终伤害 +15%%
-攻击时， 附加20%%的伤害。
-攻击时， 额外增加20%%的伤害增加量。
-所有技能冷却时间 -8%%`
+	`攻击时， 附加10%%的伤害。
+暴击时， 额外增加10%%的伤害增加量。
+所有技能冷却时间 -4%%`
 
 [flavor text]
 	`<2021年耕耘礼包>`
@@ -42,9 +39,6 @@
 [move wav]
 	`CREATURE_EQUIP_TOUCH`
 
-[sub type]
-	0
-
 [creature species]
 	10520
 
@@ -52,25 +46,25 @@
 	10000
 
 [equipment physical attack]
-	155	155
+	55	55
 
 [equipment magical attack]
-	155	155
+	55	55
 
 [separate attack]
-	175	175
+	75	75
 
 [physical attack]
-	200
+	100
 
 [magical attack]
-	200
+	100
 
 [physical defense]
-	200
+	100
 
 [magical defense]
-	200
+	100
 
 [physical critical hit]
 	10.0
@@ -79,7 +73,7 @@
 	10.0
 
 [all elemental attack]
-	36
+	10
 
 [room list move speed rate]
 	0.2
@@ -94,274 +88,39 @@
 	80
 
 [MP MAX rate]
-	50.0
+	20.0
 
 [skill data up]
-	`[all]`	169	`[all]`	`[static]`	20	`+`	200
-	`[all]`	198	`[all]`	`[static]`	1	`+`	200
-	`[all]`	198	`[all]`	`[static]`	4	`+`	150
-	`[all]`	198	`[all]`	`[static]`	3	`+`	200
-	`[all]`	198	`[all]`	`[static]`	15	`+`	80
-	`[all]`	198	`[all]`	`[static]`	99	`+`	976
+	`[all]`	199	`[all]`	`[level]`	50	`+`	10
 [/skill data up]
 
-[skill data up]
-	`[all]`	1	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	2	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	3	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	4	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	5	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	6	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	7	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	8	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	9	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	10	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	11	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	12	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	13	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	14	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	15	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	16	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	17	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	18	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	19	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	20	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	21	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	22	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	23	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	24	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	25	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	26	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	27	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	28	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	29	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	30	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	31	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	32	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	33	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	34	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	35	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	36	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	37	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	38	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	39	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	40	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	41	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	42	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	43	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	44	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	45	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	46	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	47	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	48	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	49	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	50	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	51	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	52	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	53	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	54	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	55	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	56	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	57	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	58	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	59	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	60	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	61	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	62	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	63	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	64	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	65	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	66	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	67	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	68	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	69	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	70	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	71	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	72	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	73	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	74	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	75	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	76	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	77	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	78	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	79	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	80	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	81	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	82	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	83	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	84	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	85	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	86	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	87	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	88	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	89	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	90	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	91	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	92	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	93	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	94	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	95	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	96	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	97	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	98	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	99	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	100	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	101	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	102	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	103	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	104	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	105	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	106	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	107	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	108	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	109	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	110	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	111	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	112	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	113	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	114	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	115	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	116	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	117	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	118	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	119	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	120	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	121	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	122	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	123	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	124	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	125	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	126	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	127	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	128	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	129	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	130	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	131	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	132	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	133	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	134	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	135	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	136	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	137	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	138	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	139	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	140	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	141	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	142	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	143	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	144	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	145	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	146	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	147	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	148	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	149	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	150	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	151	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	152	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	153	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	154	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	155	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	156	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	157	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	158	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	159	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	160	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	161	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	162	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	163	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	164	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	165	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	166	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	167	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	168	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	169	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	170	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	171	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	172	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	173	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	174	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	175	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	176	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	177	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	178	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	179	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	180	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	181	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	182	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	183	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	184	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	185	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	186	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	187	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	188	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	189	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	190	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	191	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	192	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	193	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	194	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	195	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	196	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	197	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	198	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	199	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	200	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	201	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	202	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	203	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	204	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	205	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	206	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	207	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	208	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	209	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	210	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	211	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	212	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	213	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	214	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	215	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	216	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	217	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	218	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	219	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	220	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	221	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	222	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	223	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	224	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	225	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	226	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	227	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	228	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	229	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	230	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	231	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	232	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	233	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	234	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	235	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	236	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	237	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	238	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	239	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	240	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	241	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	242	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	243	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	244	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	245	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	246	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	247	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	248	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	249	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	250	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	251	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	252	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	253	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	254	`[all]`	`[cooltime]`	0	`%`	-8
-	`[all]`	255	`[all]`	`[cooltime]`	0	`%`	-8
-[/skill data up]
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`skill cool time`
+		`%`	-4
+[/then]
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	10
+[/then]
 
 [all skill item]
 	[item growtype]
