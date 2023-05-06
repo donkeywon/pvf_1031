@@ -1,5 +1,5 @@
 function Common_onStartDungeon(obj) {
-    ReadAheadBuffAni(obj);
+    
 }
 
 function onStartDungeon_Swordman(obj) {
