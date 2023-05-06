@@ -9,7 +9,7 @@ function checkExecutableSkill_PieceOfIce(obj)
 
 	if (useSkill) {
 		//obj.sq_IntVectClear();
-		//obj.sq_IntVectPush(SUB_STATE_ICEROAD_0); // substate¼¼ÆÃ
+		//obj.sq_IntVectPush(SUB_STATE_ICEROAD_0); // substateï¿½ï¿½ï¿½ï¿½
 		obj.sq_AddSetStatePacket(STATE_PIECE_OF_ICE, STATE_PRIORITY_IGNORE_FORCE, false);
 		return true;
 	}
@@ -26,7 +26,7 @@ function checkCommandEnable_PieceOfIce(obj)
 	local state = obj.sq_GetState();
 
 	if(state == STATE_ATTACK) {
-		// °áÅõÀå¿¡¼­´Â Æ¯Á¤½ºÅ³¸¸ Äµ½½ÀÌ °¡´ÉÇÕ´Ï´Ù. ÀÛ¾÷ÀÚ:Á¤Áø¼ö [2012.04.20]
+		// ï¿½ï¿½ï¿½ï¿½ï¿½å¿¡ï¿½ï¿½ï¿½ï¿½ Æ¯ï¿½ï¿½ï¿½ï¿½Å³ï¿½ï¿½ Äµï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½. ï¿½Û¾ï¿½ï¿½ï¿½:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ [2012.04.20]
 		return obj.sq_IsCommandEnable(SKILL_PIECE_OF_ICE);
 	}
 
@@ -41,7 +41,7 @@ function onSetState_PieceOfIce(obj, state, datas, isResetTimer)
 	obj.sq_StopMove();
 	obj.sq_SetCurrentAnimation(CUSTOM_ANI_PIECE_OF_ICE);
 	
-	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
+	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.2, 1.2);
 }
 
 function onProc_PieceOfIce(obj)
@@ -95,11 +95,11 @@ function onKeyFrameFlag_PieceOfIce(obj, flagIndex)
 						
 			for(local i=0;i<randNum;++i) {			
 			
-				//ÃÖ´ë ÇÃ·¡±× ÀÎµ¦½º = 8 8¿¡ °¡±î¿ï¼ö·Ï ¹üÀ§°¡ ÁÙ¾î µç´Ù.
+				//ï¿½Ö´ï¿½ ï¿½Ã·ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½ = 8 8ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¾ï¿½ ï¿½ï¿½ï¿½.
 				if(obj.isMyControlObject())
 				{
-					local hAngleRange = sq_GetIntData(obj, SKILL_PIECE_OF_ICE, 5); //ÁÂ¿ì ¹üÀ§
-					local vAngleRange = sq_GetIntData(obj, SKILL_PIECE_OF_ICE, 6); //»óÇÏ ¹üÀ§
+					local hAngleRange = sq_GetIntData(obj, SKILL_PIECE_OF_ICE, 5); //ï¿½Â¿ï¿½ ï¿½ï¿½ï¿½ï¿½
+					local vAngleRange = sq_GetIntData(obj, SKILL_PIECE_OF_ICE, 6); //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 					
 					if(hAngleRange > 360)
 						hAngleRange = 360;
@@ -108,7 +108,7 @@ function onKeyFrameFlag_PieceOfIce(obj, flagIndex)
 					local verticalAngle = sq_getRandom(0,vAngleRange);
 					
 					
-					// ÇÁ·¹ÀÓÀÌ Áö³¯¼ö·Ï »ý¼º ÁÂÇ¥°¡ Á¡Á¡ ¾ÈÀ¸·Î µé¾î°¡°Ô²û
+					// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½î°¡ï¿½Ô²ï¿½
 					local startPosY = (40 * (8-flagIndex)/POI_MAX_KEYFRAME_INDEX)  * (vAngleRange == 0 ? 1 : horizonAngle/(hAngleRange/2)); 
 					local lifeTime	  = sq_GetIntData(obj, SKILL_PIECE_OF_ICE, 4);														
 					local iceParticle = sq_CreateDrawOnlyObject(iceCoreObj, "PassiveObject/Character/Mage/Animation/ATPieceOfIce/08_ice_shard1_dodge.ani",ENUM_DRAWLAYER_NORMAL,true);
@@ -116,8 +116,8 @@ function onKeyFrameFlag_PieceOfIce(obj, flagIndex)
 					
 					obj.sq_StartWrite();
 					obj.sq_WriteWord(sq_getRandom(0,5));
-					obj.sq_WriteFloat(horizonAngle.tofloat()); // ¼öÆò ¹üÀ§ 
-					obj.sq_WriteFloat(verticalAngle.tofloat());  // ¼öÁ÷ ¹üÀ§
+					obj.sq_WriteFloat(horizonAngle.tofloat()); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
+					obj.sq_WriteFloat(verticalAngle.tofloat());  // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 					obj.sq_WriteWord(lifeTime);									
 					
 					obj.sq_SendCreatePassiveObjectPacket(24223, 0, 60, startPosY, 75);			
