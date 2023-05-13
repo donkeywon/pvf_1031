@@ -12,9 +12,9 @@ function proc_appendage_mage_comminterrupt(appendage)
 
 function EnableSoften(obj,skillindex,state)
 {
-	if(obj.sq_GetState() == state)				//üòö¢Ó×îñßÒ÷¾æ¨îîóÑİïÎò ÛÁò­ÙíùÚêõûùÔÒËÁĞüÒö
+	if(obj.sq_GetState() == state)				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		return false;
-	obj.setSkillCommandEnable(skillindex ,true);		//ŞÅÒöĞüÒö£¨ïÇÕÕÓñøö£¬Ê¦ì¤ŞÅéÄ£©
+	obj.setSkillCommandEnable(skillindex ,true);		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¦ï¿½ï¿½ï¿½ï¿½Ä£ï¿½
 		return true;
 }
 
@@ -24,21 +24,21 @@ function SetSkillState(obj,skillindex,state,Arr)
 	local iEnterSkill = obj.sq_IsEnterSkill(skillindex);
 	if (iEnterSkill == -1)
 		return false;
-	if(obj.sq_GetState() == state)				//üòö¢Ó×îñßÒ÷¾æ¨îîóÑİïÎò ÛÁò­ÙíùÚêõûùÔÒËÁĞüÒö
+	if(obj.sq_GetState() == state)				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		return false;
-	if(obj.sq_IsUseSkill(skillindex))				//÷÷Ó¨Ó×îñĞüÒöãÀÜúÊ¦éÄ£¨cd ÕÀÙÄÔõğÉËì£©
+	if(obj.sq_IsUseSkill(skillindex))				//ï¿½ï¿½Ó¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¦ï¿½Ä£ï¿½cd ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì£©
 	{
-		obj.sq_IntVectClear();			//?ğ¶ú¾Õá£¨ßÒ÷¾£©
-		if(Arr.len() < 1)				//åıÍıóÑâ¦â¦ğÚíşÓøá³éÍ1
+		obj.sq_IntVectClear();			//?ï¿½ï¿½ï¿½ï¿½á£¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		if(Arr.len() < 1)				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1
 		{
 			obj.sq_AddSetStatePacket(state,STATE_PRIORITY_USER,true);
 			return true;
 		}
 		else
 		{	
-			foreach(sub in Arr)				//âàü»÷êâ¦ğÚArrØßËÁà÷ê¬ŞĞìısub£¬îÏãÀìéËÁâàü»
-				obj.sq_IntVectPush(sub);		//àâöÇí­ßÒ÷¾sub 
-			obj.sq_AddSetStatePacket(state,STATE_PRIORITY_USER,true);	//àâöÇĞüÒößÒ÷¾
+			foreach(sub in Arr)				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Arrï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½subï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+				obj.sq_IntVectPush(sub);		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½sub 
+			obj.sq_AddSetStatePacket(state,STATE_PRIORITY_USER,true);	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			return true;
 		}
 	}
@@ -61,30 +61,30 @@ function mage_comminterrupt(appendage)
 	local type = sq_getGrowType(obj);
 
 		local mystate = obj.sq_GetState();
-		local isTower = sq_IsTowerDungeon();//áóÜÖŞİØÌñı÷²êõûùàì÷Ü
-		if(isTower) return;//áóÜÖŞİØÌñı÷²êõûùàì÷Ü
+		local isTower = sq_IsTowerDungeon();//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// if(isTower) return;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		if(mystate == 3||mystate == 4||mystate == 5||mystate == 9||mystate == 16) return;
 
-		EnableSoften(obj,4,22);//×£ä³
+		EnableSoften(obj,4,22);//×£ï¿½
 		SetSkillState(obj,4,22,[4]);
-		EnableSoften(obj,20,24);//ø½Óµ
+		EnableSoften(obj,20,24);//ï¿½ï¿½Óµ
 		SetSkillState(obj,20,24,[20]);
-		EnableSoften(obj,14,25);//Ö¥ü£íæ
+		EnableSoften(obj,14,25);//Ö¥ï¿½ï¿½ï¿½ï¿½
 		SetSkillState(obj,14,25,[0,14,1]);
 
 	switch (type)
 	{
 
 		case 1:
-		EnableSoften(obj,111,46);//ÎÃï³?íß
+		EnableSoften(obj,111,46);//ï¿½ï¿½ï¿½?ï¿½ï¿½
 		SetSkillState(obj,111,46,[0,1]);
-		EnableSoften(obj,249,249);//êªáÈñıØ­
+		EnableSoften(obj,249,249);//ï¿½ï¿½ï¿½ï¿½ï¿½Ø­
 		SetSkillState(obj,249,249,[0,1]);
-		EnableSoften(obj,250,250);//êªáÈòè÷¹
+		EnableSoften(obj,250,250);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		SetSkillState(obj,250,250,[0,1,2,3]);
-		EnableSoften(obj,251,251);//?ÖÄâ©ïÜ
+		EnableSoften(obj,251,251);//?ï¿½ï¿½ï¿½ï¿½ï¿½
 		SetSkillState(obj,251,251,[0,1]);
-		EnableSoften(obj,253,253);//ğ¯×¿êªáÈ
+		EnableSoften(obj,253,253);//ï¿½×¿ï¿½ï¿½ï¿½
 		SetSkillState(obj,253,253,[0,1,2,3]);
 		break;
 
@@ -94,50 +94,50 @@ function mage_comminterrupt(appendage)
 
 		case 3:
 
-		EnableSoften(obj,65,26);//ê­ÙñÍâ
+		EnableSoften(obj,65,26);//ï¿½ï¿½ï¿½ï¿½ï¿½
 		SetSkillState(obj,65,26,[0]);
-		EnableSoften(obj,13,24);//áï?
+		EnableSoften(obj,13,24);//ï¿½ï¿½?
 		SetSkillState(obj,13,24,[13]);
-		EnableSoften(obj,125,51);//äªñìõßÌª
+		EnableSoften(obj,125,51);//ï¿½ï¿½ï¿½ï¿½ï¿½Ìª
 		SetSkillState(obj,125,51,[0,1]);
-		EnableSoften(obj,69,29);//üÓ×£åçêÅÓï
+		EnableSoften(obj,69,29);//ï¿½ï¿½×£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		SetSkillState(obj,69,29,[0,1]);
-		//EnableSoften(obj,123,50);//úÛÚ£ë×ùê
+		//EnableSoften(obj,123,50);//ï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½
 		SetSkillState(obj,123,50,[]);
-		//EnableSoften(obj,10,28);//úÛÚ£?äâ
+		//EnableSoften(obj,10,28);//ï¿½ï¿½Ú£?ï¿½ï¿½
 		SetSkillState(obj,10,28,[0,1,2]);
-		EnableSoften(obj,127,52);//ïÒãÁíÈ÷¥
+		EnableSoften(obj,127,52);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		SetSkillState(obj,127,52,[]);
-		EnableSoften(obj,66,27);//×µàøàìç¯Ìª
+		EnableSoften(obj,66,27);//×µï¿½ï¿½ï¿½ï¿½ï¿½Ìª
 		SetSkillState(obj,66,27,[0,1,2]);
-		EnableSoften(obj,68,25);//?ã©×µú¼öè
+		EnableSoften(obj,68,25);//?ï¿½×µï¿½ï¿½ï¿½ï¿½
 		SetSkillState(obj,68,25,[0,68]);
-		EnableSoften(obj,247,247);//àøÚ£ê¢øï
+		EnableSoften(obj,247,247);//ï¿½ï¿½Ú£ï¿½ï¿½ï¿½
 		SetSkillState(obj,247,247,[0]);
-		EnableSoften(obj,117,24);//úÛÚ£áï?
+		EnableSoften(obj,117,24);//ï¿½ï¿½Ú£ï¿½ï¿½?
 		SetSkillState(obj,117,24,[117,4]);
-		EnableSoften(obj,244,244);//àìÌªáï?
+		EnableSoften(obj,244,244);//ï¿½ï¿½Ìªï¿½ï¿½?
 		SetSkillState(obj,244,244,[]);
-		EnableSoften(obj,242,242);//úÛÚ£ğê
+		EnableSoften(obj,242,242);//ï¿½ï¿½Ú£ï¿½ï¿½
 		SetSkillState(obj,242,242,[0]);
-		EnableSoften(obj,112,47);//×µàøÖôÖ§Ìª
+		EnableSoften(obj,112,47);//×µï¿½ï¿½ï¿½ï¿½Ö§Ìª
 		SetSkillState(obj,112,47,[0,1,2,3]);
-		EnableSoften(obj,243,243);//ŞÅÓùñıÙñ
+		EnableSoften(obj,243,243);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		SetSkillState(obj,243,243,[0,1,2,3,4,5,6,7]);
 		break;
 
 		case 4:
-		EnableSoften(obj,92,35);//äŞç¯Ôà?
+		EnableSoften(obj,92,35);//ï¿½ï¿½ï¿½ï¿½ï¿½?
 		SetSkillState(obj,92,35,[]);
-		EnableSoften(obj,95,36);//Ü¨ì¶óïã²ÚĞ
+		EnableSoften(obj,95,36);//Ü¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		SetSkillState(obj,95,36,[1]);
-		EnableSoften(obj,115,49);//õ±Ğäóïã²ÚĞ
+		EnableSoften(obj,115,49);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		SetSkillState(obj,115,49,[1]);
-		EnableSoften(obj,133,133);//õ±ĞäÜêÜêÓØ
+		EnableSoften(obj,133,133);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		SetSkillState(obj,133,133,[0]);
-		EnableSoften(obj,98,37);//àÁï®á·÷ê
+		EnableSoften(obj,98,37);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		SetSkillState(obj,98,37,[0,1,2]);
-		EnableSoften(obj,114,48);//÷¥Ô¯àÁï®á·÷ê
+		EnableSoften(obj,114,48);//ï¿½ï¿½Ô¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		SetSkillState(obj,114,48,[0,1,2,3]);
 		break;
 
