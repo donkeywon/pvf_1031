@@ -1,0 +1,36 @@
+#PVF_File
+
+[MOTION]
+	[BASE ANI]
+		`../Animation/groundkickhold.ani`
+[/MOTION]
+
+[TRIGGER]
+	[FRAME]
+		0	0
+	[WHICH]
+	[ALL MONSTER TEAM]
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS IN AREA]
+			[POS]
+				0	0	0
+			[RANGE]
+				120	50	500
+			[COORDINATE]
+				`RELATIVE`
+		[/IS IN AREA]
+	[/CHECKUP]
+	[DO BEHAVIOR]
+	[CHECKUP OBJECT]
+		0
+[/TRIGGER]
+
+[BEHAVIOR]
+	[PULL APPENDAGE]
+		20.0	20.0	500
+	[SET ACTION]
+	[HOLD]
+	[NOW]
+[/BEHAVIOR]
