@@ -196,3 +196,24 @@
 	[appendage]
 		11288
 [/then]
+
+[if]
+	[character]
+		`mage`
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		600000
+	[appendage]
+		11289
+[/then]
