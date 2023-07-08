@@ -7,6 +7,9 @@
 function onAfterSetState_mage_MageRandomPierceStrikeEx(ufHkoHybiK8QA6IhjnQeJ5PV, JU4FNEF42GsnKGjw, G5opvdZvRMKv, wYZ0c8qSptd)
 {
  if (!ufHkoHybiK8QA6IhjnQeJ5PV) return;
+ if (ufHkoHybiK8QA6IhjnQeJ5PV.sq_GetVectorData(G5opvdZvRMKv, 0) == 0) {
+	ufHkoHybiK8QA6IhjnQeJ5PV.getVar("cancelCount").setInt(0, 0);
+ }
  if(CNSquirrelAppendage.sq_IsAppendAppendage(ufHkoHybiK8QA6IhjnQeJ5PV, "character/mage/avatar/ap_avatar.nut"))
  {
  local AosKQAq0UaTY7oawu = ufHkoHybiK8QA6IhjnQeJ5PV.sq_GetVectorData(G5opvdZvRMKv, 0); 
@@ -34,9 +37,10 @@ function onAfterSetState_mage_MageRandomPierceStrikeEx(ufHkoHybiK8QA6IhjnQeJ5PV,
 function onProc_mage_MageRandomPierceStrikeEx(obj)
 {
 	if(!obj) return;
-	if(sq_IsKeyDown(OPTION_HOTKEY_JUMP, ENUM_SUBKEY_TYPE_ALL)) {
+	if(sq_IsKeyDown(OPTION_HOTKEY_JUMP, ENUM_SUBKEY_TYPE_ALL) && obj.getVar("cancelCount").getInt(0) != 1) {
+		obj.getVar("cancelCount").setInt(0, 1);
 		obj.sq_IntVectClear();
-		obj.sq_IntVectPush(3); // substate锟斤拷锟斤拷
+		obj.sq_IntVectPush(3); // substate锟??锟??
 		obj.sq_AddSetStatePacket(47, STATE_PRIORITY_IGNORE_FORCE, true);
 	}
 }
