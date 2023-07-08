@@ -1,119 +1,117 @@
 #PVF_File
 
 [name]
-`時空之痕戰爭領主 - 技能`
+	`时空之痕战争领主 - 技能`
 
 [explain]
-`進入[赫拉斯研究所]時將會觸發以下效果 : 
-    攻擊時， 有3%%幾率使自身進入霸體狀態5秒。`
+	`进入[赫拉斯研究所]时将会触发以下效果 : 
+    攻击时， 有3%%几率使自身进入霸体状态5秒。`
 
 [attach type]
-`[trade]`
+	`[trade]`
 
 [rarity]
-2	
-[usable job]
-`[all]`
+	2
 
+[usable job]
+	`[all]`
 [/usable job]
 
 [minimum level]
-1	
+	1
+
 [icon]
-`item/creature/creature_cn.img`
-39	
+	`item/creature/creature_cn.img`	39
+
 [icon mark]
-`item/Iconmark_cn.img`
-30	
+	`item/Iconmark_cn.img`	30
+
 [equipment type]
-`[creature]`
-0	
+	`[creature]`	0
+
 [sub type]
-0	
+	0
+
 [creature species]
-344	
+	344
+
 [output index]
-100330665	
+	100330665
+
 [cool time]
-10000	
+	10000
+
 [MP MAX rate]
-10.0	
+	10.0
+
 [cast speed]
-20	
+	20
+
 [move speed]
-20	
+	20
+
 [attack speed]
-20	
+	20
+
 [physical attack]
-10	
+	10
+
 [magical attack]
-10	
+	10
+
 [physical defense]
-10	
+	10
+
 [magical defense]
-10	
+	10
+
 [all skill item container]
-
-[all skill item]
-
-[item growtype]
-`[all]`
-0	
-[skill apply condition]
-
-[skill group]
-`[all]`
-
-[lower bound level]
-1	
-[upper bound level]
-50	
-[value]
-2	
-[extra condition]
-`[except for ex skill]`
-
-[/extra condition]
-
-[/skill apply condition]
-
-[skill phase]
-`[all]`
-
-[/all skill item]
-
+	[all skill item]
+		[item growtype]
+			`[all]`	0
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				1
+			[upper bound level]
+				50
+			[value]
+				2
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
 [/all skill item container]
 
 [if]
-
-[dungeon check]
-3900	
-[/dungeon check]
-
-[cooltime]
-30000	
-[event attack success]
-1	
+	[dungeon check]
+		3900
+	[/dungeon check]
+	[cooltime]
+		30000
+	[event attack success]
+		1
 [/if]
 
 [then]
-
-[probability]
-3	
-[reduce probability to human armor at pvp module]
-100	
-[duration]
-5000	
-[target]
-`myself`
--1	
-[buff]
-`superarmor`
-
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		100
+	[duration]
+		5000
+	[target]
+		`myself`	-1
+	[buff]
+		`superarmor`
 [/then]
 
 [move wav]
-`CREATURE_EQUIP_TOUCH`
+	`CREATURE_EQUIP_TOUCH`
 
 [set item master]
--1	
+	-1

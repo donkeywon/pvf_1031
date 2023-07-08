@@ -1,99 +1,103 @@
 #PVF_File
 
 [name]
-`巨龍之魂戰爭領主 - 智力`
+	`巨龙之魂战争领主 - 智力`
 
 [explain]
-`進入[巨龍地下城]時將會觸發以下效果 : 
+	`进入[巨龙地下城]时将会触发以下效果 : 
 力量 +20
 智力 +20
-體力 +20
+体力 +20
 精神 +20`
 
 [attach type]
-`[trade]`
+	`[trade]`
 
 [rarity]
-2	
-[usable job]
-`[all]`
+	2
 
+[usable job]
+	`[all]`
 [/usable job]
 
 [minimum level]
-1	
+	1
+
 [icon]
-`item/creature/creature_cn.img`
-35	
+	`item/creature/creature_cn.img`	35
+
 [icon mark]
-`item/Iconmark_cn.img`
-29	
+	`item/Iconmark_cn.img`	29
+
 [equipment type]
-`[creature]`
-0	
+	`[creature]`	0
+
 [sub type]
-0	
+	0
+
 [creature species]
-336	
+	336
+
 [output index]
-100330657	
+	100330657
+
 [cool time]
-10000	
+	10000
+
 [MP MAX rate]
-10.0	
+	10.0
+
 [cast speed]
-20	
+	20
+
 [move speed]
-20	
+	20
+
 [attack speed]
-20	
+	20
+
 [physical attack]
-10	
+	10
+
 [magical attack]
-60	
+	60
+
 [physical defense]
-10	
+	10
+
 [magical defense]
-10	
+	10
+
 [if]
-
-[dungeon check]
-3536	3537	3538	3539	3540	
-[/dungeon check]
-
-[stat change]
-`hp`
-`>`
-`%`
-0	`end`
-
+	[dungeon check]
+		3536	3537	3538	3539	3540
+	[/dungeon check]
+	[stat change]
+		`hp`
+		`>`
+		`%`	0
+		`end`
 [/if]
 
 [then]
-
-[target]
-`myself`
--1	
-[stat by condition]
-`physical attack`
-`+`
-20	
-[stat by condition]
-`magical attack`
-`+`
-20	
-[stat by condition]
-`physical defense`
-`+`
-20	
-[stat by condition]
-`magical defense`
-`+`
-20	
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`physical attack`
+		`+`	20
+	[stat by condition]
+		`magical attack`
+		`+`	20
+	[stat by condition]
+		`physical defense`
+		`+`	20
+	[stat by condition]
+		`magical defense`
+		`+`	20
 [/then]
 
 [move wav]
-`CREATURE_EQUIP_TOUCH`
+	`CREATURE_EQUIP_TOUCH`
 
 [set item master]
--1	
+	-1

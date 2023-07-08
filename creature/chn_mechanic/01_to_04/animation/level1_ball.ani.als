@@ -1,9 +1,9 @@
 #PVF_File
 
 [use animation]
-`level1_dodge.ani`
-`dodge`
+	`level1_dodge.ani`
+	`dodge`
 
 [add]
-0	-1	`dodge`
-
+	0	-1
+	`dodge`
