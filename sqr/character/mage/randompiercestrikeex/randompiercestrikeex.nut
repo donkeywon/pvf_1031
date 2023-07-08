@@ -30,3 +30,13 @@ function onAfterSetState_mage_MageRandomPierceStrikeEx(ufHkoHybiK8QA6IhjnQeJ5PV,
  ufHkoHybiK8QA6IhjnQeJ5PV.setCurrentAnimation(IVnBFIYJpi1hlKC); 
  }
 } ;
+
+function onProc_mage_MageRandomPierceStrikeEx(obj)
+{
+	if(!obj) return;
+	if(sq_IsKeyDown(OPTION_HOTKEY_JUMP, ENUM_SUBKEY_TYPE_ALL)) {
+		obj.sq_IntVectClear();
+		obj.sq_IntVectPush(3); // substate锟斤拷锟斤拷
+		obj.sq_AddSetStatePacket(47, STATE_PRIORITY_IGNORE_FORCE, true);
+	}
+}

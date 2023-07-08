@@ -27,3 +27,13 @@ function onAfterSetState_mage_MageRandomPierceStrike(Dcju7DIrGgeVQRdU, IQqclgIll
  Dcju7DIrGgeVQRdU.setCurrentAnimation(xnJJ3nD_JpV2Bt5yiwHcZltw); 
  }
 } ;
+
+function onProc_mage_MageRandomPierceStrike(obj)
+{
+	if(!obj) return;
+	if(sq_IsKeyDown(OPTION_HOTKEY_JUMP, ENUM_SUBKEY_TYPE_ALL)) {
+		obj.sq_IntVectClear();
+		obj.sq_IntVectPush(2); // substate锟斤拷锟斤拷
+		obj.sq_AddSetStatePacket(27, STATE_PRIORITY_IGNORE_FORCE, true);
+	}
+}
