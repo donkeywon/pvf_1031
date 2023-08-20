@@ -39,6 +39,12 @@ function procAppend_Fighter(obj) {
 	if (!obj) return;
 
 	Common_procAppend(obj);
+	
+	if (sq_getGrowType(obj) == 1)
+	{
+		nenGuardFollow_Nencharge(obj);//心之念意
+		enableNenchargeSkillsCharge_Proc(obj);//心之念意
+	}
 
 	if (sq_getGrowType(obj) == 3) {
 		//?�取?�前?�?�編??

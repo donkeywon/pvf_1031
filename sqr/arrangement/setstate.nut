@@ -19,15 +19,11 @@ function setState_Swordman(obj, state, datas, isResetTimer) {
 function setState_Fighter(obj, state, datas, isResetTimer) {
 	if (!obj) return;
 	Common_setState(obj, state, datas, isResetTimer);
-
-	fighter_skillbuff(obj, state, datas, isResetTimer);
 }
 
 function setState_ATFighter(obj, state, datas, isResetTimer) {
 	if (!obj) return;
 	Common_setState(obj, state, datas, isResetTimer);
-
-	fighter_skillbuff(obj, state, datas, isResetTimer);
 }
 
 function setState_Gunner(obj, state, datas, isResetTimer) {

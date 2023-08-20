@@ -1,9 +1,14 @@
+SKILL_NENCHARGEE	<- 126	
+STATE_NENCHARGEE	<- 221
 
-//�Y�T�˽檯�A��nut�ޯର���w���ݡC�u�R���w�A�t�~�ݭn�ѥ[�̥i�H�pô��
-//�@�̡G�C�t60 QQ506807329   ���{NUT�s�{�g�ޯ� ����о�1500�@��C�t�~1000�ǶO��¦��j���A�`�έק� �Ҧp�G����� �]�� ���ӫ~ �˳� �ƥ� ���� NPC NPK �Ǫ� �d�� act obj  UI�е{�������A���|�i�H���{�C
-
-
+CUSTOM_ANI_NENPRISON_CAST_BODY	<- 161	
+CUSTOM_ANI_NENPRISON_LOOP_BODY	<- 162	
+CUSTOM_ANI_NENPRISON_SHOT_BODY	<- 163	 
  
+SKILL_JI_SHOU_AO_YI			<- 122
+SKILL_MENG_DU_ZHI_SHANG			<- 123
+SKILL_LIMIT_BREAK			<- 242
+SKILL_NENCHARGE				<- 241
  
  
 STATE_FIGHTER_LIGHTDRAGONTHIRTEEN      <- 225    

@@ -1,9 +1,5 @@
 
-//�Y�T�˽檯�A��nut�ޯର���w���ݡC�u�R���w�A�t�~�ݭn�ѥ[�̥i�H�pô��
-//�@�̡G�C�t60 QQ506807329   ���{NUT�s�{�g�ޯ� ����о�1500�@��C�t�~1000�ǶO��¦��j���A�`�έק� �Ҧp�G����� �]�� ���ӫ~ �˳� �ƥ� ���� NPC NPK �Ǫ� �d�� act obj  UI�е{�������A���|�i�H���{�C
-
-
- 
+IRDSQRCharacter.pushPassiveObj("Character/Fighter/NenChargee/po_NenChargee.nut", 24396);
 IRDSQRCharacter.pushPassiveObj("js60_qq506807329/share_obj/share_po_fighter_24373.nut", 24373);
 sq_RunScript("js60_qq506807329/share_obj/fighter/setcustomdata.nut");
 sq_RunScript("js60_qq506807329/share_obj/fighter/setstate.nut");
@@ -21,7 +17,7 @@ IRDSQRCharacter.pushScriptFiles("Character/fighter/passive_skill_fighter.nut");
  
  
  
-
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_FIGHTER, "character/fighter/nenchargee/nenchargee.nut", "NenChargee", STATE_NENCHARGEE, SKILL_NENCHARGEE);
  
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_FIGHTER, "character/fighter/lightdragonthirteen/lightdragonthirteen.nut", "fighter_lightdragonthirteen", 225, 225);
 
@@ -89,4 +85,4 @@ IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_FIGHTER, "character/fighter/WildCann
 
 CNAvenger.pushPassiveObj("character/fighter/passiveobject/po_illusionbomb.nut", 24150);
 
-
+sq_RunScript("character/fighter/nencharge/nencharge.nut");
