@@ -1,27 +1,27 @@
 function Common_procAppend(obj) {
 	if (!obj) return;
 
-	procAppend_MonsterBlood(obj); // ?�物血??
+	procAppend_MonsterBlood(obj); // ?�物血??
 }
 
 function procAppend_Swordman(obj) {
 	if (!obj) return;
 	Common_procAppend(obj);
 
-	local TQe80hG8iORg1UvIUwOEWt = obj.sq_IsMyControlObject();
-	local NjiaBHxwntByBOUd = obj.getState();
-	if (TQe80hG8iORg1UvIUwOEWt) switch (NjiaBHxwntByBOUd) {
+	local Myobj = obj.sq_IsMyControlObject();
+	local state = obj.getState();
+	if (Myobj) switch (state) {
 	case 0:
 	case 8:
 	case 14:
-		local xhHZeF1zGdQ4Nkrs8yOP4Lp = sq_GetSkill(obj, 62);
-		if (xhHZeF1zGdQ4Nkrs8yOP4Lp) {
+		local skill = sq_GetSkill(obj, 62);
+		if (skill) {
 
-			if (!xhHZeF1zGdQ4Nkrs8yOP4Lp.isInCoolTime()) {
+			if (!skill.isInCoolTime()) {
 				obj.setSkillCommandEnable(62, true);
 				if (obj.sq_IsEnterSkill(62) != -1) {
-					local W494kQM0HHrwjmSTuK8zX7 = obj.sq_IsUseSkill(62);
-					if (W494kQM0HHrwjmSTuK8zX7) {
+					local IsUse = obj.sq_IsUseSkill(62);
+					if (IsUse) {
 						obj.sq_IntVectClear();
 						obj.sq_IntVectPush(0);
 						obj.sq_AddSetStatePacket(34, STATE_PRIORITY_USER, true);
@@ -47,10 +47,10 @@ function procAppend_Fighter(obj) {
 	}
 
 	if (sq_getGrowType(obj) == 3) {
-		//?�取?�前?�?�編??
+		//?�取?�前?�?�編??
 		local index = obj.getCurrentSkillIndex();
 
-		//裂地飛沙?�怪控??
+		//裂地飛沙?�怪控??
 		if (index == 106) {
 			if (!CNSquirrelAppendage.sq_IsAppendAppendage(obj, "character/fighter/appendage/ap_groundkickhold.nut")) {
 				CNSquirrelAppendage.sq_AppendAppendage(obj, obj, index, false, "character/fighter/appendage/ap_groundkickhold.nut", true);
@@ -80,10 +80,10 @@ function procAppend_ATFighter(obj) {
 	Common_procAppend(obj);
 
 	if ( sq_getGrowType(obj) == 3) {
-		//?�取?�前?�?�編??
+		//?�取?�前?�?�編??
 		local index = obj.getCurrentSkillIndex();
 
-		//血?�風?�移??
+		//血?�風?�移??
 		if (index == 77) {
 			if (!CNSquirrelAppendage.sq_IsAppendAppendage(obj, "character/fighter/appendage/ap_junkspin.nut")) {
 				CNSquirrelAppendage.sq_AppendAppendage(obj, obj, index, false, "character/fighter/appendage/ap_junkspin.nut", true);

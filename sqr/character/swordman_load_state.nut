@@ -1,3 +1,11 @@
+IRDSQRCharacter.pushPassiveObj("character/swordman/po_swordman_shared.nut", 24337);
+
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/wave/wave.nut", "wave", 24, -1);
+
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/grandwave/grandwave.nut", "grandwave_swordman", 27, -1);
+
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "Character/swordman/swordman_throw.nut", "swordman_throw", 13, -1);
+
 IRDSQRCharacter.pushPassiveObj("js60_qq506807329/share_obj/share_po_swordman_24370.nut", 24370);
 sq_RunScript("js60_qq506807329/share_obj/swordman/setcustomdata.nut");
 sq_RunScript("js60_qq506807329/share_obj/swordman/setstate.nut");
@@ -12,8 +20,8 @@ IRDSQRCharacter.pushScriptFiles("character/swordman/swordman_header.nut");
 IRDSQRCharacter.pushScriptFiles("character/swordman/swordman_common.nut");  
 IRDSQRCharacter.pushScriptFiles("character/swordman/passive_skill_swordman.nut");  
 
-IRDSQRCharacter.pushState(0, "character/Swordman/wave/wave.nut", "WaveSword", 24 ,-1 );
-IRDSQRCharacter.pushPassiveObj("character/Swordman/wave/po_bloodcut.nut", 24357);
+//IRDSQRCharacter.pushState(0, "character/Swordman/wave/wave.nut", "WaveSword", 24 ,-1 );
+//IRDSQRCharacter.pushPassiveObj("character/Swordman/wave/po_bloodcut.nut", 24357);
 
  
  
@@ -126,9 +134,9 @@ IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/shockw
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/BackStep/BackStep.nut", "swordman_backstep", 7, -1);
 
  
-IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "Character/swordman/swordman_throw.nut", "swordman_throw", 13, -1);
+//IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "Character/swordman/swordman_throw.nut", "swordman_throw", 13, -1);
 
  
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/attack/attack.nut", "swordman_attack", 8, -1);
 
-IRDSQRCharacter.pushState(0, "character/swordman/defaneblood/defaneblood.nut", "swordman_defaneblood", -1, SKILL_DEFANEBLOOD);
+//IRDSQRCharacter.pushState(0, "character/swordman/defaneblood/defaneblood.nut", "swordman_defaneblood", -1, SKILL_DEFANEBLOOD);
