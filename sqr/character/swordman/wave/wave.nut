@@ -66,7 +66,7 @@ function onKeyFrameFlag_wave(obj, flagIndex)
 				break;
 			}
 		break;
-		case 21:
+		/*case 21:
 			switch(flagIndex)
 			{
 				case 10002:
@@ -101,7 +101,7 @@ function onKeyFrameFlag_wave(obj, flagIndex)
 					}
 				break;
 			}
-		break;
+		break;*/
 		case 22:
 			switch(flagIndex)
 			{
@@ -133,7 +133,7 @@ function onKeyFrameFlag_wave(obj, flagIndex)
 				break;
 			}
 		break;
-		case 99:
+		/*case 99:
 			switch(flagIndex)
 			{
 				case 10002:
@@ -188,7 +188,7 @@ function onKeyFrameFlag_wave(obj, flagIndex)
 					}
 				break;
 			}
-		break;
+		break;*/
 	}
 	return true;
 }

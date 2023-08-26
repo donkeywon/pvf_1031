@@ -49,7 +49,7 @@ function wavemark_swordman_attack(obj, state, datas, isResetTimer) {
         sq_BinaryStartWrite();
         sq_BinaryWriteDword(47);
         sq_BinaryWriteBool(
-            (sq_GetSkillLevel(obj, 92) > 0) ?
+            (sq_GetSkillLevel(obj, 252) > 0) ?
             true :
             false
         );
