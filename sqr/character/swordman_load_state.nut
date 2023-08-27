@@ -25,7 +25,7 @@ IRDSQRCharacter.pushScriptFiles("character/swordman/passive_skill_swordman.nut")
 
  
  
- 
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/Necromantic/Necromantic.nut", "Necromantic", 113, 113);
  
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/bloodboom/bloodboom.nut", "swordman_bloodboom", 229, 229);
 
