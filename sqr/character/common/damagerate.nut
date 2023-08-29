@@ -126,6 +126,13 @@ function getCurrentModuleDamageRate_Priest(obj) {
         rate = rate + getAttackBonusRate_benyuan(obj, skillLevel)
     }
 
+    //小錘子
+	if (CNSquirrelAppendage.sq_IsAppendAppendage(obj, "character/new_priest/holymace/ap_holymace.nut"))
+    {
+        rate = rate * (100 + sq_GetLevelData(obj, 253, 1,
+        obj.sq_GetSkillLevel(253) ) / 10) / 100;
+    }
+
     return rate.tofloat() / 100.0;
 }
 
