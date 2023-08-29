@@ -1,36 +1,52 @@
-
-//�Y�T�˽檯�A��nut�ޯର���w���ݡC�u�R���w�A�t�~�ݭn�ѥ[�̥i�H�pô��
-//�@�̡G�C�t60 QQ506807329   ���{NUT�s�{�g�ޯ� ����о�1500�@��C�t�~1000�ǶO��¦��j���A�`�έק� �Ҧp�G����� �]�� ���ӫ~ �˳� �ƥ� ���� NPC NPK �Ǫ� �d�� act obj  UI�е{�������A���|�i�H���{�C
-
-
-function onAfterSetState_priest_attack(wuwWndgc5uQvq, NOZoRDxEi6Ru4YgXAs, NqlchM1GTjOK, q3oXejoUPjM5Ni)
+function onEnterFrame_priest_attack(obj, frameIndex)
 {
- if(!wuwWndgc5uQvq) return;
-} ;
+    if (!obj)
+        return;
 
+    if (frameIndex == 4 && obj.isMyControlObject() && obj.isCurrentCutomAniIndex(258))
+    {
+        sq_SetMyShake(obj, 5, 80);
+        obj.sq_StartWrite();
+        obj.sq_WriteDword(250);
+        obj.sq_WriteDword(6);
+        obj.sq_WriteDword(obj.sq_GetBonusRateWithPassive(253, 8, 2, 1.0));
+        obj.sq_SendCreatePassiveObjectPacket(24374, 0, 190, 0, 0);
+        obj.sq_StartWrite();
+        obj.sq_WriteDword(250);
+        obj.sq_WriteDword(5);
+        obj.sq_WriteDword(obj.sq_GetBonusRateWithPassive(253, 8, 2, 1.0));
+        obj.sq_SendCreatePassiveObjectPacket(24374, 0, 190, 0, 0);
+    }
+}
 
-function onKeyFrameFlag_priest_attack(DkEHbbjx_24vxFBkGP, ChaLUV1_4iGNDnbLOh93py)
+function onAfterSetState_priest_attack(obj, state, datas, isResetTimer)
 {
- if(!DkEHbbjx_24vxFBkGP) return false;
- if(DkEHbbjx_24vxFBkGP.isCurrentCutomAniIndex(191) 
- && CNSquirrelAppendage.sq_IsAppendAppendage(DkEHbbjx_24vxFBkGP, "character/new_priest/jupiter/ap_jupiter.nut") == true
- && DkEHbbjx_24vxFBkGP.sq_IsMyControlObject()) 
- {
- if(ChaLUV1_4iGNDnbLOh93py == 0)
- {
- sq_SetMyShake(DkEHbbjx_24vxFBkGP, 5, 80); 
- DkEHbbjx_24vxFBkGP.sq_StartWrite();
- DkEHbbjx_24vxFBkGP.sq_WriteDword(250); 
- DkEHbbjx_24vxFBkGP.sq_WriteDword(1); 
- DkEHbbjx_24vxFBkGP.sq_WriteDword(DkEHbbjx_24vxFBkGP.sq_GetBonusRateWithPassive(250, 8, 1, 1.0)); 
- DkEHbbjx_24vxFBkGP.sq_SendCreatePassiveObjectPacket(24374, 0, 190, 0, 0);
- DkEHbbjx_24vxFBkGP.sq_StartWrite();
- DkEHbbjx_24vxFBkGP.sq_WriteDword(250); 
- DkEHbbjx_24vxFBkGP.sq_WriteDword(2); 
- DkEHbbjx_24vxFBkGP.sq_WriteDword(DkEHbbjx_24vxFBkGP.sq_GetBonusRateWithPassive(250, 8, 2, 1.0)); 
- DkEHbbjx_24vxFBkGP.sq_SendCreatePassiveObjectPacket(24374, 0, 190, 0, 0);
- }
- }
- return true;
-} ;
+    if (!obj)
+        return;
+};
+
+function onKeyFrameFlag_priest_attack(obj, frameIndex)
+{
+    if (!obj)
+        return false;
+    if (obj.isCurrentCutomAniIndex(191) && CNSquirrelAppendage.sq_IsAppendAppendage(obj, "character/new_priest/jupiter/ap_jupiter.nut") == true && obj.sq_IsMyControlObject())
+    {
+        if (frameIndex == 0)
+        {
+            sq_SetMyShake(obj, 5, 80);
+            obj.sq_StartWrite();
+            obj.sq_WriteDword(250);
+            obj.sq_WriteDword(1);
+            obj.sq_WriteDword(obj.sq_GetBonusRateWithPassive(250, 8, 1, 1.0));
+            obj.sq_SendCreatePassiveObjectPacket(24374, 0, 190, 0, 0);
+            obj.sq_StartWrite();
+            obj.sq_WriteDword(250);
+            obj.sq_WriteDword(2);
+            obj.sq_WriteDword(obj.sq_GetBonusRateWithPassive(250, 8, 2, 1.0));
+            obj.sq_SendCreatePassiveObjectPacket(24374, 0, 190, 0, 0);
+        }
+    }
+    return true;
+};
+
 

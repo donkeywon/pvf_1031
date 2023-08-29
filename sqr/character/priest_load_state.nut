@@ -109,14 +109,13 @@ IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "character/new_priest/spearo
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "character/new_priest/deflectwall/deflectwall.nut", "priest_deflectwall", 39, -1);
  
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "character/new_priest/healwind/healwind.nut", "priest_healwind", 52, -1);
- 
+
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "character/new_priest/apocalypse/apocalypse.nut", "priest_apocalypse", 47, -1);
 
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "character/priest/corkscrewblow/corkscrewblow.nut", 
 "CorkscrewBlow", STATE_CORKSCREWBLOW, SKILL_CORKSCREWBLOW);
 
-IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "character/priest/gatlingpunch.nut", "gatlingpunch", 252, 252);
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "character/priest/gatlingpunch.nut", "gatlingpunch", STATE_GATLING_PUNCH, SKILL_GATLING_PUNCH);
 
-
-
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "character/new_priest/holymace/holymace.nut", "HolyMace", 253, 253);
 
