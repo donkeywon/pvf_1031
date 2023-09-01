@@ -85,13 +85,17 @@ IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "Character/new_priest/metamo
  
  
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "character/new_priest/priest_buff.nut", "priest_buff", 17, -1);
- 
+
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "character/priest/buff/buff.nut", "PriestState13", 13, -1);
+
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "character/new_priest/attack/priest_attack.nut", "priest_attack", 8, -1);
  
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "character/new_priest/jump/jumpattack.nut", "priest_jumpattack", 7, -1);
  
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "character/new_priest/Dash/dashattack.nut", "priest_dashattack", 15, -1);
  
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "character/priest/divineflash.nut", "DivineFlash", 112, 112);
+
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "character/new_priest/antiairupper/antiairupper.nut", "priest_antiairupper", 20, -1);
  
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "character/new_priest/quakearea/quakearea.nut", "priest_quakearea", 26, -1);
@@ -118,4 +122,3 @@ IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "character/priest/corkscrewb
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "character/priest/gatlingpunch.nut", "gatlingpunch", STATE_GATLING_PUNCH, SKILL_GATLING_PUNCH);
 
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_PRIEST, "character/new_priest/holymace/holymace.nut", "HolyMace", 253, 253);
-
