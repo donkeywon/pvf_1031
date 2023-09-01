@@ -20,9 +20,7 @@ IRDSQRCharacter.pushScriptFiles("character/swordman/swordman_header.nut");
 IRDSQRCharacter.pushScriptFiles("character/swordman/swordman_common.nut");  
 IRDSQRCharacter.pushScriptFiles("character/swordman/passive_skill_swordman.nut");  
 
-//IRDSQRCharacter.pushState(0, "character/Swordman/wave/wave.nut", "WaveSword", 24 ,-1 );
-//IRDSQRCharacter.pushPassiveObj("character/Swordman/wave/po_bloodcut.nut", 24357);
-
+IRDSQRCharacter.pushPassiveObj("character/Swordman/wave/po_bloodcut.nut", 24357);
  
  
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/Necromantic/Necromantic.nut", "Necromantic", 113, 113);
@@ -132,9 +130,6 @@ IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/shockw
 
  
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/BackStep/BackStep.nut", "swordman_backstep", 7, -1);
-
- 
-//IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "Character/swordman/swordman_throw.nut", "swordman_throw", 13, -1);
 
  
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/attack/attack.nut", "swordman_attack", 8, -1);
