@@ -36,15 +36,17 @@ function onProcCon_priest_quakearea(obj) {
 		}
 	}
 	else if (CNSquirrelAppendage.sq_IsAppendAppendage(obj, "character/new_priest/holymace/ap_holymace.nut")) {
-		if (obj.getVar().getBool(0) == false) if (sq_GetCurrentFrameIndex(obj) >= 5 && obj.getZPos() <= 0) {
-			obj.getVar().setBool(0, true);
-			obj.sq_StartWrite();
-			obj.sq_WriteDword(250);
-			obj.sq_WriteDword(7);
-			obj.sq_WriteDword(obj.sq_GetLevelData(253, 4, sq_GetSkillLevel(obj, 253)));
-			obj.sq_WriteDword(obj.sq_GetBonusRateWithPassive(253, -1, 3, 1.0));
-			obj.sq_SendCreatePassiveObjectPacket(24374, 0, 40, 0, 0);
-		}
+		if(obj.getVar().getBool(0) == false)
+			if(sq_GetCurrentFrameIndex(obj) >= 5 && obj.getZPos() <= 0)
+			{
+				obj.getVar().setBool(0, true);
+				obj.sq_StartWrite();
+				obj.sq_WriteDword(250);
+				obj.sq_WriteDword(7);
+				obj.sq_WriteDword(obj.sq_GetLevelData(253, 4, sq_GetSkillLevel(obj, 253)));
+				obj.sq_WriteDword(obj.sq_GetBonusRateWithPassive(253, -1, 3, 1.0));
+				obj.sq_SendCreatePassiveObjectPacket(24374, 0, 40, 0, 0);
+			}
 		local ObjectCount = obj.getMyPassiveObjectCount(24001);
 		if (ObjectCount > 0) {
 			for (local i = 0; i < ObjectCount; i++) {
