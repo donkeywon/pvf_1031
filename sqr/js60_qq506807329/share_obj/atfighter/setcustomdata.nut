@@ -15,6 +15,72 @@ function setCustomData_po_qq506807329new_atfighter_24375(H1Nsp49mua, YAvHbZRvEK5
  H1Nsp49mua.getVar("skill").push_vector(S7SfqbsNQZREQD);
  switch(S7SfqbsNQZREQD) 
  {
+    case 16:
+        local attackInfo = sq_GetCustomAttackInfo(obj, 0);
+        local attackBonusRate = receiveData.readDword();
+        sq_SetCurrentAttackBonusRate(attackInfo, attackBonusRate);
+        sq_SetCurrentAttackInfo(obj, attackInfo);
+        obj.setTimeEvent(0, 700, 2, false);
+        obj.setTimeEvent(1, 2900, 1, false);
+        obj.addSetStatePacket(11, null, STATE_PRIORITY_AUTO, false, "");
+        break;
+    case 117:
+        local attackBonusRate = receiveData.readDword();
+        local C7ui6tdHtec1MGdkL = receiveData.readBool();
+        obj.getVar().setBool(0, C7ui6tdHtec1MGdkL);
+        obj.getVar("bonus").clear_vector();
+        obj.getVar("bonus").push_vector(attackBonusRate);
+        obj.setTimeEvent(0, 300, 2, false);
+        obj.addSetStatePacket(10, null, STATE_PRIORITY_AUTO, false, "");
+        break;
+    case 67:
+        local attackInfo = sq_GetCustomAttackInfo(obj, 0);
+        local CEyePc9vDgKnu = receiveData.readDword();
+        local C4n6N6CZdSOx6gb = receiveData.readDword();
+        local CQkagaOjtcyUoReUW = receiveData.readDword();
+        local CL65qUzSAZUcxR = receiveData.readDword();
+        sq_moveWithParent(obj.getParent(), obj);
+        if (obj.isMyControlObject())
+        {
+            obj.getVar("bonus").clear_vector();
+            obj.getVar("bonus").push_vector(CEyePc9vDgKnu);
+            obj.getVar("bonus").push_vector(C4n6N6CZdSOx6gb);
+            obj.getVar("bonus").push_vector(CQkagaOjtcyUoReUW);
+            obj.getVar("bonus").push_vector(CL65qUzSAZUcxR);
+            obj.addSetStatePacket(10, null, STATE_PRIORITY_AUTO, false, "");
+        }
+        break;
+    case 90:
+        local animation = sq_CreateAnimation("", "passiveobject/chang_qing_skill/atfighter/animation/atspiralgaleforce/forcel_loop_09.ani");
+        obj.setCurrentAnimation(animation);
+        local attackInfo = sq_GetCustomAttackInfo(obj, 0);
+        local attackBonusRate = receiveData.readDword();
+        sq_SetCurrentAttackBonusRate(attackInfo, attackBonusRate);
+        sq_SetCurrentAttackInfo(obj, attackInfo);
+        break;
+    case 15:
+        local animation = sq_CreateAnimation("", "passiveobject/chang_qing_skill/atfighter/animation/atspiralgaleforce/spiralroarstun_02.ani");
+        obj.setCurrentAnimation(animation);
+        local attackInfo = sq_GetCustomAttackInfo(obj, 0);
+        local attackBonusRate = receiveData.readDword();
+        sq_SetCurrentAttackBonusRate(attackInfo, attackBonusRate);
+        sq_SetCurrentAttackInfo(obj, attackInfo);
+        break;
+    case 120:
+        local animation = sq_CreateAnimation("", "passiveobject/chang_qing_skill/atfighter/animation/atspiralgaleforce/Cast2_effect_01.ani");
+        obj.setCurrentAnimation(animation);
+        local attackInfo = sq_GetCustomAttackInfo(obj, 0);
+        local attackBonusRate = receiveData.readDword();
+        sq_SetCurrentAttackBonusRate(attackInfo, attackBonusRate);
+        sq_SetCurrentAttackInfo(obj, attackInfo);
+        local CozVc8NiDoZ59jP = "passiveobject/chang_qing_skill/atfighter/animation/atspiralgaleforce/draweffect_02.ani";
+        local C2dryLAVdRSMJhE6c = createAnimationPooledEx(obj, CozVc8NiDoZ59jP, 1, true, obj.getXPos(), obj.getYPos(), obj.getZPos(), false);
+        obj.getVar("Pooledobj").clear_obj_vector();
+        obj.getVar("Pooledobj").push_obj_vector(C2dryLAVdRSMJhE6c);
+        obj.setTimeEvent(0, 700, 2, false);
+        obj.setTimeEvent(1, 2000, 1, false);
+        obj.setTimeEvent(2, 1400, 1, false);
+        break;
  case 220: 
  local DCLAuL0zyiL1S1eIh = sq_CreateAnimation("", "passiveobject/script_sqr_nut_qq506807329/atfighter/animation/atspiralemperorslap/spiralemperorslap_boom_explosion.ani");
  H1Nsp49mua.setCurrentAnimation(DCLAuL0zyiL1S1eIh); 

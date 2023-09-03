@@ -134,6 +134,19 @@ function onTimeEvent_po_qq506807329new_atfighter_24375(iQ30byZ0uepv5rLGok7s, VLR
  iQ30byZ0uepv5rLGok7s.getVar("aniobj").setBool(0, true); 
  }
  break;
+ case 117: 
+ case 16: 
+ case 120: 
+ if(VLR_BxOVtU3cH_jI == 0)
+ {
+ local Path = "passiveobject/chang_qing_skill/atfighter/animation/atspiralgaleforce/forcem_end_15.ani";
+ createAnimationPooledEx(iQ30byZ0uepv5rLGok7s, Path,1, true,iQ30byZ0uepv5rLGok7s.getXPos(), iQ30byZ0uepv5rLGok7s.getYPos(), iQ30byZ0uepv5rLGok7s.getZPos(),false);
+ }
+ else if(VLR_BxOVtU3cH_jI == 1)
+ sq_SendDestroyPacketPassiveObject(iQ30byZ0uepv5rLGok7s); 
+ else if(VLR_BxOVtU3cH_jI == 2)
+ destroyObjectByVar(iQ30byZ0uepv5rLGok7s, "Pooledobj");
+ break;
  }
 } ;
 

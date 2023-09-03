@@ -4,6 +4,20 @@
 
 function sq_AddFunctionName(appendage)
 {
+	appendage.sq_AddFunctionName("proc", "proc_appendage_flamelegs_add")
 
 }
 
+
+
+function proc_appendage_flamelegs_add(appendage)
+{
+	if(!appendage) return;
+	local parentObj = appendage.getParent();
+	local sourceObj = appendage.getSource();
+				
+	if(!sourceObj || !parentObj) {
+		appendage.setValid(false);
+		return;
+	}
+}

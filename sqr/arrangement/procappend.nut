@@ -79,6 +79,8 @@ function procAppend_ATFighter(obj) {
 
 	Common_procAppend(obj);
 
+	procAppend_Test(obj); // 自动填充投掷
+
 	if ( sq_getGrowType(obj) == 3) {
 		//?�取?�前?�?�編??
 		local index = obj.getCurrentSkillIndex();

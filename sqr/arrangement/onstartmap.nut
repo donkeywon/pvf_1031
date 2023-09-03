@@ -47,6 +47,7 @@ function onStartMap_ATFighter(obj)
 {
 	if(!obj) return;
 	setBloodMonsterAppend(obj);
+	onStartMap_ATFighter_QC(obj);
 }
 
 

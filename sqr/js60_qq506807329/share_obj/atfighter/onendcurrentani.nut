@@ -11,6 +11,47 @@ function onEndCurrentAni_po_qq506807329new_atfighter_24375(dkVrZM7aZsEDVrpY5taBF
  local l2ptfUCns0I3g7IarGUYL = dkVrZM7aZsEDVrpY5taBFQ.getVar("skill").get_vector(0);
  switch(l2ptfUCns0I3g7IarGUYL)
  {
+    case 117:
+        if (obj.getState() == 10)
+            obj.addSetStatePacket(11, null, STATE_PRIORITY_AUTO, false, "");
+        break;
+    case 67:
+        if (obj.getState() == 10)
+            obj.addSetStatePacket(11, null, STATE_PRIORITY_AUTO, false, "");
+        else if (obj.getState() == 11)
+            obj.addSetStatePacket(12, null, STATE_PRIORITY_AUTO, false, "");
+        else if (obj.getState() == 12)
+        {
+            local pCount = obj.getVar("bonus").get_vector(3);
+            if (pCount > 0)
+            {
+                obj.getVar("bonus").set_vector(3, pCount - 1);
+                obj.addSetStatePacket(12, null, STATE_PRIORITY_AUTO, false, "");
+            }
+            else
+                obj.addSetStatePacket(13, null, STATE_PRIORITY_AUTO, false, "");
+        }
+        else if (obj.getState() == 13)
+        {
+            local Path = "passiveobject/chang_qing_skill/atfighter/animation/atspiralgaleforce/forcel_end_15.ani";
+            createAnimationPooledEx(obj, Path, 1, false, obj.getXPos(), obj.getYPos(), obj.getZPos(), false);
+            sq_SendDestroyPacketPassiveObject(obj);
+        }
+        break;
+    case 90:
+        sq_SendDestroyPacketPassiveObject(obj);
+        break;
+    case 15:
+        local Path = "passiveobject/chang_qing_skill/atfighter/animation/atspiralgaleforce/forcem_loop_12.ani";
+        createAnimationPooledEx(obj, Path, 1, false, obj.getXPos(), obj.getYPos(), obj.getZPos(), false);
+        sq_SendDestroyPacketPassiveObject(obj);
+        break;
+    case 16:
+        if (obj.getState() == 11)
+        {
+            obj.addSetStatePacket(12, null, STATE_PRIORITY_AUTO, false, "");
+        }
+        break;
  case 220: 
  if(dkVrZM7aZsEDVrpY5taBFQ.isMyControlObject())
  sq_SendDestroyPacketPassiveObject(dkVrZM7aZsEDVrpY5taBFQ); 

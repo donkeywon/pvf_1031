@@ -60,6 +60,69 @@ function getCurrentModuleDamageRate_ATFighter(obj) {
         rate = rate + getAttackBonusRate_benyuan(obj, skillLevel)
     }
 
+    //風雷嘯
+	if (sq_GetSkillLevel(obj, 237) > 0)
+	{
+		rate = rate * (100 + sq_GetLevelData(obj, 237, 8, obj.sq_GetSkillLevel(237)) / 10) / 100;
+	}
+	//傲天之怒
+	else if (sq_GetSkillLevel(obj, 253) > 0)
+	{
+		local baseRate = sq_GetLevelData(obj, 253, 0, sq_GetSkillLevel(obj, 253));
+		local championRate = sq_GetLevelData(obj, 253, 1, sq_GetSkillLevel(obj, 253));
+		local bossRate = sq_GetLevelData(obj, 253, 2, sq_GetSkillLevel(obj, 253));
+		if (WHOISNEXT == 0)
+			return (baseRate.tofloat() + 100.0) / 100.0;
+		if (WHOISNEXT == 1)
+			return (baseRate.tofloat() + championRate.tofloat() + 100.0) / 100.0;
+		if (WHOISNEXT == 2)
+			return (baseRate.tofloat() + bossRate.tofloat() + 100.0) / 100.0;
+	}
+	//詭詐之道
+	else if (sq_GetSkillLevel(obj, 252) > 0)
+	{
+		local addRate = 0;
+		local pSkillIndex = obj.getCurrentSkillIndex();
+		switch (pSkillIndex)
+		{
+		case 13:
+			addRate = sq_GetLevelData(obj, 252, 1, sq_GetSkillLevel(obj, 252));
+			break;
+		case 3:
+			addRate = sq_GetLevelData(obj, 252, 2, sq_GetSkillLevel(obj, 252));
+			break;
+		case 14:
+			addRate = sq_GetLevelData(obj, 252, 3, sq_GetSkillLevel(obj, 252));
+			break;
+		case 106:
+			addRate = sq_GetLevelData(obj, 252, 4, sq_GetSkillLevel(obj, 252));
+			break;
+		case 76:
+			addRate = sq_GetLevelData(obj, 252, 5, sq_GetSkillLevel(obj, 252));
+			break;
+		case 77:
+			addRate = sq_GetLevelData(obj, 252, 6, sq_GetSkillLevel(obj, 252));
+			break;
+		case 105:
+			addRate = sq_GetLevelData(obj, 252, 7, sq_GetSkillLevel(obj, 252));
+			break;
+		case 123:
+			addRate = sq_GetLevelData(obj, 252, 8, sq_GetSkillLevel(obj, 252));
+			break;
+		}
+		return (addRate.tofloat() + 100.0) / 100.0;
+	}
+	//烈火支配
+	else if (sq_GetSkillLevel(obj, 251) > 0)
+	{
+		local isAppend = CNSquirrelAppendage.sq_IsAppendAppendage(obj, "character/atfighter/appendage/ap_atfirepowerreleasebuff.nut");
+		if (isAppend)
+		{
+			local addRate = sq_GetLevelData(obj, 251, 0, sq_GetSkillLevel(obj, 251));
+			return (addRate.tofloat() + 100.0) / 100.0;
+		}
+	}
+
     return rate.tofloat() / 100.0;
 }
 

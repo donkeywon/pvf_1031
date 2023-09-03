@@ -9,8 +9,6 @@ sq_RunScript("js60_qq506807329/share_obj/atfighter/setstate.nut");
 sq_RunScript("js60_qq506807329/share_obj/atfighter/procappend.nut");
 sq_RunScript("js60_qq506807329/share_obj/atfighter/onendcurrentani.nut");
 sq_RunScript("js60_qq506807329/share_obj/atfighter/else.nut");
-
- 
  
  
 IRDSQRCharacter.pushScriptFiles("character/atfighter/atfighter_header.nut");  
@@ -18,8 +16,14 @@ IRDSQRCharacter.pushScriptFiles("character/atfighter/atfighter_common.nut");
 IRDSQRCharacter.pushScriptFiles("Character/atfighter/passive_skill_atfighter.nut"); 
 
  
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_AT_FIGHTER, "Character/atfighter/atfighter_buff.nut", "atfighter_Throw", 13, -1);
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_AT_FIGHTER, "Character/atfighter/atfighter_buff.nut", "LightningDragon", 56, 90);
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_AT_FIGHTER, "Character/atfighter/atfighter_buff.nut", "SpiralColumnEx", 70, 120);
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_AT_FIGHTER, "Character/atfighter/atfighter_buff.nut", "NenFlower", 45, 67);
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_AT_FIGHTER, "Character/atfighter/atfighter_buff.nut", "NenSpearEx", 66, 117);
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_AT_FIGHTER, "character/atfighter/nenmaster2nd/spiralgaleforce.nut", "SpiralGaleForce", 237, 237);
  
- 
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_AT_FIGHTER, "Character/atfighter/atfighter_buff.nut", "atfighter_buff", 17, -1);
 
  
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_AT_FIGHTER, "character/atfighter/spiralemperorslap/spiralemperorslap.nut", "atfighter_spiralemperorslap", 220, 220);
@@ -61,7 +65,7 @@ IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_AT_FIGHTER, "character/atfighter/fin
 
  
  
-IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_AT_FIGHTER, "Character/atfighter/atfighter_buff.nut", "atfighter_buff", 17, -1);
+//IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_AT_FIGHTER, "Character/atfighter/atfighter_buff.nut", "atfighter_buff", 17, -1);
  
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_AT_FIGHTER, "Character/atfighter/flamelegs/flamelegs.nut", "atfighter_flamelegs", 62, -1);
 

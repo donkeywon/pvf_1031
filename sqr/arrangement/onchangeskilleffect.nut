@@ -24,7 +24,7 @@ function onChangeSkillEffect_Fighter(obj, skillIndex, receiveData) {
 
     if (sq_getGrowType(obj) == 1)
 	{
-		if(skillIndex == 241 && reciveData.readDword() == 241)
+		if(skillIndex == 241 && reciveData.readDword() == 241 && obj.isMyControlObject())
         {
             sq_SendCreatePassiveObjectPacket(obj, 30517, 0, 0, 0, 0, obj.getDirection());
         }
@@ -34,6 +34,7 @@ function onChangeSkillEffect_Fighter(obj, skillIndex, receiveData) {
 function onChangeSkillEffect_ATFighter(obj, skillIndex, receiveData)
 {
  if (!obj) return;
+ onChangeSkillEffect_ATFighter_New(obj, skillIndex, reciveData);
   switch (skillIndex) {
       case 50:
           local vMANHUtMTDpA = receiveData.readWord();
