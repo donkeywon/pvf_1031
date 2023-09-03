@@ -24,6 +24,7 @@ function setState_Fighter(obj, state, datas, isResetTimer) {
 function setState_ATFighter(obj, state, datas, isResetTimer) {
 	if (!obj) return;
 	Common_setState(obj, state, datas, isResetTimer);
+	setState_SpiralInhale(obj, state, datas, isResetTimer);
 }
 
 function setState_Gunner(obj, state, datas, isResetTimer) {

@@ -13,6 +13,7 @@ function drawCustomUI_Swordman(obj) {
 function drawCustomUI_ATFighter(obj) {
     if (!obj) return;
     Common_drawCustomUI(obj);
+    drawCustomUI_SpiralInhale(obj);
 }
 
 
