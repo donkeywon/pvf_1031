@@ -58,7 +58,7 @@ function onSetState_swordman_rage(VB3s80J9Jljb3qxLq4, k6G7y12cNQ, _GaTARfk3rKy9o
 	case 5:
 		VB3s80J9Jljb3qxLq4.sq_SetCurrentAnimation(134);
 		VB3s80J9Jljb3qxLq4.sq_SetCurrentAttackInfo(89);
-		VB3s80J9Jljb3qxLq4.sq_SetCurrentAttackPower(VB3s80J9Jljb3qxLq4.sq_GetBonusRateWithPassive(232, 232, 2, 1.0));
+		VB3s80J9Jljb3qxLq4.sq_SetCurrentAttackPower(VB3s80J9Jljb3qxLq4.sq_GetPowerWithPassive(232, 232, 2, -1, 1.0));
 		break;
 	}
 	switch (JxLYHZLzJg) {
@@ -73,7 +73,7 @@ function onSetState_swordman_rage(VB3s80J9Jljb3qxLq4, k6G7y12cNQ, _GaTARfk3rKy9o
 			VB3s80J9Jljb3qxLq4.sq_StartWrite();
 			VB3s80J9Jljb3qxLq4.sq_WriteDword(232);
 			VB3s80J9Jljb3qxLq4.sq_WriteDword(JxLYHZLzJg);
-			VB3s80J9Jljb3qxLq4.sq_WriteDword(VB3s80J9Jljb3qxLq4.sq_GetBonusRateWithPassive(232, 232, 1, 1.0));
+			VB3s80J9Jljb3qxLq4.sq_WriteDword(VB3s80J9Jljb3qxLq4.sq_GetPowerWithPassive(232, 232, 1, -1, 1.0));
 			VB3s80J9Jljb3qxLq4.sq_WriteDword(
 			sq_GetUniformVelocity(
 			VB3s80J9Jljb3qxLq4.getVar().get_vector(2), VB3s80J9Jljb3qxLq4.getVar().get_vector(3), VB3s80J9Jljb3qxLq4.getVar().get_vector(0), VB3s80J9Jljb3qxLq4.getVar().get_vector(1)));
@@ -105,7 +105,7 @@ function onKeyFrameFlag_swordman_rage(c_vFwykB3ZWKJuHsr, cIml7jnrbdarQ8XTzHorH) 
 				c_vFwykB3ZWKJuHsr.sq_StartWrite();
 				c_vFwykB3ZWKJuHsr.sq_WriteDword(232);
 				c_vFwykB3ZWKJuHsr.sq_WriteDword(loivKWmHZdUGQPBBL5);
-				c_vFwykB3ZWKJuHsr.sq_WriteDword(c_vFwykB3ZWKJuHsr.sq_GetBonusRateWithPassive(232, 232, 0, 1.0));
+				c_vFwykB3ZWKJuHsr.sq_WriteDword(c_vFwykB3ZWKJuHsr.sq_GetPowerWithPassive(232, 232, 0, -1, 1.0));
 				c_vFwykB3ZWKJuHsr.sq_WriteDword(
 				sq_GetUniformVelocity(
 				c_vFwykB3ZWKJuHsr.getVar().get_vector(2), c_vFwykB3ZWKJuHsr.getVar().get_vector(3), c_vFwykB3ZWKJuHsr.getVar().get_vector(0), c_vFwykB3ZWKJuHsr.getVar().get_vector(1)));

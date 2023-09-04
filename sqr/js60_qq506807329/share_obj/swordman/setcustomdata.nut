@@ -101,7 +101,7 @@ function setCustomData_po_qq506807329new_swordman_24370(yUcAg6NoRn3cUn9sGur, MfZ
  setCurrentAnimationFromCutomIndex(yUcAg6NoRn3cUn9sGur, 5); 
  }
  local OUIPGgxWtgcQn1a = sq_GetCurrentAttackInfo(yUcAg6NoRn3cUn9sGur); 
- sq_SetCurrentAttackBonusRate(OUIPGgxWtgcQn1a, MfZ6yGLQF2_1qoLisvE.readDword()); 
+ sq_SetCurrentAttackPower(OUIPGgxWtgcQn1a, MfZ6yGLQF2_1qoLisvE.readDword()); 
  
  local s80Twh1qMM = sq_GetCurrentAnimation(yUcAg6NoRn3cUn9sGur); 
  s80Twh1qMM.setSpeedRate((MfZ6yGLQF2_1qoLisvE.readDword()).tofloat()); 
