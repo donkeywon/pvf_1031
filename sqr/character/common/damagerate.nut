@@ -155,6 +155,12 @@ function getCurrentModuleDamageRate_Gunner(obj) {
     if (skillLevel > 0) {
         rate = rate + getAttackBonusRate_benyuan(obj, skillLevel)
     }
+    
+    if(sq_GetSkillLevel(obj, 135) > 0)
+	{
+		local baseRate = sq_GetLevelData(obj, 135, 0, sq_GetSkillLevel(obj, 135));
+		rate = rate + ZHAN_DI_GONG_XUN_COUNT*baseRate;
+	}
 
     return rate.tofloat() / 100.0;
 }
