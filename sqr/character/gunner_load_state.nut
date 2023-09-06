@@ -12,7 +12,7 @@ sq_RunScript("js60_qq506807329/share_obj/gunner/onendcurrentani.nut");
 sq_RunScript("js60_qq506807329/share_obj/gunner/else.nut");
 
  
- 
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_GUNNER, "character/gunner/doublegunhawk/doublegunhawk.nut", "DoubleGunhawk", 41, -1);
  
 IRDSQRCharacter.pushScriptFiles("character/gunner/gunner_header.nut");  
 IRDSQRCharacter.pushScriptFiles("character/gunner/gunner_common.nut");  
