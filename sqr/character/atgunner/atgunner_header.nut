@@ -3,7 +3,7 @@
 //�@�̡G�C�t60 QQ506807329   ���{NUT�s�{�g�ޯ� ����о�1500�@��C�t�~1000�ǶO��¦��j���A�`�έק� �Ҧp�G����� �]�� ���ӫ~ �˳� �ƥ� ���� NPC NPK �Ǫ� �d�� act obj  UI�е{�������A���|�i�H���{�C
 
 
- 
+SKILL_G_ZHUZAI         <- 253 
  
  
 STATE_ATGUNNER_PLASMABOOST         <- 232    
@@ -27,6 +27,10 @@ STATE_ATGUNNER_MECABOLT          <- 249
 STATE_ATGUNNER_CROSSBOWMASTERY				<- 95
 
 
+SKILL_QIANG_REN_GAI_LIANG			<- 16
+SKILL_NITROMOTOR				<- 17
+SKILL_ZHI_KONG_ZHANG_WO				<- 19
+SKILL_ROSEDANCE  			    <- 250
  
  
 SKILL_ATGUNNER_PLASMABOOST         <- 232    
