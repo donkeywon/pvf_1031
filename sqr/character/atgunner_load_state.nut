@@ -92,6 +92,12 @@ IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_AT_GUNNER, "character/atgunner/aeria
 
 
 
-
+sq_RunScript("character/atgunner/nitromotor/nitromotor.nut");
+IRDSQRCharacter.pushPassiveObj("character/atgunner/po_atgunner_shared.nut", 24331);
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_AT_GUNNER, "character/atgunner/nitromotor/nitromotor.nut", "sky_crossshoot", STATE_SKY_CROSSSHOOT, -1);
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_AT_GUNNER, "character/atgunner/nitromotor/nitromotor.nut", "sky_chargebuster", STATE_SKY_CHARGEBUSTER, -1);
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_AT_GUNNER, "character/atgunner/nitromotor/nitromotor.nut", "sky_napalmbomb", STATE_SKY_NAPALMBOMB, -1);
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_AT_GUNNER, "character/atgunner/nitromotor/nitromotor.nut", "sky_nielsniping", STATE_SKY_NIELSNIPING, -1);
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_AT_GUNNER, "character/atgunner/nitromotor/nitromotor.nut", "sky_empstorm", STATE_SKY_EMPSTORM, -1);
 
  

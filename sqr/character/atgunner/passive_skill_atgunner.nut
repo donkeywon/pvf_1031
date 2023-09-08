@@ -63,6 +63,12 @@ function ProcPassiveSkill_ATGunner(obj, skill_index, skill_level) {
 			local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skill_index, false, "character/atgunner/appendage/ap_qiangrengailiang.nut", true);
 		}
 		break;
+	case SKILL_NITROMOTOR:
+			if(skill_level > 0)
+			{
+				local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skill_index, false, "character/atgunner/nitromotor/ap_nitromotor.nut", true);
+			}
+		break;
 	}
 	return true;
 };

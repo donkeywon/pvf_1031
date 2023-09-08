@@ -108,6 +108,8 @@ function procAppend_ATGunner(obj) {
 	if (!obj) return;
 
 	Common_procAppend(obj);
+
+	procAppend_NitroMotor(obj);
 }
 
 function procAppend_Mage(obj) {
