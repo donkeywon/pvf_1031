@@ -36,6 +36,42 @@ function onAttack_po_qq506807329new_mage_24372(MzBiGC58q1fxgN, vm7w6fF9332crYeb,
  MzBiGC58q1fxgN.getVar("aniobj").push_obj_vector(AxxtyZexhq6);
  }
  break;
+ case 55:
+ local CQReWq4SiAfvdXbDbR = MzBiGC58q1fxgN.getVar().get_vector(0);
+ local CQuc8sGvV8PjkU = MzBiGC58q1fxgN.getVar().get_vector(1);
+ local CQMfOCydlel6fVYH = MzBiGC58q1fxgN.getVar().get_vector(2);
+ local CQn18fcCGZJV6EWSSn = sq_GetCurrentAttackInfo(MzBiGC58q1fxgN);
+ sq_SetChangeStatusIntoAttackInfoWithEtc(CQn18fcCGZJV6EWSSn, 0, ACTIVESTATUS_STUN, CQReWq4SiAfvdXbDbR.tointeger(), CQuc8sGvV8PjkU, CQMfOCydlel6fVYH, 0, 0);
+ 
+ local CQG2In6Wd6UGRfr = "character/mage/element/ap_3.nut";
+ local CQhKlEaxeQNa7IeGX = 23;
+ local CQpILLU61JWr2n = "ap_3";
+ DecaseElePotential(MzBiGC58q1fxgN.getTopCharacter(),vm7w6fF9332crYeb,CQG2In6Wd6UGRfr,CQhKlEaxeQNa7IeGX,CQpILLU61JWr2n);
+ break;
+ case 59:
+ local CQReWq4SiAfvdXbDbR = MzBiGC58q1fxgN.getVar().get_vector(4);
+ local CQuc8sGvV8PjkU = MzBiGC58q1fxgN.getVar().get_vector(3);
+ local CQMfOCydlel6fVYH = MzBiGC58q1fxgN.getVar().get_vector(5);
+ local CQn18fcCGZJV6EWSSn = sq_GetCurrentAttackInfo(MzBiGC58q1fxgN);
+ sq_SetChangeStatusIntoAttackInfoWithEtc(CQn18fcCGZJV6EWSSn, 0, ACTIVESTATUS_FREEZE, CQReWq4SiAfvdXbDbR.tointeger(), CQuc8sGvV8PjkU, CQMfOCydlel6fVYH, 0, 0);
+ 
+ local CQG2In6Wd6UGRfr = "character/mage/element/ap_element.nut";
+ local CQhKlEaxeQNa7IeGX = 21;
+ local CQpILLU61JWr2n = "element";
+ DecaseElePotential(MzBiGC58q1fxgN.getTopCharacter(),vm7w6fF9332crYeb,CQG2In6Wd6UGRfr,CQhKlEaxeQNa7IeGX,CQpILLU61JWr2n);
+ break;
+ case 27:
+ local CQG2In6Wd6UGRfr = "character/mage/element/ap_element.nut";
+ local CQhKlEaxeQNa7IeGX = 20;
+ local CQpILLU61JWr2n = "element";
+ DecaseElePotential(MzBiGC58q1fxgN.getTopCharacter(),vm7w6fF9332crYeb,CQG2In6Wd6UGRfr,CQhKlEaxeQNa7IeGX,CQpILLU61JWr2n);
+ break;
+ case 58:
+ local CQG2In6Wd6UGRfr = "character/mage/element/ap_3.nut";
+ local CQhKlEaxeQNa7IeGX = 22;
+ local CQpILLU61JWr2n = "ap_3";
+ DecaseElePotential(MzBiGC58q1fxgN.getTopCharacter(),vm7w6fF9332crYeb,CQG2In6Wd6UGRfr,CQhKlEaxeQNa7IeGX,CQpILLU61JWr2n);
+ break;
  case 250: 
  if(st6Jrt6Bwp 
  || !vm7w6fF9332crYeb.isObjectType(OBJECTTYPE_ACTIVE) 
@@ -369,6 +405,68 @@ function onTimeEvent_po_qq506807329new_mage_24372(Wnb8lOEArZBMOf, T0m_mCv9RPiHgC
  break;
  }
  break;
+ case 58:
+ switch(T0m_mCv9RPiHgC)
+ {
+ case 0:
+ Wnb8lOEArZBMOf.resetHitObjectList();
+ 
+ local CQdT6nl9WDVGdDFy = Wnb8lOEArZBMOf.getVar().get_vector(4)/2;
+ local CQy7sELPLdrakwFwRn = Wnb8lOEArZBMOf.getVar().get_vector(5);
+ local CQNVTLprhW5rf1D = Wnb8lOEArZBMOf.getObjectManager();
+ for(local CQbDK8bzPPpb6WSWc=0; CQbDK8bzPPpb6WSWc<CQNVTLprhW5rf1D.getCollisionObjectNumber(); ++CQbDK8bzPPpb6WSWc)
+ {
+ local CQFomY9Z58Rj1h = CQNVTLprhW5rf1D.getCollisionObject(CQbDK8bzPPpb6WSWc);
+ local CQgq2iZsUeA67AAu = sq_GetDistanceObject(Wnb8lOEArZBMOf, CQFomY9Z58Rj1h, false);
+ if(CQFomY9Z58Rj1h && Wnb8lOEArZBMOf.isEnemy(CQFomY9Z58Rj1h) && CQgq2iZsUeA67AAu <= CQdT6nl9WDVGdDFy && CQFomY9Z58Rj1h.isObjectType(OBJECTTYPE_ACTIVE))
+ {
+  local CQmloJElVLxB2TP = "character/mage/element/ap_2.nut";
+  local CQJ825h4l5LGVNPpD = CNSquirrelAppendage.sq_IsAppendAppendage(CQFomY9Z58Rj1h, CQmloJElVLxB2TP);
+  if(!CQJ825h4l5LGVNPpD)
+  {
+  local CQkBixNJpQma3e = CNSquirrelAppendage.sq_AppendAppendage(CQFomY9Z58Rj1h, Wnb8lOEArZBMOf, -1, false, CQmloJElVLxB2TP, true);
+  if(CQkBixNJpQma3e)
+  {
+  CQkBixNJpQma3e.sq_SetValidTime(1080);
+  sq_MoveToAppendageForce(CQFomY9Z58Rj1h, Wnb8lOEArZBMOf, Wnb8lOEArZBMOf, 0, 1, CQFomY9Z58Rj1h.getZPos()-75, 1000, true, CQkBixNJpQma3e,true);
+  }
+  }
+
+ }
+ }
+ 
+ local CQaGRyPqdJMWB2Os = Wnb8lOEArZBMOf.getVar().get_vector(3);
+ local CQ5EDFwjehyyLtLofR = Wnb8lOEArZBMOf.getVar().get_vector(2)/CQaGRyPqdJMWB2Os;
+ if(DAZiL_aDcFoUuFX == CQ5EDFwjehyyLtLofR)
+ Wnb8lOEArZBMOf.addSetStatePacket(12, sq_GetGlobalIntVector(), STATE_PRIORITY_AUTO, false, "");
+ break;
+ case 1:
+ if(Wnb8lOEArZBMOf.isMyControlObject())
+ sq_SetMyShake(Wnb8lOEArZBMOf,8,180);
+ break;
+ }
+ break;
+ case 59:
+ switch(T0m_mCv9RPiHgC)
+ {
+ case 0:
+ local CQwwv3k12U8UNkK = [170,140,110,80,50,20,-10,-40,-70,-100,-130,-170];
+ local CQZxBT1ovGslZDKaw = [42,35,27,20,12,5,-2,-10,-17,-25,-32,-42];
+ local CQzdWrunORj9Gl = sq_getRandom(0, 11);
+ local CQOM8ScfhyFMXMHO = sq_getRandom(0, 11);
+ sq_BinaryStartWrite();
+ sq_BinaryWriteDword(59);
+ sq_BinaryWriteDword(2);
+ sq_SendCreatePassiveObjectPacketPos(Wnb8lOEArZBMOf,24372, 0,Wnb8lOEArZBMOf.getXPos() + CQwwv3k12U8UNkK[CQzdWrunORj9Gl], Wnb8lOEArZBMOf.getYPos() + CQZxBT1ovGslZDKaw[CQOM8ScfhyFMXMHO], 0);
+ break;
+ case 1:
+ Wnb8lOEArZBMOf.addSetStatePacket(12, sq_GetGlobalIntVector(), STATE_PRIORITY_AUTO, false, "");
+ break;
+ case 2:
+ Wnb8lOEArZBMOf.resetHitObjectList();
+ break;
+ }
+ break;
  case 242: 
  switch(T0m_mCv9RPiHgC)
  {
@@ -593,4 +691,62 @@ function onChangeSkillEffect_po_qq506807329new_mage_24372(tlLFKYlK4kkvaz3, Z3WbP
  if(!tlLFKYlK4kkvaz3) return;
 } ;
  
+function DecaseElePotential(CQzjgMrvpAscohe9TL,CQkxfhJrCPSQqa,CQjFJaz7uIePcOf,CQYctBR69GMqach,CQXOlEqZDIH2Vm)
+{
+ local CQxtLLga8ZbZK9YT = sq_GetSkillLevel(CQzjgMrvpAscohe9TL, 73);
+ if(CQxtLLga8ZbZK9YT < 1)
+ return;
+ local CQPbQ8NqETBABaYbjD = CQkxfhJrCPSQqa.getVar(CQXOlEqZDIH2Vm).getInt(0);
+ local CQ9h3YP4MEriLRc = sq_GetLevelData(CQzjgMrvpAscohe9TL,73, 0, CQxtLLga8ZbZK9YT)*(1 + CQPbQ8NqETBABaYbjD);
+ local CQt4pizJc35QFZxmv = sq_GetLevelData(CQzjgMrvpAscohe9TL,73, 2, CQxtLLga8ZbZK9YT);
+ if(!CNSquirrelAppendage.sq_IsAppendAppendage(CQkxfhJrCPSQqa, CQjFJaz7uIePcOf))
+ {
+ local CQBZ3J4mKjpxZU = CNSquirrelAppendage.sq_AppendAppendage(CQkxfhJrCPSQqa, CQzjgMrvpAscohe9TL, -1, false, CQjFJaz7uIePcOf, true);
+ CQBZ3J4mKjpxZU.getAppendageInfo().setValidTime(CQt4pizJc35QFZxmv);
+ CQkxfhJrCPSQqa.getVar(CQXOlEqZDIH2Vm).setInt(0, 0);
+ local CQvPp5GhgogfGVww = CNSquirrelAppendage.sq_GetAppendage(CQkxfhJrCPSQqa,CQjFJaz7uIePcOf);
+ if(CQvPp5GhgogfGVww)
+ {
+ local CQDygxy1PMS3PEwUSD = CQvPp5GhgogfGVww.sq_getChangeStatus(CQXOlEqZDIH2Vm);
+ if(!CQDygxy1PMS3PEwUSD)
+ CQDygxy1PMS3PEwUSD = CQvPp5GhgogfGVww.sq_AddChangeStatus(CQXOlEqZDIH2Vm,CQkxfhJrCPSQqa, CQzjgMrvpAscohe9TL, 0, CQYctBR69GMqach, false, -CQ9h3YP4MEriLRc );
+ else
+ {
+ CQDygxy1PMS3PEwUSD.clearParameter();
+ CQDygxy1PMS3PEwUSD.addParameter(CQYctBR69GMqach, false, -CQ9h3YP4MEriLRc.tofloat());
+ }
+ }
+ }
+ else
+ {
+ CQkxfhJrCPSQqa.getVar(CQXOlEqZDIH2Vm).setInt(0, CQPbQ8NqETBABaYbjD + 1);
+ local CQvPp5GhgogfGVww = CNSquirrelAppendage.sq_GetAppendage(CQkxfhJrCPSQqa,CQjFJaz7uIePcOf);
+ if(CQvPp5GhgogfGVww)
+ {
+ local CQDygxy1PMS3PEwUSD = CQvPp5GhgogfGVww.sq_getChangeStatus(CQXOlEqZDIH2Vm);
+ if(!CQDygxy1PMS3PEwUSD)
+ CQDygxy1PMS3PEwUSD = CQvPp5GhgogfGVww.sq_AddChangeStatus(CQXOlEqZDIH2Vm,CQkxfhJrCPSQqa, CQzjgMrvpAscohe9TL, 0, CQYctBR69GMqach, false, -CQ9h3YP4MEriLRc );
+ else
+ {
+ CQDygxy1PMS3PEwUSD.clearParameter();
+ CQDygxy1PMS3PEwUSD.addParameter(CQYctBR69GMqach, false, -CQ9h3YP4MEriLRc.tofloat());
+ }
+ }
+ }
+}
+
+
+function onAttackParent_appendage_mage_tar(appendage, realAttacker, damager, boundingBox, isStuck)
+{
+	if(!appendage) return;
+	
+	if(!isStuck
+		&& realAttacker.isObjectType(OBJECTTYPE_PASSIVE)
+		&& damager.isObjectType(OBJECTTYPE_ACTIVE)
+		&& realAttacker.getCollisionObjectIndex() == 23018)
+	{
+		sq_sendSetActiveStatusPacket(damager, realAttacker, ACTIVESTATUS_HOLD, 100.0, 120, false, 2000);
+		appendage.setValid(false);
+	}
+}
 

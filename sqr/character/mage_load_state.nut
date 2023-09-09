@@ -1,8 +1,4 @@
 
-//�Y�T�˽檯�A��nut�ޯର���w���ݡC�u�R���w�A�t�~�ݭn�ѥ[�̥i�H�pô��
-//�@�̡G�C�t60 QQ506807329   ���{NUT�s�{�g�ޯ� ����о�1500�@��C�t�~1000�ǶO��¦��j���A�`�έק� �Ҧp�G����� �]�� ���ӫ~ �˳� �ƥ� ���� NPC NPK �Ǫ� �d�� act obj  UI�е{�������A���|�i�H���{�C
-
-
  
 IRDSQRCharacter.pushPassiveObj("js60_qq506807329/share_obj/share_po_mage_24372.nut", 24372);
 sq_RunScript("js60_qq506807329/share_obj/mage/setcustomdata.nut");
@@ -11,7 +7,7 @@ sq_RunScript("js60_qq506807329/share_obj/mage/procappend.nut");
 sq_RunScript("js60_qq506807329/share_obj/mage/onendcurrentani.nut");
 sq_RunScript("js60_qq506807329/share_obj/mage/else.nut");
 
- 
+IRDSQRCharacter.pushState(3, "character/mage/mage_throw.nut", "Mage_Throw", 13, -1);
  
  
 IRDSQRCharacter.pushScriptFiles("character/mage/mage_header.nut");  

@@ -1,7 +1,7 @@
 #PVF_File
 
 [use animation]
-	`rapterlaserloop_04_newqq506807329.ani`
+	`rapterlaserloop_04.ani`
 	`04`
 
 [none effect add]

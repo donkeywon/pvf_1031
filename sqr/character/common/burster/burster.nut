@@ -1,7 +1,7 @@
 
 
 
-// ¹ö½ºÅÍ ½ºÅ³À» ¾µ ¼ö ÀÖ´Â ½ºÅ³ÀÎÁö Ã¼Å©ÇØº¾´Ï´Ù.
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å³ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½Å³ï¿½ï¿½ï¿½ï¿½ Ã¼Å©ï¿½Øºï¿½ï¿½Ï´ï¿½.
 function isEnableBursterSkill(chr, skillIndex)
 {
 	if (!chr)
@@ -16,7 +16,7 @@ function isEnableBursterSkill(chr, skillIndex)
 
 	for (local i = 0; i < size; i++)
 	{
-		// ±ÝÁöµÈ ½ºÅ³ÀÎµ¦½ºµéÀ» ¾ò¾î¿Â´Ù.
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å³ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â´ï¿½.
 		local disableSkillIndex = sq_GetIntData(chr, SKILL_BURSTER, i);
 
 		if (disableSkillIndex == skillIndex)
@@ -30,7 +30,7 @@ function isEnableBursterSkill(chr, skillIndex)
 }
 
 
-// °øÅë½ºÅ³ ¹ö½ºÅÍ¸ðµå¿¡¼­ µ¥¹ÌÁöÀ²À» Á¶Á¤ÇÕ´Ï´Ù. ¹ö½ºÅÍ¸ðµå È¤Àº ´Ù¸¥ ½ºÅ³¿¡¼­ µ¥¹ÌÁö·¹ÀÌÆ®¸¦ Á¶Á¤ÇÒ¶§ ÀÌ°÷¿¡¼­ Á¶Á¤À» ÇÕ´Ï´Ù.
+// ï¿½ï¿½ï¿½ë½ºÅ³ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½å¿¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ï¿½ È¤ï¿½ï¿½ ï¿½Ù¸ï¿½ ï¿½ï¿½Å³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ò¶ï¿½ ï¿½Ì°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Õ´Ï´ï¿½.
 function getCurrentModuleDamageRate(obj)
 {	
 	if (!obj)
@@ -45,11 +45,11 @@ function getCurrentModuleDamageRate(obj)
 		{
 			local skillIndex = obj.getCurrentSkillIndex();
 
-			// ¹ö½ºÅÍ¸ðµå¿¡ ÇØ´çÇÏ´Â °ø°ÝÀÌ¶ó¸é µ¥¹ÌÁöÀ²À» ³·Ãßµµ·Ï °ªÀ» ¾ò¾î¿É´Ï´Ù.
+			// ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½å¿¡ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì¶ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ßµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½É´Ï´ï¿½.
 			if (isEnableBursterSkill(obj, skillIndex))
 			{
 				local level = sq_GetSkillLevel(obj, SKILL_BURSTER);
-				// (4) µ¥¹ÌÁöÀ² (%) (100%°¡ ±âº»)
+				// (4) ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (%) (100%ï¿½ï¿½ ï¿½âº»)
 				local value = obj.sq_GetLevelData(SKILL_BURSTER, SKL_LVL_COLUMN_IDX_4, level);
 
 				rate = value.tofloat() / 100.0;
@@ -62,8 +62,8 @@ function getCurrentModuleDamageRate(obj)
 	return rate.tofloat();
 }
 
-// Ä³¸¯ÅÍ °øÅë ÄðÅ¸ÀÓ Á¶Àý (¹ö½ºÅÍ¸ðµå¿¡¼­ ÄðÅ¸ÀÓÀ» Á¶ÀýÇÕ´Ï´Ù.)
-function startSkillCoolTime(obj, skillIndex, skillLevel, currentCoolTime)
+// Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½å¿¡ï¿½ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.)
+/*function startSkillCoolTime(obj, skillIndex, skillLevel, currentCoolTime)
 {
 	if (!obj)
 		return -1;
@@ -72,20 +72,20 @@ function startSkillCoolTime(obj, skillIndex, skillLevel, currentCoolTime)
 	
 	if(appendage)
 	{
-		// ¹ö½ºÅÍ¸ðµå°¡ È°¼ºÈ­ »óÅÂÀÌ°í ÇØ´çµÇ´Â ½ºÅ³ÀÌ¶ó¸é ÄðÅ¸ÀÓÀÌ Á¶Àý µË´Ï´Ù.
+		// ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½å°¡ È°ï¿½ï¿½È­ ï¿½ï¿½ï¿½ï¿½ï¿½Ì°ï¿½ ï¿½Ø´ï¿½Ç´ï¿½ ï¿½ï¿½Å³ï¿½Ì¶ï¿½ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ë´Ï´ï¿½.
 		if (appendage.isValid() && isEnableBursterSkill(obj, skillIndex))
 		{
 			local level = sq_GetSkillLevel(obj, SKILL_BURSTER);
-			// (5) ±âº» ÃÖ¼Ò ÄðÅ¸ÀÓ (ms)
+			// (5) ï¿½âº» ï¿½Ö¼ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½ (ms)
 			local value = obj.sq_GetLevelData(SKILL_BURSTER, SKL_LVL_COLUMN_IDX_5, level);
 
-			return value; // ¹ö½ºÅÍ¸ðµå ÄðÅ¸ÀÓ
+			return value; // ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½
 		}
 	}
 
 	return -1;
 
-}
+}*/
 
 function checkExecutableSkill_Burster(obj)
 {
@@ -111,8 +111,8 @@ function checkCommandEnable_Burster(obj)
 	if (!obj)
 		return false;
 
-	// ÇöÀç Å¸¿ö´øÁ¯ÀÎÁö Ã¼Å©ÇÕ´Ï´Ù. (»ç¸ÁÀÇ Å¾, Àý¸ÁÀÇ Å¾)
-	// »çÅ¾, ÀýÅ¾¿¡¼­´Â ¹ö½ºÅÍ¸ðµå°¡ ¹ßµ¿µÇÁö ¾Ê½À´Ï´Ù.
+	// ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã¼Å©ï¿½Õ´Ï´ï¿½. (ï¿½ï¿½ï¿½ï¿½ï¿½ Å¾, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¾)
+	// ï¿½ï¿½Å¾, ï¿½ï¿½Å¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½å°¡ ï¿½ßµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê½ï¿½ï¿½Ï´ï¿½.
 	if (sq_IsTowerDungeon())
 	{
 		print(" here top dungeon");
@@ -123,7 +123,7 @@ function checkCommandEnable_Burster(obj)
 	
 	if(state == STATE_ATTACK)
 	{
-		// °áÅõÀå¿¡¼­´Â Æ¯Á¤½ºÅ³¸¸ Äµ½½ÀÌ °¡´ÉÇÕ´Ï´Ù. ÀÛ¾÷ÀÚ:Á¤Áø¼ö [2012.04.20]
+		// ï¿½ï¿½ï¿½ï¿½ï¿½å¿¡ï¿½ï¿½ï¿½ï¿½ Æ¯ï¿½ï¿½ï¿½ï¿½Å³ï¿½ï¿½ Äµï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½. ï¿½Û¾ï¿½ï¿½ï¿½:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ [2012.04.20]
 		return obj.sq_IsCommandEnable(SKILL_BURSTER);
 	}
 	
@@ -134,12 +134,12 @@ function checkCommandEnable_Burster(obj)
 
 function onEndState_Burster(obj, state)
 {
-	// ½ºÅ×ÀÌÆ® Á¾·á È¤Àº Ãë¼Ò µÇ¾ú´Ù¸é Ä³½ºÆÃ °ÔÀÌÁö ¾ø¾Ú
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ È¤ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ç¾ï¿½ï¿½Ù¸ï¿½ Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	sq_EndDrawCastGauge(obj);
 }
 
 
-// state¸¦ ¼¼ÆÃÇÏ°í Ã³À½À¸·Î µé¾î¿À°Ô µË´Ï´Ù. °¢Á¾ ¸®¼Ò½º¸¦ ¼¼ÆÃÇÕ´Ï´Ù. 
+// stateï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ë´Ï´ï¿½. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ò½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½. 
 function onSetState_Burster(obj, state, datas, isResetTimer)
 {	
 	if (!obj)
@@ -163,14 +163,14 @@ function onSetState_Burster(obj, state, datas, isResetTimer)
 
 	obj.sq_SetCurrentAttackInfo(CUSTOM_ATTACK_INFO_RESONANCE);
 
-	// ¼ö¼Ó¼º °­È­ ¹öÇÁ¸¦ °É¾îÁØ´Ù.
+	// ï¿½ï¿½ï¿½Ó¼ï¿½ ï¿½ï¿½È­ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½É¾ï¿½ï¿½Ø´ï¿½.
 	local skillLevel = sq_GetSkillLevel(obj, SKILL_BURSTER);
 
 	print(" Burster skillLevel:" + skillLevel);
 
-	// Ä³½ºÆÃ ¼Óµµ¸¦ µû¶ó°¡µµ·Ï ¼³Á¤
-	// Ä³½ºÆÃ ¼Óµµ°¡ º¯°æµÇ¸é, ¿¡´Ï¸ÞÀÌ¼Ç ¼Óµµµµ º¯°æ µË´Ï´Ù.
-	// Ä³½ºÆÃ °ÔÀÌÁöµµ Ç¥½Ã¸¦ ÇØÁÝ´Ï´Ù.
+	// Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½Óµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ó°¡µï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	// Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½Óµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ç¸ï¿½, ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½Ì¼ï¿½ ï¿½Óµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ë´Ï´ï¿½.
+	// Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ç¥ï¿½Ã¸ï¿½ ï¿½ï¿½ï¿½Ý´Ï´ï¿½.
 	local castTime = sq_GetCastTime(obj, SKILL_BURSTER, skillLevel);
 	print(" Burster castTime:" + castTime);
 	local animation = sq_GetCurrentAnimation(obj);
@@ -193,7 +193,7 @@ function onSetState_Burster(obj, state, datas, isResetTimer)
 		bodyBackEffObj.setCurrentDirection(obj.getDirection());
 		bodyBackEffObj.setCurrentPos(posX, posY - 1, 47);
 
-		// Ä³½ºÆÃ Å¸ÀÓ¿¡ µû¶ó¼­ È¿°úµµ ¸Â°Ô ´Ã·ÁÁÝ´Ï´Ù.
+		// Ä³ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½Ó¿ï¿½ ï¿½ï¿½ï¿½ï¿½ È¿ï¿½ï¿½ï¿½ï¿½ ï¿½Â°ï¿½ ï¿½Ã·ï¿½ï¿½Ý´Ï´ï¿½.
 		local effAniTime = sq_GetDelaySum(bodyBackEffAni);
 		local speedrate = effAniTime.tofloat() / castTime.tofloat();
 		local castSpeed = sq_GetCastSpeed(obj);
@@ -207,7 +207,7 @@ function onSetState_Burster(obj, state, datas, isResetTimer)
 
 		local bodyFrontEffAni = sq_CreateAnimation("","Character/Common/Animation/BusterMode/buster_start_front_cross.ani");
 
-		// Ä³½ºÆÃ Å¸ÀÓ¿¡ µû¶ó¼­ È¿°úµµ ¸Â°Ô ´Ã·ÁÁÝ´Ï´Ù.
+		// Ä³ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½Ó¿ï¿½ ï¿½ï¿½ï¿½ï¿½ È¿ï¿½ï¿½ï¿½ï¿½ ï¿½Â°ï¿½ ï¿½Ã·ï¿½ï¿½Ý´Ï´ï¿½.
 		local effFrontAniTime = sq_GetDelaySum(bodyFrontEffAni);
 		local sr = effFrontAniTime.tofloat() / castTime.tofloat();
 		//local castSpeed = sq_GetCastSpeed(obj);
@@ -222,7 +222,7 @@ function onSetState_Burster(obj, state, datas, isResetTimer)
 		bodyFrontEffObj.setCurrentPos(posX, posY + 2, 47);
 		obj.sq_AddObject(bodyFrontEffObj);
 
-		// È­¸éÈ¿°ú
+		// È­ï¿½ï¿½È¿ï¿½ï¿½
 		if (castTime > 100)
 		{
 			sq_flashScreen(obj, castTime - 100, 100, 0, 150, sq_RGB(0,0,0), GRAPHICEFFECT_NONE, ENUM_DRAWLAYER_BOTTOM);
@@ -262,12 +262,12 @@ function onEndCurrentAni_Burster(obj)
 	
 	local skill_level = sq_GetSkillLevel(obj, SKILL_BURSTER);
 
-	// Áßº¹µÇ¸é ¾ÈµÇ±â ¶§¹®¿¡.. ´Ù½Ã ¾ò´Â´Ù..
+	// ï¿½ßºï¿½ï¿½Ç¸ï¿½ ï¿½ÈµÇ±ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.. ï¿½Ù½ï¿½ ï¿½ï¿½Â´ï¿½..
 	local appendage = obj.GetSquirrelAppendage("Character/Common/Burster/ap_Common_Burster.nut");
 	
 	if(appendage)
 	{
-		// ÀÖ´Ù¸é ±âÁ¸ ¾îÆæµðÁö »èÁ¦
+		// ï¿½Ö´Ù¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		local spectrumAppendage = appendage.sq_GetOcularSpectrum("ocularSpectrum");
 		
 		if(spectrumAppendage)
@@ -280,27 +280,27 @@ function onEndCurrentAni_Burster(obj)
 	appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, SKILL_BURSTER, false,
 		 "Character/Common/Burster/ap_Common_Burster.nut", false);	
 
-	 // (0) Áö¼Ó½Ã°£
+	 // (0) ï¿½ï¿½ï¿½Ó½Ã°ï¿½
 	local change_time = sq_GetLevelData(obj, SKILL_BURSTER, 0, skill_level);		
 	
 	print(" burst mode valid time:" + change_time);
-	appendage.sq_SetValidTime(change_time); // ¾îÆæµðÁö Å¸ÀÓ ¼¼ÆÃ
+	appendage.sq_SetValidTime(change_time); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		
 	appendage.setAppendCauseSkill(BUFF_CAUSE_SKILL, sq_getJob(obj), SKILL_BURSTER, skill_level);
 
-	// ¿©±â¼­ append ÀÛ¾÷		
+	// ï¿½ï¿½ï¿½â¼­ append ï¿½Û¾ï¿½		
 	CNSquirrelAppendage.sq_Append(appendage, obj, obj);
 	
 	
-	// Áßº¹µÇ¸é ¾ÈµÇ±â ¶§¹®¿¡.. ´Ù½Ã ¾ò´Â´Ù..
+	// ï¿½ßºï¿½ï¿½Ç¸ï¿½ ï¿½ÈµÇ±ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.. ï¿½Ù½ï¿½ ï¿½ï¿½Â´ï¿½..
 	appendage = obj.GetSquirrelAppendage("Character/Common/Burster/ap_Common_Burster.nut");
 	
-	// ÀÌ¼Ó °¨¼Ò
+	// ï¿½Ì¼ï¿½ ï¿½ï¿½ï¿½ï¿½
 	if(appendage)
 	{
 		local change_appendage = appendage.sq_getChangeStatus("burstChangeStatus");
 		
-		local value = sq_GetLevelData(obj, SKILL_BURSTER, 1, skill_level); // (1) °ø°Ý ¼Óµµ(+)
+		local value = sq_GetLevelData(obj, SKILL_BURSTER, 1, skill_level); // (1) ï¿½ï¿½ï¿½ï¿½ ï¿½Óµï¿½(+)
 
 		if(!change_appendage)
 			change_appendage = appendage.sq_AddChangeStatusAppendageID(obj, obj, change_time, 
@@ -308,9 +308,9 @@ function onEndCurrentAni_Burster(obj)
 			false, value, APID_COMMON);
 		
 		if(change_appendage) {
-			local atk_spd = sq_GetLevelData(obj, SKILL_BURSTER, 1, skill_level); // (1) °ø°Ý ¼Óµµ(+)
-			local mov_spd = sq_GetLevelData(obj, SKILL_BURSTER, 2, skill_level); // (2) ÀÌµ¿ ¼Óµµ(+)
-			local cast_spd = sq_GetLevelData(obj, SKILL_BURSTER, 3, skill_level); // (3) Ä³½ºÆ® ¼Óµµ(+)
+			local atk_spd = sq_GetLevelData(obj, SKILL_BURSTER, 1, skill_level); // (1) ï¿½ï¿½ï¿½ï¿½ ï¿½Óµï¿½(+)
+			local mov_spd = sq_GetLevelData(obj, SKILL_BURSTER, 2, skill_level); // (2) ï¿½Ìµï¿½ ï¿½Óµï¿½(+)
+			local cast_spd = sq_GetLevelData(obj, SKILL_BURSTER, 3, skill_level); // (3) Ä³ï¿½ï¿½Æ® ï¿½Óµï¿½(+)
 			
 			change_appendage.clearParameter();
 			change_appendage.addParameter(CHANGE_STATUS_TYPE_ATTACK_SPEED, false, atk_spd.tofloat());

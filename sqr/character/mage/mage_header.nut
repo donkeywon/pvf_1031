@@ -31,6 +31,8 @@ STATE_MAGE_BUGFALL          <- 126
 
 
  
+SKILL_ZHAN_LING_QIAN_NENG			<- 32
+SKILL_homunculus					<- 33
  
 SKILL_MAGE_CHASERCLUSTER         <- 242    
 SKILL_MAGE_AVATARDANCE         <- 243    

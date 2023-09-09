@@ -54,7 +54,7 @@ function onSetState_mage_lollipopcrush(Nz7JFZkCizhIjjV6ehwkt6L, yaSdGRXPcsNho6s,
  break;
  }
  Nz7JFZkCizhIjjV6ehwkt6L.sq_SetCurrentAttackInfo(49); 
- Nz7JFZkCizhIjjV6ehwkt6L.sq_SetCurrentAttackBonusRate(Nz7JFZkCizhIjjV6ehwkt6L.sq_GetBonusRateWithPassive(133, 133, 0, 1.0)); 
+ Nz7JFZkCizhIjjV6ehwkt6L.sq_SetCurrentAttackPower(Nz7JFZkCizhIjjV6ehwkt6L.sq_GetBonusRateWithPassive(133, 133, 0, 1.0)); 
  local yHQfXP8eAAJheQ8Mvsh = sq_GetSkillLevel(Nz7JFZkCizhIjjV6ehwkt6L, 133); 
  Nz7JFZkCizhIjjV6ehwkt6L.getVar().clear_vector(); 
  local H80Jrjjg5R4OJkfOtPqE5OM = Nz7JFZkCizhIjjV6ehwkt6L.getVar(); 
