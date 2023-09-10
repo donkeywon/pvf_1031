@@ -21,6 +21,7 @@ IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_MAGE, "character/mage/goddessofwar/g
  
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_MAGE, "character/mage/chasercluster/chasercluster.nut", "mage_chasercluster", 242, 242);
 
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_MAGE, "character/mage/homunculus/homunculus.nut", "TransformFlapper", 36, -1);
  
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_MAGE, "character/mage/avatardance/avatardance.nut", "mage_avatardance", 243, 243);
 
@@ -127,3 +128,5 @@ IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_MAGE, "character/mage/TimerBomb/Time
 
  
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_MAGE, "character/mage/fluorecollider/fluorecollider.nut", "mage_MageFluorecollider", 42, -1);
+//IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_MAGE, "character/mage/fluorecollider/fluorecollider.nut", "FluoreCollider_Creat", 41, 105);
+//IRDSQRCharacter.pushPassiveObj("Character/Mage/po_mage.nut", 24339);

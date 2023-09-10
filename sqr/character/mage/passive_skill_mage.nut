@@ -17,6 +17,12 @@ function ProcPassiveSkill_Mage(obj, skill_index, skill_level) {
 			local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skill_index, false, "character/common/ap_benyuan.nut", true);
 		}
 		break;
+	case 33:
+		if(skill_level > 0)
+		{
+			local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skill_index, false, "character/mage/homunculus/ap_homunculus.nut", true);
+		}
+		break;
 	}
 };
 
@@ -29,8 +35,8 @@ function procSkill_Mage(obj) {
 	//proc_cirrusindark(obj);
 	//procSkill_ZHAN_LING_QIAN_NENG(obj);
 	element(obj);
-	//if (sq_GetSkillLevel(obj, 33) > 0) 
-		//getMonsterObject(obj);
+	if (sq_GetSkillLevel(obj, 33) > 0) 
+		getMonsterObject(obj);
 }
 
 function element(obj) {
@@ -77,10 +83,6 @@ function procSkill_ZHAN_LING_QIAN_NENG(obj) {
 
 }
 
-//Sq_GetPhysicalAttack()			//üòö¢ÕôÕá
-//Sq_GetMagicalAttack()			//üòö¢òªÕô
-//Sq_GetPhysicalDefense()		//üòö¢ô÷Õô
-//Sq_GetMagicalDefense()		//üòö¢ïñãê
 /*
 function Balance(obj)
 {

@@ -135,8 +135,8 @@ function mage_comminterrupt(appendage)
 		SetSkillState(obj,115,49,[1]);
 		EnableSoften(obj,133,133);//����������
 		SetSkillState(obj,133,133,[0]);
-		EnableSoften(obj,98,37);//������
-		SetSkillState(obj,98,37,[0,1,2]);
+		//EnableSoften(obj,98,37);//������
+		//SetSkillState(obj,98,37,[0,1,2]);
 		EnableSoften(obj,114,48);//��ԯ������
 		SetSkillState(obj,114,48,[0,1,2,3]);
 		break;

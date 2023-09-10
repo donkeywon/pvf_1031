@@ -121,7 +121,7 @@ function procAppend_Mage(obj) {
 	}
 
 	Common_procAppend(obj);
-	//enable_FanZhongLi(obj);
+	enable_FanZhongLi(obj);
 }
 
 function procAppend_ATMage(obj) {

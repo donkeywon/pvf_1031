@@ -89,49 +89,55 @@ function onSetState_mage_electricrabbit(lab0MC_tSCssQCuH, kwxmPtY6U0_9fv3qQ27t, 
  }
 } ;
 
-function onKeyFrameFlag_mage_electricrabbit(uwmt2Mm24n2Y2GEQKWfP5UTu, t8M_PXBs_53uwX)
+function onKeyFrameFlag_mage_electricrabbit(obj, flagIndex)
 {
- if(!uwmt2Mm24n2Y2GEQKWfP5UTu) return false;
- local VGjEotGOxKcDTOXznoXNH = uwmt2Mm24n2Y2GEQKWfP5UTu.getSkillSubState(); 
- switch(VGjEotGOxKcDTOXznoXNH)
- {
- case 0:
- switch(t8M_PXBs_53uwX)
- {
- case 1:
- if(uwmt2Mm24n2Y2GEQKWfP5UTu.sq_IsMyControlObject())
- {
- 
- local edT5p3PnaYUTHoy1N6 = uwmt2Mm24n2Y2GEQKWfP5UTu.getVar().get_vector(0);
- local vx9t8oT5EvNiNZ = sq_GetSkillLevel(uwmt2Mm24n2Y2GEQKWfP5UTu, 131); 
- local F4MrCSMVbJ50ZW = uwmt2Mm24n2Y2GEQKWfP5UTu.sq_GetBonusRateWithPassive(131, 131, edT5p3PnaYUTHoy1N6, 1.0); 
- local WsGUh6X8vFYN6 = uwmt2Mm24n2Y2GEQKWfP5UTu.sq_GetBonusRateWithPassive(131, 131, 6, 1.0); 
- local lfPAcnw3Sw = uwmt2Mm24n2Y2GEQKWfP5UTu.sq_GetLevelData(131, 7, vx9t8oT5EvNiNZ); 
- local nmEg2oSxh0RxiceKC = uwmt2Mm24n2Y2GEQKWfP5UTu.sq_GetLevelData(131, 8, vx9t8oT5EvNiNZ); 
- local vuGLXwldug22lWR9 = uwmt2Mm24n2Y2GEQKWfP5UTu.sq_GetLevelData(131, 9, vx9t8oT5EvNiNZ); 
- 
- uwmt2Mm24n2Y2GEQKWfP5UTu.sq_StartWrite();
- uwmt2Mm24n2Y2GEQKWfP5UTu.sq_WriteDword(131); 
- uwmt2Mm24n2Y2GEQKWfP5UTu.sq_WriteDword(edT5p3PnaYUTHoy1N6); 
- uwmt2Mm24n2Y2GEQKWfP5UTu.sq_WriteDword(F4MrCSMVbJ50ZW);
- uwmt2Mm24n2Y2GEQKWfP5UTu.sq_WriteDword(WsGUh6X8vFYN6);
- uwmt2Mm24n2Y2GEQKWfP5UTu.sq_WriteDword(lfPAcnw3Sw);
- uwmt2Mm24n2Y2GEQKWfP5UTu.sq_WriteDword(nmEg2oSxh0RxiceKC);
- uwmt2Mm24n2Y2GEQKWfP5UTu.sq_WriteDword(vuGLXwldug22lWR9);
- uwmt2Mm24n2Y2GEQKWfP5UTu.sq_SendCreatePassiveObjectPacket(24372, 0, 120, -1, 0);
- }
- break;
- case 2:
- 
- local edT5p3PnaYUTHoy1N6 = uwmt2Mm24n2Y2GEQKWfP5UTu.getVar().get_vector(0);
- if(edT5p3PnaYUTHoy1N6!=3) 
- uwmt2Mm24n2Y2GEQKWfP5UTu.sq_PlaySound("R_WZ_ELETRIC_RABBIT");
- break;
- }
- break;
- }
- return true;
-} ;
+    if (!obj)
+        return false;
+    local state = obj.getSkillSubState();
+    switch (state)
+    {
+    case 0:
+        switch (flagIndex)
+        {
+        case 1:
+            if (obj.sq_IsMyControlObject())
+            {
+
+                local edT5p3PnaYUTHoy1N6 = obj.getVar().get_vector(0);
+                local vx9t8oT5EvNiNZ = sq_GetSkillLevel(obj, 131);
+                local F4MrCSMVbJ50ZW = obj.sq_GetBonusRateWithPassive(131, 131, edT5p3PnaYUTHoy1N6, 1.0);
+                local WsGUh6X8vFYN6 = obj.sq_GetBonusRateWithPassive(131, 131, 6, 1.0);
+                local lfPAcnw3Sw = obj.sq_GetLevelData(131, 7, vx9t8oT5EvNiNZ);
+                local nmEg2oSxh0RxiceKC = obj.sq_GetLevelData(131, 8, vx9t8oT5EvNiNZ);
+                local vuGLXwldug22lWR9 = obj.sq_GetLevelData(131, 9, vx9t8oT5EvNiNZ);
+
+                obj.sq_StartWrite();
+                obj.sq_WriteDword(131);
+                obj.sq_WriteDword(edT5p3PnaYUTHoy1N6);
+                obj.sq_WriteDword(F4MrCSMVbJ50ZW);
+                obj.sq_WriteDword(WsGUh6X8vFYN6);
+                obj.sq_WriteDword(lfPAcnw3Sw);
+                obj.sq_WriteDword(nmEg2oSxh0RxiceKC);
+                obj.sq_WriteDword(vuGLXwldug22lWR9);
+                obj.sq_SendCreatePassiveObjectPacket(24372, 0, 120, -1, 0);
+            }
+            local skillLevel = sq_GetSkillLevel(obj, 33);
+            if (skillLevel > 0)
+            {
+                obj.sq_AddSetStatePacket(STATE_STAND, STATE_PRIORITY_USER, false);
+            }
+            break;
+        case 2:
+
+            local edT5p3PnaYUTHoy1N6 = obj.getVar().get_vector(0);
+            if (edT5p3PnaYUTHoy1N6 != 3)
+                obj.sq_PlaySound("R_WZ_ELETRIC_RABBIT");
+            break;
+        }
+        break;
+    }
+    return true;
+};
 
  
 function onEndCurrentAni_mage_electricrabbit(Isf0yQTA2j)
