@@ -184,6 +184,17 @@ function getCurrentModuleDamageRate_Mage(obj) {
         rate = rate + getAttackBonusRate_benyuan(obj, skillLevel)
     }
 
+    if (CNSquirrelAppendage.sq_IsAppendAppendage(obj, "character/mage/goddessofwar/ap_goddessofwar.nut"))
+    {
+        local addRate = sq_GetLevelData(obj, 167, 1, obj.sq_GetSkillLevel(167)) / 10;
+		rate = rate + addRate;
+    }
+	
+	if (sq_GetSkillLevel(obj, 70) > 0)
+    {
+        rate = rate + (sq_GetLevelData(obj, 70, 7, obj.sq_GetSkillLevel(70)) / 10);
+    }
+
     return rate.tofloat() / 100.0;
 }
 

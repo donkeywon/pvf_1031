@@ -17,7 +17,7 @@ IRDSQRCharacter.pushScriptFiles("character/mage/passive_skill_mage.nut");
 
  
  
- 
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_MAGE, "character/mage/goddessofwar/goddessofwar.nut", "goddessofwar", 167, 167);
  
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_MAGE, "character/mage/chasercluster/chasercluster.nut", "mage_chasercluster", 242, 242);
 
