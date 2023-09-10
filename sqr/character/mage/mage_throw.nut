@@ -113,7 +113,7 @@ function onCreateObject_Mage_Throw(CQl6cLdTJumZbrD, CQICC8X3vBMVw2VSb)
 			else if(CQA8sxeikIFhk1ZFX == 23025 && CQriCijm4P8ExkCG > 0 && !CQCmrJMguCsrUDXADu.isSealFunction() )
 			{
 				CQICC8X3vBMVw2VSb.sendDestroyPacket(true);
-				local CQbQJTYWM33a7TJ = sq_GetLevelData(CQl6cLdTJumZbrD,58, 4, sq_GetSkillLevel(CQl6cLdTJumZbrD, 58));
+				local CQbQJTYWM33a7TJ = sq_GetLevelData(CQl6cLdTJumZbrD,58, 5, sq_GetSkillLevel(CQl6cLdTJumZbrD, 58));
 				local CQFzmr79cjorgNHGm = sq_GetIntData(CQl6cLdTJumZbrD,58, 2);
 				local CQg92SKCKofv8e = sq_GetIntData(CQl6cLdTJumZbrD,58, 3);
 				local CQoNoMoOgMPj32GK = sq_GetLevelData(CQl6cLdTJumZbrD,58, 0, sq_GetSkillLevel(CQl6cLdTJumZbrD, 58));

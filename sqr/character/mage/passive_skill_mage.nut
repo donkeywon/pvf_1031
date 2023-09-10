@@ -34,8 +34,8 @@ function procSkill_Mage(obj) {
 }
 
 function element(obj) {
-	local skilllevel = sq_GetSkillLevel(obj, 22);
-	local skill = sq_GetSkill(obj, 22);
+	local skilllevel = sq_GetSkillLevel(obj, 70);
+	local skill = sq_GetSkill(obj, 70);
 	if (skilllevel > 0 && !skill.isSealFunction())
 		ThunderStrike(obj);
 	return;
