@@ -572,16 +572,21 @@ function setCustomData_po_qq506807329new_swordman_24370(obj, receiveData) {
 		}
 		break;
 	case 47:
-		local Ai_AN40nj4 = receiveData.readBool();
-		local power = receiveData.readDword();
-		local attackinfo = 43;
-		local ani = 64 + power;
-		local attackInfo = sq_GetCustomAttackInfo(obj, attackinfo);
-		sq_SetCurrentAttackBonusRate(attackInfo, receiveData.readDword());
-		sq_SetCurrentAttackInfo(obj, attackInfo);
-		obj.getVar().clear_vector();
-		obj.getVar().push_vector(ani);
-		obj.setTimeEvent(0, 200, 1, false);
+		local isLight = receiveData.readBool(); 
+		local power = receiveData.readDword(); 
+		local attackinfo = 42; 
+		local ani = 61 + power; 
+		if(isLight == true) 
+		{
+		attackinfo = 43; 
+		ani = 64 + power; 
+		}
+		local attackInfo = sq_GetCustomAttackInfo(obj, attackinfo); 
+		sq_SetCurrentAttackBonusRate(attackInfo, receiveData.readDword()); 
+		sq_SetCurrentAttackInfo(obj, attackInfo); 
+		obj.getVar().clear_vector(); 
+		obj.getVar().push_vector(ani); 
+		obj.setTimeEvent(0, 50, 1, false); 
 		break;
 	case 247:
 		obj.getVar().clear_vector();

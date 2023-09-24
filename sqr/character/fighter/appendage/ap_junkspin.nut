@@ -10,7 +10,9 @@ function proc_appendage_junkspin(appendage)
 		return;		
 	}
     local obj = sq_GetCNRDObjectToSQRCharacter(appendage.getParent());
-    //üòÔğñ¦øöÕÎãùúŞì¹ÔÑ
+    if (!obj.isMyControlObject()) {
+        return;
+    }
     local x = obj.getXPos();
     local x1 = x;
     local y = obj.getYPos();
@@ -30,7 +32,7 @@ function proc_appendage_junkspin(appendage)
     if(sq_IsKeyDown(OPTION_HOTKEY_MOVE_DOWN, ENUM_SUBKEY_TYPE_ALL)) {
         y1 = y1 + ySpeed;
     }
-    //ìÑÚªĞÆËàñ¦øöì¹ÔÑ
+    
     sq_MoveToNearMovablePos(obj, x1, y1, z, x, y, z, 1, 1, 1);
 	return;
 } 
