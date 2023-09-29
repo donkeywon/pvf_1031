@@ -157,7 +157,7 @@ function fighter_comminterrupt(appendage)
 
 		case 4:
 		//EnableSoften(obj,49,22);//?��
-		SetSkillState(obj,49,22,[49]);
+		//SetSkillState(obj,49,22,[49]);
 		EnableSoften(obj,81,52);//���
 		SetSkillState(obj,81,52,[]);
 		EnableSoften(obj,54,33);//�������

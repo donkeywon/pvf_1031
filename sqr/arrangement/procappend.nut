@@ -62,7 +62,7 @@ function procAppend_Fighter(obj) {
 		}
 
 		//街頭風暴移動
-		if (index == 77) {
+		/*if (index == 77) {
 			if (!CNSquirrelAppendage.sq_IsAppendAppendage(obj, "character/fighter/appendage/ap_junkspin.nut")) {
 				CNSquirrelAppendage.sq_AppendAppendage(obj, obj, index, false, "character/fighter/appendage/ap_junkspin.nut", true);
 			}
@@ -70,7 +70,7 @@ function procAppend_Fighter(obj) {
 			if (CNSquirrelAppendage.sq_IsAppendAppendage(obj, "character/fighter/appendage/ap_junkspin.nut")) {
 				CNSquirrelAppendage.sq_RemoveAppendage(obj, "character/fighter/appendage/ap_junkspin.nut");
 			}
-		}
+		}*/
 	}
 }
 
@@ -86,7 +86,7 @@ function procAppend_ATFighter(obj) {
 		local index = obj.getCurrentSkillIndex();
 
 		//血?�風?�移??
-		if (index == 77) {
+		/*if (index == 77) {
 			if (!CNSquirrelAppendage.sq_IsAppendAppendage(obj, "character/fighter/appendage/ap_junkspin.nut")) {
 				CNSquirrelAppendage.sq_AppendAppendage(obj, obj, index, false, "character/fighter/appendage/ap_junkspin.nut", true);
 			}
@@ -94,7 +94,7 @@ function procAppend_ATFighter(obj) {
 			if (CNSquirrelAppendage.sq_IsAppendAppendage(obj, "character/fighter/appendage/ap_junkspin.nut")) {
 				CNSquirrelAppendage.sq_RemoveAppendage(obj, "character/fighter/appendage/ap_junkspin.nut");
 			}
-		}
+		}*/
 	}
 }
 
