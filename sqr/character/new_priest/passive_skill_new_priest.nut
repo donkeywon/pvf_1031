@@ -17,5 +17,17 @@ case SKILL_BENYUAN:
 	}
 	break;
  }
+ case SKILL_SHI_SHEN_ZHI_LI:
+	if(skill_level > 0)
+	{
+		local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skill_index, false, "character/priest/appendage/ap_shishenzhili.nut", true);
+	}
+	break;
+case SKILL_ZHENG_YI_QIAN_NENG:
+	if(skill_level > 0)
+	{
+		local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skill_index, false, "character/priest/appendage/ap_zhengyichengjie.nut", true);
+	}
+	break;
  return true;
 };

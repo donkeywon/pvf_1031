@@ -2,6 +2,9 @@
 //�Y�T�˽檯�A��nut�ޯର���w���ݡC�u�R���w�A�t�~�ݭn�ѥ[�̥i�H�pô��
 //�@�̡G�C�t60 QQ506807329   ���{NUT�s�{�g�ޯ� ����о�1500�@��C�t�~1000�ǶO��¦��j���A�`�έק� �Ҧp�G����� �]�� ���ӫ~ �˳� �ƥ� ���� NPC NPK �Ǫ� �d�� act obj  UI�е{�������A���|�i�H���{�C
 
+SKILL_SHI_SHEN_ZHI_LI				<- 9
+SKILL_ZHENG_YI_QIAN_NENG			<- 12
+
 SKILL_GATLING_PUNCH				<- 170
 STATE_GATLING_PUNCH				<- 170
 
