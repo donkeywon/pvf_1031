@@ -83,6 +83,6 @@ IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_FIGHTER, "character/fighter/SuplexCy
  
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_FIGHTER, "character/fighter/WildCannonSpike/WildCannonSpike.nut", "FighterWildCannonSpike", 58, -1);
 
-CNAvenger.pushPassiveObj("character/fighter/passiveobject/po_illusionbomb.nut", 24150);
+//CNAvenger.pushPassiveObj("character/fighter/passiveobject/po_illusionbomb.nut", 24150);
 
 sq_RunScript("character/fighter/nencharge/nencharge.nut");
