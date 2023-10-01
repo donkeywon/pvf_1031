@@ -1,24 +1,26 @@
 
-function setEnableCancelSkill_Fighter(Eu2sIHKskIpQpfSgd, a2RdJFMnQsYHvMbnHt) {
-	if (!Eu2sIHKskIpQpfSgd) return false;
+function setEnableCancelSkill_Fighter(obj, isEnable) {
+	if (!obj) return false;
 
-	if (!Eu2sIHKskIpQpfSgd.isMyControlObject()) return false;
-	if (!a2RdJFMnQsYHvMbnHt) return true;
-	Eu2sIHKskIpQpfSgd.setSkillCommandEnable(225, a2RdJFMnQsYHvMbnHt);
-	Eu2sIHKskIpQpfSgd.setSkillCommandEnable(226, a2RdJFMnQsYHvMbnHt);
-	Eu2sIHKskIpQpfSgd.setSkillCommandEnable(227, a2RdJFMnQsYHvMbnHt);
-	Eu2sIHKskIpQpfSgd.setSkillCommandEnable(228, a2RdJFMnQsYHvMbnHt);
-	Eu2sIHKskIpQpfSgd.setSkillCommandEnable(229, a2RdJFMnQsYHvMbnHt);
-	Eu2sIHKskIpQpfSgd.setSkillCommandEnable(230, a2RdJFMnQsYHvMbnHt);
-	Eu2sIHKskIpQpfSgd.setSkillCommandEnable(231, a2RdJFMnQsYHvMbnHt);
-	Eu2sIHKskIpQpfSgd.setSkillCommandEnable(232, a2RdJFMnQsYHvMbnHt);
-	Eu2sIHKskIpQpfSgd.setSkillCommandEnable(233, a2RdJFMnQsYHvMbnHt);
-	Eu2sIHKskIpQpfSgd.setSkillCommandEnable(234, a2RdJFMnQsYHvMbnHt);
-	if (CNSquirrelAppendage.sq_IsAppendAppendage(Eu2sIHKskIpQpfSgd, "character/fighter/poisonsnake/ap_poisonsnake.nut") == false) Eu2sIHKskIpQpfSgd.setSkillCommandEnable(235, a2RdJFMnQsYHvMbnHt);
-	if (CNSquirrelAppendage.sq_IsAppendAppendage(Eu2sIHKskIpQpfSgd, "character/fighter/poisonsnake/ap_poisonsnake.nut") == true) Eu2sIHKskIpQpfSgd.setSkillCommandEnable(236, a2RdJFMnQsYHvMbnHt);
-	Eu2sIHKskIpQpfSgd.setSkillCommandEnable(237, a2RdJFMnQsYHvMbnHt);
-	Eu2sIHKskIpQpfSgd.setSkillCommandEnable(238, a2RdJFMnQsYHvMbnHt);
-	Eu2sIHKskIpQpfSgd.setSkillCommandEnable(239, a2RdJFMnQsYHvMbnHt);
+	if (!obj.isMyControlObject()) return false;
+	if (!isEnable) return true;
+
+	obj.setSkillCommandEnable(81, isEnable);
+	obj.setSkillCommandEnable(225, isEnable);
+	obj.setSkillCommandEnable(226, isEnable);
+	obj.setSkillCommandEnable(227, isEnable);
+	obj.setSkillCommandEnable(228, isEnable);
+	obj.setSkillCommandEnable(229, isEnable);
+	obj.setSkillCommandEnable(230, isEnable);
+	obj.setSkillCommandEnable(231, isEnable);
+	obj.setSkillCommandEnable(232, isEnable);
+	obj.setSkillCommandEnable(233, isEnable);
+	obj.setSkillCommandEnable(234, isEnable);
+	if (CNSquirrelAppendage.sq_IsAppendAppendage(obj, "character/fighter/poisonsnake/ap_poisonsnake.nut") == false) obj.setSkillCommandEnable(235, isEnable);
+	if (CNSquirrelAppendage.sq_IsAppendAppendage(obj, "character/fighter/poisonsnake/ap_poisonsnake.nut") == true) obj.setSkillCommandEnable(236, isEnable);
+	obj.setSkillCommandEnable(237, isEnable);
+	obj.setSkillCommandEnable(238, isEnable);
+	obj.setSkillCommandEnable(239, isEnable);
 	return true;
 };
 

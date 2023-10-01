@@ -4,6 +4,7 @@ function setEnableCancelSkill_Priest(obj, isEnable) {
 	if (!isEnable) return true;
 
 	obj.setSkillCommandEnable(64, isEnable);
+	obj.setSkillCommandEnable(76, isEnable);
 	obj.setSkillCommandEnable(237, isEnable);
 	obj.setSkillCommandEnable(238, isEnable);
 	obj.setSkillCommandEnable(239, isEnable);
