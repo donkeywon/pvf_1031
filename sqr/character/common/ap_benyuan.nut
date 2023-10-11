@@ -22,62 +22,62 @@ function proc_appendage_benyuan(appendage)
 	local skill_level = sqrChr.sq_GetSkillLevel(SKILL_BENYUAN);
 	local skill_index = SKILL_BENYUAN;
 
-	local PHYSICAL_ATTACK_PERCENT = sqrChr.sq_GetLevelData(skill_index, 51, skill_level);//ÕôÕá%
-	local MAGICAL_ATTACK_PERCENT = sqrChr.sq_GetLevelData(skill_index, 52, skill_level);//òªÕô%
-	local MAGICAL_DEFENSE_PERCENT = sqrChr.sq_GetLevelData(skill_index, 53, skill_level);//ïñãê%
-	local PHYSICAL_DEFENSE_PERCENT = sqrChr.sq_GetLevelData(skill_index, 54, skill_level);//ô÷Õô%
-	local PHYSICAL_ATTACK = sqrChr.sq_GetLevelData(skill_index, 71, skill_level);//ÕôÕá
-	local MAGICAL_ATTACK = sqrChr.sq_GetLevelData(skill_index, 72, skill_level);//òªÕô
-	local MAGICAL_DEFENSE = sqrChr.sq_GetLevelData(skill_index, 73, skill_level);//ïñãê
-	local PHYSICAL_DEFENSE = sqrChr.sq_GetLevelData(skill_index, 74, skill_level);//ô÷Õô
+	local PHYSICAL_ATTACK_PERCENT = sqrChr.sq_GetLevelData(skill_index, 51, skill_level);//ï¿½ï¿½ï¿½ï¿½%
+	local MAGICAL_ATTACK_PERCENT = sqrChr.sq_GetLevelData(skill_index, 52, skill_level);//ï¿½ï¿½ï¿½%
+	local MAGICAL_DEFENSE_PERCENT = sqrChr.sq_GetLevelData(skill_index, 53, skill_level);//ï¿½ï¿½ï¿½ï¿½%
+	local PHYSICAL_DEFENSE_PERCENT = sqrChr.sq_GetLevelData(skill_index, 54, skill_level);//ï¿½ï¿½ï¿½ï¿½%
+	local PHYSICAL_ATTACK = sqrChr.sq_GetLevelData(skill_index, 71, skill_level);//ï¿½ï¿½ï¿½ï¿½
+	local MAGICAL_ATTACK = sqrChr.sq_GetLevelData(skill_index, 72, skill_level);//ï¿½ï¿½ï¿½
+	local MAGICAL_DEFENSE = sqrChr.sq_GetLevelData(skill_index, 73, skill_level);//ï¿½ï¿½ï¿½ï¿½
+	local PHYSICAL_DEFENSE = sqrChr.sq_GetLevelData(skill_index, 74, skill_level);//ï¿½ï¿½ï¿½ï¿½
 
-	local ADDITIONAL_MAGICAL_GENUINE_ATTACK_PERCENT = sqrChr.sq_GetLevelData(skill_index, 55, skill_level);//Ô¼Ø¡Úª×âÍôÌªÕô%
-	local ADDITIONAL_PHYSICAL_GENUINE_ATTACK_PERCENT = sqrChr.sq_GetLevelData(skill_index, 56, skill_level);//Ô¼Ø¡ØªÛöÍôÌªÕô%
-	local ADDITIONAL_MAGICAL_GENUINE_ATTACK = sqrChr.sq_GetLevelData(skill_index, 75, skill_level);//Ô¼Ø¡Úª×âÍôÌªÕô
-	local ADDITIONAL_PHYSICAL_GENUINE_ATTACK = sqrChr.sq_GetLevelData(skill_index, 76, skill_level);//Ô¼Ø¡ØªÛöÍôÌªÕô
+	local ADDITIONAL_MAGICAL_GENUINE_ATTACK_PERCENT = sqrChr.sq_GetLevelData(skill_index, 55, skill_level);//Ô¼Ø¡Úªï¿½ï¿½ï¿½ï¿½Ìªï¿½ï¿½%
+	local ADDITIONAL_PHYSICAL_GENUINE_ATTACK_PERCENT = sqrChr.sq_GetLevelData(skill_index, 56, skill_level);//Ô¼Ø¡Øªï¿½ï¿½ï¿½ï¿½Ìªï¿½ï¿½%
+	local ADDITIONAL_MAGICAL_GENUINE_ATTACK = sqrChr.sq_GetLevelData(skill_index, 75, skill_level);//Ô¼Ø¡Úªï¿½ï¿½ï¿½ï¿½Ìªï¿½ï¿½
+	local ADDITIONAL_PHYSICAL_GENUINE_ATTACK = sqrChr.sq_GetLevelData(skill_index, 76, skill_level);//Ô¼Ø¡Øªï¿½ï¿½ï¿½ï¿½Ìªï¿½ï¿½
 
-	local PHYSICAL_ATTACK_BONUS = sqrChr.sq_GetLevelData(skill_index, 57, skill_level);//Úª×âÍôÌªÕô%
-	local MAGICAL_ATTACK_BONUS = sqrChr.sq_GetLevelData(skill_index, 58, skill_level);//ØªÛöÍôÌªÕô%
-	local COOLTIME_DECLINE = sqrChr.sq_GetLevelData(skill_index, 59, skill_level);//ÕÒ?ãÁÊà
-	COOLTIME_DECLINE = COOLTIME_DECLINE * -1; //1£º100ÕÒ?ÜÍïá0.1£»
-	local EQUIPMENT_PHYSICAL_ATTACK = sqrChr.sq_GetLevelData(skill_index, 60, skill_level);//Úª×âÍôÌªÕô
-	local EQUIPMENT_MAGICAL_ATTACK = sqrChr.sq_GetLevelData(skill_index, 61, skill_level);//ØªÛöÍôÌªÕô
+	local PHYSICAL_ATTACK_BONUS = sqrChr.sq_GetLevelData(skill_index, 57, skill_level);//Úªï¿½ï¿½ï¿½ï¿½Ìªï¿½ï¿½%
+	local MAGICAL_ATTACK_BONUS = sqrChr.sq_GetLevelData(skill_index, 58, skill_level);//Øªï¿½ï¿½ï¿½ï¿½Ìªï¿½ï¿½%
+	local COOLTIME_DECLINE = sqrChr.sq_GetLevelData(skill_index, 59, skill_level);//ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½
+	COOLTIME_DECLINE = COOLTIME_DECLINE * -1; //1ï¿½ï¿½100ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½0.1ï¿½ï¿½
+	local EQUIPMENT_PHYSICAL_ATTACK = sqrChr.sq_GetLevelData(skill_index, 60, skill_level);//Úªï¿½ï¿½ï¿½ï¿½Ìªï¿½ï¿½
+	local EQUIPMENT_MAGICAL_ATTACK = sqrChr.sq_GetLevelData(skill_index, 61, skill_level);//Øªï¿½ï¿½ï¿½ï¿½Ìªï¿½ï¿½
 
-	local EQUIPMENT_PHYSICAL_DEFENSE_PERCENT = sqrChr.sq_GetLevelData(skill_index, 81, skill_level);//Úª×âÛÁåÙÕô%
-	local EQUIPMENT_MAGICAL_DEFENSE_PERCENT = sqrChr.sq_GetLevelData(skill_index, 82, skill_level);//ØªÛöÛÁåÙÕô%
-	local EQUIPMENT_PHYSICAL_DEFENSE = sqrChr.sq_GetLevelData(skill_index, 83, skill_level);//Úª×âÛÁåÙÕô
-	local EQUIPMENT_MAGICAL_DEFENSE = sqrChr.sq_GetLevelData(skill_index, 84, skill_level);//ØªÛöÛÁåÙÕô
+	local EQUIPMENT_PHYSICAL_DEFENSE_PERCENT = sqrChr.sq_GetLevelData(skill_index, 81, skill_level);//Úªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½%
+	local EQUIPMENT_MAGICAL_DEFENSE_PERCENT = sqrChr.sq_GetLevelData(skill_index, 82, skill_level);//Øªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½%
+	local EQUIPMENT_PHYSICAL_DEFENSE = sqrChr.sq_GetLevelData(skill_index, 83, skill_level);//Úªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	local EQUIPMENT_MAGICAL_DEFENSE = sqrChr.sq_GetLevelData(skill_index, 84, skill_level);//Øªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-	local PHYSICAL_CRITICAL_HIT_RATE = sqrChr.sq_GetLevelData(skill_index, 10, skill_level);//Úª×âøìÌª
-	local MAGICAL_CRITICAL_HIT_RATE = sqrChr.sq_GetLevelData(skill_index, 11, skill_level);//ØªÛöøìÌª
+	local PHYSICAL_CRITICAL_HIT_RATE = sqrChr.sq_GetLevelData(skill_index, 10, skill_level);//Úªï¿½ï¿½ï¿½ï¿½Ìª
+	local MAGICAL_CRITICAL_HIT_RATE = sqrChr.sq_GetLevelData(skill_index, 11, skill_level);//Øªï¿½ï¿½ï¿½ï¿½Ìª
 
-	local ATTACK_SPEED = sqrChr.sq_GetLevelData(skill_index, 12, skill_level);// ÍôáÜ
-	local CAST_SPEED = sqrChr.sq_GetLevelData(skill_index, 13, skill_level);// ã¿Û¯áÜÓø
-	local MOVE_SPEED = sqrChr.sq_GetLevelData(skill_index, 14, skill_level);//ì¹áÜ
+	local ATTACK_SPEED = sqrChr.sq_GetLevelData(skill_index, 12, skill_level);// ï¿½ï¿½ï¿½ï¿½
+	local CAST_SPEED = sqrChr.sq_GetLevelData(skill_index, 13, skill_level);// ï¿½Û¯ï¿½ï¿½ï¿½ï¿½
+	local MOVE_SPEED = sqrChr.sq_GetLevelData(skill_index, 14, skill_level);//ï¿½ï¿½ï¿½
 
-	local ELEMENT_ATTACK_FIRE_PERCENT = sqrChr.sq_GetLevelData(skill_index, 62, skill_level);//ûý%
+	local ELEMENT_ATTACK_FIRE_PERCENT = sqrChr.sq_GetLevelData(skill_index, 62, skill_level);//ï¿½ï¿½%
 	local ELEMENT_ATTACK_WATER_PERCENT = sqrChr.sq_GetLevelData(skill_index, 63, skill_level);//?%
-	local ELEMENT_ATTACK_DARK_PERCENT = sqrChr.sq_GetLevelData(skill_index, 64, skill_level);//äÞ%
-	local ELEMENT_ATTACK_LIGHT_PERCENT = sqrChr.sq_GetLevelData(skill_index, 65, skill_level);//ÎÃ%
-	local ELEMENT_ATTACK_FIRE = sqrChr.sq_GetLevelData(skill_index, 77, skill_level);//ûý
+	local ELEMENT_ATTACK_DARK_PERCENT = sqrChr.sq_GetLevelData(skill_index, 64, skill_level);//ï¿½ï¿½%
+	local ELEMENT_ATTACK_LIGHT_PERCENT = sqrChr.sq_GetLevelData(skill_index, 65, skill_level);//ï¿½ï¿½%
+	local ELEMENT_ATTACK_FIRE = sqrChr.sq_GetLevelData(skill_index, 77, skill_level);//ï¿½ï¿½
 	local ELEMENT_ATTACK_WATER = sqrChr.sq_GetLevelData(skill_index, 78, skill_level);//?
-	local ELEMENT_ATTACK_DARK = sqrChr.sq_GetLevelData(skill_index, 79, skill_level);//äÞ
-	local ELEMENT_ATTACK_LIGHT = sqrChr.sq_GetLevelData(skill_index, 80, skill_level);//ÎÃ
+	local ELEMENT_ATTACK_DARK = sqrChr.sq_GetLevelData(skill_index, 79, skill_level);//ï¿½ï¿½
+	local ELEMENT_ATTACK_LIGHT = sqrChr.sq_GetLevelData(skill_index, 80, skill_level);//ï¿½ï¿½
 
-	local FIRE_RESISTANCE = sqrChr.sq_GetLevelData(skill_index, 41, skill_level);//ûýù÷
-	local WATER_RESISTANCE = sqrChr.sq_GetLevelData(skill_index, 42, skill_level);//?ù÷
-	local DARK_RESISTANCE = sqrChr.sq_GetLevelData(skill_index, 43, skill_level);//äÞù÷
-	local LIGHT_RESISTANCE = sqrChr.sq_GetLevelData(skill_index, 44, skill_level);//ÎÃù÷
+	local FIRE_RESISTANCE = sqrChr.sq_GetLevelData(skill_index, 41, skill_level);//ï¿½ï¿½ï¿½ï¿½
+	local WATER_RESISTANCE = sqrChr.sq_GetLevelData(skill_index, 42, skill_level);//?ï¿½ï¿½
+	local DARK_RESISTANCE = sqrChr.sq_GetLevelData(skill_index, 43, skill_level);//ï¿½ï¿½ï¿½ï¿½
+	local LIGHT_RESISTANCE = sqrChr.sq_GetLevelData(skill_index, 44, skill_level);//ï¿½ï¿½ï¿½ï¿½
 
-	local PHYSICAL_CRITICAL_DAMAGE_RATE = sqrChr.sq_GetLevelData(skill_index, 16, skill_level);//Úª×âøìÌªß¿úª
-	local MAGICAL_CRITICAL_DAMAGE_RATE = sqrChr.sq_GetLevelData(skill_index, 17, skill_level);//ØªÛöøìÌªß¿úª
+	local PHYSICAL_CRITICAL_DAMAGE_RATE = sqrChr.sq_GetLevelData(skill_index, 16, skill_level);//Úªï¿½ï¿½ï¿½ï¿½Ìªß¿ï¿½ï¿½
+	local MAGICAL_CRITICAL_DAMAGE_RATE = sqrChr.sq_GetLevelData(skill_index, 17, skill_level);//Øªï¿½ï¿½ï¿½ï¿½Ìªß¿ï¿½ï¿½
 
 	local HP_MAX = sqrChr.sq_GetLevelData(skill_index, 66, skill_level);//HP MAX
 	local MP_MAX = sqrChr.sq_GetLevelData(skill_index, 67, skill_level);//MP MAX
 	local HP_MAX_PERCENT = sqrChr.sq_GetLevelData(skill_index, 68, skill_level);//HP MAX %
 	local MP_MAX_PERCENT = sqrChr.sq_GetLevelData(skill_index, 69, skill_level);//MP MAX %
 
-	local HIT_RECOVERY = sqrChr.sq_GetLevelData(skill_index, 70, skill_level);//ÌãòÁ
+	local HIT_RECOVERY = sqrChr.sq_GetLevelData(skill_index, 70, skill_level);//ï¿½ï¿½ï¿½ï¿½
 
 	local change_appendage = appendage.sq_getChangeStatus("benyuan");
 	if(!change_appendage)
@@ -142,7 +142,7 @@ function proc_appendage_benyuan(appendage)
 		change_appendage = appendage.sq_AddChangeStatus("benyuan", obj, obj, 0, CHANGE_STATUS_TYPE_HIT_RECOVERY, true, HIT_RECOVERY);
 	}
 
-	else if(change_appendage)
+	if(change_appendage)
 	{
 		change_appendage.clearParameter();
 		change_appendage.addParameter(CHANGE_STATUS_TYPE_PHYSICAL_ATTACK, true, PHYSICAL_ATTACK_PERCENT.tofloat());

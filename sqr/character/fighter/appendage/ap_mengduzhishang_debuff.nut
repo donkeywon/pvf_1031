@@ -16,12 +16,13 @@ function onStart_appendage_mengduzhishang_debuff(appendage) {
 	local defenseDecrease = appendage.getVar("skillData").get_vector(0);
 	local change_appendage = appendage.sq_getChangeStatus("mengduzhishang_debuff");
 	if (!change_appendage) {
-		change_appendage = appendage.sq_AddChangeStatus("mengduzhishang_debuff", obj, obj, 0, CHANGE_STATUS_TYPE_EQUIPMENT_PHYSICAL_DEFENSE, false, defenseDecrease);
+		change_appendage = appendage.sq_AddChangeStatus("mengduzhishang_debuff", obj, obj, 0, CHANGE_STATUS_TYPE_EQUIPMENT_PHYSICAL_DEFENSE, false, -defenseDecrease);
+		change_appendage = appendage.sq_AddChangeStatus("mengduzhishang_debuff", obj, obj, 0, CHANGE_STATUS_TYPE_EQUIPMENT_MAGICAL_DEFENSE, false, -defenseDecrease);
 	}
 	if (change_appendage) {
 		change_appendage.clearParameter();
-		change_appendage.addParameter(CHANGE_STATUS_TYPE_EQUIPMENT_PHYSICAL_DEFENSE, false, defenseDecrease.tofloat());
-		change_appendage.addParameter(CHANGE_STATUS_TYPE_EQUIPMENT_MAGICAL_DEFENSE, false, defenseDecrease.tofloat());
+		change_appendage.addParameter(CHANGE_STATUS_TYPE_EQUIPMENT_PHYSICAL_DEFENSE, false, -defenseDecrease.tofloat());
+		change_appendage.addParameter(CHANGE_STATUS_TYPE_EQUIPMENT_MAGICAL_DEFENSE, false, -defenseDecrease.tofloat());
 	}
 }
 

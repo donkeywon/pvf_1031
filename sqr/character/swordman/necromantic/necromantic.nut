@@ -1,6 +1,5 @@
 function checkExecutableSkill_Necromantic(obj) {
 	if (!obj) return false;
-
 	local isUseSkill = obj.sq_IsUseSkill(SKILL_NECROMANTIC);
 	if (isUseSkill) {
 		obj.getVar("state").clear_vector();

@@ -64,13 +64,13 @@ function onAttackParent_appendage_mengduzhishang(appendage, realAttacker, damage
 			CNSquirrelAppendage.sq_Append(buff, obj, obj);
 		}
 		local isAppendDeBuff = CNSquirrelAppendage.sq_IsAppendAppendage(damager, "character/fighter/appendage/ap_mengduzhishang_debuff.nut");
-		if (!isAppendBuff) {
+		if (!isAppendDeBuff) {
 			local deBuff = CNSquirrelAppendage.sq_AppendAppendage(damager, obj, SKILL_MENG_DU_ZHI_SHANG, false, "character/fighter/appendage/ap_mengduzhishang_debuff.nut", false);
 			deBuff.getVar("skillData").clear_vector();
 			deBuff.getVar("skillData").push_vector(defenseDecrease);
 			deBuff.setAppendCauseSkill(BUFF_CAUSE_SKILL, sq_getJob(sqrChr), SKILL_MENG_DU_ZHI_SHANG, skillLevel);
 			deBuff.sq_SetValidTime(time);
-			CNSquirrelAppendage.sq_Append(buff, damager, obj);
+			CNSquirrelAppendage.sq_Append(deBuff, damager, obj);
 		}
 	}
 }

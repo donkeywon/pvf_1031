@@ -142,7 +142,7 @@ function proc_appendage_benyuan(appendage)
 		change_appendage = appendage.sq_AddChangeStatus("benyuan", obj, obj, 0, CHANGE_STATUS_TYPE_HIT_RECOVERY, true, HIT_RECOVERY);
 	}
 
-	else if(change_appendage)
+	if(change_appendage)
 	{
 		change_appendage.clearParameter();
 		change_appendage.addParameter(CHANGE_STATUS_TYPE_PHYSICAL_ATTACK, true, PHYSICAL_ATTACK_PERCENT.tofloat());

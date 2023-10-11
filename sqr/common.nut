@@ -2,9 +2,9 @@ DEBUG <- isDebugMode();
 NULL <- null;
 
 
-// ½ºÅ³·¹º§À» »ó½Â½ÃÅ°´Â ÇÔ¼ö ºÎºÐÀÔ´Ï´Ù..Æ¯Á¤ ½ºÅ³¿¡ ´ëÇØ¼­ µ¿±âÈ­ÇØ¾ßÇÏ´Â ½ºÅ³ÀÌ ÀÖ´Ù¸é ÀÌ°÷¿¡¼­ Ã³¸®ÇØÁÝ´Ï´Ù..
-// ½ºÅ³ ±¸ÀÔ °³¼±À¸·Î flag ÀÎÀÚ°¡ Ãß°¡µÇ¾ú½À´Ï´Ù.
-// flag´Â 0ÀÌ¸é ½ºÅ³·¹º§-, 1ÀÌ¸é ½ºÅ³·¹º§+¸¦ Ç¥½ÃÇÏ´Â °ªÀÔ´Ï´Ù.
+// ï¿½ï¿½Å³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â½ï¿½Å°ï¿½ï¿½ ï¿½Ô¼ï¿½ ï¿½Îºï¿½ï¿½Ô´Ï´ï¿½..Æ¯ï¿½ï¿½ ï¿½ï¿½Å³ï¿½ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½È­ï¿½Ø¾ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½Å³ï¿½ï¿½ ï¿½Ö´Ù¸ï¿½ ï¿½Ì°ï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ï¿½ï¿½ï¿½Ý´Ï´ï¿½..
+// ï¿½ï¿½Å³ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ flag ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½ß°ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.
+// flagï¿½ï¿½ 0ï¿½Ì¸ï¿½ ï¿½ï¿½Å³ï¿½ï¿½ï¿½ï¿½-, 1ï¿½Ì¸ï¿½ ï¿½ï¿½Å³ï¿½ï¿½ï¿½ï¿½+ï¿½ï¿½ Ç¥ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½Ô´Ï´ï¿½.
 function startSkillCoolTime(obj, skillIndex, skillLevel, currentCoolTime)
 {
 	if(!obj) return -1;
@@ -14,7 +14,7 @@ function startSkillCoolTime(obj, skillIndex, skillLevel, currentCoolTime)
 			//79	G1
 			//80	G2
 			//81	G3
-			//96	G0_1a¡×
+			//96	G0_1aï¿½ï¿½
 			//246	G4_2jue
 		local g_zhuzaiLevel = sq_GetSkillLevel(obj, SKILL_ATGUNNER_G_ZHUZAI);
 		local coolTimeRate = sq_GetLevelData(obj, SKILL_ATGUNNER_G_ZHUZAI, 1, g_zhuzaiLevel);
@@ -39,17 +39,17 @@ function startSkillCoolTime(obj, skillIndex, skillLevel, currentCoolTime)
 }
 function requestBuy(obj, skill, nIndex, flag, count)
 {
-	if(sq_getJob(obj) == ENUM_CHARACTERJOB_PRIEST && sq_getGrowType(obj) == GROW_TYPE_AVENGER) { // ¾îº¥Àú¶ó¸é µ¿±âÈ­ÇØ¾ßÇÒ ½ºÅ³ÀÌ ÀÖ½À´Ï´Ù..
-		if(nIndex == SKILL_AVENGER_AWAKENING) { // °¢¼º µÒ½º°¡µð¾ðÀÌ ½ºÅ³·¹º§¾÷ÀÌ µÇ¸é..
+	if(sq_getJob(obj) == ENUM_CHARACTERJOB_PRIEST && sq_getGrowType(obj) == GROW_TYPE_AVENGER) { // ï¿½îº¥ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È­ï¿½Ø¾ï¿½ï¿½ï¿½ ï¿½ï¿½Å³ï¿½ï¿½ ï¿½Ö½ï¿½ï¿½Ï´ï¿½..
+		if(nIndex == SKILL_AVENGER_AWAKENING) { // ï¿½ï¿½ï¿½ï¿½ ï¿½Ò½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ç¸ï¿½..
 			//print("\n requestBuy(obj, skill, nIndex, count) \n" + count);
-			sq_requestBuySkill(SKILL_EXECUTION, flag, count); // Ã³Çüµµ °°ÀÌ ·¹º§¾÷À» ½ÃÄÑÁÝ´Ï´Ù..
+			sq_requestBuySkill(SKILL_EXECUTION, flag, count); // Ã³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ý´Ï´ï¿½..
 		}
 	}
 	
 	return true;
 }
 
-// squirrel passiveobject °øÅë ÄÝ¹éÇÔ¼ö ºÎºÐÀÔ´Ï´Ù..¾îº¥Àú°¡ ¾Æ´Ñ ¸ðµç Ä³¸¯ÅÍÀÇ ÆÐ½Ãºê¿ÀºêÁ§Æ®°¡ µé¾î¿É´Ï´Ù..
+// squirrel passiveobject ï¿½ï¿½ï¿½ï¿½ ï¿½Ý¹ï¿½ï¿½Ô¼ï¿½ ï¿½Îºï¿½ï¿½Ô´Ï´ï¿½..ï¿½îº¥ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´ï¿½ ï¿½ï¿½ï¿½ Ä³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ð½Ãºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½É´Ï´ï¿½..
 function onAttack_PassiveObject(passiveobj, damager, bounding_box, is_stuck)
 {
 	if(!passiveobj) return -1;
@@ -57,17 +57,17 @@ function onAttack_PassiveObject(passiveobj, damager, bounding_box, is_stuck)
 	if(passiveobj) {
 		local pChr = passiveobj.getTopCharacter();	
 		
-		if(!isGrowTypeAvenger(pChr)) return -1; // ¾îº¥Á®°¡ ´ÙÀ½À¸·Î ÁøÇàµÇ¼­´Â ¾ÈµË´Ï´Ù..
+		if(!isGrowTypeAvenger(pChr)) return -1; // ï¿½îº¥ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ç¼ï¿½ï¿½ï¿½ ï¿½ÈµË´Ï´ï¿½..
 
 		if(pChr) { 
-			// ÆÐ½Ãºê¿ÀºêÁ§Æ® °ø°ÝÁß¿¡ µ¥ºô½ºÆ®¶óÀÌÄ¿ °ø°ÝÀº »©¾ßÇÑ´Ù..ÀÌ°É·Î °ø°ÝÇÏ´Âµ¥ ÀÌ°É·Î ÃæÀüÀÌ µÇ¸é °ï¶õÇÏÁö ¾Ê´Â°¡..
-			// 24104	`Character/Priest/DevilStrike1.obj`	// ¾îº¥Àú - µ¥ºô½ºÆ®¶óÀÌÄ¿ °ø°Ý1
-			// 24105	`Character/Priest/DevilStrike2.obj`	// ¾îº¥Àú - µ¥ºô½ºÆ®¶óÀÌÄ¿ °ø°Ý2
-			// 24106	`Character/Priest/DevilStrike3.obj`	// ¾îº¥Àú - µ¥ºô½ºÆ®¶óÀÌÄ¿ °ø°Ý3
+			// ï¿½Ð½Ãºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ß¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Ä¿ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½..ï¿½Ì°É·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´Âµï¿½ ï¿½Ì°É·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ç¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´Â°ï¿½..
+			// 24104	`Character/Priest/DevilStrike1.obj`	// ï¿½îº¥ï¿½ï¿½ - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Ä¿ ï¿½ï¿½ï¿½ï¿½1
+			// 24105	`Character/Priest/DevilStrike2.obj`	// ï¿½îº¥ï¿½ï¿½ - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Ä¿ ï¿½ï¿½ï¿½ï¿½2
+			// 24106	`Character/Priest/DevilStrike3.obj`	// ï¿½îº¥ï¿½ï¿½ - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Ä¿ ï¿½ï¿½ï¿½ï¿½3
 			
 			if(passiveobj.getPassiveObjectIndex() != 24104 && passiveobj.getPassiveObjectIndex() != 24105 &&
 			passiveobj.getPassiveObjectIndex() != 24106)
-				procDevilStrikeGauge(pChr, passiveobj.getPassiveObjectIndex()); // ¾îº¥Àú state¸¦ Ã¼Å©ÇÏ¿© ÃæÀüÀÌ ÇÊ¿äÇÑ »óÅÂ¶ó¸é ¾Ç¸¶°ÔÀÌÁö¸¦ ÃæÀü½ÃÄÑÁÝ´Ï´Ù..
+				procDevilStrikeGauge(pChr, passiveobj.getPassiveObjectIndex()); // ï¿½îº¥ï¿½ï¿½ stateï¿½ï¿½ Ã¼Å©ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ ï¿½Ç¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý´Ï´ï¿½..
 		}
 	}
 	
@@ -75,7 +75,7 @@ function onAttack_PassiveObject(passiveobj, damager, bounding_box, is_stuck)
 }
 
 
-// Ä³¸¯ÅÍ ¼±ÅÃÃ¢¿¡ Ãâ·ÂµÇ´Â ÀüÁ÷È¿°ú ±×¸®±â
+// Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ã¢ï¿½ï¿½ ï¿½ï¿½ÂµÇ´ï¿½ ï¿½ï¿½ï¿½ï¿½È¿ï¿½ï¿½ ï¿½×¸ï¿½ï¿½ï¿½
 function drawGrowAvatarAniType(job, growtype, x, y, isOver, is_draw)
 {
 	//print("\n drawGrowAvatarAniType:" + job + " growtype:" + growtype);
@@ -96,7 +96,7 @@ function drawGrowAvatarAniType(job, growtype, x, y, isOver, is_draw)
 	}
 }
 
-// ¸¶À»¿¡¼­ ±×·ÁÁö´Â ÀüÁ÷È¿°ú ±×¸®±â
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×·ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È¿ï¿½ï¿½ ï¿½×¸ï¿½ï¿½ï¿½
 function drawAppend_VirtualCharacter(job, growtype, x, y, isOver, is_draw)
 {
 	if(job == ENUM_CHARACTERJOB_PRIEST && growtype == GROW_TYPE_AVENGER) {
@@ -120,7 +120,7 @@ function sqr_CreatePooledObject(obj, ani_filename, x, y, z, dir)
 {
 	if(!obj) return;
 	
-	local ani = obj.sq_createCNRDAnimation(ani_filename); // [create draw only object] ¸¦ ¾²¸é ¾ÈµÇ±â ¶§¹®¿¡ ÀÌ°÷¿¡ Ãß°¡ÇØ¾ßÇÕ´Ï´Ù..
+	local ani = obj.sq_createCNRDAnimation(ani_filename); // [create draw only object] ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ÈµÇ±ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì°ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ï¿½Ø¾ï¿½ï¿½Õ´Ï´ï¿½..
 	local pooledObj = obj.sq_createCNRDPooledObject(ani, true);
 	if(pooledObj) {
 		// 15 -2 75
@@ -130,12 +130,12 @@ function sqr_CreatePooledObject(obj, ani_filename, x, y, z, dir)
 	}
 }
 
-// ³Ñ°ÜÁö´Â stateÆÄ¶ó¹ÌÅÍ°¡ ÆòÅ¸ÀÎÁö Ã¼Å©
+// ï¿½Ñ°ï¿½ï¿½ï¿½ï¿½ï¿½ stateï¿½Ä¶ï¿½ï¿½ï¿½Í°ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ Ã¼Å©
 function sqr_IsNormalAttack(state)
 {
-//STATE_ATTACK <- 8 		  //  °ø°Ý
-//STATE_JUMP_ATTACK <- 7 		  //  Á¡ÇÁ
-//STATE_DASH_ATTACK <- 15 		  //  ´ë½¬ ¾îÅÃ
+//STATE_ATTACK <- 8 		  //  ï¿½ï¿½ï¿½ï¿½
+//STATE_JUMP_ATTACK <- 7 		  //  ï¿½ï¿½ï¿½ï¿½
+//STATE_DASH_ATTACK <- 15 		  //  ï¿½ë½¬ ï¿½ï¿½ï¿½ï¿½
 	if(state == STATE_ATTACK || state == STATE_JUMP_ATTACK || state == STATE_DASH_ATTACK) {
 		return true;
 	}
@@ -143,8 +143,8 @@ function sqr_IsNormalAttack(state)
 	return false;
 }
 
-// ½ºÅ³ »ç¿ë Á¶ÁØ ¸®¼Ò½º ·ÎµùÇÏ´Â ºÎºÐÀ» Ãß°¡ÇÏ¿´½À´Ï´Ù. ÀÛ¾÷ÀÚ: Á¤Áø¼ö (11.11.22)
-// ¸®ÅÏ°ªÀº crndanimation* ÀÔ´Ï´Ù.
+// ï¿½ï¿½Å³ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ò½ï¿½ ï¿½Îµï¿½ï¿½Ï´ï¿½ ï¿½Îºï¿½ï¿½ï¿½ ï¿½ß°ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. ï¿½Û¾ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (11.11.22)
+// ï¿½ï¿½ï¿½Ï°ï¿½ï¿½ï¿½ crndanimation* ï¿½Ô´Ï´ï¿½.
 function CreateAimPointMark(parentObj)
 {
 	local job = sq_getJob(parentObj);
@@ -192,7 +192,7 @@ function CNAimPointMarkCustomAnimation(obj, parentObj)
 	return false;
 }
 
-// aimÅ¸°Ù ¿òÁ÷ÀÏ ¼ö ÀÕ´Â ¹üÀ§¸¦ Á¤ÇÏ´Â ÇÔ¼öÀÔ´Ï´Ù.
+// aimÅ¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Õ´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ô¼ï¿½ï¿½Ô´Ï´ï¿½.
 function isMovablePos_CNAimPointMark(obj, parentObj, xPos, yPos)
 {
 	if(!obj)
@@ -211,7 +211,7 @@ function isMovablePos_CNAimPointMark(obj, parentObj, xPos, yPos)
 	return true;
 }
 
-// Áö±Ý ÀüÅõ¸ðµåÀÎÁö Ã¼Å©ÇÏ´Â ÇÔ¼öÀÔ´Ï´Ù.
+// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã¼Å©ï¿½Ï´ï¿½ ï¿½Ô¼ï¿½ï¿½Ô´Ï´ï¿½.
 function isBattleMode()
 {
 	local isPvpMode = checkModuleType(MODULE_TYPE_PVP_TYPE);
@@ -220,7 +220,7 @@ function isBattleMode()
 	print(" isPvpMode:" + isPvpMode + " isDungeonMode:" + isDungeonMode);
 
 	if(!isPvpMode && !isDungeonMode)
-	{ // ÀüÅõÁßÀÌ ¾Æ´Ï¶ó¸é
+	{ // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´Ï¶ï¿½ï¿½
 		return false;
 	}
 	
@@ -258,7 +258,7 @@ SKILL_TRIPLE_STAB		<- 112;
 SKILL_GHOST_SIDE_WIND	<- 111;
 	
 	
-// ¸¶°Ë»ç ½ºÅ³ ÀÌÆåÆ® ¿¡´Ï¸ÞÀÌ¼Ç ·Îµå
+// ï¿½ï¿½ï¿½Ë»ï¿½ ï¿½ï¿½Å³ ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½Ì¼ï¿½ ï¿½Îµï¿½
 function sq_LoadSkillEffect_DemonicSwordman(obj, skillIndex)
 {
 	if (skillIndex == SKILL_GHOST_SIDE_WIND)
@@ -289,7 +289,7 @@ function sq_LoadSkillEffect_DemonicSwordman(obj, skillIndex)
 	}
 	else if (skillIndex == SKILL_TRIPLE_SLASH)
 	{
-		// ´Ü°øÂü
+		// ï¿½Ü°ï¿½ï¿½ï¿½
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/TripleSlash_DS/Slash1.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/TripleSlash_DS/Slash2.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/TripleSlash_DS/Slash3.ani");
@@ -313,12 +313,12 @@ function sq_LoadSkillEffect_DemonicSwordman(obj, skillIndex)
 	}
 	else if (skillIndex == SKILL_ASHEN_FORK)
 	{
-		// ¿¡½¨Æ÷Å©
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å©
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/JumpAttackHold_DS.ani");
 	}
 	else if (skillIndex == SKILL_JUMP_ATTACK_MULTI)
 	{
-		// °øÁß ¿¬¼Óº£±â
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Óºï¿½ï¿½ï¿½
 		// jumpAttackMultiSlash1Sword_
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/JumpAttackMulti_DS/jumpchainattackslash1_katana_under.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/JumpAttackMulti_DS/jumpchainattackslash1_katana_upper.ani");
@@ -336,30 +336,30 @@ function sq_LoadSkillEffect_DemonicSwordman(obj, skillIndex)
 	}
 	else if (skillIndex == SKILL_NORMAL_WAVE)
 	{
-		// ÆÄµ¿°Ë Áö¿­
+		// ï¿½Äµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/NormalWaveSlash_DS.ani");
 	}
 	else if (skillIndex == SKILL_GRAB_BLAST_BLOOD)
 	{
-		// ºí·¯µå ·¯½ºÆ®
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/GrabBlastBlood_DS.ani");
 	}
 	else if (skillIndex == SKILL_UPPER_SLASH)
 	{
-		// ¾îÆÛ½½·¡½¬
+		// ï¿½ï¿½ï¿½Û½ï¿½ï¿½ï¿½ï¿½ï¿½
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/UpperSlash1_DS.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/UpperSlash2_DS.ani");
 	}
 	else if (skillIndex == SKILL_VANE_SLASH)
 	{
-		// ¿­ÆÄÂü
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/VaneSlash_DS/Upper.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/VaneSlash_DS/Dust.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/VaneSlash_DS/Smash.ani");
 	}
 	else if (skillIndex == SKILL_GORE_CROSS)
 	{
-		// °í¾îÅ©·Î½º
+		// ï¿½ï¿½ï¿½ï¿½Å©ï¿½Î½ï¿½
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/GoreCross_DS/Slash1.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/GoreCross_DS/Slash2.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/GoreCross_DS/Slash3.ani");
@@ -367,14 +367,14 @@ function sq_LoadSkillEffect_DemonicSwordman(obj, skillIndex)
 	}
 	else if (skillIndex == SKILL_HOP_SMASH)
 	{
-		// ºØ»ê°Ý
+		// ï¿½Ø»ï¿½ï¿½
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/HopSmash_DS/Sword.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/HopSmash_DS/Smash.ani");
 	}
 	else if (skillIndex == SKILL_MOONLIGHT_SLASH)
 	{
-		// ´Þºûº£±â
-		// ¸¸¿ù ´Þºûº£±â : MoonlightSlashFull.ani : ¸¶°Ë»ç´Â »ç¿ëÇÏÁö ¾ÊÀ½.
+		// ï¿½Þºï¿½ï¿½ï¿½ï¿½ï¿½
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½Þºï¿½ï¿½ï¿½ï¿½ï¿½ : MoonlightSlashFull.ani : ï¿½ï¿½ï¿½Ë»ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/MoonlightSlash1_DS.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/MoonlightSlash2_DS.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/MoonlightSlashFull.ani");
@@ -399,7 +399,7 @@ function sq_LoadSkillEffect_DemonicSwordman(obj, skillIndex)
 	}
 	else if (skillIndex == SKILL_OUT_RAGE_BREAK)
 	{
-		// ¾Æ¿ô·¹ÀÌÁö ºê·¹ÀÌÅ©
+		// ï¿½Æ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ê·¹ï¿½ï¿½Å©
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/OutRageBreak_DS/sword_ready_ldodge.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/OutRageBreak_DS/sword_ready_none.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/OutRageBreak_DS/sword_slash_ldodge.ani");
@@ -463,7 +463,7 @@ function sq_LoadSkillEffect_DemonicSwordman(obj, skillIndex)
 }
 
 
-// ±Í°Ë»ç ½ºÅ³ ÀÌÆåÆ® ¿¡´Ï¸ÞÀÌ¼Ç ·Îµå
+// ï¿½Í°Ë»ï¿½ ï¿½ï¿½Å³ ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½Ì¼ï¿½ ï¿½Îµï¿½
 function sq_LoadSkillEffect_Swordman(obj, skillIndex)
 {
 	if (skillIndex == SKILL_GHOST_SIDE_WIND)
@@ -493,7 +493,7 @@ function sq_LoadSkillEffect_Swordman(obj, skillIndex)
 	}
 	else if (skillIndex == SKILL_TRIPLE_SLASH)
 	{
-		// ´Ü°øÂü
+		// ï¿½Ü°ï¿½ï¿½ï¿½
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/TripleSlash/Slash1.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/TripleSlash/Slash2.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/TripleSlash/Slash3.ani");
@@ -517,12 +517,12 @@ function sq_LoadSkillEffect_Swordman(obj, skillIndex)
 	}
 	else if (skillIndex == SKILL_ASHEN_FORK)
 	{
-		// ¿¡½¨Æ÷Å©
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å©
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/JumpAttackHold.ani");
 	}
 	else if (skillIndex == SKILL_JUMP_ATTACK_MULTI)
 	{
-		// °øÁß ¿¬¼Óº£±â
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Óºï¿½ï¿½ï¿½
 		// jumpAttackMultiSlash1Sword_
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/JumpAttackMulti/jumpchainattackslash1_katana_under.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/JumpAttackMulti/jumpchainattackslash1_katana_upper.ani");
@@ -540,30 +540,30 @@ function sq_LoadSkillEffect_Swordman(obj, skillIndex)
 	}
 	else if (skillIndex == SKILL_NORMAL_WAVE)
 	{
-		// ÆÄµ¿°Ë Áö¿­
+		// ï¿½Äµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/NormalWaveSlash.ani");
 	}
 	else if (skillIndex == SKILL_GRAB_BLAST_BLOOD)
 	{
-		// ºí·¯µå ·¯½ºÆ®
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/GrabBlastBlood.ani");
 	}
 	else if (skillIndex == SKILL_UPPER_SLASH)
 	{
-		// ¾îÆÛ½½·¡½¬
+		// ï¿½ï¿½ï¿½Û½ï¿½ï¿½ï¿½ï¿½ï¿½
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/UpperSlash1.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/UpperSlash2.ani");
 	}
 	else if (skillIndex == SKILL_VANE_SLASH)
 	{
-		// ¿­ÆÄÂü
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/VaneSlash/Upper.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/VaneSlash/Dust.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/VaneSlash/Smash.ani");
 	}
 	else if (skillIndex == SKILL_GORE_CROSS)
 	{
-		// °í¾îÅ©·Î½º
+		// ï¿½ï¿½ï¿½ï¿½Å©ï¿½Î½ï¿½
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/GoreCross/Slash1.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/GoreCross/Slash2.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/GoreCross/Slash3.ani");
@@ -571,14 +571,14 @@ function sq_LoadSkillEffect_Swordman(obj, skillIndex)
 	}
 	else if (skillIndex == SKILL_HOP_SMASH)
 	{
-		// ºØ»ê°Ý
+		// ï¿½Ø»ï¿½ï¿½
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/HopSmash/Sword.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/HopSmash/Smash.ani");
 	}
 	else if (skillIndex == SKILL_MOONLIGHT_SLASH)
 	{
-		// ´Þºûº£±â
-		// ¸¸¿ù ´Þºûº£±â : MoonlightSlashFull.ani : ¸¶°Ë»ç´Â »ç¿ëÇÏÁö ¾ÊÀ½.
+		// ï¿½Þºï¿½ï¿½ï¿½ï¿½ï¿½
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½Þºï¿½ï¿½ï¿½ï¿½ï¿½ : MoonlightSlashFull.ani : ï¿½ï¿½ï¿½Ë»ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/MoonlightSlash1.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/MoonlightSlash2.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/MoonlightSlashFull.ani");
@@ -603,7 +603,7 @@ function sq_LoadSkillEffect_Swordman(obj, skillIndex)
 	}
 	else if (skillIndex == SKILL_OUT_RAGE_BREAK)
 	{
-		// ¾Æ¿ô·¹ÀÌÁö ºê·¹ÀÌÅ©
+		// ï¿½Æ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ê·¹ï¿½ï¿½Å©
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/OutRageBreak/sword_ready_ldodge.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/OutRageBreak/sword_ready_none.ani");
 		obj.sq_LoadSkillEffectAni(skillIndex, "Effect/Animation/OutRageBreak/sword_slash_ldodge.ani");
