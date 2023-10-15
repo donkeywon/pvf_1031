@@ -24,7 +24,77 @@ local YPosmove = obj.sq_GetLevelData(253, 1, skill_level);//üòö¢yõîì¹Ô�
 function onProcCon_gunner_windmill(obj)
 {
  if (!obj) return;
- local sub = obj.getVar().get_vector(0);
- if (sub == 3) 
- onProcIsSub_My_gunner_stylish(obj);
+ //local sub = obj.getVar().get_vector(0);
+ //if (sub == 3) 
+ //onProcIsSub_My_gunner_stylish(obj);
+
+ local skill_level = obj.sq_GetSkillLevel(SKILL_GUNSTYLE);
+
+	if(skill_level > 0)
+	{
+		if (sq_IsKeyDown(OPTION_HOTKEY_MOVE_UP, ENUM_SUBKEY_TYPE_ALL))
+		{
+			local Velocity = obj.sq_GetIntData(3, 1);
+			local Accel = 0;
+			obj.sq_SetStaticMoveInfo(1, Velocity, Velocity, true, Accel, true);
+			obj.sq_SetStaticMoveInfo(0, 0, 0, false);
+			obj.sq_SetMoveDirection(obj.getDirection(), ENUM_DIRECTION_NEUTRAL);
+		}
+		if (sq_IsKeyDown(OPTION_HOTKEY_MOVE_DOWN, ENUM_SUBKEY_TYPE_ALL))
+		{
+			local Velocity = obj.sq_GetIntData(3, 1);
+			local Accel = 0;
+			obj.sq_SetStaticMoveInfo(1, Velocity, Velocity, true, Accel, true);
+			obj.sq_SetStaticMoveInfo(0, 0, 0, false);
+			obj.sq_SetMoveDirection(obj.getDirection(), ENUM_DIRECTION_NEUTRAL);
+		}
+		if (sq_IsKeyDown(OPTION_HOTKEY_MOVE_LEFT, ENUM_SUBKEY_TYPE_ALL))
+		{
+			local Velocity = obj.sq_GetIntData(3, 1);
+			local Accel = 0;
+			obj.sq_SetStaticMoveInfo(0, Velocity, Velocity, true, Accel, true);
+			obj.sq_SetStaticMoveInfo(1, 0, 0, false);
+			obj.sq_SetMoveDirection(obj.getDirection(), ENUM_DIRECTION_NEUTRAL);
+		}
+		if (sq_IsKeyDown(OPTION_HOTKEY_MOVE_RIGHT, ENUM_SUBKEY_TYPE_ALL))
+		{
+			local Velocity = obj.sq_GetIntData(3, 1);
+			local Accel = 0;
+			obj.sq_SetStaticMoveInfo(0, Velocity, Velocity, true, Accel, true);
+			obj.sq_SetStaticMoveInfo(1, 0, 0, false);
+			obj.sq_SetMoveDirection(obj.getDirection(), ENUM_DIRECTION_NEUTRAL);
+		}
+		if (sq_IsKeyDown(OPTION_HOTKEY_MOVE_UP, ENUM_SUBKEY_TYPE_ALL) && sq_IsKeyDown(OPTION_HOTKEY_MOVE_LEFT, ENUM_SUBKEY_TYPE_ALL))
+		{
+			local Velocity = obj.sq_GetIntData(3, 1);
+			local Accel = 0;
+			obj.sq_SetStaticMoveInfo(0, Velocity, Velocity, true, Accel, true);
+			obj.sq_SetStaticMoveInfo(1, Velocity, Velocity, true, Accel, true);
+			obj.sq_SetMoveDirection(obj.getDirection(), ENUM_DIRECTION_NEUTRAL);
+		}
+		if (sq_IsKeyDown(OPTION_HOTKEY_MOVE_UP, ENUM_SUBKEY_TYPE_ALL) && sq_IsKeyDown(OPTION_HOTKEY_MOVE_RIGHT, ENUM_SUBKEY_TYPE_ALL))
+		{
+			local Velocity = obj.sq_GetIntData(3, 1);
+			local Accel = 0;
+			obj.sq_SetStaticMoveInfo(0, Velocity, Velocity, true, Accel, true);
+			obj.sq_SetStaticMoveInfo(1, Velocity, Velocity, true, Accel, true);
+			obj.sq_SetMoveDirection(obj.getDirection(), ENUM_DIRECTION_NEUTRAL);
+		}
+		else if (sq_IsKeyDown(OPTION_HOTKEY_MOVE_DOWN, ENUM_SUBKEY_TYPE_ALL) && sq_IsKeyDown(OPTION_HOTKEY_MOVE_LEFT, ENUM_SUBKEY_TYPE_ALL))
+		{
+			local Velocity = obj.sq_GetIntData(3, 1);
+			local Accel = 0;
+			obj.sq_SetStaticMoveInfo(0, Velocity, Velocity, true, Accel, true);
+			obj.sq_SetStaticMoveInfo(1, Velocity, Velocity, true, Accel, true);
+			obj.sq_SetMoveDirection(obj.getDirection(), ENUM_DIRECTION_NEUTRAL);
+		}
+		else if (sq_IsKeyDown(OPTION_HOTKEY_MOVE_DOWN, ENUM_SUBKEY_TYPE_ALL) && sq_IsKeyDown(OPTION_HOTKEY_MOVE_RIGHT, ENUM_SUBKEY_TYPE_ALL))
+		{
+			local Velocity = obj.sq_GetIntData(3, 1);
+			local Accel = 0;
+			obj.sq_SetStaticMoveInfo(0, Velocity, Velocity, true, Accel, true);
+			obj.sq_SetStaticMoveInfo(1, Velocity, Velocity, true, Accel, true);
+			obj.sq_SetMoveDirection(obj.getDirection(), ENUM_DIRECTION_NEUTRAL);
+		}
+	}
 } ;

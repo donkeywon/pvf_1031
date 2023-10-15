@@ -51,11 +51,11 @@ function proc_appendage_nitromotor(appendage)
 	cooltime = cooltime;
 
 
-	/*local loadSlot = parentObj.sq_GetSkillLoad(17);
+	local loadSlot = parentObj.sq_GetSkillLoad(17);
 	if(!loadSlot)
 	{
 		parentObj.sq_AddSkillLoad(17, 80, soften_number, cooltime);
-		loadSlot = parentObj.sq_GetSkillLoad(17);*/
+		loadSlot = parentObj.sq_GetSkillLoad(17);
 
 
 //sq_AddSkillLoad
@@ -65,7 +65,7 @@ function proc_appendage_nitromotor(appendage)
 //cooltime			��������
 
 
-	/*}
+	}
 	else
 	{
 		local remain_number = loadSlot.getRemainLoadNumber();
@@ -78,7 +78,7 @@ function proc_appendage_nitromotor(appendage)
 					loadSlot.setStartCool();
 			}
 		}
-	}*/
+	}
 }
 
 

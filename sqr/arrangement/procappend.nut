@@ -102,6 +102,7 @@ function procAppend_Gunner(obj) {
 	if (!obj) return;
 
 	Common_procAppend(obj);
+	procAppend_GunStyle(obj);
 }
 
 function procAppend_ATGunner(obj) {
@@ -110,6 +111,7 @@ function procAppend_ATGunner(obj) {
 	Common_procAppend(obj);
 
 	procAppend_NitroMotor(obj);
+	procAppend_RoseDance(obj);
 }
 
 function procAppend_Mage(obj) {

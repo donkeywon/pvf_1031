@@ -1,5 +1,219 @@
 
 
+function procAppend_RoseDance(obj)//緋紅魅影
+{
+	if(!obj) return;
+
+	local appendage = obj.GetSquirrelAppendage("character/atgunner/appendage/ap_rosedance.nut");
+
+	if (appendage)
+	{
+		if (appendage.isValid())
+		{
+			local loadSlot = obj.sq_GetSkillLoad(250)
+			if(loadSlot)
+			{
+				local remain_number = loadSlot.getRemainLoadNumber()
+				if(remain_number > 0)
+				{
+					RoseDance(obj);
+				}
+			}
+		}
+	}
+}
+
+
+
+
+function CommonEnable_atgunner_soften(obj, skillindex, state)//緋紅魅影
+{
+    if(obj.sq_GetState() == state)
+        return false;
+    obj.setSkillCommandEnable(skillindex, true);
+        return true;
+}
+
+
+
+function SetState_atgunner_soften(obj, skillindex, state, Arr)//緋紅魅影
+{
+    if(obj.sq_GetState() == state)
+        return false;
+    if(obj.sq_IsUseSkill(skillindex))
+    {
+        obj.sq_IntVectClear();
+        if(Arr.len() < 1)
+        {
+            obj.sq_AddSetStatePacket(state, STATE_PRIORITY_USER, true);
+            return true;
+        }
+        else
+        {   
+            foreach(sub in Arr)
+                obj.sq_IntVectPush(sub);
+
+            obj.sq_AddSetStatePacket(state, STATE_PRIORITY_USER, true);
+            return true;
+        }
+
+    }
+}
+
+
+
+function RoseDance(obj)//緋紅魅影
+{
+	if(!obj) return;
+
+	local state = obj.sq_GetState();
+	if(state == 0 || state == 1 || state == 2 || state == 3 || state == 4 || state == 5 || state == 6 || state == 7 || state == 8 || state == 9 || state == 10 || state == 11 || state == 12 || state == 13 || state == 14 || state == 15 || state == 16 || state == 17 || state == 18) return;
+
+		CommonEnableRoseDance(obj, 3, 19);//上旋Ti
+		CommonEnableRoseDance(obj, 7, 23);//刺Ti
+		CommonEnableRoseDance(obj, 14, 20);//BBQ
+		CommonEnableRoseDance(obj, 6, 21);//釘刺射
+		CommonEnableRoseDance(obj, 5, 8);//爆頭一擊
+		CommonEnableRoseDance(obj, 20, 8);//回頭一擊
+		CommonEnableRoseDance(obj, 9, 24);//亂射
+		CommonEnableRoseDance(obj, 72, 37);//多重爆頭
+		CommonEnableRoseDance(obj, 51, 41);//雙鷹回旋
+		CommonEnableRoseDance(obj, 104, 58);//極限多重爆頭
+		CommonEnableRoseDance(obj, SKILL_ATGUNNER_SUPPRESSINGFIRE, STATE_ATGUNNER_SUPPRESSINGFIRE);//壓制射擊
+		CommonEnableRoseDance(obj, SKILL_ATGUNNER_KILLPOINT, STATE_ATGUNNER_KILLPOINT);//死亡鎖Lian
+		CommonEnableRoseDance(obj, SKILL_ATGUNNER_CHAINDEVIDER, STATE_ATGUNNER_CHAINDEVIDER);//鎖Lian切割
+		CommonEnableRoseDance(obj, SKILL_ATGUNNER_BLOODNCHAIN, STATE_ATGUNNER_BLOODNCHAIN);//血舞祭
+
+
+		if(obj.sq_IsEnterSkill(3) != -1)
+		{
+			SetStateRoseDance(obj, 3, 19, [3]);
+		}
+		if(obj.sq_IsEnterSkill(7) != -1)
+		{
+			SetStateRoseDance(obj, 7, 23, [0]);
+		}
+		if(obj.sq_IsEnterSkill(14) != -1)
+		{
+			SetStateRoseDance(obj, 14, 20, [14]);
+		}
+		if(obj.sq_IsEnterSkill(6) != -1)
+		{
+			SetStateRoseDance(obj, 6, 21, [0]);
+		}
+		if(obj.sq_IsEnterSkill(5) != -1)
+		{
+			SetStateRoseDance(obj, 5, 8, [1, 5, 0]);
+		}
+		if(obj.sq_IsEnterSkill(20) != -1)
+		{
+			SetStateRoseDance(obj, 20, 8, [1, 20, 0]);
+		}
+		if(obj.sq_IsEnterSkill(9) != -1)
+		{
+			SetStateRoseDance(obj, 9, 24, [15, 1, 0, 100]);
+		}
+		if(obj.sq_IsEnterSkill(72) != -1)
+		{
+			SetStateRoseDance(obj, 72, 37, [0, 0]);
+		}
+		if(obj.sq_IsEnterSkill(51) != -1)
+		{
+			SetStateRoseDance(obj, 51, 41, [0, 1, 4]);
+		}
+		if(obj.sq_IsEnterSkill(104) != -1)
+		{
+			SetStateRoseDance(obj, 104, 58, [1, 97]);
+		}
+		if(obj.sq_IsEnterSkill(SKILL_ATGUNNER_SUPPRESSINGFIRE) != -1)
+		{
+			SetStateRoseDance(obj, SKILL_ATGUNNER_SUPPRESSINGFIRE, STATE_ATGUNNER_SUPPRESSINGFIRE, [0]);
+		}
+		if(obj.sq_IsEnterSkill(SKILL_ATGUNNER_KILLPOINT) != -1)
+		{
+			SetStateRoseDance(obj, SKILL_ATGUNNER_KILLPOINT, STATE_ATGUNNER_KILLPOINT, [0]);
+		}
+		if(obj.sq_IsEnterSkill(SKILL_ATGUNNER_CHAINDEVIDER) != -1)
+		{
+			SetStateRoseDance(obj, SKILL_ATGUNNER_CHAINDEVIDER, STATE_ATGUNNER_CHAINDEVIDER, [0]);
+		}
+		if(obj.sq_IsEnterSkill(SKILL_ATGUNNER_BLOODNCHAIN) != -1)
+		{
+			SetStateRoseDance(obj, SKILL_ATGUNNER_BLOODNCHAIN, STATE_ATGUNNER_BLOODNCHAIN, [0]);
+		}
+ return true;
+} ;
+
+
+
+function CommonEnableRoseDance(obj, skillindex, state)//緋紅魅影
+{
+	if(obj.sq_GetState() == state)
+		return false;
+	obj.setSkillCommandEnable(skillindex ,true);
+		return true;
+}
+
+
+
+function SetStateRoseDance(obj, skillindex, state, Arr)//緋紅魅影
+{
+	if(obj.sq_GetState() == state)
+		return false;
+	if(obj.sq_IsUseSkill(skillindex))
+	{
+		obj.sq_IntVectClear();
+		if(Arr.len() < 1)
+		{
+			obj.sq_AddSetStatePacket(state, STATE_PRIORITY_USER, true);
+			return true;
+		}
+		else
+		{	
+			foreach(sub in Arr)
+				obj.sq_IntVectPush(sub);
+
+			obj.sq_AddSetStatePacket(state, STATE_PRIORITY_USER, true);
+			RoseDance_Decrease(obj);
+			RoseDance_Buff(obj);
+			return true;
+		}
+
+	}
+}
+
+
+
+function RoseDance_Decrease(obj)//緋紅魅影
+{
+	local loadSlot = obj.sq_GetSkillLoad(250)
+	if(loadSlot)
+	{
+		local remain_number = loadSlot.getRemainLoadNumber()
+		if(remain_number > 0)
+		{
+			loadSlot.decreaseLoadCount(1)
+				loadSlot.setStartCool()
+		}
+	}
+}
+
+
+
+function RoseDance_Buff(obj)//緋紅魅影
+{
+	local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, SKILL_ROSEDANCE, false,"character/atgunner/appendage/ap_rosedance_buff.nut", false);
+
+	local skill_level = sq_GetSkillLevel(obj, SKILL_ROSEDANCE);
+	appendage.sq_SetValidTime(sq_GetIntData(obj, SKILL_ROSEDANCE, 2));
+	if(appendage)
+		{
+			appendage.setAppendCauseSkill(BUFF_CAUSE_SKILL, sq_getJob(obj), SKILL_ROSEDANCE, skill_level);
+			CNSquirrelAppendage.sq_AppendAppendageID(appendage, obj, obj, SKILL_ROSEDANCE, true);
+		}
+}
+
+
 
 function procAppend_NitroMotor(obj)
 {
@@ -11,15 +225,15 @@ function procAppend_NitroMotor(obj)
 	{
 		if(appendage.isValid())
 		{
-			/*local loadSlot = obj.sq_GetSkillLoad(17);
+			local loadSlot = obj.sq_GetSkillLoad(17);
 			if(loadSlot)
 			{
 				local remain_number = loadSlot.getRemainLoadNumber();
 				if(remain_number > 0)
-				{*/
+				{
 					NitroMotor(obj);
-				/*}
-			}*/
+				}
+			}
 		}
 	}
 }
@@ -31,9 +245,34 @@ function useSkill_after_ATGunner(obj, skillIndex, consumeMp, consumeItem, oldSki
 	local skill = sq_GetSkill(obj, skillIndex);
 	local isCool = skill.isInCoolTime();
 	local growtype = sq_getGrowType(obj);
+
+	if (!isCool && skillIndex == 60 && growtype == 1)
+	{ //判斷技能沒有處于冷?狀態，技能是死亡左輪，職業是漫游
+		local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, 60, false, "character/atgunner/appendage/ap_revolvercriticaldamageup.nut", false);
+		local skill_level = sq_GetSkillLevel(obj, 60);
+		CNSquirrelAppendage.sq_AppendAppendageID(appendage, obj, obj, APID_RESONANCE, true);
+		appendage = obj.GetSquirrelAppendage("character/atgunner/appendage/ap_revolvercriticaldamageup.nut");
+		if (appendage)
+		{
+			local change_time = sq_GetLevelData(obj, 60, 0, skill_level);
+			appendage.sq_SetValidTime(change_time);
+			local CRITICAL_DAMAGE_RATE = sq_GetLevelData(obj, 60, 2, skill_level);
+
+			local change_appendage = appendage.sq_getChangeStatus("ele_atk_water");
+			if (!change_appendage)
+				change_appendage = appendage.sq_AddChangeStatusAppendageID(obj, obj, 0, CHANGE_STATUS_TYPE_MAGICAL_ATTACK, false, CHANGE_STATUS_TYPE_PHYSICAL_CRITICAL_DAMAGE_RATE, APID_COMMON);
+
+			if (change_appendage)
+			{
+				change_appendage.clearParameter();
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_PHYSICAL_CRITICAL_DAMAGE_RATE, false, CRITICAL_DAMAGE_RATE.tofloat());
+			}
+		}
+	}
+
 	if(!isCool && skillIndex == 1 && growtype == 4)
 	{
-		//芙Lei占?UFF立占?占??占??占??占??占??
+		//?셂ei??UFF塋뗥뜝????????????????
 		local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, 1, false, "character/atgunner/appendage/ap_flamebullet.nut", false);
 		CNSquirrelAppendage.sq_AppendAppendageID(appendage, obj, obj, 251, true);
 		local appendage_light = CNSquirrelAppendage.sq_IsAppendAppendage(obj, "character/atgunner/appendage/ap_silverbullet.nut");
@@ -57,7 +296,7 @@ function useSkill_after_ATGunner(obj, skillIndex, consumeMp, consumeItem, oldSki
 	}
 	if(!isCool && skillIndex == 2 && growtype == 4)
 	{
-		//芙Lei占?UFF立占?占??占???占??占??
+		//?셂ei??UFF塋뗥뜝??????????????
 		local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, 2, false, "character/atgunner/appendage/ap_freezebullet.nut", false);
 		CNSquirrelAppendage.sq_AppendAppendageID(appendage, obj, obj, 252, true);
 		local appendage_light = CNSquirrelAppendage.sq_IsAppendAppendage(obj, "character/atgunner/appendage/ap_silverbullet.nut");
@@ -81,7 +320,7 @@ function useSkill_after_ATGunner(obj, skillIndex, consumeMp, consumeItem, oldSki
 	}
 	if(!isCool && skillIndex == 30 && growtype == 4)
 	{
-		//芙LeiBUFF立占?占??占??占??占??
+		//?셂eiBUFF塋뗥뜝?????????????
 		local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, 30, false, "character/atgunner/appendage/ap_silverbullet.nut", false);
 		CNSquirrelAppendage.sq_AppendAppendageID(appendage, obj, obj, 253, true);
 		local appendage_fire = CNSquirrelAppendage.sq_IsAppendAppendage(obj, "character/atgunner/appendage/ap_flamebullet.nut");
@@ -105,7 +344,7 @@ function useSkill_after_ATGunner(obj, skillIndex, consumeMp, consumeItem, oldSki
 	}
 	if(!isCool && skillIndex == 52 && growtype == 4)
 	{
-		//芙Lei占?UFF立占?占??占??甲占??占??
+		//?셂ei??UFF塋뗥뜝????????꿨뜝?????
 		local appendage_light = CNSquirrelAppendage.sq_IsAppendAppendage(obj, "character/atgunner/appendage/ap_silverbullet.nut");
 		appendage_light = obj.GetSquirrelAppendage("character/atgunner/appendage/ap_silverbullet.nut");
 		if(appendage_light)
@@ -142,7 +381,7 @@ function useSkill_after_ATGunner(obj, skillIndex, consumeMp, consumeItem, oldSki
 
 
 function als_ani_ATG(obj, aniFilename, disX, disY, disZ, imgangle, imgRate, Parent, SpeedRate)
-//		 als_ani_ATG(占??占??, ani占??占??, X占??占??占? Y占??占??占? Z占??占??占? 占??占??占??占? 占??占? 父占??占??, 占??放占??占??)
+//		 als_ani_ATG(??????, ani??????, X???????? Y???????? Z???????? ??????????? ????? ?뜹뜝?????, ????얍뜝?????)
 {
 	local angle = imgangle;	
 	local ani = sq_CreateAnimation("", aniFilename);
@@ -163,48 +402,6 @@ function als_ani_ATG(obj, aniFilename, disX, disY, disZ, imgangle, imgRate, Pare
 		sq_moveWithParent(obj, pooledObj);
 	}
 	sq_AddObject(obj, pooledObj, 2, false);
-}
-
-
-function setState_ATGunner(obj, state, datas, isResetTimer)
-{
-	//OutSubState(obj, state, datas);
-	App_State_ATGunner(obj, state, datas, isResetTimer);
-	local substate0 = obj.sq_GetVectorData(datas, 0);
-	local substate1 = obj.sq_GetVectorData(datas, 1);
-	local substate2 = obj.sq_GetVectorData(datas, 2);
-	local substate3 = obj.sq_GetVectorData(datas, 3);
-	local substate4 = obj.sq_GetVectorData(datas, 4);
-	local substate5 = obj.sq_GetVectorData(datas, 5);
-	local substate6 = obj.sq_GetVectorData(datas, 6);
-	local substate7 = obj.sq_GetVectorData(datas, 7);
-	local substate8 = obj.sq_GetVectorData(datas, 8);
-	local substate9 = obj.sq_GetVectorData(datas, 9);
-	local substate10 = obj.sq_GetVectorData(datas, 10);
-	local WeaponSubType = obj.getWeaponSubType();
-	
-
-	obj.getVar("substate").clear_vector();
-	obj.getVar("substate").push_vector(substate0);
-	obj.getVar("substate").push_vector(substate1);
-	obj.getVar("substate").push_vector(substate2);
-	obj.getVar("substate").push_vector(substate2);
-	obj.getVar("substate").push_vector(substate2);
-	obj.getVar("substate").push_vector(substate2);
-	obj.getVar("substate").push_vector(substate2);
-	obj.getVar("substate").push_vector(substate2);
-
-	obj.getVar("state").clear_vector();
-	obj.getVar("state").push_vector(state);
-
-		if (!sq_isPVPMode() && state == 38 && sq_GetSkillLevel(obj , 115) >0)
-		{
-			obj.sq_ZStop();
-			obj.sq_IntVectClear();
-			obj.sq_IntVectPush(1000);
-			obj.sq_AddSetStatePacket(115, STATE_PRIORITY_IGNORE_FORCE, true);
-		}
-
 }
  
 function setEnableCancelSkill_ATGunner(NfDEvwlcEC_mxO, vplKviQdJmi)

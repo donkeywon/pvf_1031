@@ -6,18 +6,25 @@ function ProcPassiveSkill_Gunner(obj, skill_index, skill_level) {
 			local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skill_index, false, "character/gunner/appendage/ap_baotouzhangwo.nut", true);
 		}
 	}
-	if (skill_index == SKILL_ZHAN_DI_GONG_XUN)
+	else if (skill_index == SKILL_ZHAN_DI_GONG_XUN)
 	{
 		if (skill_level > 0)
 		{
 			local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skill_index, false, "character/gunner/appendage/ap_zhandigongxun.nut", true);
 		}
 	}
-	if (skill_index == SKILL_ZUO_LUN_AO_YI)
+	else if (skill_index == SKILL_ZUO_LUN_AO_YI)
 	{
 		if (skill_level > 0)
 		{
 			local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skill_index, false, "character/gunner/appendage/ap_zuolunaoyi.nut", true);
+		}
+	}
+	else if (skill_index == SKILL_GUNSTYLE)
+	{
+		if (skill_level > 0)
+		{
+			local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skill_index, false, "character/gunner/appendage/ap_gunstyle.nut", true);
 		}
 	}
 

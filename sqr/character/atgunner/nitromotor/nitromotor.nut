@@ -223,7 +223,7 @@ function Create_NitroMotor_Effect(obj, aniFilename, isAutoDestroy, x, y, z)
 
 function NitroMotor_Decrease(obj)
 {
-	/*local loadSlot = obj.sq_GetSkillLoad(17);
+	local loadSlot = obj.sq_GetSkillLoad(17);
 	if(loadSlot)
 	{
 		local remain_number = loadSlot.getRemainLoadNumber();
@@ -232,7 +232,7 @@ function NitroMotor_Decrease(obj)
 			loadSlot.decreaseLoadCount(1);
 				loadSlot.setStartCool();
 		}
-	}*/
+	}
 }
 
 

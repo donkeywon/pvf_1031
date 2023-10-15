@@ -1,6 +1,6 @@
 function ProcPassiveSkill_ATGunner(obj, skill_index, skill_level) {
 	switch (skill_index) {
-	case 250:
+	/*case 250:
 		local EuZEQchhIO2g1V2 = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skill_index, false, "character/atgunner/appendage/ap_stylish_buff.nut", true);
 		local FC1eWFWuEDiMU = obj.sq_GetLevelData(skill_index, 2, skill_level);
 		local LUy0opgJNM0Xbu = obj.sq_GetLevelData(skill_index, 3, skill_level);
@@ -13,10 +13,16 @@ function ProcPassiveSkill_ATGunner(obj, skill_index, skill_level) {
 		local SpeibDDQ8SST = EuZEQchhIO2g1V2.getVar().get_timer_vector(0);
 		SpeibDDQ8SST.setParameter(LUy0opgJNM0Xbu, -1);
 		SpeibDDQ8SST.resetInstant(0);
-		break;
+		break;*/
 	case SKILL_ATGUNNER_COMMINTERRUPT:
 		if (skill_level > 0) {
 			local EuZEQchhIO2g1V2 = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skill_index, false, "character/atgunner/appendage/ap_atgunner_comminterrupt.nut", true);
+		}
+		break;
+	case SKILL_ROSEDANCE:
+		if(skill_level > 0)
+		{
+			local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skill_index, false, "character/atgunner/appendage/ap_rosedance.nut", true);
 		}
 		break;
 	case SKILL_ATGUNNER_CROSSBOWMASTERY:
