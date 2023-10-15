@@ -2,7 +2,7 @@ IRDSQRCharacter.pushPassiveObj("character/swordman/po_swordman_shared.nut", 2433
 
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/wave/wave.nut", "wave", 24, -1);
 
-IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/grandwave/grandwave.nut", "grandwave_swordman", 27, -1);
+//IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/grandwave/grandwave.nut", "grandwave_swordman", 27, -1);
 
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "Character/swordman/swordman_throw.nut", "swordman_throw", 13, -1);
 
