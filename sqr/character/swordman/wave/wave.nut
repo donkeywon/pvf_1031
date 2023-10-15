@@ -15,7 +15,7 @@ function onKeyFrameFlag_wave(obj, flagIndex) {
 
 	local subState = obj.getVar("subState").get_vector(0);
 	switch (subState) {
-	case 20:
+	/*case 20:
 		switch (flagIndex) {
 		case 10001:
 			if (obj.isMyControlObject()) {
@@ -46,44 +46,44 @@ function onKeyFrameFlag_wave(obj, flagIndex) {
 			}
 			break;
 		}
-		break;
-		/*case 21:
-			switch(flagIndex)
-			{
-				case 10002:
-					local skill_level = sq_GetSkillLevel(obj, 21);
-					local iceCount = sq_GetLevelData(obj, 21, 1, skill_level);
-					local sizeRateBonus = sq_GetLevelData(obj, 21, 7, skill_level);
-					local pauseTime = sq_GetIntData(obj, 21, 0);
-					local xInterval = 40;
-					for(local i = 0; i < iceCount; i++)
+		break;*/
+	/*case 21:
+		switch(flagIndex)
+		{
+			case 10002:
+				local skill_level = sq_GetSkillLevel(obj, 21);
+				local iceCount = sq_GetLevelData(obj, 21, 1, skill_level);
+				local sizeRateBonus = sq_GetLevelData(obj, 21, 7, skill_level);
+				local pauseTime = sq_GetIntData(obj, 21, 0);
+				local xInterval = 40;
+				for(local i = 0; i < iceCount; i++)
+				{
+					if(obj.isMyControlObject())
 					{
-						if(obj.isMyControlObject())
+						local skill = sq_GetSkill(obj, SKILL_FORCETHUNDERER);
+						local forceThunderer = sq_GetSkillLevel(obj, SKILL_FORCETHUNDERER);
+						if(forceThunderer > 0)
 						{
-							local skill = sq_GetSkill(obj, SKILL_FORCETHUNDERER);
-							local forceThunderer = sq_GetSkillLevel(obj, SKILL_FORCETHUNDERER);
-							if(forceThunderer > 0)
-							{
-								obj.sq_StartWrite();
-								obj.sq_WriteDword(16);
-								obj.sq_WriteDword(sizeRateBonus * i);
-								obj.sq_WriteDword(pauseTime * i);
-								obj.sq_SendCreatePassiveObjectPacket(24337, 0, 150 + xInterval * i, 0, 0);
-							}
-							else
-							{
-								obj.sq_StartWrite();
-								obj.sq_WriteDword(15);
-								obj.sq_WriteDword(sizeRateBonus * i);
-								obj.sq_WriteDword(pauseTime * i);
-								obj.sq_SendCreatePassiveObjectPacket(24337, 0, 150 + xInterval * i, 0, 0);
-							}
+							obj.sq_StartWrite();
+							obj.sq_WriteDword(16);
+							obj.sq_WriteDword(sizeRateBonus * i);
+							obj.sq_WriteDword(pauseTime * i);
+							obj.sq_SendCreatePassiveObjectPacket(24337, 0, 150 + xInterval * i, 0, 0);
+						}
+						else
+						{
+							obj.sq_StartWrite();
+							obj.sq_WriteDword(15);
+							obj.sq_WriteDword(sizeRateBonus * i);
+							obj.sq_WriteDword(pauseTime * i);
+							obj.sq_SendCreatePassiveObjectPacket(24337, 0, 150 + xInterval * i, 0, 0);
 						}
 					}
-				break;
-			}
-		break;*/
-	case 22:
+				}
+			break;
+		}
+	break;*/
+	/*case 22:
 		switch (flagIndex) {
 		case 10002:
 			local skill_level = sq_GetSkillLevel(obj, 22);
@@ -109,7 +109,7 @@ function onKeyFrameFlag_wave(obj, flagIndex) {
 			}
 			break;
 		}
-		break;
+		break;*/
 		/*case 99:
 			switch(flagIndex)
 			{

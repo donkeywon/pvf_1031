@@ -70,3 +70,13 @@ function addSetStatePacket_Swordman(obj, state, datas) {
 	}
 	return 1;
 };
+
+function useSkill_after_Swordman(obj, skillIndex, consumeMp, consumeItem, oldSkillMpRate)
+{
+	if(!obj) return false;
+	if(skillIndex == 20 || skillIndex == 21 || skillIndex == 22 || skillIndex == 242)
+	{
+		local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skillIndex, false, "Character/Swordman/icewave/ap_asura_wave.nut", true);
+	}
+	return true;
+}
