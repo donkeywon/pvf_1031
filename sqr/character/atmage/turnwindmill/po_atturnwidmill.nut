@@ -30,6 +30,11 @@ function setCustomData_po_ATTurnWidmill(obj, reciveData)
 	local dirType = reciveData.readDword();
 	local angle = reciveData.readDword();
 
+
+    local freeze0 = reciveData.readDword();
+    local freeze1 = reciveData.readDword();
+    local freeze2 = reciveData.readDword();
+
 	local x = sq_GetXPos(obj);
 	local y = sq_GetYPos(obj);
 	local z = sq_GetZPos(obj);
@@ -81,6 +86,10 @@ function setCustomData_po_ATTurnWidmill(obj, reciveData)
 	local pAttack = sq_GetCurrentAttackInfo(obj);			
 	sq_SetCurrentAttackBonusRate(pAttack, attackRate);
 	
+//update
+    local attackInfo = sq_GetCurrentAttackInfo(obj);
+    sq_SetChangeStatusIntoAttackInfo(attackInfo, 0, ACTIVESTATUS_FREEZE,freeze0,freeze1,freeze2);
+//endupdate
 		
 	if(obj.isMyControlObject()) {
 		local pIntVec = sq_GetGlobalIntVector();
@@ -231,6 +240,16 @@ function onDestroyObject_po_ATTurnWidmill(obj, object)
 
 }
 
+function onAttack_po_ATTurnWidmill(obj,damager, boundingBox, isStuck)
+{
+
+    local mage = obj.getTopCharacter();
+    mage = sq_ObjectToSQRCharacter(mage);	
+    if (mage)
+    {
+        mage.getVar("dama").push_obj_vector(damager);
+    }
+}
 function onKeyFrameFlag_po_ATTurnWidmill(obj, flagIndex)
 {
 

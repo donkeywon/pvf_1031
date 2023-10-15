@@ -7,7 +7,24 @@ SUB_STATE_FALLENBLOSSOMS_4	<- 4
 
 //STATE_FALLENBLOSSOMS			<- 40	// 공통:낙화연창
 //SKILL_FALLENBLOSSOMS			<- 21   // 공통:낙화연창
+function setCharacterFristAnimation_FallenBlossoms(obj)
+{
+    local level = sq_GetSkillLevel(obj, SKILL_FALLENBLOSSOMS );		
+    if (level > 0)
+    {
+        createFristAnimationPooledObject(obj,
+        "character/mage/atanimation/fallenblossoms1.ani");
+        createFristAnimationPooledObject(obj,
+        "character/mage/atanimation/fallenblossoms2.ani");
+        createFristAnimationPooledObject(obj,
+        "character/mage/effect/animation/atfallenblossoms/02/spear/01_lance_normal.ani");
+        createFristAnimationPooledObject(obj,
+        "character/mage/effect/animation/atfallenblossoms/02/spearend/01_lance_normal.ani");
+        createFristAnimationPooledObject(obj,
+        "character/mage/effect/animation/atfallenblossoms/02/05_handcover_dodge.ani");
 
+    }
+}
 function checkExecutableSkill_FallenBlossoms(obj)
 {
 
@@ -95,6 +112,13 @@ function createFallenBlossomsSpearExp(obj, disX, disY, disZ)
 
 }
 
+function onAttack_FallenBlossoms(obj, damager, boundingBox, isStuck)
+{
+    if ( !sq_IsFixture(damager) )
+    {
+        obj.getVar("dama").push_obj_vector(damager);
+    }
+}
 
 function onSetState_FallenBlossoms(obj, state, datas, isResetTimer)
 {
@@ -108,6 +132,8 @@ function onSetState_FallenBlossoms(obj, state, datas, isResetTimer)
 
 
 	if(substate == SUB_STATE_FALLENBLOSSOMS_0) {
+        obj.getVar("dama").clear_obj_vector();
+
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_FALLENBLOSSOMS1);
 		obj.sq_PlaySound("MW_ICESPEAR");
 
@@ -140,10 +166,45 @@ function onSetState_FallenBlossoms(obj, state, datas, isResetTimer)
 		obj.getVar().push_vector(0);
 		
 		
-		local len = obj.sq_GetIntData(SKILL_FALLENBLOSSOMS, 0); // 전진거리
-		//local len = 250;
+		local len = obj.sq_GetIntData(SKILL_FALLENBLOSSOMS, 0); 
+        local leny = 0;
 		
+		
+
+
+
+
+		local leftPress = sq_IsKeyDown(OPTION_HOTKEY_MOVE_LEFT, ENUM_SUBKEY_TYPE_ALL);
+		local rightPress = sq_IsKeyDown(OPTION_HOTKEY_MOVE_RIGHT, ENUM_SUBKEY_TYPE_ALL);
+
+		local upPress = sq_IsKeyDown(OPTION_HOTKEY_MOVE_UP, ENUM_SUBKEY_TYPE_ALL);
+		local downPress = sq_IsKeyDown(OPTION_HOTKEY_MOVE_DOWN, ENUM_SUBKEY_TYPE_ALL);
+
+
+
+
 		local pAttack = sq_GetCurrentAttackInfo(obj);
+		if(sq_GetDirection(obj) == ENUM_DIRECTION_RIGHT && leftPress)
+        {
+            len = obj.sq_GetIntData(SKILL_FALLENBLOSSOMS, 1);
+            obj.sq_SetCurrentAttackInfo(ATTACKINFO_FALLMOSBLOSSOMS_2);	
+        }
+
+
+		if(sq_GetDirection(obj) == ENUM_DIRECTION_LEFT && rightPress) 
+        {
+            len = obj.sq_GetIntData(SKILL_FALLENBLOSSOMS, 1);
+            obj.sq_SetCurrentAttackInfo(ATTACKINFO_FALLMOSBLOSSOMS_2);	
+        }
+
+
+		if(sq_GetDirection(obj) == ENUM_DIRECTION_RIGHT && rightPress) len = obj.sq_GetIntData(SKILL_FALLENBLOSSOMS, 2);
+		if(sq_GetDirection(obj) == ENUM_DIRECTION_LEFT && leftPress) len = obj.sq_GetIntData(SKILL_FALLENBLOSSOMS, 2);
+
+        if (upPress) leny = -obj.sq_GetIntData(SKILL_FALLENBLOSSOMS, 3);
+        if (downPress) leny = obj.sq_GetIntData(SKILL_FALLENBLOSSOMS, 3);
+
+
 		local attackRate = obj.sq_GetBonusRateWithPassive(SKILL_FALLENBLOSSOMS STATE_FALLENBLOSSOMS, 0, 1.0); //2.공격력(%)
 		sq_SetCurrentAttackBonusRate(pAttack, attackRate);
 		
@@ -157,19 +218,26 @@ function onSetState_FallenBlossoms(obj, state, datas, isResetTimer)
 		
 		local skillLevel = sq_GetSkillLevel(obj, SKILL_FALLENBLOSSOMS);		
 		local multiHit = sq_GetLevelData(obj, SKILL_FALLENBLOSSOMS, 1, skillLevel);
-		print(" multiHit:" + multiHit + " delay:" + delay);
-		print(delay / multiHit);
 		
 		obj.sq_timer_.setParameter(delay / multiHit, multiHit - 1);
 		obj.sq_timer_.resetInstant(0);
 		
 		
 		
+
+        obj.getVar("hitCount").clear_vector();
+        obj.getVar("hitCount").push_vector(0);
+
+
 		obj.getVar("flag").clear_vector();
 		obj.getVar("flag").push_vector(posX);
 		obj.getVar("flag").push_vector(len);
 		obj.getVar("flag").push_vector(delay);
 		obj.getVar("flag").push_vector(0);
+
+		obj.getVar("flag").push_vector(leny);
+		obj.getVar("flag").push_vector(obj.getYPos() );
+
 	}
 	else if(substate == SUB_STATE_FALLENBLOSSOMS_2) {
 		createFallenBlossomsSpearExp(obj, 0, 3, 70);
@@ -189,16 +257,6 @@ function onSetState_FallenBlossoms(obj, state, datas, isResetTimer)
 
 }
 
-function prepareDraw_FallenBlossoms(obj)
-{
-
-	if(!obj) return;
-
-	local substate = obj.getSkillSubState();
-
-	
-
-}
 
 function onProc_FallenBlossoms(obj)
 {
@@ -259,22 +317,24 @@ function onProc_FallenBlossoms(obj)
 		// 움직임
 		local sq_var = obj.getVar("flag");
 		
-		//obj.getVar("flag").clear_vector();
-		//obj.getVar("flag").push_vector(posX);
-		//obj.getVar("flag").push_vector(len);
-		//obj.getVar("flag").push_vector(delay);
+        local startY = sq_var.get_vector(5);
+        local leny = sq_var.get_vector(4);
+    	local delayT = sq_var.get_vector(2); 
     	local delayT = sq_var.get_vector(2); // 벡터인덱스 2 총 이동시간
     	local len = sq_var.get_vector(1);    	
     	
 		local v = sq_GetAccel(0, len, currentT, delayT, true);
+		local v2 = sq_GetAccel(0, leny, currentT, delayT, true);
+
     	print(" delayT:" + delayT + " current:" + currentT);
-		local srcX = sq_var.get_vector(0); // 벡터 인덱스 1
-		
+		local srcX = sq_var.get_vector(0); 
+		local srcY = startY + v2;
 		local dstX = sq_GetDistancePos(srcX, obj.getDirection(), v);
 		 
 		if(obj.isMovablePos(dstX, posY) && !sq_var.get_vector(3))
 		{ // 이동플래그와 이동가능지역이 모두 가능해야 이동
 			sq_setCurrentAxisPos(obj, 0, dstX);
+			sq_setCurrentAxisPos(obj, 1, srcY);
 		}
 		else
 		{ // 이동할 수 없는 지역을 만났다..
@@ -291,7 +351,33 @@ function onProc_FallenBlossoms(obj)
 		}
 		
 		if (obj.sq_timer_.isOnEvent(currentT) == true)
+        {
+
+            local skillLevel = sq_GetSkillLevel(obj, SKILL_FALLENBLOSSOMS);		
+            local skill_level2 = sq_GetSkillLevel(obj, SKILL_ICEMASTER);
+
+            local multiHit = sq_GetLevelData(obj, SKILL_FALLENBLOSSOMS, 1, skillLevel);
+
+            local currHit = obj.getVar("hitCount").get_vector(0);
+            if (currHit + 2 >= multiHit)
+            {
+
+                if(skill_level2 > 0)
+                {
+
+                    local attackInfo = sq_GetCurrentAttackInfo(obj);
+                    sq_SetChangeStatusIntoAttackInfo(attackInfo, 0, ACTIVESTATUS_FREEZE,  
+                    sq_GetLevelData(obj, SKILL_FALLENBLOSSOMS, 2, skillLevel), 
+                    sq_GetLevelData(obj, SKILL_FALLENBLOSSOMS, 3, skillLevel) + sq_GetLevelData(obj, SKILL_ICEMASTER , 1, skill_level2), 
+                    sq_GetLevelData(obj, SKILL_FALLENBLOSSOMS, 4, skillLevel));
+
+                }
+            }else{
+                obj.getVar("hitCount").set_vector(0,currHit + 1);
+
+            }
 			obj.resetHitObjectList();
+		}	
 			
 		//////
 		
@@ -324,30 +410,22 @@ function onProc_FallenBlossoms(obj)
 
 }
 
-function onProcCon_FallenBlossoms(obj)
+function onKeyFrameFlag_FallenBlossoms(obj, flagIndex)
 {
 
-	if(!obj) return;
+    if (flagIndex == 10)
+    {
 
-	local substate = obj.getSkillSubState();
+        local damager = obj.getVar("dama").get_obj_vector(0);
+        local atk = obj.sq_GetBonusRateWithPassive(SKILL_FALLENBLOSSOMS,STATE_FALLENBLOSSOMS, 0, 1.0);
 
-	if(substate == SUB_STATE_FALLENBLOSSOMS_0) {
-		// SUB_STATE_FALLENBLOSSOMS_0 서브스테이트 작업
-	}
-	else if(substate == SUB_STATE_FALLENBLOSSOMS_1) {
-		// SUB_STATE_FALLENBLOSSOMS_1 서브스테이트 작업
-	}
-	else if(substate == SUB_STATE_FALLENBLOSSOMS_2) {
-		// SUB_STATE_FALLENBLOSSOMS_2 서브스테이트 작업
-	}
-	else if(substate == SUB_STATE_FALLENBLOSSOMS_3) {
-		// SUB_STATE_FALLENBLOSSOMS_3 서브스테이트 작업
-	}
-	else if(substate == SUB_STATE_FALLENBLOSSOMS_4) {
-		// SUB_STATE_FALLENBLOSSOMS_4 서브스테이트 작업
-	}
-	
+        if (damager)
+        {
+            sendIce75Passive(obj,damager,atk);
 
+        }
+        return true;
+    }
 }
 
 function onEndCurrentAni_FallenBlossoms(obj)
@@ -362,102 +440,23 @@ function onEndCurrentAni_FallenBlossoms(obj)
 
 	if(substate == SUB_STATE_FALLENBLOSSOMS_0) {
 		obj.sq_IntVectClear();
-		obj.sq_IntVectPush(SUB_STATE_FALLENBLOSSOMS_1); // substate세팅
+		obj.sq_IntVectPush(SUB_STATE_FALLENBLOSSOMS_1); 
 		obj.sq_AddSetStatePacket(STATE_FALLENBLOSSOMS, STATE_PRIORITY_IGNORE_FORCE, true);
 	}
 	else if(substate == SUB_STATE_FALLENBLOSSOMS_1) {
 		obj.sq_IntVectClear();
-		obj.sq_IntVectPush(SUB_STATE_FALLENBLOSSOMS_2); // substate세팅
+		obj.sq_IntVectPush(SUB_STATE_FALLENBLOSSOMS_2); 
 		obj.sq_AddSetStatePacket(STATE_FALLENBLOSSOMS, STATE_PRIORITY_IGNORE_FORCE, true);
 	}
 	else if(substate == SUB_STATE_FALLENBLOSSOMS_2) {
+
 		obj.sq_AddSetStatePacket(STATE_STAND, STATE_PRIORITY_USER, false);
 	}
 	else if(substate == SUB_STATE_FALLENBLOSSOMS_3) {
-		// SUB_STATE_FALLENBLOSSOMS_3 서브스테이트 작업
+		
 	}
 	else if(substate == SUB_STATE_FALLENBLOSSOMS_4) {
-		// SUB_STATE_FALLENBLOSSOMS_4 서브스테이트 작업
-	}
-	
-
-}
-
-function onKeyFrameFlag_FallenBlossoms(obj, flagIndex)
-{
-
-	if(!obj) return false;
-
-	local substate = obj.getSkillSubState();
-
-	if(substate == SUB_STATE_FALLENBLOSSOMS_0) {
-		// SUB_STATE_FALLENBLOSSOMS_0 서브스테이트 작업
-	}
-	else if(substate == SUB_STATE_FALLENBLOSSOMS_1) {
-		// SUB_STATE_FALLENBLOSSOMS_1 서브스테이트 작업
-	}
-	else if(substate == SUB_STATE_FALLENBLOSSOMS_2) {
-		// SUB_STATE_FALLENBLOSSOMS_2 서브스테이트 작업
-	}
-	else if(substate == SUB_STATE_FALLENBLOSSOMS_3) {
-		// SUB_STATE_FALLENBLOSSOMS_3 서브스테이트 작업
-	}
-	else if(substate == SUB_STATE_FALLENBLOSSOMS_4) {
-		// SUB_STATE_FALLENBLOSSOMS_4 서브스테이트 작업
-	}
-	
-
-	return false;
-
-}
-
-function onEndState_FallenBlossoms(obj, new_state)
-{
-
-	if(!obj) return;
-
-	local substate = obj.getSkillSubState();
-
-	if(substate == SUB_STATE_FALLENBLOSSOMS_0) {
-		// SUB_STATE_FALLENBLOSSOMS_0 서브스테이트 작업
-	}
-	else if(substate == SUB_STATE_FALLENBLOSSOMS_1) {
-		// SUB_STATE_FALLENBLOSSOMS_1 서브스테이트 작업
-	}
-	else if(substate == SUB_STATE_FALLENBLOSSOMS_2) {
-		// SUB_STATE_FALLENBLOSSOMS_2 서브스테이트 작업
-	}
-	else if(substate == SUB_STATE_FALLENBLOSSOMS_3) {
-		// SUB_STATE_FALLENBLOSSOMS_3 서브스테이트 작업
-	}
-	else if(substate == SUB_STATE_FALLENBLOSSOMS_4) {
-		// SUB_STATE_FALLENBLOSSOMS_4 서브스테이트 작업
-	}
-	
-
-}
-
-function onAfterSetState_FallenBlossoms(obj, state, datas, isResetTimer)
-{
-
-	if(!obj) return;
-
-	local substate = obj.getSkillSubState();
-
-	if(substate == SUB_STATE_FALLENBLOSSOMS_0) {
-		// SUB_STATE_FALLENBLOSSOMS_0 서브스테이트 작업
-	}
-	else if(substate == SUB_STATE_FALLENBLOSSOMS_1) {
-		// SUB_STATE_FALLENBLOSSOMS_1 서브스테이트 작업
-	}
-	else if(substate == SUB_STATE_FALLENBLOSSOMS_2) {
-		// SUB_STATE_FALLENBLOSSOMS_2 서브스테이트 작업
-	}
-	else if(substate == SUB_STATE_FALLENBLOSSOMS_3) {
-		// SUB_STATE_FALLENBLOSSOMS_3 서브스테이트 작업
-	}
-	else if(substate == SUB_STATE_FALLENBLOSSOMS_4) {
-		// SUB_STATE_FALLENBLOSSOMS_4 서브스테이트 작업
+		
 	}
 	
 

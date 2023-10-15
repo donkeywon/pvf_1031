@@ -11,12 +11,37 @@ function sq_AddFunctionName(appendage)
 	appendage.sq_AddFunctionName("drawAppend", "drawAppend_appendage_atmage_tundra_cs")
 	appendage.sq_AddFunctionName("isEnd", "isEnd_appendage_atmage_tundra_cs")
 	appendage.sq_AddFunctionName("isDrawAppend", "isDrawAppend_appendage_atmage_tundra_cs")
-	appendage.sq_AddFunctionName("onApplyHpDamage", "onApplyHpDamage_appendage_atmage_tundra_cs")
+	appendage.sq_AddFunctionName("getImmuneTypeDamageRate", "getImmuneTypeDamageRate_appendage_atmage_tundra_cs")
+//	appendage.sq_AddFunctionName("onApplyHpDamage", "onApplyHpDamage_appendage_atmage_tundra_cs")
 }
 
 
 function sq_AddEffect(appendage)
 {
+}
+
+
+
+function getImmuneTypeDamageRate_appendage_atmage_tundra_cs(appendage, damageRate, attacker)
+{
+
+	local obj = appendage.getParent();
+	
+	if(!obj)
+		return newHpDamage;
+	
+	local damage = damageRate;
+	
+	if(sq_IsValidActiveStatus(obj, ACTIVESTATUS_FREEZE))
+	{
+		local frozenAddDamageRate = appendage.getVar("skl").get_vector(4);
+		
+		local addDamage = newHpDamage.tofloat() * frozenAddDamageRate.tofloat() / 100.0;
+		
+		damage = damage + addDamage;
+	}
+	
+	return damage;
 }
 
 function drawAppend_appendage_atmage_tundra_cs(appendage, isOver, x, y, isFlip)

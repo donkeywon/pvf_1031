@@ -79,7 +79,7 @@ function setState_po_ATIceManMagicCircle(obj, state, datas)
 	
 	obj.getVar("state").clear_ct_vector();
 	obj.getVar("state").push_ct_vector();	
-// 초기화	
+// ????	
 	local t = obj.getVar("state").get_ct_vector(0);
 	t.Reset();
 	t.Start(10000,0);
@@ -130,14 +130,14 @@ function setState_po_ATIceManMagicCircle(obj, state, datas)
 		
 		obj.getVar().push_obj_vector(pooledFrontObj); // index 2
 		
-		// 먼지
+		// ????
 		createAnimationPooledObject(obj, 
 		"PassiveObject/Character/Mage/Animation/ATIceMan/02_pole/dust/19smoke_dodge_11.ani", true, 
 		posX, posY + 1, 0);		
 		//	
 	}
 	else if(passiveState == PASSIVEOBJ_SUB_STATE_3)
-	{ // 얼음파괴 1
+	{ // ??????? 1
 		local ani = obj.getCustomAnimation(2);
 		obj.setCurrentAnimation(ani);
 	
@@ -145,7 +145,7 @@ function setState_po_ATIceManMagicCircle(obj, state, datas)
 		sq_SetCurrentAttackInfo(obj, attackInfo);
 		
 		////////////////////////////////////////////////////////
-		// 쇼크웨이브 추가
+		// ???????? ???
 		local pooledObj = null;
 		
 				
@@ -192,7 +192,7 @@ function setState_po_ATIceManMagicCircle(obj, state, datas)
 		
 		if(obj.isMyControlObject())
 		{
-			// 화면효과
+			// ??????
 			local fScreen = sq_flashScreen(obj,0,80,0,80, sq_RGB(255,255,255), GRAPHICEFFECT_NONE, ENUM_DRAWLAYER_BOTTOM);
 			sq_addFlashScreen(fScreen, 0, 400, 240, 150, sq_RGB(0,0,0), GRAPHICEFFECT_NONE, ENUM_DRAWLAYER_BOTTOM);
 			//		
@@ -201,7 +201,7 @@ function setState_po_ATIceManMagicCircle(obj, state, datas)
 		}
 	}
 	else if(passiveState == PASSIVEOBJ_SUB_STATE_4)
-	{ // 얼음파괴 2
+	{ // ??????? 2
 		local pooledFrontObj = createAnimationPooledObject(obj, 
 		"PassiveObject/Character/Mage/Animation/ATIceMan/03_destroy/destroy_base_1.ani", false, 
 		posX, posY, 0);
@@ -210,13 +210,13 @@ function setState_po_ATIceManMagicCircle(obj, state, datas)
 		
 		obj.getVar().push_obj_vector(pooledFrontObj);
 		
-		// 글로우		
+		// ????		
 		createAnimationPooledObject(obj, 
 		"PassiveObject/Character/Mage/Animation/ATIceMan/03_destroy/02_broken/23_glow_dodge.ani", true, 
 		posX, posY + 1, 0);
 		
 		
-		// 먼지
+		// ????
 		createAnimationPooledObject(obj, 
 			"PassiveObject/Character/Mage/Animation/ATIceMan/03_destroy/02_broken/dust/19smoke_dodge_00.ani", true, 
 		posX, posY + 1, 0);		
@@ -232,7 +232,7 @@ function setState_po_ATIceManMagicCircle(obj, state, datas)
 		
 	}
 	else if(passiveState == PASSIVEOBJ_SUB_STATE_5)
-	{ // 얼음파괴 3
+	{ // ??????? 3
 		local ani = obj.getCustomAnimation(2);
 		obj.setCurrentAnimation(ani);
 	
@@ -265,7 +265,7 @@ function setState_po_ATIceManMagicCircle(obj, state, datas)
 		
 		obj.getVar().push_obj_vector(pooledFrontObj);
 		
-		// 글로우		
+		// ????		
 		createAnimationPooledObject(obj, 
 		"PassiveObject/Character/Mage/Animation/ATIceMan/03_destroy/02_broken/23_glow_dodge.ani", true, 
 		posX, posY + 1, 0);
@@ -277,7 +277,7 @@ function setState_po_ATIceManMagicCircle(obj, state, datas)
 		
 		sq_AddParticleObject(obj, particleCreater);
 		
-		// 먼지
+		// ????
 		createAnimationPooledObject(obj, 
 		"PassiveObject/Character/Mage/Animation/ATIceMan/03_destroy/03_broken_02/dust/19smoke_dodge_00.ani", true, 
 		posX, posY + 1, 0);		
@@ -293,7 +293,7 @@ function setState_po_ATIceManMagicCircle(obj, state, datas)
 		
 	}
 	else if(passiveState == PASSIVEOBJ_SUB_STATE_6)
-	{ // 마법진삭제
+	{ // ??????????
 		print(" passiveState == PASSIVEOBJ_SUB_STATE_6");
 		local ani = obj.getCustomAnimation(3);
 		obj.setCurrentAnimation(ani);
@@ -384,11 +384,11 @@ function procAppend_po_ATIceManMagicCircle(obj)
 		}
 	}
 	else if(passiveState > PASSIVEOBJ_SUB_STATE_1 && passiveState < PASSIVEOBJ_SUB_STATE_6)
-	{ // 얼음생성,  얼음파괴
-		//PASSIVEOBJ_SUB_STATE_2	// 얼음생성
-		//PASSIVEOBJ_SUB_STATE_3	// 얼음파괴 - 까만화면
-		//PASSIVEOBJ_SUB_STATE_4	// 얼음파괴 - 파괴1
-		//PASSIVEOBJ_SUB_STATE_5	// 얼음파괴 - 파괴2
+	{ // ????????,  ???????
+		//PASSIVEOBJ_SUB_STATE_2	// ????????
+		//PASSIVEOBJ_SUB_STATE_3	// ??????? - ?????
+		//PASSIVEOBJ_SUB_STATE_4	// ??????? - ???1
+		//PASSIVEOBJ_SUB_STATE_5	// ??????? - ???2
 		local sendState = false;
 		local castingObj = obj.getVar().get_obj_vector(0);
 
@@ -399,7 +399,7 @@ function procAppend_po_ATIceManMagicCircle(obj)
 			if(isEnd)
 			{
 				if(passiveState == PASSIVEOBJ_SUB_STATE_2)
-				{ // 얼음생성이 모두 끝났을 때
+				{ // ?????????? ??? ?????? ??
 					if(pChr.getState() == STATE_ICEMAN && pChr.getSkillSubState() >= SUB_STATE_ICEMAN_4)
 					{
 						local frmIndex = sq_GetCurrentFrameIndex(pChr);
@@ -418,9 +418,9 @@ function procAppend_po_ATIceManMagicCircle(obj)
 				}
 			}
 			else
-			{ // 애니메이션이 안끝났을 때
+			{ // ????????? ??????? ??
 				if(passiveState == PASSIVEOBJ_SUB_STATE_2)				
-				{ // 기둥과 몸이 프레임 동기화
+				{ // ???? ???? ?????? ?????
 					if(pChr.getSkillSubState() == SUB_STATE_ICEMAN_3)
 					{
 						local frmIndex = sq_GetCurrentFrameIndex(pChr);
@@ -519,7 +519,7 @@ function onEndCurrentAni_po_ATIceManMagicCircle(obj)
 	{
 	}
 	else if(passiveState == PASSIVEOBJ_SUB_STATE_6)
-	{ // 삭제
+	{ // ????
 		print(" passiveState == PASSIVEOBJ_SUB_STATE_6 destroy");
 		sq_SendDestroyPacketPassiveObject(obj);
 	}
@@ -540,7 +540,8 @@ function onAttack_po_ATIceManMagicCircle(obj, damager, boundingBox, isStuck)
 	
 	if(!active_damager)
 		return 0;
-
+    pChr.getVar("dama2").clear_obj_vector();
+    pChr.getVar("dama2").push_obj_vector(active_damager);
 	
 	local passiveState = obj.getVar("state").get_vector(0);
 	
@@ -551,7 +552,7 @@ function onAttack_po_ATIceManMagicCircle(obj, damager, boundingBox, isStuck)
 		local rate = obj.getVar("freezeRate").get_vector(0);
 		print(" rate:" + rate + " rand" + rand);
 		
-		// 이속확율이 넘어가야 이속감소 어펜디지를 걸어줍니다..
+		// ???????? ????? ?????? ????????? ???????..
 		if(rand <= obj.getVar("freezeRate").get_vector(0))
 		{	
 			CNSquirrelAppendage.sq_AppendAppendage(damager, pChr, SKILL_ICEMAN, 

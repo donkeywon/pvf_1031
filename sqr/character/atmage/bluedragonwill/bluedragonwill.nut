@@ -23,6 +23,25 @@ function checkExecutableSkill_BlueDragonWill(obj)
 
 }
 
+function setCharacterFristAnimation_BlueDragonWill(obj)
+{
+    local level = sq_GetSkillLevel(obj, SKILL_BLUEDRAGONWILL );		
+    if (level > 0)
+    {
+        createFristAnimationPooledObject(obj,
+        "character/mage/atanimation/bluedragonwill1.ani");
+        createFristAnimationPooledObject(obj,
+        "character/mage/atanimation/bluedragonwill2.ani");
+        createFristAnimationPooledObject(obj,
+        "character/mage/atanimation/bluedragonwill3.ani");
+        createFristAnimationPooledObject(obj,
+        "passiveobject/character/mage/animation/atbluedragonwill/11_last_ice_dodge.ani");
+        createFristAnimationPooledObject(obj,
+        "passiveobject/character/mage/animation/atbluedragonwill/earthbreakin.ani");
+
+
+    }
+}
 function checkCommandEnable_BlueDragonWill(obj)
 {
 
@@ -98,6 +117,18 @@ function onSetState_BlueDragonWill(obj, state, datas, isResetTimer)
 		obj.getVar().push_vector(posX); // 현재 x : i: 2
 		obj.getVar().push_vector(posY); // 현재 y : i: 3
 		
+		local leftPress = sq_IsKeyDown(OPTION_HOTKEY_MOVE_LEFT, ENUM_SUBKEY_TYPE_ALL);
+		local rightPress = sq_IsKeyDown(OPTION_HOTKEY_MOVE_RIGHT, ENUM_SUBKEY_TYPE_ALL);
+
+		local pAttack = sq_GetCurrentAttackInfo(obj);
+		if ((sq_GetDirection(obj) == ENUM_DIRECTION_RIGHT && leftPress) || 
+		(sq_GetDirection(obj) == ENUM_DIRECTION_LEFT && rightPress) )
+		{
+                obj.getVar().push_vector(50); 
+                obj.getVar().push_vector(0); 
+
+		}else
+		{
 		if(targetObj) {
 			local disX = sq_Abs(targetObj.getXPos() - posX);
 			local disY = targetObj.getYPos() - posY;
@@ -114,7 +145,8 @@ function onSetState_BlueDragonWill(obj, state, datas, isResetTimer)
 			local defaultDistance = obj.sq_GetIntData(SKILL_BLUEDRAGONWILL, 1); // 간접 공격 (지진 확대율) (100~)
 			obj.getVar().push_vector(defaultDistance); // x축 이동거리 
 			obj.getVar().push_vector(0); // y축 이동거리
-		}		
+		}	
+		}	
 	
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_BLUEDRAGONWILL2);
 		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED,SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.2, 1.2);
@@ -386,6 +418,11 @@ function onKeyFrameFlag_BlueDragonWill(obj, flagIndex)
 	if(!obj) return false;
 
 	local substate = obj.getSkillSubState();
+	
+	if (flagIndex == 10)
+    {
+        return true;
+    }
 
 	if(substate == SUB_STATE_BLUEDRAGONWILL_0) {
 		// SUB_STATE_BLUEDRAGONWILL_0 서브스테이트 작업

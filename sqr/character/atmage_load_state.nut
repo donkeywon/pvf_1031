@@ -9,6 +9,8 @@ IRDSQRCharacter.pushScriptFiles("Character/ATMage/atmage_common.nut"); //  이곳�
 IRDSQRCharacter.pushScriptFiles("Character/ATMage/passive_skill_ATMage.nut"); // 기본적인 패시브 스킬을 처리하는 부분입니다.
 
 
+IRDSQRCharacter.pushScriptFiles("character/new_atmage/atmage_value.nut");
+IRDSQRCharacter.pushScriptFiles("character/new_atmage/atmage_value1.nut");
 //******************************************************************************************
 // 스킬개별 NUT파일 로드
 //******************************************************************************************

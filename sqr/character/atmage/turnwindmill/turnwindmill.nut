@@ -43,6 +43,14 @@ function checkCommandEnable_TurnWindmill(obj)
 
 }
 
+function onAttack_TurnWindmill(obj, damager, boundingBox, isStuck)
+{
+    if ( !sq_IsFixture(damager) )
+    {
+        obj.getVar("dama").push_obj_vector(damager);
+    }
+}
+
 function onSetState_TurnWindmill(obj, state, datas, isResetTimer)
 {
 
@@ -72,6 +80,9 @@ function onSetState_TurnWindmill(obj, state, datas, isResetTimer)
 
 	if(substate == SUB_STATE_TURNWINDMILL_0) {
 	
+        obj.getVar("dama").clear_obj_vector();
+
+
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_TURNWINDMILL1);
 		
 		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
@@ -220,6 +231,13 @@ function onProcCon_TurnWindmill(obj)
 				local attackRate = obj.sq_GetBonusRateWithPassive(SKILL_TURNWINDMILL, STATE_TURNWINDMILL, 0, 1.0); //0.공격력(%)
 				local term = obj.sq_GetIntData(SKILL_TURNWINDMILL, 0); // 0. 다단히트 간격
 
+//update
+                local skillLevel = sq_GetSkillLevel(obj, SKILL_TURNWINDMILL);		
+
+                local freezeProc = sq_GetLevelData(obj, SKILL_TURNWINDMILL, 2, skillLevel);
+                local freezeLevel = sq_GetLevelData(obj, SKILL_TURNWINDMILL,3, skillLevel);
+                local freezeTime = sq_GetLevelData(obj, SKILL_TURNWINDMILL, 4, skillLevel);
+//endupdate
 				if(obj.isMyControlObject())
 				{
 					sq_BinaryStartWrite();
@@ -229,6 +247,24 @@ function onProcCon_TurnWindmill(obj)
 					sq_BinaryWriteDword(term); //
 					sq_BinaryWriteDword(0); // 		
 					
+//update 
+                    local skill_level2 = sq_GetSkillLevel(obj, SKILL_ICEMASTER);
+                    if(skill_level2 > 0)
+                    {
+
+                        sq_BinaryWriteDword(0); // 		
+                        sq_BinaryWriteDword(freezeProc); // 		
+                        sq_BinaryWriteDword(freezeLevel + sq_GetLevelData(obj, SKILL_ICEMASTER , 1, skill_level2) ); // 		
+                        sq_BinaryWriteDword(freezeTime); // 		
+                    }else{
+                        sq_BinaryWriteDword(0); // 		
+                        sq_BinaryWriteDword(0); // 		
+                        sq_BinaryWriteDword(0); // 		
+                        sq_BinaryWriteDword(0); // 		
+                    }
+
+
+//endupdate
 					obj.sq_SendCreatePassiveObjectPacket(24251, 0, fireOffsetX, fireOffsetY + 1, fireOffsetZ); // po_ATTurnWidmill.nut
 					
 					local dirFiringSwitch = obj.sq_GetIntData(SKILL_TURNWINDMILL, 3);// 3. 크로니크에 따른 각도 동시발사 on/off스위치
@@ -244,6 +280,19 @@ function onProcCon_TurnWindmill(obj)
 						sq_BinaryWriteDword(term); //
 						sq_BinaryWriteDword(1); //
 						sq_BinaryWriteDword(dir); //
+//update 
+                        local skill_level2 = sq_GetSkillLevel(obj, SKILL_ICEMASTER);
+                        if(skill_level2 > 0)
+                        {
+                            sq_BinaryWriteDword(freezeProc); // 		
+                            sq_BinaryWriteDword(freezeLevel + sq_GetLevelData(obj, SKILL_ICEMASTER , 1, skill_level2) ); // 		
+                            sq_BinaryWriteDword(freezeTime); // 		
+                        }else{
+                            sq_BinaryWriteDword(0); // 		
+                            sq_BinaryWriteDword(0); // 		
+                            sq_BinaryWriteDword(0); // 		
+                        }
+//endupdate
 						obj.sq_SendCreatePassiveObjectPacket(24251, 0, fireOffsetX, fireOffsetY + 1, fireOffsetZ); // po_ATTurnWidmill.nut
 					}
 					
@@ -354,6 +403,18 @@ function onKeyFrameFlag_TurnWindmill(obj, flagIndex)
 	if(!obj) return false;
 
 	local substate = obj.getSkillSubState();
+    if (flagIndex == 10)
+    {
+        local damager = obj.getVar("dama").get_obj_vector(0);
+        local atk = obj.sq_GetBonusRateWithPassive(SKILL_TURNWINDMILL, STATE_TURNWINDMILL, 0, 1.0);
+
+        if (damager)
+        {
+            sendIce75Passive(obj,damager,atk);
+
+        }
+        return true;
+    }
 
 	return false;
 

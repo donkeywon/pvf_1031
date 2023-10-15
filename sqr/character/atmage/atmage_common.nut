@@ -1,3 +1,222 @@
+function setCharacterFristAnimation_ATMage(obj)
+{
+    if (sq_getJob(obj) != 8)
+        return false;
+
+    setCharacterFristAnimation_BlueDragonWill(obj);
+    setCharacterFristAnimation_BrokenArrow(obj);
+    setCharacterFristAnimation_FallenBlossoms(obj);
+    setCharacterFristAnimation_FrozenLand(obj);
+    setCharacterFristAnimation_Ice85(obj);
+    setCharacterFristAnimation_IceChakram(obj);
+    setCharacterFristAnimation_IceCrash(obj);
+    setCharacterFristAnimation_IceMan(obj);
+    setCharacterFristAnimation_IceSword(obj);
+    setCharacterFristAnimation_OverFreezeExtension(obj);
+    setCharacterFristAnimation_ShardMagnum(obj);
+    setCharacterFristAnimation_PieceOfIce(obj);
+    setCharacterFristAnimation_IceOrbEx(obj);
+    setCharacterFristAnimation_IceFieldEx(obj);
+}
+function setActiveStatus_ATMage(obj, activeStatus, power)
+{
+    createDamageRateByTargetAndID(obj,obj,1,power,0,1,0);
+//    outPut("dummy/dummy.txt","active = " + activeStatus + " power =" + power + "\n");
+	return 1;
+}
+function isExcutableState_ATMage(obj, skill_index)
+{
+    return true;
+
+}
+function createIceCraftShootEffect(obj,angle)
+{
+    local ani = sq_CreateAnimation("","passiveobject/zrr_skill/atmage/animation/aticecraft/icecraft_shoot.ani");
+	local pooledObj = sq_CreatePooledObject(ani,true);
+	pooledObj.setCurrentPos(obj.getXPos() ,obj.getYPos() + 1,obj.getZPos() );
+	pooledObj.setCurrentDirection(obj.getDirection());
+	sq_AddObject(obj,pooledObj,2,false);	
+    sq_SetCustomRotate(pooledObj,angle);
+
+
+}
+
+
+function iceCraftHitBehind(obj,damager)
+{
+    local ani = sq_CreateAnimation("","passiveobject/zrr_skill/atmage/animation/aticecraft/icecraft_hitbehind.ani");
+	local pooledObj = sq_CreatePooledObject(ani,true);
+	pooledObj.setCurrentPos(damager.getXPos() ,damager.getYPos() - 1,damager.getZPos() + damager.getObjectHeight()/2 );
+	pooledObj.setCurrentDirection(damager.getDirection());
+	sq_AddObject(obj,pooledObj,2,false);	
+
+
+}
+
+function iceCraftHitFront(obj,damager)
+{
+    local ani = sq_CreateAnimation("","passiveobject/zrr_skill/atmage/animation/aticecraft/icecraft_hitfront.ani");
+	local pooledObj = sq_CreatePooledObject(ani,true);
+	pooledObj.setCurrentPos(damager.getXPos() ,damager.getYPos() + 1,damager.getZPos() + damager.getObjectHeight()/2 );
+	pooledObj.setCurrentDirection(damager.getDirection());
+	sq_AddObject(obj,pooledObj,2,false);	
+
+
+}
+
+
+function sendIce75Passive(obj,damager,atk)
+{
+    local skill_level = sq_GetSkillLevel(obj, SKILL_ICE75PASS);
+	if(skill_level > 0)
+	{
+
+            local hei = obj.sq_GetIntData(SKILL_ICE75PASS, 2) + sq_getRandom(0,30).tointeger();
+            local rate1 = sq_GetLevelData(obj, SKILL_ICE75PASS, 0, skill_level);
+            local rate2 = sq_GetLevelData(obj, SKILL_ICE75PASS, 1, skill_level);
+            local shootSpeedTime = obj.sq_GetIntData(SKILL_ICE75PASS, 0);
+            local size = obj.sq_GetIntData(SKILL_ICE75PASS, 1);
+            local posX = obj.getXPos() - damager.getXPos();
+            local posY = obj.getYPos() - damager.getYPos();
+            local posZ = hei - (damager.getZPos() + damager.getObjectHeight()/2) - 25;
+
+            obj.sq_StartWrite();
+            obj.sq_WriteDword(atk );	// attackBonusRate
+            obj.sq_WriteDword(2);
+            obj.sq_WriteDword(-posX);
+            obj.sq_WriteDword(-posY);
+            obj.sq_WriteDword(-posZ);
+            obj.sq_WriteDword(shootSpeedTime);
+            obj.sq_WriteDword(size);
+            obj.sq_WriteDword(rate1);
+            obj.sq_WriteDword(rate2);
+
+            obj.sq_SendCreatePassiveObjectPacket(24364, 0, -50 - sq_getRandom(0,50).tointeger(), 20, hei);
+    }
+}
+
+function proc_ice75passive(obj)
+{
+    local skill_level = sq_GetSkillLevel(obj, SKILL_ICE75PASS);
+	if(skill_level > 0)
+	{
+
+        if (!CNSquirrelAppendage.sq_IsAppendAppendage(obj, "character/atmage/ice75passive/ap_ice75passive.nut") )
+        {
+            local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, SKILL_ICE75PASS , false, 
+				"character/atmage/ice75passive/ap_ice75passive.nut", true);
+        }
+
+    }
+}
+
+function proc_icemaster(obj)
+{
+    local skill_level = sq_GetSkillLevel(obj, SKILL_ICEMASTER);
+	if(skill_level > 0)
+	{
+
+        if (!CNSquirrelAppendage.sq_IsAppendAppendage(obj, "character/atmage/icemaster/ap_icemaster.nut") )
+        {
+            local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, SKILL_ICEMASTER , false, 
+				"character/atmage/icemaster/ap_icemaster.nut", true);
+        }
+
+    }
+}
+function proc_break(obj)
+{
+    return false;
+    local skill_level = sq_GetSkillLevel(obj, SKILL_BREAK);
+	if(skill_level > 0)
+	{
+        if (!CNSquirrelAppendage.sq_IsAppendAppendage(obj, "character/atmage/break/ap_break.nut") )
+        {
+            local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, SKILL_BREAK, false, 
+				"character/atmage/break/ap_break.nut", true);
+
+            appendage.setAppendCauseSkill(BUFF_CAUSE_SKILL, sq_getJob(obj), SKILL_BREAK, skill_level);
+            CNSquirrelAppendage.sq_AppendAppendageID(appendage, obj, obj, SKILL_BREAK, true);
+
+			local value0 = sq_GetLevelData(obj, SKILL_BREAK, 0, skill_level); 
+			local value1 = sq_GetLevelData(obj, SKILL_BREAK, 1, skill_level); 
+			local value2 = sq_GetLevelData(obj, SKILL_BREAK, 2, skill_level); 
+			local value3 = sq_GetLevelData(obj, SKILL_BREAK, 3, skill_level); 
+			local value4 = sq_GetLevelData(obj, SKILL_BREAK, 4, skill_level); 
+			local value5 = sq_GetLevelData(obj, SKILL_BREAK, 5, skill_level); 
+			local value6 = sq_GetLevelData(obj, SKILL_BREAK, 6, skill_level); 
+			local value7 = sq_GetLevelData(obj, SKILL_BREAK, 7, skill_level); 
+			local value8 = sq_GetLevelData(obj, SKILL_BREAK, 8, skill_level); 
+			local value9 = sq_GetLevelData(obj, SKILL_BREAK, 9, skill_level); 
+			local value10 = sq_GetLevelData(obj, SKILL_BREAK, 10, skill_level); 
+			local value11 = sq_GetLevelData(obj, SKILL_BREAK, 11, skill_level); 
+			local value12 = sq_GetLevelData(obj, SKILL_BREAK, 12, skill_level); 
+			local value13 = sq_GetLevelData(obj, SKILL_BREAK, 13, skill_level); 
+			local value14 = sq_GetLevelData(obj, SKILL_BREAK, 14, skill_level); 
+			local value15 = sq_GetLevelData(obj, SKILL_BREAK, 15, skill_level); 
+			local value16 = sq_GetLevelData(obj, SKILL_BREAK, 16, skill_level); 
+			local value17 = sq_GetLevelData(obj, SKILL_BREAK, 17, skill_level); 
+			local value18 = sq_GetLevelData(obj, SKILL_BREAK, 18, skill_level); 
+			local value19 = sq_GetLevelData(obj, SKILL_BREAK, 19, skill_level); 
+			local value20 = sq_GetLevelData(obj, SKILL_BREAK, 20, skill_level); 
+			local value21 = sq_GetLevelData(obj, SKILL_BREAK, 21, skill_level); 
+
+			local change_appendage = appendage.sq_getChangeStatus("break");
+
+			if(!change_appendage)
+            {
+				change_appendage = appendage.sq_AddChangeStatusAppendageID(obj, obj, 0, 
+				CHANGE_STATUS_TYPE_PHYSICAL_ATTACK, 
+				false, value0, APID_COMMON);
+
+			}
+            if (change_appendage){
+				change_appendage.clearParameter();
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_PHYSICAL_ATTACK, false, value0.tofloat());
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_MAGICAL_ATTACK, false, value1.tofloat());
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_PHYSICAL_DEFENSE, false, value2.tofloat());
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_MAGICAL_DEFENSE, false, value3.tofloat());
+
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_EQUIPMENT_PHYSICAL_ATTACK, false, value4.tofloat());
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_EQUIPMENT_MAGICAL_ATTACK, false, value5.tofloat());
+
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_ELEMENT_ATTACK_LIGHT, false, value7.tofloat());
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_ELEMENT_ATTACK_DARK, false, value8.tofloat());
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_ELEMENT_ATTACK_WATER, false, value9.tofloat());
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_ELEMENT_ATTACK_FIRE, false, value10.tofloat());
+
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_ELEMENT_TOLERANCE_LIGHT, false, value11.tofloat());
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_ELEMENT_TOLERANCE_DARK, false, value12.tofloat());
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_ELEMENT_TOLERANCE_WATER, false, value13.tofloat());
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_ELEMENT_TOLERANCE_FIRE, false, value14.tofloat());
+
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_PHYSICAL_CRITICAL_HIT_RATE, false, value15.tofloat());
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_MAGICAL_CRITICAL_HIT_RATE, false, value16.tofloat());
+
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_STUCK, false, - value17.tofloat());
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_BACK_ATTACK_STUCK_TOLERANCE, false, value18.tofloat());
+
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_ATTACK_SPEED, false, value19.tofloat()*10);
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_CAST_SPEED, false, value20.tofloat()*10);
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_MOVE_SPEED, false, value21.tofloat()*10);
+
+                //pass 6
+
+
+
+			}
+
+        }
+
+    }
+}
+function procSkill_ATMage(obj)
+{
+	procSkill_IceRoad(obj);
+    proc_icemaster(obj);
+    proc_ice75passive(obj);
+	procSkill_MagicShield(obj);
+}
 
 function destroyObject(obj)
 {
@@ -551,10 +770,6 @@ function procSkill_MagicShield(obj)
 }
 
 
-function procSkill_MagicShield(obj)
-{
-}
-
 function getImmuneTypeDamgeRate_ATMage(obj,damageRate, attacker)
 {
 	// �ұ�� ���Ÿ� ������ �������� N%��ŭ ���ҽ�Ű��, ������ ���� �ʽ��ϴ�.
@@ -593,13 +808,6 @@ function getImmuneType_ATMage(obj,type, attacker)
 	local immuneType = type;
 
 	return immuneType;
-}
-
-function procSkill_ATMage(obj)
-{
-	procSkill_IceRoad(obj);
-	procSkill_MagicShield(obj);
-
 }
 
 

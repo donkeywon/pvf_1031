@@ -8,6 +8,24 @@ ENUM_ICE_CRASH_MULTI_HIT  <- 1;
 
 VAR_ICE_CRASH <-0
 
+function setCharacterFristAnimation_IceCrash(obj)
+{
+    local level = sq_GetSkillLevel(obj, SKILL_ICE_CRASH );		
+    if (level > 0)
+    {
+        createFristAnimationPooledObject(obj,
+        "character/mage/atanimation/icecrashend.ani");
+        createFristAnimationPooledObject(obj,
+        "character/mage/atanimation/icecrashloop.ani");
+        createFristAnimationPooledObject(obj,
+        "character/mage/atanimation/icecrashloopattack.ani");
+        createFristAnimationPooledObject(obj,
+        "character/mage/atanimation/icecrashstart.ani");
+
+
+
+    }
+}
 function checkExecutableSkill_IceCrash(obj)
 {
 
@@ -64,6 +82,8 @@ function onSetState_IceCrash(obj, state, datas, isResetTimer)
 	local subState = sq_GetVectorData(datas, 0);
 	obj.setSkillSubState(subState);	
 	if(subState == ENUM_ICE_CRASH_SUBSTATE_START) {
+        obj.getVar("dama").clear_obj_vector();
+
 		local attackPower = obj.sq_GetBonusRateWithPassive(SKILL_ICE_CRASH , STATE_ICE_CRASH, 1, 1.0);
 		local var = obj.getVar();
 		var.setBool(VAR_ICE_CRASH,true);
@@ -189,6 +209,40 @@ function onEndCurrentAni_IceCrash(obj)
 	
 }
 
+
+function onBeforeAttack_IceCrash(obj, damager, boundingBox, isStuck)
+{
+	local subState = obj.getSkillSubState();
+    local attackPower = 0;
+    if (subState <  ENUM_ICE_CRASH_SUBSTATE_END)
+    {
+
+		local leftPress = sq_IsKeyDown(OPTION_HOTKEY_MOVE_LEFT, ENUM_SUBKEY_TYPE_ALL);
+		local rightPress = sq_IsKeyDown(OPTION_HOTKEY_MOVE_RIGHT, ENUM_SUBKEY_TYPE_ALL);
+        local rate = 100;
+
+        if (!leftPress && !rightPress)
+        {
+            rate = obj.sq_GetIntData(SKILL_ICE_CRASH, 3);
+        }
+
+        if (!sq_IsFixture(damager) && sq_IsGrabable(obj,damager))
+        {
+
+
+            attackPower = obj.sq_GetBonusRateWithPassive(SKILL_ICE_CRASH , STATE_ICE_CRASH, 1, 1.0 + rate.tofloat() / 100.0);
+
+
+        }else{
+
+            attackPower = obj.sq_GetBonusRateWithPassive(SKILL_ICE_CRASH , STATE_ICE_CRASH, 3, 1.0 + rate.tofloat() / 100.0);
+
+
+        }
+        sq_SetCurrentAttackBonusRate(sq_GetCurrentAttackInfo(obj), attackPower);	
+    }
+}
+
 // onAttack 콜백함수 입니다
 function onAttack_IceCrash(obj, damager, boundingBox, isStuck)
 {
@@ -215,6 +269,10 @@ function onAttack_IceCrash(obj, damager, boundingBox, isStuck)
 		obj.sq_IntVectPush(ENUM_ICE_CRASH_SUBSTATE_LOOP_ATTACKING); // substate세팅		
 		obj.sq_AddSetStatePacket(STATE_ICE_CRASH , STATE_PRIORITY_USER, true);
 	}
+
+
+    obj.getVar("dama").push_obj_vector(damager);
+
 }
 
 function onKeyFrameFlag_IceCrash(obj, flagIndex)
@@ -226,8 +284,18 @@ function onKeyFrameFlag_IceCrash(obj, flagIndex)
 		obj.sq_SetMoveDirection(obj.getDirection(), ENUM_DIRECTION_NEUTRAL);
 	}
 	else if(flagIndex == 2) {	
+
+		local leftPress = sq_IsKeyDown(OPTION_HOTKEY_MOVE_LEFT, ENUM_SUBKEY_TYPE_ALL);
+		local rightPress = sq_IsKeyDown(OPTION_HOTKEY_MOVE_RIGHT, ENUM_SUBKEY_TYPE_ALL);
+        local rate = 100;
+
+        if (!leftPress && !rightPress)
+        {
+            rate = obj.sq_GetIntData(SKILL_ICE_CRASH, 2);
+        }
+
 		local level		  = sq_GetSkillLevel(obj, SKILL_ICE_CRASH);
-		local speed = sq_GetIntData(obj, SKILL_ICE_CRASH, 1, level);
+		local speed = (sq_GetIntData(obj, SKILL_ICE_CRASH, 1, level) * rate) / 100;
 			
 		obj.sq_SetStaticMoveInfo(0, speed, speed, false);	
 		obj.sq_SetMoveDirection(obj.getDirection(), ENUM_DIRECTION_NEUTRAL);	
@@ -236,6 +304,18 @@ function onKeyFrameFlag_IceCrash(obj, flagIndex)
 	}
 	else if(flagIndex == 3) {		
 		removeAllIceCrashAppendage(obj);
+	}
+    else if(flagIndex == 10) {		
+
+        local damager = obj.getVar("dama").get_obj_vector(0);
+        local atk = obj.sq_GetBonusRateWithPassive(SKILL_ICE_CRASH , STATE_ICE_CRASH, 3, 1.0);
+
+        if (damager)
+        {
+            sendIce75Passive(obj,damager,atk);
+
+        }
+
 	}
 	return true;
 

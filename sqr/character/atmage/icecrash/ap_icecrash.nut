@@ -34,6 +34,7 @@ function proc_appendage_IceCrash(appendage)
 	if(z < 0)
 		z = 0;
 	sq_SetCurrentPos(parentObj, x, sourceObj.getYPos()-1,z);
+    gbl_HoldAndDelayEffectSetDownByAppendageLoop(appendage);
 }
 
 

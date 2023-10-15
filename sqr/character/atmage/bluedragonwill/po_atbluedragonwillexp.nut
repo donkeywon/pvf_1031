@@ -11,6 +11,15 @@ function setCustomData_po_ATBlueDragonWillExp(obj, reciveData)
 	if(atk) {
 		sq_SetCurrentAttackBonusRate(atk, attack_rate);
 	}
+    obj.getVar("damaRate").clear_vector();
+    obj.getVar("damaRate").push_vector(attack_rate);
+    obj.getVar("dama").clear_obj_vector();
+
+}
+
+function onAttack_po_ATBlueDragonWillExp(obj,damager, boundingBox, isStuck)
+{
+    obj.getVar("dama").push_obj_vector(damager);
 }
 
 function setState_po_ATBlueDragonWillExp(obj, state, datas)
@@ -66,6 +75,19 @@ function onEndCurrentAni_po_ATBlueDragonWillExp(obj)
 	if(!obj) return;
 
 	if(obj.isMyControlObject()) {
+        local mage = obj.getTopCharacter();
+        mage = sq_ObjectToSQRCharacter(mage);	
+        if(mage) {	
+            local atk = obj.getVar("damaRate").get_vector(0);
+            local damager = obj.getVar("dama").get_obj_vector(0);
+
+            if (damager)
+            {
+                sendIce75Passive(mage,damager,atk);
+
+            }
+
+        }
 		sq_SendDestroyPacketPassiveObject(obj);
 	}
 
