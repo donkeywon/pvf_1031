@@ -5,8 +5,8 @@ SUB_STATE_FALLENBLOSSOMS_2	<- 2
 SUB_STATE_FALLENBLOSSOMS_3	<- 3
 SUB_STATE_FALLENBLOSSOMS_4	<- 4
 
-//STATE_FALLENBLOSSOMS			<- 40	// °øÅë:³«È­¿¬Ã¢
-//SKILL_FALLENBLOSSOMS			<- 21   // °øÅë:³«È­¿¬Ã¢
+//STATE_FALLENBLOSSOMS			<- 40	// ï¿½ï¿½ï¿½ï¿½:ï¿½ï¿½È­ï¿½ï¿½Ã¢
+//SKILL_FALLENBLOSSOMS			<- 21   // ï¿½ï¿½ï¿½ï¿½:ï¿½ï¿½È­ï¿½ï¿½Ã¢
 function setCharacterFristAnimation_FallenBlossoms(obj)
 {
     local level = sq_GetSkillLevel(obj, SKILL_FALLENBLOSSOMS );		
@@ -35,7 +35,7 @@ function checkExecutableSkill_FallenBlossoms(obj)
 	if(b_useskill)
 	{
 		obj.sq_IntVectClear();
-		obj.sq_IntVectPush(SUB_STATE_FALLENBLOSSOMS_0); // substate¼¼ÆÃ
+		obj.sq_IntVectPush(SUB_STATE_FALLENBLOSSOMS_0); // substateï¿½ï¿½ï¿½ï¿½
 		obj.sq_AddSetStatePacket(STATE_FALLENBLOSSOMS, STATE_PRIORITY_IGNORE_FORCE, true);
 		return true;
 	}	
@@ -53,8 +53,8 @@ function checkCommandEnable_FallenBlossoms(obj)
 	
 	if(state == STATE_ATTACK)
 	{
-		// °áÅõÀå¿¡¼­´Â Æ¯Á¤½ºÅ³¸¸ Äµ½½ÀÌ °¡´ÉÇÕ´Ï´Ù. ÀÛ¾÷ÀÚ:Á¤Áø¼ö [2012.04.20]
-		return obj.sq_IsCommandEnable(SKILL_FALLENBLOSSOMS); // °áÅõÀå¿¡¼­´Â Æ¯Á¤½ºÅ³¸¸ Äµ½½ÀÌ °¡´ÉÇÕ´Ï´Ù. ÀÛ¾÷ÀÚ:Á¤Áø¼ö [2012.04.20] obj.sq_IsCommandEnable(SKILL_FALLENBLOSSOMS);
+		// ï¿½ï¿½ï¿½ï¿½ï¿½å¿¡ï¿½ï¿½ï¿½ï¿½ Æ¯ï¿½ï¿½ï¿½ï¿½Å³ï¿½ï¿½ Äµï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½. ï¿½Û¾ï¿½ï¿½ï¿½:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ [2012.04.20]
+		return obj.sq_IsCommandEnable(SKILL_FALLENBLOSSOMS); // ï¿½ï¿½ï¿½ï¿½ï¿½å¿¡ï¿½ï¿½ï¿½ï¿½ Æ¯ï¿½ï¿½ï¿½ï¿½Å³ï¿½ï¿½ Äµï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½. ï¿½Û¾ï¿½ï¿½ï¿½:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ [2012.04.20] obj.sq_IsCommandEnable(SKILL_FALLENBLOSSOMS);
 	}	
 
 	return true;
@@ -186,26 +186,22 @@ function onSetState_FallenBlossoms(obj, state, datas, isResetTimer)
 		local pAttack = sq_GetCurrentAttackInfo(obj);
 		if(sq_GetDirection(obj) == ENUM_DIRECTION_RIGHT && leftPress)
         {
-            len = obj.sq_GetIntData(SKILL_FALLENBLOSSOMS, 1);
+            len = 0;
             obj.sq_SetCurrentAttackInfo(ATTACKINFO_FALLMOSBLOSSOMS_2);	
         }
 
 
 		if(sq_GetDirection(obj) == ENUM_DIRECTION_LEFT && rightPress) 
         {
-            len = obj.sq_GetIntData(SKILL_FALLENBLOSSOMS, 1);
+            len = 0;
             obj.sq_SetCurrentAttackInfo(ATTACKINFO_FALLMOSBLOSSOMS_2);	
         }
 
-
-		if(sq_GetDirection(obj) == ENUM_DIRECTION_RIGHT && rightPress) len = obj.sq_GetIntData(SKILL_FALLENBLOSSOMS, 2);
-		if(sq_GetDirection(obj) == ENUM_DIRECTION_LEFT && leftPress) len = obj.sq_GetIntData(SKILL_FALLENBLOSSOMS, 2);
-
-        if (upPress) leny = -obj.sq_GetIntData(SKILL_FALLENBLOSSOMS, 3);
-        if (downPress) leny = obj.sq_GetIntData(SKILL_FALLENBLOSSOMS, 3);
+        if (upPress) leny = -obj.sq_GetIntData(SKILL_FALLENBLOSSOMS, 1);
+        if (downPress) leny = obj.sq_GetIntData(SKILL_FALLENBLOSSOMS, 1);
 
 
-		local attackRate = obj.sq_GetBonusRateWithPassive(SKILL_FALLENBLOSSOMS STATE_FALLENBLOSSOMS, 0, 1.0); //2.°ø°Ý·Â(%)
+		local attackRate = obj.sq_GetBonusRateWithPassive(SKILL_FALLENBLOSSOMS STATE_FALLENBLOSSOMS, 0, 1.0); //2.ï¿½ï¿½ï¿½Ý·ï¿½(%)
 		sq_SetCurrentAttackBonusRate(pAttack, attackRate);
 		
 		local posX = obj.getXPos();
@@ -247,10 +243,10 @@ function onSetState_FallenBlossoms(obj, state, datas, isResetTimer)
 		
 	}
 	else if(substate == SUB_STATE_FALLENBLOSSOMS_3) {
-		// SUB_STATE_FALLENBLOSSOMS_3 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_FALLENBLOSSOMS_3 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	else if(substate == SUB_STATE_FALLENBLOSSOMS_4) {
-		// SUB_STATE_FALLENBLOSSOMS_4 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_FALLENBLOSSOMS_4 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	
 	
@@ -274,7 +270,7 @@ function onProc_FallenBlossoms(obj)
 	local posZ = obj.getZPos();
 
 	if(substate == SUB_STATE_FALLENBLOSSOMS_0) {
-		// SUB_STATE_FALLENBLOSSOMS_0 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_FALLENBLOSSOMS_0 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	else if(substate == SUB_STATE_FALLENBLOSSOMS_1) {
 		if(frmIndex >= 0)
@@ -314,13 +310,13 @@ function onProc_FallenBlossoms(obj)
 		}
 		
 		//////
-		// ¿òÁ÷ÀÓ
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		local sq_var = obj.getVar("flag");
 		
         local startY = sq_var.get_vector(5);
         local leny = sq_var.get_vector(4);
     	local delayT = sq_var.get_vector(2); 
-    	local delayT = sq_var.get_vector(2); // º¤ÅÍÀÎµ¦½º 2 ÃÑ ÀÌµ¿½Ã°£
+    	local delayT = sq_var.get_vector(2); // ï¿½ï¿½ï¿½ï¿½ï¿½Îµï¿½ï¿½ï¿½ 2 ï¿½ï¿½ ï¿½Ìµï¿½ï¿½Ã°ï¿½
     	local len = sq_var.get_vector(1);    	
     	
 		local v = sq_GetAccel(0, len, currentT, delayT, true);
@@ -332,13 +328,13 @@ function onProc_FallenBlossoms(obj)
 		local dstX = sq_GetDistancePos(srcX, obj.getDirection(), v);
 		 
 		if(obj.isMovablePos(dstX, posY) && !sq_var.get_vector(3))
-		{ // ÀÌµ¿ÇÃ·¡±×¿Í ÀÌµ¿°¡´ÉÁö¿ªÀÌ ¸ðµÎ °¡´ÉÇØ¾ß ÀÌµ¿
+		{ // ï¿½Ìµï¿½ï¿½Ã·ï¿½ï¿½×¿ï¿½ ï¿½Ìµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¾ï¿½ ï¿½Ìµï¿½
 			sq_setCurrentAxisPos(obj, 0, dstX);
 			sq_setCurrentAxisPos(obj, 1, srcY);
 		}
 		else
-		{ // ÀÌµ¿ÇÒ ¼ö ¾ø´Â Áö¿ªÀ» ¸¸³µ´Ù..
-			sq_var.set_vector(3,1); // ÀÌµ¿ ÇÃ·¡±× ÀÎµ¦½º 3 ÀÌµ¿ÇÒ ¼ö ¾ø´Â Áö¿ªÀ» ¸¸³µÀ» ¶§ ±×¼ø°£ ´õÀÌ»ó ÀÌµ¿¸øÇÑ´Ù..
+		{ // ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½..
+			sq_var.set_vector(3,1); // ï¿½Ìµï¿½ ï¿½Ã·ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½ 3 ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½×¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì»ï¿½ ï¿½Ìµï¿½ï¿½ï¿½ï¿½Ñ´ï¿½..
 			local offset = dstX - posX;
 			
 			if(offset != 0) {				
@@ -381,7 +377,7 @@ function onProc_FallenBlossoms(obj)
 			
 		//////
 		
-		// ¸ÕÁö ÆÄÆ¼Å¬ »ý¼º
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ¼Å¬ ï¿½ï¿½ï¿½ï¿½
 		local t = obj.getVar().get_timer_vector(0);
 		
 		if(t.isOnEvent(currentT) == true)
@@ -398,13 +394,13 @@ function onProc_FallenBlossoms(obj)
 	
 	}
 	else if(substate == SUB_STATE_FALLENBLOSSOMS_2) {
-		// SUB_STATE_FALLENBLOSSOMS_2 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_FALLENBLOSSOMS_2 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	else if(substate == SUB_STATE_FALLENBLOSSOMS_3) {
-		// SUB_STATE_FALLENBLOSSOMS_3 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_FALLENBLOSSOMS_3 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	else if(substate == SUB_STATE_FALLENBLOSSOMS_4) {
-		// SUB_STATE_FALLENBLOSSOMS_4 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_FALLENBLOSSOMS_4 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	
 

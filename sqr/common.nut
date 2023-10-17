@@ -1,6 +1,15 @@
 DEBUG <- isDebugMode();
 NULL <- null;
 
+function createFristAnimationPooledObject(obj,ani)
+{
+    obj = sq_GetCNRDObjectToSQRCharacter(obj);
+
+	local ani2 = obj.getVar().GetAnimationMap(ani,ani);
+    sq_AnimationProc(ani2);
+    sq_drawCurrentFrame(ani2, 0, 0, false);
+
+}
 
 // ��ų������ ��½�Ű�� �Լ� �κ��Դϴ�..Ư�� ��ų�� ���ؼ� ����ȭ�ؾ��ϴ� ��ų�� �ִٸ� �̰����� ó�����ݴϴ�..
 // ��ų ���� �������� flag ���ڰ� �߰��Ǿ����ϴ�.

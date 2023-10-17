@@ -10,19 +10,19 @@ function onAfterSetState_SwordmanAttack(obj, state, datas, isResetTimer)
 		{
 		sq_BinaryStartWrite();
 		sq_BinaryWriteDword(0);
-		obj.sq_SendCreatePassiveObjectPacket(24358, 0, 0, 0, 0);
+		obj.sq_SendCreatePassiveObjectPacket(24350, 0, 0, 0, 0);
 		}
 		else if(attackIndex == 1)
 		{
 		sq_BinaryStartWrite();
 		sq_BinaryWriteDword(0);
-		obj.sq_SendCreatePassiveObjectPacket(24359, 0, 0, 0, 0);
+		obj.sq_SendCreatePassiveObjectPacket(24351, 0, 0, 0, 0);
 		}
 		else if(attackIndex == 2)
 		{
 		sq_BinaryStartWrite();
 		sq_BinaryWriteDword(0);
-		obj.sq_SendCreatePassiveObjectPacket(24360, 0, 0, 0, 0);
+		obj.sq_SendCreatePassiveObjectPacket(24352, 0, 0, 0, 0);
 		}
 	}
 }

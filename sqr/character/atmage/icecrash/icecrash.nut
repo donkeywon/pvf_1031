@@ -1,7 +1,7 @@
-ENUM_ICE_CRASH_SUBSTATE_START <-0 ;			  //¹ßµ¿
-ENUM_ICE_CRASH_SUBSTATE_LOOP  <-1 ;			  //È¸Àü
-ENUM_ICE_CRASH_SUBSTATE_LOOP_ATTACKING  <-2 ; //È¸ÀüÇÏ¸é¼­ °ø°ÝÁß
-ENUM_ICE_CRASH_SUBSTATE_END   <-3 ;			  //¸·Å¸
+ENUM_ICE_CRASH_SUBSTATE_START <-0 ;			  //ï¿½ßµï¿½
+ENUM_ICE_CRASH_SUBSTATE_LOOP  <-1 ;			  //È¸ï¿½ï¿½
+ENUM_ICE_CRASH_SUBSTATE_LOOP_ATTACKING  <-2 ; //È¸ï¿½ï¿½ï¿½Ï¸é¼­ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ENUM_ICE_CRASH_SUBSTATE_END   <-3 ;			  //ï¿½ï¿½Å¸
 
 ENUM_ICE_CRASH_TIMER_SPIN <- 0;
 ENUM_ICE_CRASH_MULTI_HIT  <- 1;
@@ -34,7 +34,7 @@ function checkExecutableSkill_IceCrash(obj)
 	local b_useskill = obj.sq_IsUseSkill(SKILL_ICE_CRASH);
 	if(b_useskill) {
 		obj.sq_IntVectClear();
-		obj.sq_IntVectPush(ENUM_ICE_CRASH_SUBSTATE_START); // substate¼¼ÆÃ		
+		obj.sq_IntVectPush(ENUM_ICE_CRASH_SUBSTATE_START); // substateï¿½ï¿½ï¿½ï¿½		
 		obj.sq_AddSetStatePacket(STATE_ICE_CRASH , STATE_PRIORITY_USER, true);
 		return true;
 	}	
@@ -50,8 +50,8 @@ function checkCommandEnable_IceCrash(obj)
 	local state = obj.sq_GetState();
 	
 	if(state == STATE_ATTACK) {
-		// °áÅõÀå¿¡¼­´Â Æ¯Á¤½ºÅ³¸¸ Äµ½½ÀÌ °¡´ÉÇÕ´Ï´Ù. ÀÛ¾÷ÀÚ:Á¤Áø¼ö [2012.04.20]
-		return obj.sq_IsCommandEnable(SKILL_ICE_CRASH); // °áÅõÀå¿¡¼­´Â Æ¯Á¤½ºÅ³¸¸ Äµ½½ÀÌ °¡´ÉÇÕ´Ï´Ù. ÀÛ¾÷ÀÚ:Á¤Áø¼ö [2012.04.20] obj.sq_IsCommandEnable(SKILL_ICE_CRASH);
+		// ï¿½ï¿½ï¿½ï¿½ï¿½å¿¡ï¿½ï¿½ï¿½ï¿½ Æ¯ï¿½ï¿½ï¿½ï¿½Å³ï¿½ï¿½ Äµï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½. ï¿½Û¾ï¿½ï¿½ï¿½:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ [2012.04.20]
+		return obj.sq_IsCommandEnable(SKILL_ICE_CRASH); // ï¿½ï¿½ï¿½ï¿½ï¿½å¿¡ï¿½ï¿½ï¿½ï¿½ Æ¯ï¿½ï¿½ï¿½ï¿½Å³ï¿½ï¿½ Äµï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½. ï¿½Û¾ï¿½ï¿½ï¿½:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ [2012.04.20] obj.sq_IsCommandEnable(SKILL_ICE_CRASH);
 	}
 	
 	return true;
@@ -74,8 +74,8 @@ function onSetState_IceCrash(obj, state, datas, isResetTimer)
 	if(!obj) return;
 	
 	local level	       = sq_GetSkillLevel(obj, SKILL_ICE_CRASH);
-	local spinDistance = sq_GetIntData(obj, SKILL_ICE_CRASH, 0, level); // È¸ÀüÇÏ¸ç ³¯¾Æ°¡´Â °Å¸®
-	local spinSpeed    = sq_GetIntData(obj, SKILL_ICE_CRASH, 1, level); // È¸ÀüÇÏ¸ç ³¯¾Æ°¡´Â ½Ã°£
+	local spinDistance = sq_GetIntData(obj, SKILL_ICE_CRASH, 0, level); // È¸ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½Æ°ï¿½ï¿½ï¿½ ï¿½Å¸ï¿½
+	local spinSpeed    = sq_GetIntData(obj, SKILL_ICE_CRASH, 1, level); // È¸ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½Æ°ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½
 	local spinTime	   = (spinDistance.tofloat()/spinSpeed.tofloat()) * 1000.0;		
 	local multiHitGap  = sq_GetLevelData(obj, SKILL_ICE_CRASH, 0, level);
 
@@ -104,7 +104,7 @@ function onSetState_IceCrash(obj, state, datas, isResetTimer)
 		obj.setTimeEvent(ENUM_ICE_CRASH_MULTI_HIT,multiHitGap,9999,false);		
 	}	
 	else if(subState == ENUM_ICE_CRASH_SUBSTATE_LOOP_ATTACKING) {
-		//Å¸ÀÌ¸Ó°¡ ¾ÆÁ÷ ¾Èµ¹¾Æ °¡°í ÀÖÀ»¶§ : ENUM_ICE_CRASH_SUBSTATE_LOOP¸¦ °ÅÄ¡Áö ¾ÊÀ»¶§
+		//Å¸ï¿½Ì¸Ó°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Èµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : ENUM_ICE_CRASH_SUBSTATE_LOOPï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		if(!obj.isExistTimeEvent(ENUM_ICE_CRASH_TIMER_SPIN)) { 			
 			obj.setTimeEvent(ENUM_ICE_CRASH_TIMER_SPIN,spinTime.tointeger(),1,false);
 			obj.setTimeEvent(ENUM_ICE_CRASH_MULTI_HIT,multiHitGap,9999,false);	
@@ -138,16 +138,16 @@ function onTimeEvent_IceCrash(obj, timeEventIndex, timeEventCount)
 	if(timeEventIndex == ENUM_ICE_CRASH_TIMER_SPIN)
 	{	
 		obj.sq_IntVectClear();
-		obj.sq_IntVectPush(ENUM_ICE_CRASH_SUBSTATE_END); // substate¼¼ÆÃ		
+		obj.sq_IntVectPush(ENUM_ICE_CRASH_SUBSTATE_END); // substateï¿½ï¿½ï¿½ï¿½		
 		obj.sq_AddSetStatePacket(STATE_ICE_CRASH , STATE_PRIORITY_USER, true);
-		return true; // true¸é ÄÝ¹é Áß´Ü
+		return true; // trueï¿½ï¿½ ï¿½Ý¹ï¿½ ï¿½ß´ï¿½
 	}
 	else if( timeEventIndex == ENUM_ICE_CRASH_MULTI_HIT )
 	{		
 		if(obj.getSkillSubState() == ENUM_ICE_CRASH_SUBSTATE_END)
-			return true; // true¸é ÄÝ¹é Áß´Ü
+			return true; // trueï¿½ï¿½ ï¿½Ý¹ï¿½ ï¿½ß´ï¿½
 			
-		// ¸®½ºÆ®»óÀÇ ¸ðµç ¿ÀºêÁ§Æ® ÇÑÅ× ´Ù´ÜÈ÷Æ® º¸³¿		
+		// ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½Ù´ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½		
 		local sq_var = obj.getVar();  		
 		local i=0;		
 		local objectsSize = sq_var.get_obj_vector_size();
@@ -221,29 +221,22 @@ function onBeforeAttack_IceCrash(obj, damager, boundingBox, isStuck)
 		local rightPress = sq_IsKeyDown(OPTION_HOTKEY_MOVE_RIGHT, ENUM_SUBKEY_TYPE_ALL);
         local rate = 100;
 
-        if (!leftPress && !rightPress)
+        if (sq_GetDirection(obj) == ENUM_DIRECTION_RIGHT && leftPress || sq_GetDirection(obj) == ENUM_DIRECTION_LEFT && rightPress)
         {
-            rate = obj.sq_GetIntData(SKILL_ICE_CRASH, 3);
+            rate = rate + obj.sq_GetIntData(SKILL_ICE_CRASH, 3);
         }
 
         if (!sq_IsFixture(damager) && sq_IsGrabable(obj,damager))
         {
-
-
-            attackPower = obj.sq_GetBonusRateWithPassive(SKILL_ICE_CRASH , STATE_ICE_CRASH, 1, 1.0 + rate.tofloat() / 100.0);
-
-
+            attackPower = obj.sq_GetBonusRateWithPassive(SKILL_ICE_CRASH , STATE_ICE_CRASH, 1, rate.tofloat() / 100.0);
         }else{
-
-            attackPower = obj.sq_GetBonusRateWithPassive(SKILL_ICE_CRASH , STATE_ICE_CRASH, 3, 1.0 + rate.tofloat() / 100.0);
-
-
+            attackPower = obj.sq_GetBonusRateWithPassive(SKILL_ICE_CRASH , STATE_ICE_CRASH, 3, rate.tofloat() / 100.0);
         }
         sq_SetCurrentAttackBonusRate(sq_GetCurrentAttackInfo(obj), attackPower);	
     }
 }
 
-// onAttack ÄÝ¹éÇÔ¼ö ÀÔ´Ï´Ù
+// onAttack ï¿½Ý¹ï¿½ï¿½Ô¼ï¿½ ï¿½Ô´Ï´ï¿½
 function onAttack_IceCrash(obj, damager, boundingBox, isStuck)
 {
 	if(!obj)
@@ -266,7 +259,7 @@ function onAttack_IceCrash(obj, damager, boundingBox, isStuck)
 	
 	if(subState < ENUM_ICE_CRASH_SUBSTATE_LOOP_ATTACKING && var.get_obj_vector_size() > 0) {
 		obj.sq_IntVectClear();
-		obj.sq_IntVectPush(ENUM_ICE_CRASH_SUBSTATE_LOOP_ATTACKING); // substate¼¼ÆÃ		
+		obj.sq_IntVectPush(ENUM_ICE_CRASH_SUBSTATE_LOOP_ATTACKING); // substateï¿½ï¿½ï¿½ï¿½		
 		obj.sq_AddSetStatePacket(STATE_ICE_CRASH , STATE_PRIORITY_USER, true);
 	}
 
@@ -289,7 +282,7 @@ function onKeyFrameFlag_IceCrash(obj, flagIndex)
 		local rightPress = sq_IsKeyDown(OPTION_HOTKEY_MOVE_RIGHT, ENUM_SUBKEY_TYPE_ALL);
         local rate = 100;
 
-        if (!leftPress && !rightPress)
+        if (sq_GetDirection(obj) == ENUM_DIRECTION_RIGHT && leftPress || sq_GetDirection(obj) == ENUM_DIRECTION_LEFT && rightPress)
         {
             rate = obj.sq_GetIntData(SKILL_ICE_CRASH, 2);
         }
