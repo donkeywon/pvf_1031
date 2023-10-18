@@ -67,6 +67,7 @@ function iceCraftHitFront(obj,damager)
 
 function sendIce75Passive(obj,damager,atk)
 {
+	return;
     local skill_level = sq_GetSkillLevel(obj, SKILL_ICE75PASS);
 	if(skill_level > 0)
 	{
