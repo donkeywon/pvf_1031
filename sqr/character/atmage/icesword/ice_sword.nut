@@ -55,7 +55,7 @@ function onSetState_IceSword(obj, state, datas, isResetTimer) {
 		local speed100Rate = obj.sq_GetIntData(SKILL_ICE_SWORD, 0);
 		local speedRate = speed100Rate.tofloat() / 100.0;
 
-		obj.sq_SetCurrentAttackInfo(CUSTOM_ATTACK_INFO_ICE_SWORD);
+		obj.sq_SetCurrentAttackInfo(ATTACKINFO_ICESWORDUP);
 		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, speedRate, speedRate);
 
 		obj.sq_SetApplyConversionSkill();
@@ -64,12 +64,12 @@ function onSetState_IceSword(obj, state, datas, isResetTimer) {
 		local damage = obj.sq_GetBonusRateWithPassive(SKILL_ICE_SWORD, STATE_ICE_SWORD, 0, addRate.tofloat() / 100.0);
 		obj.sq_SetCurrentAttackBonusRate(damage);
 
-		/*local attackInfo = sq_GetCurrentAttackInfo(obj);
+		local attackInfo = sq_GetCurrentAttackInfo(obj);
 		local skill_level = sq_GetSkillLevel(obj, SKILL_ICE_SWORD);
 		local ice_power = sq_GetLevelData(obj, SKILL_ICE_SWORD, 2, skill_level);
 		local ice_prob = sq_GetLevelData(obj, SKILL_ICE_SWORD, 3, skill_level);
 		local ice_time = sq_GetLevelData(obj, SKILL_ICE_SWORD, 4, skill_level);
-		sq_SetChangeStatusIntoAttackInfo(attackInfo, 0, ACTIVESTATUS_SLOW, ice_prob, ice_power, ice_time);*/
+		sq_SetChangeStatusIntoAttackInfo(attackInfo, 0, ACTIVESTATUS_SLOW, ice_prob, ice_power, ice_time);
 
 		//        createIceSwordEffect(obj,obj);
 		obj.sq_AddStateLayerAnimation(1, obj.sq_CreateCNRDAnimation("atanimation/als_ani/atcrystalblade/cbeff_smoke.ani"), 0, 0);
@@ -134,8 +134,8 @@ function onKeyFrameFlag_IceSword(obj, flagIndex) {
 	if (flagIndex == 1) {
 
 		if (skillLevel > 0) {
-			//obj.resetHitObjectList();
-			obj.sq_SetCurrentAttackInfo(CUSTOM_ATTACK_INFO_ICE_SWORD_LAST);
+			obj.resetHitObjectList();
+			//obj.sq_SetCurrentAttackInfo(CUSTOM_ATTACK_INFO_ICE_SWORD);
 			obj.sq_SetApplyConversionSkill();
 			local addRate = sq_GetLevelData(obj, SKILL_ICESWORD_UP, 0, skillLevel);
 			local damage = obj.sq_GetBonusRateWithPassive(SKILL_ICE_SWORD, STATE_ICE_SWORD, 1, addRate.tofloat() / 100.0);
