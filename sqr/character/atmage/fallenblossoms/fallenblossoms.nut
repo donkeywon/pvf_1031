@@ -197,8 +197,8 @@ function onSetState_FallenBlossoms(obj, state, datas, isResetTimer)
             obj.sq_SetCurrentAttackInfo(ATTACKINFO_FALLMOSBLOSSOMS_2);	
         }
 
-        if (upPress) leny = -obj.sq_GetIntData(SKILL_FALLENBLOSSOMS, 1);
-        if (downPress) leny = obj.sq_GetIntData(SKILL_FALLENBLOSSOMS, 1);
+        //if (upPress) leny = -obj.sq_GetIntData(SKILL_FALLENBLOSSOMS, 1);
+        //if (downPress) leny = obj.sq_GetIntData(SKILL_FALLENBLOSSOMS, 1);
 
 
 		local attackRate = obj.sq_GetBonusRateWithPassive(SKILL_FALLENBLOSSOMS STATE_FALLENBLOSSOMS, 0, 1.0); //2.���ݷ�(%)

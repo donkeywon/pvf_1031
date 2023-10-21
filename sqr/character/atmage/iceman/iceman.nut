@@ -325,9 +325,9 @@ function onSetState_IceMan(obj, state, datas, isResetTimer)
         obj.getVar("flag").push_vector(0);
         local damage = obj.sq_GetBonusRateWithPassive(SKILL_ICEMAN , STATE_ICEMAN, 2, hit1.tofloat() / 100.0 );
         local damage2 = obj.sq_GetBonusRateWithPassive(SKILL_ICEMAN , STATE_ICEMAN, 3, hit2.tofloat() / 100.0 );
-        obj.sq_SetCurrentAttackBonusRate(damage);				
+        obj.sq_SetCurrentAttackBonusRate(damage2);				
         obj.getVar("damaR").clear_vector();
-        obj.getVar("damaR").push_vector(damage2);
+        obj.getVar("damaR").push_vector(damage);
 
     }
 
