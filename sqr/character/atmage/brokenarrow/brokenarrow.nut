@@ -16,12 +16,12 @@ function checkExecutableSkill_BrokenArrow(obj)
 	
 	//local targetObj = sq_GetObjectByObjectId(obj, BROKENARROW_UNIQUE_ID);
 	local flag = obj.getVar("brokenarrow").get_vector(VECTOR_FLAG_0);
-	local targetObj = sq_GetPassiveObjectByState(obj, 24250, BrokenArrow_state_1); // 24250	`Character/Mage/ATBrokenArrow.obj`			// ³²¹ý»ç - ºê·ÎÅ«¾Ö·Î¿ì (È­»ì)
+	local targetObj = sq_GetPassiveObjectByState(obj, 24250, BrokenArrow_state_1); // 24250	`Character/Mage/ATBrokenArrow.obj`			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ - ï¿½ï¿½ï¿½Å«ï¿½Ö·Î¿ï¿½ (È­ï¿½ï¿½)
 
-	local expTime = obj.sq_GetIntData(SKILL_BROKENARROW, 1); // 1. Å¸°Ý ¼º°ø½Ã ´ë½¬±â´ÉÀ» »ç¿ëÇÒ ¼ö ÀÖ´Â ½Ã°£ (È­»ìÀÌ ²ÈÇôÀÖ´Â ½Ã°£)
+	local expTime = obj.sq_GetIntData(SKILL_BROKENARROW, 1); // 1. Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ë½¬ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½Ã°ï¿½ (È­ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ ï¿½Ã°ï¿½)
 	
-	// Å©·Î´ÏÅ¬ ¾ÆÀÌÅÛ ÀÛ¾÷.. Å¸°Ý ¼º°ø½Ã ´ë½¬±â´ÉÀ» »ç¿ëÇÒ ¼ö ÀÖ´Â ½Ã°£ (È­»ìÀÌ ²ÈÇôÀÖ´Â ½Ã°£)
-	// 0¶ó¸é ´ë½¬¸¦ ÇÏÁö ¾Ê´Â´Ù..
+	// Å©ï¿½Î´ï¿½Å¬ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Û¾ï¿½.. Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ë½¬ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½Ã°ï¿½ (È­ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ ï¿½Ã°ï¿½)
+	// 0ï¿½ï¿½ï¿½ ï¿½ë½¬ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´Â´ï¿½..
 		
 	if(!targetObj || flag == 0 || expTime == 0)
 	{
@@ -31,7 +31,7 @@ function checkExecutableSkill_BrokenArrow(obj)
 			obj.getVar("arrow").clear_vector();
 			obj.getVar("arrow").push_vector(0);
 			obj.sq_IntVectClear();
-			obj.sq_IntVectPush(SUB_STATE_BROKENARROW_0); // substate¼¼ÆÃ
+			obj.sq_IntVectPush(SUB_STATE_BROKENARROW_0); // substateï¿½ï¿½ï¿½ï¿½
 			obj.sq_AddSetStatePacket(STATE_BROKENARROW, STATE_PRIORITY_IGNORE_FORCE, true);
 			return true;
 		}	
@@ -40,13 +40,13 @@ function checkExecutableSkill_BrokenArrow(obj)
 	{
 		print( " checkExecutableSkill_BrokenArrow targetObj:" + targetObj);
 		obj.sq_IntVectClear();
-		obj.sq_IntVectPush(SUB_STATE_BROKENARROW_2); // substate¼¼ÆÃ
+		obj.sq_IntVectPush(SUB_STATE_BROKENARROW_2); // substateï¿½ï¿½ï¿½ï¿½
 		
 		local group = sq_GetGroup(targetObj);
 		local uniqueId = sq_GetUniqueId(targetObj);
 	
-		obj.sq_IntVectPush(group); // substate¼¼ÆÃ
-		obj.sq_IntVectPush(uniqueId); // substate¼¼ÆÃ
+		obj.sq_IntVectPush(group); // substateï¿½ï¿½ï¿½ï¿½
+		obj.sq_IntVectPush(uniqueId); // substateï¿½ï¿½ï¿½ï¿½
 		obj.sq_AddSetStatePacket(STATE_BROKENARROW, STATE_PRIORITY_IGNORE_FORCE, true);
 		return true;
 	}
@@ -101,8 +101,8 @@ function checkCommandEnable_BrokenArrow(obj)
 	
 	if(state == STATE_ATTACK)
 	{
-		// °áÅõÀå¿¡¼­´Â Æ¯Á¤½ºÅ³¸¸ Äµ½½ÀÌ °¡´ÉÇÕ´Ï´Ù. ÀÛ¾÷ÀÚ:Á¤Áø¼ö [2012.04.20]
-		return obj.sq_IsCommandEnable(SKILL_BROKENARROW); // °áÅõÀå¿¡¼­´Â Æ¯Á¤½ºÅ³¸¸ Äµ½½ÀÌ °¡´ÉÇÕ´Ï´Ù. ÀÛ¾÷ÀÚ:Á¤Áø¼ö [2012.04.20] obj.sq_IsCommandEnable(SKILL_BROKENARROW);
+		// ï¿½ï¿½ï¿½ï¿½ï¿½å¿¡ï¿½ï¿½ï¿½ï¿½ Æ¯ï¿½ï¿½ï¿½ï¿½Å³ï¿½ï¿½ Äµï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½. ï¿½Û¾ï¿½ï¿½ï¿½:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ [2012.04.20]
+		return obj.sq_IsCommandEnable(SKILL_BROKENARROW); // ï¿½ï¿½ï¿½ï¿½ï¿½å¿¡ï¿½ï¿½ï¿½ï¿½ Æ¯ï¿½ï¿½ï¿½ï¿½Å³ï¿½ï¿½ Äµï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½. ï¿½Û¾ï¿½ï¿½ï¿½:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ [2012.04.20] obj.sq_IsCommandEnable(SKILL_BROKENARROW);
 	}
 	
 
@@ -125,7 +125,7 @@ function onSetState_BrokenArrow(obj, state, datas, isResetTimer)
 	obj.setSkillSubState(substate);
 	obj.sq_StopMove();
 
-	local arrowLauchNum = obj.sq_GetIntData(SKILL_BROKENARROW, 0); // 0. È­»ì °¹¼ö
+	local arrowLauchNum = obj.sq_GetIntData(SKILL_BROKENARROW, 0); // 0. È­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	
 	obj.getVar().clear_vector();	
 	obj.getVar().push_vector(arrowLauchNum);
@@ -149,7 +149,7 @@ function onSetState_BrokenArrow(obj, state, datas, isResetTimer)
 		else
 			obj.getVar("brokenarrow").set_vector(VECTOR_FLAG_0, 1);
 		
-		// ´ë½¬ÇÃ·¡±×
+		// ï¿½ë½¬ï¿½Ã·ï¿½ï¿½ï¿½
 		obj.getVar("dash").clear_vector();
 		obj.getVar("dash").push_vector(0);
 		
@@ -169,16 +169,16 @@ function onSetState_BrokenArrow(obj, state, datas, isResetTimer)
 		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 	else if(substate == SUB_STATE_BROKENARROW_2) {
-		// ´ë½¬1
-		obj.getVar("brokenarrow").set_vector(VECTOR_FLAG_0, 0); // ÇÑ¹ø ÈÄ·ÁÄ£´Ù¸é..´Ù½Ã ¸®¼ÂÀÌ µË´Ï´Ù.
+		// ï¿½ë½¬1
+		obj.getVar("brokenarrow").set_vector(VECTOR_FLAG_0, 0); // ï¿½Ñ¹ï¿½ ï¿½Ä·ï¿½Ä£ï¿½Ù¸ï¿½..ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ë´Ï´ï¿½.
 		
 		local group = obj.sq_GetVectorData(datas, 1);
 		local uniqueId = obj.sq_GetVectorData(datas, 2);
 		
 		local targetObj = sq_GetObject(obj, group, uniqueId);
 
-		obj.getVar().push_vector(posX); // ÇöÀç x : i: 3
-		obj.getVar().push_vector(posY); // ÇöÀç y : i: 4
+		obj.getVar().push_vector(posX); // ï¿½ï¿½ï¿½ï¿½ x : i: 3
+		obj.getVar().push_vector(posY); // ï¿½ï¿½ï¿½ï¿½ y : i: 4
 		
 		if(targetObj) {
 			local disX = sq_Abs(targetObj.getXPos() - posX);
@@ -198,13 +198,13 @@ function onSetState_BrokenArrow(obj, state, datas, isResetTimer)
 			if(disX <= 0)
 				disX = 0;
 			
-			obj.getVar().push_vector(disX); // xÃà ÀÌµ¿°Å¸® : i: 5
-			obj.getVar().push_vector(disY); // yÃà ÀÌµ¿°Å¸® : i: 6
+			obj.getVar().push_vector(disX); // xï¿½ï¿½ ï¿½Ìµï¿½ï¿½Å¸ï¿½ : i: 5
+			obj.getVar().push_vector(disY); // yï¿½ï¿½ ï¿½Ìµï¿½ï¿½Å¸ï¿½ : i: 6
 		}
-		else { // µðÆúÆ® ÀÌµ¿°Å¸®
-			local defaultDistance = obj.sq_GetIntData(SKILL_BLUEDRAGONWILL, 1); // °£Á¢ °ø°Ý (ÁöÁø È®´ëÀ²) (100~)
-			obj.getVar().push_vector(defaultDistance); // xÃà ÀÌµ¿°Å¸® 
-			obj.getVar().push_vector(0); // yÃà ÀÌµ¿°Å¸®
+		else { // ï¿½ï¿½ï¿½ï¿½Æ® ï¿½Ìµï¿½ï¿½Å¸ï¿½
+			local defaultDistance = obj.sq_GetIntData(SKILL_BLUEDRAGONWILL, 1); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ï¿½ï¿½) (100~)
+			obj.getVar().push_vector(defaultDistance); // xï¿½ï¿½ ï¿½Ìµï¿½ï¿½Å¸ï¿½ 
+			obj.getVar().push_vector(0); // yï¿½ï¿½ ï¿½Ìµï¿½ï¿½Å¸ï¿½
 		}
 		
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_BROKENARROW_DASH1);
@@ -218,12 +218,12 @@ function onSetState_BrokenArrow(obj, state, datas, isResetTimer)
 		obj.sq_PlaySound("MW_BARROW_FIN");
 		
 		local atk = sq_GetCurrentAttackInfo(obj);		
-		local attackRate = obj.sq_GetBonusRateWithPassive(SKILL_BROKENARROW, STATE_BROKENARROW, 1, 1.0); //1.ÈÖµÑ·¯Ä¡±â °ø°Ý·Â(%)
+		local attackRate = obj.sq_GetBonusRateWithPassive(SKILL_BROKENARROW, STATE_BROKENARROW, 1, 1.0); //1.ï¿½ÖµÑ·ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½Ý·ï¿½(%)
 		sq_SetCurrentAttackBonusRate(atk, attackRate);
 		
 	}
 	else if(substate == SUB_STATE_BROKENARROW_4) {
-		// SUB_STATE_BROKENARROW_4 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_4 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 }
 
@@ -254,8 +254,8 @@ function getAngleArrow(obj, pTargetChr)
 	if(!obj) return;
 	if(!pTargetChr) return;
 	
-	local offsetX = 58; // È°½î´Â À§Ä¡
-	local offsetZ = 75; // È°½î´Â À§Ä¡
+	local offsetX = 58; // È°ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡
+	local offsetZ = 75; // È°ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡
 	
 
 	local X = obj.getXPos() + sq_GetDistancePos(0, obj.getDirection(), offsetX);
@@ -272,7 +272,7 @@ function getAngleArrow(obj, pTargetChr)
 	
 	local w = posX - X;		
 	if(w < 0) w = -w;
-	//	È­¸é»óÀÇ °¢µµ¸¦ ±¸ÇØ¼­ ÀÌÆåÆ®¸¦ ¸îµµ³ª µ¹·Á¾ß µÇ´ÂÁö ±¸ÇÑ´Ù.
+	//	È­ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½îµµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ç´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ñ´ï¿½.
 	
 	local h = (posY - posZ) - (Y - Z);
 	local width = sq_Abs(posX - X);
@@ -302,6 +302,11 @@ function onProc_BrokenArrow(obj)
 
 	if(!obj) return;
 
+	if (sq_IsKeyDown(OPTION_HOTKEY_JUMP, ENUM_SUBKEY_TYPE_ALL)) {
+		obj.sq_AddSetStatePacket(0, 1, false);
+		return;
+	}
+
 	local substate = obj.getSkillSubState();
 
 	local pAni = obj.sq_GetCurrentAni();
@@ -314,21 +319,21 @@ function onProc_BrokenArrow(obj)
 	local posZ = sq_GetZPos(obj);
 
 	if(substate == SUB_STATE_BROKENARROW_0) {
-		// SUB_STATE_BROKENARROW_0 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_0 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	else if(substate == SUB_STATE_BROKENARROW_1) {
-		// SUB_STATE_BROKENARROW_1 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_1 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	else if(substate == SUB_STATE_BROKENARROW_2) {
 		local dash_t = pAni.getDelaySum(false); //
-		//obj.getVar().push_vector(posX); // ÇöÀç x : i: 3
-		//obj.getVar().push_vector(posY); // ÇöÀç y : i: 4
+		//obj.getVar().push_vector(posX); // ï¿½ï¿½ï¿½ï¿½ x : i: 3
+		//obj.getVar().push_vector(posY); // ï¿½ï¿½ï¿½ï¿½ y : i: 4
     	
-		local srcX = obj.getVar().get_vector(3); // ½ÃÀÛx
-		local srcY = obj.getVar().get_vector(4); // ½ÃÀÛy
+		local srcX = obj.getVar().get_vector(3); // ï¿½ï¿½ï¿½ï¿½x
+		local srcY = obj.getVar().get_vector(4); // ï¿½ï¿½ï¿½ï¿½y
     	    	
-    	local dis_x_len = sq_var.get_vector(5); // ÃÑ ÀÌµ¿°Å¸®
-		local dis_y_len = obj.getVar().get_vector(6) + 1; // yÃà ÀÌµ¿°Å¸®
+    	local dis_x_len = sq_var.get_vector(5); // ï¿½ï¿½ ï¿½Ìµï¿½ï¿½Å¸ï¿½
+		local dis_y_len = obj.getVar().get_vector(6) + 1; // yï¿½ï¿½ ï¿½Ìµï¿½ï¿½Å¸ï¿½
 		
 		local v = sq_GetAccel(0, dis_x_len, currentT, dash_t, true);
 		
@@ -338,38 +343,38 @@ function onProc_BrokenArrow(obj)
 		local dstY = srcY + my;
 		 
 		if(sq_var.get_vector(1))
-		{ // ÀüÇÁ·¹ÀÓ¿¡¼­ ÀÌµ¿ÇÒ ¼ö ¾ø´Â Áö¿ªÀ» ¸¸³µ´Ù¸é..
+		{ // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¿ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ù¸ï¿½..
 			if(sq_var.get_vector(2) != posY)
-			{ // Àü posY¿Í ºñ±³ÇØºÁ¼­ ´Þ¶óÁ³´Ù¸é..
-				sq_var.set_vector(1, 0); // ÀÌµ¿ÇÃ·¡±×¸¦ offÇØÁÝ´Ï´Ù..
+			{ // ï¿½ï¿½ posYï¿½ï¿½ ï¿½ï¿½ï¿½Øºï¿½ï¿½ï¿½ ï¿½Þ¶ï¿½ï¿½ï¿½ï¿½Ù¸ï¿½..
+				sq_var.set_vector(1, 0); // ï¿½Ìµï¿½ï¿½Ã·ï¿½ï¿½×¸ï¿½ offï¿½ï¿½ï¿½Ý´Ï´ï¿½..
 				sq_var.set_vector(2, posY);
 			}
 		}
 		 
 		if(obj.isMovablePos(dstX, dstY) && !sq_var.get_vector(1))
-		{ // ÀÌµ¿ÇÃ·¡±×¿Í ÀÌµ¿°¡´ÉÁö¿ªÀÌ ¸ðµÎ °¡´ÉÇØ¾ß ÀÌµ¿
+		{ // ï¿½Ìµï¿½ï¿½Ã·ï¿½ï¿½×¿ï¿½ ï¿½Ìµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¾ï¿½ ï¿½Ìµï¿½
 			sq_setCurrentAxisPos(obj, 0, dstX);
 			sq_setCurrentAxisPos(obj, 1, dstY);
 		}
 		else
-		{ // ÀÌµ¿ÇÒ ¼ö ¾ø´Â Áö¿ªÀ» ¸¸³µ´Ù..
-			sq_var.set_vector(1,1); // ÀÌµ¿ ÇÃ·¡±× ÀÎµ¦½º 3 ÀÌµ¿ÇÒ ¼ö ¾ø´Â Áö¿ªÀ» ¸¸³µÀ» ¶§ ±×¼ø°£ ´õÀÌ»ó ÀÌµ¿¸øÇÑ´Ù..
+		{ // ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½..
+			sq_var.set_vector(1,1); // ï¿½Ìµï¿½ ï¿½Ã·ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½ 3 ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½×¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì»ï¿½ ï¿½Ìµï¿½ï¿½ï¿½ï¿½Ñ´ï¿½..
 			local offset = dstX - posX;
 			
 			if(offset != 0) {				
 				if(offset < 0) 
 					offset = -offset;
 				
-				local totalLen = sq_var.get_vector(5); // ÃÑÀÌµ¿°Å¸®
+				local totalLen = sq_var.get_vector(5); // ï¿½ï¿½ï¿½Ìµï¿½ï¿½Å¸ï¿½
 				sq_var.set_vector(5, totalLen - offset);
 			}
 		}
 	}
 	else if(substate == SUB_STATE_BROKENARROW_3) {
-		// SUB_STATE_BROKENARROW_3 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_3 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	else if(substate == SUB_STATE_BROKENARROW_4) {
-		// SUB_STATE_BROKENARROW_4 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_4 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	
 
@@ -387,30 +392,30 @@ function onProcCon_BrokenArrow(obj)
 		local pAni = obj.getCurrentAnimation();
 		local frmIndex = obj.sq_GetCurrentFrameIndex(pAni);
 
-		//local x_range = obj.sq_GetIntData(SKILL_BLUEDRAGONWILL, 3); // ±â¿î ÃæÀü½Ã°£
-		//local y_range = obj.sq_GetIntData(SKILL_BLUEDRAGONWILL, 4); // ±â¿î ÃæÀü½Ã°£
-		//local z_range = obj.sq_GetIntData(SKILL_BLUEDRAGONWILL, 5); // ±â¿î ÃæÀü½Ã°£
+		//local x_range = obj.sq_GetIntData(SKILL_BLUEDRAGONWILL, 3); // ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ã°ï¿½
+		//local y_range = obj.sq_GetIntData(SKILL_BLUEDRAGONWILL, 4); // ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ã°ï¿½
+		//local z_range = obj.sq_GetIntData(SKILL_BLUEDRAGONWILL, 5); // ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ã°ï¿½
 	
 		if(frmIndex >= 3)
 		{
 			if(obj.getVar("flag").get_vector(0) == 0)
 			{
-				local x_range = 400; // °Ë»ö¹üÀ§ x
-				local y_range = 200; // °Ë»ö¹üÀ§ y
-				local z_range = 50; // °Ë»ö¹üÀ§ z
+				local x_range = 400; // ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½ x
+				local y_range = 200; // ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½ y
+				local z_range = 50; // ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½ z
 				
-				x_range = obj.sq_GetIntData(SKILL_BROKENARROW, 3); // 3. x¹üÀ§
-				y_range = obj.sq_GetIntData(SKILL_BROKENARROW, 4); // 4. y¹üÀ§
-				z_range = obj.sq_GetIntData(SKILL_BROKENARROW, 5); // 5. z¹üÀ§
+				x_range = obj.sq_GetIntData(SKILL_BROKENARROW, 3); // 3. xï¿½ï¿½ï¿½ï¿½
+				y_range = obj.sq_GetIntData(SKILL_BROKENARROW, 4); // 4. yï¿½ï¿½ï¿½ï¿½
+				z_range = obj.sq_GetIntData(SKILL_BROKENARROW, 5); // 5. zï¿½ï¿½ï¿½ï¿½
 				
 				local x = sq_GetXPos(obj);
 				local y = sq_GetYPos(obj);
 				local z = sq_GetZPos(obj);
 
-				local attackRate = obj.sq_GetBonusRateWithPassive(SKILL_BROKENARROW, STATE_BROKENARROW, 0, 1.0); //2.°ø°Ý·Â(%)
+				local attackRate = obj.sq_GetBonusRateWithPassive(SKILL_BROKENARROW, STATE_BROKENARROW, 0, 1.0); //2.ï¿½ï¿½ï¿½Ý·ï¿½(%)
 
-				local expTime = obj.sq_GetIntData(SKILL_BROKENARROW, 1); // 1. Å¸°Ý ¼º°ø½Ã ´ë½¬±â´ÉÀ» »ç¿ëÇÒ ¼ö ÀÖ´Â ½Ã°£ (È­»ìÀÌ ²ÈÇôÀÖ´Â ½Ã°£)
-				local stunTime = obj.sq_GetIntData(SKILL_BROKENARROW, 2); // 2. Àû °æÁ÷½Ã°£
+				local expTime = obj.sq_GetIntData(SKILL_BROKENARROW, 1); // 1. Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ë½¬ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½Ã°ï¿½ (È­ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ ï¿½Ã°ï¿½)
+				local stunTime = obj.sq_GetIntData(SKILL_BROKENARROW, 2); // 2. ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ã°ï¿½
 				
 				local targetObj = sq_FindTarget(obj, 80, x_range, y_range, z_range);
 				
@@ -448,7 +453,7 @@ function onProcCon_BrokenArrow(obj)
 					sq_BinaryWriteDword(expTime); // 		
 					sq_BinaryWriteDword(stunTime); // 		
 					sq_BinaryWriteFloat(angle); // 		
-					obj.sq_SendCreatePassiveObjectPacket(24250, 0, fireOffsetX, fireOffsetY + 1, fireOffsetZ); // È­»ì
+					obj.sq_SendCreatePassiveObjectPacket(24250, 0, fireOffsetX, fireOffsetY + 1, fireOffsetZ); // È­ï¿½ï¿½
 				}
 				
 				obj.getVar("flag").set_vector(0, 1);
@@ -482,13 +487,13 @@ function onProcCon_BrokenArrow(obj)
 		//sq_AddParticleObject(obj, particleCreater);
 	}
 	else if(substate == SUB_STATE_BROKENARROW_2) {
-		// SUB_STATE_BROKENARROW_2 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_2 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	else if(substate == SUB_STATE_BROKENARROW_3) {
-		// SUB_STATE_BROKENARROW_3 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_3 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	else if(substate == SUB_STATE_BROKENARROW_4) {
-		// SUB_STATE_BROKENARROW_4 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_4 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	
 
@@ -519,19 +524,19 @@ function onEndCurrentAni_BrokenArrow(obj)
 		if(arrowIndex < arrowNum)
 		{
 			obj.sq_IntVectClear();
-			obj.sq_IntVectPush(SUB_STATE_BROKENARROW_1); // substate¼¼ÆÃ
+			obj.sq_IntVectPush(SUB_STATE_BROKENARROW_1); // substateï¿½ï¿½ï¿½ï¿½
 			obj.sq_AddSetStatePacket(STATE_BROKENARROW, STATE_PRIORITY_IGNORE_FORCE, true);
 		}
 		else
 		{
-			local expTime = obj.sq_GetIntData(SKILL_BROKENARROW, 1); // 1. Å¸°Ý ¼º°ø½Ã ´ë½¬±â´ÉÀ» »ç¿ëÇÒ ¼ö ÀÖ´Â ½Ã°£ (È­»ìÀÌ ²ÈÇôÀÖ´Â ½Ã°£)
+			local expTime = obj.sq_GetIntData(SKILL_BROKENARROW, 1); // 1. Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ë½¬ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½Ã°ï¿½ (È­ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ ï¿½Ã°ï¿½)
 			
-			// Å©·Î´ÏÅ¬ ¾ÆÀÌÅÛ ÀÛ¾÷.. Å¸°Ý ¼º°ø½Ã ´ë½¬±â´ÉÀ» »ç¿ëÇÒ ¼ö ÀÖ´Â ½Ã°£ (È­»ìÀÌ ²ÈÇôÀÖ´Â ½Ã°£)
-			// 0¶ó¸é ´ë½¬¸¦ ÇÏÁö ¾Ê´Â´Ù..
+			// Å©ï¿½Î´ï¿½Å¬ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Û¾ï¿½.. Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ë½¬ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½Ã°ï¿½ (È­ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ ï¿½Ã°ï¿½)
+			// 0ï¿½ï¿½ï¿½ ï¿½ë½¬ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´Â´ï¿½..
 		
 			if(obj.getVar("dash").get_vector(0) == 1 && expTime > 0)
 			{
-				local targetObj = sq_GetPassiveObjectByState(obj, 24250, BrokenArrow_state_1); // 24250	`Character/Mage/ATBrokenArrow.obj`			// ³²¹ý»ç - ºê·ÎÅ«¾Ö·Î¿ì (È­»ì)				
+				local targetObj = sq_GetPassiveObjectByState(obj, 24250, BrokenArrow_state_1); // 24250	`Character/Mage/ATBrokenArrow.obj`			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ - ï¿½ï¿½ï¿½Å«ï¿½Ö·Î¿ï¿½ (È­ï¿½ï¿½)				
 				
 				
 				if(!targetObj)
@@ -544,9 +549,9 @@ function onEndCurrentAni_BrokenArrow(obj)
 					local uniqueId = sq_GetUniqueId(targetObj);
 				
 					obj.sq_IntVectClear();
-					obj.sq_IntVectPush(SUB_STATE_BROKENARROW_2); // substate¼¼ÆÃ
-					obj.sq_IntVectPush(group); // substate¼¼ÆÃ
-					obj.sq_IntVectPush(uniqueId); // substate¼¼ÆÃ
+					obj.sq_IntVectPush(SUB_STATE_BROKENARROW_2); // substateï¿½ï¿½ï¿½ï¿½
+					obj.sq_IntVectPush(group); // substateï¿½ï¿½ï¿½ï¿½
+					obj.sq_IntVectPush(uniqueId); // substateï¿½ï¿½ï¿½ï¿½
 					
 					obj.sq_AddSetStatePacket(STATE_BROKENARROW, STATE_PRIORITY_IGNORE_FORCE, true);
 				}
@@ -564,7 +569,7 @@ function onEndCurrentAni_BrokenArrow(obj)
 	else if(substate == SUB_STATE_BROKENARROW_2)
 	{
 		obj.sq_IntVectClear();
-		obj.sq_IntVectPush(SUB_STATE_BROKENARROW_3); // substate¼¼ÆÃ
+		obj.sq_IntVectPush(SUB_STATE_BROKENARROW_3); // substateï¿½ï¿½ï¿½ï¿½
 		obj.sq_AddSetStatePacket(STATE_BROKENARROW, STATE_PRIORITY_IGNORE_FORCE, true);
 	}
 	else if(substate == SUB_STATE_BROKENARROW_3)
@@ -572,7 +577,7 @@ function onEndCurrentAni_BrokenArrow(obj)
 		obj.sq_AddSetStatePacket(STATE_STAND, STATE_PRIORITY_USER, false);
 	}
 	else if(substate == SUB_STATE_BROKENARROW_4) {
-		// SUB_STATE_BROKENARROW_4 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_4 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	
 
@@ -586,19 +591,19 @@ function onKeyFrameFlag_BrokenArrow(obj, flagIndex)
 	local substate = obj.getSkillSubState();
 
 	if(substate == SUB_STATE_BROKENARROW_0) {
-		// SUB_STATE_BROKENARROW_0 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_0 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	else if(substate == SUB_STATE_BROKENARROW_1) {
-		// SUB_STATE_BROKENARROW_1 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_1 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	else if(substate == SUB_STATE_BROKENARROW_2) {
-		// SUB_STATE_BROKENARROW_2 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_2 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	else if(substate == SUB_STATE_BROKENARROW_3) {
-		// SUB_STATE_BROKENARROW_3 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_3 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	else if(substate == SUB_STATE_BROKENARROW_4) {
-		// SUB_STATE_BROKENARROW_4 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_4 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	
 
@@ -614,19 +619,19 @@ function onEndState_BrokenArrow(obj, new_state)
 	local substate = obj.getSkillSubState();
 
 	if(substate == SUB_STATE_BROKENARROW_0) {
-		// SUB_STATE_BROKENARROW_0 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_0 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	else if(substate == SUB_STATE_BROKENARROW_1) {
-		// SUB_STATE_BROKENARROW_1 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_1 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	else if(substate == SUB_STATE_BROKENARROW_2) {
-		// SUB_STATE_BROKENARROW_2 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_2 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	else if(substate == SUB_STATE_BROKENARROW_3) {
-		// SUB_STATE_BROKENARROW_3 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_3 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	else if(substate == SUB_STATE_BROKENARROW_4) {
-		// SUB_STATE_BROKENARROW_4 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_4 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	
 
@@ -640,19 +645,19 @@ function onAfterSetState_BrokenArrow(obj, state, datas, isResetTimer)
 	local substate = obj.getSkillSubState();
 
 	if(substate == SUB_STATE_BROKENARROW_0) {
-		// SUB_STATE_BROKENARROW_0 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_0 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	else if(substate == SUB_STATE_BROKENARROW_1) {
-		// SUB_STATE_BROKENARROW_1 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_1 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	else if(substate == SUB_STATE_BROKENARROW_2) {
-		// SUB_STATE_BROKENARROW_2 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_2 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	else if(substate == SUB_STATE_BROKENARROW_3) {
-		// SUB_STATE_BROKENARROW_3 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_3 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	else if(substate == SUB_STATE_BROKENARROW_4) {
-		// SUB_STATE_BROKENARROW_4 ¼­ºê½ºÅ×ÀÌÆ® ÀÛ¾÷
+		// SUB_STATE_BROKENARROW_4 ï¿½ï¿½ï¿½ê½ºï¿½ï¿½ï¿½ï¿½Æ® ï¿½Û¾ï¿½
 	}
 	
 
