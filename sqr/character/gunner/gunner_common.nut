@@ -278,7 +278,7 @@ function useSkill_after_Gunner(obj, skillIndex, consumeMp, consumeItem, oldSkill
 		{
 			local change_time = sq_GetLevelData(obj, 60, 0, skill_level);
 			appendage.sq_SetValidTime(change_time);
-			local CRITICAL_DAMAGE_RATE = sq_GetLevelData(obj, 60, 2, skill_level);
+			local CRITICAL_DAMAGE_RATE = sq_GetLevelData(obj, 60, 1, skill_level);
 
 			local change_appendage = appendage.sq_getChangeStatus("ele_atk_water");
 			if (!change_appendage)
