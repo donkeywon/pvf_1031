@@ -24,22 +24,3 @@
 
 [cool time]
 	30000
-
-[if]
-	[time]
-		30000	1	1000
-	[module]
-		`[dungeon type]`
-	[/module]
-[/if]
-
-[then]
-	[target]
-		`myself`	-1
-	[consume item]
-		3036	1
-	[duration]
-		30000
-	[elemental weapon]
-		`water`
-[/then]
