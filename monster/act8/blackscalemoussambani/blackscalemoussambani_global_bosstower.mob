@@ -25,11 +25,11 @@
 	`../title_ani/pirate_musam.ani`
 
 [ability category]
-	`[HP MAX]`	`*`	7200
-	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	600
-	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	130
-	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	650
-	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	110
+	`[HP MAX]`	`*`	21600
+	`[EQUIPMENT_PHYSICAL_ATTACK]`	`*`	1200
+	`[EQUIPMENT_PHYSICAL_DEFENSE]`	`*`	520
+	`[EQUIPMENT_MAGICAL_ATTACK]`	`*`	1300
+	`[EQUIPMENT_MAGICAL_DEFENSE]`	`*`	440
 [/ability category]
 
 [category]
@@ -104,19 +104,19 @@
 	60	60
 
 [level]
-	68	69
+	65	65
 
 [move speed]
-	700	700
+	1050	1050
 
 [attack speed]
-	1000	1000
+	1500	1500
 
 [cast speed]
-	2000	2100
+	2600	2730
 
 [hit recovery]
-	1400	1400
+	1540	1540
 
 [weight]
 	19000	19000
@@ -234,21 +234,21 @@
 
 [ai pattern]
 	[easy]
-		`ai/Event.ai`
+		`ai/heroEvent.ai`
 		`ai/DestinationSelect.ai`
-		`ai/Action.ai`
+		`ai/heroAction.ai`
 		`ai/MoveMethod.ai`
 	[/easy]
 	[hard]
-		`ai/Event.ai`
+		`ai/heroEvent.ai`
 		`ai/DestinationSelect.ai`
-		`ai/Action.ai`
+		`ai/heroAction.ai`
 		`ai/MoveMethod.ai`
 	[/hard]
 	[medium]
-		`ai/Event.ai`
+		`ai/heroEvent.ai`
 		`ai/DestinationSelect.ai`
-		`ai/Action.ai`
+		`ai/heroAction.ai`
 		`ai/MoveMethod.ai`
 	[/medium]
 	[ultimate]
@@ -267,11 +267,11 @@
 
 [level of difficulty]
 	[easy]
-		-40	2000
+		0	0
 	[medium]
-		-20	1000
+		0	0
 	[hard]
-		0	600
+		0	0
 	[ultimate]
 		0	0
 	[hero]
