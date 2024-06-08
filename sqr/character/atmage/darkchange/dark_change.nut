@@ -29,7 +29,9 @@ function checkExecutableSkill_DarkChange(obj)
 function checkCommandEnable_DarkChange(obj)
 {
 	if(!obj) return false;
-
+	if(sq_GetSkillLevel(obj, SKILL_ELEMENTAL_BOMBING) > 1){
+		return true;
+	}
 	local state = obj.sq_GetState();
 	
 	if(state == STATE_ATTACK)
@@ -77,9 +79,11 @@ function onSetState_DarkChange(obj, state, datas, isResetTimer)
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_DARK_CHANGE_START);
 		sq_flashScreen(obj,0,0,800,150, sq_RGB(0,0,0), GRAPHICEFFECT_NONE, ENUM_DRAWLAYER_BOTTOM);
 		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED,SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.2, 1.2);
+		local deyelevel = sq_GetSkillLevel(obj, SKILL_DARK_EYE);
+		local sizeRate = obj.sq_GetLevelData(SKILL_DARK_EYE, 8, deyelevel).tofloat() / 1000.0;
 		
 		local dark_range = sq_GetLevelData(obj, SKILL_DARK_CHANGE, 1, skill_level);
-		dark_range = dark_range * 0.01;
+		dark_range = dark_range * 0.01 + sizeRate;
 		
 		local ani = sq_GetCurrentAnimation(obj);			
 		if(ani){			

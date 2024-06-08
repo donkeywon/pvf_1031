@@ -19,15 +19,21 @@ function setCustomData_po_ATMagicCannon(obj, receiveData)
 	if(elementalType != ENUM_ELEMENT_NONE) {
 		setCurrentAnimationFromCutomIndex(obj,elementalType);		
 	}
+	local parentObj = obj.getTopCharacter();
+	parentObj = sq_ObjectToSQRCharacter(parentObj);
 	
+	if(!parentObj)
+		return;
+	local skill_level = sq_GetSkillLevel(parentObj, SKILL_DARK_EYE);
+	local size = 1.0 + 1.0 * sq_GetLevelData(parentObj, SKILL_DARK_EYE, 2, skill_level).tofloat() / 100.0;
+	local currentAni = obj.getCurrentAnimation();
+	if (currentAni) {
+		currentAni.setImageRateFromOriginal(size, size);
+		currentAni.setAutoLayerWorkAnimationAddSizeRate(size);
+		sq_SetAttackBoundingBoxSizeRate(currentAni, size, size, size);
+	}
 	// 암속의 경우 따로 폭발이 없다.
 	if(elementalType == ENUM_ELEMENT_DARK) {
-		local parentObj = obj.getTopCharacter();
-		parentObj = sq_ObjectToSQRCharacter(parentObj);
-		
-		if(!parentObj)
-			return;		
-		
 		local skill_level			= sq_GetSkillLevel(parentObj, SKILL_ELEMENTAL_CHANGE);	
 		local changeStatusLevel		= sq_GetLevelData(parentObj, SKILL_ELEMENTAL_CHANGE, 7, skill_level);// 7.저주 레벨
 		local changeStatusProb		= sq_GetLevelData(parentObj, SKILL_ELEMENTAL_CHANGE, 8, skill_level);// 8.저주 확률(0.1%)
@@ -57,6 +63,8 @@ function addMagicCannonEffect(obj,vangle)
 {	
 	if(!obj)
 		return;
+	local parentObj = obj.getTopCharacter();
+	parentObj = sq_ObjectToSQRCharacter(parentObj);
 	local var = obj.getVar();
 	local elementalType = var.getInt(PO_MAGIC_CANNON_VAR_ELEMENTAL_TYPE);
 	local currentAni = obj.getCurrentAnimation();
@@ -117,6 +125,19 @@ function setState_po_ATMagicCannon(obj, state, datas)
 			obj.setCustomRotate(true, sq_ToRadian(vangle));
 		}
 		
+		local parentObj = obj.getTopCharacter();
+		parentObj = sq_ObjectToSQRCharacter(parentObj);
+	
+		if(!parentObj)
+			return;
+		local skill_level = sq_GetSkillLevel(parentObj, SKILL_DARK_EYE);
+		local size = 1.0 + 1.0 * sq_GetLevelData(parentObj, SKILL_DARK_EYE, 2, skill_level).tofloat() / 100.0;
+		local currentAni = obj.getCurrentAnimation();
+		if (currentAni) {
+			currentAni.setImageRateFromOriginal(size, size);
+			currentAni.setAutoLayerWorkAnimationAddSizeRate(size);
+			sq_SetAttackBoundingBoxSizeRate(currentAni, size, size, size);
+		}
 		obj.sq_SetMoveParticle("Particle/ATMagicCannon.ptl", 0.0, vangle);
 		addMagicCannonEffect(obj,vangle); // 펑 하는 이펙트		
 		
@@ -156,8 +177,10 @@ function createMagicCannonElementlalExplosion(obj)
 	local changeStatusdamage	= 0;
 	
 	// 매직캐넌의 폭발 크기(%)
-	local sizeRate				= sq_GetIntData(parentObj, SKILL_MAGIC_CANNON, 0);
-	
+	local skill_level = sq_GetSkillLevel(parentObj, SKILL_DARK_EYE);
+	local sizeRate = sq_GetIntData(parentObj, SKILL_MAGIC_CANNON, 0);
+	sizeRate = sizeRate + sizeRate * sq_GetLevelData(parentObj, SKILL_DARK_EYE, 2, skill_level) / 100.0;
+	sizeRate = sizeRate.tointeger();
 	
 	switch (elementalType)
 	{

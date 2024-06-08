@@ -73,6 +73,8 @@ function setCustomData_po_ATChainLightning(obj, reciveData)
 	local firstTargetXEndRange = reciveData.readWord();
 	local nextTargetRange = reciveData.readWord();
 	local targetMaxHeight = reciveData.readWord();
+	local isChoroset = reciveData.readWord();
+	local chorosetTime  = reciveData.readWord();
 	
 	local link_sum_num = reciveData.readWord() + 1;
 	local attack_time = reciveData.readWord();
@@ -97,7 +99,8 @@ function setCustomData_po_ATChainLightning(obj, reciveData)
 	obj.getVar("nograb").clear_vector();
 	obj.getVar("nograb").push_vector(0);
 	
-	
+	obj.getVar("choroset").clear_vector();
+	obj.getVar("choroset").push_vector(isChoroset);
 	
 	local link_num = link_sum_num;
 	
@@ -453,8 +456,8 @@ function procAppend_po_ATChainLightning(obj)
 		else if(state == S_PO_ATCL_1)
 		{
 			local clNum = obj.getVar("cl").get_obj_vector_size();
-			print(" state == S_PO_ATCL_1");
-			print(" clNum:" + clNum);
+			//print(" state == S_PO_ATCL_1");
+			//print(" clNum:" + clNum);
 			if(clNum == 0)
 			{
 				if(obj.isMyControlObject())
@@ -499,8 +502,11 @@ function procAppend_po_ATChainLightning(obj)
 			if(state == S_PO_ATCL_0) {
 			
 				procChainLightning(obj, pObj, pActiveTarget, i);
-				if(pAni.GetCurrentFrameIndex() >= 2)
-				{ // ÇöÀç ºö ¿ÀºêÁ§Æ®ÀÇ ÇÁ·¹ÀÓÀÎµ¦½º°¡ 2ÇÁ·¹ÀÓÀ» ³Ñ¾î°£´Ù¸é..
+				
+				//ï¿½ï¿½ï¿?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+				local isChoroset = obj.getVar("choroset").get_vector(0);
+				if(pAni.GetCurrentFrameIndex() >= 2 || isChoroset == 1)
+				{ // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½ 2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ¾î°£ï¿½Ù¸ï¿½..
 					if(obj.getVar("cl").get_vector(i) == 0)
 					{ // ÇöÀç ºö Å¸°ÙÆÃÀÌ ´ÙÀ½À¸·Î ¸µÅ©µÇÁö ¾Ê¾Ò´Ù¸é..
 					

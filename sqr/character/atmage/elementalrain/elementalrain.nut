@@ -32,7 +32,9 @@ function checkExecutableSkill_ElementalRain(obj)
 function checkCommandEnable_ElementalRain(obj)
 {
 	if(!obj) return false;
-
+	if(sq_GetSkillLevel(obj, SKILL_ELEMENTAL_BOMBING) > 3){
+		return true;
+	}
 	local state = obj.sq_GetState();
 	
 	if(state == STATE_ATTACK)

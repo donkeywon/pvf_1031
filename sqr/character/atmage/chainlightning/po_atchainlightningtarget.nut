@@ -169,11 +169,11 @@ function procAppend_po_ATChainLightningTarget(obj)
 	}
 	
 	
-	local pObjAni = obj.getCurrentAnimation();
+	//local pObjAni = obj.getCurrentAnimation();
 	
 	/////////////////////////////////////////////////
 	// 
-	local substate = pChr.getSkillSubState();
+	/*local substate = pChr.getSkillSubState();
 	
 	if(substate == SUB_STATE_ATCHAINLIGHTNING_2) {
 		if(state == S_PO_ATCLT_0) {
@@ -189,7 +189,7 @@ function procAppend_po_ATChainLightningTarget(obj)
 			}
 			return;
 		}
-	}
+	}*/
 	////////////////////////////////////////////
 	
 	if(pTargetChr)
@@ -206,7 +206,7 @@ function procAppend_po_ATChainLightningTarget(obj)
 			if(t)
 				time = t.Get();
 			
-			print( " multiHitCnt:" + multiHitCnt + " cnt:" + cnt);
+			//print( " multiHitCnt:" + multiHitCnt + " cnt:" + cnt);
 			if (obj.timer_.isOnEvent(time) == true)
 			{
 				local value = obj.getVar("hitCnt").get_vector(VECTOR_FLAG_1);
@@ -233,11 +233,8 @@ function procAppend_po_ATChainLightningTarget(obj)
 			
 				if(multiHitCnt <= cnt || obj.sq_var.get_obj_vector_size(0) == 0)
 				{
-					print(" destroy lightning target");
-					if(obj.isMyControlObject())
-					{
-						sq_SendDestroyPacketPassiveObject(obj);
-					}
+					//print(" destroy lightning target");
+					sq_SendDestroyPacketPassiveObject(obj);
 				}
 			}
 		}

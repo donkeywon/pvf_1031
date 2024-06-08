@@ -15,7 +15,9 @@ function setCustomData_po_ATIceAreaIceRain(obj,receiveData)
 	local mage = obj.getTopCharacter();
 	mage = sq_ObjectToSQRCharacter(mage);	
 	if (mage)
-	{	
+	{
+		local skill_level = sq_GetSkillLevel(mage, SKILL_DARK_EYE);
+		iceSizeRate = iceSizeRate * (1.0 + sq_GetLevelData(mage, SKILL_DARK_EYE, 4, skill_level).tofloat() / 100.0)
 		local attackPower = mage.sq_GetBonusRateWithPassive(SKILL_ICE_AREA , STATE_ICE_AREA, 1, 1.0);	
 		sq_SetCurrentAttackBonusRate(sq_GetCurrentAttackInfo(obj), attackPower);
 	}

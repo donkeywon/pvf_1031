@@ -10,6 +10,8 @@ SKL_CL_SD_1 <- 1 //0	// 11.처음 타겟팅시 X축 시작 거리
 SKL_CL_SD_2 <- 2 //400	// 12.처음 타겟팅시 X축 끝 거리
 SKL_CL_SD_3 <- 3 //320	// 13.체인시 다음 타겟까지의 최대 거리
 SKL_CL_SD_4 <- 4 //300	// 14.타격할 적의 최대 높이
+SKL_CL_SD_5 <- 5
+SKL_CL_SD_6 <- 6
 
 // 0.링크 최대 갯수 1.지속시간 2.공격력(%) 3.다단히트 횟수 4.다단히트 간격
 SKL_CL_LI_0 <- 0 // 0.링크 최대 갯수 
@@ -25,7 +27,7 @@ function checkExecutableSkill_ChainLightning(obj)
 
 	local b_useskill = obj.sq_IsUseSkill(SKILL_ATCHAINLIGHTNING);
 	
-	print("b_useskill : %d" + b_useskill);
+	//print("b_useskill : %d" + b_useskill);
 
 	if(b_useskill) {
 		obj.sq_IntVectClear();
@@ -42,7 +44,9 @@ function checkCommandEnable_ChainLightning(obj)
 {
 
 	if(!obj) return false;
-
+	if(sq_GetSkillLevel(obj, SKILL_ELEMENTAL_BOMBING) > 1){
+		return true;
+	}
 	local state = obj.sq_GetState();
 	
 	if(state == STATE_ATTACK)
@@ -99,6 +103,8 @@ function onSetState_ChainLightning(obj, state, datas, isResetTimer)
 			local firstTargetXEndRange = obj.sq_GetIntData(SKILL_ATCHAINLIGHTNING, SKL_CL_SD_2); // 2.처음 타겟팅시 X축 끝 거리
 			local nextTargetRange = obj.sq_GetIntData(SKILL_ATCHAINLIGHTNING, SKL_CL_SD_3); // 3.체인시 다음 타겟까지의 최대 거리
 			local targetMaxHeight = obj.sq_GetIntData(SKILL_ATCHAINLIGHTNING, SKL_CL_SD_4); // 4.타격할 적의 최대 높이
+			local isChoroset = obj.sq_GetIntData(SKILL_ATCHAINLIGHTNING, SKL_CL_SD_5);
+			local chorosetTime = obj.sq_GetIntData(SKILL_ATCHAINLIGHTNING, SKL_CL_SD_6);
 			
 			local skill_level = obj.sq_GetSkillLevel(SKILL_ATCHAINLIGHTNING);
 			
@@ -114,6 +120,8 @@ function onSetState_ChainLightning(obj, state, datas, isResetTimer)
 			sq_BinaryWriteWord(firstTargetXEndRange);
 			sq_BinaryWriteWord(nextTargetRange);
 			sq_BinaryWriteWord(targetMaxHeight);
+			sq_BinaryWriteWord(isChoroset);
+			sq_BinaryWriteWord(chorosetTime);
     		
 			sq_BinaryWriteWord(link_num);
 			sq_BinaryWriteWord(attack_time);
@@ -133,7 +141,6 @@ function onSetState_ChainLightning(obj, state, datas, isResetTimer)
 	}
 	else if(substate == SUB_STATE_ATCHAINLIGHTNING_2) {
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_CHAINLIGHTNING_END);
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 	else if(substate == SUB_STATE_ATCHAINLIGHTNING_3) {
 		// SUB_STATE_ATCHAINLIGHTNING_3 서브스테이트 작업
@@ -142,7 +149,7 @@ function onSetState_ChainLightning(obj, state, datas, isResetTimer)
 		// SUB_STATE_ATCHAINLIGHTNING_4 서브스테이트 작업
 	}
 	
-
+obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED , SPEED_TYPE_CAST_SPEED , SPEED_VALUE_DEFAULT , SPEED_VALUE_DEFAULT , 1.0 , 1.0);
 }
 
 function prepareDraw_ChainLightning(obj)
@@ -192,6 +199,11 @@ function onProc_ChainLightning(obj)
 			
 			local skill_level = obj.sq_GetSkillLevel(SKILL_ATCHAINLIGHTNING);
 			local attack_time = obj.sq_GetLevelData(SKILL_ATCHAINLIGHTNING, SKL_CL_LI_1, skill_level);	// 1.지속시간
+			local isChoroset = obj.sq_GetIntData(SKILL_ATCHAINLIGHTNING, SKL_CL_SD_5);
+			if (isChoroset == 1)
+			{
+				attack_time = obj.sq_GetIntData(SKILL_ATCHAINLIGHTNING, SKL_CL_SD_6);
+			}
 			
 			local passiveobj_cl = obj.sq_GetPassiveObject(24241);
 			
@@ -351,9 +363,11 @@ function onEndState_ChainLightning(obj, new_state)
 		// SUB_STATE_ATCHAINLIGHTNING_4 서브스테이트 작업
 	}
 	// 스테이트 종료 혹은 취소 되었다면 캐스팅 게이지 없앰
-	sq_EndDrawCastGauge(obj);
-	obj.stopSound(7576);
-
+	if(new_state != STATE_CHAINLIGHTNING)
+	{
+		sq_EndDrawCastGauge(obj);
+		obj.stopSound(7576);
+	}
 }
 
 function onAfterSetState_ChainLightning(obj, state, datas, isResetTimer)

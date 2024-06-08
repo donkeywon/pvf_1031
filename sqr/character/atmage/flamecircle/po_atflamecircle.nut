@@ -43,8 +43,8 @@ function setCustomData_po_ATFlameCircle(obj, reciveData)
 
 function destroy_po_ATFlameCircle(obj)
 {
+	if (!obj) return;
 	local bspin_dodge_obj = obj.sq_var.get_obj_vector(0);
-	print( " destroy_po_ATFlameCircle:" + bspin_dodge_obj);
 	
 	if(bspin_dodge_obj) {
 		bspin_dodge_obj.setValid(false);
@@ -148,6 +148,17 @@ function procAppend_po_ATFlameCircle(obj)
 		}
 		
 		if(obj.isMyControlObject()) {
+			if (pChr) {
+				pChr = sq_ObjectToSQRCharacter(pChr);
+				if (pChr.getState() != STATE_FLAMECIRCLE) {
+					local attackBonus = pChr.sq_GetBonusRateWithPassive(SKILL_FLAMECIRCLE, STATE_FLAMECIRCLE, 3, 1.0)
+					local size = pChr.sq_GetIntData(SKILL_FLAMECIRCLE, 1);
+					local deyelevel = sq_GetSkillLevel(pChr, SKILL_DARK_EYE);
+					local deyeSize = pChr.sq_GetLevelData(SKILL_DARK_EYE, 9, deyelevel) / 10;
+					sq_createAttackObjectWithPath(obj, "character/mage/effect/animation/atflamecircle/exp/01_dummy_0.ani", "character/mage/atattackinfo/pieceofice.atk", true, attackBonus, size + deyeSize, 0, 0, 0);
+					sq_AddDrawOnlyAniFromParent(obj,"character/mage/effect/animation/atflamecircle/exp/01_dummy_0.ani", 0, -2, 0);
+				}
+			}
 			sq_SendDestroyPacketPassiveObject(obj);
 		}		
 	}

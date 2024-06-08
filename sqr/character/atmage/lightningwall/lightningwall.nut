@@ -18,7 +18,9 @@ function checkCommandEnable_LightningWall(obj)
 {
 	if(!obj)
 		return false;
-
+	if(sq_GetSkillLevel(obj, SKILL_ELEMENTAL_BOMBING) > 3){
+		return true;
+	}
 	local state = obj.sq_GetState();
 	
 	if(state == STATE_ATTACK) {
@@ -27,15 +29,6 @@ function checkCommandEnable_LightningWall(obj)
 	}
 	
 	return true;
-}
-
-function onEndState_LightningWall(obj, newState)
-{
-	if(!obj)
-		return;
-
-	if(newState != STATE_LIGHTNING_WALL) 
-		setLightningWallState(obj, PO_LIGHTNING_WALL_DESTROY);
 }
 
 function onSetState_LightningWall(obj, state, datas, isResetTimer)
@@ -58,8 +51,21 @@ function onSetState_LightningWall(obj, state, datas, isResetTimer)
 	sq_StartDrawCastGauge(obj, castAniTime, true);
 	
 	local var = obj.getVar();
+	obj.getVar("lastT").setInt(0,0);
 	var.setBool(0,false);
+	var.setBool(1,false);
+	var.setBool(2,false);
+	var.setBool(3,false);
+	var.setBool(4,false);
+	local wallNum = obj.sq_GetIntData(SKILL_LIGHTNING_WALL, 4);	//i³ißa|Oa
+	local wallDelay = obj.sq_GetIntData(SKILL_LIGHTNING_WALL, 5); //i³ißi¹ONæAoAaAEa
+	obj.getVar("wall").setInt(0, wallNum);
+	obj.getVar("wall").setInt(1, wallDelay);
+	
 	addElementalChain_ATMage(obj, ENUM_ELEMENT_LIGHT);
+	obj.getVar("lightwall").clear_vector();
+	obj.getVar("lightwall").push_vector(0);
+	//FLAG_PASSIVE_CREATE_LIGHTNING_WALL = 0;
 }
 
 function setLightningWallState(obj, state)
@@ -96,18 +102,36 @@ function onEndCurrentAni_LightningWall(obj)
 
 function onProc_LightningWall(obj)
 {
-	if(!obj)
-		return;
-	local var = obj.getVar();	
-	
-	if(obj.isMyControlObject() && var.getBool(0) == false && sq_GetCurrentFrameIndex(obj) > 20)
-	{
-		setLightningWallState(obj,PO_LIGHTNING_WALL_MOVE);			
-		sq_flashScreen(obj, 0, 1000,500, 180, sq_RGB(0,0,0), GRAPHICEFFECT_NONE, ENUM_DRAWLAYER_BOTTOM);
+	if(!obj) return;		
+	if(!obj.isMyControlObject()) return;
+    if (sq_GetCurrentFrameIndex(obj) <= 20) return;
 
-		var.setBool(0,true);
+	//uoo￠i³ißa|Ea
+	local var = obj.getVar();
+	local wallNum = obj.getVar("wall").getInt(0);
+	local wallDelay = obj.getVar("wall").getInt(1);
+
+	//aIæAoAaAEai¹ONi³iß
+	for (local i = 0; i <= wallNum; i++)
+	{
+		//÷÷O¨u±IDi³ißaAUui≪Iei¹ON
+		if(var.getBool(i)) continue;
+
+		//÷÷O¨ß¾o­i¹ONi³ißaAEauuiIo­aAUuOÞeIOoeIÐ®iOiUEaI°aAEa
+		if (sq_GetObjectTime(obj) - obj.getVar("lastT").getInt(0) < wallDelay) continue;
+		
+		//aaoCi³ißo¸i¹ONßO÷¾
+		local wall = obj.getMyPassiveObject(24218,i);	
+		if (wall) wall.sendStateOnlyPacket(PO_LIGHTNING_WALL_MOVE);
+
+		//NAOai¹ONøoaUÐaEaI°aAEa
+		var.setBool(i,true);
+		obj.getVar("lastT").setInt(0, sq_GetObjectTime(obj));
+
+		sq_flashScreen(obj, 0, 1000,500, 180, sq_RGB(0,0,0), GRAPHICEFFECT_NONE, ENUM_DRAWLAYER_BOTTOM);
 		obj.sq_PlaySound("LIGHTWALL_SHOT");
-	}	
+		break;
+	}
 }
 
 function onKeyFrameFlag_LightningWall(obj, flagIndex)
@@ -123,12 +147,13 @@ function onKeyFrameFlag_LightningWall(obj, flagIndex)
 				yByDirection = 1;
 						
 			local moveDistance	= sq_GetIntData(obj, SKILL_LIGHTNING_WALL, 2); //2: 이동 거리
+			local wallNum = obj.sq_GetIntData(SKILL_LIGHTNING_WALL, 4);
 			local attackPower	= obj.sq_GetBonusRateWithPassive(SKILL_LIGHTNING_WALL , STATE_LIGHTNING_WALL, 0, 1.0);		
 			local skill_level	= sq_GetSkillLevel(obj, SKILL_LIGHTNING_WALL);
 			local prob			= sq_GetLevelData(obj, SKILL_LIGHTNING_WALL, 2, skill_level)/10.0; // 2. 감전 확률 (0.1%)
 			local level			= sq_GetLevelData(obj, SKILL_LIGHTNING_WALL, 1, skill_level); // 1. 감전 레벨
 			local duration		= sq_GetLevelData(obj, SKILL_LIGHTNING_WALL, 4, skill_level); // 4. 지속시간
-			local lightDamage	= sq_GetLevelData(obj, SKILL_LIGHTNING_WALL, 3, skill_level); // 3. 감전 공격력
+			local lightDamage	= obj.sq_GetPowerWithPassive(SKILL_LIGHTNING_WALL, -1, 3, -1, 1.0); // 3. 감전 공격력
 	
 							
 			// 라이트닝 월 생성
@@ -141,6 +166,8 @@ function onKeyFrameFlag_LightningWall(obj, flagIndex)
 			obj.sq_WriteDword(duration);
 			obj.sq_WriteDword(lightDamage);
 			obj.sq_SendCreatePassiveObjectPacket(24218, 0, 50, -1, 0);
+				obj.getVar("lightwall").set_vector(0, 1);
+				//FLAG_PASSIVE_CREATE_LIGHTNING_WALL = 1;
 		}
 	}
 	else if (flagIndex == 2) {		
@@ -153,3 +180,43 @@ function onKeyFrameFlag_LightningWall(obj, flagIndex)
 	return true;
 }
 
+function onEndState_LightningWall(obj, newState) {
+	if (!obj)
+		return;
+
+	if (newState != STATE_LIGHTNING_WALL) {
+		//setLightningWallState(obj, PO_LIGHTNING_WALL_DESTROY);
+		if (newState == STATE_DAMAGE || newState == STATE_DOWN || newState == STATE_DIE)
+			return;
+		if (obj.getVar("lightwall").get_vector(0) != 1 && obj.isMyControlObject()) {
+			local yByDirection = -1;
+			if (obj.getDirection() != ENUM_DIRECTION_RIGHT)
+				yByDirection = 1;
+
+			local moveDistance = sq_GetIntData(obj, SKILL_LIGHTNING_WALL, 2); 
+			local attackPower = obj.sq_GetBonusRateWithPassive(SKILL_LIGHTNING_WALL, STATE_LIGHTNING_WALL, 0, 1.0);
+			local skill_level = sq_GetSkillLevel(obj, SKILL_LIGHTNING_WALL);
+			local prob = sq_GetLevelData(obj, SKILL_LIGHTNING_WALL, 2, skill_level) / 10.0; 
+			local level = sq_GetLevelData(obj, SKILL_LIGHTNING_WALL, 1, skill_level); 
+			local duration = sq_GetLevelData(obj, SKILL_LIGHTNING_WALL, 4, skill_level); 
+			local lightDamage = obj.sq_GetPowerWithPassive(SKILL_LIGHTNING_WALL, -1, 3, -1, 1.0); 
+
+			obj.sq_StartWrite();
+			obj.sq_WriteDword(moveDistance); 
+			obj.sq_WriteDword(attackPower);
+			obj.sq_WriteDword(skill_level);
+			obj.sq_WriteFloat(prob);
+			obj.sq_WriteDword(level);
+			obj.sq_WriteDword(duration);
+			obj.sq_WriteDword(lightDamage);
+			obj.sq_SendCreatePassiveObjectPacket(24218, 0, 50, -1, 0);
+			//FLAG_PASSIVE_CREATE_LIGHTNING_WALL = 1;
+			obj.getVar("lightwall").set_vector(0, 1);
+		}
+		if(obj.isMyControlObject())
+		{
+			setLightningWallState(obj,PO_LIGHTNING_WALL_MOVE);
+		}
+	}
+
+}

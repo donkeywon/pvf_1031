@@ -17,7 +17,9 @@ function checkCommandEnable_IceArea(obj)
 {
 	if(!obj)
 		return false;
-
+	if(sq_GetSkillLevel(obj, SKILL_ELEMENTAL_BOMBING) > 2){
+		return true;
+	}
 	local state = obj.sq_GetState();
 	
 	if(state == STATE_ATTACK) {
@@ -86,7 +88,9 @@ function onKeyFrameFlag_IceArea(obj, flagIndex)
 		{
 			local level		  = sq_GetSkillLevel(obj, SKILL_ICE_AREA);
 			local iceAreaRate = sq_GetIntData(obj, SKILL_ICE_AREA, 0, level);
-			iceAreaRate = iceAreaRate * 0.01; //100분위로 변경
+			local skill_level = sq_GetSkillLevel(obj, SKILL_DARK_EYE);
+			local sizeRate = obj.sq_GetLevelData(SKILL_DARK_EYE, 4, skill_level).tofloat() / 100.0;
+			iceAreaRate = iceAreaRate * 0.01 + sizeRate; //100분위로 변경
 			
 			local lifeTime	  = sq_GetLevelData(obj, SKILL_ICE_AREA, 0, level);			
 			local iceRainCount= sq_GetLevelData(obj, SKILL_ICE_AREA, 2, level);

@@ -1,290 +1,292 @@
-// ÀÌ°÷Àº ´øÆÄ¼Ò½º¿¡ ¾ø´Â ¼ø¼ö ½ºÅ©¸³Æ®·Î¸¸ °³¹ßÇÏ¸é¼­ ÇÊ¿äÇÑ ½ºÅ³°³¹ß¿¡ ÇÊ¿äÇÑ »ó¼ö,enum Ãß°¡°ªÀ» ¼±¾ðÇÏ´Â ºÎºÐÀÔ´Ï´Ù. 
-// ´øÆÄ¼Ò½º¿¡ ÀÖ´Â °ªÀ» ÀÌ°÷¿¡ ³ÖÀ¸½Ã¸é ¾ÈµË´Ï´Ù.
+// ï¿½Ì°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ä¼Ò½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å©ï¿½ï¿½Æ®ï¿½Î¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸é¼­ ï¿½Ê¿ï¿½ï¿½ï¿½ ï¿½ï¿½Å³ï¿½ï¿½ï¿½ß¿ï¿½ ï¿½Ê¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½,enum ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Îºï¿½ï¿½Ô´Ï´ï¿½. 
+// ï¿½ï¿½ï¿½Ä¼Ò½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ì°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ã¸ï¿½ ï¿½ÈµË´Ï´ï¿½.
 
 
 SKILL_ATMAGE_COMMINTERRUPT <- 254
 STATE_ATTACK					<- 8
-STATE_WIND_STRIKE				<- 20	// À©µå ½ºÆ®¶óÀÌÅ©
-STATE_CRYSTALATTACK 			<- 21   // Å©¸®½ºÅ» ¾îÅÃ
-STATE_ELEMENTAL_CHANGE 			<- 22	// ¼Ó¼º¹ßµ¿
-STATE_DARK_CHANGE 				<- 23	// ¾ÏÀü
-STATE_FIRE_ROAD					<- 24	// ÆÄÀÌ¾î·Îµå
-STATE_CHAINLIGHTNING			<- 25   // Ã¼ÀÎ¶óÀÌÆ®´×
-STATE_ICEROAD 					<- 26	// ¾óÀ½±æ
-STATE_ICE_SWORD					<- 27	// ºù°Ë
-STATE_HOLONG_LIGHT				<- 28	// È£·ÕºÒ
-STATE_PIECE_OF_ICE				<- 29	// ¾óÀ½ÆÄÆí
-STATE_FLAMECIRCLE				<- 30	// ÇÁ·¹ÀÓ¼­Å¬
-STATE_BLUEDRAGONWILL			<- 31	// ¼ö·æÀÇ ÀÇÁö
-STATE_FROZENLAND				<- 32	// ¾ó¾îºÙÀº ´ëÁö
-STATE_ICE_AREA					<- 33	// ¾ÆÀÌ½º ¿¡¾î¸®¾î
-STATE_ICE_CRASH					<- 34	// ¾ÆÀÌ½º Å©·¡½¬
-STATE_BROKENARROW				<- 35	// ºê·ÎÅ«¾Ö·Î¿ì
-STATE_PUSH_OUT					<- 36	// ¹Ð¾î³»±â
-STATE_MAGIC_CANNON				<- 37	// ¸ÅÁ÷ Ä³³Í
-STATE_MAGIC_SHIELD				<- 38	// º¸È£¸· Çü¼º
-STATE_TELEPORT					<- 39	// ÅÚ·¹Æ÷Æ®
-STATE_FALLENBLOSSOMS			<- 40	// °øÅë:³«È­¿¬Ã¢
-STATE_TURNWINDMILL				<- 41	// Ç³Â÷µ¹¸®±â
-STATE_DARKNESSMANTLE			<- 42	// ´ÙÅ©´Ï½º¸ÇÆ²
-STATE_WATER_CANNON				<- 43	// ¹°´ëÆ÷
-STATE_MANABURST					<- 44	// ¸¶³ªÆøÁÖ
-STATE_RESONANCE					<- 45	// °ø¸í
-STATE_LIGHTNING_WALL			<- 46	// ¶óÀÌÆ®´× ¿ù
-STATE_FIREPILLAR				<- 47	// ºÒ±âµÕ
-STATE_ICEMAN					<- 48	// ¾ÆÀÌ½º¸Ç
-STATE_ELEMENTAL_RAIN			<- 49	// ¿¤·¹¸àÅ» ·¹ÀÎ
-STATE_MULTI_SHOT				<- 50	// ¿¬¼Ó±¸ ¹ß»ç
-STATE_DIEHARD					<- 51	// ºÒ»ç
-STATE_ATMAGE_DASH_ATTACK		<- 52	// ¼öÀÎÃ¼
-STATE_ICECHAKRAM				<- 53	// ºù·ùÈ¯ (ºù°á»ç:°¢¼º¾×Æ¼ºê)
+STATE_WIND_STRIKE				<- 20	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Å©
+STATE_CRYSTALATTACK 			<- 21   // Å©ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½
+STATE_ELEMENTAL_CHANGE 			<- 22	// ï¿½Ó¼ï¿½ï¿½ßµï¿½
+STATE_DARK_CHANGE 				<- 23	// ï¿½ï¿½ï¿½ï¿½
+STATE_FIRE_ROAD					<- 24	// ï¿½ï¿½ï¿½Ì¾ï¿½Îµï¿½
+STATE_CHAINLIGHTNING			<- 25   // Ã¼ï¿½Î¶ï¿½ï¿½ï¿½Æ®ï¿½ï¿½
+STATE_ICEROAD 					<- 26	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+STATE_ICE_SWORD					<- 27	// ï¿½ï¿½ï¿½ï¿½
+STATE_HOLONG_LIGHT				<- 28	// È£ï¿½Õºï¿½
+STATE_PIECE_OF_ICE				<- 29	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+STATE_FLAMECIRCLE				<- 30	// ï¿½ï¿½ï¿½ï¿½ï¿½Ó¼ï¿½Å¬
+STATE_BLUEDRAGONWILL			<- 31	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+STATE_FROZENLAND				<- 32	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+STATE_ICE_AREA					<- 33	// ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½ï¿½ï¿½î¸®ï¿½ï¿½
+STATE_ICE_CRASH					<- 34	// ï¿½ï¿½ï¿½Ì½ï¿½ Å©ï¿½ï¿½ï¿½ï¿½
+STATE_BROKENARROW				<- 35	// ï¿½ï¿½ï¿½Å«ï¿½Ö·Î¿ï¿½
+STATE_PUSH_OUT					<- 36	// ï¿½Ð¾î³»ï¿½ï¿½
+STATE_MAGIC_CANNON				<- 37	// ï¿½ï¿½ï¿½ï¿½ Ä³ï¿½ï¿½
+STATE_MAGIC_SHIELD				<- 38	// ï¿½ï¿½È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+STATE_TELEPORT					<- 39	// ï¿½Ú·ï¿½ï¿½ï¿½Æ®
+STATE_FALLENBLOSSOMS			<- 40	// ï¿½ï¿½ï¿½ï¿½:ï¿½ï¿½È­ï¿½ï¿½Ã¢
+STATE_TURNWINDMILL				<- 41	// Ç³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+STATE_DARKNESSMANTLE			<- 42	// ï¿½ï¿½Å©ï¿½Ï½ï¿½ï¿½ï¿½Æ²
+STATE_WATER_CANNON				<- 43	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+STATE_MANABURST					<- 44	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+STATE_RESONANCE					<- 45	// ï¿½ï¿½ï¿½ï¿½
+STATE_LIGHTNING_WALL			<- 46	// ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½
+STATE_FIREPILLAR				<- 47	// ï¿½Ò±ï¿½ï¿½
+STATE_ICEMAN					<- 48	// ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½
+STATE_ELEMENTAL_RAIN			<- 49	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½
+STATE_MULTI_SHOT				<- 50	// ï¿½ï¿½ï¿½Ó±ï¿½ ï¿½ß»ï¿½
+STATE_DIEHARD					<- 51	// ï¿½Ò»ï¿½
+STATE_ATMAGE_DASH_ATTACK		<- 52	// ï¿½ï¿½ï¿½ï¿½Ã¼
+STATE_ICECHAKRAM				<- 53	// ï¿½ï¿½ï¿½ï¿½È¯ (ï¿½ï¿½ï¿½ï¿½ï¿½:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¼ï¿½ï¿½)
 
-STATE_ELEMENTAL_BUSTER			<- 54	// ¿¤·¹¸àÅ» ¹ö½ºÅÍ
+STATE_ELEMENTAL_BUSTER			<- 54	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-STATE_ICE_ORB_EX				<- 60 	// Æ¯¼º ¾ÆÀÌ½º ¿Àºê
-STATE_CONCENTRATE_EX			<- 61	// ÄÁ¼¾Æ®·¹ÀÌÆ®(³óÃà)
-STATE_ELEMENTAL_STRIKE_EX		<- 62	// ¿¤·¹¸àÅ» ½ºÆ®¶óÀÌÅ©(ex)
-STATE_ICE_FIELD_EX				<- 63	// ¾ÆÀÌ½º ÇÊµå
+STATE_ICE_ORB_EX				<- 60 	// Æ¯ï¿½ï¿½ ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½ï¿½ï¿½ï¿½
+STATE_CONCENTRATE_EX			<- 61	// ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Æ®(ï¿½ï¿½ï¿½ï¿½)
+STATE_ELEMENTAL_STRIKE_EX		<- 62	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Å©(ex)
+STATE_ICE_FIELD_EX				<- 63	// ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½Êµï¿½
+SKILL_ELEMENTAL_BOMBING		<- 66
+SKILL_DARK_EYE	<- 202
 
-// ³²¹ý»ç skill°ü·Ã ºÎºÐÀÔ´Ï´Ù.
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ skillï¿½ï¿½ï¿½ï¿½ ï¿½Îºï¿½ï¿½Ô´Ï´ï¿½.
 // 
-SKILL_WIND_STRIKE				<- 1	// À©µå ½ºÆ®¶óÀÌÅ©
-SKILL_ATCHAINLIGHTNING			<- 2	// Ã¼ÀÎ¶óÀÌÆ®´×
-SKILL_CRYSTALATTACK 			<- 3	// Å©¸®½ºÅ» ¾îÅÃ
-SKILL_DARK_CHANGE				<- 4	// ¾ÏÀü
-SKILL_ELEMENTAL_CHANGE 			<- 5	// ¼Ó¼º¹ßµ¿
-SKILL_FIRE_ROAD					<- 6	// ÆÄÀÌ¾î·Îµå
-SKILL_ICEROAD 					<- 7	// ¾óÀ½±æ
-SKILL_ICE_SWORD					<- 8	// ºù°Ë
-SKILL_HOLONG_LIGHT				<- 9	// È£·ÕºÒ
-SKILL_PIECE_OF_ICE				<- 10	// ¾óÀ½ÆÄÆí
-SKILL_FLAMECIRCLE				<- 11	// ÇÁ·¹ÀÓ¼­Å¬
-SKILL_BLUEDRAGONWILL			<- 12	// ¼ö·æÀÇ ÀÇÁö
-SKILL_FROZENLAND				<- 13	// ¾ó¾îºÙÀº ´ëÁö
-SKILL_ICE_AREA					<- 14	// ¾ÆÀÌ½º¿¡¾î¸®¾î
-SKILL_ICE_CRASH					<- 15	// ¾ÆÀÌ½ºÅ©·¡½¬
-SKILL_BROKENARROW				<- 16	// ¾ó¾îºÙÀº ´ëÁö
-SKILL_PUSH_OUT					<- 17	// ¹Ð¾î³»±â
-SKILL_MAGIC_CANNON				<- 18	// ¸ÅÁ÷ Ä³³Í
-SKILL_MAGIC_SHIELD				<- 19	// º¸È£¸· Çü¼º
-SKILL_TELEPORT					<- 20	// ÅÚ·¹Æ÷Æ®
-SKILL_FALLENBLOSSOMS			<- 21   // °øÅë:³«È­¿¬Ã¢
-SKILL_EXPRESSION				<- 22   // ¹ßÇö (ÆÐ½Ãºê)
-SKILL_TURNWINDMILL				<- 23	// Ç³Â÷µ¹¸®±â
-SKILL_DARKNESSMANTLE			<- 24	// ´ÙÅ©´Ï½º ¸ÇÆ²
-SKILL_MULTI_SHOT				<- 25	// ¿¬¼Ó ¸¶¹ý±¸ ¹ß»ç
-SKILL_WATER_CANNON				<- 26	// ¹°´ëÆ÷
-SKILL_FIREPILLAR				<- 27	// ºÒ±âµÕ
-SKILL_MANABURST					<- 28	// ¸¶³ªÆøÁÖ
-SKILL_LIGHTNING_WALL			<- 29	// ¶óÀÌÆ®´×¿ù
-SKILL_ELEMENTAL_RAIN			<- 30	// ¿¤·¹¸Þ³¯ ·¹ÀÎ
-SKILL_RESONANCE					<- 31	// °ø¸í
-SKILL_ICEMAN					<- 32	// ¾ÆÀÌ½º¸Ç
-SKILL_DIEHARD					<- 33	// ºÒ»ç
-SKILL_ELEMENTAL_SHIELD			<- 34	// ¼Ó¼ºº¸È£
-SKILL_ICE_ELEMENTAL_ATTACK		<- 35	// ¼öÀÎÃ¼
+SKILL_WIND_STRIKE				<- 1	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Å©
+SKILL_ATCHAINLIGHTNING			<- 2	// Ã¼ï¿½Î¶ï¿½ï¿½ï¿½Æ®ï¿½ï¿½
+SKILL_CRYSTALATTACK 			<- 3	// Å©ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½
+SKILL_DARK_CHANGE				<- 4	// ï¿½ï¿½ï¿½ï¿½
+SKILL_ELEMENTAL_CHANGE 			<- 5	// ï¿½Ó¼ï¿½ï¿½ßµï¿½
+SKILL_FIRE_ROAD					<- 6	// ï¿½ï¿½ï¿½Ì¾ï¿½Îµï¿½
+SKILL_ICEROAD 					<- 7	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+SKILL_ICE_SWORD					<- 8	// ï¿½ï¿½ï¿½ï¿½
+SKILL_HOLONG_LIGHT				<- 9	// È£ï¿½Õºï¿½
+SKILL_PIECE_OF_ICE				<- 10	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+SKILL_FLAMECIRCLE				<- 11	// ï¿½ï¿½ï¿½ï¿½ï¿½Ó¼ï¿½Å¬
+SKILL_BLUEDRAGONWILL			<- 12	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+SKILL_FROZENLAND				<- 13	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+SKILL_ICE_AREA					<- 14	// ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½ï¿½î¸®ï¿½ï¿½
+SKILL_ICE_CRASH					<- 15	// ï¿½ï¿½ï¿½Ì½ï¿½Å©ï¿½ï¿½ï¿½ï¿½
+SKILL_BROKENARROW				<- 16	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+SKILL_PUSH_OUT					<- 17	// ï¿½Ð¾î³»ï¿½ï¿½
+SKILL_MAGIC_CANNON				<- 18	// ï¿½ï¿½ï¿½ï¿½ Ä³ï¿½ï¿½
+SKILL_MAGIC_SHIELD				<- 19	// ï¿½ï¿½È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+SKILL_TELEPORT					<- 20	// ï¿½Ú·ï¿½ï¿½ï¿½Æ®
+SKILL_FALLENBLOSSOMS			<- 21   // ï¿½ï¿½ï¿½ï¿½:ï¿½ï¿½È­ï¿½ï¿½Ã¢
+SKILL_EXPRESSION				<- 22   // ï¿½ï¿½ï¿½ï¿½ (ï¿½Ð½Ãºï¿½)
+SKILL_TURNWINDMILL				<- 23	// Ç³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+SKILL_DARKNESSMANTLE			<- 24	// ï¿½ï¿½Å©ï¿½Ï½ï¿½ ï¿½ï¿½Æ²
+SKILL_MULTI_SHOT				<- 25	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½
+SKILL_WATER_CANNON				<- 26	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+SKILL_FIREPILLAR				<- 27	// ï¿½Ò±ï¿½ï¿½
+SKILL_MANABURST					<- 28	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+SKILL_LIGHTNING_WALL			<- 29	// ï¿½ï¿½ï¿½ï¿½Æ®ï¿½×¿ï¿½
+SKILL_ELEMENTAL_RAIN			<- 30	// ï¿½ï¿½ï¿½ï¿½ï¿½Þ³ï¿½ ï¿½ï¿½ï¿½ï¿½
+SKILL_RESONANCE					<- 31	// ï¿½ï¿½ï¿½ï¿½
+SKILL_ICEMAN					<- 32	// ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½
+SKILL_DIEHARD					<- 33	// ï¿½Ò»ï¿½
+SKILL_ELEMENTAL_SHIELD			<- 34	// ï¿½Ó¼ï¿½ï¿½ï¿½È£
+SKILL_ICE_ELEMENTAL_ATTACK		<- 35	// ï¿½ï¿½ï¿½ï¿½Ã¼
 
 
-SKILL_CANCEL_WIND_STRIKE		<- 38	// À©µå ½ºÆ®¶óÀÌÅ©
-SKILL_CANCEL_PUSH_OUT			<- 39	// ¹Ð¾î³»±â
-SKILL_CANCEL_FALLENBLOSSOMS		<- 40   // °øÅë:³«È­¿¬Ã¢
-SKILL_CANCEL_TURNWINDMILL		<- 41	// Ç³Â÷µ¹¸®±â
-SKILL_CANCEL_BROKENARROW		<- 42	// ¾ó¾îºÙÀº ´ëÁö
-SKILL_CANCEL_ICE_CRASH			<- 43	// ¾ÆÀÌ½ºÅ©·¡½¬
-SKILL_CANCEL_FROZENLAND			<- 44	// ¾ó¾îºÙÀº ´ëÁö
-SKILL_CANCEL_ICE_SWORD			<- 45	// ºù°Ë
-SKILL_CANCEL_MULTI_SHOT			<- 46	// Äµ½½ ¿¬¼Ó ¸¶¹ý±¸ ³¯¸®±â
-SKILL_CANCEL_FLAMECIRCLE		<- 47	// ÇÁ·¹ÀÓ¼­Å¬
-SKILL_ICECHAKRAM				<- 48	// ºù·ùÈ¯ (ºù°á»ç:°¢¼º¾×Æ¼ºê)
-SKILL_ELEMENTAL_BUSTER			<- 49	// ¿¤·¹¸àÅ» ¹ö½ºÅÍ(°¢¼º±â)
-SKILL_TUNDRASOUL				<- 50	// Å÷µå¶óÀÇ °¡È£ (ºù°á»ç:°¢¼ºÆÐ½Ãºê)
-SKILL_ELEMENTAL_CHAIN			<- 51	// ¿¤·¹¸àÅ» Ã¼ÀÎ (¿¤·¹¸àÅ»¹Ù¸Ó:°¢¼ºÆÐ½Ãºê)
+SKILL_CANCEL_WIND_STRIKE		<- 38	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Å©
+SKILL_CANCEL_PUSH_OUT			<- 39	// ï¿½Ð¾î³»ï¿½ï¿½
+SKILL_CANCEL_FALLENBLOSSOMS		<- 40   // ï¿½ï¿½ï¿½ï¿½:ï¿½ï¿½È­ï¿½ï¿½Ã¢
+SKILL_CANCEL_TURNWINDMILL		<- 41	// Ç³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+SKILL_CANCEL_BROKENARROW		<- 42	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+SKILL_CANCEL_ICE_CRASH			<- 43	// ï¿½ï¿½ï¿½Ì½ï¿½Å©ï¿½ï¿½ï¿½ï¿½
+SKILL_CANCEL_FROZENLAND			<- 44	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+SKILL_CANCEL_ICE_SWORD			<- 45	// ï¿½ï¿½ï¿½ï¿½
+SKILL_CANCEL_MULTI_SHOT			<- 46	// Äµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+SKILL_CANCEL_FLAMECIRCLE		<- 47	// ï¿½ï¿½ï¿½ï¿½ï¿½Ó¼ï¿½Å¬
+SKILL_ICECHAKRAM				<- 48	// ï¿½ï¿½ï¿½ï¿½È¯ (ï¿½ï¿½ï¿½ï¿½ï¿½:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¼ï¿½ï¿½)
+SKILL_ELEMENTAL_BUSTER			<- 49	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
+SKILL_TUNDRASOUL				<- 50	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È£ (ï¿½ï¿½ï¿½ï¿½ï¿½:ï¿½ï¿½ï¿½ï¿½ï¿½Ð½Ãºï¿½)
+SKILL_ELEMENTAL_CHAIN			<- 51	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» Ã¼ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å»ï¿½Ù¸ï¿½:ï¿½ï¿½ï¿½ï¿½ï¿½Ð½Ãºï¿½)
 
-SKILL_ICE_ORB_EX				<- 60	// Æ¯¼º ¾ÆÀÌ½º ¿Àºê
-SKILL_CONCENTRATE_EX			<- 61	// ÄÁ¼¾Æ®·¹Æ®(³óÃà)
-SKILL_ELEMENTAL_STRIKE_EX		<- 62	// ¿¤·¹¸àÅ» ½ºÆ®¶óÀÌÅ© (Æ¯¼º½ºÅ³)
-SKILL_ICE_FIELD_EX				<- 63	// ¾ÆÀÌ½º ÇÊµå
+SKILL_ICE_ORB_EX				<- 60	// Æ¯ï¿½ï¿½ ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½ï¿½ï¿½ï¿½
+SKILL_CONCENTRATE_EX			<- 61	// ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½Æ®(ï¿½ï¿½ï¿½ï¿½)
+SKILL_ELEMENTAL_STRIKE_EX		<- 62	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Å© (Æ¯ï¿½ï¿½ï¿½ï¿½Å³)
+SKILL_ICE_FIELD_EX				<- 63	// ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½Êµï¿½
 
 
-//211	`ATMage/WindStrikeEx.skl`	// À©µå½ºÆ®¶óÀÌÅ© °­È­
-//212	`ATMage/ChainLightningEx.skl`	// Ã¼ÀÎ¶óÀÌÆ®´× °­È­
-SKILL_CRYSTALATTACK_EX			<- 213	//Å©¸®½ºÅ» ¾îÅÃ °­È­
-//214	`ATMage/DarkChangeEx.skl`	// ¾ÏÀü °­È­//
-SKILL_FIRE_ROAD_EX				<- 216	// ÆÄÀÌ¾î·Îµå °­È­
-SKILL_ICEROAD_EX				<- 217	// ¾óÀ½±æ °­È­
-SKILL_ICE_SWORD_EX				<- 218	// ºù¹é°Ë °­È­
-//219	`ATMage/HolongLightEx.skl`	// È£·ÕºÒ(±Í¼³È­) °­È­
-//220	`ATMage/PieceOfIceEx.skl`	// ÇÇ¾î½º ¿Àºê ¾ÆÀÌ½º °­È­
-//221	`ATMage/FlameCircleEx.skl`	// ÇÁ·¹ÀÓ¼­Å¬ °­È­
-//222	`ATMage/BlueDragonWillEx.skl`	// ¼ö·æÀÇ ÀÇÁö(¾ÆÀÌ½º ºòÇØ¸Ó) °­È­
-//223	`ATMage/FrozenLandEx.skl`	// ¾ó¾îºÙÀº ´ëÁö(±ØÇÑÀÇ ¹°±âµÕ) °­È­
-SKILL_ICE_AREA_EX				<- 224 // ¾ÆÀÌ½º¿¡¾î¸®¾î(¾ÆÀÌ½ºÅ©¸®½ºÅ»»þ¿ö) °­È­
-//225	`ATMage/IceCrashEx.skl`		// ¾ÆÀÌ½ºÅ©·¡½¬ °­È­
-//226	`ATMage/BrokenArrowEx.skl`	// ºê·ÎÅ«¿¡·Î¿ì °­È­
-SKILL_PUSH_OUT_EX				<- 227	// ¹Ð¾î³»±â(±Ý³ªÀå) °­È­
-//228	`ATMage/MagicCannonEx.skl`	// ¸ÅÁ÷Ä³³Í °­È­
-//229	`ATMage/MagicShieldEx.skl`	// º¸È£¸·Çü¼º °­È­
+//211	`ATMage/WindStrikeEx.skl`	// ï¿½ï¿½ï¿½å½ºÆ®ï¿½ï¿½ï¿½ï¿½Å© ï¿½ï¿½È­
+//212	`ATMage/ChainLightningEx.skl`	// Ã¼ï¿½Î¶ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½È­
+SKILL_CRYSTALATTACK_EX			<- 213	//Å©ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­
+//214	`ATMage/DarkChangeEx.skl`	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­//
+SKILL_FIRE_ROAD_EX				<- 216	// ï¿½ï¿½ï¿½Ì¾ï¿½Îµï¿½ ï¿½ï¿½È­
+SKILL_ICEROAD_EX				<- 217	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­
+SKILL_ICE_SWORD_EX				<- 218	// ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­
+//219	`ATMage/HolongLightEx.skl`	// È£ï¿½Õºï¿½(ï¿½Í¼ï¿½È­) ï¿½ï¿½È­
+//220	`ATMage/PieceOfIceEx.skl`	// ï¿½Ç¾î½º ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½ï¿½È­
+//221	`ATMage/FlameCircleEx.skl`	// ï¿½ï¿½ï¿½ï¿½ï¿½Ó¼ï¿½Å¬ ï¿½ï¿½È­
+//222	`ATMage/BlueDragonWillEx.skl`	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½ï¿½ï¿½Ø¸ï¿½) ï¿½ï¿½È­
+//223	`ATMage/FrozenLandEx.skl`	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½) ï¿½ï¿½È­
+SKILL_ICE_AREA_EX				<- 224 // ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½ï¿½î¸®ï¿½ï¿½(ï¿½ï¿½ï¿½Ì½ï¿½Å©ï¿½ï¿½ï¿½ï¿½Å»ï¿½ï¿½ï¿½ï¿½) ï¿½ï¿½È­
+//225	`ATMage/IceCrashEx.skl`		// ï¿½ï¿½ï¿½Ì½ï¿½Å©ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­
+//226	`ATMage/BrokenArrowEx.skl`	// ï¿½ï¿½ï¿½Å«ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½È­
+SKILL_PUSH_OUT_EX				<- 227	// ï¿½Ð¾î³»ï¿½ï¿½(ï¿½Ý³ï¿½ï¿½ï¿½) ï¿½ï¿½È­
+//228	`ATMage/MagicCannonEx.skl`	// ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ ï¿½ï¿½È­
+//229	`ATMage/MagicShieldEx.skl`	// ï¿½ï¿½È£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­
 //
-//231	`ATMage/FallenBlossomsEx.skl`	// ³«È­¿¬Ã¢(¼³È­¿¬Ã¢) °­È­
+//231	`ATMage/FallenBlossomsEx.skl`	// ï¿½ï¿½È­ï¿½ï¿½Ã¢(ï¿½ï¿½È­ï¿½ï¿½Ã¢) ï¿½ï¿½È­
 //
-//233	`ATMage/TurnWindmillEx.skl`	// Ç³Â÷µ¹¸®±â(È¸ÀüÅõÃ¢) °­È­
-//234	`ATMage/DarknessMantleEx.skl`	// ´ÙÅ©´Ï½º ¸ÇÆ² °­È­
-//235	`ATMage/MultiShotEx.skl`	// ¿¬¼Ó¹ß»ç °­È­
-//236	`ATMage/WaterCannonEx.skl`	// ¹°´ëÆ÷ °­È­
-//237	`ATMage/FirePillarEx.skl`	// ºÒ±âµÕ °­È­
+//233	`ATMage/TurnWindmillEx.skl`	// Ç³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(È¸ï¿½ï¿½ï¿½ï¿½Ã¢) ï¿½ï¿½È­
+//234	`ATMage/DarknessMantleEx.skl`	// ï¿½ï¿½Å©ï¿½Ï½ï¿½ ï¿½ï¿½Æ² ï¿½ï¿½È­
+//235	`ATMage/MultiShotEx.skl`	// ï¿½ï¿½ï¿½Ó¹ß»ï¿½ ï¿½ï¿½È­
+//236	`ATMage/WaterCannonEx.skl`	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­
+//237	`ATMage/FirePillarEx.skl`	// ï¿½Ò±ï¿½ï¿½ ï¿½ï¿½È­
 //
-SKILL_LIGHTNING_WALL_EX			<- 239	// ¶óÀÌÆ®´× ¿ù °­È­
+SKILL_LIGHTNING_WALL_EX			<- 239	// ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½È­
 //
-//240	`ATMage/ElementalRainEx.skl`	// ¿¤·¹¸àÅ» ·¹ÀÎ °­È­
-//241	`ATMage/ResonanceEx.skl`	// °ø¸í °­È­
-//242	`ATMage/IceManEx.skl`		// ¾ÆÀÌ½º¸Ç °­È­
+//240	`ATMage/ElementalRainEx.skl`	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­
+//241	`ATMage/ResonanceEx.skl`	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­
+//242	`ATMage/IceManEx.skl`		// ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½ ï¿½ï¿½È­
 
 
 
-SKILL_BASIC_ATTACK_UP			<- 174  // ±âº»±â °­È­				
+SKILL_BASIC_ATTACK_UP			<- 174  // ï¿½âº»ï¿½ï¿½ ï¿½ï¿½È­				
 
 
-// ³²¹ý»ç animation °ü·Ã ºÎºÐÀÔ´Ï´Ù.
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ animation ï¿½ï¿½ï¿½ï¿½ ï¿½Îºï¿½ï¿½Ô´Ï´ï¿½.
 //
-CUSTOM_ANI_WIND_STRIKE				<- 0	// À©µå ½ºÆ®¶óÀÌÅ©
-CUSTOM_ANI_CRYSTALATTACK 			<- 1	// Å©¸®½ºÅ» ¾îÅÃ
-CUSTOM_ANI_DARK_CHANGE_READY 		<- 2	// ¾ÏÀü : Ä³½ºÆÃ
-CUSTOM_ANI_DARK_CHANGE_START		<- 3	// ¾ÏÀü : ¹ßµ¿
-CUSTOM_ANI_ELEMENTAL_CHANGE			<- 4	// ¼Ó¼º¹ßµ¿
-CUSTOM_ANI_FIRE_ROAD_CAST1			<- 5	// ÆÄÀÌ¾î·Îµå - Ä³½ºÆÃ1
-CUSTOM_ANI_FIRE_ROAD_CAST2			<- 6	// ÆÄÀÌ¾î·Îµå - Ä³½ºÆÃ2
-CUSTOM_ANI_CHAINLIGHTNING_CAST		<- 7	// 7.Ã¼ÀÎ¶óÀÌÆ®´×
-CUSTOM_ANI_CHAINLIGHTNING			<- 8	// 8.Ã¼ÀÎ¶óÀÌÆ®´×
-CUSTOM_ANI_CHAINLIGHTNING_END		<- 9	// 9.Ã¼ÀÎ¶óÀÌÆ®´×
-CUSTOM_ANI_ICE_SWORD				<- 10	// ºù°Ë
-CUSTOM_ANI_HOLONG_LIGHT				<- 11	// È£·ÕºÒ
-CUSTOM_ANI_PIECE_OF_ICE				<- 12	// ¾óÀ½ÆÄÆí
-CUSTOM_ANI_ICEROAD					<- 13	// ¾óÀ½±æ
-CUSTOM_ANI_FLAMECIRCLE1				<- 14	// ÇÁ·¹ÀÓ¼­Å¬1 - ½Ãµ¿
-CUSTOM_ANI_FLAMECIRCLE2				<- 15	// ÇÁ·¹ÀÓ¼­Å¬2 - ÁØºñ
-CUSTOM_ANI_FLAMECIRCLE3				<- 16	// ÇÁ·¹ÀÓ¼­Å¬3 - ¹ß»ç
-CUSTOM_ANI_BLUEDRAGONWILL1			<- 17	// ¼ö·æÀÇ ÀÇÁö1
-CUSTOM_ANI_BLUEDRAGONWILL2			<- 18	// ¼ö·æÀÇ ÀÇÁö2
-CUSTOM_ANI_BLUEDRAGONWILL3			<- 19	// ¼ö·æÀÇ ÀÇÁö3
-CUSTOM_ANI_FROZENLAND1				<- 20	// ¾ó¾îºÙÀº ´ëÁö1
-CUSTOM_ANI_FROZENLAND2				<- 21	// ¾ó¾îºÙÀº ´ëÁö2
+CUSTOM_ANI_WIND_STRIKE				<- 0	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Å©
+CUSTOM_ANI_CRYSTALATTACK 			<- 1	// Å©ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_DARK_CHANGE_READY 		<- 2	// ï¿½ï¿½ï¿½ï¿½ : Ä³ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_DARK_CHANGE_START		<- 3	// ï¿½ï¿½ï¿½ï¿½ : ï¿½ßµï¿½
+CUSTOM_ANI_ELEMENTAL_CHANGE			<- 4	// ï¿½Ó¼ï¿½ï¿½ßµï¿½
+CUSTOM_ANI_FIRE_ROAD_CAST1			<- 5	// ï¿½ï¿½ï¿½Ì¾ï¿½Îµï¿½ - Ä³ï¿½ï¿½ï¿½ï¿½1
+CUSTOM_ANI_FIRE_ROAD_CAST2			<- 6	// ï¿½ï¿½ï¿½Ì¾ï¿½Îµï¿½ - Ä³ï¿½ï¿½ï¿½ï¿½2
+CUSTOM_ANI_CHAINLIGHTNING_CAST		<- 7	// 7.Ã¼ï¿½Î¶ï¿½ï¿½ï¿½Æ®ï¿½ï¿½
+CUSTOM_ANI_CHAINLIGHTNING			<- 8	// 8.Ã¼ï¿½Î¶ï¿½ï¿½ï¿½Æ®ï¿½ï¿½
+CUSTOM_ANI_CHAINLIGHTNING_END		<- 9	// 9.Ã¼ï¿½Î¶ï¿½ï¿½ï¿½Æ®ï¿½ï¿½
+CUSTOM_ANI_ICE_SWORD				<- 10	// ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_HOLONG_LIGHT				<- 11	// È£ï¿½Õºï¿½
+CUSTOM_ANI_PIECE_OF_ICE				<- 12	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_ICEROAD					<- 13	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_FLAMECIRCLE1				<- 14	// ï¿½ï¿½ï¿½ï¿½ï¿½Ó¼ï¿½Å¬1 - ï¿½Ãµï¿½
+CUSTOM_ANI_FLAMECIRCLE2				<- 15	// ï¿½ï¿½ï¿½ï¿½ï¿½Ó¼ï¿½Å¬2 - ï¿½Øºï¿½
+CUSTOM_ANI_FLAMECIRCLE3				<- 16	// ï¿½ï¿½ï¿½ï¿½ï¿½Ó¼ï¿½Å¬3 - ï¿½ß»ï¿½
+CUSTOM_ANI_BLUEDRAGONWILL1			<- 17	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½1
+CUSTOM_ANI_BLUEDRAGONWILL2			<- 18	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½2
+CUSTOM_ANI_BLUEDRAGONWILL3			<- 19	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½3
+CUSTOM_ANI_FROZENLAND1				<- 20	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½1
+CUSTOM_ANI_FROZENLAND2				<- 21	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½2
 
-CUSTOM_ANI_ICE_AREA					<- 22	// ¾ÆÀÌ½º ¿¡¾î¸®¾î
-CUSTOM_ANI_ICE_CRASH_START			<- 23	// ¾ÆÀÌ½º Å©·¡½¬ ½ÃÀÛ
-CUSTOM_ANI_ICE_CRASH_LOOP			<- 24	// ¾ÆÀÌ½º Å©·¡½¬ ¹Ýº¹
-CUSTOM_ANI_ICE_CRASH_LOOP_ATTACK	<- 25	// ¾ÆÀÌ½º Å©·¡½¬ ¹Ýº¹ °ø°Ý½Ã
-CUSTOM_ANI_ICE_CRASH_END			<- 26	// ¾ÆÀÌ½º Å©·¡½¬ ¸·Å¸
-CUSTOM_ANI_FROZENLAND3				<- 27	// ¾ó¾îºÙÀº ´ëÁö3
-CUSTOM_ANI_BROKENARROW1				<- 28	// ºê·ÎÅ«¿¡·Î¿ì 1
-CUSTOM_ANI_BROKENARROW_LOOP1		<- 29	// ºê·ÎÅ«¿¡·Î¿ì 1 loop
-CUSTOM_ANI_PUSH_OUT_GRAB			<- 30	// ¹Ð¾î³»±â : ¹Ð±âÀü Àâ±â
+CUSTOM_ANI_ICE_AREA					<- 22	// ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½ï¿½ï¿½î¸®ï¿½ï¿½
+CUSTOM_ANI_ICE_CRASH_START			<- 23	// ï¿½ï¿½ï¿½Ì½ï¿½ Å©ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_ICE_CRASH_LOOP			<- 24	// ï¿½ï¿½ï¿½Ì½ï¿½ Å©ï¿½ï¿½ï¿½ï¿½ ï¿½Ýºï¿½
+CUSTOM_ANI_ICE_CRASH_LOOP_ATTACK	<- 25	// ï¿½ï¿½ï¿½Ì½ï¿½ Å©ï¿½ï¿½ï¿½ï¿½ ï¿½Ýºï¿½ ï¿½ï¿½ï¿½Ý½ï¿½
+CUSTOM_ANI_ICE_CRASH_END			<- 26	// ï¿½ï¿½ï¿½Ì½ï¿½ Å©ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å¸
+CUSTOM_ANI_FROZENLAND3				<- 27	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½3
+CUSTOM_ANI_BROKENARROW1				<- 28	// ï¿½ï¿½ï¿½Å«ï¿½ï¿½ï¿½Î¿ï¿½ 1
+CUSTOM_ANI_BROKENARROW_LOOP1		<- 29	// ï¿½ï¿½ï¿½Å«ï¿½ï¿½ï¿½Î¿ï¿½ 1 loop
+CUSTOM_ANI_PUSH_OUT_GRAB			<- 30	// ï¿½Ð¾î³»ï¿½ï¿½ : ï¿½Ð±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 
-CUSTOM_ANI_PUSH_OUT					<- 31	// ¹Ð¾î³»±â
-CUSTOM_ANI_BROKENARROW_DASH1		<- 32	// ºê·ÎÅ«¿¡·Î¿ì 2
-CUSTOM_ANI_BROKENARROW_DASH2		<- 33	// ºê·ÎÅ«¿¡·Î¿ì 3
-CUSTOM_ANI_AT_MAGIC_CANNON_1		<- 34	// ¸ÅÁ÷ Ä³³Í ¼öÆò
-CUSTOM_ANI_AT_MAGIC_SHIELD			<- 35	// º¸È£¸· Çü¼º
-CUSTOM_ANI_TELEPORT1				<- 36	// ÅÚ·¹Æ÷Æ®1
-CUSTOM_ANI_TELEPORT2				<- 37	// ÅÚ·¹Æ÷Æ®2
-CUSTOM_ANI_FALLENBLOSSOMS1			<- 38	// ³«È­¿¬Ã¢1
-CUSTOM_ANI_FALLENBLOSSOMS2			<- 39	// ³«È­¿¬Ã¢2
-CUSTOM_ANI_FALLENBLOSSOMS3			<- 40	// ³«È­¿¬Ã¢3
+CUSTOM_ANI_PUSH_OUT					<- 31	// ï¿½Ð¾î³»ï¿½ï¿½
+CUSTOM_ANI_BROKENARROW_DASH1		<- 32	// ï¿½ï¿½ï¿½Å«ï¿½ï¿½ï¿½Î¿ï¿½ 2
+CUSTOM_ANI_BROKENARROW_DASH2		<- 33	// ï¿½ï¿½ï¿½Å«ï¿½ï¿½ï¿½Î¿ï¿½ 3
+CUSTOM_ANI_AT_MAGIC_CANNON_1		<- 34	// ï¿½ï¿½ï¿½ï¿½ Ä³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_AT_MAGIC_SHIELD			<- 35	// ï¿½ï¿½È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_TELEPORT1				<- 36	// ï¿½Ú·ï¿½ï¿½ï¿½Æ®1
+CUSTOM_ANI_TELEPORT2				<- 37	// ï¿½Ú·ï¿½ï¿½ï¿½Æ®2
+CUSTOM_ANI_FALLENBLOSSOMS1			<- 38	// ï¿½ï¿½È­ï¿½ï¿½Ã¢1
+CUSTOM_ANI_FALLENBLOSSOMS2			<- 39	// ï¿½ï¿½È­ï¿½ï¿½Ã¢2
+CUSTOM_ANI_FALLENBLOSSOMS3			<- 40	// ï¿½ï¿½È­ï¿½ï¿½Ã¢3
 
-CUSTOM_ANI_AT_MAGIC_CANNON_2		<- 41	// ¸ÅÁ÷ Ä³³Í ´ë°¢¼±
-CUSTOM_ANI_AT_MAGIC_CANNON_3		<- 42	// ¸ÅÁ÷ Ä³³Í ¼öÁ÷
-CUSTOM_ANI_TURNWINDMILL1			<- 43	// Ç³Â÷ µ¹¸®±â1
-CUSTOM_ANI_TURNWINDMILL2			<- 44	// Ç³Â÷ µ¹¸®±â2
-CUSTOM_ANI_DARKNESSMANTLE			<- 45	// ´ÙÅ©´Ï½º¸ÇÆ²
-CUSTOM_ANI_AT_MAGIC_CANNON_READY	<- 46	// ¸ÅÁ÷ Ä³³Í ÁØºñ
-CUSTOM_ANI_WATER_CANNON				<- 47	// ¹°´ëÆ÷
-CUSTOM_ANI_ICE_ELEMENTAL_ATTACK1	<- 48	// ¼öÀÎÃ¼ °ø°Ý1
-CUSTOM_ANI_ICE_ELEMENTAL_ATTACK2	<- 49	// ¼öÀÎÃ¼ °ø°Ý2
-CUSTOM_ANI_ICE_ELEMENTAL_ATTACK3	<- 50	// ¼öÀÎÃ¼ °ø°Ý3
+CUSTOM_ANI_AT_MAGIC_CANNON_2		<- 41	// ï¿½ï¿½ï¿½ï¿½ Ä³ï¿½ï¿½ ï¿½ë°¢ï¿½ï¿½
+CUSTOM_ANI_AT_MAGIC_CANNON_3		<- 42	// ï¿½ï¿½ï¿½ï¿½ Ä³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_TURNWINDMILL1			<- 43	// Ç³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1
+CUSTOM_ANI_TURNWINDMILL2			<- 44	// Ç³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2
+CUSTOM_ANI_DARKNESSMANTLE			<- 45	// ï¿½ï¿½Å©ï¿½Ï½ï¿½ï¿½ï¿½Æ²
+CUSTOM_ANI_AT_MAGIC_CANNON_READY	<- 46	// ï¿½ï¿½ï¿½ï¿½ Ä³ï¿½ï¿½ ï¿½Øºï¿½
+CUSTOM_ANI_WATER_CANNON				<- 47	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_ICE_ELEMENTAL_ATTACK1	<- 48	// ï¿½ï¿½ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½1
+CUSTOM_ANI_ICE_ELEMENTAL_ATTACK2	<- 49	// ï¿½ï¿½ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½2
+CUSTOM_ANI_ICE_ELEMENTAL_ATTACK3	<- 50	// ï¿½ï¿½ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½3
 
-CUSTOM_ANI_ICE_ELEMENTAL_DASH_ATTACK	<- 51	// ¼öÀÎÃ¼ ´ë½¬ °ø°Ý
-CUSTOM_ANI_ICE_ELEMENTAL_JUMP_ATTACK	<- 52	// ¼öÀÎÃ¼ Á¡ÇÁ °ø°Ý
-CUSTOM_ANI_LIGHTNING_WALL				<- 53	// ¶óÀÌÆ®´× ¿ù
-CUSTOM_ANI_RESONANCE					<- 54	// °ø¸í
-CUSTOM_ANI_FIREPILLAR1					<- 55	// ºÒ±âµÕ1
-CUSTOM_ANI_FIREPILLAR2					<- 56	// ºÒ±âµÕ2
-CUSTOM_ANI_FIREPILLAR3					<- 57	// ºÒ±âµÕ3
-CUSTOM_ANI_ICEMAN1						<- 58	// 58. ¾ÆÀÌ½º¸Ç1 (Å¸°ÙÆÃ)
-CUSTOM_ANI_ICEMAN2						<- 59	// 59. ¾ÆÀÌ½º¸Ç2 (Ä³½ºÆÃ)
-CUSTOM_ANI_ICEMAN3						<- 60	// 60. ¾ÆÀÌ½º¸Ç3 (ÀÌµ¿)
+CUSTOM_ANI_ICE_ELEMENTAL_DASH_ATTACK	<- 51	// ï¿½ï¿½ï¿½ï¿½Ã¼ ï¿½ë½¬ ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_ICE_ELEMENTAL_JUMP_ATTACK	<- 52	// ï¿½ï¿½ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_LIGHTNING_WALL				<- 53	// ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½
+CUSTOM_ANI_RESONANCE					<- 54	// ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_FIREPILLAR1					<- 55	// ï¿½Ò±ï¿½ï¿½1
+CUSTOM_ANI_FIREPILLAR2					<- 56	// ï¿½Ò±ï¿½ï¿½2
+CUSTOM_ANI_FIREPILLAR3					<- 57	// ï¿½Ò±ï¿½ï¿½3
+CUSTOM_ANI_ICEMAN1						<- 58	// 58. ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½1 (Å¸ï¿½ï¿½ï¿½ï¿½)
+CUSTOM_ANI_ICEMAN2						<- 59	// 59. ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½2 (Ä³ï¿½ï¿½ï¿½ï¿½)
+CUSTOM_ANI_ICEMAN3						<- 60	// 60. ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½3 (ï¿½Ìµï¿½)
 
-CUSTOM_ANI_ICEMAN4						<- 61	// 61. ¾ÆÀÌ½º¸Ç4 (³­Å¸)
-CUSTOM_ANI_ICEMAN5						<- 62	// 62. ¾ÆÀÌ½º¸Ç5 (°­Å¸)
-CUSTOM_ANI_ELEMENTAL_RAIN_CAST			<- 63	// 63. ¿¤·¹¸àÅ» ·¹ÀÎ Ä³½ºÆÃ ½ÃÀÛ
-CUSTOM_ANI_ELEMENTAL_RAIN_JUMP			<- 64	// 64. ¿¤·¹¸àÅ» ·¹ÀÎ Á¡ÇÁ
-CUSTOM_ANI_ELEMENTAL_RAIN_JUMP_STAY		<- 65	// 65. ¿¤·¹¸àÅ» ·¹ÀÎ Á¡ÇÁ ´ë±â
-CUSTOM_ANI_ELEMENTAL_RAIN_SHOOT			<- 66	// 66. ¿¤·¹¸àÅ» ·¹ÀÎ ¼Ó¼º ¹ß»ç.
-CUSTOM_ANI_ELEMENTAL_RAIN_CHARGE_SHOOT	<- 67	// 67. ¿¤·¹¸àÅ» ·¹ÀÎ Â÷Áö½¸ ¹ß»ç.
-CUSTOM_ANI_MULTI_SHOT					<- 68	// 68. ¿¬¼Ó ¸¶¹ý±¸ ¹ß»ç.
-CUSTOM_ANI_ICEMAN6						<- 69	// 69. ¾ÆÀÌ½º¸Ç6 (¿þÀÌÆ®)
-CUSTOM_ANI_DIEHARD1						<- 70	// 70. ºÒ»ç1
+CUSTOM_ANI_ICEMAN4						<- 61	// 61. ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½4 (ï¿½ï¿½Å¸)
+CUSTOM_ANI_ICEMAN5						<- 62	// 62. ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½5 (ï¿½ï¿½Å¸)
+CUSTOM_ANI_ELEMENTAL_RAIN_CAST			<- 63	// 63. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½ Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_ELEMENTAL_RAIN_JUMP			<- 64	// 64. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_ELEMENTAL_RAIN_JUMP_STAY		<- 65	// 65. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+CUSTOM_ANI_ELEMENTAL_RAIN_SHOOT			<- 66	// 66. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½ ï¿½Ó¼ï¿½ ï¿½ß»ï¿½.
+CUSTOM_ANI_ELEMENTAL_RAIN_CHARGE_SHOOT	<- 67	// 67. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½.
+CUSTOM_ANI_MULTI_SHOT					<- 68	// 68. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½.
+CUSTOM_ANI_ICEMAN6						<- 69	// 69. ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½6 (ï¿½ï¿½ï¿½ï¿½Æ®)
+CUSTOM_ANI_DIEHARD1						<- 70	// 70. ï¿½Ò»ï¿½1
 
-CUSTOM_ANI_DIEHARD2						<- 71	// 71. ºÒ»ç2
-CUSTOM_ANI_DIEHARD3						<- 72	// 72. ºÒ»ç3
-CUSTOM_ANI_FROZENLAND_CASTING			<- 73	// 73. ¾ó¾îºÙÀº ´ëÁö Ä³½ºÆÃ
-CUSTOM_ANI_FLAMECIRCLE_CASTING			<- 74	// 74. ÇÁ·¹ÀÓ¼­Å¬ Ä³½ºÆÃ
-CUSTOM_ANI_DARKNESSMANTLE_CASTING		<- 75	// 75. ´ÙÅ©´Ï½º¸ÇÆ² Ä³½ºÆÃ
-CUSTOM_ANI_ICEROAD_CASTING				<- 76	// 76. ¾óÀ½±æ Ä³½ºÆÃ
-CUSTOM_ANI_PUSH_OUT_ATTACK				<- 77	// 77. ¹Ð¾î³»±â ¹Ð±â
-CUSTOM_ANI_AT_MAGIC_CANNON_4			<- 78	// 78. ¸ÅÁ÷Ä³³Í Áö»óÅ¸
-CUSTOM_ANI_ICECHAKRAM_1					<- 79	// 79. ºù·ùÈ¯1
+CUSTOM_ANI_DIEHARD2						<- 71	// 71. ï¿½Ò»ï¿½2
+CUSTOM_ANI_DIEHARD3						<- 72	// 72. ï¿½Ò»ï¿½3
+CUSTOM_ANI_FROZENLAND_CASTING			<- 73	// 73. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ä³ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_FLAMECIRCLE_CASTING			<- 74	// 74. ï¿½ï¿½ï¿½ï¿½ï¿½Ó¼ï¿½Å¬ Ä³ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_DARKNESSMANTLE_CASTING		<- 75	// 75. ï¿½ï¿½Å©ï¿½Ï½ï¿½ï¿½ï¿½Æ² Ä³ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_ICEROAD_CASTING				<- 76	// 76. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ä³ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_PUSH_OUT_ATTACK				<- 77	// 77. ï¿½Ð¾î³»ï¿½ï¿½ ï¿½Ð±ï¿½
+CUSTOM_ANI_AT_MAGIC_CANNON_4			<- 78	// 78. ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å¸
+CUSTOM_ANI_ICECHAKRAM_1					<- 79	// 79. ï¿½ï¿½ï¿½ï¿½È¯1
 
-CUSTOM_ANI_ICECHAKRAM_2					<- 80	// 80. ºù·ùÈ¯2
-CUSTOM_ANI_ICECHAKRAM_3					<- 81	// 81. ºù·ùÈ¯3
-CUSTOM_ANI_ICECHAKRAM_4					<- 82	// 82. ºù·ùÈ¯4
-CUSTOM_ANI_ICECHAKRAM_5					<- 83	// 83. ºù·ùÈ¯5
-CUSTOM_ANI_ICECHAKRAM_6					<- 84	// 84. ºù·ùÈ¯6
-CUSTOM_ANI_ELEMENTAL_BUSTER_FIRE_CAST	<- 85	// 85. ¿¤·¹¸àÅ» ¹ö½ºÅÍ (È­¼Ó¼º ¹ßµ¿)
-CUSTOM_ANI_ELEMENTAL_BUSTER_FIRE		<- 86	// 86. ¿¤·¹¸àÅ» ¹ö½ºÅÍ
-CUSTOM_ANI_ELEMENTAL_BUSTER_WATER_CAST	<- 87	// 87. ¿¤·¹¸àÅ» ¹ö½ºÅÍ (¼ö¼Ó¼º ¹ßµ¿)
-CUSTOM_ANI_ELEMENTAL_BUSTER_WATER		<- 88	// 88. ¿¤·¹¸àÅ» ¹ö½ºÅÍ
-CUSTOM_ANI_ELEMENTAL_BUSTER_LIGHT_CAST	<- 89	// 89. ¿¤·¹¸àÅ» ¹ö½ºÅÍ (¸í¼Ó¼º ¹ßµ¿)
-CUSTOM_ANI_ELEMENTAL_BUSTER_LIGHT		<- 90	// 90. ¿¤·¹¸àÅ» ¹ö½ºÅÍ
-CUSTOM_ANI_ELEMENTAL_BUSTER_DARK_CAST	<- 91	// 91. ¿¤·¹¸àÅ» ¹ö½ºÅÍ (¾Ï¼Ó¼º ¹ßµ¿)
+CUSTOM_ANI_ICECHAKRAM_2					<- 80	// 80. ï¿½ï¿½ï¿½ï¿½È¯2
+CUSTOM_ANI_ICECHAKRAM_3					<- 81	// 81. ï¿½ï¿½ï¿½ï¿½È¯3
+CUSTOM_ANI_ICECHAKRAM_4					<- 82	// 82. ï¿½ï¿½ï¿½ï¿½È¯4
+CUSTOM_ANI_ICECHAKRAM_5					<- 83	// 83. ï¿½ï¿½ï¿½ï¿½È¯5
+CUSTOM_ANI_ICECHAKRAM_6					<- 84	// 84. ï¿½ï¿½ï¿½ï¿½È¯6
+CUSTOM_ANI_ELEMENTAL_BUSTER_FIRE_CAST	<- 85	// 85. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (È­ï¿½Ó¼ï¿½ ï¿½ßµï¿½)
+CUSTOM_ANI_ELEMENTAL_BUSTER_FIRE		<- 86	// 86. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_ELEMENTAL_BUSTER_WATER_CAST	<- 87	// 87. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½Ó¼ï¿½ ï¿½ßµï¿½)
+CUSTOM_ANI_ELEMENTAL_BUSTER_WATER		<- 88	// 88. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_ELEMENTAL_BUSTER_LIGHT_CAST	<- 89	// 89. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½Ó¼ï¿½ ï¿½ßµï¿½)
+CUSTOM_ANI_ELEMENTAL_BUSTER_LIGHT		<- 90	// 90. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_ELEMENTAL_BUSTER_DARK_CAST	<- 91	// 91. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (ï¿½Ï¼Ó¼ï¿½ ï¿½ßµï¿½)
 
-CUSTOM_ANI_ELEMENTAL_BUSTER_DARK		<- 92	// 92. ¿¤·¹¸àÅ» ¹ö½ºÅÍ
-CUSTOM_ANI_ICE_ORB_EX					<- 93	// 93. ¾ÆÀÌ½º ¿Àºê ¾Ö´Ï(Æ¯¼º) ÀÎµ¦½º
-CUSTOM_ANI_CONCENTRATE_EX				<- 94	// 94. ÄÁ¼¾Æ®·¹ÀÌÆ®(Æ¯¼º)
-CUSTOM_ANI_ELEMENTAL_STRIKE_EX			<- 95	// 95. ¿¤·¹¸àÅ» ½ºÆ®¶óÀÌÅ©(Æ¯¼º)
-CUSTOM_ANI_ICE_FIELD_EX					<- 96	// 96. ¾ÆÀÌ½º ÇÊµå(Æ¯¼º)
+CUSTOM_ANI_ELEMENTAL_BUSTER_DARK		<- 92	// 92. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ANI_ICE_ORB_EX					<- 93	// 93. ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½(Æ¯ï¿½ï¿½) ï¿½Îµï¿½ï¿½ï¿½
+CUSTOM_ANI_CONCENTRATE_EX				<- 94	// 94. ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Æ®(Æ¯ï¿½ï¿½)
+CUSTOM_ANI_ELEMENTAL_STRIKE_EX			<- 95	// 95. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Å©(Æ¯ï¿½ï¿½)
+CUSTOM_ANI_ICE_FIELD_EX					<- 96	// 96. ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½Êµï¿½(Æ¯ï¿½ï¿½)
 
 
-// ³²¹ý»ç atkÆÄÀÏ °ü·Ã ºÎºÐÀÔ´Ï´Ù.
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ atkï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Îºï¿½ï¿½Ô´Ï´ï¿½.
 // 
-CUSTOM_ATTACK_INFO_DARK_CHANGE		<- 0	// ¾ÏÀü : °ø°ÝÁ¤º¸
-CUSTOM_ATTACK_INFO_ICE_SWORD		<- 1	// ºù°Ë : °ø°ÝÁ¤º¸
-CUSTOM_ATTACK_INFO_ICE_SWORD_LAST	<- 2	// ºù°Ë¸·Å¸ : °ø°ÝÁ¤º¸
-CUSTOM_ATTACK_INFO_PIECE_OF_ICE		<- 3	// ¾óÀ½ÆÄÆÇ : °ø°ÝÁ¤º¸
-CUSTOM_ATTACK_INFO_FLAMECIRCLE		<- 4	// ÇÁ·¹ÀÓ¼­Å¬ : °ø°ÝÁ¤º¸
-CUSTOM_ATTACK_INFO_ICE_CRASH		<- 5	// ¾ÆÀÌ½ºÅ©·¡½¬
-CUSTOM_ATTACK_INFO_ICE_CRASH_LAST	<- 6	// ¾ÆÀÌ½ºÅ©·¡½¬
-CUSTOM_ATTACK_INFO_PUSH_OUT_GRAB<- 7	// ¹Ð¾î³»±â Àâ±â
-CUSTOM_ATTACK_INFO_PUSH_OUT		<- 8	// ¹Ð¾î³»±â
-CUSTOM_ATTACK_INFO_AT_MAGE_BROKENARROW			<- 9	// ºê·ÎÅ«¾Ö·Î¿ì ¸·Å¸ `ATAttackInfo/BrokenArrow.atk` 
-CUSTOM_ATTACK_INFO_FALLENBLOSSOMS				<- 10	// ³«È­¿¬Ã¢ `ATAttackInfo/FallenBlossoms.atk`		
-CUSTOM_ATTACK_INFO_AT_MAGE_MAGIC_SHIELD_FIRE	<- 11	// º¸È£¸· Çü¼º È­¼Ó¼º
-CUSTOM_ATTACK_INFO_AT_MAGE_MAGIC_SHIELD_LIGHT	<- 12	// º¸È£¸· Çü¼º ¸í¼Ó¼º
+CUSTOM_ATTACK_INFO_DARK_CHANGE		<- 0	// ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ATTACK_INFO_ICE_SWORD		<- 1	// ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ATTACK_INFO_ICE_SWORD_LAST	<- 2	// ï¿½ï¿½ï¿½Ë¸ï¿½Å¸ : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ATTACK_INFO_PIECE_OF_ICE		<- 3	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ATTACK_INFO_FLAMECIRCLE		<- 4	// ï¿½ï¿½ï¿½ï¿½ï¿½Ó¼ï¿½Å¬ : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ATTACK_INFO_ICE_CRASH		<- 5	// ï¿½ï¿½ï¿½Ì½ï¿½Å©ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ATTACK_INFO_ICE_CRASH_LAST	<- 6	// ï¿½ï¿½ï¿½Ì½ï¿½Å©ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ATTACK_INFO_PUSH_OUT_GRAB<- 7	// ï¿½Ð¾î³»ï¿½ï¿½ ï¿½ï¿½ï¿½
+CUSTOM_ATTACK_INFO_PUSH_OUT		<- 8	// ï¿½Ð¾î³»ï¿½ï¿½
+CUSTOM_ATTACK_INFO_AT_MAGE_BROKENARROW			<- 9	// ï¿½ï¿½ï¿½Å«ï¿½Ö·Î¿ï¿½ ï¿½ï¿½Å¸ `ATAttackInfo/BrokenArrow.atk` 
+CUSTOM_ATTACK_INFO_FALLENBLOSSOMS				<- 10	// ï¿½ï¿½È­ï¿½ï¿½Ã¢ `ATAttackInfo/FallenBlossoms.atk`		
+CUSTOM_ATTACK_INFO_AT_MAGE_MAGIC_SHIELD_FIRE	<- 11	// ï¿½ï¿½È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È­ï¿½Ó¼ï¿½
+CUSTOM_ATTACK_INFO_AT_MAGE_MAGIC_SHIELD_LIGHT	<- 12	// ï¿½ï¿½È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ó¼ï¿½
 CUSTOM_ATTACK_INFO_TURN_WINDMILL				<- 13	// 1ATAttackInfo/TurnWindmill.atk`
-CUSTOM_ATTACK_INFO_ICE_ELEMENTAL_ATTACK1		<- 14	// ¼öÀÎÃ¼ °ø°Ý1
-CUSTOM_ATTACK_INFO_ICE_ELEMENTAL_ATTACK2		<- 15	// ¼öÀÎÃ¼ °ø°Ý1
-CUSTOM_ATTACK_INFO_ICE_ELEMENTAL_ATTACK3		<- 16	// ¼öÀÎÃ¼ °ø°Ý1
-CUSTOM_ATTACK_INFO_ICE_ELEMENTAL_DASH_ATTACK	<- 17	// ¼öÀÎÃ¼ ´ë½¬ °ø°Ý
-CUSTOM_ATTACK_INFO_ICE_ELEMENTAL_JUMP_ATTACK	<- 18	// ¼öÀÎÃ¼ Á¡ÇÁ °ø°Ý
-CUSTOM_ATTACK_INFO_RESONANCE					<- 19	// °ø¸í
-CUSTOM_ATTACK_INFO_ICEMAN						<- 20	// ¾ÆÀÌ½º¸Ç
-CUSTOM_ATTACK_INFO_ICE_CHAKRAM					<- 21	// ¾ÆÀÌ½º¸Ç
+CUSTOM_ATTACK_INFO_ICE_ELEMENTAL_ATTACK1		<- 14	// ï¿½ï¿½ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½1
+CUSTOM_ATTACK_INFO_ICE_ELEMENTAL_ATTACK2		<- 15	// ï¿½ï¿½ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½1
+CUSTOM_ATTACK_INFO_ICE_ELEMENTAL_ATTACK3		<- 16	// ï¿½ï¿½ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½1
+CUSTOM_ATTACK_INFO_ICE_ELEMENTAL_DASH_ATTACK	<- 17	// ï¿½ï¿½ï¿½ï¿½Ã¼ ï¿½ë½¬ ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ATTACK_INFO_ICE_ELEMENTAL_JUMP_ATTACK	<- 18	// ï¿½ï¿½ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ATTACK_INFO_RESONANCE					<- 19	// ï¿½ï¿½ï¿½ï¿½
+CUSTOM_ATTACK_INFO_ICEMAN						<- 20	// ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½
+CUSTOM_ATTACK_INFO_ICE_CHAKRAM					<- 21	// ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½
 
 
 ENUM_ELEMENT_FIRE	<- 0	/// È­
-ENUM_ELEMENT_WATER	<- 1	/// ¼ö
-ENUM_ELEMENT_DARK	<- 2	/// ¾Ï
-ENUM_ELEMENT_LIGHT	<- 3	/// ¸í
-ENUM_ELEMENT_NONE	<- 4	/// ¹«
-ENUM_ELEMENT_MAX	<- 4	/// ¼Ó¼º ÃÖ´ë °ª
+ENUM_ELEMENT_WATER	<- 1	/// ï¿½ï¿½
+ENUM_ELEMENT_DARK	<- 2	/// ï¿½ï¿½
+ENUM_ELEMENT_LIGHT	<- 3	/// ï¿½ï¿½
+ENUM_ELEMENT_NONE	<- 4	/// ï¿½ï¿½
+ENUM_ELEMENT_MAX	<- 4	/// ï¿½Ó¼ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½
 
 VECTOR_FLAG_0	<- 0
 VECTOR_FLAG_1	<- 1

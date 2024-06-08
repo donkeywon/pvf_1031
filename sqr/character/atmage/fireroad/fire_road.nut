@@ -6,7 +6,7 @@ function checkExecutableSkill_FireRoad(obj)
 	local isUseSkill = obj.sq_IsUseSkill(SKILL_FIRE_ROAD);
 	if (isUseSkill) {
 		obj.sq_IntVectClear();
-		obj.sq_IntVectPush(0);	// subState¼ÂÆÃ
+		obj.sq_IntVectPush(0);	// subStateï¿½ï¿½ï¿½ï¿½
 		obj.sq_AddSetStatePacket(STATE_FIRE_ROAD, STATE_PRIORITY_USER, true);
 		return true;
 	}
@@ -16,22 +16,18 @@ function checkExecutableSkill_FireRoad(obj)
 
 function checkCommandEnable_FireRoad(obj)
 {
-	if(!obj)
-		return false;
+	if(!obj) return false;
+	if(sq_GetSkillLevel(obj, SKILL_ELEMENTAL_BOMBING) > 0){
+		return true;
+	}
 	local state = obj.sq_GetState();
 		
 	if(state == STATE_ATTACK)
 	{
-		return obj.sq_IsCommandEnable(SKILL_FIRE_ROAD); // °áÅõÀå¿¡¼­´Â Æ¯Á¤½ºÅ³¸¸ Äµ½½ÀÌ °¡´ÉÇÕ´Ï´Ù. ÀÛ¾÷ÀÚ:Á¤Áø¼ö [2012.04.20] obj.sq_IsCommandEnable(SKILL_BROKENARROW);
+		return obj.sq_IsCommandEnable(SKILL_FIRE_ROAD); // ï¿½ï¿½ï¿½ï¿½ï¿½å¿¡ï¿½ï¿½ï¿½ï¿½ Æ¯ï¿½ï¿½ï¿½ï¿½Å³ï¿½ï¿½ Äµï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½. ï¿½Û¾ï¿½ï¿½ï¿½:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ [2012.04.20] obj.sq_IsCommandEnable(SKILL_BROKENARROW);
 	}
 		
 	return true;
-}
-
-function onEndState_FireRoad(obj, state)
-{
-	// ½ºÅ×ÀÌÆ® Á¾·á È¤Àº Ãë¼Ò µÇ¾ú´Ù¸é Ä³½ºÆÃ °ÔÀÌÁö ¾ø¾Ú
-	sq_EndDrawCastGauge(obj);
 }
 
 
@@ -51,9 +47,9 @@ function onSetState_FireRoad(obj, state, datas, isResetTimer)
 		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED,SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.2, 1.2);
 		obj.sq_PlaySound("MW_FIREROAD");
 		
-		// Ä³½ºÆÃ ¼Óµµ¸¦ µû¶ó°¡µµ·Ï ¼³Á¤
-		// Ä³½ºÆÃ ¼Óµµ°¡ º¯°æµÇ¸é, ¿¡´Ï¸ÞÀÌ¼Ç ¼Óµµµµ º¯°æ µË´Ï´Ù.
-		// Ä³½ºÆÃ °ÔÀÌÁöµµ Ç¥½Ã¸¦ ÇØÁÝ´Ï´Ù.
+		// Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½Óµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ó°¡µï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		// Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½Óµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ç¸ï¿½, ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½Ì¼ï¿½ ï¿½Óµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ë´Ï´ï¿½.
+		// Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ç¥ï¿½Ã¸ï¿½ ï¿½ï¿½ï¿½Ý´Ï´ï¿½.
 		local skillLevel = sq_GetSkillLevel(obj, SKILL_FIRE_ROAD);
 		local castTime = sq_GetCastTime(obj, SKILL_FIRE_ROAD, skillLevel);
 		local animation = sq_GetCurrentAnimation(obj);
@@ -64,11 +60,14 @@ function onSetState_FireRoad(obj, state, datas, isResetTimer)
 		sq_StartDrawCastGauge(obj, castTime, true);
 		
 		addElementalChain_ATMage(obj, ENUM_ELEMENT_FIRE);
+		//FLAG_PASSIVE_CREATE_FIRE_ROAD = 0;
+		obj.getVar("road").clear_vector();
+		obj.getVar("road").push_vector(0);
 	}
 	else if (subState == 1)
 	{
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_FIRE_ROAD_CAST2);
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED,SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.2, 1.2);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 	}
 }
 
@@ -90,7 +89,7 @@ function onEndCurrentAni_FireRoad(obj)
 	
 	if (obj.sq_GetSkillSubState(obj) == 0) {
 		obj.sq_IntVectClear();
-		obj.sq_IntVectPush(1);	// subState¼ÂÆÃ
+		obj.sq_IntVectPush(1);	// subStateï¿½ï¿½ï¿½ï¿½
 		obj.sq_AddSetStatePacket(STATE_FIRE_ROAD, STATE_PRIORITY_USER, true);
 	}
 	else if (obj.sq_GetSkillSubState(obj) == 1) {
@@ -111,20 +110,21 @@ function onKeyFrameFlag_FireRoad(obj, flagIndex)
 	if (skillSubState == 0) {
 
 		local skillLevel = obj.sq_GetSkillLevel(SKILL_FIRE_ROAD);	
-		local pauseTime = obj.sq_GetIntData(SKILL_FIRE_ROAD, 0);	// ¿ÀºêÁ§Æ® »ý¼º°£°Ý(½Ã°£)
-		local xPos = obj.sq_GetIntData(SKILL_FIRE_ROAD, 1);			// ¿ÀºêÁ§Æ® »ý¼ºÀ§Ä¡(Ä³¸¯ÅÍ·Î ºÎÅÍ ¸îÇÈ¼¿ ¶³¾îÁ® »ý¼ºµÇ´ÂÁö?)
-		local xOffset = obj.sq_GetIntData(SKILL_FIRE_ROAD, 2);		// ¿ÀºêÁ§Æ® »ý¼º°£°Ý(¿ÀºêÁ§Æ®°£ÀÇ »ý¼º °£°Ý)
-		local maxHit = obj.sq_GetIntData(SKILL_FIRE_ROAD, 3);		// ¿ÀºêÁ§Æ®´ç ÃÖ´ë È÷Æ®¼ö
-		local sizeRate = obj.sq_GetIntData(SKILL_FIRE_ROAD, 5);		// ¿ÀºêÁ§Æ®ÀÇ È®´ëÀ²(%)
-
-		// ¿ÀºêÁ§Æ® »ý¼º °¹¼ö
+		local pauseTime = obj.sq_GetIntData(SKILL_FIRE_ROAD, 0);	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½Ã°ï¿½)
+		local xPos = obj.sq_GetIntData(SKILL_FIRE_ROAD, 1);			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¡(Ä³ï¿½ï¿½ï¿½Í·ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½È¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ç´ï¿½ï¿½ï¿½?)
+		local xOffset = obj.sq_GetIntData(SKILL_FIRE_ROAD, 2);		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)
+		local maxHit = obj.sq_GetIntData(SKILL_FIRE_ROAD, 3);		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½
+		local sizeRate = obj.sq_GetIntData(SKILL_FIRE_ROAD, 5);		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ È®ï¿½ï¿½ï¿½ï¿½(%)
+		local skill_level = sq_GetSkillLevel(obj, SKILL_DARK_EYE);
+		local speedRate = 100 + obj.sq_GetLevelData(SKILL_DARK_EYE, 3, skill_level);
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		local createCount = obj.sq_GetLevelData(SKILL_FIRE_ROAD, 0, skillLevel);
-		local damage1 = obj.sq_GetBonusRateWithPassive(SKILL_FIRE_ROAD, STATE_FIRE_ROAD, 1, 1.0);	// °ø°Ý·Â1(%)
-		local damage2 = obj.sq_GetBonusRateWithPassive(SKILL_FIRE_ROAD, STATE_FIRE_ROAD, 2, 1.0);	// °ø°Ý·Â2(%)
+		local damage1 = obj.sq_GetBonusRateWithPassive(SKILL_FIRE_ROAD, STATE_FIRE_ROAD, 1, 1.0);	// ï¿½ï¿½ï¿½Ý·ï¿½1(%)
+		local damage2 = obj.sq_GetBonusRateWithPassive(SKILL_FIRE_ROAD, STATE_FIRE_ROAD, 2, 1.0);	// ï¿½ï¿½ï¿½Ý·ï¿½2(%)
 	
 		printc("createCount " + createCount);
 		
-		// Æ¯¼º ½ºÅ³À» ¹è¿ü´Ù¸é ¿©·¯ÁÙÀÌ(¼¼·Î) »ý¼ºµÈ´Ù.
+		// Æ¯ï¿½ï¿½ ï¿½ï¿½Å³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½ï¿½È´ï¿½.
 		local rowNumber = obj.sq_GetIntData(SKILL_FIRE_ROAD, 4);
 		local yAxisDistance = 55;
 		
@@ -133,20 +133,21 @@ function onKeyFrameFlag_FireRoad(obj, flagIndex)
 			if (obj.isMyControlObject())
 			{
 				obj.sq_StartWrite();
-				obj.sq_WriteWord(pauseTime * i);// »ý¼º°£°Ý(½Ã°£)
-				obj.sq_WriteDword(damage1);		// µ¥¹ÌÁö1
-				obj.sq_WriteDword(damage2);		// µ¥¹ÌÁö2
-				obj.sq_WriteByte(maxHit);		// ¿ÀºêÁ§Æ®´ç ÃÖ´ë È÷Æ®¼ö
-				obj.sq_WriteByte(i);			// ÇöÀç »ý¼ºÇÑ ¹øÂ°. (»ç¿îµå Ãâ·Â¿ë)
-				obj.sq_WriteWord(sizeRate);		// ¿ÀºêÁ§Æ®ÀÇ È®´ëÀ²(%)
+				obj.sq_WriteWord(pauseTime * i);// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½Ã°ï¿½)
+				obj.sq_WriteDword(damage1);		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1
+				obj.sq_WriteDword(damage2);		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2
+				obj.sq_WriteByte(maxHit);		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½
+				obj.sq_WriteByte(i);			// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â°. (ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¿ï¿½)
+				obj.sq_WriteWord(sizeRate);		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ È®ï¿½ï¿½ï¿½ï¿½(%)
+				obj.sq_WriteWord(speedRate);
 				
 				printc("number " +i);
-				// 24212, 24213À» ¹ø°¥¾Æ°¡¸é¼­ »ý¼ºÇÑ´Ù.
+				// 24212, 24213ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Æ°ï¿½ï¿½é¼­ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
 				local passiveObjectIndex = 24212 + i % 2;
 				obj.sq_SendCreatePassiveObjectPacket(passiveObjectIndex, 0, xPos + xOffset * i, 1, 0);
 				
 				
-				// Æ¯¼º ½ºÅ³À» ¹è¿ü´Ù¸é ¿©·¯ÁÙÀÌ(¼¼·Î) »ý¼ºµÈ´Ù.
+				// Æ¯ï¿½ï¿½ ï¿½ï¿½Å³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½ï¿½È´ï¿½.
 				if (rowNumber > 0)
 				{
 					for (local j = 0; j < rowNumber; j+=1)
@@ -155,12 +156,12 @@ function onKeyFrameFlag_FireRoad(obj, flagIndex)
 						row = row.tointeger();
 	
 						if ((j % 2) == 0)
-						{	// À§ÂÊ
+						{	// ï¿½ï¿½ï¿½ï¿½
 							local y = row * yAxisDistance;
 							obj.sq_SendCreatePassiveObjectPacket(passiveObjectIndex, 0, xPos + xOffset * i, -y, 0);
 						}
 						else
-						{	// ¾Æ·¡ÂÊ
+						{	// ï¿½Æ·ï¿½ï¿½ï¿½
 							local y = row * yAxisDistance;
 							obj.sq_SendCreatePassiveObjectPacket(passiveObjectIndex, 0, xPos + xOffset * i, y, 0);
 						}
@@ -168,10 +169,72 @@ function onKeyFrameFlag_FireRoad(obj, flagIndex)
 				}
 			}
 		}
+		//if (!sq_isPVPMode()) {
+		//	obj.sq_AddSetStatePacket(STATE_STAND, STATE_PRIORITY_USER, false);
+		//}
+		//FLAG_PASSIVE_CREATE_FIRE_ROAD = 1;
+		obj.getVar("road").set_vector(0, 1);
 	}
 
 	return true;
-
 }
 
+function onEndState_FireRoad(obj, new_state) {
+	if (!obj) return;
+	if (new_state != STATE_FIRE_ROAD) {
+		
+		sq_EndDrawCastGauge(obj);
+		if(new_state == STATE_DAMAGE || new_state == STATE_DOWN || new_state == STATE_DIE)
+			return;
+		if (obj.getVar("road").get_vector(0) != 1 && obj.isMyControlObject()) {
+			local skillLevel = obj.sq_GetSkillLevel(SKILL_FIRE_ROAD);
+			local pauseTime = obj.sq_GetIntData(SKILL_FIRE_ROAD, 0);
+			local xPos = obj.sq_GetIntData(SKILL_FIRE_ROAD, 1);
+			local xOffset = obj.sq_GetIntData(SKILL_FIRE_ROAD, 2);
+			local maxHit = obj.sq_GetIntData(SKILL_FIRE_ROAD, 3);
+			local sizeRate = obj.sq_GetIntData(SKILL_FIRE_ROAD, 5);
+			local skill_level = sq_GetSkillLevel(obj, SKILL_DARK_EYE);
+			local speedRate = 100 + obj.sq_GetLevelData(SKILL_DARK_EYE, 3, skill_level);
+			
+			local createCount = obj.sq_GetLevelData(SKILL_FIRE_ROAD, 0, skillLevel);
+			local damage1 = obj.sq_GetBonusRateWithPassive(SKILL_FIRE_ROAD, STATE_FIRE_ROAD, 1, 1.0);
+			local damage2 = obj.sq_GetBonusRateWithPassive(SKILL_FIRE_ROAD, STATE_FIRE_ROAD, 2, 1.0);
+
+			local rowNumber = obj.sq_GetIntData(SKILL_FIRE_ROAD, 4);
+			local yAxisDistance = 55;
+
+			for (local i = 0; i < createCount; i++) {
+				if (obj.isMyControlObject()) {
+					obj.sq_StartWrite();
+					obj.sq_WriteWord(pauseTime * i);
+					obj.sq_WriteDword(damage1);
+					obj.sq_WriteDword(damage2);
+					obj.sq_WriteByte(maxHit);
+					obj.sq_WriteByte(i);
+					obj.sq_WriteWord(sizeRate);
+					obj.sq_WriteWord(speedRate);
+
+					local passiveObjectIndex = 24212 + i % 2;
+					obj.sq_SendCreatePassiveObjectPacket(passiveObjectIndex, 0, xPos + xOffset * i, 1, 0);
+
+					if (rowNumber > 0) {
+						for (local j = 0; j < rowNumber; j += 1) {
+							local row = (j + 2) / 2;
+							row = row.tointeger();
+							if ((j % 2) == 0) {
+								local y = row * yAxisDistance;
+								obj.sq_SendCreatePassiveObjectPacket(passiveObjectIndex, 0, xPos + xOffset * i, -y, 0);
+							} else {
+								local y = row * yAxisDistance;
+								obj.sq_SendCreatePassiveObjectPacket(passiveObjectIndex, 0, xPos + xOffset * i, y, 0);
+							}
+						}
+					}
+				}
+			}
+			//FLAG_PASSIVE_CREATE_FIRE_ROAD = 1;
+			obj.getVar("road").set_vector(0, 1);
+		}
+	}
+}
 

@@ -34,7 +34,9 @@ function checkCommandEnable_FlameCircle(obj)
 {
 
 	if(!obj) return false;
-
+	if(sq_GetSkillLevel(obj, SKILL_ELEMENTAL_BOMBING) > 2){
+		return true;
+	}
 	local state = obj.sq_GetState();
 	
 	if(state == STATE_ATTACK)
@@ -108,7 +110,10 @@ function onSetState_FlameCircle(obj, state, datas, isResetTimer)
 		// 추가 크로니클 작업
 		local currentAni = sq_GetCurrentAnimation(obj);		
 		local exp100Rate = obj.sq_GetIntData(SKILL_FLAMECIRCLE, 1); // 1. 마지막 폭발 데미지 배율 (100%~)
-		local expRate = exp100Rate.tofloat() / 100.0;
+		local deyelevel = sq_GetSkillLevel(obj, SKILL_DARK_EYE);
+		local sizeRate = obj.sq_GetLevelData(SKILL_DARK_EYE, 9, deyelevel).tofloat() / 1000.0;
+		
+		local expRate = exp100Rate.tofloat() / 100.0 + sizeRate;
 		print( " expRate:" + expRate);
 		sq_SetAttackBoundingBoxSizeRate(currentAni, expRate, expRate, expRate);
 		obj.getVar("expflag").set_vector(0, 1);

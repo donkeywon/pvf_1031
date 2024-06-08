@@ -21,15 +21,16 @@ function setCustomData_po_ATFireRoad1(obj, receiveData)
 	
 	// 파이어로드 범위를 확대하는 코드
 	// 아이템과 연동되는 기능
+	local animation = sq_GetCurrentAnimation(obj);
+	if (!animation) return;
 	if (sizeRate != 100)
 	{
-		local animation = sq_GetCurrentAnimation(obj);
-		if (!animation) return;
 		local size = sizeRate.tofloat() / 100.0;
 		animation.setImageRateFromOriginal(size, size);
 		animation.setAutoLayerWorkAnimationAddSizeRate(size);
 		sq_SetAttackBoundingBoxSizeRate(animation, size, size, size);
 	}
+	animation.setSpeedRate(speedRate.tofloat());
 }
 
 

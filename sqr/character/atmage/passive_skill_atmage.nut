@@ -102,6 +102,34 @@ function ProcPassiveSkill_ATMage(obj, skill_index, skill_level)
 			local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skill_index, false, "character/common/ap_benyuan.nut", true);
 		}
 	}
+	else if(skill_index == SKILL_ELEMENTAL_BOMBING)
+	{ 
+		if(skill_level > 0)
+		{
+			local appendage = CNSquirrelAppendage.sq_AppendAppendage(obj, obj, skill_index, false, "character/atmage/appendage/ap_elementalbombing.nut", true);
+			local change_appendage = appendage.sq_getChangeStatus("elementalbombing");
+			local level = skill_level;
+			local spdbonus = sq_GetLevelData(obj, SKILL_ELEMENTAL_BOMBING, 4, level).tofloat();
+			local coolbonus = sq_GetLevelData(obj, SKILL_ELEMENTAL_BOMBING, 5, level).tofloat() /1000.0;
+			if(!change_appendage)
+			{
+				change_appendage = appendage.sq_AddChangeStatus("elementalbombing",obj, obj, 0, 0, true, 0);
+			}
+			if(change_appendage)
+			{
+				change_appendage.clearParameter();
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_CAST_SPEED,true, spdbonus);
+				change_appendage.addParameter(CHANGE_STATUS_TYPE_COOLTIME_DECLINE, false, -coolbonus);
+			}
+		}
+		else
+		{
+			if (CNSquirrelAppendage.sq_IsAppendAppendage(obj, "character/atmage/appendage/ap_elementalbombing.nut")) 
+			{
+				CNSquirrelAppendage.sq_RemoveAppendage(obj, "character/atmage/appendage/ap_elementalbombing.nut");
+			}
+		}
+	}
 	
 	return true;
 }
@@ -112,7 +140,7 @@ function onUseSkillPassiveSkill_ATMage(obj,skillIndex, skillLevel)
 	if(!obj)
 		return;		
 		
-	print( " onuseskill");
+	//print( " onuseskill");
 
 }
 

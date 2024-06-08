@@ -96,6 +96,8 @@ function setCustomData_po_ATLightningWall(obj, receiveData)
 	lightingWallObjAniResizeing(obj, obj);
 	
 	obj.sendStateOnlyPacket(PO_LIGHTNING_WALL_CREATE);
+	obj.getVar("state").clear_vector();
+	obj.getVar("state").push_vector(PO_LIGHTNING_WALL_CREATE);
 }
 
 
@@ -230,6 +232,7 @@ function setState_po_ATLightningWall(obj, state, datas)
 			currentAni.addLayerAnimation(6,sq_CreateAnimation("","PassiveObject/Character/Mage/Animation/ATLightningWall/7_el-p1_dodge_2.ani"),true);
 		}
 		lightingWallObjAniResizeing(obj, obj);
+		obj.getVar("state").set_vector(0, PO_LIGHTNING_WALL_MOVE);
 	}
 	else if(state == PO_LIGHTNING_WALL_DESTROY) {
 		obj.sq_RemoveMoveParticle(); // ÀÌµ¿³¡		
@@ -249,6 +252,7 @@ function setState_po_ATLightningWall(obj, state, datas)
 			var.setObject(PO_LIGHTNING_VAR_LIGHTNING_1, lightningObj1);
 			var.setObject(PO_LIGHTNING_VAR_LIGHTNING_2, lightningObj2);		
 		}
+		obj.getVar("state").set_vector(0, PO_LIGHTNING_WALL_DESTROY);
 	}
 }
 
@@ -274,7 +278,15 @@ function procAppend_po_ATLightningWall(obj)
 	local var = obj.getVar();
 	
 	if(!var) return;
-	
+	local state = obj.getVar("state").get_vector(0);
+	if(state == PO_LIGHTNING_WALL_CREATE)
+	{
+		local pAni = obj.getCurrentAnimation();
+		local currentT = sq_GetCurrentTime(pAni);
+		if(currentT > 1010){
+			obj.sendStateOnlyPacket(PO_LIGHTNING_WALL_MOVE);
+		}
+	}
 	local lightningObj1 = var.getObject(PO_LIGHTNING_VAR_LIGHTNING_1);
 	local lightningObj2 = var.getObject(PO_LIGHTNING_VAR_LIGHTNING_2);
 	

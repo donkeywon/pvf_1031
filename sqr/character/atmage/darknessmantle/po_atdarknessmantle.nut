@@ -193,7 +193,7 @@ function procCrackDarknessCircle(obj) // 闭凯捞 车阑 锭 备眉啊 如甸府绰 贸府
 		local ani = sq_GetCurrentAnimation(crackObj);
 		local frmIndex = sq_GetAnimationFrameIndex(ani);
 	
-		print( " exp i:" + i + " frmIndex:" + frmIndex);
+		//print( " exp i:" + i + " frmIndex:" + frmIndex);
 		if(frmIndex >= 1)
 		{
 			local expVectorIndex = i - 1;

@@ -25,7 +25,9 @@ function checkCommandEnable_ElementalStrikeEx(obj)
 {
 
 	if(!obj) return false;
-
+	if(sq_GetSkillLevel(obj, SKILL_ELEMENTAL_BOMBING) > 4){
+		return true;
+	}
 	local state = obj.sq_GetState();
 
 	if(state == STATE_ATTACK)
@@ -136,13 +138,13 @@ function onSetState_ElementalStrikeEx(obj, state, datas, isResetTimer)
 		}
 		local addAni = sq_CreateAnimation("",aniStr);
 		currentAni.addLayerAnimation(10001,addAni,true);
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_ATTACK_SPEED,SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.2, 1.2);
+		
 	}
 	else if(substate == SUB_STATE_ELEMENTALSTRIKEEX_1) {
 		// SUB_STATE_ELEMENTALSTRIKEEX_1 서브스테이트 작업
 	}
 	
-
+obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED , SPEED_TYPE_CAST_SPEED , SPEED_VALUE_DEFAULT , SPEED_VALUE_DEFAULT , 1.2 , 1.2);
 }
 
 function prepareDraw_ElementalStrikeEx(obj)
