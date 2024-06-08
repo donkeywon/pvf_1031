@@ -4,15 +4,15 @@ getroottable()["ElementalRainCreatePos"] = [[-76,27],[-108,44],[-129,67],[-79,57
 											[-92,180],[39,143],[-49,180],[-5,128],[-7,171],
 											[-24,221],[25,184],[-5,128],[43,113],[58,143]];
 
-// ¿¤·¹¸àÅ» ·¹ÀÎ ¼­ºê ½ºÅ×ÀÌÆ®
-SUB_STATE_ELEMENTAL_RAIN_CAST		<- 0	// Ä³½ºÆÃ
-SUB_STATE_ELEMENTAL_RAIN_JUMP		<- 1	// Á¡ÇÁ
-SUB_STATE_ELEMENTAL_RAIN_CHARGE		<- 2	// ÃæÀü(Á¡ÇÁ ´ë±â)
-SUB_STATE_ELEMENTAL_RAIN_FIRE		<- 3	// ¸¶¹ı±¸ ¹ß»ç
-SUB_STATE_ELEMENTAL_RAIN_LAST		<- 4	// ÃæÀü ¹× Æø¹ß±¸ »ı¼º, ¶¥À¸·ÎÀÇ ÂøÁö
+// ì—˜ë ˆë©˜íƒˆ ë ˆì¸ ì„œë¸Œ ìŠ¤í…Œì´íŠ¸
+SUB_STATE_ELEMENTAL_RAIN_CAST		<- 0	// ìºìŠ¤íŒ…
+SUB_STATE_ELEMENTAL_RAIN_JUMP		<- 1	// ì í”„
+SUB_STATE_ELEMENTAL_RAIN_CHARGE		<- 2	// ì¶©ì „(ì í”„ ëŒ€ê¸°)
+SUB_STATE_ELEMENTAL_RAIN_FIRE		<- 3	// ë§ˆë²•êµ¬ ë°œì‚¬
+SUB_STATE_ELEMENTAL_RAIN_LAST		<- 4	// ì¶©ì „ ë° í­ë°œêµ¬ ìƒì„±, ë•…ìœ¼ë¡œì˜ ì°©ì§€
 
 
-// ¿¤·¹¸àÅ» ·¹ÀÎ ½ºÅ³¹ßµ¿
+// ì—˜ë ˆë©˜íƒˆ ë ˆì¸ ìŠ¤í‚¬ë°œë™
 function checkExecutableSkill_ElementalRain(obj)
 {
 	if (!obj) return false;
@@ -37,7 +37,7 @@ function checkCommandEnable_ElementalRain(obj)
 	
 	if(state == STATE_ATTACK)
 	{
-		return obj.sq_IsCommandEnable(SKILL_ELEMENTAL_RAIN); // °áÅõÀå¿¡¼­´Â Æ¯Á¤½ºÅ³¸¸ Äµ½½ÀÌ °¡´ÉÇÕ´Ï´Ù. ÀÛ¾÷ÀÚ:Á¤Áø¼ö [2012.04.20] obj.sq_IsCommandEnable(SKILL_BROKENARROW);
+		return obj.sq_IsCommandEnable(SKILL_ELEMENTAL_RAIN); // ê²°íˆ¬ì¥ì—ì„œëŠ” íŠ¹ì •ìŠ¤í‚¬ë§Œ ìº”ìŠ¬ì´ ê°€ëŠ¥í•©ë‹ˆë‹¤. ì‘ì—…ì:ì •ì§„ìˆ˜ [2012.04.20] obj.sq_IsCommandEnable(SKILL_BROKENARROW);
 	}
 
 	return true
@@ -49,7 +49,7 @@ function onProc_ElementalRain(obj)
 	if (!obj) return;	
 	local subState = obj.getSkillSubState();
 	
-	// ÀÏÁ¤ ³ôÀÌÀÌ»ó Á¡ÇÁÇß´Ù¸é ¸ØÃã
+	// ì¼ì • ë†’ì´ì´ìƒ ì í”„í–ˆë‹¤ë©´ ë©ˆì¶¤
 	if (subState == SUB_STATE_ELEMENTAL_RAIN_JUMP)
 	{
 		local zPos = obj.sq_GetIntData(SKILL_ELEMENTAL_RAIN, 2);
@@ -57,11 +57,45 @@ function onProc_ElementalRain(obj)
 		if (sq_GetZPos(obj) >= zPos)
 		{		
 			obj.sq_SetCurrentPos(obj, obj.getXPos(), obj.getYPos(), zPos);
+			obj.sq_PlaySound("MW_ERAIN");
+			obj.sq_ZStop();
 			
 			if (obj.sq_IsMyControlObject())
 			{
 				obj.sq_IntVectClear();
-				obj.sq_IntVectPush(SUB_STATE_ELEMENTAL_RAIN_CHARGE);
+					
+				//å°çƒæ•¸é‡?é›¶æ™‚ç›´æ¥è·³åˆ°æœ€çµ‚å‹•ä½œ
+				local skillLevel = sq_GetSkillLevel(obj, SKILL_ELEMENTAL_RAIN);
+				local maxNumber = obj.sq_GetLevelData(SKILL_ELEMENTAL_RAIN, 0, skillLevel);
+				if (maxNumber > 0)
+				{
+					obj.sq_IntVectPush(SUB_STATE_ELEMENTAL_RAIN_CHARGE);
+				}
+				else
+				{
+					obj.sq_IntVectPush(SUB_STATE_ELEMENTAL_RAIN_LAST);
+				}
+
+				obj.sq_AddSetStatePacket(STATE_ELEMENTAL_RAIN, STATE_PRIORITY_IGNORE_FORCE, true);
+			}
+		}
+	}
+	else if (subState == SUB_STATE_ELEMENTAL_RAIN_FIRE)
+	{
+		if (obj.sq_IsMyControlObject())
+		{
+			if (sq_IsKeyDown(OPTION_HOTKEY_JUMP, ENUM_SUBKEY_TYPE_ALL))
+			{
+				obj.sq_IntVectClear();
+				obj.sq_IntVectPush(1);
+				obj.sq_IntVectPush(0);
+				obj.sq_IntVectPush(0);
+				obj.sq_AddSetStatePacket(STATE_JUMP, STATE_PRIORITY_USER, true);
+			}
+			else if (sq_IsKeyDown(OPTION_HOTKEY_SKILL, ENUM_SUBKEY_TYPE_ALL))
+			{
+				obj.sq_IntVectClear();
+				obj.sq_IntVectPush(SUB_STATE_ELEMENTAL_RAIN_LAST);
 				obj.sq_AddSetStatePacket(STATE_ELEMENTAL_RAIN, STATE_PRIORITY_IGNORE_FORCE, true);
 			}
 		}
@@ -69,7 +103,7 @@ function onProc_ElementalRain(obj)
 }
 
 
-// state¸¦ ¼¼ÆÃÇÏ°í Ã³À½À¸·Î µé¾î¿À°Ô µË´Ï´Ù. °¢Á¾ ¸®¼Ò½º¸¦ ¼¼ÆÃÇÕ´Ï´Ù. 
+// stateë¥¼ ì„¸íŒ…í•˜ê³  ì²˜ìŒìœ¼ë¡œ ë“¤ì–´ì˜¤ê²Œ ë©ë‹ˆë‹¤. ê°ì¢… ë¦¬ì†ŒìŠ¤ë¥¼ ì„¸íŒ…í•©ë‹ˆë‹¤. 
 function onSetState_ElementalRain(obj, state, datas, isResetTimer)
 {	
 	if (!obj) return;
@@ -84,30 +118,31 @@ function onSetState_ElementalRain(obj, state, datas, isResetTimer)
 	if (subState == SUB_STATE_ELEMENTAL_RAIN_CAST)
 	{
 		obj.sq_ZStop();
-		// Ä³½ºÆÃ
+		// ìºìŠ¤íŒ…
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ELEMENTAL_RAIN_CAST);
 		
-		// ÀÌÆåÆ® ¿¡´Ï¸ŞÀÌ¼Ç
+		// ì´í™íŠ¸ ì—ë‹ˆë©”ì´ì…˜
 		obj.sq_AddStateLayerAnimation(1,
 			obj.sq_CreateCNRDAnimation("Effect/Animation/ATElementalRain/Cast/1_under_dodge.ani"), 0, 0);
 		obj.sq_AddStateLayerAnimation(2,
 			obj.sq_CreateCNRDAnimation("Effect/Animation/ATElementalRain/Cast/20_body_dodge.ani"), 0, 0);
 			
-		// Ä³½ºÆÃ ¼Óµµ¸¦ µû¶ó°¡µµ·Ï ¼³Á¤
-		// Ä³½ºÆÃ ¼Óµµ°¡ º¯°æµÇ¸é, ¿¡´Ï¸ŞÀÌ¼Ç ¼Óµµµµ º¯°æ µË´Ï´Ù.
-		// Ä³½ºÆÃ °ÔÀÌÁöµµ Ç¥½Ã¸¦ ÇØÁİ´Ï´Ù.
+		// ìºìŠ¤íŒ… ì†ë„ë¥¼ ë”°ë¼ê°€ë„ë¡ ì„¤ì •
+		// ìºìŠ¤íŒ… ì†ë„ê°€ ë³€ê²½ë˜ë©´, ì—ë‹ˆë©”ì´ì…˜ ì†ë„ë„ ë³€ê²½ ë©ë‹ˆë‹¤.
+		// ìºìŠ¤íŒ… ê²Œì´ì§€ë„ í‘œì‹œë¥¼ í•´ì¤ë‹ˆë‹¤.
 		local skillLevel = sq_GetSkillLevel(obj, SKILL_ELEMENTAL_RAIN);
 		local castTime  = sq_GetCastTime(obj, SKILL_ELEMENTAL_RAIN, skillLevel);
 		local animation = sq_GetCurrentAnimation(obj);
 		local castAniTime = animation.getDelaySum(false);
 		
 		local speedRate = castAniTime.tofloat() / castTime.tofloat();
-		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED,SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.2, 1.2);
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED,
+			SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, speedRate, speedRate);
 
 		sq_StartDrawCastGauge(obj, castAniTime, true);		
 		obj.sq_PlaySound("MW_ERAIN_READY");
 
-		// ¿¤·¹¸àÅ» ·¹ÀÎÀº 4¼Ó¼º ¸ğµÎ °É¾îÁØ´Ù.		
+		// ì—˜ë ˆë©˜íƒˆ ë ˆì¸ì€ 4ì†ì„± ëª¨ë‘ ê±¸ì–´ì¤€ë‹¤.		
 		addElementalChain_ATMage(obj, -1);
 	}
 	else if (subState == SUB_STATE_ELEMENTAL_RAIN_JUMP)
@@ -118,16 +153,11 @@ function onSetState_ElementalRain(obj, state, datas, isResetTimer)
 	}
 	else if (subState == SUB_STATE_ELEMENTAL_RAIN_CHARGE)
 	{
-		local zPos = obj.sq_GetIntData(SKILL_ELEMENTAL_RAIN, 2);
-		obj.sq_SetCurrentPos(obj, obj.getXPos(), obj.getYPos(), zPos);
-		obj.sq_PlaySound("MW_ERAIN");
-		
-		obj.sq_ZStop();
-		// ÃæÀü
+		// ì¶©ì „
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ELEMENTAL_RAIN_JUMP_STAY);
 		
 			
-		// ÀÌÆåÆ® ¿¡´Ï¸ŞÀÌ¼Ç
+		// ì´í™íŠ¸ ì—ë‹ˆë©”ì´ì…˜
 		obj.sq_AddStateLayerAnimation(1,
 			obj.sq_CreateCNRDAnimation("Effect/Animation/ATElementalRain/Charge/26_handup_dodge.ani"), 0, 0);
 		obj.sq_AddStateLayerAnimation(2,
@@ -137,11 +167,11 @@ function onSetState_ElementalRain(obj, state, datas, isResetTimer)
 		local skillLevel = sq_GetSkillLevel(obj, SKILL_ELEMENTAL_RAIN);
 		local maxNumber = obj.sq_GetLevelData(SKILL_ELEMENTAL_RAIN, 0, skillLevel);
 		
-		// ÃÖ¼Ò°ª°ú ÃÖ´ë°ª »çÀÌÀÇ ·£´ıÇÑ ¼ıÀÚ¸¦ °¡Á®¿È. 
-		// ´Ü, ÇÑ¹ø °¡Á®¿Â °ªÀº Ã¹¹øÂ° ÆÄ¶ó¹ÌÅÍ°¡ true°¡ µÇÁö ¾Ê´Â ÇÑÀº µÎ¹ø ´Ù½Ã ³ª¿ÀÁö ¾ÊÀ½.
-		// -1ÀÌ ³ª¿À¸é Á¾·á. ´õÀÌ»ó °ªÀÌ ¾øÀ½.
-		// min °ªÀ½ 0 ÀÌÇÏ°¡ µÉ¼ö ¾øÀ½.
-		local index = sq_getRandomUnique(true, 0, ::ElementalRainCreatePos.len()); // ÃÊ±âÈ­				
+		// ìµœì†Œê°’ê³¼ ìµœëŒ€ê°’ ì‚¬ì´ì˜ ëœë¤í•œ ìˆ«ìë¥¼ ê°€ì ¸ì˜´. 
+		// ë‹¨, í•œë²ˆ ê°€ì ¸ì˜¨ ê°’ì€ ì²«ë²ˆì§¸ íŒŒë¼ë¯¸í„°ê°€ trueê°€ ë˜ì§€ ì•ŠëŠ” í•œì€ ë‘ë²ˆ ë‹¤ì‹œ ë‚˜ì˜¤ì§€ ì•ŠìŒ.
+		// -1ì´ ë‚˜ì˜¤ë©´ ì¢…ë£Œ. ë”ì´ìƒ ê°’ì´ ì—†ìŒ.
+		// min ê°’ìŒ 0 ì´í•˜ê°€ ë ìˆ˜ ì—†ìŒ.
+		local index = sq_getRandomUnique(true, 0, ::ElementalRainCreatePos.len()); // ì´ˆê¸°í™”				
 
 		if (obj.sq_IsMyControlObject())
 		{		
@@ -166,10 +196,13 @@ function onSetState_ElementalRain(obj, state, datas, isResetTimer)
 	}
 	else if (subState == SUB_STATE_ELEMENTAL_RAIN_FIRE)
 	{		
-		// ¸¶¹ı±¸ ¹ß»ç
+		// ë§ˆë²•êµ¬ ë°œì‚¬
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ELEMENTAL_RAIN_SHOOT);
 		
-		// ÀÌÆåÆ® ¿¡´Ï¸ŞÀÌ¼Ç
+		//æ·»åŠ é‡‹æ”¾é€Ÿåº¦å½±éŸ¿å‹•?
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_ATTACK_SPEED, SPEED_TYPE_CAST_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
+
+		// ì´í™íŠ¸ ì—ë‹ˆë©”ì´ì…˜
 		local angle = sq_GetIntData(obj, SKILL_ELEMENTAL_RAIN, 5);
 		local animation = obj.sq_CreateCNRDAnimation("Effect/Animation/ATElementalRain/Shoot/25_shoot_dodge.ani");
 		sq_SetfRotateAngle(animation, sq_ToRadian(-angle.tofloat()));
@@ -179,11 +212,13 @@ function onSetState_ElementalRain(obj, state, datas, isResetTimer)
 	}
 	else if (subState == SUB_STATE_ELEMENTAL_RAIN_LAST)
 	{
-		// ÃæÀü ¹× Æø¹ß±¸ »ı¼º, ¶¥À¸·ÎÀÇ ÂøÁö
+		// ì¶©ì „ ë° í­ë°œêµ¬ ìƒì„±, ë•…ìœ¼ë¡œì˜ ì°©ì§€
 		obj.sq_SetCurrentAnimation(CUSTOM_ANI_ELEMENTAL_RAIN_CHARGE_SHOOT);
 		
+		//æ·»åŠ é‡‹æ”¾é€Ÿåº¦å½±éŸ¿å‹•?
+		obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED, SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);
 		
-		// ÀÌÆåÆ® ¿¡´Ï¸ŞÀÌ¼Ç
+		// ì´í™íŠ¸ ì—ë‹ˆë©”ì´ì…˜
 		obj.sq_AddStateLayerAnimation(1,
 			obj.sq_CreateCNRDAnimation("Effect/Animation/ATElementalRain/ChargeShoot/21_circle_normal.ani"), 0, 0);
 		obj.sq_AddStateLayerAnimation(2,
@@ -198,7 +233,7 @@ function onSetState_ElementalRain(obj, state, datas, isResetTimer)
 }
 
 
-// ¿¡´Ï¸ŞÀÌ¼ÇÀÌ ³¡³µÀ½.
+// ì—ë‹ˆë©”ì´ì…˜ì´ ëë‚¬ìŒ.
 function onEndCurrentAni_ElementalRain(obj)
 {
 	if (!obj) return;
@@ -206,7 +241,7 @@ function onEndCurrentAni_ElementalRain(obj)
 	
 	if (subState == SUB_STATE_ELEMENTAL_RAIN_CAST)
 	{
-		// Ä³½ºÆÃ -> ÃæÀü
+		// ìºìŠ¤íŒ… -> ì¶©ì „
 		if (obj.sq_IsMyControlObject())
 		{
 			obj.sq_IntVectClear();
@@ -226,7 +261,7 @@ function onEndCurrentAni_ElementalRain(obj)
 	}
 	else if (subState == SUB_STATE_ELEMENTAL_RAIN_CHARGE)
 	{
-		// ÃæÀü -> ¸¶¹ı±¸ ¹ß»ç
+		// ì¶©ì „ -> ë§ˆë²•êµ¬ ë°œì‚¬
 		if (obj.sq_IsMyControlObject())
 		{
 			obj.sq_IntVectClear();
@@ -237,12 +272,12 @@ function onEndCurrentAni_ElementalRain(obj)
 	}
 	else if (subState == SUB_STATE_ELEMENTAL_RAIN_FIRE)
 	{
-		// ¸¶¹ı±¸ ¹ß»ç
+		// ë§ˆë²•êµ¬ ë°œì‚¬
 		local var = obj.getVar();
 		local skillLevel = sq_GetSkillLevel(obj, SKILL_ELEMENTAL_RAIN);
 		local maxNumber = obj.sq_GetLevelData(SKILL_ELEMENTAL_RAIN, 0, skillLevel);
 		
-		// ¹ß»çÇÒ°Ô ³²¾ÒÀ½.
+		// ë°œì‚¬í• ê²Œ ë‚¨ì•˜ìŒ.
 		local fireEnd = true;
 		local ballCount = obj.getMyPassiveObjectCount(24233);			
 		for (local i = 0; i < ballCount ; ++i) 
@@ -258,7 +293,7 @@ function onEndCurrentAni_ElementalRain(obj)
 		{
 			if (obj.sq_IsMyControlObject())
 			{
-				// ¸¶¹ı±¸ °è¼Ó ¹ß»ç
+				// ë§ˆë²•êµ¬ ê³„ì† ë°œì‚¬
 				obj.sq_IntVectClear();
 				obj.sq_IntVectPush(SUB_STATE_ELEMENTAL_RAIN_FIRE);			
 				obj.sq_AddSetStatePacket(STATE_ELEMENTAL_RAIN, STATE_PRIORITY_IGNORE_FORCE, true);
@@ -268,7 +303,7 @@ function onEndCurrentAni_ElementalRain(obj)
 		{
 			if (obj.sq_IsMyControlObject())
 			{
-				// ¸¶¹ı±¸ ¹ß»ç -> ÃæÀü ¹× Æø¹ß±¸ »ı¼º, ¶¥À¸·Î ÂøÁö
+				// ë§ˆë²•êµ¬ ë°œì‚¬ -> ì¶©ì „ ë° í­ë°œêµ¬ ìƒì„±, ë•…ìœ¼ë¡œ ì°©ì§€
 				obj.sq_IntVectClear();
 				obj.sq_IntVectPush(SUB_STATE_ELEMENTAL_RAIN_LAST);
 				obj.sq_AddSetStatePacket(STATE_ELEMENTAL_RAIN, STATE_PRIORITY_IGNORE_FORCE, true);
@@ -277,7 +312,7 @@ function onEndCurrentAni_ElementalRain(obj)
 	}
 	else if (subState == SUB_STATE_ELEMENTAL_RAIN_LAST)
 	{
-		// ÃæÀü ¹× Æø¹ß±¸ »ı¼º, ¶¥À¸·ÎÀÇ ÂøÁö
+		// ì¶©ì „ ë° í­ë°œêµ¬ ìƒì„±, ë•…ìœ¼ë¡œì˜ ì°©ì§€
 		if (obj.sq_IsMyControlObject())
 		{
 			obj.sq_IntVectClear();
@@ -315,7 +350,7 @@ function onEndState_ElementalRain(obj, newState)
 }
 
 
-// °ø°İ½Ã ¸¶¹ı ±¸Ã¼¸¦ »ı¼ºÇÑ´Ù.
+// ê³µê²©ì‹œ ë§ˆë²• êµ¬ì²´ë¥¼ ìƒì„±í•œë‹¤.
 function onKeyFrameFlag_ElementalRain(obj, flagIndex)
 {
 	if (!obj) return false;
@@ -345,10 +380,10 @@ function onKeyFrameFlag_ElementalRain(obj, flagIndex)
 	}
 	else if (subState == SUB_STATE_ELEMENTAL_RAIN_LAST)
 	{
-		// ÃæÀü ¹× Æø¹ß±¸ »ı¼º, ¶¥À¸·ÎÀÇ ÂøÁö
+		// ì¶©ì „ ë° í­ë°œêµ¬ ìƒì„±, ë•…ìœ¼ë¡œì˜ ì°©ì§€
 		if (flagIndex == 1 && obj.sq_IsMyControlObject())
 		{
-			// ¸¶Áö¸· Å« ¸¶¹ı±¸ÀÇ °ø°İ·Â ¾ò¾î¿À±â
+			// ë§ˆì§€ë§‰ í° ë§ˆë²•êµ¬ì˜ ê³µê²©ë ¥ ì–»ì–´ì˜¤ê¸°
 			local skill = sq_GetSkill(obj, SKILL_ELEMENTAL_RAIN);
 			local attackBonusRate = obj.sq_GetBonusRateWithPassive(SKILL_ELEMENTAL_RAIN, STATE_ELEMENTAL_RAIN, 1, 1.0);
 				
