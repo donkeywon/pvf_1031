@@ -1,5 +1,5 @@
 getroottable()["CrystalAttackCreatePos"] <- {};
-getroottable()["CrystalAttackCreatePos"] = [[0,0],[-10,15],[10,-15],  // Ã³À½ ¼¼°³ÀÇ »ý¼º Æ÷Áö¼Ç
+getroottable()["CrystalAttackCreatePos"] = [[0,0],[-10,15],[10,-15],  // Ã³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 											[-5,8],[5,-8],[-15,23],[15,-23],
 											[0,0],[-10,15],[10,-15],[-15,30],[15,-30]];
 																						
@@ -41,10 +41,10 @@ function onTimeEvent_CrystalAttack(obj, timeEventIndex, timeEventCount)
 	local angle		= pos[1];
 	
 	obj.sq_StartWrite();
-	obj.sq_WriteDword(dmg);		// µ¥¹ÌÁö
-	obj.sq_WriteFloat(angle.tofloat());	// °¢µµ
+	obj.sq_WriteDword(dmg);		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	obj.sq_WriteFloat(angle.tofloat());	// ï¿½ï¿½ï¿½ï¿½
 	obj.sq_WriteWord(attackSpeedRate); 
-	obj.sq_WriteWord(currentIndex);  // ¾óÀ½ ÀÎµ¦½º
+	obj.sq_WriteWord(currentIndex);  // ï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½
 	
 	obj.sq_SendCreatePassiveObjectPacket(24221, 0, 120 + xDistance, 1, 0);
 	
@@ -56,12 +56,12 @@ function onProc_CrystalAttack(obj)
 	if (!obj) return;	
 	
 	local var = obj.getVar();	
-	if(obj.sq_GetCurrentFrameIndex() > 1 && var.getBool(1) == false) // ¹ß»çµÈÀûÀÌ ¾ø´Ù¸é
+	if(obj.sq_GetCurrentFrameIndex() > 1 && var.getBool(1) == false) // ï¿½ß»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ù¸ï¿½
 	{
-		var.setBool(1,true); // ¹ß»ç ÇßÀ½.			
+		var.setBool(1,true); // ï¿½ß»ï¿½ ï¿½ï¿½ï¿½ï¿½.			
 		
 		local maxCreateCount = ::CrystalAttackCreatePos.len();
-		obj.setTimeEvent(0,50,maxCreateCount,false);
+		obj.setTimeEvent(0,10,maxCreateCount,false);
 		
 	}
 }
@@ -95,7 +95,7 @@ function onSetState_CrystalAttack(obj, state, datas, isResetTimer)
 	
 	obj.sq_PlaySound("MW_CRYSTALATK");
 	local var = obj.getVar();
-	var.setBool(1,false); // Å©¸®½ºÅ» ¾îÅÃÀÌ ¹ßµ¿ µÆ´ÂÁö À¯¹«. º¯¼ö ÃÊ±âÈ­.
+	var.setBool(1,false); // Å©ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ßµï¿½ ï¿½Æ´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½. ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­.
 	
 	obj.sq_SetStaticSpeedInfo(SPEED_TYPE_CAST_SPEED, SPEED_TYPE_CAST_SPEED,
 			SPEED_VALUE_DEFAULT, SPEED_VALUE_DEFAULT, 1.0, 1.0);	
@@ -145,31 +145,31 @@ function onEndCurrentAni_CrystalAttack(obj)
 	//if(obj.isMyControlObject())
 	//{
 		//obj.sq_StartWrite();
-		//obj.sq_WriteDword(dmg);		// µ¥¹ÌÁö
-		//obj.sq_WriteFloat(angle);	// °¢µµ
+		//obj.sq_WriteDword(dmg);		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		//obj.sq_WriteFloat(angle);	// ï¿½ï¿½ï¿½ï¿½
 		//obj.sq_WriteWord(attackSpeedRate); 
-		//obj.sq_WriteBool(false);  // Æ¯¼º ½ºÅ³ À¯¹«
+		//obj.sq_WriteBool(false);  // Æ¯ï¿½ï¿½ ï¿½ï¿½Å³ ï¿½ï¿½ï¿½ï¿½
 		//
 		//obj.sq_SendCreatePassiveObjectPacket(24221, 0, 120 + xDistance, 1, 0);
 		//
 		//
-		//// Æ¯¼º ½ºÅ³À» À§ÇÔ
-		//// Å©¸®½ºÅ» ¾îÅÃ °­È­¸¦ ÀÍÇû´Ù¸é Å©¸®½ºÅ»ÀÌ 4°³ ´õ »ý¼ºµË´Ï´Ù.
+		//// Æ¯ï¿½ï¿½ ï¿½ï¿½Å³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		//// Å©ï¿½ï¿½ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ù¸ï¿½ Å©ï¿½ï¿½ï¿½ï¿½Å»ï¿½ï¿½ 4ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ë´Ï´ï¿½.
 		//local skillLevel = sq_GetSkillLevel(obj, SKILL_CRYSTALATTACK_EX);
 		//if (flagIndex == 3 && skillLevel > 0)
 		//{
 			//local angles = [0.5, 0.15, -0.20, -0.40];
 			//local xDistances = [-130, -110, -90, -70];
 			//
-			//// À§ÂÊ¿¡ 4°³°¡ ¹è¿­µÇ¾î »ý¼ºÀÌ µÇµµ·Ï ÇÔ
+			//// ï¿½ï¿½ï¿½Ê¿ï¿½ 4ï¿½ï¿½ï¿½ï¿½ ï¿½è¿­ï¿½Ç¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Çµï¿½ï¿½ï¿½ ï¿½ï¿½
 			//for (local i = 0; i < 4; i++)
 			//{
 			//
 				//obj.sq_StartWrite();
-				//obj.sq_WriteDword(dmg);		// µ¥¹ÌÁö
-				//obj.sq_WriteFloat(angles[i]);	// °¢µµ
+				//obj.sq_WriteDword(dmg);		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+				//obj.sq_WriteFloat(angles[i]);	// ï¿½ï¿½ï¿½ï¿½
 				//obj.sq_WriteWord(attackSpeedRate); 		
-				//obj.sq_WriteBool(true);	 // Æ¯¼º ½ºÅ³ À¯¹«
+				//obj.sq_WriteBool(true);	 // Æ¯ï¿½ï¿½ ï¿½ï¿½Å³ ï¿½ï¿½ï¿½ï¿½
 				//obj.sq_SendCreatePassiveObjectPacket(24221, 0, 220 + xDistances[i], 1, 0);
 			//}
 		//}

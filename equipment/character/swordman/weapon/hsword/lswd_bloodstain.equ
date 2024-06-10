@@ -8,7 +8,7 @@
    攻击出血状态下的敌人时， 使敌人减少5%%的防御力。`
 
 [detail explain]
-	`   攻击时， 有35%%的几率使敌人进入出血状态10秒； 出血状态下的敌人， 每0.5秒会受到50000点伤害。
+	`   攻击时， 有35%%的几率使敌人进入出血状态10秒； 出血状态下的敌人， 每0.5秒会受到25000点伤害。
    攻击出血状态下的敌人时， 使敌人减少5%%的防御力， 效果持续5秒（冷却时间0.5秒）。`
 
 [flavor text]
@@ -165,7 +165,7 @@
 	[probability]
 		35
 	[active status]
-		`bleeding`	150	50150
+		`bleeding`	150	25000
 [/then]
 
 [if]
@@ -182,12 +182,10 @@
 		`enemy`	-1
 	[duration]
 		5000
-	[stat]
-		`equipment physical defense`
-		`%`	-5
-	[stat]
-		`equipment magical defense`
-		`%`	-5
+	[appendage]
+		879
+	[appendage]
+		880
 [/then]
 
 [possible kiri protect]
