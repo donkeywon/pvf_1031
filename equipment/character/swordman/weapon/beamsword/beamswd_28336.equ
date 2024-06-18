@@ -8,7 +8,7 @@
 [幻影剑舞]冷却时间 -15秒
 [后跳斩]冷却时间 -100%%
     施放[猛龙断空斩]时， 可以生成龙卷风。
-    施放[后跳斩]、 [裂波斩]和[幻影剑舞]攻击敌人时， 触发幻影剑舞最后一斩的剑气。`
+    施放[后跳斩]、[裂波斩]攻击敌人时， 触发幻影剑舞最后一斩的剑气。`
 
 [flavor text]
 	`    这种似曾相识的感觉到底是……  ——西岚`
@@ -271,60 +271,6 @@
 		`myself`	-1
 	[passive object]
 		20065	0	70	0	0	0	`Straight3.ptl`
-	[/passive object]
-[/then]
-
-[if]
-	[skill]
-		`swordman`	73
-	[/skill]
-	[cooltime]
-		75
-	[attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`myself`	-1
-	[passive object]
-		20065	0	0	0	0	0	`Straight3.ptl`
-	[/passive object]
-[/then]
-
-[if]
-	[skill]
-		`swordman`	73
-	[/skill]
-	[cooltime]
-		75
-	[attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`myself`	-1
-	[passive object]
-		20065	0	70	0	0	0	`Straight3.ptl`
-	[/passive object]
-[/then]
-
-[if]
-	[skill]
-		`swordman`	73
-	[/skill]
-	[cooltime]
-		75
-	[attack success]
-		1
-[/if]
-
-[then]
-	[target]
-		`myself`	-1
-	[passive object]
-		20065	0	-70	0	0	0	`Straight3.ptl`
 	[/passive object]
 [/then]
 
