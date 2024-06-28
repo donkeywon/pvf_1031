@@ -110,7 +110,7 @@ function weaponcombo_swordman_attack(obj, state, datas, isResetTimer) {
                                 sq_BinaryWriteDword(67);
                                 sq_BinaryWriteDword(4);
                                 sq_BinaryWriteDword(sq_GetCurrentAttackBonusRate(obj));
-                                sq_SendCreatePassiveObjectPacket(obj, 24370, 0, 0, 0, 0, obj.getDirection());
+                                sq_SendCreatePassiveObjectPacket(obj, 20149, 0, 0, 0, 0, obj.getDirection());
                             }
                             break;
                         case 1:
@@ -123,7 +123,7 @@ function weaponcombo_swordman_attack(obj, state, datas, isResetTimer) {
                                 sq_BinaryWriteDword(67);
                                 sq_BinaryWriteDword(3);
                                 sq_BinaryWriteDword(sq_GetCurrentAttackBonusRate(obj));
-                                sq_SendCreatePassiveObjectPacket(obj, 24370, 0, 0, 0, 0, obj.getDirection());
+                                sq_SendCreatePassiveObjectPacket(obj, 20150, 0, 0, 0, 0, obj.getDirection());
                             }
                             break;
                         case 2:
@@ -136,7 +136,7 @@ function weaponcombo_swordman_attack(obj, state, datas, isResetTimer) {
                                 sq_BinaryWriteDword(67);
                                 sq_BinaryWriteDword(2);
                                 sq_BinaryWriteDword(sq_GetCurrentAttackBonusRate(obj));
-                                sq_SendCreatePassiveObjectPacket(obj, 24370, 0, 0, 0, 0, obj.getDirection());
+                                sq_SendCreatePassiveObjectPacket(obj, 20152, 0, 0, 0, 0, obj.getDirection());
                             }
                             break;
                     }
