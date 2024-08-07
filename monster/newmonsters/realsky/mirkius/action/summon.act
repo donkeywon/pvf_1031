@@ -23,7 +23,7 @@
 [BEHAVIOR]
 	[RESTORE]
 	[HP]
-		-20
+		-35
 	[%]
 	[SUMMON MONSTER]
 		[INDEX]
@@ -87,5 +87,37 @@
 		[POS]
 			-300	-100	0
 		[MAGIC CIRCLE]
+	[/SUMMON MONSTER]
+[/BEHAVIOR]
+
+[TRIGGER]
+	[LIMIT]
+		1
+	[WHICH]
+	[MONSTER]
+	[CHECKUP]
+		[IS INDEX]
+			72001
+		[/IS INDEX]
+	[/CHECKUP]
+	[CHECKED NO]
+	[<]
+		1
+	[DO BEHAVIOR]
+	[ME]
+		1
+[/TRIGGER]
+
+[BEHAVIOR]
+	[SUMMON MONSTER]
+		[INDEX]
+			72001
+		[LEVEL]
+			10
+		[POS]
+			400	0	0
+		[MAGIC CIRCLE]
+		[TEAM]
+			0
 	[/SUMMON MONSTER]
 [/BEHAVIOR]
