@@ -112,9 +112,9 @@ IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/Moment
 
  
  
-IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/HundredSword/HundredSword.nut", "swordman_hundredsword", 47, -1);
+//IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/HundredSword/HundredSword.nut", "swordman_hundredsword", 47, -1);
  
-IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/HundredSword/HundredSwordHit.nut", "swordman_hundredswordhit", 48, -1);
+//IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/HundredSword/HundredSwordHit.nut", "swordman_hundredswordhit", 48, -1);
 
  
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/hellbenter/hellbenter.nut", "swordman_hellbenter", 46, -1);
