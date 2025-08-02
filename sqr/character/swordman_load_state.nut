@@ -137,3 +137,5 @@ IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/attack
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/defaneblood/defaneblood.nut", "defaneblood", -1, SKILL_DEFANEBLOOD);
 
 IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/icewave/icewave.nut", "IceWave", 24, 21);
+
+IRDSQRCharacter.pushState(ENUM_CHARACTERJOB_SWORDMAN, "character/swordman/fixafterupperslash/fixafterupperslash.nut", "FixAfterUpperSlash", STATE_FIX_AFTER_UPPER_SLASH, -1);

@@ -20,6 +20,7 @@ function onAfterSetState_swordman_attack(obj, state, datas, isResetTimer) {
 
 function onKeyFrameFlag_swordman_attack(obj, state) {
     if (!obj) return false;
+    if (!obj.sq_IsMyControlObject()) return false;
     local datas = obj.getVar().get_vector(0);
     local skillIndex = obj.getVar().get_vector(1);
     switch (skillIndex) {

@@ -67,6 +67,12 @@ function addSetStatePacket_Swordman(obj, state, datas) {
 			break;
 		}
 		break;
+	case STATE_LIFT_UPPER:
+		if (obj.sq_IsMyControlObject()) {
+			obj.sq_IntVectClear();
+			obj.sq_AddSetStatePacket(STATE_FIX_AFTER_UPPER_SLASH, STATE_PRIORITY_USER, false);
+		}
+		return -1;
 	}
 	return 1;
 };
